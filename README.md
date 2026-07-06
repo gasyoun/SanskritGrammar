@@ -100,6 +100,13 @@ Three re-runnable commands over the converted `.mdx`, all idempotent:
 | `python scripts/site_tools.py images` | Downscale (>1400px) + WebP-convert `*_media` rasters and rewrite the **owning** book's `.mdx` links (path-scoped, not bare-basename — `image1.png` recurs across books). Needs [Pillow](https://pypi.org/project/pillow/). |
 | `python scripts/site_tools.py site` | The one-command book-site flow: idempotent Docusaurus scaffold (vendors the `rstTable` plugin, pins `webpack 5.97.1`) + `npm install`/`npm run build` + per-book rendered-`<table>` counts. |
 
+**Coverage + OCR** — the [`/mdx-coverage`](https://github.com/gasyoun/claude-config/blob/main/commands/mdx-coverage.md)
+skill audits a whole tree of `.doc`/`.docx`/`.pdf` for whether each already has an
+`.mdx` sibling (routing the gaps to [`/docx-to-md`](https://github.com/gasyoun/claude-config/blob/main/commands/docx-to-md.md)),
+and **batch-OCRs any image-only PDF** that has no text layer (detected with `pdftotext`,
+OCR'd with `ocrmypdf` + tesseract, langs `san+rus+deu+eng`) to a `<name>.ocr.pdf` before
+conversion. All six works here are already covered; no PDFs yet.
+
 ## Use cases
 
 - **Read a grammar with its tables rendered.** `npm start`, then browse the six
@@ -124,6 +131,13 @@ Three re-runnable commands over the converted `.mdx`, all idempotent:
   [`/docx-to-md`](https://github.com/gasyoun/claude-config/blob/main/commands/docx-to-md.md)
   on any tree of Word files; it emits MDX-safe `.mdx` + the `site_tools.py`
   commands, so a new grammar/reader archive is a one-skill setup.
+- **Audit which sources are still un-converted.**
+  [`/mdx-coverage`](https://github.com/gasyoun/claude-config/blob/main/commands/mdx-coverage.md)
+  walks any tree, reports every `.doc`/`.docx`/`.pdf` that lacks an `.mdx`, and
+  routes each gap to the skill that closes it.
+- **OCR scanned PDFs in batch.** For image-only PDFs with no text layer,
+  `/mdx-coverage` batch-OCRs them (`ocrmypdf`, Devanāgarī + Cyrillic + German +
+  English) to a searchable `<name>.ocr.pdf` so they can then be converted.
 
 ## Caveats found in the source files
 
