@@ -28,6 +28,15 @@ GasunsDhatu_2014/*
 !GasunsDhatu_2014/*_media/
 TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/*.mdx
+!TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md
+!TolchelnikovTalmud_2026/student-roadmap.md
+!TolchelnikovTalmud_2026/visual-grammar.md
+!TolchelnikovTalmud_2026/talmud-refactoring.md
+# H242 scaffold: errata pair, session journal, human-gated footnote proposals
+!TolchelnikovTalmud_2026/errata.yml
+!TolchelnikovTalmud_2026/ERRATA.md
+!TolchelnikovTalmud_2026/.ai_state.md
+!TolchelnikovTalmud_2026/footnote-proposals/
 
 # ApteSyntax_1885 — the root Apte-unicode.mdx is already tracked; the unpacked
 # archive under src/ carries the derived .mdx (+ Pandoc-extracted *_media/) we
