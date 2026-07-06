@@ -50,7 +50,7 @@ entries:
   - { page: 59,  line: "14 сн.", read: "dadhāthē",      instead: "dadhātē",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }
   - { page: 65,  line: "6 сн.",  read: "tṛṇēhmi",       instead: "tṛnēhmi",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }
   - { page: 117, line: "8 сн.",  read: "gañgāyā",       instead: "gaṉgāyā",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
-  - { page: 118, line: "19 св.", read: "strī",          instead: "stro",         found_by: "Knauer errata 2023", date_added: "2026-07-06", note: "IAST form of the p.118 Devanāgarī erratum above" }
+  - { page: 118, line: "19 св.", read: "strī",          instead: "stro",         found_by: "Knauer errata 2023", date_added: "2026-07-06", note: "distinct erratum from the p.118 Devanāgarī slip above — that one is the Devanāgarī misprint, this one the IAST" }
   - { page: 119, line: "7 сн.",  read: "यूना",          instead: "युना",         found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
   - { page: 121, line: "14 сн.", read: "çiṣyāv",        instead: "ciṣyāv",       found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
   - { page: 123, line: "1 св.",  read: "भङ्ग्धि",       instead: "भङ्गिध",       found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
