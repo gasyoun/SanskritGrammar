@@ -28,3 +28,13 @@ GasunsDhatu_2014/*
 !GasunsDhatu_2014/*_media/
 TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/*.mdx
+
+# ApteSyntax_1885 — the root Apte-unicode.mdx is already tracked; the unpacked
+# archive under src/ carries the derived .mdx (+ Pandoc-extracted *_media/) we
+# also want, but its Word/PDF/RTF/HTML/JPG/.dat/.txt sources and the 101 MB
+# 01_Apte.zip (over GitHub's 100 MB file limit) must stay out of git.
+ApteSyntax_1885/01_Apte.zip
+ApteSyntax_1885/src/**
+!ApteSyntax_1885/src/**/
+!ApteSyntax_1885/src/**/*.mdx
+!ApteSyntax_1885/src/**/*_media/**
