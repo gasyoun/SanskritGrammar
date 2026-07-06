@@ -16,3 +16,15 @@ npm-debug.log*
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
 **/errata.candidates.yml
+
+# Book folders — track ONLY the derived digital edition (root .mdx + their *_media/).
+# Everything else stays out of git: the Word/PDF sources, the GasunsDhatu_2014 PhD-defense
+# dump (~281 MB of PDFs, .xlsm, .rar/.zip, ВАК paperwork) and the Talmud prior-conversion
+# scratch (_raw/_pipe .md, chunks/, local notes). Ignore-all-except is used deliberately so
+# a stray `git add -A` can never sweep the bulk in; the artifacts are re-included below.
+# (gitignore never untracks an already-tracked file, so committed .mdx/_media are safe.)
+GasunsDhatu_2014/*
+!GasunsDhatu_2014/*.mdx
+!GasunsDhatu_2014/*_media/
+TolchelnikovTalmud_2026/*
+!TolchelnikovTalmud_2026/*.mdx
