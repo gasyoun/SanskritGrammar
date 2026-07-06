@@ -1,0 +1,9 @@
+# Docusaurus / Node
+/node_modules
+/build
+/.docusaurus
+npm-debug.log*
+.DS_Store
+
+# Word lock files
+~$*

@@ -1,0 +1,37 @@
+{
+  "name": "sanskrit-grammar-book-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Docusaurus book site for the digitized Sanskrit grammar sources (Apte, Bühler, Kochergina, Zaliznyak, Knauer).",
+  "scripts": {
+    "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve",
+    "clear": "docusaurus clear"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.6.3",
+    "@docusaurus/preset-classic": "3.6.3",
+    "clsx": "^2.1.1",
+    "prism-react-renderer": "^2.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.6.3",
+    "@docusaurus/types": "3.6.3"
+  },
+  "overrides": {
+    "webpack": "5.97.1"
+  },
+  "browserslist": {
+    "production": [">0.5%", "not dead", "not op_mini all"],
+    "development": ["last 3 chrome version", "last 3 firefox version", "last 5 safari version"]
+  },
+  "engines": {
+    "node": ">=18.0"
+  }
+}
