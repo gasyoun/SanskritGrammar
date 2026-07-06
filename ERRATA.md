@@ -12,6 +12,7 @@ Per-book errata lists — printed-page corrections gathered from the editions' o
 | [BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/ERRATA.md) | 0 | 0 | 0 |
 | [KnauerFrazy_1908](KnauerFrazy_1908/ERRATA.md) | 25 | 25 | 0 |
 | [KocherginaUchebnik_1998](KocherginaUchebnik_1998/ERRATA.md) | 0 | 0 | 0 |
+| [TolchelnikovTalmud_2026](TolchelnikovTalmud_2026/ERRATA.md) | 0 | 0 | 0 |
 | [ZalizniakKonspekt_2004](ZalizniakKonspekt_2004/ERRATA.md) | 0 | 0 | 0 |
 | [ZalizniakOcherk_1978](ZalizniakOcherk_1978/ERRATA.md) | 0 | 0 | 0 |
 
