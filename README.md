@@ -67,6 +67,38 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
    Every one of these was found the hard way to silently corrupt data or crash
    the build the first time this pipeline ran (06-07-2026).
 
+## Errata
+
+Each printed source can carry an **errata list** — corrections to the *printed
+page* (misprints in the original edition and in later reprints), separate from
+the [CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
+(which records changes to *our digital* edition). Every erratum is tagged with
+**who found it** (the reporting edition/errata sheet or a person) and **when it
+entered this list**.
+
+Same "source + generate" pattern as the `.mdx`:
+
+| File | Role |
+|---|---|
+| [`<Book>/errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/errata.yml) | hand-edited structured source (one entry per correction) |
+| [`<Book>/ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md) | **generated** table — never hand-edited |
+| [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) (root) | generated per-book index with open/fixed counts |
+
+```sh
+npm run errata                              # regenerate every book's ERRATA.md + the index
+python scripts/build_errata.py KnauerFrazy_1908   # one book
+```
+
+The generator ([`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py))
+sorts by page, **de-duplicates** (an erratum reported by several sheets becomes
+one row citing all of them), and cross-references the CHANGELOG: set
+`fixed_in: v0.X.Y` on an entry once the typo is corrected in the digital source
+and it renders `✓ fixed in v0.X.Y` instead of `open`. The whole workflow —
+ingesting a pasted errata sheet, regenerating, and the monthly CHANGELOG
+cross-check — is wrapped in the `/errata` skill. First list in:
+[`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md)
+(25 errata from the 1908 print and the 2011/2015/2023 errata sheets).
+
 ## Reading the archive
 
 This repo is itself a small Docusaurus site over the six `.mdx` files directly
