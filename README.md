@@ -92,10 +92,9 @@ Keep all three copies in sync by hand — there is no shared npm package yet.
 
 ## Live pages
 
-The six works as Docusaurus pages. **These URLs are not live yet** — GitHub Pages
-is enabled but currently serves the repo root, not the Docusaurus `build/` output,
-so the `/grammars/…` routes 404 until a Pages deploy of the built site is wired up
-(a `publish`-gated step). Regenerate this list any time with `python scripts/site_tools.py links`:
+The six works as Docusaurus pages, deployed to GitHub Pages by
+[`deploy-pages.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/deploy-pages.yml)
+on every push to `main`. Regenerate this list any time with `python scripts/site_tools.py links`:
 
 - [Apte — Sanskrit Syntax (1885)](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode)
 - [Bühler — Leitfaden (1923)](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode)
