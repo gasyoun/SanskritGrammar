@@ -21,7 +21,7 @@ _Generated: 06-07-2026 · 25 errata (25 open · 0 fixed in the digital edition)_
 | 10 | 117 | 8 сн. | gañgāyā | gaṉgāyā | Knauer 1908 print; Knauer errata 2023 | 2026-07-06 | open |
 | 11 | 118 | 19 св. | स्त्री | स्त्रो | Knauer 1908 print | 2026-07-06 | open |
 | 12 | 118 | 19 св. | strī | stro | Knauer errata 2023 | 2026-07-06 | open |
-| | | | | | | | _IAST form of the p.118 Devanāgarī erratum above_ |
+| | | | | | | | _distinct erratum from the p.118 Devanāgarī slip above — that one is the Devanāgarī misprint, this one the IAST_ |
 | 13 | 119 | 7 сн. | यूना | युना | Knauer 1908 print; Knauer errata 2023 | 2026-07-06 | open |
 | 14 | 121 | 14 сн. | çiṣyāv | ciṣyāv | Knauer 1908 print; Knauer errata 2023 | 2026-07-06 | open |
 | 15 | 123 | 1 св. | भङ्ग्धि | भङ्गिध | Knauer 1908 print; Knauer errata 2023 | 2026-07-06 | open |
