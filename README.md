@@ -69,12 +69,22 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
 
 ## Errata
 
-Each printed source can carry an **errata list** — corrections to the *printed
-page* (misprints in the original edition and in later reprints), separate from
+**Every book folder carries an `errata.yml`** (seeded empty if it has no
+corrections yet) → a generated `ERRATA.md` — text corrections, separate from
 the [CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
 (which records changes to *our digital* edition). Every erratum is tagged with
-**who found it** (the reporting edition/errata sheet or a person) and **when it
-entered this list**.
+**who found it** (the reporting edition/errata sheet, an edition diff, or a
+person) and **when it entered this list**.
+
+Errata enter a book two ways — a printed sheet is **not** assumed:
+
+- **A printed errata sheet** — some editions ship their own list (e.g. Knauer's
+  1908 print + the 2011/2015/2023 sheets); transcribe it.
+- **Edition diff** — a book with no printed sheet (e.g. Kochergina) accrues
+  errata by **comparing versions of its own text file over time**. When the file
+  changes, `python scripts/build_errata.py diff <Book> <old-ref> [<new-ref>]`
+  emits `errata.candidates.yml` (each changed reading as read/instead, tagged
+  with the diff + date) to review and fold into `errata.yml`.
 
 Same "source + generate" pattern as the `.mdx`:
 
@@ -94,10 +104,12 @@ sorts by page, **de-duplicates** (an erratum reported by several sheets becomes
 one row citing all of them), and cross-references the CHANGELOG: set
 `fixed_in: v0.X.Y` on an entry once the typo is corrected in the digital source
 and it renders `✓ fixed in v0.X.Y` instead of `open`. The whole workflow —
-ingesting a pasted errata sheet, regenerating, and the monthly CHANGELOG
-cross-check — is wrapped in the `/errata` skill. First list in:
+ingesting a pasted errata sheet, the edition-diff path, regenerating, and the
+monthly CHANGELOG cross-check — is wrapped in the `/errata` skill. All six books
+have an `errata.yml`; the first populated list is
 [`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md)
-(25 errata from the 1908 print and the 2011/2015/2023 errata sheets).
+(25 errata from the 1908 print and the 2011/2015/2023 errata sheets), the rest
+seeded empty and ready to fill.
 
 ## Reading the archive
 

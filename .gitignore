@@ -1,3 +1,6 @@
+# Python
+__pycache__/
+
 # Docusaurus / Node
 /node_modules
 /build
@@ -10,3 +13,6 @@ npm-debug.log*
 
 # Local Claude Code machine state (not repo content)
 /.claude/
+
+# Transient edition-diff review scratch (fold into errata.yml, then delete)
+**/errata.candidates.yml

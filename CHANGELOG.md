@@ -7,13 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- **Errata system** (`/errata` skill): per-book `errata.yml` structured source →
-  generated `<Book>/ERRATA.md` + root `ERRATA.md` index via
+- **Errata system** (`/errata` skill): every book folder carries an `errata.yml`
+  structured source → generated `<Book>/ERRATA.md` + root `ERRATA.md` index via
   `scripts/build_errata.py` (`npm run errata`). Each erratum records who found it
   and when; the generator de-duplicates across errata sheets and cross-references
   this CHANGELOG (`fixed_in` marks typos corrected in the digital edition).
+- Errata enter two ways: transcribing a printed errata sheet, **or** an edition
+  diff (`build_errata.py diff <Book> <old-ref> [<new-ref>]`) that turns changes
+  between two versions of a book's text file into reviewable errata candidates —
+  so books with no printed sheet (Kochergina, etc.) still accrue errata over time.
 - `KnauerFrazy_1908` errata: 25 corrections transcribed from the 1908 printed book
-  and the Knauer 2011/2015/2023 errata sheets.
+  and the Knauer 2011/2015/2023 errata sheets. The other five books seeded with an
+  empty `errata.yml`.
 - Initial mint: reprint source scans/editions for `ApteSyntax_1885`, `BuhlerLeitfaden_1923`,
   `KnauerFrazy_1908`, `KocherginaUchebnik_1998`, `ZalizniakKonspekt_2004`, and
   `ZalizniakOcherk_1978`.
