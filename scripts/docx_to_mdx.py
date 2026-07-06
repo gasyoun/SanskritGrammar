@@ -5,6 +5,8 @@ default table-style auto-pick can emit "simple tables" (bare dashes) that are no
 valid GFM/MDX and render as inert text on any target.
 """
 import sys, subprocess, pathlib, shutil, re
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+import mdx_postprocess
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -108,8 +110,13 @@ for src in docx_files:
         wrapped_text, n_wrapped = wrap_grid_tables(text)
         if n_wrapped:
             out.write_text(wrapped_text, encoding="utf-8")
+        # Always run the MDX-safety + frontmatter/slug pass immediately — a
+        # converted file with no slug-safe frontmatter is not build-ready, and
+        # leaving this as a separate manual step is exactly how
+        # ZalizniakMorphology_1975 shipped without one (06-07-2026).
+        mdx_postprocess.process(str(out))
         md_done.append(out)
-        print(f"[docx ok  ] {out}" + (f"  ({n_wrapped} grid table(s) wrapped)" if n_wrapped else ""))
+        print(f"[docx ok  ] {out}" + (f"  ({n_wrapped} grid table(s) wrapped, MDX-safed)" if n_wrapped else "  (MDX-safed)"))
     else:
         md_fail.append((src, (res.stderr or "").strip()))
         print(f"[docx FAIL] {src}\n            {(res.stderr or '').strip()[:200]}")
