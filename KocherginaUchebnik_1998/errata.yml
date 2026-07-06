@@ -1,0 +1,15 @@
+# errata.yml — structured errata source for KocherginaUchebnik_1998
+#
+# GENERATED target: ERRATA.md (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.md.
+#
+# This book has no printed errata sheet catalogued yet. Add corrections either by:
+#   A. transcribing a printed errata/opechatki sheet (see KnauerFrazy_1908/errata.yml for the shape), or
+#   B. edition diff — when this book's text file changes, run:
+#        python scripts/build_errata.py diff KocherginaUchebnik_1998 <old-git-ref> [<new-git-ref>]
+#      then fold reviewed candidates from errata.candidates.yml into `entries` below.
+#
+# Entry shape: { page, line, read, instead, found_by, date_added, fixed_in?, note? }
+
+work: "Kochergina, Sanskrit textbook (Учебник санскрита, 1998)"
+
+entries: []

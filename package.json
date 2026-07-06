@@ -5,6 +5,7 @@
   "description": "Docusaurus book site for the digitized Sanskrit grammar sources (Apte, Bühler, Kochergina, Zaliznyak, Knauer).",
   "scripts": {
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
+    "errata": "python scripts/build_errata.py",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

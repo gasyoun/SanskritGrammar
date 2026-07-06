@@ -1,0 +1,60 @@
+# errata.yml — structured errata source for KnauerFrazy_1908
+#
+# This is the hand-edited source. ERRATA.md is GENERATED from it by
+# scripts/build_errata.py (npm run errata) — never edit ERRATA.md directly.
+#
+# Each entry:
+#   page:       printed page number (integer)
+#   line:       line ref in the source shorthand — "8 сн." (from bottom) / "13 св." (from top)
+#   read:       the CORRECT form (Russian: "читать … "  — what it should say)
+#   instead:    what the print actually shows (Russian: "вместо …")
+#   found_by:   who reported it — an edition/errata sheet label or a person's name
+#   date_added: ISO date this erratum entered THIS list (not the reporter's date)
+#   fixed_in:   (optional) version tag once corrected in the digital .docx/.mdx, e.g. v0.2.0
+#   note:       (optional) free remark
+#
+# Rows that share (page, line, read, instead) are auto-merged, unioning found_by —
+# so an erratum listed by both the 1908 print sheet and the 2023 errata sheet
+# collapses to one row citing both.
+
+work: "Knauer, Sanskrit phrase collection (Frazy-Knauer, reprint reference 1908)"
+
+entries:
+  # ── 1) Опечатки в бумажной книге 1908 г. (typos in the 1908 printed book) ──
+  - { page: 117, line: "8 сн.",  read: "gañgāyā",     instead: "gaṉgāyā",     found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 118, line: "19 св.", read: "स्त्री",        instead: "स्त्रो",        found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 119, line: "7 сн.",  read: "यूना",          instead: "युना",         found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 121, line: "14 сн.", read: "çiṣyāv",       instead: "ciṣyāv",      found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 123, line: "1 св.",  read: "भङ्ग्धि",       instead: "भङ्गिध",       found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 123, line: "6 сн.",  read: "sabhāryāya",   instead: "sabharyāya",  found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+  - { page: 125, line: "13 св.", read: "3. vas",       instead: "2. vas",      found_by: "Knauer 1908 print", date_added: "2026-07-06" }
+
+  # ── 2) Кнауэр, опечатки 2011 ──
+  - { page: 73,  line: "4 сн.",  read: "другіе",        instead: "дdугіе",       found_by: "Knauer errata 2011", date_added: "2026-07-06" }
+  - { page: 195, line: "6 сн.",  read: "можно",         instead: "жожно",        found_by: "Knauer errata 2011", date_added: "2026-07-06" }
+  - { page: 256, line: "11 сн.", read: "yā",            instead: "ā",            found_by: "Knauer errata 2011", date_added: "2026-07-06" }
+  - { page: 258, line: "7 св.",  read: "Виканасы",      instead: "Вайканасы",    found_by: "Knauer errata 2011", date_added: "2026-07-06" }
+
+  # ── 3) Кнауэр, опечатки 2015 ──
+  - { page: 4,   line: "22 сн.", read: "черезъ ṅ",      instead: "черезъ i",     found_by: "Knauer errata 2015", date_added: "2026-07-06" }
+  - { page: 55,  line: "14 св.", read: "въ паузѣ",      instead: "въ наузѣ",     found_by: "Knauer errata 2015", date_added: "2026-07-06" }
+  - { page: 195, line: "11 сн.", read: "подъ",          instead: "нодъ",         found_by: "Knauer errata 2015", date_added: "2026-07-06" }
+  - { page: 218, line: "16 св.", read: "глотать,",      instead: "глотать",      found_by: "Knauer errata 2015", date_added: "2026-07-06", note: "punctuation: trailing comma added" }
+  - { page: 54,  line: "7 св.",  read: "dviṣṭá ²)",     instead: "dviṣṭa",       found_by: "Knauer errata 2015", date_added: "2026-07-06" }
+  # entry combining two line-refs in the source (стр. 54, 14, 12 сн.) — split into two rows:
+  - { page: 54,  line: "14 сн.", read: "dviḍḍhvám ³)",  instead: "dviḍḍhvam ³)", found_by: "Knauer errata 2015", date_added: "2026-07-06" }
+  - { page: 54,  line: "12 сн.", read: "dviṣṭm ²)",     instead: "dviṣṭām ²)",   found_by: "Knauer errata 2015", date_added: "2026-07-06", note: "reproduced verbatim from the 2015 sheet" }
+
+  # ── 4) Кнауэр, опечатки 2023 (header row 'стр. Строка Напечатано Следует читать' dropped) ──
+  - { page: 32,  line: "23 св.", read: "G.",            instead: "DAbl.",        found_by: "Knauer errata 2023", date_added: "2026-07-06" }
+  - { page: 59,  line: "14 сн.", read: "dadhāthē",      instead: "dadhātē",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }
+  - { page: 65,  line: "6 сн.",  read: "tṛṇēhmi",       instead: "tṛnēhmi",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }
+  - { page: 117, line: "8 сн.",  read: "gañgāyā",       instead: "gaṉgāyā",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
+  - { page: 118, line: "19 св.", read: "strī",          instead: "stro",         found_by: "Knauer errata 2023", date_added: "2026-07-06", note: "IAST form of the p.118 Devanāgarī erratum above" }
+  - { page: 119, line: "7 сн.",  read: "यूना",          instead: "युना",         found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
+  - { page: 121, line: "14 сн.", read: "çiṣyāv",        instead: "ciṣyāv",       found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
+  - { page: 123, line: "1 св.",  read: "भङ्ग्धि",       instead: "भङ्गिध",       found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
+  - { page: 123, line: "6 сн.",  read: "sabhāryāya",    instead: "sabharyāya",   found_by: "Knauer errata 2023", date_added: "2026-07-06" }  # dup of 1908 → merges
+  - { page: 124, line: "19 св.", read: "185г",          instead: "184г",         found_by: "Knauer errata 2023", date_added: "2026-07-06" }
+  - { page: 239, line: "11 сн.", read: "पर्युपासन",     instead: "पयुपासन",      found_by: "Knauer errata 2023", date_added: "2026-07-06" }
+  - { page: 264, line: "16 сн.", read: "vasumatī",      instead: "vasuṁatī",     found_by: "Knauer errata 2023", date_added: "2026-07-06" }
