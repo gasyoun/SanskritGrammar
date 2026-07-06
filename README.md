@@ -90,6 +90,21 @@ also ported into
 [`csl-guides/src/remark/rstTable.mjs`](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/remark/rstTable.mjs).
 Keep all three copies in sync by hand — there is no shared npm package yet.
 
+## Live pages
+
+The six works as Docusaurus pages, live once GitHub Pages is enabled on
+[`gasyoun.github.io/SanskritGrammar`](https://gasyoun.github.io/SanskritGrammar/).
+Regenerate this list any time with `python scripts/site_tools.py links`:
+
+- [Apte — Sanskrit Syntax (1885)](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode)
+- [Bühler — Leitfaden (1923)](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode)
+- [Knauer — Phrases (1908)](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023)
+- [Kochergina — Uchebnik (1998)](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode)
+- [Zaliznyak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t)
+- [Zaliznyak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned)
+
+Locally (`npm start`) the same routes serve from `http://localhost:3000/SanskritGrammar/…`.
+
 ## Tooling — [`scripts/site_tools.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/site_tools.py)
 
 Three re-runnable commands over the converted `.mdx`, all idempotent:
@@ -99,6 +114,7 @@ Three re-runnable commands over the converted `.mdx`, all idempotent:
 | `python scripts/site_tools.py fidelity` | QA report per book: replacement chars (`�`), leftover bare-dash simple tables, grid + pipe table counts, relative-image check. |
 | `python scripts/site_tools.py images` | Downscale (>1400px) + WebP-convert `*_media` rasters and rewrite the **owning** book's `.mdx` links (path-scoped, not bare-basename — `image1.png` recurs across books). Needs [Pillow](https://pypi.org/project/pillow/). |
 | `python scripts/site_tools.py site` | The one-command book-site flow: idempotent Docusaurus scaffold (vendors the `rstTable` plugin, pins `webpack 5.97.1`) + `npm install`/`npm run build` + per-book rendered-`<table>` counts. |
+| `python scripts/site_tools.py links` | Print each `.mdx` as its Docusaurus route (deployed URL), read from `docusaurus.config.mjs` — the source of the **Live pages** list above. |
 
 **Coverage + OCR** — the [`/mdx-coverage`](https://github.com/gasyoun/claude-config/blob/main/commands/mdx-coverage.md)
 skill audits a whole tree of `.doc`/`.docx`/`.pdf` for whether each already has an

@@ -178,7 +178,32 @@ def site(root):
     return ok
 
 
+# ------------------------------------------------------------------ links ---
+def _cfg(text, key, default):
+    m = re.search(key + r"\s*:\s*'([^']*)'", text)
+    return m.group(1) if m else default
+
+
+def links(root, fmt="md"):
+    """Print each .mdx as its Docusaurus route (deployed URL), read from
+    docusaurus.config.mjs (url + baseUrl + docs routeBasePath). `fmt`: md|url."""
+    cfg = ""
+    cfgp = os.path.join(root, "docusaurus.config.mjs")
+    if os.path.exists(cfgp):
+        cfg = open(cfgp, encoding="utf-8").read()
+    url = _cfg(cfg, "url", "https://example.github.io").rstrip("/")
+    base = _cfg(cfg, "baseUrl", "/").strip("/")
+    rbp = _cfg(cfg, "routeBasePath", "docs").strip("/")
+    prefix = "/".join(x for x in (base, rbp) if x)
+    mdx = sorted(glob.glob(os.path.join(root, "*", "*.mdx")))
+    for m in mdx:
+        route = os.path.splitext(os.path.relpath(m, root).replace(os.sep, "/"))[0]
+        full = f"{url}/{prefix}/{route}"
+        label = os.path.basename(route)
+        print(f"- [{label}]({full})" if fmt == "md" else full)
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "fidelity"
     root = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_ROOT
-    {"fidelity": fidelity, "images": optimize_images, "site": site}[cmd](root)
+    {"fidelity": fidelity, "images": optimize_images, "site": site, "links": links}[cmd](root)
