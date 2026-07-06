@@ -28,12 +28,12 @@ One directory per source work, named `<Author><ShortTitle>_<year>`:
 
 | Directory | Work | Format present | Grid tables |
 |---|---|---|---:|
-| [ApteSyntax_1885](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885) | Apte, Sanskrit syntax reference (reprint dated 1885; underlying `.doc` metadata shows a 2022 electronic edition) | `.doc`, `.docx`, `.mdx` | 8 |
-| [BuhlerLeitfaden_1923](https://github.com/gasyoun/SanskritGrammar/tree/main/BuhlerLeitfaden_1923) | Bühler, *Leitfaden für den elementaren Cursus des Sanskrit* (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina | `.doc`, `.docx`, `.mdx` | 97 |
-| [KnauerFrazy_1908](https://github.com/gasyoun/SanskritGrammar/tree/main/KnauerFrazy_1908) | Knauer, Sanskrit phrase collection (`Frazy-Knauer`, reprint reference 1908) | `.doc`, `.docx`, `.mdx` | 0 (prose) |
-| [KocherginaUchebnik_1998](https://github.com/gasyoun/SanskritGrammar/tree/main/KocherginaUchebnik_1998) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
-| [ZalizniakKonspekt_2004](https://github.com/gasyoun/SanskritGrammar/tree/main/ZalizniakKonspekt_2004) | Zaliznyak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
-| [ZalizniakOcherk_1978](https://github.com/gasyoun/SanskritGrammar/tree/main/ZalizniakOcherk_1978) | Zaliznyak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
+| [ApteSyntax_1885](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode) | Apte, Sanskrit syntax reference (reprint dated 1885; underlying `.doc` metadata shows a 2022 electronic edition) | `.doc`, `.docx`, `.mdx` | 8 |
+| [BuhlerLeitfaden_1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode) | Bühler, *Leitfaden für den elementaren Cursus des Sanskrit* (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina | `.doc`, `.docx`, `.mdx` | 97 |
+| [KnauerFrazy_1908](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023) | Knauer, Sanskrit phrase collection (`Frazy-Knauer`, reprint reference 1908) | `.doc`, `.docx`, `.mdx` | 0 (prose) |
+| [KocherginaUchebnik_1998](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
+| [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t) | Zaliznyak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
+| [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned) | Zaliznyak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
 
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
 Document File V2`), mostly containing Devanāgarī + IAST text with embedded
