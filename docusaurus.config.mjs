@@ -1,9 +1,25 @@
 // @ts-check
 // Docusaurus book site for the digitized Sanskrit grammar sources.
-// The 6 books live as .mdx beside their .docx sources in per-book folders;
+// Each book lives as .mdx beside its .docx source in its own top-level folder;
 // this docs instance includes them directly (no copy into a docs/ dir).
 // remarkRstTable renders the ```rst-table fenced grid tables as real <table>s.
+import fs from 'fs';
 import remarkRstTable from './src/remark/rstTable.mjs';
+
+// Auto-discover book folders (any top-level dir containing at least one .mdx),
+// instead of a hand-maintained static list. A folder dropped in and converted
+// to .mdx is picked up on the next build with zero config edits — the previous
+// static array silently omitted any new book until someone remembered to add
+// it by hand (found 06-07-2026: ZalizniakMorphology_1975 converted fine but
+// was never in `include`, so the build reported [SUCCESS] with the book
+// simply absent from the site).
+const SKIP_DIRS = new Set(['node_modules', 'build', '.docusaurus', 'src', '.git', '.github', 'scripts']);
+const bookDirs = fs
+  .readdirSync('.', { withFileTypes: true })
+  .filter((d) => d.isDirectory() && !SKIP_DIRS.has(d.name) && !d.name.startsWith('.'))
+  .filter((d) => fs.readdirSync(d.name).some((f) => f.endsWith('.mdx')))
+  .map((d) => d.name)
+  .sort();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -30,16 +46,7 @@ const config = {
           path: '.',
           routeBasePath: 'grammars',
           sidebarPath: './sidebars.mjs',
-          include: [
-            'ApteSyntax_1885/**.mdx',
-            'BuhlerLeitfaden_1923/**.mdx',
-            'GasunsDhatu_2014/**.mdx',
-            'KnauerFrazy_1908/**.mdx',
-            'KocherginaUchebnik_1998/**.mdx',
-            'TolchelnikovTalmud_2026/**.mdx',
-            'ZalizniakKonspekt_2004/**.mdx',
-            'ZalizniakOcherk_1978/**.mdx',
-          ],
+          include: bookDirs.map((d) => `${d}/**.mdx`),
           exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**'],
           remarkPlugins: [remarkRstTable],
           editUrl: undefined,
