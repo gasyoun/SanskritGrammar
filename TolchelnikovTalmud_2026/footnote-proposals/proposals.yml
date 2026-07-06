@@ -1,0 +1,21 @@
+# footnote-proposals/proposals.yml — data-derived enrichment proposals for the
+# Talmud санскрита, each awaiting explicit approval by the author
+# (Ivan / I.E. Tolchelnikov). See README.md in this folder for the rule.
+#
+# Schema (from TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md):
+#   id:          FN-#### (append-only, never reuse)
+#   target:      { section: "II", root: "√kṛ" }   # or an appendix row
+#   type:        freq-note | whitney-ref | set-correction | missing-root | paradigm-check
+#   proposal:    the footnote text proposed for the author's running text
+#   evidence:    exact data source (file + row) backing the proposal
+#   status:      pending -> approved (Ivan) -> applied ; or rejected (stays logged)
+#   approved_by: null until Ivan approves
+
+proposals:
+  - id: FN-0001
+    target: { section: "II", root: "√kṛ" }
+    type: freq-note
+    proposal: "TODO(H241): example placeholder — √kṛ is DCS-rank 3 (very high frequency), teach in the first cohort."
+    evidence: "TODO(H241): WhitneyRoots/crosswalk/roots.csv row whitney_no=…; dcs_rank=…"
+    status: pending
+    approved_by: null
