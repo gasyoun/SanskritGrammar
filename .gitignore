@@ -7,3 +7,6 @@ npm-debug.log*
 
 # Word lock files
 ~$*
+
+# Local Claude Code machine state (not repo content)
+/.claude/
