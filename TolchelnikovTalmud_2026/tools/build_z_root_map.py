@@ -65,14 +65,19 @@ def nfc(s):
 
 
 def parse_verb_by_whitney(cell):
-    """'1 aś, aṃś' -> (homonym='1', root='aś'); 'as' -> (None, 'as')."""
+    """'1 aś, aṃś' -> (homonym='1', root='aś'); 'as' -> (None, 'as');
+    '1 kṛ (skṛ)' -> ('1', 'kṛ') — trailing (alt-form) parentheticals are dropped."""
     cell = nfc(cell.strip())
     # take the part before the first comma (drop variant forms)
     head = cell.split(",")[0].strip()
     m = re.match(r"^(\d+)\s+(.+)$", head)
     if m:
-        return m.group(1), m.group(2).strip()
-    return None, head
+        hom, root = m.group(1), m.group(2).strip()
+    else:
+        hom, root = None, head
+    # drop a trailing parenthetical alternate form: 'kṛ (skṛ)' -> 'kṛ'
+    root = re.sub(r"\s*\([^)]*\)\s*$", "", root).strip()
+    return hom, root
 
 
 def parse_index(html):

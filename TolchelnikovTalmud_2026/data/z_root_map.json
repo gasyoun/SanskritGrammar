@@ -15,18 +15,18 @@
   ],
   "counts": {
    "z_rows": 905,
-   "matched": 872,
+   "matched": 876,
    "match_ambiguous_homonym": 11,
-   "no_whitney_row": 22
+   "no_whitney_row": 18
   },
   "ryad_reconciliation": {
-   "agree": 615,
+   "agree": 619,
    "disagree": 257
   },
   "set_reconciliation": {
-   "z_fills_null": 244,
+   "z_fills_null": 246,
    "agree": 294,
-   "z_veṭ_vs_wt": 201,
+   "z_veṭ_vs_wt": 203,
    "wt_only": 11,
    "disagree": 28
   }
@@ -3709,7 +3709,7 @@
   },
   {
    "z_id": 835,
-   "root": "med (mid)",
+   "root": "med",
    "z_homonym": null,
    "verb_by_whitney": "med (mid)",
    "z_series": "I0",
@@ -5014,7 +5014,7 @@
   },
   {
    "z_id": 322,
-   "root": "mikṣ (miś)",
+   "root": "mikṣ",
    "z_homonym": null,
    "verb_by_whitney": "mikṣ (miś)",
    "z_series": "I1",
@@ -5024,8 +5024,8 @@
    "z_aorist": "3",
    "z_gloss_ru": "смешивать",
    "z_url": "https://samskrtam.ru/z/verb.php?id=322",
-   "whitney_no": null,
-   "match": "no_whitney_row"
+   "whitney_no": 554,
+   "match": "exact"
   },
   {
    "z_id": 323,
@@ -5044,7 +5044,7 @@
   },
   {
    "z_id": 324,
-   "root": "mid med (mid)",
+   "root": "mid med",
    "z_homonym": null,
    "verb_by_whitney": "mid med (mid)",
    "z_series": "I1",
@@ -5299,7 +5299,7 @@
   },
   {
    "z_id": 846,
-   "root": "med (mid)",
+   "root": "med",
    "z_homonym": null,
    "verb_by_whitney": "med (mid)",
    "z_series": "I1",
@@ -5989,7 +5989,7 @@
   },
   {
    "z_id": 362,
-   "root": "dīv (dev)",
+   "root": "dīv",
    "z_homonym": "2",
    "verb_by_whitney": "2 dīv (dev)",
    "z_series": "I2",
@@ -5999,8 +5999,8 @@
    "z_aorist": "5",
    "z_gloss_ru": "сиять",
    "z_url": "https://samskrtam.ru/z/verb.php?id=362",
-   "whitney_no": null,
-   "match": "no_whitney_row"
+   "whitney_no": 364,
+   "match": "exact"
   },
   {
    "z_id": 363,
@@ -9109,7 +9109,7 @@
   },
   {
    "z_id": 594,
-   "root": "kṛ (skṛ)",
+   "root": "kṛ",
    "z_homonym": "1",
    "verb_by_whitney": "1 kṛ (skṛ)",
    "z_series": "R1",
@@ -9119,8 +9119,8 @@
    "z_aorist": "1,2,3,4",
    "z_gloss_ru": "to do",
    "z_url": "https://samskrtam.ru/z/verb.php?id=594",
-   "whitney_no": null,
-   "match": "no_whitney_row"
+   "whitney_no": 106,
+   "match": "exact"
   },
   {
    "z_id": 595,
@@ -9829,7 +9829,7 @@
   },
   {
    "z_id": 895,
-   "root": "kṛ (skṛ)",
+   "root": "kṛ",
    "z_homonym": "1",
    "verb_by_whitney": "1 kṛ (skṛ)",
    "z_series": "R1",
@@ -9839,8 +9839,8 @@
    "z_aorist": "0",
    "z_gloss_ru": "делать",
    "z_url": "https://samskrtam.ru/z/verb.php?id=895",
-   "whitney_no": null,
-   "match": "no_whitney_row"
+   "whitney_no": 106,
+   "match": "exact"
   },
   {
    "z_id": 640,
