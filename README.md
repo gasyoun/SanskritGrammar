@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 06-07-2026_
+_Created: 05-07-2026 · Last updated: 07-07-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Bühler's exercise course, Apte's syntax, Kochergina's textbook,
@@ -71,8 +71,12 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
 
 **Every book folder carries an `errata.yml`** (seeded empty if it has no
 corrections yet) → a generated `ERRATA.md` — text corrections, separate from
-the [CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
-(which records changes to *our digital* edition). Every erratum is tagged with
+the book's own
+[`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
+(which records changes to *our digital* edition; see
+[Per-book releases](#per-book-releases) below — the
+[root CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
+now covers cross-book infra only). Every erratum is tagged with
 **who found it** (the reporting edition/errata sheet, an edition diff, or a
 person) and **when it entered this list**.
 
@@ -101,15 +105,31 @@ python scripts/build_errata.py KnauerFrazy_1908   # one book
 
 The generator ([`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py))
 sorts by page, **de-duplicates** (an erratum reported by several sheets becomes
-one row citing all of them), and cross-references the CHANGELOG: set
-`fixed_in: v0.X.Y` on an entry once the typo is corrected in the digital source
-and it renders `✓ fixed in v0.X.Y` instead of `open`. The whole workflow —
-ingesting a pasted errata sheet, the edition-diff path, regenerating, and the
-monthly CHANGELOG cross-check — is wrapped in the `/errata` skill. All six books
-have an `errata.yml`; the first populated list is
+one row citing all of them), and cross-references **that book's own
+CHANGELOG** (falling back to the root CHANGELOG for any `fixed_in` set before
+the per-book split): set `fixed_in: v0.X.Y` on an entry once the typo is
+corrected in the digital source and it renders `✓ fixed in v0.X.Y` instead of
+`open`. The whole workflow — ingesting a pasted errata sheet, the edition-diff
+path, regenerating, and the monthly CHANGELOG cross-check — is wrapped in the
+`/errata` skill. Eight books have an `errata.yml`; the first populated list is
 [`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md)
 (25 errata from the 1908 print and the 2011/2015/2023 errata sheets), the rest
-seeded empty and ready to fill.
+seeded empty and ready to fill. `ZalizniakMorphology_1975` and `Concordance`
+are not yet wired into the errata/changelog system (no `errata.yml`, no
+per-book `CHANGELOG.md` yet).
+
+## Per-book releases
+
+Each book with an `errata.yml` also carries its own
+[`<Book>/CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
+and tags/releases **independently**, `<book-slug>-vX.Y.Z` (e.g.
+`gasuns-dhatu-v0.1.0`, `knauer-frazy-v0.1.0`) — a correction to one book
+shouldn't force a version bump on the other seven. The root
+[`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
+still exists for cross-book/infra changes (the errata system itself, site
+tooling, docs) and tags plainly as `vX.Y.Z`. Run `/cut-release` scoped to a
+single book folder to cut that book's release; run it at the repo root for an
+infra release.
 
 ## Reading the archive
 
@@ -146,8 +166,38 @@ on every push to `main`. Regenerate this list any time with `python scripts/site
 - [Kochergina — Uchebnik (1998)](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode)
 - [Zaliznyak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t)
 - [Zaliznyak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned)
+- [Concordance — Bühler/Knauer/Kochergina shared exercise sentences](https://gasyoun.github.io/SanskritGrammar/grammars/Concordance/catalog)
 
 Locally (`npm start`) the same routes serve from `http://localhost:3000/SanskritGrammar/…`.
+
+## Concordance — shared exercise sentences (Bühler / Knauer / Kochergina)
+
+[`Concordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx)
+is a **generated** cross-reference of exercise sentences that recur across
+Bühler (1878/1923), Knauer (1908), and Kochergina (1998) — 124 shared-sentence
+clusters found in a first automated pass, ordered chronologically by earliest
+attestation, including 7 sentences attested in all three books. Source data
+and the extraction/matching/rendering pipeline:
+
+| File | Role |
+|---|---|
+| [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) | pulls Devanagari- and IAST-script sentence candidates out of the three `.mdx`, tagged by book/lesson/script; then pairwise-matches them per script pool (`difflib`, similarity ≥ 0.82) |
+| [`scripts/build_catalog.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_catalog.py) | clusters pairwise matches (union-find) into `scripts/data/catalog.json` / `.csv` |
+| [`scripts/render_catalog_mdx.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/render_catalog_mdx.py) | renders `catalog.json` into the generated `Concordance/catalog.mdx` page — never hand-edit it |
+
+```sh
+python scripts/extract_sentences.py extract
+python scripts/extract_sentences.py match
+python scripts/build_catalog.py
+python scripts/render_catalog_mdx.py
+```
+
+This is a first automated pass, not a philological edition — see the caveats
+section on the page itself (Bühler here is the 1923 reprint, not the 1878
+original; IAST matching is noisier than Devanagari; catalog numbering
+(`C0001`…) is independent of each book's own numbering). Follow-up work is
+tracked in
+[H311](https://github.com/gasyoun/Uprava/blob/main/handoffs/H311-Sonnet_SanskritGrammar_buhler-knauer-kochergina-concordance_07.07.26.md).
 
 ## Tooling — [`scripts/site_tools.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/site_tools.py)
 
