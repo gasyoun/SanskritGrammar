@@ -33,6 +33,7 @@ const config = {
           include: [
             'ApteSyntax_1885/**.mdx',
             'BuhlerLeitfaden_1923/**.mdx',
+            'Concordance/**.mdx',
             'GasunsDhatu_2014/**.mdx',
             'KnauerFrazy_1908/**.mdx',
             'KocherginaUchebnik_1998/**.mdx',

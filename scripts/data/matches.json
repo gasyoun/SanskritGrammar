@@ -1,0 +1,5407 @@
+[
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-51",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "अरयो जनानां धनं लुम्पन्ति"
+    },
+    "b": {
+      "id": "knauer-10-207",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "अरयो जनानां धनं लुम्पन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-61",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "ऋषिः सूक्तानि पश्यति"
+    },
+    "b": {
+      "id": "knauer-10-208",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "ऋषिः सूक्तानि पश्यति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-67",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "विष्णुमृषिर्यजति नृपाय"
+    },
+    "b": {
+      "id": "knauer-2-17",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "2",
+      "script": "deva",
+      "text": "विष्णुमृषिर्यजति नृपाय"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-113",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "रामः क्षत्रियान्परशुनाक्राम्यति"
+    },
+    "b": {
+      "id": "knauer-10-209",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "रामः क्षत्रियान्परशुनाक्राम्यति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-118",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "जलेनाग्निः शाम्यति"
+    },
+    "b": {
+      "id": "knauer-10-210",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "जलेनाग्निः शाम्यति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-122",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    },
+    "b": {
+      "id": "knauer-2-27",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "2",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-247",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "घटौ घृतेन पूर्येते"
+    },
+    "b": {
+      "id": "knauer-16-347",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "घटौ घृतेन पूर्येते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-251",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "नरैः कटाः क्रियन्ते"
+    },
+    "b": {
+      "id": "knauer-16-355",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "नरैः कटाः क्रियन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-252",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "कविभिर्नृपाः सदा स्तूयन्ते"
+    },
+    "b": {
+      "id": "knauer-16-349",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "कविभिर्नृपाः सदा स्तूयन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-256",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "इषुभी रणे ऽरयो नृपतिना जीयन्ते"
+    },
+    "b": {
+      "id": "knauer-16-356",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "इषुभी रणे ऽरयो नृपतिना जीयन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-259",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "प्रभूतः काष्ठानां भारो नरेणोह्यते"
+    },
+    "b": {
+      "id": "knauer-16-354",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "प्रभूतः काष्ठानां भारो नरेणोह्यते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-260",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    },
+    "b": {
+      "id": "knauer-16-352",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XII-287",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "शान्त्यर्षय इह शोभन्ते"
+    },
+    "b": {
+      "id": "knauer-2-23",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "2",
+      "script": "deva",
+      "text": "शान्त्यर्षय इह शोभन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIII-310",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    },
+    "b": {
+      "id": "knauer-3-61",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-329",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "स्नुषाभिः सह श्वश्रूणां कलहः प्रावर्तत"
+    },
+    "b": {
+      "id": "knauer-3-56",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "स्नुषाभिः सह श्वश्रूणां कलहः प्रावर्तत"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-332",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "श्वश्र्वाः कोपाच्छोचतः स्नुषे"
+    },
+    "b": {
+      "id": "knauer-3-57",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "श्वश्र्वाः कोपाच्छोचतः स्नुषे"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-335",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "जुह्वाग्नौ घृतं प्रास्यानि"
+    },
+    "b": {
+      "id": "knauer-10-215",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "जुह्वाग्नौ घृतं प्रास्यानि"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-336",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "हे वधु वाप्या जलमानय"
+    },
+    "b": {
+      "id": "knauer-3-59",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "हे वधु वाप्या जलमानय"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-337",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "जुह्वां घृतं तिष्ठति"
+    },
+    "b": {
+      "id": "knauer-3-60",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "जुह्वां घृतं तिष्ठति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XV-351",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XV",
+      "script": "deva",
+      "text": "लोकस्य स्रष्टृभ्यो वसूनां दातृभ्यो देवेभ्यो नमो नमः"
+    },
+    "b": {
+      "id": "knauer-4-81",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "लोकस्य स्रष्टृभ्यो वसूनां दातृभ्यो देवेभ्यो नमो नमः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-365",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "गोः क्षीरेण शिशवो मोदन्ताम्"
+    },
+    "b": {
+      "id": "knauer-4-77",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "गोः क्षीरेण शिशवो मोदन्ताम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-369",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    },
+    "b": {
+      "id": "knauer-4-83",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-371",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "हे शिशवः पितॄन्सेवध्वं भ्रातॄणां स्निह्यत"
+    },
+    "b": {
+      "id": "knauer-10-217",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "हे शिशवः पितॄन्सेवध्वं भ्रातॄणां स्निह्यत"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVII-387",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "ग्रामण्यां स्तेनाः शरानमुञ्चन्"
+    },
+    "b": {
+      "id": "knauer-3-62",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "ग्रामण्यां स्तेनाः शरानमुञ्चन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVII-390",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "संदिग्धां नावं नारोहेत्"
+    },
+    "b": {
+      "id": "knauer-4-78",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "संदिग्धां नावं नारोहेत्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVII-392",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "जामातरः श्वशुरान्स्नुषाः श्वश्रूर्दुहितरश्च पुत्राश्च पितरौ सेवेरन्"
+    },
+    "b": {
+      "id": "knauer-10-218",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "जामातरः श्वशुरान्स्नुषाः श्वश्रूर्दुहितरश्च पुत्राश्च पितरौ सेवेरन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVII-396",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "नौषु नृणां युद्धमभवत्"
+    },
+    "b": {
+      "id": "knauer-4-79",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "नौषु नृणां युद्धमभवत्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-410",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+    },
+    "b": {
+      "id": "knauer-9-179",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-410",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+    },
+    "b": {
+      "id": "knauer-17-368",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "deva",
+      "text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-412",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "वायोर्बलेन तरवो ऽपात्यन्त"
+    },
+    "b": {
+      "id": "knauer-17-369",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "deva",
+      "text": "वायोर्बलेन तरवो ऽपात्यन्त"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-413",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    },
+    "b": {
+      "id": "knauer-17-367",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIX-425",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "मयि त्वयि च पितरौ स्निह्यतः"
+    },
+    "b": {
+      "id": "knauer-9-180",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "मयि त्वयि च पितरौ स्निह्यतः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIX-427",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "कस्यै देव्यै स्तोत्रं रचयेम"
+    },
+    "b": {
+      "id": "knauer-9-181",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "कस्यै देव्यै स्तोत्रं रचयेम"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIX-429",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "युष्मन्मम दुःखं भवति"
+    },
+    "b": {
+      "id": "knauer-9-182",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "युष्मन्मम दुःखं भवति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIX-433",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "या देवकी वसुदेवस्य पत्न्यभवत्तस्यां कृष्णो ऽजायत"
+    },
+    "b": {
+      "id": "knauer-9-183",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "या देवकी वसुदेवस्य पत्न्यभवत्तस्यां कृष्णो ऽजायत"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIX-437",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "अन्येषां काव्यैरेष कविः कीर्तिमसाधयत्"
+    },
+    "b": {
+      "id": "knauer-9-184",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "अन्येषां काव्यैरेष कविः कीर्तिमसाधयत्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXI-475",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXI",
+      "script": "deva",
+      "text": "स्रग्भिरुपानद्भ्यां समेताः शिष्या गुरुं नोपतिष्ठेरन्"
+    },
+    "b": {
+      "id": "knauer-5-96",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "स्रग्भिरुपानद्भ्यां समेताः शिष्या गुरुं नोपतिष्ठेरन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXII-498",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXII",
+      "script": "deva",
+      "text": "मन्त्रिणः स्वामिने कदापि न द्रुह्येयुः"
+    },
+    "b": {
+      "id": "knauer-6-124",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "6",
+      "script": "deva",
+      "text": "मन्त्रिणः स्वामिने कदापि न द्रुह्येयुः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIII-510",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIII",
+      "script": "deva",
+      "text": "जीवतः पुत्रस्य मुखं पश्यन्तौ पितरौ तुष्यतः"
+    },
+    "b": {
+      "id": "knauer-7-140",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "जीवतः पुत्रस्य मुखं पश्यन्तौ पितरौ तुष्यतः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIII-513",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIII",
+      "script": "deva",
+      "text": "कुप्यते मा कुप्यत"
+    },
+    "b": {
+      "id": "knauer-7-141",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "कुप्यते मा कुप्यत"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIII-517",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIII",
+      "script": "deva",
+      "text": "गुरुषु पिताचार्यो माता च गरीयांसः"
+    },
+    "b": {
+      "id": "knauer-7-145",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "गुरुषु पिताचार्यो माता च गरीयांसः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIV-523",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "यावन्ति हतस्य पशोश्चर्मणि लोमानि विद्यन्ते तावन्ति वर्षाणि हन्ता नरके वसेत्"
+    },
+    "b": {
+      "id": "knauer-7-143",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "यावन्ति हतस्य पशोश्चर्मणि लोमानि विद्यन्ते तावन्ति वर्षाणि हन्ता नरके वसेत्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIV-533",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते"
+    },
+    "b": {
+      "id": "knauer-6-125",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "6",
+      "script": "deva",
+      "text": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXV-543",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXV",
+      "script": "deva",
+      "text": "अहनी एव क्षत्रियावयुध्येताम्"
+    },
+    "b": {
+      "id": "knauer-6-127",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "6",
+      "script": "deva",
+      "text": "अहनी एव क्षत्रियावयुध्येताम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXV-545",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXV",
+      "script": "deva",
+      "text": "काश्या आजग्मुषो भ्रातॄनपश्याम"
+    },
+    "b": {
+      "id": "knauer-7-146",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "काश्या आजग्मुषो भ्रातॄनपश्याम"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXV-547",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXV",
+      "script": "deva",
+      "text": "पापाः कर्मणां विपाकेन द्वितीये जन्मनि तिर्यक्षु जायन्त इति स्मृतिः"
+    },
+    "b": {
+      "id": "knauer-5-102",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "पापाः कर्मणां विपाकेन द्वितीये जन्मनि तिर्यक्षु जायन्त इति स्मृतिः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVII-603",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "deva",
+      "text": "पथ्यस्माकं रथो भग्नः"
+    },
+    "b": {
+      "id": "knauer-9-186",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "पथ्यस्माकं रथो भग्नः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVII-603",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "deva",
+      "text": "पथ्यस्माकं रथो भग्नः"
+    },
+    "b": {
+      "id": "knauer-18-389",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "18",
+      "script": "deva",
+      "text": "पथ्यस्माकं रथो भग्नः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVII-606",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "deva",
+      "text": "आभिरद्भिः पाणी प्रक्षालय"
+    },
+    "b": {
+      "id": "knauer-9-187",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "आभिरद्भिः पाणी प्रक्षालय"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVIII-617",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVIII",
+      "script": "deva",
+      "text": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः"
+    },
+    "b": {
+      "id": "knauer-18-386",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "18",
+      "script": "deva",
+      "text": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVIII-619",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVIII",
+      "script": "deva",
+      "text": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्"
+    },
+    "b": {
+      "id": "knauer-18-387",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "18",
+      "script": "deva",
+      "text": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-650",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "तीव्रं तपस्तप्तुं यतिर्वनाय प्रस्थितः"
+    },
+    "b": {
+      "id": "knauer-19-418",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "तीव्रं तपस्तप्तुं यतिर्वनाय प्रस्थितः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-653",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "स्वर्गं लब्धुं भूयसो यज्ञान्यष्टुमर्हसि"
+    },
+    "b": {
+      "id": "knauer-19-416",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "स्वर्गं लब्धुं भूयसो यज्ञान्यष्टुमर्हसि"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-657",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "स्वयंभुवा जगत्स्रष्टुं मनः कृतम्"
+    },
+    "b": {
+      "id": "knauer-19-417",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "स्वयंभुवा जगत्स्रष्टुं मनः कृतम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-692",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "श्रीविक्रमादित्यादनन्तरं पञ्चपञ्चाशोत्तरे शततमे संवत्सरे शकानां राजाभिषिक्तः"
+    },
+    "b": {
+      "id": "knauer-8-160",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "8",
+      "script": "deva",
+      "text": "श्रीविक्रमादित्यादनन्तरं पञ्चपञ्चाशोत्तरे शततमे संवत्सरे शकानां राजाभिषिक्तः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXII-726",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXII",
+      "script": "deva",
+      "text": "मोक्षाय ज्ञानं यज्ञेभ्यः साधीय इति पुराणैरुक्तम्"
+    },
+    "b": {
+      "id": "knauer-8-159",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "8",
+      "script": "deva",
+      "text": "मोक्षाय ज्ञानं यज्ञेभ्यः साधीय इति पुराणैरुक्तम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXII-728",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXII",
+      "script": "deva",
+      "text": "त्रयः कनीयांसो भ्रातरो रामस्याभवन्"
+    },
+    "b": {
+      "id": "knauer-7-147",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "7",
+      "script": "deva",
+      "text": "त्रयः कनीयांसो भ्रातरो रामस्याभवन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXVIII-875",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVIII",
+      "script": "deva",
+      "text": "कानि शास्त्राणि काश्यां त्वमध्यैथाः"
+    },
+    "b": {
+      "id": "knauer-11-238",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "कानि शास्त्राणि काश्यां त्वमध्यैथाः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXVIII-880",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVIII",
+      "script": "deva",
+      "text": "आचार्याः शिष्यान्धर्मं प्रब्रुवते"
+    },
+    "b": {
+      "id": "knauer-11-240",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "आचार्याः शिष्यान्धर्मं प्रब्रुवते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-50",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "कवयो हरिं शंसन्ति"
+    },
+    "b": {
+      "id": "kochergina-XIII-268",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "कवयो हरिं शंसन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-52",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "जलं गिरेः पतति"
+    },
+    "b": {
+      "id": "kochergina-XIII-263",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "जलं गिरेः पतति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-109",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "ऋषिरधुना पाणिना जलमाचामति"
+    },
+    "b": {
+      "id": "kochergina-XIII-267",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "ऋषिरधुना पाणिना जलमाचामति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-115",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "अरयो जनानां वसूनि हरन्ति"
+    },
+    "b": {
+      "id": "kochergina-XIII-266",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "अरयो जनानां वसूनि हरन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VI-122",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    },
+    "b": {
+      "id": "kochergina-XIII-265",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-249",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "जनैर्नगरं गम्यते"
+    },
+    "b": {
+      "id": "kochergina-XXIV-587",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "जनैर्नगरं गम्यते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-254",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "कन्याभ्यां गीतं गीयते"
+    },
+    "b": {
+      "id": "kochergina-XXIV-581",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "कन्याभ्यां गीतं गीयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-260",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    },
+    "b": {
+      "id": "kochergina-XXIV-580",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XII-285",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः"
+    },
+    "b": {
+      "id": "kochergina-VI-33",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XII-286",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः"
+    },
+    "b": {
+      "id": "kochergina-VI-34",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "VI",
+      "script": "deva",
+      "text": "नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIII-304",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "लोभात्क्रोधः प्रभवति लोभात्कामः प्रजायते"
+    },
+    "b": {
+      "id": "kochergina-IX-115",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "IX",
+      "script": "deva",
+      "text": "लोभात्क्रोधः प्रभवति लोभात्कामः प्रजायते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIII-305",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "लोभान्मोहश्च नाशश्च लोभः पापस्य कारणम्"
+    },
+    "b": {
+      "id": "kochergina-IX-116",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "IX",
+      "script": "deva",
+      "text": "लोभान्मोहश्च नाशश्च लोभः पापस्य कारणम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIII-310",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    },
+    "b": {
+      "id": "kochergina-XIV-287",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-323",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "धर्मं चरत माधर्मं सत्यं वदत मानृतम्"
+    },
+    "b": {
+      "id": "kochergina-XXXVII-929",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXVII",
+      "script": "deva",
+      "text": "धर्मं चरत माधर्मं सत्यं वदत मानृतम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-324",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "दीर्घं पश्यत मा ह्रस्वं परं पश्यत मापरम्"
+    },
+    "b": {
+      "id": "kochergina-XXXVII-930",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXVII",
+      "script": "deva",
+      "text": "दीर्घं पश्यत मा ह्रस्वं परं पश्यत मापरम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XV-350",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XV",
+      "script": "deva",
+      "text": "शास्त्रस्य कर्त्रे पाणिनये नमः"
+    },
+    "b": {
+      "id": "kochergina-XIX-461",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "शास्त्रस्य कर्त्रे पाणिनये नमः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-360",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+    },
+    "b": {
+      "id": "kochergina-XIX-459",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-367",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "दुहितरं पितरौ रक्षेतां स्वसारं भ्रातरो मातॄः पुत्राश्च रक्षेयुः"
+    },
+    "b": {
+      "id": "kochergina-XIX-458",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "दुहितरं पितरौ रक्षेतां स्वसारं भ्रातरो मातॄः पुत्राश्च रक्षेयुः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-368",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "यदि शास्त्रमभ्यस्येयं तदा गुरवस्तुष्येयुः"
+    },
+    "b": {
+      "id": "kochergina-XVII-403",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "यदि शास्त्रमभ्यस्येयं तदा गुरवस्तुष्येयुः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-369",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    },
+    "b": {
+      "id": "kochergina-XIX-455",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-408",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "कालिदासस्य काव्यं मां श्रावयेः"
+    },
+    "b": {
+      "id": "kochergina-XXXV-865",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXV",
+      "script": "deva",
+      "text": "कालिदासस्य काव्यं मां श्रावयेः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-413",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    },
+    "b": {
+      "id": "kochergina-XXXV-864",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXV",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XX-453",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XX",
+      "script": "deva",
+      "text": "आपदि सुहृदो ऽस्मान्पालयेयुः"
+    },
+    "b": {
+      "id": "kochergina-XXX-733",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "आपदि सुहृदो ऽस्मान्पालयेयुः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XX-457",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XX",
+      "script": "deva",
+      "text": "त्वं जीव शरदः शतम्"
+    },
+    "b": {
+      "id": "kochergina-XXX-736",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "त्वं जीव शरदः शतम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XX-459",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XX",
+      "script": "deva",
+      "text": "काश्चित्सरितः समुद्रेण काश्चिदन्याभिः सरिद्भिः संगच्छन्ते"
+    },
+    "b": {
+      "id": "kochergina-XXX-737",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "काश्चित्सरितः समुद्रेण काश्चिदन्याभिः सरिद्भिः संगच्छन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XX-463",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XX",
+      "script": "deva",
+      "text": "शरदि कासुचित्सरित्सु पद्मानि दृश्यन्ते"
+    },
+    "b": {
+      "id": "kochergina-XXX-735",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "शरदि कासुचित्सरित्सु पद्मानि दृश्यन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXI-464",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXI",
+      "script": "deva",
+      "text": "दरिद्रान्भर कौन्तेय मा प्रयच्छेश्वरे धनम्"
+    },
+    "b": {
+      "id": "kochergina-XIV-299",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "दरिद्रान् भर कौन्तेय मा प्रयच्छेश्वरे धनम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXV-548",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXV",
+      "script": "deva",
+      "text": "विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति"
+    },
+    "b": {
+      "id": "kochergina-XXVIII-694",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXVIII",
+      "script": "deva",
+      "text": "विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-647",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+    },
+    "b": {
+      "id": "kochergina-XXIII-564",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIII",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-688",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "चत्वारो वेदा विद्यन्ते ऽष्टादश पुराणानि षट्त्रिंशत्स्मृतयः षड् दर्शनानीति विदुषां मतम्"
+    },
+    "b": {
+      "id": "kochergina-XXXI-762",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "चत्वारो वेदा विद्यन्ते ऽष्टादश पुराणानि षट्त्रिंशत्स्मृतयः षड् दर्शनानीति विदुषां मतम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-689",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "चतुर्णां वेदानां तु बहवः शाखा वर्तन्ते"
+    },
+    "b": {
+      "id": "kochergina-XXXI-763",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "चतुर्णां वेदानां तु बहवः शाखा वर्तन्ते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-690",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "तद्यथा ऋग्वेदस्य पञ्च शाखा यजुर्वेदस्य षडशीतिः सामवेदस्य सप्ताथर्ववेदस्य नवेति सर्वाः संकलय्य सप्तोत्तरं शतं शाखानां श्रूयते"
+    },
+    "b": {
+      "id": "kochergina-XXXI-764",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "तद्यथा ऋग्वेदस्य पञ्च शाखा यजुर्वेदस्य षडशीतिः सामवेदस्य सप्ताथर्ववेदस्य नवेति सर्वाः संकलय्य सप्तोत्तरं शतं शाखानां श्रूयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-IV-92",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "iast",
+      "text": "agnī rocate"
+    },
+    "b": {
+      "id": "kochergina-VI-51",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "VI",
+      "script": "iast",
+      "text": "agnī rocate"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XV-352",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XV",
+      "script": "iast",
+      "text": "Imperativus Ātmanepada"
+    },
+    "b": {
+      "id": "kochergina-XVI-380",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVI",
+      "script": "iast",
+      "text": "imperativus Ātmanepada"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVII-612",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "iast",
+      "text": "sa gataḥ"
+    },
+    "b": {
+      "id": "kochergina-XXV-625",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXV",
+      "script": "iast",
+      "text": "sa gataḥ"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXX-658",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "iast",
+      "text": "bhū -- bhavitum"
+    },
+    "b": {
+      "id": "kochergina-XXIII-572",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIII",
+      "script": "iast",
+      "text": "bhū - bhavitum"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXI-717",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "G. ṣaṇṇām"
+    },
+    "b": {
+      "id": "kochergina-XXXI-780",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "G. ṣaṇṇām"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXI-720",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "G. aṣṭānām"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1418",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "G. aṣṭānām"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XL-944",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XL",
+      "script": "iast",
+      "text": "śvas II"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1398",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śvas II"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLIII-1050",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLIII",
+      "script": "iast",
+      "text": "vidāṃ cakāra"
+    },
+    "b": {
+      "id": "kochergina-XXII-540",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXII",
+      "script": "iast",
+      "text": "vidāṃ cakāra"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVI-1083",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVI",
+      "script": "iast",
+      "text": "darś IV"
+    },
+    "b": {
+      "id": "kochergina-XVII-425",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVII",
+      "script": "iast",
+      "text": "darś IV"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-1-1",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "1",
+      "script": "deva",
+      "text": "प्रयागे गङ्गा यमुनया संगछते"
+    },
+    "b": {
+      "id": "kochergina-X-153",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "deva",
+      "text": "प्रयागे गङ्गा यमुनया संगछते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-2-27",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "2",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    },
+    "b": {
+      "id": "kochergina-XIII-265",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-3-61",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    },
+    "b": {
+      "id": "kochergina-XIV-287",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "पद्मं श्रिया वसतिः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-4-83",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    },
+    "b": {
+      "id": "kochergina-XIX-455",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-13-304",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "13",
+      "script": "deva",
+      "text": "पतिं द्रक्ष्यसि कल्याणि क्षिप्रम्"
+    },
+    "b": {
+      "id": "kochergina-XVIII-428",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "पतिं द्रक्ष्यसि कल्याणि क्षिप्रम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-16-352",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    },
+    "b": {
+      "id": "kochergina-XXIV-580",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIV",
+      "script": "deva",
+      "text": "अश्वेन जलं पीयते"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "knauer-17-367",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    },
+    "b": {
+      "id": "kochergina-XXXV-864",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXV",
+      "script": "deva",
+      "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+    }
+  },
+  {
+    "score": 0.99,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-693",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "अधुना त्वष्टादश शतानि चत्वारि च शकानां राज्ञो वर्षाणि गतानि"
+    },
+    "b": {
+      "id": "knauer-8-161",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "8",
+      "script": "deva",
+      "text": "अधुना त्वष्टादश शतानि चत्वारि च शकानां रज्ञो वर्षाणि गतानि"
+    }
+  },
+  {
+    "score": 0.987,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-364",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "ग्राममद्य गच्छेतमिति मातरौ पुत्रावभाषेताम्"
+    },
+    "b": {
+      "id": "kochergina-XIX-456",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "ग्राममद्य गच्छतमिति मातरौ पुत्रावभाषेताम्"
+    }
+  },
+  {
+    "score": 0.986,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVII-597",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "deva",
+      "text": "यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यन्ते"
+    },
+    "b": {
+      "id": "knauer-9-185",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "9",
+      "script": "deva",
+      "text": "यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यते"
+    }
+  },
+  {
+    "score": 0.979,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XLII-987",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLII",
+      "script": "deva",
+      "text": "यथा वातो बलेन वृक्षान्भनक्त्येवं त्वं मे द्विषो भङ्ग्धि"
+    },
+    "b": {
+      "id": "knauer-12-280",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "12",
+      "script": "deva",
+      "text": "यथा वातो बलेन वृक्षान्भनत्त्येवं त्वं मे द्विषो भङ्ग्धि"
+    }
+  },
+  {
+    "score": 0.977,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-647",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+    },
+    "b": {
+      "id": "knauer-19-415",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्"
+    }
+  },
+  {
+    "score": 0.977,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "knauer-19-415",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्"
+    },
+    "b": {
+      "id": "kochergina-XXIII-564",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXIII",
+      "script": "deva",
+      "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+    }
+  },
+  {
+    "score": 0.974,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-333",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "वध्वाः स्निह्यत्यृषिः"
+    },
+    "b": {
+      "id": "knauer-3-58",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "वध्वा स्निह्यत्यृषिः"
+    }
+  },
+  {
+    "score": 0.968,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-331",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "अतिथिं पृच्छतु रात्रौ कुत्र न्यवस इति"
+    },
+    "b": {
+      "id": "knauer-10-214",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "अतिथिं पृछतु रात्रौ कुत्र न्यवस इति"
+    }
+  },
+  {
+    "score": 0.962,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XII-300",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "अश्वा अश्राम्यन्भूमावपतंश्च"
+    },
+    "b": {
+      "id": "kochergina-X-155",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "deva",
+      "text": "अश्वा अश्राम्यन्भूमावपतँश्च"
+    }
+  },
+  {
+    "score": 0.958,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XV-348",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XV",
+      "script": "deva",
+      "text": "मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यताम्"
+    },
+    "b": {
+      "id": "knauer-4-80",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यते"
+    }
+  },
+  {
+    "score": 0.958,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXI-465",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXI",
+      "script": "deva",
+      "text": "व्याधितस्यौषधं पथ्यं नीरुजस्तु किमौषधैः"
+    },
+    "b": {
+      "id": "kochergina-XIV-300",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "व्याधितस्यौषधं पथ्यं नीरुजस्य किमौषधैः"
+    }
+  },
+  {
+    "score": 0.958,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "knauer-17-380",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "iast",
+      "text": "gāraḥ çītaḥ kṛṣṇāyate karam"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1163",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "gāraḥ śītaḥ kṛṣṇāyate karam"
+    }
+  },
+  {
+    "score": 0.956,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXV-550",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXV",
+      "script": "deva",
+      "text": "प्राचां देशे पाटलिपुत्रं नाम महन्नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकच्छम्"
+    },
+    "b": {
+      "id": "knauer-5-103",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "प्राचां देशे पाटलिपुत्रं नाम नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकछम्"
+    }
+  },
+  {
+    "score": 0.956,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXV-812",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXV",
+      "script": "deva",
+      "text": "वनवृक्षान्धुन्वानस्य वायोः शब्दं पथा गच्छन्तावशृणुव"
+    },
+    "b": {
+      "id": "knauer-12-272",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "12",
+      "script": "deva",
+      "text": "वृक्षान्धुन्वानस्य वायोः शब्दं पथा गछन्तावशृणुव"
+    }
+  },
+  {
+    "score": 0.95,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-IV-72",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "deva",
+      "text": "बालो गुरवे पत्त्रं लिखति"
+    },
+    "b": {
+      "id": "kochergina-XIII-264",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIII",
+      "script": "deva",
+      "text": "बालो गुरवे पत्रं लिखति"
+    }
+  },
+  {
+    "score": 0.947,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXI-484",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXI",
+      "script": "iast",
+      "text": "N. V. sg. upānat"
+    },
+    "b": {
+      "id": "kochergina-XXX-758",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXX",
+      "script": "iast",
+      "text": "N.sg. upā-nat"
+    }
+  },
+  {
+    "score": 0.944,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVIII-406",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "सूत अधुना स्थापय रथम्"
+    },
+    "b": {
+      "id": "knauer-17-366",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "17",
+      "script": "deva",
+      "text": "सूताधुना स्थापय रथम्"
+    }
+  },
+  {
+    "score": 0.941,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXVI-833",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVI",
+      "script": "deva",
+      "text": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं भूभुजः कविभ्यो विभजन्ति"
+    },
+    "b": {
+      "id": "knauer-12-274",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "12",
+      "script": "deva",
+      "text": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं राजानः कविभ्यो विभजन्ति"
+    }
+  },
+  {
+    "score": 0.936,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVIII-615",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVIII",
+      "script": "deva",
+      "text": "श्रीमतो राज्ञः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धानि"
+    },
+    "b": {
+      "id": "knauer-18-388",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "18",
+      "script": "deva",
+      "text": "श्रीमतो राक्षः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धा"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-IX-236",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IX",
+      "script": "iast",
+      "text": "saṃ-gam I Ā"
+    },
+    "b": {
+      "id": "kochergina-X-184",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "iast",
+      "text": "saṃgam Ā"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1127",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "nivart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XIV-305",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "iast",
+      "text": "nivart - Ā"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1127",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "nivart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXII-551",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXII",
+      "script": "iast",
+      "text": "nivart Ā"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1140",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "saṃgam I Ā"
+    },
+    "b": {
+      "id": "kochergina-X-184",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "iast",
+      "text": "saṃgam Ā"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1333",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "saṃgam I Ā"
+    },
+    "b": {
+      "id": "kochergina-X-184",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "iast",
+      "text": "saṃgam Ā"
+    }
+  },
+  {
+    "score": 0.933,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1348",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "saṃgam I Ā"
+    },
+    "b": {
+      "id": "kochergina-X-184",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "iast",
+      "text": "saṃgam Ā"
+    }
+  },
+  {
+    "score": 0.931,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XV-347",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XV",
+      "script": "deva",
+      "text": "धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्रयोर्निश्चयः"
+    },
+    "b": {
+      "id": "knauer-10-216",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्र"
+    }
+  },
+  {
+    "score": 0.931,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXX-654",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "deva",
+      "text": "सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्माेक्तव्य इति राज्ञादिश्यत"
+    },
+    "b": {
+      "id": "knauer-18-393",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "18",
+      "script": "deva",
+      "text": "सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्मोक्तव्य इति राज्ञा"
+    }
+  },
+  {
+    "score": 0.93,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-X-250",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "X",
+      "script": "deva",
+      "text": "हे शिष्या गुरुणाहूयध्वे"
+    },
+    "b": {
+      "id": "knauer-16-348",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "16",
+      "script": "deva",
+      "text": "हे शिष्या गुरुणाह्वयध्वे"
+    }
+  },
+  {
+    "score": 0.928,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXII-497",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXII",
+      "script": "deva",
+      "text": "पुरि वास्तडागान्नाल्या पार्थिवो ऽनाययत्"
+    },
+    "b": {
+      "id": "knauer-5-97",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "पुरि वास्तडागान्नाल्या पार्थिव आनयत्"
+    }
+  },
+  {
+    "score": 0.926,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "knauer-1-4",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "1",
+      "script": "deva",
+      "text": "मस्य रथ्यासु गजा भ्राम्यन्ति"
+    },
+    "b": {
+      "id": "kochergina-X-154",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "deva",
+      "text": "ग्रामस्य रथ्यासु गजा भ्राम्यन्ति"
+    }
+  },
+  {
+    "score": 0.925,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVII-389",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVII",
+      "script": "deva",
+      "text": "वैश्याः कृष्या वाणिज्येन पाशुपाल्येन वा वर्तेरन्"
+    },
+    "b": {
+      "id": "kochergina-XII-236",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "वैश्याः वाणिज्येन पाशुपाल्येन वा वर्तेरन्"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-VI-142",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VI",
+      "script": "iast",
+      "text": "śram IV"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1270",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śram P IV"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVII-614",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "iast",
+      "text": "bhakṣ X. P"
+    },
+    "b": {
+      "id": "kochergina-XXV-641",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXV",
+      "script": "iast",
+      "text": "bhakṣ X"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXX-670",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXX",
+      "script": "iast",
+      "text": "dā -- deya"
+    },
+    "b": {
+      "id": "kochergina-XXV-638",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXV",
+      "script": "iast",
+      "text": "dā -- deyam"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXI-719",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "D. Abl. aṣṭābhyaḥ"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1417",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "D.Abl. aṣṭābhyas"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXIV-804",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "ā-rabh I. Ā"
+    },
+    "b": {
+      "id": "kochergina-XIV-301",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "iast",
+      "text": "ārabh - Ā"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XL-944",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XL",
+      "script": "iast",
+      "text": "śvas II"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1273",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śvas P II"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVI-1083",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVI",
+      "script": "iast",
+      "text": "darś IV"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1223",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "darś P IV"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1204",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "ārabh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XIV-301",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "iast",
+      "text": "ārabh - Ā"
+    }
+  },
+  {
+    "score": 0.923,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1260",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "ārabh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XIV-301",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "iast",
+      "text": "ārabh - Ā"
+    }
+  },
+  {
+    "score": 0.918,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXVIII-891",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVIII",
+      "script": "deva",
+      "text": "प्रद्विषतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः"
+    },
+    "b": {
+      "id": "knauer-11-241",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "षतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः"
+    }
+  },
+  {
+    "score": 0.918,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XL-931",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XL",
+      "script": "deva",
+      "text": "सुन्दरि समाश्वसिहि समाश्वसिहीति भयनिमीलिताक्षीमुर्वशीं पुरूरवा अब्रवीत्"
+    },
+    "b": {
+      "id": "knauer-11-245",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "सुन्दरि समाश्वसिहि समाश्वसिहीति भीतामुर्वशीं पुरूरवा अब्रवीत्"
+    }
+  },
+  {
+    "score": 0.917,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXI-716",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "D. Abl. ṣaḍbhyaḥ"
+    },
+    "b": {
+      "id": "kochergina-XXXI-779",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "D.Abl. ṣaḍbhyas"
+    }
+  },
+  {
+    "score": 0.912,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVI-564",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVI",
+      "script": "deva",
+      "text": "अद्भिः पादौ क्षालयत्येष परिव्राट्"
+    },
+    "b": {
+      "id": "knauer-5-101",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "अद्भिः पादौ क्षालयति परिव्राट्"
+    }
+  },
+  {
+    "score": 0.889,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XVI-360",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+    },
+    "b": {
+      "id": "knauer-4-82",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत"
+    }
+  },
+  {
+    "score": 0.889,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLII-1001",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLII",
+      "script": "iast",
+      "text": "bhañj VII P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1241",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "bhañj P VII"
+    }
+  },
+  {
+    "score": 0.889,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1304",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "bhañj VII P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1241",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "bhañj P VII"
+    }
+  },
+  {
+    "score": 0.889,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "knauer-4-82",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "4",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत"
+    },
+    "b": {
+      "id": "kochergina-XIX-459",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+    }
+  },
+  {
+    "score": 0.88,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XLVIII-1106",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "deva",
+      "text": "ष षट्त्रिंशत्"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1152",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "deva",
+      "text": "ध् षट्त्रिंशत्"
+    }
+  },
+  {
+    "score": 0.879,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXI-694",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "deva",
+      "text": "त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्मणेभ्यो दत्तानि"
+    },
+    "b": {
+      "id": "knauer-8-162",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "8",
+      "script": "deva",
+      "text": "त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्म"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-445",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "na kaścit"
+    },
+    "b": {
+      "id": "kochergina-XVII-424",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVII",
+      "script": "iast",
+      "text": "na kaścid"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-445",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "na kaścit"
+    },
+    "b": {
+      "id": "kochergina-XVIII-449",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVIII",
+      "script": "iast",
+      "text": "na kaścid"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-445",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "na kaścit"
+    },
+    "b": {
+      "id": "kochergina-XXV-628",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXV",
+      "script": "iast",
+      "text": "na kaścid"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-445",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "na kaścit"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1312",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "na kaścid"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-446",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "na kiṃcit"
+    },
+    "b": {
+      "id": "kochergina-XXV-629",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXV",
+      "script": "iast",
+      "text": "na kiṃcid"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1305",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dhvaṃs I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1228",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dhvaṃs Ā I"
+    }
+  },
+  {
+    "score": 0.875,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1314",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dhvaṃs I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1228",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dhvaṃs Ā I"
+    }
+  },
+  {
+    "score": 0.868,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XIV-326",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "प्रयागं गच्छतं सुखेन च तत्र निवसतम्"
+    },
+    "b": {
+      "id": "kochergina-XIV-288",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "deva",
+      "text": "प्रयागं गच्छतं सुखेन च तत्र"
+    }
+  },
+  {
+    "score": 0.867,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XLI-956",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLI",
+      "script": "deva",
+      "text": "यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पर्वती न्यहन्"
+    },
+    "b": {
+      "id": "knauer-11-249",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "रात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पार्वती न्यहन्"
+    }
+  },
+  {
+    "score": 0.861,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XL-928",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XL",
+      "script": "deva",
+      "text": "महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति"
+    },
+    "b": {
+      "id": "knauer-11-244",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "उदधौ शेषनागमधिशयानो विष्णुः सुखं स्वपिति"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXXVIII-877",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVIII",
+      "script": "deva",
+      "text": "अग्नीषोमावष्टाभिरृग्भिरृषिरस्तौदिन्द्रावरुणौ च तिसृभिः"
+    },
+    "b": {
+      "id": "knauer-11-239",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "षोमावष्टाभिर्ऋग्भिर्ऋषिरस्तौदिन्द्रावरुणौ च तिसृ"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-IV-91",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IV",
+      "script": "iast",
+      "text": "agniḥ rocate"
+    },
+    "b": {
+      "id": "kochergina-VI-51",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "VI",
+      "script": "iast",
+      "text": "agnī rocate"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVI-584",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVI",
+      "script": "iast",
+      "text": "N. V.sg. panthāḥ"
+    },
+    "b": {
+      "id": "kochergina-XXXI-769",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "N.sg. panthās"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVI-585",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVI",
+      "script": "iast",
+      "text": "N. pumān"
+    },
+    "b": {
+      "id": "kochergina-XXXI-772",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "N.sg. pumān"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVII-614",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVII",
+      "script": "iast",
+      "text": "bhakṣ X. P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1240",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "bhakṣ U X"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXVIII-627",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVIII",
+      "script": "iast",
+      "text": "palāy I. Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1233",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "palāy Ā I"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXI-698",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXI",
+      "script": "iast",
+      "text": "D.Abl. dvābhyām"
+    },
+    "b": {
+      "id": "kochergina-X-168",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "X",
+      "script": "iast",
+      "text": "D.Abl. -bhyām"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1110",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "palāy I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1233",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "palāy Ā I"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1182",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dhā III U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1226",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dhā U III"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1227",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "karṣ VI P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1200",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "karṣ U VI"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1339",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dhā III U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1226",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dhā U III"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1353",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "palāy I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1233",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "palāy Ā I"
+    }
+  },
+  {
+    "score": 0.857,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1359",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "śram IV P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1270",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śram P IV"
+    }
+  },
+  {
+    "score": 0.851,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-VIII-179",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VIII",
+      "script": "deva",
+      "text": "शास्त्रे अधुना शिक्षामह इति पत्त्रे हरिर्लिखति"
+    },
+    "b": {
+      "id": "knauer-10-212",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "10",
+      "script": "deva",
+      "text": "शास्त्रे अधुना शिक्षामह इति पत्त्रे बालः पित्रे लिखति"
+    }
+  },
+  {
+    "score": 0.851,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVI-565",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVI",
+      "script": "deva",
+      "text": "स्त्री पत्ये रूपकाण्यर्पयति"
+    },
+    "b": {
+      "id": "knauer-3-64",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "3",
+      "script": "deva",
+      "text": "स्त्री पत्ये रूपकाणि यछति"
+    }
+  },
+  {
+    "score": 0.842,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XII-293",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XII",
+      "script": "deva",
+      "text": "हन्वामश्वाल्लँँघ्वा यष्ट्याताडयम्"
+    },
+    "b": {
+      "id": "knauer-2-24",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "2",
+      "script": "deva",
+      "text": "श्वाँल्लघ्वा यष्ट्याताडयम्"
+    }
+  },
+  {
+    "score": 0.842,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XIX-442",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "iast",
+      "text": "sa tiṣṭhati"
+    },
+    "b": {
+      "id": "kochergina-VI-37",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "VI",
+      "script": "iast",
+      "text": "tiṣṭhate - I"
+    }
+  },
+  {
+    "score": 0.841,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "knauer-15-334",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "15",
+      "script": "deva",
+      "text": "नानुज्ञातो जगाम स्वनगरं तत्र च रेमे सह पत्न्या"
+    },
+    "b": {
+      "id": "kochergina-XXII-532",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXII",
+      "script": "deva",
+      "text": "स जगाम स्वनगरं तत्र च रेमे सह पत्न्या"
+    }
+  },
+  {
+    "score": 0.84,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXIX-635",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXIX",
+      "script": "deva",
+      "text": "ा पीत्वा चैते नरः सुप्ताः"
+    },
+    "b": {
+      "id": "knauer-19-411",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "19",
+      "script": "deva",
+      "text": "भुक्त्वा पीत्वा चैते नराः सुप्ताः"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XXVI-558",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXVI",
+      "script": "deva",
+      "text": "हृद्येष पुमान्परं ब्रह्म ध्यायति"
+    },
+    "b": {
+      "id": "knauer-5-99",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "5",
+      "script": "deva",
+      "text": "हृदि साधुः पुमान्परं ब्रह्म ध्यायति"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "buhler-XLVIII-1091",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "deva",
+      "text": "ई ईक्ष्"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1149",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "deva",
+      "text": "ी ईक्ष्"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-VIII-210",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VIII",
+      "script": "iast",
+      "text": "ā-rabh I"
+    },
+    "b": {
+      "id": "kochergina-XIV-301",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XIV",
+      "script": "iast",
+      "text": "ārabh - Ā"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-VIII-210",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "VIII",
+      "script": "iast",
+      "text": "ā-rabh I"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1250",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "rabh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-IX-240",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IX",
+      "script": "iast",
+      "text": "śubh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1269",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śubh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-IX-241",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "IX",
+      "script": "iast",
+      "text": "vart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1259",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vart Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XI-281",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XI",
+      "script": "iast",
+      "text": "paṭh I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1232",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "paṭh P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XVI-383",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVI",
+      "script": "iast",
+      "text": "man IV Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1244",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "man Ā IV"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXVII-859",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVII",
+      "script": "iast",
+      "text": "jñā IX U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1217",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "jñā U IX"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XXXVII-866",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XXXVII",
+      "script": "iast",
+      "text": "snā II.-P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1281",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "snā P II"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XL-944",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XL",
+      "script": "iast",
+      "text": "śvas II"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1265",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śas P II"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLI-972",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLI",
+      "script": "iast",
+      "text": "mā III. Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1246",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "mā Ā III"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLIII-1047",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLIII",
+      "script": "iast",
+      "text": "īkṣ Ā. īkṣāṃ cakre"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1196",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "īkṣāṃ cakre"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1109",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dhāv I U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1227",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dhāv U I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1113",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "śubh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1269",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śubh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1118",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "vart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1259",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vart Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1123",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "darś I P"
+    },
+    "b": {
+      "id": "kochergina-XVII-425",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVII",
+      "script": "iast",
+      "text": "darś IV"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1146",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "bhāṣ I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1242",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "bhāṣ Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1148",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "brū II U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1239",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "brū U II"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1150",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "dā III U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1224",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "dā U III"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1154",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "labh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1255",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "labh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1155",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "varṣ I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1260",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "varṣ U I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1156",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "labh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1255",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "labh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1158",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "kamp I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1199",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "kamp Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1160",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "man IV Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1244",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "man Ā IV"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1173",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "rakṣ I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1249",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "rakṣ P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1176",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "labh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1255",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "labh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1183",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "snā II P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1281",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "snā P II"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1188",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "mā III U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1246",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "mā Ā III"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1201",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "sthā I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1280",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "sthā U I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1202",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "vart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1259",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vart Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1248",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "man IV Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1244",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "man Ā IV"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1250",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "labh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1255",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "labh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1255",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "vand I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1258",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vand Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1286",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "paṭh I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1232",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "paṭh P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1294",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "arth X Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1191",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "arth Ā X"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1296",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "śaṃs I U"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1263",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śaṃs P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1299",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "tuṣ IV P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1221",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "tuṣ P IV"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1322",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "śubh I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1269",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śubh Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1332",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "khād I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1209",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "khād P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1335",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "kamp I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1199",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "kamp Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1341",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "vart I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1259",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vart Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1342",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "rakṣ I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1249",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "rakṣ P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1351",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "arth X Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1191",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "arth Ā X"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1356",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "mar VI Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1245",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "mar Ā VI"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1361",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "śikṣ I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1266",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "śikṣ Ā I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1365",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "rakṣ I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1249",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "rakṣ P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1366",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "paṭh I P"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1232",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "paṭh P I"
+    }
+  },
+  {
+    "score": 0.833,
+    "exact": false,
+    "script": "iast",
+    "a": {
+      "id": "buhler-XLVIII-1367",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XLVIII",
+      "script": "iast",
+      "text": "vand I Ā"
+    },
+    "b": {
+      "id": "kochergina-XXXIV-1258",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXIV",
+      "script": "iast",
+      "text": "vand Ā I"
+    }
+  }
+]
