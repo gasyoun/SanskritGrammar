@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.1.0] - 2026-07-07
 ### Added
 - Converted `.docx` → `.md`/`.mdx` via the `/docx-to-md` skill (Pandoc GFM with
   grid tables — 124 grid tables, the most of any book here — images extracted
