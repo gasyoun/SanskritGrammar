@@ -4,6 +4,10 @@ sidebar_label: "Приложение 1. Глагольные корни"
 sidebar_position: 12
 ---
 
+import ZRef from '@site/src/components/ZRef';
+
+<ZRef sec="58–70"/>
+
 **Методологическое замечание:** Данный каталог содержит исчерпывающую информацию, необходимую для алгоритмического порождения любой глагольной или отглагольной формы. Как было указано во введении, состав корней и префиксов опирается **исключительно на данные У. Д. Уитни** (`W. D. Whitney`). Любые данные, специфичные только для словаря Монье-Вильямса (`Monier-Williams`), из каталога удалены ради обеспечения предсказуемости генерации форм.
 
 ### Структура словарной статьи:
@@ -18,6 +22,99 @@ sidebar_position: 12
 8. **Иные формы** — Возможность образования пассива (PASS.), каузатива (CAUS.), дезидератива (DES.), интенсива (INT.) и т.д.
 9. **Первичные суффиксы** — Уитниевский список суффиксов, которые могут присоединяться к данному корню.
 
-*(Далее следует сводная таблица корней от `AKṢ` до `HṚ`)*
+### Сводная таблица корней
 
-{/* TODO(H241): сводная таблица корней AKṢ–HṚ генерируется из whitney_talmud.json (Phase-3 enrichment crosswalk) — судьбоносные Ряд/Тип/seṭ значения назначает только H241, не Phase 0. */}
+:::note Происхождение данных (звёздочка `*`)
+
+Столбцы `№ Уитни`, `Класс`, `p.p.p.`, `DCS-ранг` и `Значение` взяты **дословно** из
+канонического набора [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv)
+(данные Уитни). Столбцы, помеченные звёздочкой — **`Ряд*`** и **`seṭ*`** — не берутся
+из готового источника, а **вычисляются**:
+
+- **`Ряд*`** выводится из огласовки корня по исчислению Таблицы 2 (Раздел II):
+  корневой гласный задаёт букву ряда, его долгота — индекс. Это **предложение**,
+  ожидающее утверждения автором (см. `footnote-proposals/`), а не авторская разметка.
+- **`seṭ*`** выводится (ориентировочно) по наличию соединительного `i`/`ī` в p.p.p.
+- **Тип** (`s`/`a`/`v`) — лексическое свойство, которое Уитни фиксирует, но которого
+  нет в машиночитаемом наборе WhitneyRoots; поэтому он здесь **не проставлен**
+  (немаркированное поведение по умолчанию — `s`, Таблица 3).
+
+Полный каталог всех корней с флагами достоверности — в
+[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json),
+воспроизводится скриптом [`tools/build_whitney_talmud.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_whitney_talmud.py).
+
+:::
+
+{/* AUTOGEN:appendix1-cohort BEGIN — regenerate with tools/render_appendix1.py */}
+
+Ниже — **первая когорта** (65 наиболее частотных по DCS корней, ранг ≤ 50), с которой начинается самостоятельное изучение. Полный каталог всех 930 глагольных корней Уитни — в машиночитаемом виде в [`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json).
+
+| DCS-ранг | № Уитни | √ | Ряд* | seṭ* | Класс | p.p.p. | Значение |
+| ---: | ---: | :--- | :---: | :---: | :--- | :--- | :--- |
+| 1 | 106 | `kṛ` | R₁ | aniṭ | I/II/V/VIII | kṛtá | make |
+| 1 | 107 | `kṛ` | R₁ | — | VI | — | scatter |
+| 1 | 108 | `kṛ` | R₁ | — | — | — | commemorate |
+| 2 | 528 | `bhū` | U₂ | aniṭ | I | bhūtá | be |
+| 3 | 22 | `as` | A₁ | — | II | — | be |
+| 3 | 23 | `as` | A₁ | aniṭ | I/IV | asta | throw |
+| 4 | 699 | `vac` | A₁ | aniṭ | II/III | uktá | speak |
+| 5 | 166 | `gach` | A₁ | — | — | — | — |
+| 5 | 170 | `gam` | M₁ | aniṭ | I/II | gatá | go |
+| 6 | 375 | `dṛś` | R₁ | aniṭ | IV | dṛṣṭá | see |
+| 7 | 349 | `dā` | A₂ | — | I/II/III/IV | - | give |
+| 7 | 350 | `dā` | A₂ | aniṭ | I/VI | diná | divide, share |
+| 7 | 351 | `dā` | A₂ | — | — | — | bind |
+| 7 | 352 | `dā` | A₂ | aniṭ | — | dāta | clear |
+| 8 | 728 | `vid` | I₁ | seṭ | I/II/VI | viditá | know |
+| 8 | 729 | `vid` | I₁ | aniṭ | II/VI | vittá | find |
+| 9 | 815 | `śru` | U₁ | aniṭ | II/V | śrutá | hear |
+| 10 | 502 | `brū` | U₂ | — | II/VI | — | say |
+| 11 | 24 | `ah` | A₁ | — | — | — | say |
+| 12 | 874 | `sthā` | A₂ | aniṭ | I | sthitá | stand |
+| 13 | 249 | `jan` | N₁ | aniṭ | I/II/III/IV | jātá | give birth, be born |
+| 14 | 908 | `han` | N₁ | aniṭ | I/II/VIII | hatá | smite |
+| 16 | 597 | `yaj` | A₁ | aniṭ | I/II | iṣṭá | offer |
+| 17 | 919 | `hu` | U₁ | aniṭ | II/III | hutá | sacrifice |
+| 19 | 608 | `yuj` | U₁ | aniṭ | II/VII | yuktá | join |
+| 20 | 603 | `yā` | A₂ | aniṭ | II | yātá | go |
+| 21 | 448 | `pā` | A₂ | aniṭ | I/II/III | pītá | drink |
+| 21 | 449 | `pā` | A₂ | — | II | — | protect |
+| 21 | 450 | `pā` | A₂ | — | — | — | rise against |
+| 22 | 269 | `jñā` | A₂ | aniṭ | I/IX | jñātá | know |
+| 23 | 32 | `ich` | I₁ | — | — | — | — |
+| 23 | 42 | `iṣ` | I₁ | aniṭ | I/IV/VI | iṣṭá | seek, desire |
+| 23 | 43 | `iṣ` | I₁ | seṭ | IV/VI/IX | iṣitá | send |
+| 24 | 446 | `paś` | A₁ | aniṭ | IV | spaṣṭa | see |
+| 24 | 447 | `paś` | A₁ | — | — | — | bind |
+| 25 | 546 | `man` | N₁ | aniṭ | III/IV/VIII | matá | think |
+| 26 | 393 | `dhā` | A₂ | aniṭ | I/II/III/IV | hitá | put |
+| 26 | 394 | `dhā` | A₂ | aniṭ | — | dhītá | suck |
+| 28 | 894 | `smṛ` | R₁ | aniṭ | I | smṛta | remember |
+| 29 | 258 | `ji` | I₁ | aniṭ | I/II | jitá | conquer |
+| 29 | 259 | `ji` | I₁ | aniṭ | I/V | jinvitá | quicken |
+| 30 | 220 | `car` | A₁ | seṭ | I | caritá | move |
+| 31 | 704 | `vad` | A₁ | seṭ | I | uditá | speak |
+| 32 | 564 | `muc` | U₁ | aniṭ | VI | muktá | release |
+| 33 | 29 | `i` | I₁ | aniṭ | I/IV/V | itá | go |
+| 33 | 30 | `i` | I₁ | — | I/V/IX | — | send |
+| 35 | 673 | `labh` | A₁ | — | I | labdha | take |
+| 38 | 440 | `pat` | A₁ | seṭ | I | patitá | fly, fall |
+| 38 | 441 | `pat` | A₁ | — | IV | — | rule |
+| 40 | 477 | `prach` | A₁ | aniṭ | VI | pṛṣṭá | ask |
+| 42 | 909 | `har` | A₁ | — | IV | — | be gratified |
+| 42 | 923 | `hṛ` | R₁ | aniṭ | I/II/III | hṛtá | take |
+| 42 | 924 | `hṛ` | R₁ | — | IX | — | be angry |
+| 43 | 854 | `sṛj` | R₁ | aniṭ | I/VI | sṛṣṭá | send forth |
+| 44 | 911 | `hā` | A₂ | aniṭ | I/III | hīná | leave |
+| 44 | 912 | `hā` | A₂ | aniṭ | III | hāna | go forth |
+| 46 | 524 | `bhuj` | U₁ | — | VI | — | bend |
+| 46 | 525 | `bhuj` | U₁ | aniṭ | VII | bhukta | enjoy |
+| 47 | 494 | `bandh` | A₁ | aniṭ | I/IX | baddhá | bind |
+| 48 | 571 | `mṛ` | R₁ | aniṭ | I | mṛtá | die |
+| 48 | 572 | `mṛ` | R₁ | aniṭ | VI/IX | mūrṇá | crush |
+| 49 | 715 | `vas` | A₁ | aniṭ | II/VI | uṣṭá | shine |
+| 49 | 716 | `vas` | A₁ | seṭ | II/VI | vasita | clothe |
+| 49 | 717 | `vas` | A₁ | seṭ | I | uṣita | dwell |
+| 50 | 744 | `vṛt` | R₁ | aniṭ | I/II/III | vṛttá | turn |
+
+{/* AUTOGEN:appendix1-cohort END */}

@@ -1,0 +1,264 @@
+/* Shared styling for the Talmud санскрита interactive widgets (H241 Phase 2).
+   Theme-aware: every colour is a Docusaurus infima variable, so the widgets
+   read correctly in both light and dark mode. */
+
+.widget {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  padding: 1.1rem 1.2rem;
+  margin: 1.5rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0 0 0.9rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-right: 0.35rem;
+}
+
+/* Pill buttons (series pickers, grade toggles, yes/no) */
+.pill {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+}
+.pill:hover {
+  border-color: var(--ifm-color-primary);
+}
+.pillActive {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white, #fff);
+}
+
+/* Big display of a computed form */
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  margin: 0.7rem 0;
+}
+.form {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1.1;
+}
+.formMuted {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.15rem;
+  color: var(--ifm-color-emphasis-600);
+}
+.arrow {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 1.3rem;
+}
+
+.caption {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+.select {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+/* Grade-strength colour keys (shared by ablaut + heteroclisis) */
+.gradeStrong { color: #d64550; }   /* вриддхи / сильная основа */
+.gradeMid    { color: #c98a00; }   /* гуна / средняя основа */
+.gradeWeak   { color: var(--ifm-color-emphasis-600); } /* слабая */
+
+/* Step trace (reduplication) */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.6rem 0;
+}
+.step {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.05rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+.stepActive {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-white, #fff);
+  border-color: var(--ifm-color-primary);
+}
+.stepRule {
+  font-size: 0.76rem;
+  color: var(--ifm-color-emphasis-600);
+  display: block;
+  margin-top: 0.15rem;
+}
+
+/* Decision-tree nodes */
+.node {
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  max-width: 34rem;
+}
+.nodeActive {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest);
+}
+.branchRow {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.4rem 0 0.9rem;
+}
+.outcome {
+  font-weight: 700;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+.outcomeSet {
+  background: rgba(214, 138, 0, 0.14);
+  border-color: #c98a00;
+}
+.outcomeBare {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* Sandhi collider */
+.collider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 1.3rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  margin: 0.7rem 0;
+  min-height: 4.5rem;
+}
+.phoneme {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.3rem 0.9rem;
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: transform 0.35s ease;
+}
+.phonemeL {
+  transform: translateX(0);
+}
+.phonemeR {
+  transform: translateX(0);
+}
+.collidedL {
+  transform: translateX(1.6rem);
+}
+.collidedR {
+  transform: translateX(-1.6rem);
+}
+.result {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  animation: talmudPop 0.4s ease;
+}
+@keyframes talmudPop {
+  0% { transform: scale(0.4); opacity: 0; }
+  60% { transform: scale(1.18); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.rulePlate {
+  display: inline-block;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Case grid (heteroclisis) */
+.grid {
+  border-collapse: collapse;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  margin: 0.6rem 0;
+}
+.grid th,
+.grid td {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  padding: 0.3rem 0.55rem;
+  text-align: center;
+}
+.grid th {
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+}
+.cellStrong { background: rgba(214, 69, 80, 0.16); }
+.cellMid    { background: rgba(201, 138, 0, 0.14); }
+.cellWeak   { background: var(--ifm-color-emphasis-100); }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-700);
+  margin-top: 0.5rem;
+}
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  display: inline-block;
+}
