@@ -24,7 +24,7 @@ const bookDirs = fs
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sanskrit Grammar Sources',
-  tagline: 'Digitized Sanskrit grammar & reader texts (Apte, Bühler, Gasūns, Kochergina, Knauer, Tolchelnikov, Zaliznyak)',
+  tagline: 'Digitized Sanskrit grammar & reader texts (Apte, Bühler, Gasūns, Kochergina, Knauer, Tolchelnikov, Whitney, Zaliznyak)',
   favicon: undefined,
 
   url: 'https://gasyoun.github.io',

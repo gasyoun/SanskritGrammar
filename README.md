@@ -34,6 +34,7 @@ One directory per source work, named `<Author><ShortTitle>_<year>`:
 | [KocherginaUchebnik_1998](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
 | [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t) | Zaliznyak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
 | [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned) | Zaliznyak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
+| [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th issue 1950) — 18 chapters, 1316 §, generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) | `.mdx` (generated) | 0 (§-linked to Wikisource) |
 
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
 Document File V2`), mostly containing Devanāgarī + IAST text with embedded
@@ -166,7 +167,9 @@ on every push to `main`. Regenerate this list any time with `python scripts/site
 - [Kochergina — Uchebnik (1998)](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode)
 - [Zaliznyak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t)
 - [Zaliznyak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned)
+- [Whitney — A Sanskrit Grammar (1889)](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index)
 - [Concordance — Bühler/Knauer/Kochergina shared exercise sentences](https://gasyoun.github.io/SanskritGrammar/grammars/Concordance/catalog)
+- [Subject concordance — what each grammar covers, on Whitney's spine](https://gasyoun.github.io/SanskritGrammar/grammars/SubjectConcordance/catalog)
 
 Locally (`npm start`) the same routes serve from `http://localhost:3000/SanskritGrammar/…`.
 
@@ -198,6 +201,49 @@ original; IAST matching is noisier than Devanagari; catalog numbering
 (`C0001`…) is independent of each book's own numbering). Follow-up work is
 tracked in
 [H311](https://github.com/gasyoun/Uprava/blob/main/handoffs/H311-Sonnet_SanskritGrammar_buhler-knauer-kochergina-concordance_07.07.26.md).
+
+## Whitney — *A Sanskrit Grammar* (1889), the reference spine
+
+[`WhitneyGrammar_1889/`](https://github.com/gasyoun/SanskritGrammar/tree/main/WhitneyGrammar_1889)
+is a **generated** book folder — 18 per-chapter `.mdx` + an
+[index](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/00_index.mdx) —
+built from the [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) source data
+by [`scripts/build_whitney.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_whitney.py):
+
+```sh
+python scripts/build_whitney.py    # reads ../WhitneyRoots/src/{wg_text.txt,whitney_sections.json}
+```
+
+The body is segmented into Whitney's own 18 chapters and 1316 numbered sections
+(§); each **§N** links to the authoritative
+[English Wikisource edition](https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)).
+Because the source is a flat OCR of the print body, Whitney's **paradigm tables**
+and some **Vedic accents** are not reconstructed here — the §-links and the
+[scanned PDF](https://github.com/gasyoun/WhitneyRoots/blob/main/src/Whitney-Grammar_Wikisource_2023.pdf)
+are the authority for those (10 of 1316 § had no discrete marker in the OCR and
+are merged into the preceding section — reported by the build script). Whitney is
+public domain; this digital text is CC BY-SA 4.0 via Wikisource.
+
+## Subject concordance — what each grammar covers (Whitney's spine)
+
+[`SubjectConcordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/SubjectConcordance/catalog.mdx)
+is a **generated** student-reference cross-index: which grammatical **subject**
+each work in this repo treats, laid out on Whitney's 18 chapters + 41 fine-grained
+form categories (from
+[`form_section_concordance.json`](https://github.com/gasyoun/WhitneyRoots/blob/main/src/form_section_concordance.json)).
+This is the *subject* counterpart to the *sentence*-level `Concordance/` above.
+
+```sh
+python scripts/build_subject_concordance.py
+```
+
+Coverage of the nine non-Whitney works is an **automated first pass**: a curated
+multilingual keyword lexicon (EN/RU/DE + Sanskrit technical terms — most editions
+here are Russian-medium) is scanned over each work's full text, and each cell
+reports how many distinct subject terms occur (● ≥3 covered, ○ 1–2 mentioned,
+— none). It is a finding-aid, not a philological mapping — the page carries the
+caveats and each work's own extracted table of contents. Follow-up in
+[H319](https://github.com/gasyoun/Uprava/blob/main/handoffs/H319-Opus_SanskritGrammar_whitney-add-and-subject-concordance_07.07.26.md).
 
 ## Tooling — [`scripts/site_tools.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/site_tools.py)
 
