@@ -33,22 +33,22 @@ with MG 07-07-2026). Join map: [`data/z_root_map.json`](https://github.com/gasyo
 
 | `/z/` index rows | matched to `whitney_no` | ambiguous homonym | no Whitney row |
 |---|---|---|---|
-| 905 | **872** (96.4%) | 11 | 22 |
+| 905 | **876** (96.8%) | 11 | 18 |
 
 - **Ambiguous homonym** (11): `/z/` gives a homonym number, but the `(root, homonym)` pair does
   not resolve to a single Whitney row — `i, ran, rās, stu, tan, uṣ, śuṣ, ūh`. Resolve by hand in Phase 3.
-- **No Whitney row** (22): variant spellings and later/non-Whitney roots (`chuḍ, hary, mikṣ,
+- **No Whitney row** (18): variant spellings and later/non-Whitney roots (`chuḍ, hary, mikṣ,
   mlich, nū, riṅkh, yav, …`), plus **DB-noise rows** (`-`, `отсутствует` = "absent") — confirming
   MG's "`/z/` is not very clean" warning. These are logged, not force-matched.
 
 ## Ряд (series) reconciliation
 
-Over the 872 matched roots (both sides present):
+Over the 876 matched roots (both sides present):
 
 | | count | share |
 |---|---|---|
-| **agree** | 615 | **70.5%** |
-| disagree | 257 | 29.5% |
+| **agree** | 619 | **70.7%** |
+| disagree | 257 | 29.3% |
 
 The 257 disagreements split into two very different classes:
 
@@ -58,7 +58,7 @@ The 257 disagreements split into two very different classes:
 | **genuine series conflict** | 142 | the two methods assign a different series letter/subscript |
 
 Treating the structural cases as "`/z/`-richer" rather than errors, genuine agreement is
-**615 / 757 = 81.2%**. Either way, adopting `/z/` strictly improves the data.
+**619 / 761 = 81.3%**. Either way, adopting `/z/` strictly improves the data.
 
 **Two findings inside the 142 genuine conflicts:**
 
@@ -77,15 +77,15 @@ Treating the structural cases as "`/z/`-richer" rather than errors, genuine agre
 | both assert seṭ/aniṭ — **agree** | 294 |
 | both assert seṭ/aniṭ — disagree | 28 |
 | **agreement** | **294 / 322 = 91.3%** |
-| `/z/` **fills a value where we derived null** | **244** |
-| `/z/` says `veṭ` where we derived seṭ/aniṭ | 201 |
+| `/z/` **fills a value where we derived null** | **246** |
+| `/z/` says `veṭ` where we derived seṭ/aniṭ | 203 |
 | we assert, `/z/` unmarked | 11 |
 
 - 27 of the 28 genuine conflicts are `/z/`=seṭ vs our=aniṭ (our p.p.p. inference missed a
   connecting vowel): `lag, sah, vyā, śī, hū, śri, śvit, kṣvid, ji, gṛ, vij, śak, dīv, …`;
   one is the reverse (`nind`). All were `medium` confidence on our side.
-- The biggest win is coverage: `/z/` supplies a seṭ value for **244** roots our derivation
-  left `null`, and flags **201** as `veṭ` (optional) — a distinction our binary derivation
+- The biggest win is coverage: `/z/` supplies a seṭ value for **246** roots our derivation
+  left `null`, and flags **203** as `veṭ` (optional) — a distinction our binary derivation
   could not make at all.
 
 ## Recommendation (Phase 3)
@@ -97,6 +97,22 @@ running text only as **Ivan-approved footnotes** via `/review-sheet` — but the
 cites `/z/` (the author's own DB) instead of "derived from vowel", which is far stronger.
 Rewrite FN-0001/0002's methodology notes to (a) cite `/z/`, (b) record the ṛ-nucleus series
 divergence, and (c) drop the over-confident `high` flags shown false here.
+
+## Deep-link coverage (Phase 4)
+
+The widget feed ([`widget_roots.json`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/data/widget_roots.json))
+and the Appendix 1 catalog now carry a `z_url` deep-link to each root's full generated
+paradigm on `/z/`. Coverage: **39/44** ablaut examples, **101/106** seṭ examples.
+
+- **Collision rule.** ~107 Whitney roots have >1 `/z/` row (a primary alphabetical
+  listing + a high-id `800–900s` s-mobile/variant cross-reference, e.g. `kṛ` id=594 vs
+  `skṛ` id=895). The deep-link picks the **lowest `z_id`** = the primary listing.
+- **Graceful gaps.** The 5 uncovered widget roots are present-stem-vs-lemma form
+  differences (`gach`≈gam, `ich`≈iṣ, `har`≈hṛ), the ambiguous `i`, and `sṛj` — where
+  `/z/` id=649's own row is internally inconsistent: root cell `sṛj` but «Verb by
+  Whitney» cell `vṛṣ`. We join on the Whitney cross-ref column, so such rows degrade to
+  **no link** rather than a wrong one. **col0 (root) ≠ col3 (Verb by Whitney)**
+  disagreement is a `/z/` data-quality signal worth a Phase-3 pass.
 
 ## Provenance
 

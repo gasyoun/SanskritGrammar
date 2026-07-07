@@ -30,10 +30,30 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 REPO_FOLDER = os.path.dirname(HERE)
 MASTER = os.path.join(REPO_FOLDER, "data", "whitney_talmud.json")
+ZMAP = os.path.join(REPO_FOLDER, "data", "z_root_map.json")
 OUT = os.path.join(REPO_FOLDER, "data", "widget_roots.json")
 
 
-def slim_ablaut(r):
+def load_z_urls():
+    """whitney_no -> samskrtam.ru/z/ verb.php URL (H329 deep-link; {} if map absent).
+
+    ~107 Whitney roots have >1 /z/ row: a primary alphabetical listing (low id) plus a
+    high-id (800-900s) s-mobile/variant cross-reference (e.g. kṛ id=594 vs skṛ id=895).
+    Deep-link to the primary = the lowest z_id per whitney_no."""
+    if not os.path.exists(ZMAP):
+        return {}
+    z = json.load(open(ZMAP, encoding="utf-8"))
+    best = {}
+    for r in z["roots"]:
+        w = r.get("whitney_no")
+        if not w:
+            continue
+        if w not in best or r["z_id"] < best[w][0]:
+            best[w] = (r["z_id"], r["z_url"])
+    return {w: url for w, (_, url) in best.items()}
+
+
+def slim_ablaut(r, z_url=None):
     """Fields the Ablaut machine needs to seat a real root in its series."""
     return {
         "root": r["root_iast"],
@@ -44,10 +64,11 @@ def slim_ablaut(r):
         "ryad_note": r.get("ryad_note"),
         "set": r["set"],
         "dcs_rank": r["dcs_rank"],
+        "z_url": z_url,
     }
 
 
-def slim_set(r):
+def slim_set(r, z_url=None):
     return {
         "root": r["root_iast"],
         "gloss": r["gloss"],
@@ -55,6 +76,7 @@ def slim_set(r):
         "set": r["set"],
         "set_confidence": r.get("set_confidence"),
         "dcs_rank": r["dcs_rank"],
+        "z_url": z_url,
     }
 
 
@@ -63,6 +85,7 @@ def main():
         master = json.load(f)
     verbal = master["verbal_roots"]
     nominal = master["nominal_appendix2"]
+    z_urls = load_z_urls()
 
     # De-dup by (root, ryad) so homonyms don't clutter the example picker;
     # keep the highest-frequency (lowest dcs_rank) representative.
@@ -79,7 +102,7 @@ def main():
         if key in seen:
             continue
         seen.add(key)
-        ablaut.append(slim_ablaut(r))
+        ablaut.append(slim_ablaut(r, z_urls.get(r["whitney_no"])))
 
     seen = set()
     setex = []
@@ -90,14 +113,15 @@ def main():
         if key in seen:
             continue
         seen.add(key)
-        setex.append(slim_set(r))
+        setex.append(slim_set(r, z_urls.get(r["whitney_no"])))
 
     out = {
         "_meta": {
             "what": "Compact Phase-2 widget feed projected from whitney_talmud.json",
             "generator": "tools/build_widget_data.py",
             "provenance": "ryad/set are DERIVED proposals (see whitney_talmud.schema.md); "
-            "gloss/class/ppp/dcs_rank are verbatim WhitneyRoots.",
+            "gloss/class/ppp/dcs_rank are verbatim WhitneyRoots; z_url deep-links to the "
+            "samskrtam.ru/z/ verb-DB paradigm (H329, via data/z_root_map.json).",
             "counts": {
                 "ablaut_examples": len(ablaut),
                 "set_examples": len(setex),
@@ -108,7 +132,7 @@ def main():
         "set_examples": setex,
         "nominal": nominal,
     }
-    with open(OUT, "w", encoding="utf-8") as f:
+    with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
     print(f"wrote {OUT}")
     print(f"  ablaut_examples={len(ablaut)}  set_examples={len(setex)}  nominal={len(nominal)}")

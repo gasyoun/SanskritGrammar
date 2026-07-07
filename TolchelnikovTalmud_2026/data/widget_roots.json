@@ -2,7 +2,7 @@
  "_meta": {
   "what": "Compact Phase-2 widget feed projected from whitney_talmud.json",
   "generator": "tools/build_widget_data.py",
-  "provenance": "ryad/set are DERIVED proposals (see whitney_talmud.schema.md); gloss/class/ppp/dcs_rank are verbatim WhitneyRoots.",
+  "provenance": "ryad/set are DERIVED proposals (see whitney_talmud.schema.md); gloss/class/ppp/dcs_rank are verbatim WhitneyRoots; z_url deep-links to the samskrtam.ru/z/ verb-DB paradigm (H329, via data/z_root_map.json).",
   "counts": {
    "ablaut_examples": 44,
    "set_examples": 106,
@@ -23,7 +23,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 1
+   "dcs_rank": 1,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=594"
   },
   {
    "root": "bhū",
@@ -35,7 +36,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 2
+   "dcs_rank": 2,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=553"
   },
   {
    "root": "as",
@@ -47,7 +49,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 3
+   "dcs_rank": 3,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=1"
   },
   {
    "root": "vac",
@@ -60,7 +63,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 4
+   "dcs_rank": 4,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=13"
   },
   {
    "root": "gach",
@@ -70,7 +74,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 5
+   "dcs_rank": 5,
+   "z_url": null
   },
   {
    "root": "gam",
@@ -83,7 +88,8 @@
    "ryad_confidence": "medium",
    "ryad_note": "a-root, nasal-final: M-series if weak grade vocalises m̥ (verify vs A₁)",
    "set": "aniṭ",
-   "dcs_rank": 5
+   "dcs_rank": 5,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=701"
   },
   {
    "root": "dṛś",
@@ -95,7 +101,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 6
+   "dcs_rank": 6,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=616"
   },
   {
    "root": "dā",
@@ -110,7 +117,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 7
+   "dcs_rank": 7,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=170"
   },
   {
    "root": "vid",
@@ -124,7 +132,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "seṭ",
-   "dcs_rank": 8
+   "dcs_rank": 8,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=252"
   },
   {
    "root": "śru",
@@ -137,7 +146,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 9
+   "dcs_rank": 9,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=513"
   },
   {
    "root": "brū",
@@ -150,7 +160,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 10
+   "dcs_rank": 10,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=552"
   },
   {
    "root": "ah",
@@ -160,7 +171,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 11
+   "dcs_rank": 11,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=10"
   },
   {
    "root": "sthā",
@@ -172,7 +184,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 12
+   "dcs_rank": 12,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=226"
   },
   {
    "root": "jan",
@@ -187,7 +200,8 @@
    "ryad_confidence": "medium",
    "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
    "set": "aniṭ",
-   "dcs_rank": 13
+   "dcs_rank": 13,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=809"
   },
   {
    "root": "han",
@@ -201,7 +215,8 @@
    "ryad_confidence": "medium",
    "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
    "set": "aniṭ",
-   "dcs_rank": 14
+   "dcs_rank": 14,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=806"
   },
   {
    "root": "yaj",
@@ -214,7 +229,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 16
+   "dcs_rank": 16,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=11"
   },
   {
    "root": "hu",
@@ -227,7 +243,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 17
+   "dcs_rank": 17,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=526"
   },
   {
    "root": "yuj",
@@ -240,7 +257,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 19
+   "dcs_rank": 19,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=482"
   },
   {
    "root": "yā",
@@ -252,7 +270,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 20
+   "dcs_rank": 20,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=202"
   },
   {
    "root": "pā",
@@ -266,7 +285,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 21
+   "dcs_rank": 21,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=184"
   },
   {
    "root": "jñā",
@@ -279,7 +299,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 22
+   "dcs_rank": 22,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=167"
   },
   {
    "root": "ich",
@@ -289,7 +310,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 23
+   "dcs_rank": 23,
+   "z_url": null
   },
   {
    "root": "iṣ",
@@ -303,7 +325,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 23
+   "dcs_rank": 23,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=283"
   },
   {
    "root": "paś",
@@ -315,7 +338,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 24
+   "dcs_rank": 24,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=79"
   },
   {
    "root": "man",
@@ -329,7 +353,8 @@
    "ryad_confidence": "medium",
    "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
    "set": "aniṭ",
-   "dcs_rank": 25
+   "dcs_rank": 25,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=783"
   },
   {
    "root": "dhā",
@@ -344,7 +369,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 26
+   "dcs_rank": 26,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=178"
   },
   {
    "root": "smṛ",
@@ -356,7 +382,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 28
+   "dcs_rank": 28,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=657"
   },
   {
    "root": "ji",
@@ -369,7 +396,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 29
+   "dcs_rank": 29,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=298"
   },
   {
    "root": "car",
@@ -381,7 +409,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "seṭ",
-   "dcs_rank": 30
+   "dcs_rank": 30,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=665"
   },
   {
    "root": "vad",
@@ -393,7 +422,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "seṭ",
-   "dcs_rank": 31
+   "dcs_rank": 31,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=15"
   },
   {
    "root": "muc",
@@ -405,7 +435,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 32
+   "dcs_rank": 32,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=474"
   },
   {
    "root": "i",
@@ -419,7 +450,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 33
+   "dcs_rank": 33,
+   "z_url": null
   },
   {
    "root": "labh",
@@ -431,7 +463,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 35
+   "dcs_rank": 35,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=112"
   },
   {
    "root": "pat",
@@ -443,7 +476,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "seṭ",
-   "dcs_rank": 38
+   "dcs_rank": 38,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=76"
   },
   {
    "root": "prach",
@@ -455,7 +489,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 40
+   "dcs_rank": 40,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=80"
   },
   {
    "root": "har",
@@ -467,7 +502,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 42
+   "dcs_rank": 42,
+   "z_url": null
   },
   {
    "root": "hṛ",
@@ -481,7 +517,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 42
+   "dcs_rank": 42,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=658"
   },
   {
    "root": "sṛj",
@@ -494,7 +531,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 43
+   "dcs_rank": 43,
+   "z_url": null
   },
   {
    "root": "hā",
@@ -507,7 +545,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 44
+   "dcs_rank": 44,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=230"
   },
   {
    "root": "bhuj",
@@ -519,7 +558,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": null,
-   "dcs_rank": 46
+   "dcs_rank": 46,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=472"
   },
   {
    "root": "bandh",
@@ -532,7 +572,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 47
+   "dcs_rank": 47,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=779"
   },
   {
    "root": "mṛ",
@@ -544,7 +585,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 48
+   "dcs_rank": 48,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=631"
   },
   {
    "root": "vas",
@@ -557,7 +599,8 @@
    "ryad_confidence": "medium",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 49
+   "dcs_rank": 49,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=19"
   },
   {
    "root": "vṛt",
@@ -571,7 +614,8 @@
    "ryad_confidence": "high",
    "ryad_note": null,
    "set": "aniṭ",
-   "dcs_rank": 50
+   "dcs_rank": 50,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=643"
   }
  ],
  "set_examples": [
@@ -581,7 +625,8 @@
    "ppp": "kṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 1
+   "dcs_rank": 1,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=594"
   },
   {
    "root": "bhū",
@@ -589,7 +634,8 @@
    "ppp": "bhūtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 2
+   "dcs_rank": 2,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=553"
   },
   {
    "root": "as",
@@ -597,7 +643,8 @@
    "ppp": "asta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 3
+   "dcs_rank": 3,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=9"
   },
   {
    "root": "vac",
@@ -605,7 +652,8 @@
    "ppp": "uktá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 4
+   "dcs_rank": 4,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=13"
   },
   {
    "root": "gam",
@@ -613,7 +661,8 @@
    "ppp": "gatá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 5
+   "dcs_rank": 5,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=701"
   },
   {
    "root": "dṛś",
@@ -621,7 +670,8 @@
    "ppp": "dṛṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 6
+   "dcs_rank": 6,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=616"
   },
   {
    "root": "dā",
@@ -629,7 +679,8 @@
    "ppp": "diná",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 7
+   "dcs_rank": 7,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=171"
   },
   {
    "root": "vid",
@@ -637,7 +688,8 @@
    "ppp": "viditá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 8
+   "dcs_rank": 8,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=252"
   },
   {
    "root": "vid",
@@ -645,7 +697,8 @@
    "ppp": "vittá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 8
+   "dcs_rank": 8,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=253"
   },
   {
    "root": "śru",
@@ -653,7 +706,8 @@
    "ppp": "śrutá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 9
+   "dcs_rank": 9,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=513"
   },
   {
    "root": "sthā",
@@ -661,7 +715,8 @@
    "ppp": "sthitá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 12
+   "dcs_rank": 12,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=226"
   },
   {
    "root": "jan",
@@ -669,7 +724,8 @@
    "ppp": "jātá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 13
+   "dcs_rank": 13,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=809"
   },
   {
    "root": "han",
@@ -677,7 +733,8 @@
    "ppp": "hatá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 14
+   "dcs_rank": 14,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=806"
   },
   {
    "root": "yaj",
@@ -685,7 +742,8 @@
    "ppp": "iṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 16
+   "dcs_rank": 16,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=11"
   },
   {
    "root": "hu",
@@ -693,7 +751,8 @@
    "ppp": "hutá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 17
+   "dcs_rank": 17,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=526"
   },
   {
    "root": "yuj",
@@ -701,7 +760,8 @@
    "ppp": "yuktá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 19
+   "dcs_rank": 19,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=482"
   },
   {
    "root": "yā",
@@ -709,7 +769,8 @@
    "ppp": "yātá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 20
+   "dcs_rank": 20,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=202"
   },
   {
    "root": "pā",
@@ -717,7 +778,8 @@
    "ppp": "pītá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 21
+   "dcs_rank": 21,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=184"
   },
   {
    "root": "jñā",
@@ -725,7 +787,8 @@
    "ppp": "jñātá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 22
+   "dcs_rank": 22,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=167"
   },
   {
    "root": "iṣ",
@@ -733,7 +796,8 @@
    "ppp": "iṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 23
+   "dcs_rank": 23,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=283"
   },
   {
    "root": "iṣ",
@@ -741,7 +805,8 @@
    "ppp": "iṣitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 23
+   "dcs_rank": 23,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=284"
   },
   {
    "root": "paś",
@@ -749,7 +814,8 @@
    "ppp": "spaṣṭa",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 24
+   "dcs_rank": 24,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=79"
   },
   {
    "root": "man",
@@ -757,7 +823,8 @@
    "ppp": "matá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 25
+   "dcs_rank": 25,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=783"
   },
   {
    "root": "dhā",
@@ -765,7 +832,8 @@
    "ppp": "hitá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 26
+   "dcs_rank": 26,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=178"
   },
   {
    "root": "smṛ",
@@ -773,7 +841,8 @@
    "ppp": "smṛta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 28
+   "dcs_rank": 28,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=657"
   },
   {
    "root": "ji",
@@ -781,7 +850,8 @@
    "ppp": "jitá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 29
+   "dcs_rank": 29,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=298"
   },
   {
    "root": "car",
@@ -789,7 +859,8 @@
    "ppp": "caritá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 30
+   "dcs_rank": 30,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=665"
   },
   {
    "root": "vad",
@@ -797,7 +868,8 @@
    "ppp": "uditá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 31
+   "dcs_rank": 31,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=15"
   },
   {
    "root": "muc",
@@ -805,7 +877,8 @@
    "ppp": "muktá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 32
+   "dcs_rank": 32,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=474"
   },
   {
    "root": "i",
@@ -813,7 +886,8 @@
    "ppp": "itá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 33
+   "dcs_rank": 33,
+   "z_url": null
   },
   {
    "root": "pat",
@@ -821,7 +895,8 @@
    "ppp": "patitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 38
+   "dcs_rank": 38,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=76"
   },
   {
    "root": "prach",
@@ -829,7 +904,8 @@
    "ppp": "pṛṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 40
+   "dcs_rank": 40,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=80"
   },
   {
    "root": "hṛ",
@@ -837,7 +913,8 @@
    "ppp": "hṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 42
+   "dcs_rank": 42,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=658"
   },
   {
    "root": "sṛj",
@@ -845,7 +922,8 @@
    "ppp": "sṛṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 43
+   "dcs_rank": 43,
+   "z_url": null
   },
   {
    "root": "hā",
@@ -853,7 +931,8 @@
    "ppp": "hīná",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 44
+   "dcs_rank": 44,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=230"
   },
   {
    "root": "bhuj",
@@ -861,7 +940,8 @@
    "ppp": "bhukta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 46
+   "dcs_rank": 46,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=473"
   },
   {
    "root": "bandh",
@@ -869,7 +949,8 @@
    "ppp": "baddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 47
+   "dcs_rank": 47,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=779"
   },
   {
    "root": "mṛ",
@@ -877,7 +958,8 @@
    "ppp": "mṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 48
+   "dcs_rank": 48,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=631"
   },
   {
    "root": "vas",
@@ -885,7 +967,8 @@
    "ppp": "uṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 49
+   "dcs_rank": 49,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=19"
   },
   {
    "root": "vas",
@@ -893,7 +976,8 @@
    "ppp": "vasita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 49
+   "dcs_rank": 49,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=20"
   },
   {
    "root": "vṛt",
@@ -901,7 +985,8 @@
    "ppp": "vṛttá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 50
+   "dcs_rank": 50,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=643"
   },
   {
    "root": "kṣip",
@@ -909,7 +994,8 @@
    "ppp": "kṣiptá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 51
+   "dcs_rank": 51,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=289"
   },
   {
    "root": "tyaj",
@@ -917,7 +1003,8 @@
    "ppp": "tyaktá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 52
+   "dcs_rank": 52,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=55"
   },
   {
    "root": "śudh",
@@ -925,7 +1012,8 @@
    "ppp": "śuddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 53
+   "dcs_rank": 53,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=507"
   },
   {
    "root": "nī",
@@ -933,7 +1021,8 @@
    "ppp": "nītá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 55
+   "dcs_rank": 55,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=364"
   },
   {
    "root": "āp",
@@ -941,7 +1030,8 @@
    "ppp": "āptá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 56
+   "dcs_rank": 56,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=151"
   },
   {
    "root": "dah",
@@ -949,7 +1039,8 @@
    "ppp": "dagdhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 58
+   "dcs_rank": 58,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=63"
   },
   {
    "root": "jīv",
@@ -957,7 +1048,8 @@
    "ppp": "jīvitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 61
+   "dcs_rank": 61,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=355"
   },
   {
    "root": "stu",
@@ -965,7 +1057,8 @@
    "ppp": "stutá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 62
+   "dcs_rank": 62,
+   "z_url": null
   },
   {
    "root": "pū",
@@ -973,7 +1066,8 @@
    "ppp": "pūtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 63
+   "dcs_rank": 63,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=549"
   },
   {
    "root": "chid",
@@ -981,7 +1075,8 @@
    "ppp": "chinná",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 64
+   "dcs_rank": 64,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=297"
   },
   {
    "root": "vṛ",
@@ -989,7 +1084,8 @@
    "ppp": "vṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 65
+   "dcs_rank": 65,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=639"
   },
   {
    "root": "tap",
@@ -997,7 +1093,8 @@
    "ppp": "taptá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 66
+   "dcs_rank": 66,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=54"
   },
   {
    "root": "bhid",
@@ -1005,7 +1102,8 @@
    "ppp": "bhinná",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 68
+   "dcs_rank": 68,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=319"
   },
   {
    "root": "sidh",
@@ -1013,7 +1111,8 @@
    "ppp": "siddha",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 69
+   "dcs_rank": 69,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=267"
   },
   {
    "root": "ās",
@@ -1021,7 +1120,8 @@
    "ppp": "āsitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 70
+   "dcs_rank": 70,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=152"
   },
   {
    "root": "śak",
@@ -1029,7 +1129,8 @@
    "ppp": "śakta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 71
+   "dcs_rank": 71,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=125"
   },
   {
    "root": "aś",
@@ -1037,7 +1138,8 @@
    "ppp": "aśitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 72
+   "dcs_rank": 72,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=8"
   },
   {
    "root": "rakṣ",
@@ -1045,7 +1147,8 @@
    "ppp": "rakṣitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 73
+   "dcs_rank": 73,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=99"
   },
   {
    "root": "gā",
@@ -1053,7 +1156,8 @@
    "ppp": "gītá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 74
+   "dcs_rank": 74,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=161"
   },
   {
    "root": "vah",
@@ -1061,7 +1165,8 @@
    "ppp": "ūḍhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 75
+   "dcs_rank": 75,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=21"
   },
   {
    "root": "bhṛ",
@@ -1069,7 +1174,8 @@
    "ppp": "bhṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 77
+   "dcs_rank": 77,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=629"
   },
   {
    "root": "śaṃs",
@@ -1077,7 +1183,8 @@
    "ppp": "śastá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 79
+   "dcs_rank": 79,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=794"
   },
   {
    "root": "prī",
@@ -1085,7 +1192,8 @@
    "ppp": "prītá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 80
+   "dcs_rank": 80,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=368"
   },
   {
    "root": "jap",
@@ -1093,7 +1201,8 @@
    "ppp": "japita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 81
+   "dcs_rank": 81,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=49"
   },
   {
    "root": "krudh",
@@ -1101,7 +1210,8 @@
    "ppp": "kruddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 83
+   "dcs_rank": 83,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=412"
   },
   {
    "root": "snā",
@@ -1109,7 +1219,8 @@
    "ppp": "snātá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 86
+   "dcs_rank": 86,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=227"
   },
   {
    "root": "vyadh",
@@ -1117,7 +1228,8 @@
    "ppp": "viddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 88
+   "dcs_rank": 88,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=119"
   },
   {
    "root": "vṛdh",
@@ -1125,7 +1237,8 @@
    "ppp": "vṛddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 89
+   "dcs_rank": 89,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=644"
   },
   {
    "root": "ram",
@@ -1133,7 +1246,8 @@
    "ppp": "ratá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 93
+   "dcs_rank": 93,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=705"
   },
   {
    "root": "bhāṣ",
@@ -1141,7 +1255,8 @@
    "ppp": "bhāṣita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 96
+   "dcs_rank": 96,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=192"
   },
   {
    "root": "pṛ",
@@ -1149,7 +1264,8 @@
    "ppp": "pūrṇá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 99
+   "dcs_rank": 99,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=670"
   },
   {
    "root": "naś",
@@ -1157,7 +1273,8 @@
    "ppp": "naṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 106
+   "dcs_rank": 106,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=69"
   },
   {
    "root": "jṛ",
@@ -1165,7 +1282,8 @@
    "ppp": "jīrṇá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 107
+   "dcs_rank": 107,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=667"
   },
   {
    "root": "bhī",
@@ -1173,7 +1291,8 @@
    "ppp": "bhītá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 110
+   "dcs_rank": 110,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=369"
   },
   {
    "root": "dviṣ",
@@ -1181,7 +1300,8 @@
    "ppp": "dviṣṭa",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 112
+   "dcs_rank": 112,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=307"
   },
   {
    "root": "sev",
@@ -1189,7 +1309,8 @@
    "ppp": "sevita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 113
+   "dcs_rank": 113,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=249"
   },
   {
    "root": "yudh",
@@ -1197,7 +1318,8 @@
    "ppp": "yuddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 118
+   "dcs_rank": 118,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=483"
   },
   {
    "root": "dhṛ",
@@ -1205,7 +1327,8 @@
    "ppp": "dhṛtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 122
+   "dcs_rank": 122,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=620"
   },
   {
    "root": "juṣ",
@@ -1213,7 +1336,8 @@
    "ppp": "júṣṭa",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 123
+   "dcs_rank": 123,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=440"
   },
   {
    "root": "vraj",
@@ -1221,7 +1345,8 @@
    "ppp": "vrajita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 128
+   "dcs_rank": 128,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=124"
   },
   {
    "root": "kṣi",
@@ -1229,7 +1354,8 @@
    "ppp": "kṣitá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 131
+   "dcs_rank": 131,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=288"
   },
   {
    "root": "bhaj",
@@ -1237,7 +1363,8 @@
    "ppp": "bhaktá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 134
+   "dcs_rank": 134,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=84"
   },
   {
    "root": "dhyā",
@@ -1245,7 +1372,8 @@
    "ppp": "dhyāta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 135
+   "dcs_rank": 135,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=181"
   },
   {
    "root": "dīp",
@@ -1253,7 +1381,8 @@
    "ppp": "dīpta",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 137
+   "dcs_rank": 137,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=360"
   },
   {
    "root": "śam",
@@ -1261,7 +1390,8 @@
    "ppp": "śamitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 138
+   "dcs_rank": 138,
+   "z_url": null
   },
   {
    "root": "śam",
@@ -1269,7 +1399,8 @@
    "ppp": "śāṃtá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 138
+   "dcs_rank": 138,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=717"
   },
   {
    "root": "hṛṣ",
@@ -1277,7 +1408,8 @@
    "ppp": "hṛṣitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 139
+   "dcs_rank": 139,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=660"
   },
   {
    "root": "budh",
@@ -1285,7 +1417,8 @@
    "ppp": "buddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 145
+   "dcs_rank": 145,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=471"
   },
   {
    "root": "śī",
@@ -1293,7 +1426,8 @@
    "ppp": "śayita",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 146
+   "dcs_rank": 146,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=382"
   },
   {
    "root": "muh",
@@ -1301,7 +1435,8 @@
    "ppp": "mugdhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 150
+   "dcs_rank": 150,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=478"
   },
   {
    "root": "svap",
@@ -1309,7 +1444,8 @@
    "ppp": "suptá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 151
+   "dcs_rank": 151,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=143"
   },
   {
    "root": "yam",
@@ -1317,7 +1453,8 @@
    "ppp": "yatá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 153
+   "dcs_rank": 153,
+   "z_url": null
   },
   {
    "root": "mad",
@@ -1325,7 +1462,8 @@
    "ppp": "mattá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 155
+   "dcs_rank": 155,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=91"
   },
   {
    "root": "dru",
@@ -1333,7 +1471,8 @@
    "ppp": "drutá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 156
+   "dcs_rank": 156,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=456"
   },
   {
    "root": "piṣ",
@@ -1341,7 +1480,8 @@
    "ppp": "piṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 158
+   "dcs_rank": 158,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=316"
   },
   {
    "root": "spṛś",
@@ -1349,7 +1489,8 @@
    "ppp": "spṛṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 159
+   "dcs_rank": 159,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=144"
   },
   {
    "root": "viś",
@@ -1357,7 +1498,8 @@
    "ppp": "viṣṭá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 160
+   "dcs_rank": 160,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=258"
   },
   {
    "root": "sad",
@@ -1365,7 +1507,8 @@
    "ppp": "sanná",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 176
+   "dcs_rank": 176,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=139"
   },
   {
    "root": "rudh",
@@ -1373,7 +1516,8 @@
    "ppp": "ruddhá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 184
+   "dcs_rank": 184,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=492"
   },
   {
    "root": "su",
@@ -1381,7 +1525,8 @@
    "ppp": "sutá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 188
+   "dcs_rank": 188,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=516"
   },
   {
    "root": "tṛ",
@@ -1389,7 +1534,8 @@
    "ppp": "tīrṇá",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 193
+   "dcs_rank": 193,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=668"
   },
   {
    "root": "dīkṣ",
@@ -1397,7 +1543,8 @@
    "ppp": "dīkṣitá",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 195
+   "dcs_rank": 195,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=359"
   },
   {
    "root": "tuṣ",
@@ -1405,7 +1552,8 @@
    "ppp": "tuṣṭa",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 196
+   "dcs_rank": 196,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=448"
   },
   {
    "root": "duṣ",
@@ -1413,7 +1561,8 @@
    "ppp": "duṣṭa",
    "set": "aniṭ",
    "set_confidence": "medium",
-   "dcs_rank": 199
+   "dcs_rank": 199,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=453"
   },
   {
    "root": "jval",
@@ -1421,7 +1570,8 @@
    "ppp": "jvalita",
    "set": "seṭ",
    "set_confidence": "medium",
-   "dcs_rank": 200
+   "dcs_rank": 200,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=686"
   }
  ],
  "nominal": [
