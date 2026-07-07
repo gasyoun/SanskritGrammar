@@ -129,15 +129,20 @@ def changelog_versions(changelog: Path):
     return out
 
 
-def changelog_hints(changelog: Path, book_dir: str):
-    """Changelog lines mentioning this book AND a correction keyword."""
+def changelog_hints(changelog: Path, book_dir: str = None):
+    """Changelog lines with a correction keyword. If book_dir is given (root CHANGELOG.md,
+    which covers all books), only lines that also mention that book qualify; a book's own
+    CHANGELOG.md (book_dir=None) is already scoped, so any correction-keyword line counts."""
     if not changelog.exists():
         return []
     hits = []
     for ln in changelog.read_text(encoding="utf-8").splitlines():
         low = ln.lower()
-        if book_dir.lower() in low and any(k in low for k in CORRECTION_KEYWORDS):
-            hits.append(ln.strip("- ").strip())
+        if not any(k in low for k in CORRECTION_KEYWORDS):
+            continue
+        if book_dir is not None and book_dir.lower() not in low:
+            continue
+        hits.append(ln.strip("- ").strip())
     return hits
 
 
@@ -204,7 +209,8 @@ def render_book(work, entries, versions, book_dir):
         if e.get("note"):
             lines.append(f"| | | | | | | | _{md_cell(str(e['note']))}_ |")
 
-    hints = changelog_hints(ROOT / "CHANGELOG.md", book_dir)
+    hints = (changelog_hints(ROOT / book_dir / "CHANGELOG.md")
+             + changelog_hints(ROOT / "CHANGELOG.md", book_dir))
     if hints:
         lines += ["", "> **CHANGELOG mentions a correction to this book** — if an "
                   "erratum below was fixed in the source, set its `fixed_in` in "
@@ -315,11 +321,15 @@ def main():
         if not ymls:
             sys.exit("No */errata.yml found.")
 
-    versions = changelog_versions(ROOT / "CHANGELOG.md")
+    root_versions = changelog_versions(ROOT / "CHANGELOG.md")
     index_rows = []
     for yml in ymls:
         book_dir = yml.parent.name
         work, entries = load_book(yml)
+        # Each book's own CHANGELOG.md is authoritative for its fixed_in versions
+        # (per-book release scheme, H318); fall back to the root CHANGELOG for any
+        # fixed_in set before the split.
+        versions = {**root_versions, **changelog_versions(ROOT / book_dir / "CHANGELOG.md")}
         md, n, openc, fixed = render_book(work, entries, versions, book_dir)
         (yml.parent / "ERRATA.md").write_text(md, encoding="utf-8")
         index_rows.append((book_dir, n, openc, fixed))
