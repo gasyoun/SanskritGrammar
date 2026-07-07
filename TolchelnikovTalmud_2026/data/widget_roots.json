@@ -1,0 +1,1549 @@
+{
+ "_meta": {
+  "what": "Compact Phase-2 widget feed projected from whitney_talmud.json",
+  "generator": "tools/build_widget_data.py",
+  "provenance": "ryad/set are DERIVED proposals (see whitney_talmud.schema.md); gloss/class/ppp/dcs_rank are verbatim WhitneyRoots.",
+  "counts": {
+   "ablaut_examples": 44,
+   "set_examples": 106,
+   "nominal": 15
+  }
+ },
+ "ablaut_examples": [
+  {
+   "root": "kṛ",
+   "gloss": "make",
+   "class": [
+    "I",
+    "II",
+    "V",
+    "VIII"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 1
+  },
+  {
+   "root": "bhū",
+   "gloss": "be",
+   "class": [
+    "I"
+   ],
+   "ryad": "U₂",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 2
+  },
+  {
+   "root": "as",
+   "gloss": "be",
+   "class": [
+    "II"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 3
+  },
+  {
+   "root": "vac",
+   "gloss": "speak",
+   "class": [
+    "II",
+    "III"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 4
+  },
+  {
+   "root": "gach",
+   "gloss": "",
+   "class": [],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 5
+  },
+  {
+   "root": "gam",
+   "gloss": "go",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "M₁",
+   "ryad_confidence": "medium",
+   "ryad_note": "a-root, nasal-final: M-series if weak grade vocalises m̥ (verify vs A₁)",
+   "set": "aniṭ",
+   "dcs_rank": 5
+  },
+  {
+   "root": "dṛś",
+   "gloss": "see",
+   "class": [
+    "IV"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 6
+  },
+  {
+   "root": "dā",
+   "gloss": "give",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 7
+  },
+  {
+   "root": "vid",
+   "gloss": "know",
+   "class": [
+    "I",
+    "II",
+    "VI"
+   ],
+   "ryad": "I₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "seṭ",
+   "dcs_rank": 8
+  },
+  {
+   "root": "śru",
+   "gloss": "hear",
+   "class": [
+    "II",
+    "V"
+   ],
+   "ryad": "U₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 9
+  },
+  {
+   "root": "brū",
+   "gloss": "say",
+   "class": [
+    "II",
+    "VI"
+   ],
+   "ryad": "U₂",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 10
+  },
+  {
+   "root": "ah",
+   "gloss": "say",
+   "class": [],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 11
+  },
+  {
+   "root": "sthā",
+   "gloss": "stand",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 12
+  },
+  {
+   "root": "jan",
+   "gloss": "give birth, be born",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "N₁",
+   "ryad_confidence": "medium",
+   "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
+   "set": "aniṭ",
+   "dcs_rank": 13
+  },
+  {
+   "root": "han",
+   "gloss": "smite",
+   "class": [
+    "I",
+    "II",
+    "VIII"
+   ],
+   "ryad": "N₁",
+   "ryad_confidence": "medium",
+   "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
+   "set": "aniṭ",
+   "dcs_rank": 14
+  },
+  {
+   "root": "yaj",
+   "gloss": "offer",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 16
+  },
+  {
+   "root": "hu",
+   "gloss": "sacrifice",
+   "class": [
+    "II",
+    "III"
+   ],
+   "ryad": "U₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 17
+  },
+  {
+   "root": "yuj",
+   "gloss": "join",
+   "class": [
+    "II",
+    "VII"
+   ],
+   "ryad": "U₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 19
+  },
+  {
+   "root": "yā",
+   "gloss": "go",
+   "class": [
+    "II"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 20
+  },
+  {
+   "root": "pā",
+   "gloss": "drink",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 21
+  },
+  {
+   "root": "jñā",
+   "gloss": "know",
+   "class": [
+    "I",
+    "IX"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 22
+  },
+  {
+   "root": "ich",
+   "gloss": "",
+   "class": [],
+   "ryad": "I₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 23
+  },
+  {
+   "root": "iṣ",
+   "gloss": "seek, desire",
+   "class": [
+    "I",
+    "IV",
+    "VI"
+   ],
+   "ryad": "I₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 23
+  },
+  {
+   "root": "paś",
+   "gloss": "see",
+   "class": [
+    "IV"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 24
+  },
+  {
+   "root": "man",
+   "gloss": "think",
+   "class": [
+    "III",
+    "IV",
+    "VIII"
+   ],
+   "ryad": "N₁",
+   "ryad_confidence": "medium",
+   "ryad_note": "a-root, nasal-final: N-series if weak grade vocalises n̥ (verify vs A₁)",
+   "set": "aniṭ",
+   "dcs_rank": 25
+  },
+  {
+   "root": "dhā",
+   "gloss": "put",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 26
+  },
+  {
+   "root": "smṛ",
+   "gloss": "remember",
+   "class": [
+    "I"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 28
+  },
+  {
+   "root": "ji",
+   "gloss": "conquer",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "I₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 29
+  },
+  {
+   "root": "car",
+   "gloss": "move",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "seṭ",
+   "dcs_rank": 30
+  },
+  {
+   "root": "vad",
+   "gloss": "speak",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "seṭ",
+   "dcs_rank": 31
+  },
+  {
+   "root": "muc",
+   "gloss": "release",
+   "class": [
+    "VI"
+   ],
+   "ryad": "U₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 32
+  },
+  {
+   "root": "i",
+   "gloss": "go",
+   "class": [
+    "I",
+    "IV",
+    "V"
+   ],
+   "ryad": "I₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 33
+  },
+  {
+   "root": "labh",
+   "gloss": "take",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 35
+  },
+  {
+   "root": "pat",
+   "gloss": "fly, fall",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "seṭ",
+   "dcs_rank": 38
+  },
+  {
+   "root": "prach",
+   "gloss": "ask",
+   "class": [
+    "VI"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 40
+  },
+  {
+   "root": "har",
+   "gloss": "be gratified",
+   "class": [
+    "IV"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 42
+  },
+  {
+   "root": "hṛ",
+   "gloss": "take",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 42
+  },
+  {
+   "root": "sṛj",
+   "gloss": "send forth",
+   "class": [
+    "I",
+    "VI"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 43
+  },
+  {
+   "root": "hā",
+   "gloss": "leave",
+   "class": [
+    "I",
+    "III"
+   ],
+   "ryad": "A₂",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 44
+  },
+  {
+   "root": "bhuj",
+   "gloss": "bend",
+   "class": [
+    "VI"
+   ],
+   "ryad": "U₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": null,
+   "dcs_rank": 46
+  },
+  {
+   "root": "bandh",
+   "gloss": "bind",
+   "class": [
+    "I",
+    "IX"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 47
+  },
+  {
+   "root": "mṛ",
+   "gloss": "die",
+   "class": [
+    "I"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 48
+  },
+  {
+   "root": "vas",
+   "gloss": "shine",
+   "class": [
+    "II",
+    "VI"
+   ],
+   "ryad": "A₁",
+   "ryad_confidence": "medium",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 49
+  },
+  {
+   "root": "vṛt",
+   "gloss": "turn",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "R₁",
+   "ryad_confidence": "high",
+   "ryad_note": null,
+   "set": "aniṭ",
+   "dcs_rank": 50
+  }
+ ],
+ "set_examples": [
+  {
+   "root": "kṛ",
+   "gloss": "make",
+   "ppp": "kṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 1
+  },
+  {
+   "root": "bhū",
+   "gloss": "be",
+   "ppp": "bhūtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 2
+  },
+  {
+   "root": "as",
+   "gloss": "throw",
+   "ppp": "asta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 3
+  },
+  {
+   "root": "vac",
+   "gloss": "speak",
+   "ppp": "uktá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 4
+  },
+  {
+   "root": "gam",
+   "gloss": "go",
+   "ppp": "gatá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 5
+  },
+  {
+   "root": "dṛś",
+   "gloss": "see",
+   "ppp": "dṛṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 6
+  },
+  {
+   "root": "dā",
+   "gloss": "divide, share",
+   "ppp": "diná",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 7
+  },
+  {
+   "root": "vid",
+   "gloss": "know",
+   "ppp": "viditá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 8
+  },
+  {
+   "root": "vid",
+   "gloss": "find",
+   "ppp": "vittá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 8
+  },
+  {
+   "root": "śru",
+   "gloss": "hear",
+   "ppp": "śrutá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 9
+  },
+  {
+   "root": "sthā",
+   "gloss": "stand",
+   "ppp": "sthitá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 12
+  },
+  {
+   "root": "jan",
+   "gloss": "give birth, be born",
+   "ppp": "jātá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 13
+  },
+  {
+   "root": "han",
+   "gloss": "smite",
+   "ppp": "hatá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 14
+  },
+  {
+   "root": "yaj",
+   "gloss": "offer",
+   "ppp": "iṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 16
+  },
+  {
+   "root": "hu",
+   "gloss": "sacrifice",
+   "ppp": "hutá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 17
+  },
+  {
+   "root": "yuj",
+   "gloss": "join",
+   "ppp": "yuktá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 19
+  },
+  {
+   "root": "yā",
+   "gloss": "go",
+   "ppp": "yātá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 20
+  },
+  {
+   "root": "pā",
+   "gloss": "drink",
+   "ppp": "pītá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 21
+  },
+  {
+   "root": "jñā",
+   "gloss": "know",
+   "ppp": "jñātá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 22
+  },
+  {
+   "root": "iṣ",
+   "gloss": "seek, desire",
+   "ppp": "iṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 23
+  },
+  {
+   "root": "iṣ",
+   "gloss": "send",
+   "ppp": "iṣitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 23
+  },
+  {
+   "root": "paś",
+   "gloss": "see",
+   "ppp": "spaṣṭa",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 24
+  },
+  {
+   "root": "man",
+   "gloss": "think",
+   "ppp": "matá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 25
+  },
+  {
+   "root": "dhā",
+   "gloss": "put",
+   "ppp": "hitá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 26
+  },
+  {
+   "root": "smṛ",
+   "gloss": "remember",
+   "ppp": "smṛta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 28
+  },
+  {
+   "root": "ji",
+   "gloss": "conquer",
+   "ppp": "jitá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 29
+  },
+  {
+   "root": "car",
+   "gloss": "move",
+   "ppp": "caritá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 30
+  },
+  {
+   "root": "vad",
+   "gloss": "speak",
+   "ppp": "uditá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 31
+  },
+  {
+   "root": "muc",
+   "gloss": "release",
+   "ppp": "muktá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 32
+  },
+  {
+   "root": "i",
+   "gloss": "go",
+   "ppp": "itá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 33
+  },
+  {
+   "root": "pat",
+   "gloss": "fly, fall",
+   "ppp": "patitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 38
+  },
+  {
+   "root": "prach",
+   "gloss": "ask",
+   "ppp": "pṛṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 40
+  },
+  {
+   "root": "hṛ",
+   "gloss": "take",
+   "ppp": "hṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 42
+  },
+  {
+   "root": "sṛj",
+   "gloss": "send forth",
+   "ppp": "sṛṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 43
+  },
+  {
+   "root": "hā",
+   "gloss": "leave",
+   "ppp": "hīná",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 44
+  },
+  {
+   "root": "bhuj",
+   "gloss": "enjoy",
+   "ppp": "bhukta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 46
+  },
+  {
+   "root": "bandh",
+   "gloss": "bind",
+   "ppp": "baddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 47
+  },
+  {
+   "root": "mṛ",
+   "gloss": "die",
+   "ppp": "mṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 48
+  },
+  {
+   "root": "vas",
+   "gloss": "shine",
+   "ppp": "uṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 49
+  },
+  {
+   "root": "vas",
+   "gloss": "clothe",
+   "ppp": "vasita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 49
+  },
+  {
+   "root": "vṛt",
+   "gloss": "turn",
+   "ppp": "vṛttá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 50
+  },
+  {
+   "root": "kṣip",
+   "gloss": "throw",
+   "ppp": "kṣiptá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 51
+  },
+  {
+   "root": "tyaj",
+   "gloss": "forsake",
+   "ppp": "tyaktá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 52
+  },
+  {
+   "root": "śudh",
+   "gloss": "purify",
+   "ppp": "śuddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 53
+  },
+  {
+   "root": "nī",
+   "gloss": "lead",
+   "ppp": "nītá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 55
+  },
+  {
+   "root": "āp",
+   "gloss": "obtain",
+   "ppp": "āptá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 56
+  },
+  {
+   "root": "dah",
+   "gloss": "burn",
+   "ppp": "dagdhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 58
+  },
+  {
+   "root": "jīv",
+   "gloss": "live",
+   "ppp": "jīvitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 61
+  },
+  {
+   "root": "stu",
+   "gloss": "praise",
+   "ppp": "stutá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 62
+  },
+  {
+   "root": "pū",
+   "gloss": "cleanse",
+   "ppp": "pūtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 63
+  },
+  {
+   "root": "chid",
+   "gloss": "cut off",
+   "ppp": "chinná",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 64
+  },
+  {
+   "root": "vṛ",
+   "gloss": "cover",
+   "ppp": "vṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 65
+  },
+  {
+   "root": "tap",
+   "gloss": "heat",
+   "ppp": "taptá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 66
+  },
+  {
+   "root": "bhid",
+   "gloss": "split",
+   "ppp": "bhinná",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 68
+  },
+  {
+   "root": "sidh",
+   "gloss": "repel",
+   "ppp": "siddha",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 69
+  },
+  {
+   "root": "ās",
+   "gloss": "sit",
+   "ppp": "āsitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 70
+  },
+  {
+   "root": "śak",
+   "gloss": "be able",
+   "ppp": "śakta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 71
+  },
+  {
+   "root": "aś",
+   "gloss": "eat",
+   "ppp": "aśitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 72
+  },
+  {
+   "root": "rakṣ",
+   "gloss": "protect",
+   "ppp": "rakṣitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 73
+  },
+  {
+   "root": "gā",
+   "gloss": "sing",
+   "ppp": "gītá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 74
+  },
+  {
+   "root": "vah",
+   "gloss": "carry",
+   "ppp": "ūḍhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 75
+  },
+  {
+   "root": "bhṛ",
+   "gloss": "bear",
+   "ppp": "bhṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 77
+  },
+  {
+   "root": "śaṃs",
+   "gloss": "praise",
+   "ppp": "śastá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 79
+  },
+  {
+   "root": "prī",
+   "gloss": "please",
+   "ppp": "prītá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 80
+  },
+  {
+   "root": "jap",
+   "gloss": "whisper",
+   "ppp": "japita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 81
+  },
+  {
+   "root": "krudh",
+   "gloss": "be angry",
+   "ppp": "kruddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 83
+  },
+  {
+   "root": "snā",
+   "gloss": "bathe",
+   "ppp": "snātá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 86
+  },
+  {
+   "root": "vyadh",
+   "gloss": "pierce",
+   "ppp": "viddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 88
+  },
+  {
+   "root": "vṛdh",
+   "gloss": "grow",
+   "ppp": "vṛddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 89
+  },
+  {
+   "root": "ram",
+   "gloss": "be or make content",
+   "ppp": "ratá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 93
+  },
+  {
+   "root": "bhāṣ",
+   "gloss": "speak",
+   "ppp": "bhāṣita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 96
+  },
+  {
+   "root": "pṛ",
+   "gloss": "fill",
+   "ppp": "pūrṇá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 99
+  },
+  {
+   "root": "naś",
+   "gloss": "be lost",
+   "ppp": "naṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 106
+  },
+  {
+   "root": "jṛ",
+   "gloss": "waste away",
+   "ppp": "jīrṇá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 107
+  },
+  {
+   "root": "bhī",
+   "gloss": "fear",
+   "ppp": "bhītá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 110
+  },
+  {
+   "root": "dviṣ",
+   "gloss": "hate",
+   "ppp": "dviṣṭa",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 112
+  },
+  {
+   "root": "sev",
+   "gloss": "attend upon",
+   "ppp": "sevita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 113
+  },
+  {
+   "root": "yudh",
+   "gloss": "fight",
+   "ppp": "yuddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 118
+  },
+  {
+   "root": "dhṛ",
+   "gloss": "hold",
+   "ppp": "dhṛtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 122
+  },
+  {
+   "root": "juṣ",
+   "gloss": "enjoy",
+   "ppp": "júṣṭa",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 123
+  },
+  {
+   "root": "vraj",
+   "gloss": "proceed",
+   "ppp": "vrajita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 128
+  },
+  {
+   "root": "kṣi",
+   "gloss": "destroy",
+   "ppp": "kṣitá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 131
+  },
+  {
+   "root": "bhaj",
+   "gloss": "divide, share",
+   "ppp": "bhaktá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 134
+  },
+  {
+   "root": "dhyā",
+   "gloss": "think",
+   "ppp": "dhyāta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 135
+  },
+  {
+   "root": "dīp",
+   "gloss": "shine",
+   "ppp": "dīpta",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 137
+  },
+  {
+   "root": "śam",
+   "gloss": "labor",
+   "ppp": "śamitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 138
+  },
+  {
+   "root": "śam",
+   "gloss": "be quiet",
+   "ppp": "śāṃtá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 138
+  },
+  {
+   "root": "hṛṣ",
+   "gloss": "be excited",
+   "ppp": "hṛṣitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 139
+  },
+  {
+   "root": "budh",
+   "gloss": "know, wake",
+   "ppp": "buddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 145
+  },
+  {
+   "root": "śī",
+   "gloss": "lie",
+   "ppp": "śayita",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 146
+  },
+  {
+   "root": "muh",
+   "gloss": "be crazed",
+   "ppp": "mugdhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 150
+  },
+  {
+   "root": "svap",
+   "gloss": "sleep",
+   "ppp": "suptá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 151
+  },
+  {
+   "root": "yam",
+   "gloss": "reach",
+   "ppp": "yatá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 153
+  },
+  {
+   "root": "mad",
+   "gloss": "be exhilarated, exhilarate",
+   "ppp": "mattá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 155
+  },
+  {
+   "root": "dru",
+   "gloss": "run",
+   "ppp": "drutá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 156
+  },
+  {
+   "root": "piṣ",
+   "gloss": "crush",
+   "ppp": "piṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 158
+  },
+  {
+   "root": "spṛś",
+   "gloss": "touch",
+   "ppp": "spṛṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 159
+  },
+  {
+   "root": "viś",
+   "gloss": "enter",
+   "ppp": "viṣṭá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 160
+  },
+  {
+   "root": "sad",
+   "gloss": "sit",
+   "ppp": "sanná",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 176
+  },
+  {
+   "root": "rudh",
+   "gloss": "obstruct",
+   "ppp": "ruddhá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 184
+  },
+  {
+   "root": "su",
+   "gloss": "press out",
+   "ppp": "sutá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 188
+  },
+  {
+   "root": "tṛ",
+   "gloss": "pass",
+   "ppp": "tīrṇá",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 193
+  },
+  {
+   "root": "dīkṣ",
+   "gloss": "be consecrated",
+   "ppp": "dīkṣitá",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 195
+  },
+  {
+   "root": "tuṣ",
+   "gloss": "be content",
+   "ppp": "tuṣṭa",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 196
+  },
+  {
+   "root": "duṣ",
+   "gloss": "spoil",
+   "ppp": "duṣṭa",
+   "set": "aniṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 199
+  },
+  {
+   "root": "jval",
+   "gloss": "burn, flame",
+   "ppp": "jvalita",
+   "set": "seṭ",
+   "set_confidence": "medium",
+   "dcs_rank": 200
+  }
+ ],
+ "nominal": [
+  {
+   "headword": "AKṢN̥",
+   "deep": "{akṣn̥/akṣin/akṣi/akṣīn}",
+   "tip_ryad": "I/I/I/III · N₁/I₁/I₁/I₂",
+   "suffixes": "{0}",
+   "gloss": "глаз",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ADAS",
+   "deep": "{a/am/adas}",
+   "tip_ryad": "II/II/II · A₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "то (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ADHI",
+   "deep": "{adhi}",
+   "tip_ryad": "I · I₁",
+   "suffixes": "{1.īc/anc/ac}, сложн. слова",
+   "gloss": "над-, сверх- (приставка)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ASMAD",
+   "deep": "{asma/n/asmad/vaya}",
+   "tip_ryad": "II/-/II/II · A₁/-/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "мы (личное мест., мн.ч.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "IDAM",
+   "deep": "{i/a/idam}",
+   "tip_ryad": "I/II/II · I₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "это (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "KØ",
+   "deep": "{kø//kim}",
+   "tip_ryad": "I//I · A₁//I₁",
+   "suffixes": "{0}",
+   "gloss": "кто? что? какой?",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "GO",
+   "deep": "{go/gā}",
+   "tip_ryad": "II/II · U₂/A₂",
+   "suffixes": "{0}, {2.ø}",
+   "gloss": "корова, бык",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "CATUṚ",
+   "deep": "{catuṛ} (ж.р. {catusṛ})",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}, {1.thø}",
+   "gloss": "четыре",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "TØ",
+   "deep": "{tø/sø/tad}",
+   "tip_ryad": "I/I/II · A₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "то, он (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "DIV",
+   "deep": "{div/dyā/dyu}",
+   "tip_ryad": "I/II/I · I₁/A₂/U₁",
+   "suffixes": "{0}, {2.ø}",
+   "gloss": "небо, светлый, дэва",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "DV",
+   "deep": "{dv} (замена {dvi/vi})",
+   "tip_ryad": "I · I₁",
+   "suffixes": "{2.ø}, {1.tīyø}",
+   "gloss": "два",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "PITṚ",
+   "deep": "{pitṛ}",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}",
+   "gloss": "отец",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "STRĪ",
+   "deep": "{strī}",
+   "tip_ryad": "I · I₂",
+   "suffixes": "{1.ø.III}",
+   "gloss": "женщина",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "SAKHI",
+   "deep": "{sakhi/sakhā}",
+   "tip_ryad": "I/II · I₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "друг",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "HṚD",
+   "deep": "{hṛd}",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}, {1.ayø}",
+   "gloss": "сердце",
+   "source": "tolchelnikov"
+  }
+ ]
+}

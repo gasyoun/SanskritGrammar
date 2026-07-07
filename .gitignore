@@ -26,6 +26,10 @@ npm-debug.log*
 GasunsDhatu_2014/*
 !GasunsDhatu_2014/*.mdx
 !GasunsDhatu_2014/*_media/
+# H246 print-prep: errata pair + working notes for the 2026 edition (.md — not published by the site)
+!GasunsDhatu_2014/errata.yml
+!GasunsDhatu_2014/ERRATA.md
+!GasunsDhatu_2014/revision-2026/
 TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/*.mdx
 !TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md
@@ -37,7 +41,6 @@ TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/ERRATA.md
 !TolchelnikovTalmud_2026/.ai_state.md
 !TolchelnikovTalmud_2026/footnote-proposals/
-
 # ApteSyntax_1885 — the root Apte-unicode.mdx is already tracked; the unpacked
 # archive under src/ carries the derived .mdx (+ Pandoc-extracted *_media/) we
 # also want, but its Word/PDF/RTF/HTML/JPG/.dat/.txt sources and the 101 MB
@@ -47,3 +50,6 @@ ApteSyntax_1885/src/**
 !ApteSyntax_1885/src/**/
 !ApteSyntax_1885/src/**/*.mdx
 !ApteSyntax_1885/src/**/*_media/**
+# H241 Phase-3 enrichment crosswalk: derived data asset + reproducible generators
+!TolchelnikovTalmud_2026/data/
+!TolchelnikovTalmud_2026/tools/
