@@ -8,7 +8,7 @@ import remarkRstTable from './src/remark/rstTable.mjs';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sanskrit Grammar Sources',
-  tagline: 'Digitized Sanskrit grammar & reader texts (Apte, Bühler, Gasūns, Kochergina, Knauer, Tolchelnikov, Zaliznyak)',
+  tagline: 'Digitized Sanskrit grammar & reader texts (Apte, Bühler, Gasūns, Kochergina, Knauer, Tolchelnikov, Whitney, Zaliznyak)',
   favicon: undefined,
 
   url: 'https://gasyoun.github.io',
@@ -38,8 +38,11 @@ const config = {
             'KnauerFrazy_1908/**.mdx',
             'KocherginaUchebnik_1998/**.mdx',
             'TolchelnikovTalmud_2026/**.mdx',
+            'WhitneyGrammar_1889/**.mdx',
             'ZalizniakKonspekt_2004/**.mdx',
+            'ZalizniakMorphology_1975/**.mdx',
             'ZalizniakOcherk_1978/**.mdx',
+            'SubjectConcordance/**.mdx',
           ],
           exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**'],
           remarkPlugins: [remarkRstTable],
