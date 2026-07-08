@@ -1,86 +1,89 @@
-# Zaliznyak's three Sanskrit models compared — 1975 vs 1978 vs 2004
+# Zaliznyak's three Sanskrit models compared — 1975 vs 1978 vs 2004 (calibrated against Whitney 1889)
 
 _Created: 08-07-2026 · Last updated: 08-07-2026_
 
-Zaliznyak described Sanskrit morphophonology **three times** and used a **different
-paradigm each time**. This is the intra-Zaliznyak axis of the
-[morphoclass comparison](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md)
-(H357) — it matters because the Талмуд's core machinery descends from the **1975** model,
-not the **1978** Очерк our §-concordance currently points at. First-pass structural reading
-(Opus 4.8 `claude-opus-4-8`, 3 parallel Explore extractions of the in-repo `.mdx`),
-subject to the deeper H357 pass.
+Zaliznyak described Sanskrit **three times** and used a **different paradigm each time**;
+none of the three is a *full grammar*. To keep the genre honest this pass calibrates them
+against **Whitney's *Sanskrit Grammar* (1889)** — the one actual full reference grammar in
+the repo ([`WhitneyGrammar_1889/`](https://github.com/gasyoun/SanskritGrammar/tree/main/WhitneyGrammar_1889),
+18 chapters, §§1–1316). Second pass (Opus 4.8 `claude-opus-4-8`): four parallel structural
+reads of the in-repo `.mdx`, correcting the first pass's genre errors. This is the
+intra-Zaliznyak axis of the [morphoclass comparison](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md)
+(H357); it matters because the Талмуд's core machinery descends from the **1975** model,
+not the **1978** Очерк our §-concordance points at.
 
-The three works:
+## The works, by genre (the "full grammar" was a mislabel)
 
-- **1975** — *Morphophonological Classification of Sanskrit Verbal Roots* (EN; verb-only research article, ~750 Whitney roots).
-- **1978** — *Грамматический очерк санскрита* (RU; full reference grammar, ~242 §§).
-- **2004** — *Конспект* (RU; dense full synopsis, diachrony-heavy).
+| Work | Genre — accurately | Size | Coverage |
+|---|---|---|---|
+| **Whitney 1889** | **Full reference grammar** (the benchmark) | §§1–1316, 18 ch. | Everything: phonetics, complete sandhi, all declension + conjugation, accent, syntax, derivation, compounds, Vedic vs Classical |
+| **Zaliznyak 1975** — *Morphophonological Classification of Sanskrit Verbal Roots* (EN) | **Verb-only research article** | ~498 lines, 5 tables | Verbal roots only — no declension |
+| **Zaliznyak 1978** — *Грамматический **очерк** санскрита* (RU) | **Grammatical SKETCH** («очерк», not a grammar) | ~242 §§ | Broad but compressed sketch of the whole language |
+| **Zaliznyak 2004** — *Конспект* (RU) | **SYNOPSIS** («конспект грамматических сведений») | ~657 lines | Whole language in compressed synopsis + heavy diachrony; ≈218 curated roots |
+
+**The key relation:** Whitney *describes* exhaustively with **no higher-order abstractions**
+(no morphological positions, no ablaut series, no root-type calculus, no deep/surface
+notation — just guṇa/vṛddhi increments, strong/middle/weakest stems, "union-vowel *i*", and
+case-by-case description). The Zaliznyak works do the opposite: they **replace** exhaustive
+description with abstractions. The Талмуд (2026) then turns those abstractions into a
+generative engine. So the lineage runs Whitney *(describe)* → Zaliznyak *(abstract)* →
+Толчельников *(generate)*.
 
 ## Detailed comparison (12 structural axes)
 
-| Axis | 1975 Classification | 1978 Очерк | 2004 Конспект |
-|---|---|---|---|
-| **1. Морфологическая позиция** (numbered) | **PRESENT — numbered 1/2/3**, THE grade-driver (position = *expected* grade; type says which actually surfaces) | **ABSENT** — grade keyed directly to the grammatical form/derivation (§50); strong/weak only inside declension (§78) | **ABSENT** — strong/weak marked "+"; per-form `v/g` rules keyed to root class |
-| **2. Grade system** | 3: zero / guṇa / vṛddhi | 3 ступени: слабая / средняя(guṇa) / долгая(vṛddhi) (§50) | 3: ø / g / v (symbol shorthand) |
-| **3. Ряд (ablaut series)** | A I U R L M N + subscript **1/2**; samprasāraṇa sub-rows YA₁/VA₁/RA₁… | A I U R L M N, indices **1/2** (§50, §60) | A₁…N₂ (subscript **1/2**); Обычные vs Особые (samprasāraṇa) |
-| **4. Тип (root behaviour type)** | **PRESENT — Roman I–IV** ("degree of alternation", the paper's central result) | No unified type; **cross-axes** open/closed + полно/неполноизменяемые подтипы 1/2/3 + aniṭ/seṭ (§61–63) | **ABSENT** as a lettered type; uses open/closed, неполноизменяемые, present-class digit |
-| **5. seṭ / aniṭ / veṭ** | PRESENT — 2nd independent axis, tied to Whitney | PRESENT (§63) | PRESENT (with "много колебаний" caveat) |
-| **6. Notation** | No запись I/II; deep/surface informal; proposes an **H + uppercase** laryngeal notation | **запись I / запись II** — the DEFINING apparatus (§28–30); II→I = internal sandhi | **ABSENT** two-level; single-level surface + subscripted consonants (j₁/j₂, h₁/h₂) |
-| **7. Root inventory** | **~750 Whitney monosyllabic verbal roots — enumerated + classified** (the deliverable) | **ABSENT** — no root list; only a structural root-shape schema (§59) | **PRESENT, large** — «Важнейшие корни», alphabetical, with **IE cognates** |
-| **8. Declension (nominal)** | **ABSENT — verb-only** | Full: stem-types, strong/middle/weak, heteroclita (§78–101) | Full: ending-matrix + stem-type exceptions |
-| **9. Verbal paradigms** | Scope-boundary lists, organized *by position* | Full: "systems" by shared stem, classes, tenses, non-finite (§109–165) | Full: endings, present classes 1–10, all tenses, derived conjugations |
-| **10. Sandhi** | Light / background only | **Extensive, ordered**, II→I→phonetic (§31–46) | **Deep, ordered** internal + external (7+7 rule-blocks) |
-| **11. Generativity** | Generative *in intent* (coordinates → allomorph); full rules not written | Generative rule-computing (II→I→phonetic, ordered §458) | Rule-generative via formulae + ordered sandhi |
-| **12. Genre / scope** | Specialist verb-only article; IE-oriented | Full learner reference sketch (RU) | Full synopsis; **diachrony (PIE→OIA) front-loaded**, IE cognates throughout |
+Whitney shown as the full-grammar baseline; the three Zaliznyak columns are the object of study.
 
-## How many differences, by severity
+| Axis | Whitney 1889 (benchmark) | 1975 Classification | 1978 Очерк | 2004 Конспект |
+|---|---|---|---|---|
+| **1. Морфологическая позиция** (numbered) | ABSENT — strong/middle/weakest stems | **PRESENT — numbered 1/2/3**, THE grade-driver | **ABSENT** — grade keyed to grammatical form; strong/weak in declension only | **ABSENT** — strong/weak "+" + per-form `v/g` rules |
+| **2. Grade system** | guṇa/vṛddhi "increment"; no zero-term | 3: zero/guṇa/vṛddhi | 3 ступени слабая/средняя/долгая (§50) | 3: ø/g/v symbols |
+| **3. Ряд (ablaut series)** | **ABSENT** (no series abstraction) | A–N + subscript **1/2** | A–N indices **1/2** (§50,60) | A₁…N₂ subscript **1/2** |
+| **4. Тип (root behaviour type)** | ABSENT as lettered type; present-class I–X + individual | **PRESENT — Roman I–IV** ("degree of alternation", central result) | No unified type; cross-axes (§61–63) | ABSENT as lettered type |
+| **5. seṭ/aniṭ/veṭ** | terms ABSENT; = "union-vowel *i*" | PRESENT, 2nd axis, tied to Whitney | PRESENT (§63) | PRESENT (with "колебания" caveat) |
+| **6. Notation (deep/surface)** | ABSENT — straight descriptive | no запись I/II; proposes H+uppercase | **запись I/II — the 1978 spine** (§28–30) | ABSENT two-level; single-level + subscripts |
+| **7. Root inventory** | no catalogue *in the grammar* (separate 1885 Roots vol.); full index | **~750 Whitney roots enumerated + classified** | **ABSENT** (schema only, §59) | **≈218** curated «важнейшие корни» + IE cognates |
+| **8. Declension** | **COMPLETE** (all stems/cases/numbers, gradation, accent) | **ABSENT — verb-only** | Full (stem-types, strong/middle/weak, heteroclita §78–101) | Full (ending-matrix + exceptions) |
+| **9. Verbal paradigms** | **COMPLETE** (all classes, all tense-systems, secondary conj., non-finite) | scope-boundary lists, by position | Full "systems" (§109–165) | Full (classes 1–10, all tenses) |
+| **10. Sandhi** | **COMPLETE** (largest chapter, internal+external) | light/background only | Extensive, ordered II→I→phonetic (§31–46) | Deep, ordered (7+7 blocks) |
+| **11. Generativity** | descriptive only | generative *in intent* (rules unwritten) | generative rule-computing (§458) | rule-generative via formulae |
+| **12. Genre / scope** | **full reference grammar** (max) | verb-only article | broad **sketch** (очерк) | broad **synopsis** (конспект); diachrony front-loaded |
 
-**MAJOR — 5** (a whole model-primitive or the object of description differs):
+## How many differences (among the three Zaliznyak works), by severity
 
-1. **Numbered морфологическая позиция** — the grade-driving abstraction: **1975 only**; 1978 & 2004 drop it. *(MG's example.)*
-2. **Root-type calculus I–IV ("degree of alternation")** — 1975's central primitive; 1978 replaces it with several cross-axes, 2004 has no lettered type.
-3. **Two-level запись I/II notation** — the **1978** spine; 1975 has no I/II system (proposes H-notation instead), 2004 is single-level.
-4. **Verb-only vs full grammar** — 1975 has **no nominal declension at all**; 1978 & 2004 are full grammars.
-5. **Enumerated root inventory as deliverable** — 1975 classifies ~750 roots, 2004 carries a large root lexicon, **1978 has no root list**.
+**MAJOR — 5** (a model-primitive or the object of description differs):
 
-**MEDIUM — 6** (same concept, materially different treatment/scope):
+1. **Numbered морфологическая позиция** — grade-driving abstraction: **1975 only**; 1978 & 2004 drop it. *(MG's example. Whitney also lacks it — it is a 1975 innovation.)*
+2. **Root-type calculus I–IV** — 1975's central primitive; 1978 replaces it with cross-axes, 2004 has no lettered type.
+3. **Two-level запись I/II notation** — the **1978** spine; 1975 has no I/II system, 2004 is single-level. *(Whitney has no deep/surface notation at all.)*
+4. **Genre / object of description** — 1975 **verb-only article** (no declension) vs 1978 **sketch** vs 2004 **synopsis**. **None is a full grammar** — that is Whitney 1889. *(Corrected: the first pass wrongly called 1978 & 2004 "full grammar".)*
+5. **Root inventory** — 1975 enumerates ~750 roots, 2004 carries ≈218 curated roots with IE cognates, **1978 has none**.
 
-1. Grade-**selection engine**: position→type table (1975) vs stipulated-per-form (1978) vs strong/weak "+" + `v/g` rules (2004).
-2. Root sub-classification **axis set**: I–IV+seṭ (1975) vs open/closed + подтипы 1/2/3 + seṭ (1978) vs open/closed + неполноизм. + class-digit + seṭ (2004).
-3. **Sandhi depth**: marginal (1975) vs extensive-ordered (1978, 2004).
-4. **Deep↔surface** made explicit as a two-record system (1978) vs informal (1975) vs single-level (2004).
-5. **Diachrony / IE comparison** prominence: front-loaded (2004) vs Vedic-accent appendix (1978) vs H-notation only (1975).
-6. **samprasāraṇa** placement: YA₁/VA₁ sub-rows (1975) vs "double alternation" in series A (1978) vs "Особые" macro-group (2004).
+**MEDIUM — 6:** grade-selection engine (position→type vs stipulated-per-form vs strong/weak+`v/g`) · root sub-classification axis-set · sandhi depth (marginal in 1975 vs extensive in 1978/2004) · deep↔surface made explicit (1978) vs informal (1975) vs single-level (2004) · diachrony/IE-comparison prominence (front-loaded in 2004) · samprasāraṇa placement.
 
-**MINOR — 6** (notation / terminology / coverage, model unchanged):
+**MINOR — 6:** grade terminology · **series subscripts** (all use 1/2; NONE uses the `0`-variants — see implications) · symbol inventories · strong/weak stance (1975 rejects it for verbs; 1978/2004 use it in declension) · present-class digit as a root tag (2004) · length/audience gradient.
 
-1. Grade **terminology** (weak-guṇa-vṛddhi / слабая-средняя-долгая / ø-g-v).
-2. **Series subscripts**: all use 1/2; **NONE uses the 0-subscript variants** (I0/M0/N0/R0/U0) — see implications.
-3. **Symbol inventories** (√,//,(i),H / devanāgarī+j₁h₁ / ø g v + ∼ [V] • 🞇).
-4. **Strong/weak stance**: 1975 explicitly *rejects* strong/middle/weak for verb stems; 1978 & 2004 use it (declension only).
-5. **Present-class digit** used as a root tag in 2004; described-but-untagged in 1975/1978.
-6. **Length / audience** gradient (specialist article / learner sketch / dense synopsis).
-
-**Totals: 5 major · 6 medium · 6 minor** (first pass; H357 may split or merge a few).
+**Totals: 5 major · 6 medium · 6 minor.**
 
 ## What it means for us
 
-1. **Our §-concordance points at the wrong Zaliznyak layer for the Талмуд's core mechanism.**
-   The H241 concordance links Talmud sections to the **1978 Очерк** — but the Талмуд's engine
-   (numbered **positions 1/2/3**, the **root-type** calculus, position-driven generation)
-   comes from the **1975 Classification**, which 1978 **absents**. Actionable: the concordance
-   should attribute per-mechanism — positions/type/Ряд-generation → **1975**; запись I/II +
-   full paradigms/sandhi → **1978**; diachrony/cognates → **2004** — not a blanket "→ Очерк 1978".
-2. **"The Талмуд develops Zaliznyak" = it revives and generalizes the 1975 line Zaliznyak himself abandoned.**
+1. **The §-concordance points at the wrong Zaliznyak layer for the Талмуд's core mechanism.**
+   H241 links Talmud sections to the **1978 Очерк**, but the Талмуд's engine — numbered
+   **positions 1/2/3**, the **root-type** calculus, position-driven generation — comes from
+   the **1975 Classification**, which 1978 **absents**. Actionable: attribute per-mechanism —
+   positions/type/Ряд-generation → **1975**; запись I/II + full paradigms/sandhi → **1978**;
+   diachrony/cognates → **2004** — not a blanket "→ Очерк 1978".
+2. **"The Талмуд develops Zaliznyak" = it revives the 1975 line Zaliznyak himself abandoned.**
    Positions, the type calculus, and full generativity are exactly what he dropped in the more
-   traditional 1978/2004 grammars. That is the headline of the H357 memo.
-3. **The `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are in NONE of the three Zaliznyak works** —
-   all use only subscript 1/2. So they are a **Tolchelnikov/Shirobokov (or Gasuns) addition**,
-   not Zaliznyak's — partially resolving the roadmap's open provenance question.
-4. **Тип is relabeled, not inherited.** Talmud Тип (s/a/v/v1…) ≠ Zaliznyak 1975 Тип (I–IV);
-   the Талмуд reconceived the type axis. A divergence the memo must document, not gloss.
-5. **Citing "Zaliznyak" now requires naming which work** — three different paradigms means a
-   bare "по Зализняку" is ambiguous. Our footnote-proposals and the companion text should cite
-   1975 / 1978 / 2004 specifically.
+   traditional 1978/2004 works. That is the memo's headline.
+3. **The `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are Толчельников's own extension** — they
+   appear in **none** of the three Zaliznyak works (all use only subscript 1/2). Толчельников
+   (a student of М. Гасунс) added them; А. П. Широбоков built only the `/z/` **computer model**
+   of Толчельников's morphology, not the classification. So where `/z/` is "richer" than our
+   Table-2 derivation, those are **authoritative author values** — a point already logged to
+   [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50).
+4. **Тип is relabeled, not inherited** — Talmud Тип (s/a/v) ≠ Zaliznyak 1975 Тип (I–IV).
+5. **"По Зализняку" is ambiguous** — three paradigms mean footnotes/companion text must cite
+   **which** work (1975 / 1978 / 2004). And none of them is the "full grammar" — that role is
+   Whitney's, the advanced-stage reference above the whole Russian ladder.
 
 _Dr. Mārcis Gasūns_

@@ -17,22 +17,26 @@ anchors — this file is the plan, not the analysis.
 
 | Step | Work | In-repo source | Role in the lineage |
 |---|---|---|---|
-| 1975 | А. А. Зализняк, *Morphophonological Classification of Sanskrit Verbal Roots* (English) | `ZalizniakMorphology_1975/` ⚠ **uncommitted, local-only in the main tree** (`.docx` + `.mdx`) — commit it first | Origin: the deep-morpheme √-record with **Тип** + **seṭ/aniṭ**; the ablaut apparatus later called *Ряд*. Also underpins his [*Очерк* (1978)](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned.mdx). |
+| 1975 | А. А. Зализняк, *Morphophonological Classification of Sanskrit Verbal Roots* (English) | [`ZalizniakMorphology_1975/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ZalizniakMorphology_1975) (`.docx` + `.mdx`; now committed on `main` as of the 08-07 errata→main merge) | Origin: the deep-morpheme √-record with **Тип** + **seṭ/aniṭ**; the ablaut apparatus later called *Ряд*. Also underpins his [*Очерк* (1978)](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned.mdx). |
 | 2014 | М. Гасунс, «Морфонологическая запись глагольных корней санскрита» (PhD, Russian) | [`GasunsDhatu_2014/Морфонологическая запись глагольных корней санскрита.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx) + [`02_gasuns-dhatu-PhD-text2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx) + [`О записи омонимии корней…`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014) | Middle term. Its abstract **explicitly** says «Автор **развивает разработки акад. Зализняка**» (e.g. √vAsH → **√vás(i)** = «неполноизменяемый корень, группа seṭ»), and compares Zaliznyak's deep-morpheme notation against Western root-lists (Morgenroth, Werba). A prior comparison the memo builds on. |
 | 2026 | И. Е. Толчельников, «Санскритская морфология: руководство» / Талмуд | [`TolchelnikovTalmud_2026/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026) + the [`samskrtam.ru/z/`](https://samskrtam.ru/z/) root DB (Shirobokov) | Endpoint: develops the classification into a full **generative MTT engine** — Ряд A–N, morphological positions 1/2/3, seṭ from Whitney, surface-form computation. |
 
-## Intra-Zaliznyak axis — his three works use different paradigms (first pass DONE)
+## Intra-Zaliznyak axis — his three works use different paradigms (2nd pass DONE)
 
 Zaliznyak described Sanskrit **three times with a different model each time**, so "по
-Зализняку" is ambiguous. First-pass structural comparison is complete —
+Зализняку" is ambiguous — and **none of the three is a full grammar**. Comparison done,
+now **calibrated against Whitney 1889** (the one full reference grammar in the repo) —
 [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md):
-**5 major · 6 medium · 6 minor** differences across 12 axes. Headline for the memo: the
+**5 major · 6 medium · 6 minor** differences across 12 axes. Genre ladder (corrected):
+Whitney 1889 *full grammar* » 1978 *очерк/sketch* » 2004 *конспект/synopsis* » 1975
+*verb-only article*; Whitney *describes*, Zaliznyak *abstracts*, the Талмуд *generates*. Headline for the memo: the
 Талмуд's core engine (**numbered positions 1/2/3**, the **root-type calculus**,
 position-driven generation) comes from **1975**, which the **1978 Очерк our §-concordance
 points at ABSENTS** — so the Талмуд revives the 1975 line Zaliznyak himself dropped, and the
 concordance should attribute per-mechanism (1975 vs 1978 vs 2004), not blanket "→ Очерк 1978".
 Also resolved: the `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are in **none** of the three
-Zaliznyak works — a Tolchelnikov/Shirobokov/Gasuns addition. The H357 pass deepens this
+Zaliznyak works — **Tolchelnikov's own extension** (he is a student of М. Гасунс; Shirobokov
+built only the `/z/` computer model, not the classification). The H357 pass deepens this
 against the full texts.
 
 ## ⚠ Terminology trap (must not be conflated)
@@ -84,9 +88,8 @@ derived** values — the memo must re-anchor divergences against **Zaliznyak 197
 
 ## Suggested phases
 
-1. **Prerequisite** — commit `ZalizniakMorphology_1975/` (currently local-only) so the
-   English classification is a stable, citable source; `/prior-art` for any existing
-   Zaliznyak↔Gasuns↔Tolchelnikov comparison.
+1. **Prerequisite** — `ZalizniakMorphology_1975/` is now committed on `main` (done);
+   `/prior-art` for any existing Zaliznyak↔Gasuns↔Tolchelnikov comparison.
 2. **Extract** — read each work's classification apparatus; tabulate categories per axis.
 3. **Category crosswalk** — align Ряд/Тип/seṭ definitions across the three; flag renamings,
    additions (the `0`-variants), and drops.
@@ -101,7 +104,7 @@ derived** values — the memo must re-anchor divergences against **Zaliznyak 197
 - **Author-gating** — any divergence that would touch the Talmud's running text enters only
   as an Ivan-approved footnote.
 - **Do not conflate the two «ряд» senses** (see the terminology trap above).
-- **Commit the 1975 source first** — do not build the comparison on an uncommitted file.
+- **1975 source is committed on `main`** (08-07 errata→main merge) — build on `main`.
 - **WhitneyRoots is read-only**; this work reads the three sources + `/z/` and writes only
   new derived assets inside the Talmud repo.
 
