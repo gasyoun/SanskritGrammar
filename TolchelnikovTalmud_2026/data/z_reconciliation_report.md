@@ -4,6 +4,18 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Handoff **H329**. Model: Opus 4.8 (`claude-opus-4-8`).
 
+> **⚠ Author correction (08-07-2026, I. E. Tolchelnikov via [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50)).**
+> `/z/` is **not** fully authoritative for Ряд — it has systematic bugs. Two classes of
+> what this report first counted as "disagreements" are in fact **`/z/` errors, not ours**:
+> (1) the **115 `0`-variant / `L` rows** (`I0/N0/R0/U0/M0`, `L`) — such rows **do not exist**;
+> they are a Table-2 handling bug in `/z/`, to be **discarded** (NOT "`/z/` richer" as written
+> below). (2) The **ṛ-nucleus cases** where our derivation gave `R₁` and `/z/` gave `A1` —
+> the manual has `R₁`, which is correct; `/z/`'s `A1` is the error, so **our value stands**
+> (NOT "our calculus wrong"). Ground truth for Ряд is the printed manual (руководство), not
+> `/z/`. The 70.7 % Ряд figure below therefore **understates** our derivation's fidelity.
+> seṭ coverage from `/z/` is still valuable (fills 246 nulls) but each adopted value needs
+> author confirmation. Phase 3 applies the author's answers from issue #50.
+
 ## What this is
 
 [`samskrtam.ru/z/`](https://samskrtam.ru/z/) is Shirobokov A.P.'s interactive database of
