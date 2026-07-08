@@ -15,8 +15,8 @@ import ZRef from '@site/src/components/ZRef';
 1. **`√`** — Традиционная запись корня.
 2. **`{√}`** — Наше глубинно-морфологическое представление (алломорфы указаны в соседних строках).
 3. **Список Уитни** — Отсылка к оригинальному номеру/написанию у Уитни.
-4. **Тип и Ряд** — Указание на Ряд чередования (от `A₁` до `N₂`) и Тип поведения корня (стандартный `s`, пониженный `a` или сильный `v1..v4`). Это необходимо для вычисления ступени (см. Раздел II).
-5. **Параметр `seṭ`** — Указывает, принимает ли корень соединительную гласную `i` (`seṭ`), не принимает (`aniṭ`) или принимает факультативно (`veṭ`).
+4. **Тип и Ряд** — Ряд чередования (от `A₁` до `N₂`, Таблица 4) и Тип чередования (`I`–`IV`, Таблица 5), необходимые для вычисления ступени (см. Раздел II).
+5. **Параметр `seṭ`** — Указывает, принимает ли корень соединительную гласную `i`: `seṭ` (код `s`), не принимает — `aniṭ` (`a`), принимает факультативно — `veṭ` (`v`, с подклассами `v1`–`v4`, Таблица 8).
 6. **Класс (О.Н.В.)** — Номер класса для образования основы настоящего времени.
 7. **Аорист** — Тип аориста (от 1 до 7), доступный для данного корня.
 8. **Иные формы** — Возможность образования пассива (PASS.), каузатива (CAUS.), дезидератива (DES.), интенсива (INT.) и т.д.
@@ -24,97 +24,103 @@ import ZRef from '@site/src/components/ZRef';
 
 ### Сводная таблица корней
 
-:::note Происхождение данных (звёздочка `*`)
+:::note Происхождение данных
 
 Столбцы `№ Уитни`, `Класс`, `p.p.p.`, `DCS-ранг` и `Значение` взяты **дословно** из
 канонического набора [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv)
-(данные Уитни). Столбцы, помеченные звёздочкой — **`Ряд*`** и **`seṭ*`** — не берутся
-из готового источника, а **вычисляются**:
+(данные Уитни). Столбцы **`Ряд`**, **`Тип`** и **`seṭ`** — **авторские**: они взяты
+дословно из каталога Приложения 1 в последней версии руководства (`Talmud-2.1.6`),
+по прямому решению автора (И. Е. Толчельников,
+[issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50), 08-07-2026):
+последнее руководство — единственный источник этих значений; прежние выводимые
+предложения и снимок [samskrtam.ru/z/](https://samskrtam.ru/z/) более не используются.
 
-- **`Ряд*`** выводится из огласовки корня по исчислению Таблицы 2 (Раздел II):
-  корневой гласный задаёт букву ряда, его долгота — индекс. Это **предложение**,
-  ожидающее утверждения автором (см. `footnote-proposals/`), а не авторская разметка.
-- **`seṭ*`** выводится (ориентировочно) по наличию соединительного `i`/`ī` в p.p.p.
-- **Тип** (`s`/`a`/`v`) — лексическое свойство, которое Уитни фиксирует, но которого
-  нет в машиночитаемом наборе WhitneyRoots; поэтому он здесь **не проставлен**
-  (немаркированное поведение по умолчанию — `s`, Таблица 3).
+- Ряд приводится **как напечатано**: если при букве ряда нет цифры, индекс не
+  добавляется (ruling #3); индексных вариантов `0` нет.
+- `—` в столбце Ряд/seṭ означает, что корень **отсутствует в авторском каталоге**
+  Приложения 1 — тогда никакой ряд для него не утверждается.
 
-Полный каталог всех корней с флагами достоверности — в
-[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json),
-воспроизводится скриптом [`tools/build_whitney_talmud.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_whitney_talmud.py).
+Авторский каталог целиком — в
+[`data/talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json)
+(парсер [`tools/parse_appendix1.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/parse_appendix1.py));
+объединённый с данными Уитни — в
+[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json)
+(скрипт [`tools/build_whitney_talmud.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_whitney_talmud.py));
+сверка авторских значений с прежними выводимыми — в
+[`data/manual_reconciliation_report.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/manual_reconciliation_report.md).
 
 :::
 
 {/* AUTOGEN:appendix1-cohort BEGIN — regenerate with tools/render_appendix1.py */}
 
-Ниже — **первая когорта** (65 наиболее частотных по DCS корней, ранг ≤ 50), с которой начинается самостоятельное изучение. Полный каталог всех 930 глагольных корней Уитни — в машиночитаемом виде в [`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json). Ссылка **↗** в столбце «/z/» ведёт на полную сгенерированную парадигму корня в базе [samskrtam.ru/z/](https://samskrtam.ru/z/) (Толчельников/Широбоков).
+Ниже — **первая когорта** (65 наиболее частотных по DCS корней, ранг ≤ 50), с которой начинается самостоятельное изучение. Ряд, Тип и seṭ приведены **по каталогу Приложения 1** из руководства (авторские значения). Полный каталог всех 930 глагольных корней Уитни — в машиночитаемом виде в [`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json), а авторский каталог целиком — в [`data/talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json). Ссылка **↗** в столбце «/z/» ведёт на полную сгенерированную парадигму корня в базе [samskrtam.ru/z/](https://samskrtam.ru/z/) (Толчельников/Широбоков).
 
-| DCS-ранг | № Уитни | √ | Ряд* | seṭ* | Класс | p.p.p. | Значение | /z/ |
-| ---: | ---: | :--- | :---: | :---: | :--- | :--- | :--- | :---: |
-| 1 | 106 | `kṛ` | R₁ | aniṭ | I/II/V/VIII | kṛtá | make | [↗](https://samskrtam.ru/z/verb.php?id=594) |
-| 1 | 107 | `kṛ` | R₁ | — | VI | — | scatter | [↗](https://samskrtam.ru/z/verb.php?id=661) |
-| 1 | 108 | `kṛ` | R₁ | — | — | — | commemorate | [↗](https://samskrtam.ru/z/verb.php?id=662) |
-| 2 | 528 | `bhū` | U₂ | aniṭ | I | bhūtá | be | [↗](https://samskrtam.ru/z/verb.php?id=553) |
-| 3 | 22 | `as` | A₁ | — | II | — | be | [↗](https://samskrtam.ru/z/verb.php?id=1) |
-| 3 | 23 | `as` | A₁ | aniṭ | I/IV | asta | throw | [↗](https://samskrtam.ru/z/verb.php?id=9) |
-| 4 | 699 | `vac` | A₁ | aniṭ | II/III | uktá | speak | [↗](https://samskrtam.ru/z/verb.php?id=13) |
-| 5 | 166 | `gach` | A₁ | — | — | — | — | — |
-| 5 | 170 | `gam` | M₁ | aniṭ | I/II | gatá | go | [↗](https://samskrtam.ru/z/verb.php?id=701) |
-| 6 | 375 | `dṛś` | R₁ | aniṭ | IV | dṛṣṭá | see | [↗](https://samskrtam.ru/z/verb.php?id=616) |
-| 7 | 349 | `dā` | A₂ | — | I/II/III/IV | - | give | [↗](https://samskrtam.ru/z/verb.php?id=170) |
-| 7 | 350 | `dā` | A₂ | aniṭ | I/VI | diná | divide, share | [↗](https://samskrtam.ru/z/verb.php?id=171) |
-| 7 | 351 | `dā` | A₂ | — | — | — | bind | [↗](https://samskrtam.ru/z/verb.php?id=172) |
-| 7 | 352 | `dā` | A₂ | aniṭ | — | dāta | clear | [↗](https://samskrtam.ru/z/verb.php?id=173) |
-| 8 | 728 | `vid` | I₁ | seṭ | I/II/VI | viditá | know | [↗](https://samskrtam.ru/z/verb.php?id=252) |
-| 8 | 729 | `vid` | I₁ | aniṭ | II/VI | vittá | find | [↗](https://samskrtam.ru/z/verb.php?id=253) |
-| 9 | 815 | `śru` | U₁ | aniṭ | II/V | śrutá | hear | [↗](https://samskrtam.ru/z/verb.php?id=513) |
-| 10 | 502 | `brū` | U₂ | — | II/VI | — | say | [↗](https://samskrtam.ru/z/verb.php?id=552) |
-| 11 | 24 | `ah` | A₁ | — | — | — | say | [↗](https://samskrtam.ru/z/verb.php?id=10) |
-| 12 | 874 | `sthā` | A₂ | aniṭ | I | sthitá | stand | [↗](https://samskrtam.ru/z/verb.php?id=226) |
-| 13 | 249 | `jan` | N₁ | aniṭ | I/II/III/IV | jātá | give birth, be born | [↗](https://samskrtam.ru/z/verb.php?id=809) |
-| 14 | 908 | `han` | N₁ | aniṭ | I/II/VIII | hatá | smite | [↗](https://samskrtam.ru/z/verb.php?id=806) |
-| 16 | 597 | `yaj` | A₁ | aniṭ | I/II | iṣṭá | offer | [↗](https://samskrtam.ru/z/verb.php?id=11) |
-| 17 | 919 | `hu` | U₁ | aniṭ | II/III | hutá | sacrifice | [↗](https://samskrtam.ru/z/verb.php?id=526) |
-| 19 | 608 | `yuj` | U₁ | aniṭ | II/VII | yuktá | join | [↗](https://samskrtam.ru/z/verb.php?id=482) |
-| 20 | 603 | `yā` | A₂ | aniṭ | II | yātá | go | [↗](https://samskrtam.ru/z/verb.php?id=202) |
-| 21 | 448 | `pā` | A₂ | aniṭ | I/II/III | pītá | drink | [↗](https://samskrtam.ru/z/verb.php?id=184) |
-| 21 | 449 | `pā` | A₂ | — | II | — | protect | [↗](https://samskrtam.ru/z/verb.php?id=185) |
-| 21 | 450 | `pā` | A₂ | — | — | — | rise against | — |
-| 22 | 269 | `jñā` | A₂ | aniṭ | I/IX | jñātá | know | [↗](https://samskrtam.ru/z/verb.php?id=167) |
-| 23 | 32 | `ich` | I₁ | — | — | — | — | — |
-| 23 | 42 | `iṣ` | I₁ | aniṭ | I/IV/VI | iṣṭá | seek, desire | [↗](https://samskrtam.ru/z/verb.php?id=283) |
-| 23 | 43 | `iṣ` | I₁ | seṭ | IV/VI/IX | iṣitá | send | [↗](https://samskrtam.ru/z/verb.php?id=284) |
-| 24 | 446 | `paś` | A₁ | aniṭ | IV | spaṣṭa | see | [↗](https://samskrtam.ru/z/verb.php?id=79) |
-| 24 | 447 | `paś` | A₁ | — | — | — | bind | — |
-| 25 | 546 | `man` | N₁ | aniṭ | III/IV/VIII | matá | think | [↗](https://samskrtam.ru/z/verb.php?id=783) |
-| 26 | 393 | `dhā` | A₂ | aniṭ | I/II/III/IV | hitá | put | [↗](https://samskrtam.ru/z/verb.php?id=178) |
-| 26 | 394 | `dhā` | A₂ | aniṭ | — | dhītá | suck | [↗](https://samskrtam.ru/z/verb.php?id=179) |
-| 28 | 894 | `smṛ` | R₁ | aniṭ | I | smṛta | remember | [↗](https://samskrtam.ru/z/verb.php?id=657) |
-| 29 | 258 | `ji` | I₁ | aniṭ | I/II | jitá | conquer | [↗](https://samskrtam.ru/z/verb.php?id=298) |
-| 29 | 259 | `ji` | I₁ | aniṭ | I/V | jinvitá | quicken | [↗](https://samskrtam.ru/z/verb.php?id=299) |
-| 30 | 220 | `car` | A₁ | seṭ | I | caritá | move | [↗](https://samskrtam.ru/z/verb.php?id=665) |
-| 31 | 704 | `vad` | A₁ | seṭ | I | uditá | speak | [↗](https://samskrtam.ru/z/verb.php?id=15) |
-| 32 | 564 | `muc` | U₁ | aniṭ | VI | muktá | release | [↗](https://samskrtam.ru/z/verb.php?id=474) |
-| 33 | 29 | `i` | I₁ | aniṭ | I/IV/V | itá | go | — |
-| 33 | 30 | `i` | I₁ | — | I/V/IX | — | send | — |
-| 35 | 673 | `labh` | A₁ | — | I | labdha | take | [↗](https://samskrtam.ru/z/verb.php?id=112) |
-| 38 | 440 | `pat` | A₁ | seṭ | I | patitá | fly, fall | [↗](https://samskrtam.ru/z/verb.php?id=76) |
-| 38 | 441 | `pat` | A₁ | — | IV | — | rule | — |
-| 40 | 477 | `prach` | A₁ | aniṭ | VI | pṛṣṭá | ask | [↗](https://samskrtam.ru/z/verb.php?id=80) |
-| 42 | 909 | `har` | A₁ | — | IV | — | be gratified | — |
-| 42 | 923 | `hṛ` | R₁ | aniṭ | I/II/III | hṛtá | take | [↗](https://samskrtam.ru/z/verb.php?id=658) |
-| 42 | 924 | `hṛ` | R₁ | — | IX | — | be angry | [↗](https://samskrtam.ru/z/verb.php?id=659) |
-| 43 | 854 | `sṛj` | R₁ | aniṭ | I/VI | sṛṣṭá | send forth | — |
-| 44 | 911 | `hā` | A₂ | aniṭ | I/III | hīná | leave | [↗](https://samskrtam.ru/z/verb.php?id=230) |
-| 44 | 912 | `hā` | A₂ | aniṭ | III | hāna | go forth | [↗](https://samskrtam.ru/z/verb.php?id=231) |
-| 46 | 524 | `bhuj` | U₁ | — | VI | — | bend | [↗](https://samskrtam.ru/z/verb.php?id=472) |
-| 46 | 525 | `bhuj` | U₁ | aniṭ | VII | bhukta | enjoy | [↗](https://samskrtam.ru/z/verb.php?id=473) |
-| 47 | 494 | `bandh` | A₁ | aniṭ | I/IX | baddhá | bind | [↗](https://samskrtam.ru/z/verb.php?id=779) |
-| 48 | 571 | `mṛ` | R₁ | aniṭ | I | mṛtá | die | [↗](https://samskrtam.ru/z/verb.php?id=631) |
-| 48 | 572 | `mṛ` | R₁ | aniṭ | VI/IX | mūrṇá | crush | [↗](https://samskrtam.ru/z/verb.php?id=671) |
-| 49 | 715 | `vas` | A₁ | aniṭ | II/VI | uṣṭá | shine | [↗](https://samskrtam.ru/z/verb.php?id=19) |
-| 49 | 716 | `vas` | A₁ | seṭ | II/VI | vasita | clothe | [↗](https://samskrtam.ru/z/verb.php?id=20) |
-| 49 | 717 | `vas` | A₁ | seṭ | I | uṣita | dwell | — |
-| 50 | 744 | `vṛt` | R₁ | aniṭ | I/II/III | vṛttá | turn | [↗](https://samskrtam.ru/z/verb.php?id=643) |
+| DCS-ранг | № Уитни | √ | Ряд | Тип | seṭ | Класс | p.p.p. | Значение | /z/ |
+| ---: | ---: | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :---: |
+| 1 | 106 | `kṛ` | R₁ | I | veṭ | I/II/V/VIII | kṛtá | make | [↗](https://samskrtam.ru/z/verb.php?id=594) |
+| 1 | 107 | `kṛ` | R₂ | I | seṭ | VI | — | scatter | [↗](https://samskrtam.ru/z/verb.php?id=661) |
+| 1 | 108 | `kṛ` | R₂ | I | seṭ | — | — | commemorate | [↗](https://samskrtam.ru/z/verb.php?id=662) |
+| 2 | 528 | `bhū` | U₂ | I | seṭ | I | bhūtá | be | [↗](https://samskrtam.ru/z/verb.php?id=553) |
+| 3 | 22 | `as` | A₁ | I | — | II | — | be | [↗](https://samskrtam.ru/z/verb.php?id=1) |
+| 3 | 23 | `as` | A₁ | II | veṭ | I/IV | asta | throw | [↗](https://samskrtam.ru/z/verb.php?id=9) |
+| 4 | 699 | `vac` | A₁ | I | aniṭ | II/III | uktá | speak | [↗](https://samskrtam.ru/z/verb.php?id=13) |
+| 5 | 166 | `gach` | — | — | — | — | — | — | — |
+| 5 | 170 | `gam` | M₁ | I | veṭ | I/II | gatá | go | [↗](https://samskrtam.ru/z/verb.php?id=701) |
+| 6 | 375 | `dṛś` | R₁ | I | aniṭ | IV | dṛṣṭá | see | [↗](https://samskrtam.ru/z/verb.php?id=616) |
+| 7 | 349 | `dā` | A₂ | I | aniṭ | I/II/III/IV | - | give | [↗](https://samskrtam.ru/z/verb.php?id=170) |
+| 7 | 350 | `dā` | A₂ | I | aniṭ | I/VI | diná | divide, share | [↗](https://samskrtam.ru/z/verb.php?id=171) |
+| 7 | 351 | `dā` | A₂ | I | aniṭ | — | — | bind | [↗](https://samskrtam.ru/z/verb.php?id=172) |
+| 7 | 352 | `dā` | A₂ | II | aniṭ | — | dāta | clear | [↗](https://samskrtam.ru/z/verb.php?id=173) |
+| 8 | 728 | `vid` | I₁ | I | veṭ | I/II/VI | viditá | know | [↗](https://samskrtam.ru/z/verb.php?id=252) |
+| 8 | 729 | `vid` | I₁ | I | veṭ | II/VI | vittá | find | [↗](https://samskrtam.ru/z/verb.php?id=253) |
+| 9 | 815 | `śru` | U₁ | I | aniṭ | II/V | śrutá | hear | [↗](https://samskrtam.ru/z/verb.php?id=513) |
+| 10 | 502 | `brū` | U₂ | I | — | II/VI | — | say | [↗](https://samskrtam.ru/z/verb.php?id=552) |
+| 11 | 24 | `ah` | A₁ | II | — | — | — | say | [↗](https://samskrtam.ru/z/verb.php?id=10) |
+| 12 | 874 | `sthā` | A₂ | I | aniṭ | I | sthitá | stand | [↗](https://samskrtam.ru/z/verb.php?id=226) |
+| 13 | 249 | `jan` | N₂ | I | seṭ | I/II/III/IV | jātá | give birth, be born | [↗](https://samskrtam.ru/z/verb.php?id=809) |
+| 14 | 908 | `han` | N₁ | I | veṭ | I/II/VIII | hatá | smite | [↗](https://samskrtam.ru/z/verb.php?id=806) |
+| 16 | 597 | `yaj` | A₁ | I | aniṭ | I/II | iṣṭá | offer | [↗](https://samskrtam.ru/z/verb.php?id=11) |
+| 17 | 919 | `hu` | U₁ | I | aniṭ | II/III | hutá | sacrifice | [↗](https://samskrtam.ru/z/verb.php?id=526) |
+| 19 | 608 | `yuj` | U₁ | I | aniṭ | II/VII | yuktá | join | [↗](https://samskrtam.ru/z/verb.php?id=482) |
+| 20 | 603 | `yā` | A₂ | II | aniṭ | II | yātá | go | [↗](https://samskrtam.ru/z/verb.php?id=202) |
+| 21 | 448 | `pā` | A₂ | I | aniṭ | I/II/III | pītá | drink | [↗](https://samskrtam.ru/z/verb.php?id=184) |
+| 21 | 449 | `pā` | A₂ | II | aniṭ | II | — | protect | [↗](https://samskrtam.ru/z/verb.php?id=185) |
+| 21 | 450 | `pā` | — | — | — | — | — | rise against | — |
+| 22 | 269 | `jñā` | A₂ | II | aniṭ | I/IX | jñātá | know | [↗](https://samskrtam.ru/z/verb.php?id=167) |
+| 23 | 32 | `ich` | I₁ | I | veṭ | — | — | — | — |
+| 23 | 42 | `iṣ` | — | — | — | I/IV/VI | iṣṭá | seek, desire | [↗](https://samskrtam.ru/z/verb.php?id=283) |
+| 23 | 43 | `iṣ` | I₁ | I | seṭ | IV/VI/IX | iṣitá | send | [↗](https://samskrtam.ru/z/verb.php?id=284) |
+| 24 | 446 | `paś` | A₁ | II | veṭ | IV | spaṣṭa | see | [↗](https://samskrtam.ru/z/verb.php?id=79) |
+| 24 | 447 | `paś` | — | — | — | — | — | bind | — |
+| 25 | 546 | `man` | N₁ | I | veṭ | III/IV/VIII | matá | think | [↗](https://samskrtam.ru/z/verb.php?id=783) |
+| 26 | 393 | `dhā` | A₂ | I | aniṭ | I/II/III/IV | hitá | put | [↗](https://samskrtam.ru/z/verb.php?id=178) |
+| 26 | 394 | `dhā` | A₂ | I | aniṭ | — | dhītá | suck | [↗](https://samskrtam.ru/z/verb.php?id=179) |
+| 28 | 894 | `smṛ` | R₁ | I | veṭ | I | smṛta | remember | [↗](https://samskrtam.ru/z/verb.php?id=657) |
+| 29 | 258 | `ji` | I₁ | I | veṭ | I/II | jitá | conquer | [↗](https://samskrtam.ru/z/verb.php?id=298) |
+| 29 | 259 | `ji` | I₁ | III | seṭ | I/V | jinvitá | quicken | [↗](https://samskrtam.ru/z/verb.php?id=299) |
+| 30 | 220 | `car` | R | II | seṭ | I | caritá | move | [↗](https://samskrtam.ru/z/verb.php?id=665) |
+| 31 | 704 | `vad` | A₁ | I | seṭ | I | uditá | speak | [↗](https://samskrtam.ru/z/verb.php?id=15) |
+| 32 | 564 | `muc` | U₁ | I | aniṭ | VI | muktá | release | [↗](https://samskrtam.ru/z/verb.php?id=474) |
+| 33 | 29 | `i` | I₁ | I | veṭ | I/IV/V | itá | go | — |
+| 33 | 30 | `i` | I₁ | III | seṭ | I/V/IX | — | send | — |
+| 35 | 673 | `labh` | A₁ | II | veṭ | I | labdha | take | [↗](https://samskrtam.ru/z/verb.php?id=112) |
+| 38 | 440 | `pat` | A₁ | II | seṭ | I | patitá | fly, fall | [↗](https://samskrtam.ru/z/verb.php?id=76) |
+| 38 | 441 | `pat` | — | — | — | IV | — | rule | — |
+| 40 | 477 | `prach` | A₁ | I | aniṭ | VI | pṛṣṭá | ask | [↗](https://samskrtam.ru/z/verb.php?id=80) |
+| 42 | 909 | `har` | R | II | seṭ | IV | — | be gratified | — |
+| 42 | 923 | `hṛ` | R₁ | I | veṭ | I/II/III | hṛtá | take | [↗](https://samskrtam.ru/z/verb.php?id=658) |
+| 42 | 924 | `hṛ` | R₁ | I | veṭ | IX | — | be angry | [↗](https://samskrtam.ru/z/verb.php?id=659) |
+| 43 | 854 | `sṛj` | R₁ | I | aniṭ | I/VI | sṛṣṭá | send forth | — |
+| 44 | 911 | `hā` | A₂ | I | aniṭ | I/III | hīná | leave | [↗](https://samskrtam.ru/z/verb.php?id=230) |
+| 44 | 912 | `hā` | A₂ | II | aniṭ | III | hāna | go forth | [↗](https://samskrtam.ru/z/verb.php?id=231) |
+| 46 | 524 | `bhuj` | U₁ | I | aniṭ | VI | — | bend | [↗](https://samskrtam.ru/z/verb.php?id=472) |
+| 46 | 525 | `bhuj` | U₁ | I | aniṭ | VII | bhukta | enjoy | [↗](https://samskrtam.ru/z/verb.php?id=473) |
+| 47 | 494 | `bandh` | N₁ | I | veṭ | I/IX | baddhá | bind | [↗](https://samskrtam.ru/z/verb.php?id=779) |
+| 48 | 571 | `mṛ` | R₁ | I | veṭ | I | mṛtá | die | [↗](https://samskrtam.ru/z/verb.php?id=631) |
+| 48 | 572 | `mṛ` | R₂ | I | veṭ | VI/IX | mūrṇá | crush | [↗](https://samskrtam.ru/z/verb.php?id=671) |
+| 49 | 715 | `vas` | A₁ | I | veṭ | II/VI | uṣṭá | shine | [↗](https://samskrtam.ru/z/verb.php?id=19) |
+| 49 | 716 | `vas` | A₁ | II | veṭ | II/VI | vasita | clothe | [↗](https://samskrtam.ru/z/verb.php?id=20) |
+| 49 | 717 | `vas` | A₁ | I | veṭ | I | uṣita | dwell | — |
+| 50 | 744 | `vṛt` | R₁ | I | veṭ | I/II/III | vṛttá | turn | [↗](https://samskrtam.ru/z/verb.php?id=643) |
 
 {/* AUTOGEN:appendix1-cohort END */}
