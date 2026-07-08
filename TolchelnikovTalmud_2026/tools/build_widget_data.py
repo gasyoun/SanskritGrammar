@@ -8,12 +8,16 @@ so the Docusaurus widgets (Ablaut machine, seṭ/aniṭ tree, …) can import a
 few-KB example set instead of bundling the 776-KB master file into the client.
 
 The subset is deliberately curated:
-  * ``ablaut_examples`` — the ``first`` teaching cohort (DCS-rank ≤ 50), each with
-    the fields the Ablaut machine needs to auto-select a series and show grades.
-  * ``set_examples`` — first + second cohort roots that carry a DERIVED seṭ/aniṭ
-    flag AND a p.p.p. (the evidence the decision tree cites). Advisory, gated.
+  * ``ablaut_examples`` — the ``first`` teaching cohort (DCS-rank ≤ 50) that carry
+    the author's own Ряд from Приложение 1, each with the fields the Ablaut machine
+    needs to seat a series and show grades.
+  * ``set_examples`` — first + second cohort roots that carry the author's seṭ
+    value AND a p.p.p. (the evidence the decision tree cites).
   * ``nominal`` — the author's 15 Приложение-2 nominal roots, verbatim, for the
     Heteroclisis stem-map.
+
+Ряд/seṭ here are the author's own manual values (H329 Phase 3), not derived
+proposals — so no confidence flag is projected.
 
 Everything here is a projection of the master file; provenance (derived vs
 verbatim) is preserved so widgets can label it. Regenerate whenever
@@ -60,8 +64,7 @@ def slim_ablaut(r, z_url=None):
         "gloss": r["gloss"],
         "class": r["class"],
         "ryad": r["ryad"],
-        "ryad_confidence": r["ryad_confidence"],
-        "ryad_note": r.get("ryad_note"),
+        "tip": r.get("tip"),
         "set": r["set"],
         "dcs_rank": r["dcs_rank"],
         "z_url": z_url,
@@ -74,7 +77,7 @@ def slim_set(r, z_url=None):
         "gloss": r["gloss"],
         "ppp": r["ppp"],
         "set": r["set"],
-        "set_confidence": r.get("set_confidence"),
+        "set_code": r.get("set_code"),
         "dcs_rank": r["dcs_rank"],
         "z_url": z_url,
     }
@@ -98,6 +101,8 @@ def main():
     seen = set()
     ablaut = []
     for r in sorted(first, key=rank_key):
+        if not r["ryad"]:            # only roots the author gives a series for
+            continue
         key = (r["root_iast"], r["ryad"])
         if key in seen:
             continue
@@ -119,9 +124,10 @@ def main():
         "_meta": {
             "what": "Compact Phase-2 widget feed projected from whitney_talmud.json",
             "generator": "tools/build_widget_data.py",
-            "provenance": "ryad/set are DERIVED proposals (see whitney_talmud.schema.md); "
-            "gloss/class/ppp/dcs_rank are verbatim WhitneyRoots; z_url deep-links to the "
-            "samskrtam.ru/z/ verb-DB paradigm (H329, via data/z_root_map.json).",
+            "provenance": "ryad/tip/set are the author's own values from Приложение 1 "
+            "(manual, H329 Phase 3 — issue #50 ruling); gloss/class/ppp/dcs_rank are "
+            "verbatim WhitneyRoots; z_url deep-links to the samskrtam.ru/z/ verb-DB "
+            "paradigm (via data/z_root_map.json).",
             "counts": {
                 "ablaut_examples": len(ablaut),
                 "set_examples": len(setex),

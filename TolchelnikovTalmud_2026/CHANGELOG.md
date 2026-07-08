@@ -12,6 +12,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 ### Added
+- **`data/talmud_appendix1.json`** — the author's own Приложение 1 verb-root catalog (745 roots),
+  parsed **verbatim** from the authoritative manual `Talmud-2.1.6.mdx` by new
+  `tools/parse_appendix1.py`. Carries per root the author's Ряд, Тип (`I`–`IV`), seṭ
+  (`s`/`a`/`v1`…`v4`), pada and Whitney-nomenclature reference — the **source of truth** for these
+  values per the issue-#50 ruling (H329 Phase 3).
+- `data/manual_reconciliation_report.md` — audit trail: how the author's catalog covers the
+  Whitney spine (730/745 rows → 730 Whitney roots) and how far the retired derived Ряд/seṭ
+  disagreed with him (Ряд 75.6 %, i.e. **178 roots the derivation got wrong**).
 - `data/z_root_map.json` — Whitney-no ↔ [samskrtam.ru/z/](https://samskrtam.ru/z/) verb-id
   join map (876/905 roots matched) + reproducible `tools/build_z_root_map.py` (H329 Phase 1).
 - `data/z_reconciliation_report.md` — reconciliation of `/z/`'s Ряд/seṭ vs our derived values
@@ -32,6 +40,20 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   marked `rejected`). `/z/` is kept only as the paradigm deep-link (outdated snapshot, still useful).
 
 ### Changed
+- **`data/whitney_talmud.json`: Ряд/Тип/seṭ now sourced from the manual, not derived** (H329 Phase 3).
+  `tools/build_whitney_talmud.py` overlays the author's Приложение 1 catalog onto the Whitney spine
+  (`ryad_source`/`tip_source`/`set_source` = `"manual"`); the vowel-derived Ряд and p.p.p.-inferred
+  seṭ are **no longer emitted** (derivation code retained only for the reconciliation audit). New
+  fields `tip`, `tip_source`, `set_code`, `pada`; **dropped** `ryad_confidence`, `ryad_note`,
+  `set_confidence`. 730 roots carry the author's Ряд, 200 are `null` (not in his catalog); 721 carry
+  a manual seṭ. Тип is now populated (previously always `null`).
+- Приложение 1 render (`talmud-appendix-1.mdx`, `tools/render_appendix1.py`): columns `Ряд*`/`seṭ*` →
+  `Ряд`/`Тип`/`seṭ` (no `*`); provenance note rewritten to cite the manual; the «Структура словарной
+  статьи» legend corrected — Тип is `I`–`IV` (Table 5), the `s`/`a`/`v` codes are the seṭ-parameter
+  (Table 8), which the prior draft had conflated.
+- Widget feed (`data/widget_roots.json`, `tools/build_widget_data.py`): Ряд/seṭ relabelled as the
+  author's manual values; `ryad_confidence`/`set_confidence` projections dropped, `tip`/`set_code`
+  added; ablaut examples now restricted to roots the author gives a series for.
 - `footnote-proposals/proposals.yml`: FN-0001/0002 (derived Ряд/seṭ methodology notes) → `status: rejected`
   per the author's issue-#50 ruling ("примечание не нужно").
 

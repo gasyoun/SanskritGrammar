@@ -5,8 +5,9 @@ from data/whitney_talmud.json.
 
 The full 930-root catalog lives in the JSON; the MDX page shows the
 teaching-relevant **first cohort** (DCS-rank ≤ 50) as a static, auto-generated
-table. Every Ряд/seṭ cell is a DERIVED proposal (see the page's methodological
-note) — not asserted as the author's own.
+table. Every Ряд/seṭ cell is the author's own value from Приложение 1 of the
+manual (H329 Phase 3 — issue #50 ruling); a `—` means the author does not
+catalog that root, so no series is asserted for it.
 
 Writes the fenced markdown table between the AUTOGEN markers in
 talmud-appendix-1.mdx. Idempotent.
@@ -58,15 +59,15 @@ def main():
     first.sort(key=lambda r: (r["dcs_rank"] if r["dcs_rank"] else 10**9, r["root_iast"]))
 
     lines = []
-    lines.append("| DCS-ранг | № Уитни | √ | Ряд* | seṭ* | Класс | p.p.p. | Значение | /z/ |")
-    lines.append("| ---: | ---: | :--- | :---: | :---: | :--- | :--- | :--- | :---: |")
+    lines.append("| DCS-ранг | № Уитни | √ | Ряд | Тип | seṭ | Класс | p.p.p. | Значение | /z/ |")
+    lines.append("| ---: | ---: | :--- | :---: | :---: | :---: | :--- | :--- | :--- | :---: |")
     for r in first:
         cls = "/".join(r["class"]) if r["class"] else "—"
         zurl = z_urls.get(r["whitney_no"])
         zcell = f"[↗]({zurl})" if zurl else "—"
         lines.append(
             f"| {cell(r['dcs_rank'])} | {cell(r['whitney_no'])} | "
-            f"`{r['root_iast']}` | {cell(r['ryad'])} | {cell(r['set'])} | "
+            f"`{r['root_iast']}` | {cell(r['ryad'])} | {cell(r.get('tip'))} | {cell(r['set'])} | "
             f"{cls} | {cell(r['ppp'])} | {cell(r['gloss'])} | {zcell} |"
         )
     table = "\n".join(lines)
@@ -74,9 +75,12 @@ def main():
     counts = d["_meta"]["counts"]
     intro = (
         f"Ниже — **первая когорта** ({len(first)} наиболее частотных по DCS корней, ранг ≤ 50), "
-        f"с которой начинается самостоятельное изучение. Полный каталог всех "
+        f"с которой начинается самостоятельное изучение. Ряд, Тип и seṭ приведены "
+        f"**по каталогу Приложения 1** из руководства (авторские значения). Полный каталог всех "
         f"{counts['verbal_roots']} глагольных корней Уитни — в машиночитаемом виде в "
-        f"[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json). "
+        f"[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json), "
+        f"а авторский каталог целиком — в "
+        f"[`data/talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json). "
         f"Ссылка **↗** в столбце «/z/» ведёт на полную сгенерированную парадигму корня в "
         f"базе [samskrtam.ru/z/](https://samskrtam.ru/z/) (Толчельников/Широбоков)."
     )

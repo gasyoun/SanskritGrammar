@@ -1,0 +1,11356 @@
+{
+ "_meta": {
+  "what": "The author's own Приложение 1 verb-root catalog, parsed verbatim from the authoritative manual Talmud-2.1.6.mdx. SOURCE OF TRUTH for Ряд/Тип/seṭ per Tolchelnikov's ruling on issue #50.",
+  "source": "Talmud-2.1.6.mdx, Приложение 1 (I.E. Tolchelnikov)",
+  "manual_version": "2.1.6",
+  "generator": "tools/parse_appendix1.py",
+  "columns": {
+   "tip": "Table 5 — type of alternation I/II/III/IV",
+   "ryad": "Table 4 — ablaut series A₁…N₂ (bare where un-indexed, ruling #3)",
+   "set": "Table 8 — seṭ/aniṭ/veṭ; set_code keeps s/a/v1..v4",
+   "whitney_ref": "Список Уитни — Whitney nomenclature (join key); NA if absent"
+  },
+  "counts": {
+   "roots": 745,
+   "absent_from_whitney": 5,
+   "set": {
+    "null": 9,
+    "veṭ": 201,
+    "seṭ": 365,
+    "aniṭ": 170
+   },
+   "ryad": {
+    "A₁": 144,
+    "N": 34,
+    "A₂": 74,
+    "R": 21,
+    "I₁": 90,
+    "I₂": 39,
+    "U₁": 115,
+    "U₂": 29,
+    "R₁": 72,
+    "I": 25,
+    "U": 5,
+    "M₂": 12,
+    "N₁": 41,
+    "L": 21,
+    "R₂": 9,
+    "N₂": 6,
+    "M₁": 4,
+    "M": 4
+   }
+  }
+ },
+ "roots": [
+  {
+   "id": "ØS",
+   "root": "øs",
+   "homonym": null,
+   "whitney_ref": "1 as",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "as"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": null,
+   "set": null,
+   "pada": "P"
+  },
+  {
+   "id": "AKṢ.1",
+   "root": "akṣ",
+   "homonym": "1",
+   "whitney_ref": "1 akṣ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "akṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AKṢ.2",
+   "root": "akṣ",
+   "homonym": "2",
+   "whitney_ref": "2 akṣ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "akṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "AJ",
+   "root": "aj",
+   "homonym": null,
+   "whitney_ref": "aj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "aj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AṬ",
+   "root": "aṭ",
+   "homonym": null,
+   "whitney_ref": "aṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "aṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AT",
+   "root": "at",
+   "homonym": null,
+   "whitney_ref": "at",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "at"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AD",
+   "root": "ad",
+   "homonym": null,
+   "whitney_ref": "ad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AN",
+   "root": "an",
+   "homonym": null,
+   "whitney_ref": "an",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "an"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ANṬH",
+   "root": "anṭh",
+   "homonym": null,
+   "whitney_ref": "aṇṭh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "aṇṭh"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AŚ.1",
+   "root": "aś",
+   "homonym": "1",
+   "whitney_ref": "1 aś, aṃś",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "aś",
+    "aṃś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AŚ.2",
+   "root": "aś",
+   "homonym": "2",
+   "whitney_ref": "2 aś",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "aś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AS",
+   "root": "as",
+   "homonym": "1",
+   "whitney_ref": "2 as",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "as"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "AH",
+   "root": "ah",
+   "homonym": null,
+   "whitney_ref": "ah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": null,
+   "set": null,
+   "pada": "P"
+  },
+  {
+   "id": "ĀNCH",
+   "root": "ānch",
+   "homonym": null,
+   "whitney_ref": "āñch",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "āñch"
+   ],
+   "tip": "IV",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ĀP",
+   "root": "āp",
+   "homonym": null,
+   "whitney_ref": "āp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "āp"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĀR",
+   "root": "ār",
+   "homonym": null,
+   "whitney_ref": "ār",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ār"
+   ],
+   "tip": "IV",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ĀS",
+   "root": "ās",
+   "homonym": null,
+   "whitney_ref": "ās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "I",
+   "root": "i",
+   "homonym": null,
+   "whitney_ref": "1 i, ī, ay",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "i",
+    "ī",
+    "ay"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IØJ",
+   "root": "iøj",
+   "homonym": null,
+   "whitney_ref": "yaj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yaj"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IṄG",
+   "root": "iṅg",
+   "homonym": null,
+   "whitney_ref": "iṅg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "iṅg"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IDH",
+   "root": "idh",
+   "homonym": null,
+   "whitney_ref": "idh, indh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "idh",
+    "indh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IN",
+   "root": "in",
+   "homonym": null,
+   "whitney_ref": "2 i, inv, in",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "i",
+    "inv",
+    "in"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IRADH",
+   "root": "iradh",
+   "homonym": null,
+   "whitney_ref": "iradh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "iradh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "IRAJY",
+   "root": "irajy",
+   "homonym": null,
+   "whitney_ref": "irajy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "irajy"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": null,
+   "set": null,
+   "pada": "U"
+  },
+  {
+   "id": "IL",
+   "root": "il",
+   "homonym": null,
+   "whitney_ref": "il",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "il"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "IṢ.1",
+   "root": "iṣ",
+   "homonym": "1",
+   "whitney_ref": "is, ich",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "is",
+    "ich"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "IṢ.2",
+   "root": "iṣ",
+   "homonym": "2",
+   "whitney_ref": "2 iṣ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "iṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪKṢ",
+   "root": "īkṣ",
+   "homonym": null,
+   "whitney_ref": "īkṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īkṣ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪṄKH",
+   "root": "īṅkh",
+   "homonym": null,
+   "whitney_ref": "īṅkh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īṅkh"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪḌ",
+   "root": "īḍ",
+   "homonym": null,
+   "whitney_ref": "īḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "ĪR",
+   "root": "īr",
+   "homonym": "1",
+   "whitney_ref": "īr",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īr"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪRṢY",
+   "root": "īrṣy",
+   "homonym": null,
+   "whitney_ref": "īrṣy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īrṣy"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ĪŚ",
+   "root": "īś",
+   "homonym": null,
+   "whitney_ref": "īś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īś"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪṢ",
+   "root": "īṣ",
+   "homonym": null,
+   "whitney_ref": "īṣ, eṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īṣ",
+    "eṣ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ĪH",
+   "root": "īh",
+   "homonym": null,
+   "whitney_ref": "īh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "īh"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "U",
+   "root": "u",
+   "homonym": null,
+   "whitney_ref": "u",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "u"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØKṢ",
+   "root": "uøkṣ",
+   "homonym": null,
+   "whitney_ref": "vakṣ, ukṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vakṣ",
+    "ukṣ"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØC",
+   "root": "uøc",
+   "homonym": null,
+   "whitney_ref": "vac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vac"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØJ",
+   "root": "uøj",
+   "homonym": null,
+   "whitney_ref": "vaj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vaj"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UØD",
+   "root": "uød",
+   "homonym": null,
+   "whitney_ref": "vad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vad"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØP.1",
+   "root": "uøp",
+   "homonym": "1",
+   "whitney_ref": "1 vap",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vap"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØP.2",
+   "root": "uøp",
+   "homonym": "2",
+   "whitney_ref": "2 vap",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "vap"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØŚ",
+   "root": "uøś",
+   "homonym": null,
+   "whitney_ref": "vaś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vaś"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØS.1",
+   "root": "uøs",
+   "homonym": "1",
+   "whitney_ref": "1 vas, uṣ, uch",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vas",
+    "uṣ",
+    "uch"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UØS.2",
+   "root": "uøs",
+   "homonym": "2",
+   "whitney_ref": "3 vas",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "vas"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØH",
+   "root": "uøh",
+   "homonym": null,
+   "whitney_ref": "vah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vah"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UØ̄",
+   "root": "uø̄",
+   "homonym": null,
+   "whitney_ref": "2 vā, vi, u",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "vā",
+    "vi",
+    "u"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UKṢ",
+   "root": "ukṣ",
+   "homonym": null,
+   "whitney_ref": "ukṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ukṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UC",
+   "root": "uc",
+   "homonym": "1",
+   "whitney_ref": "uc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "uc"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UJH",
+   "root": "ujh",
+   "homonym": null,
+   "whitney_ref": "ujh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ujh"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UÑCH",
+   "root": "uñch",
+   "homonym": null,
+   "whitney_ref": "uñch",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "uñch"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UD",
+   "root": "ud",
+   "homonym": null,
+   "whitney_ref": "ud, und",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ud",
+    "und"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UBJ",
+   "root": "ubj",
+   "homonym": null,
+   "whitney_ref": "ubj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ubj"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "UMBH",
+   "root": "umbh",
+   "homonym": null,
+   "whitney_ref": "ubh, umbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ubh",
+    "umbh"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "UṢ",
+   "root": "uṣ",
+   "homonym": null,
+   "whitney_ref": "2 uṣ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "uṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŪH.1",
+   "root": "ūh",
+   "homonym": "1",
+   "whitney_ref": "1 ūh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "ūh"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŪH.2",
+   "root": "ūh",
+   "homonym": "2",
+   "whitney_ref": "2 ūh",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "ūh"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "Ṛ",
+   "root": "ṛ",
+   "homonym": null,
+   "whitney_ref": "ṛ, ṛch",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛ",
+    "ṛch"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚC",
+   "root": "ṛc",
+   "homonym": null,
+   "whitney_ref": "arc, ṛc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "arc",
+    "ṛc"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚJ",
+   "root": "ṛj",
+   "homonym": null,
+   "whitney_ref": "ṛj, ṛñj, arj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛj",
+    "ṛñj",
+    "arj"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚT",
+   "root": "ṛt",
+   "homonym": null,
+   "whitney_ref": "ṛt",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "ṚD",
+   "root": "ṛd",
+   "homonym": null,
+   "whitney_ref": "ṛd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛd"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚDH",
+   "root": "ṛdh",
+   "homonym": null,
+   "whitney_ref": "ṛdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚṢ",
+   "root": "ṛṣ",
+   "homonym": null,
+   "whitney_ref": "ṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṚH",
+   "root": "ṛh",
+   "homonym": null,
+   "whitney_ref": "arh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "arh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "EJ",
+   "root": "ej",
+   "homonym": null,
+   "whitney_ref": "ej, īj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ej",
+    "īj"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "EDH",
+   "root": "edh",
+   "homonym": null,
+   "whitney_ref": "edh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "edh"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "O",
+   "root": "o",
+   "homonym": null,
+   "whitney_ref": "av",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "av"
+   ],
+   "tip": "II",
+   "ryad": "U",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "M̥̄",
+   "root": "m̥̄",
+   "homonym": null,
+   "whitney_ref": "am",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "am"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "N̥G",
+   "root": "n̥g",
+   "homonym": null,
+   "whitney_ref": "aṅg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "aṅg"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "N̥C",
+   "root": "n̥c",
+   "homonym": null,
+   "whitney_ref": "ac, añc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ac",
+    "añc"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "N̥J",
+   "root": "n̥j",
+   "homonym": null,
+   "whitney_ref": "añj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "añj"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KAC",
+   "root": "kac",
+   "homonym": null,
+   "whitney_ref": "NA",
+   "whitney_num": null,
+   "whitney_spellings": [],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "KATTH",
+   "root": "katth",
+   "homonym": null,
+   "whitney_ref": "katth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "katth"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KANP",
+   "root": "kanp",
+   "homonym": null,
+   "whitney_ref": "kamp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kamp"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KAL",
+   "root": "kal",
+   "homonym": null,
+   "whitney_ref": "kal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KAṢ",
+   "root": "kaṣ",
+   "homonym": null,
+   "whitney_ref": "kaṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kaṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KAS",
+   "root": "kas",
+   "homonym": null,
+   "whitney_ref": "kas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KĀNKṢ",
+   "root": "kānkṣ",
+   "homonym": null,
+   "whitney_ref": "kāṅkṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kāṅkṣ"
+   ],
+   "tip": "IV",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KĀŚ",
+   "root": "kāś",
+   "homonym": null,
+   "whitney_ref": "kāś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kāś"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KĀS",
+   "root": "kās",
+   "homonym": null,
+   "whitney_ref": "kās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KUC",
+   "root": "kuc",
+   "homonym": null,
+   "whitney_ref": "kuc, kuñc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kuc",
+    "kuñc"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KUTH",
+   "root": "kuth",
+   "homonym": null,
+   "whitney_ref": "kuth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kuth"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KUP",
+   "root": "kup",
+   "homonym": null,
+   "whitney_ref": "kup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KUṢ",
+   "root": "kuṣ",
+   "homonym": null,
+   "whitney_ref": "kuṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kuṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KŪ",
+   "root": "kū",
+   "homonym": null,
+   "whitney_ref": "kū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KŪJ",
+   "root": "kūj",
+   "homonym": null,
+   "whitney_ref": "kūj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kūj"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KŪḌ",
+   "root": "kūḍ",
+   "homonym": null,
+   "whitney_ref": "kūḍ, kūl",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kūḍ",
+    "kūl"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KŪṆ",
+   "root": "kūṇ",
+   "homonym": null,
+   "whitney_ref": "kūṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kūṇ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KŪRD",
+   "root": "kūrd",
+   "homonym": null,
+   "whitney_ref": "kūrd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kūrd"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṚ",
+   "root": "kṛ",
+   "homonym": null,
+   "whitney_ref": "1 kṛ (skṛ)",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "kṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṚT.1",
+   "root": "kṛt",
+   "homonym": "1",
+   "whitney_ref": "1 kṛt",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "kṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṚT.2",
+   "root": "kṛt",
+   "homonym": "2",
+   "whitney_ref": "2 kṛt",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "kṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṚP",
+   "root": "kṛp",
+   "homonym": null,
+   "whitney_ref": "kṛp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṛp"
+   ],
+   "tip": "III",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṚŚ",
+   "root": "kṛś",
+   "homonym": null,
+   "whitney_ref": "kṛś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṛś"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṚṢ",
+   "root": "kṛṣ",
+   "homonym": null,
+   "whitney_ref": "kṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṜ.1",
+   "root": "kṝ",
+   "homonym": "1",
+   "whitney_ref": "2 kṛ, kir",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "kṛ",
+    "kir"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṜ.2",
+   "root": "kṝ",
+   "homonym": "2",
+   "whitney_ref": "3 kṛ",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "kṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KḶP",
+   "root": "kḷp",
+   "homonym": null,
+   "whitney_ref": "kḷp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kḷp"
+   ],
+   "tip": "I",
+   "ryad": "L",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KM̥̄",
+   "root": "km̥̄",
+   "homonym": null,
+   "whitney_ref": "kam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KN̥̄",
+   "root": "kn̥̄",
+   "homonym": null,
+   "whitney_ref": "kan, kā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kan",
+    "kā"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KNŪ",
+   "root": "knū",
+   "homonym": null,
+   "whitney_ref": "knū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "knū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KRAKṢ",
+   "root": "krakṣ",
+   "homonym": null,
+   "whitney_ref": "krakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "KRATH",
+   "root": "krath",
+   "homonym": null,
+   "whitney_ref": "krath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KRN̥D",
+   "root": "krn̥d",
+   "homonym": null,
+   "whitney_ref": "krand, kland",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krand",
+    "kland"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KRĪ",
+   "root": "krī",
+   "homonym": null,
+   "whitney_ref": "krī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KRĪḌ",
+   "root": "krīḍ",
+   "homonym": null,
+   "whitney_ref": "krīḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krīḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KRUDH",
+   "root": "krudh",
+   "homonym": null,
+   "whitney_ref": "krudh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "krudh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KRUŚ",
+   "root": "kruś",
+   "homonym": null,
+   "whitney_ref": "kruś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kruś"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṚM̥̄",
+   "root": "krm̥̄",
+   "homonym": null,
+   "whitney_ref": "kram",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kram"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KLATH",
+   "root": "klath",
+   "homonym": null,
+   "whitney_ref": "klath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "klath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KLID",
+   "root": "klid",
+   "homonym": null,
+   "whitney_ref": "klid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "klid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KLIŚ",
+   "root": "kliś",
+   "homonym": null,
+   "whitney_ref": "kliś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kliś"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KLM̥̄",
+   "root": "klm̥̄",
+   "homonym": null,
+   "whitney_ref": "klam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "klam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KVAṆ",
+   "root": "kvaṇ",
+   "homonym": null,
+   "whitney_ref": "kvaṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kvaṇ"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KVATH",
+   "root": "kvath",
+   "homonym": null,
+   "whitney_ref": "kvath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kvath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢAD",
+   "root": "kṣad",
+   "homonym": null,
+   "whitney_ref": "kṣad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "KṢAP",
+   "root": "kṣap",
+   "homonym": null,
+   "whitney_ref": "kṣap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢAR",
+   "root": "kṣar",
+   "homonym": null,
+   "whitney_ref": "kṣar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢĀ",
+   "root": "kṣā",
+   "homonym": null,
+   "whitney_ref": "kṣā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢI.1",
+   "root": "kṣi",
+   "homonym": "1",
+   "whitney_ref": "1 kṣi",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "kṣi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢI.2",
+   "root": "kṣi",
+   "homonym": "2",
+   "whitney_ref": "2 kṣi",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "kṣi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢIP",
+   "root": "kṣip",
+   "homonym": null,
+   "whitney_ref": "kṣip",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣip"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢU",
+   "root": "kṣu",
+   "homonym": null,
+   "whitney_ref": "kṣu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢUD",
+   "root": "kṣud",
+   "homonym": null,
+   "whitney_ref": "kṣud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢUDH",
+   "root": "kṣudh",
+   "homonym": null,
+   "whitney_ref": "kṣudh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣudh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢUP",
+   "root": "kṣup",
+   "homonym": null,
+   "whitney_ref": "kṣup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢUBH",
+   "root": "kṣubh",
+   "homonym": null,
+   "whitney_ref": "kṣubh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣubh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢM̥̄",
+   "root": "kṣm̥̄",
+   "homonym": null,
+   "whitney_ref": "kṣam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢN̥",
+   "root": "kṣn̥",
+   "homonym": null,
+   "whitney_ref": "kṣan",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣan"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢṆU",
+   "root": "kṣṇu",
+   "homonym": null,
+   "whitney_ref": "kṣṇu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣṇu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢMAI",
+   "root": "kṣmai",
+   "homonym": null,
+   "whitney_ref": "kṣmā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣmā"
+   ],
+   "tip": "IV",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KṢVIḌ",
+   "root": "kṣviḍ",
+   "homonym": null,
+   "whitney_ref": "kṣviḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣviḍ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KṢVEL",
+   "root": "kṣvel",
+   "homonym": null,
+   "whitney_ref": "kṣvel",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kṣvel"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHAC",
+   "root": "khac",
+   "homonym": null,
+   "whitney_ref": "khac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khac"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHAD",
+   "root": "khad",
+   "homonym": null,
+   "whitney_ref": "khad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHANJ",
+   "root": "khanj",
+   "homonym": null,
+   "whitney_ref": "khanj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khanj"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHARJ",
+   "root": "kharj",
+   "homonym": null,
+   "whitney_ref": "kharj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "kharj"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHALL",
+   "root": "khall",
+   "homonym": null,
+   "whitney_ref": "khall",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khall"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "KHĀD",
+   "root": "khād",
+   "homonym": null,
+   "whitney_ref": "khād",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khād"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KHID",
+   "root": "khid",
+   "homonym": null,
+   "whitney_ref": "khid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KHUD",
+   "root": "khud",
+   "homonym": null,
+   "whitney_ref": "khud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHEL",
+   "root": "khel",
+   "homonym": null,
+   "whitney_ref": "khel",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khel"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "KHN̥̄",
+   "root": "khn̥̄",
+   "homonym": null,
+   "whitney_ref": "khan, khā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khan",
+    "khā"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "KHYĀ",
+   "root": "khyā",
+   "homonym": null,
+   "whitney_ref": "khyā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "khyā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GØ̄.1",
+   "root": "gø̄",
+   "homonym": "1",
+   "whitney_ref": "1 gā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "gā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GØ̄.2",
+   "root": "gø̄",
+   "homonym": "2",
+   "whitney_ref": "2 gā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "gā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GAD",
+   "root": "gad",
+   "homonym": null,
+   "whitney_ref": "gad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GADH",
+   "root": "gadh",
+   "homonym": null,
+   "whitney_ref": "gadh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gadh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GARJ",
+   "root": "garj",
+   "homonym": null,
+   "whitney_ref": "garj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "garj"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GARH",
+   "root": "garh",
+   "homonym": null,
+   "whitney_ref": "garh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "garh"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GAL",
+   "root": "gal",
+   "homonym": null,
+   "whitney_ref": "gal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GALBH",
+   "root": "galbh",
+   "homonym": null,
+   "whitney_ref": "galbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "galbh"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "GĀH",
+   "root": "gāh",
+   "homonym": null,
+   "whitney_ref": "gāh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gāh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GU",
+   "root": "gu",
+   "homonym": null,
+   "whitney_ref": "gu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "GUÑJ",
+   "root": "guñj",
+   "homonym": null,
+   "whitney_ref": "guñj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "guñj"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GUP",
+   "root": "gup",
+   "homonym": null,
+   "whitney_ref": "gup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GUMPH",
+   "root": "gumph",
+   "homonym": null,
+   "whitney_ref": "gumph",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gumph"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GUR",
+   "root": "gur",
+   "homonym": null,
+   "whitney_ref": "gur",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gur"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GUH",
+   "root": "guh",
+   "homonym": null,
+   "whitney_ref": "guh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "guh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GṚDH",
+   "root": "gṛdh",
+   "homonym": null,
+   "whitney_ref": "gṛdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gṛdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GṚØH",
+   "root": "gṛøh",
+   "homonym": null,
+   "whitney_ref": "grabh, grah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "grabh",
+    "grah"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GṜ.1",
+   "root": "gṝ",
+   "homonym": "1",
+   "whitney_ref": "1 gṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "gṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GṜ.2",
+   "root": "gṝ",
+   "homonym": "2",
+   "whitney_ref": "2 gṛ, gir, gil",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "gṛ",
+    "gir",
+    "gil"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GM̥",
+   "root": "gm̥",
+   "homonym": null,
+   "whitney_ref": "gam, gach",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gam",
+    "gach"
+   ],
+   "tip": "I",
+   "ryad": "M₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GRAS",
+   "root": "gras",
+   "homonym": null,
+   "whitney_ref": "gras",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "gras"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GRN̥TH",
+   "root": "grn̥th",
+   "homonym": null,
+   "whitney_ref": "grath, granth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "grath",
+    "granth"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GLAH",
+   "root": "glah",
+   "homonym": null,
+   "whitney_ref": "glah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "glah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GLĀ",
+   "root": "glā",
+   "homonym": null,
+   "whitney_ref": "glā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "glā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHAṬ",
+   "root": "ghaṭ",
+   "homonym": null,
+   "whitney_ref": "ghaṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghaṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHAṬṬ",
+   "root": "ghaṭṭ",
+   "homonym": null,
+   "whitney_ref": "ghaṭṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghaṭṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHAS",
+   "root": "ghas",
+   "homonym": null,
+   "whitney_ref": "ghas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GHUṬ",
+   "root": "ghuṭ",
+   "homonym": null,
+   "whitney_ref": "ghuṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghuṭ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHUR",
+   "root": "ghur",
+   "homonym": null,
+   "whitney_ref": "NA",
+   "whitney_num": null,
+   "whitney_spellings": [],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHUṢ",
+   "root": "ghuṣ",
+   "homonym": null,
+   "whitney_ref": "ghuṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghuṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHŪRṆ",
+   "root": "ghūrṇ",
+   "homonym": null,
+   "whitney_ref": "ghūrṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghūrṇ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHṚ",
+   "root": "ghṛ",
+   "homonym": null,
+   "whitney_ref": "ghṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "GHṚṢ",
+   "root": "ghṛṣ",
+   "homonym": null,
+   "whitney_ref": "ghṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "GHRĀ",
+   "root": "ghrā",
+   "homonym": null,
+   "whitney_ref": "ghrā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ghrā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CAK",
+   "root": "cak",
+   "homonym": null,
+   "whitney_ref": "cak",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cak"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CAKṢ",
+   "root": "cakṣ",
+   "homonym": null,
+   "whitney_ref": "cakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CAṬ",
+   "root": "caṭ",
+   "homonym": null,
+   "whitney_ref": "caṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "caṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CAT",
+   "root": "cat",
+   "homonym": null,
+   "whitney_ref": "cat",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cat"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CN̥̄",
+   "root": "cn̥̄",
+   "homonym": null,
+   "whitney_ref": "can",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "can"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CANC",
+   "root": "canc",
+   "homonym": null,
+   "whitney_ref": "cañc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cañc"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CAR",
+   "root": "car",
+   "homonym": null,
+   "whitney_ref": "car",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "car"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CARC",
+   "root": "carc",
+   "homonym": null,
+   "whitney_ref": "carc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "carc"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CARV",
+   "root": "carv",
+   "homonym": null,
+   "whitney_ref": "carv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "carv"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CAL",
+   "root": "cal",
+   "homonym": null,
+   "whitney_ref": "cal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CI.1",
+   "root": "ci",
+   "homonym": "1",
+   "whitney_ref": "1 ci",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "ci"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CI.2",
+   "root": "ci",
+   "homonym": "2",
+   "whitney_ref": "2 ci",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "ci"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CIT",
+   "root": "cit",
+   "homonym": null,
+   "whitney_ref": "cit",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cit"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CUD",
+   "root": "cud",
+   "homonym": null,
+   "whitney_ref": "cud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CUP",
+   "root": "cup",
+   "homonym": null,
+   "whitney_ref": "cup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CUMB",
+   "root": "cumb",
+   "homonym": null,
+   "whitney_ref": "cumb",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cumb"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CŪṢ",
+   "root": "cūṣ",
+   "homonym": null,
+   "whitney_ref": "cūṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cūṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CṚT",
+   "root": "cṛt",
+   "homonym": null,
+   "whitney_ref": "cṛt",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CEṢṬ",
+   "root": "ceṣṭ",
+   "homonym": null,
+   "whitney_ref": "ceṣṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ceṣṭ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CAI",
+   "root": "cai",
+   "homonym": null,
+   "whitney_ref": "cāy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cāy"
+   ],
+   "tip": "IV",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CM̥̄",
+   "root": "cm̥̄",
+   "homonym": null,
+   "whitney_ref": "cam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CN̥D",
+   "root": "cn̥d",
+   "homonym": null,
+   "whitney_ref": "ścand, cand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ścand",
+    "cand"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CYU",
+   "root": "cyu",
+   "homonym": null,
+   "whitney_ref": "cyu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cyu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CYUT",
+   "root": "cyut",
+   "homonym": null,
+   "whitney_ref": "cyut",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "cyut"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CHØ̄",
+   "root": "chø̄",
+   "homonym": null,
+   "whitney_ref": "chā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CHAD",
+   "root": "chad",
+   "homonym": null,
+   "whitney_ref": "chad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CHID",
+   "root": "chid",
+   "homonym": null,
+   "whitney_ref": "chid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CHUḌ",
+   "root": "chuḍ",
+   "homonym": null,
+   "whitney_ref": "chuṭ, chuḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chuṭ",
+    "chuḍ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CHUR",
+   "root": "chur",
+   "homonym": null,
+   "whitney_ref": "chur",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chur"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "CHṚD",
+   "root": "chṛd",
+   "homonym": null,
+   "whitney_ref": "chṛd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chṛd"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "CHN̥D",
+   "root": "chn̥d",
+   "homonym": null,
+   "whitney_ref": "chand, chad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "chand",
+    "chad"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JAKṢ",
+   "root": "jakṣ",
+   "homonym": "1",
+   "whitney_ref": "1 jakṣ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "jakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JAGH",
+   "root": "jagh",
+   "homonym": null,
+   "whitney_ref": "jagh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jagh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JAP",
+   "root": "jap",
+   "homonym": null,
+   "whitney_ref": "jap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JAL",
+   "root": "jal",
+   "homonym": null,
+   "whitney_ref": "NA",
+   "whitney_num": null,
+   "whitney_spellings": [],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JALP",
+   "root": "jalp",
+   "homonym": null,
+   "whitney_ref": "jalp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jalp"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JAS",
+   "root": "jas",
+   "homonym": null,
+   "whitney_ref": "jas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JĀGṚ",
+   "root": "jāgṛ",
+   "homonym": null,
+   "whitney_ref": "3 gṛ, jāgṛ",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "gṛ",
+    "jāgṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JI",
+   "root": "ji",
+   "homonym": "1",
+   "whitney_ref": "1 ji",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "ji"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JINV",
+   "root": "jinv",
+   "homonym": null,
+   "whitney_ref": "2 ji, jinv",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "ji",
+    "jinv"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JĪØ̄",
+   "root": "jīø̄",
+   "homonym": null,
+   "whitney_ref": "jyā, jī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jyā",
+    "jī"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JĪV",
+   "root": "jīv",
+   "homonym": null,
+   "whitney_ref": "jīv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jīv"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JUṢ",
+   "root": "juṣ",
+   "homonym": null,
+   "whitney_ref": "juṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "juṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JŪ",
+   "root": "jū",
+   "homonym": null,
+   "whitney_ref": "jū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JṚ",
+   "root": "jṛ",
+   "homonym": null,
+   "whitney_ref": "2 jṛ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "jṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "JṚṂBH",
+   "root": "jṛmbh",
+   "homonym": null,
+   "whitney_ref": "jṛmbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jṛmbh"
+   ],
+   "tip": "III",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JṜ",
+   "root": "jṝ",
+   "homonym": null,
+   "whitney_ref": "1 jṛ, jur",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "jṛ",
+    "jur"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JEH",
+   "root": "jeh",
+   "homonym": null,
+   "whitney_ref": "jeh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jeh"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JN̥BH",
+   "root": "jn̥bh",
+   "homonym": null,
+   "whitney_ref": "jambh, jabh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jambh",
+    "jabh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JN̥̄",
+   "root": "jn̥̄",
+   "homonym": null,
+   "whitney_ref": "jan, jā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jan",
+    "jā"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JÑĀ",
+   "root": "jñā",
+   "homonym": null,
+   "whitney_ref": "jñā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jñā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JYUT",
+   "root": "jyut",
+   "homonym": null,
+   "whitney_ref": "jyut",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jyut"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JRI",
+   "root": "jri",
+   "homonym": null,
+   "whitney_ref": "jri",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jri"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JVAR",
+   "root": "jvar",
+   "homonym": null,
+   "whitney_ref": "jvar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jvar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "JVAL",
+   "root": "jval",
+   "homonym": null,
+   "whitney_ref": "jval",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jval"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "JHAR",
+   "root": "jhar",
+   "homonym": null,
+   "whitney_ref": "jhar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "jhar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ṬANK",
+   "root": "ṭank",
+   "homonym": null,
+   "whitney_ref": "ṭank",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṭank"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ṬAL",
+   "root": "ṭal",
+   "homonym": null,
+   "whitney_ref": "ṭal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṭal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ṬĪK",
+   "root": "ṭīk",
+   "homonym": null,
+   "whitney_ref": "ṭīk",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṭīk"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ḌANB",
+   "root": "ḍanb",
+   "homonym": null,
+   "whitney_ref": "ḍamb",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ḍamb"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ḌAM",
+   "root": "ḍam",
+   "homonym": null,
+   "whitney_ref": "ḍam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ḍam"
+   ],
+   "tip": "II",
+   "ryad": "M",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ḌĪ",
+   "root": "ḍī",
+   "homonym": null,
+   "whitney_ref": "ḍī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ḍī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ḌHAUK",
+   "root": "ḍhauk",
+   "homonym": null,
+   "whitney_ref": "ḍhauk",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ḍhauk"
+   ],
+   "tip": "IV",
+   "ryad": "U",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TAK",
+   "root": "tak",
+   "homonym": null,
+   "whitney_ref": "tak",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tak"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TAKṢ",
+   "root": "takṣ",
+   "homonym": null,
+   "whitney_ref": "takṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "takṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TAḌ",
+   "root": "taḍ",
+   "homonym": null,
+   "whitney_ref": "taḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "taḍ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TAND",
+   "root": "tand",
+   "homonym": null,
+   "whitney_ref": "tand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tand"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "TAP",
+   "root": "tap",
+   "homonym": null,
+   "whitney_ref": "tap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TARJ",
+   "root": "tarj",
+   "homonym": null,
+   "whitney_ref": "tarj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tarj"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TIJ",
+   "root": "tij",
+   "homonym": null,
+   "whitney_ref": "tij",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tij"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TIM",
+   "root": "tim",
+   "homonym": null,
+   "whitney_ref": "tim",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tim"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TU",
+   "root": "tu",
+   "homonym": null,
+   "whitney_ref": "tu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TUJ",
+   "root": "tuj",
+   "homonym": null,
+   "whitney_ref": "tuj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tuj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TUD",
+   "root": "tud",
+   "homonym": null,
+   "whitney_ref": "tud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TUL",
+   "root": "tul",
+   "homonym": "1",
+   "whitney_ref": "tul",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tul"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TUŚ",
+   "root": "tuś",
+   "homonym": null,
+   "whitney_ref": "tuś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tuś"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "TUṢ",
+   "root": "tuṣ",
+   "homonym": null,
+   "whitney_ref": "tuṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tuṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TṚD",
+   "root": "tṛd",
+   "homonym": null,
+   "whitney_ref": "tṛd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tṛd"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TṚP",
+   "root": "tṛp",
+   "homonym": null,
+   "whitney_ref": "tṛp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tṛp"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TṚṢ",
+   "root": "tṛṣ",
+   "homonym": null,
+   "whitney_ref": "tṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TṚH",
+   "root": "tṛh",
+   "homonym": null,
+   "whitney_ref": "tṛh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tṛh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TṜ",
+   "root": "tṝ",
+   "homonym": null,
+   "whitney_ref": "tṛ, tir, tur",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tṛ",
+    "tir",
+    "tur"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TAI",
+   "root": "tai",
+   "homonym": null,
+   "whitney_ref": "tāy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tāy"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "TM̥̄",
+   "root": "tm̥̄",
+   "homonym": null,
+   "whitney_ref": "tam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TN̥",
+   "root": "tn̥",
+   "homonym": null,
+   "whitney_ref": "1 tan, tā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "tan",
+    "tā"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TN̥C",
+   "root": "tn̥c",
+   "homonym": null,
+   "whitney_ref": "tañc, tac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tañc",
+    "tac"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TN̥S",
+   "root": "tn̥s",
+   "homonym": null,
+   "whitney_ref": "taṃs, tas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "taṃs",
+    "tas"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TYAJ",
+   "root": "tyaj",
+   "homonym": null,
+   "whitney_ref": "tyaj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tyaj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TRAP",
+   "root": "trap",
+   "homonym": null,
+   "whitney_ref": "trap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "trap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TRAS",
+   "root": "tras",
+   "homonym": null,
+   "whitney_ref": "tras",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tras"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TRĀ",
+   "root": "trā",
+   "homonym": null,
+   "whitney_ref": "trā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "trā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TRUṬ",
+   "root": "truṭ",
+   "homonym": null,
+   "whitney_ref": "truṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "truṭ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TVAKṢ",
+   "root": "tvakṣ",
+   "homonym": null,
+   "whitney_ref": "tvakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tvakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TVANG",
+   "root": "tvang",
+   "homonym": null,
+   "whitney_ref": "tvaṅg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tvaṅg"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "TVIṢ",
+   "root": "tviṣ",
+   "homonym": null,
+   "whitney_ref": "tviṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tviṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "TSAR",
+   "root": "tsar",
+   "homonym": null,
+   "whitney_ref": "tsar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "tsar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DØ̄.1",
+   "root": "dø̄",
+   "homonym": "1",
+   "whitney_ref": "1 dā, dad",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "dā",
+    "dad"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DØ̄.2",
+   "root": "dø̄",
+   "homonym": "2",
+   "whitney_ref": "2 dā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DØ̄.3",
+   "root": "dø̄",
+   "homonym": "3",
+   "whitney_ref": "3 dā, di",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "dā",
+    "di"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DAKṢ",
+   "root": "dakṣ",
+   "homonym": null,
+   "whitney_ref": "dakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DAGH",
+   "root": "dagh",
+   "homonym": null,
+   "whitney_ref": "dagh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dagh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DAL",
+   "root": "dal",
+   "homonym": null,
+   "whitney_ref": "dal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DAS",
+   "root": "das",
+   "homonym": null,
+   "whitney_ref": "das, dās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "das",
+    "dās"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DAH",
+   "root": "dah",
+   "homonym": null,
+   "whitney_ref": "dah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DĀ",
+   "root": "dā",
+   "homonym": "1",
+   "whitney_ref": "4 dā",
+   "whitney_num": "4",
+   "whitney_spellings": [
+    "dā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DĀŚ",
+   "root": "dāś",
+   "homonym": null,
+   "whitney_ref": "dāś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dāś"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DIŚ",
+   "root": "diś",
+   "homonym": null,
+   "whitney_ref": "diś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "diś"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DIH",
+   "root": "dih",
+   "homonym": null,
+   "whitney_ref": "dih",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dih"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DĪ",
+   "root": "dī",
+   "homonym": "1",
+   "whitney_ref": "2 dī, dīdī",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dī",
+    "dīdī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": null,
+   "set": null,
+   "pada": "U"
+  },
+  {
+   "id": "DĪKṢ",
+   "root": "dīkṣ",
+   "homonym": null,
+   "whitney_ref": "dīkṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dīkṣ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DĪP",
+   "root": "dīp",
+   "homonym": null,
+   "whitney_ref": "dīp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dīp"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DĪV.1",
+   "root": "dīv",
+   "homonym": "1",
+   "whitney_ref": "1 dīv",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "dīv"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DĪV.2",
+   "root": "dīv",
+   "homonym": "2",
+   "whitney_ref": "2 dīv (dev)",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dīv"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DUDH",
+   "root": "dudh",
+   "homonym": null,
+   "whitney_ref": "dudh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dudh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "DUṢ",
+   "root": "duṣ",
+   "homonym": null,
+   "whitney_ref": "duṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "duṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DUH",
+   "root": "duh",
+   "homonym": null,
+   "whitney_ref": "duh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "duh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DŪ",
+   "root": "dū",
+   "homonym": null,
+   "whitney_ref": "du, dū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "du",
+    "dū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DṚ.1",
+   "root": "dṛ",
+   "homonym": "1",
+   "whitney_ref": "1 dṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "dṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DṚ.2",
+   "root": "dṛ",
+   "homonym": "2",
+   "whitney_ref": "2 dṛ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "DṚP",
+   "root": "dṛp",
+   "homonym": null,
+   "whitney_ref": "dṛp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dṛp"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DṚBH",
+   "root": "dṛbh",
+   "homonym": null,
+   "whitney_ref": "dṛbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dṛbh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DṚŚ",
+   "root": "dṛś",
+   "homonym": null,
+   "whitney_ref": "dṛś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dṛś"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DṚH",
+   "root": "dṛh",
+   "homonym": null,
+   "whitney_ref": "dṛh, dṛṃh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dṛh",
+    "dṛṃh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DE",
+   "root": "de",
+   "homonym": null,
+   "whitney_ref": "day",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "day"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DM̥̄",
+   "root": "dm̥̄",
+   "homonym": null,
+   "whitney_ref": "dam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DN̥BH",
+   "root": "dn̥bh",
+   "homonym": null,
+   "whitney_ref": "dabh, dambh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dabh",
+    "dambh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DN̥Ś",
+   "root": "dn̥ś",
+   "homonym": null,
+   "whitney_ref": "daṃś, daś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "daṃś",
+    "daś"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DYUT",
+   "root": "dyut",
+   "homonym": null,
+   "whitney_ref": "dyut",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dyut"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DRAM",
+   "root": "dram",
+   "homonym": null,
+   "whitney_ref": "dram",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dram"
+   ],
+   "tip": "II",
+   "ryad": "M",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DRĀ.1",
+   "root": "drā",
+   "homonym": "1",
+   "whitney_ref": "1 drā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "drā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DRĀ.2",
+   "root": "drā",
+   "homonym": "2",
+   "whitney_ref": "2 drā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "drā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DRU",
+   "root": "dru",
+   "homonym": null,
+   "whitney_ref": "dru",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DRUH",
+   "root": "druh",
+   "homonym": null,
+   "whitney_ref": "druh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "druh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DRŪ",
+   "root": "drū",
+   "homonym": null,
+   "whitney_ref": "drū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "drū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "DVIṢ",
+   "root": "dviṣ",
+   "homonym": null,
+   "whitney_ref": "dviṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dviṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHØ̄.1",
+   "root": "dhø̄",
+   "homonym": "1",
+   "whitney_ref": "1 dhā, dadh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "dhā",
+    "dadh"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHØ̄.2",
+   "root": "dhø̄",
+   "homonym": "2",
+   "whitney_ref": "2 dhā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dhā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHINV",
+   "root": "dhinv",
+   "homonym": null,
+   "whitney_ref": "dhi, dhinv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhi",
+    "dhinv"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DHĪ",
+   "root": "dhī",
+   "homonym": null,
+   "whitney_ref": "dhī, dīdhī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhī",
+    "dīdhī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHUKṢ",
+   "root": "dhukṣ",
+   "homonym": null,
+   "whitney_ref": "dhukṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhukṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHUṚ",
+   "root": "dhuṛ",
+   "homonym": null,
+   "whitney_ref": "dhvṛ, dhur, dhru",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhvṛ",
+    "dhur",
+    "dhru"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DHŪ",
+   "root": "dhū",
+   "homonym": null,
+   "whitney_ref": "dhū, dhu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhū",
+    "dhu"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHṚ",
+   "root": "dhṛ",
+   "homonym": null,
+   "whitney_ref": "dhṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHṚṢ",
+   "root": "dhṛṣ",
+   "homonym": null,
+   "whitney_ref": "dhṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHAU.1",
+   "root": "dhau",
+   "homonym": "1",
+   "whitney_ref": "1 dhāv",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "dhāv"
+   ],
+   "tip": "IV",
+   "ryad": "U",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHAU.2",
+   "root": "dhau",
+   "homonym": "2",
+   "whitney_ref": "2 dhāv",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "dhāv"
+   ],
+   "tip": "IV",
+   "ryad": "U",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHMĀ",
+   "root": "dhmā",
+   "homonym": null,
+   "whitney_ref": "dham, dhmā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dham",
+    "dhmā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHYĀ",
+   "root": "dhyā",
+   "homonym": null,
+   "whitney_ref": "dhyā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhyā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHRAJ",
+   "root": "dhraj",
+   "homonym": null,
+   "whitney_ref": "dhraj, dhrāj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhraj",
+    "dhrāj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "DHVAN",
+   "root": "dhvan",
+   "homonym": null,
+   "whitney_ref": "dhvan",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhvan"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "DHVN̥S",
+   "root": "dhvn̥s",
+   "homonym": null,
+   "whitney_ref": "dhvaṃs, dhvas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "dhvaṃs",
+    "dhvas"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NAD",
+   "root": "nad",
+   "homonym": null,
+   "whitney_ref": "nad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NAND",
+   "root": "nand",
+   "homonym": null,
+   "whitney_ref": "nand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nand"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NABH",
+   "root": "nabh",
+   "homonym": null,
+   "whitney_ref": "nabh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nabh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NARD",
+   "root": "nard",
+   "homonym": null,
+   "whitney_ref": "nard",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nard"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NAŚ",
+   "root": "naś",
+   "homonym": null,
+   "whitney_ref": "1 naś",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "naś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NAS",
+   "root": "nas",
+   "homonym": null,
+   "whitney_ref": "nas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "NAH",
+   "root": "nah",
+   "homonym": null,
+   "whitney_ref": "nah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NĀTH",
+   "root": "nāth",
+   "homonym": null,
+   "whitney_ref": "nāth, nādh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nāth",
+    "nādh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NIṂS",
+   "root": "niṃs",
+   "homonym": null,
+   "whitney_ref": "niṃs",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "niṃs"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "NIKṢ",
+   "root": "nikṣ",
+   "homonym": null,
+   "whitney_ref": "nikṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nikṣ"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "NIJ",
+   "root": "nij",
+   "homonym": null,
+   "whitney_ref": "nij",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nij"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NIND",
+   "root": "nind",
+   "homonym": null,
+   "whitney_ref": "nind, nid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nind",
+    "nid"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NĪ",
+   "root": "nī",
+   "homonym": null,
+   "whitney_ref": "nī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NU.1",
+   "root": "nu",
+   "homonym": "1",
+   "whitney_ref": "1 nu, nū",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "nu",
+    "nū"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NU.2",
+   "root": "nu",
+   "homonym": "2",
+   "whitney_ref": "2 nu",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "nu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NUD",
+   "root": "nud",
+   "homonym": null,
+   "whitney_ref": "nud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NṚT",
+   "root": "nṛt",
+   "homonym": null,
+   "whitney_ref": "nṛt",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NED",
+   "root": "ned",
+   "homonym": null,
+   "whitney_ref": "ned",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ned"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NM̥",
+   "root": "nm̥",
+   "homonym": null,
+   "whitney_ref": "nam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "nam"
+   ],
+   "tip": "I",
+   "ryad": "M₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "NN̥Ś",
+   "root": "nn̥ś",
+   "homonym": null,
+   "whitney_ref": "2 naś, naṃś",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "naś",
+    "naṃś"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PØ̄",
+   "root": "pø̄",
+   "homonym": null,
+   "whitney_ref": "1 pā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "pā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAC",
+   "root": "pac",
+   "homonym": null,
+   "whitney_ref": "pac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pac"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAJ",
+   "root": "paj",
+   "homonym": null,
+   "whitney_ref": "paj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "paj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": null,
+   "set": null,
+   "pada": "Ā"
+  },
+  {
+   "id": "PAṬ",
+   "root": "paṭ",
+   "homonym": null,
+   "whitney_ref": "paṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "paṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAṬH",
+   "root": "paṭh",
+   "homonym": null,
+   "whitney_ref": "paṭh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "paṭh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAṆ",
+   "root": "paṇ",
+   "homonym": null,
+   "whitney_ref": "paṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "paṇ"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAT",
+   "root": "pat",
+   "homonym": null,
+   "whitney_ref": "1 pat",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "pat"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PATH",
+   "root": "path",
+   "homonym": null,
+   "whitney_ref": "path",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "path"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PAD",
+   "root": "pad",
+   "homonym": null,
+   "whitney_ref": "pad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PARD",
+   "root": "pard",
+   "homonym": null,
+   "whitney_ref": "pard",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pard"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "PALAI",
+   "root": "palai",
+   "homonym": null,
+   "whitney_ref": "NA",
+   "whitney_num": null,
+   "whitney_spellings": [],
+   "tip": "IV",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PĀ",
+   "root": "pā",
+   "homonym": null,
+   "whitney_ref": "2 pā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "pā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PINV",
+   "root": "pinv",
+   "homonym": null,
+   "whitney_ref": "pinv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pinv"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PIBD",
+   "root": "pibd",
+   "homonym": null,
+   "whitney_ref": "pibd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pibd"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "PIŚ",
+   "root": "piś",
+   "homonym": null,
+   "whitney_ref": "piś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "piś"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PIṢ",
+   "root": "piṣ",
+   "homonym": null,
+   "whitney_ref": "piṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "piṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PIS",
+   "root": "pis",
+   "homonym": null,
+   "whitney_ref": "pis",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pis"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PĪḌ",
+   "root": "pīḍ",
+   "homonym": null,
+   "whitney_ref": "pīḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pīḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PĪY",
+   "root": "pīy",
+   "homonym": null,
+   "whitney_ref": "pīy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pīy"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PUṬ",
+   "root": "puṭ",
+   "homonym": null,
+   "whitney_ref": "puṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "puṭ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PUTH",
+   "root": "puth",
+   "homonym": null,
+   "whitney_ref": "puth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "puth"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PUṢ",
+   "root": "puṣ",
+   "homonym": null,
+   "whitney_ref": "puṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "puṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PŪ",
+   "root": "pū",
+   "homonym": null,
+   "whitney_ref": "pū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PŪJ",
+   "root": "pūj",
+   "homonym": null,
+   "whitney_ref": "pūj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pūj"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PŪY",
+   "root": "pūy",
+   "homonym": null,
+   "whitney_ref": "pūy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pūy"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PṚØCH",
+   "root": "pṛøch",
+   "homonym": null,
+   "whitney_ref": "prach",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "prach"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PṚ.1",
+   "root": "pṛ",
+   "homonym": "1",
+   "whitney_ref": "2 pṛ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "pṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PR.2",
+   "root": "pṛ",
+   "homonym": "2",
+   "whitney_ref": "3 pṛ",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "pṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PṚC",
+   "root": "pṛc",
+   "homonym": null,
+   "whitney_ref": "pṛc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pṛc"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PṜ",
+   "root": "pṝ",
+   "homonym": null,
+   "whitney_ref": "1 pṛ, pṛṇ, pūr",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "pṛ",
+    "pṛṇ",
+    "pūr"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PAI",
+   "root": "pai",
+   "homonym": null,
+   "whitney_ref": "pāy",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pāy"
+   ],
+   "tip": "IV",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "PN̥",
+   "root": "pn̥",
+   "homonym": null,
+   "whitney_ref": "pan",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pan"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PYĀ",
+   "root": "pyā",
+   "homonym": null,
+   "whitney_ref": "pyā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pyā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PRATH",
+   "root": "prath",
+   "homonym": null,
+   "whitney_ref": "prath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "prath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PRĀ",
+   "root": "prā",
+   "homonym": null,
+   "whitney_ref": "prā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "prā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PRĪ",
+   "root": "prī",
+   "homonym": null,
+   "whitney_ref": "prī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "prī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PRU",
+   "root": "pru",
+   "homonym": null,
+   "whitney_ref": "pru",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "PRUTH",
+   "root": "pruth",
+   "homonym": null,
+   "whitney_ref": "pruth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pruth"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PRUṢ",
+   "root": "pruṣ",
+   "homonym": null,
+   "whitney_ref": "pruṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pruṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PLU",
+   "root": "plu",
+   "homonym": null,
+   "whitney_ref": "plu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "plu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "PLUṢ",
+   "root": "pluṣ",
+   "homonym": null,
+   "whitney_ref": "pluṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "pluṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PSØ̄",
+   "root": "psø̄",
+   "homonym": null,
+   "whitney_ref": "psā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "psā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PHAKK",
+   "root": "phakk",
+   "homonym": null,
+   "whitney_ref": "phakk",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "phakk"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PHAṆ",
+   "root": "phaṇ",
+   "homonym": null,
+   "whitney_ref": "phaṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "phaṇ"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PHAR",
+   "root": "phar",
+   "homonym": null,
+   "whitney_ref": "phar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "phar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PHAL.1",
+   "root": "phal",
+   "homonym": "1",
+   "whitney_ref": "1 phal",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "phal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "PHAL.2",
+   "root": "phal",
+   "homonym": "2",
+   "whitney_ref": "2 phal",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "phal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BAL",
+   "root": "bal",
+   "homonym": null,
+   "whitney_ref": "bal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BĀDH",
+   "root": "bādh",
+   "homonym": null,
+   "whitney_ref": "bādh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bādh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BUDH",
+   "root": "budh",
+   "homonym": null,
+   "whitney_ref": "budh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "budh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BUL",
+   "root": "bul",
+   "homonym": null,
+   "whitney_ref": "bul",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bul"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BṚH",
+   "root": "bṛh",
+   "homonym": "2",
+   "whitney_ref": "1 bṛh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "bṛh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BN̥DH",
+   "root": "bn̥dh",
+   "homonym": null,
+   "whitney_ref": "bandh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bandh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BN̥H",
+   "root": "bn̥h",
+   "homonym": null,
+   "whitney_ref": "baṃh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "baṃh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "BRŪ",
+   "root": "brū",
+   "homonym": null,
+   "whitney_ref": "brū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "brū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": null,
+   "set": null,
+   "pada": "U"
+  },
+  {
+   "id": "BHAKṢ",
+   "root": "bhakṣ",
+   "homonym": null,
+   "whitney_ref": "bhakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHAJ",
+   "root": "bhaj",
+   "homonym": null,
+   "whitney_ref": "bhaj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhaj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHAṆ",
+   "root": "bhaṇ",
+   "homonym": null,
+   "whitney_ref": "bhaṇ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhaṇ"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHARTS",
+   "root": "bharts",
+   "homonym": null,
+   "whitney_ref": "bharts",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bharts"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHARV",
+   "root": "bharv",
+   "homonym": null,
+   "whitney_ref": "bharv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bharv"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHAL",
+   "root": "bhal",
+   "homonym": null,
+   "whitney_ref": "bhal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhal"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHAṢ",
+   "root": "bhaṣ",
+   "homonym": null,
+   "whitney_ref": "bhaṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhaṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHAS",
+   "root": "bhas",
+   "homonym": null,
+   "whitney_ref": "bhas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHĀ",
+   "root": "bhā",
+   "homonym": null,
+   "whitney_ref": "bhā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHĀM",
+   "root": "bhām",
+   "homonym": null,
+   "whitney_ref": "bhām",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhām"
+   ],
+   "tip": "IV",
+   "ryad": "M",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "BHĀṢ",
+   "root": "bhāṣ",
+   "homonym": null,
+   "whitney_ref": "bhāṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhāṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHĀS",
+   "root": "bhās",
+   "homonym": null,
+   "whitney_ref": "bhās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHIKṢ",
+   "root": "bhikṣ",
+   "homonym": null,
+   "whitney_ref": "bhikṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhikṣ"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHID",
+   "root": "bhid",
+   "homonym": null,
+   "whitney_ref": "bhid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHĪ",
+   "root": "bhī",
+   "homonym": null,
+   "whitney_ref": "bhī, bhīṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhī",
+    "bhīṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHUJ.1",
+   "root": "bhuj",
+   "homonym": "1",
+   "whitney_ref": "1 bhuj",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "bhuj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHUJ.2",
+   "root": "bhuj",
+   "homonym": "2",
+   "whitney_ref": "2 bhuj",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "bhuj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHUR",
+   "root": "bhur",
+   "homonym": null,
+   "whitney_ref": "bhur",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhur"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHŪ",
+   "root": "bhū",
+   "homonym": null,
+   "whitney_ref": "bhū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHŪṢ",
+   "root": "bhūṣ",
+   "homonym": null,
+   "whitney_ref": "bhūṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhūṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHṚ",
+   "root": "bhṛ",
+   "homonym": null,
+   "whitney_ref": "bhṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHṚJJ",
+   "root": "bhṛjj",
+   "homonym": null,
+   "whitney_ref": "bhṛjj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhṛjj"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHN̥J",
+   "root": "bhn̥j",
+   "homonym": null,
+   "whitney_ref": "bhañj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhañj"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHN̥D",
+   "root": "bhn̥d",
+   "homonym": null,
+   "whitney_ref": "bhand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhand"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHYAS",
+   "root": "bhyas",
+   "homonym": null,
+   "whitney_ref": "bhyas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhyas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHRĪ",
+   "root": "bhrī",
+   "homonym": null,
+   "whitney_ref": "bhrī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhrī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "BHRĀJ",
+   "root": "bhrāj",
+   "homonym": null,
+   "whitney_ref": "bhrāj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhrāj"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHREṢ",
+   "root": "bhreṣ",
+   "homonym": null,
+   "whitney_ref": "bhreṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhreṣ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHRM̥̄",
+   "root": "bhrm̥̄",
+   "homonym": null,
+   "whitney_ref": "bhram",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhram"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "BHRN̥Ś",
+   "root": "bhrn̥ś",
+   "homonym": null,
+   "whitney_ref": "bhraṃś, bhraś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "bhraṃś",
+    "bhraś"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MØ̄.1",
+   "root": "mø̄",
+   "homonym": "1",
+   "whitney_ref": "1 mā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "mā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MØ̄.2",
+   "root": "mø̄",
+   "homonym": "2",
+   "whitney_ref": "2 mā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "mā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "MØ̄.3",
+   "root": "mø̄",
+   "homonym": "3",
+   "whitney_ref": "mī, mi",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mī",
+    "mi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MAJJ",
+   "root": "majj",
+   "homonym": null,
+   "whitney_ref": "majj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "majj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MAD",
+   "root": "mad",
+   "homonym": null,
+   "whitney_ref": "mad, mand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mad",
+    "mand"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MANC",
+   "root": "manc",
+   "homonym": null,
+   "whitney_ref": "mañc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mañc"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "MĀRG",
+   "root": "mārg",
+   "homonym": null,
+   "whitney_ref": "mārg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mārg"
+   ],
+   "tip": "IV",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MI.1",
+   "root": "mi",
+   "homonym": "1",
+   "whitney_ref": "1 mi",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "mi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MI.2",
+   "root": "mi",
+   "homonym": "2",
+   "whitney_ref": "3 mā",
+   "whitney_num": "3",
+   "whitney_spellings": [
+    "mā"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MIØKṢ",
+   "root": "miøkṣ",
+   "homonym": null,
+   "whitney_ref": "myakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "myakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MIKṢ",
+   "root": "mikṣ",
+   "homonym": null,
+   "whitney_ref": "mikṣ (miś)",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mikṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MITH",
+   "root": "mith",
+   "homonym": null,
+   "whitney_ref": "mith",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mith"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MID",
+   "root": "mid",
+   "homonym": null,
+   "whitney_ref": "med (mid)",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "med"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MIL",
+   "root": "mil",
+   "homonym": "1",
+   "whitney_ref": "mil",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mil"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MIṢ",
+   "root": "miṣ",
+   "homonym": null,
+   "whitney_ref": "miṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "miṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MIH",
+   "root": "mih",
+   "homonym": null,
+   "whitney_ref": "mih",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mih"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MĪL",
+   "root": "mīl",
+   "homonym": null,
+   "whitney_ref": "mīl",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mīl"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MĪV",
+   "root": "mīv",
+   "homonym": null,
+   "whitney_ref": "mīv, mū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mīv",
+    "mū"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MUC",
+   "root": "muc",
+   "homonym": null,
+   "whitney_ref": "muc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "muc"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MUṬ",
+   "root": "muṭ",
+   "homonym": null,
+   "whitney_ref": "muṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "muṭ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MUD",
+   "root": "mud",
+   "homonym": null,
+   "whitney_ref": "mud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MUṢ",
+   "root": "muṣ",
+   "homonym": null,
+   "whitney_ref": "muṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "muṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MUH",
+   "root": "muh",
+   "homonym": null,
+   "whitney_ref": "muh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "muh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MŪR",
+   "root": "mūrch",
+   "homonym": null,
+   "whitney_ref": "mūrch, mūr",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mūrch",
+    "mūr"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚ",
+   "root": "mṛ",
+   "homonym": null,
+   "whitney_ref": "1 mṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "mṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚØKṢ",
+   "root": "mṛøkṣ",
+   "homonym": null,
+   "whitney_ref": "mṛkṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛkṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MṚC",
+   "root": "mṛc",
+   "homonym": null,
+   "whitney_ref": "mṛc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛc"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚJ",
+   "root": "mṛj",
+   "homonym": null,
+   "whitney_ref": "mṛj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛj"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚḌ",
+   "root": "mṛḍ",
+   "homonym": null,
+   "whitney_ref": "mṛd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛd"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚD",
+   "root": "mṛd",
+   "homonym": null,
+   "whitney_ref": "mṛd, mrad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛd",
+    "mrad"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚDH",
+   "root": "mṛdh",
+   "homonym": null,
+   "whitney_ref": "mṛdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚŚ",
+   "root": "mṛś",
+   "homonym": null,
+   "whitney_ref": "mṛś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛś"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṚṢ",
+   "root": "mṛṣ",
+   "homonym": null,
+   "whitney_ref": "mṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MṜ",
+   "root": "mṝ",
+   "homonym": null,
+   "whitney_ref": "2 mṛ, mṛṇ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "mṛ",
+    "mṛṇ"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MN̥",
+   "root": "mn̥",
+   "homonym": null,
+   "whitney_ref": "man",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "man"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MN̥TH",
+   "root": "mn̥th",
+   "homonym": null,
+   "whitney_ref": "math, manth",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "math",
+    "manth"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MN̥H",
+   "root": "mn̥h",
+   "homonym": null,
+   "whitney_ref": "maṃh, mah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "maṃh",
+    "mah"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MNĀ",
+   "root": "mnā",
+   "homonym": null,
+   "whitney_ref": "mnā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mnā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MRIT",
+   "root": "mrit",
+   "homonym": null,
+   "whitney_ref": "mrit, mlit",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mrit",
+    "mlit"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MREḌ",
+   "root": "mreḍ",
+   "homonym": null,
+   "whitney_ref": "mreḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mreḍ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MLĀ",
+   "root": "mlā",
+   "homonym": null,
+   "whitney_ref": "mlā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mlā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "MLICH",
+   "root": "mlich",
+   "homonym": null,
+   "whitney_ref": "mlich",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mlich"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "MLUC",
+   "root": "mluc",
+   "homonym": null,
+   "whitney_ref": "mruc, mluc, mlup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "mruc",
+    "mluc",
+    "mlup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "YAKṢ",
+   "root": "yakṣ",
+   "homonym": null,
+   "whitney_ref": "yakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YAT",
+   "root": "yat",
+   "homonym": null,
+   "whitney_ref": "yat",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yat"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YABH",
+   "root": "yabh",
+   "homonym": null,
+   "whitney_ref": "yabh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yabh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YAS",
+   "root": "yas",
+   "homonym": null,
+   "whitney_ref": "yas, yeṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yas",
+    "yeṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "YĀ",
+   "root": "yā",
+   "homonym": null,
+   "whitney_ref": "yā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YĀC",
+   "root": "yāc",
+   "homonym": null,
+   "whitney_ref": "yāc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yāc"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YĀD",
+   "root": "yād",
+   "homonym": null,
+   "whitney_ref": "yād",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yād"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "YU.1",
+   "root": "yu",
+   "homonym": "1",
+   "whitney_ref": "1 yu",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "yu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YU.2",
+   "root": "yu",
+   "homonym": "2",
+   "whitney_ref": "2 yu, yuch",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "yu",
+    "yuch"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YUJ",
+   "root": "yuj",
+   "homonym": null,
+   "whitney_ref": "yuj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yuj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YUDH",
+   "root": "yudh",
+   "homonym": null,
+   "whitney_ref": "yudh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yudh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "YUP",
+   "root": "yup",
+   "homonym": null,
+   "whitney_ref": "yup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "YM̥",
+   "root": "ym̥",
+   "homonym": null,
+   "whitney_ref": "yam, yach",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "yam",
+    "yach"
+   ],
+   "tip": "I",
+   "ryad": "M₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAKṢ",
+   "root": "rakṣ",
+   "homonym": null,
+   "whitney_ref": "rakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAC",
+   "root": "rac",
+   "homonym": null,
+   "whitney_ref": "rac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rac"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RAṬ",
+   "root": "raṭ",
+   "homonym": null,
+   "whitney_ref": "raṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "raṭ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RAD",
+   "root": "rad",
+   "homonym": null,
+   "whitney_ref": "rad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RADH",
+   "root": "radh",
+   "homonym": null,
+   "whitney_ref": "radh, randh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "radh",
+    "randh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RAN.1",
+   "root": "ran",
+   "homonym": "1",
+   "whitney_ref": "1 ran",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "ran"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RAN.2",
+   "root": "ran",
+   "homonym": "2",
+   "whitney_ref": "2 ran",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "ran"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RANG",
+   "root": "rang",
+   "homonym": null,
+   "whitney_ref": "raṅg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "raṅg"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RANB",
+   "root": "ranb",
+   "homonym": null,
+   "whitney_ref": "ramb",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ramb"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "RANBH",
+   "root": "ranbh",
+   "homonym": null,
+   "whitney_ref": "rambh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rambh"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RANV",
+   "root": "ranv",
+   "homonym": null,
+   "whitney_ref": "ranv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ranv"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RANH",
+   "root": "ranh",
+   "homonym": null,
+   "whitney_ref": "raṃh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "raṃh"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAPŚ",
+   "root": "rapś",
+   "homonym": null,
+   "whitney_ref": "rapś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rapś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAS.1",
+   "root": "ras",
+   "homonym": "1",
+   "whitney_ref": "ras",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ras"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAS.2",
+   "root": "ras",
+   "homonym": "2",
+   "whitney_ref": "NA",
+   "whitney_num": null,
+   "whitney_spellings": [],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RAH",
+   "root": "rah",
+   "homonym": null,
+   "whitney_ref": "rah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RĀ.1",
+   "root": "rā",
+   "homonym": "1",
+   "whitney_ref": "1 rā, rās",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "rā",
+    "rās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RĀ.2",
+   "root": "rā",
+   "homonym": "2",
+   "whitney_ref": "2 rā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "rā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RĀJ",
+   "root": "rāj",
+   "homonym": null,
+   "whitney_ref": "rāj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rāj"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RĀDH",
+   "root": "rādh",
+   "homonym": null,
+   "whitney_ref": "rādh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rādh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RĀS",
+   "root": "rās",
+   "homonym": "2",
+   "whitney_ref": "1 rās",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "rās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RI",
+   "root": "ri",
+   "homonym": "1",
+   "whitney_ref": "ri, rī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ri",
+    "rī"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RIKH",
+   "root": "rikh",
+   "homonym": null,
+   "whitney_ref": "rikh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rikh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RIṄG",
+   "root": "riṅg",
+   "homonym": null,
+   "whitney_ref": "riñkh, riñg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "riñkh",
+    "riñg"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RIC",
+   "root": "ric",
+   "homonym": null,
+   "whitney_ref": "ric",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ric"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RIPH",
+   "root": "riph",
+   "homonym": null,
+   "whitney_ref": "riph",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "riph"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RIBH",
+   "root": "ribh",
+   "homonym": null,
+   "whitney_ref": "ribh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ribh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RIṢ",
+   "root": "riṣ",
+   "homonym": null,
+   "whitney_ref": "riṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "riṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RU.1",
+   "root": "ru",
+   "homonym": "1",
+   "whitney_ref": "1 ru",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "ru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RU.2",
+   "root": "ru",
+   "homonym": "2",
+   "whitney_ref": "2 ru",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "ru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "RUC",
+   "root": "ruc",
+   "homonym": null,
+   "whitney_ref": "ruc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ruc"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RUJ",
+   "root": "ruj",
+   "homonym": null,
+   "whitney_ref": "ruj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ruj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RUD",
+   "root": "rud",
+   "homonym": null,
+   "whitney_ref": "rud",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rud"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RUDH",
+   "root": "rudh",
+   "homonym": "2",
+   "whitney_ref": "2 rudh",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "rudh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RUP",
+   "root": "rup",
+   "homonym": null,
+   "whitney_ref": "rup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RUṢ",
+   "root": "ruṣ",
+   "homonym": null,
+   "whitney_ref": "ruṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ruṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RUH",
+   "root": "ruh",
+   "homonym": null,
+   "whitney_ref": "ruh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ruh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RŪṢ",
+   "root": "rūṣ",
+   "homonym": null,
+   "whitney_ref": "rūṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rūṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "REJ",
+   "root": "rej",
+   "homonym": null,
+   "whitney_ref": "rej",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rej"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "REḌ",
+   "root": "reḍ",
+   "homonym": null,
+   "whitney_ref": "reḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "reḍ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "RM̥",
+   "root": "rm̥",
+   "homonym": null,
+   "whitney_ref": "ram",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ram"
+   ],
+   "tip": "I",
+   "ryad": "M₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RN̥J",
+   "root": "rn̥j",
+   "homonym": null,
+   "whitney_ref": "2 raj, rañj",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "raj",
+    "rañj"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "RN̥BH",
+   "root": "rn̥bh",
+   "homonym": null,
+   "whitney_ref": "rabh, rambh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "rabh",
+    "rambh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAKṢ",
+   "root": "lakṣ",
+   "homonym": null,
+   "whitney_ref": "lakṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lakṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAG",
+   "root": "lag",
+   "homonym": null,
+   "whitney_ref": "lag",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lag"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "LAJJ",
+   "root": "lajj",
+   "homonym": null,
+   "whitney_ref": "lajj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lajj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAḌ",
+   "root": "laḍ",
+   "homonym": null,
+   "whitney_ref": "laḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "laḍ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "LANGH",
+   "root": "langh",
+   "homonym": null,
+   "whitney_ref": "laṅgh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "laṅgh"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LANB",
+   "root": "lanb",
+   "homonym": null,
+   "whitney_ref": "lamb",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lamb"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAP",
+   "root": "lap",
+   "homonym": null,
+   "whitney_ref": "lap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LABH",
+   "root": "labh",
+   "homonym": null,
+   "whitney_ref": "labh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "labh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAL",
+   "root": "lal",
+   "homonym": null,
+   "whitney_ref": "lal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAṢ",
+   "root": "laṣ",
+   "homonym": null,
+   "whitney_ref": "laṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "laṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LAS",
+   "root": "las",
+   "homonym": null,
+   "whitney_ref": "las",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "las"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LĀ",
+   "root": "lā",
+   "homonym": null,
+   "whitney_ref": "lā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "LIKH",
+   "root": "likh",
+   "homonym": null,
+   "whitney_ref": "likh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "likh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LIP",
+   "root": "lip",
+   "homonym": null,
+   "whitney_ref": "lip, limp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lip",
+    "limp"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LIŚ",
+   "root": "liś",
+   "homonym": null,
+   "whitney_ref": "liś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "liś"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LIH",
+   "root": "lih",
+   "homonym": null,
+   "whitney_ref": "lih",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lih"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LĪ.1",
+   "root": "lī",
+   "homonym": "1",
+   "whitney_ref": "1 lī",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "lī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LĪ.2",
+   "root": "lī",
+   "homonym": "2",
+   "whitney_ref": "2 lī",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "lī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": null,
+   "set": null,
+   "pada": "U"
+  },
+  {
+   "id": "LUÑC",
+   "root": "luñc",
+   "homonym": null,
+   "whitney_ref": "luñc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "luñc"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LUṬH",
+   "root": "luṭh",
+   "homonym": "1",
+   "whitney_ref": "1 luṭh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "luṭh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LUṆṬH",
+   "root": "luṇṭh",
+   "homonym": null,
+   "whitney_ref": "2 luṭh, luṇṭh",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "luṭh",
+    "luṇṭh"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "LUP",
+   "root": "lup",
+   "homonym": null,
+   "whitney_ref": "lup",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lup"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LUBH",
+   "root": "lubh",
+   "homonym": null,
+   "whitney_ref": "lubh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lubh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LUL",
+   "root": "lul",
+   "homonym": null,
+   "whitney_ref": "lul",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lul"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LŪ",
+   "root": "lū",
+   "homonym": null,
+   "whitney_ref": "lū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "lū"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "LOC",
+   "root": "loc",
+   "homonym": null,
+   "whitney_ref": "loc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "loc"
+   ],
+   "tip": "II",
+   "ryad": "U",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VAT",
+   "root": "vat",
+   "homonym": null,
+   "whitney_ref": "vat",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vat"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VADH",
+   "root": "vadh",
+   "homonym": null,
+   "whitney_ref": "vadh, badh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vadh",
+    "badh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VANṬ",
+   "root": "vanṭ",
+   "homonym": null,
+   "whitney_ref": "vaṇṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vaṇṭ"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VAND",
+   "root": "vand",
+   "homonym": null,
+   "whitney_ref": "vand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vand"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VAL",
+   "root": "val",
+   "homonym": null,
+   "whitney_ref": "val",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "val"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VALG",
+   "root": "valg",
+   "homonym": null,
+   "whitney_ref": "valg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "valg"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VALH",
+   "root": "valh",
+   "homonym": null,
+   "whitney_ref": "valh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "valh"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VAS",
+   "root": "vas",
+   "homonym": null,
+   "whitney_ref": "2 vas",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "vas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĀ",
+   "root": "vā",
+   "homonym": null,
+   "whitney_ref": "1 vā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VĀNCH",
+   "root": "vānch",
+   "homonym": null,
+   "whitney_ref": "vāñch",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vāñch"
+   ],
+   "tip": "IV",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VĀŚ",
+   "root": "vāś",
+   "homonym": null,
+   "whitney_ref": "vāś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vāś"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĀH",
+   "root": "vāh",
+   "homonym": null,
+   "whitney_ref": "vāh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vāh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "VIØC",
+   "root": "viøc",
+   "homonym": null,
+   "whitney_ref": "vyac, vic",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vyac",
+    "vic"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VIØDH",
+   "root": "viødh",
+   "homonym": null,
+   "whitney_ref": "vyadh, vidh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vyadh",
+    "vidh"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VIC",
+   "root": "vic",
+   "homonym": null,
+   "whitney_ref": "1 vic",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vic"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VIJ",
+   "root": "vij",
+   "homonym": "1",
+   "whitney_ref": "vij",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vij"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VID.1",
+   "root": "vid",
+   "homonym": "1",
+   "whitney_ref": "1 vid",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VID.2",
+   "root": "vid",
+   "homonym": "2",
+   "whitney_ref": "2 vid",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "vid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VIDH.1",
+   "root": "vidh",
+   "homonym": "1",
+   "whitney_ref": "1 vidh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vidh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VIDH.2",
+   "root": "vidh",
+   "homonym": "2",
+   "whitney_ref": "vindh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vindh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "VIŚ",
+   "root": "viś",
+   "homonym": null,
+   "whitney_ref": "viś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "viś"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VIṢ",
+   "root": "viṣ",
+   "homonym": null,
+   "whitney_ref": "viṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "viṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VIṢṬ",
+   "root": "viṣṭ",
+   "homonym": null,
+   "whitney_ref": "viṣṭ, veṣṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "viṣṭ",
+    "veṣṭ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĪ",
+   "root": "vī",
+   "homonym": null,
+   "whitney_ref": "vī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĪØJ",
+   "root": "vīøj",
+   "homonym": null,
+   "whitney_ref": "vīj, vyaj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vīj",
+    "vyaj"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĪØ̄",
+   "root": "vīø̄",
+   "homonym": null,
+   "whitney_ref": "vyā, vī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vyā",
+    "vī"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VĪḌ",
+   "root": "vīḍ",
+   "homonym": null,
+   "whitney_ref": "vīḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vīḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": null,
+   "set": null,
+   "pada": "U"
+  },
+  {
+   "id": "VṚ.1",
+   "root": "vṛ",
+   "homonym": "1",
+   "whitney_ref": "1 vṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚ.2",
+   "root": "vṛ",
+   "homonym": "2",
+   "whitney_ref": "1 vṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "vṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚØŚC",
+   "root": "vṛøśc",
+   "homonym": null,
+   "whitney_ref": "vraśc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vraśc"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VṚṂH",
+   "root": "vṛṃh",
+   "homonym": "2",
+   "whitney_ref": "vṛṃh, bṛṃh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛṃh",
+    "bṛṃh"
+   ],
+   "tip": "III",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚJ",
+   "root": "vṛj",
+   "homonym": null,
+   "whitney_ref": "vṛj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛj"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚT",
+   "root": "vṛt",
+   "homonym": null,
+   "whitney_ref": "vṛt",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛt"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚDH",
+   "root": "vṛdh",
+   "homonym": null,
+   "whitney_ref": "vṛdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚṢ",
+   "root": "vṛṣ",
+   "homonym": null,
+   "whitney_ref": "vṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VṚH",
+   "root": "vṛh",
+   "homonym": "1",
+   "whitney_ref": "vṛh, bṛh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vṛh",
+    "bṛh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VEN",
+   "root": "ven",
+   "homonym": null,
+   "whitney_ref": "ven",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ven"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VEP",
+   "root": "vep",
+   "homonym": null,
+   "whitney_ref": "vip, vep",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vip",
+    "vep"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VELL",
+   "root": "vell",
+   "homonym": null,
+   "whitney_ref": "vell",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vell"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VM̥̄",
+   "root": "vm̥̄",
+   "homonym": null,
+   "whitney_ref": "vam",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VN̥C",
+   "root": "vn̥c",
+   "homonym": null,
+   "whitney_ref": "vañc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vañc"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VN̥̄",
+   "root": "vn̥̄",
+   "homonym": null,
+   "whitney_ref": "van, vā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "van",
+    "vā"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VYATH",
+   "root": "vyath",
+   "homonym": null,
+   "whitney_ref": "vyath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vyath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VYE",
+   "root": "vye",
+   "homonym": "1",
+   "whitney_ref": "vyay",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vyay"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VRAJ",
+   "root": "vraj",
+   "homonym": null,
+   "whitney_ref": "vraj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vraj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VRĀDH",
+   "root": "vrādh",
+   "homonym": null,
+   "whitney_ref": "vrādh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vrādh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VRĪḌ",
+   "root": "vrīḍ",
+   "homonym": null,
+   "whitney_ref": "vrīḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vrīḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VRUḌ",
+   "root": "vruḍ",
+   "homonym": null,
+   "whitney_ref": "vruḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vruḍ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VRN̥D",
+   "root": "vrn̥d",
+   "homonym": null,
+   "whitney_ref": "vrad, vrand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vrad",
+    "vrand"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "VLĪ",
+   "root": "vlī",
+   "homonym": null,
+   "whitney_ref": "vlī, blī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vlī",
+    "blī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "VLN̥G",
+   "root": "vln̥g",
+   "homonym": null,
+   "whitney_ref": "vlag, vlaṅg",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "vlag",
+    "vlaṅg"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚØ̄",
+   "root": "śø̄",
+   "homonym": null,
+   "whitney_ref": "śā, śi",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śā",
+    "śi"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚØ̄S",
+   "root": "śø̄s",
+   "homonym": null,
+   "whitney_ref": "1 śās, śiṣ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śās",
+    "śiṣ"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAK",
+   "root": "śak",
+   "homonym": null,
+   "whitney_ref": "śak",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śak"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAD.1",
+   "root": "śad",
+   "homonym": "1",
+   "whitney_ref": "1 śad",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAD.2",
+   "root": "śad",
+   "homonym": "2",
+   "whitney_ref": "2 śad",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "śad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚANK",
+   "root": "śank",
+   "homonym": null,
+   "whitney_ref": "śaṅk",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śaṅk"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAP",
+   "root": "śap",
+   "homonym": null,
+   "whitney_ref": "śap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAM",
+   "root": "śam",
+   "homonym": null,
+   "whitney_ref": "1 śam, śim",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śam",
+    "śim"
+   ],
+   "tip": "II",
+   "ryad": "M",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAL",
+   "root": "śal",
+   "homonym": null,
+   "whitney_ref": "śal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚAŚ",
+   "root": "śaś",
+   "homonym": null,
+   "whitney_ref": "śaś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śaś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚAS",
+   "root": "śas",
+   "homonym": null,
+   "whitney_ref": "śas, śās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śas",
+    "śās"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚIKṢ",
+   "root": "śikṣ",
+   "homonym": null,
+   "whitney_ref": "śak",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śak"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚIÑJ",
+   "root": "śiñj",
+   "homonym": null,
+   "whitney_ref": "śiñj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śiñj"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚIṢ",
+   "root": "śiṣ",
+   "homonym": null,
+   "whitney_ref": "śiṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śiṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚĪØ̄",
+   "root": "śīø̄",
+   "homonym": null,
+   "whitney_ref": "śyā, śī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śyā",
+    "śī"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚUC",
+   "root": "śuc",
+   "homonym": null,
+   "whitney_ref": "śuc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śuc"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚUJ",
+   "root": "śuj",
+   "homonym": null,
+   "whitney_ref": "śuj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śuj"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": null,
+   "set": null,
+   "pada": "Ā"
+  },
+  {
+   "id": "ŚUDH",
+   "root": "śudh",
+   "homonym": null,
+   "whitney_ref": "śudh, śundh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śudh",
+    "śundh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚUBH",
+   "root": "śubh",
+   "homonym": null,
+   "whitney_ref": "śubh, śumbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śubh",
+    "śumbh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚUṢ",
+   "root": "śuṣ",
+   "homonym": null,
+   "whitney_ref": "1 śuṣ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śuṣ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚṚDH",
+   "root": "śṛdh",
+   "homonym": null,
+   "whitney_ref": "śṛdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śṛdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚṚØTH",
+   "root": "śṛøth",
+   "homonym": null,
+   "whitney_ref": "śrath, ślath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śrath",
+    "ślath"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚṜ",
+   "root": "śṝ",
+   "homonym": "1",
+   "whitney_ref": "1 śṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚE",
+   "root": "śe",
+   "homonym": null,
+   "whitney_ref": "2 śī",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "śī"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚM̥̄",
+   "root": "śm̥̄",
+   "homonym": null,
+   "whitney_ref": "2 śam",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "śam"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚN̥S",
+   "root": "śn̥s",
+   "homonym": null,
+   "whitney_ref": "śaṃs",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śaṃs"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚCUT",
+   "root": "ścut",
+   "homonym": null,
+   "whitney_ref": "ścut",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ścut"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚNATH",
+   "root": "śnath",
+   "homonym": null,
+   "whitney_ref": "śnath",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śnath"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRAN",
+   "root": "śran",
+   "homonym": null,
+   "whitney_ref": "śran",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śran"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚRĀ",
+   "root": "śrā",
+   "homonym": null,
+   "whitney_ref": "śrā, 2 śrī, 2 śṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śrā",
+    "2 śrī",
+    "2 śṛ"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRI",
+   "root": "śri",
+   "homonym": "1",
+   "whitney_ref": "śri, 3 śṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śri",
+    "3 śṛ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRĪ",
+   "root": "śrī",
+   "homonym": "1",
+   "whitney_ref": "1 śrī, śṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "śrī",
+    "śṛ"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRU",
+   "root": "śru",
+   "homonym": null,
+   "whitney_ref": "śru",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRM̥̄",
+   "root": "śrm̥̄",
+   "homonym": null,
+   "whitney_ref": "śram",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śram"
+   ],
+   "tip": "I",
+   "ryad": "M₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚRN̥BH",
+   "root": "śrn̥bh",
+   "homonym": null,
+   "whitney_ref": "śrambh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śrambh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚLĀGH",
+   "root": "ślāgh",
+   "homonym": null,
+   "whitney_ref": "ślāgh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ślāgh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚLIṢ",
+   "root": "śliṣ",
+   "homonym": null,
+   "whitney_ref": "śliṣ, śriṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śliṣ",
+    "śriṣ"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚVAS",
+   "root": "śvas",
+   "homonym": null,
+   "whitney_ref": "śvas, śuṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śvas",
+    "śuṣ"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚVI",
+   "root": "śvi",
+   "homonym": null,
+   "whitney_ref": "śū, śvā, śvi",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śū",
+    "śvā",
+    "śvi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "ŚVIT",
+   "root": "śvit",
+   "homonym": null,
+   "whitney_ref": "śvit",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śvit"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ŚVN̥C",
+   "root": "śvn̥c",
+   "homonym": null,
+   "whitney_ref": "śvañc",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "śvañc"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "ṢṬHĪV",
+   "root": "ṣṭhīv",
+   "homonym": null,
+   "whitney_ref": "ṣṭhīv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "ṣṭhīv"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SØ̄",
+   "root": "sø̄",
+   "homonym": null,
+   "whitney_ref": "1 sā, si",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "sā",
+    "si"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SAGH",
+   "root": "sagh",
+   "homonym": null,
+   "whitney_ref": "sagh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sagh"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SAC",
+   "root": "sac",
+   "homonym": null,
+   "whitney_ref": "sac",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sac"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SAJ",
+   "root": "saj",
+   "homonym": null,
+   "whitney_ref": "saj, sañj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "saj",
+    "sañj"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SAD",
+   "root": "sad",
+   "homonym": null,
+   "whitney_ref": "sad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sad"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SAP",
+   "root": "sap",
+   "homonym": null,
+   "whitney_ref": "sap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sap"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SARJ",
+   "root": "sarj",
+   "homonym": null,
+   "whitney_ref": "sarj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sarj"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SAS",
+   "root": "sas",
+   "homonym": null,
+   "whitney_ref": "sas",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sas"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SAH",
+   "root": "sah",
+   "homonym": null,
+   "whitney_ref": "sah",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sah"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SĀDH",
+   "root": "sādh",
+   "homonym": null,
+   "whitney_ref": "sādh, sadh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sādh",
+    "sadh"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SIC",
+   "root": "sic",
+   "homonym": null,
+   "whitney_ref": "sic",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sic"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SIDH.1",
+   "root": "sidh",
+   "homonym": "1",
+   "whitney_ref": "1 sidh",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "sidh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SIDH.2",
+   "root": "sidh",
+   "homonym": "2",
+   "whitney_ref": "2 sidh",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "sidh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SĪV",
+   "root": "sīv",
+   "homonym": null,
+   "whitney_ref": "sīv, syū",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sīv",
+    "syū"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SU",
+   "root": "su",
+   "homonym": "1",
+   "whitney_ref": "su",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "su"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SUØP",
+   "root": "suøp",
+   "homonym": null,
+   "whitney_ref": "svap",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svap"
+   ],
+   "tip": "I",
+   "ryad": "A₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SUBH",
+   "root": "subh",
+   "homonym": null,
+   "whitney_ref": "subh, sumbh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "subh",
+    "sumbh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SŪ",
+   "root": "sū",
+   "homonym": null,
+   "whitney_ref": "sū, su",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sū",
+    "su"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SŪD",
+   "root": "sūd",
+   "homonym": null,
+   "whitney_ref": "sūd",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sūd"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SŪRKṢ",
+   "root": "sūrkṣ",
+   "homonym": null,
+   "whitney_ref": "sūrkṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sūrkṣ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SṚ",
+   "root": "sṛ",
+   "homonym": null,
+   "whitney_ref": "sṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SṚJ",
+   "root": "sṛj",
+   "homonym": null,
+   "whitney_ref": "sṛj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sṛj"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SṚP",
+   "root": "sṛp",
+   "homonym": null,
+   "whitney_ref": "sṛp",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sṛp"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SEV",
+   "root": "sev",
+   "homonym": null,
+   "whitney_ref": "sev",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sev"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SN̥̄",
+   "root": "sn̥̄",
+   "homonym": null,
+   "whitney_ref": "san, 2 sā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "san",
+    "2 sā"
+   ],
+   "tip": "I",
+   "ryad": "N₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SKU",
+   "root": "sku",
+   "homonym": null,
+   "whitney_ref": "sku",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sku"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SKN̥D",
+   "root": "skn̥d",
+   "homonym": null,
+   "whitney_ref": "skand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "skand"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SKN̥BH",
+   "root": "skn̥bh",
+   "homonym": null,
+   "whitney_ref": "skambh, skabh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "skambh",
+    "skabh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SKHAL",
+   "root": "skhal",
+   "homonym": null,
+   "whitney_ref": "skhal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "skhal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STAN",
+   "root": "stan",
+   "homonym": null,
+   "whitney_ref": "stan",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stan"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STIGH",
+   "root": "stigh",
+   "homonym": null,
+   "whitney_ref": "stigh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stigh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STIM",
+   "root": "stim",
+   "homonym": null,
+   "whitney_ref": "stim, stīm",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stim",
+    "stīm"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "STU",
+   "root": "stu",
+   "homonym": null,
+   "whitney_ref": "1 stu",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "stu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STUBH",
+   "root": "stubh",
+   "homonym": null,
+   "whitney_ref": "stubh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stubh"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STṚ",
+   "root": "stṛ",
+   "homonym": null,
+   "whitney_ref": "stṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STN̥BH",
+   "root": "stn̥bh",
+   "homonym": null,
+   "whitney_ref": "stambh, stabh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "stambh",
+    "stabh"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STYĀ",
+   "root": "styā",
+   "homonym": null,
+   "whitney_ref": "styā, stī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "styā",
+    "stī"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STHØ̄",
+   "root": "sthø̄",
+   "homonym": null,
+   "whitney_ref": "sthā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sthā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "STHAG",
+   "root": "sthag",
+   "homonym": null,
+   "whitney_ref": "sthag",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sthag"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SNĀ",
+   "root": "snā",
+   "homonym": null,
+   "whitney_ref": "snā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "snā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SNIH",
+   "root": "snih",
+   "homonym": null,
+   "whitney_ref": "snih",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "snih"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SNU",
+   "root": "snu",
+   "homonym": null,
+   "whitney_ref": "snu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "snu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "v4",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPAŚ",
+   "root": "spaś",
+   "homonym": null,
+   "whitney_ref": "1 paś, spaś",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "paś",
+    "spaś"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPṚ",
+   "root": "spṛ",
+   "homonym": null,
+   "whitney_ref": "spṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "spṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPṚDH",
+   "root": "spṛdh",
+   "homonym": null,
+   "whitney_ref": "spṛdh, spūrdh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "spṛdh",
+    "spūrdh"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPṚŚ",
+   "root": "spṛś",
+   "homonym": null,
+   "whitney_ref": "spṛś",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "spṛś"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPṚH",
+   "root": "spṛh",
+   "homonym": null,
+   "whitney_ref": "spṛh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "spṛh"
+   ],
+   "tip": "III",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPN̥D",
+   "root": "spn̥d",
+   "homonym": null,
+   "whitney_ref": "spand",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "spand"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPHAL",
+   "root": "sphal",
+   "homonym": null,
+   "whitney_ref": "sphal",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sphal"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SPHĀ",
+   "root": "sphā",
+   "homonym": null,
+   "whitney_ref": "sphā",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sphā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "SPHUṬ",
+   "root": "sphuṭ",
+   "homonym": null,
+   "whitney_ref": "sphuṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sphuṭ"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SPHUR",
+   "root": "sphur",
+   "homonym": "1",
+   "whitney_ref": "sphṛ, sphar,",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sphṛ",
+    "sphar"
+   ],
+   "tip": "III",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SPHŪRJ",
+   "root": "sphūrj",
+   "homonym": null,
+   "whitney_ref": "sphuṭ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sphuṭ"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SMI",
+   "root": "smi",
+   "homonym": null,
+   "whitney_ref": "smi",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "smi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SMṚ",
+   "root": "smṛ",
+   "homonym": null,
+   "whitney_ref": "smṛ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "smṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SYN̥D",
+   "root": "syn̥d",
+   "homonym": null,
+   "whitney_ref": "syand, syad",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "syand",
+    "syad"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SRIDH",
+   "root": "sridh",
+   "homonym": null,
+   "whitney_ref": "sridh",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sridh"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SRĪV",
+   "root": "srīv",
+   "homonym": null,
+   "whitney_ref": "srīv",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "srīv"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SRU",
+   "root": "sru",
+   "homonym": null,
+   "whitney_ref": "sru",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sru"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SRN̥S",
+   "root": "srn̥s",
+   "homonym": null,
+   "whitney_ref": "sraṃs, sras",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "sraṃs",
+    "sras"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SVAN",
+   "root": "svan",
+   "homonym": null,
+   "whitney_ref": "svan",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svan"
+   ],
+   "tip": "II",
+   "ryad": "N",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SVAR",
+   "root": "svar",
+   "homonym": null,
+   "whitney_ref": "svar",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svar"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "SVĀD",
+   "root": "svād",
+   "homonym": null,
+   "whitney_ref": "svad, svād",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svad",
+    "svād"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "v3",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SVID",
+   "root": "svid",
+   "homonym": null,
+   "whitney_ref": "svid",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svid"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "SVN̥J",
+   "root": "svn̥j",
+   "homonym": null,
+   "whitney_ref": "svaj, svañj",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "svaj",
+    "svañj"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HØ̄",
+   "root": "hø̄",
+   "homonym": "1",
+   "whitney_ref": "1 hā",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "hā"
+   ],
+   "tip": "I",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HAD",
+   "root": "had",
+   "homonym": null,
+   "whitney_ref": "had",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "had"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HARI",
+   "root": "hari",
+   "homonym": null,
+   "whitney_ref": "har",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "har"
+   ],
+   "tip": "II",
+   "ryad": "R",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HAS",
+   "root": "has",
+   "homonym": null,
+   "whitney_ref": "has",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "has"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HĀ",
+   "root": "hā",
+   "homonym": "1",
+   "whitney_ref": "2 hā",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "hā"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HĀS",
+   "root": "hās",
+   "homonym": null,
+   "whitney_ref": "hās",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hās"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HI",
+   "root": "hi",
+   "homonym": "1",
+   "whitney_ref": "hi",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hi"
+   ],
+   "tip": "I",
+   "ryad": "I₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HIṂS",
+   "root": "hiṃs",
+   "homonym": null,
+   "whitney_ref": "hiṃs",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hiṃs"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HIKK",
+   "root": "hikk",
+   "homonym": null,
+   "whitney_ref": "hikk",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hikk"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HIṆḌ",
+   "root": "hiṇḍ",
+   "homonym": null,
+   "whitney_ref": "hiṇḍ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hiṇḍ"
+   ],
+   "tip": "III",
+   "ryad": "I₁",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "Ā"
+  },
+  {
+   "id": "HĪḌ",
+   "root": "hīḍ",
+   "homonym": null,
+   "whitney_ref": "hīḍ, hel",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hīḍ",
+    "hel"
+   ],
+   "tip": "III",
+   "ryad": "I₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HU",
+   "root": "hu",
+   "homonym": null,
+   "whitney_ref": "hu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HŪ",
+   "root": "hū",
+   "homonym": null,
+   "whitney_ref": "hū, hvā, hve",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hū",
+    "hvā",
+    "hve"
+   ],
+   "tip": "I",
+   "ryad": "U₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HŪRCH",
+   "root": "hūrch",
+   "homonym": null,
+   "whitney_ref": "hūrch",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hūrch"
+   ],
+   "tip": "III",
+   "ryad": "U₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "P"
+  },
+  {
+   "id": "HṚ.1",
+   "root": "hṛ",
+   "homonym": "1",
+   "whitney_ref": "1 hṛ",
+   "whitney_num": "1",
+   "whitney_spellings": [
+    "hṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HR.2",
+   "root": "hṛ",
+   "homonym": "2",
+   "whitney_ref": "2 hṛ",
+   "whitney_num": "2",
+   "whitney_spellings": [
+    "hṛ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HṚṢ",
+   "root": "hṛṣ",
+   "homonym": null,
+   "whitney_ref": "hṛṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hṛṣ"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HEṢ",
+   "root": "heṣ",
+   "homonym": null,
+   "whitney_ref": "heṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "heṣ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HN̥",
+   "root": "hn̥",
+   "homonym": null,
+   "whitney_ref": "han",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "han"
+   ],
+   "tip": "I",
+   "ryad": "N₁",
+   "set_code": "v1",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HNU",
+   "root": "hnu",
+   "homonym": null,
+   "whitney_ref": "hnu",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hnu"
+   ],
+   "tip": "I",
+   "ryad": "U₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HRAS",
+   "root": "hras",
+   "homonym": null,
+   "whitney_ref": "hras",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hras"
+   ],
+   "tip": "II",
+   "ryad": "A₁",
+   "set_code": "v2",
+   "set": "veṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HRĀD",
+   "root": "hrād",
+   "homonym": null,
+   "whitney_ref": "hrād",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hrād"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HRĪ",
+   "root": "hrī",
+   "homonym": null,
+   "whitney_ref": "hrī",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hrī"
+   ],
+   "tip": "I",
+   "ryad": "I₂",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "P"
+  },
+  {
+   "id": "HREṢ",
+   "root": "hreṣ",
+   "homonym": null,
+   "whitney_ref": "hreṣ",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hreṣ"
+   ],
+   "tip": "II",
+   "ryad": "I",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HLĀD",
+   "root": "hlād",
+   "homonym": null,
+   "whitney_ref": "hlād",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hlād"
+   ],
+   "tip": "II",
+   "ryad": "A₂",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HVAL",
+   "root": "hval",
+   "homonym": null,
+   "whitney_ref": "hval",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hval"
+   ],
+   "tip": "II",
+   "ryad": "L",
+   "set_code": "s",
+   "set": "seṭ",
+   "pada": "U"
+  },
+  {
+   "id": "HVṚ",
+   "root": "hvṛ",
+   "homonym": null,
+   "whitney_ref": "hvṛ, hru, hur",
+   "whitney_num": null,
+   "whitney_spellings": [
+    "hvṛ",
+    "hru",
+    "hur"
+   ],
+   "tip": "I",
+   "ryad": "R₁",
+   "set_code": "a",
+   "set": "aniṭ",
+   "pada": "U"
+  }
+ ]
+}

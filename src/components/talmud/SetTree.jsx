@@ -2,8 +2,8 @@
 // student walks Да/Нет branches; the chosen path highlights and lands on an
 // outcome: ставить соединительную i/ī, или оставить «голый» стык для сандхи.
 // Encodes the {√}+{суффикс} conditions of §III (Таблица 4, ситуация 1) + the
-// spec in visual-grammar.md. Real-root examples (derived seṭ/aniṭ, advisory)
-// come from data/widget_roots.json (H241 Phase 2).
+// spec in visual-grammar.md. Real-root examples (author's seṭ/aniṭ/veṭ from
+// Приложение 1) come from data/widget_roots.json (H329 Phase 3).
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 import widgetData from '@site/TolchelnikovTalmud_2026/data/widget_roots.json';
@@ -65,9 +65,16 @@ export default function SetTree() {
       setOutcome(null);
       return;
     }
-    // Pre-answer Q1 from the root's derived seṭ/aniṭ flag, seating the tree
+    // Pre-answer Q1 from the root's author seṭ/aniṭ flag, seating the tree
     // directly (not via answer(), whose closure would read the pre-reset path).
+    // veṭ is optional (both outcomes), so leave the tree unanswered for it.
     const r = SET_EXAMPLES[Number(v)];
+    if (r.set !== 'seṭ' && r.set !== 'aniṭ') {
+      setPath([]);
+      setCurrent('q1');
+      setOutcome(null);
+      return;
+    }
     const yes = r.set === 'seṭ';
     const target = yes ? NODES.q1.yes : NODES.q1.no;
     setPath([{ id: 'q1', answer: yes }]);
@@ -101,8 +108,10 @@ export default function SetTree() {
 
       {ex && (
         <p className={styles.caption}>
-          √{ex.root}: p.p.p. <b>{ex.ppp}</b> → распознан как <b>{ex.set}</b>{' '}
-          (вывод по соединительной гласной причастия — advisory, gated).
+          √{ex.root}: p.p.p. <b>{ex.ppp}</b>; seṭ-параметр — <b>{ex.set}</b>
+          {ex.set_code && ex.set_code !== ex.set?.[0] ? ` (${ex.set_code})` : ''}
+          {ex.set === 'veṭ' ? ' — факультативно, возможны обе формы' : ''}{' '}
+          по каталогу Приложения 1 руководства.
           {ex.z_url && (
             <>
               {' '}
