@@ -15,6 +15,13 @@ Handoff **H329**. Model: Opus 4.8 (`claude-opus-4-8`).
 > `/z/`. The 70.7 % Ряд figure below therefore **understates** our derivation's fidelity.
 > seṭ coverage from `/z/` is still valuable (fills 246 nulls) but each adopted value needs
 > author confirmation. Phase 3 applies the author's answers from issue #50.
+>
+> **Version drift (MG, 08-07-2026):** `/z/` was generated from an **earlier version of the
+> Talmud** than the current v2.1.6. A further share of the Ряд/seṭ disagreements is therefore
+> **neither side's error but authorial revision** between versions — expected, not a defect.
+> The 70.7 % Ряд / 91.3 % seṭ agreement figures partly measure version difference; do not read
+> the disagreement rate as an error rate. Phase 3 must weigh three causes per conflict —
+> `/z/` bug · our-derivation error · authorial version drift — before changing anything.
 
 ## What this is
 
