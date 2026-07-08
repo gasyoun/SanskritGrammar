@@ -22,6 +22,22 @@ Handoff **H329**. Model: Opus 4.8 (`claude-opus-4-8`).
 > The 70.7 % Ряд / 91.3 % seṭ agreement figures partly measure version difference; do not read
 > the disagreement rate as an error rate. Phase 3 must weigh three causes per conflict —
 > `/z/` bug · our-derivation error · authorial version drift — before changing anything.
+>
+> **AUTHOR RULING — supersedes the "adopt `/z/`" recommendation below (I. E. Tolchelnikov,
+> [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50), 08-07-2026).**
+> The single source of truth is the **latest version of the manual (руководство = `Talmud-2.1.6.mdx`,
+> the current/authoritative edition)** — **not** `/z/` and **not** our algorithmic derivation:
+> - **Ряд** and **seṭ** are taken **from the manual**. A row letter with **no digit stays
+>   un-indexed** (do not force `1`/`2`); the `1`/`2` refinements are only where the manual gives
+>   them. `0`-variants are not created.
+> - **No methodology footnote** — the author declined it; FN-0001/0002 are marked `rejected`.
+> - **Whitney references** come from the manual; roots absent from Whitney simply carry no ref.
+> - `/z/` is retained **only as the paradigm deep-link** (Phase 4) — an older snapshot, outdated
+>   in places but still useful for the generated paradigms.
+> So Phase 3 is no longer "reconcile/adopt `/z/`" but **"transcribe the manual's own
+> Ряд/seṭ/Whitney catalog (Приложение 1 of `Talmud-2.1.6.mdx`) as authoritative, replacing derived
+> + `/z/` values."** This reconciliation stays as the audit trail of *why* the derived values were
+> untrustworthy.
 
 ## What this is
 
