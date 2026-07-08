@@ -26,6 +26,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   agreement therefore partly measures version difference, not fidelity.
 - Author correction (issue #50): `/z/`'s `0`-variant (`I0/N0/…`) + `L` rows and ṛ→`A1` values are
   `/z/` bugs; the printed manual (руководство) is ground truth for Ряд.
+- **Author ruling (I. E. Tolchelnikov, issue #50, 08-07-2026):** Ряд, seṭ and Whitney refs are taken
+  from the **latest manual = `Talmud-2.1.6.mdx`** (the current authoritative edition), not `/z/` and
+  not our derivation; un-indexed rows stay un-indexed; **no methodology footnote** (FN-0001/0002
+  marked `rejected`). `/z/` is kept only as the paradigm deep-link (outdated snapshot, still useful).
+
+### Changed
+- `footnote-proposals/proposals.yml`: FN-0001/0002 (derived Ряд/seṭ methodology notes) → `status: rejected`
+  per the author's issue-#50 ruling ("примечание не нужно").
 
 ## [0.1.0] - 2026-07-07
 ### Added
