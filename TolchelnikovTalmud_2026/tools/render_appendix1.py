@@ -22,6 +22,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 HERE = os.path.dirname(os.path.abspath(__file__))
 FOLDER = os.path.dirname(HERE)
 JSON = os.path.join(FOLDER, "data", "whitney_talmud.json")
+ZMAP = os.path.join(FOLDER, "data", "z_root_map.json")
 MDX = os.path.join(FOLDER, "talmud-appendix-1.mdx")
 
 BEGIN = "{/* AUTOGEN:appendix1-cohort BEGIN — regenerate with tools/render_appendix1.py */}"
@@ -32,20 +33,41 @@ def cell(v):
     return "—" if v in (None, "", []) else str(v)
 
 
+def load_z_urls():
+    """whitney_no -> samskrtam.ru/z/ verb.php URL (H329 deep-link; {} if map absent).
+
+    Where a Whitney root has >1 /z/ row (primary listing + a high-id s-mobile/variant
+    cross-reference, e.g. kṛ id=594 vs skṛ id=895), deep-link to the lowest z_id."""
+    if not os.path.exists(ZMAP):
+        return {}
+    z = json.load(open(ZMAP, encoding="utf-8"))
+    best = {}
+    for r in z["roots"]:
+        w = r.get("whitney_no")
+        if not w:
+            continue
+        if w not in best or r["z_id"] < best[w][0]:
+            best[w] = (r["z_id"], r["z_url"])
+    return {w: url for w, (_, url) in best.items()}
+
+
 def main():
     d = json.load(open(JSON, encoding="utf-8"))
+    z_urls = load_z_urls()
     first = [r for r in d["verbal_roots"] if r["cohort"] == "first"]
     first.sort(key=lambda r: (r["dcs_rank"] if r["dcs_rank"] else 10**9, r["root_iast"]))
 
     lines = []
-    lines.append("| DCS-ранг | № Уитни | √ | Ряд* | seṭ* | Класс | p.p.p. | Значение |")
-    lines.append("| ---: | ---: | :--- | :---: | :---: | :--- | :--- | :--- |")
+    lines.append("| DCS-ранг | № Уитни | √ | Ряд* | seṭ* | Класс | p.p.p. | Значение | /z/ |")
+    lines.append("| ---: | ---: | :--- | :---: | :---: | :--- | :--- | :--- | :---: |")
     for r in first:
         cls = "/".join(r["class"]) if r["class"] else "—"
+        zurl = z_urls.get(r["whitney_no"])
+        zcell = f"[↗]({zurl})" if zurl else "—"
         lines.append(
             f"| {cell(r['dcs_rank'])} | {cell(r['whitney_no'])} | "
             f"`{r['root_iast']}` | {cell(r['ryad'])} | {cell(r['set'])} | "
-            f"{cls} | {cell(r['ppp'])} | {cell(r['gloss'])} |"
+            f"{cls} | {cell(r['ppp'])} | {cell(r['gloss'])} | {zcell} |"
         )
     table = "\n".join(lines)
 
@@ -54,7 +76,9 @@ def main():
         f"Ниже — **первая когорта** ({len(first)} наиболее частотных по DCS корней, ранг ≤ 50), "
         f"с которой начинается самостоятельное изучение. Полный каталог всех "
         f"{counts['verbal_roots']} глагольных корней Уитни — в машиночитаемом виде в "
-        f"[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json)."
+        f"[`data/whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json). "
+        f"Ссылка **↗** в столбце «/z/» ведёт на полную сгенерированную парадигму корня в "
+        f"базе [samskrtam.ru/z/](https://samskrtam.ru/z/) (Толчельников/Широбоков)."
     )
     block = f"{BEGIN}\n\n{intro}\n\n{table}\n\n{END}"
 

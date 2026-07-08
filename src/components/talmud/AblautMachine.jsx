@@ -106,6 +106,14 @@ export default function AblautMachine() {
               : '(ряд — предложение, требует проверки)'}
             . Показан только чередующийся элемент корня, не вся словоформа. Ряд —
             производная величина, не утверждение автора: см. footnote-proposals.
+            {example.z_url && (
+              <>
+                {' '}
+                <a href={example.z_url} target="_blank" rel="noopener noreferrer">
+                  полная парадигма на samskrtam.ru/z/ ↗
+                </a>
+              </>
+            )}
           </>
         ) : (
           <>

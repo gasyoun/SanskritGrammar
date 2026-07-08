@@ -55,3 +55,5 @@ ApteSyntax_1885/src/**
 # H241 Phase-3 enrichment crosswalk: derived data asset + reproducible generators
 !TolchelnikovTalmud_2026/data/
 !TolchelnikovTalmud_2026/tools/
+# H329: raw /z/ scrape cache stays local (guardrail — commit only the derived join map)
+TolchelnikovTalmud_2026/data/raw_cache/

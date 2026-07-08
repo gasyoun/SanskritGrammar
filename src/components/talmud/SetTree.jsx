@@ -103,6 +103,14 @@ export default function SetTree() {
         <p className={styles.caption}>
           √{ex.root}: p.p.p. <b>{ex.ppp}</b> → распознан как <b>{ex.set}</b>{' '}
           (вывод по соединительной гласной причастия — advisory, gated).
+          {ex.z_url && (
+            <>
+              {' '}
+              <a href={ex.z_url} target="_blank" rel="noopener noreferrer">
+                проверить на samskrtam.ru/z/ ↗
+              </a>
+            </>
+          )}
         </p>
       )}
 
