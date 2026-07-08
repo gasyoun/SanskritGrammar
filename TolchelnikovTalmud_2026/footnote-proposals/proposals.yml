@@ -112,3 +112,24 @@ proposals:
     evidence: "WhitneyRoots/crosswalk/roots.csv whitney_no=24; dcs_rank=11, dcs_freq=9447"
     status: pending
     approved_by: null
+  - id: FN-0015
+    target: { section: "II", root: "√kṣar" }
+    type: set-correction
+    proposal: "√kṣar «течь»: ряд чередования в базе /z/ и каталоге — R₂, тогда как у Зализняка (1975, раздел «Ряды чередования I, U, R»; таблица «Распределение по типам» [1975: 79]) корень отнесён к R₁, тип II, seṭ. Прошу автора подтвердить нормативный индекс (R₁ vs R₂) — единственное содержательное расхождение Талмуда с классификацией Зализняка 1975 в переякоренной выборке H357."
+    evidence: "ZalizniakMorphology_1975 (раздел I/U/R, Таблица 4, R₁ type-II колонка); TolchelnikovTalmud_2026/data/z_root_map.json (z_series=R2); H357 morphoclass_crosswalk_1975_2014_2026.csv"
+    status: pending
+    approved_by: null
+  - id: FN-0016
+    target: { appendix: "1", scope: "весь столбец Ряд*" }
+    type: whitney-ref
+    proposal: "Подтверждение issue #50: «нулевые» ряды I0/N0/R0/U0/M0 (и ложные строки L) в базе /z/ — ошибка обработки Таблицы 2, а не категория классификации. Их следует официально исключить из всех производных артефактов (каталог, виджет, кросс-уок). Инвентарь рядов A–N с индексами 1/2 тождествен у Зализняка 1975, Гасунса 2014 и в рукописи Толчельникова 2026."
+    evidence: "issue #50 (авторская реплика И. Е. Толчельникова, 08-07-2026); TolchelnikovTalmud_2026/data/z_reconciliation_report.md (115 structural-bug rows)"
+    status: pending
+    approved_by: null
+  - id: FN-0017
+    target: { section: "конкорданс", root: "—" }
+    type: whitney-ref
+    proposal: "§-конкорданс (раздел «Конкорданс с Зализняком») атрибутирует ядро движка Талмуда — нумерованные морфологические позиции, исчисление типов, порождение по рядам — «Очерку» 1978 г. Однако этот аппарат восходит к статье 1975 г., которую Очерк 1978 не содержит. Предлагается поразрядная атрибуция: позиции/тип/порождение → 1975; запись I/II + полные парадигмы/сандхи → 1978; диахрония/когнаты → 2004 — вместо сплошного «→ Очерк 1978»."
+    evidence: "MORPHOCLASS_3WAY_MEMO.md §4.3; ZALIZNYAK_1975_1978_2004_COMPARISON.md (§ «What it means for us», п.1); ZalizniakMorphology_1975 (морфологические позиции 1/2/3, типы I–IV)"
+    status: pending
+    approved_by: null

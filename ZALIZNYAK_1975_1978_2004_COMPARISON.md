@@ -75,12 +75,15 @@ Whitney shown as the full-grammar baseline; the three Zaliznyak columns are the 
 2. **"The Талмуд develops Zaliznyak" = it revives the 1975 line Zaliznyak himself abandoned.**
    Positions, the type calculus, and full generativity are exactly what he dropped in the more
    traditional 1978/2004 works. That is the memo's headline.
-3. **The `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are Толчельников's own extension** — they
-   appear in **none** of the three Zaliznyak works (all use only subscript 1/2). Толчельников
-   (a student of М. Гасунс) added them; А. П. Широбоков built only the `/z/` **computer model**
-   of Толчельников's morphology, not the classification. So where `/z/` is "richer" than our
-   Table-2 derivation, those are **authoritative author values** — a point already logged to
-   [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50).
+3. **The `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are a `/z/` DB bug, NOT a real category**
+   — corrected 08-07-2026 (H357). The author (I. E. Tolchelnikov) stated on
+   [issue #50](https://github.com/gasyoun/SanskritGrammar/issues/50): «Рядов `I0`, `N0`, `R0`,
+   `U0`, `M0` не существует — это ошибка обработки Таблицы 2 в базе `/z/`». So they are neither
+   Zaliznyak's (all three works use only subscript 1/2), nor Gasuns's, nor Tolchelnikov's own
+   extension — they are **115 buggy rows in А. П. Широбоков's `/z/` computer model** of the
+   Talmud, to be **discarded**. The ryad inventory is therefore **identical** across all three
+   works; the apparent "extension" was an implementation artefact. (This supersedes the earlier
+   reading of these rows as an authoritative author extension.)
 4. **Тип is relabeled, not inherited** — Talmud Тип (s/a/v) ≠ Zaliznyak 1975 Тип (I–IV).
 5. **"По Зализняку" is ambiguous** — three paradigms mean footnotes/companion text must cite
    **which** work (1975 / 1978 / 2004). And none of them is the "full grammar" — that role is
