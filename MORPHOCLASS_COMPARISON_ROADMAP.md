@@ -21,6 +21,20 @@ anchors — this file is the plan, not the analysis.
 | 2014 | М. Гасунс, «Морфонологическая запись глагольных корней санскрита» (PhD, Russian) | [`GasunsDhatu_2014/Морфонологическая запись глагольных корней санскрита.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx) + [`02_gasuns-dhatu-PhD-text2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx) + [`О записи омонимии корней…`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014) | Middle term. Its abstract **explicitly** says «Автор **развивает разработки акад. Зализняка**» (e.g. √vAsH → **√vás(i)** = «неполноизменяемый корень, группа seṭ»), and compares Zaliznyak's deep-morpheme notation against Western root-lists (Morgenroth, Werba). A prior comparison the memo builds on. |
 | 2026 | И. Е. Толчельников, «Санскритская морфология: руководство» / Талмуд | [`TolchelnikovTalmud_2026/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026) + the [`samskrtam.ru/z/`](https://samskrtam.ru/z/) root DB (Shirobokov) | Endpoint: develops the classification into a full **generative MTT engine** — Ряд A–N, morphological positions 1/2/3, seṭ from Whitney, surface-form computation. |
 
+## Intra-Zaliznyak axis — his three works use different paradigms (first pass DONE)
+
+Zaliznyak described Sanskrit **three times with a different model each time**, so "по
+Зализняку" is ambiguous. First-pass structural comparison is complete —
+[`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md):
+**5 major · 6 medium · 6 minor** differences across 12 axes. Headline for the memo: the
+Талмуд's core engine (**numbered positions 1/2/3**, the **root-type calculus**,
+position-driven generation) comes from **1975**, which the **1978 Очерк our §-concordance
+points at ABSENTS** — so the Талмуд revives the 1975 line Zaliznyak himself dropped, and the
+concordance should attribute per-mechanism (1975 vs 1978 vs 2004), not blanket "→ Очерк 1978".
+Also resolved: the `0`-subscript Ряд variants (I0/M0/N0/R0/U0) are in **none** of the three
+Zaliznyak works — a Tolchelnikov/Shirobokov/Gasuns addition. The H357 pass deepens this
+against the full texts.
+
 ## ⚠ Terminology trap (must not be conflated)
 
 - **Ряд (ablaut series A–N)** — the vowel-grade series of the Talmud/Zaliznyak
