@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.0] - 2026-07-08
 ### Added
 - **2026 print-edition execution (H328).** Executed the
   [`revision-2026/IMPROVEMENT_ROADMAP.md`](revision-2026/IMPROVEMENT_ROADMAP.md)
