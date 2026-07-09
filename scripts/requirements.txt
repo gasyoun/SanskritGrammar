@@ -1,0 +1,3 @@
+# Python dependencies for the SanskritGrammar build scripts.
+# build_whitney.py regenerates paradigm-table Devanagari from Whitney's IAST (H427).
+indic_transliteration>=2.3.0
