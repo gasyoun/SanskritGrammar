@@ -1,6 +1,6 @@
 # RWS-проход «Совет филологов» по прозе диссертации — отчёт для издательского редактора
 
-_Created: 07-07-2026 · Last updated: 07-07-2026_
+_Created: 07-07-2026 · Last updated: 09-07-2026_
 
 Отчёт по решению MG Q6 (06-07-2026): агентная стилистическая критика прозы книги
 «Состав и строй древнеиндийских корней» перед передачей человеку-издательскому
@@ -24,7 +24,7 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
   `deepseek-v4-flash`); совет — `deepseek-v4-pro`, при сбоях формата JSON — повтор на
   `deepseek-chat` (7 из 28 советов). Оркестрация, агрегирование и курирование отчёта —
   Fable 5 (`claude-fable-5`).
-- **Объём:** основной текст [02_gasuns-dhatu-PhD-text2.mdx](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx)
+- **Объём:** основной текст [02_gasuns-dhatu-PhD-text2.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx)
   (Введение … Заключение, без библиографии и справочного аппарата) + 3 статьи-приложения;
   456 тыс. знаков прозы, порезанных на 28 фрагментов ≤ 20 тыс. знаков по границам глав и
   абзацев. Таблицы (`rst-table`) и иллюстрации при рецензировании опускались с плейсхолдером.
@@ -32,7 +32,7 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
   minor 1) + бонус за согласие независимых рецензентов (+2 за каждый стиль после первого).
   Решения совета (28/28 завершены) на балл не влияют — ранжируют только независимые рецензии.
 - **Дата прогона:** 07-07-2026. Строки указаны по состоянию файлов в ветке
-  `chore/errata-kochergina-waiting` на эту дату.
+  `main` на эту дату.
 
 ## 2. Сводная статистика
 
@@ -95,7 +95,7 @@ _Created: 07-07-2026 · Last updated: 07-07-2026_
 признанием субъективности всех критериев (№ 8, Заключение); заявленный отказ от
 «звёздочек»-реконструкций, тут же названных «интересным материалом» (№ 4, Введение);
 в статье 3 проза 2014 г. противоречит собственным таблицам (№ 17 — частично уже снято
-пересчётом Табл. 5 в [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/errata.yml),
+пересчётом Табл. 5 в [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/errata.yml),
 H246, но формулировки «набирают популярность лабиальные и церебральные» в тексте статьи
 остались). Плюс риторические вопросы в роли связок («Откуда проистекает расхождение…?»,
 «Чем же объясняется…?») — там, где нужен обычный повествовательный переход. Резкие
@@ -140,13 +140,13 @@ H246, но формулировки «набирают популярность 
 примера (№ 6). **Рекомендация к переписыванию (человеком):** перестроить Заключение как
 верификацию десяти положений — по абзацу на положение: формулировка → где в тексте
 доказано (ссылка на §) → статус на 2026 г. Черновики переформулировок П1/П4/П9 и вопросы
-по П7/П10 уже лежат в [PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/PROPOSALS.md)
+по П7/П10 уже лежат в [PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PROPOSALS.md)
 §1 — Заключение должно собираться из них, а не параллельно им; фактическую базу даёт
 раздел «Состояние вопроса на 2026 год» (уже в книге).
 
 ### 4.2. «Актуальность» во Введении (Крылов)
 
-Одно предложение ([строка 117](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L117)),
+Одно предложение ([строка 117](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L117)),
 которое (а) тавтологично — «актуальность… определяется… не потерявших своей
 актуальности»; (б) не называет исследовательскую лакуну; (в) не отделено от новизны.
 **Предложение структуры** (3 предложения, не правилось): 1) системная роль глагольного
@@ -158,7 +158,7 @@ H246, но формулировки «набирают популярность 
 ### 4.3. Переход Бюлер/Уитни → Вестергаард (с. 41 печатного текста; Волошина)
 
 В файле это стык
-[строк 639–641](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L639):
+[строк 639–641](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L639):
 абзац завершает полемику Уитни–Бюлера–Эдгрена фразой про Либиха 1920–30-х гг., и без
 всякой связки следующий абзац начинает «Помимо Р. К. Раска… известен ещё по крайней
 мере один датский санскритолог, Н. Л. Вестергаард» — скачок и тематический (полемика →
@@ -171,7 +171,7 @@ H246, но формулировки «набирают популярность 
 
 ### 4.4. «Объект» и «предмет» исследования (C7, Парибок)
 
-[Строки 121–123](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L121):
+[Строки 121–123](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L121):
 сейчас **предмет** = «системные отношения среди первичных и вторичных рядов глагольных
 корней», а **объект** = «научные теории… за последние двести лет». Это инверсия
 привычной для русской диссертационной традиции пары: объект — само явление/материал,
@@ -192,7 +192,7 @@ H246, но формулировки «набирают популярность 
 существенных от разных рецензентов; полный веер — в JSON-артефактах прогона) →
 предложение правки. Замечания Д4 (IAST) здесь притоплены — см. §3/Д4.
 
-### 1. Глава 2 — [02_gasuns-dhatu-PhD-…:1996](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1996)
+### 1. Глава 2 — [02_gasuns-dhatu-PhD-…:1996](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1996)
 
 > В Древней Индии корни слов не рассматривались как нечто имеющее реальное существование. Корни рассматривались как теоретические абстракции. Насколько мы можем судить, не все из них считались первичными и далее неразложим…
 
@@ -204,7 +204,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить контекст: указать, в какой школе (например, Панинийская) формировалось это понятие, как комментарии (бхашьи, варттики) развивали или оспаривали взгляды на корни, какие авторитеты стояли за разными классификациями.
 - _…и ещё 11 замечаний(я) от 6 рецензентов — см. приложение._
 
-### 2. Глава 2 — [02_gasuns-dhatu-PhD-…:1998](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1998)
+### 2. Глава 2 — [02_gasuns-dhatu-PhD-…:1998](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1998)
 
 > То, что Панини должен был предположить наличие шипящего звука в таких корнях, как *majj* и *bhrajj,* уже весьма интересно; также выбор формы, оканчивающейся на дифтонги, как *gai*, *styai*, в качестве репрезентативной, х…
 
@@ -216,7 +216,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Уточнить, какое именно правило Панини (например, 8.2.36) требует шипящего, и показать, как это связано с санскритской морфонологией.
 - _…и ещё 6 замечаний(я) от 6 рецензентов — см. приложение._
 
-### 3. Глава 3 — [02_gasuns-dhatu-PhD-…:2669](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2669)
+### 3. Глава 3 — [02_gasuns-dhatu-PhD-…:2669](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2669)
 
 > Из более 800 корней у Уитни около 200 встречаются только в древних текстах, 500 -- как в древних, так и в классических и около 150 -- только в позднейших текстах. Заведомо допущенная Бакнеллом досадная опечатка (пропуск …
 
@@ -228,7 +228,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Покажите, что расхождения между списками Уитни, Бакнелла и индийской традицией (Панини, дхатупатха) являются следствием разных принципов канонизации корней: один ориентирован на ведийский корпус, другой — на классический санскрит. Опечатка может служить примером того, как текстологическая случайность влияет на восприятие традиции.
 - _…и ещё 6 замечаний(я) от 6 рецензентов — см. приложение._
 
-### 4. Введение — [02_gasuns-dhatu-PhD-…:359](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L359)
+### 4. Введение — [02_gasuns-dhatu-PhD-…:359](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L359)
 
 > Здесь почти отсутствуют столь привычные в работах по компаративистике «звездочки», двойные и одинарные, а также «крестики» никогда не существовавших форм [ср. Collinge 1985, XVII], хотя порой они содержат интересный с то…
 
@@ -240,7 +240,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Привести хотя бы один пример порождающего правила или сослаться на соответствующее исследование. Иначе снять это утверждение как неподкреплённое.
 - _…и ещё 4 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 5. Глава 2 — [02_gasuns-dhatu-PhD-…:2002](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2002)
+### 5. Глава 2 — [02_gasuns-dhatu-PhD-…:2002](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2002)
 
 > Откуда проистекает расхождение в количестве корней? Наше мнение таково, что вряд ли вообще существуют объективные критерии классификации корпуса корней; каждый список отражает воззрения его составителя на языковой матери…
 
@@ -252,7 +252,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Либо привести аргументы в пользу отсутствия объективных критериев (например, указать на неоднозначность морфемного членения), либо предложить конкретный набор критериев (фонологическая форма, продуктивность, семантическое поле).
 - _…и ещё 5 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 6. Заключение — [02_gasuns-dhatu-PhD-…:3420](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3420)
+### 6. Заключение — [02_gasuns-dhatu-PhD-…:3420](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3420)
 
 > В процессе работы выявились существенные различия между пониманием термина «корень» в индийской грамматической традиции и в современной лингвистике, что еще больше затрудняет установление известного эталона. Для санскрит…
 
@@ -264,7 +264,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Сослаться на конкретные трактаты (например, «Ньяя» или «Вьякарана») и работы современных исследователей, подтверждающих системность.
 - _…и ещё 4 замечаний(я) от 6 рецензентов — см. приложение._
 
-### 7. Введение — [02_gasuns-dhatu-PhD-…:357](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L357)
+### 7. Введение — [02_gasuns-dhatu-PhD-…:357](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L357)
 
 > Помимо этого, представленная нами работа обходит достаточно интересные вопросы ударения (акцентологии, а акцентная характеристика, как известно, в древнеиндийском привязана к корню), потому что для нас важнее возможность…
 
@@ -276,7 +276,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавьте обоснование: сошлитесь на работы Зализняка или других авторов по акцентологии. Если тема опускается намеренно, объясните причину строже: "Мы сознательно не рассматриваем акцентологию, так как...".
 - _…и ещё 4 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 8. Заключение — [02_gasuns-dhatu-PhD-…:3418](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3418)
+### 8. Заключение — [02_gasuns-dhatu-PhD-…:3418](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3418)
 
 > Полноту решения поставленной задачи -- показать первичность глагольной системы в древнеиндийском языкознании -- считаем исчерпывающей, так как наличие современных работ прикладного характера в данной области не заменяет …
 
@@ -288,7 +288,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить оговорку: 'Хотя отдельные аспекты (например, лексикостатистика, типологические универсалии) были разработаны в XX веке, основные принципы реконструкции, сформулированные младограмматиками, остаются в силе'. Или сосредоточиться на конкретной области (морфонологии), где сдвиги минимальны.
 - _…и ещё 5 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 9. Глава 1 — [02_gasuns-dhatu-PhD-…:991](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L991)
+### 9. Глава 1 — [02_gasuns-dhatu-PhD-…:991](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L991)
 
 > Первое дошедшее до наших дней упоминание *dhātu* (хотя это всего лишь абстракция, но зато очень древняя)* --* весьма древнее и восходит к строке *atyaṃ haviḥ sacate sac ca dhātu cā*[^32] [цит. по Nooten, Holland 1994, 32…
 
@@ -300,7 +300,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить: 'РВ 5.12.2' или другую точную ссылку.
 - _…и ещё 3 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 10. Глава 3 — [02_gasuns-dhatu-PhD-…:3224](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3224)
+### 10. Глава 3 — [02_gasuns-dhatu-PhD-…:3224](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3224)
 
 > по классификации Зализняка. А по дополнительной таблице «Распределение корней по признаку *aniṭ*-*seṭ*» [Зализняк 1975, 83], корни можно было бы поместить в раздел «Прочие корни», тип II, корни ряда A1 под корень-ярлык «…
 
@@ -312,7 +312,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Проверить ссылку и указать точное название таблицы или исправить номер страницы.
 - _…и ещё 4 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 11. Глава 1 — [02_gasuns-dhatu-PhD-…:911](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L911)
+### 11. Глава 1 — [02_gasuns-dhatu-PhD-…:911](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L911)
 
 > То, что древнеиндоевропейский язык представляет ценный материал для сравнительного языкознания [Szemerényi 1989], находится вне всяких сомнений, впрочем, как и то, что огромное количество наших представлений об индоевроп…
 
@@ -324,7 +324,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить абзац о роли ведийских школ (шакх) и грамматической традиции (Панини, Яска) в фиксации и передаче глагольных форм, упомянув, что именно устная передача и комментирование (бхашья) создавали условия для вычленения корней.
 - _…и ещё 3 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 12. Введение — [02_gasuns-dhatu-PhD-…:361](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L361)
+### 12. Введение — [02_gasuns-dhatu-PhD-…:361](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L361)
 
 > Чем же объясняется противоположность реконструкции и порождающей грамматики? Единство порождения одного (конкретного отрезка в истории определенного) языка у исходной глубинной формы, на основе которой формулируются прав…
 
@@ -336,7 +336,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Заменить на повествование: 'Противоположность реконструкции и порождающей грамматики объясняется...'
 - _…и ещё 3 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 13. Обзор литературы — [02_gasuns-dhatu-PhD-…:747](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L747)
+### 13. Обзор литературы — [02_gasuns-dhatu-PhD-…:747](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L747)
 
 > Материал отдельных индоевропейских языков ограничен засвидетельствованными в текстах формами, цитируется в привычной для каждого отдельного языка форме. Из заведомо странных предложений авторов следует упомянуть «обильны…
 
@@ -348,7 +348,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Заменить на: 'анубандхи (anubandha) — вспомогательные маркеры в сутрах Панини (например, ṇi, ṭi), служащие для указания на фонологические или грамматические свойства. Согласно комментарию Катьяяны (vārttika ...), ...'.
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 14. Глава 2 — [02_gasuns-dhatu-PhD-…:1327](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1327)
+### 14. Глава 2 — [02_gasuns-dhatu-PhD-…:1327](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1327)
 
 > Так как мы имеем дело с ярко выраженным флективным языком, многие корни санскрита встречаются в лексемах нескольких склонений / спряжений. В основном это достигается путем суффиксации, однако в некоторых случаях задейств…
 
@@ -358,7 +358,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить абзац, связывающий европейские определения с индийской школьной традицией: например, как Панини определяет dhātu, как комментаторы (бхашьи) трактуют корень, и в чем состоит различие между аналитическим и техническим комментарием в данном контексте.
 - _…и ещё 3 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 15. Глава 3 — [02_gasuns-dhatu-PhD-…:3410](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3410)
+### 15. Глава 3 — [02_gasuns-dhatu-PhD-…:3410](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3410)
 
 > Чтобы наглядно проиллюстировать насколько внешне непохожими бывает один и тот же корень в разных перечнях, возьмем предполседный корень из списка Пальсуле. Корень √*hū* у Юэта и Рену называется √*hve* у Burnouf, Coulson,…
 
@@ -370,7 +370,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить вводную фразу: «Показательно, что даже один и тот же корень может записываться по-разному в зависимости от традиции. Например, корень √hū у Юэта и Рену…».
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 16. Заключение — [02_gasuns-dhatu-PhD-…:3422](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3422)
+### 16. Заключение — [02_gasuns-dhatu-PhD-…:3422](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3422)
 
 > Что касается предложений по дальнейшим направлениям работы, то остается открытым вопрос о наиболее удачном с утилитарной точки зрения расположении материала. На основе определенной редакции реестра корней необходимо было…
 
@@ -382,7 +382,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Сослаться на работы А.В. Парибка (например, о статусе терминов) или на принципы лексикографии в Scholastic Sanskrit (Tubb & Boose 2007), чтобы обосновать необходимость разбивки по эпохам.
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 17. Статья 3 (Ряды согласных) — [Распределение рядов …:42](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85.mdx#L42)
+### 17. Статья 3 (Ряды согласных) — [Распределение рядов …:42](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85.mdx#L42)
 
 > В эпическом санскрите, по сравнению с ведийским срезом, набирают популярность лабиальные и особенно церебральные согласные. Остальные три ряда (то есть гуттуральные, палатальные, дентальные) почти не представлены.…
 
@@ -394,7 +394,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Переформулировать: «Для лабиальных и церебральных рядов статистически значимых изменений не обнаружено (p > 0,05); наибольший сдвиг — убывание дентальных (−4,20 п.п. по данным 2026 г.).»
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 18. Введение — [02_gasuns-dhatu-PhD-…:355](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L355)
+### 18. Введение — [02_gasuns-dhatu-PhD-…:355](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L355)
 
 > «Каждая грамматика индоевропейского языка исходит из определенной гипотезы [..] оставаясь всегда незаконченным отражением реконструируемого языка. [..] Мы до сих пор не можем составить даже самое тривиальное предложение …
 
@@ -404,7 +404,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Указать точные страницы цитируемого издания (Watkins 1969: 17) и убедиться, что все источники присутствуют в библиографическом списке. Привести полное библиографическое описание.
 - _…и ещё 3 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 19. Глава 1 — [02_gasuns-dhatu-PhD-…:1121](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1121)
+### 19. Глава 1 — [02_gasuns-dhatu-PhD-…:1121](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1121)
 
 > Выше уже отмечалось: грамматика Панини, какой мы ее знаем, содержит, помимо прочего, список глагольных корней, называемый *dhātupāṭha*. Среди ученых нет однозначного мнения, собрал ли данный список Панини сам или это сде…
 
@@ -416,7 +416,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Заменить «некоторые авторитетные ученые» на «Б. Либих (Liebich 1895) и Г. Пальсуле (Palsule 1961)» с соответствующими ссылками.
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 20. Глава 2 — [02_gasuns-dhatu-PhD-…:2000](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2000)
+### 20. Глава 2 — [02_gasuns-dhatu-PhD-…:2000](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2000)
 
 > Что же касается значения корней, то те из них, что приведены в дхатупатхе, не были задуманы как логически оправданные или научные. Для того чтобы оправдать включение того или иного корня в дхатупатху, значения «некоторог…
 
@@ -428,7 +428,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Привести 1–2 примера корней с 'ненаучным' значением и пояснить, в чём состоит ненаучность.
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 21. Глава 2 — [02_gasuns-dhatu-PhD-…:2004](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2004)
+### 21. Глава 2 — [02_gasuns-dhatu-PhD-…:2004](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2004)
 
 > В дальнейшем считаем целесообразным провести дополнительные статистические подсчеты, например: по частотности слогов различной длины (по жанрам); частотность «тяжелых» и «легких» слогов согласно древнеиндийскому традицио…
 
@@ -440,7 +440,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Сократить перечень статистических задач, оставив только те, что непосредственно относятся к анализу корней (например, частотность корневых структур).
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 22. Глава 3 — [02_gasuns-dhatu-PhD-…:3268](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3268)
+### 22. Глава 3 — [02_gasuns-dhatu-PhD-…:3268](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3268)
 
 > Сложно не согласиться с тем, что «реальный» метод обозначения «√*vás*(*i*)» смотрится куда более приятно глазу (не создавая эффекта башен) и интуитивно понятнее из-за наличия «*i*» вместо совершенно условного «√vAsH». Бо…
 
@@ -452,7 +452,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить ссылку на сутру, где определяется veṭ, например: 'veṭ (см. Aṣṭādhyāyī 7.2.44)'.
 - _…и ещё 3 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 23. Глава 1 — [02_gasuns-dhatu-PhD-…:915](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L915)
+### 23. Глава 1 — [02_gasuns-dhatu-PhD-…:915](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L915)
 
 > Это можно объяснить тем, что, в то время как в других индоевропейских языках образование слов по модели аналогии произошло уже в долитературную эпоху (например, *iunxi*), в древнеиндийском языке этот же процесс часто раз…
 
@@ -464,7 +464,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Пояснить: 'например, лат. iunxi «я соединил» (ср. iungo) или аналогичная форма из другого ИЕ языка'. Или заменить на более релевантный пример.
 - _…и ещё 2 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 24. Глава 1 — [02_gasuns-dhatu-PhD-…:933](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L933)
+### 24. Глава 1 — [02_gasuns-dhatu-PhD-…:933](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L933)
 
 > Такое деление послужило твердой основой для дальнейшего этимологического теоретизирования. Похоже, что это было революционным нововведением в те отдаленные дни, которое засвидетельствовано в *Taittirīya Samhitā* VI 4.7.3…
 
@@ -476,7 +476,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Указать полную ссылку: *Taittirīya Samhitā* VI.4.7.3, и кратко описать контекст (миф о разделении речи Индрой).
 - _…и ещё 2 замечаний(я) от 5 рецензентов — см. приложение._
 
-### 25. Глава 2 — [02_gasuns-dhatu-PhD-…:1225](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1225)
+### 25. Глава 2 — [02_gasuns-dhatu-PhD-…:1225](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1225)
 
 > В индийском понимании это не корень растения. Это некий «первоэлемент». В грамматической литературе термин *dhātu* встречается до Панини [Rocher 1969:81] и его последователей. Уже Яска в труде «Нирукте», который посвящен…
 
@@ -488,7 +488,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить: 'Яска в 'Нирукте' не просто вводит термин dhātu, а устанавливает преемственность этимологического анализа, на которую позднее будут опираться комментаторы Панини.'
 - _…и ещё 2 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 26. Глава 3 — [02_gasuns-dhatu-PhD-…:2150](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2150)
+### 26. Глава 3 — [02_gasuns-dhatu-PhD-…:2150](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2150)
 
 > Причина, по которой тот или иной корень не проходит не дифференцируется и в списке «нелегальных», то есть неправильных, одни и те же корни могу иметь два (например, *daridrā*) или даже все три признака (например, *heramb…
 
@@ -500,7 +500,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Разъяснить: 'Причина, по которой корень не проходит в «чистый» список, не дифференцируется: один и тот же корень может обладать двумя или тремя признаками непригодности'. Пример с daridrā и heramb требует указания, какие именно признаки сочетаются.
 - _…и ещё 1 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 27. Глава 3 — [02_gasuns-dhatu-PhD-…:3390](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3390)
+### 27. Глава 3 — [02_gasuns-dhatu-PhD-…:3390](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3390)
 
 > Пальсуле во многом опирается на грамматику Панини и приложения к ней в редакции Бётлинка, об этом косвенно свидетельствуют сноски к отдельным глоссам. Но Бётлинковское издание -- это переработка списка Вестергаарда (на п…
 
@@ -512,7 +512,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* После цитаты Бётлинка добавить связку: «Это замечание характерно для западных комментаторов XIX в., которые, с одной стороны, признавали авторитет Панини, а с другой — стремились критически пересмотреть состав корней, что отражает напряжённость между уважением к традиции и требованиями филологической точности.»
 - _…и ещё 2 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 28. Глава 3 — [02_gasuns-dhatu-PhD-…:3392](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3392)
+### 28. Глава 3 — [02_gasuns-dhatu-PhD-…:3392](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3392)
 
 > Бётлинк отдает себе отчет, что из-за объединения нескольких источников в единый текст приложений попали «испорченные и неправильные словоформы» (verdorbene und falsche Wortformen) [Boethlingk 1887, 301\*]. Но риск искале…
 
@@ -524,7 +524,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить ссылку на соответствующую сутру: например, 'Пальсуле (1955, с. 33) не включает *2aṭ* в список Панини, поскольку он отсутствует в предписаниях сутры 1.3.1 (bhūvādayaḥ).'
 - _…и ещё 2 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 29. Введение — [02_gasuns-dhatu-PhD-…:115](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L115)
+### 29. Введение — [02_gasuns-dhatu-PhD-…:115](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L115)
 
 > Один из центральных вопросов индийской грамматической традиции связан с понятием глагольного корня («*der Urstoff der Wörter*»). Несмотря на отведенную ему значимую роль в структуре лингвистического описания, давно созре…
 
@@ -534,7 +534,7 @@ H246, но формулировки «набирают популярность 
   - *Правка:* Добавить пример из Ригведы, иллюстрирующий понятие корня, например: 'В РВ I.1.1 форма agnim содержит корень √agni-?', с разбором словоформы.
 - _…и ещё 2 замечаний(я) от 4 рецензентов — см. приложение._
 
-### 30. Обзор литературы — [02_gasuns-dhatu-PhD-…:501](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L501)
+### 30. Обзор литературы — [02_gasuns-dhatu-PhD-…:501](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L501)
 
 > Исходя из вышеописанного предположения, можно сделать вывод, что санскрит и ведийский язык рассматриваются индийской филологической традицией как варианты одного и того же языкового состояния. Когда Панини, «Гомер лингви…
 
@@ -568,113 +568,210 @@ H246, но формулировки «набирают популярность 
 
 | № | Раздел | Место | Балл | Стилей | Замечаний | Типы (top) | Фрагмент |
 |---:|---|---|---:|---:|---:|---|---|
-| 31 | Обзор литературы | [02_gasuns-dhatu-PhD-…:655](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L655) | 13 | 5 | 5 | `missing_iast_on_first_mention`, `missing_tradition_context` | Корни упорядочены в гнезда, например, корень *yā* имеет подразделы по префиксам[… |
-| 32 | Обзор литературы | [02_gasuns-dhatu-PhD-…:595](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L595) | 13 | 4 | 5 | `missing_iast_on_first_mention`, `weak_parallel` | Автор определяет «около 200» корней как свойственные исключительно раннему языку… |
-| 33 | Обзор литературы | [02_gasuns-dhatu-PhD-…:717](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L717) | 13 | 4 | 4 | `missing_iast_on_first_mention`, `missing_tradition_context` | Рабочее название данной, по сути, библиографии было «Корни санскрита. Классифика… |
-| 34 | Обзор литературы | [02_gasuns-dhatu-PhD-…:723](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L723) | 13 | 5 | 5 | `missing_context_of_hymn`, `missing_authority_chain` | Не в пример оригинальной дхатупатхе и в отличие от Уитни, у Вербы представлены л… |
-| 35 | Глава 2 | [02_gasuns-dhatu-PhD-…:1387](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1387) | 13 | 4 | 5 | `missing_context_of_hymn`, `missing_authority_chain` | Степень условности корней можно проиллюстрировать на примере корня *kṛ*, который… |
-| 36 | Глава 2 | [02_gasuns-dhatu-PhD-…:1473](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1473) | 13 | 4 | 5 | `missing_iast_on_first_mention`, `unsupported_semantization` | Корни, по другой версии, есть воображаемые источники как имен существительных, т… |
-| 37 | Глава 3 | [02_gasuns-dhatu-PhD-…:3054](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3054) | 13 | 4 | 4 | `missing_context_of_hymn`, `missing_authority_chain` | Но тут хотя бы прослеживается последовательность. Что происходит, если номера эп… |
-| 38 | Заключение | [02_gasuns-dhatu-PhD-…:3416](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3416) | 13 | 4 | 4 | `missing_source`, `missing_tradition_context` | Продолжение и посильное углубление предпринятого в области санскритской морфонол… |
-| 39 | Статья 2 (Омонимия) | [О записи омонимии ко…:18](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L18) | 13 | 4 | 5 | `missing_source`, `weak_genre_framing` | ***Аннотация***. Автор на примере корня √dā и его омонимов показывает, что между… |
-| 40 | Обзор литературы | [02_gasuns-dhatu-PhD-…:395](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L395) | 12 | 4 | 4 | `missing_context_of_hymn`, `weak_genre_framing` | На основе так называемого «Малого Петербургского словаря» [Böhtlingk 1879--1889,… |
-| 41 | Обзор литературы | [02_gasuns-dhatu-PhD-…:601](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L601) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | Другое дело, что в результате попытки разобраться в этом они пришли к выводам, к… |
-| 42 | Глава 1 | [02_gasuns-dhatu-PhD-…:979](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L979) | 12 | 4 | 5 | `missing_iast_on_first_mention`, `missing_tradition_context` | Следует отметить, что много полезных для нашего исследования сведений сообщается… |
-| 43 | Глава 2 | [02_gasuns-dhatu-PhD-…:1233](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1233) | 12 | 3 | 5 | `missing_iast_on_first_mention`, `missing_context_of_hymn` | Первое, это сутра «*bhūvādayo dhātavaḥ*», которую можно перевести как «те, котор… |
-| 44 | Глава 2 | [02_gasuns-dhatu-PhD-…:1491](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1491) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_authority_chain` | Количество и классификация этих засвидетельствованных корней, соответственно, мо… |
-| 45 | Глава 2 | [02_gasuns-dhatu-PhD-…:1577](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1577) | 12 | 4 | 4 | `anachronistic_sanskrit_period`, `mistranslated_native_term` | *Ошибки письма*. Нет списка без ошибок. Ошибок может быть больше или меньше. Наи… |
-| 46 | Глава 3 | [02_gasuns-dhatu-PhD-…:2643](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2643) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | - *yukṣvā hi tvaṃ rathāsahā yuvasva poṣyā vaso* [Ригведа VII, 26, 20]… |
-| 47 | Глава 3 | [02_gasuns-dhatu-PhD-…:3040](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3040) | 12 | 3 | 5 | `missing_iast_on_first_mention`, `unsupported_semantization` | > Но опять же № 351 *4dā* clear, который превосходно мог бы соответствовать [EWA… |
-| 48 | Статья 2 (Омонимия) | [О записи омонимии ко…:42](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L42) | 12 | 4 | 4 | `unattributed_commentary`, `unsupported_semantization` | После пересчета выяснилось, что суммарное количество омонимов: у Пальсуле [Palsu… |
-| 49 | Обзор литературы | [02_gasuns-dhatu-PhD-…:369](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L369) | 11 | 3 | 4 | `missing_iast_on_first_mention`, `weak_genre_framing` | Самый сложный раздел в грамматике санскрита (в широком его смысле), несомненно, … |
-| 50 | Обзор литературы | [02_gasuns-dhatu-PhD-…:639](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L639) | 11 | 4 | 4 | `missing_iast_on_first_mention`, `accidental_similarity` | Основная часть корней естественным способом распределяются на более узкие или ши… |
-| 51 | Глава 1 | [02_gasuns-dhatu-PhD-…:921](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L921) | 11 | 3 | 4 | `missing_source`, `inappropriate_source` | Говоря словами классика индологии М. Мюллера: «Разница между арийскими языками и… |
-| 52 | Глава 1 | [02_gasuns-dhatu-PhD-…:1105](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1105) | 11 | 3 | 4 | `missing_sutra_reference`, `missing_commentary_layer` | Панини, по одной из версий, также автор *dhātupāṭhaḥ*, которая содержит полный с… |
-| 53 | Глава 3 | [02_gasuns-dhatu-PhD-…:2012](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2012) | 11 | 4 | 4 | `missing_source`, `weak_genre_framing` | Грамматический строй санскрита и глагольная система в частности -- это не просто… |
-| 54 | Заключение | [02_gasuns-dhatu-PhD-…:3434](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3434) | 11 | 4 | 4 | `missing_source`, `missing_apparatus` | 3. Сопоставить закономерности ударения, в зависимости от слогов слова, устройств… |
-| 55 | Статья 2 (Омонимия) | [О записи омонимии ко…:98](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L98) | 11 | 3 | 4 | `missing_source`, `missing_commentary_layer` | В его VIA (ч. I) проф. Х. Верба, например, из-за того, что его монография-библио… |
-| 56 | Обзор литературы | [02_gasuns-dhatu-PhD-…:441](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L441) | 10 | 3 | 3 | `unattributed_commentary`, `accidental_similarity` | При этом нужно быть крайне осторожным, чтобы не делать слишком далеко идущие пре… |
-| 57 | Обзор литературы | [02_gasuns-dhatu-PhD-…:719](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L719) | 10 | 3 | 3 | `unsupported_semantization`, `weak_genre_framing` | Классификация корней, введенная Х. Вербой, по мнению подавляющего большинства уч… |
-| 58 | Глава 1 | [02_gasuns-dhatu-PhD-…:931](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L931) | 10 | 4 | 4 | `missing_iast_on_first_mention`, `missing_authority_chain` | Доказательством того, что во времена сочинения *Brāhmaṇa* уже закрепилось четкое… |
-| 59 | Глава 1 | [02_gasuns-dhatu-PhD-…:969](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L969) | 10 | 4 | 4 | `missing_source`, `missing_authority_chain` | Однако тот факт, что термин *ākhyāta* встречается со значением «финитный глагол»… |
-| 60 | Глава 1 | [02_gasuns-dhatu-PhD-…:907](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L907) | 10 | 3 | 3 | `missing_source` | В соответствии с традицией, в школе словообразовательная работа заключается в вы… |
-| 61 | Глава 1 | [02_gasuns-dhatu-PhD-…:983](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L983) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | Например, *aniti* в Нигханту -- представитель своего ряда, не теряет связи с род… |
-| 62 | Глава 2 | [02_gasuns-dhatu-PhD-…:1251](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1251) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `missing_source` | Корень (по индийской традиции это глагольный корень, то есть любой корень являет… |
-| 63 | Глава 2 | [02_gasuns-dhatu-PhD-…:1535](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1535) | 10 | 4 | 4 | `missing_source`, `weak_genre_framing` | Однако даже с вычетом дубликатов и *s*-mobile, при 850 «корневых» образованиях, … |
-| 64 | Глава 2 | [02_gasuns-dhatu-PhD-…:1567](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1567) | 10 | 3 | 4 | `missing_tradition_context`, `missing_authority_chain` | Не имея возможности составить специальный указатель ошибок к *дхатупатхам*, я ог… |
-| 65 | Глава 3 | [02_gasuns-dhatu-PhD-…:2647](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2647) | 10 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_sutra_reference` | - *iti pragṛṇatāṃ teṣāṃ striyo 'tyadbhutadarśanāḥ* [Бхагаватпурана, XI, 4, 12.1]… |
-| 66 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:18](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L18) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `anachronistic_sanskrit_period` | ***Аннотация***. Сопоставление методов записи (глагольных) корней санскрита у ро… |
-| 67 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:34](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L34) | 10 | 3 | 4 | `missing_context_of_hymn`, `missing_tradition_context` | Европейского, то есть составленного за пределами Индии списка древнеиндийских ко… |
-| 68 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:42](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L42) | 10 | 3 | 4 | `weak_genre_framing`, `unattributed_commentary` | Как видно, оба корня по классификации Вербы[^1] относятся к подгруппе veṭ списка… |
-| 69 | Введение | [02_gasuns-dhatu-PhD-…:113](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L113) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_tradition_context` | Настоящая работа посвящена сопоставлению индийской и европейской филологических … |
-| 70 | Введение | [02_gasuns-dhatu-PhD-…:247](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L247) | 9 | 2 | 4 | `weak_genre_framing`, `missing_source` | Индийские лексикографы до какой-то степени старались не включать в словари произ… |
-| 71 | Обзор литературы | [02_gasuns-dhatu-PhD-…:493](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L493) | 9 | 3 | 3 | `missing_tradition_context`, `missing_source` | Этот аспект индологии описан и в отечественном востоковедении, и описан крайне т… |
-| 72 | Обзор литературы | [02_gasuns-dhatu-PhD-…:569](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L569) | 9 | 3 | 3 | `missing_authority_chain`, `weak_parallel` | Насколько нам известно, современные Ф. Боппу лингвисты весьма критично высказыва… |
-| 73 | Обзор литературы | [02_gasuns-dhatu-PhD-…:591](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L591) | 9 | 3 | 3 | `missing_tradition_context`, `missing_source` | Именно такой лексикон, подкрепленный грамматикой, которая описывает способы поро… |
-| 74 | Обзор литературы | [02_gasuns-dhatu-PhD-…:671](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L671) | 9 | 3 | 3 | `missing_sutra_reference`, `weak_parallel` | Сам автор отрицает присвоение ей названия критического издания, ее цель -- по во… |
-| 75 | Обзор литературы | [02_gasuns-dhatu-PhD-…:659](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L659) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `unsupported_reading` | Отдельно поставлены очевидные деноминативы [Westergaard 1841, 335--341], при это… |
-| 76 | Обзор литературы | [02_gasuns-dhatu-PhD-…:725](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L725) | 9 | 3 | 4 | `missing_iast_on_first_mention`, `mistranslated_native_term` | Подобно Н. Вестергаарду, но в отличие от Уитни, в ней приведено много примеров к… |
-| 77 | Обзор литературы | [02_gasuns-dhatu-PhD-…:737](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L737) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_tradition_context` | Весьма прискорбно, что практика, когда относительно молодые или просто сомнитель… |
-| 78 | Глава 1 | [02_gasuns-dhatu-PhD-…:795](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L795) | 9 | 3 | 4 | `missing_tradition_context`, `missing_source` | Язык для индийской цивилизации явился исторически первым предметом специализиров… |
-| 79 | Глава 1 | [02_gasuns-dhatu-PhD-…:809](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L809) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_alternative_interpretation` | Именно поэтому тем более странными кажутся сомнения и неясные этимологии отдельн… |
-| 80 | Глава 1 | [02_gasuns-dhatu-PhD-…:917](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L917) | 9 | 3 | 3 | `missing_source`, `weak_genre_framing` | Однако, несмотря на эти выгодные преимущества, древнеиндийский языковой материал… |
-| 81 | Глава 1 | [02_gasuns-dhatu-PhD-…:929](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L929) | 9 | 3 | 3 | `mistranslated_native_term`, `missing_iast_on_first_mention` | Говоря о понятии исходной словоформы, обычные словари санскрита приводят глаголы… |
-| 82 | Глава 1 | [02_gasuns-dhatu-PhD-…:1005](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1005) | 9 | 3 | 3 | `missing_context_of_hymn`, `missing_iast_on_first_mention` | И хотя традиция эта прослеживается еще в «гимнах напевов», со временем, в поздне… |
-| 83 | Глава 1 | [02_gasuns-dhatu-PhD-…:1071](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1071) | 9 | 3 | 3 | `unsupported_semantization`, `mistranslated_native_term` | Регулярное словоизменение (типа: *bhar* -- *bharanti*, *tap* -- *tepima*, *yu* -… |
-| 84 | Глава 1 | [02_gasuns-dhatu-PhD-…:1031](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1031) | 9 | 3 | 3 | `commentary_function_gap`, `missing_iast_on_first_mention` | В античном языкознании, используя этимологический инструментарий, можно было све… |
-| 85 | Глава 1 | [02_gasuns-dhatu-PhD-…:1119](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1119) | 9 | 3 | 4 | `missing_iast_on_first_mention`, `missing_source` | Помимо *unādi* сутр (списка неправильно образованных слов) есть еще два приложен… |
-| 86 | Глава 2 | [02_gasuns-dhatu-PhD-…:1483](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1483) | 9 | 3 | 3 | `missing_context_of_hymn`, `unattributed_commentary` | Первичные глаголы содержатся в первых девяти классах корней, составленных индийс… |
-| 87 | Глава 2 | [02_gasuns-dhatu-PhD-…:1537](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1537) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_context_of_hymn` | Небольшая группа состоит из (достаточно древних и поэтому иногда аномальных) дер… |
-| 88 | Глава 3 | [02_gasuns-dhatu-PhD-…:2104](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2104) | 9 | 3 | 3 | `missing_tradition_context`, `missing_alternative_interpretation` | Наиболее авторитетным сторонником гипотезы, которую позднее детально сформулиров… |
-| 89 | Глава 3 | [02_gasuns-dhatu-PhD-…:2138](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2138) | 9 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Всего в изначальном списке Пальсуле из 3690 корней оказалось 39 разновидностей (… |
-| 90 | Глава 3 | [02_gasuns-dhatu-PhD-…:2264](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2264) | 9 | 3 | 3 | `missing_tradition_context`, `missing_iast_on_first_mention` | Речь пойдет об «абстрактных способах записи» [Corssen 1868, 604] для морфемы в в… |
-| 91 | Глава 3 | [02_gasuns-dhatu-PhD-…:2959](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2959) | 9 | 3 | 3 | `missing_authority_chain`, `weak_parallel` | В VIA I Х. Вербы, например, из-за того, что монография задумана как двухтомник (… |
-| 92 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:50](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L50) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_commentary_layer` | по классификации Зализняка. А по дополнительной таблице "Распределение корней по… |
-| 93 | Введение | [02_gasuns-dhatu-PhD-…:201](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L201) | 8 | 2 | 3 | `commentary_function_gap`, `missing_iast_on_first_mention` | Основная часть данной работы посвящена историографии лингвистики, а точнее, форм… |
-| 94 | Обзор литературы | [02_gasuns-dhatu-PhD-…:627](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L627) | 8 | 3 | 3 | `unattributed_commentary`, `missing_alternative_interpretation` | Г. Бюлер подчеркнул, что У. Уитни выступил, во-первых, против гильдии стороннико… |
-| 95 | Обзор литературы | [02_gasuns-dhatu-PhD-…:683](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L683) | 8 | 3 | 3 | `unsupported_semantization`, `missing_source` | А ведь осмысленность -- это основное условие, которому должна удовлетворять люба… |
-| 96 | Глава 1 | [02_gasuns-dhatu-PhD-…:875](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L875) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `arbitrary_sound_change` | В связываемой с «Восьмикнижием» Унадисутре приведено примерно 1600 слов, произве… |
-| 97 | Глава 1 | [02_gasuns-dhatu-PhD-…:973](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L973) | 8 | 3 | 3 | `commentary_function_gap`, `mistranslated_native_term` | Помимо уже перечисленных способов до нас дошел и промежуточный этап в становлени… |
-| 98 | Глава 1 | [02_gasuns-dhatu-PhD-…:909](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L909) | 8 | 3 | 4 | `missing_source`, `formatting` | Организация наблюдения над структурно-семантическими [Лайонз 1978, 54, 67] особе… |
-| 99 | Глава 1 | [02_gasuns-dhatu-PhD-…:953](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L953) | 8 | 3 | 3 | `missing_commentary_layer`, `unsupported_reading` | Также не всегда достаточно четко разграничены именные и глагольные формы, при то… |
-| 100 | Глава 1 | [02_gasuns-dhatu-PhD-…:977](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L977) | 8 | 3 | 3 | `missing_source`, `logical_inconsistency` | Другими словами, вместо того, что считать, что *а* -- добавляется к *bhū* -- в т… |
-| 101 | Глава 1 | [02_gasuns-dhatu-PhD-…:981](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L981) | 8 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Возвращаясь к техническому аспекту данного трактата, можно сделать однозначное у… |
-| 102 | Глава 1 | [02_gasuns-dhatu-PhD-…:1133](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1133) | 8 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_alternative_interpretation` | То есть древнеиндийская грамматика, как мы ее знаем, по словам некоторых выдающи… |
-| 103 | Глава 2 | [02_gasuns-dhatu-PhD-…:1419](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1419) | 8 | 3 | 3 | `missing_source`, `commentary_function_gap` | Есть также и антисемантическое определение корня, хотя и единичное, но высказанн… |
-| 104 | Глава 2 | [02_gasuns-dhatu-PhD-…:1471](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1471) | 8 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_tradition_context` | При последовательно синтетическом подходе у Панини [Kuhn, Schleicher 1861, 288] … |
-| 105 | Глава 3 | [02_gasuns-dhatu-PhD-…:2014](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2014) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `missing_commentary_layer` | По утверждению некоторых ученых, в языке есть внутренняя структура [Blust 1988, … |
-| 106 | Глава 3 | [02_gasuns-dhatu-PhD-…:2665](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2665) | 8 | 3 | 3 | `weak_genre_framing`, `mistranslated_native_term` | Другие же отглагольные образования не встречаются ни у Уитни, ни Бакнелла. Таким… |
-| 107 | Глава 3 | [02_gasuns-dhatu-PhD-…:2723](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2723) | 8 | 3 | 3 | `commentary_function_gap`, `missing_alternative_interpretation` | Позволим себе еще раз процитировать работу В. З. Демьянкова «Морфологическая инт… |
-| 108 | Глава 3 | [02_gasuns-dhatu-PhD-…:3126](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3126) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `commentary_function_gap` | Если бы автор ставил задачу запутать читателя, то способ записи *dīv*/*d*(*y*)*ū… |
-| 109 | Статья 2 (Омонимия) | [О записи омонимии ко…:102](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L102) | 8 | 3 | 3 | `missing_sutra_reference`, `missing_iast_on_first_mention` | Показателен корень √dā [ср. Rix 2001: 9]. Из 8 омонимов DĀ у первопроходца Бётли… |
-| 110 | Обзор литературы | [02_gasuns-dhatu-PhD-…:503](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L503) | 7 | 3 | 3 | `unsupported_semantization`, `missing_iast_on_first_mention` | Лингвистические традиции создавались для решения конкретных практических задач, … |
-| 111 | Обзор литературы | [02_gasuns-dhatu-PhD-…:753](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L753) | 7 | 3 | 3 | `anachronistic_sanskrit_period`, `unsupported_reading` | Возьмем, например, для рассмотрения явление отымённых образований -- они сравнит… |
-| 112 | Обзор литературы | [02_gasuns-dhatu-PhD-…:777](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L777) | 7 | 3 | 3 | `unsupported_semantization`, `missing_source` | В «Словаре лингвистических терминов» Ж. Марузо пер. под ред. А. А. Реформатского… |
-| 113 | Обзор литературы | [02_gasuns-dhatu-PhD-…:767](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L767) | 7 | 2 | 2 | `missing_apparatus`, `evidentiary_base` | Из написанных на немецком новейших работ следует отметить Materialien zu einer L… |
-| 114 | Глава 1 | [02_gasuns-dhatu-PhD-…:849](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L849) | 7 | 2 | 3 | `commentary_function_gap`, `logical_inconsistency` | Тот факт, что никакой подлинной традиции нет, то есть нет никакого непрерывного … |
-| 115 | Глава 1 | [02_gasuns-dhatu-PhD-…:957](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L957) | 7 | 3 | 3 | `unsupported_semantization`, `missing_source` | Хотя и можно было бы сказать, что Нигханту сделало шаг вперед по сравнению с Бра… |
-| 116 | Глава 1 | [02_gasuns-dhatu-PhD-…:951](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L951) | 7 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Примерно в ту же эпоху создавалось и Нигханту (*Nighaṇṭu*). «Древнеиндийские гра… |
-| 117 | Глава 1 | [02_gasuns-dhatu-PhD-…:1021](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1021) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `missing_apparatus` | При этом сравнительно легко подобрать абстрактные значения, которые соединяют пр… |
-| 118 | Глава 1 | [02_gasuns-dhatu-PhD-…:1167](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1167) | 7 | 2 | 4 | `missing_iast_on_first_mention`, `missing_source` | Но не все глаголы -- глаголы действия. Санскритский грамматик Яска (Yāska) вводи… |
-| 119 | Глава 2 | [02_gasuns-dhatu-PhD-…:1271](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1271) | 7 | 3 | 3 | `missing_source`, `weak_genre_framing` | Про сложность дефиниции *dhātu* писалось уже многократно, в том числе и в западн… |
-| 120 | Глава 2 | [02_gasuns-dhatu-PhD-…:1255](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1255) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `commentary_function_gap` | В этом отношении небезынтересна четвертая глава в недавно вышедшем переводе трак… |
-| 121 | Глава 3 | [02_gasuns-dhatu-PhD-…:2086](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2086) | 7 | 3 | 3 | `unsupported_semantization`, `missing_authority_chain` | Взгляды Э. Бенвениста не обязательно несовместимы со взглядами Е. Куриловича [Ку… |
-| 122 | Глава 3 | [02_gasuns-dhatu-PhD-…:2112](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2112) | 7 | 2 | 3 | `missing_source`, `missing_apparatus` | Мы извлекли все встречающиеся структуры корней и мнимых корней из списка Пальсул… |
-| 123 | Глава 3 | [02_gasuns-dhatu-PhD-…:2374](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2374) | 7 | 2 | 4 | `missing_iast_on_first_mention`, `arbitrary_sound_change` | √ *ṛś* (?), «наносить вред» (сюда входят *ṛ́kṣa* V.+, -- *arśani* RV.[^94]);… |
-| 124 | Глава 3 | [02_gasuns-dhatu-PhD-…:2673](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2673) | 7 | 3 | 3 | `missing_source`, `missing_authority_chain` | Помимо новаторской статьи, уже рассмотренной нами [Зализняк 1975], в которой фиг… |
-| 125 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:98](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L98) | 7 | 2 | 3 | `accidental_similarity`, `logical_inconsistency` | Сложно не согласиться с тем, что "реальный" метод обозначения "√vás(i)" смотритс… |
-| 126 | Статья 2 (Омонимия) | [О записи омонимии ко…:94](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L94) | 7 | 3 | 3 | `missing_authority_chain`, `mistranslated_native_term` | Но если автора арабско-немецкого словаря, построенного по принципу глагольных гн… |
-| 127 | Статья 3 (Ряды согласных) | [Распределение рядов …:58](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85.mdx#L58) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `missing_source` | Дентальные -- почти отсутствуя в ведийском и эпическом санскрите, их количество … |
-| 128 | Обзор литературы | [02_gasuns-dhatu-PhD-…:387](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L387) | 6 | 2 | 2 | `unsupported_semantization`, `missing_iast_on_first_mention` | Например, эти публикации между собой отличаются количеством приводимых глагольны… |
-| 129 | Обзор литературы | [02_gasuns-dhatu-PhD-…:431](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L431) | 6 | 2 | 2 | `unsupported_semantization`, `missing_sutra_reference` | Существует мнение, из которого следует, что грамматисты в Индии не ставили себе … |
-| 130 | Обзор литературы | [02_gasuns-dhatu-PhD-…:437](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L437) | 6 | 2 | 3 | `unsupported_semantization`, `arbitrary_sound_change` | И Отто фон Бётлинк, и Георг Бюлер [Bühler 1972] в свое время обратили пристально… |
+| 31 | Обзор литературы | [02_gasuns-dhatu-PhD-…:655](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L655) | 13 | 5 | 5 | `missing_iast_on_first_mention`, `missing_tradition_context` | Корни упорядочены в гнезда, например, корень *yā* имеет подразделы по префиксам[… |
+| 32 | Обзор литературы | [02_gasuns-dhatu-PhD-…:595](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L595) | 13 | 4 | 5 | `missing_iast_on_first_mention`, `weak_parallel` | Автор определяет «около 200» корней как свойственные исключительно раннему языку… |
+| 33 | Обзор литературы | [02_gasuns-dhatu-PhD-…:717](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L717) | 13 | 4 | 4 | `missing_iast_on_first_mention`, `missing_tradition_context` | Рабочее название данной, по сути, библиографии было «Корни санскрита. Классифика… |
+| 34 | Обзор литературы | [02_gasuns-dhatu-PhD-…:723](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L723) | 13 | 5 | 5 | `missing_context_of_hymn`, `missing_authority_chain` | Не в пример оригинальной дхатупатхе и в отличие от Уитни, у Вербы представлены л… |
+| 35 | Глава 2 | [02_gasuns-dhatu-PhD-…:1387](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1387) | 13 | 4 | 5 | `missing_context_of_hymn`, `missing_authority_chain` | Степень условности корней можно проиллюстрировать на примере корня *kṛ*, который… |
+| 36 | Глава 2 | [02_gasuns-dhatu-PhD-…:1473](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1473) | 13 | 4 | 5 | `missing_iast_on_first_mention`, `unsupported_semantization` | Корни, по другой версии, есть воображаемые источники как имен существительных, т… |
+| 37 | Глава 3 | [02_gasuns-dhatu-PhD-…:3054](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3054) | 13 | 4 | 4 | `missing_context_of_hymn`, `missing_authority_chain` | Но тут хотя бы прослеживается последовательность. Что происходит, если номера эп… |
+| 38 | Заключение | [02_gasuns-dhatu-PhD-…:3416](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3416) | 13 | 4 | 4 | `missing_source`, `missing_tradition_context` | Продолжение и посильное углубление предпринятого в области санскритской морфонол… |
+| 39 | Статья 2 (Омонимия) | [О записи омонимии ко…:18](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L18) | 13 | 4 | 5 | `missing_source`, `weak_genre_framing` | ***Аннотация***. Автор на примере корня √dā и его омонимов показывает, что между… |
+| 40 | Обзор литературы | [02_gasuns-dhatu-PhD-…:395](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L395) | 12 | 4 | 4 | `missing_context_of_hymn`, `weak_genre_framing` | На основе так называемого «Малого Петербургского словаря» [Böhtlingk 1879--1889,… |
+| 41 | Обзор литературы | [02_gasuns-dhatu-PhD-…:601](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L601) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | Другое дело, что в результате попытки разобраться в этом они пришли к выводам, к… |
+| 42 | Глава 1 | [02_gasuns-dhatu-PhD-…:979](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L979) | 12 | 4 | 5 | `missing_iast_on_first_mention`, `missing_tradition_context` | Следует отметить, что много полезных для нашего исследования сведений сообщается… |
+| 43 | Глава 2 | [02_gasuns-dhatu-PhD-…:1233](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1233) | 12 | 3 | 5 | `missing_iast_on_first_mention`, `missing_context_of_hymn` | Первое, это сутра «*bhūvādayo dhātavaḥ*», которую можно перевести как «те, котор… |
+| 44 | Глава 2 | [02_gasuns-dhatu-PhD-…:1491](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1491) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_authority_chain` | Количество и классификация этих засвидетельствованных корней, соответственно, мо… |
+| 45 | Глава 2 | [02_gasuns-dhatu-PhD-…:1577](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1577) | 12 | 4 | 4 | `anachronistic_sanskrit_period`, `mistranslated_native_term` | *Ошибки письма*. Нет списка без ошибок. Ошибок может быть больше или меньше. Наи… |
+| 46 | Глава 3 | [02_gasuns-dhatu-PhD-…:2643](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2643) | 12 | 4 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | - *yukṣvā hi tvaṃ rathāsahā yuvasva poṣyā vaso* [Ригведа VII, 26, 20]… |
+| 47 | Глава 3 | [02_gasuns-dhatu-PhD-…:3040](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3040) | 12 | 3 | 5 | `missing_iast_on_first_mention`, `unsupported_semantization` | > Но опять же № 351 *4dā* clear, который превосходно мог бы соответствовать [EWA… |
+| 48 | Статья 2 (Омонимия) | [О записи омонимии ко…:42](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L42) | 12 | 4 | 4 | `unattributed_commentary`, `unsupported_semantization` | После пересчета выяснилось, что суммарное количество омонимов: у Пальсуле [Palsu… |
+| 49 | Обзор литературы | [02_gasuns-dhatu-PhD-…:369](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L369) | 11 | 3 | 4 | `missing_iast_on_first_mention`, `weak_genre_framing` | Самый сложный раздел в грамматике санскрита (в широком его смысле), несомненно, … |
+| 50 | Обзор литературы | [02_gasuns-dhatu-PhD-…:639](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L639) | 11 | 4 | 4 | `missing_iast_on_first_mention`, `accidental_similarity` | Основная часть корней естественным способом распределяются на более узкие или ши… |
+| 51 | Глава 1 | [02_gasuns-dhatu-PhD-…:921](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L921) | 11 | 3 | 4 | `missing_source`, `inappropriate_source` | Говоря словами классика индологии М. Мюллера: «Разница между арийскими языками и… |
+| 52 | Глава 1 | [02_gasuns-dhatu-PhD-…:1105](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1105) | 11 | 3 | 4 | `missing_sutra_reference`, `missing_commentary_layer` | Панини, по одной из версий, также автор *dhātupāṭhaḥ*, которая содержит полный с… |
+| 53 | Глава 3 | [02_gasuns-dhatu-PhD-…:2012](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2012) | 11 | 4 | 4 | `missing_source`, `weak_genre_framing` | Грамматический строй санскрита и глагольная система в частности -- это не просто… |
+| 54 | Заключение | [02_gasuns-dhatu-PhD-…:3434](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3434) | 11 | 4 | 4 | `missing_source`, `missing_apparatus` | 3. Сопоставить закономерности ударения, в зависимости от слогов слова, устройств… |
+| 55 | Статья 2 (Омонимия) | [О записи омонимии ко…:98](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L98) | 11 | 3 | 4 | `missing_source`, `missing_commentary_layer` | В его VIA (ч. I) проф. Х. Верба, например, из-за того, что его монография-библио… |
+| 56 | Обзор литературы | [02_gasuns-dhatu-PhD-…:441](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L441) | 10 | 3 | 3 | `unattributed_commentary`, `accidental_similarity` | При этом нужно быть крайне осторожным, чтобы не делать слишком далеко идущие пре… |
+| 57 | Обзор литературы | [02_gasuns-dhatu-PhD-…:719](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L719) | 10 | 3 | 3 | `unsupported_semantization`, `weak_genre_framing` | Классификация корней, введенная Х. Вербой, по мнению подавляющего большинства уч… |
+| 58 | Глава 1 | [02_gasuns-dhatu-PhD-…:931](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L931) | 10 | 4 | 4 | `missing_iast_on_first_mention`, `missing_authority_chain` | Доказательством того, что во времена сочинения *Brāhmaṇa* уже закрепилось четкое… |
+| 59 | Глава 1 | [02_gasuns-dhatu-PhD-…:969](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L969) | 10 | 4 | 4 | `missing_source`, `missing_authority_chain` | Однако тот факт, что термин *ākhyāta* встречается со значением «финитный глагол»… |
+| 60 | Глава 1 | [02_gasuns-dhatu-PhD-…:907](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L907) | 10 | 3 | 3 | `missing_source` | В соответствии с традицией, в школе словообразовательная работа заключается в вы… |
+| 61 | Глава 1 | [02_gasuns-dhatu-PhD-…:983](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L983) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `missing_commentary_layer` | Например, *aniti* в Нигханту -- представитель своего ряда, не теряет связи с род… |
+| 62 | Глава 2 | [02_gasuns-dhatu-PhD-…:1251](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1251) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `missing_source` | Корень (по индийской традиции это глагольный корень, то есть любой корень являет… |
+| 63 | Глава 2 | [02_gasuns-dhatu-PhD-…:1535](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1535) | 10 | 4 | 4 | `missing_source`, `weak_genre_framing` | Однако даже с вычетом дубликатов и *s*-mobile, при 850 «корневых» образованиях, … |
+| 64 | Глава 2 | [02_gasuns-dhatu-PhD-…:1567](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1567) | 10 | 3 | 4 | `missing_tradition_context`, `missing_authority_chain` | Не имея возможности составить специальный указатель ошибок к *дхатупатхам*, я ог… |
+| 65 | Глава 3 | [02_gasuns-dhatu-PhD-…:2647](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2647) | 10 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_sutra_reference` | - *iti pragṛṇatāṃ teṣāṃ striyo 'tyadbhutadarśanāḥ* [Бхагаватпурана, XI, 4, 12.1]… |
+| 66 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:18](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L18) | 10 | 3 | 4 | `missing_iast_on_first_mention`, `anachronistic_sanskrit_period` | ***Аннотация***. Сопоставление методов записи (глагольных) корней санскрита у ро… |
+| 67 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:34](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L34) | 10 | 3 | 4 | `missing_context_of_hymn`, `missing_tradition_context` | Европейского, то есть составленного за пределами Индии списка древнеиндийских ко… |
+| 68 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:42](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L42) | 10 | 3 | 4 | `weak_genre_framing`, `unattributed_commentary` | Как видно, оба корня по классификации Вербы[^1] относятся к подгруппе veṭ списка… |
+| 69 | Введение | [02_gasuns-dhatu-PhD-…:113](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L113) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_tradition_context` | Настоящая работа посвящена сопоставлению индийской и европейской филологических … |
+| 70 | Введение | [02_gasuns-dhatu-PhD-…:247](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L247) | 9 | 2 | 4 | `weak_genre_framing`, `missing_source` | Индийские лексикографы до какой-то степени старались не включать в словари произ… |
+| 71 | Обзор литературы | [02_gasuns-dhatu-PhD-…:493](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L493) | 9 | 3 | 3 | `missing_tradition_context`, `missing_source` | Этот аспект индологии описан и в отечественном востоковедении, и описан крайне т… |
+| 72 | Обзор литературы | [02_gasuns-dhatu-PhD-…:569](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L569) | 9 | 3 | 3 | `missing_authority_chain`, `weak_parallel` | Насколько нам известно, современные Ф. Боппу лингвисты весьма критично высказыва… |
+| 73 | Обзор литературы | [02_gasuns-dhatu-PhD-…:591](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L591) | 9 | 3 | 3 | `missing_tradition_context`, `missing_source` | Именно такой лексикон, подкрепленный грамматикой, которая описывает способы поро… |
+| 74 | Обзор литературы | [02_gasuns-dhatu-PhD-…:671](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L671) | 9 | 3 | 3 | `missing_sutra_reference`, `weak_parallel` | Сам автор отрицает присвоение ей названия критического издания, ее цель -- по во… |
+| 75 | Обзор литературы | [02_gasuns-dhatu-PhD-…:659](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L659) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `unsupported_reading` | Отдельно поставлены очевидные деноминативы [Westergaard 1841, 335--341], при это… |
+| 76 | Обзор литературы | [02_gasuns-dhatu-PhD-…:725](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L725) | 9 | 3 | 4 | `missing_iast_on_first_mention`, `mistranslated_native_term` | Подобно Н. Вестергаарду, но в отличие от Уитни, в ней приведено много примеров к… |
+| 77 | Обзор литературы | [02_gasuns-dhatu-PhD-…:737](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L737) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_tradition_context` | Весьма прискорбно, что практика, когда относительно молодые или просто сомнитель… |
+| 78 | Глава 1 | [02_gasuns-dhatu-PhD-…:795](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L795) | 9 | 3 | 4 | `missing_tradition_context`, `missing_source` | Язык для индийской цивилизации явился исторически первым предметом специализиров… |
+| 79 | Глава 1 | [02_gasuns-dhatu-PhD-…:809](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L809) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_alternative_interpretation` | Именно поэтому тем более странными кажутся сомнения и неясные этимологии отдельн… |
+| 80 | Глава 1 | [02_gasuns-dhatu-PhD-…:917](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L917) | 9 | 3 | 3 | `missing_source`, `weak_genre_framing` | Однако, несмотря на эти выгодные преимущества, древнеиндийский языковой материал… |
+| 81 | Глава 1 | [02_gasuns-dhatu-PhD-…:929](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L929) | 9 | 3 | 3 | `mistranslated_native_term`, `missing_iast_on_first_mention` | Говоря о понятии исходной словоформы, обычные словари санскрита приводят глаголы… |
+| 82 | Глава 1 | [02_gasuns-dhatu-PhD-…:1005](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1005) | 9 | 3 | 3 | `missing_context_of_hymn`, `missing_iast_on_first_mention` | И хотя традиция эта прослеживается еще в «гимнах напевов», со временем, в поздне… |
+| 83 | Глава 1 | [02_gasuns-dhatu-PhD-…:1071](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1071) | 9 | 3 | 3 | `unsupported_semantization`, `mistranslated_native_term` | Регулярное словоизменение (типа: *bhar* -- *bharanti*, *tap* -- *tepima*, *yu* -… |
+| 84 | Глава 1 | [02_gasuns-dhatu-PhD-…:1031](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1031) | 9 | 3 | 3 | `commentary_function_gap`, `missing_iast_on_first_mention` | В античном языкознании, используя этимологический инструментарий, можно было све… |
+| 85 | Глава 1 | [02_gasuns-dhatu-PhD-…:1119](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1119) | 9 | 3 | 4 | `missing_iast_on_first_mention`, `missing_source` | Помимо *unādi* сутр (списка неправильно образованных слов) есть еще два приложен… |
+| 86 | Глава 2 | [02_gasuns-dhatu-PhD-…:1483](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1483) | 9 | 3 | 3 | `missing_context_of_hymn`, `unattributed_commentary` | Первичные глаголы содержатся в первых девяти классах корней, составленных индийс… |
+| 87 | Глава 2 | [02_gasuns-dhatu-PhD-…:1537](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1537) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_context_of_hymn` | Небольшая группа состоит из (достаточно древних и поэтому иногда аномальных) дер… |
+| 88 | Глава 3 | [02_gasuns-dhatu-PhD-…:2104](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2104) | 9 | 3 | 3 | `missing_tradition_context`, `missing_alternative_interpretation` | Наиболее авторитетным сторонником гипотезы, которую позднее детально сформулиров… |
+| 89 | Глава 3 | [02_gasuns-dhatu-PhD-…:2138](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2138) | 9 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Всего в изначальном списке Пальсуле из 3690 корней оказалось 39 разновидностей (… |
+| 90 | Глава 3 | [02_gasuns-dhatu-PhD-…:2264](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2264) | 9 | 3 | 3 | `missing_tradition_context`, `missing_iast_on_first_mention` | Речь пойдет об «абстрактных способах записи» [Corssen 1868, 604] для морфемы в в… |
+| 91 | Глава 3 | [02_gasuns-dhatu-PhD-…:2959](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2959) | 9 | 3 | 3 | `missing_authority_chain`, `weak_parallel` | В VIA I Х. Вербы, например, из-за того, что монография задумана как двухтомник (… |
+| 92 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:50](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L50) | 9 | 3 | 3 | `missing_iast_on_first_mention`, `missing_commentary_layer` | по классификации Зализняка. А по дополнительной таблице "Распределение корней по… |
+| 93 | Введение | [02_gasuns-dhatu-PhD-…:201](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L201) | 8 | 2 | 3 | `commentary_function_gap`, `missing_iast_on_first_mention` | Основная часть данной работы посвящена историографии лингвистики, а точнее, форм… |
+| 94 | Обзор литературы | [02_gasuns-dhatu-PhD-…:627](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L627) | 8 | 3 | 3 | `unattributed_commentary`, `missing_alternative_interpretation` | Г. Бюлер подчеркнул, что У. Уитни выступил, во-первых, против гильдии стороннико… |
+| 95 | Обзор литературы | [02_gasuns-dhatu-PhD-…:683](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L683) | 8 | 3 | 3 | `unsupported_semantization`, `missing_source` | А ведь осмысленность -- это основное условие, которому должна удовлетворять люба… |
+| 96 | Глава 1 | [02_gasuns-dhatu-PhD-…:875](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L875) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `arbitrary_sound_change` | В связываемой с «Восьмикнижием» Унадисутре приведено примерно 1600 слов, произве… |
+| 97 | Глава 1 | [02_gasuns-dhatu-PhD-…:973](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L973) | 8 | 3 | 3 | `commentary_function_gap`, `mistranslated_native_term` | Помимо уже перечисленных способов до нас дошел и промежуточный этап в становлени… |
+| 98 | Глава 1 | [02_gasuns-dhatu-PhD-…:909](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L909) | 8 | 3 | 4 | `missing_source`, `formatting` | Организация наблюдения над структурно-семантическими [Лайонз 1978, 54, 67] особе… |
+| 99 | Глава 1 | [02_gasuns-dhatu-PhD-…:953](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L953) | 8 | 3 | 3 | `missing_commentary_layer`, `unsupported_reading` | Также не всегда достаточно четко разграничены именные и глагольные формы, при то… |
+| 100 | Глава 1 | [02_gasuns-dhatu-PhD-…:977](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L977) | 8 | 3 | 3 | `missing_source`, `logical_inconsistency` | Другими словами, вместо того, что считать, что *а* -- добавляется к *bhū* -- в т… |
+| 101 | Глава 1 | [02_gasuns-dhatu-PhD-…:981](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L981) | 8 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Возвращаясь к техническому аспекту данного трактата, можно сделать однозначное у… |
+| 102 | Глава 1 | [02_gasuns-dhatu-PhD-…:1133](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1133) | 8 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_alternative_interpretation` | То есть древнеиндийская грамматика, как мы ее знаем, по словам некоторых выдающи… |
+| 103 | Глава 2 | [02_gasuns-dhatu-PhD-…:1419](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1419) | 8 | 3 | 3 | `missing_source`, `commentary_function_gap` | Есть также и антисемантическое определение корня, хотя и единичное, но высказанн… |
+| 104 | Глава 2 | [02_gasuns-dhatu-PhD-…:1471](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1471) | 8 | 3 | 3 | `anachronistic_sanskrit_period`, `missing_tradition_context` | При последовательно синтетическом подходе у Панини [Kuhn, Schleicher 1861, 288] … |
+| 105 | Глава 3 | [02_gasuns-dhatu-PhD-…:2014](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2014) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `missing_commentary_layer` | По утверждению некоторых ученых, в языке есть внутренняя структура [Blust 1988, … |
+| 106 | Глава 3 | [02_gasuns-dhatu-PhD-…:2665](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2665) | 8 | 3 | 3 | `weak_genre_framing`, `mistranslated_native_term` | Другие же отглагольные образования не встречаются ни у Уитни, ни Бакнелла. Таким… |
+| 107 | Глава 3 | [02_gasuns-dhatu-PhD-…:2723](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2723) | 8 | 3 | 3 | `commentary_function_gap`, `missing_alternative_interpretation` | Позволим себе еще раз процитировать работу В. З. Демьянкова «Морфологическая инт… |
+| 108 | Глава 3 | [02_gasuns-dhatu-PhD-…:3126](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L3126) | 8 | 3 | 3 | `missing_iast_on_first_mention`, `commentary_function_gap` | Если бы автор ставил задачу запутать читателя, то способ записи *dīv*/*d*(*y*)*ū… |
+| 109 | Статья 2 (Омонимия) | [О записи омонимии ко…:102](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L102) | 8 | 3 | 3 | `missing_sutra_reference`, `missing_iast_on_first_mention` | Показателен корень √dā [ср. Rix 2001: 9]. Из 8 омонимов DĀ у первопроходца Бётли… |
+| 110 | Обзор литературы | [02_gasuns-dhatu-PhD-…:503](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L503) | 7 | 3 | 3 | `unsupported_semantization`, `missing_iast_on_first_mention` | Лингвистические традиции создавались для решения конкретных практических задач, … |
+| 111 | Обзор литературы | [02_gasuns-dhatu-PhD-…:753](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L753) | 7 | 3 | 3 | `anachronistic_sanskrit_period`, `unsupported_reading` | Возьмем, например, для рассмотрения явление отымённых образований -- они сравнит… |
+| 112 | Обзор литературы | [02_gasuns-dhatu-PhD-…:777](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L777) | 7 | 3 | 3 | `unsupported_semantization`, `missing_source` | В «Словаре лингвистических терминов» Ж. Марузо пер. под ред. А. А. Реформатского… |
+| 113 | Обзор литературы | [02_gasuns-dhatu-PhD-…:767](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L767) | 7 | 2 | 2 | `missing_apparatus`, `evidentiary_base` | Из написанных на немецком новейших работ следует отметить Materialien zu einer L… |
+| 114 | Глава 1 | [02_gasuns-dhatu-PhD-…:849](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L849) | 7 | 2 | 3 | `commentary_function_gap`, `logical_inconsistency` | Тот факт, что никакой подлинной традиции нет, то есть нет никакого непрерывного … |
+| 115 | Глава 1 | [02_gasuns-dhatu-PhD-…:957](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L957) | 7 | 3 | 3 | `unsupported_semantization`, `missing_source` | Хотя и можно было бы сказать, что Нигханту сделало шаг вперед по сравнению с Бра… |
+| 116 | Глава 1 | [02_gasuns-dhatu-PhD-…:951](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L951) | 7 | 3 | 3 | `weak_genre_framing`, `missing_iast_on_first_mention` | Примерно в ту же эпоху создавалось и Нигханту (*Nighaṇṭu*). «Древнеиндийские гра… |
+| 117 | Глава 1 | [02_gasuns-dhatu-PhD-…:1021](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1021) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `missing_apparatus` | При этом сравнительно легко подобрать абстрактные значения, которые соединяют пр… |
+| 118 | Глава 1 | [02_gasuns-dhatu-PhD-…:1167](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1167) | 7 | 2 | 4 | `missing_iast_on_first_mention`, `missing_source` | Но не все глаголы -- глаголы действия. Санскритский грамматик Яска (Yāska) вводи… |
+| 119 | Глава 2 | [02_gasuns-dhatu-PhD-…:1271](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1271) | 7 | 3 | 3 | `missing_source`, `weak_genre_framing` | Про сложность дефиниции *dhātu* писалось уже многократно, в том числе и в западн… |
+| 120 | Глава 2 | [02_gasuns-dhatu-PhD-…:1255](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L1255) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `commentary_function_gap` | В этом отношении небезынтересна четвертая глава в недавно вышедшем переводе трак… |
+| 121 | Глава 3 | [02_gasuns-dhatu-PhD-…:2086](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2086) | 7 | 3 | 3 | `unsupported_semantization`, `missing_authority_chain` | Взгляды Э. Бенвениста не обязательно несовместимы со взглядами Е. Куриловича [Ку… |
+| 122 | Глава 3 | [02_gasuns-dhatu-PhD-…:2112](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2112) | 7 | 2 | 3 | `missing_source`, `missing_apparatus` | Мы извлекли все встречающиеся структуры корней и мнимых корней из списка Пальсул… |
+| 123 | Глава 3 | [02_gasuns-dhatu-PhD-…:2374](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2374) | 7 | 2 | 4 | `missing_iast_on_first_mention`, `arbitrary_sound_change` | √ *ṛś* (?), «наносить вред» (сюда входят *ṛ́kṣa* V.+, -- *arśani* RV.[^94]);… |
+| 124 | Глава 3 | [02_gasuns-dhatu-PhD-…:2673](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L2673) | 7 | 3 | 3 | `missing_source`, `missing_authority_chain` | Помимо новаторской статьи, уже рассмотренной нами [Зализняк 1975], в которой фиг… |
+| 125 | Статья 1 (Морфонол. запись) | [Морфонологическая за…:98](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0.mdx#L98) | 7 | 2 | 3 | `accidental_similarity`, `logical_inconsistency` | Сложно не согласиться с тем, что "реальный" метод обозначения "√vás(i)" смотритс… |
+| 126 | Статья 2 (Омонимия) | [О записи омонимии ко…:94](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%9E%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D0%BE%D0%BC%D0%BE%D0%BD%D0%B8%D0%BC%D0%B8%D0%B8%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D1%81%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D1%8F%D1%85%20%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B3%D0%BE%20%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0.mdx#L94) | 7 | 3 | 3 | `missing_authority_chain`, `mistranslated_native_term` | Но если автора арабско-немецкого словаря, построенного по принципу глагольных гн… |
+| 127 | Статья 3 (Ряды согласных) | [Распределение рядов …:58](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/%D0%A0%D0%B0%D1%81%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%80%D1%8F%D0%B4%D0%BE%D0%B2%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85.mdx#L58) | 7 | 3 | 3 | `missing_iast_on_first_mention`, `missing_source` | Дентальные -- почти отсутствуя в ведийском и эпическом санскрите, их количество … |
+| 128 | Обзор литературы | [02_gasuns-dhatu-PhD-…:387](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L387) | 6 | 2 | 2 | `unsupported_semantization`, `missing_iast_on_first_mention` | Например, эти публикации между собой отличаются количеством приводимых глагольны… |
+| 129 | Обзор литературы | [02_gasuns-dhatu-PhD-…:431](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L431) | 6 | 2 | 2 | `unsupported_semantization`, `missing_sutra_reference` | Существует мнение, из которого следует, что грамматисты в Индии не ставили себе … |
+| 130 | Обзор литературы | [02_gasuns-dhatu-PhD-…:437](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx#L437) | 6 | 2 | 3 | `unsupported_semantization`, `arbitrary_sound_change` | И Отто фон Бётлинк, и Георг Бюлер [Bühler 1972] в свое время обратили пристально… |
+
+---
+
+## 6. Издательские решения по проходу — визы автора (09-07-2026)
+
+Решения автора по §3–§5 настоящего отчёта, зафиксированные как визы. По конвенции
+ревизии-2026 правки прозы **не вносятся напрямую** в текст диссертации: одобренные
+изменения регистрируются в [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/errata.yml)
+(с датой визы и `note: правка текста не вносилась`) и в
+[PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PROPOSALS.md),
+а сведение утверждённых правок в печатный текст выполняется отдельной сессией
+([H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md)).
+
+### 6.1. Д4 — терминологическая дисциплина (IAST): конвенция ПРИНЯТА
+
+Принят **вариант (а)**: при первом упоминании термина в каждой главе даётся русская
+передача + IAST в скобках, далее свободно. Один механический проход по книге разрешён
+(агентная сессия после этой визы); точечная проверка ведийский/классический (~20 мест
+из приложения) — в том же проходе. Агент может продолжать — проход вынесен в
+[H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md).
+
+### 6.2. Д5 — оптика персон: честная маркировка, поперсонная судьба
+
+Пакетно **не принимаются**; для C1 нерелевантны; для диссертации — опциональный материал
+будущего расширения книги. Поперсонно:
+
+- **`elizarenkova-veda` (привязка к гимну)** — **ОТКЛОНЕНО как неприменимое.** Работа не
+  ведётся с гимнами Ригведы; привязать грамматическое правило к конкретному гимну по
+  предмету исследования невозможно.
+- **`panini-traditional` (ссылка на сутру у каждого правила)** — **ОТЛОЖЕНО до инструмента.**
+  Сутры Панини вручную невоспроизводимы; нужен скилл-переходник к
+  [ashtadhyayi.com/sutraani](https://ashtadhyayi.com/sutraani) (см. §6.6).
+- **`lidova-commentary` (комментаторская рамка)** — **ОТКЛОНЕНО как неприменимое здесь.**
+  Традиционную комментаторскую рамку дать невозможно (комментаторы известны недостаточно);
+  привлечение грамматических комментаторов сводится к призме `panini-traditional`, т.е.
+  дублирует предыдущий пункт. Возможная будущая проработка — только через корпус-скилл (§6.7).
+
+### 6.3. §4.3 — переход Бюлер/Уитни → Вестергаард: композиция (вариант б) ПРИНЯТ
+
+Принят **вариант (б)**: перенести блок Вестергаард–Бётлинк ПЕРЕД полемику Уитни–Бюлера,
+восстановив хронологию обзора (1841 → 1885); соседние абзацы № 31, 33, 34 приложения А —
+в том же переносе. Правка хирургическая (блок перекрёстно связан оборотами «как уже
+упоминалось» / «но вернёмся к более современным…»), поэтому исполняется отдельной
+печатной сессией, а не механически: зарегистрирована в errata.yml и вынесена в H413.
+
+### 6.4. §4.4 — объект/предмет (C7, Парибок): переформулировка ПРИНЯТА с двумя поправками
+
+Инверсия «объект = теории» устранена — объектом становятся сами глагольные корни.
+Утверждённая формулировка:
+
+> «Объект исследования — глагольные корни древнеиндийского языка в том виде, в каком они
+> зафиксированы корнесловами индийской традиции (дхатупатхи, вплоть до конкорданса
+> Пальсуле) и европейской науки (Вестергаард, Уитни, Х. Верба); предмет — системные
+> отношения первичных и вторичных рядов корней и критерии их выделения».
+
+Две поправки автора к исходному предложению отчёта:
+
+1. **Пальсуле** отнесён к **итогу индийской традиции (дхатупатхи)**, а не к европейской науке.
+2. «**и др.**» заменено на **Х. Вербу**.
+
+Дополнительно: фраза «Делается попытка выделения морфемария санскрита» переносится из
+абзаца про объект **к задачам** (задача 4). Зарегистрировано в errata.yml + PROPOSALS.md §1.
+
+### 6.5. §5 № 1 — разграничение дефектности (`zaliznyak-method`): ПРИНЯТО целиком
+
+Принята правка — разделить дефектность корней на **(а)** парадигматические лакуны в
+системе Панини (корни, не образующие всех времён) и **(б)** историческую утрату финитных
+форм, засвидетельствованную в ведийском корпусе. Формулировка признана точнее исходной;
+регистрируется в errata.yml.
+
+**Запрос автора (одобрен):** после внедрения всех правок прогнать прозу не только
+`zaliznyak-method`, но и остальными ипостасями Зализняка из Совета. В
+[RuWritingStyles](https://github.com/gasyoun/RuWritingStyles) их **девять** паспортов:
+`zaliznyak-method`, `zaliznyak-novgorod`, `zalizniak-enklitiki`, `zalizniak-imennoe`,
+`zalizniak-ocherk`, `zalizniak-shkolnikov-1`, `zalizniak-slovo`, `zalizniak-udarenie`,
+`zalizniak-zametki`. В совете `sanskrit` участвовал только `zaliznyak-method`; остальные
+восемь пригодны для точечного повторного прогона. Повторный прогон запланирован **после**
+сведения правок в текст — вынесен в H413.
+
+### 6.6. Скилл сутр Панини — В РАЗРАБОТКЕ
+
+Правки вида «добавить ссылку на сутру (ср. *Aṣṭādhyāyī* 6.1.68 / Cardona 1997: 123)»
+исполнимы только через инструмент. Разрабатывается скилл `/panini-sutra-lookup` над
+[ashtadhyayi.com/sutraani](https://ashtadhyayi.com/sutraani) — разрешает ссылку на сутру и
+её текст/перевод, чтобы правило в тексте могло цитировать точный адрес. См. H413.
+
+### 6.7. Корпус-скилл грамматических комментаторов — ПОСТАВЛЕН В ОЧЕРЕДЬ
+
+Правка `lidova` «указать школу, показать, как бхашьи/варттики развивали или оспаривали
+взгляды на корни, какие авторитеты стояли за классификациями» вручную неописуема.
+Поставлена задача обучить скилл на корпусе: Kātyāyana *Vārttika-sūtra* (Pataskar), Patañjali
+*Vyākaraṇa-Mahābhāṣya* (Kielhorn 1892–1909), Cardona 1997 (*Pāṇini: A Survey of Research*),
+Staal 1985 (*A Reader on Sanskrit Grammarians*), Scharfe 1977 (*Grammatical Literature*).
+Отдельный handoff — см. H413.
+
+_Раздел § 6 добавлен Opus 4.8 (`claude-opus-4-8`), H413 — визы автора зафиксированы
+09-07-2026._
 
 ---
 
 Полные JSON-артефакты прогона (28 × `reviews/*.review.json` + `council.json`) лежат
 локально в `RuWritingStyles/runs/gasuns2026-*` (каталог `runs/` в том репо — рабочий,
 негитуемый); агрегат продублирован рядом с отчётом в
-[RWS_FINDINGS.tsv](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/RWS_FINDINGS.tsv).
+[RWS_FINDINGS.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_FINDINGS.tsv).
 
 _Отчёт сгенерирован конвейером RuWritingStyles и откурирован Fable 5 (`claude-fable-5`), H275._
 
