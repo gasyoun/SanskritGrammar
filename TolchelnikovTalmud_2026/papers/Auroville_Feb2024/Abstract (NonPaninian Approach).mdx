@@ -1,0 +1,30 @@
+---
+title: "Abstract (NonPaninian Approach)"
+sidebar_label: "Abstract (NonPaninian Approach)"
+---
+
+A NonPaninian Approach to Sanskrit Morphonology
+
+Abstract
+
+The approach were designed by A. Zalizniak in "Morphonological Classification of Verbal Roots of the Ancient Indian Language", 1975. He primarily used "The Roots..." by W.D. Whitney as data source (and so do we).
+
+1\. Classification of all phonological processes in Sanskrit into: the pure alternation (with 13 sets of basic grade - guṇa - vṛddhi: the alternation rows; e.g. row N1 is 'n̥ - an - ān'), phoneme-surroundings dependent changes (happens in verbal roots) and the saṃdhi.
+
+2\. Morphological position is an expectation of some grade in every morpheme A with the certain morpheme B in pair 'A+B' (1^st^ - expectation of basic grade; 2^nd^ - of guṇa; 3^rd^ - of vṛddhi; e.g. verbal ending with 2^nd^ morph.pos. -t in 'abravīt' from √brū = A).
+
+3\. Alternation type is the alternation pattern of A in these 3 morph.pos. Morphemes of the I type meet the expectations, of the II type answer with guṇa to the expectation of basic grade; of the III type always occur in basic grade, and of the IV type - in vṛddhi.
+
+These concepts are helpful for formulation of rules, e.g. the rule "verbal root with -sya- takes guṇa" has 87% efficiency (110 roots have not guṇa). But if we formulate it as "-sya- expects guṇa from A" its efficiency tends to 100%.
+
+For explaining all alternation we should define alternation types for A's (verbal and nominal roots, suffixes, infixes, prefixes - is done for all verbal roots) and define morph.pos. for B's (suffixes, infixes, endings - is done for verbal affixes). Also some tasks remain: the algorithms of reduplication (done), the seṭ-aniṭ-classification (done for verbal roots and suffixes), the tree of all morpheme combinations (done for verbal roots and affixes).
+
+Our nearest goal is to create a computer Sanskrit generator that contains as much word-forms as possible and that is more correct than already existing ones.
+
+The code is written in PHP in the functional programming style. The program can generate most of the wordforms. The principle of the program is the representation of a word form as a chain of morphemes. Each morpheme has its own properties, and transformation of this chain into the final version.
+
+Some functions describe lexemes, rules and exceptions. The other part is utility involved in parsing words, applying saṃdhi, alternating etc. There is also a corpora-verification and searching block.
+
+UI: http://sanskrit.anshir.ru/
+
+Code: [https://github.com/anshir-rus/Anshir-Sanscrit-Verbs](https://github.com/anshir-rus/Anshir-Sanscrit-Verbs)

@@ -1,6 +1,6 @@
 # Zaliznyak's three Sanskrit models compared — 1975 vs 1978 vs 2004 (calibrated against Whitney 1889)
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 09-07-2026_
 
 Zaliznyak described Sanskrit **three times** and used a **different paradigm each time**;
 none of the three is a *full grammar*. To keep the genre honest this pass calibrates them
@@ -88,5 +88,14 @@ Whitney shown as the full-grammar baseline; the three Zaliznyak columns are the 
 5. **"По Зализняку" is ambiguous** — three paradigms mean footnotes/companion text must cite
    **which** work (1975 / 1978 / 2004). And none of them is the "full grammar" — that role is
    Whitney's, the advanced-stage reference above the whole Russian ladder.
+
+## Related — Tolchelnikov's own papers on the 1975 line
+
+[`TolchelnikovTalmud_2026/papers/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/papers)
+collects the author's 2023–2025 conference papers/talks developing this same 1975→generative-engine
+line (Auroville Feb 2024, Fortunatovskiye 2023, Dubyanskiye 2024), plus Kulikov's independent
+50th-anniversary commentary on the same Zaliznyak-1975 article — published as MDX at
+[`papers/index`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/index.mdx)
+for side-by-side reading with the comparison above.
 
 _Dr. Mārcis Gasūns_

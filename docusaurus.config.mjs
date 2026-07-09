@@ -46,7 +46,7 @@ const config = {
           path: '.',
           routeBasePath: 'grammars',
           sidebarPath: './sidebars.mjs',
-          include: bookDirs.map((d) => `${d}/**.mdx`),
+          include: bookDirs.map((d) => `${d}/**/*.mdx`),
           exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**'],
           remarkPlugins: [remarkRstTable],
           editUrl: undefined,

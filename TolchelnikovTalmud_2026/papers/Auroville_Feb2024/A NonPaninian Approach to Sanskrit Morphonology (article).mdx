@@ -1,0 +1,83 @@
+---
+title: "A NonPaninian Approach to Sanskrit Morphonology (article)"
+sidebar_label: "A NonPaninian Approach to Sanskrit Morphonology (article)"
+---
+
+**A NonPaninian Approach to Sanskrit Morphonology**
+
+**Based on the Works of Andrei Zalizniak**
+
+```rst-table
++------------------------------------------------------+----------------------------------------------+
+| **Ivan Tolchelnikov**                                | > **Andrei Shirobokov**                      |
+|                                                      | >                                            |
+| > Lomonosov Moscow State University / Russia, Moscow | > Sanskrit Zealots\' Society/ Russia, Moscow |
+| >                                                    | >                                            |
+| > Sanskrit Zealots\' Society/ Russia, Moscow         | > anshirm@gmail.com                          |
+| >                                                    |                                              |
+| > vanishtax@gmail.com                                |                                              |
++======================================================+==============================================+
+```
+
+**Abstract**
+
+> This article presents the non-Paninian approach to Sanskrit morphonology designed by A. Zalizniak and developed by our team. The core ideas dicussed are: (1) the division of phonological processes into three groups: pure alternation, special phoneme-surroundings dependent changes in verb roots, and general sandhi rules; (2) the description of the alternation process in pairs of morphemes A and B in terms of morphological positions and alternation types; (3) the description of phonological processes in terms of alternation series (13 sets of basic, guṇa, and vṛddhi grades). Our current task is to create a database of all Sanskrit morphemes with these characteristics defined and a tree showing all their possible combinations. Our current project is to develop using this approach a Sanskrit morphological generator much similar to Huet\'s[^1], but more comprehensive, accurate, and understandable.
+
+**Phonological Processes**
+
+The first step in our Zalizniak-based approach involves categorizing all phonological processes in Sanskrit into three groups: pure alternation (there are 13 special phonemes that have 3 grades: basic, guṇa, and vṛddhi), phoneme-surroundings dependent changes or verbal root sandhi, general sandhi rules that may be applied to any combination of sounds (general sandhi are out of focus of our project).
+
+**Morphological Positions and Alternation Types**
+
+It remains to define the circumstances in which morphemes took basic, guṇa or vṛddhi grade.
+
+Morphological structure is the combination of two morphemes: a preceding morpheme A and a following morpheme B. Morphological position is the expectation of a certain grade --- basic, guṇa or vṛddhi --- for every morpheme A with a certain morpheme B. We need to specify it in three expectations according to three grades present in Sanskrit. The first morphological position is the expectation of basic grade in every A as seen with suffixes such as -ta- of the past passive participle. The second morphological position is the expectation of guṇa-grade in every A as seen with suffixes -sya- of the future stem. The third morphological position is the expectation of vṛddhi-grade in every A as seen with suffixes -siṣ- of the sixth aorist stem.
+
+Zalizniak defines alternation types as alternation patterns of A in three different morphological positions. Simply put, which grade A takes in which expectation. There are 4 alternation types. The first type meets all expectations. What is expected by B is taken by A as in cases of root √kṛ in past passive participle when suffix -ta- expects basic grade and √kṛ remains in basic; in future stem when suffix -sya- expects guṇa-grade and √kṛ becomes "kar"; and in fourth aorist stem when suffix -s- expects vṛddhi-grade and √kṛ becomes "kār". The second type meets the expectations of guṇa and vṛddhi but it does not meet the expectation of basic grade. In this case, it also gives guṇa as in the past passive participle of √tsar "to sneak" when it does not become "tsṛta" (as R1) or "tsīrta" (as R2). The third type is the fixed basic grade. For example, √jṛmbh "to gape" never occurs in guṇa as "jarmbh" or vṛddhi as "jārmbh". The morphemes of the third type are approximately five times less frequent than those of the first type.
+
+Fourth type is the fixed vṛddhi-grade. For example, √dhau 'to run\'. There are only twenty to thirty morphemes of the fourth type in Sanskrit.
+
+Algorithm for connecting a certain A with a certain B:
+
+1\. Placing A in proper grade according to morphological position and alternation type;
+
+2\. Placing connecting vowel -i-/-ī- (if necessary);
+
+3\. Changing alternation series (if required by B);
+
+4\. If A = verbal root / causative suffix; then reduplication of the verbal root (if required by B);\
+5. If A = verbal root and A did not undergo step 3, applying special verbal root sandhi;
+
+6\. Applying general rules of sandhi. For vowel chains sandhi rules are applied from right to left, for consonants --- from left to right as usual.
+
+**Goals and achievements**
+
+This approach is designed to deal with the alternations and the special verbal root sandhi. To explain Sanskrit alternation, it is necessary to determine the alternation type for all morphemes that could potentially be an A (verbal roots, noun roots, suffixes, infixes, and prefixes), and to determine morphological position, that is expectation placed by every single morpheme B (suffixes, infixes, endings). These goals primarily require a database of all Sanskrit morphemes with their morphological characteristics, such as alternation series, alternation type, morphological position or grade expectation, seṭ-aniṭ-veṭ quality, and present and aorist stem classes. The verbal root has all of them, and the database of nearly 820 verb roots with these characteristics has already been created[^2].
+
+These goals require the algorithmization of verb root reduplication. This work is completely finished[^3].
+
+Third, these goals require formulating the rules for insertion of connecting vowel -i- (so called seṭ-quality). By solving this problem, we added 5 more subdivisions of veṭ.
+
+Fourth, our goals require creating a tree of all possible morpheme combinations and presently it is done for verbal derivation only.
+
+Our nearest goal is to develop a computer Sanskrit morphological generator that is more accurate and comprehensible than existing ones, and complete as much as possible.
+
+**Computer Code**
+
+The computer code is written in PHP in the functional programming style. The main operating principle of the program is the representation of a word form as a chain of morphemes. Each such morpheme has its own unified properties, and further transformation of this chain into the final version according to the rules formulated in our Zalizniak-based approach.
+
+The code consists of several dozen functions. Some of the functions describe lexemes, all the rules and exceptions that are required to build the correct chain of word forms. The other part of the functions is utility --- they are involved in parsing words, applying sandhi, alternating and other necessary operations.
+
+**References**
+
+Andrei Zalizniak. 1975. Morphonological classification of verbal roots of the ancient indian language (Морфологическая классификация древнеиндийский глагольных корней). Ed. 2018 in A. Zalizniak. 1978. Sanskrit Grammar Overview (Грамматический очерк санскрита), Nestor-Istoriya, Moscow.
+
+William D. Whitney. 1885. Ed. 2000, The Roots, Verb-Forms and Primary Derivatives of the Sanskrit Language. Motilal Banarsidass, Delhi.
+
+William D. Whitney. 1896. Sanskrit Grammar. Ed. 1950, Harvard University Press, Cambrodge, Massachusetts.
+
+[^1]: https://sanskrit.inria.fr/DICO/grammar.en.html
+
+[^2]: http://sanskrit.anshir.ru/
+
+[^3]: Same link. The work of these algorithms might be seen in pages for every verbal root.
