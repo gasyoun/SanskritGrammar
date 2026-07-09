@@ -754,14 +754,30 @@ H246, но формулировки «набирают популярность 
 [ashtadhyayi.com/sutraani](https://ashtadhyayi.com/sutraani) — разрешает ссылку на сутру и
 её текст/перевод, чтобы правило в тексте могло цитировать точный адрес. См. H413.
 
-### 6.7. Корпус-скилл грамматических комментаторов — ПОСТАВЛЕН В ОЧЕРЕДЬ
+### 6.7. Корпус-скилл грамматических комментаторов — СОБРАН (H414)
 
 Правка `lidova` «указать школу, показать, как бхашьи/варттики развивали или оспаривали
 взгляды на корни, какие авторитеты стояли за классификациями» вручную неописуема.
 Поставлена задача обучить скилл на корпусе: Kātyāyana *Vārttika-sūtra* (Pataskar), Patañjali
 *Vyākaraṇa-Mahābhāṣya* (Kielhorn 1892–1909), Cardona 1997 (*Pāṇini: A Survey of Research*),
 Staal 1985 (*A Reader on Sanskrit Grammarians*), Scharfe 1977 (*Grammatical Literature*).
-Отдельный handoff — см. H413.
+Отдельный handoff — см.
+[H414](https://github.com/gasyoun/Uprava/blob/main/handoffs/H414-Opus_SanskritGrammar_gasuns-dhatu-panini-commentary-corpus-skill_09.07.26.md).
+
+**Собрано** (H414, 09-07-2026): скилл `/panini-commentary-corpus` поверх
+[commentary_corpus.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/commentary_corpus.py)
+— слой ПОВЕРХ `/panini-sutra-lookup`: тематический поиск по **корню/понятию** (а не по номеру
+сутры) по корпусу Mahābhāṣya + вартик Катьяяны + Kāśikā (данные
+[ashtadhyayi-com/data](https://github.com/ashtadhyayi-com/data), кэш из H413), с транслитерацией
+входа через vidyut. Три режима: `--search TERM` (какие сутры обсуждают тему, с пофрагментной
+цитатой по слоям), `--frame TERM` (синтез комментаторской рамки — школа, цепь
+сутра→вартика→бхашья→Kāśikā, «кто развивал/оспаривал» + указатель Cardona/Staal/Scharfe по теме
++ шаблон сноски), `--biblio [TOPIC]` (курируемый библио-указатель
+[secondary_lit.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/secondary_lit.json),
+12 тем — пойнтеры, не полный текст). Побочно: этот слой корректно индексирует вартики (схема
+`{data:[{sutra,vartika}]}` в vartika.txt отличается от 5-значного id остальных слоёв — в H413
+`--commentary` для вартик из-за этого молча возвращал пусто). Печатный текст правится через
+errata-конвенцию, не напрямую в mdx.
 
 _Раздел § 6 добавлен Opus 4.8 (`claude-opus-4-8`), H413 — визы автора зафиксированы
 09-07-2026._
