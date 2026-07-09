@@ -19,15 +19,17 @@ proposals:
     type: whitney-ref
     proposal: "Столбец «Ряд» в каталоге глагольных корней (Прил. 1) вычислен алгоритмически из огласовки корня по исчислению Таблицы 2 (Раздел II): корневой гласный задаёт букву ряда (A/I/U/R/L/M/N), долгота — индекс (₁/₂); корни на носовой с синкопирующей слабой ступенью отнесены к M/N. Из 930 корней: 445 высокой уверенности, 457 средней, 28 низкой (огласовка уже в ступени гуна/вриддхи). Прошу утвердить методику как основу каталога — значения средней/низкой уверенности помечены для ручной проверки."
     evidence: "data/whitney_talmud.json → verbal_roots[*].ryad (ryad_source=derived, ryad_confidence); правило: tools/build_whitney_talmud.py derive_ryad()"
-    status: pending
-    approved_by: null
+    status: rejected
+    approved_by: "Tolchelnikov-Ivan"
+    resolution: "Отклонено автором (issue #50, 08-07-2026): «Примечание не нужно». Ряд берётся напрямую из последней версии руководства (Talmud 2.1.6), а не вычисляется — методическая сноска не требуется."
   - id: FN-0002
     target: { appendix: "1", scope: "весь столбец seṭ*" }
     type: set-correction
     proposal: "Столбец «seṭ» выведён ориентировочно по наличию соединительного i/ī в причастии p.p.p. (seṭ: 172, aniṭ: 287, без данных: 471). Значение носит вспомогательный характер (veṭ-корни и супплетивные p.p.p. не различаются) — прошу утвердить как ориентир, не как нормативную разметку."
     evidence: "data/whitney_talmud.json → verbal_roots[*].set (set_source=derived-ppp); сверка с WhitneyRoots/crosswalk/ppp_validation.json"
-    status: pending
-    approved_by: null
+    status: rejected
+    approved_by: "Tolchelnikov-Ivan"
+    resolution: "Отклонено автором (issue #50, 08-07-2026): «Примечание не нужно». seṭ берётся из последней версии руководства (Talmud 2.1.6), а не выводится по p.p.p. — методическая сноска не требуется."
   - id: FN-0003
     target: { appendix: "1", root: "√kṛ" }
     type: freq-note
@@ -110,5 +112,26 @@ proposals:
     type: freq-note
     proposal: "√ah — DCS-ранг 11 (частота 9447), один из самых частотных корней; кандидат в первую когорту для самостоятельного изучения (Ряд* A₁, класс —)."
     evidence: "WhitneyRoots/crosswalk/roots.csv whitney_no=24; dcs_rank=11, dcs_freq=9447"
+    status: pending
+    approved_by: null
+  - id: FN-0015
+    target: { section: "II", root: "√kṣar" }
+    type: set-correction
+    proposal: "√kṣar «течь»: ряд чередования в базе /z/ и каталоге — R₂, тогда как у Зализняка (1975, раздел «Ряды чередования I, U, R»; таблица «Распределение по типам» [1975: 79]) корень отнесён к R₁, тип II, seṭ. Прошу автора подтвердить нормативный индекс (R₁ vs R₂) — единственное содержательное расхождение Талмуда с классификацией Зализняка 1975 в переякоренной выборке H357."
+    evidence: "ZalizniakMorphology_1975 (раздел I/U/R, Таблица 4, R₁ type-II колонка); TolchelnikovTalmud_2026/data/z_root_map.json (z_series=R2); H357 morphoclass_crosswalk_1975_2014_2026.csv"
+    status: pending
+    approved_by: null
+  - id: FN-0016
+    target: { appendix: "1", scope: "весь столбец Ряд*" }
+    type: whitney-ref
+    proposal: "Подтверждение issue #50: «нулевые» ряды I0/N0/R0/U0/M0 (и ложные строки L) в базе /z/ — ошибка обработки Таблицы 2, а не категория классификации. Их следует официально исключить из всех производных артефактов (каталог, виджет, кросс-уок). Инвентарь рядов A–N с индексами 1/2 тождествен у Зализняка 1975, Гасунса 2014 и в рукописи Толчельникова 2026."
+    evidence: "issue #50 (авторская реплика И. Е. Толчельникова, 08-07-2026); TolchelnikovTalmud_2026/data/z_reconciliation_report.md (115 structural-bug rows)"
+    status: pending
+    approved_by: null
+  - id: FN-0017
+    target: { section: "конкорданс", root: "—" }
+    type: whitney-ref
+    proposal: "§-конкорданс (раздел «Конкорданс с Зализняком») атрибутирует ядро движка Талмуда — нумерованные морфологические позиции, исчисление типов, порождение по рядам — «Очерку» 1978 г. Однако этот аппарат восходит к статье 1975 г., которую Очерк 1978 не содержит. Предлагается поразрядная атрибуция: позиции/тип/порождение → 1975; запись I/II + полные парадигмы/сандхи → 1978; диахрония/когнаты → 2004 — вместо сплошного «→ Очерк 1978»."
+    evidence: "MORPHOCLASS_3WAY_MEMO.md §4.3; ZALIZNYAK_1975_1978_2004_COMPARISON.md (§ «What it means for us», п.1); ZalizniakMorphology_1975 (морфологические позиции 1/2/3, типы I–IV)"
     status: pending
     approved_by: null

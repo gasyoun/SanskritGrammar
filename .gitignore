@@ -30,6 +30,7 @@ GasunsDhatu_2014/*
 !GasunsDhatu_2014/errata.yml
 !GasunsDhatu_2014/ERRATA.md
 !GasunsDhatu_2014/revision-2026/
+!GasunsDhatu_2014/CHANGELOG.md
 TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/*.mdx
 !TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md
@@ -41,6 +42,7 @@ TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/ERRATA.md
 !TolchelnikovTalmud_2026/.ai_state.md
 !TolchelnikovTalmud_2026/footnote-proposals/
+!TolchelnikovTalmud_2026/CHANGELOG.md
 # ApteSyntax_1885 — the root Apte-unicode.mdx is already tracked; the unpacked
 # archive under src/ carries the derived .mdx (+ Pandoc-extracted *_media/) we
 # also want, but its Word/PDF/RTF/HTML/JPG/.dat/.txt sources and the 101 MB
@@ -53,3 +55,5 @@ ApteSyntax_1885/src/**
 # H241 Phase-3 enrichment crosswalk: derived data asset + reproducible generators
 !TolchelnikovTalmud_2026/data/
 !TolchelnikovTalmud_2026/tools/
+# H329: raw /z/ scrape cache stays local (guardrail — commit only the derived join map)
+TolchelnikovTalmud_2026/data/raw_cache/

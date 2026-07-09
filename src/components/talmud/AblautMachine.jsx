@@ -2,7 +2,7 @@
 // real Whitney root, then toggle Слабая ⇔ Гуна ⇔ Вриддхи and watch the nucleus
 // vowel breathe. Every later chapter's derivations call this calculus, so it is
 // built first (H241 Phase 2). Series table: ./ablautSeries.js; example roots:
-// TolchelnikovTalmud_2026/data/widget_roots.json (derived Ряд, gated proposals).
+// TolchelnikovTalmud_2026/data/widget_roots.json (author's Ряд from Приложение 1).
 import React, { useState } from 'react';
 import styles from './styles.module.css';
 import { SERIES, SERIES_ORDER, GRADES } from './ablautSeries';
@@ -98,14 +98,18 @@ export default function AblautMachine() {
           <>
             √{example.root} «{example.gloss}» (кл.{' '}
             {example.class.length ? example.class.join(', ') : '—'}) отнесён к ряду{' '}
-            <b>{example.ryad}</b>{' '}
-            {example.ryad_confidence === 'high'
-              ? '(ступень фонологически однозначна)'
-              : example.ryad_confidence === 'low'
-              ? '(ряд восстановлен по огласовке — низкая уверенность)'
-              : '(ряд — предложение, требует проверки)'}
-            . Показан только чередующийся элемент корня, не вся словоформа. Ряд —
-            производная величина, не утверждение автора: см. footnote-proposals.
+            <b>{example.ryad}</b>
+            {example.tip ? ` (тип ${example.tip})` : ''} по каталогу Приложения 1
+            руководства. Показан только чередующийся элемент корня, не вся словоформа.
+            Ряд — авторское значение из руководства (не выводимое предложение).
+            {example.z_url && (
+              <>
+                {' '}
+                <a href={example.z_url} target="_blank" rel="noopener noreferrer">
+                  полная парадигма на samskrtam.ru/z/ ↗
+                </a>
+              </>
+            )}
           </>
         ) : (
           <>
