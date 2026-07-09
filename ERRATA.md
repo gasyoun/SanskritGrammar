@@ -10,7 +10,7 @@ Per-book errata lists — printed-page corrections gathered from the editions' o
 |--|--:|--:|--:|
 | [ApteSyntax_1885](ApteSyntax_1885/ERRATA.md) | 0 | 0 | 0 |
 | [BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/ERRATA.md) | 0 | 0 | 0 |
-| [GasunsDhatu_2014](GasunsDhatu_2014/ERRATA.md) | 70 | 66 | 4 |
+| [GasunsDhatu_2014](GasunsDhatu_2014/ERRATA.md) | 75 | 71 | 4 |
 | [KnauerFrazy_1908](KnauerFrazy_1908/ERRATA.md) | 25 | 25 | 0 |
 | [KocherginaUchebnik_1998](KocherginaUchebnik_1998/ERRATA.md) | 0 | 0 | 0 |
 | [TolchelnikovTalmud_2026](TolchelnikovTalmud_2026/ERRATA.md) | 0 | 0 | 0 |
