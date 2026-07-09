@@ -119,15 +119,17 @@ proposals:
     type: set-correction
     proposal: "√kṣar «течь»: ряд чередования в базе /z/ и каталоге — R₂, тогда как у Зализняка (1975, раздел «Ряды чередования I, U, R»; таблица «Распределение по типам» [1975: 79]) корень отнесён к R₁, тип II, seṭ. Прошу автора подтвердить нормативный индекс (R₁ vs R₂) — единственное содержательное расхождение Талмуда с классификацией Зализняка 1975 в переякоренной выборке H357."
     evidence: "ZalizniakMorphology_1975 (раздел I/U/R, Таблица 4, R₁ type-II колонка); TolchelnikovTalmud_2026/data/z_root_map.json (z_series=R2); H357 morphoclass_crosswalk_1975_2014_2026.csv"
-    status: pending
-    approved_by: null
+    status: rejected
+    approved_by: "Tolchelnikov-Ivan"
+    resolution: "Отклонено автором (issue #50, 09-07-2026): «Ряд берём из последней версии руководства... где при букве ряда нет цифры, уточнять не нужно». data/talmud_appendix1.json (id=KṢAR, guide-derived) уже даёт `ryad: \"R\"` без индекса — R₁/R₂ выбирать не из чего, вопрос снят без сноски."
   - id: FN-0016
     target: { appendix: "1", scope: "весь столбец Ряд*" }
     type: whitney-ref
     proposal: "Подтверждение issue #50: «нулевые» ряды I0/N0/R0/U0/M0 (и ложные строки L) в базе /z/ — ошибка обработки Таблицы 2, а не категория классификации. Их следует официально исключить из всех производных артефактов (каталог, виджет, кросс-уок). Инвентарь рядов A–N с индексами 1/2 тождествен у Зализняка 1975, Гасунса 2014 и в рукописи Толчельникова 2026."
     evidence: "issue #50 (авторская реплика И. Е. Толчельникова, 08-07-2026); TolchelnikovTalmud_2026/data/z_reconciliation_report.md (115 structural-bug rows)"
-    status: pending
-    approved_by: null
+    status: approved
+    approved_by: "Tolchelnikov-Ivan"
+    resolution: "Подтверждено автором (issue #50, 09-07-2026): «Все верно» на перефразировку — «0»-ряды не создаются, это баг /z/, во всех производных артефактах исключить."
   - id: FN-0017
     target: { section: "конкорданс", root: "—" }
     type: whitney-ref
