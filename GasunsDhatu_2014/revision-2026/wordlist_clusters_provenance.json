@@ -1,0 +1,24 @@
+{
+  "generated_by": "wordlist_clusters.py (H382)",
+  "source": "union_headwords.tsv (SanskritLexicography union headword list, CDSL)",
+  "headwords": 323425,
+  "method": "максимальные согласные цепочки >= 2; M/H/~ — границы; разновидности (типы) по позиции initial/final/any",
+  "note_2014": "цифры 2014 г. получены на ином словнике (~260 000) неописанным инструментом; воспроизводимость важнее совпадения",
+  "counts_types": {
+    "any": {
+      "2": 375,
+      "3": 384,
+      "4+": 52
+    },
+    "initial": {
+      "2": 108,
+      "3": 21,
+      "4+": 2
+    },
+    "final": {
+      "2": 132,
+      "3": 30,
+      "4+": 2
+    }
+  }
+}

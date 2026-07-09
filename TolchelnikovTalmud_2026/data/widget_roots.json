@@ -1,0 +1,1670 @@
+{
+ "_meta": {
+  "what": "Compact Phase-2 widget feed projected from whitney_talmud.json",
+  "generator": "tools/build_widget_data.py",
+  "provenance": "ryad/tip/set are the author's own values from Приложение 1 (manual, H329 Phase 3 — issue #50 ruling); gloss/class/ppp/dcs_rank are verbatim WhitneyRoots; z_url deep-links to the samskrtam.ru/z/ verb-DB paradigm (via data/z_root_map.json).",
+  "counts": {
+   "ablaut_examples": 45,
+   "set_examples": 106,
+   "nominal": 15
+  }
+ },
+ "ablaut_examples": [
+  {
+   "root": "kṛ",
+   "gloss": "make",
+   "class": [
+    "I",
+    "II",
+    "V",
+    "VIII"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 1,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=594"
+  },
+  {
+   "root": "kṛ",
+   "gloss": "scatter",
+   "class": [
+    "VI"
+   ],
+   "ryad": "R₂",
+   "tip": "I",
+   "set": "seṭ",
+   "dcs_rank": 1,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=661"
+  },
+  {
+   "root": "bhū",
+   "gloss": "be",
+   "class": [
+    "I"
+   ],
+   "ryad": "U₂",
+   "tip": "I",
+   "set": "seṭ",
+   "dcs_rank": 2,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=553"
+  },
+  {
+   "root": "as",
+   "gloss": "be",
+   "class": [
+    "II"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": null,
+   "dcs_rank": 3,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=1"
+  },
+  {
+   "root": "vac",
+   "gloss": "speak",
+   "class": [
+    "II",
+    "III"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 4,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=13"
+  },
+  {
+   "root": "gam",
+   "gloss": "go",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "M₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 5,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=701"
+  },
+  {
+   "root": "dṛś",
+   "gloss": "see",
+   "class": [
+    "IV"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 6,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=616"
+  },
+  {
+   "root": "dā",
+   "gloss": "give",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "A₂",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 7,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=170"
+  },
+  {
+   "root": "vid",
+   "gloss": "know",
+   "class": [
+    "I",
+    "II",
+    "VI"
+   ],
+   "ryad": "I₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 8,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=252"
+  },
+  {
+   "root": "śru",
+   "gloss": "hear",
+   "class": [
+    "II",
+    "V"
+   ],
+   "ryad": "U₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 9,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=513"
+  },
+  {
+   "root": "brū",
+   "gloss": "say",
+   "class": [
+    "II",
+    "VI"
+   ],
+   "ryad": "U₂",
+   "tip": "I",
+   "set": null,
+   "dcs_rank": 10,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=552"
+  },
+  {
+   "root": "ah",
+   "gloss": "say",
+   "class": [],
+   "ryad": "A₁",
+   "tip": "II",
+   "set": null,
+   "dcs_rank": 11,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=10"
+  },
+  {
+   "root": "sthā",
+   "gloss": "stand",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₂",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 12,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=226"
+  },
+  {
+   "root": "jan",
+   "gloss": "give birth, be born",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "N₂",
+   "tip": "I",
+   "set": "seṭ",
+   "dcs_rank": 13,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=809"
+  },
+  {
+   "root": "han",
+   "gloss": "smite",
+   "class": [
+    "I",
+    "II",
+    "VIII"
+   ],
+   "ryad": "N₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 14,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=806"
+  },
+  {
+   "root": "yaj",
+   "gloss": "offer",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 16,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=11"
+  },
+  {
+   "root": "hu",
+   "gloss": "sacrifice",
+   "class": [
+    "II",
+    "III"
+   ],
+   "ryad": "U₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 17,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=526"
+  },
+  {
+   "root": "yuj",
+   "gloss": "join",
+   "class": [
+    "II",
+    "VII"
+   ],
+   "ryad": "U₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 19,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=482"
+  },
+  {
+   "root": "yā",
+   "gloss": "go",
+   "class": [
+    "II"
+   ],
+   "ryad": "A₂",
+   "tip": "II",
+   "set": "aniṭ",
+   "dcs_rank": 20,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=202"
+  },
+  {
+   "root": "pā",
+   "gloss": "drink",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "A₂",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 21,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=184"
+  },
+  {
+   "root": "jñā",
+   "gloss": "know",
+   "class": [
+    "I",
+    "IX"
+   ],
+   "ryad": "A₂",
+   "tip": "II",
+   "set": "aniṭ",
+   "dcs_rank": 22,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=167"
+  },
+  {
+   "root": "ich",
+   "gloss": "",
+   "class": [],
+   "ryad": "I₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 23,
+   "z_url": null
+  },
+  {
+   "root": "iṣ",
+   "gloss": "send",
+   "class": [
+    "IV",
+    "VI",
+    "IX"
+   ],
+   "ryad": "I₁",
+   "tip": "I",
+   "set": "seṭ",
+   "dcs_rank": 23,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=284"
+  },
+  {
+   "root": "paś",
+   "gloss": "see",
+   "class": [
+    "IV"
+   ],
+   "ryad": "A₁",
+   "tip": "II",
+   "set": "veṭ",
+   "dcs_rank": 24,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=79"
+  },
+  {
+   "root": "man",
+   "gloss": "think",
+   "class": [
+    "III",
+    "IV",
+    "VIII"
+   ],
+   "ryad": "N₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 25,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=783"
+  },
+  {
+   "root": "dhā",
+   "gloss": "put",
+   "class": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "ryad": "A₂",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 26,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=178"
+  },
+  {
+   "root": "smṛ",
+   "gloss": "remember",
+   "class": [
+    "I"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 28,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=657"
+  },
+  {
+   "root": "ji",
+   "gloss": "conquer",
+   "class": [
+    "I",
+    "II"
+   ],
+   "ryad": "I₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 29,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=298"
+  },
+  {
+   "root": "car",
+   "gloss": "move",
+   "class": [
+    "I"
+   ],
+   "ryad": "R",
+   "tip": "II",
+   "set": "seṭ",
+   "dcs_rank": 30,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=665"
+  },
+  {
+   "root": "vad",
+   "gloss": "speak",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": "seṭ",
+   "dcs_rank": 31,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=15"
+  },
+  {
+   "root": "muc",
+   "gloss": "release",
+   "class": [
+    "VI"
+   ],
+   "ryad": "U₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 32,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=474"
+  },
+  {
+   "root": "i",
+   "gloss": "go",
+   "class": [
+    "I",
+    "IV",
+    "V"
+   ],
+   "ryad": "I₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 33,
+   "z_url": null
+  },
+  {
+   "root": "labh",
+   "gloss": "take",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "tip": "II",
+   "set": "veṭ",
+   "dcs_rank": 35,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=112"
+  },
+  {
+   "root": "pat",
+   "gloss": "fly, fall",
+   "class": [
+    "I"
+   ],
+   "ryad": "A₁",
+   "tip": "II",
+   "set": "seṭ",
+   "dcs_rank": 38,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=76"
+  },
+  {
+   "root": "prach",
+   "gloss": "ask",
+   "class": [
+    "VI"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 40,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=80"
+  },
+  {
+   "root": "har",
+   "gloss": "be gratified",
+   "class": [
+    "IV"
+   ],
+   "ryad": "R",
+   "tip": "II",
+   "set": "seṭ",
+   "dcs_rank": 42,
+   "z_url": null
+  },
+  {
+   "root": "hṛ",
+   "gloss": "take",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 42,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=658"
+  },
+  {
+   "root": "sṛj",
+   "gloss": "send forth",
+   "class": [
+    "I",
+    "VI"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 43,
+   "z_url": null
+  },
+  {
+   "root": "hā",
+   "gloss": "leave",
+   "class": [
+    "I",
+    "III"
+   ],
+   "ryad": "A₂",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 44,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=230"
+  },
+  {
+   "root": "bhuj",
+   "gloss": "bend",
+   "class": [
+    "VI"
+   ],
+   "ryad": "U₁",
+   "tip": "I",
+   "set": "aniṭ",
+   "dcs_rank": 46,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=472"
+  },
+  {
+   "root": "bandh",
+   "gloss": "bind",
+   "class": [
+    "I",
+    "IX"
+   ],
+   "ryad": "N₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 47,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=779"
+  },
+  {
+   "root": "mṛ",
+   "gloss": "die",
+   "class": [
+    "I"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 48,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=631"
+  },
+  {
+   "root": "mṛ",
+   "gloss": "crush",
+   "class": [
+    "VI",
+    "IX"
+   ],
+   "ryad": "R₂",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 48,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=671"
+  },
+  {
+   "root": "vas",
+   "gloss": "shine",
+   "class": [
+    "II",
+    "VI"
+   ],
+   "ryad": "A₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 49,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=19"
+  },
+  {
+   "root": "vṛt",
+   "gloss": "turn",
+   "class": [
+    "I",
+    "II",
+    "III"
+   ],
+   "ryad": "R₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 50,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=643"
+  }
+ ],
+ "set_examples": [
+  {
+   "root": "kṛ",
+   "gloss": "make",
+   "ppp": "kṛtá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 1,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=594"
+  },
+  {
+   "root": "bhū",
+   "gloss": "be",
+   "ppp": "bhūtá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 2,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=553"
+  },
+  {
+   "root": "as",
+   "gloss": "throw",
+   "ppp": "asta",
+   "set": "veṭ",
+   "set_code": "v2",
+   "dcs_rank": 3,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=9"
+  },
+  {
+   "root": "vac",
+   "gloss": "speak",
+   "ppp": "uktá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 4,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=13"
+  },
+  {
+   "root": "gam",
+   "gloss": "go",
+   "ppp": "gatá",
+   "set": "veṭ",
+   "set_code": "v3",
+   "dcs_rank": 5,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=701"
+  },
+  {
+   "root": "dṛś",
+   "gloss": "see",
+   "ppp": "dṛṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 6,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=616"
+  },
+  {
+   "root": "dā",
+   "gloss": "give",
+   "ppp": "-",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 7,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=170"
+  },
+  {
+   "root": "vid",
+   "gloss": "know",
+   "ppp": "viditá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 8,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=252"
+  },
+  {
+   "root": "śru",
+   "gloss": "hear",
+   "ppp": "śrutá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 9,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=513"
+  },
+  {
+   "root": "sthā",
+   "gloss": "stand",
+   "ppp": "sthitá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 12,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=226"
+  },
+  {
+   "root": "jan",
+   "gloss": "give birth, be born",
+   "ppp": "jātá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 13,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=809"
+  },
+  {
+   "root": "han",
+   "gloss": "smite",
+   "ppp": "hatá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 14,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=806"
+  },
+  {
+   "root": "yaj",
+   "gloss": "offer",
+   "ppp": "iṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 16,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=11"
+  },
+  {
+   "root": "hu",
+   "gloss": "sacrifice",
+   "ppp": "hutá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 17,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=526"
+  },
+  {
+   "root": "yuj",
+   "gloss": "join",
+   "ppp": "yuktá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 19,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=482"
+  },
+  {
+   "root": "yā",
+   "gloss": "go",
+   "ppp": "yātá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 20,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=202"
+  },
+  {
+   "root": "pā",
+   "gloss": "drink",
+   "ppp": "pītá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 21,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=184"
+  },
+  {
+   "root": "jñā",
+   "gloss": "know",
+   "ppp": "jñātá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 22,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=167"
+  },
+  {
+   "root": "iṣ",
+   "gloss": "send",
+   "ppp": "iṣitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 23,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=284"
+  },
+  {
+   "root": "paś",
+   "gloss": "see",
+   "ppp": "spaṣṭa",
+   "set": "veṭ",
+   "set_code": "v2",
+   "dcs_rank": 24,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=79"
+  },
+  {
+   "root": "man",
+   "gloss": "think",
+   "ppp": "matá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 25,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=783"
+  },
+  {
+   "root": "dhā",
+   "gloss": "put",
+   "ppp": "hitá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 26,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=178"
+  },
+  {
+   "root": "smṛ",
+   "gloss": "remember",
+   "ppp": "smṛta",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 28,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=657"
+  },
+  {
+   "root": "ji",
+   "gloss": "conquer",
+   "ppp": "jitá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 29,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=298"
+  },
+  {
+   "root": "ji",
+   "gloss": "quicken",
+   "ppp": "jinvitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 29,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=299"
+  },
+  {
+   "root": "car",
+   "gloss": "move",
+   "ppp": "caritá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 30,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=665"
+  },
+  {
+   "root": "vad",
+   "gloss": "speak",
+   "ppp": "uditá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 31,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=15"
+  },
+  {
+   "root": "muc",
+   "gloss": "release",
+   "ppp": "muktá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 32,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=474"
+  },
+  {
+   "root": "i",
+   "gloss": "go",
+   "ppp": "itá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 33,
+   "z_url": null
+  },
+  {
+   "root": "labh",
+   "gloss": "take",
+   "ppp": "labdha",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 35,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=112"
+  },
+  {
+   "root": "pat",
+   "gloss": "fly, fall",
+   "ppp": "patitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 38,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=76"
+  },
+  {
+   "root": "prach",
+   "gloss": "ask",
+   "ppp": "pṛṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 40,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=80"
+  },
+  {
+   "root": "hṛ",
+   "gloss": "take",
+   "ppp": "hṛtá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 42,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=658"
+  },
+  {
+   "root": "sṛj",
+   "gloss": "send forth",
+   "ppp": "sṛṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 43,
+   "z_url": null
+  },
+  {
+   "root": "hā",
+   "gloss": "leave",
+   "ppp": "hīná",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 44,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=230"
+  },
+  {
+   "root": "bhuj",
+   "gloss": "enjoy",
+   "ppp": "bhukta",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 46,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=473"
+  },
+  {
+   "root": "bandh",
+   "gloss": "bind",
+   "ppp": "baddhá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 47,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=779"
+  },
+  {
+   "root": "mṛ",
+   "gloss": "die",
+   "ppp": "mṛtá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 48,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=631"
+  },
+  {
+   "root": "vas",
+   "gloss": "shine",
+   "ppp": "uṣṭá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 49,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=19"
+  },
+  {
+   "root": "vṛt",
+   "gloss": "turn",
+   "ppp": "vṛttá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 50,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=643"
+  },
+  {
+   "root": "kṣip",
+   "gloss": "throw",
+   "ppp": "kṣiptá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 51,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=289"
+  },
+  {
+   "root": "tyaj",
+   "gloss": "forsake",
+   "ppp": "tyaktá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 52,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=55"
+  },
+  {
+   "root": "śudh",
+   "gloss": "purify",
+   "ppp": "śuddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 53,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=507"
+  },
+  {
+   "root": "nī",
+   "gloss": "lead",
+   "ppp": "nītá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 55,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=364"
+  },
+  {
+   "root": "āp",
+   "gloss": "obtain",
+   "ppp": "āptá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 56,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=151"
+  },
+  {
+   "root": "dah",
+   "gloss": "burn",
+   "ppp": "dagdhá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 58,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=63"
+  },
+  {
+   "root": "jīv",
+   "gloss": "live",
+   "ppp": "jīvitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 61,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=355"
+  },
+  {
+   "root": "stu",
+   "gloss": "praise",
+   "ppp": "stutá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 62,
+   "z_url": null
+  },
+  {
+   "root": "pū",
+   "gloss": "cleanse",
+   "ppp": "pūtá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 63,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=549"
+  },
+  {
+   "root": "chid",
+   "gloss": "cut off",
+   "ppp": "chinná",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 64,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=297"
+  },
+  {
+   "root": "vṛ",
+   "gloss": "cover",
+   "ppp": "vṛtá",
+   "set": "veṭ",
+   "set_code": "v3",
+   "dcs_rank": 65,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=639"
+  },
+  {
+   "root": "tap",
+   "gloss": "heat",
+   "ppp": "taptá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 66,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=54"
+  },
+  {
+   "root": "bhid",
+   "gloss": "split",
+   "ppp": "bhinná",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 68,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=319"
+  },
+  {
+   "root": "sidh",
+   "gloss": "repel",
+   "ppp": "siddha",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 69,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=267"
+  },
+  {
+   "root": "sidh",
+   "gloss": "succeed",
+   "ppp": "siddha",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 69,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=268"
+  },
+  {
+   "root": "ās",
+   "gloss": "sit",
+   "ppp": "āsitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 70,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=152"
+  },
+  {
+   "root": "śak",
+   "gloss": "be able",
+   "ppp": "śakta",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 71,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=125"
+  },
+  {
+   "root": "aś",
+   "gloss": "eat",
+   "ppp": "aśitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 72,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=8"
+  },
+  {
+   "root": "rakṣ",
+   "gloss": "protect",
+   "ppp": "rakṣitá",
+   "set": "veṭ",
+   "set_code": "v",
+   "dcs_rank": 73,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=99"
+  },
+  {
+   "root": "gā",
+   "gloss": "sing",
+   "ppp": "gītá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 74,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=161"
+  },
+  {
+   "root": "vah",
+   "gloss": "carry",
+   "ppp": "ūḍhá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 75,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=21"
+  },
+  {
+   "root": "bhṛ",
+   "gloss": "bear",
+   "ppp": "bhṛtá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 77,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=629"
+  },
+  {
+   "root": "śaṃs",
+   "gloss": "praise",
+   "ppp": "śastá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 79,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=794"
+  },
+  {
+   "root": "prī",
+   "gloss": "please",
+   "ppp": "prītá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 80,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=368"
+  },
+  {
+   "root": "jap",
+   "gloss": "whisper",
+   "ppp": "japita",
+   "set": "veṭ",
+   "set_code": "v2",
+   "dcs_rank": 81,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=49"
+  },
+  {
+   "root": "krudh",
+   "gloss": "be angry",
+   "ppp": "kruddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 83,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=412"
+  },
+  {
+   "root": "snā",
+   "gloss": "bathe",
+   "ppp": "snātá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 86,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=227"
+  },
+  {
+   "root": "vyadh",
+   "gloss": "pierce",
+   "ppp": "viddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 88,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=119"
+  },
+  {
+   "root": "vṛdh",
+   "gloss": "grow",
+   "ppp": "vṛddhá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 89,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=644"
+  },
+  {
+   "root": "ram",
+   "gloss": "be or make content",
+   "ppp": "ratá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 93,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=705"
+  },
+  {
+   "root": "bhāṣ",
+   "gloss": "speak",
+   "ppp": "bhāṣita",
+   "set": "veṭ",
+   "set_code": "v2",
+   "dcs_rank": 96,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=192"
+  },
+  {
+   "root": "pṛ",
+   "gloss": "fill",
+   "ppp": "pūrṇá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 99,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=670"
+  },
+  {
+   "root": "pṛ",
+   "gloss": "be busy",
+   "ppp": "pṛta",
+   "set": "veṭ",
+   "set_code": "v3",
+   "dcs_rank": 99,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=624"
+  },
+  {
+   "root": "naś",
+   "gloss": "be lost",
+   "ppp": "naṣṭá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 106,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=69"
+  },
+  {
+   "root": "jṛ",
+   "gloss": "waste away",
+   "ppp": "jīrṇá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 107,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=667"
+  },
+  {
+   "root": "bhī",
+   "gloss": "fear",
+   "ppp": "bhītá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 110,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=369"
+  },
+  {
+   "root": "dviṣ",
+   "gloss": "hate",
+   "ppp": "dviṣṭa",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 112,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=307"
+  },
+  {
+   "root": "sev",
+   "gloss": "attend upon",
+   "ppp": "sevita",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 113,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=249"
+  },
+  {
+   "root": "yudh",
+   "gloss": "fight",
+   "ppp": "yuddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 118,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=483"
+  },
+  {
+   "root": "dhṛ",
+   "gloss": "hold",
+   "ppp": "dhṛtá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 122,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=620"
+  },
+  {
+   "root": "juṣ",
+   "gloss": "enjoy",
+   "ppp": "júṣṭa",
+   "set": "veṭ",
+   "set_code": "v3",
+   "dcs_rank": 123,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=440"
+  },
+  {
+   "root": "vraj",
+   "gloss": "proceed",
+   "ppp": "vrajita",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 128,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=124"
+  },
+  {
+   "root": "kṣi",
+   "gloss": "destroy",
+   "ppp": "kṣitá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 131,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=288"
+  },
+  {
+   "root": "bhaj",
+   "gloss": "divide, share",
+   "ppp": "bhaktá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 134,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=84"
+  },
+  {
+   "root": "dhyā",
+   "gloss": "think",
+   "ppp": "dhyāta",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 135,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=181"
+  },
+  {
+   "root": "dīp",
+   "gloss": "shine",
+   "ppp": "dīpta",
+   "set": "veṭ",
+   "set_code": "v3",
+   "dcs_rank": 137,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=360"
+  },
+  {
+   "root": "śam",
+   "gloss": "labor",
+   "ppp": "śamitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 138,
+   "z_url": null
+  },
+  {
+   "root": "hṛṣ",
+   "gloss": "be excited",
+   "ppp": "hṛṣitá",
+   "set": "veṭ",
+   "set_code": "v2",
+   "dcs_rank": 139,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=660"
+  },
+  {
+   "root": "budh",
+   "gloss": "know, wake",
+   "ppp": "buddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 145,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=471"
+  },
+  {
+   "root": "śī",
+   "gloss": "lie",
+   "ppp": "śayita",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 146,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=382"
+  },
+  {
+   "root": "muh",
+   "gloss": "be crazed",
+   "ppp": "mugdhá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 150,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=478"
+  },
+  {
+   "root": "svap",
+   "gloss": "sleep",
+   "ppp": "suptá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 151,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=143"
+  },
+  {
+   "root": "yam",
+   "gloss": "reach",
+   "ppp": "yatá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 153,
+   "z_url": null
+  },
+  {
+   "root": "mad",
+   "gloss": "be exhilarated, exhilarate",
+   "ppp": "mattá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 155,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=91"
+  },
+  {
+   "root": "dru",
+   "gloss": "run",
+   "ppp": "drutá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 156,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=456"
+  },
+  {
+   "root": "piṣ",
+   "gloss": "crush",
+   "ppp": "piṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 158,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=316"
+  },
+  {
+   "root": "spṛś",
+   "gloss": "touch",
+   "ppp": "spṛṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 159,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=144"
+  },
+  {
+   "root": "viś",
+   "gloss": "enter",
+   "ppp": "viṣṭá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 160,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=258"
+  },
+  {
+   "root": "sad",
+   "gloss": "sit",
+   "ppp": "sanná",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 176,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=139"
+  },
+  {
+   "root": "rudh",
+   "gloss": "obstruct",
+   "ppp": "ruddhá",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 184,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=492"
+  },
+  {
+   "root": "su",
+   "gloss": "press out",
+   "ppp": "sutá",
+   "set": "veṭ",
+   "set_code": "v4",
+   "dcs_rank": 188,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=516"
+  },
+  {
+   "root": "tṛ",
+   "gloss": "pass",
+   "ppp": "tīrṇá",
+   "set": "veṭ",
+   "set_code": "v1",
+   "dcs_rank": 193,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=668"
+  },
+  {
+   "root": "dīkṣ",
+   "gloss": "be consecrated",
+   "ppp": "dīkṣitá",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 195,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=359"
+  },
+  {
+   "root": "tuṣ",
+   "gloss": "be content",
+   "ppp": "tuṣṭa",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 196,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=448"
+  },
+  {
+   "root": "duṣ",
+   "gloss": "spoil",
+   "ppp": "duṣṭa",
+   "set": "aniṭ",
+   "set_code": "a",
+   "dcs_rank": 199,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=453"
+  },
+  {
+   "root": "jval",
+   "gloss": "burn, flame",
+   "ppp": "jvalita",
+   "set": "seṭ",
+   "set_code": "s",
+   "dcs_rank": 200,
+   "z_url": "https://samskrtam.ru/z/verb.php?id=686"
+  }
+ ],
+ "nominal": [
+  {
+   "headword": "AKṢN̥",
+   "deep": "{akṣn̥/akṣin/akṣi/akṣīn}",
+   "tip_ryad": "I/I/I/III · N₁/I₁/I₁/I₂",
+   "suffixes": "{0}",
+   "gloss": "глаз",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ADAS",
+   "deep": "{a/am/adas}",
+   "tip_ryad": "II/II/II · A₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "то (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ADHI",
+   "deep": "{adhi}",
+   "tip_ryad": "I · I₁",
+   "suffixes": "{1.īc/anc/ac}, сложн. слова",
+   "gloss": "над-, сверх- (приставка)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "ASMAD",
+   "deep": "{asma/n/asmad/vaya}",
+   "tip_ryad": "II/-/II/II · A₁/-/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "мы (личное мест., мн.ч.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "IDAM",
+   "deep": "{i/a/idam}",
+   "tip_ryad": "I/II/II · I₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "это (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "KØ",
+   "deep": "{kø//kim}",
+   "tip_ryad": "I//I · A₁//I₁",
+   "suffixes": "{0}",
+   "gloss": "кто? что? какой?",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "GO",
+   "deep": "{go/gā}",
+   "tip_ryad": "II/II · U₂/A₂",
+   "suffixes": "{0}, {2.ø}",
+   "gloss": "корова, бык",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "CATUṚ",
+   "deep": "{catuṛ} (ж.р. {catusṛ})",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}, {1.thø}",
+   "gloss": "четыре",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "TØ",
+   "deep": "{tø/sø/tad}",
+   "tip_ryad": "I/I/II · A₁/A₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "то, он (указат. мест.)",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "DIV",
+   "deep": "{div/dyā/dyu}",
+   "tip_ryad": "I/II/I · I₁/A₂/U₁",
+   "suffixes": "{0}, {2.ø}",
+   "gloss": "небо, светлый, дэва",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "DV",
+   "deep": "{dv} (замена {dvi/vi})",
+   "tip_ryad": "I · I₁",
+   "suffixes": "{2.ø}, {1.tīyø}",
+   "gloss": "два",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "PITṚ",
+   "deep": "{pitṛ}",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}",
+   "gloss": "отец",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "STRĪ",
+   "deep": "{strī}",
+   "tip_ryad": "I · I₂",
+   "suffixes": "{1.ø.III}",
+   "gloss": "женщина",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "SAKHI",
+   "deep": "{sakhi/sakhā}",
+   "tip_ryad": "I/II · I₁/A₁",
+   "suffixes": "{0}",
+   "gloss": "друг",
+   "source": "tolchelnikov"
+  },
+  {
+   "headword": "HṚD",
+   "deep": "{hṛd}",
+   "tip_ryad": "I · R₁",
+   "suffixes": "{0}, {1.ayø}",
+   "gloss": "сердце",
+   "source": "tolchelnikov"
+  }
+ ]
+}
