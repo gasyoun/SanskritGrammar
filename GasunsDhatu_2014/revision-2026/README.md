@@ -16,4 +16,18 @@ These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only i
 | [varga_shares.csv](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/GasunsDhatu_2014/revision-2026/varga_shares.csv) | Its output (source: VisualDCS `derived-data/Fonetika/regen-2026/varna_freq.csv`, DCS pin 2026-03-05) |
 | — | **Canonical sibling:** the same aggregation was built independently the same night as a VisualDCS dataset — [derived-data/Fonetika/varga-series-diachrony/](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Fonetika/varga-series-diachrony) (counts byte-identical, Cramér's V = 0.037 agrees; registered in PROJECT_INTERLINKS as "consume — don't re-aggregate"). For anything beyond this book, consume that; its [slot_era_map.csv](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/varga-series-diachrony/slot_era_map.csv) also gives an empirical slot→era mapping (slot 5 ≈ medieval ~1000–1700 CE) that refines the dissertation-era labels used in the book's Табл. 5 — a candidate footnote for the author. |
 
+## H382 — пересчёт Таблиц 1-4 и «слогов на слово» (§2.5)
+
+Пересчёт ВСЕХ вычислительных данных §2.5 издания 2014 г. на открытых воспроизводимых корпусах 2026 г. (решение автора от 08-07-2026; H382). Итог: коэффициент C/V (Табл. 1) и топ-кластеры (Табл. 2-3) **подтверждают** 2014 г.; Табл. 4 и качественные тезисы положений 5-6 **пересмотрены** (иной словник, прозрачный метод).
+
+| File | What it is |
+|---|---|
+| [DATA_RECOMPUTE_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/DATA_RECOMPUTE_MEMO.md) | Памятка: старое число → новое, метод, дельта, что изменилось в выводах и положениях 5/6/7 |
+| [dcs_text_phonostats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/dcs_text_phonostats.py) | Воспроизводимый скрипт Табл. 1-3 + слогов/слово по DCS (пин 2026-03-05), фильтр по `<textName>` |
+| [table1_consonant_coefficient.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table1_consonant_coefficient.csv) | Табл. 1: V, C, коэффициент C/V, слогов/слово по 4 текстам 2014 г. + Ригведа |
+| [table2_rigveda_clusters.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table2_rigveda_clusters.csv) · [table3_ramayana_clusters.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table3_ramayana_clusters.csv) | Полные списки кластеров Ригведы (360 типов) и Рамаяны (376 типов) с частотами + 2 примера-слова |
+| [syllables_per_word.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/syllables_per_word.csv) | Слогов/слово по 5 текстам + итог |
+| [wordlist_clusters.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/wordlist_clusters.py) | Воспроизводимый скрипт Табл. 4 по союзному словнику `union_headwords.tsv` (323 425 заголовков) |
+| [table4_word_clusters.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table4_word_clusters.csv) · [table4_word_clusters_full.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table4_word_clusters_full.csv) | Табл. 4: сводка (разновидности по позиции, старое-2014 рядом) + полный список типов |
+
 _Dr. Mārcis Gasūns_

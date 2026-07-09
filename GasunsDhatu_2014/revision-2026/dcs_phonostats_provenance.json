@@ -1,0 +1,44 @@
+{
+  "generated_by": "dcs_text_phonostats.py (H382)",
+  "source": "DCS CoNLL-U (Oliver Hellwig), CC BY 4.0",
+  "pin": "2026-03-05 (commit 04e0778…), см. VisualDCS/src/DCS-data-2026/conllu/PROVENANCE.md",
+  "input": "# text = поверхностные (сандхированные) строки, files/**/*.conllu",
+  "text_filter": "chapter-info.xml <textName>",
+  "counting": "V = гласные; C = согласные + M(анусвара) + H(висарга) + ~(чандрабинду); коэффициент = C/V",
+  "syllable": "akshara = C* V M* либо конечная согласная кода; слогов/слово = aksharas/words",
+  "cluster": "максимальная согласная цепочка длины >= 2 (конъюнкт/лигатура)",
+  "per_text": {
+    "Rāmāyaṇa": {
+      "V": 620385,
+      "C": 853340,
+      "words": 204959,
+      "aksharas": 664793
+    },
+    "Mahābhārata": {
+      "V": 2689255,
+      "C": 3711486,
+      "words": 892667,
+      "aksharas": 2872133
+    },
+    "Meghadūta": {
+      "V": 8296,
+      "C": 11510,
+      "words": 2227,
+      "aksharas": 8887
+    },
+    "Atharvaveda (Śaunaka)": {
+      "V": 159779,
+      "C": 212812,
+      "words": 66337,
+      "aksharas": 176881
+    },
+    "Ṛgveda": {
+      "V": 384006,
+      "C": 500725,
+      "words": 160783,
+      "aksharas": 424110
+    }
+  },
+  "conllu_files_read": 4150,
+  "seconds": 40.0
+}
