@@ -1,0 +1,118 @@
+{
+  "_about": "Topic-level bibliographic pointer index into the secondary literature on the Sanskrit grammatical tradition, used by commentary_corpus.py to attach a 'who studied this' reference layer to a commentator frame. NOT full text (rights) — pointers only. Named-section/topic pointers are safe to cite; any page range carries \"pages\":\"verify\" and MUST be confirmed against the physical copy before it enters the dissertation. Authored for H414 (SanskritGrammar), Opus 4.8 (claude-opus-4-8), 09-07-2026.",
+  "_works": {
+    "cardona1997": "Cardona, George (1997). Pāṇini: A Survey of Research. Delhi: Motilal Banarsidass (reprint of the 1976 Mouton edition). A section-numbered research survey; cited here by named division.",
+    "staal1985": "Staal, J. F. (ed.) (1985 [1972]). A Reader on Sanskrit Grammarians. Delhi: Motilal Banarsidass (reprint of MIT Press 1972). An anthology of annotated excerpts from and studies of the grammarians; cited here by the contributor/excerpt.",
+    "scharfe1977": "Scharfe, Hartmut (1977). Grammatical Literature. A History of Indian Literature, Vol. V, Fasc. 2. Wiesbaden: Harrassowitz. A chapter survey of the vyākaraṇa literature; cited here by chapter/section topic."
+  },
+  "topics": [
+    {
+      "id": "dhatu",
+      "match": ["dhatu", "dhātu", "root", "धातु", "koren", "корень", "dhaatu"],
+      "cardona1997": "on the Dhātupāṭha and the status of the verbal root (dhātu) in Pāṇinian analysis",
+      "staal1985": "excerpts on the analysis of verbal forms and the notion of dhātu (see the Patañjali and Kātyāyana selections)",
+      "scharfe1977": "ch. on Pāṇini — the derivational base and the Dhātupāṭha as an ancillary list",
+      "frame_note": "The verbal root (dhātu) is a derivational primitive of Pāṇinian grammar (sū. 1.3.1 bhūvādayo dhātavaḥ, 3.1.32 sanādyantā dhātavaḥ); the Dhātupāṭha enumerates the primary roots, and the commentators debate its authorship, completeness, and the semantic glosses (artha) attached to each root.",
+      "pages": "verify"
+    },
+    {
+      "id": "dhatupatha",
+      "match": ["dhatupatha", "dhātupāṭha", "dhaatupaatha", "root-list", "rootlist", "धातुपाठ", "korneslov", "корнеслов"],
+      "cardona1997": "the section devoted to the Dhātupāṭha (authorship, recensions, its relation to the Aṣṭādhyāyī, the anubandhas and the artha-glosses)",
+      "staal1985": "the historical discussion of the ancillary texts (khila-pāṭhas)",
+      "scharfe1977": "the Dhātupāṭha among Pāṇini's ancillary lists; later recensions and Kṣīrasvāmin / Sāyaṇa / Maitreyarakṣita commentaries",
+      "frame_note": "The Dhātupāṭha is not part of the Aṣṭādhyāyī proper but an ancillary root-list; the tradition questions how much of the received list is Pāṇini's and how much accreted (Böhtlingk's XIX-c. suspicion of interpolation stands in this line — RWS_REPORT.md §6, entry lidova at ll. 511).",
+      "pages": "verify"
+    },
+    {
+      "id": "vartika",
+      "match": ["vartika", "vārttika", "vaarttika", "katyayana", "kātyāyana", "kaatyaayana", "варттик", "катьяяна", "varttika"],
+      "cardona1997": "the section on Kātyāyana and the vārttikas (their method: acceptance, restriction, supplementation and refutation of Pāṇini's sūtras)",
+      "staal1985": "the Kātyāyana selections illustrating the vārttika as a critical gloss on the sūtra",
+      "scharfe1977": "ch. on Kātyāyana — the vārttika technique and its relative chronology after Pāṇini",
+      "frame_note": "A vārttika is a critical annotation on a sūtra; Kātyāyana characteristically flags what is left unstated (anukta), over-stated, or wrongly stated — the canonical formula being that a vārttika comments on 'ukta, anukta, durukta'. This is the traditional mechanism by which the commentary CONTESTS or EXTENDS Pāṇini rather than merely paraphrasing him.",
+      "pages": "verify"
+    },
+    {
+      "id": "mahabhashya",
+      "match": ["mahabhashya", "mahābhāṣya", "bhashya", "bhāṣya", "patanjali", "patañjali", "махабхашья", "патанджали", "bhaashya"],
+      "cardona1997": "the section on Patañjali and the Mahābhāṣya (its dialogic method, the adjudication between sūtra and vārttika, iṣṭi and the appeal to usage)",
+      "staal1985": "the Patañjali excerpts (incl. the Paspaśāhnika on the purpose of grammar and śiṣṭa authority)",
+      "scharfe1977": "ch. on Patañjali — the Mahābhāṣya as a running debate that arbitrates Kātyāyana's objections against Pāṇini",
+      "frame_note": "Patañjali's Mahābhāṣya stages the sūtra and vārttika against each other as a dialogue (pūrvapakṣa / siddhānta); the school's settled view (siddhānta) on a root or rule is what the bhāṣya finally endorses — so the bhāṣya is the layer that ADJUDICATES which classification the tradition stands behind.",
+      "pages": "verify"
+    },
+    {
+      "id": "shishta",
+      "match": ["shishta", "śiṣṭa", "authority", "usage", "avtoritet", "авторитет", "shishtaa", "sadhu", "sādhu"],
+      "cardona1997": "the discussion of the criteria of correctness (śiṣṭa usage, the aim of grammar) in the Paspaśā and Cardona's treatment of Pāṇini's methodology",
+      "staal1985": "the Paspaśāhnika excerpt (Patañjali on who the śiṣṭa is and why their usage is authoritative)",
+      "scharfe1977": "the discussion of the purpose of grammar and the status of correct (sādhu) speech",
+      "frame_note": "The authority behind a classification is, in the tradition's own terms, the usage of the śiṣṭas (the learned) as codified by Pāṇini and defended by Patañjali — not an individual's stipulation. This is the 'какие авторитеты стояли за классификациями' answer in Pāṇinian terms.",
+      "pages": "verify"
+    },
+    {
+      "id": "vrddhi-guna",
+      "match": ["vrddhi", "vṛddhi", "guna", "guṇa", "vruddhi", "apophony", "ablaut", "вриддхи", "гуна", "vrddhi-guna"],
+      "cardona1997": "the treatment of the guṇa/vṛddhi apophony rules and the saṃjñā-sūtras that open the Aṣṭādhyāyī",
+      "staal1985": "selections illustrating the technical saṃjñā apparatus",
+      "scharfe1977": "the account of Pāṇini's metalinguistic apparatus (saṃjñā, paribhāṣā)",
+      "frame_note": "vṛddhi (sū. 1.1.1 vṛddhir ādaic) and guṇa (sū. 1.1.2 adeṅ guṇaḥ) are defined saṃjñās applied across derivation; the commentators debate the scope of tapara-karaṇa and how the definitions restrict the vowels they name.",
+      "pages": "verify"
+    },
+    {
+      "id": "atmanepada",
+      "match": ["atmanepada", "ātmanepada", "parasmaipada", "voice", "pada", "aatmanepada", "залог", "atmane"],
+      "cardona1997": "the treatment of the ātmanepada/parasmaipada assignment rules (sū. 1.3.12ff.) and the role of the anubandhas of the root",
+      "staal1985": "selections on the affix and voice apparatus",
+      "scharfe1977": "the account of the pada assignment and the diacritic (it) marking of roots",
+      "frame_note": "Whether a root is ātmanepadin, parasmaipadin, or ubhayapadin is fixed by its anubandhas in the Dhātupāṭha (ṅit → ātmanepada, etc.) and by the sū. 1.3.12–1.3.93 block; the commentators treat apparent exceptions via iṣṭi and vārttika.",
+      "pages": "verify"
+    },
+    {
+      "id": "anubandha",
+      "match": ["anubandha", "it", "it-marker", "itmarker", "diacritic", "marker", "анубандха", "anubandh", "anubandhas"],
+      "cardona1997": "the account of the it-saṃjñā (anubandha) markers and their elision (sū. 1.3.2–1.3.9), and Cardona's analysis of Pāṇini's metalinguistic devices",
+      "staal1985": "selections on the it-markers as a metalinguistic coding device",
+      "scharfe1977": "the description of the anubandha system as diacritic coding on roots and affixes",
+      "frame_note": "Anubandhas are diacritic markers attached to roots/affixes that trigger operations then elide (tasya lopaḥ, 1.3.9); they are the tradition's device for packing morphosyntactic behaviour onto a citation form. (Zaхарьин 2007 is cited for this in the dissertation — RWS_REPORT.md §6, panini-traditional at l. 347: attribute the reading to Patañjali/Kātyāyana, not only to the modern source.)",
+      "pages": "verify"
+    },
+    {
+      "id": "gana",
+      "match": ["gana", "gaṇa", "class", "verb-class", "verbclass", "conjugation", "ганы", "гана", "ganas", "vikarana", "vikaraṇa"],
+      "cardona1997": "the treatment of the ten gaṇas and the vikaraṇa affixes (sū. 3.1.68ff.) organizing the Dhātupāṭha",
+      "staal1985": "selections on the derivation of finite verb forms",
+      "scharfe1977": "the account of the Dhātupāṭha's arrangement into gaṇas and the present-class vikaraṇas",
+      "frame_note": "The Dhātupāṭha groups roots into ten gaṇas keyed to their present-stem vikaraṇa (bhvādi, adādi, juhotyādi, divādi, svādi, tudādi, rudhādi, tanādi, kryādi, curādi); the gaṇa membership, not the root's phonology alone, drives the conjugation.",
+      "pages": "verify"
+    },
+    {
+      "id": "bhasha-chandas",
+      "match": ["bhasha", "bhāṣā", "chandas", "vedic", "laukika", "bhaashaa", "veda", "ведийск", "classical", "vaidika"],
+      "cardona1997": "Pāṇini's handling of Vedic (chandas) vs. current (bhāṣā) usage and Cardona's discussion of the relative chronology of the layers",
+      "staal1985": "the Mahābhāṣya excerpts distinguishing chandas and bhāṣā forms",
+      "scharfe1977": "the treatment of the Vedic/spoken distinction in Pāṇini and the Mahābhāṣya",
+      "frame_note": "Pāṇini marks specifically-Vedic forms with 'chandasi' and treats bhāṣā as the default; the commentators read the difference as jāti/register within one grammar, not as two historical languages — cf. the Mahābhāṣya on laukika vs. vaidika (RWS_REPORT.md §6, lidova at l. 543: cite a Mahābhāṣya fragment on the bhāṣā/chandas split).",
+      "pages": "verify"
+    },
+    {
+      "id": "accent",
+      "match": ["accent", "svara", "udatta", "udātta", "anudatta", "svarita", "tone", "ударение", "акцент", "accentuation"],
+      "cardona1997": "the treatment of accent (svara) rules and the accentual anubandhas of roots",
+      "staal1985": "selections touching the accentual apparatus",
+      "scharfe1977": "the account of accent marking in the sūtras and the Dhātupāṭha's accentual anubandhas",
+      "frame_note": "Root accent is coded by anubandha in the Dhātupāṭha (anudāttet roots take iṭ / ātmanepada tendencies etc.); the phonological accent rules sit mainly in adhyāyas 6.1–6.2 and are heavily worked over in the bhāṣya.",
+      "pages": "verify"
+    },
+    {
+      "id": "set-anit",
+      "match": ["set", "seṭ", "anit", "aniṭ", "vet", "iṭ", "it-augment", "ityinsertion", "i-insertion", "kuiper", "kuyper", "кёйпер", "kuyper", "set-anit"],
+      "cardona1997": "the treatment of the iṭ-augment (sū. 7.2.8ff.) and the seṭ/aniṭ/veṭ tripartition of roots",
+      "staal1985": "selections on ārdhadhātuka affixation and the iṭ-augment",
+      "scharfe1977": "the account of the iṭ-augment and its coding on roots",
+      "frame_note": "The seṭ / aniṭ / veṭ status of a root (whether ārdhadhātuka affixes take the iṭ-augment) is fixed partly by anit-lists (7.2.10 ekāca upadeśe 'nudāttāt) and partly by the root's anudātta anubandha; the dissertation's proposal to mark seṭ-ness with a symbol 'H' is to be linked here to Kuiper's 'abstract i' and the school's debate on i-insertion (RWS_REPORT.md §6, lidova at l. 309).",
+      "pages": "verify"
+    }
+  ]
+}
