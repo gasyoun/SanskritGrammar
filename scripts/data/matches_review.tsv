@@ -1,0 +1,129 @@
+a_id	b_id	score	script	verdict	note	a_text	b_text
+buhler-XXXI-693	knauer-8-161	0.99	deva	spelling_variant	'ा'->''	अधुना त्वष्टादश शतानि चत्वारि च शकानां राज्ञो वर्षाणि गतानि	अधुना त्वष्टादश शतानि चत्वारि च शकानां रज्ञो वर्षाणि गतानि
+buhler-XVI-364	kochergina-XIX-456	0.987	deva	spelling_variant	'े'->''	ग्राममद्य गच्छेतमिति मातरौ पुत्रावभाषेताम्	ग्राममद्य गच्छतमिति मातरौ पुत्रावभाषेताम्
+buhler-XXVII-597	knauer-9-185	0.986	deva	spelling_variant	'न्'->''	यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यन्ते	यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यते
+buhler-XLII-987	knauer-12-280	0.979	deva	spelling_variant	'क'->'त'	यथा वातो बलेन वृक्षान्भनक्त्येवं त्वं मे द्विषो भङ्ग्धि	यथा वातो बलेन वृक्षान्भनत्त्येवं त्वं मे द्विषो भङ्ग्धि
+buhler-XXX-647	knauer-19-415	0.977	deva	spelling_variant	'च्'->''	सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्	सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्
+knauer-19-415	kochergina-XXIII-564	0.977	deva	spelling_variant	''->'च्'	सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्	सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्
+buhler-XIV-333	knauer-3-58	0.974	deva	spelling_variant	'ः'->''	वध्वाः स्निह्यत्यृषिः	वध्वा स्निह्यत्यृषिः
+buhler-XIV-331	knauer-10-214	0.968	deva	spelling_variant	'च्'->''	अतिथिं पृच्छतु रात्रौ कुत्र न्यवस इति	अतिथिं पृछतु रात्रौ कुत्र न्यवस इति
+buhler-XII-300	kochergina-X-155	0.962	deva	spelling_variant	'ं'->'ँ'	अश्वा अश्राम्यन्भूमावपतंश्च	अश्वा अश्राम्यन्भूमावपतँश्च
+buhler-XV-348	knauer-4-80	0.958	deva	spelling_variant	'ाम्'->'े'	मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यताम्	मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यते
+buhler-XXI-465	kochergina-XIV-300	0.958	deva	spelling_variant	'तु'->'य'	व्याधितस्यौषधं पथ्यं नीरुजस्तु किमौषधैः	व्याधितस्यौषधं पथ्यं नीरुजस्य किमौषधैः
+knauer-17-380	kochergina-XXXIV-1163	0.958	iast	spelling_variant	'ç'->'ś'	gāraḥ çītaḥ kṛṣṇāyate karam	gāraḥ śītaḥ kṛṣṇāyate karam
+buhler-XXV-550	knauer-5-103	0.956	deva	spelling_variant	'महन्'->''; 'च्'->''	प्राचां देशे पाटलिपुत्रं नाम महन्नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकच्छम्	प्राचां देशे पाटलिपुत्रं नाम नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकछम्
+buhler-XXXV-812	knauer-12-272	0.956	deva	spelling_variant	'वन'->''; 'च्'->''	वनवृक्षान्धुन्वानस्य वायोः शब्दं पथा गच्छन्तावशृणुव	वृक्षान्धुन्वानस्य वायोः शब्दं पथा गछन्तावशृणुव
+buhler-IV-72	kochergina-XIII-264	0.95	deva	spelling_variant	'त्'->''	बालो गुरवे पत्त्रं लिखति	बालो गुरवे पत्रं लिखति
+buhler-XXI-484	kochergina-XXX-758	0.947	iast	length_mismatch	len 16 vs 13 (ratio 0.81)	N. V. sg. upānat	N.sg. upā-nat
+buhler-XVIII-406	knauer-17-366	0.944	deva	spelling_variant	' अ'->'ा'	सूत अधुना स्थापय रथम्	सूताधुना स्थापय रथम्
+buhler-XXXVI-833	knauer-12-274	0.941	deva	spelling_variant	'भूभु'->'रा'; ''->'ान'	अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं भूभुजः कविभ्यो विभजन्ति	अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं राजानः कविभ्यो विभजन्ति
+buhler-XXVIII-615	knauer-18-388	0.936	deva	spelling_variant	'ज'->'क'; 'ञ'->'ष'; 'नि'->''	श्रीमतो राज्ञः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धानि	श्रीमतो राक्षः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धा
+buhler-IX-236	kochergina-X-184	0.933	iast	length_mismatch	len 11 vs 8 (ratio 0.73)	saṃ-gam I Ā	saṃgam Ā
+buhler-XLVIII-1127	kochergina-XIV-305	0.933	iast	spelling_variant	'I'->'-'	nivart I Ā	nivart - Ā
+buhler-XLVIII-1127	kochergina-XXII-551	0.933	iast	length_mismatch	len 10 vs 8 (ratio 0.80)	nivart I Ā	nivart Ā
+buhler-XLVIII-1140	kochergina-X-184	0.933	iast	length_mismatch	len 10 vs 8 (ratio 0.80)	saṃgam I Ā	saṃgam Ā
+buhler-XLVIII-1333	kochergina-X-184	0.933	iast	length_mismatch	len 10 vs 8 (ratio 0.80)	saṃgam I Ā	saṃgam Ā
+buhler-XLVIII-1348	kochergina-X-184	0.933	iast	length_mismatch	len 10 vs 8 (ratio 0.80)	saṃgam I Ā	saṃgam Ā
+buhler-XV-347	knauer-10-216	0.931	deva	spelling_variant	'योर्निश्चयः'->''	धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्रयोर्निश्चयः	धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्र
+buhler-XXX-654	knauer-18-393	0.931	deva	spelling_variant	'ाे'->'ो'; 'दिश्यत'->''	सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्माेक्तव्य इति राज्ञादिश्यत	सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्मोक्तव्य इति राज्ञा
+buhler-X-250	knauer-16-348	0.93	deva	spelling_variant	'ू'->'्व'	हे शिष्या गुरुणाहूयध्वे	हे शिष्या गुरुणाह्वयध्वे
+buhler-XXII-497	knauer-5-97	0.928	deva	spelling_variant	'ो'->''; 'ऽ'->'आ'; 'ाय'->''	पुरि वास्तडागान्नाल्या पार्थिवो ऽनाययत्	पुरि वास्तडागान्नाल्या पार्थिव आनयत्
+knauer-1-4	kochergina-X-154	0.926	deva	spelling_variant	''->'ग्रा'	मस्य रथ्यासु गजा भ्राम्यन्ति	ग्रामस्य रथ्यासु गजा भ्राम्यन्ति
+buhler-XVII-389	kochergina-XII-236	0.925	deva	spelling_variant	' कृष्या'->''	वैश्याः कृष्या वाणिज्येन पाशुपाल्येन वा वर्तेरन्	वैश्याः वाणिज्येन पाशुपाल्येन वा वर्तेरन्
+buhler-VI-142	kochergina-XXXIV-1270	0.923	iast	length_mismatch	len 7 vs 9 (ratio 0.78)	śram IV	śram P IV
+buhler-XXVII-614	kochergina-XXV-641	0.923	iast	length_mismatch	len 10 vs 7 (ratio 0.70)	bhakṣ X. P	bhakṣ X
+buhler-XXX-670	kochergina-XXV-638	0.923	iast	spelling_variant	''->'m'	dā -- deya	dā -- deyam
+buhler-XXXI-719	kochergina-XXXIV-1417	0.923	iast	spelling_variant	' '->''; 'ḥ'->'s'	D. Abl. aṣṭābhyaḥ	D.Abl. aṣṭābhyas
+buhler-XXXIV-804	kochergina-XIV-301	0.923	iast	length_mismatch	len 11 vs 9 (ratio 0.82)	ā-rabh I. Ā	ārabh - Ā
+buhler-XL-944	kochergina-XXXIV-1273	0.923	iast	length_mismatch	len 7 vs 9 (ratio 0.78)	śvas II	śvas P II
+buhler-XLVI-1083	kochergina-XXXIV-1223	0.923	iast	length_mismatch	len 7 vs 9 (ratio 0.78)	darś IV	darś P IV
+buhler-XLVIII-1204	kochergina-XIV-301	0.923	iast	spelling_variant	'I'->'-'	ārabh I Ā	ārabh - Ā
+buhler-XLVIII-1260	kochergina-XIV-301	0.923	iast	spelling_variant	'I'->'-'	ārabh I Ā	ārabh - Ā
+buhler-XXXVIII-891	knauer-11-241	0.918	deva	spelling_variant	'प्रद्वि'->''	प्रद्विषतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः	षतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः
+buhler-XL-931	knauer-11-245	0.918	deva	spelling_variant	'यनिम'->''; 'लि'->''; 'क्षी'->''	सुन्दरि समाश्वसिहि समाश्वसिहीति भयनिमीलिताक्षीमुर्वशीं पुरूरवा अब्रवीत्	सुन्दरि समाश्वसिहि समाश्वसिहीति भीतामुर्वशीं पुरूरवा अब्रवीत्
+buhler-XXXI-716	kochergina-XXXI-779	0.917	iast	spelling_variant	' '->''; 'ḥ'->'s'	D. Abl. ṣaḍbhyaḥ	D.Abl. ṣaḍbhyas
+buhler-XXVI-564	knauer-5-101	0.912	deva	spelling_variant	'्येष'->'ि'	अद्भिः पादौ क्षालयत्येष परिव्राट्	अद्भिः पादौ क्षालयति परिव्राट्
+buhler-XVI-360	knauer-4-82	0.889	deva	spelling_variant	'पूजय'->'निषेव'; '्'->''	भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्	भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत
+buhler-XLII-1001	kochergina-XXXIV-1241	0.889	iast	spelling_variant	''->'P '; ' P'->''	bhañj VII P	bhañj P VII
+buhler-XLVIII-1304	kochergina-XXXIV-1241	0.889	iast	spelling_variant	''->'P '; ' P'->''	bhañj VII P	bhañj P VII
+knauer-4-82	kochergina-XIX-459	0.889	deva	spelling_variant	'निषेव'->'पूजय'; ''->'्'	भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत	भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्
+buhler-XLVIII-1106	kochergina-XXXIV-1152	0.88	deva	spelling_variant	'ष'->'ध्'	ष षट्त्रिंशत्	ध् षट्त्रिंशत्
+buhler-XXXI-694	knauer-8-162	0.879	deva	length_mismatch	len 66 vs 52 (ratio 0.79)	त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्मणेभ्यो दत्तानि	त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्म
+buhler-XIX-445	kochergina-XVII-424	0.875	iast	spelling_variant	't'->'d'	na kaścit	na kaścid
+buhler-XIX-445	kochergina-XVIII-449	0.875	iast	spelling_variant	't'->'d'	na kaścit	na kaścid
+buhler-XIX-445	kochergina-XXV-628	0.875	iast	spelling_variant	't'->'d'	na kaścit	na kaścid
+buhler-XIX-445	kochergina-XXXIV-1312	0.875	iast	spelling_variant	't'->'d'	na kaścit	na kaścid
+buhler-XIX-446	kochergina-XXV-629	0.875	iast	spelling_variant	't'->'d'	na kiṃcit	na kiṃcid
+buhler-XLVIII-1305	kochergina-XXXIV-1228	0.875	iast	spelling_variant	''->'Ā '; ' P'->''	dhvaṃs I P	dhvaṃs Ā I
+buhler-XLVIII-1314	kochergina-XXXIV-1228	0.875	iast	spelling_variant	''->'Ā '; ' P'->''	dhvaṃs I P	dhvaṃs Ā I
+buhler-XIV-326	kochergina-XIV-288	0.868	deva	length_mismatch	len 35 vs 27 (ratio 0.77)	प्रयागं गच्छतं सुखेन च तत्र निवसतम्	प्रयागं गच्छतं सुखेन च तत्र
+buhler-XLI-956	knauer-11-249	0.867	deva	length_mismatch	len 70 vs 57 (ratio 0.81)	यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पर्वती न्यहन्	रात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पार्वती न्यहन्
+buhler-XL-928	knauer-11-244	0.861	deva	spelling_variant	'महो'->'उ'; 'िमध्ये'->'ौ'	महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति	उदधौ शेषनागमधिशयानो विष्णुः सुखं स्वपिति
+buhler-XXXVIII-877	knauer-11-239	0.857	deva	low_similarity	4 diff spans, score 0.857	अग्नीषोमावष्टाभिरृग्भिरृषिरस्तौदिन्द्रावरुणौ च तिसृभिः	षोमावष्टाभिर्ऋग्भिर्ऋषिरस्तौदिन्द्रावरुणौ च तिसृ
+buhler-IV-91	kochergina-VI-51	0.857	iast	spelling_variant	'iḥ'->'ī'	agniḥ rocate	agnī rocate
+buhler-XXVI-584	kochergina-XXXI-769	0.857	iast	length_mismatch	len 16 vs 13 (ratio 0.81)	N. V.sg. panthāḥ	N.sg. panthās
+buhler-XXVI-585	kochergina-XXXI-772	0.857	iast	length_mismatch	len 8 vs 11 (ratio 0.73)	N. pumān	N.sg. pumān
+buhler-XXVII-614	kochergina-XXXIV-1240	0.857	iast	spelling_variant	''->'U '; '. P'->''	bhakṣ X. P	bhakṣ U X
+buhler-XXVIII-627	kochergina-XXXIV-1233	0.857	iast	spelling_variant	''->'Ā '; '. Ā'->''	palāy I. Ā	palāy Ā I
+buhler-XXXI-698	kochergina-X-168	0.857	iast	spelling_variant	'dvā'->'-'	D.Abl. dvābhyām	D.Abl. -bhyām
+buhler-XLVIII-1110	kochergina-XXXIV-1233	0.857	iast	spelling_variant	''->'Ā '; ' Ā'->''	palāy I Ā	palāy Ā I
+buhler-XLVIII-1182	kochergina-XXXIV-1226	0.857	iast	spelling_variant	''->'U '; ' U'->''	dhā III U	dhā U III
+buhler-XLVIII-1227	kochergina-XXXIV-1200	0.857	iast	spelling_variant	''->'U '; ' P'->''	karṣ VI P	karṣ U VI
+buhler-XLVIII-1339	kochergina-XXXIV-1226	0.857	iast	spelling_variant	''->'U '; ' U'->''	dhā III U	dhā U III
+buhler-XLVIII-1353	kochergina-XXXIV-1233	0.857	iast	spelling_variant	''->'Ā '; ' Ā'->''	palāy I Ā	palāy Ā I
+buhler-XLVIII-1359	kochergina-XXXIV-1270	0.857	iast	spelling_variant	''->'P '; ' P'->''	śram IV P	śram P IV
+buhler-VIII-179	knauer-10-212	0.851	deva	spelling_variant	'ह'->'बालः पित्'; 'िर्'->'े '	शास्त्रे अधुना शिक्षामह इति पत्त्रे हरिर्लिखति	शास्त्रे अधुना शिक्षामह इति पत्त्रे बालः पित्रे लिखति
+buhler-XXVI-565	knauer-3-64	0.851	deva	spelling_variant	'्'->'ि '; 'र्पय'->'छ'	स्त्री पत्ये रूपकाण्यर्पयति	स्त्री पत्ये रूपकाणि यछति
+buhler-XII-293	knauer-2-24	0.842	deva	length_mismatch	len 33 vs 26 (ratio 0.79)	हन्वामश्वाल्लँँघ्वा यष्ट्याताडयम्	श्वाँल्लघ्वा यष्ट्याताडयम्
+buhler-XIX-442	kochergina-VI-37	0.842	iast	low_similarity	2 diff spans, score 0.842	sa tiṣṭhati	tiṣṭhate - I
+knauer-15-334	kochergina-XXII-532	0.841	deva	length_mismatch	len 46 vs 37 (ratio 0.80)	नानुज्ञातो जगाम स्वनगरं तत्र च रेमे सह पत्न्या	स जगाम स्वनगरं तत्र च रेमे सह पत्न्या
+buhler-XXIX-635	knauer-19-411	0.84	deva	length_mismatch	len 25 vs 33 (ratio 0.76)	ा पीत्वा चैते नरः सुप्ताः	भुक्त्वा पीत्वा चैते नराः सुप्ताः
+buhler-XXVI-558	knauer-5-99	0.833	deva	low_similarity	1 diff spans, score 0.833	हृद्येष पुमान्परं ब्रह्म ध्यायति	हृदि साधुः पुमान्परं ब्रह्म ध्यायति
+buhler-XLVIII-1091	kochergina-XXXIV-1149	0.833	deva	low_similarity	1 diff spans, score 0.833	ई ईक्ष्	ी ईक्ष्
+buhler-VIII-210	kochergina-XIV-301	0.833	iast	low_similarity	2 diff spans, score 0.833	ā-rabh I	ārabh - Ā
+buhler-VIII-210	kochergina-XXXIV-1250	0.833	iast	low_similarity	2 diff spans, score 0.833	ā-rabh I	rabh Ā I
+buhler-IX-240	kochergina-XXXIV-1269	0.833	iast	low_similarity	2 diff spans, score 0.833	śubh I Ā	śubh Ā I
+buhler-IX-241	kochergina-XXXIV-1259	0.833	iast	low_similarity	2 diff spans, score 0.833	vart I Ā	vart Ā I
+buhler-XI-281	kochergina-XXXIV-1232	0.833	iast	low_similarity	2 diff spans, score 0.833	paṭh I P	paṭh P I
+buhler-XVI-383	kochergina-XXXIV-1244	0.833	iast	low_similarity	2 diff spans, score 0.833	man IV Ā	man Ā IV
+buhler-XXXVII-859	kochergina-XXXIV-1217	0.833	iast	low_similarity	2 diff spans, score 0.833	jñā IX U	jñā U IX
+buhler-XXXVII-866	kochergina-XXXIV-1281	0.833	iast	low_similarity	2 diff spans, score 0.833	snā II.-P	snā P II
+buhler-XL-944	kochergina-XXXIV-1265	0.833	iast	low_similarity	2 diff spans, score 0.833	śvas II	śas P II
+buhler-XLI-972	kochergina-XXXIV-1246	0.833	iast	low_similarity	2 diff spans, score 0.833	mā III. Ā	mā Ā III
+buhler-XLIII-1047	kochergina-XXXIV-1196	0.833	iast	length_mismatch	len 18 vs 11 (ratio 0.61)	īkṣ Ā. īkṣāṃ cakre	īkṣāṃ cakre
+buhler-XLVIII-1109	kochergina-XXXIV-1227	0.833	iast	low_similarity	2 diff spans, score 0.833	dhāv I U	dhāv U I
+buhler-XLVIII-1113	kochergina-XXXIV-1269	0.833	iast	low_similarity	2 diff spans, score 0.833	śubh I Ā	śubh Ā I
+buhler-XLVIII-1118	kochergina-XXXIV-1259	0.833	iast	low_similarity	2 diff spans, score 0.833	vart I Ā	vart Ā I
+buhler-XLVIII-1123	kochergina-XVII-425	0.833	iast	low_similarity	1 diff spans, score 0.833	darś I P	darś IV
+buhler-XLVIII-1146	kochergina-XXXIV-1242	0.833	iast	low_similarity	2 diff spans, score 0.833	bhāṣ I Ā	bhāṣ Ā I
+buhler-XLVIII-1148	kochergina-XXXIV-1239	0.833	iast	low_similarity	2 diff spans, score 0.833	brū II U	brū U II
+buhler-XLVIII-1150	kochergina-XXXIV-1224	0.833	iast	low_similarity	2 diff spans, score 0.833	dā III U	dā U III
+buhler-XLVIII-1154	kochergina-XXXIV-1255	0.833	iast	low_similarity	2 diff spans, score 0.833	labh I Ā	labh Ā I
+buhler-XLVIII-1155	kochergina-XXXIV-1260	0.833	iast	low_similarity	2 diff spans, score 0.833	varṣ I P	varṣ U I
+buhler-XLVIII-1156	kochergina-XXXIV-1255	0.833	iast	low_similarity	2 diff spans, score 0.833	labh I Ā	labh Ā I
+buhler-XLVIII-1158	kochergina-XXXIV-1199	0.833	iast	low_similarity	2 diff spans, score 0.833	kamp I Ā	kamp Ā I
+buhler-XLVIII-1160	kochergina-XXXIV-1244	0.833	iast	low_similarity	2 diff spans, score 0.833	man IV Ā	man Ā IV
+buhler-XLVIII-1173	kochergina-XXXIV-1249	0.833	iast	low_similarity	2 diff spans, score 0.833	rakṣ I P	rakṣ P I
+buhler-XLVIII-1176	kochergina-XXXIV-1255	0.833	iast	low_similarity	2 diff spans, score 0.833	labh I Ā	labh Ā I
+buhler-XLVIII-1183	kochergina-XXXIV-1281	0.833	iast	low_similarity	2 diff spans, score 0.833	snā II P	snā P II
+buhler-XLVIII-1188	kochergina-XXXIV-1246	0.833	iast	low_similarity	2 diff spans, score 0.833	mā III U	mā Ā III
+buhler-XLVIII-1201	kochergina-XXXIV-1280	0.833	iast	low_similarity	2 diff spans, score 0.833	sthā I P	sthā U I
+buhler-XLVIII-1202	kochergina-XXXIV-1259	0.833	iast	low_similarity	2 diff spans, score 0.833	vart I Ā	vart Ā I
+buhler-XLVIII-1248	kochergina-XXXIV-1244	0.833	iast	low_similarity	2 diff spans, score 0.833	man IV Ā	man Ā IV
+buhler-XLVIII-1250	kochergina-XXXIV-1255	0.833	iast	low_similarity	2 diff spans, score 0.833	labh I Ā	labh Ā I
+buhler-XLVIII-1255	kochergina-XXXIV-1258	0.833	iast	low_similarity	2 diff spans, score 0.833	vand I Ā	vand Ā I
+buhler-XLVIII-1286	kochergina-XXXIV-1232	0.833	iast	low_similarity	2 diff spans, score 0.833	paṭh I P	paṭh P I
+buhler-XLVIII-1294	kochergina-XXXIV-1191	0.833	iast	low_similarity	2 diff spans, score 0.833	arth X Ā	arth Ā X
+buhler-XLVIII-1296	kochergina-XXXIV-1263	0.833	iast	low_similarity	2 diff spans, score 0.833	śaṃs I U	śaṃs P I
+buhler-XLVIII-1299	kochergina-XXXIV-1221	0.833	iast	low_similarity	2 diff spans, score 0.833	tuṣ IV P	tuṣ P IV
+buhler-XLVIII-1322	kochergina-XXXIV-1269	0.833	iast	low_similarity	2 diff spans, score 0.833	śubh I Ā	śubh Ā I
+buhler-XLVIII-1332	kochergina-XXXIV-1209	0.833	iast	low_similarity	2 diff spans, score 0.833	khād I P	khād P I
+buhler-XLVIII-1335	kochergina-XXXIV-1199	0.833	iast	low_similarity	2 diff spans, score 0.833	kamp I Ā	kamp Ā I
+buhler-XLVIII-1341	kochergina-XXXIV-1259	0.833	iast	low_similarity	2 diff spans, score 0.833	vart I Ā	vart Ā I
+buhler-XLVIII-1342	kochergina-XXXIV-1249	0.833	iast	low_similarity	2 diff spans, score 0.833	rakṣ I P	rakṣ P I
+buhler-XLVIII-1351	kochergina-XXXIV-1191	0.833	iast	low_similarity	2 diff spans, score 0.833	arth X Ā	arth Ā X
+buhler-XLVIII-1356	kochergina-XXXIV-1245	0.833	iast	low_similarity	2 diff spans, score 0.833	mar VI Ā	mar Ā VI
+buhler-XLVIII-1361	kochergina-XXXIV-1266	0.833	iast	low_similarity	2 diff spans, score 0.833	śikṣ I Ā	śikṣ Ā I
+buhler-XLVIII-1365	kochergina-XXXIV-1249	0.833	iast	low_similarity	2 diff spans, score 0.833	rakṣ I P	rakṣ P I
+buhler-XLVIII-1366	kochergina-XXXIV-1232	0.833	iast	low_similarity	2 diff spans, score 0.833	paṭh I P	paṭh P I
+buhler-XLVIII-1367	kochergina-XXXIV-1258	0.833	iast	low_similarity	2 diff spans, score 0.833	vand I Ā	vand Ā I
