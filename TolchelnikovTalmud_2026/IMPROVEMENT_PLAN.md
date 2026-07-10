@@ -1,14 +1,14 @@
-# Talmud санскрита — Improvement Plan (interactive companion to Zaliznyak)
+# Talmud санскрита — Improvement Plan (interactive companion to Zalizniak)
 
 _Created: 06-07-2026 · Last updated: 06-07-2026_
 
 Turning I.E. Tolchelnikov's *Talmud санскрита* (a generative, Meaning-Text-Theory
 formal grammar of Sanskrit morphonology, Whitney-root-based) into a scaffolded,
-interactive Docusaurus **companion** to A.A. Zaliznyak's *Грамматический очерк
+interactive Docusaurus **companion** to A.A. Zalizniak's *Грамматический очерк
 санскрита* (1978), for **post-beginner self-study** readers.
 
 **Decisions locked with MG (06-07-2026):** audience = post-beginner self-study ·
-role = companion *on top of* Zaliznyak (cross-referenced, not replacing) · format
+role = companion *on top of* Zalizniak (cross-referenced, not replacing) · format
 = interactive Docusaurus site · scope = **Whitney-only, deepened** (no reading/vocab
 strand, no broadened reference-grammar coverage).
 
@@ -21,7 +21,7 @@ into the author's text.*
 
 ## What these two books are, and why they sit together
 
-- [Zaliznyak *Очерк* (1978)](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned.mdx)
+- [Zalizniak *Очерк* (1978)](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned.mdx)
   is the founding Russian **formal-structural** description of Sanskrit inflection:
   the морфонология layer, the positional strong/middle/weak system, ablaut grades as
   a calculus. It is a terse reference (~250 §§).
@@ -32,7 +32,7 @@ into the author's text.*
   *computed*. Framed explicitly in Mel'čuk's Meaning-Text Theory, deliberately
   **Whitney-root-only** (Monier-Williams excluded).
 
-**One line:** the Talmud is Zaliznyak's formal grammar turned into a generative
+**One line:** the Talmud is Zalizniak's formal grammar turned into a generative
 engine and a drill course. That lineage is the spine of this plan.
 
 ---
@@ -56,7 +56,7 @@ is a **canonical donor** for the org — don't touch it. This plan only *reads*
 WhitneyRoots and builds a **new derived asset inside the Talmud repo**.
 
 **Gap the Talmud adds on top:** the *Ряд* (A–N) and *Тип* (s/a/v) labels are
-Zaliznyak/Tolchelnikov **analytical overlays** absent from WhitneyRoots. So Phase 3
+Zalizniak/Tolchelnikov **analytical overlays** absent from WhitneyRoots. So Phase 3
 is an **enrichment crosswalk**, not a digitization.
 
 ---
@@ -68,9 +68,9 @@ is an **enrichment crosswalk**, not a digitization.
    pattern already in this repo), one MDX per Раздел I–X + Appendices 1–2, authored
    from [talmud-refactoring.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/talmud-refactoring.md)
    (keep `Talmud-2.1.6.mdx` as raw archive).
-2. **Zaliznyak cross-reference spine** — a concordance mapping each Talmud section →
-   the Zaliznyak §§ it formalizes, rendered both as a standalone page and as inline
-   `<ZRef>` callouts. Highest-leverage deliverable for "companion on top of Zaliznyak".
+2. **Zalizniak cross-reference spine** — a concordance mapping each Talmud section →
+   the Zalizniak §§ it formalizes, rendered both as a standalone page and as inline
+   `<ZRef>` callouts. Highest-leverage deliverable for "companion on top of Zalizniak".
 
 ### Phase 3 — Enrichment crosswalk (critical path; the "deepen" work)
 Build **`whitney_talmud.json`** in the Talmud repo: join `roots.csv` (whitney_no,
@@ -103,8 +103,8 @@ reveals; tag each drill to its section + widget.
 
 ### Phase 5 — Hygiene & integration
 Wire both books into the Docusaurus include (as books 7 & 8 were); seed a Talmud
-`errata.yml` via the `/errata` skill (Zaliznyak already has one; Talmud has none);
-add a guṇa/vṛddhi ↔ position/grade ↔ Zaliznyak-term glossary.
+`errata.yml` via the `/errata` skill (Zalizniak already has one; Talmud has none);
+add a guṇa/vṛddhi ↔ position/grade ↔ Zalizniak-term glossary.
 
 ---
 
