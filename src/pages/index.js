@@ -7,8 +7,8 @@ const books = [
   ['BuhlerLeitfaden_1923/Buhler_Unicode', 'Bühler — Leitfaden (1923)'],
   ['KnauerFrazy_1908/Frazy-Knauer-03.05.2023', 'Knauer — Phrases (1908)'],
   ['KocherginaUchebnik_1998/Kochergina_unicode', 'Kochergina — Uchebnik (1998)'],
-  ['ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t', 'Zaliznyak — Konspekt (2004)'],
-  ['ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned', 'Zaliznyak — Ocherk (1978)'],
+  ['ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t', 'Zalizniak — Konspekt (2004)'],
+  ['ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned', 'Zalizniak — Ocherk (1978)'],
 ];
 
 export default function Home() {

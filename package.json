@@ -2,7 +2,7 @@
   "name": "sanskrit-grammar-book-site",
   "version": "0.1.0",
   "private": true,
-  "description": "Docusaurus book site for the digitized Sanskrit grammar sources (Apte, Bühler, Kochergina, Zaliznyak, Knauer).",
+  "description": "Docusaurus book site for the digitized Sanskrit grammar sources (Apte, Bühler, Kochergina, Zalizniak, Knauer).",
   "scripts": {
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",

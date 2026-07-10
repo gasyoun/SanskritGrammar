@@ -4,7 +4,7 @@ _Created: 05-07-2026 · Last updated: 07-07-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Bühler's exercise course, Apte's syntax, Kochergina's textbook,
-Knauer's phrasebook, Zaliznyak's two grammar sketches — kept beside their
+Knauer's phrasebook, Zalizniak's two grammar sketches — kept beside their
 faithful [`.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx)
 extraction, plus a small [Docusaurus](https://docusaurus.io) site to actually
 read them rendered (tables included).
@@ -32,8 +32,8 @@ One directory per source work, named `<Author><ShortTitle>_<year>`:
 | [BuhlerLeitfaden_1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode) | Bühler, *Leitfaden für den elementaren Cursus des Sanskrit* (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina | `.doc`, `.docx`, `.mdx` | 97 |
 | [KnauerFrazy_1908](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023) | Knauer, Sanskrit phrase collection (`Frazy-Knauer`, reprint reference 1908) | `.doc`, `.docx`, `.mdx` | 0 (prose) |
 | [KocherginaUchebnik_1998](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
-| [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t) | Zaliznyak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
-| [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned) | Zaliznyak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
+| [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t) | Zalizniak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
+| [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned) | Zalizniak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
 | [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th issue 1950) — 18 chapters, 1316 §, generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) | `.mdx` (generated) | 0 (§-linked to Wikisource) |
 
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
@@ -165,8 +165,8 @@ on every push to `main`. Regenerate this list any time with `python scripts/site
 - [Bühler — Leitfaden (1923)](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode)
 - [Knauer — Phrases (1908)](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023)
 - [Kochergina — Uchebnik (1998)](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode)
-- [Zaliznyak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zaliznyak-konspekt-2015-11-X_bd_t)
-- [Zaliznyak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zaliznyak-Ocherk_29-11-20-aligned)
+- [Zalizniak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t)
+- [Zalizniak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned)
 - [Whitney — A Sanskrit Grammar (1889)](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index)
 - [Concordance — Bühler/Knauer/Kochergina shared exercise sentences](https://gasyoun.github.io/SanskritGrammar/grammars/Concordance/catalog)
 - [Subject concordance — what each grammar covers, on Whitney's spine](https://gasyoun.github.io/SanskritGrammar/grammars/SubjectConcordance/catalog)

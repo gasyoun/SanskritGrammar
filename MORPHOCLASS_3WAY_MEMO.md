@@ -247,7 +247,7 @@ _Created: 08-07-2026 · Last updated: 09-07-2026_
 - **@DO (наш, открыто).** Поразрядная атрибуция §-конкорданса H241 (ядро движка → 1975,
   запись/парадигмы → 1978, диахрония → 2004) вместо сплошного «→ Очерк 1978» — issue #50 этот
   вопрос не затрагивал → **FN-0017** остаётся `pending` + правка
-  [`zaliznyak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zaliznyak-concordance.mdx).
+  [`zalizniak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zalizniak-concordance.mdx).
 - **@DO (сделано этим проходом).** Исправлена атрибуция `0`-рядов в
   [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)
   («расширение Толчельникова» → «баг `/z/`»).
