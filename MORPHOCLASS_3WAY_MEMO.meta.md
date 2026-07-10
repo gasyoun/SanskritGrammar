@@ -20,7 +20,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
   [`MORPHOCLASS_COMPARISON_ROADMAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md).
 - Первоисточники (полные тексты в репозитории): 1975 англ. перевод, Гасунс 2014
   морфонологическая запись, Талмуд гл. I–III + `zalizniak-concordance` + база `/z/` (H329).
-- Парная ось (внутризализняковская, 1975/1978/2004) — не переоткрывается, берётся из
+- Парная ось (внутризализняковская, 1975/1978/2004) — не переоткрывается, берется из
   [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md).
 
 ## Ключевые находки (ранжировано)

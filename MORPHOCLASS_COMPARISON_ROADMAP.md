@@ -66,7 +66,7 @@ For each of the three works, tabulate and then diff:
 ## Deliverable structure (Russian)
 
 1. **Memo (Russian prose)** — the lineage narrative and, per axis, «что добавил каждый шаг
-   / в чём разошлись», with a clear verdict on *как именно Талмуд развивает Зализняка 1975*.
+   / в чем разошлись», with a clear verdict on *как именно Талмуд развивает Зализняка 1975*.
 2. **Crosswalk tables** — (a) category-level: the Ряд/Тип/seṭ taxonomy aligned across the
    three works; (b) per-root divergence: where the three disagree, seeded by the existing
    `/z/` reconciliation (see below) plus Gasuns's and (if root-listed) Zalizniak's tables.

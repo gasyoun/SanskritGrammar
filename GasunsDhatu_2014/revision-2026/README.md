@@ -20,9 +20,9 @@ These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only i
 | [varga_shares.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/varga_shares.csv) | Its output (source: VisualDCS `derived-data/Fonetika/regen-2026/varna_freq.csv`, DCS pin 2026-03-05) |
 | — | **Canonical sibling:** the same aggregation was built independently the same night as a VisualDCS dataset — [derived-data/Fonetika/varga-series-diachrony/](https://github.com/gasyoun/VisualDCS/tree/main/derived-data/Fonetika/varga-series-diachrony) (counts byte-identical, Cramér's V = 0.037 agrees; registered in PROJECT_INTERLINKS as "consume — don't re-aggregate"). For anything beyond this book, consume that; its [slot_era_map.csv](https://github.com/gasyoun/VisualDCS/blob/main/derived-data/Fonetika/varga-series-diachrony/slot_era_map.csv) also gives an empirical slot→era mapping (slot 5 ≈ medieval ~1000–1700 CE) that refines the dissertation-era labels used in the book's Табл. 5 — a candidate footnote for the author. |
 
-## H382 — пересчёт Таблиц 1-4 и «слогов на слово» (§2.5)
+## H382 — пересчет Таблиц 1-4 и «слогов на слово» (§2.5)
 
-Пересчёт ВСЕХ вычислительных данных §2.5 издания 2014 г. на открытых воспроизводимых корпусах 2026 г. (решение автора от 08-07-2026; H382). Итог: коэффициент C/V (Табл. 1) и топ-кластеры (Табл. 2-3) **подтверждают** 2014 г.; Табл. 4 и качественные тезисы положений 5-6 **пересмотрены** (иной словник, прозрачный метод).
+Пересчет ВСЕХ вычислительных данных §2.5 издания 2014 г. на открытых воспроизводимых корпусах 2026 г. (решение автора от 08-07-2026; H382). Итог: коэффициент C/V (Табл. 1) и топ-кластеры (Табл. 2-3) **подтверждают** 2014 г.; Табл. 4 и качественные тезисы положений 5-6 **пересмотрены** (иной словник, прозрачный метод).
 
 | File | What it is |
 |---|---|
