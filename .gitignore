@@ -103,6 +103,13 @@ TolchelnikovTalmud_2026/papers/Kulikov_2025/*
 TolchelnikovTalmud_2026/papers/Dubyanskiye_2025_Gasuns/*
 !TolchelnikovTalmud_2026/papers/Dubyanskiye_2025_Gasuns/*.mdx
 !TolchelnikovTalmud_2026/papers/Dubyanskiye_2025_Gasuns/_category_.json
+# H552: Plungyan 2025 talk — the YouTube auto-transcript IS the only source text
+# (video stays external), so the .txt is tracked alongside the derived index.mdx
+!TolchelnikovTalmud_2026/papers/Plungyan_2025/
+TolchelnikovTalmud_2026/papers/Plungyan_2025/*
+!TolchelnikovTalmud_2026/papers/Plungyan_2025/*.mdx
+!TolchelnikovTalmud_2026/papers/Plungyan_2025/_category_.json
+!TolchelnikovTalmud_2026/papers/Plungyan_2025/plungyan_2025_autotranscript.txt
 # Pre-existing local scratch/machine-state found alongside the papers (not part of
 # this pipeline's output) — keep excluded rather than sweeping in incidentally.
 TolchelnikovTalmud_2026/papers/.claude/
