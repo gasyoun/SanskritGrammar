@@ -7,6 +7,41 @@ a **measured comparative corpus of Sanskrit grammatical description**, with two 
 papers, one citable dataset, and a site that follows [ACL Anthology](https://aclanthology.org/)
 publishing practice.
 
+> **10-07-2026 revision (Opus 4.8, `claude-opus-4-8`).** On a human decision to run **both
+> the GasunsDhatu monograph and the comparative-corpus work in parallel** (they touch
+> disjoint files), this file now carries an explicit **Track M** for the monograph
+> ([§0](#0-two-parallel-tracks) below) alongside the corpus spines S1–S4, which were already
+> the whole of §2–§4. All four spines remain in scope. The two open monograph PRs —
+> [#79](https://github.com/gasyoun/SanskritGrammar/pull/79) (H385, RWS style over 85 paras)
+> and [#80](https://github.com/gasyoun/SanskritGrammar/pull/80) (H386, monograph-skeleton
+> map) — were merged this day.
+
+---
+
+## 0. Two parallel tracks
+
+The plan now runs on **two threads that share no files** and can advance simultaneously:
+
+| Track | What it is | Home of record | Cadence |
+|---|---|---|---|
+| **Track M — GasunsDhatu 2026 monograph** | Your own PhD-descended book (`GasunsDhatu_2014/` → 2026 print edition), tracked as **M03** in [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) (readiness 2/5). Editorial: RWS style councils, ВАК→monograph skeleton, IAST/Pāṇini passes, bibliography 6-block split, per-book errata. | `Uprava/ARTICLES.md` (M03) + `GasunsDhatu_2014/revision-2026/` | Continuous editorial passes → manuscript mid-2027 |
+| **Track C — comparative corpus / ACL** | Spines **S1–S4** ([§2](#2-the-four-spines)): sequencing (τ), morphoclass disagreement (κ), Pāṇini↔Western pilot, phonostatistics. Ships two ACL-venue papers + one citable benchmark. | This document, §2–§4 | Quarterly artifacts, Q3 2026 → Q2 2027 |
+
+They are complementary, not competing: Track M polishes the *authored* prose of one book;
+Track C *measures* the whole archive. The phonostatistics result (S4) already lives inside the
+Track-M monograph, so S4 is the one explicit hand-off point between the two.
+
+**Track M — immediate state (10-07-2026).**
+
+| Step | Status |
+|---|---|
+| H385 — apply RWS style findings to 2026 prose (85 paras) + review docx | ✅ merged [PR #79](https://github.com/gasyoun/SanskritGrammar/pull/79) |
+| H386 — ВАК→monograph skeleton restructure map + chapter-title proposals | ✅ merged [PR #80](https://github.com/gasyoun/SanskritGrammar/pull/80) |
+| H415 — merge RWS-visaed edits into printed mdx + IAST pass + Zalizniak re-council | ⏳ open |
+| **M03 Phase-0 sign-off** (положения / C13 bibliography / errata) | 🔴 blocker — needs a human author read |
+| Russian academic publisher | 🟠 `@DECIDE` D6 — **Нестор-История leaning** (grif ИЯз РАН closed to external authors, «Наука» unlikely) |
+| Kochergina errata sheet | ⏳ `@WAITING` on the author's printed sheet |
+
 Authored by Opus 4.8 (`claude-opus-4-8`), 10-07-2026, on four decisions taken by a human the
 same day: (1) all four analysis spines are in scope; (2) the ACL crosswalk covers research
 method, site product, and benchmark packaging, ranked; (3) the repo is **promoted from Tier 2
@@ -261,6 +296,7 @@ report a κ computed by one person.
 | D3 | `@DECIDE` | Formalize the Tier-2 → priority-research promotion in the standing tier order, and name what it displaces. |
 | D4 | `@DO` | Obtain / verify the **1878 Bühler first edition** exercises. Gates all directionality work (Q4.5). |
 | D5 | `@DECIDE` | Q3.3 with one annotator (no κ) or wait for a second? Standing guidance says no candidate exists. |
+| D6 | `@DECIDE` | **Track M** — confirm the publisher for the GasunsDhatu 2026 monograph (M03). Not open-ended: per the [BOOK_PLAN ruling](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md) of 10-07-2026, **Нестор-История is the leaning candidate** (ИЯз РАН grif now staff-only, «Наука» unlikely, ученый-совет step dropped from the critical path). Remaining call: lock Нестор-История or name an alternative before manuscript-format work. |
 
 ---
 
