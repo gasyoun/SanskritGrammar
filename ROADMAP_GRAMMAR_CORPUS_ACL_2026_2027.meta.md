@@ -39,8 +39,8 @@ that closes between now and Q1 2027 changes the contribution claim.
 - [`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md)
   + [`MORPHOCLASS_3WAY_MEMO.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.meta.md)
   — the executed S2 comparison (H357). Its findings are inputs, not open questions.
-- [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)
-  — the intra-Zaliznyak axis; treated as settled fact.
+- [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md)
+  — the intra-Zalizniak axis; treated as settled fact.
 - [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md)
   — the H450 agenda (landed 10-07-2026): hypotheses SG-H1…SG-H9, visualisations SG-V1…SG-V6, the
   14-citation ACL crosswalk, sections N1–N4, and the ranked 11-item build backlog. **This roadmap
@@ -82,5 +82,6 @@ that closes between now and Q1 2027 changes the contribution claim.
 |---|---|---|
 | 10-07-2026 | Created. Four spines, three ACL angles, four quarters, five open decisions (D1–D5). | Opus 4.8 (`claude-opus-4-8`) |
 | 10-07-2026 | H450 agenda landed: backlog #4 closed (SG-H1…H9, SG-V1…V6); metadoc's stale `ROADMAP_2026_2027.md` self-references repointed to the renamed `ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md` (rename `77868c5` had missed them). | Fable 5 (`claude-fable-5`) |
+| 10-07-2026 | **D2 closed.** [H449](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H449-Sonnet_SanskritGrammar_zaliznyak-zalizniak-rename-sweep_10.07.26.md) checked the premise behind cancelling the Zaliznyak→Zalizniak rename (that "Zaliznyak" was the historically-printed citation spelling) against real evidence — Tolchelnikov's own published paper already cites "Andrei Zalizniak. 1975." (i-spelling) — and found it false. Rename proceeded ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) + [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), both merged); B6 (`people.yaml` name-variant map) demoted from "dissolves D2" to an independent, optional backlog item. Also fixed this metadoc's stale `ZALIZNYAK_1975_1978_2004_COMPARISON.md` self-reference to the renamed filename. | Sonnet 5 (`claude-sonnet-5`) |
 
 _Dr. Mārcis Gasūns_

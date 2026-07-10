@@ -147,18 +147,24 @@ artifacts; three tiers — **erratum** (note read alongside), **revision** (repl
 | B3 | **Per-page BibTeX + bulk `all.bib`** ([Anthology does both](https://aclanthology.org/faq/)) | S | Makes 10 books citable at once |
 | B4 | **Multi-representation URLs** — `/{id}`, `/{id}.bib`, `/{id}.json` | S | One ID, many representations |
 | B5 | **Site search via Google Programmable Search** — [what the Anthology actually uses](https://github.com/acl-org/acl-anthology/tree/master/google-cse) | S | No backend |
-| B6 | **`people.yaml` with name-variant map** ([author-page policy](https://aclanthology.org/info/author-pages/)) | M | **This dissolves the open `Zaliznyak`→`Zalizniak` rename WIP** — see below |
+| B6 | **`people.yaml` with name-variant map** ([author-page policy](https://aclanthology.org/info/author-pages/)) | M | General-purpose author-identity feature, independent of D2 (below) |
 | B7 | Checksums on every source `.doc`/`.docx` | M | Fixity for digitized editions |
 | B8 | DOI per book/edition via Zenodo, embedding the local ID | L | Pairs with [`/cut-release`](https://github.com/gasyoun/claude-config/blob/main/commands/cut-release.md) |
 
-> **B6 deserves a second look.** The repo's current WIP is a
-> [`Zaliznyak` → `Zalizniak` spelling-rename sweep](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md)
-> across folders, filenames, prose, and passport IDs. The Anthology solved exactly this problem
-> and its answer is **not to rename**: verified authors are anchored to an identity (ORCID), and
-> published name variants are *recorded as variants*, not overwritten — because the old spelling
-> remains correct for the works that were published under it. Adopting a `people.yaml` variant map
-> would make the rename sweep unnecessary, preserve citation integrity for `Zaliznyak 1975` as it
-> was actually printed, and give one canonical display name. Raised as `@DECIDE D2`.
+> **B6 raised, then narrowed — the premise it rested on turned out false.** This section
+> originally argued the rename sweep should be *cancelled* in favor of a `people.yaml`
+> name-variant map, on the theory that "Zaliznyak" was the historically-printed citation
+> spelling and the rename would overwrite it. [H449](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H449-Sonnet_SanskritGrammar_zaliznyak-zalizniak-rename-sweep_10.07.26.md)
+> checked that premise against the actual evidence before proceeding: Tolchelnikov's own
+> published paper ([`Auroville_Feb2024/A NonPaninian Approach...mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/Auroville_Feb2024/A%20NonPaninian%20Approach%20to%20Sanskrit%20Morphonology%20%28article%29.mdx))
+> already cites "Andrei **Zalizniak**. 1975." (i-spelling) in its own References section — so
+> `Zalizniak`, not `Zaliznyak`, is the real citation convention already in scholarly use here.
+> The rename ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) +
+> [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), both merged
+> 10-07-2026) proceeded on that basis. **D2 closed — see the decisions table below.** B6
+> itself (a general author-identity feature for name variants across the whole corpus, not
+> specific to this one spelling question) remains a legitimate, independent backlog item if
+> wanted later — it just no longer blocks or reverses this rename.
 
 ### Angle C — Benchmark packaging (rank 3: the payoff of A + B)
 
@@ -251,7 +257,7 @@ report a κ computed by one person.
 | ID | Context | Question |
 |---|---|---|
 | D1 | `@DECIDE` | Venue for Paper 1 — NLP4DH, LaTeCH-CLfL, or CHR? |
-| D2 | `@DECIDE` | Adopt the Anthology **name-variant model** (B6) and cancel the `Zaliznyak`→`Zalizniak` rename sweep? |
+| ~~D2~~ | ✅ **Closed 10-07-2026** | ~~Adopt the Anthology name-variant model (B6) and cancel the `Zaliznyak`→`Zalizniak` rename sweep?~~ Resolved by evidence, not preference: Tolchelnikov's own published paper already cites "Andrei Zalizniak. 1975." (i-spelling), so that IS the real citation convention in use — the premise behind cancelling the rename was false. Rename proceeded ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) + [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), merged). See B6 note above for detail. |
 | D3 | `@DECIDE` | Formalize the Tier-2 → priority-research promotion in the standing tier order, and name what it displaces. |
 | D4 | `@DO` | Obtain / verify the **1878 Bühler first edition** exercises. Gates all directionality work (Q4.5). |
 | D5 | `@DECIDE` | Q3.3 with one annotator (no κ) or wait for a second? Standing guidance says no candidate exists. |
