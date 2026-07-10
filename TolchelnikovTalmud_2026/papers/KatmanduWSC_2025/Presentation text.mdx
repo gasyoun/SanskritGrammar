@@ -1,0 +1,102 @@
+---
+title: "Presentation text"
+sidebar_label: "Presentation text"
+---
+
+**1.**
+
+Good morning!
+
+My name is Tolchelnikov Ivan, I am a student at Moscow State University. In my today's presentation, I would like to introduce to the international public an original structuralist approach to the sanskrit morphophonology based on the works of the soviet and russian linguist Andrei Zalizniak.
+
+**2.**
+
+At the beginning I will point out a particular issue with rules accuracy occurring in the traditional European approaches which is one of those that Zalizniak is trying to solve. The proposed means to its solution will be discussed next. And lastly I will present some theoretical and practical outcome from the application of this approach.
+
+**3.**
+
+The vague rules issue.
+
+**4.**
+
+Of course, the solution to most issues in sanskrit grammar is to rely fully on Panini and commentators. If it is not convenient for some reason (for example, the necessity to be terminologically consistent with Indo-European studies), what alternatives do we have? Classical European grammars either lack Panini's comprehensiveness or his systematism consisting mainly of exception lists and paradigm tables that are often not comprehensive as well. As a possible alternative to Panini, we need a grammar that can generate correct wordforms and be used either by human or by computer. This grammar shall generalize corpus data in a structured and algorithmic form while minimising overgeneration. The last two goals requires holding balance between general rules and exceptions. The main point of this presentaion is that we can establish such a balance by applying a more fine-grained model.
+
+**5.**
+
+Let's take one simple rule from Whitney's grammar as an example. It is stated that the root in the future stem has guṇa grade. Most of the verbal roots indeed have guṇa here, but some of them have zero-grade or vṛddhi. In the other paragraph, Whitney tried to describe which roots do not have guṇa but that description is also inexhaustive.
+
+**6.**
+
+Based mainly on Whitney's supplement we calculated 815 verbal roots that are not marked as ambiguous or artificial and can form future tense, unlike √as 'to be' for instance. Root-variants and quasi-roots such as dhmā and dham were counted as separate units. 109 of them do not have guṇa so Whitney's general rule has around 87 percent accuracy, which is not so well for one of the most simply derivable forms.
+
+**7.**
+
+This project as an alternative to Panini needs a new conceptual basis. Here it would be helpful to refer to Zalizniak.
+
+**8.**
+
+Andrei Zalizniak was one of the most prominent soviet and russian linguists, mainly known in slavic languages studies. He has a few works on sanskrit, the most original of them is the paper called «Morphophonological Classification of the Ancient Indian Language Verbal Roots» that we have translated to English recently. The qr-code for this translation will be on the final slide of the presentation. In this paper Zalizniak analizes Whitney's and Vaiyakaranas' principles for verbal root nomenclature and classification and proposes original classificatory parameters that can be helpful for developing the above mentioned grammar.
+
+**9.**
+
+Zalizniak's parameters help us to formulate rules that transform chains of morphemes into actual words. Several different kinds of transformations can occur here. First, the appearance of the connective vowel i. Second, the alternation in roots as well as in suffixes and infixes. Third, the verbal root reduplication. Fourth, a shift of the alternating phoneme to its atypical form as presented, for example, in derivatives like stheya from √sthā. Fifth, purely phonological processes of sandhi with separate class of transformations that occurs only in alternating phonemes of the verbal roots.
+
+Here I will mainly consider the alternation. To formulate rules regulating it, we need to answer three questions: what phonemes alternate? what cause the alternation? and how does the cause determines the result?
+
+**10**.
+
+Zalizniak answers the first question by proposing 13 alternation series consisting of three grades: zero, guna, vrddhi where guṇa and vṛddhi should be understood in a broader sense. The letter defines phoneme and the index defines its length in zero grade or in guna for A series: for example √ji 'to win' is I1 because of the short in zero grade, and √nī 'to lead' is I2 because of the long ī. For half of these series there is no obvious zero grade allophone of the alternating phoneme. Therefore, we treated them the same way indian grammarians treated long ṝ. In the verbal roots, it is a metalanguage symbol that has some set of sandhi-rules transforming it into different actual sounds for different phoneme contexts. That was applied to zeros in the A series, and m and n sounds taken from Indo-European comparative studies.
+
+**11.**
+
+Zalizniak confines himself to the verbal roots but the alternation in affixes can be described in these terms as well. For example, infix of the 7th class of present alternates as A1 with short a in guṇa, while the suffix of the 9th class - as A2 having long a in guṇa.
+
+**12**.
+
+The second question is what causes alternation. As we can see from examples the ending ti makes immediately preceding morpheme guṇa, while anti remains them in zero grade whether it is a verbal root or a suffix. So the alternation grade in a morpheme is determined by its following morpheme. Zalizniak calls this determinative parameter morphological position. However, the morphological position is just an expectation because sometimes it may not be met on an extraphonological basis. For example, √as 'to be' exhibits zero grade with anti becoming santi, but almost similar root √ad exhibits guṇa, while danti is expected. The determination here is not direct.
+
+**13**.
+
+Following Zalizniak, let's call the expectation of zero grade 1st morphological position. For instance, morpheme is set into 1st morphological position by suffix ta of the past passive participle. The expectation of guṇa is 2nd morphological position as with the future suffix sya. The expectation of vṛddhi is 3rd morphological position as sometimes with the 5th aorist suffix iṣ. There is no morpheme that set all the preceding morphemes into 3rd morphological position, therefore slashes are used to show alternatives that are mainly determined phonologically.
+
+**14.**
+
+The parameter on the side of the alternating morpheme that defines its grade in a certain morphological position is called by Zalizniak the alternation type. There are four actual alternation types in Sanskrit. First type is regular, it has all three grades and meets all expectations. Second type, almost as frequent as the 1st type, does not have zero grade, therefore, it gives guṇa while zero is expected. Third type does not have guṇa and gives zero while guṇa is expected. The fourth type has only about a dozen roots and always gives vṛddhi.
+
+**15**.
+
+So for defining the actual grade in a morpheme we should do the simple table operation matching its alternation type with the morphological position provided by the following morpheme.
+
+**16.**
+
+Now let's reformulate Whitney's rule for future tense derivation with Zalizniak's terms. If guṇa strengthening is replaced by 2nd morphological position and alternation types are determined for all the verbal roots the rule has are only one exception the root √mṛj 'to wipe' exhibiting vṛddhi here. So its accuracy increased from 87 percent to almost 100. And it seems that we inevitably end up with nomenclature resembling Paninian anubandhas.
+
+**17**.
+
+Thus, we can divide morphemes into three groups. Morphemes that only cause alternation are endings and absolutive suffixes because they always finish the word and have no following morpheme to set them into some morphological position. Of all the alternation parameters, for them only morphological position needs to be defined. Second morphemes that only undergo alternation are mainly roots and prefixes in the special cases of secondary nominal derivation. For them only alternation type and series are need to be determined. Third, the morphemes that both cause and undergo alternation that are infixes and most of the suffixes. For them all three parameters should be determined: morphological position, alternation type and series.
+
+**18.**
+
+To the conclusion.
+
+**19**.
+
+The core of the proposed grammatical description is this algorithm of five steps. The first step is the inserting of the connective vowel i regulated by general conditions and the seṭ-veṭ-aniṭ parameter for the verbal roots. Following Zalizniak's intuition, we distinguished four limited variants of veṭ along with fully optional veṭ to avoid overgeneration. The second step is the alternation with actual grade being calculated as proposed above. The third step is verbal root reduplication described in terms of alternation series determining vowel in reduplication syllable and sandhi-like rules for determining consonant. The fourth step is variable. If it is required morphologically here occurs the shift of the alternating phoneme. The shift was described in terms of alternation series; for instance, atypical guṇa e for root sthā of A2 series is just a guṇa from I series. So it is a shift of series. If it is not required, special sandhi-transformations can occur in the verbal root. For their description, see Table 1 in Zalizniak's paper. Finally, the general sandhi rules are applied. For the algorithmical description of them, see Emeneau' work. This is the algorithm in synthetic order, the analysis can be performed by reversing it.
+
+**20**.
+
+Finally, some practical results in the field of computational linguistics. Andrei Shirobokov from Sanskrit Zealots Society team developed morphological generator based on Zalizniak's approach. It is now in alpha stage, but you can try it via qr-code on the next slide. The main advantage of this generator is its connection to the corpora allowing one to vefify generated wordforms and in the near future allowing also to check corpora morphological tagging.
+
+**21**.
+
+Thank you for your attention. Via qr-codes you may see Andrei Shirobokov's morphological generator and English translation of the discussed Zalizniak's paper. I will be glad to answer your questions. Also I have few additional slides considering our approach to the description of the seṭ-parameter and verbal root reduplication.
+
+**22.**
+
+The general conditions for the appearance of the connective vowel are that the preceding morpheme does not end in long a or in zero grade alternation phoneme and that the following morpheme begins with a consonant except y, and sometimes v and m and also is not an aorist suffix.
+
+There are four cases where connective vowel could appear. Cases 3 and 4 where preceding morpheme is a suffix are fully regular. Cases 1 and 2 including verbal root need adding the seṭ-parameter to the general conditions.
+
+**23.**
+
+Traditionally, verbal roots are distributed between set, anit and vet categories. But we cannot define vet as optional in every applicable case because it leads to overgeneration. Following Zalizniak's intuition and trying to establish balance between new categories and overgeneration, four limited variants of vet are proposed. Vet1 has anit past passive participle, Vet2 has set future and desiderative and so on.
