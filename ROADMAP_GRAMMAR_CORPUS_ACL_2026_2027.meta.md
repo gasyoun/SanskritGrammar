@@ -1,8 +1,8 @@
-# Metadoc — ROADMAP_2026_2027.md
+# Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
 _Created: 10-07-2026 · Last updated: 10-07-2026_
 
-A document about [`ROADMAP_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_2026_2027.md).
+A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
 ---
 
@@ -41,8 +41,10 @@ that closes between now and Q1 2027 changes the contribution claim.
   — the executed S2 comparison (H357). Its findings are inputs, not open questions.
 - [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)
   — the intra-Zaliznyak axis; treated as settled fact.
-- H450's forthcoming `docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md` — the hypotheses/viz spec this plan
-  commissions. **This roadmap is the plan; that memo is the agenda; neither is the analysis.**
+- [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md)
+  — the H450 agenda (landed 10-07-2026): hypotheses SG-H1…SG-H9, visualisations SG-V1…SG-V6, the
+  14-citation ACL crosswalk, sections N1–N4, and the ranked 11-item build backlog. **This roadmap
+  is the plan; that memo is the agenda; neither is the analysis.**
 
 ## Known limitations / caveats
 
@@ -69,15 +71,16 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 1 | Spell out the **S1 fallback** if `@DO D4` resolves negatively (keep order comparison, drop directionality) | open |
 | 2 | Reconcile the **D3 tier promotion** into GTD's standing tier order — name what it displaces | open |
 | 3 | Add **S/M/L effort estimates** to every Q3–Q2 item, not just Angle B | open |
-| 4 | Fold H450's numbered hypotheses back in as the roadmap's **hypothesis IDs** once the memo lands | open — depends on H450 |
+| 4 | Fold H450's numbered hypotheses back in as the roadmap's **hypothesis IDs** once the memo lands | ✅ closed 10-07-2026 — memo landed with IDs **SG-H1…SG-H9** (S1: H1/H2/H3/H4/H9 · S2: H5/H6 · S3: H7 · S4: H8) + viz **SG-V1…SG-V6**; see [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) |
 | 5 | Re-verify the four **ACL non-findings** before any submission (they are the novelty claims) | open — due Q1 2027 |
 | 6 | Decide whether **S4** gets a lane or is formally closed | open |
-| 7 | Add a **budget line** — token/time cost per quarter — once H450 sizes the work | open |
+| 7 | Add a **budget line** — token/time cost per quarter — H450's backlog now carries S/M/L per item, quarterly roll-up still missing | open |
 
 ## Revision history
 
 | Date | Change | By |
 |---|---|---|
 | 10-07-2026 | Created. Four spines, three ACL angles, four quarters, five open decisions (D1–D5). | Opus 4.8 (`claude-opus-4-8`) |
+| 10-07-2026 | H450 agenda landed: backlog #4 closed (SG-H1…H9, SG-V1…V6); metadoc's stale `ROADMAP_2026_2027.md` self-references repointed to the renamed `ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md` (rename `77868c5` had missed them). | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
