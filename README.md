@@ -1,11 +1,13 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 07-07-2026_
+_Created: 05-07-2026 · Last updated: 11-07-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
-works — Bühler's exercise course, Apte's syntax, Kochergina's textbook,
-Knauer's phrasebook, Zalizniak's two grammar sketches — kept beside their
-faithful [`.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx)
+works — Apte's syntax reference, Bühler's exercise course, Gasūns's
+root-morphophonology dissertation, Knauer's phrasebook, Kochergina's textbook,
+Tolchelnikov's Sanskrit course, Whitney's reference grammar, and Zalizniak's
+three grammar sketches — kept beside their faithful
+[`.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx)
 extraction, plus a small [Docusaurus](https://docusaurus.io) site to actually
 read them rendered (tables included).
 
@@ -24,17 +26,29 @@ back to a stable source instead of maintaining its own copy.
 
 ## Structure
 
-One directory per source work, named `<Author><ShortTitle>_<year>`:
+One directory per source work, named `<Author><ShortTitle>_<year>`. Ten source
+works are currently present (plus two generated cross-reference folders,
+[Concordance](#concordance--shared-exercise-sentences-bühler--knauer--kochergina)
+and [SubjectConcordance](#subject-concordance--what-each-grammar-covers-whitneys-spine),
+covered below):
 
 | Directory | Work | Format present | Grid tables |
 |---|---|---|---:|
 | [ApteSyntax_1885](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode) | Apte, Sanskrit syntax reference (reprint dated 1885; underlying `.doc` metadata shows a 2022 electronic edition) | `.doc`, `.docx`, `.mdx` | 8 |
 | [BuhlerLeitfaden_1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode) | Bühler, *Leitfaden für den elementaren Cursus des Sanskrit* (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina | `.doc`, `.docx`, `.mdx` | 97 |
+| [GasunsDhatu_2014](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2) | Gasūns, *Морфонологическая запись глагольных корней санскрита* (dissertation, 2014) — under editorial revision for a 2026 print edition (see [`revision-2026/`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014/revision-2026)) | `.docx`, `.mdx` | 5 |
 | [KnauerFrazy_1908](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023) | Knauer, Sanskrit phrase collection (`Frazy-Knauer`, reprint reference 1908) | `.doc`, `.docx`, `.mdx` | 0 (prose) |
 | [KocherginaUchebnik_1998](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
+| [TolchelnikovTalmud_2026](https://gasyoun.github.io/SanskritGrammar/grammars/TolchelnikovTalmud_2026/talmud-00-vvedenie) | Tolchelnikov, *Талмуд санскрита* — a modern Sanskrit course (lessons + apparatus), 2026 | `.docx`, `.mdx` | 60 |
+| [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th issue 1950) — 18 chapters + an appendix, 1316 §, generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) | `.mdx` (generated) | 0 (§-linked to Wikisource) |
 | [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t) | Zalizniak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
+| [ZalizniakMorphology_1975](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakMorphology_1975/zalizniak-morphophonological-classification-en) | Zalizniak, morphophonological classification of the Sanskrit verb (1975) — English translation by I. Tolchelnikov, ed. M. Ishimbaev | `.docx`, `.mdx` | 6 |
 | [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned) | Zalizniak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
-| [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th issue 1950) — 18 chapters, 1316 §, generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) | `.mdx` (generated) | 0 (§-linked to Wikisource) |
+
+The folder set is not fixed at ten — the Docusaurus config auto-registers any
+top-level directory that contains an `.mdx` (see
+[Reading the archive](#reading-the-archive) below), so dropping in a new work
+adds it to the site with no config edit.
 
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
 Document File V2`), mostly containing Devanāgarī + IAST text with embedded
@@ -70,7 +84,7 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
 
 ## Errata
 
-**Every book folder carries an `errata.yml`** (seeded empty if it has no
+**Most book folders carry an `errata.yml`** (seeded empty if they have no
 corrections yet) → a generated `ERRATA.md` — text corrections, separate from
 the book's own
 [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
@@ -112,12 +126,18 @@ the per-book split): set `fixed_in: v0.X.Y` on an entry once the typo is
 corrected in the digital source and it renders `✓ fixed in v0.X.Y` instead of
 `open`. The whole workflow — ingesting a pasted errata sheet, the edition-diff
 path, regenerating, and the monthly CHANGELOG cross-check — is wrapped in the
-`/errata` skill. Eight books have an `errata.yml`; the first populated list is
+`/errata` skill. Eight books have an `errata.yml`
+([ApteSyntax_1885](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml),
+BuhlerLeitfaden_1923, GasunsDhatu_2014, KnauerFrazy_1908, KocherginaUchebnik_1998,
+TolchelnikovTalmud_2026, ZalizniakKonspekt_2004, ZalizniakOcherk_1978). Two lists
+are populated so far:
+[`GasunsDhatu_2014`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.md)
+(75 errata — 71 open, 4 fixed — accrued from the 2026 revision passes) and
 [`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md)
-(25 errata from the 1908 print and the 2011/2015/2023 errata sheets), the rest
-seeded empty and ready to fill. `ZalizniakMorphology_1975` and `Concordance`
-are not yet wired into the errata/changelog system (no `errata.yml`, no
-per-book `CHANGELOG.md` yet).
+(25 errata from the 1908 print and the 2011/2015/2023 errata sheets); the other
+six are seeded empty and ready to fill. `ZalizniakMorphology_1975`,
+`Concordance`, and `SubjectConcordance` are not yet wired into the
+errata/changelog system (no `errata.yml`, no per-book `CHANGELOG.md` yet).
 
 ## Per-book releases
 
@@ -125,7 +145,7 @@ Each book with an `errata.yml` also carries its own
 [`<Book>/CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
 and tags/releases **independently**, `<book-slug>-vX.Y.Z` (e.g.
 `gasuns-dhatu-v0.1.0`, `knauer-frazy-v0.1.0`) — a correction to one book
-shouldn't force a version bump on the other seven. The root
+shouldn't force a version bump on the others. The root
 [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
 still exists for cross-book/infra changes (the errata system itself, site
 tooling, docs) and tags plainly as `vX.Y.Z`. Run `/cut-release` scoped to a
@@ -134,9 +154,12 @@ infra release.
 
 ## Reading the archive
 
-This repo is itself a small Docusaurus site over the six `.mdx` files directly
+This repo is itself a small Docusaurus site over the book `.mdx` files directly
 (no copy into a `docs/` folder), configured in
-[`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs):
+[`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs).
+The config auto-discovers book folders — every top-level directory that
+contains at least one `.mdx` (skipping `node_modules`, `build`, `src`, etc.) is
+registered automatically, so adding a work needs no `include` edit:
 
 ```sh
 npm install
@@ -157,17 +180,21 @@ Keep all three copies in sync by hand — there is no shared npm package yet.
 
 ## Live pages
 
-The six works as Docusaurus pages, deployed to GitHub Pages by
+The works as Docusaurus pages, deployed to GitHub Pages by
 [`deploy-pages.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/deploy-pages.yml)
-on every push to `main`. Regenerate this list any time with `python scripts/site_tools.py links`:
+on every push to `main`. One representative entry page per work is listed below;
+regenerate the full per-`.mdx` list any time with `python scripts/site_tools.py links`:
 
 - [Apte — Sanskrit Syntax (1885)](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode)
 - [Bühler — Leitfaden (1923)](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode)
+- [Gasūns — Dhātu dissertation (2014)](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2)
 - [Knauer — Phrases (1908)](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023)
 - [Kochergina — Uchebnik (1998)](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode)
-- [Zalizniak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t)
-- [Zalizniak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned)
+- [Tolchelnikov — Талмуд санскрита (2026)](https://gasyoun.github.io/SanskritGrammar/grammars/TolchelnikovTalmud_2026/talmud-00-vvedenie)
 - [Whitney — A Sanskrit Grammar (1889)](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index)
+- [Zalizniak — Konspekt (2004)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t)
+- [Zalizniak — Morphophonological Classification (1975, EN)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakMorphology_1975/zalizniak-morphophonological-classification-en)
+- [Zalizniak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned)
 - [Concordance — Bühler/Knauer/Kochergina shared exercise sentences](https://gasyoun.github.io/SanskritGrammar/grammars/Concordance/catalog)
 - [Subject concordance — what each grammar covers, on Whitney's spine](https://gasyoun.github.io/SanskritGrammar/grammars/SubjectConcordance/catalog)
 
@@ -206,7 +233,8 @@ spot-check review is documented in
 
 [`WhitneyGrammar_1889/`](https://github.com/gasyoun/SanskritGrammar/tree/main/WhitneyGrammar_1889)
 is a **generated** book folder — 18 per-chapter `.mdx` + an
-[index](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/00_index.mdx) —
+[appendix](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/19_Appendix.mdx)
++ an [index](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/00_index.mdx) —
 built from the [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) source data
 by [`scripts/build_whitney.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_whitney.py):
 
@@ -237,7 +265,7 @@ This is the *subject* counterpart to the *sentence*-level `Concordance/` above.
 python scripts/build_subject_concordance.py
 ```
 
-Coverage of the nine non-Whitney works is an **automated first pass**: a curated
+Coverage of the non-Whitney works is an **automated first pass**: a curated
 multilingual keyword lexicon (EN/RU/DE + Sanskrit technical terms — most editions
 here are Russian-medium) is scanned over each work's full text, and each cell
 reports how many distinct subject terms occur (● ≥3 covered, ○ 1–2 mentioned,
@@ -247,7 +275,7 @@ caveats and each work's own extracted table of contents. Follow-up in
 
 ## Tooling — [`scripts/site_tools.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/site_tools.py)
 
-Three re-runnable commands over the converted `.mdx`, all idempotent:
+Four re-runnable commands over the converted `.mdx`, all idempotent:
 
 | Command | What it does |
 |---|---|
@@ -261,11 +289,11 @@ skill audits a whole tree of `.doc`/`.docx`/`.pdf` for whether each already has 
 `.mdx` sibling (routing the gaps to `/docx-to-md`),
 and **batch-OCRs any image-only PDF** that has no text layer (detected with `pdftotext`,
 OCR'd with `ocrmypdf` + tesseract, langs `san+rus+deu+eng`) to a `<name>.ocr.pdf` before
-conversion. All six works here are already covered; no PDFs yet.
+conversion.
 
 ## Use cases
 
-- **Read a grammar with its tables rendered.** `npm start`, then browse the six
+- **Read a grammar with its tables rendered.** `npm start`, then browse the
   works under `/grammars/…` — declension/conjugation tables render as real HTML
   tables (e.g. Bühler's 97 conjugation tables), not raw `+---+` text.
 - **Reuse a source in another book site.** Point a consuming repo (the
@@ -282,7 +310,7 @@ conversion. All six works here are already covered; no PDFs yet.
   confirms no encoding loss (Devanāgarī/IAST/Cyrillic intact), no unrenderable
   simple tables, and relative image links.
 - **Shrink page weight for the web.** `python scripts/site_tools.py images`
-  WebP-optimizes the extracted scans (~516 KB saved across these six books).
+  WebP-optimizes the extracted scans.
 - **Port the whole pipeline to a new repo.** Run
   `/docx-to-md`
   on any tree of Word files; it emits MDX-safe `.mdx` + the `site_tools.py`
@@ -294,6 +322,19 @@ conversion. All six works here are already covered; no PDFs yet.
 - **OCR scanned PDFs in batch.** For image-only PDFs with no text layer,
   `/mdx-coverage` batch-OCRs them (`ocrmypdf`, Devanāgarī + Cyrillic + German +
   English) to a searchable `<name>.ocr.pdf` so they can then be converted.
+
+## Research layer
+
+Beyond the archive, this repo hosts an active research track that draws on these
+sources: a one-year research agenda in
+[`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md)
+and the polemic article **A54** — a response to Kulikov on Sanskrit alternations,
+drafted for *Indo-Iranian Languages*
+([`IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md),
+plan in
+[`IIL_ZALIZNIAK_ALTERNATIONS_POLEMIC_PLAN_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_POLEMIC_PLAN_2027.md)).
+Paper status is tracked in the org inventory
+[`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
 ## Caveats found in the source files
 
@@ -312,6 +353,7 @@ conversion. All six works here are already covered; no PDFs yet.
 ## Related
 
 - [`buhler-sanskrit-book`](https://github.com/gasyoun/buhler-sanskrit-book) — republishes the Bühler exercises as a standalone book site; **canonical** home of the `rstTable` remark plugin.
+- [`WhitneyRoots`](https://github.com/gasyoun/WhitneyRoots) — source data the generated `WhitneyGrammar_1889/` and `SubjectConcordance/` folders are built from.
 - [`csl-guides`](https://github.com/sanskrit-lexicon/csl-guides) — Cologne Digital Sanskrit Lexicon guides site; carries the ported `rstTable.mjs`.
 - `/docx-to-md` — the org-wide conversion skill this repo's `.mdx` are built with.
 
