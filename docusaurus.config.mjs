@@ -37,6 +37,11 @@ const config = {
 
   i18n: { defaultLocale: 'ru', locales: ['ru'] },
 
+  // ```mermaid fences (sangram charter and the B/C-wave atlas pages) render
+  // as diagrams instead of dead code blocks.
+  markdown: { mermaid: true },
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
