@@ -1,0 +1,164 @@
+{
+  "$schema": "./atlas.schema.json",
+  "contract_version": "1.0.0",
+  "provenance": {
+    "generated": "2026-07-11",
+    "generator": "hand-authored minimal fixture (exercises every node and edge kind)",
+    "generated_by": "Fable 5 (claude-fable-5)",
+    "series_slot": "B1 (H623)",
+    "sources": [
+      {
+        "name": "минимальная фикстура контракта — не производственные данные",
+        "visibility": "internal"
+      }
+    ],
+    "sanitisation": {
+      "denylist_version": "2026-07-11",
+      "dropped_nodes": 0,
+      "dropped_edges": 0
+    }
+  },
+  "nodes": [
+    {
+      "id": "thesis:2.7",
+      "kind": "thesis",
+      "label_ru": "Машинно-проверяемая грамматика",
+      "section": "2.7",
+      "importance": "mid",
+      "state": "partial",
+      "scores": { "e": 4, "z": 4, "p": 4, "k": 2.0 },
+      "verdict": "sustain",
+      "gates": [{ "type": "human" }],
+      "gates_summary_ru": "очереди adjudication корневых crosswalks",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": { "label_ru": "оценка автора (внутренний реестр)", "visibility": "internal" }
+    },
+    { "id": "class:grammars", "kind": "source-class", "label_ru": "Грамматики", "tier": "top", "thesis_refs": ["2.7"], "temperature": "structural" },
+    { "id": "class:corpora", "kind": "source-class", "label_ru": "Корпуса", "tier": "top", "thesis_refs": ["2.4"], "temperature": "structural" },
+    { "id": "class:translations", "kind": "source-class", "label_ru": "Переводы (питающий слой)", "tier": "feeding", "temperature": "structural" },
+    {
+      "id": "repo:sanskritgrammar",
+      "kind": "repo",
+      "label_ru": "SanskritGrammar",
+      "org": "gasyoun",
+      "name": "SanskritGrammar",
+      "url": "https://github.com/gasyoun/SanskritGrammar",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:visualdcs",
+      "kind": "repo",
+      "label_ru": "VisualDCS",
+      "org": "gasyoun",
+      "name": "VisualDCS",
+      "url": "https://github.com/gasyoun/VisualDCS",
+      "temperature": "structural"
+    },
+    {
+      "id": "asset:dcs-corpus",
+      "kind": "asset",
+      "label_ru": "DCS-корпус: SQLite + lemma frequency",
+      "asset_types": ["data"],
+      "owner": "repo:visualdcs",
+      "url": "https://github.com/gasyoun/VisualDCS",
+      "rights": "quarantine",
+      "prohibition_ru": "Не ре-парсить CoNLL-U; частотности потреблять, не пересчитывать.",
+      "rule_refs": ["7.13", "7.14"],
+      "temperature": "structural"
+    },
+    {
+      "id": "ext:vidyut",
+      "kind": "external-stack",
+      "label_ru": "vidyut (Ambuda)",
+      "url": "https://github.com/ambuda-org/vidyut",
+      "consume_rule_ru": "Вендорить как движок флексии.",
+      "prohibition_ru": "Не писать собственную флексию.",
+      "temperature": "structural"
+    },
+    { "id": "stage:verified-data", "kind": "stage", "label_ru": "Проверенные данные и методы", "chain": "value", "temperature": "structural" },
+    { "id": "stage:edu-products", "kind": "stage", "label_ru": "Образовательные продукты", "chain": "value", "temperature": "structural" },
+    { "id": "stage:revenue", "kind": "stage", "label_ru": "Выручка и аудитория", "chain": "value", "temperature": "structural" },
+    { "id": "stage:authority", "kind": "stage", "label_ru": "Научный авторитет и партнерства", "chain": "value", "temperature": "structural" },
+    { "id": "stage:agents", "kind": "stage", "label_ru": "Агенты, навыки и организационная память", "chain": "value", "temperature": "structural" },
+    { "id": "stage:derived-grammar", "kind": "stage", "label_ru": "Производные грамматические данные", "chain": "provenance", "temperature": "structural" },
+    { "id": "stage:crosswalks", "kind": "stage", "label_ru": "Crosswalks и typed links", "chain": "provenance", "temperature": "structural" },
+    { "id": "stage:research", "kind": "stage", "label_ru": "Исследования и статьи", "chain": "provenance", "temperature": "structural" },
+    { "id": "surface:org-wide", "kind": "surface", "label_ru": "Все репозитории организации", "temperature": "structural" }
+  ],
+  "edges": [
+    { "id": "e:fx-replenishes", "source": "class:translations", "target": "class:corpora", "kind": "replenishes", "temperature": "structural" },
+    { "id": "e:fx-generates", "source": "class:grammars", "target": "stage:derived-grammar", "kind": "generates", "temperature": "structural" },
+    { "id": "e:fx-attests", "source": "class:corpora", "target": "class:grammars", "kind": "attests", "temperature": "structural" },
+    { "id": "e:fx-crosslinks", "source": "stage:derived-grammar", "target": "stage:crosswalks", "kind": "crosslinks", "temperature": "structural" },
+    { "id": "e:fx-fills", "source": "stage:crosswalks", "target": "stage:research", "kind": "fills", "temperature": "structural" },
+    {
+      "id": "e:fx-feeds",
+      "source": "asset:dcs-corpus",
+      "target": "repo:sanskritgrammar",
+      "kind": "feeds",
+      "asset_ru": "частотный слой DCS для корпусных свидетельств",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": { "label_ru": "типизированный список ребер (внутренний реестр)", "visibility": "internal" }
+    },
+    { "id": "e:fx-consumes", "source": "repo:sanskritgrammar", "target": "ext:vidyut", "kind": "consumes", "temperature": "structural" },
+    { "id": "e:fx-vendors", "source": "repo:sanskritgrammar", "target": "repo:visualdcs", "kind": "vendors", "temperature": "structural" },
+    { "id": "e:fx-produces", "source": "repo:visualdcs", "target": "surface:org-wide", "kind": "produces", "temperature": "structural" },
+    { "id": "e:fx-cites", "source": "repo:sanskritgrammar", "target": "repo:visualdcs", "kind": "cites", "temperature": "structural" },
+    { "id": "e:fx-creates", "source": "stage:edu-products", "target": "stage:revenue", "kind": "creates", "temperature": "structural" },
+    { "id": "e:fx-strengthens", "source": "stage:authority", "target": "stage:verified-data", "kind": "strengthens", "temperature": "structural" },
+    { "id": "e:fx-funds", "source": "stage:revenue", "target": "stage:verified-data", "kind": "funds", "temperature": "structural" },
+    { "id": "e:fx-scales", "source": "stage:agents", "target": "stage:verified-data", "kind": "scales", "temperature": "structural" },
+    { "id": "e:fx-anchors", "source": "thesis:2.7", "target": "repo:sanskritgrammar", "kind": "anchors", "temperature": "structural" },
+    { "id": "e:fx-owns", "source": "repo:visualdcs", "target": "asset:dcs-corpus", "kind": "owns", "temperature": "structural" }
+  ],
+  "views": [
+    {
+      "id": "attention",
+      "title_ru": "Распределение внимания и приоритетов",
+      "question_ru": "Куда направлять следующую единицу внимания и какой тип ворот ее запирает?",
+      "node_kinds": ["thesis", "repo"],
+      "edge_kinds": ["anchors"],
+      "seed": { "source_label_ru": "карта внимания (внутренний реестр)", "megabook_section": "§11", "series_slot": "A2", "visibility": "internal" },
+      "route": { "slug": "/sangram/atlas/attention", "owner_slot": "B2" }
+    },
+    {
+      "id": "reuse",
+      "title_ru": "Переиспользование готовых активов",
+      "question_ru": "У кого уже есть нужный актив и что запрещено пересоздавать?",
+      "node_kinds": ["repo", "asset", "external-stack", "surface"],
+      "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites"],
+      "seed": { "source_label_ru": "карта переиспользования (внутренний реестр)", "megabook_section": "§12", "series_slot": "A3", "visibility": "internal" },
+      "route": { "slug": "/sangram/atlas/reuse", "owner_slot": "B3" }
+    },
+    {
+      "id": "value-chain",
+      "title_ru": "Движение от исследования к продуктам",
+      "question_ru": "Как источники превращаются в данные, публикации, продукты и выручку?",
+      "node_kinds": ["stage"],
+      "edge_kinds": ["generates", "fills", "creates", "strengthens", "funds", "scales"],
+      "seed": { "source_label_ru": "цепочка ценности (внутренний реестр)", "megabook_section": "§1.2", "series_slot": "A4", "visibility": "internal" },
+      "route": { "slug": "/sangram/atlas/value-chain", "owner_slot": "B4" }
+    },
+    {
+      "id": "dependencies",
+      "title_ru": "Зависимости репозиториев",
+      "question_ru": "Какие репозитории питают, потребляют, вендорят и цитируют друг друга?",
+      "node_kinds": ["repo", "external-stack", "surface"],
+      "edge_kinds": ["feeds", "consumes", "vendors", "produces", "cites"],
+      "seed": { "source_label_ru": "типизированный список ребер (внутренний реестр)", "series_slot": "A1", "visibility": "internal" },
+      "route": { "slug": "/sangram/atlas/dependencies", "owner_slot": "B5" }
+    },
+    {
+      "id": "provenance",
+      "title_ru": "Происхождение данных",
+      "question_ru": "Из каких классов источников рождается каждый производный слой?",
+      "node_kinds": ["source-class", "stage"],
+      "edge_kinds": ["replenishes", "generates", "attests", "crosslinks", "fills"],
+      "seed": { "source_label_ru": "онтология источников и карта происхождения (внутренний реестр)", "megabook_section": "§8", "series_slot": "A1", "visibility": "internal" },
+      "route": { "slug": "/sangram/atlas/provenance", "owner_slot": "B6" }
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gasyoun.github.io/SanskritGrammar/sangram/atlas/data/atlas.schema.json",
+  "title": "Sangram public atlas bundle",
+  "description": "Sanitised, provenance-bearing public data layer behind the five Sangram atlas views (attention, reuse, value-chain, dependencies, provenance). Contract: sangram/atlas/SANGRAM_ATLAS_DATA_CONTRACT.mdx (slot B1, H623).",
+  "type": "object",
+  "required": ["contract_version", "provenance", "nodes", "edges", "views"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "contract_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semver of the data contract this bundle conforms to. Kinds and enums are append-only within a major version."
+    },
+    "provenance": { "$ref": "#/$defs/provenance" },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/edge" }
+    },
+    "views": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": { "$ref": "#/$defs/view" }
+    }
+  },
+  "$defs": {
+    "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "nodeId": { "type": "string", "pattern": "^(thesis|class|repo|asset|ext|stage|surface):[a-z0-9][a-z0-9.-]*$" },
+    "temperature": {
+      "type": "string",
+      "enum": ["structural", "assessed"],
+      "description": "structural = stable explanatory structure; assessed = dated author/registry assessment refreshed in place. Volatile content (queues, claims, PR states, counters) is banned from the bundle."
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["label_ru", "visibility"],
+      "additionalProperties": false,
+      "properties": {
+        "label_ru": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "pattern": "^https://" },
+        "visibility": { "type": "string", "enum": ["public", "internal"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "visibility": { "const": "internal" } } },
+          "then": { "not": { "required": ["url"] } }
+        }
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["generated", "generator", "generated_by", "series_slot", "sources", "sanitisation"],
+      "additionalProperties": false,
+      "properties": {
+        "generated": { "$ref": "#/$defs/date" },
+        "generator": { "type": "string" },
+        "generated_by": {
+          "type": "string",
+          "description": "Model tier with exact version, or human author.",
+          "minLength": 1
+        },
+        "series_slot": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "visibility"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "commit": { "type": "string" },
+              "sections": { "type": "array", "items": { "type": "string" } },
+              "visibility": { "type": "string", "enum": ["public", "internal"] }
+            }
+          }
+        },
+        "sanitisation": {
+          "type": "object",
+          "required": ["denylist_version", "dropped_nodes", "dropped_edges"],
+          "additionalProperties": false,
+          "properties": {
+            "denylist_version": { "type": "string" },
+            "dropped_nodes": { "type": "integer", "minimum": 0 },
+            "dropped_edges": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["human", "external"] }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "kind", "label_ru", "temperature"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "kind": {
+          "type": "string",
+          "enum": ["thesis", "source-class", "repo", "asset", "external-stack", "stage", "surface"]
+        },
+        "label_ru": { "type": "string", "minLength": 1 },
+        "label_en": { "type": ["string", "null"] },
+        "url": { "type": "string", "pattern": "^https?://" },
+        "thesis_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[2-5]\\.\\d$" }
+        },
+        "rule_refs": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^7\\.\\d{1,2}$" }
+        },
+        "temperature": { "$ref": "#/$defs/temperature" },
+        "as_of": { "$ref": "#/$defs/date" },
+        "evidence": { "$ref": "#/$defs/evidence" },
+        "section": { "type": "string", "pattern": "^[2-5]\\.\\d$" },
+        "importance": { "type": "string", "enum": ["key", "mid", "aux"] },
+        "state": { "type": "string", "enum": ["blocked", "partial", "stable"] },
+        "scores": {
+          "type": "object",
+          "required": ["e", "z", "p", "k"],
+          "additionalProperties": false,
+          "properties": {
+            "e": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "z": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "p": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "k": { "type": "number", "minimum": 0 }
+          }
+        },
+        "verdict": { "type": "string", "enum": ["amplify", "sustain", "pause"] },
+        "gates": { "type": "array", "items": { "$ref": "#/$defs/gate" } },
+        "gates_summary_ru": { "type": "string" },
+        "tier": { "type": "string", "enum": ["top", "feeding"] },
+        "parent": { "$ref": "#/$defs/nodeId" },
+        "org": { "type": "string" },
+        "name": { "type": "string" },
+        "asset_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["code", "data", "schema", "workflow"] }
+        },
+        "owner": { "$ref": "#/$defs/nodeId" },
+        "prohibition_ru": { "type": "string" },
+        "rights": { "type": "string", "enum": ["open", "rights-gated", "quarantine"] },
+        "license": { "type": "string" },
+        "consume_rule_ru": { "type": "string" },
+        "chain": { "type": "string", "enum": ["value", "provenance"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "thesis" } } },
+          "then": { "required": ["section", "importance", "state", "scores", "verdict", "gates", "as_of"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "source-class" } } },
+          "then": { "required": ["tier"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "repo" } } },
+          "then": { "required": ["org", "name", "url"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "asset" } } },
+          "then": { "required": ["asset_types", "owner", "prohibition_ru", "rights"] }
+        },
+        {
+          "if": { "properties": { "kind": { "const": "stage" } } },
+          "then": { "required": ["chain"] }
+        },
+        {
+          "if": { "properties": { "temperature": { "const": "assessed" } } },
+          "then": { "required": ["as_of"] }
+        }
+      ]
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id", "source", "target", "kind", "temperature"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^e:[a-z0-9][a-z0-9.:-]*$" },
+        "source": { "$ref": "#/$defs/nodeId" },
+        "target": { "$ref": "#/$defs/nodeId" },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "replenishes", "generates", "attests", "crosslinks", "fills",
+            "feeds", "consumes", "vendors", "produces", "cites",
+            "creates", "strengthens", "funds", "scales",
+            "anchors", "owns"
+          ]
+        },
+        "asset_ru": { "type": "string" },
+        "status": { "type": "string", "enum": ["live", "queued", "proposed", "unverified"] },
+        "temperature": { "$ref": "#/$defs/temperature" },
+        "as_of": { "$ref": "#/$defs/date" },
+        "evidence": { "$ref": "#/$defs/evidence" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "temperature": { "const": "assessed" } } },
+          "then": { "required": ["as_of"] }
+        },
+        {
+          "if": { "required": ["status"] },
+          "then": { "properties": { "temperature": { "const": "assessed" } } }
+        }
+      ]
+    },
+    "view": {
+      "type": "object",
+      "required": ["id", "title_ru", "question_ru", "node_kinds", "edge_kinds", "seed", "route"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "enum": ["attention", "reuse", "value-chain", "dependencies", "provenance"] },
+        "title_ru": { "type": "string", "minLength": 1 },
+        "question_ru": { "type": "string", "minLength": 1 },
+        "node_kinds": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string", "enum": ["thesis", "source-class", "repo", "asset", "external-stack", "stage", "surface"] }
+        },
+        "edge_kinds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "replenishes", "generates", "attests", "crosslinks", "fills",
+              "feeds", "consumes", "vendors", "produces", "cites",
+              "creates", "strengthens", "funds", "scales",
+              "anchors", "owns"
+            ]
+          }
+        },
+        "seed": {
+          "type": "object",
+          "required": ["source_label_ru", "series_slot", "visibility"],
+          "additionalProperties": false,
+          "properties": {
+            "source_label_ru": { "type": "string" },
+            "megabook_section": { "type": "string" },
+            "series_slot": { "type": "string" },
+            "visibility": { "type": "string", "enum": ["public", "internal"] }
+          }
+        },
+        "route": {
+          "type": "object",
+          "required": ["slug", "owner_slot"],
+          "additionalProperties": false,
+          "properties": {
+            "slug": { "type": "string", "pattern": "^/sangram/atlas(/[a-z-]+)?$" },
+            "owner_slot": { "type": "string", "pattern": "^B[2-6]$" }
+          }
+        }
+      }
+    }
+  }
+}

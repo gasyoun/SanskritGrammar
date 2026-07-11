@@ -1,0 +1,5193 @@
+{
+  "$schema": "./atlas.schema.json",
+  "contract_version": "1.0.0",
+  "provenance": {
+    "generated": "2026-07-11",
+    "generator": "scripts/atlas_build_bundle.py",
+    "generated_by": "Fable 5 (claude-fable-5)",
+    "series_slot": "B1 (H623)",
+    "sources": [
+      {
+        "name": "MEGABOOK.md (Uprava, приватный hub)",
+        "commit": "085866a",
+        "sections": [
+          "§1.2",
+          "§1.4",
+          "§6",
+          "§8",
+          "§9",
+          "§11.2",
+          "§12.2",
+          "§12.3"
+        ],
+        "visibility": "internal"
+      },
+      {
+        "name": "interlinks_edges.tsv (Uprava, приватный hub)",
+        "commit": "5e09962",
+        "visibility": "internal"
+      }
+    ],
+    "sanitisation": {
+      "denylist_version": "2026-07-11",
+      "dropped_nodes": 9,
+      "dropped_edges": 19
+    }
+  },
+  "nodes": [
+    {
+      "id": "asset:cdsl-source-texts",
+      "kind": "asset",
+      "label_ru": "Тексты словарей CDSL (source spine, v02/<dict>/<dict>.txt)",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:csl-orig",
+      "url": "https://github.com/sanskrit-lexicon/csl-orig",
+      "rights": "open",
+      "prohibition_ru": "Не редактировать напрямую; не строить второй коррекционный конвейер.",
+      "rule_refs": [
+        "7.6",
+        "7.7",
+        "7.8"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:ci-fanout",
+      "kind": "asset",
+      "label_ru": "CI и репо-гигиена fan-out (config-driven batch deploy)",
+      "asset_types": [
+        "workflow"
+      ],
+      "owner": "repo:cologne",
+      "url": "https://github.com/sanskrit-lexicon/COLOGNE",
+      "rights": "open",
+      "prohibition_ru": "Не писать CI руками per repo; PHP-репо анализирует Semgrep (в CodeQL нет PHP).",
+      "rule_refs": [],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:concordance-core",
+      "kind": "asset",
+      "label_ru": "Конкорданс словарь↔корпус (ядро matcher + stable locus ID)",
+      "asset_types": [
+        "schema",
+        "code"
+      ],
+      "owner": "repo:kosha",
+      "url": "https://github.com/gasyoun/kosha/blob/main/scripts/concordance_core.py",
+      "rights": "quarantine",
+      "prohibition_ru": "Не писать второй matcher; stable locus ID не зависит от web-хоста; relaxed/fuzzy match — кандидат до проверки.",
+      "rule_refs": [
+        "7.19",
+        "7.20"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:correction-pipeline",
+      "kind": "asset",
+      "label_ru": "Коррекционный конвейер словарей (updateByLine, make_xml, generate_dict.sh)",
+      "asset_types": [
+        "code",
+        "workflow"
+      ],
+      "owner": "repo:csl-pywork",
+      "url": "https://github.com/sanskrit-lexicon/csl-pywork",
+      "rights": "rights-gated",
+      "prohibition_ru": "Не форкать-и-править; исправление = change-файл + месячный пакетный PR; прямые пуши агентов в csl-orig запрещены.",
+      "rule_refs": [
+        "7.7",
+        "7.8"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:data-hub",
+      "kind": "asset",
+      "label_ru": "Data-hub: манифест datasets.json + data-v* релизы",
+      "asset_types": [
+        "data",
+        "schema"
+      ],
+      "owner": "repo:kosha",
+      "url": "https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json",
+      "rights": "rights-gated",
+      "prohibition_ru": "Не встраивать копию dataset без строки манифеста; публичный tier отделен от закрытого; перед релизом — publish-safety.",
+      "rule_refs": [
+        "7.21",
+        "7.26"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:dcs-cdsl-crosswalk",
+      "kind": "asset",
+      "label_ru": "DCS↔CDSL crosswalk",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:csl-apidev",
+      "url": "https://github.com/sanskrit-lexicon/csl-apidev/blob/main/simple-search/dcs_xref/dcs_cdsl_xref.tsv",
+      "rights": "open",
+      "prohibition_ru": "Не пере-выводить joins DCS↔CDSL.",
+      "rule_refs": [
+        "7.18"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:dcs-corpus",
+      "kind": "asset",
+      "label_ru": "DCS-корпус: SQLite + lemma frequency (канонический ingest)",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:visualdcs",
+      "url": "https://github.com/gasyoun/VisualDCS",
+      "rights": "quarantine",
+      "prohibition_ru": "Не ре-парсить CoNLL-U (пять ingest-путей сведены к одному); частотности потреблять, не пересчитывать; UD Tense=Past смешивает аорист/перфект — слой-кандидат.",
+      "rule_refs": [
+        "7.13",
+        "7.14"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:docx-mdx-pipeline",
+      "kind": "asset",
+      "label_ru": "Word/PDF → MDX книжный конвейер (docx-to-md + rstTable)",
+      "asset_types": [
+        "workflow",
+        "code"
+      ],
+      "owner": "repo:buhler-sanskrit-book",
+      "url": "https://github.com/alexander-myltsev/buhler-sanskrit-book",
+      "rights": "open",
+      "prohibition_ru": "Не писать еще один Pandoc→MDX конвертер или grid-table рендерер; копии rstTable синхронизируются байт-в-байт.",
+      "rule_refs": [],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:entry-render",
+      "kind": "asset",
+      "label_ru": "Python-рендер статей Cologne",
+      "asset_types": [
+        "code"
+      ],
+      "owner": "repo:kosha",
+      "url": "https://github.com/gasyoun/kosha/blob/main/app/render.py",
+      "rights": "open",
+      "prohibition_ru": "Не ре-портировать PHP display-движок.",
+      "rule_refs": [
+        "7.12"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:mw-heritage-crosswalk",
+      "kind": "asset",
+      "label_ru": "MW↔Heritage crosswalk",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:sanskritlexicography",
+      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/mw_heritage_crosswalk.tsv",
+      "rights": "rights-gated",
+      "prohibition_ru": "Не ре-хитить сайты INRIA; источник — GitHub-mirror darkone23 (LGPLLR).",
+      "rule_refs": [
+        "7.17"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:mw-roots",
+      "kind": "asset",
+      "label_ru": "Инвентарь MW-корней (mw_roots.tsv, count-locked)",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:csl-orig",
+      "url": "https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv",
+      "rights": "open",
+      "prohibition_ru": "Никогда не ре-сканировать mw.txt под инвентарь корней; не путать с mw_etymology.tsv (деривация, не инвентарь).",
+      "rule_refs": [
+        "7.16"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:php-endpoints",
+      "kind": "asset",
+      "label_ru": "PHP dict-web endpoints (getword/servepdf/serveimg)",
+      "asset_types": [
+        "code"
+      ],
+      "owner": "repo:csl-websanlexicon",
+      "url": "https://github.com/sanskrit-lexicon/csl-websanlexicon",
+      "rights": "open",
+      "prohibition_ru": "Чинить шаблон и регенерировать, не править пословарные копии; XSS/SQLi-hardening принадлежит шаблону.",
+      "rule_refs": [
+        "7.11"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:sa-ru-alignment",
+      "kind": "asset",
+      "label_ru": "Sa→Ru выравнивание + TM/TMX (builders публичны, данные — нет)",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:sanskritlexicography",
+      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/src/build_corpus_lexicon.py",
+      "rights": "rights-gated",
+      "prohibition_ru": "Не пере-выравнивать и не пере-переводить; не писать второй TMX-эмиттер или грейдер; JSONL/TMX не публикуются.",
+      "rule_refs": [],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:site-generator",
+      "kind": "asset",
+      "label_ru": "Генератор note/FAQ/wiki-сайтов",
+      "asset_types": [
+        "code"
+      ],
+      "owner": "repo:zettelkastenwiki",
+      "url": "https://github.com/gasyoun/ZettelkastenWiki",
+      "rights": "open",
+      "prohibition_ru": "Не писать генератор №5; csl-guides остается Docusaurus (lane split).",
+      "rule_refs": [],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:translation-kit",
+      "kind": "asset",
+      "label_ru": "RU-переводческий кит (PWG→RU/EN, MW→RU) — один параметризуемый кит",
+      "asset_types": [
+        "code",
+        "workflow"
+      ],
+      "owner": "repo:sanskritlexicography",
+      "url": "https://github.com/gasyoun/SanskritLexicography/tree/master/RussianTranslation",
+      "rights": "rights-gated",
+      "prohibition_ru": "Не клонировать третий кит; дорогие окна только после preflight; TM/TMX-экспорт не публикуется.",
+      "rule_refs": [
+        "7.22",
+        "7.23"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:transliteration",
+      "kind": "asset",
+      "label_ru": "Транскодирование IAST⇄SLP1⇄Devanāgarī + ключи нормализации",
+      "asset_types": [
+        "code"
+      ],
+      "owner": "repo:sanskrit-util",
+      "url": "https://github.com/sanskrit-lexicon/sanskrit-util",
+      "rights": "quarantine",
+      "prohibition_ru": "Не перепечатывать SLP1-таблицу и не пере-выводить ловушки нормализации; iast_to_devanagari — только композиция to_slp1 → slp1_to_devanagari.",
+      "rule_refs": [
+        "7.10"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:typed-link-grammar",
+      "kind": "asset",
+      "label_ru": "Type-D link-ID grammar (устойчивые типизированные ссылки)",
+      "asset_types": [
+        "schema"
+      ],
+      "owner": "repo:sanskritgrammar",
+      "url": "https://github.com/gasyoun/SanskritGrammar/blob/main/TYPED_LINK_ID_GRAMMAR.md",
+      "rights": "open",
+      "prohibition_ru": "Не минтить per-pilot ID; схема расширяет concordance_core, а не форкает его.",
+      "rule_refs": [
+        "7.20"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "asset:union-headwords",
+      "kind": "asset",
+      "label_ru": "Union headwords (per-dict provenance)",
+      "asset_types": [
+        "data"
+      ],
+      "owner": "repo:sanskritlexicography",
+      "url": "https://github.com/gasyoun/SanskritLexicography/blob/master/HeadwordLists/union/union_headwords.tsv",
+      "rights": "open",
+      "prohibition_ru": "Не пересобирать headword master.",
+      "rule_refs": [
+        "7.15"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:commentaries",
+      "kind": "source-class",
+      "label_ru": "Комментарии (питающий слой)",
+      "tier": "feeding",
+      "thesis_refs": [
+        "2.8"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:corpora",
+      "kind": "source-class",
+      "label_ru": "Корпуса: ядро DCS + дополнительные свидетели",
+      "tier": "top",
+      "thesis_refs": [
+        "2.4"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:dictionaries",
+      "kind": "source-class",
+      "label_ru": "Словари: CDSL (csl-orig + словарные репозитории)",
+      "tier": "top",
+      "thesis_refs": [
+        "2.1"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:grammars",
+      "kind": "source-class",
+      "label_ru": "Грамматики",
+      "tier": "top",
+      "thesis_refs": [
+        "2.7"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:grammars-machine",
+      "kind": "source-class",
+      "label_ru": "Машиночитаемые правила и парадигмы",
+      "tier": "top",
+      "thesis_refs": [
+        "2.7"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "parent": "class:grammars"
+    },
+    {
+      "id": "class:grammars-modern",
+      "kind": "source-class",
+      "label_ru": "Современные учебные грамматики — главный акцент (Sangram)",
+      "tier": "top",
+      "thesis_refs": [
+        "2.7"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "parent": "class:grammars"
+    },
+    {
+      "id": "class:grammars-traditional",
+      "kind": "source-class",
+      "label_ru": "Традиционные трактаты (Pāṇini, dhātupāṭha, комментаторская традиция)",
+      "tier": "top",
+      "thesis_refs": [
+        "2.7"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "parent": "class:grammars"
+    },
+    {
+      "id": "class:scans",
+      "kind": "source-class",
+      "label_ru": "Сканы, издания и архивы (питающий слой)",
+      "tier": "feeding",
+      "thesis_refs": [
+        "3.3",
+        "3.4"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "class:translations",
+      "kind": "source-class",
+      "label_ru": "Переводы (питающий слой)",
+      "tier": "feeding",
+      "thesis_refs": [
+        "2.5",
+        "3.4"
+      ],
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "Онтология источников MEGABOOK §1.4, решение автора 11-07-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "ext:dharmamitra",
+      "kind": "external-stack",
+      "label_ru": "DharmaMitra",
+      "url": "https://dharmamitra.org/",
+      "consume_rule_ru": "GPU-морфология как поставщик; их MT-таксономия ошибок уже вшита в judges.",
+      "prohibition_ru": "Не изобретать собственную MT-таксономию.",
+      "temperature": "structural"
+    },
+    {
+      "id": "ext:gretil",
+      "kind": "external-stack",
+      "label_ru": "GRETIL (corpustei)",
+      "url": "https://gretil.sub.uni-goettingen.de/",
+      "consume_rule_ru": "Локальный ingest для meter-QA и typo-проверок.",
+      "prohibition_ru": "Не включать в публичные релизы и bundles (NC).",
+      "temperature": "structural",
+      "license": "CC BY-NC-SA"
+    },
+    {
+      "id": "ext:heritage",
+      "kind": "external-stack",
+      "label_ru": "Heritage (INRIA)",
+      "url": "https://github.com/darkone23/Heritage_Resources",
+      "consume_rule_ru": "Потреблять через GitHub-mirror darkone23.",
+      "prohibition_ru": "Не скрейпить sanskrit.inria.fr / gitlab.inria.fr (бот-стена).",
+      "temperature": "structural",
+      "license": "LGPLLR"
+    },
+    {
+      "id": "ext:nagari",
+      "kind": "external-stack",
+      "label_ru": "Nagari (JS-транскодер)",
+      "url": "https://github.com/virtualvinodh/aksharamukha",
+      "consume_rule_ru": "Вендоренная копия там, где уже вшита.",
+      "prohibition_ru": "Не добавлять новые вендоренные копии без строки в реестре.",
+      "temperature": "structural"
+    },
+    {
+      "id": "ext:samsaadhanii",
+      "kind": "external-stack",
+      "label_ru": "Samsaadhanii / SCL",
+      "url": "https://sanskrit.uohyd.ac.in/scl/",
+      "consume_rule_ru": "Живые JSON-API; кросс-валидация собственных данных.",
+      "prohibition_ru": "Не клонировать исходники (GPL).",
+      "temperature": "structural",
+      "license": "GPL"
+    },
+    {
+      "id": "ext:samskrtam-ru",
+      "kind": "external-stack",
+      "label_ru": "samskrtam.ru",
+      "url": "https://samskrtam.ru/",
+      "consume_rule_ru": "Статические deep links (например, корневой указатель /z/).",
+      "prohibition_ru": "Не дублировать контент сайта в репозиториях.",
+      "temperature": "structural"
+    },
+    {
+      "id": "ext:vedaweb",
+      "kind": "external-stack",
+      "label_ru": "VedaWeb",
+      "url": "https://vedaweb.uni-koeln.de/rigveda/",
+      "consume_rule_ru": "Один bulk-export на всех потребителей.",
+      "prohibition_ru": "Не хитить API из каждого потребителя отдельно.",
+      "temperature": "structural",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "ext:vidyut",
+      "kind": "external-stack",
+      "label_ru": "vidyut (Ambuda)",
+      "url": "https://github.com/ambuda-org/vidyut",
+      "consume_rule_ru": "Вендорить как движок флексии/лемматизации.",
+      "prohibition_ru": "Не писать собственную флексию.",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:acc",
+      "kind": "repo",
+      "label_ru": "ACC",
+      "org": "sanskrit-lexicon",
+      "name": "ACC",
+      "url": "https://github.com/sanskrit-lexicon/ACC",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:afanasiynikitin",
+      "kind": "repo",
+      "label_ru": "AfanasiyNikitin",
+      "org": "gasyoun",
+      "name": "AfanasiyNikitin",
+      "url": "https://github.com/gasyoun/AfanasiyNikitin",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:amar",
+      "kind": "repo",
+      "label_ru": "AMAR",
+      "org": "sanskrit-lexicon",
+      "name": "AMAR",
+      "url": "https://github.com/sanskrit-lexicon/AMAR",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:ap",
+      "kind": "repo",
+      "label_ru": "AP",
+      "org": "sanskrit-lexicon",
+      "name": "AP",
+      "url": "https://github.com/sanskrit-lexicon/AP",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:ap90",
+      "kind": "repo",
+      "label_ru": "AP90",
+      "org": "sanskrit-lexicon",
+      "name": "AP90",
+      "url": "https://github.com/sanskrit-lexicon/AP90",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:aptees",
+      "kind": "repo",
+      "label_ru": "ApteES",
+      "org": "sanskrit-lexicon",
+      "name": "ApteES",
+      "url": "https://github.com/sanskrit-lexicon/ApteES",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:bhs",
+      "kind": "repo",
+      "label_ru": "BHS",
+      "org": "sanskrit-lexicon",
+      "name": "BHS",
+      "url": "https://github.com/sanskrit-lexicon/BHS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:bookindex",
+      "kind": "repo",
+      "label_ru": "BookIndex",
+      "org": "gasyoun",
+      "name": "BookIndex",
+      "url": "https://github.com/gasyoun/BookIndex",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:bop",
+      "kind": "repo",
+      "label_ru": "BOP",
+      "org": "sanskrit-lexicon",
+      "name": "BOP",
+      "url": "https://github.com/sanskrit-lexicon/BOP",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:bor",
+      "kind": "repo",
+      "label_ru": "BOR",
+      "org": "sanskrit-lexicon",
+      "name": "BOR",
+      "url": "https://github.com/sanskrit-lexicon/BOR",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:buhler-sanskrit-book",
+      "kind": "repo",
+      "label_ru": "buhler-sanskrit-book",
+      "org": "alexander-myltsev",
+      "name": "buhler-sanskrit-book",
+      "url": "https://github.com/alexander-myltsev/buhler-sanskrit-book",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:bur",
+      "kind": "repo",
+      "label_ru": "BUR",
+      "org": "sanskrit-lexicon",
+      "name": "BUR",
+      "url": "https://github.com/sanskrit-lexicon/BUR",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:cae",
+      "kind": "repo",
+      "label_ru": "CAE",
+      "org": "sanskrit-lexicon",
+      "name": "CAE",
+      "url": "https://github.com/sanskrit-lexicon/CAE",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:ccs",
+      "kind": "repo",
+      "label_ru": "CCS",
+      "org": "sanskrit-lexicon",
+      "name": "CCS",
+      "url": "https://github.com/sanskrit-lexicon/CCS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:cologne",
+      "kind": "repo",
+      "label_ru": "COLOGNE",
+      "org": "sanskrit-lexicon",
+      "name": "COLOGNE",
+      "url": "https://github.com/sanskrit-lexicon/COLOGNE",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:cologne-skills",
+      "kind": "repo",
+      "label_ru": "cologne-skills",
+      "org": "sanskrit-lexicon",
+      "name": "cologne-skills",
+      "url": "https://github.com/sanskrit-lexicon/cologne-skills",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:commentarystrategies",
+      "kind": "repo",
+      "label_ru": "CommentaryStrategies",
+      "org": "gasyoun",
+      "name": "CommentaryStrategies",
+      "url": "https://github.com/gasyoun/CommentaryStrategies",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:corrections",
+      "kind": "repo",
+      "label_ru": "CORRECTIONS",
+      "org": "sanskrit-lexicon",
+      "name": "CORRECTIONS",
+      "url": "https://github.com/sanskrit-lexicon/CORRECTIONS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-apidev",
+      "kind": "repo",
+      "label_ru": "csl-apidev",
+      "org": "sanskrit-lexicon",
+      "name": "csl-apidev",
+      "url": "https://github.com/sanskrit-lexicon/csl-apidev",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-app",
+      "kind": "repo",
+      "label_ru": "csl-app",
+      "org": "sanskrit-lexicon",
+      "name": "csl-app",
+      "url": "https://github.com/sanskrit-lexicon/csl-app",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-atlas",
+      "kind": "repo",
+      "label_ru": "csl-atlas",
+      "org": "sanskrit-lexicon",
+      "name": "csl-atlas",
+      "url": "https://github.com/sanskrit-lexicon/csl-atlas",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-corrections",
+      "kind": "repo",
+      "label_ru": "csl-corrections",
+      "org": "sanskrit-lexicon",
+      "name": "csl-corrections",
+      "url": "https://github.com/sanskrit-lexicon/csl-corrections",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-devanagari",
+      "kind": "repo",
+      "label_ru": "csl-devanagari",
+      "org": "sanskrit-lexicon",
+      "name": "csl-devanagari",
+      "url": "https://github.com/sanskrit-lexicon/csl-devanagari",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-doc",
+      "kind": "repo",
+      "label_ru": "csl-doc",
+      "org": "sanskrit-lexicon",
+      "name": "csl-doc",
+      "url": "https://github.com/sanskrit-lexicon/csl-doc",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-guides",
+      "kind": "repo",
+      "label_ru": "csl-guides",
+      "org": "sanskrit-lexicon",
+      "name": "csl-guides",
+      "url": "https://github.com/sanskrit-lexicon/csl-guides",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-inflect",
+      "kind": "repo",
+      "label_ru": "csl-inflect",
+      "org": "sanskrit-lexicon",
+      "name": "csl-inflect",
+      "url": "https://github.com/sanskrit-lexicon/csl-inflect",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-newsletter",
+      "kind": "repo",
+      "label_ru": "csl-newsletter",
+      "org": "sanskrit-lexicon",
+      "name": "csl-newsletter",
+      "url": "https://github.com/sanskrit-lexicon/csl-newsletter",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-observatory",
+      "kind": "repo",
+      "label_ru": "csl-observatory",
+      "org": "sanskrit-lexicon",
+      "name": "csl-observatory",
+      "url": "https://github.com/sanskrit-lexicon/csl-observatory",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-orig",
+      "kind": "repo",
+      "label_ru": "csl-orig",
+      "org": "sanskrit-lexicon",
+      "name": "csl-orig",
+      "url": "https://github.com/sanskrit-lexicon/csl-orig",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-pywork",
+      "kind": "repo",
+      "label_ru": "csl-pywork",
+      "org": "sanskrit-lexicon",
+      "name": "csl-pywork",
+      "url": "https://github.com/sanskrit-lexicon/csl-pywork",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-santam",
+      "kind": "repo",
+      "label_ru": "csl-santam",
+      "org": "sanskrit-lexicon",
+      "name": "csl-santam",
+      "url": "https://github.com/sanskrit-lexicon/csl-santam",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-standards",
+      "kind": "repo",
+      "label_ru": "csl-standards",
+      "org": "sanskrit-lexicon",
+      "name": "csl-standards",
+      "url": "https://github.com/sanskrit-lexicon/csl-standards",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:csl-websanlexicon",
+      "kind": "repo",
+      "label_ru": "csl-websanlexicon",
+      "org": "sanskrit-lexicon",
+      "name": "csl-websanlexicon",
+      "url": "https://github.com/sanskrit-lexicon/csl-websanlexicon",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:dcs",
+      "kind": "repo",
+      "label_ru": "DCS",
+      "org": "sanskrit-lexicon",
+      "name": "DCS",
+      "url": "https://github.com/sanskrit-lexicon/DCS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:fri",
+      "kind": "repo",
+      "label_ru": "FRI",
+      "org": "sanskrit-lexicon",
+      "name": "FRI",
+      "url": "https://github.com/sanskrit-lexicon/FRI",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:gra",
+      "kind": "repo",
+      "label_ru": "GRA",
+      "org": "sanskrit-lexicon",
+      "name": "GRA",
+      "url": "https://github.com/sanskrit-lexicon/GRA",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:indologyscholars",
+      "kind": "repo",
+      "label_ru": "IndologyScholars",
+      "org": "gasyoun",
+      "name": "IndologyScholars",
+      "url": "https://github.com/gasyoun/IndologyScholars",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:inm",
+      "kind": "repo",
+      "label_ru": "INM",
+      "org": "sanskrit-lexicon",
+      "name": "INM",
+      "url": "https://github.com/sanskrit-lexicon/INM",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:kna",
+      "kind": "repo",
+      "label_ru": "KNA",
+      "org": "sanskrit-lexicon",
+      "name": "KNA",
+      "url": "https://github.com/sanskrit-lexicon/KNA",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:kosha",
+      "kind": "repo",
+      "label_ru": "kosha",
+      "org": "gasyoun",
+      "name": "kosha",
+      "url": "https://github.com/gasyoun/kosha",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:kow",
+      "kind": "repo",
+      "label_ru": "KOW",
+      "org": "sanskrit-lexicon",
+      "name": "KOW",
+      "url": "https://github.com/sanskrit-lexicon/KOW",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:krm",
+      "kind": "repo",
+      "label_ru": "KRM",
+      "org": "sanskrit-lexicon",
+      "name": "KRM",
+      "url": "https://github.com/sanskrit-lexicon/KRM",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:lrv",
+      "kind": "repo",
+      "label_ru": "LRV",
+      "org": "sanskrit-lexicon",
+      "name": "LRV",
+      "url": "https://github.com/sanskrit-lexicon/LRV",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:mci",
+      "kind": "repo",
+      "label_ru": "MCI",
+      "org": "sanskrit-lexicon",
+      "name": "MCI",
+      "url": "https://github.com/sanskrit-lexicon/MCI",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:md",
+      "kind": "repo",
+      "label_ru": "MD",
+      "org": "sanskrit-lexicon",
+      "name": "MD",
+      "url": "https://github.com/sanskrit-lexicon/MD",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:mw72",
+      "kind": "repo",
+      "label_ru": "MW72",
+      "org": "sanskrit-lexicon",
+      "name": "MW72",
+      "url": "https://github.com/sanskrit-lexicon/MW72",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:mwinflect",
+      "kind": "repo",
+      "label_ru": "MWinflect",
+      "org": "sanskrit-lexicon",
+      "name": "MWinflect",
+      "url": "https://github.com/sanskrit-lexicon/MWinflect",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:mws",
+      "kind": "repo",
+      "label_ru": "MWS",
+      "org": "sanskrit-lexicon",
+      "name": "MWS",
+      "url": "https://github.com/sanskrit-lexicon/MWS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:ors-faq",
+      "kind": "repo",
+      "label_ru": "ORS-FAQ",
+      "org": "gasyoun",
+      "name": "ORS-FAQ",
+      "url": "https://github.com/gasyoun/ORS-FAQ",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:pui",
+      "kind": "repo",
+      "label_ru": "PUI",
+      "org": "sanskrit-lexicon",
+      "name": "PUI",
+      "url": "https://github.com/sanskrit-lexicon/PUI",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:pwg",
+      "kind": "repo",
+      "label_ru": "PWG",
+      "org": "sanskrit-lexicon",
+      "name": "PWG",
+      "url": "https://github.com/sanskrit-lexicon/PWG",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:pwk",
+      "kind": "repo",
+      "label_ru": "PWK",
+      "org": "sanskrit-lexicon",
+      "name": "PWK",
+      "url": "https://github.com/sanskrit-lexicon/PWK",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:retrieval-based-voice-conversion-webui",
+      "kind": "repo",
+      "label_ru": "Retrieval-based-Voice-Conversion-WebUI",
+      "org": "gasyoun",
+      "name": "Retrieval-based-Voice-Conversion-WebUI",
+      "url": "https://github.com/gasyoun/Retrieval-based-Voice-Conversion-WebUI",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:russianramayana",
+      "kind": "repo",
+      "label_ru": "RussianRamayana",
+      "org": "gasyoun",
+      "name": "RussianRamayana",
+      "url": "https://github.com/gasyoun/RussianRamayana",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:ruwritingstyles",
+      "kind": "repo",
+      "label_ru": "RuWritingStyles",
+      "org": "gasyoun",
+      "name": "RuWritingStyles",
+      "url": "https://github.com/gasyoun/RuWritingStyles",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:samudramanthanam",
+      "kind": "repo",
+      "label_ru": "SamudraManthanam",
+      "org": "gasyoun",
+      "name": "SamudraManthanam",
+      "url": "https://github.com/gasyoun/SamudraManthanam",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskrit-lexicon.github.io",
+      "kind": "repo",
+      "label_ru": "sanskrit-lexicon.github.io",
+      "org": "sanskrit-lexicon",
+      "name": "sanskrit-lexicon.github.io",
+      "url": "https://github.com/sanskrit-lexicon/sanskrit-lexicon.github.io",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskrit-util",
+      "kind": "repo",
+      "label_ru": "sanskrit-util",
+      "org": "sanskrit-lexicon",
+      "name": "sanskrit-util",
+      "url": "https://github.com/sanskrit-lexicon/sanskrit-util",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskritgrammar",
+      "kind": "repo",
+      "label_ru": "SanskritGrammar",
+      "org": "gasyoun",
+      "name": "SanskritGrammar",
+      "url": "https://github.com/gasyoun/SanskritGrammar",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskritkaraoke",
+      "kind": "repo",
+      "label_ru": "SanskritKaraoke",
+      "org": "gasyoun",
+      "name": "SanskritKaraoke",
+      "url": "https://github.com/gasyoun/SanskritKaraoke",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskritlexicography",
+      "kind": "repo",
+      "label_ru": "SanskritLexicography",
+      "org": "gasyoun",
+      "name": "SanskritLexicography",
+      "url": "https://github.com/gasyoun/SanskritLexicography",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskritrussian",
+      "kind": "repo",
+      "label_ru": "SanskritRussian",
+      "org": "gasyoun",
+      "name": "SanskritRussian",
+      "url": "https://github.com/gasyoun/SanskritRussian",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sanskritspellcheck",
+      "kind": "repo",
+      "label_ru": "SanskritSpellCheck",
+      "org": "drdhaval2785",
+      "name": "SanskritSpellCheck",
+      "url": "https://github.com/drdhaval2785/SanskritSpellCheck",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:sch",
+      "kind": "repo",
+      "label_ru": "SCH",
+      "org": "sanskrit-lexicon",
+      "name": "SCH",
+      "url": "https://github.com/sanskrit-lexicon/SCH",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:shs",
+      "kind": "repo",
+      "label_ru": "SHS",
+      "org": "sanskrit-lexicon",
+      "name": "SHS",
+      "url": "https://github.com/sanskrit-lexicon/SHS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:skd",
+      "kind": "repo",
+      "label_ru": "SKD",
+      "org": "sanskrit-lexicon",
+      "name": "SKD",
+      "url": "https://github.com/sanskrit-lexicon/SKD",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:socks5-vps",
+      "kind": "repo",
+      "label_ru": "SOCKS5-VPS",
+      "org": "gasyoun",
+      "name": "SOCKS5-VPS",
+      "url": "https://github.com/gasyoun/SOCKS5-VPS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:stc",
+      "kind": "repo",
+      "label_ru": "STC",
+      "org": "sanskrit-lexicon",
+      "name": "STC",
+      "url": "https://github.com/sanskrit-lexicon/STC",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:systema-sanscriticum",
+      "kind": "repo",
+      "label_ru": "Systema-Sanscriticum",
+      "org": "gasyoun",
+      "name": "Systema-Sanscriticum",
+      "url": "https://github.com/gasyoun/Systema-Sanscriticum",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:vcp",
+      "kind": "repo",
+      "label_ru": "VCP",
+      "org": "sanskrit-lexicon",
+      "name": "VCP",
+      "url": "https://github.com/sanskrit-lexicon/VCP",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:vei",
+      "kind": "repo",
+      "label_ru": "VEI",
+      "org": "sanskrit-lexicon",
+      "name": "VEI",
+      "url": "https://github.com/sanskrit-lexicon/VEI",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:visualdcs",
+      "kind": "repo",
+      "label_ru": "VisualDCS",
+      "org": "gasyoun",
+      "name": "VisualDCS",
+      "url": "https://github.com/gasyoun/VisualDCS",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:whitneyroots",
+      "kind": "repo",
+      "label_ru": "WhitneyRoots",
+      "org": "gasyoun",
+      "name": "WhitneyRoots",
+      "url": "https://github.com/gasyoun/WhitneyRoots",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:wil",
+      "kind": "repo",
+      "label_ru": "Wil",
+      "org": "sanskrit-lexicon",
+      "name": "Wil",
+      "url": "https://github.com/sanskrit-lexicon/Wil",
+      "temperature": "structural"
+    },
+    {
+      "id": "repo:zettelkastenwiki",
+      "kind": "repo",
+      "label_ru": "ZettelkastenWiki",
+      "org": "gasyoun",
+      "name": "ZettelkastenWiki",
+      "url": "https://github.com/gasyoun/ZettelkastenWiki",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:agents",
+      "kind": "stage",
+      "label_ru": "Агенты, навыки и организационная память",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:assembly",
+      "kind": "stage",
+      "label_ru": "kosha / API / учебные карточки",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:authority",
+      "kind": "stage",
+      "label_ru": "Научный авторитет и партнерства",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:citable-releases",
+      "kind": "stage",
+      "label_ru": "Цитируемые releases и DH-интерфейсы",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:crosswalks",
+      "kind": "stage",
+      "label_ru": "Crosswalks и typed links",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:derived-corpus",
+      "kind": "stage",
+      "label_ru": "Производные корпусные данные: SQLite, frequency, concordance",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:derived-dict",
+      "kind": "stage",
+      "label_ru": "Производные словарные данные: XML, headwords, roots",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:derived-grammar",
+      "kind": "stage",
+      "label_ru": "Производные грамматические данные: правила, парадигмы, root crosswalks",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:edu-products",
+      "kind": "stage",
+      "label_ru": "Образовательные продукты",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:learning-surfaces",
+      "kind": "stage",
+      "label_ru": "LMS, FAQ, free funnel",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:research",
+      "kind": "stage",
+      "label_ru": "Исследования и статьи",
+      "chain": "provenance",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:research-pubs",
+      "kind": "stage",
+      "label_ru": "Исследования и публикации",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:revenue",
+      "kind": "stage",
+      "label_ru": "Выручка и аудитория",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:sources",
+      "kind": "stage",
+      "label_ru": "Источники: словари, корпуса, грамматики",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "stage:verified-data",
+      "kind": "stage",
+      "label_ru": "Проверенные данные и методы",
+      "chain": "value",
+      "temperature": "structural"
+    },
+    {
+      "id": "surface:edu-funnel",
+      "kind": "surface",
+      "label_ru": "Учебные и funnel-поверхности",
+      "temperature": "structural"
+    },
+    {
+      "id": "surface:org-wide",
+      "kind": "surface",
+      "label_ru": "Все репозитории организации",
+      "temperature": "structural"
+    },
+    {
+      "id": "thesis:2.1",
+      "kind": "thesis",
+      "label_ru": "Проверяемый словарь",
+      "section": "2.1",
+      "importance": "key",
+      "state": "stable",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 5,
+        "k": 3.33
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "external"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "merge и server-side regen у maintainers Cologne; месячный batch-PR ритм"
+    },
+    {
+      "id": "thesis:2.2",
+      "kind": "thesis",
+      "label_ru": "Общий код",
+      "section": "2.2",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 2,
+        "p": 5,
+        "k": 5.0
+      },
+      "verdict": "amplify",
+      "gates": [],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "thesis:2.3",
+      "kind": "thesis",
+      "label_ru": "Производные данные",
+      "section": "2.3",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 5,
+        "k": 3.33
+      },
+      "verdict": "amplify",
+      "gates": [],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "thesis:2.4",
+      "kind": "thesis",
+      "label_ru": "Словарь↔корпус↔грамматика",
+      "section": "2.4",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 4,
+        "p": 5,
+        "k": 2.5
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "adjudication кандидатных связей через review-sheets"
+    },
+    {
+      "id": "thesis:2.5",
+      "kind": "thesis",
+      "label_ru": "Русский переводческий слой",
+      "section": "2.5",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 5,
+        "p": 4,
+        "k": 1.8
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "preflight/бюджетные ворота дорогих окон и spot-check визы"
+    },
+    {
+      "id": "thesis:2.6",
+      "kind": "thesis",
+      "label_ru": "Kosha",
+      "section": "2.6",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 4,
+        "p": 5,
+        "k": 2.5
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "deploy и загрузка закрытого tier (guhya)"
+    },
+    {
+      "id": "thesis:2.7",
+      "kind": "thesis",
+      "label_ru": "Машинно-проверяемая грамматика",
+      "section": "2.7",
+      "importance": "mid",
+      "state": "partial",
+      "scores": {
+        "e": 4,
+        "z": 4,
+        "p": 4,
+        "k": 2.0
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "очереди adjudication корневых crosswalks"
+    },
+    {
+      "id": "thesis:2.8",
+      "kind": "thesis",
+      "label_ru": "Комментаторский аппарат",
+      "section": "2.8",
+      "importance": "mid",
+      "state": "partial",
+      "scores": {
+        "e": 4,
+        "z": 5,
+        "p": 3,
+        "k": 1.4
+      },
+      "verdict": "pause",
+      "gates": [
+        {
+          "type": "human"
+        },
+        {
+          "type": "external"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "голоса по review-sheets ·  внешние соавторы (Леонов/Костина)"
+    },
+    {
+      "id": "thesis:2.9",
+      "kind": "thesis",
+      "label_ru": "Образование из research source",
+      "section": "2.9",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 5,
+        "k": 3.33
+      },
+      "verdict": "amplify",
+      "gates": [],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "thesis:3.1",
+      "kind": "thesis",
+      "label_ru": "Публикационный выход",
+      "section": "3.1",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 4,
+        "k": 3.0
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "авторский pass — главный chokepoint всей системы"
+    },
+    {
+      "id": "thesis:3.2",
+      "kind": "thesis",
+      "label_ru": "FAIR и publish safety",
+      "section": "3.2",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 5,
+        "k": 3.33
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "rights rulings и DOI-решения"
+    },
+    {
+      "id": "thesis:3.3",
+      "kind": "thesis",
+      "label_ru": "Проверяемая DH",
+      "section": "3.3",
+      "importance": "mid",
+      "state": "partial",
+      "scores": {
+        "e": 4,
+        "z": 4,
+        "p": 3,
+        "k": 1.75
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "external"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "правовые sign-off внешних правообладателей"
+    },
+    {
+      "id": "thesis:3.4",
+      "kind": "thesis",
+      "label_ru": "Русская индология",
+      "section": "3.4",
+      "importance": "mid",
+      "state": "partial",
+      "scores": {
+        "e": 4,
+        "z": 4,
+        "p": 3,
+        "k": 1.75
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        },
+        {
+          "type": "external"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "авторская виза ·  внешние проверки и второй аннотатор"
+    },
+    {
+      "id": "thesis:4.1",
+      "kind": "thesis",
+      "label_ru": "Образовательный бизнес",
+      "section": "4.1",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 4,
+        "p": 4,
+        "k": 2.25
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "делегирование prod-креденшалов (просьба к подрядчику)"
+    },
+    {
+      "id": "thesis:4.2",
+      "kind": "thesis",
+      "label_ru": "Evidence-based marketing",
+      "section": "4.2",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 4,
+        "k": 3.0
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "аккаунты рассылки + верификация отправителя; новые custdev-срезы"
+    },
+    {
+      "id": "thesis:4.3",
+      "kind": "thesis",
+      "label_ru": "Free funnel",
+      "section": "4.3",
+      "importance": "mid",
+      "state": "partial",
+      "scores": {
+        "e": 4,
+        "z": 3,
+        "p": 4,
+        "k": 2.67
+      },
+      "verdict": "sustain",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "аудио/голосовой контент — записать может только человек"
+    },
+    {
+      "id": "thesis:4.4",
+      "kind": "thesis",
+      "label_ru": "Операционная надежность",
+      "section": "4.4",
+      "importance": "key",
+      "state": "blocked",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 4,
+        "k": 3.0
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        },
+        {
+          "type": "external"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "те же deploy-креденшалы ·  hosting-подрядчик"
+    },
+    {
+      "id": "thesis:5.1",
+      "kind": "thesis",
+      "label_ru": "Организационная память",
+      "section": "5.1",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 2,
+        "p": 5,
+        "k": 5.0
+      },
+      "verdict": "amplify",
+      "gates": [],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "thesis:5.2",
+      "kind": "thesis",
+      "label_ru": "Автоматизация ритуалов",
+      "section": "5.2",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 2,
+        "p": 5,
+        "k": 5.0
+      },
+      "verdict": "amplify",
+      "gates": [],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "thesis:5.3",
+      "kind": "thesis",
+      "label_ru": "WIP и доставка",
+      "section": "5.3",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 3,
+        "p": 4,
+        "k": 3.0
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "голоса по review-sheets, закрывающие очереди"
+    },
+    {
+      "id": "thesis:5.4",
+      "kind": "thesis",
+      "label_ru": "Человеческое суждение",
+      "section": "5.4",
+      "importance": "key",
+      "state": "partial",
+      "scores": {
+        "e": 5,
+        "z": 2,
+        "p": 4,
+        "k": 4.5
+      },
+      "verdict": "amplify",
+      "gates": [
+        {
+          "type": "human"
+        }
+      ],
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
+        "visibility": "internal"
+      },
+      "gates_summary_ru": "по определению; способ снятия — пакетные окна adjudication"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:ont-00",
+      "source": "class:commentaries",
+      "target": "class:corpora",
+      "kind": "replenishes",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-01",
+      "source": "class:translations",
+      "target": "class:corpora",
+      "kind": "replenishes",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-02",
+      "source": "class:scans",
+      "target": "class:dictionaries",
+      "kind": "replenishes",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-03",
+      "source": "class:scans",
+      "target": "class:corpora",
+      "kind": "replenishes",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-04",
+      "source": "class:scans",
+      "target": "class:grammars",
+      "kind": "replenishes",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-05",
+      "source": "class:dictionaries",
+      "target": "stage:derived-dict",
+      "kind": "generates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-06",
+      "source": "class:corpora",
+      "target": "stage:derived-corpus",
+      "kind": "generates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-07",
+      "source": "class:grammars",
+      "target": "stage:derived-grammar",
+      "kind": "generates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-08",
+      "source": "class:corpora",
+      "target": "class:dictionaries",
+      "kind": "attests",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-09",
+      "source": "class:corpora",
+      "target": "class:grammars",
+      "kind": "attests",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-10",
+      "source": "stage:derived-dict",
+      "target": "stage:crosswalks",
+      "kind": "crosslinks",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-11",
+      "source": "stage:derived-corpus",
+      "target": "stage:crosswalks",
+      "kind": "crosslinks",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-12",
+      "source": "stage:derived-grammar",
+      "target": "stage:crosswalks",
+      "kind": "crosslinks",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-13",
+      "source": "stage:crosswalks",
+      "target": "stage:assembly",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-14",
+      "source": "stage:crosswalks",
+      "target": "stage:research",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-15",
+      "source": "stage:assembly",
+      "target": "stage:learning-surfaces",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:ont-16",
+      "source": "stage:research",
+      "target": "stage:citable-releases",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.4/§8 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-00",
+      "source": "stage:sources",
+      "target": "stage:verified-data",
+      "kind": "generates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-01",
+      "source": "stage:verified-data",
+      "target": "stage:research-pubs",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-02",
+      "source": "stage:verified-data",
+      "target": "stage:edu-products",
+      "kind": "fills",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-03",
+      "source": "stage:research-pubs",
+      "target": "stage:authority",
+      "kind": "creates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-04",
+      "source": "stage:edu-products",
+      "target": "stage:revenue",
+      "kind": "creates",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-05",
+      "source": "stage:authority",
+      "target": "stage:verified-data",
+      "kind": "strengthens",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-06",
+      "source": "stage:revenue",
+      "target": "stage:verified-data",
+      "kind": "funds",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-07",
+      "source": "stage:agents",
+      "target": "stage:verified-data",
+      "kind": "scales",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-08",
+      "source": "stage:agents",
+      "target": "stage:research-pubs",
+      "kind": "scales",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:val-09",
+      "source": "stage:agents",
+      "target": "stage:edu-products",
+      "kind": "scales",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §1.2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:owns-transliteration",
+      "source": "repo:sanskrit-util",
+      "target": "asset:transliteration",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-transliteration-csl-apidev",
+      "source": "asset:transliteration",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-transliteration-csl-guides",
+      "source": "asset:transliteration",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-transliteration-csl-atlas",
+      "source": "asset:transliteration",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-transliteration-whitneyroots",
+      "source": "asset:transliteration",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-transliteration-sanskritspellcheck",
+      "source": "asset:transliteration",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-correction-pipeline",
+      "source": "repo:csl-pywork",
+      "target": "asset:correction-pipeline",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-correction-pipeline-csl-corrections",
+      "source": "asset:correction-pipeline",
+      "target": "repo:csl-corrections",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-correction-pipeline-csl-orig",
+      "source": "asset:correction-pipeline",
+      "target": "repo:csl-orig",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-php-endpoints",
+      "source": "repo:csl-websanlexicon",
+      "target": "asset:php-endpoints",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-php-endpoints-csl-apidev",
+      "source": "asset:php-endpoints",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-entry-render",
+      "source": "repo:kosha",
+      "target": "asset:entry-render",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-entry-render-kosha",
+      "source": "asset:entry-render",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-site-generator",
+      "source": "repo:zettelkastenwiki",
+      "target": "asset:site-generator",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-site-generator-ors-faq",
+      "source": "asset:site-generator",
+      "target": "repo:ors-faq",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-site-generator-edu-funnel",
+      "source": "asset:site-generator",
+      "target": "surface:edu-funnel",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-translation-kit",
+      "source": "repo:sanskritlexicography",
+      "target": "asset:translation-kit",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-translation-kit-sanskritrussian",
+      "source": "asset:translation-kit",
+      "target": "repo:sanskritrussian",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-translation-kit-sanskritkaraoke",
+      "source": "asset:translation-kit",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-cdsl-source-texts",
+      "source": "repo:csl-orig",
+      "target": "asset:cdsl-source-texts",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-csl-pywork",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:csl-pywork",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-csl-atlas",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-kosha",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-sanskritspellcheck",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-csl-websanlexicon",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:csl-websanlexicon",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-csl-apidev",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-cdsl-source-texts-csl-app",
+      "source": "asset:cdsl-source-texts",
+      "target": "repo:csl-app",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-dcs-corpus",
+      "source": "repo:visualdcs",
+      "target": "asset:dcs-corpus",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-kosha",
+      "source": "asset:dcs-corpus",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-whitneyroots",
+      "source": "asset:dcs-corpus",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-mws",
+      "source": "asset:dcs-corpus",
+      "target": "repo:mws",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-csl-apidev",
+      "source": "asset:dcs-corpus",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-csl-atlas",
+      "source": "asset:dcs-corpus",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-sanskritgrammar",
+      "source": "asset:dcs-corpus",
+      "target": "repo:sanskritgrammar",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-commentarystrategies",
+      "source": "asset:dcs-corpus",
+      "target": "repo:commentarystrategies",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-sanskritkaraoke",
+      "source": "asset:dcs-corpus",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-corpus-sanskritlexicography",
+      "source": "asset:dcs-corpus",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-mw-roots",
+      "source": "repo:csl-orig",
+      "target": "asset:mw-roots",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-mw-roots-whitneyroots",
+      "source": "asset:mw-roots",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-mw-roots-mws",
+      "source": "asset:mw-roots",
+      "target": "repo:mws",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-union-headwords",
+      "source": "repo:sanskritlexicography",
+      "target": "asset:union-headwords",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-union-headwords-sanskritspellcheck",
+      "source": "asset:union-headwords",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-union-headwords-kosha",
+      "source": "asset:union-headwords",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-mw-heritage-crosswalk",
+      "source": "repo:sanskritlexicography",
+      "target": "asset:mw-heritage-crosswalk",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-mw-heritage-crosswalk-csl-guides",
+      "source": "asset:mw-heritage-crosswalk",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-dcs-cdsl-crosswalk",
+      "source": "repo:csl-apidev",
+      "target": "asset:dcs-cdsl-crosswalk",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-dcs-cdsl-crosswalk-csl-apidev",
+      "source": "asset:dcs-cdsl-crosswalk",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-sa-ru-alignment",
+      "source": "repo:sanskritlexicography",
+      "target": "asset:sa-ru-alignment",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-sa-ru-alignment-sanskritrussian",
+      "source": "asset:sa-ru-alignment",
+      "target": "repo:sanskritrussian",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-sa-ru-alignment-sanskritkaraoke",
+      "source": "asset:sa-ru-alignment",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-data-hub",
+      "source": "repo:kosha",
+      "target": "asset:data-hub",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-data-hub-csl-guides",
+      "source": "asset:data-hub",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-data-hub-org-wide",
+      "source": "asset:data-hub",
+      "target": "surface:org-wide",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-typed-link-grammar",
+      "source": "repo:sanskritgrammar",
+      "target": "asset:typed-link-grammar",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-typed-link-grammar-commentarystrategies",
+      "source": "asset:typed-link-grammar",
+      "target": "repo:commentarystrategies",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-concordance-core",
+      "source": "repo:kosha",
+      "target": "asset:concordance-core",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-concordance-core-kosha",
+      "source": "asset:concordance-core",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-concordance-core-commentarystrategies",
+      "source": "asset:concordance-core",
+      "target": "repo:commentarystrategies",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-ci-fanout",
+      "source": "repo:cologne",
+      "target": "asset:ci-fanout",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-ci-fanout-org-wide",
+      "source": "asset:ci-fanout",
+      "target": "surface:org-wide",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:owns-docx-mdx-pipeline",
+      "source": "repo:buhler-sanskrit-book",
+      "target": "asset:docx-mdx-pipeline",
+      "kind": "owns",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-docx-mdx-pipeline-buhler-sanskrit-book",
+      "source": "asset:docx-mdx-pipeline",
+      "target": "repo:buhler-sanskrit-book",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-docx-mdx-pipeline-csl-guides",
+      "source": "asset:docx-mdx-pipeline",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:reuse-docx-mdx-pipeline-sanskritgrammar",
+      "source": "asset:docx-mdx-pipeline",
+      "target": "repo:sanskritgrammar",
+      "kind": "feeds",
+      "temperature": "structural"
+    },
+    {
+      "id": "e:anchor-5-1-cologne",
+      "source": "thesis:5.1",
+      "target": "repo:cologne",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-5-1-csl-doc",
+      "source": "thesis:5.1",
+      "target": "repo:csl-doc",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-5-2-cologne-skills",
+      "source": "thesis:5.2",
+      "target": "repo:cologne-skills",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-5-2-zettelkastenwiki",
+      "source": "thesis:5.2",
+      "target": "repo:zettelkastenwiki",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-2-sanskrit-util",
+      "source": "thesis:2.2",
+      "target": "repo:sanskrit-util",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-2-csl-standards",
+      "source": "thesis:2.2",
+      "target": "repo:csl-standards",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-1-systema-sanscriticum",
+      "source": "thesis:4.1",
+      "target": "repo:systema-sanscriticum",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-2-ors-faq",
+      "source": "thesis:4.2",
+      "target": "repo:ors-faq",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-3-sanskritkaraoke",
+      "source": "thesis:4.3",
+      "target": "repo:sanskritkaraoke",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-3-buhler-sanskrit-book",
+      "source": "thesis:4.3",
+      "target": "repo:buhler-sanskrit-book",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-8-commentarystrategies",
+      "source": "thesis:2.8",
+      "target": "repo:commentarystrategies",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-8-russianramayana",
+      "source": "thesis:2.8",
+      "target": "repo:russianramayana",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-5-sanskritlexicography",
+      "source": "thesis:2.5",
+      "target": "repo:sanskritlexicography",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-5-sanskritrussian",
+      "source": "thesis:2.5",
+      "target": "repo:sanskritrussian",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-5-samudramanthanam",
+      "source": "thesis:2.5",
+      "target": "repo:samudramanthanam",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-7-sanskritgrammar",
+      "source": "thesis:2.7",
+      "target": "repo:sanskritgrammar",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-7-whitneyroots",
+      "source": "thesis:2.7",
+      "target": "repo:whitneyroots",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-3-visualdcs",
+      "source": "thesis:2.3",
+      "target": "repo:visualdcs",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-3-sanskritspellcheck",
+      "source": "thesis:2.3",
+      "target": "repo:sanskritspellcheck",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-6-kosha",
+      "source": "thesis:2.6",
+      "target": "repo:kosha",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-acc",
+      "source": "thesis:2.1",
+      "target": "repo:acc",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-amar",
+      "source": "thesis:2.1",
+      "target": "repo:amar",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-ap",
+      "source": "thesis:2.1",
+      "target": "repo:ap",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-ap90",
+      "source": "thesis:2.1",
+      "target": "repo:ap90",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-aptees",
+      "source": "thesis:2.1",
+      "target": "repo:aptees",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-bhs",
+      "source": "thesis:2.1",
+      "target": "repo:bhs",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-bop",
+      "source": "thesis:2.1",
+      "target": "repo:bop",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-bor",
+      "source": "thesis:2.1",
+      "target": "repo:bor",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-bur",
+      "source": "thesis:2.1",
+      "target": "repo:bur",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-cae",
+      "source": "thesis:2.1",
+      "target": "repo:cae",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-ccs",
+      "source": "thesis:2.1",
+      "target": "repo:ccs",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-dcs",
+      "source": "thesis:2.1",
+      "target": "repo:dcs",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-fri",
+      "source": "thesis:2.1",
+      "target": "repo:fri",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-gra",
+      "source": "thesis:2.1",
+      "target": "repo:gra",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-inm",
+      "source": "thesis:2.1",
+      "target": "repo:inm",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-kna",
+      "source": "thesis:2.1",
+      "target": "repo:kna",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-kow",
+      "source": "thesis:2.1",
+      "target": "repo:kow",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-krm",
+      "source": "thesis:2.1",
+      "target": "repo:krm",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-lrv",
+      "source": "thesis:2.1",
+      "target": "repo:lrv",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-mci",
+      "source": "thesis:2.1",
+      "target": "repo:mci",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-md",
+      "source": "thesis:2.1",
+      "target": "repo:md",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-mw72",
+      "source": "thesis:2.1",
+      "target": "repo:mw72",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-mws",
+      "source": "thesis:2.1",
+      "target": "repo:mws",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-pui",
+      "source": "thesis:2.1",
+      "target": "repo:pui",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-pwg",
+      "source": "thesis:2.1",
+      "target": "repo:pwg",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-pwk",
+      "source": "thesis:2.1",
+      "target": "repo:pwk",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-sch",
+      "source": "thesis:2.1",
+      "target": "repo:sch",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-shs",
+      "source": "thesis:2.1",
+      "target": "repo:shs",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-skd",
+      "source": "thesis:2.1",
+      "target": "repo:skd",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-stc",
+      "source": "thesis:2.1",
+      "target": "repo:stc",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-vcp",
+      "source": "thesis:2.1",
+      "target": "repo:vcp",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-vei",
+      "source": "thesis:2.1",
+      "target": "repo:vei",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-wil",
+      "source": "thesis:2.1",
+      "target": "repo:wil",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-corrections",
+      "source": "thesis:2.1",
+      "target": "repo:corrections",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-csl-corrections",
+      "source": "thesis:2.1",
+      "target": "repo:csl-corrections",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-csl-orig",
+      "source": "thesis:2.1",
+      "target": "repo:csl-orig",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-csl-pywork",
+      "source": "thesis:2.1",
+      "target": "repo:csl-pywork",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-2-csl-websanlexicon",
+      "source": "thesis:2.2",
+      "target": "repo:csl-websanlexicon",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-2-csl-devanagari",
+      "source": "thesis:2.2",
+      "target": "repo:csl-devanagari",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-3-csl-atlas",
+      "source": "thesis:2.3",
+      "target": "repo:csl-atlas",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-3-csl-observatory",
+      "source": "thesis:2.3",
+      "target": "repo:csl-observatory",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-6-mwinflect",
+      "source": "thesis:2.6",
+      "target": "repo:mwinflect",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-6-csl-inflect",
+      "source": "thesis:2.6",
+      "target": "repo:csl-inflect",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-3-csl-guides",
+      "source": "thesis:3.3",
+      "target": "repo:csl-guides",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-3-csl-newsletter",
+      "source": "thesis:3.3",
+      "target": "repo:csl-newsletter",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-3-sanskrit-lexicon.github.io",
+      "source": "thesis:3.3",
+      "target": "repo:sanskrit-lexicon.github.io",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-csl-apidev",
+      "source": "thesis:2.1",
+      "target": "repo:csl-apidev",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-1-csl-app",
+      "source": "thesis:2.1",
+      "target": "repo:csl-app",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-6-csl-apidev",
+      "source": "thesis:2.6",
+      "target": "repo:csl-apidev",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-2-6-csl-app",
+      "source": "thesis:2.6",
+      "target": "repo:csl-app",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-3-afanasiynikitin",
+      "source": "thesis:3.3",
+      "target": "repo:afanasiynikitin",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-3-bookindex",
+      "source": "thesis:3.3",
+      "target": "repo:bookindex",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-4-indologyscholars",
+      "source": "thesis:3.4",
+      "target": "repo:indologyscholars",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-3-4-ruwritingstyles",
+      "source": "thesis:3.4",
+      "target": "repo:ruwritingstyles",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-3-retrieval-based-voice-conversion-webui",
+      "source": "thesis:4.3",
+      "target": "repo:retrieval-based-voice-conversion-webui",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:anchor-4-4-socks5-vps",
+      "source": "thesis:4.4",
+      "target": "repo:socks5-vps",
+      "kind": "anchors",
+      "temperature": "structural",
+      "evidence": {
+        "label_ru": "MEGABOOK §9 — смысловой дом репозитория (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-produces-org-wide",
+      "source": "repo:csl-orig",
+      "target": "surface:org-wide",
+      "kind": "produces",
+      "asset_ru": "canonical CDSL source texts (v02/<dict>/<dict>.txt)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md CDSL spine (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-pywork-feeds-csl-orig",
+      "source": "repo:csl-pywork",
+      "target": "repo:csl-orig",
+      "kind": "feeds",
+      "asset_ru": "generate_dict.sh + updateByLine.py build/XML-validation pipeline",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md correction workflow (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-corrections-feeds-csl-orig",
+      "source": "repo:corrections",
+      "target": "repo:csl-orig",
+      "kind": "feeds",
+      "asset_ru": "maintainer corrections (Jim Funderburk pattern)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-corrections-feeds-csl-orig",
+      "source": "repo:csl-corrections",
+      "target": "repo:csl-orig",
+      "kind": "feeds",
+      "asset_ru": "audit-trail change files for applied corrections",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-corrections-feeds-csl-atlas",
+      "source": "repo:csl-corrections",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "data/derived/correction_loci.tsv (39,540 locus-resolved records)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-corrections PR #291; consumer build queued (H294) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-websanlexicon",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-websanlexicon",
+      "kind": "feeds",
+      "asset_ru": "per-dict XML/SQLite for the PHP web frontend",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-apidev",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "asset_ru": "dict data for the search API",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-app",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-app",
+      "kind": "feeds",
+      "asset_ru": "CDSL dictionaries packaged as offline Flutter app",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-app/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-devanagari",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-devanagari",
+      "kind": "feeds",
+      "asset_ru": "SLP1 source text for Devanagari round-trip",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md steps 2-7 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-devanagari-feeds-csl-orig",
+      "source": "repo:csl-devanagari",
+      "target": "repo:csl-orig",
+      "kind": "feeds",
+      "asset_ru": "Devanagari-tag round-trip diffs back to source",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md (to_devanagari.py / to_slp1.py / diff) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-inflect",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-inflect",
+      "kind": "feeds",
+      "asset_ru": "MW-derived CDSL headwords keying paradigm tables",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-inflect-consumes-heritage",
+      "source": "repo:csl-inflect",
+      "target": "ext:heritage",
+      "kind": "consumes",
+      "asset_ru": "huet_mw_map_data.py root crosswalk (678 entries)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-atlas",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "all dict source texts for the cross-dict headword atlas",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-sanskritspellcheck",
+      "source": "repo:csl-orig",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "asset_ru": "dict body texts for body-grounded triage",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-mwinflect",
+      "source": "repo:csl-orig",
+      "target": "repo:mwinflect",
+      "kind": "feeds",
+      "asset_ru": "MW1899 nominal/verb entries",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MWinflect/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-mwinflect-feeds-kosha",
+      "source": "repo:mwinflect",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "asset_ru": "full MW inflection tables for form→lemma lookup",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MWinflect/README.md claim; kosha currently uses vidyut instead (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-whitneyroots",
+      "source": "repo:csl-orig",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "asset_ru": "mw_etymology.tsv → crosswalk/mw_derivations.json (620 roots)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: WhitneyRoots PR #22 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-orig-feeds-csl-atlas-2",
+      "source": "repo:csl-orig",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "etymology_stats → src/data/etymology-oracle.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-atlas PR #178 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-cites-csl-standards",
+      "source": "repo:csl-atlas",
+      "target": "repo:csl-standards",
+      "kind": "cites",
+      "asset_ru": "TEI/OntoLex-Lemon/FrAC export modelling ownership",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-atlas docs/TEI_ONTOLEX_MIGRATION.md pointer (H271) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-apidev-vendors-csl-websanlexicon",
+      "source": "repo:csl-apidev",
+      "target": "repo:csl-websanlexicon",
+      "kind": "vendors",
+      "asset_ru": "hand-synced forked basicadjust.php/basicdisplay.php",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: /cologne-fork-sync-check skill (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-vendors-csl-atlas",
+      "source": "repo:csl-guides",
+      "target": "repo:csl-atlas",
+      "kind": "vendors",
+      "asset_ru": "src/data/atlas-extract.json (OBS-R/OBS-C figures)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H278; csl-atlas data/obs/* (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-vendors-csl-atlas-2",
+      "source": "repo:csl-guides",
+      "target": "repo:csl-atlas",
+      "kind": "vendors",
+      "asset_ru": "citation graph + L2 cladogram → citation-sources.json/cladogram.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H279; csl-guides PR #94 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-vendors-kosha",
+      "source": "repo:csl-guides",
+      "target": "repo:kosha",
+      "kind": "vendors",
+      "asset_ru": "top-2,000 lemma_frequency excerpt → src/data/corpus-frequency.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-corpus-frequency.mjs (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-vendors-sanskritlexicography",
+      "source": "repo:csl-guides",
+      "target": "repo:sanskritlexicography",
+      "kind": "vendors",
+      "asset_ru": "mw_heritage_crosswalk aggregates → src/data/heritage-coverage.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-heritage-coverage.mjs (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-newsletter-feeds-csl-guides",
+      "source": "repo:csl-newsletter",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "asset_ru": "each newsletter edition doubles as a blog post",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-newsletter/CLAUDE.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-newsletter-consumes-org-wide",
+      "source": "repo:csl-newsletter",
+      "target": "surface:org-wide",
+      "kind": "consumes",
+      "asset_ru": "30-day org commits/issues harvested via gh",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-newsletter scripts/draft-newsletter.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskrit-lexicon.github.io-consumes-org-wide",
+      "source": "repo:sanskrit-lexicon.github.io",
+      "target": "surface:org-wide",
+      "kind": "consumes",
+      "asset_ru": "committed rendered HTML reports from source repos",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: sanskrit-lexicon.github.io/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-doc-feeds-gra",
+      "source": "repo:csl-doc",
+      "target": "repo:gra",
+      "kind": "feeds",
+      "asset_ru": "front-matter scans OCR'd into GRA/prefaces/",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; GRA prefaces (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-doc-feeds-md",
+      "source": "repo:csl-doc",
+      "target": "repo:md",
+      "kind": "feeds",
+      "asset_ru": "front-matter scans OCR'd into MD/prefaces/",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; MD prefaces (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gra-feeds-csl-guides",
+      "source": "repo:gra",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-md-feeds-csl-guides",
+      "source": "repo:md",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-cologne-feeds-org-wide",
+      "source": "repo:cologne",
+      "target": "surface:org-wide",
+      "kind": "feeds",
+      "asset_ru": "canonical CONTRIBUTING standard bootstrapped org-wide",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: /cologne-contributing-all skill (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-cologne-skills-feeds-org-wide",
+      "source": "repo:cologne-skills",
+      "target": "surface:org-wide",
+      "kind": "feeds",
+      "asset_ru": "published Cologne workflow skills (Codex counterpart of ~/.claude/commands)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: cologne-skills/README.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-santam-feeds-kosha",
+      "source": "repo:csl-santam",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "asset_ru": "tamil SQLite corpus (mwd+cap+otl, 321,620 entries) fold",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-santam docs/ROADMAP_2026_2027.md Wave 4 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-observatory-consumes-org-wide",
+      "source": "repo:csl-observatory",
+      "target": "surface:org-wide",
+      "kind": "consumes",
+      "asset_ru": "org-wide repo metrics (manifest.json)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-observatory dashboard (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-observatory-feeds-csl-atlas",
+      "source": "repo:csl-observatory",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "correction_events_release.csv (50,953 events)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: pending Zenodo DOI re-mint (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-dcs-feeds-visualdcs",
+      "source": "repo:dcs",
+      "target": "repo:visualdcs",
+      "kind": "feeds",
+      "asset_ru": "upstream DCS corpus data (CoNLL-U)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-kosha",
+      "source": "repo:visualdcs",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "asset_ru": "data/frequency/lemma_frequency.tsv (83,277 rows, M9 join)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha build_frequency_layer.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-sanskritlexicography",
+      "source": "repo:visualdcs",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "asset_ru": "frequency-first pwg_ru worklist ordering",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_pwg_freq_order.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-whitneyroots",
+      "source": "repo:visualdcs",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "asset_ru": "dcs_ppp_verified.tsv (5,181 corpus-attested PPP forms)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: WhitneyRoots scripts/build_decisions_doc.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-mws",
+      "source": "repo:visualdcs",
+      "target": "repo:mws",
+      "kind": "feeds",
+      "asset_ru": "citation registers",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-csl-apidev",
+      "source": "repo:visualdcs",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "asset_ru": "DCS-2026 lemmas.csv → wf.txt refresh + dcs_cdsl_xref.tsv",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-apidev simple-search/wf1 + dcs_xref (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-csl-atlas",
+      "source": "repo:visualdcs",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "DCS morphology feed for atlas mining",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-dharmamitra-feeds-csl-atlas",
+      "source": "ext:dharmamitra",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "GPU morphology/lemma runs",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-atlas #89/#92 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-nagari",
+      "source": "repo:visualdcs",
+      "target": "ext:nagari",
+      "kind": "feeds",
+      "asset_ru": "akshara/varna/conjunct frequency CSVs (Fonetika regen-2026)",
+      "status": "unverified",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS Fonetika row (downstream named, wiring unconfirmed) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-sanskritgrammar",
+      "source": "repo:visualdcs",
+      "target": "repo:sanskritgrammar",
+      "kind": "feeds",
+      "asset_ru": "varga-series-diachrony aggregates → GasunsDhatu 2026 §2.6",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: VisualDCS derived-data/Fonetika/varga-series-diachrony (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-commentarystrategies",
+      "source": "repo:visualdcs",
+      "target": "repo:commentarystrategies",
+      "kind": "feeds",
+      "asset_ru": "archive.sqlite parallels → data/crosstext/archive_parallels.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: CommentaryStrategies crosstext_archive_parallels.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-sanskritkaraoke",
+      "source": "repo:visualdcs",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "asset_ru": "subhashita verse feed (10 curated anuṣṭubhs)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/import_subhashita.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-sanskritlexicography-2",
+      "source": "repo:visualdcs",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "asset_ru": "indische_sprueche.jsonl (7,537 sayings mirror)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: VisualDCS export_subhashita_jsonl.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-vedaweb-feeds-visualdcs",
+      "source": "ext:vedaweb",
+      "target": "repo:visualdcs",
+      "kind": "feeds",
+      "asset_ru": "4-layer accented Rigveda export → non-derived/vedaweb/",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H096; host down per SERVER_OUTAGES.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-samudramanthanam-feeds-sanskritlexicography",
+      "source": "repo:samudramanthanam",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "asset_ru": "gate dicts + verse-aligned corpus_builder JSONL → L0/TMX + name glossaries",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_src.py + build_l0.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-samudramanthanam-feeds-buhler-sanskrit-book",
+      "source": "repo:samudramanthanam",
+      "target": "repo:buhler-sanskrit-book",
+      "kind": "feeds",
+      "asset_ru": "samskrtam.ru /z/ verb-root deep links (static root→id table)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: buhler-sanskrit-book PR #12 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritlexicography-feeds-sanskritrussian",
+      "source": "repo:sanskritlexicography",
+      "target": "repo:sanskritrussian",
+      "kind": "feeds",
+      "asset_ru": "corpus_lexicon.jsonl → 3-layer Sa→Ru glossary",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SanskritRussian README + RussianTranslation/src pipeline (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-feeds-sanskritrussian",
+      "source": "repo:visualdcs",
+      "target": "repo:sanskritrussian",
+      "kind": "feeds",
+      "asset_ru": "form→lemma maps for glossary rollup",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_dcs_maps (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-vidyut-vendors-sanskritrussian",
+      "source": "ext:vidyut",
+      "target": "repo:sanskritrussian",
+      "kind": "vendors",
+      "asset_ru": "kosha fallback lemmatization",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: build_vidyut_fallback (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-vidyut-vendors-kosha",
+      "source": "ext:vidyut",
+      "target": "repo:kosha",
+      "kind": "vendors",
+      "asset_ru": "inflection/lemmatization engine (dual-engine E1)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha E1 report v0.10.0 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritlexicography-feeds-sanskritkaraoke",
+      "source": "repo:sanskritlexicography",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "asset_ru": "corpus-aligned RU glosses baked into verses/data/*.json",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/build_glosses.py (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritrussian-feeds-whitneyroots",
+      "source": "repo:sanskritrussian",
+      "target": "repo:whitneyroots",
+      "kind": "feeds",
+      "asset_ru": "root-layer RU glosses ↔ Whitney/mw_roots crosswalk",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritRussian row (potential downstream) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-heritage-feeds-sanskritlexicography",
+      "source": "ext:heritage",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "asset_ru": "darkone23 mirror → mw_heritage_crosswalk.tsv (185,803 MW entries)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: HeadwordLists/HERITAGE_MIRROR_INVENTORY.md (H099) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritlexicography-feeds-kosha",
+      "source": "repo:sanskritlexicography",
+      "target": "repo:kosha",
+      "kind": "feeds",
+      "asset_ru": "union_headwords + mw_roots + mw_etymology in data-v0.1.0 release",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritlexicography-feeds-sanskritspellcheck",
+      "source": "repo:sanskritlexicography",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "asset_ru": "HeadwordLists/union/union_headwords.tsv attestation gate",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #13 (union_attestation.py) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritspellcheck-feeds-csl-atlas",
+      "source": "repo:sanskritspellcheck",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "nochange/do_not_file_suppress.txt (2,297 deliberate non-standard spellings)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: csl-atlas PR #188 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritspellcheck-feeds-csl-guides",
+      "source": "repo:sanskritspellcheck",
+      "target": "repo:csl-guides",
+      "kind": "feeds",
+      "asset_ru": "ortho_drift/*_reform_map.tsv (de 15,685 / ru 7,709) for gloss search normalization",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped feeds (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritspellcheck-feeds-csl-atlas-2",
+      "source": "repo:sanskritspellcheck",
+      "target": "repo:csl-atlas",
+      "kind": "feeds",
+      "asset_ru": "ortho-drift census → /tools/ortho-drift page (PH5 ORTHO-CLOCK)",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H273 agenda §5d (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gretil-feeds-sanskritspellcheck",
+      "source": "ext:gretil",
+      "target": "repo:sanskritspellcheck",
+      "kind": "feeds",
+      "asset_ru": "corpustei plaintext (6 sections) for meter QA + typo checking",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #24 (local-only, CC BY-NC-SA) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritspellcheck-feeds-gretil",
+      "source": "repo:sanskritspellcheck",
+      "target": "ext:gretil",
+      "kind": "feeds",
+      "asset_ru": "in-corpus e-text typo reports upstream",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: GRETIL_TEXT_TYPOS.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-samsaadhanii-feeds-visualdcs",
+      "source": "ext:samsaadhanii",
+      "target": "repo:visualdcs",
+      "kind": "feeds",
+      "asset_ru": "DCS×Heritage alignment (130,270 sentences)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready); no LICENSE upstream (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-samsaadhanii-feeds-commentarystrategies",
+      "source": "ext:samsaadhanii",
+      "target": "repo:commentarystrategies",
+      "kind": "feeds",
+      "asset_ru": "Sundarakāṇḍa gold kāraka treebank",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskrit-util-produces-org-wide",
+      "source": "repo:sanskrit-util",
+      "target": "surface:org-wide",
+      "kind": "produces",
+      "asset_ru": "canonical IAST⇄SLP1⇄Devanagari transcoders (Py+JS)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-whitneyroots-feeds-sanskrit-util",
+      "source": "repo:whitneyroots",
+      "target": "repo:sanskrit-util",
+      "kind": "feeds",
+      "asset_ru": "original transcoder donor code",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-vendors-sanskrit-util",
+      "source": "repo:csl-guides",
+      "target": "repo:sanskrit-util",
+      "kind": "vendors",
+      "asset_ru": "vendored JS transcoder v0.4.0",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (H280) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-zettelkastenwiki-feeds-ors-faq",
+      "source": "repo:zettelkastenwiki",
+      "target": "repo:ors-faq",
+      "kind": "feeds",
+      "asset_ru": "static-site generator engine (extracted from ors_faq/publish.py)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: ZettelkastenWiki/CLAUDE.md (Wave 2 parity gate) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ors-faq-feeds-samskrtam-ru",
+      "source": "repo:ors-faq",
+      "target": "ext:samskrtam-ru",
+      "kind": "feeds",
+      "asset_ru": "published static FAQ site + bot",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: ORS-FAQ/CLAUDE.md (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritgrammar-feeds-buhler-sanskrit-book",
+      "source": "repo:sanskritgrammar",
+      "target": "repo:buhler-sanskrit-book",
+      "kind": "feeds",
+      "asset_ru": "source-archive upstream + docx→mdx/rstTable book pipeline",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritGrammar row; SHARED_CODE §15 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-kosha-feeds-buhler-sanskrit-book",
+      "source": "repo:kosha",
+      "target": "repo:buhler-sanskrit-book",
+      "kind": "feeds",
+      "asset_ru": "per-lemma static dictionary cards",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: TODO(kosha) marker in Dictionary.tsx (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-kosha-produces-org-wide",
+      "source": "repo:kosha",
+      "target": "surface:org-wide",
+      "kind": "produces",
+      "asset_ru": "data-v* releases: canonical derived-dataset serving tier",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (D-HUB-1..8) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-retrieval-based-voice-conversion-webui-feeds-sanskritkaraoke",
+      "source": "repo:retrieval-based-voice-conversion-webui",
+      "target": "repo:sanskritkaraoke",
+      "kind": "feeds",
+      "asset_ru": "voice-conversion audio tooling for karaoke recordings",
+      "status": "unverified",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: ROADMAP_ALL_REPOS_2026H2 P1 grouping; no artifact edge yet (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-acc-consumes-csl-orig",
+      "source": "repo:acc",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-amar-consumes-csl-orig",
+      "source": "repo:amar",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (Amarakośa in CDSL format)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ap-consumes-csl-orig",
+      "source": "repo:ap",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ap90-consumes-csl-orig",
+      "source": "repo:ap90",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (csl-orig/v02/ap90/ap90.txt)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-aptees-consumes-csl-orig",
+      "source": "repo:aptees",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-bhs-consumes-csl-orig",
+      "source": "repo:bhs",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-bop-consumes-csl-orig",
+      "source": "repo:bop",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-bor-consumes-csl-orig",
+      "source": "repo:bor",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-bur-consumes-csl-orig",
+      "source": "repo:bur",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-cae-consumes-csl-orig",
+      "source": "repo:cae",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ccs-consumes-csl-orig",
+      "source": "repo:ccs",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-fri-consumes-csl-orig",
+      "source": "repo:fri",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (Frish reader, Cologne 2015)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gra-consumes-csl-orig",
+      "source": "repo:gra",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (../graxml/gra.xml)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-inm-consumes-csl-orig",
+      "source": "repo:inm",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-kna-consumes-csl-orig",
+      "source": "repo:kna",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-kow-consumes-csl-orig",
+      "source": "repo:kow",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-krm-consumes-csl-orig",
+      "source": "repo:krm",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-lrv-consumes-csl-orig",
+      "source": "repo:lrv",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-mci-consumes-csl-orig",
+      "source": "repo:mci",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-md-consumes-csl-orig",
+      "source": "repo:md",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-mw72-consumes-csl-orig",
+      "source": "repo:mw72",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-mws-consumes-csl-orig",
+      "source": "repo:mws",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (../mwsxml/mws.xml)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-pui-consumes-csl-orig",
+      "source": "repo:pui",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-pwg-consumes-csl-orig",
+      "source": "repo:pwg",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (../pwgxml/pwg.xml); source of the RU/EN kit",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-pwg-feeds-sanskritlexicography",
+      "source": "repo:pwg",
+      "target": "repo:sanskritlexicography",
+      "kind": "feeds",
+      "asset_ru": "source dictionary text for the pwg_ru / pwg_en translation kit",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: RussianTranslation kit (5-layer merged source) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-pwk-consumes-csl-orig",
+      "source": "repo:pwk",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine (../pwkxml/pwk.xml)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sch-consumes-csl-orig",
+      "source": "repo:sch",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-shs-consumes-csl-orig",
+      "source": "repo:shs",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-skd-consumes-csl-orig",
+      "source": "repo:skd",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-stc-consumes-csl-orig",
+      "source": "repo:stc",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-vcp-consumes-csl-orig",
+      "source": "repo:vcp",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-vei-consumes-csl-orig",
+      "source": "repo:vei",
+      "target": "repo:csl-orig",
+      "kind": "consumes",
+      "asset_ru": "per-dictionary working repo over the CDSL spine",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-07-11",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    }
+  ],
+  "views": [
+    {
+      "id": "attention",
+      "title_ru": "Распределение внимания и приоритетов",
+      "question_ru": "Куда направлять следующую единицу внимания — человеческого и агентного — и какой тип ворот ее запирает?",
+      "node_kinds": [
+        "thesis",
+        "repo"
+      ],
+      "edge_kinds": [
+        "anchors"
+      ],
+      "seed": {
+        "source_label_ru": "Карта внимания MEGABOOK §11 (внутренний Uprava)",
+        "series_slot": "A2",
+        "visibility": "internal",
+        "megabook_section": "§11"
+      },
+      "route": {
+        "slug": "/sangram/atlas/attention",
+        "owner_slot": "B2"
+      }
+    },
+    {
+      "id": "reuse",
+      "title_ru": "Переиспользование готовых активов",
+      "question_ru": "У кого уже есть нужный актив, кто его потребляет и что запрещено пересоздавать?",
+      "node_kinds": [
+        "repo",
+        "asset",
+        "external-stack",
+        "surface"
+      ],
+      "edge_kinds": [
+        "owns",
+        "feeds",
+        "consumes",
+        "vendors",
+        "produces",
+        "cites"
+      ],
+      "seed": {
+        "source_label_ru": "Карта переиспользования MEGABOOK §12 (внутренний Uprava)",
+        "series_slot": "A3",
+        "visibility": "internal",
+        "megabook_section": "§12"
+      },
+      "route": {
+        "slug": "/sangram/atlas/reuse",
+        "owner_slot": "B3"
+      }
+    },
+    {
+      "id": "value-chain",
+      "title_ru": "Движение от исследования к продуктам",
+      "question_ru": "Как источники превращаются в проверенные данные, публикации, продукты и выручку — и что возвращается обратно?",
+      "node_kinds": [
+        "stage"
+      ],
+      "edge_kinds": [
+        "generates",
+        "fills",
+        "creates",
+        "strengthens",
+        "funds",
+        "scales"
+      ],
+      "seed": {
+        "source_label_ru": "Цепочка ценности MEGABOOK §1.2; карта research→product (слот A4)",
+        "series_slot": "A4",
+        "visibility": "internal",
+        "megabook_section": "§1.2"
+      },
+      "route": {
+        "slug": "/sangram/atlas/value-chain",
+        "owner_slot": "B4"
+      }
+    },
+    {
+      "id": "dependencies",
+      "title_ru": "Зависимости репозиториев",
+      "question_ru": "Какие репозитории питают, потребляют, вендорят и цитируют друг друга?",
+      "node_kinds": [
+        "repo",
+        "external-stack",
+        "surface"
+      ],
+      "edge_kinds": [
+        "feeds",
+        "consumes",
+        "vendors",
+        "produces",
+        "cites"
+      ],
+      "seed": {
+        "source_label_ru": "Типизированный список ребер interlinks_edges.tsv (внутренний Uprava)",
+        "series_slot": "A1",
+        "visibility": "internal"
+      },
+      "route": {
+        "slug": "/sangram/atlas/dependencies",
+        "owner_slot": "B5"
+      }
+    },
+    {
+      "id": "provenance",
+      "title_ru": "Происхождение данных",
+      "question_ru": "Из каких классов источников рождается каждый производный слой и по каким типизированным отношениям он движется к продуктам?",
+      "node_kinds": [
+        "source-class",
+        "stage"
+      ],
+      "edge_kinds": [
+        "replenishes",
+        "generates",
+        "attests",
+        "crosslinks",
+        "fills"
+      ],
+      "seed": {
+        "source_label_ru": "Онтология источников §1.4 и карта происхождения §8 (внутренний Uprava)",
+        "series_slot": "A1",
+        "visibility": "internal",
+        "megabook_section": "§8"
+      },
+      "route": {
+        "slug": "/sangram/atlas/provenance",
+        "owner_slot": "B6"
+      }
+    }
+  ]
+}
