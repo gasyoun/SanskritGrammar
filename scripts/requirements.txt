@@ -1,3 +1,6 @@
 # Python dependencies for the SanskritGrammar build scripts.
 # build_whitney.py regenerates paradigm-table Devanagari from Whitney's IAST (H427).
 indic_transliteration>=2.3.0
+
+# sequence_tau.py — Kendall's tau for S1 textbook sequencing
+scipy>=1.10
