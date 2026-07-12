@@ -13,8 +13,8 @@
     "tokens": 23942,
     "pct_of_verbal": 3.06,
     "suffix_split_types": {
-      "-tavya": 523,
       "-ya": 1046,
+      "-tavya": 523,
       "-anīya": 230
     },
     "cf_ppp_tokens": 233080,
@@ -36,5 +36,30 @@
       "-ṣya": 18.3
     },
     "sec_iṣya_share": 56.8
+  },
+  "HK28_conditional": {
+    "tokens": 269,
+    "pct_of_verbal": 0.03,
+    "cf_present_tokens": 157003,
+    "label": "Conditional Active"
+  },
+  "HK32_ppp_suffix": {
+    "distinct_ta": 4385,
+    "distinct_na": 383,
+    "na_share_pct": 8.0
+  },
+  "HK36_imperative_person": {
+    "distinct_forms_by_person": {
+      "2": 2751,
+      "3": 1369,
+      "1": 266
+    },
+    "second_person_share_pct": 62.7,
+    "total_imperative_active_forms": 4386
+  },
+  "HK40_precative_middle": {
+    "tokens": 221,
+    "pct_of_verbal": 0.03,
+    "label": "Benedictive Medium"
   }
 }

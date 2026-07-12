@@ -96,6 +96,31 @@ def analyze():
             allo["other"] += 1
     ftot = len(fut_forms)
 
+    # --- P1-continuation claims (full-textbook harvest, H768) ---------------
+    # HK-36 imperative person distribution. Kochergina (Занятие XIV): "Наиболее
+    # часто ... употребляются формы 2-го лица." 15.csv col5 = pn_code, DCS
+    # convention 1..9 = {1sg,2sg,3sg,1du,2du,3du,1pl,2pl,3pl}; person = code mod 3.
+    imp_pn = Counter()
+    for ln in (DCS / "15.csv").read_text(encoding="utf-8").splitlines():
+        p = ln.split(",")
+        if len(p) <= 4:
+            continue
+        try:
+            tc = int(p[3]); pn = int(p[4].strip().rstrip(";"))
+        except ValueError:
+            continue
+        if tc == 3:                                          # Imperative Active
+            imp_pn[{1: "1", 2: "2", 3: "3"}[((pn - 1) % 3) + 1]] += 1
+    imp_tot = sum(imp_pn.values())
+
+    # HK-32 past-passive-participle suffix -ta vs -na (code 19), distinct forms.
+    ppp_ta = ppp_na = 0
+    for f in ppp_forms:
+        if f.endswith(("na", "ṇa")):
+            ppp_na += 1
+        elif f.endswith(("ta", "ṭa")):
+            ppp_ta += 1
+
     stats = {
         "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/src/DCS-data-2021",
         "_note": "types = distinct forms (15.csv/12.csv); tokens = running-text counts (timws.csv)",
@@ -123,6 +148,23 @@ def analyze():
             "allomorphy_pct": {k: round(100 * v / ftot, 1) for k, v in allo.items()},
             "sec_iṣya_share": round(100 * allo["-iṣya"] / ftot, 1),
         },
+        # --- full-textbook-harvest claims (H768 P1 continuation) ---
+        "HK23_conditional": {                       # "conditional сравнительно редко"
+            "tokens": TOK[6], "pct_of_verbal": pct(TOK[6]),
+            "cf_present_tokens": TOK[1], "label": LABEL.get(6, ""),
+        },
+        "HK29_ppp_suffix": {                        # PPP -(i)ta vs (реже) -na
+            "distinct_ta": ppp_ta, "distinct_na": ppp_na,
+            "na_share_pct": round(100 * ppp_na / (ppp_ta + ppp_na), 1),
+        },
+        "HK17_imperative_person": {                 # imperative "наиболее часто 2-го лица"
+            "distinct_forms_by_person": dict(imp_pn),
+            "second_person_share_pct": round(100 * imp_pn["2"] / imp_tot, 1),
+            "total_imperative_active_forms": imp_tot,
+        },
+        "HK39_precative_middle": {                  # прекатив Ātmanepada крайне редко
+            "tokens": TOK[14], "pct_of_verbal": pct(TOK[14]), "label": LABEL.get(14, ""),
+        },
     }
     return stats
 
@@ -146,6 +188,20 @@ def report(s):
           f"= {h4['pct_of_verbal']}% of verbal")
     print(f"  allomorphy (types): {h4['allomorphy_types']}  → {h4['allomorphy_pct']}")
     print(f"  the seṭ form -iṣya is the MAJORITY: {h4['sec_iṣya_share']}% of distinct future forms")
+
+    print("\n--- full-textbook-harvest claims ---")
+    c = s["HK23_conditional"]
+    print(f"HK-23 CONDITIONAL ('сравнительно редко'): {c['tokens']:,} tokens "
+          f"= {c['pct_of_verbal']}% of verbal (cf. present {c['cf_present_tokens']:,})")
+    p = s["HK29_ppp_suffix"]
+    print(f"HK-29 PPP suffix -ta {p['distinct_ta']:,} / -na {p['distinct_na']:,} distinct forms "
+          f"→ -na is {p['na_share_pct']}% ('реже' confirmed)")
+    im = s["HK17_imperative_person"]
+    print(f"HK-17 IMPERATIVE by person (distinct forms): {im['distinct_forms_by_person']} "
+          f"→ 2nd person {im['second_person_share_pct']}% of {im['total_imperative_active_forms']:,}")
+    pr = s["HK39_precative_middle"]
+    print(f"HK-39 PRECATIVE Ātmanepada (Benedictive Medium): {pr['tokens']} tokens "
+          f"= {pr['pct_of_verbal']}% of verbal ('крайне редко' confirmed)")
 
 
 def main():
