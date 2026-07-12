@@ -11,17 +11,24 @@
 # Ground truth (triangulation, D2): DCS-2021 corpus statistics (Oliver Hellwig, CC BY, via
 #   ../VisualDCS) reproduced by KocherginaUchebnik_1998/verify_claims_dcs.py; Whitney 1889
 #   (systemic grammatical fact, by §); Tolchelnikov-Talmud 2026 (root morphoclass).
-# When sources disagree: DCS is authority for frequency/attestation, Whitney for systemic fact,
-#   Talmud for root-morphoclass — flag the disagreement, never silently pick (@DECIDE, see handoff).
+# SOURCE-CONFLICT TIE-BREAK (D-B, CONFIRMED by MG 12-07-2026): when Talmud, Whitney and DCS
+#   disagree, DCS is authority for *frequency/attestation*, Whitney for *systemic grammatical
+#   fact*, Talmud for *root-morphoclass* — and flag the disagreement in the entry, never silently
+#   pick.
 #
-# verdict_fact:     TRUE | OVERSTATED | FALSE | UNTESTABLE
+# verdict_fact:     TRUE | OVERSTATED | FALSE | UNTESTABLE | PENDING (harvested, not yet verified)
 # verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
 # kind:             typology | universality | allomorphy | statistic | rule
+# mg_footnote:      (optional) corpus frequency ADDED BY M.G. where Kochergina states no number —
+#                   scholarly apparatus rendered over the reading site, not part of the 1998 text.
 #
 # COVERAGE (H768): the verb-system seed hypotheses HK-1..HK-6 (PR #119) plus the full-textbook
-# harvest HK-7..HK-42 (all 40 Занятия swept, лесson order). The four DCS-computed additions
+# harvest HK-7..HK-42 (all 40 Занятия swept, lesson order). The four DCS-computed additions
 # (HK-17 imperative person, HK-23 conditional, HK-29 PPP suffix, HK-39 precative) are reproduced
 # by verify_claims_dcs.py; the remaining additions are adjudicated against Whitney 1889.
+# This file = the VERIFIED register (42 verdicted claims). The granular full-textbook HARVEST
+# BACKLOG (223 raw falsifiable candidates from the 6-reader sweep) is in claims_harvest.yml;
+# build_claims.py renders both, deduping backlog rows whose loc is already promoted here.
 #
 # Entry shape: see the four seed hypotheses (HK-*) below.
 
@@ -165,6 +172,7 @@ entries:
     number: "distinct future forms (DCS-2021): -iṣya 1,487 (56.8%) · -sya 652 (24.9%) · -ṣya 479 (18.3%). The seṭ form -iṣya is the single most common, not a marginal variant."
     ref: "Whitney §934-935 (union-vowel i in the s-future); DCS verify_claims_dcs.py HK-4"
     verdict_pedagogy: FREQUENCY-HIDDEN
+    mg_footnote: "В корпусе DCS-2021 «вариант» -iṣya (seṭ) — самая частая форма будущего: 56,8% различных форм (1 487), против -sya 24,9% (652) и -ṣya 18,3% (479). То, что подано как исключение, на деле — норма."
     note: >-
       The three suffixes exist and the -ā→-sya rule holds, so the surface facts are right. But calling
       -ṣya/-iṣya "варианты" of a base -sya buries the corpus fact that -iṣya (seṭ) is the MAJORITY
@@ -367,6 +375,7 @@ entries:
     number: "2nd-person imperative-active forms 2,751 = 62.7% of 4,386 distinct forms (DCS-2021); 3rd person 1,369 (31.2%), 1st person 266 (6.1%)"
     ref: "Whitney §569ff (imperative); DCS verify_claims_dcs.py HK-17"
     verdict_pedagogy: JUSTIFIED
+    mg_footnote: "Формы 2-го лица составляют 62,7% различных форм императива в DCS-2021 (2 751 из 4 386); 3-е лицо — 31,2%, 1-е — 6,1%."
     note: >-
       Directly corpus-confirmed: the 2nd person is the clear majority of imperative forms, exactly as
       Kochergina says (the imperative is inherently a directive addressed to '2nd person'). Well
@@ -454,6 +463,7 @@ entries:
     number: "269 conditional tokens = 0.034% of 781,618 verbal tokens (DCS-2021), against present 157,003 — genuinely rare"
     ref: "Whitney §950 (conditional rare); DCS verify_claims_dcs.py HK-23"
     verdict_pedagogy: JUSTIFIED
+    mg_footnote: "Кондиционалис — 0,03% глагольных словоформ корпуса DCS-2021 (269 из 781 618). «Сравнительно редко» — точная характеристика."
     note: >-
       Corpus-confirmed: the conditional is one of the rarest finite categories. Kochergina's
       'сравнительно редко' is exactly right and appropriately unemphatic.
@@ -541,6 +551,7 @@ entries:
     number: "PPP distinct forms (DCS-2021): -ta 4,385 vs -na 383 → -na is 8.0% — 'реже' confirmed; suffix accent per Whitney §952a"
     ref: "Whitney §952-957 (past passive participle -ta/-na); DCS verify_claims_dcs.py HK-29"
     verdict_pedagogy: JUSTIFIED
+    mg_footnote: "Причастий на -na — 8,0% различных форм PPP в DCS-2021 (383 против 4 385 на -ta). Ремарка «(реже) -na» подтверждается количественно."
     note: >-
       Corpus-confirmed: -ta is overwhelmingly dominant and -na is a lexically restricted minority
       (~8%), exactly matching '(реже) -na'. Well calibrated.
@@ -683,6 +694,7 @@ entries:
     number: "Benedictive/precative Medium: 221 tokens = 0.028% of 781,618 verbal tokens (DCS-2021) — 'крайне редко' confirmed"
     ref: "Whitney §924 (middle precative scantily attested); DCS verify_claims_dcs.py HK-39"
     verdict_pedagogy: JUSTIFIED
+    mg_footnote: "Прекатив Ātmanepada — 0,03% глагольных словоформ DCS-2021 (221 из 781 618). «Крайне редко» подтверждается."
     note: "Corpus-confirmed near-zero. Kochergina's 'крайне редко' is accurate and appropriately emphatic."
 
   - id: HK-40
