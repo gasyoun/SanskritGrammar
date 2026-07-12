@@ -83,130 +83,30 @@ candidates:
     falsifiable_as: "Share of verb tokens/lemmas in thematic classes I/IV/VI/X vs athematic in DCS"
     kochergina_gives_number: false
   # ===== Занятия XVI–XXII: athematic conjugation, future, perfect (lines 3460–5280) =====
-  - loc: "Занятие XVI / mdx line 3469"
-    claim_ru: "Второе главное спряжение включает шесть классов: II, III, V, VIII, VII и IX."
-    kind: typology
-    falsifiable_as: "Athematic conjugation partitions into exactly these 6 class-numbers, Whitney"
-    kochergina_gives_number: true
-  - loc: "Занятие XVI / mdx line 3475"
-    claim_ru: "Каждый корень выступает в двух звуковых видах — сильном (guṇa) и слабом."
-    kind: universality
-    falsifiable_as: "Athematic roots showing exactly strong/weak (guṇa/zero) alternation vs 3-way in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3486"
-    claim_ru: "Ударение: в сильных формах на корень/основу, в слабых — на личные окончания."
-    kind: rule
-    falsifiable_as: "Accent by strong/weak grade in accented Vedic athematic paradigms, Whitney §1085ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3490"
-    claim_ru: "Класс II (корневой) постепенно делается непродуктивным."
-    kind: statistic
-    falsifiable_as: "Declining class-II present frequency across chronological DCS strata"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3523"
-    claim_ru: "Основа настоящего V класса — ослабленный корень + суффиксы nu-/no-."
-    kind: allomorphy
-    falsifiable_as: "class-V present stems take -nu-/-no- by weak/strong grade in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3544"
-    claim_ru: "Корни VII класса оканчиваются только на согласную, основа — инфиксы n-/na."
-    kind: universality
-    falsifiable_as: "Every class-VII root ends in a consonant, forms present by n/na infix, Whitney §683ff"
-    kochergina_gives_number: false
   - loc: "Занятие XVI / mdx line 3554"
     claim_ru: "Большинство глаголов IX класса на 'носовой+согласная'; носовой корня утрачивается в основе."
     kind: statistic
     falsifiable_as: "class-IX roots ending nasal+consonant with nasal loss vs counterexamples (jñā, krī)"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3570"
-    claim_ru: "В 3 л. pl. Ā. атематических личное окончание без носового n (-ate, -ata, atām)."
-    kind: rule
-    falsifiable_as: "athematic Ā 3pl endings lack -n- (-ate/-ata/-atām) vs thematic -ante in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVI / mdx line 3574"
-    claim_ru: "Императив 2 л. sg. P. основы на согласную — -dhi; глаголы V/VII могут быть равны основе."
-    kind: allomorphy
-    falsifiable_as: "imperative 2sg -dhi/-hi/-āna/zero conditioning by stem-final/class, Whitney §704"
-    kochergina_gives_number: false
-  - loc: "Занятие XVII / mdx line 3878"
-    claim_ru: "Глаголы на -ā (yā, vā) сохраняют его во всех формах."
-    kind: universality
-    falsifiable_as: "ā-final class-II roots keep -ā throughout the present paradigm in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVII / mdx line 3910"
-    claim_ru: "han утрачивает -а- и h→gh в 3 л. pl. (ghnanti, aghnan, ghnantu)."
-    kind: rule
-    falsifiable_as: "han shows ghn- allomorph in 3pl of pres/impf/impv in corpus"
     kochergina_gives_number: false
   - loc: "Занятие XVII / mdx line 3960"
     claim_ru: "В 3 л. pl. praesens глаголов III класса утрачивается -n."
     kind: rule
     falsifiable_as: "reduplicating class-III presents take 3pl -ati (no -n-) in corpus"
     kochergina_gives_number: false
-  - loc: "Занятие XVII / mdx line 4024"
-    claim_ru: "kar в слабых формах = kuru, а перед окончаниями на m/y/v = kur."
-    kind: allomorphy
-    falsifiable_as: "kuru→kur truncation before m/y/v endings in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVIII / mdx line 4283"
-    claim_ru: "Корни с i/ī/u/ū в основе будущего имеют guṇa (e, o)."
-    kind: rule
-    falsifiable_as: "guṇa of root i/u in future stems (nī→neṣya, budh→bodhiṣya) in corpus"
-    kochergina_gives_number: false
   - loc: "Занятие XVIII / mdx line 4299"
     claim_ru: "-ś,-ṣ,-c,-ch, в большинстве случаев -j и -h → k перед будущим, при этом s → ṣ."
     kind: statistic
     falsifiable_as: "Share of j/h-final roots showing →k before -sya vs exceptions in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVIII / mdx line 4311"
-    claim_ru: "-d, -dh, -s → t перед будущим -sya (sad→satsyá-, vas→vatsyá-)."
-    kind: rule
-    falsifiable_as: "d/dh/s-final roots surface as t before future -sya in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVIII / mdx line 4351"
-    claim_ru: "Имя деятеля на -tar: гласные i/u как в будущем; суффиксу -tar может предшествовать -i."
-    kind: rule
-    falsifiable_as: "-tṛ agent nouns share root ablaut and -i- insertion with the future stem in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVIII / mdx line 4357"
-    claim_ru: "Женский род от -tar: -ī к слабой ступени (kartar → kartrī)."
-    kind: rule
-    falsifiable_as: "feminine agent nouns = weak-grade stem + -ī (kartṛ+ī→kartrī) in lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XIX / mdx line 4556"
-    claim_ru: "В сильных падежах nomina agentis имеют vṛddhi (ā), имена родства — guṇa (a)."
-    kind: allomorphy
-    falsifiable_as: "strong-case grade (vṛddhi vs guṇa) of agent vs kinship -tṛ stems in corpus"
     kochergina_gives_number: false
   - loc: "Занятие XIX / mdx line 4584"
     claim_ru: "В N.sg. все основы на -ar/-tar (m/f) утрачивают r (dātā, pitā, mātā)."
     kind: universality
     falsifiable_as: "every -ṛ/-tṛ m/f stem has r-less N.sg in -ā in corpus"
     kochergina_gives_number: false
-  - loc: "Занятие XIX / mdx line 4646"
-    claim_ru: "Описательное будущее: nomen agentis N.sg + as; в 3 л. глагол as не употребляется."
-    kind: rule
-    falsifiable_as: "periphrastic future = agent-noun N.sg + pres. as, 3rd person lacks auxiliary, in corpus"
-    kochergina_gives_number: false
   - loc: "Занятие XIX / mdx line 4688"
     claim_ru: "От основы будущего образуется сравнительно редко употребляемый conditionalis."
     kind: statistic
     falsifiable_as: "conditionalis token frequency relative to other finite categories in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 4924"
-    claim_ru: "Редупликация используется при образовании настоящего, перфекта, аориста, интенсивов и дезидеративов."
-    kind: typology
-    falsifiable_as: "Reduplication in exactly present-III, perfect, aorist, intensive, desiderative, Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 4942"
-    claim_ru: "При удвоении согласные I ряда → II ряда; h → j."
-    kind: rule
-    falsifiable_as: "velar→palatal (kar→cakar) and h→j reduplication mapping in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 4994"
-    claim_ru: "В эпическом/классическом санскрите значение perfectum часто приближается к imperfectum."
-    kind: statistic
-    falsifiable_as: "Proportion of perfect forms with past-narrative value in epic/classical DCS"
     kochergina_gives_number: false
   - loc: "Занятие XXI / mdx line 4996"
     claim_ru: "Простой перфект образуется от всех односложных корней на согласную или a/i/u/ṛ."
@@ -218,37 +118,6 @@ candidates:
     kind: allomorphy
     falsifiable_as: "perfect -i- insertion before consonantal endings, absent for r/u-final (kar, śru) in corpus"
     kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 5018"
-    claim_ru: "Открытый слог или a+одиночная согласная → vṛddhi в 3 л. sg. P. перфекта."
-    kind: rule
-    falsifiable_as: "vṛddhi in perfect 3sg P for open-syllable / a+single-consonant roots vs guṇa"
-    kochergina_gives_number: false
-  - loc: "Занятие XXII / mdx line 5229"
-    claim_ru: "Корни на -ā в 1/3 sg. P. принимают -au; опускают -ā перед окончаниями du/pl."
-    kind: rule
-    falsifiable_as: "ā-final roots take -au in perfect 1/3sg P and drop -ā before du/pl (yayau) in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XXII / mdx line 5257"
-    claim_ru: "Корни a+согласная (модель CaC) в слабых формах не удваиваются и меняют a на e (pat→pet-)."
-    kind: rule
-    falsifiable_as: "the -a-→-e- contracted weak perfect (pat→pet-, labh→lebh-) for CaC roots in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XXII / mdx line 5297"
-    claim_ru: "Описательный перфект — от глаголов на ī/ū, производных (каузативов), а также ās и vid."
-    kind: rule
-    falsifiable_as: "Roots attesting periphrastic perfect vs simple perfect: the ī/ū-initial, derived, ās, vid set"
-    kochergina_gives_number: false
-  - loc: "Занятие XXII / mdx line 5299"
-    claim_ru: "Описательный перфект = форма на -ām + as / bhū (редко) / kar в перфекте."
-    kind: statistic
-    falsifiable_as: "periphrastic-perfect auxiliaries āsa vs cakāra vs babhūva; babhūva rarest, DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXII / mdx line 5310"
-    claim_ru: "У личных местоимений 1/2 л. в A.D.G. есть краткие безударные энклитические формы."
-    kind: rule
-    falsifiable_as: "enclitic short forms only in Acc/Dat/Gen of 1st/2nd pronouns, Whitney §491"
-    kochergina_gives_number: false
-
   # ===== Занятия XXIII–XXVIII: seṭ/aniṭ, infinitive, absolutive, passive, pronouns (5280–7240) =====
   - loc: "Занятие XXIII / mdx line 5541"
     claim_ru: "По наличию -i- корни делятся на seṭ и aniṭ; есть смешанный тип veṭ."

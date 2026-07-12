@@ -1530,3 +1530,375 @@ entries:
     ref: Whitney §775, §1041 (class X / -aya)
     verdict_pedagogy: JUSTIFIED
     note: Correct class-X stem + accent. Anchor.
+
+
+  - id: HK-97
+    loc: Занятие XVI / mdx line 3469
+    claim_ru: 'Второе главное спряжение включает шесть классов: II, III, V, VIII, VII и IX.'
+    kind: typology
+    falsifiable_as: Athematic conjugation partitions into exactly these 6 class-numbers, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic (''second main'') conjugation comprises exactly six present-classes — II, III,
+      V, VII, VIII, IX — the count is exact'
+    ref: Whitney §606 (athematic classes)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the athematic classes. Anchor.
+
+  - id: HK-98
+    loc: Занятие XVI / mdx line 3475
+    claim_ru: Каждый корень выступает в двух звуковых видах — сильном (guṇa) и слабом.
+    kind: universality
+    falsifiable_as: Athematic roots showing exactly strong/weak (guṇa/zero) alternation vs 3-way in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: an athematic root alternates between a strong (guṇa/full) and a weak (zero/reduced) grade across
+      the paradigm — the defining property of athematic inflection'
+    ref: Whitney §604, §555 (strong/weak stem alternation)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct characterisation of athematic gradation. Anchor.
+
+  - id: HK-99
+    loc: Занятие XVI / mdx line 3486
+    claim_ru: 'Ударение: в сильных формах на корень/основу, в слабых — на личные окончания.'
+    kind: rule
+    falsifiable_as: Accent by strong/weak grade in accented Vedic athematic paradigms, Whitney §1085ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the accented (Vedic) athematic paradigm the accent falls on the root/stem in the strong forms
+      and on the personal ending in the weak forms'
+    ref: Whitney §1085ff (athematic accent by grade)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct accent-by-grade rule. Anchor.
+
+  - id: HK-100
+    loc: Занятие XVI / mdx line 3490
+    claim_ru: Класс II (корневой) постепенно делается непродуктивным.
+    kind: statistic
+    falsifiable_as: Declining class-II present frequency across chronological DCS strata
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'the root class (II) is unproductive as a type: in DCS-2021 its 154,301 present-system tokens are carried
+      by a handful of frozen high-frequency roots (as, vac, brū, yā, i, …), not by an open, growing set — token-frequent
+      but lexically closed'
+    ref: Whitney §611ff (root class); DCS verify_claims_dcs.py HK18_verb_class_share (class II)
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Класс II в DCS-2021 даёт 154 301 словоформу, но это несколько замороженных высокочастотных корней
+      (as, vac, brū, yā и др.), а не продуктивный тип: новых глаголов класс не пополняет. Высокая частотность при закрытом
+      составе — как раз признак непродуктивности.'
+    note: Historically accurate (the root class stopped taking new members); the corpus caveat is that class II is still
+      token-frequent because its few surviving roots are extremely common. Productivity ≠ frequency.
+
+  - id: HK-101
+    loc: Занятие XVI / mdx line 3523
+    claim_ru: Основа настоящего V класса — ослабленный корень + суффиксы nu-/no-.
+    kind: allomorphy
+    falsifiable_as: class-V present stems take -nu-/-no- by weak/strong grade in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-V present stem is the (weakened) root + -nu- (strong -no-) — su → sunó-/sunu-'
+    ref: Whitney §697ff (class V, svādi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-V stem formation. Anchor.
+
+  - id: HK-102
+    loc: Занятие XVI / mdx line 3544
+    claim_ru: Корни VII класса оканчиваются только на согласную, основа — инфиксы n-/na.
+    kind: universality
+    falsifiable_as: Every class-VII root ends in a consonant, forms present by n/na infix, Whitney §683ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: every class-VII (rudhādi) root ends in a consonant and forms its present by infixing the nasal
+      na- (strong) / -n- (weak) before the final consonant — yuj → yunák-/yuñj-'
+    ref: Whitney §683ff (class VII, nasal-infix)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: class VII is the nasal-infix class, all consonant-final. Anchor.'
+
+  - id: HK-103
+    loc: Занятие XVI / mdx line 3570
+    claim_ru: В 3 л. pl. Ā. атематических личное окончание без носового n (-ate, -ata, atām).
+    kind: rule
+    falsifiable_as: athematic Ā 3pl endings lack -n- (-ate/-ata/-atām) vs thematic -ante in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic Ātmanepada 3pl endings lack the -n- (-ate/-ata/-atām) that the thematic conjugation
+      shows (-ante/-anta/-antām)'
+    ref: Whitney §613 (athematic 3pl Ā endings)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct athematic-vs-thematic 3pl.Ā contrast. Anchor.
+
+  - id: HK-104
+    loc: Занятие XVI / mdx line 3574
+    claim_ru: Императив 2 л. sg. P. основы на согласную — -dhi; глаголы V/VII могут быть равны основе.
+    kind: allomorphy
+    falsifiable_as: imperative 2sg -dhi/-hi/-āna/zero conditioning by stem-final/class, Whitney §704
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic imperative 2sg P ending is -dhi/-hi on consonant/vowel stems, while class V/VII
+      stems may show a bare stem (imperative = stem) — the standard conditioned set'
+    ref: Whitney §704 (imperative 2sg -dhi/-hi/zero)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct imperative-2sg conditioning. Anchor.
+
+  - id: HK-105
+    loc: Занятие XVII / mdx line 3878
+    claim_ru: Глаголы на -ā (yā, vā) сохраняют его во всех формах.
+    kind: universality
+    falsifiable_as: ā-final class-II roots keep -ā throughout the present paradigm in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the ā-final class-II roots (yā, vā, …) keep -ā unchanged throughout the present paradigm (yā-ti,
+      yā-nti)'
+    ref: Whitney §621 (ā-roots of the root class)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: ā-roots are invariant in the present. Anchor.'
+
+  - id: HK-106
+    loc: Занятие XVII / mdx line 3910
+    claim_ru: han утрачивает -а- и h→gh в 3 л. pl. (ghnanti, aghnan, ghnantu).
+    kind: rule
+    falsifiable_as: han shows ghn- allomorph in 3pl of pres/impf/impv in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: han loses its -a- and shows h → gh in the 3pl of present/imperfect/imperative (ghnanti, aghnan,
+      ghnantu) — a lexical allomorphy of han'
+    ref: 'Whitney §637 (han: ghn- in the weakest forms)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct han allomorphy. Anchor.
+
+  - id: HK-107
+    loc: Занятие XVII / mdx line 4024
+    claim_ru: kar в слабых формах = kuru, а перед окончаниями на m/y/v = kur.
+    kind: allomorphy
+    falsifiable_as: kuru→kur truncation before m/y/v endings in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-VIII kṛ has the weak stem kuru-, truncated to kur- before endings beginning m/y/v (kurmas,
+      kuryāt, kurvanti)'
+    ref: 'Whitney §714 (kṛ: kuru-/kur-)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct kṛ present allomorphy. Anchor.
+
+  - id: HK-108
+    loc: Занятие XVIII / mdx line 4283
+    claim_ru: Корни с i/ī/u/ū в основе будущего имеют guṇa (e, o).
+    kind: rule
+    falsifiable_as: guṇa of root i/u in future stems (nī→neṣya, budh→bodhiṣya) in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the future stem takes guṇa of a root i/ī/u/ū (nī → neṣya-, bhū → bhaviṣya-, budh → bodhiṣya-)'
+    ref: Whitney §935 (guṇa in the s-future)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct future-stem guṇa rule. Anchor.
+
+  - id: HK-109
+    loc: Занятие XVIII / mdx line 4311
+    claim_ru: -d, -dh, -s → t перед будущим -sya (sad→satsyá-, vas→vatsyá-).
+    kind: rule
+    falsifiable_as: d/dh/s-final roots surface as t before future -sya in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (internal sandhi): root-final -d/-dh/-s surface as -t before the future -sya (sad → satsya-, vas
+      → vatsya-)'
+    ref: Whitney §936, §167 (d/dh/s → t before s)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pre-s internal sandhi. Anchor.
+
+  - id: HK-110
+    loc: Занятие XVIII / mdx line 4351
+    claim_ru: 'Имя деятеля на -tar: гласные i/u как в будущем; суффиксу -tar может предшествовать -i.'
+    kind: rule
+    falsifiable_as: -tṛ agent nouns share root ablaut and -i- insertion with the future stem in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the agent noun in -tṛ shares the future''s root ablaut and takes the connecting -i- for the same
+      (seṭ) roots that insert it in the future (kar-i-tṛ, but kar-tṛ)'
+    ref: Whitney §1182 (-tṛ agent nouns; seṭ -i-)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct parallel between the -tṛ noun and the future stem. Anchor.
+
+  - id: HK-111
+    loc: Занятие XVIII / mdx line 4357
+    claim_ru: 'Женский род от -tar: -ī к слабой ступени (kartar → kartrī).'
+    kind: rule
+    falsifiable_as: feminine agent nouns = weak-grade stem + -ī (kartṛ+ī→kartrī) in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the feminine of a -tṛ agent noun is the weak-grade stem + -ī (kartṛ + ī → kartrī)'
+    ref: Whitney §1182d (feminine of -tṛ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct feminine-derivation rule. Anchor.
+
+  - id: HK-112
+    loc: Занятие XIX / mdx line 4556
+    claim_ru: В сильных падежах nomina agentis имеют vṛddhi (ā), имена родства — guṇa (a).
+    kind: allomorphy
+    falsifiable_as: strong-case grade (vṛddhi vs guṇa) of agent vs kinship -tṛ stems in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the strong cases agent nouns in -tṛ take vṛddhi of the suffix (dātā́ram) while the kinship
+      terms (pitṛ, mātṛ, bhrātṛ) take only guṇa (pitáram) — the classic agent/kinship split'
+    ref: 'Whitney §369-373 (r-stems: agent vṛddhi vs kinship guṇa)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct and precisely the well-known agent/kinship strong-case contrast. Anchor.
+
+  - id: HK-113
+    loc: Занятие XIX / mdx line 4646
+    claim_ru: 'Описательное будущее: nomen agentis N.sg + as; в 3 л. глагол as не употребляется.'
+    kind: rule
+    falsifiable_as: periphrastic future = agent-noun N.sg + pres. as, 3rd person lacks auxiliary, in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic future = agent-noun Nom sg + present of as, with no overt auxiliary in the 3rd
+      person (dātā = ''he will give'', dātāsmi = ''I will give'')'
+    ref: Whitney §942-947 (periphrastic future)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct periphrastic-future construction incl. the 3rd-person auxiliary drop. Anchor.
+
+  - id: HK-114
+    loc: Занятие XXI / mdx line 4924
+    claim_ru: Редупликация используется при образовании настоящего, перфекта, аориста, интенсивов и дезидеративов.
+    kind: typology
+    falsifiable_as: Reduplication in exactly present-III, perfect, aorist, intensive, desiderative, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: reduplication is the marker of exactly the present class III, the perfect, the reduplicated aorist,
+      the intensive and the desiderative — the five reduplicating formations'
+    ref: Whitney §588 (uses of reduplication)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the reduplicating categories. Anchor.
+
+  - id: HK-115
+    loc: Занятие XXI / mdx line 4942
+    claim_ru: При удвоении согласные I ряда → II ряда; h → j.
+    kind: rule
+    falsifiable_as: velar→palatal (kar→cakar) and h→j reduplication mapping in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in reduplication a guttural (series I) reduplicates as the corresponding palatal (series II)
+      — kṛ → cakāra, gam → jagāma — and h reduplicates as j (hu → juhó-)'
+    ref: Whitney §590 (guttural → palatal, h → j in reduplication)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct reduplication-consonant mapping (distinct from the deaspiration rule HK-24). Anchor.
+
+  - id: HK-116
+    loc: Занятие XXI / mdx line 4994
+    claim_ru: В эпическом/классическом санскрите значение perfectum часто приближается к imperfectum.
+    kind: statistic
+    falsifiable_as: Proportion of perfect forms with past-narrative value in epic/classical DCS
+    sources:
+    - whitney
+    - dcs
+    verdict_fact: 'TRUE'
+    number: 'systemic (diachronic): in epic/classical Sanskrit the perfect loses its resultative value and is used as
+      a simple past ≈ the imperfect — DCS has 61,986 perfect tokens, comparable to the 47,554 imperfect, consistent
+      with the two competing as past-narrative tenses'
+    ref: Whitney §821-823 (perfect's later narrative use); DCS verify_claims_dcs.py HK15_past_tenses
+    verdict_pedagogy: JUSTIFIED
+    note: Correct diachronic observation; the corpus shows perfect and imperfect at comparable token counts, consistent
+      with both serving past narration in the classical stratum.
+
+  - id: HK-117
+    loc: Занятие XXI / mdx line 5018
+    claim_ru: Открытый слог или a+одиночная согласная → vṛddhi в 3 л. sg. P. перфекта.
+    kind: rule
+    falsifiable_as: vṛddhi in perfect 3sg P for open-syllable / a+single-consonant roots vs guṇa
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the perfect 3sg P takes vṛddhi of a root with an open syllable or a-+single-consonant (tan →
+      tatāna, but the 1sg has guṇa) — the strong-form vṛddhi rule'
+    ref: Whitney §793-794 (perfect strong-form vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct perfect strong-grade rule. Anchor.
+
+  - id: HK-118
+    loc: Занятие XXII / mdx line 5229
+    claim_ru: Корни на -ā в 1/3 sg. P. принимают -au; опускают -ā перед окончаниями du/pl.
+    kind: rule
+    falsifiable_as: ā-final roots take -au in perfect 1/3sg P and drop -ā before du/pl (yayau) in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ā-final roots take -au in the perfect 1sg/3sg P (dadau, yayau) and drop the -ā before the vowel-initial
+      du/pl endings'
+    ref: Whitney §793a (ā-root perfect -au)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ā-root perfect. Anchor.
+
+  - id: HK-119
+    loc: Занятие XXII / mdx line 5257
+    claim_ru: Корни a+согласная (модель CaC) в слабых формах не удваиваются и меняют a на e (pat→pet-).
+    kind: rule
+    falsifiable_as: the -a-→-e- contracted weak perfect (pat→pet-, labh→lebh-) for CaC roots in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: CaC roots (a + single consonant) form a contracted weak perfect in -e- without an overt reduplicating
+      syllable (pat → petur, labh → lebhe) — the Brugmann-type a → e'
+    ref: Whitney §794a (contracted -e- perfect of a-roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct account of the contracted perfect. Anchor.
+
+  - id: HK-120
+    loc: Занятие XXII / mdx line 5297
+    claim_ru: Описательный перфект — от глаголов на ī/ū, производных (каузативов), а также ās и vid.
+    kind: rule
+    falsifiable_as: 'Roots attesting periphrastic perfect vs simple perfect: the ī/ū-initial, derived, ās, vid set'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic perfect is used by roots in ī/ū, by the derivative (causative/desiderative/denominative)
+      conjugations, and by ās and vid — the standard root inventory'
+    ref: Whitney §1070-1071 (periphrastic perfect)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of periphrastic-perfect roots (the counterpart of the HK-25 overstatement). Anchor.
+
+  - id: HK-121
+    loc: Занятие XXII / mdx line 5299
+    claim_ru: Описательный перфект = форма на -ām + as / bhū (редко) / kar в перфекте.
+    kind: statistic
+    falsifiable_as: periphrastic-perfect auxiliaries āsa vs cakāra vs babhūva; babhūva rarest, DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic perfect = the -ām form + the perfect of an auxiliary — most often āsa (as),
+      less often cakāra (kṛ), and rarely babhūva (bhū); the babhūva-rarest ranking is Whitney''s'
+    ref: Whitney §1071b-c (periphrastic-perfect auxiliaries; āsa ≫ cakāra > babhūva)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct auxiliary ranking, incl. the '(редко) bhū'. Anchor; exact token split not carried by the DCS-2021
+      export.
+
+  - id: HK-122
+    loc: Занятие XXII / mdx line 5310
+    claim_ru: У личных местоимений 1/2 л. в A.D.G. есть краткие безударные энклитические формы.
+    kind: rule
+    falsifiable_as: enclitic short forms only in Acc/Dat/Gen of 1st/2nd pronouns, Whitney §491
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the 1st/2nd person pronouns have unaccented enclitic short forms only in the Acc, Dat and Gen
+      (mā/me, tvā/te, nau/vām, naḥ/vaḥ) — never in Nom/Ins/Abl/Loc'
+    ref: Whitney §491 (enclitic pronoun forms)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the enclitics are confined to Acc/Dat/Gen. Anchor.'
