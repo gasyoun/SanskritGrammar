@@ -19,6 +19,14 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **Sangram editorial + i18n contract (C4, H633)**: article manifest schema
+  ([sangram/editorial/data/article.schema.json](sangram/editorial/data/article.schema.json)),
+  fixture, validator (`python scripts/article_validate.py --self-test`) and the
+  prose contract page ([sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx](sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)):
+  RU-default/EN-translation locales, one canonical SLP1 copy per example
+  (IAST/Devanagari derived via sanskrit-util), scientific/pedagogical layers,
+  stable `ex:<slug>:<n>` example IDs with locus/translation/provenance,
+  public⇒https / internal⇒no-URL evidence rule, leakage = 0.
 - **Errata system** (`/errata` skill): every book folder carries an `errata.yml`
   structured source → generated `<Book>/ERRATA.md` + root `ERRATA.md` index via
   `scripts/build_errata.py` (`npm run errata`). Each erratum records who found it
