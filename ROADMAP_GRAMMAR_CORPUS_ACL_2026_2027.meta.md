@@ -22,7 +22,7 @@ Not a public-facing document.
 Authored 10-07-2026 by Opus 4.8 (`claude-opus-4-8`) in a single session, from four human decisions
 taken that day (four spines in scope · ACL crosswalk covers method + product + benchmark · repo
 promoted from Tier 2 to priority research · agenda delegated to Fable 5 `claude-fable-5` as
-[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md)).
+[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md)).
 
 The ACL-Anthology citations were **live-fetched and verified** in that session by three read-only
 research agents — none is recalled from model memory. The verified non-findings (no ACL precedent

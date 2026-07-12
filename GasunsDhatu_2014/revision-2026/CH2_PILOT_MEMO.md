@@ -5,7 +5,7 @@ _Created: 08-07-2026 · Last updated: 10-07-2026 (3-й проход — прав
 Памятка-отчет по пилоту метода «переработка, а не заплатка» на Главе 2
 ([02_gasuns-dhatu-PhD-text2.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx),
 строки ~1203–2020). Выполнено Fable 5 (`claude-fable-5`) по
-[H358](https://github.com/gasyoun/Uprava/blob/main/handoffs/H358-Fable_SanskritGrammar_gasuns-dhatu-ch2-monograph-pilot_08.07.26.md);
+[H358](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H358-Fable_SanskritGrammar_gasuns-dhatu-ch2-monograph-pilot_08.07.26.md);
 материал для решения автора — продолжать ли метод на Гл. 1, 3 и Обзор литературы.
 
 ## Что именно слито / переписано / сохранено
@@ -50,7 +50,7 @@ _Created: 08-07-2026 · Last updated: 10-07-2026 (3-й проход — прав
    [TolchelnikovTalmud_2026](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026);
    числа сверены по `data/whitney_talmud.json` (930 verbal_roots). Глубокое трехстороннее
    сопоставление 1975 → Гасунс 2014 → Толчельников 2026 — отдельный queued handoff
-   [H357](https://github.com/gasyoun/Uprava/blob/main/handoffs/H357-Opus_SanskritGrammar_morphoclass_3way_comparison_08.07.26.md)
+   [H357](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H357-Opus_SanskritGrammar_morphoclass_3way_comparison_08.07.26.md)
    (мемо + кросс-уок; его дом — Гл. 3, не Гл. 2).
 
 ### Сохранено в этом пилоте (НЕ значит «идеально» — см. ниже)

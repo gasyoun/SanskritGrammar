@@ -6,7 +6,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 §6.5 по запросу автора (одобрен 09-07-2026): прогнать прозу диссертации не только
 паспортом `zalizniak-method` (был в совете `sanskrit`), но и остальными восемью
 ипостасями Зализняка из [RuWritingStyles](https://github.com/gasyoun/RuWritingStyles).
-Выполнено по [H415](https://github.com/gasyoun/Uprava/blob/main/handoffs/H415-Sonnet_SanskritGrammar_gasuns-dhatu-rws-edits-execute-recouncil_09.07.26.md) п. 4.
+Выполнено по [H415](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H415-Sonnet_SanskritGrammar_gasuns-dhatu-rws-edits-execute-recouncil_09.07.26.md) п. 4.
 
 ## 1. Метод
 

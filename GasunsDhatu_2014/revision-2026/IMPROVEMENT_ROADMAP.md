@@ -16,12 +16,12 @@ _Created: 07-07-2026 · Last updated: 08-07-2026_
 **«Состав и строй древнеиндийских корней: история изучения»** (дисс. 2014). Сводит
 воедино научную ревизию [H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md)
 (проверка положений, логические ошибки L1–L11, отзывы оппонентов C1–C14),
-стилистический проход [H275](https://github.com/gasyoun/Uprava/blob/main/handoffs/H275-Fable_SanskritGrammar_gasuns-dhatu-rws-style-pass_07.07.26.md),
+стилистический проход [H275](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H275-Fable_SanskritGrammar_gasuns-dhatu-rws-style-pass_07.07.26.md),
 черновики положений в [PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PROPOSALS.md),
 и **новую проверку чисел печатного слоя + карту переиспользования данных**, выполненную
 07-07-2026 (Opus 4.8 `claude-opus-4-8` + агент-верификатор `fact-check-against-source`).
 Исполнение делегировано Fable-сессии
-[H328](https://github.com/gasyoun/Uprava/blob/main/handoffs/H328-Fable_SanskritGrammar_gasuns-dhatu-print-execute_07.07.26.md).
+[H328](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H328-Fable_SanskritGrammar_gasuns-dhatu-print-execute_07.07.26.md).
 
 > **Разделение труда.** Механику и фактические правки делает агент; **научную редактуру
 > положений, Заключения и сплошную стилистику визирует человек** (правило H246). Ничего из

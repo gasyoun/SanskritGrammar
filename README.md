@@ -227,7 +227,7 @@ section on the page itself (Bühler here is the 1923 reprint, not the 1878
 original; IAST matching is noisier than Devanagari; catalog numbering
 (`C0001`…) is independent of each book's own numbering). The near-match
 spot-check review is documented in
-[H327](https://github.com/gasyoun/Uprava/blob/main/handoffs/H327-Sonnet_SanskritGrammar_buhler-knauer-kochergina-concordance_07.07.26.md).
+[H327](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H327-Sonnet_SanskritGrammar_buhler-knauer-kochergina-concordance_07.07.26.md).
 
 ## Whitney — *A Sanskrit Grammar* (1889), the reference spine
 

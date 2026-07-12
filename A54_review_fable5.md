@@ -9,7 +9,7 @@ _Created: 11-07-2026 · Last updated: 11-07-2026_
 факт-чекеров (fact-check-against-source, Fable 5 `claude-fable-5`) — по одному на семейство
 источников: Куликов-PDF, Десницкая-PDF, линия Толчельникова (4 mdx + тезисы-PDF),
 Прогулки-OCR/Плунгян-ASR/Гасунс-2021-PDF, § 2/Уитни/Панини/библиография. Handoff
-[H552](https://github.com/gasyoun/Uprava/blob/main/handoffs/H552-Fable_SanskritGrammar_iil-zalizniak-polemic-article_10.07.26.md).
+[H552](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H552-Fable_SanskritGrammar_iil-zalizniak-polemic-article_10.07.26.md).
 
 **Вердикт: PROCEED (fixable) — все Major и все текстовые Minor применены этим же проходом
 ([PR #93](https://github.com/gasyoun/SanskritGrammar/pull/93)); к подаче блокируют только

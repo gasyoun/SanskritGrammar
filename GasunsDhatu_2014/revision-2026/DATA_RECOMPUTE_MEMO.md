@@ -4,7 +4,7 @@ _Created: 08-07-2026 · Last updated: 08-07-2026_
 
 Памятка о пересчете вычислительных результатов §2.5 диссертации Гасунса «Состав и
 строй древнеиндийских корней» (2014) на открытых воспроизводимых корпусах 2026 г.
-Выполнено по [H382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H382-Opus_SanskritGrammar_gasuns-dhatu-data-recompute-2026_08.07.26.md)
+Выполнено по [H382](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H382-Opus_SanskritGrammar_gasuns-dhatu-data-recompute-2026_08.07.26.md)
 (решение автора от 08-07-2026: пересчитать ВСЕ данные 2014 г.; прежний запрет
 H246/H328/H358 «не пересчитывать вычислительные результаты» снят). Пересчет
 Таблицы 5 (варги) выполнен раньше и здесь не повторяется —

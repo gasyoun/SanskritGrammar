@@ -8,7 +8,7 @@ _Created: 07-07-2026 · Last updated: 09-07-2026_
 «буквально каждый абзац требует повторного чтения»; Никольская: разговорный, а не
 научный регистр; Крылов: сумбур в композиции). **Текст книги в этом проходе не
 правился** — только диагностика и предложения; финальное слово за человеком-редактором.
-Выполнено по [H275](https://github.com/gasyoun/Uprava/blob/main/handoffs/H275-Fable_SanskritGrammar_gasuns-dhatu-rws-style-pass_07.07.26.md)
+Выполнено по [H275](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H275-Fable_SanskritGrammar_gasuns-dhatu-rws-style-pass_07.07.26.md)
 (приватный хаб), продолжение механики
 [H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md).
 
@@ -679,7 +679,7 @@ H246, но формулировки «набирают популярность 
 (с датой визы и `note: правка текста не вносилась`) и в
 [PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PROPOSALS.md),
 а сведение утвержденных правок в печатный текст выполняется отдельной сессией
-([H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md)).
+([H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md)).
 
 ### 6.1. Д4 — терминологическая дисциплина (IAST): конвенция ПРИНЯТА
 
@@ -687,7 +687,7 @@ H246, но формулировки «набирают популярность 
 передача + IAST в скобках, далее свободно. Один механический проход по книге разрешен
 (агентная сессия после этой визы); точечная проверка ведийский/классический (~20 мест
 из приложения) — в том же проходе. Агент может продолжать — проход вынесен в
-[H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md).
+[H413](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H413-Opus_SanskritGrammar_gasuns-dhatu-rws-visa_09.07.26.md).
 
 ### 6.2. Д5 — оптика персон: честная маркировка, поперсонная судьба
 
@@ -762,7 +762,7 @@ H246, но формулировки «набирают популярность 
 *Vyākaraṇa-Mahābhāṣya* (Kielhorn 1892–1909), Cardona 1997 (*Pāṇini: A Survey of Research*),
 Staal 1985 (*A Reader on Sanskrit Grammarians*), Scharfe 1977 (*Grammatical Literature*).
 Отдельный handoff — см.
-[H414](https://github.com/gasyoun/Uprava/blob/main/handoffs/H414-Opus_SanskritGrammar_gasuns-dhatu-panini-commentary-corpus-skill_09.07.26.md).
+[H414](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H414-Opus_SanskritGrammar_gasuns-dhatu-panini-commentary-corpus-skill_09.07.26.md).
 
 **Собрано** (H414, 09-07-2026): скилл `/panini-commentary-corpus` поверх
 [commentary_corpus.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/commentary_corpus.py)

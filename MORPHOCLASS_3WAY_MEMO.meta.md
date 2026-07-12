@@ -15,7 +15,7 @@ _Created: 08-07-2026 · Last updated: 11-07-2026_
 
 ## Провенанс
 
-- Проход **H357** ([handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H357-Opus_SanskritGrammar_morphoclass_3way_comparison_08.07.26.md)),
+- Проход **H357** ([handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H357-Opus_SanskritGrammar_morphoclass_3way_comparison_08.07.26.md)),
   модель **Opus 4.8 (`claude-opus-4-8`)**. Спека —
   [`MORPHOCLASS_COMPARISON_ROADMAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md).
 - Первоисточники (полные тексты в репозитории): 1975 англ. перевод, Гасунс 2014

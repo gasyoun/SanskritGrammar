@@ -17,7 +17,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 **русская линия записи** продолжается в 2026 г. (Зализняк → Толчельников). Поэтому в
 переработке 2026-данные внесены не абзацами, а **двумя сносками-провенансами** (`[^edlr1]`
 числа, `[^edlr2]` линия Уитни→Зализняк→Толчельников) + перекрестными ссылками на §2.4 и
-§3.2, где эти данные уже живут после [H382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H382-Opus_SanskritGrammar_gasuns-dhatu-data-recompute-2026_08.07.26.md)
+§3.2, где эти данные уже живут после [H382](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H382-Opus_SanskritGrammar_gasuns-dhatu-data-recompute-2026_08.07.26.md)
 и [H358](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_PILOT_MEMO.md).
 
 ## По трем вопросам книги

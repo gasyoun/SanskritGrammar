@@ -3,7 +3,7 @@
 _Created: 10-07-2026 · Last updated: 12-07-2026_
 
 **Provenance:** authored by Fable 5 (`claude-fable-5`) executing
-[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md)
+[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md)
 via [`/dh-memo`](https://github.com/gasyoun/claude-config/blob/main/commands/dh-memo.md), on the plan in
 [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md)
 (Opus 4.8 `claude-opus-4-8`, 10-07-2026). The roadmap is the **plan**; this memo is the **agenda**:

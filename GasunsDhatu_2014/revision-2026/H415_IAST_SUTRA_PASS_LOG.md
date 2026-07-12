@@ -2,7 +2,7 @@
 
 _Created: 09-07-2026 · Last updated: 09-07-2026_
 
-Итог по [H415](https://github.com/gasyoun/Uprava/blob/main/handoffs/H415-Sonnet_SanskritGrammar_gasuns-dhatu-rws-edits-execute-recouncil_09.07.26.md)
+Итог по [H415](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H415-Sonnet_SanskritGrammar_gasuns-dhatu-rws-edits-execute-recouncil_09.07.26.md)
 пп. 2–3: механический проход конвенции IAST (§ 6.1 RWS_REPORT.md, «вариант а») +
 ссылки на сутры Панини (§ 6.6) через `/panini-sutra-lookup`
 ([panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py)).

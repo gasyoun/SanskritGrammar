@@ -3,7 +3,7 @@
 _Created: 07-07-2026 · Last updated: 08-07-2026_
 
 Working notes for the 2026 print edition of Gasūns, «Состав и строй древнеиндийских корней»
-([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
+([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
 These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only includes
 `GasunsDhatu_2014/**.mdx`, so nothing here is published on the public reading site.
 

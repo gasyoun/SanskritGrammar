@@ -48,7 +48,7 @@ method, site product, and benchmark packaging, ranked; (3) the repo is **promote
 to a priority research thread** in the standing order of
 [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md);
 (4) the research agenda proper is delegated to Fable 5 (`claude-fable-5`) as
-[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md).
+[H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md).
 
 This file is the **plan**. H450's memo is the **agenda**. Neither is the analysis.
 
