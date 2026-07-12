@@ -102,6 +102,20 @@ as "-syá по единому правилу" while the seṭ form **-iṣya is 
 conditioning is the seṭ/aniṭ lexical class of **S2**. Two `@DECIDE` open (see GTD): generalise the
 claim-verification layer to the other grammars? and a source-conflict tie-break rule.
 
+**S1 metalanguage extension — quantifier register + Zaliznyak comparison (H800, 13-07-2026, done).**
+A second register grades not the *assertions* but the *quantifiers* — the metalanguage words that
+scope a rule (редко / обычно / только / некоторые / могут / всегда): [`quantifiers.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/quantifiers.yml)
+per source, auto-proxy anchored/unanchored tagged (`npm run quantifiers`) → [`QUANTIFIER_PROFILE.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/QUANTIFIER_PROFILE.md),
+over Kochergina 1998 + all three Zaliznyak works ([`GRADATION_METALANGUAGE_KOCHERGINA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/GRADATION_METALANGUAGE_KOCHERGINA.md)
+§2а/§4, [PR #151](https://github.com/gasyoun/SanskritGrammar/pull/151)). **Honest negative worth
+recording:** the intuitive "Zaliznyak's quantifiers are anchored to a class, Kochergina's hang on
+nothing" is **refuted** at the per-quantifier level — hand-verified anchoredness is high and similar
+across the three descriptive grammars (~83–88%). The real discriminators are density (a denominator
+artifact once the glossary+reader are excluded: ~1.5–2× per grammar-prose line, not 9×) and anchor
+**type** (Kochergina anchors on affixes/named forms with **0% §**; the 1975 classification on its
+numbered formal calculus, **90%**) — the quantifier-level fingerprint of the Whitney→Zaliznyak→Talmud
+describe→abstract→generate line. Apparatus, not a paper (**@DECIDE** anchor window N=8).
+
 **S1 analysis output — "grammar claims the corpus does not confirm" (paper A60, H773, 12-07-2026).**
 The `OVERSTATED`/`FALSE` subset of the claim register is itself a corpus-adjudicated finding with no
 strong ACL precedent (it fills the documented "no paper treats seṭ/aniṭ as a corpus-adjudicated
