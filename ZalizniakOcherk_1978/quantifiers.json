@@ -1,0 +1,51 @@
+{
+  "book": "ZalizniakOcherk_1978",
+  "work": "Zalizniak, Грамматический очерк санскрита, 1978",
+  "lang": "ru",
+  "grammar_hits": 832,
+  "grammar_lines": 420,
+  "density_grammar": 1.981,
+  "density_total": 0.266,
+  "anchored_share": 51.8,
+  "axis": {
+    "universal": 263,
+    "frequency": 192,
+    "optionality": 176,
+    "subset": 115,
+    "rarity": 71,
+    "productivity": 15
+  },
+  "anchor_types": {
+    "§": 198,
+    "аффикс": 146,
+    "тип": 31,
+    "правило": 22,
+    "склонение": 13,
+    "спряжение": 10,
+    "класс": 8,
+    "пункт": 2,
+    "Ряд": 1
+  },
+  "sensitivity": {
+    "6": 45.2,
+    "8": 51.8,
+    "12": 64.1,
+    "16": 72.2,
+    "25": 83.7,
+    "40": 91.7
+  },
+  "generated": "13-07-2026",
+  "sample": {
+    "n": 36,
+    "tp": 16,
+    "fp": 0,
+    "fn": 15,
+    "tn": 5,
+    "precision": 100.0,
+    "recall": 51.6,
+    "agreement": 58.3,
+    "human_share": 86.1,
+    "miss_rate": 0.75,
+    "lexicon_fp": 0
+  }
+}

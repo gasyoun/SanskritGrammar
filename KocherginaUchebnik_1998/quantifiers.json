@@ -1,0 +1,50 @@
+{
+  "book": "KocherginaUchebnik_1998",
+  "work": "Kochergina, Учебник санскрита, 1998",
+  "lang": "ru",
+  "grammar_hits": 310,
+  "grammar_lines": 233,
+  "density_grammar": 1.33,
+  "density_total": 0.0197,
+  "anchored_share": 46.5,
+  "axis": {
+    "universal": 99,
+    "optionality": 73,
+    "subset": 59,
+    "frequency": 47,
+    "rarity": 28,
+    "productivity": 4
+  },
+  "anchor_types": {
+    "аффикс": 84,
+    "класс": 13,
+    "правило": 12,
+    "тип": 11,
+    "спряжение": 11,
+    "склонение": 10,
+    "%": 2,
+    "Ряд": 1
+  },
+  "sensitivity": {
+    "6": 37.7,
+    "8": 46.5,
+    "12": 56.8,
+    "16": 62.6,
+    "25": 71.6,
+    "40": 82.3
+  },
+  "generated": "13-07-2026",
+  "sample": {
+    "n": 34,
+    "tp": 13,
+    "fp": 2,
+    "fn": 15,
+    "tn": 4,
+    "precision": 86.7,
+    "recall": 46.4,
+    "agreement": 50.0,
+    "human_share": 82.4,
+    "miss_rate": 0.7895,
+    "lexicon_fp": 4
+  }
+}

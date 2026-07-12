@@ -1,0 +1,436 @@
+# quantifiers.sample.yml — hand-verified (H800 D3). Adjudicator: Opus 4.8 (claude-opus-4-8).
+# human_anchored is the reviewer's read of whether the quantifier is tied to a decidable
+# target (named class/type/§/position/series/grade/affix/form/condition/number). 'lexicon-FP'
+# notes flag matches that are not genuine scope quantifiers. build_quantifiers.py reads this.
+work: Zalizniak, Morphophonological Classification of Sanskrit Verbal Roots, 1975
+sample_of: ZalizniakMorphology_1975/quantifiers.yml
+sample:
+- id: ZAL-Q0001
+  loc: L9
+  axis: frequency
+  q: in general
+  auto_anchored: false
+  auto_anchor: null
+  context: Translated from Russian by I. Tolchelnikov, edited by M. Ishimbaev. In descriptions of the
+    Sanskrit language (both ancient and modern), the concept of the root in general and the verbal root
+    in particular is widely used. In this respect, Sanskrit language differs from most other Indo-European
+    languages (especially mode
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: ''root in general vs in particular'''
+- id: ZAL-Q0031
+  loc: L27
+  axis: frequency
+  q: Frequently
+  auto_anchored: false
+  auto_anchor: null
+  context: In some cases, the verbal paradigm cannot be derived from a single root surface form via general
+    rules, making it necessary to include so-called root-variants (or variant roots). In such a case,
+    a part of the paradigm is derived from one variant, while another part is derived from another. For
+    example, the root 'to blo
+  human_anchored: true
+  human_anchor: root-variants (named concept)
+  note: null
+- id: ZAL-Q0223
+  loc: L403
+  axis: frequency
+  q: predominantly
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^13]: A root that can in principle be assigned to several alternation series is assigned
+    to the one that comes first in the sequence N, M, U, I, R, A~2~, A~1~ (however, roots with *a* or
+    *ā*, after which a nasal does not appear anywhere, are assigned to the A~1~ or A~2~ rows, and not
+    M or N). The ambiguity of choice b'
+  human_anchored: true
+  human_anchor: alternation series N,M,U,I,R,A2,A1
+  note: null
+- id: ZAL-Q0232
+  loc: L429
+  axis: frequency
+  q: usually
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^26]: Or at least they should end in *a*+C in accordance with the tables of the alternation
+    series. [^27]: In the precative forms, *ā* before *yā* usually transforms into *e*. [^28]: The anomalous
+    root *mṛj* to wipe'' fluctuates between the correlation type I and the following special correlation
+    type: 1 --- zero grade'
+  human_anchored: true
+  human_anchor: condition (ā before yā) + precative
+  note: null
+- id: ZAL-Q0044
+  loc: L39
+  axis: frequency
+  q: generally
+  auto_anchored: true
+  auto_anchor: grade
+  context: 'To prevent ambiguity in subsequent parts of the paper, comprehensive tables of the three-grade
+    alternation are presented (Tables 1, 2; cf. \[4, §73\]). Each alternation series is denoted by a symbol
+    (e.g., A~1~, U~2~, etc.), where the letter corresponds to the characteristic element of that series.
+    Generalized symbols '
+  human_anchored: true
+  human_anchor: alternation series + grade + Tables + §73
+  note: null
+- id: ZAL-Q0107
+  loc: L191
+  axis: frequency
+  q: generally
+  auto_anchored: true
+  auto_anchor: type
+  context: 'The remaining roots ending in *ā* belong to type II; examples: *khyā* ''to see'' --- *khyātaḥ*,
+    *khyāyate*, *cakhyuḥ*, aorist 2 *akhyat*; *bhā* ''to shine'' --- *bhātaḥ*; *vā* ''to blow'' --- *vātaḥ*
+    (*vānaḥ*). The root *rā* ''to give'' (*rātaḥ*) shows faint traces of type I in the Vedas (present
+    tense 3 *rirīhi*, *rarīdhvam* '
+  human_anchored: true
+  human_anchor: type II + condition (ending in ā) + roots
+  note: null
+- id: ZAL-Q0007
+  loc: L11
+  axis: optionality
+  q: can
+  auto_anchored: false
+  auto_anchor: null
+  context: In descriptions of the Sanskrit language (both ancient and modern), the concept of the root
+    in general and the verbal root in particular is widely used. In this respect, Sanskrit language differs
+    from most other Indo-European languages (especially modern ones) but shows similarities with, for
+    example, the Semitic langu
+  human_anchored: false
+  human_anchor: null
+  note: methodological intro
+- id: ZAL-Q0052
+  loc: L101
+  axis: optionality
+  q: can
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Let us call a morphological formation the following pair: a certain morphological structure
+    + the corresponding grammatical or derivational meaning (or set of meanings). By morphological structure
+    we will mean an indication of which affix (or affixes) is added to the root. The presence or absence
+    of the connecting vowe'
+  human_anchored: false
+  human_anchor: null
+  note: methodological definition ('which affix')
+- id: ZAL-Q0201
+  loc: L353
+  axis: optionality
+  q: may
+  auto_anchored: false
+  auto_anchor: null
+  context: Up to this point, we limited ourselves to a сertain method of root nomenclature that approximates
+    the real method, though such limitation is not strictly necessary. Conventional designation systems
+    generally permit the transfer (partial or complete) of classificatory information about an object
+    into its very designatio
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: designation systems'
+- id: ZAL-Q0250
+  loc: L479
+  axis: optionality
+  q: variants
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^51]: Cf. *dhvāntaḥ* ''dark'' (with irregular *ān* instead of *ā*). Also, *dhvan* ''to sound'',
+    in addition to the regular participle *dhvanitaḥ* (type II), also has the derivative *dhvāntaḥ* (the
+    name of a certain wind). [^52]: The names of roots of type I from this group in Whitney''s list are
+    usually given in two varian'
+  human_anchored: true
+  human_anchor: forms dhvan/dhvāntaḥ + type I
+  note: null
+- id: ZAL-Q0021
+  loc: L25
+  axis: optionality
+  q: variants
+  auto_anchored: true
+  auto_anchor: rule
+  context: The root designations adopted here are those used in Whitney's list [^5] (individual deviations
+    are mentioned in the respective places). However, in the final section of this paper we discuss the
+    possibility of designing an alternative designation system. In some cases, the verbal paradigm cannot
+    be derived from a sing
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: nomenclature/designation system'
+- id: ZAL-Q0086
+  loc: L157
+  axis: optionality
+  q: possible
+  auto_anchored: true
+  auto_anchor: type
+  context: Roots of type I may also be termed roots with full alternation, while roots of the other three
+    types may be called roots with partial alternation. The absence of alternation is thus considered
+    as a special case of partial alternation. The data shows that assignment of a root to one of these
+    four types does not generall
+  human_anchored: true
+  human_anchor: type I + partial/full alternation
+  note: null
+- id: ZAL-Q0014
+  loc: L17
+  axis: productivity
+  q: regular
+  auto_anchored: false
+  auto_anchor: null
+  context: However, for practical purposes, merely having a list of allomorphs is not sufficient; it is
+    also necessary to know the rules governing their distribution. Ideally, the root designation should
+    allow one to determine, which allomorph of the root should appear in any given morphological formation[^2]
+    (as well as presence
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: ''rules governing distribution'''
+- id: ZAL-Q0106
+  loc: L185
+  axis: productivity
+  q: regular
+  auto_anchored: false
+  auto_anchor: null
+  context: '1\. Roots ending in an alternating element (approximately 50). They are distributed roughly
+    equally between types I and II. Examples of type I roots (in morphological position 1): *sthā* ---
+    *sthitaḥ*, *sthīyate*, *tasthuḥ*, aorist 1 *asthita*, aorist 4 *asthiṣi*; *pā* ''to drink'' --- *pītaḥ*,
+    *pīyate*, *papuḥ*; *jyā* '''
+  human_anchored: true
+  human_anchor: types I/II + position 1 + roots
+  note: null
+- id: ZAL-Q0142
+  loc: L227
+  axis: productivity
+  q: regular
+  auto_anchored: false
+  auto_anchor: null
+  context: '2\. Roots ending in a consonant (approximately 60). The classification of this group presents
+    certain difficulties, since some roots shift between alternation series M, N and series A~1~. Examples
+    of type I roots: *stambh*[^52] ''to prop'' --- *stabhitaḥ* (*stabdhaḥ*), *stabhyate*, Vedic *tastabhuḥ*
+    (but in the Epics *ta'
+  human_anchored: true
+  human_anchor: series M/N/A1 + type + roots
+  note: null
+- id: ZAL-Q0236
+  loc: L437
+  axis: productivity
+  q: regular
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^30]: In the lists of roots the mark Vedic applies only to the immediately following root.
+    [^31]: According to ancient Indian grammarians, this list also includes *bhrajj* (//*bhṛjj*) ''to
+    roast'', but on the ground of the actually attested forms, this root can be simply seen as *bhṛjj*
+    (same in Whitney''s list, comp. al'
+  human_anchored: true
+  human_anchor: root bhrajj + attestation
+  note: null
+- id: ZAL-Q0093
+  loc: L167
+  axis: productivity
+  q: systematically
+  auto_anchored: true
+  auto_anchor: type
+  context: 'Type IV, excluding doubtful cases, consists only of the following roots: *ḍhauk* ''to approach'',
+    *mārg* ''to chase'', *kāṅkṣ* ''to desire'', *vāñch* ''to desire'', *dhāv* ''to run'', *dhāv* ''to
+    rinse'' (though, in the Ṛgveda, *dhūtaḥ* is still given according to type I; from the Samaveda onward,
+    *dhautaḥ*), *cāy* ''to note, obser'
+  human_anchored: true
+  human_anchor: type IV + roots ḍhauk/mārg
+  note: null
+- id: ZAL-Q0126
+  loc: L213
+  axis: productivity
+  q: regular
+  auto_anchored: true
+  auto_anchor: position
+  context: 'A сertain group of roots with *ī*, *ū* (type III) presents its variants with *i*, *u* (type
+    I) or with *e*, *o* (type II). Types I and III coexist for: *guh* ''to hide'' (type I: *guhyate*,
+    -*guhya*; cf. derivative *gohaḥ* ''den'') // *gūh* (type III: present tense 1 *gūhati*, *gūhitum*,
+    *gūhayati*, etc.); *uh* ''to remove'''
+  human_anchored: true
+  human_anchor: types I/III + roots guh/gūh + position
+  note: null
+- id: ZAL-Q0118
+  loc: L203
+  axis: rarity
+  q: rarely
+  auto_anchored: false
+  auto_anchor: null
+  context: '2\. Roots ending in a consonant (the largest group of roots --- about 360). A small subgroup
+    belongs to type II; examples (for morphological position 1): *sev* ''to serve'' --- *sevitaḥ*, *sevyate*,
+    *siṣeve*; *lok* ''to look'' --- *luloke*; *garh* ''to chide'' --- *garhitaḥ*, *garhyate*, *jagarhe*.
+    Other type II roots: *edh*'
+  human_anchored: true
+  human_anchor: type II + condition + forms sev
+  note: null
+- id: ZAL-Q0157
+  loc: L231
+  axis: rarity
+  q: rarely
+  auto_anchored: false
+  auto_anchor: null
+  context: 'A group of roots has two variants: a) a variant from series M or N (type I); b) a variant
+    from series A~1~ (type II); for example: *daṁç* (//*daç*) ''to bite''. The distinction appears only
+    in morphological positions 2 and 3 (cf. *daṁçayati* and *daçiṣyati*). In morphological position 1,
+    both variants coincide: *daṣṭaḥ*,'
+  human_anchored: true
+  human_anchor: series M/N/A1 + type + positions 2/3
+  note: null
+- id: ZAL-Q0127
+  loc: L213
+  axis: rarity
+  q: rarely
+  auto_anchored: true
+  auto_anchor: type
+  context: 'A сertain group of roots with *ī*, *ū* (type III) presents its variants with *i*, *u* (type
+    I) or with *e*, *o* (type II). Types I and III coexist for: *guh* ''to hide'' (type I: *guhyate*,
+    -*guhya*; cf. derivative *gohaḥ* ''den'') // *gūh* (type III: present tense 1 *gūhati*, *gūhitum*,
+    *gūhayati*, etc.); *uh* ''to remove'''
+  human_anchored: true
+  human_anchor: types I/III + roots
+  note: null
+- id: ZAL-Q0002
+  loc: L9
+  axis: subset
+  q: most
+  auto_anchored: false
+  auto_anchor: null
+  context: Translated from Russian by I. Tolchelnikov, edited by M. Ishimbaev. In descriptions of the
+    Sanskrit language (both ancient and modern), the concept of the root in general and the verbal root
+    in particular is widely used. In this respect, Sanskrit language differs from most other Indo-European
+    languages (especially mode
+  human_anchored: false
+  human_anchor: null
+  note: 'comparative: ''most other Indo-European languages'''
+- id: ZAL-Q0049
+  loc: L99
+  axis: subset
+  q: certain
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Let us call a morphological formation the following pair: a certain morphological structure
+    + the corresponding grammatical or derivational meaning (or set of meanings). By morphological structure
+    we will mean an indication of which affix (or affixes) is added to the root. The presence or absence
+    of the connecting vowe'
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: ''a certain morphological structure'' (indefinite)'
+- id: ZAL-Q0175
+  loc: L289
+  axis: subset
+  q: most
+  auto_anchored: false
+  auto_anchor: null
+  context: Roots that underwent historical transitions from one type to another, as well as those showing
+    fluctuations or varying forms, were counted twice in the calculations above. For type II, the first
+    numeral indicates the number of roots definitively belonging to this type, while the second (following
+    the + sign) denotes ro
+  human_anchored: true
+  human_anchor: type II + root counts
+  note: null
+- id: ZAL-Q0212
+  loc: L381
+  axis: subset
+  q: some
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^2]: For more details about the term "morphological formation", see below, [.] Here it is
+    sufficient to understand this term as generalization for inflection forms and derivation models. [^3]:
+    It should be noted that these are precisely the morphological formations that constitute the main
+    part of the dictionary entry'
+  human_anchored: false
+  human_anchor: null
+  note: methodological footnote
+- id: ZAL-Q0008
+  loc: L11
+  axis: subset
+  q: certain
+  auto_anchored: true
+  auto_anchor: rule
+  context: In descriptions of the Sanskrit language (both ancient and modern), the concept of the root
+    in general and the verbal root in particular is widely used. In this respect, Sanskrit language differs
+    from most other Indo-European languages (especially modern ones) but shows similarities with, for
+    example, the Semitic langu
+  human_anchored: false
+  human_anchor: null
+  note: methodological intro
+- id: ZAL-Q0060
+  loc: L105
+  axis: subset
+  q: most
+  auto_anchored: true
+  auto_anchor: position
+  context: For most of the roots, the actual alternation grade always coincides with the expected one,
+    but for other roots, there is no such coincidence or it does not always occur. Therefore, a "correct"
+    type of roots and several "incorrect" types are distinguished. In the «correct» type, the choice of
+    the alternation grade is t
+  human_anchored: true
+  human_anchor: alternation grade + type + position
+  note: null
+- id: ZAL-Q0003
+  loc: L11
+  axis: universal
+  q: every
+  auto_anchored: false
+  auto_anchor: null
+  context: In descriptions of the Sanskrit language (both ancient and modern), the concept of the root
+    in general and the verbal root in particular is widely used. In this respect, Sanskrit language differs
+    from most other Indo-European languages (especially modern ones) but shows similarities with, for
+    example, the Semitic langu
+  human_anchored: false
+  human_anchor: null
+  note: methodological intro
+- id: ZAL-Q0116
+  loc: L201
+  axis: universal
+  q: only
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Varying forms occur in *av* ''to favor'': -*ūtaḥ* (following type I), but -*avya*, precative
+    *avyāt* (following type II). The following roots are not attested in morphological position 1: Vedic
+    *dhav* ''to flow'', *svar* ''to sound'', Vedic *jar* ''to sing'' (in Whitney''s list, *jṛ*), *jhar*
+    ''to fall'', Vedic *phar* ''to scatter'
+  human_anchored: true
+  human_anchor: roots av/dhav + types + position 1
+  note: null
+- id: ZAL-Q0190
+  loc: L305
+  axis: universal
+  q: every
+  auto_anchored: false
+  auto_anchor: null
+  context: The specification of alternation degree accompanying a root designation enables the determination
+    of all root allomorphs and their distribution, yet fails to ensure proper placement of the connective
+    vowel. To achieve this goal, an additional classificatory feature must be employed --- namely, the
+    opposition, well esta
+  human_anchored: false
+  human_anchor: null
+  note: 'methodological: ''determination of all allomorphs'''
+- id: ZAL-Q0254
+  loc: L483
+  axis: universal
+  q: not always
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^53]: In contrast to *mah* ''to exalt, refresh'' (in Whitney''s list, these roots are combined).
+    [^54]: The prescriptions of the ancient Indian grammarians regarding these roots do not always correspond
+    to the attested forms, cf. \[4, § 71\]. [^55]: In *svaj* ''to embrace'', Vedic *naç* ''to attain'',
+    the nasal (attested in '
+  human_anchored: true
+  human_anchor: roots + attestation + §71
+  note: null
+- id: ZAL-Q0038
+  loc: L35
+  axis: universal
+  q: only
+  auto_anchored: true
+  auto_anchor: grade
+  context: 'The most significant alternation group in the morphophonological system of the Sanskrit language
+    is structured as follows. There are three fundamental grades of alternation: 1) weak (or zero) grade;
+    2) guṇa (or full/middle/normal grade; 3) vṛddhi (or lengthened/strengthened grade)[^9]. The choice
+    of the fundamental gra'
+  human_anchored: true
+  human_anchor: grades (weak/guṇa/vṛddhi)
+  note: null
+- id: ZAL-Q0091
+  loc: L163
+  axis: universal
+  q: only
+  auto_anchored: true
+  auto_anchor: type
+  context: 'On the ground of the concepts of alternation series and root type, the convention for designating
+    a root adopted by Whitney and in this paper can now be precisely formulated: in type II, the root
+    designation is its guṇa grade; in type III, it is the zero grade; in type IV, it is the vṛddhi grade;
+    in type I, for roots o'
+  human_anchored: true
+  human_anchor: types II/III + guṇa/zero grade
+  note: null

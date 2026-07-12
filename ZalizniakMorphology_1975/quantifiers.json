@@ -1,0 +1,49 @@
+{
+  "book": "ZalizniakMorphology_1975",
+  "work": "Zalizniak, Morphophonological Classification of Sanskrit Verbal Roots, 1975",
+  "lang": "en",
+  "grammar_hits": 254,
+  "grammar_lines": 93,
+  "density_grammar": 2.731,
+  "density_total": 0.5111,
+  "anchored_share": 46.1,
+  "axis": {
+    "optionality": 81,
+    "universal": 76,
+    "subset": 52,
+    "frequency": 26,
+    "productivity": 16,
+    "rarity": 3
+  },
+  "anchor_types": {
+    "type": 56,
+    "position": 19,
+    "series": 17,
+    "grade": 13,
+    "rule": 8,
+    "§": 2,
+    "class": 2
+  },
+  "sensitivity": {
+    "6": 39.4,
+    "8": 46.1,
+    "12": 56.7,
+    "16": 67.3,
+    "25": 77.6,
+    "40": 84.3
+  },
+  "generated": "13-07-2026",
+  "sample": {
+    "n": 33,
+    "tp": 9,
+    "fp": 2,
+    "fn": 12,
+    "tn": 10,
+    "precision": 81.8,
+    "recall": 42.9,
+    "agreement": 57.6,
+    "human_share": 63.6,
+    "miss_rate": 0.5455,
+    "lexicon_fp": 0
+  }
+}
