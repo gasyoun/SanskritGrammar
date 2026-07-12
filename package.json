@@ -6,6 +6,7 @@
   "scripts": {
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",
+    "claims": "python scripts/build_claims.py",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

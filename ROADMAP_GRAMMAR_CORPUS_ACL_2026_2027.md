@@ -90,6 +90,18 @@ each defers, which they never reach, or how the Russian and German traditions di
 - **Testable today, no new data:** Kendall's τ over the 79 Bühler↔Knauer and 33 Bühler↔Kochergina
   shared clusters, comparing lesson order. n=79 is enough for a real coefficient.
 
+**S1 sub-thread — corpus fact-check + methodology critique of a textbook (H768, 12-07-2026).**
+Beyond *ordering*, each textbook makes *falsifiable assertions* that can be graded against the DCS
+corpus + Whitney on two axes — factual truth and pedagogical justification. Piloted on Kochergina
+1998: a machine-readable register [`KocherginaUchebnik_1998/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml)
+→ generated [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CLAIMS_VERIFIED.md)
+(numbers reproduced by [`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py))
++ a reading-site overlay. Headline finding: Kochergina's *facts* are accurate (5/7 TRUE) but the
+Petersburg-school "single base rule" ordering hides corpus frequency — the future stem is taught
+as "-syá по единому правилу" while the seṭ form **-iṣya is the majority outcome (56.8%)**; the real
+conditioning is the seṭ/aniṭ lexical class of **S2**. Two `@DECIDE` open (see GTD): generalise the
+claim-verification layer to the other grammars? and a source-conflict tie-break rule.
+
 > ⚠ **The load-bearing caveat.** This repo carries the **1923 Stockholm reprint** of Bühler as a
 > text proxy for the **1878 first edition** — and the [Concordance page itself flags](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx)
 > that this has *not* been verified against the 1878 print. Knauer is **1908**, i.e. *earlier than
