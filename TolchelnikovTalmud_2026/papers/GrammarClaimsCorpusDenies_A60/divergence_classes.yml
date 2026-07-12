@@ -1,0 +1,116 @@
+# divergence_classes.yml — H773 / paper A60 analytical layer over H768's claims.yml
+#
+# This is the ONE thing paper A60 (H773) adds to H768's verified register: for every claim
+# whose verdict_fact is OVERSTATED or FALSE (the "corpus does not confirm" subset), a
+# *divergence class* — WHY the grammar's categorical statement and the attested corpus part
+# ways. The typology (not the list) is the paper's contribution.
+#
+# BOUNDARY (H773 consumes, does not re-derive H768): the fact-verdicts and corpus numbers live
+# in ../../../KocherginaUchebnik_1998/claims.yml and are NOT copied here. This file holds only
+# the class assignment + its rationale; build_divergence_table.py joins the two by `id`.
+#
+# The four classes are defined once, in the paper (OUTLINE §2.3). Restated here so the data
+# file is self-describing:
+classes:
+  1:
+    name: "Over-generalisation"
+    definition: >-
+      An absolute or near-absolute quantifier ("всегда / от всех / по единому правилу / никогда")
+      where a well-defined, non-marginal exception class exists. The rule as taught is broader
+      than the corpus (and the reference grammar) support.
+  2:
+    name: "Rule-real-but-marginal"
+    definition: >-
+      A majority/frequency assertion ("большинство / обычно") whose claimed share the corpus does
+      not bear out: the pattern is real but is a minority, a plurality, or conditioned on a
+      register/period the flat wording hides. The form's prominence misrepresents its frequency.
+  3:
+    name: "System-vs-usage"
+    definition: >-
+      The reference grammar (Whitney / Pāṇinian system) licenses a form the corpus barely uses —
+      licensed ≠ attested. NOTE: within the OVERSTATED/FALSE fact-axis subset this class is EMPTY;
+      those cases surface instead as verdict_fact=TRUE with a FREQUENCY-HIDDEN pedagogy flag
+      (e.g. HK-21 h/j future reflex, HK-26 aniṭ "несколько"), which are out of this table's scope.
+      Retained as a defined slot so the cross-grammar extension (Whitney-sourced claims) can fill it.
+  4:
+    name: "Flat contradiction"
+    definition: >-
+      The grammar's stated CONDITIONING (which allomorph/form appears, and when) does not match the
+      corpus distribution — most sharply, a form demoted to a "variant" that is in fact the majority
+      realisation.
+
+# Assignments — every OVERSTATED/FALSE id in claims.yml MUST appear here (the generator errors on
+# an unassigned one, so a cross-grammar harvest that adds new divergences forces a class decision).
+assignments:
+  HK-4a:
+    class: 1
+    rationale: >-
+      "Основа будущего ... от ВСЕХ глаголов по единому правилу -syá" — an absolute single-rule
+      universal; the corpus shows three conditioned suffixes (-sya/-ṣya/-iṣya), so the "one rule"
+      framing is broader than the facts. Companion to HK-4b (the conditioning half → class 4).
+  HK-4b:
+    class: 4
+    rationale: >-
+      The stated conditioning is phonological (root-final sound), demoting -ṣya/-iṣya to "варианты"
+      of a base -sya. The corpus contradicts the distribution this implies: the seṭ form -iṣya is the
+      MAJORITY (56.8% of distinct future forms), because the real conditioning is the seṭ/aniṭ
+      lexical class, not root-final phonology. Stated conditioning ≠ corpus distribution.
+  HK-10:
+    class: 1
+    rationale: >-
+      "verbum finitum ... никогда [не носит ударение]" — the absolute "никогда" over-generalises:
+      the finite verb IS accented in a subordinate clause and sentence-initially (Whitney §168). A
+      real, well-defined exception class the universal wording hides.
+  HK-14:
+    class: 1
+    rationale: >-
+      "Основы на -ā ... женского рода" stated flat; the root/monosyllabic ā-stem class (and some
+      masculine proper nouns) contradicts it (Whitney §347ff). Milder sibling of HK-16.
+  HK-15:
+    class: 2
+    rationale: >-
+      Imperfect "обычно ... повествования о прошлом" — true for classical narrative but stratum-
+      dependent (in Vedic the perfect competes; the aorist has its own niche). "Обычно" flattens a
+      real period/register split: the pattern is genuine but its claimed dominance is conditioned.
+  HK-16:
+    class: 1
+    rationale: >-
+      "Основы на -ī и -ū ВСЕГДА женского рода" — the clearest over-generalisation in the book, and
+      the only FALSE fact-verdict: a standard, non-marginal set of masculine ī/ū-stems (rathī,
+      senānī, sudhī, monosyllabic bhū-) contradicts the "всегда".
+  HK-19:
+    class: 2
+    rationale: >-
+      "Большинство ... IX класса ... носовой + согласная" — inflates a real but MINORITY sub-pattern
+      into a majority; many core kryādi roots (krī, jñā, grah, bandh, pū, lū, prī) are not
+      nasal+consonant final. Asserted majority the class inventory does not bear out.
+  HK-25:
+    class: 1
+    rationale: >-
+      "Простой перфект ... от ВСЕХ односложных корней ..." — the absolute "от всех" hides the
+      periphrastic-perfect roots (vid, ās, several long-vowel monosyllables) the learner meets at
+      once. A defined exception class under an absolute quantifier.
+  HK-32:
+    class: 2
+    rationale: >-
+      "Имена с суффиксами -as, -is, -us в большинстве среднего рода" — true for the neuter -as
+      sub-type taken alone, but generalising the majority over -is/-us (and ignoring masculine -as
+      like candramas) overstates the share. Asserted majority weaker than claimed.
+  HK-34:
+    class: 1
+    rationale: >-
+      "Род сложного слова определяется родом последней основы" — a flat universal self-contradicted
+      by bahuvrīhi (whose gender tracks the referent), a compound class Kochergina teaches in the
+      same lessons. Needs the "(except bahuvrīhi)" rider to be true.
+  HK-38:
+    class: 1
+    rationale: >-
+      Root aorist "образуется от НЕКОТОРЫХ корней на -ā и от bhū" — here the over-generalisation runs
+      the other way (over-NARROW): the attested root-aorist set is much wider (gam, sthā, dā, jñā,
+      kram, dhā ...). The categorical characterisation of the source class does not fit the corpus.
+  HK-40:
+    class: 1
+    rationale: >-
+      Double-preverb ordering "в контактном положении ВСЕГДА ... в дистактном ВСЕГДА ..." — a real
+      ordering tendency frozen into two absolutes; attested double-preverb verbs show ordering
+      variation, so the "всегда"s over-generalise.
