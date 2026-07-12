@@ -29,7 +29,8 @@
 # lesson-ordered batches. Numbers are either reproducible DCS-2021 statistics (verify_claims_dcs.py:
 # vowel census, verb-class share, case distribution, tense/mood token counts) or systemic facts
 # adjudicated against Whitney 1889; M.G. frequency footnotes were added where Kochergina gives no
-# number and the corpus supplies one. This file = the VERIFIED register (234 claims, 0 pending).
+# number and the corpus supplies one. This file = the VERIFIED register (234 entries; HK-4 splits
+# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-233; 0 pending).
 # The now-drained HARVEST BACKLOG is in claims_harvest.yml (candidates: [] — fully promoted).
 #
 # Entry shape: see the four seed hypotheses (HK-*) below.

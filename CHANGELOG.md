@@ -28,6 +28,24 @@ changelog tags as `vX.Y.Z`.
   book-level v0.3.0 drain of the Kochergina claim register (43 → 234 verified claims).
   ([H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md), Opus 4.8 `claude-opus-4-8`.)
 
+## [0.7.0] - 2026-07-12
+### Added
+- **A60 hostile referee pass + fixes (H773 → toward Q4)**
+  ([`A60_review_opus48.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/A60_review_opus48.md)):
+  reject-by-default review of the single-book draft. An independent agent re-derived every number from
+  the committed sources — register composition, divergence distributions, future-stem allomorphs,
+  conditional/precative rates all reproduce exactly (figures-vs-data clean).
+### Changed
+- **A60 draft strengthened** per the review — **2 Major + 6 Minor findings applied**:
+  §2 related work now cites the corpus-based materials-evaluation subfield (Nation 2001) and the
+  descriptive/*rules-as-regularities* corpus-grammar tradition (Biber et al. 1999) and re-scopes the
+  novelty to the Sanskrit *seṭ/aniṭ* target (M1); a single-annotator / no-IAA validity threat added to
+  Limitations (M2); the 43-vs-42 register count reconciled in prose and the stale `claims.yml` header
+  comment corrected; abstract "predicts" → "aligns closely with"; HK-16 citation, tool-version note,
+  ground-truth provenance, and the DCS citation tidied. One **venue @DECIDE** left open (ISCLS / WSC
+  computational / lexicography-DH journal) → GTD. Readiness held at 4/5.
+  ([H773](https://github.com/gasyoun/Uprava/blob/main/handoffs/H773-Opus_SanskritGrammar_grammar-asserts-corpus-denies-study_12.07.26.md), Opus 4.8 `claude-opus-4-8`.)
+
 ## [0.6.0] - 2026-07-12
 ### Added
 - **A60 full single-book draft — "grammar claims the corpus does not confirm" (H773 phase Q3)**
