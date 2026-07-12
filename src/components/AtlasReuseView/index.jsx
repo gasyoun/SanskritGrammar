@@ -1,9 +1,13 @@
 // Interactive reuse view of the Sangram public atlas (slot B3, H630).
 // Reads ONLY the sanitised bundle prop (contract B1, H623) — no other data
-// source. Renders owner → asset → consumer chains for the 18 canonical asset
+// source. Renders owner → asset → consumer chains for the canonical asset
 // families with type/rights/owner/programme filters, do-not-rebuild
 // prohibitions, rights warnings and per-element provenance.
-import React, { useMemo, useState } from 'react';
+// Node selection is controlled via {selectedId, onSelect} so the unified
+// multi-view route (slot B6) can preserve the selected node across views;
+// standalone the component falls back to its own ?node= query param.
+import React, { useEffect, useMemo, useState } from 'react';
+import { useHistory, useLocation } from '@docusaurus/router';
 
 const TYPE_LABELS = {
   code: 'код',
@@ -86,8 +90,11 @@ function nodeLink(node) {
   return <span>{node.label_ru}</span>;
 }
 
-export default function AtlasReuseView({ bundle }) {
+export default function AtlasReuseView({ bundle, selectedId, onSelect }) {
   const { provenance, nodes, edges } = bundle;
+  const history = useHistory();
+  const location = useLocation();
+  const controlled = typeof onSelect === 'function';
 
   const model = useMemo(() => {
     const byId = new Map(nodes.map((n) => [n.id, n]));
@@ -163,6 +170,43 @@ export default function AtlasReuseView({ bundle }) {
   const [ownerFilter, setOwnerFilter] = useState('all');
   const [programmeFilter, setProgrammeFilter] = useState('all');
   const [query, setQuery] = useState('');
+
+  // Deep-link init happens AFTER mount: the SSG HTML is built without query
+  // params, so reading ?node= during the first render breaks hydration.
+  const nodeById = useMemo(
+    () => Object.fromEntries(nodes.map((n) => [n.id, n])),
+    [nodes],
+  );
+  const [internal, setInternal] = useState(null);
+  useEffect(() => {
+    const queryNode = new URLSearchParams(location.search).get('node');
+    if (queryNode && nodeById[queryNode]) setInternal(queryNode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const selected = controlled ? selectedId : internal;
+  const selectedNode = selected ? nodeById[selected] : null;
+
+  const select = (id) => {
+    const next = id === selected ? null : id;
+    if (controlled) {
+      onSelect(next);
+      return;
+    }
+    setInternal(next);
+    const params = new URLSearchParams(location.search);
+    if (next) params.set('node', next);
+    else params.delete('node');
+    history.replace({ search: params.toString(), hash: location.hash });
+  };
+
+  // A card participates in the selection when the selected node is the asset
+  // itself, its owner or one of its consumers — so a repo selected in another
+  // view stays visible here.
+  const cardInvolves = (row) =>
+    !!selected &&
+    (row.asset.id === selected ||
+      (row.owner && row.owner.id === selected) ||
+      row.consumers.some((c) => c.node.id === selected));
 
   const visible = model.rows.filter(({ asset, owner, consumers, programmes }) => {
     if (typeFilter !== 'all' && !asset.asset_types.includes(typeFilter)) return false;
@@ -268,16 +312,51 @@ export default function AtlasReuseView({ bundle }) {
           Показано {visible.length} из {model.rows.length} семейств.
         </p>
 
-        {visible.map(({ asset, owner, consumers, programmes }) => {
+        {selectedNode && (
+          <p aria-live="polite" style={mutedStyle}>
+            Выбранный узел: <strong>{selectedNode.label_ru}</strong> — карточки
+            с его участием подсвечены.
+          </p>
+        )}
+
+        {visible.map((row) => {
+          const { asset, owner, consumers, programmes } = row;
           const rights = RIGHTS_META[asset.rights] || RIGHTS_META.open;
+          const involved = cardInvolves(row);
           return (
             <article
               key={asset.id}
-              style={{ ...cardStyle, borderLeft: `4px solid ${rights.border}` }}
+              style={{
+                ...cardStyle,
+                borderLeft: `4px solid ${rights.border}`,
+                ...(involved
+                  ? {
+                      background: 'var(--ifm-color-emphasis-100)',
+                      outline: '2px solid var(--ifm-color-primary)',
+                    }
+                  : {}),
+              }}
               aria-label={asset.label_ru}
+              aria-current={asset.id === selected ? 'true' : undefined}
             >
               <h3 style={{ marginBottom: '0.35rem', fontSize: '1.05rem' }}>
-                {asset.label_ru}
+                <button
+                  type="button"
+                  onClick={() => select(asset.id)}
+                  aria-pressed={asset.id === selected}
+                  title="Выбрать узел (выбор сохраняется между представлениями)"
+                  style={{
+                    border: 'none',
+                    background: 'transparent',
+                    color: 'inherit',
+                    font: 'inherit',
+                    padding: 0,
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                  }}
+                >
+                  {asset.label_ru}
+                </button>
               </h3>
               <p style={{ marginBottom: '0.35rem' }}>
                 {asset.asset_types.map((t) => (
