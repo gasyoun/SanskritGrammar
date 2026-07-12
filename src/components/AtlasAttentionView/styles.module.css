@@ -1,0 +1,289 @@
+/* Attention view (slot B2, H629). Uses Docusaurus --ifm-* variables only,
+   so light/dark themes both work; responsive by wrapping flex/grid. */
+
+.view {
+  margin-top: 1rem;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.provenanceLine {
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+}
+
+.summaryStrip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.summaryCard {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.summaryNum {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.filterLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+  min-width: 6.5rem;
+}
+
+.filterBtn {
+  border: 1px solid var(--ifm-color-emphasis-400);
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.filterBtn:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.filterBtn:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.filterBtn[aria-pressed='true'] {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white, #fff);
+}
+
+.hint {
+  font-weight: 400;
+  font-size: 0.8em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.filterBtn[aria-pressed='true'] .hint {
+  color: inherit;
+  opacity: 0.85;
+}
+
+.resultLine {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.group {
+  margin-bottom: 1.25rem;
+}
+
+.groupHeading {
+  font-size: 1.05rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.25rem;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  padding: 0;
+}
+
+.cardSummary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.75rem;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.cardSummary:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  font-weight: 600;
+  flex: 1 1 14rem;
+}
+
+.cardMarks {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.kBadge {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  white-space: nowrap;
+}
+
+.k_amplify {
+  background: var(--ifm-color-success-contrast-background, #e6f6e6);
+  color: var(--ifm-color-success-contrast-foreground, #1c6b1c);
+  border: 1px solid var(--ifm-color-success-dark, #1c6b1c);
+}
+
+.k_sustain {
+  background: var(--ifm-color-warning-contrast-background, #fff8e6);
+  color: var(--ifm-color-warning-contrast-foreground, #8a6d00);
+  border: 1px solid var(--ifm-color-warning-dark, #8a6d00);
+}
+
+.k_pause {
+  background: var(--ifm-color-danger-contrast-background, #ffebeb);
+  color: var(--ifm-color-danger-contrast-foreground, #a12622);
+  border: 1px solid var(--ifm-color-danger-dark, #a12622);
+}
+
+.summaryCard.k_amplify,
+.summaryCard.k_sustain,
+.summaryCard.k_pause {
+  font-weight: inherit;
+}
+
+.cardBody {
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.6rem 0.75rem 0.75rem;
+}
+
+.scores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.scoreLabel {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.scoreLabel abbr {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.meter {
+  display: inline-block;
+  width: 3.5rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.meterFill {
+  display: block;
+  height: 100%;
+  background: var(--ifm-color-primary);
+}
+
+.kFormula {
+  font-size: 0.85rem;
+}
+
+.asOf {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: minmax(9rem, max-content) 1fr;
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.facts dt {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.internalNote {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.chips {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.chip {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  padding: 0.05rem 0.55rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.chip:hover {
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+
+  .facts dt {
+    margin-top: 0.35rem;
+  }
+
+  .filterLabel {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
