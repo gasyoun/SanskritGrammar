@@ -19,6 +19,13 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
+  H627, Fable 5 `claude-fable-5`): три селектируемых типизированных контура
+  (исследовательский · образовательный · агентный) над 7 value-ступенями и
+  10 ребрами bundle, роли источник/данные/продукт/отдача/мультипликатор без
+  смешения, доказуемость каждого звена ребром bundle + свидетельством,
+  Mermaid-объяснение с accTitle/accDescr и табличный эквивалент
+  (`sangram/atlas/value-chain.mdx` + `src/components/AtlasValueChain/`).
 - **Sangram contract C2 — article TOC network** ([`sangram/toc/SANGRAM_TOC_NETWORK.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/SANGRAM_TOC_NETWORK.mdx),
   route `/grammars/sangram/toc-network-c2`): append-only registry
   [`articles.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/data/articles.json)
