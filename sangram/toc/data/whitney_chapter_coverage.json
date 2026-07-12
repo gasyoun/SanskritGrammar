@@ -1,0 +1,25 @@
+{
+  "_comment": "Whitney-chapter coverage of the 9 non-Whitney works, transcribed 12-07-2026 from SubjectConcordance/catalog.mdx (curated multilingual keyword lexicon, automated first pass — a finding aid, NOT a philological mapping). 2 = covered (>=3 terms), 1 = mentioned (1-2), 0 = not found. Derived layer: rendered on generated TOC pages as supplementary coverage; curated witnesses live in articles.json. Regenerate by re-reading catalog.mdx if build_subject_concordance.py output changes.",
+  "source": "SubjectConcordance/catalog.mdx",
+  "transcribed": "12-07-2026",
+  "chapters": {
+    "I":     {"sections": "1-18",      "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 1, "kochergina-1998": 2, "tolchelnikov-2026": 1, "zalizniak-2004": 2, "zalizniak-1975": 0, "zalizniak-1978": 2},
+    "II":    {"sections": "19-97",     "apte-1885": 0, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 2, "zalizniak-1978": 2},
+    "III":   {"sections": "98-260",    "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 0, "zalizniak-1978": 2},
+    "IV":    {"sections": "261-320",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 0, "zalizniak-1978": 1},
+    "V":     {"sections": "321-474",   "apte-1885": 2, "buhler-1923": 2, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 1, "zalizniak-1978": 2},
+    "VI":    {"sections": "475-489",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 0, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "VII":   {"sections": "490-526",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 0, "zalizniak-1978": 1},
+    "VIII":  {"sections": "527-598",   "apte-1885": 0, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "IX":    {"sections": "599-779",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "X":     {"sections": "780-823",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "XI":    {"sections": "824-930",   "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "XII":   {"sections": "931-950",   "apte-1885": 2, "buhler-1923": 1, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 1, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "XIII":  {"sections": "951-995",   "apte-1885": 2, "buhler-1923": 2, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 2, "zalizniak-1978": 2},
+    "XIV":   {"sections": "996-1068",  "apte-1885": 2, "buhler-1923": 1, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 2, "zalizniak-1978": 2},
+    "XV":    {"sections": "1069-1095", "apte-1885": 0, "buhler-1923": 0, "gasuns-2014": 1, "knauer-1908": 0, "kochergina-1998": 1, "tolchelnikov-2026": 0, "zalizniak-2004": 0, "zalizniak-1975": 0, "zalizniak-1978": 0},
+    "XVI":   {"sections": "1096-1135", "apte-1885": 2, "buhler-1923": 2, "gasuns-2014": 2, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 0, "zalizniak-1978": 2},
+    "XVII":  {"sections": "1136-1245", "apte-1885": 1, "buhler-1923": 1, "gasuns-2014": 2, "knauer-1908": 1, "kochergina-1998": 1, "tolchelnikov-2026": 2, "zalizniak-2004": 1, "zalizniak-1975": 1, "zalizniak-1978": 1},
+    "XVIII": {"sections": "1246-1316", "apte-1885": 1, "buhler-1923": 2, "gasuns-2014": 0, "knauer-1908": 0, "kochergina-1998": 2, "tolchelnikov-2026": 2, "zalizniak-2004": 2, "zalizniak-1975": 0, "zalizniak-1978": 2}
+  }
+}
