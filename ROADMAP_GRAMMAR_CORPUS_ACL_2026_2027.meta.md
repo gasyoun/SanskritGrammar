@@ -1,6 +1,6 @@
 # Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 11-07-2026_
 
 A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
@@ -64,6 +64,42 @@ that closes between now and Q1 2027 changes the contribution claim.
 5. **S4 is deliberately starved.** If phonostatistics turns out to matter to the Dhātu monograph's
    2027 print deadline, this roadmap gives it no lane.
 
+## Intended use / known misuse
+
+- **Intended use.** A quarterly re-read planning document for the repo owner, and the resume
+  point for any future session asked "what should SanskritGrammar do next" — read alongside
+  [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md)
+  (the agenda) and [`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md)
+  (the executed S2 finding it subsumes).
+- **Known misuse.** (1) Treating the four ACL non-findings (§ Provenance) as still true without
+  re-verification — they are explicitly time-bound novelty claims for two papers and the roadmap
+  itself flags "re-verify before submission." (2) Reading the plan as already executed — it is a
+  plan; only rows in the Revision history table below (D2 closed, H450 landed) reflect actual
+  completed work, everything else in the quarterly body is still open. (3) Treating the D3 tier
+  promotion (Tier 2 → priority research) as already reconciled in
+  [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) —
+  known-limitations item 3 states it is asserted, not yet paid for by re-ranking other tiered work.
+  (4) Using the missing S/M/L effort estimates (known-limitations item 4) as evidence that Q4+ work
+  is small — absence of sizing is a gap, not a zero.
+
+## Maintenance & sunset plan
+
+- **Who maintains.** The repo owner, on a quarterly re-read cadence (Q3 2026, Q4 2026, Q1 2027,
+  Q2 2027), plus any session that closes a `@DO`/`@DECIDE` gate named in the roadmap (D1–D6) —
+  each such closure gets its own Revision history row, as D2 and the H450 landing already do below.
+- **Update trigger.** A quarterly boundary is reached; a gated decision (D1, D3, D4, D5, D6) is
+  resolved; the H450 agenda's hypothesis/backlog set changes; or a listed ACL non-finding (§
+  Provenance) closes in the literature and a novelty claim needs re-scoping.
+- **Sunset condition.** Superseded once Q2 2027 concludes and a follow-on
+  planning document is written for the next cycle, or earlier if all four spines (S1–S4) either
+  ship or are formally closed such that the quarterly structure no longer matches remaining work.
+  Until then this roadmap remains the single active plan for the repo — it is not sunset merely
+  because individual quarters complete.
+
+## Deprecation status
+
+`active`
+
 ## Improvement backlog (ranked)
 
 | # | Item | Status |
@@ -83,5 +119,6 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 10-07-2026 | Created. Four spines, three ACL angles, four quarters, five open decisions (D1–D5). | Opus 4.8 (`claude-opus-4-8`) |
 | 10-07-2026 | H450 agenda landed: backlog #4 closed (SG-H1…H9, SG-V1…V6); metadoc's stale `ROADMAP_2026_2027.md` self-references repointed to the renamed `ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md` (rename `77868c5` had missed them). | Fable 5 (`claude-fable-5`) |
 | 10-07-2026 | **D2 closed.** [H449](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H449-Sonnet_SanskritGrammar_zaliznyak-zalizniak-rename-sweep_10.07.26.md) checked the premise behind cancelling the Zaliznyak→Zalizniak rename (that "Zaliznyak" was the historically-printed citation spelling) against real evidence — Tolchelnikov's own published paper already cites "Andrei Zalizniak. 1975." (i-spelling) — and found it false. Rename proceeded ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) + [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), both merged); B6 (`people.yaml` name-variant map) demoted from "dissolves D2" to an independent, optional backlog item. Also fixed this metadoc's stale `ZALIZNYAK_1975_1978_2004_COMPARISON.md` self-reference to the renamed filename. | Sonnet 5 (`claude-sonnet-5`) |
+| 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (`claude-sonnet-5`) |
 
 _Dr. Mārcis Gasūns_
