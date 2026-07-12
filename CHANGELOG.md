@@ -19,6 +19,15 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-07-12
+### Added
+- **`verify_claims_dcs.py` (Kochergina) extended with reproducible backlog-verification metrics
+  (H797)** — a vowel census over the full DCS-2021 running text ([`0.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py)),
+  verb-class share, past-tense competition and case-slot token distribution, so every M.G.
+  frequency footnote in the claim register is re-runnable from the committed corpus. Feeds the
+  book-level v0.3.0 drain of the Kochergina claim register (43 → 234 verified claims).
+  ([H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md), Opus 4.8 `claude-opus-4-8`.)
+
 ## [0.6.0] - 2026-07-12
 ### Added
 - **A60 full single-book draft — "grammar claims the corpus does not confirm" (H773 phase Q3)**
