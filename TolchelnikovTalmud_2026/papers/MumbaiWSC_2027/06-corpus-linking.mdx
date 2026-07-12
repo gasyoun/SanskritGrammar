@@ -1,0 +1,36 @@
+---
+title: "6. Linking Dictionary and Corpus"
+sidebar_position: 6
+---
+
+# 6. Linking Dictionary and Corpus
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+The final goal of the 1997 programme — an integrated word catalogue codifying "the distribution of lexical units in Sanskrit text corpora by linking them to the existing descriptions in dictionaries" — is the part of the vision that remains most active, and the part a reviewer of the earlier draft rightly asked to see developed in detail. This section states what the citation apparatus contains, what has been linked so far, by what method, and with what measured success and failure.
+
+## 6.1 The citation apparatus
+
+The Petersburg lexicographers were text editors as much as lexicographers: many of their sources existed only in manuscript, and over the 34-year span of PWG and PW (1855–1889) they repeatedly upgraded to better editions as these were printed — Kādambarī, Gobhilagṛhyasūtra, and Hāsyārṇava entered the dictionaries edition by edition, and for Bhartṛhari Böhtlingk compiled his own three-volume subhāṣita collection, twice. The consequence for linking is that a dictionary citation is a citation *of a particular edition*, often one no longer standard, sometimes one now rare; Jachertz (1983) remains the first and only systematic attempt to document which editions hide behind PWG's abbreviations. Several major works postdate the dictionaries entirely — the dramas of Bhāsa surfaced in 1910, the first chapter of Aśvaghoṣa's Buddhacarita was printed in 1892 — and the critical editions of the epics (Poona 1933–1966; Baroda) postdate them by a century, so the editions the dictionaries cite are never the editions modern corpora encode.
+
+The inventory: PWG cites approximately 2,800 literary sources across its seven volumes. 116 abbreviations occur in the abbreviation lists but never in the text. The 128 works cited more than 500 times account for 682,898 quotations; the head of the distribution is the Mahābhārata (67,138 citations in the Calcutta edition's numbering), the Ṛgveda (56,037), the Rāmāyaṇa (37,762), Pāṇini (25,299), Kathāsaritsāgara (25,005), Manu (22,563), and the Bhāgavatapurāṇa (22,119). Across the whole collection, canonicalising the `<ls>` citation strings of the eleven dictionaries with usable citation markup yields **828,505 citations resolving to 912 distinct texts** — the graph of which classical works each lexicographic tradition actually quotes, committed as the citation dataset in the `csl-atlas` repository. The citation density of the Vedic corpus alone separates the German tradition from the Anglo-Indian one measurably.
+
+## 6.2 Link-target typology
+
+Three kinds of targets receive links today:
+
+1. **Semi-digitised page scans with a precompiled index.** For editions that exist only as PDF scans (the Bombay Mahābhārata of 1863, some 4,500 pages; the Bombay Rāmāyaṇa of 1888), a volunteer builds a page index — a table assigning each PDF page its volume, page number, and textual span. A citation such as *MBh 13.1729* then resolves by lookup and arithmetic to a scan page, and the dictionaries' tens of thousands of epic citations become clickable without full-text digitisation. Indexes of this kind have been contributed since 2020, largely by Anna Rybakova; the viewer applications live in the `sanskrit-lexicon-scans` organisation, with and without structural bookmarks depending on the edition.
+2. **External digital corpora.** Where a maintained full-text resource exists, links target it directly: the Sanskrit–Russian parallel corpus for Vedic texts (Ṛgveda, Atharvaveda), aṣṭādhyāyī.com for Pāṇini sūtras, and — planned rather than deployed — the Digital Corpus of Sanskrit (DCS) for the GRETIL-derived texts it encodes.
+3. **Internal targets.** Dictionaries citing dictionaries: the versified *koṣa*s digitised at CDSL are themselves link targets, with headword-level tagging complete for Amarakoṣa (16,151 references), Hemacandra's Abhidhānacintāmaṇi (16,148), and Halāyudha (5,159), while Medinīkoṣa (12,990) still lacks manual tagging; and reference works such as Whitney's *Roots*, which MW cites natively.
+
+## 6.3 Measured outcomes: one success, one negative result
+
+The method was validated end to end on the Harivaṃśa: fitting a continuous-index model to the citation loci against the scan index produced a complete concordance between PWG's Harivaṃśa citations and scan pages, committed with its offset tables and shared-citation resolution data. The same programme for the Mahābhārata proper was taken as far as a full census — 66,138 PWG loci and about 29,000 MW loci extracted, classified, and partially verified against the notes apparatus (2,466 editorial notes, 956 confirmed) — and then *suspended*: the Calcutta/Bombay vulgate text the dictionaries cite has no freely licensed electronic edition to fit against, and fitting against the critical edition would systematically mis-resolve, since the vulgate's Nīlakaṇṭha recension differs in exactly the passages a fitted index needs. The census and the abandonment are both committed; a free vulgate e-text would unblock the largest single link block in the collection (67,138 citations).
+
+At the lemma level, the corpus connection is further along: 81.4% of the DCS lemma inventory (12,945 of 15,902 lemmas) is linked to CDSL headwords — meaning conversely that about a fifth of the corpus lexicon has no dictionary headword to land on, a measured gap list rather than a guess. The `simple` search mode already consumes DCS frequency data; the debt runs in both directions, since DCS originally based its lemma list on MW. Joining the two mappings gives the honest denominator for the 1997 vision: the dictionary–corpus concordance currently asserts 74,520 links covering 66,257 of the 323,425 union headwords — 20.5%. The distribution is Zipfian, as expected: the corpus attests the common vocabulary densely and the dictionaries' long tail of *samāsa*s and hapax entries barely at all. An integrated word catalogue is thus neither achieved nor refuted; it is one-fifth built, with the easy fifth built first.
+
+## 6.4 Stable addresses
+
+Linking runs in both directions, and inbound linking needs stable URLs. Entry-level URLs of the form `simple/mw/<headword>` — citable from Wikipedia, from digital editions, from other dictionaries — are the single interface feature with the highest expected return, and the standardisation path (the C-SALT APIs developed at Cologne's CCeH; RESTful access per dictionary) exists with working prototypes awaiting review. The `L` numbers (§4.1) make entry-level stability possible; what remains is exposing them as public, documented addresses rather than internal keys.
+
+_Dr. Mārcis Gasūns_

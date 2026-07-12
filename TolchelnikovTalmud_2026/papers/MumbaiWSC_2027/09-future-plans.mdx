@@ -1,0 +1,46 @@
+---
+title: "9. Plans That Survive the Audit"
+sidebar_position: 9
+---
+
+# 9. Plans That Survive the Audit
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+Sanskrit lexicography still works, in substance, to mid-19th-century standards: the corpus revolution that remade European lexicography — dictionary entries drafted from corpus evidence and verified by lexicographers — has not yet reached it. CDSL's linked citations, stable identifiers, and corrected sources are the necessary substrate for that transition, not the transition itself. Against that yardstick, and in the first year of the post-Funderburk era, the plans below are stated with their prerequisites and their evidence base, in descending order of readiness.
+
+## 9.1 Additional dictionaries: the Sanskrit–Russian line
+
+The addition of five Sanskrit–Russian dictionaries — Kossovich (1854), Kudryavskiy (1903), Knauer (1908), Frisch (1956), Kochergina (1987) — began in 2025; digitised editions exist at samskrtam.ru and require conversion to the CDSL entry format. They would join the existing English, German, French, and Latin bilingual lines, and they matter historiographically: the Russian tradition descends directly from the Petersburg dictionaries (§7.2) and has been invisible to Western and Indian readers alike, as a reviewer of the earlier draft noted.
+
+## 9.2 Stable entry URLs and the API
+
+Entry-level stable URLs (§6.4) are the highest-return item on the interface side: they convert every external resource that quotes a Sanskrit word into a potential inbound link, and they cost design decisions rather than new research. The C-SALT RESTful APIs and the standardisation of the `simple` search interface against them exist as reviewed prototypes; deployment now depends on the post-transition maintainer capacity (§3.5). Priority is justified by the traffic data: the Cologne site's visitors peaked at 482,400 in 2019 and have declined yearly since, while derivative sites that scrape (and freeze) the data rank above the source in search results. Citable, deep-linkable entries are the sustainable correction to that inversion — superior data wins only if it is addressable.
+
+## 9.3 Ingesting the Scharf archive
+
+In the course of reviewing the earlier draft of this report, Peter Scharf transmitted the surviving datasets of the funded phase. An item-by-item comparison against the present state of the collection yields a concrete ingestion programme rather than a courtesy acknowledgment:
+
+- **Unique, no present equivalent:** the structured XML of two Dhātupāṭhas — the Mādhavīya Dhātupāṭha critical text (1,640 sūtras, with accents, senses, and commentary extracts; 2009) and Westergaard's Dhātupāṭha (1,491 entries) with its sūtra-by-sūtra mapping to MW entry identifiers — and the morphologically tagged Whitney dataset (`roots-ids.xml`, 5,037 inflected forms carrying coordinated morphological-identity tags, interpretable via the published 2013 tag inventory). The organisation currently holds only page images of both Dhātupāṭhas and no form-level morphological tagging at all; these files cannot be regenerated from anything now in the collection.
+- **Superseded, archival:** the 2008 MW verb analyses (genuine versus artificial roots, preverb–root segmentation), whose descendants are now computed from the live sources (§7.3), and the static Whitney↔MW matching tables, whose function MW's native Whitney-roots links have absorbed.
+- **Independent duplicate:** Scharf's plain-text and XML Whitney digitisations, which parallel the Warnemyr-derived line the 2026 crosswalk was built from — valuable as a cross-validation source for exactly the class of transcription error that redundant digitisation catches (§3.1).
+
+The ingestion of the two Dhātupāṭhas would give the collection its first structured grammatical root-texts and complete the grammar–dictionary–corpus triangle that the Whitney crosswalk (§7.4) currently closes only on the Western side.
+
+## 9.4 The headword programme
+
+Three headword items are ready in design: feminine derivatives exposed as searchable alternate headwords via the L-body mechanism (§4.2); continuation of the normalization pipeline; and — the open design decision — whether cross-dictionary coordination should ultimately run through computed normalized keys or through a standoff mapping to an independent, grammatically derived base lexicon, as Scharf has long argued (§4.4). The project's working position: the two are not exclusive; normalized keys are the operational solution already deployed, and a Pāṇinian base-list mapping is the correct interchange target to grow toward, since it is the only form that leaves every dictionary byte-identical to its print original while still coordinating them. The anubandha-bearing root spellings of Wilson and its dependents will require manual treatment under either scheme.
+
+## 9.5 Abbreviation and citation markup
+
+The abbreviation apparatus — literary-source sigla and space-saving abbreviations — remains partially tagged, with scope errors in some existing tags and unresolved abbreviations still being identified (§6.1's 116 never-cited sigla are the measured tip). Apte's untagged literary sources are the largest single block of unrealised linking potential (§4.3). This work is mechanical in form but philological in every individual decision, which makes it the natural continuing workload for the volunteer model.
+
+## 9.6 Compilation of new dictionaries
+
+No new dictionary is planned within CDSL except one: a reverse Sanskrit dictionary, generatable from the headword inventory once cleaning stabilises. The 1997 warning that "duplication of effort in the compilation of new Sanskrit dictionaries be avoided" is best honoured today by the coordination described in §2.2 and §4.4 — and by admitting that corpus-driven compilation of genuinely new entries, while technically within reach of the parallel-corpus and alignment resources now available (§6.3, §7.4), exceeds the project's present human capacity to verify. Machine-generated lexicography without volunteer verification is not a plan; it is a liability.
+
+## 9.7 Sustainability
+
+The honest closing statement of risk: the project has survived the loss of its founding institution (2013) and the retirement of its lead developer (2026); it runs on a maintainer of record with bounded time, a small volunteer group with measured concentration risk (§8.1), and server infrastructure sustained by one institutional ally. Its data, by contrast, are safe by construction — versioned, forkable, licensed, and mirrored. The asymmetry is the strategy: everything that matters is recoverable from the repositories by any future group with the will to continue, which is a stronger guarantee than any current team can personally give. Crowdsourced verification on the OED model, sketched optimistically in earlier reports, remains the only scaling path consistent with the evidence of §5 — and it requires exactly the addressable, citable entries of §9.2 to recruit against.
+
+_Dr. Mārcis Gasūns_

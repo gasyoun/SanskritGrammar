@@ -1,0 +1,68 @@
+---
+title: "4. Data Architecture"
+sidebar_position: 4
+---
+
+# 4. Data Architecture
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+This section describes the CDSL data model in enough detail that the audit in §§5–7 can be read without prior contact with the files. Terms defined here — the `L` number, the metaline, the L-body mechanism — are used throughout.
+
+## 4.1 The entry format
+
+Each dictionary in `csl-orig` is a single line-oriented text file. An entry consists of a *metaline*, a body, and a terminator. The metaline is not XML but a sequence of tagged fields; XML for display and interchange is generated from it by scripts. For the Monier-Williams entry *kuñjakuṭīra* "bower":
+
+```
+<L>51478<pc>288,1<k1>kuYjakuwIra<k2>kuYja—kuwIra<e>3
+<s>kuYja—kuwIra</s> ¦ <lex>m.</lex> a bower, arbour, <ls>Mālatīm.</ls>; <ls>Gīt.</ls><info lex="m"/>
+<LEND>
+```
+
+The fields: `L` is the stable numeric identifier of the entry; `pc` the page and column of the print original (page 288, column 1); `k1` the headword key in SLP1 transliteration; `k2` the headword with its compound segmentation; `e` an entry-class code. In the body, `<s>` marks Sanskrit text, `<lex>` grammatical labels, `<ls>` literary-source citations — the tags on which the corpus-linking programme (§6) is built — and `<info>` machine-readable metadata. For comparison, the same entry in Malten's original 1990s character-code format read:
+
+```
+<H3>100{kuJjakuTIra}3{kuJja--kuTIra}¦ •m. ‹a…bower…,…arbour› ‹¯Ma1lati1m.› ‹¯Gi1t.› MW034516
+```
+
+The distance between the two lines is a fair summary of the backend work done since the initial funding ended.
+
+The `L` numbers deserve emphasis, because they are the project's answer to the 1997 vision of "a numeric system which functions as a placeholder for a word sense which can be expanded or changed." Early in the XML era, identifiers were assigned at generation time and could shift between builds; since the format consolidation they are stable, so that corrections, supplements, and deletions can accumulate against a fixed address space. Stability of identifiers is what makes twelve years of correction history addressable (§5) and what external resources link against (§6.4).
+
+## 4.2 Headwords and alternate forms
+
+Print dictionaries routinely present alternative spellings inside one article: Monier-Williams' entry for *akabara* "the emperor Akbar" reads "akabara or akabbara or akavara." Until 2024 the alternates were recorded in the `k2` field of the main entry, which made them findable only through that entry: a search for *akabbara* found nothing. The current model gives each alternate its own metaline carrying its own `L` number, with a body that consists of a pointer to the parent entry:
+
+```
+<L>159.1<pc>1308,1<k1>akabara<k2>akabara<e>1
+<s>akabara</s> or <s>akabbara</s> or <s>akavara</s>, ¦ <lex>m.</lex> (emperor) Akbar, <ls>Inscr.</ls>
+<LEND>
+<L>159.2<pc>1308,1<k1>akabbara<k2>akabbara<e>1
+{{Lbody=159.1}}
+<LEND>
+<L>159.3<pc>1308,1<k1>akavara<k2>akavara<e>1
+{{Lbody=159.1}}
+<LEND>
+```
+
+This `{{Lbody=...}}` pointer is the *L-body technique*: a headword-bearing stub whose body is resolved by reference. It is a general mechanism, not just a spelling device. Because dictionaries frequently give feminine derivatives inside the masculine article (*devī* under *deva*), feminine forms can be made searchable as alternate headwords by exactly the same means — a planned application (§9). The design is not uncontested within the team: the alternates could equally be generated at XML-build time from a separate overlay file, leaving the transcription of the printed book untouched, and the difference of opinion — annotate the source, or annotate a layer above it — recurs in every structural question the project faces (§4.4).
+
+## 4.3 Markup inventory
+
+Across all 44 dictionaries the sources use 96 distinct tags with 17.5 million tag instances in total (census of March 2026; the per-dictionary table is committed as [`markup_tag_census.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv)). The inventory is deliberately small and dictionary-specific rather than uniform: language tags (`<lat>`, `<gk>`, `<arab>`, `<tib>`...), structural tags inherited from the print layout, domain labels (`<bot>`, `<zoo>`), and the citation tag `<ls>`. Seven dictionaries — AP90, BEN, BHS, GRA, MW, PW, PWG — carry `<ls>` markup dense enough for corpus linking (§6); in others, notably Apte 1957, the literary sources are present in the text but not yet tagged. The census also quantifies under-marking per dictionary, which turns "the tagging is incomplete" (a reviewer-proof but vague statement) into a measurable backlog.
+
+## 4.4 Headword normalization and coordination
+
+Headword orthography differs systematically between dictionaries — Indian and European conventions for anusvāra/parasavarṇa, seṭ/aniṭ root spellings, anubandha-bearing root citations in Wilson and its dependents — so the same lexeme may head differently spelled articles in different dictionaries. Two approaches to the problem coexist, and it is worth stating them as alternatives, because they were long discussed as if in competition.
+
+The first, implemented at CDSL, is *normalization*: compute a normalized key for every headword and search on the key. Patel (2016) built the first cross-dictionary normalized headword list; the current pipeline (`hwnorm1`) derives successive normalization stages for all dictionaries and backs the unified search. It does not modify the dictionaries; the key is metadata.
+
+The second, argued by Scharf from the Sanskrit Library's experience, is *coordination against an independent base list*: maintain a Pāṇinian dictionary of Sanskrit — a lexicon whose headword forms are derived by rule — and map each dictionary's headwords to it in a standoff mapping file, leaving every dictionary exactly in its original form. On this view normalization toward any one convention is arbitrary, because the differences between the dictionaries are principled, not accidental. Two are structural: (1) MW combines preverbs with verbal roots in its headwords, while PW enters preverb combinations as subheadings under the simple root; (2) SKD and Apte use the nominative singular as the headword form where most European dictionaries use the stem. No key-normalization scheme can make these decisions disappear; it can only pick a winner per lookup.
+
+The two approaches are less opposed in practice than in principle — both leave the source text untouched and both produce a mapping — but the choice of *reference point* (a computed key versus a grammatically derived lexicon) remains open, and the project's position is stated in §9.
+
+## 4.5 The TEI question
+
+CDSL's format is project-specific. The Text Encoding Initiative's dictionary chapter, and its stricter TEI Lex-0 profile (Romary et al.), are the interchange standards the lexicographic community converged on, and the question "why is CDSL not TEI?" has a documented twenty-year history rather than an oversight behind it. Samples of a TEI transformation of MW were produced in the funded phase, circa 2005; Funderburk declined to adopt the form at the time because of the complexity and verbosity of the tagging and the resulting illegibility of source files that volunteers must read and correct by eye (P. Scharf, review correspondence, 2025). That trade-off has shifted since: TEI author modes in standard XML editors such as Oxygen now hide the verbosity, and mechanical XML↔JSON conversion removes the tooling objection. The project's current position is pragmatic: the internal format stays — it is what twelve years of correction tooling and volunteer habits are built on — while TEI Lex-0 and OntoLex-Lemon become *export* targets, generated like the present display XML. Export profiles are part of the standards-alignment work described in the companion paper.
+
+_Dr. Mārcis Gasūns_

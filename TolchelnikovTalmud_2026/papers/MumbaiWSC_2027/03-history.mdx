@@ -1,0 +1,44 @@
+---
+title: "3. History, 1994–2026"
+sidebar_position: 3
+---
+
+# 3. History, 1994–2026
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+## 3.1 The Malten era (1994–2004)
+
+The project was begun in 1994 by Thomas Malten at the Institute of Indology and Tamil Studies (IITS), University of Cologne. The founding method was manual data entry at scale: the original digital Monier-Williams was typed in Azhivaikkal (Thanjavur district, Tamil Nadu) by professional typists working from page images, using character codes that partially marked the divisions of the text. Malten's quality-control instrument was redundancy: for Burnouf's dictionary two typists entered the full text independently and the transcripts were compared — a method the project repeated a decade later when the Tirupati and Cologne transcriptions of Vācaspatyam were collated mechanically. Malten's interests were transcription fidelity and consistent transliteration principles rather than markup formalisms; the structural interpretation of his character codes came later and from elsewhere (§3.2).
+
+An earlier attempt to digitise Indian lexical resources, at the University of Chicago in 1985, had included Monier-Williams and failed for lack of funding (Kapp and Malten 1997); the Cologne project is thus the second attempt at its own first stage, a point worth remembering when judging the pace of what followed.
+
+## 3.2 The collaboration (2004–2013)
+
+In 2004 the project acquired the collaborators who would determine its technical shape. Jim Funderburk's own account, on the record from the volunteer call of 27 June 2026, is the primary source for how this happened: he had been interested in Peter Scharf's *Rāmopākhyāna* (2002), contributed corrections to it, and through it met Scharf and Malcolm D. Hyman. He had also tried, independently, to report obvious errors in Malten's digital Monier-Williams "and got nowhere." When the three met, "we thought there was a common interest and there was. And we chose up who did what" — Funderburk's chosen part being precisely the corrections to the Monier-Williams data that had gone unanswered (Cologne call, 27 June 2026). Scharf then contacted Malten to propose collaboration. Approximately a year of correspondence among Funderburk, Malten, and Hyman followed before Malten's data model was fully understood; the markup conventions were settled by 2008 and documented in the May 2008 project materials.
+
+Three durable technical decisions date from this phase:
+
+1. **XML.** Malten's plain-text character codes were analysed, disambiguated, and transformed into XML by Scharf and Funderburk, with the assistance of Hyman and Chandrashekar. Corrections in this period were evaluated by Malten, Scharf, or Chandrashekar and implemented by Funderburk (Scharf and Funderburk, project documentation; cf. the MW header at the Sanskrit Heritage site).
+2. **SLP1.** In 2008 the internal transliteration switched to the Sanskrit Library Phonetic encoding (SLP1; Scharf and Hyman 2009), whose one-character-per-phoneme design makes the round trip lossless — the Harvard-Kyoto convention used earlier could not represent the small class of Vedic forms with vowel hiatus (190 entries in the project's hiatus list) without ambiguity.
+3. **Scope.** The expansion from four dictionaries to the present collection was conceived around 2007, when Scharf's funded projects (NEH, and NEH-DFG jointly with Cologne) made systematic digitisation possible; most of the additions landed in 2010–2013. Reference works entered the collection in the same phase, notably Whitney's *Roots* with the assistance of Susan J. Moore, and the Mahābhārata Cultural Index (digitised 2013, NEH-DFG, jointly Cologne and Brown).
+
+The first phase of Malten's own work was largely complete by 2004 and definitively by 2013, with occasional contributions to 2018. In 2013 the Indology programme at Cologne was discontinued; Malten entrusted the Sanskrit dictionaries to the Data Center for the Humanities (DCH) at the University of Cologne, with the explicit mission to archive, preserve, and keep accessible the resources — which is why the collection survived the disappearance of the department that created it. Felix Rau of the DCH remains the project's institutional link to the university.
+
+## 3.3 Copyright, 2004–2025
+
+The project's early posture on data release was cautious, and one episode from 2004–2005 illustrates the distance between the 1997 declaration — "it seems desirable to have high-quality Sanskrit databases freely available to all researchers" — and early practice. In 2004 Malten shared with the author a DVD of PWG and PW page scans, each file named for the first Sanskrit headword on the page — approximately 10,000 double-page images. When the author then made the scans publicly available on his own server, Malten objected in writing, on the grounds that while "the dictionaries as such are not copyright," the project's work on them — scanning, alignment, headword naming — was protected as a database under EU law, and that everything would become freely available for non-commercial use once the project was finished. The scans were taken down at his request. The episode is recorded here because it marks how recent the project's open phase is: general public access to the full apparatus dates only from the GitHub era (2014–).
+
+The present licensing status is no longer a matter of correspondence: as Peter Scharf notes, each dictionary's source file is accompanied by a TEI XML header declaring a Creative Commons licence (attribution, share-alike, non-commercial), so reuse conditions are stated in the data themselves.
+
+## 3.4 The GitHub era (2014–2026)
+
+In 2014 the author founded the sanskrit-lexicon organisation on GitHub and the project's coordination moved from private email to public issue tracking — ending an era in which, as the 1997 report had anticipated, "methods of long-term corrections and improvements" were tied to "the possibilities of electronic communications," which in practice meant that each collaborator held an unsearchable private archive of decisions. The organisation grew to 76 repositories: `csl-orig` holds the canonical source files of every dictionary; `csl-corrections` the correction workflow and its audit trail; presentation and API code live in `csl-*` repositories; and per-dictionary repositories (MWS, PWK, and others) host analytical discussions. By mid-2026 the organisation had accumulated more than 5,400 issues and pull requests. Repository-level consolidation was itself a lesson learned: the initial 2014 design of one repository per dictionary produced duplication, and the sources were subsequently unified in `csl-orig` while the per-dictionary repositories were retained for research discussion.
+
+Two further format events belong to this era. In 2016 Funderburk re-encoded PWG from its legacy transliteration into IAST-conformant data, an operation that surfaced diacritic-level inconsistencies still being corrected today (D. Patel, Cologne call, 27 June 2026). In 2018 the sources moved to the current line-oriented format keyed by stable numeric entry identifiers (the `L` numbers; §4.1). One negative event should also be recorded: Malcolm Hyman's original C-language transliteration code, which underpinned the early CGI interface, could no longer be rebuilt after his death in 2009, and — together with security reports against the ageing CGI — this is why substantial early material now sits in `legacy` directories, preserved but no longer served (J. Funderburk, Cologne call, 27 June 2026).
+
+## 3.5 The 2026 transition
+
+On the volunteer call of 27 June 2026, Funderburk announced his retirement from the project he had, in effect, operated since 2004: "I guess this is sort of the time when I'm officially retiring... [I have] been unofficially retiring for the last two years or so... And we're in good hands." Daily correction handling had already passed to Dhaval Patel, who characterised his own capacity candidly — routine correction submissions continuously, larger structural work in "bouts of high productivity... in the middle of no productivity days" (Cologne call, 27 June 2026). The succession model is thus: Patel as maintainer of record for corrections and site operation; Funderburk available as an occasional consultant; and the wider volunteer group (§8) carrying analytical and linking work. The transition had been prepared since 2014 through documentation of the Cologne server maintenance procedures, the file-system layout, and the project's email history. Section 9 discusses what the maintainer change means for the plans.
+
+_Dr. Mārcis Gasūns_
