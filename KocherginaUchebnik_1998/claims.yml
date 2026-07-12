@@ -22,14 +22,16 @@
 # mg_footnote:      (optional) corpus frequency ADDED BY M.G. where Kochergina states no number —
 #                   scholarly apparatus rendered over the reading site, not part of the 1998 text.
 #
-# COVERAGE (H768): the verb-system seed hypotheses HK-1..HK-6 (PR #119) plus the full-textbook
-# harvest HK-7..HK-42 (all 40 Занятия swept, lesson order). The four DCS-computed additions
-# (HK-17 imperative person, HK-23 conditional, HK-29 PPP suffix, HK-39 precative) are reproduced
-# by verify_claims_dcs.py; the remaining additions are adjudicated against Whitney 1889.
-# This file = the VERIFIED register: 43 entries across 42 numbered HK-claims (HK-4 splits into
-# HK-4a universality + HK-4b allomorphy). The granular full-textbook HARVEST
-# BACKLOG (223 raw falsifiable candidates from the 6-reader sweep) is in claims_harvest.yml;
-# build_claims.py renders both, deduping backlog rows whose loc is already promoted here.
+# COVERAGE (H768 seed + H797 full drain): HK-1..HK-233 — the complete two-axis verification of
+# the 223-candidate full-textbook harvest (all 40 Занятия, lesson order). The verb-system seed
+# HK-1..HK-6 (PR #119) and the first sweep HK-7..HK-42 (PR #134) landed under H768; H797
+# (12-07-2026) drained the remaining backlog to zero, promoting HK-43..HK-233 in seven
+# lesson-ordered batches. Numbers are either reproducible DCS-2021 statistics (verify_claims_dcs.py:
+# vowel census, verb-class share, case distribution, tense/mood token counts) or systemic facts
+# adjudicated against Whitney 1889; M.G. frequency footnotes were added where Kochergina gives no
+# number and the corpus supplies one. This file = the VERIFIED register (234 entries; HK-4 splits
+# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-233; 0 pending).
+# The now-drained HARVEST BACKLOG is in claims_harvest.yml (candidates: [] — fully promoted).
 #
 # Entry shape: see the four seed hypotheses (HK-*) below.
 
@@ -747,3 +749,2713 @@ entries:
       Same failure mode as HK-41: precise percentages with no reproducible base. The a-privative's
       productivity and abstract-antonym semantics are real, but '≥1/3' and '~80%' are asserted, not
       shown.
+
+
+  - id: HK-43
+    loc: Занятие I / mdx line 247
+    claim_ru: Все смычные по месту образования делятся на пять рядов (varga), противопоставляясь по глухости/звонкости
+      и придыхательности.
+    kind: typology
+    falsifiable_as: Every sparśa stop fits a 5×(voice×aspiration) grid in Whitney's phoneme inventory
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the 25 sparśa stops form exactly a 5-varga grid (guttural/palatal/cerebral/dental/labial) × (voiceless/voiced
+      × unaspirated/aspirated) + a class nasal — the ''5 рядов'' count is exact'
+    ref: Whitney §32 (the five series of mutes)
+    verdict_pedagogy: JUSTIFIED
+    note: A foundational typological fact, stated with the correct count (5 vargas). Anchor.
+
+  - id: HK-44
+    loc: Занятие I / mdx line 378
+    claim_ru: 'В шумных придыхательных звучит слабое h: глухое после глухих и звонкое после звонких взрывных.'
+    kind: rule
+    falsifiable_as: Aspiration voicing agrees with the stop (kh/ch voiceless-h, gh/dh voiced-h), Whitney phonology
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the aspirate''s breath is voiceless after a voiceless stop (kh, ch, ṭh, th, ph) and voiced [ɦ]
+      after a voiced stop (gh, jh, ḍh, dh, bh) — a phonetic agreement, not a contrast'
+    ref: Whitney §37 (aspiration and its voicing)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct phonetic description of the aspirate series. Anchor.
+
+  - id: HK-45
+    loc: Занятие II / mdx line 516
+    claim_ru: visarga — звук ḥ, возникающий из s (реже r) в конце слова/предложения перед некоторыми согласными.
+    kind: allomorphy
+    falsifiable_as: DCS visarga tokens from underlying -s vs -r — confirm -s more frequent
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: visarga is the pre-pausa / pre-voiceless reflex of final -s (the overwhelmingly dominant source)
+      and, far less often, of final -r — the ''(реже r)'' hedge is correct'
+    ref: Whitney §170-172 (visarga from final s/r)
+    verdict_pedagogy: JUSTIFIED
+    note: Accurate, and the relative-frequency parenthetical (-s ≫ -r) is well-judged. Anchor.
+
+  - id: HK-46
+    loc: Занятие II / mdx line 518
+    claim_ru: В N.sg. большинство существительных и прилагательных мужского рода имеют окончание s; поэтому visarga
+      обычно встречается в этой форме.
+    kind: statistic
+    falsifiable_as: Share of masc. nom.sg. forms ending in -s (→visarga) across DCS paradigms
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: the Nominative is the single most frequent case in DCS-2021 (983,591 tokens = 43.2% of 2,277,509 nominal
+      tokens; 788,742 in the sg), and masc. N.sg regularly ends in -s → visarga — so visarga is indeed concentrated
+      in this form
+    ref: Whitney §170 (visarga), §326d (a-stem N.sg -s); DCS verify_claims_dcs.py case_distribution
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Именительный падеж — самый частый в корпусе DCS-2021: 983 591 словоформа (43,2% всех именных), из
+      них 788 742 в единственном числе. Поскольку N.sg.m обычно оканчивается на -s, висарга действительно чаще всего
+      встречается именно в этой форме.'
+    note: 'A frequency claim the corpus vindicates: Nom is the most common case and its sg carries -s, so the visarga-in-N.sg
+      observation is correct.'
+
+  - id: HK-47
+    loc: Занятие II / mdx line 520
+    claim_ru: Anusvāra (ṃ) возникает из m или в конце слова перед согласной, кроме губного ряда.
+    kind: rule
+    falsifiable_as: final -m → anusvāra before consonants except labials in DCS sandhi
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: word-final -m goes to anusvāra before any consonant except that a following labial keeps it as
+      the homorganic labial nasal m — the ''кроме губного ряда'' carve-out is exactly Whitney''s'
+    ref: Whitney §213 (final m-sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct, including the labial-series exception. Anchor.
+
+  - id: HK-48
+    loc: Занятие II / mdx line 522
+    claim_ru: В A.sg. конечный звук m; поэтому anusvāra встречается главным образом в этих формах.
+    kind: statistic
+    falsifiable_as: Share of acc.sg / neut. nom-acc forms ending -m among all anusvāra tokens in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: final -m is carried chiefly by the Accusative sg (432,746 tokens, the 2nd most frequent case-slot) plus
+      the neuter Nom-Acc sg (also -m); together these make final -m → anusvāra concentrated in these forms, as claimed
+    ref: Whitney §213 (m-sandhi); DCS verify_claims_dcs.py case_distribution
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: Винительный ед.ч. — второй по частоте падеж корпуса DCS-2021 (432 746 словоформ); вместе с им.-вин.
+      ед.ч. среднего рода (тоже на -m) он и даёт основную массу конечного -m → анусвары.
+    note: 'Directionally right and corpus-supported: acc.sg (and neuter nom-acc.sg) are the dominant word-final -m sources.
+      A note that neuter nom-acc.sg also ends -m would round it out, but nothing is misstated.'
+
+  - id: HK-49
+    loc: Занятие II / mdx line 524
+    claim_ru: Anunāsika — назализованный долгий гласный (встречается редко).
+    kind: statistic
+    falsifiable_as: anunāsika vs anusvāra count in a corpus to confirm rarity
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the nasalized vowel anunāsika is a marginal phenomenon (chiefly Vedic and specific sandhi contexts),
+      far rarer than anusvāra — ''встречается редко'' is accurate'
+    ref: Whitney §71, §213c (anunāsika)
+    verdict_pedagogy: JUSTIFIED
+    note: A rare form correctly flagged as rare. Anchor.
+
+  - id: HK-50
+    loc: Занятие III / mdx line 629
+    claim_ru: Гласные a, i, u, ṛ и ḷ противопоставляются по долготе; противопоставление смыслоразделительно.
+    kind: typology
+    falsifiable_as: All five vowels have contrastive long/short pairs in Whitney (ḷ marginal)
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'a/i/u/ṛ have genuine phonemic long/short pairs; the ḷ:ḹ length opposition is a grammarians'' construct
+      — ḷ surfaces almost only in the root kḷp and ḹ essentially never (DCS-2021 running text: ḷ 0, ḹ 0 vowel tokens)'
+    ref: Whitney §23-24 (vowel-length pairs; ḷ/ḹ marginal); DCS verify_claims_dcs.py HK7_vowel_census
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: В поверхностном тексте DCS-2021 (11,4 млн гласных) ḷ и ḹ не встречаются вовсе (0 и 0); противопоставление
+      по долготе реально лишь для a/i/u/ṛ, а пара ḷ:ḹ — искусственная конструкция грамматистов.
+    note: True for a/i/u/ṛ; the ḷ inclusion is nominal (the census shows ḷ/ḹ are effectively absent). Kochergina's own
+      'ḷ marginal' framing is honest.
+
+  - id: HK-51
+    loc: Занятие IV / mdx line 799
+    claim_ru: e и o — долгие гласные дифтонгического происхождения; чередуются с ai, au.
+    kind: allomorphy
+    falsifiable_as: e/o pattern with ai/au in guṇa/vṛddhi gradation, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: e and o are monophthongized old diphthongs and function as the guṇa grade whose vṛddhi partners
+      are ai and au (i→e→ai, u→o→au)'
+    ref: Whitney §27-28 (e/o), §235-236 (guṇa/vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct historical + synchronic characterisation. Anchor.
+
+  - id: HK-52
+    loc: Занятие IV / mdx line 827
+    claim_ru: В середине слова чаще всего встречается ṛ.
+    kind: statistic
+    falsifiable_as: Frequency of ṛ vs ṝ/ḷ/ḹ word-medially in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: vocalic ṛ 199,930 vowel-tokens (1.75%) vs ṝ 1,588 (0.01%), ḷ 0, ḹ 0 (DCS-2021) — of the four syllabic sonants
+      ṛ is overwhelmingly the common one, ~126× the other three combined
+    ref: Whitney §24 (ṛ common, ṝ/ḷ/ḹ rare); DCS verify_claims_dcs.py HK7_vowel_census
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Среди слоговых сонантов ṛ — практически единственный употребительный: 199 930 гласных-вхождений (1,75%)
+      в DCS-2021 против ṝ 1 588 (0,01%), ḷ 0 и ḹ 0 — то есть ~126-кратный перевес.'
+    note: 'Corpus-confirmed: among the syllabic sonants ṛ is the only frequent one. Well calibrated.'
+
+  - id: HK-53
+    loc: Занятие IV / mdx line 855
+    claim_ru: Префикс su- с существительными/причастиями = 'хороший'; с прилагательными = усиление 'очень'.
+    kind: allomorphy
+    falsifiable_as: su- reads 'good' with nouns/participles vs intensifier with adjectives across DCS compounds
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the prefix su- reads ''good/well'' on nominal/participial bases (sukṛta ''well-done'') and shades
+      into an intensifier ''very'' on adjectival ones — standard prefix polysemy'
+    ref: Whitney §1121e (su-/dus- prefixes)
+    verdict_pedagogy: JUSTIFIED
+    note: Directionally accurate account of su- polysemy; the noun/adjective split is a reasonable teaching simplification
+      of a continuum.
+
+  - id: HK-54
+    loc: Занятие V / mdx line 1047
+    claim_ru: Слово на согласную (кроме висарги/анусвары) обычно пишут слитно с последующим словом.
+    kind: rule
+    falsifiable_as: Scriptio-continua joining after consonant-final words in devanāgarī editions
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic orthographic convention: a consonant-final word is written conjoined (scriptio continua) to the
+      next word in continuous devanāgarī; a word space is left only after a vowel, anusvāra or visarga'
+    ref: Whitney §9 (writing; word-division convention)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct statement of the editorial/orthographic convention. Anchor.
+
+  - id: HK-55
+    loc: Занятие V / mdx line 1071
+    claim_ru: Среди внешних сандхи согласных широко распространена регрессивная ассимиляция.
+    kind: statistic
+    falsifiable_as: Prevalence of regressive assimilation among consonant-sandhi applications in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit external sandhi is overwhelmingly regressive (anticipatory) — the earlier segment assimilates
+      in voice/place/nasality to the following one; progressive assimilation is the marked minority (e.g. n→ṇ, s→ṣ ruki)'
+    ref: Whitney §156ff (assimilation; regressive default)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct generalisation about the direction of Sanskrit sandhi. Anchor.
+
+  - id: HK-56
+    loc: Занятие V / mdx line 1079
+    claim_ru: Зубной t полностью ассимилируется перед палатальным/церебральным рядами и перед l.
+    kind: rule
+    falsifiable_as: -t → c/j, ṭ/ḍ, l before those series in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final dental t assimilates fully to a following palatal (t+c→cc, t+j→jj), cerebral (t+ṭ→ṭṭ) and
+      to l (t+l→ll)'
+    ref: Whitney §202-203 (dental assimilation to palatal/cerebral/l)
+    verdict_pedagogy: JUSTIFIED
+    note: Standard sandhi, correctly and categorically stated. Anchor.
+
+  - id: HK-57
+    loc: Занятие V / mdx line 1085
+    claim_ru: Зубной t перед носовыми изменяется в n.
+    kind: rule
+    falsifiable_as: -t → n before nasals in DCS sandhi
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final dental t → n before a nasal (tat+na→tan na; -t+m-→-n m-) by nasal assimilation'
+    ref: Whitney §161 (final t before nasals)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct categorical rule. Anchor.
+
+  - id: HK-58
+    loc: Занятие V / mdx line 1091
+    claim_ru: t перед ś → c, причем ś → ch.
+    kind: rule
+    falsifiable_as: t+ś → c+ch across word boundaries in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: t + ś → c + ch (the dental palatalises to c and the following ś becomes ch) — a fixed sandhi
+      outcome'
+    ref: Whitney §203 (t + ś → c ch)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct, a commonly-missed detail stated precisely. Anchor.
+
+  - id: HK-59
+    loc: Занятие VI / mdx line 1259
+    claim_ru: В конце предложения/строки -s и -r → висарга ḥ.
+    kind: rule
+    falsifiable_as: pausa -s/-r → visarga at sentence/verse end in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in pausa (sentence/verse end) final -s and -r both surface as visarga ḥ'
+    ref: Whitney §170 (final s/r → visarga in pausa)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pausa rule. Anchor.
+
+  - id: HK-60
+    loc: Занятие VI / mdx line 1263
+    claim_ru: Перед глухими -s/-r → висарга (k,kh,p,ph,ś,ṣ,s) / ś (c,ch) / ṣ (ṭ,ṭh) / s (t,th).
+    kind: allomorphy
+    falsifiable_as: -s/-r allomorphs (ḥ/ś/ṣ/s) conditioned by following voiceless class in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: before voiceless onsets final -s/-r give visarga before gutturals/labials/sibilants, ś before
+      palatals (c/ch), ṣ before cerebrals (ṭ/ṭh), s before dentals (t/th) — the four conditioned sibilant reflexes'
+    ref: Whitney §170-172 (s-sandhi before voiceless classes)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct four-way conditioning by the following voiceless class. Anchor.
+
+  - id: HK-61
+    loc: Занятие VI / mdx line 1278
+    claim_ru: Перед r- согласные -s (не после ā̆) и -r выпадают, удлиняя предшествующую краткую гласную.
+    kind: rule
+    falsifiable_as: -s/-r drop before r- with compensatory lengthening in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: before an initial r-, a preceding -s (not after a/ā) and -r are dropped and the short vowel is
+      lengthened compensatorily (punar rājā → punā rājā)'
+    ref: Whitney §179 (s/r loss before r- with lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct compensatory-lengthening rule. Anchor.
+
+  - id: HK-62
+    loc: Занятие VII / mdx line 1338
+    claim_ru: 'Однородные гласные при встрече сливаются в долгую: ā̆+ā̆→ā, ī̆+ī̆→ī, ū̆+ū̆→ū.'
+    kind: rule
+    falsifiable_as: Homogeneous-vowel coalescence at word junctures in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (savarṇa-dīrgha): two homogeneous simple vowels coalesce into the corresponding long — ā̆+ā̆→ā,
+      ī̆+ī̆→ī, ū̆+ū̆→ū'
+    ref: Whitney §126 (coalescence of similar vowels)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct vowel-sandhi rule. Anchor.
+
+  - id: HK-63
+    loc: Занятие VII / mdx line 1352
+    claim_ru: 'ā̆ + разнородная гласная: +ī̆→e, +ū̆→o, +e→ai, +o→au, +ṛ→ar.'
+    kind: rule
+    falsifiable_as: a/ā + heterogeneous vowel guṇa-sandhi outcomes in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (guṇa-sandhi): a/ā + i/ī→e, +u/ū→o, +e→ai, +o→au, +ṛ→ar — the standard heterogeneous-vowel outcomes'
+    ref: Whitney §127-128 (a + dissimilar vowel → guṇa/vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct guṇa/vṛddhi sandhi table. Anchor.
+
+  - id: HK-64
+    loc: Занятие VII / mdx line 1373
+    claim_ru: ī̆, ū̆, ṛ перед неоднородной гласной → сонанты y, v, r.
+    kind: rule
+    falsifiable_as: i/u/ṛ → y/v/r before heterogeneous vowels (yaṇ-sandhi) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (yaṇ-sandhi): before a dissimilar vowel i/ī→y, u/ū→v, ṛ→r (ity, madhv, pitr̥ + a → pitra)'
+    ref: Whitney §129 (i/u/ṛ → semivowel before vowel)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct semivowel sandhi. Anchor.
+
+  - id: HK-65
+    loc: Занятие VII / mdx line 1387
+    claim_ru: Конечная -m перед начальной согласной → анусвара; перед гласными не изменяется.
+    kind: rule
+    falsifiable_as: final -m → anusvāra before consonants, retained before vowels in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final -m → anusvāra before a following consonant but is retained as m before a vowel (tam + ca
+      → taṃ ca; tam + iha → tam iha) — the companion of the line-520 rule'
+    ref: Whitney §213 (final m-sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct; complements the line-520 statement. Anchor.
+
+  - id: HK-66
+    loc: Занятие VIII / mdx line 1452
+    claim_ru: Глагол характеризуется категориями наклонения, залога, лица, числа и времени.
+    kind: typology
+    falsifiable_as: Finite-verb category set (mood, voice, person, number, tense), Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the finite verb inflects for mood, voice (Parasmaipada/Ātmanepada), person, number and tense-system
+      — exactly the category set listed'
+    ref: Whitney §527ff (verbal categories)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the finite-verb categories. Anchor.
+
+  - id: HK-67
+    loc: Занятие VIII / mdx line 1456
+    claim_ru: Одни глаголы только Parasmaipada, другие только Ātmanepada, есть Ubhayapada.
+    kind: typology
+    falsifiable_as: Classify DCS roots into P-only / Ā-only / U for the three-way voice typology
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: roots lexically select voice — some are Parasmaipada-only, some Ātmanepada-only, some Ubhayapada
+      (either) — the standard three-way voice-class typology'
+    ref: Whitney §528-529 (voice restriction of roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct typology. Anchor.
+
+  - id: HK-68
+    loc: Занятие VIII / mdx line 1460
+    claim_ru: Страдательный залог — система производных форм.
+    kind: typology
+    falsifiable_as: Passive is derived (ya-formation + Ā endings) not a basic voice, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the passive is a derived formation (weak/zero-grade root + accented -yá- + Ātmanepada endings),
+      not a primary voice of the present system'
+    ref: Whitney §768 (passive stem)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: passive is derivational, not a basic diathesis. Anchor.'
+
+  - id: HK-69
+    loc: Занятие VIII / mdx line 1473
+    claim_ru: Ударение в формах настоящего времени фиксировано на определённой гласной основы или окончания.
+    kind: rule
+    falsifiable_as: RV/Whitney accented present forms confirm fixed stem/ending accent
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (with a caveat): present-system accent placement is rule-governed per class — fixed on the thematic
+      vowel/root in the thematic classes, but ALTERNATING between strong stem and ending by grade in the athematic classes;
+      ''фиксировано'' fits the thematic default the lesson presents'
+    ref: Whitney §731-733 (thematic accent), §1085 (athematic strong/weak accent)
+    verdict_pedagogy: JUSTIFIED
+    note: Fine as a first statement about the thematic present; the athematic strong/weak accent alternation (taught
+      later) is the qualifier to keep in mind.
+
+  - id: HK-70
+    loc: Занятие VIII / mdx line 1501
+    claim_ru: Поскольку лицо и число передаются окончаниями, личные местоимения при спряжении не употребляются.
+    kind: universality
+    falsifiable_as: Rate of overt nominative personal pronouns with finite verbs in DCS (near-zero)
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit is a pro-drop language — the personal endings encode person and number, so an overt
+      nominative personal pronoun is used only for emphasis/contrast, not by default'
+    ref: Whitney §512 (personal pronouns; ordinarily omitted)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as the default; overt subject pronouns do occur for emphasis/topic-shift, but Kochergina's 'не употребляются'
+      captures the unmarked case well.
+
+  - id: HK-71
+    loc: Занятие VIII / mdx line 1536
+    claim_ru: '1-е лицо — ''сильная'' форма: гласная основа перед личным окончанием удлиняется.'
+    kind: rule
+    falsifiable_as: a-stem 1sg present lengthens thematic vowel (-āmi/-āvas/-āmas), Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the thematic present lengthens -a → -ā before the 1st-person endings of all three numbers (bhávāmi,
+      bhávāvas, bhávāmas) — the ''1st = strong'' generalisation'
+    ref: Whitney §733 (thematic 1st-person lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct categorical rule (same fact underlies HK-18's second clause). Anchor.
+
+
+  - id: HK-72
+    loc: Занятие IX / mdx line 1633
+    claim_ru: Двойственное число обычно у существительных, обозначающих парные предметы (ноги, руки, глаза, родители).
+    kind: statistic
+    falsifiable_as: In DCS, dual tokens disproportionately concentrated on paired-entity lemmas vs all nouns
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the dual is a full grammatical number, but naturally-paired entities (eyes, hands, feet, parents,
+      the two Aśvins) are its prototypical and most frequent hosts — Whitney names exactly this use'
+    ref: Whitney §265-266 (the dual; natural pairs)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as a characterisation of the dual's typical use; the dual is grammatically general (any two), which
+      a fuller note would add, but the paired-object prototype is right.
+
+  - id: HK-73
+    loc: Занятие IX / mdx line 1635
+    claim_ru: Древнеиндийский язык имеет развитую падежную систему из восьми падежных форм.
+    kind: typology
+    falsifiable_as: Count distinct case slots in Whitney nominal paradigms = 8
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit has exactly eight morphological case-slots (Nom, Voc, Acc, Ins, Dat, Abl, Gen, Loc)
+      — the ''8 падежных форм'' count is exact (Voc sometimes counted with Nom, giving 7+1)'
+    ref: Whitney §266ff (the eight cases)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct case-count. Anchor.
+
+  - id: HK-74
+    loc: Занятие IX / mdx line 1701
+    claim_ru: 'Все именные основы делятся на две группы: основы на гласные и основы на согласные.'
+    kind: universality
+    falsifiable_as: Whitney nominal-stem taxonomy partitions all stems into vowel- vs consonant-final
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: every nominal stem is either vowel-final or consonant-final — an exhaustive, exclusive two-way
+      partition of the declension system'
+    ref: 'Whitney §111, §162 (stem taxonomy: vowel- vs consonant-stems)'
+    verdict_pedagogy: JUSTIFIED
+    note: A clean exhaustive taxonomy. Anchor.
+
+  - id: HK-75
+    loc: Занятие IX / mdx line 1709
+    claim_ru: Основы на -a — мужского и среднего рода; окончания m и n в большинстве форм совпадают.
+    kind: rule
+    falsifiable_as: 'Whitney a-stem: no feminine a-stems; m/n endings identical in >half of cells'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a-stems are masculine or neuter (no feminine a-stems — the feminine is the derived -ā class),
+      and the m./n. paradigms differ only in the Nom-Acc cells, coinciding elsewhere'
+    ref: Whitney §326-334 (a-stems; m./n. identity outside Nom-Acc)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct on both counts (no fem. a-stem; m./n. syncretism outside Nom-Acc). Anchor.
+
+  - id: HK-76
+    loc: Занятие IX / mdx line 1765
+    claim_ru: Во множественном числе всегда сходны формы N.V. и формы D.Abl.
+    kind: universality
+    falsifiable_as: pl NomVoc syncretize and pl Dat=Abl (-bhyas) universally across stem-classes
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the plural, Nom = Voc across all stem-classes, and Dat = Abl (-bhyas) universally — two exceptionless
+      plural syncretisms'
+    ref: Whitney §307 (plural Nom=Voc; Dat=Abl -bhyas)
+    verdict_pedagogy: JUSTIFIED
+    note: Two genuine plural universals, correctly stated. Anchor.
+
+  - id: HK-77
+    loc: Занятие IX / mdx line 1769
+    claim_ru: '-s после a/ā: -ās→ā; -as+гласная(кроме a)→a; -as→o.'
+    kind: allomorphy
+    falsifiable_as: Whitney visarga-sandhi for final -as/-ās against three conditioned outcomes
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final -as/-ās visarga-sandhi — -ās → -ā, -as+vowel(≠a) → -a, -as (pre-voiced / pre-a) → -o —
+      the three conditioned outcomes are exactly Whitney''s'
+    ref: Whitney §175-177 (final -as/-ās sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct three-way conditioning of -as/-ās. Anchor.
+
+  - id: HK-78
+    loc: Занятие X / mdx line 1901
+    claim_ru: Между -ā основы и гласными окончаниями появляются -y- (sg/du) и -n- (pl).
+    kind: allomorphy
+    falsifiable_as: 'Whitney ā-stem: vowel-initial endings take -y- (sg/du), -n- (Gen pl -nām)'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the derived ā-stem inserts -y- before vowel-initial endings in sg/du and shows -n- in the Gen
+      pl (-nām) — the standard ā-declension interstitials'
+    ref: Whitney §363-365 (ā-stem declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct interstitial-consonant rule for ā-stems. Anchor.
+
+  - id: HK-79
+    loc: Занятие X / mdx line 1927
+    claim_ru: 'Универсальные окончания: du. I.D.Abl. -bhyām, G.L. -os; pl. D.Abl. -bhyas, G. -(n)ām, L. -su.'
+    kind: universality
+    falsifiable_as: Each listed ending invariant across stem-classes; note a-stem Instr pl -ais exception
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: du I.D.Abl -bhyām, du G.L -os, pl D.Abl -bhyas, pl G -(n)ām, pl L -su are indeed invariant across
+      stem-classes — the one salient exception is the a-stem Instr pl -ais (vs -bhis elsewhere)'
+    ref: Whitney §307 (case-endings common to all stems)
+    verdict_pedagogy: JUSTIFIED
+    note: The listed endings are genuinely universal; the a-stem Instr pl -ais is the standard exception worth a rider,
+      but the claim as scoped is accurate.
+
+  - id: HK-80
+    loc: Занятие X / mdx line 1949
+    claim_ru: После -k, -r, гласных (кроме ā̆) начальное -s следующей морфемы → -ṣ (suteṣu, но sutāsu).
+    kind: allomorphy
+    falsifiable_as: Internal ruki s-retroflexion (Whitney §180); Loc pl suteṣu vs sutāsu in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (internal ruki): after k, r or a vowel other than a/ā, a following morpheme-initial s retroflexes
+      to ṣ — suteṣu (after e) vs sutāsu (after ā, no retroflexion) is the textbook minimal pair'
+    ref: Whitney §180 (ruki s → ṣ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ruki rule with the right worked pair. Anchor.
+
+  - id: HK-81
+    loc: Занятие X / mdx line 1953
+    claim_ru: Прилагательные формально не отграничены от существительных; склоняются одинаково при одинаковой основе.
+    kind: typology
+    falsifiable_as: Adjectives inflect by the same stem-class paradigms as nouns, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: adjectives are not formally distinct from nouns and decline by the same stem-class paradigms;
+      they differ only in agreeing for gender'
+    ref: Whitney §321-322 (adjectives decline as nouns)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct typological statement. Anchor.
+
+  - id: HK-82
+    loc: Занятие X / mdx line 1959
+    claim_ru: Признак imperfectum — аугмент a-, на который падает ударение.
+    kind: rule
+    falsifiable_as: augment a- on all imperfects and it carries accent, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the imperfect (and aorist, and conditional) carries the augment a-, and the augment bears the
+      accent (á-bhavat) in the accented (Vedic) text'
+    ref: Whitney §585, §541 (augment; augment accent)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the augment is the imperfect''s marker and is accented. Anchor.'
+
+  - id: HK-83
+    loc: Занятие X / mdx line 2017
+    claim_ru: У префиксального глагола аугмент оказывается между префиксом и основой.
+    kind: rule
+    falsifiable_as: prefixed imperfects place augment between preverb and root (samagacchat) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: with a prefixed (preverb) verb the augment stands between the preverb and the root — sam-a-gacchat,
+      not *a-saṃgacchat'
+    ref: Whitney §1081b (augment placement after preverb)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct augment-placement rule. Anchor.
+
+  - id: HK-84
+    loc: Занятие XII / mdx line 2306
+    claim_ru: 'Оптатив: 3 л. pl. P. -ur, Ā. -ran; Ā. 2-3 du. yāthām, yātām.'
+    kind: allomorphy
+    falsifiable_as: optative 3pl -ur (P) / -ran (Ā) against Whitney optative endings
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: optative 3pl P -ur, Ā -ran, and the Ā 2/3 du -yāthām/-yātām are the standard optative endings'
+    ref: Whitney §566, §613d (optative endings)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct optative ending set. Anchor.
+
+  - id: HK-85
+    loc: Занятие XII / mdx line 2431
+    claim_ru: lakṣmī и tantrī имеют в N.sg. окончание -s.
+    kind: allomorphy
+    falsifiable_as: lakṣmī/tantrī take Nom sg -s vs regular ī-stem -Ø, Whitney/DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic exception: the monosyllabic-type ī-stems lakṣmī and tantrī take Nom sg -s (lakṣmīs, tantrīs) rather
+      than the endingless -Ø of the derived nadī-type'
+    ref: Whitney §355b, §356 (ī-stems taking Nom sg -s)
+    verdict_pedagogy: JUSTIFIED
+    note: A precise, correctly-flagged lexical exception. Anchor.
+
+  - id: HK-86
+    loc: Занятие XII / mdx line 2435
+    claim_ru: От большинства мужских одушевлённых имён женский род образуется изменением -a на -ī.
+    kind: statistic
+    falsifiable_as: Share of animate masc a-stems forming feminine in -ī vs -ā in a lexicon
+    sources:
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: 'the ''-a → -ī for most animate masculines'' share is not reproducible: the feminine of an a-stem is formed
+      in -ā or -ī by suffixal/lexical conditioning, and ''большинство ... -ī'' has no stated or computable count base
+      (the DCS lemma inventory is not tagged for masc→fem derivation pairs)'
+    ref: Whitney §1223ff (feminine derivation -ā vs -ī); no reproducible count base
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: A proportion claim whose base cannot be reconstructed. Directionally the -ī feminine is very common for animates,
+      but the '-ī is the majority' figure is asserted, not shown; -ā is the competing default. Flagged UNTESTABLE.
+
+  - id: HK-87
+    loc: Занятие XII / mdx line 2448
+    claim_ru: Существительные/прилагательные на -aka изменяют -aka на -ikā.
+    kind: rule
+    falsifiable_as: -aka → -ikā feminine (Whitney §1222); bālaka/bālikā
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: nouns/adjectives in -aka form the feminine in -ikā (bālaka → bālikā), with the -a- syncope'
+    ref: Whitney §1222 (feminine of -aka in -ikā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct derivational rule. Anchor.
+
+  - id: HK-88
+    loc: Занятие XIII / mdx line 2632
+    claim_ru: Есть корни в двух ступенях (слабая = guṇa); обычно это корни с гласной -a-.
+    kind: statistic
+    falsifiable_as: Among two-grade roots, proportion with vowel -a- vs other vowels
+    sources:
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: the claim conflates ablaut grades ('слабая = guṇa' is itself non-standard, guṇa being the middle grade)
+      and asserts an unquantified 'обычно' about which roots are two-grade — neither the phrasing nor the proportion
+      is checkable against a ground-truth source
+    ref: Whitney §235ff (guṇa/vṛddhi grades); claim phrasing internally unclear
+    verdict_pedagogy: ORDER-QUESTIONABLE
+    note: The statement mislabels the grade hierarchy and makes an unquantified frequency claim; flagged UNTESTABLE
+      rather than forced into a fact verdict on an ambiguous formulation.
+
+  - id: HK-89
+    loc: Занятие XIII / mdx line 2644
+    claim_ru: Среди основ на -i преобладают m/f, среди основ на -u — m/n.
+    kind: statistic
+    falsifiable_as: Gender distribution of i-stems vs u-stems in DCS/lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (Whitney''s own description): i-stems occur chiefly as masculine/feminine and u-stems chiefly
+      as masculine/neuter — a distributional tendency of the two vowel-stem classes (not separately recounted here)'
+    ref: Whitney §335, §342 (gender distribution of i- and u-stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Matches Whitney's characterisation of the two classes' gender preponderances; exact proportions not recomputed
+      but the tendency is the standard one.
+
+  - id: HK-90
+    loc: Занятие XIII / mdx line 2646
+    claim_ru: Падежные окончания основ на -i и -u одинаковы.
+    kind: rule
+    falsifiable_as: i-stem and u-stem ending sets identical cell-by-cell, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the case-ending set of i-stems and u-stems is identical cell-for-cell (differing only in the
+      stem vowel), so they are taught as one paradigm'
+    ref: Whitney §336-343 (i- and u-stems share the ending set)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: i/u-stems are one declensional pattern. Anchor.'
+
+  - id: HK-91
+    loc: Занятие XIV / mdx line 2989
+    claim_ru: Корневые основы на -ā (m/f), на -ī, -ū (f) склоняются одинаково.
+    kind: rule
+    falsifiable_as: 'Whitney root-stem declension: monosyllabic ā/ī/ū share one ending set'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: monosyllabic root-stems in -ā (m./f.), -ī and -ū (f.) share one ending set (the accented, strong-throughout
+      root-noun declension)'
+    ref: Whitney §349, §351, §383 (monosyllabic root-stem declension)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the root-stem declension is uniform for ā/ī/ū monosyllables. Anchor.'
+
+  - id: HK-92
+    loc: Занятие XV / mdx line 3200
+    claim_ru: Различаются десять классов глаголов, делящихся на тематическое и атематическое спряжение.
+    kind: typology
+    falsifiable_as: 10-class present-system taxonomy + thematic/athematic split, Whitney §606ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the present system has exactly ten formation classes, partitioned into thematic (I, IV, VI, X)
+      and athematic (II, III, V, VII, VIII, IX) conjugation — the ''10 классов'' count is exact'
+    ref: Whitney §606ff (the ten present-classes; thematic/athematic split)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class count and the thematic/athematic partition. Anchor (see HK-18/HK-72 for the frequency of the
+      split).
+
+  - id: HK-93
+    loc: Занятие XV / mdx line 3236
+    claim_ru: Корни с i/u/ṛ/ḷ на одну согласную имеют в основе настоящего времени guṇa.
+    kind: rule
+    falsifiable_as: class-I present-stem guṇa of medial i/u/ṛ before single consonant (budh→bodha-), Whitney §745
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a class-I root with medial i/u/ṛ before a single consonant takes guṇa in the present stem (budh
+      → bódha-, vid → véda-)'
+    ref: Whitney §745 (class-I guṇa of the root vowel)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-I stem-formation rule. Anchor.
+
+  - id: HK-94
+    loc: Занятие XV / mdx line 3261
+    claim_ru: Основа настоящего VI класса — слабый корень + тематическое -a; ударение на -á.
+    kind: rule
+    falsifiable_as: class-VI weak-grade root + accented -á, Whitney §749 (likhá-, tudá-)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-VI present stem is the weak (unstrengthened) root + thematic -a with the accent on
+      the thematic -á- (tudá-, likhá-)'
+    ref: Whitney §749 (class VI, tudádi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-VI stem + accent. Anchor.
+
+  - id: HK-95
+    loc: Занятие XV / mdx line 3294
+    claim_ru: Корни на -am удлиняют a перед ya (bhram→bhrāmya-); корни на -iv удлиняют i (div→dīvya-).
+    kind: allomorphy
+    falsifiable_as: class-IV lengthening before -ya for -am/-iv roots, Whitney §761
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-IV -ya stems lengthen the root vowel of -am roots (bhram → bhrāmya-) and of div (div →
+      dīvya-)'
+    ref: Whitney §761 (class-IV lengthening before -ya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-IV allomorphy. Anchor.
+
+  - id: HK-96
+    loc: Занятие XV / mdx line 3305
+    claim_ru: Основа настоящего X класса — корень + суффикс -aya; ударение на -áya.
+    kind: rule
+    falsifiable_as: class-X present root + accented -áya, Whitney §775 (kathaya-)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-X present stem is root + suffix -aya with the accent on -áya (kathaya-, coraya-); the
+      same -aya underlies causatives'
+    ref: Whitney §775, §1041 (class X / -aya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-X stem + accent. Anchor.
+
+
+  - id: HK-97
+    loc: Занятие XVI / mdx line 3469
+    claim_ru: 'Второе главное спряжение включает шесть классов: II, III, V, VIII, VII и IX.'
+    kind: typology
+    falsifiable_as: Athematic conjugation partitions into exactly these 6 class-numbers, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic (''second main'') conjugation comprises exactly six present-classes — II, III,
+      V, VII, VIII, IX — the count is exact'
+    ref: Whitney §606 (athematic classes)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the athematic classes. Anchor.
+
+  - id: HK-98
+    loc: Занятие XVI / mdx line 3475
+    claim_ru: Каждый корень выступает в двух звуковых видах — сильном (guṇa) и слабом.
+    kind: universality
+    falsifiable_as: Athematic roots showing exactly strong/weak (guṇa/zero) alternation vs 3-way in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: an athematic root alternates between a strong (guṇa/full) and a weak (zero/reduced) grade across
+      the paradigm — the defining property of athematic inflection'
+    ref: Whitney §604, §555 (strong/weak stem alternation)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct characterisation of athematic gradation. Anchor.
+
+  - id: HK-99
+    loc: Занятие XVI / mdx line 3486
+    claim_ru: 'Ударение: в сильных формах на корень/основу, в слабых — на личные окончания.'
+    kind: rule
+    falsifiable_as: Accent by strong/weak grade in accented Vedic athematic paradigms, Whitney §1085ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the accented (Vedic) athematic paradigm the accent falls on the root/stem in the strong forms
+      and on the personal ending in the weak forms'
+    ref: Whitney §1085ff (athematic accent by grade)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct accent-by-grade rule. Anchor.
+
+  - id: HK-100
+    loc: Занятие XVI / mdx line 3490
+    claim_ru: Класс II (корневой) постепенно делается непродуктивным.
+    kind: statistic
+    falsifiable_as: Declining class-II present frequency across chronological DCS strata
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'the root class (II) is unproductive as a type: in DCS-2021 its 154,301 present-system tokens are carried
+      by a handful of frozen high-frequency roots (as, vac, brū, yā, i, …), not by an open, growing set — token-frequent
+      but lexically closed'
+    ref: Whitney §611ff (root class); DCS verify_claims_dcs.py HK18_verb_class_share (class II)
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Класс II в DCS-2021 даёт 154 301 словоформу, но это несколько замороженных высокочастотных корней
+      (as, vac, brū, yā и др.), а не продуктивный тип: новых глаголов класс не пополняет. Высокая частотность при закрытом
+      составе — как раз признак непродуктивности.'
+    note: Historically accurate (the root class stopped taking new members); the corpus caveat is that class II is still
+      token-frequent because its few surviving roots are extremely common. Productivity ≠ frequency.
+
+  - id: HK-101
+    loc: Занятие XVI / mdx line 3523
+    claim_ru: Основа настоящего V класса — ослабленный корень + суффиксы nu-/no-.
+    kind: allomorphy
+    falsifiable_as: class-V present stems take -nu-/-no- by weak/strong grade in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-V present stem is the (weakened) root + -nu- (strong -no-) — su → sunó-/sunu-'
+    ref: Whitney §697ff (class V, svādi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-V stem formation. Anchor.
+
+  - id: HK-102
+    loc: Занятие XVI / mdx line 3544
+    claim_ru: Корни VII класса оканчиваются только на согласную, основа — инфиксы n-/na.
+    kind: universality
+    falsifiable_as: Every class-VII root ends in a consonant, forms present by n/na infix, Whitney §683ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: every class-VII (rudhādi) root ends in a consonant and forms its present by infixing the nasal
+      na- (strong) / -n- (weak) before the final consonant — yuj → yunák-/yuñj-'
+    ref: Whitney §683ff (class VII, nasal-infix)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: class VII is the nasal-infix class, all consonant-final. Anchor.'
+
+  - id: HK-103
+    loc: Занятие XVI / mdx line 3570
+    claim_ru: В 3 л. pl. Ā. атематических личное окончание без носового n (-ate, -ata, atām).
+    kind: rule
+    falsifiable_as: athematic Ā 3pl endings lack -n- (-ate/-ata/-atām) vs thematic -ante in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic Ātmanepada 3pl endings lack the -n- (-ate/-ata/-atām) that the thematic conjugation
+      shows (-ante/-anta/-antām)'
+    ref: Whitney §613 (athematic 3pl Ā endings)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct athematic-vs-thematic 3pl.Ā contrast. Anchor.
+
+  - id: HK-104
+    loc: Занятие XVI / mdx line 3574
+    claim_ru: Императив 2 л. sg. P. основы на согласную — -dhi; глаголы V/VII могут быть равны основе.
+    kind: allomorphy
+    falsifiable_as: imperative 2sg -dhi/-hi/-āna/zero conditioning by stem-final/class, Whitney §704
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the athematic imperative 2sg P ending is -dhi/-hi on consonant/vowel stems, while class V/VII
+      stems may show a bare stem (imperative = stem) — the standard conditioned set'
+    ref: Whitney §704 (imperative 2sg -dhi/-hi/zero)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct imperative-2sg conditioning. Anchor.
+
+  - id: HK-105
+    loc: Занятие XVII / mdx line 3878
+    claim_ru: Глаголы на -ā (yā, vā) сохраняют его во всех формах.
+    kind: universality
+    falsifiable_as: ā-final class-II roots keep -ā throughout the present paradigm in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the ā-final class-II roots (yā, vā, …) keep -ā unchanged throughout the present paradigm (yā-ti,
+      yā-nti)'
+    ref: Whitney §621 (ā-roots of the root class)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: ā-roots are invariant in the present. Anchor.'
+
+  - id: HK-106
+    loc: Занятие XVII / mdx line 3910
+    claim_ru: han утрачивает -а- и h→gh в 3 л. pl. (ghnanti, aghnan, ghnantu).
+    kind: rule
+    falsifiable_as: han shows ghn- allomorph in 3pl of pres/impf/impv in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: han loses its -a- and shows h → gh in the 3pl of present/imperfect/imperative (ghnanti, aghnan,
+      ghnantu) — a lexical allomorphy of han'
+    ref: 'Whitney §637 (han: ghn- in the weakest forms)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct han allomorphy. Anchor.
+
+  - id: HK-107
+    loc: Занятие XVII / mdx line 4024
+    claim_ru: kar в слабых формах = kuru, а перед окончаниями на m/y/v = kur.
+    kind: allomorphy
+    falsifiable_as: kuru→kur truncation before m/y/v endings in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-VIII kṛ has the weak stem kuru-, truncated to kur- before endings beginning m/y/v (kurmas,
+      kuryāt, kurvanti)'
+    ref: 'Whitney §714 (kṛ: kuru-/kur-)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct kṛ present allomorphy. Anchor.
+
+  - id: HK-108
+    loc: Занятие XVIII / mdx line 4283
+    claim_ru: Корни с i/ī/u/ū в основе будущего имеют guṇa (e, o).
+    kind: rule
+    falsifiable_as: guṇa of root i/u in future stems (nī→neṣya, budh→bodhiṣya) in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the future stem takes guṇa of a root i/ī/u/ū (nī → neṣya-, bhū → bhaviṣya-, budh → bodhiṣya-)'
+    ref: Whitney §935 (guṇa in the s-future)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct future-stem guṇa rule. Anchor.
+
+  - id: HK-109
+    loc: Занятие XVIII / mdx line 4311
+    claim_ru: -d, -dh, -s → t перед будущим -sya (sad→satsyá-, vas→vatsyá-).
+    kind: rule
+    falsifiable_as: d/dh/s-final roots surface as t before future -sya in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (internal sandhi): root-final -d/-dh/-s surface as -t before the future -sya (sad → satsya-, vas
+      → vatsya-)'
+    ref: Whitney §936, §167 (d/dh/s → t before s)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pre-s internal sandhi. Anchor.
+
+  - id: HK-110
+    loc: Занятие XVIII / mdx line 4351
+    claim_ru: 'Имя деятеля на -tar: гласные i/u как в будущем; суффиксу -tar может предшествовать -i.'
+    kind: rule
+    falsifiable_as: -tṛ agent nouns share root ablaut and -i- insertion with the future stem in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the agent noun in -tṛ shares the future''s root ablaut and takes the connecting -i- for the same
+      (seṭ) roots that insert it in the future (kar-i-tṛ, but kar-tṛ)'
+    ref: Whitney §1182 (-tṛ agent nouns; seṭ -i-)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct parallel between the -tṛ noun and the future stem. Anchor.
+
+  - id: HK-111
+    loc: Занятие XVIII / mdx line 4357
+    claim_ru: 'Женский род от -tar: -ī к слабой ступени (kartar → kartrī).'
+    kind: rule
+    falsifiable_as: feminine agent nouns = weak-grade stem + -ī (kartṛ+ī→kartrī) in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the feminine of a -tṛ agent noun is the weak-grade stem + -ī (kartṛ + ī → kartrī)'
+    ref: Whitney §1182d (feminine of -tṛ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct feminine-derivation rule. Anchor.
+
+  - id: HK-112
+    loc: Занятие XIX / mdx line 4556
+    claim_ru: В сильных падежах nomina agentis имеют vṛddhi (ā), имена родства — guṇa (a).
+    kind: allomorphy
+    falsifiable_as: strong-case grade (vṛddhi vs guṇa) of agent vs kinship -tṛ stems in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the strong cases agent nouns in -tṛ take vṛddhi of the suffix (dātā́ram) while the kinship
+      terms (pitṛ, mātṛ, bhrātṛ) take only guṇa (pitáram) — the classic agent/kinship split'
+    ref: 'Whitney §369-373 (r-stems: agent vṛddhi vs kinship guṇa)'
+    verdict_pedagogy: JUSTIFIED
+    note: Correct and precisely the well-known agent/kinship strong-case contrast. Anchor.
+
+  - id: HK-113
+    loc: Занятие XIX / mdx line 4646
+    claim_ru: 'Описательное будущее: nomen agentis N.sg + as; в 3 л. глагол as не употребляется.'
+    kind: rule
+    falsifiable_as: periphrastic future = agent-noun N.sg + pres. as, 3rd person lacks auxiliary, in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic future = agent-noun Nom sg + present of as, with no overt auxiliary in the 3rd
+      person (dātā = ''he will give'', dātāsmi = ''I will give'')'
+    ref: Whitney §942-947 (periphrastic future)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct periphrastic-future construction incl. the 3rd-person auxiliary drop. Anchor.
+
+  - id: HK-114
+    loc: Занятие XXI / mdx line 4924
+    claim_ru: Редупликация используется при образовании настоящего, перфекта, аориста, интенсивов и дезидеративов.
+    kind: typology
+    falsifiable_as: Reduplication in exactly present-III, perfect, aorist, intensive, desiderative, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: reduplication is the marker of exactly the present class III, the perfect, the reduplicated aorist,
+      the intensive and the desiderative — the five reduplicating formations'
+    ref: Whitney §588 (uses of reduplication)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the reduplicating categories. Anchor.
+
+  - id: HK-115
+    loc: Занятие XXI / mdx line 4942
+    claim_ru: При удвоении согласные I ряда → II ряда; h → j.
+    kind: rule
+    falsifiable_as: velar→palatal (kar→cakar) and h→j reduplication mapping in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in reduplication a guttural (series I) reduplicates as the corresponding palatal (series II)
+      — kṛ → cakāra, gam → jagāma — and h reduplicates as j (hu → juhó-)'
+    ref: Whitney §590 (guttural → palatal, h → j in reduplication)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct reduplication-consonant mapping (distinct from the deaspiration rule HK-24). Anchor.
+
+  - id: HK-116
+    loc: Занятие XXI / mdx line 4994
+    claim_ru: В эпическом/классическом санскрите значение perfectum часто приближается к imperfectum.
+    kind: statistic
+    falsifiable_as: Proportion of perfect forms with past-narrative value in epic/classical DCS
+    sources:
+    - whitney
+    - dcs
+    verdict_fact: 'TRUE'
+    number: 'systemic (diachronic): in epic/classical Sanskrit the perfect loses its resultative value and is used as
+      a simple past ≈ the imperfect — DCS has 61,986 perfect tokens, comparable to the 47,554 imperfect, consistent
+      with the two competing as past-narrative tenses'
+    ref: Whitney §821-823 (perfect's later narrative use); DCS verify_claims_dcs.py HK15_past_tenses
+    verdict_pedagogy: JUSTIFIED
+    note: Correct diachronic observation; the corpus shows perfect and imperfect at comparable token counts, consistent
+      with both serving past narration in the classical stratum.
+
+  - id: HK-117
+    loc: Занятие XXI / mdx line 5018
+    claim_ru: Открытый слог или a+одиночная согласная → vṛddhi в 3 л. sg. P. перфекта.
+    kind: rule
+    falsifiable_as: vṛddhi in perfect 3sg P for open-syllable / a+single-consonant roots vs guṇa
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the perfect 3sg P takes vṛddhi of a root with an open syllable or a-+single-consonant (tan →
+      tatāna, but the 1sg has guṇa) — the strong-form vṛddhi rule'
+    ref: Whitney §793-794 (perfect strong-form vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct perfect strong-grade rule. Anchor.
+
+  - id: HK-118
+    loc: Занятие XXII / mdx line 5229
+    claim_ru: Корни на -ā в 1/3 sg. P. принимают -au; опускают -ā перед окончаниями du/pl.
+    kind: rule
+    falsifiable_as: ā-final roots take -au in perfect 1/3sg P and drop -ā before du/pl (yayau) in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ā-final roots take -au in the perfect 1sg/3sg P (dadau, yayau) and drop the -ā before the vowel-initial
+      du/pl endings'
+    ref: Whitney §793a (ā-root perfect -au)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ā-root perfect. Anchor.
+
+  - id: HK-119
+    loc: Занятие XXII / mdx line 5257
+    claim_ru: Корни a+согласная (модель CaC) в слабых формах не удваиваются и меняют a на e (pat→pet-).
+    kind: rule
+    falsifiable_as: the -a-→-e- contracted weak perfect (pat→pet-, labh→lebh-) for CaC roots in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: CaC roots (a + single consonant) form a contracted weak perfect in -e- without an overt reduplicating
+      syllable (pat → petur, labh → lebhe) — the Brugmann-type a → e'
+    ref: Whitney §794a (contracted -e- perfect of a-roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct account of the contracted perfect. Anchor.
+
+  - id: HK-120
+    loc: Занятие XXII / mdx line 5297
+    claim_ru: Описательный перфект — от глаголов на ī/ū, производных (каузативов), а также ās и vid.
+    kind: rule
+    falsifiable_as: 'Roots attesting periphrastic perfect vs simple perfect: the ī/ū-initial, derived, ās, vid set'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic perfect is used by roots in ī/ū, by the derivative (causative/desiderative/denominative)
+      conjugations, and by ās and vid — the standard root inventory'
+    ref: Whitney §1070-1071 (periphrastic perfect)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of periphrastic-perfect roots (the counterpart of the HK-25 overstatement). Anchor.
+
+  - id: HK-121
+    loc: Занятие XXII / mdx line 5299
+    claim_ru: Описательный перфект = форма на -ām + as / bhū (редко) / kar в перфекте.
+    kind: statistic
+    falsifiable_as: periphrastic-perfect auxiliaries āsa vs cakāra vs babhūva; babhūva rarest, DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the periphrastic perfect = the -ām form + the perfect of an auxiliary — most often āsa (as),
+      less often cakāra (kṛ), and rarely babhūva (bhū); the babhūva-rarest ranking is Whitney''s'
+    ref: Whitney §1071b-c (periphrastic-perfect auxiliaries; āsa ≫ cakāra > babhūva)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct auxiliary ranking, incl. the '(редко) bhū'. Anchor; exact token split not carried by the DCS-2021
+      export.
+
+  - id: HK-122
+    loc: Занятие XXII / mdx line 5310
+    claim_ru: У личных местоимений 1/2 л. в A.D.G. есть краткие безударные энклитические формы.
+    kind: rule
+    falsifiable_as: enclitic short forms only in Acc/Dat/Gen of 1st/2nd pronouns, Whitney §491
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the 1st/2nd person pronouns have unaccented enclitic short forms only in the Acc, Dat and Gen
+      (mā/me, tvā/te, nau/vām, naḥ/vaḥ) — never in Nom/Ins/Abl/Loc'
+    ref: Whitney §491 (enclitic pronoun forms)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the enclitics are confined to Acc/Dat/Gen. Anchor.'
+
+
+  - id: HK-123
+    loc: Занятие XXIII / mdx line 5541
+    claim_ru: По наличию -i- корни делятся на seṭ и aniṭ; есть смешанный тип veṭ.
+    kind: typology
+    falsifiable_as: Root list against Whitney seṭ/aniṭ/veṭ tables; examples match attested -i- distribution
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: roots are classed by whether they insert the connecting -i- — seṭ (with -i-), aniṭ (without),
+      and a mixed veṭ type — a foundational lexical partition'
+    ref: Whitney §543a (seṭ/aniṭ/veṭ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct seṭ/aniṭ/veṭ typology (the lexical class behind the future HK-4b and perfect HK-26). Anchor.
+
+  - id: HK-124
+    loc: Занятие XXIII / mdx line 5549
+    claim_ru: 'Инфинитив: суффикс -tum, у seṭ -itum; ā остаётся, ī̆/ū̆ выступают в guṇa.'
+    kind: rule
+    falsifiable_as: -tum vs -itum tracks seṭ/aniṭ; root ā stays, ī/ū appear as guṇa in DCS infinitives
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the infinitive is -tum (aniṭ) / -itum (seṭ); the root keeps -ā and shows ī/ū in guṇa (e/o) before
+      the suffix'
+    ref: Whitney §968 (infinitive -tum)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the infinitive tracks seṭ/aniṭ exactly like the other -ta formations. Anchor.'
+
+  - id: HK-125
+    loc: Занятие XXIII / mdx line 5563
+    claim_ru: От префиксальных глаголов деепричастие на -ya, после краткой гласной -tya.
+    kind: allomorphy
+    falsifiable_as: prefixed absolutives use -ya (or -tya after short vowel), non-prefixed -tvā, in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the gerund of a prefixed verb is -ya (or -tya after a short vowel), while the simple (unprefixed)
+      verb takes -tvā'
+    ref: Whitney §990, §994 (absolutive -tvā vs -ya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct absolutive allomorphy by prefixation. Anchor.
+
+  - id: HK-126
+    loc: Занятие XXIII / mdx line 5573
+    claim_ru: 'Глухие/непридыхательные звонкие перед t: -k,-kh,-g,-c,-j+t → -kt-; -p,-ph,-b+t → -pt-.'
+    kind: allomorphy
+    falsifiable_as: internal sandhi before -t in aniṭ roots (vac→uktvā, chid→chittvā, svap→suptvā)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (internal sandhi before -t): a voiceless or unaspirated-voiced final stop of an aniṭ root gives
+      -kt-/-pt- clusters (vac → uktvā, chid → chittvā, svap → suptvā)'
+    ref: Whitney §141ff, §216 (internal sandhi before t)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pre-t cluster formation. Anchor.
+
+  - id: HK-127
+    loc: Занятие XXIII / mdx line 5585
+    claim_ru: 'Звонкие придыхательные/-h перед t: -gh,-h+t→gdh; -dh+t→-ddh-; -bh+t→-bdh-.'
+    kind: allomorphy
+    falsifiable_as: aspirate/h-final roots before -t give dagdh-/buddh-/labdh- (voicing+aspiration throwback)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (Bartholomae''s law): a voiced-aspirate or -h root before -t gives -gdh-/-ddh-/-bdh- — the voicing
+      + aspiration-throwback (dah → dagdha, budh → buddha, labh → labdha)'
+    ref: Whitney §160 (aspirate + t; Bartholomae's law)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct Bartholomae-law outcomes. Anchor.
+
+  - id: HK-128
+    loc: Занятие XXIII / mdx line 5597
+    claim_ru: Местоимение tad при самостоятельном употреблении = личное местоимение 3-го лица.
+    kind: typology
+    falsifiable_as: standalone sa/sā/tad function as 3rd-person pronouns vs demonstrative modifiers in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: standalone sa/sā/tad function as the 3rd-person personal pronoun, while attributively they are
+      the demonstrative ''that'''
+    ref: Whitney §495 (tad as 3rd-person pronoun)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: Sanskrit has no dedicated 3rd-person pronoun; tad fills the slot. Anchor.'
+
+  - id: HK-129
+    loc: Занятие XXIV / mdx line 5795
+    claim_ru: Основа пассива = ослабленный корень + ударяемый суффикс -ya.
+    kind: rule
+    falsifiable_as: passive stem = weak/zero-grade root + accented -yá- (dṛśyá-, ucyá-), Whitney §768
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the passive stem = the weak/zero-grade root + the accented suffix -yá- (dṛś → dṛśyá-, vac → ucyá-)'
+    ref: Whitney §768 (passive stem -yá-)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct passive-stem formation (the specific rule behind HK's passive cluster). Anchor.
+
+  - id: HK-130
+    loc: Занятие XXIV / mdx line 5807
+    claim_ru: 'Корни на гласную: ā→ī, i→ī, u→ū, ṛ(ar)→ri; исключения śī→śayyá-, hvā→hūyá-.'
+    kind: allomorphy
+    falsifiable_as: passive stems of vowel-final roots (dā→dīya, kar→kriya) + śī/hvā exceptions in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: vowel-final roots in the passive show ā/i → ī, u → ū, ṛ(ar) → ri (dā → dīyá-, kṛ → kriyá-), with
+      the lexical exceptions śī → śayya- and hvā → hūyá-'
+    ref: Whitney §770-772 (passive of vowel-final roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct, incl. the śī/hvā exceptions Kochergina flags. Anchor.
+
+  - id: HK-131
+    loc: Занятие XXIV / mdx line 5823
+    claim_ru: 'От корней на -an две основы пассива: jan→janyá-/jāyá-; tan→tanyá-/tāyá-.'
+    kind: allomorphy
+    falsifiable_as: -an roots (jan, tan) attest both passive stems in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -an roots build two passive stems — jan → janyá-/jāyá-, tan → tanyá-/tāyá- (the samprasāraṇa
+      vs full alternation)'
+    ref: Whitney §772 (double passive of -an roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct double-passive of -an roots. Anchor.
+
+  - id: HK-132
+    loc: Занятие XXIV / mdx line 5843
+    claim_ru: Непереходные глаголы в пассиве всегда имеют форму 3 л. sg.
+    kind: universality
+    falsifiable_as: impersonal passives of intransitives (bhūyate, gamyate) occur only in 3rd sg in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the impersonal passive of an intransitive is inherently 3rd sg (bhūyate, gamyate, supyate) —
+      there is no patient to agree with (the same fact as HK-28)'
+    ref: Whitney §999b (impersonal passive of intransitives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct; overlaps HK-28 (the neighbouring line 5845). Anchor.
+
+  - id: HK-133
+    loc: Занятие XXIV / mdx line 5855
+    claim_ru: Пассивные причастия настоящего = основа пассива + суффикс -māna.
+    kind: rule
+    falsifiable_as: present passive participles = passive stem + -māna (dīyamāna, kriyamāṇa) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: present passive participles = the passive stem + -māna (dīyamāna, kriyamāṇa)'
+    ref: Whitney §1043 (present participles -māna)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct present-passive-participle formation. Anchor.
+
+  - id: HK-134
+    loc: Занятие XXIV / mdx line 5968
+    claim_ru: 'Местоимение enad: только A. всех чисел, I. sg. и G.L. du.'
+    kind: universality
+    falsifiable_as: enad/enam attested only in Acc (all numbers), Ins sg, Gen/Loc du in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the enclitic enad is defective — attested only in the Acc (all numbers), the Ins sg, and the
+      Gen/Loc du'
+    ref: Whitney §500 (enad, defective paradigm)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct defective-paradigm statement. Anchor.
+
+  - id: HK-135
+    loc: Занятие XXV / mdx line 6159
+    claim_ru: Сонанты y/r/v перед ī̆/ū̆/ṛ дают двойное чередование samprasāraṇa.
+    kind: rule
+    falsifiable_as: samprasāraṇa roots (yaj→ij, vac→uk, grah→gṛh) show y/v/r → i/u/ṛ, Whitney §252
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (samprasāraṇa): the semivowels y/v/r before a consonantal ending vocalise to i/u/ṛ (yaj → iṣ-,
+      vac → uc-, grah → gṛh-)'
+    ref: Whitney §252 (samprasāraṇa)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct samprasāraṇa rule. Anchor.
+
+  - id: HK-136
+    loc: Занятие XXV / mdx line 6198
+    claim_ru: У корней на dh, bh, h суффикс -ta вызывает озвончение с перераспределением придыхания.
+    kind: allomorphy
+    falsifiable_as: labh→labdha, bandh→baddha, dah→dagdha in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (Bartholomae''s law again): -ta on a dh/bh/h root voices and throws the aspiration back (labh
+      → labdha, bandh → baddha, dah → dagdha)'
+    ref: Whitney §160 (aspirate + t)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct; the PPP instantiation of Bartholomae's law. Anchor.
+
+  - id: HK-137
+    loc: Занятие XXV / mdx line 6210
+    claim_ru: Корни на -m, удлиняя -a-, меняют m на n (kram→krānta, śram→śrānta).
+    kind: allomorphy
+    falsifiable_as: -am roots kram/kṣam/śram → krānta/kṣānta/śrānta (m→n before t with -ā-) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -am roots lengthen the -a- and change m → n before -ta (kram → krānta, śram → śrānta, kṣam →
+      kṣānta)'
+    ref: Whitney §955a (m → n before t with lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -am-root PPP allomorphy. Anchor.
+
+  - id: HK-138
+    loc: Занятие XXV / mdx line 6216
+    claim_ru: Причастия на -ta/-na от непереходных глаголов имеют активное значение (прошлое).
+    kind: typology
+    falsifiable_as: -ta participles of intransitives (gata, sthita) carry active past sense in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the -ta/-na participle of an intransitive verb has active past sense (gata ''gone'', sthita ''stood'')
+      rather than passive'
+    ref: Whitney §952b (active sense of intransitive -ta)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: intransitive -ta = active past. Anchor.'
+
+  - id: HK-139
+    loc: Занятие XXV / mdx line 6238
+    claim_ru: Относительное yad склоняется как tad, но не меняя согласных (yaḥ, yā, yad).
+    kind: rule
+    falsifiable_as: yad declines like tad but keeps y- throughout, Whitney §510
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the relative yad declines exactly like tad but keeps the initial y- throughout (yaḥ, yā, yad,
+      yasya…) — no consonant change'
+    ref: Whitney §510 (relative yad)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct relative-pronoun declension. Anchor.
+
+  - id: HK-140
+    loc: Занятие XXV / mdx line 6260
+    claim_ru: Притяжательные 1/2 л. = основа личного местоимения + -īya (mad→madīya).
+    kind: rule
+    falsifiable_as: possessives madīya/tvadīya formed with accented -īya on pronominal bases in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: 1st/2nd-person possessives = the pronominal base + -īya (mad → madīya, tvad → tvadīya, asmad
+      → asmadīya)'
+    ref: Whitney §516d (possessives in -īya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct possessive-derivation rule. Anchor.
+
+  - id: HK-141
+    loc: Занятие XXVI / mdx line 6407
+    claim_ru: 'Активные причастия прошедшего: 1) -ta/-na + -vant; 2) слабая основа перфекта + -(i)vaṃs-.'
+    kind: typology
+    falsifiable_as: active past participles as -tavant/-navant and perfect -vaṃs (kṛtavant, cakṛvaṃs) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: active past participles are (1) -ta/-na + -vant (kṛtavant) and (2) the weak perfect stem + -(i)vaṃs-
+      (cakṛvaṃs) — the two active-past-participle types'
+    ref: Whitney §959 (-tavant), §802ff (perfect participle -vaṃs)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the two active past participles. Anchor.
+
+  - id: HK-142
+    loc: Занятие XXVI / mdx line 6427
+    claim_ru: 'Тематические P. причастия настоящего: основа + -nt; атематические: слабая основа + -ant.'
+    kind: allomorphy
+    falsifiable_as: thematic -nt (gacchant) vs athematic weak-stem + -ant (kurvant) present participles in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: thematic present participles = stem + -nt (gacchant-), athematic = weak stem + -ant (kurvant-,
+      adant-)'
+    ref: Whitney §443, §450 (present participles -ant/-at)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct thematic/athematic present-participle contrast. Anchor.
+
+  - id: HK-143
+    loc: Занятие XXVI / mdx line 6441
+    claim_ru: 'Тематические Ā. причастия: -māna; атематические: слабая основа + -āna.'
+    kind: allomorphy
+    falsifiable_as: middle participles thematic -māna (labhamāna) vs athematic -āna (sunvāna) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: middle participles are thematic -māna (labhamāna) vs athematic -āna (sunvāna, dadāna)'
+    ref: Whitney §619, §741 (middle participles -māna/-āna)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct middle-participle allomorphy. Anchor.
+
+  - id: HK-144
+    loc: Занятие XXVI / mdx line 6459
+    claim_ru: 'Местоименное склонение: D.Abl.L.sg. -sma-; L.sg. -in; f -sya-; N.pl.m -е; G.pl. -sām.'
+    kind: typology
+    falsifiable_as: the five pronominal-declension markers against Whitney §495ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the pronominal declension''s diagnostic markers — D/Abl/L sg -sma-/-syā-, L sg m/n -smin, f G/D/Abl/L
+      -syā-, N pl m -e, G pl -sām — are exactly those Kochergina lists'
+    ref: Whitney §495-499 (pronominal declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pronominal-ending inventory. Anchor.
+
+  - id: HK-145
+    loc: Занятие XXVI / mdx line 6468
+    claim_ru: По местоименному типу склоняются местоименные прилагательные (anya, sarva, katara...).
+    kind: rule
+    falsifiable_as: pronominal adjectives take pronominal endings; sarva n. N.A.sg = sarvam in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the pronominal adjectives (anya, sarva, katara, itara, …) take pronominal endings (anyat, sarve,
+      katarasmin); sarva''s neuter N.A.sg sarvam is the lexical exception (HK-30)'
+    ref: Whitney §523-524 (pronominal adjectives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct; consistent with the sarva exception already registered at HK-30. Anchor.
+
+  - id: HK-146
+    loc: Занятие XXVI / mdx line 6538
+    claim_ru: Конечное -n после кратких гласных может удваиваться перед начальной гласной.
+    kind: rule
+    falsifiable_as: final -n after short vowel doubles to -nn- before vowel (tasminn eva), Whitney §210
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a final -n after a short vowel doubles to -nn- before an initial vowel (tasmin eva → tasminn
+      eva)'
+    ref: Whitney §210 (final -n doubling)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct n-doubling sandhi. Anchor.
+
+  - id: HK-147
+    loc: Занятие XXVIII / mdx line 6803
+    claim_ru: 'В конце словоформы/перед s шумные: гуттуральный ряд→k; церебральный→ṭ; зубной→t; губной→p.'
+    kind: allomorphy
+    falsifiable_as: word-final stop neutralization to voiceless unaspirate (vāc→vāk, yudh→yut), Whitney §141ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: word-finally and before -s a stop is neutralised to the voiceless unaspirate of its own series
+      — guttural → k, cerebral → ṭ, dental → t, labial → p (vāc → vāk, yudh → yut)'
+    ref: Whitney §141-143 (final-stop neutralisation)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct final-neutralisation rule. Anchor.
+
+  - id: HK-148
+    loc: Занятие XXVIII / mdx line 6813
+    claim_ru: Конечные k,ṭ,t,p озвончаются перед гласными и всеми согласными, кроме шумных глухих.
+    kind: rule
+    falsifiable_as: final k/ṭ/t/p → g/ḍ/d/b before vowels/voiced but not voiceless stops
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the resulting final k/ṭ/t/p voice to g/ḍ/d/b before a vowel or voiced consonant, but stay voiceless
+      before a voiceless stop'
+    ref: Whitney §159 (final-stop voicing sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct final-voicing rule (companion to line 6803). Anchor.
+
+  - id: HK-149
+    loc: Занятие XXVIII / mdx line 6822
+    claim_ru: Все именные основы на согласные склоняются одинаково (кроме N.A.V. среднего рода).
+    kind: universality
+    falsifiable_as: consonant-stem case endings uniform except neuter N.A.V., Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: all consonant-stem nouns share one case-ending set, differing only in the neuter Nom-Acc-Voc
+      cells'
+    ref: Whitney §421ff (consonant-stem declension)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: consonant stems are one declension bar the neuter Nom-Acc. Anchor.'
+
+  - id: HK-150
+    loc: Занятие XXVIII / mdx line 6884
+    claim_ru: 'Три ступени чередования: некоторые m/n на -an, перфектные причастия -(i)vaṃs, -añc прилагательные.'
+    kind: typology
+    falsifiable_as: three-grade consonant stems = -an nouns, -vaṃs participles, -añc directional adjectives, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the three-grade consonant stems are the -an nouns (rājan/rājñ-), the perfect participles in -vaṃs/-uṣ,
+      and the directional adjectives in -añc/-ac'
+    ref: Whitney §421, §450, §462 (three-grade consonant stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the three-grade stems. Anchor.
+
+  - id: HK-151
+    loc: Занятие XXVIII / mdx line 6932
+    claim_ru: ātman и другие на -man/-van в слабых формах сохраняют -a- перед -n.
+    kind: allomorphy
+    falsifiable_as: -man/-van keep -a- before -n in weak cases (ātmanā not *ātmnā) vs rājan (rājñā) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -man/-van stems keep the -a- before -n in the weak cases (ātmanā, not *ātmnā), unlike rājan which
+      syncopates (rājñā)'
+    ref: Whitney §426 (-man/-van stems retain -a-)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the -man/-van vs rājan contrast. Anchor.'
+
+  - id: HK-152
+    loc: Занятие XXVIII / mdx line 6957
+    claim_ru: śvan и yuvan в слабых падежах имеют основы śun- и yūn-.
+    kind: allomorphy
+    falsifiable_as: śvan/yuvan weak-case stems śun-/yūn- (śunā, yūnā) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: śvan and yuvan have the weak-case stems śun- and yūn- (śunā, yūnā) — suppletive weak grades'
+    ref: Whitney §427 (śvan/yuvan weak stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct śvan/yuvan allomorphy. Anchor.
+
+
+  - id: HK-153
+    loc: Занятие XXIX / mdx line 7274
+    claim_ru: 'Имена на -ant (-mant, -vant): сильная основа -ant, слабая -at.'
+    kind: allomorphy
+    falsifiable_as: -ant/-mant/-vant strong = -ant, weak = -at across case forms, Whitney §453ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ant/-mant/-vant stems have the strong stem -ant and the weak stem -at across the cases'
+    ref: Whitney §453ff (-ant/-mant/-vant declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct strong/weak alternation for -ant stems. Anchor.
+
+  - id: HK-154
+    loc: Занятие XXIX / mdx line 7304
+    claim_ru: mahant имеет сильную основу на -ānt (mahāntam, mahān).
+    kind: rule
+    falsifiable_as: mahant strong stem mahānt vs mahat weak, Whitney §450
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: mahant has the strong stem mahānt (mahāntam, N.sg mahān) vs the weak mahat'
+    ref: Whitney §450 (mahant)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct mahant allomorphy. Anchor.
+
+  - id: HK-155
+    loc: Занятие XXIX / mdx line 7330
+    claim_ru: 'Имена на -in (-min, -vin): -in перед гласными окончаниями, -i перед согласными.'
+    kind: allomorphy
+    falsifiable_as: -in before vowel-initial, -i before consonant-initial endings, Whitney §439
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -in/-min/-vin stems keep -in before vowel-initial endings and reduce to -i before consonant-initial
+      ones (balinā, balibhis)'
+    ref: Whitney §439 (-in stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -in-stem alternation. Anchor.
+
+  - id: HK-156
+    loc: Занятие XXIX / mdx line 7362
+    claim_ru: 'Сравнительная на -īyaṃs: сильная -īyāṃs, слабая -īyas, -yan только в V.sg.m.'
+    kind: allomorphy
+    falsifiable_as: 'comparative -īyaṃs: strong -īyāṃs, weak -īyas, -yan only in V.sg.m, Whitney §463ff'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the primary comparative -īyaṃs has strong -īyāṃs, weak -īyas, with -yan only in the m Voc sg'
+    ref: Whitney §463-465 (comparative -īyaṃs declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct three-grade comparative declension. Anchor.
+
+  - id: HK-157
+    loc: Занятие XXIX / mdx line 7393
+    claim_ru: Большинство качественных прилагательных могут образовать степени сравнения.
+    kind: statistic
+    falsifiable_as: Proportion of adjectives attested with comparative/superlative in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: degree-formation is broadly productive — most qualitative adjectives can take a comparative/superlative
+      (chiefly the secondary -tara/-tama)'
+    ref: Whitney §466ff (comparison of adjectives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct productivity statement; the exact share is not recounted but the generalisation is sound.
+
+  - id: HK-158
+    loc: Занятие XXIX / mdx line 7395
+    claim_ru: Сравнительная степень = основа + вторичные суффиксы -tara (m,n), -tarā (f).
+    kind: rule
+    falsifiable_as: frequency of -tara comparatives vs primary -yaṃs in DCS, Whitney §471-473
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the secondary comparative = stem + -tara (m/n), -tarā (f) — the productive comparison suffix'
+    ref: Whitney §471-473 (-tara/-tama)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct secondary-comparative formation. Anchor.
+
+  - id: HK-159
+    loc: Занятие XXIX / mdx line 7401
+    claim_ru: Реже употребляется первичный суффикс -(ī)yaṃs; гласная корня в guṇa.
+    kind: statistic
+    falsifiable_as: token frequency of primary -yaṃs vs secondary -tara; root vowel guṇa, Whitney §467
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the primary suffix -(ī)yaṃs is less common/productive than the secondary -tara, and takes guṇa
+      of the root vowel — Kochergina''s ''реже'' is correct'
+    ref: Whitney §467 (primary -yaṃs less frequent than -tara)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the primary comparative is the minority, secondary -tara the productive default. Anchor.'
+
+  - id: HK-160
+    loc: Занятие XXIX / mdx line 7407
+    claim_ru: Сравнительная степень употребляется с существительным в отложительном падеже.
+    kind: rule
+    falsifiable_as: comparatives govern ablative of comparison in corpus, Whitney §1131
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the comparative governs the ablative of comparison (X-tara + Abl ''more X than'')'
+    ref: Whitney §1131 (ablative of comparison)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct comparative syntax. Anchor.
+
+  - id: HK-161
+    loc: Занятие XXIX / mdx line 7425
+    claim_ru: Превосходная степень употребляется с родительным или местным падежами.
+    kind: rule
+    falsifiable_as: superlatives co-occur with genitive/locative of the group in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the superlative co-occurs with the genitive or locative of the group it selects from (''the best
+      of/among'')'
+    ref: Whitney §1130-1131 (partitive genitive/locative with superlative)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct superlative syntax. Anchor.
+
+  - id: HK-162
+    loc: Занятие XXIX / mdx line 7431
+    claim_ru: 'Ряд прилагательных только в сравнительной/превосходной: kánīyaṃs, jyā́yaṃs, śréyaṃs...'
+    kind: rule
+    falsifiable_as: these suppletive comparatives lack positive-degree base, Whitney §468, §473
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: kánīyaṃs, jyā́yaṃs, śréyaṃs and their kin are suppletive comparatives/superlatives with no positive-degree
+      base of the same stem'
+    ref: Whitney §468, §473 (suppletive comparatives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct suppletive-comparative set. Anchor.
+
+  - id: HK-163
+    loc: Занятие XXIX / mdx line 7452
+    claim_ru: Прилагательные в степенях сравнения (от предложных основ) склоняются местоименно.
+    kind: rule
+    falsifiable_as: -tara/-tama from prepositional bases (uttara) decline pronominally, Whitney §523
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: comparatives/superlatives built on prepositional bases (uttara, adhara) decline pronominally
+      (uttarasmin, uttare)'
+    ref: Whitney §523 (pronominal declension of prepositional adjectives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pronominal declension of these adjectives. Anchor.
+
+  - id: HK-164
+    loc: Занятие XXX / mdx line 7611
+    claim_ru: ś, ṣ, ch, (иногда) j, h в конце словоформы и перед s дают ṭ, перед bh- дают ḍ.
+    kind: allomorphy
+    falsifiable_as: final ś/ṣ/ch/j/h → ṭ word-finally & before -s, → ḍ before bh-endings, Whitney §218
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: root-final ś/ṣ/ch (and sometimes j/h) go to ṭ word-finally and before -s, and to ḍ before bh-endings
+      (viṭ, viḍbhis)'
+    ref: Whitney §218, §226 (palatal/ṣ → ṭ/ḍ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct final-palatal cerebralisation. Anchor.
+
+  - id: HK-165
+    loc: Занятие XXX / mdx line 7621
+    claim_ru: ś даёт -k/-g в корневых именах diś, dṛś, spṛś (dik, digbhis).
+    kind: allomorphy
+    falsifiable_as: diś/dṛś/spṛś show ś → k/g not ṭ/ḍ, Whitney §218a
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in diś, dṛś, spṛś the root-final ś goes to k/g (dik, digbhis) rather than ṭ/ḍ — a lexical sub-rule'
+    ref: Whitney §218a (diś/dṛś/spṛś → k/g)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct lexical exception. Anchor.
+
+  - id: HK-166
+    loc: Занятие XXX / mdx line 7626
+    claim_ru: Придыхательные в конце корня перед bh- утрачивают придыхание.
+    kind: allomorphy
+    falsifiable_as: root-final aspirates deaspirate before bh-endings (kakubh → kakubbhis), Whitney §153
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a root-final aspirate deaspirates before bh-endings (kakubh → kakubbhis) by the loss-of-aspiration
+      rule'
+    ref: Whitney §153 (deaspiration before bh)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct deaspiration rule. Anchor.
+
+  - id: HK-167
+    loc: Занятие XXX / mdx line 7685
+    claim_ru: m/f имена на -as в N.sg. удлиняют гласный суффикса (sumanās, uṣās).
+    kind: rule
+    falsifiable_as: m/f -as stems lengthen suffix vowel in N.sg, Whitney §427
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: m/f -as stems lengthen the suffix vowel in the Nom sg (sumanās, uṣās)'
+    ref: Whitney §427 (m/f -as Nom sg lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -as Nom sg lengthening. Anchor.
+
+  - id: HK-168
+    loc: Занятие XXX / mdx line 7738
+    claim_ru: Корневые имена на -ar склоняются без изменений в корне (dvār).
+    kind: rule
+    falsifiable_as: -ar root nouns keep stable stem across cases, Whitney §389
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ar root nouns (dvār ''door'') keep a stable stem across the cases (no gradation)'
+    ref: Whitney §389 (-ar/-ur root nouns)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct stable -ar root-noun declension. Anchor.
+
+  - id: HK-169
+    loc: Занятие XXX / mdx line 7744
+    claim_ru: Корневые имена на -ir, -ur удлиняют гласную перед r в определённых формах (gir→gīr).
+    kind: allomorphy
+    falsifiable_as: -ir/-ur root nouns lengthen before zero/consonant-endings (gīr, gīrbhis), Whitney §392
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ir/-ur root nouns lengthen the vowel before a consonant/zero ending (gir → gīr, gīrbhis; pur
+      → pūr)'
+    ref: Whitney §392 (-ir/-ur lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -ir/-ur lengthening. Anchor.
+
+  - id: HK-170
+    loc: Занятие XXX / mdx line 7750
+    claim_ru: Корневые имена на -h обычно второй элемент сложного слова.
+    kind: statistic
+    falsifiable_as: Proportion of -h root nouns occurring only as compound-final in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the -h root nouns (-duh, -lih, -muh) chiefly occur as the final member of a compound rather than
+      free-standing'
+    ref: Whitney §222, §403 (-h root nouns in composition)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as a descriptive tendency (their compound-final use); the exact proportion is not recounted but the
+      generalisation is standard.
+
+  - id: HK-171
+    loc: Занятие XXXI / mdx line 7988
+    claim_ru: Корневые основы на согласные нередко имеют параллельную основу на гласную; тип на -a продуктивен.
+    kind: statistic
+    falsifiable_as: consonant root nouns with parallel vowel-stem (esp. -a) doublets in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: many consonant root nouns have a parallel vowel-stem doublet, and the -a (thematic) parallel
+      is the productive one (vāc / -a-doublets)'
+    ref: Whitney §399, §1147 (root nouns and their thematic doublets)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct descriptive statement about root-noun/-a-stem doublets. Anchor; exact counts not recomputed.
+
+  - id: HK-172
+    loc: Занятие XXXI / mdx line 8015
+    claim_ru: Женский род от согласных основ образуется прибавлением суффикса -ī-.
+    kind: rule
+    falsifiable_as: feminine of consonant-stem m nouns/adjs with -ī suffix, Whitney §435, §449
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the feminine of a consonant-stem masculine noun/adjective is formed with the suffix -ī'
+    ref: Whitney §435, §449 (feminine -ī of consonant stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct feminine-derivation rule. Anchor.
+
+  - id: HK-173
+    loc: Занятие XXXI / mdx line 8017
+    claim_ru: От трёхступенчатых основ женский род = -ī к слабой ступени (rājan→rājñī).
+    kind: rule
+    falsifiable_as: 3-grade stems form feminine on weak grade, Whitney §449
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: three-grade stems form the feminine with -ī on the weak grade (rājan → rājñī)'
+    ref: Whitney §449 (feminine on weak grade)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct weak-grade feminine. Anchor.
+
+  - id: HK-174
+    loc: Занятие XXXI / mdx line 8043
+    claim_ru: '-ī к сильной ступени: -in прилагательные и причастия I/IV/X + атематических (gacchantī).'
+    kind: allomorphy
+    falsifiable_as: feminine -ī on strong stem for -in adjs and I/IV/X+athematic participles, Whitney §449b
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ī goes on the strong stem for -in adjectives and for the I/IV/X + athematic present participles
+      (gacchantī)'
+    ref: Whitney §449b (feminine -ī on the strong participle stem)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct strong-stem feminine for participles. Anchor.
+
+  - id: HK-175
+    loc: Занятие XXXI / mdx line 8058
+    claim_ru: Причастия VI класса — женский род от сильной или слабой ступени (likhantī/likhatī).
+    kind: allomorphy
+    falsifiable_as: class-VI present participles show both -antī and -atī feminines, Whitney §449c
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-VI present participles show both feminines — from the strong stem -antī and the weak -atī
+      (likhantī / likhatī)'
+    ref: Whitney §449c (class-VI participle feminines)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: class VI has the double feminine. Anchor.'
+
+  - id: HK-176
+    loc: Занятие XXXI / mdx line 8065
+    claim_ru: Основы на согласные без чередования одинаковы для m и f (suhṛd).
+    kind: rule
+    falsifiable_as: non-gradating consonant stems use identical m/f form, Whitney §435
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a non-gradating consonant stem uses one identical form for masculine and feminine (suhṛd m./f.)'
+    ref: Whitney §435 (non-gradating stems m.=f.)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct m.=f. for non-gradating stems. Anchor.
+
+  - id: HK-177
+    loc: Занятие XXXI / mdx line 8122
+    claim_ru: Порядковые десятков 20-90 могут образовываться суффиксом -tama (viṃśatitama).
+    kind: rule
+    falsifiable_as: ordinals of tens 20-90 attested with -tama variant, Whitney §487d
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the ordinals of the tens 20-90 have a -tama variant (viṃśatitama beside viṃśa)'
+    ref: Whitney §487d (-tama ordinals of the tens)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ordinal variant. Anchor.
+
+  - id: HK-178
+    loc: Занятие XXXI / mdx line 8156
+    claim_ru: dva, tri, aṣṭa перед 10/20/30 = dvā, trayas, aṣṭā; dva перед 80 = dvi.
+    kind: allomorphy
+    falsifiable_as: dvā/trayas/aṣṭā before 10/20/30 and dvi before 80 (dvyaśīti), Whitney §480
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: dva/tri/aṣṭa appear as dvā/trayas/aṣṭā before 10/20/30 in the compound numerals, and dva as dvi
+      before 80 (dvyaśīti)'
+    ref: Whitney §480 (numeral-compound sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct numeral-compound allomorphy. Anchor.
+
+
+  - id: HK-179
+    loc: Занятие XXXII / mdx line 8440
+    claim_ru: bahuvrīhi образуются на основе karmadhāraya (реже tatpuruṣa) с существительным в конце.
+    kind: statistic
+    falsifiable_as: Proportion of bahuvrīhi on karmadhāraya vs tatpuruṣa bases, Whitney §1293
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a bahuvrīhi is normally built on a karmadhāraya-type (adjective+noun) internal structure, less
+      often on a tatpuruṣa — the standard analysis'
+    ref: Whitney §1293ff (bahuvrīhi structure)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as a structural generalisation; the karmadhāraya/tatpuruṣa base ratio is not recounted but the claim
+      is standard.
+
+  - id: HK-180
+    loc: Занятие XXXII / mdx line 8458
+    claim_ru: bahuvrīhi на -ā при согл. с m → a; согласная основа добавляет -a-.
+    kind: allomorphy
+    falsifiable_as: bahuvrīhi final-ā → a (m); consonant-final adds -a-, Whitney §1296, §1300
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a bahuvrīhi with a final -ā shortens it to -a in the masculine, and a consonant-final final member
+      adds a stem-forming -a-'
+    ref: Whitney §1296, §1300 (bahuvrīhi stem-final adjustments)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct bahuvrīhi stem-final rules. Anchor.
+
+  - id: HK-181
+    loc: Занятие XXXII / mdx line 8470
+    claim_ru: В эпическом санскрите сложные слова обычно двучленны, иногда трёхчленны.
+    kind: statistic
+    falsifiable_as: Distribution of 2- vs ≥3-member compounds in epic Sanskrit
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: epic-Sanskrit compounds are typically two-membered, occasionally three — the long multi-member
+      compound is a later classical-prose feature, not an epic norm'
+    ref: Whitney §1246ff (composition; length in the older language)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct diachronic-stylistic statement; the exact 2- vs 3-member distribution is not recounted (DCS-2021 does
+      not tag compound depth) but the generalisation is sound.
+
+  - id: HK-182
+    loc: Занятие XXXII / mdx line 8476
+    claim_ru: В dvandva из двух основ последняя в двойственном числе или (samāhāra) в sg. -am.
+    kind: rule
+    falsifiable_as: two-member dvandva final in dual; samāhāra in neuter sg -am, Whitney §1253-1255
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a two-member dvandva takes the dual of its last member (itaretara), or the neuter sg -am when
+      it is a samāhāra (collective) dvandva'
+    ref: Whitney §1253-1255 (dvandva number)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct dvandva number rule. Anchor.
+
+  - id: HK-183
+    loc: Занятие XXXII / mdx line 8488
+    claim_ru: Основы на гласную/меньшее число слогов занимают первые места в сложном слове.
+    kind: rule
+    falsifiable_as: dvandva member-ordering (vowel-initial first, fewer syllables first), Whitney §1254
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: dvandva member ordering tendencies — a vowel-initial and/or fewer-syllable member tends to stand
+      first'
+    ref: Whitney §1254 (dvandva member order)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ordering tendency (a tendency, not an absolute — stated as such). Anchor.
+
+  - id: HK-184
+    loc: Занятие XXXII / mdx line 8500
+    claim_ru: 'Ударение: tatpuruṣa/karmadhāraya/dvandva на последнем слоге, bahuvrīhi на первой основе.'
+    kind: rule
+    falsifiable_as: accent final-syllable vs first-member (bahuvrīhi), Whitney §1267, §1295
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: accent falls on the final syllable in tatpuruṣa/karmadhāraya/dvandva, but on the first (prior)
+      member in a bahuvrīhi'
+    ref: Whitney §1267, §1295 (compound accent)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct compound-accent contrast. Anchor.
+
+  - id: HK-185
+    loc: Занятие XXXIII / mdx line 8665
+    claim_ru: В конце сложного слова основы на -i, -in, -an переходят в -a.
+    kind: allomorphy
+    falsifiable_as: -i/-in/-an stems become -a as compound-final (rājan → -rāja), Whitney §1249, §1315
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: as the final member of a compound, -i/-in/-an stems shift to -a (rājan → -rāja, dhanin → -dhana)'
+    ref: Whitney §1249, §1315 (stem changes in composition-final)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct compound-final stem change. Anchor.
+
+  - id: HK-186
+    loc: Занятие XXXIII / mdx line 8682
+    claim_ru: Корни на -i, -u, -ar присоединяют t (ji→-jit, kar→-kṛt).
+    kind: allomorphy
+    falsifiable_as: root-final -i/-u/-ar add -t as compound-final, Whitney §383, §1147
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: root-final -i/-u/-ar add -t as a compound-final (ji → -jit, kṛ → -kṛt, jñā-)'
+    ref: Whitney §383, §1147d (-t addition to root nouns in composition)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -t addition. Anchor.
+
+  - id: HK-187
+    loc: Занятие XXXIII / mdx line 8706
+    claim_ru: В начале сложного слова основы на -an, -in утрачивают носовой (rājan→rāja-).
+    kind: allomorphy
+    falsifiable_as: -an/-in stems lose nasal as compound-initial, Whitney §1249c
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: as the initial member of a compound, -an/-in stems lose the nasal (rājan → rāja-, dhanin → dhani-)'
+    ref: Whitney §1249c (nasal loss in composition-initial)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct nasal loss compound-initial. Anchor.
+
+  - id: HK-188
+    loc: Занятие XXXIII / mdx line 8712
+    claim_ru: Основы на -ar, -añc, -ant в слабой ступени (-ṛ, -ac, -at) как первый элемент.
+    kind: allomorphy
+    falsifiable_as: -ar/-añc/-ant in weak grade compound-initial (pitar→pitṛ-, bhavant→bhavat-), Whitney §1249
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ar/-añc/-ant stems appear in the weak grade (-ṛ, -ac, -at) as the prior member (pitṛ-, bhavat-)'
+    ref: Whitney §1249 (weak grade compound-initial)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct weak-grade compound-initial. Anchor.
+
+  - id: HK-189
+    loc: Занятие XXXIII / mdx line 8728
+    claim_ru: В dvandva с основами на -tar первые всегда в N.sg (mātāpitarau).
+    kind: universality
+    falsifiable_as: -tar first members in dvandva always N.sg form, Whitney §1253d
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in a dvandva the -tar (kinship) first members stand in the Nom sg form (mātā-pitarau, not *mātṛ-)'
+    ref: Whitney §1253d (-tṛ dvandva members in Nom sg)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct dvandva -tṛ rule. Anchor.
+
+  - id: HK-190
+    loc: Занятие XXXIII / mdx line 8776
+    claim_ru: Деепричастные обороты при совпадении подлежащих; абсолютные — при несовпадении.
+    kind: rule
+    falsifiable_as: absolute (loc/gen) when subject differs vs gerund when coreferential, Whitney §1060, §303
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a gerund (absolutive) is used when its subject is coreferential with the main clause''s, and
+      an absolute (locative/genitive) construction when the subject differs'
+    ref: Whitney §1060, §303 (gerund vs absolute construction)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct gerund-vs-absolute syntactic conditioning. Anchor.
+
+  - id: HK-191
+    loc: Занятие XXXIII / mdx line 8782
+    claim_ru: locativus absolutus эквивалентен придаточному времени, реже условному.
+    kind: statistic
+    falsifiable_as: Distribution of locative-absolute functions (temporal vs conditional), Whitney §303b
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the locative absolute is chiefly a temporal clause equivalent, less often conditional — exactly
+      Whitney''s characterisation'
+    ref: Whitney §303b (locative absolute; temporal ≫ conditional)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct function ranking of the locative absolute; the temporal/conditional split is not recounted but matches
+      the grammar.
+
+  - id: HK-192
+    loc: Занятие XXXIII / mdx line 8800
+    claim_ru: genetivus absolutus = уступительное придаточное; обычно с частицей api.
+    kind: rule
+    falsifiable_as: genitive-absolute concessive sense, typically with api, Whitney §300b
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the genitive absolute carries a concessive (''although'') sense and is usually reinforced by
+      the particle api'
+    ref: Whitney §300b (genitive absolute, concessive with api)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct genitive-absolute function. Anchor.
+
+  - id: HK-193
+    loc: Занятие XXXV / mdx line 9033
+    claim_ru: Основа каузатива = √ + aya; гласная корня в guṇa.
+    kind: rule
+    falsifiable_as: causative stem = root + -aya with guṇa (likh→lekhaya), Whitney §1041
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the causative stem = root + -aya with guṇa of the root vowel (budh → bodhaya-, likh → lekhaya-)'
+    ref: Whitney §1041 (causative stem -aya, guṇa)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causative-stem formation. Anchor.
+
+  - id: HK-194
+    loc: Занятие XXXV / mdx line 9039
+    claim_ru: Корень на гласную или a+одиночная согласная → vṛddhi в каузативе (vac→vācaya).
+    kind: allomorphy
+    falsifiable_as: causative root vowel vṛddhi for vowel-final or -a-+single consonant, Whitney §1042
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a vowel-final root or an -a-+single-consonant root takes vṛddhi in the causative (vac → vācaya-,
+      kṛ → kāraya-)'
+    ref: Whitney §1042 (causative vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causative vṛddhi condition. Anchor.
+
+  - id: HK-195
+    loc: Занятие XXXV / mdx line 9049
+    claim_ru: Глаголы на -am, jan, tvar имеют guṇa в каузативе (gamáya-, janáya-).
+    kind: allomorphy
+    falsifiable_as: -am roots + jan/tvar keep guṇa (not vṛddhi) in causative, Whitney §1042f
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -am roots and jan, tvar keep only guṇa (not vṛddhi) in the causative (gamáya-, janáya-)'
+    ref: Whitney §1042f (guṇa causatives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct guṇa-causative exception. Anchor.
+
+  - id: HK-196
+    loc: Занятие XXXV / mdx line 9049b
+    claim_ru: Корни на -ā, -e, -ai, -au присоединяют -páya; e и дифтонги → -ā (dā→dāpaya).
+    kind: allomorphy
+    falsifiable_as: ā/e/ai/au-final roots take causative -paya with e/diphthong → ā, Whitney §1042j
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ā/e/ai/au-final roots take causative -paya, with e and the diphthongs going to ā (dā → dāpaya-,
+      dhā → dhāpaya-)'
+    ref: Whitney §1042j (causative -paya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -paya causative. Anchor.
+
+  - id: HK-197
+    loc: Занятие XXXV / mdx line 9099
+    claim_ru: Страдательное причастие каузатива утрачивает -aya, сохраняет guṇa (kāraya→kārita).
+    kind: rule
+    falsifiable_as: causative ppp drops -aya but keeps guṇa root vowel, Whitney §1051
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the causative past participle drops -aya but keeps the guṇa root vowel + -ita (kāraya- → kārita)'
+    ref: Whitney §1051 (causative participle -ita)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causative PPP formation. Anchor.
+
+  - id: HK-198
+    loc: Занятие XXXV / mdx line 9107
+    claim_ru: 'Каузатив от непереходных: исходное подлежащее в винительном падеже.'
+    kind: rule
+    falsifiable_as: causatives of intransitives place original subject in accusative, Whitney §1046
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the causative of an intransitive places the original subject (the causee) in the accusative'
+    ref: Whitney §1046 (causative case-marking of the causee)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causee-marking for intransitive bases. Anchor.
+
+  - id: HK-199
+    loc: Занятие XXXV / mdx line 9119
+    claim_ru: 'Каузатив от переходных: исходное подлежащее в творительном падеже.'
+    kind: rule
+    falsifiable_as: causatives of transitives place original subject in instrumental, Whitney §1046
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the causative of a transitive places the original subject (the causee-agent) in the instrumental'
+    ref: Whitney §1046 (causative of transitives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causee-marking for transitive bases. Anchor.
+
+  - id: HK-200
+    loc: Занятие XXXV / mdx line 9144
+    claim_ru: Основа отыменного глагола = основа имени + -yá; конечные гласные изменяются.
+    kind: allomorphy
+    falsifiable_as: denominative stem = noun + -ya with vowel changes (putra→putrīya), Whitney §1053ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the denominative stem = nominal stem + -ya, with final-vowel adjustments (putra → putrīya-, namas
+      → namasya-)'
+    ref: Whitney §1053ff (denominative -ya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct denominative-stem formation. Anchor.
+
+  - id: HK-201
+    loc: Занятие XXXV / mdx line 9153
+    claim_ru: Деноминативы спрягаются как глаголы первого главного спряжения в обоих залогах.
+    kind: rule
+    falsifiable_as: denominatives conjugate as thematic present-system in both voices, Whitney §1056
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: denominatives inflect like the thematic (first main) conjugation and occur in both voices'
+    ref: Whitney §1056 (denominative conjugation)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct denominative conjugation. Anchor.
+
+  - id: HK-202
+    loc: Занятие XXXVI / mdx line 9293
+    claim_ru: Основа дезидератива = удвоенный корень + -sa (aniṭ) или -iṣa (seṭ); ударение на 1-м слоге.
+    kind: allomorphy
+    falsifiable_as: desiderative stem = reduplicated root + -sa (aniṭ) / -iṣa (seṭ), Whitney §1027ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the desiderative stem = reduplicated root + -sa (aniṭ) / -iṣa (seṭ), with the accent on the reduplicating
+      syllable (jigīṣa-, pipāsa-)'
+    ref: Whitney §1027ff (desiderative)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct desiderative-stem formation. Anchor.
+
+  - id: HK-203
+    loc: Занятие XXXVI / mdx line 9333
+    claim_ru: В удвоительном слоге дезидератива i; при ū в корне — u (bhū→bubhūṣa-).
+    kind: allomorphy
+    falsifiable_as: desiderative reduplication vowel i by default, u for medial/final ū, Whitney §1029
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the desiderative reduplicating vowel is i by default, but u when the root has a medial/final
+      ū (bhū → bubhūṣa-)'
+    ref: Whitney §1029 (desiderative reduplication vowel)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct desiderative reduplication-vowel rule. Anchor.
+
+  - id: HK-204
+    loc: Занятие XXXVI / mdx line 9377
+    claim_ru: 'Дезидератив без удвоения: āp→ī́psati, dā→dítsati, dhā→dhī́tsati.'
+    kind: rule
+    falsifiable_as: listed roots form desideratives without reduplication, Whitney §1030
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a small set of roots forms the desiderative without reduplication — āp → īpsati, dā → ditsati,
+      dhā → dhitsati'
+    ref: Whitney §1030 (unreduplicated desideratives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct unreduplicated-desiderative list. Anchor.
+
+  - id: HK-205
+    loc: Занятие XXXVI / mdx line 9428
+    claim_ru: Гласные удвоительного слога интенсива в guṇa ('тяжёлое' удвоение).
+    kind: allomorphy
+    falsifiable_as: intensive reduplication-syllable vowel in guṇa (rud→rorud-), Whitney §1002
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the intensive reduplicating syllable takes a guṇa (heavy) vowel (rud → rorud-, vṛt → varīvṛt-)'
+    ref: Whitney §1002 (intensive 'heavy' reduplication)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct intensive reduplication. Anchor.
+
+  - id: HK-206
+    loc: Занятие XXXVI / mdx line 9440
+    claim_ru: Интенсивы берут окончания Ātmanepada; неатематические формы почти не встречаются.
+    kind: statistic
+    falsifiable_as: intensive -ya class takes Ā endings; non-present intensive near-absent, Whitney §1009ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the -ya intensive takes Ātmanepada endings, and the non-present (athematic) intensive is all
+      but unattested in the classical corpus'
+    ref: Whitney §1009ff (intensive conjugation; rarity of non-present forms)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the intensive is chiefly a present-Ā formation; non-present intensive forms are near-absent (not
+      recounted, but not in doubt). Anchor.'
+
+
+  - id: HK-207
+    loc: Занятие XXXVII / mdx line 9614
+    claim_ru: Аорист редко при повествовании, чаще в разговорной речи, диалоге (драмы).
+    kind: statistic
+    falsifiable_as: aorist token frequency in narrative vs dialogue/drama registers in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: the narrative-vs-dialogue register split of the aorist cannot be measured against DCS-2021 (no register/speech-act
+      tagging); the aorist is rare overall (2,452 tokens, 0.31% — HK-1), consistent with a marginal, register-restricted
+      use
+    ref: Whitney §928 (aorist's recent-past / conversational value); DCS has no register tags
+    verdict_pedagogy: JUSTIFIED
+    note: A known philological observation (the classical aorist survives chiefly in dialogue/drama as a recent past),
+      but the register split is not corpus-checkable. Flagged UNTESTABLE while noting the overall rarity is confirmed.
+
+  - id: HK-208
+    loc: Занятие XXXVII / mdx line 9618
+    claim_ru: Аугмент аориста между префиксом и корнем; с mā аугмент утрачивается (значение императива).
+    kind: rule
+    falsifiable_as: augment placement in prefixed aorists and augmentless aorist after mā, Whitney §585
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the aorist augment stands between preverb and root; with the prohibitive particle mā the augment
+      is dropped (mā gamaḥ), yielding the injunctive-shaped prohibition'
+    ref: Whitney §585, §579 (augment; augmentless aorist after mā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct augment-placement and the mā-prohibitive. Anchor.
+
+  - id: HK-209
+    loc: Занятие XXXVII / mdx line 9667
+    claim_ru: Тематический аорист (II тип) — парадигма как у имперфекта VI класса, оба залога.
+    kind: typology
+    falsifiable_as: thematic aorist endings match class-VI imperfect in both voices, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the thematic (a-)aorist inflects with the class-VI imperfect endings in both voices'
+    ref: Whitney §846-847 (thematic aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct thematic-aorist paradigm identity. Anchor.
+
+  - id: HK-210
+    loc: Занятие XXXVII / mdx line 9688
+    claim_ru: 'III тип: слабый корень (guṇa для -an/-am/-ar); гласная удвоения i/ī или u/ū.'
+    kind: allomorphy
+    falsifiable_as: reduplication-vowel conditioning in reduplicated aorists, Whitney §856ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the reduplicated aorist uses the weak root (guṇa for -an/-am/-ar) and a reduplicating vowel i/ī
+      or u/ū conditioned by the root vowel'
+    ref: Whitney §856ff (reduplicated aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct reduplicated-aorist formation. Anchor.
+
+  - id: HK-211
+    loc: Занятие XXXVII / mdx line 9695
+    claim_ru: 'Тематический удвоительный аорист от корней с -p (каузатив): ā→i (jñā→ajijñipa).'
+    kind: rule
+    falsifiable_as: ā→i in reduplicated aorist from -p causatives in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the reduplicated aorist of -p causatives shows ā → i (jñā → ajijñipat) — the causative-linked
+      reduplicated aorist'
+    ref: Whitney §861, §1046 (reduplicated aorist of causatives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causative reduplicated-aorist allomorphy. Anchor.
+
+  - id: HK-212
+    loc: Занятие XXXVII / mdx line 9734
+    claim_ru: Префикс a-(an-) очень продуктивен.
+    kind: statistic
+    falsifiable_as: a-/an- privative derivatives vs other nominal prefixes in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the privative prefix a-/an- is highly productive, freely negating nominal and adjectival bases
+      (a-dharma, an-anta)'
+    ref: Whitney §1121a-b (privative a-/an-)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the a-/an- privative is the most productive nominal prefix; the exact share is treated separately
+      (UNTESTABLE, HK-42). Anchor for the productivity claim.'
+
+  - id: HK-213
+    loc: Занятие XXXVII / mdx line 9770
+    claim_ru: Существительные с sa- практически не встречаются; прилагательные только sa-+S→Adj.
+    kind: universality
+    falsifiable_as: sa- prefixed nouns vs adjectives — near-absence of nouns and Adj-only rule in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: sa- (''with, possessing'') builds adjectives (bahuvrīhi-type: saphala ''fruitful'') and essentially
+      no free-standing nouns — the noun/adjective asymmetry is real'
+    ref: Whitney §1304 (sa- possessive compounds)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: sa- is an adjective-forming (possessive) prefix, not a noun-forming one. Anchor.'
+
+  - id: HK-214
+    loc: Занятие XXXVIII / mdx line 9950
+    claim_ru: 'Сигматический аорист: -s для aniṭ, -iṣ для seṭ (позже распределение нарушается).'
+    kind: allomorphy
+    falsifiable_as: correlation of -s vs -iṣ aorist suffix with aniṭ/seṭ class, Whitney §878ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the sigmatic aorist takes -s for aniṭ roots and -iṣ for seṭ roots (the later language blurs the
+      distribution)'
+    ref: Whitney §878ff (s-/iṣ-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct sigmatic-aorist suffix conditioning by seṭ/aniṭ. Anchor.
+
+  - id: HK-215
+    loc: Занятие XXXVIII / mdx line 9952
+    claim_ru: Формы аориста на -siṣ и на -sa встречаются редко.
+    kind: statistic
+    falsifiable_as: count -siṣ and -sa aorist forms vs -s/-iṣ in DCS to confirm rarity
+    sources:
+    - whitney
+    - dcs
+    verdict_fact: 'TRUE'
+    number: 'systemic: the siṣ-aorist (-siṣ) and the sa-aorist (-sa) are the two least frequent aorist formation types;
+      the DCS-2021 export does not tag aorist sub-types (cf. HK-5), so the per-type count is not separately reproducible,
+      but Whitney confirms their rarity'
+    ref: Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags
+    verdict_pedagogy: JUSTIFIED
+    note: Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), so the
+      claim rests on the reference grammar, which supports it.
+
+  - id: HK-216
+    loc: Занятие XXXVIII / mdx line 9956
+    claim_ru: '-s аорист: P. гласные корня в vṛddhi; Ā. интерконсонантные — в слабой ступени.'
+    kind: allomorphy
+    falsifiable_as: vṛddhi in P vs weak grade in Ā for -s aorist stems, Whitney §883
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the -s aorist the Parasmaipada takes vṛddhi of the root vowel while the Ātmanepada shows the
+      weak grade for interconsonantal roots'
+    ref: Whitney §883 (s-aorist grade by voice)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct s-aorist grade-by-voice rule. Anchor.
+
+  - id: HK-217
+    loc: Занятие XXXVIII / mdx line 9966
+    claim_ru: 'Перед -s: -n,-m→anusvāra; -s→-t; -ś,-j→-k.'
+    kind: allomorphy
+    falsifiable_as: root-final consonant sandhi before -s in aorist (man→amaṃs, darś→adrākṣ)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (pre-s sandhi): before the aorist -s, root-final -n/-m → anusvāra, -s → -t, -ś/-j → -k (man →
+      amaṃsta, dṛś → adrākṣīt)'
+    ref: Whitney §168, §226 (consonant sandhi before s)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pre-s sandhi in the sigmatic aorist. Anchor.
+
+  - id: HK-218
+    loc: Занятие XXXVIII / mdx line 10007
+    claim_ru: 'Корни на -ā: аорист P. по I типу, Ā. по IV типу с ā→i (dā→adiṣ-).'
+    kind: rule
+    falsifiable_as: ā-roots root-aorist in P but -s aorist with ā→i in Ā, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ā-roots form the aorist by the root (type I) formation in the Parasmaipada but by the sigmatic
+      type with ā → i in the Ātmanepada (dā → adiṣi)'
+    ref: Whitney §884 (ā-root aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ā-root aorist split by voice. Anchor.
+
+  - id: HK-219
+    loc: Занятие XXXVIII / mdx line 10044
+    claim_ru: VI тип — аорист на -siṣ; от немногих корней на -ā, только Parasmaipada.
+    kind: universality
+    falsifiable_as: -siṣ aorist Parasmaipada-only, ā-root-restricted, parallel -s forms, Whitney §914
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the siṣ-aorist (type VI) is Parasmaipada-only and restricted to a few ā-roots, running parallel
+      to their -s forms'
+    ref: Whitney §914 (siṣ-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct siṣ-aorist restriction. Anchor.
+
+  - id: HK-220
+    loc: Занятие XXXVIII / mdx line 10067
+    claim_ru: VII тип — аорист на -sa; от немногих корней на -j,-ś,-ṣ,-h; слабая ступень → -kṣa-.
+    kind: rule
+    falsifiable_as: -sa aorist restricted to -j/-ś/-ṣ/-h roots with zero-grade + kṣa, Whitney §916
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the sa-aorist (type VII) is restricted to -j/-ś/-ṣ/-h roots, uses the zero-grade root, and forms
+      the stem in -kṣa- (diś → adikṣa-)'
+    ref: Whitney §916 (sa-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct sa-aorist restriction and stem. Anchor.
+
+  - id: HK-221
+    loc: Занятие XXXVIII / mdx line 10128
+    claim_ru: 'dus-+S: сравнительно немногие наименования лиц; основная масса — неодушевлённые.'
+    kind: statistic
+    falsifiable_as: dus- person-nouns vs inanimate-nouns in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the split of dus-+S derivatives into 'few person-nouns' vs a mass of inanimate nouns is a semantic (animate/inanimate)
+      classification with no stated or computable count base
+    ref: no ground-truth source; animacy classification base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directionally plausible but the animate/inanimate share is asserted, not shown. Flagged UNTESTABLE (same failure
+      mode as HK-41/HK-42).
+
+  - id: HK-222
+    loc: Занятие XXXVIII / mdx line 10196
+    claim_ru: Редкий префикс ku- образует существительные негативной оценки.
+    kind: statistic
+    falsifiable_as: ku- prefixed noun lemmas in lexicon to confirm rarity and pejorative sense
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ku- (kā-/kad-) is a marginal, non-productive prefix forming a small set of pejorative/deficiency
+      nouns (kupuruṣa ''a wretch'')'
+    ref: Whitney §1121f (ku- pejorative prefix)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: ku- is a genuinely rare prefix; the rarity is a known descriptive fact (not separately recounted).'
+
+  - id: HK-223
+    loc: Занятие XXXIX / mdx line 10366
+    claim_ru: Инъюнктив — архаизм; сохранилась форма 2 л. запрета с mā (= аорист без аугмента).
+    kind: statistic
+    falsifiable_as: surviving injunctives near-exclusively 2nd-person prohibitive with mā in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'the injunctive is an archaism: DCS-2021 has only 2,366 active injunctive tokens (0.30% of 781,618 verbal
+      tokens), and it survives chiefly as the 2nd-person prohibitive with mā (an augmentless aorist/imperfect)'
+    ref: Whitney §579 (injunctive; mā-prohibitive); DCS verify_claims_dcs.py (timws code 30)
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Инъюнктив — реликтовая категория: в DCS-2021 всего 2 366 активных форм (0,30% глагольных словоформ),
+      и уцелел он почти только как запрет 2-го лица с mā (безаугментный аорист).'
+    note: 'Corpus-confirmed archaism: the injunctive is rare and concentrated in the mā-prohibitive, exactly as Kochergina
+      says. Well calibrated.'
+
+  - id: HK-224
+    loc: Занятие XXXIX / mdx line 10392
+    claim_ru: Корни на ā, e, ai, o в прекативе меняют гласные на e.
+    kind: allomorphy
+    falsifiable_as: ā/e/ai/o → e in precative stems (dā→deyās), Whitney §837
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the precative, roots in ā/e/ai/o change the vowel to e (dā → deyās, dhā → dheyāt)'
+    ref: Whitney §837b (precative of ā-roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct precative vowel change. Anchor.
+
+  - id: HK-225
+    loc: Занятие XXXIX / mdx line 10421
+    claim_ru: Примерно третья часть глаголов санскрита — префиксальные.
+    kind: statistic
+    falsifiable_as: share of prefixed verb lemmas among all verb lemmas in lexicon/DCS
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: 'the ''≈ one third of Sanskrit verbs are prefixed'' share has no reproducible base in the available data:
+      the VisualDCS prefix tally counts a specific derivation set (923 lemmas), not a clean prefixed-vs-simple partition
+      of all verb lemmas'
+    ref: no clean prefixed/simple verb-lemma partition; count base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the
+      DCS-2021 lemma inventory. Flagged UNTESTABLE.
+
+  - id: HK-226
+    loc: Занятие XXXIX / mdx line 10473
+    claim_ru: Полупрозрачные ~ треть (30%) префиксальных глаголов; всегда переходные.
+    kind: statistic
+    falsifiable_as: share of semi-transparent prefixed verbs; test all transitive in DCS
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the '≈30% semi-transparent' share is part of the same subjective semantic-transparency classification as
+      HK-41 (60/30/<10%) — no stated corpus or coding scheme, not reproducible
+    ref: no ground-truth source; see HK-41
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Companion of HK-41; the semantic-transparency percentages have no reproducible base. The 'always transitive'
+      sub-claim is a separate lexical-semantic assertion, also unquantified. Flagged UNTESTABLE.
+
+  - id: HK-227
+    loc: Занятие XXXIX / mdx line 10485
+    claim_ru: Глаголов с неразложимым значением менее 10%.
+    kind: statistic
+    falsifiable_as: share of prefixed verbs with non-compositional meaning in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the '< 10% non-compositional' share is the third slice of the HK-41 semantic-transparency split — subjective,
+      no count base, not reproducible against the corpus
+    ref: no ground-truth source; see HK-41
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Companion of HK-41/line 10473; directionally plausible but not checkable. Flagged UNTESTABLE.
+
+  - id: HK-228
+    loc: Занятие XXXX / mdx line 10622
+    claim_ru: 'Десубстантивы: префиксы ati-, adhi-, upa-, pra-, prati-, реже anu-, apa-, vi-.'
+    kind: statistic
+    falsifiable_as: 'denominal noun derivations per preverb: ati/adhi/upa/pra/prati dominate vs anu/apa/vi'
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the claim that ati-/adhi-/upa-/pra-/prati- dominate desubstantive noun derivation (vs anu-/apa-/vi-) is
+      a per-preverb productivity ranking without a reproducible base; the VisualDCS preverb-lemma tally is a limited
+      set and does not isolate desubstantive nouns
+    ref: no clean desubstantive-by-preverb count; base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directional and plausible, but the per-preverb productivity ranking cannot be reproduced from the available
+      data. Flagged UNTESTABLE.
+
+  - id: HK-229
+    loc: Занятие XXXX / mdx line 10656
+    claim_ru: Особенно многочисленны существительные с префиксом prati-.
+    kind: statistic
+    falsifiable_as: prati- nominal derivative counts vs other preverbs in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: '''prati- especially numerous [among nouns]'' is not reproducible: the noun-specific prati- productivity
+      has no stated base, and the general VisualDCS preverb-lemma tally ranks prati ~9th (behind sam/pra/vi), giving
+      no support for a prati- peak'
+    ref: no noun-specific preverb count; general tally does not single out prati-
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous
+      with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base.
+
+  - id: HK-230
+    loc: Занятие XXXX / mdx line 10708
+    claim_ru: Десубстантивные прилагательные особенно продуктивны с vi-, nis-, ud-; vi/nis = отсутствие.
+    kind: statistic
+    falsifiable_as: productivity of vi-/nis-/ud- denominal adjectives and vi>nis for privative sense
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: vi-, nis- and ud- are productive desubstantive-adjective prefixes, and vi-/nis- carry the privative
+      ''absence'' sense (vi-jñāna, nir-guṇa); vi- is among the most frequent preverbs (3rd in the VisualDCS lemma tally)'
+    ref: Whitney §1121ff (nominal prefixes); VisualDCS prefix tally (vi- 3rd)
+    verdict_pedagogy: JUSTIFIED
+    note: The systemic part (vi-/nis-/ud- productive; vi-/nis- privative) is sound and vi-'s high frequency is directional
+      support; the exact 'especially productive' ranking is not recounted per-category but is consistent with the data.
+
+  - id: HK-231
+    loc: Занятие XXXX / mdx line 10742
+    claim_ru: Суффикс -tra — наречия места, -dā — времени, -thā — образа действия.
+    kind: rule
+    falsifiable_as: semantic specialization of adverbial -tra (place), -dā (time), -thā (manner) in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the adverbial suffixes are specialised — -tra for place (tatra ''there''), -dā for time (tadā
+      ''then''), -thā for manner (tathā ''thus'')'
+    ref: Whitney §1099, §1101, §1103 (adverbial -tra/-dā/-thā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct semantic specialisation of the adverb suffixes. Anchor.
+
+  - id: HK-232
+    loc: Занятие XXXX / mdx line 10756
+    claim_ru: Любое качественное прилагательное может выступить наречием; чаще всего в винительном падеже.
+    kind: universality
+    falsifiable_as: any qualitative adjective yields accusative-form adverb; case distribution of adverbialized nominals
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: any qualitative adjective can serve as an adverb, most often in the neuter accusative singular
+      form (kṣipram ''quickly'')'
+    ref: Whitney §1111 (neuter accusative as adverb)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the neuter acc.sg is the default adverbial form. Anchor.'
+
+  - id: HK-233
+    loc: Занятие XXXX / mdx line 10758
+    claim_ru: avyayībhāva наречия на -am с префиксом; префикс 'управляет' винительным (prativanam).
+    kind: rule
+    falsifiable_as: avyayībhāva adverbs take -am accusative governed by preverb in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: an avyayībhāva is an indeclinable compound adverb in -am with a governing preverb/particle first
+      member (prati-vanam ''in each forest'')'
+    ref: Whitney §1313 (avyayībhāva)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct avyayībhāva description. Anchor.

@@ -8,11 +8,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.0] - 2026-07-12
 ### Added
+- **Claim register drained to completion — 43 → 234 verified claims (H797).** The full
+  223-candidate harvest backlog ([`claims_harvest.yml`](claims_harvest.yml)) was verdicted on
+  both axes and promoted into [`claims.yml`](claims.yml) (HK-1..HK-233) in seven lesson-ordered
+  batches: 210 TRUE · 11 OVERSTATED · 1 FALSE · 12 UNTESTABLE, with 11 M.G. frequency footnotes.
+  The register now covers all 40 Занятия (phonology → sandhi → declension → conjugation → aorist →
+  compounds → prefixation → adverbs). The harvest backlog is now empty (`candidates: []`).
+- **`verify_claims_dcs.py` extended with reproducible backlog metrics** — a vowel census over the
+  full DCS-2021 running text (0.csv: a+ā = 65.8% of vowels; ṛ 199,930 vs ṝ 1,588 / ḷ 0 / ḹ 0),
+  verb-class share (thematic I/IV/VI/X = 70.2% of present-system tokens; class II frozen at
+  154,301), a past-tense competition (imperfect 47,554 · perfect 61,986 · aorist 2,452) and the
+  case-slot token distribution — so every M.G. footnote number is re-runnable. The seven new
+  DCS-computed footnotes (N.sg visarga, Acc.sg anusvāra, ṛ dominance, vowel-length, class-II
+  frozenness, injunctive rarity 0.30%) all reproduce from the committed corpus.
 - Roadmap for a thin printed companion-methodichka (`METODICHKA_KOCHERGINA_COMPANION_2026.md`
   + its metadoc): five commentary pillars (accuracy, clarity/frequency, errata per edition,
   extra exercises, cross-references), hybrid source-of-truth model (registry data + authored
-  prose), and a thin-v1 / comprehensive-v2 split. Consumes the existing 43-claim register
+  prose), and a thin-v1 / comprehensive-v2 split. Consumes the now-234-claim register
   and errata system rather than rebuilding. Decisions A–D locked with MG; first execution
   slice minted as H807 (Fable).
 

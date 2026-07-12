@@ -14,8 +14,8 @@
     "pct_of_verbal": 3.06,
     "suffix_split_types": {
       "-ya": 1046,
-      "-tavya": 523,
-      "-anīya": 230
+      "-anīya": 230,
+      "-tavya": 523
     },
     "cf_ppp_tokens": 233080,
     "cf_ppp_pct": 29.82,
@@ -61,5 +61,104 @@
     "tokens": 221,
     "pct_of_verbal": 0.03,
     "label": "Benedictive Medium"
+  },
+  "HK7_vowel_census": {
+    "corpus_lines": 311175,
+    "total_monophthong_vowels": 11406901,
+    "counts": {
+      "a": 5467884,
+      "ā": 2038132,
+      "i": 1375970,
+      "ī": 268917,
+      "u": 748531,
+      "ū": 152375,
+      "ṛ": 199930,
+      "ṝ": 1588,
+      "ḷ": 0,
+      "ḹ": 0,
+      "e": 725258,
+      "o": 428316
+    },
+    "pct": {
+      "a": 47.93,
+      "ā": 17.87,
+      "i": 12.06,
+      "ī": 2.36,
+      "u": 6.56,
+      "ū": 1.34,
+      "ṛ": 1.75,
+      "ṝ": 0.01,
+      "ḷ": 0.0,
+      "ḹ": 0.0,
+      "e": 6.36,
+      "o": 3.75
+    },
+    "a_plus_aa_pct": 65.8,
+    "vocalic_r_count": 199930,
+    "rare_sonants_count": 1588,
+    "r_over_rare_ratio": 126.0
+  },
+  "HK18_verb_class_share": {
+    "thematic_tokens": 540340,
+    "athematic_tokens": 229222,
+    "primary_conjugation_pct": 70.2,
+    "class_II_tokens": 154301,
+    "class_II_pct_of_present_system": 20.1
+  },
+  "HK15_past_tenses": {
+    "imperfect_tokens": 47554,
+    "perfect_tokens": 61986,
+    "aorist_tokens": 2452,
+    "note": "imperfect = active+medium+augmentless+passive imperfect codes; perfect = code 15; aorist = 10-13"
+  },
+  "case_distribution": {
+    "Nom": {
+      "sg": 788742,
+      "du": 20807,
+      "pl": 174042,
+      "total": 983591
+    },
+    "Voc.": {
+      "sg": 62123,
+      "du": 1297,
+      "pl": 3780,
+      "total": 67200
+    },
+    "Acc.": {
+      "sg": 432746,
+      "du": 9570,
+      "pl": 87081,
+      "total": 529397
+    },
+    "Ins": {
+      "sg": 132867,
+      "du": 3804,
+      "pl": 79635,
+      "total": 216306
+    },
+    "Dat": {
+      "sg": 30011,
+      "du": 376,
+      "pl": 4915,
+      "total": 35302
+    },
+    "Abl": {
+      "sg": 56985,
+      "du": 465,
+      "pl": 3598,
+      "total": 61048
+    },
+    "G": {
+      "sg": 133953,
+      "du": 6678,
+      "pl": 61805,
+      "total": 202436
+    },
+    "L": {
+      "sg": 154046,
+      "du": 1935,
+      "pl": 26248,
+      "total": 182229
+    }
   }
 }
