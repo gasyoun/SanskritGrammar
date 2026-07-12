@@ -27,6 +27,12 @@ changelog tags as `vX.Y.Z`.
   (IAST/Devanagari derived via sanskrit-util), scientific/pedagogical layers,
   stable `ex:<slug>:<n>` example IDs with locus/translation/provenance,
   public⇒https / internal⇒no-URL evidence rule, leakage = 0.
+- **Sangram contract C3 — corpus evidence method** ([`sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx),
+  route `/grammars/sangram/corpus-evidence-method`): corpus registry (DCS primary via the
+  pinned [`gasyoun/dcs-conllu`](https://github.com/gasyoun/dcs-conllu) snapshot + 5
+  supplementary witnesses), rights/liveness/quality gates, the reproducible
+  query→sample→validate→claim→examples cycle, quantitative-claim rules П1–П7, and the
+  append-only source-defect list Д1–Д8 (H632, Fable 5 `claude-fable-5`).
 - **Errata system** (`/errata` skill): every book folder carries an `errata.yml`
   structured source → generated `<Book>/ERRATA.md` + root `ERRATA.md` index via
   `scripts/build_errata.py` (`npm run errata`). Each erratum records who found it
