@@ -1,0 +1,3252 @@
+{
+  "version": 1,
+  "series_slot": "C2",
+  "contract": "sangram/toc/SANGRAM_TOC_NETWORK.mdx",
+  "minted": "12-07-2026",
+  "provenance": "Fable 5 (claude-fable-5), H631; scientific responsibility: M. Gasūns",
+  "id_grammar": "^SG-(PH|WF|MO|SE|SY|DI|VA)-[0-9]{3}$",
+  "domains": [
+    {
+      "code": "PH",
+      "slug": "phonology-script",
+      "title_ru": "Фонология и графика",
+      "order": 1
+    },
+    {
+      "code": "WF",
+      "slug": "word-formation",
+      "title_ru": "Словообразование",
+      "order": 2
+    },
+    {
+      "code": "MO",
+      "slug": "formal-morphology",
+      "title_ru": "Формальная морфология",
+      "order": 3
+    },
+    {
+      "code": "SE",
+      "slug": "grammatical-semantics",
+      "title_ru": "Грамматическая семантика",
+      "order": 4
+    },
+    {
+      "code": "SY",
+      "slug": "syntax",
+      "title_ru": "Синтаксис",
+      "order": 5
+    },
+    {
+      "code": "DI",
+      "slug": "discourse",
+      "title_ru": "Дискурс",
+      "order": 6
+    },
+    {
+      "code": "VA",
+      "slug": "variation",
+      "title_ru": "Вариативность",
+      "order": 7
+    }
+  ],
+  "works": [
+    {
+      "slug": "whitney-1889",
+      "title_ru": "Уитни, Санскритская грамматика (1889)",
+      "folder": "WhitneyGrammar_1889"
+    },
+    {
+      "slug": "apte-1885",
+      "title_ru": "Апте, Руководство по синтаксису (1885)",
+      "folder": "ApteSyntax_1885"
+    },
+    {
+      "slug": "buhler-1923",
+      "title_ru": "Бюлер, Руководство (1923)",
+      "folder": "BuhlerLeitfaden_1923"
+    },
+    {
+      "slug": "gasuns-2014",
+      "title_ru": "Гасунс, Морфемный строй корня (2014)",
+      "folder": "GasunsDhatu_2014"
+    },
+    {
+      "slug": "knauer-1908",
+      "title_ru": "Кнауэр, Фразы (1908)",
+      "folder": "KnauerFrazy_1908"
+    },
+    {
+      "slug": "kochergina-1998",
+      "title_ru": "Кочергина, Учебник санскрита (1998)",
+      "folder": "KocherginaUchebnik_1998"
+    },
+    {
+      "slug": "tolchelnikov-2026",
+      "title_ru": "Толчельников, Талмуд (2026)",
+      "folder": "TolchelnikovTalmud_2026"
+    },
+    {
+      "slug": "zalizniak-1975",
+      "title_ru": "Зализняк, Морфонология глагола (1975)",
+      "folder": "ZalizniakMorphology_1975"
+    },
+    {
+      "slug": "zalizniak-1978",
+      "title_ru": "Зализняк, Грамматический очерк (1978)",
+      "folder": "ZalizniakOcherk_1978"
+    },
+    {
+      "slug": "zalizniak-2004",
+      "title_ru": "Зализняк, Конспект лекций (2004)",
+      "folder": "ZalizniakKonspekt_2004"
+    }
+  ],
+  "retired_ids": [],
+  "articles": [
+    {
+      "id": "SG-PH-001",
+      "title_ru": "Звуковой состав: гласные и дифтонги",
+      "cluster": "Звуковой состав",
+      "prerequisites": [],
+      "whitney": [
+        "whitney-sec:19-97"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. II, §19–97",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "вводные уроки (алфавит и фонетика)",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "гл. о фоностатистике корня",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface /[aAiIuUfFxeEoO]/",
+        "note": "частоты гласных по SLP1-инвентарю на лемма-слое DCS"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-002",
+      "title_ru": "Звуковой состав: согласные (варги)",
+      "cluster": "Звуковой состав",
+      "prerequisites": [],
+      "whitney": [
+        "whitney-sec:19-97"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. II, §19–97",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "вводные уроки (алфавит и фонетика)",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "Табл. варговых долей (ревизия 2026)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface /[kKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzsh]/",
+        "note": "варговые доли; сопоставимо с Табл. 5 Гасунса 2014"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-003",
+      "title_ru": "Слог, ударение и просодия",
+      "cluster": "Звуковой состав",
+      "prerequisites": [
+        "SG-PH-001"
+      ],
+      "whitney": [
+        "whitney-sec:19-97"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. II (ударение: §80–97)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta accent-layer",
+        "note": "DCS без ударения; акцентные свидетельства — VedaWeb, только через ворота C3"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-004",
+      "title_ru": "Письмо: деванагари и IAST (интерфейс графики)",
+      "cluster": "Графика",
+      "prerequisites": [
+        "SG-PH-001",
+        "SG-PH-002"
+      ],
+      "whitney": [
+        "whitney-sec:1-18"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. I, §1–18",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "вводные уроки (письмо деванагари)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta script-roundtrip",
+        "note": "единый канонический преобразователь sanskrit-util (политика хартии §3); статья фиксирует интерфейс записи, не правила корпуса"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-005",
+      "title_ru": "Чередования гласных: guṇa, vṛddhi, ступени корня",
+      "cluster": "Морфонология",
+      "prerequisites": [
+        "SG-PH-001"
+      ],
+      "whitney": [
+        "whitney-sec:235-243"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§235–243 (guṇa и vṛddhi)",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "система Рядов и позиций",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "морфонологическая запись корня (гл. 3)",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "позиции и ряды (система Талмуда)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class perfect|aor_root & lemma-grade join",
+        "note": "ступени наблюдаются через сопоставление формклассов одного корня (WhitneyRoots), не прямым морфопризнаком"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-006",
+      "title_ru": "Внешние сандхи гласных",
+      "cluster": "Сандхи",
+      "prerequisites": [
+        "SG-PH-001"
+      ],
+      "whitney": [
+        "whitney-sec:98-260"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. III (сочетания гласных)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки сандхи гласных",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "начальные уроки (сандхи)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface sandhi-boundary(V+V)",
+        "note": "требует несегментированного поверхностного слоя рядом с анализом DCS; исполнимая форма — ворота C3"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-007",
+      "title_ru": "Внешние сандхи: висарга и конечные согласные",
+      "cluster": "Сандхи",
+      "prerequisites": [
+        "SG-PH-002"
+      ],
+      "whitney": [
+        "whitney-sec:98-260"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. III (висарга; конечные согласные)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки сандхи висарги",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "начальные уроки (сандхи)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface sandhi-boundary(C|H)",
+        "note": "как SG-PH-006: поверхностный слой, ворота C3"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-008",
+      "title_ru": "Внутренние сандхи (на стыке морфем)",
+      "cluster": "Сандхи",
+      "prerequisites": [
+        "SG-PH-001",
+        "SG-PH-002"
+      ],
+      "whitney": [
+        "whitney-sec:98-260"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. III (внутренние сочетания)",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "морфонологические правила стыка",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class ppp|infinitive & stem-final join",
+        "note": "внутренние сандхи наблюдаемы на парах основа+суффикс (например, -ta после звонких)"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-009",
+      "title_ru": "Ретрофлексация: n → ṇ и s → ṣ",
+      "cluster": "Сандхи",
+      "prerequisites": [
+        "SG-PH-002"
+      ],
+      "whitney": [
+        "whitney-sec:98-260"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. III (лингвализация s и n)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface /[rzfF].*[nR]/ within word",
+        "note": "правило RUKI и n-ретрофлексация; проверка на словоформах DCS"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-PH-010",
+      "title_ru": "Орфографические конвенции изданий и корпусов (анусвара, аваграха)",
+      "cluster": "Графика",
+      "prerequisites": [
+        "SG-PH-004"
+      ],
+      "whitney": [
+        "whitney-sec:1-18"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. I (система письма, употребление знаков)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface /M|~/ vs assimilated nasal",
+        "note": "разнобой анусвара/класс-назальный в изданиях — источник ложных расхождений при поиске"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-001",
+      "title_ru": "Строение слова: корень, основа, аффикс",
+      "cluster": "Основания",
+      "prerequisites": [
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (введение об основах)",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "морфемный строй корня (весь труд)",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "модель корня и позиций",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "непаниниевская модель слова",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma root-join(WhitneyRoots)",
+        "note": "корневой инвентарь — WhitneyRoots и mw_roots.tsv, не пересоздается (non-goal хартии №3)"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-002",
+      "title_ru": "Первичная деривация (kṛt): обзор",
+      "cluster": "Деривация",
+      "prerequisites": [
+        "SG-WF-001"
+      ],
+      "whitney": [
+        "whitney-sec:1136-1245"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVII (первичные суффиксы)",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "производные от корня (приложения)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma suffix-strata(kṛt) via MW etymology",
+        "note": "суффиксальная разметка не в DCS; join через словарные деривации CDSL"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-003",
+      "title_ru": "Основные kṛt-суффиксы: -a, -ana, -ti, -tṛ, -in",
+      "cluster": "Деривация",
+      "prerequisites": [
+        "SG-WF-002"
+      ],
+      "whitney": [
+        "whitney-sec:1136-1245"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVII (статьи отдельных суффиксов)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma /(ana|ti|tf|in)$/ & MW-derivation check",
+        "note": "поверхностный отбор по исходу леммы валидируется словарной деривацией — иначе ложные членения"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-004",
+      "title_ru": "Вторичная деривация (taddhita): обзор",
+      "cluster": "Деривация",
+      "prerequisites": [
+        "SG-WF-001"
+      ],
+      "whitney": [
+        "whitney-sec:1136-1245"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVII (вторичные суффиксы)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma suffix-strata(taddhita) via MW etymology",
+        "note": "как SG-WF-002"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-005",
+      "title_ru": "Образование основ женского рода",
+      "cluster": "Деривация",
+      "prerequisites": [
+        "SG-WF-001",
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (образование feminine)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки основ на -ā, -ī",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Gender=Fem & lemma-pair join(masc)",
+        "note": "пары m./f. одного деривационного гнезда"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-006",
+      "title_ru": "Сложные слова: обзор и классификация",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-WF-001"
+      ],
+      "whitney": [
+        "whitney-sec:1246-1316"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVIII, §1246–1251",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки сложных слов",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "раздел о композитах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Compound=Yes",
+        "note": "DCS размечает членение композитов — базовая выборка для всех статей кластера"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-007",
+      "title_ru": "Копулятивные композиты (dvandva)",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-WF-006"
+      ],
+      "whitney": [
+        "whitney-sec:1246-1316"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVIII (dvandva)",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "уроки композитов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Compound=Yes & type=dvandva-sample",
+        "note": "тип композита в DCS не размечен — классификация выборки вручную по методу C3"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-008",
+      "title_ru": "Детерминативные композиты (tatpuruṣa, karmadhāraya)",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-WF-006"
+      ],
+      "whitney": [
+        "whitney-sec:1246-1316"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVIII (tatpuruṣa)",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "уроки композитов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Compound=Yes & type=tatpurusha-sample",
+        "note": "как SG-WF-007"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-009",
+      "title_ru": "Посессивные композиты (bahuvrīhi)",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-WF-006"
+      ],
+      "whitney": [
+        "whitney-sec:1246-1316"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVIII (bahuvrīhi)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об употреблении композитов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Compound=Yes & external-agreement check",
+        "note": "диагностика bahuvrīhi — согласование с внешним именем"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-010",
+      "title_ru": "Наречные и числительные композиты (avyayībhāva, dvigu)",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-WF-006"
+      ],
+      "whitney": [
+        "whitney-sec:1246-1316"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVIII (avyayībhāva; числительные первые члены)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Compound=Yes & first-member ∈ {adv, num}",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-WF-011",
+      "title_ru": "Глаголы с превербами (upasarga)",
+      "cluster": "Композиты",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:1076-1095"
+      ],
+      "form_classes": [
+        "verb_compounds"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1076–1095",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки глагольных приставок",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class verb_compounds",
+        "note": "DCS лемматизирует преверб+корень единой леммой — выборка по лемма-инвентарю с превербами"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-001",
+      "title_ru": "Склонение: категории и обзор системы",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-PH-006"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV, §261–320",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки склонения (сводно)",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1978",
+          "locus": "очерк: именное склонение",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & Case=* & Number=*",
+        "note": "матрица падеж×число как базовая частотная рамка домена"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-002",
+      "title_ru": "Основы на -a",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (a-основы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "первые уроки склонения",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "начальные уроки",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final=a",
+        "note": "тип основы через лемма-исход + словарный род"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-003",
+      "title_ru": "Основы на -ā, -ī, -ū",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (долгогласные основы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки женских основ",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final ∈ {A, I, U}",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-004",
+      "title_ru": "Основы на -i, -u",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (i- и u-основы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки i/u-основ",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final ∈ {i, u}",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-005",
+      "title_ru": "Основы на -ṛ (имена деятеля и родства)",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (ṛ-основы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "урок основ на -ṛ",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final=f",
+        "note": "контраст vṛddhi/guṇa в сильных падежах деятеля vs родства"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-006",
+      "title_ru": "Корневые и односложные согласные основы",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001",
+        "SG-PH-008"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (корневые основы)",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1978",
+          "locus": "очерк: согласное склонение",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final=C",
+        "note": "конечные кластеры основ дают внутренние сандхи в падежных формах"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-007",
+      "title_ru": "Основы на -an и -in",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-006"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (an-, in-основы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки основ на -an/-in",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NOUN & stem-final ∈ {an, in}",
+        "note": "сильные/слабые/слабейшие ступени основы"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-008",
+      "title_ru": "Основы на -ant, -vāṅs, -yāṅs (причастные и компаративные)",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-006"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (ant-, vāṅs-основы)",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1978",
+          "locus": "очерк: причастные основы",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph VerbForm=Part & Case=*",
+        "note": "склонение причастий — мост к SG-MO-022/023"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-009",
+      "title_ru": "Степени сравнения",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-002"
+      ],
+      "whitney": [
+        "whitney-sec:321-474"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. V (сравнительная и превосходная степени)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "урок степеней сравнения",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Degree ∈ {Cmp, Sup}",
+        "note": "распределение -tara/-tama против -īyas/-iṣṭha"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-010",
+      "title_ru": "Местоимения",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:490-526"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VII, §490–526",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки местоимений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=PRON & lemma ∈ {tad, etad, idam, adas, yad, kim, asmad, yuṣmad}",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-011",
+      "title_ru": "Числительные",
+      "cluster": "Склонение",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:475-489"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VI, §475–489",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки числительных",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=NUM",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-012",
+      "title_ru": "Спряжение: категории и обзор системы",
+      "cluster": "Спряжение: основания",
+      "prerequisites": [
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:527-598"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII, §527–598",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "морфоклассы глагола (система статьи)",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "глагольная система Талмуда",
+          "method": "curated"
+        },
+        {
+          "work": "gasuns-2014",
+          "locus": "глагольная статистика корней",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph POS=VERB & VerbForm=Fin",
+        "note": "рамка лицо×число×время×наклонение×залог; классы презенса — join WhitneyRoots (SG-MO-013…015)"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-013",
+      "title_ru": "Презенс: тематические классы (I, IV, VI, X)",
+      "cluster": "Презентные основы",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:733-750",
+        "whitney-sec:759-767",
+        "whitney-sec:751-758",
+        "whitney-sec:775"
+      ],
+      "form_classes": [
+        "present_a",
+        "present_ya",
+        "present_acc_a",
+        "present_cur"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§733–775 (тематические классы)",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "первые уроки глагола (I, IV, VI, X классы)",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "начальные уроки глагола",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "тематические морфоклассы",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class present_a|present_ya|present_acc_a|present_cur",
+        "note": "класс презенса не в морфопризнаках DCS — join через классный инвентарь WhitneyRoots"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-014",
+      "title_ru": "Презенс: корневой и редуплицирующий классы (II, III)",
+      "cluster": "Презентные основы",
+      "prerequisites": [
+        "SG-MO-012",
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:611-641",
+        "whitney-sec:642-682"
+      ],
+      "form_classes": [
+        "present_root",
+        "present_redup"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§611–682",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "атематические морфоклассы",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки атематических глаголов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class present_root|present_redup",
+        "note": "чередование сильной/слабой основы внутри парадигмы"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-015",
+      "title_ru": "Презенс: носовые классы (V, VII, VIII, IX)",
+      "cluster": "Презентные основы",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:683-696",
+        "whitney-sec:697-716",
+        "whitney-sec:717-732"
+      ],
+      "form_classes": [
+        "present_nasal",
+        "present_nu_u",
+        "present_na"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§683–732",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "носовые морфоклассы",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class present_nasal|present_nu_u|present_na",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-016",
+      "title_ru": "Имперфект и аугмент",
+      "cluster": "Презентные основы",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:527-598"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII (аугмент); имперфект по классам в гл. IX",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки имперфекта",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Tense=Impf|Past & VerbForm=Fin & form-class present_*",
+        "note": "UD-разметка DCS сглаживает прошедшие (Tense=Past покрывает имперфект/аорист/перфект — наблюдение VisualDCS); отбирать по форме основы, не по одному признаку Tense"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-017",
+      "title_ru": "Перфект",
+      "cluster": "Перфект, аорист, будущее",
+      "prerequisites": [
+        "SG-MO-012",
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:781-823"
+      ],
+      "form_classes": [
+        "perfect",
+        "perfect_participle",
+        "pluperfect"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§781–823",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "перфектный морфокласс и ступени",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки перфекта",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class perfect",
+        "note": "та же оговорка о Tense=Past, что в SG-MO-016: отбор по редупликации формкласса, не по UD-признаку"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-018",
+      "title_ru": "Аорист: классификация и простые типы (корневой, a-аорист)",
+      "cluster": "Перфект, аорист, будущее",
+      "prerequisites": [
+        "SG-MO-016"
+      ],
+      "whitney": [
+        "whitney-sec:824-827",
+        "whitney-sec:828-846",
+        "whitney-sec:847-855"
+      ],
+      "form_classes": [
+        "aor_class",
+        "aor_root",
+        "aor_a"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§824–855",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "аористные морфоклассы",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки аориста",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class aor_root|aor_a",
+        "note": "оговорка Tense=Past как в SG-MO-016"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-019",
+      "title_ru": "Аорист: редуплицированный и сигматические типы",
+      "cluster": "Перфект, аорист, будущее",
+      "prerequisites": [
+        "SG-MO-018"
+      ],
+      "whitney": [
+        "whitney-sec:856-873",
+        "whitney-sec:878-897",
+        "whitney-sec:898-911",
+        "whitney-sec:912-915",
+        "whitney-sec:916-920"
+      ],
+      "form_classes": [
+        "aor_redup",
+        "aor_s",
+        "aor_is",
+        "aor_sis",
+        "aor_sa"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§856–920",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "сигматические морфоклассы",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class aor_redup|aor_s|aor_is|aor_sis|aor_sa",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-020",
+      "title_ru": "Прекатив (бенедиктив)",
+      "cluster": "Перфект, аорист, будущее",
+      "prerequisites": [
+        "SG-MO-018"
+      ],
+      "whitney": [
+        "whitney-sec:921-926"
+      ],
+      "form_classes": [
+        "precative"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§921–926",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class precative",
+        "note": "редкая форма — правило хартии R5: нет доверительного интервала, нет количественного утверждения"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-021",
+      "title_ru": "Будущее время и кондиционал",
+      "cluster": "Перфект, аорист, будущее",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:931-940",
+        "whitney-sec:941",
+        "whitney-sec:942-949"
+      ],
+      "form_classes": [
+        "s_future",
+        "conditional",
+        "periphrastic_future",
+        "future_participle"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§931–949",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки будущего времени",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об употреблении будущих",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Tense=Fut | form-class s_future|periphrastic_future",
+        "note": "контраст простого и перифрастического будущего"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-022",
+      "title_ru": "Причастия презенса и перфекта",
+      "cluster": "Именные формы глагола",
+      "prerequisites": [
+        "SG-MO-013",
+        "SG-MO-017"
+      ],
+      "whitney": [
+        "whitney-sec:583-584",
+        "whitney-sec:802-806"
+      ],
+      "form_classes": [
+        "present_participle",
+        "perfect_participle"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§583–584; §802–806",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1978",
+          "locus": "очерк: причастия",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class present_participle|perfect_participle",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-023",
+      "title_ru": "Причастия на -ta/-na и -tavant",
+      "cluster": "Именные формы глагола",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:952-958",
+        "whitney-sec:959-960"
+      ],
+      "form_classes": [
+        "ppp",
+        "past_active_participle"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§952–960",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки причастия на -ta",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "уроки причастий",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class ppp|past_active_participle",
+        "note": "самая частотная предикативная форма классической прозы — мост к SG-SY-008"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-024",
+      "title_ru": "Герундив (причастие долженствования)",
+      "cluster": "Именные формы глагола",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:961-966"
+      ],
+      "form_classes": [
+        "gerundive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§961–966",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "урок герундива",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class gerundive",
+        "note": "распределение -tavya/-anīya/-ya"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-025",
+      "title_ru": "Инфинитив",
+      "cluster": "Именные формы глагола",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:968-979"
+      ],
+      "form_classes": [
+        "infinitive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§968–979",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "урок инфинитива",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph VerbForm=Inf",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-026",
+      "title_ru": "Абсолютив (деепричастие на -tvā, -ya)",
+      "cluster": "Именные формы глагола",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:989-994",
+        "whitney-sec:995"
+      ],
+      "form_classes": [
+        "gerund",
+        "adverbial_gerund"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§989–995",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки деепричастия",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "уроки абсолютива",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph VerbForm=Conv",
+        "note": "распределение -tvā (простой корень) vs -ya (с превербом)"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-027",
+      "title_ru": "Пассив: yá-презенс и аорист на -i",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-013"
+      ],
+      "whitney": [
+        "whitney-sec:768-774",
+        "whitney-sec:998-999",
+        "whitney-sec:843"
+      ],
+      "form_classes": [
+        "passive_present",
+        "passive_secondary",
+        "passive_aorist"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§768–774; §998–999; §843",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки пассива",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Voice=Pass | form-class passive_present",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-028",
+      "title_ru": "Каузатив",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-012",
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:1041-1052"
+      ],
+      "form_classes": [
+        "causative"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1041–1052",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки каузатива",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "каузативный морфокласс",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class causative",
+        "note": "vṛddhi-ступень корня перед -aya-"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-029",
+      "title_ru": "Дезидератив",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:1026-1040"
+      ],
+      "form_classes": [
+        "desiderative"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1026–1040",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1975",
+          "locus": "дезидеративный морфокласс",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class desiderative",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-030",
+      "title_ru": "Интенсив",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-012",
+        "SG-PH-005"
+      ],
+      "whitney": [
+        "whitney-sec:1000-1025"
+      ],
+      "form_classes": [
+        "intensive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1000–1025",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class intensive",
+        "note": "редкая категория — правило R5 о доверительных интервалах"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-031",
+      "title_ru": "Деноминатив",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-012",
+        "SG-WF-004"
+      ],
+      "whitney": [
+        "whitney-sec:1053-1068"
+      ],
+      "form_classes": [
+        "denominative"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1053–1068",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class denominative",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-MO-032",
+      "title_ru": "Перифрастический перфект",
+      "cluster": "Вторичные спряжения",
+      "prerequisites": [
+        "SG-MO-017"
+      ],
+      "whitney": [
+        "whitney-sec:1070-1073"
+      ],
+      "form_classes": [
+        "periphrastic_perfect"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1070–1073",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class periphrastic_perfect",
+        "note": "-ām + вспомогательный: связка с каузативами и деноминативами"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-001",
+      "title_ru": "Система падежных значений: обзор",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (употребление падежей)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки падежного управления",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=* & verb-frame join",
+        "note": "падежные рамки частотных глаголов как эмпирическая основа домена"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-a-case-overview"
+      ]
+    },
+    {
+      "id": "SG-SE-002",
+      "title_ru": "Номинатив и аккузатив",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (номинатив; аккузатив)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о подлежащем и прямом дополнении",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=Nom|Acc & deprel",
+        "note": "двойной аккузатив при глаголах речи/движения"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-003",
+      "title_ru": "Инструменталис и датив",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (инструменталис; датив)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки творительного и дательного",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=Ins|Dat & deprel",
+        "note": "инструменталис агенса — мост к SG-SY-008"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-a-instrumental",
+        "sem-a-dative-experiencer"
+      ]
+    },
+    {
+      "id": "SG-SE-004",
+      "title_ru": "Аблатив и генитив",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (аблатив; генитив)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки родительного и исходного",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=Abl|Gen & deprel",
+        "note": "конкуренция gen./abl. при сравнении"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-a-genitive"
+      ]
+    },
+    {
+      "id": "SG-SE-005",
+      "title_ru": "Локатив",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (локатив)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки местного падежа",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=Loc & deprel",
+        "note": "локатив цели и условия — мост к SG-SY-005"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-a-locative"
+      ]
+    },
+    {
+      "id": "SG-SE-006",
+      "title_ru": "Время и вид: конкуренция прошедших (имперфект, перфект, аорист)",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-016",
+        "SG-MO-017",
+        "SG-MO-018"
+      ],
+      "whitney": [
+        "whitney-sec:780-823",
+        "whitney-sec:824-930"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. X–XI (замечания об употреблении)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об употреблении прошедших времен",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class perfect|aor_*|impf-stem & genre-strata",
+        "note": "ключевая оговорка: UD Tense=Past в DCS-ingest не различает три прошедших (наблюдение VisualDCS) — различение только через формкласс; распределение по жанрам/эпохам"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-b-past-competition"
+      ]
+    },
+    {
+      "id": "SG-SE-007",
+      "title_ru": "Значения презенса и будущих",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-013",
+        "SG-MO-021"
+      ],
+      "whitney": [
+        "whitney-sec:599-779",
+        "whitney-sec:931-950"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IX (употребление презенса); гл. XII",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о временах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Tense=Pres|Fut & discourse-context sample",
+        "note": "исторический презенс в повествовании"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-008",
+      "title_ru": "Наклонения: императив и оптатив",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:527-598"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII (употребление наклонений, §571–582)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки повелительного и желательного",
+          "method": "curated"
+        },
+        {
+          "work": "kochergina-1998",
+          "locus": "уроки императива и оптатива",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Mood=Imp|Opt",
+        "note": "оптатив предписания в шастре vs просьбы в диалоге — жанровое расслоение"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-b-optative",
+        "sem-b-imperative"
+      ]
+    },
+    {
+      "id": "SG-SE-009",
+      "title_ru": "Залог: актив, медий, пассив (семантика)",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:527-598"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII (parasmai-/ātmanepada, §529–536)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о залогах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Voice=Act|Mid|Pass & lemma",
+        "note": "лексические предпочтения медия; медий без рефлексивного значения"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-c-passive",
+        "sem-c-middle"
+      ]
+    },
+    {
+      "id": "SG-SE-010",
+      "title_ru": "Именная предикация и связка (as, bhū)",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (согласование предикатива)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об именном сказуемом",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur clause without finite verb | lemma as,bhU",
+        "note": "доля бессвязочных клауз — базовая величина для SG-SY-003"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-011",
+      "title_ru": "Семантика причастных форм: -ta как повествовательное прошедшее",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-023"
+      ],
+      "whitney": [
+        "whitney-sec:952-958"
+      ],
+      "form_classes": [
+        "ppp"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§952–958",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о причастных оборотах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class ppp & clause-predicate position",
+        "note": "вытеснение финитных прошедших причастием — диахронная ось, связь с SG-VA-003"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "sem-b-ta-narrative"
+      ]
+    },
+    {
+      "id": "SG-SE-012",
+      "title_ru": "Модальные значения герундива и инфинитива",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-024",
+        "SG-MO-025"
+      ],
+      "whitney": [
+        "whitney-sec:961-966",
+        "whitney-sec:968-979"
+      ],
+      "form_classes": [
+        "gerundive",
+        "infinitive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§961–966; §968–979",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки долженствования",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class gerundive & agent-case join",
+        "note": "инструменталис/генитив агенса при герундиве"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-c-gerundive"
+      ]
+    },
+    {
+      "id": "SG-SE-013",
+      "title_ru": "Kāraka и падеж: две модели над одними свидетельствами",
+      "cluster": "Падежная семантика",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (употребление падежей)",
+          "method": "curated"
+        },
+        {
+          "work": "tolchelnikov-2026",
+          "locus": "непаниниевский взгляд на систему форм",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph Case=* & role-annotation sample",
+        "note": "kāraka-разметки в DCS нет — обе модели накладываются на одну и ту же валидированную выборку (метод C3)"
+      },
+      "c6_slots": [
+        "sem-a-karaka-vs-case"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-014",
+      "title_ru": "Таксис нефинитных форм: абсолютив, причастия, инфинитив",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-023",
+        "SG-MO-025",
+        "SG-MO-026"
+      ],
+      "whitney": [
+        "whitney-sec:951-995"
+      ],
+      "form_classes": [
+        "gerund",
+        "ppp",
+        "infinitive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XIII, §951–995",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о причастных и деепричастных оборотах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur nonfinite form + finite predicate, linear order",
+        "note": "предшествование/одновременность относительно финитного предиката"
+      },
+      "c6_slots": [
+        "sem-b-nonfinite-taxis"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SE-015",
+      "title_ru": "Каузатив: аргументная структура и падеж каузируемого",
+      "cluster": "Глагольная семантика",
+      "prerequisites": [
+        "SG-MO-028",
+        "SG-SE-001"
+      ],
+      "whitney": [
+        "whitney-sec:1041-1052"
+      ],
+      "form_classes": [
+        "causative"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§1041–1052",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о каузативных оборотах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:form-class causative & causee-case join",
+        "note": "аккузатив vs инструменталис каузируемого по классам матричного глагола"
+      },
+      "c6_slots": [
+        "sem-c-causative"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SY-001",
+      "title_ru": "Порядок слов в простом предложении",
+      "cluster": "Простое предложение",
+      "prerequisites": [
+        "SG-SE-001"
+      ],
+      "whitney": [],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "apte-1885",
+          "locus": "вводные уроки синтаксиса",
+          "method": "curated"
+        },
+        {
+          "work": "knauer-1908",
+          "locus": "фразы как корпус простых предложений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur linear order S–O–V per clause",
+        "note": "SOV-доминанта и отклонения в стихе; чувствительно к жанру"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-a-word-order"
+      ]
+    },
+    {
+      "id": "SG-SY-002",
+      "title_ru": "Согласование (род, число, лицо)",
+      "cluster": "Простое предложение",
+      "prerequisites": [
+        "SG-MO-001",
+        "SG-MO-012"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (правила согласования)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки согласования",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur head–modifier feature match",
+        "note": "согласование при dvandva и с рядом подлежащих"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-a-agreement"
+      ]
+    },
+    {
+      "id": "SG-SY-003",
+      "title_ru": "Именное предложение",
+      "cluster": "Простое предложение",
+      "prerequisites": [
+        "SG-SE-010"
+      ],
+      "whitney": [],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "apte-1885",
+          "locus": "уроки об именном сказуемом",
+          "method": "curated"
+        },
+        {
+          "work": "knauer-1908",
+          "locus": "фразы-образцы именных предложений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur clause without finite verb",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-a-nominal-clause"
+      ]
+    },
+    {
+      "id": "SG-SY-004",
+      "title_ru": "Относительные конструкции (ya- … ta-)",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-MO-010"
+      ],
+      "whitney": [
+        "whitney-sec:490-526"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VII (относительные местоимения)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки относительных предложений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur yad-form … tad-form same sentence",
+        "note": "порядок клауз (рел. слева) и кратные корреляты"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-b-correlatives"
+      ]
+    },
+    {
+      "id": "SG-SY-005",
+      "title_ru": "Абсолютные обороты (locativus/genitivus absolutus)",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-SE-004",
+        "SG-SE-005"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (абсолютные употребления локатива/генитива)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки абсолютных оборотов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur Loc participle + Loc subject, no head",
+        "note": "генитивный абсолютив как маркированный («пренебрежительный») вариант"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-c-locative-absolute"
+      ]
+    },
+    {
+      "id": "SG-SY-006",
+      "title_ru": "Цепочки абсолютивов",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-MO-026"
+      ],
+      "whitney": [
+        "whitney-sec:989-994"
+      ],
+      "form_classes": [
+        "gerund"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§989–994",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки деепричастных оборотов",
+          "method": "curated"
+        },
+        {
+          "work": "buhler-1923",
+          "locus": "упражнения с абсолютивами",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur ≥2 VerbForm=Conv per clause",
+        "note": "длина цепочек по жанрам — нарративная проза vs шастра"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-c-absolutive-chain"
+      ]
+    },
+    {
+      "id": "SG-SY-007",
+      "title_ru": "Инфинитивные конструкции",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-MO-025",
+        "SG-SE-012"
+      ],
+      "whitney": [
+        "whitney-sec:968-979"
+      ],
+      "form_classes": [
+        "infinitive"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§968–979 (употребления)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки инфинитива цели",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:morph VerbForm=Inf & matrix-verb join",
+        "note": "матричные глаголы: мочь, хотеть, начинать, надлежать"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SY-008",
+      "title_ru": "Пассивная конструкция (kartari/karmaṇi prayoga)",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-MO-027",
+        "SG-SE-009",
+        "SG-MO-023"
+      ],
+      "whitney": [
+        "whitney-sec:998-999"
+      ],
+      "form_classes": [
+        "passive_present",
+        "ppp"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "§998–999; §952–958",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки страдательного оборота",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur Ins agent + (Voice=Pass | ppp predicate)",
+        "note": "пассивная стратегия как немаркированная в классической прозе"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SY-009",
+      "title_ru": "Прямая речь и iti (синтаксис цитации)",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-SY-001"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (iti, §1102)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о прямой речи",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma iti & left-context clause",
+        "note": "iti при глаголах речи, мысли, причины"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-b-iti"
+      ]
+    },
+    {
+      "id": "SG-SY-010",
+      "title_ru": "Отрицание (na, mā)",
+      "cluster": "Частицы и полярность",
+      "prerequisites": [
+        "SG-SY-001"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (na; mā)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки отрицания",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma na,mA & mood join",
+        "note": "mā с инъюнктивом/аористом без аугмента — связь с SG-VA-002"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-a-negation"
+      ]
+    },
+    {
+      "id": "SG-SY-011",
+      "title_ru": "Вопросительные предложения (kim, api, katham)",
+      "cluster": "Частицы и полярность",
+      "prerequisites": [
+        "SG-SY-001"
+      ],
+      "whitney": [
+        "whitney-sec:490-526"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VII (вопросительное местоимение)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки вопросительных предложений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma kim,katham,api & clause-initial position",
+        "note": ""
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SY-012",
+      "title_ru": "Сочинение: ca, vā, tu",
+      "cluster": "Частицы и полярность",
+      "prerequisites": [
+        "SG-SY-001"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (союзные частицы)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки сочинительных союзов",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma ca,vA,tu & position-in-clause",
+        "note": "энклитическая позиция ca; одиночное vs парное употребление"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "syn-b-coordination"
+      ]
+    },
+    {
+      "id": "SG-SY-013",
+      "title_ru": "Условные периоды (yadi, ced) и выбор наклонения",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-SE-008",
+        "SG-SY-004"
+      ],
+      "whitney": [
+        "whitney-sec:527-598",
+        "whitney-sec:941"
+      ],
+      "form_classes": [
+        "conditional"
+      ],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII (наклонения в условных); §941 (кондиционал)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки условных предложений",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma yadi,ced & mood join per clause pair",
+        "note": "оптатив vs презенс в протасисе/аподосисе; редкий кондиционал — правило R5"
+      },
+      "c6_slots": [
+        "syn-b-conditionals"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-SY-014",
+      "title_ru": "Посессивные и экспериенцерные конструкции (без «иметь»)",
+      "cluster": "Сложное предложение",
+      "prerequisites": [
+        "SG-SE-003",
+        "SG-SE-004"
+      ],
+      "whitney": [
+        "whitney-sec:261-320"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IV (генитив принадлежности; датив пользы)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки родительного и дательного",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur Gen|Dat + existential as/bhU/vid",
+        "note": "генитив + экзистенциальный глагол как посессивная стратегия"
+      },
+      "c6_slots": [
+        "syn-c-dative-possessive"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-DI-001",
+      "title_ru": "Дискурсивные частицы (hi, eva, khalu, vai)",
+      "cluster": "Частицы дискурса",
+      "prerequisites": [
+        "SG-SY-012"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (частицы)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об усилительных частицах",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma hi,eva,Kalu,vE & position + genre",
+        "note": "жанровые профили частот — проза/стих/комментарий"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "is-a-eva",
+        "is-a-second-position"
+      ]
+    },
+    {
+      "id": "SG-DI-002",
+      "title_ru": "Анафора и дейксис в тексте (tad, etad, idam, adas)",
+      "cluster": "Связность",
+      "prerequisites": [
+        "SG-MO-010"
+      ],
+      "whitney": [
+        "whitney-sec:490-526"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VII (указательные местоимения, различия употребления)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma tad,etad,idam,adas & antecedent-distance sample",
+        "note": "ближний/дальний дейксис; anaphora чересчур частотного tad"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-DI-003",
+      "title_ru": "Цитация и пересказ: iti на уровне дискурса",
+      "cluster": "Связность",
+      "prerequisites": [
+        "SG-SY-009"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (iti)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки о косвенной передаче речи",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma iti & nested-quotation depth",
+        "note": "вложенные цитации и маркировка источника знания"
+      },
+      "layer": "core",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "is-a-direct-speech"
+      ]
+    },
+    {
+      "id": "SG-DI-004",
+      "title_ru": "Коннекторы повествования (atha, tataḥ, atra, kiṃ ca)",
+      "cluster": "Связность",
+      "prerequisites": [
+        "SG-SY-012"
+      ],
+      "whitney": [
+        "whitney-sec:1096-1135"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. XVI (наречные частицы)",
+          "method": "curated"
+        },
+        {
+          "work": "knauer-1908",
+          "locus": "фразы-цепочки повествования",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma aTa,tatas,atra & sentence-initial position",
+        "note": "инципитные формулы (atha) и эпизодные границы"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-DI-005",
+      "title_ru": "Формы обращения и вежливость (bhavant-, вокатив)",
+      "cluster": "Прагматика",
+      "prerequisites": [
+        "SG-SY-002"
+      ],
+      "whitney": [
+        "whitney-sec:490-526"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VII (bhavant- как вежливое обращение)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об обращении",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:lemma Bavant & Person=3 agreement | Case=Voc",
+        "note": "3-е лицо при 2-м референте; распределение по диалоговым жанрам"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-DI-006",
+      "title_ru": "Переключение нарративных времен как дискурсивный прием",
+      "cluster": "Связность",
+      "prerequisites": [
+        "SG-SE-006",
+        "SG-SE-007"
+      ],
+      "whitney": [
+        "whitney-sec:599-779"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. IX (презенс в повествовании)",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "уроки об употреблении времен",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:cooccur tense alternation within passage & genre-strata",
+        "note": "исторический презенс на фоне претеритов; оговорка UD Tense=Past (см. SG-SE-006) действует и здесь"
+      },
+      "c6_slots": [
+        "is-a-tense-switching"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-VA-001",
+      "title_ru": "Слои санскрита: ведийский, эпический, классический, поздний (обзор)",
+      "cluster": "Слои",
+      "prerequisites": [],
+      "whitney": [],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "слоевые пометы (Veda, Brāhmaṇa, epic, later) на протяжении всей грамматики",
+          "method": "curated"
+        },
+        {
+          "work": "zalizniak-1978",
+          "locus": "очерк: вводные замечания о периодизации",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta text-dating strata",
+        "note": "DCS несет датировки текстов — базовая стратификация всех слоевых запросов; политика слоев — хартия §4"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-VA-002",
+      "title_ru": "Ведийский слой: маркированные отличия (акцент, субъюнктив, инъюнктив)",
+      "cluster": "Слои",
+      "prerequisites": [
+        "SG-VA-001",
+        "SG-PH-003"
+      ],
+      "whitney": [
+        "whitney-sec:527-598"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. VIII (субъюнктив §557–563; ведийские пометы passim)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta stratum=vedic & morph Mood=Sub|Inj",
+        "note": "акцентные свидетельства — VedaWeb через ворота C3; слоевые статьи публикуются не раньше W3 (хартия §4)"
+      },
+      "layer": "layered",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "reg-a-layer-vedic-classical"
+      ]
+    },
+    {
+      "id": "SG-VA-003",
+      "title_ru": "Эпический санскрит: отклонения от классической нормы",
+      "cluster": "Слои",
+      "prerequisites": [
+        "SG-VA-001"
+      ],
+      "whitney": [],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "пометы «in the epics» passim",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "примеры из эпоса в уроках",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta stratum=epic & deviation sample",
+        "note": "нарушения сандхи и согласования metri causa; эпический подкорпус DCS"
+      },
+      "layer": "layered",
+      "minted": "12-07-2026",
+      "c6_slots": [
+        "reg-a-epic-deviations"
+      ]
+    },
+    {
+      "id": "SG-VA-004",
+      "title_ru": "Вариативность письма и изданий (рукописная и издательская орфография)",
+      "cluster": "Слои",
+      "prerequisites": [
+        "SG-VA-001",
+        "SG-PH-010"
+      ],
+      "whitney": [
+        "whitney-sec:1-18"
+      ],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "гл. I (замечания о письме и изданиях)",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:surface orthographic doublets (M vs class-nasal, b/v)",
+        "note": "издательские конвенции как источник ложной вариативности в корпусных числах"
+      },
+      "layer": "core",
+      "minted": "12-07-2026"
+    },
+    {
+      "id": "SG-VA-005",
+      "title_ru": "Проза и стих: что меняется в грамматике",
+      "cluster": "Слои",
+      "prerequisites": [
+        "SG-VA-001"
+      ],
+      "whitney": [],
+      "form_classes": [],
+      "witnesses": [
+        {
+          "work": "whitney-1889",
+          "locus": "пометы metri causa и эпические лицензии passim",
+          "method": "curated"
+        },
+        {
+          "work": "apte-1885",
+          "locus": "стиховые примеры в уроках синтаксиса",
+          "method": "curated"
+        }
+      ],
+      "query": {
+        "engine": "dcs",
+        "sketch": "dcs:meta genre=verse|prose & feature battery",
+        "note": "prose-first политика программы C6 (E3): нормой считается проза, стих описывается как отклонение"
+      },
+      "c6_slots": [
+        "reg-a-prose-verse"
+      ],
+      "layer": "core",
+      "minted": "12-07-2026"
+    }
+  ]
+}

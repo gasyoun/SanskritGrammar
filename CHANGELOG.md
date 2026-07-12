@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.1.0] - 2026-07-12
 ### Added
 - **GrammarRelations — карта связей грамматик** ([GrammarRelations/grammar-relations-map.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarRelations/grammar-relations-map.mdx),
   route `/grammars/GrammarRelations/grammar-relations-map`): читательская страница о том,
@@ -29,6 +31,24 @@ changelog tags as `vX.Y.Z`.
   символьном прокси) + результаты в
   [`scripts/data/grammar_relations_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/grammar_relations_stats.json)
   (H786, Fable 5 `claude-fable-5`).
+- **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
+  H627, Fable 5 `claude-fable-5`): три селектируемых типизированных контура
+  (исследовательский · образовательный · агентный) над 7 value-ступенями и
+  10 ребрами bundle, роли источник/данные/продукт/отдача/мультипликатор без
+  смешения, доказуемость каждого звена ребром bundle + свидетельством,
+  Mermaid-объяснение с accTitle/accDescr и табличный эквивалент
+  (`sangram/atlas/value-chain.mdx` + `src/components/AtlasValueChain/`).
+- **Sangram contract C2 — article TOC network** ([`sangram/toc/SANGRAM_TOC_NETWORK.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/SANGRAM_TOC_NETWORK.mdx),
+  route `/grammars/sangram/toc-network-c2`): append-only registry
+  [`articles.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/data/articles.json)
+  of 93 core articles across the 7 charter domains (PH 10 · WF 11 · MO 32 · SE 15 ·
+  SY 14 · DI 6 · VA 5) — stable `SG-<domain>-<NNN>` IDs, 117-edge acyclic prerequisite
+  graph, DCS query sketches (6-prefix grammar), curated witnesses from the repo's 10
+  grammars plus a derived Whitney-chapter coverage layer; all 33 C6 programme slots
+  mapped via `c6_slots`. Generator `scripts/toc_build_pages.py` (overview + 7 domain
+  pages with Mermaid prerequisite graphs) and validator `scripts/toc_validate.py`
+  (17 check classes incl. H540 form-class cross-check and `--check` page sync)
+  (H631, Fable 5 `claude-fable-5`).
 - **Sangram editorial + i18n contract (C4, H633)**: article manifest schema
   ([sangram/editorial/data/article.schema.json](sangram/editorial/data/article.schema.json)),
   fixture, validator (`python scripts/article_validate.py --self-test`) and the
