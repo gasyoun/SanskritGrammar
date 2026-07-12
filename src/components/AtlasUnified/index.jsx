@@ -6,7 +6,7 @@
 // Sibling slots B2-B5 integrate by adding one import + one VIEW_REGISTRY line;
 // an unregistered view renders its bundle declaration as a placeholder card,
 // so this route builds and works at every intermediate merge state.
-import React, { useMemo, useRef } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useHistory, useLocation } from '@docusaurus/router';
 import AtlasProvenance from '@site/src/components/AtlasProvenance';
 
@@ -55,7 +55,11 @@ export default function AtlasUnified({ bundle }) {
     [bundle]
   );
 
-  const params = new URLSearchParams(location.search);
+  // Query params are read only after mount: SSG HTML is param-less, and a
+  // param-driven first render would break hydration (React #418/#423).
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  const params = new URLSearchParams(mounted ? location.search : '');
   const viewParam = params.get('view');
   const active =
     views.find((v) => v.id === viewParam)?.id ||

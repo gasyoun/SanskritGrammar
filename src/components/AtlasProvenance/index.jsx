@@ -6,7 +6,7 @@
 // Selection is either self-managed (synced to the ?node= query param) or
 // controlled via {selectedId, onSelect} so a unified multi-view route can
 // share one selected node across views.
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useHistory, useLocation } from '@docusaurus/router';
 
 const EDGE_KIND_LABELS = {
@@ -223,10 +223,14 @@ export default function AtlasProvenance({ bundle, selectedId, onSelect }) {
     [nodes]
   );
 
-  const queryNode = new URLSearchParams(location.search).get('node');
-  const [internal, setInternal] = useState(
-    queryNode && byId[queryNode] ? queryNode : null
-  );
+  // Deep-link init happens AFTER mount: the SSG HTML is built without query
+  // params, so reading ?node= during the first render breaks hydration.
+  const [internal, setInternal] = useState(null);
+  useEffect(() => {
+    const queryNode = new URLSearchParams(location.search).get('node');
+    if (queryNode && byId[queryNode]) setInternal(queryNode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const selected = controlled ? selectedId : internal;
   const selectedNode = selected ? byId[selected] : null;
 
