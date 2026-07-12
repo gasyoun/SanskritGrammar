@@ -31,6 +31,28 @@ ID_RE = re.compile(r"^SG-(PH|WF|MO|SE|SY|DI|VA)-([0-9]{3})$")
 ANCHOR_RE = re.compile(r"^whitney-sec:([0-9]{1,4})(?:-([0-9]{1,4}))?$")
 LAYERS = {"core", "layered"}
 
+# The 33 article slots of the merged C6 programme (sangram/
+# SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx §6; its own "Итого 32" line
+# undercounts the actual table rows by one). C6 defers ID canon to C2:
+# every slot must be mapped to exactly one registry article via c6_slots.
+C6_SLOTS = {
+    "sem-a-case-overview", "sem-a-instrumental", "sem-a-genitive",
+    "sem-a-dative-experiencer", "sem-a-locative", "sem-a-karaka-vs-case",
+    "sem-b-past-competition", "sem-b-ta-narrative", "sem-b-optative",
+    "sem-b-imperative", "sem-b-nonfinite-taxis",
+    "sem-c-passive", "sem-c-middle", "sem-c-causative",
+    "syn-a-word-order", "syn-a-nominal-clause", "syn-a-agreement",
+    "syn-a-negation",
+    "syn-b-correlatives", "syn-b-iti", "syn-b-conditionals",
+    "syn-b-coordination",
+    "syn-c-absolutive-chain", "syn-c-locative-absolute", "syn-c-gerundive",
+    "syn-c-dative-possessive",
+    "is-a-eva", "is-a-second-position", "is-a-tense-switching",
+    "is-a-direct-speech",
+    "reg-a-prose-verse", "reg-a-layer-vedic-classical",
+    "reg-a-epic-deviations",
+}
+
 errors = []
 
 
@@ -96,6 +118,19 @@ def main() -> int:
         for fc in a.get("form_classes", []):
             if fc not in slugs:
                 err("11", f"{aid}: form_class {fc!r} not in typed_link_thematic.tsv")
+
+    # C6 crosswalk: every C6 slot mapped to exactly one article, no unknowns
+    slot_owner = {}
+    for a in articles:
+        for s in a.get("c6_slots", []):
+            if s not in C6_SLOTS:
+                err("16", f"{a['id']}: unknown C6 slot {s!r}")
+            elif s in slot_owner:
+                err("16", f"C6 slot {s} mapped twice ({slot_owner[s]}, {a['id']})")
+            else:
+                slot_owner[s] = a["id"]
+    for s in sorted(C6_SLOTS - set(slot_owner)):
+        err("16", f"C6 slot {s} not mapped to any article")
 
     # retired ids are append-only bookkeeping, never live
     for rid in data.get("retired_ids", []):
