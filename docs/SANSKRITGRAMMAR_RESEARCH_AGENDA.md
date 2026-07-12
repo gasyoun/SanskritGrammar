@@ -1,6 +1,6 @@
 # SanskritGrammar research agenda — hypotheses, visualisations, and the ACL crosswalk
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 12-07-2026_
 
 **Provenance:** authored by Fable 5 (`claude-fable-5`) executing
 [H450](https://github.com/gasyoun/Uprava/blob/main/handoffs/H450-Fable_SanskritGrammar_dh_memo_research_agenda_10.07.26.md)
@@ -90,6 +90,13 @@ slower to reach the same sentences.
 **Nearest existing + delta.** The `earliest_book`/`earliest_year` columns of `catalog.csv` record
 *that* clusters recur; the delta is a signed positional statistic over them.
 **Readiness.** ✅ Runs today.
+**Result (12-07-2026, Fable 5 `claude-fable-5`, H786).** CONFIRMED, stronger than claimed:
+over the 40 Bühler↔Kochergina τ pairs, median normalized-position shift **+0.142** (spec:
+≥ +0.05), 72.5% of clusters later in Kochergina, Wilcoxon z = 4.26, p ≈ 2×10⁻⁵ (normal
+approximation, zeros dropped, n_eff = 39). Script
+[`grammar_relations_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/grammar_relations_stats.py),
+data [`grammar_relations_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/grammar_relations_stats.json),
+page [`GrammarRelations/grammar-relations-map.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarRelations/grammar-relations-map.mdx).
 
 ### SG-H3 — Borrowing direction is recoverable without labels ⚠ gated on D4
 
@@ -256,6 +263,15 @@ useful number this repo can give a beginner.
 **Nearest existing + delta.** Nothing in-repo measures difficulty at all; nearest is the
 syllables-per-word phonostatistics (different corpus, different question). Delta: entire claim.
 **Readiness.** ✅ Runs today on committed data.
+**Result (12-07-2026, Fable 5 `claude-fable-5`, H786).** Char-length proxy REFUTES the
+monotonic-rise half of the claim: Spearman ρ(position, length) = −0.342 (Bühler) / 0.167
+(Knauer) / 0.061 (Kochergina) — all three hump mid-course, Bühler's final quartile is its
+*shortest*. Kochergina has the *steepest* start-to-peak rise (Q3/Q1 ≈ 2.1), contradicting the
+shallowest-ramp expectation. Aksharas/novelty proxies not yet run — claim stands only as
+refuted-on-char-length. Script
+[`grammar_relations_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/grammar_relations_stats.py),
+data [`grammar_relations_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/grammar_relations_stats.json),
+page [`GrammarRelations/grammar-relations-map.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarRelations/grammar-relations-map.mdx).
 
 **Spine coverage check:** S1 → SG-H1, H2, H3, H4, H9 · S2 → SG-H5, H6 · S3 → SG-H7 · S4 → SG-H8. ✅
 

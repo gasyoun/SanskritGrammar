@@ -43,6 +43,16 @@ changelog tags as `vX.Y.Z`.
 
 ## [0.1.0] - 2026-07-12
 ### Added
+- **GrammarRelations — карта связей грамматик** ([GrammarRelations/grammar-relations-map.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarRelations/grammar-relations-map.mdx),
+  route `/grammars/GrammarRelations/grammar-relations-map`): читательская страница о том,
+  как связаны 10 оцифрованных грамматик — генеалогия учебной линии (τ из S1), проверенная
+  по тексту зависимость Очерк-1978↔Кочергина-1998, линия Зализняка 1975/1978/2004 и ветви
+  Гасунс/Толчельников, карта тем, трудность подачи и совместимость для студента. Новый
+  скрипт [`scripts/grammar_relations_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/grammar_relations_stats.py)
+  (SG-H2 подтверждена: медианный сдвиг +0.142, p≈2×10⁻⁵; SG-H9 опровергнута на
+  символьном прокси) + результаты в
+  [`scripts/data/grammar_relations_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/grammar_relations_stats.json)
+  (H786, Fable 5 `claude-fable-5`).
 - **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
   H627, Fable 5 `claude-fable-5`): три селектируемых типизированных контура
   (исследовательский · образовательный · агентный) над 7 value-ступенями и

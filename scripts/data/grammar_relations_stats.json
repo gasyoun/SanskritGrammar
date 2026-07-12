@@ -1,0 +1,60 @@
+{
+  "source": "scripts/grammar_relations_stats.py over scripts/data/sequence_tau_pairs.csv (SG-H2 pairs) + scripts/data/sentences.json (3213 sentences; SG-H9 proxies)",
+  "sg_h2_positional_drift": {
+    "pair": "Buehler 1923 -> Kochergina 1998",
+    "n_pairs": 40,
+    "n_nonzero": 39,
+    "total_lessons": {
+      "buhler": 48,
+      "kochergina": 40
+    },
+    "median_shift_normalized": 0.142,
+    "share_later_in_kochergina": 0.725,
+    "wilcoxon_z": 4.26,
+    "wilcoxon_p_two_sided": 2.08e-05
+  },
+  "sg_h9_difficulty_proxies": {
+    "buhler": {
+      "n_sentences": 1368,
+      "max_lesson": 48,
+      "mean_len_by_quartile": [
+        18.0,
+        30.5,
+        32.0,
+        17.2
+      ],
+      "ramp_q4_over_q1": 0.96,
+      "spearman_pos_vs_len": -0.342
+    },
+    "knauer": {
+      "n_sentences": 426,
+      "max_lesson": 19,
+      "mean_len_by_quartile": [
+        23.6,
+        31.7,
+        30.1,
+        32.7
+      ],
+      "ramp_q4_over_q1": 1.39,
+      "spearman_pos_vs_len": 0.167
+    },
+    "kochergina": {
+      "n_sentences": 1419,
+      "max_lesson": 40,
+      "mean_len_by_quartile": [
+        18.6,
+        32.1,
+        39.8,
+        30.6
+      ],
+      "ramp_q4_over_q1": 1.65,
+      "spearman_pos_vs_len": 0.061
+    }
+  },
+  "caveats": [
+    "Sentence length in characters is a surface proxy, not a Sanskrit readability model (SG-H9 / Vajjala 2022 caveat).",
+    "Buehler text is the 1923 Stockholm reprint held as an unverified proxy for the 1878 first edition (D4 gate) — no borrowing-direction claims.",
+    "Earliest lesson per multi-lesson cluster (sequence_tau.py policy).",
+    "SG-H2 is a position claim, not a borrowing-direction claim (agenda wording)."
+  ]
+}
