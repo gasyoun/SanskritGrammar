@@ -19,6 +19,24 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-12
+### Added
+- **A60 central table — "grammar claims the corpus does not confirm" (H773 phase Q1)**
+  ([`TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60)):
+  the paper's core table, built from H768's now-complete 43-claim Kochergina register. All **12**
+  `verdict_fact ∈ {OVERSTATED, FALSE}` divergences (of 43 verified — 28 TRUE / 11 OVERSTATED /
+  1 FALSE / 3 UNTESTABLE) are classified by the H773 four-way divergence typology
+  (**over-generalisation 8 · rule-real-but-marginal 3 · flat-contradiction 1 · system-vs-usage 0**)
+  and quantified. New reproducible layer, kept out of H768's file per the consume-don't-re-derive
+  boundary: [`divergence_classes.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/divergence_classes.yml)
+  (class + rationale per claim) + [`build_divergence_table.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/build_divergence_table.py)
+  (joins it to `claims.yml` → the generated [`TABLE_grammar-claims-corpus-denies_A60.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/TABLE_grammar-claims-corpus-denies_A60.md);
+  `--check` guards any unclassified divergence). Finding: the divergence class **predicts** the H768
+  pedagogy verdict (class 1 ⇔ `MISLEADING`, classes 2+4 ⇔ `FREQUENCY-HIDDEN`); the empty
+  system-vs-usage class is itself a result. A60 readiness 2/5 → 3/5. Central table complete for
+  Kochergina; per-grammar comparison (Q2) still gated on a second grammar's harvest.
+  ([H773](https://github.com/gasyoun/Uprava/blob/main/handoffs/H773-Opus_SanskritGrammar_grammar-asserts-corpus-denies-study_12.07.26.md), Opus 4.8 `claude-opus-4-8`.)
+
 ## [0.4.0] - 2026-07-12
 ### Added
 - **Sangram contract C5 — morphology programme (W2)** ([`sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx),
