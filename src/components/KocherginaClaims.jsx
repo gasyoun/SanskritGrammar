@@ -83,6 +83,16 @@ export default function KocherginaClaims({only}) {
               <strong>Корпус:</strong> {c.number}
             </div>
           )}
+          {c.mg_footnote && (
+            <div style={{
+              fontSize: '0.85em', margin: '0.35em 0 0', padding: '0.3em 0.6em',
+              borderLeft: '3px solid var(--ifm-color-primary)',
+              background: 'var(--ifm-color-emphasis-100)',
+            }}>
+              <strong>Частотность (M.G.):</strong> {c.mg_footnote}
+              <span style={{color: 'var(--ifm-color-emphasis-600)'}}> — добавлено М.Г., отсутствует в тексте Кочергиной</span>
+            </div>
+          )}
           {c.ref && (
             <div style={{fontSize: '0.8em', color: 'var(--ifm-color-emphasis-600)'}}>{c.ref}</div>
           )}
