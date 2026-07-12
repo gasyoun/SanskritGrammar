@@ -1,0 +1,59 @@
+{
+  "$schema": "./article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:sandhi-external",
+    "as_of": "2026-07-12",
+    "toc_ref": null,
+    "thesis_refs": ["2.7"],
+    "layers": ["scientific", "pedagogical"],
+    "locales": {
+      "ru": {
+        "title": "Внешнее сандхи",
+        "summary": "Минимальная фикстура контракта C4 — не производственная статья."
+      },
+      "en": {
+        "title": "External sandhi",
+        "summary": "Minimal C4 contract fixture - not a production article.",
+        "translated_from": "2026-07-12"
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:sandhi-external:1",
+        "layer": "scientific",
+        "text_slp1": "vidyA dadAti vinayaM vinayAd yAti pAtratAm",
+        "segmentation_slp1": "vidyA dadAti vinayam vinayAt yAti pAtratAm",
+        "locus": { "corpus": "gretil", "work": "Hitopadesha", "ref": "prastavika 6" },
+        "translations": {
+          "ru": "Знание дает воспитанность, из воспитанности приходит достоинство.",
+          "en": "Knowledge gives discipline; from discipline comes worthiness."
+        },
+        "gloss_ru": "иллюстрация m/t-сандхи на стыке слов",
+        "evidence": {
+          "label_ru": "GRETIL, электронный текст Хитопадеши",
+          "visibility": "public",
+          "url": "https://gretil.sub.uni-goettingen.de/"
+        },
+        "as_of": "2026-07-12"
+      },
+      {
+        "id": "ex:sandhi-external:2",
+        "layer": "pedagogical",
+        "text_slp1": "rAmo vanaM gacCati",
+        "locus": { "corpus": "constructed", "ref": "учебный пример, без корпусного свидетеля" },
+        "translations": { "ru": "Рама идет в лес." },
+        "gloss_ru": "учебный сконструированный пример: -aH + v- дает -o",
+        "evidence": {
+          "label_ru": "сконструировано редакцией для педагогического слоя",
+          "visibility": "internal"
+        },
+        "as_of": "2026-07-12"
+      }
+    ],
+    "revisions": [
+      { "date": "2026-07-12", "kind": "published", "note_ru": "Фикстура контракта C4 (H633): по одному образцу каждого слоя, локали RU+EN, публичное и внутреннее свидетельство." }
+    ]
+  }
+}
