@@ -1,0 +1,189 @@
+/* Dependencies view (slot B5, H620) — edge-kind palette + responsive cards.
+   Kind colors are paired with a text badge and an arrow glyph, so kinds stay
+   distinguishable without color perception. */
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.statItem strong {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.45rem 0.7rem;
+  font-size: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 6px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.chipRow legend {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 0.2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.chip {
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.85rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--ifm-color-primary);
+  background: var(--ifm-color-primary-contrast-background, var(--ifm-color-emphasis-100));
+  font-weight: 600;
+}
+
+.kindBadge {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.kindFeeds { background: #1e6fb8; }
+.kindConsumes { background: #1f7a4d; }
+.kindVendors { background: #b0620f; }
+.kindProduces { background: #6d3fa9; }
+.kindCites { background: #5c6570; }
+
+.statusChip {
+  display: inline-block;
+  padding: 0 0.4rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  color: var(--ifm-color-emphasis-800);
+  white-space: nowrap;
+}
+
+.statusLive { border-color: #1f7a4d; color: #1f7a4d; }
+.statusQueued { border-color: #b0620f; color: #b0620f; }
+
+[data-theme='dark'] .statusLive { border-color: #4fc98a; color: #4fc98a; }
+[data-theme='dark'] .statusQueued { border-color: #e8a04c; color: #e8a04c; }
+
+.group {
+  margin-bottom: 1.5rem;
+}
+
+.groupTitle {
+  border-bottom: 2px solid var(--ifm-color-emphasis-300);
+  padding-bottom: 0.25rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 0.6rem 0.85rem;
+}
+
+.cardIsolated {
+  opacity: 0.75;
+  border-style: dashed;
+}
+
+.cardHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.cardHead h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.orgBadge {
+  font-size: 0.72rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.edgeList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.edgeList li {
+  padding: 0.2rem 0;
+  border-top: 1px dotted var(--ifm-color-emphasis-200);
+}
+
+.edgeAsset {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.canonicalMark {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6d3fa9;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .canonicalMark { color: #b78ae8; }
+
+.isolatedNote {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.noMatch {
+  padding: 0.75rem 1rem;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  border-radius: 8px;
+}

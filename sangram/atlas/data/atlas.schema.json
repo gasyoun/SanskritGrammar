@@ -147,6 +147,10 @@
         "parent": { "$ref": "#/$defs/nodeId" },
         "org": { "type": "string" },
         "name": { "type": "string" },
+        "programme_ru": {
+          "type": "string",
+          "description": "Census programme group — the MEGABOOK §9.x subsection title the repo is listed under. Structural grouping consumed by the dependencies view (B5); absent for repos outside the §9 census tables."
+        },
         "asset_types": {
           "type": "array",
           "minItems": 1,

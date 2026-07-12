@@ -1,8 +1,8 @@
 {
   "$schema": "./atlas.schema.json",
-  "contract_version": "1.0.0",
+  "contract_version": "1.1.0",
   "provenance": {
-    "generated": "2026-07-11",
+    "generated": "2026-07-12",
     "generator": "scripts/atlas_build_bundle.py",
     "generated_by": "Fable 5 (claude-fable-5)",
     "series_slot": "B1 (H623)",
@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "5e09962",
+        "commit": "89fe9d7",
         "visibility": "internal"
       }
     ],
@@ -613,7 +613,8 @@
       "org": "sanskrit-lexicon",
       "name": "ACC",
       "url": "https://github.com/sanskrit-lexicon/ACC",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:afanasiynikitin",
@@ -622,7 +623,8 @@
       "org": "gasyoun",
       "name": "AfanasiyNikitin",
       "url": "https://github.com/gasyoun/AfanasiyNikitin",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:amar",
@@ -631,7 +633,8 @@
       "org": "sanskrit-lexicon",
       "name": "AMAR",
       "url": "https://github.com/sanskrit-lexicon/AMAR",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:ap",
@@ -640,7 +643,8 @@
       "org": "sanskrit-lexicon",
       "name": "AP",
       "url": "https://github.com/sanskrit-lexicon/AP",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:ap90",
@@ -649,7 +653,8 @@
       "org": "sanskrit-lexicon",
       "name": "AP90",
       "url": "https://github.com/sanskrit-lexicon/AP90",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:aptees",
@@ -658,7 +663,8 @@
       "org": "sanskrit-lexicon",
       "name": "ApteES",
       "url": "https://github.com/sanskrit-lexicon/ApteES",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:bhs",
@@ -667,7 +673,8 @@
       "org": "sanskrit-lexicon",
       "name": "BHS",
       "url": "https://github.com/sanskrit-lexicon/BHS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:bookindex",
@@ -676,7 +683,8 @@
       "org": "gasyoun",
       "name": "BookIndex",
       "url": "https://github.com/gasyoun/BookIndex",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:bop",
@@ -685,7 +693,8 @@
       "org": "sanskrit-lexicon",
       "name": "BOP",
       "url": "https://github.com/sanskrit-lexicon/BOP",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:bor",
@@ -694,7 +703,8 @@
       "org": "sanskrit-lexicon",
       "name": "BOR",
       "url": "https://github.com/sanskrit-lexicon/BOR",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:buhler-sanskrit-book",
@@ -703,7 +713,8 @@
       "org": "alexander-myltsev",
       "name": "buhler-sanskrit-book",
       "url": "https://github.com/alexander-myltsev/buhler-sanskrit-book",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Образование и выручка"
     },
     {
       "id": "repo:bur",
@@ -712,7 +723,8 @@
       "org": "sanskrit-lexicon",
       "name": "BUR",
       "url": "https://github.com/sanskrit-lexicon/BUR",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:cae",
@@ -721,7 +733,8 @@
       "org": "sanskrit-lexicon",
       "name": "CAE",
       "url": "https://github.com/sanskrit-lexicon/CAE",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:ccs",
@@ -730,7 +743,8 @@
       "org": "sanskrit-lexicon",
       "name": "CCS",
       "url": "https://github.com/sanskrit-lexicon/CCS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:cologne",
@@ -739,7 +753,8 @@
       "org": "sanskrit-lexicon",
       "name": "COLOGNE",
       "url": "https://github.com/sanskrit-lexicon/COLOGNE",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "repo:cologne-skills",
@@ -748,7 +763,8 @@
       "org": "sanskrit-lexicon",
       "name": "cologne-skills",
       "url": "https://github.com/sanskrit-lexicon/cologne-skills",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "repo:commentarystrategies",
@@ -757,7 +773,8 @@
       "org": "gasyoun",
       "name": "CommentaryStrategies",
       "url": "https://github.com/gasyoun/CommentaryStrategies",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:corrections",
@@ -766,7 +783,8 @@
       "org": "sanskrit-lexicon",
       "name": "CORRECTIONS",
       "url": "https://github.com/sanskrit-lexicon/CORRECTIONS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-apidev",
@@ -775,7 +793,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-apidev",
       "url": "https://github.com/sanskrit-lexicon/csl-apidev",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-app",
@@ -784,7 +803,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-app",
       "url": "https://github.com/sanskrit-lexicon/csl-app",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-atlas",
@@ -793,7 +813,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-atlas",
       "url": "https://github.com/sanskrit-lexicon/csl-atlas",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-corrections",
@@ -802,7 +823,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-corrections",
       "url": "https://github.com/sanskrit-lexicon/csl-corrections",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-devanagari",
@@ -811,7 +833,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-devanagari",
       "url": "https://github.com/sanskrit-lexicon/csl-devanagari",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-doc",
@@ -820,7 +843,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-doc",
       "url": "https://github.com/sanskrit-lexicon/csl-doc",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "repo:csl-guides",
@@ -829,7 +853,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-guides",
       "url": "https://github.com/sanskrit-lexicon/csl-guides",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-inflect",
@@ -838,7 +863,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-inflect",
       "url": "https://github.com/sanskrit-lexicon/csl-inflect",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-newsletter",
@@ -847,7 +873,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-newsletter",
       "url": "https://github.com/sanskrit-lexicon/csl-newsletter",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-observatory",
@@ -856,7 +883,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-observatory",
       "url": "https://github.com/sanskrit-lexicon/csl-observatory",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-orig",
@@ -865,7 +893,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-orig",
       "url": "https://github.com/sanskrit-lexicon/csl-orig",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-pywork",
@@ -874,7 +903,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-pywork",
       "url": "https://github.com/sanskrit-lexicon/csl-pywork",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:csl-santam",
@@ -892,7 +922,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-standards",
       "url": "https://github.com/sanskrit-lexicon/csl-standards",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "repo:csl-websanlexicon",
@@ -901,7 +932,8 @@
       "org": "sanskrit-lexicon",
       "name": "csl-websanlexicon",
       "url": "https://github.com/sanskrit-lexicon/csl-websanlexicon",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:dcs",
@@ -910,7 +942,8 @@
       "org": "sanskrit-lexicon",
       "name": "DCS",
       "url": "https://github.com/sanskrit-lexicon/DCS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:fri",
@@ -919,7 +952,8 @@
       "org": "sanskrit-lexicon",
       "name": "FRI",
       "url": "https://github.com/sanskrit-lexicon/FRI",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:gra",
@@ -928,7 +962,8 @@
       "org": "sanskrit-lexicon",
       "name": "GRA",
       "url": "https://github.com/sanskrit-lexicon/GRA",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:indologyscholars",
@@ -937,7 +972,8 @@
       "org": "gasyoun",
       "name": "IndologyScholars",
       "url": "https://github.com/gasyoun/IndologyScholars",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:inm",
@@ -946,7 +982,8 @@
       "org": "sanskrit-lexicon",
       "name": "INM",
       "url": "https://github.com/sanskrit-lexicon/INM",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:kna",
@@ -955,7 +992,8 @@
       "org": "sanskrit-lexicon",
       "name": "KNA",
       "url": "https://github.com/sanskrit-lexicon/KNA",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:kosha",
@@ -964,7 +1002,8 @@
       "org": "gasyoun",
       "name": "kosha",
       "url": "https://github.com/gasyoun/kosha",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:kow",
@@ -973,7 +1012,8 @@
       "org": "sanskrit-lexicon",
       "name": "KOW",
       "url": "https://github.com/sanskrit-lexicon/KOW",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:krm",
@@ -982,7 +1022,8 @@
       "org": "sanskrit-lexicon",
       "name": "KRM",
       "url": "https://github.com/sanskrit-lexicon/KRM",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:lrv",
@@ -991,7 +1032,8 @@
       "org": "sanskrit-lexicon",
       "name": "LRV",
       "url": "https://github.com/sanskrit-lexicon/LRV",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:mci",
@@ -1000,7 +1042,8 @@
       "org": "sanskrit-lexicon",
       "name": "MCI",
       "url": "https://github.com/sanskrit-lexicon/MCI",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:md",
@@ -1009,7 +1052,8 @@
       "org": "sanskrit-lexicon",
       "name": "MD",
       "url": "https://github.com/sanskrit-lexicon/MD",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:mw72",
@@ -1018,7 +1062,8 @@
       "org": "sanskrit-lexicon",
       "name": "MW72",
       "url": "https://github.com/sanskrit-lexicon/MW72",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:mwinflect",
@@ -1027,7 +1072,8 @@
       "org": "sanskrit-lexicon",
       "name": "MWinflect",
       "url": "https://github.com/sanskrit-lexicon/MWinflect",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:mws",
@@ -1036,7 +1082,8 @@
       "org": "sanskrit-lexicon",
       "name": "MWS",
       "url": "https://github.com/sanskrit-lexicon/MWS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:ors-faq",
@@ -1045,7 +1092,8 @@
       "org": "gasyoun",
       "name": "ORS-FAQ",
       "url": "https://github.com/gasyoun/ORS-FAQ",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Образование и выручка"
     },
     {
       "id": "repo:pui",
@@ -1054,7 +1102,8 @@
       "org": "sanskrit-lexicon",
       "name": "PUI",
       "url": "https://github.com/sanskrit-lexicon/PUI",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:pwg",
@@ -1063,7 +1112,8 @@
       "org": "sanskrit-lexicon",
       "name": "PWG",
       "url": "https://github.com/sanskrit-lexicon/PWG",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:pwk",
@@ -1072,7 +1122,8 @@
       "org": "sanskrit-lexicon",
       "name": "PWK",
       "url": "https://github.com/sanskrit-lexicon/PWK",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:retrieval-based-voice-conversion-webui",
@@ -1081,7 +1132,8 @@
       "org": "gasyoun",
       "name": "Retrieval-based-Voice-Conversion-WebUI",
       "url": "https://github.com/gasyoun/Retrieval-based-Voice-Conversion-WebUI",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:russianramayana",
@@ -1090,7 +1142,8 @@
       "org": "gasyoun",
       "name": "RussianRamayana",
       "url": "https://github.com/gasyoun/RussianRamayana",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:ruwritingstyles",
@@ -1099,7 +1152,8 @@
       "org": "gasyoun",
       "name": "RuWritingStyles",
       "url": "https://github.com/gasyoun/RuWritingStyles",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:samudramanthanam",
@@ -1108,7 +1162,8 @@
       "org": "gasyoun",
       "name": "SamudraManthanam",
       "url": "https://github.com/gasyoun/SamudraManthanam",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:sanskrit-lexicon.github.io",
@@ -1117,7 +1172,8 @@
       "org": "sanskrit-lexicon",
       "name": "sanskrit-lexicon.github.io",
       "url": "https://github.com/sanskrit-lexicon/sanskrit-lexicon.github.io",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Dictionary tooling, pipelines и interfaces"
     },
     {
       "id": "repo:sanskrit-util",
@@ -1126,7 +1182,8 @@
       "org": "sanskrit-lexicon",
       "name": "sanskrit-util",
       "url": "https://github.com/sanskrit-lexicon/sanskrit-util",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "repo:sanskritgrammar",
@@ -1135,7 +1192,8 @@
       "org": "gasyoun",
       "name": "SanskritGrammar",
       "url": "https://github.com/gasyoun/SanskritGrammar",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:sanskritkaraoke",
@@ -1144,7 +1202,8 @@
       "org": "gasyoun",
       "name": "SanskritKaraoke",
       "url": "https://github.com/gasyoun/SanskritKaraoke",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Образование и выручка"
     },
     {
       "id": "repo:sanskritlexicography",
@@ -1153,7 +1212,8 @@
       "org": "gasyoun",
       "name": "SanskritLexicography",
       "url": "https://github.com/gasyoun/SanskritLexicography",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:sanskritrussian",
@@ -1162,7 +1222,8 @@
       "org": "gasyoun",
       "name": "SanskritRussian",
       "url": "https://github.com/gasyoun/SanskritRussian",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:sanskritspellcheck",
@@ -1171,7 +1232,8 @@
       "org": "drdhaval2785",
       "name": "SanskritSpellCheck",
       "url": "https://github.com/drdhaval2785/SanskritSpellCheck",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:sch",
@@ -1180,7 +1242,8 @@
       "org": "sanskrit-lexicon",
       "name": "SCH",
       "url": "https://github.com/sanskrit-lexicon/SCH",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:shs",
@@ -1189,7 +1252,8 @@
       "org": "sanskrit-lexicon",
       "name": "SHS",
       "url": "https://github.com/sanskrit-lexicon/SHS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:skd",
@@ -1198,7 +1262,8 @@
       "org": "sanskrit-lexicon",
       "name": "SKD",
       "url": "https://github.com/sanskrit-lexicon/SKD",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:socks5-vps",
@@ -1207,7 +1272,8 @@
       "org": "gasyoun",
       "name": "SOCKS5-VPS",
       "url": "https://github.com/gasyoun/SOCKS5-VPS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "DH, corpora и инфраструктура"
     },
     {
       "id": "repo:stc",
@@ -1216,7 +1282,8 @@
       "org": "sanskrit-lexicon",
       "name": "STC",
       "url": "https://github.com/sanskrit-lexicon/STC",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:systema-sanscriticum",
@@ -1225,7 +1292,8 @@
       "org": "gasyoun",
       "name": "Systema-Sanscriticum",
       "url": "https://github.com/gasyoun/Systema-Sanscriticum",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Образование и выручка"
     },
     {
       "id": "repo:vcp",
@@ -1234,7 +1302,8 @@
       "org": "sanskrit-lexicon",
       "name": "VCP",
       "url": "https://github.com/sanskrit-lexicon/VCP",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:vei",
@@ -1243,7 +1312,8 @@
       "org": "sanskrit-lexicon",
       "name": "VEI",
       "url": "https://github.com/sanskrit-lexicon/VEI",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:visualdcs",
@@ -1252,7 +1322,8 @@
       "org": "gasyoun",
       "name": "VisualDCS",
       "url": "https://github.com/gasyoun/VisualDCS",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:whitneyroots",
@@ -1261,7 +1332,8 @@
       "org": "gasyoun",
       "name": "WhitneyRoots",
       "url": "https://github.com/gasyoun/WhitneyRoots",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Исследования и данные"
     },
     {
       "id": "repo:wil",
@@ -1270,7 +1342,8 @@
       "org": "sanskrit-lexicon",
       "name": "Wil",
       "url": "https://github.com/sanskrit-lexicon/Wil",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "CDSL dictionaries"
     },
     {
       "id": "repo:zettelkastenwiki",
@@ -1279,7 +1352,8 @@
       "org": "gasyoun",
       "name": "ZettelkastenWiki",
       "url": "https://github.com/gasyoun/ZettelkastenWiki",
-      "temperature": "structural"
+      "temperature": "structural",
+      "programme_ru": "Управление и общие движки"
     },
     {
       "id": "stage:agents",
@@ -1418,7 +1492,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1441,7 +1515,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1463,7 +1537,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1489,7 +1563,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1516,7 +1590,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1543,7 +1617,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1570,7 +1644,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1600,7 +1674,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1623,7 +1697,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1649,7 +1723,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1676,7 +1750,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1703,7 +1777,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1733,7 +1807,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1760,7 +1834,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1787,7 +1861,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1814,7 +1888,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1844,7 +1918,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1867,7 +1941,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1889,7 +1963,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1915,7 +1989,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1942,7 +2016,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -3540,7 +3614,7 @@
       "asset_ru": "canonical CDSL source texts (v02/<dict>/<dict>.txt)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md CDSL spine (внутренний Uprava)",
         "visibility": "internal"
@@ -3554,7 +3628,7 @@
       "asset_ru": "generate_dict.sh + updateByLine.py build/XML-validation pipeline",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md correction workflow (внутренний Uprava)",
         "visibility": "internal"
@@ -3568,7 +3642,7 @@
       "asset_ru": "maintainer corrections (Jim Funderburk pattern)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
         "visibility": "internal"
@@ -3582,7 +3656,7 @@
       "asset_ru": "audit-trail change files for applied corrections",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
         "visibility": "internal"
@@ -3596,7 +3670,7 @@
       "asset_ru": "data/derived/correction_loci.tsv (39,540 locus-resolved records)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-corrections PR #291; consumer build queued (H294) (внутренний Uprava)",
         "visibility": "internal"
@@ -3610,7 +3684,7 @@
       "asset_ru": "per-dict XML/SQLite for the PHP web frontend",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
         "visibility": "internal"
@@ -3624,7 +3698,7 @@
       "asset_ru": "dict data for the search API",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
         "visibility": "internal"
@@ -3638,7 +3712,7 @@
       "asset_ru": "CDSL dictionaries packaged as offline Flutter app",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-app/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3652,7 +3726,7 @@
       "asset_ru": "SLP1 source text for Devanagari round-trip",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md steps 2-7 (внутренний Uprava)",
         "visibility": "internal"
@@ -3666,7 +3740,7 @@
       "asset_ru": "Devanagari-tag round-trip diffs back to source",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md (to_devanagari.py / to_slp1.py / diff) (внутренний Uprava)",
         "visibility": "internal"
@@ -3680,7 +3754,7 @@
       "asset_ru": "MW-derived CDSL headwords keying paradigm tables",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3694,7 +3768,7 @@
       "asset_ru": "huet_mw_map_data.py root crosswalk (678 entries)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3708,7 +3782,7 @@
       "asset_ru": "all dict source texts for the cross-dict headword atlas",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
         "visibility": "internal"
@@ -3722,7 +3796,7 @@
       "asset_ru": "dict body texts for body-grounded triage",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
         "visibility": "internal"
@@ -3736,7 +3810,7 @@
       "asset_ru": "MW1899 nominal/verb entries",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MWinflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3750,7 +3824,7 @@
       "asset_ru": "full MW inflection tables for form→lemma lookup",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MWinflect/README.md claim; kosha currently uses vidyut instead (внутренний Uprava)",
         "visibility": "internal"
@@ -3764,7 +3838,7 @@
       "asset_ru": "mw_etymology.tsv → crosswalk/mw_derivations.json (620 roots)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: WhitneyRoots PR #22 (внутренний Uprava)",
         "visibility": "internal"
@@ -3778,7 +3852,7 @@
       "asset_ru": "etymology_stats → src/data/etymology-oracle.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas PR #178 (внутренний Uprava)",
         "visibility": "internal"
@@ -3792,7 +3866,7 @@
       "asset_ru": "TEI/OntoLex-Lemon/FrAC export modelling ownership",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas docs/TEI_ONTOLEX_MIGRATION.md pointer (H271) (внутренний Uprava)",
         "visibility": "internal"
@@ -3806,7 +3880,7 @@
       "asset_ru": "hand-synced forked basicadjust.php/basicdisplay.php",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-fork-sync-check skill (внутренний Uprava)",
         "visibility": "internal"
@@ -3820,7 +3894,7 @@
       "asset_ru": "src/data/atlas-extract.json (OBS-R/OBS-C figures)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H278; csl-atlas data/obs/* (внутренний Uprava)",
         "visibility": "internal"
@@ -3834,7 +3908,7 @@
       "asset_ru": "citation graph + L2 cladogram → citation-sources.json/cladogram.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H279; csl-guides PR #94 (внутренний Uprava)",
         "visibility": "internal"
@@ -3848,7 +3922,7 @@
       "asset_ru": "top-2,000 lemma_frequency excerpt → src/data/corpus-frequency.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-corpus-frequency.mjs (внутренний Uprava)",
         "visibility": "internal"
@@ -3862,7 +3936,7 @@
       "asset_ru": "mw_heritage_crosswalk aggregates → src/data/heritage-coverage.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-heritage-coverage.mjs (внутренний Uprava)",
         "visibility": "internal"
@@ -3876,7 +3950,7 @@
       "asset_ru": "each newsletter edition doubles as a blog post",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-newsletter/CLAUDE.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3890,7 +3964,7 @@
       "asset_ru": "30-day org commits/issues harvested via gh",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-newsletter scripts/draft-newsletter.py (внутренний Uprava)",
         "visibility": "internal"
@@ -3904,7 +3978,7 @@
       "asset_ru": "committed rendered HTML reports from source repos",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: sanskrit-lexicon.github.io/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3918,7 +3992,7 @@
       "asset_ru": "front-matter scans OCR'd into GRA/prefaces/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; GRA prefaces (внутренний Uprava)",
         "visibility": "internal"
@@ -3932,7 +4006,7 @@
       "asset_ru": "front-matter scans OCR'd into MD/prefaces/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; MD prefaces (внутренний Uprava)",
         "visibility": "internal"
@@ -3946,7 +4020,7 @@
       "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
         "visibility": "internal"
@@ -3960,7 +4034,7 @@
       "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
         "visibility": "internal"
@@ -3974,7 +4048,7 @@
       "asset_ru": "canonical CONTRIBUTING standard bootstrapped org-wide",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-contributing-all skill (внутренний Uprava)",
         "visibility": "internal"
@@ -3988,7 +4062,7 @@
       "asset_ru": "published Cologne workflow skills (Codex counterpart of ~/.claude/commands)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: cologne-skills/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4002,7 +4076,7 @@
       "asset_ru": "tamil SQLite corpus (mwd+cap+otl, 321,620 entries) fold",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-santam docs/ROADMAP_2026_2027.md Wave 4 (внутренний Uprava)",
         "visibility": "internal"
@@ -4016,7 +4090,7 @@
       "asset_ru": "org-wide repo metrics (manifest.json)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-observatory dashboard (внутренний Uprava)",
         "visibility": "internal"
@@ -4030,7 +4104,7 @@
       "asset_ru": "correction_events_release.csv (50,953 events)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: pending Zenodo DOI re-mint (внутренний Uprava)",
         "visibility": "internal"
@@ -4044,7 +4118,7 @@
       "asset_ru": "upstream DCS corpus data (CoNLL-U)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4058,7 +4132,7 @@
       "asset_ru": "data/frequency/lemma_frequency.tsv (83,277 rows, M9 join)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha build_frequency_layer.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4072,7 +4146,7 @@
       "asset_ru": "frequency-first pwg_ru worklist ordering",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_pwg_freq_order.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4086,7 +4160,7 @@
       "asset_ru": "dcs_ppp_verified.tsv (5,181 corpus-attested PPP forms)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: WhitneyRoots scripts/build_decisions_doc.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4100,7 +4174,7 @@
       "asset_ru": "citation registers",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4114,7 +4188,7 @@
       "asset_ru": "DCS-2026 lemmas.csv → wf.txt refresh + dcs_cdsl_xref.tsv",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-apidev simple-search/wf1 + dcs_xref (внутренний Uprava)",
         "visibility": "internal"
@@ -4128,7 +4202,7 @@
       "asset_ru": "DCS morphology feed for atlas mining",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4142,7 +4216,7 @@
       "asset_ru": "GPU morphology/lemma runs",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas #89/#92 (внутренний Uprava)",
         "visibility": "internal"
@@ -4156,7 +4230,7 @@
       "asset_ru": "akshara/varna/conjunct frequency CSVs (Fonetika regen-2026)",
       "status": "unverified",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS Fonetika row (downstream named, wiring unconfirmed) (внутренний Uprava)",
         "visibility": "internal"
@@ -4170,7 +4244,7 @@
       "asset_ru": "varga-series-diachrony aggregates → GasunsDhatu 2026 §2.6",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: VisualDCS derived-data/Fonetika/varga-series-diachrony (внутренний Uprava)",
         "visibility": "internal"
@@ -4184,7 +4258,7 @@
       "asset_ru": "archive.sqlite parallels → data/crosstext/archive_parallels.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: CommentaryStrategies crosstext_archive_parallels.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4198,7 +4272,7 @@
       "asset_ru": "subhashita verse feed (10 curated anuṣṭubhs)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/import_subhashita.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4212,7 +4286,7 @@
       "asset_ru": "indische_sprueche.jsonl (7,537 sayings mirror)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: VisualDCS export_subhashita_jsonl.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4226,7 +4300,7 @@
       "asset_ru": "4-layer accented Rigveda export → non-derived/vedaweb/",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H096; host down per SERVER_OUTAGES.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4240,7 +4314,7 @@
       "asset_ru": "gate dicts + verse-aligned corpus_builder JSONL → L0/TMX + name glossaries",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_src.py + build_l0.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4254,7 +4328,7 @@
       "asset_ru": "samskrtam.ru /z/ verb-root deep links (static root→id table)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: buhler-sanskrit-book PR #12 (внутренний Uprava)",
         "visibility": "internal"
@@ -4268,7 +4342,7 @@
       "asset_ru": "corpus_lexicon.jsonl → 3-layer Sa→Ru glossary",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritRussian README + RussianTranslation/src pipeline (внутренний Uprava)",
         "visibility": "internal"
@@ -4282,35 +4356,35 @@
       "asset_ru": "form→lemma maps for glossary rollup",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_dcs_maps (внутренний Uprava)",
         "visibility": "internal"
       }
     },
     {
-      "id": "e:dep-vidyut-vendors-sanskritrussian",
-      "source": "ext:vidyut",
-      "target": "repo:sanskritrussian",
+      "id": "e:dep-sanskritrussian-vendors-vidyut",
+      "source": "repo:sanskritrussian",
+      "target": "ext:vidyut",
       "kind": "vendors",
       "asset_ru": "kosha fallback lemmatization",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: build_vidyut_fallback (внутренний Uprava)",
         "visibility": "internal"
       }
     },
     {
-      "id": "e:dep-vidyut-vendors-kosha",
-      "source": "ext:vidyut",
-      "target": "repo:kosha",
+      "id": "e:dep-kosha-vendors-vidyut",
+      "source": "repo:kosha",
+      "target": "ext:vidyut",
       "kind": "vendors",
       "asset_ru": "inflection/lemmatization engine (dual-engine E1)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha E1 report v0.10.0 (внутренний Uprava)",
         "visibility": "internal"
@@ -4324,7 +4398,7 @@
       "asset_ru": "corpus-aligned RU glosses baked into verses/data/*.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/build_glosses.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4338,7 +4412,7 @@
       "asset_ru": "root-layer RU glosses ↔ Whitney/mw_roots crosswalk",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritRussian row (potential downstream) (внутренний Uprava)",
         "visibility": "internal"
@@ -4352,7 +4426,7 @@
       "asset_ru": "darkone23 mirror → mw_heritage_crosswalk.tsv (185,803 MW entries)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: HeadwordLists/HERITAGE_MIRROR_INVENTORY.md (H099) (внутренний Uprava)",
         "visibility": "internal"
@@ -4366,7 +4440,7 @@
       "asset_ru": "union_headwords + mw_roots + mw_etymology in data-v0.1.0 release",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (внутренний Uprava)",
         "visibility": "internal"
@@ -4380,7 +4454,7 @@
       "asset_ru": "HeadwordLists/union/union_headwords.tsv attestation gate",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #13 (union_attestation.py) (внутренний Uprava)",
         "visibility": "internal"
@@ -4394,7 +4468,7 @@
       "asset_ru": "nochange/do_not_file_suppress.txt (2,297 deliberate non-standard spellings)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas PR #188 (внутренний Uprava)",
         "visibility": "internal"
@@ -4408,7 +4482,7 @@
       "asset_ru": "ortho_drift/*_reform_map.tsv (de 15,685 / ru 7,709) for gloss search normalization",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4422,7 +4496,7 @@
       "asset_ru": "ortho-drift census → /tools/ortho-drift page (PH5 ORTHO-CLOCK)",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H273 agenda §5d (внутренний Uprava)",
         "visibility": "internal"
@@ -4436,7 +4510,7 @@
       "asset_ru": "corpustei plaintext (6 sections) for meter QA + typo checking",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #24 (local-only, CC BY-NC-SA) (внутренний Uprava)",
         "visibility": "internal"
@@ -4450,7 +4524,7 @@
       "asset_ru": "in-corpus e-text typo reports upstream",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: GRETIL_TEXT_TYPOS.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4464,7 +4538,7 @@
       "asset_ru": "DCS×Heritage alignment (130,270 sentences)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready); no LICENSE upstream (внутренний Uprava)",
         "visibility": "internal"
@@ -4478,7 +4552,7 @@
       "asset_ru": "Sundarakāṇḍa gold kāraka treebank",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready) (внутренний Uprava)",
         "visibility": "internal"
@@ -4492,7 +4566,7 @@
       "asset_ru": "canonical IAST⇄SLP1⇄Devanagari transcoders (Py+JS)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
         "visibility": "internal"
@@ -4506,7 +4580,7 @@
       "asset_ru": "original transcoder donor code",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
         "visibility": "internal"
@@ -4520,7 +4594,7 @@
       "asset_ru": "vendored JS transcoder v0.4.0",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (H280) (внутренний Uprava)",
         "visibility": "internal"
@@ -4534,7 +4608,7 @@
       "asset_ru": "static-site generator engine (extracted from ors_faq/publish.py)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ZettelkastenWiki/CLAUDE.md (Wave 2 parity gate) (внутренний Uprava)",
         "visibility": "internal"
@@ -4548,7 +4622,7 @@
       "asset_ru": "published static FAQ site + bot",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ORS-FAQ/CLAUDE.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4562,7 +4636,7 @@
       "asset_ru": "source-archive upstream + docx→mdx/rstTable book pipeline",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritGrammar row; SHARED_CODE §15 (внутренний Uprava)",
         "visibility": "internal"
@@ -4576,7 +4650,7 @@
       "asset_ru": "per-lemma static dictionary cards",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: TODO(kosha) marker in Dictionary.tsx (внутренний Uprava)",
         "visibility": "internal"
@@ -4590,7 +4664,7 @@
       "asset_ru": "data-v* releases: canonical derived-dataset serving tier",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (D-HUB-1..8) (внутренний Uprava)",
         "visibility": "internal"
@@ -4604,7 +4678,7 @@
       "asset_ru": "voice-conversion audio tooling for karaoke recordings",
       "status": "unverified",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ROADMAP_ALL_REPOS_2026H2 P1 grouping; no artifact edge yet (внутренний Uprava)",
         "visibility": "internal"
@@ -4618,7 +4692,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
         "visibility": "internal"
@@ -4632,7 +4706,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (Amarakośa in CDSL format)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4646,7 +4720,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
         "visibility": "internal"
@@ -4660,7 +4734,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (csl-orig/v02/ap90/ap90.txt)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4674,7 +4748,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4688,7 +4762,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4702,7 +4776,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4716,7 +4790,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4730,7 +4804,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4744,7 +4818,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4758,7 +4832,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4772,7 +4846,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (Frish reader, Cologne 2015)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4786,7 +4860,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../graxml/gra.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4800,7 +4874,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4814,7 +4888,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
         "visibility": "internal"
@@ -4828,7 +4902,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
         "visibility": "internal"
@@ -4842,7 +4916,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4856,7 +4930,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4870,7 +4944,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4884,7 +4958,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4898,7 +4972,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4912,7 +4986,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../mwsxml/mws.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4926,7 +5000,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4940,7 +5014,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../pwgxml/pwg.xml); source of the RU/EN kit",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4954,7 +5028,7 @@
       "asset_ru": "source dictionary text for the pwg_ru / pwg_en translation kit",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation kit (5-layer merged source) (внутренний Uprava)",
         "visibility": "internal"
@@ -4968,7 +5042,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../pwkxml/pwk.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4982,7 +5056,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4996,7 +5070,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5010,7 +5084,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5024,7 +5098,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5038,7 +5112,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5052,7 +5126,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-07-11",
+      "as_of": "2026-07-12",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
