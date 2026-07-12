@@ -13,6 +13,7 @@ npm-debug.log*
 
 # Local Claude Code machine state (not repo content)
 /.claude/
+.claude/settings.local.json
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
 **/errata.candidates.yml
@@ -121,3 +122,11 @@ GasunsDhatu_2014/revision-2026/panini_cache/
 # consulted locally for the A54 excerpts (papers/Progulki_2018_Sanskrit_Renou.mdx);
 # never commit the PDF itself
 TolchelnikovTalmud_2026/papers/2018_zalizniak_progulki_po_evrope.pdf
+# Raw source materials dropped loose in papers/ or in an unconverted conference-archive
+# folder — same policy as the named paper subfolders above: track only a derived .mdx,
+# never raw docx/pptx/PDF/zip/XML sources.
+TolchelnikovTalmud_2026/papers/7.pdf
+TolchelnikovTalmud_2026/papers/Zalizniak_Tom1_24.06.26.pdf
+TolchelnikovTalmud_2026/papers/duden_deutsches_universalworterbuch.pdf
+TolchelnikovTalmud_2026/papers/Gasuns-Conferences/
+**/__MACOSX/

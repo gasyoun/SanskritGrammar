@@ -1,0 +1,60 @@
+1975-2026 ДОДАТЬ
++Исходя из всех наших разысканий на тему Зализняка, в частности, C:\Users\user\Documents\GitHub\SanskritGrammar\ZALIZNYAK_1975_1978_2004_COMPARISON.md, составь план статьи для печати в журнал на русском языке для "Indo-Iranian Languages" https://indo-iranian.org/iil/article/view/20/13  is a journal dedicated to the languages of the linguistic branch of the same name. The main topics of the journal include phonetic, grammatical, lexical, areal, and other studies on Indo-Iranian languages. Скелет статьи на основе https://gasyoun.github.io/SanskritGrammar/grammars/TolchelnikovTalmud_2026/papers/Dubyanskiye_2025_Gasuns
+которая послужит ответом на статью Куликова C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Kulikov, а статья Куликова является ответом на статью Десницкой C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Desnickaya_2020.
+Места, которые мною выделены желтым цветом, особо важны в статьи, учти их у Куликова и Десницкой. Выводы Куликова одобряем и можем укрепить. Поведение и выводы Десницкой неверны, важно показать не только ее несостоятельность в вопросах санскритских чередований, но и в вопросах санскритской педагогики (= Увы, приходится признать (= О несуществующем учебнике Бюлера, нерожденном еще О. И. Кнауэре, о влиянии ненаписанного Очерка Зализняка на студенческую работу Кочергиной и прочих кунсткамерах от преподавателя с немноголетним педагогическим стажем санскритской грамматики.), что, как было точно подмечено одним из участников обсуждения статьи Е. А. Десницкой в социальных сетях, «статья — симптом той болезни, которую она пытается диагностировать».). Чередования - это первые сутры Панини, это матчасть. Если она сама в них не разобралась, как она философ, может судить про ценность и или понятность и полноту работы лингивиста, да к тому не рядового, а основоположника целого движения.
+Изначально заданная Зализняком в 1975 тема была развита в 2014 учеником Зализняка Гасунсом, а потом ученик Гасунса Толчельников в 2023 подхватил, три года развивал и в 2027 теперь Гасунс подводит промежуточные итоги.
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Gasuns_2021
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Fortunatovskiye_2023
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Dubyanskiye_2024
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Auroville_Feb2024
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\KatmanduWSC_2025
+Помимо Казанского, Куликого, Гасунса и Толчельника полноценно вклад Зализняка понимал Крылов и Барулин.
+C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers\Krylov_2025
+Еще потребуется добавить стенограмму доклада Куликова, а особо важно то, что сказано после доклада, а не только сами доклады и статьи Куликова.
+
+Также отдельно сделай списочно:
+тезисно Зализняк 1975
+тезисно Зализняк 1978
+тезисно Зализняк 2004
+тезисно Десницкая
+тезисно Куликов
+тезисно Крылов
+тезисно Барулин
+тезисно Толчельников
+тезисно Гасунс про преподавание санскрита
+
+Составь roadmap работы над полемической статьей. Острота языка должна быть как у Куликова - он не унижает собеседника, но делает такие замечания, что можно сквозь землю провалиться. Ask me questions.
+
+https://vk.com/wall-89658969_9919
+
+======
+
++Reproducibility of a fresh machine is ready? Чтобы все данные и настройки сохранились
+
++Какой онлайн-марафон для тех, кто хотят стать студентами санскрита, можно разработать? Изучи наши телеграм переписки, ORS-FAQ, Systema-Sanscriticum. Задавай мне вопросы
+
++Чем https://getcourse.ru отличается от C:\Users\user\Documents\GitHub\Systema-Sanscriticum ? Какие функции надо додать C:\Users\user\Documents\GitHub\Systema-Sanscriticum, обнови архитектурный roadmap. Задавай мне вопросы
+
+
+implement in /fruit
+
+Dependency status (PR #55 already merged, confirmed earlier):
+
+Handoff	Dependency	Status	Ready to launch?
+H382	Soft: after PR #55 merge	PR #55 merged ✅	Yes
+H384	Independent of H378/H382; before H386	No blockers	Yes
+H385	After PR #55 + preferably after H378, H384, H386	PR #55 merged, but H378 still 🟡 Minted (not executed), H386 not started	No — wait for H378/H384/H386
+H386	LAST in program: after PR #55, H378 (Ch.3), H384 (litreview), H382 (data), H354 (bibliography)	H378 still 🟡 Minted (unexecuted)	No — wait for H378/H384/H382/H354
+
+=======
+
++Which active repos still lack and deserve a detailed manual? Writ a Fable handoff for each. Ask me questions
+
+Write a deep manual for maintainer and one for user for each repo in Russian
+
+C:\Users\user\Documents\GitHub\Uprava\FRUIT_LAUNCH_STATUS_08.07.26.md СМОТРИ СЮДА
+
++What is going on at C:\Users\user\Documents\GitHub\SanskritLexicography ? Write several manuals. For different auditories. Ask me questions. 
+
+
++Примени skill Docusaurus C:\Users\user\Documents\GitHub\SanskritGrammar\TolchelnikovTalmud_2026\papers чтобы можно было сравнить с C:\Users\user\Documents\GitHub\SanskritGrammar\ZALIZNYAK_1975_1978_2004_COMPARISON.md
