@@ -102,6 +102,14 @@ as "-syá по единому правилу" while the seṭ form **-iṣya is 
 conditioning is the seṭ/aniṭ lexical class of **S2**. Two `@DECIDE` open (see GTD): generalise the
 claim-verification layer to the other grammars? and a source-conflict tie-break rule.
 
+**S1 analysis output — "grammar claims the corpus does not confirm" (paper A60, H773, 12-07-2026).**
+The `OVERSTATED`/`FALSE` subset of the claim register is itself a corpus-adjudicated finding with no
+strong ACL precedent (it fills the documented "no paper treats seṭ/aniṭ as a corpus-adjudicated
+target" non-finding). Seeded 12-07-2026 (Opus 4.8 `claude-opus-4-8`, H773 Q0 + HK-4): method,
+framing, related-work, and the one verified worked example (future stem) in
+[`TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/OUTLINE_grammar-claims-corpus-denies_A60.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/OUTLINE_grammar-claims-corpus-denies_A60.md).
+Central table completion is gated on the H768 full harvest + the cross-grammar extension.
+
 > ⚠ **The load-bearing caveat.** This repo carries the **1923 Stockholm reprint** of Bühler as a
 > text proxy for the **1878 first edition** — and the [Concordance page itself flags](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx)
 > that this has *not* been verified against the 1878 print. Knauer is **1908**, i.e. *earlier than
