@@ -149,9 +149,14 @@ function edgeKey(e) {
   return `${e.source}|${e.target}`;
 }
 
-export default function AtlasValueChain({ bundle }) {
+export default function AtlasValueChain({ bundle, selectedId, onSelect }) {
   const [mode, setMode] = useState('all');
-  const [selectedNode, setSelectedNode] = useState(null);
+  // Controlled mode (inside AtlasUnified, slot B6): selection lives in the
+  // ?node= query param via onSelect. Standalone page: internal state.
+  const [internalSelected, setInternalSelected] = useState(null);
+  const controlled = typeof onSelect === 'function';
+  const selectedNode = controlled ? selectedId : internalSelected;
+  const setSelectedNode = controlled ? onSelect : setInternalSelected;
 
   const model = useMemo(() => {
     const view = bundle.views.find((v) => v.id === VIEW_ID);
