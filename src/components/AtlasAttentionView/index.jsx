@@ -4,7 +4,7 @@
 // E/Z/P/K scores, gate types, evidence and anchored public repositories.
 // Interaction: verdict/gate filters + sort (toolbar with arrow-key roving
 // focus), native <details> cards (keyboard- and touch-operable by default).
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useId, useMemo, useState } from 'react';
 import styles from './styles.module.css';
 
 const VERDICTS = [
@@ -242,7 +242,7 @@ export default function AtlasAttentionView({ bundle }) {
   const [verdictFilter, setVerdictFilter] = useState('all');
   const [gateFilter, setGateFilter] = useState('all');
   const [sort, setSort] = useState('k');
-  const headingId = useRef(`attn-${Math.round(Math.random() * 1e6)}`).current;
+  const headingId = useId();
 
   const { theses, reposByThesis, asOfDates, verdictCounts, gateCounts } = useMemo(() => {
     const nodes = bundle.nodes || [];
