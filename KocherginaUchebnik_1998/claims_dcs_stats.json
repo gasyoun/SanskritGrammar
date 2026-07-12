@@ -1,0 +1,40 @@
+{
+  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/src/DCS-data-2021",
+  "_note": "types = distinct forms (15.csv/12.csv); tokens = running-text counts (timws.csv)",
+  "total_verbal_tokens": 781618,
+  "HK1_aorist": {
+    "distinct_forms": 690,
+    "tokens": 2452,
+    "pct_of_verbal": 0.31,
+    "cf_present_tokens": 157003
+  },
+  "HK3_gerundive": {
+    "distinct_forms": 1799,
+    "tokens": 23942,
+    "pct_of_verbal": 3.06,
+    "suffix_split_types": {
+      "-tavya": 523,
+      "-ya": 1046,
+      "-anīya": 230
+    },
+    "cf_ppp_tokens": 233080,
+    "cf_ppp_pct": 29.82,
+    "cf_ppp_distinct_forms": 5083
+  },
+  "HK4_future": {
+    "distinct_forms": 2618,
+    "tokens": 18004,
+    "pct_of_verbal": 2.3,
+    "allomorphy_types": {
+      "-iṣya": 1487,
+      "-sya": 652,
+      "-ṣya": 479
+    },
+    "allomorphy_pct": {
+      "-iṣya": 56.8,
+      "-sya": 24.9,
+      "-ṣya": 18.3
+    },
+    "sec_iṣya_share": 56.8
+  }
+}

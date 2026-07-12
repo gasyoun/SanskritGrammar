@@ -1,0 +1,183 @@
+# claims.yml — verifiable-assertion register for KocherginaUchebnik_1998
+#
+# GENERATED target: CLAIMS_VERIFIED.md (via scripts/build_claims.py) — never edit that file.
+#
+# DISTINCT from errata.yml: errata catalogues typos in the print; this register catalogues
+# *falsifiable grammatical assertions* in Kochergina's Учебник санскрита (1998) and grades each
+# on TWO axes (H768):
+#   verdict_fact     — is the assertion true vs. corpus + reference grammars, with the actual number?
+#   verdict_pedagogy — is the *presentation* defensible (ordering, foregrounding, hidden frequency)?
+#
+# Ground truth (triangulation, D2): DCS-2021 corpus statistics (Oliver Hellwig, CC BY, via
+#   ../VisualDCS) reproduced by KocherginaUchebnik_1998/verify_claims_dcs.py; Whitney 1889
+#   (systemic grammatical fact, by §); Tolchelnikov-Talmud 2026 (root morphoclass).
+# When sources disagree: DCS is authority for frequency/attestation, Whitney for systemic fact,
+#   Talmud for root-morphoclass — flag the disagreement, never silently pick (@DECIDE, see handoff).
+#
+# verdict_fact:     TRUE | OVERSTATED | FALSE | UNTESTABLE
+# verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
+# kind:             typology | universality | allomorphy | statistic | rule
+#
+# Entry shape: see the four seed hypotheses (HK-*) below.
+
+work: "Kochergina, Учебник санскрита (Sanskrit textbook), 1998"
+
+# P3 methodology axis — synthesis of Kochergina's presentation principles (rendered into
+# CLAIMS_VERIFIED.md by build_claims.py). Are her choices of ordering / foregrounding / hedging
+# defensible, on the evidence of the claims below?
+synthesis: >-
+  On the sample verified so far, Kochergina's factual accuracy is high — five of seven claims are
+  TRUE against the DCS corpus and Whitney, and where she hedges ("лишь от части корней" for the
+  aorist) the hedge is if anything conservative. Her presentation principle is essentially the
+  *paradigm-completeness* tradition of the Petersburg/Soviet school: give every form its rule and
+  its exceptions, ordered by the grammatical system (present → future → aorist → participles), and
+  trust the learner to drill the tables. That principle is well-suited to accuracy and to reading
+  the classical language, and it explains the two genuinely good cases here: the aorist (HK-1) and
+  the indefinite pronoun (HK-2) are presented at exactly the right altitude, with the diachronic
+  and sandhi caveats a learner needs.
+
+
+  Where the principle fails is *frequency*. The tradition orders material by systematic regularity,
+  not by how often a form is actually met — so a canonical "base rule" can be foregrounded over the
+  statistically dominant realisation of it. The future stem (HK-4) is the clear case: -syá is taught
+  as the single rule and -ṣya/-iṣya as consonant-stem "варианты", yet in the corpus the seṭ form
+  -iṣya is the *majority* outcome (56.8% of distinct future forms). A learner optimised on "the rule
+  is -sya" will mis-predict the most common case, and the true conditioning (the seṭ/aniṭ lexical
+  class, roadmap spine S2) is never named. This is not a factual error — every surface fact is right
+  — but a *pedagogical* one: the ordering hides the frequency distribution the learner will meet.
+
+
+  Recommendation for the reading-site overlay: keep Kochergina's text intact (it is accurate) but
+  badge the frequency-blind spots (HK-4a/b) with the corpus number, so the learner sees that the
+  "variant" is in fact the norm. The claim register generalises: the pedagogy axis is worth running
+  on any grammar whose ordering predates corpus statistics.
+
+entries:
+
+  - id: HK-1
+    loc: "Занятие XXXVII / mdx line 9616"
+    claim_ru: >-
+      Формы аориста образуются лишь от части корней. В ведийском языке аорист мог
+      употребляться примерно от половины глагольных корней. Постепенно количество
+      корней, употребляемых в формах аориста, уменьшается, и в санскрите аорист
+      встречается редко.
+    kind: statistic
+    falsifiable_as: "aorist share of verbal tokens in DCS + is the Vedic→Classical decline real"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "690 distinct aorist forms; 2,452 aorist tokens = 0.31% of 781,618 verbal tokens (DCS-2021), vs present 157,003 (20.1%)"
+    ref: "Whitney §824 (aorist recessive in classical); DCS verify_claims_dcs.py HK-1"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      A model presentation: Kochergina states *which* part (≈half in Vedic, receding to rare in
+      Classical) and *why* (diachronic loss), matching the corpus (0.31% of verbal tokens). The
+      hedge "лишь от части" is if anything an understatement of how marginal the aorist is in the
+      classical corpus. No frequency hidden.
+
+  - id: HK-2
+    loc: "Занятие XXV / mdx line 6254"
+    claim_ru: >-
+      При склонении неопределенных местоимений изменяется только первая их часть, т.е.
+      вопросительное местоимение; неизменяемые частицы (api, ca, cana, cid) прибавляются к
+      падежной форме с соблюдением правил внешних сандхи.
+    kind: rule
+    falsifiable_as: "does only the ka-stem inflect while cid/cana/api stay invariant, joined by external sandhi"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic: attested paradigm kaścid / kiṃcid / kenacid / kasmiṃścit — k-stem inflects, particle constant; joined by external sandhi (kaḥ+cid→kaścid, kim+cid→kiṃcid)"
+    ref: "Whitney §507 (interrogative + ca/caná/cid/ápi → indefinite); Kochergina's own paradigm mdx 6256-6258"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Correct and stated at the right altitude. The particle is genuinely invariant and the junction
+      is external sandhi; MG's existing kenacid counts in DCS confirm the attested paradigm. Nothing
+      overstated.
+
+  - id: HK-3
+    loc: "Занятие XXV / mdx line 6234"
+    claim_ru: >-
+      Пассивное причастие будущего времени — причастие долженствования (participium necessitatis,
+      pn.) — образуется прибавлением к корню суффиксов -ya, -(i)tavya или -anīya с одинаковым
+      грамматическим значением (пассивность + модальность долженствования + будущее время).
+    kind: typology
+    falsifiable_as: "prevalence of the gerundive among verbal-derived forms + the three-suffix inventory"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "1,799 distinct gerundive forms; 23,942 tokens = 3.06% of verbal (DCS Fut.Pass.Part.). Suffix split by type: -ya 1046 / -tavya 523 / -anīya 230. cf PPP 233,080 tokens (29.82%)"
+    ref: "Whitney §961-966 (gerundive -ya/-tavya/-anīya); DCS verify_claims_dcs.py HK-3"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Formation description and the three-suffix inventory are accurate. Answering MG's "насколько
+      распространено": the gerundive is a real but minor category (3.06% of verbal tokens), and the
+      simple -ya type outnumbers -tavya and -anīya together among distinct forms. Kochergina lists
+      the suffixes without ranking them; a frequency note (-ya dominant) would improve it but nothing
+      is misstated.
+
+  - id: HK-4a
+    loc: "Занятие XVIII / mdx line 4277"
+    claim_ru: >-
+      Основа будущего времени образуется от ВСЕХ глаголов по единому правилу — прибавлением к
+      корню ударяемого суффикса -syá.
+    kind: universality
+    falsifiable_as: "is the future truly formed 'from all verbs by a single rule', or is -syá one of several conditioned outcomes"
+    sources: [dcs, whitney]
+    verdict_fact: OVERSTATED
+    number: "future is productive (18,004 finite fut. tokens, 2,618 distinct forms) but NOT one rule: three conditioned suffixes -sya/-ṣya/-iṣya, and the seṭ form -iṣya is the majority (56.8% of distinct forms) — see HK-4b"
+    ref: "Whitney §931-935 (s-future, seṭ/aniṭ -iṣya vs -sya); DCS verify_claims_dcs.py HK-4"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      "От всех глаголов" is defensible as a productivity/paradigm claim (the future is regularly
+      formable). But "по единому правилу -syá" is overstated: the actual conditioning is the seṭ/aniṭ
+      lexical class (whether a root takes the connecting -i-), not a single suffix. Presenting -syá as
+      THE rule and -ṣya/-iṣya as mere "варианты" inverts corpus reality — see HK-4b. Ties to roadmap
+      spine S2 (seṭ/aniṭ).
+
+  - id: HK-4b
+    loc: "Занятие XVIII / mdx line 4277"
+    claim_ru: >-
+      Корни на согласные могут иметь варианты этого суффикса -ṣya или -iṣya. Суффикс -sya
+      прибавляется к корням на -ā, -ṣya — к корням на другие гласные, -iṣya — к корням на дифтонги
+      или на -ar.
+    kind: allomorphy
+    falsifiable_as: "token+type counts of future stems in -sya / -ṣya / -iṣya in DCS; is -iṣya really a secondary 'variant'"
+    sources: [dcs, whitney]
+    verdict_fact: OVERSTATED
+    number: "distinct future forms (DCS-2021): -iṣya 1,487 (56.8%) · -sya 652 (24.9%) · -ṣya 479 (18.3%). The seṭ form -iṣya is the single most common, not a marginal variant."
+    ref: "Whitney §934-935 (union-vowel i in the s-future); DCS verify_claims_dcs.py HK-4"
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: >-
+      The three suffixes exist and the -ā→-sya rule holds, so the surface facts are right. But calling
+      -ṣya/-iṣya "варианты" of a base -sya buries the corpus fact that -iṣya (seṭ) is the MAJORITY
+      outcome (56.8%). The conditioning Kochergina gives is phonological (root-final sound), whereas the
+      real predictor is the seṭ/aniṭ lexical class — a learner drilled on "-sya is the rule" will
+      mis-predict the most common case.
+
+  - id: HK-5
+    loc: "Занятие XXXVII / mdx line 9655"
+    claim_ru: >-
+      II тип [аориста] — тематический простой аорист. Самый распространенный в санскрите тип
+      аориста. Обычно образуется от корней на согласную.
+    kind: statistic
+    falsifiable_as: "is the thematic (a-)aorist the most frequent of the ~7 aorist types in DCS"
+    sources: [dcs, whitney]
+    verdict_fact: UNTESTABLE
+    number: "DCS timws.csv tags aorist only as Act/Med (codes 10-13, 2,452 tokens), not by the 7 formation types — per-type split needs finer morphology than the 2021 export carries"
+    ref: "Whitney §846-847 (a-aorist common, from roots in consonants)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Consistent with Whitney's account, but the DCS-2021 export does not tag aorists by formation
+      type, so the 'самый распространенный' ranking cannot be confirmed against the corpus here. Flagged
+      UNTESTABLE rather than assumed. Revisit if the DCS-2026 CoNLL-U import adds sub-type tags.
+
+  - id: HK-6
+    loc: "Занятие XXIV / mdx line 5862"
+    claim_ru: >-
+      Пассивные причастия настоящего времени склоняются как основы на -a мужского и среднего рода;
+      причастия женского рода образуются удлинением конечной -a и склоняются как основы на -ā.
+    kind: rule
+    falsifiable_as: "do present passive participles inflect as -a/-ā thematic stems"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: -māna/-yamāna participles are thematic -a stems, f. -ā — standard thematic declension"
+    ref: "Whitney §1043 (present participles), §332ff (a-stems)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Uncontroversial systemic fact; nothing to flag."
