@@ -9,10 +9,11 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useHistory, useLocation } from '@docusaurus/router';
 import AtlasProvenance from '@site/src/components/AtlasProvenance';
+import AtlasAttentionView from '@site/src/components/AtlasAttentionView';
 
 const VIEW_REGISTRY = {
   provenance: AtlasProvenance,
-  // attention: AtlasAttentionView,      — slot B2 (H629)
+  attention: AtlasAttentionView, // slot B2 (H629) — bundle-only, no controlled selection yet
   // reuse: AtlasReuseView,              — slot B3 (H630)
   // 'value-chain': AtlasValueChain,     — slot B4 (H627)
   // dependencies: AtlasDependencies,    — slot B5 (H620)
