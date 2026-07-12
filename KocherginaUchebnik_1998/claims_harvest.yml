@@ -161,116 +161,21 @@ candidates:
     falsifiable_as: "intensives only from monosyllabic consonant-initial roots; rarity in corpus, Whitney §1000ff"
     kochergina_gives_number: false
   # ===== Занятия XXXVII–XL: aorist, precative, injunctive, prefixation, adverbs (9600–end) =====
-  - loc: "Занятие XXXVII / mdx line 9614"
-    claim_ru: "Аорист редко при повествовании, чаще в разговорной речи, диалоге (драмы)."
-    kind: statistic
-    falsifiable_as: "aorist token frequency in narrative vs dialogue/drama registers in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9618"
-    claim_ru: "Аугмент аориста между префиксом и корнем; с mā аугмент утрачивается (значение императива)."
-    kind: rule
-    falsifiable_as: "augment placement in prefixed aorists and augmentless aorist after mā, Whitney §585"
-    kochergina_gives_number: false
   - loc: "Занятие XXXVII / mdx line 9623"
     claim_ru: "I тип корневой аорист — от некоторых корней на -ā и bhū; только Parasmaipada."
     kind: universality
     falsifiable_as: "root aorist Parasmaipada-only, restricted to ā-roots + bhū, Whitney §829ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9667"
-    claim_ru: "Тематический аорист (II тип) — парадигма как у имперфекта VI класса, оба залога."
-    kind: typology
-    falsifiable_as: "thematic aorist endings match class-VI imperfect in both voices, Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9688"
-    claim_ru: "III тип: слабый корень (guṇa для -an/-am/-ar); гласная удвоения i/ī или u/ū."
-    kind: allomorphy
-    falsifiable_as: "reduplication-vowel conditioning in reduplicated aorists, Whitney §856ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9695"
-    claim_ru: "Тематический удвоительный аорист от корней с -p (каузатив): ā→i (jñā→ajijñipa)."
-    kind: rule
-    falsifiable_as: "ā→i in reduplicated aorist from -p causatives in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9734"
-    claim_ru: "Префикс a-(an-) очень продуктивен."
-    kind: statistic
-    falsifiable_as: "a-/an- privative derivatives vs other nominal prefixes in lexicon"
     kochergina_gives_number: false
   - loc: "Занятие XXXVII / mdx line 9736"
     claim_ru: "Не менее трети префиксальных существительных — модель a-+S; из них ~80% абстрактные."
     kind: statistic
     falsifiable_as: "Share of a-prefixed nouns among all prefixed nouns and % abstracts in lexicon"
     kochergina_gives_number: true
-  - loc: "Занятие XXXVII / mdx line 9770"
-    claim_ru: "Существительные с sa- практически не встречаются; прилагательные только sa-+S→Adj."
-    kind: universality
-    falsifiable_as: "sa- prefixed nouns vs adjectives — near-absence of nouns and Adj-only rule in lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 9950"
-    claim_ru: "Сигматический аорист: -s для aniṭ, -iṣ для seṭ (позже распределение нарушается)."
-    kind: allomorphy
-    falsifiable_as: "correlation of -s vs -iṣ aorist suffix with aniṭ/seṭ class, Whitney §878ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 9952"
-    claim_ru: "Формы аориста на -siṣ и на -sa встречаются редко."
-    kind: statistic
-    falsifiable_as: "count -siṣ and -sa aorist forms vs -s/-iṣ in DCS to confirm rarity"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 9956"
-    claim_ru: "-s аорист: P. гласные корня в vṛddhi; Ā. интерконсонантные — в слабой ступени."
-    kind: allomorphy
-    falsifiable_as: "vṛddhi in P vs weak grade in Ā for -s aorist stems, Whitney §883"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 9966"
-    claim_ru: "Перед -s: -n,-m→anusvāra; -s→-t; -ś,-j→-k."
-    kind: allomorphy
-    falsifiable_as: "root-final consonant sandhi before -s in aorist (man→amaṃs, darś→adrākṣ)"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 10007"
-    claim_ru: "Корни на -ā: аорист P. по I типу, Ā. по IV типу с ā→i (dā→adiṣ-)."
-    kind: rule
-    falsifiable_as: "ā-roots root-aorist in P but -s aorist with ā→i in Ā, Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 10044"
-    claim_ru: "VI тип — аорист на -siṣ; от немногих корней на -ā, только Parasmaipada."
-    kind: universality
-    falsifiable_as: "-siṣ aorist Parasmaipada-only, ā-root-restricted, parallel -s forms, Whitney §914"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 10067"
-    claim_ru: "VII тип — аорист на -sa; от немногих корней на -j,-ś,-ṣ,-h; слабая ступень → -kṣa-."
-    kind: rule
-    falsifiable_as: "-sa aorist restricted to -j/-ś/-ṣ/-h roots with zero-grade + kṣa, Whitney §916"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 10128"
-    claim_ru: "dus-+S: сравнительно немногие наименования лиц; основная масса — неодушевлённые."
-    kind: statistic
-    falsifiable_as: "dus- person-nouns vs inanimate-nouns in lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVIII / mdx line 10196"
-    claim_ru: "Редкий префикс ku- образует существительные негативной оценки."
-    kind: statistic
-    falsifiable_as: "ku- prefixed noun lemmas in lexicon to confirm rarity and pejorative sense"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIX / mdx line 10366"
-    claim_ru: "Инъюнктив — архаизм; сохранилась форма 2 л. запрета с mā (= аорист без аугмента)."
-    kind: statistic
-    falsifiable_as: "surviving injunctives near-exclusively 2nd-person prohibitive with mā in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIX / mdx line 10392"
-    claim_ru: "Корни на ā, e, ai, o в прекативе меняют гласные на e."
-    kind: allomorphy
-    falsifiable_as: "ā/e/ai/o → e in precative stems (dā→deyās), Whitney §837"
-    kochergina_gives_number: false
   - loc: "Занятие XXXIX / mdx line 10417"
     claim_ru: "Прекатив Ātmanepada встречается крайне редко."
     kind: statistic
     falsifiable_as: "Ātmanepada precative tokens vs Parasmaipada precative in DCS"
     kochergina_gives_number: false
-  - loc: "Занятие XXXIX / mdx line 10421"
-    claim_ru: "Примерно третья часть глаголов санскрита — префиксальные."
-    kind: statistic
-    falsifiable_as: "share of prefixed verb lemmas among all verb lemmas in lexicon/DCS"
-    kochergina_gives_number: true
   - loc: "Занятие XXXIX / mdx line 10443"
     claim_ru: "В контактном положении к корню всегда ā, ni, pra, parā, sam; в дистактном — anu, apa, abhi, nis, pari, prati."
     kind: universality
@@ -281,43 +186,3 @@ candidates:
     kind: statistic
     falsifiable_as: "classify prefixed verbs by semantic transparency, measure compositional share"
     kochergina_gives_number: true
-  - loc: "Занятие XXXIX / mdx line 10473"
-    claim_ru: "Полупрозрачные ~ треть (30%) префиксальных глаголов; всегда переходные."
-    kind: statistic
-    falsifiable_as: "share of semi-transparent prefixed verbs; test all transitive in DCS"
-    kochergina_gives_number: true
-  - loc: "Занятие XXXIX / mdx line 10485"
-    claim_ru: "Глаголов с неразложимым значением менее 10%."
-    kind: statistic
-    falsifiable_as: "share of prefixed verbs with non-compositional meaning in lexicon"
-    kochergina_gives_number: true
-  - loc: "Занятие XXXX / mdx line 10622"
-    claim_ru: "Десубстантивы: префиксы ati-, adhi-, upa-, pra-, prati-, реже anu-, apa-, vi-."
-    kind: statistic
-    falsifiable_as: "denominal noun derivations per preverb: ati/adhi/upa/pra/prati dominate vs anu/apa/vi"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXX / mdx line 10656"
-    claim_ru: "Особенно многочисленны существительные с префиксом prati-."
-    kind: statistic
-    falsifiable_as: "prati- nominal derivative counts vs other preverbs in lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXX / mdx line 10708"
-    claim_ru: "Десубстантивные прилагательные особенно продуктивны с vi-, nis-, ud-; vi/nis = отсутствие."
-    kind: statistic
-    falsifiable_as: "productivity of vi-/nis-/ud- denominal adjectives and vi>nis for privative sense"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXX / mdx line 10742"
-    claim_ru: "Суффикс -tra — наречия места, -dā — времени, -thā — образа действия."
-    kind: rule
-    falsifiable_as: "semantic specialization of adverbial -tra (place), -dā (time), -thā (manner) in lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXX / mdx line 10756"
-    claim_ru: "Любое качественное прилагательное может выступить наречием; чаще всего в винительном падеже."
-    kind: universality
-    falsifiable_as: "any qualitative adjective yields accusative-form adverb; case distribution of adverbialized nominals"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXX / mdx line 10758"
-    claim_ru: "avyayībhāva наречия на -am с префиксом; префикс 'управляет' винительным (prativanam)."
-    kind: rule
-    falsifiable_as: "avyayībhāva adverbs take -am accusative governed by preverb in DCS"
-    kochergina_gives_number: false

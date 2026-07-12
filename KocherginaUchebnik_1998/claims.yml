@@ -3058,3 +3058,401 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: 'Correct: the intensive is chiefly a present-Ā formation; non-present intensive forms are near-absent (not
       recounted, but not in doubt). Anchor.'
+
+
+  - id: HK-207
+    loc: Занятие XXXVII / mdx line 9614
+    claim_ru: Аорист редко при повествовании, чаще в разговорной речи, диалоге (драмы).
+    kind: statistic
+    falsifiable_as: aorist token frequency in narrative vs dialogue/drama registers in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: the narrative-vs-dialogue register split of the aorist cannot be measured against DCS-2021 (no register/speech-act
+      tagging); the aorist is rare overall (2,452 tokens, 0.31% — HK-1), consistent with a marginal, register-restricted
+      use
+    ref: Whitney §928 (aorist's recent-past / conversational value); DCS has no register tags
+    verdict_pedagogy: JUSTIFIED
+    note: A known philological observation (the classical aorist survives chiefly in dialogue/drama as a recent past),
+      but the register split is not corpus-checkable. Flagged UNTESTABLE while noting the overall rarity is confirmed.
+
+  - id: HK-208
+    loc: Занятие XXXVII / mdx line 9618
+    claim_ru: Аугмент аориста между префиксом и корнем; с mā аугмент утрачивается (значение императива).
+    kind: rule
+    falsifiable_as: augment placement in prefixed aorists and augmentless aorist after mā, Whitney §585
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the aorist augment stands between preverb and root; with the prohibitive particle mā the augment
+      is dropped (mā gamaḥ), yielding the injunctive-shaped prohibition'
+    ref: Whitney §585, §579 (augment; augmentless aorist after mā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct augment-placement and the mā-prohibitive. Anchor.
+
+  - id: HK-209
+    loc: Занятие XXXVII / mdx line 9667
+    claim_ru: Тематический аорист (II тип) — парадигма как у имперфекта VI класса, оба залога.
+    kind: typology
+    falsifiable_as: thematic aorist endings match class-VI imperfect in both voices, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the thematic (a-)aorist inflects with the class-VI imperfect endings in both voices'
+    ref: Whitney §846-847 (thematic aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct thematic-aorist paradigm identity. Anchor.
+
+  - id: HK-210
+    loc: Занятие XXXVII / mdx line 9688
+    claim_ru: 'III тип: слабый корень (guṇa для -an/-am/-ar); гласная удвоения i/ī или u/ū.'
+    kind: allomorphy
+    falsifiable_as: reduplication-vowel conditioning in reduplicated aorists, Whitney §856ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the reduplicated aorist uses the weak root (guṇa for -an/-am/-ar) and a reduplicating vowel i/ī
+      or u/ū conditioned by the root vowel'
+    ref: Whitney §856ff (reduplicated aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct reduplicated-aorist formation. Anchor.
+
+  - id: HK-211
+    loc: Занятие XXXVII / mdx line 9695
+    claim_ru: 'Тематический удвоительный аорист от корней с -p (каузатив): ā→i (jñā→ajijñipa).'
+    kind: rule
+    falsifiable_as: ā→i in reduplicated aorist from -p causatives in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the reduplicated aorist of -p causatives shows ā → i (jñā → ajijñipat) — the causative-linked
+      reduplicated aorist'
+    ref: Whitney §861, §1046 (reduplicated aorist of causatives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct causative reduplicated-aorist allomorphy. Anchor.
+
+  - id: HK-212
+    loc: Занятие XXXVII / mdx line 9734
+    claim_ru: Префикс a-(an-) очень продуктивен.
+    kind: statistic
+    falsifiable_as: a-/an- privative derivatives vs other nominal prefixes in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the privative prefix a-/an- is highly productive, freely negating nominal and adjectival bases
+      (a-dharma, an-anta)'
+    ref: Whitney §1121a-b (privative a-/an-)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the a-/an- privative is the most productive nominal prefix; the exact share is treated separately
+      (UNTESTABLE, HK-42). Anchor for the productivity claim.'
+
+  - id: HK-213
+    loc: Занятие XXXVII / mdx line 9770
+    claim_ru: Существительные с sa- практически не встречаются; прилагательные только sa-+S→Adj.
+    kind: universality
+    falsifiable_as: sa- prefixed nouns vs adjectives — near-absence of nouns and Adj-only rule in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: sa- (''with, possessing'') builds adjectives (bahuvrīhi-type: saphala ''fruitful'') and essentially
+      no free-standing nouns — the noun/adjective asymmetry is real'
+    ref: Whitney §1304 (sa- possessive compounds)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: sa- is an adjective-forming (possessive) prefix, not a noun-forming one. Anchor.'
+
+  - id: HK-214
+    loc: Занятие XXXVIII / mdx line 9950
+    claim_ru: 'Сигматический аорист: -s для aniṭ, -iṣ для seṭ (позже распределение нарушается).'
+    kind: allomorphy
+    falsifiable_as: correlation of -s vs -iṣ aorist suffix with aniṭ/seṭ class, Whitney §878ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the sigmatic aorist takes -s for aniṭ roots and -iṣ for seṭ roots (the later language blurs the
+      distribution)'
+    ref: Whitney §878ff (s-/iṣ-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct sigmatic-aorist suffix conditioning by seṭ/aniṭ. Anchor.
+
+  - id: HK-215
+    loc: Занятие XXXVIII / mdx line 9952
+    claim_ru: Формы аориста на -siṣ и на -sa встречаются редко.
+    kind: statistic
+    falsifiable_as: count -siṣ and -sa aorist forms vs -s/-iṣ in DCS to confirm rarity
+    sources:
+    - whitney
+    - dcs
+    verdict_fact: 'TRUE'
+    number: 'systemic: the siṣ-aorist (-siṣ) and the sa-aorist (-sa) are the two least frequent aorist formation types;
+      the DCS-2021 export does not tag aorist sub-types (cf. HK-5), so the per-type count is not separately reproducible,
+      but Whitney confirms their rarity'
+    ref: Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags
+    verdict_pedagogy: JUSTIFIED
+    note: Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), so the
+      claim rests on the reference grammar, which supports it.
+
+  - id: HK-216
+    loc: Занятие XXXVIII / mdx line 9956
+    claim_ru: '-s аорист: P. гласные корня в vṛddhi; Ā. интерконсонантные — в слабой ступени.'
+    kind: allomorphy
+    falsifiable_as: vṛddhi in P vs weak grade in Ā for -s aorist stems, Whitney §883
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the -s aorist the Parasmaipada takes vṛddhi of the root vowel while the Ātmanepada shows the
+      weak grade for interconsonantal roots'
+    ref: Whitney §883 (s-aorist grade by voice)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct s-aorist grade-by-voice rule. Anchor.
+
+  - id: HK-217
+    loc: Занятие XXXVIII / mdx line 9966
+    claim_ru: 'Перед -s: -n,-m→anusvāra; -s→-t; -ś,-j→-k.'
+    kind: allomorphy
+    falsifiable_as: root-final consonant sandhi before -s in aorist (man→amaṃs, darś→adrākṣ)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (pre-s sandhi): before the aorist -s, root-final -n/-m → anusvāra, -s → -t, -ś/-j → -k (man →
+      amaṃsta, dṛś → adrākṣīt)'
+    ref: Whitney §168, §226 (consonant sandhi before s)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pre-s sandhi in the sigmatic aorist. Anchor.
+
+  - id: HK-218
+    loc: Занятие XXXVIII / mdx line 10007
+    claim_ru: 'Корни на -ā: аорист P. по I типу, Ā. по IV типу с ā→i (dā→adiṣ-).'
+    kind: rule
+    falsifiable_as: ā-roots root-aorist in P but -s aorist with ā→i in Ā, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ā-roots form the aorist by the root (type I) formation in the Parasmaipada but by the sigmatic
+      type with ā → i in the Ātmanepada (dā → adiṣi)'
+    ref: Whitney §884 (ā-root aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ā-root aorist split by voice. Anchor.
+
+  - id: HK-219
+    loc: Занятие XXXVIII / mdx line 10044
+    claim_ru: VI тип — аорист на -siṣ; от немногих корней на -ā, только Parasmaipada.
+    kind: universality
+    falsifiable_as: -siṣ aorist Parasmaipada-only, ā-root-restricted, parallel -s forms, Whitney §914
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the siṣ-aorist (type VI) is Parasmaipada-only and restricted to a few ā-roots, running parallel
+      to their -s forms'
+    ref: Whitney §914 (siṣ-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct siṣ-aorist restriction. Anchor.
+
+  - id: HK-220
+    loc: Занятие XXXVIII / mdx line 10067
+    claim_ru: VII тип — аорист на -sa; от немногих корней на -j,-ś,-ṣ,-h; слабая ступень → -kṣa-.
+    kind: rule
+    falsifiable_as: -sa aorist restricted to -j/-ś/-ṣ/-h roots with zero-grade + kṣa, Whitney §916
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the sa-aorist (type VII) is restricted to -j/-ś/-ṣ/-h roots, uses the zero-grade root, and forms
+      the stem in -kṣa- (diś → adikṣa-)'
+    ref: Whitney §916 (sa-aorist)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct sa-aorist restriction and stem. Anchor.
+
+  - id: HK-221
+    loc: Занятие XXXVIII / mdx line 10128
+    claim_ru: 'dus-+S: сравнительно немногие наименования лиц; основная масса — неодушевлённые.'
+    kind: statistic
+    falsifiable_as: dus- person-nouns vs inanimate-nouns in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the split of dus-+S derivatives into 'few person-nouns' vs a mass of inanimate nouns is a semantic (animate/inanimate)
+      classification with no stated or computable count base
+    ref: no ground-truth source; animacy classification base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directionally plausible but the animate/inanimate share is asserted, not shown. Flagged UNTESTABLE (same failure
+      mode as HK-41/HK-42).
+
+  - id: HK-222
+    loc: Занятие XXXVIII / mdx line 10196
+    claim_ru: Редкий префикс ku- образует существительные негативной оценки.
+    kind: statistic
+    falsifiable_as: ku- prefixed noun lemmas in lexicon to confirm rarity and pejorative sense
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: ku- (kā-/kad-) is a marginal, non-productive prefix forming a small set of pejorative/deficiency
+      nouns (kupuruṣa ''a wretch'')'
+    ref: Whitney §1121f (ku- pejorative prefix)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: ku- is a genuinely rare prefix; the rarity is a known descriptive fact (not separately recounted).'
+
+  - id: HK-223
+    loc: Занятие XXXIX / mdx line 10366
+    claim_ru: Инъюнктив — архаизм; сохранилась форма 2 л. запрета с mā (= аорист без аугмента).
+    kind: statistic
+    falsifiable_as: surviving injunctives near-exclusively 2nd-person prohibitive with mā in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'the injunctive is an archaism: DCS-2021 has only 2,366 active injunctive tokens (0.30% of 781,618 verbal
+      tokens), and it survives chiefly as the 2nd-person prohibitive with mā (an augmentless aorist/imperfect)'
+    ref: Whitney §579 (injunctive; mā-prohibitive); DCS verify_claims_dcs.py (timws code 30)
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Инъюнктив — реликтовая категория: в DCS-2021 всего 2 366 активных форм (0,30% глагольных словоформ),
+      и уцелел он почти только как запрет 2-го лица с mā (безаугментный аорист).'
+    note: 'Corpus-confirmed archaism: the injunctive is rare and concentrated in the mā-prohibitive, exactly as Kochergina
+      says. Well calibrated.'
+
+  - id: HK-224
+    loc: Занятие XXXIX / mdx line 10392
+    claim_ru: Корни на ā, e, ai, o в прекативе меняют гласные на e.
+    kind: allomorphy
+    falsifiable_as: ā/e/ai/o → e in precative stems (dā→deyās), Whitney §837
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the precative, roots in ā/e/ai/o change the vowel to e (dā → deyās, dhā → dheyāt)'
+    ref: Whitney §837b (precative of ā-roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct precative vowel change. Anchor.
+
+  - id: HK-225
+    loc: Занятие XXXIX / mdx line 10421
+    claim_ru: Примерно третья часть глаголов санскрита — префиксальные.
+    kind: statistic
+    falsifiable_as: share of prefixed verb lemmas among all verb lemmas in lexicon/DCS
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: 'the ''≈ one third of Sanskrit verbs are prefixed'' share has no reproducible base in the available data:
+      the VisualDCS prefix tally counts a specific derivation set (923 lemmas), not a clean prefixed-vs-simple partition
+      of all verb lemmas'
+    ref: no clean prefixed/simple verb-lemma partition; count base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the
+      DCS-2021 lemma inventory. Flagged UNTESTABLE.
+
+  - id: HK-226
+    loc: Занятие XXXIX / mdx line 10473
+    claim_ru: Полупрозрачные ~ треть (30%) префиксальных глаголов; всегда переходные.
+    kind: statistic
+    falsifiable_as: share of semi-transparent prefixed verbs; test all transitive in DCS
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the '≈30% semi-transparent' share is part of the same subjective semantic-transparency classification as
+      HK-41 (60/30/<10%) — no stated corpus or coding scheme, not reproducible
+    ref: no ground-truth source; see HK-41
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Companion of HK-41; the semantic-transparency percentages have no reproducible base. The 'always transitive'
+      sub-claim is a separate lexical-semantic assertion, also unquantified. Flagged UNTESTABLE.
+
+  - id: HK-227
+    loc: Занятие XXXIX / mdx line 10485
+    claim_ru: Глаголов с неразложимым значением менее 10%.
+    kind: statistic
+    falsifiable_as: share of prefixed verbs with non-compositional meaning in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the '< 10% non-compositional' share is the third slice of the HK-41 semantic-transparency split — subjective,
+      no count base, not reproducible against the corpus
+    ref: no ground-truth source; see HK-41
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Companion of HK-41/line 10473; directionally plausible but not checkable. Flagged UNTESTABLE.
+
+  - id: HK-228
+    loc: Занятие XXXX / mdx line 10622
+    claim_ru: 'Десубстантивы: префиксы ati-, adhi-, upa-, pra-, prati-, реже anu-, apa-, vi-.'
+    kind: statistic
+    falsifiable_as: 'denominal noun derivations per preverb: ati/adhi/upa/pra/prati dominate vs anu/apa/vi'
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: the claim that ati-/adhi-/upa-/pra-/prati- dominate desubstantive noun derivation (vs anu-/apa-/vi-) is
+      a per-preverb productivity ranking without a reproducible base; the VisualDCS preverb-lemma tally is a limited
+      set and does not isolate desubstantive nouns
+    ref: no clean desubstantive-by-preverb count; base undisclosed
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Directional and plausible, but the per-preverb productivity ranking cannot be reproduced from the available
+      data. Flagged UNTESTABLE.
+
+  - id: HK-229
+    loc: Занятие XXXX / mdx line 10656
+    claim_ru: Особенно многочисленны существительные с префиксом prati-.
+    kind: statistic
+    falsifiable_as: prati- nominal derivative counts vs other preverbs in lexicon
+    sources:
+    - dcs
+    verdict_fact: UNTESTABLE
+    number: '''prati- especially numerous [among nouns]'' is not reproducible: the noun-specific prati- productivity
+      has no stated base, and the general VisualDCS preverb-lemma tally ranks prati ~9th (behind sam/pra/vi), giving
+      no support for a prati- peak'
+    ref: no noun-specific preverb count; general tally does not single out prati-
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous
+      with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base.
+
+  - id: HK-230
+    loc: Занятие XXXX / mdx line 10708
+    claim_ru: Десубстантивные прилагательные особенно продуктивны с vi-, nis-, ud-; vi/nis = отсутствие.
+    kind: statistic
+    falsifiable_as: productivity of vi-/nis-/ud- denominal adjectives and vi>nis for privative sense
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: vi-, nis- and ud- are productive desubstantive-adjective prefixes, and vi-/nis- carry the privative
+      ''absence'' sense (vi-jñāna, nir-guṇa); vi- is among the most frequent preverbs (3rd in the VisualDCS lemma tally)'
+    ref: Whitney §1121ff (nominal prefixes); VisualDCS prefix tally (vi- 3rd)
+    verdict_pedagogy: JUSTIFIED
+    note: The systemic part (vi-/nis-/ud- productive; vi-/nis- privative) is sound and vi-'s high frequency is directional
+      support; the exact 'especially productive' ranking is not recounted per-category but is consistent with the data.
+
+  - id: HK-231
+    loc: Занятие XXXX / mdx line 10742
+    claim_ru: Суффикс -tra — наречия места, -dā — времени, -thā — образа действия.
+    kind: rule
+    falsifiable_as: semantic specialization of adverbial -tra (place), -dā (time), -thā (manner) in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the adverbial suffixes are specialised — -tra for place (tatra ''there''), -dā for time (tadā
+      ''then''), -thā for manner (tathā ''thus'')'
+    ref: Whitney §1099, §1101, §1103 (adverbial -tra/-dā/-thā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct semantic specialisation of the adverb suffixes. Anchor.
+
+  - id: HK-232
+    loc: Занятие XXXX / mdx line 10756
+    claim_ru: Любое качественное прилагательное может выступить наречием; чаще всего в винительном падеже.
+    kind: universality
+    falsifiable_as: any qualitative adjective yields accusative-form adverb; case distribution of adverbialized nominals
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: any qualitative adjective can serve as an adverb, most often in the neuter accusative singular
+      form (kṣipram ''quickly'')'
+    ref: Whitney §1111 (neuter accusative as adverb)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the neuter acc.sg is the default adverbial form. Anchor.'
+
+  - id: HK-233
+    loc: Занятие XXXX / mdx line 10758
+    claim_ru: avyayībhāva наречия на -am с префиксом; префикс 'управляет' винительным (prativanam).
+    kind: rule
+    falsifiable_as: avyayībhāva adverbs take -am accusative governed by preverb in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: an avyayībhāva is an indeclinable compound adverb in -am with a governing preverb/particle first
+      member (prati-vanam ''in each forest'')'
+    ref: Whitney §1313 (avyayībhāva)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct avyayībhāva description. Anchor.
