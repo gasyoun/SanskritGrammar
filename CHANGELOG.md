@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.3.0] - 2026-07-12
 ### Added
 - **WSC-2027 CDSL report — deep remake** (H795, Fable 5 `claude-fable-5`):
   [`TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/`](TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/) —
