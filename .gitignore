@@ -13,7 +13,7 @@ npm-debug.log*
 
 # Local Claude Code machine state (not repo content)
 /.claude/
-.claude/settings.local.json
+**/.claude/settings.local.json
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
 **/errata.candidates.yml
