@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- Roadmap for a thin printed companion-methodichka (`METODICHKA_KOCHERGINA_COMPANION_2026.md`
+  + its metadoc): five commentary pillars (accuracy, clarity/frequency, errata per edition,
+  extra exercises, cross-references), hybrid source-of-truth model (registry data + authored
+  prose), and a thin-v1 / comprehensive-v2 split. Consumes the existing 43-claim register
+  and errata system rather than rebuilding. Decisions A–D locked with MG; first execution
+  slice minted as H807 (Fable).
 
 ## [0.2.0] - 2026-07-12
 ### Added
