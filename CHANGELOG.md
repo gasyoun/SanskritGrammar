@@ -18,6 +18,18 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **WSC-2027 CDSL report — deep remake** (H795, Fable 5 `claude-fable-5`):
+  [`TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/`](TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/) —
+  13 `.mdx` chapters remaking the WSC-2025-rejected "Report on Cologne Digital
+  Sanskrit Lexicon Project" for the 20th World Sanskrit Conference (Mumbai,
+  December 2027): formal register per the four Kathmandu reviews, every
+  quantitative claim tied to a committed dataset, Peter Scharf's review
+  incorporated (Sanskrit Library co-history, TEI, morphid coordination,
+  licence status), team history updated through Jim Funderburk's June-2026
+  retirement (cited to the recorded volunteer call), full bibliography +
+  abbreviations appendix. Provenance and residual pre-submission items in the
+  folder's [`README.mdx`](TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx).
 
 ## [0.2.0] - 2026-07-12
 ### Added

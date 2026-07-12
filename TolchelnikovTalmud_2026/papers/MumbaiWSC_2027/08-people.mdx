@@ -1,0 +1,46 @@
+---
+title: "8. The People"
+sidebar_position: 8
+---
+
+# 8. The People
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+Thirty years of CDSL have been carried by remarkably few hands, and the project's single greatest operational risk — quantified in the companion paper as a bus factor: at no point since 2019 have more than four people per year implemented corrections, with the lead maintainer accounting for 64–100% of correction commits — is best understood by listing them.
+
+## 8.1 Principal contributors, 1994–2026
+
+| Years | Contributor | Role |
+|---|---|---|
+| 1994–2013 | Thomas Malten (Germany) | Founder; digitisation programme, typist management, transliteration principles |
+| 2004–2013 | Peter Scharf (USA, later India) | Funded-project lead; XML transformation, encoding standards, reference works |
+| 2004–2009 | Malcolm D. Hyman (Germany) | Encoding and transliteration engineering, until his untimely death |
+| 2004–2026 | Jim Funderburk (USA) | Lead developer and webmaster; corrections implementation, format migrations, displays |
+| 2014–2023 | Sampada Savardekar (France) | Volunteer contributions |
+| 2014–2026 | Mārcis Gasūns (Russia) | Founder of the sanskrit-lexicon GitHub organisation; coordination, scans, link targets |
+| 2014–2026 | Dhaval Patel (India) | Correction validation and implementation; maintainer of record since 2026 |
+| 2014– | Usha Sanka (India) | First correction submitter of the GitHub era |
+| 2020– | Anna Rybakova (Russia) | Page indexes for semi-digitised scan editions |
+| 2021–2026 | Nāgabhūṣaṇarāvu Kālepu (India) | Monolingual dictionaries; VCP/SKD cleaning; link targets |
+| 2024–2026 | Scott Rhodes (USA) | The most prolific individual correction submitter |
+
+Felix Rau (DCH, University of Cologne), a former student of Malten, maintains the server infrastructure and is the project's remaining institutional link to the university. Seshatalpa Sai (Hyderabad) collaborates with Kālepu on the monolingual dictionaries.
+
+## 8.2 Jim Funderburk
+
+Funderburk's path into the project is documented in his own words in §3.2: a mathematician-economist by background, he came to Sanskrit through Scharf's *Rāmopākhyāna*, and to CDSL through the errors in the digital Monier-Williams that he could not get corrected from outside. From 2004 to 2026 he was the person who turned every design decision into running code: the XML transformations, the SLP1 migration, the 2016 IAST re-encoding of PWG, the stable-identifier format, the display and download tooling, and the implementation of the correction stream — a body of work his collaborators on the 2026 call summarised less technically: "he has been the only workhorse who has been working" (D. Patel), "so many things at such a quality have been done in all these years" (M. Gasūns; Cologne call, 27 June 2026).
+
+One design preference of his deserves a historical note because it shaped the architecture: the insistence, from the beginning, that the entire dictionary collection remain installable and usable offline. His stated image for it was being "in a cave in Tibet" with no Internet and still having one's Sanskrit dictionary (Cologne call, 27 June 2026). In practice fewer than five people worldwide are known to run local installations, but the requirement kept the data model file-based, complete, and portable — which is also what made the collection forkable, measurable, and independent of any single server or institution. The archival value of that decision became obvious in 2013, when the founding department ceased to exist and the data simply moved.
+
+His retirement statement on the same call closes the era in the project's own register: "It's a big change for me psychologically to get out of that mode, but it's the right time to do it... We're in good hands."
+
+## 8.3 The Hyderabad school
+
+Nāgabhūṣaṇarāvu Kālepu, a retired electronics engineer from Hyderabad, developed the Telugu-and-Sanskrit dictionary portal andhrabharati.com from 2006, digitising and tagging some thirty dictionaries with his colleague Seshatalpa Sai before joining CDSL work in 2021 — where, by an irony the 1997 report could not have foreseen, he partially fulfilled Malten's founding wish of "connecting Sanskrit with Tamil vocabulary," from the Telugu side: on his estimate some 70% of Telugu lexis is Sanskrit-derived, and his portal's tagging makes the layering explicit. Within CDSL his method is systematic single-dictionary campaigns: after the headword-level cleaning of Vācaspatyam and Śabdakalpadruma in 2022, he began in 2025 an entry-level cleaning of Vācaspatyam's 5,400+ pages against a new scan, expected to take well over a year. The history of VCP illustrates why such campaigns recur: the Tirupati electronic Vācaspatyam incorporated circa 2012 was, in the project's contemporary assessment, so error-laden that Malten re-entered the text from scratch, and the two transcriptions were then collated mechanically (§3.1) — several full cleaning rounds on a single dictionary, fifteen years apart, is the realistic unit of work at this scale.
+
+## 8.4 On geography
+
+The volunteer geography of the project has shifted twice: from Cologne (1994–2013) to a distributed GitHub collaboration centred on Russia and India (2014–), with the United States represented by Funderburk and latterly Rhodes. St. Petersburg's historical primacy in Sanskrit lexicography (§7.2) explains the Russian strand's motivation; Hyderabad's engineering-retiree school explains the Indian one. Pune, the home of the two great unfinished Indian dictionary projects — the *Encyclopaedic Dictionary of Sanskrit on Historical Principles* at Deccan College (progressed to within the letter *a*) and the Prakrit dictionary at BORI — has so far stood apart from digitisation partnerships; the Deccan College dictionary is compiled on an intranet without public digital access, and BORI's own digital programmes (the Cultural Index continuation, the critical-edition apparatus digitisation) are currently dormant. The comparison with the *Thesaurus Linguae Latinae* — begun 1894, twenty funded researchers, currently in the letter N — is worth making precisely because it removes the temptation to explain the pace of the Pune projects by anything peculiar to India: exhaustive historical lexicography at this depth is a century-scale undertaking everywhere, and the question the digital projects pose is not why the print projects are slow but whether their material can be brought into maintainable public form while they proceed.
+
+_Dr. Mārcis Gasūns_

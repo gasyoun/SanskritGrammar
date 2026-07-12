@@ -1,0 +1,30 @@
+---
+title: "7. Cross-Dictionary Measurements"
+sidebar_position: 7
+---
+
+# 7. Cross-Dictionary Measurements
+
+_Created: 12-07-2026 · Last updated: 12-07-2026_
+
+Because all 44 dictionaries share one entry format and one transliteration, questions that lexicographic historiography could previously argue only from samples can now be computed over the whole collection. This section reports the measurements most relevant to the historical claims of §§2–3; the full programme, with methods and caveats, is in the companion paper.
+
+## 7.1 The headword census
+
+The union index across the collection contains **323,425 distinct normalized headwords**, each with per-dictionary provenance. Pairwise overlap across the fifteen largest dictionaries (105 dictionary pairs, Jaccard-scored) quantifies the genealogy of §2.1: the Petersburg-line dictionaries cluster tightly; Edgerton's Buddhist Hybrid Sanskrit dictionary is the extreme outlier with 58.7% of its headwords unique to itself — as its subject predicts — while Cappeller's abridgement contributes almost nothing unique (0.6%), as *its* genealogy predicts. The one measurement in this family that historiography most wants is the MW–PWG comparison, reported next.
+
+## 7.2 Monier-Williams against the Petersburg dictionaries
+
+Böhtlingk's accusation that Monier-Williams appropriated the Petersburg dictionaries' material — raised in his prefaces, amplified by Max Müller's involvement (Stache-Weiske 2015), and revisited by Zgusta (1988) on roughly forty selected cases — can now be examined against the full inventories. The measured facts: MW (1899) contains 168,633 lemmas against PWG's 106,169; **94,753 lemmas are common to both**. The average entry is much shorter in MW (110 characters) than in PWG (245); around 30,000 entries in the two dictionaries differ in size by less than 15%, and 819 are identical in length. Of MW's 485 citation-source abbreviations, 330 denote the same sources as PWG's, and 41.6% of MW's citations point to loci also cited in PWG.
+
+What the numbers support is subtler than either polemic. MW is not a translation of PWG: nearly half its lemma inventory — dominated by *samāsa*s, which make up about half of MW's volume against a fifth of PWG's — is absent from the Petersburg dictionaries, and its entries are structured differently. But the citation-source overlap is exactly what one expects of a dictionary compiled, as Monier-Williams acknowledged and Böhtlingk protested, *with the Petersburg dictionaries open on the desk*. The remaining classical claim — Kapp and Malten's (1997) remark that "MW has largely followed the order of meanings in PWG" — is testable by sense-sequence alignment over the common lemmas and has not yet been tested; it is registered as an open measurement.
+
+## 7.3 Etymology across the traditions
+
+Ten dictionaries carry extractable etymological or root-derivation data. Extracting them into a common root oracle (62,558 records) and scoring cross-dictionary agreement shows the indigenous Pāṇinian tradition — the *koṣa*s, SKD, VCP — agreeing with each other at 90–100% on shared items, with Wilson (1832) as the principal outlier among the European dictionaries; part of Wilson's divergence is a measurement artefact of its affix notation, which the committed datasheet documents. For MW, the root inventory distinguishes 750 entries the dictionary itself marks as genuine roots from 1,363 root-labelled entries in total — the machine-readable descendant of the manual "genuine vs artificial" root analyses of the funded phase (§9.3).
+
+## 7.4 Interoperability measurements
+
+Two alignment exercises measure how far CDSL's headword space can serve as a hub. Against the Sanskrit Heritage lexicon (Huet), 185,803 MW entries are aligned with 97.6% anchor resolution — the practical bridge between CDSL and computational morphology. Against Whitney's *Roots*, the crosswalk built in 2026 links 939 root records across Whitney, MW, Apte, and the DCS corpus attestations, published as a FAIR dataset (CSV, RDF, SQLite with metadata). Both exercises expose the same two structural frictions identified in §4.4 — preverb-bearing headwords and stem-versus-nominative citation forms — as the dominant sources of residual mismatch, which is independent confirmation, from alignment practice, of the analysis Scharf argued from lexicographic principle.
+
+_Dr. Mārcis Gasūns_
