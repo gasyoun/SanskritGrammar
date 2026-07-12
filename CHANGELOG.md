@@ -19,6 +19,24 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-07-12
+### Added
+- **Sangram contract C5 — morphology programme (W2)** ([`sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx),
+  route `/grammars/sangram/morphology-program`): thematic programme for wave **W2** over
+  the C2 registry's WF (11) + MO (32) morphology slots — 9 macroclusters; the
+  **attested / generated / traditional** three-source method (the programme's methodological
+  core: attested-in-DCS carries the quantitative claim, generated fills paradigm cells as
+  hypotheses, traditional witnesses existence, never silently merged); evidence limits
+  EM1–EM8 tied to C3 defects Д1–Д8; morphology query-design (form-class not UD-Tense,
+  WhitneyRoots class join, paradigm-cell-coverage query, dictionary-derivation join);
+  per-cluster W2 quotas (**19 ① core across all 9 macroclusters**, within the charter 15–25
+  range, ≥1 per macrocluster); 5 pilots each stressing a distinct limit with launch + kill
+  gates; annotation gaps; witnesses (grammars-предшественники + machine paradigm assets —
+  WhitneyRoots, mw_roots.tsv, MWinflect, csl-inflect, vidyut, VisualDCS); five-year placement
+  in W2 between the W1 foundation and W3 semantics. References the canonical `SG-WF-*`/`SG-MO-*`
+  IDs, mints none (C2 stays canonical). Build green, page generated, zero broken links
+  ([H634](https://github.com/gasyoun/Uprava/blob/main/handoffs/H634-Fable_SanskritGrammar_sangram-morphology-program_11.07.26.md), Opus 4.8 `claude-opus-4-8` — slot was minted for Fable 5, run on Opus 4.8 by explicit author decision).
+
 ## [0.3.0] - 2026-07-12
 ### Added
 - **WSC-2027 CDSL report — deep remake** (H795, Fable 5 `claude-fable-5`):
