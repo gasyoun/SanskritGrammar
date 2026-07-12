@@ -1,0 +1,375 @@
+# quantifiers.sample.yml — hand-verified (H800 D3). Adjudicator: Opus 4.8 (claude-opus-4-8).
+# human_anchored is the reviewer's read of whether the quantifier is tied to a decidable
+# target (named class/type/§/position/series/grade/affix/form/condition/number). 'lexicon-FP'
+# notes flag matches that are not genuine scope quantifiers. build_quantifiers.py reads this.
+work: Zalizniak, Конспект грамматических сведений, 2004
+sample_of: ZalizniakKonspekt_2004/quantifiers.yml
+sample:
+- id: ZAL-Q0001
+  loc: От праиндоевропейского к древнеиндийскому / L14
+  axis: frequency
+  q: в основном
+  auto_anchored: false
+  auto_anchor: null
+  context: \**␐*, \**␑* → *а* \*** → *ā*; \*** → *ām* \*** → ** \*** (и \***) → *īr*, *ūr* (*ūr*
+    в основном после губных) \**ǝ* → *i* (и реже *ī*; простого распределения нет).
+  human_anchored: true
+  human_anchor: condition (после губных) + form ūr
+  note: null
+- id: ZAL-Q0066
+  loc: Некоторые прилагательные / L495
+  axis: frequency
+  q: иногда
+  auto_anchored: false
+  auto_anchor: null
+  context: '<u>Графика и сандхи</u>. Тексты вед обычно записывались по санскритским правилам сандхи, в
+    том числе и там, где это противоречило ведийскому произношению и на­ру­ша­ло стихотворный размер.
+    Поэтому в стихе необходимо восстанавливать *а* из-под аваграхи (почти всегда) и читать *v *и *y* перед
+    гласной как *u* (*ū*) и *i* '
+  human_anchored: true
+  human_anchor: Vedic sandhi rules
+  note: null
+- id: ZAL-Q0083
+  loc: Некоторые прилагательные / L549
+  axis: frequency
+  q: чаще всего
+  auto_anchored: false
+  auto_anchor: null
+  context: <u>Синтаксис</u>. В отличие от эпоса, конструкция с пассивным причастием используется срав­нитель­но
+    редко. Сказуемое чаще всего выражено личной формой гла­го­ла. На месте превербов эпического санскрита
+    выступают еще са­мо­сто­я­тель­ные слова (наречия), которые свободно располагаются до или после глагола,
+    в контакте с
+  human_anchored: true
+  human_anchor: личная форма глагола + пассивное причастие
+  note: null
+- id: ZAL-Q0005
+  loc: Морфонология / L33
+  axis: frequency
+  q: Обычные
+  auto_anchored: true
+  auto_anchor: тип
+  context: +:----------------:+:--------------:+:---------:+:---------:+:--------------:+:----------:+:----------:+
+    | Ряды че­редований | Обычные | Особые (типа saṁprasāraṇa) | | +----------------+-----------+-----------+----------------+------------+------------+
+    | | Слабая ступень | Guṇa | Vddhi | Слабая ступень | Guṇa | Vddh
+  human_anchored: false
+  human_anchor: null
+  note: 'lexicon-FP: ''Обычные'' is a table column label (ordinary series)'
+- id: ZAL-Q0040
+  loc: Перфект / L395
+  axis: frequency
+  q: обычно
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '<u>Инфинитив</u> : g‑tum (или ‑itum) --- *dātum*, *chettum*, *bhavitum*. (В ве­дах есть и
+    другие.) <u>Претеритное причастие</u> (обычно страдат. у переходных гла­го­лов, действит. у непереходных):
+    ø‑ta‑ (или ‑ita‑), но у большинства корней на *d* (типа aniṭ) и открытых корней ряда R**~2~** (изредка
+    у иных) --- ø‑na‑'
+  human_anchored: true
+  human_anchor: preterite participle + suffix -ta-
+  note: null
+- id: ZAL-Q0057
+  loc: Превербы / L464
+  axis: frequency
+  q: обычно
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '<u>Препозитивные</u> --- NA не (просто отрицание), MĀ не (запрещение). <u>Свободной позиции</u>
+    --- ITI так (также показатель прямой речи, обычно пост­позитивный), EVAM так. ### Местоименное словообразование'
+  human_anchored: true
+  human_anchor: particle ITI
+  note: null
+- id: ZAL-Q0021
+  loc: Морфонология / L131
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: '3\. После *k, r* и любой гласной, кроме ** (а также после такой гласной + *ḥ* или *ṁ*) неконечное
+    *s* → *ṣ*. Кроме того, *с*, *ç*, *ṣ*, *ch*, *j* (любое), *h* (любое) + *s* → *kṣ*. 4\. Прочие контакты
+    шумных согласных (2‑я может быть только *s, t, th* или *dh*): а) *ç*, *ṣ*, *ch*, *j***~2~** (а также
+    *kṣ*) + *t*(*h*) '
+  human_anchored: true
+  human_anchor: sandhi rule + named sounds + condition
+  note: null
+- id: ZAL-Q0093
+  loc: Некоторые прилагательные / L627
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: '**Сведения о стихотворных размерах** Стихосложение построено на долготе и краткости слогов
+    (: закрытый слог с  долог); к ударениям оно без­раз­лично. Но схема долгот и краткостей со­блю­да­ет­ся
+    не­стро­го, за ис­клю­че­ни­ем последних четырех (в 12-сложном раз­мере пяти) сло­гов стиха, где она
+    со­блю­да­ет­ся относи'
+  human_anchored: true
+  human_anchor: metrical scheme + condition
+  note: null
+- id: ZAL-Q0095
+  loc: Некоторые прилагательные / L645
+  axis: optionality
+  q: вариант
+  auto_anchored: false
+  auto_anchor: null
+  context: '> вариант а) <u>∪</u> --- <u>∪</u> --- ∪ ∪ --- --- ∪ --- <u>∪</u> > > ­вариант б) <u>∪</u>
+    --- <u>∪</u> --- <u>∪</u> ∪ ∪ --- ∪ --- <u>∪</u> Jagatī'
+  human_anchored: true
+  human_anchor: metrical scheme variants (Jagatī)
+  note: null
+- id: ZAL-Q0097
+  loc: Некоторые прилагательные / L653
+  axis: optionality
+  q: вариант
+  auto_anchored: false
+  auto_anchor: null
+  context: '> вариант а) <u>∪</u> --- <u>∪</u> --- ∪ ∪ --- --- ∪ --- ∪ <u>∪</u> > > вариант б) <u>∪</u>
+    --- <u>∪</u> --- <u>∪</u> ∪ ∪ --- ∪ --- ∪ <u>∪</u> > > <u>\_\_\_\_\_\_\_\_\_\_\_</u>'
+  human_anchored: true
+  human_anchor: metrical scheme variants
+  note: null
+- id: ZAL-Q0026
+  loc: Склонение / L161
+  axis: optionality
+  q: может
+  auto_anchored: true
+  auto_anchor: правило
+  context: '### **Склонение** В правой части таблицы заполнены только те клетки, где операция при­со­единения
+    окончания к основообразующему элементу может вызвать за­труд­нение. Элементы, отклоняющиеся от общих
+    правил, показаны при этом <u>за</u>­<u>главными</u> буквами. > ∼ : с удлинением предшествующей гласной.'
+  human_anchored: true
+  human_anchor: declension rule + affixation
+  note: null
+- id: ZAL-Q0043
+  loc: '<u>Причастие действительное</u> на ‑tavant (в позднем языке): к при­ча­стию на ‑(i)ta‑ добавляется
+    ‑vant‑ --- *uktavant*‑ ''сказавший''. / L401'
+  axis: optionality
+  q: возможно
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '<u>Деепричастие</u> : у глаголов без преверба ø‑tvā (или ‑itvā), с пре­вер­бом ø‑ya (после
+    краткой гласной ‑tya) --- *bhūtvā* ''будучи'', *uktvā*, *ruditvā*, *chit­tvā*; *pra‑bhūya* ''возник­ши'',
+    *vi‑jitya* ''завоевав''. <u>Герундивы</u> : g‑tavya‑ (или ‑itavya‑), g‑anīya‑, v/g‑ya‑ (кор­ни
+    на *ā* ме­ня­ют его на *e*; у'
+  human_anchored: true
+  human_anchor: suffixes -tvā/-ya/-tavya-
+  note: null
+- id: ZAL-Q0053
+  loc: Важнейшие корни / L446
+  axis: productivity
+  q: регулярно
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '### Важнейшие корни Цифры --- тип презенса; \* --- неполноизменяемый корень; **•** --- корень
+    с AR, AN, AM второго (долготного) ряда; \[i\] --- вставное i в прич. на ‑ta (обыч­но \[но не вполне
+    регулярно\] также и в других формах, допускающих такую встав­ку) (изредка \[ī\]). ⎷AJ гнать 1\*\[i\]
+    (ago); AÑJ мазать 7 (ungu'
+  human_anchored: true
+  human_anchor: suffix -ta + тип презенса
+  note: null
+- id: ZAL-Q0002
+  loc: От праиндоевропейского к древнеиндийскому / L16
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: '\*** → ** \*** (и \***) → *īr*, *ūr* (*ūr* в основном после губных) \**ǝ* → *i* (и реже
+    *ī*; простого распределения нет). Праиндийская монофтонгизация *ăi, ău* дала *ē, ō* (принятая запись
+    *ē, ō, āi, āu* как *e, o, ai, au* --- просто графическая условность: снятие избыточных над­строч­ных
+    знаков).'
+  human_anchored: false
+  human_anchor: null
+  note: 'impressionistic: ''реже ī; простого распределения нет'' — states no rule'
+- id: ZAL-Q0016
+  loc: Морфонология / L123
+  axis: rarity
+  q: редкие
+  auto_anchored: false
+  auto_anchor: null
+  context: <u>Внутренние сандхи</u> (т.е. на стыках морфем внутри слова) \[применяются именно в таком
+    порядке (некоторые редкие случаи опущены)\] 1\. На конце слова в сочетании согласных все элементы,
+    кроме первого, от­па­да­ют (напр. *‑nts* → *‑n*). После этого шумные согласные, оказавшиеся ко­неч­ны­ми,
+    оглушаются и теряют прид
+  human_anchored: false
+  human_anchor: null
+  note: 'meta-comment: ''некоторые редкие случаи опущены'''
+- id: ZAL-Q0054
+  loc: Важнейшие корни / L446
+  axis: rarity
+  q: изредка
+  auto_anchored: false
+  auto_anchor: null
+  context: '### Важнейшие корни Цифры --- тип презенса; \* --- неполноизменяемый корень; **•** --- корень
+    с AR, AN, AM второго (долготного) ряда; \[i\] --- вставное i в прич. на ‑ta (обыч­но \[но не вполне
+    регулярно\] также и в других формах, допускающих такую встав­ку) (изредка \[ī\]). ⎷AJ гнать 1\*\[i\]
+    (ago); AÑJ мазать 7 (ungu'
+  human_anchored: true
+  human_anchor: root-list conventions + suffix -ta/-i
+  note: null
+- id: ZAL-Q0078
+  loc: Некоторые прилагательные / L527
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Имеется плюсквамперфект, представляющий собой по форме имперфект пер­фек­та (ступени корня
+    обычно как в презенсе 2 класса), напр.: *átu­ṣ­ṭa­vam* ''я про­сла­вил'', *ábibhet* ''он ис­пу­га­лся'';
+    изредка между основой и окончаниями вста­в­ля­ет­ся *ī* или *а*. В числе наклонений имеется конъюнктив
+    (в англ. терминологии sub'
+  human_anchored: true
+  human_anchor: 2 класс + grades + insert ī
+  note: null
+- id: ZAL-Q0042
+  loc: Перфект / L395
+  axis: rarity
+  q: изредка
+  auto_anchored: true
+  auto_anchor: тип
+  context: '<u>Инфинитив</u> : g‑tum (или ‑itum) --- *dātum*, *chettum*, *bhavitum*. (В ве­дах есть и
+    другие.) <u>Претеритное причастие</u> (обычно страдат. у переходных гла­го­лов, действит. у непереходных):
+    ø‑ta‑ (или ‑ita‑), но у большинства корней на *d* (типа aniṭ) и открытых корней ряда R**~2~** (изредка
+    у иных) --- ø‑na‑'
+  human_anchored: true
+  human_anchor: infinitive/participle affixes + тип
+  note: null
+- id: ZAL-Q0072
+  loc: Некоторые прилагательные / L517
+  axis: rarity
+  q: изредка
+  auto_anchored: true
+  auto_anchor: склонение
+  context: NVocApl f *ī*-склонения -*s* вместо -*as* (напр. *devs* 'богини'). Вообще вместо особого окончания
+    конкретного склонения изредка мо­жет быть использо­вано исконное общее окончание (нормальное только
+    для кор­невых), напр. Isg *yajñ* 'жертвоприношением' (= *yajñá-ā*), *sénā* 'вой­ском' (= *sénā-ā*)
+    вместо *yajñéna*, *s
+  human_anchored: true
+  human_anchor: склонение + suffixes -s/-as + condition + yajñ
+  note: null
+- id: ZAL-Q0006
+  loc: Морфонология / L68
+  axis: subset
+  q: Некоторые
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Обозначения: --- символ корня; ø--- корень в слабой ступени, g--- в сту­пени guṇa; v---
+    в ступени vddhi. Корни делятся на <u>открытые</u> (окан­чи­ва­ю­щи­еся на чередующийся элемент) и
+    <u>закрытые</u> (прочие; реально они окан­чи­ва­ются на шумную согласную). Некоторые корни (определяемые
+    в словарном порядке) ---'
+  human_anchored: true
+  human_anchor: root classes открытые/закрытые + grades
+  note: null
+- id: ZAL-Q0015
+  loc: Морфонология / L123
+  axis: subset
+  q: некоторые
+  auto_anchored: false
+  auto_anchor: null
+  context: <u>Внутренние сандхи</u> (т.е. на стыках морфем внутри слова) \[применяются именно в таком
+    порядке (некоторые редкие случаи опущены)\] 1\. На конце слова в сочетании согласных все элементы,
+    кроме первого, от­па­да­ют (напр. *‑nts* → *‑n*). После этого шумные согласные, оказавшиеся ко­неч­ны­ми,
+    оглушаются и теряют прид
+  human_anchored: false
+  human_anchor: null
+  note: 'meta-comment: ''некоторые редкие случаи опущены'''
+- id: ZAL-Q0047
+  loc: Словообразование / L413
+  axis: subset
+  q: некоторые
+  auto_anchored: false
+  auto_anchor: null
+  context: '<u>Так наз. производные спряжения</u> (в этих спряжениях все фор­мы вне системы презенса образуются
+    от «квази-корня», равного основе пре­зенса без конечного *а* \[если оно там было\]) <u>Каузатив</u>
+    : v/g‑aya‑ --- *bodhayati* ''будит'', *kārayati* ''заставляет делать'', *vā­cayati* ''заставляет
+    говорить'' (аорист --- типа '
+  human_anchored: true
+  human_anchor: производные спряжения + suffix -aya-
+  note: null
+- id: ZAL-Q0041
+  loc: Перфект / L395
+  axis: subset
+  q: большинства
+  auto_anchored: true
+  auto_anchor: тип
+  context: '<u>Инфинитив</u> : g‑tum (или ‑itum) --- *dātum*, *chettum*, *bhavitum*. (В ве­дах есть и
+    другие.) <u>Претеритное причастие</u> (обычно страдат. у переходных гла­го­лов, действит. у непереходных):
+    ø‑ta‑ (или ‑ita‑), но у большинства корней на *d* (типа aniṭ) и открытых корней ряда R**~2~** (изредка
+    у иных) --- ø‑na‑'
+  human_anchored: true
+  human_anchor: suffix -ta + condition (на d)
+  note: null
+- id: ZAL-Q0004
+  loc: От праиндоевропейского к древнеиндийскому / L26
+  axis: universal
+  q: все
+  auto_anchored: false
+  auto_anchor: null
+  context: Праиндийская палатализация *k, g, gh* перед передними гласными дала *c*, *j***~1~**, *h***~1~**;
+    для *sk* она дала *ch* (= *cch* после гласного). В дальнейшем эти рефлексы стали не­за­ви­си­мы­ми
+    от позиции и первоначальное распределение велярных и палатальных подверглось глубокой перестройке.
+    \**l* → *r* (но изредка в
+  human_anchored: true
+  human_anchor: sounds k/g/gh + condition (перед передними)
+  note: null
+- id: ZAL-Q0020
+  loc: Морфонология / L129
+  axis: universal
+  q: любое
+  auto_anchored: false
+  auto_anchor: null
+  context: '2\. Между шумными согласными *s* исчезает (напр. *a‑tāp‑s‑ta* ''вы на­гре­ли'' → *atāpta*).
+    3\. После *k, r* и любой гласной, кроме ** (а также после такой гласной + *ḥ* или *ṁ*) неконечное
+    *s* → *ṣ*. Кроме того, *с*, *ç*, *ṣ*, *ch*, *j* (любое), *h* (любое) + *s* → *kṣ*. 4\. Прочие контакты
+    шумных согласных (2‑я может '
+  human_anchored: true
+  human_anchor: sandhi rule + sounds + condition
+  note: null
+- id: ZAL-Q0065
+  loc: Некоторые прилагательные / L495
+  axis: universal
+  q: всегда
+  auto_anchored: false
+  auto_anchor: null
+  context: '<u>Графика и сандхи</u>. Тексты вед обычно записывались по санскритским правилам сандхи, в
+    том числе и там, где это противоречило ведийскому произношению и на­ру­ша­ло стихотворный размер.
+    Поэтому в стихе необходимо восстанавливать *а* из-под аваграхи (почти всегда) и читать *v *и *y* перед
+    гласной как *u* (*ū*) и *i* '
+  human_anchored: true
+  human_anchor: Vedic sandhi + avagraha
+  note: null
+- id: ZAL-Q0092
+  loc: Некоторые прилагательные / L621
+  axis: universal
+  q: только
+  auto_anchored: false
+  auto_anchor: null
+  context: Словоформы вокатива имеют ударение (всегда начальное) только в по­зи­ции начала фразы или стиха.
+    В прочих случаях они безударны. Личные формы глагола без преверба имеют ударение только а) в по­зи­ции
+    начала фразы или стиха, б) в придаточном предложении, в) не­по­сред­ст­вен­но после другой лич­ной
+    формы. В прочих случа
+  human_anchored: true
+  human_anchor: вокатив + condition (начало фразы) + accent
+  note: null
+- id: ZAL-Q0017
+  loc: Морфонология / L125
+  axis: universal
+  q: все
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '\[применяются именно в таком порядке (некоторые редкие случаи опущены)\] 1\. На конце слова
+    в сочетании согласных все элементы, кроме первого, от­па­да­ют (напр. *‑nts* → *‑n*). После этого
+    шумные согласные, оказавшиеся ко­неч­ны­ми, оглушаются и теряют придыхание; особо: *с*, *j***~1~**,
+    *h***~1~** → *k*; *ç*, *ṣ*, *c'
+  human_anchored: true
+  human_anchor: sandhi rule + affix -nts→-n
+  note: null
+- id: ZAL-Q0033
+  loc: Склонение / L245
+  axis: universal
+  q: только
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'Особо: *sa* ''он, тот'' --- Nsg m *sa* (но перед гласной *sas*), f *sā*; все прочие формы
+    --- с на­чальным *t*, а не *s* (напр. *tad*, *tena*, *tasmai* и т.д.). Так же *eṣa* ''он, тот'' (*etad*,
+    *etena*, *etasmai* и т.д.). Особо: *ayam* ''он, этот'' --- Nsg m *ayam*, f *iyam*, n *idam*; Asg m
+    *imam*, f *imām*, n *idam*; проч'
+  human_anchored: true
+  human_anchor: forms sa/tad/tena + condition
+  note: null

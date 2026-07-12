@@ -1,0 +1,471 @@
+# quantifiers.sample.yml — hand-verified (H800 D3). Adjudicator: Opus 4.8 (claude-opus-4-8).
+# human_anchored is the reviewer's read of whether the quantifier is tied to a decidable
+# target (named class/type/§/position/series/grade/affix/form/condition/number). 'lexicon-FP'
+# notes flag matches that are not genuine scope quantifiers. build_quantifiers.py reads this.
+work: Zalizniak, Грамматический очерк санскрита, 1978
+sample_of: ZalizniakOcherk_1978/quantifiers.yml
+sample:
+- id: ZAL-Q0005
+  loc: § 1 / L56
+  axis: frequency
+  q: в основном
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Разновидности собственно санскрита: эпический санскрит --- язык великих эпических поэм *Махабхарата*
+    и *Рамаяна*; классический санскрит --- язык остальной художественной, а также религиозно-философской,
+    научной и иной литературы. Особо стоит так наз. буддийский санскрит, существенно отклоняющийся от
+    норм классического '
+  human_anchored: false
+  human_anchor: null
+  note: 'intro: varieties of Sanskrit, non-grammatical'
+- id: ZAL-Q0293
+  loc: § 74 / L976
+  axis: frequency
+  q: часто
+  auto_anchored: false
+  auto_anchor: null
+  context: '<span id="s74"></span>**§ 74**. Для склонения существенно разделение имен на обычные и корневые.
+    У обычных (некорневых) имен, которых подавляющее большинство, основа содержит, помимо корня, по крайней
+    мере один суффикс, например: pī-ti-ḥ *питьё*. Особый частный случай суффиксов составляют так наз.
+    основообразующие элем'
+  human_anchored: true
+  human_anchor: §74 + declension types + affix
+  note: null
+- id: ZAL-Q0589
+  loc: § 174 / L2592
+  axis: frequency
+  q: обычно
+  auto_anchored: false
+  auto_anchor: null
+  context: '**Герундивы** (иногда называются также пассивными причастиями будущего времени; см. также
+    § 206). Общее значение *тот, над которым следует (предстоит) произвести данное действие*, например,
+    hantavya- *которого следует убить*. Суффиксы -ya- (с редким вариантом -tya-), -tavya- и -anīya-. Герундивы
+    на -tavya- и -aniya- по'
+  human_anchored: true
+  human_anchor: gerundive + suffix -ya- + §206
+  note: null
+- id: ZAL-Q0010
+  loc: § 2 / L68
+  axis: frequency
+  q: обычно
+  auto_anchored: true
+  auto_anchor: §
+  context: <span id="s2"></span>**§ 2.** Древнеиндийская графика (система деванáгари или другие, эквивалентные
+    ей) фиксирует санскритский текст на фонетическом уровне (т.е. разными знаками в ней передаются не
+    только разные фонемы, но в ряде случаев и разные аллофоны одной фонемы). Таким образом, принятая в
+    санскритологии латинска
+  human_anchored: true
+  human_anchor: §2
+  note: sectional anchor
+- id: ZAL-Q0427
+  loc: § 117 / L1960
+  axis: frequency
+  q: обычно
+  auto_anchored: true
+  auto_anchor: класс
+  context: 'Класс I (самый многочисленный): корень в ступени guṇa. Примеры: bhava- от √bhū *быть*, jaya-
+    от √ji *побеждать*, bhara- от √bhar *нести*, bodha- от √budh *бодрствовать*, kalpa- от √kalp *устраивать*.
+    Особый случай: krāma- (обычно в act.) и krama- (обычно в med.) от √kram *ступать*. Класс VI: корень
+    в слабой ступени. Пр'
+  human_anchored: true
+  human_anchor: Класс I + forms krāma/krama
+  note: null
+- id: ZAL-Q0628
+  loc: § 186 / L2670
+  axis: frequency
+  q: главным образом
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'При ряде производных на -īyaṁs-, -iṣṭha- нет исходного прилагательного: çreyaṁs-, çreṣṭha-
+    *(наи)лучший*; jyāyaṁs-, jyeṣṭha- *старший*; bhūyaṁs-, bhūyiṣṭha *(наи)больший*; kanīyaṁs-, kaniṣṭha-
+    *(наи)меньший*. В ведийском языке таких производных было больше (например, yodhīyaṁs- *лучше сражающийся*
+    --- непосредственно о'
+  human_anchored: true
+  human_anchor: suffixes -īyaṁs-/-iṣṭha-
+  note: null
+- id: ZAL-Q0003
+  loc: § 1 / L52
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: Более архаичную и менее нормализованную в грамматическом отношении форму того же языка представляет
+    собой так наз. ведийский язык, т.е. язык вед --- древнейшего литературного и религиозно-философского
+    памятника Индии. Термин *санскрит* может использоваться в узком смысле (не включающем ведийский) и
+    в широком (включающе
+  human_anchored: false
+  human_anchor: null
+  note: 'terminological: ''термин санскрит может использоваться'''
+- id: ZAL-Q0151
+  loc: § 43 / L614
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Кроме того, следующие сандхи являются факультативными: a) k, ṭ, t, p перед носовой могут переходить
+    в носовую соответствующего ряда (наиболее обычен такой переход для t), например: tat nāma → tan nāma
+    *это имя* (реже tad nāma); gṛhāt me → gṛhān me *от моего дома* (реже gṛhād me); vāk me → vāg me или
+    vān̄ me *моя речь*;'
+  human_anchored: true
+  human_anchor: sandhi rule + condition + tat→tan
+  note: null
+- id: ZAL-Q0389
+  loc: § 109 / L1802
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: '3\. Наклонение: изъявительное (или индикатив --- indic.), повелительное (императив --- imper.),
+    желательное (оптатив --- opt.), а также сравнительно редко употребляемые прекатив, инъюнктив и кондиционалис.
+    Оптатив выражает прежде всего пожелание, рекомендацию (paçyet *пусть видит*, *ему следует увидеть*),
+    но также возм'
+  human_anchored: true
+  human_anchor: named moods (оптатив/прекатив)
+  note: null
+- id: ZAL-Q0821
+  loc: § 242 / L3066
+  axis: optionality
+  q: могут
+  auto_anchored: false
+  auto_anchor: null
+  context: '[^2]: А также как фонологическая единица, ср. § 16. [^3]: Не считая тех фонем, в которые они
+    могут превращаться при морфонологических преобразованиях. [^4]: Примечательно, что этот переход осуществляется
+    не через фонологический уровень, а непосредственно.'
+  human_anchored: true
+  human_anchor: phonemes + morphophonological transformations
+  note: null
+- id: ZAL-Q0029
+  loc: § 7 / L128
+  axis: optionality
+  q: могут
+  auto_anchored: true
+  auto_anchor: §
+  context: '<span id="s7"></span>**§ 7.** Так же, как в случае с латынью и другими древними языками, при
+    устном воспроизведении санскритского текста обычно допускается ряд фонетических условностей, приближающих
+    произношение санскритских звуков к родному языку читающего. В частности, в русской традиции ç принято
+    читать как *ш* или '
+  human_anchored: true
+  human_anchor: §7
+  note: sectional anchor
+- id: ZAL-Q0278
+  loc: § 70 / L930
+  axis: optionality
+  q: вариант
+  auto_anchored: true
+  auto_anchor: склонение
+  context: '4\. У корней √pā *пить*, √gā *петь*, √çyā *застывать*, √pyā *наполнять* и некоторых других
+    на ā имеется вариант на āy (ai), например, √pāy (pai) при √pā. Этот вариант может выступать только
+    там, где ожидается guṇa или vṛddhi (в обоих случаях в виде pāy и т.д.), причем только перед гласной,
+    например: pāy-aya-ti *поит*, '
+  human_anchored: true
+  human_anchor: roots √pā/√gā + condition на ā + guṇa/vṛddhi
+  note: null
+- id: ZAL-Q0169
+  loc: § 45 / L650
+  axis: productivity
+  q: регулярно
+  auto_anchored: false
+  auto_anchor: null
+  context: '### <span id="s45"></span>**§ 45**. Вопреки §§ 24, 31, церебрализация s (по правилам § 35,
+    п. 1) происходит также: регулярно в окончании su, не вполне регулярно --- после преверба, изредка
+    --- на стыке основ внутри сложного слова; st, sth в тех же условиях церебрализуются в ṣṭ, ṣṭh. Примеры:
+    mati + su → matiṣu *в мысля'
+  human_anchored: true
+  human_anchor: окончание su + §45/§35 + condition
+  note: null
+- id: ZAL-Q0756
+  loc: § 225 / L2908
+  axis: productivity
+  q: регулярного
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Примеры. Наст. время: класс II dvéṣmi, dviṣmáḥ, dviṣánti, dviṣé, dviṣmáhe; III juhómi,
+    juhumáḥ; VII chinádmi, chindmáḥ; V sunómi, sunumáḥ, sunú; VIII karómi, kurmáḥ, kurú; IX krīṇā́mi,
+    krīṇīmáḥ. Перфект: yuyója, yuyójitha, yuyujimá, -úḥ, -é, -imáhe, -iré; tatána, tatántha
+    и tenithá (NB), tatā́'
+  human_anchored: true
+  human_anchor: classes II/III/V/VII + forms
+  note: null
+- id: ZAL-Q0109
+  loc: § 28 / L418
+  axis: productivity
+  q: регулярных
+  auto_anchored: true
+  auto_anchor: правило
+  context: <span id="s28"></span>**§ 28**. В санскрите одна и та же словоформа предстает во многих фонетических
+    видах в зависимости от окружения во фразе. Например, словоформа со значением *то* в изолированном
+    положении (т.е. в случае, когда она образует самостоятельное предложение) имеет вид adaḥ; но внутри
+    предложения она может
+  human_anchored: true
+  human_anchor: §28 + sandhi rules
+  note: null
+- id: ZAL-Q0432
+  loc: § 118 / L1970
+  axis: productivity
+  q: нерегулярной
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '<span id="s118"></span>**§ 118**. **Презенс с суффиксом** ya --- класс IV. Корень в слабой
+    ступени. Примеры: yudhya- от √yudh *сражаться*, mṛṣya- от √marṣ *забывать, прощать*, manya от √man
+    *думать*, jāya- от √jan *рождаться* (ряд N~2~), çrāmya- от √çram *уставать* (ряд M~2~), dīvya- от
+    √dīv (div) *играть* (§ 56). Непо'
+  human_anchored: true
+  human_anchor: §118 + класс IV + suffix ya + roots
+  note: null
+- id: ZAL-Q0444
+  loc: § 122 / L1996
+  axis: productivity
+  q: регулярное
+  auto_anchored: true
+  auto_anchor: класс
+  context: '#### Атематическое спряжение <span id="s122"></span>**§ 122**. В атематическом спряжении окончания
+    следуют непосредственно за корнем или за суффиксами no/nu, o/u, nā/nī. Атематическая основа презенса
+    обнаруживает регулярное чередование ступеней. Чередование происходит: в инфиксальном классе --- в
+    инфиксе, в прочих клас'
+  human_anchored: true
+  human_anchor: §122 + спряжение + suffixes no/nu + grades
+  note: null
+- id: ZAL-Q0827
+  loc: § 242 / L3102
+  axis: productivity
+  q: регулярными
+  auto_anchored: true
+  auto_anchor: §
+  context: '[^20]: Так наз. описательный перфект, примыкающий к системе презенса, для удобства изложения
+    рассматривается не здесь, а в разделе о перфекте (см. § 156). [^21]: При основе презенса на -aya-
+    (§§ 167, 168, 172) наряду с регулярными причастиями на -ayamāna- возможны также причастия на -ayāna-.
+    [^22]: Как и у имен (§ 102)'
+  human_anchored: true
+  human_anchor: suffixes -aya-/-ayamāna- + §§167-172
+  note: null
+- id: ZAL-Q0053
+  loc: § 19 / L329
+  axis: rarity
+  q: редко
+  auto_anchored: false
+  auto_anchor: null
+  context: '``` +-------------------------------------------------+-------------------------------------------------+
+    +-------------------------------------------------+-------------------------------------------------+
+    | ṇ | \+ | | \+ (крайне редко) | \+ (редко) | +-------------------------------------------------+---------------'
+  human_anchored: true
+  human_anchor: phoneme ṇ (co-occurrence table)
+  note: table, weak
+- id: ZAL-Q0154
+  loc: § 43 / L614
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Кроме того, следующие сандхи являются факультативными: a) k, ṭ, t, p перед носовой могут переходить
+    в носовую соответствующего ряда (наиболее обычен такой переход для t), например: tat nāma → tan nāma
+    *это имя* (реже tad nāma); gṛhāt me → gṛhān me *от моего дома* (реже gṛhād me); vāk me → vāg me или
+    vān̄ me *моя речь*;'
+  human_anchored: true
+  human_anchor: sandhi forms tat→tan + rule
+  note: null
+- id: ZAL-Q0532
+  loc: § 159 / L2488
+  axis: rarity
+  q: редко
+  auto_anchored: false
+  auto_anchor: null
+  context: '``` Встречается (очень редко) также med.: 1-е лицо dātāhe, dātāsvahe, dātāsmahe, 2-е лицо
+    dātāse, dātāsāthe, dātādhve (в 3-м лице форм, отличных от act., нет). ## Пассив'
+  human_anchored: true
+  human_anchor: med. forms dātāhe + condition med.
+  note: null
+- id: ZAL-Q0747
+  loc: § 220 / L2866
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Деепричастия играют, таким образом, почти такую же синтаксическую роль, как в русском (по
+    смыслу они обычно равны русским деепричастиям прошедшего времени, реже --- настоящего): idaṁ vacaḥ
+    çrutvā so \''bravīt *услышав эту речь, он сказал*. Синтаксическое отличие санскрита от русского (где
+    смысловое подлежащее деепричаст'
+  human_anchored: false
+  human_anchor: null
+  note: 'impressionistic: gerund past-vs-present meaning tendency'
+- id: ZAL-Q0015
+  loc: § 4 / L110
+  axis: rarity
+  q: чрезвычайно редко
+  auto_anchored: true
+  auto_anchor: §
+  context: 'Шумные фрикативные: s --- русск. *с*; ṣ --- церебральный звук, близкий к русск. *ш*; ç ---
+    палатальный звук, близкий к русск. мягкому краткому *щ* (например, в *сообщник, общность*), польск.
+    ś; h --- звонкое нем. или англ. h; ḥ (так наз. висарга) --- глухое нем. или англ. h. Примечание. Двухбуквенная
+    запись для обознач'
+  human_anchored: true
+  human_anchor: §4 + named consonants
+  note: null
+- id: ZAL-Q0437
+  loc: § 119 / L1978
+  axis: rarity
+  q: редко
+  auto_anchored: true
+  auto_anchor: §
+  context: Большинство глаголов с презенсом на ya непереходны и обозначают состояние (ср. § 160). <span
+    id="s119"></span>**§ 119**. **Презенс с суффиксом** aya. У первичных глаголов представлен очень редко.
+    Таковы практически только основы hvaya- (из hvā-aya-, § 55, п. 1), çvaya-, vaya-, vyaya-, dhaya- от
+    √hvā *звать*, √çvā *пухн
+  human_anchored: true
+  human_anchor: §119 + suffix aya + form hvaya-
+  note: null
+- id: ZAL-Q0002
+  loc: § 1 / L48
+  axis: subset
+  q: в ряде областей
+  auto_anchored: false
+  auto_anchor: null
+  context: 03/04/2017 v.0.0 <span id="s1"></span>**§ 1.** Санскрит (saṁskṛta *обработанный, доведенный
+    до совершенства*) --- литературный древнеиндийский язык. Принадлежит к индийской группе индоевропейских
+    языков. Язык богатейшей литературы. Используется в Индии в ряде областей культурной жизни до настоящего
+    времени. Более архаи
+  human_anchored: false
+  human_anchor: null
+  note: 'intro: sociolinguistic, non-grammatical'
+- id: ZAL-Q0160
+  loc: § 44 / L632
+  axis: subset
+  q: в ряде случаев
+  auto_anchored: false
+  auto_anchor: null
+  context: '2\. Перед глухими согласными s и r дают: s --- перед t, th; ṣ --- перед ṭ, ṭh; ç --- перед
+    c, ch; ḥ --- перед прочими глухими согласными. Примеры: nalas tu *Наль же*, cakṣus te *твой глаз*
+    (сохранение s); antar + tāpa- → antastāpa- *внутреннее тепло*; vṛkas ca → vṛkaç ca *и волк*, pitur
+    ca → pituç ca *и отца*; agnis ço'
+  human_anchored: true
+  human_anchor: s/r sandhi rule + condition + forms
+  note: null
+- id: ZAL-Q0497
+  loc: § 142 / L2250
+  axis: subset
+  q: некоторых
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Особый случай: asthat *бросил* (от √as *бросать*). <span id="s142"></span>**§ 142**. **Аорист
+    3** (тематический с удвоением), например: 3 sg ajijanat *родил* (от √jan), adīdṛçat *показал* (от
+    √darç), acucudat *побудил* (от √cud), atitvarat *поторопил* (от √tvar). Корень обычно представлен
+    в слабой ступени (но открытые '
+  human_anchored: true
+  human_anchor: §142 + аорист 3 + roots √jan/√darç
+  note: null
+- id: ZAL-Q0816
+  loc: § 242 / L3022
+  axis: subset
+  q: Некоторое
+  auto_anchored: false
+  auto_anchor: null
+  context: <span id="s242"></span>**§ 242**. Лексика санскрита служит для современных языков Индии таким
+    же источником пополнения словарного состава и средством формирования новых терминов, как латынь и
+    греческий для языков Европы или арабский для языков стран ислама. Например, в хинди подавляющая часть
+    абстрактной лексики заимст
+  human_anchored: false
+  human_anchor: null
+  note: lexical/sociolinguistic (§242)
+- id: ZAL-Q0034
+  loc: § 9 / L144
+  axis: subset
+  q: отдельно
+  auto_anchored: true
+  auto_anchor: §
+  context: <span id="s9"></span>**§ 9.** В ведийском языке существовало разноместное подвижное тоническое
+    ударение, которое отражалось в графике. В послеведийский период никаких знаков ударения в графике
+    не используется; по-видимому, древнее тоническое ударение постепенно утратилось (хотя вопрос о том,
+    когда это произошло, остает
+  human_anchored: true
+  human_anchor: §9 + accent
+  note: null
+- id: ZAL-Q0313
+  loc: § 78 / L1052
+  axis: subset
+  q: большинства
+  auto_anchored: true
+  auto_anchor: §
+  context: <span id="s77"></span>**§ 77.** Важнейшими для склонения являются трехступенчатые чередования
+    (§ 50). Они возможны здесь только в морфеме, непосредственно предшествующей окончанию (т. е. в основообразующем
+    элементе или суффиксе у обычных имен, в корне --- у корневых). <span id="s78"></span>**§ 78**. Основной
+    тип чередо
+  human_anchored: true
+  human_anchor: §77/§50 + condition (morpheme before ending)
+  note: null
+- id: ZAL-Q0012
+  loc: § 4 / L76
+  axis: universal
+  q: лишь
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Слогообразующие плавные: ṛ, ṝ, ḷ (древнеиндийские грамматисты рассматривают также звук ḷ *долгое*,
+    но он реально не встречается). Звук ṛ сходен со слогообразующим *р* в русск. *бодрствующий* (см. также
+    ниже о согласной r); ṝ --- то же с долготой. Звук ḷ сходен со слогообразующим l в англ*.* able*,*
+    settled*.* <span id='
+  human_anchored: true
+  human_anchor: phonemes ṛ/ṝ/ḷ
+  note: null
+- id: ZAL-Q0229
+  loc: § 62 / L844
+  axis: universal
+  q: всегда
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Полноизменяемые корни в нормальном случае реально встречаются во всех трех ступенях. Несколько
+    упрощенно поведение полноизменяемых корней можно представить так: в определенной группе грамматических
+    форм и словообразовательных типов все они выступают в слабой ступени, в другой группе --- в ступени
+    guṇa, в третьей --- в '
+  human_anchored: true
+  human_anchor: полноизменяемые корни + three grades
+  note: null
+- id: ZAL-Q0522
+  loc: § 153 / L2440
+  axis: universal
+  q: только
+  auto_anchored: false
+  auto_anchor: null
+  context: '``` Образцу √dā следуют все корни на ā, образцу √tan --- корни с основой слабых форм по §
+    152 (типа ten-). В выборе окончаний (с i или без i) образцу √yuj следуют все корни, не имеющие vṛddhi
+    в 3 sg act,, образцу √kar --- только √bhar *нести*, √sar *бежать, течь*, √var *выбирать*, √stu *хвалить*,
+    √çru *слышать*, √sru *'
+  human_anchored: true
+  human_anchor: model roots √dā/√kar + condition на ā + §152
+  note: null
+- id: ZAL-Q0018
+  loc: § 6 / L114
+  axis: universal
+  q: все
+  auto_anchored: true
+  auto_anchor: §
+  context: <span id="s5"></span>**§ 5.** Помимо собственно согласных, графикой отражается также лишенный
+    смычки носовой призвук после гласной --- так наз. анусвáра. В транслитерации анусвара обычно передается
+    через m с точкой (вверху или внизу) ṁ. Но иногда из практических соображений (ср. § 7) она передается
+    двояко, в зависимост
+  human_anchored: true
+  human_anchor: §5
+  note: sectional anchor
+- id: ZAL-Q0333
+  loc: § 84 / L1216
+  axis: universal
+  q: всегда
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'Особые случаи. 1. sakhi- (m) *друг* отклоняется от образца agni- в следующих формах: sg.N.
+    sakhā, A. sakhāyam, I. sakhyā, D. sakhye, Abl.G. sakhyuḥ, L. sakhyau; N.V.A.du sakhāyau; N.V.pl sakhāyaḥ
+    (чередование подтипа dātar, § 79, п. 1). 2\. pati- (m) в значении *супруг* имеет в sg I. patyā, D.
+    patye, Abl.G. patyuḥ, L. '
+  human_anchored: true
+  human_anchor: forms sakhi/agni + declension + §79
+  note: null
+- id: ZAL-Q0500
+  loc: § 142 / L2254
+  axis: universal
+  q: только
+  auto_anchored: true
+  auto_anchor: тип
+  context: 'Особые случаи: apaptat *упал* (от √pat), avocat *сказал* (от √vac). Аорист 3 обычно выступает
+    как аорист каузатива (ср. переводы примеров), хотя и образуется непосредственно от корня. Формальная
+    связь с основой каузатива обнаруживается только в нескольких случаях типа ajījñapat (или ajijñipat)
+    *сообщил* от jñāpay-, jña'
+  human_anchored: true
+  human_anchor: аорист 3 + caus. + forms apaptat/avocat
+  note: null

@@ -1,0 +1,428 @@
+# quantifiers.sample.yml — hand-verified (H800 D3). Adjudicator: Opus 4.8 (claude-opus-4-8).
+# human_anchored is the reviewer's read of whether the quantifier is tied to a decidable
+# target (named class/type/§/position/series/grade/affix/form/condition/number). 'lexicon-FP'
+# notes flag matches that are not genuine scope quantifiers. build_quantifiers.py reads this.
+work: Kochergina, Учебник санскрита, 1998
+sample_of: KocherginaUchebnik_1998/quantifiers.yml
+sample:
+- id: KOC-Q0038
+  loc: Занятие I / L237
+  axis: frequency
+  q: распространенным
+  auto_anchored: false
+  auto_anchor: null
+  context: 1\. Письмо devanāgarī В Индии используется несколько видов письма. Наиболее распространенным
+    является *письмо devanāgarī*, которым записано большинство памятников на древнеиндийских языках. Письмо
+    devanāgarī используется и в современном индийском языке хинди. Письмо devanāgarī древнеиндийского
+    языка является слоговым п
+  human_anchored: true
+  human_anchor: devanāgarī (script)
+  note: philological, not a grammar rule
+- id: KOC-Q0111
+  loc: Занятие XIV / L2970
+  axis: frequency
+  q: часто
+  auto_anchored: false
+  auto_anchor: null
+  context: '``` Наиболее часто, однако, употребляются формы 2-го лица. Следует запомнить следующие формы:
+    <u>Parasmaipada:</u>'
+  human_anchored: true
+  human_anchor: форма 2-го лица
+  note: null
+- id: KOC-Q0288
+  loc: Занятие XXXIII / L8800
+  axis: frequency
+  q: обычно
+  auto_anchored: false
+  auto_anchor: null
+  context: \"Пока ты являешься (моим) защитником, (у меня) нет страха\" - tvayi rakṣitari (sati) mama
+    bhayaṃ na asti. Конструкция <u>genetivus absolutus</u> эквивалентна уступительному придаточному предложению
+    и обозначает действие, совершающееся вопреки действию, выражаемому спрягаемым глаголом. При этом обычно
+    употребляется неи
+  human_anchored: true
+  human_anchor: genetivus absolutus + condition
+  note: null
+- id: KOC-Q0082
+  loc: Занятие IX / L1707
+  axis: frequency
+  q: распространенным
+  auto_anchored: true
+  auto_anchor: склонение
+  context: Склонение существительных с основой на -a. Существительные с основой на -a составляют большую
+    часть всех существительных в древнеиндийском языке. Склонение существительных с основой на -a является
+    самым распространенным видом склонения. Существительные с основой на -a являются существительными
+    мужского и среднего рода.
+  human_anchored: true
+  human_anchor: склонение основ на -a
+  note: null
+- id: KOC-Q0224
+  loc: Занятие XXIX / L7446
+  axis: frequency
+  q: нередко
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'ud \"из, на \...\", úttara \"высший\", uttáma \"самый высший, крайний\". Степени сравнения
+    нередко образуются от таких основ присоединением суффиксов -ra (в сравнительной степени) и -ma (в
+    превосходной степени). Например:'
+  human_anchored: true
+  human_anchor: суффиксы -ra/-ma
+  note: null
+- id: KOC-Q0297
+  loc: Занятие XXXV / L9144
+  axis: frequency
+  q: обычно
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: '2. Деноминативные глаголы. <u>Деноминативные глаголы</u> - производные от имен существительных
+    и, реже, прилагательных. Отыменные глаголы имеют значения, различным образом связанные со значением
+    исходных имен. Основа отыменного глагола образуется прибавлением к основе имени суффикса -yá. Конечные
+    гласные основы -i, -u '
+  human_anchored: true
+  human_anchor: деноминативные глаголы + основа
+  note: null
+- id: KOC-Q0051
+  loc: Занятие IV / L799
+  axis: optionality
+  q: могут
+  auto_anchored: false
+  auto_anchor: null
+  context: '1. Написание гласных e и o, дифтонгов и слоговых ṛ, ḷ. Гласные дифтонгического происхождения
+    e и o являются долгими гласными. Они могут чередоваться с дифтонгами (подробнее о чередовании гласных
+    - в Занятии XIII): e // ai, o // au. Связь e с ai, o с au видна в закономерностях их графического
+    изображения. Написание e, a'
+  human_anchored: true
+  human_anchor: формы e/o, e//ai o//au
+  note: null
+- id: KOC-Q0163
+  loc: Занятие XIX / L4688
+  axis: optionality
+  q: могло
+  auto_anchored: false
+  auto_anchor: null
+  context: 3\. Образование форм conditionalis. От основы будущего времени образуется сравнительно редко
+    употребляемое в санскрите наклонение <u>conditionalis.</u> Оно обозначает нереальное действие (которое
+    при определенных условиях могло бы произойти в прошлом) и употребляется в обеих частях условного предложения.
+    Формы conditio
+  human_anchored: false
+  human_anchor: null
+  note: 'lexicon-FP: object-language modality in the conditionalis definition'
+- id: KOC-Q0262
+  loc: Занятие XXXII / L8474
+  axis: optionality
+  q: могут
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Например: sarvabhūtahita *n* \"счастье всех существ\" - sarva-bhūta \"все существующее, все
+    существа\" - сложение типа karmadhāraya; sarvabhūta-hita \"счастье всех существ\" - сложение типа
+    tatpuruṣa. Сложение **<u>dvandva</u>**, значение термина - \"два и два\". Слова dvandva являются соединением
+    основ однородных член'
+  human_anchored: true
+  human_anchor: compound types karmadhāraya/tatpuruṣa/dvandva
+  note: null
+- id: KOC-Q0363
+  loc: Занятие XXXX / L10664
+  axis: optionality
+  q: может
+  auto_anchored: false
+  auto_anchor: null
+  context: 'pura *n* \"крепость\" - pratipura *n* \"неприятельская крепость\". Существительное может передавать,
+    во-вторых, подобие, как бы отражение того, что выражает производящая основа: dāna *n* \"дар\" - pratidāna
+    *n* \"ответный дар\",'
+  human_anchored: true
+  human_anchor: prati- derivation + pratidāna
+  note: null
+- id: KOC-Q0070
+  loc: Занятие VII / L1397
+  axis: optionality
+  q: возможности
+  auto_anchored: true
+  auto_anchor: правило
+  context: Упражнения I. Напишите шрифтом devanāgarī, соединив слова по правилам saṃdhi; не забудьте о
+    возможности слитного написания слов. > 1\. evam astu iti - \"да будет так\";\
+  human_anchored: false
+  human_anchor: null
+  note: 'lexicon-FP: exercise instruction, ''возможность'' as noun'
+- id: KOC-Q0153
+  loc: Занятие XVIII / L4317
+  axis: optionality
+  q: возможно
+  auto_anchored: true
+  auto_anchor: спряжение
+  context: sad \"сидеть\" → satsyá-, sādh \"достигать\" → sātsyá-, vas \"жить\" → vatsyá-, но возможно
+    и vasiṣyá-. 3\. Спряжение в простом будущем времени.
+  human_anchored: true
+  human_anchor: future forms satsyá/vasiṣyá + спряжение
+  note: null
+- id: KOC-Q0308
+  loc: Занятие XXXVI / L9398
+  axis: productivity
+  q: регулярное
+  auto_anchored: false
+  auto_anchor: null
+  context: 2\. Словообразование от основ дезидеративных глаголов. От основ дезидеративных глаголов происходит
+    регулярное образование прилагательных и существительных. Прилагательные образуются от основы дезидератива
+    прибавлением суффикса -u вместо тематического -a основы.
+  human_anchored: true
+  human_anchor: desiderative + suffix -u
+  note: null
+- id: KOC-Q0080
+  loc: Занятие IX / L1703
+  axis: productivity
+  q: продуктивным
+  auto_anchored: true
+  auto_anchor: склонение
+  context: 'В зависимости от исходного звука все именные основы делятся на две группы: основы на гласные
+    и основы на согласные. Соответственно двум группам основ существует два главных типа склонения: склонение
+    основ на гласные и склонение основ на согласные. Склонение основ на гласные охватывает бо́льшую часть
+    основ и является на'
+  human_anchored: true
+  human_anchor: склонение основ на гласные
+  note: null
+- id: KOC-Q0128
+  loc: Занятие XVI / L3490
+  axis: productivity
+  q: непродуктивным
+  auto_anchored: true
+  auto_anchor: класс
+  context: Классы глаголов II главного спряжения. **<u>Класс II</u>** называется корневым, т. к. личные
+    окончания присоединяются непосредственно к корню глагола. Этот класс постепенно делается непродуктивным,
+    но ко II классу относятся несколько очень употребительных глаголов:\ P. as \"быть\",
+  human_anchored: true
+  human_anchor: Класс II
+  note: null
+- id: KOC-Q0368
+  loc: Занятие XXXX / L10708
+  axis: productivity
+  q: продуктивными
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'ojas *n* \"сила\" - udojas \"очень сильный, мощный\". Для образования десубстантивных прилагательных
+    особенно продуктивными оказываются префиксы vi-, nis- и ud-. Прилагательные с **<u>vi</u>**- и, реже,
+    с **<u>nis</u>**- выражают отсутствие того, что обозначает исходное существительное:'
+  human_anchored: true
+  human_anchor: prefixes vi-/nis-/ud-
+  note: null
+- id: KOC-Q0043
+  loc: Занятие II / L516
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: '2\. \"Ослабленные\" согласные. Virāma. В санскрите имеются особые обозначения для так называемых
+    ослабленных согласных: visarga - графическое изображение звука ḥ, возникающего из s (реже r) в конце
+    предложения и в конце слова или префикса перед некоторыми согласными: taḥ तः, maḥ मः, vaḥ वः. В именительном
+    падеже единст'
+  human_anchored: true
+  human_anchor: phonemes s/r + condition
+  note: null
+- id: KOC-Q0261
+  loc: Занятие XXXII / L8474
+  axis: rarity
+  q: реже
+  auto_anchored: false
+  auto_anchor: null
+  context: 'Например: sarvabhūtahita *n* \"счастье всех существ\" - sarva-bhūta \"все существующее, все
+    существа\" - сложение типа karmadhāraya; sarvabhūta-hita \"счастье всех существ\" - сложение типа
+    tatpuruṣa. Сложение **<u>dvandva</u>**, значение термина - \"два и два\". Слова dvandva являются соединением
+    основ однородных член'
+  human_anchored: true
+  human_anchor: compound types karmadhāraya/tatpuruṣa/dvandva
+  note: null
+- id: KOC-Q0311
+  loc: Занятие XXXVI / L9418
+  axis: rarity
+  q: редко
+  auto_anchored: false
+  auto_anchor: null
+  context: 3\. Интенсивные глаголы. Фреквентативные (или интенсивные) глаголы[^53] выражают повторяемость
+    или интенсивность действия, обозначаемого корнем. Они могут быть образованы только от односложных
+    корней, начинающихся с согласной. Фреквентативы встречаются в санскрите редко. Основа фреквентативных
+    глаголов образуется от уд
+  human_anchored: false
+  human_anchor: null
+  note: 'impressionistic: ''фреквентативы встречаются редко'' — broad category, no decidable set'
+- id: KOC-Q0351
+  loc: Занятие XXXIX / L10421
+  axis: rarity
+  q: изредка
+  auto_anchored: false
+  auto_anchor: null
+  context: 2\. Префиксальное словообразование глаголов. Примерно третья часть глаголов санскрита - префиксальные
+    глаголы. Префиксы сформировались из древних превербов, которые в ведийском языке были самостоятельными
+    словами. Они могли стоять как перед, так и после глагола в контактном или дистактном положении по
+    отношению к нему.
+  human_anchored: true
+  human_anchor: prefixes/preverbs (Vedic)
+  note: null
+- id: KOC-Q0052
+  loc: Занятие IV / L805
+  axis: rarity
+  q: редко
+  auto_anchored: true
+  auto_anchor: правило
+  context: 'Слоговые ṛ и ḷ в начале слов обозначаются: ऋ (\\)R, ॠ (§)ṝ, लृ ḷ, लॄ ḹ. ṝ и ḷ употребляются
+    очень редко, ḹ практически не употребляется. Правила написания'
+  human_anchored: true
+  human_anchor: phonemes ṝ/ḷ/ḹ
+  note: null
+- id: KOC-Q0292
+  loc: Занятие XXXV / L9047
+  axis: rarity
+  q: редких
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'śru → śrāváya- \"заставлять слушать, давать слушать\". Следует заметить, что глаголы на -am,
+    глаголы jan, tvar (\"спешить\") и несколько более редких имеют гласную в ступени guṇa: gamáya-, janáya-,
+    tvaráya-. Корни, оканчивающиеся на -ā, -e, -ai, -au присоединяют суффикс -páya при этом -e и дифтонги
+    заменяются на -ā.'
+  human_anchored: true
+  human_anchor: verbs jan/tvar + suffix -am + guṇa
+  note: null
+- id: KOC-Q0039
+  loc: Занятие I / L237
+  axis: subset
+  q: большинство
+  auto_anchored: false
+  auto_anchor: null
+  context: 1\. Письмо devanāgarī В Индии используется несколько видов письма. Наиболее распространенным
+    является *письмо devanāgarī*, которым записано большинство памятников на древнеиндийских языках. Письмо
+    devanāgarī используется и в современном индийском языке хинди. Письмо devanāgarī древнеиндийского
+    языка является слоговым п
+  human_anchored: true
+  human_anchor: devanāgarī (manuscripts)
+  note: philological
+- id: KOC-Q0124
+  loc: Занятие XV / L3281
+  axis: subset
+  q: некоторые
+  auto_anchored: false
+  auto_anchor: null
+  context: 'у некоторых корней на ā перед тематической гласной -a ā → i(y). Глагол iṣ \"искать, желать\"
+    и некоторые другие образуют основу настоящего времени с суффиксом cch: P. iṣ - icchá- Основа настоящего
+    времени глаголов **<u>IV класса</u>** образуется путем прибавления к корню глагола в слабом звуковом
+    виде суффикса -ya. Уда'
+  human_anchored: true
+  human_anchor: roots on -ā + verb iṣ + suffix cch + IV класс
+  note: null
+- id: KOC-Q0268
+  loc: Занятие XXXIII / L8661
+  axis: subset
+  q: некоторые
+  auto_anchored: false
+  auto_anchor: null
+  context: '1\. Основосложение: особые случаи образования и употребления основ. Входя в состав сложного
+    слова, некоторые основы и корни изменяются. <u>В конце сложного слова:</u>'
+  human_anchored: true
+  human_anchor: compound-formation condition
+  note: null
+- id: KOC-Q0079
+  loc: Занятие IX / L1703
+  axis: subset
+  q: часть основ
+  auto_anchored: true
+  auto_anchor: склонение
+  context: 'В зависимости от исходного звука все именные основы делятся на две группы: основы на гласные
+    и основы на согласные. Соответственно двум группам основ существует два главных типа склонения: склонение
+    основ на гласные и склонение основ на согласные. Склонение основ на гласные охватывает бо́льшую часть
+    основ и является на'
+  human_anchored: true
+  human_anchor: склонение основ на гласные
+  note: null
+- id: KOC-Q0137
+  loc: Занятие XVII / L3874
+  axis: subset
+  q: отдельных
+  auto_anchored: true
+  auto_anchor: спряжение
+  context: '**Индивидуальные особенности некоторых глаголов второго главного спряжения.** При образовании
+    основ настоящего времени и при спряжении у отдельных глаголов второго главного спряжения наблюдаются
+    индивидуальные особенности. Рассмотрим их у наиболее часто встречающихся глаголов. II класс.'
+  human_anchored: true
+  human_anchor: второе главное спряжение
+  note: null
+- id: KOC-Q0304
+  loc: Занятие XXXVI / L9319
+  axis: subset
+  q: некоторых
+  auto_anchored: true
+  auto_anchor: аффикс
+  context: 'kṣi \"обитать\" → cikṣī-ṣa-, śru \"слышать\" → śuśrū-ṣa-. Конечные слоги: -ar → īr, ūr (после
+    губных); в некоторых корнях -am → -ām, -an → -ān; в корне han \"убивать\" a → ā. Например:'
+  human_anchored: true
+  human_anchor: suffixes -am/-an + condition + root han
+  note: null
+- id: KOC-Q0040
+  loc: Занятие I / L239
+  axis: universal
+  q: каждый
+  auto_anchored: false
+  auto_anchor: null
+  context: В Индии используется несколько видов письма. Наиболее распространенным является *письмо devanāgarī*,
+    которым записано большинство памятников на древнеиндийских языках. Письмо devanāgarī используется
+    и в современном индийском языке хинди. Письмо devanāgarī древнеиндийского языка является слоговым
+    письмом, т. е. в нем од
+  human_anchored: true
+  human_anchor: devanāgarī sign system
+  note: philological
+- id: KOC-Q0116
+  loc: Занятие XV / L3198
+  axis: universal
+  q: все
+  auto_anchored: false
+  auto_anchor: null
+  context: Первое главное спряжение. В системе спряжения санскрита формы настоящего времени, прошедшего
+    imperfectum, желательного и повелительного наклонений образуют систему настоящего времени, так как
+    все эти формы образуются от одной и той же основы глагола, от <u>основы настоящего времени</u>. По
+    способам образования основ на
+  human_anchored: true
+  human_anchor: система настоящего времени + single stem
+  note: null
+- id: KOC-Q0201
+  loc: Занятие XXVI / L6486
+  axis: universal
+  q: каждый
+  auto_anchored: false
+  auto_anchor: null
+  context: '> yatamá \"который (из многих)\" > > sárva \"весь, целый; каждый\" (но в N.A.sg. *n = m*).
+    Прилагательные pára \"другой, дальний\" и pū́rva \"передний\" склоняются как по именному, так и по
+    местоименному склонению.'
+  human_anchored: false
+  human_anchor: null
+  note: 'lexicon-FP: ''каждый'' is the Russian gloss of pronoun sárva'
+- id: KOC-Q0385
+  loc: Занятие XXXX / L10942
+  axis: universal
+  q: лишь
+  auto_anchored: false
+  auto_anchor: null
+  context: Одной из лучших и наиболее полных индийских грамматик санскрита является книга М.Р. Кале (2).
+    Из многочисленных работ по санскриту, созданных за пределами Индии, назову лишь грамматики В.Д. Уитни
+    (3) (на английском), Л. Рэну (4) (на французском) и Я. Вакернагеля - А. Дебруннера (5) (на немецком
+    языке). Постоянно придет
+  human_anchored: false
+  human_anchor: null
+  note: 'bibliographic: ''назову лишь'' names grammars, not a grammar-rule quantifier'
+- id: KOC-Q0042
+  loc: Занятие I / L390
+  axis: universal
+  q: каждый
+  auto_anchored: true
+  auto_anchor: правило
+  context: 'Упражнения I. Напишите каждый графический знак несколько раз, строго соблюдая правила написания.
+    > II\. Напишите шрифтом devanāgarī:'
+  human_anchored: false
+  human_anchor: null
+  note: 'lexicon-FP: exercise instruction'
+- id: KOC-Q0132
+  loc: Занятие XVI / L3566
+  axis: universal
+  q: всех
+  auto_anchored: true
+  auto_anchor: спряжение
+  context: 'При спряжении глаголов IX класса перед личными окончаниями, начинающимися с гласной, гласная
+    суффикса выпадает. При спряжении всех глаголов II главного спряжения наблюдается несколько форм, отличающих
+    эти глаголы от глаголов I главного спряжения: 1) В Parasmaipada личное окончание настоящего времени
+    3 л. pl. -anti, в i'
+  human_anchored: true
+  human_anchor: II главного спряжения
+  note: null

@@ -1,0 +1,48 @@
+{
+  "book": "ZalizniakKonspekt_2004",
+  "work": "Zalizniak, Конспект грамматических сведений, 2004",
+  "lang": "ru",
+  "grammar_hits": 92,
+  "grammar_lines": 65,
+  "density_grammar": 1.415,
+  "density_total": 0.14,
+  "anchored_share": 50.0,
+  "axis": {
+    "universal": 38,
+    "frequency": 17,
+    "optionality": 17,
+    "rarity": 12,
+    "subset": 7,
+    "productivity": 1
+  },
+  "anchor_types": {
+    "аффикс": 29,
+    "склонение": 5,
+    "тип": 4,
+    "класс": 4,
+    "правило": 3,
+    "спряжение": 1
+  },
+  "sensitivity": {
+    "6": 39.1,
+    "8": 50.0,
+    "12": 55.4,
+    "16": 62.0,
+    "25": 69.6,
+    "40": 79.3
+  },
+  "generated": "13-07-2026",
+  "sample": {
+    "n": 29,
+    "tp": 10,
+    "fp": 1,
+    "fn": 15,
+    "tn": 3,
+    "precision": 90.9,
+    "recall": 40.0,
+    "agreement": 44.8,
+    "human_share": 86.2,
+    "miss_rate": 0.8333,
+    "lexicon_fp": 1
+  }
+}

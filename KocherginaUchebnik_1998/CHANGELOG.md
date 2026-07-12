@@ -8,6 +8,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Quantifier metalanguage register (H800)** — `quantifiers.yml` per source → generated
+  `QUANTIFIER_PROFILE.md` (via `scripts/harvest_quantifiers.py` + `scripts/build_quantifiers.py`,
+  `npm run quantifiers`). Every metalanguage quantifier (редко / обычно / только / некоторые /
+  могут / всегда …) harvested and tagged anchored/unanchored by an auto-proxy, calibrated
+  against a hand-verified stratified sample (`quantifiers.sample.yml`, adjudicator Opus 4.8).
+  Extends `GRADATION_METALANGUAGE_KOCHERGINA.md` with the three missing quantifier classes
+  (modality/optionality, indefinite subset, hedged universals) and a measured four-way
+  comparison against Zalizniak's Ocherk 1978 / Konspekt 2004 / Morphology 1975. Findings:
+  per-quantifier anchoredness is high and *similar* across the three descriptive grammars
+  (~83–88 % by hand count) — the crisp "hers hang on nothing" thesis is not supported; the
+  real discriminators are density (~1.5–2× per grammar-prose line, not 9×) and anchor *type*
+  (Kochergina anchors on affixes/forms with **0 % §**; the 1975 classification on its numbered
+  formal calculus, **90 %**).
 
 ## [0.3.0] - 2026-07-12
 ### Added
