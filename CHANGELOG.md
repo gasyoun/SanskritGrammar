@@ -19,6 +19,13 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
+  H627, Fable 5 `claude-fable-5`): три селектируемых типизированных контура
+  (исследовательский · образовательный · агентный) над 7 value-ступенями и
+  10 ребрами bundle, роли источник/данные/продукт/отдача/мультипликатор без
+  смешения, доказуемость каждого звена ребром bundle + свидетельством,
+  Mermaid-объяснение с accTitle/accDescr и табличный эквивалент
+  (`sangram/atlas/value-chain.mdx` + `src/components/AtlasValueChain/`).
 - **Sangram editorial + i18n contract (C4, H633)**: article manifest schema
   ([sangram/editorial/data/article.schema.json](sangram/editorial/data/article.schema.json)),
   fixture, validator (`python scripts/article_validate.py --self-test`) and the
