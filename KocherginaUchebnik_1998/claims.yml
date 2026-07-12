@@ -26,7 +26,8 @@
 # harvest HK-7..HK-42 (all 40 Занятия swept, lesson order). The four DCS-computed additions
 # (HK-17 imperative person, HK-23 conditional, HK-29 PPP suffix, HK-39 precative) are reproduced
 # by verify_claims_dcs.py; the remaining additions are adjudicated against Whitney 1889.
-# This file = the VERIFIED register (42 verdicted claims). The granular full-textbook HARVEST
+# This file = the VERIFIED register: 43 entries across 42 numbered HK-claims (HK-4 splits into
+# HK-4a universality + HK-4b allomorphy). The granular full-textbook HARVEST
 # BACKLOG (223 raw falsifiable candidates from the 6-reader sweep) is in claims_harvest.yml;
 # build_claims.py renders both, deduping backlog rows whose loc is already promoted here.
 #

@@ -27,9 +27,9 @@ true against the corpus and the reference grammar (Whitney 1889); the textbook i
 The contribution of this paper is the minority it is not: the 12 assertions (27.9%) whose fact-verdict
 is *overstated* or *false* — the set of claims *the corpus does not confirm*. We give each such
 divergence a class drawn from a four-way typology (over-generalisation, rule-real-but-marginal,
-system-vs-usage, flat contradiction) and show that the divergence class predicts the pedagogical
-failure mode: over-generalisations read as *misleading*, frequency/conditioning divergences read as
-*frequency-hidden*. The exemplar is the future stem, taught as a single rule in `-syá` while the
+system-vs-usage, flat contradiction) and show that the divergence class aligns closely with the
+pedagogical failure mode: over-generalisations read as *misleading*, frequency/conditioning
+divergences read as *frequency-hidden*. The exemplar is the future stem, taught as a single rule in `-syá` while the
 allomorph demoted to a "variant," the *seṭ* form `-iṣya`, is in fact the majority realisation (56.8%
 of 2,618 attested future stems). The method — a reproducible two-axis register adjudicated against a
 frequency corpus — and the typology generalise to any grammar whose ordering predates corpus
@@ -73,11 +73,27 @@ extension.
 ## 2. Related work
 
 **The corpus and its counts.** The empirical spine of this work is the Digital Corpus of Sanskrit
-(DCS; Hellwig 2010–2021), the standard lemmatised, morphologically annotated corpus of the language,
-and the neural segmentation and analysis pipeline built around it (Hellwig and Nehrdich 2018;
-ByT5-Sanskrit, Nehrdich et al. 2024). This literature *supplies* corpus frequencies and makes them
-reliable; it does not adjudicate grammatical description against them. Our register consumes DCS-2021
-counts and does not re-derive them.
+(DCS; Hellwig, 2010–, DCS-2021 release), the standard lemmatised, morphologically annotated corpus of
+the language, and the neural segmentation and analysis pipeline built around it (Hellwig and Nehrdich
+2018; ByT5-Sanskrit, Nehrdich et al. 2024). This literature *supplies* corpus frequencies and makes
+them reliable; it does not adjudicate grammatical description against them. Our register consumes
+DCS-2021 counts and does not re-derive them.
+
+**Corpus-based evaluation of teaching materials.** Measuring a pedagogical text against a corpus is an
+established programme in corpus and applied linguistics: since Nation's (2001) work on frequency-based
+vocabulary selection, studies routinely compare a textbook's vocabulary or grammatical coverage against
+corpus-frequency lists to judge what it foregrounds and what it omits (surveyed in a growing
+systematic-review literature). We share that programme's method — corpus frequency as the yardstick for
+a teaching artefact — but differ in *object*: that literature is overwhelmingly about *vocabulary* in
+*L2 coursebooks*, whereas we adjudicate the *categorical grammatical rules* of a *reference/pedagogical
+grammar*, and score each on a second, pedagogical axis rather than on a single coverage metric.
+
+**Descriptive vs prescriptive grammar.** The conceptual move — a grammar's categorical rule against
+what the corpus attests — is the corpus-linguistic distinction between *rules-as-regulations*
+(prescriptive) and *rules-as-regularities* (descriptive). Corpus-driven reference grammar (Biber et al.
+1999) repeatedly shows a canonical rule under- or over-stating attested usage. We inherit that framing,
+but apply it not to induce a descriptive grammar *de novo* — rather to *audit a specific named grammar*
+claim by claim against the corpus, with a reproducible register.
 
 **Difficulty and sequencing.** Work on ordering pedagogical material by difficulty (Arase et al. 2022)
 is methodologically adjacent — it too measures a teaching artefact against corpus evidence — but it is
@@ -87,11 +103,13 @@ trained on English and concerns *sequencing*, not the truth of categorical rules
 weak precedent for comparing grammars, and the mature stemmatic machinery for it lives in digital
 humanities venues rather than in computational linguistics.
 
-**The gap.** An ACL Anthology crosswalk finds no paper that adjudicates a grammar's *categorical rule*
-against corpus frequency, and none that treats the *seṭ/aniṭ* distinction — the lexical class that
-governs the future-stem allomorphy at the centre of our exemplar (§4.3) — as a corpus-adjudicated
-target. We state these as honest non-findings and do not cite into existence a literature that is not
-there. The present study occupies that gap for one grammar.
+**What is new here.** Against those traditions the contribution is narrow and specific — *not* "compare
+a textbook to a corpus," which is established. It is (a) the *target*: a reference grammar's categorical
+*rules*, not a coursebook's word list; (b) the two-axis fact/pedagogy register and the four-way
+divergence typology; and (c) the Sanskrit *seṭ/aniṭ* and ablaut targets, for which an ACL-Anthology
+crosswalk finds no paper treating them as a corpus-adjudicated classification target, and none
+adjudicating a Sanskrit grammar's categorical rule against corpus frequency. It is this last,
+Sanskrit-specific gap — not the general idea of textbook-vs-corpus comparison — that the paper occupies.
 
 ## 3. Data and method
 
@@ -125,8 +143,8 @@ priority rule:
   occurs, and whether it occurs at all.
 - **Whitney (1889)** is the authority for **systemic grammatical fact** — what the language's paradigm
   licenses, cited by section.
-- **Tolchelnikov-Talmud (2026)** is the authority for **root morphoclass** — which roots form which
-  categories.
+- **Tolchelnikov-Talmud (2026)** — the repository's root-morphoclass dataset — is the authority for
+  **root morphoclass**, i.e. which roots form which categories.
 
 When the three disagree, the disagreement is **flagged in the entry, never silently resolved**. This
 matters for exactly the claims this paper is about: several divergences are cases where the systemic
@@ -158,14 +176,16 @@ The pipeline is three hand-edited sources and two generators. `claims.yml` (the 
 `divergence_classes.yml` (the class layer) are the sources; `verify_claims_dcs.py` re-derives every DCS
 figure from the corpus tables, and `build_divergence_table.py` joins the register to the class layer
 and emits the central table and its aggregation, refusing to run if any *overstated/false* claim is
-left unclassified. Every number below is regenerable from these files.
+left unclassified. Every number below is regenerable from these files (Python 3 + PyYAML; corpus
+figures against the DCS-2021 release; Whitney 1889 cited by section).
 
 ## 4. Results
 
 ### 4.1 The textbook is accurate: a minority report
 
-Of the 43 verified assertions, the corpus confirms the large majority (Table 1). The point of the
-paper is the minority it does not.
+Of the 43 verified assertions — 43 register entries across 42 numbered claims, since the future stem
+yields two (a universality claim, HK-4a, and an allomorphy claim, HK-4b) — the corpus confirms the
+large majority (Table 1). The point of the paper is the minority it does not.
 
 **Table 1. Register composition (Kochergina 1998, 43 verified assertions).**
 
@@ -196,7 +216,7 @@ is [`TABLE_grammar-claims-corpus-denies_A60.md`](https://github.com/gasyoun/Sans
 | **1 Over-generalisation** | HK-4a | future "from ALL verbs by a single rule `-syá`" | OVERSTATED | productive (18,004 tokens) but **3 conditioned suffixes**, not one rule | MISLEADING |
 | **1** | HK-10 | finite verb "**never** accented" | OVERSTATED | accented in a subordinate clause & sentence-initially (Whitney §168) | MISLEADING |
 | **1** | HK-14 | "stems in `-ā` are feminine" | OVERSTATED | root/monosyllabic `-ā` stems + masc. proper nouns exist (§347ff) | MISLEADING |
-| **1** | HK-16 | "stems in `-ī` and `-ū` are **always** feminine" | **FALSE** | masc. **rathī, senānī, sudhī**, monosyll. **bhū-** attested (§343–352) | MISLEADING |
+| **1** | HK-16 | "stems in `-ī` and `-ū` are **always** feminine" | **FALSE** | masc. **rathī, senānī, sudhī**, monosyll. **bhū-** attested (§343–344, §352) | MISLEADING |
 | **1** | HK-25 | simple perfect "from **all** monosyllabic roots" | OVERSTATED | periphrastic-perfect roots **vid, ās** & long-vowel stems (§1070) | MISLEADING |
 | **1** | HK-34 | "gender of a compound = gender of its final stem" | OVERSTATED | **bahuvrīhi** tracks the referent, not the final stem (§1293ff) | MISLEADING |
 | **1** | HK-38 | root aorist "from **some** `-ā` roots and bhū" | OVERSTATED | source set is wider: **gam, sthā, dā, jñā, kram, dhā** (§829ff) | MISLEADING |
@@ -323,6 +343,15 @@ shown here and must not be assumed. In particular, the attribution of the future
 to Kochergina alone; whether Bühler, Knauer, or Zaliznyak present it identically is an empirical
 question the cross-grammar extension answers, not a shared framing to be cited in advance.
 
+**A single annotator.** Both codings the central finding rests on — the fact/pedagogy verdicts and the
+divergence class — were produced by one author-and-pipeline, with no second coder and no reported
+inter-annotator agreement. `verdict_pedagogy` and the divergence class are judgment calls, so the
+class⇄pedagogy correspondence (§4.5) should be read as one annotator's coherent scheme, not as an
+agreement-validated result. The remedy is a second independent coder on a sample of the register (and
+the cross-grammar re-annotation, where fresh material is coded by different hands); until then the
+finding is reported descriptively, and the numbers behind it — being mechanical counts over a public
+register — are at least fully reproducible even where the underlying labels are subjective.
+
 **The untestable bucket.** Three assertions are neither confirmed nor denied but *untestable* and are
 excluded from the divergence set: the claim that the thematic aorist is the most frequent aorist type
 (the DCS-2021 export does not tag aorists by formation type), and two assertions of precise percentages
@@ -361,12 +390,15 @@ the genre rather than about one book.
 
 - Arase, Y., Uchida, S., and Kajiwara, T. (2022). CEFR-Based Sentence Difficulty Annotation and
   Assessment. *EMNLP 2022*. [2022.emnlp-main.416](https://aclanthology.org/2022.emnlp-main.416/).
-- Hellwig, O. (2010–2021). *The Digital Corpus of Sanskrit (DCS)*. DCS-2021 release, CC BY.
+- Biber, D., Johansson, S., Leech, G., Conrad, S., and Finegan, E. (1999). *Longman Grammar of Spoken
+  and Written English*. Longman.
+- Hellwig, O. (2010–). *The Digital Corpus of Sanskrit (DCS)*. DCS-2021 release, CC BY.
 - Hellwig, O., and Nehrdich, S. (2018). Sanskrit Word Segmentation Using Character-level Recurrent and
   Convolutional Neural Networks. *EMNLP 2018*. [D18-1295](https://aclanthology.org/D18-1295/).
 - Hoenen, A. (2015). Lachmannian Archetype Reconstruction for Ancient Manuscript Corpora.
   *NAACL 2015*. [N15-1127](https://aclanthology.org/N15-1127/).
 - Kochergina, V. A. (1998). *Учебник санскрита* [Sanskrit Textbook]. Moscow.
+- Nation, I. S. P. (2001). *Learning Vocabulary in Another Language*. Cambridge University Press.
 - Nehrdich, S., Hellwig, O., and Keutzer, K. (2024). One Model is All You Need: ByT5-Sanskrit, a
   Unified Model for Sanskrit NLP Tasks. *Findings of EMNLP 2024*.
   [2024.findings-emnlp.805](https://aclanthology.org/2024.findings-emnlp.805/).
@@ -375,8 +407,9 @@ the genre rather than about one book.
 - Whitney, W. D. (1889). *Sanskrit Grammar*, 2nd ed. Leipzig / Cambridge, MA.
 
 _(Draft prose by Opus 4.8 (`claude-opus-4-8`), H773 Q3, 12-07-2026. Corpus figures reproduced by
-`verify_claims_dcs.py`; the central table by `build_divergence_table.py`. Awaiting `/paper-referee` +
-`/paper-author-pass`.)_
+`verify_claims_dcs.py`; the central table by `build_divergence_table.py`. Hostile referee pass applied
+12-07-2026 — see [`A60_review_opus48.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/A60_review_opus48.md).
+Awaiting `/paper-author-pass` (Fable 5) + a venue decision.)_
 
 ---
 
