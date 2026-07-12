@@ -1,188 +1,23 @@
 # claims_harvest.yml — bulk harvested falsifiable-assertion BACKLOG for KocherginaUchebnik_1998
 #
-# Companion to claims.yml (the curated, VERIFIED register). This file is the full-textbook
-# harvest (H768 scale-out, 12-07-2026): every falsifiable grammatical assertion swept from the
-# 15,756-line mdx by 6 parallel readers, in reading order. Each entry is a CANDIDATE awaiting
-# the two-axis verdict — verdict_fact is PENDING until a verifier fills the number.
+# Companion to claims.yml (the curated, VERIFIED register). This file WAS the full-textbook
+# harvest (H768 scale-out, 12-07-2026): 223 falsifiable grammatical assertions swept from the
+# 15,756-line mdx by 6 parallel readers, in reading order, each tagged kochergina_gives_number.
 #
-# build_claims.py renders these in a "Harvest backlog (pending verification)" section beneath the
-# verified table, so the register shows both what is confirmed and what is queued.
+# STATUS: FULLY DRAINED (H797, 12-07-2026). Every candidate has been verdicted on the two axes
+# (verdict_fact + verdict_pedagogy), given its number (systemic Whitney or reproducible DCS-2021),
+# an M.G. frequency footnote where Kochergina gives none and the corpus supplies one, and
+# PROMOTED into claims.yml (HK-1..HK-233). The backlog is now empty — see claims.yml for the
+# 234-claim verified register and CLAIMS_VERIFIED.md for the rendered two-axis table.
 #
-# Workflow: a verifier (Fable/Opus) takes a block, computes the DCS/Whitney number via
-# verify_claims_dcs.py, fills verdict_fact + number + verdict_pedagogy, and PROMOTES it into
-# claims.yml (removing it here). Where Kochergina gives no number (kochergina_gives_number:false)
-# and one is computable, add an mg_footnote (frequency added by M.G.).
+# build_claims.py still reads this file and renders any remaining candidates in a "Harvest
+# backlog" section beneath the verified table; with the list empty, no backlog section is shown.
+# If a future re-sweep surfaces new candidates, append them here (same schema) and re-run the
+# verifier -> promote loop.
 #
 # kochergina_gives_number: true  = she states a quantity/frequency (verify it)
 #                          false = she gives none (add it as an M.G. footnote where computable)
 
-work: "Kochergina, Учебник санскрита (Sanskrit textbook), 1998 — harvest backlog"
+work: "Kochergina, Учебник санскрита (Sanskrit textbook), 1998 — harvest backlog (fully drained, H797)"
 
-candidates:
-
-  # ===== Занятия I–VIII: phonology, sandhi, accent, verb-system overview (lines 1–1620) =====
-  - loc: "Занятие III / mdx line 635"
-    claim_ru: "ИЕ ā̆, ē̌, ō̌ совпали в ā̆; поэтому для санскрита характерно преобладание a и ā."
-    kind: statistic
-    falsifiable_as: "Phoneme frequency in DCS: a/ā are the most frequent vowels"
-    kochergina_gives_number: false
-  - loc: "Занятие IV / mdx line 806"
-    claim_ru: "ṝ и ḷ употребляются очень редко, ḹ практически не употребляется."
-    kind: statistic
-    falsifiable_as: "DCS tokens containing ṝ, ḷ, ḹ — confirm extreme rarity"
-    kochergina_gives_number: false
-  - loc: "Занятие V / mdx line 1073"
-    claim_ru: "Глухой t перед звонкими заднеязычного/зубного/губного рядов, y, r, v и гласными → звонкий d."
-    kind: rule
-    falsifiable_as: "final -t → -d before voiced velars/dentals/labials, y/r/v, vowels in DCS sandhi"
-    kochergina_gives_number: false
-  - loc: "Занятие VI / mdx line 1251"
-    claim_ru: "Частицы, энклитики-местоимения и verbum finitum в середине предложения никогда не носят ударения."
-    kind: universality
-    falsifiable_as: "Whitney/RV accent: particles, enclitic pronouns, mid-clause finite verbs unaccented"
-    kochergina_gives_number: false
-  - loc: "Занятие VI / mdx line 1272"
-    claim_ru: "Перед звонкими (кроме r) и гласными (но не после ā̆) -s → -r."
-    kind: rule
-    falsifiable_as: "-s → -r before voiced/vowels except after ā̆ and before r in DCS"
-    kochergina_gives_number: false
-  # ===== Занятия IX–XV: noun declension, present-system basics (lines 1620–3460) =====
-  - loc: "Занятие IX / mdx line 1707"
-    claim_ru: "Существительные с основой на -a составляют большую часть всех существительных; их склонение самое распространённое."
-    kind: statistic
-    falsifiable_as: "Share of a-stem nouns vs all noun stem-classes in DCS lemma inventory"
-    kochergina_gives_number: false
-  - loc: "Занятие IX / mdx line 1759"
-    claim_ru: "У основ среднего рода формы N. и A. во всех числах совпадают."
-    kind: universality
-    falsifiable_as: "Across all neuter stem-classes, Nom=Acc in sg/du/pl without exception, Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1879"
-    claim_ru: "Существительные с основой на -ā — женского рода."
-    kind: universality
-    falsifiable_as: "Any non-feminine ā-stem noun (root-stems excluded) in DCS/Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1957"
-    claim_ru: "Imperfectum обычно употребляется как время повествования о прошлом."
-    kind: statistic
-    falsifiable_as: "In DCS narrative, imperfect predominates as past-narration tense vs perfect/aorist"
-    kochergina_gives_number: false
-  - loc: "Занятие XII / mdx line 2351"
-    claim_ru: "Основы на -ī и -ū всегда женского рода."
-    kind: universality
-    falsifiable_as: "Any masc/neut derivative ī/ū-stem in Whitney (excluding root-stems)"
-    kochergina_gives_number: false
-  - loc: "Занятие XIV / mdx line 2970"
-    claim_ru: "Наиболее часто употребляются формы 2-го лица (императив)."
-    kind: statistic
-    falsifiable_as: "Among imperative tokens, 2nd-person forms outnumber 1st/3rd in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3202"
-    claim_ru: "Первое главное спряжение, тематическое, охватывает большинство глаголов."
-    kind: statistic
-    falsifiable_as: "Share of verb tokens/lemmas in thematic classes I/IV/VI/X vs athematic in DCS"
-    kochergina_gives_number: false
-  # ===== Занятия XVI–XXII: athematic conjugation, future, perfect (lines 3460–5280) =====
-  - loc: "Занятие XVI / mdx line 3554"
-    claim_ru: "Большинство глаголов IX класса на 'носовой+согласная'; носовой корня утрачивается в основе."
-    kind: statistic
-    falsifiable_as: "class-IX roots ending nasal+consonant with nasal loss vs counterexamples (jñā, krī)"
-    kochergina_gives_number: false
-  - loc: "Занятие XVII / mdx line 3960"
-    claim_ru: "В 3 л. pl. praesens глаголов III класса утрачивается -n."
-    kind: rule
-    falsifiable_as: "reduplicating class-III presents take 3pl -ati (no -n-) in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XVIII / mdx line 4299"
-    claim_ru: "-ś,-ṣ,-c,-ch, в большинстве случаев -j и -h → k перед будущим, при этом s → ṣ."
-    kind: statistic
-    falsifiable_as: "Share of j/h-final roots showing →k before -sya vs exceptions in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XIX / mdx line 4584"
-    claim_ru: "В N.sg. все основы на -ar/-tar (m/f) утрачивают r (dātā, pitā, mātā)."
-    kind: universality
-    falsifiable_as: "every -ṛ/-tṛ m/f stem has r-less N.sg in -ā in corpus"
-    kochergina_gives_number: false
-  - loc: "Занятие XIX / mdx line 4688"
-    claim_ru: "От основы будущего образуется сравнительно редко употребляемый conditionalis."
-    kind: statistic
-    falsifiable_as: "conditionalis token frequency relative to other finite categories in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 4996"
-    claim_ru: "Простой перфект образуется от всех односложных корней на согласную или a/i/u/ṛ."
-    kind: universality
-    falsifiable_as: "Reduplicated perfect available for all monosyllabic roots with these initials vs periphrastic"
-    kochergina_gives_number: false
-  - loc: "Занятие XXI / mdx line 5016"
-    claim_ru: "Перед согласными окончаниями к корню присоединяется -i-, кроме нескольких корней на -r/-u (kar, śru)."
-    kind: allomorphy
-    falsifiable_as: "perfect -i- insertion before consonantal endings, absent for r/u-final (kar, śru) in corpus"
-    kochergina_gives_number: false
-  # ===== Занятия XXIII–XXVIII: seṭ/aniṭ, infinitive, absolutive, passive, pronouns (5280–7240) =====
-  - loc: "Занятие XXV / mdx line 6187"
-    claim_ru: "Пассивное причастие прошедшего = слабый корень + -(i)ta и (реже) -na; ударение на суффиксе."
-    kind: statistic
-    falsifiable_as: "count -ta vs -na past passive participles in DCS to test -na rarity"
-    kochergina_gives_number: false
-  - loc: "Занятие XXVIII / mdx line 6797"
-    claim_ru: "Словоформы могут оканчиваться только на одну согласную; лишние согласные отпадают."
-    kind: universality
-    falsifiable_as: "no Sanskrit pada ends in a consonant cluster (maruts→marut), Whitney §150"
-    kochergina_gives_number: false
-  # ===== Занятия XXIX–XXXVI: comparatives, consonant stems, numerals, compounds, sec. conjugation (7240–9600) =====
-  - loc: "Занятие XXX / mdx line 7644"
-    claim_ru: "Имена на -as, -is, -us в большинстве среднего рода; N.A.V.pl.n нос.+удлинение."
-    kind: statistic
-    falsifiable_as: "Proportion of -as/-is/-us stems neuter; N.A.V.pl.n nasalization+lengthening (manāṃsi), Whitney §427"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXI / mdx line 8197"
-    claim_ru: "Начиная с pañca, род не различается; tri f = основа tisṛ (тип на -ar)."
-    kind: rule
-    falsifiable_as: "numerals ≥5 gender-invariant; tri f uses tisṛ declension, Whitney §482-485"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8408"
-    claim_ru: "Род сложного слова = род последней основы; внутри действуют внешние сандхи."
-    kind: rule
-    falsifiable_as: "compound gender = final member; internal external-sandhi, Whitney §1246, §1315"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8484"
-    claim_ru: "dvandva из трёх и более основ всегда имеют последнюю основу во множественном числе."
-    kind: universality
-    falsifiable_as: "all ≥3-member dvandva have plural final member, Whitney §1253"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9023"
-    claim_ru: "Каузативные глаголы всегда переходные; не все корни образуют каузатив."
-    kind: universality
-    falsifiable_as: "all attested causatives transitive; share of roots lacking causative, Whitney §1041ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9418"
-    claim_ru: "Интенсивы образуются только от односложных корней на согласную; встречаются редко."
-    kind: universality
-    falsifiable_as: "intensives only from monosyllabic consonant-initial roots; rarity in corpus, Whitney §1000ff"
-    kochergina_gives_number: false
-  # ===== Занятия XXXVII–XL: aorist, precative, injunctive, prefixation, adverbs (9600–end) =====
-  - loc: "Занятие XXXVII / mdx line 9623"
-    claim_ru: "I тип корневой аорист — от некоторых корней на -ā и bhū; только Parasmaipada."
-    kind: universality
-    falsifiable_as: "root aorist Parasmaipada-only, restricted to ā-roots + bhū, Whitney §829ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVII / mdx line 9736"
-    claim_ru: "Не менее трети префиксальных существительных — модель a-+S; из них ~80% абстрактные."
-    kind: statistic
-    falsifiable_as: "Share of a-prefixed nouns among all prefixed nouns and % abstracts in lexicon"
-    kochergina_gives_number: true
-  - loc: "Занятие XXXIX / mdx line 10417"
-    claim_ru: "Прекатив Ātmanepada встречается крайне редко."
-    kind: statistic
-    falsifiable_as: "Ātmanepada precative tokens vs Parasmaipada precative in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIX / mdx line 10443"
-    claim_ru: "В контактном положении к корню всегда ā, ni, pra, parā, sam; в дистактном — anu, apa, abhi, nis, pari, prati."
-    kind: universality
-    falsifiable_as: "ordering of double-preverb verbs (contact vs distant set) in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIX / mdx line 10457"
-    claim_ru: "Глаголы с прозрачным значением составляют большинство префиксальных (60%)."
-    kind: statistic
-    falsifiable_as: "classify prefixed verbs by semantic transparency, measure compositional share"
-    kochergina_gives_number: true
+candidates: []
