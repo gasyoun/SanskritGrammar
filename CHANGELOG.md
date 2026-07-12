@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.1.0] - 2026-07-12
 ### Added
 - **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
   H627, Fable 5 `claude-fable-5`): три селектируемых типизированных контура
