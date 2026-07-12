@@ -19,6 +19,28 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-12
+### Added
+- **Атлас B5 — зависимости репозиториев** (`/sangram/atlas/dependencies`, H620,
+  Fable 5 `claude-fable-5`): пять видов ребер публичного interlinks-экспорта
+  (feeds · consumes · vendors · produces · cites) различимы цветом **и** текстовым
+  бейджем, направление и канон/копия по каждому виду, таблица всех вендоренных
+  копий организации, поиск по репозиториям/активам/контрагентам, программные
+  группы census через новое опциональное поле `programme_ru` на `repo`-узлах
+  (контракт данных 1.0.0 → **1.1.0**, append-only), полное покрытие census
+  (75 репозиториев / 67 с ребрами / 8 изолятов пунктиром), controlled-mode на
+  едином маршруте (`sangram/atlas/dependencies.mdx` +
+  `src/components/AtlasDependencies/`). В источнике interlinks исправлены два
+  инвертированных `vendors`-ребра (vidyut); bundle пересобран, leakage = 0.
+- **Атлас B3 — переиспользование готовых активов** (`/sangram/atlas/reuse`, H630,
+  Fable 5 `claude-fable-5`): владелец → актив → потребитель по 18 каноническим
+  семействам с ярусами прав и запретами пересоздания
+  (`sangram/atlas/reuse.mdx` + `src/components/AtlasReuseView/`).
+- **Все пять представлений атласа живые на едином маршруте**
+  (`/sangram/atlas/unified`): wave B серии MEGABOOK × Sangram (B1–B6) закрыта —
+  attention · reuse · value-chain · dependencies · provenance подключены в
+  `VIEW_REGISTRY`, выбранный узел сохраняется при переключении представлений.
+
 ## [0.1.0] - 2026-07-12
 ### Added
 - **Атлас B4 — интерактивная цепочка ценности** (`/sangram/atlas/value-chain`,
