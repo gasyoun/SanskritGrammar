@@ -2319,3 +2319,357 @@ entries:
     ref: Whitney §427 (śvan/yuvan weak stems)
     verdict_pedagogy: JUSTIFIED
     note: Correct śvan/yuvan allomorphy. Anchor.
+
+
+  - id: HK-153
+    loc: Занятие XXIX / mdx line 7274
+    claim_ru: 'Имена на -ant (-mant, -vant): сильная основа -ant, слабая -at.'
+    kind: allomorphy
+    falsifiable_as: -ant/-mant/-vant strong = -ant, weak = -at across case forms, Whitney §453ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ant/-mant/-vant stems have the strong stem -ant and the weak stem -at across the cases'
+    ref: Whitney §453ff (-ant/-mant/-vant declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct strong/weak alternation for -ant stems. Anchor.
+
+  - id: HK-154
+    loc: Занятие XXIX / mdx line 7304
+    claim_ru: mahant имеет сильную основу на -ānt (mahāntam, mahān).
+    kind: rule
+    falsifiable_as: mahant strong stem mahānt vs mahat weak, Whitney §450
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: mahant has the strong stem mahānt (mahāntam, N.sg mahān) vs the weak mahat'
+    ref: Whitney §450 (mahant)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct mahant allomorphy. Anchor.
+
+  - id: HK-155
+    loc: Занятие XXIX / mdx line 7330
+    claim_ru: 'Имена на -in (-min, -vin): -in перед гласными окончаниями, -i перед согласными.'
+    kind: allomorphy
+    falsifiable_as: -in before vowel-initial, -i before consonant-initial endings, Whitney §439
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -in/-min/-vin stems keep -in before vowel-initial endings and reduce to -i before consonant-initial
+      ones (balinā, balibhis)'
+    ref: Whitney §439 (-in stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -in-stem alternation. Anchor.
+
+  - id: HK-156
+    loc: Занятие XXIX / mdx line 7362
+    claim_ru: 'Сравнительная на -īyaṃs: сильная -īyāṃs, слабая -īyas, -yan только в V.sg.m.'
+    kind: allomorphy
+    falsifiable_as: 'comparative -īyaṃs: strong -īyāṃs, weak -īyas, -yan only in V.sg.m, Whitney §463ff'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the primary comparative -īyaṃs has strong -īyāṃs, weak -īyas, with -yan only in the m Voc sg'
+    ref: Whitney §463-465 (comparative -īyaṃs declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct three-grade comparative declension. Anchor.
+
+  - id: HK-157
+    loc: Занятие XXIX / mdx line 7393
+    claim_ru: Большинство качественных прилагательных могут образовать степени сравнения.
+    kind: statistic
+    falsifiable_as: Proportion of adjectives attested with comparative/superlative in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: degree-formation is broadly productive — most qualitative adjectives can take a comparative/superlative
+      (chiefly the secondary -tara/-tama)'
+    ref: Whitney §466ff (comparison of adjectives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct productivity statement; the exact share is not recounted but the generalisation is sound.
+
+  - id: HK-158
+    loc: Занятие XXIX / mdx line 7395
+    claim_ru: Сравнительная степень = основа + вторичные суффиксы -tara (m,n), -tarā (f).
+    kind: rule
+    falsifiable_as: frequency of -tara comparatives vs primary -yaṃs in DCS, Whitney §471-473
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the secondary comparative = stem + -tara (m/n), -tarā (f) — the productive comparison suffix'
+    ref: Whitney §471-473 (-tara/-tama)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct secondary-comparative formation. Anchor.
+
+  - id: HK-159
+    loc: Занятие XXIX / mdx line 7401
+    claim_ru: Реже употребляется первичный суффикс -(ī)yaṃs; гласная корня в guṇa.
+    kind: statistic
+    falsifiable_as: token frequency of primary -yaṃs vs secondary -tara; root vowel guṇa, Whitney §467
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the primary suffix -(ī)yaṃs is less common/productive than the secondary -tara, and takes guṇa
+      of the root vowel — Kochergina''s ''реже'' is correct'
+    ref: Whitney §467 (primary -yaṃs less frequent than -tara)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the primary comparative is the minority, secondary -tara the productive default. Anchor.'
+
+  - id: HK-160
+    loc: Занятие XXIX / mdx line 7407
+    claim_ru: Сравнительная степень употребляется с существительным в отложительном падеже.
+    kind: rule
+    falsifiable_as: comparatives govern ablative of comparison in corpus, Whitney §1131
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the comparative governs the ablative of comparison (X-tara + Abl ''more X than'')'
+    ref: Whitney §1131 (ablative of comparison)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct comparative syntax. Anchor.
+
+  - id: HK-161
+    loc: Занятие XXIX / mdx line 7425
+    claim_ru: Превосходная степень употребляется с родительным или местным падежами.
+    kind: rule
+    falsifiable_as: superlatives co-occur with genitive/locative of the group in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the superlative co-occurs with the genitive or locative of the group it selects from (''the best
+      of/among'')'
+    ref: Whitney §1130-1131 (partitive genitive/locative with superlative)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct superlative syntax. Anchor.
+
+  - id: HK-162
+    loc: Занятие XXIX / mdx line 7431
+    claim_ru: 'Ряд прилагательных только в сравнительной/превосходной: kánīyaṃs, jyā́yaṃs, śréyaṃs...'
+    kind: rule
+    falsifiable_as: these suppletive comparatives lack positive-degree base, Whitney §468, §473
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: kánīyaṃs, jyā́yaṃs, śréyaṃs and their kin are suppletive comparatives/superlatives with no positive-degree
+      base of the same stem'
+    ref: Whitney §468, §473 (suppletive comparatives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct suppletive-comparative set. Anchor.
+
+  - id: HK-163
+    loc: Занятие XXIX / mdx line 7452
+    claim_ru: Прилагательные в степенях сравнения (от предложных основ) склоняются местоименно.
+    kind: rule
+    falsifiable_as: -tara/-tama from prepositional bases (uttara) decline pronominally, Whitney §523
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: comparatives/superlatives built on prepositional bases (uttara, adhara) decline pronominally
+      (uttarasmin, uttare)'
+    ref: Whitney §523 (pronominal declension of prepositional adjectives)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pronominal declension of these adjectives. Anchor.
+
+  - id: HK-164
+    loc: Занятие XXX / mdx line 7611
+    claim_ru: ś, ṣ, ch, (иногда) j, h в конце словоформы и перед s дают ṭ, перед bh- дают ḍ.
+    kind: allomorphy
+    falsifiable_as: final ś/ṣ/ch/j/h → ṭ word-finally & before -s, → ḍ before bh-endings, Whitney §218
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: root-final ś/ṣ/ch (and sometimes j/h) go to ṭ word-finally and before -s, and to ḍ before bh-endings
+      (viṭ, viḍbhis)'
+    ref: Whitney §218, §226 (palatal/ṣ → ṭ/ḍ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct final-palatal cerebralisation. Anchor.
+
+  - id: HK-165
+    loc: Занятие XXX / mdx line 7621
+    claim_ru: ś даёт -k/-g в корневых именах diś, dṛś, spṛś (dik, digbhis).
+    kind: allomorphy
+    falsifiable_as: diś/dṛś/spṛś show ś → k/g not ṭ/ḍ, Whitney §218a
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in diś, dṛś, spṛś the root-final ś goes to k/g (dik, digbhis) rather than ṭ/ḍ — a lexical sub-rule'
+    ref: Whitney §218a (diś/dṛś/spṛś → k/g)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct lexical exception. Anchor.
+
+  - id: HK-166
+    loc: Занятие XXX / mdx line 7626
+    claim_ru: Придыхательные в конце корня перед bh- утрачивают придыхание.
+    kind: allomorphy
+    falsifiable_as: root-final aspirates deaspirate before bh-endings (kakubh → kakubbhis), Whitney §153
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a root-final aspirate deaspirates before bh-endings (kakubh → kakubbhis) by the loss-of-aspiration
+      rule'
+    ref: Whitney §153 (deaspiration before bh)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct deaspiration rule. Anchor.
+
+  - id: HK-167
+    loc: Занятие XXX / mdx line 7685
+    claim_ru: m/f имена на -as в N.sg. удлиняют гласный суффикса (sumanās, uṣās).
+    kind: rule
+    falsifiable_as: m/f -as stems lengthen suffix vowel in N.sg, Whitney §427
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: m/f -as stems lengthen the suffix vowel in the Nom sg (sumanās, uṣās)'
+    ref: Whitney §427 (m/f -as Nom sg lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -as Nom sg lengthening. Anchor.
+
+  - id: HK-168
+    loc: Занятие XXX / mdx line 7738
+    claim_ru: Корневые имена на -ar склоняются без изменений в корне (dvār).
+    kind: rule
+    falsifiable_as: -ar root nouns keep stable stem across cases, Whitney §389
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ar root nouns (dvār ''door'') keep a stable stem across the cases (no gradation)'
+    ref: Whitney §389 (-ar/-ur root nouns)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct stable -ar root-noun declension. Anchor.
+
+  - id: HK-169
+    loc: Занятие XXX / mdx line 7744
+    claim_ru: Корневые имена на -ir, -ur удлиняют гласную перед r в определённых формах (gir→gīr).
+    kind: allomorphy
+    falsifiable_as: -ir/-ur root nouns lengthen before zero/consonant-endings (gīr, gīrbhis), Whitney §392
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ir/-ur root nouns lengthen the vowel before a consonant/zero ending (gir → gīr, gīrbhis; pur
+      → pūr)'
+    ref: Whitney §392 (-ir/-ur lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct -ir/-ur lengthening. Anchor.
+
+  - id: HK-170
+    loc: Занятие XXX / mdx line 7750
+    claim_ru: Корневые имена на -h обычно второй элемент сложного слова.
+    kind: statistic
+    falsifiable_as: Proportion of -h root nouns occurring only as compound-final in corpus
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the -h root nouns (-duh, -lih, -muh) chiefly occur as the final member of a compound rather than
+      free-standing'
+    ref: Whitney §222, §403 (-h root nouns in composition)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as a descriptive tendency (their compound-final use); the exact proportion is not recounted but the
+      generalisation is standard.
+
+  - id: HK-171
+    loc: Занятие XXXI / mdx line 7988
+    claim_ru: Корневые основы на согласные нередко имеют параллельную основу на гласную; тип на -a продуктивен.
+    kind: statistic
+    falsifiable_as: consonant root nouns with parallel vowel-stem (esp. -a) doublets in lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: many consonant root nouns have a parallel vowel-stem doublet, and the -a (thematic) parallel
+      is the productive one (vāc / -a-doublets)'
+    ref: Whitney §399, §1147 (root nouns and their thematic doublets)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct descriptive statement about root-noun/-a-stem doublets. Anchor; exact counts not recomputed.
+
+  - id: HK-172
+    loc: Занятие XXXI / mdx line 8015
+    claim_ru: Женский род от согласных основ образуется прибавлением суффикса -ī-.
+    kind: rule
+    falsifiable_as: feminine of consonant-stem m nouns/adjs with -ī suffix, Whitney §435, §449
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the feminine of a consonant-stem masculine noun/adjective is formed with the suffix -ī'
+    ref: Whitney §435, §449 (feminine -ī of consonant stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct feminine-derivation rule. Anchor.
+
+  - id: HK-173
+    loc: Занятие XXXI / mdx line 8017
+    claim_ru: От трёхступенчатых основ женский род = -ī к слабой ступени (rājan→rājñī).
+    kind: rule
+    falsifiable_as: 3-grade stems form feminine on weak grade, Whitney §449
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: three-grade stems form the feminine with -ī on the weak grade (rājan → rājñī)'
+    ref: Whitney §449 (feminine on weak grade)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct weak-grade feminine. Anchor.
+
+  - id: HK-174
+    loc: Занятие XXXI / mdx line 8043
+    claim_ru: '-ī к сильной ступени: -in прилагательные и причастия I/IV/X + атематических (gacchantī).'
+    kind: allomorphy
+    falsifiable_as: feminine -ī on strong stem for -in adjs and I/IV/X+athematic participles, Whitney §449b
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: -ī goes on the strong stem for -in adjectives and for the I/IV/X + athematic present participles
+      (gacchantī)'
+    ref: Whitney §449b (feminine -ī on the strong participle stem)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct strong-stem feminine for participles. Anchor.
+
+  - id: HK-175
+    loc: Занятие XXXI / mdx line 8058
+    claim_ru: Причастия VI класса — женский род от сильной или слабой ступени (likhantī/likhatī).
+    kind: allomorphy
+    falsifiable_as: class-VI present participles show both -antī and -atī feminines, Whitney §449c
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-VI present participles show both feminines — from the strong stem -antī and the weak -atī
+      (likhantī / likhatī)'
+    ref: Whitney §449c (class-VI participle feminines)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: class VI has the double feminine. Anchor.'
+
+  - id: HK-176
+    loc: Занятие XXXI / mdx line 8065
+    claim_ru: Основы на согласные без чередования одинаковы для m и f (suhṛd).
+    kind: rule
+    falsifiable_as: non-gradating consonant stems use identical m/f form, Whitney §435
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a non-gradating consonant stem uses one identical form for masculine and feminine (suhṛd m./f.)'
+    ref: Whitney §435 (non-gradating stems m.=f.)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct m.=f. for non-gradating stems. Anchor.
+
+  - id: HK-177
+    loc: Занятие XXXI / mdx line 8122
+    claim_ru: Порядковые десятков 20-90 могут образовываться суффиксом -tama (viṃśatitama).
+    kind: rule
+    falsifiable_as: ordinals of tens 20-90 attested with -tama variant, Whitney §487d
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the ordinals of the tens 20-90 have a -tama variant (viṃśatitama beside viṃśa)'
+    ref: Whitney §487d (-tama ordinals of the tens)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ordinal variant. Anchor.
+
+  - id: HK-178
+    loc: Занятие XXXI / mdx line 8156
+    claim_ru: dva, tri, aṣṭa перед 10/20/30 = dvā, trayas, aṣṭā; dva перед 80 = dvi.
+    kind: allomorphy
+    falsifiable_as: dvā/trayas/aṣṭā before 10/20/30 and dvi before 80 (dvyaśīti), Whitney §480
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: dva/tri/aṣṭa appear as dvā/trayas/aṣṭā before 10/20/30 in the compound numerals, and dva as dvi
+      before 80 (dvyaśīti)'
+    ref: Whitney §480 (numeral-compound sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct numeral-compound allomorphy. Anchor.
