@@ -2,16 +2,18 @@
 
 _Created: 12-07-2026 · Last updated: 12-07-2026_
 
-> **Status: readiness 3/5 — Kochergina central table complete.** This outline carries (a) the
-> method, framing, and related-work spine (H773 phase Q0) and (b) the **complete Kochergina central
-> table** (H773 phase Q1): all **12** `verdict_fact ∈ {OVERSTATED, FALSE}` divergences drawn from
+> **Status: readiness 4/5 — full single-book draft written.** This directory now carries the complete
+> paper: (a) method, framing, related-work (H773 Q0); (b) the complete Kochergina central table — all
+> **12** `verdict_fact ∈ {OVERSTATED, FALSE}` divergences from
 > [H768](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H768-Opus_SanskritGrammar_kochergina-claim-verification-roadmap_12.07.26.md)'s
-> now-finished 43-claim register (P1 harvest + P2 verify are done — the register spans all 40 Занятия,
-> not just the verb-system core), each row assigned an H773 divergence class and quantified. The
-> **one remaining gate is the cross-grammar extension** — Bühler / Knauer / Zaliznyak / Apte are not
-> yet harvested, so the per-grammar comparison (Q2) is not yet computable and the paper is single-book.
-> _Q0 + HK-4 seed by Opus 4.8 (`claude-opus-4-8`) 12-07-2026 (PR #146); Q1 central table by Opus 4.8
-> (`claude-opus-4-8`) 12-07-2026._
+> finished 43-claim register, each classified + quantified (H773 Q1); and (c) the **full single-book
+> draft** — [`DRAFT_grammar-claims-corpus-denies_A60.md`](DRAFT_grammar-claims-corpus-denies_A60.md),
+> all sections in prose (H773 Q3). This outline is now the working scaffold behind the draft. **To 5/5:**
+> `/paper-referee` + `/paper-author-pass` (Fable 5 register polish) + `/venue-scout`. The cross-grammar
+> comparison (Q2 — Bühler / Knauer / Zaliznyak / Apte) is **future work / an enhancement, not a gate on
+> the single-book paper**; a human decides whether to submit single-book or hold for cross-grammar.
+> _Q0 + HK-4 by Opus 4.8 (`claude-opus-4-8`) 12-07-2026 (PR #146); Q1 central table 12-07-2026 (PR #147);
+> Q3 draft by Opus 4.8 (`claude-opus-4-8`) 12-07-2026._
 
 ---
 
@@ -173,6 +175,7 @@ divergence set.
 
 | Asset | Path | Backs |
 |---|---|---|
+| **Full draft (H773 Q3)** | [`DRAFT_grammar-claims-corpus-denies_A60.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/DRAFT_grammar-claims-corpus-denies_A60.md) | the paper itself — all sections in prose (abstract → references) |
 | Claim register (H768) | [`KocherginaUchebnik_1998/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml) | all 43 rows' claim text + two-axis verdict + corpus number |
 | Divergence classes (H773) | [`divergence_classes.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/divergence_classes.yml) | the class + rationale for each OVERSTATED/FALSE row (§2.3, §5) |
 | Table generator (H773) | [`build_divergence_table.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/build_divergence_table.py) | joins the two sources → the central table; `--check` guards unclassified rows |

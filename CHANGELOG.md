@@ -19,6 +19,20 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-12
+### Added
+- **A60 full single-book draft — "grammar claims the corpus does not confirm" (H773 phase Q3)**
+  ([`DRAFT_grammar-claims-corpus-denies_A60.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/DRAFT_grammar-claims-corpus-denies_A60.md)):
+  the complete paper in prose — abstract, introduction, related work (ACL-anthology-anchored, the
+  four reference titles web-verified), data & method (two-axis register, triangulation, the four-way
+  divergence typology, reproducibility), results (register composition, the 12-row central table, the
+  future-stem flagship at 56.8% *seṭ*, the one FALSE claim, aggregation), discussion, limitations, and
+  future work. Single-book by design (Kochergina 1998); the cross-grammar comparison (Q2) is framed as
+  an enhancement, not a gap. The central class⇄pedagogy finding is stated with an explicit
+  anti-circularity caveat. A60 readiness 3/5 → 4/5. Remaining to submission: `/paper-referee` +
+  `/paper-author-pass` (Fable 5) + `/venue-scout`.
+  ([H773](https://github.com/gasyoun/Uprava/blob/main/handoffs/H773-Opus_SanskritGrammar_grammar-asserts-corpus-denies-study_12.07.26.md), Opus 4.8 `claude-opus-4-8`.)
+
 ## [0.5.0] - 2026-07-12
 ### Added
 - **A60 central table — "grammar claims the corpus does not confirm" (H773 phase Q1)**
