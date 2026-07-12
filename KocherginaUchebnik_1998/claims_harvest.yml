@@ -47,167 +47,41 @@ candidates:
     falsifiable_as: "-s → -r before voiced/vowels except after ā̆ and before r in DCS"
     kochergina_gives_number: false
   # ===== Занятия IX–XV: noun declension, present-system basics (lines 1620–3460) =====
-  - loc: "Занятие IX / mdx line 1633"
-    claim_ru: "Двойственное число обычно у существительных, обозначающих парные предметы (ноги, руки, глаза, родители)."
-    kind: statistic
-    falsifiable_as: "In DCS, dual tokens disproportionately concentrated on paired-entity lemmas vs all nouns"
-    kochergina_gives_number: false
-  - loc: "Занятие IX / mdx line 1635"
-    claim_ru: "Древнеиндийский язык имеет развитую падежную систему из восьми падежных форм."
-    kind: typology
-    falsifiable_as: "Count distinct case slots in Whitney nominal paradigms = 8"
-    kochergina_gives_number: true
-  - loc: "Занятие IX / mdx line 1701"
-    claim_ru: "Все именные основы делятся на две группы: основы на гласные и основы на согласные."
-    kind: universality
-    falsifiable_as: "Whitney nominal-stem taxonomy partitions all stems into vowel- vs consonant-final"
-    kochergina_gives_number: false
   - loc: "Занятие IX / mdx line 1707"
     claim_ru: "Существительные с основой на -a составляют большую часть всех существительных; их склонение самое распространённое."
     kind: statistic
     falsifiable_as: "Share of a-stem nouns vs all noun stem-classes in DCS lemma inventory"
-    kochergina_gives_number: false
-  - loc: "Занятие IX / mdx line 1709"
-    claim_ru: "Основы на -a — мужского и среднего рода; окончания m и n в большинстве форм совпадают."
-    kind: rule
-    falsifiable_as: "Whitney a-stem: no feminine a-stems; m/n endings identical in >half of cells"
     kochergina_gives_number: false
   - loc: "Занятие IX / mdx line 1759"
     claim_ru: "У основ среднего рода формы N. и A. во всех числах совпадают."
     kind: universality
     falsifiable_as: "Across all neuter stem-classes, Nom=Acc in sg/du/pl without exception, Whitney"
     kochergina_gives_number: false
-  - loc: "Занятие IX / mdx line 1765"
-    claim_ru: "Во множественном числе всегда сходны формы N.V. и формы D.Abl."
-    kind: universality
-    falsifiable_as: "pl NomVoc syncretize and pl Dat=Abl (-bhyas) universally across stem-classes"
-    kochergina_gives_number: false
-  - loc: "Занятие IX / mdx line 1769"
-    claim_ru: "-s после a/ā: -ās→ā; -as+гласная(кроме a)→a; -as→o."
-    kind: allomorphy
-    falsifiable_as: "Whitney visarga-sandhi for final -as/-ās against three conditioned outcomes"
-    kochergina_gives_number: false
   - loc: "Занятие X / mdx line 1879"
     claim_ru: "Существительные с основой на -ā — женского рода."
     kind: universality
     falsifiable_as: "Any non-feminine ā-stem noun (root-stems excluded) in DCS/Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1901"
-    claim_ru: "Между -ā основы и гласными окончаниями появляются -y- (sg/du) и -n- (pl)."
-    kind: allomorphy
-    falsifiable_as: "Whitney ā-stem: vowel-initial endings take -y- (sg/du), -n- (Gen pl -nām)"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1927"
-    claim_ru: "Универсальные окончания: du. I.D.Abl. -bhyām, G.L. -os; pl. D.Abl. -bhyas, G. -(n)ām, L. -su."
-    kind: universality
-    falsifiable_as: "Each listed ending invariant across stem-classes; note a-stem Instr pl -ais exception"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1949"
-    claim_ru: "После -k, -r, гласных (кроме ā̆) начальное -s следующей морфемы → -ṣ (suteṣu, но sutāsu)."
-    kind: allomorphy
-    falsifiable_as: "Internal ruki s-retroflexion (Whitney §180); Loc pl suteṣu vs sutāsu in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1953"
-    claim_ru: "Прилагательные формально не отграничены от существительных; склоняются одинаково при одинаковой основе."
-    kind: typology
-    falsifiable_as: "Adjectives inflect by the same stem-class paradigms as nouns, Whitney"
     kochergina_gives_number: false
   - loc: "Занятие X / mdx line 1957"
     claim_ru: "Imperfectum обычно употребляется как время повествования о прошлом."
     kind: statistic
     falsifiable_as: "In DCS narrative, imperfect predominates as past-narration tense vs perfect/aorist"
     kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 1959"
-    claim_ru: "Признак imperfectum — аугмент a-, на который падает ударение."
-    kind: rule
-    falsifiable_as: "augment a- on all imperfects and it carries accent, Whitney"
-    kochergina_gives_number: false
-  - loc: "Занятие X / mdx line 2017"
-    claim_ru: "У префиксального глагола аугмент оказывается между префиксом и основой."
-    kind: rule
-    falsifiable_as: "prefixed imperfects place augment between preverb and root (samagacchat) in DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XII / mdx line 2306"
-    claim_ru: "Оптатив: 3 л. pl. P. -ur, Ā. -ran; Ā. 2-3 du. yāthām, yātām."
-    kind: allomorphy
-    falsifiable_as: "optative 3pl -ur (P) / -ran (Ā) against Whitney optative endings"
-    kochergina_gives_number: false
   - loc: "Занятие XII / mdx line 2351"
     claim_ru: "Основы на -ī и -ū всегда женского рода."
     kind: universality
     falsifiable_as: "Any masc/neut derivative ī/ū-stem in Whitney (excluding root-stems)"
-    kochergina_gives_number: false
-  - loc: "Занятие XII / mdx line 2431"
-    claim_ru: "lakṣmī и tantrī имеют в N.sg. окончание -s."
-    kind: allomorphy
-    falsifiable_as: "lakṣmī/tantrī take Nom sg -s vs regular ī-stem -Ø, Whitney/DCS"
-    kochergina_gives_number: false
-  - loc: "Занятие XII / mdx line 2435"
-    claim_ru: "От большинства мужских одушевлённых имён женский род образуется изменением -a на -ī."
-    kind: statistic
-    falsifiable_as: "Share of animate masc a-stems forming feminine in -ī vs -ā in a lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XII / mdx line 2448"
-    claim_ru: "Существительные/прилагательные на -aka изменяют -aka на -ikā."
-    kind: rule
-    falsifiable_as: "-aka → -ikā feminine (Whitney §1222); bālaka/bālikā"
-    kochergina_gives_number: false
-  - loc: "Занятие XIII / mdx line 2632"
-    claim_ru: "Есть корни в двух ступенях (слабая = guṇa); обычно это корни с гласной -a-."
-    kind: statistic
-    falsifiable_as: "Among two-grade roots, proportion with vowel -a- vs other vowels"
-    kochergina_gives_number: false
-  - loc: "Занятие XIII / mdx line 2644"
-    claim_ru: "Среди основ на -i преобладают m/f, среди основ на -u — m/n."
-    kind: statistic
-    falsifiable_as: "Gender distribution of i-stems vs u-stems in DCS/lexicon"
-    kochergina_gives_number: false
-  - loc: "Занятие XIII / mdx line 2646"
-    claim_ru: "Падежные окончания основ на -i и -u одинаковы."
-    kind: rule
-    falsifiable_as: "i-stem and u-stem ending sets identical cell-by-cell, Whitney"
     kochergina_gives_number: false
   - loc: "Занятие XIV / mdx line 2970"
     claim_ru: "Наиболее часто употребляются формы 2-го лица (императив)."
     kind: statistic
     falsifiable_as: "Among imperative tokens, 2nd-person forms outnumber 1st/3rd in DCS"
     kochergina_gives_number: false
-  - loc: "Занятие XIV / mdx line 2989"
-    claim_ru: "Корневые основы на -ā (m/f), на -ī, -ū (f) склоняются одинаково."
-    kind: rule
-    falsifiable_as: "Whitney root-stem declension: monosyllabic ā/ī/ū share one ending set"
-    kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3200"
-    claim_ru: "Различаются десять классов глаголов, делящихся на тематическое и атематическое спряжение."
-    kind: typology
-    falsifiable_as: "10-class present-system taxonomy + thematic/athematic split, Whitney §606ff"
-    kochergina_gives_number: true
   - loc: "Занятие XV / mdx line 3202"
     claim_ru: "Первое главное спряжение, тематическое, охватывает большинство глаголов."
     kind: statistic
     falsifiable_as: "Share of verb tokens/lemmas in thematic classes I/IV/VI/X vs athematic in DCS"
     kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3236"
-    claim_ru: "Корни с i/u/ṛ/ḷ на одну согласную имеют в основе настоящего времени guṇa."
-    kind: rule
-    falsifiable_as: "class-I present-stem guṇa of medial i/u/ṛ before single consonant (budh→bodha-), Whitney §745"
-    kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3261"
-    claim_ru: "Основа настоящего VI класса — слабый корень + тематическое -a; ударение на -á."
-    kind: rule
-    falsifiable_as: "class-VI weak-grade root + accented -á, Whitney §749 (likhá-, tudá-)"
-    kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3294"
-    claim_ru: "Корни на -am удлиняют a перед ya (bhram→bhrāmya-); корни на -iv удлиняют i (div→dīvya-)."
-    kind: allomorphy
-    falsifiable_as: "class-IV lengthening before -ya for -am/-iv roots, Whitney §761"
-    kochergina_gives_number: false
-  - loc: "Занятие XV / mdx line 3305"
-    claim_ru: "Основа настоящего X класса — корень + суффикс -aya; ударение на -áya."
-    kind: rule
-    falsifiable_as: "class-X present root + accented -áya, Whitney §775 (kathaya-)"
-    kochergina_gives_number: false
-
   # ===== Занятия XVI–XXII: athematic conjugation, future, perfect (lines 3460–5280) =====
   - loc: "Занятие XVI / mdx line 3469"
     claim_ru: "Второе главное спряжение включает шесть классов: II, III, V, VIII, VII и IX."

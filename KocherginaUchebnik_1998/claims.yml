@@ -1173,3 +1173,360 @@ entries:
     ref: Whitney §733 (thematic 1st-person lengthening)
     verdict_pedagogy: JUSTIFIED
     note: Correct categorical rule (same fact underlies HK-18's second clause). Anchor.
+
+
+  - id: HK-72
+    loc: Занятие IX / mdx line 1633
+    claim_ru: Двойственное число обычно у существительных, обозначающих парные предметы (ноги, руки, глаза, родители).
+    kind: statistic
+    falsifiable_as: In DCS, dual tokens disproportionately concentrated on paired-entity lemmas vs all nouns
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the dual is a full grammatical number, but naturally-paired entities (eyes, hands, feet, parents,
+      the two Aśvins) are its prototypical and most frequent hosts — Whitney names exactly this use'
+    ref: Whitney §265-266 (the dual; natural pairs)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as a characterisation of the dual's typical use; the dual is grammatically general (any two), which
+      a fuller note would add, but the paired-object prototype is right.
+
+  - id: HK-73
+    loc: Занятие IX / mdx line 1635
+    claim_ru: Древнеиндийский язык имеет развитую падежную систему из восьми падежных форм.
+    kind: typology
+    falsifiable_as: Count distinct case slots in Whitney nominal paradigms = 8
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit has exactly eight morphological case-slots (Nom, Voc, Acc, Ins, Dat, Abl, Gen, Loc)
+      — the ''8 падежных форм'' count is exact (Voc sometimes counted with Nom, giving 7+1)'
+    ref: Whitney §266ff (the eight cases)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct case-count. Anchor.
+
+  - id: HK-74
+    loc: Занятие IX / mdx line 1701
+    claim_ru: 'Все именные основы делятся на две группы: основы на гласные и основы на согласные.'
+    kind: universality
+    falsifiable_as: Whitney nominal-stem taxonomy partitions all stems into vowel- vs consonant-final
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: every nominal stem is either vowel-final or consonant-final — an exhaustive, exclusive two-way
+      partition of the declension system'
+    ref: 'Whitney §111, §162 (stem taxonomy: vowel- vs consonant-stems)'
+    verdict_pedagogy: JUSTIFIED
+    note: A clean exhaustive taxonomy. Anchor.
+
+  - id: HK-75
+    loc: Занятие IX / mdx line 1709
+    claim_ru: Основы на -a — мужского и среднего рода; окончания m и n в большинстве форм совпадают.
+    kind: rule
+    falsifiable_as: 'Whitney a-stem: no feminine a-stems; m/n endings identical in >half of cells'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a-stems are masculine or neuter (no feminine a-stems — the feminine is the derived -ā class),
+      and the m./n. paradigms differ only in the Nom-Acc cells, coinciding elsewhere'
+    ref: Whitney §326-334 (a-stems; m./n. identity outside Nom-Acc)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct on both counts (no fem. a-stem; m./n. syncretism outside Nom-Acc). Anchor.
+
+  - id: HK-76
+    loc: Занятие IX / mdx line 1765
+    claim_ru: Во множественном числе всегда сходны формы N.V. и формы D.Abl.
+    kind: universality
+    falsifiable_as: pl NomVoc syncretize and pl Dat=Abl (-bhyas) universally across stem-classes
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in the plural, Nom = Voc across all stem-classes, and Dat = Abl (-bhyas) universally — two exceptionless
+      plural syncretisms'
+    ref: Whitney §307 (plural Nom=Voc; Dat=Abl -bhyas)
+    verdict_pedagogy: JUSTIFIED
+    note: Two genuine plural universals, correctly stated. Anchor.
+
+  - id: HK-77
+    loc: Занятие IX / mdx line 1769
+    claim_ru: '-s после a/ā: -ās→ā; -as+гласная(кроме a)→a; -as→o.'
+    kind: allomorphy
+    falsifiable_as: Whitney visarga-sandhi for final -as/-ās against three conditioned outcomes
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final -as/-ās visarga-sandhi — -ās → -ā, -as+vowel(≠a) → -a, -as (pre-voiced / pre-a) → -o —
+      the three conditioned outcomes are exactly Whitney''s'
+    ref: Whitney §175-177 (final -as/-ās sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct three-way conditioning of -as/-ās. Anchor.
+
+  - id: HK-78
+    loc: Занятие X / mdx line 1901
+    claim_ru: Между -ā основы и гласными окончаниями появляются -y- (sg/du) и -n- (pl).
+    kind: allomorphy
+    falsifiable_as: 'Whitney ā-stem: vowel-initial endings take -y- (sg/du), -n- (Gen pl -nām)'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the derived ā-stem inserts -y- before vowel-initial endings in sg/du and shows -n- in the Gen
+      pl (-nām) — the standard ā-declension interstitials'
+    ref: Whitney §363-365 (ā-stem declension)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct interstitial-consonant rule for ā-stems. Anchor.
+
+  - id: HK-79
+    loc: Занятие X / mdx line 1927
+    claim_ru: 'Универсальные окончания: du. I.D.Abl. -bhyām, G.L. -os; pl. D.Abl. -bhyas, G. -(n)ām, L. -su.'
+    kind: universality
+    falsifiable_as: Each listed ending invariant across stem-classes; note a-stem Instr pl -ais exception
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: du I.D.Abl -bhyām, du G.L -os, pl D.Abl -bhyas, pl G -(n)ām, pl L -su are indeed invariant across
+      stem-classes — the one salient exception is the a-stem Instr pl -ais (vs -bhis elsewhere)'
+    ref: Whitney §307 (case-endings common to all stems)
+    verdict_pedagogy: JUSTIFIED
+    note: The listed endings are genuinely universal; the a-stem Instr pl -ais is the standard exception worth a rider,
+      but the claim as scoped is accurate.
+
+  - id: HK-80
+    loc: Занятие X / mdx line 1949
+    claim_ru: После -k, -r, гласных (кроме ā̆) начальное -s следующей морфемы → -ṣ (suteṣu, но sutāsu).
+    kind: allomorphy
+    falsifiable_as: Internal ruki s-retroflexion (Whitney §180); Loc pl suteṣu vs sutāsu in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (internal ruki): after k, r or a vowel other than a/ā, a following morpheme-initial s retroflexes
+      to ṣ — suteṣu (after e) vs sutāsu (after ā, no retroflexion) is the textbook minimal pair'
+    ref: Whitney §180 (ruki s → ṣ)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct ruki rule with the right worked pair. Anchor.
+
+  - id: HK-81
+    loc: Занятие X / mdx line 1953
+    claim_ru: Прилагательные формально не отграничены от существительных; склоняются одинаково при одинаковой основе.
+    kind: typology
+    falsifiable_as: Adjectives inflect by the same stem-class paradigms as nouns, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: adjectives are not formally distinct from nouns and decline by the same stem-class paradigms;
+      they differ only in agreeing for gender'
+    ref: Whitney §321-322 (adjectives decline as nouns)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct typological statement. Anchor.
+
+  - id: HK-82
+    loc: Занятие X / mdx line 1959
+    claim_ru: Признак imperfectum — аугмент a-, на который падает ударение.
+    kind: rule
+    falsifiable_as: augment a- on all imperfects and it carries accent, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the imperfect (and aorist, and conditional) carries the augment a-, and the augment bears the
+      accent (á-bhavat) in the accented (Vedic) text'
+    ref: Whitney §585, §541 (augment; augment accent)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the augment is the imperfect''s marker and is accented. Anchor.'
+
+  - id: HK-83
+    loc: Занятие X / mdx line 2017
+    claim_ru: У префиксального глагола аугмент оказывается между префиксом и основой.
+    kind: rule
+    falsifiable_as: prefixed imperfects place augment between preverb and root (samagacchat) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: with a prefixed (preverb) verb the augment stands between the preverb and the root — sam-a-gacchat,
+      not *a-saṃgacchat'
+    ref: Whitney §1081b (augment placement after preverb)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct augment-placement rule. Anchor.
+
+  - id: HK-84
+    loc: Занятие XII / mdx line 2306
+    claim_ru: 'Оптатив: 3 л. pl. P. -ur, Ā. -ran; Ā. 2-3 du. yāthām, yātām.'
+    kind: allomorphy
+    falsifiable_as: optative 3pl -ur (P) / -ran (Ā) against Whitney optative endings
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: optative 3pl P -ur, Ā -ran, and the Ā 2/3 du -yāthām/-yātām are the standard optative endings'
+    ref: Whitney §566, §613d (optative endings)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct optative ending set. Anchor.
+
+  - id: HK-85
+    loc: Занятие XII / mdx line 2431
+    claim_ru: lakṣmī и tantrī имеют в N.sg. окончание -s.
+    kind: allomorphy
+    falsifiable_as: lakṣmī/tantrī take Nom sg -s vs regular ī-stem -Ø, Whitney/DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic exception: the monosyllabic-type ī-stems lakṣmī and tantrī take Nom sg -s (lakṣmīs, tantrīs) rather
+      than the endingless -Ø of the derived nadī-type'
+    ref: Whitney §355b, §356 (ī-stems taking Nom sg -s)
+    verdict_pedagogy: JUSTIFIED
+    note: A precise, correctly-flagged lexical exception. Anchor.
+
+  - id: HK-86
+    loc: Занятие XII / mdx line 2435
+    claim_ru: От большинства мужских одушевлённых имён женский род образуется изменением -a на -ī.
+    kind: statistic
+    falsifiable_as: Share of animate masc a-stems forming feminine in -ī vs -ā in a lexicon
+    sources:
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: 'the ''-a → -ī for most animate masculines'' share is not reproducible: the feminine of an a-stem is formed
+      in -ā or -ī by suffixal/lexical conditioning, and ''большинство ... -ī'' has no stated or computable count base
+      (the DCS lemma inventory is not tagged for masc→fem derivation pairs)'
+    ref: Whitney §1223ff (feminine derivation -ā vs -ī); no reproducible count base
+    verdict_pedagogy: FREQUENCY-HIDDEN
+    note: A proportion claim whose base cannot be reconstructed. Directionally the -ī feminine is very common for animates,
+      but the '-ī is the majority' figure is asserted, not shown; -ā is the competing default. Flagged UNTESTABLE.
+
+  - id: HK-87
+    loc: Занятие XII / mdx line 2448
+    claim_ru: Существительные/прилагательные на -aka изменяют -aka на -ikā.
+    kind: rule
+    falsifiable_as: -aka → -ikā feminine (Whitney §1222); bālaka/bālikā
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: nouns/adjectives in -aka form the feminine in -ikā (bālaka → bālikā), with the -a- syncope'
+    ref: Whitney §1222 (feminine of -aka in -ikā)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct derivational rule. Anchor.
+
+  - id: HK-88
+    loc: Занятие XIII / mdx line 2632
+    claim_ru: Есть корни в двух ступенях (слабая = guṇa); обычно это корни с гласной -a-.
+    kind: statistic
+    falsifiable_as: Among two-grade roots, proportion with vowel -a- vs other vowels
+    sources:
+    - whitney
+    verdict_fact: UNTESTABLE
+    number: the claim conflates ablaut grades ('слабая = guṇa' is itself non-standard, guṇa being the middle grade)
+      and asserts an unquantified 'обычно' about which roots are two-grade — neither the phrasing nor the proportion
+      is checkable against a ground-truth source
+    ref: Whitney §235ff (guṇa/vṛddhi grades); claim phrasing internally unclear
+    verdict_pedagogy: ORDER-QUESTIONABLE
+    note: The statement mislabels the grade hierarchy and makes an unquantified frequency claim; flagged UNTESTABLE
+      rather than forced into a fact verdict on an ambiguous formulation.
+
+  - id: HK-89
+    loc: Занятие XIII / mdx line 2644
+    claim_ru: Среди основ на -i преобладают m/f, среди основ на -u — m/n.
+    kind: statistic
+    falsifiable_as: Gender distribution of i-stems vs u-stems in DCS/lexicon
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (Whitney''s own description): i-stems occur chiefly as masculine/feminine and u-stems chiefly
+      as masculine/neuter — a distributional tendency of the two vowel-stem classes (not separately recounted here)'
+    ref: Whitney §335, §342 (gender distribution of i- and u-stems)
+    verdict_pedagogy: JUSTIFIED
+    note: Matches Whitney's characterisation of the two classes' gender preponderances; exact proportions not recomputed
+      but the tendency is the standard one.
+
+  - id: HK-90
+    loc: Занятие XIII / mdx line 2646
+    claim_ru: Падежные окончания основ на -i и -u одинаковы.
+    kind: rule
+    falsifiable_as: i-stem and u-stem ending sets identical cell-by-cell, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the case-ending set of i-stems and u-stems is identical cell-for-cell (differing only in the
+      stem vowel), so they are taught as one paradigm'
+    ref: Whitney §336-343 (i- and u-stems share the ending set)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: i/u-stems are one declensional pattern. Anchor.'
+
+  - id: HK-91
+    loc: Занятие XIV / mdx line 2989
+    claim_ru: Корневые основы на -ā (m/f), на -ī, -ū (f) склоняются одинаково.
+    kind: rule
+    falsifiable_as: 'Whitney root-stem declension: monosyllabic ā/ī/ū share one ending set'
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: monosyllabic root-stems in -ā (m./f.), -ī and -ū (f.) share one ending set (the accented, strong-throughout
+      root-noun declension)'
+    ref: Whitney §349, §351, §383 (monosyllabic root-stem declension)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: the root-stem declension is uniform for ā/ī/ū monosyllables. Anchor.'
+
+  - id: HK-92
+    loc: Занятие XV / mdx line 3200
+    claim_ru: Различаются десять классов глаголов, делящихся на тематическое и атематическое спряжение.
+    kind: typology
+    falsifiable_as: 10-class present-system taxonomy + thematic/athematic split, Whitney §606ff
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the present system has exactly ten formation classes, partitioned into thematic (I, IV, VI, X)
+      and athematic (II, III, V, VII, VIII, IX) conjugation — the ''10 классов'' count is exact'
+    ref: Whitney §606ff (the ten present-classes; thematic/athematic split)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class count and the thematic/athematic partition. Anchor (see HK-18/HK-72 for the frequency of the
+      split).
+
+  - id: HK-93
+    loc: Занятие XV / mdx line 3236
+    claim_ru: Корни с i/u/ṛ/ḷ на одну согласную имеют в основе настоящего времени guṇa.
+    kind: rule
+    falsifiable_as: class-I present-stem guṇa of medial i/u/ṛ before single consonant (budh→bodha-), Whitney §745
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: a class-I root with medial i/u/ṛ before a single consonant takes guṇa in the present stem (budh
+      → bódha-, vid → véda-)'
+    ref: Whitney §745 (class-I guṇa of the root vowel)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-I stem-formation rule. Anchor.
+
+  - id: HK-94
+    loc: Занятие XV / mdx line 3261
+    claim_ru: Основа настоящего VI класса — слабый корень + тематическое -a; ударение на -á.
+    kind: rule
+    falsifiable_as: class-VI weak-grade root + accented -á, Whitney §749 (likhá-, tudá-)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-VI present stem is the weak (unstrengthened) root + thematic -a with the accent on
+      the thematic -á- (tudá-, likhá-)'
+    ref: Whitney §749 (class VI, tudádi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-VI stem + accent. Anchor.
+
+  - id: HK-95
+    loc: Занятие XV / mdx line 3294
+    claim_ru: Корни на -am удлиняют a перед ya (bhram→bhrāmya-); корни на -iv удлиняют i (div→dīvya-).
+    kind: allomorphy
+    falsifiable_as: class-IV lengthening before -ya for -am/-iv roots, Whitney §761
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: class-IV -ya stems lengthen the root vowel of -am roots (bhram → bhrāmya-) and of div (div →
+      dīvya-)'
+    ref: Whitney §761 (class-IV lengthening before -ya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-IV allomorphy. Anchor.
+
+  - id: HK-96
+    loc: Занятие XV / mdx line 3305
+    claim_ru: Основа настоящего X класса — корень + суффикс -aya; ударение на -áya.
+    kind: rule
+    falsifiable_as: class-X present root + accented -áya, Whitney §775 (kathaya-)
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the class-X present stem is root + suffix -aya with the accent on -áya (kathaya-, coraya-); the
+      same -aya underlies causatives'
+    ref: Whitney §775, §1041 (class X / -aya)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct class-X stem + accent. Anchor.
