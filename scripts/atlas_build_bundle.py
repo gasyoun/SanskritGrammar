@@ -33,7 +33,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-CONTRACT_VERSION = "1.0.0"
+CONTRACT_VERSION = "1.1.0"
 DENYLIST_VERSION = "2026-07-11"
 
 # ---------------------------------------------------------------------------
@@ -435,12 +435,20 @@ def parse_theses(lines, as_of):
 
 
 def parse_anchors(lines):
-    """MEGABOOK §9.1–§9.6 tables -> (thesis_section, repo_name) pairs."""
-    pairs = []
+    """MEGABOOK §9.1–§9.6 tables -> (thesis_section, repo_name, programme_ru).
+
+    programme_ru is the §9.x subsection title the repo is listed under — the
+    census programme grouping the dependencies view (B5) groups repos by.
+    """
+    triples = []
     start = find_section(lines, "## §9.")
     end = find_section(lines, "## §10.")
     i = start
+    programme = None
     while i < end:
+        m = re.match(r"^### §9\.\d+\.\s+(.+)$", lines[i])
+        if m:
+            programme = m.group(1).strip()
         if lines[i].lstrip().startswith("| Основной тезис"):
             for cells in md_table_rows(lines, i):
                 if len(cells) < 2:
@@ -452,9 +460,9 @@ def parse_anchors(lines):
                         # "Wil-YAT" is the WIL…YAT dictionary pair in one cell.
                         names = ["Wil", "YAT"] if repo == "Wil-YAT" else [repo]
                         for n in names:
-                            pairs.append((sec, n))
+                            triples.append((sec, n, programme))
         i += 1
-    return pairs
+    return triples
 
 
 def parse_tsv(path):
@@ -580,7 +588,10 @@ def main():
     for node in theses.values():
         add_node(node)
     seen_anchor = set()
-    for sec, repo in parse_anchors(lines):
+    programme_by_repo = {}
+    for sec, repo, programme in parse_anchors(lines):
+        if programme:
+            programme_by_repo[repo] = programme
         rid = ensure_repo(repo)
         if rid is None:
             dropped_edges += 1
@@ -618,6 +629,12 @@ def main():
                       "asset_ru": row["asset"], "status": row["status"],
                       "temperature": "assessed", "as_of": as_of,
                       "evidence": internal_evidence(f"interlinks_edges.tsv: {row['evidence']} (внутренний Uprava)")})
+
+    # Structural: census programme group (§9.x subsection) per repo node.
+    for name, prog in programme_by_repo.items():
+        nid = f"repo:{slug(name)}"
+        if nid in nodes:
+            nodes[nid]["programme_ru"] = prog
 
     bundle = {
         "$schema": "./atlas.schema.json",
