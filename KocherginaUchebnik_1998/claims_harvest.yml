@@ -145,162 +145,21 @@ candidates:
     kind: rule
     falsifiable_as: "compound gender = final member; internal external-sandhi, Whitney §1246, §1315"
     kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8440"
-    claim_ru: "bahuvrīhi образуются на основе karmadhāraya (реже tatpuruṣa) с существительным в конце."
-    kind: statistic
-    falsifiable_as: "Proportion of bahuvrīhi on karmadhāraya vs tatpuruṣa bases, Whitney §1293"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8458"
-    claim_ru: "bahuvrīhi на -ā при согл. с m → a; согласная основа добавляет -a-."
-    kind: allomorphy
-    falsifiable_as: "bahuvrīhi final-ā → a (m); consonant-final adds -a-, Whitney §1296, §1300"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8470"
-    claim_ru: "В эпическом санскрите сложные слова обычно двучленны, иногда трёхчленны."
-    kind: statistic
-    falsifiable_as: "Distribution of 2- vs ≥3-member compounds in epic Sanskrit"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8476"
-    claim_ru: "В dvandva из двух основ последняя в двойственном числе или (samāhāra) в sg. -am."
-    kind: rule
-    falsifiable_as: "two-member dvandva final in dual; samāhāra in neuter sg -am, Whitney §1253-1255"
-    kochergina_gives_number: false
   - loc: "Занятие XXXII / mdx line 8484"
     claim_ru: "dvandva из трёх и более основ всегда имеют последнюю основу во множественном числе."
     kind: universality
     falsifiable_as: "all ≥3-member dvandva have plural final member, Whitney §1253"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8488"
-    claim_ru: "Основы на гласную/меньшее число слогов занимают первые места в сложном слове."
-    kind: rule
-    falsifiable_as: "dvandva member-ordering (vowel-initial first, fewer syllables first), Whitney §1254"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXII / mdx line 8500"
-    claim_ru: "Ударение: tatpuruṣa/karmadhāraya/dvandva на последнем слоге, bahuvrīhi на первой основе."
-    kind: rule
-    falsifiable_as: "accent final-syllable vs first-member (bahuvrīhi), Whitney §1267, §1295"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8665"
-    claim_ru: "В конце сложного слова основы на -i, -in, -an переходят в -a."
-    kind: allomorphy
-    falsifiable_as: "-i/-in/-an stems become -a as compound-final (rājan → -rāja), Whitney §1249, §1315"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8682"
-    claim_ru: "Корни на -i, -u, -ar присоединяют t (ji→-jit, kar→-kṛt)."
-    kind: allomorphy
-    falsifiable_as: "root-final -i/-u/-ar add -t as compound-final, Whitney §383, §1147"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8706"
-    claim_ru: "В начале сложного слова основы на -an, -in утрачивают носовой (rājan→rāja-)."
-    kind: allomorphy
-    falsifiable_as: "-an/-in stems lose nasal as compound-initial, Whitney §1249c"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8712"
-    claim_ru: "Основы на -ar, -añc, -ant в слабой ступени (-ṛ, -ac, -at) как первый элемент."
-    kind: allomorphy
-    falsifiable_as: "-ar/-añc/-ant in weak grade compound-initial (pitar→pitṛ-, bhavant→bhavat-), Whitney §1249"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8728"
-    claim_ru: "В dvandva с основами на -tar первые всегда в N.sg (mātāpitarau)."
-    kind: universality
-    falsifiable_as: "-tar first members in dvandva always N.sg form, Whitney §1253d"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8776"
-    claim_ru: "Деепричастные обороты при совпадении подлежащих; абсолютные — при несовпадении."
-    kind: rule
-    falsifiable_as: "absolute (loc/gen) when subject differs vs gerund when coreferential, Whitney §1060, §303"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8782"
-    claim_ru: "locativus absolutus эквивалентен придаточному времени, реже условному."
-    kind: statistic
-    falsifiable_as: "Distribution of locative-absolute functions (temporal vs conditional), Whitney §303b"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXIII / mdx line 8800"
-    claim_ru: "genetivus absolutus = уступительное придаточное; обычно с частицей api."
-    kind: rule
-    falsifiable_as: "genitive-absolute concessive sense, typically with api, Whitney §300b"
     kochergina_gives_number: false
   - loc: "Занятие XXXV / mdx line 9023"
     claim_ru: "Каузативные глаголы всегда переходные; не все корни образуют каузатив."
     kind: universality
     falsifiable_as: "all attested causatives transitive; share of roots lacking causative, Whitney §1041ff"
     kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9033"
-    claim_ru: "Основа каузатива = √ + aya; гласная корня в guṇa."
-    kind: rule
-    falsifiable_as: "causative stem = root + -aya with guṇa (likh→lekhaya), Whitney §1041"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9039"
-    claim_ru: "Корень на гласную или a+одиночная согласная → vṛddhi в каузативе (vac→vācaya)."
-    kind: allomorphy
-    falsifiable_as: "causative root vowel vṛddhi for vowel-final or -a-+single consonant, Whitney §1042"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9049"
-    claim_ru: "Глаголы на -am, jan, tvar имеют guṇa в каузативе (gamáya-, janáya-)."
-    kind: allomorphy
-    falsifiable_as: "-am roots + jan/tvar keep guṇa (not vṛddhi) in causative, Whitney §1042f"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9049b"
-    claim_ru: "Корни на -ā, -e, -ai, -au присоединяют -páya; e и дифтонги → -ā (dā→dāpaya)."
-    kind: allomorphy
-    falsifiable_as: "ā/e/ai/au-final roots take causative -paya with e/diphthong → ā, Whitney §1042j"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9099"
-    claim_ru: "Страдательное причастие каузатива утрачивает -aya, сохраняет guṇa (kāraya→kārita)."
-    kind: rule
-    falsifiable_as: "causative ppp drops -aya but keeps guṇa root vowel, Whitney §1051"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9107"
-    claim_ru: "Каузатив от непереходных: исходное подлежащее в винительном падеже."
-    kind: rule
-    falsifiable_as: "causatives of intransitives place original subject in accusative, Whitney §1046"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9119"
-    claim_ru: "Каузатив от переходных: исходное подлежащее в творительном падеже."
-    kind: rule
-    falsifiable_as: "causatives of transitives place original subject in instrumental, Whitney §1046"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9144"
-    claim_ru: "Основа отыменного глагола = основа имени + -yá; конечные гласные изменяются."
-    kind: allomorphy
-    falsifiable_as: "denominative stem = noun + -ya with vowel changes (putra→putrīya), Whitney §1053ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXV / mdx line 9153"
-    claim_ru: "Деноминативы спрягаются как глаголы первого главного спряжения в обоих залогах."
-    kind: rule
-    falsifiable_as: "denominatives conjugate as thematic present-system in both voices, Whitney §1056"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9293"
-    claim_ru: "Основа дезидератива = удвоенный корень + -sa (aniṭ) или -iṣa (seṭ); ударение на 1-м слоге."
-    kind: allomorphy
-    falsifiable_as: "desiderative stem = reduplicated root + -sa (aniṭ) / -iṣa (seṭ), Whitney §1027ff"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9333"
-    claim_ru: "В удвоительном слоге дезидератива i; при ū в корне — u (bhū→bubhūṣa-)."
-    kind: allomorphy
-    falsifiable_as: "desiderative reduplication vowel i by default, u for medial/final ū, Whitney §1029"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9377"
-    claim_ru: "Дезидератив без удвоения: āp→ī́psati, dā→dítsati, dhā→dhī́tsati."
-    kind: rule
-    falsifiable_as: "listed roots form desideratives without reduplication, Whitney §1030"
-    kochergina_gives_number: false
   - loc: "Занятие XXXVI / mdx line 9418"
     claim_ru: "Интенсивы образуются только от односложных корней на согласную; встречаются редко."
     kind: universality
     falsifiable_as: "intensives only from monosyllabic consonant-initial roots; rarity in corpus, Whitney §1000ff"
     kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9428"
-    claim_ru: "Гласные удвоительного слога интенсива в guṇa ('тяжёлое' удвоение)."
-    kind: allomorphy
-    falsifiable_as: "intensive reduplication-syllable vowel in guṇa (rud→rorud-), Whitney §1002"
-    kochergina_gives_number: false
-  - loc: "Занятие XXXVI / mdx line 9440"
-    claim_ru: "Интенсивы берут окончания Ātmanepada; неатематические формы почти не встречаются."
-    kind: statistic
-    falsifiable_as: "intensive -ya class takes Ā endings; non-present intensive near-absent, Whitney §1009ff"
-    kochergina_gives_number: false
-
   # ===== Занятия XXXVII–XL: aorist, precative, injunctive, prefixation, adverbs (9600–end) =====
   - loc: "Занятие XXXVII / mdx line 9614"
     claim_ru: "Аорист редко при повествовании, чаще в разговорной речи, диалоге (драмы)."
