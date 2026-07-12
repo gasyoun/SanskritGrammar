@@ -746,3 +746,430 @@ entries:
       Same failure mode as HK-41: precise percentages with no reproducible base. The a-privative's
       productivity and abstract-antonym semantics are real, but '≥1/3' and '~80%' are asserted, not
       shown.
+
+
+  - id: HK-43
+    loc: Занятие I / mdx line 247
+    claim_ru: Все смычные по месту образования делятся на пять рядов (varga), противопоставляясь по глухости/звонкости
+      и придыхательности.
+    kind: typology
+    falsifiable_as: Every sparśa stop fits a 5×(voice×aspiration) grid in Whitney's phoneme inventory
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the 25 sparśa stops form exactly a 5-varga grid (guttural/palatal/cerebral/dental/labial) × (voiceless/voiced
+      × unaspirated/aspirated) + a class nasal — the ''5 рядов'' count is exact'
+    ref: Whitney §32 (the five series of mutes)
+    verdict_pedagogy: JUSTIFIED
+    note: A foundational typological fact, stated with the correct count (5 vargas). Anchor.
+
+  - id: HK-44
+    loc: Занятие I / mdx line 378
+    claim_ru: 'В шумных придыхательных звучит слабое h: глухое после глухих и звонкое после звонких взрывных.'
+    kind: rule
+    falsifiable_as: Aspiration voicing agrees with the stop (kh/ch voiceless-h, gh/dh voiced-h), Whitney phonology
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the aspirate''s breath is voiceless after a voiceless stop (kh, ch, ṭh, th, ph) and voiced [ɦ]
+      after a voiced stop (gh, jh, ḍh, dh, bh) — a phonetic agreement, not a contrast'
+    ref: Whitney §37 (aspiration and its voicing)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct phonetic description of the aspirate series. Anchor.
+
+  - id: HK-45
+    loc: Занятие II / mdx line 516
+    claim_ru: visarga — звук ḥ, возникающий из s (реже r) в конце слова/предложения перед некоторыми согласными.
+    kind: allomorphy
+    falsifiable_as: DCS visarga tokens from underlying -s vs -r — confirm -s more frequent
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: visarga is the pre-pausa / pre-voiceless reflex of final -s (the overwhelmingly dominant source)
+      and, far less often, of final -r — the ''(реже r)'' hedge is correct'
+    ref: Whitney §170-172 (visarga from final s/r)
+    verdict_pedagogy: JUSTIFIED
+    note: Accurate, and the relative-frequency parenthetical (-s ≫ -r) is well-judged. Anchor.
+
+  - id: HK-46
+    loc: Занятие II / mdx line 518
+    claim_ru: В N.sg. большинство существительных и прилагательных мужского рода имеют окончание s; поэтому visarga
+      обычно встречается в этой форме.
+    kind: statistic
+    falsifiable_as: Share of masc. nom.sg. forms ending in -s (→visarga) across DCS paradigms
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: the Nominative is the single most frequent case in DCS-2021 (983,591 tokens = 43.2% of 2,277,509 nominal
+      tokens; 788,742 in the sg), and masc. N.sg regularly ends in -s → visarga — so visarga is indeed concentrated
+      in this form
+    ref: Whitney §170 (visarga), §326d (a-stem N.sg -s); DCS verify_claims_dcs.py case_distribution
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Именительный падеж — самый частый в корпусе DCS-2021: 983 591 словоформа (43,2% всех именных), из
+      них 788 742 в единственном числе. Поскольку N.sg.m обычно оканчивается на -s, висарга действительно чаще всего
+      встречается именно в этой форме.'
+    note: 'A frequency claim the corpus vindicates: Nom is the most common case and its sg carries -s, so the visarga-in-N.sg
+      observation is correct.'
+
+  - id: HK-47
+    loc: Занятие II / mdx line 520
+    claim_ru: Anusvāra (ṃ) возникает из m или в конце слова перед согласной, кроме губного ряда.
+    kind: rule
+    falsifiable_as: final -m → anusvāra before consonants except labials in DCS sandhi
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: word-final -m goes to anusvāra before any consonant except that a following labial keeps it as
+      the homorganic labial nasal m — the ''кроме губного ряда'' carve-out is exactly Whitney''s'
+    ref: Whitney §213 (final m-sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct, including the labial-series exception. Anchor.
+
+  - id: HK-48
+    loc: Занятие II / mdx line 522
+    claim_ru: В A.sg. конечный звук m; поэтому anusvāra встречается главным образом в этих формах.
+    kind: statistic
+    falsifiable_as: Share of acc.sg / neut. nom-acc forms ending -m among all anusvāra tokens in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: final -m is carried chiefly by the Accusative sg (432,746 tokens, the 2nd most frequent case-slot) plus
+      the neuter Nom-Acc sg (also -m); together these make final -m → anusvāra concentrated in these forms, as claimed
+    ref: Whitney §213 (m-sandhi); DCS verify_claims_dcs.py case_distribution
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: Винительный ед.ч. — второй по частоте падеж корпуса DCS-2021 (432 746 словоформ); вместе с им.-вин.
+      ед.ч. среднего рода (тоже на -m) он и даёт основную массу конечного -m → анусвары.
+    note: 'Directionally right and corpus-supported: acc.sg (and neuter nom-acc.sg) are the dominant word-final -m sources.
+      A note that neuter nom-acc.sg also ends -m would round it out, but nothing is misstated.'
+
+  - id: HK-49
+    loc: Занятие II / mdx line 524
+    claim_ru: Anunāsika — назализованный долгий гласный (встречается редко).
+    kind: statistic
+    falsifiable_as: anunāsika vs anusvāra count in a corpus to confirm rarity
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the nasalized vowel anunāsika is a marginal phenomenon (chiefly Vedic and specific sandhi contexts),
+      far rarer than anusvāra — ''встречается редко'' is accurate'
+    ref: Whitney §71, §213c (anunāsika)
+    verdict_pedagogy: JUSTIFIED
+    note: A rare form correctly flagged as rare. Anchor.
+
+  - id: HK-50
+    loc: Занятие III / mdx line 629
+    claim_ru: Гласные a, i, u, ṛ и ḷ противопоставляются по долготе; противопоставление смыслоразделительно.
+    kind: typology
+    falsifiable_as: All five vowels have contrastive long/short pairs in Whitney (ḷ marginal)
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'a/i/u/ṛ have genuine phonemic long/short pairs; the ḷ:ḹ length opposition is a grammarians'' construct
+      — ḷ surfaces almost only in the root kḷp and ḹ essentially never (DCS-2021 running text: ḷ 0, ḹ 0 vowel tokens)'
+    ref: Whitney §23-24 (vowel-length pairs; ḷ/ḹ marginal); DCS verify_claims_dcs.py HK7_vowel_census
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: В поверхностном тексте DCS-2021 (11,4 млн гласных) ḷ и ḹ не встречаются вовсе (0 и 0); противопоставление
+      по долготе реально лишь для a/i/u/ṛ, а пара ḷ:ḹ — искусственная конструкция грамматистов.
+    note: True for a/i/u/ṛ; the ḷ inclusion is nominal (the census shows ḷ/ḹ are effectively absent). Kochergina's own
+      'ḷ marginal' framing is honest.
+
+  - id: HK-51
+    loc: Занятие IV / mdx line 799
+    claim_ru: e и o — долгие гласные дифтонгического происхождения; чередуются с ai, au.
+    kind: allomorphy
+    falsifiable_as: e/o pattern with ai/au in guṇa/vṛddhi gradation, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: e and o are monophthongized old diphthongs and function as the guṇa grade whose vṛddhi partners
+      are ai and au (i→e→ai, u→o→au)'
+    ref: Whitney §27-28 (e/o), §235-236 (guṇa/vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct historical + synchronic characterisation. Anchor.
+
+  - id: HK-52
+    loc: Занятие IV / mdx line 827
+    claim_ru: В середине слова чаще всего встречается ṛ.
+    kind: statistic
+    falsifiable_as: Frequency of ṛ vs ṝ/ḷ/ḹ word-medially in DCS
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: vocalic ṛ 199,930 vowel-tokens (1.75%) vs ṝ 1,588 (0.01%), ḷ 0, ḹ 0 (DCS-2021) — of the four syllabic sonants
+      ṛ is overwhelmingly the common one, ~126× the other three combined
+    ref: Whitney §24 (ṛ common, ṝ/ḷ/ḹ rare); DCS verify_claims_dcs.py HK7_vowel_census
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: 'Среди слоговых сонантов ṛ — практически единственный употребительный: 199 930 гласных-вхождений (1,75%)
+      в DCS-2021 против ṝ 1 588 (0,01%), ḷ 0 и ḹ 0 — то есть ~126-кратный перевес.'
+    note: 'Corpus-confirmed: among the syllabic sonants ṛ is the only frequent one. Well calibrated.'
+
+  - id: HK-53
+    loc: Занятие IV / mdx line 855
+    claim_ru: Префикс su- с существительными/причастиями = 'хороший'; с прилагательными = усиление 'очень'.
+    kind: allomorphy
+    falsifiable_as: su- reads 'good' with nouns/participles vs intensifier with adjectives across DCS compounds
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the prefix su- reads ''good/well'' on nominal/participial bases (sukṛta ''well-done'') and shades
+      into an intensifier ''very'' on adjectival ones — standard prefix polysemy'
+    ref: Whitney §1121e (su-/dus- prefixes)
+    verdict_pedagogy: JUSTIFIED
+    note: Directionally accurate account of su- polysemy; the noun/adjective split is a reasonable teaching simplification
+      of a continuum.
+
+  - id: HK-54
+    loc: Занятие V / mdx line 1047
+    claim_ru: Слово на согласную (кроме висарги/анусвары) обычно пишут слитно с последующим словом.
+    kind: rule
+    falsifiable_as: Scriptio-continua joining after consonant-final words in devanāgarī editions
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic orthographic convention: a consonant-final word is written conjoined (scriptio continua) to the
+      next word in continuous devanāgarī; a word space is left only after a vowel, anusvāra or visarga'
+    ref: Whitney §9 (writing; word-division convention)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct statement of the editorial/orthographic convention. Anchor.
+
+  - id: HK-55
+    loc: Занятие V / mdx line 1071
+    claim_ru: Среди внешних сандхи согласных широко распространена регрессивная ассимиляция.
+    kind: statistic
+    falsifiable_as: Prevalence of regressive assimilation among consonant-sandhi applications in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit external sandhi is overwhelmingly regressive (anticipatory) — the earlier segment assimilates
+      in voice/place/nasality to the following one; progressive assimilation is the marked minority (e.g. n→ṇ, s→ṣ ruki)'
+    ref: Whitney §156ff (assimilation; regressive default)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct generalisation about the direction of Sanskrit sandhi. Anchor.
+
+  - id: HK-56
+    loc: Занятие V / mdx line 1079
+    claim_ru: Зубной t полностью ассимилируется перед палатальным/церебральным рядами и перед l.
+    kind: rule
+    falsifiable_as: -t → c/j, ṭ/ḍ, l before those series in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final dental t assimilates fully to a following palatal (t+c→cc, t+j→jj), cerebral (t+ṭ→ṭṭ) and
+      to l (t+l→ll)'
+    ref: Whitney §202-203 (dental assimilation to palatal/cerebral/l)
+    verdict_pedagogy: JUSTIFIED
+    note: Standard sandhi, correctly and categorically stated. Anchor.
+
+  - id: HK-57
+    loc: Занятие V / mdx line 1085
+    claim_ru: Зубной t перед носовыми изменяется в n.
+    kind: rule
+    falsifiable_as: -t → n before nasals in DCS sandhi
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final dental t → n before a nasal (tat+na→tan na; -t+m-→-n m-) by nasal assimilation'
+    ref: Whitney §161 (final t before nasals)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct categorical rule. Anchor.
+
+  - id: HK-58
+    loc: Занятие V / mdx line 1091
+    claim_ru: t перед ś → c, причем ś → ch.
+    kind: rule
+    falsifiable_as: t+ś → c+ch across word boundaries in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: t + ś → c + ch (the dental palatalises to c and the following ś becomes ch) — a fixed sandhi
+      outcome'
+    ref: Whitney §203 (t + ś → c ch)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct, a commonly-missed detail stated precisely. Anchor.
+
+  - id: HK-59
+    loc: Занятие VI / mdx line 1259
+    claim_ru: В конце предложения/строки -s и -r → висарга ḥ.
+    kind: rule
+    falsifiable_as: pausa -s/-r → visarga at sentence/verse end in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: in pausa (sentence/verse end) final -s and -r both surface as visarga ḥ'
+    ref: Whitney §170 (final s/r → visarga in pausa)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct pausa rule. Anchor.
+
+  - id: HK-60
+    loc: Занятие VI / mdx line 1263
+    claim_ru: Перед глухими -s/-r → висарга (k,kh,p,ph,ś,ṣ,s) / ś (c,ch) / ṣ (ṭ,ṭh) / s (t,th).
+    kind: allomorphy
+    falsifiable_as: -s/-r allomorphs (ḥ/ś/ṣ/s) conditioned by following voiceless class in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: before voiceless onsets final -s/-r give visarga before gutturals/labials/sibilants, ś before
+      palatals (c/ch), ṣ before cerebrals (ṭ/ṭh), s before dentals (t/th) — the four conditioned sibilant reflexes'
+    ref: Whitney §170-172 (s-sandhi before voiceless classes)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct four-way conditioning by the following voiceless class. Anchor.
+
+  - id: HK-61
+    loc: Занятие VI / mdx line 1278
+    claim_ru: Перед r- согласные -s (не после ā̆) и -r выпадают, удлиняя предшествующую краткую гласную.
+    kind: rule
+    falsifiable_as: -s/-r drop before r- with compensatory lengthening in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: before an initial r-, a preceding -s (not after a/ā) and -r are dropped and the short vowel is
+      lengthened compensatorily (punar rājā → punā rājā)'
+    ref: Whitney §179 (s/r loss before r- with lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct compensatory-lengthening rule. Anchor.
+
+  - id: HK-62
+    loc: Занятие VII / mdx line 1338
+    claim_ru: 'Однородные гласные при встрече сливаются в долгую: ā̆+ā̆→ā, ī̆+ī̆→ī, ū̆+ū̆→ū.'
+    kind: rule
+    falsifiable_as: Homogeneous-vowel coalescence at word junctures in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (savarṇa-dīrgha): two homogeneous simple vowels coalesce into the corresponding long — ā̆+ā̆→ā,
+      ī̆+ī̆→ī, ū̆+ū̆→ū'
+    ref: Whitney §126 (coalescence of similar vowels)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct vowel-sandhi rule. Anchor.
+
+  - id: HK-63
+    loc: Занятие VII / mdx line 1352
+    claim_ru: 'ā̆ + разнородная гласная: +ī̆→e, +ū̆→o, +e→ai, +o→au, +ṛ→ar.'
+    kind: rule
+    falsifiable_as: a/ā + heterogeneous vowel guṇa-sandhi outcomes in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (guṇa-sandhi): a/ā + i/ī→e, +u/ū→o, +e→ai, +o→au, +ṛ→ar — the standard heterogeneous-vowel outcomes'
+    ref: Whitney §127-128 (a + dissimilar vowel → guṇa/vṛddhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct guṇa/vṛddhi sandhi table. Anchor.
+
+  - id: HK-64
+    loc: Занятие VII / mdx line 1373
+    claim_ru: ī̆, ū̆, ṛ перед неоднородной гласной → сонанты y, v, r.
+    kind: rule
+    falsifiable_as: i/u/ṛ → y/v/r before heterogeneous vowels (yaṇ-sandhi) in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (yaṇ-sandhi): before a dissimilar vowel i/ī→y, u/ū→v, ṛ→r (ity, madhv, pitr̥ + a → pitra)'
+    ref: Whitney §129 (i/u/ṛ → semivowel before vowel)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct semivowel sandhi. Anchor.
+
+  - id: HK-65
+    loc: Занятие VII / mdx line 1387
+    claim_ru: Конечная -m перед начальной согласной → анусвара; перед гласными не изменяется.
+    kind: rule
+    falsifiable_as: final -m → anusvāra before consonants, retained before vowels in DCS
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: final -m → anusvāra before a following consonant but is retained as m before a vowel (tam + ca
+      → taṃ ca; tam + iha → tam iha) — the companion of the line-520 rule'
+    ref: Whitney §213 (final m-sandhi)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct; complements the line-520 statement. Anchor.
+
+  - id: HK-66
+    loc: Занятие VIII / mdx line 1452
+    claim_ru: Глагол характеризуется категориями наклонения, залога, лица, числа и времени.
+    kind: typology
+    falsifiable_as: Finite-verb category set (mood, voice, person, number, tense), Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the finite verb inflects for mood, voice (Parasmaipada/Ātmanepada), person, number and tense-system
+      — exactly the category set listed'
+    ref: Whitney §527ff (verbal categories)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct enumeration of the finite-verb categories. Anchor.
+
+  - id: HK-67
+    loc: Занятие VIII / mdx line 1456
+    claim_ru: Одни глаголы только Parasmaipada, другие только Ātmanepada, есть Ubhayapada.
+    kind: typology
+    falsifiable_as: Classify DCS roots into P-only / Ā-only / U for the three-way voice typology
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: roots lexically select voice — some are Parasmaipada-only, some Ātmanepada-only, some Ubhayapada
+      (either) — the standard three-way voice-class typology'
+    ref: Whitney §528-529 (voice restriction of roots)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct typology. Anchor.
+
+  - id: HK-68
+    loc: Занятие VIII / mdx line 1460
+    claim_ru: Страдательный залог — система производных форм.
+    kind: typology
+    falsifiable_as: Passive is derived (ya-formation + Ā endings) not a basic voice, Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the passive is a derived formation (weak/zero-grade root + accented -yá- + Ātmanepada endings),
+      not a primary voice of the present system'
+    ref: Whitney §768 (passive stem)
+    verdict_pedagogy: JUSTIFIED
+    note: 'Correct: passive is derivational, not a basic diathesis. Anchor.'
+
+  - id: HK-69
+    loc: Занятие VIII / mdx line 1473
+    claim_ru: Ударение в формах настоящего времени фиксировано на определённой гласной основы или окончания.
+    kind: rule
+    falsifiable_as: RV/Whitney accented present forms confirm fixed stem/ending accent
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic (with a caveat): present-system accent placement is rule-governed per class — fixed on the thematic
+      vowel/root in the thematic classes, but ALTERNATING between strong stem and ending by grade in the athematic classes;
+      ''фиксировано'' fits the thematic default the lesson presents'
+    ref: Whitney §731-733 (thematic accent), §1085 (athematic strong/weak accent)
+    verdict_pedagogy: JUSTIFIED
+    note: Fine as a first statement about the thematic present; the athematic strong/weak accent alternation (taught
+      later) is the qualifier to keep in mind.
+
+  - id: HK-70
+    loc: Занятие VIII / mdx line 1501
+    claim_ru: Поскольку лицо и число передаются окончаниями, личные местоимения при спряжении не употребляются.
+    kind: universality
+    falsifiable_as: Rate of overt nominative personal pronouns with finite verbs in DCS (near-zero)
+    sources:
+    - dcs
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: Sanskrit is a pro-drop language — the personal endings encode person and number, so an overt
+      nominative personal pronoun is used only for emphasis/contrast, not by default'
+    ref: Whitney §512 (personal pronouns; ordinarily omitted)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct as the default; overt subject pronouns do occur for emphasis/topic-shift, but Kochergina's 'не употребляются'
+      captures the unmarked case well.
+
+  - id: HK-71
+    loc: Занятие VIII / mdx line 1536
+    claim_ru: '1-е лицо — ''сильная'' форма: гласная основа перед личным окончанием удлиняется.'
+    kind: rule
+    falsifiable_as: a-stem 1sg present lengthens thematic vowel (-āmi/-āvas/-āmas), Whitney
+    sources:
+    - whitney
+    verdict_fact: 'TRUE'
+    number: 'systemic: the thematic present lengthens -a → -ā before the 1st-person endings of all three numbers (bhávāmi,
+      bhávāvas, bhávāmas) — the ''1st = strong'' generalisation'
+    ref: Whitney §733 (thematic 1st-person lengthening)
+    verdict_pedagogy: JUSTIFIED
+    note: Correct categorical rule (same fact underlies HK-18's second clause). Anchor.

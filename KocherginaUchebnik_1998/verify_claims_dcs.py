@@ -21,7 +21,7 @@ paradigm tables yet rare in running text).
 Usage:  python verify_claims_dcs.py            # report + rewrite claims_dcs_stats.json
         python verify_claims_dcs.py --check     # report only, no file write
 """
-import sys, json, re
+import sys, json, re, unicodedata
 from pathlib import Path
 from collections import Counter
 
@@ -59,6 +59,65 @@ def _forms(fn, code_idx, form_idx=2):
 
 def pct(n):
     return round(100 * n / TOTAL_VERBAL, 2)
+
+
+# --- H797 backlog-verification helpers --------------------------------------
+# Monophthong vowel census over the FULL DCS-2021 running text (0.csv surface
+# lines: "...;<devanagari-ids>;<IAST surface text>"). Backs the phonology-lesson
+# frequency claims: a/ā dominance and ṛ >> ṝ/ḷ/ḹ rarity.
+VOWELS_IAST = "aāiīuūṛṝḷḹeo"
+
+
+def vowel_census():
+    corpus = DCS / "0.csv"
+    cnt = Counter()
+    lines = 0
+    if not corpus.exists():
+        return None
+    with open(corpus, encoding="utf-8") as f:
+        for ln in f:
+            i = ln.rfind(";")
+            if i < 0:
+                continue
+            for ch in unicodedata.normalize("NFC", ln[i + 1:]):
+                if ch in VOWELS_IAST:
+                    cnt[ch] += 1
+            lines += 1
+    tot = sum(cnt.values())
+    if not tot:
+        return None
+    rare = cnt["ṝ"] + cnt["ḷ"] + cnt["ḹ"]
+    return {
+        "corpus_lines": lines,
+        "total_monophthong_vowels": tot,
+        "counts": {v: cnt[v] for v in VOWELS_IAST},
+        "pct": {v: round(100 * cnt[v] / tot, 2) for v in VOWELS_IAST},
+        "a_plus_aa_pct": round(100 * (cnt["a"] + cnt["ā"]) / tot, 1),
+        "vocalic_r_count": cnt["ṛ"],
+        "rare_sonants_count": rare,  # ṝ + ḷ + ḹ
+        "r_over_rare_ratio": round(cnt["ṛ"] / rare, 0) if rare else None,
+    }
+
+
+def verb_class_share():
+    """Thematic (I/IV/VI/X) vs athematic (II/III/V/VII/VIII/IX) present-system
+    token share, from VisualDCS/verb_classes.json. Backs 'первое главное
+    спряжение охватывает большинство глаголов'."""
+    fp = VDCS / "verb_classes.json"
+    if not fp.exists():
+        return None
+    d = json.load(open(fp, encoding="utf-8"))
+    TH, ATH = {"1", "4", "6", "10"}, {"2", "3", "5", "7", "8", "9"}
+    th = sum(d[k].get("total", 0) for k in d if k in TH)
+    at = sum(d[k].get("total", 0) for k in d if k in ATH)
+    tot = th + at
+    return {
+        "thematic_tokens": th,
+        "athematic_tokens": at,
+        "primary_conjugation_pct": round(100 * th / tot, 1) if tot else None,
+        "class_II_tokens": d.get("2", {}).get("total"),
+        "class_II_pct_of_present_system": round(100 * d.get("2", {}).get("total", 0) / tot, 1) if tot else None,
+    }
 
 
 def analyze():
@@ -165,6 +224,23 @@ def analyze():
         "HK39_precative_middle": {                  # прекатив Ātmanepada крайне редко
             "tokens": TOK[14], "pct_of_verbal": pct(TOK[14]), "label": LABEL.get(14, ""),
         },
+        # --- H797 backlog-verification metrics ---
+        # HK-7 / HK-8 / backlog: vowel frequency census (a/ā dominance; ṛ >> ṝ/ḷ/ḹ)
+        "HK7_vowel_census": vowel_census(),
+        # HK-18 / backlog line 3202: thematic-conjugation share of the present system
+        "HK18_verb_class_share": verb_class_share(),
+        # HK-15 / backlog: past-tense category competition (imperfect vs perfect vs aorist)
+        "HK15_past_tenses": {
+            "imperfect_tokens": TOK[4] + TOK[8] + TOK[9] + TOK[16] + TOK[27],
+            "perfect_tokens": TOK[15],
+            "aorist_tokens": sum(TOK[c] for c in (10, 11, 12, 13)),
+            "note": "imperfect = active+medium+augmentless+passive imperfect codes; perfect = code 15; aorist = 10-13",
+        },
+        # backlog (visarga/anusvāra 'mainly in this case-form'): case-slot token distribution
+        "case_distribution": {
+            c["abbr"]: {"sg": c["sg"], "du": c["du"], "pl": c["pl"], "total": c["total"]}
+            for c in json.load(open(VDCS / "tense_case_data.json", encoding="utf-8"))["cases"]
+        } if (VDCS / "tense_case_data.json").exists() else None,
     }
     return stats
 
@@ -202,6 +278,24 @@ def report(s):
     pr = s["HK39_precative_middle"]
     print(f"HK-39 PRECATIVE Ātmanepada (Benedictive Medium): {pr['tokens']} tokens "
           f"= {pr['pct_of_verbal']}% of verbal ('крайне редко' confirmed)")
+
+    print("\n--- H797 backlog-verification metrics ---")
+    vc = s.get("HK7_vowel_census")
+    if vc:
+        print(f"VOWEL CENSUS (DCS-2021 0.csv, {vc['total_monophthong_vowels']:,} vowels): "
+              f"a+ā = {vc['a_plus_aa_pct']}% (a {vc['pct']['a']}%, ā {vc['pct']['ā']}%)")
+        print(f"  ṛ {vc['counts']['ṛ']:,} ({vc['pct']['ṛ']}%) vs ṝ {vc['counts']['ṝ']:,} / "
+              f"ḷ {vc['counts']['ḷ']:,} / ḹ {vc['counts']['ḹ']:,} — ṛ is {vc['r_over_rare_ratio']:.0f}× the rare sonants")
+    cl = s.get("HK18_verb_class_share")
+    if cl:
+        print(f"VERB CLASS SHARE: thematic (I/IV/VI/X) {cl['thematic_tokens']:,} = "
+              f"{cl['primary_conjugation_pct']}% of present-system tokens; athematic "
+              f"{cl['athematic_tokens']:,}; class II {cl['class_II_tokens']:,} "
+              f"({cl['class_II_pct_of_present_system']}%)")
+    pt = s.get("HK15_past_tenses")
+    if pt:
+        print(f"PAST-TENSE COMPETITION: imperfect {pt['imperfect_tokens']:,} · "
+              f"perfect {pt['perfect_tokens']:,} · aorist {pt['aorist_tokens']:,} tokens")
 
 
 def main():
