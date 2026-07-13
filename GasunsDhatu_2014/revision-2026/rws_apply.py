@@ -10,9 +10,10 @@ partial/garbled apply can never land silently.
     python rws_apply.py --check    # report only, write nothing
 Stdlib only.
 """
-import json, os, sys, io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-BASE = r'C:\Users\user\Documents\GitHub\SanskritGrammar-h385\GasunsDhatu_2014'
+import json, os, sys
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # GasunsDhatu_2014
 REV = BASE + r'\revision-2026'
 CHECK = '--check' in sys.argv
 

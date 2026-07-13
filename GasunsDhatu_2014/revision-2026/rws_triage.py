@@ -16,11 +16,12 @@ rows sort first within a paragraph.
 Outputs revision-2026/rws_triage.json and prints a summary.
 Stdlib only.
 """
-import csv, json, sys, io
+import csv, json, os, sys
 from collections import Counter, defaultdict
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-BASE = r'C:\Users\user\Documents\GitHub\SanskritGrammar-h385\GasunsDhatu_2014\revision-2026'
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+BASE = os.path.dirname(os.path.abspath(__file__))  # revision-2026
 TSV = BASE + r'\RWS_FINDINGS.tsv'
 
 # --- cluster + disposition rules by finding `type` ---------------------------

@@ -3,6 +3,7 @@
 # <ZRef> chips can deep-link to the exact §. H241, Opus 4.8.
 import re, sys
 sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 
 path = sys.argv[1]
 with open(path, encoding='utf-8') as fh:
