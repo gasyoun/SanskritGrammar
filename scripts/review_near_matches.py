@@ -12,6 +12,7 @@ import json
 import sys
 
 sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
 
 
 def classify(a_text, b_text, score):

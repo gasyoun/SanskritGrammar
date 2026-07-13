@@ -10,9 +10,10 @@ skipped-list generator. Validates that every `after` maps to a known para_hash
 whose `before` is still present verbatim in the current .mdx.
 Stdlib only.
 """
-import json, os, sys, io, glob, re
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-BASE = r'C:\Users\user\Documents\GitHub\SanskritGrammar-h385\GasunsDhatu_2014'
+import json, os, sys, glob, re
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # GasunsDhatu_2014
 REV = BASE + r'\revision-2026'
 BDIR = r'C:\Users\user\AppData\Local\Temp\claude\C--Users-user-Documents-GitHub\6822ba6d-a7a3-44af-a90e-f4d8286b3215\scratchpad\batches'
 

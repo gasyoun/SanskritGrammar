@@ -4,3 +4,10 @@ indic_transliteration>=2.3.0
 
 # sequence_tau.py — Kendall's tau for S1 textbook sequencing
 scipy>=1.10
+
+# build_claims.py / build_errata.py / build_quantifiers.py / harvest_quantifiers.py
+# read their YAML change/claim files with `import yaml`.
+pyyaml>=6.0
+
+# GasunsDhatu_2014/revision-2026/rws_to_docx.py emits .docx review packets.
+python-docx>=1.1.0

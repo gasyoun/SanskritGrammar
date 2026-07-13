@@ -9,10 +9,11 @@ Documents every RWS finding NOT internalised into the book prose, grouped by
   * agent-reported per-finding skips inside apply-paragraphs
 Stdlib only.
 """
-import json, sys, io, csv
+import json, os, sys, csv
 from collections import defaultdict, Counter
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-REV = r'C:\Users\user\Documents\GitHub\SanskritGrammar-h385\GasunsDhatu_2014\revision-2026'
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+REV = os.path.dirname(os.path.abspath(__file__))  # revision-2026
 
 CLUSTER_TITLE = {
     'Д3': 'Д3 — недоказанные утверждения (смягчение отложено)',

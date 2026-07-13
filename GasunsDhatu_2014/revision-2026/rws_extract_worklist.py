@@ -7,9 +7,10 @@ blank lines around the finding's `line`). Emits rws_apply_worklist.json so the
 rewrite step works on the real text and the apply step can match it verbatim.
 Stdlib only.
 """
-import json, sys, io, hashlib
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-BASE = r'C:\Users\user\Documents\GitHub\SanskritGrammar-h385\GasunsDhatu_2014'
+import json, os, sys, hashlib
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # GasunsDhatu_2014
 REV = BASE + r'\revision-2026'
 
 def load_lines(fn):
