@@ -33,13 +33,14 @@ const config = {
   projectName: 'SanskritGrammar',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: { defaultLocale: 'ru', locales: ['ru'] },
 
   // ```mermaid fences (sangram charter and the B/C-wave atlas pages) render
   // as diagrams instead of dead code blocks.
-  markdown: { mermaid: true },
+  // onBrokenMarkdownLinks moved under markdown.hooks — the top-level option is
+  // deprecated and removed in Docusaurus v4 (was warning on every build).
+  markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: 'warn' } },
   themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
