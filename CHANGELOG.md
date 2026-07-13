@@ -18,6 +18,13 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Fixed
+- **Broken in-site link on the Subject-concordance catalog page.** `build_subject_concordance.py`
+  emitted `[Whitney book pages](../WhitneyGrammar_1889/00_index)`, but Docusaurus strips the `00_`
+  numeric prefix so the page's real route is `.../WhitneyGrammar_1889/index` — the link 404'd. Fixed
+  the link in the generator and regenerated
+  [`SubjectConcordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/SubjectConcordance/catalog.mdx);
+  `npm run build` confirms the broken-link warning for that page is gone. (Opus 4.8 `claude-opus-4-8`.)
 
 ## [0.9.0] - 2026-07-13
 ### Added
