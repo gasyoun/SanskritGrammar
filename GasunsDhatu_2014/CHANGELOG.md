@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.1] - 2026-07-13
 ### Changed
 - **Издательство M03 решено: «Нестор-История»** (MG, 13-07-2026). Закрывает открытый
   `@DECIDE` §6 плана 2-го издания
