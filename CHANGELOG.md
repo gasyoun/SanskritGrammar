@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.9.1] - 2026-07-14
 ### Fixed
 - **Broken in-site link on the Subject-concordance catalog page.** `build_subject_concordance.py`
   emitted `[Whitney book pages](../WhitneyGrammar_1889/00_index)`, but Docusaurus strips the `00_`
