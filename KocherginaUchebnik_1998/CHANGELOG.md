@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.4.0] - 2026-07-14
 ### Added
 - **Quantifier metalanguage register (H800)** — `quantifiers.yml` per source → generated
   `QUANTIFIER_PROFILE.md` (via `scripts/harvest_quantifiers.py` + `scripts/build_quantifiers.py`,

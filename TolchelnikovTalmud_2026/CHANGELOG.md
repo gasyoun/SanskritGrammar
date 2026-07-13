@@ -11,6 +11,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+
+## [0.2.0] - 2026-07-14
 ### Added
 - **`papers/`** — Tolchelnikov's 2023–2025 companion conference papers/talks (Auroville,
   Fortunatovskiye, Dubyanskiye, plus Desnickaya/Kulikov's independent commentary) published
