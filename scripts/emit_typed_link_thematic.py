@@ -25,6 +25,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "kosha" / "scripts"
 from concordance_core import TIER_CONFIDENCE, TYPE_D_RECORD_FIELDS  # noqa: E402
 
 sys.stdout.reconfigure(encoding="utf-8")
+sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parents[1]
 CONCORDANCE_JSON = HERE.parent / "WhitneyRoots" / "src" / "form_section_concordance.json"

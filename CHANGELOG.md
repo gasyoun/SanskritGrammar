@@ -28,6 +28,23 @@ changelog tags as `vX.Y.Z`.
   until author sign-off. (Opus 4.8 `claude-opus-4-8`, umbrella
   [H552](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H552-Fable_SanskritGrammar_iil-zalizniak-polemic-article_10.07.26.md).)
 
+### Fixed
+- **Revived 5 dead `rws_*.py` revision scripts.** `rws_apply.py`, `rws_assemble.py`,
+  `rws_extract_worklist.py`, `rws_gen_skipped.py` and `rws_triage.py` hardcoded
+  `BASE = C:\…\SanskritGrammar-h385\…`, an H385 worktree that no longer exists — every one of
+  them crashed on a missing path. Replaced the dead literals with `__file__`-derived paths
+  (matching the already-correct `rws_to_docx.py`), so the H385 revision pipeline runs again from
+  any checkout. (Opus 4.8 `claude-opus-4-8`.)
+- **Dead cross-link** in [`TolchelnikovTalmud_2026/CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/CHANGELOG.md) —
+  `ZALIZNYAK…` → `ZALIZNIAK…` (misspelt target; file is `ZALIZNIAK_1975_1978_2004_COMPARISON.md`).
+
+### Changed
+- **UTF-8 output rule swept across 12 tracked scripts.** Added the missing
+  `sys.stderr.reconfigure(encoding='utf-8')` to 6 scripts that only reconfigured stdout, and
+  replaced the older `sys.stdout = io.TextIOWrapper(…)` idiom with the standard
+  `sys.stdout/stderr.reconfigure(…)` pair in the 6 `rws_*.py` scripts, so Devanagari/IAST output
+  can't raise `UnicodeEncodeError` on a non-UTF-8 Windows console. (Opus 4.8 `claude-opus-4-8`.)
+
 ## [0.8.0] - 2026-07-12
 ### Added
 - **`verify_claims_dcs.py` (Kochergina) extended with reproducible backlog-verification metrics

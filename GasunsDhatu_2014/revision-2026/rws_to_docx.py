@@ -15,8 +15,9 @@ Usage:
 
 Requires python-docx >= 1.1 (Document.add_comment). Stdlib + python-docx only.
 """
-import json, sys, io, os
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+import json, sys, os
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 from docx import Document
 from docx.enum.text import WD_COLOR_INDEX
 from docx.shared import Pt

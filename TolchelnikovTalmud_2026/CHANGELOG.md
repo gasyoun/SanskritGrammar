@@ -17,7 +17,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   as `.mdx` in the Docusaurus site, with a `Papers & talks (Tolchelnikov)` sidebar category
   (`_category_.json` per folder) kept separate from the main chapter list, and a
   [`papers/index.mdx`](papers/index.mdx) cross-linked with
-  [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](../ZALIZNYAK_1975_1978_2004_COMPARISON.md) (H411).
+  [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md) (H411).
 - **`data/talmud_appendix1.json`** — the author's own Приложение 1 verb-root catalog (745 roots),
   parsed **verbatim** from the authoritative manual `Talmud-2.1.6.mdx` by new
   `tools/parse_appendix1.py`. Carries per root the author's Ряд, Тип (`I`–`IV`), seṭ
