@@ -122,7 +122,7 @@ def main():
     L.append("A student-reference cross-index of the grammars in this repo, laid out "
              "on the spine of **Whitney's *Sanskrit Grammar* (1889)** — its 18 chapters "
              "are the top-level subjects; the "
-             "[Whitney book pages](../WhitneyGrammar_1889/00_index) carry the full text "
+             "[Whitney book pages](../WhitneyGrammar_1889/index) carry the full text "
              "with each **§N** linking to Wikisource.")
     L.append("")
     L.append(":::note How to read this (automated first pass)")
