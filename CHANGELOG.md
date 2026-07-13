@@ -28,6 +28,25 @@ changelog tags as `vX.Y.Z`.
   until author sign-off. (Opus 4.8 `claude-opus-4-8`, umbrella
   [H552](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H552-Fable_SanskritGrammar_iil-zalizniak-polemic-article_10.07.26.md).)
 
+### Fixed
+- **Broken production build — `@docusaurus/*` version skew.** A partial Dependabot bump
+  ([#156](https://github.com/gasyoun/SanskritGrammar/pull/156)) left `@docusaurus/preset-classic`
+  at `3.10.2` while `core`, `theme-mermaid`, `module-type-aliases` and `types` stayed `3.10.1`, so
+  `docusaurus build` aborted with `Invalid name=docusaurus-plugin-content-docs version number=3.10.2`.
+  Aligned all five `@docusaurus/*` packages to `3.10.2`; the regenerated
+  [`package-lock.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/package-lock.json) also
+  dedupes 198 now-redundant nested `@docusaurus/*` subtrees (−4.5k lines). Supersedes the three open
+  single-package Dependabot PRs (core / theme-mermaid / module-type-aliases → 3.10.2). Build verified
+  green. (Opus 4.8 `claude-opus-4-8`.)
+- **Deprecated `onBrokenMarkdownLinks` config warning** (removed in Docusaurus v4) — moved from the
+  top level into [`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs)
+  `markdown.hooks.onBrokenMarkdownLinks`, silencing the per-build warning.
+
+### Changed
+- **`scripts/requirements.txt`** — declared the two already-imported but unlisted runtime deps
+  `pyyaml` (used by `build_claims`/`build_errata`/`build_quantifiers`/`harvest_quantifiers`) and
+  `python-docx` (`rws_to_docx.py`), so a fresh `pip install -r` no longer fails at import time.
+
 ## [0.8.0] - 2026-07-12
 ### Added
 - **`verify_claims_dcs.py` (Kochergina) extended with reproducible backlog-verification metrics
