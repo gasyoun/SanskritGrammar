@@ -18,6 +18,15 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **A54 author-voice pass + sign-off doc** ([`SIGNOFF_A54_author_pass.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A54_author_pass.md)) —
+  `/paper-author-pass` over the Kulikov-answer article
+  ([`IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md)).
+  Register confirmed as the author's own; no body-prose or substance edits (the 3-lens register
+  pass + hostile referee had already settled voice). Four voice observations and the full ⟦MG⟧
+  submission gate collected into the sign-off doc for a 30-minute read-and-sign; A54 held at 4/5
+  until author sign-off. (Opus 4.8 `claude-opus-4-8`, umbrella
+  [H552](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H552-Fable_SanskritGrammar_iil-zalizniak-polemic-article_10.07.26.md).)
 
 ## [0.8.0] - 2026-07-12
 ### Added
