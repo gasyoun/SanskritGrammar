@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.9.0] - 2026-07-13
 ### Added
 - **First automated test suite + CI** — a `tests/` pytest suite (59 characterization tests) pinning
   the pure helpers of the core build scripts (`build_whitney`, `mdx_postprocess`, `build_errata`,
