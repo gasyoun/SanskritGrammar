@@ -1,0 +1,43 @@
+name: CI
+
+# Pre-merge safety net: run the Python unit tests and a full Docusaurus build on
+# every PR and every push to main. The Pages deploy (deploy-pages.yml) only
+# builds AFTER a merge to main — this catches a broken build (e.g. the
+# @docusaurus version-skew that broke `docusaurus build`) on the PR instead.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: Python unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install deps
+        run: pip install -r scripts/requirements-dev.txt
+      - name: Run pytest
+        run: python -m pytest
+
+  build:
+    name: Docusaurus build (smoke)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22        # LTS; webpack pin 5.97.1 keeps it green on newer Node
+      - name: Install
+        run: npm ci
+      - name: Build (Docusaurus -> build/)
+        run: npm run build

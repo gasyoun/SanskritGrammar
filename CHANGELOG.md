@@ -19,6 +19,13 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **First automated test suite + CI** — a `tests/` pytest suite (59 characterization tests) pinning
+  the pure helpers of the core build scripts (`build_whitney`, `mdx_postprocess`, `build_errata`,
+  `build_claims`, `build_quantifiers`, and the two divergent `slugify` functions), plus a
+  [`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/ci.yml)
+  that runs the suite **and a full Docusaurus build on every PR** — the pre-merge safety net that
+  would have caught the `@docusaurus` version-skew build break before it reached `main`. Scripts had
+  zero test coverage before this. (Opus 4.8 `claude-opus-4-8`.)
 - **A54 author-voice pass + sign-off doc** ([`SIGNOFF_A54_author_pass.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A54_author_pass.md)) —
   `/paper-author-pass` over the Kulikov-answer article
   ([`IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md)).

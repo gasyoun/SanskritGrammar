@@ -1,0 +1,3 @@
+# Test/dev dependencies (not needed to run the build scripts themselves).
+-r requirements.txt
+pytest>=8.0
