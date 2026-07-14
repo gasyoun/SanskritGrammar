@@ -1,0 +1,28 @@
+{
+  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/src/DCS-data-2021",
+  "_note": "types = distinct forms (15.csv/12.csv); tokens = running-text counts (timws.csv / tense_case_data.json)",
+  "BU3_imperative_person": {
+    "distinct_forms_by_person": {
+      "2": 2751,
+      "3": 1369,
+      "1": 266
+    },
+    "total": 4386,
+    "second_person_share_pct": 62.7
+  },
+  "BU4_ppp_suffix": {
+    "distinct_forms_total": 5083,
+    "distinct_ta": 4385,
+    "distinct_na": 383,
+    "na_share_pct": 8.0
+  },
+  "BU1_BU2_tense_shares": {
+    "total_verbal_tokens": 781618,
+    "perfect_tokens": 61986,
+    "perfect_pct": 7.93,
+    "imperfect_tokens": 42803,
+    "imperfect_pct": 5.48,
+    "aorist_tokens": 2452,
+    "aorist_pct": 0.31
+  }
+}
