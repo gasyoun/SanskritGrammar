@@ -11,7 +11,7 @@ _Created: 08-07-2026 · Last updated: 09-07-2026_
 Записка опирается на полные тексты трех работ в этом репозитории и на сверку каталога
 Талмуда с авторской базой `/z/` (проход H329). Ее парная ось — различие **трех работ
 самого Зализняка** (1975 / 1978 / 2004) — разобрана отдельно в
-[`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md);
+[`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md);
 здесь она используется как факт, а не переоткрывается.
 
 ---
@@ -74,7 +74,7 @@ _Created: 08-07-2026 · Last updated: 09-07-2026_
   08-07-2026) прямо заявил: «Рядов `I0`, `N0`, `R0`, `U0`, `M0` не существует — это ошибка
   обработки Таблицы 2 в базе `/z/`». Это **баг программной реализации Широбокова**, 115
   строк, подлежащих отбрасыванию. → Ранее в
-  [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)
+  [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md)
   эти варианты были ошибочно названы «собственным расширением Толчельникова» — здесь эта
   атрибуция **исправлена** (та работа тоже правится этим проходом). Итог по оси 2: инвентарь
   рядов **тождествен** во всех трех работах; кажущееся расширение — артефакт базы.
@@ -249,7 +249,7 @@ _Created: 08-07-2026 · Last updated: 09-07-2026_
   вопрос не затрагивал → **FN-0017** остается `pending` + правка
   [`zalizniak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zalizniak-concordance.mdx).
 - **@DO (сделано этим проходом).** Исправлена атрибуция `0`-рядов в
-  [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)
+  [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md)
   («расширение Толчельникова» → «баг `/z/`»).
 - **Гейтинг автора.** Любое покорневое расхождение, затрагивающее основной текст Талмуда,
   входит только как **утвержденная Иваном сноска** через
