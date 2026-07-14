@@ -18,6 +18,19 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Fixed
+- **In-page ToC anchors on the Word-converted book pages** ([`src/remark/fixHeadingAnchors.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/remark/fixHeadingAnchors.mjs)) —
+  a new build-time remark plugin. These pages use `#` (h1) for every section heading, but
+  Docusaurus only assigns anchor ids to h2–h6, so the baked-in `Оглавление` links (`#урок-1.` etc.)
+  all pointed at id-less headings. The plugin demotes content `h1 → h2` (page title comes from
+  frontmatter) and re-slugs each in-page anchor with the same github-slugger — only when it lands on
+  a real heading, so unmatched links are left as-is. Broken anchors **93 → 25** (Apte 34→0,
+  Talmud 33→8, Gasūns 26→17); the 25 residual are genuine missing targets / `_Toc…` Word bookmarks.
+  Scoped to pages that actually carry an in-page ToC. (Opus 4.8 `claude-opus-4-8`.)
+
+### Changed
+- Section headings on the ToC book pages now render as **h2** (was h1), which also surfaces
+  Docusaurus's right-side table-of-contents navigation on those pages.
 
 ## [0.9.2] - 2026-07-14
 ### Changed

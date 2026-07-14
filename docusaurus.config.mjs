@@ -5,6 +5,7 @@
 // remarkRstTable renders the ```rst-table fenced grid tables as real <table>s.
 import fs from 'fs';
 import remarkRstTable from './src/remark/rstTable.mjs';
+import remarkFixHeadingAnchors from './src/remark/fixHeadingAnchors.mjs';
 
 // Auto-discover book folders (any top-level dir containing at least one .mdx),
 // instead of a hand-maintained static list. A folder dropped in and converted
@@ -60,7 +61,7 @@ const config = {
           sidebarPath: './sidebars.mjs',
           include: bookDirs.map((d) => `${d}/**/*.mdx`),
           exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**'],
-          remarkPlugins: [remarkRstTable],
+          remarkPlugins: [remarkRstTable, remarkFixHeadingAnchors],
           editUrl: undefined,
         },
         blog: false,
