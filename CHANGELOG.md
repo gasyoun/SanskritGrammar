@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **Difficulty & ordering result (pedagogy RQ1) + paper A63 skeleton** — [`scripts/build_difficulty_ordering.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_difficulty_ordering.py) + [`data/difficulty_ordering/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/difficulty_ordering) + writeup [`DIFFICULTY_ORDERING_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIFFICULTY_ORDERING_RESULT.md). Corpus frequency tracks the expert learn-first order for content vocabulary (Kendall-τ 0.887) but the decisive act is excluding the top function words (46 % of top-50 lemmas, all indeclinables/pronouns) and correcting DCS's epic-genre bias; textbook introduction order is frequency-agnostic (τ≈0.05). Paper [A63](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DifficultyOrdering_A63/OUTLINE_difficulty-ordering_A63.md) seeded (2/5). Wave-1a of the digital-pedagogy field (H913). (Opus 4.8 `claude-opus-4-8[1m]`)
 
 ## [0.11.0] - 2026-07-14
 ### Added
