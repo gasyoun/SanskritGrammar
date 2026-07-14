@@ -11,6 +11,13 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+### Fixed
+- **`papers/` index: de-linked the un-published source binaries.** The links to the Auroville /
+  Fortunatovskiye / Dubyanskiye `.pptx`/`.pdf` slide sources were broken *by design* — those source
+  files are deliberately gitignored (`.gitignore` H411 "derived-edition-only" policy), so they aren't
+  in the repo and can't resolve. Converted the 6 dead links to plain filenames (kept a source-only
+  note). `npm run build` now reports **zero broken links** site-wide (the separate broken-*anchor*
+  items on the OCR'd book pages are unaffected). (Opus 4.8 `claude-opus-4-8`.)
 
 ## [0.2.1] - 2026-07-14
 ### Fixed
