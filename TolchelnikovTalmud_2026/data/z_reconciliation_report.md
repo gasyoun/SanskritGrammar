@@ -44,13 +44,13 @@ Handoff **H329**. Model: Opus 4.8 (`claude-opus-4-8`).
 [`samskrtam.ru/z/`](https://samskrtam.ru/z/) is Shirobokov A.P.'s interactive database of
 Tolchelnikov's «Санскритская морфология» v1.1.0 — a verb-root DB carrying the author's
 **authoritative Ряд** (series) and **seṭ/aniṭ** class per root. Our Phase-3
-[`whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/data/whitney_talmud.json)
+[`whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json)
 instead **derived** Ряд from the nucleus vowel (Table-2 calculus) and **inferred** seṭ from
 the p.p.p. — all flagged advisory, pending the author (footnote-proposals FN-0001/0002).
 
 This report joins the two and measures how far our derived values diverge from the
 authoritative ones, to decide whether to adopt `/z/`'s values (H329 decision (a), locked
-with MG 07-07-2026). Join map: [`data/z_root_map.json`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/data/z_root_map.json).
+with MG 07-07-2026). Join map: [`data/z_root_map.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/z_root_map.json).
 
 ## Method
 
@@ -135,7 +135,7 @@ divergence, and (c) drop the over-confident `high` flags shown false here.
 
 ## Deep-link coverage (Phase 4)
 
-The widget feed ([`widget_roots.json`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/data/widget_roots.json))
+The widget feed ([`widget_roots.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/widget_roots.json))
 and the Appendix 1 catalog now carry a `z_url` deep-link to each root's full generated
 paradigm on `/z/`. Coverage: **39/44** ablaut examples, **101/106** seṭ examples.
 
@@ -153,8 +153,8 @@ paradigm on `/z/`. Coverage: **39/44** ablaut examples, **101/106** seṭ exampl
 
 - **Source data**: Толчельников И.Е., «Санскритская морфология: руководство» v1.1.0 (author);
   Широбоков А.П. (algorithmisation / DB) — [samskrtam.ru/z/](https://samskrtam.ru/z/), **ours** (MG).
-- **Join target**: [`whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/data/whitney_talmud.json) (930 Whitney roots).
-- **Generator**: [`tools/build_z_root_map.py`](https://github.com/gasyoun/SanskritGrammar/blob/chore/errata-kochergina-waiting/TolchelnikovTalmud_2026/tools/build_z_root_map.py) · Opus 4.8 (`claude-opus-4-8`), 08-07-2026.
+- **Join target**: [`whitney_talmud.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/whitney_talmud.json) (930 Whitney roots).
+- **Generator**: [`tools/build_z_root_map.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_z_root_map.py) · Opus 4.8 (`claude-opus-4-8`), 08-07-2026.
 - Raw `/z/` index cache is gitignored (`data/raw_cache/`); only the derived join map + this report are committed.
 
 _Dr. Mārcis Gasūns_

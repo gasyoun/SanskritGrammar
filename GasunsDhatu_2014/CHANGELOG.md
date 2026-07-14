@@ -26,7 +26,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   ([`revision-2026/BOOK_PLAN.md`](revision-2026/BOOK_PLAN.md)): ЯСК и «Наука» сняты с
   рассмотрения, гриф ИЯз РАН уже был закрыт 10-07-2026. Р6/§6/§7 Фаза 3/§9 обновлены;
   к Фазе 3 остается только операционное (заявка + договор + рецензенты).
-  ([H847](https://github.com/gasyoun/Uprava/blob/main/handoffs/H847-Opus_SanskritGrammar_m03-publisher-nestor-istoria-decided_13.07.26.md), Opus 4.8 `claude-opus-4-8`.)
+  ([H847](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H847-Opus_SanskritGrammar_m03-publisher-nestor-istoria-decided_13.07.26.md), Opus 4.8 `claude-opus-4-8`.)
 
 ## [0.2.0] - 2026-07-08
 ### Added

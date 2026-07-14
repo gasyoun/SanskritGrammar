@@ -175,7 +175,7 @@ changelog tags as `vX.Y.Z`.
   WhitneyRoots, mw_roots.tsv, MWinflect, csl-inflect, vidyut, VisualDCS); five-year placement
   in W2 between the W1 foundation and W3 semantics. References the canonical `SG-WF-*`/`SG-MO-*`
   IDs, mints none (C2 stays canonical). Build green, page generated, zero broken links
-  ([H634](https://github.com/gasyoun/Uprava/blob/main/handoffs/H634-Fable_SanskritGrammar_sangram-morphology-program_11.07.26.md), Opus 4.8 `claude-opus-4-8` — slot was minted for Fable 5, run on Opus 4.8 by explicit author decision).
+  ([H634](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H634-Fable_SanskritGrammar_sangram-morphology-program_11.07.26.md), Opus 4.8 `claude-opus-4-8` — slot was minted for Fable 5, run on Opus 4.8 by explicit author decision).
 
 ## [0.3.0] - 2026-07-12
 ### Added
