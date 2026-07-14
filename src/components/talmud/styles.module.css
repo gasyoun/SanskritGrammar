@@ -221,6 +221,84 @@
   font-weight: 600;
 }
 
+/* Reader-hover frequency surface (H917): hovering/focusing the collided
+   result reveals the junction's corpus frequency + rank + a live example. */
+.resultWrap {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: help;
+  outline: none;
+}
+.freqBadge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  white-space: nowrap;
+}
+.freqBadgeTop {
+  background: var(--ifm-color-primary);
+  color: var(--ifm-color-white, #fff);
+}
+.freqBadgeNone {
+  background: transparent;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 500;
+}
+.freqCard {
+  position: absolute;
+  bottom: calc(100% + 0.6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 22rem;
+  z-index: 5;
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.16);
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.12s ease;
+}
+.resultWrap:hover .freqCard,
+.resultWrap:focus-visible .freqCard,
+.resultWrap:focus .freqCard {
+  opacity: 1;
+}
+.freqCardRule {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.3rem;
+}
+.freqCardStat {
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-800);
+  line-height: 1.45;
+}
+.freqCardStat b {
+  color: var(--ifm-font-color-base);
+}
+.freqCardExample {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+  word-break: break-word;
+}
+
 /* Case grid (heteroclisis) */
 .grid {
   border-collapse: collapse;

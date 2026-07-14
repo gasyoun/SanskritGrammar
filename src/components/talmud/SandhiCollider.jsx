@@ -4,9 +4,16 @@
 // of §VII.1; consonant sandhi (assimilation, ruki, visarga) is left to the text.
 import React, { useState } from 'react';
 import styles from './styles.module.css';
+import { SANDHI_FREQ, TOTAL_SANDHI_RULES } from './sandhiFrequency';
 
 const LEFT = ['a', 'ā', 'i', 'ī', 'u', 'ū', 'ṛ'];
 const RIGHT = ['a', 'ā', 'i', 'ī', 'u', 'ū', 'ṛ', 'e', 'ai', 'o', 'au'];
+
+// Render a corpus percentage; rules rounded to 0.00 in the source are shown as
+// "<0.01%" rather than a misleading "0%".
+function fmtPct(pct) {
+  return pct >= 0.01 ? `${pct}%` : '<0,01%';
+}
 
 // Compute vowel sandhi. Returns { out, rule, ref } where ref is the §VII sub-rule.
 function sandhi(L, R) {
@@ -42,6 +49,7 @@ export default function SandhiCollider() {
   const [collided, setCollided] = useState(true);
 
   const res = sandhi(left, right);
+  const freq = SANDHI_FREQ[`${left} ${right}`] || null;
 
   function collide(nextL, nextR) {
     setCollided(false);
@@ -89,11 +97,56 @@ export default function SandhiCollider() {
           {right}
         </span>
         <span className={styles.arrow}>=</span>
-        <span key={`${left}${right}`} className={styles.result}>{res.out}</span>
+        <span
+          key={`${left}${right}`}
+          className={styles.resultWrap}
+          tabIndex={0}
+          aria-label={
+            freq
+              ? `${left} + ${right} = ${res.out}: ${res.rule}. ` +
+                `${freq.rank}-я по частоте сандхи в корпусе, ${fmtPct(freq.pct)} стыков.`
+              : `${left} + ${right} = ${res.out}: ${res.rule}. В корпусе не засвидетельствовано.`
+          }
+        >
+          <span key={`out-${left}${right}`} className={styles.result}>{res.out}</span>
+          {freq ? (
+            <span
+              className={`${styles.freqBadge} ${freq.rank <= 10 ? styles.freqBadgeTop : ''}`}
+            >
+              #{freq.rank} по частоте · {fmtPct(freq.pct)}
+            </span>
+          ) : (
+            <span className={`${styles.freqBadge} ${styles.freqBadgeNone}`}>
+              нет в корпусе
+            </span>
+          )}
+          <span className={styles.freqCard} role="tooltip">
+            <span className={styles.freqCardRule}>{res.rule}</span>
+            {freq ? (
+              <>
+                <span className={styles.freqCardStat}>
+                  <b>{freq.rank}-я</b> по частоте среди {TOTAL_SANDHI_RULES.toLocaleString('ru-RU')}{' '}
+                  сандхи корпуса.<br />
+                  <b>{freq.count.toLocaleString('ru-RU')}</b> стыков ({fmtPct(freq.pct)} всех
+                  сандхи), в {freq.nTexts} из 17 текстов.
+                </span>
+                {freq.example ? (
+                  <span className={styles.freqCardExample}>{freq.example}</span>
+                ) : null}
+              </>
+            ) : (
+              <span className={styles.freqCardStat}>
+                Этот стык гласных не встретился в корпусе из 17 текстов — правило
+                действует, но в чтении почти не попадается.
+              </span>
+            )}
+          </span>
+        </span>
       </div>
 
       <p className={styles.caption}>
         <span className={styles.rulePlate}>{res.rule}</span>{' '}
+        Наведите курсор на результат, чтобы увидеть частоту стыка в корпусе (17 текстов).
         Правило действует на стыке морфем или слов; при чтении текста сандхи «снимаются»
         первыми. Полный разбор — в тексте §VII (согласные сандхи, <code>ruki</code>,
         висарга и анусвара здесь не моделируются).
