@@ -1,0 +1,38 @@
+# Verification — Digital Sanskrit Pedagogy
+
+_Created: 14-07-2026 · Last updated: 14-07-2026_
+
+Acceptance criteria per wave-1 deliverable, the exact check that proves each, and the risks/spikes
+register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
+
+## Acceptance criteria
+
+| Deliverable | Done when | Proof (the exact check) |
+|---|---|---|
+| **W1a** difficulty/ordering | `build_difficulty_ordering.py` runs green; result doc has the τ table + ≥1 divergence with a pedagogical reading; A63 skeleton at readiness-2 with a data-inventory table | run the script → non-empty `difficulty_ordering.tsv` + stats JSON; result numbers reproduced by re-running |
+| **W1b** A62 draft | outline at readiness-2; survey + hypotheses (RQ1–4) + evaluation-design sections present; venue line; dashboard regen | `python Uprava/tools/build_dashboard_data.py` regenerates; A62 row shows readiness 2 |
+| **W1c** Zaliznyak on-ramp | on-ramp `.mdx` builds; graded sequence renders; "one tap deeper" links resolve to Талмуд chapters | `npm run build` → SUCCESS, 0 new broken links; spot-check the deep links |
+| **W1d** last-mile spec | spec complete; kosha↔Systema contract defined; one-rung demo path specified; **no Systema production code changed** | `git diff` touches only the spec doc; contract section names inputs/outputs of each hop |
+| **Registration** | MEGABOOK §2.10 present + §2.9 strengthened; A62 in ARTICLES with bumped marker; GTD straddle tier row; ROADMAP_INDEX entry; handoffs registered | `crosslink_weave_check.py MEGABOOK.md` passes; A62 marker → A63; registry counts add up |
+
+## Risks & spikes register
+
+- **RQ1 may return a null result** — the `core_rank` "learn-these-first" order might *not* beat textbook order. **Spike before committing:** correlate `core_rank` with an independent difficulty proxy (rare-form density, first-attestation era). If the correlation is weak, RQ1 reports the null honestly — a negative result is still a result, not a failure to hide.
+- **Accent-dependent ambiguity** — class I/VI and IV/passive are not recoverable from unaccented DCS. Morphology drills and difficulty signals must **surface** the ambiguity, never fabricate certainty.
+- **Rights** — papers touching in-copyright sources (Kochergina) stay `.md` with **aggregate numbers only**, never built as site pages. (A60 already follows this.)
+- **Audio scope-creep** — §3.7 audio is explicitly Wave 4. Do not let W1c/W1d pull audio into wave-1.
+- **Systema fence** — W1d is **spec-only**; touching Systema production code in wave-1 violates the straddle-tier boundary.
+- **Concurrent-session / watcher contention** (SanskritGrammar) — an EmEditor watcher and other sessions have reverted uncommitted edits here before. Build in a **worktree**, commit with **explicit pathspec**, land+commit atomically.
+- **MDX validity** — only `npm run build` proves a page compiles (grep pre-checks pass on files that still fail at compile). Never mark a site page done on a grep alone.
+- **Publish gate** — nothing goes public (Pages/visibility) and no rights-gated corpus is published without a human GO/NO-GO via [`/publish-safety-check`](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md), independent of the build fence.
+
+## The measurement bar (why the field is falsifiable)
+
+Every wave-1 result carries its date, model tier+version, and the committed asset that backs it. No
+deliverable is ✅ without its proof-check above passing. RQ4 (evaluation methodology, A32) is the
+field's backbone: until a learning-gain metric exists, "this teaches better" stays a hypothesis, and
+the roadmap treats it as one.
+
+---
+
+_Dr. Mārcis Gasūns_
