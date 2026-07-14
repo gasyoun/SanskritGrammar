@@ -32,7 +32,13 @@ const config = {
   organizationName: 'gasyoun',
   projectName: 'SanskritGrammar',
 
-  onBrokenLinks: 'warn',
+  // 'throw' (not 'warn'): broken in-site links now fail the build + CI, so a
+  // dead cross-link can't silently ship again. All broken links were cleared
+  // first (catalog #169, Fortunatovskiye #170, papers de-link #171).
+  // onBrokenAnchors stays a warning — the OCR'd book pages still carry ~60
+  // self-referential `#-N` anchors that are a separate, owner-gated cleanup.
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'warn',
 
   i18n: { defaultLocale: 'ru', locales: ['ru'] },
 

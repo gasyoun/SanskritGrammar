@@ -18,6 +18,11 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Changed
+- **`onBrokenLinks: 'throw'`** (was `'warn'`) in [`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs) —
+  now that every in-site broken link is cleared (catalog, Fortunatovskiye landing page, papers
+  de-link), a dead cross-link fails the build + CI instead of shipping silently. `onBrokenAnchors`
+  stays `'warn'` — the OCR'd book pages still carry the separate `#-N` self-anchor cleanup. (Opus 4.8 `claude-opus-4-8`.)
 
 ## [0.9.1] - 2026-07-14
 ### Fixed
