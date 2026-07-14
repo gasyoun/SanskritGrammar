@@ -11,6 +11,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+
+## [0.2.1] - 2026-07-14
 ### Fixed
 - **`papers/Fortunatovskiye_2023/` landing page** — added a hand-authored `index.mdx` (matching the
   Desnickaya_2020 / Kulikov_2025 pattern), so the folder route resolves. The two `../Fortunatovskiye_2023/`
