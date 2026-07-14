@@ -27,12 +27,16 @@
 (commit 04e0778…, см. VisualDCS/src/DCS-data-2026/conllu/PROVENANCE.md).
 Тот же корпусный пин, что у varga_shares.py (Таблица 5).
 
+Фонемные классы + slp1_words()/segment()/load_textname_map() живут в общем
+модуле VisualDCS `dcs_phono_engine` (H926) — этот файл переиспользует их,
+только производя V/C-счётчики из унифицированного списка varna.
+
 Usage:  python dcs_text_phonostats.py [DCS_CONLLU_ROOT]
 Writes (рядом со скриптом): table1_consonant_coefficient.csv,
         table2_rigveda_clusters.csv, table3_ramayana_clusters.csv,
         syllables_per_word.csv, dcs_phonostats_provenance.json
 """
-import sys, os, re, csv, json, glob, time, unicodedata, collections
+import sys, os, csv, json, glob, time, unicodedata, collections
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -42,13 +46,12 @@ from indic_transliteration import sanscript
 from indic_transliteration.sanscript import transliterate as tr
 
 HERE = Path(__file__).resolve().parent
-DEFAULT_ROOT = HERE.parents[2] / "VisualDCS" / "src" / "DCS-data-2026" / "conllu"
+GITHUB_ROOT = HERE.parents[2]
+DEFAULT_ROOT = GITHUB_ROOT / "VisualDCS" / "src" / "DCS-data-2026" / "conllu"
 
-# --- SLP1 phoneme classes (identical to build_akshara_ligature_freq.py) -----
-VOWELS = set("aAiIuUfFxXeEoO")
-CONS = set("kKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzshL")
-MODIF = set("MH~")   # anusvāra, visarga, candrabindu — считаем согласными (2014)
-_SPLIT = re.compile(r"[^kKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzshLaAiIuUfFxXeEoOMH~]+")
+ENGINE_DIR = GITHUB_ROOT / "VisualDCS" / "derived-data" / "Fonetika" / "regen-2026"
+sys.path.insert(0, str(ENGINE_DIR))
+from dcs_phono_engine import VOWELS, slp1_words, segment, load_textname_map
 
 # Целевые тексты Таблицы 1 (4 текста издания 2014 г.) + Ригведа для Табл. 2.
 # Ключ — метка для вывода; значение — точное <textName> в chapter-info.xml.
@@ -72,71 +75,10 @@ CLUSTER_TEXTS = [(lbl, _NFC(tn), fn) for lbl, tn, fn in CLUSTER_TEXTS]
 WANTED = {v for _, v in TABLE1_TEXTS} | {v for _, v, _ in CLUSTER_TEXTS}
 
 
-def slp1_words(text_iast):
-    slp = tr(text_iast, sanscript.IAST, sanscript.SLP1)
-    return [c for c in _SPLIT.split(slp) if c]
-
-
-def segment(word):
-    """(aksharas, v_count, c_count, ligatures) для одного SLP1-слова.
-
-    akshara = максимальная цепочка согласных + гласная + модификаторы,
-              либо конечная согласная кода без гласной.
-    ligature = согласная цепочка длины >= 2.
-    """
-    aksharas, ligs = [], []
-    vc = cc = 0
-    i, n = 0, len(word)
-    while i < n:
-        c = word[i]
-        if c in CONS:
-            j = i
-            while j < n and word[j] in CONS:
-                j += 1
-            cluster = word[i:j]
-            cc += len(cluster)
-            if len(cluster) >= 2:
-                ligs.append(cluster)
-            if j < n and word[j] in VOWELS:
-                k = j + 1
-                while k < n and word[k] in MODIF:
-                    k += 1
-                aksharas.append(word[i:k])
-                vc += 1
-                cc += sum(1 for m in word[j + 1:k])   # M/H/~ считаем согласными
-                i = k
-            else:
-                aksharas.append(cluster)               # конечная кода
-                i = j
-        elif c in VOWELS:
-            k = i + 1
-            while k < n and word[k] in MODIF:
-                k += 1
-            aksharas.append(word[i:k])
-            vc += 1
-            cc += sum(1 for m in word[i + 1:k])
-            i = k
-        else:
-            if c in MODIF:
-                cc += 1
-            i += 1
-    return aksharas, vc, cc, ligs
-
-
-def load_textname_map(root):
-    """basename(.conllu) -> textName из chapter-info.xml."""
-    txt = open(root / "lookup" / "chapter-info.xml", encoding="utf-8").read()
-    m = {}
-    for chap in re.finditer(r"<path>(.*?)</path>.*?<textName>(.*?)</textName>", txt, re.S):
-        base = unicodedata.normalize("NFC", os.path.basename(chap.group(1)))
-        m[base] = unicodedata.normalize("NFC", chap.group(2))
-    return m
-
-
 def main():
     t0 = time.time()
     root = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_ROOT
-    name_of = load_textname_map(root)
+    name_of = load_textname_map(str(root / "lookup" / "chapter-info.xml"))
     files = glob.glob(str(root / "files" / "**" / "*.conllu"), recursive=True)
     print(f"conllu files: {len(files)}; целевых текстов: {len(WANTED)}", file=sys.stderr)
 
@@ -157,7 +99,9 @@ def main():
             if not line.startswith("# text = "):
                 continue
             for w in slp1_words(line[9:]):
-                ak, vc, cc, lg = segment(w)
+                ak, va, lg, lg2 = segment(w)
+                vc = sum(1 for ch in va if ch in VOWELS)
+                cc = len(va) - vc   # согласные + M/H/~ (считаем согласными, изд. 2014 г.)
                 d = per_text[tn]
                 d["V"] += vc
                 d["C"] += cc
