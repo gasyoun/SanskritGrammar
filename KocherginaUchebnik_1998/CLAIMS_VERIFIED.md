@@ -243,7 +243,7 @@ Each claim is graded on **two axes**: **fact** (true vs. the DCS corpus + Whitne
 | **HK-232** | Занятие XXXX / mdx line 10756 | Любое качественное прилагательное может выступить наречием; чаще всего в винительном падеже. | universality | ✅ TRUE | systemic: any qualitative adjective can serve as an adverb, most often in the neuter accusative singular form (kṣipram 'quickly') | ✅ justified | Whitney §1111 (neuter accusative as adverb) |
 | **HK-233** | Занятие XXXX / mdx line 10758 | avyayībhāva наречия на -am с префиксом; префикс 'управляет' винительным (prativanam). | rule | ✅ TRUE | systemic: an avyayībhāva is an indeclinable compound adverb in -am with a governing preverb/particle first member (prati-vanam 'in each forest') | ✅ justified | Whitney §1313 (avyayībhāva) |
 
-## Methodology synthesis — are Kochergina's presentation principles justified?
+## Methodology synthesis — are the author's presentation principles justified?
 
 On the full 40-lesson sweep, the headline of the verb-system pilot holds and sharpens: Kochergina's *factual accuracy is high* — the large majority of registered assertions are TRUE against the DCS-2021 corpus and Whitney 1889 — and her failures are almost never errors of fact but of *calibration*. Her presentation principle is the paradigm-completeness tradition of the Petersburg/Soviet school: give every form its rule and its exceptions, ordered by the grammatical system, and trust the learner to drill the tables. That principle is well-suited to accuracy and to reading the classical language, and it produces the many clean TRUE/JUSTIFIED anchors here (neuter N=A syncretism HK-13, one-final-consonant phonotactics HK-31, pronominal sarvam HK-30, the reduplication and passive-alignment rules).
 
@@ -256,7 +256,7 @@ Recommendation for the reading-site overlay: keep Kochergina's text intact (it i
 
 ## M.G. frequency footnotes
 
-_Corpus frequencies **added by M.G.** (Dr. Mārcis Gasūns) where Kochergina's text gives no number — scholarly apparatus over the reading site, not part of the 1998 text._
+_Corpus frequencies **added by M.G.** (Dr. Mārcis Gasūns) where the author's text gives no number — scholarly apparatus over the reading site, not part of the printed text._
 
 - **HK-4b** — В корпусе DCS-2021 «вариант» -iṣya (seṭ) — самая частая форма будущего: 56,8% различных форм (1 487), против -sya 24,9% (652) и -ṣya 18,3% (479). То, что подано как исключение, на деле — норма. _— M.G._
 - **HK-17** — Формы 2-го лица составляют 62,7% различных форм императива в DCS-2021 (2 751 из 4 386); 3-е лицо — 31,2%, 1-е — 6,1%. _— M.G._

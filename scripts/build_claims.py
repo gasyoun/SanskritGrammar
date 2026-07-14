@@ -70,15 +70,26 @@ def load_book(yml: Path):
     return work, entries, synthesis
 
 
-def load_harvest(book_dir: Path, verified_locs):
-    """Bulk harvested candidates awaiting verification (claims_harvest.yml), minus any whose
-    loc has already been promoted into the verified register."""
+def _norm(s):
+    return " ".join((s or "").split())
+
+
+def load_harvest(book_dir: Path, verified):
+    """Bulk harvested candidates awaiting verification (claims_harvest.yml), minus any already
+    promoted into the verified register. Matched on (loc, claim text) — a single loc can carry
+    several distinct claims (H797 Phase 2), so loc alone would hide unpromoted siblings."""
     hy = book_dir / "claims_harvest.yml"
     if not hy.exists():
         return []
     data = yaml.safe_load(hy.read_text(encoding="utf-8")) or {}
-    return [c for c in (data.get("candidates") or [])
-            if c.get("loc") not in verified_locs]
+    pairs = [(e.get("loc"), _norm(e.get("claim_ru"))) for e in verified]
+
+    def promoted(c):
+        cl = _norm(c.get("claim_ru"))
+        return any(c.get("loc") == loc and (cl in vcl or vcl in cl)
+                   for loc, vcl in pairs)
+
+    return [c for c in (data.get("candidates") or []) if not promoted(c)]
 
 
 def counts(entries):
@@ -91,13 +102,10 @@ def counts(entries):
     return n, verdicted, flagged
 
 
-def _gives_number(c):
-    """Field name varies per book (kochergina_gives_number, buhler_gives_number, ...) —
-    accept any key ending in '_gives_number' so the harvest schema stays grammar-agnostic."""
-    for k, v in c.items():
-        if k.endswith("_gives_number"):
-            return bool(v)
-    return False
+def gives_number(c):
+    """The harvest tag is per-book (`kochergina_gives_number`, `buhler_gives_number`, …) —
+    accept any `*gives_number` key so the renderer stays grammar-agnostic (H797 Phase 2)."""
+    return any(v for k, v in c.items() if k.endswith("gives_number"))
 
 
 def render_backlog(harvest):
@@ -105,13 +113,14 @@ def render_backlog(harvest):
     if not harvest:
         return []
     n = len(harvest)
-    with_num = sum(1 for c in harvest if _gives_number(c))
+    with_num = sum(1 for c in harvest if gives_number(c))
     lines = [
         "", f"## Harvest backlog — {n} candidates pending verification", "",
-        f"Falsifiable assertions swept from the textbook but not yet verdicted. {with_num} state a "
-        f"number of their own (verify it); the rest give none (add an M.G. frequency footnote where "
-        f"computable). As each is verified it is promoted into the table above and removed here. "
-        f"Source: [`claims_harvest.yml`](claims_harvest.yml).",
+        f"Falsifiable assertions swept from the full textbook but not "
+        f"yet verdicted. {with_num} state a number of their own (verify it); the rest give none "
+        f"(add an M.G. frequency footnote where computable). As each is verified it is promoted into "
+        f"the table above and removed here. Source: "
+        f"[`claims_harvest.yml`](claims_harvest.yml).",
         "",
         "| Location | Claim (abridged) | Kind | Author gives №? | Falsifiable as |",
         "|--|--|--|--|--|",
@@ -120,7 +129,7 @@ def render_backlog(harvest):
         claim = md_cell(c.get("claim_ru", ""))
         if len(claim) > 130:
             claim = claim[:127] + "…"
-        gn = "yes" if _gives_number(c) else "—"
+        gn = "yes" if gives_number(c) else "—"
         lines.append(f"| {md_cell(c.get('loc'))} | {claim} | {md_cell(c.get('kind'))} | {gn} | "
                      f"{md_cell(c.get('falsifiable_as'))} |")
     return lines
@@ -146,14 +155,20 @@ def render_book(work, entries, book_dir, synthesis="", harvest=None):
         ]), 0, 0, 0, 0
 
     nb = len(harvest or [])
+    # Point at the book's own DCS battery if it has one, else at the shared Kochergina one
+    # (the corpus metrics are book-agnostic; H797 Phase 2 reuses them across grammars).
+    if (ROOT / book_dir / "verify_claims_dcs.py").exists():
+        battery = "[`verify_claims_dcs.py`](verify_claims_dcs.py)"
+    else:
+        battery = ("the shared battery [`KocherginaUchebnik_1998/verify_claims_dcs.py`]"
+                   "(../KocherginaUchebnik_1998/verify_claims_dcs.py)")
     lines = header + [
         f"_Generated: {ddmmyyyy(TODAY)} · {n} verified · {flagged} flagged (overstated/false or "
         f"presentation issue) · {nb} in the harvest backlog · {n + nb} claims total_",
         "",
         "Each claim is graded on **two axes**: **fact** (true vs. the DCS corpus + Whitney 1889 + "
         "Tolchelnikov-Talmud, with the actual number) and **pedagogy** (is the *presentation* "
-        "defensible). DCS figures reproduced by "
-        "[`verify_claims_dcs.py`](verify_claims_dcs.py).",
+        f"defensible). DCS figures reproduced by {battery}.",
         "",
         "| ID | Location | Claim (abridged) | Kind | Fact | Number | Pedagogy | Ref |",
         "|--|--|--|--|--|--|--|--|",
@@ -171,21 +186,20 @@ def render_book(work, entries, book_dir, synthesis="", harvest=None):
         lines.append(row)
 
     if synthesis:
-        author = work.split(",")[0].strip()
-        lines += ["", f"## Methodology synthesis — are {author}'s presentation principles justified?",
+        lines += ["", "## Methodology synthesis — are the author's presentation principles justified?",
                   ""]
         for para in synthesis.split("\n\n"):
             para = " ".join(para.split())
             if para:
                 lines += [para, ""]
 
-    # M.G. frequency footnotes — corpus numbers added by M.G. where Kochergina states none.
+    # M.G. frequency footnotes — corpus numbers added by M.G. where the author states none.
     mgf = [(e.get("id"), e.get("mg_footnote")) for e in entries if e.get("mg_footnote")]
     if mgf:
         lines += ["", "## M.G. frequency footnotes",
                   "", "_Corpus frequencies **added by M.G.** (Dr. Mārcis Gasūns) where "
-                  "Kochergina's text gives no number — scholarly apparatus over the reading "
-                  "site, not part of the 1998 text._", ""]
+                  "the author's text gives no number — scholarly apparatus over the reading "
+                  "site, not part of the printed text._", ""]
         for cid, fn in mgf:
             lines.append(f"- **{md_cell(cid)}** — {md_cell(fn)} _— M.G._")
 
@@ -239,8 +253,7 @@ def main():
     for yml in ymls:
         book_dir = yml.parent.name
         work, entries, synthesis = load_book(yml)
-        verified_locs = {e.get("loc") for e in entries}
-        harvest = load_harvest(yml.parent, verified_locs)
+        harvest = load_harvest(yml.parent, entries)
         md, n, verdicted, flagged, nb = render_book(work, entries, book_dir, synthesis, harvest)
         (yml.parent / "CLAIMS_VERIFIED.md").write_text(md, encoding="utf-8")
         # Machine-readable twin for the reading-site overlay (P4) — normalise the

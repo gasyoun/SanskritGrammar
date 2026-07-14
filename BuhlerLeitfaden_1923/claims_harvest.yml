@@ -1,317 +1,2391 @@
 # claims_harvest.yml — bulk harvested falsifiable-assertion BACKLOG for BuhlerLeitfaden_1923
 #
-# Companion to claims.yml (the curated, VERIFIED register). Full 48-lesson textbook harvest
-# (H797 Phase 2, 14-07-2026): 45 falsifiable grammatical assertions swept by 5 parallel readers,
-# in reading order, each tagged buhler_gives_number. 5 were verifiable now against ground truth
-# already in hand and promoted to claims.yml as BU-1..BU-5; these 40 remain PENDING.
+# Companion to claims.yml (the curated, VERIFIED register) — the H797 Phase 2 port of the
+# Kochergina two-axis claim-verification pipeline (Uprava FINDINGS §72) to Bühler's
+# «Руководство к элементарному курсу санскритского языка» (Стокгольм 1923, эл. версия
+# Лихушиной 2008): falsifiable grammatical assertions swept from the 48-урок mdx
+# (lines 1-7390; the glossaries are excluded) by 6 parallel readers, in reading order.
 #
-# Yield note: this textbook is far more paradigm-table-dense than Kochergina's (each reader
-# flagged low density in the pure-conjugation/declension-table lessons — e.g. Уроки XXXVII-XLI
-# turned up nothing beyond tables) — falsifiable discursive prose runs roughly 1 claim per
-# 150-250 lines here vs. Kochergina's 60-80, so 45 candidates over ~7,350 lines of grammar prose
-# is the honest full-book yield, not a partial sweep.
+# As each candidate is verified (verdict_fact + verdict_pedagogy + number against DCS-2021 /
+# Whitney 1889 / Tolchelnikov-Talmud, tie-break per D-B) it is PROMOTED into claims.yml
+# (HB-1..) and removed here — same drain loop as KocherginaUchebnik_1998.
 #
-# buhler_gives_number: true  = he states a quantity/frequency (verify it)
-#                       false = he gives none (add an M.G. footnote where computable, or verify
-#                               via Whitney systemic citation)
-#
-# Most entries need either (a) a corpus query this pass didn't build yet (compound-formation and
-# sandhi-outcome claims need text-level string search, not the aggregate tense/case/verb-class
-# tables used for BU-1..BU-5), or (b) a Whitney §-citation not yet located. Continue the drain
-# the same way H797 Phase 1 drained Kochergina's backlog: verify a batch, promote, repeat.
+# buhler_gives_number: true  = Bühler states a quantity/frequency (verify it)
+#                      false = he gives none (add it as an M.G. footnote where computable)
 
-work: "Bühler, Leitfaden für den Elementarcursus des Sanskrit (Russian ed.), 1923 — harvest backlog"
+work: "Bühler, Руководство к элементарному курсу санскритского языка (Leitfaden), 1923 — harvest backlog"
 
 candidates:
 
-  - loc: "СЛОЖЕНИЕ СОГЛАСНЫХ (intro) / mdx line 145"
+  - loc: "Урок I / mdx line 131"
     claim_ru: >-
-      Конечные s и r слов, стоящих в конце предложения, всегда превращаются в висаргу (=ḥ),
-      обыкновенно также и перед k, kh, p, ph и перед шипящими (ś, ṣ, s).
-    kind: universality
-    falsifiable_as: "does word-final s/r become visarga in ALL pre-pausa contexts, and only 'usually' (not always) before k/kh/p/ph/sibilants, per Whitney's actual sandhi rule (§172ff)"
+      К глагольным корням I кл. при образовании основы наст. времени перед личными окончаниями присоединяется a, который в первом лице ед., дв. и мн ч. ind. заменяется ā.
+    kind: allomorphy
+    falsifiable_as: "In class I presents the thematic vowel should surface as ā (not a) in exactly 1sg/1du/1pl indicative forms in DCS attestations"
     buhler_gives_number: false
 
-  - loc: "Урок II / mdx line 267"
+  - loc: "Урок I / mdx line 147"
     claim_ru: >-
-      Допускают 1-ую степень повышения (guṇa) все гласные, стоящие на конце корня, а также
-      краткие гласные, после которых стоит лишь один согласный.
+      Indicativus praesentis обозначает а) настоящее время; б) непосредственное будущее; в) прошедшее при живом изложении (praes. historicum).
+    kind: rule
+    falsifiable_as: "Present indicative tokens in DCS should attest all three uses: present, imminent future, and historical present"
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 269"
+    claim_ru: >-
+      Корни I кл., оканчивающиеся на i, ī, u, ū, ṛ, ṝ заменяют их соответствующим guṇa - e, o, ar
+    kind: allomorphy
+    falsifiable_as: "Class I present stems of vowel-final roots (ji, nī, dru, bhū, smṛ, tṝ) should uniformly show guna grade; ungunated class I stems would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 271"
+    claim_ru: >-
+      e перед следующим за ним признаком основы настоящего времени a превращается в ауа, o в ava, ar в ara
+    kind: allomorphy
+    falsifiable_as: "Attested class I presents should show e->aya, o->ava, ar->ara before thematic a (jayati, bhavati, smarati), never *jeati etc."
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 273"
+    claim_ru: >-
+      Корни, оканчивающиеся на один только согласный, перед которым стоят краткие гласные i, u, ṛ или ḷ также заменяют их соответственным guṇa
+    kind: allomorphy
+    falsifiable_as: "Class I roots with short i/u/ṛ/ḷ before a single final consonant should show guna in the present (cetati, bodhati, varṣati); exceptions refute"
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 275"
+    claim_ru: >-
+      Корни, оканчивающиеся на e и ai, перед признаком основы настоящего, a, изменяют эти звуки в aya и āya
+    kind: allomorphy
+    falsifiable_as: "Roots in e/ai should form presents in -aya-/-āya- (hvayati, gāyati); other treatments refute"
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 309"
+    claim_ru: >-
+      Accusativus — падеж дополнения и обозначает большею частью прямое дополнение, иногда и косвенное, кроме того направление и протяжение (время и пространство).
+    kind: rule
+    falsifiable_as: "DCS accusative tokens should be mostly direct objects, with a minority of indirect-object, goal, and extent-of-time/space uses"
+    buhler_gives_number: true
+
+  - loc: "Урок II / mdx line 327"
+    claim_ru: >-
+      Точно также начальный корневой s часто изменяется в ṣ, st в ṣṭ, sth в ṣṭh и sn в ṣṇ, если ему при удвоении корня предшествует иной гласный чем a или ā
+    kind: allomorphy
+    falsifiable_as: "In reduplicated forms, root-initial s(t/th/n) should retroflex after a non-a/ā reduplication vowel in most ('часто') but not necessarily all cases (tiṣṭha)"
+    buhler_gives_number: true
+
+  - loc: "Урок III / mdx line 415"
+    claim_ru: >-
+      Корни VI кл., подобно корням I кл., в основе настоящего времени перед личными окончаниями вставляют a, но их гласные не заменяются соответственным guṇa
+    kind: rule
+    falsifiable_as: "Class VI present stems should be thematic but ungunated (kṣipati, tudati); any gunated class VI stem refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок III / mdx line 417"
+    claim_ru: >-
+      Конечный ṝ корней переходит в ir, напр. kṝ сыпать — kira, kirati; конечное u и ū переходит в uv, напр. dhū — dhuva, dhuvati; конечное i в iy
+    kind: allomorphy
+    falsifiable_as: "Class VI roots in final ṝ/u,ū/i should form stems in ir/uv/iy respectively (kirati, dhuvati, kṣiyati) in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок III / mdx line 434"
+    claim_ru: >-
+      Instrumentalis (Творительный) отвечает на вопросы с кем? посредством чего?, выражает сопровождение, действующее лицо или орудие.
+    kind: rule
+    falsifiable_as: "DCS instrumental tokens should distribute over comitative, agent, and instrument functions; a major function outside this inventory would refute completeness"
+    buhler_gives_number: false
+
+  - loc: "Урок III / mdx line 436"
+    claim_ru: >-
+      Дательный обозначает направление или то, в пользу чего действие совершается (Dativus commodi).
+    kind: rule
+    falsifiable_as: "DCS dative tokens should attest goal/direction and beneficiary uses as the main functions"
+    buhler_gives_number: false
+
+  - loc: "Урок III / mdx line 438"
+    claim_ru: >-
+      Ablativus (Отложительный) отвечает на вопрос откуда? и обозначает причину.
+    kind: rule
+    falsifiable_as: "DCS ablative tokens should attest source and cause as core functions"
+    buhler_gives_number: false
+
+  - loc: "Урок III / mdx line 442"
+    claim_ru: >-
+      Locativus (Местный) обозначает место и время совершения действия, и также направление.
+    kind: rule
+    falsifiable_as: "DCS locative tokens should attest place, time, and goal-of-motion uses"
+    buhler_gives_number: false
+
+  - loc: "Урок IV / mdx line 566"
+    claim_ru: >-
+      Прилагательные на i (m,n.) склоняются одинаково с существительными. Но в среднем роде для dat., abl., gen., loc. sing., и gen. loc. dualis могут употребляться также формы муж. р.
+    kind: rule
+    falsifiable_as: "Neuter i-stem adjectives should attest optional masculine-type endings in exactly D/Ab/G/L sg. and G/L du.; masculine forms in other neuter cases would refute the stated scope"
+    buhler_gives_number: false
+
+  - loc: "Урок IV / mdx line 570"
+    claim_ru: >-
+      Перед начальным кратким a и звонкими согласными конечный aḥ, восходящий к as, превращается в o, а краткий a исчезает
+    kind: rule
+    falsifiable_as: "Final -as should surface as o before short a (with avagraha) and before voiced consonants in 100% of corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок IV / mdx line 572"
+    claim_ru: >-
+      Перед всеми гласными, за исключением краткого a, т. е. перед i, ī, u, ū, ṛ и двугласными (e, ai, o, au), aḥ, восходящий к as, превращается в a
+    kind: rule
+    falsifiable_as: "Final -as before any vowel other than short a should surface as bare a (nṛpa icchati) in all corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок IV / mdx line 574"
+    claim_ru: >-
+      Конечный āḥ, восходящий к ās, перед гласными, двугласными и звонкими согласными превращается в ā
+    kind: rule
+    falsifiable_as: "Final -ās before vowels, diphthongs, and voiced consonants should lose its visarga (nṛpā icchanti) in all corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок IV / mdx line 576"
+    claim_ru: >-
+      Висарга конечных aḥ и āḥ, восходящих к ar и ār, а также висарга окончаний iḥ, īḥ, uḥ, ūḥ, eḥ, aiḥ, oḥ перед начальными гласными и звонкими согласными превращается в r; перед r же она исчезает, а краткий предыдущий гласный удлинняется
+    kind: rule
+    falsifiable_as: "Etymological-r and non-a-vowel visargas should surface as r before vowels/voiced consonants (punar atra, agnir dahati), and drop with compensatory lengthening before r- (punā rāmaḥ)"
+    buhler_gives_number: false
+
+  - loc: "Урок V / mdx line 652"
+    claim_ru: >-
+      Корни IV кл. в основе наст времени перед личными окончаниями вставляют ya
+    kind: rule
+    falsifiable_as: "All class IV present stems should show the -ya- affix (lubhyati); class IV presents without ya would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок V / mdx line 671"
+    claim_ru: >-
+      Муж. род прилагательных на u склоняется точно так же.
+    kind: rule
+    falsifiable_as: "Masculine u-stem adjectives should show the identical paradigm to bhānu-type nouns in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 789"
+    claim_ru: >-
+      Корни IVкл. на iv удлиняют гласный перед признаком этого класса ya, напр. div, dīvya, dīvyati
+    kind: allomorphy
+    falsifiable_as: "Class IV roots in -iv should show lengthened ī in the present stem (dīvyati, sīvyati); short-vowel forms refute"
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 793"
+    claim_ru: >-
+      Корневые i и u, за которым следует группа согласных, начинающаяся с r или v, удлиняются.
     kind: universality
-    falsifiable_as: "is guṇa-strengthening truly unconditioned on ALL root-final vowels and all short vowels followed by a single consonant, or does Whitney (§235ff) register exceptions"
+    falsifiable_as: "Root i/u before a cluster beginning with r or v should always surface long; counterexamples with short i/u refute"
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 814"
+    claim_ru: >-
+      Для средн. р. прилагательных на u в Dat., Abl., Gen., Loc., Sing, и в Gen. и Loc. Dual. могут также употребляться формы муж. р.
+    kind: rule
+    falsifiable_as: "Neuter u-stem adjectives should attest optional masculine endings in exactly D/Ab/G/L sg. and G/L du."
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 822"
+    claim_ru: >-
+      Конечный n превращается перед начальным j, jh и ś в ñ ... В последнем случае вместо ś может стоять ch
+    kind: rule
+    falsifiable_as: "Final n before j/jh/ś should surface as ñ (tāñ janān, tāñ śatrūn/chatrūn) in corpus junctures, with ś optionally becoming ch"
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 828"
+    claim_ru: >-
+      Перед начальным ḍ, ḍh конечный n превращается в ṇ, а перед l в ṃl (или ṃl с анунасикой)
+    kind: rule
+    falsifiable_as: "Final n before ḍ/ḍh should surface as ṇ and before l as nasalized l (tāṃl lokān) in corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок VI / mdx line 830"
+    claim_ru: >-
+      Перед начальным ṭ или ṭh, c или ch и t или th конечный n превращается в anusvāra, и за ним вставляется соответствующий шипящий: ṣ, ś, или s
+    kind: rule
+    falsifiable_as: "Final n before voiceless ṭ/c/t series should surface as anusvara + homorganic sibilant (tāṃś ca, tāṃs tathā) in 100% of corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 924"
+    claim_ru: >-
+      Корни X кл. перед личными окончаниями в основе наст. врем. вставляют aya
+    kind: rule
+    falsifiable_as: "All class X present stems should show the -aya- affix (pīḍayati); class X presents lacking aya refute"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 928"
+    claim_ru: >-
+      Корни, предпоследний звук которых — i, u ṛ или ḷ вместо него имеют так наз. guṇa
+    kind: allomorphy
+    falsifiable_as: "Class X roots with penultimate i/u/ṛ/ḷ should show guna in the stem (corayati from cur); ungunated class X stems refute"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 930"
+    claim_ru: >-
+      Корни, предпоследний звук которых — краткий a, удлиняют его большей частью
+    kind: allomorphy
+    falsifiable_as: "Class X roots with penultimate short a should show lengthened ā in the majority — but not all ('большей частью') — of stems (kṣālayati vs. unlengthened types like gaṇayati)"
+    buhler_gives_number: true
+
+  - loc: "Урок VII / mdx line 932"
+    claim_ru: >-
+      Если корень кончается на гласный, последний повышается во вторую степень (vṛddhi), т. е. ai вместо i и ī, au вместо u и ū, ār вместо ṛ и ṝ; ai и au перед aya превращаются в āy и āv
+    kind: allomorphy
+    falsifiable_as: "Vowel-final class X roots should show vrddhi grade yielding -āy-/-āv-/-ār- before aya (dhāvayati, pārayati); guna-grade stems refute"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 942"
+    claim_ru: >-
+      перед начальным c и ch превращается в c, перед j и jh в j, перед ṭ и ṭh в ṭ, перед ḍ и ḍh в ḍ, перед l в l
+    kind: rule
+    falsifiable_as: "Final t should fully assimilate to following c/j/ṭ/ḍ/l series (meghāc ca, meghāj jalam, pāpāl lokam) in 100% of corpus junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 946"
+    claim_ru: >-
+      Перед начальным ś t превращается в c, а ś обычно в ch
+    kind: rule
+    falsifiable_as: "Final t + ś- should yield c ch in the majority ('обычно') of corpus junctures (nṛpāc chatruḥ), with unconverted ś as a minority variant"
+    buhler_gives_number: true
+
+  - loc: "Урок VII / mdx line 948"
+    claim_ru: >-
+      Перед носовыми t обычно превращается в n ... однако он может превратиться и в d.
+    kind: rule
+    falsifiable_as: "Final t before nasals should surface as n in the majority ('обычно') of corpus junctures (gṛhān nayati), with d as a minority variant"
+    buhler_gives_number: true
+
+  - loc: "Урок VIII / mdx line 1024"
+    claim_ru: >-
+      Перед личными окончаниями вставляются те же признаки глагольных классов и происходят те же изменения в корне, как и в Par., т. е. в I и VI спряжении a, в IV ya, в X aya
+    kind: allomorphy
+    falsifiable_as: "Ātmanepada present stems show the same class signs as Parasmaipada (I/VI: -a-, IV: -ya-, X: -aya-) in attested DCS forms"
     buhler_gives_number: false
 
   - loc: "Урок VIII / mdx line 1042"
     claim_ru: >-
-      Очень многие глаголы спрягаются только в Ātmanepada, и, таким образом, подобно греческим
-      Media, являются Deponentia.
-    kind: statistic
-    falsifiable_as: "what share/count of DCS-attested verbal roots are Ātmanepada-only (deponent) vs. Parasmaipada-only vs. Ubhayapada — does 'очень многие' hold up as a proportion"
+      Главное значение Ātmanepada у глаголов, которые имеют и par. и ātm., заключается в том, что действие совершается для самого же действующего лица, напр. yajati он приносит жертву (для кого-нибудь другого), yajate он приносит жертву (для себя самого)
+    kind: rule
+    falsifiable_as: "In corpus, middle forms of dual-voice verbs (e.g. yajate) predominantly encode self-benefactive meaning vs active forms"
     buhler_gives_number: false
 
-  - loc: "Урок IX / mdx line 1193"
+  - loc: "Урок VIII / mdx line 1046"
     claim_ru: >-
-      Начальный n в большинстве корней обращается в ṇ после приставок antaḥ(r), niḥ(s), parā,
-      pari, pra и duḥ(s).
-    kind: statistic
-    falsifiable_as: "does the ruki-triggered n→ṇ retroflexion actually apply in the majority of roots after these prefixes, per Whitney §189 conditions/exceptions"
+      Из i или ī + i или ī получается ī, напр. gacchati iti = gacchatīti
+    kind: rule
+    falsifiable_as: "Sandhi i/ī + i/ī always yields ī across word boundary in attested text"
     buhler_gives_number: false
 
-  - loc: "Урок X / mdx line 1327"
+  - loc: "Урок VIII / mdx line 1048"
     claim_ru: >-
-      Личная пассивная конструкция очень употребительна в санскрите при переходных глаголах, а
-      также и безличная — как при переходных, так и при непереходных.
-    kind: statistic
-    falsifiable_as: "how frequent is the ya-passive in DCS token counts relative to active-voice forms of transitive verbs — does the corpus support 'очень употребительна'"
+      Перед другими гласными или двугласными i и ī превращаются в y
+    kind: rule
+    falsifiable_as: "Final i/ī before dissimilar vowel always becomes y in sandhi (except pragrhya contexts)"
     buhler_gives_number: false
 
-  - loc: "Урок XII / mdx line 1574"
+  - loc: "Урок VIII / mdx line 1052"
     claim_ru: >-
-      Прилагательные на u в жен. роде могут принимать суффикс ī (gurvī, bahvī вместо guru-based
-      forms); эти формы жен. рода более употребительны.
-    kind: statistic
-    falsifiable_as: "in DCS, is the ī-suffixed feminine (gurvī-type) actually more frequent than the u-stem feminine (guru-type) for u-stem adjectives"
+      u или ū + u или ū превращаются в ū, напр. sādhu uktam = sādhūktam
+    kind: rule
+    falsifiable_as: "Sandhi u/ū + u/ū always yields ū across word boundary"
     buhler_gives_number: false
 
-  - loc: "Урок VII / mdx line 948"
-    claim_ru: "Перед носовыми конечный t обычно превращается в n; однако он может превратиться и в d."
-    kind: statistic
-    falsifiable_as: "among attested t+nasal sandhi junctions in the corpus, is the n-outcome actually the majority variant over the d-outcome"
-    buhler_gives_number: false
-
-  - loc: "Урок IX / mdx line 1189"
-    claim_ru: "Обычно пишут ā вместо ai [в сандхи ai+гласный], но āv вместо au."
-    kind: statistic
-    falsifiable_as: "in attested sandhi outcomes, is ai+vowel resolved to ā more often than to āy, while au+vowel favors āv over the ā-contraction"
-    buhler_gives_number: false
-
-  - loc: "Урок XIV / mdx line 1815"
-    claim_ru: "Иногда при благословении 2-е и 3-е л. ед. ч. императива принимают особую форму на -tāt (vad-a-tāt), помимо обычных vad-a / vad-a-tu."
-    kind: statistic
-    falsifiable_as: "how frequent is the -tāt imperative in DCS relative to the regular 2sg/3sg imperative, and is its use concentrated in blessing/formulaic contexts"
-    buhler_gives_number: false
-
-  - loc: "Урок XIV / mdx line 1817"
+  - loc: "Урок VIII / mdx line 1054"
     claim_ru: >-
-      Многосложные существительные на -ū (напр. vadhū женщина) склоняются по одному образцу;
-      односложные существительные на -ū (напр. bhū земля) даются отдельно и маркированы как
-      женского рода.
+      Перед другими гласными и двугласными u и ū превращаются в v
+    kind: rule
+    falsifiable_as: "Final u/ū before dissimilar vowel always becomes v in sandhi"
+    buhler_gives_number: false
+
+  - loc: "Урок VIII / mdx line 1058"
+    claim_ru: >-
+      Из ṛ + ṛ получается ṝ ... Перед другими гласными и двугласными ṛ превращается в r
+    kind: rule
+    falsifiable_as: "Final ṛ + ṛ yields ṝ; final ṛ before other vowels becomes r (Whitney 126-129 confirms/refutes; kartṝju form checkable)"
+    buhler_gives_number: false
+
+  - loc: "Урок VIII / mdx line 1060"
+    claim_ru: >-
+      e и o перед a остаются без изменения, но последний выпадает ... Перед другими гласными и двугласными e и o превращаются или в ay и av или чаще в a
+    kind: allomorphy
+    falsifiable_as: "e/o + a- gives e/o with avagraha elision; before other vowels, hiatus form (a) is more frequent than ay/av in written texts"
+    buhler_gives_number: true
+
+  - loc: "Урок IX / mdx line 1183"
+    claim_ru: >-
+      Прилагательные на a (муж. и ср. р.), ж. р. ā, склоняются в муж. р. как deva, в ср. р. как phala и в ж. р. как jāyā
+    kind: rule
+    falsifiable_as: "a-stem adjectives inflect per deva (m), phala (n), jāyā (f) paradigms in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок IX / mdx line 1187"
+    claim_ru: >-
+      Если слово оканчивается на ai или au, а следующее начинается на гласный, то конечный ai обращается в āy, а au в āv, а также оба могут обратиться в ā
+    kind: rule
+    falsifiable_as: "Final ai/au before vowel yield āy/āv (or ā with hiatus) — all attested sandhi outcomes fall in this set"
+    buhler_gives_number: false
+
+  - loc: "Урок IX / mdx line 1195"
+    claim_ru: >-
+      Перед глаголами появляются часто следующие приставки: ava ... ud ... upa ... niḥ(s) ... parā ... pari ... pra ... sam
+    kind: statistic
+    falsifiable_as: "These eight preverbs are among the high-frequency verbal prefixes in corpus token counts"
+    buhler_gives_number: true
+
+  - loc: "Урок X / mdx line 1301"
+    claim_ru: >-
+      Страдательный залог образуется при помощи суффикса ya, присоединяющегося непосредственно к глагольному корню, и принимает личные окончания Ātm. Глаголы X кл. отбрасывают признак aya, но сохраняют перед ya ту форму, которую они должны иметь перед aya
+    kind: rule
+    falsifiable_as: "Passive = root + -ya- + middle endings; class X passives drop -aya- but keep the strengthened stem (coryate, tāḍyate) in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1309"
+    claim_ru: >-
+      i и u удлиняются, напр. ji, jīyate; stu, stūyate
+    kind: allomorphy
+    falsifiable_as: "Root-final i/u lengthen before passive -ya- in all attested passives of such roots"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1311"
+    claim_ru: >-
+      ṛ обращается в ri, если предшествует согласный, и в ar, если предшествует группа согласных, напр. kṛ, kriyate; smṛ, smaryate
+    kind: allomorphy
+    falsifiable_as: "Final ṛ becomes ri before passive ya after single consonant, ar after cluster (kriyate vs smaryate) — Whitney 770 and DCS forms"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1313"
+    claim_ru: >-
+      ṝ обращается в īr, или, если предшествует губной, в ūr, напр. tṝ, tīryate; pṝ, pūryate
+    kind: allomorphy
+    falsifiable_as: "Root-final ṝ gives īr in the passive, ūr after labial (tīryate vs pūryate) in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1315"
+    claim_ru: >-
+      ai и o обращаются в ā напр. dhyai, dhyāyate
+    kind: allomorphy
+    falsifiable_as: "Root-final ai/o become ā before passive -ya- in attested passives"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1319"
+    claim_ru: >-
+      i и u в средине глаголов, корни которых оканчиваются на v и r, удлиняются, напр. div, dīvyate
+    kind: allomorphy
+    falsifiable_as: "Medial i/u lengthen in passives of roots ending in v or r (dīvyate) — attested passive forms"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1323"
+    claim_ru: >-
+      Носовой в средине корня часто исчезает, напр. bandh, badhyate; daṅś, daśyate; śaṅs, śasyate
+    kind: allomorphy
+    falsifiable_as: "Root-medial nasal is often lost in the passive (badhyate, daśyate, śasyate) — 'often', not always: proportion of nasal-retaining passives checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок X / mdx line 1325"
+    claim_ru: >-
+      В корнях vac, vad, vap, vas, vah и svap va превращается в u ... ya корня yaj превращается в i, а r корней grah и prach в ṛ; hve превращается в hū, śās — śiṣ; khan, jan, tan ... и san образуют khanyate или khāyate, janyate или jāyate и т. д.; śī лежать образует śayyate
+    kind: allomorphy
+    falsifiable_as: "Samprasarana in passives: ucyate, uṣyate, ijyate, gṛhyate, pṛcchyate, hūyate, śiṣyate; doublets khanyate/khāyate, janyate/jāyate; śayyate — each form attestable"
+    buhler_gives_number: false
+
+  - loc: "Урок XI / mdx line 1417"
+    claim_ru: >-
+      Imperfectum Par., подобно индикативу, образуется от основы настоящего времени, к которой присоединяются вторичные формы личных окончаний. Перед глаголом появляется приращение a
+    kind: rule
+    falsifiable_as: "Imperfect = augment a- + present stem + secondary endings (ajayat, akṣipat) in all attested imperfects"
+    buhler_gives_number: false
+
+  - loc: "Урок XI / mdx line 1419"
+    claim_ru: >-
+      Если глагол начинается с гласного, то в результате слияния последнего с приращением получается соответствующий двугласный vṛddhi, т. е. a + i или ī = ai; a + u или ū = au, a + ṛ = ār
+    kind: rule
+    falsifiable_as: "Augment + initial vowel yields vrddhi (aicchat-type: ai-, au-, ār-) in attested augmented forms, not guna"
+    buhler_gives_number: false
+
+  - loc: "Урок XI / mdx line 1423"
+    claim_ru: >-
+      Если перед глаголом стоит приставка, то приращение вставляется между нею и глаголом и соединяется с конечным гласным приставки согласно эвфоническим правилам, напр. upa + nī дает основу Imperfecta upānaya
+    kind: rule
+    falsifiable_as: "Augment always sits between preverb and root (upānayat, never *aupanayat) in attested compounded imperfects"
+    buhler_gives_number: false
+
+  - loc: "Урок XI / mdx line 1458"
+    claim_ru: >-
+      Конечные n̄, ṇ и n, если им предшествует краткий гласный, перед начальными гласными и двугласными удваиваются, напр. atiṣṭhan atra = atiṣṭhann atra
+    kind: rule
+    falsifiable_as: "Final ṅ/ṇ/n after short vowel doubles before initial vowel (atiṣṭhann atra) in all attested junctures"
+    buhler_gives_number: false
+
+  - loc: "Урок XII / mdx line 1572"
+    claim_ru: >-
+      Прилагательные на i и u ... в ж. р. часто склоняются как mati и dhenu
+    kind: statistic
+    falsifiable_as: "Feminines of i/u-stem adjectives often follow mati/dhenu declension — proportion of such feminine forms checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XIII / mdx line 1652"
+    claim_ru: >-
+      Imperfectum Ātmanepada (Medium) образуется, подобно Par., от основы наст. вр. и получает приращение a. Личные окончания являются большей частью видоизменениями окончаний Praes. Ātm. — Passivum в имперфекте имеет окончания среднего залога
+    kind: rule
+    falsifiable_as: "Imperfect middle = augment + present stem + secondary middle endings; imperfect passive takes middle endings — attested paradigm forms"
+    buhler_gives_number: true
+
+  - loc: "Урок XIII / mdx line 1695"
+    claim_ru: >-
+      после приставок, кончающихся на i и u, и также после приставки nis (niḥ) начальный s многих глагольных корней превращается в ṣ, st и sth в ṣṭ и ṣṭh
+    kind: allomorphy
+    falsifiable_as: "Root-initial s retroflexes after i/u-final prefixes and nis (niṣad, pariṣic, pratiṣidh) in many but not all roots — proportion checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XIII / mdx line 1699"
+    claim_ru: >-
+      конечный s приставок на is и us перед начальным k, kh, p, ph превращается в ṣ, напр. nis + padyate = niṣpadyate
+    kind: rule
+    falsifiable_as: "Prefix-final s of nis/dus becomes ṣ before k, kh, p, ph (niṣpadyate, duṣkṛta) in all attested compounds"
+    buhler_gives_number: false
+
+  - loc: "Урок XIV / mdx line 1801"
+    claim_ru: >-
+      Imperativus Parasmaipada образуется от основы наст. вр. Его окончания отчасти одинаковы с окончаниями Impf. Par.
+    kind: rule
+    falsifiable_as: "Imperative built on present stem; dual/plural endings partly identical with imperfect endings (tam, ta, tām) — paradigm comparison"
+    buhler_gives_number: false
+
+  - loc: "Урок XV / mdx line 1949"
+    claim_ru: >-
+      Imperativus Ātmanepada (Medium) образуется, подобно Imper. Par., от основы наст. времени. Пассивные формы имеют окончания Imp. Ātm.
+    kind: rule
+    falsifiable_as: "Middle imperative built on present stem; passive imperatives take middle imperative endings (sevyatām-type) — attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XV / mdx line 1999"
+    claim_ru: >-
+      Существ. ж. р. на ṛ склоняются одинаково с м. р., за исключением Асc. pl, который оканчивается на ṝḥ
     kind: universality
-    falsifiable_as: "are there attested masculine monosyllabic ū-stem nouns in DCS/Whitney, parallel to Kochergina's HK-16 finding that monosyllabic ī/ū-stems are attested as masculine, not only feminine — Whitney §344b lists masc./fem.-common u-stems (kārū, babhrú, bībhatsú, bhīrú) worth cross-checking against Bühler's implicit 'monosyllabic ū = feminine' framing"
+    falsifiable_as: "Feminine r-stems (svasṛ) match masculine declension except Acc.pl. -ṝḥ vs masc. -ṝn — zero other divergences in attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XV / mdx line 2003"
+    claim_ru: >-
+      Nomina actoris на -tṛ образуют ж. р. на -trī, который склоняется как nadī
+    kind: rule
+    falsifiable_as: "Agent nouns in -tṛ form feminines in -trī declining like nadī (kartrī, dātrī) — attested feminine agent-noun forms"
     buhler_gives_number: false
 
   - loc: "Урок XVI / mdx line 2071"
     claim_ru: >-
-      Optativus Parasmaipada образуется от основы наст. вр. посредством ī и окончаний
-      имперфекта; только в 3-м л. мн. ч. вместо окончания -an появляется -uḥ.
-    kind: rule
-    falsifiable_as: "is the 3pl optative-active ending exclusively -uḥ (never -an) across the DCS-attested optative paradigm, per Whitney"
+      С конечным a основы наст. вр. I, IV, VI и X классов оптативный ī сливается в e.
+    kind: allomorphy
+    falsifiable_as: "Optatives of thematic classes I, IV, VI, X uniformly show -e- (a+ī), never -aī- or other outcome"
     buhler_gives_number: false
 
-  - loc: "Урок XVIII / mdx line 2300"
+  - loc: "Урок XVI / mdx line 2087"
     claim_ru: >-
-      От всех глагольных корней может быть произведен Causativus (causalis), основа наст. вр.
-      которого образуется посредством суффикса paya или aya.
+      nṛ кроме того образует в Gen. pl. nṛṇām или nṝṇām.
+    kind: allomorphy
+    falsifiable_as: "Both gen.pl. forms nṛṇām and nṝṇām of nṛ are attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XVII / mdx line 2197"
+    claim_ru: >-
+      Характерным признаком Optativi (Potentialis) Ātm. является ī (e), как и в Par.; личные окончания сходны с окончаниями Impf. Ātm. Пассивные формы оптатива имеют окончания Ātm.
+    kind: rule
+    falsifiable_as: "Ātmanepada optatives show -ī-/-e- plus imperfect middle endings; passive optatives take middle endings"
+    buhler_gives_number: false
+
+  - loc: "Урок XVII / mdx line 2228"
+    claim_ru: >-
+      Существ. м. и ж. р. на ā, ī и ū, последним слогом которых является неизмененный глагольный корень, принимают те же окончания, что и nau. Те из них, которые оканчиваются на ā, теряют гласный перед гласными окончаниями, за искл. N. sing. pl. и Асc. pl.
+    kind: allomorphy
+    falsifiable_as: "Root-noun compounds in -ā (viśvapā type) drop ā before vowel endings except N.sg/pl and Acc.pl (viśvapaḥ acc.pl.)"
+    buhler_gives_number: false
+
+  - loc: "Урок XVII / mdx line 2228"
+    claim_ru: >-
+      Основы на ī и ū перед гласными окончаниями изменяют гласный в y и v, если предшествует один согласный; в iy и uv, если предшествует несколько согласных.
+    kind: allomorphy
+    falsifiable_as: "Root-noun stems in ī/ū show -y-/-v- after one consonant (khalapvau) but -iy-/-uv- after cluster (yavakriyau)"
+    buhler_gives_number: false
+
+  - loc: "Урок XVII / mdx line 2236"
+    claim_ru: >-
+      Слова сложенные с nī „ведущий" в Loc. sing. принимают ām, напр. grāma-ṇī ... L. grāmaṇyām.
+    kind: rule
+    falsifiable_as: "Compounds in -ṇī take loc.sg. -ām (grāmaṇyām), unlike ordinary ī-root-nouns"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2302"
+    claim_ru: >-
+      paya присоединяется к большинству корней на ā и двугласные e, ai, au и некоторым другим.
+    kind: statistic
+    falsifiable_as: "Majority of roots ending in ā/e/ai/au form causatives with -paya- (jñāpayati, dāpayati, gāpayati)"
+    buhler_gives_number: true
+
+  - loc: "Урок XVIII / mdx line 2302"
+    claim_ru: >-
+      Конечные двугласные корней в causativ-e всегда заменяются ā.
     kind: universality
-    falsifiable_as: "what share of DCS-attested verbal roots (by token or type) have an attested causative aya/paya stem — is it really 'all roots' or a minority with a productive-but-not-universal pattern"
+    falsifiable_as: "Roots in final diphthong always show ā before causative suffix (gai → gāpayati); any e/ai/au retained would refute"
+    buhler_gives_number: true
+
+  - loc: "Урок XVIII / mdx line 2304"
+    claim_ru: >-
+      śrā, śrai варить образует śrapayati; glai быть усталым и snā купаться, когда перед ними нет приставок, могут образовывать glāpayati или glapayati, snāpayati или snapayati.
+    kind: allomorphy
+    falsifiable_as: "śrā/śrai has short-vowel causative śrapayati; unprefixed glai and snā show both long and short vowel causatives"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2310"
+    claim_ru: >-
+      Глаголы kam любить, cam есть и niśam слышать удлиняют свой a, а глаголы nam и vam могут удлинять его факультативно.
+    kind: allomorphy
+    falsifiable_as: "kam, cam, niśam show lengthened ā in causative (kāmayate); nam and vam attest both namayati/nāmayati, vamayati/vāmayati"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2312"
+    claim_ru: >-
+      Если на предпоследнем месте стоят краткие i, u, ṛ и ḷ, то они повышаются в guṇa, напр. budh, bodhayati.
+    kind: allomorphy
+    falsifiable_as: "Penultimate short i/u/ṛ/ḷ take guṇa in causatives (bodhayati, veśayati, vardhayati, kalpayati)"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2316"
+    claim_ru: >-
+      ṝ внутри корня обращается в īr, напр, stṝh повреждать, stīrhayati.
+    kind: allomorphy
+    falsifiable_as: "Root-internal ṝ yields īr in causative stems"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2318"
+    claim_ru: >-
+      Конечные краткие или долгие i, u и ṛ повышаются в vṛddhi, напр. nī, nāyayati; śru, śrāvayati; bhū, bhāvayati; kṛ, kārayati.
+    kind: allomorphy
+    falsifiable_as: "Root-final i/u/ṛ (short or long) take vṛddhi in causatives (nāyayati, śrāvayati, kārayati)"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2322"
+    claim_ru: >-
+      От каузативов страдательный залог образуется посредством суффикса ya, перед которым суффикс каузатива aya отбрасывается, напр. jñāpayati, jñāpyate.
+    kind: rule
+    falsifiable_as: "Causative passives drop -aya- before -ya- (jñāpyate, pātyate), never *jñāpayyate"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2326"
+    claim_ru: >-
+      Каузативы непереходных глаголов становятся переходными. Каузативы переходных глаголов иногда сочетаются с двойными Acc., или с Асc. и Instr.
+    kind: rule
+    falsifiable_as: "Causatives of intransitives govern an accusative; causatives of transitives attest both double-accusative and accusative+instrumental constructions"
+    buhler_gives_number: true
+
+  - loc: "Урок XIX / mdx line 2471"
+    claim_ru: >-
+      Так же как tad склоняются etad, yad, anya, itara, anyatara, ekatama, katara, katama.
+    kind: rule
+    falsifiable_as: "These eight pronominal stems follow the tad paradigm throughout (e.g. anyat n.sg., anyasmai dat.)"
+    buhler_gives_number: false
+
+  - loc: "Урок XIX / mdx line 2493"
+    claim_ru: >-
+      Вопросительное мест. kim образует N. sg. kaḥ, kā, kim, Асc. kam, kām, kim и следует tad в остальных падежах.
+    kind: rule
+    falsifiable_as: "Interrogative shows kim (not *kat) in n.sg. and tad-type forms elsewhere (kasmai, kasmāt)"
+    buhler_gives_number: false
+
+  - loc: "Урок XIX / mdx line 2495"
+    claim_ru: >-
+      nema полу- склоняется как sarva, но N. pl. m. может быть neme или nemāḥ.
+    kind: allomorphy
+    falsifiable_as: "nema attests both n.pl.m. neme and nemāḥ"
+    buhler_gives_number: false
+
+  - loc: "Урок XIX / mdx line 2497"
+    claim_ru: >-
+      adhara, antara, apara или avara, uttara, dakṣiṇa, para, pūrva и sva склоняются как sarva. Но в Аbl. L. sg, и N. pl. они могут следовать также deva.
+    kind: allomorphy
+    falsifiable_as: "These directional/positional stems attest both pronominal (pūrvasmāt, pūrve) and nominal (pūrvāt, pūrvāḥ) forms in abl./loc.sg. and n.pl."
+    buhler_gives_number: false
+
+  - loc: "Урок XIX / mdx line 2505"
+    claim_ru: >-
+      ardha полу-, alpa немного, katipaya некоторые, carama последний склоняются как deva, но N. pl. могут образовывать также как sarva.
+    kind: allomorphy
+    falsifiable_as: "ardha/alpa/katipaya/carama decline nominally but attest optional pronominal n.pl. in -e"
     buhler_gives_number: false
 
   - loc: "Урок XIX / mdx line 2509"
     claim_ru: >-
-      Часто употребляется множественное число вместо единственного числа местоимений первого и
-      второго лица (pluralis majestatis); энклитические формы (mā, me, nau, naḥ; tvā, te, vām,
-      vaḥ) употребляются только в безударной позиции, если в предложении предшествует другое
-      слово.
+      Часто употребляется множ. ч. вместо ед. ч. местоимений первого и второго лица.
     kind: statistic
-    falsifiable_as: "how common is plural-for-singular pronoun usage in DCS relative to genuine plural reference, and do enclitic pronoun forms in fact avoid clause-initial position"
+    falsifiable_as: "Corpus frequency of plural vayam/yūyam with singular reference is substantial (pluralis majestatis)"
+    buhler_gives_number: true
+
+  - loc: "Урок XX / mdx line 2583"
+    claim_ru: >-
+      Существительные муж. и женск. р., основы которых оканчиваются на согласный, принимают те же окончания, что и nau. Но s имен. и зв. падежей ед. ч. всегда отпадает.
+    kind: universality
+    falsifiable_as: "Consonant-stem m/f nouns never retain the -s of nom./voc.sg. (marut not *maruts)"
+    buhler_gives_number: true
+
+  - loc: "Урок XX / mdx line 2587"
+    claim_ru: >-
+      Сущ. ср. р. в N. V. Асc. du. имеют суффикс ī, а в pl. ni. Звук n последнего окончания стоит перед конечным согласным и, если он оказывается шипящим или h, то он превращается в анусвару. У сущ. ср. р. на ṇ, r, l и некоторых на at он исчезает.
+    kind: allomorphy
+    falsifiable_as: "Neuter consonant stems show du. -ī, pl. -n-infix (anusvāra before sibilant/h: havīṅṣi), with no nasal in neuters in ṇ/r/l (vāri pl.)"
+    buhler_gives_number: false
+
+  - loc: "Урок XX / mdx line 2589"
+    claim_ru: >-
+      Основы на согласный, образованные прямо от корней без присоединения суффиксов, или с суффиксом t, а также основы с суффиксами it, ut, ad, in, as, is, us имеют только одну форму.
+    kind: typology
+    falsifiable_as: "Root stems and stems in -t/-it/-ut/-ad/-in/-as/-is/-us show no strong/weak stem alternation, only sandhi variation"
+    buhler_gives_number: true
+
+  - loc: "Урок XX / mdx line 2591"
+    claim_ru: >-
+      Имена, оканчивающиеся на суф. at, mat, vat, yat, yas и большинство основ на an имеют две формы. В сильных падежах ... им присуща более полная или сильная форма, и более краткая или слабая в остальных падежах.
+    kind: typology
+    falsifiable_as: "Stems in -at/-mat/-vat/-yat/-yas and most -an stems distinguish exactly two stem grades, strong in N/Acc.sg.m, N.V.Acc.du.m, N.V.pl.m, N.V.A.pl.n"
+    buhler_gives_number: true
+
+  - loc: "Урок XX / mdx line 2593"
+    claim_ru: >-
+      Имена, оканчивающиеся на суфф vas, ac и некоторые на an имеют три формы: сильную, среднюю в косвенных падежах, суффиксы которых начинаются с согласного, и слабую в косвенных падежах, суф. которых начинаются с гласного.
+    kind: typology
+    falsifiable_as: "Stems in -vas and -ac (and some -an) show a three-way strong/middle/weak stem distribution by case-ending shape"
+    buhler_gives_number: false
+
+  - loc: "Урок XX / mdx line 2595"
+    claim_ru: >-
+      Основы на согласный, имеющие только одну форму, на t, d и dh, в N. V. Sing. m. f., в N. V. Асc. sg. n. и в Loc. pl. имеют t, а основы на bh в тех же падежах p. t, d, dh обращаются в d, а bh в b перед окончаниями, начинающимися с bh.
+    kind: allomorphy
+    falsifiable_as: "Dental-final stems neutralize to t word-finally/before su (āpatsu) and to d before bh-endings (āpadbhiḥ); bh-stems show p/b likewise"
+    buhler_gives_number: false
+
+  - loc: "Урок XX / mdx line 2631"
+    claim_ru: >-
+      Если конечные dh, ḍh, bh и h заменяются лишенными придыхания t, d, ṭ, ḍ, p, b, а слово начинается с g, d, ḍ или b, то начальный звук получает придыхание, напр. budh N.V.sg. bhut, Loc. pl. bhutsu.
+    kind: rule
+    falsifiable_as: "Aspiration throwback: deaspirated final of dh/ḍh/bh/h-final roots transfers aspiration to initial g/d/ḍ/b (budh → bhut)"
     buhler_gives_number: false
 
   - loc: "Урок XX / mdx line 2633"
     claim_ru: >-
-      Прилагательное, относящееся к нескольким существительным различного рода, стоит в
-      мужском роде, если эти существительные состоят из имен мужского и женского рода, и в
-      среднем роде, если среди них есть существительное среднего рода.
+      Прилагательное, относящееся к нескольким существительным различного рода, стоит в м. р., если эти сущ. состоят из имен м. и ж. рода; и в ср. р., если среди них находятся сущ. ср. р.
     kind: rule
-    falsifiable_as: "does resolved-gender agreement across mixed-gender noun coordination in DCS/Whitney follow masc>fem, neut>all as an absolute rule, or are there attested exceptions"
+    falsifiable_as: "Gender resolution in agreement: masculine for mixed m+f conjuncts, neuter whenever a neuter conjunct is present"
     buhler_gives_number: false
 
   - loc: "Урок XXI / mdx line 2743"
     claim_ru: >-
-      Почти все имена на -ṣ и -ś и большинство имен на -h (кроме перечисленных исключений,
-      напр. dadhṛṣ, naś) в N. V. sg. m./f. и в L. pl. заменяют конечный согласный на ṭ, а перед
-      окончаниями на bh — на ḍ.
-    kind: universality
-    falsifiable_as: "among DCS-attested consonant-stem nouns ending in -ṣ/-ś/-h, what share actually follow the ṭ/ḍ pattern versus the named (and any unnamed) exception classes"
+      Почти все имена на ṣ и ś и большинство имен на h, а также образованные от mṛj, rāj, [bhrāj], yaj (кроме ṛtvij), sṛj (за искл. sraj f.) и parivrāj в N. V. sg m., f., в N. V. Асc. sg, n. и в L. pl. имеют ṭ, а перед начин. c bh окончаниями ḍ.
+    kind: allomorphy
+    falsifiable_as: "Nearly all ṣ/ś-stems and most h-stems (plus mṛj/rāj/yaj/sṛj derivatives, minus ṛtvij, sraj) show ṭ finally (dviṭ, parivrāṭ) and ḍ before bh (dviḍbhiḥ)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXI / mdx line 2745"
+    claim_ru: >-
+      За исключением dadhṛṣ смелый, N. V. dadhṛk.
+    kind: rule
+    falsifiable_as: "dadhṛṣ forms nom.sg. dadhṛk (velar), not *dadhṛṭ"
+    buhler_gives_number: false
+
+  - loc: "Урок XXI / mdx line 2747"
+    claim_ru: >-
+      За исключением ... сущ. naś, которое безразлично может образовывать nak или naṭ.
+    kind: allomorphy
+    falsifiable_as: "naś attests both nom.sg. nak and naṭ"
+    buhler_gives_number: false
+
+  - loc: "Урок XXI / mdx line 2763"
+    claim_ru: >-
+      Имена, образованные с корнями dah жечь и duh доить а также uṣṇih превращают h в k и g; имена, произведенные от druh [muh, snih, snuh], в ṭ и ḍ или в k и g; а имена, произведенные от nah вязать, в t и d.
+    kind: allomorphy
+    falsifiable_as: "h-stem finals split by root: dah/duh/uṣṇih → k/g (kāmadhuk), druh-type → ṭ/ḍ or k/g (mitradhruṭ or mitradhruk), nah → t/d (upānat, upānadbhyām)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXI / mdx line 2771"
+    claim_ru: >-
+      После k, r и l суффиксальный s, за которым следуют гласные, дифтонги, n, m y или v, превращается в ṣ, напр. vāk + su > vākṣu; gir + su = gīrṣu.
+    kind: rule
+    falsifiable_as: "Ruki-type retroflexion of suffixal s after k, r, l before vowels/n/m/y/v (vākṣu, gīrṣu); unretracted *vāksu would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXII / mdx line 2863"
+    claim_ru: >-
+      Имена на r в N. V. sg. m., f. и в N. V. Асc. sg. n. заменяют его висаргой. Имена на ir и ur удлиняют гласный в N. V. sg. и перед окончаниями, начинающимися с согласного.
+    kind: allomorphy
+    falsifiable_as: "r-stems show visarga in nom.sg. (gīḥ, pūḥ) and ir/ur-stems lengthen the vowel before consonant endings (gīrbhiḥ, pūrṣu)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXII / mdx line 2891"
+    claim_ru: >-
+      Имена на in, min и vin в N. sg. m. и в N. V. Acc. pl. n. удлиняют i и отбрасывают n в N. Асc.sg. n. (в V. факультативно), а также отбрасывают его перед окончаниями начинающимися с согласного.
+    kind: allomorphy
+    falsifiable_as: "in-stems: nom.sg.m. dhanī, n.pl.n. dhanīni, n-drop before consonantal endings (dhaniṣu), n.sg.n. dhani with optional voc. dhani/dhanin"
+    buhler_gives_number: false
+
+  - loc: "Урок XXII / mdx line 2910"
+    claim_ru: >-
+      Женский род прилагательных на in, min и vin образуется посредством суффикса ī напр. dhanin, f. dhaninī.
+    kind: rule
+    falsifiable_as: "Feminines of in/min/vin adjectives uniformly end in -inī (dhaninī); an in-adjective feminine in -ā would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXII / mdx line 2912"
+    claim_ru: >-
+      Сущ. ср. р. на as, is и us перед bh изменяют свое окончание в o, ir и ur ... Перед вокальными окончаниями is и us изменяются в iṣ и uṣ. В N. V. Асc.sg. конечный s обращается в висаргу, а в N. V. Асс. pl. получается āṅsi, īṅṣi, ūṅṣi.
+    kind: allomorphy
+    falsifiable_as: "Neuter as/is/us stems: manobhiḥ/havirbhiḥ/dhanurbhiḥ before bh, haviṣā/dhanuṣā before vowels, n.pl. manāṃsi/havīṃṣi/dhanūṃṣi"
+    buhler_gives_number: false
+
+  - loc: "Урок XXII / mdx line 2942"
+    claim_ru: >-
+      Имена муж. и женск. р. на as в N. sg. имеют āḥ, в V. aḥ ... Имена муж. и женск. р. на is и us имеют в N. V. sg. iḥ и uḥ.
+    kind: allomorphy
+    falsifiable_as: "M/f as-stems lengthen in nom.sg. (sumanāḥ) but not voc. (sumanaḥ); m/f is/us-stems show no lengthening (nom. -iḥ/-uḥ)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIII / mdx line 3026"
+    claim_ru: >-
+      Имена м. р. на yas имеют две основы: в сильных падежах они имеют yāṃs, а в N.sg. yān. В слабых падежах yas трактуется как as. V.sg. имеет yan. Ср. род на yas склоняется как manas.
+    kind: allomorphy
+    falsifiable_as: "Comparative yas-stems: strong yāṃs (śreyāṃsam), nom.sg.m. -yān, voc. -yan, weak cases like as-stems, neuter like manas"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIII / mdx line 3045"
+    claim_ru: >-
+      Имена на yas выражают сравнительную степень и образуют женск. р. посредством ī от слабой формы, напр. śreyas ... f. śreyasī.
+    kind: rule
+    falsifiable_as: "yas-stems are comparatives; feminine built on weak stem + ī (śreyasī, not *śreyāṃsī)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIII / mdx line 3047"
+    claim_ru: >-
+      Имена муж. р. на at в сильных пад. имеют ant, которое в N. V.sg. является в виде an. В слабых пад. и в ср. р. основа остается at, за искл. N. V. Асc.pl. Конечный t перед окончаниями, нач. на —bh, изменяется в d.
+    kind: allomorphy
+    falsifiable_as: "at-stems: strong ant (jīvantam), nom.sg. -an, weak at (jīvataḥ), d before bh-endings (jīvadbhiḥ)"
     buhler_gives_number: false
 
   - loc: "Урок XXIII / mdx line 3064"
     claim_ru: >-
-      Только причастия наст. вр. глаголов I, IV и X классов в N. V. Асc. du. ср. р. всегда
-      вставляют n (напр. kariṣyantī); причастия всех прочих классов (в т.ч. VI класса и II
-      класса на -ā) могут вставлять n факультативно или не вставляют его вовсе.
+      Большинство имен на at суть причастия наст. вр. или будущего. Par. Сильная форма получается, если в З.л. pl. ind. praes. или fut. удалить окончание i.
+    kind: statistic
+    falsifiable_as: "Most at-stems are pres./fut. active participles; strong stem equals 3pl. minus -i (nayanti → nayant)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIII / mdx line 3066"
+    claim_ru: >-
+      Если З л. мн. ч. praes. оканчивается на ati вм. anti, что происходит у всех глаголов с редупликацией, то part. не имеет сильной формы, а в N. V. Асc. pl. n. n может вставляться факультативно, напр. dadat дающий.
+    kind: universality
+    falsifiable_as: "All reduplicated presents take 3pl. -ati and their participles lack a strong stem (dadat acc.sg., not *dadantam), with optional n in n.pl.n. (dadati/dadanti)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIII / mdx line 3070"
+    claim_ru: >-
+      mahat великий, большой, в сильных пад. имеет основу mahānt, N.sg. m. mahān, V.sg. m. mahan.
     kind: allomorphy
-    falsifiable_as: "does the class-conditioned optional/obligatory n-insertion in the neuter dual present-participle actually split by class I/IV/X (obligatory) vs. others (optional/absent) in DCS-attested participle forms"
+    falsifiable_as: "mahat uniquely lengthens to mahānt in strong cases (mahāntam), nom.sg. mahān"
     buhler_gives_number: false
 
-  - loc: "Урок XXV / mdx line 3499"
+  - loc: "Урок XXIII / mdx line 3072"
     claim_ru: >-
-      Финальный n корня han изменяется в ṇ (перед гласными суффиксами слабых падежей, с h→gh),
-      если первый член сложного слова или приставка содержит ṛ, r или ṣ; в противном случае h
-      не превращается в ghn.
-    kind: rule
-    falsifiable_as: "does DCS attestation of han-compounds (e.g. brahmahan-type) confirm the ṛ/r/ṣ-triggered ṇ/ghn split with no counterexamples"
+      Женcк. род причастий и прилагательных на at образуется поср. ī, и эта форма всегда совпадает с N. V. Асc.du. n.
+    kind: universality
+    falsifiable_as: "Feminine of at-stems always matches the n.du.neuter form (jīvantī fem. = jīvantī du.n.; adatī = adatī)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIV / mdx line 3114"
+    claim_ru: >-
+      Имена ср. р. на mat, yat и vat склоняются как имена на at; но в N. V. Асc. du. никогда не вставляется n. ... В N.sg. он оканчивается на mān, yān и vān, в V.sg. на man, yan, van.
+    kind: universality
+    falsifiable_as: "Neuter mat/yat/vat stems never show -antī in du. (śrīmatī only); masc. nom.sg. -mān/-yān/-vān, voc. -man/-yan/-van"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIV / mdx line 3133"
+    claim_ru: >-
+      Имена на mat, yat и vat - прилагательные, причем им. на mat и vat — прил. притяжательные. Жен. р. они образуют на matī, yatī и vatī.
+    kind: typology
+    falsifiable_as: "mat/vat suffixes form possessive adjectives with feminines in -matī/-vatī"
     buhler_gives_number: false
+
+  - loc: "Урок XXIV / mdx line 3133"
+    claim_ru: >-
+      Part praes. parasm. глагола bhū, bhavat, следует аналогии имен на vat, если оно обозначает „господин, Вы", напр. N. bhavān, bhavantau, bhavantaḥ, f. bhavatī.
+    kind: rule
+    falsifiable_as: "Honorific bhavat declines like a vat-stem (nom.sg. bhavān), distinct from the participle bhavan"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIV / mdx line 3135"
+    claim_ru: >-
+      Имена муж. и женск. р. на an, man и van имеют две формы и в сильных пад. образуют ān, mān и vān. В N. sg. n всегда отпадает. ... Звук a в словах на an всегда отпадает перед вокальными окончаниями, за искл. L.sg., где он по желанию может быть сохранен. Имена на man и van сохраняют a, если этим суффиксам предшествует согласный.
+    kind: allomorphy
+    falsifiable_as: "an-stems: nom.sg. always drops n (rājā, ātmā); a syncopated before vowel endings (rājñā) except optional loc.sg. (rājani/rājñi); man/van keep a after consonant (ātmanā)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIV / mdx line 3135"
+    claim_ru: >-
+      Сред р. отбрасывает n также в N. Асc.sg. (в V. по желанию) и может сохранять a также перед окончанием N. V. Асc.du.
+    kind: allomorphy
+    falsifiable_as: "Neuter an-stems: n.sg. nāma, voc. nāma/nāman, du. nāmnī or nāmanī both attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIV / mdx line 3175"
+    claim_ru: >-
+      Конечные k, ṭ и p остаются перед начальными глухими согласными; перед звонкими они превращаются в g, ḍ, b, а перед носовыми могут остаться звонкими или перейти в носовые.
+    kind: rule
+    falsifiable_as: "External sandhi: final k/ṭ/p voice to g/ḍ/b before voiced initials and show both voiced and nasal outcomes before nasals (parivrāḍ-na/parivrāṇ-na)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIV / mdx line 3179"
+    claim_ru: >-
+      Начальный h после конечного g, ḍ, d, b (вм. k, ṭ, t, p) может превращаться в gh, ḍh, dh, bh, напр. samyag + hastaḥ = samyag-ghastaḥ, samyag-hastaḥ.
+    kind: rule
+    falsifiable_as: "Initial h after voiced final stop optionally becomes the matching voiced aspirate (tasmād-dhastāt alongside tasmād-hastāt)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXV / mdx line 3277"
+    claim_ru: >-
+      Когда суффиксу предшествует соед. гласный i, то он исчезает перед uṣ. Коренные i и ī перед uṣ изменяются в y, когда им предшествует один согласный, и в iy, когда несколько; u и ū переходят в uv, ṛ в r.
+    kind: allomorphy
+    falsifiable_as: "In weak perfect-participle stems: connecting i drops before uṣ, root i/ī → y or iy by preceding cluster size (ninyuṣ), u/ū → uv (śuśruvuṣ), ṛ → r (cakruṣ)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXV / mdx line 3315"
+    claim_ru: >-
+      ahan п. день, имеет в сильных пад. ahān, в средних пад. ahas, в слабых пад. ahan или ahn: в N. ahaḥ (висарга стоит вм. r)
+    kind: allomorphy
+    falsifiable_as: "ahan distributes stems ahān/ahas/ahn(ahan) by strong/middle/weak cases; N.sg. is ahaḥ (Whitney 430); corpus forms like ahnā, ahobhiḥ confirm or refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXV / mdx line 3333"
+    claim_ru: >-
+      Прилагательные муж. и средн. р. на ac имеют три формы
+    kind: typology
+    falsifiable_as: "Adjectives in -ac (prāc, udac, pratyac...) show three stem grades strong/middle/weak (prāñc/prāc/prāc, udañc/udac/udīc) in attested paradigms (Whitney 407-410)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXV / mdx line 3355"
+    claim_ru: >-
+      N. V.sg. m. этих слов оканчиваются на a, N. V. Асc.sg, п. на ak; перед согласными оканчиниями конечный c изменяется согласно XXI, 1.
+    kind: rule
+    falsifiable_as: "For -ac stems N.sg.m. ends in -aṅ and n.sg. in -ak with c→k before consonant endings (prāṅ, prāk, prāgbhiḥ) — checkable against attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXV / mdx line 3357"
+    claim_ru: >-
+      Женский род слов на an, vas и ac образуется посредством ī, который присоединяется к кратчайшей форме основы, напр. rājan, rājñī; śvan, śunī; vidvas, viduṣī; udac, udicī. Но yuvan образ. yuvati или yuvatī.
+    kind: allomorphy
+    falsifiable_as: "Feminines of an/vas/ac stems are always ī-derivatives of the weakest stem (rājñī, viduṣī, udīcī) with yuvati/yuvatī the sole exception (Whitney 435, 452, 410)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3437"
+    claim_ru: >-
+      strī жена, женщина: N.sg.: strī, V.sg. stri, Acc.sg. pl. striyam, strīm; striyaḥ, strīḥ G.pl. strīṇām; а в D.Abl. G. L.sg. употребляются исключительно окончания, характерные для многосложных существительных женск. р.
+    kind: universality
+    falsifiable_as: "strī takes only the polysyllabic-feminine endings (striyai, striyāḥ, striyām) in D.Abl.G.L.sg. — zero monosyllabic-type variants attested (Whitney 356)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVI / mdx line 3441"
+    claim_ru: >-
+      svayaṃbhū m. Брама („самосущий") перед окончаниями, начин. с гласного, имеет uv
+    kind: allomorphy
+    falsifiable_as: "svayaṃbhū shows -uv- before all vowel endings (svayaṃbhuvā etc.) in attested forms (Whitney 352-353)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3443"
+    claim_ru: >-
+      punarbhū „женщина, вторично вышедшая замуж" следует vadhū, но в Асc.sg. имеет punarbhvam, в Асс.pl. punarbhvaḥ.
+    kind: rule
+    falsifiable_as: "punarbhū declines like vadhū except Acc.sg. punarbhvam, Acc.pl. punarbhvaḥ — attested accusatives confirm or refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3445"
+    claim_ru: >-
+      ap f., pl. tantum, вода: N.V. āpaḥ, Асc. apaḥ, I. adbhiḥ, D.Abl. adbhyaḥ, G. apām, L. apsu.
+    kind: universality
+    falsifiable_as: "ap 'water' occurs only in the plural in classical usage, with ad- before bh-endings (adbhiḥ) — DCS singular occurrences would refute (Whitney 393)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3447"
+    claim_ru: >-
+      div f. небо: N. V.sg. dyauḥ, перед окончаниями, начин. с согласного, превращается в dyu
+    kind: allomorphy
+    falsifiable_as: "div has N.V.sg. dyauḥ and stem dyu- before all consonant endings (dyubhiḥ) — Whitney 361; corpus forms testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3449"
+    claim_ru: >-
+      rai f. богатство: в N. V.sg. и перед согласными суффиксами образует rā, напр. N.V.sg. rāḥ, I.D.Abl.du. rābhyām; перед гласными же суффиксами принимает форму rāy.
+    kind: allomorphy
+    falsifiable_as: "rai distributes rā- before consonants / rāy- before vowels (rāḥ, rābhyām vs. rāyaḥ) in all attested forms (Whitney 361)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3471"
+    claim_ru: >-
+      jarā f. старость может иметь основу jaras перед всеми окончаниями, начин. с гласного.
+    kind: allomorphy
+    falsifiable_as: "jaras-forms (jarasā, jarasaḥ) appear only before vowel-initial endings, alternating with jarā-forms — never before consonant endings (Whitney 397)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3473"
+    claim_ru: >-
+      pāda m нога может принимать форму pad во всех падежах, кроме N.V.sg.du.pl. и Acc.sg.du.
+    kind: allomorphy
+    falsifiable_as: "pad-substitution for pāda is attested in oblique cases and Acc.pl. but never in N.V.sg.du.pl. or Acc.sg.du. (Whitney 397)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3475"
+    claim_ru: >-
+      hṛdaya п. сердце может принимать форму hṛd во всех падежах, кроме N.V.sg.du.pl и Асc.sg.du.
+    kind: allomorphy
+    falsifiable_as: "hṛd-forms (hṛdā, hṛdi) alternate with hṛdaya- everywhere except N.V.Acc. sg./du./pl. slots noted — DCS distribution of hṛd vs. hṛdaya case forms testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3477"
+    claim_ru: >-
+      dos т. п. рука (bracchium) во всех слабых падежах может принимать форму doṣan
+    kind: allomorphy
+    falsifiable_as: "doṣan-forms (doṣṇā, doṣṇaḥ) occur optionally in all and only weak cases of dos (Whitney 398, 432)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3483"
+    claim_ru: >-
+      Вместо формы pād, стоящей в конце сложных слов, в слабых падежах с вокальн. окончаниями, появляется pad
+    kind: allomorphy
+    falsifiable_as: "Compounds in -pād (dvipād) substitute -pad- in weak cases before vowel endings (dvipadaḥ) — attested compound paradigms confirm (Whitney 285a)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3489"
+    claim_ru: >-
+      kroṣṭṛ m. шакал образует V.sg., I. D. Abl.du. и Асc.I. D. Abl. G. L.pl. от kroṣṭṛ, а косвенные с вокальн. оканчаниями формы может образовывать от kroṣṭṛ или от kroṣṭu
+    kind: allomorphy
+    falsifiable_as: "kroṣṭṛ mixes ṛ-stem strong forms (kroṣṭā, kroṣṭāram) with u-stem forms (kroṣṭo, kroṣṭubhiḥ, kroṣṭūn) and optional kroṣṭunā/kroṣṭrā in vowel obliques (Whitney 375c) — text's stem attribution checkable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3497"
+    claim_ru: >-
+      pūṣan и aryaman два имени бога солнца, а также имена сложные с han, напр. brahmahan, в N.sg. т. имеют окончание āḥ; перед согласными суффиксами они отбрасывают n и перед гласными суффиксами слабых падежей выбрасывают a. В последнем случае звук h в слове han изменяется в gh
+    kind: allomorphy
+    falsifiable_as: "pūṣan/aryaman/-han compounds show N.sg. in -ā (brahmahā), n-less middle stems (brahmahabhiḥ), and weak stem -ghn- (brahmaghnā) — Whitney 426, 402; the printed ending 'āḥ' vs. Whitney's -ā is itself checkable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3499"
+    claim_ru: >-
+      В составных словах и после приставок конечный n корня han изменяется в ṇ, если первый член составного слова или приставка содержит ṛ, r или ṣ, а h не превращается в ghn.
+    kind: rule
+    falsifiable_as: "Retroflexion of n in han-compounds occurs when prior member contains ṛ/r/ṣ and stem is not ghn- (vṛtrahaṇam vs. vṛtraghnā) — attested compound forms confirm (Whitney 195)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVI / mdx line 3501"
+    claim_ru: >-
+      anehas m. время, purudeśas т. имя Индры, uśanas N. рr. мудреца, теряют висаргу в N.sg. uśanā; uśanas в V.sg. образует uśana или uśanan.
+    kind: rule
+    falsifiable_as: "as-stems anehas/uśanas etc. form N.sg. in -ā (uśanā) without visarga, V.sg. uśana/uśanan (Whitney 416) — attested nominatives testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVII / mdx line 3589"
+    claim_ru: >-
+      Конечный гласный N.pl. amī не может изменяться.
+    kind: universality
+    falsifiable_as: "amī is pragṛhya — its final ī never undergoes sandhi in any attested context (Whitney 138c)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVII / mdx line 3591"
+    claim_ru: >-
+      Part. praes. Ātm. классов I, IV, VI и X и каузативов, а также причастие страдательного залога образуется посредством māna [māṇa], f ā, приставляемого к основе настоящего времени
+    kind: allomorphy
+    falsifiable_as: "Middle present participles of thematic classes (I, IV, VI, X, causatives) and passives all show -māna, never -āna, on the present stem (Whitney 1043) — corpus participle inventory testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVII / mdx line 3595"
+    claim_ru: >-
+      na [ṇa], обыкновенно присоединяется к глаголам на ṝ (который трактуется, как в praes. pass.), а также к многим глаголам на r и на простой d
+    kind: allomorphy
+    falsifiable_as: "na-participles cluster on roots in ṝ (tīrṇa, pūrṇa) and many in r and simple d (sanna, bhinna) — share of na vs. ta by root-final measurable in Whitney's root list / DCS"
+    buhler_gives_number: true
 
   - loc: "Урок XXVII / mdx line 3639"
     claim_ru: >-
-      Наиболее обычными исключениями [к PPP на -ta без соединительного i] являются: ad→jagdha,
-      khād→khadita, mad→matta, mud→mudita, rud→rudita, vad→udita, vid→vidita, svād→svādita.
-    kind: typology
-    falsifiable_as: "are these the actual highest-frequency exception roots in DCS PPP attestation, versus other -ta-irregular roots Bühler omits"
+      Наиболее обычными исключениями являются: ad есть, jagdha; khād есть, khadita; mad быть пьяным matta; mud радоваться, mudita; rud, rudita; vad, udita; vid знать, vidita; svād пробовать, svādita.
+    kind: statistic
+    falsifiable_as: "These d-final roots take ta (not na) participles: jagdha, khādita, matta, mudita, rudita, udita, vidita, svādita — each form attestable; 'most common exceptions' checkable against fuller root lists"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVII / mdx line 3641"
+    claim_ru: >-
+      Некоторые глаголы принимают и na и ta, напр. ghrā пахнуть, ghrāta или ghrāṇa; trai защищать, trāta или trāṇa; tvar спешить, tūrṇa или tvarita; vid находить, приобретать, vinna или vitta.
+    kind: allomorphy
+    falsifiable_as: "Doublet participles ghrāta/ghrāṇa, trāta/trāṇa, tūrṇa/tvarita, vinna/vitta are all attested — DCS should show both members for each root"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3737"
+    claim_ru: >-
+      Непосредственно он присоединяется почти ко всем корням, оканчивающимся на гласный и не образующим этой формы через na
+    kind: statistic
+    falsifiable_as: "Share of vowel-final non-na roots taking ta directly (jñāta, jita, nīta, stuta, bhūta, kṛta) vs. with i — Whitney's root list gives the ratio behind 'almost all'"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3761"
+    claim_ru: >-
+      После приставок, оканчивающихся на гласный, d иногда выпускается, напр. pradatta или pratta, nidatta или nītta, anudatta или anūtta.
+    kind: statistic
+    falsifiable_as: "Contracted forms pratta/nītta/anūtta coexist with pradatta/nidatta/anudatta after vowel-final preverbs — both variants attestable in corpus (Whitney 1087e)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3763"
+    claim_ru: >-
+      Непосредственно он присоединяется ко многим корням первых девяти классов с краткими внутренними гласными, оканчивающимися на простые t, p, s, c, j, ś, ṣ, dh, bh, h, m, ṇ и n, а также к таким, которые оканчиваются на сочетания, образованные при помощи носовых (ndh, mbh, ṅs), но теряют носовой в praes. pass.
+    kind: allomorphy
+    falsifiable_as: "Roots of classes I-IX with short interior vowel ending in the listed consonants take ta directly (vṛtta, kṣipta, upta, śasta); nasal-losing roots drop the nasal — distribution checkable in Whitney 954-956"
     buhler_gives_number: false
 
   - loc: "Урок XXVIII / mdx line 3765"
     claim_ru: >-
-      После довольно употребительных корней на t, p и s (dyut, pat, krudh, lap, vas, śvas, has)
-      перед суффиксом ta вставляется соединительный гласный i.
+      После следующих, довольно употребительных корней на t, p и s вставляется i: dyut сиять, pat падать, krudh гневаться, lap говорить, vas жить, uṣita; śvas дышать, has смеяться.
+    kind: allomorphy
+    falsifiable_as: "dyutita, patita, lapita, uṣita, śvasita, hasita are the attested participles (with i) of these roots — each form corpus-checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3769"
+    claim_ru: >-
+      Конечные c и j превращаются в k, напр. vac, ukta; sic, sikta; yuj, yukta, tyaj, tyakta
+    kind: allomorphy
+    falsifiable_as: "Root-final c/j regularly yield k before ta (ukta, sikta, yukta, tyakta) — Whitney 217; exceptions countable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3779"
+    claim_ru: >-
+      Следующие довольно употребительные корни на c и j имеют i: uc быть подходящим, ucita; ruc нравиться, rucita; vraj идти, vrajita.
+    kind: allomorphy
+    falsifiable_as: "ucita, rucita, vrajita (set participles) are the attested forms for uc, ruc, vraj — no *ukta-type variants expected in corpus"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3787"
+    claim_ru: >-
+      Конечный ś превращается в ṣ, после которого, как и после коренного ṣ, вместо t появляется ṭ, напр. dṛś, dṛṣṭa; daṅś, daṣṭa; dviṣ, dviṣṭa ... Подобным образом образуется от pṛch, pṛṣṭa; yaj, iṣṭa; sṛj, sṛṣṭa, mṛj, mṛṣṭa; śās, śiṣṭa.
+    kind: allomorphy
+    falsifiable_as: "Root-final ś → ṣ with ta → ṭa (dṛṣṭa, daṣṭa, dviṣṭa) and analogous pṛṣṭa, iṣṭa, sṛṣṭa, mṛṣṭa, śiṣṭa — Whitney 218, 226; forms attestable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3789"
+    claim_ru: >-
+      Следующие довольно употребит. корни на ṣ принимают i: tṛṣ жаждать, muṣ красть, mṛṣ терпеть marṣita.
+    kind: allomorphy
+    falsifiable_as: "tṛṣita, muṣita, marṣita are the attested set participles of tṛṣ, muṣ, mṛṣ — corpus-checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3797"
+    claim_ru: >-
+      Конечные dh и bh превращаются в d и b, а следующий за ними t - в dh, напр. vṛdh, vṛddha; bandh, baddha; labh, labdha.
+    kind: allomorphy
+    falsifiable_as: "dh/bh-final roots show Bartholomae-type ddha/bdha participles (vṛddha, baddha, labdha) — Whitney 160; exceptions countable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3805"
+    claim_ru: >-
+      Конечный h сливается с t в ḍh, перед которым краткие гласные, за исключением ṛ, удлиняются, напр. gāh погружать, gāḍha; guh, gūḍha; lih, līḍha; vah, ūḍha; но dṛh укреплять, dṛḍha крепкий
+    kind: allomorphy
+    falsifiable_as: "h+ta → ḍha with lengthening of short vowels except ṛ (gūḍha, līḍha, ūḍha vs. dṛḍha) — Whitney 222-224; forms attestable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3841"
+    claim_ru: >-
+      Конечный m большей частью превращается в n, причем удлиняется предшествующий гласный, напр. kam любить — kānta; kram, krānta; dam, dānta; но gam, gata; nam, nata; yam укрощать yata; ram, rata.
+    kind: statistic
+    falsifiable_as: "Proportion of m-final roots with -ānta participles (kānta, krānta, dānta) vs. zero-grade -ata (gata, nata, yata, rata) — Whitney 955a; ratio verifies 'большей частью'"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3857"
+    claim_ru: >-
+      Самые обычные глаголы на n и ṇ — следующие: khan, khāta; jan, jāta; tan растягивать, tata; man, mata; sam давать, sata; kṣaṇ повреждать, kṣata.
+    kind: statistic
+    falsifiable_as: "n/ṇ-final roots lose the nasal in ppp (khāta, jāta, tata, mata, sata, kṣata) and these are the most frequent such roots — forms and frequency corpus-checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3871"
+    claim_ru: >-
+      Соединит, гласный i присоединяется ко всем глаголам X класса и каузативам, трактуемым как в praes. pass., ко всем отыменным и прочим производным формам корня, а также к большинству простых корней на простой k (кроме śak быть в состоянии), kh, g, gh, ch, язычные, th, ph, l, v и группы согласных
+    kind: universality
+    falsifiable_as: "All class-X verbs, causatives, and denominatives take -ita (corita, mārita); most roots in k/kh/g/gh/ch/retroflex/th/ph/l/v/clusters take i (likhita, sevita, īkṣita) — śak (śakta) the stated exception; testable against root lists"
+    buhler_gives_number: true
+
+  - loc: "Урок XXVIII / mdx line 3889"
+    claim_ru: >-
+      Исключения: div играть (за деньги), dyūta; ṣṭhīv плевать — ṣṭhyūta; siv шить — syūta; takṣ плотничать — taṣṭa; bhrajj поджаривать — bhṛṣṭa.
+    kind: allomorphy
+    falsifiable_as: "dyūta, ṣṭhyūta, syūta, taṣṭa, bhṛṣṭa are the attested participles of these v-/cluster-final roots (against the general i-insertion rule) — corpus-checkable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3899"
+    claim_ru: >-
+      grah схватывать принимает соединит гласный ī — gṛhīta.
     kind: rule
-    falsifiable_as: "do DCS-attested PPP forms of these specific roots show -ita (not bare -ta), confirming the exception list"
+    falsifiable_as: "grah uniquely takes long ī union vowel: gṛhīta, never *gṛhita (Whitney 900b) — corpus orthography testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3901"
+    claim_ru: >-
+      Совершенно неправильны: kṣai истощать — kṣāma; kṛś худеть, kṛśa; pac, pakva; śuṣ, śuṣka; phul расцветать phulla.
+    kind: rule
+    falsifiable_as: "Irregular participles kṣāma, kṛśa, pakva, śuṣka, phulla function as ppp of these roots (Whitney 957-958) — attested usage confirms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 3989"
+    claim_ru: >-
+      tvā непосредственно приставляется большей частью в тех корнях, которые образуют причастия на ta и na без соед. гласного, причем корень принимает кратчайшую (слабейшую) форму
+    kind: statistic
+    falsifiable_as: "Roots forming aniṭ participles mostly form aniṭ gerunds in -tvā with weak root grade (jñātvā, uktvā, gatvā) — correlation between ppp and gerund iṭ-treatment measurable (Whitney 991)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIX / mdx line 3991"
+    claim_ru: >-
+      У некоторых корней, однако, встречаются также формы с соединительным гласным, напр. vṛttvā или vartitvā, khātvā или khanitvā, kramitvā или krāntvā, devitvā или dyūtvā, damitvā или dāntvā, śamitvā или śāntvā, bhramitvā или bhrāntvā, śasitvā или śastvā.
+    kind: allomorphy
+    falsifiable_as: "Doublet gerunds (vṛttvā/vartitvā, krāntvā/kramitvā etc.) both attested for these roots — DCS should show both variants"
     buhler_gives_number: false
 
   - loc: "Урок XXIX / mdx line 4009"
-    claim_ru: "К глаголам X класса и каузативам всегда приставляется -ayitvā (Absolutivum на tvā)."
-    kind: universality
-    falsifiable_as: "do 100% of DCS class-X/causative tvā-absolutive tokens end in -ayitvā, with zero exceptions"
-    buhler_gives_number: false
-
-  - loc: "Урок XXIX / mdx line 4029"
-    claim_ru: "Очень редкая форма Absolutivum образуется при помощи am (напр. smāram, bhojam)."
-    kind: statistic
-    falsifiable_as: "what is the DCS token/type share of -am absolutives relative to -tvā and -ya absolutives — confirm they are genuinely rare"
-    buhler_gives_number: false
-
-  - loc: "Урок XXX / mdx line 4233"
     claim_ru: >-
-      Наиболее употребительные корни, не имеющие соединительной гласной i перед суффиксами
-      tum/ta/tvā (aniṭ), перечислены в 5 группах по конечному согласному корня.
-    kind: typology
-    falsifiable_as: "are Bühler's listed aniṭ roots indeed the highest-frequency aniṭ roots in DCS, and does the seṭ/aniṭ split align with the already-established future-stem finding (Kochergina HK-4 / paper A60, -iṣya seṭ = 56.8% majority)"
+      Соединительный гласный i (ī) употребляется большей частью у тех же самых корней как и в pt. pf. p., и с корнем происходят часто те же изменения, что и в pt. ... Но способные к guṇa средние гласные принимают guṇa, а носовые часто сохраняются, напр. likhitvā или lekhitvā, sraṅsitvā, grathitvā или grantitvā.
+    kind: statistic
+    falsifiable_as: "Set gerunds pattern with set participles; medial vowels may take guṇa and nasals are often retained in -itvā gerunds (lekhitvā, sraṅsitvā) unlike ppp — variant distribution corpus-checkable (Whitney 991)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIX / mdx line 4009"
+    claim_ru: >-
+      К глаголам X класса и каузативам всегда приставляется —ayitvā, напр. corayitvā, yojayitvā.
+    kind: universality
+    falsifiable_as: "Simple gerunds of class-X verbs and causatives always end in -ayitvā — zero attested exceptions expected (Whitney 1051)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIX / mdx line 4013"
+    claim_ru: >-
+      Корни на e, ai, ā имеют ā; корни на ṛ, корни, в середине которых находится носовой и корни, перечисленные в X, 2 б, трактуются как в praes. pass., напр. pradhyāya, vikīrya, prapūrya, nibadhya, procya, āhūya, pragṛhya, saṃpṛcchya.
+    kind: allomorphy
+    falsifiable_as: "In -ya gerunds e/ai-final roots show ā (pradhyāya) and ṛ/nasal/samprasāraṇa roots show passive-stem treatment (vikīrya, nibadhya, procya) — attested forms confirm"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4015"
+    claim_ru: >-
+      Неправильны между прочим: gam, nam и ram, обазующие напр.: avagamya или avagatya, praṇamya или praṇatya, viramya или viratya
+    kind: allomorphy
+    falsifiable_as: "gam/nam/ram show doublet gerunds -gamya/-gatya, -namya/-natya, -ramya/-ratya — both variants attestable in corpus (Whitney 992)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4023"
+    claim_ru: >-
+      а также tan, man и han, образующие только [vi]tatya, [ava]matya, [pra]hatya.
+    kind: universality
+    falsifiable_as: "tan/man/han form compound gerunds only in -tatya/-matya/-hatya; forms like *vitanya/*prahanya should be unattested"
+    buhler_gives_number: true
+
+  - loc: "Урок XXIX / mdx line 4025"
+    claim_ru: >-
+      Глаголы X класса и каузативы трактуются как в praes. pass., за исключением тех корней, в которых краткий a является предпоследним звуком слога, предшествующего сочетанию aya. В последнем случае приставляется ayya, напр. pracorya, pratāḍya, ānāyya, но avagaṇayya, avagamayya.
+    kind: allomorphy
+    falsifiable_as: "Compound gerunds of class-X/causatives drop aya (pracorya) except when short penult a precedes aya, where -ayya appears (avagaṇayya, avagamayya) — Whitney 1051c; attested distribution testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4033"
+    claim_ru: >-
+      Некоторые abs. употребляются также как предлоги.
+    kind: rule
+    falsifiable_as: "Certain gerunds (ādāya, muktvā, adhikṛtya) function as prepositions/postpositions — attested adpositional uses in DCS confirm (Whitney 1129)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4035"
+    claim_ru: >-
+      Перед всеми abs. может быть приставлено a privativum (a, an), напр. alabdhvā „не получив", anāhūya „не призвав".
+    kind: universality
+    falsifiable_as: "Privative a/an- attaches to gerunds of both types (alabdhvā, anāhūya) without restriction — attested negated gerunds of both -tvā and -ya types confirm"
+    buhler_gives_number: true
+
+  - loc: "Урок XXX / mdx line 4123"
+    claim_ru: >-
+      Infinitivus образуется посредством суффикса tum, перед которым гласные, допускающие подъем, изменяются в guṇa.
+    kind: rule
+    falsifiable_as: "The classical infinitive is uniformly -tum with guṇa of gunable vowels (jetum, netum, śrotum) — Whitney 968; corpus infinitive inventory testable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4127"
+    claim_ru: >-
+      а) ко всем почти односложным корням, оканчивающимся на гласный, за исключением корней на ū и ṝ. Конечные дифтонги e, ai, o изменяются в ā
+    kind: statistic
+    falsifiable_as: "Nearly all monosyllabic vowel-final roots (except in ū and ṝ) take tum directly, diphthongs becoming ā (pātum, gātum, dhātum) — exceptions countable in Whitney's root list"
+    buhler_gives_number: true
+
+  - loc: "Урок XXX / mdx line 4225"
+    claim_ru: >-
+      Конечный d изменяется в t, а m в n; напр. ad, attum; vid знать, vettum; gam, gantum.
+    kind: allomorphy
+    falsifiable_as: "Before -tum root-final d → t and m → n (attum, vettum, gantum) — attested infinitives confirm"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4247"
+    claim_ru: >-
+      Перед суффиксами, начинающимися с согласного, dṛś и sṛj должны принимать r вместо guṇa, а некоторые другие глаголы, как kṛṣ, tṛṣ, spṛś могут следовать этому правилу.
+    kind: allomorphy
+    falsifiable_as: "dṛś/sṛj obligatorily show ra-vowel forms (draṣṭum, sraṣṭum) before consonant suffixes; kṛṣ, tṛṣ, spṛś show doublets (kraṣṭum/karṣṭum, spraṣṭum/sparṣṭum) — attested infinitives confirm (Whitney 227)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4249"
+    claim_ru: >-
+      У корней на ū, корней ḍī, śī и некоторых других, оканчивающихся на гласный, а также у большинства, оканчивающихся на согласный, у корней X класса, каузативов и других производных вставляется i ... Глаголы X класса и каузативы оканчиваются на ayitum
+    kind: allomorphy
+    falsifiable_as: "Roots in ū, ḍī/śī, most consonant-final roots, class-X and causatives take set infinitives (bhavitum, ḍayitum, vanditum, kathayitum) — majority claim checkable against root lists"
+    buhler_gives_number: true
+
+  - loc: "Урок XXX / mdx line 4251"
+    claim_ru: >-
+      В некоторых глаголах, оканчивающихся на согласный, i вставляется по желанию, напр. gāh погружать, gāhitum, gāḍhum; mṛj — mārṣṭum, mārjitum; sah — sahitum, soḍhum; guh — gūhitum, goḍhum.
+    kind: allomorphy
+    falsifiable_as: "Optional-iṭ roots show both infinitive variants (gāhitum/gāḍhum, sahitum/soḍhum) — both members attestable in corpus"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4255"
+    claim_ru: >-
+      У корней на ṝ вставляется либо i, либо ī, напр. tṝ - taritum или tarītum, grah имеет всегда ī: grahītum.
+    kind: universality
+    falsifiable_as: "ṝ-final roots show i/ī doublets (taritum/tarītum) while grah always has ī (grahītum, never *grahitum) — orthographic distribution corpus-checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XXX / mdx line 4259"
+    claim_ru: >-
+      Перед tavya с корнями происходят те же изменения, и i или ī вставляются по тем же правилам, как в инфинитиве, напр. vaktavya, labdhavya.
+    kind: rule
+    falsifiable_as: "tavya-gerundives pattern with tum-infinitives in root shape and iṭ-treatment (vaktavya~vaktum, labdhavya~labdhum) — pairwise correlation testable in corpus"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4261"
+    claim_ru: >-
+      Перед anīya конечные дифтонги корней изменяются в ā, а допускающие подъем гласные — в guṇa, каузативы и корни X класса трактуются как в praes. pass. Примеры: dā — dānīya; gai — gānīya; śru — śravaṇīya; budh — bodhanīya; cur — coraṇīya; śrāvayati — śrāvaṇīya, но gūhanīya, mārjanīya.
+    kind: allomorphy
+    falsifiable_as: "anīya-gerundives show ā for diphthongs, guṇa of gunable vowels, and aya-drop in class-X/causatives (śravaṇīya, bodhanīya, coraṇīya) — attested forms confirm (Whitney 965)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4263"
+    claim_ru: >-
+      Перед ya конечные ā, e, ai, o корней изменяются в e, напр. dā — deya, gai — geya, so — seya. Конечные i и ī изменяются в guṇa, а ṛ и ṝ в vṛddhi, напр. ji — jeya; nī — neya; kṛ - kārya; tṝ - tārya. Конечные u и ū изменяются в av, или, если должна быть выражена необходимость, — в āv, напр. śravya кого следует слушать, śrāvya кого необходимо слушать.
+    kind: allomorphy
+    falsifiable_as: "ya-gerundives: ā/e/ai/o → e (deya, geya), i/ī → guṇa (jeya, neya), ṛ/ṝ → vṛddhi (kārya, tārya), u/ū → av/āv with the śravya vs. śrāvya necessity distinction — Whitney 1213; semantic split of śravya/śrāvya testable in usage"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4265"
+    claim_ru: >-
+      i, u, ḷ стоящие на предпоследнем месте изменяются в guṇa, между тем как ṛ при тех же условиях остается без изменения, напр. vid — vedya; budh — bodhya; tṛd разрушать — tṛdya. a, стоящий на предпоследнем месте, изменяется в vṛddhi, за исключением корней, оканчивающихся на губной и jan, yat, śak, sah, напр. vac — vācya, labh — labhya, śak — śakya.
+    kind: allomorphy
+    falsifiable_as: "In ya-gerundives penultimate i/u take guṇa (vedya, bodhya), ṛ stays (tṛdya), penultimate a takes vṛddhi (vācya) except labial-final roots and jan/yat/śak/sah (labhya, śakya) — attested gerundives confirm"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4267"
+    claim_ru: >-
+      Конечный c и j, корней, образующих Pt. pf. pass. без i, изменяется в k и g (за исключением vac, tyaj, yac, yaj, bhuj есть, niyuj и prayuj), напр. sic — sekya; anj — aṅgya.
+    kind: allomorphy
+    falsifiable_as: "In ya-gerundives final c/j of aniṭ roots become k/g (sekya, aṅgya) with the seven listed exceptions keeping palatal (vācya, tyājya, yājya) — attested forms confirm"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXI / mdx line 4457"
+    claim_ru: >-
+      eka f. ā, в ед. ч. и мн. ч. („некоторые") склоняется подобно sarva.
+    kind: rule
+    falsifiable_as: "eka declines pronominally like sarva (ekasmai, ekasmin) and its plural means 'some' — attested forms/senses confirm (Whitney 482)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXI / mdx line 4479"
+    claim_ru: >-
+      pañcan, saptan, navan и составные числительные на daśan склоняются следующим образом: N. V. Асc. pañca, I. pañcabhiḥ, D. Аbl. pañcabhyaḥ, G. pañcānām, L. pañcasu.
+    kind: rule
+    falsifiable_as: "n-stem numerals 5, 7, 9 and teens decline alike with N.V.Acc. in -a and G. in -ānām, uniform across genders — attested case forms confirm (Whitney 483)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXI / mdx line 4483"
+    claim_ru: >-
+      aṣṭan может следовать pañcan или принимать следующие формы: N. V. Асc. aṣṭau, I. aṣṭābhiḥ, D. Abl. aṣṭābhyaḥ, G. aṣṭānām, L. aṣṭāsu.
+    kind: allomorphy
+    falsifiable_as: "aṣṭan shows doublets aṣṭa/aṣṭau, aṣṭabhiḥ/aṣṭābhiḥ etc. — both variant sets attested in corpus (Whitney 483)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXI / mdx line 4485"
+    claim_ru: >-
+      Числительные количественные на i и t суть существительные женского р. и как таковые и склоняются; śata, sahasra и lakṣa и другие на a следуют phala.
+    kind: rule
+    falsifiable_as: "Tens in -i/-t (viṅśati, triṅśat) are feminine substantives; śata/sahasra/lakṣa are neuter a-stems — attested agreement and case forms confirm (Whitney 485-486)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXI / mdx line 4487"
+    claim_ru: >-
+      От prathama N. pl. m. гласит prathamāḥ или prathame; dvitīya и tṛtīya в D. Abl. L. sing. всех трех родов могут следовать либо местоименному, либо именному склонению. Все остальные порядковые следуют именному склонению.
+    kind: universality
+    falsifiable_as: "Only prathama/dvitīya/tṛtīya admit optional pronominal endings (prathame, dvitīyasmai); ordinals from caturtha on show exclusively nominal declension — attested forms confirm (Whitney 525c)"
+    buhler_gives_number: true
+
+  - loc: "Урок XXXI / mdx line 4513"
+    claim_ru: >-
+      Числительные количественные на i, t и a в отношении синтаксиса играют роль существительных: либо от них зависит род. пад., либо они стоят в виде приложения, напр. viṅśatir gāvaḥ или viṅśatir gavām. Остальные количественные суть прилагательные.
+    kind: rule
+    falsifiable_as: "Numerals 20+ construe as substantives with genitive or apposition (viṅśatir gavām / viṅśatir gāvaḥ), 1-19 as agreeing adjectives — DCS syntactic patterns of numeral constructions testable (Whitney 486)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4581"
+    claim_ru: >-
+      Основы на согласный принимают ту форму, которую они имеют перед окончанием L. pl, но основы на as это as всегда сохраняют
+    kind: allomorphy
+    falsifiable_as: "Before -tara/-tama consonant stems show the weak (Loc.pl.) stem form; as-stems always keep as (e.g. sumanastara) — any counterexample refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4581"
+    claim_ru: >-
+      Основы на is и us принимают iṣ и uṣ, после которого начальный t суффикса превращается в ṭ
+    kind: allomorphy
+    falsifiable_as: "is/us stems give -iṣṭara/-uṣṭara with retroflex ṭ (udarciṣṭara); attested forms with dental t would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4583"
+    claim_ru: >-
+      К наречиям приставляются формы tarām и tamām, напр. uccaiḥ высоко, uccaistarām, uccaistamām
+    kind: rule
+    falsifiable_as: "Adverbs take the forms tarām/tamām (not tara/tama) in comparison; corpus forms like uccaistarām confirm"
     buhler_gives_number: false
 
   - loc: "Урок XXXII / mdx line 4585"
-    claim_ru: "Реже сравнительная степень образуется посредством суффикса īyas, а превосходная — посредством iṣṭha, вместо обычных tara/tama."
+    claim_ru: >-
+      Гласные корней изменяются в guṇa, напр. kṣepīyas. Но для ṛ вместо guṇa иногда получается ra, напр. draḍhīyas, prathīyas, mradīyas
+    kind: allomorphy
+    falsifiable_as: "Before īyas/iṣṭha the root vowel takes guṇa; for ṛ sometimes ra-metathesis (draḍhīyas) — attested forms verify both patterns"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4587"
+    claim_ru: >-
+      Следующие неправильные образования встречаются наиболее часто: antika — nedīyas, nediṣṭha; alpa — kanīyas, kaniṣṭha...; bahu — bhūyas, bhūyiṣṭha; yuvan — yavīyas, yaviṣṭha
     kind: statistic
-    falsifiable_as: "what % of DCS comparative/superlative distinct forms use -īyas/-iṣṭha vs -tara/-tama — confirm -īyas/-iṣṭha is the minority allomorph"
+    falsifiable_as: "These suppletive comparatives (nedīyas, kanīyas, śreyas, bhūyas, etc.) are the most frequent irregular ones in a corpus frequency count"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4609"
+    claim_ru: >-
+      Сравнительная степень сочетается с Аbl., а превосходная степень — с Gen. или Loc. Сравнительной степени часто присуще значение „усиленной превосходной"
+    kind: rule
+    falsifiable_as: "Comparatives govern ablative, superlatives genitive/locative in corpus; comparatives often have elative meaning — DCS case-cooccurrence checkable"
     buhler_gives_number: false
 
   - loc: "Урок XXXIII / mdx line 4657"
-    claim_ru: "Первая часть сложного слова по большей части принимает форму основы (перед согласными), реже — форму какого-нибудь падежа."
+    claim_ru: >-
+      Первая часть сложного слова по большей части принимает форму основы, реже какого-нибудь падежа
     kind: statistic
-    falsifiable_as: "what share of compound first members in the DCS corpus are bare stem-form vs. inflected case-form"
+    falsifiable_as: "In a compound census the first member is bare stem in the great majority of cases, case-inflected forms being rare"
     buhler_gives_number: false
 
-  - loc: "Урок XXXIII / mdx line 4665 (a)"
-    claim_ru: "Конечное as перед твердыми гортанными и губными иногда остаются без изменения."
-    kind: statistic
-    falsifiable_as: "how often does word-final -as resist the regular sandhi change before hard velars/labials in the corpus"
+  - loc: "Урок XXXIII / mdx line 4657"
+    claim_ru: >-
+      Местоимения в таких случаях имеют основу ср. рода, а личные местоимения в sing, в виде mad, tvad принимают во множ. ч. asmad и yuṣmad. Форма mahat в karmadhāraya и bahuvrīhi изменяется в mahā
+    kind: allomorphy
+    falsifiable_as: "Compound-initial pronoun stems are tad-/mad-/tvad-/asmad-/yuṣmad-, and mahat appears as mahā- in karmadhāraya/bahuvrīhi — corpus compound forms verify"
     buhler_gives_number: false
 
-  - loc: "Урок XXXIII / mdx line 4665 (b)"
-    claim_ru: "После конечных i, u и ṛ начальные s, st, sth часто становятся язычными."
+  - loc: "Урок XXXIII / mdx line 4661"
+    claim_ru: >-
+      composita первого рода стоят в дв. ч., если их составляют два стоящие в ед. ч. слова, и во множ. ч., если они состоят из нескольких слов
+    kind: rule
+    falsifiable_as: "Itaretara dvandvas of two singular members are dual (rāmakṛṣṇau), of more members plural — number agreement checkable in corpus"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4663"
+    claim_ru: >-
+      соmposita второго рода стоят в форме neutr. sing.; к конечным словам на d, ṣ и h приставляется a, напр. chatropānaham
+    kind: rule
+    falsifiable_as: "Samāhāra-dvandvas are neuter singular, with -a added after final d/ṣ/h (chatropānaham) — attested dvandva forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4665"
+    claim_ru: >-
+      Конечные is и us также перед твердыми гортанными, зубными и губными превращаются в iṣ и uṣ. Конечное as перед твердыми гортанными и губными иногда остаются без изменения
+    kind: allomorphy
+    falsifiable_as: "In compounds, final is/us become iṣ/uṣ before voiceless gutturals/dentals/labials; final as sometimes stays unchanged before voiceless gutturals/labials — sandhi patterns checkable against Whitney and corpus"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4665"
+    claim_ru: >-
+      После конечных i, u и ṛ начальные s, st, sth часто становятся язычными
+    kind: allomorphy
+    falsifiable_as: "In compounds, initial s/st/sth after i, u, ṛ frequently retroflex (ṣ) — frequency of retroflexion measurable in corpus compounds"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4667"
+    claim_ru: >-
+      соmр. имен богов, в которых первый член большей частью имеет долготу, напр. mitrāvaruṇau; agnīṣomau
     kind: statistic
-    falsifiable_as: "what proportion of i/u/ṛ-final + s/st/sth junctions in the corpus undergo retroflexion (ṣ/ṣṭ/ṣṭh) vs. stay dental"
+    falsifiable_as: "In devatā-dvandvas the first member mostly shows a lengthened final (mitrā-, agnī-) — attested god-pair compounds verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4671"
+    claim_ru: >-
+      те, где один член (большей частью передний) состоит ко второму в соотношении косвенного падежа
+    kind: statistic
+    falsifiable_as: "In case-tatpuruṣas the dependent member is mostly the first one; reverse-order cases (pūrvakāyaḥ type) are minority — countable in compound census"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4673"
+    claim_ru: >-
+      Иногда первый член удерживает падежное окончание, напр. ātmanotṛtīyaḥ; vācaspatiḥ; manasija
+    kind: statistic
+    falsifiable_as: "Aluk-compounds with retained case ending (vācaspati, manasija) exist but are occasional — their corpus rate confirms 'иногда'"
     buhler_gives_number: false
 
   - loc: "Урок XXXIII / mdx line 4675"
     claim_ru: >-
-      Если второй член tatpuruṣa — глагольное прилагательное, никогда или редко появляющееся в
-      виде самостоятельного слова, состав. имя разрешается посредством предложения с verbum
-      finitum.
-    kind: universality
-    falsifiable_as: "are the cited tatpuruṣa second members (e.g. -pāla, -stha, -ja) genuinely rare/unattested as free words in DCS, or do they occur independently at normal frequency"
+      Если второй член представляет собою глагольное прилагательное, никогда или редко пояляющееся в виде самостоятельного слова, то состав, имя разрешается посредством предложения с verbam finitam
+    kind: rule
+    falsifiable_as: "Final members like -pāla, -stha, -ja never or rarely occur as independent words — independent attestation rate of such verbal adjectives in DCS tests this"
     buhler_gives_number: false
 
   - loc: "Урок XXXIII / mdx line 4683"
     claim_ru: >-
-      Dvigu-композиты выражают большей частью группу или собрание (samāhāra) как сущ. ср.р. или
-      ж.р. на -ī; прилагательные этого класса встречаются реже.
+      такие, первым членом которых является числительное количестьенное (dvigu). Они выражают большей частью группу или скопление и являются в таком случае сущ. сред. р. или женского рода на ī... Реже встречаются прилагательные этого класса
     kind: statistic
-    falsifiable_as: "among attested dvigu compounds in DCS, what is the ratio of collective-noun readings to adjectival readings"
+    falsifiable_as: "Dvigu compounds are mostly collective neuters or feminines in -ī (caturyugam, trilokī); adjectival dvigus (pañcagu) are rarer — corpus proportions checkable"
     buhler_gives_number: false
 
   - loc: "Урок XXXIV / mdx line 4757"
     claim_ru: >-
-      В конце всех tatpuruṣa rājan изменяется в rāja, sakhi в sakha, pathin в patha, за
-      исключением случаев, когда предшествует su, kiṃ или a.
-    kind: rule
-    falsifiable_as: "does Whitney confirm this stem-alternation rule for rājan/sakhi/pathin as tatpuruṣa finals, with su-/kiṃ-/a- as the stated exception class"
+      В конце всех tatpuruṣa rājan изменяется в rāja; sakhi в sakha; pathin в patha, за исключением тех случаев, когда предшествует su, kiṃ (худой) или a (не)
+    kind: universality
+    falsifiable_as: "Tatpuruṣa-final rājan→rāja, sakhi→sakha, pathin→patha universally, except patha not after su/kiṃ/a — any final -rājan tatpuruṣa refutes"
     buhler_gives_number: false
 
   - loc: "Урок XXXIV / mdx line 4759"
-    claim_ru: "go изменяется в gava в конце tatpuruṣa, за исключением прилагательных dvigu."
+    claim_ru: >-
+      go изменяется в gava, за исключением рилагательных dvigu
     kind: rule
-    falsifiable_as: "does Whitney's account of go-compounds confirm gava as the regular tatpuruṣa-final form, with dvigu adjectives as the stated exception"
+    falsifiable_as: "Tatpuruṣa-final go becomes gava except in dvigu adjectives (dvigu, pañcagu) — attested go-final compounds verify"
     buhler_gives_number: false
 
   - loc: "Урок XXXIV / mdx line 4761"
-    claim_ru: "ahan изменяется в aha (m.) в конце сложных слов, или, после sarva, apara, pūrva, madhya — в ahna."
-    kind: rule
-    falsifiable_as: "does Whitney confirm the ahan→aha/ahna compound-final alternation conditioned by a preceding sarva/apara/pūrva/madhya"
+    claim_ru: >-
+      ahan изменяется в aha (т.) или после sarva, apara, pūrva, madhya в ahna
+    kind: allomorphy
+    falsifiable_as: "Compound-final ahan appears as aha, but as ahna after sarva/apara/pūrva/madhya (madhyāhna) — distribution checkable in corpus"
     buhler_gives_number: false
 
   - loc: "Урок XXXIV / mdx line 4763"
-    claim_ru: "rātri после числительных и sarva, apara, pūrva, madhya, puṇya изменяется в ratra (m.)."
-    kind: rule
-    falsifiable_as: "does Whitney confirm rātri→ratra as a compound-final alternation triggered specifically by numerals and sarva/apara/pūrva/madhya/puṇya"
+    claim_ru: >-
+      rātri после числительных и sarva, apara, pūrva, madhya и puṇya изменяется в ratra
+    kind: allomorphy
+    falsifiable_as: "Compound-final rātri becomes ratra (m.) after numerals and sarva/apara/pūrva/madhya/puṇya (triratra) — attested forms verify"
     buhler_gives_number: false
 
   - loc: "Урок XXXIV / mdx line 4775"
     claim_ru: >-
-      Если первым членом bahuvrīhi является прилагательное, то большей частью — за исключением
-      случаев, где возникло бы недоразумение — женский род заменяется мужским.
+      Если первым членом bahuvrīhi является прилагательное, то большей частью — за исключением тех случаев в которых могло бы возникнуть недоразумение - жен. р. заменяется мужским, напр. rūpavadbhāryaḥ
     kind: statistic
-    falsifiable_as: "in attested bahuvrīhi compounds with an adjectival first member, what share show the fem.→masc. stem replacement Bühler describes as the majority pattern"
+    falsifiable_as: "Feminine adjective first members of bahuvrīhis mostly appear in masculine stem form (rūpavat- not rūpavatī-) — corpus bahuvrīhi census"
     buhler_gives_number: false
 
-  - loc: "Урок XXXIV / mdx line 4777 (a)"
-    claim_ru: "К существительным женского рода на -ī и -ū, а также к словам на -ṛ, в конце bahuvrīhi всегда приставляется суффикс -ka."
-    kind: universality
-    falsifiable_as: "do ALL attested bahuvrīhi-final -ī/-ū/-ṛ stems in DCS take the -ka suffix, or are there unsuffixed counterexamples"
+  - loc: "Урок XXXIV / mdx line 4777"
+    claim_ru: >-
+      В конце bahuvrīhi сущест. женского рода на ā обыкновенно изменяются в a; к существительным женского рода на ī и ū, а также к словам на ṛ всегда приставляется суффикс ka
+    kind: allomorphy
+    falsifiable_as: "Bahuvrīhi-final fem. ā usually shortens to a; final ī/ū/ṛ stems always take -ka (bahunadīka, mṛtabhartṛka) — any -ka-less ī/ū/ṛ-final bahuvrīhi refutes the 'always'"
     buhler_gives_number: false
 
-  - loc: "Урок XXXIV / mdx line 4777 (b)"
-    claim_ru: "В конце bahuvrīhi go изменяется большей частью в gu; akṣi большей частью в akṣa."
+  - loc: "Урок XXXIV / mdx line 4777"
+    claim_ru: >-
+      в конце bahuvrīhi go изменяется в большей частью в gu; akṣi большей частью в akṣa; dhanus в dhanvan; dharma, если ему предшествует одно слово, — в dharman; nāsikā, особенно после приставок, в nasa; pāda, особенно после числительных, в pād; prajā и medhā изменяются в prajas и medhas; gandha... особенно после su, в gandhi; danta после числит. и su, — в dat
+    kind: allomorphy
+    falsifiable_as: "Bahuvrīhi-final substitutions (go→gu, akṣi→akṣa, dhanus→dhanvan, nāsikā→nasa, pāda→pād, prajā→prajas, gandha→gandhi, danta→dat) with the stated conditions — each checkable against attested compounds"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4779"
+    claim_ru: >-
+      Сложные наречия (avyayībhāva) образуются преимущественно из предлогов и частиц и последующего имени
     kind: statistic
-    falsifiable_as: "among attested bahuvrīhi-final occurrences of go and akṣi, what fraction take the gu/akṣa allomorph vs. other attested outcomes"
+    falsifiable_as: "Avyayībhāvas predominantly have a preposition/particle as first member — proportion measurable in a corpus avyayībhāva inventory"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4887"
+    claim_ru: >-
+      Сильная форма является в 1) sing. ind. и imperf. par., 2) во всех первых лицах imper. 3) в третьем лице sing, imper. par. Остальные формы слабы
+    kind: rule
+    falsifiable_as: "Strong stem only in par. sing. indic./imperf., all 1st-person imperatives, and 3sg imper. par. — paradigm distribution checkable against Whitney §§ on athematic conjugation"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4895"
+    claim_ru: >-
+      вместо ante, anta, antām употребляются ate, ata, atām; в III классе и в некоторых других случаях anti и antu также теряют n, а вместо an (3. pi. impf. par.) появляется uḥ (s)
+    kind: allomorphy
+    falsifiable_as: "Athematic 3pl. middle endings are n-less ate/ata/atām; class III drops n in anti/antu and takes -uḥ in 3pl impf. — verifiable in attested paradigm forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4897"
+    claim_ru: >-
+      2-е лицо sing. imper. par. оканчивается на dhi, после гласных его заменяет hi или оно отпадает
+    kind: allomorphy
+    falsifiable_as: "Athematic 2sg imperative ending is dhi after consonants, hi or zero after vowels — attested imperatives (viddhi, śṛṇu, sunu) verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4899"
+    claim_ru: >-
+      Pot. par. образуется при помощи yā, спрягается подобно имперфекту, за исключением 3. pl., где приставляется uḥ (s)
+    kind: rule
+    falsifiable_as: "Athematic optative par. uses -yā- with secondary endings, 3pl in -yuḥ — paradigm forms (sunuyuḥ) verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4901"
+    claim_ru: >-
+      V класс: признак настоящего времени, сильн. no [ṇo], слаб. nu
+    kind: allomorphy
+    falsifiable_as: "Class V present sign is -no- (strong) / -nu- (weak) — all class V paradigms conform"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4903"
+    claim_ru: >-
+      Корни, оканчивающиеся на гласные: no перед гласными превращается в nav; nu перед гласными превращается в nv, а перед m и v может быть заменено простым n; hi (2 imper. par.) отпадает
+    kind: allomorphy
+    falsifiable_as: "Vowel-final class V roots: no→nav /_V, nu→nv /_V, optional n before m/v (sunmaḥ~sunumaḥ), imperative without hi (sunu) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4975"
+    claim_ru: >-
+      2-е и 3-е лицо sing. impr. par. этого и всех других спряжений в значении благословения принимают окончание tāt. Оно присоединяется к слабому виду основы
+    kind: rule
+    falsifiable_as: "Benedictive-imperative -tāt serves 2nd and 3rd sg. and attaches to the weak stem (sunutāt) — Whitney §570-571 and attested tāt-forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 4977"
+    claim_ru: >-
+      Корни, оканчивающиеся на согласный, в сильных формах имеют no, в слабых nu; перед гласными no изменяется в nav, a nu в nuv; 2 лицо sing. imper. par. оканчивается на hi
+    kind: allomorphy
+    falsifiable_as: "Consonant-final class V roots take nuv before vowels (āpnuvanti) and keep -hi in imperative (āpnuhi) — attested paradigms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 5011"
+    claim_ru: >-
+      Корень śru Р., слышать, перед признаком настоящего времени превращается в śṛ, напр. śṛṇomi
+    kind: allomorphy
+    falsifiable_as: "śru forms its class V present on śṛ- (śṛṇoti, never *śrunoti) — corpus present forms of śru verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXV / mdx line 5013"
+    claim_ru: >-
+      Part. praes. Ātm. классов II, III, V, VII, VIII, IX образуется при помощи суф. āna [āṇa], f. ā, перед которым основа имеет ту же форму, как и перед 3 лиц. plur. Ātm. — ās II. А. сидеть образует āsīna
+    kind: rule
+    falsifiable_as: "Athematic middle participle suffix is -āna on the 3pl.-middle stem; ās gives irregular āsīna — attested participles verify"
     buhler_gives_number: false
 
   - loc: "Урок XXXVI / mdx line 5095"
-    claim_ru: "Корни VIII класса почти все оканчиваются на n или ṇ и спрягаются подобно корням V класса, оканчивающимся на гласные."
+    claim_ru: >-
+      К корням VIII класса в сильных формах присоединяется o (перед гласными av), в слабых u, причем последний перед гласными превращается в v, а перед m и v может выпадать
+    kind: allomorphy
+    falsifiable_as: "Class VIII sign is o/u with u→v /_V and optional loss before m/v (tanmaḥ~tanumaḥ) — attested class VIII paradigms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVI / mdx line 5097"
+    claim_ru: >-
+      От корня kṛ делать, Р. Ā., в сильных формах образуется karo, в слабых kuru, а перед m, y и v — kur
+    kind: allomorphy
+    falsifiable_as: "kṛ present stems are karo-/kuru-, with kur- before m, y, v (kurmaḥ, kuryām, kurvanti) — corpus forms verify; *kurumaḥ would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVI / mdx line 5149"
+    claim_ru: >-
+      sam + kṛ дает saṅskṛ подготавливать, освящать. К этому корню приставляются также префиксы prādus и āvis делать очевидным, tiras закрывать, презирать, puras ставить впереди и alam украшать
+    kind: rule
+    falsifiable_as: "sam+kṛ shows inserted s (saṃskṛ-); kṛ combines with prādus/āvis/tiras/puras/alam — attested saṃskaroti, āviṣkaroti etc. verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVI / mdx line 5151"
+    claim_ru: >-
+      С глаголами as..., kṛ и bhū... могут соединяться также имена. Те из последних, которые оканчиваются на a, ā и an, принимают в таком случае ī; Имена на i и u удлинняют эти конечные гласные, а имена на ṛ принимают rī
+    kind: allomorphy
+    falsifiable_as: "Cvi-formation: a/ā/an-stems take ī (svīkṛ, bhasmīkṛ), i/u lengthen (śucībhū), ṛ-stems take rī (pitrībhū) — attested cvi compounds verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVII / mdx line 5241"
+    claim_ru: >-
+      Корни IX класса в сильных формах имеют nā [ṇā], в слабых перед согласными nī [ṇī], а перед гласными n [ṇ]
+    kind: allomorphy
+    falsifiable_as: "Class IX sign distribution nā/nī/n by strength and following segment (krīṇāti, krīṇītaḥ, krīṇanti) — all class IX paradigms conform"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVII / mdx line 5297"
+    claim_ru: >-
+      Конечный гласный корней dhū..., pū..., lū..., и всех корней на ṝ сокращается перед признаком настоящего времени, напр. dhunāti, lunāti; stṝ..., stṛṇāti. — От grah образуется gṛhṇāti и jñā — jānāti
+    kind: allomorphy
+    falsifiable_as: "dhū/pū/lū and all ṝ-roots shorten the final vowel before nā (dhunāti, stṛṇāti); grah→gṛhṇāti, jñā→jānāti — attested presents verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVII / mdx line 5301"
+    claim_ru: >-
+      Корни II класса не имеют никакого суффикса для образования основы настоящего времени, а присоединяют личные окончания непосредственно к корню. Начальные, внутренние и конечные, способные к guṇa гласные, в сильных формах изменяются в guṇa
+    kind: rule
+    falsifiable_as: "Class II is suffixless with guṇa of gunatable vowels in strong forms (eti/itaḥ, vedmi/vidmaḥ) — Whitney's root-class description and paradigms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVII / mdx line 5303"
+    claim_ru: >-
+      Корни на ā, исключительно Parasmaipada: yā идти
+    kind: universality
+    falsifiable_as: "Class II roots in ā inflect only in parasmaipada — any attested ātmanepada present of a class II ā-root (yā, pā, bhā type) refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVIII / mdx line 5515"
+    claim_ru: >-
+      Корень śī II Ā. всюду принимает guṇa (e перед согласн. и ay перед гласными); перед окончаниями 3 лиц. pl. ind., impf. и imper. вставляется r, напр. 3 л. ind. śete... śerate
+    kind: universality
+    falsifiable_as: "śī has guṇa throughout (śete, never *śīte) and inserts r in 3pl (śerate, aśerata) — corpus forms of śī verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVIII / mdx line 5517"
+    claim_ru: >-
+      Все корни на u в сильных формах перед согласными окончаниями имеют vṛddhi (au) вместо guṇa (o). В корнях tu Р. быть сильным, ru Р. кричать, stu Р. Ā. прославлять может являться и guṇa. Но в таком случае вставляется долгий ī
+    kind: universality
+    falsifiable_as: "All class II u-roots take vṛddhi au before consonant endings in strong forms (stauti); tu/ru/stu alternatively guṇa + ī (stavīti) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVIII / mdx line 5541"
+    claim_ru: >-
+      Корни на ū перед гласными (т. е. начинающимися с гласного) слабыми окончаниями имеют uv; brū P. Ā. говорить (исключительно основа настоящего времени) в сильных формах перед согласными окончаниями вставляет ī
+    kind: allomorphy
+    falsifiable_as: "ū-roots take uv before vocalic weak endings (bruvanti); brū inserts ī in strong forms (bravīti) and occurs only in the present system — DCS tense distribution of brū checkable"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVIII / mdx line 5559"
+    claim_ru: >-
+      sū II. Ā. рождать в сильных формах не имеет guṇa, следовательно 1 л. imp. suvai
+    kind: rule
+    falsifiable_as: "sū lacks guṇa in strong forms (suvai, not *savai) — attested forms of sū verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5647"
+    claim_ru: >-
+      Корни на ṛ в 2 и З л. sing. impf. par. отбрасывают окончания; в слабых формах перед гласными окончаниями ṛ превращается в r; jāgṛ II. Р. просыпаться, принимает оконч. ati, atu, а в 3 л. pl. impf. par. — uḥ..., перед которым появляется guṇa
+    kind: allomorphy
+    falsifiable_as: "Class II ṛ-roots drop 2/3sg impf. endings (ajāgaḥ); jāgṛ takes 3pl jāgrati/jāgratu and impf. ajāgaruḥ with guṇa — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5651"
+    claim_ru: >-
+      В корнях на c и j эти конечные звуки перед окончаниями, начинающимися с t, th и s, превращаются в k, после которого ṣ заменяет s; перед dh звуки c и j превращаются в g
+    kind: allomorphy
+    falsifiable_as: "Root-final c/j → k before t/th/s (vakti, vakṣi) and → g before dh — internal sandhi checkable against Whitney §217ff and attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5667"
+    claim_ru: >-
+      3 л. pl. ind. не существует, употребительно одно только ед. ч.
     kind: statistic
-    falsifiable_as: "of the full set of class-VIII roots attested in DCS/Whitney's root list, what share actually end in n/ṇ (vs. kṛ and other exceptions) — the top-5-by-token-frequency class-VIII roots in VisualDCS/verb_classes.json are man (4,115, ends -n), and four kṛ-compounds (alaṁkṛ 541, prakṛ 536, namaskṛ 446, puraskṛ 425, none ending -n/-ṇ), so 'почти все' is doubtful by root TYPE even though it is TRUE by token count (man alone outweighs the four kṛ-compounds combined) — needs the full class-VIII root inventory (not just top-5), not yet pulled"
+    falsifiable_as: "vac has no 3pl present indicative and is used mainly in the singular — DCS frequency of vac present forms by number tests this"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5669"
+    claim_ru: >-
+      В корнях на d перед окончаниями с t, th и s, это d заменяется посредством t; 2 л. sing. impf. par. по желанию оканчивается на t или на висаргу (s), а З л. на t
+    kind: allomorphy
+    falsifiable_as: "Root-final d → t before t/th/s (vetsi, vittha); 2sg impf. optionally avet/aveḥ, 3sg avet — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5701"
+    claim_ru: >-
+      Indicat. может также быть: veda, vettha... viduḥ; a imperat. также vidāṃ karavāṇi
+    kind: rule
+    falsifiable_as: "vid 'know' has an alternative perfect-form present (veda, viduḥ) and periphrastic imperative vidāṃ karavāṇi — corpus attestation of veda in present meaning verifies"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5751"
+    claim_ru: >-
+      В корнях на ś, ṣ, kṣ и mṛj конечные звуки перед s (кот. в таком случае становится ṣ) превращаются в k, перед t и th (которые в таком случае становятся ṭ и ṭh) в ṣ, и перед dh (кот. становится ḍh) - в ḍ
+    kind: allomorphy
+    falsifiable_as: "Root-final ś/ṣ/kṣ → k+ṣ before s (dvekṣi), ṣ+ṭ(h) before t/th (dveṣṭi), ḍ+ḍh before dh (dviḍḍhi) — internal sandhi checkable against Whitney and attested forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5783"
+    claim_ru: >-
+      īś II. Ā., властвовать, имеет i перед окончаниями se, sva, dhve, dhvam
+    kind: rule
+    falsifiable_as: "īś inserts i before se/sva/dhve/dhvam (īśiṣe) — attested forms of īś verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5785"
+    claim_ru: >-
+      vaś II. Р. желать, в слабых формах является в виде uś
+    kind: allomorphy
+    falsifiable_as: "vaś shows samprasāraṇa uś- in weak forms (uśmasi, uśanti) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIX / mdx line 5787"
+    claim_ru: >-
+      mṛj II. Р. в сильных формах всегда имеет vṛddhi, а в слабых формах с окончаниями, начинающимися с гласного, по желанию может иметь vṛddhi; 3 л. ind. mārṣṭi, mṛṣṭaḥ, mṛjanti или mārjanti
+    kind: universality
+    falsifiable_as: "mṛj always vṛddhied in strong forms (mārṣṭi) and optionally before vocalic weak endings (mṛjanti~mārjanti) — a strong form without vṛddhi refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5857"
+    claim_ru: >-
+      К корню īḍ II. Ā., почитать, перед se, sva, dhve, dhvam (imper.) приставляется i; ḍ в соединении с t и th превращается в ṭṭ и ṭṭh, а с dhvam в impf. — в ḍḍhvam
+    kind: allomorphy
+    falsifiable_as: "īḍ takes inserted i before se/sva/dhve/dhvam (īḍiṣva) and ḍ+t(h) → ṭṭ(h) (īṭṭe) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5859"
+    claim_ru: >-
+      Корни на s в 2 л. impf. par. оканчиваются на t или на висаргу, а в 3 л. на t; перед dh s выпадает
+    kind: allomorphy
+    falsifiable_as: "s-final class II roots: 2sg impf. in t or visarga, 3sg in t; s lost before dh (ādhve from ās) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5863"
+    claim_ru: >-
+      cakās П. Р., сиять, в 3 л. pl. ind. получает окончание ati, 3 л. pl. imp. atu, а в 3 л. pl. impf. uḥ (s)
+    kind: rule
+    falsifiable_as: "cakās takes n-less 3pl endings ati/atu/uḥ (cakāsati, acakāsuḥ) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5865"
+    claim_ru: >-
+      śās II. Р., повелевать, наказывать, имеет в слабых формах śiṣ и образует 3 л. pl. śāsati, в 3 л. pl. impf. aśāsuḥ, 3 л. pl. imperat. śāsatu
+    kind: allomorphy
+    falsifiable_as: "śās weakens to śiṣ (śiṣṭaḥ) but keeps śās- in 3pl śāsati/aśāsuḥ/śāsatu — attested paradigm forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5867"
+    claim_ru: >-
+      Корень as II. Р. Ā., быть, в слабых формах отбрасывает начальный гласный, за исключением 2 л. sing, imperat. par., где имеется форма edhi
+    kind: allomorphy
+    falsifiable_as: "as loses initial a in weak forms (santi, syām) except 2sg imperative edhi — paradigm checkable against Whitney §636"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5919"
+    claim_ru: >-
+      У корней на h конечный звук сливается с t, th и dh в ḍh и удлиняются предшествующие a, i, u; перед s конечный этот звук является в виде k, а во 2 и 3 л. sing. impf. par. в виде ṭ
+    kind: allomorphy
+    falsifiable_as: "Root-final h + t/th/dh → ḍh with lengthening of a/i/u (alīḍha), → k before s (likṣva), → ṭ in 2/3sg impf. (aleṭ) — attested forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XL / mdx line 5927"
+    claim_ru: >-
+      У корней duh II. Р., доить, и dih II. Р. Ā., мазать, конечный звук перед согласными, за исключением m, y и v, изменяется в gh, сливающийся с последующими t, th и dh в gdh, а с последующим s в kṣ... начальный корневой d превращается в dh
+    kind: allomorphy
+    falsifiable_as: "duh/dih: h → gh before consonants (except m/y/v), gh+t(h)/dh → gdh (dugdhaḥ), +s → kṣ with initial aspiration throwback (dhokṣi, adhok) — attested forms verify Grassmann's-law pattern"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6003"
+    claim_ru: >-
+      Глаголы III кл. присоединяют личные окончания прямо к корню, причем в корне происходит удвоение
+    kind: rule
+    falsifiable_as: "Class III presents are reduplicated and suffixless (dadāti, juhoti) — all class III paradigms conform"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6005"
+    claim_ru: >-
+      согласные придыхательные заменяются соответственными согласными без придыхания, напр. вместо th — t, вм. dh — d
+    kind: rule
+    falsifiable_as: "Reduplication deaspirates aspirates (dhā→dadhāti, never *dhadhāti) — all reduplicated forms conform"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6007"
+    claim_ru: >-
+      вместо гортанных являются соответственные небные, с соблюдением правила а, т. е. вместо k и kh — c, вм. g и gh — j
+    kind: rule
+    falsifiable_as: "Reduplication replaces gutturals with palatals (kṛ→cakāra-type, hu→juhoti) — any guttural reduplication syllable refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6009"
+    claim_ru: >-
+      если корень начинается на группу согласных, то в удвоении представлен только первый, за исключением корней, начинающихся с sk, skh, st, sth, sp, sph. В этих случаях удвоению подлежит второй согласный
+    kind: rule
+    falsifiable_as: "Cluster-initial roots reduplicate only the first consonant, except s+voiceless-stop clusters (sk, skh, st, sth, sp, sph) which reduplicate the stop (sthā→tiṣṭhati) — attested reduplicated forms verify"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6013"
+    claim_ru: >-
+      В сильных формах все способные к подъему гласные изменяются в guṇa, а в 3 л. pl. impf. parasm. конечные допускающие гунацию гласные (т. е. краткие гласные на конце корня) имеют тот же подъем
+    kind: rule
+    falsifiable_as: "Class III strong forms take guṇa; final gunable vowels also take guṇa in 3pl impf. parasmaipada (cf. ajuhavuḥ; Whitney 657-661)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6067"
+    claim_ru: >-
+      dhā III. P. Ā. в слабых формах отбрасывает ā и в 2 л. sing. imp. образует dhehi.
+    kind: allomorphy
+    falsifiable_as: "dhā drops ā in weak forms (dadh-) and has 2sg impv dhehi (Whitney 667); attested *dadhāhi or unweakened forms refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6121"
+    claim_ru: >-
+      hā III. Р. покидать, оставлять, jahāti, отбрасывает ā в pot. и перед гласными слабых окончаний ... 2 л. sing. imp. jahāhi, jahīhi или jahihi; в остальных слабых формах перед согласными окончаний являются jahī или jahi
+    kind: allomorphy
+    falsifiable_as: "hā weak stem distribution jah-/jahī-/jahi- and triple-optioned 2sg impv (jahāhi/jahīhi/jahihi) — checkable against Whitney 665 and DCS attestations"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6123"
+    claim_ru: >-
+      mā III. Ā. мерить и hā III. Ā. идти, перед согласными окончаний имеют формы mimī и jihī, и перед гласными mim и jih
+    kind: allomorphy
+    falsifiable_as: "Middle-only mā and hā show stems mimī-/jihī- before consonant endings, mim-/jih- before vowels (Whitney 664)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6125"
+    claim_ru: >-
+      hu Р. Ā. жертвовать, сильная основа перед согласными juho, перед гласными juhav, слабая перед согласными juhu, перед гласными juhv, 2 л. sing. imp. par. juhudhi
+    kind: allomorphy
+    falsifiable_as: "hu stem alternation and irregular 2sg impv juhudhi (with -dhi, not -hi; Whitney 652) — a form *juhuhi in corpus would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6127"
+    claim_ru: >-
+      bhī III. P. бояться ... слабая перед согласными bibhī или bibhi, перед гласными bibhy
+    kind: allomorphy
+    falsifiable_as: "bhī allows optional short-vowel weak stem bibhi- beside bibhī- before consonant endings (Whitney 645); both variants should be attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XLI / mdx line 6133"
+    claim_ru: >-
+      nij III. P. мыть, vij III. P. пугать и viṣ III. P. Ā. проникать, в слоге удвоения имеют guṇa
+    kind: allomorphy
+    falsifiable_as: "nij, vij, viṣ take guṇa vowel in reduplication (nenekti etc.; Whitney 646); i-reduplication forms would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLII / mdx line 6183"
+    claim_ru: >-
+      Глаголы VII. кл. перед конечными согласными в сильных формах вставляют na [ṇa], в слабых n; последний ассимилируется следующему за ним согласному или, перед шипящими и h, превращается в anusvāra. Если корень уже содержит носовой, то последний исчезает.
+    kind: rule
+    falsifiable_as: "Class VII infixes -na- (strong) / -n- (weak) before the final consonant, with nasal assimilation, and drops a pre-existing root nasal (Whitney 683-687)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLII / mdx line 6185"
+    claim_ru: >-
+      конечный dh с последующими t, th и dh сливается в ddh, а перед s и в 2 и 3 л. sing. impf. переходит в t
+    kind: allomorphy
+    falsifiable_as: "Root-final dh + t/th/dh yields ddh (runddhaḥ), and becomes t before s and in 2/3sg impf (Whitney 160-161 sandhi; rudh paradigm)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLII / mdx line 6299"
+    claim_ru: >-
+      Корень tṛh VII. P. в сильных формах перед согласными окончаниями имеет слог ne [ṇe], напр. 3 л. ind. tṛṇeḍhi
+    kind: allomorphy
+    falsifiable_as: "tṛh strong stem shows tṛṇeh- (tṛṇeḍhi) before consonant endings (Whitney 684); forms *tṛṇaḍhi would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6385"
+    claim_ru: >-
+      Долгие и краткие, внутренние и конечные гласные замещаются соответственными краткими гласными, внутренние дифтонги — своей второй частью; но конечные e, ai, o (превращающиеся в ā), а также ṛ и ṝ, замещаются посредством a
+    kind: allomorphy
+    falsifiable_as: "Perfect reduplication: vowels shorten, internal diphthongs reduplicate with second element, final e/ai/o and ṛ/ṝ reduplicate with a (Whitney 590, 786)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6387"
+    claim_ru: >-
+      Начальный a, за которым следует согласный, превращается в ā ... начальные i и u замещаются посредством iy или i, uv или u ...; удвоением начального ṛ и начального a, за которым следует группа согласных, является ān
+    kind: allomorphy
+    falsifiable_as: "Initial a+single consonant gives perfect ād- type; initial ṛ and a+cluster give ān- (ānṛc-, ānañj-; Whitney 783-788)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6395"
+    claim_ru: >-
+      Внутренние и начальные, допускающие подъем гласные, в сильных формах изменяются в guṇa
+    kind: rule
+    falsifiable_as: "Internal/initial gunable vowels take guṇa in strong perfect forms (bibheda vs bibhid-; Whitney 793)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6397"
+    claim_ru: >-
+      Краткий внутренний a, за которым следует согласный, в 3 л. sing. par. удлинняется всегда, а в 1 л. sing. par. — по желанию
+    kind: universality
+    falsifiable_as: "Internal a is always lengthened in 3sg perfect (papāca) but only optionally in 1sg (papāca/papaca; Whitney 793d); a 3sg with short a refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6399"
+    claim_ru: >-
+      Конечные допускающие подъем гласные в 3 л. sing. par. всегда изменяются в vṛddhi, в 1 л. sing. par. — в vṛddhi или guṇa, а во 2 л. — в guṇa
+    kind: universality
+    falsifiable_as: "Final gunable vowels: obligatory vṛddhi in 3sg perfect, vṛddhi or guṇa in 1sg, guṇa in 2sg (nināya/ninaya/ninetha; Whitney 793b-c)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6419"
+    claim_ru: >-
+      Все консонантические окончания присоединяются непосредственно к следующим корням: dru бежать, бросаться, śru, stu и sru течь, kṛ, bhṛ, vṛ избирать, и sṛ.
+    kind: rule
+    falsifiable_as: "Exactly these roots (dru, śru, stu, sru, kṛ, bhṛ, vṛ, sṛ) take consonant perfect endings without connecting i (Whitney 797); an i-form like *śuśruvitha refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6425"
+    claim_ru: >-
+      Окончание 2 л. sing. par. tha непосредственно присоединяется также ко всем корням на ṛ, за исключением ṛ идти [āritha], jāgṛ, svṛ, vṛ избирать, и saṅskṛ [saṅcaskaritha].
+    kind: universality
+    falsifiable_as: "All ṛ-final roots take -tha without i in 2sg perfect except ṛ, jāgṛ, svṛ, vṛ, saṃskṛ (Whitney 797c-798)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6427"
+    claim_ru: >-
+      Все остальные корни должны или могут вставлять соодинительную гласную i перед косонантическими окончаниями.
+    kind: rule
+    falsifiable_as: "Outside the listed exceptions, connecting i is required or optional before consonant perfect endings (Whitney 797)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6431"
+    claim_ru: >-
+      После коренных гласных dhve (2 л. pl. Ātm.) должно превращаться в ḍhve, и после соединительной гласной это изменение может произойти, если ему предшествует полугласный или h
+    kind: allomorphy
+    falsifiable_as: "Perfect 2pl middle -dhve becomes -ḍhve obligatorily after root vowels, optionally after i preceded by semivowel/h (Whitney 226c)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6435"
+    claim_ru: >-
+      Самые употребительные из корней, в которых i везде может выпускатся — следующие: vraśc, añj, mṛj, kḷp, gup, aś V Ā., gāh, guh, tṛp, druh, naś, muh и snih.
+    kind: statistic
+    falsifiable_as: "These 13 roots are claimed the commonest that may omit connecting i throughout the perfect — checkable against Whitney 798 root lists and DCS perfect attestations"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6453"
+    claim_ru: >-
+      Корни на i или ī ... Соединительный гласный необходим всюду, за исключением 2 л. sing, par., где его может и не быть, если корень в inf. не имеет i
+    kind: allomorphy
+    falsifiable_as: "i/ī-final roots require connecting i in all consonant perfect endings except optionally 2sg P. when the infinitive is aniṭ (ninetha/ninayitha; Whitney 797-798)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6473"
+    claim_ru: >-
+      Корни на u и ū ... соединительный гласный необходим везде, за исключением корней dru, śru, stu и sru (4 а) и 2го лица sing. P. тех корней, которые не имеют i в infinit.
+    kind: allomorphy
+    falsifiable_as: "u/ū-final roots take connecting i everywhere except dru/śru/stu/sru and aniṭ 2sg forms (tuṣṭotha; Whitney 797)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6513"
+    claim_ru: >-
+      когда предшествует один согласный, cильная форма ar или ār, слабая ф. ṛ, перед гласными r
+    kind: allomorphy
+    falsifiable_as: "ṛ-final roots after single consonant: strong ar/ār, weak ṛ (r before vowels), giving cakāra/cakruḥ type (Whitney 797); exceptions jāgṛ, ṛ follow the cluster rule"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6539"
+    claim_ru: >-
+      Корни на ṝ, сильная форма ār, ar слабая ф. ar, соединительный гласный всюду
+    kind: allomorphy
+    falsifiable_as: "ṝ-final roots show weak stem ar and take connecting i in all consonant endings (cakariva; Whitney 797c)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6597"
+    claim_ru: >-
+      Этой схеме а) должны следовать: tṛ Р., Зл. tatāra, teratuḥ, teruḥ; bhram Ā., phal P. bhal Р. Ā.; б) могут следовать: granth Р. (greth), tras Р., bhras, bhrāj, rāj.
+    kind: rule
+    falsifiable_as: "tṝ, bhram, phal, bhal obligatorily and granth, tras, bhras, bhrāj, rāj optionally take the contracted e-perfect (Whitney 794d-e)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6599"
+    claim_ru: >-
+      Корни vac, vad, vap, vaś, vas жить, и vah удваиваются посредством слога u, но в слабых формах удвоение отбрасывается, и коренной слог va переходит в ū. Подобно этому, корень yaj удваивается посредством i, а слабые формы имеют ī
+    kind: allomorphy
+    falsifiable_as: "va-roots (vac, vad, vap, vaś, vas, vah) show uvāca/ūc- pattern and yaj shows iyāja/īj- (samprasarana in weak perfect; Whitney 784b, 794b)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6631"
+    claim_ru: >-
+      itha факультативно присоединяются к корням с a внутри, не имеющим i в infinit. Все другие должны иметь itha
+    kind: universality
+    falsifiable_as: "2sg -itha is optional only for anit roots with internal a; all other roots of this class require -itha (Whitney 797d)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6633"
+    claim_ru: >-
+      Корни на ā, e, ai и au в 1 л. и Зл. sing. Par. оканчиваются на au и теряют гласный перед вокальными окончаниями. Соединительный гласный необходим всюду, за исключением 2 л. sing. Par., где он факультативен
+    kind: allomorphy
+    falsifiable_as: "ā-final roots take -au in 1/3sg perfect (dadau) and lose the vowel before vocalic endings; i obligatory except optional in 2sg (dadhitha/dadhātha; Whitney 800)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6657"
+    claim_ru: >-
+      Неполный перфект, со значением настоящего времени, образуется от ah говорить, 2 л. par. āttha; āhathuḥ; 3 л. par. āha, āhatuḥ, āhuḥ
+    kind: rule
+    falsifiable_as: "ah has only a defective perfect (5 forms) with present meaning (Whitney 801a); DCS should show only these persons attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6675"
+    claim_ru: >-
+      факультативен наряду с удвоенным перфектом, между прочим для vid, bhī, hrī, bhṛ, jāgṛ, daridrā
+    kind: rule
+    falsifiable_as: "vid, bhī, hrī, bhṛ, jāgṛ, daridrā allow both reduplicated and periphrastic perfects (Whitney 1071c-1073); both types should be attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6677"
+    claim_ru: >-
+      К корню присоединяется суффикс ām, в X кл. и для каузативов ayām, и к образованной таким образом форме прибавляется в Par. āsa, cakāra или babhūva, в Ātm. cakre
+    kind: rule
+    falsifiable_as: "Periphrastic perfect = stem in -ām + āsa/cakāra/babhūva (P.) or cakre (Ā.) (Whitney 1070-1073); auxiliaries outside this set refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6699"
+    claim_ru: >-
+      Part. perf. Par. образуется посредством суффикса vas, f uṣī ..., присоединяемого к слабой основе. Если слабая основа перфекта односложна, то вставляется соединительный гласный i перед vas
+    kind: allomorphy
+    falsifiable_as: "Perfect active participle -vas/-usī attaches to weak stem, with i inserted when the weak stem is monosyllabic (pecivas vs bibhidvas; Whitney 802-803)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIII / mdx line 6723"
+    claim_ru: >-
+      Part. perf. Ātm. образуется посредством āna [āṇa], f. ā, приставляемого к той форме основы, которая появляется перед окончанием ire
+    kind: rule
+    falsifiable_as: "Perfect middle participle in -āna is built on the pre-ire stem (cakrāṇa, dadhāna; Whitney 806)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6737"
+    claim_ru: >-
+      Перед суффиксом tā с корнем происходят те же изменения, как и перед суфф. tum в inf.
+    kind: rule
+    falsifiable_as: "Root treatment (guna, it) before periphrastic-future -tā matches that before infinitive -tum (Whitney 943); mismatched it-behaviour between -tā and -tum forms refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6761"
+    claim_ru: >-
+      конечные c, j, ś, ṣ, kṣ и h превращаются в k, после которого ... sya переходит в ṣya, конечные d и dh превращает в t, bh в p, m и n в anusvāra; конечный s — в t
+    kind: allomorphy
+    falsifiable_as: "Final-consonant sandhi before future -sya: palatals/ś/ṣ/h→k (+ṣya), d/dh→t, bh→p, m/n→anusvara, s→t (mokṣyati, bhetsyati, lapsyate, maṅsyate, vatsyati; Whitney 936)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6763"
+    claim_ru: >-
+      Соединительный гласный употребляется большей частью у тех же самых глаголов, у которых он встречается в infin. ... у корней на ṛ всегда вставляется i; у корней gam и han i вставляется в par; но vṛt, vṛdh и syand капать соединительного гласного в par. не имеют
+    kind: allomorphy
+    falsifiable_as: "Future it mostly follows infinitive it; r-final roots always take i (karisyati); gam/han take i in P.; vrt/vrdh/syand are anit in P. (Whitney 934-935)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6765"
+    claim_ru: >-
+      В глаголах X кл. и каузативах приставляется ayiṣya
+    kind: rule
+    falsifiable_as: "Class X and causatives form futures in -ayisya- (corayisyati; Whitney 1056); futures dropping -ay- would refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6837"
+    claim_ru: >-
+      Причастия простого будущего образуются подобно причастиям настоящего времени классов I, IV, VI и X
+    kind: rule
+    falsifiable_as: "Future participles are thematic-type: P. -syat, A. -syamana (dasyat, karisyamana; Whitney 939)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6841"
+    claim_ru: >-
+      Imperfectum, образованное от простого будущего, называеся conditionalis и употребляется в условных предложениях
+    kind: rule
+    falsifiable_as: "Conditional = augmented imperfect of the future stem, used in conditional sentences (adasyat; Whitney 940-941, 950); DCS conditional tokens should cluster in yadi/cet contexts"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6845"
+    claim_ru: >-
+      Precativus P. образуется посредством yās, Ā. посредством sī [ṣī]; и тот и другой спрягаются сходно с pot. кл. II, III, V, VII-IX
+    kind: rule
+    falsifiable_as: "Precative markers: -yas- active, -si- middle, conjugated like athematic optatives (Whitney 921-925)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6847"
+    claim_ru: >-
+      Но гласные глаголов dā давать, dhā, mā, sthā, pā пить, hā покидать, dhe, gai, so и do всегда превращаются в e, напр. 3 л. sing. dā, deyāt
+    kind: universality
+    falsifiable_as: "In active precative da, dha, ma, stha, pa, ha, dhe, gai, so, do always show e (deyat, dheyat; Whitney 837); precatives like *dayat refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6849"
+    claim_ru: >-
+      В Ā. большей частью те же самые корни, у которых i вставляется в infin. ..., имеют соединительный гласный
+    kind: statistic
+    falsifiable_as: "Middle precative it mostly matches infinitive it (Whitney 922-923); systematic mismatches beyond the listed exceptions refute the 'mostly'"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6851"
+    claim_ru: >-
+      У корней на ṛ соединительный гласный по желанию может выпускаться. Соединительный гласный ī встречается только у корня grah
+    kind: universality
+    falsifiable_as: "Connecting i in the precative occurs only with grah (grahisista; Whitney 900b analog); i with any other root refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLIV / mdx line 6855"
+    claim_ru: >-
+      Если не вставляется соединительный гласный, то конечные i, ī, u изменяются в guṇa, конечный ṝ — в īr или после губных в ūr, конечные дифтонги — в ā
+    kind: allomorphy
+    falsifiable_as: "Anit middle precative: final i/i/u→guna, rr→ir (ur after labials: pursista), diphthongs→a (Whitney 924)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6909"
+    claim_ru: >-
+      Первый аорист образуется также как impf. II кл. (окончания присоединяются без соединит. гласной.). Встречается только P.
+    kind: universality
+    falsifiable_as: "Root aorist conjugates like a class II imperfect and occurs only in parasmaipada in classical Sanskrit (Whitney 829-831); classical middle root-aorist forms refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6931"
+    claim_ru: >-
+      Средние носовые выпадают, конечный ṛ переходит в guṇa.
+    kind: allomorphy
+    falsifiable_as: "In the a-aorist internal nasals drop (abhrasat, asrasat) and final r takes guna (Whitney 847)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6937"
+    claim_ru: >-
+      Третий аорист — по форме есть imperf. с удвоением, спрягаемый по примеру VI кл. P. и Ā.
+    kind: rule
+    falsifiable_as: "Reduplicated aorist is a thematic (class VI type) reduplicated imperfect in both voices (Whitney 856-859)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6945"
+    claim_ru: >-
+      Этот аорист (и никакой другой) образуется от корней X кл. и каузативов
+    kind: universality
+    falsifiable_as: "Class X verbs and causatives form only the reduplicated (3rd) aorist (Whitney 861, 1046-1047); a sigmatic aorist of an unreduced causative stem refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6947"
+    claim_ru: >-
+      aya всегда отбрасывается.
+    kind: universality
+    falsifiable_as: "The causative sign -aya- is always dropped in the reduplicated aorist (abibhidat from bhedayati; Whitney 1047); an aorist retaining aya refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6949"
+    claim_ru: >-
+      На основы с консонантическим началом, простой корень которых оканчивается на группу согласных, распространяются правила удвоения в перфекте, напр. rakṣayati, ararakṣat
+    kind: rule
+    falsifiable_as: "Cluster-final roots reduplicate their causative aorist by perfect rules (acakathat, ararakṣat; Whitney 864)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6953"
+    claim_ru: >-
+      внутренние гунированные гласные заменяются первоначальным гласным, причем ar вместо ṛ и al вместо ḷ могут и оставаться
+    kind: allomorphy
+    falsifiable_as: "In reduplicated aorists internal guna vowels revert to the original root vowel, optionally retained for ar/al from r/l (avivrtat/avavartat; Whitney 862)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6955"
+    claim_ru: >-
+      внутренний ā очень часто заменяется посредством a, внутренние ī и ū иногда (отчасти по желанию) заменяются посредством i и u
+    kind: statistic
+    falsifiable_as: "Internal a is 'very often' shortened to a and i/u 'sometimes' to i/u in the reduplicated aorist — testable as proportion of shortened vs unshortened stems in attested forms (Whitney 862)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 6959"
+    claim_ru: >-
+      в удвоении краткие a и ṛ основы замещаются посредством ī перед простым согласным, и посредством i перед группой
+    kind: allomorphy
+    falsifiable_as: "Reduplication vowel of prosodically light stems is i before a single consonant, i before a cluster (adidamat vs aciksipat; Whitney 860)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 7005"
+    claim_ru: >-
+      Начинающиеся с гласного корни удваивают конечный гласный, если они оканчиваются на один согласный или на группу, начинающуюся с r или n. При других сочетаниях удваивается большей частью первый согласный. Между согласными основы и удвоения вставляется i, очень редко a
+    kind: allomorphy
+    falsifiable_as: "Vowel-initial roots reduplicate the final consonant (asisat, arjijat) with inserted i, 'very rarely' a (artathat) (Whitney 865)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLV / mdx line 7007"
+    claim_ru: >-
+      В соединении с частицей mā, они лишаются приращения и заменяют imperativ, напр. mā dāḥ не давай; mā bhaiṣīḥ не бойся.
+    kind: rule
+    falsifiable_as: "With ma the aorist loses its augment and functions as prohibitive (Whitney 579); augmented aorists after ma in corpus refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7031"
+    claim_ru: >-
+      Окончания, начинающиеся с sta или stha отбрасывают s после кратких гласных и после всех согласных, за исключением анусвары и r; dhvam после корневых гласных и дифтонгов, за исключением a, ā и после r превращается в ḍhvam
+    kind: allomorphy
+    falsifiable_as: "s-aorist endings in st(h)- drop s after short vowels and consonants except anusvara/r (akrthah); dhvam→dhvam under the stated conditions (Whitney 881, 226c)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7033"
+    claim_ru: >-
+      в P., все допускающие vṛddhi гласные переходят во vṛddhi; в dṛś и sṛj появляются rā вместо ār; в Ā. только конечные i, ī, u, ū изменяются в guṇa
+    kind: allomorphy
+    falsifiable_as: "s-aorist: vrddhi throughout the active (akarsit), ra-metathesis in drs/srj (adraksit), only final i/i/u/u gunated in the middle (Whitney 878-879)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7081"
+    claim_ru: >-
+      Этот аорист большей частью образуется от тех глаголов, которые имеют окончание infin. ... без соединительного гласного.
+    kind: statistic
+    falsifiable_as: "The s-aorist is formed mostly from anit roots — testable as correlation between anit infinitive and s-aorist formation across attested roots (Whitney 876)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7083"
+    claim_ru: >-
+      От глаголов dā давать, dhā, sthā этот аорист образуется в Ā., на место их гласного является i, а 2-е и З-е лица оканчи ваются на thāḥ: и ta, напр. adiṣi, adithāḥ, adita
+    kind: rule
+    falsifiable_as: "da, dha, stha form middle s-aorists with root vowel replaced by i (adisi, adithah, adita; Whitney 884)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7087"
+    claim_ru: >-
+      Окончания те же, что в IVом аористе, только им предшествует i или ī (последний у корней на ṛ и у vṛ по желанию, у grah всегда), а 2-е и З-е лица sing. P. оканчиваются на īḥ и īt
+    kind: allomorphy
+    falsifiable_as: "is-aorist: connecting i, with i optional for r-final roots and vr, obligatory for grah (agrahit); 2/3sg P. in -ih/-it (Whitney 898-900)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7089"
+    claim_ru: >-
+      Конечные допускающие vṛddhi корневые гласные в P. изменяются в vṛddhi, а в Ā. в guṇa. Внутренние и начальные допускающие гунацию гласные в P. и Ā. изменяются в guṇa. Краткий a корней на ar и al, а также корней vad и vraj удлиняется в P.; в корнях на am, ay и ah, а также в корнях śvas, has и некоторых других более редких краткий a остается неизмененным, а в остальных он удлинняется в P. факультативно
+    kind: allomorphy
+    falsifiable_as: "is-aorist gradation: final vowels vrddhi (P.)/guna (A.), internal guna; a-lengthening obligatory in ar/al/vad/vraj, blocked in am/ay/ah/svas/has, optional elsewhere (Whitney 899-900)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7107"
+    claim_ru: >-
+      Этот аорист образуется обыкновенно от корней, образующих inf. посредством i но также в P. от корней stu, su, kram и факультативно в Ā от корней на ṛ, начинающихся с группы согласных.
+    kind: statistic
+    falsifiable_as: "is-aorist correlates with set infinitives, plus P. of stu/su/kram — testable against Whitney 898 root lists and DCS aorist attestations"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7109"
+    claim_ru: >-
+      Корни на n и ṇ VIII кл. во 2 и 3 л. sing. Ā. могут отбросить носовой и иметь окончания thāḥ и ta, напр. tan, ataniṣṭhāḥ, atathāḥ, ataniṣṭa, atata
+    kind: rule
+    falsifiable_as: "Class VIII n-final roots optionally drop the nasal in 2/3sg middle aorist (atathah/atata beside atanisthah/atanista; Whitney 834a)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVI / mdx line 7111"
+    claim_ru: >-
+      Шестой аорист, исключительно P., образуется от большинства корней на ā, e, ai и o (вместо которых является ā) и от корней yam, ram и nam (вместо конечного m является анусвара).
+    kind: universality
+    falsifiable_as: "The sis-aorist is exclusively parasmaipada and formed from most a-final roots plus yam, ram, nam (ayasit, anamsit; Whitney 911-914); a middle sis-aorist refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7133"
+    claim_ru: >-
+      Седьмой аорист образуется посредством sa [ṣa] и в P. и Ā. спрягается подобно impf. I кл. Употребляется этот аорист от корней на ś, ṣ и h, гласным которых являются i, u или ṛ
+    kind: rule
+    falsifiable_as: "The sa-aorist is restricted to roots ending in s/s/h with root vowel i/u/r (adiksat; Whitney 916-918); a sa-aorist from a root outside this class refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7151"
+    claim_ru: >-
+      корни guh, dih, duh или lih, смотря по желанию, могут отбрасывать sa во 2 и 3 л. sing., в 1 л. du. и во 2 л. pl. Ā., напр. aghukṣathāḥ, agūḍhāḥ
+    kind: rule
+    falsifiable_as: "guh, dih, duh, lih optionally drop sa in the specified middle forms (aghuksata/agudha; Whitney 920); both variant sets should be attested"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7155"
+    claim_ru: >-
+      Обыкновенно aoristus passivi во всех лицах, кроме 3 л. ед. ч., тожествен с Ā. аориста IV, V или VII типов.
+    kind: statistic
+    falsifiable_as: "Passive aorist forms usually coincide with the middle of the s-, is- or sa-aorist except the 3sg (Whitney 842-845)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7155"
+    claim_ru: >-
+      Корни X кл. и каузативные глаголы, а также все те корни, к которым суффикс inf. присоединяется с i, образуют V аорист. Каузативные глаголы и корни X кл. могут сохранять или отбрасывать слог aya.
+    kind: rule
+    falsifiable_as: "Class X/causatives and set roots build the is-aorist for the passive, causatives optionally keeping or dropping aya (Whitney 1048)"
     buhler_gives_number: false
 
   - loc: "Урок XLVII / mdx line 7157"
-    claim_ru: "Третье лицо единственного числа аориста страдательного залога (встречающееся особенно часто) принимает окончание i."
+    claim_ru: >-
+      Третье лицо ед. ч. (встречающееся особенно часто) принимает окончание i
     kind: statistic
-    falsifiable_as: "is 3sg passive-aorist token frequency disproportionately high relative to other person/number cells in DCS — blocked: the DCS timws.csv/tense_case_data.json tense-code table has no code isolating passive-aorist from active/medium aorist, so this needs a raw 15.csv re-tag by voice, not yet built"
+    falsifiable_as: "The 3sg passive aorist in -i is claimed the most frequent person — testable as person distribution of passive-aorist tokens in DCS (Whitney 843)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7159"
+    claim_ru: >-
+      после конечного ā, e, ai, o (последние три звука превращаются в ā) вставляется y, напр. dā, adāyi
+    kind: allomorphy
+    falsifiable_as: "3sg passive aorist inserts y after final a (adayi, agayi; Whitney 844)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7165"
+    claim_ru: >-
+      краткий a, стоящий на предпоследнем месте, удлинняется, за исключением случаев исхода корня на am. В последних он остается кратким, за исключением глаголов kam, gam, nam, yam, ram, vam плевать, блевать; и ācam
+    kind: allomorphy
+    falsifiable_as: "Penultimate a lengthens in 3sg passive aorist (avaci) except am-final roots (adami), which in turn except kam/gam/nam/yam/ram/vam/acam (agami) (Whitney 844)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7167"
+    claim_ru: >-
+      Корни X кл. и каузативы отбрасывают ay, напр. cur, acori; bhedayati, abhedi
+    kind: allomorphy
+    falsifiable_as: "3sg passive aorist of class X/causatives drops -ay- (acori, abhedi; Whitney 1048); forms retaining ay refute"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7169"
+    claim_ru: >-
+      labh, alābhi или alambhi (последнее всегда после приставок)
+    kind: universality
+    falsifiable_as: "Compounded labh always shows the nasalized alambhi type; simplex allows alabhi/alambhi (Whitney 844 note) — a prefixed *pra-alabhi attestation refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7171"
+    claim_ru: >-
+      Все корни на гласные, а также grah, dṛś и han могут по желанию остальные формы аориста образовывать от 3 л. ед. ч. путем приставления окончаний V. вида, Ā
+    kind: rule
+    falsifiable_as: "Vowel-final roots plus grah, drs, han optionally extend the passive aorist from the 3sg stem with is-middle endings (adayisi type; Whitney 845)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7195"
+    claim_ru: >-
+      Перфекты, будущие времена, conditionalis и precativus страд. залога образуются посредством окончаний Ā. ... Корни на гласные, а равным образом и grah, dṛś и han для будущего времени, condition. и precat. могут образовывать также особые формы от основы 3 л. ед. ч. аоr.
+    kind: rule
+    falsifiable_as: "Passive perfects/futures/conditionals/precatives use middle endings, with optional special stems (karita, karisyate) for vowel roots and grah/drs/han (Whitney 1049)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7207"
+    claim_ru: >-
+      корневые a, ṛ и ṝ замещаются посредством i. ... Но между удвоенными согласными всегда вставляется i.
+    kind: universality
+    falsifiable_as: "Desiderative reduplication vowel is i for root a/r/rr (pipaksati, cikirsati), and vowel-initial roots always insert i between doubled consonants (Whitney 1029)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7209"
+    claim_ru: >-
+      Суффикс sa [ṣa] присоединяется непосредственно к большинству корней с исходом на гласный ... Конечные i и u удлинняются, ṛ и ṝ изменяются в īr или, если предшествует губной — в ūr.
+    kind: allomorphy
+    falsifiable_as: "Desiderative sa attaches directly to most vowel-final roots; final i/u lengthen (ninisati, susrusate), r/rr→ir or ur after labials (cikirsati, mumursati; Whitney 1028-1030)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7211"
+    claim_ru: >-
+      Настоящее время дезидератива, которое одно только и встречается довольно часто, спрягается (P. и Ā.) подобно VI классу.
+    kind: statistic
+    falsifiable_as: "Only the desiderative present is reasonably frequent — testable as tense distribution of desiderative tokens in DCS (Whitney 1027)"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7211"
+    claim_ru: >-
+      В fut., condic. и precat. (Ā.) всегда вставляется соединительный гласный i; аорист образуется V вида.
+    kind: universality
+    falsifiable_as: "Desiderative future/conditional/precative always take connecting i and the aorist is of the is-type (Whitney 1032-1034); an anit desiderative future refutes"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7275"
+    claim_ru: >-
+      Сходные формы можно образовывать от всех корней на iv.
+    kind: universality
+    falsifiable_as: "All roots in -iv form double desideratives of the didevisati/dudyusati type (Whitney 1030 on div); an iv-root lacking the u-type refutes"
     buhler_gives_number: false
 
   - loc: "Урок XLVIII / mdx line 7319"
-    claim_ru: "Все односложные корни первых девяти классов, начинающиеся с согласных, могут образовывать два интенсива (фреквентатива)."
+    claim_ru: >-
+      Все односложные корни первых девяти классов, начинающиеся с согласных, могут образовывать два интенсива (фреквентатива), чтобы выразить повторение действия.
     kind: universality
-    falsifiable_as: "do intensive/frequentative formations occur for essentially all monosyllabic consonant-initial roots of classes I-IX in DCS, or is the attested intensive set a small closed list"
+    falsifiable_as: "Intensives (two types) formable from all consonant-initial monosyllabic roots of classes I-IX, excluding class X (Whitney 1000-1002); the class restriction and the two-type inventory are checkable"
+    buhler_gives_number: true
+
+  - loc: "Урок XLVIII / mdx line 7319"
+    claim_ru: >-
+      Интенсив глаголов значения „идти" обозначает движение по кривой линии, у некоторых других глаголов он указывает, что действие совершается плохо.
+    kind: rule
+    falsifiable_as: "Intensives of motion verbs denote crooked/repeated movement and sometimes pejorative action — checkable against Whitney 1000 and Panini 3.1.22-24 semantics and DCS usage"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7323"
+    claim_ru: >-
+      Первый интенсив образуется исключительно путем удвоения. Второй принимает суффикс ya, перед которым с корнем большей частью происходят те же изменения, как перед суффиксом страдательнаго залога
+    kind: rule
+    falsifiable_as: "Intensive I = strong reduplication only; intensive II adds -ya- with mostly passive-like root treatment (bobhoti vs bobhuyate; Whitney 1002, 1016)"
     buhler_gives_number: false
 
   - loc: "Урок XLVIII / mdx line 7325"
-    claim_ru: "Иные формы интенсива, чем производные от основы настоящего времени, встречаются крайне редко."
+    claim_ru: >-
+      Иные формы, чем производные от основы настоящего времени, встречаются крайне редко.
     kind: statistic
-    falsifiable_as: "are non-present-stem intensive forms (perfect/future/aorist of intensives) vanishingly rare in DCS relative to present-stem intensive forms"
+    falsifiable_as: "Non-present-system intensive forms are extremely rare — testable as tense distribution of intensive tokens in DCS (Whitney 1018-1019)"
     buhler_gives_number: false
 
   - loc: "Урок XLVIII / mdx line 7371"
     claim_ru: >-
-      Наиболее часто в классическом санскрите встречаются отыменные формы, образованные
-      посредством ya и aya ("делать(ся) тем-то" / "то-то желать").
+      Отыменные глаголы образуются посредством ya, aya, āpaya ..., и sya или asya ... или путем непосредственного приставления глагольных окончаний к имени ... Наиболее часто в классич. санскрите встречаются формы первых двух способов
     kind: statistic
-    falsifiable_as: "are ya/aya-suffixed denominatives the most frequent denominative-formation type in DCS versus sya/asya or bare-endings denominatives"
+    falsifiable_as: "Denominatives in -ya- and -aya- are the most frequent types in classical Sanskrit — testable as suffix-type distribution of denominative lemmata in DCS (Whitney 1053-1068)"
     buhler_gives_number: false

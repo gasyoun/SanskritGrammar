@@ -8,19 +8,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.0] - 2026-07-14
 ### Added
-- **Claim-verification register (H797 Phase 2 seed)** — [`claims.yml`](claims.yml) (BU-1..BU-5,
-  two-axis fact/pedagogy grading) + [`claims_harvest.yml`](claims_harvest.yml) (40-candidate
-  backlog from a full 48-lesson parallel harvest) + [`verify_claims_dcs.py`](verify_claims_dcs.py)
-  (DCS-2021 ground truth: tense/mood token shares, imperative person distribution, PPP suffix
-  split). Ports the two-axis verification pipeline from `KocherginaUchebnik_1998` (H768/H797) to
-  a second grammar. Headline: two frequency claims about the perfect/imperfect/aorist trio both
-  fail — Bühler calls the perfect rarer than the imperfect (it's actually more common, 7.93% vs
-  5.48% of verbal tokens: OVERSTATED) and the aorist "on equal footing" with both (it's ~0.31%,
-  18-25× rarer: FALSE) — while systemic/paradigmatic claims (imperative person split, PPP -ta/-na
-  ratio, periphrastic-perfect root-class conditions) hold up, one cross-confirming Kochergina's
-  HK-17 to within 0.3pp via an independently re-run query. First slice, not a full drain — 40
-  candidates remain in the backlog for a future pass.
+- **Claim-verification register (H797 Phase 2, first cross-grammar port)** — [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml): 64 falsifiable grammatical assertions verified on the two axes (fact vs DCS-2021/Whitney 1889/Tolchelnikov-Talmud · pedagogy) — 58 TRUE, 4 OVERSTATED (the Урок-I "все времена имеют обе формы" absolute; ā+Acc government; genitive "всякого рода"; perfect claimed rarer than imperfect vs DCS 61,986 > 47,554), 1 FALSE (a-aorist "как impf. VII кл." beside its own thematic paradigm — likely a 1923 misprint for VI), 1 UNTESTABLE, 13 M.G. frequency footnotes (PPP = 29.8% of all verbal tokens; optative 9.3%; periphrastic future 14× rarer than simple; absolutive -ya 78.4%). Backlog: [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims_harvest.yml) — 339 candidates from the 6-reader full-book sweep (404 harvested, 65 promoted/merged). Rendered table: [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md). (Fable 5 `claude-fable-5`)
+- **Seed slice (same day, concurrent session — absorbed into the register above)** — [PR #184](https://github.com/gasyoun/SanskritGrammar/pull/184) landed BU-1..BU-5 + a 40-candidate harvest + the book-local battery [`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/verify_claims_dcs.py) (kept — it independently reproduces the tense/mood shares, imperative person distribution and PPP suffix split via `tense_case_data.json`). Reconciliation: BU-1→HB-57, BU-4→HB-38, BU-5→HB-56 (double-verified), BU-3 promoted as HB-64 (imperative 2nd person 62.7%, cross-confirms Kochergina HK-17 to 0.3pp); BU-2's FALSE grading of the aorist «равноправно» claim re-graded TRUE in HB-61 — the same clause says «редких форм», so «равноправно» is semantic interchangeability, not frequency parity (reconciliation recorded in HB-61's note). (Sonnet 5 `claude-sonnet-5`)
 
 ## [0.1.0] - 2026-07-07
 ### Added

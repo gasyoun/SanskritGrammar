@@ -120,6 +120,49 @@ def verb_class_share():
     }
 
 
+# --- H797 Phase 2 (Bühler) metrics ------------------------------------------
+# The register generalised to BuhlerLeitfaden_1923 (same DCS/Whitney ground
+# truth). These back the HB-* claims that need corpus numbers of their own.
+def buhler_metrics(finite, nonfin):
+    # HB: -tāt imperative ("иногда при благословении") — forms in tense code 3
+    imp_forms = {f for f, c in finite if c == 3}
+    taat = sorted(f for f in imp_forms if f.endswith("tāt"))
+    # HB: absolutive allomorphy -tvā / -ya / -am (Урок XXIX "очень редкая форма am")
+    abs_forms = {f for f, c in nonfin if c == 23}
+    ab = Counter()
+    for f in abs_forms:
+        if f.endswith("tvā") or f.endswith("tvī"):
+            ab["-tvā"] += 1
+        elif f.endswith("ya"):
+            ab["-ya"] += 1
+        elif f.endswith("am"):
+            ab["-am"] += 1
+        else:
+            ab["other"] += 1
+    atot = len(abs_forms)
+    return {
+        "HB_taat_imperative": {
+            "distinct_taat_forms": len(taat),
+            "total_imperative_forms": len(imp_forms),
+            "taat_share_pct": round(100 * len(taat) / len(imp_forms), 2) if imp_forms else None,
+            "examples": taat[:12],
+        },
+        "HB_optative": {                    # Урок XVI: optative uses; frequency context
+            "tokens": TOK[2], "pct_of_verbal": pct(TOK[2]), "label": LABEL.get(2, ""),
+            "cf_present_tokens": TOK[1],
+        },
+        "HB_future_periphrastic": {         # Урок I inventory: описательное vs простое будущее
+            "periphrastic_tokens": TOK[7], "simple_future_tokens": TOK[5],
+            "periphrastic_pct_of_verbal": pct(TOK[7]),
+        },
+        "HB_absolutive_allomorphy": {
+            "distinct_forms": atot, "tokens": TOK[23],
+            "suffix_split_types": dict(ab),
+            "suffix_split_pct": {k: round(100 * v / atot, 1) for k, v in ab.items()},
+        },
+    }
+
+
 def analyze():
     finite = list(_forms("15.csv", 3))     # (form, tense_code)
     nonfin = list(_forms("12.csv", 4))     # (form, cat_code)
@@ -242,6 +285,8 @@ def analyze():
             for c in json.load(open(VDCS / "tense_case_data.json", encoding="utf-8"))["cases"]
         } if (VDCS / "tense_case_data.json").exists() else None,
     }
+    # --- H797 Phase 2: Bühler (HB-*) metrics ---
+    stats.update(buhler_metrics(finite, nonfin))
     return stats
 
 
@@ -296,6 +341,25 @@ def report(s):
     if pt:
         print(f"PAST-TENSE COMPETITION: imperfect {pt['imperfect_tokens']:,} · "
               f"perfect {pt['perfect_tokens']:,} · aorist {pt['aorist_tokens']:,} tokens")
+
+    print("\n--- H797 Phase 2: Bühler (HB) metrics ---")
+    tt = s.get("HB_taat_imperative")
+    if tt:
+        print(f"HB -tāt IMPERATIVE ('иногда при благословении'): {tt['distinct_taat_forms']} of "
+              f"{tt['total_imperative_forms']:,} imperative forms = {tt['taat_share_pct']}% "
+              f"(e.g. {', '.join(tt['examples'][:4])})")
+    op = s.get("HB_optative")
+    if op:
+        print(f"HB OPTATIVE: {op['tokens']:,} tokens = {op['pct_of_verbal']}% of verbal "
+              f"(cf. present {op['cf_present_tokens']:,})")
+    fp = s.get("HB_future_periphrastic")
+    if fp:
+        print(f"HB PERIPHRASTIC vs SIMPLE FUTURE: {fp['periphrastic_tokens']:,} vs "
+              f"{fp['simple_future_tokens']:,} tokens ({fp['periphrastic_pct_of_verbal']}% of verbal)")
+    ab = s.get("HB_absolutive_allomorphy")
+    if ab:
+        print(f"HB ABSOLUTIVE ALLOMORPHY ({ab['distinct_forms']:,} distinct forms, "
+              f"{ab['tokens']:,} tokens): {ab['suffix_split_types']} → {ab['suffix_split_pct']}")
 
 
 def main():

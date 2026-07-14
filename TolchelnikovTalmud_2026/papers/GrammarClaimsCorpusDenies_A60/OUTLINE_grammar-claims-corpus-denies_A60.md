@@ -1,6 +1,6 @@
 # Grammar Claims the Corpus Does Not Confirm — corpus-adjudicated divergences in Sanskrit reference and textbook grammars (A60, working outline)
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 14-07-2026_
 
 > **Status: readiness 4/5 — full single-book draft written.** This directory now carries the complete
 > paper: (a) method, framing, related-work (H773 Q0); (b) the complete Kochergina central table — all
@@ -191,14 +191,19 @@ divergence set.
 - **Central table complete for Kochergina (Q1 ✅).** All 12 OVERSTATED/FALSE divergences from the
   finished 43-claim register are classified and quantified. What remains is breadth, not depth: the
   table is **single-book**.
-- **Per-grammar comparison (Q2) still blocked — single-book.** "Which grammar over-generalises most"
-  needs ≥2 verified registers; only Kochergina is harvested. The `claims.yml` schema is multi-book
-  (D5), so this is an ingestion task, not a redesign: run the H768 harvest+verify pipeline on
-  Bühler / Knauer / Zaliznyak / Apte (their mdx already sit in sibling folders), then re-run
-  [`build_divergence_table.py`](build_divergence_table.py) — it groups by grammar automatically.
-- **Cross-grammar generalisation is unverified.** §4 attributes the future-stem framing to Kochergina
-  only. Whether Bühler / Knauer / Zaliznyak present it identically is the cross-grammar harvest above —
-  do **not** cite a shared framing until measured.
+- **Per-grammar comparison (Q2) — UNBLOCKED for Bühler 14-07-2026 (H797 Phase 2, Fable 5
+  `claude-fable-5`).** The second verified register is live:
+  [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)
+  — 63 verified (57 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE), flagged rows HB-2, HB-8, HB-10,
+  HB-57 (perfect claimed rarer than imperfect vs DCS 61,986 > 47,554), HB-60 (FALSE, likely misprint).
+  Knauer / Zaliznyak / Apte remain; re-running
+  [`build_divergence_table.py`](build_divergence_table.py) over both registers is now possible —
+  it groups by grammar automatically. A human decides single-book vs cross-grammar submission.
+- **Cross-grammar generalisation now has its first data point.** §4 attributes the future-stem
+  framing to Kochergina only — correctly so: Bühler's register shows the SAME corpus number
+  (seṭ -iṣya 56.8%) confirming his hedged formulation TRUE (HB-59) where Kochergina's absolute was
+  OVERSTATED (HK-4). The divergence is presentation calibration, not shared framing — cite it that
+  way, not as a common error.
 - **Class 3 unpopulated by design here.** System-vs-usage needs a *system-sourced* claim set (Whitney /
   Pāṇinian licensing); it will fill from the cross-grammar harvest, not from Kochergina's beginner text.
 - **Numbers are consumed, not re-derived.** The corpus figures are H768's, reproduced by
