@@ -12,6 +12,11 @@ Every work below is fully digitized as `.mdx` and rendered on the
 [Docusaurus site](https://gasyoun.github.io/SanskritGrammar/) (deploy target moving to
 samskrtam.ru).
 
+> **Field context.** This textbook ladder is one aspect of the org-wide
+> [digital Sanskrit pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
+> (§3.6 there is the planned *Zaliznyak-made-learnable* on-ramp — a gentler entry into the formal
+> classification than Толчельников's *Талмуд*, which stays as the deep-dive tier behind it).
+
 ## Stage 1 — Start (complete beginner, from day one)
 
 Used together from the very beginning:

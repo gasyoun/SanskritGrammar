@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **Digital Sanskrit pedagogy established as a priority research field** — org-wide field metadoc [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) (+ [`.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.meta.md)) consolidating the three pre-existing pedagogy maps by reference, plus a layered plan in [`docs/`](https://github.com/gasyoun/SanskritGrammar/tree/main/docs) ([PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) · [ROADMAP](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) · [ARCHITECTURE](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ARCHITECTURE_DIGITAL_SANSKRIT_PEDAGOGY.md) · [IMPLEMENTATION](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_DIGITAL_SANSKRIT_PEDAGOGY_WAVE1.md) · [VERIFICATION](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/VERIFICATION_DIGITAL_SANSKRIT_PEDAGOGY.md)). Aspect-primary taxonomy with layered tags (CEFR rung · NLP capability · research-Q · traditional discipline · owning repo) from which the matrix & learner-journey views derive. Registered org-wide: MEGABOOK §2.10 (+ §2.9 strengthened), ARTICLES A62, GTD straddle tier (research T1 / product T0); wave-1 handoffs H912–H916 minted. Authored via `/ask` (17 rulings, zero blocking forks). (Opus 4.8 `claude-opus-4-8`)
 
 ## [0.10.0] - 2026-07-14
 ### Fixed
