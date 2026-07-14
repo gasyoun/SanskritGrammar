@@ -11,6 +11,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+
+## [0.2.2] - 2026-07-14
 ### Fixed
 - **`papers/` index: de-linked the un-published source binaries.** The links to the Auroville /
   Fortunatovskiye / Dubyanskiye `.pptx`/`.pdf` slide sources were broken *by design* — those source

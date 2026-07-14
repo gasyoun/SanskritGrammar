@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.9.2] - 2026-07-14
 ### Changed
 - **`onBrokenLinks: 'throw'`** (was `'warn'`) in [`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs) —
   now that every in-site broken link is cleared (catalog, Fortunatovskiye landing page, papers
