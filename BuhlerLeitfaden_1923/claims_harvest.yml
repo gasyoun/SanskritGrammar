@@ -451,13 +451,6 @@ candidates:
     falsifiable_as: "Imperative built on present stem; dual/plural endings partly identical with imperfect endings (tam, ta, tām) — paradigm comparison"
     buhler_gives_number: false
 
-  - loc: "Урок XIV / mdx line 1859"
-    claim_ru: >-
-      Второе и третье лицо императива большей частью выражают приказание, первое же лицо выражает желание или будущее время. Иногда 2-е и 3-е лицо употребляются в том же значении, как и первое
-    kind: statistic
-    falsifiable_as: "2nd/3rd person imperatives mostly encode commands, 1st person encodes wish/intention — distribution of imperative person vs speech-act in corpus"
-    buhler_gives_number: true
-
   - loc: "Урок XV / mdx line 1949"
     claim_ru: >-
       Imperativus Ātmanepada (Medium) образуется, подобно Imper. Par., от основы наст. времени. Пассивные формы имеют окончания Imp. Ātm.

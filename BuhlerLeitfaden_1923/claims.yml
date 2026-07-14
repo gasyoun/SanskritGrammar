@@ -27,14 +27,19 @@
 # mg_footnote:      (optional) corpus frequency ADDED BY M.G. where Bühler states no number —
 #                   scholarly apparatus rendered over the reading site, not part of the 1923 text.
 #
-# COVERAGE (H797 Phase 2 seed): HB-1.. — verified subset of the 6-reader full-book harvest
+# COVERAGE (H797 Phase 2): HB-1..HB-64 — verified subset of the 6-reader full-book harvest
 # (claims_harvest.yml holds the remaining backlog, drained incrementally like Kochergina's).
+# ABSORBS the same-day concurrent 5-claim seed slice BU-1..BU-5 (Sonnet 5 `claude-sonnet-5`,
+# PR #184, with its own BuhlerLeitfaden_1923/verify_claims_dcs.py battery — kept): BU-1→HB-57,
+# BU-2→HB-61 (verdict reconciled, see its note), BU-3→HB-64, BU-4→HB-38, BU-5→HB-56. The
+# independent double-verification of the overlapping entries is recorded in their notes.
 
 work: "Bühler, Руководство к элементарному курсу санскритского языка (Leitfaden), 1923"
 
 synthesis: >-
-  On the 63-claim verified core (of a 404-candidate full-book harvest), Bühler comes out of the
-  two-axis check remarkably clean: 57 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE. His
+  On the 64-claim verified core (of a 404-candidate full-book harvest; five entries additionally
+  double-verified by the concurrent seed pass BU-1..BU-5), Bühler comes out of the
+  two-axis check remarkably clean: 58 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE. His
   signature virtue is *calibrated hedging*. Where Kochergina's failure mode was the absolute
   quantifier ("всегда", "только", "по единому правилу") over a known exception class, Bühler's
   hedges repeatedly land exactly on the variable zone and his absolutes on the categorical one:
@@ -66,7 +71,7 @@ synthesis: >-
 
 
   Recommendation for the reading-site overlay: badge the six flagged entries and surface the
-  twelve M.G. frequency footnotes — Bühler states almost no numbers, and the corpus can now
+  thirteen M.G. frequency footnotes — Bühler states almost no numbers, and the corpus can now
   supply them (the ppp at 29.8% of all verbal tokens as the true center of the verb system,
   the optative as the second finite category at 9.3%, the -ya absolutive at 78.4% of the
   inventory). The cross-grammar layer is doing what D-A intended: with two registers live,
@@ -714,7 +719,8 @@ entries:
       (8,0 %). Суффикс -na — живой, но маргинальный партнер.
     note: >-
       Two-suffix inventory and the weak-grade hedge both confirmed; the M.G. footnote adds the
-      8%/92% split Bühler had no way to state.
+      8%/92% split Bühler had no way to state. Independently double-verified by the concurrent
+      seed pass (BU-4, Sonnet 5): same 4,385/383 counts from the same 12.csv query.
 
   - id: HB-39
     loc: "Урок XXVII / mdx line 3651"
@@ -1033,6 +1039,10 @@ entries:
     note: >-
       Matches the reference distribution (with the standard handful of optional members,
       which Bühler lists separately at line 6675 — vid, bhī, hrī, bhṛ, jāgṛ, daridrā).
+      Double-verified by the seed pass (BU-5, Sonnet 5) with the fuller Whitney quotation:
+      §1071 makes the ām-perfect 'the accepted perfect of the derivative conjugations' with
+      no simple-perfect alternative, and flags the one named exception (√āp) that Bühler's
+      summary omits — a completeness gap, not an error.
 
   - id: HB-57
     loc: "Урок XLIII / mdx line 6727"
@@ -1051,6 +1061,10 @@ entries:
       corpus flips it. D-B flag — DCS is the frequency authority, but its aggregate is
       epic/purāṇic-heavy, where the perfect dominates narration; in a narrower kāvya/śāstra
       stratum Bühler's direction may yet hold. Stratum-conditioned OVERSTATED, not FALSE.
+      Independently found by the concurrent seed pass (BU-1, Sonnet 5) via a different
+      ground-truth route (tense_case_data.json census: perfect 7.93% vs imperfect 5.48% of
+      verbal) — two paths, same flipped direction; the imperfect totals differ only in which
+      marginal imperfect codes are summed.
 
   - id: HB-58
     loc: "Урок XLIV / mdx line 6735"
@@ -1131,7 +1145,14 @@ entries:
     note: >-
       Both halves confirmed: marginal frequency and semantic levelling with perf./impf. in the
       classical language. The same corpus fact that anchors Kochergina's HK-1 — the two
-      grammars agree, and the corpus agrees with both.
+      grammars agree, and the corpus agrees with both. VERDICT RECONCILIATION: the concurrent
+      seed pass (BU-2, Sonnet 5) read «совершенно равноправно» as FREQUENCY parity and graded
+      the claim FALSE (aorist 0.31% is ~20× rarer than either competitor). Rejected here: the
+      same clause calls the aorists «редких форм» — Bühler himself asserts the rarity, so
+      «равноправно» can only mean functional/semantic interchangeability (which Whitney §928
+      confirms for the classical language), not equal frequency. The parity reading would make
+      the sentence self-contradictory. The ambiguity is real and worth a reading-site gloss;
+      the frequency number stands either way.
 
   - id: HB-62
     loc: "Урок XLVIII / mdx line 7205"
@@ -1166,4 +1187,28 @@ entries:
     note: >-
       The exclusivity claims here are the definitions of the two intensive types, so the
       absolutes are safe — unlike the Урок-I voice universal (HB-2) they qualify.
+
+  - id: HB-64
+    loc: "Урок XIV / mdx line 1859"
+    claim_ru: >-
+      Второе и третье лицо императива большей частью выражают приказание, первое же лицо
+      выражает желание или будущее время. Иногда 2-е и 3-е лицо употребляются в том же
+      значении, как и первое
+    kind: statistic
+    falsifiable_as: "does imperative use skew toward the 2nd/3rd persons as the command core"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "2nd person = 62.7% of 4,386 distinct Imperative Active forms (1st 266, 2nd 2,751, 3rd 1,369) — DCS-2021 15.csv; the sense split (command vs wish) is systemic per Whitney"
+    ref: "Whitney §§570-575; DCS 15.csv (HK17/BU3 imperative-person query); cf. KocherginaUchebnik_1998 HK-17 (63.0%, same method)"
+    verdict_pedagogy: JUSTIFIED
+    mg_footnote: >-
+      Распределение императива по лицам в DCS-2021 (различные формы): 2-е лицо 62,7 %,
+      3-е 31,2 %, 1-е 6,1 % из 4 386 форм — команда 2-го лица и есть статистическое ядро
+      наклонения, в согласии с формулировкой Бюлера.
+    note: >-
+      Promoted from the concurrent seed pass (BU-3, Sonnet 5 `claude-sonnet-5`), which
+      independently re-ran the HK-17 query and matched Kochergina's 63.0% to within 0.3pp —
+      a clean cross-book, cross-session agreement on the same systemic fact. The person-form
+      distribution backs the 'большей частью' skew; the finer command-vs-wish semantics stay
+      qualitative (Whitney's description matches).
 
