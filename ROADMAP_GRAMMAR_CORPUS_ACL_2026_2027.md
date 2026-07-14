@@ -1,6 +1,6 @@
 # Roadmap 2026–2027 — SanskritGrammar as a priority research thread
 
-_Created: 10-07-2026 · Last updated: 10-07-2026_
+_Created: 10-07-2026 · Last updated: 14-07-2026_
 
 A one-year plan (Q3 2026 → Q2 2027) turning this repo from a **digitized-reprint archive** into
 a **measured comparative corpus of Sanskrit grammatical description**, with two submittable
@@ -99,8 +99,17 @@ corpus + Whitney on two axes — factual truth and pedagogical justification. Pi
 + a reading-site overlay. Headline finding: Kochergina's *facts* are accurate (5/7 TRUE) but the
 Petersburg-school "single base rule" ordering hides corpus frequency — the future stem is taught
 as "-syá по единому правилу" while the seṭ form **-iṣya is the majority outcome (56.8%)**; the real
-conditioning is the seṭ/aniṭ lexical class of **S2**. Two `@DECIDE` open (see GTD): generalise the
-claim-verification layer to the other grammars? and a source-conflict tie-break rule.
+conditioning is the seṭ/aniṭ lexical class of **S2**. Both `@DECIDE` RULED 12-07-2026 (D-A
+generalise; D-B tie-break DCS/Whitney/Talmud). **Cross-grammar since 14-07-2026 (H797 Phase 2,
+Fable 5 `claude-fable-5`, [PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186)):** second
+register live — [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml),
+**64 verified** (58 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE · 13 M.G. footnotes) + a
+339-candidate backlog from a 404-candidate 6-reader sweep. Two-register finding: the SAME corpus
+number (-iṣya 56.8%) grades Kochergina OVERSTATED and Bühler TRUE — **presentation calibration,
+not factual accuracy, is the measurable axis on which grammars differ**; Bühler's own failure
+modes are rare-before-common ordering (periphrastic future taught before a 14×-more-frequent
+simple future) and one corpus-flipped frequency direction (perfect vs imperfect). Remaining:
+Knauer, then Zaliznyak (≥50 verified each) + the Bühler backlog drain.
 
 **S1 metalanguage extension — quantifier register + Zaliznyak comparison (H800, 13-07-2026, done).**
 A second register grades not the *assertions* but the *quantifiers* — the metalanguage words that

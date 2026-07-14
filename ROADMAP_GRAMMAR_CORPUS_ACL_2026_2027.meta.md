@@ -1,6 +1,6 @@
 # Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
-_Created: 10-07-2026 · Last updated: 11-07-2026_
+_Created: 10-07-2026 · Last updated: 14-07-2026_
 
 A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
@@ -120,5 +120,6 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 10-07-2026 | H450 agenda landed: backlog #4 closed (SG-H1…H9, SG-V1…V6); metadoc's stale `ROADMAP_2026_2027.md` self-references repointed to the renamed `ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md` (rename `77868c5` had missed them). | Fable 5 (`claude-fable-5`) |
 | 10-07-2026 | **D2 closed.** [H449](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H449-Sonnet_SanskritGrammar_zaliznyak-zalizniak-rename-sweep_10.07.26.md) checked the premise behind cancelling the Zaliznyak→Zalizniak rename (that "Zaliznyak" was the historically-printed citation spelling) against real evidence — Tolchelnikov's own published paper already cites "Andrei Zalizniak. 1975." (i-spelling) — and found it false. Rename proceeded ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) + [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), both merged); B6 (`people.yaml` name-variant map) demoted from "dissolves D2" to an independent, optional backlog item. Also fixed this metadoc's stale `ZALIZNYAK_1975_1978_2004_COMPARISON.md` self-reference to the renamed filename. | Sonnet 5 (`claude-sonnet-5`) |
 | 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (`claude-sonnet-5`) |
+| 14-07-2026 | **S1 cross-grammar milestone recorded (H797 Phase 2).** S1 sub-thread updated: D-A/D-B rulings noted, second register live — [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml) 64 verified + 339-candidate backlog ([PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186)); two-register calibration finding added; remaining Knauer/Zaliznyak stated. | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
