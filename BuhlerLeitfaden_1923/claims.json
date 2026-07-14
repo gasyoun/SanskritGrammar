@@ -1,0 +1,67 @@
+{
+  "work": "Bühler, Leitfaden für den Elementarcursus des Sanskrit (Russian ed.), 1923",
+  "generated": "14-07-2026",
+  "synthesis": "Five-claim seed (H797 Phase 2). Two of the five concern the classical-period frequency of the three simple past tenses (perfect / imperfect / aorist), and both turn up the SAME failure mode already isolated in Kochergina's register: **frequency-blindness on a systemic hierarchy that predates corpus statistics.** Bühler states the perfect is used \"реже\" (more rarely) than the imperfect — but DCS-2021 token counts show the opposite: perfect (61,986 tokens, 7.93% of verbal) is in fact MORE frequent than imperfect (42,803 tokens, 5.48%) in the classical corpus (BU-1, OVERSTATED). And where Bühler asserts the aorist stands \"совершенно равноправно\" (on fully equal footing) with perfect and imperfect, the corpus shows it at 2,452 tokens (0.31%) — roughly 18-25× rarer than either (BU-2, FALSE). Both errors run in the *same* direction: understating the classical perfect's currency and overstating the aorist's. Where Bühler's claims are purely systemic/paradigmatic rather than frequency-based, they hold up cleanly: 2nd/3rd-person dominance of the imperative (BU-3, matches Kochergina HK-17's independently-computed 63% almost exactly at 62.7%), the -ta/-na PPP suffix split (BU-4, -na at 8.0% — a clear minority, as \"реже\" claims), and the periphrastic-perfect obligation for vowel-initial-heavy-syllable roots and derived conjugations (BU-5, confirmed systemic fact, Whitney §1070-1071 — note the fork-suggested §802-804 citation was wrong chapter; periphrastic perfect is treated in Whitney's Chapter XV, not Chapter X). Provisional read, to be revisited once the 40-candidate backlog is worked down: Bühler's factual accuracy on systemic/paradigmatic rules looks solid; his two tested frequency claims both understate the classical tenses' corpus currency, the mirror image of Kochergina's mostly-accurate-but-frequency-blind profile. Too small a sample (2 of 5) to generalise past \"worth watching in the backlog.\"",
+  "claims": [
+    {
+      "id": "BU-1",
+      "loc": "Урок XLIII / mdx line 6727",
+      "claim_ru": "Перфект в классическом санскрите имеет то же значение, как и imperfectum, и только реже употребляется.",
+      "kind": "statistic",
+      "verdict_fact": "OVERSTATED",
+      "number": "perfect 61,986 tokens (7.93% of 781,618 verbal tokens) vs imperfect 42,803 tokens (5.48%) — DCS-2021 (verify_claims_dcs.py BU1_BU2_tense_shares)",
+      "ref": "DCS-2021 tense/mood token census via ../../VisualDCS/tense_case_data.json",
+      "verdict_pedagogy": "FREQUENCY-HIDDEN",
+      "note": "The opposite of what Bühler states: the perfect is not rarer than the imperfect in the classical corpus, it is MORE common (7.93% vs 5.48% of verbal tokens). The semantic- equivalence claim (both narrative past) is a separate, plausible point not tested here; only the relative-rarity claim is checked and fails.",
+      "mg_footnote": null
+    },
+    {
+      "id": "BU-2",
+      "loc": "Урок XLV / mdx line 7007",
+      "claim_ru": "В классическом санскрите все аористы большей частью употребляются в качестве редких форм прошедшего времени, совершенно равноправно с perfectum и imperfectum.",
+      "kind": "statistic",
+      "verdict_fact": "FALSE",
+      "number": "aorist 2,452 tokens = 0.31% of 781,618 verbal tokens, vs perfect 7.93% and imperfect 5.48% — ~18-25× rarer, not equal footing (verify_claims_dcs.py BU1_BU2_tense_shares)",
+      "ref": "DCS-2021 tense/mood token census via ../../VisualDCS/tense_case_data.json; cf. KocherginaUchebnik_1998 HK-1 (same 2,452-token aorist figure, independently corroborated)",
+      "verdict_pedagogy": "MISLEADING",
+      "note": "Bühler correctly calls the aorist rare, but \"равноправно\" (fully on a par) with the other two past tenses actively misstates the scale of the gap — a beginner reading this would expect aorist forms to turn up about as often as perfect/imperfect ones in a text, when in fact they are two orders of magnitude rarer. Same underlying number as Kochergina HK-1 (2,452 aorist tokens), reached independently here via the tense_case_data.json census rather than the 15.csv/timws.csv route HK-1 used — the two ground-truth paths agree.",
+      "mg_footnote": null
+    },
+    {
+      "id": "BU-3",
+      "loc": "Урок XIV / mdx line 1859",
+      "claim_ru": "Второе и третье лицо императива большей частью выражают приказание, первое же лицо выражает желание или будущее время; иногда 2-е и 3-е лицо употребляются в значении первого.",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "2nd person 62.7% of 4,386 distinct Imperative Active forms (1st 266, 2nd 2,751, 3rd 1,369) — verify_claims_dcs.py BU3_imperative_person",
+      "ref": "DCS-2021 15.csv (finite verb forms, tc==3 Imperative Active); cf. KocherginaUchebnik_1998 HK-17 (63.0%, same method, independently computed)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Confirms Kochergina HK-17 almost exactly (62.7% here vs 63.0% there) via an independent re-run of the same DCS query — good cross-book agreement on a systemic fact about the imperative paradigm's actual use.",
+      "mg_footnote": null
+    },
+    {
+      "id": "BU-4",
+      "loc": "Урок XXVII / mdx line 3593",
+      "claim_ru": "Part. perf. pass. (PPP) образуется посредством суффикса ta, f. ā, или (реже) na [ṇa], f. ā, от корня, принимающего обыкновенно кратчайшую форму.",
+      "kind": "allomorphy",
+      "verdict_fact": "TRUE",
+      "number": "distinct PPP forms: -ta 4,385 / -na 383 (total 5,083) — -na is 8.0% (verify_claims_dcs.py BU4_ppp_suffix)",
+      "ref": "DCS-2021 12.csv (non-finite forms, code 19 = PPP); cf. KocherginaUchebnik_1998 HK-29 (same method)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "\"Реже\" (rarer) is an understatement if anything — -na is a small minority allomorph (8.0% of distinct PPP forms), not merely less common than -ta.",
+      "mg_footnote": null
+    },
+    {
+      "id": "BU-5",
+      "loc": "Урок XLIII / mdx line 6673",
+      "claim_ru": "Описательный перфект обязателен для всех односложных корней, начинающихся с i и u (когда они долгие по положению), с ī, ū, ṝ или двугласными, а также для некоторых двусложных корней, для всех корней X класса, всех каузативов и других производных форм, и для отыменных глаголов.",
+      "kind": "universality",
+      "verdict_fact": "TRUE",
+      "number": "systemic: Whitney §1071 — periphrastic perfect is 'the accepted perfect of the derivative conjugations: intensive, desiderative, causative, and denominative' (no simple-perfect alternative); §1071b — 'most roots beginning with a vowel in a heavy syllable ... make this perfect only, and not the simple one'",
+      "ref": "Whitney §1070-1071 (WhitneyGrammar_1889/15_Periphrastic_and_Compound_Conjugation.mdx) — note: the periphrastic perfect is treated in Whitney's Chapter XV (Periphrastic and Compound Conjugation), not Chapter X's §802-804 (simple-perfect reduplication), which an earlier harvest pass mis-cited",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Matches Whitney's own conditions closely: vowel-initial heavy-syllable roots and all four derivative-conjugation classes (intensive/desiderative/causative/denominative) obligatorily take the periphrastic, not simple, perfect. Whitney §1071 flags a small named exception (√āp) that Bühler's summary omits — a minor completeness gap, not a factual error.",
+      "mg_footnote": null
+    }
+  ]
+}

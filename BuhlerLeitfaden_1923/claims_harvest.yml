@@ -1,0 +1,317 @@
+# claims_harvest.yml — bulk harvested falsifiable-assertion BACKLOG for BuhlerLeitfaden_1923
+#
+# Companion to claims.yml (the curated, VERIFIED register). Full 48-lesson textbook harvest
+# (H797 Phase 2, 14-07-2026): 45 falsifiable grammatical assertions swept by 5 parallel readers,
+# in reading order, each tagged buhler_gives_number. 5 were verifiable now against ground truth
+# already in hand and promoted to claims.yml as BU-1..BU-5; these 40 remain PENDING.
+#
+# Yield note: this textbook is far more paradigm-table-dense than Kochergina's (each reader
+# flagged low density in the pure-conjugation/declension-table lessons — e.g. Уроки XXXVII-XLI
+# turned up nothing beyond tables) — falsifiable discursive prose runs roughly 1 claim per
+# 150-250 lines here vs. Kochergina's 60-80, so 45 candidates over ~7,350 lines of grammar prose
+# is the honest full-book yield, not a partial sweep.
+#
+# buhler_gives_number: true  = he states a quantity/frequency (verify it)
+#                       false = he gives none (add an M.G. footnote where computable, or verify
+#                               via Whitney systemic citation)
+#
+# Most entries need either (a) a corpus query this pass didn't build yet (compound-formation and
+# sandhi-outcome claims need text-level string search, not the aggregate tense/case/verb-class
+# tables used for BU-1..BU-5), or (b) a Whitney §-citation not yet located. Continue the drain
+# the same way H797 Phase 1 drained Kochergina's backlog: verify a batch, promote, repeat.
+
+work: "Bühler, Leitfaden für den Elementarcursus des Sanskrit (Russian ed.), 1923 — harvest backlog"
+
+candidates:
+
+  - loc: "СЛОЖЕНИЕ СОГЛАСНЫХ (intro) / mdx line 145"
+    claim_ru: >-
+      Конечные s и r слов, стоящих в конце предложения, всегда превращаются в висаргу (=ḥ),
+      обыкновенно также и перед k, kh, p, ph и перед шипящими (ś, ṣ, s).
+    kind: universality
+    falsifiable_as: "does word-final s/r become visarga in ALL pre-pausa contexts, and only 'usually' (not always) before k/kh/p/ph/sibilants, per Whitney's actual sandhi rule (§172ff)"
+    buhler_gives_number: false
+
+  - loc: "Урок II / mdx line 267"
+    claim_ru: >-
+      Допускают 1-ую степень повышения (guṇa) все гласные, стоящие на конце корня, а также
+      краткие гласные, после которых стоит лишь один согласный.
+    kind: universality
+    falsifiable_as: "is guṇa-strengthening truly unconditioned on ALL root-final vowels and all short vowels followed by a single consonant, or does Whitney (§235ff) register exceptions"
+    buhler_gives_number: false
+
+  - loc: "Урок VIII / mdx line 1042"
+    claim_ru: >-
+      Очень многие глаголы спрягаются только в Ātmanepada, и, таким образом, подобно греческим
+      Media, являются Deponentia.
+    kind: statistic
+    falsifiable_as: "what share/count of DCS-attested verbal roots are Ātmanepada-only (deponent) vs. Parasmaipada-only vs. Ubhayapada — does 'очень многие' hold up as a proportion"
+    buhler_gives_number: false
+
+  - loc: "Урок IX / mdx line 1193"
+    claim_ru: >-
+      Начальный n в большинстве корней обращается в ṇ после приставок antaḥ(r), niḥ(s), parā,
+      pari, pra и duḥ(s).
+    kind: statistic
+    falsifiable_as: "does the ruki-triggered n→ṇ retroflexion actually apply in the majority of roots after these prefixes, per Whitney §189 conditions/exceptions"
+    buhler_gives_number: false
+
+  - loc: "Урок X / mdx line 1327"
+    claim_ru: >-
+      Личная пассивная конструкция очень употребительна в санскрите при переходных глаголах, а
+      также и безличная — как при переходных, так и при непереходных.
+    kind: statistic
+    falsifiable_as: "how frequent is the ya-passive in DCS token counts relative to active-voice forms of transitive verbs — does the corpus support 'очень употребительна'"
+    buhler_gives_number: false
+
+  - loc: "Урок XII / mdx line 1574"
+    claim_ru: >-
+      Прилагательные на u в жен. роде могут принимать суффикс ī (gurvī, bahvī вместо guru-based
+      forms); эти формы жен. рода более употребительны.
+    kind: statistic
+    falsifiable_as: "in DCS, is the ī-suffixed feminine (gurvī-type) actually more frequent than the u-stem feminine (guru-type) for u-stem adjectives"
+    buhler_gives_number: false
+
+  - loc: "Урок VII / mdx line 948"
+    claim_ru: "Перед носовыми конечный t обычно превращается в n; однако он может превратиться и в d."
+    kind: statistic
+    falsifiable_as: "among attested t+nasal sandhi junctions in the corpus, is the n-outcome actually the majority variant over the d-outcome"
+    buhler_gives_number: false
+
+  - loc: "Урок IX / mdx line 1189"
+    claim_ru: "Обычно пишут ā вместо ai [в сандхи ai+гласный], но āv вместо au."
+    kind: statistic
+    falsifiable_as: "in attested sandhi outcomes, is ai+vowel resolved to ā more often than to āy, while au+vowel favors āv over the ā-contraction"
+    buhler_gives_number: false
+
+  - loc: "Урок XIV / mdx line 1815"
+    claim_ru: "Иногда при благословении 2-е и 3-е л. ед. ч. императива принимают особую форму на -tāt (vad-a-tāt), помимо обычных vad-a / vad-a-tu."
+    kind: statistic
+    falsifiable_as: "how frequent is the -tāt imperative in DCS relative to the regular 2sg/3sg imperative, and is its use concentrated in blessing/formulaic contexts"
+    buhler_gives_number: false
+
+  - loc: "Урок XIV / mdx line 1817"
+    claim_ru: >-
+      Многосложные существительные на -ū (напр. vadhū женщина) склоняются по одному образцу;
+      односложные существительные на -ū (напр. bhū земля) даются отдельно и маркированы как
+      женского рода.
+    kind: universality
+    falsifiable_as: "are there attested masculine monosyllabic ū-stem nouns in DCS/Whitney, parallel to Kochergina's HK-16 finding that monosyllabic ī/ū-stems are attested as masculine, not only feminine — Whitney §344b lists masc./fem.-common u-stems (kārū, babhrú, bībhatsú, bhīrú) worth cross-checking against Bühler's implicit 'monosyllabic ū = feminine' framing"
+    buhler_gives_number: false
+
+  - loc: "Урок XVI / mdx line 2071"
+    claim_ru: >-
+      Optativus Parasmaipada образуется от основы наст. вр. посредством ī и окончаний
+      имперфекта; только в 3-м л. мн. ч. вместо окончания -an появляется -uḥ.
+    kind: rule
+    falsifiable_as: "is the 3pl optative-active ending exclusively -uḥ (never -an) across the DCS-attested optative paradigm, per Whitney"
+    buhler_gives_number: false
+
+  - loc: "Урок XVIII / mdx line 2300"
+    claim_ru: >-
+      От всех глагольных корней может быть произведен Causativus (causalis), основа наст. вр.
+      которого образуется посредством суффикса paya или aya.
+    kind: universality
+    falsifiable_as: "what share of DCS-attested verbal roots (by token or type) have an attested causative aya/paya stem — is it really 'all roots' or a minority with a productive-but-not-universal pattern"
+    buhler_gives_number: false
+
+  - loc: "Урок XIX / mdx line 2509"
+    claim_ru: >-
+      Часто употребляется множественное число вместо единственного числа местоимений первого и
+      второго лица (pluralis majestatis); энклитические формы (mā, me, nau, naḥ; tvā, te, vām,
+      vaḥ) употребляются только в безударной позиции, если в предложении предшествует другое
+      слово.
+    kind: statistic
+    falsifiable_as: "how common is plural-for-singular pronoun usage in DCS relative to genuine plural reference, and do enclitic pronoun forms in fact avoid clause-initial position"
+    buhler_gives_number: false
+
+  - loc: "Урок XX / mdx line 2633"
+    claim_ru: >-
+      Прилагательное, относящееся к нескольким существительным различного рода, стоит в
+      мужском роде, если эти существительные состоят из имен мужского и женского рода, и в
+      среднем роде, если среди них есть существительное среднего рода.
+    kind: rule
+    falsifiable_as: "does resolved-gender agreement across mixed-gender noun coordination in DCS/Whitney follow masc>fem, neut>all as an absolute rule, or are there attested exceptions"
+    buhler_gives_number: false
+
+  - loc: "Урок XXI / mdx line 2743"
+    claim_ru: >-
+      Почти все имена на -ṣ и -ś и большинство имен на -h (кроме перечисленных исключений,
+      напр. dadhṛṣ, naś) в N. V. sg. m./f. и в L. pl. заменяют конечный согласный на ṭ, а перед
+      окончаниями на bh — на ḍ.
+    kind: universality
+    falsifiable_as: "among DCS-attested consonant-stem nouns ending in -ṣ/-ś/-h, what share actually follow the ṭ/ḍ pattern versus the named (and any unnamed) exception classes"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIII / mdx line 3064"
+    claim_ru: >-
+      Только причастия наст. вр. глаголов I, IV и X классов в N. V. Асc. du. ср. р. всегда
+      вставляют n (напр. kariṣyantī); причастия всех прочих классов (в т.ч. VI класса и II
+      класса на -ā) могут вставлять n факультативно или не вставляют его вовсе.
+    kind: allomorphy
+    falsifiable_as: "does the class-conditioned optional/obligatory n-insertion in the neuter dual present-participle actually split by class I/IV/X (obligatory) vs. others (optional/absent) in DCS-attested participle forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XXV / mdx line 3499"
+    claim_ru: >-
+      Финальный n корня han изменяется в ṇ (перед гласными суффиксами слабых падежей, с h→gh),
+      если первый член сложного слова или приставка содержит ṛ, r или ṣ; в противном случае h
+      не превращается в ghn.
+    kind: rule
+    falsifiable_as: "does DCS attestation of han-compounds (e.g. brahmahan-type) confirm the ṛ/r/ṣ-triggered ṇ/ghn split with no counterexamples"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVII / mdx line 3639"
+    claim_ru: >-
+      Наиболее обычными исключениями [к PPP на -ta без соединительного i] являются: ad→jagdha,
+      khād→khadita, mad→matta, mud→mudita, rud→rudita, vad→udita, vid→vidita, svād→svādita.
+    kind: typology
+    falsifiable_as: "are these the actual highest-frequency exception roots in DCS PPP attestation, versus other -ta-irregular roots Bühler omits"
+    buhler_gives_number: false
+
+  - loc: "Урок XXVIII / mdx line 3765"
+    claim_ru: >-
+      После довольно употребительных корней на t, p и s (dyut, pat, krudh, lap, vas, śvas, has)
+      перед суффиксом ta вставляется соединительный гласный i.
+    kind: rule
+    falsifiable_as: "do DCS-attested PPP forms of these specific roots show -ita (not bare -ta), confirming the exception list"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4009"
+    claim_ru: "К глаголам X класса и каузативам всегда приставляется -ayitvā (Absolutivum на tvā)."
+    kind: universality
+    falsifiable_as: "do 100% of DCS class-X/causative tvā-absolutive tokens end in -ayitvā, with zero exceptions"
+    buhler_gives_number: false
+
+  - loc: "Урок XXIX / mdx line 4029"
+    claim_ru: "Очень редкая форма Absolutivum образуется при помощи am (напр. smāram, bhojam)."
+    kind: statistic
+    falsifiable_as: "what is the DCS token/type share of -am absolutives relative to -tvā and -ya absolutives — confirm they are genuinely rare"
+    buhler_gives_number: false
+
+  - loc: "Урок XXX / mdx line 4233"
+    claim_ru: >-
+      Наиболее употребительные корни, не имеющие соединительной гласной i перед суффиксами
+      tum/ta/tvā (aniṭ), перечислены в 5 группах по конечному согласному корня.
+    kind: typology
+    falsifiable_as: "are Bühler's listed aniṭ roots indeed the highest-frequency aniṭ roots in DCS, and does the seṭ/aniṭ split align with the already-established future-stem finding (Kochergina HK-4 / paper A60, -iṣya seṭ = 56.8% majority)"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXII / mdx line 4585"
+    claim_ru: "Реже сравнительная степень образуется посредством суффикса īyas, а превосходная — посредством iṣṭha, вместо обычных tara/tama."
+    kind: statistic
+    falsifiable_as: "what % of DCS comparative/superlative distinct forms use -īyas/-iṣṭha vs -tara/-tama — confirm -īyas/-iṣṭha is the minority allomorph"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4657"
+    claim_ru: "Первая часть сложного слова по большей части принимает форму основы (перед согласными), реже — форму какого-нибудь падежа."
+    kind: statistic
+    falsifiable_as: "what share of compound first members in the DCS corpus are bare stem-form vs. inflected case-form"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4665 (a)"
+    claim_ru: "Конечное as перед твердыми гортанными и губными иногда остаются без изменения."
+    kind: statistic
+    falsifiable_as: "how often does word-final -as resist the regular sandhi change before hard velars/labials in the corpus"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4665 (b)"
+    claim_ru: "После конечных i, u и ṛ начальные s, st, sth часто становятся язычными."
+    kind: statistic
+    falsifiable_as: "what proportion of i/u/ṛ-final + s/st/sth junctions in the corpus undergo retroflexion (ṣ/ṣṭ/ṣṭh) vs. stay dental"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4675"
+    claim_ru: >-
+      Если второй член tatpuruṣa — глагольное прилагательное, никогда или редко появляющееся в
+      виде самостоятельного слова, состав. имя разрешается посредством предложения с verbum
+      finitum.
+    kind: universality
+    falsifiable_as: "are the cited tatpuruṣa second members (e.g. -pāla, -stha, -ja) genuinely rare/unattested as free words in DCS, or do they occur independently at normal frequency"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIII / mdx line 4683"
+    claim_ru: >-
+      Dvigu-композиты выражают большей частью группу или собрание (samāhāra) как сущ. ср.р. или
+      ж.р. на -ī; прилагательные этого класса встречаются реже.
+    kind: statistic
+    falsifiable_as: "among attested dvigu compounds in DCS, what is the ratio of collective-noun readings to adjectival readings"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4757"
+    claim_ru: >-
+      В конце всех tatpuruṣa rājan изменяется в rāja, sakhi в sakha, pathin в patha, за
+      исключением случаев, когда предшествует su, kiṃ или a.
+    kind: rule
+    falsifiable_as: "does Whitney confirm this stem-alternation rule for rājan/sakhi/pathin as tatpuruṣa finals, with su-/kiṃ-/a- as the stated exception class"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4759"
+    claim_ru: "go изменяется в gava в конце tatpuruṣa, за исключением прилагательных dvigu."
+    kind: rule
+    falsifiable_as: "does Whitney's account of go-compounds confirm gava as the regular tatpuruṣa-final form, with dvigu adjectives as the stated exception"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4761"
+    claim_ru: "ahan изменяется в aha (m.) в конце сложных слов, или, после sarva, apara, pūrva, madhya — в ahna."
+    kind: rule
+    falsifiable_as: "does Whitney confirm the ahan→aha/ahna compound-final alternation conditioned by a preceding sarva/apara/pūrva/madhya"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4763"
+    claim_ru: "rātri после числительных и sarva, apara, pūrva, madhya, puṇya изменяется в ratra (m.)."
+    kind: rule
+    falsifiable_as: "does Whitney confirm rātri→ratra as a compound-final alternation triggered specifically by numerals and sarva/apara/pūrva/madhya/puṇya"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4775"
+    claim_ru: >-
+      Если первым членом bahuvrīhi является прилагательное, то большей частью — за исключением
+      случаев, где возникло бы недоразумение — женский род заменяется мужским.
+    kind: statistic
+    falsifiable_as: "in attested bahuvrīhi compounds with an adjectival first member, what share show the fem.→masc. stem replacement Bühler describes as the majority pattern"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4777 (a)"
+    claim_ru: "К существительным женского рода на -ī и -ū, а также к словам на -ṛ, в конце bahuvrīhi всегда приставляется суффикс -ka."
+    kind: universality
+    falsifiable_as: "do ALL attested bahuvrīhi-final -ī/-ū/-ṛ stems in DCS take the -ka suffix, or are there unsuffixed counterexamples"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXIV / mdx line 4777 (b)"
+    claim_ru: "В конце bahuvrīhi go изменяется большей частью в gu; akṣi большей частью в akṣa."
+    kind: statistic
+    falsifiable_as: "among attested bahuvrīhi-final occurrences of go and akṣi, what fraction take the gu/akṣa allomorph vs. other attested outcomes"
+    buhler_gives_number: false
+
+  - loc: "Урок XXXVI / mdx line 5095"
+    claim_ru: "Корни VIII класса почти все оканчиваются на n или ṇ и спрягаются подобно корням V класса, оканчивающимся на гласные."
+    kind: statistic
+    falsifiable_as: "of the full set of class-VIII roots attested in DCS/Whitney's root list, what share actually end in n/ṇ (vs. kṛ and other exceptions) — the top-5-by-token-frequency class-VIII roots in VisualDCS/verb_classes.json are man (4,115, ends -n), and four kṛ-compounds (alaṁkṛ 541, prakṛ 536, namaskṛ 446, puraskṛ 425, none ending -n/-ṇ), so 'почти все' is doubtful by root TYPE even though it is TRUE by token count (man alone outweighs the four kṛ-compounds combined) — needs the full class-VIII root inventory (not just top-5), not yet pulled"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVII / mdx line 7157"
+    claim_ru: "Третье лицо единственного числа аориста страдательного залога (встречающееся особенно часто) принимает окончание i."
+    kind: statistic
+    falsifiable_as: "is 3sg passive-aorist token frequency disproportionately high relative to other person/number cells in DCS — blocked: the DCS timws.csv/tense_case_data.json tense-code table has no code isolating passive-aorist from active/medium aorist, so this needs a raw 15.csv re-tag by voice, not yet built"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7319"
+    claim_ru: "Все односложные корни первых девяти классов, начинающиеся с согласных, могут образовывать два интенсива (фреквентатива)."
+    kind: universality
+    falsifiable_as: "do intensive/frequentative formations occur for essentially all monosyllabic consonant-initial roots of classes I-IX in DCS, or is the attested intensive set a small closed list"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7325"
+    claim_ru: "Иные формы интенсива, чем производные от основы настоящего времени, встречаются крайне редко."
+    kind: statistic
+    falsifiable_as: "are non-present-stem intensive forms (perfect/future/aorist of intensives) vanishingly rare in DCS relative to present-stem intensive forms"
+    buhler_gives_number: false
+
+  - loc: "Урок XLVIII / mdx line 7371"
+    claim_ru: >-
+      Наиболее часто в классическом санскрите встречаются отыменные формы, образованные
+      посредством ya и aya ("делать(ся) тем-то" / "то-то желать").
+    kind: statistic
+    falsifiable_as: "are ya/aya-suffixed denominatives the most frequent denominative-formation type in DCS versus sya/asya or bare-endings denominatives"
+    buhler_gives_number: false

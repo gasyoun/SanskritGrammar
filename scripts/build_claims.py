@@ -91,28 +91,36 @@ def counts(entries):
     return n, verdicted, flagged
 
 
+def _gives_number(c):
+    """Field name varies per book (kochergina_gives_number, buhler_gives_number, ...) —
+    accept any key ending in '_gives_number' so the harvest schema stays grammar-agnostic."""
+    for k, v in c.items():
+        if k.endswith("_gives_number"):
+            return bool(v)
+    return False
+
+
 def render_backlog(harvest):
     """Render the harvest backlog (candidates pending verification) as its own section."""
     if not harvest:
         return []
     n = len(harvest)
-    with_num = sum(1 for c in harvest if c.get("kochergina_gives_number"))
+    with_num = sum(1 for c in harvest if _gives_number(c))
     lines = [
         "", f"## Harvest backlog — {n} candidates pending verification", "",
-        f"Falsifiable assertions swept from the full 15,756-line textbook (H768 scale-out) but not "
-        f"yet verdicted. {with_num} state a number of their own (verify it); the rest give none "
-        f"(add an M.G. frequency footnote where computable). As each is verified it is promoted into "
-        f"the table above and removed here. Source: "
-        f"[`claims_harvest.yml`](claims_harvest.yml).",
+        f"Falsifiable assertions swept from the textbook but not yet verdicted. {with_num} state a "
+        f"number of their own (verify it); the rest give none (add an M.G. frequency footnote where "
+        f"computable). As each is verified it is promoted into the table above and removed here. "
+        f"Source: [`claims_harvest.yml`](claims_harvest.yml).",
         "",
-        "| Location | Claim (abridged) | Kind | K. gives №? | Falsifiable as |",
+        "| Location | Claim (abridged) | Kind | Author gives №? | Falsifiable as |",
         "|--|--|--|--|--|",
     ]
     for c in harvest:
         claim = md_cell(c.get("claim_ru", ""))
         if len(claim) > 130:
             claim = claim[:127] + "…"
-        gn = "yes" if c.get("kochergina_gives_number") else "—"
+        gn = "yes" if _gives_number(c) else "—"
         lines.append(f"| {md_cell(c.get('loc'))} | {claim} | {md_cell(c.get('kind'))} | {gn} | "
                      f"{md_cell(c.get('falsifiable_as'))} |")
     return lines
@@ -163,7 +171,8 @@ def render_book(work, entries, book_dir, synthesis="", harvest=None):
         lines.append(row)
 
     if synthesis:
-        lines += ["", "## Methodology synthesis — are Kochergina's presentation principles justified?",
+        author = work.split(",")[0].strip()
+        lines += ["", f"## Methodology synthesis — are {author}'s presentation principles justified?",
                   ""]
         for para in synthesis.split("\n\n"):
             para = " ".join(para.split())
