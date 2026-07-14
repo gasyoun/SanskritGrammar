@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.12.0] - 2026-07-14
 ### Changed
 - **`scripts/build_claims.py` generalized off Kochergina-only field names** — the harvest-backlog
   "gives a number?" column read the hardcoded key `kochergina_gives_number`; it now accepts any
