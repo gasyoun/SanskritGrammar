@@ -13,9 +13,9 @@
     "tokens": 23942,
     "pct_of_verbal": 3.06,
     "suffix_split_types": {
-      "-ya": 1046,
+      "-tavya": 523,
       "-anīya": 230,
-      "-tavya": 523
+      "-ya": 1046
     },
     "cf_ppp_tokens": 233080,
     "cf_ppp_pct": 29.82,
@@ -159,6 +159,52 @@
       "du": 1935,
       "pl": 26248,
       "total": 182229
+    }
+  },
+  "HB_taat_imperative": {
+    "distinct_taat_forms": 41,
+    "total_imperative_forms": 4334,
+    "taat_share_pct": 0.95,
+    "examples": [
+      "abhigāyatāt",
+      "abhirakṣatāt",
+      "anuspṛśatāt",
+      "anvavasṛjatāt",
+      "apanayatāt",
+      "asyatāt",
+      "bhavatāt",
+      "carkṛtāt",
+      "dahatāt",
+      "dattāt",
+      "dhattāt",
+      "dhārayatāt"
+    ]
+  },
+  "HB_optative": {
+    "tokens": 72826,
+    "pct_of_verbal": 9.32,
+    "label": "Potential Active",
+    "cf_present_tokens": 157003
+  },
+  "HB_future_periphrastic": {
+    "periphrastic_tokens": 1290,
+    "simple_future_tokens": 18004,
+    "periphrastic_pct_of_verbal": 0.17
+  },
+  "HB_absolutive_allomorphy": {
+    "distinct_forms": 3415,
+    "tokens": 81508,
+    "suffix_split_types": {
+      "-tvā": 668,
+      "-ya": 2679,
+      "other": 54,
+      "-am": 14
+    },
+    "suffix_split_pct": {
+      "-tvā": 19.6,
+      "-ya": 78.4,
+      "other": 1.6,
+      "-am": 0.4
     }
   }
 }
