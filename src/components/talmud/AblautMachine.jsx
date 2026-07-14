@@ -10,8 +10,12 @@ import widgetData from '@site/TolchelnikovTalmud_2026/data/widget_roots.json';
 
 const EXAMPLES = widgetData.ablaut_examples;
 
-export default function AblautMachine() {
-  const [series, setSeries] = useState('R₁');
+// Optional props (all defaulted → `<AblautMachine />` behaves exactly as before):
+//   rows          — whitelist/order of Ряд pills to show (default: all 13). The
+//                   onramp passes the 4 high-frequency rows A₁/I₁/U₁/R₁.
+//   initialSeries — which Ряд is selected on mount (default 'R₁').
+export default function AblautMachine({ rows = SERIES_ORDER, initialSeries = 'R₁' } = {}) {
+  const [series, setSeries] = useState(initialSeries);
   const [grade, setGrade] = useState('guna'); // weak | guna | vrddhi
   const [beforeVowel, setBeforeVowel] = useState(false);
   const [rootIdx, setRootIdx] = useState(''); // '' = free (no example root seated)
@@ -45,7 +49,7 @@ export default function AblautMachine() {
 
       <div className={styles.row}>
         <span className={styles.label}>Ряд:</span>
-        {SERIES_ORDER.map((s) => (
+        {rows.map((s) => (
           <button
             key={s}
             className={`${styles.pill} ${s === series ? styles.pillActive : ''}`}
