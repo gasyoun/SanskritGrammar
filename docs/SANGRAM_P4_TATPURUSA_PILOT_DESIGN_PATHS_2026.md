@@ -36,7 +36,7 @@ These are fixed by the C3 contract and the P2/P3 template; only the **codebook**
 | Agreement statistic | Cohen's κ = (p_o − p_e)/(1 − p_e), reported with a bootstrap 95 % CI. Net-new code — no κ template exists in the repo (P1/P2/P3 all used a single-annotator coverage/recall gate). |
 | Kill-gate | κ < 0.7 → taxonomy revised before any type distribution is published; the negative result is itself published under rule П7. κ ≥ 0.7 → adjudicate disagreements, publish the determinative distribution with denominator + CI (rules П1/П2). |
 | Standing rulings baked into the codebook | Samāsa parsed **right-to-left** (tatpuruṣa head = right member; dvandva is the coordinate exception); compound structure counted in **lemmas, not letters**. |
-| Article shape | `sangram/articles/tatpurusa/{index.mdx (7-section + candidate banner), article.manifest.json (revisions: [] until visa), data/}`; three validators + `npm run build` green; CHANGELOG `[0.21.0]`; candidate → author-visa → published lifecycle. |
+| Article shape | `sangram/articles/tatpurusha/{index.mdx (7-section + candidate banner), article.manifest.json (revisions: [] until visa), data/}`; three validators + `npm run build` green; CHANGELOG `[0.21.0]`; candidate → author-visa → published lifecycle. |
 
 **Repo taxonomy conventions to honour** (from the C2 registry, unless a path revises them): karmadhāraya is folded _inside_ the SG-WF-008 tatpuruṣa slot; **dvigu** is parked in SG-WF-010 with avyayībhāva, _not_ under tatpuruṣa (a departure from the Pāṇinian arrangement — and exactly the kind of boundary the kill-gate can flag for revision).
 

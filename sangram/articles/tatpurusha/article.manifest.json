@@ -1,0 +1,75 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:tatpurusha",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-WF-008",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Детерминативные композиты (tatpuruṣa): восстановим ли тип по корпусу",
+        "summary": "Статья-кандидат SG-WF-008 (пилот P4 программы морфологии C5). DCS даёт членение композита, но не его тип (предел EM4). Тип классифицируется вручную по кодовой книге Э. З. Лейтана (панинийская схема, dvigu ⊂ karmadhāraya ⊂ tatpuruṣa) двумя независимыми проходами (Opus 4.8 и Sonnet 5); согласие по Cohen κ — ворота kill-gate. Результат: класс восстановим (κ = 0,93), падежный подтип tatpuruṣa — на границе (κ = 0,72); оба прохода — машинные, помечены как предварительные."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:tatpurusha:1",
+        "layer": "scientific",
+        "text_slp1": "madBaktaH",
+        "segmentation_slp1": "mad-BaktaH",
+        "locus": { "corpus": "dcs", "work": "Liṅgapurāṇa", "ref": "LiPur 1.86 (s147)" },
+        "translations": { "ru": "преданный мне (мой почитатель)" },
+        "gloss_ru": "ṣaṣṭhī-tatpuruṣa: mama bhaktaḥ — почитатель [кого?] меня; левый член в родительном к главному.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (ṣaṣṭhī)", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:2",
+        "layer": "scientific",
+        "text_slp1": "mahABUmO",
+        "segmentation_slp1": "mahA-BUmO",
+        "locus": { "corpus": "dcs", "work": "Kaṭhopaniṣad", "ref": "KaṭhUp 1 (s24)" },
+        "translations": { "ru": "великая земля" },
+        "gloss_ru": "karmadhāraya (samānādhikaraṇa): mahatī bhūmiḥ — прилагательное mahā и главное bhūmi в одном падеже.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (karmadhāraya)", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:3",
+        "layer": "scientific",
+        "text_slp1": "pramehajit",
+        "segmentation_slp1": "prameha-jit",
+        "locus": { "corpus": "dcs", "work": "Rājanighaṇṭu", "ref": "RājNigh Prabh (s41)" },
+        "translations": { "ru": "побеждающий прамеху (мочеизнурение)" },
+        "gloss_ru": "upapada-tatpuruṣa: pramehaṃ jayati iti — главное jit есть kṛt-дериват (√ji) с левым членом-объектом.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (upapada); пример кодовой книги", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:4",
+        "layer": "scientific",
+        "text_slp1": "AttacApaH",
+        "segmentation_slp1": "Atta-cApaH",
+        "locus": { "corpus": "dcs", "work": "Bhāgavatapurāṇa", "ref": "BhāgPur 4.16 (s20)" },
+        "translations": { "ru": "тот, чей лук взят [в руки]" },
+        "gloss_ru": "НЕ tatpuruṣa, а bahuvrīhi: ātta-cāpo yena saḥ — доминирует внешний референт (обладатель лука); граница ppp-композита, где обе разметки согласны в пользу bahuvrīhi.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (bahuvrīhi — соседний класс)", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:5",
+        "layer": "scientific",
+        "text_slp1": "zazmanUnAm",
+        "segmentation_slp1": "zaz-manUnAm",
+        "locus": { "corpus": "dcs", "work": "Sūryasiddhānta", "ref": "SūrSiddh 1 (s45)" },
+        "translations": { "ru": "шести Ману (как совокупности)" },
+        "gloss_ru": "dvigu (числительный karmadhāraya ⊂ tatpuruṣa по Лейтану): ṣaṣ manavaḥ — числительное-первый член; здесь под tatpuruṣa, вопреки размещению dvigu в слоте SG-WF-010 реестра.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (dvigu)", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}

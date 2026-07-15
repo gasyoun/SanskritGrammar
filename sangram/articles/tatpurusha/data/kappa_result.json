@@ -19,43 +19,43 @@
     "observed_agreement": 0.7849,
     "n": 93,
     "kill_gate_fired": false,
-    "subset": "both passes coarse=tatpurusa"
+    "subset": "both passes coarse=tatpurusha"
   },
   "coarse_confusion": {
     "bahuvrihi": {
       "bahuvrihi": 17,
       "dvandva": 0,
-      "tatpurusa": 1,
+      "tatpurusha": 1,
       "unclear": 0
     },
     "dvandva": {
       "bahuvrihi": 0,
       "dvandva": 6,
-      "tatpurusa": 1,
+      "tatpurusha": 1,
       "unclear": 0
     },
-    "tatpurusa": {
+    "tatpurusha": {
       "bahuvrihi": 1,
       "dvandva": 0,
-      "tatpurusa": 93,
+      "tatpurusha": 93,
       "unclear": 0
     },
     "unclear": {
       "bahuvrihi": 0,
       "dvandva": 0,
-      "tatpurusa": 0,
+      "tatpurusha": 0,
       "unclear": 1
     }
   },
   "coarse_dist_A": {
     "bahuvrihi": 18,
-    "tatpurusa": 94,
+    "tatpurusha": 94,
     "dvandva": 7,
     "unclear": 1
   },
   "coarse_dist_B": {
     "bahuvrihi": 18,
-    "tatpurusa": 95,
+    "tatpurusha": 95,
     "dvandva": 6,
     "unclear": 1
   },

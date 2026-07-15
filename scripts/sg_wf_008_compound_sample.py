@@ -14,7 +14,7 @@ bracketing (multi-member compounds are reported as a limitation, not sampled).
 
 Contract C3: pinned snapshot (refuse without provenance pin) + SHA-256, seeded
 random sample (never "first N"), recorded denominator. Emits coverage_summary.json
-+ validation_sample.tsv into sangram/articles/tatpurusa/data/.
++ validation_sample.tsv into sangram/articles/tatpurusha/data/.
 """
 import sqlite3
 import sys
@@ -31,7 +31,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parents[1]
 GITHUB = ROOT.parent
 DEFAULT_DB = GITHUB / "VisualDCS" / "src" / "DCS-data-2026" / "dcs_full.sqlite"
-OUT_DIR = ROOT / "sangram" / "articles" / "tatpurusa" / "data"
+OUT_DIR = ROOT / "sangram" / "articles" / "tatpurusha" / "data"
 
 SEED = 20260715
 SAMPLE_SIZE = 120
