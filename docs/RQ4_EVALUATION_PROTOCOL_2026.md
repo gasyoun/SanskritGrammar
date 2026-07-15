@@ -14,6 +14,12 @@ First concrete arm, per the [A62 outline](https://github.com/gasyoun/SanskritGra
 > (instrumentation) and the actual recruitment/run are separate, later steps — several of which
 > are `@DECIDE` items for a human (§6).
 
+> **§6 RULED 15-07-2026 (MG):** recruitment = Systema-Sanscriticum's own Kochergina-stage students
+> (§6.1); retention window N = **4 weeks** (§6.2); hosting/instrumentation home = **Systema-hosted
+> flow** (§6.3, the recommended default). §6.4 (consent wording) is drafted as plain-language text
+> for MG's review, not yet finalised — see the harness handoff. §6 items below are kept as the
+> historical record of the decision; the ruling lives at the top of each.
+
 ## 1. Hypothesis (falsifiable)
 
 **H0:** Learners who start with the on-ramp (3 steps, minimal-notation, 4 high-frequency rows)
@@ -61,18 +67,30 @@ raise confidence without raising accuracy).
 
 ## 4. The diagnostic instrument
 
-A short (recommend 8–10 item) held-out derivation test: given a root's citation form + tense/mood
-target, the learner names its Ряд, Тип, and seṭ/aniṭ status (the on-ramp's own "one derivation"
-success criterion). Items drawn from **DCS-attested roots outside** the on-ramp's worked set (the
-on-ramp uses the 4 high-frequency A₁/I₁/U₁/R₁ rows) and outside talmud-02's own worked examples —
-a genuinely novel-to-both-arms item pool, so neither arm has a memorisation advantage from its own
-material. Same instrument (fresh item draw, matched difficulty) at pre-test, post-test, and
-retention-test — three item sets total, item-response-matched (same Ряд/Тип distribution across
-sets), not the identical items (avoids simple repetition effects).
+A short (8 item) held-out derivation test: given a root's citation form, the learner names its
+Ряд, Тип, and seṭ/aniṭ status (the on-ramp's own "one derivation" success criterion). Same
+instrument shape (fresh item draw per phase, matched difficulty) at pre-test, post-test, and
+retention-test — three item sets total, item-response-matched (same 2-per-row distribution across
+the 4 rows in every set), not the identical items (avoids simple repetition effects).
 
-**Item bank build:** derivable now from Appendix 1's 65 DCS-top roots (already Ряд/Тип/seṭ-tagged)
-— excluding the on-ramp's and talmud-02's worked examples — no new data collection needed for the
-item pool itself.
+**Scope restriction (documented, not hidden):** items are drawn **only from the 4 ablaut rows the
+on-ramp itself teaches** (A₁/I₁/U₁/R₁ — `AblautMachine`'s `rows` whitelist for the on-ramp).
+Testing a row the on-ramp never covers would not be a fair on-ramp-vs-Талмуд comparison, since
+only the Талмуд-first arm would have seen material for it — this instrument measures "did the
+on-ramp's framing help you learn/retain *this specific, on-ramp-scoped* content faster," not
+generalisation to the full 13-row matrix (a separate, harder question, out of scope for this
+first arm).
+
+**Item bank ✅ BUILT 15-07-2026 (H984):**
+[`TolchelnikovTalmud_2026/data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json),
+built by [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py)
+from the full 745-root Приложение 1 catalogue (`data/talmud_appendix1.json`), restricted to the 4
+on-ramp rows, **excluding** every root already used in the on-ramp's/talmud-02's own worked
+material (`data/widget_roots.json`'s `ablaut_examples` + `set_examples`), requiring complete
+Ряд+Тип+seṭ tags and no homonym ambiguity. 307 eligible candidates found; 24 items drawn (8 per
+phase × 3 phases, 2 per row), frequency-sorted via kosha's `lemma_frequency.tsv` `rank_all` within
+each row so the most plausibly-already-encountered roots are used first. Zero shortfall on any
+row.
 
 ## 5. Analysis plan (pre-registered, per falsifiability)
 
@@ -94,7 +112,10 @@ item pool itself.
   **pilot** (§7), not a properly powered confirmatory study, and say so honestly in any resulting
   paper (A32).
 
-## 6. Open `@DECIDE` items (a human should decide before recruitment starts)
+## 6. `@DECIDE` items (a human should decide before recruitment starts)
+
+**§6.1–6.3 RULED 15-07-2026 (MG):** Systema-hosted, Systema's own students, 4-week retention.
+§6.4 (consent wording) still open — drafted, not finalised (see the harness handoff, H988).
 
 1. **Recruitment population + channel** — Systema-Sanscriticum's own Kochergina-stage students
    (has real accounts + a channel to reach them, but conflates "student of this specific school"
@@ -135,7 +156,8 @@ result.
 | Claim in this protocol | Backing |
 |---|---|
 | On-ramp testbed exists, 3 steps, targets Kochergina-stage | [`ZALIZNYAK_ONRAMP_DESIGN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/ZALIZNYAK_ONRAMP_DESIGN.md) |
-| 65 DCS-top roots, Ряд/Тип/seṭ-tagged (item-bank source) | Talmud Appendix 1 |
+| 745-root catalogue, Ряд/Тип/seṭ-tagged (item-bank source) | [`data/talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json) |
+| Item bank (24 items, 3 phases, 4 rows, 0 shortfall) | [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json) (H984) |
 | RQ4 is the field's falsifiability backbone | [`docs/VERIFICATION_DIGITAL_SANSKRIT_PEDAGOGY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/VERIFICATION_DIGITAL_SANSKRIT_PEDAGOGY.md) |
 | Site has zero analytics/instrumentation today | checked `docusaurus.config.mjs` while scoping this protocol (15-07-2026) |
 | Systema has real user accounts + contact channel | [Systema-Sanscriticum `StudentController`](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/app/Http/Controllers/StudentController.php) et al. |

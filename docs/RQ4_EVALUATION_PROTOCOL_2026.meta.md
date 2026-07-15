@@ -5,26 +5,26 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 Companion for [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md).
 
 ## Purpose
-The full study design for RQ4 (learning-gain + retention on-ramp-first vs Талмуд-first), the digital-pedagogy field's falsifiability backbone. Closes A62's own "5/5: RQ4 evaluation protocol specified in full" checklist item. **Protocol-only**: no study has run, no harness has been built, no participants recruited.
+The full study design for RQ4 (learning-gain + retention on-ramp-first vs Талмуд-first), the digital-pedagogy field's falsifiability backbone. Closes A62's own "5/5: RQ4 evaluation protocol specified in full" checklist item. **§6.1–6.3 ruled 15-07-2026 (MG): Systema-hosted, Systema's own students, 4-week retention.** §6.4 (consent wording) still open.
 
 ## Audience
 Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-methodology paper).
 
 ## Provenance
 - **Model:** Sonnet 5 (`claude-sonnet-5`), 15-07-2026.
-- **Grounding:** the existing on-ramp testbed (`TolchelnikovTalmud_2026/onramp/`, H915), Talmud Appendix 1's 65 tagged roots (item-bank source), a direct check of `docusaurus.config.mjs` confirming the site has zero analytics/instrumentation today.
+- **Grounding:** the existing on-ramp testbed (`TolchelnikovTalmud_2026/onramp/`, H915), the full 745-root Приложение 1 catalogue (item-bank source, restricted to the on-ramp's 4 taught rows), a direct check of `docusaurus.config.mjs` confirming the site has zero analytics/instrumentation today.
 
 ## Ranked backlog
-1. **Resolve the 4 `@DECIDE` items in §6** (recruitment population/channel, retention window N, hosting/instrumentation home, consent framing) — nothing below can start honestly without these.
-2. **Build the item bank** — derivable now from Appendix 1, independent of the `@DECIDE`s.
-3. **Build the harness** — depends entirely on §6.3's hosting decision (Systema-hosted flow vs external form tool vs other).
+1. ~~Resolve the 4 `@DECIDE` items in §6~~ — §6.1–6.3 ruled 15-07-2026; §6.4 (consent wording) still open, drafted pending MG review (H988 harness handoff).
+2. ~~Build the item bank~~ — **DONE** (H984): [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json), 24 items, 0 shortfall.
+3. **Build the Systema-hosted harness** (H988) — consent/intake, arm assignment, diagnostic flow, +4-week retention reminder.
 4. **Run the pilot** (§7) before any confirmatory-sized run.
 5. **Write A32** once pilot data exists.
 
 ## Limitations
-- No sample-size-justified confirmatory design exists yet — §5's power estimate is a placeholder pending a real recruitment-population size.
+- No sample-size-justified confirmatory design exists yet — §5's power estimate is a placeholder pending a real recruitment-population size (now knowable: Systema's Kochergina-stage student count).
 - This is a between-subjects design; a learner can't experience "first contact" with the on-ramp twice, so no within-subject crossover arm was designed.
-- Retention-window choice (N weeks) is unresolved — the field's own docs give no default.
+- The diagnostic instrument is scoped to the on-ramp's own 4 taught rows (A₁/I₁/U₁/R₁) — a deliberate fairness restriction, not a full-matrix generalisation test.
 
 ## Related
 - Field: [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) · [A62 outline](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md) §4.
@@ -35,6 +35,7 @@ Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-
 | Date | Change | Model |
 |---|---|---|
 | 15-07-2026 | Created — full protocol (hypothesis, design, metrics, instrument, analysis plan, 4 open `@DECIDE`s, pilot recommendation) | Sonnet 5 (`claude-sonnet-5`) |
+| 15-07-2026 | §6.1–6.3 ruled by MG (Systema-hosted, own students, 4-week retention); item bank built (H984), instrument scoped to the on-ramp's 4 rows (documented restriction) | Sonnet 5 (`claude-sonnet-5`) |
 
 ---
 
