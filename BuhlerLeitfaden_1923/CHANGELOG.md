@@ -9,6 +9,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-15
+### Added
+- **Backlog FULLY DRAINED — 403 verified claims (H797)** — all 339 pending candidates verdicted by 6 parallel agents under a shared drain style guide (loc-alignment validation + manual spot-check of every FALSE at merge) and promoted as HB-65..HB-403: register tally **381 TRUE · 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 23 M.G. footnotes**; [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims_harvest.yml) is `candidates: []`. Bühler's own grammar survives nearly untouched (3 new OVERSTATED, each on a concrete counterexample: pṝ→pūrayati, ūrṇoti, apatha); **all 8 FALSE are misprint-class** — sentences self-contradicted by the paradigm/example printed next to them («окончание āḥ» vs brahmahā; kroṣṭṛ for kroṣṭu; «a» for «aṅ»; krudh in a t/p/s list; «гласный» for «согласный»; «sam давать» for san; the viśvapā exception list; plus the core's «impf. VII кл.») — so the claims register doubles as an errata sweep of the 1923/2008 text, 8 localized candidates queued for errata.yml. (Fable 5 `claude-fable-5`)
+
 ## [0.2.1] - 2026-07-15
 ### Added
 - **Russian-language folder README documenting the register findings** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/README.md): по-русски, для читателя без английского — метод двух осей и триангуляция DCS/Уитни/Талмуд, итог 64 проверенных (58 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE · 13 сносок М.Г.), шесть главных выводов (калибровка хеджей Бюлера vs Кочергина на одном числе -iṣya 56,8 %; редкое-прежде-частого; перевёрнутый перфект/имперфект; FALSE-опечатка «VII вм. VI»; корпусные сноски; двойная верификация PR #184), инструкция воспроизведения чисел и остаток фазы 2. Closes the gap that the register's synthesis/notes are English-only while the Kochergina register has its Russian reading-site overlay. (Fable 5 `claude-fable-5`)

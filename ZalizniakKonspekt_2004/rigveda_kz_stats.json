@@ -1,0 +1,85 @@
+{
+  "_source": "VisualDCS/src/DCS-data-2026/dcs_full.sqlite, text='Ṛgveda'",
+  "_provenance": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "n_texts": "270",
+    "n_tokens": "5688416"
+  },
+  "KZ13_nvpl_m_asas": {
+    "āsas": 909,
+    "ās": 1832,
+    "asas_share_pct": 33.2,
+    "claimed": "1/3 = 33.3%"
+  },
+  "KZ14_nvadu_m_aa": {
+    "ā": 808,
+    "au": 144,
+    "aa_share_pct": 84.9,
+    "claimed": "7/8 = 87.5%"
+  },
+  "KZ15_nvapl_n_aa": {
+    "āni": 739,
+    "ā": 1409,
+    "aa_share_pct": 65.6,
+    "claimed": "3/5 = 60%"
+  },
+  "KZ16_ipl_ebhis": {
+    "ebhis": 492,
+    "ais": 670,
+    "ebhis_share_pct": 42.3,
+    "claimed": "1/2 = 50%"
+  },
+  "KZ17_1pl_masi": {
+    "masi": 120,
+    "mas": 36,
+    "masi_share_pct": 76.9,
+    "claimed": "5/6 = 83.3%"
+  },
+  "KZ11_mood_by_period": {
+    "Rigveda": {
+      "total_finite_mooded": 23682,
+      "injunctive_Jus": 1717,
+      "injunctive_pct": 7.3,
+      "optative_Opt": 970,
+      "optative_pct": 4.1
+    },
+    "Mahābhārata": {
+      "total_finite_mooded": 104342,
+      "injunctive_Jus": 520,
+      "injunctive_pct": 0.5,
+      "optative_Opt": 9493,
+      "optative_pct": 9.1
+    },
+    "Rāmāyaṇa": {
+      "total_finite_mooded": 20210,
+      "injunctive_Jus": 75,
+      "injunctive_pct": 0.4,
+      "optative_Opt": 969,
+      "optative_pct": 4.8
+    },
+    "claimed": "injunctive much commoner in RV than Epic; optative rarer in RV"
+  },
+  "KZ12_root_predicates": {
+    "Rigveda": {
+      "root_tokens": 4443,
+      "finite_verb_roots": 3650,
+      "past_part_roots": 63,
+      "ppp_share_of_verbal_roots_pct": 1.7
+    },
+    "Mahābhārata_sample": {
+      "root_tokens": 519,
+      "finite_verb_roots": 374,
+      "past_part_roots": 50,
+      "ppp_share_of_verbal_roots_pct": 11.8
+    },
+    "Rāmāyaṇa_sample": {
+      "root_tokens": 50,
+      "finite_verb_roots": 31,
+      "past_part_roots": 7,
+      "ppp_share_of_verbal_roots_pct": 18.4
+    },
+    "caveat": "epic dependency annotation covers a subset of sentences (sample, not census)",
+    "claimed": "ta-participle predication comparatively rare in RV; finite verbs dominant"
+  }
+}
