@@ -9,6 +9,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-07-15
+### Added
+- **Russian-language folder README documenting the register findings** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md): по-русски, зеркало бюлеровского README — метод двух осей и триангуляция DCS/Уитни/Талмуд, итог 234 проверенных (210 TRUE · 11 OVERSTATED · 1 FALSE · 12 UNTESTABLE · 11 сносок М.Г. · 24 с флагом), семь главных выводов (два типа сбоя: сверхобобщение универсалий с единственным FALSE HK-16 и слепота к частотности с шаблоном HK-4 -iṣya 56,8 %; честная зона UNTESTABLE; оправданные частотные хеджи; кросс-грамматический контроль с Бюлером; корпусные сноски М.Г.), инструкция воспроизведения чисел, связи с оверлеем/квантификаторами/методичкой. Синтез реестра был доступен только по-английски (CLAIMS_VERIFIED.md); русский оверлей показывает таблицу, но не выводы. (Fable 5 `claude-fable-5`)
+
 ## [0.4.0] - 2026-07-14
 ### Added
 - **Quantifier metalanguage register (H800)** — `quantifiers.yml` per source → generated
