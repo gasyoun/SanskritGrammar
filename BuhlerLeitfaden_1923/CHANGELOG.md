@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **8 FALSE claim-verification misprints transcribed into [`errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml)** — the 0.3.0 entry below queued these as "candidates" but never actually wrote them; closed the gap (HB-60/133/186/199/200/211/219/372, `page: 0` + Урок/mdx-line locator, no printed pagination available for this book). `ERRATA.md` regenerated (8 open, 0 fixed). (Sonnet 5 `claude-sonnet-5`)
 
 ## [0.3.0] - 2026-07-15
 ### Added

@@ -12,4 +12,18 @@
 
 work: "Bühler, Leitfaden für den elementaren Cursus des Sanskrit (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina"
 
-entries: []
+# Printed page numbers are not tracked against claims.yml (unlike GasunsDhatu_2014's
+# dissertation pagination) — page: 0 + a Урок/mdx-line locator follows the GasunsDhatu
+# precedent for items with no anchorable print page.
+entries:
+  # ── H797 two-axis claim-verification: 8 FALSE-as-printed claims, all misprint-class
+  #    (self-contradicted by an adjacent paradigm the book itself prints) — see
+  #    claims.yml for the full falsifiability writeup per HB-id. ──
+  - { page: 0, line: "Урок XVII / mdx line 2228", read: "за искл. N. sing. pl. и Асc. sing.", instead: "за искл. N. sing. pl. и Асc. pl.", found_by: "H797 claims-verification (HB-133)", date_added: "2026-07-15", note: "retention exception list wrong; the printed paradigm at mdx 2230 shows Acc.sg. viśvapām retains ā, Acc.pl. viśvapaḥ loses it — opposite of what's listed" }
+  - { page: 0, line: "Урок XXV / mdx line 3355",  read: "N. V.sg. m. оканчиваются на aṅ", instead: "N. V.sg. m. оканчиваются на a", found_by: "H797 claims-verification (HB-186)", date_added: "2026-07-15", note: "ṅ lost in print/digitization (prāṅ, udaṅ, pratyaṅ); parallel neuter -ak keeps its consonant, exposing the gap" }
+  - { page: 0, line: "Урок XXVI / mdx line 3489", read: "от kroṣṭu (первое вхождение)", instead: "от kroṣṭṛ (первое вхождение)", found_by: "H797 claims-verification (HB-199)", date_added: "2026-07-15", note: "kroṣṭu/kroṣṭṛ confused in the first clause; the book's own examples at mdx 3491-3495 (kroṣṭo, kroṣṭubhyām, kroṣṭūn) are u-stem forms" }
+  - { page: 0, line: "Урок XXVI / mdx line 3497", read: "окончание ā",  instead: "окончание āḥ", found_by: "H797 claims-verification (HB-200)", date_added: "2026-07-15", note: "an-stem N.sg. has no visarga (pūṣā, aryamā, brahmahā); the book's own example three words later prints 'N. brahmahā'" }
+  - { page: 0, line: "Урок XXVIII / mdx line 3765", read: "kup гневаться, kupita", instead: "krudh гневаться", found_by: "H797 claims-verification (HB-211)", date_added: "2026-07-15", note: "krudh forms kruddha (not *krudhita) and ends in dh, violating the note's own t/p/s scope; kup fits the gloss, the p-final scope, and the seṭ behavior" }
+  - { page: 0, line: "Урок XXVIII / mdx line 3857", read: "san (ṣaṇ) давать, sāta", instead: "sam давать, sata", found_by: "H797 claims-verification (HB-219)", date_added: "2026-07-15", note: "root is san (Dhātupāṭha ṣaṇu dāne, matches the gloss 'давать'), ppp sāta with lengthening (Pāṇini 6.4.42), parallel to jāta/khāta printed correctly beside it; 'sam' also violates the section's own n/ṇ-final scope" }
+  - { page: 0, line: "Урок XLV / mdx line 6929",  read: "impf. VI кл.", instead: "impf. VII кл.", found_by: "H797 claims-verification (HB-60)", date_added: "2026-07-15", note: "the a-aorist is thematic (asicam, asicaḥ, asicat), matching a class VI imperfect — the paradigm Bühler prints beside the rule; class VII is athematic nasal-infixing and matches nothing shown" }
+  - { page: 0, line: "Урок XLV / mdx line 7005",  read: "удваивают конечный согласный", instead: "удваивают конечный гласный", found_by: "H797 claims-verification (HB-372)", date_added: "2026-07-15", note: "printed 'гласный' (vowel) contradicts every adjacent example — āśayati→āśiśat, arjayati→arjijat, īkṣayati→aicikṣat all double a CONSONANT" }
