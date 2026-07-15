@@ -1,0 +1,134 @@
+{
+  "study": "SG-MO-017 pilot P3: the perfect via form-class, not UD tense",
+  "method": "C5 § 3 (attested/generated/traditional) via C3 cycle; direct test of EM2 (§ 5.2)",
+  "snapshot": {
+    "master": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "sha256": null,
+    "provenance": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "n_texts": "270",
+      "n_tokens": "5688416",
+      "schema": "flatten-all; lemma<-dictionary.csv"
+    }
+  },
+  "universe_where_sql": "t.upos = 'VERB' AND t.feat_tense = 'Past' AND (t.feat_verbform IS NULL OR t.feat_verbform = 'Fin')",
+  "universe_gloss": "finite verb tokens with Tense=Past — the preterite bucket EM2/Д1 collapses (aorist ∪ perfect ∪ imperfect residue); the perfect is NOT separable from it by the tense feature",
+  "tense_context_finite": {
+    "None": 17,
+    "Fut": 21556,
+    "Impf": 46695,
+    "Past": 102055,
+    "Plp": 167,
+    "Pqp": 33,
+    "Pres": 353215
+  },
+  "past_fin_tokens": 102055,
+  "pluperfect_tokens_separately_tagged": 200,
+  "em2_note": "Tense=Past conflates the preterites (C3 Д1); the imperfect proper is partly tense-tagged Impf (46 695) but residue leaks into Past; the pluperfect IS separately tagged (Plp/Pqp) — the common perfect is not",
+  "form_class_partition": {
+    "instrument": "DCS feat_formation (the C2-intended `dcs:form-class` referent)",
+    "peri_periphrastic_perfect": 4046,
+    "peri_pct": 3.96,
+    "aorist_formed_total": 12054,
+    "aorist_formed_pct": 11.81,
+    "unmarked_null": 85955,
+    "unmarked_pct": 84.22,
+    "red_is_reduplicated_aorist": {
+      "tokens": 833,
+      "note": "under Past, feat_formation='red' marks the augmented reduplicated AORIST, not the perfect — a false friend for a naive redupl.=perfect rule",
+      "examples": [
+        {
+          "form": "abhyadudruvat",
+          "lemma": "abhidru"
+        },
+        {
+          "form": "abhyajūgupatām",
+          "lemma": "abhigup"
+        },
+        {
+          "form": "abhyapaptat",
+          "lemma": "abhipat"
+        },
+        {
+          "form": "abhyatītapat",
+          "lemma": "abhitap"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyavīvṛṣat",
+          "lemma": "abhivṛṣ"
+        },
+        {
+          "form": "abhyayūyujat",
+          "lemma": "abhiyuj"
+        },
+        {
+          "form": "abhyudasīṣahat",
+          "lemma": "abhyutsah"
+        }
+      ]
+    },
+    "no_perfect_value": "feat_formation has NO 'perfect' value; the reduplicated perfect — the primary formation — carries no tag and sits in the UNMARKED (NULL) bucket"
+  },
+  "form_attestable_perfect": {
+    "note": "the ONLY form-evidently-perfect tokens are the periphrastic perfect; the primary reduplicated perfect is 0 % recoverable via feat_formation",
+    "periphrastic_perfect_tokens": 4046,
+    "periphrastic_pct_of_past": 3.96,
+    "auxiliary_split": {
+      "as": 3697,
+      "kṛ": 298,
+      "bhū": 32,
+      "other": 19
+    },
+    "person_number": {
+      "3Si": 3503,
+      "3Pl": 466,
+      "3Du": 68,
+      "1Si": 8,
+      "2Si": 1
+    },
+    "voice": {
+      "Act": 4046
+    },
+    "belongs_to_slot": "SG-MO-032 (periphrastic perfect); here it is the lower bound for SG-MO-017"
+  },
+  "secondary_surface_heuristic": {
+    "role": "NEGATIVE probe only — measures that a bespoke augmentless-reduplication rule cannot isolate the perfect (conflates redupl. present III + redupl. aorist + perfect); never used as a corpus fact",
+    "null_bucket_hits": 25414,
+    "null_bucket_size": 85955,
+    "hit_pct_of_unmarked": 29.57,
+    "precision_measured_in": "validation_verdicts.tsv (sample adjudication)"
+  },
+  "kill_gate": {
+    "rule": "C5 § 7 P3: if form-class isolates the perfect from aorist/imperfect in < 95 % of the sample → the quantitative part is withdrawn and an honest negative result is published",
+    "form_class_isolable_pct_of_past": 15.78,
+    "perfect_form_attestable_pct_of_past": 3.96,
+    "seed": 20260715,
+    "sample_size": 80,
+    "sample_form_class_isolable": 8,
+    "sample_form_class_isolable_pct": 10.0,
+    "fired": true,
+    "file": "validation_sample.tsv (+ manual adjudication in validation_verdicts.tsv)"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:perfect",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-MO-017",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Перфект: отбор по форма-классу вместо UD-времени",
+        "summary": "Пилот P3 программы морфологии C5: UD-разметка DCS склеивает все претериты под Tense=Past (предел EM2 / дефект C3 Д1), поэтому слот SG-MO-017 предписывает отбор по форма-классу, а не по времени. Но собственный форма-класс DCS (feat_formation) НЕ содержит значения «перфект»: единственный форма-эвидентный перфект — перифрастический (3,96 % бакета Past); главный, редуплицированный перфект (uvāca, cakāra, jaghnuḥ) не тегируется вовсе и лежит в NULL-бакете (84,22 %), неотличимый от аориста. Тег «red» под Past — это редуплицированный АОРИСТ (ajījanat), ложный друг. В выборке 61/80 токенов Past — перфекты, но форма-класс опознаёт лишь 2 (recall 3,3 %). Kill-gate P3 сработал: количественная часть снимается, публикуется честный отрицательный результат."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:perfect:1",
+        "layer": "scientific",
+        "text_slp1": "tAM SarEr daSaBiH krudDas tAqayAmAsa rAkzasaH",
+        "segmentation_slp1": "tAm SarEH daSaBiH krudDaH tAqayAmAsa rAkzasaH",
+        "locus": { "corpus": "dcs", "work": "Rāmāyaṇa", "ref": "Rām, Su, 42" },
+        "translations": {
+          "ru": "…разгневанный ракшаса поразил её десятью стрелами."
+        },
+        "gloss_ru": "tāḍayāmāsa (√tāḍ, X кл.) — перифрастический перфект 3 sg: основа на -ām + вспомогательный āsa (√as). Это ЕДИНСТВЕННЫЙ вид перфекта, который корпус помечает форма-классом (feat_formation = peri); он же — сам по себе слот SG-MO-032.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:perfect:2",
+        "layer": "scientific",
+        "text_slp1": "ApaH ha vE vftraM jaGnuH",
+        "segmentation_slp1": "ApaH ha vE vftram jaGnuH",
+        "locus": { "corpus": "dcs", "work": "Śatapathabrāhmaṇa", "ref": "ŚBM, 3, 9, 4" },
+        "translations": {
+          "ru": "…во́ды же сразили Вритру."
+        },
+        "gloss_ru": "jaghnuḥ (√han) — редуплицированный перфект 3 pl: ja-ghnuḥ, редупликация видна прямо в форме. Но DCS не даёт ему НИКАКОГО форма-класса — токен лежит в NULL-бакете Tense=Past, неотличимый от аориста. Главная формация перфекта восстанавливается корпусом на 0 %.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:perfect:3",
+        "layer": "scientific",
+        "text_slp1": "ajIjanat sa tAM kanyAM SatarUpAM tapo'nvitAm",
+        "segmentation_slp1": "ajIjanat sa tAm kanyAm SatarUpAm tapaH anvitAm",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur, 18" },
+        "translations": {
+          "ru": "…он породил ту деву Шатарупу, исполненную подвижничества."
+        },
+        "gloss_ru": "ajījanat (√jan) — редуплицированный АОРИСТ 3 sg (a-jī-jan-at): аугмент a- + редупликация. Именно этот вид DCS помечает feat_formation = red под Tense=Past. Значит единственный «редупликационный» тег корпуса указывает на аорист, а не на перфект: наивное правило «редупликация = перфект» — ложный друг.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}
