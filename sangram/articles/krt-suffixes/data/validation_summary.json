@@ -1,0 +1,91 @@
+{
+  "study": "SG-WF-003 pilot P5: primary kṛt suffixes — surface match validated by MW derivation",
+  "method": "C5 § 3 via C3; direct test of EM5; kill-gate = dictionary discard > 20 %",
+  "snapshot": {
+    "master": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "n_texts": "270",
+      "n_tokens": "5688416",
+      "schema": "flatten-all; lemma<-dictionary.csv"
+    }
+  },
+  "suffixes_tested": [
+    "ana",
+    "ti",
+    "in"
+  ],
+  "tf_scoping": {
+    "tf_final_nominal_lemmas": 0,
+    "note": "-tṛ (SLP1 tf) is NOT surface-matchable — 0 NOUN/ADJ lemmas end in tf; DCS does not lemmatise agent nouns to a -tṛ-final form (an EM5 finding)"
+  },
+  "validation_sources": {
+    "mw_etymology_confirmed_headwords": 9002,
+    "mw_etymology_file": "csl-orig/v02/mw/mw_etymology.tsv (root_via ∈ parse|fr-root)",
+    "dhatu_list": 5743,
+    "dhatu_file": "csl-orig/v02/etymology_stats/dhatu_roots.txt",
+    "s2_caveat": "dhātu strip-check is a rough guṇa/vṛddhi heuristic; -ti nasal-loss under-recalled"
+  },
+  "per_suffix": {
+    "ana": {
+      "types": 3438,
+      "tokens": 95263,
+      "confirmed_types": 156,
+      "confirmed_tokens": 17198,
+      "discard_types": 3282,
+      "discard_rate_types_pct": 95.46,
+      "discard_rate_tokens_pct": 81.95,
+      "signal_overlap": {
+        "both": 4,
+        "mw_only": 14,
+        "dhatu_only": 138
+      }
+    },
+    "ti": {
+      "types": 1886,
+      "tokens": 74927,
+      "confirmed_types": 99,
+      "confirmed_tokens": 15658,
+      "discard_types": 1787,
+      "discard_rate_types_pct": 94.75,
+      "discard_rate_tokens_pct": 79.1,
+      "signal_overlap": {
+        "both": 5,
+        "mw_only": 15,
+        "dhatu_only": 79
+      }
+    },
+    "in": {
+      "types": 2926,
+      "tokens": 52932,
+      "confirmed_types": 88,
+      "confirmed_tokens": 3160,
+      "discard_types": 2838,
+      "discard_rate_types_pct": 96.99,
+      "discard_rate_tokens_pct": 94.03,
+      "signal_overlap": {
+        "both": 1,
+        "mw_only": 0,
+        "dhatu_only": 87
+      }
+    }
+  },
+  "overall": {
+    "types": 8250,
+    "tokens": 223122,
+    "confirmed_types": 343,
+    "confirmed_tokens": 36016,
+    "auto_discard_rate_types_pct": 95.84,
+    "auto_discard_rate_tokens_pct": 83.86
+  },
+  "kill_gate": {
+    "rule": "C5 § 7 P5: dictionary validation discards > 20 % of surface candidates → query reworked before asserting suffix productivity",
+    "auto_discard_rate_types_pct": 95.84,
+    "authoritative_measure": "manual false-positive rate on the 80-lemma sample (adjudication_sample.tsv) — separates surface noise from MW coverage gaps; see sg_wf_003_adjudicate_sample.py",
+    "seed": 20260715,
+    "sample_size": 81
+  }
+}

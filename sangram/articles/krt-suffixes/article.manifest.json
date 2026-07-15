@@ -1,0 +1,71 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:krt-suffixes",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-WF-003",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Основные kṛt-суффиксы: надёжен ли отбор по исходу леммы",
+        "summary": "Пилот P5 программы словообразования C5: у DCS нет деривационной (суффиксальной) разметки, а сандхи стирает границы морфем (предел EM5), поэтому слот отбирает kṛt-производные по поверхностному исходу леммы /(ana|ti|tf|in)$/. Пилот измеряет, насколько это надёжно. Итог отрицательный: суффикс -tṛ (tf) вообще не отбираем (0 лемм); а по -ana/-ti/-in ручная адъюдикация 81-лемменной выборки даёт долю ложных срабатываний ≈ 59 % ≫ 20 % → kill-gate сработал. Главный источник шума — композиты (31 из 48 ложных: лемма-композит с kṛt-финалью), затем имена собственные и посессивная таддхита -in. Словарная проверка по MW-этимологии тоже не спасает: точность 0,75, но полнота лишь 0,09 (отбрасывает 96 %, включая почти все настоящие производные). Запрос требует переработки."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:krt-suffixes:1",
+        "layer": "scientific",
+        "text_slp1": "ayane dve gatir udagdakziRArkasya vatsaraH",
+        "segmentation_slp1": "ayane dve gatiH udak dakziRa arkasya vatsaraH",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2" },
+        "translations": {
+          "ru": "…два пути (айана) солнца, северный и южный, — [это] год."
+        },
+        "gloss_ru": "gati (√gam + -ti) — НАСТОЯЩИЙ первичный kṛt: отглагольное имя действия «ход, путь». Чистый случай (2608 вхождений); поверхностный отбор здесь верен.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:krt-suffixes:2",
+        "layer": "scientific",
+        "text_slp1": "DUmAvalokanAc CIrzapIqA saMjAyate jvaraH",
+        "segmentation_slp1": "DUma avalokanAt CIrza pIqA saMjAyate jvaraH",
+        "locus": { "corpus": "dcs", "work": "Ānandakanda", "ref": "ĀK 2,1" },
+        "translations": {
+          "ru": "…от разглядывания дыма возникает головная боль [и] жар."
+        },
+        "gloss_ru": "dhūmāvalokana — ЛОЖНОЕ срабатывание: исход -ana налицо, но лемма — КОМПОЗИТ (dhūma + avalokana). Первичный kṛt (ava-lok + ana) здесь только у последнего члена; поверхностный отбор поймал композит, а не простое производное. Композиты — главный источник шума (31 из 48 ложных в выборке).",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:krt-suffixes:3",
+        "layer": "scientific",
+        "text_slp1": "UruH puruH Satadyumnas tapasvI satyavAk kaviH",
+        "segmentation_slp1": "UruH puruH Satadyumnas tapasvI satyavAk kaviH",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 18" },
+        "translations": {
+          "ru": "…Уру, Пуру, Шатадьюмна, подвижник (tapasvin), правдоречивый мудрец."
+        },
+        "gloss_ru": "tapasvin — ЛОЖНОЕ срабатывание другого рода: исход -in налицо, но это ПОСЕССИВНАЯ таддхита (tapas + -vin «обладающий подвижничеством»), деноминальная от имени, а не первичный kṛt-агентив от корня. Поверхностный -in$ смешивает kṛt-агентив (kārin) с посессивным -in/-vin.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}
