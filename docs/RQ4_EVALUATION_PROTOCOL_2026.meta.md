@@ -15,9 +15,9 @@ Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-
 - **Grounding:** the existing on-ramp testbed (`TolchelnikovTalmud_2026/onramp/`, H915), the full 745-root Приложение 1 catalogue (item-bank source, restricted to the on-ramp's 4 taught rows), a direct check of `docusaurus.config.mjs` confirming the site has zero analytics/instrumentation today.
 
 ## Ranked backlog
-1. ~~Resolve the 4 `@DECIDE` items in §6~~ — §6.1–6.3 ruled 15-07-2026; §6.4 (consent wording) still open, drafted pending MG review (H988 harness handoff).
+1. ~~Resolve the 4 `@DECIDE` items in §6~~ — §6.1–6.3 ruled 15-07-2026; §6.4 (consent wording) still open, drafted pending MG review (H987 harness handoff).
 2. ~~Build the item bank~~ — **DONE** (H984): [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json), 24 items, 0 shortfall.
-3. **Build the Systema-hosted harness** (H988) — consent/intake, arm assignment, diagnostic flow, +4-week retention reminder.
+3. **Build the Systema-hosted harness** (H987) — consent/intake, arm assignment, diagnostic flow, +4-week retention reminder.
 4. **Run the pilot** (§7) before any confirmatory-sized run.
 5. **Write A32** once pilot data exists.
 

@@ -19,27 +19,80 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **P4 (SG-WF-008 tatpuruṣa) — H989 замещает H990 как каноническую статью и ОПУБЛИКОВАНА (виза MG).**
+  Две сессии независимо реализовали P4 (H989 и H990); по итогам слепого сравнения по существу
+  канонической выбрана **H989** — доверительные интервалы на κ, двухуровневая декомпозиция
+  coarse/fine, детальный панинийский кодбук Лейтана. [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha):
+  высший класс κ = **0,93** [0,84–1,0] (117/120), падежный подтип κ = **0,72** [0,60–0,82] (73/93) —
+  оба ≥ 0,7, kill-gate C5 § 7 P4 **НЕ сработал**. Обе разметки — Pass A Opus 4.8 (`claude-opus-4-8[1m]`)
+  + Pass B Sonnet 5 (`claude-sonnet-5`), одна модельная семья → κ есть **верхняя** граница, помечены
+  предварительными. Ревизия `published` в манифесте, плашка кандидата снята. Правки при замещении:
+  исправлена воспроизводимость (фильтр метки `tatpurusa` vs слаг `tatpurusha`), добавлен полный аудит-след
+  [`annotations_full.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/data/annotations_full.tsv)
+  (240 разборов vigraha + обоснование), перенесена оговорка H990 об артефакте рамки выборки (§ 6.7).
+  Предыдущая реализация ([0.22.0], H990) помечена superseded. (Opus 4.8 `claude-opus-4-8[1m]`, [H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md))
+
+## [0.24.0] - 2026-07-15
+
+### Added
+- **H996 — Sangram Phase 1 pilot P5 (SG-WF-003, primary kṛt suffixes -ana/-ti/-in) —
+  статья-кандидат (Opus 4.8 `claude-opus-4-8[1m]`)**: [`sangram/articles/krt-suffixes/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-suffixes)
+  — пятый пилот программы C5, тест предела **EM5** (нет деривационной разметки; сандхи
+  стирает границы морфем). Отбор kṛt-производных идёт по поверхностному исходу леммы
+  `dcs:lemma /(ana|ti|tf|in)$/`; пилот меряет надёжность. **Отрицательный результат:**
+  суффикс **-tṛ (`tf`) вообще не отбираем** — 0 лемм NOUN/ADJ на `tf`. По
+  -ana (3438 лемм) / -ti (1886) / -in (2926) ручная адъюдикация 81-лемменной выборки
+  даёт **долю ложных срабатываний ≈ 59 % ≫ 20 % → kill-gate C5 § 7 P5 СРАБОТАЛ**.
+  Главный шум — **композиты** (31 из 48 ложных: лемма-композит с kṛt-финалью), затем
+  имена собственные (6) и посессивная таддхита -in/-vin (6, tapasvin). Словарная
+  проверка по MW-этимологии тоже не спасает: точность 0,75, но **полнота лишь 0,09**
+  (отбрасывает 96 %, теряя 30 из 33 настоящих производных) — «поверхностный отбор +
+  MW-фильтр» плох в обе стороны. Запрос требует переработки (исключить композиты/имена,
+  отделить посессив, заменить редкую MW-этимологию морфоанализатором). Скрипты
+  [`sg_wf_003_krt_validation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_krt_validation.py)
+  + [`sg_wf_003_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_adjudicate_sample.py);
+  3 валидатора green, статья собирается (не участвует в сборочной ошибке; текущий сбой
+  сборки — только предсуществующая страница GasunsDhatu на origin/main, не связана).
+  Публикация гейтится авторской визой. **Волна W2 пилотов (P1–P5) завершена.**
+
+## [0.23.0] - 2026-07-15
+### Added
+- **Print-ready errata sheets — «Замеченные опечатки» из errata.yml (H993)** — new generator [`scripts/build_errata_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata_print_sheet.py) (`npm run errata:print`) renders each populated `<Book>/errata.yml` as a self-contained, A4-print-styled `<Book>/ERRATA_PRINT_SHEET.html` in the classic publisher's layout (№ · Место · Напечатано · Следует читать; sources + generation date in small print) — printable from any browser as a physical-book insert or a reprint-editor hand-off. Parsing/dedup/ordering imported from `build_errata.py` (one canonical errata.yml reader); empty registers get no sheet, stale sheets are removed on regen. First sheets: Bühler (8 позиций), GasunsDhatu (77), Knauer (25 after dedup), Ocherk (2). (Fable 5 `claude-fable-5`, [H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md))
+
+## [0.22.0] - 2026-07-15
+
+### Added
+- **⚠️ SUPERSEDED by H989 ([Unreleased]).** Эта реализация P4 заменена канонической H989 по итогам
+  слепого сравнения по существу; запись сохранена как история выпуска. Далее — как было отгружено:
+- **H990 — Sangram Phase 1 pilot P4 (SG-WF-008, determinative compounds / tatpuruṣa) —
+  статья-кандидат (Opus 4.8 `claude-opus-4-8[1m]` + Sonnet 4.6 `claude-sonnet-4-6`)**:
+  [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha)
+  — четвёртый пилот программы C5, тест предела **EM4**: DCS даёт членение композита
+  (нечленные члены `feat_case=Cpd`, **841 052** токена), но НЕ тип — у **98,56 %**
+  членов пусто даже UD-отношение (`deprel=NULL`). Тип классифицирован вручную двумя
+  **независимыми** проходами (Opus + Sonnet, разные модели — против инфляции согласия)
+  по кодбуку **Э. Лейтана** (пани́ниевская иерархия `dvigu ⊂ karmadhāraya ⊂ tatpuruṣa`).
+  **Первый ПОЛОЖИТЕЛЬНЫЙ kill-gate серии** (после сработавших P2/P3): межразметочное
+  согласие на 5 классах Лейтана **κ=0,818** (почти идеально), бинарно «татпуруша или
+  нет» **κ=0,887**, полное 7-классное κ=0,710 → **kill-gate C5 § 7 P4 (κ<0,7) НЕ
+  сработал**, частоты типов публикуемы. Из 18 расхождений 7-классного разбора 11 —
+  подграница `tatpuruṣa↔karmadhāraya` (внутри одного класса Лейтана, исчезает на
+  кодбучном уровне); остаются 7 межклассовых (4 `bahuvrīhi↔tatpuruṣa` — эндо/экзо, это
+  C6). Татпуруша — доминирующий тип (~56 %; с подтипами ~76 %). Surface-побочно:
+  расхождение с реестром C2 (SG-WF-010 паркует dvigu с avyayībhāva; Лейтан — под
+  tatpuruṣa) зафиксировано. Скрипты
+  [`sg_wf_008_compound_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_compound_sample.py)
+  + [`sg_wf_008_kappa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_kappa.py);
+  3 валидатора + docusaurus build green. Публикация гейтится авторской визой.
+
+## [0.21.0] - 2026-07-15
+
+### Changed
+- **SG-MO-002 «Основы на -a» ОПУБЛИКОВАНА — авторская виза применена (пилот P1, H953)** — MG voted the 7-card review-sheet 7/7 approve; the `published` revision entered [`article.manifest.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/a-stems/article.manifest.json), the candidate banner left the [MDX](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/a-stems/index.mdx). Visa edits applied: (A2) terminology — the vocative is a **падежная форма**, not a падеж (matrix now reads «8 падежных форм × 3 числа»); (A2) the universe boundaries got their rationale + consequences spelled out in § 6 п. 1/3 (why `upos=NOUN` only, why suffix-lemma *tva* is in, what each choice does to the numbers); (A5) Vedic stratification recorded as feasible (270-text composition + `m_ismantra` 120,707 tokens + surface-recognizable variant endings) and queued as the article's next revision; (A6) **the orphaned C3 pin is restored**: GitHub had GC'd commit `04e0778` entirely (422 on the API), so the live mirror commit was verified count-identical to the ingest on all three dimensions (270 texts · 5,688,416 tokens · 754,726 sentences) and tagged [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content); [C3 § 2.1](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx) amended with the restoration + the "pin by tag, never by bare hash" rule (revision row added). ([H953](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H953-Fable_SanskritGrammar_sangram-w2-pilot-p1-a-stems_14.07.26.md)) (Fable 5 `claude-fable-5`)
+
 ### Added
 - **H984: RQ4 diagnostic item bank + protocol decisions ruled.** [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py) emits [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json): 24 items (8 per pre/post/retention phase, 2 per row) drawn from the 745-root Приложение 1 catalogue, restricted to the on-ramp's 4 taught rows (A₁/I₁/U₁/R₁), excluding every root already used in the on-ramp's/talmud-02's worked material, frequency-sorted via kosha's `lemma_frequency.tsv`. 307 eligible candidates, 0 shortfall on any row. [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) updated: MG ruled §6.1–6.3 (Systema-hosted harness, Systema's own Kochergina-stage students, 4-week retention window); §6.4 (consent wording) still open. Harness build follows (H988).
-- **H989 — Sangram Phase 1 pilot P4 (SG-WF-008, tatpuruṣa) — статья-кандидат
-  (Pass A Opus 4.8 `claude-opus-4-8[1m]` · Pass B Sonnet 5 `claude-sonnet-5`; оркестровка Opus 4.8)**:
-  [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha)
-  — четвёртый пилот программы морфологии C5, тест предела **EM4** (тип композита не
-  размечен в DCS: есть членение `Case=Cpd`, нет типа). Метод — **две независимые разметки
-  разными моделями** по кодовой книге [Э. З. Лейтана](https://docs.google.com/document/d/1-jrfXUzgusB9lrST87uG6IJVxbBr78bR/edit)
-  (панинийская схема, dvigu ⊂ karmadhāraya ⊂ tatpuruṣa); согласие по Cohen κ — kill-gate. Универсум —
-  **442 649** двучленных композитов (из 595 021), выборка 120 (зерно `20260715`).
-  **Kill-gate (C5 § 7 P4) НЕ сработал:** высший класс κ = **0,93** [0,84–1,0] (117/120),
-  падежный подтип tatpuruṣa κ = **0,72** [0,60–0,82] (73/93) — оба ≥ 0,7; таксономия не
-  пересматривается, распределение публикуется как кандидат. Обе разметки машинные, помечены
-  предварительными (научная сверка — за автором); тонкий κ проходит погранично (нижняя граница
-  ДИ 0,60). Скрипты [`sg_wf_008_compound_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_compound_sample.py),
-  [`sg_wf_008_kappa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_kappa.py);
-  данные — [`data/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha/data).
-  Три валидатора + docusaurus build green. Черновик прошёл adversarial-verify (2 линзы,
-  7 правок применено). **Виза MG получена 15-07-2026 → опубликовано** (ревизия `published`
-  в манифесте, плашка кандидата снята — вторая опубликованная статья серии Sangram после P2).
-
 ## [0.20.0] - 2026-07-15
 
 ### Added

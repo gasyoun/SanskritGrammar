@@ -34,6 +34,8 @@ GasunsDhatu_2014/*
 # H246 print-prep: errata pair + working notes for the 2026 edition (.md — not published by the site)
 !GasunsDhatu_2014/errata.yml
 !GasunsDhatu_2014/ERRATA.md
+# H993: generated print-ready лист опечаток (build_errata_print_sheet.py)
+!GasunsDhatu_2014/ERRATA_PRINT_SHEET.html
 !GasunsDhatu_2014/revision-2026/
 !GasunsDhatu_2014/CHANGELOG.md
 TolchelnikovTalmud_2026/*
