@@ -22,6 +22,32 @@ changelog tags as `vX.Y.Z`.
 ### Added
 - **H984: RQ4 diagnostic item bank + protocol decisions ruled.** [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py) emits [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json): 24 items (8 per pre/post/retention phase, 2 per row) drawn from the 745-root Приложение 1 catalogue, restricted to the on-ramp's 4 taught rows (A₁/I₁/U₁/R₁), excluding every root already used in the on-ramp's/talmud-02's worked material, frequency-sorted via kosha's `lemma_frequency.tsv`. 307 eligible candidates, 0 shortfall on any row. [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) updated: MG ruled §6.1–6.3 (Systema-hosted harness, Systema's own Kochergina-stage students, 4-week retention window); §6.4 (consent wording) still open. Harness build follows (H988).
 
+## [0.20.0] - 2026-07-15
+
+### Added
+- **H983 — Sangram Phase 1 pilot P3 (SG-MO-017, the perfect) — статья-кандидат
+  (Opus 4.8 `claude-opus-4-8[1m]`)**: [`sangram/articles/perfect/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/perfect)
+  — третий пилот программы морфологии C5, прямой тест предела **EM2** (дефект C3 Д1):
+  UD-разметка DCS склеивает все претериты под `Tense=Past` (**102 055** финитных
+  токенов), поэтому слот предписывает отбор по **форма-классу**, не по времени. Итог —
+  **честный отрицательный результат**: собственный форма-класс DCS (`feat_formation`)
+  **не содержит значения «перфект»**. Единственный форма-эвидентный перфект —
+  перифрастический (`peri`, **4 046 = 3,96 %** бакета; вспомогательный `as` 91,4 % /
+  `kṛ` 7,4 % / `bhū` 0,8 %; 86,6 % — 3 sg). Главная, редуплицированная формация
+  перфекта (`uvāca`, `cakāra`, `jaghnuḥ`) **не тегируется вовсе** — лежит в NULL-бакете
+  (84,22 %), неотличимая от аориста. Тег `red` под `Past` — это редуплицированный
+  **АОРИСТ** (`ajījanat`, аугмент + редупликация), ложный друг для наивного правила
+  «редупликация = перфект». **Kill-gate (C5 § 7 P3, <95 %) сработал:** в выборке 80
+  токенов 61 (76 %) — перфекты, но форма-класс опознаёт лишь 2 (**recall 3,3 %**);
+  количественная часть снимается. Любопытство: редчайший плюсквамперфект (`Plp`/`Pqp`,
+  200) тегирован отдельным временем, а частотный перфект — нет.
+- Скрипты: [`scripts/sg_mo_017_perfect_coverage.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_017_perfect_coverage.py)
+  + [`scripts/sg_mo_017_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_017_adjudicate_sample.py);
+  данные — [`sangram/articles/perfect/data/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/perfect/data)
+  (`coverage_summary.json`, `formation_partition.csv`, `periphrastic_perfect.csv`,
+  выборка + вердикты). Три валидатора + docusaurus build green. Публикация гейтится
+  авторской визой.
+
 ## [0.19.0] - 2026-07-15
 
 ### Added
