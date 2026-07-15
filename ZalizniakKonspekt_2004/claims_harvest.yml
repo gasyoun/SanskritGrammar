@@ -1,0 +1,115 @@
+# claims_harvest.yml — bulk harvested falsifiable-assertion BACKLOG for ZalizniakKonspekt_2004
+#
+# Companion to claims.yml (the curated, VERIFIED register). Full-text harvest (H797 Phase 2,
+# 15-07-2026): all 657 lines read directly (small enough not to need parallel forks), yielding
+# 17 falsifiable candidates. 2 were verifiable now (KZ-1, KZ-2); these 15 remain PENDING.
+#
+# FIVE of these (marked below) are Rigveda-specific EXACT FRACTIONS Zaliznyak states directly —
+# unusually precise for this genre, and a genuine infrastructure gap: they need period-isolated
+# (Rigveda-only) corpus counts that this pipeline's DCS ground truth does not currently expose
+# (checked: VisualDCS/non-derived/Rigveda/ holds only prose documents, no token data). These are
+# NOT candidates for a quick future pass — they need someone to build Rigveda-period isolation
+# into the DCS export first.
+#
+# zaliznyak_gives_number: true  = he states a quantity/fraction/count directly (verify it)
+#                         false = he gives only a qualitative hedge
+
+work: "Zaliznyak, Конспект санскритской грамматики (Sanskrit Grammar Synopsis), 2004 — harvest backlog"
+
+candidates:
+
+  - loc: "mdx line 339"
+    claim_ru: "Личные формы индикатива аориста... Основные типы аориста (прочие крайне редки): [types 1-5 listed]"
+    kind: statistic
+    falsifiable_as: "are aorist types beyond the five listed (root, simple thematic, reduplicated, sigmatic without -i-, sigmatic with -i-) genuinely extremely rare in DCS attestation"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 365"
+    claim_ru: "Особо: у большинства корней вида СаС слабая основа перфекта имеет вид СеС (т.е без удвоения, но с заменой а на е), напр. ten- вместо *tatn- от tan 'тянуть'."
+    kind: statistic
+    falsifiable_as: "is the CeC (no-reduplication, a-to-e) weak perfect stem actually the majority pattern among CaC-shaped roots in Whitney's root inventory"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 395"
+    claim_ru: >-
+      Претеритное причастие... но у большинства корней на d (типа aniṭ) и открытых корней ряда
+      R2 (изредка у иных) --- ø-na-.
+    kind: statistic
+    falsifiable_as: "is -na the PPP suffix for the majority of d-final (aniṭ-type) and R2-series open roots specifically — same specific-subclass question already flagged unverified in ZalizniakOcherk_1978 §162 and BuhlerLeitfaden_1923's backlog; the aggregate -ta/-na split (8.0% na) is known, but this subclass claim needs root-filtered data none of the three books' verify scripts currently build"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 456"
+    claim_ru: "Чистые предлоги-послелоги (редкость): SAHA c, вместе с; VINĀ без; UPARI над."
+    kind: statistic
+    falsifiable_as: "are pure adpositions (words functioning ONLY as pre/postpositions, never as adverbs) genuinely rare in Sanskrit — same claim as ZalizniakOcherk_1978 §212, also unverified there"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 489"
+    claim_ru: "Мало сложных слов (и почти нет трехчастных или более), т.е. язык образцового флективного типа."
+    kind: statistic
+    falsifiable_as: "does Vedic Sanskrit show markedly fewer compounds than Classical, and are 3+-member compounds almost absent, per period-differentiated corpus data"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 495"
+    claim_ru: >-
+      Поэтому в стихе необходимо восстанавливать а из-под аваграхи (почти всегда) и читать v и
+      y перед гласной как u (ū) и i (ī) там, где этого требует размер.
+    kind: statistic
+    falsifiable_as: "is avagraha-restoration in Vedic verse recitation almost always required by the meter — a philological/editorial claim about how printed texts are read, not directly a DCS-token-frequency question"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 501"
+    claim_ru: >-
+      В ведах внешнее сандхи n + t(h) → ṁst(h) [или st(h)], n + c(h) → ṁçc(h) [или çc(h)]
+      обычно реализуется лишь там, где s этимологическое; в прочих случаях просто nt(h), ñc(h).
+    kind: rule
+    falsifiable_as: "does the ṁst(h)/ṁçc(h) sandhi outcome correlate with etymological s as the usual (majority) pattern in Vedic texts specifically"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 507"
+    claim_ru: "NVocpl m а-склонения -āsas вместо -ās (в 1/3 случаев)."
+    kind: statistic
+    falsifiable_as: "RIGVEDA-SPECIFIC EXACT FRACTION — does -āsas replace -ās in exactly 1/3 of NVoc.pl masc. a-stem occurrences in the Rigveda specifically — BLOCKED: needs period-isolated (RV-only) corpus counts not currently available in this pipeline's DCS ground truth (checked: VisualDCS/non-derived/Rigveda/ holds only prose documents, no token data)"
+    zaliznyak_gives_number: true
+
+  - loc: "mdx line 509"
+    claim_ru: "NVocAdu m а-склонения -ā вместо -au (в 7/8 случаев)."
+    kind: statistic
+    falsifiable_as: "RIGVEDA-SPECIFIC EXACT FRACTION — 7/8 ratio, same infrastructure blocker as the line-507 entry"
+    zaliznyak_gives_number: true
+
+  - loc: "mdx line 511"
+    claim_ru: "NVocApl n а-склонения -ā вместо -āni (в 3/5 случаев)."
+    kind: statistic
+    falsifiable_as: "RIGVEDA-SPECIFIC EXACT FRACTION — 3/5 ratio, same infrastructure blocker"
+    zaliznyak_gives_number: true
+
+  - loc: "mdx line 513"
+    claim_ru: "Ipl m-n а-склонения -ebhis вместо -ais (в 1/2 случаев)."
+    kind: statistic
+    falsifiable_as: "RIGVEDA-SPECIFIC EXACT FRACTION — 1/2 ratio, same infrastructure blocker"
+    zaliznyak_gives_number: true
+
+  - loc: "mdx line 519"
+    claim_ru: "В 1 pl презенса вместо -mas обычно выступает -masi (в Ригведе в 5/6 случаев)."
+    kind: statistic
+    falsifiable_as: "RIGVEDA-SPECIFIC EXACT FRACTION — 5/6 ratio for -masi vs -mas in the Rigveda specifically, same infrastructure blocker"
+    zaliznyak_gives_number: true
+
+  - loc: "mdx line 521"
+    claim_ru: "Во 2 pl атематических форм вместо -tha и -ta нередко бывает -thana и -tana."
+    kind: statistic
+    falsifiable_as: "is the -thana/-tana variant genuinely frequent (нередко) rather than marginal among athematic 2pl forms in Vedic texts"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 545"
+    claim_ru: "Инъюнктив употребляется много чаще, чем в эпосе. Оптатив, напротив, реже."
+    kind: statistic
+    falsifiable_as: "is the injunctive markedly more frequent in Vedic than Epic Sanskrit, and the optative correspondingly rarer — a diachronic claim needing period-differentiated corpus data, same class of blocker as ZalizniakOcherk_1978's flagship §207 claim"
+    zaliznyak_gives_number: false
+
+  - loc: "mdx line 549"
+    claim_ru: "В отличие от эпоса, конструкция с пассивным причастием используется сравнительно редко. Сказуемое чаще всего выражено личной формой глагола."
+    kind: statistic
+    falsifiable_as: "is the passive-participle predicate construction genuinely rarer in Vedic than Epic Sanskrit, with finite-verb predicates dominant instead — same diachronic-data blocker as the line-545 entry and Ocherk §207"
+    zaliznyak_gives_number: false
