@@ -1,0 +1,476 @@
+# claims_harvest.yml — bulk harvested falsifiable-assertion BACKLOG for ZalizniakOcherk_1978
+#
+# Companion to claims.yml (the curated, VERIFIED register). Full-text harvest (H797 Phase 2,
+# 15-07-2026): 74 falsifiable grammatical assertions swept from the 3128-line "Очерк грамматики
+# санскрита" (1978) by 4 parallel readers (§§1-230+, phonology through syntax/Vedic accent). 6
+# were verifiable now against ground truth already in hand (mostly REUSED from Kochergina/
+# Bühler/Knauer's existing corpus work rather than freshly computed) and promoted to claims.yml
+# as OCH-1..OCH-6; these 68 remain PENDING.
+#
+# Yield note: this text is markedly denser in falsifiable claims than Bühler's per line (74
+# candidates over ~3128 lines here vs. 45 over ~11,913 lines there — roughly 4x the density),
+# consistent with "Очерк" (essay/outline) being a compressed, technical register rather than a
+# narrative textbook with worked exercises. Density is uneven: phonology/root-structure sections
+# (§§1-80) and the word-formation/syntax/accent sections (§§157-230) are richer than the pronoun/
+# numeral declension stretch.
+#
+# zaliznyak_gives_number: true  = he states a quantity/count directly (verify it)
+#                         false = he gives only a qualitative hedge (verify via ranking/share,
+#                                 or add an M.G. footnote where computable)
+#
+# Several entries here are UNUSUALLY HIGH-VALUE targets for the next pass:
+# - §68 (aniṭ/seṭ correlating with alternation-series membership) would generalise the
+#   already-confirmed seṭ/aniṭ future-stem finding (Kochergina HK-4, Bühler HB-59) into a
+#   structural prediction rather than a raw frequency count — needs per-root alternation-series
+#   tagging, not yet built.
+# - §207 (a flagship Vedic→Classical diachronic syntactic-style shift: word-combination/finite-
+#   verb/active giving way to compound/nominal/passive) would need DCS period-tagged data:
+#   check whether VisualDCS's underlying export carries a Vedic/Epic/Classical period field
+#   before assuming this is untestable.
+# - §185 (comparative -īyaṁs-/-iṣṭha- as the minority allomorph) is the SAME claim already
+#   sitting unverified in BuhlerLeitfaden_1923/claims_harvest.yml (mdx line 4585) — two
+#   independent grammars making an identical, still-unverified claim. Worth verifying once,
+#   promoting to BOTH books' registers.
+
+work: "Zaliznyak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978 — harvest backlog"
+
+candidates:
+
+  - loc: "§6 / mdx line 118"
+    claim_ru: "Анунасика встречается почти исключительно в случаях, указанных в § 43, п. 2."
+    kind: statistic
+    falsifiable_as: "is anunāsika attested almost exclusively in the specific sandhi environment named in §43.2"
+    zaliznyak_gives_number: false
+
+  - loc: "§7 / mdx line 130"
+    claim_ru: "В большинстве индийских школ санскрита ṛ, ṝ, ḷ принято читать соответственно как ri, rī, li (или lri); распространено также чтение ç как ṣ."
+    kind: statistic
+    falsifiable_as: "is the ri/rī/li pronunciation convention actually the majority practice across Indian schools of Sanskrit recitation"
+    zaliznyak_gives_number: false
+
+  - loc: "§18 footnote 2 / mdx line 312"
+    claim_ru: "l в конце слова и фразы теоретически возможно, но практически почти не встречается."
+    kind: statistic
+    falsifiable_as: "is word/phrase-final l vanishingly rare in the DCS corpus"
+    zaliznyak_gives_number: false
+
+  - loc: "§19 footnote 3 / mdx line 329-334"
+    claim_ru: >-
+      Носовая ṇ перед паузой или гласной, начинающей следующее слово, встречается 'крайне
+      редко'; носовые n̄, ñ перед согласной, начинающей следующее слово, встречаются 'редко'.
+    kind: statistic
+    falsifiable_as: "are word-final ṇ (before pause/vowel) and word-final n̄/ñ (before consonant) genuinely rare junction types in DCS relative to m/n/ṁ"
+    zaliznyak_gives_number: false
+
+  - loc: "§43 п.1 / mdx line 612"
+    claim_ru: >-
+      Факультативный переход k, ṭ, t, p перед носовой в носовую соответствующего ряда: 'наиболее
+      обычен такой переход для t', например tat nāma → tan nāma (реже tad nāma).
+    kind: statistic
+    falsifiable_as: "is t's nasalized pre-nasal variant the most common outcome among k/ṭ/t/p, more so than for the other three"
+    zaliznyak_gives_number: false
+
+  - loc: "§43 п.1 / mdx line 614"
+    claim_ru: "h после k, ṭ, t, p может переходить (и обычно переходит) соответственно в gh, ḍh, dh, bh, например tat hi → tad dhi (реже tad hi)."
+    kind: statistic
+    falsifiable_as: "is the aspirated outcome (gh/ḍh/dh/bh) the majority variant over unaspirated retained-h"
+    zaliznyak_gives_number: false
+
+  - loc: "§44 п.2 (отклонения) / mdx line 632"
+    claim_ru: >-
+      На стыке основ сложного слова переход в ḥ вместо ожидаемого s/r/ṣ происходит перед k, kh,
+      p, ph 'часто, но не всегда'; на конце элементов nis, dus этот переход происходит 'почти
+      всегда'.
+    kind: statistic
+    falsifiable_as: "is retained-sibilant frequent-not-universal at general compound boundaries, but almost-always after nis/dus specifically"
+    zaliznyak_gives_number: false
+
+  - loc: "§50 footnote 3 / mdx line 734"
+    claim_ru: "В ряду R2 (слабая ступень īr, ūr): 'Обычно ūr после губных согласных, īr --- в прочих случаях.'"
+    kind: allomorphy
+    falsifiable_as: "is the R2 weak-grade allomorph ūr conditioned by a preceding labial consonant (vs īr elsewhere) as the majority pattern"
+    zaliznyak_gives_number: false
+
+  - loc: "§58 / mdx line 810"
+    claim_ru: >-
+      Норму для санскрита составляют односложные (в ступени guṇa перед согласной) корни.
+      Неодносложные корни встречаются редко, в основном в заимствованных словах; среди
+      собственно глагольных корней неодносложных почти нет.
+    kind: statistic
+    falsifiable_as: "what share of DCS-attested verbal roots are non-monosyllabic, and are they concentrated in loanwords"
+    zaliznyak_gives_number: false
+
+  - loc: "§59 / mdx line 812"
+    claim_ru: >-
+      Структура подавляющего большинства санскритских корней укладывается в следующую схему:
+      (шумная согласная)-(сонант)-чередующийся элемент-(сонант)-(шумная согласная).
+    kind: statistic
+    falsifiable_as: "what share of the Whitney/DCS root inventory fits this six-slot template"
+    zaliznyak_gives_number: false
+
+  - loc: "§61 / mdx line 836"
+    claim_ru: "Важная особенность: в санскрите нет открытых корней ряда A1."
+    kind: universality
+    falsifiable_as: "are there truly zero attested A1-series open roots in the Whitney root inventory"
+    zaliznyak_gives_number: false
+
+  - loc: "§62 / mdx line 850"
+    claim_ru: "Подтип-3 (неполноизменяемые корни со ступенью vṛddhi) очень малочислен."
+    kind: statistic
+    falsifiable_as: "how many roots actually belong to this vṛddhi-grade defective subtype"
+    zaliznyak_gives_number: false
+
+  - loc: "§63 / mdx line 864"
+    claim_ru: >-
+      Смешанный тип (veṭ) --- продукт многочисленных колебаний в употреблении соединительного i,
+      характерных для классического санскрита. При таких колебаниях i чаще всего появляется
+      перед -sya- и -tar-, реже всего --- перед -ta- и -tvā-.
+    kind: statistic
+    falsifiable_as: "among DCS-attested veṭ-type roots, is the connective -i- most frequent before -sya-/-tar- and least frequent before -ta-/-tvā- — directly parallel to the already-tested -iṣya/-sya future-stem ratio"
+    zaliznyak_gives_number: false
+
+  - loc: "§67 / mdx line 896"
+    claim_ru: "Корни ряда A1 обычно неполноизменяемы, например: √tap, √tyaj. Полноизменяемы здесь только √as быть и группа корней с чередованиями samprasāraṇa, и несколько других."
+    kind: universality
+    falsifiable_as: "among DCS-attested A1-series roots, is the fully-changing subset really limited to as + samprasāraṇa group + a few named others"
+    zaliznyak_gives_number: false
+
+  - loc: "§67 / mdx line 898"
+    claim_ru: "Среди открытых корней ряда A2 оба типа [полноизменяемые/неполноизменяемые] представлены примерно поровну."
+    kind: statistic
+    falsifiable_as: "is the actual split between fully-changing and defective A2-series open roots close to 50/50"
+    zaliznyak_gives_number: false
+
+  - loc: "§67 / mdx line 900"
+    claim_ru: "Корни рядов R, M, N могут быть обоих типов, но большинство употребительных корней --- полноизменяемые, например: √darç, √gam, √bandh."
+    kind: statistic
+    falsifiable_as: "among DCS-attested (frequently-used) R/M/N-series roots by token count, are the fully-changing ones the majority versus the named defective roots"
+    zaliznyak_gives_number: false
+
+  - loc: "§67 / mdx line 902"
+    claim_ru: "Корень √marj вытирать, чистить отличается от обычных полноизменяемых тем, что вместо ступени guṇa у него, как правило, выступает vṛddhi."
+    kind: rule
+    falsifiable_as: "do DCS-attested marj forms (marṣṭi, mamārja, mārkṣyate) show vṛddhi where guṇa would be expected"
+    zaliznyak_gives_number: false
+
+  - loc: "§68 / mdx line 904"
+    claim_ru: >-
+      Из открытых корней полноизменяемые рядов I1, U1, R1, M1, N1, а также I2 обычно относятся
+      (или по крайней мере близки) к типу aniṭ... Прочие открытые корни... обычно относятся к
+      типу seṭ.
+    kind: universality
+    falsifiable_as: "does the aniṭ/seṭ split correlate with alternation-series membership as claimed — high-value target, generalises the already-confirmed seṭ/aniṭ future-stem finding (Kochergina HK-4, Bühler HB-59) into a structural prediction"
+    zaliznyak_gives_number: false
+
+  - loc: "§70 / mdx line 970"
+    claim_ru: "Числительные (количественные) изменяются в большинстве случаев только по падежам, некоторые --- по падежам и родам."
+    kind: statistic
+    falsifiable_as: "what share of Sanskrit cardinal numerals decline by case only vs case+gender"
+    zaliznyak_gives_number: false
+
+  - loc: "§74 / mdx line 978"
+    claim_ru: "Лишь в редчайших случаях корневое имя склоняется по склонению обычных имен (nar- § 87, han- § 89) или наоборот (strī- § 98)."
+    kind: statistic
+    falsifiable_as: "are nar-/han-/strī- genuinely the only cross-declension exceptions among root nouns"
+    zaliznyak_gives_number: false
+
+  - loc: "§74 / mdx line 984"
+    claim_ru: "Очень небольшое число существительных в классическом санскрите несклоняемо; например, svar небо."
+    kind: statistic
+    falsifiable_as: "how many genuinely indeclinable nouns exist in Classical Sanskrit beyond svar"
+    zaliznyak_gives_number: false
+
+  - loc: "§80 / mdx line 1068"
+    claim_ru: "Чередование ступеней... характерно для несреднего рода; в среднем роде оно представлено лишь в очень незначительной степени."
+    kind: statistic
+    falsifiable_as: "is grade-alternation in declension genuinely far less common in neuter paradigms than non-neuter"
+    zaliznyak_gives_number: false
+
+  - loc: "§105 note / mdx line 1730"
+    claim_ru: "В силу сандхи это saḥ реально предстает чаще всего в виде so или sa (например, so 'bravīt, sa uvāca)."
+    kind: statistic
+    falsifiable_as: "do sandhi-conditioned surface variants so/sa outnumber bare saḥ among attested occurrences"
+    zaliznyak_gives_number: false
+
+  - loc: "§109 / mdx line 1800"
+    claim_ru: "Наклонения: изъявительное, повелительное, желательное, а также сравнительно редко употребляемые прекатив, инъюнктив и кондиционалис."
+    kind: statistic
+    falsifiable_as: "are precative, injunctive, and conditional rare relative to indicative/imperative/optative in DCS token counts"
+    zaliznyak_gives_number: false
+
+  - loc: "§109 / mdx line 1808"
+    claim_ru: "Смысловые различия между имперфектом, аористом и перфектом видны главным образом в ведах... В более поздний период все три формы становятся практически равнозначными."
+    kind: statistic
+    falsifiable_as: "do imperfect/aorist/perfect become 'practically equivalent' in classical-period frequency, per DCS — directly comparable to Bühler's already-tested (and FAILED) equivalent claim about aorist/perfect/imperfect parity"
+    zaliznyak_gives_number: false
+
+  - loc: "§109 / mdx line 1814"
+    claim_ru: "Очень многие глаголы имеют только активные формы, значительное число --- только медиальные."
+    kind: statistic
+    falsifiable_as: "what share of DCS-attested roots are active-only vs middle-only — does active-only outnumber middle-only as implied"
+    zaliznyak_gives_number: false
+
+  - loc: "§118 / mdx line 1976"
+    claim_ru: "Большинство глаголов с презенсом на ya непереходны и обозначают состояние."
+    kind: statistic
+    falsifiable_as: "are class-IV (-ya-present) verbs predominantly intransitive/stative"
+    zaliznyak_gives_number: false
+
+  - loc: "§127 / mdx line 2112"
+    claim_ru: "За пределами рядов I, U, R сильная и слабая основы презенса II в послеведийский период фактически различны только у √as, √vaç, √han, √çās."
+    kind: universality
+    falsifiable_as: "is this closed list of 4 roots exhaustive for post-Vedic present-II strong/weak stem distinction"
+    zaliznyak_gives_number: false
+
+  - loc: "§130 / mdx line 2148"
+    claim_ru: "Все корни, от которых в послеведийский период употребителен презенс III (их немногим более десятка), --- полноизменяемые."
+    kind: universality
+    falsifiable_as: "how many roots have a living post-Vedic class-III present (confirm 'a bit more than a dozen'), and are they all fully-ablauting"
+    zaliznyak_gives_number: true
+
+  - loc: "§134 / mdx line 2176"
+    claim_ru: "Основы этого класса [VII] образуются только от полноизменяемых корней рядов I1, U1, R1, N1, оканчивающихся на шумную согласную."
+    kind: universality
+    falsifiable_as: "is class VII truly restricted to fully-ablauting obstruent-final roots of exactly these four alternation series"
+    zaliznyak_gives_number: false
+
+  - loc: "§139 / mdx line 2228"
+    claim_ru: "Из производных глаголов каузативы образуют аорист типа 3, прочие (очень редко) --- типа 5."
+    kind: statistic
+    falsifiable_as: "do DCS-attested causative aorists systematically show type-3 formation, is type-5 rare among non-causative derived verbs"
+    zaliznyak_gives_number: false
+
+  - loc: "§142 / mdx line 2254"
+    claim_ru: "Аорист 3 обычно выступает как аорист каузатива, хотя и образуется непосредственно от корня."
+    kind: statistic
+    falsifiable_as: "among DCS-attested type-3 aorist tokens, is the causative reading the majority function"
+    zaliznyak_gives_number: false
+
+  - loc: "§144 / mdx line 2260"
+    claim_ru: "В med. (употребляемом довольно редко) [аорист 4] обычно слабая ступень корня."
+    kind: statistic
+    falsifiable_as: "is the middle voice of the s-aorist (type 4) genuinely rare relative to active in DCS"
+    zaliznyak_gives_number: false
+
+  - loc: "§155 / mdx line 2452"
+    claim_ru: "Причастия прошедшего времени (иначе перфектные причастия) в послеведийский период употребляются редко."
+    kind: statistic
+    falsifiable_as: "are perfect participles genuinely rare in post-Vedic DCS attestation relative to other participle types"
+    zaliznyak_gives_number: false
+
+  - loc: "§157 / mdx line 2464"
+    claim_ru: "Особенность: все корни на ar имеют соединительное i (независимо от деления aniṭ/seṭ) в основе простого будущего, например, kariṣya- от √kar."
+    kind: universality
+    falsifiable_as: "do ALL ar-final roots take connecting -i- in the simple future regardless of aniṭ/seṭ classification"
+    zaliznyak_gives_number: false
+
+  - loc: "§159 / mdx line 2488"
+    claim_ru: "Встречается (очень редко) также med. [периферастическое будущее II]... (в 3-м лице форм, отличных от act., нет)."
+    kind: statistic
+    falsifiable_as: "how rare is middle-voice periphrastic future II relative to active, and is 3rd-person middle genuinely unattested"
+    zaliznyak_gives_number: false
+
+  - loc: "§162 / mdx line 2512"
+    claim_ru: "Основным является суффикс -ta-; -na- выступает после большинства корней на ar (ряда R2) и на d, после части корней на ā, ī, ū и некоторых других."
+    kind: statistic
+    falsifiable_as: "is -na the PPP suffix for the majority of ar-final (R2) and d-final roots specifically — the aggregate -ta/-na split (8.0% na) is already known from Kochergina/Bühler, but this claim is about a specific root-class subset, not the aggregate"
+    zaliznyak_gives_number: false
+
+  - loc: "§165 / mdx line 2526"
+    claim_ru: "Деепричастие на -tvā обычно можно получить из причастия на -ta- простой заменой суффикса; однако у производных глаголов ay не усекается."
+    kind: rule
+    falsifiable_as: "does the tvā-absolutive usually mirror the ta-participle's root grade, with derived-verb ay-retention as the exception"
+    zaliznyak_gives_number: false
+
+  - loc: "§165 / mdx line 2530"
+    claim_ru: "Полноизменяемые открытые корни рядов M1, N1 обычно допускают два варианта: -gam-ya и -ga-tya от gam."
+    kind: allomorphy
+    falsifiable_as: "do M1/N1-series open roots regularly show both -ya and -tya absolutive variants, or is one dominant"
+    zaliznyak_gives_number: false
+
+  - loc: "§167 / mdx line 2544"
+    claim_ru: "Каузатив от переходного глагола довольно часто... имеет значение, практически равное значению исходного глагола (ср. kārayati)."
+    kind: statistic
+    falsifiable_as: "how often does a transitive verb's causative collapse semantically to the base verb in DCS usage"
+    zaliznyak_gives_number: false
+
+  - loc: "§167 / mdx line 2546"
+    claim_ru: >-
+      Ряд корней (многие на am, значительная часть корней seṭ на ar, al, an и некоторые другие)
+      вместо ступени vṛddhi или наряду с ней имеют guṇa в каузативе (в раннем языке таких
+      отступлений больше, чем в позднем).
+    kind: statistic
+    falsifiable_as: "is the guṇa-for-vṛddhi causative exception more frequent in earlier than later DCS-period texts"
+    zaliznyak_gives_number: false
+
+  - loc: "§167 / mdx line 2550"
+    claim_ru: "У корней группы √pā/pāy (§ 70, п. 4) каузатив обычно типа pāyayati."
+    kind: allomorphy
+    falsifiable_as: "is pāyayati the dominant DCS-attested causative allomorph for the pā/pāy root group"
+    zaliznyak_gives_number: false
+
+  - loc: "§169 / mdx line 2566"
+    claim_ru: "У корней со срединным i, u, ar [в дезидеративе] слабая ступень перед sa, но обычно guṇa перед iṣa; у прочих корней, как правило, guṇa."
+    kind: rule
+    falsifiable_as: "does desiderative grade-choice split by suffix allomorph and root-medial vowel type as stated"
+    zaliznyak_gives_number: false
+
+  - loc: "§169 / mdx line 2570"
+    claim_ru: "Формы [дезидератива] за пределами презенса (довольно редкие) --- от основы вида jijñās-, didṛkṣ- и т.д."
+    kind: statistic
+    falsifiable_as: "are non-present desiderative forms rare relative to present-system desiderative forms"
+    zaliznyak_gives_number: false
+
+  - loc: "§170 / mdx line 2572"
+    claim_ru: "В классическом языке интенсивы употребляются довольно редко, причем преимущественно в med. и практически только в презенсе."
+    kind: statistic
+    falsifiable_as: "are intensive forms rare in Classical DCS tokens, predominantly middle voice, almost exclusively present-system — the same three-part claim Bühler makes, unverified in that book's backlog too"
+    zaliznyak_gives_number: false
+
+  - loc: "§172 / mdx line 2582"
+    claim_ru: "Вне презенса [у деноминативов] употребительны только неличные формы, причем почти исключительно при основе на aya."
+    kind: statistic
+    falsifiable_as: "are non-finite denominative forms outside the present system almost exclusively built on the -aya stem"
+    zaliznyak_gives_number: false
+
+  - loc: "§174 / mdx line 2598"
+    claim_ru: "[Суффиксы -as-, -man- как имена действия] Имена деятеля редки."
+    kind: statistic
+    falsifiable_as: "are agent-noun readings of -as-/-man- formations rare in DCS attestation"
+    zaliznyak_gives_number: false
+
+  - loc: "§180 / mdx line 2630 (a)"
+    claim_ru: "В целом у прилагательных преобладает -ā- (только -ā- у причастий), у существительных --- -ī-."
+    kind: universality
+    falsifiable_as: "do participles ALWAYS take -ā- (never -ī-) in the feminine, while adjectives/nouns show the stated preferences"
+    zaliznyak_gives_number: false
+
+  - loc: "§180 / mdx line 2630 (b)"
+    claim_ru: "У имен на -aka- женский род обычно на -ikā-: pācaka- --- pācikā-."
+    kind: allomorphy
+    falsifiable_as: "is -ikā the dominant feminine of -aka-stem nouns in DCS attestation"
+    zaliznyak_gives_number: false
+
+  - loc: "§180 / mdx line 2638"
+    claim_ru: "При мужском роде на i, as, а также у корневых имен женский род обычно совпадает с мужским."
+    kind: statistic
+    falsifiable_as: "do i-stem, as-stem, and root nouns usually show identical masc/fem forms"
+    zaliznyak_gives_number: false
+
+  - loc: "§185 / mdx line 2666"
+    claim_ru: "Реже встречаются (обычно в паре друг с другом) суффиксы -īyaṁs- (сравнит.) и -iṣṭha- (превосходн.); их значения практически те же, что у -tara-, -tama-."
+    kind: statistic
+    falsifiable_as: "are -īyaṁs-/-iṣṭha- comparatives/superlatives the minority allomorph relative to -tara-/-tama- — SAME claim sits unverified in BuhlerLeitfaden_1923/claims_harvest.yml (mdx line 4585); verify once, promote to both books"
+    zaliznyak_gives_number: false
+
+  - loc: "§193 / mdx line 2720"
+    claim_ru: "Несколько особый (сравнительно редко) случай karmadhāraya составляют сложные слова с количественным числительным (кроме eka-) в первой части [dvigu]."
+    kind: statistic
+    falsifiable_as: "are numeral-first (dvigu-type) karmadhāraya compounds rarer than other karmadhāraya subtypes"
+    zaliznyak_gives_number: false
+
+  - loc: "§193 / mdx line 2724"
+    claim_ru: "Основы на an, выступая в конце сложного слова, довольно часто заменяются основами на a, например: mahā-rāja- (ср. rājan-)."
+    kind: statistic
+    falsifiable_as: "how often do an-stem compound finals get replaced by a-stem allomorphs in DCS-attested compounds"
+    zaliznyak_gives_number: false
+
+  - loc: "§194 / mdx line 2736"
+    claim_ru: >-
+      Омонимия первичных и вторичных сложных имен... практически встречается реже, чем можно
+      было бы ожидать, поскольку за многими словами закрепляется одна из этих двух функций.
+    kind: statistic
+    falsifiable_as: "is primary/secondary compound homonymy rarer in DCS-attested usage than type-theoretic possibility would predict"
+    zaliznyak_gives_number: false
+
+  - loc: "§196 / mdx line 2740"
+    claim_ru: "Изредка в качестве первого члена [сложного слова] выступает не основа, а словоформа какого-либо падежа, например: dhanaṁ-jaya-."
+    kind: statistic
+    falsifiable_as: "are case-inflected compound first members rare in DCS relative to stem-form first members"
+    zaliznyak_gives_number: false
+
+  - loc: "§206 / mdx line 2812"
+    claim_ru: "Активная конструкция очень часто заменяется пассивной... В прошедшем времени такая замена обычно сопровождается переходом к именному предложению."
+    kind: statistic
+    falsifiable_as: "how frequent is active-to-passive paraphrase in DCS, and does past tense specifically favor the nominal sentence pattern"
+    zaliznyak_gives_number: false
+
+  - loc: "§207 / mdx line 2818"
+    claim_ru: >-
+      В ведах и в раннем послеведийском языке преобладают словосочетания, глагольные
+      предложения, активные конструкции (синтаксический стиль I). В позднем классическом
+      санскрите, напротив, господствуют сложные слова, именные предложения, пассивные
+      конструкции (синтаксический стиль II).
+    kind: typology
+    falsifiable_as: >-
+      does DCS period-tagged data show a measurable diachronic shift from Vedic to Classical
+      syntactic style — FLAGSHIP target, comparable in scale to Kochergina's future-stem or
+      Bühler's perfect/imperfect headline findings, but needs period-tagged corpus data not yet
+      confirmed to exist in this pipeline's ground truth
+    zaliznyak_gives_number: false
+
+  - loc: "§212 / mdx line 2840"
+    claim_ru: "Предлоги развиты в санскрите слабо. Слов, которые выполняли бы только функцию предлогов, практически нет."
+    kind: universality
+    falsifiable_as: "is it true that virtually no Sanskrit word functions exclusively as a preposition"
+    zaliznyak_gives_number: false
+
+  - loc: "§212 / mdx line 2842"
+    claim_ru: "Случаи, где prati и т. п. выступают в бесспорно предложной функции, относительно более редки."
+    kind: statistic
+    falsifiable_as: "is the unambiguously-prepositional use of prati genuinely rarer than its adverbial/quasi-postpositional use"
+    zaliznyak_gives_number: false
+
+  - loc: "§214 / mdx line 2846"
+    claim_ru: "Глагольное сказуемое... тяготеет к последнему месту в предложении, группа подлежащего --- к первому... Определяющее слово обычно предшествует определяемому."
+    kind: typology
+    falsifiable_as: "does DCS prose show the stated SOV-leaning word-order tendencies as a statistical majority"
+    zaliznyak_gives_number: false
+
+  - loc: "§215 / mdx line 2850"
+    claim_ru: "Из сложных предложений в санскрите преобладают сложносочиненные."
+    kind: statistic
+    falsifiable_as: "do coordinate complex sentences outnumber subordinate ones in DCS-attested prose"
+    zaliznyak_gives_number: false
+
+  - loc: "§216 / mdx line 2854"
+    claim_ru: "Существительное, к которому относится пара ya- ... ta- ..., всегда стоит в первом из двух предложений."
+    kind: universality
+    falsifiable_as: "does the head noun of a relative-correlative construction always appear in the first clause, with zero counterexamples"
+    zaliznyak_gives_number: false
+
+  - loc: "§217 / mdx line 2856"
+    claim_ru: "Сложноподчиненные предложения встречаются... в санскрите гораздо реже, чем, например, в русском или в латыни."
+    kind: typology
+    falsifiable_as: "is subordinate-clause density in Sanskrit prose measurably lower than in Russian/Latin"
+    zaliznyak_gives_number: false
+
+  - loc: "§217 / mdx line 2858"
+    claim_ru: "Так, вместо косвенной речи почти всегда применяется прямая речь."
+    kind: universality
+    falsifiable_as: "is direct speech used almost to the exclusion of indirect speech in DCS-attested narrative prose"
+    zaliznyak_gives_number: false
+
+  - loc: "§227 / mdx line 2916"
+    claim_ru: "Небольшая группа словоформ выступает только в качестве энклитик [ca, vā, iva, u, ha, sma, svit; mā, me, tvā, te, naḥ, vaḥ, nau, vām; all forms of ena-]."
+    kind: universality
+    falsifiable_as: "is this closed list of enclitic-only forms genuinely never attested clause-initially or independently stressed"
+    zaliznyak_gives_number: false
+
+  - loc: "§228 / mdx line 2920"
+    claim_ru: "Как правило, безударны две важных категории словоформ: а) все личные формы глагола без преверба... б) все словоформы вокатива."
+    kind: rule
+    falsifiable_as: "does Whitney's Vedic accentual record confirm finite verbs (no preverb) and vocatives are unaccented as a rule, with the stated exceptions"
+    zaliznyak_gives_number: false
+
+  - loc: "§229 / mdx line 2928"
+    claim_ru: "Остальная парадигма в подавляющем большинстве случаев... имеет колонное ударение."
+    kind: statistic
+    falsifiable_as: "is columnar accent the overwhelming majority pattern in Vedic declension per Whitney"
+    zaliznyak_gives_number: false
+
+  - loc: "§230 / mdx line 2934"
+    claim_ru: "Неколонное ударение представлено лишь у меньшинства имен."
+    kind: statistic
+    falsifiable_as: "is non-columnar (mobile) accent genuinely a minority pattern among noun declension classes"
+    zaliznyak_gives_number: false
