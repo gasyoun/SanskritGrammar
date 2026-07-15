@@ -1,0 +1,111 @@
+# Бюлер 1923 — «Руководство к элементарному курсу санскритского языка»: цифровое издание и корпусная проверка утверждений
+
+_Created: 15-07-2026 · Last updated: 15-07-2026_
+
+Папка книги 2 из десяти грамматик репозитория: Г. Бюлер, «Руководство к элементарному
+курсу санскритского языка» (Стокгольм, 1923; русский перевод *Leitfaden für den
+Elementarcursus des Sanskrit*, 1883), электронная версия 2.0 Н. П. Лихушиной (2008),
+48 уроков. Исходники — [Buhler_Unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx)
+(читательская страница сайта) и `.doc`/`.docx`; система опечаток —
+[errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml) →
+[ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.md);
+журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CHANGELOG.md).
+
+## Реестр проверенных утверждений (H797, фаза 2)
+
+Первый кросс-грамматический перенос двухосевого конвейера проверки утверждений,
+отработанного на Кочергиной 1998 (решение D-A от 12-07-2026). Каждое фальсифицируемое
+грамматическое утверждение книги оценивается по **двум осям**:
+
+- **verdict_fact** — истинно ли утверждение относительно корпуса и справочных грамматик,
+  с конкретным числом: `TRUE · OVERSTATED · FALSE · UNTESTABLE`;
+- **verdict_pedagogy** — оправданна ли *подача* (порядок изложения, выдвижение редкого как
+  центрального, сокрытие частотности): `JUSTIFIED · MISLEADING · RARE-AS-CENTRAL ·
+  FREQUENCY-HIDDEN · ORDER-QUESTIONABLE`.
+
+Опорная триангуляция: **DCS-2021** (частотность/засвидетельствованность; Оливер Хельвиг,
+CC BY, через соседний репозиторий VisualDCS), **Уитни 1889** (системный грамматический
+факт, по §§), **Толчельников-Талмуд 2026** (морфокласс корня). При конфликте источников
+действует правило D-B: DCS решает частотность, Уитни — системный факт, Талмуд —
+морфокласс; расхождение флагуется, никогда не замалчивается.
+
+Файлы реестра:
+
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml) — верифицированный реестр (HB-1..HB-64), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims_harvest.yml) — бэклог из **339 кандидатов** (полная жатва 6 параллельных читателей по всем 48 урокам, 404 собрано / 65 продвинуто);
+- [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md) + [claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.json) — генерируются из `claims.yml` скриптом [scripts/build_claims.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) (`npm run claims`), руками не править;
+- [verify_claims_dcs.py](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/verify_claims_dcs.py) — локальная батарея корпусных запросов книги; метрики HB-* дополнительно воспроизводятся общей батареей [KocherginaUchebnik_1998/verify_claims_dcs.py](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py).
+
+## Итог проверки: 64 утверждения
+
+**58 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE · 13 частотных сносок М.Г.**
+(сноски добавляют корпусное число там, где Бюлер числа не даёт).
+
+### Главные выводы
+
+1. **Хеджирование Бюлера откалибровано систематически хорошо.** Его «обыкновенно», «почти
+   все», «иногда», «очень редкая» раз за разом попадают точно в зону вариативности, а
+   абсолютные формулировки — в категорическую: «иногда» для императива на -tāt = 0,95 %
+   императивных форм (HB-22), «очень редкая» для абсолютива на -am = 0,4 % (HB-42),
+   закрытые списки даны полностью (HB-18, HB-36, HB-52).
+2. **Контрольный кросс-грамматический случай.** Одно и то же корпусное число — доля
+   seṭ-футурума **-iṣya = 56,8 %** различных форм будущего — оценивает формулировку
+   Кочергиной («по единому правилу -syá») как OVERSTATED (HK-4), а формулировку Бюлера
+   («либо непосредственно, либо при посредстве i») как TRUE (HB-59). Факт один; различается
+   **калибровка подачи** — с двумя живыми реестрами именно она, а не фактическая точность,
+   оказывается измеримой осью различия грамматик.
+3. **Сбои — три типа.** (а) Абсолют I урока: «все времена и наклонения имеют обе формы
+   залога» — опровергается его же поздними уроками (корневой и siṣ-аористы «исключительно
+   P.», интенсивы однозалоговые) — HB-2, OVERSTATED/MISLEADING. (б) *Редкое прежде
+   частого*: описательное будущее изложено в уроке XLIV **раньше** простого при соотношении
+   частот 1 290 против 18 004 словоупотреблений (в 14 раз реже; HB-58,
+   ORDER-QUESTIONABLE); активное причастие на -tavat подано «также часто» рядом с
+   пассивным на -ta, которое в **сто раз** частотнее (2 350 против 233 080; HB-40,
+   FREQUENCY-HIDDEN). (в) *Перевёрнутое направление частоты*: перфект назван более редким,
+   чем имперфект, — агрегат DCS-2021 показывает обратное (61 986 > ~47 554 словоупотреблений;
+   HB-57, OVERSTATED с оговоркой о жанровом составе корпуса).
+4. **Единственный FALSE — почти наверняка опечатка 1923 года.** «Второй аорист образуется
+   также как impf. VII кл.» стоит рядом с собственной **тематической** парадигмой книги
+   (asicam — тип VI класса); правильно «VI кл.» (HB-60). Кандидат в
+   [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml) —
+   ровно та точка, где реестр утверждений и реестр опечаток встречаются.
+5. **Частотные сноски М.Г. добавляют то, чего в 1923 году знать было нельзя:** причастие
+   на -ta — самая частая глагольная категория корпуса вообще (233 080 словоупотреблений =
+   29,8 % всех глагольных, в полтора раза больше настоящего времени; HB-39); оптатив —
+   вторая личная категория (72 826 = 9,3 %; HB-23); у абсолютива статистически главная
+   форма — приставочная на -ya (78,4 % различных форм против 19,6 % у -tvā; HB-41);
+   императив по лицам: 2-е лицо 62,7 % (HB-64).
+6. **Двойная верификация.** Пять пересекающихся вердиктов независимо воспроизведены
+   параллельной сессией другим маршрутом запросов (BU-1..BU-5,
+   [PR #184](https://github.com/gasyoun/SanskritGrammar/pull/184)): совпали и числа, и
+   направления; одно подлинное разночтение прочтения — «совершенно равноправно» об
+   аористах — разобрано и зафиксировано в примечании HB-61 (семантическая
+   взаимозаменяемость, не частотный паритет: в той же фразе сам Бюлер называет аористы
+   «редкими формами»).
+
+Полный методологический синтез — в шапке
+[claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)
+и в сгенерированном
+[CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md);
+история — [H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md),
+[PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186), релизы
+[buhler-leitfaden-v0.2.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/buhler-leitfaden-v0.2.0)
+и [v0.13.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.13.0). Подмножество
+OVERSTATED/FALSE питает статью A60 («что грамматики утверждают, а корпус не подтверждает»).
+
+### Как воспроизвести числа
+
+```bash
+python BuhlerLeitfaden_1923/verify_claims_dcs.py --check          # батарея книги
+python KocherginaUchebnik_1998/verify_claims_dcs.py --check       # общая батарея (метрики HB-*)
+npm run claims                                                     # перегенерация CLAIMS_VERIFIED.md + claims.json
+```
+
+Требуется соседний клон VisualDCS (`../VisualDCS`, экспорт DCS-2021).
+
+### Что дальше
+
+Дренаж бэклога (339 кандидатов → вердикты → продвижение в `claims.yml`), затем те же
+реестры для Кнауэра и Зализняка (≥50 проверенных на книгу) — см. H797, фаза 2, остаток.
+
+_Dr. Mārcis Gasūns_
