@@ -19,6 +19,30 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.22.0] - 2026-07-15
+
+### Added
+- **H990 — Sangram Phase 1 pilot P4 (SG-WF-008, determinative compounds / tatpuruṣa) —
+  статья-кандидат (Opus 4.8 `claude-opus-4-8[1m]` + Sonnet 4.6 `claude-sonnet-4-6`)**:
+  [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha)
+  — четвёртый пилот программы C5, тест предела **EM4**: DCS даёт членение композита
+  (нечленные члены `feat_case=Cpd`, **841 052** токена), но НЕ тип — у **98,56 %**
+  членов пусто даже UD-отношение (`deprel=NULL`). Тип классифицирован вручную двумя
+  **независимыми** проходами (Opus + Sonnet, разные модели — против инфляции согласия)
+  по кодбуку **Э. Лейтана** (пани́ниевская иерархия `dvigu ⊂ karmadhāraya ⊂ tatpuruṣa`).
+  **Первый ПОЛОЖИТЕЛЬНЫЙ kill-gate серии** (после сработавших P2/P3): межразметочное
+  согласие на 5 классах Лейтана **κ=0,818** (почти идеально), бинарно «татпуруша или
+  нет» **κ=0,887**, полное 7-классное κ=0,710 → **kill-gate C5 § 7 P4 (κ<0,7) НЕ
+  сработал**, частоты типов публикуемы. Из 18 расхождений 7-классного разбора 11 —
+  подграница `tatpuruṣa↔karmadhāraya` (внутри одного класса Лейтана, исчезает на
+  кодбучном уровне); остаются 7 межклассовых (4 `bahuvrīhi↔tatpuruṣa` — эндо/экзо, это
+  C6). Татпуруша — доминирующий тип (~56 %; с подтипами ~76 %). Surface-побочно:
+  расхождение с реестром C2 (SG-WF-010 паркует dvigu с avyayībhāva; Лейтан — под
+  tatpuruṣa) зафиксировано. Скрипты
+  [`sg_wf_008_compound_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_compound_sample.py)
+  + [`sg_wf_008_kappa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_kappa.py);
+  3 валидатора + docusaurus build green. Публикация гейтится авторской визой.
+
 ## [0.21.0] - 2026-07-15
 
 ### Changed

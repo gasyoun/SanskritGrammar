@@ -1,0 +1,71 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:tatpurusha",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-WF-008",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Детерминативные композиты (tatpuruṣa): восстановим ли тип по корпусу",
+        "summary": "Пилот P4 программы словообразования C5: DCS даёт членение композита (нечленные члены помечены feat_case=Cpd, 841 052 токена), но НЕ его традиционный тип (предел EM4) — для 98,56 % членов даже UD-отношение пусто. Тип классифицируется вручную; пилот измеряет, согласны ли два независимых прохода (Opus 4.8 и Sonnet 4.6) по кодбуку Э. Лейтана (пани́ниевская иерархия dvigu ⊂ karmadhāraya ⊂ tatpuruṣa). Результат — в отличие от P2/P3 — ПОЛОЖИТЕЛЬНЫЙ: на уровне 5 классов Лейтана κ=0,818 (почти идеально), бинарно «татпуруша или нет» κ=0,887; kill-gate НЕ сработал → частоты типов публикуемы. Полное 7-классное κ=0,710: почти всё расхождение — подграница татпуруша↔кармадхарая, которая по Лейтану внутри одного класса. Татпуруша — доминирующий тип (~56 %)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:tatpurusha:1",
+        "layer": "scientific",
+        "text_slp1": "muktEr jatugfhAd dEvAj jitaM kuntIsutEr iti",
+        "segmentation_slp1": "muktEH jatugfhAt dEvAt jitam kuntIsutEH iti",
+        "locus": { "corpus": "dcs", "work": "Bhāratamañjarī", "ref": "BhāMañj, 1" },
+        "translations": {
+          "ru": "…что [царство], отвоёванное сыновьями Кунти, освобождёнными волею судьбы из смоляного дома…"
+        },
+        "gloss_ru": "kuntī-suta (√kuntī + suta) — татпуруша (падежный, генитивный): «сын Кунти» = kuntyāḥ sutaḥ, первый член в родительном отношении к главному. Оба независимых прохода согласны — чистый случай доминирующего типа.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:2",
+        "layer": "scientific",
+        "text_slp1": "antas tyaktakazAyasya nirdvandvasya nirASizaH",
+        "segmentation_slp1": "antar tyaktakazAyasya nirdvandvasya nirASizaH",
+        "locus": { "corpus": "dcs", "work": "Aṣṭāvakragīta", "ref": "Aṣṭāvakragīta, 3" },
+        "translations": {
+          "ru": "…у того, чья страсть внутренне отброшена, кто вне двойственностей, кто без желаний…"
+        },
+        "gloss_ru": "tyakta-kaṣāya (tyakta + kaṣāya) — бахуврихи: «[тот,] чья страсть отброшена». Композит (Gen Masc Sing) описывает ВНЕШНего референта — мудреца — и согласуется с ним, а не с лексическим родом kaṣāya. Оба прохода согласны: экзоцентричность видна из контекста.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:3",
+        "layer": "scientific",
+        "text_slp1": "zazwikAnnena saMyuktam upayojyaM yaTAbalam",
+        "segmentation_slp1": "zazwikAnnena saMyuktam upayojyam yaTAbalam",
+        "locus": { "corpus": "dcs", "work": "Carakasaṃhitā", "ref": "Ca, Cik., 2, 2" },
+        "translations": {
+          "ru": "…следует употреблять вместе с рисом-ṣaṣṭika, по мере сил."
+        },
+        "gloss_ru": "ṣaṣṭika-anna (ṣaṣṭika + anna) — ГРАНИЧНЫЙ случай: проход A прочёл татпуруша («рис из сорта ṣaṣṭika»), проход B — кармадхарая («ṣaṣṭika-рис», аппозитивно). По кодбуку Лейтана kармадхарая ⊂ tatpuruṣa, поэтому оба попадают в ОДИН верхний класс: расхождение — подграница внутри татпуруши, а не межклассовое. Ровно этот тип разногласий (11 из 18) исчезает на уровне 5 классов.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}
