@@ -1,0 +1,234 @@
+{
+  "instrument": "och22_token_weighted.py over dcs_full.sqlite (dcs-conllu 04e0778) x morphoclass_crosswalk_1975_2014_2026.csv 1978 columns",
+  "rmn_citation_forms": 147,
+  "type_counts": {
+    "full": 126,
+    "defective": 21
+  },
+  "aliases_applied": {
+    "ṛc": "arc",
+    "bṛh": "bṛṃh",
+    "jambh": "jabh",
+    "tark": "tarkay",
+    "carc": "carcay"
+  },
+  "attested_roots": 133,
+  "unattested_roots": [
+    "bhām",
+    "dram",
+    "jhar",
+    "lam",
+    "pard",
+    "phar",
+    "ramb",
+    "rambh",
+    "sphṛ",
+    "vṛṃh",
+    "ścand",
+    "śran",
+    "ṛ",
+    "ṛt"
+  ],
+  "simplex": {
+    "total_tokens": 151195,
+    "full_tokens": 146356,
+    "defective_tokens": 4839,
+    "full_share_pct": 96.8
+  },
+  "simplex_plus_preverbed": {
+    "total_tokens": 220228,
+    "full_tokens": 212756,
+    "defective_tokens": 7472,
+    "full_share_pct": 96.61
+  },
+  "preverbed_unattributed_tokens_corpuswide": 86413,
+  "top20": {
+    "n": 20,
+    "full_roots": 19,
+    "defective_roots": 1,
+    "defective_members": [
+      "vṛdh"
+    ]
+  },
+  "top50": {
+    "n": 50,
+    "full_roots": 44,
+    "defective_roots": 6,
+    "defective_members": [
+      "lamb",
+      "nand",
+      "tvar",
+      "vand",
+      "vṛdh",
+      "ṛdh"
+    ]
+  },
+  "named_examples": {
+    "dṛś": {
+      "tokens": 15214,
+      "rank": 3
+    },
+    "gam": {
+      "tokens": 28878,
+      "rank": 2
+    },
+    "bandh": {
+      "tokens": 3526,
+      "rank": 13
+    }
+  },
+  "top20_table": [
+    {
+      "root": "kṛ",
+      "tokens": 49988,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "gam",
+      "tokens": 28878,
+      "ryad": "M₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "dṛś",
+      "tokens": 15214,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "han",
+      "tokens": 14077,
+      "ryad": "N₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "jan",
+      "tokens": 10890,
+      "ryad": "N₂",
+      "polnoizm": "full"
+    },
+    {
+      "root": "hṛ",
+      "tokens": 8840,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "vṛt",
+      "tokens": 8053,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "car",
+      "tokens": 7311,
+      "ryad": "R₂",
+      "polnoizm": "full"
+    },
+    {
+      "root": "man",
+      "tokens": 6008,
+      "ryad": "N₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "vṛ",
+      "tokens": 4545,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "smṛ",
+      "tokens": 4521,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "kram",
+      "tokens": 4219,
+      "ryad": "M₂",
+      "polnoizm": "full"
+    },
+    {
+      "root": "bandh",
+      "tokens": 3526,
+      "ryad": "N₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "bhṛ",
+      "tokens": 2737,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "mṛ",
+      "tokens": 2664,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "arh",
+      "tokens": 2380,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "ram",
+      "tokens": 2365,
+      "ryad": "M₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "vṛdh",
+      "tokens": 2254,
+      "ryad": "R₁",
+      "polnoizm": "defective"
+    },
+    {
+      "root": "pṛ",
+      "tokens": 2105,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    },
+    {
+      "root": "tṛ",
+      "tokens": 1898,
+      "ryad": "R₁",
+      "polnoizm": "full"
+    }
+  ],
+  "defective_tokens_by_root": {
+    "an": 16,
+    "bhṛjj": 94,
+    "dṛbh": 4,
+    "garh": 309,
+    "garj": 223,
+    "gṛdh": 69,
+    "jṛmbh": 171,
+    "kamp": 377,
+    "kṣar": 278,
+    "lamb": 494,
+    "mārg": 110,
+    "mṛdh": 23,
+    "mṛkṣ": 1,
+    "nand": 625,
+    "spṛdh": 198,
+    "stan": 20,
+    "tvar": 551,
+    "vand": 703,
+    "vṛdh": 2254,
+    "ṛdh": 952
+  },
+  "validation": {
+    "147 distinct RMN citation forms": true,
+    "alias targets all present as DCS verbal keys": true,
+    "gam in top 5 by tokens": true,
+    "named examples darś/gam/bandh all attested and full": true,
+    "simplex full-share > 90%": true,
+    "combined full-share > 90%": true,
+    "top-20 majority full": true,
+    "top-50 majority full": true
+  }
+}

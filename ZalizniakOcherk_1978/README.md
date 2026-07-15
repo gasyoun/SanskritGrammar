@@ -120,13 +120,21 @@ python scripts/grammar_relations_stats.py   # статистика карты с
 npm run claims              # перегенерация CLAIMS_VERIFIED.md + claims.json
 python ZalizniakOcherk_1978/verify_claims_dcs.py    # вся батарея книги (census, i-rates)
 python ZalizniakOcherk_1978/build_1978_crosswalk.py # колонка 1978 + тесты §§67-68 (H978)
+python ZalizniakOcherk_1978/och22_token_weighted.py # строгая токен-взвешенная реплика OCH-22
 ```
+
+Токен-взвешенная реплика OCH-22 (лемма-частотный джойн DCS-2026 по цитатным формам,
+расхождения ключей разрешены явными алиасами) подтвердила §67 строже типового счёта:
+**96,6–96,8 %** глагольных токенов рядов R/M/N лежат на полноизменяемых корнях, топ-20
+употребительных корней — 19/20 полноизменяемые, а собственные примеры параграфа занимают
+места № 2 (gam), № 3 (dṛś) и № 13 (bandh) — см.
+[och22_token_weighted.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och22_token_weighted.json).
 
 ### Что дальше
 
 Оставшиеся инструменты из списка UNTESTABLE (периодная разметка вед-vs-эпос для полного
 градиента §207 — первая точка уже измерена в конспекте, KZ-12; treebank → §§214-217);
-строгая токен-взвешенная реплика OCH-22; печатный лист опечаток для `errata.yml`;
+печатный лист опечаток для `errata.yml`;
 закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_

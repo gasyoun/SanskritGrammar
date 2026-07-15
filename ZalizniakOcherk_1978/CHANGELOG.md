@@ -9,6 +9,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.3.2] - 2026-07-15
+### Added
+- **Strict token-weighted OCH-22 replication — the last H978 residual closed** — new instrument [`och22_token_weighted.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och22_token_weighted.py) performs the deferred lemma-frequency join keyed to citation forms (DCS-2026 SQLite × the crosswalk's 1978 columns; divergent keys resolved by identity-certain aliases ṛc→arc, bṛh→bṛṃh, jambh→jabh, tark→tarkay, carc→carcay; preverbed compounds attributed by preverb-strip; 14 rare Vedic roots reported unattested, never zero-faked) → [`och22_token_weighted.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och22_token_weighted.json) (8/8 validation). §67's «большинство употребительных корней — полноизменяемые» holds **stronger by tokens than by types**: 96.8% of 151,195 simplex R/M/N verbal tokens (96.6% of 220,228 incl. preverbed) on полноизменяемые roots vs 87% by type; top-20 frequent roots 19/20 full (only vṛdh defective); the §'s own examples rank #2 (gam), #3 (dṛś), #13 (bandh). OCH-22 register entry upgraded from a-fortiori to measured. (Fable 5 `claude-fable-5`, [H978](https://github.com/gasyoun/Uprava/blob/main/handoffs/H978-Fable_SanskritGrammar_1978-crosswalk-column-unblock-och21-23_15.07.26.md))
+
 ## [0.3.1] - 2026-07-15
 ### Changed
 - **1978 columns merged upstream; companion CSV retired** — `build_1978_crosswalk.py` now maintains the five 1978 columns in place inside the Talmud crosswalk ([`morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv), 876 rows preserved incl. duplicates; idempotent re-runs). `crosswalk_1978.csv` deleted (its content lives upstream; the v0.3.0 release tag preserves the standalone artifact). Register refs (OCH-21..OCH-23) and both READMEs repointed. (Fable 5 `claude-fable-5`)
