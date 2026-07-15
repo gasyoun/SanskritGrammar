@@ -42,17 +42,30 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 Ряд/Тип/seṭ для начинающих — в
 [TolchelnikovTalmud_2026/onramp/](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/onramp).
 
-## Проверка утверждений (реестр `claims.yml`) — В ОЧЕРЕДИ, с оговоркой о масштабе
+## Проверка утверждений (реестр `claims.yml`) — СЕМЯ ГОТОВО (15-07-2026, Sonnet 5 `claude-sonnet-5`)
 
-Реестра у конспекта **ещё нет** — он в остатке фазы 2
-[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md).
-**Предварительная проверка жанра — урок кнауэровской развилки — здесь выполнена, итог
-двоякий:** текст дискурсивен (92 квантификатора — есть что жать, конвейер факт × подача
-применим), **но масштаб мал**: ~65 строк грамматической прозы против ~420 у очерка 1978
-и тысяч у Кочергиной/Бюлера. Планка «≥ 50 проверенных», заданная для полноразмерных
-дискурсивных грамматик, конспекту может не подойти — как и у Кнауэра, меру «сделано»
-для него должен определить человек (реалистичнее ожидать десятки кандидатов, не сотни).
-Методику см. в README соседей:
+Предсказание масштаба выше подтвердилось почти дословно: полное чтение всех 657 строк
+дало **17 falsifiable-кандидатов** (не сотни) —
+[`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml)
+(**KZ-1..KZ-2**, оба TRUE) +
+[`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims_harvest.yml)
+(15 в очереди) +
+[`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/verify_claims_dcs.py).
+Найдена настоящая инфраструктурная брешь: пять из очередных утверждений — это
+**точные дроби по Ригведе** («в 1/3 случаев», «в 7/8 случаев», «в Ригведе в 5/6
+случаев»), которым нужны данные корпуса, изолированные по периоду; проверено —
+[`VisualDCS/non-derived/Rigveda/`](https://github.com/gasyoun/VisualDCS) содержит
+только текстовые документы, не данные по токенам. Это закрывает тот же открытый
+вопрос, что был отмечен у очерка 1978 (§207) — теперь подтверждено, а не только
+предположено. KZ-1 (классификация seṭ/aniṭ/veṭ действительно смешанная) — TRUE
+по перекрёстной ссылке на уже установленный результат Кочергиной HK-4 (доля seṭ
+у основы будущего времени 56,8 % — почти пополам, не чистое правило). KZ-2
+(медиум футурума 2 редок) — TRUE, но слабо доказано: в кодовой книге DCS-2021
+попросту нет отдельного тега для медиума перифрастического будущего — это
+согласуется с редкостью, но не даёт точного отношения. Планку «≥ 50 проверенных»
+конспект **не достигнет и не должен** — как и предсказано, здесь реалистичны
+десятки кандидатов, а не сотни; мера «сделано» для этой книги остаётся решением
+человека. Методику см. в README соседей:
 [Кочергина](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md) ·
 [Бюлер](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/README.md) ·
 [Кнауэр](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md) ·
@@ -62,12 +75,14 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 
 ```bash
 npm run quantifiers        # перегенерация QUANTIFIER_PROFILE.md + quantifiers.json
+npm run claims              # перегенерация CLAIMS_VERIFIED.md + claims.json
+python ZalizniakKonspekt_2004/verify_claims_dcs.py   # пересчёт проверки KZ-2
 ```
 
 ### Что дальше
 
-Реестр `claims.yml` по конвейеру H797 с планкой, откалиброванной под объём конспекта
-(решение человека); печатный лист опечаток для `errata.yml`; закрытие открытого
-`@DECIDE` по окну якоря N=8 квантификаторного слоя.
+Слив оставшихся 15 кандидатов `claims_harvest.yml` (10 годны к проверке уже сейчас,
+5 ждут изоляции корпуса по периоду Ригведы); печатный лист опечаток для
+`errata.yml`; закрытие открытого `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_
