@@ -19,6 +19,21 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-07-15
+
+### Added
+- **H976 — RQ4 evaluation protocol spec (built by Sonnet 5 `claude-sonnet-5`; verified,
+  merged and closed out by Fable 5 `claude-fable-5`)**:
+  [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md)
+  (+ meta) — full study design for the digital-pedagogy field's RQ4 (on-ramp-first vs
+  Талмуд-first): falsifiable H0/H1, between-subjects two-arm design matched on prior
+  exposure, two diagnostic-instrument metrics (time-to-first-correct-derivation,
+  retention @ N weeks), item-bank plan from Talmud Appendix 1's 65 tagged roots,
+  pre-registered analysis plan with an honest power reality-check (~64/arm for d≈0.5 —
+  wave 1 is a pilot, not confirmatory), and 4 `@DECIDE` gates (recruitment channel,
+  retention window, hosting/instrumentation home, consent wording) filed to the GTD hub.
+  Protocol-only: no harness code, no simulated data, no recruitment.
+
 ## [0.17.0] - 2026-07-15
 ### Added
 - **1978 morphoclass-crosswalk column: the §68 structural prediction is CONFIRMED (H978)** — [`ZalizniakOcherk_1978/build_1978_crosswalk.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/build_1978_crosswalk.py) closes the last named instrument of the Ocherk register: seṭ/aniṭ membership tracks alternation-series × полноизменяемость almost deterministically (group A 92.6% aniṭ-or-veṭ vs group B 93.0% seṭ-or-veṭ; plain-type leakage 7% both ways), with veṭ as exactly the fluctuation band Zaliznyak's hedge reserved. OCH-21/22/23 flip to measured TRUE (Ocherk register now 60 TRUE · 14 UNTESTABLE · 0 flags of 74); the earlier naive-join dead end is fully explained, not just superseded. Companion columns kept in ZalizniakOcherk_1978/ (merging into the Talmud crosswalk CSV = a human's call). ([H978](https://github.com/gasyoun/Uprava/blob/main/handoffs/H978-Fable_SanskritGrammar_1978-crosswalk-column-unblock-och21-23_15.07.26.md)) (Fable 5 `claude-fable-5`)
