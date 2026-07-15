@@ -98,7 +98,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 выводит по 749 корням ряд-1978, открытость и полноизменяемость из СОБСТВЕННЫХ правил
 очерка (§66 — ряд по словарной записи, §67 — изменяемость; именные списки перекрывают
 правила; 15/15 проверок по примерам самих §§66-68) →
-[crosswalk_1978.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/crosswalk_1978.csv)
+[колонки 1978 в кроссволке](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
 + [och_1978_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och_1978_stats.json).
 Итог: **флагман §68 подтверждён с разгромным счётом** — группа A (полноизменяемые открытые
 I₁/U₁/R₁/M₁/N₁/I₂): aniṭ-или-veṭ **92,6 %**, чистых seṭ лишь 7,4 %; группа B (прочие

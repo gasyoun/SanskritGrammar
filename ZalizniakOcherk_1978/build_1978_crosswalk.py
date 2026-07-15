@@ -19,8 +19,14 @@ Two print-corruption suspects found in the source while encoding (recorded here,
   çru, bhū (i/ī/u/ū) and §67 itself splits open A₂ roots ~50/50 two paragraphs later — the
   header must read «на i(ī), u(ū)» (encoded accordingly).
 
+Since 15-07-2026 (the merge ruling) this script MAINTAINS THE 1978 COLUMNS IN PLACE inside
+the Talmud crosswalk CSV itself (ryad_1978, ryad_1978_basis, openness_1978, polnoizm_1978,
+polnoizm_1978_basis appended to every row, duplicates preserved) — the former companion
+crosswalk_1978.csv is retired. Idempotent: re-running recomputes and overwrites the five
+columns, touching nothing else.
+
 Usage:  python ZalizniakOcherk_1978/build_1978_crosswalk.py
-Writes  crosswalk_1978.csv + och_1978_stats.json next to this script.
+Writes  the merged crosswalk CSV (in place) + och_1978_stats.json next to this script.
 """
 import csv, io, json, sys, unicodedata
 from collections import Counter
@@ -182,33 +188,37 @@ def polnoizm(root, series, opn, homonym):
     return "unknown", "no-§67-rule"
 
 
-def main():
-    rows, seen = [], set()
-    for r in csv.DictReader(io.open(BASE, encoding="utf-8")):
-        key = (r["whitney_no"], nfc(r["root"]), r.get("homonym") or "")
-        if key in seen:
-            continue
-        seen.add(key)
-        rows.append(r)
+FIELDS_1978 = ["ryad_1978", "ryad_1978_basis", "openness_1978", "polnoizm_1978",
+               "polnoizm_1978_basis"]
 
-    out_rows = []
-    for r in rows:
+
+def main():
+    base_rows = list(csv.DictReader(io.open(BASE, encoding="utf-8")))
+    base_fields = [f for f in base_rows[0].keys() if f not in FIELDS_1978]
+
+    merged, out_rows, seen = [], [], set()
+    for r in base_rows:
         root = nfc(r["root"])
         ser, ser_basis = series_1978(root, r.get("z_series"))
         opn = openness(root, ser)
         pz, pz_basis = polnoizm(root, ser, opn, r.get("homonym"))
-        out_rows.append({
-            "whitney_no": r["whitney_no"], "root": root, "homonym": r.get("homonym") or "",
-            "gloss": r.get("gloss") or "", "ryad_1978": ser or "", "ryad_1978_basis": ser_basis,
-            "openness_1978": opn or "", "polnoizm_1978": pz, "polnoizm_1978_basis": pz_basis,
-            "z_set": r.get("z_set") or "", "ryad_2026": r.get("ryad_derived") or "",
-            "z_series_2014": r.get("z_series") or "",
-        })
+        m = {f: r.get(f) or "" for f in base_fields}
+        m.update({"ryad_1978": ser or "", "ryad_1978_basis": ser_basis,
+                  "openness_1978": opn or "", "polnoizm_1978": pz,
+                  "polnoizm_1978_basis": pz_basis})
+        merged.append(m)
+        key = (r["whitney_no"], root, r.get("homonym") or "")
+        if key in seen:
+            continue                     # stats/validation use the deduped view
+        seen.add(key)
+        out_rows.append({"root": root, "homonym": r.get("homonym") or "",
+                         "ryad_1978": ser or "", "openness_1978": opn or "",
+                         "polnoizm_1978": pz, "z_set": r.get("z_set") or ""})
 
-    with io.open(HERE / "crosswalk_1978.csv", "w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(out_rows[0].keys()))
+    with io.open(BASE, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=base_fields + FIELDS_1978)
         w.writeheader()
-        w.writerows(out_rows)
+        w.writerows(merged)
 
     # --- validation against §§66-68's own named roots ---
     ix = {(o["root"], o["homonym"]): o for o in out_rows}
@@ -304,7 +314,7 @@ def main():
     io.open(HERE / "och_1978_stats.json", "w", encoding="utf-8").write(
         json.dumps(stats, ensure_ascii=False, indent=2))
     print(json.dumps(stats, ensure_ascii=False, indent=2)[:2200])
-    print(f"-> wrote crosswalk_1978.csv ({len(out_rows)} roots) + och_1978_stats.json")
+    print(f"-> merged 1978 columns into {BASE.name} ({len(merged)} rows, {len(out_rows)} distinct roots) + och_1978_stats.json")
 
 
 if __name__ == "__main__":
