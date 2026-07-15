@@ -12,4 +12,13 @@
 
 work: "Zalizniak, Очерк грамматики санскрита (grammar sketch, 1978) — aligned edition"
 
-entries: []
+# Print pagination is not systematically tracked in the aligned mdx (only a handful of
+# stray \[8xx\] anchors) — page: 0 + a §/mdx-line locator follows the BuhlerLeitfaden_1923
+# precedent for items with no anchorable print page.
+entries:
+  # ── H978 1978-crosswalk encoding pass: two print-corruption suspects found while
+  #    encoding §§66-67 as executable rules (both recorded in build_1978_crosswalk.py's
+  #    header at the time; the instrument's 15/15 validation against the §§' own named
+  #    roots passes only with these readings). ──
+  - { page: 0, line: "§ 66 п. 3 / mdx line 886", read: "√nam *наклоняться*", instead: "√mam *наклоняться*", found_by: "H978 1978-crosswalk encoding (build_1978_crosswalk.py)", date_added: "2026-07-15", note: "no root mam exists; the gloss 'наклоняться' is nam 'bow' — and §66's open-M₁ list (gam, yam, nam, ram) is exactly the classical set the crosswalk validates against" }
+  - { page: 0, line: "§ 67 правило 1 / mdx line 890", read: "оканчивающиеся (в словарном обозначении) на i(ī), u(ū)", instead: "оканчивающиеся (в словарном обозначении) на a(ā), u(ū)", found_by: "H978 1978-crosswalk encoding (build_1978_crosswalk.py)", date_added: "2026-07-15", note: "the rule's own examples are √ji, √nī, √çru, √bhū (i/ī/u/ū roots, no a-root among them), and §67 itself splits open A₂ roots ~50/50 two paragraphs later — the header as printed would contradict both" }
