@@ -1,0 +1,79 @@
+{
+  "work": "Zaliznyak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978",
+  "generated": "15-07-2026",
+  "synthesis": "Six-claim seed (H797 Phase 2, Ocherk). Three claims are DIRECT REUSES of ground truth already computed for other books in this cross-grammar program — a first demonstration that the program's corpus infrastructure genuinely compounds across grammars rather than needing rebuilding each time. OCH-1 (ṝ phoneme rarity) reuses Kochergina's HK-7 vowel census verbatim (ṛ is 126× the combined rare sonants ṝ/ḷ/ḹ) — TRUE, and Zaliznyak's own qualification (\"only in certain grammatical forms of ar-stems, §86\") is more precise than either Kochergina's or Bühler's phrasing of the same fact. OCH-3 (precative middle almost unattested post-Vedic) reuses Kochergina's HK-39 figure exactly (221 tokens, 0.03% of verbal) — TRUE. OCH-5 (rare -am absolutive) reuses Bühler's already-measured absolutive split (-ya 78.4% / -tvā 19.6% / -am 0.4%) — TRUE, and the three grammars' independent framing of the same fact (Kochergina doesn't discuss it; Bühler calls it \"очень редко\"; Zaliznyak calls it \"изредка\") converges on the same corpus reality. OCH-4 (çās as a documented exception to the closed-long-vowel-root defective pattern) cross-confirms the Knauer parse-audit's KN-3 finding (Whitney §639) from a completely different digitized source — the SAME irregular root flagged independently by two authors 30 years and two genres apart. OCH-2 (Class I is the largest present-stem class) is a clean, freshly-computed TRUE (30.34% of verbal tokens, more than double the next-largest thematic class). OCH-6 (thematic-stem formation ranks a > ya > aya by frequency) is TRUE in ranking direction but the margin between ya (12.58%) and aya (12.12%) is thin (0.46 points) — \"реже\" for aya is real but nowhere near as dramatic a gap as a-suffix's 44.44% dominance, worth flagging as a mild pedagogical understatement of how close the two minority classes actually are. No errors found in this seed; too small and too reuse-biased a sample (selected for verifiability, not randomly) to characterize Zaliznyak's overall calibration — that judgment awaits the 68-candidate backlog, which includes several potentially rich targets (§68's aniṭ/seṭ-by-alternation-series correlation; §207's flagship Vedic-to-Classical syntactic-style diachronic claim) that need new corpus queries this seed didn't build.",
+  "claims": [
+    {
+      "id": "OCH-1",
+      "loc": "§21 / mdx line 360",
+      "claim_ru": "Фонема /ṝ/ встречается очень редко (только в некоторых грамматических формах имён на ar, § 86).",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "ṛ 199,930 occurrences (1.75% of monophthong vowels) vs ṝ 1,588 (0.01%) — ṛ is 126× the combined rare sonants ṝ/ḷ/ḹ (DCS-2021 vowel census, reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK7_vowel_census)",
+      "ref": "DCS-2021 0.csv vowel census (../KocherginaUchebnik_1998/verify_claims_dcs.py); cf. KocherginaUchebnik_1998 HK-7",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Zaliznyak's qualification — confined to certain grammatical forms of ar-stem nouns (§86) — is more precise than a bare rarity claim; the corpus figure (126× rarer than ṛ) supports \"очень редко\" without overstatement. Third independent confirmation of the same underlying DCS fact (after Kochergina's own HK-7 statement of it), now cross-book reused rather than recomputed.",
+      "mg_footnote": null
+    },
+    {
+      "id": "OCH-2",
+      "loc": "§117 / mdx line 1958",
+      "claim_ru": "Класс I (самый многочисленный): корень в ступени guṇa.",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "class I = 237,100 tokens (30.34% of 781,541 present-system tokens) — more than double the next-largest class (class II, 154,301, 19.74%) — VisualDCS/verb_classes.json",
+      "ref": "DCS-2021 verb_classes.json",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Not a close call — class I outnumbers every other class by a wide margin, confirming the parenthetical without qualification.",
+      "mg_footnote": null
+    },
+    {
+      "id": "OCH-3",
+      "loc": "§149 / mdx line 2370",
+      "claim_ru": "В med. (который в послеведийский период почти не встречается) основа прекатива равна основе med. аориста 4 или 5 + ī.",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "221 tokens = 0.03% of 781,618 verbal tokens ('Benedictive Medium', DCS-2021 — reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK39_precative_middle)",
+      "ref": "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко')",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Second independent grammar making the identical, now-doubly-confirmed rarity claim about the same paradigm cell.",
+      "mg_footnote": null
+    },
+    {
+      "id": "OCH-4",
+      "loc": "§67 / mdx line 892",
+      "claim_ru": "Закрытые корни, содержащие долгую гласную или дифтонг... неполноизменяемые. Исключения: полноизменяемые √çās приказывать (слабая ступень ciṣ) и корни группы √sīv шить.",
+      "kind": "universality",
+      "verdict_fact": "TRUE",
+      "number": "systemic: Whitney §639 documents çās as an irregular reduplicated-type root with a distinct weak-stem çiṣ- (matching Zaliznyak's ciṣ), confirming it is NOT a plain defective long-vowel root",
+      "ref": "WhitneyGrammar_1889/09_The_Present_System.mdx §639; cf. KnauerFrazy_1908/parse_audit.yml KN-3 (same root, same Whitney citation, confirmed independently from a completely different digitized source — a phrase-reader footnote, not a grammar's exception list)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "The same irregular root (çās) is flagged independently by Knauer's 1908 phrase-reader footnote (KN-3) and Zaliznyak's 1978 grammar's exception list, 70 years apart, in two completely different genres of source — a clean cross-corpus, cross-genre confirmation rather than a coincidence of citing the same textbook tradition.",
+      "mg_footnote": null
+    },
+    {
+      "id": "OCH-5",
+      "loc": "§165 / mdx line 2532",
+      "claim_ru": "Изредка встречается деепричастие на -am; ступень корня --- как в 3 sg act. перфекта. Пример: çrāvam.",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "-am absolutive = 0.4% of distinct absolutive forms, vs -ya 78.4% and -tvā 19.6% (reused verbatim from BuhlerLeitfaden_1923/claims.yml's absolutive-split metric)",
+      "ref": "DCS-2021 (BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 (same split, called 'очень редко' there vs 'изредка' here — both hedges hold up against the same 0.4% figure)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Three grammars, three framings of the same corpus fact: Kochergina doesn't mention the -am absolutive at all; Bühler calls it \"очень редкая\" (very rare); Zaliznyak calls it \"изредка\" (occasionally) — a slightly softer hedge than Bühler's, and if anything the more accurate one for a form that is rare but not vanishing (0.4%, not 0.04%).",
+      "mg_footnote": null
+    },
+    {
+      "id": "OCH-6",
+      "loc": "§116 / mdx line 1954",
+      "claim_ru": "Тематические основы презенса у первичных глаголов обычно образуются непосредственно от корня с помощью элементов a или ya, реже aya, cha.",
+      "kind": "statistic",
+      "verdict_fact": "TRUE",
+      "number": "a-suffix (classes I+VI combined): 347,284 tokens (44.44% of present-system tokens); ya-suffix (class IV): 98,321 (12.58%); aya-suffix (class X): 94,735 (12.12%) — VisualDCS/verb_classes.json",
+      "ref": "DCS-2021 verb_classes.json",
+      "verdict_pedagogy": "MISLEADING",
+      "note": "The ranking direction (a > ya > aya) holds, but the gap Zaliznyak implies between \"обычно\" (a/ya) and \"реже\" (aya) is thin where it matters most: ya (12.58%) and aya (12.12%) are only 0.46 percentage points apart — nowhere near as decisive a split as a-suffix's 44.44% dominance over both. A learner reading \"реже\" for aya next to \"обычно\" for ya would expect a much bigger gap than the corpus actually shows between those two specifically.",
+      "mg_footnote": null
+    }
+  ]
+}

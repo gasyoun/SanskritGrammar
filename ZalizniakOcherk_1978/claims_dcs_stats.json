@@ -1,0 +1,19 @@
+{
+  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/verb_classes.json",
+  "_note": "OCH-1/OCH-3/OCH-5 reuse Kochergina/Bühler's already-published stats verbatim (see claims.yml refs) rather than recomputing here.",
+  "OCH2_OCH6_class_shares": {
+    "total_present_tokens": 781541,
+    "class_1_tokens": 237100,
+    "class_1_pct": 30.34,
+    "class_2_tokens": 154301,
+    "class_2_pct": 19.74,
+    "largest_class": "1",
+    "a_suffix_tokens": 347284,
+    "a_suffix_pct": 44.44,
+    "ya_suffix_tokens": 98321,
+    "ya_suffix_pct": 12.58,
+    "aya_suffix_tokens": 94735,
+    "aya_suffix_pct": 12.12,
+    "ya_aya_gap_pct_points": 0.46
+  }
+}

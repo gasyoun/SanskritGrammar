@@ -50,15 +50,23 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 очерк (отсылка к § 34 в «Заключении» учебника), Зализняк же цитирует только «Начальный
 курс» 1956 года; при этом конвенции двух книг систематически расходятся по 7 признакам.
 
-## Проверка утверждений (реестр `claims.yml`) — В ОЧЕРЕДИ
+## Проверка утверждений (реестр `claims.yml`) — СЕМЯ ГОТОВО (15-07-2026, Sonnet 5 `claude-sonnet-5`)
 
-Реестра у очерка **ещё нет**: это оставшаяся книга фазы 2
-[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)
-(после Кочергиной — 234 проверенных, Бюлера — 64, и развилки Кнауэра). **Предварительная
-проверка жанра — урок кнауэровской развилки — здесь выполнена:** очерк дискурсивен
-(832 квантификатора на ~420 строк прозы, ~242 §§), стандартный двухосевой конвейер
-(факт × подача против DCS-2021 / Уитни / Талмуда) применим как есть, планка «≥ 50
-проверенных» реалистична. Методику см. в README соседей:
+Предварительная проверка жанра (см. выше) подтвердилась и была использована напрямую:
+[`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
+(**OCH-1..OCH-6**, все TRUE, 1 помечен MISLEADING) +
+[`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims_harvest.yml)
+(**68 кандидатов в очереди**, всего **74** из 4-читательской жатвы всего текста, §§1-230+) +
+[`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/verify_claims_dcs.py).
+Методологическая новость: 3 из 6 seed-утверждений **переиспользуют** уже посчитанные в
+других книгах числа (частотность гласных и прекатива-медиума у Кочергиной, доля
+абсолютива на -am у Бюлера) вместо пересчёта — инфраструктура корпуса кросс-книжной
+программы действительно накапливается. OCH-4 (√çās как исключение) независимо
+подтверждает находку KN-3 из совсем другого жанра источника — разбора сносок Кнауэра.
+Ещё не достигнута планка «≥ 50 проверенных» — это первый срез, не полный слив (см.
+[`.ai_state.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md)
+для двух отмеченных перспективных целей бэклога: §68 aniṭ/seṭ по рядам чередования,
+§207 диахронический сдвиг синтаксического стиля). Методику см. в README соседей:
 [Кочергина](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md) ·
 [Бюлер](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/README.md) ·
 [Кнауэр](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md).
@@ -68,12 +76,14 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 ```bash
 npm run quantifiers        # перегенерация QUANTIFIER_PROFILE.md + quantifiers.json
 python scripts/grammar_relations_stats.py   # статистика карты связей (SG-H2/SG-H9)
+npm run claims              # перегенерация CLAIMS_VERIFIED.md + claims.json
+python ZalizniakOcherk_1978/verify_claims_dcs.py   # пересчёт OCH-2/OCH-6
 ```
 
 ### Что дальше
 
-Реестр `claims.yml` + `claims_harvest.yml` по конвейеру H797 (жатва параллельными
-читателями → вердикты → ≥ 50 проверенных → синтез); печатный лист опечаток для
-`errata.yml`; закрытие открытого `@DECIDE` по окну якоря N=8 квантификаторного слоя.
+Слив оставшихся 68 кандидатов `claims_harvest.yml` до планки «≥ 50 проверенных»;
+печатный лист опечаток для `errata.yml`; закрытие открытого `@DECIDE` по окну якоря
+N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_
