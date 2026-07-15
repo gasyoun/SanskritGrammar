@@ -25,6 +25,15 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   blend-variant naming, with 9 genuine unmatched roots and two arithmetic questions (Table 5's
   aniṭ/seṭ summary, the 847-vs-930 Whitney corpus-size gap) left explicitly unresolved rather than
   force-closed.
+- **Independent corroboration at scale via Tolchelnikov's Talmud data** (same-day follow-up, MG's
+  tip) — [`TolchelnikovTalmud_2026/data/z_root_map.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/z_root_map.json)
+  (905 roots from samskrtam.ru/z/, built on the same 1975 model) corroborates 4 of 5
+  alternation-series group counts within ±6% (A1, A2, L, I+U+R; M+N is a −27% outlier, unresolved)
+  and 2 of 3 Table 5 aniṭ/seṭ columns within a few percent (aniṭ 178 vs ~170, seṭ 325 vs ~320).
+  Per-root series cross-validation (122 agree/67 disagree/28 not found) surfaced a genuine,
+  unresolved `0`-vs-`1`/`2` subseries-tagging ambiguity in Talmud's data — tried and reverted a
+  heuristic fix rather than force a wrong answer; documented as an open question for a trained
+  Sanskritist, not glossed over.
 
 ## [0.1.0] - 2026-07-06
 ### Added
