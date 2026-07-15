@@ -19,6 +19,20 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **P4 (SG-WF-008 tatpuruṣa) — H989 замещает H990 как каноническую статью и ОПУБЛИКОВАНА (виза MG).**
+  Две сессии независимо реализовали P4 (H989 и H990); по итогам слепого сравнения по существу
+  канонической выбрана **H989** — доверительные интервалы на κ, двухуровневая декомпозиция
+  coarse/fine, детальный панинийский кодбук Лейтана. [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha):
+  высший класс κ = **0,93** [0,84–1,0] (117/120), падежный подтип κ = **0,72** [0,60–0,82] (73/93) —
+  оба ≥ 0,7, kill-gate C5 § 7 P4 **НЕ сработал**. Обе разметки — Pass A Opus 4.8 (`claude-opus-4-8[1m]`)
+  + Pass B Sonnet 5 (`claude-sonnet-5`), одна модельная семья → κ есть **верхняя** граница, помечены
+  предварительными. Ревизия `published` в манифесте, плашка кандидата снята. Правки при замещении:
+  исправлена воспроизводимость (фильтр метки `tatpurusa` vs слаг `tatpurusha`), добавлен полный аудит-след
+  [`annotations_full.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/data/annotations_full.tsv)
+  (240 разборов vigraha + обоснование), перенесена оговорка H990 об артефакте рамки выборки (§ 6.7).
+  Предыдущая реализация ([0.22.0], H990) помечена superseded. (Opus 4.8 `claude-opus-4-8[1m]`, [H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md))
+
 ## [0.24.0] - 2026-07-15
 
 ### Added
@@ -49,6 +63,8 @@ changelog tags as `vX.Y.Z`.
 ## [0.22.0] - 2026-07-15
 
 ### Added
+- **⚠️ SUPERSEDED by H989 ([Unreleased]).** Эта реализация P4 заменена канонической H989 по итогам
+  слепого сравнения по существу; запись сохранена как история выпуска. Далее — как было отгружено:
 - **H990 — Sangram Phase 1 pilot P4 (SG-WF-008, determinative compounds / tatpuruṣa) —
   статья-кандидат (Opus 4.8 `claude-opus-4-8[1m]` + Sonnet 4.6 `claude-sonnet-4-6`)**:
   [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha)
@@ -77,7 +93,6 @@ changelog tags as `vX.Y.Z`.
 
 ### Added
 - **H984: RQ4 diagnostic item bank + protocol decisions ruled.** [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py) emits [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json): 24 items (8 per pre/post/retention phase, 2 per row) drawn from the 745-root Приложение 1 catalogue, restricted to the on-ramp's 4 taught rows (A₁/I₁/U₁/R₁), excluding every root already used in the on-ramp's/talmud-02's worked material, frequency-sorted via kosha's `lemma_frequency.tsv`. 307 eligible candidates, 0 shortfall on any row. [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) updated: MG ruled §6.1–6.3 (Systema-hosted harness, Systema's own Kochergina-stage students, 4-week retention window); §6.4 (consent wording) still open. Harness build follows (H988).
-
 ## [0.20.0] - 2026-07-15
 
 ### Added

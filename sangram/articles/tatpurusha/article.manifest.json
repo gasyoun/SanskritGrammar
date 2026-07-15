@@ -10,62 +10,69 @@
     "locales": {
       "ru": {
         "title": "Детерминативные композиты (tatpuruṣa): восстановим ли тип по корпусу",
-        "summary": "Пилот P4 программы словообразования C5: DCS даёт членение композита (нечленные члены помечены feat_case=Cpd, 841 052 токена), но НЕ его традиционный тип (предел EM4) — для 98,56 % членов даже UD-отношение пусто. Тип классифицируется вручную; пилот измеряет, согласны ли два независимых прохода (Opus 4.8 и Sonnet 4.6) по кодбуку Э. Лейтана (пани́ниевская иерархия dvigu ⊂ karmadhāraya ⊂ tatpuruṣa). Результат — в отличие от P2/P3 — ПОЛОЖИТЕЛЬНЫЙ: на уровне 5 классов Лейтана κ=0,818 (почти идеально), бинарно «татпуруша или нет» κ=0,887; kill-gate НЕ сработал → частоты типов публикуемы. Полное 7-классное κ=0,710: почти всё расхождение — подграница татпуруша↔кармадхарая, которая по Лейтану внутри одного класса. Татпуруша — доминирующий тип (~56 %)."
+        "summary": "Статья SG-WF-008 (пилот P4 программы морфологии C5). DCS даёт членение композита, но не его тип (предел EM4). Тип классифицируется вручную по кодовой книге Э. З. Лейтана (панинийская схема, dvigu ⊂ karmadhāraya ⊂ tatpuruṣa) двумя независимыми проходами (Opus 4.8 и Sonnet 5); согласие по Cohen κ — ворота kill-gate. Результат: класс восстановим (κ = 0,93), падежный подтип tatpuruṣa — на границе (κ = 0,72); оба прохода — машинные, помечены как предварительные."
       }
     },
     "examples": [
       {
         "id": "ex:tatpurusha:1",
         "layer": "scientific",
-        "text_slp1": "muktEr jatugfhAd dEvAj jitaM kuntIsutEr iti",
-        "segmentation_slp1": "muktEH jatugfhAt dEvAt jitam kuntIsutEH iti",
-        "locus": { "corpus": "dcs", "work": "Bhāratamañjarī", "ref": "BhāMañj, 1" },
-        "translations": {
-          "ru": "…что [царство], отвоёванное сыновьями Кунти, освобождёнными волею судьбы из смоляного дома…"
-        },
-        "gloss_ru": "kuntī-suta (√kuntī + suta) — татпуруша (падежный, генитивный): «сын Кунти» = kuntyāḥ sutaḥ, первый член в родительном отношении к главному. Оба независимых прохода согласны — чистый случай доминирующего типа.",
-        "evidence": {
-          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
-          "visibility": "public",
-          "url": "https://github.com/gasyoun/dcs-conllu"
-        },
+        "text_slp1": "madBaktaH",
+        "segmentation_slp1": "mad-BaktaH",
+        "locus": { "corpus": "dcs", "work": "Liṅgapurāṇa", "ref": "LiPur 1.86 (s147)" },
+        "translations": { "ru": "преданный мне (мой почитатель)" },
+        "gloss_ru": "ṣaṣṭhī-tatpuruṣa: mama bhaktaḥ — почитатель [кого?] меня; левый член в родительном к главному.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (ṣaṣṭhī)", "visibility": "internal" },
         "as_of": "2026-07-15"
       },
       {
         "id": "ex:tatpurusha:2",
         "layer": "scientific",
-        "text_slp1": "antas tyaktakazAyasya nirdvandvasya nirASizaH",
-        "segmentation_slp1": "antar tyaktakazAyasya nirdvandvasya nirASizaH",
-        "locus": { "corpus": "dcs", "work": "Aṣṭāvakragīta", "ref": "Aṣṭāvakragīta, 3" },
-        "translations": {
-          "ru": "…у того, чья страсть внутренне отброшена, кто вне двойственностей, кто без желаний…"
-        },
-        "gloss_ru": "tyakta-kaṣāya (tyakta + kaṣāya) — бахуврихи: «[тот,] чья страсть отброшена». Композит (Gen Masc Sing) описывает ВНЕШНего референта — мудреца — и согласуется с ним, а не с лексическим родом kaṣāya. Оба прохода согласны: экзоцентричность видна из контекста.",
-        "evidence": {
-          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
-          "visibility": "public",
-          "url": "https://github.com/gasyoun/dcs-conllu"
-        },
+        "text_slp1": "mahABUmO",
+        "segmentation_slp1": "mahA-BUmO",
+        "locus": { "corpus": "dcs", "work": "Kaṭhopaniṣad", "ref": "KaṭhUp 1 (s24)" },
+        "translations": { "ru": "великая земля" },
+        "gloss_ru": "karmadhāraya (samānādhikaraṇa): mahatī bhūmiḥ — прилагательное mahā и главное bhūmi в одном падеже.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (karmadhāraya)", "visibility": "internal" },
         "as_of": "2026-07-15"
       },
       {
         "id": "ex:tatpurusha:3",
         "layer": "scientific",
-        "text_slp1": "zazwikAnnena saMyuktam upayojyaM yaTAbalam",
-        "segmentation_slp1": "zazwikAnnena saMyuktam upayojyam yaTAbalam",
-        "locus": { "corpus": "dcs", "work": "Carakasaṃhitā", "ref": "Ca, Cik., 2, 2" },
-        "translations": {
-          "ru": "…следует употреблять вместе с рисом-ṣaṣṭika, по мере сил."
-        },
-        "gloss_ru": "ṣaṣṭika-anna (ṣaṣṭika + anna) — ГРАНИЧНЫЙ случай: проход A прочёл татпуруша («рис из сорта ṣaṣṭika»), проход B — кармадхарая («ṣaṣṭika-рис», аппозитивно). По кодбуку Лейтана kармадхарая ⊂ tatpuruṣa, поэтому оба попадают в ОДИН верхний класс: расхождение — подграница внутри татпуруши, а не межклассовое. Ровно этот тип разногласий (11 из 18) исчезает на уровне 5 классов.",
-        "evidence": {
-          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
-          "visibility": "public",
-          "url": "https://github.com/gasyoun/dcs-conllu"
-        },
+        "text_slp1": "pramehajit",
+        "segmentation_slp1": "prameha-jit",
+        "locus": { "corpus": "dcs", "work": "Rājanighaṇṭu", "ref": "RājNigh Prabh (s41)" },
+        "translations": { "ru": "побеждающий прамеху (мочеизнурение)" },
+        "gloss_ru": "upapada-tatpuruṣa: pramehaṃ jayati iti — главное jit есть kṛt-дериват (√ji) с левым членом-объектом.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (upapada); пример кодовой книги", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:4",
+        "layer": "scientific",
+        "text_slp1": "AttacApaH",
+        "segmentation_slp1": "Atta-cApaH",
+        "locus": { "corpus": "dcs", "work": "Bhāgavatapurāṇa", "ref": "BhāgPur 4.16 (s20)" },
+        "translations": { "ru": "тот, чей лук взят [в руки]" },
+        "gloss_ru": "НЕ tatpuruṣa, а bahuvrīhi: ātta-cāpo yena saḥ — доминирует внешний референт (обладатель лука); граница ppp-композита, где обе разметки согласны в пользу bahuvrīhi.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (bahuvrīhi — соседний класс)", "visibility": "internal" },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:tatpurusha:5",
+        "layer": "scientific",
+        "text_slp1": "zaNmanUnAm",
+        "segmentation_slp1": "zaz-manUnAm",
+        "locus": { "corpus": "dcs", "work": "Sūryasiddhānta", "ref": "SūrSiddh 1 (s45)" },
+        "translations": { "ru": "шести Ману (как совокупности)" },
+        "gloss_ru": "dvigu (числительный karmadhāraya ⊂ tatpuruṣa по Лейтану): ṣaṣ manavaḥ — числительное-первый член; здесь под tatpuruṣa, вопреки размещению dvigu в слоте SG-WF-010 реестра.",
+        "evidence": { "label_ru": "Выборка пилота P4, обе независимые разметки согласны (dvigu)", "visibility": "internal" },
         "as_of": "2026-07-15"
       }
     ],
-    "revisions": []
+    "revisions": [
+      { "date": "2026-07-15", "kind": "published",
+        "note_ru": "Авторская виза (MG) получена — статья опубликована; плашка кандидата снята из MDX. Оговорки о машинной природе разметок сохранены." }
+    ]
   }
 }
