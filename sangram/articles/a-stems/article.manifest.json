@@ -1,0 +1,71 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:a-stems",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-MO-002",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Основы на -a: доля засвидетельствованных клеток парадигмы",
+        "summary": "Пилот P1 программы морфологии C5: измерение доли аттестованных клеток матрицы падеж × число тематического склонения (муж. и ср. род) в пинованном снапшоте DCS против порождённой (MWinflect) и традиционной (Уитни 1889) полных парадигм."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:a-stems:1",
+        "layer": "scientific",
+        "text_slp1": "mitrAvaruRAByAM devAByAM devatayAnuzwuBena CandasAgneH pakzam upadaDAmi",
+        "segmentation_slp1": "mitrAvaruRAByAm devAByAm devatayA anuzwuBena CandasA agneH pakzam upadaDAmi",
+        "locus": { "corpus": "dcs", "work": "Maitrāyaṇīsaṃhitā", "ref": "MS 2,8,11 (предложение 11)" },
+        "translations": {
+          "ru": "С двумя богами, Митрой-и-Варуной, как божеством, с ануштубхом как размером я укладываю крыло [алтаря] Агни."
+        },
+        "gloss_ru": "Единственное вхождение клетки Ins.Du леммы deva (devābhyām) во всём снапшоте: 1 из 17 536 токенов deva.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:a-stems:2",
+        "layer": "scientific",
+        "text_slp1": "sArAnubanDAv Alokya daRqAn etAn prakalpayet",
+        "segmentation_slp1": "sAra anubanDO Alokya daRqAn etAn prakalpayet",
+        "locus": { "corpus": "dcs", "work": "Nāradasmṛti", "ref": "NāSmṛ 2,19 (предложение 45)" },
+        "translations": {
+          "ru": "Взвесив суть дела и его последствия, пусть он назначает эти наказания."
+        },
+        "gloss_ru": "Редкая двойственная клетка Acc.Du (anubandhau) из валидированной выборки; двойственные клетки — самые разрежённые в матрице.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:a-stems:3",
+        "layer": "scientific",
+        "text_slp1": "drapsas te dyAM mA skan",
+        "segmentation_slp1": "drapsaH te dyAm mA skan",
+        "locus": { "corpus": "dcs", "work": "Vājasaneyisaṃhitā (Mādhyandina)", "ref": "VSM 1 (предложение 26)" },
+        "translations": {
+          "ru": "Капля твоя да не прольётся на небо."
+        },
+        "gloss_ru": "Типовая частотная клетка Nom.Sg (drapsas, ведийское сандхи -as перед t-); из валидированной выборки.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}
