@@ -8,6 +8,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Claim-verification register (H797 Phase 2 seed)** — [`claims.yml`](claims.yml) (KZ-1..KZ-2,
+  two-axis fact/pedagogy grading) + [`claims_harvest.yml`](claims_harvest.yml) (15-candidate
+  backlog from a full 657-line read, 17 total) + [`verify_claims_dcs.py`](verify_claims_dcs.py).
+  Deliberately small seed: this book turned out the hardest of the four Zaliznyak/Kochergina/
+  Bühler/Knauer sources checked to verify — overwhelmingly tabular/mechanical content, and
+  several of its richest claims are Rigveda-specific exact fractions (1/3, 7/8, 3/5, 1/2, 5/6 of
+  cases) needing period-isolated corpus data confirmed NOT to exist in this pipeline's current
+  DCS ground truth. Both seed claims TRUE, one via cross-reference to Kochergina's HK-4 (seṭ/aniṭ
+  future-stem split), one from DCS-2021's codebook itself carrying no separate medium-voice
+  periphrastic-future tag.
 
 ## [0.1.1] - 2026-07-15
 ### Added
