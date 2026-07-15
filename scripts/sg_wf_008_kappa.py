@@ -79,7 +79,10 @@ def main():
     coarse_agree = sum(1 for x, y in coarse_pairs if x == y)
 
     # fine κ over items BOTH passes called tatpuruṣa
-    fine_ids = [i for i in ids if a[i]["coarse"] == "tatpurusha" and b[i]["coarse"] == "tatpurusha"]
+    # NB: the class LABEL emitted by the annotators is ASCII "tatpurusa" (no h);
+    # the article-folder slug is "tatpurusha" (registry). Filter on the label.
+    TATP = "tatpurusa"
+    fine_ids = [i for i in ids if a[i]["coarse"] == TATP and b[i]["coarse"] == TATP]
     fine_pairs = [(a[i].get("fine", "n/a"), b[i].get("fine", "n/a")) for i in fine_ids]
     k_fine = cohen_kappa(fine_pairs)
     ci_fine = bootstrap_ci(fine_pairs, rng) if fine_pairs else (None, None)
@@ -100,7 +103,7 @@ def main():
             ca_, cb_ = a[i]["coarse"], b[i]["coarse"]
             fa_, fb_ = a[i].get("fine", "n/a"), b[i].get("fine", "n/a")
             cag = ca_ == cb_
-            fag = (fa_ == fb_) if (ca_ == "tatpurusha" and cb_ == "tatpurusha") else ""
+            fag = (fa_ == fb_) if (ca_ == TATP and cb_ == TATP) else ""
             verdict = "agree" if cag and (fag in (True, "")) else "disagree"
             w.writerow([i, ca_, cb_, cag, fa_, fb_, fag, verdict])
 
@@ -115,7 +118,7 @@ def main():
         "fine": {"kappa": round(k_fine, 4) if k_fine is not None else None,
                  "ci95": ci_fine, "observed_agreement": round(fine_agree / len(fine_pairs), 4) if fine_pairs else None,
                  "n": len(fine_pairs), "kill_gate_fired": fired(k_fine),
-                 "subset": "both passes coarse=tatpurusha"},
+                 "subset": "both passes coarse=tatpurusa"},
         "coarse_confusion": confusion,
         "coarse_dist_A": dict(Counter(x for x, _ in coarse_pairs)),
         "coarse_dist_B": dict(Counter(y for _, y in coarse_pairs)),
