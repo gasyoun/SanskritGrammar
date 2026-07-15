@@ -21,6 +21,22 @@ changelog tags as `vX.Y.Z`.
 
 ### Added
 - **H984: RQ4 diagnostic item bank + protocol decisions ruled.** [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py) emits [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json): 24 items (8 per pre/post/retention phase, 2 per row) drawn from the 745-root Приложение 1 catalogue, restricted to the on-ramp's 4 taught rows (A₁/I₁/U₁/R₁), excluding every root already used in the on-ramp's/talmud-02's worked material, frequency-sorted via kosha's `lemma_frequency.tsv`. 307 eligible candidates, 0 shortfall on any row. [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) updated: MG ruled §6.1–6.3 (Systema-hosted harness, Systema's own Kochergina-stage students, 4-week retention window); §6.4 (consent wording) still open. Harness build follows (H988).
+- **H989 — Sangram Phase 1 pilot P4 (SG-WF-008, tatpuruṣa) — статья-кандидат
+  (Pass A Opus 4.8 `claude-opus-4-8[1m]` · Pass B Sonnet 5 `claude-sonnet-5`; оркестровка Opus 4.8)**:
+  [`sangram/articles/tatpurusha/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha)
+  — четвёртый пилот программы морфологии C5, тест предела **EM4** (тип композита не
+  размечен в DCS: есть членение `Case=Cpd`, нет типа). Метод — **две независимые разметки
+  разными моделями** по кодовой книге [Э. З. Лейтана](https://docs.google.com/document/d/1-jrfXUzgusB9lrST87uG6IJVxbBr78bR/edit)
+  (панинийская схема, dvigu ⊂ karmadhāraya ⊂ tatpuruṣa); согласие по Cohen κ — kill-gate. Универсум —
+  **442 649** двучленных композитов (из 595 021), выборка 120 (зерно `20260715`).
+  **Kill-gate (C5 § 7 P4) НЕ сработал:** высший класс κ = **0,93** [0,84–1,0] (117/120),
+  падежный подтип tatpuruṣa κ = **0,72** [0,60–0,82] (73/93) — оба ≥ 0,7; таксономия не
+  пересматривается, распределение публикуется как кандидат. Обе разметки машинные, помечены
+  предварительными (научная сверка — за автором); тонкий κ проходит погранично (нижняя граница
+  ДИ 0,60). Скрипты [`sg_wf_008_compound_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_compound_sample.py),
+  [`sg_wf_008_kappa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_kappa.py);
+  данные — [`data/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha/data).
+  Три валидатора + docusaurus build green. Публикация гейтится авторской визой.
 
 ## [0.20.0] - 2026-07-15
 
