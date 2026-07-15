@@ -261,10 +261,10 @@
       "claim_ru": "Корни рядов R, M, N могут быть обоих типов, но большинство употребительных корней — полноизменяемые, например: √darç, √gam, √bandh.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
-      "number": "MEASURED: of the 160 R/M/N-series roots in the 1978 crosswalk, 139 полноизменяемые vs 21 неполноизменяемые = 87% by type — at that margin the token-weighted majority over 'употребительные' roots follows a fortiori (the named defectives kṣar/tvar/garh/... are low-frequency items; darç/gam/bandh-class carries the tokens)",
-      "ref": "ZalizniakOcherk_1978/och_1978_stats.json OCH22_RMN_type_counts; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)",
+      "number": "MEASURED twice. By type: 139/160 R/M/N root+homonym pairs полноизменяемые (87%). By the STRICT token-weighted replication (och22_token_weighted.py, DCS-2026 SQLite × the 1978 columns, citation-key aliases resolved): 96.8% of the 151,195 simplex R/M/N verbal tokens — 96.6% of 220,228 with preverbed compounds — sit on полноизменяемые roots; the top-20 'употребительные' roots are 19/20 полноизменяемые (only vṛdh defective), top-50 44/50; and the §'s own examples rank #2 (gam, 28,878 tokens), #3 (dṛś, 15,214) and #13 (bandh, 3,526)",
+      "ref": "ZalizniakOcherk_1978/och22_token_weighted.json (8/8 validation); och_1978_stats.json OCH22_RMN_type_counts; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "UNBLOCKED with OCH-21/OCH-23 by the same instrument. A strict token-weighted replication awaits a lemma-frequency join keyed to citation forms (the DCS lemma summary keys diverge); the 87% type margin already settles 'большинство'.\"",
+      "note": "UNBLOCKED with OCH-21/OCH-23 by the crosswalk instrument, then CLOSED STRICTLY 15-07-2026: the deferred lemma-frequency join keyed to citation forms is built (divergent keys mapped ṛc→arc, bṛh→bṛṃh, jambh→jabh, tark→tarkay, carc→carcay; 14 rare Vedic roots honestly reported unattested, not zero-faked). The token-weighted margin (96.6–96.8%) comes out STRONGER than the 87% type margin — the a-fortiori argument was correct and is now measured.\"",
       "mg_footnote": null
     },
     {
