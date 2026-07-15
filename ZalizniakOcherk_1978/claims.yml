@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H978 crosswalk instrument, 15-07-2026): 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — OCH-21..OCH-23 flipped to measured TRUE by the 1978 column (build_1978_crosswalk.py + crosswalk_1978.csv + och_1978_stats.json). The
+# `candidates: []`. Fact-axis tally (after the H978 crosswalk instrument, 15-07-2026): 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — OCH-21..OCH-23 flipped to measured TRUE by the 1978 column (build_1978_crosswalk.py + morphoclass_crosswalk_1975_2014_2026.csv (1978 columns) + och_1978_stats.json). The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -424,7 +424,7 @@ entries:
       lists over 749 roots): open A₂ roots split 19 полноизменяемые / 13 неполноизменяемые /
       18 колеблющихся — among the decided, 59/41; with the fluctuating middle counted as §67
       itself describes («ряд корней колеблется»), 'примерно поровну' holds
-    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH21_openA2_split; crosswalk_1978.csv"
+    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH21_openA2_split; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)"
     verdict_pedagogy: JUSTIFIED
     note: >-
       UNBLOCKED by the 1978 crosswalk column built 15-07-2026 — the exact instrument this
@@ -443,7 +443,7 @@ entries:
       21 неполноизменяемые = 87% by type — at that margin the token-weighted majority over
       'употребительные' roots follows a fortiori (the named defectives kṣar/tvar/garh/... are
       low-frequency items; darç/gam/bandh-class carries the tokens)
-    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH22_RMN_type_counts; crosswalk_1978.csv"
+    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH22_RMN_type_counts; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)"
     verdict_pedagogy: JUSTIFIED
     note: >-
       UNBLOCKED with OCH-21/OCH-23 by the same instrument. A strict token-weighted replication

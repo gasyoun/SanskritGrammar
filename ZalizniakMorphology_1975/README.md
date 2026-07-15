@@ -85,7 +85,7 @@ npm run quantifiers                                         # перегенер
 ### Что дальше
 
 Три открытых пункта аудита (санскритолог / приложение Уитни 1885); ~~колонка 1978 в
-кроссволке~~ — ПОСТРОЕНА 15-07-2026 (H978, [crosswalk_1978.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/crosswalk_1978.csv), OCH-21..23 подтверждены); сверка ~180 оцифрованных
+кроссволке~~ — ПОСТРОЕНА 15-07-2026 (H978, [колонки 1978 в кроссволке](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv), OCH-21..23 подтверждены); сверка ~180 оцифрованных
 корней с каталогом Приложения 1 Талмуда (ряд/тип/seṭ) — прямой тест преемственности
 1975 → 2026 на уровне данных.
 
