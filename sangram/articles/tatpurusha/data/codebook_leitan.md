@@ -26,16 +26,20 @@ Rules:
 | `bahuvrīhi` | anyapadārtha­pradhāna — an **external** referent dominates (possessive/exocentric) | the compound denotes something *other than* either member: "one whose … is …" | `pīta-ambara` (he whose garment is yellow = Viṣṇu) |
 | `dvandva` | ubhayapadārtha­pradhāna — both members equal (copulative) | vigraha joins with "and": "X and Y" | `rāma-kṛṣṇau` (Rāma and Kṛṣṇa) |
 | `avyayībhāva` | pūrvapadārtha­pradhāna — left member dominant, result indeclinable/adverbial | left is usually a preposition/particle (upa-, yathā-, prati-, anu-, nir-, su-); whole is adverbial | `yathā-śakti` (according to capacity) |
-| `kevala-samāsa` | idiomatic, not resolvable by standard rules (Pān. 2.1.4) | meaning is lexicalized, vigraha does not recover it | `ā-janma-śuddha` (pure from birth) |
+| `kevala-samāsa` | the residual/general compound outside the four coordinate pradhāna classes (not itself a fifth pradhāna); use only when a compound is a genuine samāsa but fits none of the four | none of the four coordinate tests applies | `ā-janma-śuddha` (pure from birth) |
 | `unclear` | evidence insufficient to decide | — | — |
 
 ## Tier 2 — fine (Leitan's tatpuruṣa subtypes; only when coarse = tatpuruṣa)
 
 **Vibhakti-tatpuruṣa (vyadhikaraṇa)** — by the case of member1 in the vigraha:
 
+The vibhakti series runs **dvitīyā–saptamī (cases 2–7)** — there is no
+`prathamā-tatpuruṣa`, because a nominative/same-case relation between members is
+by definition karmadhāraya (samānādhikaraṇa, Pān. 1.2.42); the ekadeśin type
+(`pūrva-kāya`) is a special compound, not a nominative vibhakti-tatpuruṣa.
+
 | label | case of member1 | vigraha pattern | Leitan example |
 |---|---|---|---|
-| `tat-prathamā` | nominative (rare) | pūrvaṃ X-sya | `pūrva-kāya` (front of body) |
 | `tat-dvitīyā` | accusative | X-am [p.p.p. / kṛt] | `grāma-gata` (gone to the village) |
 | `tat-tṛtīyā` | instrumental | X-ena | `dhānya-artha` (wealth by grain) |
 | `tat-caturthī` | dative | X-āya (with artha, bali, hita, sukha, rakṣita) | `yūpa-dāru` (wood for the sacrificial post) |
