@@ -19,8 +19,11 @@ Provenance discipline — REFRAMED by the author's ruling on issue #50
     manual-vs-derived agreement in the reconciliation audit.
   * A Whitney root ABSENT from the author's catalog carries  ryad=null /
     set=null / tip=null  (no derived fallback) — the author catalogs no series
-    for it, so we assert none.  ``tip_default="s"`` (Table 3) is kept as the
-    unmarked runtime behaviour.
+    for it, so we assert none.  ``tip_default="I"`` (Table 5 — полноизменяемый/
+    full-range type) is kept as the unmarked runtime behaviour. (Was "s" until
+    an H241-follow-up bugfix caught it: "s"/"a"/"v"/"v1"-"v4" are the manual's
+    OWN Table-8 seṭ/aniṭ/veṭ codes, a different grammatical dimension from
+    Тип чередования I-IV — never the same value space as ``tip``.)
   * Un-indexed Ряд stays un-indexed (ruling #3: bare ``N``/``R``/``L`` are
     printed without a subscript on purpose); no ``0``-index variants.
   * The ~15 nominal roots the author himself tabulated in Приложение 2 are
@@ -285,7 +288,7 @@ def build():
             "ryad_source": None,
             "tip": None,                        # from the manual where the author gives it
             "tip_source": None,
-            "tip_default": "s",                 # unmarked runtime behaviour (Table 3)
+            "tip_default": "I",                  # unmarked runtime behaviour (Table 5)
             "set": None,
             "set_code": None,
             "set_source": None,
@@ -350,7 +353,7 @@ def build():
                 "ryad": "VERBATIM from the author's Приложение 1 where he catalogs the root "
                         "(ryad_source='manual'); null otherwise. Un-indexed stays un-indexed.",
                 "tip": "VERBATIM Тип (I/II/III/IV, Table 5) from Приложение 1 where present; "
-                       "null otherwise. tip_default='s' is the unmarked runtime behaviour.",
+                       "null otherwise. tip_default='I' is the unmarked runtime behaviour.",
                 "set": "VERBATIM seṭ/aniṭ/veṭ from Приложение 1 (set_source='manual'); "
                        "set_code keeps the s/a/v1..v4 granularity (Table 8).",
                 "nominal_appendix2": "Carried VERBATIM from the author's own Приложение 2 "
