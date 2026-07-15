@@ -19,6 +19,29 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.24.0] - 2026-07-15
+
+### Added
+- **H996 — Sangram Phase 1 pilot P5 (SG-WF-003, primary kṛt suffixes -ana/-ti/-in) —
+  статья-кандидат (Opus 4.8 `claude-opus-4-8[1m]`)**: [`sangram/articles/krt-suffixes/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-suffixes)
+  — пятый пилот программы C5, тест предела **EM5** (нет деривационной разметки; сандхи
+  стирает границы морфем). Отбор kṛt-производных идёт по поверхностному исходу леммы
+  `dcs:lemma /(ana|ti|tf|in)$/`; пилот меряет надёжность. **Отрицательный результат:**
+  суффикс **-tṛ (`tf`) вообще не отбираем** — 0 лемм NOUN/ADJ на `tf`. По
+  -ana (3438 лемм) / -ti (1886) / -in (2926) ручная адъюдикация 81-лемменной выборки
+  даёт **долю ложных срабатываний ≈ 59 % ≫ 20 % → kill-gate C5 § 7 P5 СРАБОТАЛ**.
+  Главный шум — **композиты** (31 из 48 ложных: лемма-композит с kṛt-финалью), затем
+  имена собственные (6) и посессивная таддхита -in/-vin (6, tapasvin). Словарная
+  проверка по MW-этимологии тоже не спасает: точность 0,75, но **полнота лишь 0,09**
+  (отбрасывает 96 %, теряя 30 из 33 настоящих производных) — «поверхностный отбор +
+  MW-фильтр» плох в обе стороны. Запрос требует переработки (исключить композиты/имена,
+  отделить посессив, заменить редкую MW-этимологию морфоанализатором). Скрипты
+  [`sg_wf_003_krt_validation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_krt_validation.py)
+  + [`sg_wf_003_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_adjudicate_sample.py);
+  3 валидатора green, статья собирается (не участвует в сборочной ошибке; текущий сбой
+  сборки — только предсуществующая страница GasunsDhatu на origin/main, не связана).
+  Публикация гейтится авторской визой. **Волна W2 пилотов (P1–P5) завершена.**
+
 ## [0.23.0] - 2026-07-15
 ### Added
 - **Print-ready errata sheets — «Замеченные опечатки» из errata.yml (H993)** — new generator [`scripts/build_errata_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata_print_sheet.py) (`npm run errata:print`) renders each populated `<Book>/errata.yml` as a self-contained, A4-print-styled `<Book>/ERRATA_PRINT_SHEET.html` in the classic publisher's layout (№ · Место · Напечатано · Следует читать; sources + generation date in small print) — printable from any browser as a physical-book insert or a reprint-editor hand-off. Parsing/dedup/ordering imported from `build_errata.py` (one canonical errata.yml reader); empty registers get no sheet, stale sheets are removed on regen. First sheets: Bühler (8 позиций), GasunsDhatu (77), Knauer (25 after dedup), Ocherk (2). (Fable 5 `claude-fable-5`, [H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md))
