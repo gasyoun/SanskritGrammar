@@ -36,7 +36,9 @@ changelog tags as `vX.Y.Z`.
   ДИ 0,60). Скрипты [`sg_wf_008_compound_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_compound_sample.py),
   [`sg_wf_008_kappa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_008_kappa.py);
   данные — [`data/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/tatpurusha/data).
-  Три валидатора + docusaurus build green. Публикация гейтится авторской визой.
+  Три валидатора + docusaurus build green. Черновик прошёл adversarial-verify (2 линзы,
+  7 правок применено). **Виза MG получена 15-07-2026 → опубликовано** (ревизия `published`
+  в манифесте, плашка кандидата снята — вторая опубликованная статья серии Sangram после P2).
 
 ## [0.20.0] - 2026-07-15
 
