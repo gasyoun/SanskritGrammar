@@ -1,0 +1,68 @@
+# SG-MO-002 pilot P1 — manual adjudication of the seeded validation sample (C3 § 4.3, kill-gate C5 § 7 P1)
+# Sample: validation_sample.tsv (seed 20260715, n=60, drawn from the combined Masc+Neut universe; C3 § 4.2 floor is 50).
+# Criterion per token: are lemma, case, gender, number of the DCS annotation compatible with the surface form
+# AND its sentence context (locus checked)? verdict ∈ {correct, incorrect, unadjudicable}.
+# Adjudicated 15-07-2026 by Fable 5 (claude-fable-5); author (Dr. Mārcis Gasūns) visa pending — see review-sheet.
+# RESULT: 60/60 correct → false-positive rate 0.0 % (exact binomial 95 % CI 0–6.0 %) — below the 10 % kill-gate;
+# the cell-coverage claim STANDS (C3 П4 not triggered).
+token_id	verdict	note
+1390477	correct	madhyaṃdine Loc.Sg — «в полдень» в перечне пяти времён дня (HirGS 1.19)
+2632323	correct	bṛhadbalam Acc.Sg — имя царя как объект ayodhayat (MBh 6.112); имя собственное размечено как NOUN — конвенция DCS
+860589	correct	indriyāṇi Acc.Pl.n — объект dṛḍhīkaroti (Ca Sū. 26)
+2337615	correct	jvalanaḥ Nom.Sg — финальный член композита yugānta-jvalanaḥ (MBh 3.84)
+2135819	correct	svare Loc.Sg — «голосом (в голосе) равную кокилу» (MBh 1.68)
+2485619	correct	śarīre Loc.Sg.n — «в твоём теле» (MBh 5.30)
+3711840	correct	sampuṭaṃ Acc.Sg — объект cūrṇayet (RMañj 6); род Neut при словарном mn формой не фальсифицируется
+2693769	correct	āhave Loc.Sg — «павших в битве» (MBh 7.96)
+4982555	correct	drapsas Nom.Sg — ведийское -as перед t- (VSM 1.26)
+419951	correct	keśaḥ Nom.Sg — финальный член бахуврихи hari-keśa (AHS Utt. 35)
+1556556	correct	saṃstavaḥ Nom.Sg — финальный член saṃjāta-saṃstava (KSS 3.6)
+3515006	correct	mātre Loc.Sg.n — vijñānaskandha-mātre (MīSūBhā 1.1.5)
+1743892	correct	dhanaṃ Nom.Sg.n — подлежащее yat syāt (KātySmṛ 1)
+2382050	correct	tārkṣyeṇa Ins.Sg — «мудрым Таркшьей» (MBh 3.184)
+1112243	correct	mitradevaḥ Nom.Sg — имя в перечне (GarPur 1.87)
+2721067	correct	sṛñjayāḥ Nom.Pl — этноним в перечне подлежащих (MBh 7.135)
+3035331	correct	guṇāḥ Nom.Pl — финальный член rajo-guṇāḥ (MBh 12.301)
+4442847	correct	naraḥ Nom.Sg — подлежащее kṛtavān (SkPur Rkh 220)
+3595158	correct	anubandhau Acc.Du — sāra-anubandhau при ālokya (NāSmṛ 2.19); редкая двойственная клетка
+4488213	correct	tvam Nom.Sg.n — суффиксальная лемма tva (amala-tva-m, Su Sū. 45); морфоразметка верна; членство суффиксальных лемм в универсуме — см. ограничения статьи
+3187246	correct	viduraṃ Acc.Sg — объект в перечне (MBh 14.51)
+2460132	correct	kośe Loc.Sg — «в ножнах» (MBh 4.38)
+648294	correct	drumāḥ Nom.Pl — финальный член puṇya-drumāḥ (BhāMañj 6)
+1859086	correct	parvatāḥ Nom.Pl — «четыре горы» (KūPur 1.43)
+3169348	correct	narendra Voc.Sg — обращение к царю (MBh 14.9); поле m_unsandhied аномально («narendraiḥ») при верной разметке — см. примечание пакета
+1316472	correct	parākramaiḥ Ins.Pl — финальный член бахуврихи alpavīrya-parākramaiḥ (HV 85)
+249633	correct	rasena Ins.Sg — śata-rasena āhāreṇa (AvŚat 19)
+1824617	correct	abhimānaḥ Nom.Sg — в перечне (KūPur 1.4)
+4635492	correct	anumānam Nom.Sg.n — триада праман (STKau zu SāṃKār 4.2)
+1939023	correct	śīlaṃ Nom.Sg.n — в перечне (LAS 2)
+3088109	correct	yudhiṣṭhira Nom.Sg — yudhiṣṭhiraḥ + uvāca, сандхи -a u- (MBh 13.23)
+4551215	correct	auṣadham Nom.Sg.n — rūkṣa-auṣadham upayuktam (Su Cik. 34)
+5203723	correct	hṛdayaṃ Acc.Sg.n — объект harati (Āsapt 2)
+658936	correct	kāla Nom.Sg — kālaḥ + iva, сандхи (BhāMañj 7)
+2461733	correct	udayam Acc.Sg — при послелоге prati (MBh 4.42)
+964599	correct	kāraiḥ Ins.Pl — финальный член śāstra-kāraiḥ (DKCar 2.3)
+4048543	correct	rāghava Voc.Sg — обращение (Rām Ay 94); та же аномалия m_unsandhied («rāghavaiḥ») при верной разметке
+4423788	correct	kāmān Acc.Pl — объект pradāsyanti (SkPur Rkh 180)
+1079550	correct	bhūtaḥ Nom.Sg — финальный член para-bhūtaḥ (GarPur 1.15)
+4922645	correct	kapilena Ins.Sg — «риши Капилой» (ViPur 4.4)
+1838614	correct	mandaram Acc.Sg — цель движения ājagāma (KūPur 1.15)
+3523383	correct	sparśanaṃ Nom.Sg.n — в перечне (MīSūBhā 1.3.3)
+3966614	correct	vajraṃ Nom.Sg.n — «алмаз» (RājNigh 13)
+1802878	correct	varuṇād Abl.Sg — «освободил от Варуны» (KS 13.2)
+3027128	correct	jālaṃ Acc.Sg.n — объект chittvā (MBh 12.289)
+5630900	correct	jaṭhare Loc.Sg.n — «в чреве Индры» (ṚV 9.85)
+696445	correct	dānaṃ Nom.Sg.n — «даяние — высший путь» (BhāMañj 13)
+2768511	correct	aiśvaryam Acc.Sg.n — объект icchantaḥ (MBh 8.24)
+1147206	correct	samāno Nom.Sg — вāю самāна в физиологическом перечне (GarPur 1.167)
+3966519	correct	gururatnaṃ Nom.Sg.n — синонимический ряд топаза (RājNigh 13)
+3756830	correct	phalaṃ Acc.Sg.n — «плод кутаджи» (RRS 16)
+2054791	correct	viśveśvaro Nom.Sg — эпитет Шивы (LiPur 2.11)
+3770660	correct	dolāyantre Loc.Sg.n — «в долаянтре» (RRSṬīkā zu RRS 8)
+3922440	correct	ātapena Ins.Sg — при vinā (RAK 1)
+5085295	correct	sūtendraḥ Nom.Sg — «ртуть становится пиштой» (ĀK 1.10)
+5497681	correct	devarāto Nom.Sg — генеалогия (ŚāṅkhĀ 15.1)
+4877410	correct	paṅkam Nom.Sg.n — финальный член ūḍha-paṅkam (ViPur 1.4)
+5037228	correct	indriyāṇām Gen.Pl.n — YS 2.54
+995326	correct	sārthasya Gen.Sg — «в середине каравана» (Divyāv 1)
+4861806	correct	kṣetrajñena Ins.Sg — «познающим поле» (VarPur 27)

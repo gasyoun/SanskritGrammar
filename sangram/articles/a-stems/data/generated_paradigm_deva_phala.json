@@ -1,0 +1,201 @@
+{
+  "generator": "MWinflect nominals/pydecl decline.py (Decline_m_a / Decline_n_a)",
+  "generator_commit": "05e1c33fc10704f2e78795afe4874e42fb4f8bb8",
+  "cells": 24,
+  "deva_masc": {
+    "Nom.Sing": {
+      "slp1": "devaH",
+      "iast": "devaḥ"
+    },
+    "Nom.Dual": {
+      "slp1": "devO",
+      "iast": "devau"
+    },
+    "Nom.Plur": {
+      "slp1": "devAH",
+      "iast": "devāḥ"
+    },
+    "Acc.Sing": {
+      "slp1": "devam",
+      "iast": "devam"
+    },
+    "Acc.Dual": {
+      "slp1": "devO",
+      "iast": "devau"
+    },
+    "Acc.Plur": {
+      "slp1": "devAn",
+      "iast": "devān"
+    },
+    "Ins.Sing": {
+      "slp1": "devena",
+      "iast": "devena"
+    },
+    "Ins.Dual": {
+      "slp1": "devAByAm",
+      "iast": "devābhyām"
+    },
+    "Ins.Plur": {
+      "slp1": "devEH",
+      "iast": "devaiḥ"
+    },
+    "Dat.Sing": {
+      "slp1": "devAya",
+      "iast": "devāya"
+    },
+    "Dat.Dual": {
+      "slp1": "devAByAm",
+      "iast": "devābhyām"
+    },
+    "Dat.Plur": {
+      "slp1": "deveByaH",
+      "iast": "devebhyaḥ"
+    },
+    "Abl.Sing": {
+      "slp1": "devAt",
+      "iast": "devāt"
+    },
+    "Abl.Dual": {
+      "slp1": "devAByAm",
+      "iast": "devābhyām"
+    },
+    "Abl.Plur": {
+      "slp1": "deveByaH",
+      "iast": "devebhyaḥ"
+    },
+    "Gen.Sing": {
+      "slp1": "devasya",
+      "iast": "devasya"
+    },
+    "Gen.Dual": {
+      "slp1": "devayoH",
+      "iast": "devayoḥ"
+    },
+    "Gen.Plur": {
+      "slp1": "devAnAm",
+      "iast": "devānām"
+    },
+    "Loc.Sing": {
+      "slp1": "deve",
+      "iast": "deve"
+    },
+    "Loc.Dual": {
+      "slp1": "devayoH",
+      "iast": "devayoḥ"
+    },
+    "Loc.Plur": {
+      "slp1": "devezu",
+      "iast": "deveṣu"
+    },
+    "Voc.Sing": {
+      "slp1": "deva",
+      "iast": "deva"
+    },
+    "Voc.Dual": {
+      "slp1": "devO",
+      "iast": "devau"
+    },
+    "Voc.Plur": {
+      "slp1": "devAH",
+      "iast": "devāḥ"
+    }
+  },
+  "phala_neut": {
+    "Nom.Sing": {
+      "slp1": "Palam",
+      "iast": "phalam"
+    },
+    "Nom.Dual": {
+      "slp1": "Pale",
+      "iast": "phale"
+    },
+    "Nom.Plur": {
+      "slp1": "PalAni",
+      "iast": "phalāni"
+    },
+    "Acc.Sing": {
+      "slp1": "Palam",
+      "iast": "phalam"
+    },
+    "Acc.Dual": {
+      "slp1": "Pale",
+      "iast": "phale"
+    },
+    "Acc.Plur": {
+      "slp1": "PalAni",
+      "iast": "phalāni"
+    },
+    "Ins.Sing": {
+      "slp1": "Palena",
+      "iast": "phalena"
+    },
+    "Ins.Dual": {
+      "slp1": "PalAByAm",
+      "iast": "phalābhyām"
+    },
+    "Ins.Plur": {
+      "slp1": "PalEH",
+      "iast": "phalaiḥ"
+    },
+    "Dat.Sing": {
+      "slp1": "PalAya",
+      "iast": "phalāya"
+    },
+    "Dat.Dual": {
+      "slp1": "PalAByAm",
+      "iast": "phalābhyām"
+    },
+    "Dat.Plur": {
+      "slp1": "PaleByaH",
+      "iast": "phalebhyaḥ"
+    },
+    "Abl.Sing": {
+      "slp1": "PalAt",
+      "iast": "phalāt"
+    },
+    "Abl.Dual": {
+      "slp1": "PalAByAm",
+      "iast": "phalābhyām"
+    },
+    "Abl.Plur": {
+      "slp1": "PaleByaH",
+      "iast": "phalebhyaḥ"
+    },
+    "Gen.Sing": {
+      "slp1": "Palasya",
+      "iast": "phalasya"
+    },
+    "Gen.Dual": {
+      "slp1": "PalayoH",
+      "iast": "phalayoḥ"
+    },
+    "Gen.Plur": {
+      "slp1": "PalAnAm",
+      "iast": "phalānām"
+    },
+    "Loc.Sing": {
+      "slp1": "Pale",
+      "iast": "phale"
+    },
+    "Loc.Dual": {
+      "slp1": "PalayoH",
+      "iast": "phalayoḥ"
+    },
+    "Loc.Plur": {
+      "slp1": "Palezu",
+      "iast": "phaleṣu"
+    },
+    "Voc.Sing": {
+      "slp1": "Pala",
+      "iast": "phala"
+    },
+    "Voc.Dual": {
+      "slp1": "Pale",
+      "iast": "phale"
+    },
+    "Voc.Plur": {
+      "slp1": "PalAni",
+      "iast": "phalāni"
+    }
+  }
+}

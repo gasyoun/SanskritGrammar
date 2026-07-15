@@ -1,0 +1,1500 @@
+{
+  "study": "SG-MO-002 pilot P1: a-stem case x number cell coverage",
+  "method": "C5 S 3 (attested/generated/traditional) via C3 cycle",
+  "snapshot": {
+    "master": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "n_texts": "270",
+      "n_tokens": "5688416",
+      "schema": "flatten-all; lemma<-dictionary.csv"
+    }
+  },
+  "universe_where_sql": "t.upos = 'NOUN' AND t.feat_gender = ? AND t.feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc') AND t.feat_number IN ('Sing','Dual','Plur') AND t.lemma LIKE '%a' AND l.grammar IN ({marks})",
+  "cell_sql": "SELECT t.lemma_id, t.lemma, t.feat_case, t.feat_number, COUNT(*) AS n FROM token t JOIN lemma l ON l.lemma_id = t.lemma_id WHERE t.upos = 'NOUN' AND t.feat_gender = ? AND t.feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc') AND t.feat_number IN ('Sing','Dual','Plur') AND t.lemma LIKE '%a' AND l.grammar IN ({marks}) GROUP BY t.lemma_id, t.feat_case, t.feat_number",
+  "grammar_whitelists": {
+    "Masc": [
+      "m",
+      "mn",
+      "mf"
+    ],
+    "Neut": [
+      "n",
+      "mn",
+      "nf",
+      "fn"
+    ]
+  },
+  "matrix_cells": 24,
+  "validation_sample": {
+    "seed": 20260715,
+    "size": 60,
+    "file": "validation_sample.tsv"
+  },
+  "generated_layer": {
+    "generator": "MWinflect nominals/pydecl decline.py (Decline_m_a / Decline_n_a)",
+    "generator_commit": "05e1c33fc10704f2e78795afe4874e42fb4f8bb8",
+    "cells": 24
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889, ch. V (a-stems)",
+    "cells": 24
+  },
+  "masc": {
+    "n_lemmas": 21837,
+    "n_tokens": 716864,
+    "cells_per_lemma": {
+      "mean": 2.73,
+      "median": 1,
+      "max": 23,
+      "pct_lemmas_full_24": 0.0,
+      "pct_lemmas_ge_12": 3.51,
+      "pct_lemmas_1_cell": 56.23
+    },
+    "lemma_cell_space_attested_pct": 11.39,
+    "cell_lemma_counts": {
+      "Nom.Sing": 15685,
+      "Nom.Dual": 1775,
+      "Nom.Plur": 4465,
+      "Acc.Sing": 7295,
+      "Acc.Dual": 786,
+      "Acc.Plur": 2734,
+      "Ins.Sing": 3532,
+      "Ins.Dual": 458,
+      "Ins.Plur": 2985,
+      "Dat.Sing": 1996,
+      "Dat.Dual": 46,
+      "Dat.Plur": 297,
+      "Abl.Sing": 2966,
+      "Abl.Dual": 94,
+      "Abl.Plur": 336,
+      "Gen.Sing": 3638,
+      "Gen.Dual": 623,
+      "Gen.Plur": 1771,
+      "Loc.Sing": 4692,
+      "Loc.Dual": 283,
+      "Loc.Plur": 1393,
+      "Voc.Sing": 1560,
+      "Voc.Dual": 75,
+      "Voc.Plur": 225
+    },
+    "cell_token_counts": {
+      "Nom.Sing": 211441,
+      "Nom.Dual": 7694,
+      "Nom.Plur": 56315,
+      "Acc.Sing": 127901,
+      "Acc.Dual": 4100,
+      "Acc.Plur": 31907,
+      "Ins.Sing": 39129,
+      "Ins.Dual": 1531,
+      "Ins.Plur": 31173,
+      "Dat.Sing": 12855,
+      "Dat.Dual": 148,
+      "Dat.Plur": 2336,
+      "Abl.Sing": 26368,
+      "Abl.Dual": 167,
+      "Abl.Plur": 1208,
+      "Gen.Sing": 36307,
+      "Gen.Dual": 1958,
+      "Gen.Plur": 18431,
+      "Loc.Sing": 59062,
+      "Loc.Dual": 1046,
+      "Loc.Plur": 9131,
+      "Voc.Sing": 33753,
+      "Voc.Dual": 524,
+      "Voc.Plur": 2379
+    },
+    "freq_bands": {
+      "10-99": {
+        "lemmas": 3422,
+        "cells": 20779,
+        "mean_cells": 6.07
+      },
+      "2-9": {
+        "lemmas": 7747,
+        "cells": 15924,
+        "mean_cells": 2.06
+      },
+      "1000+": {
+        "lemmas": 120,
+        "cells": 2099,
+        "mean_cells": 17.49
+      },
+      "1": {
+        "lemmas": 9620,
+        "cells": 9620,
+        "mean_cells": 1.0
+      },
+      "100-999": {
+        "lemmas": 928,
+        "cells": 11288,
+        "mean_cells": 12.16
+      }
+    },
+    "top_lemmas": [
+      {
+        "lemma_id": 86559,
+        "lemma": "deva",
+        "tokens": 17536,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 66869,
+        "lemma": "loka",
+        "tokens": 11249,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 63463,
+        "lemma": "indra",
+        "tokens": 10287,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 53136,
+        "lemma": "artha",
+        "tokens": 10229,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 144475,
+        "lemma": "putra",
+        "tokens": 9729,
+        "cells_attested": 23
+      },
+      {
+        "lemma_id": 72936,
+        "lemma": "yajña",
+        "tokens": 6762,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 91970,
+        "lemma": "dharma",
+        "tokens": 6394,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 69571,
+        "lemma": "rasa",
+        "tokens": 6322,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 22761,
+        "lemma": "kāla",
+        "tokens": 5916,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 66339,
+        "lemma": "ratha",
+        "tokens": 5372,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 13752,
+        "lemma": "kāma",
+        "tokens": 5063,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 149743,
+        "lemma": "brāhmaṇa",
+        "tokens": 5060,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 144647,
+        "lemma": "puruṣa",
+        "tokens": 4605,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 100106,
+        "lemma": "soma",
+        "tokens": 4363,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 156090,
+        "lemma": "prāṇa",
+        "tokens": 4344,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 11658,
+        "lemma": "anta",
+        "tokens": 3641,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 65008,
+        "lemma": "yoga",
+        "tokens": 3387,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 166143,
+        "lemma": "vīra",
+        "tokens": 3385,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 93423,
+        "lemma": "pāṇḍava",
+        "tokens": 3371,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 106624,
+        "lemma": "suta",
+        "tokens": 3310,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 44242,
+        "lemma": "nara",
+        "tokens": 3195,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 70783,
+        "lemma": "rāma",
+        "tokens": 3153,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 124503,
+        "lemma": "guṇa",
+        "tokens": 3041,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 70209,
+        "lemma": "rāja",
+        "tokens": 2988,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 87452,
+        "lemma": "jana",
+        "tokens": 2956,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 90071,
+        "lemma": "doṣa",
+        "tokens": 2720,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 28931,
+        "lemma": "nṛpa",
+        "tokens": 2660,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 64859,
+        "lemma": "yudhiṣṭhira",
+        "tokens": 2582,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 71571,
+        "lemma": "rudra",
+        "tokens": 2577,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 166894,
+        "lemma": "vipra",
+        "tokens": 2573,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 99310,
+        "lemma": "sūrya",
+        "tokens": 2531,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 116797,
+        "lemma": "śara",
+        "tokens": 2515,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 58039,
+        "lemma": "āditya",
+        "tokens": 2460,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 39019,
+        "lemma": "ṛṣabha",
+        "tokens": 2437,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 116648,
+        "lemma": "śabda",
+        "tokens": 2411,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 49485,
+        "lemma": "bhāga",
+        "tokens": 2409,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 60200,
+        "lemma": "aśva",
+        "tokens": 2404,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 129336,
+        "lemma": "gaṇa",
+        "tokens": 2384,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 2744,
+        "lemma": "karṇa",
+        "tokens": 2338,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 64099,
+        "lemma": "īśvara",
+        "tokens": 2322,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 49850,
+        "lemma": "bhāva",
+        "tokens": 2276,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 91276,
+        "lemma": "dvija",
+        "tokens": 2274,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 94226,
+        "lemma": "pārtha",
+        "tokens": 2254,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 4073,
+        "lemma": "kṛṣṇa",
+        "tokens": 2231,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 93551,
+        "lemma": "pāda",
+        "tokens": 2221,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 154315,
+        "lemma": "bala",
+        "tokens": 2207,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 170994,
+        "lemma": "bhārata",
+        "tokens": 2162,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 66051,
+        "lemma": "raṇa",
+        "tokens": 2140,
+        "cells_attested": 9
+      },
+      {
+        "lemma_id": 50421,
+        "lemma": "bhīṣma",
+        "tokens": 2067,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 87204,
+        "lemma": "deśa",
+        "tokens": 2063,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 133175,
+        "lemma": "māsa",
+        "tokens": 2062,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 166517,
+        "lemma": "hasta",
+        "tokens": 2010,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 69074,
+        "lemma": "varuṇa",
+        "tokens": 1980,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 36369,
+        "lemma": "mantra",
+        "tokens": 1972,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 8188,
+        "lemma": "saṃśaya",
+        "tokens": 1959,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 121714,
+        "lemma": "svarga",
+        "tokens": 1937,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 42265,
+        "lemma": "saṃvatsara",
+        "tokens": 1886,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 129602,
+        "lemma": "garbha",
+        "tokens": 1879,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 61054,
+        "lemma": "asura",
+        "tokens": 1878,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 53077,
+        "lemma": "arjuna",
+        "tokens": 1739,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 74430,
+        "lemma": "varṇa",
+        "tokens": 1680,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 36182,
+        "lemma": "manuṣya",
+        "tokens": 1639,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 69938,
+        "lemma": "rākṣasa",
+        "tokens": 1616,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 97019,
+        "lemma": "tāta",
+        "tokens": 1612,
+        "cells_attested": 9
+      },
+      {
+        "lemma_id": 135351,
+        "lemma": "kṣaṇa",
+        "tokens": 1568,
+        "cells_attested": 10
+      },
+      {
+        "lemma_id": 127205,
+        "lemma": "śūra",
+        "tokens": 1533,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 98854,
+        "lemma": "sūta",
+        "tokens": 1497,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 142998,
+        "lemma": "veda",
+        "tokens": 1495,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 17,
+        "lemma": "aṃśa",
+        "tokens": 1494,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 90696,
+        "lemma": "droṇa",
+        "tokens": 1490,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 135459,
+        "lemma": "kṣaya",
+        "tokens": 1482,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 139220,
+        "lemma": "viśeṣa",
+        "tokens": 1433,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 116329,
+        "lemma": "śakra",
+        "tokens": 1428,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 20217,
+        "lemma": "parvata",
+        "tokens": 1418,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 25880,
+        "lemma": "bheda",
+        "tokens": 1404,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 130008,
+        "lemma": "gandha",
+        "tokens": 1400,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 125579,
+        "lemma": "graha",
+        "tokens": 1389,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 69150,
+        "lemma": "vara",
+        "tokens": 1388,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 167152,
+        "lemma": "vadha",
+        "tokens": 1388,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 95017,
+        "lemma": "pitāmaha",
+        "tokens": 1386,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 100722,
+        "lemma": "daṇḍa",
+        "tokens": 1374,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 50303,
+        "lemma": "bhīma",
+        "tokens": 1341,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 30275,
+        "lemma": "samudra",
+        "tokens": 1332,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 203023,
+        "lemma": "aha",
+        "tokens": 1323,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 147846,
+        "lemma": "bāṇa",
+        "tokens": 1313,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 118517,
+        "lemma": "vaiśampāyana",
+        "tokens": 1308,
+        "cells_attested": 5
+      },
+      {
+        "lemma_id": 89764,
+        "lemma": "deha",
+        "tokens": 1294,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 99099,
+        "lemma": "sūta",
+        "tokens": 1269,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 73816,
+        "lemma": "yama",
+        "tokens": 1257,
+        "cells_attested": 22
+      },
+      {
+        "lemma_id": 79830,
+        "lemma": "roga",
+        "tokens": 1251,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 132712,
+        "lemma": "śiva",
+        "tokens": 1249,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 149046,
+        "lemma": "bodhisattva",
+        "tokens": 1246,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 135379,
+        "lemma": "kṣatriya",
+        "tokens": 1240,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 142252,
+        "lemma": "vega",
+        "tokens": 1239,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 67908,
+        "lemma": "vajra",
+        "tokens": 1227,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 155687,
+        "lemma": "prasāda",
+        "tokens": 1217,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 135840,
+        "lemma": "mitra",
+        "tokens": 1215,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 94243,
+        "lemma": "pārthiva",
+        "tokens": 1205,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 75122,
+        "lemma": "vaśa",
+        "tokens": 1203,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 14543,
+        "lemma": "pakṣa",
+        "tokens": 1179,
+        "cells_attested": 21
+      }
+    ]
+  },
+  "neut": {
+    "n_lemmas": 13857,
+    "n_tokens": 359194,
+    "cells_per_lemma": {
+      "mean": 2.44,
+      "median": 1,
+      "max": 22,
+      "pct_lemmas_full_24": 0.0,
+      "pct_lemmas_ge_12": 1.97,
+      "pct_lemmas_1_cell": 55.76
+    },
+    "lemma_cell_space_attested_pct": 10.15,
+    "cell_lemma_counts": {
+      "Nom.Sing": 9933,
+      "Nom.Dual": 506,
+      "Nom.Plur": 1311,
+      "Acc.Sing": 5543,
+      "Acc.Dual": 392,
+      "Acc.Plur": 1286,
+      "Ins.Sing": 2244,
+      "Ins.Dual": 233,
+      "Ins.Plur": 1647,
+      "Dat.Sing": 820,
+      "Dat.Dual": 7,
+      "Dat.Plur": 41,
+      "Abl.Sing": 2383,
+      "Abl.Dual": 48,
+      "Abl.Plur": 196,
+      "Gen.Sing": 1390,
+      "Gen.Dual": 268,
+      "Gen.Plur": 652,
+      "Loc.Sing": 3811,
+      "Loc.Dual": 160,
+      "Loc.Plur": 810,
+      "Voc.Sing": 58,
+      "Voc.Dual": 3,
+      "Voc.Plur": 7
+    },
+    "cell_token_counts": {
+      "Nom.Sing": 107267,
+      "Nom.Dual": 1464,
+      "Nom.Plur": 10131,
+      "Acc.Sing": 91569,
+      "Acc.Dual": 1429,
+      "Acc.Plur": 13011,
+      "Ins.Sing": 22995,
+      "Ins.Dual": 713,
+      "Ins.Plur": 12418,
+      "Dat.Sing": 4367,
+      "Dat.Dual": 15,
+      "Dat.Plur": 204,
+      "Abl.Sing": 23041,
+      "Abl.Dual": 74,
+      "Abl.Plur": 698,
+      "Gen.Sing": 9743,
+      "Gen.Dual": 616,
+      "Gen.Plur": 5036,
+      "Loc.Sing": 48787,
+      "Loc.Dual": 310,
+      "Loc.Plur": 5211,
+      "Voc.Sing": 85,
+      "Voc.Dual": 3,
+      "Voc.Plur": 7
+    },
+    "freq_bands": {
+      "10-99": {
+        "lemmas": 2196,
+        "cells": 11319,
+        "mean_cells": 5.15
+      },
+      "1": {
+        "lemmas": 5781,
+        "cells": 5781,
+        "mean_cells": 1.0
+      },
+      "2-9": {
+        "lemmas": 5357,
+        "cells": 10704,
+        "mean_cells": 2.0
+      },
+      "100-999": {
+        "lemmas": 452,
+        "cells": 4824,
+        "mean_cells": 10.67
+      },
+      "1000+": {
+        "lemmas": 71,
+        "cells": 1121,
+        "mean_cells": 15.79
+      }
+    },
+    "top_lemmas": [
+      {
+        "lemma_id": 163754,
+        "lemma": "tva",
+        "tokens": 9972,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 71929,
+        "lemma": "rūpa",
+        "tokens": 5151,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 154076,
+        "lemma": "phala",
+        "tokens": 3973,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 154315,
+        "lemma": "bala",
+        "tokens": 3354,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 20377,
+        "lemma": "anna",
+        "tokens": 3226,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 35810,
+        "lemma": "madhya",
+        "tokens": 3123,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 136827,
+        "lemma": "mukha",
+        "tokens": 2885,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 68470,
+        "lemma": "vana",
+        "tokens": 2864,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 67855,
+        "lemma": "vacana",
+        "tokens": 2817,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 25207,
+        "lemma": "bhūta",
+        "tokens": 2732,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 76075,
+        "lemma": "vākya",
+        "tokens": 2517,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 15753,
+        "lemma": "pada",
+        "tokens": 2392,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 142144,
+        "lemma": "vīrya",
+        "tokens": 2250,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 5937,
+        "lemma": "agra",
+        "tokens": 2243,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 16633,
+        "lemma": "satya",
+        "tokens": 2213,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 48908,
+        "lemma": "bhaya",
+        "tokens": 2180,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 64795,
+        "lemma": "yuddha",
+        "tokens": 2123,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 92862,
+        "lemma": "pātra",
+        "tokens": 2036,
+        "cells_attested": 20
+      },
+      {
+        "lemma_id": 102857,
+        "lemma": "sthāna",
+        "tokens": 1998,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 125251,
+        "lemma": "gṛha",
+        "tokens": 1971,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 14116,
+        "lemma": "kāraṇa",
+        "tokens": 1963,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 137542,
+        "lemma": "mūla",
+        "tokens": 1961,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 161166,
+        "lemma": "ghṛta",
+        "tokens": 1938,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 82616,
+        "lemma": "tīrtha",
+        "tokens": 1860,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 116860,
+        "lemma": "śarīra",
+        "tokens": 1845,
+        "cells_attested": 21
+      },
+      {
+        "lemma_id": 78185,
+        "lemma": "mātra",
+        "tokens": 1836,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 85108,
+        "lemma": "duḥkha",
+        "tokens": 1829,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 70493,
+        "lemma": "rājya",
+        "tokens": 1825,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 14320,
+        "lemma": "kārya",
+        "tokens": 1761,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 146095,
+        "lemma": "dāna",
+        "tokens": 1744,
+        "cells_attested": 19
+      },
+      {
+        "lemma_id": 88026,
+        "lemma": "jala",
+        "tokens": 1727,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 116251,
+        "lemma": "vrata",
+        "tokens": 1707,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 89644,
+        "lemma": "jñāna",
+        "tokens": 1706,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 52112,
+        "lemma": "cūrṇa",
+        "tokens": 1664,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 63664,
+        "lemma": "indriya",
+        "tokens": 1610,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 16581,
+        "lemma": "sattva",
+        "tokens": 1602,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 146419,
+        "lemma": "darśana",
+        "tokens": 1596,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 148966,
+        "lemma": "bīja",
+        "tokens": 1574,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 6145,
+        "lemma": "aṅga",
+        "tokens": 1571,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 80283,
+        "lemma": "lakṣaṇa",
+        "tokens": 1552,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 91589,
+        "lemma": "dhana",
+        "tokens": 1546,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 106817,
+        "lemma": "sukha",
+        "tokens": 1531,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 93767,
+        "lemma": "pāpa",
+        "tokens": 1515,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 24793,
+        "lemma": "kula",
+        "tokens": 1512,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 110583,
+        "lemma": "hṛdaya",
+        "tokens": 1499,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 90455,
+        "lemma": "dravya",
+        "tokens": 1485,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 11866,
+        "lemma": "antara",
+        "tokens": 1483,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 147072,
+        "lemma": "dina",
+        "tokens": 1452,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 11898,
+        "lemma": "antarikṣa",
+        "tokens": 1435,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 61244,
+        "lemma": "astra",
+        "tokens": 1389,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 57582,
+        "lemma": "ājya",
+        "tokens": 1377,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 83500,
+        "lemma": "taila",
+        "tokens": 1376,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 135495,
+        "lemma": "kṣīra",
+        "tokens": 1330,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 53322,
+        "lemma": "ardha",
+        "tokens": 1327,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 95944,
+        "lemma": "tattva",
+        "tokens": 1313,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 90781,
+        "lemma": "dvaya",
+        "tokens": 1311,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 83782,
+        "lemma": "traya",
+        "tokens": 1257,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 166808,
+        "lemma": "pura",
+        "tokens": 1213,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 31887,
+        "lemma": "amṛta",
+        "tokens": 1209,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 56229,
+        "lemma": "udaka",
+        "tokens": 1189,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 30562,
+        "lemma": "samara",
+        "tokens": 1177,
+        "cells_attested": 5
+      },
+      {
+        "lemma_id": 78223,
+        "lemma": "māṃsa",
+        "tokens": 1176,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 139407,
+        "lemma": "viṣa",
+        "tokens": 1146,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 15540,
+        "lemma": "pattra",
+        "tokens": 1129,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 81534,
+        "lemma": "liṅga",
+        "tokens": 1106,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 99905,
+        "lemma": "sainya",
+        "tokens": 1106,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 66168,
+        "lemma": "ratna",
+        "tokens": 1096,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 150091,
+        "lemma": "pṛṣṭha",
+        "tokens": 1051,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 51356,
+        "lemma": "citta",
+        "tokens": 1023,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 5484,
+        "lemma": "akṣara",
+        "tokens": 1015,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 141016,
+        "lemma": "pramāṇa",
+        "tokens": 1014,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 136408,
+        "lemma": "mūtra",
+        "tokens": 957,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 62866,
+        "lemma": "āsana",
+        "tokens": 949,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 145433,
+        "lemma": "puṣpa",
+        "tokens": 924,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 161732,
+        "lemma": "cakra",
+        "tokens": 920,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 122839,
+        "lemma": "vidhāna",
+        "tokens": 916,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 135368,
+        "lemma": "kṣatra",
+        "tokens": 907,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 64702,
+        "lemma": "yuga",
+        "tokens": 906,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 131506,
+        "lemma": "śāstra",
+        "tokens": 900,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 74765,
+        "lemma": "varṣa",
+        "tokens": 889,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 90906,
+        "lemma": "dvāra",
+        "tokens": 882,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 89392,
+        "lemma": "jīvita",
+        "tokens": 837,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 26133,
+        "lemma": "bhojana",
+        "tokens": 803,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 20280,
+        "lemma": "pala",
+        "tokens": 802,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 92634,
+        "lemma": "pavitra",
+        "tokens": 796,
+        "cells_attested": 18
+      },
+      {
+        "lemma_id": 38665,
+        "lemma": "ṛta",
+        "tokens": 775,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 95032,
+        "lemma": "pitta",
+        "tokens": 773,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 83600,
+        "lemma": "toya",
+        "tokens": 772,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 110191,
+        "lemma": "hiraṇya",
+        "tokens": 771,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 71129,
+        "lemma": "rāṣṭra",
+        "tokens": 770,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 75493,
+        "lemma": "vastra",
+        "tokens": 762,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 92905,
+        "lemma": "pāna",
+        "tokens": 730,
+        "cells_attested": 17
+      },
+      {
+        "lemma_id": 43702,
+        "lemma": "nagara",
+        "tokens": 720,
+        "cells_attested": 11
+      },
+      {
+        "lemma_id": 2379,
+        "lemma": "karaṇa",
+        "tokens": 716,
+        "cells_attested": 15
+      },
+      {
+        "lemma_id": 41006,
+        "lemma": "śrotra",
+        "tokens": 715,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 56366,
+        "lemma": "udara",
+        "tokens": 711,
+        "cells_attested": 16
+      },
+      {
+        "lemma_id": 135577,
+        "lemma": "kṣetra",
+        "tokens": 705,
+        "cells_attested": 14
+      },
+      {
+        "lemma_id": 10629,
+        "lemma": "anīka",
+        "tokens": 700,
+        "cells_attested": 13
+      },
+      {
+        "lemma_id": 61752,
+        "lemma": "ākāśa",
+        "tokens": 699,
+        "cells_attested": 12
+      },
+      {
+        "lemma_id": 27462,
+        "lemma": "nimitta",
+        "tokens": 694,
+        "cells_attested": 14
+      }
+    ]
+  },
+  "showcase": {
+    "deva_masc": {
+      "lemma_id": 86559,
+      "lemma": "deva",
+      "tokens": 17536,
+      "cells_attested": 22,
+      "cells": {
+        "Nom.Sing": 2201,
+        "Nom.Dual": 88,
+        "Nom.Plur": 4602,
+        "Acc.Sing": 1266,
+        "Acc.Dual": 47,
+        "Acc.Plur": 1418,
+        "Ins.Sing": 194,
+        "Ins.Dual": 1,
+        "Ins.Plur": 874,
+        "Dat.Sing": 209,
+        "Dat.Dual": 0,
+        "Dat.Plur": 856,
+        "Abl.Sing": 33,
+        "Abl.Dual": 0,
+        "Abl.Plur": 122,
+        "Gen.Sing": 886,
+        "Gen.Dual": 19,
+        "Gen.Plur": 2270,
+        "Loc.Sing": 84,
+        "Loc.Dual": 1,
+        "Loc.Plur": 456,
+        "Voc.Sing": 1386,
+        "Voc.Dual": 21,
+        "Voc.Plur": 502
+      }
+    },
+    "phala_neut": {
+      "lemma_id": 154076,
+      "lemma": "phala",
+      "tokens": 3973,
+      "cells_attested": 17,
+      "cells": {
+        "Nom.Sing": 1480,
+        "Nom.Dual": 12,
+        "Nom.Plur": 168,
+        "Acc.Sing": 1413,
+        "Acc.Dual": 4,
+        "Acc.Plur": 254,
+        "Ins.Sing": 78,
+        "Ins.Dual": 2,
+        "Ins.Plur": 220,
+        "Dat.Sing": 11,
+        "Dat.Dual": 0,
+        "Dat.Plur": 0,
+        "Abl.Sing": 38,
+        "Abl.Dual": 0,
+        "Abl.Plur": 10,
+        "Gen.Sing": 59,
+        "Gen.Dual": 2,
+        "Gen.Plur": 67,
+        "Loc.Sing": 130,
+        "Loc.Dual": 0,
+        "Loc.Plur": 25,
+        "Voc.Sing": 0,
+        "Voc.Dual": 0,
+        "Voc.Plur": 0
+      }
+    }
+  }
+}
