@@ -9,6 +9,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-07-15
+### Added
+- **Russian-language folder README documenting the parse-audit findings** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md): по-русски, в ряду README Кочергиной и Бюлера — история развилки метода (фразовая хрестоматия vs дискурсивная грамматика, постановление автора «адаптировать»), адаптированная единица анализа (корректность разбора сноски по Уитни 1889, без оси подачи), итог посева KN-1..KN-10 (8 CONFIRMED · 2 QUESTIONABLE · 0 ошибок из ~280-330), четыре вывода (жанр задаёт профиль надёжности; содержательные подтверждения §608/§771/§639; QUESTIONABLE = недобитые цитаты; жанр источника проверять до запуска конвейера), block_backlog и остаток фазы 2. Also the folder's first README (files, the 31-entry printed errata — the only populated one in the repo). (Fable 5 `claude-fable-5`)
+
 ## [0.2.0] - 2026-07-15
 ### Added
 - **Morphological-parse audit (H797 methodology fork, seed)** — [`parse_audit.yml`](parse_audit.yml)
