@@ -26,9 +26,21 @@
     "frame": "2-member compounds only (multi-member deferred as a limitation)"
   },
   "kill_gate": {
-    "metric": "Cohen κ (coarse + fine)",
+    "metric": "Cohen κ (coarse 5-class + fine Leitan tatpuruṣa subtype)",
     "threshold": 0.7,
-    "rule": "κ<0.7 → revise type taxonomy before publication (C5 §7 P4); negative result publishable (C3 П7)",
-    "status": "PENDING — two annotation passes not yet run"
+    "coarse_kappa": 0.9295,
+    "coarse_ci95": [
+      0.8356,
+      1.0
+    ],
+    "fine_kappa": 0.7201,
+    "fine_ci95": [
+      0.6017,
+      0.8171
+    ],
+    "fine_n": 93,
+    "annotators": "Pass A Opus 4.8 (claude-opus-4-8) · Pass B Sonnet 5 (claude-sonnet-5)",
+    "verdict": "coarse PASS / fine PASS",
+    "rule": "κ<0.7 → revise type taxonomy before publication (C5 §7 P4); negative result publishable (C3 П7)"
   }
 }

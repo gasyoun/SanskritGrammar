@@ -1,0 +1,64 @@
+{
+  "n_common": 120,
+  "coarse": {
+    "kappa": 0.9295,
+    "ci95": [
+      0.8356,
+      1.0
+    ],
+    "observed_agreement": 0.975,
+    "n": 120,
+    "kill_gate_fired": false
+  },
+  "fine": {
+    "kappa": 0.7201,
+    "ci95": [
+      0.6017,
+      0.8171
+    ],
+    "observed_agreement": 0.7849,
+    "n": 93,
+    "kill_gate_fired": false,
+    "subset": "both passes coarse=tatpurusa"
+  },
+  "coarse_confusion": {
+    "bahuvrihi": {
+      "bahuvrihi": 17,
+      "dvandva": 0,
+      "tatpurusa": 1,
+      "unclear": 0
+    },
+    "dvandva": {
+      "bahuvrihi": 0,
+      "dvandva": 6,
+      "tatpurusa": 1,
+      "unclear": 0
+    },
+    "tatpurusa": {
+      "bahuvrihi": 1,
+      "dvandva": 0,
+      "tatpurusa": 93,
+      "unclear": 0
+    },
+    "unclear": {
+      "bahuvrihi": 0,
+      "dvandva": 0,
+      "tatpurusa": 0,
+      "unclear": 1
+    }
+  },
+  "coarse_dist_A": {
+    "bahuvrihi": 18,
+    "tatpurusa": 94,
+    "dvandva": 7,
+    "unclear": 1
+  },
+  "coarse_dist_B": {
+    "bahuvrihi": 18,
+    "tatpurusa": 95,
+    "dvandva": 6,
+    "unclear": 1
+  },
+  "threshold": 0.7,
+  "verdict": "coarse PASS / fine PASS"
+}
