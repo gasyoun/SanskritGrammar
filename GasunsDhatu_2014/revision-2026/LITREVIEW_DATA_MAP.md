@@ -48,13 +48,13 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 
 | Ресурс 2026 г. | Что дает Обзору | Дом |
 |---|---|---|
-| [ZALIZNYAK_1975_1978_2004_COMPARISON.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md) | 12 осей сравнения редакций Зализняка; показывает, что менялась глубина обработки, а не состав списка | Гл. 3 / §3.2; в Обзоре — сноска |
+| [ZALIZNIAK_1975_1978_2004_COMPARISON.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md) | 12 осей сравнения редакций Зализняка; показывает, что менялась глубина обработки, а не состав списка | Гл. 3 / §3.2; в Обзоре — сноска |
 | [TolchelnikovTalmud_2026](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026) (`data/whitney_talmud.json`, 930 verbal_roots) | машинный корнеслов = список Уитни целиком → замыкает русскую линию записи Уитни→Зализняк→Толчельников | Гл. 3 |
 | [H357](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H357-Opus_SanskritGrammar_morphoclass_3way_comparison_08.07.26.md) morphoclass 3-way | кросс-уок 1975→2014→2026; дом — Гл. 3.2, НЕ Обзор | Гл. 3.2 |
 | MUDIDI (мельбурнский эталон дигитализации словарей) | внешняя рамка для «как оцифровывать корнесловы» — 2026-й угол вопроса записи | сноска `[^edlr2]` |
 
 **Внесено в Обзор:** одна сноска-провенанс `[^edlr2]` на линию Уитни→Зализняк→Толчельников
-(с числами 930/≈218 и указателем на ZALIZNYAK-сравнение, TolchelnikovTalmud, MUDIDI) +
+(с числами 930/≈218 и указателем на ZALIZNIAK-сравнение, TolchelnikovTalmud, MUDIDI) +
 фраза «Уитни описывает → Зализняк абстрагирует → Толчельников порождает» в русской
 подсекции. Подробный трехсторонний кросс-уок остается в Гл. 3 (H357), не дублируется.
 

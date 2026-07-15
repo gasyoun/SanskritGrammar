@@ -134,6 +134,6 @@ proposals:
     target: { section: "конкорданс", root: "—" }
     type: whitney-ref
     proposal: "§-конкорданс (раздел «Конкорданс с Зализняком») атрибутирует ядро движка Талмуда — нумерованные морфологические позиции, исчисление типов, порождение по рядам — «Очерку» 1978 г. Однако этот аппарат восходит к статье 1975 г., которую Очерк 1978 не содержит. Предлагается поразрядная атрибуция: позиции/тип/порождение → 1975; запись I/II + полные парадигмы/сандхи → 1978; диахрония/когнаты → 2004 — вместо сплошного «→ Очерк 1978»."
-    evidence: "MORPHOCLASS_3WAY_MEMO.md §4.3; ZALIZNYAK_1975_1978_2004_COMPARISON.md (§ «What it means for us», п.1); ZalizniakMorphology_1975 (морфологические позиции 1/2/3, типы I–IV)"
+    evidence: "MORPHOCLASS_3WAY_MEMO.md §4.3; ZALIZNIAK_1975_1978_2004_COMPARISON.md (§ «What it means for us», п.1); ZalizniakMorphology_1975 (морфологические позиции 1/2/3, типы I–IV)"
     status: pending
     approved_by: null

@@ -15,7 +15,7 @@ here as `SG-H1…SG-H9` and visualisations as `SG-V1…SG-V6`; future sessions c
 existing" anchors point at the roadmap's quarter items (`Q3.2` etc.), the settled memos
 ([`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md),
 [`MORPHOCLASS_COMPARISON_ROADMAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md),
-[`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md)),
+[`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md)),
 and committed data caveats — the closest prior claims this repo actually holds.
 
 ---

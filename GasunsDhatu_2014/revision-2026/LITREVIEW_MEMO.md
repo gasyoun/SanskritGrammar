@@ -39,7 +39,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 **2026-слой — двумя сносками-провенансами** (данные, не мемориал формулировок 2014 г.):
 `[^edlr1]` (числа §2.4: критерий → число; сверка по vidyut / DCS / union_headwords) и
 `[^edlr2]` (линия Уитни→Зализняк→Толчельников: 930 = список Уитни, ≈218 учебных; указатель
-на ZALIZNYAK-сравнение, TolchelnikovTalmud, MUDIDI). Подробности —
+на ZALIZNIAK-сравнение, TolchelnikovTalmud, MUDIDI). Подробности —
 [LITREVIEW_DATA_MAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/LITREVIEW_DATA_MAP.md).
 
 **Дубли с §2.1–§2.2 сведены к перекрестной ссылке** (DO #2): раздел «что такое корень»

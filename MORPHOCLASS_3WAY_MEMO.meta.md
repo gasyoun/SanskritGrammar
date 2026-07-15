@@ -21,7 +21,7 @@ _Created: 08-07-2026 · Last updated: 11-07-2026_
 - Первоисточники (полные тексты в репозитории): 1975 англ. перевод, Гасунс 2014
   морфонологическая запись, Талмуд гл. I–III + `zalizniak-concordance` + база `/z/` (H329).
 - Парная ось (внутризализняковская, 1975/1978/2004) — не переоткрывается, берется из
-  [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md).
+  [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md).
 
 ## Ключевые находки (ранжировано)
 
@@ -89,7 +89,7 @@ issue #50) и 10-07-2026 (переименование Zaliznyak→Zalizniak, з
 ## Связанные документы
 
 - [`MORPHOCLASS_COMPARISON_ROADMAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_COMPARISON_ROADMAP.md) — спека.
-- [`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md) — парная (внутризализняковская) ось.
+- [`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md) — парная (внутризализняковская) ось.
 - [`TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) — машинный джойн 876 корней.
 - [`TolchelnikovTalmud_2026/footnote-proposals/proposals.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/footnote-proposals/proposals.yml) — FN-0015…FN-0017.
 - [`TolchelnikovTalmud_2026/data/z_reconciliation_report.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/z_reconciliation_report.md) — сверка `/z/` (H329).

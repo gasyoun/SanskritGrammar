@@ -26,7 +26,7 @@ anchors — this file is the plan, not the analysis.
 Zalizniak described Sanskrit **three times with a different model each time**, so "по
 Зализняку" is ambiguous — and **none of the three is a full grammar**. Comparison done,
 now **calibrated against Whitney 1889** (the one full reference grammar in the repo) —
-[`ZALIZNYAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNYAK_1975_1978_2004_COMPARISON.md):
+[`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md):
 **5 major · 6 medium · 6 minor** differences across 12 axes. Genre ladder (corrected):
 Whitney 1889 *full grammar* » 1978 *очерк/sketch* » 2004 *конспект/synopsis* » 1975
 *verb-only article*; Whitney *describes*, Zalizniak *abstracts*, the Талмуд *generates*. Headline for the memo: the
