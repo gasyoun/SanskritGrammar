@@ -12,6 +12,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.2.3] - 2026-07-15
+### Added
+- **Russian folder README** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/README.md): по-русски — паспорт живой книги (порождающая морфонология Ряд/Тип/seṭ, наследование модели Зализняка 1975, публикация Ауровиль-2024), состав папки (Talmud-2.1.6 + 14 поглавных страниц с AblautMachine/SandhiCollider, onramp H915, издательский хаб papers/ c A60/A62/A63/WSC-2027, аппарат со standing rule автора), и роль в программе проверки утверждений — **опора, не мишень**: авторитет морфокласса корня в D-B, несущая ось seṭ/aniṭ за флагманским числом -iṣya 56,8 %, приёмник подмножества OVERSTATED/FALSE в A60. Ряд README: [Кочергина](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md) · [Бюлер](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/README.md) · [Кнауэр](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md) · Зализняк×2 · [Уитни](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/README.md). (Fable 5 `claude-fable-5`)
+
 ## [0.2.2] - 2026-07-14
 ### Fixed
 - **`papers/` index: de-linked the un-published source binaries.** The links to the Auroville /
