@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **H984: RQ4 diagnostic item bank + protocol decisions ruled.** [`TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/build_rq4_item_bank.py) emits [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json): 24 items (8 per pre/post/retention phase, 2 per row) drawn from the 745-root Приложение 1 catalogue, restricted to the on-ramp's 4 taught rows (A₁/I₁/U₁/R₁), excluding every root already used in the on-ramp's/talmud-02's worked material, frequency-sorted via kosha's `lemma_frequency.tsv`. 307 eligible candidates, 0 shortfall on any row. [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) updated: MG ruled §6.1–6.3 (Systema-hosted harness, Systema's own Kochergina-stage students, 4-week retention window); §6.4 (consent wording) still open. Harness build follows (H988).
+
 ## [0.19.0] - 2026-07-15
 
 ### Added
