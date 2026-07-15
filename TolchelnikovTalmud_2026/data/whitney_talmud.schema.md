@@ -61,7 +61,7 @@ only as the Phase-4 paradigm deep-link, not as a data source.
 | `ryad_source` | — | `"manual"` or null. |
 | `tip` | **manual** | Тип чередования `I`/`II`/`III`/`IV` (Table 5), or null. |
 | `tip_source` | — | `"manual"` or null. |
-| `tip_default` | — | `"s"` — the unmarked runtime behaviour (Table 3), kept as a fallback for the form generator. |
+| `tip_default` | — | `"I"` — the unmarked runtime behaviour (Table 5, полноизменяемый/full-range type), kept as a fallback for the form generator. |
 | `set` | **manual** | `seṭ` / `aniṭ` / `veṭ` / null. |
 | `set_code` | manual | Raw Table-8 code: `s` / `a` / `v` / `v1`…`v4` (veṭ sub-class), or null. |
 | `set_source` | — | `"manual"` or null. |
