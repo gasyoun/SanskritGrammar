@@ -6,6 +6,7 @@
   "scripts": {
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",
+    "errata:print": "python scripts/build_errata_print_sheet.py",
     "claims": "python scripts/build_claims.py",
     "quantifiers": "python scripts/harvest_quantifiers.py && python scripts/build_quantifiers.py",
     "docusaurus": "docusaurus",
