@@ -39,7 +39,8 @@ changelog tags as `vX.Y.Z`.
   [`sg_mo_013_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_013_adjudicate_sample.py),
   [`sg_mo_013_build_examples.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_013_build_examples.py);
   первый боевой манифест `art:thematic-present` (toc_ref SG-MO-013). Все три валидатора +
-  `npm run build` green. **@WAITING MG виза** (гейт публикации, как у P1).
+  `npm run build` green. **Виза MG получена 15-07-2026 → опубликовано** (ревизия `published`
+  в манифесте, плашка кандидата снята — первая опубликованная статья серии Sangram).
 
 ## [0.18.0] - 2026-07-15
 
