@@ -1,5 +1,5 @@
 {
-  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/verb_classes.json",
+  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS + Talmud Приложение 1",
   "_note": "OCH-1/OCH-3/OCH-5 reuse Kochergina/Bühler's already-published stats verbatim (see claims.yml refs) rather than recomputing here.",
   "OCH2_OCH6_class_shares": {
     "total_present_tokens": 781541,
@@ -15,5 +15,130 @@
     "aya_suffix_tokens": 94735,
     "aya_suffix_pct": 12.12,
     "ya_aya_gap_pct_points": 0.46
+  },
+  "OCH_final_consonant_census": {
+    "n_word_tokens": 3402414,
+    "vowel_final_tokens": 1829965,
+    "final_counts": {
+      "l": 838,
+      "ṇ": 118,
+      "ṅ": 659,
+      "ñ": 1934,
+      "n": 83091,
+      "m": 249461,
+      "t": 99262,
+      "d": 61056,
+      "k": 4100,
+      "ṭ": 1088,
+      "p": 113,
+      "b": 56,
+      "ḥ": 397072,
+      "ṃ": 0,
+      "ṁ": 532979,
+      "r": 69089,
+      "ś": 17848,
+      "ṣ": 256,
+      "s": 23714
+    },
+    "final_pct_of_words": {
+      "l": 0.0246,
+      "ṇ": 0.0035,
+      "ṅ": 0.0194,
+      "ñ": 0.0568,
+      "n": 2.4421,
+      "m": 7.3319,
+      "t": 2.9174,
+      "d": 1.7945,
+      "k": 0.1205,
+      "ṭ": 0.032,
+      "p": 0.0033,
+      "b": 0.0016,
+      "ḥ": 11.6703,
+      "ṃ": 0.0,
+      "ṁ": 15.6647,
+      "r": 2.0306,
+      "ś": 0.5246,
+      "ṣ": 0.0075,
+      "s": 0.697
+    },
+    "stop_ranking_ktTp": [
+      [
+        "t",
+        99262
+      ],
+      [
+        "k",
+        4100
+      ],
+      [
+        "ṭ",
+        1088
+      ],
+      [
+        "p",
+        113
+      ]
+    ]
+  },
+  "OCH_sah_so_sa": {
+    "counts": {
+      "sa": 24813,
+      "saḥ": 1482,
+      "so": 3955
+    },
+    "so_sa_share_pct": 95.1,
+    "note": "token 'sa' is overwhelmingly the pronoun in running text but includes a few homographs; direction test, not a clean count."
+  },
+  "OCH_vet_i_rates": {
+    "before_sya": {
+      "i_forms": 1487,
+      "all_forms": 2618,
+      "i_rate_pct": 56.8
+    },
+    "before_tar_periphrastic": {
+      "i_forms": 53,
+      "all_forms": 126,
+      "i_rate_pct": 42.1
+    },
+    "before_tavya": {
+      "i_forms": 270,
+      "all_forms": 523,
+      "i_rate_pct": 51.6
+    },
+    "before_ta_ppp": {
+      "i_forms": 2233,
+      "all_forms": 4075,
+      "i_rate_pct": 54.8
+    },
+    "before_tva": {
+      "i_forms": 513,
+      "all_forms": 657,
+      "i_rate_pct": 78.1
+    }
+  },
+  "OCH_rare_moods": {
+    "indicative_present": 157003,
+    "optative_active": 72826,
+    "imperative_active": 32750,
+    "benedictive_medium": 221,
+    "injunctive": 2366,
+    "conditional": 269,
+    "rare_three_pct_of_verbal": 0.365
+  },
+  "OCH68_talmud_set_by_series": {
+    "open_roots_with_ryad_and_set": 144,
+    "groupA_series_I1_U1_R1_M1_N1_I2": {
+      "veṭ": 32,
+      "seṭ": 16,
+      "aniṭ": 28
+    },
+    "groupA_anit_share_pct": 36.8,
+    "groupB_other_series": {
+      "aniṭ": 48,
+      "seṭ": 16,
+      "veṭ": 4
+    },
+    "groupB_set_share_pct": 23.5,
+    "_source": "TolchelnikovTalmud_2026/data/talmud_appendix1.json (Приложение 1, manual 2.1.6) — ryad (Табл. 4) × set (Табл. 8), open roots only"
   }
 }
