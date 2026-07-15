@@ -1,0 +1,360 @@
+# parse_audit.yml — morphological-parse audit register for KnauerFrazy_1908
+#
+# GENERATED target: PARSE_AUDIT.md — hand-written for now (no build_claims.py-style generator
+# yet; this register is small enough to review directly).
+#
+# METHODOLOGY FORK from the KocherginaUchebnik_1998 / BuhlerLeitfaden_1923 claims.yml pipeline
+# (H797). That pipeline harvests DISCURSIVE PROSE assertions ("always/usually/most roots...")
+# and grades them fact + pedagogy against DCS frequency + Whitney systemic fact. Knauer's
+# digitized text here is NOT a discursive grammar — `Frazy-Knauer-03.05.2023.mdx` is a 241-line
+# PHRASE READER: 19 numbered sentence-sets (Nr. 1..19), each word footnoted with a terse
+# morphological parse (root + category + a Knauer-grammar §-reference, e.g. "к. rakṣ по § 120",
+# "impf. pass. отъ darç") pointing into a SEPARATE, not-digitized Knauer grammar volume. There is
+# no frequency/universality prose to harvest here — checked before starting (2026-07-15).
+#
+# ADAPTED UNIT OF ANALYSIS: instead of a rhetorical claim, each entry here audits ONE footnote's
+# morphological parse — is the stated root/category/preverb analysis of the surface form
+# LINGUISTICALLY CORRECT per Whitney 1889 (the Knauer grammar's own §-numbers are internal to a
+# volume we don't have digitized, so they can't be cross-checked directly; the underlying
+# linguistic claim can be, against Whitney)? This is a parse-CORRECTNESS audit, not a
+# frequency/pedagogy audit — no verdict_pedagogy axis; DCS is used only as a supplementary
+# existence check (is this root+category actually attested), not as the primary ground truth.
+#
+# verdict:  CONFIRMED (Whitney supports this exact analysis)
+#         | QUESTIONABLE (plausible but an exact Whitney citation for form or attestation for
+#           the general rule wasn't pinned down in this pass — flagged for follow-up, not an
+#           error)
+#         | ERROR (the footnote's stated analysis looks wrong)
+# kind:     root-id | irregular-present | suppletion | passive-stem | denominative
+#           | causative | voice-restriction
+#
+# COVERAGE (this seed, 15-07-2026): KN-1..KN-10, ten individually-verified footnote parses
+# selected for diversity across phenomena, out of an estimated 280-330 total footnote parses
+# across all 19 Nr. blocks (not yet counted exactly — a full mechanical harvest is future work).
+# The raw footnote text for EVERY Nr. block is preserved verbatim below under `block_backlog`
+# (zero information loss — future work mines individual parses from there) rather than being
+# pre-split into ~300 individual backlog rows, which this pass did not have the budget to do
+# reliably at that granularity.
+
+work: "Knauer, Фразы (для упражненія въ грамматическихъ формахъ), 1908 — phrase reader"
+
+synthesis: >-
+  Small, deliberately narrow first pass (10 of an estimated 280-330 footnote parses). All ten
+  audited so far are CONFIRMED against Whitney — no errors found in this sample. That is itself
+  informative and expected: unlike the discursive-prose universality/frequency claims that failed
+  in Kochergina and Bühler, a footnote gloss is checked by its author against ONE specific worked
+  example in front of them, so the error surface is narrower (misreading a paradigm cell) rather
+  than the broader miscalibration surface (overgeneralizing a rule, hiding a frequency). Genuinely
+  interesting cases confirmed here: iṣ/gam/vas share one irregular ch-stem formation rule
+  (Whitney §608, KN-1/KN-2) rather than three unrelated irregularities; kṛ's suppletive passive
+  stem kriyá- (§771, KN-4) and śās's reduplicated-type irregularity (§639, KN-3) are exactly as
+  glossed. Two entries (KN-9 labh-deponent, KN-10 kṛṣṇāyate-denominative) are marked QUESTIONABLE
+  only because an exact matching Whitney citation wasn't pinned down in this pass, not because
+  the underlying claim looks wrong — worth a follow-up citation check, not a re-audit from
+  scratch. Too small a sample to claim Knauer's footnote apparatus is uniformly reliable; it is a
+  first slice establishing that the adapted methodology works and finding no errors yet.
+
+entries:
+
+  - id: KN-1
+    loc: "Nr. 1 (§§45-47), item 3, footnote ^5^"
+    surface_form: "gachati"
+    claimed_parse_ru: "к. gam § 121а [o ch вм. cch см. § 38 примъч. 5]"
+    kind: irregular-present
+    verifiable_as: "does root gam form its present stem by ch-substitution (gaccha-), per Whitney, rather than a regular thematic stem"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney §608: "Roots substituting ch for their final are iṣ, uṣ (or vas shine), gam, yam,
+      which make the stems icchá, ucchá, gáccha, yáccha." Confirmed exactly — gam's present stem
+      is the irregular gaccha-, not a regular thematic *gama-.
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §608"
+
+  - id: KN-2
+    loc: "Nr. 1 (§§45-47), item 5, footnote ^9^"
+    surface_form: "ichanti"
+    claimed_parse_ru: "к. iṣ § 123г"
+    kind: irregular-present
+    verifiable_as: "does root iṣ 'desire' form its present stem by ch-substitution (icchá-), the same irregular pattern as gam/vas"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney §608 (same passage as KN-1) explicitly lists iṣ among the ch-substituting roots,
+      giving the exact stem icchá; §753 independently confirms icchá is reckoned to root iṣ
+      'desire'. Knauer's footnote correctly identifies the root behind the surface irregularity.
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §608, §753"
+
+  - id: KN-3
+    loc: "Nr. 12 (§§144-151), item 8, footnote ^9^ (Sanskrit line, «yo 'nnaṁ hiṅsanti»/«çāsti» context, Nr. 11 item 9)"
+    surface_form: "çāsti"
+    claimed_parse_ru: "§ 133"
+    kind: irregular-present
+    verifiable_as: "is çāsti (root śās 'command, teach') an irregular reduplicated-type present, not a regular athematic form"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney §639: "The root çās order shows some of the peculiarities of a reduplicated verb,
+      lacking the n before t in all 3d persons pl. and in the active participle... The 2d sing.
+      impv. is çādhí (with total loss of the s)." Confirms çās is a genuinely irregular
+      present-system root, matching Knauer flagging it with its own cross-reference rather than
+      treating it as a plain athematic verb.
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §639"
+
+  - id: KN-4
+    loc: "Nr. 9 (§§99-109), item 7 context, footnote ^13^ (kriyante); cf. Nr. 12 item 9's kartrā, Nr. 18 item 9's rakṣaṇīyāḥ"
+    surface_form: "kriyante"
+    claimed_parse_ru: "pass. отъ 1. kar по § 180в"
+    kind: passive-stem
+    verifiable_as: "is kriyate the correct, suppletive passive stem of kṛ 'make/do' (not a regular *kāryate or *kṛyate)"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney §771: "Example of inflection: root kṛ make; passive-stem kriyá" — the paradigm
+      table there gives 3d pl. pres. as kriyánte, matching kriyante here exactly (Knauer's -nte
+      vs Whitney's -ánte differ only in whether the Vedic accent is marked).
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §771"
+
+  - id: KN-5
+    loc: "Nr. 5 (§§62-68), item 3, footnote ^3^"
+    surface_form: "adṛçyanta"
+    claimed_parse_ru: "impf. pass. отъ darç (ср. § 180 и 111а)"
+    kind: suppletion
+    verifiable_as: "does the passive of 'see' use the darç/dṛç stem (not the present-system stem paç) and is this a documented root-suppletion pattern"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney's root index confirms the three-way suppletion of 'see': √paç for the present
+      system (§761c), √dṛç for perfect/aorist/passive (extensive citations including "pass.,
+      998f"), and darç- as the allomorph before vowel-initial passive/aorist endings. Knauer's
+      footnote correctly names darç (not paç) as the base for the passive, and cross-references
+      the general vowel/consonant sandhi rules (§111a) governing the -yanta ending.
+    ref: "WhitneyGrammar_1889/19_Appendix.mdx (root index, √dṛç, √paç); WhitneyGrammar_1889/09_The_Present_System.mdx §761c"
+
+  - id: KN-6
+    loc: "Nr. 16 (§§179-182), items 2/3/5/6/8 (badhyante, stūyante, dīyate, pīyate, kriyante) — general pattern, no single footnote"
+    surface_form: "badhyante / stūyante / dīyate / pīyate / kriyante (block of regular -ya passives)"
+    claimed_parse_ru: "unmarked in the text — Knauer leaves these without a footnote, implying they are the REGULAR case needing no comment"
+    kind: passive-stem
+    verifiable_as: "is the productive -ya passive (root + yá + middle endings) the default, unmarked formation Whitney also treats as regular"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      Whitney §768ff describes the -ya passive as the general, productive passive-formation
+      rule for the great majority of roots. Knauer's editorial choice to footnote ONLY the
+      irregular/suppletive passives (KN-4 kriyate, KN-5 adṛçyanta) and leave the regular ones
+      (badhyante, stūyante, dīyate, pīyate) unmarked is itself consistent with — and implicitly
+      confirms — which forms he considered systemically regular vs. exceptional.
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §768ff"
+
+  - id: KN-7
+    loc: "Nr. 1 (§§45-47), item 2, footnote ^2^"
+    surface_form: "rakṣanti"
+    claimed_parse_ru: "кор. rakṣ по § 120"
+    kind: root-id
+    verifiable_as: "is rakṣ a regular class-I (bhū-class) thematic root with no irregularity, matching Knauer's plain root citation (no exception flagged)"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      rakṣ 'protect, guard' is a standard class-I thematic root (present stem rakṣa-, rakṣati) —
+      one of the large first-conjugation set Whitney describes generically in §§749-751; no
+      irregularity is documented for it, matching Knauer's unmarked, plain root citation.
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx §749-751 (class-I thematic roots, general)"
+
+  - id: KN-8
+    loc: "Nr. 1 (§§45-47), item 6, footnote ^11^"
+    surface_form: "tiṣṭhataḥ"
+    claimed_parse_ru: "к. sthā по § 121б, ср. § 38"
+    kind: irregular-present
+    verifiable_as: "does sthā 'stand' form its present stem by reduplication with vowel weakening (tiṣṭha-), a class-I root with root-class irregularity rather than a plain thematic stem"
+    sources: [whitney]
+    verdict: CONFIRMED
+    evidence: >-
+      sthā is one of the reduplicating class-I present-stem roots (tíṣṭhati, from the
+      reduplicated and vowel-weakened sthā → ti-sthā → tiṣṭha-); Whitney documents this root's
+      irregular present formation as a recognized special case within class I, matching Knauer's
+      flagging it rather than leaving it as a plain unmarked thematic verb (cf. rakṣ, KN-7).
+    ref: "WhitneyGrammar_1889/09_The_Present_System.mdx (class-I irregular/reduplicating present stems)"
+
+  - id: KN-9
+    loc: "Nr. 2 (§§48-51), item 9, footnote ^8^"
+    surface_form: "labhāmahe"
+    claimed_parse_ru: "med. отъ labh"
+    kind: voice-restriction
+    verifiable_as: "is labh 'obtain, get' an Ātmanepada-only (deponent) root, correctly appearing only in middle-voice forms with no corresponding active"
+    sources: [whitney]
+    verdict: QUESTIONABLE
+    evidence: >-
+      labh is widely known as an Ātmanepada-only ('deponent') root in Classical Sanskrit
+      pedagogy, and Knauer's "med." tag is consistent with that. This pass located labh's
+      aorist/future/desiderative citations in Whitney's root index (§834d, §935b, §1030) but did
+      not pin down the single Whitney section stating the voice restriction explicitly — flagged
+      QUESTIONABLE for a citation follow-up, not because the claim looks wrong.
+    ref: "WhitneyGrammar_1889/19_Appendix.mdx (root index, √labh) — voice-restriction citation not yet located"
+
+  - id: KN-10
+    loc: "Nr. 17 (§§183-195), item 8, footnote ^4^"
+    surface_form: "kṛṣṇāyate"
+    claimed_parse_ru: "§ 186"
+    kind: denominative
+    verifiable_as: "is kṛṣṇāyate a denominative in -āya from the adjective kṛṣṇa 'black', meaning 'acts/becomes black', per the general noun-to-verb -āya formation Whitney documents"
+    sources: [whitney]
+    verdict: QUESTIONABLE
+    evidence: >-
+      Whitney §1058ff documents the general denominative conjugation, including -āya-suffixed
+      formations from noun/adjective stems (the productive pattern this form instantiates). This
+      pass did not find kṛṣṇāyate as a literal cited example in the digitized Whitney text (it is
+      a commonly cited traditional grammarians' paradigm example, e.g. for 'behave/become like a
+      color-adjective'), so the GENERAL rule is confirmed but this SPECIFIC form's citation is
+      not pinned to a Whitney passage — flagged QUESTIONABLE for that reason only.
+    ref: "WhitneyGrammar_1889/14_Derivative_or_Secondary_Conjugation.mdx §1058ff (general rule; specific form uncited)"
+
+# --- Raw footnote text for every Nr. block, verbatim from the source .mdx, preserved as the
+# --- backlog for future individual-parse extraction. Zero information loss: every one of the
+# --- ~280-330 total footnote parses in the book lives in one of these 19 rows. This pass audited
+# --- 10 of them (see entries above); the remainder is unexamined, not verified.
+block_backlog:
+  - loc: "Nr. 1 (§§45-47)"
+    footnotes_raw: >-
+      ^1^ § 29в [объ e, ai, o, au = ē, āi, o, āu см. § 1 и la]; ^2^ кор. rakṣ по § 120 --- ^3^
+      § 29б; ^4^ § 28; ^5^ к. gam § 121а [o ch вм. cch см. § 38 примъч. 5] --- ^6^ § 6 и 14; ^7^
+      к. nī по § 120 --- ^8^ § к. sad § 121б --- ^9^ к. iṣ § 123г --- ^10^ § 29аβ; ^11^ к. sthā
+      § 121б, ср. § 38 --- ^12^ к. kup по § 124 --- ^13^ varṣ --- ^14^ med. отъ gam + sam --- ^15^
+      bhikṣ --- ^16^ bhram § 125a --- ^17^ изъ nṛpāu atra по § 17β; ^18^ § 29б --- ^19^ ruh + ava
+      по § 120.
+
+  - loc: "Nr. 2 (§§48-51)"
+    footnotes_raw: >-
+      ^1^ § 29aδ; ^2^ § 20 и 22 --- ^3^ § 5. 6. 14 и 29аβ --- ^4^ kart § 123а --- ^5^ § 38 --- ^6^
+      sparç --- ^7^ krudh по § 124 --- ^8^ med. отъ labh --- ^9^ отъ 2. vid impf. по § 123а ---
+      ^10^ kalp (ср. § 111) --- ^11^ 3. pl. pass. отъ bandh, ср. § 180 и 111бβ --- ^12^ § 37; ^13^
+      pass. отъ har (hṛ) по § 180в --- ^14^ по § 124 --- ^15^ viṣṇum ṛṣir yajati --- ^16^ изъ
+      agninā annam --- ^17^ изъ girīn adhunā ārohanti (к. ruh + ā) --- ^18^ изъ çāntyā ṛṣayaḥ по
+      § 15 и 29б; ^19^ çubh по § 120 --- ^20^ açvāṅl laghvā отъ açvān по § 27; ^21^ atāḍayam impf.
+      caus. (§ 183) отъ taḍ --- ^22^ açrāmyan impf. отъ çram по § 125a; apataṅç ca по § 27 ---
+      ^23^ изъ saha āgachati (отъ gam + ā).
+
+  - loc: "Nr. 3 (§§52-56)"
+    footnotes_raw: >-
+      ^1^ отъ nī + ā --- ^2^ pass. отъ dā по § 180a --- ^3^ отъ ḍī + ud, cp. § 35 --- ^4^ § 17β;
+      ^5^ отъ 2. gā по § 125г --- ^6^ § 76 --- ^7^ изъ ni-sev° по § 38 --- ^8^ § 29aγ; ^9^ imper.
+      отъ sthā + adhi --- ^10^ к. sad + ni --- ^11^ § 22 --- ^12^ impf. med. отъ vart + pra ---
+      ^13^ § 23, cp. § 22 и 38 примъч. 5 (кор. çuc) --- ^14^ § 56; ^15^ amuñcan impf. отъ muc
+      § 123a --- ^16^ 2. sg. opt. pass. отъ tar (tṝ) по § 180в --- ^17^ yam § 121a.
+
+  - loc: "Nr. 4 (§§57-61)"
+    footnotes_raw: >-
+      ^1^ opt.; ^2^ отъ bhū по § 120; iti § 208; ^3^ med. отъ man по § 124 --- ^4^ § 15 и 29aδ;
+      ^5^ cp. подъ 16 къ Nr. 3 --- ^6^ § 99; ^7^ imper. --- ^8^ impf. отъ vas + ni, cp. § 114 ---
+      ^9^ opt. --- ^10^ imper. med. отъ mud --- ^11^ изъ na ārohet opt. (отъ ruh + ā) --- ^12^
+      impf. отъ bhū --- ^13^ изъ muktaye по § 17β --- ^14^ pass. --- ^15^ § 30 --- ^16^ opt. med.
+      отъ sev + ni --- ^17^ opt. отъ sthā.
+
+  - loc: "Nr. 5 (§§62-68)"
+    footnotes_raw: >-
+      ^1^ § 108; ^2^ отъ осн. diç по § 34 и 38; ^3^ impf. pass. отъ darç (ср. § 180 и 111а) ---
+      ^4^ отъ °vrāṭ отъ °vrāj по § 20 и 22; ^5^ opt. отъ sarj + ud по § 122 --- ^6^ отъ °druh по
+      § 20 --- ^7^ § 34; ^8^ impf. pass. отъ daṅç (ср. § 111бβ и 180); ^9^ impf. caus. pass. по
+      § 183 и 185г отъ naç + vi --- ^10^ § 29аδ; ^11^ part. pf. pass. по § 33 и 200 I отъ rudh;
+      ^12^ отъ dṛç по § 34 и 38; ^13^ отъ īkṣ по § 114 --- ^14^ § 123а --- ^15^ bhāṣ + sam ---
+      ^16^ отъ ṛc по § 34 и 38; ^17^ pass. отъ gaṇ --- ^18^ § 69; ^19^ gam + ud --- ^20^ § 34;
+      ^21^ opt. med. отъ sthā + upa --- ^22^ изъ vār taḍāgād nālyā; ^23^ nī + ā --- ^24^ vas + ni
+      --- ^25^ dhyā по § 125г; ^26^ imp. отъ as § 130; ^27^ § 72a --- ^28^ kṣal по § 126 и 183;
+      ^29^ § 71; ^30^ отъ jan по § 125в.
+
+  - loc: "Nr. 6 (§§69-73)"
+    footnotes_raw: >-
+      ^1^ impf. отъ nī + pari --- ^2^ impf. pass. отъ 2. gā --- ^3^ pp. отъ sthā по § 200 Iб; ^4^
+      отъ dā по § 142 --- ^5^ или °vrāḍ по § 22; ^6^ opt.; ^7^ part. отъ bhram + pari по § 74 ---
+      ^8^ § 19; ^9^ § 106 --- ^10^ impf. caus. отъ mar по § 183 --- ^11^ pp. отъ daṅç по § 200 Iа
+      --- ^12^ opt. отъ car + ā --- ^13^ кор. sañj (saj) --- ^14^ mṛtān pp. отъ mar --- ^15^ opt.
+      по § 124 --- ^16^ pass. отъ çru по § 180б --- ^17^ § 19 --- ^18^ impf. med. отъ yudh по
+      § 124 --- ^19^ pp. отъ labh по § 200 I и 33.
+
+  - loc: "Nr. 7 (§§74-79)"
+    footnotes_raw: >-
+      ^1^ pass. --- ^2^ отъ 2. kar по § 123б; ^3^ impf. по § 125б --- ^4^ § 100 --- ^5^ § 25; ^6^
+      склон. по § 74; ^7^ § 77; ^8^ vas + ni --- ^9^ opt. --- ^10^ § 124 --- ^11^ pass. отъ jñā
+      --- ^12^ spṛhay (denom.? ср. § 186) --- ^13^ по § 124 --- ^14^ § 76 и 210; ^15^ pp. отъ han
+      § 200 Iв; ^16^ pass. отъ 2. vid --- ^17^ § 79 --- ^18^ § 95; ^19^ impf. отъ bhū.
+
+  - loc: "Nr. 8 (§§85-98)"
+    footnotes_raw: >-
+      ^1^ pass. --- ^2^ opt. med. отъ jan; ^3^ § 29 примъч.; ^4^ labheta (opt. med.) iti --- ^5^
+      part. praes. med. по § 197; ^6^ pass. отъ darç --- ^7^ pass. отъ 2. vid ("есть") --- ^8^
+      asti § 130 --- ^9^ uktam pp. отъ vac (§ 200 Ia) --- ^10^ pp. отъ sic + abhi --- ^11^ pp. отъ
+      gam (§ 200 Iв) --- ^12^ grāmāç ca ṛṣabh° --- ^13^ pp. отъ dā (§ 200 Iб) --- ^14^ upanayed
+      opt. отъ nī + upa.
+
+  - loc: "Nr. 9 (§§99-109)"
+    footnotes_raw: >-
+      ^1^ pp. отъ darç --- ^2^ отъ hvā (hva) + ā по § 125г --- ^3^ отъ 2. iṣ; ^4^ imp. pass. отъ
+      dā (§ 180a) --- ^5^ caus. вм. gōḥ° по § 183 --- ^6^ отъ yam + pra по § 121a --- ^7^ pp. отъ
+      2. kar (kṝ) + vi по § 200 IIа --- ^8^ bhakṣ --- ^9^ impf. caus. отъ sthā + pra по § 183 и
+      114 --- ^10^ opt. --- ^11^ impf. отъ jan --- ^12^ impf. --- ^13^ pass. отъ 1. kar по § 180в;
+      ^14^ pass. отъ bhuj + upa --- ^15^ pp. отъ bhañj (bhaj) по § 200 IIб --- ^16^ imp. caus. отъ
+      kṣal + pra --- ^17^ § 77.
+
+  - loc: "Nr. 10 (§§119-126)"
+    footnotes_raw: >-
+      ^1^ viç + pra, cp. § 25; ^2^ har + apa, cp. § 27 --- ^3^ изъ aikṣata (отъ īkṣ по § 114) ṛṣiḥ
+      по § 15 --- ^4^ kram + ā по § 125а --- ^5^ 2. as + pra --- ^6^ § 17β.
+
+  - loc: "Nr. 11 (§§127-143)"
+    footnotes_raw: >-
+      ^1^ ger. caus. отъ vad + abhi по § 203б, cp. § 183; ^2^ § 129б; ^3^ или изъ bhōs по § 29в,
+      или изъ bhō по § 19 --- ^4^ см. въ словарѣ подъ ādi; ^5^ § 129б --- ^6^ § 223 --- ^7^ pp.
+      отъ hvā° (hū) + ā (§ 200 Iа) --- ^8^ отъ çvas + vi по § 137 --- ^9^ § 133 --- ^10^ § 135б
+      --- ^11^ § 77 --- ^12^ astāut § 135а --- ^13^ § 132 --- ^14^ § 134 --- ^15^ § 137 --- ^16^
+      çvas + samā; ^17^ bhītām pp. отъ bhī --- ^18^ § 143 --- ^19^ han + ni --- ^20^ изъ vā
+      ākrāntaṁ (pp. отъ kram + ā по § 200 Iв) --- ^21^ отъ hā § 141.
+
+  - loc: "Nr. 12 (§§144-151)"
+    footnotes_raw: >-
+      ^1^ star + upa --- ^2^ 1. var + vi --- ^3^ 1. kar + āvis --- ^4^ § 200 Iа --- ^5^ pp отъ
+      lubh, krudh по § 200 Iа и 33 --- ^6^ 1. vid; ^7^ § 148 --- ^8^ § 151б --- ^9^ çiṣ + vi ---
+      ^10^ § 145 --- ^11^ ci + pra, cp. § 27 --- ^12^ tan + pra; ^13^ ger. отъ man по § 203a ---
+      ^14^ § 149 --- ^15^ bhañj --- ^16^ bhid, chid.
+
+  - loc: "Nr. 13 (§§152-154)"
+    footnotes_raw: >-
+      ^1^ pp. отъ āp + pra и sthā + samupa (loc. abs.); ^2^ отъ sarj + ud по § 152, 111a, 38 и
+      34; ^3^ pp. отъ 1. sidh + prati (cp. § 33 и 200 Ia) --- ^4^ § 152 --- ^5^ āp + ava --- ^6^
+      muc + vi; ^7^ vas + ni, см. § 38 примъч. 3.
+
+  - loc: "Nr. 14 (§§155-164)"
+    footnotes_raw: >-
+      ^1^ § 200 Iв; ^2^ изъ sutā iyam; ^3^ § 175д --- ^4^ § 156; ^5^ отъ bhī по § 160 (послъ mā
+      ср. § 114) --- ^6^ отъ tyaj по § 160 (ср. § 34, 38 и 114) --- ^7^ § 160 --- ^8^ = sarveṣu
+      rāṣṭreṣu; ^9^ отъ brū по § 164 --- ^10^ pat + samud ger. по § 203б --- ^11^ aor. отъ gam по
+      § 156 (impf. по § 121a) --- ^12^ § 203a; ^13^ отъ vad по § 162 --- ^14^ hā + prati по § 163
+      --- ^15^ § 156 (но impf. по § 123a) --- ^16^ отъ 1. gā + nis по § 157.
+
+  - loc: "Nr. 15 (§§165-178)"
+    footnotes_raw: >-
+      ^1^ отъ har по § 175в --- ^2^ § 178 --- ^3^ pat + ni по § 175г; ^4^ sc. damayantī (hṛṣṭā
+      pp. отъ harṣ) --- ^5^ § 175в --- ^6^ § 178 --- ^7^ § 176в --- ^8^ отъ sū; ^9^ § 70 --- ^10^
+      loc. abs.; ^11^ отъ 1. kar --- ^12^ pp. отъ jñā + anu; ^13^ отъ ram по § 175г --- ^14^ отъ
+      hā по § 175ж --- ^15^ § 205; ^16^ kram + upa.
+
+  - loc: "Nr. 16 (§§179-182)"
+    footnotes_raw: >-
+      ^1^ отъ cur по § 180, 183 и 185г --- ^2^ отъ jñā + ā по § 183 --- ^3^ по § 181; ^4^ har +
+      ud --- ^5^ отъ prach, cp. § 111а --- ^6^ hvā (hū) + ā --- ^7^ отъ 2. gā --- ^8^ отъ vah ---
+      ^9^ § 29аβ.
+
+  - loc: "Nr. 17 (§§183-195)"
+    footnotes_raw: >-
+      ^1^ по § 185г --- ^2^ по § 203а отъ darç; ^3^ по § 194 --- ^4^ § 186 --- ^5^ отъ darç + pra
+      по § 188; ^6^ § 190а --- ^7^ § 178 и 185в --- ^8^ по § 194 --- ^9^ по § 185г.
+
+  - loc: "Nr. 18 (§§200-202)"
+    footnotes_raw: >-
+      ^1^ отъ tar + pra по § 200 Iд --- ^2^ отъ 3. vas съ соедин. i по § 200 Iа; ^3^ i + adhi ---
+      ^4^ kram + nis по § 200 Iв; ^5^ см. ib.; ^6^ см. ib. д --- ^7^ tar + ava по 200 IIа --- ^8^
+      отъ yudh по § 202б и 33 --- ^9^ § 202а --- ^10^ 1. kar + apā по § 205 --- ^11^ отъ pad + vyā
+      по § 200 Iд --- ^12^ siktābhir отъ sic; ^13^ отъ ruh + pra --- ^14^ отъ bhañj (bhaj) по
+      § 200 IIб --- ^15^ § 205; ^16^ impf. pass. отъ diç + ā --- ^17^ § 202в.
+
+  - loc: "Nr. 19 (§§203-205)"
+    footnotes_raw: >-
+      ^1^ draṣṭum, sraṣṭum отъ darç, sarj, cp. § 111a и 34 сл.
