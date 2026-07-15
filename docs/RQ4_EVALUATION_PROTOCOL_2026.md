@@ -115,7 +115,8 @@ row.
 ## 6. `@DECIDE` items (a human should decide before recruitment starts)
 
 **§6.1–6.3 RULED 15-07-2026 (MG):** Systema-hosted, Systema's own students, 4-week retention.
-§6.4 (consent wording) still open — drafted, not finalised (see the harness handoff, H988).
+§6.4 (consent wording) still open — drafted, not finalised (see the harness handoff,
+[H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)).
 
 1. **Recruitment population + channel** — Systema-Sanscriticum's own Kochergina-stage students
    (has real accounts + a channel to reach them, but conflates "student of this specific school"
