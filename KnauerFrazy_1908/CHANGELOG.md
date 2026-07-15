@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.2.0] - 2026-07-15
 ### Added
 - **Morphological-parse audit (H797 methodology fork, seed)** — [`parse_audit.yml`](parse_audit.yml)
   (KN-1..KN-10) + [`PARSE_AUDIT.md`](PARSE_AUDIT.md). H797 asks to port the Kochergina/Bühler
