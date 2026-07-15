@@ -52,8 +52,7 @@ changelog tags as `vX.Y.Z`.
   отделить посессив, заменить редкую MW-этимологию морфоанализатором). Скрипты
   [`sg_wf_003_krt_validation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_krt_validation.py)
   + [`sg_wf_003_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_003_adjudicate_sample.py);
-  3 валидатора green, статья собирается (не участвует в сборочной ошибке; текущий сбой
-  сборки — только предсуществующая страница GasunsDhatu на origin/main, не связана).
+  3 валидатора green; полная сборка docusaurus green (проверено на чистом `npm ci`).
   Публикация гейтится авторской визой. **Волна W2 пилотов (P1–P5) завершена.**
 
 ## [0.23.0] - 2026-07-15
