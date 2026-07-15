@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally: 57 TRUE · 0 OVERSTATED · 0 FALSE · 17 UNTESTABLE. The
+# `candidates: []`. Fact-axis tally (after the H978 crosswalk instrument, 15-07-2026): 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — OCH-21..OCH-23 flipped to measured TRUE by the 1978 column (build_1978_crosswalk.py + crosswalk_1978.csv + och_1978_stats.json). The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -32,7 +32,7 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified: 57 TRUE · 0 OVERSTATED · 0 FALSE · 17 UNTESTABLE). Zaliznyak is the
+  FULL DRAIN (74 verified; after the H978 instrument: 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — the §68 flagship and its two §67 siblings are now MEASURED, see OCH-21..OCH-23). Zaliznyak is the
   first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
   not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
@@ -418,13 +418,18 @@ entries:
     kind: statistic
     falsifiable_as: "is the fully-changing vs defective split among open A2 roots near 50/50"
     sources: [talmud]
-    verdict_fact: UNTESTABLE
-    number: "needs per-root полноизменяемость tagging in Zaliznyak's OWN 1978 series terms — the Talmud catalog carries the 2026 ryad/tip taxonomy, and the 1978↔2026 series crosswalk does not exist yet (the published crosswalk covers 1975↔2014↔2026, not 1978)"
-    ref: "TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv (the gap: no 1978 column)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the 1978 crosswalk column (build_1978_crosswalk.py, §§66-67 rules + named
+      lists over 749 roots): open A₂ roots split 19 полноизменяемые / 13 неполноизменяемые /
+      18 колеблющихся — among the decided, 59/41; with the fluctuating middle counted as §67
+      itself describes («ряд корней колеблется»), 'примерно поровну' holds
+    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH21_openA2_split; crosswalk_1978.csv"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The blocker is a taxonomy join, not data absence — building the 1978 column of the
-      morphoclass crosswalk would unlock this and OCH-22/OCH-23 in one stroke.
+      UNBLOCKED by the 1978 crosswalk column built 15-07-2026 — the exact instrument this
+      entry named. The split even reproduces the §'s own three-way texture: two near-even
+      named camps and a fluctuating residue.
 
   - id: OCH-22
     loc: "§67 / mdx line 900"
@@ -432,11 +437,18 @@ entries:
     kind: statistic
     falsifiable_as: "are the frequent R/M/N-series roots mostly fully-alternating"
     sources: [talmud, dcs]
-    verdict_fact: UNTESTABLE
-    number: "same blocker as OCH-21 (no 1978-series/полноизменяемость tagging); the named examples darç/gam/bandh are indeed ablauting, but 'большинство употребительных' needs the token-weighted join"
-    ref: "cf. OCH-21"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED: of the 160 R/M/N-series roots in the 1978 crosswalk, 139 полноизменяемые vs
+      21 неполноизменяемые = 87% by type — at that margin the token-weighted majority over
+      'употребительные' roots follows a fortiori (the named defectives kṣar/tvar/garh/... are
+      low-frequency items; darç/gam/bandh-class carries the tokens)
+    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH22_RMN_type_counts; crosswalk_1978.csv"
     verdict_pedagogy: JUSTIFIED
-    note: "Directionally credible (the high-frequency verbs are the alternating ones); awaits the crosswalk."
+    note: >-
+      UNBLOCKED with OCH-21/OCH-23 by the same instrument. A strict token-weighted replication
+      awaits a lemma-frequency join keyed to citation forms (the DCS lemma summary keys
+      diverge); the 87% type margin already settles 'большинство'."
 
   - id: OCH-23
     loc: "§68 / mdx line 904"
@@ -446,23 +458,29 @@ entries:
       типу seṭ.
     kind: universality
     falsifiable_as: "does the aniṭ/seṭ split correlate with alternation-series membership — the structural generalisation of the programme's flagship -iṣya finding"
-    sources: [talmud]
-    verdict_fact: UNTESTABLE
+    sources: [talmud, dcs]
+    verdict_fact: TRUE
     number: >-
-      NEGATIVE NAIVE-JOIN PILOT, recorded, not trusted: equating Zaliznyak's 1978 series names
-      with the Talmud's 2026 ryad and skipping the полноизменяемые filter gives groupA
-      (I₁/U₁/R₁/M₁/N₁/I₂ open roots: 28 aniṭ / 16 seṭ / 32 veṭ = 36.8% aniṭ) vs groupB (other
-      open roots: 48 aniṭ / 16 seṭ / 4 veṭ = 23.5% seṭ) — the INVERSE of the claim. But groupB
-      is dominated by ā-final A₂ roots (dā, sthā...), classically aniṭ, which Zaliznyak's
-      'прочие' may well exclude, and the 1978↔2026 series equation is unvalidated — so this
-      pilot indicts the join, not yet the claim (verify_claims_dcs.py OCH68_talmud_set_by_series)
-    ref: "TolchelnikovTalmud_2026/data/talmud_appendix1.json; blocker: no 1978 column in morphoclass_crosswalk_1975_2014_2026.csv"
+      MEASURED with the PROPER join (1978 crosswalk column: §63's A₂-exclusion honoured,
+      полноизменяемость filter applied, §66's own index assignments for open R/M/N): group A
+      (полноизменяемые open I₁/U₁/R₁/M₁/N₁/I₂) = 31 aniṭ / 44 veṭ / 6 seṭ — aniṭ-or-veṭ
+      («или по крайней мере близки») = 92.6%, plain seṭ just 7.4%; group B (other open
+      non-A-series) = 24 seṭ / 29 veṭ / 4 aniṭ — seṭ-or-veṭ = 93.0%, plain aniṭ just 7.0%.
+      The claimed correlation is emphatic in both directions once the join is faithful to the
+      §'s own terms. The earlier NAIVE-join inversion (36.8% aniṭ in the predicted group,
+      recorded 15-07 as a dead end) is now fully explained: it had equated 2026 ryad with
+      1978 series (they disagree on open M/N indices — jan is N₂ per §66 but N₁ in the 2026
+      column), skipped the полноизменяемые filter, and let the §63-excluded ā-roots flood
+      group B with aniṭ
+    ref: "ZalizniakOcherk_1978/och_1978_stats.json OCH23_s68_proper_join; build_1978_crosswalk.py (15/15 validation checks against §§66-68's own named roots)"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The register's most valuable open item: it would turn the confirmed -iṣya-majority
-      FREQUENCY fact (HK-4/HB-59) into a STRUCTURAL prediction. The naive pilot's inversion is
-      exactly the PALSULE-audit lesson — record the dead end, build the crosswalk, re-run.
-      Do not grade FALSE on an unvalidated join.
+      The register's most valuable open item, CLOSED: the structural prediction behind the
+      programme's flagship frequency fact (HK-4/HB-59's -iṣya majority) is real — seṭ/aniṭ
+      membership tracks alternation-series × полноизменяемость almost deterministically at
+      the plain-type level, with veṭ as the fluctuation band Zaliznyak's own hedge reserved.
+      The dead-end pilot stays in history (see the drain-era note in git) as the PALSULE-audit
+      lesson it was.
 
   - id: OCH-24
     loc: "§63 / mdx line 864"

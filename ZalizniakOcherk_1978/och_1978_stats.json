@@ -1,0 +1,28 @@
+{
+  "_source": "crosswalk_1978.csv (this script) x z_set (2014 Zaliznyak DB via the base crosswalk)",
+  "OCH23_s68_proper_join": {
+    "groupA_full_I1_U1_R1_M1_N1_I2": {
+      "aniṭ": 31,
+      "seṭ": 6,
+      "veṭ": 44
+    },
+    "groupA_anit_pct": 38.3,
+    "groupA_anit_plus_vet_pct": 92.6,
+    "groupB_other_open_non_A": {
+      "seṭ": 24,
+      "aniṭ": 4,
+      "veṭ": 29
+    },
+    "groupB_set_pct": 42.1,
+    "groupB_set_plus_vet_pct": 93.0
+  },
+  "OCH21_openA2_split": {
+    "full": 19,
+    "fluctuating": 18,
+    "defective": 13
+  },
+  "OCH22_RMN_type_counts": {
+    "full": 139,
+    "defective": 21
+  }
+}
