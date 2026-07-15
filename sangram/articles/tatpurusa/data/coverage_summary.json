@@ -1,0 +1,34 @@
+{
+  "study": "Sangram P4 (SG-WF-008, tatpuruṣa) — compound-type inter-annotator κ study",
+  "toc_ref": "SG-WF-008",
+  "evidence_limit": "EM4 — compound type not annotated in DCS (segmentation only)",
+  "method": "two independent classification passes over a seeded sample; Cohen κ; C5 §7 P4 kill-gate κ<0.7",
+  "codebook_anchor": "Edgar Leitan (Э. З. Лейтан), Pāṇinian/Mahābhāṣya arrangement — dvigu ⊂ karmadhāraya ⊂ tatpuruṣa",
+  "snapshot": {
+    "master": "<GitHub>\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned after dcs-conllu history rewrite; binding is provenance table + SHA-256"
+  },
+  "universe_where": "token.feat_case='Cpd' reconstructed into compounds; 2-member = run length 1 + inflected head",
+  "denominators": {
+    "total_cpd_member_tokens": 841052,
+    "sentences_with_compounds": 396305,
+    "total_compounds": 595021,
+    "two_member_compounds": 442649,
+    "multi_member_compounds": 152372
+  },
+  "sample": {
+    "seed": 20260715,
+    "size": 120,
+    "frame": "2-member compounds only (multi-member deferred as a limitation)"
+  },
+  "kill_gate": {
+    "metric": "Cohen κ (coarse + fine)",
+    "threshold": 0.7,
+    "rule": "κ<0.7 → revise type taxonomy before publication (C5 §7 P4); negative result publishable (C3 П7)",
+    "status": "PENDING — two annotation passes not yet run"
+  }
+}
