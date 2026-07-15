@@ -1760,7 +1760,7 @@
     },
     "sum_of_summary_row_approx": 590,
     "paper_stated_exclusions": "~240 roots with no attested relevant forms (incl. ~110 seṭ-only-by-default) PLUS all ā-final roots entirely (mdx line 307)",
-    "assessment": "NOT independently verified — this pass could not confirm how many roots are 'ā-final' as a category (the paper does not give that count explicitly), so the arithmetic 750(analyzed) - 240(unattested) - X(ā-final) = ~590(Table 5 total) cannot be checked without knowing X. Flagged as a candidate for a human Sanskritist to check, NOT asserted as an error — the gap could equally be this session's incomplete understanding of which roots count as 'ā-final' here."
+    "assessment": "The paper's OWN internal arithmetic (750 - 240 - X(ā-final) = ~590) can't be checked without knowing X, the ā-final root count it doesn't state — BUT see check_anit_set_distribution() below: the independent Talmud dataset corroborates the 170 and 320 columns specifically (aniṭ/seṭ) quite closely, which is a stronger and more useful result than resolving this internal-arithmetic gap would be."
   },
   "whitney_corpus_size_check": {
     "whitney_roots_csv_total_entries": 930,
@@ -1768,5 +1768,875 @@
     "paper_stated_analyzed": "approximately 750",
     "gap": 83,
     "assessment": "WhitneyRoots/crosswalk/roots.csv has more entries than Zaliznyak's stated Whitney total (847) — likely a different counting convention (e.g. this digitized list may include cross-referenced/homonym-split entries Zaliznyak's '847 non-cross-referenced entries' phrasing explicitly excludes) rather than an error in either source. Not resolved in this pass — flagged for whoever maintains WhitneyRoots to confirm the exact filtering Zaliznyak applied."
+  },
+  "talmud_series_distribution_check": {
+    "raw_talmud_series_counts": {
+      "A1": 155,
+      "A2": 85,
+      "I0": 27,
+      "I1": 107,
+      "I2": 52,
+      "L": 21,
+      "M0": 3,
+      "M1": 10,
+      "M2": 13,
+      "N0": 44,
+      "N1": 49,
+      "N2": 8,
+      "R0": 22,
+      "R1": 83,
+      "R2": 18,
+      "U0": 7,
+      "U1": 147,
+      "U2": 54
+    },
+    "comparisons": [
+      {
+        "zaliznyak_group": "A1 (general ~100 + samprasāraṇa ~60)",
+        "zaliznyak_approx": 160,
+        "talmud_series": [
+          "A1"
+        ],
+        "talmud_count": 155,
+        "gap": -5,
+        "gap_pct": -3.1
+      },
+      {
+        "zaliznyak_group": "A2 (alternating-element ~50 + consonant-final ~30)",
+        "zaliznyak_approx": 80,
+        "talmud_series": [
+          "A2"
+        ],
+        "talmud_count": 85,
+        "gap": 5,
+        "gap_pct": 6.2
+      },
+      {
+        "zaliznyak_group": "L (series L, ~20)",
+        "zaliznyak_approx": 20,
+        "talmud_series": [
+          "L"
+        ],
+        "talmud_count": 21,
+        "gap": 1,
+        "gap_pct": 5.0
+      },
+      {
+        "zaliznyak_group": "I+U+R (alternating-element ~120 + consonant-final ~360)",
+        "zaliznyak_approx": 480,
+        "talmud_series": [
+          "I1",
+          "I2",
+          "U1",
+          "U2",
+          "R1",
+          "R2"
+        ],
+        "talmud_count": 461,
+        "gap": -19,
+        "gap_pct": -4.0
+      },
+      {
+        "zaliznyak_group": "M+N (alternating-element ~50 + consonant-final ~60)",
+        "zaliznyak_approx": 110,
+        "talmud_series": [
+          "M1",
+          "M2",
+          "N1",
+          "N2"
+        ],
+        "talmud_count": 80,
+        "gap": -30,
+        "gap_pct": -27.3
+      }
+    ]
+  },
+  "talmud_anit_set_distribution_check": {
+    "raw_talmud_set_counts": {
+      "s": 322,
+      "v1": 78,
+      "a": 178,
+      "v3": 77,
+      "v2": 62,
+      "0": 107,
+      "v": 41,
+      "s(ī?)": 3,
+      "v4": 19,
+      "v5": 17,
+      "": 1
+    },
+    "aniṭ_total": 178,
+    "seṭ_total": 325,
+    "veṭ_family_total": 294,
+    "unmarked_total": 107,
+    "zaliznyak_col1_aniṭ_approx": 170,
+    "zaliznyak_col3_seṭ_approx": 320,
+    "col1_gap": 8,
+    "col3_gap": 5,
+    "assessment": "STRONG corroboration on the two columns spot-check-confirmed as aniṭ and seṭ: aniṭ 178 vs Zaliznyak's stated ≈170 (gap 8), seṭ 325 vs his stated ≈320 (gap 5) — both within a few percent despite the two datasets not being identically scoped. The middle veṭ-family total (294) does not closely match his stated middle column (≈100) — likely because that column represents a narrower type/series-specific subset in his table, not all veṭ roots corpus-wide; NOT resolved in this pass, flagged rather than forced."
+  },
+  "talmud_named_root_crossvalidation": {
+    "agree_count": 122,
+    "disagree_count": 67,
+    "no_talmud_entry_count": 28,
+    "disagree": [
+      {
+        "root": "svaj",
+        "series": "A1-sampras",
+        "ztype": "II",
+        "loc": 177,
+        "note": "to embrace",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "A1"
+      },
+      {
+        "root": "grath",
+        "series": "A1-sampras",
+        "ztype": "II",
+        "loc": 177,
+        "note": "to tie (=granth)",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "A1"
+      },
+      {
+        "root": "çṛ",
+        "series": "R1",
+        "ztype": "I",
+        "loc": 195,
+        "note": "to crush",
+        "talmud_series": [
+          "R2"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "car",
+        "series": "R1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "to move",
+        "talmud_series": [
+          "R0",
+          "R2"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "kṣar",
+        "series": "R1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "to flow",
+        "talmud_series": [
+          "R2"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "tvar",
+        "series": "R1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "to hasten",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "day",
+        "series": "I1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "quasi-root from dā 'to share'",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "vyay",
+        "series": "I1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "quasi-root from vyā 'to envelop'",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "vyay",
+        "series": "I1",
+        "ztype": "II",
+        "loc": 197,
+        "note": "denominative quasi-root 'to expend'",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "av",
+        "series": "U1",
+        "ztype": "fluctuating",
+        "loc": 199,
+        "note": "to favor",
+        "talmud_series": [
+          "U2"
+        ],
+        "mapped_expected": "U1"
+      },
+      {
+        "root": "dhav",
+        "series": "U1",
+        "ztype": "unattested-pos1",
+        "loc": 199,
+        "period": "Vedic",
+        "note": "to flow",
+        "talmud_series": [
+          "U0"
+        ],
+        "mapped_expected": "U1"
+      },
+      {
+        "root": "svar",
+        "series": "R1",
+        "ztype": "unattested-pos1",
+        "loc": 199,
+        "note": "to sound",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "jhar",
+        "series": "R1",
+        "ztype": "unattested-pos1",
+        "loc": 199,
+        "note": "to fall",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "phar",
+        "series": "R1",
+        "ztype": "unattested-pos1",
+        "loc": 199,
+        "period": "Vedic",
+        "note": "to scatter",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "jvar",
+        "series": "R1",
+        "ztype": "ambiguous",
+        "loc": 199,
+        "note": "to be hot",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "tsar",
+        "series": "R1",
+        "ztype": "ambiguous",
+        "loc": 199,
+        "note": "to approach stealthily",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "sev",
+        "series": "I1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to serve",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "lok",
+        "series": "U1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to look",
+        "talmud_series": [
+          "U0"
+        ],
+        "mapped_expected": "U1"
+      },
+      {
+        "root": "garh",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to chide",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "edh",
+        "series": "I1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to thrive",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "kṣvel",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to play",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "khel",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to stagger",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "ceṣṭ",
+        "series": "I1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to stir",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "vell",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to stagger",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "heṣ",
+        "series": "I1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to whinny",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "hreṣ",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to neigh",
+        "talmud_series": [
+          "I0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "loc",
+        "series": "U1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to see/consider",
+        "talmud_series": [
+          "U0"
+        ],
+        "mapped_expected": "U1"
+      },
+      {
+        "root": "garj",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to roar",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "tarj",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to threaten",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "nard",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to bellow",
+        "talmud_series": [
+          "R0"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "carv",
+        "series": "R1-cons",
+        "ztype": "II",
+        "loc": 201,
+        "note": "to chew",
+        "talmud_series": [
+          "R0",
+          "U2"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "mṛkṣ",
+        "series": "R1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to stroke (exception; also mṛkṣaya- follows III)",
+        "talmud_series": [
+          "A1"
+        ],
+        "mapped_expected": "R1"
+      },
+      {
+        "root": "dīv",
+        "series": "I1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to play (exception to the rule)",
+        "talmud_series": [
+          "I2",
+          "U2"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "dīv",
+        "series": "I1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to lament (exception to the rule)",
+        "talmud_series": [
+          "I2",
+          "U2"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "sīv",
+        "series": "I1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to sew (exception to the rule)",
+        "talmud_series": [
+          "I2",
+          "U2"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "ṣṭhīv",
+        "series": "I1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to spew (exception to the rule)",
+        "talmud_series": [
+          "I2",
+          "U2"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "srīv",
+        "series": "I1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "period": "Vedic",
+        "note": "to fail (=çrīv, exception to the rule)",
+        "talmud_series": [
+          "I2",
+          "U2"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "rūṣ",
+        "series": "U1-cons",
+        "ztype": "I",
+        "loc": 209,
+        "note": "to strew (exception to the rule)",
+        "talmud_series": [
+          "U2"
+        ],
+        "mapped_expected": "U1"
+      },
+      {
+        "root": "ujh",
+        "series": "I1-cons",
+        "ztype": "III",
+        "loc": 209,
+        "note": "to forsake (jh treated as two consonants, exception-to-exception)",
+        "talmud_series": [
+          "U1"
+        ],
+        "mapped_expected": "I1"
+      },
+      {
+        "root": "stan",
+        "series": "N1",
+        "ztype": "II",
+        "loc": 221,
+        "note": "to thunder",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "dham",
+        "series": "M1",
+        "ztype": "II",
+        "loc": 223,
+        "note": "variant of dhmā 'to blow'",
+        "talmud_series": [
+          "M0"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "kan",
+        "series": "N1",
+        "ztype": "I",
+        "loc": 223,
+        "period": "Vedic",
+        "note": "to be pleased",
+        "talmud_series": [
+          "N2"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "khan",
+        "series": "N1",
+        "ztype": "I",
+        "loc": 223,
+        "note": "to dig",
+        "talmud_series": [
+          "N2"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "dhvan",
+        "series": "N1",
+        "ztype": "I",
+        "loc": 223,
+        "period": "Vedic",
+        "note": "to cover",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "san",
+        "series": "N1",
+        "ztype": "I",
+        "loc": 223,
+        "note": "to gain",
+        "talmud_series": [
+          "N2"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "van",
+        "series": "N1",
+        "ztype": "shifts I->II",
+        "loc": 223,
+        "note": "to win (Vedic type I, Epic-onward type II)",
+        "talmud_series": [
+          "N2"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "stambh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to prop",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "dhvaṁs",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to scatter",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "krand",
+        "series": "N1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "period": "Vedic only",
+        "note": "to cry out",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "taṁs",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "period": "Vedic",
+        "note": "to shake",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "baṁh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "period": "Vedic",
+        "note": "to make firm",
+        "talmud_series": [
+          "N0",
+          "N2"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "maṁh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "period": "Vedic",
+        "note": "to bestow",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "raṁh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "period": "Vedic only",
+        "note": "to hasten",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "çaṁs",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to praise",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "çrambh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to trust",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "skambh",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to prop",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "sraṁs",
+        "series": "M1-cons",
+        "ztype": "I",
+        "loc": 227,
+        "note": "to fall",
+        "talmud_series": [
+          "N1"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "nabh",
+        "series": "N1-cons",
+        "ztype": "partial-nasalization",
+        "loc": 231,
+        "note": "to burst (nasalizes only in causative)",
+        "talmud_series": [
+          "A1"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "nand",
+        "series": "N1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to rejoice",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "aṇṭh",
+        "series": "N1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to visit",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "kamp",
+        "series": "M1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to tremble",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "lamb",
+        "series": "M1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to hang down (=ramb)",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "vaṇṭ",
+        "series": "N1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to divide",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "vand",
+        "series": "N1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to greet",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "çaṅk",
+        "series": "N1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "note": "to doubt",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "N1"
+      },
+      {
+        "root": "dham",
+        "series": "M1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "period": "Vedic",
+        "note": "to run",
+        "talmud_series": [
+          "M0"
+        ],
+        "mapped_expected": "M1"
+      },
+      {
+        "root": "raṇv",
+        "series": "M1-cons",
+        "ztype": "II",
+        "loc": 235,
+        "period": "Vedic",
+        "note": "to delight",
+        "talmud_series": [
+          "N0"
+        ],
+        "mapped_expected": "M1"
+      }
+    ]
   }
 }
