@@ -1,0 +1,71 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:thematic-present",
+    "as_of": "2026-07-15",
+    "toc_ref": "SG-MO-013",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Презенс: тематические классы — восстановим ли класс по корпусу",
+        "summary": "Пилот P2 программы морфологии C5: класс презенса (гана I–X) отсутствует в морфопризнаках DCS и не кодируется дословно в словарном коде леммы; он восстановим лишь join'ом корня во внешний инвентарь (Уитни), который для 61 % презентных токенов неоднозначен. Тематические классы доминируют, но частоты гана публикуются как оценки по чисто-классифицируемому подмножеству, а не как токен-уровневые корпусные факты — предел EM1."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:thematic-present:1",
+        "layer": "scientific",
+        "text_slp1": "aTavA dakziRaM jAnu kubjaM Bavati niScalaM",
+        "segmentation_slp1": "aTavA dakziRam jAnu kubjam Bavati niScalam",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 248" },
+        "translations": {
+          "ru": "…или же правое колено становится согнутым [и] неподвижным."
+        },
+        "gloss_ru": "bhavati (√bhū) — тематический презенс класса I: guṇa корня + -a- (bháva-ti). На поверхности это простое -a-ti, неотличимое от класса VI (ср. пример 2).",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:thematic-present:2",
+        "layer": "scientific",
+        "text_slp1": "dfNmaRqalaM viSatyantar gamBIrA dfg asO smftA",
+        "segmentation_slp1": "dfS maRqalam viSati antar gamBIrA dfS asO smftA",
+        "locus": { "corpus": "dcs", "work": "Aṣṭāṅgahṛdayasaṃhitā", "ref": "AHS Utt. 12" },
+        "translations": {
+          "ru": "…[зрительный луч] проникает внутрь диска зрачка; это зрение считается глубоким."
+        },
+        "gloss_ru": "viśati (√viś) — тематический презенс класса VI: слабая ступень + -a- (viśá-ti). Поверхностно тождествен классу I из примера 1 (оба -a-ti); класс без акцента или словаря неразличим. Собственный код DCS у этой леммы — «3. P.», а не VI: словарный код DCS не есть гана.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      },
+      {
+        "id": "ex:thematic-present:3",
+        "layer": "scientific",
+        "text_slp1": "padottarapadaM gfhRAti",
+        "segmentation_slp1": "pada uttara padam gfhRAti",
+        "locus": { "corpus": "dcs", "work": "Aṣṭādhyāyī", "ref": "A. 4,4" },
+        "translations": {
+          "ru": "…берёт последующий член сложного слова."
+        },
+        "gloss_ru": "gṛhṇāti (√grah) — атематический презенс класса IX: инфикс -ṇā- (gṛh-ṇā́-ti). В отличие от классов I/VI, класс здесь виден на поверхности формы; собственный код DCS — «4. P.», снова не совпадающий с ганой IX.",
+        "evidence": {
+          "label_ru": "Пинованный снапшот DCS (зеркало dcs-conllu, CC BY 4.0)",
+          "visibility": "public",
+          "url": "https://github.com/gasyoun/dcs-conllu"
+        },
+        "as_of": "2026-07-15"
+      }
+    ],
+    "revisions": []
+  }
+}

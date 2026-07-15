@@ -19,6 +19,28 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.19.0] - 2026-07-15
+
+### Added
+- **H980 — Sangram Phase 1 pilot P2 (SG-MO-013, thematic present classes) — статья-кандидат
+  (Opus 4.8 `claude-opus-4-8[1m]`)**: [`sangram/articles/thematic-present/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/thematic-present)
+  — второй пилот программы морфологии C5 (после P1 a-stems), проверяет предел EM1
+  «класс презенса не в морфопризнаках DCS». Измерение по методу
+  аттестовано/порождено/традиционно над **353 215 презентными финитными токенами**
+  пинованного снапшота DCS: класс (гана I–X) отсутствует в `feat_*` **и** в собственном
+  словарном коде леммы DCS (`lemma.grammar` — не гана: tud VI→7, viś VI→3, grah IX→4);
+  восстановление требует join'а во внешний инвентарь [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots),
+  который неоднозначен — **чисто-классифицируемо лишь 38,85 %** (одноклассный корень 25,16 %
+  + форменный `-aya-` 13,68 %; много-класных корней 51,07 %, не-join'ящихся 10,08 %).
+  **Kill-gate (C5 § 7 P2) сработал** → частоты гана публикуются как оценки по
+  чисто-классифицируемому подмножеству, не как токен-уровневые факты; ручная адъюдикация
+  80-токенной выборки: морфоанализ восстанавливает 78/80. Скрипты
+  [`sg_mo_013_thematic_present_coverage.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_013_thematic_present_coverage.py),
+  [`sg_mo_013_adjudicate_sample.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_013_adjudicate_sample.py),
+  [`sg_mo_013_build_examples.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_013_build_examples.py);
+  первый боевой манифест `art:thematic-present` (toc_ref SG-MO-013). Все три валидатора +
+  `npm run build` green. **@WAITING MG виза** (гейт публикации, как у P1).
+
 ## [0.18.0] - 2026-07-15
 
 ### Added

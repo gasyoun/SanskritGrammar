@@ -1,0 +1,143 @@
+{
+  "study": "SG-MO-013 pilot P2: thematic present classes (attested/generated/traditional)",
+  "method": "C5 § 3 (attested/generated/traditional) via C3 cycle; tests EM1 (§ 5.2)",
+  "snapshot": {
+    "master": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "n_texts": "270",
+      "n_tokens": "5688416",
+      "schema": "flatten-all; lemma<-dictionary.csv"
+    }
+  },
+  "universe_where_sql": "t.upos = 'VERB' AND t.feat_tense = 'Pres' AND (t.feat_verbform IS NULL OR t.feat_verbform = 'Fin')",
+  "universe_gloss": "finite verb tokens, Tense=Pres (present indicative/optative/imperative/subjunctive — present stem); imperfect and past-stem tenses excluded",
+  "present_fin_tokens": 353215,
+  "present_fin_lemma_ids": 7186,
+  "imperfect_fin_tokens_excluded": 46695,
+  "class_source_traditional": "WhitneyRoots roots.csv `class` + root_class.csv gaṇa (I–X)",
+  "dcs_grammar_is_not_gana": "the DCS lemma.grammar numeric code is a DCS-internal index, NOT the Pāṇinian gaṇa (e.g. tud VI->7, viś VI->3, grah IX->4, i II->9); it is measured only for its divergence, never used as the class",
+  "thematic_classes": [
+    1,
+    4,
+    6,
+    10
+  ],
+  "attribution_tiers": {
+    "AYA_secondary_thematic": 48328,
+    "AYA_pct": 13.68,
+    "SINGLE_gana_root": 88883,
+    "SINGLE_pct": 25.16,
+    "MULTI_gana_root": 180398,
+    "MULTI_pct": 51.07,
+    "UNJOINED": 35606,
+    "UNJOINED_pct": 10.08,
+    "cleanly_classable_tokens": 137211,
+    "cleanly_classable_pct": 38.85
+  },
+  "distribution_cleanly_classable": {
+    "thematic_tokens": 127339,
+    "athematic_tokens": 9872,
+    "thematic_pct": 92.81,
+    "by_gana": {
+      "I": 63404,
+      "II": 5931,
+      "III": 8,
+      "IV": 7613,
+      "V": 2414,
+      "VI": 7993,
+      "VII": 1145,
+      "VIII": 3,
+      "IX": 371,
+      "X": 48329
+    }
+  },
+  "dcs_code_vs_gana": {
+    "match_tokens": 280773,
+    "mismatch_tokens": 31950,
+    "match_pct_of_tokens_with_both": 89.78,
+    "note": "loose (set-intersection over multi-class union); stark single-class counterexamples: tud VI vs code 7, viś VI vs 3, grah IX vs 4, i II vs 9"
+  },
+  "collapses": {
+    "root_gana_meets_I_or_VI_tokens": 232247,
+    "root_gana_meets_I_or_VI_pct": 65.75,
+    "passive_tagged_tokens": 27497,
+    "passive_pct": 7.78,
+    "note": "I and VI are both plain-thematic (-a-); their surface present is identical without accent. IV (-ya-) collides with passive/denominative -ya-."
+  },
+  "top_multi_gana_roots": [
+    {
+      "root": "as",
+      "tokens": 28785
+    },
+    {
+      "root": "kṛ",
+      "tokens": 15291
+    },
+    {
+      "root": "dhā",
+      "tokens": 7478
+    },
+    {
+      "root": "dā",
+      "tokens": 6046
+    },
+    {
+      "root": "gam",
+      "tokens": 6035
+    },
+    {
+      "root": "jan",
+      "tokens": 4251
+    },
+    {
+      "root": "hu",
+      "tokens": 4223
+    },
+    {
+      "root": "vid",
+      "tokens": 4043
+    },
+    {
+      "root": "brū",
+      "tokens": 3935
+    },
+    {
+      "root": "han",
+      "tokens": 3737
+    },
+    {
+      "root": "hṛ",
+      "tokens": 3701
+    },
+    {
+      "root": "śru",
+      "tokens": 3445
+    },
+    {
+      "root": "pā",
+      "tokens": 3439
+    },
+    {
+      "root": "vac",
+      "tokens": 3393
+    },
+    {
+      "root": "vṛt",
+      "tokens": 3390
+    }
+  ],
+  "kill_gate": {
+    "rule": "C5 § 7 P2: cleanly-classable (single-gaṇa root + form-evident -aya) < 90 % -> gaṇa frequencies published as inventory-weighted estimates over the cleanly-classable subset, not token-level facts",
+    "cleanly_classable_pct": 38.85,
+    "fired": true,
+    "seed": 20260715,
+    "sample_size": 80,
+    "sample_cleanly_classable": 39,
+    "sample_cleanly_classable_pct": 48.75,
+    "file": "validation_sample.tsv (+ manual adjudication in validation_verdicts.tsv)"
+  }
+}
