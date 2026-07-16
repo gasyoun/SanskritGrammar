@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:consonant-stems",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-MO-006",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Склонение: согласные основы",
+        "summary": "Статья ядра W2 SG-MO-006 (домен MO, кластер «Склонение»). Склонение согласных основ (на -an/-in/-as/-is/-us и корневых) по пинованному снапшоту DCS: 4212 лемм / 232 935 токенов. Аттестация — из производного актива G2 (H1048, не пересчитывается): медиана 1 клетка/лемма, покрытие растёт с частотой (rājan 20/24, karman 22/24). Порождённая парадигма (MWinflect) показывает сильную/среднюю/слабую ступень основы (rājā/rājñā/rājasu); традиционный слой — Уитни гл. V §§383–465. Статья ядра, не пилот: kill-gate нет, но каждое число несёт знаменатель + пин. Первый потребитель актива G2."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:consonant-stems:1",
+        "layer": "scientific",
+        "text_slp1": "AtmA",
+        "locus": { "corpus": "dcs", "work": "Kūrmapurāṇa", "ref": "KūPur 2.8 (s16)" },
+        "translations": { "ru": "сам, дух (ātman, -an муж., Nom. ед.)" },
+        "gloss_ru": "основа на -an, сильная ступень: Nom. ед. ātmā (< ātmān-). Самый частотный согласный подтип (846 лемм); ātman аттестует 19/24 клеток.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -an основа, Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:consonant-stems:2",
+        "layer": "scientific",
+        "text_slp1": "karma",
+        "locus": { "corpus": "dcs", "work": "Kauṣītakibrāhmaṇa", "ref": "KauṣB 8.8 (s34)" },
+        "translations": { "ru": "деяние (karman, -an ср., Nom. ед.)" },
+        "gloss_ru": "основа на -an, средний род: Nom. ед. karma (усечение -an). karman аттестует 22/24 клеток — высокочастотная лемма несёт почти всю парадигму.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -an основа ср. р., Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:consonant-stems:3",
+        "layer": "scientific",
+        "text_slp1": "tamaH",
+        "locus": { "corpus": "dcs", "work": "Carakasaṃhitā", "ref": "Ca Sū 1 (s57)" },
+        "translations": { "ru": "тьма (tamas, -as ср., Nom. ед.)" },
+        "gloss_ru": "основа на -as, средний род: Nom. ед. tamaḥ (-s → висарга). Подтип -as — самый полный по покрытию (среднее 3,29 клетки/лемму).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -as основа, Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:consonant-stems:4",
+        "layer": "scientific",
+        "text_slp1": "cakzuzA",
+        "locus": { "corpus": "dcs", "work": "Śāṅkhāyanaśrautasūtra", "ref": "ŚāṅkhŚS 6.8 (s14)" },
+        "translations": { "ru": "глазом (cakṣus, -us ср., Instr. ед.)" },
+        "gloss_ru": "основа на -us, слабая форма: Instr. ед. cakṣuṣā (s → ṣ по ретрофлексии). cakṣus аттестует 19/24; -us — редкий подтип (86 лемм), но с высоким покрытием.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -us основа, Instr. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:consonant-stems:5",
+        "layer": "scientific",
+        "text_slp1": "diSaH",
+        "locus": { "corpus": "dcs", "work": "Bhāratamañjarī", "ref": "BhāMañj 7 (s83)" },
+        "translations": { "ru": "стороны света (diś, корневая жен., Nom. мн.)" },
+        "gloss_ru": "корневая согласная основа (diś «сторона»), Nom. мн. diśaḥ — основа = корень, без словообразующего аффикса. Класс «корневые/особые» (1 722 леммы) объединяет корневые + -vat/-vas/-añc.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; корневая основа, Nom. мн.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": []
+  }
+}
