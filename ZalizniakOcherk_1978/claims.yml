@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H1000+H1001 instruments, 16-07-2026): 62 TRUE · 0 OVERSTATED · 0 FALSE · 12 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004 instruments, 16-07-2026): 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -32,7 +32,7 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 instruments: 62 TRUE · 0 OVERSTATED · 0 FALSE · 12 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 instruments: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
   first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
   not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
@@ -968,11 +968,22 @@ entries:
     kind: statistic
     falsifiable_as: "are dvigu-type compounds a comparatively rare karmadhāraya subtype"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: DCS's export carries no compound-type tagging, so dvigu share among karmadhārayas is uncountable here; the parallel Bühler dvigu claims sit unverified in his backlog for the same reason"
-    ref: "cf. BuhlerLeitfaden_1923/claims_harvest.yml (Урок XXXIII dvigu candidates — same blocker)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the structural compound tagger built 16-07-2026 (compound_type_tagger.py,
+      H1004): over 623,119 nominal compound clusters (DCS mwt spans, upos-classed members),
+      dvigu candidates (NUM-first, eka excluded per the §'s own parenthesis: 1,875 eka-first
+      counted apart) number 16,406 = 15.3% of the determinative-shaped pool (ADJ+NUM first,
+      107,044) — 1:5.4 against plain adjective-first — and just 2.6% of all nominal clusters.
+      Top dvigu numerals: tri 2,595 · dvi 1,476 · saptan 1,445 · pañcan 1,394 · catur 1,259.
+      «Сравнительно редко» holds as a clear minority subtype
+    ref: "ZalizniakOcherk_1978/och58_compound_stats.json; compound_type_tagger.py; the parallel Bühler Урок-XXXIII dvigu candidates (claims_harvest.yml) are UNBLOCKED by the same instrument for a future drain"
     verdict_pedagogy: JUSTIFIED
-    note: "A compound-type-tagged dataset (or the kosha segmenter's compound analyses) would unlock this whole compound-statistics cluster at once."
+    note: >-
+      The tagger is function-blind by design (bahuvrīhis of the same ADJ/NUM-first shape sit
+      inside the pool — the very limitation OCH-60 documents), but the contamination applies
+      to both shapes alike, so the comparative claim survives it. The §'s eka-exclusion is
+      honored structurally: eka-first clusters counted separately, not as dvigu.
 
   - id: OCH-59
     loc: "§193 / mdx line 2724"
@@ -995,8 +1006,8 @@ entries:
     falsifiable_as: "is tatpuruṣa/bahuvrīhi homonymy rarer in usage than structurally possible"
     sources: [dcs]
     verdict_fact: UNTESTABLE
-    number: "no instrument: requires per-token compound-function disambiguation (accent would decide in Vedic; classical text carries none); no such tagging exists in the pipeline's assets"
-    ref: "cf. Whitney §1293ff (the accentual distinction that classical orthography loses)"
+    number: "no instrument, now PROBED rather than presumed (16-07-2026, H1004): DCS tags compound members LEXICALLY — mahābāhu, a textbook bahuvrīhi, carries last-member upos NOUN in 192/193 clusters — so tatpuruṣa/bahuvrīhi FUNCTION is not recoverable from this snapshot at all; per-token function disambiguation (or Vedic accent, which classical orthography loses) remains the missing instrument"
+    ref: "cf. Whitney §1293ff (the accentual distinction that classical orthography loses); probe recorded in och58_compound_stats.json (och60_probe key)"
     verdict_pedagogy: JUSTIFIED
     note: "An expectation-vs-usage claim that is exactly right in kind but needs a disambiguated compound corpus to measure."
 
