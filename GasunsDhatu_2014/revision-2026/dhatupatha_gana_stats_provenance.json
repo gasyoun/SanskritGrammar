@@ -1,0 +1,23 @@
+{
+  "source": "WhitneyRoots/scratch/vidyut_data/prakriya/dhatupatha.tsv",
+  "checked": "17-07-2026",
+  "computed_by": "Fable 5 (claude-fable-5), H1069",
+  "total_entries": 2259,
+  "distinct_raw_forms": 1966,
+  "forms_repeated": 224,
+  "entries_in_repeated_forms": 517,
+  "forms_in_multiple_ganas": 183,
+  "per_gana": {
+    "01 bhvādi": 1166,
+    "02 adādi": 77,
+    "03 juhotyādi": 26,
+    "04 divādi": 163,
+    "05 svādi": 38,
+    "06 tudādi": 174,
+    "07 rudhādi": 25,
+    "08 tanādi": 10,
+    "09 kryādi": 71,
+    "10 curādi": 509
+  },
+  "note": "raw SLP1 aupadesika strings compared as-is; anubandhas not stripped (naive it-stripped joins give false positives, see PALSULE_AUDIT / Гл. 5)"
+}
