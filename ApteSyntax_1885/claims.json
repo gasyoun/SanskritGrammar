@@ -374,6 +374,102 @@
       "verdict_pedagogy": "MISLEADING",
       "note": "The register's first FALSE. Two checks make it solid. (1) The error is APTE'S OWN, not the Likhushina translation's: the digitized English §210 reads 'also implies the idea of continuousness. The Imperfect cannot be used in this sense' — «длительность» faithfully renders 'continuousness', so the earlier translation-inversion hypothesis is refuted. (2) Apte contradicts himself: his §207-208 state that as Sanskrit ceased to be spoken 'writers began to use these three [past] tenses promiscuously' — exactly Whitney §927's equivalence — which undercuts §210's categorical 'the Imperfect cannot'. Apte is transmitting a Pāṇinian aspectual doctrine (the aorist as भूतार्थे लुङ्, the general past) as a categorical rule the descriptive record does not bear out — a prescriptive-vs-descriptive miss of the same family as APT-21 (the Pāṇinian dative-of-anger). Graded MISLEADING because a beginner told 'the aorist is durative, the imperfect is not' learns the aspect backwards; and the aorist is in any case marginal in Classical usage (0.31% of verbal tokens, DCS — cf. Whitney §826), so the durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.",
       "mg_footnote": null
+    },
+    {
+      "id": "APT-32",
+      "loc": "Урок 26 / mdx ~line 6865",
+      "claim_ru": "Частица punaḥ обычно означает снова; но часто имеет значение тогда как, с другой стороны.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1112 (punar among the adverbial forms) + standard lexicon — punar = 'again, back; on the other hand, however'. Both senses Apte gives are standard.",
+      "ref": "Whitney 1889 §1112, cf. §1121 (ápunar); harvest APT-H-500/501 (Урок 26)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Both the iterative and the adversative sense are lexically standard; correctly reported.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-33",
+      "loc": "Урок 26 / mdx ~line 6865",
+      "claim_ru": "Частица prāyaḥ или prāyeṇa означает обычно, как правило, и используется для установки общего правила.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1111 lists 'prāyas usually' (accusative adverb) and §1112 c 'prāyeṇa mostly' (instrumental adverb) — Apte's gloss is verbatim Whitney.",
+      "ref": "Whitney 1889 §1111, §1112c; harvest APT-H-502 (Урок 26)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Directly attested in Whitney's own adverb lists, both the -as and -eṇa forms.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-34",
+      "loc": "Урок 26 / mdx ~line 6865",
+      "claim_ru": "muhuḥ означает часто … и в этом значении обычно повторяется.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1111 lists 'múhu and múhus' among the adverbs; the reduplicated muhur muhuḥ 'again and again' is the standard intensive.",
+      "ref": "Whitney 1889 §1111; harvest APT-H-504 (Урок 26)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Adverb attested in Whitney; the reduplication for the iterative sense is standard.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-35",
+      "loc": "Урок 26 / mdx ~line 6865",
+      "claim_ru": "Наречие yataḥ означает откуда, когда используется вместо yasmāt.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1098 — the tas-adverbs (átas, tátas, yátas, kútas…) 'have an ablative sense, and not rarely also an ablative construction'; yátas = 'whence, from which' = the ablative yasmāt exactly.",
+      "ref": "Whitney 1889 §1098; harvest APT-H-506 (Урок 26)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Precisely Whitney's account of the tas-adverbs — yatas is the ablative-sense adverb equivalent to yasmāt.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-36",
+      "loc": "Урок 27 / mdx ~line 7035",
+      "claim_ru": "yāvat, когда используется само по себе, означает до тех пор пока … Управляется винительным падежом.",
+      "kind": "government",
+      "verdict_fact": "TRUE",
+      "number": "systematic: yāvat is the neuter of yā́vant (Whitney §510, a relative-root derivative); as a prepositional adverb 'up to, as far/long as' it takes the accusative of extent/limit (Whitney §1129, accusative with words expressing extent toward a limit).",
+      "ref": "Whitney 1889 §510, §1129; harvest APT-H-508 (Урок 27)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "The accusative government of the extent-preposition yāvat is standard; correctly reported.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-37",
+      "loc": "Урок 27 / mdx ~line 7035",
+      "claim_ru": "Повторение yathā и tathā (yathā yathā — tathā tathā) используется с прилагательными в сравнительной степени.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1101 — yáthā and táthā are the manner-adverbs of the relative and demonstrative roots; the doubled yathā yathā … tathā tathā is the standard proportional correlative.",
+      "ref": "Whitney 1889 §1101; harvest APT-H-510 (Урок 27)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Correlative manner-adverbs per Whitney; the proportional doubling is a standard idiom, correctly stated.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-38",
+      "loc": "Урок 28 / mdx ~line 7279",
+      "claim_ru": "hā чаще всего обозначает горе, сожаление, боль; значение отвращения (jugupsā) встречается крайне редко.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: Whitney §1135 a lists 'ā, hā, hāhā…' among the voice-gesture interjections; the grief/lament sense is the standard one, the disgust sense marginal — Apte's ranking is correct.",
+      "ref": "Whitney 1889 §1135a; harvest APT-H-514/515 (Урок 28)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "hā classified as an interjection by Whitney; the grief-primary / disgust-rare split matches standard usage.",
+      "mg_footnote": null
+    },
+    {
+      "id": "APT-39",
+      "loc": "Урок 28 / mdx ~line 7279",
+      "claim_ru": "Наречие varaṃ с na (за которыми, как правило, следует ca, tu или punaḥ) используется в значении лучше — чем; оба члена в именительном падеже.",
+      "kind": "rule",
+      "verdict_fact": "TRUE",
+      "number": "systematic: varam ('choice, better') + na is the standard classical preference idiom ('better X, [and] not Y'); both compared members stand in the nominative as predicate nouns, correlated by the adversative ca/tu/punar (Whitney §1133 b for tu, §1112 for punar).",
+      "ref": "Whitney 1889 §1133b, §1112; harvest APT-H-511/512 (Урок 28)",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "A correctly-described classical idiom; the nominative of both members and the adversative correlative are standard. Closes the substantive particle-sense set; the residual lesson-26-28 candidates (balavat adverbial, yat/yena clause-linkers) are uncontested descriptive glosses left in the harvest.",
+      "mg_footnote": null
     }
   ]
 }

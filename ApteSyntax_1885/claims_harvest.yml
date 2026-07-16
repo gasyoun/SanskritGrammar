@@ -5,9 +5,11 @@
 # Each promoted candidate becomes an APT-N entry in claims.yml after verification; promoted
 # ones are marked `promoted: APT-N` below (kept here for provenance, not deleted).
 #
-# COVERAGE GAP (honest): lessons 1–25 harvested (readers A1/A6/A12/A20 completed); lessons
-# 26–30 NOT yet harvested — the fifth reader (lines 6865–8500) terminated on a session limit
-# before returning. A drain pass must re-harvest Урок 26–30 plus the exercise/glossary tail.
+# COVERAGE: ALL 30 lessons harvested (H1055 readers A1/A6/A12/A20 for 1–25; H1081 readers for
+# 26–30). 115 candidates; 39 promoted to claims.yml (APT-1..APT-39). Residual PENDING are the
+# fine preverb+semantic voice rules of lessons 29-30 (UNTESTABLE, see claims.yml APT-30) and a
+# few uncontested descriptive glosses. Only the exercise/glossary tail (mdx > line 8563) is out
+# of scope by design (not discursive rules).
 #
 # testability tag names the instrument each claim needs:
 #   morphology-DCS    — surface token frequency / case distribution (verify_claims_dcs.py battery)
@@ -105,22 +107,22 @@ candidates:
   - {id: APT-H-317, lesson: 25, quantifier: должно, kind: government, testability: syntax-treebank, claim_en: "A noun before nāma ('by name') must be in the same case as the noun it qualifies."}
 
   # ===== Lessons 26–28 (reader A26: APT-H-500..515) — drain H1081 =====
-  - {id: APT-H-500, lesson: 26, quantifier: обычно, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ usually means 'again'."}
-  - {id: APT-H-501, lesson: 26, quantifier: часто, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ often has adversative sense 'whereas, on the other hand'."}
-  - {id: APT-H-502, lesson: 26, quantifier: как правило, kind: rule, testability: reference-Whitney, claim_en: "prāyaḥ/prāyeṇa means 'as a rule', marks a general statement."}
+  - {id: APT-H-500, lesson: 26, quantifier: обычно, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ usually means 'again'.", promoted: APT-32}
+  - {id: APT-H-501, lesson: 26, quantifier: часто, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ often has adversative sense 'whereas, on the other hand'.", promoted: APT-32}
+  - {id: APT-H-502, lesson: 26, quantifier: как правило, kind: rule, testability: reference-Whitney, claim_en: "prāyaḥ/prāyeṇa means 'as a rule', marks a general statement.", promoted: APT-33}
   - {id: APT-H-503, lesson: 26, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "balavat used adverbially 'strongly, exceedingly'."}
-  - {id: APT-H-504, lesson: 26, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "muhuḥ 'often' is usually reduplicated in that sense."}
+  - {id: APT-H-504, lesson: 26, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "muhuḥ 'often' is usually reduplicated in that sense.", promoted: APT-34}
   - {id: APT-H-505, lesson: 26, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "yat introduces a direct statement, with or without final iti."}
-  - {id: APT-H-506, lesson: 26, quantifier: none, kind: government, testability: reference-Whitney, claim_en: "yataḥ means 'whence' when substituting for yasmāt."}
+  - {id: APT-H-506, lesson: 26, quantifier: none, kind: government, testability: reference-Whitney, claim_en: "yataḥ means 'whence' when substituting for yasmāt.", promoted: APT-35}
   - {id: APT-H-507, lesson: 27, quantifier: как правило, kind: rule, testability: syntax-treebank, claim_en: "relative-pronoun forms (usually yena) replace yathā in the second clause."}
-  - {id: APT-H-508, lesson: 27, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "yāvat alone means 'until' and governs the accusative."}
+  - {id: APT-H-508, lesson: 27, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "yāvat alone means 'until' and governs the accusative.", promoted: APT-36}
   - {id: APT-H-509, lesson: 27, quantifier: оба, kind: rule, testability: syntax-treebank, claim_en: "Sanskrit requires both yāvat and tāvat where one temporal conjunction suffices."}
-  - {id: APT-H-510, lesson: 27, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "reduplicated yathā yathā…tathā tathā is used with comparatives ('the more…the more')."}
-  - {id: APT-H-511, lesson: 28, quantifier: как правило, kind: rule, testability: syntax-treebank, claim_en: "varaṃ…na (usually + ca/tu/punaḥ) expresses preference 'better…than'."}
-  - {id: APT-H-512, lesson: 28, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "both members of a varaṃ…na construction stand in the nominative."}
+  - {id: APT-H-510, lesson: 27, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "reduplicated yathā yathā…tathā tathā is used with comparatives ('the more…the more').", promoted: APT-37}
+  - {id: APT-H-511, lesson: 28, quantifier: как правило, kind: rule, testability: syntax-treebank, claim_en: "varaṃ…na (usually + ca/tu/punaḥ) expresses preference 'better…than'.", promoted: APT-39}
+  - {id: APT-H-512, lesson: 28, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "both members of a varaṃ…na construction stand in the nominative.", promoted: APT-39}
   - {id: APT-H-513, lesson: 28, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "the particle hi never stands sentence-initial.", promoted: APT-25}
-  - {id: APT-H-514, lesson: 28, quantifier: крайне редко, kind: statistic, testability: untestable, claim_en: "hā expressing disgust (jugupsā) occurs extremely rarely."}
-  - {id: APT-H-515, lesson: 28, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "hā most often denotes grief/regret/pain."}
+  - {id: APT-H-514, lesson: 28, quantifier: крайне редко, kind: statistic, testability: untestable, claim_en: "hā expressing disgust (jugupsā) occurs extremely rarely.", promoted: APT-38}
+  - {id: APT-H-515, lesson: 28, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "hā most often denotes grief/regret/pain.", promoted: APT-38}
 
   # ===== Lessons 29–30 (reader A29: APT-H-600..619) — voice assignment; drain H1081 (apte_pada_stats.py) =====
   # DCS feat_voice tags only Pass, not P/Ā — root-default voice recovered from finite present endings;
