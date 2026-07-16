@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.46.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-023 «Причастия на -ta/-na» (прош. страд.) — статья-кандидат (H1083, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/ta-na-participles/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/ta-na-participles): третий частотный флективный слот ядра (кластер именных форм глагола). Причастие -ta/-na (kṛta/gata/bhinna) — **самый частотный причастный тип**: **219 902 токена** (нижняя оценка) = 64,4 % всех 341 556 причастий, из 4742 корней, -ta к -na как 13,6:1; употребление преимущественно предикативное (57 % в Nom. — перифрастический пассив/перфект). Предел EM5 честно: DCS не тегирует класс -ta/-na (атрибут tense — для причастия настоящего), опознание по основе (снятие a-/ā-флексии, основа на -t/-n) — нижняя оценка, исключает ассимилированные labdha/rūḍha/baddha. Выборка 50 токенов: 0 ложных. Склоняется как a-основа (SG-MO-002). Скрипт [`sg_mo_023_ta_na_participles.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_023_ta_na_participles.py); 3 валидатора + CI build green (локальный build OOM под давлением памяти concurrent-сессий). Ядро W2: 11/19. Публикация гейтится авторской визой.
+
 ## [0.45.0] - 2026-07-16
 
 ### Added
