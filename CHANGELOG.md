@@ -19,6 +19,27 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.36.0] - 2026-07-16
+### Added
+- **A65: валидация вердиктов выполнена — слепой двухпроходный κ-дизайн по шаблону A64
+  (H1041, Fable 5 `claude-fable-5`; аннотатор B — Sonnet 5 `claude-sonnet-5`).** Новая папка
+  [`verdict_validation/`](https://github.com/gasyoun/SanskritGrammar/tree/main/verdict_validation):
+  стратифицированная выборка n = 115 (ВСЕ 30 фактических флагов + ВСЕ 25 UNTESTABLE + 60
+  случайных TRUE, зерно 20260716), слепой пакет без вердиктов/заметок первого прохода,
+  **κ Коэна = 0,877** (95 %-ДИ бутстрэпа [0,796; 0,946], 2 000 ресэмплов), сырое согласие
+  106/115 = 92,2 %; Очерк 19/19 и Конспект 5/5 — полное согласие. Конфузия чистая на
+  TRUE и FALSE; все 9 расхождений — граница OVERSTATED/UNTESTABLE, в 7 случаях из 9 второй
+  аннотатор СТРОЖЕ (флаги реестров консервативны). Попутно классифицированы 7 OVERSTATED
+  Бюлера — **первое заполнение класса «система-против-узуса»** (HB-10, предлог ā + Acc.):
+  ровно у самой систематической книги, как § 2.2 и предсказывал; итог типологии — 22
+  классифицированных (14·4·1·3). Отчет
+  [`VERDICT_VALIDATION_KAPPA_A65_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/VERDICT_VALIDATION_KAPPA_A65_2026.md)
+  + воспроизводимые скрипты/данные; § 6/§ 2.2/§ 5/§ 11/аннотация статьи обновлены.
+  **Остаток до 5/5:** авторская адъюдикация 9 расхождений — review-sheet
+  `sanskritgrammar-a65-verdict-validation-disagreements_16.07.26_review.html` (локальный
+  `review/`) + вычитка.
+  ([H1041](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1041-Fable_SanskritGrammar_a65-verdict-validation-kappa_16.07.26.md))
+
 ## [0.35.0] - 2026-07-16
 ### Changed
 - **A65 (4/5): hostile referee pass applied to the canonical merged article (H1015; merit-merge after the H1033 collision)** — a fresh-context referee produced **10 Major + 16 Minor** findings ([disposition + collision note](https://github.com/gasyoun/SanskritGrammar/blob/main/REVIEW_A65_SYNTHESIS_REFEREE_2026.md)). The concurrent H1033 4/5 (PR #277, v0.34.0) was taken as base — it had performed the five-book typology classification (9/4/2/0 of 15) and fixed HK-10/HK-38 in the register — and the referee corrections absent from it were re-applied on top: first-substantive-FALSE attribution restored to HK-16; per-book two-axis counts; «пометка, не предрегистрация» instead of «ПРЕДСКАЗАЛ»; ACL-scoped novelty claim; per-genre word-order breakdowns inlined into the OCH-66 verdict; Fisher exact p = 0.42; systematic de-jargonization; bibliography upgrades (Кнауэр place, Бюлер translator, Зализняк-1975 title flagged for verification). PR #278 closed as superseded. Deferred to author-pass: banner, Zenodo deposit, GOST, RU-scholarship ring. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
