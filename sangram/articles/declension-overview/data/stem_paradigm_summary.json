@@ -1,0 +1,58 @@
+{
+  "study": "SG-MO-001 — REAL paradigmatic stem classification (attested Ins.Sg ending)",
+  "method": "each noun lemma classified by the majority ending of its attested Instrumental singular; token-weighted over the noun universe; lemmas without Ins.Sg attestation counted as unclassified",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc"
+  },
+  "denominator_inflected_noun_tokens": 1790270,
+  "classified_tokens": 1344355,
+  "unclassified_tokens": 445915,
+  "coverage_of_universe": 0.7509,
+  "n_lemmas_classified": 7555,
+  "class_distribution_over_classified": {
+    "-a (тематические)": {
+      "tokens": 706606,
+      "share_of_classified": 0.5256
+    },
+    "-ā": {
+      "tokens": 139635,
+      "share_of_classified": 0.1039
+    },
+    "-ī": {
+      "tokens": 102196,
+      "share_of_classified": 0.076
+    },
+    "n-основы": {
+      "tokens": 98268,
+      "share_of_classified": 0.0731
+    },
+    "-i": {
+      "tokens": 81920,
+      "share_of_classified": 0.0609
+    },
+    "прочие согласные": {
+      "tokens": 68761,
+      "share_of_classified": 0.0511
+    },
+    "s-основы": {
+      "tokens": 57277,
+      "share_of_classified": 0.0426
+    },
+    "-u": {
+      "tokens": 36979,
+      "share_of_classified": 0.0275
+    },
+    "-ṛ": {
+      "tokens": 36462,
+      "share_of_classified": 0.0271
+    },
+    "-ū": {
+      "tokens": 16251,
+      "share_of_classified": 0.0121
+    }
+  },
+  "note": "класс определён по РЕАЛЬНОЙ атестованной парадигме (окончание Ins.Sg), не по финали цитатной леммы; доли — от классифицированного подмножества (покрытие явно указано)"
+}
