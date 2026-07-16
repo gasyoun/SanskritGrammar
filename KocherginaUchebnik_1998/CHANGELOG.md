@@ -9,6 +9,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-16
+### Changed
+- **HK-207 (aorist register: narrative vs dialogue/drama) — SIZED, not "no instrument" (H1040)** — new probe [`aorist_register_probe.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/aorist_register_probe.py): checked the full 270-text DCS inventory first — DCS carries **zero drama/nāṭaka texts** (no Śakuntalā, no Mṛcchakaṭikā; Nāṭyaśāstra is a treatise about dramaturgy, not a play), so the literal comparison the claim names cannot be tested at all. Built a structural genre proxy instead — catechism-dialogue Upaniṣads (Bṛhadāraṇyaka, Chāndogya, Kaṭha, Kauṣītaki, Śvetāśvatara, Muṇḍaka, Taittirīya, Aitareya) vs Brāhmaṇa+Śrautasūtra ritual-prescriptive prose — using DCS-2026's aorist-specific `feat_formation` tags. Result: dialogue proxy 1.14% aorist share (91/8,010 verbal) vs narrative proxy 1.33% (1,530/114,924) — the opposite direction from the claim, though both are close to the whole-corpus baseline (1.20%). This null result does NOT refute Whitney's actual observation about dramatic dialogue specifically — Upaniṣadic catechism is formulaic ritual prose, not the colloquial register Whitney means, so the proxy itself is a stretch, not just its direction. Recorded as a sized negative pilot. Results: [`hk207_aorist_register_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk207_aorist_register_stats.json). (Sonnet 5 `claude-sonnet-5`, [H1040](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1040-Sonnet_SanskritGrammar_aorist-register-frequency-hk207_16.07.26.md))
+
 ## [0.5.0] - 2026-07-16
 ### Added
 - **Методичка v1 (P0–P4) — три печатные рукописи-раздела (H807, Fable 5 `claude-fable-5`).**
