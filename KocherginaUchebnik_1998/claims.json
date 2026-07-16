@@ -1064,11 +1064,11 @@
       "loc": "Занятие XIII / mdx line 2632",
       "claim_ru": "Есть корни в двух ступенях (слабая = guṇa); обычно это корни с гласной -a-.",
       "kind": "statistic",
-      "verdict_fact": "UNTESTABLE",
-      "number": "the claim conflates ablaut grades ('слабая = guṇa' is itself non-standard, guṇa being the middle grade) and asserts an unquantified 'обычно' about which roots are two-grade — neither the phrasing nor the proportion is checkable against a ground-truth source",
-      "ref": "Whitney §235ff (guṇa/vṛddhi grades); claim phrasing internally unclear",
-      "verdict_pedagogy": "ORDER-QUESTIONABLE",
-      "note": "The statement mislabels the grade hierarchy and makes an unquantified frequency claim; flagged UNTESTABLE rather than forced into a fact verdict on an ambiguous formulation.",
+      "verdict_fact": "TRUE",
+      "number": "MEASURED (16-07-2026, two_grade_root_vowel_check.py, H1047), reusing the H978 morphoclass crosswalk (ryad_1978 + polnoizm_1978, no new corpus query needed). The prior verdict's premise was wrong: re-checked the mdx source directly (line 2632) and the claim is NOT internally confused — it precisely names the неполноизменяемый subtype where weak grade and guṇa COINCIDE ('совпадают слабая ступень и ступень guṇa'), exactly Ocherk §62's own subtype-1 (tyaj: weak=guṇa= tyaj, vṛddhi=tyāj — Kochergina's own example matches Ocherk's verbatim). Among 429 roots classified 'defective' (неполноизменяемый) in the crosswalk, **261 = 60.8% belong to the A-series (vowel -a-)** — vs only **34/424 = 8.0%** among 'full'-alternating (полноизменяемый) roots. A-series roots are ~7.6× overrepresented among defective roots relative to full-alternating ones, confirming 'обычно это корни с гласной -a-' clearly",
+      "ref": "Whitney §235ff (guṇa/vṛddhi grades); cf. ZalizniakOcherk_1978 §62 (subtype-1, same tyaj example); KocherginaUchebnik_1998/two_grade_root_vowel_check.py; hk88_two_grade_root_vowel_stats.json",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "The prior UNTESTABLE verdict mischaracterized the claim as mislabeling the grade hierarchy — rereading the mdx directly shows it's a precise, standard description (Ocherk's own subtype-1 неполноизменяемость, using the identical tyaj example). One scope caveat: the crosswalk's 'defective' flag doesn't separate неполноизменяемость subtypes 1/2/3, so this measures the BROADER defective category, not subtype-1 alone — a reasonable proxy since Ocherk itself notes subtype-3 is 'очень малочисленный', but not a perfectly scoped match.",
       "mg_footnote": null
     },
     {
@@ -2712,7 +2712,7 @@
       "number": "the '≈ one third of Sanskrit verbs are prefixed' share has no reproducible base in the available data: the VisualDCS prefix tally counts a specific derivation set (923 lemmas), not a clean prefixed-vs-simple partition of all verb lemmas",
       "ref": "no clean prefixed/simple verb-lemma partition; count base undisclosed",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the DCS-2021 lemma inventory. Flagged UNTESTABLE.",
+      "note": "Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the DCS-2021 lemma inventory. Flagged UNTESTABLE. INDEPENDENTLY RE-ATTEMPTED 16-07-2026 (H1047) with a second, root-validated method (each of DCS-2026's 11,096 distinct VERB lemmas checked against the 930-root WhitneyRoots crosswalk as either a bare known root or a known-preverb + known-root compound) — hit the SAME wall from a different angle: only 28% of lemmas classify cleanly either way (626 simple + 2,464 prefixed), leaving 72% (8,006 lemmas) unclassifiable without genuine morphological segmentation, which neither export provides. Two independent attempts, two different methods, same conclusion: this needs real segmentation infrastructure this pipeline doesn't have, not a smarter query. Not re-derived without new infrastructure.",
       "mg_footnote": null
     },
     {
@@ -2760,7 +2760,7 @@
       "number": "'prati- especially numerous [among nouns]' is not reproducible: the noun-specific prati- productivity has no stated base, and the general VisualDCS preverb-lemma tally ranks prati ~9th (behind sam/pra/vi), giving no support for a prati- peak",
       "ref": "no noun-specific preverb count; general tally does not single out prati-",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base.",
+      "note": "Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base. INDEPENDENTLY RE-CHECKED 16-07-2026 (H1047, unvalidated NOUN-lemma prefix-string count, DCS-2026): prati- ranks 10th by lemma-type count (383) among preverbs, well behind vi- (1,716), ā- (1,443), pra- (1,204), su- (1,063) — CONSISTENT with the prior finding (prati- does not peak), though this count is unvalidated against a real stem lexicon (short preverbs like vi-/ā- likely inflate their own rank via coincidental word-initial letter matches, so the ranking below prati- is noisier than the simple fact that prati- doesn't lead). Two independent checks, same negative direction — not re-derived further without real morphological segmentation.",
       "mg_footnote": null
     },
     {
