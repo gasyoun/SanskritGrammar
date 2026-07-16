@@ -45,9 +45,20 @@ v3.0, 2021) *Руководства по санскритской компози
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-8: **7 TRUE · 1 OVERSTATED**), источник правды;
-- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (занятия 1–25; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-24: **16 TRUE · 6 OVERSTATED · 2 UNTESTABLE**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (22 продвинуты; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
+- [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [apte_treebank_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, управление падежами и падеж цели по зависимостному слою DCS;
 - [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) + [claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.json) — генерируются из `claims.yml` скриптом [scripts/build_claims.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) (`npm run claims`), руками не править.
+
+**Дренаж backlog treebank-инструментом (H1059, 16-07-2026):** реестр 8 → 24. Позиционные и
+согласовательные утверждения дренируются надёжно (согласование глагола с подлежащим по числу
+98,21% на n=10 672; `ca`/`tu`/`ced`/`iva`/`eva`/`kila` — почти никогда не в начале предложения),
+кроме `uta` — **первый корпусный флаг** (в начале предложения 23,66% против <1% у настоящих
+постпозитивов → OVERSTATED). Правила управления делятся натрое: страх/отвращение → аблатив
+**подтверждено** (APT-16/17); «бросать» → местный и «править/помнить» → родительный **OVERSTATED**
+(в корпусе лидирует конкурирующий падеж); гнев/любовь → **UNTESTABLE** (<10 размеченных аргументов
+в ведийски-смещённом срезе). Падеж цели движения: винительный 85,91% против неаккузативного 14,09%
+(n=873) — число под флаг APT-5.
 
 **Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
 грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,
