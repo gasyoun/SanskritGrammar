@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.17.0] - 2026-07-16
 
 ### Changed
+- **Заключение — блок «Итог двух частей» одобрен автором 16-07-2026, без правок.** Footnote
+  `[^edz2]` updated with approval note, `BOOK_PLAN.md` Заключение закрыто. Синтез книги (три
+  вопроса дважды; 809 MW / 590 DCS / 550 ядро 58,8 %; класс 376/26; указатель Зализняка как
+  выполненное «дальнейшее направление работы» 2014 г.) остаётся неизменным.
+  ([H1039](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1039-Opus_SanskritGrammar_m03-conclusion-two-parts_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 - **Гл. 7 «Указатель Зализняка» — одобрена автором 16-07-2026, на исправленный текст.** Виза дана
   после уточнения охвата §7.1 (749/930, PR #298). Draft banner removed, `[^ed7draft]` footnote
   updated with approval note, `BOOK_PLAN.md` Часть II Гл. 7 закрыта. **Все четыре главы Части II
