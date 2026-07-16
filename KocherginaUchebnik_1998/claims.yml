@@ -29,8 +29,9 @@
 # lesson-ordered batches. Numbers are either reproducible DCS-2021 statistics (verify_claims_dcs.py:
 # vowel census, verb-class share, case distribution, tense/mood token counts) or systemic facts
 # adjudicated against Whitney 1889; M.G. frequency footnotes were added where Kochergina gives no
-# number and the corpus supplies one. This file = the VERIFIED register (234 entries; HK-4 splits
-# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-233; 0 pending).
+# number and the corpus supplies one. This file = the VERIFIED register (260 entries; HK-4 splits
+# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-259; 0 pending).
+# H1050 (16-07-2026) added HK-234..HK-259 — the full samasa-section audit per the Leitan codebook.
 # The now-drained HARVEST BACKLOG is in claims_harvest.yml (candidates: [] — fully promoted).
 #
 # Entry shape: see the four seed hypotheses (HK-*) below.
@@ -82,6 +83,22 @@ synthesis: >-
   frequency-hidden claims with the corpus number — so the learner sees where an absolute rule has an
   escape hatch and where a "variant" is in fact the norm. The register generalises: the two axes are
   worth running on any grammar whose ordering predates corpus statistics (roadmap spine S1/S2).
+
+
+  **The samasa-section audit (H1050, 16-07-2026, per MG's adjudication directive «весь раздел
+  по самасам неверный — проверить все по Лейтану»)** sharpens the book's profile with a third
+  pattern. Of the 46 section claims (registered + HK-234..HK-259), 36 are TRUE, 7 OVERSTATED,
+  0 FALSE, 3 UNTESTABLE — so the section's MECHANICS (stem changes, member order, dual/plural
+  rules, junction sandhi) are sound, refuting the hypothesis at the fact level. But all seven
+  flags sit on the CLASSIFICATORY SKELETON: the compound definition itself (HK-234 — excludes
+  the upapada class her own lessons teach), all four type definitions (HK-236 tatpurusa and
+  HK-237 karmadharaya delimited by part of speech instead of the Paninian case relation, each
+  broken by her own appositional extension; HK-238 apposition forced to carry simile semantics;
+  HK-239 dvigu missing the collective-sense criterion, over-capturing numeral bahuvrihis), and
+  the gender rule (HK-34). Against the Leitan/Paninian arrangement (karmadharaya and dvigu as
+  SUBTYPES of tatpurusa; case-relation, not POS, as the criterion) the framework is
+  systematically non-standard even where every individual mechanical fact is right — the
+  author's intuition holds for the system, not the facts.
 
 entries:
 
@@ -3586,3 +3603,395 @@ entries:
     ref: Whitney §1313 (avyayībhāva)
     verdict_pedagogy: JUSTIFIED
     note: Correct avyayībhāva description. Anchor.
+
+  # --- H1050: полный аудит раздела самас (занятия XXX-XXXIII, XXXVIII, XXXX) по кодбуку
+  # Лейтана (sangram/articles/tatpurusha/data/codebook_leitan.md) + Whitney гл. о композитах
+  # (§§ 1246-1316) + корпусные пакеты P4/SG-WF-006. Директива MG 16-07-2026 (адъюдикация
+  # A65, заметка к HK-34): «весь раздел по самасам неверный. Проверить все по Лейтану».
+  # HK-234..HK-259 добирают 26 нереестрованных утверждений раздела.
+
+  - id: HK-234
+    loc: "Занятие XXXII / mdx line 8406"
+    claim_ru: >-
+      Сложным словом мы будем считать такое сочетание основ, при котором каждая из
+      основ встречается в самостоятельном употреблении в языке определенного периода.
+    kind: rule
+    falsifiable_as: "does EVERY compound member also occur as an independent word"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-class: bound kṛt finals never occur independently — -jit, -stha, -ga, -da (upapada compounds; codebook_leitan.md tier-2 'upapada'); Kochergina herself teaches ji→-jit, kar→-kṛt (HK-186)"
+    ref: "Leitan codebook (upapada); Whitney compounds chapter (§§1246 слл.)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The working definition excludes the upapada class whose bound finals (-jit, -kṛt)
+      the same textbook teaches one lesson later — the definition's universal «каждая»
+      is contradicted by her own material.
+
+  - id: HK-235
+    loc: "Занятие XXXII / mdx line 8408"
+    claim_ru: "Внутри сложного слова действуют правила внешних saṃdhi."
+    kind: rule
+    falsifiable_as: "do compound-member junctions follow external sandhi rules"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: member junctions follow external sandhi as the default (rāja + ṛṣi → rājarṣi; catuḥ + ṣaṣṭi → catuḥṣaṣṭi); lexicalized irregular junctions (ṣoḍaśa type) are closed exceptions, not the rule"
+    ref: "Whitney compounds chapter (§§1246 слл., external combination as default)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Correct as the teaching default; the handful of irregular junctions are lexical
+      items (see HK-259 on numeral compounds where one bites her own paradigm).
+
+  - id: HK-236
+    loc: "Занятие XXXII / mdx line 8410"
+    claim_ru: >-
+      Словами tatpuruṣa являются такие сложные слова, первый элемент которых выражен
+      именем существительным или местоимением; вторым элементом может быть
+      существительное, прилагательное или отглагольное образование.
+    kind: typology
+    falsifiable_as: "is tatpuruṣa correctly delimited by the PART OF SPEECH of member1 (noun/pronoun) rather than by the case relation"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "the Pāṇinian criterion is the CASE RELATION of member1 in the vigraha (vyadhikaraṇa, cases 2-7 — codebook tier 2), not its POS; her own L8426 admits noun+noun karmadhārayas, so 'noun-first ⇒ tatpuruṣa' fails inside her own partition"
+    ref: "Leitan codebook (vibhakti-tatpuruṣa dvitīyā-saptamī; karmadhāraya = samānādhikaraṇa, Pāṇ. 1.2.42)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      A POS-based surrogate for a case-relation definition: internally leaky (appositional
+      N+N compounds are karmadhāraya by her own next paragraph) and non-Pāṇinian (Leitan:
+      karmadhāraya and dvigu are SUBTYPES of tatpuruṣa, not siblings).
+
+  - id: HK-237
+    loc: "Занятие XXXII / mdx line 8419"
+    claim_ru: >-
+      Словами karmadhāraya являются такие сложные слова, первый элемент которых выражен
+      именем прилагательным, причастием или наречием.
+    kind: typology
+    falsifiable_as: "is karmadhāraya delimited by member1 POS = adjective/participle/adverb"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-class in her own text: L8426 adds appositional noun+noun compounds (puruṣavyāghra type) to karmadhāraya — the POS criterion is broken by her own extension; the Pāṇinian criterion is same-case (samānādhikaraṇa)"
+    ref: "Leitan codebook (karmadhāraya = samānādhikaraṇa-tatpuruṣa); Whitney descriptive compounds"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      Same partition defect as HK-236, from the other side.
+
+  - id: HK-238
+    loc: "Занятие XXXII / mdx line 8426"
+    claim_ru: >-
+      К словам karmadhāraya относятся также сочетания двух существительных по типу
+      приложения; тогда сложное слово содержит элемент сравнения.
+    kind: rule
+    falsifiable_as: "do ALL appositional N+N karmadhārayas carry comparison (simile) semantics"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "the simile type (puruṣavyāghra 'man-tiger', meghaśyāma — codebook example) is real, but plain kind-apposition without simile is standard: rājarṣi 'царь-риши' — no comparison"
+    ref: "Leitan codebook (karmadhāraya: apposition OR simile); Whitney descriptive compounds"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      «Тогда» turns a subtype (simile) into a property of the whole appositional class;
+      rājarṣi-type appositives carry none.
+
+  - id: HK-239
+    loc: "Занятие XXXII / mdx line 8432"
+    claim_ru: >-
+      Словами dvigu являются такие сложные слова, первый элемент которых выражен
+      именем числительным.
+    kind: typology
+    falsifiable_as: "is every numeral-first compound a dvigu"
+    sources: [whitney, dcs]
+    verdict_fact: OVERSTATED
+    number: "dvigu traditionally requires the collective (samāhāra/taddhita) sense (codebook: 'numeral-initial karmadhāraya, collective sense'); the corpus NUM-first pool is dominated by numeral BAHUVRĪHIS (the OCH-58/A65 §4 negative pilot: a NUM-first gender census is unusable precisely because the class is flooded by bahuvrīhis)"
+    ref: "Leitan codebook (dvigu = saṃkhyā-pūrva karmadhāraya, collective); ZalizniakOcherk_1978/och58_compound_stats.json context"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The numeral-first surface test over-captures: triloka- as bahuvrīhi ('three-worlded')
+      is not dvigu; the defining feature is the collective vigraha, which the definition omits.
+
+  - id: HK-240
+    loc: "Занятие XXXII / mdx line 8448"
+    claim_ru: >-
+      [Слова bahuvrīhi] превращаются в сложное определение-прилагательное, согласуясь с
+      определяемым словом в роде, числе и падеже и изменяя место ударения.
+    kind: rule
+    falsifiable_as: "do bahuvrīhi agree with their head in gender/number/case and shift the (Vedic) accent"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: adjectival agreement is definitional for the possessive class; the accent shift to the first member is the Vedic-accent regularity already verified as HK-184"
+    ref: "Whitney secondary adjective (possessive) compounds; ср. HK-184"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Accent half is meaningful only for the accented (Vedic) layer — same framing as HK-184.
+
+  - id: HK-241
+    loc: "Занятие XXXII / mdx line 8464"
+    claim_ru: >-
+      Bahuvrīhi как определения существительных женского рода образуются от основ
+      мужского рода по известным правилам.
+    kind: rule
+    falsifiable_as: "are feminine bahuvrīhi formed from the masculine stem by the regular feminine-derivation rules"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: fem. bahuvrīhi in -ā/-ī follow the ordinary adjectival feminine derivation; no standard counter-class"
+    ref: "Whitney secondary adjective compounds (feminine formation)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Thin falsifiable content («по известным правилам») — verified as the absence of a
+      special bahuvrīhi-specific feminine rule.
+
+  - id: HK-242
+    loc: "Занятие XXXII / mdx line 8466"
+    claim_ru: >-
+      Индийские имена и прозвища нередко являются сложными словами (чаще всего —
+      словами bahuvrīhi).
+    kind: statistic
+    falsifiable_as: "among compound personal names, is bahuvrīhi the most frequent type"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: DCS does not tag proper names by compound type; the P4 κ-sample (n=120) is not name-stratified"
+    ref: "P4 kappa_result.json (no name stratum)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Plausible (Mahābāhu, Pītāmbara type) but not adjudicable without an onomastic
+      compound-type census — instrument spec, not a verdict.
+
+  - id: HK-243
+    loc: "Занятие XXXII / mdx line 8474"
+    claim_ru: >-
+      В слова dvandva соединяются существительные, реже прилагательные. Dvandva могут
+      состоять из двух и более основ.
+    kind: statistic
+    falsifiable_as: "are dvandva members mostly nouns, with adjectival dvandvas rarer"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: copulative compounds are chiefly substantival; adjective dvandvas (śītoṣṇa type) form a recognized but smaller class"
+    ref: "Whitney copulative compounds (§§1252 слл.)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-244
+    loc: "Занятие XXXII / mdx line 8480"
+    claim_ru: >-
+      Двучленные dvandva, обозначающие множество предметов, могут иметь форму
+      множественного числа.
+    kind: rule
+    falsifiable_as: "are plural-ending two-member dvandvas attested when denoting pluralities"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic + attested (devamanuṣyāḥ type); existential «могут» is safe"
+    ref: "Whitney copulative compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-245
+    loc: "Занятие XXXII / mdx line 8490"
+    claim_ru: >-
+      Сложение, особенно dvandva, может встретиться внутри других типов сложных слов.
+    kind: rule
+    falsifiable_as: "are embedded compounds (especially dvandva) attested inside larger compounds"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "existential core corpus-backed: 152,372 of 595,021 reconstructed compounds (25.6%) have 3+ members (SG-WF-006 coverage_summary.json) — embedding is the norm of the long tail; the «особенно dvandva» rider is systemically standard for long chains"
+    ref: "sangram/articles/compounds-overview/data/coverage_summary.json; Whitney on compound chains"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-246
+    loc: "Занятие XXXII / mdx line 8508"
+    claim_ru: "Сложные слова широко используются в заглавиях произведений на санскрите."
+    kind: statistic
+    falsifiable_as: "are Sanskrit work titles predominantly compounds"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "observational: the canonical title inventory is compound-dominated (Mahābhārata, Raghuvaṃśa, Kathāsaritsāgara, Daśakumāracarita …)"
+    ref: "title inventory of the classical canon (DCS text list)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-247
+    loc: "Занятие XXXIII / mdx line 8675"
+    claim_ru: "Корни на -ā изменяют -ā на a (в конце сложного слова)."
+    kind: allomorphy
+    falsifiable_as: "do root-final compound members in -ā appear shortened to -a (-stha, -jña, -ga, -da)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the -stha/-jña/-ga/-da finals are the standard shortened root forms"
+    ref: "Whitney root-final compound members"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-248
+    loc: "Занятие XXXIII / mdx line 8692"
+    claim_ru: >-
+      К основе на палатальные, d, ṣ или h в dvandva, имеющих собирательное значение,
+      присоединяется a.
+    kind: allomorphy
+    falsifiable_as: "do samāhāra-dvandva finals in palatal/d/ṣ/h extend with -a (chatropānaham type)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic (Pāṇinian samāhāra rule); her own example chatropānaham conforms"
+    ref: "Pāṇinian samāhāra-dvandva extension; Whitney copulative compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-249
+    loc: "Занятие XXXIII / mdx line 8698"
+    claim_ru: >-
+      Основа на долгую гласную или дифтонг в составе слов dvigu или dvandva имеет
+      соответствующую краткую гласную, т. е. ai, e → i; au, o → u.
+    kind: allomorphy
+    falsifiable_as: "do dvigu/dvandva finals with long vowel/diphthong shorten (dvikhāri type)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic (Pāṇ. 1.2.47-48 class of rules); her dvikhāri example conforms"
+    ref: "Pāṇinian shortening in dvigu/upasarjana; Whitney"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-250
+    loc: "Занятие XXXIII / mdx line 8720"
+    claim_ru: >-
+      В исключительно редких случаях в словах tatpuruṣa первая основа сложения может
+      быть представлена словоформой.
+    kind: statistic
+    falsifiable_as: "are aluk-tatpuruṣas (inflected first member) exceptionally rare"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: aluk-samāsa is a small closed set (yudhiṣṭhira, vanecara type — codebook 'tat-other/aluk'); high token counts of individual names do not open the type"
+    ref: "Leitan codebook (aluk under tat-other); Whitney case-form first members"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-251
+    loc: "Занятие XXXIII / mdx line 8740"
+    claim_ru: >-
+      В словах tatpuruṣa основа -artha в форме косвенных падежей (обычно в A.)
+      означает «ради, для».
+    kind: rule
+    falsifiable_as: "does compound-final -artha (mostly acc. -artham) function as the postposition 'for the sake of'"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic + high-frequency attested (tadartham, kimartham); the acc. is indeed the dominant slot"
+    ref: "Whitney; DCS -artham adverbial tokens"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-252
+    loc: "Занятие XXXIII / mdx lines 8742-8748"
+    claim_ru: >-
+      В словах bahuvrīhi основы -ādi, -prabhṛti, -mātra, -apekṣā играют полуслужебную
+      роль; -ādi и -prabhṛti употребляются в значении «начиная с», -ādi часто служит и
+      для обозначения главного.
+    kind: rule
+    falsifiable_as: "are -ādi/-prabhṛti/-mātra/-apekṣā semi-grammaticalized bahuvrīhi finals with 'beginning with / measuring' senses"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic + attested: the -ādi type (rāmādayaḥ 'Rāma and the others') is a textbook-standard grammaticalized bahuvrīhi"
+    ref: "Whitney possessive compounds; DCS -ādi tokens"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-253
+    loc: "Занятие XXXIII / mdx line 8756"
+    claim_ru: >-
+      В редких случаях при основосложении karmadhāraya может быть изменен обычный
+      порядок следования основ.
+    kind: statistic
+    falsifiable_as: "are inverted-order karmadhārayas (gata-pūrva, pitā-maha) rare"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the inverted type is a recognized closed list; «редких» is the correct hedge"
+    ref: "Whitney descriptive compounds (anomalous order)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-254
+    loc: "Занятие XXXI / mdx line 8126"
+    claim_ru: >-
+      Количественные числительные образуются сложением единиц с десятками, тысячами,
+      причем единицы стоят на первом месте.
+    kind: rule
+    falsifiable_as: "in compound numerals do units precede tens/hundreds/thousands"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: pañcaviṃśati type ordering is regular; the subtractive ekonaviṃśati type is a separate formation she footnotes, not an ordering counter-example"
+    ref: "Whitney numerals"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-255
+    loc: "Занятие XXXI / mdx line 8187"
+    claim_ru: >-
+      При образовании сложных числительных действуют правила внешних saṃdhi гласных и
+      согласных.
+    kind: rule
+    falsifiable_as: "do numeral-compound junctions follow regular external sandhi"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-example inside her own paradigm: ṣoḍaśa '16' — regular external sandhi of ṣaṣ + daśa would give *ṣaḍdaśa (cf. viḍbhis-type ṣ→ḍ); the attested ṣo- junction is an irregular lexicalized form; the dvā-/aṣṭā- allomorphs (HK-178) likewise sit outside sandhi proper"
+    ref: "Whitney numerals (irregular combinations); ср. HK-178"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      True for the majority of junctions (catuḥṣaṣṭi, saptāśīti), but stated as an
+      unqualified rule one line above paradigms containing ṣoḍaśa — the learner meets the
+      counter-example immediately.
+
+  - id: HK-256
+    loc: "Занятие XXXVIII / mdx line 10142"
+    claim_ru: >-
+      По значению существительные с su- и dus- сходны со сложными словами karmadhāraya,
+      но ударение в них падает на префикс.
+    kind: rule
+    falsifiable_as: "are Vedic su-/dus- nouns prefix-accented (vs the final-member accent of determinatives)"
+    sources: [whitney]
+    verdict_fact: UNTESTABLE
+    number: "no accent instrument: DCS carries no accent layer, and Whitney's accent statements for su-/dus- formations vary by subtype (cf. sumánas- with member accent) — the universal cannot be adjudicated without an accented-corpus census"
+    ref: "Whitney accent of compounds (subtype-dependent)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Instrument spec: a VedaWeb/accented-RV census of su-/dus- formations would settle it;
+      until then flagged, not scored — with sumánas- as prima facie tension.
+
+  - id: HK-257
+    loc: "Занятие XXXVIII / mdx line 10194"
+    claim_ru: >-
+      Индийская грамматическая традиция относила подобные прилагательные [с su-, dus-],
+      а также прилагательные с a-, sa- к bahuvrīhi.
+    kind: typology
+    falsifiable_as: "did the Pāṇinian tradition class su-/dus-/a-/sa- possessive adjectives as bahuvrīhi"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic-historical: nañ-bahuvrīhi (aputra-) and su-/dur- possessives (durmanas- 'whose mind is bad') are standard traditional bahuvrīhi classes"
+    ref: "Pāṇinian bahuvrīhi with nañ/su/dur first members; Whitney possessive compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-258
+    loc: "Занятие XXXX / mdx line 10730"
+    claim_ru: >-
+      Десубстантивные прилагательные с другими префиксами встречаются редко;
+      употребляются преимущественно как определения живых существ и имеют посессивное
+      значение.
+    kind: statistic
+    falsifiable_as: "are desubstantival prefixal adjectives beyond vi-/nis-/ud- rare, mostly animate-modifying, possessive"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: DCS does not tag denominal prefixal adjectives as a class, and animacy of heads is untagged (same blocker family as HK-221)"
+    ref: "ср. HK-221 (animacy untagged)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Second half doubles the HK-221-class animacy blocker; queued instrument (H1056
+      animacy tagging) would unlock both.
+
+  - id: HK-259
+    loc: "Занятие XXXX / mdx line 10732 (+ fn line 15756)"
+    claim_ru: >-
+      Префиксальные десубстантивные прилагательные по значению аналогичны словам
+      bahuvrīhi; согласно индийской лингвистической традиции их и относили к сложным
+      словам bahuvrīhi.
+    kind: typology
+    falsifiable_as: "did the Indian tradition class prefixal possessive adjectives as bahuvrīhi"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic-historical: same traditional classification as HK-257 (prādi/nañ possessives under bahuvrīhi)"
+    ref: "Pāṇinian bahuvrīhi classes; Whitney possessive compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""

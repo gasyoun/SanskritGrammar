@@ -9,6 +9,24 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-16
+### Added
+- **Полный аудит раздела самас по кодбуку Лейтана (H1050, Fable 5 `claude-fable-5`; директива
+  MG из адъюдикации A65: «весь раздел по самасам неверный — проверить все по Лейтану»).**
+  Реестр вырос 234 → 260: HK-234..HK-259 добирают все 26 нереестрованных утверждений
+  занятий XXX-XXXIII, XXXVIII, XXXX. **Секционный итог (46 утверждений): 36 TRUE · 7
+  OVERSTATED · 0 FALSE · 3 UNTESTABLE — гипотеза опровергнута для фактов и подтверждена
+  для каркаса:** все семь флагов сидят на классификационном скелете — определение
+  композита (HK-234, исключает upapada-класс её же уроков), все четыре определения типов
+  (HK-236 tatpuruṣa и HK-237 karmadhāraya — по частям речи вместо падежного отношения,
+  оба ломаются её же аппозитивным расширением; HK-238 — аппозиции навязана семантика
+  сравнения; HK-239 — dvigu без собирательного критерия, перехватывает числительные
+  бахуврихи) и правило рода (HK-34); 36 механических правил раздела (изменения основ,
+  порядок членов, сандхи стыков, двойств./множ. в dvandva) — верны. Синтез реестра
+  дополнен третьим паттерном («система, не факты»); 3 UNTESTABLE — инструментные
+  спецификации (ономастический ценз типов; акцентный ценз su-/dus-; анимационная
+  разметка — ср. H1056).
+
 ## [0.9.0] - 2026-07-16
 ### Added
 - **DCS animacy tagging built — HK-221 MEASURED TRUE; HK-86 sized with a major confound found (H1056)** — new reusable instrument [`animacy_lookup.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/animacy_lookup.py): DCS's own `m_wordsem` column carries Sanskrit-WordNet sense ids (per VisualDCS's A38 packaging paper), and the mapping table that turns those ids into a usable category (`word-senses.csv` + `sembank-relations.csv`) already existed in the upstream `dcs-conllu` mirror's `lookup/` folder — never built into a corpus-side animacy tagger before. Animate = descends from "person" (574) or "animal" (575) via the WordNet subclass hierarchy; two more roots were added after spot-checks caught real gaps — "spiritual being" (42842, WordNet doesn't treat deities as "person") and "imaginary being" (42775, mythical monsters like rākṣasa sit under a "concept/idea" branch, not "entity" at all). Validated against 24 known animate/inanimate nouns: 22/24 correct.
