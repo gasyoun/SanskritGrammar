@@ -1,113 +1,186 @@
 {
-  "instrument": "root_shape_parser.py over talmud_appendix1.json (745 roots); §59 six-slot template with Zalizniak's own rulings (initial-s slot, kṣ=single, v/m in slot 2, rare final obstruent cluster); element anchored by each root's catalog ryad series",
-  "template_fit_share_pct": 98.26,
-  "fits": 732,
-  "misfits": 13,
-  "misfit_inventory": [
+  "instrument": "root_shape_parser.py over TolchelnikovTalmud_2026/data/talmud_appendix1.json (745-root Приложение-1 catalog); nucleus located by the catalog's own ryad tag per §50's three-grade table, flanking consonants slotted per §59",
+  "totals": {
+    "roots": 745,
+    "resolved": 739,
+    "fit": 727,
+    "extra_vowel": 3,
+    "no_fit": 9,
+    "no_nucleus_found": 6
+  },
+  "fit_rate_pct_of_all": 97.6,
+  "fit_rate_pct_of_resolved": 98.4,
+  "occupied_slot_histogram": {
+    "2,4,6": 183,
+    "3,4,6": 124,
+    "2,4": 104,
+    "2,3,4,6": 68,
+    "2,3,4": 56,
+    "4,6": 40,
+    "3,4": 36,
+    "2,4,5,6": 22,
+    "2,4,5": 22,
+    "3,4,5,6": 18,
+    "1,2,4": 9,
+    "1,2,4,6": 9,
+    "4": 8,
+    "4,5,6": 7,
+    "2,3,4,5,6": 6,
+    "3,4,5": 6,
+    "2,3,4,5": 3,
+    "4,5": 2,
+    "1,2,4,5,6": 2,
+    "1,2,4,5": 1,
+    "1,2,3,4": 1
+  },
+  "named_exception_counts": {
+    "irregular_slot2_v_or_m": 21,
+    "slot1_s_plus_obstruent": 22,
+    "slot6_obstruent_cluster": 126
+  },
+  "named_exception_examples": {
+    "irregular_slot2_v_or_m": [
+      "MIØKṢ",
+      "MNĀ",
+      "MRIT",
+      "MREḌ",
+      "MLĀ",
+      "MLICH",
+      "MLUC",
+      "VIØC",
+      "VIØDH",
+      "VĪØJ"
+    ],
+    "slot1_s_plus_obstruent": [
+      "SKU",
+      "SKN̥D",
+      "SKN̥BH",
+      "SKHAL",
+      "STAN",
+      "STIGH",
+      "STIM",
+      "STU",
+      "STUBH",
+      "STṚ"
+    ],
+    "slot6_obstruent_cluster": [
+      "AKṢ.1",
+      "AKṢ.2",
+      "ANṬH",
+      "ĀNCH",
+      "IDH",
+      "ĪKṢ",
+      "ĪṄKH",
+      "UØKṢ",
+      "UKṢ",
+      "UJH"
+    ]
+  },
+  "constraint_violations": {
+    "slot3_equals_nucleus_sonant": {
+      "count": 3,
+      "examples": [
+        "NAND",
+        "LAL",
+        "VYE"
+      ]
+    },
+    "slot2_and_6_both_aspirated": {
+      "count": 1,
+      "examples": [
+        "HŪRCH"
+      ]
+    }
+  },
+  "no_fit_examples": [
     {
-      "root": "iradh",
-      "series": "A",
-      "ryad": "A₁"
+      "id": "ĪRṢY",
+      "outcome": "no_fit",
+      "nucleus": "ī",
+      "prefix": "",
+      "suffix": "rṣy",
+      "spelling_used": "īrṣy"
     },
     {
-      "root": "irajy",
-      "series": "A",
-      "ryad": "A₁"
+      "id": "KHALL",
+      "outcome": "no_fit",
+      "nucleus": "a",
+      "prefix": "kh",
+      "suffix": "ll",
+      "spelling_used": "khall"
     },
     {
-      "root": "īrṣy",
-      "series": "I",
-      "ryad": "I₂"
+      "id": "GHŪRṆ",
+      "outcome": "no_fit",
+      "nucleus": "ū",
+      "prefix": "gh",
+      "suffix": "rṇ",
+      "spelling_used": "ghūrṇ"
     },
     {
-      "root": "khall",
-      "series": "A",
-      "ryad": "A₁"
+      "id": "TSAR",
+      "outcome": "no_fit",
+      "nucleus": "ar",
+      "prefix": "ts",
+      "suffix": "",
+      "spelling_used": "tsar"
     },
     {
-      "root": "ghūrṇ",
-      "series": "U",
-      "ryad": "U₂"
+      "id": "PINV",
+      "outcome": "no_fit",
+      "nucleus": "i",
+      "prefix": "p",
+      "suffix": "nv",
+      "spelling_used": "pinv"
     },
     {
-      "root": "tsar",
-      "series": "R",
-      "ryad": "R"
+      "id": "PSØ̄",
+      "outcome": "no_fit",
+      "nucleus": "ā",
+      "prefix": "ps",
+      "suffix": "",
+      "spelling_used": "psā"
     },
     {
-      "root": "palai",
-      "series": "I",
-      "ryad": "I"
+      "id": "VELL",
+      "outcome": "no_fit",
+      "nucleus": "e",
+      "prefix": "v",
+      "suffix": "ll",
+      "spelling_used": "vell"
     },
     {
-      "root": "pinv",
-      "series": "I",
-      "ryad": "I₁"
+      "id": "ŚCUT",
+      "outcome": "no_fit",
+      "nucleus": "u",
+      "prefix": "śc",
+      "suffix": "t",
+      "spelling_used": "ścut"
     },
     {
-      "root": "psā",
-      "series": "A",
-      "ryad": "A₂"
-    },
-    {
-      "root": "mṛkṣ",
-      "series": "A",
-      "ryad": "A₁"
-    },
-    {
-      "root": "vell",
-      "series": "I",
-      "ryad": "I"
-    },
-    {
-      "root": "ścut",
-      "series": "U",
-      "ryad": "U₁"
-    },
-    {
-      "root": "ṣṭhīv",
-      "series": "I",
-      "ryad": "I₂"
+      "id": "ṢṬHĪV",
+      "outcome": "no_fit",
+      "nucleus": "ī",
+      "prefix": "ṣṭh",
+      "suffix": "v",
+      "spelling_used": "ṣṭhīv"
     }
   ],
-  "granted_extension_usage": {
-    "slot2_v_or_m": 111,
-    "slot6_obstruent_cluster": 14,
-    "slot1_s": 40
-  },
-  "constraint_violations (language census, not fit)": {
-    "slot3-sonant-equals-element-sonant": 3,
-    "slots-2-and-6-both-aspirated": 1
-  },
-  "slot_occupancy": {
-    "slot1_s": 40,
-    "slot2": 564,
-    "slot3": 229,
-    "slot5": 91,
-    "slot6": 481
-  },
-  "s59_example_roots": {
-    "i": true,
-    "nī": true,
-    "śru": true,
-    "sthā": true,
-    "styā": true,
-    "iṣ": true,
-    "pad": true,
-    "krudh": true,
-    "jīv": true,
-    "cumb": true,
-    "kṣṇu": true,
-    "takṣ": true,
-    "vyath": true,
-    "mlā": true,
-    "katth": true
-  },
-  "validation": {
-    "catalog_roots": 745,
-    "classified": 745,
-    "unclassifiable_no_series": 0,
-    "all_s59_examples_parse": true,
-    "share_over_90pct": true
+  "no_nucleus_examples": [
+    "KṢMAI",
+    "MI.2",
+    "MṚØKṢ",
+    "ŚIKṢ",
+    "SPHUR",
+    "SPHŪRJ"
+  ],
+  "extra_vowel_examples": [
+    "IRADH",
+    "IRAJY",
+    "PALAI"
+  ],
+  "self_test": {
+    "cases": 15,
+    "failures": []
   }
 }

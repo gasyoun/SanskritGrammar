@@ -1,244 +1,339 @@
 #!/usr/bin/env python
 """root_shape_parser.py — the root-shape parser for §59 (OCH-16).
 
-§59 claims the structure of «подавляющее большинство» Sanskrit roots fits a
-six-slot template:
+§59 claims the overwhelming majority of Sanskrit roots fit a six-position
+template:
 
-    1: s | 2: шумная | 3: сонант | 4: чередующийся элемент (§50) | 5: сонант | 6: шумная
+    1        2                3       4                          5       6
+    (s)  (obstruent)     (sonant)  ALTERNATING ELEMENT (§50)  (sonant)  (obstruent)
 
-with only slot 4 obligatory. OCH-16 refused a naive regex («would misparse
-exactly the interesting cases — not computed rather than miscomputed»); this
-parser implements ZALIZNIAK'S OWN §59 rulings, all quoted from mdx line 822:
+Only position 4 is mandatory; the rest may be empty (1 and 5 predominantly
+so). §59 itself names the tricky edge cases a naive regex would misparse:
+kṣ behaves as ONE consonant (√kṣṇu, √takṣ); v or m rarely fill position 2
+(√vyath, √mlā); position 6 may be an obstruent CLUSTER (√katth); position 1
+is only ever 's' before a further obstruent (√sthā, √styā).
 
-  - slot 1 is a dedicated initial 's' (sthā = s|th|ā; styā = s|t|y|ā);
-  - «сочетание kṣ ведет себя как одиночная согласная» (kṣṇu, takṣ);
-  - «изредка на месте 2 стоит v или m» (vyath, mlā) — granted extension;
-  - «изредка ... на месте 6 — сочетание шумных согласных» (katth) — granted
-    extension;
-  - two internal CONSTRAINTS he states (checked as a separate census, since
-    they restrict the language, not the template): the slot-3 sonant never
-    equals the sonant inside slot 4; slots 2 and 6 are never both aspirated
-    (h behaves as an aspirate).
+DESIGN: this is a phonological onset-nucleus-coda parse over each catalog
+root's own citation spelling, using the Talmud Приложение-1 catalog's own
+`ryad` (ablaut-series) tag to know exactly which vowel/vowel+resonant
+strings can realize position 4 for THAT root (weak/guṇa/vṛddhi per §50's
+table) — not a guess. Whatever flanks that nucleus match is tokenized into
+consonant UNITS (aspirate digraphs and kṣ count as one unit each, per §59)
+and classified sonant vs obstruent (y/v/r/l/m/n/ṅ/ñ/ṇ vs the stops,
+sibilants and h), then tested against the six slots. Citation grade
+(weak/guṇa/vṛddhi) doesn't change the verdict: the three ablaut grades of
+a series differ only in the vowel content of slot 4 itself, never in the
+surrounding consonant skeleton, so parsing whichever grade a root happens
+to be cited in is safe.
 
-INPUT = the author-catalog the claim's `sources: [talmud]` points at:
-TolchelnikovTalmud_2026/data/talmud_appendix1.json (745 roots), parsed via
-each root's `whitney_spellings` (IAST) with the ALTERNATING ELEMENT anchored
-by the root's own `ryad` series letter (A/I/U/R/L/M/N per §§50/60) — the
-series tells the parser WHAT the element is, so the split is Zalizniak-
-faithful, not phonologically re-derived. A root FITS if any (spelling,
-element-occurrence) split validates against the slot grammar; misfits are
-inventoried with reasons, never silently dropped.
+Primary spelling comes from the catalog's own `whitney_spellings` (plain
+IAST, no Talmud-internal notation); the catalog's `root` field is a
+fallback only for the 5 entries absent from Whitney (its ø/ø̄ marks — a
+documented Talmud-manual convention, "нуль звука, слабая ступень ряда
+А1/А2", legend in Talmud-2.1.6.mdx — are not used elsewhere here).
 
 Usage:  python ZalizniakOcherk_1978/root_shape_parser.py
 Writes  och16_root_shape_stats.json next to this script.
 """
 import json
 import sys
-from collections import Counter
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parent
-CATALOG = HERE.parent / "TolchelnikovTalmud_2026" / "data" / "talmud_appendix1.json"
+REPO = HERE.parent
+CATALOG = REPO / "TolchelnikovTalmud_2026" / "data" / "talmud_appendix1.json"
 
-# IAST segment inventory (multigraphs first for tokenization)
-MULTI = ["kṣ", "kh", "gh", "ch", "jh", "ṭh", "ḍh", "th", "dh", "ph", "bh"]
-OBSTRUENTS = {"k", "kh", "g", "gh", "c", "ch", "j", "jh", "ṭ", "ṭh", "ḍ", "ḍh",
-              "t", "th", "d", "dh", "p", "ph", "b", "bh", "ś", "ṣ", "s", "h", "kṣ"}
-ASPIRATES = {"kh", "gh", "ch", "jh", "ṭh", "ḍh", "th", "dh", "ph", "bh", "h"}
-SONANTS = {"y", "r", "l", "v", "m", "n", "ṇ", "ṅ", "ñ", "ṃ"}
-
-# citation-form realizations of the alternating element, by series letter
-# (longest first per series; weak/nasalized citation variants included so
-# defective-citation roots still anchor)
-ELEMENT_PATTERNS = {
-    # full three-grade citation realizations per §50 series (vṛddhi grades and
-    # the I-series ai-class — gā/gai, kṣmai — included; longest tried first)
-    "A": ["ā", "a"],
-    "I": ["āy", "ay", "ai", "ī", "i", "e", "ā"],
-    "U": ["āv", "av", "au", "ū", "u", "o"],
-    "R": ["ār", "ar", "rā", "ra", "ṝ", "ṛ", "ir", "ur", "īr", "ūr"],
-    "L": ["āl", "al", "ḹ", "ḷ"],
-    "M": ["ām", "am", "ṛṃ", "ṛm", "ā", "a"],
-    "N": ["ān", "an", "ṛṇ", "ṛn", "ṛṃ", "ā", "a"],
+# §50's table of three-grade realizations, restricted to what a citation form
+# can show (weak | guṇa | vṛddhi); bare (un-indexed) series get the union of
+# their subseries since guṇa/vṛddhi never differ by subindex. I/U series also
+# get their §54 before-vowel allomorphs (e→ay, ai→āy, o→av, au→āv) — some
+# catalog citations show the pre-vocalic form (e.g. dhāv, not dhau). R₂ gets
+# both weak-grade notations §53's note allows (plain ṛ and the Indian-
+# tradition-specific ṝ).
+RYAD_NUCLEI = {
+    "A₁": ["a", "ā"],
+    "A₂": ["i", "ī", "ā"],
+    "I₁": ["i", "e", "ai", "ay", "āy"],
+    "I₂": ["ī", "e", "ai", "ay", "āy"],
+    "I": ["i", "ī", "e", "ai", "ay", "āy"],
+    "U₁": ["u", "o", "au", "av", "āv"],
+    "U₂": ["ū", "o", "au", "av", "āv"],
+    "U": ["u", "ū", "o", "au", "av", "āv"],
+    "R₁": ["ṛ", "ar", "ār"],
+    "R₂": ["ṛ", "ṝ", "īr", "ūr", "ar", "ār"],
+    "R": ["ṛ", "ṝ", "īr", "ūr", "ar", "ār"],
+    "L": ["ḷ", "al", "āl"],
+    "M₁": ["a", "am", "ām"],
+    "M₂": ["am", "ām"],
+    "M": ["a", "am", "ām"],
+    "N₁": ["a", "an", "ān"],
+    "N₂": ["ā", "an", "ān"],
+    "N": ["a", "ā", "an", "ān"],
 }
-# sonant "inside" the element (for the slot-3 constraint census)
-ELEMENT_SONANT = {"ar": "r", "al": "l", "am": "m", "an": "n", "ām": "m", "ān": "n",
-                  "ār": "r", "āl": "l", "ir": "r", "ur": "r", "īr": "r", "ūr": "r",
-                  "ṛṃ": "m", "ṛm": "m", "ṛṇ": "n", "ṛn": "n",
-                  "ay": "y", "āy": "y", "av": "v", "āv": "v"}
+VOWELS = set("aāiīuūṛṝḷ") | {"e", "o", "ai", "au"}  # for the stray-extra-vowel guard
+
+SONANTS = set("yvrlmnṇñṅṃ")  # ṃ (anusvara) is surface nasal+sibilant sandhi, underlyingly n/m
+ASPIRATES = {"kh", "gh", "ch", "jh", "ṭh", "ḍh", "th", "dh", "ph", "bh"}
+OBSTRUENT_SIMPLE = set("kgcjṭḍtdpbśṣshç")  # ç = Zaliznyak's own §59 spelling of ś
+KS_DIGRAPH = "kṣ"  # §59's named exception: behaves as a single consonant
 
 
-def tokenize(s):
-    out, i = [], 0
+def classify(unit):
+    if unit == KS_DIGRAPH or unit in ASPIRATES or unit in OBSTRUENT_SIMPLE:
+        return "obstruent"
+    if unit in SONANTS:
+        return "sonant"
+    return "unknown"
+
+
+def tokenize_consonants(s):
+    """Split a consonant-only run into phonemic units (kṣ and aspirate
+    digraphs count as one unit each, per §59)."""
+    units = []
+    i = 0
     while i < len(s):
-        for m in MULTI:
-            if s.startswith(m, i):
-                out.append(m)
-                i += len(m)
-                break
+        two = s[i:i + 2]
+        if two == KS_DIGRAPH or two in ASPIRATES:
+            units.append(two)
+            i += 2
         else:
-            out.append(s[i])
+            units.append(s[i])
             i += 1
-    return out
+    return units
 
 
-def valid_prefix(segs):
-    """slots 1-3: [s]? [obstruent|v|m]? [sonant]? — returns (ok, used_slots)."""
-    used = {}
-    i = 0
-    if i < len(segs) and segs[i] == "s" and len(segs) > 1:
-        # initial s occupies slot 1 only if something follows it in the prefix
-        # (a bare s- onset like 'sad' is slot 2)
-        if len(segs) - i >= 2:
-            used["s1"] = True
-            i += 1
-    if i < len(segs) and (segs[i] in OBSTRUENTS or segs[i] in {"v", "m"}):
-        used["c2"] = segs[i]
-        used["c2_vm"] = segs[i] in {"v", "m"}
-        i += 1
-    if i < len(segs) and segs[i] in SONANTS:
-        used["son3"] = segs[i]
-        i += 1
-    return (i == len(segs)), used
+def find_nucleus(spelling, ryad):
+    """Locate §50's alternating element for this root's own ryad tag.
+    Returns (start, end, matched_string) or None if no candidate matches."""
+    candidates = RYAD_NUCLEI.get(ryad)
+    if candidates is None:
+        return None
+    for cand in sorted(set(candidates), key=len, reverse=True):
+        idx = spelling.find(cand)
+        if idx != -1:
+            return idx, idx + len(cand), cand
+    return None
 
 
-def valid_suffix(segs):
-    """slots 5-6: [sonant]? [obstruent]{0,2} (cluster = granted-rare)."""
-    used = {}
-    i = 0
-    if i < len(segs) and segs[i] in SONANTS:
-        used["son5"] = segs[i]
-        i += 1
-    obst = []
-    while i < len(segs) and segs[i] in OBSTRUENTS and len(obst) < 2:
-        obst.append(segs[i])
-        i += 1
-    if obst:
-        used["c6"] = obst
-        used["c6_cluster"] = len(obst) > 1
-    return (i == len(segs)), used
+def fit_prefix(units):
+    """Slots 1(s)/2(obstruent)/3(sonant), left to right, at most 3 units."""
+    n = len(units)
+    if n == 0:
+        return {}
+    if n == 1:
+        k = classify(units[0])
+        if k == "sonant":
+            return {"3": units[0]}
+        if k == "obstruent":
+            return {"2": units[0]}
+        return None
+    if n == 2:
+        c1, c2 = units
+        k1, k2 = classify(c1), classify(c2)
+        if k1 == "obstruent" and k2 == "sonant":
+            return {"2": c1, "3": c2}
+        if c1 == "s" and k2 == "obstruent":
+            return {"1": c1, "2": c2}
+        if c1 in ("v", "m") and k2 == "sonant":  # §59's named rare exception
+            return {"2": c1, "3": c2, "irregular_slot2": c1}
+        return None
+    if n == 3:
+        c1, c2, c3 = units
+        if c1 == "s" and classify(c2) == "obstruent" and classify(c3) == "sonant":
+            return {"1": c1, "2": c2, "3": c3}
+        return None
+    return None
 
 
-def parse_root(spelling, series):
-    """Try every element occurrence; return (fits, best_split_info, reasons)."""
-    s = spelling.replace("ç", "ś")
-    reasons = []
-    for pat in ELEMENT_PATTERNS.get(series, []):
-        start = 0
-        while True:
-            j = s.find(pat, start)
-            if j < 0:
-                break
-            pre, suf = s[:j], s[j + len(pat):]
-            okp, up = valid_prefix(tokenize(pre)) if pre else (True, {})
-            oks, us = valid_suffix(tokenize(suf)) if suf else (True, {})
-            if okp and oks:
-                info = {"element": pat, **up, **us}
-                # constraint census (language restrictions, not template fit)
-                viol = []
-                es = ELEMENT_SONANT.get(pat)
-                if es and up.get("son3") == es:
-                    viol.append("slot3-sonant-equals-element-sonant")
-                if up.get("c2") in ASPIRATES and us.get("c6") and us["c6"][-1] in ASPIRATES:
-                    viol.append("slots-2-and-6-both-aspirated")
-                return True, info, viol
-            reasons.append(f"{pat}@{j}: pre={pre or '∅'} {'ok' if okp else 'BAD'}, "
-                           f"suf={suf or '∅'} {'ok' if oks else 'BAD'}")
-            start = j + 1
-    return False, None, reasons
+def fit_suffix(units):
+    """Slot 5(sonant, at most one, nucleus-adjacent) then slot 6(obstruent,
+    possibly a cluster, per §59's √katth example)."""
+    n = len(units)
+    if n == 0:
+        return {}
+    first = units[0]
+    if classify(first) == "sonant":
+        rest = units[1:]
+        if any(classify(c) != "obstruent" for c in rest):
+            return None
+        out = {"5": first}
+        if rest:
+            out["6"] = "".join(rest)
+        return out
+    if all(classify(c) == "obstruent" for c in units):
+        return {"6": "".join(units)}
+    return None
+
+
+def classify_root(spelling, ryad):
+    """Returns a dict verdict for one citation spelling under its ryad tag."""
+    hit = find_nucleus(spelling, ryad)
+    if hit is None:
+        return {"outcome": "no_nucleus_found"}
+    start, end, nucleus = hit
+    pre, suf = spelling[:start], spelling[end:]
+    if any(v in pre for v in VOWELS) or any(v in suf for v in VOWELS):
+        return {"outcome": "extra_vowel", "nucleus": nucleus}
+    pre_slots = fit_prefix(tokenize_consonants(pre)) if pre else {}
+    suf_slots = fit_suffix(tokenize_consonants(suf)) if suf else {}
+    if pre_slots is None or suf_slots is None:
+        return {"outcome": "no_fit", "nucleus": nucleus, "prefix": pre, "suffix": suf}
+    slots = {**pre_slots, "4": nucleus, **suf_slots}
+    slots.pop("irregular_slot2", None)
+    irregular = "irregular_slot2" in (pre_slots or {})
+    # §59's two named internal constraints, checked but NOT fit-gating —
+    # they describe a further regularity within fitting roots, not the
+    # six-slot criterion itself.
+    slot3_vs_nucleus_tail = (
+        "3" in slots and nucleus and nucleus[-1] in SONANTS and slots["3"] == nucleus[-1]
+    )
+    slot2 = slots.get("2", "")
+    slot6 = slots.get("6", "")
+    both_aspirated = (
+        (slot2 in ASPIRATES or slot2 == "h") and
+        any(u in ASPIRATES or u == "h" for u in tokenize_consonants(slot6))
+    )
+    return {
+        "outcome": "fit",
+        "slots": slots,
+        "occupied": sorted(slots),
+        "irregular_slot2": irregular,
+        "constraint_violations": {
+            "slot3_equals_nucleus_sonant": slot3_vs_nucleus_tail,
+            "slot2_and_6_both_aspirated": both_aspirated,
+        },
+    }
+
+
+def spellings_for(entry):
+    sp = list(entry.get("whitney_spellings") or [])
+    if not sp:
+        # fallback for the 5 entries absent from Whitney: use the catalog's
+        # own citation, substituting the ø/ø̄ null-vowel mark with the A1/A2
+        # guṇa realization (documented Talmud-manual convention) so a nucleus
+        # search has something to match.
+        root = entry.get("root", "")
+        sp = [root.replace("ø̄", "ā").replace("ø", "a")]
+    return sp
 
 
 def main():
     data = json.loads(CATALOG.read_text(encoding="utf-8"))
     roots = data["roots"]
 
-    fits, misfits, no_series = [], [], []
-    ext = Counter()
-    viol_census = Counter()
-    for r in roots:
-        series = (r.get("ryad") or "")[:1]
-        # whitney spellings first; the catalog's own citation as fallback — some
-        # rows (śikṣ, ryad I₁) list the BASE root (śak) in whitney_spellings
-        # while the entry's series describes the catalog citation itself
-        spellings = list(r.get("whitney_spellings") or [])
-        own = r.get("root", "")
-        if own and "ø" not in own and own not in spellings:
-            spellings.append(own)
-        if not spellings:
-            spellings = [own]
-        if series not in ELEMENT_PATTERNS:
-            no_series.append(r.get("root"))
-            continue
-        for sp in spellings:
-            ok, info, viol = parse_root(sp, series)
-            if ok:
-                fits.append({"root": sp, "series": series, **info})
-                if info.get("s1"):
-                    ext["slot1_s"] += 1
-                if info.get("c2_vm"):
-                    ext["slot2_v_or_m"] += 1
-                if info.get("c6_cluster"):
-                    ext["slot6_obstruent_cluster"] += 1
-                for v in viol:
-                    viol_census[v] += 1
+    results = {}
+    for entry in roots:
+        verdict = None
+        for spelling in spellings_for(entry):
+            v = classify_root(spelling, entry["ryad"])
+            verdict = v
+            if v["outcome"] == "fit":
                 break
-        else:
-            misfits.append({"root": spellings[0], "series": series,
-                            "ryad": r.get("ryad")})
+        verdict["spelling_used"] = spelling
+        results[entry["id"]] = verdict
 
-    classified = len(fits) + len(misfits)
-    share = round(100 * len(fits) / classified, 2) if classified else None
+    outcomes = {}
+    for v in results.values():
+        outcomes.setdefault(v["outcome"], 0)
+        outcomes[v["outcome"]] += 1
 
-    # §59's own example roots must parse (series per the catalog where present,
-    # else the §'s obvious series)
-    EXAMPLES = [("i", "I"), ("nī", "I"), ("śru", "U"), ("sthā", "A"), ("styā", "A"),
-                ("iṣ", "I"), ("pad", "A"), ("krudh", "U"), ("jīv", "I"), ("cumb", "U"),
-                ("kṣṇu", "U"), ("takṣ", "A"), ("vyath", "A"), ("mlā", "A"), ("katth", "A")]
-    example_results = {sp: parse_root(sp, ser)[0] for sp, ser in EXAMPLES}
+    fits = outcomes.get("fit", 0)
+    total = len(roots)
+    resolved = total - outcomes.get("no_nucleus_found", 0)
 
-    checks = {
-        "catalog_roots": len(roots),
-        "classified": classified,
-        "unclassifiable_no_series": len(no_series),
-        "all_s59_examples_parse": all(example_results.values()),
-        "share_over_90pct": (share or 0) > 90,
-    }
+    occupied_hist = {}
+    irregular_slot2_roots = []
+    slot1_roots = []
+    slot6_cluster_roots = []
+    constraint_hits = {"slot3_equals_nucleus_sonant": [], "slot2_and_6_both_aspirated": []}
+    for rid, v in results.items():
+        if v["outcome"] != "fit":
+            continue
+        key = ",".join(v["occupied"])
+        occupied_hist[key] = occupied_hist.get(key, 0) + 1
+        if v.get("irregular_slot2"):
+            irregular_slot2_roots.append(rid)
+        if "1" in v["slots"]:
+            slot1_roots.append(rid)
+        if len(v["slots"].get("6", "")) > 1 or (
+            len(tokenize_consonants(v["slots"].get("6", ""))) > 1
+        ):
+            slot6_cluster_roots.append(rid)
+        for k, hit in v["constraint_violations"].items():
+            if hit:
+                constraint_hits[k].append(rid)
+
+    self_test_cases = [
+        ("i", "I₁", {"4"}),
+        ("nī", "I₂", {"3", "4"}),
+        ("çru", "U₁", {"2", "3", "4"}),
+        ("sthā", "A₂", {"1", "2", "4"}),
+        ("styā", "A₂", {"1", "2", "3", "4"}),
+        ("iṣ", "I₁", {"4", "6"}),
+        ("pad", "A₁", {"2", "4", "6"}),
+        ("krudh", "U₁", {"2", "3", "4", "6"}),
+        ("jīv", "I₂", {"2", "4", "5"}),
+        ("cumb", "U₁", {"2", "4", "5", "6"}),
+        ("kṣṇu", "U₁", {"2", "3", "4"}),
+        ("takṣ", "A₁", {"2", "4", "6"}),
+        ("vyath", "A₁", {"2", "3", "4", "6"}),
+        ("mlā", "A₂", {"2", "3", "4"}),
+        ("katth", "A₁", {"2", "4", "6"}),
+    ]
+    self_test_fails = []
+    for spelling, ryad, expected in self_test_cases:
+        v = classify_root(spelling, ryad)
+        got = set(v.get("occupied", []))
+        if v["outcome"] != "fit" or got != expected:
+            self_test_fails.append(
+                {"root": spelling, "ryad": ryad, "expected": sorted(expected),
+                 "got": v.get("outcome") if v["outcome"] != "fit" else sorted(got)}
+            )
 
     out = {
-        "instrument": "root_shape_parser.py over talmud_appendix1.json (745 roots); "
-                      "§59 six-slot template with Zalizniak's own rulings (initial-s slot, "
-                      "kṣ=single, v/m in slot 2, rare final obstruent cluster); element "
-                      "anchored by each root's catalog ryad series",
-        "template_fit_share_pct": share,
-        "fits": len(fits),
-        "misfits": len(misfits),
-        "misfit_inventory": misfits,
-        "granted_extension_usage": dict(ext),
-        "constraint_violations (language census, not fit)": dict(viol_census),
-        "slot_occupancy": {
-            "slot1_s": ext["slot1_s"],
-            "slot2": sum(1 for f in fits if f.get("c2")),
-            "slot3": sum(1 for f in fits if f.get("son3")),
-            "slot5": sum(1 for f in fits if f.get("son5")),
-            "slot6": sum(1 for f in fits if f.get("c6")),
+        "instrument": "root_shape_parser.py over TolchelnikovTalmud_2026/data/"
+                      "talmud_appendix1.json (745-root Приложение-1 catalog); "
+                      "nucleus located by the catalog's own ryad tag per §50's "
+                      "three-grade table, flanking consonants slotted per §59",
+        "totals": {"roots": total, "resolved": resolved, **outcomes},
+        "fit_rate_pct_of_all": round(100 * fits / total, 1),
+        "fit_rate_pct_of_resolved": round(100 * fits / resolved, 1) if resolved else None,
+        "occupied_slot_histogram": dict(sorted(occupied_hist.items(),
+                                                key=lambda kv: -kv[1])),
+        "named_exception_counts": {
+            "irregular_slot2_v_or_m": len(irregular_slot2_roots),
+            "slot1_s_plus_obstruent": len(slot1_roots),
+            "slot6_obstruent_cluster": len(slot6_cluster_roots),
         },
-        "s59_example_roots": example_results,
-        "validation": checks,
+        "named_exception_examples": {
+            "irregular_slot2_v_or_m": irregular_slot2_roots[:10],
+            "slot1_s_plus_obstruent": slot1_roots[:10],
+            "slot6_obstruent_cluster": slot6_cluster_roots[:10],
+        },
+        "constraint_violations": {k: {"count": len(v), "examples": v[:10]}
+                                   for k, v in constraint_hits.items()},
+        "no_fit_examples": [
+            {"id": rid, **v} for rid, v in results.items() if v["outcome"] == "no_fit"
+        ][:20],
+        "no_nucleus_examples": [rid for rid, v in results.items()
+                                 if v["outcome"] == "no_nucleus_found"][:20],
+        "extra_vowel_examples": [rid for rid, v in results.items()
+                                  if v["outcome"] == "extra_vowel"],
+        "self_test": {"cases": len(self_test_cases), "failures": self_test_fails},
     }
     (HERE / "och16_root_shape_stats.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    print(f"classified {classified}/{len(roots)} (no-series: {len(no_series)})")
-    print(f"TEMPLATE FIT: {len(fits)} = {share}%  |  misfits: {len(misfits)}")
-    print("extension usage:", dict(ext))
-    print("constraint violations:", dict(viol_census) or "none")
-    print("misfit sample:", [m["root"] for m in misfits[:15]])
-    print("§59 examples all parse:", checks["all_s59_examples_parse"])
-    bad = [k for k, v in checks.items() if v is False]
-    print("validation:", "OK" if not bad else f"FAILED: {bad}")
+    print(f"roots: {total}, resolved (nucleus found): {resolved}")
+    print(f"outcomes: {outcomes}")
+    print(f"fit rate: {out['fit_rate_pct_of_all']}% of all, "
+          f"{out['fit_rate_pct_of_resolved']}% of resolved")
+    print(f"named exceptions: {out['named_exception_counts']}")
+    print(f"self-test: {len(self_test_cases)} cases, "
+          f"{len(self_test_fails)} failures", self_test_fails if self_test_fails else "")
     print("-> och16_root_shape_stats.json written")
 
 

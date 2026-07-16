@@ -55,8 +55,8 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
 Семя (OCH-1..OCH-6, Sonnet 5 `claude-sonnet-5`, [PR #196](https://github.com/gasyoun/SanskritGrammar/pull/196))
 и полный слив бэклога (OCH-7..OCH-74, Fable 5 `claude-fable-5`, H797 фаза 2) в один день:
 [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
-— **74 проверенных утверждения: 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE ·
-7 частотных сносок М.Г.** (после инструментов H978, H1000, H1001, H1004 и H1008, см. ниже);
+— **74 проверенных утверждения: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE ·
+7 частотных сносок М.Г.** (после инструментов H978, H1000, H1001 и H1004, см. ниже);
 [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims_harvest.yml)
 пуст (`candidates: []`). Планка «≥ 50» превышена; таблица —
 [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CLAIMS_VERIFIED.md).
@@ -97,18 +97,10 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
    [och58_compound_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och58_compound_stats.json).
    OCH-60 остается честно заблокирован — зондирование показало, что DCS тегирует члены
    композитов ЛЕКСИЧЕСКИ (последний член mahābāhu — NOUN в 192/193 кластеров), функция
-   татпуруша/бахуврихи из снимка невосстановима. ~~Парсер структуры корня~~ — **ПОСТРОЕН
-   16-07-2026 (H1008, [root_shape_parser.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/root_shape_parser.py)):
-   OCH-16 → TRUE** — шестислотовый шаблон §59 с собственными оговорками параграфа
-   (начальный s-слот; «kṣ ведет себя как одиночная согласная»; v/m на месте 2) проходит
-   все 15 примеров самого §59 и покрывает **98,3 %** каталога Талмуда (732/745; 13
-   несоответствий — подлинные исключения: ts-/ps-/śc-/ṣṭh-, кластеры сонантов,
-   многосложные) — см. [och16_root_shape_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och16_root_shape_stats.json).
-   Treebank прозондирован (H1008): в снимке ЕСТЬ 223 751-токенный UD-срез со всеми шестью
-   отношениями подчинения — но он резко ведийски скошен (весь топ-12 — ведийская сфера),
-   поэтому охота на контрпримеры (OCH-68 «всегда») возможна уже сейчас, а нормы порядка
-   слов классической прозы остаются заблокированы. Остаются: функциональная разметка
-   композитов (OCH-60) и классические UD-данные для §§214-217.
+   татпуруша/бахуврихи из снимка невосстановима. Остаются: синтаксический treebank (порядок
+   слов, подчинение, единственный рискованный абсолют §216 «всегда» — помечен «лицензией на
+   охоту»), функциональная разметка композитов (OCH-60) и парсер структуры корня по каталогу
+   Талмуда.
 4. **Два отрицательных пилота записаны с числами, чтобы их не пересчитывали как
    опровержения:** наивная склейка рядов 1978 с ryad Талмуда ИНВЕРТИРУЕТ §68 (36,8 % aniṭ
    в «aniṭ-ожидаемой» группе — но склейка не валидирована и не фильтрует
@@ -155,7 +147,7 @@ python ZalizniakOcherk_1978/och22_token_weighted.py # строгая токен-
 python ZalizniakOcherk_1978/period_style_gradient.py # карта периодов + градиент §207 (H1000)
 python ZalizniakOcherk_1978/causative_grade_detector.py # детектор каузативов + градиент §167 (H1001)
 python ZalizniakOcherk_1978/compound_type_tagger.py # структурная разметка композитов + двигу §193 (H1004)
-python ZalizniakOcherk_1978/root_shape_parser.py # парсер структуры корня + шаблон §59 (H1008)
+python ZalizniakOcherk_1978/root_shape_parser.py    # парсер структуры корня §59 (H1012)
 npm run errata:print        # печатные листы опечаток (ERRATA_PRINT_SHEET.html) из errata.yml
 ```
 
@@ -166,10 +158,29 @@ npm run errata:print        # печатные листы опечаток (ERRA
 места № 2 (gam), № 3 (dṛś) и № 13 (bandh) — см.
 [och22_token_weighted.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och22_token_weighted.json).
 
+### Парсер структуры корня построен — §59 ПОДТВЕРЖДЁН (H1012, 16-07-2026)
+
+Названный в OCH-16 недостающий инструмент построен:
+[root_shape_parser.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/root_shape_parser.py)
+находит чередующийся элемент (место 4) по СОБСТВЕННОМУ тегу `ryad` каждого корня каталога
+Приложения 1 (таблица трёх ступеней §50 + позиционные варианты перед гласной §54), затем
+классифицирует фланкирующие согласные (сонант/шумная; kṣ и придыхательные ведут себя как
+одна единица, по правилу самого §59) на шесть позиций схемы. **727/745 = 97,6 % корней
+укладываются в схему** (98,4 % от 739 корней, для которых вообще найден чередующийся
+элемент) — «подавляющее большинство» подтверждено числом. Именованные исключения
+встречаются на реальном, но подчинённом масштабе: v/m на месте 2 (21 корень, ср. vyath,
+mlā), место 1 (s+шумная, 22, ср. sthā, styā), кластер на месте 6 (126, ср. katth).
+15/15 самопроверок воспроизводят все собственные примеры §59 (√i, √nī, √çru, √sthā, √styā,
+√iṣ, √pad, √krudh, √jīv, √cumb, √kṣṇu, √takṣ, √vyath, √mlā, √katth). 18 непокрытых случаев
+поимённо задокументированы (без молчаливого урезания): 9 подлинно необычных кластеров
+(ts-, ps-, śc-, ṣṭh- в начале; -ll, -rṇ, -rṣy, -nv в конце), 6 расхождений цитирования между
+каталогом и традицией (kṣmāi, sphur/sphar/sphṛ), 3 корня с лишним слогом (irādh, irajy,
+palāy). Результаты:
+[och16_root_shape_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och16_root_shape_stats.json).
+
 ### Что дальше
 
 Оставшиеся инструменты из списка UNTESTABLE (treebank → §§214-217; функциональная
-разметка композитов → OCH-60);
-закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
+разметка композитов → OCH-60); закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_
