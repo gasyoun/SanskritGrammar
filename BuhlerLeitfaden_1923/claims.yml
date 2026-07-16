@@ -2612,11 +2612,29 @@ entries:
     sources: [whitney]
     verdict_fact: UNTESTABLE
     number: >-
-      missing instrument: agreement treebank — the resolved gender of an adjective shared over mixed-gender conjuncts is a syntactic relation DCS morphological annotation does not encode
-    ref: "Speijer-type syntax territory; Whitney 1889 has no quantified treatment"
+      SIZED, not "no instrument" (16-07-2026, gender_resolution_probe.py, built after
+      ZalizniakOcherk_1978's treebank instrument (H1022) opened this door): DCS's own
+      head/deprel columns DO encode the needed syntactic relation (a genuine UD-style
+      slice, 223,751 tokens, 29,433 fully-parsed sentences — see H1022). Found 1,847
+      mixed-gender NOUN `conj` groups, but the claim needs specifically a PREDICATE
+      adjective whose resolved gender covers the WHOLE coordination (an ordinary
+      attributive adjective attaching to just one conjunct trivially agrees with THAT
+      noun alone and doesn't test this rule at all — filtered out). Restricting to
+      genuine predicate constructions (ADJ as root/copula-complement with an nsubj
+      child inside a mixed-gender conjunction): **n = 4 in the entire annotated
+      slice.** 2/4 match the stated rule exactly (jāyāḥ putrāḥ ca sumanasaḥ bhavantu
+      — masc+fem → masc; a five-way Neut-containing list → medhyāni, neut); 2/4 show
+      agreement with the nearest/first-listed conjunct instead (audumbaraḥ idhmaḥ
+      paridhayaḥ mekṣaṇam ca bhavanti — masc+neut but predicate is masc, matching
+      idhmaḥ; madhumatīr oṣadhīr dyāvo āpaḥ — masc+fem but predicate is fem, matching
+      oṣadhīḥ) — exactly the RIVAL proximity/attraction strategy this entry's own note
+      already anticipated from Whitney/Speijer, not a clean refutation. n=4 (2-for/2-
+      against) is far too thin to verdict either way — a genuine data desert, not a
+      missing instrument
+    ref: "BuhlerLeitfaden_1923/gender_resolution_probe.py; hb158_gender_resolution_probe.json; Speijer-type syntax territory; Whitney 1889 has no quantified treatment; cf. ZalizniakOcherk_1978/treebank_syntax_stats.py (H1022, same DCS head/deprel slice)"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The rule matches the standard doctrinal statement (masculine for mixed m+f, neuter when a neuter/thing is present), but attested usage also freely agrees with the nearest conjunct, so conformity cannot be graded without parsed data.
+      The rule matches the standard doctrinal statement (masculine for mixed m+f, neuter when a neuter/thing is present), and the corpus confirms attested usage ALSO freely agrees with the nearest conjunct instead — both patterns are real, so conformity genuinely cannot be graded from n=4, not because the data doesn't exist but because the specific construction is this rare.
 
   - id: HB-159
     loc: "Урок XXI / mdx line 2743"
