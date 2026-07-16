@@ -1,0 +1,148 @@
+{
+ "n": 115,
+ "kappa": 0.877,
+ "kappa_ci95": [
+  0.796,
+  0.946
+ ],
+ "raw_agreement": 0.922,
+ "bootstrap": {
+  "resamples": 2000,
+  "seed": 20260716
+ },
+ "per_book": {
+  "buhler": {
+   "n": 47,
+   "kappa": 0.866,
+   "agreement": 0.915
+  },
+  "kochergina": {
+   "n": 44,
+   "kappa": 0.826,
+   "agreement": 0.886
+  },
+  "konspekt": {
+   "n": 5,
+   "kappa": 1.0,
+   "agreement": 1.0
+  },
+  "ocherk": {
+   "n": 19,
+   "kappa": 1.0,
+   "agreement": 1.0
+  }
+ },
+ "per_category": {
+  "TRUE": {
+   "n_gold": 60,
+   "recall_by_B": 1.0
+  },
+  "OVERSTATED": {
+   "n_gold": 20,
+   "recall_by_B": 0.65
+  },
+  "FALSE": {
+   "n_gold": 10,
+   "recall_by_B": 1.0
+  },
+  "UNTESTABLE": {
+   "n_gold": 25,
+   "recall_by_B": 0.92
+  }
+ },
+ "confusion_A_rows_B_cols": {
+  "TRUE": {
+   "TRUE": 60,
+   "OVERSTATED": 0,
+   "FALSE": 0,
+   "UNTESTABLE": 0
+  },
+  "OVERSTATED": {
+   "TRUE": 2,
+   "OVERSTATED": 13,
+   "FALSE": 5,
+   "UNTESTABLE": 0
+  },
+  "FALSE": {
+   "TRUE": 0,
+   "OVERSTATED": 0,
+   "FALSE": 10,
+   "UNTESTABLE": 0
+  },
+  "UNTESTABLE": {
+   "TRUE": 2,
+   "OVERSTATED": 0,
+   "FALSE": 0,
+   "UNTESTABLE": 23
+  }
+ },
+ "disagreements": [
+  {
+   "id": "HB-10",
+   "book": "buhler",
+   "a": "OVERSTATED",
+   "b": "FALSE",
+   "agree": false
+  },
+  {
+   "id": "HB-100",
+   "book": "buhler",
+   "a": "UNTESTABLE",
+   "b": "TRUE",
+   "agree": false
+  },
+  {
+   "id": "HB-2",
+   "book": "buhler",
+   "a": "OVERSTATED",
+   "b": "FALSE",
+   "agree": false
+  },
+  {
+   "id": "HB-57",
+   "book": "buhler",
+   "a": "OVERSTATED",
+   "b": "FALSE",
+   "agree": false
+  },
+  {
+   "id": "HK-15",
+   "book": "kochergina",
+   "a": "OVERSTATED",
+   "b": "TRUE",
+   "agree": false
+  },
+  {
+   "id": "HK-34",
+   "book": "kochergina",
+   "a": "OVERSTATED",
+   "b": "FALSE",
+   "agree": false
+  },
+  {
+   "id": "HK-4a",
+   "book": "kochergina",
+   "a": "OVERSTATED",
+   "b": "FALSE",
+   "agree": false
+  },
+  {
+   "id": "HK-4b",
+   "book": "kochergina",
+   "a": "OVERSTATED",
+   "b": "TRUE",
+   "agree": false
+  },
+  {
+   "id": "HK-5",
+   "book": "kochergina",
+   "a": "UNTESTABLE",
+   "b": "TRUE",
+   "agree": false
+  }
+ ],
+ "annotators": {
+  "A": "register pass-1 (mixed tiers, per-entry provenance in the registers)",
+  "B": "Sonnet 5 (claude-sonnet-5), blind slices of 15-20 items, 16-07-2026"
+ }
+}

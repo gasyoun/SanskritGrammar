@@ -19,6 +19,27 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.35.0] - 2026-07-16
+### Added
+- **A65: валидация вердиктов выполнена — слепой двухпроходный κ-дизайн по шаблону A64
+  (H1041, Fable 5 `claude-fable-5`; аннотатор B — Sonnet 5 `claude-sonnet-5`).** Новая папка
+  [`verdict_validation/`](https://github.com/gasyoun/SanskritGrammar/tree/main/verdict_validation):
+  стратифицированная выборка n = 115 (ВСЕ 30 фактических флагов + ВСЕ 25 UNTESTABLE + 60
+  случайных TRUE, зерно 20260716), слепой пакет без вердиктов/заметок первого прохода,
+  **κ Коэна = 0,877** (95 %-ДИ бутстрэпа [0,796; 0,946], 2 000 ресэмплов), сырое согласие
+  106/115 = 92,2 %; Очерк 19/19 и Конспект 5/5 — полное согласие. Конфузия чистая на
+  TRUE и FALSE; все 9 расхождений — граница OVERSTATED/UNTESTABLE, в 7 случаях из 9 второй
+  аннотатор СТРОЖЕ (флаги реестров консервативны). Попутно классифицированы 7 OVERSTATED
+  Бюлера — **первое заполнение класса «система-против-узуса»** (HB-10, предлог ā + Acc.):
+  ровно у самой систематической книги, как § 2.2 и предсказывал; итог типологии — 22
+  классифицированных (14·4·1·3). Отчет
+  [`VERDICT_VALIDATION_KAPPA_A65_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/VERDICT_VALIDATION_KAPPA_A65_2026.md)
+  + воспроизводимые скрипты/данные; § 6/§ 2.2/§ 5/§ 11/аннотация статьи обновлены.
+  **Остаток до 5/5:** авторская адъюдикация 9 расхождений — review-sheet
+  `sanskritgrammar-a65-verdict-validation-disagreements_16.07.26_review.html` (локальный
+  `review/`) + вычитка.
+  ([H1041](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1041-Fable_SanskritGrammar_a65-verdict-validation-kappa_16.07.26.md))
+
 ## [0.34.0] - 2026-07-16
 
 ### Changed
