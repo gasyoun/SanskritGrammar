@@ -1,0 +1,138 @@
+{
+  "instrument": "apte_pada_stats.py — Parasmaipada/Ātmanepada recovered from finite present-indicative endings (DCS feat_voice tags only Pass, not P/Ā); root-default voice only, preverb+semantic rules out of scope",
+  "controls": {
+    "ctrl_as_P": {
+      "lemma": "as",
+      "expected": "P",
+      "observed": "P",
+      "P_pct": 100.0,
+      "A_pct": 0.0,
+      "n": 15363,
+      "control_holds": true
+    },
+    "ctrl_bhū_P": {
+      "lemma": "bhū",
+      "expected": "P",
+      "observed": "P",
+      "P_pct": 99.7,
+      "A_pct": 0.3,
+      "n": 13709,
+      "control_holds": true
+    },
+    "ctrl_labh_A": {
+      "lemma": "labh",
+      "expected": "A",
+      "observed": "A",
+      "P_pct": 2.4,
+      "A_pct": 97.6,
+      "n": 1004,
+      "control_holds": true
+    },
+    "ctrl_īś_A": {
+      "lemma": "īś",
+      "expected": "A",
+      "observed": "A",
+      "P_pct": 0.0,
+      "A_pct": 100.0,
+      "n": 219,
+      "control_holds": true
+    }
+  },
+  "claims": {
+    "APT-H-609": {
+      "lemma": "ram",
+      "expected": "A",
+      "desc": "ram 'rest' normally Ātmanepada",
+      "P": 13,
+      "A": 276,
+      "P_pct": 4.5,
+      "A_pct": 95.5,
+      "n_classified": 289,
+      "observed_pada": "A",
+      "verdict": "TRUE",
+      "reason": "expected A-dominant; observed A"
+    },
+    "APT-H-612": {
+      "lemma": "han",
+      "expected": "P",
+      "desc": "han normally Parasmaipada",
+      "P": 1315,
+      "A": 147,
+      "P_pct": 89.9,
+      "A_pct": 10.1,
+      "n_classified": 1462,
+      "observed_pada": "P",
+      "verdict": "TRUE",
+      "reason": "expected P-dominant; observed P"
+    },
+    "APT-H-602": {
+      "lemma": "krīḍ",
+      "expected": "P",
+      "desc": "krīḍ 'play' normally Parasmaipada",
+      "P": 87,
+      "A": 64,
+      "P_pct": 57.6,
+      "A_pct": 42.4,
+      "n_classified": 151,
+      "observed_pada": "both",
+      "verdict": "OVERSTATED",
+      "reason": "expected P-dominant; observed both"
+    },
+    "APT-H-600a": {
+      "lemma": "bhāṣ",
+      "expected": "A",
+      "desc": "bhāṣ single-voice (Ātmanepada)",
+      "P": 6,
+      "A": 276,
+      "P_pct": 2.1,
+      "A_pct": 97.9,
+      "n_classified": 282,
+      "observed_pada": "A",
+      "verdict": "TRUE",
+      "reason": "expected A-dominant; observed A"
+    },
+    "APT-H-600b": {
+      "lemma": "nam",
+      "expected": "P",
+      "desc": "nam single-voice (Parasmaipada)",
+      "P": 123,
+      "A": 25,
+      "P_pct": 83.1,
+      "A_pct": 16.9,
+      "n_classified": 148,
+      "observed_pada": "P",
+      "verdict": "TRUE",
+      "reason": "expected P-dominant; observed P"
+    },
+    "APT-H-600c": {
+      "lemma": "kṛ",
+      "expected": "both",
+      "desc": "kṛ both voices",
+      "P": 3780,
+      "A": 2315,
+      "P_pct": 62.0,
+      "A_pct": 38.0,
+      "n_classified": 6095,
+      "observed_pada": "P-lean",
+      "verdict": "TRUE",
+      "reason": "expected both-voice; observed P-lean (minority pada 38.0%)"
+    },
+    "APT-H-600d": {
+      "lemma": "duh",
+      "expected": "both",
+      "desc": "duh both voices",
+      "P": 51,
+      "A": 192,
+      "P_pct": 21.0,
+      "A_pct": 79.0,
+      "n_classified": 243,
+      "observed_pada": "A-lean",
+      "verdict": "TRUE",
+      "reason": "expected both-voice; observed A-lean (minority pada 21.0%)"
+    }
+  },
+  "scope_note": "Lessons 29-30's fine preverb+semantic voice rules are NOT testable — they condition on a sense the corpus does not tag; only root-default voice is drained here.",
+  "self_test": {
+    "passed": true
+  }
+}

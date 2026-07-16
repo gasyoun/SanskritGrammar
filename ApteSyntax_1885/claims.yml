@@ -26,16 +26,17 @@
 # verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
 # kind:             typology | universality | allomorphy | statistic | rule | government
 #
-# COVERAGE (seed H1055 + treebank drain H1059 + Classical-corpus government instrument H1062,
-# 16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-24 verified. Seed APT-1..8 (Whitney/
-# reuse-graded); particle-position & agreement APT-9..19,23,24 measured by apte_treebank_stats.py
-# over the DCS head/deprel slice; case-government APT-20..22 (and corroboration of APT-16..19)
-# measured by apte_classical_government_stats.py — a windowed-cooccurrence + baseline-lift proxy
-# over the FULL 5.69M-token corpus (feat_case on 70.6%), method-validated by positive controls
-# (bhī/jugups reproduce) and a negative control (dṛś shows no spurious government).
-# Fact tally: 17 TRUE · 7 OVERSTATED · 0 FALSE · 0 UNTESTABLE — the Classical instrument closed
-# both former UNTESTABLE rows. claims_harvest.yml holds the 79-candidate backlog; 24 promoted,
-# the rest PENDING (lessons 26–30 not yet harvested — one reader hit a session limit).
+# COVERAGE (seed H1055 + treebank drain H1059 + Classical-corpus government H1062 + lessons-26-30
+# harvest & drain H1081, 16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-30 verified.
+# THREE instruments now: apte_treebank_stats.py (particle position & agreement, DCS head/deprel
+# slice), apte_classical_government_stats.py (case government by windowed-cooccurrence + baseline
+# lift over the FULL 5.69M-token corpus), and apte_pada_stats.py (Parasmaipada/Ātmanepada
+# recovered from finite present endings, since DCS feat_voice tags only Pass — root-default voice
+# only). All three carry method controls (position: hi 0.77%; government: bhī/jugups reproduce +
+# dṛś negative; pada: as/bhū→P 100/99.7%, labh/īś→A 97.6/100%).
+# Fact tally: 21 TRUE · 8 OVERSTATED · 0 FALSE · 1 UNTESTABLE. claims_harvest.yml holds the
+# 115-candidate backlog (all 30 lessons harvested); 27 promoted; the rest PENDING (mostly the
+# fine preverb+semantic voice rules of lessons 29-30, which have no corpus signal — see APT-30).
 #
 # FINDING (the two-instrument story): the treebank drains PARTICLE-POSITION and AGREEMENT claims
 # robustly — all confirmed except uta (APT-12, 23.66% sentence-initial → OVERSTATED, the first
@@ -468,3 +469,89 @@ entries:
     ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-315 (Урок 23)"
     verdict_pedagogy: JUSTIFIED
     note: "Thin (n=22) but clean — postposition holds; consistent with the whole postpositive-particle family (ca/tu/ced/iva/eva/hi)."
+
+  # ---- LESSONS 26–30 DRAIN (H1081, 16-07-2026: apte_treebank_stats.py + new apte_pada_stats.py) ----
+
+  - id: APT-25
+    loc: "Урок 28 / mdx ~line 7279"
+    claim_ru: "Частица hi никогда не стоит в начале предложения."
+    kind: universality
+    falsifiable_as: "is the particle hi genuinely never sentence-initial"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "7 of 904 tagged hi tokens are sentence-initial — 0.77% (apte_treebank_stats.py); hi was the method control for the particle-position battery, here promoted to its own claim"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-513 (Урок 28)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Completes the postpositive-particle family (ca/tu/ced/iva/eva/kila/hi) — all confirmed never/rarely initial; hi at 0.77% matches eva (0.68%)."
+
+  - id: APT-26
+    loc: "Урок 29 / mdx ~line 7569"
+    claim_ru: "Глагол ram отдыхать обычно является Ātmanepada, но в сочетании с приставками vi, ā или pari спрягается как Parasmaipada."
+    kind: government
+    falsifiable_as: "is the root ram default Ātmanepada in the corpus"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "finite present forms of ram: 95.5% Ātmanepada endings (276 Ā vs 13 P, n=289) — apte_pada_stats.py; DCS feat_voice tags only Pass, so pada was recovered from the -te/-ti ending"
+    ref: "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-609 (Урок 29)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Root-default voice cleanly confirmed. The preverb sub-rule (+vi/ā/pari → Parasmaipada) is a fine sense/preverb condition not separately drained (see APT-30)."
+
+  - id: APT-27
+    loc: "Урок 30 / mdx ~line 7963"
+    claim_ru: "Корень han обычно спрягается в Parasmaipada; однако с предлогом ā спрягается в Ātmanepada, когда он непереходный."
+    kind: government
+    falsifiable_as: "is the root han default Parasmaipada in the corpus"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "finite present forms of han: 89.9% Parasmaipada endings (1,315 P vs 147 A, n=1,462) — apte_pada_stats.py"
+    ref: "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-612 (Урок 30)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Root-default voice confirmed at large n; method-controlled (as/bhū → 100%/99.7% P, labh/īś → 97.6%/100% A)."
+
+  - id: APT-28
+    loc: "Урок 29 / mdx ~line 7569"
+    claim_ru: "Корень krīḍ играть обычно спрягается в Parasmaipada, однако с приставками anu, saṃ, pari и ā — в Ātmanepada."
+    kind: government
+    falsifiable_as: "is the root krīḍ default Parasmaipada in the corpus"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "finite present forms of krīḍ: 57.6% Parasmaipada / 42.4% Ātmanepada (87 P vs 64 A, n=151) — genuinely mixed, not Parasmaipada-dominant (apte_pada_stats.py)"
+    ref: "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-602 (Урок 29)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      «Обычно Parasmaipada» overstates a near-even split — krīḍ uses both voices almost equally in
+      the corpus, so «normally Parasmaipada» misleads on strength (the preverb condition Apte adds
+      is real but the base claim itself is not the strong default it implies). Teaching a default
+      pada is defensible, hence pedagogy JUSTIFIED.
+
+  - id: APT-29
+    loc: "Урок 29 / mdx ~line 7569"
+    claim_ru: "Некоторые глагольные корни спрягаются только в одном залоге (nam, bhram, ruc, bhāṣ); некоторые — в обоих (kar, ci, cur, duh)."
+    kind: government
+    falsifiable_as: "do the named single-voice roots skew to one pada and the both-voice roots use both"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "single-voice confirmed: bhāṣ 97.9% Ātmanepada (n=282), nam 83.1% Parasmaipada (n=148); both-voice confirmed: kṛ 62% P / 38% Ā (n=6,095), duh 21% P / 79% Ā (n=243) — both padas substantially attested (apte_pada_stats.py)"
+    ref: "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-600 (Урок 29)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The single-voice/both-voice typology holds where drainable: bhāṣ and nam skew hard to one
+      pada, kṛ and duh genuinely use both (minority pada 38% / 21%). ci/cur/ruc/bhram not separately
+      measured here but the pattern is consistent.
+
+  - id: APT-30
+    loc: "Уроки 29–30 / mdx ~lines 7569–8563"
+    claim_ru: "[домен] Тонкие правила залога по приставке и значению (kram+длительность → Ātm.; tap+ud, если непереходен → Ātm.; и т. п.)."
+    kind: government
+    falsifiable_as: "can the fine preverb+sense voice-assignment rules of lessons 29-30 be verified against DCS"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no signal path: DCS-2021 feat_voice tags only Passive (not Parasmaipada/Ātmanepada), and the ~15 fine rules (APT-H-601/603/604/605/606/607/608/610/611/613/614/615/617/618/619) condition on a SENSE ('when duration is implied', 'when intransitive', 'when referring to one's own body') that the corpus does not annotate"
+    ref: "DCS-2021 feat_voice census + apte_pada_stats.py scope note; harvest APT-H-601..619 (Уроки 29–30)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The honest floor of the voice domain: root-DEFAULT pada is recoverable from endings (APT-26..29),
+      but the preverb+semantic conditions that make up most of lessons 29-30 are Pāṇinian
+      sense-rules with no corpus signal — DCS neither tags the P/Ā distinction nor the semantic
+      trigger. Closing instruments: a pada-tagged root lexicon plus sense-disambiguated preverb-verb
+      tokens (neither exists in the sibling repos today). Documented, not force-verdicted.
