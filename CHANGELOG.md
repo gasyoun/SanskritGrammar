@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.41.0] - 2026-07-16
+
+### Added
+- **Sangram G2 производный дата-актив — «аттестованные клетки склонения на лемму» (H1048, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/data/declension_cell_coverage/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/declension_cell_coverage): для каждой из **57 144** именных лемм — какие из 24 клеток (8 падежей × 3 числа) аттестованы в пинованном снапшоте DCS (1 790 270 токенов, знаменатель совпадает с SG-MO-001). Общая (все типы основ, все роды) версия покрытия пилота P1; кросс-статейный слой для SG-MO-001/002/006/010, рекомендованный контрольной точкой ядра W2 (§ 5 G2). **EM3 в масштабе корпуса:** медиана **1** клетка/лемма, 58,9 % лемм с одной клеткой, 0,0 % с полными 24, лишь **10,44 %** пространства лемма×клетка аттестовано; покрытие — артефакт частоты (среднее 1,0 у hapax → 17,3 при 1000+); Nom.Sg (41 998 лемм) против Dat.Du (128) — разброс ×328. `lemma_cell_coverage.csv` (битовая строка `cells_bits24`) + `coverage_summary.json` (разбивки по роду/основе/частоте) + README. Скрипт [`sg_g2_declension_cell_coverage.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_g2_declension_cell_coverage.py); read-only, C3-пин; build green.
+
 ## [0.40.0] - 2026-07-16
 ### Changed
 - **A65 подписана автором — 5/5.** [SIGNOFF_A65_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A65_author_pass.md): голосовые решения VC1–VC8 приняты без вето; статус в [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) переведен 4/5 → **5/5**. Остаточные флаги (адъюдикация девяти расхождений κ-валидации, Zenodo/OSF, ГОСТ/Зализняк-1975, кольцо § 10, верстка § 2.2) живут как самостоятельные GTD-позиции. (H1015, Fable 5 `claude-fable-5`.)
