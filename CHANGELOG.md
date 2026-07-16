@@ -19,6 +19,21 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.32.1] - 2026-07-16
+### Changed
+- **A65: both human gates RULED by MG 16-07-2026 (H1024)** — ① venue/language =
+  **российская индология, RU as-is** (the eLex/GWC/ISCLS translation branch dropped);
+  ② **A60 merged into A65** — one paper: A65 § 2 absorbs A60's central divergence table
+  (4-way typology), the five-book count becomes its frame. Applied to the
+  [report](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
+  (banner, § 5, § 8, § 10 self-citation slot), its metadoc (backlog rebuilt — the 4/5
+  merge pass is the new head item), and the
+  [A60 draft](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/DRAFT_grammar-claims-corpus-denies_A60.md)
+  header (🔀 MERGED INTO A65 — source material, do not advance separately; the A60 leg
+  of H967 is superseded). Uprava side (ARTICLES A65/A60 rows, GTD Publication Gates,
+  H967 banner) updated the same pass. (Fable 5 `claude-fable-5`,
+  [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md))
+
 ## [0.32.0] - 2026-07-16
 
 ### Changed
