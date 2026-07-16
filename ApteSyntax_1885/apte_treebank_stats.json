@@ -1,0 +1,341 @@
+{
+  "instrument": "apte_treebank_stats.py over dcs_full.sqlite head/deprel/feat_case (same fully-tagged UD slice as ZalizniakOcherk_1978/treebank_syntax_stats.py)",
+  "coverage": {
+    "total_tokens": 5688416,
+    "tagged_tokens": 223751,
+    "tagged_pct": 3.93
+  },
+  "A_particle_position": {
+    "ca": {
+      "claim": "APT-3/APT-H-314",
+      "desc": "ca never sentence-initial",
+      "mode": "never",
+      "n": 3285,
+      "sentence_initial": 1,
+      "initial_pct": 0.03,
+      "verdict": "TRUE"
+    },
+    "tu": {
+      "claim": "APT-4/APT-H-316",
+      "desc": "tu never sentence-initial",
+      "mode": "never",
+      "n": 315,
+      "sentence_initial": 0,
+      "initial_pct": 0.0,
+      "verdict": "TRUE"
+    },
+    "ced": {
+      "claim": "APT-H-218",
+      "desc": "ced never sentence-initial",
+      "mode": "never",
+      "n": 84,
+      "sentence_initial": 0,
+      "initial_pct": 0.0,
+      "verdict": "TRUE"
+    },
+    "iva": {
+      "claim": "APT-H-310",
+      "desc": "iva stands after object of simile",
+      "mode": "postposed",
+      "n": 924,
+      "sentence_initial": 2,
+      "initial_pct": 0.22,
+      "verdict": "TRUE"
+    },
+    "eva": {
+      "claim": "APT-H-313",
+      "desc": "eva follows the emphasized word",
+      "mode": "postposed",
+      "n": 3510,
+      "sentence_initial": 24,
+      "initial_pct": 0.68,
+      "verdict": "TRUE"
+    },
+    "kila": {
+      "claim": "APT-H-315",
+      "desc": "kila followed by emphasized word",
+      "mode": "postposed",
+      "n": 22,
+      "sentence_initial": 0,
+      "initial_pct": 0.0,
+      "verdict": "TRUE"
+    },
+    "uta": {
+      "claim": "APT-H-312",
+      "desc": "uta 'or', paired with kim",
+      "mode": "postposed",
+      "n": 262,
+      "sentence_initial": 62,
+      "initial_pct": 23.66,
+      "verdict": "OVERSTATED"
+    },
+    "hi": {
+      "claim": "(control)",
+      "desc": "hi (causal, postpositive control)",
+      "mode": "postposed",
+      "n": 904,
+      "sentence_initial": 7,
+      "initial_pct": 0.77,
+      "verdict": "TRUE"
+    }
+  },
+  "A_enclitic_position": {
+    "claim": "APT-8/APT-H-200",
+    "desc": "enclitic pronoun forms never sentence-initial",
+    "forms": [
+      "mā",
+      "me",
+      "naḥ",
+      "nau",
+      "tvā",
+      "te",
+      "vāṃ",
+      "vaḥ"
+    ],
+    "n": 4689,
+    "sentence_initial": 337,
+    "initial_pct": 7.19,
+    "initial_by_form": {
+      "me": 1,
+      "mā": 2,
+      "naḥ": 4,
+      "te": 322,
+      "tvā": 7,
+      "vaḥ": 1
+    },
+    "verdict": "OVERSTATED",
+    "note": "form match is post-sandhi surface; a handful of initials may be homographs (mā = prohibitive particle; te = Nom.pl 'they') — inspect initial_by_form"
+  },
+  "B_subject_verb_agreement": {
+    "claim": "APT-H-4",
+    "desc": "verb agrees with subject in number and person",
+    "n_number": 10672,
+    "number_match": 10481,
+    "number_match_pct": 98.21,
+    "n_person_bothmarked": 6,
+    "person_match": 6,
+    "person_match_pct": 100.0,
+    "verdict": "TRUE"
+  },
+  "B_adjective_noun_agreement": {
+    "claim": "APT-2/APT-H-10",
+    "desc": "adjective agrees with noun in gender, number, case",
+    "case": {
+      "n": 4809,
+      "match": 3797,
+      "pct": 78.96
+    },
+    "gender": {
+      "n": 3752,
+      "match": 3685,
+      "pct": 98.21
+    },
+    "number": {
+      "n": 3719,
+      "match": 3697,
+      "pct": 99.41
+    },
+    "verdict": "OVERSTATED"
+  },
+  "B_relative_pronoun_order": {
+    "claim": "APT-H-12",
+    "desc": "relative (yad) precedes its correlative (tad)",
+    "n": 1998,
+    "yad_precedes_tad": 1289,
+    "pct": 64.51,
+    "verdict": "TRUE"
+  },
+  "C_case_government": {
+    "APT-H-105": {
+      "desc": "verb ruc 'please' governs dative of the pleased",
+      "predicted_case": "Dat",
+      "lemmas": [
+        "ruc"
+      ],
+      "dependent_case_tally": {
+        "Nom": 14,
+        "Loc": 5,
+        "Ins": 4,
+        "Voc": 2,
+        "Gen": 2,
+        "Acc": 2,
+        "Dat": 1,
+        "Abl": 1
+      },
+      "n_oblique": 15,
+      "predicted_hits": 1,
+      "predicted_share_of_oblique_pct": 6.67,
+      "top_oblique_case": "Loc",
+      "verdict": "OVERSTATED",
+      "verdict_reason": "measured"
+    },
+    "APT-H-106": {
+      "desc": "anger verbs govern dative of the object of anger",
+      "predicted_case": "Dat",
+      "lemmas": [
+        "krudh",
+        "druh",
+        "īrṣy",
+        "asūy"
+      ],
+      "dependent_case_tally": {
+        "Dat": 4,
+        "Voc": 2,
+        "Acc": 2,
+        "Nom": 1,
+        "Loc": 1,
+        "Ins": 1
+      },
+      "n_oblique": 8,
+      "predicted_hits": 4,
+      "predicted_share_of_oblique_pct": 50.0,
+      "top_oblique_case": "Dat",
+      "verdict": null,
+      "verdict_reason": "UNTESTABLE-thin: <10 case-tagged obliques in the tagged slice (Classical lexeme under-represented in the Vedic-skewed treebank; object often pronominal/elided)"
+    },
+    "APT-H-110": {
+      "desc": "disgust/cessation govern ablative",
+      "predicted_case": "Abl",
+      "lemmas": [
+        "jugups",
+        "viram",
+        "pramad"
+      ],
+      "dependent_case_tally": {
+        "Abl": 10,
+        "Loc": 2,
+        "Acc": 2,
+        "Dat": 1
+      },
+      "n_oblique": 15,
+      "predicted_hits": 10,
+      "predicted_share_of_oblique_pct": 66.67,
+      "top_oblique_case": "Abl",
+      "verdict": "TRUE",
+      "verdict_reason": "measured"
+    },
+    "APT-H-111": {
+      "desc": "fear verbs put the source of fear in ablative",
+      "predicted_case": "Abl",
+      "lemmas": [
+        "bhī"
+      ],
+      "dependent_case_tally": {
+        "Abl": 20,
+        "Acc": 4,
+        "Voc": 1,
+        "Ins": 1,
+        "Gen": 1
+      },
+      "n_oblique": 26,
+      "predicted_hits": 20,
+      "predicted_share_of_oblique_pct": 76.92,
+      "top_oblique_case": "Abl",
+      "verdict": "TRUE",
+      "verdict_reason": "measured"
+    },
+    "APT-H-112": {
+      "desc": "love verbs govern locative of the object",
+      "predicted_case": "Loc",
+      "lemmas": [
+        "snih",
+        "abhilaṣ",
+        "anurañj"
+      ],
+      "dependent_case_tally": {},
+      "n_oblique": 0,
+      "predicted_hits": 0,
+      "predicted_share_of_oblique_pct": null,
+      "top_oblique_case": null,
+      "verdict": null,
+      "verdict_reason": "UNTESTABLE-thin: <10 case-tagged obliques in the tagged slice (Classical lexeme under-represented in the Vedic-skewed treebank; object often pronominal/elided)"
+    },
+    "APT-H-113": {
+      "desc": "throw verbs govern locative of the target",
+      "predicted_case": "Loc",
+      "lemmas": [
+        "kṣip",
+        "muc"
+      ],
+      "dependent_case_tally": {
+        "Acc": 65,
+        "Abl": 49,
+        "Ins": 15,
+        "Voc": 14,
+        "Nom": 6,
+        "Gen": 6,
+        "Dat": 4,
+        "Loc": 3
+      },
+      "n_oblique": 142,
+      "predicted_hits": 3,
+      "predicted_share_of_oblique_pct": 2.11,
+      "top_oblique_case": "Acc",
+      "verdict": "OVERSTATED",
+      "verdict_reason": "measured"
+    },
+    "APT-H-115": {
+      "desc": "ruling/remembering verbs govern genitive",
+      "predicted_case": "Gen",
+      "lemmas": [
+        "īś",
+        "prabhū",
+        "smṛ",
+        "adhī"
+      ],
+      "dependent_case_tally": {
+        "Acc": 58,
+        "Gen": 43,
+        "Nom": 22,
+        "Loc": 19,
+        "Ins": 9,
+        "Abl": 9,
+        "Dat": 4,
+        "Voc": 2
+      },
+      "n_oblique": 142,
+      "predicted_hits": 43,
+      "predicted_share_of_oblique_pct": 30.28,
+      "top_oblique_case": "Acc",
+      "verdict": "OVERSTATED",
+      "verdict_reason": "measured"
+    }
+  },
+  "D_motion_goal_case": {
+    "claim": "APT-5/APT-H-15",
+    "desc": "motion verbs and the case of the goal",
+    "verbs": [
+      "gam",
+      "yā",
+      "i",
+      "car",
+      "vraj",
+      "sṛ",
+      "dhāv",
+      "ā-gam",
+      "abhi-gam"
+    ],
+    "dependent_case_tally": {
+      "Acc": 750,
+      "Ins": 227,
+      "Nom": 184,
+      "Voc": 85,
+      "Loc": 83,
+      "Abl": 60,
+      "Dat": 40,
+      "Gen": 21
+    },
+    "goal_cases": {
+      "Acc": 750,
+      "Dat": 40,
+      "Loc": 83
+    },
+    "n_goal_cases": 873,
+    "acc_share_pct": 85.91,
+    "non_acc_goal_pct": 14.09,
+    "note": "Acc is the heavy default; Dat+Loc goal is the attested minority that makes «все… винительным» OVERSTATED (APT-5). Loc here conflates goal-of-motion with locative-of-place, so non_acc_goal_pct is an upper bound on the true goal-dative/-locative."
+  },
+  "self_test": {
+    "passed": true
+  }
+}

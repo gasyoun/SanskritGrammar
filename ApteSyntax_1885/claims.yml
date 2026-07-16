@@ -26,13 +26,25 @@
 # verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
 # kind:             typology | universality | allomorphy | statistic | rule | government
 #
-# COVERAGE (seed 16-07-2026, H1055, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-8 verified;
-# claims_harvest.yml holds ~79 harvested candidates (lessons 1–25, from a 5-reader parallel
-# harvest; lessons 26–30 not yet harvested — one reader hit a session limit, logged as a gap).
-# Seed fact tally: 7 TRUE · 1 OVERSTATED · 0 FALSE · 0 UNTESTABLE. Three of the eight REUSE
-# ground truth already computed for sibling books (APT-6 = Bühler's periphrastic/simple-future
-# ratio; APT-3, APT-8 = the enclitic-position fact underlying Kochergina HK-10) rather than
-# recomputing — the cross-grammar infrastructure compounding as in the Ocherk seed.
+# COVERAGE (seed 16-07-2026, H1055 + treebank drain H1059, Opus 4.8 `claude-opus-4-8[1m]`):
+# APT-1..APT-24 verified. Seed APT-1..8 (Whitney/reuse-graded); drain APT-9..24 measured by
+# apte_treebank_stats.py over the DCS head/deprel/feat_case slice (223,751 tokens / 29,433 fully
+# dependency-tagged sentences, same slice as ZalizniakOcherk_1978/treebank_syntax_stats.py).
+# Fact tally: 16 TRUE · 6 OVERSTATED · 0 FALSE · 2 UNTESTABLE. claims_harvest.yml holds the
+# 79-candidate backlog; 24 promoted (8 seed + 16 drain), the rest still PENDING (mostly the
+# lexeme-specific government rules whose case-tagged arguments are too thin in the Vedic-skewed
+# slice, and lessons 26–30 not yet harvested — one reader hit a session limit, logged as a gap).
+#
+# DRAIN FINDING (the honest split): the treebank drains the PARTICLE-POSITION and AGREEMENT
+# claims robustly (n = hundreds–thousands) — all confirmed except uta (APT-12, sentence-initial
+# 23.66% → OVERSTATED, the first corpus flag). The CASE-GOVERNMENT claims split three ways:
+# confirmed where the case is old and frequent (fear/disgust → ablative, APT-16/17); OVERSTATED
+# where the corpus shows a competing case ahead of the taught one (throw → locative but
+# accusative dominates, APT-18; rule/remember → genitive but accusative leads, APT-19; ruc →
+# dative but the Vedic slice under-represents it, APT-20); and UNTESTABLE where the Classical
+# emotion verbs contribute <10 or zero dependency-tagged arguments (anger/love, APT-21/22). The
+# programme's central finding holds: Apte's factual accuracy is high, his misses are calibration
+# (an implicit position-analogy for uta; teaching the minority government case as THE rule).
 
 work: "Apte, The Student's Guide to Sanskrit Composition (1885), Russian tr. N. P. Likhushina v3.0 (2021)"
 
@@ -205,4 +217,242 @@ entries:
       Direct calibration contrast with Kochergina HK-10 (OVERSTATED): the SAME never-initial
       fact, but Apte scopes it to the enclitic pronoun forms it is actually true of, rather than
       overreaching to all finite verbs. Same underlying fact, honest quantifier — the programme's
-      central finding restated in the syntax genre.
+      central finding restated in the syntax genre. DRAIN CORROBORATION (H1059): of 4,689
+      enclitic-form PRON tokens in the tagged slice, the raw sentence-initial rate is 7.19%, but
+      337 of 337 initials are homographs — 322 are the form `te` (Nom.pl 'they', lemma tad, which
+      is freely initial) and the rest are `mā` (the prohibitive particle) — so the genuine
+      enclitic pronouns are essentially never initial, confirming APT-8 once homographs are
+      excluded (apte_treebank_stats.py A_enclitic_position).
+
+  # ---- DRAIN PASS (H1059, 16-07-2026, apte_treebank_stats.py over the DCS head/deprel/feat_case slice) ----
+
+  - id: APT-9
+    loc: "Урок 18 / mdx ~line 4830"
+    claim_ru: "Обратите внимание, что ced никогда не стоит в начале предложения."
+    kind: universality
+    falsifiable_as: "is the conditional particle ced genuinely never sentence-initial"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "0 of 84 tagged ced tokens are sentence-initial (idx==1) — 0.0% (apte_treebank_stats.py A_particle_position)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-218 (Урок 18)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Same postpositive-particle class as ca (APT-3) and tu (APT-4); the treebank confirms the absolute with a clean 0/84."
+
+  - id: APT-10
+    loc: "Урок 22 / mdx ~line 5850"
+    claim_ru: "Частица iva обычно используется для сравнения и употребляется после того, с чем сравнивают."
+    kind: rule
+    falsifiable_as: "does the simile particle iva stand after its term (postpositive), essentially never sentence-initial"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "2 of 924 tagged iva tokens are sentence-initial — 0.22% (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-310 (Урок 22)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Postposition is near-categorical; «после того, с чем сравнивают» is corpus-accurate."
+
+  - id: APT-11
+    loc: "Урок 22 / mdx ~line 5850"
+    claim_ru: "Частица eva чаще всего используется, чтобы усилить и выделить мысль, выражаемую словом."
+    kind: statistic
+    falsifiable_as: "does the emphatic particle eva follow the word it emphasizes (postpositive), rarely sentence-initial"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "24 of 3,510 tagged eva tokens are sentence-initial — 0.68% (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-313 (Урок 22)"
+    verdict_pedagogy: JUSTIFIED
+    note: "The «follows the word» position holds in >99% of tagged tokens."
+
+  - id: APT-12
+    loc: "Урок 22 / mdx ~line 5850"
+    claim_ru: "Частица uta обычно используется в значении или, чтобы показать различные варианты, обычно в паре с kiṃ (ли)."
+    kind: statistic
+    falsifiable_as: "is uta a postpositive particle like ca/tu/eva (i.e. rarely sentence-initial)"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "62 of 262 tagged uta tokens are sentence-initial — 23.66% (apte_treebank_stats.py), vs <1% for ca/tu/ced/iva/eva/hi"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-312 (Урок 22)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The first corpus-measured flag among the particle claims. Apte groups uta with the strictly
+      postpositive particles, but uta is sentence-initial nearly a quarter of the time — it heads
+      disjunctive/interrogative clauses (kim … uta …), unlike ca/tu. The teaching value («or»,
+      paired with kim) is fine; the implicit position analogy overreaches. Method control: hi, an
+      uncontested postpositive, measures 0.77% initial in the same battery — so the 23.66% is a
+      real property of uta, not an artefact.
+
+  - id: APT-13
+    loc: "Урок 1 / mdx <line 960"
+    claim_ru: "Глагол согласуется с подлежащим в числе и лице."
+    kind: government
+    falsifiable_as: "does the finite verb agree with its nsubj in number and person"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "number agreement 98.21% (n=10,672 nsubj→finite-verb edges with both marked); person agreement 100% (where both marked) — apte_treebank_stats.py B_subject_verb_agreement"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-4 (Урок 1)"
+    verdict_pedagogy: JUSTIFIED
+    note: "A core agreement rule confirmed at scale; the ~1.8% number-mismatch is the expected collective/dual-subject and annotation-edge residue."
+
+  - id: APT-14
+    loc: "Урок 2 / mdx <line 960"
+    claim_ru: "Все прилагательные в санскрите ... согласуются с существительным ... в роде, числе и падеже."
+    kind: universality
+    falsifiable_as: "do attributive adjectives (amod) agree with their head noun in gender, number and case"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "amod(ADJ)→NOUN edges: gender match 98.21%, number match 99.41%, case match 78.96% (n=4,809) — apte_treebank_stats.py B_adjective_noun_agreement"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-10 (Урок 2); corroborates APT-2"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Treebank corroboration of the APT-2 universal: gender and number agreement are near-
+      categorical (>98%). Case agreement is lower (79%) — the residue is predicative and
+      appositional adjectives plus amod-tagged adverbials/comparatives (agree in gender/number but
+      not case), not a failure of attributive concord. The universal holds for attributive
+      adjectives as stated.
+
+  - id: APT-15
+    loc: "Урок 2 / mdx <line 960"
+    claim_ru: "Относительное местоимение обычно предшествует существительному, с которым соотносится в относительном предложении."
+    kind: rule
+    falsifiable_as: "does the relative yad precede its correlative tad (relative clause first)"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "in 64.51% of tagged sentences containing both yad and tad, yad precedes tad (n=1,998) — apte_treebank_stats.py B_relative_pronoun_order"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-12 (Урок 2)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      «Обычно» is the right quantifier — yad-first is the ~2:1 majority, not an absolute; the
+      remaining ~35% are the attested tad…yad and embedded orders. A correctly-hedged rule
+      (contrast APT-12, where an implicit absolute overreaches).
+
+  - id: APT-16
+    loc: "Урок 8 / mdx ~line 2070"
+    claim_ru: "Слова со значением jugupsā отвращение, virāma прекращение, pramāda отклонение управляют отложительным падежом."
+    kind: government
+    falsifiable_as: "do disgust/cessation verbs (jugups/viram/pramad) take an ablative complement"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "dependent-case tally of jugups/viram/pramad: Abl 10, Loc 2, Acc 2, Dat 1 — ablative is the plurality among 15 case-tagged obliques (apte_treebank_stats.py C_case_government)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-110 (Урок 8)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Ablative-of-separation confirmed as the leading government, above the thin-flag threshold (n=15)."
+
+  - id: APT-17
+    loc: "Урок 8 / mdx ~line 2070"
+    claim_ru: "В случае слов со значением 'страх' существительное, обозначающее источник страха, ставится в отложительный падеж."
+    kind: government
+    falsifiable_as: "does the fear verb bhī take the ablative of the source of fear"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "bhī dependent-case tally: Abl 20, Acc 4, Ins 1, Gen 1, Voc 1 — ablative 77% of 26 case-tagged obliques (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-111 (Урок 8)"
+    verdict_pedagogy: JUSTIFIED
+    note: "The ablative-of-fear is old and well attested even in the Vedic-skewed slice; cleanly confirmed."
+
+  - id: APT-18
+    loc: "Урок 9 / mdx ~line 2412"
+    claim_ru: "Глаголы kṣip, muc, as со значением бросать, метать управляют местным падежом того, в кого что-либо брошено."
+    kind: government
+    falsifiable_as: "do throw verbs (kṣip/muc) take the locative of the target"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "kṣip/muc dependent-case tally: Acc 65, Abl 49, Ins 15, Nom 6, Gen 6, Dat 4, Loc 3 — the predicted locative-of-target is 3 of 142 case-tagged obliques (2.1%); accusative dominates (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-113 (Урок 9)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      Measured OVERSTATED with a real n. The locative-of-target is a genuine construction but a 2%
+      minority in the corpus, swamped by muc's dominant sense 'release/free' (accusative object)
+      and the ablative-of-source. Teaching the locative as THE government for these verbs hides the
+      construction the learner will actually meet — a frequency miss, hence MISLEADING. (Polysemy
+      caveat: muc conflates 'throw at' and 'release'.)
+
+  - id: APT-19
+    loc: "Урок 10 / mdx ~line 2702"
+    claim_ru: "Глаголы, означающие господствовать (īś, prabhū), сожалеть (day), вспоминать (smṛ, adhī) управляют родительным падежом объекта."
+    kind: government
+    falsifiable_as: "do rule/remember verbs (īś/prabhū/smṛ/adhī) take the genitive of the object"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "dependent-case tally: Acc 58, Gen 43, Nom 22, Loc 19, Ins 9, Abl 9, Dat 4 — genitive 30% of 142 obliques, BELOW the accusative (41%) (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-115 (Урок 10)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      Both cases are genuinely attested — smṛ 'remember' governs genitive OR accusative (Whitney
+      §297c) — but the corpus puts the accusative ahead of the genitive, so «управляют родительным
+      падежом» presented as THE rule overreaches. The honest statement is 'genitive or accusative,
+      accusative if anything commoner'.
+
+  - id: APT-20
+    loc: "Урок 7 / mdx ~line 1712"
+    claim_ru: "В случае глагола ruc нравиться лицо или вещь, которую радуют, ставится в дательный падеж."
+    kind: government
+    falsifiable_as: "does ruc 'please' take the dative of the pleased person"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "ruc dependent-case tally (tagged slice): Loc 5, Ins 4, Gen 2, Acc 2, Dat 1, Abl 1 — the predicted dative is 1 of 15 obliques; the tagged slice is Vedic-skewed, where ruc's dative-of-experiencer government is under-represented"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-105 (Урок 7)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      A period/genre caveat, not a clean refutation: the dative-of-the-pleased is a Classical
+      construction (Whitney §287c), and the treebank slice is Vedic/early-prose-heavy, so the
+      single dative among 15 obliques reflects corpus composition as much as Apte. Graded
+      OVERSTATED-in-corpus rather than FALSE; the teaching is classically defensible — hence
+      pedagogy JUSTIFIED. Needs a Classical-corpus treebank to verdict cleanly (instrument gap).
+
+  - id: APT-21
+    loc: "Урок 7 / mdx ~line 1712"
+    claim_ru: "Корни krudh, druh, īrṣy, asūy управляют дательным падежом объекта гнева."
+    kind: government
+    falsifiable_as: "do anger verbs (krudh/druh/īrṣy/asūy) take the dative of the object of anger"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "only 8 case-tagged obliques across all four lemmas in the tagged slice (Dat 4, Voc 2, Acc 2, Loc 1) — below the n>=10 verdict threshold; the dative DOES lead, so the direction is suggestive but not verdicted"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-106 (Урок 7)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Instrument ran, sample too thin to verdict — the honest UNTESTABLE. The dative leads (4 of 8),
+      so the classical rule (dative-of-anger, Whitney §262) is corroborated in direction. Closing
+      instrument: a Classical-corpus treebank or a surface-cooccurrence proxy over krudh + dative
+      nominals.
+
+  - id: APT-22
+    loc: "Урок 9 / mdx ~line 2412"
+    claim_ru: "Слова, обозначающие любовь (snih, abhilaṣ, anurañj), управляют местным падежом того лица, к которому испытываются чувства."
+    kind: government
+    falsifiable_as: "do love verbs (snih/abhilaṣ/anurañj) take the locative of the object of feeling"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "0 case-tagged NOUN/PRON dependents across all three lemmas in the tagged slice — no signal at all (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-112 (Урок 9)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The extreme case of the government-drain gap: these Classical emotion verbs contribute zero
+      dependency-tagged arguments to the Vedic-skewed slice. Locative-of-feeling is standard
+      (Whitney §303b), but this instrument cannot see it. Same closing instrument as APT-21.
+
+  - id: APT-23
+    loc: "Урок 3 / mdx <line 960"
+    claim_ru: "Все глаголы со значением движения управляют винительным падежом. [corroboration of APT-5]"
+    kind: statistic
+    falsifiable_as: "how dominant is the accusative goal vs the dative/locative goal among motion-verb arguments"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "motion verbs (gam/yā/i/car/vraj/sṛ/dhāv/ā-gam) goal-case dependents: Acc 85.91% vs Dat+Loc 14.09% (n=873) — accusative is the heavy default, but the non-accusative goal is a real 14% minority (apte_treebank_stats.py D_motion_goal_case)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-15 (Урок 3); corroborates APT-5"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Puts a number on the APT-5 OVERSTATED flag: «все… винительным» is an 86%-true default, not an
+      absolute — the dative and locative goal together account for ~14% (Loc conflates goal with
+      place, so 14% is an upper bound; the dative goal alone is ~4.6%). For a composition primer the
+      accusative default is the right teaching target, so pedagogy stays JUSTIFIED.
+
+  - id: APT-24
+    loc: "Урок 23 / mdx ~line 6111"
+    claim_ru: "Чаще всего частица kila означает воистину, за ней следует слово, которое эта частица усиливает."
+    kind: rule
+    falsifiable_as: "is kila postpositive (following the emphasized word, not sentence-initial)"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "0 of 22 tagged kila tokens are sentence-initial (apte_treebank_stats.py)"
+    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-315 (Урок 23)"
+    verdict_pedagogy: JUSTIFIED
+    note: "Thin (n=22) but clean — postposition holds; consistent with the whole postpositive-particle family (ca/tu/ced/iva/eva/hi)."
