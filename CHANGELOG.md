@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.26.0] - 2026-07-16
+
 ### Changed
 - **P5 (SG-WF-003 kṛt-суффиксы) — авторская виза применена → ОПУБЛИКОВАНО (честный отрицательный результат).**
   [`sangram/articles/krt-suffixes/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-suffixes):
