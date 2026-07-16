@@ -19,6 +19,36 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.32.0] - 2026-07-16
+
+### Changed
+- **P3 (SG-MO-017 перфект) — проза ВСЕЙ статьи переписана по [style guide прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (расширенный охват H1003 — «вся статья, не только § 6», решение MG 16-07-2026).**
+  [`sangram/articles/perfect/index.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/index.mdx),
+  §§ 1, 3.1–3.3, 3.5, 4: вложенные скобки-приписки развёрнуты в предложения, запросы и коммит-пин уведены
+  из аналитического текста (живут в § 2 «Данные и воспроизводимость»), телеграфные пункты kill-gate § 4
+  развёрнуты в связные абзацы с сырыми счётами при процентах (61 из 80, 8 из 80), административный регистр
+  («виза») заменён словами читателя; **все числа и выводы сохранены** (гайд правит слог, не находки — те под
+  авторской визой); попутно исправлена опечатка «Уитри» → «Уитни» (§ 3.4). Append-only ревизия `revision` в
+  [манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/article.manifest.json) (C4);
+  строка 1 очереди гайда (§ 6) обновлена. Проход подготовлен предыдущей сессией Fable 5 (`claude-fable-5`)
+  и удержан до решения MG о расширенном охвате; отревьюирован и дошлифован этой сессией — Fable 5
+  (`claude-fable-5`). ([H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md))
+- **Sangram SG-MO-001 «Склонение: обзор» — ОПУБЛИКОВАНА (виза MG 8/8 approve; H1013).**
+  [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview)
+  ([PR #262](https://github.com/gasyoun/SanskritGrammar/pull/262)): виза применена → ревизия `published`,
+  плашка кандидата снята; по карточке A4 § 3.2 переведён на реальную парадигматическую классификацию
+  (окончание Ins.Sg, покрытие 75,1 %) — реальная доля основ на -a **52,6 %** против завышенных
+  морфологических 62,9 %. Запись статьи-кандидата — в секции `[0.30.0]`, в чей тег она реально вошла
+  (см. Fixed ниже). (Opus 4.8 `claude-opus-4-8[1m]`)
+
+### Fixed
+- **CHANGELOG: дубликат заголовка `[0.29.0]` устранён** — запись SG-MO-001 «Склонение: обзор» (merged
+  [PR #255](https://github.com/gasyoun/SanskritGrammar/pull/255) ПОСЛЕ тега v0.29.0) при переносе H1015-записи
+  в 0.30.0 ([PR #257](https://github.com/gasyoun/SanskritGrammar/pull/257)) оказалась под вторым, ложным
+  заголовком `[0.29.0]`; запись-кандидат перенесена в секцию `[0.30.0]`, в чей тег она реально входит,
+  а её издательский статус (виза 8/8, [PR #262](https://github.com/gasyoun/SanskritGrammar/pull/262)) —
+  Changed-строкой этого релиза. (Fable 5 `claude-fable-5`)
+
 ## [0.31.0] - 2026-07-16
 ### Changed
 - **A65 advanced 2/5 → 3/5 per the house playbook (H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) is now a citable draft: abstract with first-class caveats (LLM-adjudicated verdicts vs deterministic corpus numbers, no second human annotator — stated up front), §6 reproducibility contract, §7 claim→artifact inventory (12 rows, 1 flagged gap), §8 anti-salami boundaries vs A60/A62/A63/A64, §10 references with ⬜ self-citation slots, @DECIDE banner (venue/language; A60 развязка). **Mandatory fact-check fan-out caught 2 real defects**: the headline «942 claims + 214 parses» double-counted (correct: 728 verdicted claims + 214 parses = 942 items; the source `.ai_state` line fixed in the same PR), and §59 cited the superseded H1008 figure 98.3% where the canonical H1012 parser reads 97.6%/98.4% (the two independent parsers agreeing within 1pp is now recorded as a robustness datum). (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
@@ -26,11 +56,7 @@ changelog tags as `vX.Y.Z`.
 ## [0.30.0] - 2026-07-16
 ### Added
 - **Programme synthesis report (RU) — the H797 claim-verification programme in one document (A64 draft, H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) (+ sibling metadoc): 942 verified claims + 214 audited parses across five books, three equal lines — presentation-calibration ranking (Зализняк 0/74 > Бюлер 15/403 > Кочергина 12+24/234, with the verb-accent control pair), the measured diachrony (§207 five monotonic axes, §167 causative collapse 81→21%, the twice-replicated purāṇa epic-imitative signature, §§59/68/193 structural confirmations), and the honesty methodology (UNTESTABLE-as-instrument-spec, negative pilots with numbers, measured blockers, FINDINGS §86-88). Registered as **A65** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) (A64 was claimed concurrently by the Sangram P4 method paper). All numbers sourced from the generated registers and instrument JSONs — none hand-entered. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
-
-
-## [0.29.0] - 2026-07-16
-### Added
-- **Sangram ядро W2 — обзорная статья SG-MO-001 «Склонение: обзор» — ОПУБЛИКОВАНА (виза MG 8/8) (H1013, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview): первая обзорная статья ядра W2 — устанавливает тип «обзор» (скелет пилота минус §4 kill-gate плюс § «Карта подстатей»). Частотная рамка домена склонения по **1 790 270** словоизменённым именным токенам DCS: ед. 79,3 % / дв. **2,09 %** [2,07–2,12] / мн. 18,6 %; Nom 38,7 % + Acc 24,0 % доминируют, Dat реже всех 2,2 %; основы на **-a — 62,9 %** [62,86–63,0] (почему SG-MO-002 — флагман). Скрипт [`sg_mo_001_declension_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_001_declension_overview.py); 3 валидатора + build green. **Виза MG (8/8 approve) применена → опубликовано;** по карточке A4 § 3.2 переведён на РЕАЛЬНУЮ парадигматическую классификацию (окончание Ins.Sg, покрытие 75,1 %) — реальная доля -a **52,6 %** против завышенных 62,9 %.
+- **Sangram ядро W2 — обзорная статья SG-MO-001 «Склонение: обзор» — статья-кандидат (H1013, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview): первая обзорная статья ядра W2 — устанавливает тип «обзор» (скелет пилота минус §4 kill-gate плюс § «Карта подстатей»). Частотная рамка домена склонения по **1 790 270** словоизменённым именным токенам DCS: ед. 79,3 % / дв. **2,09 %** [2,07–2,12] / мн. 18,6 %; Nom 38,7 % + Acc 24,0 % доминируют, Dat реже всех 2,2 %; основы на **-a — 62,9 %** [62,86–63,0] (почему SG-MO-002 — флагман). Скрипт [`sg_mo_001_declension_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_001_declension_overview.py); 3 валидатора + build green. Публикация гейтится авторской визой (виза 8/8 применена позднее — см. `[0.32.0]`).
 
 ## [0.29.0] - 2026-07-16
 
