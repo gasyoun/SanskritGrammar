@@ -19,6 +19,10 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.29.0] - 2026-07-16
+### Added
+- **Programme synthesis report (RU) — the H797 claim-verification programme in one document (A64 draft, H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) (+ sibling metadoc): 942 verified claims + 214 audited parses across five books, three equal lines — presentation-calibration ranking (Зализняк 0/74 > Бюлер 15/403 > Кочергина 12+24/234, with the verb-accent control pair), the measured diachrony (§207 five monotonic axes, §167 causative collapse 81→21%, the twice-replicated purāṇa epic-imitative signature, §§59/68/193 structural confirmations), and the honesty methodology (UNTESTABLE-as-instrument-spec, negative pilots with numbers, measured blockers, FINDINGS §86-88). Registered as **A64** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md). All numbers sourced from the generated registers and instrument JSONs — none hand-entered. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
 ### Added
 - **Sangram ядро W2 — обзорная статья SG-MO-001 «Склонение: обзор» — статья-кандидат (H1013, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview): первая обзорная статья ядра W2 — устанавливает тип «обзор» (скелет пилота минус §4 kill-gate плюс § «Карта подстатей»). Частотная рамка домена склонения по **1 790 270** словоизменённым именным токенам DCS: ед. 79,3 % / дв. **2,09 %** [2,07–2,12] / мн. 18,6 %; Nom 38,7 % + Acc 24,0 % доминируют, Dat реже всех 2,2 %; основы на **-a — 62,9 %** [62,86–63,0] (почему SG-MO-002 — флагман). Скрипт [`sg_mo_001_declension_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_001_declension_overview.py); 3 валидатора + build green. Публикация гейтится авторской визой.
 
