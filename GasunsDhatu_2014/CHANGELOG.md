@@ -9,7 +9,21 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.16.0] - 2026-07-16
+
 ### Changed
+- **Веха: первый полный черновик рукописи собран и сверён — готовность M03 повышена 3/5 → 4/5.**
+  Каркас монографии замкнут по всем четырём осям: **Введение → Часть I → Часть II → Заключение**,
+  канон-числа сведены сквозняком (935 корней Уитни · 809 MW / 590 DCS / 550 ядро · класс 376/26).
+  Часть I в прозе (Обзор, Гл. 1–3 + Прил. 7), **Часть II — все 4 новые главы в прозе** (Гл. 4/5
+  завизированы, Гл. 6/7 черновики ждут визы), Заключение и Введение сшиты. По рубрике готовности
+  4/5 = *revising / pre-submission*: агентская сборка исчерпана, **остаток до 5/5 — только
+  человеческое** (авторские визы Гл. 6–7 + рамок, сквозная RWS-литредактура, финальная сверка +
+  вёрстка Фазы 3). Отражено в хабах Uprava — [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md),
+  [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md),
+  [handoffs/README.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md) — и в репозиторном
+  [`.ai_state.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md).
+  (Opus 4.8 `claude-opus-4-8[1m]`)
 - **Гл. 6 «Корпусная аттестация корней» — одобрена автором 16-07-2026, без правок.** Draft banner
   removed, `[^ed6draft]` footnote updated with approval note, `BOOK_PLAN.md` Часть II Гл. 6
   закрыта. Content unchanged — 590/935 DCS-attested, 550 ready core, 259 corpus-absent,
