@@ -9,6 +9,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **Гл. 5 «Дхатупатха и паниниевская традиция как данные» — одобрена автором 16-07-2026, без
+  правок.** Draft banner removed, `[^ed5draft]` footnote updated with approval note,
+  `BOOK_PLAN.md` Часть II Гл. 5 закрыта. Content unchanged — vidyut дхатупатха 2 259, аудит
+  пальсуле-центризма конкорданса (añc подтверждён, and согласуется, ast уточнён), честный предел
+  it-stripped джойна (454/930).
+  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.15.0] - 2026-07-16
 ### Changed
 - **Введение получило рамку двух частей** (сверка с финальной аркой). Перед формально-
