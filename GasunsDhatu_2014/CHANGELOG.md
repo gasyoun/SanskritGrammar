@@ -19,6 +19,22 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   unchanged) — page + footnote `[^ed2]` updated with the link.
   ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
+## [0.12.0] - 2026-07-16
+### Added
+- **Часть II завершена вчерне — Глава 7 «Грамматический указатель корней по модели Зализняка»
+  (черновик)**, прикладная кульминация. Новая страница
+  [`07_glava7_ukazatel-zaliznyaka.mdx`](07_glava7_ukazatel-zaliznyaka.mdx) + план
+  [`revision-2026/CH7_PLAN_zaliznyak_index.md`](revision-2026/CH7_PLAN_zaliznyak_index.md).
+  Реализует «дальнейшее направление работы» Заключения 2014 г.: компактный код по модели Зализняка
+  (`ряд · seṭ/aniṭ · полноизменяемость · схема ударения`) на **930 корнях кросс-уока** (жёсткая
+  рамка). Проверенные скриптом оси: **18 рядов** чередования (A1 153, U1 140 …; уверенность
+  446/410/20), seṭ/aniṭ 308/287/176, полноизменяемость 429/424/22. Ударение — самая незакрытая ось:
+  **18 правил Уитни** (схемы a–f, сверка на 19 падежных клетках) + акцентуированная Ригведа
+  (VedaWeb), поскольку корпус акцента не несёт (Гл. 6). A56 (номинальный индекс, kosha) и Гл. 3
+  §3.3 — ссылка, не пересказ; точный список разрядов сверить с оригиналом до публикации. Ждёт визы.
+  **С этой главой все 4 главы Части II начаты вчерне.**
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
 ## [0.11.0] - 2026-07-16
 ### Added
 - **Часть II, Глава 6 «Корпусная аттестация корней» (черновик)** — третья новая глава; замыкает
