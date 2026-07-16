@@ -19,6 +19,14 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.28.0] - 2026-07-16
+
+### Fixed
+- **Fresh `npm ci` was broken repo-wide**: dependabot [PR #155](https://github.com/gasyoun/SanskritGrammar/pull/155) bumped `react` to 19.2.7 but left `react-dom` at 18.3.1 — an unsatisfiable peer pair (`ERESOLVE`) for any clean install/worktree. Aligned `react-dom` to 19.2.7 (Docusaurus 3.10 supports React 19), lockfile regenerated, production build green. (Fable 5 `claude-fable-5`)
+
+### Changed
+- **P3 (SG-MO-017 перфект) — применены четыре заметки визового листа** (виза 8/8 approve была применена в [PR #241](https://github.com/gasyoun/SanskritGrammar/pull/241) как «no wording edits» — заметки MG оставались неисполненными): **(A1)** главный вывод § 4 получил существенную оговорку «**по данным DCS**» — измерена аннотация снапшота `04e0778`, а не язык и не корпусы вообще; **(A5)** вопрос автора «а если проверить по списку известных перфектов?» записан заделом следующей ревизии (§ 3.5): лексиконный зонд по заведомым перфектным формам (`cakāra`, `jagāma`, `dadau`, `veda`…) меряет полноту разметки без ложных кандидатов; **(A4)** дистрибуция вспомогательных перифрастики (as **91,4 %** / kṛ 7,4 % / bhū 0,8 %; 3 sg 86,6 %) маршрутизирована в [методичку Кочергиной § 4.2](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md) как queued material для **Занятия 22 (стр. 153)** (+ строка в метадоке); **(B1+A7)** требование style guide по эталону [rusgram.ru](http://rusgram.ru/main) («чтобы это мог читать человек, а не просто агент») — заминчен handoff [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md) (Fable), заметка A7 о «птичьем языке» раздела ограничений — его вход. Ревизия `revision` в [манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/article.manifest.json) (append-only, C4). (Fable 5 `claude-fable-5`)
+
 ## [0.27.0] - 2026-07-16
 
 ### Changed

@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_KOCHERGINA_COMPANION_2026.md
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 16-07-2026_
 
 Companion record for the Kochergina methodichka roadmap
 ([`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)).
@@ -51,5 +51,6 @@ Fable 5).
 | Date | Model | Change |
 |---|---|---|
 | 12-07-2026 | Opus 4.8 (`claude-opus-4-8`) | Created roadmap + metadoc; Decisions A–D locked; H807 minted for v1. |
+| 16-07-2026 | Fable 5 (`claude-fable-5`) | § 4.2: queued material for Занятие 22 (стр. 153) per MG's P3-visa card A4 — periphrastic-perfect auxiliary distribution (as 91,4 % / kṛ 7,4 % / bhū 0,8 %, 3 sg 86,6 %) from the SG-MO-017 corpus package. |
 
 _Dr. Mārcis Gasūns_

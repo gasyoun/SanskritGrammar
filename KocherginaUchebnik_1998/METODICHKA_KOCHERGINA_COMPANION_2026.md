@@ -1,6 +1,6 @@
 # Methodichka — a printed companion-commentary to Kochergina, *Учебник санскрита*
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 16-07-2026_
 
 The roadmap for a **thin printed companion booklet** (методичка) to V. A. Kochergina's
 *Учебник санскрита* — grammatical-accuracy notes, clarity/frequency refinements, extra
@@ -112,6 +112,15 @@ registry once the shape stabilizes (@DECIDE K-2).
 - **v1:** for each v1 claim, a one-paragraph "что учащийся встретит на практике" note with
   the DCS number (e.g. the -iṣya 56.8 % badge). This is the booklet's signature.
 - **v2:** frequency badges for every form-class Kochergina teaches.
+- **Queued material — MG ruling, виза P3/SG-MO-017, карточка A4 (15-07-2026):** для
+  **Занятия 22 (перифрастический перфект, стр. 153)** — корпусная дистрибуция
+  вспомогательных из 4 046 перифрастических перфектов DCS: **as (`āsa`/`āsuḥ`) 91,4 % ·
+  kṛ (`cakāra`) 7,4 % · bhū (`babhūva`) 0,8 %**; лицо × число — почти исключительно
+  нарративное 3 sg (86,6 %); основы — каузативы/деноминативы на `-ay` (`tāḍayām āsa`,
+  `darśayām āsa`). Числа воспроизводимы из
+  [periphrastic_perfect.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/data/periphrastic_perfect.csv)
+  (статья [SG-MO-017](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/index.mdx) § 3.4);
+  в печать — частотным бейджем «что учащийся встретит», как -iṣya 56,8 %.
 
 ### 4.3 Errata (опечатки, per edition — Decision C)
 - **v1:** populate `errata.yml` from whatever is available now (the digitized text;
