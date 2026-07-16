@@ -1,0 +1,1106 @@
+{
+  "instrument": "treebank_syntax_stats.py over dcs_full.sqlite's own head/deprel columns — a genuine, fully-tagged (not sparse) UD-style slice; prior UNTESTABLE verdicts assumed this annotation didn't exist",
+  "coverage": {
+    "total_tokens": 5688416,
+    "tagged_tokens": 223751,
+    "tagged_pct": 3.93,
+    "fully_tagged_sentences": 29433,
+    "texts_by_tagged_token_count": [
+      [
+        "Ṛgveda",
+        34748
+      ],
+      [
+        "Aitareyabrāhmaṇa",
+        15679
+      ],
+      [
+        "Atharvaveda (Śaunaka)",
+        14782
+      ],
+      [
+        "Śatapathabrāhmaṇa",
+        8734
+      ],
+      [
+        "Bṛhadāraṇyakopaniṣad",
+        8417
+      ],
+      [
+        "Atharvaveda (Paippalāda)",
+        8094
+      ],
+      [
+        "Chāndogyopaniṣad",
+        7072
+      ],
+      [
+        "Baudhāyanaśrautasūtra",
+        6382
+      ],
+      [
+        "Āpastambaśrautasūtra",
+        4986
+      ],
+      [
+        "Jaiminīyabrāhmaṇa",
+        4955
+      ],
+      [
+        "Jaiminīya-Upaniṣad-Brāhmaṇa",
+        4893
+      ],
+      [
+        "Maitrāyaṇīsaṃhitā",
+        4774
+      ],
+      [
+        "Mahābhārata",
+        4461
+      ],
+      [
+        "Kāṭhakasaṃhitā",
+        4323
+      ],
+      [
+        "Kauṣītakibrāhmaṇa",
+        4009
+      ],
+      [
+        "Pañcaviṃśabrāhmaṇa",
+        3924
+      ],
+      [
+        "Taittirīyasaṃhitā",
+        3703
+      ],
+      [
+        "Gopathabrāhmaṇa",
+        3615
+      ],
+      [
+        "Vaitānasūtra",
+        3392
+      ],
+      [
+        "Vājasaneyisaṃhitā (Mādhyandina)",
+        3218
+      ],
+      [
+        "Taittirīyabrāhmaṇa",
+        2957
+      ],
+      [
+        "Pāraskaragṛhyasūtra",
+        2941
+      ],
+      [
+        "Taittirīyāraṇyaka",
+        2935
+      ],
+      [
+        "Arthaśāstra",
+        2782
+      ],
+      [
+        "Gobhilagṛhyasūtra",
+        2735
+      ],
+      [
+        "Āśvalāyanagṛhyasūtra",
+        2588
+      ],
+      [
+        "Śāṅkhāyanagṛhyasūtra",
+        2556
+      ],
+      [
+        "Kātyāyanaśrautasūtra",
+        2527
+      ],
+      [
+        "Khādiragṛhyasūtra",
+        2480
+      ],
+      [
+        "Hiraṇyakeśigṛhyasūtra",
+        2425
+      ],
+      [
+        "Śāṅkhāyanaśrautasūtra",
+        2344
+      ],
+      [
+        "Manusmṛti",
+        2311
+      ],
+      [
+        "Bhāradvājaśrautasūtra",
+        2303
+      ],
+      [
+        "Vaikhānasaśrautasūtra",
+        2116
+      ],
+      [
+        "Śvetāśvataropaniṣad",
+        2091
+      ],
+      [
+        "Aitareya-Āraṇyaka",
+        2084
+      ],
+      [
+        "Śāṅkhāyanāraṇyaka",
+        2013
+      ],
+      [
+        "Āpastambadharmasūtra",
+        1874
+      ],
+      [
+        "Jaiminigṛhyasūtra",
+        1829
+      ],
+      [
+        "Āpastambagṛhyasūtra",
+        1766
+      ],
+      [
+        "Gautamadharmasūtra",
+        1744
+      ],
+      [
+        "Kauśikasūtra",
+        1699
+      ],
+      [
+        "Āśvālāyanaśrautasūtra",
+        1694
+      ],
+      [
+        "Sāmavidhānabrāhmaṇa",
+        1604
+      ],
+      [
+        "Drāhyāyaṇaśrautasūtra",
+        1435
+      ],
+      [
+        "Muṇḍakopaniṣad",
+        1267
+      ],
+      [
+        "Vārāhagṛhyasūtra",
+        1232
+      ],
+      [
+        "Kaṭhāraṇyaka",
+        1205
+      ],
+      [
+        "Buddhacarita",
+        1102
+      ],
+      [
+        "Baudhāyanadharmasūtra",
+        1041
+      ],
+      [
+        "Vaikhānasagṛhyasūtra",
+        938
+      ],
+      [
+        "Kāṭhakagṛhyasūtra",
+        851
+      ],
+      [
+        "Aitareyopaniṣad",
+        848
+      ],
+      [
+        "Taittirīyopaniṣad",
+        836
+      ],
+      [
+        "Mānavagṛhyasūtra",
+        779
+      ],
+      [
+        "Ṛgvedakhilāni",
+        777
+      ],
+      [
+        "Atharvaprāyaścittāni",
+        741
+      ],
+      [
+        "Rāmāyaṇa",
+        526
+      ],
+      [
+        "Ṛgvidhāna",
+        502
+      ],
+      [
+        "Baudhāyanagṛhyasūtra",
+        487
+      ],
+      [
+        "Kauṣītakyupaniṣad",
+        272
+      ],
+      [
+        "Suśrutasaṃhitā",
+        54
+      ],
+      [
+        "Kūrmapurāṇa",
+        52
+      ],
+      [
+        "Viṣṇupurāṇa",
+        42
+      ],
+      [
+        "Carakasaṃhitā",
+        36
+      ],
+      [
+        "Nyāyabindu",
+        32
+      ],
+      [
+        "Avadānaśataka",
+        31
+      ],
+      [
+        "Kāmasūtra",
+        30
+      ],
+      [
+        "Abhidharmakośa",
+        17
+      ],
+      [
+        "Bhāratamañjarī",
+        14
+      ],
+      [
+        "Aṣṭāṅgahṛdayasaṃhitā",
+        14
+      ],
+      [
+        "Matsyapurāṇa",
+        13
+      ],
+      [
+        "Haṭhayogapradīpikā",
+        11
+      ],
+      [
+        "Rasaratnasamuccayaṭīkā",
+        7
+      ]
+    ],
+    "caveat": "concentrated in Vedic/early prose (Ṛgveda, Atharvaveda, Brāhmaṇas, older Upaniṣads, Śrauta/Gṛhya/Dharma-sūtras) + a small post-Vedic tail (Mahābhārata, Manusmṛti, Arthaśāstra, Rāmāyaṇa, Buddhacarita) — genre-skew checked, see by_genre in OCH-66/67 below and the module docstring"
+  },
+  "OCH-65_prati_adposition": {
+    "total_tagged_prati_tokens": 143,
+    "deprel_counts": {
+      "advmod": 91,
+      "case": 29,
+      "flat": 14,
+      "conj": 3,
+      "root": 2,
+      "orphan": 2,
+      "advcl:ccomp": 1,
+      "acl:dpct": 1
+    },
+    "unambiguous_adpositional_case_deprel": 29,
+    "adpositional_share_pct": 20.3,
+    "expected_by_s212": "adpositional (case) use is the minority",
+    "confirmed": true
+  },
+  "OCH-66_word_order": {
+    "root_final": {
+      "n": 29433,
+      "hits": 13659,
+      "pct": 46.4
+    },
+    "subject_group_first": {
+      "n": 15762,
+      "hits": 6721,
+      "pct": 42.6
+    },
+    "modifier_precedes_head": {
+      "n": 24185,
+      "hits": 20807,
+      "pct": 86.0
+    },
+    "expected_by_s214": "all three tendencies hold as statistical majorities",
+    "by_genre": {
+      "classical": {
+        "root_final": {
+          "n": 1187,
+          "hits": 446,
+          "pct": 37.6
+        },
+        "subject_group_first": {
+          "n": 845,
+          "hits": 392,
+          "pct": 46.4
+        },
+        "modifier_precedes_head": {
+          "n": 2043,
+          "hits": 1768,
+          "pct": 86.5
+        }
+      },
+      "vedic_sutra": {
+        "root_final": {
+          "n": 28246,
+          "hits": 13213,
+          "pct": 46.8
+        },
+        "subject_group_first": {
+          "n": 14917,
+          "hits": 6329,
+          "pct": 42.4
+        },
+        "modifier_precedes_head": {
+          "n": 22142,
+          "hits": 19039,
+          "pct": 86.0
+        }
+      }
+    },
+    "robustness_checks": {
+      "root_final_excl_trailing_particles": {
+        "n": 29433,
+        "hits": 14258,
+        "pct": 48.4
+      },
+      "root_final_single_clause_sentences_only": {
+        "n": 18390,
+        "hits": 9404,
+        "pct": 51.1
+      }
+    }
+  },
+  "OCH-67_complex_sentences": {
+    "complex_sentences_n": 5893,
+    "coordinate_only": 419,
+    "subordinate_only": 2739,
+    "paratactic_only": 171,
+    "clausal_subject_only": 238,
+    "mixed": 815,
+    "other": 1511,
+    "coordinate_share_pct": 13.3,
+    "coordinate_vs_subordinate_ratio": 0.15,
+    "confirmed": false,
+    "expected_by_s215": "coordinate_only > subordinate_only (finite subordinate clauses only)",
+    "by_genre": {
+      "classical": {
+        "complex_sentences_n": 105,
+        "coordinate_only": 29,
+        "subordinate_only": 58,
+        "paratactic_only": 5,
+        "clausal_subject_only": 0,
+        "mixed": 7,
+        "other": 6,
+        "coordinate_share_pct": 33.3,
+        "coordinate_vs_subordinate_ratio": 0.5,
+        "confirmed": false
+      },
+      "vedic_sutra": {
+        "complex_sentences_n": 5788,
+        "coordinate_only": 390,
+        "subordinate_only": 2681,
+        "paratactic_only": 166,
+        "clausal_subject_only": 238,
+        "mixed": 808,
+        "other": 1505,
+        "coordinate_share_pct": 12.7,
+        "coordinate_vs_subordinate_ratio": 0.15,
+        "confirmed": false
+      }
+    }
+  },
+  "OCH-68_correlative_order": {
+    "n": 335,
+    "head_noun_in_first_clause": 252,
+    "pct": 75.2,
+    "expected_by_s216": "100% — this is an absolute ('всегда') claim",
+    "counterexamples": [
+      {
+        "sentence_id": 13362,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 13753,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 12,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 13808,
+        "head_noun_idx": 13,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 13921,
+        "head_noun_idx": 4,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 3,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 13937,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14101,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 14,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14181,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14182,
+        "head_noun_idx": 19,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 16,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14312,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 12,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14313,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14326,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 14448,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 5,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 15330,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 1,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 15372,
+        "head_noun_idx": 10,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 15456,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 17346,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 17416,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 1,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 17464,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 5,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 17507,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 1,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 6,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 18021,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 18022,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 18570,
+        "head_noun_idx": 13,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 18596,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 18752,
+        "head_noun_idx": 22,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 17,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 20108,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 20203,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 20352,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 20526,
+        "head_noun_idx": 17,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 20631,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 4,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 21049,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 15,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 21891,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 24026,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 24074,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 25676,
+        "head_noun_idx": 25,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 22,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 71838,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 6,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 71839,
+        "head_noun_idx": 6,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 5,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 93685,
+        "head_noun_idx": 6,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 5,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 94362,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 8,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 139900,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 139912,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 6,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 223224,
+        "head_noun_idx": 5,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 3,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 223441,
+        "head_noun_idx": 6,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 5,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 291348,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 295375,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 295543,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 7,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 472363,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 472395,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 12,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 496408,
+        "head_noun_idx": 10,
+        "rel_verb_idx": 7,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 496412,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 616839,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 623034,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 623289,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 4,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 633798,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 9,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 634549,
+        "head_noun_idx": 6,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 3,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 668686,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 669168,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 721312,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 14,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 721327,
+        "head_noun_idx": 23,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 20,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 721381,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 14,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 721462,
+        "head_noun_idx": 13,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 11,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 729766,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 732157,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 7,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 734018,
+        "head_noun_idx": 10,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 734019,
+        "head_noun_idx": 13,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 13,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 735000,
+        "head_noun_idx": 10,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 738577,
+        "head_noun_idx": 19,
+        "rel_verb_idx": 13,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 14,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 738579,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 739731,
+        "head_noun_idx": 6,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 6,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 740003,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 9,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 740339,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 7,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 740669,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 9,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 11,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 741430,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 11,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 742060,
+        "head_noun_idx": 7,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 6,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 742061,
+        "head_noun_idx": 18,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 17,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 742062,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 4,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 14,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 742063,
+        "head_noun_idx": 16,
+        "rel_verb_idx": 3,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 15,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 742443,
+        "head_noun_idx": 12,
+        "rel_verb_idx": 8,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 744719,
+        "head_noun_idx": 9,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 9,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 744720,
+        "head_noun_idx": 8,
+        "rel_verb_idx": 7,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 8,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 746280,
+        "head_noun_idx": 14,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 11,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 747935,
+        "head_noun_idx": 15,
+        "rel_verb_idx": 2,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 12,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 748398,
+        "head_noun_idx": 11,
+        "rel_verb_idx": 5,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      },
+      {
+        "sentence_id": 751873,
+        "head_noun_idx": 13,
+        "rel_verb_idx": 6,
+        "rel_min_idx": 1,
+        "matrix_min_idx": 10,
+        "head_in_first_clause": false
+      }
+    ],
+    "note": "n is thin — a single exception refutes an absolute; treat as a hunting-licence result, not a settled verdict"
+  },
+  "self_test": {
+    "passed": true
+  }
+}
