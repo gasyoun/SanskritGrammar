@@ -1,0 +1,107 @@
+{
+  "script": "mw_genuine_roots.py",
+  "handoff": "H1006 + enrichment H1006b + join-key reconcile H1034",
+  "join_key": "SLP1 (k1_slp1 / root_slp1)",
+  "inputs": {
+    "mw": "csl-orig v02/mw/mw_roots.tsv",
+    "dcs": "WhitneyRoots/crosswalk/roots.csv",
+    "oracle": "csl-orig v02/etymology_stats/root_oracle.tsv"
+  },
+  "genuine_roots": 750,
+  "distinct_genuine_slp1": 704,
+  "dcs_attested": 482,
+  "consensus_ge4_dicts": 345,
+  "core_attested_and_ge4": 294,
+  "tail_unattested_le1": 101,
+  "period_distribution": {
+    "RV": 361,
+    "AV": 325,
+    "V": 409,
+    "B": 424,
+    "S": 336,
+    "E": 424,
+    "C": 437
+  },
+  "top20_by_dcs_freq": [
+    {
+      "root_iast": "kṛ",
+      "dcs_freq": 40799
+    },
+    {
+      "root_iast": "kṛ",
+      "dcs_freq": 40799
+    },
+    {
+      "root_iast": "bhū",
+      "dcs_freq": 40393
+    },
+    {
+      "root_iast": "as",
+      "dcs_freq": 35753
+    },
+    {
+      "root_iast": "as",
+      "dcs_freq": 35753
+    },
+    {
+      "root_iast": "vac",
+      "dcs_freq": 33948
+    },
+    {
+      "root_iast": "gam",
+      "dcs_freq": 18341
+    },
+    {
+      "root_iast": "dṛś",
+      "dcs_freq": 14866
+    },
+    {
+      "root_iast": "dā",
+      "dcs_freq": 12008
+    },
+    {
+      "root_iast": "dā",
+      "dcs_freq": 12008
+    },
+    {
+      "root_iast": "vid",
+      "dcs_freq": 11314
+    },
+    {
+      "root_iast": "vid",
+      "dcs_freq": 11314
+    },
+    {
+      "root_iast": "śru",
+      "dcs_freq": 10505
+    },
+    {
+      "root_iast": "brū",
+      "dcs_freq": 9781
+    },
+    {
+      "root_iast": "ah",
+      "dcs_freq": 9447
+    },
+    {
+      "root_iast": "ah",
+      "dcs_freq": 9447
+    },
+    {
+      "root_iast": "sthā",
+      "dcs_freq": 9268
+    },
+    {
+      "root_iast": "jan",
+      "dcs_freq": 9247
+    },
+    {
+      "root_iast": "han",
+      "dcs_freq": 8744
+    },
+    {
+      "root_iast": "yaj",
+      "dcs_freq": 6755
+    }
+  ]
+}
