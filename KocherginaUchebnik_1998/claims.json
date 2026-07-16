@@ -68,11 +68,11 @@
       "loc": "Занятие XXXVII / mdx line 9655",
       "claim_ru": "II тип [аориста] — тематический простой аорист. Самый распространенный в санскрите тип аориста. Обычно образуется от корней на согласную.",
       "kind": "statistic",
-      "verdict_fact": "UNTESTABLE",
-      "number": "DCS timws.csv tags aorist only as Act/Med (codes 10-13, 2,452 tokens), not by the 7 formation types — per-type split needs finer morphology than the 2021 export carries",
-      "ref": "Whitney §846-847 (a-aorist common, from roots in consonants)",
+      "verdict_fact": "OVERSTATED",
+      "number": "MEASURED (16-07-2026, aorist_type_ranking.py, H1045): the DCS-2021 blocker (\"tags aorist only as Act/Med, not by formation type\") is stale — DCS-2026's feat_formation tag under feat_tense=Past distinguishes exactly Whitney's 7 types (root=I, them=II thematic, red=III, s=IV, is=V, sis=VI, sa=VII), the same identification built for HK-207 (H1040). Result is GENUINELY MIXED, dug into with a genre split + a lexical-outlier check before verdicting (same diligence as OCH-66/67): **whole corpus, raw tokens — Type I root aorist leads (5,690) over Type II thematic (2,781), NOT close; whole corpus excluding bhū (which alone supplies ~38% of Type I's tokens as a near- auxiliary \"was/became\") — Type I STILL leads (3,346 vs 2,781); whole corpus by distinct-lemma count — Type IV s-aorist leads (216 lemmas), Type II is 3rd (175).** Type II only comes out on top in a NARROWER reading: the classical (non-Vedic) text subset, EXCLUDING bhū specifically — there Type II leads both by token count (850 vs 724) and lemma-type count (58 vs 52). 2 of 6 checks confirm Type II as top; 4 do not",
+      "ref": "Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py; hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Consistent with Whitney's account, but the DCS-2021 export does not tag aorists by formation type, so the 'самый распространенный' ranking cannot be confirmed against the corpus here. Flagged UNTESTABLE rather than assumed. Revisit if the DCS-2026 CoNLL-U import adds sub-type tags.",
+      "note": "Whitney's own account (and every grammar that repeats it) may well be right for Classical Sanskrit narrative specifically — the classical-subset, bhū-excluded reading (the closest analogue to what these grammars actually describe) DOES confirm it. But the flat, unqualified 'самый распространенный в санскрите' claim does not hold against this corpus as a whole: root aorist dominates by raw frequency (not merely a bhū artifact) and s-aorist is the most productive type by root count. Recorded as OVERSTATED — directionally defensible in the narrowest reading, not in the broad one actually stated.",
       "mg_footnote": null
     },
     {

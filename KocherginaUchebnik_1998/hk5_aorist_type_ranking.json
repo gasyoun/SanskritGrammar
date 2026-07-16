@@ -1,0 +1,194 @@
+{
+  "instrument": "aorist_type_ranking.py over dcs_full.sqlite — reuses the feat_formation aorist-type identification built for HK-207 (H1040)",
+  "whole_corpus": {
+    "all_lemmas": [
+      {
+        "formation": "root",
+        "type": "I (root aorist)",
+        "tokens": 5690,
+        "distinct_lemmas": 210
+      },
+      {
+        "formation": "them",
+        "type": "II (thematic a-aorist)",
+        "tokens": 2781,
+        "distinct_lemmas": 175
+      },
+      {
+        "formation": "s",
+        "type": "IV (s-aorist)",
+        "tokens": 1508,
+        "distinct_lemmas": 216
+      },
+      {
+        "formation": "is",
+        "type": "V (iṣ-aorist)",
+        "tokens": 1077,
+        "distinct_lemmas": 170
+      },
+      {
+        "formation": "red",
+        "type": "III (reduplicated aorist)",
+        "tokens": 833,
+        "distinct_lemmas": 150
+      },
+      {
+        "formation": "sa",
+        "type": "VII (sa-aorist)",
+        "tokens": 124,
+        "distinct_lemmas": 37
+      },
+      {
+        "formation": "sis",
+        "type": "VI (siṣ-aorist)",
+        "tokens": 41,
+        "distinct_lemmas": 14
+      }
+    ],
+    "excluding_bhu": [
+      {
+        "formation": "root",
+        "type": "I (root aorist)",
+        "tokens": 3346,
+        "distinct_lemmas": 209
+      },
+      {
+        "formation": "them",
+        "type": "II (thematic a-aorist)",
+        "tokens": 2765,
+        "distinct_lemmas": 174
+      },
+      {
+        "formation": "s",
+        "type": "IV (s-aorist)",
+        "tokens": 1508,
+        "distinct_lemmas": 216
+      },
+      {
+        "formation": "is",
+        "type": "V (iṣ-aorist)",
+        "tokens": 1077,
+        "distinct_lemmas": 170
+      },
+      {
+        "formation": "red",
+        "type": "III (reduplicated aorist)",
+        "tokens": 833,
+        "distinct_lemmas": 150
+      },
+      {
+        "formation": "sa",
+        "type": "VII (sa-aorist)",
+        "tokens": 124,
+        "distinct_lemmas": 37
+      },
+      {
+        "formation": "sis",
+        "type": "VI (siṣ-aorist)",
+        "tokens": 41,
+        "distinct_lemmas": 14
+      }
+    ]
+  },
+  "classical_subset": {
+    "all_lemmas": [
+      {
+        "formation": "root",
+        "type": "I (root aorist)",
+        "tokens": 1606,
+        "distinct_lemmas": 53
+      },
+      {
+        "formation": "them",
+        "type": "II (thematic a-aorist)",
+        "tokens": 850,
+        "distinct_lemmas": 58
+      },
+      {
+        "formation": "s",
+        "type": "IV (s-aorist)",
+        "tokens": 312,
+        "distinct_lemmas": 49
+      },
+      {
+        "formation": "is",
+        "type": "V (iṣ-aorist)",
+        "tokens": 209,
+        "distinct_lemmas": 26
+      },
+      {
+        "formation": "red",
+        "type": "III (reduplicated aorist)",
+        "tokens": 173,
+        "distinct_lemmas": 27
+      },
+      {
+        "formation": "sa",
+        "type": "VII (sa-aorist)",
+        "tokens": 10,
+        "distinct_lemmas": 4
+      },
+      {
+        "formation": "sis",
+        "type": "VI (siṣ-aorist)",
+        "tokens": 2,
+        "distinct_lemmas": 1
+      }
+    ],
+    "excluding_bhu": [
+      {
+        "formation": "them",
+        "type": "II (thematic a-aorist)",
+        "tokens": 850,
+        "distinct_lemmas": 58
+      },
+      {
+        "formation": "root",
+        "type": "I (root aorist)",
+        "tokens": 724,
+        "distinct_lemmas": 52
+      },
+      {
+        "formation": "s",
+        "type": "IV (s-aorist)",
+        "tokens": 312,
+        "distinct_lemmas": 49
+      },
+      {
+        "formation": "is",
+        "type": "V (iṣ-aorist)",
+        "tokens": 209,
+        "distinct_lemmas": 26
+      },
+      {
+        "formation": "red",
+        "type": "III (reduplicated aorist)",
+        "tokens": 173,
+        "distinct_lemmas": 27
+      },
+      {
+        "formation": "sa",
+        "type": "VII (sa-aorist)",
+        "tokens": 10,
+        "distinct_lemmas": 4
+      },
+      {
+        "formation": "sis",
+        "type": "VI (siṣ-aorist)",
+        "tokens": 2,
+        "distinct_lemmas": 1
+      }
+    ]
+  },
+  "checks_them_is_top": {
+    "whole_corpus_tokens": false,
+    "whole_corpus_tokens_excl_bhu": false,
+    "whole_corpus_lemma_types": false,
+    "classical_tokens": false,
+    "classical_tokens_excl_bhu": true,
+    "classical_lemma_types": true
+  },
+  "confirmed_count": 2,
+  "total_checks": 6,
+  "conclusion": "mixed — thematic (Type II) leads only in the classical-subset, bhū-excluded readings (both by token count and lemma-type count); root aorist (Type I) leads the whole corpus even excluding bhū, and s-aorist (Type IV) has the widest root-type distribution overall"
+}
