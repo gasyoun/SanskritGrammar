@@ -9,6 +9,18 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Added
+- **Гл. 3 «Морфонологическая запись корней» — стежок с Гл. 7.** Closes the last open gap in
+  Part I noted in `BOOK_PLAN.md`: the §3.2/Выводы line «Уитни описывает → Зализняк
+  абстрагирует → Толчельников порождает» (rewritten by H378, 08-07-2026, five days before
+  Ch. 7 existed) now gets a fourth, applied link forward to the Zaliznyak-model root index
+  (Гл. 7, approved 16-07-2026, H1037): the code axes discussed in §3.2 (ряд чередования,
+  seṭ/aniṭ, полноизменяемость) are exactly what the index applies over 749/930 crosswalk
+  roots (80,5 %). Two new footnotes, `[^ed3d]`/`[^ed3e]` (existing `[^ed3d]` relabelled
+  `[^ed3e]` to keep citation order); no empirical claim changed, §3.1/§3.3/§3.4 prose
+  untouched (still awaits the human RWS style pass, 269 findings, per `CH3_DATA_MAP.md`).
+  ([H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.17.0] - 2026-07-16
 
 ### Changed
