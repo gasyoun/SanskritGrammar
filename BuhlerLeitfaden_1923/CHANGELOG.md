@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.1] - 2026-07-16
+### Changed
+- **HB-268 (Урок XXXIII dvigu proportions) — blocker MEASURED, not presumed (H1008 negative pilot)** — the H1004 structural compound tagger finds the NUM-first class, but its final-member gender census (5,763 clusters probed, 99.9% gender coverage) shows **56% masculine finals**: the surface class is dominated by numeral BAHUVRĪHIS (caturbhuja-type), which are precisely not dvigus. With compound-FUNCTION tagging absent from DCS (OCH-60 probe), the «большей частью / реже» proportions stay uncountable — dead end recorded with numbers so it is never re-derived. (Fable 5 `claude-fable-5`, [H1008](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1008-Fable_SanskritGrammar_root-shape-parser-och16_16.07.26.md))
 ### Added
 - **8 FALSE claim-verification misprints transcribed into [`errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml)** — the 0.3.0 entry below queued these as "candidates" but never actually wrote them; closed the gap (HB-60/133/186/199/200/211/219/372, `page: 0` + Урок/mdx-line locator, no printed pagination available for this book). `ERRATA.md` regenerated (8 open, 0 fixed). (Sonnet 5 `claude-sonnet-5`)
 

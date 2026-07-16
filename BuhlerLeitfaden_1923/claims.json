@@ -3213,8 +3213,8 @@
       "claim_ru": "такие, первым членом которых является числительное количестьенное (dvigu). Они выражают большей частью группу или скопление и являются в таком случае сущ. сред. р. или женского рода на ī... Реже встречаются прилагательные этого класса",
       "kind": "statistic",
       "verdict_fact": "UNTESTABLE",
-      "number": "UNTESTABLE: compound-type tagging gap — DCS does not annotate dvigu vs. other tatpuruṣa, so collective-vs-adjectival proportions cannot be counted (OCH-58 precedent)",
-      "ref": "Whitney 1889 (numeral compounds); cf. OCH-58 (compound-type stats untestable)",
+      "number": "UNTESTABLE — blocker now MEASURED, not presumed (16-07-2026, H1008 negative pilot): the H1004 structural tagger finds the NUM-first compound class, but its final-member gender census (probe over 5,763 clusters, coverage 99.9%) shows 56% MASCULINE finals — i.e. the surface class is dominated by numeral BAHUVRĪHIS (caturbhuja-type agreeing with masculine heads), which are precisely NOT dvigus. Since DCS carries no compound- FUNCTION tagging (OCH-60's probe: mahābāhu last-member NOUN 192/193), dvigu-proper cannot be separated from numeral bahuvrīhi, and the collective-vs-adjectival proportions stay uncountable — recorded with numbers so the dead end is not re-derived",
+      "ref": "Whitney 1889 (numeral compounds); OCH-58 (the SHAPE statistic, measurable and measured); OCH-60 probe (function-blindness); ZalizniakOcherk_1978/compound_type_tagger.py",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The grammatical characterization (collectives neuter or feminine -ī, adjectival dvigus like pañcagu existing) is standard, but the 'большей частью / реже' proportions are exactly the compound-type statistic the programme has ruled untestable.",
       "mg_footnote": null

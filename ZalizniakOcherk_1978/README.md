@@ -55,8 +55,8 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
 Семя (OCH-1..OCH-6, Sonnet 5 `claude-sonnet-5`, [PR #196](https://github.com/gasyoun/SanskritGrammar/pull/196))
 и полный слив бэклога (OCH-7..OCH-74, Fable 5 `claude-fable-5`, H797 фаза 2) в один день:
 [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
-— **74 проверенных утверждения: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE ·
-7 частотных сносок М.Г.** (после инструментов H978, H1000, H1001 и H1004, см. ниже);
+— **74 проверенных утверждения: 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE ·
+7 частотных сносок М.Г.** (после инструментов H978, H1000, H1001, H1004 и H1008, см. ниже);
 [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims_harvest.yml)
 пуст (`candidates: []`). Планка «≥ 50» превышена; таблица —
 [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CLAIMS_VERIFIED.md).
@@ -147,6 +147,7 @@ python ZalizniakOcherk_1978/och22_token_weighted.py # строгая токен-
 python ZalizniakOcherk_1978/period_style_gradient.py # карта периодов + градиент §207 (H1000)
 python ZalizniakOcherk_1978/causative_grade_detector.py # детектор каузативов + градиент §167 (H1001)
 python ZalizniakOcherk_1978/compound_type_tagger.py # структурная разметка композитов + двигу §193 (H1004)
+python ZalizniakOcherk_1978/root_shape_parser.py # парсер структуры корня + шаблон §59 (H1008)
 npm run errata:print        # печатные листы опечаток (ERRATA_PRINT_SHEET.html) из errata.yml
 ```
 
@@ -160,7 +161,7 @@ npm run errata:print        # печатные листы опечаток (ERRA
 ### Что дальше
 
 Оставшиеся инструменты из списка UNTESTABLE (treebank → §§214-217; функциональная
-разметка композитов → OCH-60; парсер структуры корня → OCH-16);
+разметка композитов → OCH-60);
 закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_
