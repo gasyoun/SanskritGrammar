@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Приложение 7 — обогащение (2-й проход, H1006).** 750 подлинных корней MW сопоставлены
+  с корпусной частотой DCS ([`WhitneyRoots/crosswalk/roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv))
+  и межсловарным согласием ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv)):
+  покрытие **589/750** DCS (519 с частотой > 0), **681/750** оракул (до 9 словарей), 50 вне обоих.
+  Ключ — SLP1, омонимы агрегируются. Добавлены [`mw_genuine_roots_enriched.tsv`](revision-2026/mw_genuine_roots_enriched.tsv)
+  (750 строк + частота/ранг/периоды/словари), обогащённый печатный список
+  [`mw_genuine_roots_enriched_list.md`](revision-2026/mw_genuine_roots_enriched_list.md),
+  генератор [`mw_genuine_roots_enrich.py`](revision-2026/mw_genuine_roots_enrich.py) и
+  сводка покрытия [`mw_genuine_roots_enrich_provenance.json`](revision-2026/mw_genuine_roots_enrich_provenance.json).
+  Секция «Приложения издания 2026» дополнена сводкой покрытия, топ-корнями (√kṛ/as/dā/bhū/vac…)
+  и распределением по периодам аттестации. Ни одна цифра — не суждение издания.
 
 ## [0.8.0] - 2026-07-16
 ### Added

@@ -1,0 +1,756 @@
+# Подлинные корни словаря Монье-Уильямса — обогащённый список
+
+_Сгенерировано `mw_genuine_roots_enrich.py`: 750 подлинных корней MW (колонка `verb_type=genuineroot`), обогащённых корпусной частотой DCS (`WhitneyRoots/crosswalk/roots.csv`) и межсловарным согласием (`csl-orig/v02/etymology_stats/root_oracle.tsv`). Частота — сумма по омонимам DCS; словари — число независимых источников, подтверждающих формы корня. Прочерк = нет данных в источнике._
+
+_Легенда: **freq** — вхождений в корпусе DCS; **per.** — периоды аттестации (RV·AV·V·B·S·E·C); **слов.** — независимых словарей (макс. 9)._
+
+- ★ √*abhr* — кл. 1P *(слов. 2)*
+- ★ √*ac* — кл. 1P,1Ā *(per. RV|AV|V|B|S|E; слов. 2)*
+- ★ √*ad* — кл. 2P *(freq 699; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ag* — кл. 1P
+- ★ √*agh* — кл. 10P *(слов. 2)*
+- ★ √*ah* *(freq 9447; per. V; слов. 3)*
+- ★ √*ah* — кл. 5P *(freq 9447; per. V; слов. 3)*
+- ★ √*aj* — кл. 1P *(freq 55; per. RV|AV|V|B|S|C; слов. 7)*
+- ★ √*ak* — кл. 1P *(слов. 1)*
+- ★ √*akṣ* — кл. 1,5 *(freq 8; per. AV|V|B; слов. 5)*
+- ★ √*al* — кл. 1P *(слов. 3)*
+- ★ √*am* — кл. 0Ā *(freq 14; per. RV|AV|V|B|E; слов. 5)*
+- ★ √*amb* — кл. 1P,1Ā
+- ★ √*ambh*
+- ★ √*an* — кл. 2P *(freq 10; per. RV|AV|V|B; слов. 5)*
+- ★ √*and* — кл. 1P
+- ★ √*andh* — кл. 10P *(слов. 3)*
+- ★ √*ant* — кл. 1P *(слов. 3)*
+- ★ √*arb* — кл. 1P
+- ★ √*arc* — кл. 1P,1Ā *(freq 413; per. RV|AV|V|E|C; слов. 3)*
+- ★ √*ard* — кл. 6P,1P,7 *(слов. 4)*
+- ★ √*arh* — кл. 1P,1Ā *(freq 2380; per. V|S|E|C; слов. 4)*
+- ★ √*arj* — кл. 1P,1Ā *(слов. 3)*
+- ★ √*ark* *(слов. 2)*
+- ★ √*arth* — кл. 10Ā,1Ā *(слов. 5)*
+- ★ √*arv* — кл. 1P *(слов. 1)*
+- ★ √*as* — кл. 2P,2Ā *(freq 71506; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*as* — кл. 4P,4Ā *(freq 71506; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*at* — кл. 1P,1Ā *(freq 8; per. RV|V|B|C; слов. 4)*
+- ★ √*av* — кл. 1P *(freq 867; per. RV|V|B|S|C; слов. 3)*
+- ★ √*añc* — кл. 1P,1Ā,10P,10Ā *(слов. 4)*
+- ★ √*añj* — кл. 7P,7Ā *(freq 708; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*aś* — кл. 0Ā,0P *(freq 3896; per. RV|AV|V|B|S|E; слов. 6)*
+- ★ √*aś* *(freq 3896; per. RV|AV|V|B|S|E; слов. 6)*
+- ★ √*aḍ* — кл. 1P *(слов. 2)*
+- ★ √*aḍḍ* — кл. 1P
+- ★ √*aṃh* — кл. 1Ā,10P *(per. RV|V|B|S; слов. 2)*
+- ★ √*aṃh* *(per. RV|V|B|S; слов. 2)*
+- ★ √*aṃs* *(слов. 3)*
+- ★ √*aṃś* — кл. 10P,10Ā *(слов. 4)*
+- ★ √*aṅg* — кл. 1P,10P *(freq 4; слов. 4)*
+- ★ √*aṅgh* — кл. 1Ā
+- ★ √*aṅk* — кл. 1Ā,10P *(слов. 3)*
+- ★ √*aṅkh* — кл. 10P *(слов. 1)*
+- ★ √*aṇ* — кл. 1P,4Ā
+- ★ √*aṇṭh* — кл. 1Ā *(per. C)*
+- ★ √*aṣ* — кл. 1P,1Ā
+- ★ √*aṭ* — кл. 1P,1Ā *(freq 60; per. E|C; слов. 5)*
+- ★ √*aṭh* — кл. 1P,1Ā
+- ★ √*aṭṭ* — кл. 1Ā,10P *(слов. 3)*
+- ★ √*bandh* — кл. 9P,9Ā,1P,1Ā,4P,4Ā *(freq 2654; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*bhaj* — кл. 1P,1Ā *(freq 1164; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*bhakṣ* — кл. 10P,10Ā,1P,1Ā *(freq 162; per. V|B|S|E|C; слов. 5)*
+- ★ √*bhand* — кл. 1Ā *(freq 5; per. V|B|S; слов. 1)*
+- ★ √*bharts* — кл. 10Ā,10P,1 *(freq 6; per. AV|E; слов. 2)*
+- ★ √*bhas* — кл. 3P *(freq 25; per. RV|V|B|S|E|C; слов. 3)*
+- ★ √*bhañj* — кл. 7P,7Ā *(freq 754; per. RV|AV|V|S|E|C; слов. 3)*
+- ★ √*bhaṇ* — кл. 1P *(freq 73; per. C; слов. 2)*
+- ★ √*bhaṣ* — кл. 1P,1Ā *(freq 11; per. E|C; слов. 2)*
+- ★ √*bhid* — кл. 7P,7Ā,1P *(freq 2047; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*bhikṣ* — кл. 1Ā,1P *(freq 103; per. V|B|S|E|C; слов. 1)*
+- ★ √*bhrajj* — кл. 6P,6Ā *(слов. 2)*
+- ★ √*bhram* — кл. 1P,4P *(freq 592; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*bhraṃś* — кл. 1Ā,1P,4P,4Ā *(freq 340; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*bhreṣ* — кл. 1P,1Ā *(freq 4; per. B; слов. 1)*
+- ★ √*bhrāj* — кл. 1Ā,1P *(freq 219; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*bhrī* — кл. 9P *(freq 1; слов. 1)*
+- ★ √*bhuj* — кл. 6P *(freq 5450; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*bhuj* — кл. 7P,7Ā,6P,6Ā *(freq 5450; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*bhur* — кл. 0P,0Ā *(freq 3; per. RV|V; слов. 2)*
+- ★ √*bhā* — кл. 2P *(freq 741; per. V|B|S|E|C; слов. 9)*
+- ★ √*bhās* — кл. 1Ā,1P *(freq 112; per. RV|AV|B|E|C; слов. 7)*
+- ★ √*bhāṣ* — кл. 1Ā,1P *(freq 1532; per. B|S|E|C; слов. 6)*
+- ★ √*bhī* — кл. 3P,3Ā,1Ā,10P,10Ā *(freq 1384; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*bhū* — кл. 1P,1Ā *(freq 40393; per. RV|AV|V|B|S|E|C; слов. 9)*
+- ★ √*bhūṣ* — кл. 1P,1Ā *(freq 48; per. RV|V|E|C; слов. 6)*
+- ★ √*bhṛ* — кл. 1P,1Ā,3P,3Ā,2P,2Ā *(freq 1822; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*brū* — кл. 2P,2Ā *(freq 9781; per. AV|V|E; слов. 2)*
+- ★ √*budh* — кл. 1P,1Ā,4Ā,4P *(freq 1118; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*bādh* — кл. 1Ā,1P *(freq 456; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*bṛh* — кл. 6P *(per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*bṛh* — кл. 1P *(per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*cal* — кл. 1Ā *(freq 491; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*can* *(freq 2; per. RV|V|B; слов. 1)*
+- ★ √*car* — кл. 1Ā,1P *(freq 4027; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*carc* — кл. 1,10Ā *(per. S|E|C; слов. 4)*
+- ★ √*carv* — кл. 10,1 *(freq 151; per. S|C; слов. 4)*
+- ★ √*cañc* — кл. 1P *(freq 23; per. C; слов. 1)*
+- ★ √*caṭ* — кл. 1P *(freq 2; per. E|C; слов. 2)*
+- ★ √*chad* — кл. 1,10Ā *(freq 270; per. V|B|S|E|C; слов. 4)*
+- ★ √*chad* — кл. 10,1Ā *(freq 270; per. V|B|S|E|C; слов. 4)*
+- ★ √*chal* — кл. 10P *(слов. 2)*
+- ★ √*chid* — кл. 7,9Ā *(freq 2139; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*chṛd* — кл. 7P,7Ā,1Ā *(freq 15; per. B|S|C; слов. 1)*
+- ★ √*ci* — кл. 5Ā,5P *(freq 1526; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*ci* — кл. 3Ā,5Ā *(freq 1526; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*cit* — кл. 1,2Ā,3Ā,3P *(freq 266; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*cumb* — кл. 1Ā *(freq 71; per. E|C; слов. 3)*
+- ★ √*cūrṇ* — кл. 10 *(слов. 4)*
+- ★ √*cūṣ* — кл. 1 *(freq 22; per. E|C; слов. 4)*
+- ★ √*dah* — кл. 1P,1Ā *(freq 2275; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*dakṣ* — кл. 1P,1Ā *(freq 8; per. RV|V|B; слов. 4)*
+- ★ √*dal* — кл. 1 *(freq 27; per. B|E|C; слов. 6)*
+- ★ √*dam* — кл. 4P,9Ā *(freq 342; per. RV|V|B|S|E; слов. 6)*
+- ★ √*dham* — кл. 1P,1Ā *(freq 1162; per. RV|AV|V|B|E|C; слов. 3)*
+- ★ √*dhan* — кл. 3P *(freq 2; per. RV; слов. 2)*
+- ★ √*dhanv* — кл. 1P,1Ā *(freq 47; per. RV|V|B; слов. 2)*
+- ★ √*dhav* — кл. 1Ā *(freq 3; per. RV; слов. 1)*
+- ★ √*dhe* — кл. 1P *(слов. 1)*
+- ★ √*dhi* — кл. 6P *(freq 31; per. B; слов. 5)*
+- ★ √*dhiṣ* — кл. 3P
+- ★ √*dhvan* — кл. 1P *(freq 32; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*dhvaṃs* — кл. 1P,1Ā *(freq 130; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*dhvṛ* — кл. 1P,1Ā *(freq 12; per. RV|AV|E|C; слов. 1)*
+- ★ √*dhyai* — кл. 1P,2 *(слов. 6)*
+- ★ √*dhā* — кл. 3P,3Ā,1P,1Ā,2P,4Ā,4P *(freq 9388; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*dhāv* — кл. 1P,1Ā *(freq 1164; per. RV|V|B|E|C; слов. 5)*
+- ★ √*dhāv* — кл. 1P,1Ā *(freq 1164; per. RV|V|B|E|C; слов. 5)*
+- ★ √*dhī* — кл. 3Ā *(freq 52; per. RV|V|B; слов. 2)*
+- ★ √*dhū* — кл. 5P,5Ā,6P,9P,9Ā,1P,2Ā *(freq 245; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*dhṛ* — кл. 1P,1Ā *(freq 1229; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*dhṛṣ* — кл. 5P,1P *(freq 133; per. RV|AV|V|B|E|C; слов. 6)*
+- ★ √*dih* — кл. 2P,2Ā *(freq 185; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*div* — кл. 4 *(freq 110; per. RV|V; слов. 6)*
+- ★ √*diś* — кл. 3P,6 *(freq 186; per. RV|AV|V|B|S|E|C; слов. 9)*
+- ★ √*dru* — кл. 1P,1Ā *(freq 1073; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*druh* — кл. 4P,4Ā *(freq 70; per. RV|AV|V|B|E|C; слов. 3)*
+- ★ √*drā* — кл. 2P,2Ā *(freq 42; per. AV|V|B|E|C; слов. 5)*
+- ★ √*duh* — кл. 2P,2Ā,6P,6Ā,4Ā *(freq 806; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*duṣ* — кл. 4P *(freq 829; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*dviṣ* — кл. 2P,2Ā *(freq 1343; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*dyut* — кл. 1Ā,1P *(freq 75; per. RV|AV|V|B|E|C; слов. 6)*
+- ★ √*dā* — кл. 3Ā,1Ā *(freq 48032; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*dā* — кл. 4P *(freq 48032; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*dāś* — кл. 1P,1Ā,2,5P *(freq 290; per. RV|AV|V|B; слов. 3)*
+- ★ √*dīp* — кл. 4Ā *(freq 1162; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*dṛp* — кл. 4P *(freq 106; per. RV|V|E|C; слов. 6)*
+- ★ √*dṛś* — кл. 0P,0Ā *(freq 14866; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*dṛṃh* — кл. 1P,1Ā,4P,4Ā *(слов. 1)*
+- ★ √*dṝ* — кл. 9P,2P,2Ā *(слов. 5)*
+- ★ √*edh* — кл. 1Ā,1P *(freq 172; per. AV|V|B|S|E|C; слов. 3)*
+- ★ √*ej* — кл. 1P,1Ā *(freq 85; per. RV|AV|V; слов. 2)*
+- ★ √*eṣ* — кл. 1P,1Ā *(слов. 4)*
+- ★ √*eṭh* — кл. 1Ā
+- ★ √*gad* — кл. 1P,10P *(freq 466; per. AV|V|B|S|E|C; слов. 3)*
+- ★ √*gai* — кл. 1P,1Ā,2,3P *(слов. 6)*
+- ★ √*gal* — кл. 1P,1Ā *(freq 212; per. E|C; слов. 6)*
+- ★ √*gam* — кл. 1P,2P,3P,1Ā *(freq 18341; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*gard* — кл. 1P,10 *(freq 1)*
+- ★ √*garh* — кл. 1,10P,10Ā *(freq 185; per. RV|S|E; слов. 2)*
+- ★ √*garj* — кл. 1P *(freq 179; per. E|C; слов. 6)*
+- ★ √*gaṇ* — кл. 10P,10Ā *(слов. 6)*
+- ★ √*ghas* — кл. 1 *(freq 73; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*ghaṭ* — кл. 1Ā,1P *(freq 119; per. RV|AV|E|C; слов. 3)*
+- ★ √*ghaṭṭ* — кл. 1Ā,10P *(freq 2; per. E|C; слов. 4)*
+- ★ √*ghrā* — кл. 1,3P,3Ā,2P *(freq 130; per. AV|V|B|S|E|C; слов. 8)*
+- ★ √*ghuṣ* — кл. 1P,1Ā *(freq 30; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*ghūrṇ* — кл. 1P,1Ā *(freq 53; per. S|E|C; слов. 4)*
+- ★ √*ghṛ* — кл. 3P,1,10P *(freq 25; per. RV|AV|V|B|S; слов. 6)*
+- ★ √*ghṛṣ* — кл. 1P,1Ā *(freq 156; per. RV|S|E|C; слов. 3)*
+- ★ √*glah* — кл. 1Ā,1P *(freq 9; per. AV; слов. 1)*
+- ★ √*glai* — кл. 1P,1Ā,2P,2Ā *(слов. 6)*
+- ★ √*grah* — кл. 9P,9Ā *(слов. 8)*
+- ★ √*gras* — кл. 1P,1Ā *(freq 519; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*grath* — кл. 9P,1P,1Ā *(per. RV|V|B|S|E|C; слов. 2)*
+- ★ √*gu* — кл. 1Ā,1P *(per. RV|V; слов. 3)*
+- ★ √*gudh* — кл. 4P,9P,1Ā *(слов. 1)*
+- ★ √*guh* — кл. 1P,1Ā *(freq 468; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*gumph* — кл. 6P *(слов. 1)*
+- ★ √*guñj* — кл. 1P *(freq 13; per. C; слов. 3)*
+- ★ √*gā* — кл. 3P,3Ā,2P,2Ā *(freq 3822; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*gāh* — кл. 1Ā,1P *(freq 69; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*gūrdh* — кл. 10P
+- ★ √*gṛdh* — кл. 4P,4Ā *(freq 61; per. RV|AV|V|B|E|C; слов. 1)*
+- ★ √*gṝ* — кл. 9P,9Ā *(слов. 6)*
+- ★ √*gṝ* — кл. 6P,6Ā *(слов. 6)*
+- ★ √*had* — кл. 1P,1Ā *(per. E|C; слов. 1)*
+- ★ √*han* — кл. 2P,2Ā,1 *(freq 8744; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*hary* — кл. 1P,1Ā *(слов. 3)*
+- ★ √*has* — кл. 1P *(freq 419; per. RV|AV|V|B|E|C; слов. 8)*
+- ★ √*heṣ* — кл. 1Ā *(freq 26; per. RV|V|E|C; слов. 2)*
+- ★ √*hi* — кл. 5P,5Ā *(freq 224; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*hiṃs* — кл. 1,7P,7Ā,10P *(freq 788; per. AV|V|B|S|E; слов. 2)*
+- ★ √*hlag* — кл. 1Ā
+- ★ √*hlād* — кл. 1Ā *(freq 3; per. V|B|E|C; слов. 4)*
+- ★ √*hnu* — кл. 2Ā *(freq 6; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*hras* — кл. 1P,1Ā *(freq 28; per. B|S|C; слов. 2)*
+- ★ √*hreṣ* — кл. 1Ā,1P *(freq 2; per. E)*
+- ★ √*hrād* — кл. 1Ā *(per. B|S|E; слов. 5)*
+- ★ √*hrī* — кл. 3P *(freq 28; per. RV|B|E|C; слов. 4)*
+- ★ √*hu* — кл. 3P,3Ā *(freq 6418; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*hval* — кл. 1P *(freq 13; per. S|E|C; слов. 2)*
+- ★ √*hve* — кл. 1P,1Ā *(слов. 3)*
+- ★ √*hvṛ* — кл. 1P,1Ā *(freq 48; per. RV|V|B|C; слов. 3)*
+- ★ √*hā* — кл. 3Ā *(freq 5478; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*hā* — кл. 3P,1 *(freq 5478; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*hīḍ* — кл. 0P,0Ā *(freq 29; per. RV|AV|V|B|E|C; слов. 1)*
+- ★ √*hṛ* — кл. 1P,1Ā *(freq 5584; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*hṛ* — кл. 9Ā *(freq 5584; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*hṛṣ* — кл. 1P,1Ā,4P *(freq 1147; per. RV|AV|V|B|E|C; слов. 3)*
+- ★ √*i* — кл. 2P,2Ā *(freq 7346; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ikh* — кл. 1P *(слов. 1)*
+- ★ √*il* — кл. 6P,10P *(per. AV|B|S; слов. 2)*
+- ★ √*ind* — кл. 1P
+- ★ √*indh* — кл. 7Ā *(слов. 7)*
+- ★ √*inv* — кл. 6P,8P,9P,9Ā *(слов. 3)*
+- ★ √*ir* — кл. 6P *(слов. 1)*
+- ★ √*iṅg* — кл. 1P,1Ā *(freq 15; per. V|S|E|C; слов. 3)*
+- ★ √*iṅkh* — кл. 1P *(слов. 1)*
+- ★ √*iṣ* — кл. 1P,1Ā,4P,4Ā *(freq 9684; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*iṣ* — кл. 6P,6Ā *(freq 9684; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*iṣūya* — кл. 0P
+- ★ √*iṭ* — кл. 1P *(per. RV)*
+- ★ √*jakṣ* — кл. 2Ā *(freq 228; per. RV|AV|V|B|C; слов. 3)*
+- ★ √*jan* — кл. 1,10Ā,10P,3Ā,10,4,2Ā,1Ā *(freq 9247; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*jap* — кл. 1Ā *(freq 1702; per. B|S|E|C; слов. 5)*
+- ★ √*ji* — кл. 1Ā,9Ā *(freq 8164; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*jinv* — кл. 1P,1Ā *(слов. 2)*
+- ★ √*jur* — кл. 4,6P,6Ā *(слов. 2)*
+- ★ √*juṣ* — кл. 6Ā,6P,3P,1P,1Ā *(freq 1226; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*jval* — кл. 1P,1Ā *(freq 827; per. B|S|E|C; слов. 3)*
+- ★ √*jvar* — кл. 1 *(freq 8; per. RV|AV|C; слов. 7)*
+- ★ √*jyā* — кл. 9P,4Ā *(freq 93; per. RV|AV|V|B|S|E; слов. 2)*
+- ★ √*jñā* — кл. 9P,9Ā,3Ā,3P *(freq 5041; per. RV|AV|V|B|E|C; слов. 7)*
+- ★ √*jāgṛ* — кл. 2,1Ā *(слов. 6)*
+- ★ √*jīv* — кл. 1Ā *(freq 2222; per. AV|V|B|S|E|C; слов. 8)*
+- ★ √*jṛ* — кл. 1Ā *(freq 2828; per. RV|AV|V|B|S|C; слов. 2)*
+- ★ √*jṝ* — кл. 1P,4P,4Ā,1Ā,9,10Ā *(слов. 6)*
+- ★ √*kab* — кл. 1Ā
+- ★ √*kac* — кл. 1P,1Ā *(слов. 5)*
+- ★ √*kad* — кл. 1Ā *(per. E; слов. 4)*
+- ★ √*kag* — кл. 1P
+- ★ √*kaj* — кл. 1P
+- ★ √*kak* — кл. 1Ā
+- ★ √*kakh* — кл. 1P
+- ★ √*kal* — кл. 10P,10Ā *(freq 1; per. B|S|E|C; слов. 5)*
+- ★ √*kal* — кл. 0P,0Ā *(freq 1; per. B|S|E|C; слов. 5)*
+- ★ √*kam* — кл. 1Ā,1P *(freq 82; per. AV|V|B|S|E|C; слов. 6)*
+- ★ √*kamb* — кл. 1P *(слов. 1)*
+- ★ √*kamp* — кл. 1Ā,1P *(freq 237; per. RV|V|B|S|E|C; слов. 3)*
+- ★ √*kan* — кл. 1P,1Ā *(freq 56; per. RV|V|B|E; слов. 3)*
+- ★ √*kand* — кл. 1P,1Ā
+- ★ √*karj* — кл. 1P
+- ★ √*karṇ* — кл. 10P *(слов. 4)*
+- ★ √*kas* — кл. 1P *(per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*kath* — кл. 10P,10Ā *(freq 57; per. C; слов. 3)*
+- ★ √*katr* — кл. 10P
+- ★ √*katth* — кл. 1Ā *(freq 28; per. E|C; слов. 3)*
+- ★ √*kañc* — кл. 1Ā *(слов. 1)*
+- ★ √*kaḍ* — кл. 1P,6P *(слов. 2)*
+- ★ √*kaḍḍ* — кл. 1P
+- ★ √*kaṃs* — кл. 2Ā
+- ★ √*kaṅk* — кл. 1Ā
+- ★ √*kaṇ* — кл. 1P,10P *(слов. 2)*
+- ★ √*kaṇḍ* — кл. 1P,1Ā,10P
+- ★ √*kaṇṭ* — кл. 1P
+- ★ √*kaṇṭh* — кл. 1P,1Ā,10P
+- ★ √*kaṣ* — кл. 1P,1Ā *(freq 10; per. AV|B|S|E|C; слов. 4)*
+- ★ √*kaṭ* — кл. 1P *(слов. 3)*
+- ★ √*kaṭ* — кл. 1P *(слов. 3)*
+- ★ √*kaṭh* — кл. 1P *(слов. 1)*
+- ★ √*kaṭṭ* — кл. 10P
+- ★ √*khac* — кл. 1P,9P,10P *(freq 18; per. E; слов. 1)*
+- ★ √*khai* — кл. 1P *(слов. 2)*
+- ★ √*khall* — кл. 1Ā *(per. C)*
+- ★ √*khan* — кл. 1P,1Ā *(freq 352; per. AV|V|B|S|E|C; слов. 5)*
+- ★ √*kharj* — кл. 1P *(freq 1; per. V|B; слов. 2)*
+- ★ √*khañj* — кл. 1P *(freq 5; per. C; слов. 1)*
+- ★ √*khaṇḍ* — кл. 1Ā,10P *(слов. 1)*
+- ★ √*khid* — кл. 6,7Ā,4Ā,4P *(freq 141; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*khud* — кл. 6P *(freq 1; per. AV|S; слов. 1)*
+- ★ √*khād* — кл. 1P,1Ā *(freq 369; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*klam* — кл. 1,4 *(freq 90; per. E|C; слов. 3)*
+- ★ √*kland* — кл. 1P,1Ā
+- ★ √*klath* — кл. 1P
+- ★ √*klid* — кл. 4Ā,4P *(freq 125; per. AV|S|E|C; слов. 5)*
+- ★ √*kram* — кл. 1P,1Ā,4P,4Ā *(freq 414; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*krand* — кл. 1P,1Ā *(freq 183; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*krath* — кл. 1P *(per. E|C; слов. 1)*
+- ★ √*krudh* — кл. 4P,4Ā *(freq 1659; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*kruś* — кл. 1P,1Ā *(freq 238; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*krī* — кл. 9P,9Ā *(freq 439; per. AV|V|B|S|E; слов. 7)*
+- ★ √*krīḍ* — кл. 1P,1Ā *(freq 494; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*kuc* — кл. 1P,6P *(per. E|C; слов. 5)*
+- ★ √*kup* — кл. 4P,4Ā *(freq 521; per. RV|AV|B|S|E|C; слов. 6)*
+- ★ √*kuth* — кл. 4P *(per. B|C; слов. 3)*
+- ★ √*kuts* — кл. 10P,10Ā,1P,4P *(слов. 4)*
+- ★ √*kuñc* — кл. 1P *(слов. 3)*
+- ★ √*kuñj* — кл. 1P
+- ★ √*kuṣ* — кл. 9P,6 *(freq 5; per. S|C; слов. 4)*
+- ★ √*kuṭ* — кл. 6P,4P,10Ā *(слов. 5)*
+- ★ √*kuṭṭ* — кл. 10 *(freq 4; per. E|C; слов. 2)*
+- ★ √*kvath* — кл. 1Ā *(freq 91; per. B|S|E|C; слов. 4)*
+- ★ √*kvaṇ* — кл. 1P *(freq 28; per. C; слов. 4)*
+- ★ √*kās* — кл. 1Ā,1P *(freq 10; per. AV|C; слов. 2)*
+- ★ √*kāś* — кл. 1Ā,4P,4Ā *(freq 45; per. AV|V|B|E|C; слов. 5)*
+- ★ √*kāṅkṣ* — кл. 1P,1Ā *(freq 202; per. B|E|C; слов. 3)*
+- ★ √*kīrt* — кл. 10P,10Ā *(слов. 1)*
+- ★ √*kūj* — кл. 1P *(freq 101; per. AV|E; слов. 4)*
+- ★ √*kūrd* — кл. 1P,1Ā *(freq 4; per. S|E|C; слов. 2)*
+- ★ √*kūḍ* — кл. 10P *(per. S|C; слов. 1)*
+- ★ √*kūṇ* — кл. 1P,1Ā *(слов. 2)*
+- ★ √*kṛ* — кл. 2P,2Ā,1P,1Ā,5P,5Ā,8P,8Ā *(freq 122397; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṛ* — кл. 3P,3Ā *(freq 122397; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṛp* — кл. 6Ā,10P *(freq 14; per. RV|AV|V|E; слов. 3)*
+- ★ √*kṛt* — кл. 6P,6Ā,1P *(freq 440; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṛt* — кл. 7P *(freq 440; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṛś* — кл. 4P *(freq 8; per. V|C; слов. 4)*
+- ★ √*kṛṣ* — кл. 1P,1Ā,6P,6Ā *(freq 360; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*kṝ* — кл. 6P,6Ā *(слов. 7)*
+- ★ √*kṣad* — кл. 1Ā *(freq 7; per. RV|V; слов. 1)*
+- ★ √*kṣai* — кл. 1P *(слов. 6)*
+- ★ √*kṣal* — кл. 10P *(per. B|S|E|C; слов. 6)*
+- ★ √*kṣam* — кл. 1Ā,1P,2P,4P,4Ā *(freq 439; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*kṣap* — кл. 1P,1Ā *(freq 16; per. V|E; слов. 4)*
+- ★ √*kṣar* — кл. 1P,1Ā,2P *(freq 220; per. V|B|C; слов. 7)*
+- ★ √*kṣi* — кл. 1P *(freq 2362; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṣi* — кл. 2,6P *(freq 2362; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṣi* — кл. 1P,5P,9P,9Ā *(freq 2362; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*kṣip* — кл. 6P,6Ā,4P,4Ā *(freq 2461; per. RV|V|B|S|E|C; слов. 6)*
+- ★ √*kṣu* — кл. 2P *(freq 20; per. AV|B|E|C; слов. 4)*
+- ★ √*kṣubh* — кл. 1Ā,4P,4Ā,5P,9P,9Ā *(freq 236; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*kṣud* — кл. 1P,1Ā,7P,7Ā *(freq 60; per. RV|V|B|E; слов. 4)*
+- ★ √*kṣudh* — кл. 4P *(freq 98; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*kṣup* — кл. 6P *(per. RV|E; слов. 1)*
+- ★ √*kṣvel* — кл. 1P *(per. E|C; слов. 1)*
+- ★ √*kṣṇu* — кл. 2P *(freq 9; per. RV|B|S; слов. 4)*
+- ★ √*labh* — кл. 1Ā *(freq 3345; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*lag* — кл. 1P,10 *(freq 236; per. E|C; слов. 3)*
+- ★ √*lajj* — кл. 6Ā *(freq 109; per. E|C; слов. 2)*
+- ★ √*lakṣ* — кл. 1Ā,1P,10P,10Ā *(freq 39; per. V|B|S|E|C; слов. 5)*
+- ★ √*lal* — кл. 1P,1Ā *(freq 101; per. E|C; слов. 5)*
+- ★ √*lamb* — кл. 1Ā *(freq 130; per. B|E|C; слов. 4)*
+- ★ √*lap* — кл. 1P *(freq 26; per. AV|B|E|C; слов. 7)*
+- ★ √*las* — кл. 1P,10 *(freq 59; per. B|E|C; слов. 4)*
+- ★ √*laṅgh* — кл. 1P,1Ā,10P *(freq 32; per. S|E|C; слов. 3)*
+- ★ √*laṣ* — кл. 1,4P,4Ā,10P *(per. E|C; слов. 5)*
+- ★ √*lih* — кл. 2P,2Ā *(freq 405; per. B|S|E|C; слов. 6)*
+- ★ √*likh* — кл. 6P,6Ā *(freq 509; per. AV|B|S|E|C; слов. 8)*
+- ★ √*lip* — кл. 6,1P,1Ā *(freq 778; per. AV|B|S|E|C; слов. 6)*
+- ★ √*liś* — кл. 4Ā,6P *(freq 7; per. V|B|E; слов. 3)*
+- ★ √*loc* — кл. 1Ā,10P *(per. E|C; слов. 4)*
+- ★ √*lok* — кл. 1Ā,10 *(per. S|E|C; слов. 5)*
+- ★ √*lubh* — кл. 6P,4P *(freq 325; per. AV|V|B|S|E|C; слов. 6)*
+- ★ √*lul* — кл. 1P,1Ā *(freq 42; per. E|C; слов. 1)*
+- ★ √*lup* — кл. 6P,6Ā,4P,4Ā *(freq 117; per. AV|B|S|E|C; слов. 3)*
+- ★ √*luñc* — кл. 1P *(freq 11; per. E|C; слов. 2)*
+- ★ √*luḍ* — кл. 1P,6P *(freq 1; per. S|E|C; слов. 3)*
+- ★ √*luṇṭ* — кл. 1P,10P *(слов. 2)*
+- ★ √*luṭ* — кл. 1,4P,1Ā,10P *(слов. 2)*
+- ★ √*luṭh* — кл. 1P,1Ā,10P *(freq 52; per. C; слов. 3)*
+- ★ √*luṭh* — кл. 6P *(freq 52; per. C; слов. 3)*
+- ★ √*lā* — кл. 2P *(слов. 2)*
+- ★ √*lāñch* — кл. 1P *(per. C; слов. 1)*
+- ★ √*lī* — кл. 9P,1P,4Ā,4P *(freq 536; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*lū* — кл. 9P,9Ā *(freq 81; per. B|S|C; слов. 7)*
+- ★ √*mad* — кл. 4P,1P,1Ā,3P,3Ā *(freq 1085; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*mah* — кл. 1,10P,10Ā *(freq 60; слов. 2)*
+- ★ √*majj* — кл. 6P *(freq 343; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*makamakāya* — кл. 0Ā
+- ★ √*man* — кл. 8,4Ā *(freq 4697; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*mand* — кл. 1Ā,1P *(слов. 2)*
+- ★ √*mand* *(слов. 2)*
+- ★ √*math* — кл. 1,9P,9Ā *(freq 475; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*maṃh* — кл. 1Ā,10 *(per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*maṇḍ* — кл. 1P,1Ā *(per. E|C; слов. 2)*
+- ★ √*mi* — кл. 5P,5Ā *(freq 99; слов. 3)*
+- ★ √*mid* — кл. 1Ā,4P,10P *(слов. 2)*
+- ★ √*mih* — кл. 1P,1Ā *(freq 70; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*mil* — кл. 6P,6Ā *(freq 346; per. B|C; слов. 3)*
+- ★ √*mith* — кл. 1P,1Ā *(freq 6; per. RV|V|B|S; слов. 3)*
+- ★ √*miṣ* — кл. 6P *(freq 83; per. RV|V|B|C; слов. 5)*
+- ★ √*mlai* — кл. 1P *(слов. 3)*
+- ★ √*mlech* — кл. 1P,10P *(freq 2; per. B; слов. 1)*
+- ★ √*mluc* — кл. 1P *(слов. 2)*
+- ★ √*mnā* — кл. 1P *(freq 2; per. S|C; слов. 7)*
+- ★ √*mokṣ* — кл. 1Ā,10P,10Ā *(freq 3; слов. 4)*
+- ★ √*mrad* — кл. 1Ā *(freq 1; слов. 2)*
+- ★ √*mrakṣ* — кл. 1P,10 *(слов. 6)*
+- ★ √*mruc* — кл. 1P *(freq 3; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*muc* — кл. 6P,6Ā *(freq 3850; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*mud* — кл. 1Ā,1P *(freq 612; per. AV|V|B|E|C; слов. 5)*
+- ★ √*muh* — кл. 4P,4Ā *(freq 1103; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*murch* — кл. 1P *(слов. 1)*
+- ★ √*muṣ* — кл. 9,1P,6P *(freq 162; per. RV|V|B|S|E|C; слов. 3)*
+- ★ √*myakṣ* — кл. 1P *(freq 13; per. RV; слов. 3)*
+- ★ √*mā* — кл. 3P,3Ā *(freq 2040; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*mā* — кл. 2P,3Ā,4Ā *(freq 2040; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*mārg* — кл. 1,10P,10Ā *(freq 94; per. E; слов. 3)*
+- ★ √*mī* — кл. 9P,9Ā *(freq 103; per. RV|AV|V|B|E|C; слов. 8)*
+- ★ √*mīl* — кл. 1P,1Ā *(freq 6; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*mīv* — кл. 1P *(per. AV|V|B|S; слов. 2)*
+- ★ √*mṛ* — кл. 6Ā,6P,1P,1Ā *(freq 5230; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*mṛd* — кл. 9P,1P,1Ā *(freq 692; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*mṛdh* — кл. 1P,1Ā,6P,6Ā *(freq 22; per. RV|V|B|S)*
+- ★ √*mṛg* — кл. 4P,10Ā,10P *(слов. 4)*
+- ★ √*mṛj* — кл. 2P,2Ā,6P,6Ā,1P,1Ā,10 *(freq 298; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*mṛś* — кл. 6P,6Ā *(freq 33; per. RV|AV|V|B|E|C; слов. 3)*
+- ★ √*mṛḍ* — кл. 6P,6Ā,9P,10 *(freq 131; per. RV|AV|V|B|S|C; слов. 1)*
+- ★ √*mṛṣ* — кл. 4P,4Ā,1P,1Ā,10 *(freq 150; per. RV|V|S|E|C; слов. 2)*
+- ★ √*nabh* — кл. 1Ā,1P,4,9P,9Ā *(freq 40; per. RV|V|B|S; слов. 2)*
+- ★ √*nad* — кл. 1P *(freq 460; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*nah* — кл. 4P,4Ā *(freq 131; per. AV|V|B|S|E|C; слов. 5)*
+- ★ √*nakṣ* — кл. 1P,1Ā *(freq 57; per. RV|V; слов. 2)*
+- ★ √*nam* — кл. 1P,1Ā *(freq 666; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*nand* — кл. 1P *(freq 129; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*nard* — кл. 1P *(freq 116; per. B|S|E|C; слов. 6)*
+- ★ √*naś* — кл. 1P,1Ā *(freq 2836; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*naś* — кл. 4P,1P *(freq 2836; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*naṭ* — кл. 1P *(freq 6; per. E|C; слов. 4)*
+- ★ √*nij* — кл. 2Ā,3P,3Ā *(freq 21; per. AV|V|B|S|E|C; слов. 2)*
+- ★ √*nind* — кл. 1P *(freq 649; per. RV|AV|V|S|E|C; слов. 3)*
+- ★ √*nu* — кл. 2,6P,6Ā *(freq 2; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*nud* — кл. 6P,6Ā *(freq 332; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*nāth* — кл. 1Ā *(freq 52; per. RV|V|B|E|C; слов. 3)*
+- ★ √*nī* — кл. 1P,1Ā *(freq 2350; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*nṛt* — кл. 4P *(freq 353; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*oj* — кл. 1,10P
+- ★ √*okh* — кл. 1P
+- ★ √*olaṇḍ* — кл. 1,8,10P
+- ★ √*oṇ* — кл. 1P *(слов. 1)*
+- ★ √*pac* — кл. 1P,1Ā,4Ā *(freq 2058; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*pad* — кл. 4Ā *(freq 134; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*paj* — кл. 0Ā *(per. V|B|S; слов. 1)*
+- ★ √*pan* — кл. 1Ā *(freq 8; per. RV|V|B|S; слов. 2)*
+- ★ √*pat* — кл. 1P,1Ā *(freq 6246; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*paś* — кл. 0P,0Ā *(freq 9464; per. RV|AV|V|B|C; слов. 3)*
+- ★ √*paṇ* — кл. 1Ā *(freq 36; per. AV|V|B|E|C; слов. 8)*
+- ★ √*paṭ* — кл. 1P,10 *(per. B|E|C; слов. 7)*
+- ★ √*paṭh* — кл. 1P *(freq 582; per. S|E|C; слов. 5)*
+- ★ √*phaṇ* — кл. 1P *(per. RV|V|B; слов. 2)*
+- ★ √*pich* — кл. 10P,6P
+- ★ √*piñj* — кл. 2Ā,10P
+- ★ √*piś* — кл. 6P,6Ā *(freq 36; per. RV|AV|V|B; слов. 3)*
+- ★ √*piṣ* — кл. 7P,7Ā *(freq 1062; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*plu* — кл. 1Ā,1P *(freq 297; per. AV|V|B|S|E|C; слов. 7)*
+- ★ √*pluṣ* — кл. 1,4P,9P *(freq 21; per. V|B|E|C; слов. 1)*
+- ★ √*prach* — кл. 6P,6Ā *(freq 2851; per. RV|AV|V|B|E|C; слов. 2)*
+- ★ √*prath* — кл. 1Ā,1P *(freq 365; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*pru* — кл. 1Ā *(per. RV|V|B; слов. 2)*
+- ★ √*pruth* — кл. 1P,1Ā *(freq 7; per. RV|V|B; слов. 2)*
+- ★ √*pruṣ* — кл. 5P,5Ā,10P,10Ā,9P,4P *(freq 7; per. RV|AV|V|B; слов. 2)*
+- ★ √*prā* — кл. 2P,2Ā *(freq 40; per. RV|AV|V|B|S; слов. 3)*
+- ★ √*prī* — кл. 9P,9Ā,4Ā,4P *(freq 1770; per. RV|V|B|S|E|C; слов. 6)*
+- ★ √*psā* — кл. 2P *(freq 6; per. AV|B|C; слов. 4)*
+- ★ √*puth* — кл. 4P,4Ā *(per. E; слов. 2)*
+- ★ √*puṣ* — кл. 1P,4P,9P *(freq 438; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*puṭ* — кл. 6P,1P,10P *(freq 418; per. B|C; слов. 4)*
+- ★ √*pyai* — кл. 1Ā *(слов. 1)*
+- ★ √*pā* — кл. 1P,1Ā,2Ā,2P *(freq 16179; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*pā* — кл. 2P,2Ā *(freq 16179; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*pāy* — кл. 1Ā *(per. B)*
+- ★ √*pī* — кл. 1Ā,2Ā,3P,3Ā *(freq 14; слов. 2)*
+- ★ √*pīy* — кл. 1P *(per. RV|AV|V|B; слов. 2)*
+- ★ √*pīḍ* — кл. 10P *(freq 2; per. AV|B|S|E|C; слов. 5)*
+- ★ √*pū* — кл. 9P,9Ā,1Ā,1P *(freq 2162; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*pūj* — кл. 10P,10Ā,1P *(per. RV|S|E|C; слов. 6)*
+- ★ √*pūy* — кл. 1P,1Ā *(freq 10; per. AV|B|S; слов. 1)*
+- ★ √*pṛ* — кл. 3P,9P *(freq 4536; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*pṛc* — кл. 7P,7Ā,2,1P,3P,3Ā *(freq 133; per. RV|AV|V|B|S|E; слов. 3)*
+- ★ √*pṝ* — кл. 9P,6P,3P,3Ā *(слов. 7)*
+- ★ √*rabh* — кл. 1Ā *(freq 67; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*rac* — кл. 10P *(freq 1; per. E|C; слов. 2)*
+- ★ √*rad* — кл. 1P,1Ā *(freq 34; per. RV|AV|V|B|C; слов. 3)*
+- ★ √*radh* — кл. 4P *(freq 45; per. RV|AV|V|C; слов. 2)*
+- ★ √*rah* — кл. 1P,10P *(freq 15; per. RV|B|S|E|C; слов. 3)*
+- ★ √*rakṣ* — кл. 1P,1Ā *(freq 1929; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ram* — кл. 1Ā,1P *(freq 1553; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*rap* — кл. 1P *(freq 11; per. RV|AV|V; слов. 3)*
+- ★ √*raph* — кл. 1P
+- ★ √*rapś* *(freq 5; per. RV|V|B; слов. 2)*
+- ★ √*ras* — кл. 1P,1Ā *(freq 51; per. B|E|C; слов. 4)*
+- ★ √*ras* — кл. 10P,10Ā *(freq 51; per. B|E|C; слов. 4)*
+- ★ √*rañj* — кл. 1,4P,4Ā *(слов. 5)*
+- ★ √*raṃh* — кл. 1P,1Ā,10P *(freq 11; per. RV|AV|V|B|E|C)*
+- ★ √*raṇ* — кл. 1,4P *(слов. 3)*
+- ★ √*raṇ* — кл. 1P *(слов. 3)*
+- ★ √*raṭ* — кл. 1P *(freq 10; per. E|C; слов. 4)*
+- ★ √*rej* — кл. 1P,1Ā *(freq 40; per. V; слов. 2)*
+- ★ √*ribh* — кл. 1P,1Ā *(freq 26; per. V|B|C; слов. 2)*
+- ★ √*ric* — кл. 7P,7Ā,1P,4Ā,10 *(freq 206; per. RV|V|B|E|C; слов. 4)*
+- ★ √*rih* — кл. 6,2P,2Ā *(freq 47; per. RV|AV|V|B; слов. 2)*
+- ★ √*rikh* — кл. 1P,6P *(per. E; слов. 2)*
+- ★ √*rip* *(freq 3; per. V; слов. 2)*
+- ★ √*riph* — кл. 6P *(freq 1; per. AV|B|S; слов. 2)*
+- ★ √*riś* — кл. 6P *(freq 2; per. AV|V; слов. 2)*
+- ★ √*riṅg* — кл. 1P *(слов. 1)*
+- ★ √*riṅkh* — кл. 1P *(слов. 1)*
+- ★ √*riṣ* — кл. 1,4P *(freq 257; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*ru* — кл. 2P *(freq 172; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*ru* — кл. 1Ā *(freq 172; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*ruc* — кл. 1Ā,1P *(freq 501; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*rud* — кл. 2P *(freq 669; per. AV|V|B|S|E|C; слов. 5)*
+- ★ √*rudh* — кл. 1P *(freq 1784; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*rudh* — кл. 7P,7Ā *(freq 1784; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ruh* — кл. 1P *(freq 487; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*ruj* — кл. 6P,10 *(freq 129; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*rup* — кл. 4P *(freq 6; per. RV|AV; слов. 1)*
+- ★ √*ruś* — кл. 6P
+- ★ √*ruṣ* — кл. 1,4P,4,10 *(freq 102; per. RV|AV|S|E|C; слов. 2)*
+- ★ √*ruṭh* — кл. 1P,1Ā
+- ★ √*rā* — кл. 2P,2Ā *(freq 428; per. RV|AV|V|B|S|C; слов. 7)*
+- ★ √*rādh* — кл. 5,4P *(freq 240; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*rāj* — кл. 1P,1Ā *(freq 405; per. RV|AV|V|B|S|E; слов. 5)*
+- ★ √*rās* — кл. 1Ā *(per. B|E|C; слов. 1)*
+- ★ √*rī* — кл. 9P,4P,4Ā *(freq 60; слов. 3)*
+- ★ √*rūṣ* — кл. 1P,10P *(per. V|E|C; слов. 2)*
+- ★ √*sac* — кл. 1Ā,1P *(freq 323; per. RV|AV|V|B|S; слов. 2)*
+- ★ √*sad* — кл. 1,6P *(freq 953; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*sah* — кл. 1Ā,10 *(freq 791; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*san* — кл. 1P,8P,8Ā *(freq 196; per. RV|V|B|S|C; слов. 4)*
+- ★ √*sap* — кл. 1P,1Ā *(freq 23; per. RV|V|B|S; слов. 2)*
+- ★ √*sas* — кл. 2P *(freq 23; per. RV)*
+- ★ √*sañj* — кл. 1P,1Ā *(слов. 3)*
+- ★ √*sev* — кл. 1Ā *(freq 1328; per. V|B|E|C; слов. 4)*
+- ★ √*si* — кл. 5,9P,9Ā *(freq 13; per. AV|V|E; слов. 3)*
+- ★ √*sic* — кл. 6P,6Ā *(freq 687; per. RV|AV|V|B|S|E|C; слов. 8)*
+- ★ √*sidh* — кл. 1P *(freq 4056; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*sidh* — кл. 4P *(freq 4056; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*siv* — кл. 4P *(слов. 5)*
+- ★ √*skambh* — кл. 5,9P,1Ā *(freq 20; per. RV|V|B|E|C; слов. 4)*
+- ★ √*skand* — кл. 1P,1Ā *(freq 247; per. RV|AV|V|B|S|E; слов. 5)*
+- ★ √*skhal* — кл. 1P *(freq 118; per. B|E|C; слов. 4)*
+- ★ √*sku* — кл. 5,9P,9Ā *(freq 1; per. RV|AV|S; слов. 3)*
+- ★ √*smi* — кл. 1Ā *(freq 227; per. RV|V|B|S|E|C; слов. 3)*
+- ★ √*smṛ* — кл. 1P,1Ā *(freq 4142; per. AV|V|B|S|E|C; слов. 6)*
+- ★ √*snih* — кл. 4P,1P,10P *(freq 125; per. RV|V|B|E|C; слов. 2)*
+- ★ √*snu* — кл. 2P *(freq 3; per. RV|B|S|E|C; слов. 4)*
+- ★ √*snā* — кл. 2P,4P,4Ā *(freq 1648; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*so* — кл. 4P *(слов. 3)*
+- ★ √*spand* — кл. 1Ā *(freq 52; per. AV|V|B|E|C; слов. 4)*
+- ★ √*spardh* — кл. 1Ā,1P *(слов. 2)*
+- ★ √*spaś* *(слов. 3)*
+- ★ √*sphul* — кл. 6P *(слов. 3)*
+- ★ √*sphur* — кл. 6P *(freq 357; слов. 7)*
+- ★ √*sphuṭ* — кл. 6P,1P,1Ā *(freq 154; per. B|E|C; слов. 5)*
+- ★ √*sphāy* — кл. 1Ā *(слов. 6)*
+- ★ √*spṛ* — кл. 5P *(freq 160; per. RV|AV|V|B|S; слов. 2)*
+- ★ √*spṛh* — кл. 10P *(freq 34; per. RV|V|S|E; слов. 1)*
+- ★ √*spṛś* — кл. 6P *(freq 1059; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*sraṃs* — кл. 1Ā *(freq 133; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*sriv* — кл. 4P
+- ★ √*sru* — кл. 1P *(freq 538; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*stambh* — кл. 5,9P,1Ā *(freq 291; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*stan* — кл. 1P *(freq 20; per. RV|AV|V|S|E|C; слов. 5)*
+- ★ √*sthag* — кл. 1P *(per. C; слов. 1)*
+- ★ √*sthā* — кл. 1P,1Ā *(freq 9268; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*stigh* — кл. 5P,5Ā *(слов. 1)*
+- ★ √*stu* — кл. 2P,2Ā *(freq 4408; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*stubh* — кл. 1P,1Ā *(freq 55; per. RV|V|B|S|E|C; слов. 2)*
+- ★ √*stṛ* — кл. 5,9P,9Ā,5P,5Ā *(freq 334; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*su* — кл. 5P,5Ā *(freq 878; per. RV|V|B|S|E; слов. 5)*
+- ★ √*suh* — кл. 4P
+- ★ √*svad* — кл. 1Ā,1P *(freq 81; per. RV|V|B|E|C; слов. 3)*
+- ★ √*svaj* — кл. 1Ā *(freq 39; per. AV|V|B|E|C; слов. 1)*
+- ★ √*svan* — кл. 1P *(freq 19; per. RV|V|E; слов. 6)*
+- ★ √*svap* — кл. 2P *(freq 1100; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*svid* — кл. 1Ā,1P *(freq 369; per. RV|AV|V|B|E|C; слов. 6)*
+- ★ √*svṛ* — кл. 1P *(слов. 2)*
+- ★ √*syand* — кл. 1Ā *(freq 106; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*sādh* — кл. 1P,1Ā,4,5 *(freq 86; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*sāntv* — кл. 10P,10Ā *(слов. 2)*
+- ★ √*sū* — кл. 6P,6Ā *(freq 532; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*sū* — кл. 2Ā *(freq 532; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*sūd* — кл. 1Ā,10 *(freq 13; per. RV|AV|V|B|E; слов. 7)*
+- ★ √*sṛ* — кл. 1,3P,3Ā,10P,10Ā *(freq 204; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*sṛj* — кл. 6P,6Ā *(freq 2749; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*sṛp* — кл. 1P *(freq 192; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*takṣ* — кл. 1P,1Ā,2,5Ā *(freq 161; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*tam* — кл. 4Ā *(freq 99; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*tan* — кл. 4 *(freq 1432; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*tan* — кл. 8P,8Ā *(freq 1432; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*tap* — кл. 1Ā,4,4Ā,4P *(freq 2065; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*tarj* — кл. 1Ā *(freq 9; per. E|C; слов. 6)*
+- ★ √*tark* — кл. 10 *(per. B|S|E|C; слов. 7)*
+- ★ √*taḍ* — кл. 10 *(freq 1; per. AV|V|E|C; слов. 6)*
+- ★ √*tij* — кл. 1P *(freq 6; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*tras* — кл. 1,4Ā *(freq 267; per. AV|V|B|S|E|C; слов. 5)*
+- ★ √*tud* — кл. 6P *(freq 99; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*tuj* — кл. 6Ā,6P,1 *(freq 35; per. RV|V|E|C; слов. 1)*
+- ★ √*tul* — кл. 10Ā *(per. B|S|E|C; слов. 5)*
+- ★ √*tuṣ* — кл. 4 *(freq 840; per. V|S|E|C; слов. 6)*
+- ★ √*tyaj* — кл. 1P,1Ā *(freq 2417; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*tṛp* — кл. 4,5,6Ā,6P,1Ā *(freq 696; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*tṛṣ* — кл. 4Ā *(freq 55; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*tṝ* — кл. 1P,1Ā,5,3,6P,6Ā *(слов. 6)*
+- ★ √*u* — кл. 5P,2Ā,1Ā *(freq 1; слов. 2)*
+- ★ √*ubh* — кл. 9P,6P *(freq 4; per. RV|AV|B|C; слов. 3)*
+- ★ √*ubj* — кл. 6P *(freq 15; per. RV|AV|V|B; слов. 2)*
+- ★ √*uc* — кл. 4P,4Ā *(freq 51; per. RV|AV|V; слов. 4)*
+- ★ √*uch* — кл. 1P
+- ★ √*uch* — кл. 1P
+- ★ √*ud* — кл. 7P,6P,6Ā *(per. RV|AV|V|B|S|C; слов. 3)*
+- ★ √*udhras* — кл. 9P *(слов. 1)*
+- ★ √*udhras* — кл. 10P,10Ā *(слов. 1)*
+- ★ √*uh* — кл. 1P *(слов. 1)*
+- ★ √*ujjh* — кл. 6P *(слов. 4)*
+- ★ √*ukh* — кл. 1P
+- ★ √*ukṣ* — кл. 1P,1Ā *(freq 382; per. RV|AV|V|B|S|C; слов. 5)*
+- ★ √*ulaḍ* — кл. 10P
+- ★ √*uñch* — кл. 1,6P *(freq 9; per. S|C; слов. 3)*
+- ★ √*uṅkh* — кл. 1P
+- ★ √*uṣ* — кл. 1P,9P *(freq 66; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*uṭh* — кл. 1P
+- ★ √*vac* — кл. 2P,3P,3Ā *(freq 33948; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*vad* — кл. 1P,1Ā *(freq 3914; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vadh* *(freq 1236; per. RV|AV|V|B|S|E; слов. 2)*
+- ★ √*vah* — кл. 1P,1Ā *(freq 1845; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*vai* — кл. 1P,1Ā *(слов. 2)*
+- ★ √*vakṣ* — кл. 1P *(freq 45; per. RV|V; слов. 1)*
+- ★ √*val* — кл. 1Ā,1P *(freq 54; per. E|C; слов. 6)*
+- ★ √*valg* — кл. 1P,1Ā *(freq 42; per. AV|V|E|C; слов. 4)*
+- ★ √*vam* — кл. 1P *(freq 223; per. V|B|E|C; слов. 5)*
+- ★ √*van* — кл. 1P,8P,8Ā *(freq 220; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*vand* — кл. 1Ā *(freq 632; per. RV|V|B|E|C; слов. 4)*
+- ★ √*vap* — кл. 1P,1Ā *(freq 640; per. AV|V|B|S|E|C; слов. 8)*
+- ★ √*vap* — кл. 1P,1Ā *(freq 640; per. AV|V|B|S|E|C; слов. 8)*
+- ★ √*vardh* — кл. 10P *(слов. 3)*
+- ★ √*varṇ* — кл. 10P *(слов. 5)*
+- ★ √*vas* — кл. 6P *(freq 7614; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vas* — кл. 10P *(freq 7614; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vas* — кл. 2Ā *(freq 7614; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vas* — кл. 1P,10P *(freq 7614; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vañc* — кл. 1P,1Ā *(freq 24; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*vaś* — кл. 2P,1,3 *(freq 302; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vaṇṭ* — кл. 1,10P *(freq 1; слов. 1)*
+- ★ √*ve* — кл. 1P,1Ā *(слов. 3)*
+- ★ √*vell* — кл. 1P *(freq 11; per. E|C; слов. 5)*
+- ★ √*ven* — кл. 1P *(freq 19; per. RV|V|B; слов. 2)*
+- ★ √*veṣṭ* — кл. 1Ā *(freq 43; слов. 4)*
+- ★ √*vic* — кл. 7P,7Ā,3 *(freq 16; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*vid* — кл. 2P *(freq 22628; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*vid* — кл. 6P,6Ā *(freq 22628; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*vij* — кл. 6Ā,1P,3P,3Ā *(freq 27; per. RV|V|B|E|C; слов. 4)*
+- ★ √*vip* — кл. 1Ā *(freq 156; per. RV|AV|V|B|E|C; слов. 3)*
+- ★ √*viś* — кл. 6P,6Ā *(freq 1053; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*viṣ* — кл. 3P,1P,3 *(freq 29; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*viṣ* — кл. 9P *(freq 29; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*vlī* — кл. 9P *(freq 18; per. RV|AV|B|S; слов. 3)*
+- ★ √*vraj* — кл. 1P,10P *(freq 1202; per. V|B|S|E|C; слов. 5)*
+- ★ √*vraśc* — кл. 6P *(freq 145; per. RV|AV|V|B|S|C; слов. 4)*
+- ★ √*vrīḍ* — кл. 1Ā,4P,10P *(freq 84; per. E|C; слов. 2)*
+- ★ √*vyac* — кл. 6P,3 *(freq 20; per. RV|AV|V|B|S; слов. 2)*
+- ★ √*vyadh* — кл. 4P,4Ā *(freq 1636; per. RV|AV|V|B|E|C; слов. 4)*
+- ★ √*vyath* — кл. 1Ā *(freq 397; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*vye* — кл. 1P,1Ā *(слов. 2)*
+- ★ √*vā* — кл. 2P *(freq 596; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*vāh* — кл. 1Ā *(freq 1845; слов. 2)*
+- ★ √*vās* — кл. 10P *(слов. 4)*
+- ★ √*vāñch* — кл. 1P *(freq 180; per. V|E|C; слов. 2)*
+- ★ √*vāś* — кл. 4Ā *(freq 73; per. RV|AV|V|S|E|C; слов. 3)*
+- ★ √*vī* — кл. 2P,2Ā *(freq 770; per. RV|AV|V|B|S|E; слов. 3)*
+- ★ √*vīj* — кл. 1P,1Ā,10 *(freq 5; per. E|C; слов. 3)*
+- ★ √*vīḍ* — кл. 0P,0Ā *(per. V|B|S)*
+- ★ √*vṛ* — кл. 5,9,1P,1Ā *(freq 4166; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*vṛ* — кл. 5,9P,9Ā *(freq 4166; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*vṛdh* — кл. 1Ā,1P,10 *(freq 1619; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*vṛj* — кл. 1,7P,2Ā *(freq 283; per. RV|AV|V|B|S|E|C; слов. 2)*
+- ★ √*vṛt* — кл. 1Ā *(freq 2479; per. RV|AV|V|B|E|C; слов. 6)*
+- ★ √*vṛṣ* — кл. 1P,1Ā *(freq 580; per. RV|V|B|S|E|C; слов. 7)*
+- ★ √*yabh* — кл. 1P,1Ā *(freq 1; per. AV|B|C; слов. 2)*
+- ★ √*yaj* — кл. 1P,1Ā *(freq 6755; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*yam* — кл. 1P,1Ā *(freq 1093; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*yas* — кл. 4P *(freq 2; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*yat* — кл. 1Ā,1P,10Ā,10P *(freq 548; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*yu* — кл. 3P,3Ā *(freq 398; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*yu* — кл. 2P,2Ā,6,9 *(freq 398; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*yudh* — кл. 4Ā,4P,1P *(freq 1267; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*yuj* — кл. 7P,7Ā *(freq 5933; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*yup* — кл. 4P *(freq 11; per. AV|V|B; слов. 2)*
+- ★ √*yā* — кл. 2P *(freq 5649; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*yāc* — кл. 1P,1Ā *(freq 755; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*āp* — кл. 5P,5Ā *(freq 2314; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ār* — кл. 4P *(freq 6)*
+- ★ √*ās* — кл. 2Ā *(freq 1955; per. AV|V|B|S|E|C; слов. 5)*
+- ★ √*īh* — кл. 1Ā,1P *(freq 101; per. AV|V|B|E|C; слов. 4)*
+- ★ √*īj* — кл. 1P *(слов. 2)*
+- ★ √*īkh* — кл. 1P
+- ★ √*īkṣ* — кл. 1Ā *(freq 473; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*īl* — кл. 0P
+- ★ √*īnt* — кл. 1P
+- ★ √*īr* — кл. 2Ā,2P *(freq 87; per. RV|V|B|E|C; слов. 6)*
+- ★ √*īrṣy* — кл. 1P *(freq 4; per. AV|B|C; слов. 1)*
+- ★ √*īś* — кл. 2Ā *(freq 425; per. RV|AV|V|B|S|C; слов. 4)*
+- ★ √*īḍ* — кл. 2Ā,2P *(freq 352; per. RV|AV|V|B|E; слов. 2)*
+- ★ √*īṅkh* — кл. 1P *(freq 1; per. RV|V|C; слов. 2)*
+- ★ √*īṣ* — кл. 1Ā,1P *(freq 24; per. RV|V|B|S|C; слов. 4)*
+- ★ √*śabd* — кл. 10P *(слов. 4)*
+- ★ √*śad* — кл. 1,6Ā,6P *(freq 38; per. RV|AV|V|B|S|C; слов. 5)*
+- ★ √*śak* — кл. 5P *(freq 1952; per. RV|AV|V|B|S|E|C; слов. 3)*
+- ★ √*śam* — кл. 4P,9 *(freq 3477; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*śap* — кл. 1,4P,4Ā *(freq 484; per. AV|V|B|S|E; слов. 4)*
+- ★ √*śas* — кл. 1P *(freq 2; per. RV|AV|V|B|S|E; слов. 3)*
+- ★ √*śaṃs* — кл. 1P,1Ā *(freq 1785; per. RV|V|B|S|E|C; слов. 4)*
+- ★ √*śaṅk* — кл. 1Ā,1P *(freq 273; per. B|S|E; слов. 3)*
+- ★ √*śaṭh* — кл. 1P,10P *(слов. 2)*
+- ★ √*ścut* — кл. 1P *(freq 13; per. V|B|S|C; слов. 2)*
+- ★ √*śi* — кл. 3P,5P,5Ā *(слов. 1)*
+- ★ √*śikṣ* — кл. 1P,1Ā *(freq 345; слов. 2)*
+- ★ √*śiñj* — кл. 2Ā,1,10Ā *(freq 12; per. RV|V|B|E|C; слов. 2)*
+- ★ √*śiṣ* — кл. 7P,10 *(freq 194; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*ślath* — кл. 1P *(freq 2; слов. 2)*
+- ★ √*śliṣ* — кл. 4P,4Ā *(freq 92; per. RV|AV|B|E|C; слов. 4)*
+- ★ √*ślāgh* — кл. 1Ā *(freq 186; per. B|E; слов. 2)*
+- ★ √*śnath* — кл. 1P *(freq 21; per. RV; слов. 3)*
+- ★ √*śo* — кл. 3P,3Ā,4P,4Ā *(слов. 2)*
+- ★ √*śram* — кл. 4P *(freq 382; per. RV|V|B|S|E|C; слов. 5)*
+- ★ √*śrath* — кл. 9P,9Ā *(freq 16; per. RV|V|B|E|C; слов. 2)*
+- ★ √*śri* — кл. 1P,1Ā *(freq 451; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*śru* — кл. 5P,5Ā *(freq 10505; per. RV|AV|V|B|S|E|C; слов. 6)*
+- ★ √*śrā* — кл. 1,4P,2P *(per. RV|AV|V|B|S|E; слов. 3)*
+- ★ √*śrī* — кл. 9P,9Ā *(freq 1288; per. RV|V|B|S; слов. 4)*
+- ★ √*śubh* — кл. 1Ā,6P,6Ā *(freq 547; per. RV|AV|V|B|E|C; слов. 5)*
+- ★ √*śuc* — кл. 1P,4P,4Ā *(freq 777; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*śudh* — кл. 1P,1Ā,4P,4Ā *(freq 2410; per. V|B|S|E|C; слов. 4)*
+- ★ √*śuṣ* — кл. 4P *(freq 332; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*śuṣ* — кл. 6P *(freq 332; per. AV|V|B|S|E|C; слов. 4)*
+- ★ √*śvas* — кл. 2P *(freq 154; per. RV|AV|V|B|S|E|C; слов. 4)*
+- ★ √*śvi* — кл. 1P *(слов. 4)*
+- ★ √*śyai* — кл. 1P,1Ā *(слов. 2)*
+- ★ √*śāl* — кл. 1Ā,1,10Ā *(слов. 2)*
+- ★ √*śās* — кл. 2P *(freq 1066; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*śī* — кл. 2Ā,1 *(freq 2232; per. RV|AV|V|B|S|E|C; слов. 7)*
+- ★ √*śīk* — кл. 1Ā,10 *(слов. 1)*
+- ★ √*śīl* — кл. 1P,10P *(слов. 2)*
+- ★ √*śṛdh* — кл. 1P,1Ā *(freq 23; per. RV|V|B|C; слов. 1)*
+- ★ √*śṝ* — кл. 9P,9Ā *(слов. 4)*
+- ★ √*ūh* — кл. 1P,1Ā *(freq 196; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ūh* — кл. 1P,1Ā *(freq 196; per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ūrd* — кл. 1Ā
+- ★ √*ūrj* — кл. 0P,0Ā *(слов. 1)*
+- ★ √*ūrv* — кл. 1P
+- ★ √*ūrṇu* — кл. 2P,2Ā *(слов. 2)*
+- ★ √*ūy* — кл. 1Ā
+- ★ √*ūṣ* — кл. 1P *(слов. 2)*
+- ★ √*ḍhauk* — кл. 1Ā *(freq 10; per. E|C; слов. 3)*
+- ★ √*ḍī* — кл. 1,4Ā *(per. E|C; слов. 4)*
+- ★ √*ṛ* — кл. 1,3,5P,5Ā *(per. RV|AV|V|B|S|E|C; слов. 5)*
+- ★ √*ṛc* — кл. 6P *(слов. 2)*
+- ★ √*ṛch* — кл. 6P *(слов. 1)*
+- ★ √*ṛdh* — кл. 6,2,4,5,7P *(freq 392; per. RV|AV|V|B|S; слов. 5)*
+- ★ √*ṛj* — кл. 1P,1Ā *(freq 44; per. RV|V; слов. 1)*
+- ★ √*ṛph* — кл. 6P
+- ★ √*ṛt* — кл. 0Ā *(слов. 1)*
+- ★ √*ṛñj* — кл. 1Ā *(слов. 1)*
+- ★ √*ṛñj* — кл. 6P,6Ā,4P,4Ā,7Ā *(слов. 1)*
+- ★ √*ṛṇ* — кл. 8P,8Ā *(слов. 1)*
+- ★ √*ṛṣ* — кл. 1P *(freq 147; per. RV|AV|V|B; слов. 3)*
+- ★ √*ṛṣ* — кл. 6P *(freq 147; per. RV|AV|V|B; слов. 3)*
+- ★ √*ṣṭhiv* — кл. 1,4P *(слов. 4)*

@@ -1,0 +1,751 @@
+mw_L	root_iast	k1_slp1	classes	dcs_freq	dcs_rank	dcs_periods	oracle_dicts	oracle_sources
+9	aṃś	aMS	10P,10Ā				4	mw,pw,pwg,skd
+87	aṃs	aMs					3	mw,pwg,vcp
+107	aṃh	aMh	1Ā,10P	0		RV|V|B|S	2	mw,pwg
+114	aṃh	aMh		0		RV|V|B|S	2	mw,pwg
+134	ak	ak	1P				1	skd
+423	akṣ	akz	1,5	8	5127	AV|V|B	5	ap,mw,pw,pwg,vcp
+762	ag	ag	1P					
+1348	agh	aG	10P				2	ap,pwg
+1408	aṅk	aNk	1Ā,10P				3	pwg,skd,vcp
+1491	aṅkh	aNK	10P				1	mw
+1492	aṅg	aNg	1P,10P	4	5210		4	mw,pw,pwg,skd
+1752	aṅgh	aNG	1Ā					
+1767	ac	ac	1P,1Ā	0		RV|AV|V|B|S|E	2	mw,pw
+1927	aj	aj	1P	55	1741	RV|AV|V|B|S|C	7	ap,apte,krm-body,mw,pw,pwg,vcp
+2250	añc	aYc	1P,1Ā,10P,10Ā				4	mw,pwg,skd,vcp
+2267	añj	aYj	7P,7Ā	708	231	RV|V|B|S|E|C	4	mw,pw,pwg,skd
+2337	aṭ	aw	1P,1Ā	60	1660	E|C	5	mw,pw,pwg,skd,vcp
+2358	aṭṭ	aww	1Ā,10P				3	apte,pwg,vcp
+2383	aṭh	aW	1P,1Ā					
+2386	aḍ	aq	1P				2	mw,pwg
+2388	aḍḍ	aqq	1P					
+2390	aṇ	aR	1P,4Ā					
+2447	aṇṭh	aRW	1Ā	0		C		
+2490	at	at	1P,1Ā	8	3959	RV|V|B|C	4	ap,mw,pwg,skd
+3575	ad	ad	2P	699	233	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+4782	an	an	2P	10	3646	RV|AV|V|B	5	krm-body,mw,pwg,skd,vcp
+7900	ant	ant	1P				3	ap,pwg,vcp
+8399	and	and	1P					
+8411	andh	anD	10P				3	pwg,skd,vcp
+13687	abhr	aBr	1P				2	pw,pwg
+13748	am	am	0Ā	14	3186	RV|AV|V|B|E	5	mw,pw,pwg,skd,vcp
+14390	amb	amb	1P,1Ā					
+14564	ambh	amB						
+15571	ark	ark					2	pw,pwg
+15701	arc	arc	1P,1Ā	413	413	RV|AV|V|E|C	3	mw,pwg,vcp
+15739	arj	arj	1P,1Ā	0			3	mw,pwg,vcp
+15839	arth	arT	10Ā,1Ā				5	krm-body,mw,pw,pwg,vcp
+16095	ard	ard	6P,1P,7				4	krm,mw,pw,pwg
+16352	arb	arb	1P					
+16408	arv	arv	1P				1	pwg
+16483	arh	arh	1P,1Ā	2380	54	V|S|E|C	4	mw,pw,pwg,vcp
+16510	al	al	1P				3	mw,pwg,skd
+16938	av	av	1P	867	191	RV|V|B|S|C	3	mw,pw,pwg
+19412	aś	aS	0Ā,0P	3896	72	RV|AV|V|B|S|E	6	krm,mw,pw,pwg,skd,vcp
+19416	aś	aS		3896	72	RV|AV|V|B|S|E	6	krm,mw,pw,pwg,skd,vcp
+20163	aṣ	az	1P,1Ā					
+20353	as	as	2P,2Ā	71506	3	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+20354	as	as	4P,4Ā	71506	3	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+21629	ah	ah		9447	11	V	3	mw,pw,pwg
+21630	ah	ah	5P	9447	11	V	3	mw,pw,pwg
+24743	āp	Ap	5P,5Ā	2314	56	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+25983	ār	Ar	4P	6	4675			
+27851	ās	As	2Ā	1955	70	AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+28539	i	i	2P,2Ā	7346	33	RV|AV|V|B|S|E|C	5	krm-body,mw,pw,pwg,vcp
+28635	ikh	iK	1P				1	krm
+28637	iṅkh	iNK	1P				1	pw
+28638	iṅg	iNg	1P,1Ā	15	3111	V|S|E|C	3	mw,pw,pwg
+28677	iṭ	iw	1P	0		RV		
+28845	ind	ind	1P					
+29258	indh	inD	7Ā				7	ap,apte,mw,pw,pwg,skd,vcp
+29294	inv	inv	6P,8P,9P,9Ā				3	mw,pw,pwg
+29342	ir	ir	6P				1	pwg
+29396	il	il	6P,10P	0		AV|B|S	2	krm,pwg
+29439	iṣ	iz	1P,1Ā,4P,4Ā	9684	23	RV|AV|V|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+29516	iṣ	iz	6P,6Ā	9684	23	RV|AV|V|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+29546	iṣūya	izUya	0P					
+29695	īkṣ	Ikz	1Ā	473	360	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+29713	īkh	IK	1P					
+29714	īṅkh	INK	1P	1	11044	RV|V|C	2	mw,pwg
+29717	īj	Ij	1P	0			2	mw,skd
+29721	īḍ	Iq	2Ā,2P	352	477	RV|AV|V|B|E	2	mw,pwg
+29747	īnt	Int	1P					
+29761	īr	Ir	2Ā,2P	87	1339	RV|V|B|E|C	6	krm,krm-body,mw,pw,pwg,vcp
+29797	īrṣy	Irzy	1P	4	5592	AV|B|C	1	pwg
+29820	īl	Il	0P					
+29827	īś	IS	2Ā	425	401	RV|AV|V|B|S|C	4	mw,pw,pwg,vcp
+29921	īṣ	Iz	1Ā,1P	24	2611	RV|V|B|S|C	4	mw,pw,pwg,skd
+29985	īh	Ih	1Ā,1P	101	1220	AV|V|B|E|C	4	mw,pw,pwg,vcp
+30001	u	u	5P,2Ā,1Ā	1	10284		2	mw,pwg
+30072	ukṣ	ukz	1P,1Ā	382	796	RV|AV|V|B|S|C	5	ap,apte,mw,pwg,vcp
+30098	ukh	uK	1P					
+30208	uṅkh	uNK	1P					
+30209	uc	uc	4P,4Ā	51	1825	RV|AV|V	4	krm,mw,pwg,vcp
+30535	uch	uC	1P	0				
+30536	uch	uC	1P	0				
+30600	ujjh	ujJ	6P				4	krm,mw,pwg,skd
+30615	uñch	uYC	1,6P	9	3900	S|C	3	mw,pw,pwg
+30626	uṭh	uW	1P					
+32059	ud	ud	7P,6P,6Ā	0		RV|AV|V|B|S|C	3	mw,pw,pwg
+33764	udhras	uDras	9P				1	pwg
+33765	udhras	uDras	10P,10Ā				1	pwg
+37050	ubj	ubj	6P	15	3156	RV|AV|V|B	2	mw,pwg
+37051	ubh	uB	9P,6P	4	5474	RV|AV|B|C	3	mw,pw,pwg
+37438	ulaḍ	ulaq	10P					
+37688	uṣ	uz	1P,9P	66	2262	RV|V|B|S|E|C	4	krm,mw,pwg,vcp
+37931	uh	uh	1P				1	mw
+38000	ūy	Uy	1Ā					
+38037	ūrj	Urj	0P,0Ā				1	pwg
+38079	ūrṇu	UrRu	2P,2Ā	0			2	mw,pwg
+38104	ūrd	Urd	1Ā					
+38324	ūrv	Urv	1P					
+38333	ūṣ	Uz	1P				2	pwg,skd
+38375	ūh	Uh	1P,1Ā	196	1236	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+38392	ūh	Uh	1P,1Ā	196	1236	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+38410	ṛ	f	1,3,5P,5Ā	0		RV|AV|V|B|S|E|C	5	krm-body,mw,pwg,skd,vcp
+38696	ṛc	fc	6P	0			2	pw,pwg
+38773	ṛch	fC	6P				1	mw
+38776	ṛj	fj	1P,1Ā	44	1982	RV|V	1	mw
+38847	ṛñj	fYj	1Ā				1	mw
+38849	ṛñj	fYj	6P,6Ā,4P,4Ā,7Ā				1	mw
+38854	ṛṇ	fR	8P,8Ā				1	pwg
+38911	ṛt	ft	0Ā	0			1	pwg
+38930	ṛdh	fD	6,2,4,5,7P	392	442	RV|AV|V|B|S	5	ap,apte,krm-body,mw,vcp
+38955	ṛph	fP	6P					
+39001	ṛṣ	fz	1P	147	957	RV|AV|V|B	3	mw,pwg,vcp
+39039	ṛṣ	fz	6P	147	957	RV|AV|V|B	3	mw,pwg,vcp
+39975	ej	ej	1P,1Ā	85	1352	RV|AV|V	2	mw,pwg
+39986	eṭh	eW	1Ā					
+40096	edh	eD	1Ā,1P	172	859	AV|V|B|S|E|C	3	mw,pwg,vcp
+40241	eṣ	ez	1P,1Ā				4	mw,pw,pwg,vcp
+40606	okh	oK	1P					
+40621	oj	oj	1,10P					
+40663	oṇ	oR	1P				1	pwg
+40721	olaṇḍ	olaRq	1,8,10P					
+41369	kaṃs	kaMs	2Ā					
+41405	kak	kak	1Ā					
+41598	kakh	kaK	1P					
+41600	kag	kag	1P					
+41602	kaṅk	kaNk	1Ā					
+41710	kac	kac	1P,1Ā				5	mw,pw,pwg,skd,vcp
+41817	kaj	kaj	1P					
+41835	kañc	kaYc	1Ā				1	mw
+41893	kaṭ	kaw	1P				3	pwg,skd,vcp
+41894	kaṭ	kaw	1P				3	pwg,skd,vcp
+42169	kaṭṭ	kaww	10P					
+42177	kaṭh	kaW	1P				1	pwg
+42258	kaḍ	kaq	1P,6P				2	pwg,skd
+42287	kaḍḍ	kaqq	1P					
+42288	kaṇ	kaR	1P,10P				2	pwg,vcp
+42355	kaṇṭ	kaRw	1P					
+42456	kaṇṭh	kaRW	1P,1Ā,10P					
+42560	kaṇḍ	kaRq	1P,1Ā,10P					
+42681	katth	katT	1Ā	28	2414	E|C	3	mw,pwg,vcp
+42690	katr	katr	10P					
+42692	kath	kaT	10P,10Ā	57	1715	C	3	mw,pwg,skd
+42779	kad	kad	1Ā	0		E	4	mw,pwg,skd,vcp
+42917	kan	kan	1P,1Ā	56	1731	RV|V|B|E	3	mw,pwg,skd
+43192	kand	kand	1P,1Ā					
+43736	kab	kab	1Ā					
+43768	kam	kam	1Ā,1P	82	1384	AV|V|B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+43913	kamp	kamp	1Ā,1P	237	661	RV|V|B|S|E|C	3	mw,pwg,vcp
+43959	kamb	kamb	1P				1	skd
+44777	karj	karj	1P					
+44778	karṇ	karR	10P				4	mw,pw,pwg,vcp
+45580	kal	kal	10P,10Ā	1	8719	B|S|E|C	5	krm-body,mw,pwg,skd,vcp
+45581	kal	kal	0P,0Ā	1	8719	B|S|E|C	5	krm-body,mw,pwg,skd,vcp
+46728	kaṣ	kaz	1P,1Ā	10	3664	AV|B|S|E|C	4	mw,pw,pwg,vcp
+46861	kas	kas	1P	0		AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+47271	kāṅkṣ	kANkz	1P,1Ā	202	757	B|E|C	3	mw,pwg,vcp
+49812	kāś	kAS	1Ā,4P,4Ā	45	1943	AV|V|B|E|C	5	mw,pw,pwg,skd,vcp
+50091	kās	kAs	1Ā,1P	10	3666	AV|C	2	mw,pwg
+50788	kīrt	kIrt	10P,10Ā				1	mw
+51417	kuc	kuc	1P,6P	0		E|C	5	krm-body,mw,pw,pwg,vcp
+51450	kuñc	kuYc	1P				3	mw,pwg,vcp
+51471	kuñj	kuYj	1P	0				
+51515	kuṭ	kuw	6P,4P,10Ā				5	mw,pw,pwg,skd,vcp
+51676	kuṭṭ	kuww	10	4	5240	E|C	2	pwg,skd
+52017	kuts	kuts	10P,10Ā,1P,4P				4	mw,pwg,skd,vcp
+52041	kuth	kuT	4P	0		B|C	3	pwg,skd,vcp
+52181	kup	kup	4P,4Ā	521	321	RV|AV|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+53477	kuṣ	kuz	9P,6	5	4811	S|C	4	mw,pw,pwg,skd
+53796	kūj	kUj	1P	101	1214	AV|E	4	mw,pw,pwg,skd
+53917	kūḍ	kUq	10P	0		S|C	1	mw
+53919	kūṇ	kUR	1P,1Ā	0			2	mw,pwg
+54039	kūrd	kUrd	1P,1Ā	4	5242	S|E|C	2	mw,pwg
+54148	kṛ	kf	2P,2Ā,1P,1Ā,5P,5Ā,8P,8Ā	122397	1	RV|AV|V|B|S|E|C	7	ap,apte,krm-body,mw,pwg,skd,vcp
+54683	kṛ	kf	3P,3Ā	122397	1	RV|AV|V|B|S|E|C	7	ap,apte,krm-body,mw,pwg,skd,vcp
+54777	kṛt	kft	6P,6Ā,1P	440	711	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+54810	kṛt	kft	7P	440	711	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+54858	kṛp	kfp	6Ā,10P	14	3212	RV|AV|V|E	3	mw,skd,vcp
+55010	kṛś	kfS	4P	8	3989	V|C	4	mw,pwg,skd,vcp
+55083	kṛṣ	kfz	1P,1Ā,6P,6Ā	360	467	RV|AV|V|B|S|E|C	4	apte,mw,skd,vcp
+55567	kṝ	kF	6P,6Ā				7	ap,apte,krm,krm-body,mw,skd,vcp
+57713	krath	kraT	1P	0		E|C	1	pwg
+57730	krand	krand	1P,1Ā	183	824	RV|AV|V|B|E|C	4	ap,mw,pwg,vcp
+57749	kram	kram	1P,1Ā,4P,4Ā	414	412	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+58088	krī	krI	9P,9Ā	439	388	AV|V|B|S|E	7	ap,apte,krm-body,mw,pwg,skd,vcp
+58135	krīḍ	krIq	1P,1Ā	494	340	RV|V|B|S|E|C	5	apte,mw,pwg,skd,vcp
+58231	krudh	kruD	4P,4Ā	1659	83	RV|AV|V|B|E|C	5	krm,mw,pwg,skd,vcp
+58298	kruś	kruS	1P,1Ā	238	657	RV|V|B|S|E|C	5	krm,mw,pwg,skd,vcp
+58538	klath	klaT	1P	0				
+58542	kland	kland	1P,1Ā	0				
+58545	klam	klam	1,4	90	1303	E|C	3	mw,pwg,vcp
+58564	klid	klid	4Ā,4P	125	1069	AV|S|E|C	5	mw,pw,pwg,skd,vcp
+58692	kvaṇ	kvaR	1P	28	2415	C	4	mw,pwg,skd,vcp
+58702	kvath	kvaT	1Ā	91	1293	B|S|E|C	4	mw,pwg,skd,vcp
+58898	kṣad	kzad	1Ā	7	4208	RV|V	1	pwg
+58968	kṣap	kzap	1P,1Ā	16	3044	V|E	4	krm-body,mw,pwg,vcp
+59030	kṣam	kzam	1Ā,1P,2P,4P,4Ā	439	389	RV|AV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+59141	kṣar	kzar	1P,1Ā,2P	220	712	V|B|C	7	apte,krm-body,mw,pw,pwg,skd,vcp
+59234	kṣal	kzal	10P	0		B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+59266	kṣi	kzi	1P	2362	131	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+59272	kṣi	kzi	2,6P	2362	131	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+59376	kṣi	kzi	1P,5P,9P,9Ā	2362	131	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+59502	kṣip	kzip	6P,6Ā,4P,4Ā	2461	51	RV|V|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+59841	kṣu	kzu	2P	20	2779	AV|B|E|C	4	krm-body,pwg,skd,vcp
+59877	kṣud	kzud	1P,1Ā,7P,7Ā	60	1663	RV|V|B|E	4	mw,pw,pwg,skd
+60072	kṣudh	kzuD	4P	98	1233	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+60118	kṣup	kzup	6P	0		RV|E	1	pwg
+60128	kṣubh	kzuB	1Ā,4P,4Ā,5P,9P,9Ā	236	662	RV|AV|V|B|E|C	4	mw,pwg,skd,vcp
+60470	kṣai	kzE	1P				6	ap,apte,krm,mw,skd,vcp
+60596	kṣṇu	kzRu	2P	9	3814	RV|B|S	4	krm-body,mw,pwg,skd
+60659	kṣvel	kzvel	1P	0		E|C	1	pwg
+60863	khac	Kac	1P,9P,10P	18	2905	E	1	mw
+60884	khañj	KaYj	1P	5	4809	C	1	pwg
+61072	khaṇḍ	KaRq	1Ā,10P				1	mw
+61265	khan	Kan	1P,1Ā	352	476	AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+61509	kharj	Karj	1P	1	8746	V|B	2	pw,pwg
+61663	khall	Kall	1Ā	0		C		
+61789	khād	KAd	1P,1Ā	369	459	RV|V|B|S|E|C	4	mw,pwg,skd,vcp
+61905	khid	Kid	6,7Ā,4Ā,4P	141	988	RV|V|B|S|E|C	5	krm,mw,pw,pwg,vcp
+61977	khud	Kud	6P	1	8752	AV|S	1	mw
+62077	khai	KE	1P				2	krm,mw
+62523	gaṇ	gaR	10P,10Ā				6	apte,mw,pw,pwg,skd,vcp
+62868	gad	gad	1P,10P	466	366	AV|V|B|S|E|C	3	mw,pw,pwg
+63409	gam	gam	1P,2P,3P,1Ā	18341	5	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+63862	garj	garj	1P	179	837	E|C	6	apte,krm-body,mw,pw,pwg,vcp
+63914	gard	gard	1P,10	1	8645			
+64179	garh	garh	1,10P,10Ā	185	816	RV|S|E	2	mw,pwg
+64198	gal	gal	1P,1Ā	212	732	E|C	6	ap,apte,mw,pwg,skd,vcp
+64493	gā	gA	3P,3Ā,2P,2Ā	3822	74	RV|AV|V|B|S|E|C	3	mw,pwg,vcp
+65024	gāh	gAh	1Ā,1P	69	1541	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+65341	gu	gu	1Ā,1P	0		RV|V	3	mw,pwg,vcp
+65392	guñj	guYj	1P	13	3300	C	3	mw,pwg,skd
+65883	gudh	guD	4P,9P,1Ā				1	krm
+65966	gumph	gumP	6P				1	pwg
+66258	guh	guh	1P,1Ā	468	364	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+66407	gūrdh	gUrD	10P	0				
+66434	gṛdh	gfD	4P,4Ā	61	1646	RV|AV|V|B|E|C	1	mw
+66808	gṝ	gF	9P,9Ā				6	ap,apte,krm-body,mw,skd,vcp
+66809	gṝ	gF	6P,6Ā				6	ap,apte,krm-body,mw,skd,vcp
+66852	gai	gE	1P,1Ā,2,3P	0			6	ap,apte,krm-body,mw,skd,vcp
+68437	grath	graT	9P,1P,1Ā	0		RV|V|B|S|E|C	2	mw,pwg
+68546	gras	gras	1P,1Ā	519	323	RV|V|B|S|E|C	4	apte,mw,pwg,skd
+68591	grah	grah	9P,9Ā				8	ap,apte,krm,krm-body,mw,pwg,skd,vcp
+69145	glah	glah	1Ā,1P	9	3807	AV	1	pwg
+69170	glai	glE	1P,1Ā,2P,2Ā				6	ap,apte,krm,mw,skd,vcp
+69219	ghaṭ	Gaw	1Ā,1P	119	1101	RV|AV|E|C	3	mw,pwg,vcp
+69346	ghaṭṭ	Gaww	1Ā,10P	2	6751	E|C	4	mw,pw,pwg,vcp
+69692	ghas	Gas	1	73	1485	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+69841	ghuṣ	Guz	1P,1Ā	30	2339	RV|AV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+69925	ghūrṇ	GUrR	1P,1Ā	53	1778	S|E|C	4	mw,pwg,skd,vcp
+69935	ghṛ	Gf	3P,1,10P	25	2547	RV|AV|V|B|S	6	ap,apte,krm-body,mw,pwg,vcp
+70114	ghṛṣ	Gfz	1P,1Ā	156	910	RV|S|E|C	3	mw,skd,vcp
+70246	ghrā	GrA	1,3P,3Ā,2P	130	1040	AV|V|B|S|E|C	8	ap,apte,krm,krm-body,mw,pwg,skd,vcp
+70764	cañc	caYc	1P	23	2620	C	1	pwg
+70830	caṭ	caw	1P	2	6701	E|C	2	mw,pwg
+71515	can	can		2	6696	RV|V|B	1	pwg
+72173	car	car	1Ā,1P	4027	30	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+72401	carc	carc	1,10Ā	0		S|E|C	4	ap,apte,pwg,vcp
+72562	carv	carv	10,1	151	931	S|C	4	ap,apte,pwg,vcp
+72587	cal	cal	1Ā	491	341	RV|AV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+73297	ci	ci	5Ā,5P	1526	221	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+73362	ci	ci	3Ā,5Ā	1526	221	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+73474	cit	cit	1,2Ā,3Ā,3P	266	608	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+74627	cumb	cumb	1Ā	71	1510	E|C	3	ap,mw,pwg
+74801	cūrṇ	cUrR	10				4	mw,pwg,skd,vcp
+74874	cūṣ	cUz	1	22	2670	E|C	4	mw,pwg,skd,vcp
+75390	chad	Cad	1,10Ā	270	599	V|B|S|E|C	4	mw,pwg,skd,vcp
+75556	chad	Cad	10,1Ā	270	599	V|B|S|E|C	4	mw,pwg,skd,vcp
+75712	chal	Cal	10P				2	mw,pwg
+75907	chid	Cid	7,9Ā	2139	64	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+76102	chṛd	Cfd	7P,7Ā,1Ā	15	3109	B|S|C	1	mw
+76187	jakṣ	jakz	2Ā	228	1138	RV|AV|V|B|C	3	pw,pwg,skd
+76735	jan	jan	1,10Ā,10P,3Ā,10,4,2Ā,1Ā	9247	13	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+77153	jap	jap	1Ā	1702	81	B|S|E|C	5	ap,apte,mw,pwg,vcp
+78427	jāgṛ	jAgf	2,1Ā				6	ap,apte,krm-body,mw,skd,vcp
+79180	ji	ji	1Ā,9Ā	8164	29	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+79399	jinv	jinv	1P,1Ā				2	mw,pwg
+79622	jīv	jIv	1Ā	2222	61	AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+80005	jur	jur	4,6P,6Ā	0			2	mw,pwg
+80017	juṣ	juz	6Ā,6P,3P,1P,1Ā	1226	123	RV|AV|V|B|S|E|C	5	krm-body,mw,pw,pwg,vcp
+80120	jṛ	jf	1Ā	2828	107	RV|AV|V|B|S|C	2	mw,vcp
+80153	jṝ	jF	1P,4P,4Ā,1Ā,9,10Ā				6	ap,apte,krm-body,mw,skd,vcp
+80318	jñā	jYA	9P,9Ā,3Ā,3P	5041	22	RV|AV|V|B|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+80523	jyā	jyA	9P,4Ā	93	1273	RV|AV|V|B|S|E	2	krm-body,pwg
+80857	jvar	jvar	1	8	3987	RV|AV|C	7	ap,apte,mw,pw,pwg,skd,vcp
+80890	jval	jval	1P,1Ā	827	200	B|S|E|C	3	mw,pwg,vcp
+81442	ḍī	qI	1,4Ā	0		E|C	4	mw,pwg,skd,vcp
+81523	ḍhauk	QOk	1Ā	10	3763	E|C	3	mw,pwg,vcp
+81602	takṣ	takz	1P,1Ā,2,5Ā	161	897	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+81685	taḍ	taq	10	1	10259	AV|V|E|C	6	ap,apte,mw,pwg,skd,vcp
+82220	tan	tan	4	1432	229	RV|AV|V|B|S|E|C	7	ap,apte,krm-body,mw,pw,pwg,vcp
+82226	tan	tan	8P,8Ā	1432	229	RV|AV|V|B|S|E|C	7	ap,apte,krm-body,mw,pw,pwg,vcp
+82608	tap	tap	1Ā,4,4Ā,4P	2065	66	RV|AV|V|B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+82867	tam	tam	4Ā	99	1230	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+83341	tark	tark	10	0		B|S|E|C	7	ap,apte,krm-body,mw,pwg,skd,vcp
+83427	tarj	tarj	1Ā	9	3885	E|C	6	ap,apte,mw,pw,pwg,vcp
+84753	tij	tij	1P	6	4622	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+85813	tuj	tuj	6Ā,6P,1	35	2203	RV|V|E|C	1	pwg
+85879	tud	tud	6P	99	1231	RV|AV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+86105	tul	tul	10Ā	0		B|S|E|C	5	mw,pw,pwg,skd,vcp
+86265	tuṣ	tuz	4	840	196	V|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+86723	tṛp	tfp	4,5,6Ā,6P,1Ā	696	235	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+86774	tṛṣ	tfz	4Ā	55	1752	RV|AV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+86817	tṝ	tF	1P,1Ā,5,3,6P,6Ā				6	ap,apte,krm-body,mw,skd,vcp
+87337	tyaj	tyaj	1P,1Ā	2417	52	RV|V|B|S|E|C	4	mw,pwg,skd,vcp
+87510	tras	tras	1,4Ā	267	606	AV|V|B|S|E|C	5	ap,apte,mw,pwg,vcp
+89316	dakṣ	dakz	1P,1Ā	8	3977	RV|V|B	4	ap,apte,pwg,vcp
+90246	dam	dam	4P,9Ā	342	491	RV|V|B|S|E	6	ap,apte,mw,pwg,skd,vcp
+90700	dal	dal	1	27	2451	B|E|C	6	apte,mw,pw,pwg,skd,vcp
+91164	dah	dah	1P,1Ā	2275	58	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+91212	dā	dA	3Ā,1Ā	48032	7	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+91425	dā	dA	4P	48032	7	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+91851	dāś	dAS	1P,1Ā,2,5P	290	565	RV|AV|V|B	3	mw,pw,pwg
+92229	div	div	4	110	1152	RV|V	6	krm-body,mw,pw,pwg,skd,vcp
+92472	diś	diS	3P,6	186	810	RV|AV|V|B|S|E|C	9	ap,apte,krm,krm-body,mw,pw,pwg,skd,vcp
+92642	dih	dih	2P,2Ā	185	815	RV|AV|V|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+92769	dīp	dIp	4Ā	1162	137	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+94747	duṣ	duz	4P	829	199	AV|V|B|S|E|C	4	mw,pw,pwg,skd
+94848	duh	duh	2P,2Ā,6P,6Ā,4Ā	806	203	RV|AV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+95068	dṛṃh	dfMh	1P,1Ā,4P,4Ā				1	mw
+95246	dṛp	dfp	4P	106	1177	RV|V|E|C	6	ap,apte,krm,mw,skd,vcp
+95263	dṛś	dfS	0P,0Ā	14866	6	RV|AV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+95496	dṝ	dF	9P,2P,2Ā				5	krm,krm-body,mw,skd,vcp
+97391	dyut	dyut	1Ā,1P	75	1455	RV|AV|V|B|E|C	6	ap,apte,mw,pwg,skd,vcp
+97755	drā	drA	2P,2Ā	42	2729	AV|V|B|E|C	5	krm-body,mw,pwg,skd,vcp
+97846	dru	dru	1P,1Ā	1073	156	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+97951	druh	druh	4P,4Ā	70	1522	RV|AV|V|B|E|C	3	mw,pwg,vcp
+98962	dviṣ	dviz	2P,2Ā	1343	112	RV|AV|V|B|S|E|C	5	krm,mw,pwg,skd,vcp
+99257	dhan	Dan	3P	2	6714	RV	2	mw,pwg
+99639	dhanv	Danv	1P,1Ā	47	1897	RV|V|B	2	mw,pwg
+99700	dham	Dam	1P,1Ā	1162	136	RV|AV|V|B|E|C	3	mw,pwg,skd
+100554	dhav	Dav	1Ā	3	5803	RV	1	pwg
+100607	dhā	DA	3P,3Ā,1P,1Ā,2P,4Ā,4P	9388	26	RV|AV|V|B|S|E|C	6	ap,krm-body,mw,pw,pwg,vcp
+101159	dhāv	DAv	1P,1Ā	1164	275	RV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+101170	dhāv	DAv	1P,1Ā	1164	275	RV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+101184	dhi	Di	6P	31	2304	B	5	krm-body,mw,pwg,skd,vcp
+101212	dhiṣ	Diz	3P					
+101254	dhī	DI	3Ā	52	1796	RV|V|B	2	mw,pwg
+101481	dhū	DU	5P,5Ā,6P,9P,9Ā,1P,2Ā	245	639	RV|AV|V|B|S|E|C	5	krm-body,mw,pw,pwg,vcp
+101815	dhṛ	Df	1P,1Ā	1229	122	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+101933	dhṛṣ	Dfz	5P,1P	133	1017	RV|AV|V|B|E|C	6	ap,apte,krm-body,mw,skd,vcp
+102003	dhe	De	1P				1	mw
+102185	dhyai	DyE	1P,2				6	ap,apte,krm-body,mw,skd,vcp
+102398	dhvaṃs	DvaMs	1P,1Ā	130	1038	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+102497	dhvan	Dvan	1P	32	2271	RV|AV|V|B|S|E|C	7	ap,apte,krm-body,mw,pw,pwg,vcp
+102614	dhvṛ	Dvf	1P,1Ā	12	3413	RV|AV|E|C	1	krm-body
+102824	nakṣ	nakz	1P,1Ā	57	1716	RV|V	2	mw,pwg
+103176	naṭ	naw	1P	6	4491	E|C	4	mw,pwg,skd,vcp
+103308	nad	nad	1P	460	370	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+103420	nand	nand	1P	129	1051	RV|AV|V|B|E|C	5	krm-body,mw,pw,pwg,vcp
+103699	nabh	naB	1Ā,1P,4,9P,9Ā	40	2065	RV|V|B|S	2	mw,pwg
+103825	nam	nam	1P,1Ā	666	248	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+104307	nard	nard	1P	116	1125	B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+104757	naś	naS	1P,1Ā	2836	106	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+104760	naś	naS	4P,1P	2836	106	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+104854	nah	nah	4P,4Ā	131	1031	AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+105448	nāth	nAT	1Ā	52	1801	RV|V|B|E|C	3	mw,pwg,skd
+108251	nij	nij	2Ā,3P,3Ā	21	2732	AV|V|B|S|E|C	2	mw,pwg
+108659	nind	nind	1P	649	251	RV|AV|V|S|E|C	3	mw,pw,pwg
+111189	nī	nI	1P,1Ā	2350	55	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+111762	nu	nu	2,6P,6Ā	2	9029	RV|V|B|S|E|C	4	mw,pwg,skd,vcp
+111772	nud	nud	6P,6Ā	332	503	RV|V|B|S|E|C	5	apte,mw,pwg,skd,vcp
+112031	nṛt	nft	4P	353	475	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+113414	pac	pac	1P,1Ā,4Ā	2058	67	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+113507	paj	paj	0Ā	0		V|B|S	1	mw
+114263	paṭ	paw	1P,10	0		B|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+114524	paṭh	paW	1P	582	276	S|E|C	5	mw,pw,pwg,skd,vcp
+114550	paṇ	paR	1Ā	36	2166	AV|V|B|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+114698	pat	pat	1P,1Ā	6246	38	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+115170	pad	pad	4Ā	134	1015	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+115833	pan	pan	1Ā	8	4002	RV|V|B|S	2	mw,pwg
+120516	paś	paS	0P,0Ā	9464	24	RV|AV|V|B|C	3	mw,pwg,vcp
+120795	pā	pA	1P,1Ā,2Ā,2P	16179	21	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+120935	pā	pA	2P,2Ā	16179	21	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+122352	pāy	pAy	1Ā	0		B		
+123508	pich	piC	10P,6P					
+123559	piñj	piYj	2Ā,10P					
+124422	piś	piS	6P,6Ā	36	2167	RV|AV|V|B	3	mw,pw,pwg
+124541	piṣ	piz	7P,7Ā	1062	158	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+124606	pī	pI	1Ā,2Ā,3P,3Ā	14	4290		2	mw,pwg
+124649	pīḍ	pIq	10P	2	7155	AV|B|S|E|C	5	ap,apte,mw,pwg,vcp
+124968	pīy	pIy	1P	0		RV|AV|V|B	2	mw,pwg
+125192	puṭ	puw	6P,1P,10P	418	409	B|C	4	mw,pw,pwg,vcp
+125645	puth	puT	4P,4Ā	0		E	2	mw,pwg
+126760	puṣ	puz	1P,4P,9P	438	390	RV|AV|V|B|S|E|C	3	mw,pwg,vcp
+127307	pū	pU	9P,9Ā,1Ā,1P	2162	63	RV|AV|V|B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+127377	pūj	pUj	10P,10Ā,1P	0		RV|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+127469	pūy	pUy	1P,1Ā	10	3700	AV|B|S	1	mw
+128300	pṛ	pf	3P,9P	4536	99	RV|AV|V|B|S|E|C	2	krm-body,mw
+128314	pṛc	pfc	7P,7Ā,2,1P,3P,3Ā	133	1019	RV|AV|V|B|S|E	3	mw,skd,vcp
+128909	pṝ	pF	9P,6P,3P,3Ā				7	ap,apte,krm,krm-body,mw,skd,vcp
+129743	pyai	pyE	1Ā				1	mw
+130824	prach	praC	6P,6Ā	2851	40	RV|AV|V|B|E|C	2	mw,pwg
+134465	prath	praT	1Ā,1P	365	463	RV|V|B|S|E|C	4	mw,pw,pwg,vcp
+138761	prā	prA	2P,2Ā	40	2070	RV|AV|V|B|S	3	krm-body,mw,pwg
+140436	prī	prI	9P,9Ā,4Ā,4P	1770	80	RV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+140856	pru	pru	1Ā	0		RV|V|B	2	mw,pwg
+140858	pruth	pruT	1P,1Ā	7	4285	RV|V|B	2	mw,pwg
+140871	pruṣ	pruz	5P,5Ā,10P,10Ā,9P,4P	7	4286	RV|AV|V|B	2	mw,pwg
+141468	plu	plu	1Ā,1P	297	555	AV|V|B|S|E|C	7	apte,krm-body,mw,pw,pwg,skd,vcp
+141564	pluṣ	pluz	1,4P,9P	21	2735	V|B|E|C	1	pwg
+141584	psā	psA	2P	6	4565	AV|B|C	4	mw,pwg,skd,vcp
+141623	phaṇ	PaR	1P	0		RV|V|B	2	mw,pwg
+142512	bandh	banD	9P,9Ā,1P,1Ā,4P,4Ā	2654	47	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+144318	bādh	bAD	1Ā,1P	456	376	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+145569	budh	buD	1P,1Ā,4Ā,4P	1118	145	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+146034	bṛh	bfh	6P	0		RV|AV|V|B|S|E|C	2	mw,pwg
+146037	bṛh	bfh	1P	0		RV|AV|V|B|S|E|C	2	mw,pwg
+147490	brū	brU	2P,2Ā	9781	10	AV|V|E	2	mw,pwg
+147534	bhakṣ	Bakz	10P,10Ā,1P,1Ā	162	886	V|B|S|E|C	5	apte,mw,pwg,skd,vcp
+147598	bhaj	Baj	1P,1Ā	1164	134	RV|AV|V|B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+147928	bhañj	BaYj	7P,7Ā	754	223	RV|AV|V|S|E|C	3	mw,pwg,skd
+148185	bhaṇ	BaR	1P	73	1483	C	2	mw,pwg
+148252	bhand	Band	1Ā	5	4786	V|B|S	1	pwg
+148908	bharts	Barts	10Ā,10P,1	6	4467	AV|E	2	mw,pwg
+149277	bhaṣ	Baz	1P,1Ā	11	3522	E|C	2	pwg,vcp
+149289	bhas	Bas	3P	25	2545	RV|V|B|S|E|C	3	mw,pwg,skd
+149418	bhā	BA	2P	741	227	V|B|S|E|C	9	ap,apte,krm,krm-body,mw,pw,pwg,skd,vcp
+150479	bhāṣ	BAz	1Ā,1P	1532	96	B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+150552	bhās	BAs	1Ā,1P	112	1146	RV|AV|B|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+150663	bhikṣ	Bikz	1Ā,1P	103	1194	V|B|S|E|C	1	pwg
+150727	bhid	Bid	7P,7Ā,1P	2047	68	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+150969	bhī	BI	3P,3Ā,1Ā,10P,10Ā	1384	110	RV|AV|V|B|S|E|C	5	krm-body,mw,pw,pwg,vcp
+151217	bhuj	Buj	6P	5450	46	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+151348	bhuj	Buj	7P,7Ā,6P,6Ā	5450	46	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+151434	bhur	Bur	0P,0Ā	3	5788	RV|V	2	mw,pwg
+151456	bhū	BU	1P,1Ā	40393	2	RV|AV|V|B|S|E|C	9	ap,apte,krm,krm-body,mw,pw,pwg,skd,vcp
+152466	bhūṣ	BUz	1P,1Ā	48	1875	RV|V|E|C	6	ap,apte,mw,pwg,skd,vcp
+152494	bhṛ	Bf	1P,1Ā,3P,3Ā,2P,2Ā	1822	77	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+153448	bhraṃś	BraMS	1Ā,1P,4P,4Ā	340	493	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,skd
+153489	bhrajj	Brajj	6P,6Ā				2	mw,pwg
+153524	bhram	Bram	1P,4P	592	271	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+153678	bhrāj	BrAj	1Ā,1P	219	715	RV|AV|V|B|S|E|C	2	mw,pwg
+153766	bhrī	BrI	9P	1	8533		1	krm-body
+153856	bhreṣ	Brez	1P,1Ā	4	5214	B	1	pwg
+153892	maṃh	maMh	1Ā,10	0		RV|AV|V|B|S|E|C	2	mw,pwg
+153911	makamakāya	makamakAya	0Ā					
+154347	majj	majj	6P	343	488	RV|AV|V|B|S|E|C	3	mw,pw,pwg
+154854	maṇḍ	maRq	1P,1Ā	0		E|C	2	pwg,vcp
+155187	math	maT	1,9P,9Ā	475	357	RV|AV|V|B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+155288	mad	mad	4P,1P,1Ā,3P,3Ā	1085	155	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+156626	man	man	8,4Ā	4697	25	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+157643	mand	mand	1Ā,1P				2	mw,pwg
+157684	mand	mand					2	mw,pwg
+159151	mah	mah	1,10P,10Ā	60	1664		2	mw,pwg
+161693	mā	mA	3P,3Ā	2040	242	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+161697	mā	mA	2P,3Ā,4Ā	2040	242	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+163363	mārg	mArg	1,10P,10Ā	94	1264	E	3	mw,pwg,skd
+164084	mi	mi	5P,5Ā	99	1226		3	mw,pwg,vcp
+164311	mith	miT	1P,1Ā	6	4488	RV|V|B|S	3	krm-body,mw,pwg
+164438	mid	mid	1Ā,4P,10P	0			2	mw,pwg
+164465	mil	mil	6P,6Ā	346	482	B|C	3	mw,pwg,skd
+164547	miṣ	miz	6P	83	1370	RV|V|B|C	5	krm-body,mw,pwg,skd,vcp
+164576	mih	mih	1P,1Ā	70	1524	RV|AV|V|B|S|E|C	3	mw,pwg,vcp
+164607	mī	mI	9P,9Ā	103	1197	RV|AV|V|B|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+164715	mīl	mIl	1P,1Ā	6	4489	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+164724	mīv	mIv	1P	0		AV|V|B|S	2	mw,pwg
+165082	muc	muc	6P,6Ā	3850	32	RV|AV|V|B|E|C	5	mw,pw,pwg,skd,vcp
+165450	mud	mud	1Ā,1P	612	264	AV|V|B|E|C	5	mw,pw,pwg,skd,vcp
+165763	murch	murC	1P				1	mw
+165859	muṣ	muz	9,1P,6P	162	888	RV|V|B|S|E|C	3	mw,pwg,vcp
+166006	muh	muh	4P,4Ā	1103	150	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+166607	mṛ	mf	6Ā,6P,1P,1Ā	5230	48	RV|AV|V|B|S|E|C	5	ap,apte,mw,skd,vcp
+166791	mṛg	mfg	4P,10Ā,10P				4	mw,pwg,skd,vcp
+167121	mṛj	mfj	2P,2Ā,6P,6Ā,1P,1Ā,10	298	553	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+167161	mṛḍ	mfq	6P,6Ā,9P,10	131	1030	RV|AV|V|B|S|C	1	mw
+167219	mṛd	mfd	9P,1P,1Ā	692	236	RV|AV|V|B|S|E|C	5	ap,mw,pwg,skd,vcp
+167410	mṛdh	mfD	1P,1Ā,6P,6Ā	22	2677	RV|V|B|S		
+167423	mṛś	mfS	6P,6Ā	33	2247	RV|AV|V|B|E|C	3	mw,skd,vcp
+167430	mṛṣ	mfz	4P,4Ā,1P,1Ā,10	150	937	RV|V|S|E|C	2	mw,skd
+168318	mokṣ	mokz	1Ā,10P,10Ā	3	5849		4	mw,pw,pwg,skd
+168870	mnā	mnA	1P	2	6810	S|C	7	ap,apte,krm-body,mw,pwg,skd,vcp
+168872	myakṣ	myakz	1P	13	3306	RV	3	mw,pw,pwg
+168873	mrakṣ	mrakz	1P,10				6	ap,apte,mw,pwg,skd,vcp
+168881	mrad	mrad	1Ā	1	8851		2	mw,pwg
+168891	mruc	mruc	1P	3	5850	RV|AV|V|B|S|E|C	2	mw,pwg
+168901	mluc	mluc	1P	0			2	mw,pwg
+168905	mlech	mleC	1P,10P	2	6809	B	1	pwg
+168938	mlai	mlE	1P				3	krm-body,mw,skd
+169114	yaj	yaj	1P,1Ā	6755	16	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+169552	yat	yat	1Ā,1P,10Ā,10P	548	298	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+170253	yabh	yaB	1P,1Ā	1	10918	AV|B|C	2	mw,pwg
+170258	yam	yam	1P,1Ā	1093	153	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+171002	yas	yas	4P	2	7603	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+171018	yā	yA	2P	5649	20	RV|AV|V|B|S|E|C	7	apte,krm-body,mw,pw,pwg,skd,vcp
+171236	yāc	yAc	1P,1Ā	755	222	RV|AV|V|B|S|E|C	3	mw,pwg,vcp
+171682	yu	yu	3P,3Ā	398	771	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+171694	yu	yu	2P,2Ā,6,9	398	771	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+171731	yuj	yuj	7P,7Ā	5933	19	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+172012	yudh	yuD	4Ā,4P,1P	1267	118	RV|AV|V|B|E|C	5	apte,mw,pwg,skd,vcp
+172139	yup	yup	4P	11	3622	AV|V|B	2	mw,pwg
+173028	raṃh	raMh	1P,1Ā,10P	11	3577	RV|AV|V|B|E|C		
+173050	rakṣ	rakz	1P,1Ā	1929	73	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+173266	rac	rac	10P	1	9715	E|C	2	mw,pwg
+173342	rañj	raYj	1,4P,4Ā				5	ap,mw,pwg,skd,vcp
+174063	raṭ	raw	1P	10	3702	E|C	4	mw,pw,pwg,skd
+174075	raṇ	raR	1,4P				3	mw,pw,pwg
+174197	raṇ	raR	1P				3	mw,pw,pwg
+174789	rad	rad	1P,1Ā	34	2226	RV|AV|V|B|C	3	mw,pwg,vcp
+174809	radh	raD	4P	45	1950	RV|AV|V|C	2	mw,pwg
+174860	rap	rap	1P	11	3576	RV|AV|V	3	mw,pw,pwg
+174863	rapś	rapS		5	4910	RV|V|B	2	mw,pwg
+174867	raph	raP	1P	0				
+174870	rabh	raB	1Ā	67	1566	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+174928	ram	ram	1Ā,1P	1553	93	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+175478	ras	ras	1P,1Ā	51	1822	B|E|C	4	mw,pwg,skd,vcp
+175485	ras	ras	10P,10Ā	51	1822	B|E|C	4	mw,pwg,skd,vcp
+175925	rah	rah	1P,10P	15	3140	RV|B|S|E|C	3	mw,pwg,skd
+176008	rā	rA	2P,2Ā	428	728	RV|AV|V|B|S|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+176246	rāj	rAj	1P,1Ā	405	428	RV|AV|V|B|S|E	5	mw,pw,pwg,skd,vcp
+177153	rādh	rAD	5,4P	240	653	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+177844	rās	rAs	1Ā	0		B|E|C	1	pwg
+177953	rikh	riK	1P,6P	0		E	2	mw,pwg
+177954	riṅkh	riNK	1P				1	pwg
+177968	riṅg	riNg	1P				1	pwg
+177975	ric	ric	7P,7Ā,1P,4Ā,10	206	750	RV|V|B|E|C	4	mw,pwg,skd,vcp
+178040	rip	rip		3	6039	V	2	mw,pwg
+178088	riph	riP	6P	1	9726	AV|B|S	2	mw,pwg
+178103	ribh	riB	1P,1Ā	26	2510	V|B|C	2	mw,pwg
+178131	riś	riS	6P	2	7163	AV|V	2	mw,pwg
+178139	riṣ	riz	1,4P	257	622	RV|AV|V|B|S|E|C	4	mw,pw,pwg,skd
+178173	rih	rih	6,2P,2Ā	47	1902	RV|AV|V|B	2	mw,pwg
+178179	rī	rI	9P,4P,4Ā	60	1665		3	krm-body,mw,pwg
+178213	ru	ru	2P	172	1345	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+178231	ru	ru	1Ā	172	1345	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+178244	ruc	ruc	1Ā,1P	501	336	RV|AV|V|B|E|C	5	mw,pw,pwg,skd,vcp
+178446	ruj	ruj	6P,10	129	1054	RV|AV|V|B|E|C	4	mw,pwg,skd,vcp
+178489	ruṭh	ruW	1P,1Ā	0				
+178506	rud	rud	2P	669	247	AV|V|B|S|E|C	5	ap,mw,pwg,skd,vcp
+178751	rudh	ruD	1P	1784	184	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+178755	rudh	ruD	7P,7Ā	1784	184	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+178856	rup	rup	4P	6	4568	RV|AV	1	pwg
+178902	ruś	ruS	6P					
+178916	ruṣ	ruz	1,4P,4,10	102	1208	RV|AV|S|E|C	2	mw,pwg
+178960	ruh	ruh	1P	487	344	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+179276	rūṣ	rUz	1P,10P	0		V|E|C	2	mw,pwg
+179363	rej	rej	1P,1Ā	40	2071	V	2	mw,pwg
+180331	lakṣ	lakz	1Ā,1P,10P,10Ā	39	2091	V|B|S|E|C	5	apte,mw,pwg,skd,vcp
+180704	lag	lag	1P,10	236	663	E|C	3	mw,pwg,skd
+181121	laṅgh	laNG	1P,1Ā,10P	32	2273	S|E|C	3	mw,pw,pwg
+181156	lajj	lajj	6Ā	109	1155	E|C	2	mw,pwg
+181338	lap	lap	1P	26	2499	AV|B|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+181359	labh	laB	1Ā	3345	35	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+181488	lamb	lamb	1Ā	130	1041	B|E|C	4	mw,pwg,skd,vcp
+181587	lal	lal	1P,1Ā	101	1215	E|C	5	mw,pw,pwg,skd,vcp
+181985	laṣ	laz	1,4P,4Ā,10P	0		E|C	5	mw,pw,pwg,skd,vcp
+181992	las	las	1P,10	59	1680	B|E|C	4	mw,pwg,skd,vcp
+182054	lā	lA	2P	0			2	pwg,skd
+182184	lāñch	lAYC	1P	0		C	1	pwg
+182337	likh	liK	6P,6Ā	509	328	AV|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+182615	lip	lip	6,1P,1Ā	778	214	AV|B|S|E|C	6	ap,mw,pw,pwg,skd,vcp
+182704	liś	liS	4Ā,6P	7	4213	V|B|E	3	mw,pw,pwg
+182726	lih	lih	2P,2Ā	405	426	B|S|E|C	6	krm,mw,pw,pwg,skd,vcp
+182753	lī	lI	9P,1P,4Ā,4P	536	603	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+182888	luñc	luYc	1P	11	3535	E|C	2	mw,pwg
+182902	luṭ	luw	1,4P,1Ā,10P				2	pw,pwg
+182907	luṭh	luW	1P,1Ā,10P	52	2500	C	3	mw,pw,pwg
+182908	luṭh	luW	6P	52	2500	C	3	mw,pw,pwg
+182922	luḍ	luq	1P,6P	1	8818	S|E|C	3	mw,pw,pwg
+182926	luṇṭ	luRw	1P,10P				2	mw,pwg
+182956	lup	lup	6P,6Ā,4P,4Ā	117	1122	AV|B|S|E|C	3	mw,pw,pwg
+183010	lubh	luB	6P,4P	325	508	AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+183058	lul	lul	1P,1Ā	42	2016	E|C	1	pwg
+183125	lū	lU	9P,9Ā	81	1396	B|S|C	7	ap,apte,mw,pw,pwg,skd,vcp
+183229	lok	lok	1Ā,10	0		S|E|C	5	mw,pw,pwg,skd,vcp
+183561	loc	loc	1Ā,10P	0		E|C	4	apte,mw,pwg,vcp
+184521	vakṣ	vakz	1P	45	1963	RV|V	1	pwg
+184615	vac	vac	2P,3P,3Ā	33948	4	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+185127	vañc	vaYc	1P,1Ā	24	2601	RV|AV|V|B|S|E|C	4	mw,pw,pwg,skd
+185343	vaṇṭ	vaRw	1,10P	1	10588		1	pwg
+185521	vad	vad	1P,1Ā	3914	31	RV|AV|V|B|S|E|C	6	apte,mw,pw,pwg,skd,vcp
+185579	vadh	vaD		1236	121	RV|AV|V|B|S|E	2	mw,pwg
+185710	van	van	1P,8P,8Ā	220	714	RV|AV|V|B|S|E|C	5	krm-body,mw,pw,pwg,vcp
+186179	vand	vand	1Ā	632	258	RV|V|B|E|C	4	mw,pwg,skd,vcp
+186277	vap	vap	1P,1Ā	640	520	AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+186291	vap	vap	1P,1Ā	640	520	AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+186417	vam	vam	1P	223	703	V|B|E|C	5	krm,krm-body,mw,pwg,skd
+187289	varṇ	varR	10P				5	mw,pw,pwg,skd,vcp
+187679	vardh	varD	10P				3	mw,pw,pwg
+188075	val	val	1Ā,1P	54	1770	E|C	6	ap,apte,mw,pwg,skd,vcp
+188205	valg	valg	1P,1Ā	42	2030	AV|V|E|C	4	mw,pwg,skd,vcp
+188394	vaś	vaS	2P,1,3	302	548	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+188560	vas	vas	6P	7614	49	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+188997	vas	vas	10P	7614	49	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+188998	vas	vas	2Ā	7614	49	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+189096	vas	vas	1P,10P	7614	49	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+189238	vah	vah	1P,1Ā	1845	75	RV|AV|V|B|S|E|C	7	krm,krm-body,mw,pw,pwg,skd,vcp
+189436	vā	vA	2P	596	554	RV|AV|V|B|S|E|C	6	krm-body,mw,pw,pwg,skd,vcp
+190461	vāñch	vAYC	1P	180	836	V|E|C	2	mw,pwg
+192249	vāś	vAS	4Ā	73	1496	RV|AV|V|S|E|C	3	mw,pwg,vcp
+192285	vās	vAs	10P				4	mw,pw,pwg,vcp
+192697	vāh	vAh	1Ā	1845	75		2	mw,pwg
+194682	vic	vic	7P,7Ā,3	16	4090	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+194956	vij	vij	6Ā,1P,3P,3Ā	27	2483	RV|V|B|E|C	4	mw,pw,pwg,vcp
+195626	vid	vid	2P	22628	8	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+195939	vid	vid	6P,6Ā	22628	8	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+197416	vip	vip	1Ā	156	913	RV|AV|V|B|E|C	3	mw,pw,pwg
+200376	viś	viS	6P,6Ā	1053	160	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+201614	viṣ	viz	3P,1P,3	29	2397	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+201878	viṣ	viz	9P	29	2397	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+203329	vī	vI	2P,2Ā	770	220	RV|AV|V|B|S|E	3	krm-body,mw,pwg
+203453	vīj	vIj	1P,1Ā,10	5	5068	E|C	3	mw,pwg,vcp
+203469	vīḍ	vIq	0P,0Ā	0		V|B|S		
+203978	vṛ	vf	5,9,1P,1Ā	4166	65	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+204040	vṛ	vf	5,9P,9Ā	4166	65	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+204309	vṛj	vfj	1,7P,2Ā	283	574	RV|AV|V|B|S|E|C	2	mw,skd
+204340	vṛt	vft	1Ā	2479	50	RV|AV|V|B|E|C	6	ap,apte,mw,pwg,skd,vcp
+204573	vṛdh	vfD	1Ā,1P,10	1619	89	RV|AV|V|B|S|E|C	5	ap,mw,pwg,skd,vcp
+204858	vṛṣ	vfz	1P,1Ā	580	280	RV|V|B|S|E|C	7	ap,apte,krm-body,mw,pw,pwg,vcp
+205271	ve	ve	1P,1Ā				3	mw,skd,vcp
+206222	ven	ven	1P	19	2880	RV|V|B	2	mw,pwg
+206315	vell	vell	1P	11	3611	E|C	5	krm,mw,pwg,skd,vcp
+206478	veṣṭ	vezw	1Ā	43	2000		4	mw,pwg,skd,vcp
+206544	vai	vE	1P,1Ā				2	krm-body,mw
+208354	vyac	vyac	6P,3	20	2821	RV|AV|V|B|S	2	mw,pwg
+208633	vyath	vyaT	1Ā	397	436	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+208671	vyadh	vyaD	4P,4Ā	1636	88	RV|AV|V|B|E|C	4	mw,pw,pwg,vcp
+210345	vye	vye	1P,1Ā				2	mw,vcp
+210432	vraj	vraj	1P,10P	1202	128	V|B|S|E|C	5	krm-body,mw,pwg,skd,vcp
+210711	vraśc	vraSc	6P	145	968	RV|AV|V|B|S|C	4	mw,pw,pwg,vcp
+210765	vrīḍ	vrIq	1Ā,4P,10P	84	1365	E|C	2	pwg,skd
+210822	vlī	vlI	9P	18	2952	RV|AV|B|S	3	krm-body,mw,pwg
+210841	śaṃs	SaMs	1P,1Ā	1785	79	RV|V|B|S|E|C	4	ap,mw,pwg,vcp
+210897	śak	Sak	5P	1952	71	RV|AV|V|B|S|E|C	3	mw,pw,pwg
+211426	śaṅk	SaNk	1Ā,1P	273	595	B|S|E	3	mw,pwg,vcp
+211740	śaṭh	SaW	1P,10P				2	pw,pwg
+212483	śad	Sad	1,6Ā,6P	38	2890	RV|AV|V|B|S|C	5	mw,pw,pwg,skd,vcp
+212543	śap	Sap	1,4P,4Ā	484	345	AV|V|B|S|E	4	mw,pw,pwg,skd
+212651	śabd	Sabd	10P				4	mw,pwg,skd,vcp
+212911	śam	Sam	4P,9	3477	138	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+214531	śas	Sas	1P	2	7662	RV|AV|V|B|S|E	3	mw,pwg,vcp
+215926	śāl	SAl	1Ā,1,10Ā				2	pw,pwg
+216290	śās	SAs	2P	1066	313	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+216481	śi	Si	3P,5P,5Ā				1	mw
+216517	śikṣ	Sikz	1P,1Ā	345	484		2	mw,pwg
+216845	śiñj	SiYj	2Ā,1,10Ā	12	3490	RV|V|B|E|C	2	mw,pwg
+218104	śiṣ	Siz	7P,10	194	787	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+218170	śī	SI	2Ā,1	2232	146	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+218177	śīk	SIk	1Ā,10				1	pwg
+218655	śīl	SIl	1P,10P				2	mw,pwg
+219184	śuc	Suc	1P,4P,4Ā	777	216	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+219366	śudh	SuD	1P,1Ā,4P,4Ā	2410	53	V|B|S|E|C	4	mw,pwg,skd,vcp
+219616	śubh	SuB	1Ā,6P,6Ā	547	302	RV|AV|V|B|E|C	5	mw,pw,pwg,skd,vcp
+219943	śuṣ	Suz	4P	332	873	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+220027	śuṣ	Suz	6P	332	873	AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+220772	śṛdh	SfD	1P,1Ā	23	2660	RV|V|B|C	1	mw
+220783	śṝ	SF	9P,9Ā				4	krm-body,mw,skd,vcp
+221333	śo	So	3P,3Ā,4P,4Ā				2	krm-body,mw
+221945	ścut	Scut	1P	13	3371	V|B|S|C	2	mw,pwg
+221953	śnath	SnaT	1P	21	2765	RV	3	mw,pw,pwg
+222309	śyai	SyE	1P,1Ā				2	mw,vcp
+222382	śrath	SraT	9P,9Ā	16	3092	RV|V|B|E|C	2	mw,pwg
+222401	śram	Sram	4P	382	450	RV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+222686	śrā	SrA	1,4P,2P	0		RV|AV|V|B|S|E	3	krm-body,mw,pwg
+222829	śri	Sri	1P,1Ā	451	381	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+222857	śrī	SrI	9P,9Ā	1288	253	RV|V|B|S	4	mw,pw,pwg,vcp
+223393	śru	Sru	5P,5Ā	10505	9	RV|AV|V|B|S|E|C	6	apte,krm-body,mw,pw,pwg,vcp
+223994	ślath	SlaT	1P	2	7668		2	mw,pwg
+224011	ślāgh	SlAG	1Ā	186	813	B|E	2	mw,pwg
+224043	śliṣ	Sliz	4P,4Ā	92	1291	RV|AV|B|E|C	4	mw,pwg,skd,vcp
+224373	śvas	Svas	2P	154	922	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+224480	śvi	Svi	1P				4	krm-body,mw,pwg,vcp
+225563	ṣṭhiv	zWiv	1,4P				4	mw,pwg,skd,vcp
+228852	sac	sac	1Ā,1P	323	516	RV|AV|V|B|S	2	mw,pwg
+229218	sañj	saYj	1P,1Ā				3	mw,pwg,vcp
+230505	sad	sad	1,6P	953	176	RV|AV|V|B|S|E|C	6	ap,apte,mw,pwg,skd,vcp
+231023	san	san	1P,8P,8Ā	196	777	RV|V|B|S|C	4	mw,pw,pwg,vcp
+232210	sap	sap	1P,1Ā	23	2640	RV|V|B|S	2	mw,pwg
+239787	sas	sas	2P	23	2641	RV		
+239967	sah	sah	1Ā,10	791	210	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+241500	sādh	sAD	1P,1Ā,4,5	86	1349	RV|V|B|S|E|C	4	mw,pw,pwg,vcp
+241986	sāntv	sAntv	10P,10Ā				2	mw,pwg
+243722	si	si	5,9P,9Ā	13	3348	AV|V|E	3	mw,pwg,skd
+244032	sic	sic	6P,6Ā	687	239	RV|AV|V|B|S|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+244298	sidh	siD	1P	4056	69	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+244301	sidh	siD	4P	4056	69	RV|AV|V|B|S|E|C	4	mw,pw,pwg,vcp
+244996	siv	siv	4P				5	ap,apte,mw,pwg,vcp
+245241	su	su	5P,5Ā	878	188	RV|V|B|S|E	5	krm-body,mw,pw,pwg,vcp
+250630	suh	suh	4P					
+250729	sū	sU	6P,6Ā	532	314	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+250739	sū	sU	2Ā	532	314	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+251301	sūd	sUd	1Ā,10	13	3350	RV|AV|V|B|E	7	ap,krm-body,mw,pw,pwg,skd,vcp
+251838	sṛ	sf	1,3P,3Ā,10P,10Ā	204	754	RV|AV|V|B|E|C	4	krm-body,mw,skd,vcp
+251924	sṛj	sfj	6P,6Ā	2749	43	RV|AV|V|B|S|E|C	5	ap,apte,mw,skd,vcp
+252008	sṛp	sfp	1P	192	792	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+252262	sev	sev	1Ā	1328	113	V|B|E|C	4	mw,pwg,skd,vcp
+252524	so	so	4P				3	mw,skd,vcp
+254077	skand	skand	1P,1Ā	247	635	RV|AV|V|B|S|E	5	mw,pw,pwg,skd,vcp
+254241	skambh	skamB	5,9P,1Ā	20	2804	RV|V|B|E|C	4	mw,pw,pwg,skd
+254257	sku	sku	5,9P,9Ā	1	10200	RV|AV|S	3	mw,pw,pwg
+254272	skhal	sKal	1P	118	1116	B|E|C	4	apte,mw,pwg,vcp
+254307	stan	stan	1P	20	2805	RV|AV|V|S|E|C	5	ap,apte,mw,pwg,vcp
+254463	stambh	stamB	5,9P,1Ā	291	562	RV|AV|V|B|E|C	4	mw,pw,pwg,vcp
+254590	stigh	stiG	5P,5Ā	0			1	mw
+254632	stu	stu	2P,2Ā	4408	62	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+254799	stubh	stuB	1P,1Ā	55	1751	RV|V|B|S|E|C	2	mw,pwg
+254842	stṛ	stf	5,9P,9Ā,5P,5Ā	334	501	RV|AV|V|B|S|E|C	2	mw,vcp
+255154	sthag	sTag	1P	0		C	1	pwg
+255316	sthā	sTA	1P,1Ā	9268	12	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+256200	snā	snA	2P,4P,4Ā	1648	86	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+256298	snih	snih	4P,1P,10P	125	1072	RV|V|B|E|C	2	mw,pwg
+256456	snu	snu	2P	3	6135	RV|B|S|E|C	4	mw,pw,pwg,vcp
+256488	spand	spand	1Ā	52	1809	AV|V|B|E|C	4	mw,pwg,skd,vcp
+256521	spardh	sparD	1Ā,1P				2	mw,pwg
+256550	spaś	spaS		0			3	mw,pw,pwg
+256588	spṛ	spf	5P	160	899	RV|AV|V|B|S	2	krm-body,mw
+256602	spṛś	spfS	6P	1059	159	RV|AV|V|B|S|E|C	3	mw,skd,vcp
+256712	spṛh	spfh	10P	34	2233	RV|V|S|E	1	mw
+256812	sphāy	sPAy	1Ā				6	ap,apte,krm-body,mw,pwg,vcp
+256860	sphuṭ	sPuw	6P,1P,1Ā	154	919	B|E|C	5	mw,pw,pwg,skd,vcp
+256968	sphur	sPur	6P	357	470		7	ap,apte,mw,pw,pwg,skd,vcp
+257015	sphul	sPul	6P				3	mw,pwg,vcp
+257075	smi	smi	1Ā	227	692	RV|V|B|S|E|C	3	mw,pwg,vcp
+257112	smṛ	smf	1P,1Ā	4142	28	AV|V|B|S|E|C	6	ap,apte,krm-body,mw,skd,vcp
+257403	syand	syand	1Ā	106	1179	RV|AV|V|B|S|E|C	5	ap,mw,pwg,skd,vcp
+257528	sraṃs	sraMs	1Ā	133	1021	RV|AV|V|B|S|E|C	2	mw,pwg
+257618	sriv	sriv	4P					
+257621	sru	sru	1P	538	311	RV|AV|V|B|S|E|C	5	krm-body,mw,pwg,skd,vcp
+258776	svaj	svaj	1Ā	39	2101	AV|V|B|E|C	1	mw
+258787	svad	svad	1Ā,1P	81	1401	RV|V|B|E|C	3	mw,pwg,vcp
+258909	svan	svan	1P	19	2877	RV|V|E	6	ap,apte,mw,pw,pwg,vcp
+258948	svap	svap	2P	1100	151	RV|AV|V|B|S|E|C	6	ap,apte,mw,pw,pwg,vcp
+259802	svid	svid	1Ā,1P	369	460	RV|AV|V|B|E|C	6	ap,apte,krm-body,mw,pwg,vcp
+259868	svṛ	svf	1P				2	krm-body,mw
+260291	had	had	1P,1Ā	0		E|C	1	pwg
+260297	han	han	2P,2Ā,1	8744	14	RV|AV|V|B|S|E|C	7	ap,apte,mw,pw,pwg,skd,vcp
+261643	hary	hary	1P,1Ā				3	mw,pw,pwg
+262056	has	has	1P	419	407	RV|AV|V|B|E|C	8	ap,apte,krm-body,mw,pw,pwg,skd,vcp
+262501	hā	hA	3Ā	5478	44	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+262507	hā	hA	3P,1	5478	44	RV|AV|V|B|S|E|C	5	mw,pw,pwg,skd,vcp
+262717	hi	hi	5P,5Ā	224	699	RV|AV|V|B|S|E|C	6	ap,krm-body,mw,pwg,skd,vcp
+262731	hiṃs	hiMs	1,7P,7Ā,10P	788	212	AV|V|B|S|E	2	mw,pwg
+263406	hīḍ	hIq	0P,0Ā	29	2371	RV|AV|V|B|E|C	1	pwg
+263443	hu	hu	3P,3Ā	6418	17	RV|AV|V|B|S|E|C	8	ap,apte,krm,krm-body,mw,pwg,skd,vcp
+263626	hṛ	hf	1P,1Ā	5584	42	RV|AV|V|B|S|E|C	6	ap,apte,krm-body,mw,skd,vcp
+263654	hṛ	hf	9Ā	5584	42	RV|AV|V|B|S|E|C	6	ap,apte,krm-body,mw,skd,vcp
+263915	hṛṣ	hfz	1P,1Ā,4P	1147	139	RV|AV|V|B|E|C	3	mw,skd,vcp
+264415	heṣ	hez	1Ā	26	2497	RV|V|E|C	2	mw,pwg
+264643	hnu	hnu	2Ā	6	4475	RV|AV|V|B|S|E|C	4	mw,pwg,skd,vcp
+264681	hras	hras	1P,1Ā	28	2410	B|S|C	2	mw,pwg
+264747	hrād	hrAd	1Ā	0		B|S|E	5	ap,apte,mw,pwg,vcp
+264772	hrī	hrI	3P	28	2411	RV|B|E|C	4	krm-body,pw,pwg,vcp
+264815	hreṣ	hrez	1Ā,1P	2	6758	E		
+264823	hlag	hlag	1Ā					
+264827	hlād	hlAd	1Ā	3	5819	V|B|E|C	4	mw,pw,pwg,vcp
+264858	hval	hval	1P	13	3302	S|E|C	2	mw,pwg
+264863	hvṛ	hvf	1P,1Ā	48	1878	RV|V|B|C	3	krm-body,mw,vcp
+264875	hve	hve	1P,1Ā				3	mw,skd,vcp
