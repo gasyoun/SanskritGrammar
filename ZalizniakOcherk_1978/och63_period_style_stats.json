@@ -1,0 +1,653 @@
+{
+  "instrument": "period_style_gradient.py over dcs_full.sqlite (dcs-conllu 04e0778); curated 41-text period map; metric semantics per module docstring (upos/mwt metrics annotation-robust; feats-based CONDITIONAL only)",
+  "period_map_size": 41,
+  "excluded": {
+    "Divyāvadāna": "Buddhist (hybrid) Sanskrit register, not a period sample",
+    "Aṣṭasāhasrikā": "Buddhist (hybrid) Sanskrit register, not a period sample",
+    "Saddharmapuṇḍarīkasūtra": "Buddhist (hybrid) Sanskrit register, not a period sample",
+    "Rājanighaṇṭu": "nighaṇṭu (lexicon): word lists, not sentences"
+  },
+  "corpus_tokens": 5688416,
+  "mapped_tokens": 4070236,
+  "periods": {
+    "vedic": {
+      "tokens": 837452,
+      "compound_member_pct": 12.23,
+      "mean_nominal_cluster": 2.06,
+      "nominal_share_pct": 43.31,
+      "noun_verb_ratio": 2.13,
+      "finite_passive_pct_CONDITIONAL": 2.72,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 150.83
+      }
+    },
+    "epic": {
+      "tokens": 1774663,
+      "compound_member_pct": 40.45,
+      "mean_nominal_cluster": 2.32,
+      "nominal_share_pct": 52.67,
+      "noun_verb_ratio": 2.89,
+      "finite_passive_pct_CONDITIONAL": 5.78,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 84.65
+      }
+    },
+    "classical": {
+      "tokens": 771257,
+      "compound_member_pct": 57.31,
+      "mean_nominal_cluster": 2.58,
+      "nominal_share_pct": 56.41,
+      "noun_verb_ratio": 3.28,
+      "finite_passive_pct_CONDITIONAL": 7.48,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 73.1
+      }
+    },
+    "puranic": {
+      "tokens": 686864,
+      "compound_member_pct": 48.07,
+      "mean_nominal_cluster": 2.36,
+      "nominal_share_pct": 56.4,
+      "noun_verb_ratio": 3.56,
+      "finite_passive_pct_CONDITIONAL": 7.13,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 74.3
+      }
+    }
+  },
+  "core_gradient": {
+    "compound_member_pct": {
+      "vedic_epic_classical": [
+        12.23,
+        40.45,
+        57.31
+      ],
+      "expected": "rising",
+      "monotonic": true,
+      "annotation_robust": true
+    },
+    "mean_nominal_cluster": {
+      "vedic_epic_classical": [
+        2.06,
+        2.32,
+        2.58
+      ],
+      "expected": "rising",
+      "monotonic": true,
+      "annotation_robust": true
+    },
+    "nominal_share_pct": {
+      "vedic_epic_classical": [
+        43.31,
+        52.67,
+        56.41
+      ],
+      "expected": "rising",
+      "monotonic": true,
+      "annotation_robust": true
+    },
+    "noun_verb_ratio": {
+      "vedic_epic_classical": [
+        2.13,
+        2.89,
+        3.28
+      ],
+      "expected": "rising",
+      "monotonic": true,
+      "annotation_robust": true
+    },
+    "finite_passive_pct_CONDITIONAL": {
+      "vedic_epic_classical": [
+        2.72,
+        5.78,
+        7.48
+      ],
+      "expected": "rising",
+      "monotonic": true,
+      "annotation_robust": false
+    }
+  },
+  "per_text": {
+    "Aitareyabrāhmaṇa": {
+      "period": "vedic",
+      "basis": "brāhmaṇa prose, ~800-600 BCE",
+      "tokens": 55243,
+      "compound_member_pct": 10.91,
+      "mean_nominal_cluster": 2.02,
+      "nominal_share_pct": 40.03,
+      "noun_verb_ratio": 2.14,
+      "finite_passive_pct_CONDITIONAL": 3.84,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 141.01
+      }
+    },
+    "Atharvaveda (Paippalāda)": {
+      "period": "vedic",
+      "basis": "AV saṃhitā, early 1st mill. BCE",
+      "tokens": 31212,
+      "compound_member_pct": 9.78,
+      "mean_nominal_cluster": 2.02,
+      "nominal_share_pct": 45.88,
+      "noun_verb_ratio": 2.32,
+      "finite_passive_pct_CONDITIONAL": 1.0,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 151.0
+      }
+    },
+    "Atharvaveda (Śaunaka)": {
+      "period": "vedic",
+      "basis": "AV saṃhitā, early 1st mill. BCE",
+      "tokens": 71249,
+      "compound_member_pct": 9.24,
+      "mean_nominal_cluster": 2.03,
+      "nominal_share_pct": 45.74,
+      "noun_verb_ratio": 2.24,
+      "finite_passive_pct_CONDITIONAL": 1.73,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 153.34
+      }
+    },
+    "Aṣṭāṅgahṛdayasaṃhitā": {
+      "period": "classical",
+      "basis": "Vāgbhaṭa, ~7th c. CE",
+      "tokens": 107515,
+      "compound_member_pct": 61.8,
+      "mean_nominal_cluster": 3.0,
+      "nominal_share_pct": 68.61,
+      "noun_verb_ratio": 5.41,
+      "finite_passive_pct_CONDITIONAL": 6.67,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 53.84
+      }
+    },
+    "Baudhāyanaśrautasūtra": {
+      "period": "vedic",
+      "basis": "śrautasūtra, late-Vedic, ~600-300 BCE",
+      "tokens": 39205,
+      "compound_member_pct": 16.84,
+      "mean_nominal_cluster": 2.07,
+      "nominal_share_pct": 43.36,
+      "noun_verb_ratio": 1.75,
+      "finite_passive_pct_CONDITIONAL": 1.35,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 163.93
+      }
+    },
+    "Bhāgavatapurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~9-10th c. CE (epic-imitative verse)",
+      "tokens": 77801,
+      "compound_member_pct": 47.79,
+      "mean_nominal_cluster": 2.44,
+      "nominal_share_pct": 57.68,
+      "noun_verb_ratio": 3.24,
+      "finite_passive_pct_CONDITIONAL": 4.91,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 77.21
+      }
+    },
+    "Bhāratamañjarī": {
+      "period": "classical",
+      "basis": "Kṣemendra, 11th c. CE",
+      "tokens": 85655,
+      "compound_member_pct": 55.19,
+      "mean_nominal_cluster": 2.43,
+      "nominal_share_pct": 56.71,
+      "noun_verb_ratio": 2.75,
+      "finite_passive_pct_CONDITIONAL": 5.22,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 84.61
+      }
+    },
+    "Bṛhatkathāślokasaṃgraha": {
+      "period": "classical",
+      "basis": "Budhasvāmin, ~8-9th c. CE",
+      "tokens": 62202,
+      "compound_member_pct": 48.97,
+      "mean_nominal_cluster": 2.42,
+      "nominal_share_pct": 45.43,
+      "noun_verb_ratio": 2.21,
+      "finite_passive_pct_CONDITIONAL": 15.39,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 77.22
+      }
+    },
+    "Carakasaṃhitā": {
+      "period": "epic",
+      "basis": "early medical prose (layered), ~100 BCE-200 CE core",
+      "tokens": 94852,
+      "compound_member_pct": 62.02,
+      "mean_nominal_cluster": 2.81,
+      "nominal_share_pct": 61.19,
+      "noun_verb_ratio": 4.56,
+      "finite_passive_pct_CONDITIONAL": 10.88,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 64.15
+      }
+    },
+    "Daśakumāracarita": {
+      "period": "classical",
+      "basis": "Daṇḍin prose kāvya, ~7th c. CE",
+      "tokens": 35188,
+      "compound_member_pct": 67.29,
+      "mean_nominal_cluster": 2.7,
+      "nominal_share_pct": 52.25,
+      "noun_verb_ratio": 2.69,
+      "finite_passive_pct_CONDITIONAL": 8.23,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 63.57
+      }
+    },
+    "Garuḍapurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~9-10th c. CE (epic-imitative verse)",
+      "tokens": 75739,
+      "compound_member_pct": 51.36,
+      "mean_nominal_cluster": 2.48,
+      "nominal_share_pct": 61.66,
+      "noun_verb_ratio": 4.71,
+      "finite_passive_pct_CONDITIONAL": 6.54,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 67.39
+      }
+    },
+    "Gopathabrāhmaṇa": {
+      "period": "vedic",
+      "basis": "late brāhmaṇa, ~600-400 BCE",
+      "tokens": 30459,
+      "compound_member_pct": 14.61,
+      "mean_nominal_cluster": 2.09,
+      "nominal_share_pct": 40.29,
+      "noun_verb_ratio": 2.11,
+      "finite_passive_pct_CONDITIONAL": 3.48,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 140.68
+      }
+    },
+    "Haribhaktivilāsa": {
+      "period": "classical",
+      "basis": "Gauḍīya ritual digest, 16th c. CE",
+      "tokens": 28884,
+      "compound_member_pct": 53.16,
+      "mean_nominal_cluster": 2.48,
+      "nominal_share_pct": 58.81,
+      "noun_verb_ratio": 4.12,
+      "finite_passive_pct_CONDITIONAL": 7.75,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 64.78
+      }
+    },
+    "Harivaṃśa": {
+      "period": "epic",
+      "basis": "MBh appendix, ~1-300 CE",
+      "tokens": 85975,
+      "compound_member_pct": 38.29,
+      "mean_nominal_cluster": 2.2,
+      "nominal_share_pct": 54.23,
+      "noun_verb_ratio": 3.03,
+      "finite_passive_pct_CONDITIONAL": 6.04,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 75.86
+      }
+    },
+    "Harṣacarita": {
+      "period": "classical",
+      "basis": "Bāṇa prose kāvya, ~7th c. CE",
+      "tokens": 33503,
+      "compound_member_pct": 71.12,
+      "mean_nominal_cluster": 2.96,
+      "nominal_share_pct": 62.03,
+      "noun_verb_ratio": 3.55,
+      "finite_passive_pct_CONDITIONAL": 9.22,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 41.46
+      }
+    },
+    "Jaiminīyabrāhmaṇa": {
+      "period": "vedic",
+      "basis": "brāhmaṇa prose, ~800-600 BCE",
+      "tokens": 53735,
+      "compound_member_pct": 12.43,
+      "mean_nominal_cluster": 2.03,
+      "nominal_share_pct": 35.03,
+      "noun_verb_ratio": 1.73,
+      "finite_passive_pct_CONDITIONAL": 3.95,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 155.76
+      }
+    },
+    "Kathāsaritsāgara": {
+      "period": "classical",
+      "basis": "Somadeva, 11th c. CE",
+      "tokens": 111298,
+      "compound_member_pct": 46.31,
+      "mean_nominal_cluster": 2.34,
+      "nominal_share_pct": 42.87,
+      "noun_verb_ratio": 2.12,
+      "finite_passive_pct_CONDITIONAL": 4.95,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 83.78
+      }
+    },
+    "Kāṭhakasaṃhitā": {
+      "period": "vedic",
+      "basis": "YV saṃhitā, early 1st mill. BCE",
+      "tokens": 38894,
+      "compound_member_pct": 12.4,
+      "mean_nominal_cluster": 2.03,
+      "nominal_share_pct": 41.73,
+      "noun_verb_ratio": 2.01,
+      "finite_passive_pct_CONDITIONAL": 3.78,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 164.81
+      }
+    },
+    "Kūrmapurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~7-9th c. CE (epic-imitative verse)",
+      "tokens": 81928,
+      "compound_member_pct": 43.79,
+      "mean_nominal_cluster": 2.26,
+      "nominal_share_pct": 56.92,
+      "noun_verb_ratio": 3.53,
+      "finite_passive_pct_CONDITIONAL": 7.33,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 79.05
+      }
+    },
+    "Liṅgapurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~5-10th c. CE (epic-imitative verse)",
+      "tokens": 127599,
+      "compound_member_pct": 47.5,
+      "mean_nominal_cluster": 2.31,
+      "nominal_share_pct": 57.18,
+      "noun_verb_ratio": 4.08,
+      "finite_passive_pct_CONDITIONAL": 6.72,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 60.77
+      }
+    },
+    "Mahābhārata": {
+      "period": "epic",
+      "basis": "epic core+layers, ~400 BCE-400 CE",
+      "tokens": 1147887,
+      "compound_member_pct": 35.78,
+      "mean_nominal_cluster": 2.18,
+      "nominal_share_pct": 50.68,
+      "noun_verb_ratio": 2.68,
+      "finite_passive_pct_CONDITIONAL": 5.37,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 90.9
+      }
+    },
+    "Maitrāyaṇīsaṃhitā": {
+      "period": "vedic",
+      "basis": "YV saṃhitā, early 1st mill. BCE",
+      "tokens": 65375,
+      "compound_member_pct": 11.35,
+      "mean_nominal_cluster": 2.03,
+      "nominal_share_pct": 46.48,
+      "noun_verb_ratio": 2.33,
+      "finite_passive_pct_CONDITIONAL": 2.65,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 153.9
+      }
+    },
+    "Manusmṛti": {
+      "period": "epic",
+      "basis": "early smṛti verse, ~100 BCE-200 CE",
+      "tokens": 37660,
+      "compound_member_pct": 30.04,
+      "mean_nominal_cluster": 2.23,
+      "nominal_share_pct": 51.01,
+      "noun_verb_ratio": 2.94,
+      "finite_passive_pct_CONDITIONAL": 7.87,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 90.76
+      }
+    },
+    "Matsyapurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~3-10th c. CE (epic-imitative verse)",
+      "tokens": 122842,
+      "compound_member_pct": 50.37,
+      "mean_nominal_cluster": 2.37,
+      "nominal_share_pct": 55.07,
+      "noun_verb_ratio": 3.38,
+      "finite_passive_pct_CONDITIONAL": 6.75,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 77.57
+      }
+    },
+    "Mugdhāvabodhinī": {
+      "period": "classical",
+      "basis": "late commentary",
+      "tokens": 30166,
+      "compound_member_pct": 54.85,
+      "mean_nominal_cluster": 2.43,
+      "nominal_share_pct": 58.84,
+      "noun_verb_ratio": 3.51,
+      "finite_passive_pct_CONDITIONAL": 5.66,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 62.69
+      }
+    },
+    "Pañcaviṃśabrāhmaṇa": {
+      "period": "vedic",
+      "basis": "brāhmaṇa prose, ~800-600 BCE",
+      "tokens": 29329,
+      "compound_member_pct": 14.14,
+      "mean_nominal_cluster": 2.07,
+      "nominal_share_pct": 43.26,
+      "noun_verb_ratio": 2.07,
+      "finite_passive_pct_CONDITIONAL": 4.52,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 165.77
+      }
+    },
+    "Rasaratnasamuccaya": {
+      "period": "classical",
+      "basis": "alchemical, ~13-14th c. CE",
+      "tokens": 28096,
+      "compound_member_pct": 60.31,
+      "mean_nominal_cluster": 2.55,
+      "nominal_share_pct": 63.6,
+      "noun_verb_ratio": 4.06,
+      "finite_passive_pct_CONDITIONAL": 9.37,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 61.93
+      }
+    },
+    "Rasaratnākara": {
+      "period": "classical",
+      "basis": "alchemical, ~13th c. CE",
+      "tokens": 52761,
+      "compound_member_pct": 50.94,
+      "mean_nominal_cluster": 2.32,
+      "nominal_share_pct": 54.69,
+      "noun_verb_ratio": 2.65,
+      "finite_passive_pct_CONDITIONAL": 3.25,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 103.92
+      }
+    },
+    "Rasārṇava": {
+      "period": "classical",
+      "basis": "alchemical, ~12th c. CE",
+      "tokens": 31936,
+      "compound_member_pct": 51.24,
+      "mean_nominal_cluster": 2.37,
+      "nominal_share_pct": 58.99,
+      "noun_verb_ratio": 3.45,
+      "finite_passive_pct_CONDITIONAL": 4.93,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 94.03
+      }
+    },
+    "Rāmāyaṇa": {
+      "period": "epic",
+      "basis": "epic, ~200 BCE-200 CE",
+      "tokens": 261568,
+      "compound_member_pct": 39.47,
+      "mean_nominal_cluster": 2.2,
+      "nominal_share_pct": 52.45,
+      "noun_verb_ratio": 2.69,
+      "finite_passive_pct_CONDITIONAL": 4.75,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 77.26
+      }
+    },
+    "Skandapurāṇa (Revākhaṇḍa)": {
+      "period": "puranic",
+      "basis": "purāṇa, late (epic-imitative verse)",
+      "tokens": 113333,
+      "compound_member_pct": 47.35,
+      "mean_nominal_cluster": 2.26,
+      "nominal_share_pct": 54.54,
+      "noun_verb_ratio": 3.1,
+      "finite_passive_pct_CONDITIONAL": 7.82,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 80.66
+      }
+    },
+    "Suśrutasaṃhitā": {
+      "period": "epic",
+      "basis": "early medical prose (layered), ~1-300 CE core",
+      "tokens": 146721,
+      "compound_member_pct": 61.12,
+      "mean_nominal_cluster": 2.85,
+      "nominal_share_pct": 62.56,
+      "noun_verb_ratio": 4.38,
+      "finite_passive_pct_CONDITIONAL": 8.15,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 65.78
+      }
+    },
+    "Taittirīyasaṃhitā": {
+      "period": "vedic",
+      "basis": "YV saṃhitā, early 1st mill. BCE",
+      "tokens": 47989,
+      "compound_member_pct": 12.84,
+      "mean_nominal_cluster": 2.03,
+      "nominal_share_pct": 42.41,
+      "noun_verb_ratio": 1.87,
+      "finite_passive_pct_CONDITIONAL": 3.13,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 184.83
+      }
+    },
+    "Tantrāloka": {
+      "period": "classical",
+      "basis": "Abhinavagupta, ~1000 CE",
+      "tokens": 41311,
+      "compound_member_pct": 69.04,
+      "mean_nominal_cluster": 2.69,
+      "nominal_share_pct": 57.16,
+      "noun_verb_ratio": 4.72,
+      "finite_passive_pct_CONDITIONAL": 19.87,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 48.85
+      }
+    },
+    "Vaikhānasaśrautasūtra": {
+      "period": "vedic",
+      "basis": "śrautasūtra, late-Vedic sphere",
+      "tokens": 26794,
+      "compound_member_pct": 24.46,
+      "mean_nominal_cluster": 2.2,
+      "nominal_share_pct": 47.26,
+      "noun_verb_ratio": 2.02,
+      "finite_passive_pct_CONDITIONAL": 1.31,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 125.36
+      }
+    },
+    "Viṣṇupurāṇa": {
+      "period": "puranic",
+      "basis": "purāṇa, ~4-6th c. CE (epic-imitative verse)",
+      "tokens": 87622,
+      "compound_member_pct": 47.86,
+      "mean_nominal_cluster": 2.43,
+      "nominal_share_pct": 53.41,
+      "noun_verb_ratio": 3.31,
+      "finite_passive_pct_CONDITIONAL": 9.37,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 80.16
+      }
+    },
+    "Ānandakanda": {
+      "period": "classical",
+      "basis": "alchemical, ~13th c. CE",
+      "tokens": 83818,
+      "compound_member_pct": 56.36,
+      "mean_nominal_cluster": 2.47,
+      "nominal_share_pct": 60.95,
+      "noun_verb_ratio": 3.75,
+      "finite_passive_pct_CONDITIONAL": 4.79,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 88.21
+      }
+    },
+    "Āpastambaśrautasūtra": {
+      "period": "vedic",
+      "basis": "śrautasūtra, late-Vedic, ~600-300 BCE",
+      "tokens": 33857,
+      "compound_member_pct": 18.67,
+      "mean_nominal_cluster": 2.08,
+      "nominal_share_pct": 47.67,
+      "noun_verb_ratio": 2.13,
+      "finite_passive_pct_CONDITIONAL": 2.39,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 141.06
+      }
+    },
+    "Āyurvedadīpikā": {
+      "period": "classical",
+      "basis": "Cakrapāṇidatta commentary prose, 11th c. CE",
+      "tokens": 38924,
+      "compound_member_pct": 65.89,
+      "mean_nominal_cluster": 2.61,
+      "nominal_share_pct": 58.11,
+      "noun_verb_ratio": 4.46,
+      "finite_passive_pct_CONDITIONAL": 20.3,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 56.19
+      }
+    },
+    "Śatapathabrāhmaṇa": {
+      "period": "vedic",
+      "basis": "brāhmaṇa prose, ~800-600 BCE",
+      "tokens": 144139,
+      "compound_member_pct": 14.88,
+      "mean_nominal_cluster": 2.07,
+      "nominal_share_pct": 34.23,
+      "noun_verb_ratio": 1.78,
+      "finite_passive_pct_CONDITIONAL": 3.21,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 151.13
+      }
+    },
+    "Ṛgveda": {
+      "period": "vedic",
+      "basis": "RV saṃhitā, ~1200-1000 BCE",
+      "tokens": 169972,
+      "compound_member_pct": 8.21,
+      "mean_nominal_cluster": 2.02,
+      "nominal_share_pct": 51.66,
+      "noun_verb_ratio": 2.64,
+      "finite_passive_pct_CONDITIONAL": 2.0,
+      "annotation_coverage": {
+        "finite_annotated_per_1000": 139.33
+      }
+    }
+  },
+  "validation": {
+    "all_map_names_resolve": true,
+    "coverage_pct_of_corpus": 71.6,
+    "vedic_tokens_over_500k": true,
+    "epic_tokens_over_1m": true,
+    "classical_tokens_over_400k": true,
+    "compound_pass_nonzero_every_period": true
+  }
+}
