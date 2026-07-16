@@ -1,0 +1,436 @@
+{
+  "asset": "Sangram G2 — attested declension cells per lemma (derived data asset)",
+  "checkpoint_ref": "W2-core opening checkpoint §5 G2 (materialized attested-cells-per-lemma table)",
+  "consumers": [
+    "SG-MO-001",
+    "SG-MO-002",
+    "SG-MO-006",
+    "SG-MO-010"
+  ],
+  "method": "per lemma_id, the set of attested (case.number) cells of the 24-cell matrix over the pinned DCS snapshot; general (all stem types, all genders) version of the a-stem-only P1 coverage",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned after dcs-conllu history rewrite; binding is provenance table + SHA-256"
+  },
+  "universe_where": "t.upos = 'NOUN' AND t.feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc') AND t.feat_number IN ('Sing','Dual','Plur') AND t.lemma IS NOT NULL",
+  "matrix_cells": 24,
+  "cells_order": [
+    "Nom.Sing",
+    "Nom.Dual",
+    "Nom.Plur",
+    "Acc.Sing",
+    "Acc.Dual",
+    "Acc.Plur",
+    "Ins.Sing",
+    "Ins.Dual",
+    "Ins.Plur",
+    "Dat.Sing",
+    "Dat.Dual",
+    "Dat.Plur",
+    "Abl.Sing",
+    "Abl.Dual",
+    "Abl.Plur",
+    "Gen.Sing",
+    "Gen.Dual",
+    "Gen.Plur",
+    "Loc.Sing",
+    "Loc.Dual",
+    "Loc.Plur",
+    "Voc.Sing",
+    "Voc.Dual",
+    "Voc.Plur"
+  ],
+  "denominators": {
+    "noun_lemmas": 57144,
+    "case_number_tokens": 1790270
+  },
+  "overall": {
+    "n_lemmas": 57144,
+    "n_tokens": 1790270,
+    "cells_per_lemma": {
+      "mean": 2.51,
+      "median": 1.0,
+      "max": 24,
+      "pct_lemmas_full_24": 0.0,
+      "pct_lemmas_ge_12": 2.82,
+      "pct_lemmas_ge_6": 10.96,
+      "pct_lemmas_1_cell": 58.93
+    },
+    "lemma_cell_space_attested_pct": 10.44
+  },
+  "cell_lemma_counts": {
+    "Nom.Sing": 41998,
+    "Nom.Dual": 3455,
+    "Nom.Plur": 8917,
+    "Acc.Sing": 18921,
+    "Acc.Dual": 1797,
+    "Acc.Plur": 5801,
+    "Ins.Sing": 9045,
+    "Ins.Dual": 1022,
+    "Ins.Plur": 6041,
+    "Dat.Sing": 4578,
+    "Dat.Dual": 128,
+    "Dat.Plur": 611,
+    "Abl.Sing": 6807,
+    "Abl.Dual": 222,
+    "Abl.Plur": 843,
+    "Gen.Sing": 8486,
+    "Gen.Dual": 1417,
+    "Gen.Plur": 3994,
+    "Loc.Sing": 11526,
+    "Loc.Dual": 719,
+    "Loc.Plur": 3210,
+    "Voc.Sing": 3066,
+    "Voc.Dual": 171,
+    "Voc.Plur": 421
+  },
+  "cell_token_counts": {
+    "Nom.Sing": 561243,
+    "Nom.Dual": 15083,
+    "Nom.Plur": 116321,
+    "Acc.Sing": 348806,
+    "Acc.Dual": 9260,
+    "Acc.Plur": 72330,
+    "Ins.Sing": 118278,
+    "Ins.Dual": 3904,
+    "Ins.Plur": 62427,
+    "Dat.Sing": 33882,
+    "Dat.Dual": 576,
+    "Dat.Plur": 4732,
+    "Abl.Sing": 58166,
+    "Abl.Dual": 444,
+    "Abl.Plur": 3252,
+    "Gen.Sing": 88552,
+    "Gen.Dual": 4450,
+    "Gen.Plur": 45881,
+    "Loc.Sing": 151483,
+    "Loc.Dual": 2225,
+    "Loc.Plur": 23612,
+    "Voc.Sing": 59416,
+    "Voc.Dual": 1559,
+    "Voc.Plur": 4388
+  },
+  "by_dominant_gender": {
+    "?": {
+      "n_lemmas": 13,
+      "n_tokens": 3861,
+      "cells_per_lemma": {
+        "mean": 3.46,
+        "median": 1,
+        "max": 20,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 7.69,
+        "pct_lemmas_ge_6": 15.38,
+        "pct_lemmas_1_cell": 69.23
+      },
+      "lemma_cell_space_attested_pct": 14.42
+    },
+    "Fem": {
+      "n_lemmas": 14785,
+      "n_tokens": 289618,
+      "cells_per_lemma": {
+        "mean": 2.12,
+        "median": 1,
+        "max": 24,
+        "pct_lemmas_full_24": 0.01,
+        "pct_lemmas_ge_12": 1.71,
+        "pct_lemmas_ge_6": 8.09,
+        "pct_lemmas_1_cell": 66.24
+      },
+      "lemma_cell_space_attested_pct": 8.84
+    },
+    "Masc": {
+      "n_lemmas": 28396,
+      "n_tokens": 1005714,
+      "cells_per_lemma": {
+        "mean": 2.67,
+        "median": 1.0,
+        "max": 24,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 3.42,
+        "pct_lemmas_ge_6": 12.42,
+        "pct_lemmas_1_cell": 56.86
+      },
+      "lemma_cell_space_attested_pct": 11.13
+    },
+    "Neut": {
+      "n_lemmas": 13950,
+      "n_tokens": 491077,
+      "cells_per_lemma": {
+        "mean": 2.57,
+        "median": 1.0,
+        "max": 23,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 2.75,
+        "pct_lemmas_ge_6": 11.04,
+        "pct_lemmas_1_cell": 55.39
+      },
+      "lemma_cell_space_attested_pct": 10.72
+    }
+  },
+  "by_stem_final_approx": {
+    "a": {
+      "n_lemmas": 34760,
+      "n_tokens": 1126565,
+      "cells_per_lemma": {
+        "mean": 2.66,
+        "median": 1.0,
+        "max": 23,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 3.15,
+        "pct_lemmas_ge_6": 12.18,
+        "pct_lemmas_1_cell": 55.95
+      },
+      "lemma_cell_space_attested_pct": 11.09
+    },
+    "aa": {
+      "n_lemmas": 7813,
+      "n_tokens": 114823,
+      "cells_per_lemma": {
+        "mean": 1.94,
+        "median": 1,
+        "max": 22,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 1.34,
+        "pct_lemmas_ge_6": 6.54,
+        "pct_lemmas_1_cell": 70.25
+      },
+      "lemma_cell_space_attested_pct": 8.08
+    },
+    "ii": {
+      "n_lemmas": 4494,
+      "n_tokens": 64668,
+      "cells_per_lemma": {
+        "mean": 1.97,
+        "median": 1.0,
+        "max": 22,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 0.89,
+        "pct_lemmas_ge_6": 6.88,
+        "pct_lemmas_1_cell": 67.36
+      },
+      "lemma_cell_space_attested_pct": 8.22
+    },
+    "i": {
+      "n_lemmas": 3880,
+      "n_tokens": 159169,
+      "cells_per_lemma": {
+        "mean": 2.64,
+        "median": 1.0,
+        "max": 23,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 3.27,
+        "pct_lemmas_ge_6": 11.88,
+        "pct_lemmas_1_cell": 54.82
+      },
+      "lemma_cell_space_attested_pct": 11.0
+    },
+    "other_consonant": {
+      "n_lemmas": 1722,
+      "n_tokens": 74044,
+      "cells_per_lemma": {
+        "mean": 2.54,
+        "median": 1.0,
+        "max": 20,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 3.14,
+        "pct_lemmas_ge_6": 11.15,
+        "pct_lemmas_1_cell": 56.39
+      },
+      "lemma_cell_space_attested_pct": 10.6
+    },
+    "u": {
+      "n_lemmas": 1360,
+      "n_tokens": 59740,
+      "cells_per_lemma": {
+        "mean": 2.71,
+        "median": 1.0,
+        "max": 23,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 4.41,
+        "pct_lemmas_ge_6": 12.57,
+        "pct_lemmas_1_cell": 58.38
+      },
+      "lemma_cell_space_attested_pct": 11.31
+    },
+    "in": {
+      "n_lemmas": 900,
+      "n_tokens": 16617,
+      "cells_per_lemma": {
+        "mean": 2.24,
+        "median": 1.0,
+        "max": 19,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 2.67,
+        "pct_lemmas_ge_6": 9.89,
+        "pct_lemmas_1_cell": 68.33
+      },
+      "lemma_cell_space_attested_pct": 9.34
+    },
+    "an": {
+      "n_lemmas": 846,
+      "n_tokens": 69269,
+      "cells_per_lemma": {
+        "mean": 2.76,
+        "median": 1.0,
+        "max": 22,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 4.49,
+        "pct_lemmas_ge_6": 12.29,
+        "pct_lemmas_1_cell": 54.73
+      },
+      "lemma_cell_space_attested_pct": 11.51
+    },
+    "as": {
+      "n_lemmas": 572,
+      "n_tokens": 57918,
+      "cells_per_lemma": {
+        "mean": 3.29,
+        "median": 2.0,
+        "max": 19,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 6.12,
+        "pct_lemmas_ge_6": 16.43,
+        "pct_lemmas_1_cell": 49.3
+      },
+      "lemma_cell_space_attested_pct": 13.69
+    },
+    "r_vocalic": {
+      "n_lemmas": 465,
+      "n_tokens": 26619,
+      "cells_per_lemma": {
+        "mean": 2.66,
+        "median": 1,
+        "max": 24,
+        "pct_lemmas_full_24": 0.43,
+        "pct_lemmas_ge_12": 3.01,
+        "pct_lemmas_ge_6": 13.12,
+        "pct_lemmas_1_cell": 56.99
+      },
+      "lemma_cell_space_attested_pct": 11.08
+    },
+    "uu": {
+      "n_lemmas": 160,
+      "n_tokens": 5751,
+      "cells_per_lemma": {
+        "mean": 2.54,
+        "median": 1.0,
+        "max": 18,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 3.75,
+        "pct_lemmas_ge_6": 10.62,
+        "pct_lemmas_1_cell": 60.62
+      },
+      "lemma_cell_space_attested_pct": 10.57
+    },
+    "is": {
+      "n_lemmas": 86,
+      "n_tokens": 6735,
+      "cells_per_lemma": {
+        "mean": 2.85,
+        "median": 1.0,
+        "max": 18,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 5.81,
+        "pct_lemmas_ge_6": 11.63,
+        "pct_lemmas_1_cell": 63.95
+      },
+      "lemma_cell_space_attested_pct": 11.87
+    },
+    "us": {
+      "n_lemmas": 86,
+      "n_tokens": 8352,
+      "cells_per_lemma": {
+        "mean": 3.08,
+        "median": 2.0,
+        "max": 19,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 5.81,
+        "pct_lemmas_ge_6": 11.63,
+        "pct_lemmas_1_cell": 47.67
+      },
+      "lemma_cell_space_attested_pct": 12.84
+    }
+  },
+  "by_frequency_band": {
+    "1": {
+      "n_lemmas": 25391,
+      "n_tokens": 25391,
+      "cells_per_lemma": {
+        "mean": 1.0,
+        "median": 1,
+        "max": 1,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 0.0,
+        "pct_lemmas_ge_6": 0.0,
+        "pct_lemmas_1_cell": 100.0
+      },
+      "lemma_cell_space_attested_pct": 4.17
+    },
+    "10-99": {
+      "n_lemmas": 8410,
+      "n_tokens": 258170,
+      "cells_per_lemma": {
+        "mean": 5.55,
+        "median": 5.0,
+        "max": 17,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 1.82,
+        "pct_lemmas_ge_6": 44.59,
+        "pct_lemmas_1_cell": 2.01
+      },
+      "lemma_cell_space_attested_pct": 23.11
+    },
+    "100-999": {
+      "n_lemmas": 2188,
+      "n_tokens": 651247,
+      "cells_per_lemma": {
+        "mean": 11.62,
+        "median": 12.0,
+        "max": 22,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 52.51,
+        "pct_lemmas_ge_6": 96.57,
+        "pct_lemmas_1_cell": 0.14
+      },
+      "lemma_cell_space_attested_pct": 48.41
+    },
+    "1000+": {
+      "n_lemmas": 316,
+      "n_tokens": 777972,
+      "cells_per_lemma": {
+        "mean": 17.32,
+        "median": 17.0,
+        "max": 24,
+        "pct_lemmas_full_24": 0.63,
+        "pct_lemmas_ge_12": 97.15,
+        "pct_lemmas_ge_6": 99.68,
+        "pct_lemmas_1_cell": 0.0
+      },
+      "lemma_cell_space_attested_pct": 72.15
+    },
+    "2-9": {
+      "n_lemmas": 20839,
+      "n_tokens": 77490,
+      "cells_per_lemma": {
+        "mean": 1.93,
+        "median": 2,
+        "max": 8,
+        "pct_lemmas_full_24": 0.0,
+        "pct_lemmas_ge_12": 0.0,
+        "pct_lemmas_ge_6": 0.41,
+        "pct_lemmas_1_cell": 38.93
+      },
+      "lemma_cell_space_attested_pct": 8.05
+    }
+  },
+  "limits": {
+    "EM3": "overgeneration — attested cells per lemma is almost always << 24 (P1 median 1); this asset quantifies it corpus-wide",
+    "stem_final": "stem_final is a lemma-ending approximation (citation form ≠ stem, SG-MO-001 §6.1), a convenience tag, not a paradigmatic classification",
+    "EM7": "homonyms keyed by lemma_id; a citation string with two lemma_ids is two rows",
+    "pin": "orphaned pin bound by provenance table + SHA-256 + tag c3-pin-04e0778-content (as pilots P1–P5)"
+  }
+}
