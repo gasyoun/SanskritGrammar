@@ -19,6 +19,21 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.31.1] - 2026-07-16
+### Changed
+- **A65: both human gates RULED by MG 16-07-2026 (H1024)** — ① venue/language =
+  **российская индология, RU as-is** (the eLex/GWC/ISCLS translation branch dropped);
+  ② **A60 merged into A65** — one paper: A65 § 2 absorbs A60's central divergence table
+  (4-way typology), the five-book count becomes its frame. Applied to the
+  [report](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
+  (banner, § 5, § 8, § 10 self-citation slot), its metadoc (backlog rebuilt — the 4/5
+  merge pass is the new head item), and the
+  [A60 draft](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/DRAFT_grammar-claims-corpus-denies_A60.md)
+  header (🔀 MERGED INTO A65 — source material, do not advance separately; the A60 leg
+  of H967 is superseded). Uprava side (ARTICLES A65/A60 rows, GTD Publication Gates,
+  H967 banner) updated the same pass. (Fable 5 `claude-fable-5`,
+  [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md))
+
 ## [0.31.0] - 2026-07-16
 ### Changed
 - **A65 advanced 2/5 → 3/5 per the house playbook (H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) is now a citable draft: abstract with first-class caveats (LLM-adjudicated verdicts vs deterministic corpus numbers, no second human annotator — stated up front), §6 reproducibility contract, §7 claim→artifact inventory (12 rows, 1 flagged gap), §8 anti-salami boundaries vs A60/A62/A63/A64, §10 references with ⬜ self-citation slots, @DECIDE banner (venue/language; A60 развязка). **Mandatory fact-check fan-out caught 2 real defects**: the headline «942 claims + 214 parses» double-counted (correct: 728 verdicted claims + 214 parses = 942 items; the source `.ai_state` line fixed in the same PR), and §59 cited the superseded H1008 figure 98.3% where the canonical H1012 parser reads 97.6%/98.4% (the two independent parsers agreeing within 1pp is now recorded as a robustness datum). (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
