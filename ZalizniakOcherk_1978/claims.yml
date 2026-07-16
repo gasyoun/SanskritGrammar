@@ -20,10 +20,16 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004+H1012 instruments, 16-07-2026): 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py), OCH-16 by the root-shape parser (root_shape_parser.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004+H1012+H1022 instruments,
+# 16-07-2026): 65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE — OCH-63 (the §207 flagship)
+# flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector
+# (causative_grade_detector.py), OCH-16 by the root-shape parser (root_shape_parser.py),
+# OCH-65/66/67/68 by the treebank instrument (treebank_syntax_stats.py, H1022) — the FIRST
+# three fact-axis flags in this register (OCH-66/68 OVERSTATED, OCH-67 FALSE), ending the
+# earlier "zero flags" status; earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
-# instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
-# series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
+# instrument (a treebank cross-language comparison, compound-function tagging, the 1978↔2026
+# series crosswalk) and two entries additionally record NEGATIVE PILOT
 # measurements (OCH-23 naive series join, OCH-24 aggregate i-rate proxy) so the dead ends are
 # not re-derived. Fresh reproducible metrics live in this folder's verify_claims_dcs.py
 # (final-consonant census, saḥ/so/sa surface split, i-rates by suffix, rare-mood tokens,
@@ -32,11 +38,22 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 + H1012 instruments: 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, the §207 style-gradient flagship measured by the period map, and the §59 root-shape flagship measured by the root-shape parser, see OCH-21..OCH-23, OCH-63 and OCH-16). Zaliznyak is the
-  first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
-  not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 + H1012 + H1022
+  instruments: 65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE — the §68 flagship and its
+  §67 siblings measured by the 1978 column, the §207 style-gradient flagship measured by
+  the period map, the §59 root-shape flagship measured by the root-shape parser, and the
+  §§212-217 syntax cluster measured by the treebank instrument, see OCH-21..OCH-23, OCH-63,
+  OCH-16 and OCH-65..OCH-68). Zaliznyak held ZERO fact-axis flags through 70 of 74 claims —
+  longer than either sibling grammar — until the syntax cluster (§§212-217) became testable
+  16-07-2026: the treebank instrument found the one absolute quantifier in the book (OCH-68,
+  the ya-...ta- antecedent-clause rule) holds at only 75.2% (n=335, genre-skew-checked), and
+  two of three packed word-order tendencies in OCH-66 plus the §215 coordinate>subordinate
+  claim (OCH-67, genuinely inverted 6.5:1) do not clear a majority either — all THREE flags
+  land in the one domain (syntax) this register could not previously test, not scattered
+  across the book. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
-  engineered: two-level hedges that the corpus confirms level by level (OCH-10 — his 'крайне
+  engineered everywhere ELSE in the book: two-level hedges that the corpus confirms level by
+  level (OCH-10 — his 'крайне
   редко' for final ṇ vs plain 'редко' for ṅ/ñ is exactly the order-of-magnitude split, 118 vs
   659/1,934), absolutes reserved for structurally safe gaps (OCH-17 no short-a-final roots),
   enumerated escape hatches ('только as и группа samprasāraṇa, и несколько других'), and
@@ -44,8 +61,11 @@ synthesis: >-
   95.1%). The cleanest single contrast is the verb-accent rule (OCH-72): the SAME fact graded
   Kochergina OVERSTATED for «никогда» (HK-10) grades Zaliznyak TRUE for «как правило» — third
   data point of the programme's central finding that presentation calibration, not factual
-  accuracy, is where grammars differ. On that axis the three books now rank cleanly:
-  Zaliznyak (0 flags / 74) > Bühler (5 / 64) > Kochergina (12+24 / 234).
+  accuracy, is where grammars differ — a finding OCH-66/68 now ALSO extend (soft hedges still
+  overreach when the underlying syntactic tendency itself turns out weak, not just when the
+  quantifier is an absolute). On that axis the three books now rank:
+  Zaliznyak (3 flags / 74 = 4.1%) > Bühler (5 / 64 = 7.8%) > Kochergina (12+24 / 234) — still
+  the best-calibrated of the three, no longer flag-free.
 
 
   The remaining UNTESTABLE entries are the register's second product: a requirements list for
@@ -56,9 +76,13 @@ synthesis: >-
   the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots),
   ~~a root-shape parser over the Talmud catalog~~ BUILT 16-07-2026 (root_shape_parser.py,
   H1012: OCH-16 flipped to measured TRUE — 727/745 = 97.6% of the catalog fits the §59
-  six-slot template, 98.4% of the roots where a nucleus could even be located), a
-  treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
-  absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence),
+  six-slot template, 98.4% of the roots where a nucleus could even be located),
+  ~~a treebank/parsed slice~~ BUILT 16-07-2026 (treebank_syntax_stats.py, H1022: dcs_full.sqlite's
+  own head/deprel columns turned out to carry a genuine, fully-tagged 29,433-sentence UD
+  slice all along — OCH-65 confirmed TRUE, OCH-66/68 flipped OVERSTATED, OCH-67 flipped
+  FALSE, all genre-skew-checked against a classical-vs-Vedic split before verdicting;
+  OCH-69's cross-LANGUAGE comparison against Russian/Latin stays out of scope, no
+  comparable parsed corpus on the other side),
   compound-type tagging (OCH-58, OCH-60), and the 1978↔2026 morphoclass-series crosswalk
   (OCH-21..OCH-23). Two dead ends are
   recorded with their numbers so they are never re-derived as refutations: the naive Talmud
@@ -1112,11 +1136,19 @@ entries:
     kind: statistic
     falsifiable_as: "is prati's unambiguous adpositional use the minority against its adverbial/preverb uses"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: distinguishing adpositional from adverbial/preverb tokens of prati needs syntactic annotation the export lacks"
-    ref: "cf. Whitney §1123ff"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the treebank instrument built 16-07-2026 (treebank_syntax_stats.py,
+      H1022): dcs_full.sqlite's own head/deprel columns carry a genuine, fully-tagged
+      UD-style slice (223,751 tokens, 3.9% of the corpus, 29,433 complete sentences) — the
+      prior "no instrument, the export lacks syntactic annotation" premise was never
+      actually checked. Among 143 dependency-tagged lemma='prati' tokens, only 29 (20.3%)
+      carry the unambiguous adpositional deprel (`case`); the rest are adverbial (`advmod`,
+      91), part of a fixed multiword unit (`flat`, 14), or other (9). 20.3% is a clear
+      minority
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py; cf. Whitney §1123ff"
     verdict_pedagogy: JUSTIFIED
-    note: "Countable the day a dependency-parsed DCS slice enters the pipeline; direction consistent with the reference description."
+    note: "Direction and magnitude both confirm 'относительно более редки' cleanly; unaffected by the genre-skew investigation below (OCH-66/67)."
 
   - id: OCH-66
     loc: "§214 / mdx line 2846"
@@ -1124,11 +1156,34 @@ entries:
     kind: typology
     falsifiable_as: "do SOV-leaning word-order tendencies hold as statistical majorities in prose"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: word-order statistics need sentence-segmented, role-tagged text; the export's surface lines carry no such structure. The claim is the standard typological description (hedged as 'тяготеет'/'обычно' — tendencies, not rules)"
-    ref: "instrument gap — same treebank need as OCH-65/OCH-67/OCH-68"
-    verdict_pedagogy: JUSTIFIED
-    note: "Hedged exactly as a tendency claim should be; awaiting a treebank to become a number."
+    verdict_fact: OVERSTATED
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022) over the same 29,433-sentence slice.
+      Of the THREE tendencies packed into this one claim, only one is robustly confirmed:
+      modifier-precedes-head, 86.0% (22,142 det/amod/nmod/nummod edges) — holds equally in
+      a post-Vedic "classical" subset (Mahābhārata/Manusmṛti/Arthaśāstra/Rāmāyaṇa/
+      Buddhacarita, 86.5%) and the Vedic/Śrauta-sūtra remainder (86.0%). The other two do
+      NOT clear even a loose majority: verb-final 46.4% overall (classical 37.6%, vedic/
+      sūtra 46.8%; Arthaśāstra alone, the single largest non-metrical classical-prose
+      sample, 51.4%); subject-group-first 42.6% overall (classical 46.4%, vedic/sūtra
+      42.4%). GENRE-SKEW CHECKED, not assumed: a classical-vs-Vedic split and an
+      Arthaśāstra-only isolation both rule out "Vedic-skewed corpus" as the explanation —
+      neither sub-claim clears 52% in ANY split tested. Two operationalization
+      robustness checks (excluding trailing discourse-particles from the "last token"
+      test: 46.4%→48.4%; restricting to single-clause sentences only, to rule out a later
+      clause dragging the sentence-final position away from the root's own clause:
+      46.4%→51.1%) each moved the number under 5 points — not an artifact of the metric
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The hedges themselves ('тяготеет'/'обычно', not 'всегда') are appropriately soft IF
+      the underlying tendency were real — but on this instrument two of the three packed
+      claims read as closer to free word order than a lean either way. This is the
+      standard Indological consensus description of Classical Sanskrit typology, and a
+      3.9% DCS slice dominated by Vedic Saṃhitā/Brāhmaṇa/Śrauta-sūtra prose plus a thin
+      post-Vedic tail may simply be under-powered or genre-mismatched for testing it —
+      that uncertainty is real and not resolved here, but the number as measured does not
+      support the claim as stated for two of its three parts.
 
   - id: OCH-67
     loc: "§215 / mdx line 2850"
@@ -1136,11 +1191,31 @@ entries:
     kind: statistic
     falsifiable_as: "do coordinate complex sentences outnumber subordinate ones"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: clause-type counts need parsed sentences (same treebank gap)"
-    ref: "cf. OCH-66"
-    verdict_pedagogy: JUSTIFIED
-    note: "Consistent with the low-subordination profile the whole §215-217 cluster describes; unmeasured here."
+    verdict_fact: FALSE
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022). Among sentences with 2+ FINITE verbs
+      (feat_verbform IS NULL, mood-marked — verified against feat_mood; DCS's raw acl/
+      advcl/ccomp/xcomp deprels are dominated by NON-finite participial/absolutive
+      embedding, §217's actual preferred mechanism, which is not a 'сложноподчинённое
+      предложение' in the traditional finite-clause sense and was excluded from both
+      sides of this count): **419 coordinate (`conj`) vs 2,739 finite-subordinate
+      (`advcl`/`acl`/`ccomp`/`xcomp`) — subordinate outnumbers coordinate 6.5:1, the
+      OPPOSITE of the claimed direction.** GENRE-SKEW CHECKED: the classical subset shows
+      meaningfully MORE coordination proportionally (29 coordinate vs 58 subordinate =
+      33.3% coordinate share) than the Vedic/Śrauta-sūtra remainder (390 vs 2,681 = 12.7%
+      share) — a real, measurable shift in the expected direction — but even the
+      classical subset's 33.3% falls well short of the >50% the claim requires
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The genre split shows the corpus skew is a REAL, partial contributor (coordination
+      share roughly triples in classical texts) but does not reverse the inversion —
+      subordinate clauses (chiefly relative acl:rel and complement ccomp) outnumber
+      coordinate ones in every split tested, including the classical-only one. Whether
+      this reflects DCS's specific text selection within "classical" (Mahābhārata is
+      itself compilation/didactic-heavy) or a genuine correction to the traditional
+      description is not resolved here — recorded as measured, not settled linguistic
+      theory.
 
   - id: OCH-68
     loc: "§216 / mdx line 2854"
@@ -1148,14 +1223,26 @@ entries:
     kind: universality
     falsifiable_as: "does the head noun of a relative-correlative pair always sit in the first clause"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: verifying an 'всегда' over relative-correlative constructions needs parsed clause pairs. Flag: this is the register's one absolute quantifier sitting on an unmeasured syntactic domain — the first candidate to test when a treebank lands"
-    ref: "treebank gap (cf. OCH-66)"
-    verdict_pedagogy: JUSTIFIED
+    verdict_fact: OVERSTATED
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022). Restricted to acl:rel edges (relative-
+      clause-verb -> head noun) where (a) the head is a genuine NOUN, not a bare
+      correlative pronoun (excludes cases like 'sa/tad' where no lexical antecedent is
+      shared — those don't test this claim), and (b) the relative clause's own subtree
+      contains a PRON lemma 'yad' (confirms a genuine yad-relative, not another acl:rel
+      type): **n = 335, head noun in the linearly-first clause in 252 = 75.2%.** A quarter
+      of a 335-case sample (83 counterexamples) falls short of "всегда." Manually inspected
+      several counterexamples against the raw token sequence to sanity-check the
+      clause-boundary logic before trusting this number — the operationalization holds up
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json (counterexamples list); treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
     note: >-
-      Recorded with a hunting licence: of all Zaliznyak's claims, this absolute is the one a
-      corpus test could most plausibly dent (head-in-second-clause correlatives are the kind
-      of exception epic verse tolerates). Until then: open, not assumed.
+      Flagged in advance (before any number existed) as the register's one absolute
+      quantifier sitting on an unmeasured syntactic domain — exactly the kind of claim a
+      corpus test could most plausibly dent, and it did. 75.2% is a real majority (the
+      general tendency is genuine) but 'всегда' oversells it by a wide margin on n=335;
+      this is the sharpest OVERSTATED case in the whole Ocherk register precisely because
+      it uses the strongest possible quantifier on the thinnest-margin claim.
 
   - id: OCH-69
     loc: "§217 / mdx line 2856"
