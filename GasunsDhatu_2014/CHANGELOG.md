@@ -9,6 +9,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Added
+- **Приложение 7 — печатный лист свёрстан (третий проход)**: `APPENDIX7_PRINT_SHEET.html`
+  ([`revision-2026/mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py)),
+  A4 трёхколоночная вёрстка всех 750 подлинных корней MW, по образцу листов опечаток
+  ([H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md)).
+  MG ruled **Route 2** on the H1018 scope question (the appendix page's own text argues against
+  inlining the full list into the book body — the print sheet is a separate asset, book body
+  unchanged) — page + footnote `[^ed2]` updated with the link.
+  ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.10.0] - 2026-07-16
 ### Added
 - **Часть II, Глава 5 «Дхатупатха и паниниевская традиция как данные» (черновик)** — вторая новая
