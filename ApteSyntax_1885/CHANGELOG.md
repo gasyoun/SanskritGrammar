@@ -9,6 +9,20 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-07-17
+### Added
+- **Whitney adjudication of APT-H-219, the aorist-durative claim (H1084, Opus 4.8
+  `claude-opus-4-8[1m]`).** Register **30 → 31 verified**; the register's **first FALSE** (APT-31,
+  Урок 19). Apte §210 claims the aorist «implies the idea of continuousness» and «the imperfect
+  cannot be used in this sense» — contradicted by **Whitney §§927-929** (the Classical aorist is
+  «simply a preterit, equivalent to the imperfect and perfect»; the older aorist is *completive*,
+  «viewed as completed with reference to the present» — the opposite of durative). Two-check
+  rigor: (1) the digitized English §210 was verified, confirming the error is **Apte's own, not
+  the Likhushina translation's**; (2) Apte contradicts himself (§207-208: the past tenses came to
+  be used «promiscuously» — Whitney §927's very equivalence). Tally **21 TRUE · 8 OVERSTATED · 1
+  FALSE · 1 UNTESTABLE**; the syntax-claim backlog is now fully adjudicated except reference-grade
+  particle-sense rules.
+
 ## [0.5.0] - 2026-07-17
 ### Added
 - **Lessons 26–30 harvested and drained (H1081, Opus 4.8 `claude-opus-4-8[1m]`).** Closes the

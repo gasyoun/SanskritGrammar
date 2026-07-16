@@ -27,15 +27,19 @@
 # kind:             typology | universality | allomorphy | statistic | rule | government
 #
 # COVERAGE (seed H1055 + treebank drain H1059 + Classical-corpus government H1062 + lessons-26-30
-# harvest & drain H1081, 16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-30 verified.
+# harvest & drain H1081 + Whitney aorist adjudication H1084, 16–17-07-2026, Opus 4.8
+# `claude-opus-4-8[1m]`): APT-1..APT-31 verified.
 # THREE instruments now: apte_treebank_stats.py (particle position & agreement, DCS head/deprel
 # slice), apte_classical_government_stats.py (case government by windowed-cooccurrence + baseline
 # lift over the FULL 5.69M-token corpus), and apte_pada_stats.py (Parasmaipada/Ātmanepada
 # recovered from finite present endings, since DCS feat_voice tags only Pass — root-default voice
 # only). All three carry method controls (position: hi 0.77%; government: bhī/jugups reproduce +
 # dṛś negative; pada: as/bhū→P 100/99.7%, labh/īś→A 97.6/100%).
-# Fact tally: 21 TRUE · 8 OVERSTATED · 0 FALSE · 1 UNTESTABLE. claims_harvest.yml holds the
-# 115-candidate backlog (all 30 lessons harvested); 27 promoted; the rest PENDING (mostly the
+# Fact tally: 21 TRUE · 8 OVERSTATED · 1 FALSE · 1 UNTESTABLE. The single FALSE is APT-31 (Урок
+# 19, aorist 'implies continuousness, the imperfect cannot') — adjudicated against Whitney
+# §§927-929, error confirmed to be Apte's own via the digitized English §210, and reinforced by
+# Apte's self-contradiction (§207-208 'tenses used promiscuously'). claims_harvest.yml holds the
+# 115-candidate backlog (all 30 lessons harvested); 28 promoted; the rest PENDING (mostly the
 # fine preverb+semantic voice rules of lessons 29-30, which have no corpus signal — see APT-30).
 #
 # FINDING (the two-instrument story): the treebank drains PARTICLE-POSITION and AGREEMENT claims
@@ -555,3 +559,40 @@ entries:
       sense-rules with no corpus signal — DCS neither tags the P/Ā distinction nor the semantic
       trigger. Closing instruments: a pada-tagged root lexicon plus sense-disambiguated preverb-verb
       tokens (neither exists in the sibling repos today). Documented, not force-verdicted.
+
+  # ---- WHITNEY ADJUDICATION (H1084, 17-07-2026) ----
+
+  - id: APT-31
+    loc: "Урок 19 / mdx ~line 5100 (Apte English §210)"
+    claim_ru: >-
+      Аорист, помимо основного значения недавнего неопределенного прошлого, также выражает идею
+      длительности действия. Имперфект не может быть использован в этом значении.
+    kind: typology
+    falsifiable_as: "does the aorist carry a durative ('continuousness') value that the imperfect cannot, per Whitney"
+    sources: [whitney]
+    verdict_fact: FALSE
+    number: >-
+      Contradicted by Whitney §§927-929. §927: 'The aorist of the later language is simply a
+      preterit, equivalent to the imperfect and perfect, and frequently coördinated with them' —
+      so the imperfect is NOT barred from the sense the aorist carries; they are interchangeable in
+      Classical Sanskrit. §928: the older-language aorist has the value of a 'perfect' — 'something
+      past which is viewed as COMPLETED with reference to the present … what has just taken place' —
+      i.e. completive/punctual, the opposite of durative 'continuousness'. §929: the aorist is
+      distinguished FROM the imperfect precisely as a non-narrative tense. Whitney assigns the
+      aorist no durative value anywhere.
+    ref: "Whitney 1889 §§927-929; Apte, Guide to Sanskrit Composition §210 (English original verified: 'also implies the idea of continuousness. The Imperfect cannot be used in this sense'); harvest APT-H-219 (Урок 19)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The register's first FALSE. Two checks make it solid. (1) The error is APTE'S OWN, not the
+      Likhushina translation's: the digitized English §210 reads 'also implies the idea of
+      continuousness. The Imperfect cannot be used in this sense' — «длительность» faithfully
+      renders 'continuousness', so the earlier translation-inversion hypothesis is refuted. (2)
+      Apte contradicts himself: his §207-208 state that as Sanskrit ceased to be spoken 'writers
+      began to use these three [past] tenses promiscuously' — exactly Whitney §927's equivalence —
+      which undercuts §210's categorical 'the Imperfect cannot'. Apte is transmitting a Pāṇinian
+      aspectual doctrine (the aorist as भूतार्थे लुङ्, the general past) as a categorical rule the
+      descriptive record does not bear out — a prescriptive-vs-descriptive miss of the same family
+      as APT-21 (the Pāṇinian dative-of-anger). Graded MISLEADING because a beginner told 'the
+      aorist is durative, the imperfect is not' learns the aspect backwards; and the aorist is in
+      any case marginal in Classical usage (0.31% of verbal tokens, DCS — cf. Whitney §826), so the
+      durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.
