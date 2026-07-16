@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.17.0] - 2026-07-16
+
 ### Changed
 - **Гл. 7 «Указатель Зализняка» — одобрена автором 16-07-2026, на исправленный текст.** Виза дана
   после уточнения охвата §7.1 (749/930, PR #298). Draft banner removed, `[^ed7draft]` footnote
