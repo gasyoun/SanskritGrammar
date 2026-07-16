@@ -19,6 +19,20 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.27.0] - 2026-07-16
+
+### Changed
+- **P3 (SG-MO-017 перфект) — авторская виза применена → ОПУБЛИКОВАНО (честный отрицательный результат).**
+  [`sangram/articles/perfect/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/perfect):
+  ревизия `published` в манифесте, плашка кандидата снята, § 6 п. 6 обновлён на формулировку восстановленного
+  провенанс-пина (тег [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content)
+  зеркала dcs-conllu). Review-sheet `sangram-sg-mo-017-perfect-visa_15.07.26` — 8/8 approve, без правок к
+  формулировкам. Главный результат: DCS-форма-класс (`feat_formation`) не содержит значения «перфект» —
+  единственный форма-эвидентный перфект перифрастический (3,96 % бакета `Tense=Past`); главная редуплицированная
+  формация (`uvāca`, `cakāra`, `jaghnuḥ`) не тегируется вовсе; тег `red` под `Past` — ложный друг (редуплицированный
+  аорист). Kill-gate C5 § 7 P3 СРАБОТАЛ: recall перфекта по форма-классу 2/61 = 3,3 % ≪ 95 %. (Opus 4.8
+  `claude-opus-4-8[1m]`, [H983](https://github.com/gasyoun/Uprava/blob/main/handoffs/H983-Opus_SanskritGrammar_sangram-w2-pilot-p3-perfect_15.07.26.md))
+
 ## [0.26.0] - 2026-07-16
 
 ### Changed
