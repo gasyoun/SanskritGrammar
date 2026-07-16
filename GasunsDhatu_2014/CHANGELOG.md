@@ -9,6 +9,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **Введение — рамка «Три вопроса и две части» одобрена автором 16-07-2026, без правок.** Footnote
+  `[^edvv1]` updated with approval note, `BOOK_PLAN.md` Введение закрыто. **Это последняя
+  глава-уровневая виза M03 — весь черновик рукописи (Введение → Часть I → Часть II → Заключение)
+  теперь завизирован; остаётся только сквозная человеческая литредактура (RWS) и финальная сверка
+  чисел при вёрстке.**
+  ([H1043](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1043-Opus_SanskritGrammar_m03-vvedenie-crosscheck_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ### Added
 - **Гл. 3 «Морфонологическая запись корней» — стежок с Гл. 7.** Closes the last open gap in
   Part I noted in `BOOK_PLAN.md`: the §3.2/Выводы line «Уитни описывает → Зализняк
