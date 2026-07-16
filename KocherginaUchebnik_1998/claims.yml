@@ -764,13 +764,40 @@ entries:
     falsifiable_as: "do a-/an- privative nouns make up ≥1/3 of prefixed nouns, ~80% of them abstract"
     sources: [dcs]
     verdict_fact: UNTESTABLE
-    number: "the ≥1/3 and ~80% shares depend on Kochergina's undisclosed count base (which nouns counted as 'prefixed', abstract-vs-concrete coding); directionally plausible against the DCS lemma inventory but the hard figures are unverifiable"
-    ref: "no ground-truth source; count base undisclosed"
+    number: >-
+      SIZED, two parts, both still UNTESTABLE for DIFFERENT reasons (16-07-2026,
+      privative_noun_abstractness.py, H1060). Part 1 (a-/an- nouns >= 1/3 of ALL
+      prefixed nouns): unchanged — needs the same total-prefixed-noun denominator
+      that hit a wall for HK-225/229 (H1047), not re-attempted. Part 2 (~80% of
+      these are abstract): genuinely attempted with new infrastructure — reused
+      animacy_lookup.py's Sanskrit-WordNet sembank technique, rooted instead at
+      abstraction/psychological_feature/knowledge/state/attribute/relation/event/
+      act/phenomenon (all 9 WordNet Tops nodes a traditional grammar would call
+      "abstract" — quality/state/action/relation, not just the narrow
+      "abstraction" node, which alone gave a misleadingly low 30.6%). Measured
+      **52.8% abstract** (171/324 classified a-/an- privative noun lemmas) — well
+      short of ~80%, but NOT registered as a refutation: candidate IDENTIFICATION
+      itself turned out contaminated. "Base exists as its own independent lemma"
+      (the validation check) passes for LEXICALIZED words that are not felt as
+      productive negations at all — asura ("demon") = a-+sura ("god", a real
+      lemma), agni ("fire")+gni, aja ("goat")+ja, ahi ("snake")+hi, amṛta
+      ("nectar")+mṛta — all structurally valid a-/an-+lemma pairs, none genuine
+      privative derivations. A minimum base-length filter does not fix this
+      (checked: candidate count barely changes from length>=2 to length>=5) —
+      this is a semantic-transparency wall, the same fundamental kind already
+      deprioritized for HK-226/227, discovered via a different structural pattern
+    ref: >-
+      no ground-truth source for part 1; KocherginaUchebnik_1998/privative_noun_abstractness.py;
+      hk42_privative_noun_abstractness_stats.json; cf. HK-225/229 (H1047), HK-226/227 (semantic transparency)
     verdict_pedagogy: FREQUENCY-HIDDEN
     note: >-
-      Same failure mode as HK-41: precise percentages with no reproducible base. The a-privative's
-      productivity and abstract-antonym semantics are real, but '≥1/3' and '~80%' are asserted, not
-      shown.
+      Same failure mode as HK-41 for part 1: precise percentages with no
+      reproducible base. Part 2 is now a properly sized attempt, not an
+      unattempted assertion — but the candidate set itself needed semantic
+      judgment (transparent negation vs lexicalized homograph) that structural
+      pattern-matching against DCS's own lemma inventory cannot supply. Recorded
+      with the specific contaminating examples so this exact wall isn't
+      rediscovered from scratch.
 
 
   - id: HK-43

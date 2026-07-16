@@ -1,0 +1,116 @@
+{
+  "instrument": "privative_noun_abstractness.py — part 2 of HK-42 only (the abstract-share claim); part 1 (>= 1/3 of ALL prefixed nouns) stays UNTESTABLE, same wall as HK-225/229 (H1047), not re-attempted",
+  "privative_candidates_total": 1326,
+  "candidates_sample": [
+    [
+      "apātra",
+      "pātra",
+      "a-"
+    ],
+    [
+      "apraveśa",
+      "praveśa",
+      "a-"
+    ],
+    [
+      "adhanvan",
+      "dhanvan",
+      "a-"
+    ],
+    [
+      "avyā",
+      "vyā",
+      "a-"
+    ],
+    [
+      "apunarbhava",
+      "punarbhava",
+      "a-"
+    ],
+    [
+      "ajapā",
+      "japā",
+      "a-"
+    ],
+    [
+      "asaṃgama",
+      "saṃgama",
+      "a-"
+    ],
+    [
+      "aruja",
+      "ruja",
+      "a-"
+    ],
+    [
+      "anarma",
+      "arma",
+      "an-"
+    ],
+    [
+      "amarman",
+      "marman",
+      "a-"
+    ],
+    [
+      "achadman",
+      "chadman",
+      "a-"
+    ],
+    [
+      "aga",
+      "ga",
+      "a-"
+    ],
+    [
+      "aprakṛti",
+      "prakṛti",
+      "a-"
+    ],
+    [
+      "abheda",
+      "bheda",
+      "a-"
+    ],
+    [
+      "anāgata",
+      "āgata",
+      "an-"
+    ],
+    [
+      "aśrāddha",
+      "śrāddha",
+      "a-"
+    ],
+    [
+      "avanī",
+      "vanī",
+      "a-"
+    ],
+    [
+      "avilamba",
+      "vilamba",
+      "a-"
+    ],
+    [
+      "asamṛddhi",
+      "samṛddhi",
+      "a-"
+    ],
+    [
+      "asamācāra",
+      "samācāra",
+      "a-"
+    ]
+  ],
+  "candidates_with_wordsem_classification": 324,
+  "by_class": {
+    "abstract": 171,
+    "concrete": 152,
+    "tied": 1
+  },
+  "abstract_share_pct_of_classified": 52.8,
+  "expected_by_hk42_part2": "~80% abstract",
+  "part2_status": "INCONCLUSIVE — candidate identification itself is contaminated by lexicalized words that structurally pattern-match a-/an- + an independent lemma without being felt as productive negations (asura='demon'=a-+sura['god'], agni='fire'+gni, aja='goat'+ja, ahi='snake'+hi, amṛta='nectar'+mṛta — all real lemma-pairs, none genuine privative derivations). A semantic-transparency wall, same kind as HK-226/227, not fixable by a length filter (checked: candidate count barely changes at min-base-length 4-5)",
+  "part1_status": "UNTESTABLE — no reliable total-prefixed-noun denominator (H1047)"
+}
