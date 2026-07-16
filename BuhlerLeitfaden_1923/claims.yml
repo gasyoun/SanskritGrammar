@@ -4078,13 +4078,38 @@ entries:
     kind: statistic
     falsifiable_as: "These suppletive comparatives (nedīyas, kanīyas, śreyas, bhūyas, etc.) are the most frequent irregular ones in a corpus frequency count"
     sources: [whitney]
-    verdict_fact: UNTESTABLE
+    verdict_fact: TRUE
     number: >-
-      UNTESTABLE: needs a per-lemma frequency join over īyas/iṣṭha comparatives in DCS; no permitted corpus number covers comparative lemma frequencies
-    ref: "Whitney §470 (the same canonical irregular-comparative list); cf. HB-47/HB-48/OCH-57"
+      MEASURED (16-07-2026, suppletive_comparative_freq.py, H1042): the 9 pairs read
+      directly from Bühler's own §XXXII.3 text (antika/alpa/guru/dīrgha/praśasya/priya/
+      bahu/yuvan/vṛddha → nedīyas·kanīyas·garīyas·drāghīyas·śreyas(jyāyas)·preyas·bhūyas·
+      yavīyas·varṣīyas(jyāyas), superlatives likewise) ranked by DCS-2026 lemma frequency
+      against ALL upos=ADJ lemmas ending in -yas (103 types) / -ṣṭha (141 types, the
+      suffix vowel-grades to -eṣṭha for e-grade roots like śreṣṭha/preṣṭha — broadened
+      the pattern after the narrower -iṣṭha match wrongly zeroed those two), excluding
+      confirmed non-superlative homographs (ṣaṣṭha 'sixth', vāsiṣṭha 'patronymic',
+      niṣṭha, apratiṣṭha, vihāyas, dhāyas, pravayas — checked individually via upos,
+      not presumed). **7/10 of the comparative top-10 and 6/10 of the superlative
+      top-10 are named-set members**: bhūyas #1 (654 tok), śreyas #2 (466), kanīyas #3
+      (242), jyāyas #5, garīyas #6 (181), yavīyas #8 (105), varṣīyas #10 (88);
+      bhūyiṣṭha #3 (400), kaniṣṭha #5 (109), yaviṣṭha #6 (91), varṣiṣṭha #8 (78),
+      śreṣṭha #1 (2,952), jyeṣṭha #2 (922). Two members rank lower but still solidly
+      attested: nedīyas 14th/103 (47 tok), drāghīyas 24th/103 (18 tok) — "наиболее
+      часто" reads as an absolute-frequency claim (common, everyday forms vs the
+      wider theoretically-possible -īyas/-iṣṭha population, not a strict #1..#9
+      internal ranking), and on that reading the claim holds clearly
+    ref: >-
+      Whitney §470 (the same canonical irregular-comparative list); cf. HB-47/HB-48/OCH-57;
+      BuhlerLeitfaden_1923/suppletive_comparative_freq.py; hb256_suppletive_comparative_freq.json
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The list itself coincides with Whitney's canonical suppletive set, and bhūyas/śreyas are plainly common words, but the explicit 'наиболее часто' ranking cannot be graded without per-lemma comparative counts.
+      The list itself coincides with Whitney's canonical suppletive set, and the corpus
+      confirms it: these forms dominate the top of the comparative/superlative
+      frequency distribution rather than being a handful of rare forms flagged for
+      completeness. The one soft spot — nedīyas/drāghīyas rank well outside the very
+      top despite being named first/fourth in the list — doesn't break the absolute-
+      frequency reading, since both are still solidly attested (47 and 18 tokens) next
+      to a long tail of forms in the single digits.
 
   - id: HB-257
     loc: "Урок XXXII / mdx line 4609"

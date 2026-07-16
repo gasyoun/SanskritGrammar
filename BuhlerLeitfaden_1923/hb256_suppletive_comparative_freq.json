@@ -1,0 +1,279 @@
+{
+  "instrument": "suppletive_comparative_freq.py over dcs_full.sqlite — lemma frequency ranking of ADJ comparatives (-yas) and superlatives (-iṣṭha), false-positive homographs excluded (checked individually)",
+  "excluded_false_positives": [
+    "apratiṣṭha",
+    "dhāyas",
+    "niṣṭha",
+    "pravayas",
+    "vihāyas",
+    "vāsiṣṭha",
+    "ṣaṣṭha"
+  ],
+  "named_pairs_from_buhler_XXXII_3": [
+    {
+      "root": "antika",
+      "comparative": "nedīyas",
+      "superlative": "nediṣṭha",
+      "comparative_tokens": 47,
+      "comparative_rank_of_n": [
+        14,
+        103
+      ],
+      "superlative_tokens": 43,
+      "superlative_rank_of_n": [
+        13,
+        141
+      ]
+    },
+    {
+      "root": "alpa",
+      "comparative": "kanīyas",
+      "superlative": "kaniṣṭha",
+      "comparative_tokens": 242,
+      "comparative_rank_of_n": [
+        3,
+        103
+      ],
+      "superlative_tokens": 109,
+      "superlative_rank_of_n": [
+        5,
+        141
+      ]
+    },
+    {
+      "root": "guru",
+      "comparative": "garīyas",
+      "superlative": "gariṣṭha",
+      "comparative_tokens": 181,
+      "comparative_rank_of_n": [
+        6,
+        103
+      ],
+      "superlative_tokens": 20,
+      "superlative_rank_of_n": [
+        22,
+        141
+      ]
+    },
+    {
+      "root": "dīrgha",
+      "comparative": "drāghīyas",
+      "superlative": "drāghiṣṭha",
+      "comparative_tokens": 18,
+      "comparative_rank_of_n": [
+        24,
+        103
+      ],
+      "superlative_tokens": 4,
+      "superlative_rank_of_n": [
+        67,
+        141
+      ]
+    },
+    {
+      "root": "praśasya",
+      "comparative": "śreyas",
+      "superlative": "śreṣṭha",
+      "comparative_tokens": 466,
+      "comparative_rank_of_n": [
+        2,
+        103
+      ],
+      "superlative_tokens": 2952,
+      "superlative_rank_of_n": [
+        1,
+        141
+      ]
+    },
+    {
+      "root": "priya",
+      "comparative": "preyas",
+      "superlative": "preṣṭha",
+      "comparative_tokens": 43,
+      "comparative_rank_of_n": [
+        16,
+        103
+      ],
+      "superlative_tokens": 29,
+      "superlative_rank_of_n": [
+        17,
+        141
+      ]
+    },
+    {
+      "root": "bahu",
+      "comparative": "bhūyas",
+      "superlative": "bhūyiṣṭha",
+      "comparative_tokens": 654,
+      "comparative_rank_of_n": [
+        1,
+        103
+      ],
+      "superlative_tokens": 400,
+      "superlative_rank_of_n": [
+        3,
+        141
+      ]
+    },
+    {
+      "root": "yuvan",
+      "comparative": "yavīyas",
+      "superlative": "yaviṣṭha",
+      "comparative_tokens": 105,
+      "comparative_rank_of_n": [
+        8,
+        103
+      ],
+      "superlative_tokens": 91,
+      "superlative_rank_of_n": [
+        6,
+        141
+      ]
+    },
+    {
+      "root": "vṛddha",
+      "comparative": "varṣīyas",
+      "superlative": "varṣiṣṭha",
+      "comparative_tokens": 88,
+      "comparative_rank_of_n": [
+        10,
+        103
+      ],
+      "superlative_tokens": 78,
+      "superlative_rank_of_n": [
+        8,
+        141
+      ]
+    }
+  ],
+  "comparative_ranking_top15": [
+    [
+      "bhūyas",
+      654
+    ],
+    [
+      "śreyas",
+      466
+    ],
+    [
+      "kanīyas",
+      242
+    ],
+    [
+      "pāpīyas",
+      215
+    ],
+    [
+      "jyāyas",
+      208
+    ],
+    [
+      "garīyas",
+      181
+    ],
+    [
+      "balīyas",
+      170
+    ],
+    [
+      "yavīyas",
+      105
+    ],
+    [
+      "vasīyas",
+      96
+    ],
+    [
+      "varṣīyas",
+      88
+    ],
+    [
+      "varīyas",
+      77
+    ],
+    [
+      "aṇīyas",
+      66
+    ],
+    [
+      "navyas",
+      58
+    ],
+    [
+      "nedīyas",
+      47
+    ],
+    [
+      "navīyas",
+      44
+    ]
+  ],
+  "superlative_ranking_top15": [
+    [
+      "śreṣṭha",
+      2952
+    ],
+    [
+      "jyeṣṭha",
+      922
+    ],
+    [
+      "bhūyiṣṭha",
+      400
+    ],
+    [
+      "variṣṭha",
+      198
+    ],
+    [
+      "kaniṣṭha",
+      109
+    ],
+    [
+      "yaviṣṭha",
+      91
+    ],
+    [
+      "dharmiṣṭha",
+      81
+    ],
+    [
+      "varṣiṣṭha",
+      78
+    ],
+    [
+      "ojiṣṭha",
+      57
+    ],
+    [
+      "pāpiṣṭha",
+      53
+    ],
+    [
+      "śaviṣṭha",
+      49
+    ],
+    [
+      "vasiṣṭha",
+      44
+    ],
+    [
+      "nediṣṭha",
+      43
+    ],
+    [
+      "maṃhiṣṭha",
+      43
+    ],
+    [
+      "yajiṣṭha",
+      37
+    ]
+  ],
+  "named_forms_in_comparative_top10": 7,
+  "named_forms_in_superlative_top10": 6,
+  "total_comparative_lemma_types": 103,
+  "total_superlative_lemma_types": 141,
+  "expected_by_hb256": "the named 9 pairs occupy most of the top ranks (high absolute frequency), not necessarily strict #1..#9 order",
+  "confirmed": true
+}
