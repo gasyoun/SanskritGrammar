@@ -1,0 +1,254 @@
+{
+  "study": "SG-MO-010 «Склонение: местоимения» — pronominal declension (core W2 ①, content)",
+  "toc_ref": "SG-MO-010",
+  "kind": "content article (no kill-gate)",
+  "method": "PRON case×number coverage per lemma (fresh; G2 is NOUN-only) — the EM3 exception; traditional paradigms = Whitney ch. VII §§491–521 (suppletive closed class → generated ≡ traditional)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "universe_where": "t.upos='PRON' AND t.feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc') AND t.feat_number IN ('Sing','Dual','Plur') AND t.lemma IS NOT NULL",
+  "denominators": {
+    "pron_lemmas": 38,
+    "case_number_tokens": 544999
+  },
+  "cells_per_lemma": {
+    "median": 12.5,
+    "mean": 12.13,
+    "max": 22,
+    "pct_lemmas_ge_18": 39.47,
+    "contrast_noun_median": 1
+  },
+  "per_lemma": [
+    {
+      "lemma": "tad",
+      "tokens": 184809,
+      "cells_attested": 21
+    },
+    {
+      "lemma": "yad",
+      "tokens": 61421,
+      "cells_attested": 21
+    },
+    {
+      "lemma": "mad",
+      "tokens": 60575,
+      "cells_attested": 21
+    },
+    {
+      "lemma": "idam",
+      "tokens": 52461,
+      "cells_attested": 22
+    },
+    {
+      "lemma": "tvad",
+      "tokens": 49725,
+      "cells_attested": 21
+    },
+    {
+      "lemma": "etad",
+      "tokens": 40991,
+      "cells_attested": 21
+    },
+    {
+      "lemma": "sarva",
+      "tokens": 22865,
+      "cells_attested": 18
+    },
+    {
+      "lemma": "ka",
+      "tokens": 14087,
+      "cells_attested": 18
+    },
+    {
+      "lemma": "anya",
+      "tokens": 10272,
+      "cells_attested": 19
+    },
+    {
+      "lemma": "enad",
+      "tokens": 8519,
+      "cells_attested": 13
+    },
+    {
+      "lemma": "kaścit",
+      "tokens": 7944,
+      "cells_attested": 15
+    },
+    {
+      "lemma": "para",
+      "tokens": 7182,
+      "cells_attested": 20
+    },
+    {
+      "lemma": "adas",
+      "tokens": 5993,
+      "cells_attested": 18
+    },
+    {
+      "lemma": "sama",
+      "tokens": 3927,
+      "cells_attested": 18
+    },
+    {
+      "lemma": "pūrva",
+      "tokens": 3122,
+      "cells_attested": 22
+    },
+    {
+      "lemma": "apara",
+      "tokens": 2761,
+      "cells_attested": 19
+    },
+    {
+      "lemma": "ubh",
+      "tokens": 1923,
+      "cells_attested": 7
+    },
+    {
+      "lemma": "itara",
+      "tokens": 1383,
+      "cells_attested": 19
+    },
+    {
+      "lemma": "kaścana",
+      "tokens": 882,
+      "cells_attested": 10
+    },
+    {
+      "lemma": "ekaika",
+      "tokens": 861,
+      "cells_attested": 11
+    },
+    {
+      "lemma": "anyonya",
+      "tokens": 809,
+      "cells_attested": 11
+    },
+    {
+      "lemma": "paraspara",
+      "tokens": 695,
+      "cells_attested": 7
+    },
+    {
+      "lemma": "tya",
+      "tokens": 407,
+      "cells_attested": 12
+    },
+    {
+      "lemma": "aneka",
+      "tokens": 368,
+      "cells_attested": 13
+    },
+    {
+      "lemma": "katama",
+      "tokens": 336,
+      "cells_attested": 13
+    },
+    {
+      "lemma": "anyatara",
+      "tokens": 331,
+      "cells_attested": 9
+    },
+    {
+      "lemma": "tva",
+      "tokens": 86,
+      "cells_attested": 6
+    },
+    {
+      "lemma": "itaretara",
+      "tokens": 74,
+      "cells_attested": 5
+    },
+    {
+      "lemma": "katara",
+      "tokens": 59,
+      "cells_attested": 6
+    },
+    {
+      "lemma": "yatara",
+      "tokens": 42,
+      "cells_attested": 7
+    },
+    {
+      "lemma": "yatama",
+      "tokens": 38,
+      "cells_attested": 5
+    },
+    {
+      "lemma": "ama",
+      "tokens": 32,
+      "cells_attested": 1
+    },
+    {
+      "lemma": "sima",
+      "tokens": 6,
+      "cells_attested": 5
+    },
+    {
+      "lemma": "kaya",
+      "tokens": 4,
+      "cells_attested": 1
+    },
+    {
+      "lemma": "taka",
+      "tokens": 4,
+      "cells_attested": 2
+    },
+    {
+      "lemma": "ekaścana",
+      "tokens": 2,
+      "cells_attested": 1
+    },
+    {
+      "lemma": "yaka",
+      "tokens": 2,
+      "cells_attested": 2
+    },
+    {
+      "lemma": "aviśva",
+      "tokens": 1,
+      "cells_attested": 1
+    }
+  ],
+  "cell_lemma_counts": {
+    "Nom.Sing": 35,
+    "Nom.Dual": 20,
+    "Nom.Plur": 31,
+    "Acc.Sing": 31,
+    "Acc.Dual": 18,
+    "Acc.Plur": 29,
+    "Ins.Sing": 27,
+    "Ins.Dual": 13,
+    "Ins.Plur": 26,
+    "Dat.Sing": 25,
+    "Dat.Dual": 10,
+    "Dat.Plur": 15,
+    "Abl.Sing": 24,
+    "Abl.Dual": 9,
+    "Abl.Plur": 17,
+    "Gen.Sing": 27,
+    "Gen.Dual": 15,
+    "Gen.Plur": 21,
+    "Loc.Sing": 26,
+    "Loc.Dual": 13,
+    "Loc.Plur": 20,
+    "Voc.Sing": 5,
+    "Voc.Dual": 1,
+    "Voc.Plur": 3
+  },
+  "validation_sample": {
+    "seed": 20260716,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "EM3_exception": "pronouns invert EM3: closed high-frequency class → median coverage ≫ nouns (G2 median 1)",
+    "suppletion": "pronoun stems are suppletive/irregular (aham↔mad, sa/sā/tat↔tad); DCS lemmatizes by oblique stem, no productive generation rule",
+    "gender": "demonstratives (tad/idam/etad) inflect for gender; personals (mad/tvad) do not — coverage here is per lemma across genders",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
