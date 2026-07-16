@@ -103,3 +103,45 @@ candidates:
   - {id: APT-H-315, lesson: 23, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "kila most often means 'truly/indeed', followed by the emphasized word.", promoted: APT-24}
   - {id: APT-H-316, lesson: 24, quantifier: никогда/всегда, kind: universality, testability: syntax-treebank, claim_en: "tu never sentence-initial; parantu/kintu always first.", promoted: APT-4}
   - {id: APT-H-317, lesson: 25, quantifier: должно, kind: government, testability: syntax-treebank, claim_en: "A noun before nāma ('by name') must be in the same case as the noun it qualifies."}
+
+  # ===== Lessons 26–28 (reader A26: APT-H-500..515) — drain H1081 =====
+  - {id: APT-H-500, lesson: 26, quantifier: обычно, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ usually means 'again'."}
+  - {id: APT-H-501, lesson: 26, quantifier: часто, kind: statistic, testability: syntax-treebank, claim_en: "punaḥ often has adversative sense 'whereas, on the other hand'."}
+  - {id: APT-H-502, lesson: 26, quantifier: как правило, kind: rule, testability: reference-Whitney, claim_en: "prāyaḥ/prāyeṇa means 'as a rule', marks a general statement."}
+  - {id: APT-H-503, lesson: 26, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "balavat used adverbially 'strongly, exceedingly'."}
+  - {id: APT-H-504, lesson: 26, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "muhuḥ 'often' is usually reduplicated in that sense."}
+  - {id: APT-H-505, lesson: 26, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "yat introduces a direct statement, with or without final iti."}
+  - {id: APT-H-506, lesson: 26, quantifier: none, kind: government, testability: reference-Whitney, claim_en: "yataḥ means 'whence' when substituting for yasmāt."}
+  - {id: APT-H-507, lesson: 27, quantifier: как правило, kind: rule, testability: syntax-treebank, claim_en: "relative-pronoun forms (usually yena) replace yathā in the second clause."}
+  - {id: APT-H-508, lesson: 27, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "yāvat alone means 'until' and governs the accusative."}
+  - {id: APT-H-509, lesson: 27, quantifier: оба, kind: rule, testability: syntax-treebank, claim_en: "Sanskrit requires both yāvat and tāvat where one temporal conjunction suffices."}
+  - {id: APT-H-510, lesson: 27, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "reduplicated yathā yathā…tathā tathā is used with comparatives ('the more…the more')."}
+  - {id: APT-H-511, lesson: 28, quantifier: как правило, kind: rule, testability: syntax-treebank, claim_en: "varaṃ…na (usually + ca/tu/punaḥ) expresses preference 'better…than'."}
+  - {id: APT-H-512, lesson: 28, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "both members of a varaṃ…na construction stand in the nominative."}
+  - {id: APT-H-513, lesson: 28, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "the particle hi never stands sentence-initial.", promoted: APT-25}
+  - {id: APT-H-514, lesson: 28, quantifier: крайне редко, kind: statistic, testability: untestable, claim_en: "hā expressing disgust (jugupsā) occurs extremely rarely."}
+  - {id: APT-H-515, lesson: 28, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "hā most often denotes grief/regret/pain."}
+
+  # ===== Lessons 29–30 (reader A29: APT-H-600..619) — voice assignment; drain H1081 (apte_pada_stats.py) =====
+  # DCS feat_voice tags only Pass, not P/Ā — root-default voice recovered from finite present endings;
+  # fine preverb+semantic rules condition on an untagged sense -> UNTESTABLE (see APT-30).
+  - {id: APT-H-600, lesson: 29, quantifier: только, kind: government, testability: morphology-DCS, claim_en: "nam/bhram/ruc/bhāṣ single-voice; kṛ/ci/cur/duh both voices.", promoted: APT-29}
+  - {id: APT-H-601, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "kram without preverb -> Ātmanepada when duration/intensity/increase implied (sense-conditioned)."}
+  - {id: APT-H-602, lesson: 29, quantifier: обычно, kind: government, testability: morphology-DCS, claim_en: "krīḍ 'play' normally Parasmaipada (but Ātmanepada with anu/sam/pari/ā).", promoted: APT-28}
+  - {id: APT-H-603, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "gam+sam is Ātmanepada in the sense 'associate/join with' (sense-conditioned)."}
+  - {id: APT-H-604, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "car+ud -> Ātmanepada when transitive (sense-conditioned)."}
+  - {id: APT-H-605, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "ji+vi/parā (conquer/rout) -> Ātmanepada (sense-conditioned)."}
+  - {id: APT-H-606, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "tap+vi/ud -> Ātmanepada when intransitive/body-part object (sense-conditioned)."}
+  - {id: APT-H-607, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "nī without prefix or +ud/upa/vi -> Ātmanepada (sense-conditioned)."}
+  - {id: APT-H-608, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "vinī 'teach/train/tame' -> Parasmaipada (sense-conditioned)."}
+  - {id: APT-H-609, lesson: 29, quantifier: обычно, kind: government, testability: morphology-DCS, claim_en: "ram 'rest' normally Ātmanepada (but +vi/ā/pari Parasmaipada).", promoted: APT-26}
+  - {id: APT-H-610, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "sthā+upa -> Ātmanepada meaning worship/wait upon a deity (sense-conditioned)."}
+  - {id: APT-H-611, lesson: 29, quantifier: none, kind: government, testability: untestable, claim_en: "hṛ+anu Ātmanepada 'practice', Parasmaipada 'resemble' (sense-conditioned)."}
+  - {id: APT-H-612, lesson: 30, quantifier: обычно, kind: government, testability: morphology-DCS, claim_en: "han normally Parasmaipada (but +ā Ātmanepada when intransitive/own body).", promoted: APT-27}
+  - {id: APT-H-613, lesson: 30, quantifier: none, kind: government, testability: untestable, claim_en: "śru+sam Parasmaipada if transitive, Ātmanepada if intransitive (sense-conditioned)."}
+  - {id: APT-H-614, lesson: 30, quantifier: за исключением, kind: government, testability: untestable, claim_en: "bhuj Ātmanepada except in sense 'protect/rule' (sense-conditioned)."}
+  - {id: APT-H-615, lesson: 30, quantifier: за исключением, kind: government, testability: untestable, claim_en: "yuj+pra/upa or vowel-edge prefix -> Ātmanepada, except re sacrificial vessels (sense-conditioned)."}
+  - {id: APT-H-616, lesson: 30, quantifier: всегда, kind: universality, testability: untestable, claim_en: "jñā in the desiderative always Ātmanepada (desiderative-only, not separable in DCS)."}
+  - {id: APT-H-617, lesson: 30, quantifier: none, kind: government, testability: untestable, claim_en: "causatives of budh/yudh/naś/jan/i(+adhi)/pru/dru/sru -> Parasmaipada."}
+  - {id: APT-H-618, lesson: 30, quantifier: в целом, kind: government, testability: untestable, claim_en: "causatives generally Ātmanepada when the fruit belongs to the agent (sense-conditioned)."}
+  - {id: APT-H-619, lesson: 30, quantifier: none, kind: government, testability: untestable, claim_en: "krī 'buy' +pari/vi/av -> Ātmanepada (sense-conditioned)."}

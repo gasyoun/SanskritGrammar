@@ -45,10 +45,11 @@ v3.0, 2021) *Руководства по санскритской компози
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-24: **17 TRUE · 7 OVERSTATED · 0 UNTESTABLE**), источник правды;
-- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (24 продвинуты; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
-- [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [apte_treebank_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, падеж цели по зависимостному слою DCS;
-- [apte_classical_government_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) → [apte_classical_government_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json) — инструмент управления падежами (H1062): оконная совстречаемость + подъём над базовой линией по ВСЕМУ корпусу (feat_case на 70,6% из 5,69 млн токенов), с положительными и отрицательным контролями;
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-30: **21 TRUE · 8 OVERSTATED · 1 UNTESTABLE**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **115 кандидатов** (все 30 занятий сжаты; 27 продвинуты);
+- [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, падеж цели по зависимостному слою DCS;
+- [apte_classical_government_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json) — инструмент управления падежами (H1062): оконная совстречаемость + подъём над базовой линией по ВСЕМУ корпусу, с контролями;
+- [apte_pada_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.json) — инструмент залога (H1081): Parasmaipada/Ātmanepada по окончаниям презенса (DCS feat_voice кодирует только пассив, не P/Ā), корневой залог по умолчанию;
 - [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) + [claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.json) — генерируются из `claims.yml` скриптом [scripts/build_claims.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) (`npm run claims`), руками не править.
 
 **Дренаж backlog treebank-инструментом (H1059, 16-07-2026):** реестр 8 → 24. Позиционные и
@@ -70,6 +71,17 @@ UNTESTABLE и **исправила один вердикт**: `ruc` → дате
 дательного гнева предписательно, а не частотно); любовь → местный слабо (1,08×). Метод
 проверен контролями: `bhī`/`jugups` → аблатив воспроизводятся (5,52×/3,96×), отрицательный
 контроль `dṛś` «видеть» не даёт ложного управления (подъём дательного 0,23×).
+
+**Занятия 26–30 сжаты и дренированы (H1081, 17-07-2026):** пробел покрытия закрыт (все 30
+занятий, бэклог 79 → 115). Занятия 29–30 — панинийское назначение залога (Parasmaipada/
+Ātmanepada); **DCS feat_voice кодирует только пассив, не P/Ā**, поэтому построен инструмент
+[apte_pada_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.py),
+восстанавливающий залог по окончаниям презенса. Корневой залог по умолчанию дренируется
+чисто: `ram` → Ātm. 95,5%, `han` → Paras. 89,9%, `bhāṣ` → Ātm. 97,9%, `nam` → Paras. 83,1%
+(все TRUE), `kṛ`/`duh` — оба залога (TRUE); но `krīḍ` «обычно Parasmaipada» на деле почти
+поровну (57,6/42,4 → OVERSTATED). Тонкие правила «приставка + значение» (~15 штук) сигнала в
+корпусе не имеют (не размечены ни P/Ā, ни семантическое условие) → UNTESTABLE, честно
+задокументировано (APT-30).
 
 **Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
 грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,

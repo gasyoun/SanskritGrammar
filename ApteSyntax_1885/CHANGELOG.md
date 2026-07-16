@@ -9,6 +9,26 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-17
+### Added
+- **Lessons 26–30 harvested and drained (H1081, Opus 4.8 `claude-opus-4-8[1m]`).** Closes the
+  coverage gap carried since the seed — all 30 lessons now harvested (backlog 79 → **115
+  candidates**). Register **24 → 30 verified** (APT-25..30). New self-tested
+  [`apte_pada_stats.py`](apte_pada_stats.py) → [`apte_pada_stats.json`](apte_pada_stats.json)
+  recovers Parasmaipada/Ātmanepada from finite present endings — necessary because **DCS
+  `feat_voice` tags only `Pass`, not the P/Ā distinction** — method-validated (as/bhū → P
+  100%/99.7%, labh/īś → Ā 97.6%/100%).
+### Changed
+- Tally **17/7/0 → 21 TRUE · 8 OVERSTATED · 1 UNTESTABLE**:
+  - **APT-25 hi → never sentence-initial: TRUE** (0.77%, completes the postpositive-particle family).
+  - **APT-26 ram → Ātmanepada: TRUE** (95.5%); **APT-27 han → Parasmaipada: TRUE** (89.9%);
+    **APT-29 single/both-voice typology: TRUE** (bhāṣ 97.9% Ā, nam 83.1% P, kṛ/duh both).
+  - **APT-28 krīḍ → Parasmaipada: OVERSTATED** — actually near-even (57.6% P / 42.4% Ā), not the
+    strong default «обычно» implies.
+  - **APT-30 fine preverb+sense voice rules: UNTESTABLE** — the ~15 Pāṇinian sense-conditioned
+    rules of lessons 29-30 have no corpus signal (DCS tags neither P/Ā nor the semantic trigger);
+    documented as an instrument gap, not force-verdicted.
+
 ## [0.4.0] - 2026-07-16
 ### Added
 - **Classical-corpus government instrument (H1062, Opus 4.8 `claude-opus-4-8[1m]`).** New
