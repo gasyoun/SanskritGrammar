@@ -85,8 +85,10 @@ RWS-проход) не пропадают — они становятся **фу
 | 6 ✅ **черновик начат (H1027)** | **Корпусная аттестация корней** — корпус подтверждает 590/935 (63,1 %) в DCS, 550 (58,8 %) «готовое ядро» MW+DCS, 259 словарно-грамматических корней корпусно отсутствуют; пределы: класс/претериты невосстановимы (SG-MO-013/017) · [`06_glava6_korpusnaya-attestaciya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/06_glava6_korpusnaya-attestaciya.mdx) (ждёт визы), план [CH6_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH6_PLAN_corpus_attestation.md) | DCS (пин 2026-03-05, 180 176 лемм), канон. кросс-уок [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk); честные пределы: без акцентуации классы I/VI и IV/пассив неразличимы |
 | 7 ✅ **черновик начат (H1037)** | **Грамматический указатель корней по модели Зализняка** — прикладной капстоун: код `ряд · seṭ/aniṭ · полноизменяемость · ударение` на 930 корнях кросс-уока; 18 рядов, 18 правил ударения + VedaWeb · [`07_glava7_ukazatel-zaliznyaka.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx) (ждёт визы), план [CH7_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH7_PLAN_zaliznyak_index.md) | [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md); [accent_rules.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json) (18 правил) + accent_validation; morphoclass_crosswalk (876); VedaWeb (акцентуированная Ригведа, CC BY 4.0 — [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)) |
 
-**Заключение** — переписать: верификация каждого положения (черновик H328 уже есть) +
-итог двух частей: три свидетеля, мера их согласия, что остается открытым.
+**Заключение** — ✅ **сшивка двух частей выполнена (H1039):** «Верификация положений» (визы Фазы 0)
++ блок «Итог двух частей» (три свидетеля, 550/935 ядро, класс 376/26, что открыто; сноска `[^edz2]`);
+«Цифровое послесловие» переориентировано — четыре направления «дальнейшей работы» развёрнуты в Гл. 4–7.
+Ждёт визы автора; финальная сквозная сверка чисел — при вёрстке.
 
 **Приложения** — полный набор 6 шт. по решению Р2 (см.
 [IMPROVEMENT_ROADMAP.md §3](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/IMPROVEMENT_ROADMAP.md)),
