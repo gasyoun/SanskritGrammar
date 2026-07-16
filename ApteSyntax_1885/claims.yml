@@ -1,0 +1,208 @@
+# claims.yml — verifiable-assertion register for ApteSyntax_1885
+#
+# GENERATED target: CLAIMS_VERIFIED.md (via scripts/build_claims.py) — never edit that file.
+#
+# Same two-axis register as KocherginaUchebnik_1998/claims.yml, BuhlerLeitfaden_1923/claims.yml
+# and ZalizniakOcherk_1978/claims.yml (H768/H797 method), ported here per H1055 (seed pass).
+#
+# GENRE CHECK DONE FIRST (16-07-2026, before harvesting). The digitized .mdx is the Likhushina
+# Russian translation (v3.0, 2021) of V. S. Apte, *The Student's Guide to Sanskrit Composition*
+# (1885) — a discursive SYNTAX / COMPOSITION manual, 30 lessons (Урок 1–30). Genre matches the
+# discursive-grammar pipeline (Kochergina/Bühler/Ocherk): it states falsifiable generalizations
+# with the same hedge/absolute prose («всегда», «только», «никогда», «обычно», «как правило»,
+# «чаще всего», «управляет», «требует»). ONE structural difference from the four books already
+# in the pipeline: Apte is SYNTAX-weighted, not morphology-weighted. Most of its rules are
+# case-government, agreement, particle-position and clitic-order statements — testable against
+# DCS's dependency (head/deprel) layer, i.e. the treebank instrument
+# (../ZalizniakOcherk_1978/treebank_syntax_stats.py, H1022), NOT against surface token
+# frequency. A large share of the harvest is therefore UNTESTABLE until that instrument is run
+# over the relevant construction, or is a cross-language translation rule ("English 'must' →
+# gerundive") gradeable only against Whitney's systematic account. This is the honest scope of
+# the book, flagged here rather than forced: the seed grades what Whitney can adjudicate now
+# plus what reuses ground truth already computed for Bühler/Kochergina; the rest is the
+# claims_harvest.yml backlog with a per-claim testability tag naming the instrument each needs.
+#
+# verdict_fact:     TRUE | OVERSTATED | FALSE | UNTESTABLE | PENDING (harvested, not yet verified)
+# verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
+# kind:             typology | universality | allomorphy | statistic | rule | government
+#
+# COVERAGE (seed 16-07-2026, H1055, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-8 verified;
+# claims_harvest.yml holds ~79 harvested candidates (lessons 1–25, from a 5-reader parallel
+# harvest; lessons 26–30 not yet harvested — one reader hit a session limit, logged as a gap).
+# Seed fact tally: 7 TRUE · 1 OVERSTATED · 0 FALSE · 0 UNTESTABLE. Three of the eight REUSE
+# ground truth already computed for sibling books (APT-6 = Bühler's periphrastic/simple-future
+# ratio; APT-3, APT-8 = the enclitic-position fact underlying Kochergina HK-10) rather than
+# recomputing — the cross-grammar infrastructure compounding as in the Ocherk seed.
+
+work: "Apte, The Student's Guide to Sanskrit Composition (1885), Russian tr. N. P. Likhushina v3.0 (2021)"
+
+synthesis: >-
+  SEED (8 verified). Apte's *Guide to Sanskrit Composition* is the fifth book in the two-axis
+  claim register and the first SYNTAX manual — where Kochergina, Bühler and Zaliznyak are
+  morphology-forward, Apte is a case-government and sentence-construction primer, so its
+  falsifiable content lives in the dependency layer, not the frequency layer. The seed's early
+  reading confirms the programme's central finding from a new genre: Apte's factual accuracy is
+  high, and where he differs from the other grammars the difference is CALIBRATION, not truth.
+  The two cleanest contrasts are direct. (1) The SAME clitic-position fact that graded
+  Kochergina OVERSTATED — her «личная форма глагола никогда не ударна» overreached from
+  enclitics to all finite verbs (HK-10) — grades Apte TRUE (APT-8): he restricts the «никогда в
+  начале предложения» rule to the enclitic pronoun forms it actually holds for, and states the
+  same postpositive rule for ca (APT-3) and tu (APT-4) exactly where Whitney §1133 puts it.
+  (2) The SAME periphrastic-vs-simple-future frequency gap that graded Bühler ORDER-QUESTIONABLE
+  — he taught the 14×-rarer periphrastic future FIRST (HB-58) — grades Apte JUSTIFIED (APT-6):
+  Apte explicitly says the periphrastic future is used «намного реже», which is precisely the
+  DCS ratio (1,290 vs 18,004 tokens). The one seed flag is the expected Type-1 overgeneralized
+  universal: «Все глаголы движения управляют винительным падежом» (APT-5, OVERSTATED) — the
+  accusative of the goal is the default, but the dative and locative of the goal are attested
+  (Whitney §274, §285d), so the absolute «все» overreaches exactly as Kochergina's absolutes do.
+  Apte's correctly-calibrated universals are the mirror image: «Все прилагательные… согласуются
+  в роде, числе и падеже» (APT-2) is a TRUE universal because the exception class is genuinely
+  empty. The remaining harvest is dominated by case-government rules (verb X governs case Y),
+  each of which becomes a concrete treebank query — the register's second product is that
+  instrument backlog, listed in claims_harvest.yml. NOTE: seed is Whitney-/reuse-graded and
+  deliberately small; it does not yet judge Apte's overall calibration rate (too few, and
+  reuse-biased) — that waits on the treebank drain over the government rules.
+
+entries:
+
+  - id: APT-1
+    loc: "Урок 12 / mdx ~line 3340"
+    claim_ru: >-
+      Обычно как возвратное местоимение используется слово ātman. Оно всегда употребляется в
+      мужском роде и в единственном числе, хотя существительное, к которому оно относится, может
+      стоять в любом роде и числе.
+    kind: universality
+    falsifiable_as: "is the reflexive noun ātman invariably masculine singular regardless of the antecedent's gender and number"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §514 — ātman used reflexively is masculine singular whatever the gender and number of the antecedent (distinct from the reflexive adjective sva-, which agrees). A correctly-stated absolute: the exception class is empty."
+    ref: "Whitney 1889 §514; harvest APT-H-204 (Урок 12)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Apte's «всегда» here is one of the well-formed universals: ātman-as-reflexive genuinely
+      admits no gender/number variation, so the absolute quantifier is earned (contrast APT-5,
+      where «все» is not). Drain instrument: a DCS pass confirming reflexive ātman surfaces only
+      as masc-sg forms would turn this Whitney fact into a corpus number.
+
+  - id: APT-2
+    loc: "Урок 2 / mdx <line 960"
+    claim_ru: >-
+      Все прилагательные в санскрите, в том числе отглагольные, местоименные или количественные —
+      согласуются с существительным, к которому они относятся, в роде, числе и падеже.
+    kind: universality
+    falsifiable_as: "do all adjectives (including verbal, pronominal, numeral) agree with their noun in gender, number and case"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §321a, §326 — adjectival words agree with the noun in gender, number and case; participles (APT-H-205) are adjectives and agree likewise. The stated exception-carriers (indeclinable absolutives, infinitives) are exactly the non-adjectival forms, so the universal holds."
+    ref: "Whitney 1889 §321a, §326; harvest APT-H-10 (Урок 2), cross-ref APT-H-205 (Урок 13)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The mirror image of the Type-1 failure: an absolute «все» that is TRUE because the
+      exception class really is empty for adjectival agreement. Apte separately and correctly
+      excludes the indeclinable participles (APT-H-205), which is the precise carve-out that
+      keeps the universal honest.
+
+  - id: APT-3
+    loc: "Урок 23 / mdx ~line 6111"
+    claim_ru: >-
+      [ca] ставится после каждого слова или утверждения, которые соединяет, или после
+      соединенных слов или утверждений, но никогда не может стоять первым в предложении.
+    kind: universality
+    falsifiable_as: "is the conjunction ca genuinely never sentence-initial (postpositive)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §1133a — ca is postpositive, never used at the beginning of a sentence or clause; same enclitic-position fact underlying Kochergina HK-10. Corpus spot-check (surface: no sentence-initial ca) queued as a treebank/segmentation drain."
+    ref: "Whitney 1889 §1133a; harvest APT-H-314 (Урок 23); cf. KocherginaUchebnik_1998 HK-10"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Reuses the enclitic-position fact from Kochergina's register, but Apte states it exactly
+      where it holds — of the postpositive conjunction ca — without Kochergina's overreach to
+      finite verbs. Well-calibrated absolute.
+
+  - id: APT-4
+    loc: "Урок 24 / mdx ~line 6347"
+    claim_ru: >-
+      tu никогда не используется в начале предложения, в то время как parantu и kintu всегда
+      стоят первыми.
+    kind: universality
+    falsifiable_as: "is tu never sentence-initial while parantu/kintu are, by contrast, sentence-initial"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §1133 — tu is postpositive (never initial); parantu (param+tu) and kintu (kim+tu) are compounded adversatives used clause-initially. Both halves of the contrast hold."
+    ref: "Whitney 1889 §1133; harvest APT-H-316 (Урок 24)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      A paired absolute — one negative (tu never first), one positive (parantu/kintu always
+      first) — both correct. The same postpositive-particle class as ca (APT-3); Apte is
+      consistent and accurate across the particle chapter.
+
+  - id: APT-5
+    loc: "Урок 3 / mdx <line 960"
+    claim_ru: "Все глаголы со значением движения управляют винительным падежом."
+    kind: universality
+    falsifiable_as: "do all verbs of motion govern the accusative (of the goal), with no other case attested for the goal"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "systematic: Whitney §274 gives the accusative of the goal as the default with verbs of motion, but §285d records the dative of the goal ('frequent in the older language, rarer later') and the locative of the goal is also attested — so «все… винительным» overstates a real but non-exclusive default."
+    ref: "Whitney 1889 §274, §285d; harvest APT-H-15 (Урок 3)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The seed's one flag, and the expected Type-1 pattern: an absolute «все» over a rule that
+      has a standard, if marginal, exception class (dative/locative of the goal). For a
+      composition primer the accusative-of-goal default is the safe teaching target, so the
+      pedagogy is defensible even though the factual quantifier overreaches — hence OVERSTATED /
+      JUSTIFIED, not MISLEADING. Drain instrument: a treebank pass counting goal-case with
+      motion-verb heads (gam/yā/...) would put a number on how marginal the non-accusative goal is.
+
+  - id: APT-6
+    loc: "Урок 20 / mdx ~line 5226"
+    claim_ru: >-
+      Описательное будущее используется намного реже, а когда применяется, чаще всего обозначает
+      отдаленное (не сегодняшнее) действие в будущем.
+    kind: statistic
+    falsifiable_as: "is the periphrastic (first) future far rarer than the simple future in the corpus"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "periphrastic future 1,290 tokens (0.17% of verbal) vs simple future 18,004 (2.3%) — a 14:1 ratio (DCS-2021, reused verbatim from BuhlerLeitfaden_1923 HB-58 / its verify_claims_dcs.py tense census)"
+    ref: "DCS-2021 tense census (../BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 HB-58"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The cleanest cross-book calibration contrast in the seed. The identical 14:1 DCS gap
+      graded Bühler ORDER-QUESTIONABLE because he TAUGHT the periphrastic future first (HB-58);
+      Apte states outright that it is «намного реже», matching the corpus — so the same fact
+      grades Apte JUSTIFIED. Presentation calibration, not accuracy, is the axis of difference.
+
+  - id: APT-7
+    loc: "Введение"
+    claim_ru: >-
+      Распределение рода совершенно произвольно, за исключением случаев, где выражен мужской или
+      женский пол, и где это различие естественно.
+    kind: universality
+    falsifiable_as: "is grammatical gender assignment essentially arbitrary except where it tracks natural sex"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §321 — grammatical gender in Sanskrit is in the main arbitrary (formal/lexical), coinciding with natural gender only where sex is denoted. Apte's hedge («совершенно… за исключением») matches the standard account."
+    ref: "Whitney 1889 §321; harvest APT-H-3 (Введение)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      A reference-grammar generalization, well hedged. Not a corpus-frequency claim; graded
+      against Whitney's systematic statement, which it reproduces without overstatement.
+
+  - id: APT-8
+    loc: "Урок 12 / mdx ~line 3340"
+    claim_ru: >-
+      Краткие формы местоимений ... mā, me, nau, naḥ, tvā, te, vāṃ и vaḥ ... никогда не
+      употребляются в начале предложения и непосредственно перед частицами ca, vā, eva и ha ... и
+      в начале стихотворной стопы.
+    kind: universality
+    falsifiable_as: "are the enclitic pronoun forms genuinely never sentence-initial (nor before ca/vā/eva/ha, nor foot-initial)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systematic: Whitney §1133 (and enclitic-accent §§109, 1117) — the unaccented pronominal forms mā/me/nau/naḥ/tvā/te/vāṃ/vaḥ cannot open a sentence or metrical foot and are barred before other enclitics. The restriction is to the enclitic forms only — exactly where it holds."
+    ref: "Whitney 1889 §1133, §§109/1117; harvest APT-H-200 (Урок 12); cf. KocherginaUchebnik_1998 HK-10"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Direct calibration contrast with Kochergina HK-10 (OVERSTATED): the SAME never-initial
+      fact, but Apte scopes it to the enclitic pronoun forms it is actually true of, rather than
+      overreaching to all finite verbs. Same underlying fact, honest quantifier — the programme's
+      central finding restated in the syntax genre.

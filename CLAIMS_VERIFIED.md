@@ -8,6 +8,7 @@ Per-book registers of *verifiable grammatical assertions* (distinct from the typ
 
 | Book | Claims | Verdicted | Flagged |
 |--|--:|--:|--:|
+| [ApteSyntax_1885](ApteSyntax_1885/CLAIMS_VERIFIED.md) | 8 | 8 | 1 |
 | [BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md) | 403 | 403 | 17 |
 | [KocherginaUchebnik_1998](KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 234 | 234 | 24 |
 | [ZalizniakKonspekt_2004](ZalizniakKonspekt_2004/CLAIMS_VERIFIED.md) | 17 | 17 | 0 |

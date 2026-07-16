@@ -1,0 +1,105 @@
+# claims_harvest.yml — harvest backlog for ApteSyntax_1885 (feeds claims.yml)
+#
+# Candidate falsifiable assertions harvested from Apte, *Student's Guide to Sanskrit
+# Composition* (1885, Likhushina Russian tr.), by a 5-reader parallel pass (H1055, 16-07-2026).
+# Each promoted candidate becomes an APT-N entry in claims.yml after verification; promoted
+# ones are marked `promoted: APT-N` below (kept here for provenance, not deleted).
+#
+# COVERAGE GAP (honest): lessons 1–25 harvested (readers A1/A6/A12/A20 completed); lessons
+# 26–30 NOT yet harvested — the fifth reader (lines 6865–8500) terminated on a session limit
+# before returning. A drain pass must re-harvest Урок 26–30 plus the exercise/glossary tail.
+#
+# testability tag names the instrument each claim needs:
+#   morphology-DCS    — surface token frequency / case distribution (verify_claims_dcs.py battery)
+#   syntax-treebank   — case-government / agreement / particle-position (../ZalizniakOcherk_1978/treebank_syntax_stats.py, head/deprel layer)
+#   reference-Whitney — systematic grammatical fact (Whitney 1889, adjudicated)
+#   untestable        — percentage with no stated base, or a pure style / cross-language translation rule
+
+candidates:
+
+  # ===== Lessons 1–5 (reader A1: APT-H-1..20) =====
+  - {id: APT-H-1,  lesson: Введение, quantifier: всегда,   kind: universality, testability: morphology-DCS,   claim_en: "Sanskrit country names are always plural (name = also the people)."}
+  - {id: APT-H-2,  lesson: Введение, quantifier: всегда,   kind: universality, testability: morphology-DCS,   claim_en: "Words meaning 'pair' (dvaya, dvitīya, yugala, dvandva) are always singular unless several pairs are meant."}
+  - {id: APT-H-3,  lesson: Введение, quantifier: совершенно, kind: universality, testability: reference-Whitney, claim_en: "Gender assignment wholly arbitrary except where natural sex is expressed.", promoted: APT-7}
+  - {id: APT-H-4,  lesson: 1, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "The verb agrees with its subject in number and person."}
+  - {id: APT-H-5,  lesson: 1, quantifier: всегда, kind: government, testability: syntax-treebank, claim_en: "As predicate nouns, pātra/āspada/sthāna/pada/pramāṇa/bhājana always stand in neuter singular regardless of subject."}
+  - {id: APT-H-6,  lesson: 1, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "Two+ nouns joined by 'and' as subject → verb takes combined (higher) number."}
+  - {id: APT-H-7,  lesson: 1, quantifier: требует, kind: government, testability: syntax-treebank, claim_en: "Singular subjects joined by 'or' require a singular verb."}
+  - {id: APT-H-8,  lesson: 1, quantifier: none,   kind: government, testability: reference-Whitney, claim_en: "Person agreement precedence: 1st > 2nd > 3rd."}
+  - {id: APT-H-9,  lesson: 1, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "Nominatives of different persons joined by 'or' → verb agrees with the nearest."}
+  - {id: APT-H-10, lesson: 2, quantifier: Все,    kind: government, testability: syntax-treebank, claim_en: "All adjectives (verbal/pronominal/numeral) agree in gender, number, case.", promoted: APT-2}
+  - {id: APT-H-11, lesson: 2, quantifier: часто,  kind: government, testability: syntax-treebank, claim_en: "An adjective often agrees only with the nearest of several nouns."}
+  - {id: APT-H-12, lesson: 2, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "The relative pronoun usually precedes the noun it refers to in the relative clause."}
+  - {id: APT-H-13, lesson: 2, quantifier: как правило, kind: government, testability: syntax-treebank, claim_en: "Relative pronoun with a predicate noun of differing gender → agrees with the predicate."}
+  - {id: APT-H-14, lesson: 2, quantifier: всегда, kind: government, testability: syntax-treebank, claim_en: "A relative pronoun referring to a whole clause is always neuter singular (yat)."}
+  - {id: APT-H-15, lesson: 3, quantifier: Все,    kind: government, testability: syntax-treebank, claim_en: "All verbs of motion govern the accusative.", promoted: APT-5}
+  - {id: APT-H-16, lesson: 3, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "Words of duration in time / extent in space stand in the accusative."}
+  - {id: APT-H-17, lesson: 3, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "śī/sthā/ās + prefix adhi govern the accusative of the place of action."}
+  - {id: APT-H-18, lesson: 4, quantifier: редко,  kind: statistic, testability: syntax-treebank, claim_en: "ci/muṣ/pac/manth/rudh/kṛṣ/hṛ/vah rarely govern two accusatives in classical literature."}
+  - {id: APT-H-19, lesson: 5, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "In the causative, the original subject → instrumental, object unchanged."}
+  - {id: APT-H-20, lesson: 5, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "Causatives of nī and vah govern the instrumental (not accusative) of the original subject."}
+
+  # ===== Lessons 6–11 (reader A6: APT-H-100..119) =====
+  - {id: APT-H-100, lesson: 6, quantifier: два основных, kind: typology, testability: reference-Whitney, claim_en: "The instrumental has exactly two core functions: agent and instrument/means."}
+  - {id: APT-H-101, lesson: 6, quantifier: обычно, kind: government, testability: syntax-treebank, claim_en: "Words meaning 'separation from' usually govern the instrumental."}
+  - {id: APT-H-102, lesson: 6, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Adjectives of bodily defect govern the instrumental of the affected organ."}
+  - {id: APT-H-103, lesson: 6, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "alam and kṛtam ('enough') govern the instrumental."}
+  - {id: APT-H-104, lesson: 6, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Accompaniment words (saha/sākam/sārdham/samam) govern the instrumental."}
+  - {id: APT-H-105, lesson: 7, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "ruc 'to please' and synonyms put the person pleased in the dative."}
+  - {id: APT-H-106, lesson: 7, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "krudh/druh/īrṣy/asūy govern the dative of the object of anger; but krudh/druh with prefixes → accusative."}
+  - {id: APT-H-107, lesson: 7, quantifier: обычно/иногда, kind: government, testability: syntax-treebank, claim_en: "namas + kṛ usually governs accusative, sometimes dative."}
+  - {id: APT-H-108, lesson: 7, quantifier: как правило, kind: government, testability: syntax-treebank, claim_en: "Verbs of sending → dative of recipient, accusative of destination place."}
+  - {id: APT-H-109, lesson: 8, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Comparatives take the ablative of the standard of comparison."}
+  - {id: APT-H-110, lesson: 8, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Words of disgust/cessation/negligence govern the ablative."}
+  - {id: APT-H-111, lesson: 8, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Words of fear/protection put the source of fear in the ablative."}
+  - {id: APT-H-112, lesson: 9, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Verbs of love/affection (snih/abhilaṣ/anurañj) govern the locative of the object of feeling."}
+  - {id: APT-H-113, lesson: 9, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "Verbs of throwing (kṣip/muc/as) govern the locative of the target."}
+  - {id: APT-H-114, lesson: 9, quantifier: чаще всего, kind: government, testability: syntax-treebank, claim_en: "Words of belief/trust most often govern the locative; but śraddhā governs the accusative."}
+  - {id: APT-H-115, lesson: 10, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "Verbs of ruling (īś/prabhū), pitying (day), remembering (smṛ/adhī) govern the genitive."}
+  - {id: APT-H-116, lesson: 10, quantifier: none, kind: government, testability: syntax-treebank, claim_en: "Words meaning equal/similar (tulya/sadṛśa/sama/saṃkāśa) govern genitive or instrumental."}
+  - {id: APT-H-117, lesson: 11, quantifier: none, kind: rule, testability: syntax-treebank, claim_en: "The genitive absolute is used when contempt/disregard is expressed."}
+  - {id: APT-H-118, lesson: 6, quantifier: none,  kind: government, testability: syntax-treebank, claim_en: "A noun denoting cause/motive (not means) is put in the instrumental."}
+  - {id: APT-H-119, lesson: 8, quantifier: как правило, kind: government, testability: syntax-treebank, claim_en: "A (typically non-feminine) noun denoting the cause of an action → instrumental or ablative."}
+
+  # ===== Lessons 12–19 (reader A12: APT-H-200..220) =====
+  - {id: APT-H-200, lesson: 12, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "Enclitic pronoun forms never occur sentence-initially, before ca/vā/eva/hā, or foot-initially.", promoted: APT-8}
+  - {id: APT-H-201, lesson: 12, quantifier: none,   kind: rule, testability: syntax-treebank, claim_en: "Enclitic pronoun forms are not used immediately after a vocative."}
+  - {id: APT-H-202, lesson: 12, quantifier: часто,  kind: government, testability: morphology-DCS, claim_en: "bhavat (polite address) is treated as 3rd-person and takes 3rd-person verb agreement."}
+  - {id: APT-H-203, lesson: 12, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "A reduplicated relative pronoun means 'all/any'; its correlative usually reduplicates too."}
+  - {id: APT-H-204, lesson: 12, quantifier: всегда, kind: universality, testability: morphology-DCS, claim_en: "Reflexive ātman is always masculine singular regardless of antecedent.", promoted: APT-1}
+  - {id: APT-H-205, lesson: 13, quantifier: все,    kind: universality, testability: morphology-DCS, claim_en: "All participles except indeclinable past participles/absolutives agree in gender/number/case."}
+  - {id: APT-H-206, lesson: 13, quantifier: реже,   kind: rule, testability: syntax-treebank, claim_en: "ās/sthā (rarely bhū/as) + present participle express continuous duration."}
+  - {id: APT-H-207, lesson: 13, quantifier: обычно, kind: government, testability: syntax-treebank, claim_en: "Verbs of shame (lajj/hrī/trap) usually take a present participle of the shameful action."}
+  - {id: APT-H-208, lesson: 13, quantifier: редко,  kind: statistic, testability: reference-Whitney, claim_en: "The present participle is rarely used with prohibitive mā to express a curse."}
+  - {id: APT-H-209, lesson: 14, quantifier: как правило, kind: typology, testability: morphology-DCS, claim_en: "PPPs of motion/intransitive roots (śliṣ/śī/sthā/ās/vas/jan/ruh/jṝ) carry active meaning."}
+  - {id: APT-H-210, lesson: 14, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "PPPs of man/budh/pūj denote present time and govern the genitive."}
+  - {id: APT-H-211, lesson: 15, quantifier: всегда, kind: universality, testability: reference-Whitney, claim_en: "The absolutive always denotes a prior/completed-before action."}
+  - {id: APT-H-212, lesson: 16, quantifier: не может, kind: universality, testability: reference-Whitney, claim_en: "The Sanskrit infinitive cannot be subject or object of the action."}
+  - {id: APT-H-213, lesson: 16, quantifier: none,   kind: government, testability: syntax-treebank, claim_en: "Infinitive with verbs of desire/intention only when infinitive and main verb share an agent."}
+  - {id: APT-H-214, lesson: 16, quantifier: none,   kind: universality, testability: reference-Whitney, claim_en: "The Sanskrit infinitive has no passive form; one form serves active and passive."}
+  - {id: APT-H-215, lesson: 16, quantifier: обычно, kind: rule, testability: morphology-DCS, claim_en: "arh + infinitive of polite request is usually 2nd or 3rd person."}
+  - {id: APT-H-216, lesson: 17, quantifier: none,   kind: rule, testability: syntax-treebank, claim_en: "Present tense + particle sma yields past-tense meaning."}
+  - {id: APT-H-217, lesson: 17, quantifier: всегда, kind: universality, testability: reference-Whitney, claim_en: "The benedictive is always used in blessings; 1st person expresses the speaker's wish."}
+  - {id: APT-H-218, lesson: 18, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "The conditional particle ced never stands sentence-initially."}
+  - {id: APT-H-219, lesson: 19, quantifier: не может, kind: typology, testability: reference-Whitney, claim_en: "The aorist can express durativity; the imperfect cannot. [SUSPECT — check vs Whitney §928, likely OVERSTATED/FALSE]"}
+  - {id: APT-H-220, lesson: 19, quantifier: обычно, kind: rule, testability: morphology-DCS, claim_en: "Augment usually dropped in aorist after mā/mā sma; augmentless 2nd person has imperative force."}
+
+  # ===== Lessons 20–25 (reader A20: APT-H-300..317) =====
+  - {id: APT-H-300, lesson: 20, quantifier: намного реже, kind: statistic, testability: morphology-DCS, claim_en: "Periphrastic future far rarer than simple; when used, denotes remote (non-today) future.", promoted: APT-6}
+  - {id: APT-H-301, lesson: 20, quantifier: в обеих частях, kind: rule, testability: syntax-treebank, claim_en: "The conditional (kriyātipatti) must appear in both protasis and apodosis."}
+  - {id: APT-H-302, lesson: 20, quantifier: всегда, kind: government, testability: reference-Whitney, claim_en: "English 'can/could' always = ability, rendered with śak-/samartha- + infinitive."}
+  - {id: APT-H-303, lesson: 20, quantifier: всегда, kind: universality, testability: reference-Whitney, claim_en: "English 'must' always rendered by the gerundive (potential passive participle)."}
+  - {id: APT-H-304, lesson: 20, quantifier: всегда, kind: universality, testability: reference-Whitney, claim_en: "The pluperfect conditional is always rendered by the Sanskrit conditional."}
+  - {id: APT-H-305, lesson: 20, quantifier: как правило, kind: statistic, testability: reference-Whitney, claim_en: "English continuous tenses as a rule rendered by simple Sanskrit tenses."}
+  - {id: APT-H-306, lesson: 20, quantifier: обычно, kind: statistic, testability: reference-Whitney, claim_en: "English 'might' usually rendered by the optative."}
+  - {id: APT-H-307, lesson: 21, quantifier: управляется, kind: government, testability: syntax-treebank, claim_en: "adhikṛtya ('concerning') governs the accusative."}
+  - {id: APT-H-308, lesson: 21, quantifier: чаще всего, kind: rule, testability: syntax-treebank, claim_en: "iti most often reports exact (direct-speech) words and stands after them."}
+  - {id: APT-H-309, lesson: 21, quantifier: требует, kind: government, testability: syntax-treebank, claim_en: "Assertive iti requires the quoted clause to have at least a subject and a verb."}
+  - {id: APT-H-310, lesson: 22, quantifier: обычно, kind: rule, testability: syntax-treebank, claim_en: "iva (simile) normally stands after the object of comparison."}
+  - {id: APT-H-311, lesson: 22, quantifier: должны, kind: government, testability: syntax-treebank, claim_en: "The two terms linked by iva must stand in the same case."}
+  - {id: APT-H-312, lesson: 22, quantifier: обычно, kind: statistic, testability: syntax-treebank, claim_en: "uta usually means 'or' (alternatives), usually paired with kiṃ."}
+  - {id: APT-H-313, lesson: 22, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "eva most often emphasizes/restricts the word it follows."}
+  - {id: APT-H-314, lesson: 23, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "ca is placed after each conjoined item and can never stand first.", promoted: APT-3}
+  - {id: APT-H-315, lesson: 23, quantifier: чаще всего, kind: statistic, testability: syntax-treebank, claim_en: "kila most often means 'truly/indeed', followed by the emphasized word."}
+  - {id: APT-H-316, lesson: 24, quantifier: никогда/всегда, kind: universality, testability: syntax-treebank, claim_en: "tu never sentence-initial; parantu/kintu always first.", promoted: APT-4}
+  - {id: APT-H-317, lesson: 25, quantifier: должно, kind: government, testability: syntax-treebank, claim_en: "A noun before nāma ('by name') must be in the same case as the noun it qualifies."}

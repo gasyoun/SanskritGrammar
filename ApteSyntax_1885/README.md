@@ -1,6 +1,6 @@
 # ApteSyntax_1885 — Apte, *The Student's Guide to Sanskrit Composition* (1885)
 
-_Created: 06-07-2026 · Last updated: 06-07-2026_
+_Created: 06-07-2026 · Last updated: 16-07-2026_
 
 Raw-source archive and faithful [`.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.mdx)
 extraction of **Vaman Shivaram Apte's** *The Student's Guide to Sanskrit
@@ -26,6 +26,41 @@ rendered [Docusaurus page](https://gasyoun.github.io/SanskritGrammar/grammars/Ap
 | [Apte-unicode.docx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.docx) · [Apte-unicode.doc](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.doc) | Source Word documents the `.mdx` is extracted from (the `.docx` is authoritative) |
 | [01_Apte.zip](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/01_Apte.zip) | The complete original working archive (~101 MB), unpacked under [`src/01_Apte/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885/src/01_Apte) |
 | [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/ERRATA.md) · [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml) | Per-book errata list (empty so far) — regenerate via the `/errata` skill |
+
+## Реестр проверенных утверждений (H1055, seed — фаза 2)
+
+Пятая книга двухосевого конвейера проверки утверждений (после Кочергиной, Бюлера и
+Зализняка ×2) и **первый синтаксический учебник** в реестре. Каждое фальсифицируемое
+утверждение оценивается по двум осям — `verdict_fact` (истинно ли относительно корпуса
+DCS-2021 + Уитни 1889, с числом) и `verdict_pedagogy` (оправданна ли подача).
+
+**Жанровая проверка (сделана до жатвы, 16-07-2026):** `.mdx` — русский перевод (Лихушина
+v3.0, 2021) *Руководства по санскритской композиции* Апте, 30 занятий. В отличие от четырёх
+книг, уже в конвейере, Апте — **синтаксический**, а не морфологический: большинство правил —
+это управление падежами, согласование и позиция частиц, проверяемые по зависимостному
+(head/deprel) слою DCS через инструмент
+[`ZalizniakOcherk_1978/treebank_syntax_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/treebank_syntax_stats.py),
+а не по поверхностной частотности. Это честно помечено в шапке `claims.yml`, а не втиснуто
+в схему силой.
+
+Файлы реестра:
+
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-8: **7 TRUE · 1 OVERSTATED**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (занятия 1–25; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
+- [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) + [claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.json) — генерируются из `claims.yml` скриптом [scripts/build_claims.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) (`npm run claims`), руками не править.
+
+**Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
+грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,
+что оценил Кочергину OVERSTATED (её «личная форма глагола никогда не ударна» перегибает с
+энклитик на все финитные глаголы, HK-10), оценивает Апте TRUE (APT-8): он ограничивает
+правило «никогда в начале предложения» именно энклитическими местоимениями, где оно верно, и
+теми же словами — про `ca` (APT-3) и `tu` (APT-4). Та же частотная щель описательного и
+простого будущего (14:1), что оценила Бюлера ORDER-QUESTIONABLE (он учит редкую форму первой,
+HB-58), оценивает Апте JUSTIFIED (APT-6): он прямо говорит «намного реже». Единственный флаг —
+ожидаемое сверхобобщение: «Все глаголы движения управляют винительным» (APT-5, OVERSTATED) —
+винительный цели есть умолчание, но дательный и местный цели тоже засвидетельствованы (Уитни
+§274, §285d). Бэклог из правил управления — это список инструментов: каждое становится
+конкретным treebank-запросом при дренаже.
 
 ## The working archive — [`src/01_Apte/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885/src/01_Apte)
 
