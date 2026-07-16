@@ -1,6 +1,6 @@
 # Метадок — MORPHOCLASS_3WAY_MEMO.md
 
-_Created: 08-07-2026 · Last updated: 11-07-2026_
+_Created: 08-07-2026 · Last updated: 16-07-2026_
 
 Документ *о* записке
 [`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md).
@@ -76,15 +76,16 @@ _Created: 08-07-2026 · Last updated: 11-07-2026_
 
 ## Статус устаревания
 
-`active` — но с явной пометкой **STALE относительно subject-документа**: этот метадок содержательно
-не обновлялся с 08-07-2026, тогда как сам
-[`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md)
-менялся дважды после — 09-07-2026 (закрытие FN-0015 `rejected` и FN-0016 `approved` по
-issue #50) и 10-07-2026 (переименование Zaliznyak→Zalizniak, зачистка «ё»). В частности,
-пункт 3 таблицы backlog выше («Дождаться ответов автора по FN-0015…FN-0017», `@WAITING`)
-устарел частично: ожидание снято для FN-0015/FN-0016, актуален только FN-0017. Рекомендуется
-отдельный проход ре-синхронизации метадока с текущим состоянием subject-документа (обновить
-«Ключевые находки» и таблицу backlog).
+`active`. Дата/история ре-синхронизированы 16-07-2026 (docs-freshness sweep) — «История правок»
+доведена до 15-07-2026 (влитие 1978-колонок в кросс-уок CSV, [#209](https://github.com/gasyoun/SanskritGrammar/pull/209)).
+Содержательные «Ключевые находки» пока НЕ переписаны: subject-документ менялся 09-07-2026
+(закрытие FN-0015 `rejected` и FN-0016 `approved` по issue #50), 10-07-2026 (Zaliznyak→Zalizniak,
+зачистка «ё») и 15-07-2026 (расширение данных CSV) — из этих изменений содержательным для
+выводов является только статус FN, поэтому пункт 3 таблицы backlog выше («Дождаться ответов
+автора по FN-0015…FN-0017», `@WAITING`) остаётся частично устаревшим: ожидание снято для
+FN-0015/FN-0016, актуален только FN-0017. Полный проход ре-синхронизации «Ключевых находок»
+и backlog остаётся рекомендованным при закрытии FN-0017 либо при появлении покорневых
+расхождений из расширенного CSV.
 
 ## Связанные документы
 
@@ -100,5 +101,7 @@ issue #50) и 10-07-2026 (переименование Zaliznyak→Zalizniak, з
 |---|---|---|
 | 08-07-2026 | Создан (проход H357): записка + категориальный и покорневой кросс-уок + CSV + FN-0015…0017 | Opus 4.8 (`claude-opus-4-8`) |
 | 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (`claude-sonnet-5`) |
+| 15-07-2026 | 1978-колонки влиты в машинный кросс-уок [`morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) (H978 follow-up, [#209](https://github.com/gasyoun/SanskritGrammar/pull/209)); правка орфографии Zaliznyak→Zalizniak ([#174](https://github.com/gasyoun/SanskritGrammar/pull/174), косметика) | Fable 5 (`claude-fable-5`) |
+| 16-07-2026 | Ре-синхронизация даты/истории при docs-freshness sweep: subject-документ учтён по 15-07; содержательные «Ключевые находки» без изменений (влитие 1978-колонок в CSV расширяет данные, не пересматривает выводы) | Opus 4.8 (`claude-opus-4-8`) |
 
 _Dr. Mārcis Gasūns_

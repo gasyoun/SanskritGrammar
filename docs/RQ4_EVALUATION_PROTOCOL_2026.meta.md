@@ -1,11 +1,11 @@
 # Metadoc — RQ4_EVALUATION_PROTOCOL_2026.md
 
-_Created: 15-07-2026 · Last updated: 15-07-2026_
+_Created: 15-07-2026 · Last updated: 16-07-2026_
 
 Companion for [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md).
 
 ## Purpose
-The full study design for RQ4 (learning-gain + retention on-ramp-first vs Талмуд-first), the digital-pedagogy field's falsifiability backbone. Closes A62's own "5/5: RQ4 evaluation protocol specified in full" checklist item. **§6.1–6.3 ruled 15-07-2026 (MG): Systema-hosted, Systema's own students, 4-week retention.** §6.4 (consent wording) still open.
+The full study design for RQ4 (learning-gain + retention on-ramp-first vs Талмуд-first), the digital-pedagogy field's falsifiability backbone. Closes A62's own "5/5: RQ4 evaluation protocol specified in full" checklist item. **§6.1–6.3 ruled 15-07-2026 (MG): Systema-hosted, Systema's own students, 4-week retention; §6.4 (consent wording) approved 16-07-2026 (H1009, [#250](https://github.com/gasyoun/SanskritGrammar/pull/250)) — all §6 `@DECIDE` gates now closed.**
 
 ## Audience
 Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-methodology paper).
@@ -15,7 +15,7 @@ Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-
 - **Grounding:** the existing on-ramp testbed (`TolchelnikovTalmud_2026/onramp/`, H915), the full 745-root Приложение 1 catalogue (item-bank source, restricted to the on-ramp's 4 taught rows), a direct check of `docusaurus.config.mjs` confirming the site has zero analytics/instrumentation today.
 
 ## Ranked backlog
-1. ~~Resolve the 4 `@DECIDE` items in §6~~ — §6.1–6.3 ruled 15-07-2026; §6.4 (consent wording) still open, drafted pending MG review (H987 harness handoff).
+1. ~~Resolve the 4 `@DECIDE` items in §6~~ — **all closed**: §6.1–6.3 ruled 15-07-2026; §6.4 (consent wording) approved 16-07-2026 (H1009, [#250](https://github.com/gasyoun/SanskritGrammar/pull/250)).
 2. ~~Build the item bank~~ — **DONE** (H984): [`data/rq4_item_bank.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/rq4_item_bank.json), 24 items, 0 shortfall.
 3. **Build the Systema-hosted harness** (H987) — consent/intake, arm assignment, diagnostic flow, +4-week retention reminder.
 4. **Run the pilot** (§7) before any confirmatory-sized run.
@@ -36,6 +36,7 @@ Whoever runs the actual pilot/study, and whoever writes A32 (the RQ4 evaluation-
 |---|---|---|
 | 15-07-2026 | Created — full protocol (hypothesis, design, metrics, instrument, analysis plan, 4 open `@DECIDE`s, pilot recommendation) | Sonnet 5 (`claude-sonnet-5`) |
 | 15-07-2026 | §6.1–6.3 ruled by MG (Systema-hosted, own students, 4-week retention); item bank built (H984), instrument scoped to the on-ramp's 4 rows (documented restriction) | Sonnet 5 (`claude-sonnet-5`) |
+| 16-07-2026 | Re-sync at docs-freshness sweep: §6.4 consent wording approved (H1009, [#250](https://github.com/gasyoun/SanskritGrammar/pull/250)) — all §6 `@DECIDE` gates now closed; Purpose + backlog #1 updated | Opus 4.8 (`claude-opus-4-8`) |
 
 ---
 

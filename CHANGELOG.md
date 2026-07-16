@@ -20,8 +20,14 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ## [0.38.0] - 2026-07-16
+<<<<<<< HEAD
 ### Changed
 - **A65: author-voice pass (/paper-author-pass) — proposed 5/5, awaiting the author's sign-off (H1015)** — [the manuscript](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) now reads as the author's own: academic frontmatter (М. Ю. Гасунс, независимый исследователь, ORCID, ya.ru — per AUTHOR.md), working banner removed, title recast («корпусная верификация…», the H797 tag dropped), §8 de-coded (companion papers named descriptively, no Axx), the LLM-adjudication sentence in journal register with model attribution preserved, appendix provenance glyphs/H-IDs neutralized. **No number, claim, or citation touched.** 8 voice calls + 5 residual flags recorded in [SIGNOFF_A65_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A65_author_pass.md) — a ~30-minute read-and-sign; the 5/5 bump itself waits for the signature. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+=======
+
+### Changed
+- **Sangram: ретро-проход прозы по [style guide](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) — 4 оставшиеся опубликованные статьи (H1014, Fable 5 `claude-fable-5`).** Явный follow-up частичного исхода [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md) (perfect прошёл первым): проза [a-stems (P1)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/a-stems/index.mdx), [thematic-present (P2)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/thematic-present/index.mdx), [tatpurusha (P4)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/index.mdx) и [krt-suffixes (P5)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-suffixes/index.mdx) выровнена по диагностике «птичьего языка» (гайд § 4): коммит-пины, зёрна выборок, дословные запросы и имена моделей-разметчиков уведены из аналитического текста в §§ данных/провенанса (в прозе — «разбирающий», «проход A/B»), падежные аббревиатуры и морфопризнаки получили русские чтения, вложенные скобки развёрнуты, техника восстановления пина у P1 свёрнута в примечание; попутно исправлены опечатки «Стярка» → «Сверка» (P2 § 3.2) и «деривациий» → «дериваций» (P5 § 5), шапка таблицы P1 § 3.3 уточнена («сколько лемм», не «доля»). **Все числа и выводы неприкосновенны** — ревизии `revision` внесены в манифесты всех четырёх статей (контракт C4); backlog гайда § 6 строки 3–6 → ✅. ([H1014](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1014-Fable_SanskritGrammar_sangram-prose-retro-pass-p1-p2-p4-p5_16.07.26.md))
+>>>>>>> origin/main
 
 ## [0.37.0] - 2026-07-16
 
