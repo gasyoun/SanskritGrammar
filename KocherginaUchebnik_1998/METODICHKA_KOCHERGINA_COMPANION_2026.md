@@ -47,11 +47,11 @@ five pillars already have working infrastructure:
 
 | Pillar | Asset (source → generated) | State |
 |---|---|---|
-| Grammatical accuracy | [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml) → [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 🟢 **43 claims** graded on a **fact axis** vs. DCS-2021 + Whitney (H768 full-textbook sweep, 12-07-2026: 28 TRUE, 11 OVERSTATED, 1 FALSE, 3 UNTESTABLE); numbers reproduced by [`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py) |
-| Clarity / frequency | same registry, `verdict_pedagogy` field | 🟢 second **pedagogy axis** on the same 43 claims; 16 flagged for overreach / hidden frequency |
-| Errata (per edition) | [`errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/errata.yml) → [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.md), `/errata` skill | 🔴 system built, list **empty** — awaiting a printed sheet or an edition diff |
-| Extra exercises | 3 213 in-repo exercise sentences · [Knauer *Фразы*](https://github.com/gasyoun/SanskritGrammar/tree/main/KnauerFrazy_1908) workbook · DCS corpus · Apte "Готовые уроки" (metod/unit) template | ⚪ raw material only; no exercise appendix yet |
-| Cross-references | [`LEARNER_MATERIALS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/LEARNER_MATERIALS.md) learning ladder | 🟢 Zaliznyak *Конспект*/*Очерк*, Knauer, Толчельников Талмуд, Гасунс-2014 already mapped by stage |
+| Grammatical accuracy | [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml) → [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 🟢 **234 claims** graded on a **fact axis** vs. DCS-2021 + Whitney (H768 seed 12-07-2026: 43; H797 full drain same day → 210 TRUE, 11 OVERSTATED, 1 FALSE, 12 UNTESTABLE); numbers reproduced by [`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py) |
+| Clarity / frequency | same registry, `verdict_pedagogy` field | 🟢 second **pedagogy axis** on the same 234 claims; 24 flagged for overreach / hidden frequency + 11 M.G. frequency footnotes |
+| Errata (per edition) | [`errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/errata.yml) → [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.md), `/errata` skill | 🟡 system built; entry shape carries the `edition` field (H807, 16-07-2026); list deliberately **empty** — awaiting a printed sheet or an edition diff |
+| Extra exercises | 3 213 in-repo exercise sentences · [Knauer *Фразы*](https://github.com/gasyoun/SanskritGrammar/tree/main/KnauerFrazy_1908) workbook · DCS corpus · Apte "Готовые уроки" (metod/unit) template | 🟢 v1 appendix authored (H807): [`METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md) — 11 занятий, attested readings (Knauer/Bühler) + ⟦MG-viza⟧ drills with keys |
+| Cross-references | [`LEARNER_MATERIALS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/LEARNER_MATERIALS.md) learning ladder | 🟢 per-занятие "см. также" authored (H807): [`METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md) — Очерк §§ / Конспект разделы / Талмуд главы / Кнауэр Nr. |
 
 **Headline finding already in hand** (the model for the whole booklet): Kochergina
 teaches the future stem as one rule `-syá` with `-ṣya/-iṣya` as "варианты", but in DCS the
@@ -165,6 +165,18 @@ registry once the shape stabilizes (@DECIDE K-2).
 
 **v1 = P0–P4** in the H807 handoff. **P5 (print) and v2 (comprehensive)** are follow-on
 handoffs minted when v1 content is visaed.
+
+**v1 EXECUTED 16-07-2026 (H807, Fable 5 `claude-fable-5`).** The three manuscript
+sections landed as `.md` print sources beside this plan: раздел I —
+[`METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md)
+(15 notes over 11 занятий: the 12 non-TRUE claims + HK-21/HK-26 + the Занятие-XXII
+periphrastic-perfect card, with the 11 M.G. frequency badges as an annex); раздел II —
+[`METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md)
+(attested readings from Knauer/Bühler + ⟦MG-viza⟧ drills with keys); раздел III —
+[`METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md)
+(per-занятие «см. также»). `errata.yml` gained the `edition` field (seed honestly empty).
+K-2 resolved as recommended: hand-authored v1, registries deferred to v2. Print gate:
+the ⟦MG-viza⟧ items await the author's review-sheet verdicts.
 
 ---
 

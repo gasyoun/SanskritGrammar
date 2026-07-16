@@ -9,6 +9,41 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-07-16
+### Added
+- **Методичка v1 (P0–P4) — три печатные рукописи-раздела (H807, Fable 5 `claude-fable-5`).**
+  Первый исполненный слайс плана [`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md):
+  - **Раздел I — комментарий точности и частотности**
+    ([`METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md)):
+    15 печатных заметок по 11 занятиям — все 12 не-TRUE утверждений реестра (11 OVERSTATED
+    + единственный FALSE HK-16 «-ī/-ū всегда женского рода»), два помеченных TRUE
+    (HK-21/HK-26) и карточка Занятия XXII (дистрибуция вспомогательных перифрастического
+    перфекта по визе P3/A4); приложение — 11 частотных бейджей М. Г. таблицей. Каждое
+    число цитируется по идентификатору `claims.yml`, UNTESTABLE в печать не включены.
+  - **Раздел II — упражнения**
+    ([`METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md)):
+    по тем же 11 занятиям — засвидетельствованные чтения только из общественного достояния
+    (Кнауэр 1908 / Bühler 1878, по банку `scripts/data/sentences.json` и конкордансу;
+    аористный блок — из Кнауэра Nr. 14 напрямую, банк его не покрывает) + авторские дриллы
+    с ключами и переводами, все помечены ⟦MG-viza⟧.
+  - **Раздел III — отсылки «см. также»**
+    ([`METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md)):
+    попозанятийные привязки к Очерку-1978 (по §§), Конспекту-2004 (по разделам),
+    Талмуду-2026 (по главам), Кнауэру (по Nr.) и Гасунсу-2014 (seṭ/aniṭ), выверенные по
+    цифровым текстам репозитория.
+- **`errata.yml`: поле `edition` в схеме записи** — привязка страницы/строки к конкретному
+  тиражу (K-1: эталон — оригинал 1998 г.); список намеренно пуст — печатного списка
+  опечаток и второго издания для diff нет, выдумывать errata запрещено гардрейлом H807.
+### Changed
+- План методички: § 2 обновлен на осушенный реестр (234), § 5 помечен «v1 EXECUTED»,
+  K-2 решен по рекомендации (ручные разделы v1, реестры `exercises.yml`/`crossrefs.yml` —
+  v2); metadoc — строка ревизии + бэклог (пп. 1/3 закрыты, п. 5 «расширение v2» добавлен).
+### Gate
+- **Визовый пакет:** review-sheet `sanskritgrammar-metodichka-kochergina-v1_16.07.26_review.html`
+  (13 карточек, локальный `review/`, реестр листов — Uprava). До визы автора разделы —
+  черновик рукописи; следующая ревизия прозы — по стайл-гайду Sangram (H1003), когда тот
+  получит визу.
+
 ## [0.4.1] - 2026-07-15
 ### Added
 - **Russian-language folder README documenting the register findings** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md): по-русски, зеркало бюлеровского README — метод двух осей и триангуляция DCS/Уитни/Талмуд, итог 234 проверенных (210 TRUE · 11 OVERSTATED · 1 FALSE · 12 UNTESTABLE · 11 сносок М.Г. · 24 с флагом), семь главных выводов (два типа сбоя: сверхобобщение универсалий с единственным FALSE HK-16 и слепота к частотности с шаблоном HK-4 -iṣya 56,8 %; честная зона UNTESTABLE; оправданные частотные хеджи; кросс-грамматический контроль с Бюлером; корпусные сноски М.Г.), инструкция воспроизведения чисел, связи с оверлеем/квантификаторами/методичкой. Синтез реестра был доступен только по-английски (CLAIMS_VERIFIED.md); русский оверлей показывает таблицу, но не выводы. (Fable 5 `claude-fable-5`)

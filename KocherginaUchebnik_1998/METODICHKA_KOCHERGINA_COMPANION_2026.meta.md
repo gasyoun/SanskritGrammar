@@ -23,14 +23,19 @@ Fable 5).
 - Execution delegated to Fable 5 (`claude-fable-5`) via H807.
 
 ## Ranked improvement backlog
-1. **Resolve @DECIDE K-1** — pin which physical edition the `.mdx` transcribes (1998 vs 2017
-   6th ed. / Лихушина). Everything errata-precise depends on it.
+1. ~~**Resolve @DECIDE K-1**~~ — RESOLVED by MG 12-07-2026: reference edition = **1998
+   original**. Residual caveat carried in `errata.yml`: LEARNER_MATERIALS.md records the
+   digitized copy as the 2017 6th ed. — re-open K-1 if the `.mdx` is shown to transcribe it.
 2. **Formalize the print assembler** (`scripts/build_methodichka.py`) once v1 proves the
    hybrid prose+registry interleave by hand (currently deferred to v2 / P5).
-3. **Decide K-2** — whether `exercises.yml` / `crossrefs.yml` registries are worth building
-   up front or promoted from a hand-authored v1 appendix.
+3. ~~**Decide K-2**~~ — RESOLVED 16-07-2026 (H807, per the roadmap's own recommendation):
+   v1 sections hand-authored; `exercises.yml`/`crossrefs.yml` promotion deferred to v2.
 4. **Wire the errata `edition` field** into `build_errata.py` so a 2024/2025 diff produces a
-   real per-edition column, not free-text notes.
+   real per-edition column, not free-text notes. (The field itself is documented in the
+   `errata.yml` entry shape since H807; the renderer ignores it harmlessly until wired.)
+5. **v2 widening** — comprehensive commentary over the full 234-claim register (the drained
+   H797 register supersedes the 43-claim basis this plan was written against); DCS-2026
+   re-run may resolve the 12 UNTESTABLE rows.
 
 ## Limitations
 - The roadmap plans; it does not itself contain any commentary content (that is the
@@ -52,5 +57,6 @@ Fable 5).
 |---|---|---|
 | 12-07-2026 | Opus 4.8 (`claude-opus-4-8`) | Created roadmap + metadoc; Decisions A–D locked; H807 minted for v1. |
 | 16-07-2026 | Fable 5 (`claude-fable-5`) | § 4.2: queued material for Занятие 22 (стр. 153) per MG's P3-visa card A4 — periphrastic-perfect auxiliary distribution (as 91,4 % / kṛ 7,4 % / bhū 0,8 %, 3 sg 86,6 %) from the SG-MO-017 corpus package. |
+| 16-07-2026 | Fable 5 (`claude-fable-5`) | **v1 (P0–P4) executed — H807.** Three manuscript sections authored (разделы I–III: комментарий / упражнения / отсылки); §2 pillar table refreshed to the drained 234-claim register; §5 marked v1 EXECUTED; `errata.yml` `edition` field added (seed empty); K-2 resolved (hand-authored v1); backlog items 1/3 closed, item 5 (v2 widening) added. |
 
 _Dr. Mārcis Gasūns_
