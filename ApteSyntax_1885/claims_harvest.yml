@@ -81,7 +81,7 @@ candidates:
   - {id: APT-H-216, lesson: 17, quantifier: none,   kind: rule, testability: syntax-treebank, claim_en: "Present tense + particle sma yields past-tense meaning."}
   - {id: APT-H-217, lesson: 17, quantifier: всегда, kind: universality, testability: reference-Whitney, claim_en: "The benedictive is always used in blessings; 1st person expresses the speaker's wish."}
   - {id: APT-H-218, lesson: 18, quantifier: никогда, kind: universality, testability: syntax-treebank, claim_en: "The conditional particle ced never stands sentence-initially.", promoted: APT-9}
-  - {id: APT-H-219, lesson: 19, quantifier: не может, kind: typology, testability: reference-Whitney, claim_en: "The aorist can express durativity; the imperfect cannot. [SUSPECT — check vs Whitney §928, likely OVERSTATED/FALSE]"}
+  - {id: APT-H-219, lesson: 19, quantifier: не может, kind: typology, testability: reference-Whitney, claim_en: "The aorist can express durativity; the imperfect cannot — FALSE vs Whitney SS927-929; error is Apte's own (English 210 verified).", promoted: APT-31}
   - {id: APT-H-220, lesson: 19, quantifier: обычно, kind: rule, testability: morphology-DCS, claim_en: "Augment usually dropped in aorist after mā/mā sma; augmentless 2nd person has imperative force."}
 
   # ===== Lessons 20–25 (reader A20: APT-H-300..317) =====

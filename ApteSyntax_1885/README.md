@@ -45,8 +45,8 @@ v3.0, 2021) *Руководства по санскритской компози
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-30: **21 TRUE · 8 OVERSTATED · 1 UNTESTABLE**), источник правды;
-- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **115 кандидатов** (все 30 занятий сжаты; 27 продвинуты);
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-31: **21 TRUE · 8 OVERSTATED · 1 FALSE · 1 UNTESTABLE**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **115 кандидатов** (все 30 занятий сжаты; 28 продвинуты);
 - [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, падеж цели по зависимостному слою DCS;
 - [apte_classical_government_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json) — инструмент управления падежами (H1062): оконная совстречаемость + подъём над базовой линией по ВСЕМУ корпусу, с контролями;
 - [apte_pada_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.json) — инструмент залога (H1081): Parasmaipada/Ātmanepada по окончаниям презенса (DCS feat_voice кодирует только пассив, не P/Ā), корневой залог по умолчанию;
@@ -82,6 +82,14 @@ UNTESTABLE и **исправила один вердикт**: `ruc` → дате
 поровну (57,6/42,4 → OVERSTATED). Тонкие правила «приставка + значение» (~15 штук) сигнала в
 корпусе не имеют (не размечены ни P/Ā, ни семантическое условие) → UNTESTABLE, честно
 задокументировано (APT-30).
+
+**Адъюдикация по Уитни — первый FALSE реестра (H1084, 17-07-2026):** APT-31 (Урок 19) — Апте
+§210 утверждает, что аорист «выражает идею длительности», а имперфект «не может» — опровергнуто
+Уитни §§927-929 (классический аорист «просто претерит, равнозначный имперфекту и перфекту»;
+старый аорист — *завершительный*, «завершённое относительно настоящего», противоположность
+длительности). Двойная проверка: (1) сверен английский оригинал §210 — ошибка **самого Апте**,
+а не перевода Лихушиной; (2) Апте сам себе противоречит (§207-208: прошедшие времена стали
+употребляться «беспорядочно» — та же равнозначность Уитни §927).
 
 **Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
 грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,
