@@ -9,6 +9,13 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **Гл. 7 «Указатель Зализняка» — одобрена автором 16-07-2026, на исправленный текст.** Виза дана
+  после уточнения охвата §7.1 (749/930, PR #298). Draft banner removed, `[^ed7draft]` footnote
+  updated with approval note, `BOOK_PLAN.md` Часть II Гл. 7 закрыта. **Все четыре главы Части II
+  теперь одобрены (Гл. 4–7).**
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ### Fixed
 - **Гл. 7 «Указатель Зализняка» — уточнён охват трёх осей (§7.1, до визы).** Проверка данных
   (`morphoclass_crosswalk_1975_2014_2026.csv` vs `WhitneyRoots/crosswalk/roots.csv`) показала: 876
