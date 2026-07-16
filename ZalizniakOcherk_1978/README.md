@@ -55,8 +55,8 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
 Семя (OCH-1..OCH-6, Sonnet 5 `claude-sonnet-5`, [PR #196](https://github.com/gasyoun/SanskritGrammar/pull/196))
 и полный слив бэклога (OCH-7..OCH-74, Fable 5 `claude-fable-5`, H797 фаза 2) в один день:
 [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
-— **74 проверенных утверждения: 61 TRUE · 0 OVERSTATED · 0 FALSE · 13 UNTESTABLE ·
-7 частотных сносок М.Г.** (после инструментов H978 и H1000, см. ниже);
+— **74 проверенных утверждения: 62 TRUE · 0 OVERSTATED · 0 FALSE · 12 UNTESTABLE ·
+7 частотных сносок М.Г.** (после инструментов H978, H1000 и H1001, см. ниже);
 [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims_harvest.yml)
 пуст (`candidates: []`). Планка «≥ 50» превышена; таблица —
 [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CLAIMS_VERIFIED.md).
@@ -84,10 +84,15 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
    пятикратный рост), длина композита 2,06 → 2,32 → 2,58, доля имен 43,3 % → 52,7 % →
    56,4 %, имя/глагол 2,13 → 2,89 → 3,28, пассив 2,7 % → 5,8 % → 7,5 % — см.
    [och63_period_style_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och63_period_style_stats.json).
+   ~~Детектор каузативов~~ — **ПОСТРОЕН в тот же день (H1001,
+   [causative_grade_detector.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/causative_grade_detector.py)):
+   OCH-47 → TRUE** — доля guṇa-каузативов (gamayati-тип) падает 81,3 % → 25,9 % → 20,8 %
+   (веды → эпос → классика) среди 57 колеблющихся корней; «отступление» §167 в ведийском
+   срезе было БОЛЬШИНСТВОМ — см.
+   [och47_causative_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och47_causative_stats.json).
    Остаются: синтаксический treebank (порядок слов, подчинение, единственный рискованный
-   абсолют §216 «всегда» — помечен «лицензией на охоту»), разметка типов сложных слов,
-   детектор каузативов (для диахронической половины OCH-47 — карта периодов ее больше
-   не блокирует) и парсер структуры корня по каталогу Талмуда.
+   абсолют §216 «всегда» — помечен «лицензией на охоту»), разметка типов сложных слов
+   и парсер структуры корня по каталогу Талмуда.
 4. **Два отрицательных пилота записаны с числами, чтобы их не пересчитывали как
    опровержения:** наивная склейка рядов 1978 с ryad Талмуда ИНВЕРТИРУЕТ §68 (36,8 % aniṭ
    в «aniṭ-ожидаемой» группе — но склейка не валидирована и не фильтрует
@@ -132,6 +137,7 @@ python ZalizniakOcherk_1978/verify_claims_dcs.py    # вся батарея кн
 python ZalizniakOcherk_1978/build_1978_crosswalk.py # колонка 1978 + тесты §§67-68 (H978)
 python ZalizniakOcherk_1978/och22_token_weighted.py # строгая токен-взвешенная реплика OCH-22
 python ZalizniakOcherk_1978/period_style_gradient.py # карта периодов + градиент §207 (H1000)
+python ZalizniakOcherk_1978/causative_grade_detector.py # детектор каузативов + градиент §167 (H1001)
 npm run errata:print        # печатные листы опечаток (ERRATA_PRINT_SHEET.html) из errata.yml
 ```
 
@@ -144,8 +150,8 @@ npm run errata:print        # печатные листы опечаток (ERRA
 
 ### Что дальше
 
-Оставшиеся инструменты из списка UNTESTABLE (treebank → §§214-217; детектор каузативов →
-OCH-47; разметка типов сложных слов → OCH-58/OCH-60);
+Оставшиеся инструменты из списка UNTESTABLE (treebank → §§214-217; разметка типов
+сложных слов → OCH-58/OCH-60; парсер структуры корня → OCH-16);
 закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_

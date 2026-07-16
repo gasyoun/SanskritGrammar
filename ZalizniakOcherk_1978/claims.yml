@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H1000 period-tagging instrument, 16-07-2026): 61 TRUE · 0 OVERSTATED · 0 FALSE · 13 UNTESTABLE — OCH-63 (the §207 flagship) flipped to measured TRUE by period_style_gradient.py + och63_period_style_stats.json; earlier OCH-21..OCH-23 flipped by the H978 1978-column instrument. The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001 instruments, 16-07-2026): 62 TRUE · 0 OVERSTATED · 0 FALSE · 12 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -32,7 +32,7 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 + H1000 instruments: 61 TRUE · 0 OVERSTATED · 0 FALSE · 13 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 instruments: 62 TRUE · 0 OVERSTATED · 0 FALSE · 12 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
   first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
   not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
@@ -52,8 +52,8 @@ synthesis: >-
   the pipeline's next instruments, each named in its entry — ~~period-tagged corpus slices~~
   BUILT 16-07-2026 (period_style_gradient.py, H1000: OCH-63 flipped to measured TRUE — the
   style-I→style-II gradient is real and monotonic on every annotation-robust axis; OCH-47's
-  early-vs-late causative half now waits only on a causative detector, the period map no
-  longer blocks it), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
+  early-vs-late causative half CLOSED the same day by the causative detector, H1001:
+  the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
   absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence),
   compound-type tagging (OCH-58, OCH-60), the 1978↔2026 morphoclass-series crosswalk (OCH-21..
   OCH-23), and a root-shape parser over the Talmud catalog (OCH-16). Two dead ends are
@@ -810,11 +810,28 @@ entries:
     kind: statistic
     falsifiable_as: "is the guṇa-for-vṛddhi causative deviation more common in the earlier language"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "the class itself is systemic (gamayati, janayati — Whitney §1042's unlengthened set matches); the DIACHRONIC half ('в раннем языке больше') needs a causative DETECTOR — the period map now exists (period_style_gradient.py, H1000), but the DCS snapshot carries no causative marking (xpos/feats probed empty 16-07-2026)"
-    ref: "Whitney §1042; blocker NARROWED 16-07-2026: period tagging solved (OCH-63), causative detection still missing"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the causative detector built 16-07-2026 (causative_grade_detector.py,
+      H1001): DCS lemmatizes causatives as their own -ay lemmas, so grade pairs (gamay~gāmay,
+      smaray~smāray) are detected at lemma level, anchored on the root lemma existing in the
+      same DB (screens denominatives), and sliced by the H1000 period map. 150 anchored pairs,
+      57 fluctuating (both grades attested). The guṇa share FALLS exactly as §167 predicts —
+      all pairs: 45.8% (веды) → 20.9% (эпос) → 15.4% (классика); fluctuating pairs, where the
+      choice is actually visible: 81.3% → 25.9% → 20.8% — a fourfold collapse. Both directions
+      monotonic; the purāṇa control again sits at epic level (26.3%). Synchronic membership
+      confirmed en passant: gam/jan/tvar are guṇa-fixed (Whitney §1042's set), kṛ/mṛ/dhṛ
+      vṛddhi-fixed, exactly as the § describes
+    ref: "ZalizniakOcherk_1978/och47_causative_stats.json (per-root × period inventory + validation); causative_grade_detector.py"
     verdict_pedagogy: JUSTIFIED
-    note: "The synchronic membership is verified territory (Bühler HB-27 covers the same exception list); only the early-vs-late gradient is instrument-blocked, and since H1000 the missing instrument is a causative detector, no longer the period map."
+    note: >-
+      Closed by the two-instrument chain the register itself specified: H1000's period map
+      plus this pass's causative detector. The measured contrast is stark enough that the §'s
+      cautious parenthesis («в раннем языке таких отступлений больше») reads as understatement:
+      in the Vedic slice the 'deviation' was the MAJORITY option (81%) among fluctuating roots.
+      Detector caveat kept honest: -ay lemmas conflate causative and class-10/denominative
+      morphology; root-anchoring screens most denominatives, and grade CONTRAST within one
+      root is causative territory regardless.
 
   - id: OCH-48
     loc: "§167 / mdx line 2550"
