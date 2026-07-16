@@ -1,0 +1,222 @@
+{
+ "instrument": "och_voice_stats.py over dcs_full.sqlite (dcs-conllu 04e0778)",
+ "native_voice_values": {
+  "None": 5651715,
+  "Pass": 36701
+ },
+ "sections": {
+  "pa_census": {
+   "finite_nonpassive_tokens": 494022,
+   "P": 188655,
+   "A": 53723,
+   "unclassified": 251644,
+   "coverage_pct": 49.1,
+   "P_share_of_classified_pct": 77.8,
+   "A_share_of_classified_pct": 22.2
+  },
+  "passive_by_tense": {
+   "Pres": 34499,
+   "Impf": 1443,
+   "Past": 759
+  },
+  "kram_grade_voice": {
+   "krama-P": 7,
+   "krāma-P": 84,
+   "krama-A": 94,
+   "krāma-A": 4
+  },
+  "i_middle_forms": {
+   "P_tokens": 2625,
+   "A_tokens": 30,
+   "top_A_forms": [
+    [
+     "īmahe",
+     11
+    ],
+    [
+     "īyase",
+     5
+    ],
+    [
+     "īyate",
+     3
+    ],
+    [
+     "eṣyate",
+     3
+    ],
+    [
+     "ayate",
+     3
+    ],
+    [
+     "ayatām",
+     2
+    ],
+    [
+     "iyāte",
+     1
+    ],
+    [
+     "iyate",
+     1
+    ],
+    [
+     "invire",
+     1
+    ]
+   ]
+  },
+  "as_middle_forms": {
+   "P_tokens": 21014,
+   "A_tokens": 9,
+   "top_A_forms": [
+    [
+     "asyatām",
+     7
+    ],
+    [
+     "āse",
+     1
+    ],
+    [
+     "asyate",
+     1
+    ]
+   ]
+  },
+  "shi_forms": {
+   "P_tokens": 5,
+   "A_tokens": 487,
+   "top_A_forms": [
+    [
+     "śete",
+     273
+    ],
+    [
+     "śayīta",
+     113
+    ],
+    [
+     "śerate",
+     66
+    ],
+    [
+     "śiśyire",
+     8
+    ],
+    [
+     "śayāte",
+     4
+    ],
+    [
+     "śīyatām",
+     3
+    ],
+    [
+     "śeṣyate",
+     3
+    ],
+    [
+     "śetām",
+     3
+    ],
+    [
+     "śayiṣyase",
+     3
+    ],
+    [
+     "śayate",
+     3
+    ],
+    [
+     "śīyante",
+     1
+    ],
+    [
+     "śeṣyase",
+     1
+    ]
+   ]
+  },
+  "ayana_participles": {
+   "ayāna_index2plus": 180,
+   "ayāna_distinct_forms": [
+    [
+     "cintayānaḥ",
+     38
+    ],
+    [
+     "cintayānasya",
+     14
+    ],
+    [
+     "cetayānaḥ",
+     8
+    ],
+    [
+     "kāmayānaḥ",
+     8
+    ],
+    [
+     "cintayānam",
+     5
+    ],
+    [
+     "kāmayānasya",
+     5
+    ],
+    [
+     "prārthayānaḥ",
+     5
+    ],
+    [
+     "pūjayānaḥ",
+     5
+    ],
+    [
+     "trāsayānaḥ",
+     5
+    ],
+    [
+     "āśayānam",
+     5
+    ],
+    [
+     "vedayānaḥ",
+     4
+    ],
+    [
+     "nādayānaḥ",
+     3
+    ],
+    [
+     "pariśayānam",
+     3
+    ],
+    [
+     "pātayānaḥ",
+     3
+    ],
+    [
+     "vicintayānaḥ",
+     3
+    ]
+   ],
+   "ayamāna": 196
+  },
+  "intransitive_passive_tokens": {
+   "gam": 289,
+   "sthā": 62
+  },
+  "passive_clause_agent_position": {
+   "sentences_with_finite_passive": 28071,
+   "checked": 28071,
+   "first_token_instrumental": 1662,
+   "unconditional_share_pct": 5.9,
+   "sentences_containing_nominal_ins": 8332,
+   "first_token_ins_given_ins_present": 1547,
+   "conditional_share_pct": 18.6
+  }
+ }
+}

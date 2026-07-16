@@ -9,6 +9,29 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-07-16
+### Added
+- **Залоговая картина Очерка как отдельная DCS-гипотеза (H1051, Fable 5 `claude-fable-5`;
+  директива MG из адъюдикации A65, заметка к HB-100).** Реестр 74 → 96: OCH-75..OCH-96
+  добирают все 22 нереестрованных залоговых утверждения (§§ 109-162, 206, 214 + примеч.
+  § 115). **Секционный итог по 29 залоговым утверждениям (7 были в реестре): 23 TRUE ·
+  1 OVERSTATED · 0 FALSE · 5 UNTESTABLE — залоговая МОРФОЛОГИЯ Зализняка безфлаговая;
+  единственный флаг — синтаксический § 214** («в пассивных предложениях на первом месте
+  обычно имя в I.»: даже среди пассивных предложений С выраженным творительным начальную
+  позицию он занимает лишь в 18,6 % — 1 547 из 8 332; четвертый флаг кластера §§ 212-217).
+  Новый инструмент [`och_voice_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och_voice_stats.py)
+  → [`och_voice_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och_voice_stats.json):
+  ключевой факт снимка — `feat_voice` несет ТОЛЬКО `Pass` (36 701), Act/Mid в разметке НЕТ
+  (реконфирмация KZ-2); P/Ā восстановлены по однозначным окончаниям (покрытие 49,1 %:
+  **parasmaipada 77,8 % · ātmanepada 22,2 %** классифицируемой массы). Жемчужины: krāma-/krama-
+  расщепление √kram подтверждено 84:4 и 94:7 (OCH-80); śī — media tantum 487:5 (OCH-84);
+  «варианты» -ayāna- идут почти вровень с -ayamāna- (180:196, OCH-94); пассив непереходных
+  аттестован (gam 289, sthā 62, OCH-95). **Сравнение с Бюлером (предрегистрированная
+  гипотеза): подтверждена** — единственный залоговый флаг Зализняка синтаксический, тогда как
+  флагманское залоговое утверждение Бюлера (HB-2, симметрия залогов) OVERSTATED ровно на тех
+  ограничениях (§§ 140/146/149/159), которые Зализняк выписывает явно; OCH-85 против HK-38 —
+  та же пара «скоуп есть/скоупа нет».
+
 ## [0.8.0] - 2026-07-16
 ### Added
 - **Treebank instrument — §§212-217 syntax cluster MEASURED, OCH-65/66/67/68 flipped; first fact-axis flags in the register (H1022)** — new instrument [`treebank_syntax_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/treebank_syntax_stats.py): discovered `dcs_full.sqlite`'s own `head`/`deprel` columns carry a genuine, fully-tagged UD-style treebank slice (223,751 tokens, 3.9% of the corpus, 29,433 complete sentences) that prior UNTESTABLE verdicts assumed didn't exist. **OCH-65** (prati adposition minority) confirmed TRUE: 20.3% of tagged `prati` tokens are unambiguously adpositional. **OCH-66** (word order) flipped OVERSTATED: modifier-precedes-head confirmed robustly (86.0%), but verb-final (46.4%) and subject-group-first (42.6%) do not clear a majority in any split tested. **OCH-67** (coordinate > subordinate) flipped FALSE: finite-subordinate clauses outnumber coordinate ones 6.5:1 (2,739 vs 419), the opposite of the claimed direction. **OCH-68** (the book's one absolute — antecedent noun always in the first clause) flipped OVERSTATED: 75.2% (n=335), not "always." **Genre-skew checked before verdicting, not assumed**: a classical-vs-Vedic/Śrauta-sūtra split and an Arthaśāstra-only isolation both rule out corpus skew as the explanation for OCH-66; OCH-67's classical subset shows a real but insufficient shift toward more coordination (33.3% vs 12.7% share). Two operationalization robustness checks (excluding trailing discourse-particles; restricting to single-clause sentences) each moved the root-final number under 5 points — not a metric artifact. Register: 74 verified = **65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE** — Zaliznyak held zero fact-axis flags through 70/74 claims, ending only when the syntax domain (previously untestable) became measurable; still the best-calibrated of the three cross-grammar books (3/74 = 4.1% flagged vs Bühler 5/64, Kochergina 12+24/234). Results: [`och65_68_treebank_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och65_68_treebank_stats.json).
