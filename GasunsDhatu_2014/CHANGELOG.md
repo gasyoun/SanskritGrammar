@@ -10,6 +10,12 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [Unreleased]
 
 ### Changed
+- **Гл. 6 «Корпусная аттестация корней» — одобрена автором 16-07-2026, без правок.** Draft banner
+  removed, `[^ed6draft]` footnote updated with approval note, `BOOK_PLAN.md` Часть II Гл. 6
+  закрыта. Content unchanged — 590/935 DCS-attested, 550 ready core, 259 corpus-absent,
+  gaṇa/preterite corpus-irrecoverability (SG-MO-013/017). Closes the three-witness arc opened in
+  Гл. 4.
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 - **Гл. 5 «Дхатупатха и паниниевская традиция как данные» — одобрена автором 16-07-2026, без
   правок.** Draft banner removed, `[^ed5draft]` footnote updated with approval note,
   `BOOK_PLAN.md` Часть II Гл. 5 закрыта. Content unchanged — vidyut дхатупатха 2 259, аудит
