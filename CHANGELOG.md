@@ -19,6 +19,10 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.33.0] - 2026-07-16
+### Changed
+- **A65 (3/5) synchronized with the H1022 treebank wave — the programme headline honestly recast (H1015)** — the same-day treebank instrument measured the §§212-217 syntax cluster and ended Zalizniak's zero-flag run at 70/74: register now **65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE**. [The draft](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) replaces the flag-rate ranking (now statistically fragile: Бюлер 3.7% · Зализняк 4.1% · Кочергина 5.1%) with the two-tier picture — what separates the books is WHERE flags cluster (misprints vs quantifier absolutes vs one syntax §-cluster) — and records the register's pre-registered «hunting licence» on OCH-68 as a fulfilled prediction (75.2%, n=335); OCH-67 documented as the programme's first substantive FALSE (subordinate:coordinate 6.5:1, genre split checked); §7 inventory +row 13; the instrument's own lesson (the «no syntactic annotation» premise was never checked) added to §4. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
 ## [0.32.1] - 2026-07-16
 ### Changed
 - **A65: both human gates RULED by MG 16-07-2026 (H1024)** — ① venue/language =
