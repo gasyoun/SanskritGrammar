@@ -173,7 +173,7 @@ samāgacchati · pratyudgacchati · samuttiṣṭhati · upasaṃharati.
 
 **VI-1.** Никогда не ударны: ca, me, iva, vā, te (энклитики). devaḥ и nadī — обычные
 ударные имена. gacchati безударно только как личный глагол главного предложения в
-неначальной позиции; в придаточном и в начале предложения — ударно (Whitney § 168).
+неначальной позиции; в придаточном и в начале предложения — ударно (Whitney §§ 592, 595).
 
 **X-1.** senā · senām · senayā · senāyai · senāyāḥ · senāyāḥ · senāyām · sene
 (N · A · I · D · Ab · G · L · V).
