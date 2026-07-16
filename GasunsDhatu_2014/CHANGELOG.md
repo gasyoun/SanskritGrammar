@@ -9,6 +9,19 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-07-16
+### Added
+- **Приложение 7 «Подлинные корни словаря Монье-Уильямса»** — начато по визе автора (заметка
+  §1.5, 16-07-2026). Разделение подлинных/вторичных корней взято из **собственной разметки**
+  кёльнской цифровой MW (колонка `verb_type` таблицы `mw_roots.tsv`): **750 подлинных**
+  (`genuineroot`) против **1 363 вторичных** (`root`, — деноминативы, каузативные основы,
+  класс-0) из 2 113 статей; сумма совпадает с §1.2/§2.3. На страницу «Приложения издания 2026»
+  добавлена секция с выжимкой (★-помета) и ссылками; сгенерированы полный размеченный
+  [`mw_genuine_roots.tsv`](revision-2026/mw_genuine_roots.tsv) (2 113 строк, флаг `genuine`),
+  печатный компактный список 750 подлинных [`mw_genuine_roots_list.md`](revision-2026/mw_genuine_roots_list.md)
+  и воспроизводимый генератор [`mw_genuine_roots.py`](revision-2026/mw_genuine_roots.py).
+  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
 ## [0.7.0] - 2026-07-16
 ### Changed
 - **Виза автора на четыре вставки данных Гл. 1 (5/5 approve) + уточнения по заметкам** (визовый
