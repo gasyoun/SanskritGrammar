@@ -1,0 +1,77 @@
+{
+  "instrument": "aorist_register_probe.py over dcs_full.sqlite — genre-proxy test (no drama texts exist in DCS at all; checked the full 270-text inventory before building this proxy)",
+  "aorist_definition": "feat_tense=Past AND feat_formation IN ['is', 'red', 'root', 's', 'sa', 'sis', 'them'] (excludes the untagged Past remainder, which H1000/OCH-68 found dominated by the untagged reduplicated perfect)",
+  "dialogue_proxy": {
+    "label": "dialogue_proxy_upanisads",
+    "texts": [
+      "Aitareyopaniṣad",
+      "Bṛhadāraṇyakopaniṣad",
+      "Chāndogyopaniṣad",
+      "Kauṣītakyupaniṣad",
+      "Kaṭhopaniṣad",
+      "Muṇḍakopaniṣad",
+      "Taittirīyopaniṣad",
+      "Śvetāśvataropaniṣad"
+    ],
+    "missing_texts": [],
+    "aorist_tokens": 91,
+    "verbal_tokens": 8010,
+    "aorist_pct_of_verbal": 1.136,
+    "aorist_pct_of_past": 4.22
+  },
+  "narrative_proxy": {
+    "label": "narrative_prescriptive_brahmana_srautasutra",
+    "texts": [
+      "Aitareyabrāhmaṇa",
+      "Baudhāyanaśrautasūtra",
+      "Bhāradvājaśrautasūtra",
+      "Drāhyāyaṇaśrautasūtra",
+      "Gopathabrāhmaṇa",
+      "Hiraṇyakeśiśrautasūtra",
+      "Jaiminīyabrāhmaṇa",
+      "Jaiminīyaśrautasūtra",
+      "Kauṣītakibrāhmaṇa",
+      "Kātyāyanaśrautasūtra",
+      "Mānavaśrautasūtra",
+      "Pañcaviṃśabrāhmaṇa",
+      "Sāmavidhānabrāhmaṇa",
+      "Taittirīyabrāhmaṇa",
+      "Vaikhānasaśrautasūtra",
+      "Vārāhaśrautasūtra",
+      "Āpastambaśrautasūtra",
+      "Āśvālāyanaśrautasūtra",
+      "Śatapathabrāhmaṇa",
+      "Śāṅkhāyanaśrautasūtra",
+      "Ṣaḍviṃśabrāhmaṇa"
+    ],
+    "missing_texts": [
+      "Āśvalāyanaśrautasūtra"
+    ],
+    "aorist_tokens": 1530,
+    "verbal_tokens": 114924,
+    "aorist_pct_of_verbal": 1.331,
+    "aorist_pct_of_past": 11.24
+  },
+  "epic_reported_separately": {
+    "label": "epic_mixed_narration_and_dialogue",
+    "texts": [
+      "Mahābhārata",
+      "Rāmāyaṇa"
+    ],
+    "missing_texts": [],
+    "aorist_tokens": 2248,
+    "verbal_tokens": 268102,
+    "aorist_pct_of_verbal": 0.838,
+    "aorist_pct_of_past": 6.4
+  },
+  "whole_corpus": {
+    "label": "whole_corpus",
+    "aorist_tokens": 12054,
+    "verbal_tokens": 1007361,
+    "aorist_pct_of_verbal": 1.197
+  },
+  "dialogue_over_narrative_ratio": 0.85,
+  "expected_by_hk207": "dialogue_proxy aorist share > narrative_proxy aorist share",
+  "confirmed": false,
+  "caveat": "genre proxy, not the literal drama/colloquial-speech contrast the claim names (that corpus doesn't exist in DCS) — Upaniṣad catechism-dialogue vs Brāhmaṇa/Śrautasūtra ritual-prescriptive prose is the closest available structural analogue, not identical to it"
+}
