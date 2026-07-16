@@ -1,0 +1,3964 @@
+{
+  "instrument": "causative_grade_detector.py over dcs_full.sqlite (dcs-conllu 04e0778); lemma-level grade pairs anchored on root lemmas; period map imported from period_style_gradient.py (H1000); annotation-robust layers only",
+  "min_tokens_floor": 5,
+  "guna_share_by_period": {
+    "all_pairs": {
+      "vedic": {
+        "guna": 1070,
+        "vrddhi": 1267,
+        "guna_share_pct": 45.79
+      },
+      "epic": {
+        "guna": 1036,
+        "vrddhi": 3924,
+        "guna_share_pct": 20.89
+      },
+      "classical": {
+        "guna": 490,
+        "vrddhi": 2696,
+        "guna_share_pct": 15.38
+      },
+      "puranic": {
+        "guna": 317,
+        "vrddhi": 1085,
+        "guna_share_pct": 22.61
+      }
+    },
+    "fluctuating_pairs": {
+      "vedic": {
+        "guna": 438,
+        "vrddhi": 101,
+        "guna_share_pct": 81.26
+      },
+      "epic": {
+        "guna": 424,
+        "vrddhi": 1216,
+        "guna_share_pct": 25.85
+      },
+      "classical": {
+        "guna": 307,
+        "vrddhi": 1171,
+        "guna_share_pct": 20.77
+      },
+      "puranic": {
+        "guna": 114,
+        "vrddhi": 319,
+        "guna_share_pct": 26.33
+      }
+    }
+  },
+  "gradient": {
+    "all_pairs_falling": true,
+    "fluctuating_pairs_falling": true,
+    "expected_by_s167": "guṇa share falls vedic -> epic -> classical"
+  },
+  "inventory": {
+    "abhigam": {
+      "shape": "a-m",
+      "guna_lemma": "abhigamay",
+      "vrddhi_lemma": "abhigāmay",
+      "guna_total": 6,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "abhighṛ": {
+      "shape": "r",
+      "guna_lemma": "abhigharay",
+      "vrddhi_lemma": "abhighāray",
+      "guna_total": 0,
+      "vrddhi_total": 285,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 147
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "abhihṛ": {
+      "shape": "r",
+      "guna_lemma": "abhiharay",
+      "vrddhi_lemma": "abhihāray",
+      "guna_total": 0,
+      "vrddhi_total": 11,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 11
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "abhiram": {
+      "shape": "a-m",
+      "guna_lemma": "abhiramay",
+      "vrddhi_lemma": "abhirāmay",
+      "guna_total": 5,
+      "vrddhi_total": 2,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "abhivyāhṛ": {
+      "shape": "r",
+      "guna_lemma": "abhivyāharay",
+      "vrddhi_lemma": "abhivyāhāray",
+      "guna_total": 0,
+      "vrddhi_total": 7,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "abhivṛ": {
+      "shape": "r",
+      "guna_lemma": "abhivaray",
+      "vrddhi_lemma": "abhivāray",
+      "guna_total": 0,
+      "vrddhi_total": 11,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "abhyavahṛ": {
+      "shape": "r",
+      "guna_lemma": "abhyavaharay",
+      "vrddhi_lemma": "abhyavahāray",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "abhyutkram": {
+      "shape": "a-m",
+      "guna_lemma": "abhyutkramay",
+      "vrddhi_lemma": "abhyutkrāmay",
+      "guna_total": 3,
+      "vrddhi_total": 2,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "anugam": {
+      "shape": "a-m",
+      "guna_lemma": "anugamay",
+      "vrddhi_lemma": "anugāmay",
+      "guna_total": 12,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 8,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "anuman": {
+      "shape": "a-n",
+      "guna_lemma": "anumanay",
+      "vrddhi_lemma": "anumānay",
+      "guna_total": 0,
+      "vrddhi_total": 61,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 46
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "anusṛ": {
+      "shape": "r",
+      "guna_lemma": "anusaray",
+      "vrddhi_lemma": "anusāray",
+      "guna_total": 0,
+      "vrddhi_total": 29,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 14
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "apasṛ": {
+      "shape": "r",
+      "guna_lemma": "apasaray",
+      "vrddhi_lemma": "apasāray",
+      "guna_total": 0,
+      "vrddhi_total": 24,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "atikram": {
+      "shape": "a-m",
+      "guna_lemma": "atikramay",
+      "vrddhi_lemma": "atikrāmay",
+      "guna_total": 2,
+      "vrddhi_total": 4,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "atipṛ": {
+      "shape": "r",
+      "guna_lemma": "atiparay",
+      "vrddhi_lemma": "atipāray",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "avacar": {
+      "shape": "r",
+      "guna_lemma": "avacaray",
+      "vrddhi_lemma": "avacāray",
+      "guna_total": 0,
+      "vrddhi_total": 80,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 55
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 17
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "avadhṛ": {
+      "shape": "r",
+      "guna_lemma": "avadharay",
+      "vrddhi_lemma": "avadhāray",
+      "guna_total": 0,
+      "vrddhi_total": 114,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 18
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 26
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 20
+        }
+      }
+    },
+    "avadṛ": {
+      "shape": "r",
+      "guna_lemma": "avadaray",
+      "vrddhi_lemma": "avadāray",
+      "guna_total": 0,
+      "vrddhi_total": 8,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 7
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "avagam": {
+      "shape": "a-m",
+      "guna_lemma": "avagamay",
+      "vrddhi_lemma": "avagāmay",
+      "guna_total": 25,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 14,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "avaman": {
+      "shape": "a-n",
+      "guna_lemma": "avamanay",
+      "vrddhi_lemma": "avamānay",
+      "guna_total": 0,
+      "vrddhi_total": 19,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "avanam": {
+      "shape": "a-m",
+      "guna_lemma": "avanamay",
+      "vrddhi_lemma": "avanāmay",
+      "guna_total": 6,
+      "vrddhi_total": 14,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 3
+        }
+      }
+    },
+    "avatṛ": {
+      "shape": "r",
+      "guna_lemma": "avataray",
+      "vrddhi_lemma": "avatāray",
+      "guna_total": 1,
+      "vrddhi_total": 156,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 50
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 46
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 21
+        }
+      }
+    },
+    "bhram": {
+      "shape": "a-m",
+      "guna_lemma": "bhramay",
+      "vrddhi_lemma": "bhrāmay",
+      "guna_total": 24,
+      "vrddhi_total": 134,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "epic": {
+          "guna": 2,
+          "vrddhi": 50
+        },
+        "classical": {
+          "guna": 11,
+          "vrddhi": 11
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 44
+        }
+      }
+    },
+    "bhṛ": {
+      "shape": "r",
+      "guna_lemma": "bharay",
+      "vrddhi_lemma": "bhāray",
+      "guna_total": 5,
+      "vrddhi_total": 1,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "cal": {
+      "shape": "a-l",
+      "guna_lemma": "calay",
+      "vrddhi_lemma": "cālay",
+      "guna_total": 11,
+      "vrddhi_total": 152,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 29
+        },
+        "classical": {
+          "guna": 5,
+          "vrddhi": 49
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 18
+        }
+      }
+    },
+    "car": {
+      "shape": "r",
+      "guna_lemma": "caray",
+      "vrddhi_lemma": "cāray",
+      "guna_total": 0,
+      "vrddhi_total": 127,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 29
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 59
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 7
+        }
+      }
+    },
+    "chal": {
+      "shape": "a-l",
+      "guna_lemma": "chalay",
+      "vrddhi_lemma": "chālay",
+      "guna_total": 16,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 5,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 2,
+          "vrddhi": 0
+        }
+      }
+    },
+    "dal": {
+      "shape": "a-l",
+      "guna_lemma": "dalay",
+      "vrddhi_lemma": "dālay",
+      "guna_total": 9,
+      "vrddhi_total": 7,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "dam": {
+      "shape": "a-m",
+      "guna_lemma": "damay",
+      "vrddhi_lemma": "dāmay",
+      "guna_total": 29,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 14,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 5,
+          "vrddhi": 0
+        }
+      }
+    },
+    "dham": {
+      "shape": "a-m",
+      "guna_lemma": "dhamay",
+      "vrddhi_lemma": "dhāmay",
+      "guna_total": 20,
+      "vrddhi_total": 46,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 20,
+          "vrddhi": 42
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "dhvan": {
+      "shape": "a-n",
+      "guna_lemma": "dhvanay",
+      "vrddhi_lemma": "dhvānay",
+      "guna_total": 6,
+      "vrddhi_total": 1,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "dhṛ": {
+      "shape": "r",
+      "guna_lemma": "dharay",
+      "vrddhi_lemma": "dhāray",
+      "guna_total": 0,
+      "vrddhi_total": 1833,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 269
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 549
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 252
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 125
+        }
+      }
+    },
+    "dṛ": {
+      "shape": "r",
+      "guna_lemma": "daray",
+      "vrddhi_lemma": "dāray",
+      "guna_total": 5,
+      "vrddhi_total": 149,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 90
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 35
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 15
+        }
+      }
+    },
+    "gal": {
+      "shape": "a-l",
+      "guna_lemma": "galay",
+      "vrddhi_lemma": "gālay",
+      "guna_total": 0,
+      "vrddhi_total": 163,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 43
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "gam": {
+      "shape": "a-m",
+      "guna_lemma": "gamay",
+      "vrddhi_lemma": "gāmay",
+      "guna_total": 405,
+      "vrddhi_total": 1,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 176,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 54,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 49,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 4,
+          "vrddhi": 0
+        }
+      }
+    },
+    "ghṛ": {
+      "shape": "r",
+      "guna_lemma": "gharay",
+      "vrddhi_lemma": "ghāray",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "hṛ": {
+      "shape": "r",
+      "guna_lemma": "haray",
+      "vrddhi_lemma": "hāray",
+      "guna_total": 1,
+      "vrddhi_total": 45,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 7
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 15
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "jan": {
+      "shape": "a-n",
+      "guna_lemma": "janay",
+      "vrddhi_lemma": "jānay",
+      "guna_total": 1524,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 346,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 447,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 130,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 185,
+          "vrddhi": 0
+        }
+      }
+    },
+    "jval": {
+      "shape": "a-l",
+      "guna_lemma": "jvalay",
+      "vrddhi_lemma": "jvālay",
+      "guna_total": 14,
+      "vrddhi_total": 140,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 2,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 29
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "jvar": {
+      "shape": "r",
+      "guna_lemma": "jvaray",
+      "vrddhi_lemma": "jvāray",
+      "guna_total": 49,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 32,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 10,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 3,
+          "vrddhi": 0
+        }
+      }
+    },
+    "jāgṛ": {
+      "shape": "r",
+      "guna_lemma": "jāgaray",
+      "vrddhi_lemma": "jāgāray",
+      "guna_total": 16,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "jṛ": {
+      "shape": "r",
+      "guna_lemma": "jaray",
+      "vrddhi_lemma": "jāray",
+      "guna_total": 49,
+      "vrddhi_total": 662,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 7,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 17,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 5,
+          "vrddhi": 505
+        },
+        "puranic": {
+          "guna": 6,
+          "vrddhi": 0
+        }
+      }
+    },
+    "kal": {
+      "shape": "a-l",
+      "guna_lemma": "kalay",
+      "vrddhi_lemma": "kālay",
+      "guna_total": 160,
+      "vrddhi_total": 54,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 13
+        },
+        "epic": {
+          "guna": 3,
+          "vrddhi": 33
+        },
+        "classical": {
+          "guna": 51,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 10,
+          "vrddhi": 5
+        }
+      }
+    },
+    "kam": {
+      "shape": "a-m",
+      "guna_lemma": "kamay",
+      "vrddhi_lemma": "kāmay",
+      "guna_total": 0,
+      "vrddhi_total": 1028,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 558
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 140
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 24
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 39
+        }
+      }
+    },
+    "khan": {
+      "shape": "a-n",
+      "guna_lemma": "khanay",
+      "vrddhi_lemma": "khānay",
+      "guna_total": 10,
+      "vrddhi_total": 36,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 10
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 14
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "kram": {
+      "shape": "a-m",
+      "guna_lemma": "kramay",
+      "vrddhi_lemma": "krāmay",
+      "guna_total": 7,
+      "vrddhi_total": 14,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "kṛ": {
+      "shape": "r",
+      "guna_lemma": "karay",
+      "vrddhi_lemma": "kāray",
+      "guna_total": 0,
+      "vrddhi_total": 1659,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 14
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 371
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 405
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 193
+        }
+      }
+    },
+    "kṣam": {
+      "shape": "a-m",
+      "guna_lemma": "kṣamay",
+      "vrddhi_lemma": "kṣāmay",
+      "guna_total": 16,
+      "vrddhi_total": 2,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 12,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "kṣar": {
+      "shape": "r",
+      "guna_lemma": "kṣaray",
+      "vrddhi_lemma": "kṣāray",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "lal": {
+      "shape": "a-l",
+      "guna_lemma": "lalay",
+      "vrddhi_lemma": "lālay",
+      "guna_total": 0,
+      "vrddhi_total": 59,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 26
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 18
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 11
+        }
+      }
+    },
+    "man": {
+      "shape": "a-n",
+      "guna_lemma": "manay",
+      "vrddhi_lemma": "mānay",
+      "guna_total": 0,
+      "vrddhi_total": 329,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 124
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 25
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 34
+        }
+      }
+    },
+    "mṛ": {
+      "shape": "r",
+      "guna_lemma": "maray",
+      "vrddhi_lemma": "māray",
+      "guna_total": 0,
+      "vrddhi_total": 377,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 24
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 197
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 17
+        }
+      }
+    },
+    "nam": {
+      "shape": "a-m",
+      "guna_lemma": "namay",
+      "vrddhi_lemma": "nāmay",
+      "guna_total": 44,
+      "vrddhi_total": 26,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 5,
+          "vrddhi": 9
+        },
+        "classical": {
+          "guna": 14,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 8,
+          "vrddhi": 3
+        }
+      }
+    },
+    "nidhṛ": {
+      "shape": "r",
+      "guna_lemma": "nidharay",
+      "vrddhi_lemma": "nidhāray",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "nikam": {
+      "shape": "a-m",
+      "guna_lemma": "nikamay",
+      "vrddhi_lemma": "nikāmay",
+      "guna_total": 0,
+      "vrddhi_total": 10,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 8
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "nikhan": {
+      "shape": "a-n",
+      "guna_lemma": "nikhanay",
+      "vrddhi_lemma": "nikhānay",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "nirdṛ": {
+      "shape": "r",
+      "guna_lemma": "nirdaray",
+      "vrddhi_lemma": "nirdāray",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "nirgam": {
+      "shape": "a-m",
+      "guna_lemma": "nirgamay",
+      "vrddhi_lemma": "nirgāmay",
+      "guna_total": 5,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "nivṛ": {
+      "shape": "r",
+      "guna_lemma": "nivaray",
+      "vrddhi_lemma": "nivāray",
+      "guna_total": 0,
+      "vrddhi_total": 405,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 195
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 80
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 47
+        }
+      }
+    },
+    "niyam": {
+      "shape": "a-m",
+      "guna_lemma": "niyamay",
+      "vrddhi_lemma": "niyāmay",
+      "guna_total": 16,
+      "vrddhi_total": 3,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 1
+        }
+      }
+    },
+    "niśam": {
+      "shape": "a-m",
+      "guna_lemma": "niśamay",
+      "vrddhi_lemma": "niśāmay",
+      "guna_total": 5,
+      "vrddhi_total": 447,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 232
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 72
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 97
+        }
+      }
+    },
+    "niścar": {
+      "shape": "r",
+      "guna_lemma": "niścaray",
+      "vrddhi_lemma": "niścāray",
+      "guna_total": 0,
+      "vrddhi_total": 46,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "niḥsṛ": {
+      "shape": "r",
+      "guna_lemma": "niḥsaray",
+      "vrddhi_lemma": "niḥsāray",
+      "guna_total": 0,
+      "vrddhi_total": 16,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "niṣkram": {
+      "shape": "a-m",
+      "guna_lemma": "niṣkramay",
+      "vrddhi_lemma": "niṣkrāmay",
+      "guna_total": 5,
+      "vrddhi_total": 14,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "pan": {
+      "shape": "a-n",
+      "guna_lemma": "panay",
+      "vrddhi_lemma": "pānay",
+      "guna_total": 9,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 9,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "paricar": {
+      "shape": "r",
+      "guna_lemma": "paricaray",
+      "vrddhi_lemma": "paricāray",
+      "guna_total": 0,
+      "vrddhi_total": 63,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "parigal": {
+      "shape": "a-l",
+      "guna_lemma": "parigalay",
+      "vrddhi_lemma": "parigālay",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "parivṛ": {
+      "shape": "r",
+      "guna_lemma": "parivaray",
+      "vrddhi_lemma": "parivāray",
+      "guna_total": 0,
+      "vrddhi_total": 522,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 419
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 40
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 43
+        }
+      }
+    },
+    "pariṇam": {
+      "shape": "a-m",
+      "guna_lemma": "pariṇamay",
+      "vrddhi_lemma": "pariṇāmay",
+      "guna_total": 4,
+      "vrddhi_total": 141,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 7
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 3
+        }
+      }
+    },
+    "pracal": {
+      "shape": "a-l",
+      "guna_lemma": "pracalay",
+      "vrddhi_lemma": "pracālay",
+      "guna_total": 2,
+      "vrddhi_total": 15,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "pracar": {
+      "shape": "r",
+      "guna_lemma": "pracaray",
+      "vrddhi_lemma": "pracāray",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "pradhṛ": {
+      "shape": "r",
+      "guna_lemma": "pradharay",
+      "vrddhi_lemma": "pradhāray",
+      "guna_total": 0,
+      "vrddhi_total": 10,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "prajan": {
+      "shape": "a-n",
+      "guna_lemma": "prajanay",
+      "vrddhi_lemma": "prajānay",
+      "guna_total": 228,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 188,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "prajval": {
+      "shape": "a-l",
+      "guna_lemma": "prajvalay",
+      "vrddhi_lemma": "prajvālay",
+      "guna_total": 6,
+      "vrddhi_total": 120,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 16
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 25
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 5
+        }
+      }
+    },
+    "prakram": {
+      "shape": "a-m",
+      "guna_lemma": "prakramay",
+      "vrddhi_lemma": "prakrāmay",
+      "guna_total": 22,
+      "vrddhi_total": 3,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 7,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "prakṛ": {
+      "shape": "r",
+      "guna_lemma": "prakaray",
+      "vrddhi_lemma": "prakāray",
+      "guna_total": 0,
+      "vrddhi_total": 10,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "prasṛ": {
+      "shape": "r",
+      "guna_lemma": "prasaray",
+      "vrddhi_lemma": "prasāray",
+      "guna_total": 0,
+      "vrddhi_total": 182,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 36
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 51
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 5
+        }
+      }
+    },
+    "pratisṛ": {
+      "shape": "r",
+      "guna_lemma": "pratisaray",
+      "vrddhi_lemma": "pratisāray",
+      "guna_total": 0,
+      "vrddhi_total": 75,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 25
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 31
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "pratṛ": {
+      "shape": "r",
+      "guna_lemma": "prataray",
+      "vrddhi_lemma": "pratāray",
+      "guna_total": 0,
+      "vrddhi_total": 15,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "pravṛ": {
+      "shape": "r",
+      "guna_lemma": "pravaray",
+      "vrddhi_lemma": "pravāray",
+      "guna_total": 3,
+      "vrddhi_total": 18,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "praśam": {
+      "shape": "a-m",
+      "guna_lemma": "praśamay",
+      "vrddhi_lemma": "praśāmay",
+      "guna_total": 48,
+      "vrddhi_total": 11,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 22,
+          "vrddhi": 6
+        },
+        "classical": {
+          "guna": 8,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 3,
+          "vrddhi": 3
+        }
+      }
+    },
+    "praṇam": {
+      "shape": "a-m",
+      "guna_lemma": "praṇamay",
+      "vrddhi_lemma": "praṇāmay",
+      "guna_total": 6,
+      "vrddhi_total": 2,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "pṛ": {
+      "shape": "r",
+      "guna_lemma": "paray",
+      "vrddhi_lemma": "pāray",
+      "guna_total": 0,
+      "vrddhi_total": 109,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 43
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 26
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 13
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "ram": {
+      "shape": "a-m",
+      "guna_lemma": "ramay",
+      "vrddhi_lemma": "rāmay",
+      "guna_total": 145,
+      "vrddhi_total": 6,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 24,
+          "vrddhi": 4
+        },
+        "epic": {
+          "guna": 51,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 16,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 8,
+          "vrddhi": 1
+        }
+      }
+    },
+    "samavatṛ": {
+      "shape": "r",
+      "guna_lemma": "samavataray",
+      "vrddhi_lemma": "samavatāray",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "sampṛ": {
+      "shape": "r",
+      "guna_lemma": "samparay",
+      "vrddhi_lemma": "sampāray",
+      "guna_total": 0,
+      "vrddhi_total": 30,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 19
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "samuccar": {
+      "shape": "r",
+      "guna_lemma": "samuccaray",
+      "vrddhi_lemma": "samuccāray",
+      "guna_total": 0,
+      "vrddhi_total": 30,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "samuttṛ": {
+      "shape": "r",
+      "guna_lemma": "samuttaray",
+      "vrddhi_lemma": "samuttāray",
+      "guna_total": 0,
+      "vrddhi_total": 22,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "saṃcal": {
+      "shape": "a-l",
+      "guna_lemma": "saṃcalay",
+      "vrddhi_lemma": "saṃcālay",
+      "guna_total": 1,
+      "vrddhi_total": 8,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃcar": {
+      "shape": "r",
+      "guna_lemma": "saṃcaray",
+      "vrddhi_lemma": "saṃcāray",
+      "guna_total": 0,
+      "vrddhi_total": 45,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 12
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "saṃdhṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃdharay",
+      "vrddhi_lemma": "saṃdhāray",
+      "guna_total": 0,
+      "vrddhi_total": 46,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 25
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 6
+        }
+      }
+    },
+    "saṃgam": {
+      "shape": "a-m",
+      "guna_lemma": "saṃgamay",
+      "vrddhi_lemma": "saṃgāmay",
+      "guna_total": 15,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 6,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃhṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃharay",
+      "vrddhi_lemma": "saṃhāray",
+      "guna_total": 0,
+      "vrddhi_total": 7,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃjan": {
+      "shape": "a-n",
+      "guna_lemma": "saṃjanay",
+      "vrddhi_lemma": "saṃjānay",
+      "guna_total": 66,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 5,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 41,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 2,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃkram": {
+      "shape": "a-m",
+      "guna_lemma": "saṃkramay",
+      "vrddhi_lemma": "saṃkrāmay",
+      "guna_total": 4,
+      "vrddhi_total": 32,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 12
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 10
+        }
+      }
+    },
+    "saṃkṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃkaray",
+      "vrddhi_lemma": "saṃkāray",
+      "guna_total": 0,
+      "vrddhi_total": 6,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "saṃnam": {
+      "shape": "a-m",
+      "guna_lemma": "saṃnamay",
+      "vrddhi_lemma": "saṃnāmay",
+      "guna_total": 15,
+      "vrddhi_total": 5,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "saṃpravṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃpravaray",
+      "vrddhi_lemma": "saṃpravāray",
+      "guna_total": 0,
+      "vrddhi_total": 23,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃskṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃskaray",
+      "vrddhi_lemma": "saṃskāray",
+      "guna_total": 0,
+      "vrddhi_total": 13,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃsmṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃsmaray",
+      "vrddhi_lemma": "saṃsmāray",
+      "guna_total": 1,
+      "vrddhi_total": 10,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 4
+        }
+      }
+    },
+    "saṃsṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃsaray",
+      "vrddhi_lemma": "saṃsāray",
+      "guna_total": 0,
+      "vrddhi_total": 18,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "saṃtṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃtaray",
+      "vrddhi_lemma": "saṃtāray",
+      "guna_total": 1,
+      "vrddhi_total": 22,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 13
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 5
+        }
+      }
+    },
+    "saṃvṛ": {
+      "shape": "r",
+      "guna_lemma": "saṃvaray",
+      "vrddhi_lemma": "saṃvāray",
+      "guna_total": 0,
+      "vrddhi_total": 63,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 63
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃyam": {
+      "shape": "a-m",
+      "guna_lemma": "saṃyamay",
+      "vrddhi_lemma": "saṃyāmay",
+      "guna_total": 7,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "saṃśam": {
+      "shape": "a-m",
+      "guna_lemma": "saṃśamay",
+      "vrddhi_lemma": "saṃśāmay",
+      "guna_total": 11,
+      "vrddhi_total": 7,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 8,
+          "vrddhi": 7
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "smṛ": {
+      "shape": "r",
+      "guna_lemma": "smaray",
+      "vrddhi_lemma": "smāray",
+      "guna_total": 4,
+      "vrddhi_total": 41,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 13
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 11
+        }
+      }
+    },
+    "stan": {
+      "shape": "a-n",
+      "guna_lemma": "stanay",
+      "vrddhi_lemma": "stānay",
+      "guna_total": 65,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 42,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "sṛ": {
+      "shape": "r",
+      "guna_lemma": "saray",
+      "vrddhi_lemma": "sāray",
+      "guna_total": 1,
+      "vrddhi_total": 232,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 177
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "tam": {
+      "shape": "a-m",
+      "guna_lemma": "tamay",
+      "vrddhi_lemma": "tāmay",
+      "guna_total": 6,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "tan": {
+      "shape": "a-n",
+      "guna_lemma": "tanay",
+      "vrddhi_lemma": "tānay",
+      "guna_total": 0,
+      "vrddhi_total": 5,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "tvar": {
+      "shape": "r",
+      "guna_lemma": "tvaray",
+      "vrddhi_lemma": "tvāray",
+      "guna_total": 38,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 33,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "tṛ": {
+      "shape": "r",
+      "guna_lemma": "taray",
+      "vrddhi_lemma": "tāray",
+      "guna_total": 0,
+      "vrddhi_total": 227,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 105
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 7
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 72
+        }
+      }
+    },
+    "uccar": {
+      "shape": "r",
+      "guna_lemma": "uccaray",
+      "vrddhi_lemma": "uccāray",
+      "guna_total": 0,
+      "vrddhi_total": 139,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 27
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 11
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 31
+        }
+      }
+    },
+    "uddhṛ": {
+      "shape": "r",
+      "guna_lemma": "uddharay",
+      "vrddhi_lemma": "uddhāray",
+      "guna_total": 0,
+      "vrddhi_total": 8,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "udyam": {
+      "shape": "a-m",
+      "guna_lemma": "udyamay",
+      "vrddhi_lemma": "udyāmay",
+      "guna_total": 5,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "ujjval": {
+      "shape": "a-l",
+      "guna_lemma": "ujjvalay",
+      "vrddhi_lemma": "ujjvālay",
+      "guna_total": 3,
+      "vrddhi_total": 8,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 3
+        }
+      }
+    },
+    "unnam": {
+      "shape": "a-m",
+      "guna_lemma": "unnamay",
+      "vrddhi_lemma": "unnāmay",
+      "guna_total": 36,
+      "vrddhi_total": 13,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 7,
+          "vrddhi": 5
+        },
+        "classical": {
+          "guna": 16,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 2,
+          "vrddhi": 3
+        }
+      }
+    },
+    "upadhṛ": {
+      "shape": "r",
+      "guna_lemma": "upadharay",
+      "vrddhi_lemma": "upadhāray",
+      "guna_total": 0,
+      "vrddhi_total": 70,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 59
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 5
+        }
+      }
+    },
+    "upahṛ": {
+      "shape": "r",
+      "guna_lemma": "upaharay",
+      "vrddhi_lemma": "upahāray",
+      "guna_total": 0,
+      "vrddhi_total": 11,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 7
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "upajan": {
+      "shape": "a-n",
+      "guna_lemma": "upajanay",
+      "vrddhi_lemma": "upajānay",
+      "guna_total": 25,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 20,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 3,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "upanam": {
+      "shape": "a-m",
+      "guna_lemma": "upanamay",
+      "vrddhi_lemma": "upanāmay",
+      "guna_total": 0,
+      "vrddhi_total": 40,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "upaśam": {
+      "shape": "a-m",
+      "guna_lemma": "upaśamay",
+      "vrddhi_lemma": "upaśāmay",
+      "guna_total": 11,
+      "vrddhi_total": 5,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 3,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "utkram": {
+      "shape": "a-m",
+      "guna_lemma": "utkramay",
+      "vrddhi_lemma": "utkrāmay",
+      "guna_total": 11,
+      "vrddhi_total": 2,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 6,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "utsṛ": {
+      "shape": "r",
+      "guna_lemma": "utsaray",
+      "vrddhi_lemma": "utsāray",
+      "guna_total": 0,
+      "vrddhi_total": 51,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 16
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 18
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 9
+        }
+      }
+    },
+    "uttan": {
+      "shape": "a-n",
+      "guna_lemma": "uttanay",
+      "vrddhi_lemma": "uttānay",
+      "guna_total": 0,
+      "vrddhi_total": 7,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 6
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "uttṛ": {
+      "shape": "r",
+      "guna_lemma": "uttaray",
+      "vrddhi_lemma": "uttāray",
+      "guna_total": 1,
+      "vrddhi_total": 55,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 10
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 17
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "val": {
+      "shape": "a-l",
+      "guna_lemma": "valay",
+      "vrddhi_lemma": "vālay",
+      "guna_total": 8,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 4,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "vam": {
+      "shape": "a-m",
+      "guna_lemma": "vamay",
+      "vrddhi_lemma": "vāmay",
+      "guna_total": 11,
+      "vrddhi_total": 61,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 40
+        },
+        "classical": {
+          "guna": 9,
+          "vrddhi": 17
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "vical": {
+      "shape": "a-l",
+      "guna_lemma": "vicalay",
+      "vrddhi_lemma": "vicālay",
+      "guna_total": 1,
+      "vrddhi_total": 29,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 17
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "vicar": {
+      "shape": "r",
+      "guna_lemma": "vicaray",
+      "vrddhi_lemma": "vicāray",
+      "guna_total": 0,
+      "vrddhi_total": 278,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 103
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 52
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 36
+        }
+      }
+    },
+    "vidhṛ": {
+      "shape": "r",
+      "guna_lemma": "vidharay",
+      "vrddhi_lemma": "vidhāray",
+      "guna_total": 0,
+      "vrddhi_total": 24,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 2
+        }
+      }
+    },
+    "vidṛ": {
+      "shape": "r",
+      "guna_lemma": "vidaray",
+      "vrddhi_lemma": "vidāray",
+      "guna_total": 0,
+      "vrddhi_total": 181,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 98
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 32
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 20
+        }
+      }
+    },
+    "vikram": {
+      "shape": "a-m",
+      "guna_lemma": "vikramay",
+      "vrddhi_lemma": "vikrāmay",
+      "guna_total": 5,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "vikṣar": {
+      "shape": "r",
+      "guna_lemma": "vikṣaray",
+      "vrddhi_lemma": "vikṣāray",
+      "guna_total": 0,
+      "vrddhi_total": 7,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "viman": {
+      "shape": "a-n",
+      "guna_lemma": "vimanay",
+      "vrddhi_lemma": "vimānay",
+      "guna_total": 0,
+      "vrddhi_total": 31,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 16
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 3
+        }
+      }
+    },
+    "vinam": {
+      "shape": "a-m",
+      "guna_lemma": "vinamay",
+      "vrddhi_lemma": "vināmay",
+      "guna_total": 5,
+      "vrddhi_total": 5,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 1
+        }
+      }
+    },
+    "vistṛ": {
+      "shape": "r",
+      "guna_lemma": "vistaray",
+      "vrddhi_lemma": "vistāray",
+      "guna_total": 0,
+      "vrddhi_total": 31,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 8
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 9
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 5
+        }
+      }
+    },
+    "vitṛ": {
+      "shape": "r",
+      "guna_lemma": "vitaray",
+      "vrddhi_lemma": "vitāray",
+      "guna_total": 0,
+      "vrddhi_total": 8,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "viśram": {
+      "shape": "a-m",
+      "guna_lemma": "viśramay",
+      "vrddhi_lemma": "viśrāmay",
+      "guna_total": 7,
+      "vrddhi_total": 8,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 5,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 2
+        }
+      }
+    },
+    "vṛ": {
+      "shape": "r",
+      "guna_lemma": "varay",
+      "vrddhi_lemma": "vāray",
+      "guna_total": 211,
+      "vrddhi_total": 652,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 39
+        },
+        "epic": {
+          "guna": 118,
+          "vrddhi": 409
+        },
+        "classical": {
+          "guna": 6,
+          "vrddhi": 89
+        },
+        "puranic": {
+          "guna": 45,
+          "vrddhi": 34
+        }
+      }
+    },
+    "yam": {
+      "shape": "a-m",
+      "guna_lemma": "yamay",
+      "vrddhi_lemma": "yāmay",
+      "guna_total": 42,
+      "vrddhi_total": 4,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 6,
+          "vrddhi": 3
+        },
+        "epic": {
+          "guna": 6,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "ācam": {
+      "shape": "a-m",
+      "guna_lemma": "ācamay",
+      "vrddhi_lemma": "ācāmay",
+      "guna_total": 12,
+      "vrddhi_total": 31,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "āgam": {
+      "shape": "a-m",
+      "guna_lemma": "āgamay",
+      "vrddhi_lemma": "āgāmay",
+      "guna_total": 45,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 2,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 12,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 5,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "āghṛ": {
+      "shape": "r",
+      "guna_lemma": "āgharay",
+      "vrddhi_lemma": "āghāray",
+      "guna_total": 0,
+      "vrddhi_total": 82,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 58
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 0
+        }
+      }
+    },
+    "āhṛ": {
+      "shape": "r",
+      "guna_lemma": "āharay",
+      "vrddhi_lemma": "āhāray",
+      "guna_total": 1,
+      "vrddhi_total": 80,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 4
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 44
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 3
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 3
+        }
+      }
+    },
+    "ākal": {
+      "shape": "a-l",
+      "guna_lemma": "ākalay",
+      "vrddhi_lemma": "ākālay",
+      "guna_total": 19,
+      "vrddhi_total": 0,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 1,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 7,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 2,
+          "vrddhi": 0
+        }
+      }
+    },
+    "ākram": {
+      "shape": "a-m",
+      "guna_lemma": "ākramay",
+      "vrddhi_lemma": "ākrāmay",
+      "guna_total": 29,
+      "vrddhi_total": 3,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 18,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "ākṛ": {
+      "shape": "r",
+      "guna_lemma": "ākaray",
+      "vrddhi_lemma": "ākāray",
+      "guna_total": 0,
+      "vrddhi_total": 31,
+      "fluctuating": false,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 2
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 4
+        }
+      }
+    },
+    "ānam": {
+      "shape": "a-m",
+      "guna_lemma": "ānamay",
+      "vrddhi_lemma": "ānāmay",
+      "guna_total": 8,
+      "vrddhi_total": 3,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 2,
+          "vrddhi": 1
+        },
+        "classical": {
+          "guna": 2,
+          "vrddhi": 1
+        },
+        "puranic": {
+          "guna": 1,
+          "vrddhi": 0
+        }
+      }
+    },
+    "āvṛ": {
+      "shape": "r",
+      "guna_lemma": "āvaray",
+      "vrddhi_lemma": "āvāray",
+      "guna_total": 1,
+      "vrddhi_total": 46,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 0,
+          "vrddhi": 0
+        },
+        "epic": {
+          "guna": 0,
+          "vrddhi": 40
+        },
+        "classical": {
+          "guna": 0,
+          "vrddhi": 5
+        },
+        "puranic": {
+          "guna": 0,
+          "vrddhi": 1
+        }
+      }
+    },
+    "śam": {
+      "shape": "a-m",
+      "guna_lemma": "śamay",
+      "vrddhi_lemma": "śāmay",
+      "guna_total": 436,
+      "vrddhi_total": 16,
+      "fluctuating": true,
+      "per_period": {
+        "vedic": {
+          "guna": 170,
+          "vrddhi": 1
+        },
+        "epic": {
+          "guna": 105,
+          "vrddhi": 11
+        },
+        "classical": {
+          "guna": 43,
+          "vrddhi": 0
+        },
+        "puranic": {
+          "guna": 17,
+          "vrddhi": 0
+        }
+      }
+    }
+  },
+  "validation": {
+    "pairs_anchored": 150,
+    "fluctuating_pairs": 57,
+    "gam_jan_fixed_guna": true,
+    "kr_dhr_fixed_vrddhi": true,
+    "every_core_period_has_tokens_fluct": true
+  }
+}
