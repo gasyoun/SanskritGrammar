@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.29.0] - 2026-07-16
+
 ### Added
 - **Sangram: style guide прозы по эталону rusgram.ru (H1003, виза P3 карточки B1+A7).**
   [`sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
