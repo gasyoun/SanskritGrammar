@@ -9,6 +9,20 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.8.1] - 2026-07-16
+### Changed
+- **Приложение 7 — обогащение подлинных корней MW** (второй проход). К каждому корню
+  присоединены **корпусная частота/ранг DCS** ([`roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv))
+  и **число словарей-источников** ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv))
+  через генератор `mw_genuine_roots.py` (join по `root_iast`). Кросс-таб по 704 различным
+  подлинным корням: **482 (68 %)** засвидетельствованы в DCS, **345** согласованы ≥4 словарями;
+  их пересечение -- **ядро из 294 корней** (подлинные + корпусно аттестованные + межсловарно
+  согласованные), на другом полюсе -- **хвост из 101** (подлинные по MW, но корпусно
+  неаттестованные и известные одному источнику). «Подлинность» градуируется тремя свидетелями.
+  Выжимка на странице «Приложения издания 2026» переработана в обогащённую (частота · словари);
+  TSV получил колонки `dcs_freq`/`dcs_rank`/`n_dicts`. `ERRATA.md` без изменения счёта.
+  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
 ## [0.8.0] - 2026-07-16
 ### Added
 - **Приложение 7 «Подлинные корни словаря Монье-Уильямса»** — начато по визе автора (заметка
