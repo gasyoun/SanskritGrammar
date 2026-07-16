@@ -9,7 +9,7 @@ Per-book registers of *verifiable grammatical assertions* (distinct from the typ
 | Book | Claims | Verdicted | Flagged |
 |--|--:|--:|--:|
 | [BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md) | 403 | 403 | 17 |
-| [KocherginaUchebnik_1998](KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 234 | 234 | 25 |
+| [KocherginaUchebnik_1998](KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 234 | 234 | 24 |
 | [ZalizniakKonspekt_2004](ZalizniakKonspekt_2004/CLAIMS_VERIFIED.md) | 17 | 17 | 0 |
 | [ZalizniakOcherk_1978](ZalizniakOcherk_1978/CLAIMS_VERIFIED.md) | 74 | 74 | 4 |
 

@@ -1,0 +1,33 @@
+{
+  "instrument": "two_grade_root_vowel_check.py — reuses the H978 morphoclass crosswalk (ryad_1978 + polnoizm_1978), no new corpus query",
+  "total_roots": 876,
+  "defective_roots": {
+    "n": 429,
+    "by_ryad_family": {
+      "A": 261,
+      "L": 21,
+      "I": 60,
+      "R": 18,
+      "N": 4,
+      "M": 2,
+      "U": 63
+    },
+    "A_series_count": 261,
+    "A_series_share_pct": 60.8
+  },
+  "full_alternating_roots": {
+    "n": 424,
+    "by_ryad_family": {
+      "A": 34,
+      "R": 114,
+      "U": 119,
+      "I": 97,
+      "M": 31,
+      "N": 29
+    },
+    "A_series_count": 34,
+    "A_series_share_pct": 8.0
+  },
+  "expected_by_hk88": "A-series share among defective roots >> A-series share among full-alternating roots",
+  "confirmed": true
+}
