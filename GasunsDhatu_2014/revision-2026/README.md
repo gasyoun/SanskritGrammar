@@ -1,6 +1,6 @@
 # revision-2026 — рабочие материалы подготовки печатного издания 2026 г.
 
-_Created: 07-07-2026 · Last updated: 08-07-2026_
+_Created: 07-07-2026 · Last updated: 16-07-2026_
 
 Working notes for the 2026 print edition of Gasūns, «Состав и строй древнеиндийских корней»
 ([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
@@ -33,5 +33,17 @@ These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only i
 | [syllables_per_word.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/syllables_per_word.csv) | Слогов/слово по 5 текстам + итог |
 | [wordlist_clusters.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/wordlist_clusters.py) | Воспроизводимый скрипт Табл. 4 по союзному словнику `union_headwords.tsv` (323 425 заголовков) |
 | [table4_word_clusters.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table4_word_clusters.csv) · [table4_word_clusters_full.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/table4_word_clusters_full.csv) | Табл. 4: сводка (разновидности по позиции, старое-2014 рядом) + полный список типов |
+
+## Приложение 7 — подлинные корни MW (H1006 / H1034 / H1018)
+
+Размеченный список 750 подлинных корней Монье-Уильямса (`verb_type=genuineroot` против 1 363 вторичных из 2 113 статей — **собственная разметка** кёльнской MW, не суждение издания), обогащённый корпусной частотой DCS и межсловарным согласием; выжимка на странице «Приложения издания 2026» + отдельный печатный лист (Route 2, тело книги не тронуто). Релиз [`gasuns-dhatu-v0.14.0`](https://github.com/gasyoun/SanskritGrammar/releases/tag/gasuns-dhatu-v0.14.0).
+
+| File | What it is |
+|---|---|
+| [mw_genuine_roots.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py) | Воспроизводимый генератор: читает `csl-orig v02/mw/mw_roots.tsv` (флаг `genuine`) + `WhitneyRoots/crosswalk/roots.csv` (частота/ранг/периоды DCS) + `csl-orig v02/etymology_stats/root_oracle.tsv` (число словарей). Join по **SLP1** (`k1_slp1` ↔ `root_slp1`, устойчив к диакритике/омонимии). Эмитит TSV + печатный список + provenance.json + кросс-таб ядро/хвост |
+| [mw_genuine_roots.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv) | Все 2 113 корней MW + флаг `genuine` + обогащение (`dcs_freq`, `dcs_rank`, `n_dicts`, `dcs_periods`) |
+| [mw_genuine_roots_list.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md) | Печатный компактный список 750 подлинных (★, по алфавиту; классы · частота DCS · словари · периоды) |
+| [mw_genuine_roots_enrich_provenance.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_enrich_provenance.json) | Сводка: покрытие (482/750 DCS-аттест., 294 ядро / 101 хвост из 704), распределение по периодам (RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437), топ-20 по частоте |
+| [mw_genuine_roots_print_sheet.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py) → `APPENDIX7_PRINT_SHEET.html` | Печатный лист A4 (трёхколоночная вёрстка всех 750 корней, по образцу листов опечаток H993) — отдельный носитель, тело книги не тронуто (MG Route 2, H1018) |
 
 _Dr. Mārcis Gasūns_
