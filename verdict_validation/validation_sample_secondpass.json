@@ -1,0 +1,577 @@
+[
+ {
+  "id": "HB-10",
+  "verdict": "FALSE",
+  "why": "Whitney: ā takes ablative only (ā samudrāt); accusative not classical norm."
+ },
+ {
+  "id": "HB-100",
+  "verdict": "TRUE",
+  "why": "Standard Paninian doctrine: ātmanepada = action benefits agent (yajati/yajate)."
+ },
+ {
+  "id": "HB-106",
+  "verdict": "TRUE",
+  "why": "Matches Whitney: a-elision invariable; a-with-hiatus usually predominates over ay/av."
+ },
+ {
+  "id": "HB-118",
+  "verdict": "TRUE",
+  "why": "Definitional imperfect formation: augment + present stem + secondary endings."
+ },
+ {
+  "id": "HB-130",
+  "verdict": "TRUE",
+  "why": "Thematic a + optative ī → e is exceptionless in classes I/IV/VI/X."
+ },
+ {
+  "id": "HB-133",
+  "verdict": "FALSE",
+  "why": "Own paradigm contradicts exception list: Acc.sg retains ā (unlisted), Acc.pl loses it (wrongly listed)."
+ },
+ {
+  "id": "HB-142",
+  "verdict": "OVERSTATED",
+  "why": "True for nī/śru/bhū/kṛ but labial-preceded ṝ (pṝ→pūrayati) gives ūr, not vṛddhi."
+ },
+ {
+  "id": "HB-150",
+  "verdict": "UNTESTABLE",
+  "why": "No instrument tags referent-number to measure plural-for-singular pronoun usage."
+ },
+ {
+  "id": "HB-158",
+  "verdict": "UNTESTABLE",
+  "why": "Genuine predicate-agreement cases n=4 only, split 2/2 — too thin to adjudicate."
+ },
+ {
+  "id": "HB-176",
+  "verdict": "TRUE",
+  "why": "n-insertion confined to śatṛ; mat/yat/vat correctly show mān/yān/vān, man/yan/van."
+ },
+ {
+  "id": "HB-186",
+  "verdict": "FALSE",
+  "why": "N.V.sg.m of añc-stems is -aṅ (prāṅ, udaṅ, pratyaṅ), not -a as claimed."
+ },
+ {
+  "id": "HB-198",
+  "verdict": "TRUE",
+  "why": "Pāṇini 6.4.130 pādaḥ pat; Bühler's own dvipāt/dvipadaḥ paradigm confirms."
+ },
+ {
+  "id": "HB-199",
+  "verdict": "FALSE",
+  "why": "Cited forms (kroṣṭo, kroṣṭubhyām) are u-stem; text's 'от kroṣṭṛ' is an error."
+ },
+ {
+  "id": "HB-2",
+  "verdict": "FALSE",
+  "why": "Bühler's own later lessons: root aorist/siṣ-aorist P.-only, intensive I/II single-voice."
+ },
+ {
+  "id": "HB-200",
+  "verdict": "FALSE",
+  "why": "an-stem N.sg has no visarga (pūṣā, brahmahā), contradicting claimed -āḥ ending."
+ },
+ {
+  "id": "HB-21",
+  "verdict": "UNTESTABLE",
+  "why": "No lemma+gender+agreement join available to count gurvī vs guru frequency."
+ },
+ {
+  "id": "HB-211",
+  "verdict": "FALSE",
+  "why": "krudh forms kruddha not *krudhita, and ends in dh, outside stated t/p/s scope."
+ },
+ {
+  "id": "HB-214",
+  "verdict": "TRUE",
+  "why": "All cited ṣṭa/ṭa forms (dṛṣṭa, pṛṣṭa, sṛṣṭa, mṛṣṭa, śiṣṭa) are received forms."
+ },
+ {
+  "id": "HB-219",
+  "verdict": "FALSE",
+  "why": "Root is san not sam (sata should be sāta); sam also violates stated n/ṇ scope."
+ },
+ {
+  "id": "HB-221",
+  "verdict": "TRUE",
+  "why": "dyūta, ṣṭhyūta, syūta, taṣṭa, bhṛṣṭa are all the standard received forms."
+ },
+ {
+  "id": "HB-223",
+  "verdict": "TRUE",
+  "why": "Evidence confirms these are standard nipātana/suppletive participles, not counter-examples."
+ },
+ {
+  "id": "HB-228",
+  "verdict": "TRUE",
+  "why": "All cited -ya gerund root-shape examples match the passive-stem pattern stated."
+ },
+ {
+  "id": "HB-237",
+  "verdict": "TRUE",
+  "why": "dṛś/sṛj obligatory r-forms and kṛṣ/spṛś optional doublets both confirmed by evidence."
+ },
+ {
+  "id": "HB-242",
+  "verdict": "TRUE",
+  "why": "All cited -anīya gerundive forms match the guṇa/class-X rule as stated."
+ },
+ {
+  "id": "HB-252",
+  "verdict": "TRUE",
+  "why": "Pada-stem attachment and as-stem retention both confirmed by cited forms."
+ },
+ {
+  "id": "HB-256",
+  "verdict": "UNTESTABLE",
+  "why": "Frequency ranking needs a lemma count base DCS export cannot supply."
+ },
+ {
+  "id": "HB-265",
+  "verdict": "TRUE",
+  "why": "Determinans-first order definitional; reversed cases acknowledged as small closed exception set."
+ },
+ {
+  "id": "HB-268",
+  "verdict": "UNTESTABLE",
+  "why": "Dvigu vs numeral-bahuvrīhi function tagging unavailable; proportion uncountable per evidence."
+ },
+ {
+  "id": "HB-269",
+  "verdict": "OVERSTATED",
+  "why": "apatha shows a-prefixed forms still shift to -patha, breaking the stated exception."
+ },
+ {
+  "id": "HB-289",
+  "verdict": "TRUE",
+  "why": "sam+kṛ and the listed quasi-preverb+kṛ combinations are all standard attested forms."
+ },
+ {
+  "id": "HB-296",
+  "verdict": "OVERSTATED",
+  "why": "ūrṇu takes guṇa (ūrṇoti) without required ī, a counter-class outside the stated exception."
+ },
+ {
+  "id": "HB-304",
+  "verdict": "TRUE",
+  "why": "dvekṣi/dveṣṭi/dviḍḍhi, mārṣṭi/mṛḍḍhi confirm all three consonant-cluster outcomes."
+ },
+ {
+  "id": "HB-326",
+  "verdict": "TRUE",
+  "why": "Class VII na/n infix, assimilation, and anusvāra pattern all confirmed by cited forms."
+ },
+ {
+  "id": "HB-344",
+  "verdict": "TRUE",
+  "why": "uvāca/ūcuḥ, uvāha/ūhuḥ, iyāja/ījuḥ confirm the reduplication-and-contraction pattern exactly."
+ },
+ {
+  "id": "HB-349",
+  "verdict": "TRUE",
+  "why": "-ām/-ayām periphrastic stem plus kṛ/as/bhū (Ā. cakre) confirmed as standard formation."
+ },
+ {
+  "id": "HB-364",
+  "verdict": "TRUE",
+  "why": "abhraśat/asrasat and ṛ-guṇa in a-aorist confirm both stated allomorphic changes."
+ },
+ {
+  "id": "HB-372",
+  "verdict": "FALSE",
+  "why": "Text claims final-vowel doubling but every cited example (āśiśat etc.) doubles a consonant."
+ },
+ {
+  "id": "HB-374",
+  "verdict": "TRUE",
+  "why": "akṛthāḥ-type s-loss and astoḍhvam-type ḍhvam both confirmed as stated."
+ },
+ {
+  "id": "HB-396",
+  "verdict": "TRUE",
+  "why": "Desiderative confined to present system confirmed; thematic conjugation claim uncontradicted."
+ },
+ {
+  "id": "HB-400",
+  "verdict": "UNTESTABLE",
+  "why": "No corpus instrument can verify 'crooked motion' or pejorative semantic readings."
+ },
+ {
+  "id": "HB-47",
+  "verdict": "TRUE",
+  "why": "Secondary tara/tama comparison is fully productive across stem classes, per evidence."
+ },
+ {
+  "id": "HB-50",
+  "verdict": "TRUE",
+  "why": "8/9 class roots end in nasal; kṛ explicitly treated as the lone exception."
+ },
+ {
+  "id": "HB-57",
+  "verdict": "FALSE",
+  "why": "DCS shows perfect MORE frequent than imperfect, inverting the claimed 'less used'."
+ },
+ {
+  "id": "HB-60",
+  "verdict": "FALSE",
+  "why": "a-aorist is thematic like class VI impf, not athematic class VII as claimed."
+ },
+ {
+  "id": "HB-62",
+  "verdict": "TRUE",
+  "why": "Desiderative is a productive derived conjugation across all classes and causatives."
+ },
+ {
+  "id": "HB-8",
+  "verdict": "OVERSTATED",
+  "why": "Genitive also covers non-possessive uses (verbal, absolute, temporal), not just 'belonging'."
+ },
+ {
+  "id": "HB-83",
+  "verdict": "TRUE",
+  "why": "r-origin/non-a visargas revert to r before voiced sounds, drop+lengthen before r-."
+ },
+ {
+  "id": "HK-10",
+  "verdict": "OVERSTATED",
+  "why": "Rule holds for principal-clause verbs only; subordinate-clause verbs stay accented mid-sentence."
+ },
+ {
+  "id": "HK-118",
+  "verdict": "TRUE",
+  "why": "ā-roots take -au in perfect 1/3sg. P., drop ā before du./pl. endings."
+ },
+ {
+  "id": "HK-126",
+  "verdict": "TRUE",
+  "why": "Voiceless/unaspirated-voiced finals cluster to -kt-/-pt- before -t, per standard sandhi."
+ },
+ {
+  "id": "HK-129",
+  "verdict": "TRUE",
+  "why": "Passive stem = weak root + accented -ya, matches Whitney's dṛśyá/ucyá pattern."
+ },
+ {
+  "id": "HK-133",
+  "verdict": "TRUE",
+  "why": "Present passive participles = passive stem + -māna, confirmed by dīyamāna/kriyamāṇa."
+ },
+ {
+  "id": "HK-14",
+  "verdict": "OVERSTATED",
+  "why": "Root/monosyllabic ā-stems and some masculine proper nouns break the 'always feminine' rule."
+ },
+ {
+  "id": "HK-15",
+  "verdict": "TRUE",
+  "why": "Claim already hedged with 'usually'; evidence confirms for classical narrative register."
+ },
+ {
+  "id": "HK-16",
+  "verdict": "FALSE",
+  "why": "Well-attested masculine ī/ū-stems (rathī, senānī, sudhī) contradict the 'always feminine' claim."
+ },
+ {
+  "id": "HK-164",
+  "verdict": "TRUE",
+  "why": "ś/ṣ/ch(/j/h) finals give ṭ before s, ḍ before bh-, confirmed by viṭ/viḍbhis."
+ },
+ {
+  "id": "HK-165",
+  "verdict": "TRUE",
+  "why": "diś/dṛś/spṛś show lexical ś→k/g sub-rule (dik, digbhis), as stated."
+ },
+ {
+  "id": "HK-169",
+  "verdict": "TRUE",
+  "why": "-ir/-ur root nouns lengthen before consonant/zero endings (gir→gīr, pur→pūr)."
+ },
+ {
+  "id": "HK-17",
+  "verdict": "TRUE",
+  "why": "DCS data confirms 2nd-person imperative forms are most frequent (62.7%)."
+ },
+ {
+  "id": "HK-173",
+  "verdict": "TRUE",
+  "why": "Three-grade stems form feminine with -ī on weak grade (rājan→rājñī), as stated."
+ },
+ {
+  "id": "HK-177",
+  "verdict": "TRUE",
+  "why": "Evidence confirms -tama ordinal variant exists for tens 20-90."
+ },
+ {
+  "id": "HK-189",
+  "verdict": "TRUE",
+  "why": "Kinship -tar dvandva first members do stand in Nom.sg (mātāpitarau)."
+ },
+ {
+  "id": "HK-19",
+  "verdict": "OVERSTATED",
+  "why": "Many core class IX roots (krī, jñā, pū) aren't nasal+consonant final."
+ },
+ {
+  "id": "HK-196",
+  "verdict": "TRUE",
+  "why": "Evidence matches exactly: ā/e/ai/au roots take -paya, e/diphthongs give ā."
+ },
+ {
+  "id": "HK-197",
+  "verdict": "TRUE",
+  "why": "Causative ppp drops -aya, keeps guṇa + -ita, as stated."
+ },
+ {
+  "id": "HK-20",
+  "verdict": "TRUE",
+  "why": "Reduplicating class 3pl -ati/-ate drops nasal vs thematic -anti."
+ },
+ {
+  "id": "HK-207",
+  "verdict": "UNTESTABLE",
+  "why": "DCS has no narrative-vs-dialogue register tagging to test the split."
+ },
+ {
+  "id": "HK-211",
+  "verdict": "TRUE",
+  "why": "ajijñipat instantiates the ā→i reduplicated causative aorist exactly."
+ },
+ {
+  "id": "HK-214",
+  "verdict": "TRUE",
+  "why": "Evidence confirms -s/aniṭ vs -iṣ/seṭ split with later blurring."
+ },
+ {
+  "id": "HK-221",
+  "verdict": "UNTESTABLE",
+  "why": "Animate/inanimate semantic split has no stated or computable count base."
+ },
+ {
+  "id": "HK-225",
+  "verdict": "UNTESTABLE",
+  "why": "No clean prefixed-vs-simple verb-lemma partition exists to test one-third."
+ },
+ {
+  "id": "HK-226",
+  "verdict": "UNTESTABLE",
+  "why": "Semantic-transparency 30% share has no disclosed corpus or coding scheme."
+ },
+ {
+  "id": "HK-227",
+  "verdict": "UNTESTABLE",
+  "why": "Same undisclosed subjective transparency classification, <10% not reproducible."
+ },
+ {
+  "id": "HK-228",
+  "verdict": "UNTESTABLE",
+  "why": "No reproducible desubstantive-noun-by-preverb count exists to test ranking."
+ },
+ {
+  "id": "HK-229",
+  "verdict": "UNTESTABLE",
+  "why": "No noun-specific prati- count; general tally isn't a valid instrument here."
+ },
+ {
+  "id": "HK-25",
+  "verdict": "OVERSTATED",
+  "why": "vid, ās and others take periphrastic perfect, contradicting 'от всех'."
+ },
+ {
+  "id": "HK-32",
+  "verdict": "OVERSTATED",
+  "why": "Masculine -as (candramas) and mixed -is/-us genders undercut 'большинство'."
+ },
+ {
+  "id": "HK-34",
+  "verdict": "FALSE",
+  "why": "Bahuvrīhi, a major compound type, tracks referent gender, not last stem."
+ },
+ {
+  "id": "HK-36",
+  "verdict": "TRUE",
+  "why": "Causatives add valency (transitive); formation not universal across roots."
+ },
+ {
+  "id": "HK-38",
+  "verdict": "OVERSTATED",
+  "why": "Root aorist source set wider than -ā roots+bhū (gam, kram, etc.)."
+ },
+ {
+  "id": "HK-40",
+  "verdict": "OVERSTATED",
+  "why": "Prefix ordering is a strong tendency, not absolute; DCS shows counter-examples"
+ },
+ {
+  "id": "HK-41",
+  "verdict": "UNTESTABLE",
+  "why": "60/30/<10% split is a subjective classification with no disclosed count base"
+ },
+ {
+  "id": "HK-42",
+  "verdict": "UNTESTABLE",
+  "why": "1/3 and 80% figures rest on undisclosed, unreproducible count base"
+ },
+ {
+  "id": "HK-4a",
+  "verdict": "FALSE",
+  "why": "Not one rule: three conditioned suffixes exist, majority is -iṣya not -sya"
+ },
+ {
+  "id": "HK-4b",
+  "verdict": "TRUE",
+  "why": "Conditioning rules match Whitney; frequency data doesn't contradict phonological description"
+ },
+ {
+  "id": "HK-5",
+  "verdict": "TRUE",
+  "why": "Whitney confirms a-aorist as common type from consonant-final roots"
+ },
+ {
+  "id": "HK-55",
+  "verdict": "TRUE",
+  "why": "Regressive assimilation is the well-attested default in external sandhi"
+ },
+ {
+  "id": "HK-82",
+  "verdict": "TRUE",
+  "why": "Augment a- with accent is the standard imperfect marker"
+ },
+ {
+  "id": "HK-86",
+  "verdict": "UNTESTABLE",
+  "why": "'Most' -a to -ī feminine share has no computable count base"
+ },
+ {
+  "id": "HK-88",
+  "verdict": "UNTESTABLE",
+  "why": "Claim conflates weak/guṇa terminology; proportion unquantified and unchecked"
+ },
+ {
+  "id": "HK-97",
+  "verdict": "TRUE",
+  "why": "Athematic conjugation exactly comprises classes II,III,V,VII,VIII,IX"
+ },
+ {
+  "id": "KZ-10",
+  "verdict": "TRUE",
+  "why": "Whitney lists -thana/-tana as regular attested 2pl side-forms"
+ },
+ {
+  "id": "KZ-14",
+  "verdict": "TRUE",
+  "why": "Measured 84.9% closely matches claimed 7/8=87.5%"
+ },
+ {
+  "id": "KZ-16",
+  "verdict": "TRUE",
+  "why": "Measured 42.3% supports claimed near-even 1/2 split"
+ },
+ {
+  "id": "KZ-4",
+  "verdict": "TRUE",
+  "why": "e-perfect is Whitney's standard treatment for medial-a roots, majority class"
+ },
+ {
+  "id": "KZ-6",
+  "verdict": "TRUE",
+  "why": "saha/vinā/upari are indeed the recognized near-grammaticalized adposition residue"
+ },
+ {
+  "id": "OCH-10",
+  "verdict": "TRUE",
+  "why": "Word-final counts show ṇ extremely rare, ñ/ṅ rare relative to n/m/ṁ"
+ },
+ {
+  "id": "OCH-11",
+  "verdict": "TRUE",
+  "why": "t-final tokens vastly outnumber k/ṭ/p, making its nasal variant most common"
+ },
+ {
+  "id": "OCH-12",
+  "verdict": "TRUE",
+  "why": "Whitney gives sonant-aspirate conversion as usual, retained h as minority"
+ },
+ {
+  "id": "OCH-21",
+  "verdict": "TRUE",
+  "why": "Measured 19/13/18 split; decided cases 59/41 with fluctuating group supports 'roughly even'"
+ },
+ {
+  "id": "OCH-24",
+  "verdict": "UNTESTABLE",
+  "why": "Proxy explicitly untrusted (composition bias); no valid within-root instrument."
+ },
+ {
+  "id": "OCH-27",
+  "verdict": "TRUE",
+  "why": "Whitney confirms indeclinable substantives are a handful of frozen items."
+ },
+ {
+  "id": "OCH-42",
+  "verdict": "TRUE",
+  "why": "Whitney and DCS both confirm rare middle, active-only 3rd person forms."
+ },
+ {
+  "id": "OCH-46",
+  "verdict": "UNTESTABLE",
+  "why": "Semantic equivalence needs sense-annotated data; no instrument available."
+ },
+ {
+  "id": "OCH-48",
+  "verdict": "TRUE",
+  "why": "Whitney confirms pāyayati as the accepted causative of pā."
+ },
+ {
+  "id": "OCH-50",
+  "verdict": "TRUE",
+  "why": "Whitney/Bühler confirm sparse desiderative forms outside present, sa-stem based."
+ },
+ {
+  "id": "OCH-52",
+  "verdict": "UNTESTABLE",
+  "why": "DCS doesn't tag denominatives; Whitney lacks this distributional claim."
+ },
+ {
+  "id": "OCH-59",
+  "verdict": "TRUE",
+  "why": "Whitney confirms a-stem substitution pattern; claim's hedge 'quite often' matches."
+ },
+ {
+  "id": "OCH-60",
+  "verdict": "UNTESTABLE",
+  "why": "DCS tags lexically not functionally; tatpuruṣa/bahuvrīhi function unrecoverable."
+ },
+ {
+  "id": "OCH-66",
+  "verdict": "OVERSTATED",
+  "why": "Only modifier-head (86%) holds; verb-final 46.4%, subject-first 42.6% fail majority."
+ },
+ {
+  "id": "OCH-67",
+  "verdict": "FALSE",
+  "why": "Subordinate outnumbers coordinate 6.5:1, opposite of claimed predominance."
+ },
+ {
+  "id": "OCH-68",
+  "verdict": "OVERSTATED",
+  "why": "75.2% (n=335), not 'always'; 83 counterexamples found."
+ },
+ {
+  "id": "OCH-69",
+  "verdict": "UNTESTABLE",
+  "why": "Cross-language subordination comparison needs data outside pipeline scope."
+ },
+ {
+  "id": "OCH-8",
+  "verdict": "UNTESTABLE",
+  "why": "Sociophonetic census of recitation schools outside any available instrument."
+ },
+ {
+  "id": "OCH-9",
+  "verdict": "TRUE",
+  "why": "0.025% word-final l confirms near-absence in practice."
+ }
+]

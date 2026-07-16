@@ -1,0 +1,577 @@
+{
+ "HK-4a": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-4b": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-10": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-14": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-15": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-16": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-19": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-25": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-32": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-34": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-38": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-40": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "kochergina"
+ },
+ "HK-5": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-41": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-42": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-86": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-88": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "ORDER-QUESTIONABLE",
+  "book": "kochergina"
+ },
+ "HK-207": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-221": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-225": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-226": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-227": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-228": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-229": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "kochergina"
+ },
+ "HK-17": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-133": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-126": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-173": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-164": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-129": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-20": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-169": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-55": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-177": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-97": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-189": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-165": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-196": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-214": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-118": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-36": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-82": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-211": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HK-197": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "kochergina"
+ },
+ "HB-2": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "buhler"
+ },
+ "HB-8": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-10": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "buhler"
+ },
+ "HB-57": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "FREQUENCY-HIDDEN",
+  "book": "buhler"
+ },
+ "HB-60": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "buhler"
+ },
+ "HB-133": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "buhler"
+ },
+ "HB-142": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-186": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-199": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-200": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-211": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-219": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-269": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-296": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-372": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "buhler"
+ },
+ "HB-21": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-100": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-150": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-158": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-256": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-268": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-400": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-228": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-47": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-252": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-289": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-223": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-237": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-344": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-221": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-214": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-265": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-396": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-364": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-326": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-118": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-50": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-176": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-198": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-106": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-130": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-242": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-349": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-374": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-83": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-62": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "HB-304": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "buhler"
+ },
+ "OCH-66": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "ocherk"
+ },
+ "OCH-67": {
+  "verdict_fact": "FALSE",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "ocherk"
+ },
+ "OCH-68": {
+  "verdict_fact": "OVERSTATED",
+  "verdict_pedagogy": "MISLEADING",
+  "book": "ocherk"
+ },
+ "OCH-8": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-24": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-46": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-52": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-60": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-69": {
+  "verdict_fact": "UNTESTABLE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-9": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-11": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-12": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-50": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-42": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-27": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-21": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-10": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-59": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "OCH-48": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "ocherk"
+ },
+ "KZ-14": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "konspekt"
+ },
+ "KZ-16": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "konspekt"
+ },
+ "KZ-4": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "konspekt"
+ },
+ "KZ-6": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "konspekt"
+ },
+ "KZ-10": {
+  "verdict_fact": "TRUE",
+  "verdict_pedagogy": "JUSTIFIED",
+  "book": "konspekt"
+ }
+}
