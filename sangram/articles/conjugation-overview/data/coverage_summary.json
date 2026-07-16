@@ -1,0 +1,159 @@
+{
+  "study": "Sangram SG-MO-012 (Спряжение: обзор) — частотная рамка финитного глагола",
+  "toc_ref": "SG-MO-012",
+  "kind": "overview (no kill-gate)",
+  "method": "распределение финитных глагольных токенов по пяти НАТИВНЫМ морфопризнакам DCS (лицо/число/время/наклонение/залог) — реальная аттестованная рамка, без приближения",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc"
+  },
+  "universe_where": "t.upos='VERB' AND (t.feat_verbform='Fin' OR t.feat_verbform IS NULL) AND t.feat_person IS NOT NULL",
+  "denominator_finite_verb_tokens": 523721,
+  "person": {
+    "3": {
+      "tokens": 420305,
+      "share": 0.8025
+    },
+    "2": {
+      "tokens": 63865,
+      "share": 0.1219
+    },
+    "1": {
+      "tokens": 39551,
+      "share": 0.0755
+    }
+  },
+  "number": {
+    "Sing": {
+      "tokens": 420271,
+      "share": 0.8025
+    },
+    "Plur": {
+      "tokens": 94078,
+      "share": 0.1796
+    },
+    "Dual": {
+      "tokens": 9372,
+      "share": 0.0179
+    }
+  },
+  "tense": {
+    "Pres": {
+      "tokens": 353215,
+      "share": 0.6744
+    },
+    "Past": {
+      "tokens": 102055,
+      "share": 0.1949
+    },
+    "Impf": {
+      "tokens": 46695,
+      "share": 0.0892
+    },
+    "Fut": {
+      "tokens": 21556,
+      "share": 0.0412
+    },
+    "Plp": {
+      "tokens": 167,
+      "share": 0.0003
+    },
+    "Pqp": {
+      "tokens": 33,
+      "share": 0.0001
+    }
+  },
+  "mood": {
+    "Ind": {
+      "tokens": 364771,
+      "share": 0.6965
+    },
+    "Opt": {
+      "tokens": 91912,
+      "share": 0.1755
+    },
+    "Imp": {
+      "tokens": 56506,
+      "share": 0.1079
+    },
+    "Jus": {
+      "tokens": 5258,
+      "share": 0.01
+    },
+    "Sub": {
+      "tokens": 4325,
+      "share": 0.0083
+    },
+    "Prec": {
+      "tokens": 577,
+      "share": 0.0011
+    },
+    "Cond": {
+      "tokens": 340,
+      "share": 0.0006
+    },
+    "Pot": {
+      "tokens": 32,
+      "share": 0.0001
+    }
+  },
+  "voice": {
+    "Act(∅)": {
+      "tokens": 494022,
+      "share": 0.9433
+    },
+    "Pass": {
+      "tokens": 29699,
+      "share": 0.0567
+    }
+  },
+  "headline_shares_ci95": {
+    "third_person": {
+      "k": 420305,
+      "n": 523721,
+      "ci95": [
+        0.8015,
+        0.8036
+      ]
+    },
+    "dual": {
+      "k": 9372,
+      "n": 523721,
+      "ci95": [
+        0.0175,
+        0.0183
+      ]
+    },
+    "present": {
+      "k": 353215,
+      "n": 523721,
+      "ci95": [
+        0.6732,
+        0.6757
+      ]
+    },
+    "optative": {
+      "k": 91912,
+      "n": 523721,
+      "ci95": [
+        0.1745,
+        0.1765
+      ]
+    },
+    "passive": {
+      "k": 29699,
+      "n": 523721,
+      "ci95": [
+        0.0561,
+        0.0573
+      ]
+    }
+  },
+  "notes": {
+    "voice": "средний залог отдельно не тегируется — NULL≈актив; Pass выделен (предел разметки)",
+    "tense_past": "Tense=Past склеивает претериты (импф./аорист/перфект) — предел EM2, доказан пилотом P3",
+    "class": "класс презенса не в признаках — join WhitneyRoots (предел EM1, пилот P2)"
+  }
+}
