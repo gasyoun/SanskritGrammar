@@ -19,6 +19,40 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.28.0] - 2026-07-16
+
+### Fixed
+- **Fresh `npm ci` was broken repo-wide**: dependabot [PR #155](https://github.com/gasyoun/SanskritGrammar/pull/155) bumped `react` to 19.2.7 but left `react-dom` at 18.3.1 — an unsatisfiable peer pair (`ERESOLVE`) for any clean install/worktree. Aligned `react-dom` to 19.2.7 (Docusaurus 3.10 supports React 19), lockfile regenerated, production build green. (Fable 5 `claude-fable-5`)
+
+### Changed
+- **P3 (SG-MO-017 перфект) — применены четыре заметки визового листа** (виза 8/8 approve была применена в [PR #241](https://github.com/gasyoun/SanskritGrammar/pull/241) как «no wording edits» — заметки MG оставались неисполненными): **(A1)** главный вывод § 4 получил существенную оговорку «**по данным DCS**» — измерена аннотация снапшота `04e0778`, а не язык и не корпусы вообще; **(A5)** вопрос автора «а если проверить по списку известных перфектов?» записан заделом следующей ревизии (§ 3.5): лексиконный зонд по заведомым перфектным формам (`cakāra`, `jagāma`, `dadau`, `veda`…) меряет полноту разметки без ложных кандидатов; **(A4)** дистрибуция вспомогательных перифрастики (as **91,4 %** / kṛ 7,4 % / bhū 0,8 %; 3 sg 86,6 %) маршрутизирована в [методичку Кочергиной § 4.2](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md) как queued material для **Занятия 22 (стр. 153)** (+ строка в метадоке); **(B1+A7)** требование style guide по эталону [rusgram.ru](http://rusgram.ru/main) («чтобы это мог читать человек, а не просто агент») — заминчен handoff [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md) (Fable), заметка A7 о «птичьем языке» раздела ограничений — его вход. Ревизия `revision` в [манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/article.manifest.json) (append-only, C4). (Fable 5 `claude-fable-5`)
+
+## [0.27.0] - 2026-07-16
+
+### Changed
+- **P3 (SG-MO-017 перфект) — авторская виза применена → ОПУБЛИКОВАНО (честный отрицательный результат).**
+  [`sangram/articles/perfect/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/perfect):
+  ревизия `published` в манифесте, плашка кандидата снята, § 6 п. 6 обновлён на формулировку восстановленного
+  провенанс-пина (тег [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content)
+  зеркала dcs-conllu). Review-sheet `sangram-sg-mo-017-perfect-visa_15.07.26` — 8/8 approve, без правок к
+  формулировкам. Главный результат: DCS-форма-класс (`feat_formation`) не содержит значения «перфект» —
+  единственный форма-эвидентный перфект перифрастический (3,96 % бакета `Tense=Past`); главная редуплицированная
+  формация (`uvāca`, `cakāra`, `jaghnuḥ`) не тегируется вовсе; тег `red` под `Past` — ложный друг (редуплицированный
+  аорист). Kill-gate C5 § 7 P3 СРАБОТАЛ: recall перфекта по форма-классу 2/61 = 3,3 % ≪ 95 %. (Opus 4.8
+  `claude-opus-4-8[1m]`, [H983](https://github.com/gasyoun/Uprava/blob/main/handoffs/H983-Opus_SanskritGrammar_sangram-w2-pilot-p3-perfect_15.07.26.md))
+
+## [0.26.0] - 2026-07-16
+
+### Changed
+- **P5 (SG-WF-003 kṛt-суффиксы) — авторская виза применена → ОПУБЛИКОВАНО (честный отрицательный результат).**
+  [`sangram/articles/krt-suffixes/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-suffixes):
+  ревизия `published` в манифесте, плашка кандидата снята. Единственная реализация P5 (коллизии нет, в отличие
+  от P4 — supersede-review неприменим). Числа воспроизведены из закоммиченных данных: доля ложных срабатываний
+  поверхностного отбора kṛt по исходу леммы **48/81 = 59,3 % ≫ 20 % → kill-gate C5 § 7 P5 СРАБОТАЛ** (шум:
+  композиты 31/48, имена 6, посессивная таддхита 6); суффикс -tṛ (`tf`) не отбираем (0 лемм NOUN/ADJ); MW-валидация
+  точность 0,75 / полнота 0,09. Оговорка о модельной адъюдикации сохранена. (Opus 4.8 `claude-opus-4-8[1m]`,
+  [H996](https://github.com/gasyoun/Uprava/blob/main/handoffs/H996-Opus_SanskritGrammar_sangram-w2-pilot-p5-krt-suffixes_15.07.26.md))
+
 ## [0.25.0] - 2026-07-15
 
 ### Changed

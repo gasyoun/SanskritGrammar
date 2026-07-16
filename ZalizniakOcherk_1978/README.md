@@ -1,6 +1,6 @@
 # Зализняк 1978 — «Грамматический очерк санскрита»: цифровое издание и исследовательские слои
 
-_Created: 15-07-2026 · Last updated: 15-07-2026_
+_Created: 15-07-2026 · Last updated: 16-07-2026_
 
 Папка книги: А. А. Зализняк, «Грамматический очерк санскрита» (приложение к
 «Санскритско-русскому словарю» В. А. Кочергиной, М., 1978) — **очерк**, а не полная
@@ -55,8 +55,8 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 Семя (OCH-1..OCH-6, Sonnet 5 `claude-sonnet-5`, [PR #196](https://github.com/gasyoun/SanskritGrammar/pull/196))
 и полный слив бэклога (OCH-7..OCH-74, Fable 5 `claude-fable-5`, H797 фаза 2) в один день:
 [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
-— **74 проверенных утверждения: 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE ·
-7 частотных сносок М.Г.** (после инструмента H978, см. ниже);
+— **74 проверенных утверждения: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE ·
+7 частотных сносок М.Г.** (после инструментов H978, H1000, H1001 и H1004, см. ниже);
 [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims_harvest.yml)
 пуст (`candidates: []`). Планка «≥ 50» превышена; таблица —
 [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CLAIMS_VERIFIED.md).
@@ -75,11 +75,32 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
    у Зализняка сформулирован «как правило» — и получает TRUE. Калибровка подачи, а не
    знание фактов, — измеримая ось различия грамматик (третья точка данных).
 3. **UNTESTABLE — это список требований к следующим инструментам конвейера,** а не
-   расплывчатость автора: периодная разметка корпуса (флагман §207 — диахронический сдвиг
-   стиль-I → стиль-II; естественный источник — снимок DCS пилота H953 с метаданными
-   текстов), синтаксический treebank (порядок слов, подчинение, единственный рискованный
-   абсолют §216 «всегда» — помечен «лицензией на охоту»), разметка типов сложных слов,
-   кроссволк рядов 1978↔2026 и парсер структуры корня по каталогу Талмуда.
+   расплывчатость автора: ~~периодная разметка корпуса~~ — **ПОСТРОЕНА 16-07-2026 (H1000,
+   [period_style_gradient.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/period_style_gradient.py)):
+   флагман §207 ИЗМЕРЕН, OCH-63 → TRUE** — кураторная карта 41 текста DCS по периодам
+   (веды / эпос / классика; пураны отдельной колонкой как эпос-имитирующий контроль),
+   4,07 млн токенов (71,6 % корпуса), и ВСЕ пять стилевых метрик растут монотонно
+   веды → эпос → классика: членство в композитах 12,2 % → 40,5 % → 57,3 % (почти
+   пятикратный рост), длина композита 2,06 → 2,32 → 2,58, доля имен 43,3 % → 52,7 % →
+   56,4 %, имя/глагол 2,13 → 2,89 → 3,28, пассив 2,7 % → 5,8 % → 7,5 % — см.
+   [och63_period_style_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och63_period_style_stats.json).
+   ~~Детектор каузативов~~ — **ПОСТРОЕН в тот же день (H1001,
+   [causative_grade_detector.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/causative_grade_detector.py)):
+   OCH-47 → TRUE** — доля guṇa-каузативов (gamayati-тип) падает 81,3 % → 25,9 % → 20,8 %
+   (веды → эпос → классика) среди 57 колеблющихся корней; «отступление» §167 в ведийском
+   срезе было БОЛЬШИНСТВОМ — см.
+   [och47_causative_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och47_causative_stats.json).
+   ~~Разметка типов сложных слов~~ — **структурная половина ПОСТРОЕНА в тот же день (H1004,
+   [compound_type_tagger.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/compound_type_tagger.py)):
+   OCH-58 → TRUE** — двигу (числительное-первый член, кроме eka-) = 15,3 % детерминативного
+   пула и 2,6 % всех именных кластеров: «сравнительно редко» подтверждено — см.
+   [och58_compound_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/och58_compound_stats.json).
+   OCH-60 остается честно заблокирован — зондирование показало, что DCS тегирует члены
+   композитов ЛЕКСИЧЕСКИ (последний член mahābāhu — NOUN в 192/193 кластеров), функция
+   татпуруша/бахуврихи из снимка невосстановима. Остаются: синтаксический treebank (порядок
+   слов, подчинение, единственный рискованный абсолют §216 «всегда» — помечен «лицензией на
+   охоту»), функциональная разметка композитов (OCH-60) и парсер структуры корня по каталогу
+   Талмуда.
 4. **Два отрицательных пилота записаны с числами, чтобы их не пересчитывали как
    опровержения:** наивная склейка рядов 1978 с ryad Талмуда ИНВЕРТИРУЕТ §68 (36,8 % aniṭ
    в «aniṭ-ожидаемой» группе — но склейка не валидирована и не фильтрует
@@ -123,6 +144,9 @@ npm run claims              # перегенерация CLAIMS_VERIFIED.md + cl
 python ZalizniakOcherk_1978/verify_claims_dcs.py    # вся батарея книги (census, i-rates)
 python ZalizniakOcherk_1978/build_1978_crosswalk.py # колонка 1978 + тесты §§67-68 (H978)
 python ZalizniakOcherk_1978/och22_token_weighted.py # строгая токен-взвешенная реплика OCH-22
+python ZalizniakOcherk_1978/period_style_gradient.py # карта периодов + градиент §207 (H1000)
+python ZalizniakOcherk_1978/causative_grade_detector.py # детектор каузативов + градиент §167 (H1001)
+python ZalizniakOcherk_1978/compound_type_tagger.py # структурная разметка композитов + двигу §193 (H1004)
 npm run errata:print        # печатные листы опечаток (ERRATA_PRINT_SHEET.html) из errata.yml
 ```
 
@@ -135,8 +159,8 @@ npm run errata:print        # печатные листы опечаток (ERRA
 
 ### Что дальше
 
-Оставшиеся инструменты из списка UNTESTABLE (периодная разметка вед-vs-эпос для полного
-градиента §207 — первая точка уже измерена в конспекте, KZ-12; treebank → §§214-217);
+Оставшиеся инструменты из списка UNTESTABLE (treebank → §§214-217; функциональная
+разметка композитов → OCH-60; парсер структуры корня → OCH-16);
 закрытие `@DECIDE` по окну якоря N=8 квантификаторного слоя.
 
 _Dr. Mārcis Gasūns_

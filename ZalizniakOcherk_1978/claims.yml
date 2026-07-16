@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H978 crosswalk instrument, 15-07-2026): 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — OCH-21..OCH-23 flipped to measured TRUE by the 1978 column (build_1978_crosswalk.py + morphoclass_crosswalk_1975_2014_2026.csv (1978 columns) + och_1978_stats.json). The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004 instruments, 16-07-2026): 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -32,7 +32,7 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 instrument: 60 TRUE · 0 OVERSTATED · 0 FALSE · 14 UNTESTABLE — the §68 flagship and its two §67 siblings are now MEASURED, see OCH-21..OCH-23). Zaliznyak is the
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 instruments: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
   first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
   not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
@@ -48,11 +48,12 @@ synthesis: >-
   Zaliznyak (0 flags / 74) > Bühler (5 / 64) > Kochergina (12+24 / 234).
 
 
-  The 17 UNTESTABLE entries are the register's second product: a requirements list for the
-  pipeline's next instruments, each named in its entry — period-tagged corpus slices (OCH-63,
-  the flagship style-I→style-II diachronic claim, plus OCH-47's early-vs-late causative
-  gradient; the H953 Sangram pilot's pinned DCS snapshot with per-text metadata is the natural
-  source), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
+  The remaining UNTESTABLE entries are the register's second product: a requirements list for
+  the pipeline's next instruments, each named in its entry — ~~period-tagged corpus slices~~
+  BUILT 16-07-2026 (period_style_gradient.py, H1000: OCH-63 flipped to measured TRUE — the
+  style-I→style-II gradient is real and monotonic on every annotation-robust axis; OCH-47's
+  early-vs-late causative half CLOSED the same day by the causative detector, H1001:
+  the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
   absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence),
   compound-type tagging (OCH-58, OCH-60), the 1978↔2026 morphoclass-series crosswalk (OCH-21..
   OCH-23), and a root-shape parser over the Talmud catalog (OCH-16). Two dead ends are
@@ -809,11 +810,28 @@ entries:
     kind: statistic
     falsifiable_as: "is the guṇa-for-vṛddhi causative deviation more common in the earlier language"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "the class itself is systemic (gamayati, janayati — Whitney §1042's unlengthened set matches); the DIACHRONIC half ('в раннем языке больше') needs period-tagged corpus data this pipeline does not yet carry"
-    ref: "Whitney §1042; period-tagging gap — same blocker as OCH-63 (§207)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the causative detector built 16-07-2026 (causative_grade_detector.py,
+      H1001): DCS lemmatizes causatives as their own -ay lemmas, so grade pairs (gamay~gāmay,
+      smaray~smāray) are detected at lemma level, anchored on the root lemma existing in the
+      same DB (screens denominatives), and sliced by the H1000 period map. 150 anchored pairs,
+      57 fluctuating (both grades attested). The guṇa share FALLS exactly as §167 predicts —
+      all pairs: 45.8% (веды) → 20.9% (эпос) → 15.4% (классика); fluctuating pairs, where the
+      choice is actually visible: 81.3% → 25.9% → 20.8% — a fourfold collapse. Both directions
+      monotonic; the purāṇa control again sits at epic level (26.3%). Synchronic membership
+      confirmed en passant: gam/jan/tvar are guṇa-fixed (Whitney §1042's set), kṛ/mṛ/dhṛ
+      vṛddhi-fixed, exactly as the § describes
+    ref: "ZalizniakOcherk_1978/och47_causative_stats.json (per-root × period inventory + validation); causative_grade_detector.py"
     verdict_pedagogy: JUSTIFIED
-    note: "The synchronic membership is verified territory (Bühler HB-27 covers the same exception list); only the early-vs-late gradient is instrument-blocked."
+    note: >-
+      Closed by the two-instrument chain the register itself specified: H1000's period map
+      plus this pass's causative detector. The measured contrast is stark enough that the §'s
+      cautious parenthesis («в раннем языке таких отступлений больше») reads as understatement:
+      in the Vedic slice the 'deviation' was the MAJORITY option (81%) among fluctuating roots.
+      Detector caveat kept honest: -ay lemmas conflate causative and class-10/denominative
+      morphology; root-anchoring screens most denominatives, and grade CONTRAST within one
+      root is causative territory regardless.
 
   - id: OCH-48
     loc: "§167 / mdx line 2550"
@@ -950,11 +968,22 @@ entries:
     kind: statistic
     falsifiable_as: "are dvigu-type compounds a comparatively rare karmadhāraya subtype"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: DCS's export carries no compound-type tagging, so dvigu share among karmadhārayas is uncountable here; the parallel Bühler dvigu claims sit unverified in his backlog for the same reason"
-    ref: "cf. BuhlerLeitfaden_1923/claims_harvest.yml (Урок XXXIII dvigu candidates — same blocker)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the structural compound tagger built 16-07-2026 (compound_type_tagger.py,
+      H1004): over 623,119 nominal compound clusters (DCS mwt spans, upos-classed members),
+      dvigu candidates (NUM-first, eka excluded per the §'s own parenthesis: 1,875 eka-first
+      counted apart) number 16,406 = 15.3% of the determinative-shaped pool (ADJ+NUM first,
+      107,044) — 1:5.4 against plain adjective-first — and just 2.6% of all nominal clusters.
+      Top dvigu numerals: tri 2,595 · dvi 1,476 · saptan 1,445 · pañcan 1,394 · catur 1,259.
+      «Сравнительно редко» holds as a clear minority subtype
+    ref: "ZalizniakOcherk_1978/och58_compound_stats.json; compound_type_tagger.py; the parallel Bühler Урок-XXXIII dvigu candidates (claims_harvest.yml) are UNBLOCKED by the same instrument for a future drain"
     verdict_pedagogy: JUSTIFIED
-    note: "A compound-type-tagged dataset (or the kosha segmenter's compound analyses) would unlock this whole compound-statistics cluster at once."
+    note: >-
+      The tagger is function-blind by design (bahuvrīhis of the same ADJ/NUM-first shape sit
+      inside the pool — the very limitation OCH-60 documents), but the contamination applies
+      to both shapes alike, so the comparative claim survives it. The §'s eka-exclusion is
+      honored structurally: eka-first clusters counted separately, not as dvigu.
 
   - id: OCH-59
     loc: "§193 / mdx line 2724"
@@ -977,8 +1006,8 @@ entries:
     falsifiable_as: "is tatpuruṣa/bahuvrīhi homonymy rarer in usage than structurally possible"
     sources: [dcs]
     verdict_fact: UNTESTABLE
-    number: "no instrument: requires per-token compound-function disambiguation (accent would decide in Vedic; classical text carries none); no such tagging exists in the pipeline's assets"
-    ref: "cf. Whitney §1293ff (the accentual distinction that classical orthography loses)"
+    number: "no instrument, now PROBED rather than presumed (16-07-2026, H1004): DCS tags compound members LEXICALLY — mahābāhu, a textbook bahuvrīhi, carries last-member upos NOUN in 192/193 clusters — so tatpuruṣa/bahuvrīhi FUNCTION is not recoverable from this snapshot at all; per-token function disambiguation (or Vedic accent, which classical orthography loses) remains the missing instrument"
+    ref: "cf. Whitney §1293ff (the accentual distinction that classical orthography loses); probe recorded in och58_compound_stats.json (och60_probe key)"
     verdict_pedagogy: JUSTIFIED
     note: "An expectation-vs-usage claim that is exactly right in kind but needs a disambiguated compound corpus to measure."
 
@@ -1022,20 +1051,29 @@ entries:
     kind: typology
     falsifiable_as: "does period-tagged corpus data show the style-I → style-II diachronic shift (compounds/nominal/passive rising)"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
+    verdict_fact: TRUE
     number: >-
-      the FLAGSHIP open target of this register: needs period-tagged corpus slices (Vedic /
-      early post-Vedic / late classical) with per-period compound density, finite-verb share
-      and passive share. The current VisualDCS export carries no period field; the Sangram
-      pilot's pinned DCS SQLite snapshot (H953) does carry per-text metadata — the natural
-      next instrument. Everything synchronic about the claim's style-II pole is already
-      corpus-visible (OCH-62's numbers)
-    ref: "period-tagging gap; cf. sangram a-stems pilot (H953) for the snapshot with text metadata"
+      MEASURED with the period-tagging instrument built 16-07-2026 (period_style_gradient.py,
+      H1000: curated 41-text period map over the pinned DCS SQLite, 4.07M tokens = 71.6% of the
+      corpus). ALL FIVE style metrics rise monotonically vedic → epic → classical exactly as
+      §207 predicts: compound membership 12.2% → 40.5% → 57.3% of nominal tokens (near-5×),
+      mean compound length 2.06 → 2.32 → 2.58 members, nominal token share 43.3% → 52.7% →
+      56.4%, noun/verb ratio 2.13 → 2.89 → 3.28, finite-passive share 2.7% → 5.8% → 7.5%
+      (this last conditional on DCS's sparse verbal annotation; the other four are
+      annotation-robust upos/segmentation metrics). Internal control: the purāṇas, bucketed
+      separately because their verse imitates epic style, land BETWEEN epic and classical on
+      the compound axis (48.1%) — the map measures language, not genre labels
+    ref: "ZalizniakOcherk_1978/och63_period_style_stats.json (per-text table + validation); period_style_gradient.py (period map with dating basis per text)"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      Comparable in potential scale to the programme's two headline findings — a measured
-      style-I/style-II gradient would be a paper-grade result (A60-adjacent). Left honestly
-      open; the instrument, not the claim, is what's missing.
+      The register's FLAGSHIP open item, CLOSED as the programme's third headline finding:
+      the style-I → style-II shift is not just real, it is the strongest gradient this
+      programme has measured (the compound axis nearly quintuples). Honesty boundaries kept:
+      Buddhist-hybrid texts and lexica excluded as register-confounded; feats-based metrics
+      (finite-verb rate, ta-participle rate) EXCLUDED from the verdict because DCS verbal
+      annotation density collapses for later texts (measured: tagged ta-participles RV 1,874 →
+      Daśakumāracarita 0) — the verdict rests only on annotation-robust axes. A60-adjacent
+      paper material.
 
   - id: OCH-64
     loc: "§212 / mdx line 2840"

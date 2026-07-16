@@ -1,0 +1,75 @@
+{
+  "instrument": "compound_type_tagger.py over dcs_full.sqlite (dcs-conllu 04e0778); structural first-member classification of mwt nominal clusters; function-blind by design (OCH-60's blocker, probed and documented)",
+  "och60_probe": "DCS tags compound members lexically: mahābāhu last-member NOUN in 192/193 clusters — tatpuruṣa/bahuvrīhi FUNCTION is not recoverable from this snapshot; OCH-60 stays honestly UNTESTABLE",
+  "stats": {
+    "clusters_nominal_total": 623119,
+    "by_first_member": {
+      "dvigu_candidate": 16406,
+      "eka_first": 1875,
+      "adj_first": 88763,
+      "noun_first": 326021,
+      "other_first": 190054
+    },
+    "determinative_candidate_pool (ADJ+NUM first)": 107044,
+    "dvigu_share_of_determinative_pool_pct": 15.33,
+    "dvigu_share_of_all_nominal_clusters_pct": 2.63,
+    "adj_first_share_of_determinative_pool_pct": 82.92,
+    "dvigu_top_numerals": {
+      "tri": 2595,
+      "dvi": 1476,
+      "saptan": 1445,
+      "pañcan": 1394,
+      "catur": 1259,
+      "daśan": 1181,
+      "dvādaśan": 1099,
+      "śata": 1069,
+      "ṣaṣ": 984,
+      "sahasra": 830,
+      "aṣṭan": 469,
+      "navan": 390
+    },
+    "examples": {
+      "noun_first": [
+        "prajñā + amala",
+        "upaśānti + abhyupāya",
+        "mārga + satya",
+        "pratisaṃkhyā + nirodha",
+        "nirodha + apratisaṃkhyā"
+      ],
+      "other_first": [
+        "sa + anucara + abhidharma",
+        "tad + prāpti",
+        "ca + āśraya",
+        "idam + iti + abhidharmakośa",
+        "sa + āsrava + anāsrava"
+      ],
+      "dvigu_candidate": [
+        "pañcan + indriya + artha",
+        "pañcan + a + vijñapti",
+        "daśan + āyatana + dhātu",
+        "pañcan + adhyātma",
+        "tri + dhānya"
+      ],
+      "adj_first": [
+        "śubha + aśubha",
+        "khara + sneha + uṣṇa + tā + īraṇa",
+        "ṣaṣṭha + āśraya + prasiddhi + artha",
+        "bahu + dharma + agra + saṃgraha",
+        "sva + lakṣaṇa"
+      ],
+      "eka_first": [
+        "eka + āyatana",
+        "eka + uttara",
+        "eka + indriya",
+        "eka + brahman + vrata + ācāra",
+        "eka + pratyaya + saṃtati"
+      ]
+    }
+  },
+  "validation": {
+    "dvigu_candidates_nonzero": true,
+    "adj_first_dominates_num_first": true,
+    "eka_excluded_separately": true,
+    "classic_numerals_present": true
+  }
+}
