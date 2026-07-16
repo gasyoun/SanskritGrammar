@@ -26,25 +26,29 @@
 # verdict_pedagogy: JUSTIFIED | MISLEADING | RARE-AS-CENTRAL | FREQUENCY-HIDDEN | ORDER-QUESTIONABLE
 # kind:             typology | universality | allomorphy | statistic | rule | government
 #
-# COVERAGE (seed 16-07-2026, H1055 + treebank drain H1059, Opus 4.8 `claude-opus-4-8[1m]`):
-# APT-1..APT-24 verified. Seed APT-1..8 (Whitney/reuse-graded); drain APT-9..24 measured by
-# apte_treebank_stats.py over the DCS head/deprel/feat_case slice (223,751 tokens / 29,433 fully
-# dependency-tagged sentences, same slice as ZalizniakOcherk_1978/treebank_syntax_stats.py).
-# Fact tally: 16 TRUE · 6 OVERSTATED · 0 FALSE · 2 UNTESTABLE. claims_harvest.yml holds the
-# 79-candidate backlog; 24 promoted (8 seed + 16 drain), the rest still PENDING (mostly the
-# lexeme-specific government rules whose case-tagged arguments are too thin in the Vedic-skewed
-# slice, and lessons 26–30 not yet harvested — one reader hit a session limit, logged as a gap).
+# COVERAGE (seed H1055 + treebank drain H1059 + Classical-corpus government instrument H1062,
+# 16-07-2026, Opus 4.8 `claude-opus-4-8[1m]`): APT-1..APT-24 verified. Seed APT-1..8 (Whitney/
+# reuse-graded); particle-position & agreement APT-9..19,23,24 measured by apte_treebank_stats.py
+# over the DCS head/deprel slice; case-government APT-20..22 (and corroboration of APT-16..19)
+# measured by apte_classical_government_stats.py — a windowed-cooccurrence + baseline-lift proxy
+# over the FULL 5.69M-token corpus (feat_case on 70.6%), method-validated by positive controls
+# (bhī/jugups reproduce) and a negative control (dṛś shows no spurious government).
+# Fact tally: 17 TRUE · 7 OVERSTATED · 0 FALSE · 0 UNTESTABLE — the Classical instrument closed
+# both former UNTESTABLE rows. claims_harvest.yml holds the 79-candidate backlog; 24 promoted,
+# the rest PENDING (lessons 26–30 not yet harvested — one reader hit a session limit).
 #
-# DRAIN FINDING (the honest split): the treebank drains the PARTICLE-POSITION and AGREEMENT
-# claims robustly (n = hundreds–thousands) — all confirmed except uta (APT-12, sentence-initial
-# 23.66% → OVERSTATED, the first corpus flag). The CASE-GOVERNMENT claims split three ways:
-# confirmed where the case is old and frequent (fear/disgust → ablative, APT-16/17); OVERSTATED
-# where the corpus shows a competing case ahead of the taught one (throw → locative but
-# accusative dominates, APT-18; rule/remember → genitive but accusative leads, APT-19; ruc →
-# dative but the Vedic slice under-represents it, APT-20); and UNTESTABLE where the Classical
-# emotion verbs contribute <10 or zero dependency-tagged arguments (anger/love, APT-21/22). The
-# programme's central finding holds: Apte's factual accuracy is high, his misses are calibration
-# (an implicit position-analogy for uta; teaching the minority government case as THE rule).
+# FINDING (the two-instrument story): the treebank drains PARTICLE-POSITION and AGREEMENT claims
+# robustly — all confirmed except uta (APT-12, 23.66% sentence-initial → OVERSTATED, the first
+# corpus flag). For CASE GOVERNMENT the Vedic-skewed 3.9% treebank slice was too thin, so the
+# Classical-corpus lift proxy took over and split the claims by CORPUS FREQUENCY, not by the
+# grammarians' rule: CONFIRMED where the case is genuinely enriched (ruc → dative 3.06x, APT-20,
+# a verdict CORRECTED from the treebank's Vedic-skew OVERSTATED; fear/disgust → ablative
+# 5.52x/3.96x, APT-16/17); OVERSTATED where the taught case is NOT enriched above baseline
+# (anger → dative 0.91x, APT-21 — the Pāṇinian dative-of-anger is prescriptive, not corpus-
+# frequent; love → locative only 1.08x, APT-22; throw → locative and rule → genitive, APT-18/19,
+# where a competing case leads at n=12k/7k). The programme's central finding holds: Apte's
+# factual accuracy is high; his misses are calibration — an implicit position-analogy (uta), and
+# teaching a prescriptive or minority government case as though it were the corpus norm.
 
 work: "Apte, The Student's Guide to Sanskrit Composition (1885), Russian tr. N. P. Likhushina v3.0 (2021)"
 
@@ -334,7 +338,7 @@ entries:
     number: "dependent-case tally of jugups/viram/pramad: Abl 10, Loc 2, Acc 2, Dat 1 — ablative is the plurality among 15 case-tagged obliques (apte_treebank_stats.py C_case_government)"
     ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-110 (Урок 8)"
     verdict_pedagogy: JUSTIFIED
-    note: "Ablative-of-separation confirmed as the leading government, above the thin-flag threshold (n=15)."
+    note: "Ablative-of-separation confirmed as the leading government, above the thin-flag threshold (n=15). Corroborated by the Classical-corpus proxy (H1062): ablative enriched 3.96x baseline near jugups/viram/pramad (n=725)."
 
   - id: APT-17
     loc: "Урок 8 / mdx ~line 2070"
@@ -346,7 +350,7 @@ entries:
     number: "bhī dependent-case tally: Abl 20, Acc 4, Ins 1, Gen 1, Voc 1 — ablative 77% of 26 case-tagged obliques (apte_treebank_stats.py)"
     ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-111 (Урок 8)"
     verdict_pedagogy: JUSTIFIED
-    note: "The ablative-of-fear is old and well attested even in the Vedic-skewed slice; cleanly confirmed."
+    note: "The ablative-of-fear is old and well attested even in the Vedic-skewed slice; cleanly confirmed. Classical-corpus proxy (H1062): ablative enriched 5.52x baseline near bhī (n=2,069) — the strongest government signal measured, and the instrument's positive control."
 
   - id: APT-18
     loc: "Урок 9 / mdx ~line 2412"
@@ -363,7 +367,7 @@ entries:
       minority in the corpus, swamped by muc's dominant sense 'release/free' (accusative object)
       and the ablative-of-source. Teaching the locative as THE government for these verbs hides the
       construction the learner will actually meet — a frequency miss, hence MISLEADING. (Polysemy
-      caveat: muc conflates 'throw at' and 'release'.)
+      caveat: muc conflates 'throw at' and 'release'.) Corroborated by the Classical-corpus proxy at scale (H1062): locative only 1.22x baseline near kṣip/muc (n=12,479), ablative leads — the accusative/ablative dominance is not a small-sample artifact.
 
   - id: APT-19
     loc: "Урок 10 / mdx ~line 2702"
@@ -379,7 +383,7 @@ entries:
       Both cases are genuinely attested — smṛ 'remember' governs genitive OR accusative (Whitney
       §297c) — but the corpus puts the accusative ahead of the genitive, so «управляют родительным
       падежом» presented as THE rule overreaches. The honest statement is 'genitive or accusative,
-      accusative if anything commoner'.
+      accusative if anything commoner'. Corroborated by the Classical-corpus proxy (H1062): genitive weakly enriched (~1.5x) near īś/prabhū/smṛ/adhī but not the leading oblique (n=7,009).
 
   - id: APT-20
     loc: "Урок 7 / mdx ~line 1712"
@@ -387,16 +391,17 @@ entries:
     kind: government
     falsifiable_as: "does ruc 'please' take the dative of the pleased person"
     sources: [dcs]
-    verdict_fact: OVERSTATED
-    number: "ruc dependent-case tally (tagged slice): Loc 5, Ins 4, Gen 2, Acc 2, Dat 1, Abl 1 — the predicted dative is 1 of 15 obliques; the tagged slice is Vedic-skewed, where ruc's dative-of-experiencer government is under-represented"
-    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-105 (Урок 7)"
+    verdict_fact: TRUE
+    number: "Classical-corpus proxy (apte_classical_government_stats.py, H1062): dative is enriched 3.06x over its 3.9% baseline near ruc and is the top-lift oblique (n=786 windowed obliques). The treebank's earlier OVERSTATED (Dat 1/15) was a Vedic-skew artifact — corrected here."
+    ref: "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-105 (Урок 7); cf. Whitney §287c"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      A period/genre caveat, not a clean refutation: the dative-of-the-pleased is a Classical
-      construction (Whitney §287c), and the treebank slice is Vedic/early-prose-heavy, so the
-      single dative among 15 obliques reflects corpus composition as much as Apte. Graded
-      OVERSTATED-in-corpus rather than FALSE; the teaching is classically defensible — hence
-      pedagogy JUSTIFIED. Needs a Classical-corpus treebank to verdict cleanly (instrument gap).
+      VERDICT CORRECTED OVERSTATED→TRUE by the Classical-corpus instrument. The treebank drain
+      graded this OVERSTATED-in-corpus with an explicit Vedic-skew caveat (Dat 1 of 15 obliques in
+      the 3.9% dependency slice); the full-corpus lift proxy — validated by a negative control
+      (dṛś dative lift 0.23) and positive controls (bhī/jugups reproduce ablative) — shows the
+      dative-of-the-pleased enriched 3.06x and leading, exactly as Whitney §287c and Apte state.
+      The caveat was right: escaping the Vedic slice vindicates the rule.
 
   - id: APT-21
     loc: "Урок 7 / mdx ~line 1712"
@@ -404,15 +409,19 @@ entries:
     kind: government
     falsifiable_as: "do anger verbs (krudh/druh/īrṣy/asūy) take the dative of the object of anger"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "only 8 case-tagged obliques across all four lemmas in the tagged slice (Dat 4, Voc 2, Acc 2, Loc 1) — below the n>=10 verdict threshold; the dative DOES lead, so the direction is suggestive but not verdicted"
-    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-106 (Урок 7)"
-    verdict_pedagogy: JUSTIFIED
+    verdict_fact: OVERSTATED
+    number: "Classical-corpus proxy (apte_classical_government_stats.py, H1062): dative is NOT enriched near the anger verbs — lift 0.91x baseline (below 1), and the accusative is the top-lift oblique (n=2,798 windowed obliques). Now testable where the treebank was thin (n=8)."
+    ref: "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-106 (Урок 7); cf. Pāṇini 1.4.37, Whitney §262"
+    verdict_pedagogy: MISLEADING
     note: >-
-      Instrument ran, sample too thin to verdict — the honest UNTESTABLE. The dative leads (4 of 8),
-      so the classical rule (dative-of-anger, Whitney §262) is corroborated in direction. Closing
-      instrument: a Classical-corpus treebank or a surface-cooccurrence proxy over krudh + dative
-      nominals.
+      RESOLVED from UNTESTABLE by the Classical-corpus instrument, and it goes the other way from
+      the thin treebank hint. The dative-of-anger is a famous PRESCRIPTIVE rule (Pāṇini 1.4.37,
+      krudh-druh-īrṣy-asūy → dative), but as a CORPUS-FREQUENCY fact it does not hold: across 2,798
+      windowed obliques near these verbs the dative sits at baseline (0.91x), swamped by the
+      accusative and the genitive/locative of the person one is angry at. A genuine
+      prescriptive-vs-descriptive gap — Apte teaches the grammarians' rule, the corpus prefers
+      other cases — hence MISLEADING on the frequency axis (the rule is not 'wrong', but the
+      learner will meet the dative-of-anger far less than the absolute phrasing implies).
 
   - id: APT-22
     loc: "Урок 9 / mdx ~line 2412"
@@ -420,14 +429,17 @@ entries:
     kind: government
     falsifiable_as: "do love verbs (snih/abhilaṣ/anurañj) take the locative of the object of feeling"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "0 case-tagged NOUN/PRON dependents across all three lemmas in the tagged slice — no signal at all (apte_treebank_stats.py)"
-    ref: "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-112 (Урок 9)"
+    verdict_fact: OVERSTATED
+    number: "Classical-corpus proxy (apte_classical_government_stats.py, H1062): the locative is the top-lift oblique near the love verbs but only weakly enriched — lift 1.08x baseline (n=662 windowed obliques), below the 1.5x support threshold. Now testable where the treebank had zero tagged arguments."
+    ref: "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-112 (Урок 9); cf. Whitney §303b"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The extreme case of the government-drain gap: these Classical emotion verbs contribute zero
-      dependency-tagged arguments to the Vedic-skewed slice. Locative-of-feeling is standard
-      (Whitney §303b), but this instrument cannot see it. Same closing instrument as APT-21.
+      RESOLVED from UNTESTABLE by the Classical-corpus instrument. The locative-of-feeling IS the
+      leading enriched oblique for snih/abhilaṣ/anurañj, consistent with Whitney §303b and Apte —
+      but the enrichment is weak (1.08x), because these verbs' locative competes with the ordinary
+      locative-of-place and because the object of affection is often expressed by a genitive or a
+      prepositional phrase. Graded OVERSTATED (direction right, strength overstated); the teaching
+      target (locative) is defensible, hence pedagogy JUSTIFIED.
 
   - id: APT-23
     loc: "Урок 3 / mdx <line 960"

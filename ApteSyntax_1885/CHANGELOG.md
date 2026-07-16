@@ -9,6 +9,26 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-07-16
+### Added
+- **Classical-corpus government instrument (H1062, Opus 4.8 `claude-opus-4-8[1m]`).** New
+  self-tested [`apte_classical_government_stats.py`](apte_classical_government_stats.py) closes
+  the case-government gap the treebank drain left open: a windowed-cooccurrence + baseline-lift
+  proxy over the FULL 5.69M-token corpus (`feat_case` on 70.6%, escaping the Vedic-skewed 3.9%
+  dependency slice), method-validated by positive controls (bhī/jugups reproduce their ablative)
+  and a negative control (dṛś shows no spurious government, dative lift 0.23). Output in
+  [`apte_classical_government_stats.json`](apte_classical_government_stats.json).
+### Changed
+- **Both former UNTESTABLE government rows resolved; one verdict corrected.** Register stays 24
+  verified but the tally moves to **17 TRUE · 7 OVERSTATED · 0 UNTESTABLE**:
+  - **APT-20 (ruc → dative) corrected OVERSTATED → TRUE** — dative enriched **3.06×** baseline
+    (n=786); the treebank's OVERSTATED was a Vedic-skew artifact, as its own caveat predicted.
+  - **APT-21 (anger verbs → dative) UNTESTABLE → OVERSTATED** — dative **not** enriched (0.91×,
+    n=2,798): the Pāṇinian dative-of-anger is prescriptive, not corpus-frequent.
+  - **APT-22 (love verbs → locative) UNTESTABLE → OVERSTATED** — locative leads but only 1.08×.
+  - APT-16/17 (fear/disgust → ablative, 5.52×/3.96×) and APT-18/19 (throw/rule, competing case
+    leads at n=12k/7k) corroborated at full-corpus scale.
+
 ## [0.3.0] - 2026-07-16
 ### Added
 - **Treebank drain of the claim backlog (H1059, Opus 4.8 `claude-opus-4-8[1m]`).** New

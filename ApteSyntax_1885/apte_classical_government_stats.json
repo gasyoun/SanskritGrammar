@@ -1,0 +1,369 @@
+{
+  "instrument": "apte_classical_government_stats.py — windowed cooccurrence + baseline lift over the FULL DCS corpus (feat_case on 70.6% of 5.69M tokens); a collexeme proxy for case government, NOT dependency government",
+  "window": 5,
+  "baseline_oblique_shares_pct": {
+    "Acc": 44.4,
+    "Ins": 16.6,
+    "Gen": 16.2,
+    "Loc": 14.5,
+    "Abl": 4.5,
+    "Dat": 3.9
+  },
+  "baseline_oblique_n": 1673402,
+  "controls": {
+    "ctrl_bhī_abl": {
+      "n_windowed_obliques": 2069,
+      "case_tally": {
+        "Acc": 794,
+        "Abl": 509,
+        "Gen": 327,
+        "Ins": 199,
+        "Loc": 180,
+        "Dat": 60
+      },
+      "local_share_pct": {
+        "Acc": 38.4,
+        "Ins": 9.6,
+        "Gen": 15.8,
+        "Loc": 8.7,
+        "Abl": 24.6,
+        "Dat": 2.9
+      },
+      "lift_over_baseline": {
+        "Acc": 0.87,
+        "Ins": 0.58,
+        "Gen": 0.98,
+        "Loc": 0.6,
+        "Abl": 5.52,
+        "Dat": 0.74
+      },
+      "predicted_case": "Abl",
+      "predicted_lift": 5.52,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "TRUE",
+      "reason": "predicted Abl enriched 5.52x baseline, top-lift oblique"
+    },
+    "ctrl_jugups_abl": {
+      "n_windowed_obliques": 123,
+      "case_tally": {
+        "Acc": 64,
+        "Abl": 19,
+        "Gen": 15,
+        "Ins": 15,
+        "Loc": 9,
+        "Dat": 1
+      },
+      "local_share_pct": {
+        "Acc": 52.0,
+        "Ins": 12.2,
+        "Gen": 12.2,
+        "Loc": 7.3,
+        "Abl": 15.4,
+        "Dat": 0.8
+      },
+      "lift_over_baseline": {
+        "Acc": 1.17,
+        "Ins": 0.74,
+        "Gen": 0.75,
+        "Loc": 0.5,
+        "Abl": 3.47,
+        "Dat": 0.21
+      },
+      "predicted_case": "Abl",
+      "predicted_lift": 3.47,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "TRUE",
+      "reason": "predicted Abl enriched 3.47x baseline, top-lift oblique"
+    },
+    "neg_dṛś": {
+      "desc": "plain transitive — expect NO dat/abl/gen enrichment (lift ~1)",
+      "lift_over_baseline": {
+        "Acc": 1.3,
+        "Ins": 0.82,
+        "Gen": 0.8,
+        "Loc": 0.81,
+        "Abl": 0.7,
+        "Dat": 0.23
+      },
+      "top_case_by_lift": "Acc",
+      "n_windowed_obliques": 25589
+    }
+  },
+  "claims": {
+    "APT-H-105": {
+      "n_windowed_obliques": 786,
+      "case_tally": {
+        "Gen": 275,
+        "Acc": 163,
+        "Ins": 117,
+        "Loc": 112,
+        "Dat": 94,
+        "Abl": 25
+      },
+      "local_share_pct": {
+        "Acc": 20.7,
+        "Ins": 14.9,
+        "Gen": 35.0,
+        "Loc": 14.2,
+        "Abl": 3.2,
+        "Dat": 12.0
+      },
+      "lift_over_baseline": {
+        "Acc": 0.47,
+        "Ins": 0.9,
+        "Gen": 2.16,
+        "Loc": 0.98,
+        "Abl": 0.71,
+        "Dat": 3.06
+      },
+      "predicted_case": "Dat",
+      "predicted_lift": 3.06,
+      "top_case_by_count": "Gen",
+      "top_case_by_lift": "Dat",
+      "verdict": "TRUE",
+      "reason": "predicted Dat enriched 3.06x baseline, top-lift oblique",
+      "lemmas": [
+        "ruc"
+      ],
+      "desc": "ruc 'please' -> dative of the pleased (Whitney §287c)"
+    },
+    "APT-H-106": {
+      "n_windowed_obliques": 2798,
+      "case_tally": {
+        "Acc": 1329,
+        "Gen": 431,
+        "Loc": 428,
+        "Ins": 411,
+        "Dat": 100,
+        "Abl": 99
+      },
+      "local_share_pct": {
+        "Acc": 47.5,
+        "Ins": 14.7,
+        "Gen": 15.4,
+        "Loc": 15.3,
+        "Abl": 3.5,
+        "Dat": 3.6
+      },
+      "lift_over_baseline": {
+        "Acc": 1.07,
+        "Ins": 0.89,
+        "Gen": 0.95,
+        "Loc": 1.05,
+        "Abl": 0.79,
+        "Dat": 0.91
+      },
+      "predicted_case": "Dat",
+      "predicted_lift": 0.91,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Acc",
+      "verdict": "OVERSTATED",
+      "reason": "predicted Dat lift 0.91x — not enriched; top-lift oblique is Acc",
+      "lemmas": [
+        "krudh",
+        "druh",
+        "īrṣy",
+        "asūy"
+      ],
+      "desc": "anger verbs -> dative of the object of anger (Whitney §262)"
+    },
+    "APT-H-112": {
+      "n_windowed_obliques": 662,
+      "case_tally": {
+        "Acc": 309,
+        "Ins": 109,
+        "Loc": 104,
+        "Gen": 101,
+        "Abl": 21,
+        "Dat": 18
+      },
+      "local_share_pct": {
+        "Acc": 46.7,
+        "Ins": 16.5,
+        "Gen": 15.3,
+        "Loc": 15.7,
+        "Abl": 3.2,
+        "Dat": 2.7
+      },
+      "lift_over_baseline": {
+        "Acc": 1.05,
+        "Ins": 0.99,
+        "Gen": 0.94,
+        "Loc": 1.08,
+        "Abl": 0.71,
+        "Dat": 0.7
+      },
+      "predicted_case": "Loc",
+      "predicted_lift": 1.08,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Loc",
+      "verdict": "OVERSTATED",
+      "reason": "predicted Loc lift 1.08x — not enriched; top-lift oblique is Loc",
+      "lemmas": [
+        "snih",
+        "abhilaṣ",
+        "anurañj"
+      ],
+      "desc": "love verbs -> locative of the object of feeling (Whitney §303b)"
+    },
+    "APT-H-113": {
+      "n_windowed_obliques": 12479,
+      "case_tally": {
+        "Acc": 5803,
+        "Loc": 2221,
+        "Ins": 1850,
+        "Abl": 1394,
+        "Gen": 990,
+        "Dat": 221
+      },
+      "local_share_pct": {
+        "Acc": 46.5,
+        "Ins": 14.8,
+        "Gen": 7.9,
+        "Loc": 17.8,
+        "Abl": 11.2,
+        "Dat": 1.8
+      },
+      "lift_over_baseline": {
+        "Acc": 1.05,
+        "Ins": 0.9,
+        "Gen": 0.49,
+        "Loc": 1.22,
+        "Abl": 2.51,
+        "Dat": 0.45
+      },
+      "predicted_case": "Loc",
+      "predicted_lift": 1.22,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "OVERSTATED",
+      "reason": "predicted Loc lift 1.22x — not enriched; top-lift oblique is Abl",
+      "lemmas": [
+        "kṣip",
+        "muc"
+      ],
+      "desc": "throw verbs -> locative of the target"
+    },
+    "APT-H-115": {
+      "n_windowed_obliques": 7009,
+      "case_tally": {
+        "Acc": 2798,
+        "Gen": 1700,
+        "Loc": 1033,
+        "Ins": 818,
+        "Abl": 518,
+        "Dat": 142
+      },
+      "local_share_pct": {
+        "Acc": 39.9,
+        "Ins": 11.7,
+        "Gen": 24.3,
+        "Loc": 14.7,
+        "Abl": 7.4,
+        "Dat": 2.0
+      },
+      "lift_over_baseline": {
+        "Acc": 0.9,
+        "Ins": 0.7,
+        "Gen": 1.5,
+        "Loc": 1.01,
+        "Abl": 1.66,
+        "Dat": 0.52
+      },
+      "predicted_case": "Gen",
+      "predicted_lift": 1.5,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "OVERSTATED",
+      "reason": "predicted Gen lift 1.50x — not enriched; top-lift oblique is Abl",
+      "lemmas": [
+        "īś",
+        "prabhū",
+        "smṛ",
+        "adhī"
+      ],
+      "desc": "rule/remember verbs -> genitive of the object (Whitney §297c)"
+    },
+    "APT-H-110": {
+      "n_windowed_obliques": 725,
+      "case_tally": {
+        "Acc": 285,
+        "Abl": 128,
+        "Loc": 124,
+        "Ins": 92,
+        "Gen": 90,
+        "Dat": 6
+      },
+      "local_share_pct": {
+        "Acc": 39.3,
+        "Ins": 12.7,
+        "Gen": 12.4,
+        "Loc": 17.1,
+        "Abl": 17.7,
+        "Dat": 0.8
+      },
+      "lift_over_baseline": {
+        "Acc": 0.89,
+        "Ins": 0.77,
+        "Gen": 0.77,
+        "Loc": 1.18,
+        "Abl": 3.96,
+        "Dat": 0.21
+      },
+      "predicted_case": "Abl",
+      "predicted_lift": 3.96,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "TRUE",
+      "reason": "predicted Abl enriched 3.96x baseline, top-lift oblique",
+      "lemmas": [
+        "jugups",
+        "viram",
+        "pramad"
+      ],
+      "desc": "disgust/cessation -> ablative"
+    },
+    "APT-H-111": {
+      "n_windowed_obliques": 2069,
+      "case_tally": {
+        "Acc": 794,
+        "Abl": 509,
+        "Gen": 327,
+        "Ins": 199,
+        "Loc": 180,
+        "Dat": 60
+      },
+      "local_share_pct": {
+        "Acc": 38.4,
+        "Ins": 9.6,
+        "Gen": 15.8,
+        "Loc": 8.7,
+        "Abl": 24.6,
+        "Dat": 2.9
+      },
+      "lift_over_baseline": {
+        "Acc": 0.87,
+        "Ins": 0.58,
+        "Gen": 0.98,
+        "Loc": 0.6,
+        "Abl": 5.52,
+        "Dat": 0.74
+      },
+      "predicted_case": "Abl",
+      "predicted_lift": 5.52,
+      "top_case_by_count": "Acc",
+      "top_case_by_lift": "Abl",
+      "verdict": "TRUE",
+      "reason": "predicted Abl enriched 5.52x baseline, top-lift oblique",
+      "lemmas": [
+        "bhī"
+      ],
+      "desc": "fear -> ablative of the source (Whitney §291)"
+    }
+  },
+  "self_test": {
+    "passed": true
+  }
+}

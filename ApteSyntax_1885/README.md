@@ -45,9 +45,10 @@ v3.0, 2021) *Руководства по санскритской компози
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-24: **16 TRUE · 6 OVERSTATED · 2 UNTESTABLE**), источник правды;
-- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (22 продвинуты; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
-- [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [apte_treebank_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, управление падежами и падеж цели по зависимостному слою DCS;
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-24: **17 TRUE · 7 OVERSTATED · 0 UNTESTABLE**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **79 кандидатов** (24 продвинуты; занятия 26–30 — пробел покрытия, один читатель упёрся в лимит сессии);
+- [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [apte_treebank_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, падеж цели по зависимостному слою DCS;
+- [apte_classical_government_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) → [apte_classical_government_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json) — инструмент управления падежами (H1062): оконная совстречаемость + подъём над базовой линией по ВСЕМУ корпусу (feat_case на 70,6% из 5,69 млн токенов), с положительными и отрицательным контролями;
 - [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) + [claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.json) — генерируются из `claims.yml` скриптом [scripts/build_claims.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) (`npm run claims`), руками не править.
 
 **Дренаж backlog treebank-инструментом (H1059, 16-07-2026):** реестр 8 → 24. Позиционные и
@@ -59,6 +60,16 @@ v3.0, 2021) *Руководства по санскритской компози
 (в корпусе лидирует конкурирующий падеж); гнев/любовь → **UNTESTABLE** (<10 размеченных аргументов
 в ведийски-смещённом срезе). Падеж цели движения: винительный 85,91% против неаккузативного 14,09%
 (n=873) — число под флаг APT-5.
+
+**Инструмент управления падежами по классическому корпусу (H1062, 16-07-2026):** там, где
+ведийски-смещённый зависимостный срез был слишком тонок для лексемных правил управления,
+оконная совстречаемость с подъёмом над базовой линией по всему корпусу закрыла обе строки
+UNTESTABLE и **исправила один вердикт**: `ruc` → дательный **подтверждён** (подъём 3,06× над
+базовой линией 3,9%; на treebank стоял OVERSTATED из-за ведийского смещения — исправлено);
+глаголы гнева → дательный **OVERSTATED** (подъём 0,91×, не обогащён — панинийское правило
+дательного гнева предписательно, а не частотно); любовь → местный слабо (1,08×). Метод
+проверен контролями: `bhī`/`jugups` → аблатив воспроизводятся (5,52×/3,96×), отрицательный
+контроль `dṛś` «видеть» не даёт ложного управления (подъём дательного 0,23×).
 
 **Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
 грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,
