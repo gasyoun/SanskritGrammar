@@ -453,14 +453,28 @@ entries:
     kind: statistic
     falsifiable_as: "-vī feminines of u-adjectives are more frequent than u-form feminines"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no adjective-gender-pairing annotation in the DCS export: counting gurvī- vs guru-feminines needs lemma+gender+agreement joins the current relational dump does not carry"
-    ref: "cf. Whitney §344 (both formations acknowledged)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED (16-07-2026, u_stem_feminine_freq.py, H1044): the prior blocker ("needs
+      lemma+gender+agreement joins the relational dump does not carry") didn't hold up —
+      DCS lemmatizes guru/bahu to ONE lemma across all genders, so every feminine token
+      already carries feat_gender='Fem'; no join needed, just a surface-form split on
+      the SAME lemma's already-tagged feminine tokens (gurv-/bahv- glide-inflected vs
+      plain guru-/gurū-/bahu-/bahū-/bahav- u-stem shape). Testing Bühler's own two named
+      examples: **guru — 95 -vī tokens (gurvī, gurvīṃ, gurvīm, gurvyo...) vs 77 plain-u
+      tokens (guruḥ, gurur, gurū...) = 55.2% -vī** (a real but narrower majority);
+      **bahu — 150 -vī tokens (bahvīr, bahvīḥ, bahvyo, bahvyaḥ...) vs 20 plain-u tokens
+      (bahūḥ, bahavaḥ...) = 88.2% -vī** (a strong majority). Both confirm "более
+      употребительны" in the claimed direction
+    ref: >-
+      cf. Whitney §344 (both formations acknowledged); BuhlerLeitfaden_1923/u_stem_feminine_freq.py;
+      hb21_u_stem_feminine_freq.json
     verdict_pedagogy: JUSTIFIED
     note: >-
-      Directionally plausible (the -vī feminines are the textbook norm), but the comparative
-      'более употребительны' cannot be reproduced from the corpus assets at hand — marked
-      UNTESTABLE exactly as the Kochergina precedent HK-41/HK-42, not assumed.
+      The textbook norm holds up corpus-side for both of Bühler's own named examples,
+      though not by an identical margin — bahu's -vī preference (88.2%) is much sharper
+      than guru's (55.2%, barely a majority) — a genre/frequency nuance the flat
+      'более употребительны' phrasing doesn't distinguish, but doesn't contradict either.
 
   - id: HB-22
     loc: "Урок XIV / mdx line 1815"

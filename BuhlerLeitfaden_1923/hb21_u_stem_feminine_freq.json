@@ -1,0 +1,155 @@
+{
+  "instrument": "u_stem_feminine_freq.py over dcs_full.sqlite — surface-form split of already feat_gender=Fem-tagged tokens of the same lemma, no agreement join needed (the prior verdict's blocker didn't hold up)",
+  "lemmas": {
+    "guru": {
+      "vi_pattern_tokens": 95,
+      "vi_forms_top": [
+        [
+          "gurvī",
+          42
+        ],
+        [
+          "gurvīṃ",
+          30
+        ],
+        [
+          "gurvīm",
+          6
+        ],
+        [
+          "gurvyo",
+          4
+        ],
+        [
+          "gurvībhiḥ",
+          3
+        ],
+        [
+          "gurvīḥ",
+          2
+        ],
+        [
+          "gurvyaḥ",
+          2
+        ],
+        [
+          "gurvīś",
+          1
+        ]
+      ],
+      "plain_u_pattern_tokens": 77,
+      "plain_forms_top": [
+        [
+          "guruḥ",
+          60
+        ],
+        [
+          "gurur",
+          8
+        ],
+        [
+          "gurū",
+          2
+        ],
+        [
+          "guruś",
+          2
+        ],
+        [
+          "gurus",
+          2
+        ],
+        [
+          "gurūḥ",
+          1
+        ],
+        [
+          "gurum",
+          1
+        ],
+        [
+          "guravaḥ",
+          1
+        ]
+      ],
+      "other_unclassified_tokens": 0,
+      "total_feminine_tokens": 172,
+      "vi_share_pct": 55.2,
+      "confirmed": true
+    },
+    "bahu": {
+      "vi_pattern_tokens": 150,
+      "vi_forms_top": [
+        [
+          "bahvīr",
+          30
+        ],
+        [
+          "bahvīḥ",
+          29
+        ],
+        [
+          "bahvyo",
+          22
+        ],
+        [
+          "bahvyaḥ",
+          19
+        ],
+        [
+          "bahvī",
+          8
+        ],
+        [
+          "bahvībhir",
+          7
+        ],
+        [
+          "bahvībhiḥ",
+          6
+        ],
+        [
+          "bahvīṣu",
+          5
+        ]
+      ],
+      "plain_u_pattern_tokens": 20,
+      "plain_forms_top": [
+        [
+          "bahūḥ",
+          8
+        ],
+        [
+          "bahavaḥ",
+          6
+        ],
+        [
+          "bahubhiḥ",
+          2
+        ],
+        [
+          "bahūnām",
+          1
+        ],
+        [
+          "bahuṣu",
+          1
+        ],
+        [
+          "bahuḥ",
+          1
+        ],
+        [
+          "bahu",
+          1
+        ]
+      ],
+      "other_unclassified_tokens": 0,
+      "total_feminine_tokens": 170,
+      "vi_share_pct": 88.2,
+      "confirmed": true
+    }
+  },
+  "expected_by_hb21": "vi_pattern_tokens > plain_u_pattern_tokens for both lemmas",
+  "confirmed": true
+}
