@@ -9,6 +9,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **Гл. 4 «Кросс-уок и омонимия корней» — одобрена автором 16-07-2026.** Виза дана на
+  канонический текст ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md)
+  fixed a self-inconsistency: §4.1 replaced `roots.csv`-proxy 497/930 with the canonical
+  `MWS/root_crosswalk` 550/935 = 58,8 %, matching the book-wide 590/935 DCS figure) — черновик-баннер
+  и сноска `[^ed4draft]` сняты/обновлены; `BOOK_PLAN.md` Часть II Гл. 4 закрыта.
+  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ### Added
 - **Приложение 7 — печатный лист свёрстан (третий проход)**: `APPENDIX7_PRINT_SHEET.html`
   ([`revision-2026/mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py)),
