@@ -1041,10 +1041,10 @@
       "claim_ru": "От большинства мужских одушевлённых имён женский род образуется изменением -a на -ī.",
       "kind": "statistic",
       "verdict_fact": "UNTESTABLE",
-      "number": "the '-a → -ī for most animate masculines' share is not reproducible: the feminine of an a-stem is formed in -ā or -ī by suffixal/lexical conditioning, and 'большинство ... -ī' has no stated or computable count base (the DCS lemma inventory is not tagged for masc→fem derivation pairs)",
-      "ref": "Whitney §1223ff (feminine derivation -ā vs -ī); no reproducible count base",
+      "number": "SIZED, not \"no instrument\" (16-07-2026, masc_animate_feminine_pattern.py, H1056): the animacy blocker itself is now resolved (animacy_lookup.py, same pass) — 2,008 animate masc a-stem NOUN lemmas identified. But the feminine-form check hit a MAJOR CONFOUND, found and partially corrected, not hidden: a naive surface-form split (940 feminine-tagged tokens of these lemmas) showed -ā dominating overwhelmingly (157 lemmas vs 3) — inspecting the raw sentences showed this was almost entirely BAHUVRĪHI COMPOUND-FINAL AGREEMENT (e.g. 'putrā', 140 tokens, mostly the tail of compounds like diti-vinaṣṭa-putrā '[Diti] whose sons were destroyed' — a bahuvrīhi adjective agreeing with a feminine head by simple -a→-ā lengthening, NOT the substantive noun-pair derivation the claim means). Excluded via the `mwt` compound-span table: 940 -> 67 standalone tokens, 22 lemmas. Even after filtering, -ā STILL dominates (19 lemmas vs 3) on this thin residual. Recorded as INCONCLUSIVE: n=22 is thin, and further confounds (external sandhi-compounding the mwt table doesn't capture; competing lexical alternatives like duhitṛ 'daughter') were not ruled out given the effort already spent isolating the first confound. Whether the claim is genuinely overstated or a cleaner instrument would still confirm it stays open",
+      "ref": "Whitney §1223ff (feminine derivation -ā vs -ī); KocherginaUchebnik_1998/masc_animate_feminine_pattern.py; hk86_masc_animate_feminine_stats.json; animacy_lookup.py (H1056)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "A proportion claim whose base cannot be reconstructed. Directionally the -ī feminine is very common for animates, but the '-ī is the majority' figure is asserted, not shown; -ā is the competing default. Flagged UNTESTABLE.",
+      "note": "A proportion claim whose base cannot yet be reconstructed cleanly — not for lack of trying, but because the surface-pattern check is heavily confounded by an unrelated grammatical phenomenon (bahuvrīhi compound agreement) that shares the exact same -a→-ā surface change the claim is about for simple nouns. Recorded with the compound-contamination finding so it isn't rediscovered from scratch; still flagged UNTESTABLE rather than forced to a verdict on a confounded, thin residual.",
       "mg_footnote": null
     },
     {
@@ -2660,11 +2660,11 @@
       "loc": "Занятие XXXVIII / mdx line 10128",
       "claim_ru": "dus-+S: сравнительно немногие наименования лиц; основная масса — неодушевлённые.",
       "kind": "statistic",
-      "verdict_fact": "UNTESTABLE",
-      "number": "the split of dus-+S derivatives into 'few person-nouns' vs a mass of inanimate nouns is a semantic (animate/inanimate) classification with no stated or computable count base",
-      "ref": "no ground-truth source; animacy classification base undisclosed",
-      "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "Directionally plausible but the animate/inanimate share is asserted, not shown. Flagged UNTESTABLE (same failure mode as HK-41/HK-42).",
+      "verdict_fact": "TRUE",
+      "number": "MEASURED (16-07-2026, animacy_lookup.py + dus_prefix_animacy.py, H1056): the prior blocker (\"animacy classification base undisclosed\") is resolved — DCS's own m_wordsem column carries Sanskrit-WordNet sense ids, and the mapping table that turns those ids into a usable category (word-senses.csv + sembank-relations.csv) already exists in the upstream dcs-conllu mirror's own lookup/ folder; it was never built into a corpus-side animacy tagger before now. Among 232 dus-/dur-/duṣ-/duś-prefixed NOUN lemmas, 56 carry a wordsem-derived animacy classification: **only 6/56 = 10.7% are animate (person-class)**, vs 48/56 = 85.7% inanimate (2 tied). Confirms 'сравнительно немногие наименования лиц; основная масса — неодушевлённые' clearly. (176/232 lemmas are untagged — no wordsem coverage — and excluded from the ratio, not silently folded into either side.)",
+      "ref": "KocherginaUchebnik_1998/animacy_lookup.py; dus_prefix_animacy.py; hk221_dus_prefix_animacy_stats.json; animacy_lemma_lookup.json",
+      "verdict_pedagogy": "JUSTIFIED",
+      "note": "Directionally plausible claim, now measured rather than asserted: animate dus-derivatives are a clear minority (10.7% of classified lemmas). Spot-checked the animacy tagger itself against 24 known animate/inanimate Sanskrit nouns before trusting it (22/24 correct; the 2 misses are explainable polysemy/ coverage gaps, not tagger bugs) — see animacy_lookup.py's own validation.",
       "mg_footnote": null
     },
     {
