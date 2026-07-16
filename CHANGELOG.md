@@ -19,6 +19,18 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **RQ4 evaluation protocol § 6 — all four `@DECIDE` gates closed.** § 6.1–6.3 (Systema-hosted,
+  Systema's own Kochergina-stage students, 4-week retention) were already ruled 15-07-2026
+  ([H984](https://github.com/gasyoun/Uprava/blob/main/handoffs/H984-Sonnet_SanskritGrammar_rq4-item-bank-build_15.07.26.md));
+  a re-ask against "open call" reconfirmed the existing student-population ruling (the harness,
+  [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)/[Systema PR #536](https://github.com/gasyoun/Systema-Sanscriticum/pull/536),
+  already assumes real, retention-contactable Systema accounts). **§ 6.4 (consent wording)
+  APPROVED 16-07-2026 (MG), no revisions** — the plain-language Russian consent text drafted in
+  H987 is now finalised in [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](docs/RQ4_EVALUATION_PROTOCOL_2026.md)
+  § 6.4. Nothing blocks recruitment but flipping the `features.rq4_study` launch flag (a separate,
+  not-yet-made decision). ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.28.0] - 2026-07-16
 
 ### Fixed
