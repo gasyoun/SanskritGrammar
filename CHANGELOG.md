@@ -19,6 +19,16 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **P5 (SG-WF-003 kṛt-суффиксы) — авторская виза применена → ОПУБЛИКОВАНО (честный отрицательный результат).**
+  [`sangram/articles/krt-suffixes/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-suffixes):
+  ревизия `published` в манифесте, плашка кандидата снята. Единственная реализация P5 (коллизии нет, в отличие
+  от P4 — supersede-review неприменим). Числа воспроизведены из закоммиченных данных: доля ложных срабатываний
+  поверхностного отбора kṛt по исходу леммы **48/81 = 59,3 % ≫ 20 % → kill-gate C5 § 7 P5 СРАБОТАЛ** (шум:
+  композиты 31/48, имена 6, посессивная таддхита 6); суффикс -tṛ (`tf`) не отбираем (0 лемм NOUN/ADJ); MW-валидация
+  точность 0,75 / полнота 0,09. Оговорка о модельной адъюдикации сохранена. (Opus 4.8 `claude-opus-4-8[1m]`,
+  [H996](https://github.com/gasyoun/Uprava/blob/main/handoffs/H996-Opus_SanskritGrammar_sangram-w2-pilot-p5-krt-suffixes_15.07.26.md))
+
 ## [0.25.0] - 2026-07-15
 
 ### Changed
