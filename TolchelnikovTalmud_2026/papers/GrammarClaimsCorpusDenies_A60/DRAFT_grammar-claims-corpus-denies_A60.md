@@ -4,13 +4,14 @@ _Dr. Mārcis Gasūns_
 
 _Created: 12-07-2026 · Last updated: 16-07-2026_
 
-> **🔀 MERGED INTO A65 (author ruling, 16-07-2026).** A60 and A65 proceed as **one
+> **🔀 MERGED INTO A65 — merge EXECUTED 16-07-2026 (H1033).** A60 and A65 are **one
 > paper**: [A65 «Что корпус сказал грамматикам»](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
-> absorbs this draft — its § 2 takes the central divergence table, the five-book
-> count becomes the frame, venue = российская индология, RU as-is. This file stays
-> as **source material** for the merge (the 4/5 step of A65, backlog item 2 of the
-> [A65 metadoc](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.meta.md));
-> do not advance A60 separately. Ruling applied by [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md).
+> §§ 1, 2.2–2.4, 6, 10–12 now carry this draft's method, central table (re-based to
+> the drained 234-claim register: divergence share 27.9% → 5.1%), typology,
+> related-work ring and references, extended to the five-book frame. This file is an
+> **archival source** — do not advance, cite, or submit A60 separately. Ruling:
+> [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md);
+> merge: [H1033](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1033-Fable_SanskritGrammar_a65-4of5-full-paper-a60-merge_16.07.26.md).
 
 > **Draft — H773 phase Q3, single-book.** A complete first draft of paper **A60**, built on the
 > two-axis Kochergina claim register (H768) and the central divergence table (H773 Q1). It is
