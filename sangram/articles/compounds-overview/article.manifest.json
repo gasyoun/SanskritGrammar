@@ -1,0 +1,50 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:compounds-overview",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-WF-006",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Сложные слова: обзор и классификация",
+        "summary": "Обзорная статья SG-WF-006 (домен WF, кластер «Композиты», ядро W2). Частотная рамка композитов по пинованному снапшоту DCS: членство 841 052 токена Case=Cpd; 595 021 реконструированный композит в 396 305 предложениях (52,5 % корпуса несут композит); гистограмма числа членов — двучлен 74,4 %, трёхчлен 17,6 %, 4-член 4,8 %, 5+ 3,3 %. Тип корпусом НЕ размечен (предел EM4): нативный сигнал только compound:coord (≈двандва) в разобранном подмножестве; количественный ориентир по типу — двухпроходная κ пилота P4 по выборке 120 (татпуруша 79,5 % / бахуврихи 14,5 % / двандва 5,1 %, как выборка, не корпусный подсчёт). Не пилот: kill-gate нет, но каждое число несёт знаменатель + пин + ДИ."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:compounds-overview:1",
+        "layer": "scientific",
+        "text_slp1": "mahABUmi",
+        "locus": { "corpus": "dcs", "work": "Kaṭhopaniṣad", "ref": "KaṭhUp 1 (s24)" },
+        "translations": { "ru": "великая земля (татпуруша, кармадхарая)" },
+        "gloss_ru": "татпуруша/кармадхарая: определитель mahā (mahat) + вершина bhūmi в том же падеже — «великая земля»; виграха mahatī bhūmiḥ. Классифицирован в выборке P4 (крупнейший разряд ≈79,5 %).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; классифицировано пилотом P4", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:compounds-overview:2",
+        "layer": "scientific",
+        "text_slp1": "AttacApa",
+        "locus": { "corpus": "dcs", "work": "Bhāgavatapurāṇa", "ref": "BhāgPur 4.16 (s20)" },
+        "translations": { "ru": "«чей лук взят/поднят» (бахуврихи)" },
+        "gloss_ru": "бахуврихи (посессивный): ppp ātta (√ādā) + cāpa описывают внешнего носителя — «тот, чей лук поднят»; виграха ātta-cāpo yena saḥ. Второй по частоте разряд ≈14,5 % (выборка P4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; классифицировано пилотом P4", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:compounds-overview:3",
+        "layer": "scientific",
+        "text_slp1": "prajApaSu",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.1" },
+        "translations": { "ru": "потомство и скот (двандва)" },
+        "gloss_ru": "двандва (сочинительный): prajā + paśu «потомство и скот» — члены равноправны (не право-ветвление). Единственный НАТИВНЫЙ сигнал типа: UD-отношение compound:coord (2 044 токена в разобранном подмножестве).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; нативное отношение compound:coord", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": []
+  }
+}
