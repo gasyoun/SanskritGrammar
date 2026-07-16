@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:word-structure-overview",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-WF-001",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Строение слова: корень, основа, аффикс",
+        "summary": "Обзорная статья SG-WF-001 (домен WF, кластер «Основания», ядро W2) — четвёртый и последний обзор ядра. Структурная рамка слова по пинованному снапшоту DCS: приоритетное разбиение всех 5 688 416 токенов по типу строения — нарицательное 39,9 % (первичн./kṛt/taddhita не разделены), закрытый класс 28,4 %, член композита 14,8 %, финитный глагол 9,2 %, отглагольное kṛt 7,6 %; прозрачно «корень+аффикс» построены 16,8 %. Инвентарь корней: 8 053 аттестованные финитные леммы (топ-10 = 29,7 %, закон Ципфа) против гана-инвентаря WhitneyRoots 1 133 корня (I класс 46,5 %). Окно словообразования основы — feat_formation, разрежено (1,7 % глагольных токенов). Разбор нарицательных на первичные/kṛt/taddhita по поверхности НЕ делается (P5: ~59 % ложных). Не пилот: kill-gate нет, но каждое число несёт знаменатель + пин + ДИ."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:word-structure-overview:1",
+        "layer": "scientific",
+        "text_slp1": "karoti",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s112)" },
+        "translations": { "ru": "делает (√kṛ, финитный глагол, презенс 3 л. ед.)" },
+        "gloss_ru": "прямое спряжение корня: √kṛ + презентная основа + личное окончание. Финитный глагол — 9,2 % токенов.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; финитный глагол √kṛ", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:word-structure-overview:2",
+        "layer": "scientific",
+        "text_slp1": "kftam",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s157)" },
+        "translations": { "ru": "сделанное (√kṛ + kṛt-суффикс -ta, причастие)" },
+        "gloss_ru": "первичная деривация (kṛt): √kṛ + суффикс -ta → страдательное причастие прош. вр. kṛta, здесь Nom. Отглагольные kṛt-формы (причастие/абсолютив/герундив/инфинитив) — 7,6 % токенов.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; kṛt-причастие √kṛ", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:word-structure-overview:3",
+        "layer": "scientific",
+        "text_slp1": "kftvA",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s5)" },
+        "translations": { "ru": "сделав (√kṛ + kṛt-суффикс -tvā, абсолютив)" },
+        "gloss_ru": "первичная деривация (kṛt): √kṛ + суффикс -tvā → абсолютив (деепричастие) kṛtvā. Тот же корень, другой первичный суффикс — иллюстрирует слой корень→аффикс.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; абсолютив √kṛ", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:word-structure-overview:4",
+        "layer": "scientific",
+        "text_slp1": "karma",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s12)" },
+        "translations": { "ru": "дело- (karman, kṛt-имя как член композита)" },
+        "gloss_ru": "kṛt-имя: √kṛ + суффикс -man → karman «дело», здесь член композита (Case=Cpd). Показывает переход от деривации (корень→имя) к словосложению — член композита 14,8 %.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; kṛt-имя karman как член композита", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:word-structure-overview:5",
+        "layer": "scientific",
+        "text_slp1": "adadat",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 9 (s12)" },
+        "translations": { "ru": "давал (√dā, редуплицированная основа)" },
+        "gloss_ru": "словообразование основы: √dā с редупликацией (feat_formation=red) — a-da-d-at. Единственный нативный слой разметки построения основы; помечено лишь 1,7 % глагольных токенов.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_formation=red (редупликация) √dā", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": []
+  }
+}

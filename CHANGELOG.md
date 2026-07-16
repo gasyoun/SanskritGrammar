@@ -19,9 +19,35 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
-## [0.36.0] - 2026-07-16
+## [0.38.0] - 2026-07-16
 ### Changed
 - **A65: author-voice pass (/paper-author-pass) — proposed 5/5, awaiting the author's sign-off (H1015)** — [the manuscript](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) now reads as the author's own: academic frontmatter (М. Ю. Гасунс, независимый исследователь, ORCID, ya.ru — per AUTHOR.md), working banner removed, title recast («корпусная верификация…», the H797 tag dropped), §8 de-coded (companion papers named descriptively, no Axx), the LLM-adjudication sentence in journal register with model attribution preserved, appendix provenance glyphs/H-IDs neutralized. **No number, claim, or citation touched.** 8 voice calls + 5 residual flags recorded in [SIGNOFF_A65_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A65_author_pass.md) — a ~30-minute read-and-sign; the 5/5 bump itself waits for the signature. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
+## [0.37.0] - 2026-07-16
+
+### Added
+- **Sangram ядро W2 — обзорная статья SG-WF-001 «Строение слова: корень, основа, аффикс» — статья-кандидат; ЧЕТВЁРТЫЙ и последний обзор ядра W2 (H1032, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/word-structure-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/word-structure-overview): структурная рамка слова по пинованному снапшоту, привязанная к трём нативно-измеримым слоям (не текстбучная схема): **A** — приоритетное разбиение всех **5 688 416** токенов (нарицательное 39,9 % — первичн./kṛt/taddhita НЕ разделены · закрытый класс 28,4 % · член композита 14,8 % · финитный глагол 9,2 % · отглагольное kṛt 7,6 %; прозрачно «корень+аффикс» 16,8 %); **B** — инвентарь корней: 8 053 аттестованные финитные леммы (топ-10 = 29,7 %, закон Ципфа) vs гана-инвентарь WhitneyRoots 1 133 корня (I класс 46,5 %); **C** — окно словообразования основы `feat_formation`, разрежено (1,7 %). Разбор нарицательных на первичные/kṛt/taddhita по поверхности НЕ делается (перенесённый предел P5/SG-WF-003: ~59 % ложных). Скрипт [`sg_wf_001_word_structure.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_001_word_structure.py); 3 валидатора + build green. **Завершает четвёрку обзоров ядра W2** (SG-MO-001 · SG-MO-012 · SG-WF-006 · SG-WF-001). Публикация гейтится авторской визой.
+
+## [0.36.0] - 2026-07-16
+### Added
+- **A65: валидация вердиктов выполнена — слепой двухпроходный κ-дизайн по шаблону A64
+  (H1041, Fable 5 `claude-fable-5`; аннотатор B — Sonnet 5 `claude-sonnet-5`).** Новая папка
+  [`verdict_validation/`](https://github.com/gasyoun/SanskritGrammar/tree/main/verdict_validation):
+  стратифицированная выборка n = 115 (ВСЕ 30 фактических флагов + ВСЕ 25 UNTESTABLE + 60
+  случайных TRUE, зерно 20260716), слепой пакет без вердиктов/заметок первого прохода,
+  **κ Коэна = 0,877** (95 %-ДИ бутстрэпа [0,796; 0,946], 2 000 ресэмплов), сырое согласие
+  106/115 = 92,2 %; Очерк 19/19 и Конспект 5/5 — полное согласие. Конфузия чистая на
+  TRUE и FALSE; все 9 расхождений — граница OVERSTATED/UNTESTABLE, в 7 случаях из 9 второй
+  аннотатор СТРОЖЕ (флаги реестров консервативны). Попутно классифицированы 7 OVERSTATED
+  Бюлера — **первое заполнение класса «система-против-узуса»** (HB-10, предлог ā + Acc.):
+  ровно у самой систематической книги, как § 2.2 и предсказывал; итог типологии — 22
+  классифицированных (14·4·1·3). Отчет
+  [`VERDICT_VALIDATION_KAPPA_A65_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/VERDICT_VALIDATION_KAPPA_A65_2026.md)
+  + воспроизводимые скрипты/данные; § 6/§ 2.2/§ 5/§ 11/аннотация статьи обновлены.
+  **Остаток до 5/5:** авторская адъюдикация 9 расхождений — review-sheet
+  `sanskritgrammar-a65-verdict-validation-disagreements_16.07.26_review.html` (локальный
+  `review/`) + вычитка.
+  ([H1041](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1041-Fable_SanskritGrammar_a65-verdict-validation-kappa_16.07.26.md))
 
 ## [0.35.0] - 2026-07-16
 ### Changed
