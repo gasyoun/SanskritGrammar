@@ -9,6 +9,24 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-07-16
+### Added
+- **Полный аудит раздела самас по кодбуку Лейтана (H1050, Fable 5 `claude-fable-5`; директива
+  MG из адъюдикации A65: «весь раздел по самасам неверный — проверить все по Лейтану»).**
+  Реестр вырос 234 → 260: HK-234..HK-259 добирают все 26 нереестрованных утверждений
+  занятий XXX-XXXIII, XXXVIII, XXXX. **Секционный итог (46 утверждений): 36 TRUE · 7
+  OVERSTATED · 0 FALSE · 3 UNTESTABLE — гипотеза опровергнута для фактов и подтверждена
+  для каркаса:** все семь флагов сидят на классификационном скелете — определение
+  композита (HK-234, исключает upapada-класс её же уроков), все четыре определения типов
+  (HK-236 tatpuruṣa и HK-237 karmadhāraya — по частям речи вместо падежного отношения,
+  оба ломаются её же аппозитивным расширением; HK-238 — аппозиции навязана семантика
+  сравнения; HK-239 — dvigu без собирательного критерия, перехватывает числительные
+  бахуврихи) и правило рода (HK-34); 36 механических правил раздела (изменения основ,
+  порядок членов, сандхи стыков, двойств./множ. в dvandva) — верны. Синтез реестра
+  дополнен третьим паттерном («система, не факты»); 3 UNTESTABLE — инструментные
+  спецификации (ономастический ценз типов; акцентный ценз su-/dus-; анимационная
+  разметка — ср. H1056).
+
 ## [0.10.0] - 2026-07-16
 ### Changed
 - **HK-42 (a-/an- privative nouns, ~80% abstract) — part 2 sized, a third confound found (H1060)** — new instrument [`privative_noun_abstractness.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/privative_noun_abstractness.py) reuses `animacy_lookup.py`'s Sanskrit-WordNet sembank technique, rooted at abstraction/psychological_feature/knowledge/state/attribute/relation/event/act/phenomenon (all WordNet Tops nodes traditional grammar calls "abstract" — the narrow "abstraction" node alone gave a misleadingly low 30.6%). Measured **52.8% abstract** (171/324 classified privative noun lemmas) — short of ~80%, but NOT a refutation: candidate identification itself is contaminated by LEXICALIZED words that structurally pattern-match a-/an-+lemma without being felt as productive negations — asura ("demon") = a-+sura ("god", a real lemma), agni ("fire")+gni, aja ("goat")+ja, ahi ("snake")+hi, amṛta ("nectar")+mṛta. A minimum base-length filter doesn't fix this (checked). Same fundamental semantic-transparency wall as HK-226/227, discovered via a different structural pattern. Part 1 (≥1/3 of all prefixed nouns) stays untouched, same wall as HK-225/229. Results: [`hk42_privative_noun_abstractness_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk42_privative_noun_abstractness_stats.json). (Sonnet 5 `claude-sonnet-5`, [H1060](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1060-Sonnet_SanskritGrammar_privative-noun-abstractness-hk42_16.07.26.md))
