@@ -20,6 +20,19 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ### Added
+- **Sangram: style guide прозы по эталону rusgram.ru (H1003, виза P3 карточки B1+A7).**
+  [`sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+  (+ metadoc): разбор двух статей эталона («Будущее время» Стойновой 2018, «Творительный падеж») с таблицей
+  «у них — у нас», 6 правил слога (термин один раз и по-русски; процент + сырой счёт + словесное чтение;
+  технический провенанс — в `<details>`/«Данные и воспроизводимость»; абзац тезис→пример→комментарий;
+  безличный тон с лексическими хеджами; полное имя в прозе, аббревиатура в подписи), запрет «птичьего языка»
+  с 6 диагностическими признаками, чек-лист самопроверки перед PR, очередь потребителей (следующая —
+  методичка Кочергиной, по заказу MG 16-07-2026). Гайд держит СЛОГ, контракт C4 — структуру; при конфликте
+  структура за C4. **Демо на P3:** § 6 «Ограничения» статьи [perfect](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/index.mdx)
+  переписан по гайду — те же шесть оговорок и те же числа человекочитаемым слогом, техника пина свёрнута
+  в примечание (append-only `revision` в манифесте, C4). Сам гайд — под авторской визой: review-sheet
+  `sangram-prose-style-guide-visa_16.07.26` (локальный), @WAITING строка в GTD. (Fable 5 `claude-fable-5`,
+  [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md))
 - **Sangram: контрольная точка фундамента W1→W2 — ядро W2 (19 статей ①) ОТКРЫТО (H1007).**
   [`sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx):
   ворота входа пройдены (C2–C6 приняты + все 5 пилотов опубликованы ≥3), синтез пяти пилотов (2 положительных /
