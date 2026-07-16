@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:ta-na-participles",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-023",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Именные формы глагола: причастия на -ta / -na",
+        "summary": "Статья ядра W2 SG-MO-023 (домен MO, кластер «Именные формы глагола»). Причастие прошедшего страдательного на -ta/-na (kṛta, gata, bhinna) по пинованному снапшоту DCS: 219 902 токена (нижняя оценка) — самый частотный причастный тип, 64,4 % всех 341 556 причастий, из 4742 корней; -ta к -na как 13,6:1 (204 861 против 15 041). Употребление преимущественно предикативное: 57 % в Nom. (перифрастический пассив/перфект). DCS не тегирует класс отдельно (атрибут tense — для причастия настоящего); опознан по основе снятием a-/ā-флексии (предел EM5), нижняя оценка (исключает ассимилированные labdha/rūḍha/baddha). Склоняется как a-основа (SG-MO-002). Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:ta-na-participles:1",
+        "layer": "scientific",
+        "text_slp1": "kftam",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s157)" },
+        "translations": { "ru": "сделанное (kṛ, -ta, Nom. ед. ср.)" },
+        "gloss_ru": "причастие прош. страд. на -ta от √kṛ: kṛ-ta, Nom. ед. ср. kṛtam. Второй по частоте корень (8655 -ta/-na токенов).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ta причастие, Nom. ед. ср.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:ta-na-participles:2",
+        "layer": "scientific",
+        "text_slp1": "sTitaH",
+        "locus": { "corpus": "dcs", "work": "Rāmāyaṇa", "ref": "Rām Ār 48 (s3)" },
+        "translations": { "ru": "стоящий, пребывающий (sthā, -ta, Nom. ед. муж.)" },
+        "gloss_ru": "причастие на -ta от √sthā: sthi-ta, Nom. ед. муж. sthitaḥ — предикативное употребление (Nom. — 57 % токенов причастия, перифрастический строй).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ta причастие, Nom. ед. муж. предикатив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:ta-na-participles:3",
+        "layer": "scientific",
+        "text_slp1": "upAgataH",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 12.258 (s43)" },
+        "translations": { "ru": "подошедший (upa-gam, -ta с превербом, Nom. ед. муж.)" },
+        "gloss_ru": "причастие на -ta от преверб+корень upa-√gam: gata с превербом upa-, Nom. ед. муж. upāgataḥ. √gam — третий по частоте (6781).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ta причастие с превербом, Nom. ед. муж.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:ta-na-participles:4",
+        "layer": "scientific",
+        "text_slp1": "BinnaH",
+        "locus": { "corpus": "dcs", "work": "Arthaśāstra", "ref": "ArthaŚ 1.15 (s3)" },
+        "translations": { "ru": "расколотый (bhid, -na, Nom. ед. муж.)" },
+        "gloss_ru": "причастие на -na (не -ta!) от √bhid: bhin-na, Nom. ед. муж. bhinnaḥ. -na — суффикс ограниченного списка корней (-d/-j/-r), 6,8 % причастий -ta/-na.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -na причастие, Nom. ед. муж.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:ta-na-participles:5",
+        "layer": "scientific",
+        "text_slp1": "hata",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 5.123 (s20)" },
+        "translations": { "ru": "убитый (han, -ta, член композита)" },
+        "gloss_ru": "причастие на -ta от √han: ha-ta, здесь член композита (Cpd — 33 363 токена -ta/-na причастий). √han — среди частотнейших (3151).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ta причастие как член композита", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
