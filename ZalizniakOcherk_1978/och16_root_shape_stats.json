@@ -1,0 +1,113 @@
+{
+  "instrument": "root_shape_parser.py over talmud_appendix1.json (745 roots); §59 six-slot template with Zalizniak's own rulings (initial-s slot, kṣ=single, v/m in slot 2, rare final obstruent cluster); element anchored by each root's catalog ryad series",
+  "template_fit_share_pct": 98.26,
+  "fits": 732,
+  "misfits": 13,
+  "misfit_inventory": [
+    {
+      "root": "iradh",
+      "series": "A",
+      "ryad": "A₁"
+    },
+    {
+      "root": "irajy",
+      "series": "A",
+      "ryad": "A₁"
+    },
+    {
+      "root": "īrṣy",
+      "series": "I",
+      "ryad": "I₂"
+    },
+    {
+      "root": "khall",
+      "series": "A",
+      "ryad": "A₁"
+    },
+    {
+      "root": "ghūrṇ",
+      "series": "U",
+      "ryad": "U₂"
+    },
+    {
+      "root": "tsar",
+      "series": "R",
+      "ryad": "R"
+    },
+    {
+      "root": "palai",
+      "series": "I",
+      "ryad": "I"
+    },
+    {
+      "root": "pinv",
+      "series": "I",
+      "ryad": "I₁"
+    },
+    {
+      "root": "psā",
+      "series": "A",
+      "ryad": "A₂"
+    },
+    {
+      "root": "mṛkṣ",
+      "series": "A",
+      "ryad": "A₁"
+    },
+    {
+      "root": "vell",
+      "series": "I",
+      "ryad": "I"
+    },
+    {
+      "root": "ścut",
+      "series": "U",
+      "ryad": "U₁"
+    },
+    {
+      "root": "ṣṭhīv",
+      "series": "I",
+      "ryad": "I₂"
+    }
+  ],
+  "granted_extension_usage": {
+    "slot2_v_or_m": 111,
+    "slot6_obstruent_cluster": 14,
+    "slot1_s": 40
+  },
+  "constraint_violations (language census, not fit)": {
+    "slot3-sonant-equals-element-sonant": 3,
+    "slots-2-and-6-both-aspirated": 1
+  },
+  "slot_occupancy": {
+    "slot1_s": 40,
+    "slot2": 564,
+    "slot3": 229,
+    "slot5": 91,
+    "slot6": 481
+  },
+  "s59_example_roots": {
+    "i": true,
+    "nī": true,
+    "śru": true,
+    "sthā": true,
+    "styā": true,
+    "iṣ": true,
+    "pad": true,
+    "krudh": true,
+    "jīv": true,
+    "cumb": true,
+    "kṣṇu": true,
+    "takṣ": true,
+    "vyath": true,
+    "mlā": true,
+    "katth": true
+  },
+  "validation": {
+    "catalog_roots": 745,
+    "classified": 745,
+    "unclassifiable_no_series": 0,
+    "all_s59_examples_parse": true,
+    "share_over_90pct": true
+  }
+}

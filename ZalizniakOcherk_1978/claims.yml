@@ -20,7 +20,7 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004 instruments, 16-07-2026): 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004+H1008 instruments, 16-07-2026): 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
 # instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
 # series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
@@ -32,7 +32,7 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 instruments: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 + H1008 instruments: 64 TRUE · 0 OVERSTATED · 0 FALSE · 10 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
   first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
   not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
@@ -54,9 +54,14 @@ synthesis: >-
   style-I→style-II gradient is real and monotonic on every annotation-robust axis; OCH-47's
   early-vs-late causative half CLOSED the same day by the causative detector, H1001:
   the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
-  absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence),
-  compound-type tagging (OCH-58, OCH-60), the 1978↔2026 morphoclass-series crosswalk (OCH-21..
-  OCH-23), and a root-shape parser over the Talmud catalog (OCH-16). Two dead ends are
+  absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence; PROBED
+  16-07-2026, H1008: the snapshot DOES carry a 223,751-token UD dependency slice with all six
+  subordination relations in volume, but heavily VEDIC-SKEWED — every top-12 dep-annotated
+  text is Vedic-sphere — so counterexample hunts are feasible now while classical word-order
+  NORMS remain blocked), compound-type tagging (OCH-58 measured by H1004; OCH-60
+  function-blocked, probed), the 1978↔2026 morphoclass-series crosswalk (OCH-21..OCH-23,
+  built by H978), and ~~a root-shape parser over the Talmud catalog (OCH-16)~~ — built by
+  H1008, §59 template fit 98.3%. Two dead ends are
   recorded with their numbers so they are never re-derived as refutations: the naive Talmud
   series join INVERTS the §68 aniṭ/seṭ×series claim (36.8% aniṭ in the predicted-aniṭ group —
   but the join equates 1978 and 2026 series names without validation and skips the
@@ -355,13 +360,24 @@ entries:
     kind: statistic
     falsifiable_as: "what share of the root inventory fits Zaliznyak's six-slot template"
     sources: [talmud]
-    verdict_fact: UNTESTABLE
-    number: "needs a root-shape parser implementing HIS slot definitions (how s+stop clusters, aspirates and diphthong nuclei map onto the slots) — a naive regex over the 745-root catalog would misparse exactly the interesting cases; not computed rather than miscomputed"
-    ref: "cf. TolchelnikovTalmud_2026/data/talmud_appendix1.json (the inventory to parse, when the parser exists)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the root-shape parser built 16-07-2026 (root_shape_parser.py, H1008),
+      implementing §59's OWN rulings (dedicated initial-s slot; kṣ behaves as one consonant;
+      v/m granted in slot 2; rare final obstruent cluster granted) with the alternating
+      element anchored by each root's catalog ryad series — validated on all 15 of §59's own
+      example roots. Over the 745-root Talmud catalog: 732 fit = 98.3%; the 13 misfits are
+      the genuine structural exceptions (ts-/ps-/śc-/ṣṭh- onsets outside the granted s-slot:
+      tsar, psā, ścut, ṣṭhīv; sonant clusters: khall, vell, pinv, ghūrṇ; polysyllabic/oddball:
+      iradh, irajy, īrṣy, palai, mṛkṣ). Extension usage: v/m-onset 111, initial-s 40, final
+      cluster 14. Bonus census of his two stated constraints: 3 + 1 violations corpus-wide —
+      the restrictions hold at the same «подавляющее большинство» level as the template
+    ref: "ZalizniakOcherk_1978/och16_root_shape_stats.json (full misfit inventory + slot occupancy); root_shape_parser.py; TolchelnikovTalmud_2026/data/talmud_appendix1.json"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      Testable in principle against the Talmud catalog; flagged as a future metric. 'Подавляющее
-      большинство' is directionally plausible but this register does not invent numbers.
+      The register refused a naive regex; the parser that finally computed this implements
+      Zalizniak's own §59 slot semantics and passes his own example set — «подавляющее
+      большинство» = 98.3% measured, exceptions inventoried rather than hidden.
 
   - id: OCH-17
     loc: "§61 / mdx line 836"
