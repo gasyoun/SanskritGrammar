@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.14.0] - 2026-07-16
+
 ### Changed
 - **Гл. 4 «Кросс-уок и омонимия корней» — одобрена автором 16-07-2026.** Виза дана на
   канонический текст ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md)
