@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-07-17
+
 ### Changed
 - **Введение — рамка «Три вопроса и две части» одобрена автором 16-07-2026, без правок.** Footnote
   `[^edvv1]` updated with approval note, `BOOK_PLAN.md` Введение закрыто. **Это последняя
