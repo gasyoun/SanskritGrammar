@@ -19,6 +19,23 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   unchanged) — page + footnote `[^ed2]` updated with the link.
   ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
+## [0.11.0] - 2026-07-16
+### Added
+- **Часть II, Глава 6 «Корпусная аттестация корней» (черновик)** — третья новая глава; замыкает
+  арку трёх свидетелей (Гл. 4). Новая страница [`06_glava6_korpusnaya-attestaciya.mdx`](06_glava6_korpusnaya-attestaciya.mdx)
+  + план [`revision-2026/CH6_PLAN_corpus_attestation.md`](revision-2026/CH6_PLAN_corpus_attestation.md).
+  Тезис: корпус — свидетель, который *подтверждает* ~2/3 словника **и** честно очерчивает свой
+  потолок. Канонические числа (MWS/root_crosswalk): **590/935 (63,1 %)** аттестованы в DCS, **550
+  (58,8 %)** «готовое ядро» (MW+DCS), **259** словарно-грамматических корней корпусно отсутствуют;
+  продуктивность топ-50 ≈ 70 %. Пределы (ссылка на SANGRAM, не пересказ): класс gaṇa корпусно
+  невосстановим (SG-MO-013, ≈ 38,9 %), претериты сливаются под `Tense=Past` (SG-MO-017), без
+  акцентуации неразличимы классы I/VI и IV/пассив (A06/A32). Ждёт визы автора.
+### Changed
+- **Гл. 4 — числа покрытия приведены к каноническим** (при сверке для Гл. 6): было 497/930 (53,4 %)
+  по `roots.csv`, стало **550/935 (58,8 %)** по MWS/root_crosswalk (809 MW, 590 DCS) — устранено
+  расхождение с общекнижным 590/935; сноска `[^ed4a]` обновлена.
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
 ## [0.10.0] - 2026-07-16
 ### Added
 - **Часть II, Глава 5 «Дхатупатха и паниниевская традиция как данные» (черновик)** — вторая новая
