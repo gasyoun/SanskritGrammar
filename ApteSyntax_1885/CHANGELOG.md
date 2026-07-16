@@ -9,6 +9,22 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-16
+### Added
+- **Treebank drain of the claim backlog (H1059, Opus 4.8 `claude-opus-4-8[1m]`).** New
+  [`apte_treebank_stats.py`](apte_treebank_stats.py) (self-tested) measures the syntax backlog
+  against DCS's own head/deprel/feat_case dependency slice (223,751 tokens / 29,433 fully-parsed
+  sentences). Register **8 → 24 verified** (APT-9..APT-24): **16 TRUE · 6 OVERSTATED · 2
+  UNTESTABLE**. Honest split: particle-position and agreement claims drain robustly (subject–verb
+  number agreement 98.21% over n=10,672; ca/tu/ced/iva/eva/kila all confirmed never/rarely
+  sentence-initial), with **uta the first corpus flag** (23.66% sentence-initial → OVERSTATED,
+  vs <1% for the true postpositives; `hi` control 0.77%). Case-government claims split three ways
+  — fear/disgust → ablative **confirmed** (APT-16/17), throw → locative and rule/remember →
+  genitive **OVERSTATED** (a competing case leads in the corpus), anger/love → dative/locative
+  **UNTESTABLE** (<10 case-tagged arguments in the Vedic-skewed slice). Motion-goal measurement
+  quantifies the APT-5 flag: accusative goal 85.91% vs non-accusative 14.09% (n=873). Output in
+  [`apte_treebank_stats.json`](apte_treebank_stats.json).
+
 ## [0.2.0] - 2026-07-16
 ### Added
 - **Claim-verification register seed (H1055, Opus 4.8 `claude-opus-4-8[1m]`).** Ported the
