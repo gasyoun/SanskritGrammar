@@ -9,6 +9,22 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-07-17
+### Added
+- **Particle-sense Whitney pass (H1087, Opus 4.8 `claude-opus-4-8[1m]`).** Closed the reference-
+  grade indeclinable/particle-sense claims of lessons 26–28 against Whitney's indeclinables
+  chapter (§§1096-1135). Register **31 → 39 verified** (APT-32..39), **all TRUE** — punaḥ
+  ('again'/adversative, §1112), prāyaḥ/prāyeṇa ('usually', §1111/§1112c), muhuḥ (§1111), yataḥ
+  ('whence' = yasmāt, §1098), yāvat ('until' + accusative, §510/§1129), yathā yathā…tathā tathā
+  (proportional, §1101), hā (grief-interjection, §1135a), varaṃ…na (preference idiom). Tally
+  **29 TRUE · 8 OVERSTATED · 1 FALSE · 1 UNTESTABLE**.
+### Notes
+- **Finding:** Apte's particle/indeclinable **lexicon is accurate** — every gloss checks out
+  against Whitney — a clean contrast with his overreaching aspect (APT-31) and government
+  (APT-18/19/21) claims. Where Apte reports what a word *means* he is reliable; his misses are in
+  what a form's *distribution* or *government* is. The ApteSyntax_1885 claim register is now
+  complete for all corpus- and reference-adjudicable claims across the full six-handoff arc.
+
 ## [0.6.0] - 2026-07-17
 ### Added
 - **Whitney adjudication of APT-H-219, the aorist-durative claim (H1084, Opus 4.8

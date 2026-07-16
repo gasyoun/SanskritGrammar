@@ -45,8 +45,8 @@ v3.0, 2021) *Руководства по санскритской компози
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-31: **21 TRUE · 8 OVERSTATED · 1 FALSE · 1 UNTESTABLE**), источник правды;
-- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **115 кандидатов** (все 30 занятий сжаты; 28 продвинуты);
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) — верифицированный реестр (APT-1..APT-39: **29 TRUE · 8 OVERSTATED · 1 FALSE · 1 UNTESTABLE**), источник правды;
+- [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — бэклог жатвы, **115 кандидатов** (все 30 занятий сжаты; 39 продвинуты);
 - [apte_treebank_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json) — инструмент дренажа (H1059): позиция частиц, согласование, падеж цели по зависимостному слою DCS;
 - [apte_classical_government_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json) — инструмент управления падежами (H1062): оконная совстречаемость + подъём над базовой линией по ВСЕМУ корпусу, с контролями;
 - [apte_pada_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.json) — инструмент залога (H1081): Parasmaipada/Ātmanepada по окончаниям презенса (DCS feat_voice кодирует только пассив, не P/Ā), корневой залог по умолчанию;
@@ -90,6 +90,15 @@ UNTESTABLE и **исправила один вердикт**: `ruc` → дате
 длительности). Двойная проверка: (1) сверен английский оригинал §210 — ошибка **самого Апте**,
 а не перевода Лихушиной; (2) Апте сам себе противоречит (§207-208: прошедшие времена стали
 употребляться «беспорядочно» — та же равнозначность Уитни §927).
+
+**Проход по частицам-значениям (H1087, 17-07-2026):** закрыты справочные утверждения о
+неизменяемых словах занятий 26–28 по главе Уитни о неизменяемых (§§1096-1135). Реестр 31 → 39,
+APT-32..39 — **все TRUE**: punaḥ («снова»/противит., §1112), prāyaḥ/prāyeṇa («обычно»,
+§1111/§1112c), muhuḥ (§1111), yataḥ («откуда» = yasmāt, §1098), yāvat («до тех пор» + вин.,
+§510/§1129), yathā yathā…tathā tathā (пропорц., §1101), hā (междометие горя, §1135a), varaṃ…na.
+**Вывод:** словарь частиц у Апте точен — чистый контраст с его завышенными аспектными (APT-31) и
+падежно-управленческими (APT-18/19/21) утверждениями: где Апте сообщает, что слово *значит*, он
+надёжен; ошибается он в *распределении* и *управлении*.
 
 **Главный вывод seed'а:** фактическая точность Апте высока, а где он расходится с другими
 грамматиками — расхождение в **калибровке**, не в истине. Тот же клитико-позиционный факт,
