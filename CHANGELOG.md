@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.34.0] - 2026-07-16
+
 ### Changed
 - **A65 продвинута 3/5 → 4/5: слияние A60 ВЫПОЛНЕНО (H1033, Fable 5 `claude-fable-5`).**
   [Отчет-статья](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
