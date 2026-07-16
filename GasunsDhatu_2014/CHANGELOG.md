@@ -19,6 +19,19 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   unchanged) — page + footnote `[^ed2]` updated with the link.
   ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
+### Changed
+- **Приложение 7 — обогащение доведено: join по SLP1 + периоды аттестации (H1034).** Сверка
+  генератора `mw_genuine_roots.py` переведена с IAST-поверхностного ключа на **SLP1**
+  (`k1_slp1` ↔ `root_slp1`, устойчив к диакритике/нумерации омонимов); совокупные числа
+  **не изменились** (704 различных, 482 аттестованы, 294 ядро / 101 хвост — SLP1 даёт тот же
+  результат, но принципиальнее). Добавлены: колонка `dcs_periods` в
+  [`mw_genuine_roots.tsv`](revision-2026/mw_genuine_roots.tsv), **распределение по периодам
+  аттестации** (RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437) на странице
+  «Приложения издания 2026», и сводка покрытия
+  [`mw_genuine_roots_enrich_provenance.json`](revision-2026/mw_genuine_roots_enrich_provenance.json)
+  (покрытие · периоды · топ-20 по частоте). Это согласование параллельного второго прохода
+  [0.8.1] с независимой SLP1-реализацией того же H1006-задела (виза автора: reconcile, а не дубль).
+
 ## [0.12.0] - 2026-07-16
 ### Added
 - **Часть II завершена вчерне — Глава 7 «Грамматический указатель корней по модели Зализняка»

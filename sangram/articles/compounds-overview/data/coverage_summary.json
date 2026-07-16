@@ -1,0 +1,96 @@
+{
+  "study": "Sangram SG-WF-006 (Композиты: обзор) — частотная рамка композитов",
+  "toc_ref": "SG-WF-006",
+  "kind": "overview (no kill-gate)",
+  "method": "реконструкция композитов из Case=Cpd (пробег + флективная вершина, как P4); рамка = членство + гистограмма числа членов + нативный сигнал compound:coord (≈dvandva). Классификация типов (татпуруша/бахуврихи/двандва) — не корпусный подсчёт, а разметка: экземпляр — двухпроходная κ P4 (SG-WF-008) по выборке 120, честно как выборка",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned after dcs-conllu history rewrite; binding is provenance table + SHA-256"
+  },
+  "denominators": {
+    "cpd_member_tokens_native": 841052,
+    "total_sentences": 754726,
+    "sentences_with_compounds": 396305,
+    "cpd_member_tokens_reconstructed": 841052,
+    "total_compounds_reconstructed": 595021,
+    "two_member": 442649,
+    "multi_member": 152372
+  },
+  "member_count_buckets": {
+    "2": 442649,
+    "3": 104460,
+    "4": 28372,
+    "5+": 19540
+  },
+  "member_count_histogram": {
+    "2": 442649,
+    "3": 104460,
+    "4": 28372,
+    "5": 8807,
+    "6": 4873,
+    "7": 2765,
+    "8": 1416,
+    "9": 595,
+    "10": 351,
+    "11": 216,
+    "12": 149,
+    "13": 89,
+    "14": 60,
+    "15": 39,
+    "16": 26,
+    "17": 26,
+    "18": 27,
+    "19": 16,
+    "20": 14,
+    "21": 11,
+    "22": 14,
+    "23": 7,
+    "24": 5,
+    "25": 4,
+    "26": 3,
+    "27": 4,
+    "28": 3,
+    "29": 1,
+    "30": 3,
+    "31": 1,
+    "32": 2,
+    "34": 1,
+    "35": 1,
+    "37": 3,
+    "38": 1,
+    "41": 1,
+    "43": 2,
+    "46": 1,
+    "47": 1,
+    "70": 1,
+    "75": 1
+  },
+  "member_count_shares": {
+    "2": 0.7439,
+    "3": 0.1756,
+    "4": 0.0477,
+    "5+": 0.0328
+  },
+  "two_member_share_ci95": {
+    "k": 442649,
+    "n": 595021,
+    "ci95": [
+      0.7428,
+      0.745
+    ]
+  },
+  "native_type_signal": {
+    "deprel_available": true,
+    "compound_coord_tokens": 2044,
+    "parsed_deprel_tokens": 223751,
+    "note": "compound:coord ≈ dvandva; present only in the dependency-parsed subset — flagged, not projected to the full corpus (EM4: type not natively annotated)"
+  },
+  "type_classification_reference": {
+    "study": "P4 / SG-WF-008 (tatpuruṣa)",
+    "basis": "two-pass Cohen κ over a seeded 120-compound sample (NOT a full-corpus type count)",
+    "note": "codebook anchored on Edgar Leitan's Pāṇinian arrangement (dvigu ⊂ karmadhāraya ⊂ tatpuruṣa)"
+  }
+}
