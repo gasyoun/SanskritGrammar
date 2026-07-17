@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.19.0] - 2026-07-17
+
 ### Changed
 - **Гл. 3 §3.2/Выводы — одобрены автором 17-07-2026, без правок.** Closes a gap that fell through
   the cracks: the §3.2/Выводы rework (H378, PR #91, 08-07-2026) and its later stitch to Гл. 7
