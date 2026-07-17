@@ -1,0 +1,98 @@
+# claims_harvest.yml — harvest backlog for WhitneyGrammar_1889 (feeds claims.yml)
+#
+# Whitney's OWN falsifiable QUANTITATIVE claims (frequencies, rarity, class sizes, hand-counts),
+# harvested from a 4-reader parallel pass over the most quantitative chapters (H1101, 17-07-2026):
+# aorist/future (WH-H-1..21), present-system (WH-H-100..121), conjugation/perfect (WH-H-200..214),
+# declension (WH-H-300..315). Promoted candidates carry `promoted: WH-N`.
+#
+# checkable tag names the drain instrument each needs:
+#   dcs-corpus         — a corpus token/lemma count (verify_whitney_freq.py battery)
+#   dcs-per-text       — a per-text hand-count (§826 aorist etc.) — needs an aorist/precative token
+#                        identifier the sqlite lacks (feat_tense has no 'Aor') + text-name join
+#   internal-consistency — cross-check against another Whitney §
+#   root-count         — a ROOT inventory count (Whitney counts roots, not tokens) — WhitneyRoots
+#   hard               — RV-vs-AV / Vedic-period ratios needing period-tagged slices (period_style_gradient.py)
+
+candidates:
+
+  # ===== Aorist + Future (reader A1: WH-H-1..21) =====
+  - {id: WH-H-1,  section: "§826", claim_type: hand-count, checkable: dcs-per-text, claim: "Aorist occurs 21x in Nala, 8x in Hitopadeśa, 7x in Manu, 6x each in BhG and Śakuntalā, 66x in Rāmāyaṇa bk1."}
+  - {id: WH-H-2,  section: "§826", claim_type: relative-frequency, checkable: dcs-corpus, claim: "Aorist infrequent in classical Sanskrit but common in the older language.", promoted: WH-2}
+  - {id: WH-H-3,  section: "§827", claim_type: proportion, checkable: dcs-corpus, claim: "Nearly half of RV-attested roots show aorist forms; <1/3 in AV."}
+  - {id: WH-H-4,  section: "§827", claim_type: hand-count, checkable: root-count, claim: ">50 roots (RV+AV) form aorists of more than one class."}
+  - {id: WH-H-5,  section: "§830", claim_type: relative-frequency, checkable: dcs-corpus, claim: "Root-aorist most frequent from gā/dā/dhā/pā/sthā/bhū in the Veda."}
+  - {id: WH-H-6,  section: "§833", claim_type: relative-frequency, checkable: dcs-corpus, claim: "gam is the most frequent a-vowel root-aorist root."}
+  - {id: WH-H-7,  section: "§841", claim_type: hand-count, checkable: root-count, claim: "~130 roots show root-aorist forms in the older language; >80 in RV."}
+  - {id: WH-H-8,  section: "§845", claim_type: hand-count, checkable: dcs-per-text, claim: "Passive-aorist 3sg from 40 roots in RV, ~20 more early, nearly unknown in epics."}
+  - {id: WH-H-9,  section: "§846", claim_type: frequency-qualifier, checkable: root-count, claim: "a-aorist from near 100 roots; rare in the middle voice."}
+  - {id: WH-H-10, section: "§847", claim_type: relative-frequency, checkable: root-count, claim: "In RV the a-aorist has <half the root-count of the root-aorist."}
+  - {id: WH-H-11, section: "§854", claim_type: relative-frequency, checkable: dcs-corpus, claim: "Stem voc far outnumbers all other forms of √vac in RV."}
+  - {id: WH-H-12, section: "§865", claim_type: hand-count, checkable: root-count, claim: "Reduplicated-aorist middle rare; 3pl from 11 roots, 3sg from 7."}
+  - {id: WH-H-13, section: "§873", claim_type: hand-count, checkable: dcs-per-text, claim: "Reduplicated aorist ~120 roots earlier; only 2 occurrences in the §826 later series; <50 roots epic+classical."}
+  - {id: WH-H-14, section: "§886", claim_type: hand-count, checkable: root-count, claim: "s-aorist from ~140 roots older lang (~70 RV, ~50 AV, 15 new)."}
+  - {id: WH-H-15, section: "§903", claim_type: hand-count, checkable: root-count, claim: "iṣ-aorist from ~150 roots older lang (~80 RV, >30 AV); <20 later."}
+  - {id: WH-H-16, section: "§907", claim_type: hand-count, checkable: root-count, claim: "Middle precative of iṣ-aorist very rare: RV 5 roots, AV 2+3, 4 more elsewhere."}
+  - {id: WH-H-17, section: "§919", claim_type: hand-count, checkable: root-count, claim: "sa-aorist from only 19 roots total (7 RV, 2+2 AV, 10 more)."}
+  - {id: WH-H-18, section: "§925", claim_type: hand-count, checkable: dcs-per-text, claim: "Precative active once each in Manu/Nala/BhG/Śakuntalā/Hitopadeśa; <6 forms in the epics."}
+  - {id: WH-H-19, section: "§935", claim_type: proportion, checkable: root-count, claim: "Older lang: ~5/9 of simple roots form s-future without auxiliary i; later ~3/4 take i."}
+  - {id: WH-H-20, section: "§937", claim_type: hand-count, checkable: dcs-per-text, claim: "s-future: RV 17 occurrences/9 roots, AV 50/25 roots, TS >60 roots, >150 roots across older texts."}
+  - {id: WH-H-21, section: "§941", claim_type: hand-count, checkable: dcs-per-text, claim: "Conditional the rarest verb form: none in Nala/BhG/Hitopadeśa, 1 Manu, 2 Śakuntalā, ~25 MBh.", promoted: WH-8}
+
+  # ===== Present-system (reader A2: WH-H-100..121) =====
+  - {id: WH-H-100, section: "§600", claim_type: relative-frequency, checkable: dcs-per-text, claim: "Present:all-other-systems ratio rises 3:1 (Veda) to 30:1 (Manu) across five named texts."}
+  - {id: WH-H-101, section: "§600", claim_type: relative-frequency, checkable: dcs-corpus, claim: "Present-system forms more frequent than all other verb-systems combined.", promoted: WH-1}
+  - {id: WH-H-102, section: "§602", claim_type: class-size, checkable: root-count, claim: "Root-class (stem=root) is a small minority of verbs."}
+  - {id: WH-H-103, section: "§625", claim_type: hand-count, checkable: root-count, claim: "Root-class ~150 roots (~50 all-periods, 80 older-only, ~15 later-only)."}
+  - {id: WH-H-104, section: "§645", claim_type: proportion, checkable: hard, claim: "Root-accent in strong forms in only a small minority of reduplicating-class roots."}
+  - {id: WH-H-105, section: "§654", claim_type: relative-frequency, checkable: dcs-corpus, claim: "2pl act -tana proportionally more frequent in reduplicating class than any other."}
+  - {id: WH-H-106, section: "§659", claim_type: hand-count, checkable: root-count, claim: "Reduplicating class ~50 roots; only ~16 attested later."}
+  - {id: WH-H-107, section: "§667", claim_type: frequency-qualifier, checkable: dcs-corpus, claim: "dā and dhā are the commonest roots of the reduplicating class.", promoted: WH-10}
+  - {id: WH-H-108, section: "§694", claim_type: hand-count, checkable: root-count, claim: "Nasal class ~30 roots, >half attested only earlier."}
+  - {id: WH-H-109, section: "§704", claim_type: relative-frequency, checkable: dcs-per-text, claim: "nu-class 2sg impv -hi ~3x bare-stem in RV, ~1/6 in AV, sporadic in Brāhmaṇas."}
+  - {id: WH-H-110, section: "§708", claim_type: hand-count, checkable: root-count, claim: "nu-class ~50 roots; ~half older-only, 3-4 later-only."}
+  - {id: WH-H-111, section: "§709", claim_type: hand-count, checkable: root-count, claim: "u-class (tan-class) at most eight roots."}
+  - {id: WH-H-112, section: "§714", claim_type: frequency-qualifier, checkable: dcs-corpus, claim: "kṛ is an extremely common root.", promoted: WH-5}
+  - {id: WH-H-113, section: "§715", claim_type: relative-frequency, checkable: dcs-per-text, claim: "For kṛ in AV, nu-stem forms >6x u-stem forms; later u-forms exclusive."}
+  - {id: WH-H-114, section: "§727", claim_type: hand-count, checkable: root-count, claim: "nā-class >50 roots; ~3/5 older-only; <20 all-periods."}
+  - {id: WH-H-115, section: "§744", claim_type: proportion, checkable: root-count, claim: "a-class largest: ~240 roots RV (~2/5 of all roots), ~200 AV, ~1/2 of all present-stems."}
+  - {id: WH-H-116, section: "§744", claim_type: class-size, checkable: dcs-corpus, claim: "The a-class is larger than every other present-class.", promoted: WH-3}
+  - {id: WH-H-117, section: "§753", claim_type: hand-count, checkable: root-count, claim: "á-class (tud) ~150 roots (~1/3 all-periods, ~1/2 earlier-only, ~20 later-only)."}
+  - {id: WH-H-118, section: "§761", claim_type: hand-count, checkable: root-count, claim: "ya-class (div) >130 roots; ~half all-periods, ~40 older-only, ~30 later-only."}
+  - {id: WH-H-119, section: "§761", claim_type: hand-count, checkable: hard, claim: ">50 ya-class roots denote a state of feeling / mental-bodily condition."}
+  - {id: WH-H-120, section: "§608", claim_type: class-size, checkable: root-count, claim: "Only a very small number of roots form a cha/chá present-stem."}
+  - {id: WH-H-121, section: "§632", claim_type: frequency-qualifier, checkable: dcs-corpus, claim: "brū is a root of very frequent use.", promoted: WH-6}
+
+  # ===== Conjugation + Perfect (reader A3: WH-H-200..214) =====
+  - {id: WH-H-200, section: "§548", claim_type: hand-count, checkable: hard, claim: "1pl act primary -masi outnumbers -mas 5:1 in RV but 3:4 in AV."}
+  - {id: WH-H-201, section: "§557", claim_type: relative-frequency, checkable: hard, claim: "Subjunctive 3-4x as frequent as optative in RV (and similarly AV)."}
+  - {id: WH-H-202, section: "§564", claim_type: relative-frequency, checkable: hard, claim: "Optative rare in the Veda but by the Brāhmaṇas greatly outnumbers the subjunctive."}
+  - {id: WH-H-203, section: "§570", claim_type: hand-count, checkable: dcs-per-text, claim: "Imperative -tāt ~150x from ~50 roots older lang; only 1 each in MBh and R."}
+  - {id: WH-H-204, section: "§579", claim_type: hand-count, checkable: hard, claim: "Prohibitive-mā impf:aorist ratio ~1:5 RV, ~1:6 AV."}
+  - {id: WH-H-205, section: "§580", claim_type: relative-frequency, checkable: dcs-per-text, claim: "In prescriptive texts (Manu) optative outnumbers indicative+imperative combined."}
+  - {id: WH-H-206, section: "§587", claim_type: hand-count, checkable: hard, claim: "RV ~2000 augmentless vs ~3300 augmented preterit forms."}
+  - {id: WH-H-207, section: "§587", claim_type: proportion, checkable: hard, claim: "AV augmentless (~475) <1/3 of augmented (~1450); >4/5 aoristic."}
+  - {id: WH-H-208, section: "§807", claim_type: frequency-qualifier, checkable: dcs-corpus, claim: "Perfect participles (esp. middle) very rare in the later language."}
+  - {id: WH-H-209, section: "§808", claim_type: frequency-qualifier, checkable: dcs-per-text, claim: "Perfect-system modes confined to Vedic, rare outside the RV."}
+  - {id: WH-H-210, section: "§809", claim_type: proportion, checkable: internal-consistency, claim: "~3/4 of attested perfect mode-forms follow the normal formation."}
+  - {id: WH-H-211, section: "§821", claim_type: proportion, checkable: root-count, claim: "The perfect is attested for more than half of all roots."}
+  - {id: WH-H-212, section: "§821", claim_type: relative-frequency, checkable: dcs-corpus, claim: "Perfect on the whole less common than the imperfect (varies by author).", promoted: WH-4}
+  - {id: WH-H-213, section: "§822", claim_type: hand-count, checkable: dcs-per-text, claim: "Impf:perfect ratio >100:1 in PB, >34:1 in TS/TB, >4:1 in AB."}
+  - {id: WH-H-214, section: "§823", claim_type: frequency-qualifier, checkable: hard, claim: "In the Veda the perfect most often has present (not past) value; narrative-past rare."}
+
+  # ===== Declension (reader A4: WH-H-300..315) =====
+  - {id: WH-H-300, section: "§326", claim_type: class-size, checkable: dcs-corpus, claim: "a-stems are the majority of all declined noun/adjective stems.", promoted: WH-7}
+  - {id: WH-H-301, section: "§332", claim_type: class-size, checkable: dcs-corpus, claim: "a-stem adjectives are the great majority of all adjectives."}
+  - {id: WH-H-302, section: "§335", claim_type: relative-frequency, checkable: dcs-corpus, claim: "i-stems outnumber u-stems (esp. feminine); neuters more numerous in u than i.", promoted: WH-9}
+  - {id: WH-H-303, section: "§344", claim_type: relative-frequency, checkable: dcs-corpus, claim: "u-stem adjectives much more numerous than i-stem adjectives."}
+  - {id: WH-H-304, section: "§369", claim_type: class-size, checkable: dcs-corpus, claim: "The ṛ/ar-stem declension is a comparatively small class (mostly tṛ-agent nouns)."}
+  - {id: WH-H-305, section: "§411", claim_type: proportion, checkable: dcs-corpus, claim: "as/is/us-stems predominantly neuter, few masc, very few fem."}
+  - {id: WH-H-306, section: "§438", claim_type: class-size, checkable: dcs-corpus, claim: "in-stems very numerous; vin-stems very few, min-stems fewer still."}
+  - {id: WH-H-307, section: "§327", claim_type: proportion, checkable: dcs-per-text, claim: "instr sg a-stems: -ena ~8/9 of RV occurrences vs -ā."}
+  - {id: WH-H-308, section: "§328", claim_type: proportion, checkable: dcs-per-text, claim: "nom-acc-voc du masc a-stems: simple -ā ~7/8 of RV occurrences vs -āu."}
+  - {id: WH-H-309, section: "§329", claim_type: proportion, checkable: dcs-per-text, claim: "nom pl masc a-stems -āsas: ~1/3 RV, ~1/25 core AV."}
+  - {id: WH-H-310, section: "§329", claim_type: proportion, checkable: dcs-per-text, claim: "neut nom-acc pl a-stems -ā vs -āni: 3:2 RV, 3:4 AV."}
+  - {id: WH-H-311, section: "§329", claim_type: proportion, checkable: dcs-per-text, claim: "instr pl a-stems -ebhis vs -āis: near-equal RV, ~1/5 in AV."}
+  - {id: WH-H-312, section: "§383", claim_type: hand-count, checkable: dcs-per-text, claim: "Uncompounded root-stems >100 in RV, ~60 in AV."}
+  - {id: WH-H-313, section: "§356", claim_type: hand-count, checkable: dcs-per-text, claim: "Root-division ī-stem nom sg -s ~60 times from >30 stems in the older language."}
+  - {id: WH-H-314, section: "§471", claim_type: proportion, checkable: dcs-per-text, claim: "Secondary (tara/tama) vs primary (īyas/iṣṭha) comparatives: 3:2 RV, 6:5 AV."}
+  - {id: WH-H-315, section: "§295", claim_type: relative-frequency, checkable: hard, claim: "The possessive/appurtenance genitive is the commonest genitive type."}
