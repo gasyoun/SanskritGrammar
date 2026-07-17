@@ -95,6 +95,21 @@ SEED (8 verified). Apte's *Guide to Sanskrit Composition* is the fifth book in t
 - **APT-38** — hā classified as an interjection by Whitney; the grief-primary / disgust-rare split matches standard usage.
 - **APT-39** — A correctly-described classical idiom; the nominative of both members and the adversative correlative are standard. Closes the substantive particle-sense set; the residual lesson-26-28 candidates (balavat adverbial, yat/yena clause-linkers) are uncontested descriptive glosses left in the harvest.
 
+## Методичка — учащемуся
+
+_Per-claim learner takeaways, mirrored verbatim into the `<ApteClaims/>` reading-site overlay via `claims.json` — edit them here, never in the component (H1095)._
+
+- **APT-5** — «Все… винительным» — правило на 86 %, а не закон: grāmāya gacchati «идёт к деревне» (дательный цели) — не ошибка, а та самая одна из семи. Для композиции винительный цели — безопасное умолчание; при чтении держите в уме дательную и местную цель.
+- **APT-12** — Пользуйтесь uta по смыслу («или»), но не считайте её строго постпозитивной, как ca: она свободно открывает предложение (почти четверть вхождений — в начале).
+- **APT-18** — «Местный цели» у глаголов бросания — правильная конструкция, но редкая; чаще вы увидите винительный объекта и отложительный источника.
+- **APT-19** — Честная формулировка — «родительный или винительный, винительный если что чаще», а не «управляют родительным» как единственным. Встретив smaranti tam «помнят его» (винительный), не считайте это исключением.
+- **APT-21** — ruc-дательный вы встретите как норму; «дательный гнева» — как книжное (панинийское) правило, которое живой текст соблюдает куда реже, чем обещает абсолютная формулировка. Типичный зазор «предписание против описания».
+- **APT-22** — У глаголов любви местный падеж уместен, но не единственно возможен — направление верное, сила преувеличена (местный чувства конкурирует с обычным местным места).
+- **APT-23** — Тот же урок 3, но с точным числом: винительный цели — 85,9 %, неаккузативная цель (дательный + местный) — 14,1 %. Учите винительный как умолчание, а не как закон.
+- **APT-28** — Корневой залог по умолчанию учите как факт (ram → Ātmanepada ~95 %, han → Parasmaipada ~90 %, реестр APT-26/27), но krīḍ помните как «оба залога» — распределение почти поровну.
+- **APT-30** — Тонкие панинийские правила «приставка + значение» — справочный материал, а не то, что подтверждает частотность: корпус их не судит (DCS не размечает ни P/Ā, ни семантическое условие). Держите их как ориентир, не как проверенный закон.
+- **APT-31** — Заучите наоборот: длительное, продолжающееся прошлое несут имперфект и презенс, а аорист — «завершительное, только что». Аорист в классике редок (0,31 % глагольных словоупотреблений DCS; Whitney §826), так что длительное прошлое вы почти всегда встретите имперфектом.
+
 ## Harvest backlog — 115 candidates pending verification
 
 Falsifiable assertions swept from the full textbook but not yet verdicted. 0 state a number of their own (verify it); the rest give none (add an M.G. frequency footnote where computable). As each is verified it is promoted into the table above and removed here. Source: [`claims_harvest.yml`](claims_harvest.yml).

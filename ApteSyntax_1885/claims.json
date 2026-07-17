@@ -13,7 +13,8 @@
       "ref": "Whitney 1889 §514; harvest APT-H-204 (Урок 12)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Apte's «всегда» here is one of the well-formed universals: ātman-as-reflexive genuinely admits no gender/number variation, so the absolute quantifier is earned (contrast APT-5, where «все» is not). Drain instrument: a DCS pass confirming reflexive ātman surfaces only as masc-sg forms would turn this Whitney fact into a corpus number.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-2",
@@ -25,7 +26,8 @@
       "ref": "Whitney 1889 §321a, §326; harvest APT-H-10 (Урок 2), cross-ref APT-H-205 (Урок 13)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The mirror image of the Type-1 failure: an absolute «все» that is TRUE because the exception class really is empty for adjectival agreement. Apte separately and correctly excludes the indeclinable participles (APT-H-205), which is the precise carve-out that keeps the universal honest.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-3",
@@ -37,7 +39,8 @@
       "ref": "Whitney 1889 §1133a; harvest APT-H-314 (Урок 23); cf. KocherginaUchebnik_1998 HK-10",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Reuses the enclitic-position fact from Kochergina's register, but Apte states it exactly where it holds — of the postpositive conjunction ca — without Kochergina's overreach to finite verbs. Well-calibrated absolute.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-4",
@@ -49,7 +52,8 @@
       "ref": "Whitney 1889 §1133; harvest APT-H-316 (Урок 24)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A paired absolute — one negative (tu never first), one positive (parantu/kintu always first) — both correct. The same postpositive-particle class as ca (APT-3); Apte is consistent and accurate across the particle chapter.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-5",
@@ -61,7 +65,8 @@
       "ref": "Whitney 1889 §274, §285d; harvest APT-H-15 (Урок 3)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The seed's one flag, and the expected Type-1 pattern: an absolute «все» over a rule that has a standard, if marginal, exception class (dative/locative of the goal). For a composition primer the accusative-of-goal default is the safe teaching target, so the pedagogy is defensible even though the factual quantifier overreaches — hence OVERSTATED / JUSTIFIED, not MISLEADING. Drain instrument: a treebank pass counting goal-case with motion-verb heads (gam/yā/...) would put a number on how marginal the non-accusative goal is.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "«Все… винительным» — правило на 86 %, а не закон: grāmāya gacchati «идёт к деревне» (дательный цели) — не ошибка, а та самая одна из семи. Для композиции винительный цели — безопасное умолчание; при чтении держите в уме дательную и местную цель."
     },
     {
       "id": "APT-6",
@@ -73,7 +78,8 @@
       "ref": "DCS-2021 tense census (../BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 HB-58",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The cleanest cross-book calibration contrast in the seed. The identical 14:1 DCS gap graded Bühler ORDER-QUESTIONABLE because he TAUGHT the periphrastic future first (HB-58); Apte states outright that it is «намного реже», matching the corpus — so the same fact grades Apte JUSTIFIED. Presentation calibration, not accuracy, is the axis of difference.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-7",
@@ -85,7 +91,8 @@
       "ref": "Whitney 1889 §321; harvest APT-H-3 (Введение)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A reference-grammar generalization, well hedged. Not a corpus-frequency claim; graded against Whitney's systematic statement, which it reproduces without overstatement.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-8",
@@ -97,7 +104,8 @@
       "ref": "Whitney 1889 §1133, §§109/1117; harvest APT-H-200 (Урок 12); cf. KocherginaUchebnik_1998 HK-10",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Direct calibration contrast with Kochergina HK-10 (OVERSTATED): the SAME never-initial fact, but Apte scopes it to the enclitic pronoun forms it is actually true of, rather than overreaching to all finite verbs. Same underlying fact, honest quantifier — the programme's central finding restated in the syntax genre. DRAIN CORROBORATION (H1059): of 4,689 enclitic-form PRON tokens in the tagged slice, the raw sentence-initial rate is 7.19%, but 337 of 337 initials are homographs — 322 are the form `te` (Nom.pl 'they', lemma tad, which is freely initial) and the rest are `mā` (the prohibitive particle) — so the genuine enclitic pronouns are essentially never initial, confirming APT-8 once homographs are excluded (apte_treebank_stats.py A_enclitic_position).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-9",
@@ -109,7 +117,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-218 (Урок 18)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Same postpositive-particle class as ca (APT-3) and tu (APT-4); the treebank confirms the absolute with a clean 0/84.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-10",
@@ -121,7 +130,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-310 (Урок 22)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Postposition is near-categorical; «после того, с чем сравнивают» is corpus-accurate.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-11",
@@ -133,7 +143,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-313 (Урок 22)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The «follows the word» position holds in >99% of tagged tokens.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-12",
@@ -145,7 +156,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-312 (Урок 22)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The first corpus-measured flag among the particle claims. Apte groups uta with the strictly postpositive particles, but uta is sentence-initial nearly a quarter of the time — it heads disjunctive/interrogative clauses (kim … uta …), unlike ca/tu. The teaching value («or», paired with kim) is fine; the implicit position analogy overreaches. Method control: hi, an uncontested postpositive, measures 0.77% initial in the same battery — so the 23.66% is a real property of uta, not an artefact.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Пользуйтесь uta по смыслу («или»), но не считайте её строго постпозитивной, как ca: она свободно открывает предложение (почти четверть вхождений — в начале)."
     },
     {
       "id": "APT-13",
@@ -157,7 +169,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-4 (Урок 1)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A core agreement rule confirmed at scale; the ~1.8% number-mismatch is the expected collective/dual-subject and annotation-edge residue.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-14",
@@ -169,7 +182,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-10 (Урок 2); corroborates APT-2",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Treebank corroboration of the APT-2 universal: gender and number agreement are near- categorical (>98%). Case agreement is lower (79%) — the residue is predicative and appositional adjectives plus amod-tagged adverbials/comparatives (agree in gender/number but not case), not a failure of attributive concord. The universal holds for attributive adjectives as stated.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-15",
@@ -181,7 +195,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-12 (Урок 2)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "«Обычно» is the right quantifier — yad-first is the ~2:1 majority, not an absolute; the remaining ~35% are the attested tad…yad and embedded orders. A correctly-hedged rule (contrast APT-12, where an implicit absolute overreaches).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-16",
@@ -193,7 +208,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-110 (Урок 8)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Ablative-of-separation confirmed as the leading government, above the thin-flag threshold (n=15). Corroborated by the Classical-corpus proxy (H1062): ablative enriched 3.96x baseline near jugups/viram/pramad (n=725).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-17",
@@ -205,7 +221,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-111 (Урок 8)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The ablative-of-fear is old and well attested even in the Vedic-skewed slice; cleanly confirmed. Classical-corpus proxy (H1062): ablative enriched 5.52x baseline near bhī (n=2,069) — the strongest government signal measured, and the instrument's positive control.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-18",
@@ -217,7 +234,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-113 (Урок 9)",
       "verdict_pedagogy": "MISLEADING",
       "note": "Measured OVERSTATED with a real n. The locative-of-target is a genuine construction but a 2% minority in the corpus, swamped by muc's dominant sense 'release/free' (accusative object) and the ablative-of-source. Teaching the locative as THE government for these verbs hides the construction the learner will actually meet — a frequency miss, hence MISLEADING. (Polysemy caveat: muc conflates 'throw at' and 'release'.) Corroborated by the Classical-corpus proxy at scale (H1062): locative only 1.22x baseline near kṣip/muc (n=12,479), ablative leads — the accusative/ablative dominance is not a small-sample artifact.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "«Местный цели» у глаголов бросания — правильная конструкция, но редкая; чаще вы увидите винительный объекта и отложительный источника."
     },
     {
       "id": "APT-19",
@@ -229,7 +247,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-115 (Урок 10)",
       "verdict_pedagogy": "MISLEADING",
       "note": "Both cases are genuinely attested — smṛ 'remember' governs genitive OR accusative (Whitney §297c) — but the corpus puts the accusative ahead of the genitive, so «управляют родительным падежом» presented as THE rule overreaches. The honest statement is 'genitive or accusative, accusative if anything commoner'. Corroborated by the Classical-corpus proxy (H1062): genitive weakly enriched (~1.5x) near īś/prabhū/smṛ/adhī but not the leading oblique (n=7,009).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Честная формулировка — «родительный или винительный, винительный если что чаще», а не «управляют родительным» как единственным. Встретив smaranti tam «помнят его» (винительный), не считайте это исключением."
     },
     {
       "id": "APT-20",
@@ -241,7 +260,8 @@
       "ref": "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-105 (Урок 7); cf. Whitney §287c",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "VERDICT CORRECTED OVERSTATED→TRUE by the Classical-corpus instrument. The treebank drain graded this OVERSTATED-in-corpus with an explicit Vedic-skew caveat (Dat 1 of 15 obliques in the 3.9% dependency slice); the full-corpus lift proxy — validated by a negative control (dṛś dative lift 0.23) and positive controls (bhī/jugups reproduce ablative) — shows the dative-of-the-pleased enriched 3.06x and leading, exactly as Whitney §287c and Apte state. The caveat was right: escaping the Vedic slice vindicates the rule.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-21",
@@ -253,7 +273,8 @@
       "ref": "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-106 (Урок 7); cf. Pāṇini 1.4.37, Whitney §262",
       "verdict_pedagogy": "MISLEADING",
       "note": "RESOLVED from UNTESTABLE by the Classical-corpus instrument, and it goes the other way from the thin treebank hint. The dative-of-anger is a famous PRESCRIPTIVE rule (Pāṇini 1.4.37, krudh-druh-īrṣy-asūy → dative), but as a CORPUS-FREQUENCY fact it does not hold: across 2,798 windowed obliques near these verbs the dative sits at baseline (0.91x), swamped by the accusative and the genitive/locative of the person one is angry at. A genuine prescriptive-vs-descriptive gap — Apte teaches the grammarians' rule, the corpus prefers other cases — hence MISLEADING on the frequency axis (the rule is not 'wrong', but the learner will meet the dative-of-anger far less than the absolute phrasing implies).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "ruc-дательный вы встретите как норму; «дательный гнева» — как книжное (панинийское) правило, которое живой текст соблюдает куда реже, чем обещает абсолютная формулировка. Типичный зазор «предписание против описания»."
     },
     {
       "id": "APT-22",
@@ -265,7 +286,8 @@
       "ref": "DCS-2021 full-corpus lift proxy (apte_classical_government_stats.py); harvest APT-H-112 (Урок 9); cf. Whitney §303b",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "RESOLVED from UNTESTABLE by the Classical-corpus instrument. The locative-of-feeling IS the leading enriched oblique for snih/abhilaṣ/anurañj, consistent with Whitney §303b and Apte — but the enrichment is weak (1.08x), because these verbs' locative competes with the ordinary locative-of-place and because the object of affection is often expressed by a genitive or a prepositional phrase. Graded OVERSTATED (direction right, strength overstated); the teaching target (locative) is defensible, hence pedagogy JUSTIFIED.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "У глаголов любви местный падеж уместен, но не единственно возможен — направление верное, сила преувеличена (местный чувства конкурирует с обычным местным места)."
     },
     {
       "id": "APT-23",
@@ -277,7 +299,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-15 (Урок 3); corroborates APT-5",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Puts a number on the APT-5 OVERSTATED flag: «все… винительным» is an 86%-true default, not an absolute — the dative and locative goal together account for ~14% (Loc conflates goal with place, so 14% is an upper bound; the dative goal alone is ~4.6%). For a composition primer the accusative default is the right teaching target, so pedagogy stays JUSTIFIED.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Тот же урок 3, но с точным числом: винительный цели — 85,9 %, неаккузативная цель (дательный + местный) — 14,1 %. Учите винительный как умолчание, а не как закон."
     },
     {
       "id": "APT-24",
@@ -289,7 +312,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-315 (Урок 23)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Thin (n=22) but clean — postposition holds; consistent with the whole postpositive-particle family (ca/tu/ced/iva/eva/hi).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-25",
@@ -301,7 +325,8 @@
       "ref": "DCS-2021 treebank slice (apte_treebank_stats.py); harvest APT-H-513 (Урок 28)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Completes the postpositive-particle family (ca/tu/ced/iva/eva/kila/hi) — all confirmed never/rarely initial; hi at 0.77% matches eva (0.68%).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-26",
@@ -313,7 +338,8 @@
       "ref": "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-609 (Урок 29)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Root-default voice cleanly confirmed. The preverb sub-rule (+vi/ā/pari → Parasmaipada) is a fine sense/preverb condition not separately drained (see APT-30).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-27",
@@ -325,7 +351,8 @@
       "ref": "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-612 (Урок 30)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Root-default voice confirmed at large n; method-controlled (as/bhū → 100%/99.7% P, labh/īś → 97.6%/100% A).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-28",
@@ -337,7 +364,8 @@
       "ref": "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-602 (Урок 29)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "«Обычно Parasmaipada» overstates a near-even split — krīḍ uses both voices almost equally in the corpus, so «normally Parasmaipada» misleads on strength (the preverb condition Apte adds is real but the base claim itself is not the strong default it implies). Teaching a default pada is defensible, hence pedagogy JUSTIFIED.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Корневой залог по умолчанию учите как факт (ram → Ātmanepada ~95 %, han → Parasmaipada ~90 %, реестр APT-26/27), но krīḍ помните как «оба залога» — распределение почти поровну."
     },
     {
       "id": "APT-29",
@@ -349,7 +377,8 @@
       "ref": "DCS-2021 present-ending pada proxy (apte_pada_stats.py); harvest APT-H-600 (Урок 29)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The single-voice/both-voice typology holds where drainable: bhāṣ and nam skew hard to one pada, kṛ and duh genuinely use both (minority pada 38% / 21%). ci/cur/ruc/bhram not separately measured here but the pattern is consistent.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-30",
@@ -361,7 +390,8 @@
       "ref": "DCS-2021 feat_voice census + apte_pada_stats.py scope note; harvest APT-H-601..619 (Уроки 29–30)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The honest floor of the voice domain: root-DEFAULT pada is recoverable from endings (APT-26..29), but the preverb+semantic conditions that make up most of lessons 29-30 are Pāṇinian sense-rules with no corpus signal — DCS neither tags the P/Ā distinction nor the semantic trigger. Closing instruments: a pada-tagged root lexicon plus sense-disambiguated preverb-verb tokens (neither exists in the sibling repos today). Documented, not force-verdicted.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Тонкие панинийские правила «приставка + значение» — справочный материал, а не то, что подтверждает частотность: корпус их не судит (DCS не размечает ни P/Ā, ни семантическое условие). Держите их как ориентир, не как проверенный закон."
     },
     {
       "id": "APT-31",
@@ -373,7 +403,8 @@
       "ref": "Whitney 1889 §§927-929; Apte, Guide to Sanskrit Composition §210 (English original verified: 'also implies the idea of continuousness. The Imperfect cannot be used in this sense'); harvest APT-H-219 (Урок 19)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The register's first FALSE. Two checks make it solid. (1) The error is APTE'S OWN, not the Likhushina translation's: the digitized English §210 reads 'also implies the idea of continuousness. The Imperfect cannot be used in this sense' — «длительность» faithfully renders 'continuousness', so the earlier translation-inversion hypothesis is refuted. (2) Apte contradicts himself: his §207-208 state that as Sanskrit ceased to be spoken 'writers began to use these three [past] tenses promiscuously' — exactly Whitney §927's equivalence — which undercuts §210's categorical 'the Imperfect cannot'. Apte is transmitting a Pāṇinian aspectual doctrine (the aorist as भूतार्थे लुङ्, the general past) as a categorical rule the descriptive record does not bear out — a prescriptive-vs-descriptive miss of the same family as APT-21 (the Pāṇinian dative-of-anger). Graded MISLEADING because a beginner told 'the aorist is durative, the imperfect is not' learns the aspect backwards; and the aorist is in any case marginal in Classical usage (0.31% of verbal tokens, DCS — cf. Whitney §826), so the durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": "Заучите наоборот: длительное, продолжающееся прошлое несут имперфект и презенс, а аорист — «завершительное, только что». Аорист в классике редок (0,31 % глагольных словоупотреблений DCS; Whitney §826), так что длительное прошлое вы почти всегда встретите имперфектом."
     },
     {
       "id": "APT-32",
@@ -385,7 +416,8 @@
       "ref": "Whitney 1889 §1112, cf. §1121 (ápunar); harvest APT-H-500/501 (Урок 26)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Both the iterative and the adversative sense are lexically standard; correctly reported.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-33",
@@ -397,7 +429,8 @@
       "ref": "Whitney 1889 §1111, §1112c; harvest APT-H-502 (Урок 26)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Directly attested in Whitney's own adverb lists, both the -as and -eṇa forms.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-34",
@@ -409,7 +442,8 @@
       "ref": "Whitney 1889 §1111; harvest APT-H-504 (Урок 26)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Adverb attested in Whitney; the reduplication for the iterative sense is standard.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-35",
@@ -421,7 +455,8 @@
       "ref": "Whitney 1889 §1098; harvest APT-H-506 (Урок 26)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Precisely Whitney's account of the tas-adverbs — yatas is the ablative-sense adverb equivalent to yasmāt.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-36",
@@ -433,7 +468,8 @@
       "ref": "Whitney 1889 §510, §1129; harvest APT-H-508 (Урок 27)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The accusative government of the extent-preposition yāvat is standard; correctly reported.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-37",
@@ -445,7 +481,8 @@
       "ref": "Whitney 1889 §1101; harvest APT-H-510 (Урок 27)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correlative manner-adverbs per Whitney; the proportional doubling is a standard idiom, correctly stated.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-38",
@@ -457,7 +494,8 @@
       "ref": "Whitney 1889 §1135a; harvest APT-H-514/515 (Урок 28)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "hā classified as an interjection by Whitney; the grief-primary / disgust-rare split matches standard usage.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "APT-39",
@@ -469,7 +507,8 @@
       "ref": "Whitney 1889 §1133b, §1112; harvest APT-H-511/512 (Урок 28)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A correctly-described classical idiom; the nominative of both members and the adversative correlative are standard. Closes the substantive particle-sense set; the residual lesson-26-28 candidates (balavat adverbial, yat/yena clause-linkers) are uncontested descriptive glosses left in the harvest.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     }
   ]
 }

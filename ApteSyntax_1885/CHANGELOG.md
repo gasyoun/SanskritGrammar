@@ -9,6 +9,18 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-07-17
+### Added
+- **Methodichka «Учащемуся» takeaways in the reading-site overlay (H1095, Opus 4.8
+  `claude-opus-4-8[1m]`).** Closed metadoc backlog #3: each of the 10 flagged claims (8 OVERSTATED ·
+  1 FALSE · 1 UNTESTABLE) now carries a `methodichka` learner-takeaway field in
+  [`claims.yml`](claims.yml), threaded through [`build_claims.py`](../scripts/build_claims.py) into
+  `claims.json` + a new «Методичка — учащемуся» section of
+  [`CLAIMS_VERIFIED.md`](CLAIMS_VERIFIED.md), and rendered as a green «методичка» block by
+  [`ApteClaims.jsx`](../src/components/ApteClaims.jsx). `claims.yml` is the single source, so the
+  print methodichka's per-lesson «Учащемуся» advice and the web overlay can no longer diverge. JSX
+  compiles clean (Babel/preset-react); no verdicts or numbers changed.
+
 ## [0.8.0] - 2026-07-17
 ### Added
 - **Print methodichka — раздел I commentary (H1090, Opus 4.8 `claude-opus-4-8[1m]`).** A
