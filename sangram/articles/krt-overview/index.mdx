@@ -1,0 +1,132 @@
+---
+title: "Первичная деривация (kṛt): обзор"
+sidebar_label: kṛt — обзор
+slug: /sangram/articles/krt-overview
+description: "Обзорная статья SG-WF-002 (домен WF, кластер «Основания»). Первичная (отглагольная) деривация kṛt по пинованному снапшоту DCS. Количественная опора — нативно размеченная часть kṛt: отглагольные формы VerbForm∈{Part,Conv,Gdv,Inf} = 483 623 токена (8,5 % корпуса), чистое замкнутое множество (0 утечки на не-VERB). Причастия 70,6 %, абсолютив 21,1 %, герундив 5,8 %, инфинитив 2,4 %. kṛt-ИМЕНА (kartṛ, dāna) корпусом НЕ размечены (предел EM5, P5: ~59 % ложных по поверхности) — не считаются. Обзор, не пилот."
+---
+
+# Первичная деривация (kṛt): обзор
+
+_Создано: 17-07-2026 · Последнее обновление: 17-07-2026_
+
+> **Статус: статья-кандидат** (обзорный слот `SG-WF-002` ядра W2, реестр
+> [C2](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/data/articles.json);
+> манифест `art:krt-overview`). Публикация гейтится авторской визой — до неё все
+> формулировки ниже предварительны.
+
+## 1. Рамка кластера
+
+**kṛt** — первичная деривация: образование от **корня** отглагольных форм и имён
+(kṛ → kṛtvā «сделав», kartum «чтобы сделать», kartṛ «делатель», kāraka «деятель»).
+Это словообразовательный слой домена WF.
+
+Ключевая честность обзора: корпус размечает kṛt **лишь наполовину**. Нативно и чисто
+размечены **отглагольные формы** — причастия, абсолютив, герундив, инфинитив
+(признак `VerbForm`); это и есть количественная опора статьи (§ 3). А **kṛt-имена**
+(деятель kartṛ, действие dāna/gati) корпусом **не размечены** — деривационного слоя
+нет, и поверхностный отбор по финали леммы даёт ~59 % ложного (пилот
+[P5/SG-WF-003](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-suffixes/index.mdx),
+опубликованный честно-отрицательный результат). Три слоя источников:
+
+| Слой | Источник | Что даёт |
+|---|---|---|
+| **Аттестовано** | пинованный снапшот DCS (§ 2), `VerbForm∈{Part,Conv,Gdv,Inf}` | распределение отглагольных форм kṛt (§ 3) |
+| **Традиционно** | [Уитни 1889, гл. XVII §§ 935–1000](https://en.wikisource.org/wiki/Sanskrit_Grammar_%28Whitney%29/Chapter_XVII); Зализняк 1975 | инвентарь kṛt-суффиксов |
+| **Порождено** | конъюгатор именных форм | полная парадигма формы — но kṛt-имена корпусом не отделимы (§ 5) |
+
+## 2. Данные и воспроизводимость
+
+По контракту [C3](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx):
+
+- **Снапшот:** зеркало [gasyoun/dcs-conllu](https://github.com/gasyoun/dcs-conllu),
+  коммит-пин `04e0778d3dc971030229179e25eea043d06ff397` (270 текстов, 5 688 416
+  токенов), SQLite-мастер [VisualDCS](https://github.com/gasyoun/VisualDCS);
+  привязка — provenance-таблица + SHA-256 + тег
+  [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content).
+- **Универсум:** нативно размеченный kṛt = `upos='VERB'` с `VerbForm ∈ {Part, Conv, Gdv, Inf}`
+  — **483 623 токена**. Это **чистое замкнутое множество**: проверка даёт
+  **0 токенов** с этими значениями `VerbForm` на не-`VERB` (утечки нет).
+- **Скрипт:** [sg_wf_002_krt_overview.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_002_krt_overview.py)
+  — повторный прогон даёт те же числа; выкладки — в
+  [coverage_summary.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-overview/data/coverage_summary.json).
+
+## 3. Обзор системы
+
+**Отглагольные формы kṛt — 483 623 токена (8,5 % корпуса)** — распределены по четырём
+чётким подтипам (`VerbForm`):
+
+| Подтип | `VerbForm` | Токенов | Доля kṛt |
+|---|---|---:|---:|
+| причастие | Part | 341 556 | **70,6 %** |
+| абсолютив (-tvā/-ya) | Conv | 102 054 | 21,1 % |
+| герундив (-tavya/-anīya/-ya) | Gdv | 28 260 | 5,8 % |
+| инфинитив (-tum) | Inf | 11 753 | 2,4 % |
+
+Причастие резко доминирует (70,6 %). Внутри причастия дробление по времени **ненадёжно**:
+время проставлено лишь у ~22 % причастий — **78,1 % (266 660)** оставлены без тега времени
+(это масса -ta/-na прош. страд., слот
+[SG-MO-023](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/ta-na-participles/index.mdx));
+поэтому надёжное деление — на уровне `VerbForm`, а не тонкое präsens/prät./fut. причастия.
+
+**kṛt-имена в этот счёт не входят** (предел EM5). Поверхностный отбор по финали
+леммы шумен: леммы на -ana дают 95 263 токена (но это jana, vana, dhana, имя
+Duryodhana), -ti — 74 927 (pati, prajāpati), -tṛ — 31 042 (родство pitṛ/mātṛ, имя
+savitṛ). ~59 % такого отбора — ложное (P5). Поэтому обзор считает то, что корпус
+размечает (формы), и **не выдаёт** оценку по kṛt-именам.
+
+## 4. Примеры
+
+По одному представителю на подтип (причастие — двумя: прош. страд. и präsens; канонические
+SLP1-копии — в [манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-overview/article.manifest.json),
+контракт [C4](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)):
+
+| ID | Форма | Корень | Подтип | Locus | Смысл |
+|---|---|---|---|---|---|
+| `ex:krt-overview:1` | uktam | vac | причастие (Part, прош. страд.) | AbhidhKo 1 (s22) | сказанное |
+| `ex:krt-overview:2` | gacchantīm | gam | причастие (Part, präsens) | AĀ 5.1.5 (s3) | идущую |
+| `ex:krt-overview:3` | kṛtvā | kṛ | абсолютив (Conv) | AgniPur 3 (s5) | сделав |
+| `ex:krt-overview:4` | kartavyam | kṛ | герундив (Gdv) | ACint 1 (s53) | то, что должно быть сделано |
+| `ex:krt-overview:5` | kartum | kṛ | инфинитив (Inf) | ACint 1 (s6) | чтобы сделать |
+
+## 5. Ограничения
+
+1. **kṛt-имена не размечены (EM5).** Деятель/действие (kartṛ, dāna, gati) корпусом
+   не тегированы; поверхностный отбор ~59 % ложных (P5/SG-WF-003). Обзор их **не считает** —
+   это нижняя граница kṛt, не полный охват деривации.
+2. **Время причастия разрежено.** Тег времени лишь у ~22 % причастий (78 % без тега);
+   надёжно только деление по `VerbForm`, тонкое время-причастия — нет.
+3. **Пересечение с композитами.** Часть отглагольных форм — члены композитов (`Case=Cpd`);
+   здесь они посчитаны по `VerbForm` независимо от `Cpd`.
+4. **Пин зеркала.** Коммит-пин `04e0778…` осиротел; привязка — provenance-таблица +
+   SHA-256 + тег `c3-pin-04e0778-content` (§ 2), как у пилотов P1–P5 и актива G2.
+
+## 6. Карта подстатей
+
+Кластер kṛt раскрывается подстатьями (канон ID — за реестром
+[C2](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/02-word-formation.mdx);
+приоритет ① = ядро W2, ② = расширение):
+
+- **kṛt-суффиксы (имена)** — SG-WF-003 ① (✅ опубл., пилот P5 — честно-отрицательный: поверхностный отбор ~59 % ложных)
+- **причастия -ta/-na** — [SG-MO-023](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/ta-na-participles/index.mdx) ① (✅ опубл.) — крупнейший подтип (домен MO)
+- **абсолютив -tvā/-ya** — [SG-MO-026](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/absolutive/index.mdx) ① (✅ опубл., домен MO)
+- **герундив / инфинитив** — SG-MO-024/025 ② (именные формы глагола, домен MO)
+
+Обзорная рамка не переизлагает инвентарь слотов — они машинно-генерируются из реестра
+C2 (append-only); обзор лишь связывает измеримый формо-слой kṛt с подстатьями.
+
+## 7. Провенанс и ревизии
+
+Статья исполнена как обзорный слот ядра W2 (① представитель кластера) программы
+[C5 (§ 6)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx),
+по [контрольной точке открытия ядра](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx)
+(handoff [H1135](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1135-Opus_SanskritGrammar_sangram-wf-002-krt-overview_17.07.26.md),
+внутренний архив Uprava; scoping — параллельный воркфлоу-скаут эндшпиля ядра W2). Данные,
+скрипт и черновик — Opus 4.8 (`claude-opus-4-8[1m]`), 17-07-2026; научная ответственность
+и виза на публикацию — автор. Реестр публикационных ревизий манифеста пуст до авторской
+визы (контракт C4).
+
+| Дата | Ревизия | Основание |
+|---|---|---|
+| 17-07-2026 | Статья-кандидат (до визы) | Ядро W2, C5 § 6 SG-WF-002; H1135 |
+
+_Dr. Mārcis Gasūns_

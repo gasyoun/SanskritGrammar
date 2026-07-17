@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:krt-overview",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-WF-002",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Первичная деривация (kṛt): обзор",
+        "summary": "Обзорная статья SG-WF-002 (домен WF, кластер «Основания»). Первичная (отглагольная) деривация kṛt по пинованному снапшоту DCS. Корпус размечает kṛt наполовину: нативно и чисто — отглагольные ФОРМЫ (VerbForm∈{Part,Conv,Gdv,Inf}) = 483 623 токена (8,5 % корпуса), чистое замкнутое множество (0 утечки на не-VERB): причастие 341 556 (70,6 %), абсолютив 102 054 (21,1 %), герундив 28 260 (5,8 %), инфинитив 11 753 (2,4 %). Внутри причастия время разрежено (78 % без тега). kṛt-ИМЕНА (kartṛ, dāna) корпусом НЕ размечены (предел EM5): поверхностный отбор шумен (-ana 95k, -ti 75k — но jana/pati/имена; ~59 % ложных, пилот P5/SG-WF-003) — обзор их не считает. Обзор, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:krt-overview:1",
+        "layer": "scientific",
+        "text_slp1": "uktam",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s22)" },
+        "translations": { "ru": "сказанное (vac, причастие прош. страд.)" },
+        "gloss_ru": "kṛt-форма: причастие (VerbForm=Part) прош. страд. от √vac — uk-ta-m. Причастие — крупнейший подтип отглагольного kṛt (70,6 %); подробно в SG-MO-023.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part прош. страд.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:krt-overview:2",
+        "layer": "scientific",
+        "text_slp1": "gacCantIm",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 5.1.5 (s3)" },
+        "translations": { "ru": "идущую (gam, причастие präsens, Acc. ед. жен.)" },
+        "gloss_ru": "kṛt-форма: причастие präsens (Part) от √gam — gacch-ant-īm. Показывает, что Part охватывает не только -ta/-na, но и активные причастия наст. вр.; время проставлено лишь у ~22 % причастий.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part präsens", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:krt-overview:3",
+        "layer": "scientific",
+        "text_slp1": "kftvA",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s5)" },
+        "translations": { "ru": "сделав (kṛ, абсолютив)" },
+        "gloss_ru": "kṛt-форма: абсолютив (VerbForm=Conv) от √kṛ — kṛ-tvā. Второй по частоте подтип (21,1 %); правило -tvā/-ya — в SG-MO-026.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Conv абсолютив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:krt-overview:4",
+        "layer": "scientific",
+        "text_slp1": "kartavyam",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s53)" },
+        "translations": { "ru": "то, что должно быть сделано (kṛ, герундив)" },
+        "gloss_ru": "kṛt-форма: герундив / причастие долженствования (VerbForm=Gdv) от √kṛ — kar-tavya-m (суффикс -tavya). Подтип Gdv — 5,8 %.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Gdv герундив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:krt-overview:5",
+        "layer": "scientific",
+        "text_slp1": "kartum",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s6)" },
+        "translations": { "ru": "чтобы сделать (kṛ, инфинитив)" },
+        "gloss_ru": "kṛt-форма: инфинитив (VerbForm=Inf) от √kṛ — kar-tum (суффикс -tum). Наименьший подтип (2,4 %), но частотнейший в своём классе.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Inf инфинитив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}

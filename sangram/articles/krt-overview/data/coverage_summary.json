@@ -1,0 +1,139 @@
+{
+  "study": "Sangram SG-WF-002 (Деривация: kṛt, обзор) — primary/deverbal derivation",
+  "toc_ref": "SG-WF-002",
+  "kind": "overview (no kill-gate)",
+  "method": "the NATIVELY-tagged kṛt = non-finite verb forms VerbForm∈{Part,Conv,Gdv,Inf} (closed set, zero leak onto non-VERB); kṛt-NOUNS not counted (EM5, P5 ~59% false)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominator_all_tokens": 5688416,
+  "deverbal_krt_total": 483623,
+  "deverbal_krt_share": 0.085,
+  "subtypes": {
+    "Part": {
+      "ru": "причастие",
+      "tokens": 341556,
+      "share_of_krt": 0.7062
+    },
+    "Conv": {
+      "ru": "абсолютив (-tvā/-ya)",
+      "tokens": 102054,
+      "share_of_krt": 0.211
+    },
+    "Gdv": {
+      "ru": "герундив (-tavya/-anīya/-ya)",
+      "tokens": 28260,
+      "share_of_krt": 0.0584
+    },
+    "Inf": {
+      "ru": "инфинитив (-tum)",
+      "tokens": 11753,
+      "share_of_krt": 0.0243
+    }
+  },
+  "closed_set_proof": {
+    "leak_verbform_on_non_verb": 0,
+    "note": "VerbForm∈{Part,Conv,Gdv,Inf} occurs ONLY on upos=VERB → clean closed set"
+  },
+  "participle_tense_sparsity": {
+    "part_total": 341556,
+    "untensed": 266660,
+    "untensed_share": 0.7807,
+    "dist": {
+      "untensed": 266660,
+      "Pres": 64209,
+      "Past": 9112,
+      "Fut": 1575
+    },
+    "note": "feat_tense set on only ~22% of participles; reliable split is VerbForm-level"
+  },
+  "krt_noun_surface_noise_EM5": {
+    "tṛ": {
+      "tokens": 31042,
+      "top_lemmas": [
+        "pitṛ (8158)",
+        "mātṛ (3149)",
+        "bhrātṛ (2498)",
+        "hotṛ (1800)",
+        "savitṛ (1738)"
+      ]
+    },
+    "ana": {
+      "tokens": 95263,
+      "top_lemmas": [
+        "jana (4097)",
+        "vana (4031)",
+        "vacana (3121)",
+        "darśana (2604)",
+        "dhana (2528)"
+      ]
+    },
+    "ti": {
+      "tokens": 74927,
+      "top_lemmas": [
+        "pati (4492)",
+        "prajāpati (3007)",
+        "śakti (2639)",
+        "gati (2608)",
+        "prakṛti (1577)"
+      ]
+    },
+    "tva": {
+      "tokens": 21826,
+      "top_lemmas": [
+        "tva (10859)",
+        "sattva (4165)",
+        "tattva (2361)",
+        "bodhisattva (1554)",
+        "mahāsattva (626)"
+      ]
+    }
+  },
+  "top_forms_by_subtype": {
+    "Part": [
+      "uktam (vac, 3276)",
+      "kṛtam (kṛ, 2678)",
+      "kṛta (kṛ, 2578)",
+      "uktaḥ (vac, 2185)",
+      "gataḥ (gam, 1862)",
+      "sthitaḥ (sthā, 1268)"
+    ],
+    "Conv": [
+      "kṛtvā (kṛ, 6010)",
+      "dṛṣṭvā (dṛś, 5327)",
+      "śrutvā (śru, 3956)",
+      "uktvā (vac, 2372)",
+      "gatvā (gam, 1938)",
+      "dattvā (dā, 1825)"
+    ],
+    "Gdv": [
+      "kāryam (kṛ, 972)",
+      "kartavyam (kṛ, 652)",
+      "deyam (dā, 584)",
+      "kāryā (kṛ, 481)",
+      "jñeyam (jñā, 467)",
+      "kāryaḥ (kṛ, 458)"
+    ],
+    "Inf": [
+      "kartum (kṛ, 887)",
+      "vaktum (vac, 611)",
+      "draṣṭum (dṛś, 547)",
+      "śrotum (śru, 522)",
+      "gantum (gam, 342)",
+      "hantum (han, 315)"
+    ]
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 ch. XVII §§935–1000 (primary derivation / kṛt)"
+  },
+  "limits": {
+    "EM5_krt_nouns": "deverbal agent/action nouns not tagged; surface match ~59% false (P5/SG-WF-003) — NOT counted here",
+    "participle_tense": "78% of participles tense-unmarked; no fine present/past/future participle census",
+    "cpd_overlap": "some deverbal forms are compound members (Case=Cpd); counted here by VerbForm regardless of Cpd",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
