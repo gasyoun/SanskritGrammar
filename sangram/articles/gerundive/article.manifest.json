@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:gerundive",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-024",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Герундив (причастие долженствования)",
+        "summary": "Статья SG-MO-024 (домен MO, кластер «Именные формы глагола»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Герундив — причастие долженствования/необходимости («то, что должно быть сделано») — нативно и чисто размечен в DCS через feat_verbform=Gdv: 28 260 токенов, отглагольное прилагательное со страдательным значением (агент в инструменталисе: mayā kāryam «мною должно быть сделано»). База нативно чистая (каждый Gdv-токен — герундив), поэтому, в отличие от поверхностной ловушки taddhita (~50 % ложных по всем именам), разбиение ЧИСТОГО множества по морфологии финали на три традиционных суффикса надёжно: -ya 19 901 (kārya, jñeya «познаваемо», deya «даваемо»), -tavya 5740 (kartavya «долг», gantavya), -anīya 1280 (karaṇīya); ~4,7 % финаль-неоднозначны. feat_formation/feat_voice=None: суффикс не тегирован (разбор по финали), страдательность не размечена (грамматический факт, не аннотация; связь с пассивом SG-MO-027). Топ-леммы kṛ 3576 (все три суффикса на одном корне), jñā 1427, dā 1319. Суффикс -ya герундива (kārya) — ложное срабатывание taddhita -ya (P5/SG-WF-004). Уитни §§961–966. Позитив, сосед абсолютива (SG-MO-026) и инфинитива (SG-MO-025)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:gerundive:1",
+        "layer": "scientific",
+        "text_slp1": "kAryam",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 248 (s34)" },
+        "translations": { "ru": "то, что должно быть сделано (kṛ + -ya, герундив)" },
+        "gloss_ru": "герундив на -ya: kṛ «делать» → kārya «то, что должно быть сделано» (гуна корня). Самый частотный суффикс герундива (-ya, 19 901) и самая частотная лемма (kṛ, 3576). Именно эта форма засоряет поверхностный отбор taddhita -ya ложными срабатываниями (§ 7).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_verbform=Gdv, лемма kṛ, финаль -ya", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:gerundive:2",
+        "layer": "scientific",
+        "text_slp1": "kartavyam",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s53)" },
+        "translations": { "ru": "долг, что надлежит сделать (kṛ + -tavya, герундив)" },
+        "gloss_ru": "герундив на -tavya: kṛ → kartavya «то, что должно быть сделано; долг» (та же основа, что инфинитив kartum). Второй суффикс (-tavya, 5740); часто субстантивируется в значении «обязанность».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_verbform=Gdv, лемма kṛ, финаль -tavya", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:gerundive:3",
+        "layer": "scientific",
+        "text_slp1": "karaRIyam",
+        "locus": { "corpus": "dcs", "work": "Arthaśāstra", "ref": "ArthaŚ 2.6 (s13)" },
+        "translations": { "ru": "что должно быть сделано (kṛ + -anīya, герундив)" },
+        "gloss_ru": "герундив на -anīya: kṛ → karaṇīya «то, что должно быть сделано». Третий суффикс (-anīya, 1280). Вместе с kārya и kartavya показывает: один корень kṛ несёт все три суффикса герундива при одном значении (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_verbform=Gdv, лемма kṛ, финаль -anīya", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:gerundive:4",
+        "layer": "scientific",
+        "text_slp1": "jYeyA",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 1 (s5)" },
+        "translations": { "ru": "(та, что) должна быть познана (jñā + -ya, герундив)" },
+        "gloss_ru": "герундив на -ya от другого корня: jñā «знать» → jñeya «то/та, что должно быть познано» (ж. р. jñeyā). Показывает -ya вне корня kṛ; частотная лемма (jñā, 1427).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_verbform=Gdv, лемма jñā, финаль -ya", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:gerundive:5",
+        "layer": "scientific",
+        "text_slp1": "gantavye",
+        "locus": { "corpus": "dcs", "work": "Amaruśataka", "ref": "AmaruŚ 1 (s31)" },
+        "translations": { "ru": "(туда,) куда должно идти (gam + -tavya, герундив)" },
+        "gloss_ru": "герундив на -tavya от глагола движения: gam «идти» → gantavya «то, куда/что должно идти». Показывает -tavya вне kṛ; лирический контекст (Амаручатака).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_verbform=Gdv, лемма gam, финаль -tavya", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}

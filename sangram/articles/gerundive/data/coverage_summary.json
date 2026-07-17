@@ -1,0 +1,65 @@
+{
+  "study": "Sangram SG-MO-024 (Герундив) — native positive; suffix split within a clean set",
+  "toc_ref": "SG-MO-024",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive (VerbForm=Gdv)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_nonfinite_deverbal_part_conv_gdv_inf": 483623
+  },
+  "gerundive_native_positive": {
+    "total_verbform_gdv": 28260,
+    "suffix_split_by_surface": {
+      "-ya": 19901,
+      "-anīya": 1280,
+      "other": 1339,
+      "-tavya": 5740
+    },
+    "suffix_note": "the Gdv SET is native-clean (every token is a gerundive); only the 3-way suffix assignment uses surface morphology, ~5% surface-ambiguous ('other'). Reliable, unlike the taddhita -ya surface trap (there the base SET was ~50% false).",
+    "top_lemmas": [
+      "kṛ (3576)",
+      "jñā (1427)",
+      "dā (1319)",
+      "grah (694)",
+      "vijñā (683)",
+      "vac (653)",
+      "dṛś (517)",
+      "sādhay (489)",
+      "vid (457)",
+      "pūjay (455)"
+    ],
+    "not_split_natively": {
+      "feat_formation": {
+        "null": 28260
+      },
+      "feat_voice": {
+        "null": 28260
+      }
+    },
+    "voice_note": "feat_voice is None, but the gerundive is inherently PASSIVE in sense (agent in the instrumental) — ties to the passive (SG-MO-027)"
+  },
+  "cross_reference": {
+    "absolutive_conv": 102054,
+    "infinitive_inf": 11753,
+    "note": "sibling non-finite deverbal forms: absolutive (SG-MO-026, Conv), infinitive (SG-MO-025, Inf); the -ya gerundive (kārya) is the P5/SG-WF-004 taddhita -ya false positive"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§961–966 (gerundive / future passive participle: -ya, -tavya, -anīya)"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "suffix_by_surface": "the 3-way suffix split is by surface morphology within the clean Gdv set (~5% ambiguous); DCS does not tag the suffix (feat_formation None)",
+    "voice_not_tagged": "the inherent passive sense is not in feat_voice (None); it is a grammatical fact, not an annotation",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
