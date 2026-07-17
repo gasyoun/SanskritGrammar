@@ -19,6 +19,12 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **Талмуд-сверка аористов — второй проход, консолидация (H1054).** Сверка доведена до полных **53 записей** четырех реестров (31 подтверждено · 4 противоречия книгам, все подтверждают стоящие вердикты HK-5/HK-38/HB-60/HB-372 · 18 «молчит»); файл сверки, на который ссылался v0.50.0, реально создан по обещанному адресу — [AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md); новый инструмент — перепись аористных классов Приложения 1: [`aorist_class_census.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/aorist_class_census.py) → [`aorist_class_census.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/aorist_class_census.json) (745 корней: iṣ 511 · удв. 342 · s 196 · корневой 142 · тематический 116 — 5-й из 7, вторая независимая ось против HK-5 · siṣ 33 · sa 26; кросс-таблица seṭ×класс: класс 4 aniṭ-доминантен 102/21, класс 5 seṭ-доминантен 337/37, у 6–7 seṭ-корней ноль). Fable 5 (`claude-fable-5`).
+
+### Fixed
+- **Талмуд-заметки v0.50.0 переселены из сгенерированных `CLAIMS_VERIFIED.md` в `claims.yml` (18 записей) + регенерация** — первый проход правил генерируемые файлы напрямую, и следующая регенерация стерла бы все 12 его ссылок; теперь они regen-устойчивы. Fable 5 (`claude-fable-5`).
+
 ## [0.51.0] - 2026-07-17
 
 ### Added

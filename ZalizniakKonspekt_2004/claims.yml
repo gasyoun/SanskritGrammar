@@ -156,11 +156,14 @@ entries:
       restricted to ś/ṣ/h-final roots with i/u/ṛ nuclei) and the siṣ-aorist (parasmaipada-only,
       a handful of ā-final roots + yam/ram/nam) — both marginal by class size; corpus context:
       ALL aorist types together are 2,452 tokens = 0.31% of verbal
-    ref: "Whitney §§911-914 (siṣ), 916-920 (sa); DCS timws.csv; cf. HK-1/HB-61 (aorist rarity), OCH-30"
+    ref: "Whitney §§911-914 (siṣ), 916-920 (sa); DCS timws.csv; cf. HK-1/HB-61 (aorist rarity), OCH-30; TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054)"
     verdict_pedagogy: JUSTIFIED
     note: >-
       The residue outside the five main types is doubly marginal — rare formations inside an
       already-rare category. 'Крайне редки' is exact.
+      TALMUD CROSS-CHECK (H1054): catalog-counted — Zaliznyak's two excluded types are exactly
+      the two smallest classes of the Talmud's Приложение-1: siṣ 33 and sa 26 roots of 745
+      (aorist_class_census.py), vs 116–511 for his five main types.
 
   - id: KZ-4
     loc: "mdx line 365"

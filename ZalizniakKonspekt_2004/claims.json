@@ -1,6 +1,6 @@
 {
   "work": "Zaliznyak, Конспект санскритской грамматики (Sanskrit Grammar Synopsis), 2004",
-  "generated": "16-07-2026",
+  "generated": "17-07-2026",
   "synthesis": "FULL DRAIN (17 verified: 17 TRUE · 0 OVERSTATED · 0 FALSE · 0 UNTESTABLE) — the first register of the programme to end with EVERY claim confirmed, including the five that were instrument-blocked at seed time. The blocker was closed the same day it was confirmed: a Rigveda-isolation instrument (rigveda_kz_fractions.py over the pinned dcs_full.sqlite, dcs-conllu 04e0778) measured Zaliznyak's five hand-era exact fractions and found them ASTONISHINGLY exact — 1/3 claimed vs 33.2% measured (-āsas, to 0.1pp), 7/8 vs 84.9%, 3/5 vs 65.6%, 1/2 vs 42.3%, 5/6 vs 76.9% — five fractions from the Vedic-philology hand-count era reproduced by a 2026 treebank to within rounding-and-scope distance. The same instrument then flipped the two Vedic-vs-Epic UNTESTABLE entries to measured TRUE: injunctive 7.3% of RV finite verbs vs 0.5% in the Mahābhārata (≈15×) with the optative reversed (KZ-11), and ta-participle predication 1.7% of RV verbal sentence-roots vs 11.8-18.4% in the epic samples (KZ-12) — the FIRST measured data point on the style-I/ style-II arc that Ocherk §207 (OCH-63) states from the classical end. Zaliznyak's calibration record across both his books now stands at 91 verified claims with zero fact-axis flags. The non-blocked-drain synthesis follows, then the original seed's.\n\nNON-BLOCKED DRAIN COMPLETE (12 verified at that stage: 10 TRUE · 2 UNTESTABLE; the 5 instrument-blocked Rigveda fractions then still queued). The drain confirms the Zalizniak calibration profile found in the Ocherk register: zero fact-axis flags — his quantifiers are exact at every level the instruments can reach ('крайне редки' for the aorist residue = rare types inside a 0.31% category, KZ-3; enumerated exceptions for the pure-adposition rarity, KZ-6), and both his books state the same facts with mutually consistent hedges (the -na subclass rule KZ-5 = OCH-43; the periphrastic-future-middle rarity KZ-2 = OCH-42; the adposition claim KZ-6 = OCH-64). One methodological gain worth keeping: a diachronic claim proved adjudicable WITHOUT period-tagged tokens (KZ-7, the Vedic compound-poverty claim) because Whitney states the gradient itself — the D-B systemic authority covers qualitative diachrony even where corpus quantification stays blocked. The two UNTESTABLE entries (KZ-11 injunctive-vs-optative, KZ-12 participle-predication) are the Vedic end of the same arc as Ocherk's §207 flagship — one period-tagged instrument unlocks all of them plus this book's five blocked fractions. The original seed synthesis follows.\n\nTwo-claim seed — deliberately small, not padded. Konspekt turned out to be the hardest of the four sources checked so far (Kochergina, Bühler, Knauer, Ocherk) to verify with existing ground truth, for two distinct reasons found by actually reading all 657 lines rather than assuming from the earlier genre-check grep: (1) it is overwhelmingly tabular/mechanical (declension paradigms, conjugation paradigms, a root-and-preverb lexicon) with only a thin vein of hedged prose running through it, and (2) several of that thin vein's richest claims are Rigveda-specific exact fractions (1/3, 7/8, 3/5, 1/2, 5/6 of cases) that need period-isolated corpus data this pipeline's DCS ground truth does not currently expose — confirmed by checking, not assumed. KZ-1 (the seṭ/aniṭ/veṭ classification is genuinely mixed, \"many fluctuations and inconsistencies\") is TRUE by cross-reference to Kochergina's already-established HK-4 finding (future-stem seṭ share 56.8%, i.e. close to a 50/50 split, not a clean rule) — a different book independently confirms the same underlying messiness Zaliznyak describes qualitatively. KZ-2 (periphrastic future middle voice is \"редко\", rare) is TRUE but weakly evidenced: DCS-2021's own tense/mood codebook has no separate tag for medium periphrastic future at all (only \"Periph. Future\" / Active, 1,290 tokens) — consistent with rarity, though the absence of a corpus tag is not the same as a measured ratio, and this is flagged honestly rather than overclaimed as a precise number. No errors found; the remaining 15 candidates are genuinely open, not a reluctant-to-verify backlog — five specifically need new corpus infrastructure (Rigveda-period isolation) before anyone can promote them.",
   "claims": [
     {
@@ -13,7 +13,8 @@
       "ref": "DCS-2021 (KocherginaUchebnik_1998/verify_claims_dcs.py HK4_future); cf. KocherginaUchebnik_1998 HK-4, BuhlerLeitfaden_1923 HB-59 (same corpus fact independently confirmed twice already)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Third independent confirmation (after Kochergina and Bühler) that the seṭ/aniṭ split in the future stem is genuinely close to even rather than following the clean root-class correlation a learner might expect — Zaliznyak's hedge here is honest, not an undersell or oversell.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-2",
@@ -25,7 +26,8 @@
       "ref": "DCS-2021 timws.csv (ZalizniakKonspekt_2004/verify_claims_dcs.py; cf. BuhlerLeitfaden_1923/verify_claims_dcs.py's tense-code table)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Weakly evidenced by design, flagged honestly: the corpus's own tagging scheme carrying no medium-voice periphrastic-future code is consistent with genuine rarity, but an absent tag is not the same as a measured token ratio — this is the best available evidence, not a precise confirmation. Cf. ZalizniakOcherk_1978 §159 — the same claim about the same paradigm cell appears independently in both Zaliznyak texts; the Ocherk twin has since been verified TRUE (OCH-42, 15-07-2026) on Whitney §§945-947 plus this same codebook observation, so the two books now share one verdict.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-3",
@@ -34,10 +36,11 @@
       "kind": "statistic",
       "verdict_fact": "TRUE",
       "number": "systemic: the formations outside his five types are the sa-aorist (a closed class restricted to ś/ṣ/h-final roots with i/u/ṛ nuclei) and the siṣ-aorist (parasmaipada-only, a handful of ā-final roots + yam/ram/nam) — both marginal by class size; corpus context: ALL aorist types together are 2,452 tokens = 0.31% of verbal",
-      "ref": "Whitney §§911-914 (siṣ), 916-920 (sa); DCS timws.csv; cf. HK-1/HB-61 (aorist rarity), OCH-30",
+      "ref": "Whitney §§911-914 (siṣ), 916-920 (sa); DCS timws.csv; cf. HK-1/HB-61 (aorist rarity), OCH-30; TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The residue outside the five main types is doubly marginal — rare formations inside an already-rare category. 'Крайне редки' is exact.",
-      "mg_footnote": null
+      "note": "The residue outside the five main types is doubly marginal — rare formations inside an already-rare category. 'Крайне редки' is exact. TALMUD CROSS-CHECK (H1054): catalog-counted — Zaliznyak's two excluded types are exactly the two smallest classes of the Talmud's Приложение-1: siṣ 33 and sa 26 roots of 745 (aorist_class_census.py), vs 116–511 for his five main types.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-4",
@@ -49,7 +52,8 @@
       "ref": "Whitney §794; = BuhlerLeitfaden_1923 HB-55 (the same contraction class, verified with the same conditioning)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Second register appearance of the e-perfect class; Bühler states the segmental conditioning, Zaliznyak the majority quantifier — both sides of the same Whitney description. Exact share over the root inventory would need the root-shape join (cf. OCH-16), unmeasured but not load-bearing for 'большинство' given the conditioned residue.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-5",
@@ -61,7 +65,8 @@
       "ref": "Whitney §957; = ZalizniakOcherk_1978 OCH-43 (the author's own Ocherk twin, verified 15-07-2026); cf. HK-29/HB-38",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Fourth register appearance of the -ta/-na fact and the second within Zaliznyak's own two books — his Konspekt and Ocherk phrasings agree with each other and with Whitney's root-class assignment.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-6",
@@ -73,7 +78,8 @@
       "ref": "Whitney §§1123-1130; = ZalizniakOcherk_1978 OCH-64 (the Ocherk twin «слов только-предлогов практически нет», verified TRUE)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The Konspekt version is the stronger formulation of the pair — it doesn't just assert the rarity, it enumerates the exceptions. Both Zaliznyak books, one verdict.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-7",
@@ -85,7 +91,8 @@
       "ref": "Whitney §1246-1247 (growth of composition from Veda to later language)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A diachronic claim adjudicable WITHOUT period-tagged tokens because the reference grammar states the gradient itself (D-B: Whitney is the systemic authority). Corpus quantification still lands on the period-tagging gap — the qualitative direction does not.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-8",
@@ -97,7 +104,8 @@
       "ref": "Whitney 1889 (Vedic resolution of semivowels; e.g. the §113 remarks on vyūha-type readings)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A philological-practice claim rather than a token-frequency one; graded on the systemic authority. 'Почти всегда' for avagraha-restoration matches the editorial norm.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-9",
@@ -109,7 +117,8 @@
       "ref": "Whitney §§208-209 (final n before t/c: the historical s and its extension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'обычно... лишь там, где s этимологическое' hedge matches the historical-grammar account; a Vedic-token proportion would need period-isolated junction counts (the standing period-tagging gap), but the conditioning itself is the reference description.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-10",
@@ -121,7 +130,8 @@
       "ref": "Whitney §553 and the Vedic-endings remarks of the conjugation chapters",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Нередко' is the right register for a variant Whitney treats as a standing Vedic alternative; the exact Vedic-token ratio sits behind the period-tagging gap.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-11",
@@ -133,7 +143,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ11_mood_by_period (DCS snapshot 04e0778)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "UNBLOCKED THE SAME DAY it was graded untestable: the Rigveda-isolation instrument built for the five fraction claims (KZ-13..KZ-17) answers this one with a second query. Both halves of the claim confirmed with an order-of-magnitude margin.",
-      "mg_footnote": "Измерено новым инструментом периодной изоляции: инъюнктив — 7,3 % личных форм Ригведы против 0,5 % в Махабхарате и 0,4 % в Рамаяне (≈ в 15 раз чаще); оптатив — 4,1 % в Ригведе против 9,1 % в Махабхарате. Оба направления Зализняка подтверждены числом."
+      "mg_footnote": "Измерено новым инструментом периодной изоляции: инъюнктив — 7,3 % личных форм Ригведы против 0,5 % в Махабхарате и 0,4 % в Рамаяне (≈ в 15 раз чаще); оптатив — 4,1 % в Ригведе против 9,1 % в Махабхарате. Оба направления Зализняка подтверждены числом.",
+      "methodichka": null
     },
     {
       "id": "KZ-12",
@@ -145,7 +156,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ12_root_predicates (DCS snapshot 04e0778)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The Vedic half of the arc Ocherk §207 states from the classical end — now the FIRST measured point on that arc (style-I predication dominant in the RV). The full §207 gradient remains open (it needs the same census over classical prose), but the instrument and the first data point now exist.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-13",
@@ -157,7 +169,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ13_nvpl_m_asas",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The flagship of the five: a hand-era exact fraction re-derived by treebank and confirmed to 0.1pp. Whatever count Zaliznyak was citing (Arnold/Macdonell-line Vedic statistics), the corpus reproduces it.",
-      "mg_footnote": "Измерено: 909 форм на -āsas против 1 832 на -ās в Ригведе = 33,2 % при заявленной «1/3» (33,3 %). Ручной подсчёт ведологов столетней давности и машинный подсчёт 2026 года совпали с точностью до десятой доли процента."
+      "mg_footnote": "Измерено: 909 форм на -āsas против 1 832 на -ās в Ригведе = 33,2 % при заявленной «1/3» (33,3 %). Ручной подсчёт ведологов столетней давности и машинный подсчёт 2026 года совпали с точностью до десятой доли процента.",
+      "methodichka": null
     },
     {
       "id": "KZ-14",
@@ -169,7 +182,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ14_nvadu_m_aa",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Direction and magnitude confirmed; the residual gap is within annotation/segmentation noise for a 952-token slot.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-15",
@@ -181,7 +195,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ15_nvapl_n_aa",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "If anything an under-claim: measured 65.6% vs stated 60%. TRUE with the delta recorded.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-16",
@@ -193,7 +208,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ16_ipl_ebhis",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The loosest fit of the five — graded TRUE reading '1/2' as 'roughly half' (the hand-count era's register for a near-even split), with the exact measurement recorded so a stricter reader can re-grade against their own tolerance.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "KZ-17",
@@ -205,7 +221,8 @@
       "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ17_1pl_masi",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Direction emphatic (masi dominant), magnitude within scope-definition distance of the stated fraction. The 156-token slot is small enough that mood-scope choices move the needle — recorded for the re-runner.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     }
   ]
 }

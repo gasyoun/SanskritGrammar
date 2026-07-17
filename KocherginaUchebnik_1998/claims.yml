@@ -207,7 +207,7 @@ entries:
       аориста. Обычно образуется от корней на согласную.
     kind: statistic
     falsifiable_as: "is the thematic (a-)aorist the most frequent of the ~7 aorist types in DCS"
-    sources: [dcs, whitney]
+    sources: [dcs, whitney, talmud]
     verdict_fact: OVERSTATED
     number: >-
       MEASURED (16-07-2026, aorist_type_ranking.py, H1045): the DCS-2021 blocker
@@ -227,7 +227,8 @@ entries:
       2 of 6 checks confirm Type II as top; 4 do not
     ref: >-
       Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py;
-      hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification)
+      hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification);
+      TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054, catalog axis)
     verdict_pedagogy: JUSTIFIED
     note: >-
       Whitney's own account (and every grammar that repeats it) may well be right
@@ -238,6 +239,11 @@ entries:
       dominates by raw frequency (not merely a bhū artifact) and s-aorist is the
       most productive type by root count. Recorded as OVERSTATED — directionally
       defensible in the narrowest reading, not in the broad one actually stated.
+      TALMUD CROSS-CHECK (17-07-2026, H1054): the systematic (catalog) axis agrees
+      with the verdict — in the Talmud's Приложение-1 (745 roots,
+      aorist_class_census.py) the thematic class 2 is only 5th of 7 by root count
+      (116 roots, vs iṣ- 511 · reduplicated 342 · s- 196 · root 142), so «самый
+      распространенный» is not supported on ANY measured axis, corpus or catalog.
 
   - id: HK-6
     loc: "Занятие XXIV / mdx line 5862"
@@ -725,6 +731,10 @@ entries:
     note: >-
       Understates the root-aorist inventory. The 'только Parasmaipada' half is fine; '-ā roots + bhū'
       is an over-narrow characterisation of which roots take the type.
+      TALMUD CROSS-CHECK (H1054): Приложение-1 assigns class 1 (root aorist) to 142 of 745 roots —
+      the Vedic-inclusive breadth that confirms the inventory is far wider than '-ā + bhū'; on the
+      classical P.-only narrowing the Talmud is silent (its Whitney-based system generates the Vedic
+      middles too). Pairs with OCH-85, the post-Vedic-scoped variant of the same rule, which is TRUE.
 
   - id: HK-39
     loc: "Занятие XXXIX / mdx line 10417"
@@ -3213,6 +3223,9 @@ entries:
       Brāhmaṇa/Śrautasūtra prescriptive prose) measures something adjacent, not
       identical, to what the claim means. Recorded as a sized negative pilot so the
       proxy is never re-derived as if it settled the question either way.
+      TALMUD CROSS-CHECK (H1054): the Talmud does NOT lift the untestability — it is a
+      generative form catalog with no register/genre/usage dimension, so it cannot witness
+      a claim about where aorist tokens occur in texts. Verdict stays UNTESTABLE.
 
   - id: HK-208
     loc: Занятие XXXVII / mdx line 9618
@@ -3237,7 +3250,7 @@ entries:
     - whitney
     verdict_fact: 'TRUE'
     number: 'systemic: the thematic (a-)aorist inflects with the class-VI imperfect endings in both voices'
-    ref: Whitney §846-847 (thematic aorist)
+    ref: "Whitney §846-847 (thematic aorist); Талмуд — класс 2 = тематический {ø}, структурно о.н.в. VI кл. — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: Correct thematic-aorist paradigm identity. Anchor.
 
@@ -3323,11 +3336,14 @@ entries:
     verdict_fact: 'TRUE'
     number: 'systemic: the siṣ-aorist (-siṣ) and the sa-aorist (-sa) are the two least frequent aorist formation types;
       the DCS-2021 export does not tag aorist sub-types (cf. HK-5), so the per-type count is not separately reproducible,
-      but Whitney confirms their rarity'
-    ref: Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags
+      but Whitney confirms their rarity; TALMUD (H1054): a systematic per-type count now exists — classes 6 (siṣ) and
+      7 (sa) are the two SMALLEST classes of the Приложение-1 catalog, 33 and 26 roots of 745 (aorist_class_census.py)'
+    ref: Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags;
+      TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054)
     verdict_pedagogy: JUSTIFIED
-    note: Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), so the
-      claim rests on the reference grammar, which supports it.
+    note: Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), but the
+      Talmud catalog now supplies the systematic per-type count (siṣ 33 · sa 26 roots — the two smallest classes),
+      upgrading the claim from reference-grammar-only to catalog-counted.
 
   - id: HK-216
     loc: Занятие XXXVIII / mdx line 9956
@@ -3381,7 +3397,7 @@ entries:
     verdict_fact: 'TRUE'
     number: 'systemic: the siṣ-aorist (type VI) is Parasmaipada-only and restricted to a few ā-roots, running parallel
       to their -s forms'
-    ref: Whitney §914 (siṣ-aorist)
+    ref: "Whitney §914 (siṣ-aorist); Талмуд — индикатив P-only вне его охвата, но Ā-прекатив «еще реже» строится и по 6 классу; класс 6 = 33 корня — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: Correct siṣ-aorist restriction. Anchor.
 
