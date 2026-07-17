@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:taddhita-overview",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-WF-004",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Вторичная деривация (taddhita): обзор",
+        "summary": "Обзорная статья SG-WF-004 (домен WF, кластер «Деривация»), эндшпильный слот ядра W2. Вторичная (именная) деривация taddhita по пинованному снапшоту DCS — честный отрицательный результат. taddhita размечена НУЛЁМ признаков, и, в отличие от kṛt (SG-WF-002), не имеет нативно размеченного подмножества: категория в аннотации невидима. Именной универсум NOUN+ADJ = 2 996 410 токенов (52,7 %), но taddhita в нём без пометы. Единственная зацепка — поверхностный отбор по финали леммы — проваливается: по ручной адъюдикации посеянной частотно-взвешенной выборки (60 лемм-типов, 10 суффиксов) настоящей taddhita лишь 30 (точность 50 %); прочие 50 % — kṛt-герундивы/агенты (-ya/-aka/-in от корней, 27 %), первичные имена (sūrya, haya, hiraṇya, 20 %), местоименные формы (tā, tva) и композиты. Крупнейший загрязнитель -ya (224 191 токен). Путь «via MW etymology» измерен в P5 как малополный (recall 0,09). Самый тяжёлый негатив эндшпиля, форма-типа EM5. Обзор, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:taddhita:1",
+        "layer": "scientific",
+        "text_slp1": "devatA",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 1 (s82)" },
+        "translations": { "ru": "божество, божественность (deva + -tā, абстракт)" },
+        "gloss_ru": "настоящая taddhita: deva + -tā «божественность/божество» (3468 токенов). Суффикс -tā диагностичен для абстракта, но корзина -tā загрязнена местоименной леммой tā и именами (sītā) — см. § 3.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; NOUN, лемма devatā", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:taddhita:2",
+        "layer": "scientific",
+        "text_slp1": "pakziRo",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 19 (s17)" },
+        "translations": { "ru": "птицы (pakṣa + -in, поссессив «крылатый»)" },
+        "gloss_ru": "настоящая taddhita: pakṣa + -in «обладающий крыльями = птица» (705). Но корзина -in ловит и первичные основы на согласный (pathin «путь»), и kṛt-агентов (kāṅkṣin).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; NOUN, лемма pakṣin", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:taddhita:3",
+        "layer": "scientific",
+        "text_slp1": "guRavat",
+        "locus": { "corpus": "dcs", "work": "Arthaśāstra", "ref": "ArthaŚ 1.17 (s50)" },
+        "translations": { "ru": "обладающий качествами (guṇa + -vat, поссессив)" },
+        "gloss_ru": "настоящая taddhita: guṇa + -vat «имеющий качества» (284). Но корзина -vat загрязнена bhavat «вы/присутствующий» и коррелятивом yāvat — не поссессивами.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; ADJ, лемма guṇavat", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:taddhita:4",
+        "layer": "scientific",
+        "text_slp1": "kAryARi",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s237)" },
+        "translations": { "ru": "дела, то что должно быть сделано (√kṛ + -ya, ГЕРУНДИВ)" },
+        "gloss_ru": "ЛОЖНОЕ срабатывание: kārya — это kṛt-герундив от √kṛ (2881), не taddhita. Финаль -ya совпадает с относительным taddhita -ya, но база здесь — глагольный корень. Образец 27 % kṛt-примеси (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; NOUN, лемма kārya (kṛt-контраст)", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:taddhita:5",
+        "layer": "scientific",
+        "text_slp1": "sUryo",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s9)" },
+        "translations": { "ru": "солнце (первичное имя, НЕ суффикс -ya)" },
+        "gloss_ru": "ЛОЖНОЕ срабатывание: sūrya — первичное имя «солнце» (3572), финаль -ya не суффикс. Образец 20 % первично-именной примеси (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; NOUN, лемма sūrya (первичный контраст)", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}

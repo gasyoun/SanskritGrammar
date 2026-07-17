@@ -1,0 +1,236 @@
+{
+  "study": "SG-WF-004 «Вторичная деривация (taddhita): обзор» — secondary nominal derivation (core W2 ①, endgame, honest negative)",
+  "toc_ref": "SG-WF-004",
+  "kind": "overview (endgame slot; publishes its limit like the pilots)",
+  "method": "taddhita has NO native tag (0 derivation grammar codes) and — unlike kṛt (SG-WF-002) — NO natively-tagged subset; the only handle is surface suffix-matching on lemmas, which this overview shows FAILS (every canonical suffix collides with pronoun forms / primary nouns / kṛt / compound finals). A seeded hand-adjudication fixes the false-positive rate.",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "native_taddhita_feature": {
+    "grammar_codes_mentioning_taddhita_or_suffix": 0,
+    "form_classes_in_c2_toc": 0,
+    "note": "zero — DCS carries no derivation marker for taddhita, and no natively-tagged subset (contrast kṛt's VerbForm half)"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "nominal_tokens_noun_adj": 2996410,
+    "noun_tokens": 2395188,
+    "adj_tokens": 601222,
+    "nominal_share": 0.5268
+  },
+  "surface_suffix_census": {
+    "tā": {
+      "gloss": "абстракт «-ность/-ство» (f)",
+      "tokens": 20998,
+      "types": 1014,
+      "top_lemmas": [
+        "tā (5919)",
+        "devatā (3468)",
+        "sītā (1043)",
+        "prajñāpāramitā (881)",
+        "sutā (735)",
+        "latā (624)"
+      ]
+    },
+    "tva": {
+      "gloss": "абстракт «-ность/-ство» (n)",
+      "tokens": 21826,
+      "types": 345,
+      "top_lemmas": [
+        "tva (10859)",
+        "sattva (4165)",
+        "tattva (2361)",
+        "bodhisattva (1554)",
+        "mahāsattva (626)",
+        "sāntva (144)"
+      ]
+    },
+    "maya": {
+      "gloss": "«состоящий из»",
+      "tokens": 6939,
+      "types": 65,
+      "top_lemmas": [
+        "maya (3450)",
+        "samaya (1132)",
+        "āmaya (612)",
+        "vismaya (484)",
+        "gomaya (357)",
+        "hiraṇmaya (218)"
+      ]
+    },
+    "in": {
+      "gloss": "поссессив «обладающий»",
+      "tokens": 52932,
+      "types": 2926,
+      "top_lemmas": [
+        "aśvin (1394)",
+        "pathin (1374)",
+        "yogin (1210)",
+        "vādin (1060)",
+        "vājin (1040)",
+        "arthin (890)"
+      ]
+    },
+    "vat": {
+      "gloss": "поссессив «обладающий»",
+      "tokens": 20820,
+      "types": 1351,
+      "top_lemmas": [
+        "bhavat (3518)",
+        "bhagavat (3272)",
+        "yāvat (1041)",
+        "balavat (919)",
+        "tāvat (784)",
+        "vīryavat (719)"
+      ]
+    },
+    "mat": {
+      "gloss": "поссессив «обладающий»",
+      "tokens": 7342,
+      "types": 328,
+      "top_lemmas": [
+        "dhīmat (1097)",
+        "śrīmat (968)",
+        "āyuṣmat (919)",
+        "buddhimat (379)",
+        "madhumat (335)",
+        "matimat (253)"
+      ]
+    },
+    "ika": {
+      "gloss": "относительный/vṛddhi",
+      "tokens": 16608,
+      "types": 1681,
+      "top_lemmas": [
+        "adhika (1509)",
+        "ādika (989)",
+        "mākṣika (793)",
+        "antika (729)",
+        "kauśika (643)",
+        "dhārmika (415)"
+      ]
+    },
+    "īya": {
+      "gloss": "относительный «принадлежащий»",
+      "tokens": 9369,
+      "types": 630,
+      "top_lemmas": [
+        "dvitīya (1874)",
+        "tṛtīya (1607)",
+        "āhavanīya (966)",
+        "pānīya (256)",
+        "prāyaṇīya (170)",
+        "ramaṇīya (161)"
+      ]
+    },
+    "eya": {
+      "gloss": "относительный/vṛddhi",
+      "tokens": 8192,
+      "types": 327,
+      "top_lemmas": [
+        "āgneya (927)",
+        "kaunteya (691)",
+        "mārkaṇḍeya (677)",
+        "maitreya (456)",
+        "bhāgadheya (445)",
+        "ātreya (340)"
+      ]
+    },
+    "ya": {
+      "gloss": "относительный/абстракт",
+      "tokens": 224191,
+      "types": 5146,
+      "top_lemmas": [
+        "priya (4663)",
+        "satya (4449)",
+        "madhya (4330)",
+        "vīrya (3874)",
+        "divya (3833)",
+        "sūrya (3572)"
+      ]
+    },
+    "aka": {
+      "gloss": "уменьшит./относит.",
+      "tokens": 48264,
+      "types": 4748,
+      "top_lemmas": [
+        "udaka (2002)",
+        "ātmaka (1514)",
+        "gandhaka (1192)",
+        "pāvaka (977)",
+        "naraka (810)",
+        "kanaka (686)"
+      ]
+    },
+    "tara": {
+      "gloss": "сравнит. степень",
+      "tokens": 14464,
+      "types": 607,
+      "top_lemmas": [
+        "uttara (4327)",
+        "antara (3638)",
+        "vistara (776)",
+        "rathaṃtara (548)",
+        "anuttara (540)",
+        "anantara (390)"
+      ]
+    },
+    "tama": {
+      "gloss": "превосх. степень",
+      "tokens": 12855,
+      "types": 603,
+      "top_lemmas": [
+        "uttama (4951)",
+        "sattama (1552)",
+        "gautama (704)",
+        "anuttama (665)",
+        "saptama (647)",
+        "dvijottama (579)"
+      ]
+    },
+    "tas": {
+      "gloss": "аблативно-наречный",
+      "tokens": 3334,
+      "types": 50,
+      "top_lemmas": [
+        "cetas (1141)",
+        "retas (1048)",
+        "srotas (509)",
+        "pracetas (180)",
+        "vicetas (90)",
+        "ūrdhvaretas (86)"
+      ]
+    }
+  },
+  "adjudication_sample": {
+    "seed": 20260717,
+    "size": 60,
+    "probe_suffixes": [
+      "tā",
+      "tva",
+      "maya",
+      "in",
+      "ika",
+      "aka",
+      "ya",
+      "eya",
+      "īya",
+      "vat"
+    ],
+    "weighting": "freq-weighted draw of distinct nominal lemma types",
+    "file": "adjudication_sample.tsv"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 ch. XVII §§1136–1245 (secondary derivation / taddhita)"
+  },
+  "limits": {
+    "EM5_no_native_tag": "taddhita is a derivational category with no native tag AND no natively-tagged subset; it is invisible in the annotation",
+    "surface_match_fails": "every canonical suffix collides: -tā/-tva with pronoun forms (tā, tva) + names (sītā) + primary nouns (latā, cintā, sattva); -maya with maya/samaya; -ya with kṛt gerundive + primary (sūrya); -in with primary consonant stems (pathin); -aka with kṛt agent (pāvaka) + primary (udaka)",
+    "mw_etymology_low_recall": "the C2 sketch's 'via MW etymology' path was measured in pilot P5 (SG-WF-003) at precision 0.75 / recall 0.09 — it cannot recover the stratum",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
