@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.47.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-026 «Абсолютив (-tvā/-ya)» — статья-кандидат (H1091, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/absolutive/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/absolutive): четвёртый (последний) частотный флективный слот — **группа закрыта**. Абсолютив несклоняем, поэтому рамка — алломорфия -tvā/-ya. **Корпус подтверждает традиционное правило на ≈98 %:** по сопоставлению суффикса с `lemma.preverbs` над 102 054 токенами Conv, -tvā на 98,5 % при простом корне (34 293/34 816 без преверба), -ya/-tya на 97,8 % при глаголе с превербом (56 501/57 790). Распределение: -ya/-tya 56,6 %, -tvā 34,1 %, прочее 8,8 %, редкий -am 0,5 %. «Аттестовано подтверждает традиционно». Несклоняем → порождённой парадигмы нет. 5 примеров (kṛtvā/gatvā простые; praṇamya/āgatya/vihāya составные). Скрипт [`sg_mo_026_absolutive.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_026_absolutive.py); 3 валидатора + CI build green. Ядро W2: 12/19. Публикация гейтится авторской визой.
+
 ## [0.46.0] - 2026-07-17
 
 ### Added
