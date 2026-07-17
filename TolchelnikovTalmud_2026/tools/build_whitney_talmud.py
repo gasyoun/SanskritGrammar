@@ -326,6 +326,13 @@ def build():
             "set_code": None,
             "set_source": None,
             "pada": None,
+            # --- join provenance: which catalog entry bound this root, and how ---
+            # declared here so EVERY record carries the keys; pass 2 fills them where it
+            # binds. A root the author never catalogued (or whose homonym index diverges
+            # from Whitney's) keeps them null — the schema promises null, not absent.
+            "talmud_root": None,
+            "talmud_ref": None,
+            "talmud_match": None,
             # --- teaching order ---
             "cohort": cohort(r["dcs_rank"]),
         })
