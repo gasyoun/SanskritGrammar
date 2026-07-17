@@ -1,0 +1,400 @@
+root,class_index,class_apte,class_buhler,class_whitney,class_talmud,buhler_vs_whitney,index_vs_whitney,apte_vs_whitney,voice_index,voice_buhler,voice_talmud_pada,voice_conflict,talmud_ryad,talmud_tip,talmud_set
+ad,[2],[2],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,A₁,II,aniṭ
+an,[2],[2],[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['P'],[],['U'],True,N,II,seṭ
+āp,"[1, 5]","[1, 5]",[5],[5],[5],agree,agree,agree,['P'],['U'],['U'],True,A₂,II,aniṭ
+āp,"[1, 5]","[1, 5]",[5],[5],[5],agree,agree,agree,['P'],['U'],['U'],True,A₂,II,aniṭ
+āp,"[1, 5]","[1, 5]",[5],[5],[5],agree,agree,agree,['P'],['U'],['U'],True,A₂,II,aniṭ
+ar,"[1, 3, 5]","[1, 3, 5]",[],"[2, 3, 5, 6, 9]","[2, 3, 5, 6, 9]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+ar,"[1, 3, 5]","[1, 3, 5]",[],"[2, 3, 5, 6, 9]","[2, 3, 5, 6, 9]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+ar,"[1, 3, 5]","[1, 3, 5]",[1],"[2, 3, 5, 6, 9]","[2, 3, 5, 6, 9]",conflict,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+ar,"[1, 3, 5]","[1, 3, 5]",[],"[2, 3, 5, 6, 9]","[2, 3, 5, 6, 9]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+ard,"[1, 6, 7, 10]","[1, 6, 10]",[],"[4, 5, 7]","[4, 5, 7]",na,agree,conflict,['P'],[],['U'],True,R₁,I,veṭ
+ardh,"[2, 4, 5, 6, 7]",[7],[],"[4, 5, 7]","[4, 5, 7]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+arh,"[1, 10]","[1, 10]",[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,R₁,I,seṭ
+aś,"[5, 9]","[5, 9]",[4],"[1, 5, 9]",[5],conflict,agree,agree,"['P', 'Ā']",['P'],['U'],True,A₁,II,veṭ
+aś,"[5, 9]","[5, 9]",[],"[1, 5, 9]",[5],na,agree,agree,['Ā'],[],['U'],True,A₁,II,veṭ
+aś,"[5, 9]","[5, 9]",[],"[1, 5, 9]",[5],na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+ās,"[2, 4]","[2, 4]",[2],"[1, 2, 4]","[1, 2, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,A₂,II,seṭ
+ās,"[2, 4]","[2, 4]",[],"[1, 2, 4]","[1, 2, 4]",na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+aṭ,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+bādh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+bādh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+bādh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+bandh,"[1, 4, 9]","[1, 4, 9]",[9],"[1, 9]","[1, 9]",agree,agree,agree,['P'],['P'],['U'],True,N₁,I,veṭ
+bhañj,"[7, 10]","[7, 10]",[7],[7],[7],agree,agree,agree,['P'],['P'],['U'],True,N₁,I,aniṭ
+bhar,"[1, 2, 3]","[1, 2, 3]",[],"[1, 2, 3]","[1, 2, 3]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+bharts,"[1, 10]",[10],[],[1],[1],na,agree,conflict,[],[],['U'],False,R,II,seṭ
+bhaṣ,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+bhāṣ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,veṭ
+bhāṣ,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,A₂,II,veṭ
+bhāṣ,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,A₂,II,veṭ
+bhāṣ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,veṭ
+bhī,"[1, 3, 10]","[1, 3, 10]",[3],"[1, 3]","[1, 3]",agree,agree,agree,['P'],['Ā'],['U'],True,I₂,I,aniṭ
+bhikṣ,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,I₁,III,seṭ
+bhram,"[1, 4]",[4],[4],"[1, 4]","[1, 4]",agree,agree,agree,['P'],['P'],['U'],True,M₂,I,seṭ
+bhū,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₂,I,seṭ
+bhū,"[1, 10]","[1, 10]",[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,U₂,I,seṭ
+bhū,"[1, 10]","[1, 10]",[1],[1],[1],agree,agree,agree,['P'],['U'],['U'],True,U₂,I,seṭ
+bhū,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₂,I,seṭ
+bhuj,"[6, 7]","[6, 7]",[7],"[6, 7]",[6],agree,agree,agree,['U'],['U'],['P'],True,U₁,I,aniṭ
+brū,[2],[2],[],"[2, 6]","[2, 6]",na,agree,agree,['P'],[],['U'],True,U₂,I,
+cakṣ,[2],[2],[],"[1, 2]","[1, 2]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,aniṭ
+cal,"[1, 6]","[1, 6]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+cal,"[1, 6]","[1, 6]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+car,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,R,II,seṭ
+car,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,R,II,seṭ
+car,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,R,II,seṭ
+car,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,R,II,seṭ
+ceṣṭ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I,II,seṭ
+cit,"[1, 2, 3, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+cud,"[1, 10]","[1, 10]",[10],[1],[1],conflict,agree,agree,['U'],['P'],['U'],False,U₁,I,seṭ
+cud,"[1, 10]","[1, 10]",[10],[1],[1],conflict,agree,agree,[],['P'],['U'],False,U₁,I,seṭ
+cumb,"[1, 10]",[10],[],[1],[1],na,agree,conflict,['U'],[],['U'],False,U₁,III,seṭ
+cyu,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,aniṭ
+cyu,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,aniṭ
+dah,[1],[1],[1],"[1, 2, 4]","[1, 2, 4]",agree,agree,agree,['P'],['P'],['U'],True,A₁,II,veṭ
+dah,[1],[1],[],"[1, 2, 4]","[1, 2, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+dakṣ,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+dar,"[5, 6, 10]","[5, 6, 10]",[],"[2, 9]","[2, 9]",na,conflict,conflict,['Ā'],[],['U'],True,R₁,I,veṭ
+darś,[1],[1],[1],[4],[4],conflict,conflict,conflict,['P'],['P'],['U'],True,R₁,I,aniṭ
+darś,[1],[1],[],[4],[4],na,conflict,conflict,['P'],[],['U'],True,R₁,I,aniṭ
+darś,[1],[1],[],[4],[4],na,conflict,conflict,['P'],[],['U'],True,R₁,I,aniṭ
+dāś,"[1, 5, 10]","[5, 10]",[],"[1, 2, 5]","[1, 2, 5]",na,agree,agree,['U'],[],['P'],True,A₂,II,seṭ
+day,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I,II,seṭ
+dhāv,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,U,IV,seṭ
+dhāv,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['U'],['U'],True,U,IV,seṭ
+diś,"[3, 6]","[3, 6]",[],"[3, 4, 6]","[3, 4, 6]",na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+diś,"[3, 6]","[3, 6]",[],"[3, 4, 6]","[3, 4, 6]",na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+diś,"[3, 6]","[3, 6]",[],"[3, 4, 6]","[3, 4, 6]",na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+dru,"[1, 5]","[1, 5]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+dru,"[1, 5]","[1, 5]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+druh,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+druh,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+ej,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,I,II,seṭ
+gā,"[1, 2, 3]","[2, 3]",[1],"[1, 2, 4]","[1, 2]",agree,agree,agree,['Ā'],['P'],['U'],True,A₂,I,aniṭ
+gad,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+gāh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,veṭ
+gam,[1],[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+gam,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+gam,"[1, 2, 3]",[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+gar,[1],[1],[],"[2, 6, 9]","[6, 9]",na,conflict,conflict,['P'],[],['U'],True,R₂,I,seṭ
+gardh,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+garh,"[1, 10]",[10],[],[1],[1],na,agree,conflict,['Ā'],[],['U'],True,R,II,seṭ
+garj,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,R,II,seṭ
+glā/glai,"[1, 2]","[1, 2]",[],"[2, 4]","[2, 4]",na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+grah,"[1, 9, 10]","[1, 9, 10]",[4],"[1, 9]","[1, 9]",conflict,agree,agree,[],['U'],['U'],False,A₁,I,seṭ
+gras,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₁,II,veṭ
+gup,"[1, 4, 10]","[1, 4, 10]",[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+gup,"[1, 4, 10]","[1, 4, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,veṭ
+hā,[3],[3],[3],"[1, 3]","[1, 3]",agree,agree,agree,"['P', 'Ā']",['P'],['U'],True,A₂,I,aniṭ
+hā,[3],[3],[],"[1, 3]","[1, 3]",na,agree,agree,['P'],[],['U'],True,A₂,I,aniṭ
+han,"[1, 2]",[2],[],"[1, 2, 8]","[1, 2, 8]",na,agree,agree,['P'],[],['U'],True,N₁,I,veṭ
+han,"[1, 2]",[2],[2],"[1, 2, 8]","[1, 2, 8]",agree,agree,agree,['P'],['P'],['U'],True,N₁,I,veṭ
+har,"[1, 3, 9]","[1, 3, 9]",[1],[4],[4],conflict,conflict,conflict,[],['U'],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[1],[4],[4],conflict,conflict,conflict,['U'],['U'],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,"['U', 'Ā']",[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[1],[4],[4],conflict,conflict,conflict,['U'],['U'],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R,II,seṭ
+har,"[1, 3, 9]","[1, 3, 9]",[],[4],[4],na,conflict,conflict,['P'],[],['U'],True,R,II,seṭ
+harṣ,"[1, 4]",[4],[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+has,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+has,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+has,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+heṣ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I,II,seṭ
+hi,[5],[5],[],"[1, 5]","[1, 5]",na,agree,agree,['Ā'],[],['U'],True,I₁,I,aniṭ
+hi,[5],[5],[],"[1, 5]","[1, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+hnu,[2],[2],[],"[1, 2]","[1, 2]",na,agree,agree,['Ā'],[],['U'],True,U₁,I,aniṭ
+hu,[3],[3],[],"[2, 3]","[2, 3]",na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+i,"[1, 2, 4]","[1, 2, 4]",[2],"[1, 4, 5, 9]","[1, 4, 5]",conflict,agree,agree,[],['P'],['U'],False,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[2],"[1, 4, 5, 9]","[1, 4, 5]",conflict,agree,agree,[],['P'],['U'],False,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[2],"[1, 4, 5, 9]","[1, 4, 5]",conflict,agree,agree,['P'],['P'],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[2],"[1, 4, 5, 9]","[1, 4, 5]",conflict,agree,agree,['P'],['P'],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4, 5, 9]","[1, 4, 5]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+i,"[1, 2, 4]","[1, 2, 4]",[2],"[1, 4, 5, 9]","[1, 4, 5]",conflict,agree,agree,[],['P'],['U'],False,I₁,I,veṭ
+idh,[2],[],[7],[1],[1],conflict,conflict,na,[],['U'],['U'],False,I₁,I,veṭ
+īkṣ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I₂,III,seṭ
+īkṣ,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I₂,III,seṭ
+īr,[2],[2],[],"[1, 2]","[1, 2]",na,agree,agree,['Ā'],[],['U'],True,I₂,III,seṭ
+īś,[2],[2],[6],"[1, 2]","[1, 2]",conflict,agree,agree,['Ā'],['P'],['U'],True,I₂,III,seṭ
+īṣ,[1],[1],[6],[1],[1],conflict,agree,agree,['U'],['P'],['U'],False,I₂,III,seṭ
+jabh/jambh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N₁,I,veṭ
+jalp,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+jan,"[1, 2, 3, 4, 10]","[4, 10]",[4],"[1, 2, 3, 4]","[1, 2, 3, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,N₂,I,seṭ
+jan,"[1, 2, 4, 10]","[4, 10]",[4],"[1, 2, 3, 4]","[1, 2, 3, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,N₂,I,seṭ
+jan,"[1, 2, 4, 10]","[4, 10]",[4],"[1, 2, 3, 4]","[1, 2, 3, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,N₂,I,seṭ
+jan,"[1, 2, 4, 10]","[4, 10]",[],"[1, 2, 3, 4]","[1, 2, 3, 4]",na,agree,agree,['Ā'],[],['U'],True,N₂,I,seṭ
+jap,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+ji,"[1, 9]",[1],[1],"[1, 2, 5]","[1, 2]",agree,agree,agree,['P'],['U'],['U'],True,I₁,I,veṭ
+jīv,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,I₂,III,seṭ
+jñā,"[3, 9]",[9],[4],"[1, 9]","[1, 9]",conflict,agree,agree,[],['P'],['U'],False,A₂,II,aniṭ
+juṣ,"[1, 3, 6, 10]","[1, 3, 6, 10]",[],"[2, 6]","[2, 6]",na,agree,agree,"['P', 'P, Ā']",[],['U'],True,U₁,I,veṭ
+jval,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+jval,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+jyā,"[3, 4, 9]","[3, 4, 9]",[],"[4, 9]","[4, 9]",na,agree,agree,['P'],[],['U'],True,A₂,I,aniṭ
+kalp,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,L,I,veṭ
+kalp,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,L,I,veṭ
+kalp,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,L,I,veṭ
+kamp,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+kāṅkṣ,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['Ā'],['U'],True,N,IV,seṭ
+kar,"[1, 2, 3, 5, 8]","[1, 2, 3, 5, 8]",[7],"[1, 2, 5, 6, 8]","[1, 2, 5, 8]",conflict,agree,agree,[],['U'],['U'],False,R₁,I,veṭ
+karṣ,"[1, 6]","[1, 6]",[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+karṣ,"[1, 6]","[1, 6]",[6],"[1, 6]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+kart,"[1, 6, 7]","[1, 6, 7]",[6],"[1, 6, 7]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+kas,"[1, 2]","[1, 2]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+kāś,"[1, 4]",[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+khad,[1],"[1, 6]",[],[6],[6],na,conflict,agree,['P'],[],['P'],False,A₁,II,aniṭ
+khid,"[4, 6, 7]","[6, 7]",[],"[4, 6, 7]","[4, 6, 7]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+khyā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+khyā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+krand,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,N₁,I,seṭ
+krap,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,R₁,III,veṭ
+krī,[9],[9],[4],[9],[9],conflict,agree,agree,['U'],['U'],['U'],False,I₂,I,aniṭ
+krī,[9],[9],[],[9],[9],na,agree,agree,['Ā'],[],['U'],True,I₂,I,aniṭ
+krī,[9],[9],[],[9],[9],na,agree,agree,['Ā'],[],['U'],True,I₂,I,aniṭ
+krīḍ,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,I₂,III,seṭ
+krudh,[4],[4],[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,aniṭ
+krudh,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+kṣam,"[1, 2, 4]","[1, 2, 4]",[],"[1, 4]","[1, 4]",na,agree,agree,['Ā'],[],['U'],True,M₂,I,veṭ
+kṣar,"[1, 2]","[1, 2]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,R,II,seṭ
+kṣi,"[1, 2, 5, 6, 9]","[1, 6, 9]",[],"[1, 2, 4, 5, 6, 9]","[1, 2, 6]",na,agree,agree,['P.'],[],['P'],True,I₁,I,aniṭ
+kṣip,"[4, 6]","[4, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+kṣip,"[4, 6]","[4, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+kṣip,"[4, 6]","[4, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+kṣip,"[4, 6]","[4, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+kūj,"[1, 6]","[1, 6]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₂,III,seṭ
+kup,"[4, 10]","[4, 10]",[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+labh,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,A₁,II,veṭ
+lajj,[6],[6],[],[6],[6],na,agree,agree,['Ā'],[],['U'],True,A₁,II,seṭ
+lakṣ,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₁,II,seṭ
+lamb,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+lamb,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+lamb,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['P'],['U'],True,N,II,seṭ
+lamb,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+las,"[1, 10]",[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+laṣ,"[1, 4, 10]","[4, 10]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+likh,[6],[6],[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,seṭ
+likh,[6],[6],[6],[6],[6],agree,agree,agree,['P'],['P'],['U'],True,I₁,I,seṭ
+lubh,"[4, 6]","[4, 6]",[4],"[1, 4, 6]","[1, 4, 6]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+mā,"[2, 3, 4]","[2, 3, 4]",[3],"[1, 2, 3, 4]","[2, 3, 4]",agree,agree,agree,"['P', 'Ā']",['U'],['U'],True,A₂,I,aniṭ
+mā,"[2, 3, 4]","[2, 3, 4]",[],"[1, 2, 3, 4]","[2, 3, 4]",na,agree,agree,['Ā'],[],['U'],True,A₂,I,aniṭ
+mad,"[1, 3, 4, 10]","[1, 3, 4, 10]",[4],"[1, 2, 3, 4]","[1, 2, 3, 4]",agree,agree,agree,['P'],['P'],['U'],True,A₁,II,seṭ
+majj,[6],[6],[],[1],[1],na,conflict,conflict,['P'],[],['U'],True,A₁,II,seṭ
+man,"[1, 4, 8, 10]","[1, 8, 10]",[],"[3, 4, 8]","[3, 4, 8]",na,agree,agree,['Ā'],[],['U'],True,N₁,I,veṭ
+mar,"[1, 6]","[1, 6]",[],"[1, 6, 9]",[1],na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+mar,"[1, 6]","[1, 6]",[],"[1, 6, 9]",[1],na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+marc,[10],[10],[],[4],[4],na,conflict,conflict,['U'],[],['U'],False,R₁,I,aniṭ
+mard,"[1, 9]","[1, 9]",[],"[1, 9]","[1, 9]",na,agree,agree,['P'],[],['U'],True,R₁,I,seṭ
+mud,"[1, 10]","[1, 10]",[4],[1],[1],conflict,agree,agree,[],['Ā'],['U'],False,U₁,I,seṭ
+muh,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+mūrch,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,U₂,III,seṭ
+nad,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+nam,"[1, 4, 9]","[1, 4, 9]",[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+nam,"[1, 4, 9]","[1, 4, 9]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+nart,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+nart,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+naś,"[1, 4]","[1, 4]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+naś,"[1, 4]","[1, 4]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+nī,[1],[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['U'],['U'],True,I₂,I,veṭ
+nī,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,I₂,I,veṭ
+nī,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,I₂,I,veṭ
+nind /nid,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,I₁,III,seṭ
+nu/nū,"[1, 2, 6]","[1, 6]",[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,seṭ
+pā,"[1, 2]","[1, 2]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['P'],['P'],['U'],True,A₂,I,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[],"[2, 4]","[2, 4]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[4],"[2, 4]","[2, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,A₁,II,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[],"[2, 4]","[2, 4]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[4],"[2, 4]","[2, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,A₁,II,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[],"[2, 4]","[2, 4]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,aniṭ
+pad,"[1, 4, 10]","[1, 4, 10]",[],"[2, 4]","[2, 4]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,aniṭ
+pan,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N₁,I,seṭ
+paṇ,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+par,"[3, 5, 6, 9, 10]","[3, 5, 6, 9, 10]",[9],"[1, 2, 3, 4, 5, 6, 9]","[3, 4, 5, 6, 9]",agree,agree,agree,['P'],['P'],['U'],True,R₂,I,seṭ
+parc,"[1, 2, 3, 7]","[1, 2, 3, 7, 10]",[],"[1, 3, 7]","[1, 3, 7]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[1],"[1, 4]",[1],agree,agree,agree,"['P', 'Ā']",['P'],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+pat,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+plu,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,aniṭ
+plu,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,aniṭ
+plu,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,U₁,I,aniṭ
+prath,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₁,II,seṭ
+pūj,"[1, 10]","[1, 10]",[10],[1],[1],conflict,agree,agree,['U'],['P'],['U'],False,U₂,III,seṭ
+rā,[2],[2],[],"[1, 2, 3, 4]","[1, 2, 3]",na,agree,agree,"['P, Ā']",[],['U'],True,A₂,II,aniṭ
+rac,[10],[10],[],[],[],na,na,na,['U'],[],['P'],True,A₁,II,seṭ
+rādh,"[4, 5]","[4, 5]",[],"[4, 5]","[4, 5]",na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+rādh,"[4, 5]","[4, 5]",[],"[4, 5]","[4, 5]",na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+rādh,"[4, 5]","[4, 5]",[],"[4, 5]","[4, 5]",na,agree,agree,['Ā'],[],['U'],True,A₂,II,aniṭ
+rakṣ,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,A₁,II,veṭ
+ram,[1],[1],[],"[1, 9]","[1, 9]",na,agree,agree,['P'],[],['U'],True,M₁,I,aniṭ
+ram,[1],[1],[1],"[1, 9]","[1, 9]",agree,agree,agree,['Ā'],['Ā'],['U'],True,M₁,I,aniṭ
+ram,[1],[1],[],"[1, 9]","[1, 9]",na,agree,agree,['P'],[],['U'],True,M₁,I,aniṭ
+ram,[1],[1],[1],"[1, 9]","[1, 9]",agree,agree,agree,['P'],['Ā'],['U'],True,M₁,I,aniṭ
+rej,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I,II,seṭ
+ric,"[1, 4, 7, 10]","[4, 7, 10]",[],[7],[7],na,agree,agree,['Ā'],[],['U'],True,I₁,I,aniṭ
+ric,"[1, 4, 7, 10]","[4, 7, 10]",[],[7],[7],na,agree,agree,['Ā'],[],['U'],True,I₁,I,aniṭ
+riṣ,"[1, 4]",[4],[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+ru,"[1, 2]","[1, 2]",[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+ruc,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,seṭ
+ruc,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,U₁,I,seṭ
+ruc,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,U₁,I,seṭ
+rud,[2],[2],[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,seṭ
+rud,[2],[2],[2],"[1, 2, 6]","[1, 2, 6]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,seṭ
+ruh,[1],[1],[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+ruh,[1],[1],[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+ruh,[1],[1],[1],"[1, 6]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+ruh,[1],[1],[1],"[1, 6]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+ruh,[1],[1],[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+ruj,"[6, 10]","[6, 10]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+ruṣ,"[1, 4, 10]","[1, 4]",[],"[1, 4, 6]","[1, 4, 6]",na,agree,agree,['P'],[],['U'],True,U₁,I,veṭ
+sac,"[1, 3]","[1, 3]",[],"[1, 3]","[1, 3]",na,agree,agree,"['P', 'Ā']",[],['U'],True,A₁,II,veṭ
+sad,"[1, 6]",[6],[1],"[1, 2]","[1, 2]",agree,agree,conflict,[],['P'],['U'],False,A₁,II,aniṭ
+sad,"[1, 6]",[6],[],"[1, 2]","[1, 2]",na,agree,conflict,['P'],[],['U'],True,A₁,II,aniṭ
+sad,"[1, 6]",[6],[],"[1, 2]","[1, 2]",na,agree,conflict,['P'],[],['U'],True,A₁,II,aniṭ
+sad,"[1, 6]",[6],[1],"[1, 2]","[1, 2]",agree,agree,conflict,[],['P'],['U'],False,A₁,II,aniṭ
+sah,"[1, 4, 10]","[1, 4]",[1],"[1, 2, 4]","[1, 2, 4]",agree,agree,agree,['Ā'],['Ā'],['U'],True,A₁,II,seṭ
+śak,"[4, 5]","[4, 5]",[],[5],[5],na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+śaṅk,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+śaṅk,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N,II,seṭ
+sar,"[1, 3]","[3, 10]",[],"[1, 3]","[1, 3]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+sar,"[1, 3]","[3, 10]",[],"[1, 3]","[1, 3]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+sar,"[1, 3]","[3, 10]",[],"[1, 3]","[1, 3]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+sarj,"[4, 6]","[4, 6]",[6],[1],[1],conflict,conflict,conflict,[],['P'],['P'],False,R,II,seṭ
+sarj,"[4, 6]","[4, 6]",[],[1],[1],na,conflict,conflict,['P'],[],['P'],False,R,II,seṭ
+sarj,"[1, 4, 6]","[4, 6]",[],[1],[1],na,agree,conflict,['Ā'],[],['P'],True,R,II,seṭ
+sarj,"[4, 6]","[4, 6]",[6],[1],[1],conflict,conflict,conflict,['P'],['P'],['P'],False,R,II,seṭ
+sarj,"[4, 6]","[4, 6]",[],[1],[1],na,conflict,conflict,['P'],[],['P'],False,R,II,seṭ
+sarj,"[4, 6]","[4, 6]",[6],[1],[1],conflict,conflict,conflict,[],['P'],['P'],False,R,II,seṭ
+sarj,"[4, 6]","[4, 6]",[],[1],[1],na,conflict,conflict,['P'],[],['P'],False,R,II,seṭ
+śās,[2],[2],[2],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,A₂,I,veṭ
+sev,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,I,II,seṭ
+sidh,"[1, 4]","[1, 4]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+sidh,"[1, 4]","[1, 4]",[],"[1, 4]",[1],na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+skand,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,N₁,I,aniṭ
+skhal,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,L,II,seṭ
+ślāgh,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+śliṣ,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+smar,"[1, 5]","[1, 5]",[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+smar,"[1, 5]","[1, 5]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+smi,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I₁,I,veṭ
+snā,"[2, 4]","[2, 4]",[2],"[2, 4]","[2, 4]",agree,agree,agree,['P'],['P'],['U'],True,A₂,II,aniṭ
+snih,"[1, 4, 10]","[1, 4, 10]",[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,I₁,I,veṭ
+spand,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,N₁,I,seṭ
+spardh,[1],[1],[],"[1, 6]","[1, 6]",na,agree,agree,['Ā'],[],['U'],True,R₁,I,seṭ
+sparh,[10],[10],[],[6],[6],na,conflict,conflict,['P'],[],['U'],True,R₁,III,aniṭ
+sparś,[6],[6],[6],"[1, 6]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,R₁,I,aniṭ
+sparś,[6],[6],[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,R₁,I,aniṭ
+śru,"[1, 5]","[1, 5]",[],"[2, 5]","[2, 5]",na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+śru,"[1, 5]","[1, 5]",[5],"[2, 5]","[2, 5]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,aniṭ
+sru,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,seṭ
+sthā,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,A₂,I,aniṭ
+sthā,[1],[1],[2],[1],[1],conflict,agree,agree,['U'],['P'],['U'],False,A₂,I,aniṭ
+sthā,[1],[1],[2],[1],[1],conflict,agree,agree,['U'],['P'],['U'],False,A₂,I,aniṭ
+sthā,[1],[1],[2],[1],[1],conflict,agree,agree,[],['P'],['U'],False,A₂,I,aniṭ
+sthā,[1],[1],[2],[1],[1],conflict,agree,agree,[],['P'],['U'],False,A₂,I,aniṭ
+sū,"[2, 4, 6]","[4, 6]",[2],"[1, 2, 4, 6]","[1, 2, 4, 6]",agree,agree,agree,['Ā'],['Ā'],['U'],True,U₂,I,veṭ
+sū,"[2, 4, 6]","[4, 6]",[2],"[1, 2, 4, 6]","[1, 2, 4, 6]",agree,agree,agree,['Ā'],['Ā'],['U'],True,U₂,I,veṭ
+śuc,"[1, 4]","[1, 4]",[1],"[1, 2, 4]","[1, 2, 4]",agree,agree,agree,['P'],['P'],['U'],True,U₁,I,veṭ
+śudh,"[1, 4]","[1, 4]",[],"[1, 2, 4]","[1, 2, 4]",na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+śuṣ,"[4, 6]","[4, 6]",[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,aniṭ
+svap,"[1, 2]",[2],[2],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,A₁,I,veṭ
+śvas,[2],[2],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+taḍ,[10],[10],[10],[2],[2],conflict,conflict,conflict,[],['P'],['P'],False,A₁,II,seṭ
+tak,"[1, 2]",[2],[],"[1, 2]","[1, 2]",na,agree,agree,['Ā'],[],['U'],True,A₁,II,veṭ
+tap,"[1, 4, 10]","[1, 4, 10]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+tarj,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,R,II,seṭ
+tarp,"[1, 4, 5, 6, 10]","[1, 6, 10]",[4],"[1, 4, 5, 6]","[1, 4, 5, 6]",agree,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+trai,[1],[1],[],"[2, 4]","[2, 4]",na,conflict,conflict,['Ā'],[],['U'],True,A₂,II,aniṭ
+trap,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₁,II,veṭ
+tras,"[1, 4, 10]","[4, 10]",[],"[1, 4]","[1, 4]",na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+tul,"[1, 10]","[1, 10]",[10],[1],[1],conflict,agree,agree,[],['P'],['P'],False,U₁,I,seṭ
+tul,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['U'],[],['P'],True,U₁,I,seṭ
+tuṣ,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+tuṣ,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ
+tuṣ,[4],[4],[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,U₁,I,aniṭ
+tyaj,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,veṭ
+tyaj,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['P'],['U'],True,A₁,II,veṭ
+uc,[4],[4],[],[4],[4],na,agree,agree,['P'],[],['U'],True,U₁,I,seṭ
+vac,"[2, 3]","[2, 3]",[],"[2, 3]","[2, 3]",na,agree,agree,['P'],[],['U'],True,A₁,I,aniṭ
+vad,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,I,seṭ
+vad,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,I,seṭ
+vad,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['U'],['U'],True,A₁,I,seṭ
+vad,[1],[1],[1],[1],[1],agree,agree,agree,['P'],['Ā'],['U'],True,A₁,I,seṭ
+vadh,[1],[1],[],[],[],na,na,na,['P'],[],['U'],True,A₁,II,seṭ
+vah,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,A₁,I,veṭ
+vah,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,A₁,I,veṭ
+vah,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,A₁,I,veṭ
+vand,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,N,II,seṭ
+vardh,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vardh,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vardh,"[1, 10]","[1, 10]",[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vardh,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+varj,"[1, 2, 7]","[1, 2, 7, 10]",[],[7],[7],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varj,"[1, 2, 7]","[1, 2, 7, 10]",[],[7],[7],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varj,"[1, 2, 7]","[1, 2, 7, 10]",[],[7],[7],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varj,"[1, 2, 7]","[1, 2, 7, 10]",[],[7],[7],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varj,"[1, 2, 7]","[1, 2, 7, 10]",[],[7],[7],na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varṣ,"[1, 10]","[1, 10]",[],"[1, 6]","[1, 6]",na,agree,agree,['P'],[],['U'],True,R₁,I,veṭ
+varṣ,"[1, 10]","[1, 10]",[1],"[1, 6]","[1, 6]",agree,agree,agree,['P'],['P'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[],"[1, 2, 3]","[1, 2, 3]",na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[],"[1, 2, 3]","[1, 2, 3]",na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[],"[1, 2, 3]","[1, 2, 3]",na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[1],"[1, 2, 3]","[1, 2, 3]",agree,agree,agree,['Ā'],['Ā'],['U'],True,R₁,I,veṭ
+vart,[1],"[1, 4, 10]",[],"[1, 2, 3]","[1, 2, 3]",na,agree,agree,['Ā'],[],['U'],True,R₁,I,veṭ
+vaś,"[1, 2, 3]","[1, 2]",[],"[1, 2, 3, 6]","[1, 2, 3, 6]",na,agree,agree,['P'],[],['U'],True,A₁,I,seṭ
+vid,"[2, 4, 6, 7, 10]","[2, 4, 6, 7, 10]",[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['Ā'],[],['U'],True,I₁,I,veṭ
+vid,"[2, 4, 6, 7, 10]","[2, 4, 6, 7, 10]",[],"[1, 2, 6]","[1, 2, 6]",na,agree,agree,['P'],[],['U'],True,I₁,I,veṭ
+vidh,"[1, 6]","[1, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+vij,"[3, 6, 7]","[3, 6, 7]",[],"[1, 6]","[1, 6]",na,agree,agree,['Ā'],[],['U'],True,I₁,I,seṭ
+vīj,"[3, 6, 7]","[3, 6, 7]",[],[1],[1],na,conflict,conflict,[],[],['U'],False,A₁,I,seṭ
+vip,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,I,II,seṭ
+viś,[6],"[1, 6]",[],[6],[6],na,agree,agree,['P'],[],['U'],True,I₁,I,aniṭ
+viś,[6],"[1, 6]",[6],[6],[6],agree,agree,agree,['P'],['P'],['U'],True,I₁,I,aniṭ
+viś,[6],"[1, 6]",[6],[6],[6],agree,agree,agree,['P'],['P'],['U'],True,I₁,I,aniṭ
+vraj,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+vraj,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+vraj,"[1, 10]","[1, 10]",[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+vyadh,[4],[4],[4],[4],[4],agree,agree,agree,['P'],['P'],['U'],True,A₁,I,aniṭ
+vyath,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₁,II,seṭ
+vyath,[1],[1],[],[1],[1],na,agree,agree,['P'],[],['U'],True,A₁,II,seṭ
+yā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+yā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+yā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+yā,[2],[2],[],[2],[2],na,agree,agree,['P'],[],['U'],True,A₂,II,aniṭ
+yā,[2],[2],[2],[2],[2],agree,agree,agree,['P'],['P'],['U'],True,A₂,II,aniṭ
+yāc,[1],[1],[],[1],[1],na,agree,agree,['Ā'],[],['U'],True,A₂,II,seṭ
+yam,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+yam,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+yam,[1],[1],[],"[1, 2]","[1, 2]",na,agree,agree,['P'],[],['U'],True,M₁,I,veṭ
+yam,[1],[1],[1],"[1, 2]","[1, 2]",agree,agree,agree,['P'],['P'],['U'],True,M₁,I,veṭ
+yat,[1],[1],[1],[1],[1],agree,agree,agree,['Ā'],['Ā'],['U'],True,A₁,II,veṭ
+yu,"[2, 3, 6, 9, 10]","[2, 3, 9, 10]",[],"[1, 2, 3, 6, 9]","[2, 6, 9]",na,agree,agree,['P'],[],['U'],True,U₁,I,seṭ
+yu,"[2, 3, 6, 9, 10]","[2, 3, 9, 10]",[],"[1, 2, 3, 6, 9]","[2, 6, 9]",na,agree,agree,['P'],[],['U'],True,U₁,I,seṭ
+yuj,"[1, 4, 7, 10]","[1, 4, 7, 10]",[],"[2, 7]","[2, 7]",na,agree,agree,['P'],[],['U'],True,U₁,I,aniṭ

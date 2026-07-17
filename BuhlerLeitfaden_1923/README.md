@@ -11,6 +11,11 @@ Elementarcursus des Sanskrit*, 1883), электронная версия 2.0 Н
 [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.md);
 журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CHANGELOG.md).
 
+Отдельный производный набор данных — **указатель управления (Rektion) и падежного управления
+глаголов** из индекса Шерцля, сверенный с Уитни и Талмудом:
+[government_class_index/](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/README.md)
+(H1195).
+
 ## Реестр проверенных утверждений (H797, фаза 2)
 
 Первый кросс-грамматический перенос двухосевого конвейера проверки утверждений,
