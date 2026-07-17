@@ -1,0 +1,222 @@
+{
+  "study": "Sangram SG-WF-011 (Глаголы с превербами / upasarga) — native positive",
+  "toc_ref": "SG-WF-011",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive (lemma.preverbs)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_verb_tokens": 1007361,
+    "lemmas_total": 180176,
+    "lemmas_with_preverb": 10017
+  },
+  "preverbs_native_positive": {
+    "preverbed_verb_tokens": 369870,
+    "preverbed_pct_of_verbs": 36.7,
+    "distinct_preverb_strings": 968,
+    "by_preverb_string_top20": [
+      {
+        "preverb": "pra",
+        "tokens": 55479
+      },
+      {
+        "preverb": "ā",
+        "tokens": 47901
+      },
+      {
+        "preverb": "vi",
+        "tokens": 37425
+      },
+      {
+        "preverb": "sam",
+        "tokens": 31386
+      },
+      {
+        "preverb": "upa",
+        "tokens": 20305
+      },
+      {
+        "preverb": "ni",
+        "tokens": 19994
+      },
+      {
+        "preverb": "ut",
+        "tokens": 17275
+      },
+      {
+        "preverb": "abhi",
+        "tokens": 14959
+      },
+      {
+        "preverb": "pari",
+        "tokens": 13597
+      },
+      {
+        "preverb": "ava",
+        "tokens": 11749
+      },
+      {
+        "preverb": "prati",
+        "tokens": 10410
+      },
+      {
+        "preverb": "anu",
+        "tokens": 10103
+      },
+      {
+        "preverb": "niḥ",
+        "tokens": 9208
+      },
+      {
+        "preverb": "samā",
+        "tokens": 7711
+      },
+      {
+        "preverb": "apa",
+        "tokens": 4229
+      },
+      {
+        "preverb": "adhi",
+        "tokens": 3651
+      },
+      {
+        "preverb": "ati",
+        "tokens": 3392
+      },
+      {
+        "preverb": "vyā",
+        "tokens": 2710
+      },
+      {
+        "preverb": "samut",
+        "tokens": 2429
+      },
+      {
+        "preverb": "sampra",
+        "tokens": 2417
+      }
+    ],
+    "by_leading_upasarga": [
+      {
+        "upasarga": "pra",
+        "tokens": 58118
+      },
+      {
+        "upasarga": "ā",
+        "tokens": 48139
+      },
+      {
+        "upasarga": "sam",
+        "tokens": 47613
+      },
+      {
+        "upasarga": "vi",
+        "tokens": 40856
+      },
+      {
+        "upasarga": "(other)",
+        "tokens": 28956
+      },
+      {
+        "upasarga": "upa",
+        "tokens": 22195
+      },
+      {
+        "upasarga": "ni",
+        "tokens": 20423
+      },
+      {
+        "upasarga": "abhi",
+        "tokens": 17824
+      },
+      {
+        "upasarga": "ut",
+        "tokens": 17322
+      },
+      {
+        "upasarga": "pari",
+        "tokens": 14178
+      },
+      {
+        "upasarga": "anu",
+        "tokens": 12009
+      },
+      {
+        "upasarga": "ava",
+        "tokens": 11761
+      },
+      {
+        "upasarga": "prati",
+        "tokens": 11046
+      },
+      {
+        "upasarga": "niḥ",
+        "tokens": 9210
+      },
+      {
+        "upasarga": "apa",
+        "tokens": 4278
+      },
+      {
+        "upasarga": "adhi",
+        "tokens": 3706
+      },
+      {
+        "upasarga": "parā",
+        "tokens": 1220
+      },
+      {
+        "upasarga": "api",
+        "tokens": 645
+      },
+      {
+        "upasarga": "antar",
+        "tokens": 256
+      },
+      {
+        "upasarga": "acchā",
+        "tokens": 65
+      },
+      {
+        "upasarga": "su",
+        "tokens": 45
+      },
+      {
+        "upasarga": "nis",
+        "tokens": 5
+      }
+    ],
+    "multi_preverb_tokens": 25906,
+    "top_preverbed_verbs": [
+      "prāp (pra, 6022)",
+      "āgam (ā, 4640)",
+      "pravac (pra, 3242)",
+      "ādā (ā, 3158)",
+      "praviś (pra, 2848)",
+      "vidhā (vi, 2738)",
+      "vijñā (vi, 2282)",
+      "nihan (ni, 2228)",
+      "upe (upa, 2220)",
+      "ādhā (ā, 1795)"
+    ],
+    "note": "the preverbs field is native (every such lemma carries a preverb); the split into canonical upasargas is by prefix-matching a NATIVE set — not the taddhita surface trap"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§1076-1087 (verbal prefixes / upasarga); Pāṇini 1.4.58-97 (gati/upasarga)"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "prefix_match": "the ~22-upasarga split is by prefix-matching the native preverbs string; a few concatenations are ambiguous ('(other)')",
+    "lemma_level": "preverb attaches at the LEMMA level (lemma.preverbs); token-level sandhi/tmesis (esp. Vedic detached preverbs) is not separately resolved here",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
