@@ -1,0 +1,163 @@
+{
+  "study": "SG-MO-016 «Имперфект» — past narrative tense (core W2 ①, content)",
+  "toc_ref": "SG-MO-016",
+  "kind": "content article (no kill-gate)",
+  "method": "finite verbs with Tense=Impf — the ONE distinctly-tagged preterite (vs aorist/perfect conflated under Past, EM2); distribution over person/number/voice",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "preterite_context": {
+    "finite_verb_total": 523721,
+    "tense_dist": {
+      "Pres": {
+        "tokens": 353215,
+        "share": 0.6744
+      },
+      "Past": {
+        "tokens": 102055,
+        "share": 0.1949
+      },
+      "Impf": {
+        "tokens": 46695,
+        "share": 0.0892
+      },
+      "Fut": {
+        "tokens": 21556,
+        "share": 0.0412
+      },
+      "Plp": {
+        "tokens": 167,
+        "share": 0.0003
+      },
+      "Pqp": {
+        "tokens": 33,
+        "share": 0.0001
+      }
+    },
+    "note": "Past (aorist+perfect conflated, EM2) vs Impf (tagged, recoverable) vs Plp/Pqp (tiny)"
+  },
+  "denominator_imperfect_tokens": 46695,
+  "person": {
+    "3": {
+      "tokens": 43952,
+      "share": 0.9413
+    },
+    "1": {
+      "tokens": 1555,
+      "share": 0.0333
+    },
+    "2": {
+      "tokens": 1188,
+      "share": 0.0254
+    }
+  },
+  "number": {
+    "Sing": {
+      "tokens": 35078,
+      "share": 0.7512
+    },
+    "Plur": {
+      "tokens": 10559,
+      "share": 0.2261
+    },
+    "Dual": {
+      "tokens": 1058,
+      "share": 0.0227
+    }
+  },
+  "voice": {
+    "Act(∅)": {
+      "tokens": 45252,
+      "share": 0.9691
+    },
+    "Pass": {
+      "tokens": 1443,
+      "share": 0.0309
+    }
+  },
+  "third_person_share_ci95": {
+    "k": 43952,
+    "n": 46695,
+    "ci95": [
+      0.9391,
+      0.9434
+    ]
+  },
+  "top_lemmas": [
+    {
+      "lemma": "brū",
+      "tokens": 5669
+    },
+    {
+      "lemma": "bhū",
+      "tokens": 3769
+    },
+    {
+      "lemma": "as",
+      "tokens": 3032
+    },
+    {
+      "lemma": "paś",
+      "tokens": 1385
+    },
+    {
+      "lemma": "kṛ",
+      "tokens": 1002
+    },
+    {
+      "lemma": "sṛj",
+      "tokens": 696
+    },
+    {
+      "lemma": "bhāṣ",
+      "tokens": 528
+    },
+    {
+      "lemma": "jan",
+      "tokens": 368
+    },
+    {
+      "lemma": "ācakṣ",
+      "tokens": 350
+    },
+    {
+      "lemma": "vad",
+      "tokens": 326
+    },
+    {
+      "lemma": "sambhū",
+      "tokens": 314
+    },
+    {
+      "lemma": "gam",
+      "tokens": 308
+    },
+    {
+      "lemma": "pracch",
+      "tokens": 284
+    },
+    {
+      "lemma": "sthā",
+      "tokens": 269
+    },
+    {
+      "lemma": "niveday",
+      "tokens": 269
+    }
+  ],
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "EM2_border_resolved": "the imperfect is the exception to EM2 — tagged Impf, so measurable, unlike the Past-conflated aorist/perfect (P3)",
+    "EM1_stem_class": "the imperfect is built on the present stem, so its formation depends on the present class (gaṇa), not in DCS features (P2); the corpus attests the surface imperfect, not the class",
+    "augment_not_tagged": "the augment a- is not a separate feature; identified via the Impf tag, not by surface a-",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
