@@ -1,0 +1,227 @@
+{
+  "study": "SG-MO-021 «Будущее время и кондиционал» — future + conditional (core W2 ①, content)",
+  "toc_ref": "SG-MO-021",
+  "kind": "content article (no kill-gate) — closes the finite tense system",
+  "method": "finite verbs with Tense=Fut — natively tagged (like the imperfect); simple vs periphrastic separated by feat_formation='peri'; conditional by feat_mood='Cond'; future participle (VerbForm=Part & Tense=Fut) counted separately",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "finite_total": 523721,
+    "finite_future": 21556,
+    "finite_future_share": 0.0412,
+    "simple_future": 20216,
+    "periphrastic_future": 1340,
+    "periphrastic_share_of_future": 0.0622,
+    "conditional": 340,
+    "future_participle": 1575
+  },
+  "future_share_ci95": {
+    "k": 21556,
+    "n": 523721,
+    "ci95": [
+      0.0406,
+      0.0417
+    ]
+  },
+  "periphrastic_share_ci95": {
+    "k": 1340,
+    "n": 21556,
+    "ci95": [
+      0.059,
+      0.0655
+    ]
+  },
+  "person": {
+    "3": {
+      "tokens": 11127,
+      "share": 0.5162
+    },
+    "1": {
+      "tokens": 7851,
+      "share": 0.3642
+    },
+    "2": {
+      "tokens": 2578,
+      "share": 0.1196
+    }
+  },
+  "number": {
+    "Sing": {
+      "tokens": 16256,
+      "share": 0.7541
+    },
+    "Plur": {
+      "tokens": 4997,
+      "share": 0.2318
+    },
+    "Dual": {
+      "tokens": 303,
+      "share": 0.0141
+    }
+  },
+  "mood": {
+    "Ind": {
+      "tokens": 21184,
+      "share": 0.9827
+    },
+    "Cond": {
+      "tokens": 340,
+      "share": 0.0158
+    },
+    "Pot": {
+      "tokens": 32,
+      "share": 0.0015
+    }
+  },
+  "first_person_share_ci95": {
+    "k": 7851,
+    "n": 21556,
+    "ci95": [
+      0.3578,
+      0.3707
+    ]
+  },
+  "third_person_share_ci95": {
+    "k": 11127,
+    "n": 21556,
+    "ci95": [
+      0.5095,
+      0.5229
+    ]
+  },
+  "top_forms": [
+    {
+      "form": "bhaviṣyati",
+      "lemma": "bhū",
+      "tokens": 2013
+    },
+    {
+      "form": "vakṣyāmi",
+      "lemma": "vac",
+      "tokens": 579
+    },
+    {
+      "form": "pravakṣyāmi",
+      "lemma": "pravac",
+      "tokens": 532
+    },
+    {
+      "form": "bhaviṣyanti",
+      "lemma": "bhū",
+      "tokens": 508
+    },
+    {
+      "form": "vyākhyāsyāmaḥ",
+      "lemma": "vyākhyā",
+      "tokens": 500
+    },
+    {
+      "form": "kariṣyāmi",
+      "lemma": "kṛ",
+      "tokens": 351
+    },
+    {
+      "form": "kariṣyati",
+      "lemma": "kṛ",
+      "tokens": 344
+    },
+    {
+      "form": "bhavitā",
+      "lemma": "bhū",
+      "tokens": 336
+    },
+    {
+      "form": "bhaviṣyasi",
+      "lemma": "bhū",
+      "tokens": 318
+    },
+    {
+      "form": "vakṣye",
+      "lemma": "vac",
+      "tokens": 239
+    },
+    {
+      "form": "gamiṣyāmi",
+      "lemma": "gam",
+      "tokens": 229
+    },
+    {
+      "form": "vakṣyati",
+      "lemma": "vac",
+      "tokens": 187
+    },
+    {
+      "form": "bhaviṣyāmi",
+      "lemma": "bhū",
+      "tokens": 186
+    },
+    {
+      "form": "vakṣyāmaḥ",
+      "lemma": "vac",
+      "tokens": 184
+    },
+    {
+      "form": "dāsyāmi",
+      "lemma": "dā",
+      "tokens": 148
+    }
+  ],
+  "top_periphrastic": [
+    {
+      "form": "bhavitā",
+      "lemma": "bhū",
+      "tokens": 332
+    },
+    {
+      "form": "kartā",
+      "lemma": "kṛ",
+      "tokens": 55
+    },
+    {
+      "form": "gantā",
+      "lemma": "gam",
+      "tokens": 50
+    },
+    {
+      "form": "hantā",
+      "lemma": "han",
+      "tokens": 50
+    },
+    {
+      "form": "kartāsmi",
+      "lemma": "kṛ",
+      "tokens": 48
+    },
+    {
+      "form": "draṣṭāsi",
+      "lemma": "dṛś",
+      "tokens": 35
+    },
+    {
+      "form": "gantāsi",
+      "lemma": "gam",
+      "tokens": 29
+    },
+    {
+      "form": "draṣṭā",
+      "lemma": "dṛś",
+      "tokens": 28
+    }
+  ],
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "conditional_rare": "the conditional (feat_mood=Cond) is very rare (340); it is the counterfactual 'would have', not a plain future",
+    "periphrastic_via_formation": "simple vs periphrastic rests on feat_formation='peri'; the periphrastic future (-tṛ + as) shares the -tṛ agent-noun shape with the periphrastic PERFECT — DCS separates them by Tense (Fut vs Past), the tag we trust",
+    "future_participle_separate": "the future participle (VerbForm=Part & Tense=Fut) is counted apart from the finite future",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

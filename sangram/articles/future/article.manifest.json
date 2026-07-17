@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:future",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-021",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Будущее время и кондиционал",
+        "summary": "Статья ядра W2 SG-MO-021 (домен MO, кластер «Перфект, аорист, будущее»). Будущее замыкает финитную систему времён по пинованному снапшоту DCS: 21 556 финитных токенов (4,1 % [4,06–4,17]), нативно размечено (Tense=Fut). Простое (s-)будущее и перифрастическое разделены нативно (feat_formation): простое 20 216 (93,8 %), перифрастическое -tā 1340 (6,2 %; во главе bhavitā, kartā). Кондиционал (контрфактическое «сделал бы», feat_mood=Cond) 340 (1,6 %); причастие будущего 1575 — отдельно. Профиль уникален: будущее — самая перволичная финитная форма (1 л. 36,4 % против 0,5 % у пассива, narrative-3-е у имперфекта) — язык заявленного намерения и предсказания (bhaviṣyati, vakṣyāmi «скажу», kariṣyāmi «сделаю»). Первая статья сверх открывающей квоты 19; замыкает финитную систему времён (презенс/имперфект/аорист/перфект/будущее). Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:future:1",
+        "layer": "scientific",
+        "text_slp1": "BaviRyati",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s6)" },
+        "translations": { "ru": "будет (bhū, простое буд. 3 л. ед.)" },
+        "gloss_ru": "простое (s-)будущее от √bhū: bhav-iṣya-ti. Самое частотное будущее корпуса (2013) — «будет».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:2",
+        "layer": "scientific",
+        "text_slp1": "kariRyAmaH",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 2.11" },
+        "translations": { "ru": "сделаем (kṛ, простое буд. 1 л. мн.)" },
+        "gloss_ru": "простое будущее от √kṛ: kar-iṣyā-maḥ. 1-е лицо — маркёр заявленного намерения (будущее — самая перволичная форма, 36,4 %).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 1 л. мн.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:3",
+        "layer": "scientific",
+        "text_slp1": "BavitA",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 6 (s12)" },
+        "translations": { "ru": "будет, отдалённо (bhū, перифрастическое буд. 3 л. ед.)" },
+        "gloss_ru": "перифрастическое будущее от √bhū: bhavi-tā (имя деятеля -tṛ + as). Самое частотное перифрастическое (332); отдалённое/«предначертанное» будущее (feat_formation=peri).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, перифрастическое (peri), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:4",
+        "layer": "scientific",
+        "text_slp1": "aBaviRyat",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 4.30 (s6)" },
+        "translations": { "ru": "было бы (bhū, кондиционал 3 л. ед.)" },
+        "gloss_ru": "кондиционал от √bhū: a-bhav-iṣya-t (аугмент + -sya- + вторичные окончания). Контрфактическое «было бы», feat_mood=Cond; редок (340 = 1,6 % будущего).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, Mood=Cond, 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:5",
+        "layer": "scientific",
+        "text_slp1": "vakRyAmi",
+        "locus": { "corpus": "dcs", "work": "—", "ref": "лемма vac, 579" },
+        "translations": { "ru": "скажу (vac, простое буд. 1 л. ед.)" },
+        "gloss_ru": "простое будущее от √vac: vakṣyāmi «(я) скажу». Второе по частоте будущее (579), 1-е лицо — язык изложения/обещания в доктринальном тексте.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 1 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
