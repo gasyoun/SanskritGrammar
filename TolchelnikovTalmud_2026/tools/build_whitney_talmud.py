@@ -24,6 +24,14 @@ Provenance discipline — REFRAMED by the author's ruling on issue #50
     an H241-follow-up bugfix caught it: "s"/"a"/"v"/"v1"-"v4" are the manual's
     OWN Table-8 seṭ/aniṭ/veṭ codes, a different grammatical dimension from
     Тип чередования I-IV — never the same value space as ``tip``.)
+  * A catalog row cross-referenced under SEVERAL of Whitney's citation forms
+    («gam, gach», «yam, yach», «śyā, śī» — col4 is the author's own concordance,
+    ruling #5) binds ALL of them: one morpheme, one Тип, several Whitney entries.
+    Until H1065 the join returned on its first hit and dropped the alternates, so
+    59 records — including ``gach``, DCS rank 5 — sat tip=null while the author
+    had in fact classified them.  Where he DID index the entry («1 paś», «1 stu»)
+    the Whitney homonym must agree: paś²/stu²/pā³ are left null for his ruling
+    rather than bound to a neighbouring homonym's Тип (issue #50 precedent).
   * Un-indexed Ряд stays un-indexed (ruling #3: bare ``N``/``R``/``L`` are
     printed without a subscript on purpose); no ``0``-index variants.
   * The ~15 nominal roots the author himself tabulated in Приложение 2 are
@@ -236,6 +244,31 @@ def build_manual_index(catalog, verbal):
             continue                       # keep the stronger existing match
         overlay[wno] = (row, meth)
         methods.append(meth)
+
+    # --- pass 2: the catalog row's REMAINING «Список Уитни» spellings -------------
+    # match() returns on its first hit, so a multi-spelling entry bound only ONE
+    # Whitney record and silently dropped the rest: the author's «gam, gach» /
+    # «yam, yach» / «śyā, śī» rows are single morphemes he cross-references under
+    # BOTH of Whitney's citation forms (ruling #5 — col4 is his own concordance),
+    # so the alternate is authorial data, not an inference. gach (DCS rank 5) sat
+    # tip=null on this bug alone. Purely additive and homonym-safe:
+    #   * never overrides an existing match (a bound wno is left alone);
+    #   * where the author DID index the entry (whitney_num), the Whitney record's
+    #     homonym must agree — his «1 paś» must not bind Whitney's paś², nor «1 stu»
+    #     Whitney's stu². Those divergences are left null for the author to rule on
+    #     rather than guessed at (issue #50 precedent).
+    for row in catalog:
+        if row["whitney_num"] is not None:
+            hom_ok = lambda c: c["homonym"] in (row["whitney_num"], None)
+        else:
+            hom_ok = lambda c: True        # un-indexed entry: no homonym to contradict
+        for sp in row["whitney_spellings"]:
+            for cand in by_root.get(sp, []):
+                wno = cand["whitney_no"]
+                if wno in overlay or not hom_ok(cand):
+                    continue
+                overlay[wno] = (row, "spelling-alt")
+                methods.append("spelling-alt")
     return overlay, methods, unmatched
 
 
@@ -394,8 +427,10 @@ def build():
     print(f"  verbal_roots        : {len(roots)}")
     print(f"  Ряд from manual     : {manual_ryad}  (null: {len(roots) - manual_ryad})")
     print(f"  seṭ from manual     : {manual_set}")
-    print(f"  catalog matched     : {len(overlay)}/{len(manual['roots'])}  "
-          f"unmatched: {len(unmatched)}  methods: {method_counts}")
+    # one catalog row can bind SEVERAL Whitney records (a «gam, gach» entry cross-
+    # references both citation forms), so bound records legitimately exceed rows.
+    print(f"  Whitney bound       : {len(overlay)} records from {len(manual['roots'])} catalog rows  "
+          f"unmatched rows: {len(unmatched)}  methods: {method_counts}")
     print(f"  Ряд vs derived      : {ryad_agree} agree / {ryad_diff} differ")
     print(f"  seṭ vs derived      : {set_agree} agree / {set_diff} differ")
     print(f"  nominal_appendix2   : {len(NOMINAL_APPENDIX2)}")

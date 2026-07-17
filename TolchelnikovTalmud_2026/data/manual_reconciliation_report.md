@@ -9,14 +9,14 @@ Audit trail for H329 Phase 3: the author (I.E. Tolchelnikov) ruled on [issue #50
 | Metric | Value |
 | :--- | ---: |
 | Author-catalog rows (Приложение 1) | 745 |
-| Matched to a Whitney root | 730 |
+| Matched to a Whitney root | 789 |
 | Unmatched catalog rows (excl. NA) | 6 |
 | Whitney verbal roots total | 930 |
-| …carrying a manual Ряд | 730 |
-| …carrying a manual seṭ | 721 |
-| …with Ряд=null (not in the author's catalog) | 200 |
+| …carrying a manual Ряд | 789 |
+| …carrying a manual seṭ | 780 |
+| …with Ряд=null (not in the author's catalog) | 141 |
 
-Join methods: `{'ref+hom': 112, 'root-uniq': 617, 'manualroot': 1}` (ref+hom = Whitney ref number + spelling; root-uniq = unique citation form).
+Join methods: `{'ref+hom': 112, 'root-uniq': 617, 'manualroot': 1, 'spelling-alt': 59}` (ref+hom = Whitney ref number + spelling; root-uniq = unique citation form).
 
 ## Manual vs the retired derived values
 
@@ -24,10 +24,10 @@ The derivation code is kept only to quantify how wrong the proposals were.
 
 | Field | Agree | Differ | Agreement |
 | :--- | ---: | ---: | ---: |
-| Ряд | 552 | 178 | 75.6% |
+| Ряд | 568 | 221 | 72.0% |
 | seṭ | 269 | 184 | 59.4% |
 
-So the vowel-derived Ряд disagreed with the author on **178** of 730 comparable roots — the concrete justification for the author's ruling. The dominant pattern is un-indexed bare series the derivation over-specified (`N`→`N₁`, `R`→`A₂`) and the systematic ṛ-nucleus divergence.
+So the vowel-derived Ряд disagreed with the author on **221** of 789 comparable roots — the concrete justification for the author's ruling. The dominant pattern is un-indexed bare series the derivation over-specified (`N`→`N₁`, `R`→`A₂`) and the systematic ṛ-nucleus divergence.
 
 ### Sample Ряд disagreements (derived → manual)
 

@@ -4,7 +4,7 @@
   "generator": "tools/build_widget_data.py",
   "provenance": "ryad/tip/set are the author's own values from Приложение 1 (manual, H329 Phase 3 — issue #50 ruling); gloss/class/ppp/dcs_rank are verbatim WhitneyRoots; z_url deep-links to the samskrtam.ru/z/ verb-DB paradigm (via data/z_root_map.json).",
   "counts": {
-   "ablaut_examples": 45,
+   "ablaut_examples": 46,
    "set_examples": 106,
    "nominal": 15
   }
@@ -73,6 +73,16 @@
    "set": "aniṭ",
    "dcs_rank": 4,
    "z_url": "https://samskrtam.ru/z/verb.php?id=13"
+  },
+  {
+   "root": "gach",
+   "gloss": "",
+   "class": [],
+   "ryad": "M₁",
+   "tip": "I",
+   "set": "veṭ",
+   "dcs_rank": 5,
+   "z_url": null
   },
   {
    "root": "gam",
