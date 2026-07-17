@@ -9,6 +9,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-07-17
+### Changed
+- **APT-31 aorist figure refreshed (H1136, Opus 4.8 `claude-opus-4-8[1m]`).** The aorist-rarity
+  citation in the APT-31 note + methodichka field moves from the old **0.31%** (DCS-2021
+  tense-code count) to **~2.3% of finite verbal forms** — DCS's own `feat_formation` aorist tag
+  (12,054 tokens, all 7 classes), which the earlier method undercounted by omitting the root and
+  thematic aorists. Verdict unchanged (APT-31 stays FALSE — the aorist is marginal either way, so
+  "the durative past is the imperfect/present, never the aorist" holds). Refreshed together with
+  Kochergina HK-1, via the Whitney `whitney_aorist_tagger.py` (H1134).
+
 ## [0.10.0] - 2026-07-17
 ### Added
 - **Methodichka viza applier (H1090 follow-on, Opus 4.8 `claude-opus-4-8[1m]`).** New self-tested

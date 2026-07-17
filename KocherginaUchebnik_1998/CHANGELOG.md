@@ -9,6 +9,17 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.12.0] - 2026-07-17
+### Changed
+- **HK-1 aorist number refreshed to the feat_formation count (H1136, Opus 4.8
+  `claude-opus-4-8[1m]`).** The aorist figure moves from the DCS-2021 tense-code count (2,452 /
+  0.31% of verbal) to DCS's own aorist-formation tag: **12,054 tokens = 2.30% of finite verbal
+  forms** (root 5,690 · thematic 2,781 · s 1,508 · iṣ 1,077 · reduplicated 833 · sa 124 · siṣ 41).
+  The old method undercounted by omitting the root and thematic aorists (the two largest classes).
+  Verdict unchanged (TRUE — marginal beside the present system either way); this also resolves an
+  internal inconsistency, since the register's own `aorist_type_ranking.py` (H1045) already summed
+  to 12,054. Discovered via the Whitney register's `whitney_aorist_tagger.py` (H1134).
+
 ## [0.11.0] - 2026-07-16
 ### Added
 - **Полный аудит раздела самас по кодбуку Лейтана (H1050, Fable 5 `claude-fable-5`; директива

@@ -627,12 +627,15 @@ entries:
       descriptive record does not bear out — a prescriptive-vs-descriptive miss of the same family
       as APT-21 (the Pāṇinian dative-of-anger). Graded MISLEADING because a beginner told 'the
       aorist is durative, the imperfect is not' learns the aspect backwards; and the aorist is in
-      any case marginal in Classical usage (0.31% of verbal tokens, DCS — cf. Whitney §826), so the
+      any case marginal in Classical usage (~2.3% of finite verbal forms by DCS's feat_formation
+      aorist tag — refreshed 17-07-2026 from the older 0.31% tense-code figure, which undercounted
+      the root+thematic aorists, see whitney_aorist_tagger.py H1134; cf. Whitney §826), so the
       durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.
     methodichka: >-
       Заучите наоборот: длительное, продолжающееся прошлое несут имперфект и презенс, а аорист —
-      «завершительное, только что». Аорист в классике редок (0,31 % глагольных словоупотреблений
-      DCS; Whitney §826), так что длительное прошлое вы почти всегда встретите имперфектом.
+      «завершительное, только что». Аорист в классике редок (~2,3 % глагольных форм в DCS по тегу
+      формации аориста; Whitney §826), так что длительное прошлое вы почти всегда встретите
+      имперфектом.
 
   # ---- PARTICLE-SENSE WHITNEY PASS (H1087, 17-07-2026) — lessons 26–28 indeclinables ----
   # Finding: Apte's particle/indeclinable LEXICON is accurate — every gloss below checks out
