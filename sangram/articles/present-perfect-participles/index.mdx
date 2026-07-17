@@ -1,0 +1,149 @@
+---
+title: "Причастия презенса и перфекта"
+sidebar_label: причастия презенса и перфекта
+slug: /sangram/articles/present-perfect-participles
+description: "Статья SG-MO-022 (домен MO, кластер «Именные формы глагола»), производство сверх открывающей квоты (ядро 19/19 закрыто). Причастия презенса и перфекта по пинованному снапшоту DCS — нативно размечены через feat_verbform=Part + feat_tense. ПРЕЗЕНТНОЕ причастие — чистый позитив: 64 209 токенов (пассивное -yamāna нативно отделено, Voice=Pass 7002; активное+среднее -ant/-māna 57 207 — НЕ разделены, актив/медий невидим, EM). ПЕРФЕКТНОЕ (редупл. активное) причастие -vas (vidvān «знающий/учёный») размечено, но не выделено чисто: сидит под Tense=Past, чей бакет причастий (9112) несёт и формы -ta/-na (EM2-смежно); поверхностный фильтр -vas даёт ~1612 (17,7 %) — нижняя оценка, во главе vid. Дополняет причастия -ta/-na (SG-MO-023) и причастие будущего (SG-MO-021). Позитив + честная оговорка. Обзор кластера, не пилот."
+---
+
+# Причастия презенса и перфекта
+
+_Создано: 17-07-2026 · Последнее обновление: 17-07-2026_
+
+> **Статья-кандидат** (слот `SG-MO-022` кластера «Именные формы глагола», реестр
+> [C2](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/data/articles.json);
+> манифест `art:present-perfect-participles`). Производство **сверх открывающей квоты**
+> (ядро W2 19/19 закрыто); публикация гейтится авторской визой.
+
+## 1. Рамка
+
+Причастие — именная форма глагола, склоняемая как прилагательное, но сохраняющая
+залог и (частично) время. Санскрит строит их несколько серий; DCS размечает их
+**нативно** через `feat_verbform='Part'` + `feat_tense`. Эта статья закрывает две
+серии, не покрытые соседними:
+
+- **презентное** причастие (`Tense=Pres`) — действие, одновременное главному;
+- **перфектное** (редупл. активное) причастие (`-vas`, vidvān «знающий») — состояние
+  по совершённому действию.
+
+Остальные серии — за соседними статьями: причастие прошедшего пассивное **-ta/-na**
+([SG-MO-023](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/ta-na-participles/index.mdx),
+`Tense=None`, 266 660), причастие будущего
+([SG-MO-021](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx),
+`Tense=Fut`, 1575), общий deverbal-обзор
+[kṛt](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-overview/index.mdx)
+(SG-WF-002). Три слоя источников:
+
+| Слой | Источник | Что даёт |
+|---|---|---|
+| **Аттестовано** | пинованный снапшот DCS (§ 2): `Part` + `Tense` | презентное 64 209 (позитив, § 3); перфектное частично (§ 4) |
+| **Традиционно** | [Уитни 1889 §§ 584–597, 802–806](https://en.wikisource.org/wiki/Sanskrit_Grammar_%28Whitney%29); Зализняк 1975 | образование -ant/-māna/-vas (§ 6) |
+| **Порождено** | деривационный движок | причастная основа по правилу |
+
+## 2. Данные и воспроизводимость
+
+По контракту [C3](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx):
+
+- **Снапшот:** зеркало [gasyoun/dcs-conllu](https://github.com/gasyoun/dcs-conllu),
+  коммит-пин `04e0778d3dc971030229179e25eea043d06ff397` (270 текстов, 5 688 416
+  токенов), SQLite-мастер [VisualDCS](https://github.com/gasyoun/VisualDCS);
+  привязка — provenance-таблица + SHA-256 + тег
+  [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content).
+- **Универсум причастий:** `feat_verbform='Part'` — **341 556 токенов**; из них
+  презентные `Tense=Pres` и перфектные (в бакете `Tense=Past`) — предмет статьи.
+- **Валидационная выборка:** 50 причастий (Pres+Past), посеянная (seed 20260717).
+- **Скрипт:** [sg_mo_022_participles.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_022_participles.py)
+  — повторный прогон даёт те же числа; выкладки — в
+  [coverage_summary.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/present-perfect-participles/data/coverage_summary.json).
+
+## 3. Презентное причастие (нативный позитив)
+
+`Part + Tense=Pres` — **64 209 токенов** (18,8 % всех причастий; 1,1 % корпуса). Нативно
+размечено и чисто. Залоговое членение:
+
+| Залог | Токенов | Форма | Значение |
+|---|---:|---|---|
+| Voice=Pass | 7 002 | пассивное `-yamāna` | «который …-ется» (kriyamāṇa «делаемое») |
+| Voice=None | 57 207 | активное `-ant` + среднее `-māna` | «делающий» / «делающий для себя» |
+
+Топ-леммы: **as** «быть» 3430 (sant «сущий»), **yaj** «жертвовать» 2783 (yajamāna
+«жертвователь = заказчик обряда»), **kṛ** «делать» 1384 (kurvant), sthā 787, dṛś 773,
+iṣ 691, car 662, brū 605. Это ядро активного причастия настоящего.
+
+> ⚠️ **Актив и медий не разделены (EM).** DCS выносит `Voice=Pass` отдельно, но
+> активное `-ant` и среднее `-māna` оба идут под `Voice=None` — залоговое различие
+> актив/медий в аннотации **невидимо**. 57 207 — это активные и средние вместе.
+
+## 4. Перфектное причастие (частично; EM2-смежно)
+
+Редуплицированное **активное** причастие перфекта — `-vas/-vaṃs` (vidvān «знающий,
+учёный»; cakṛvān «сделавший») — в DCS есть, но **не выделено чисто**. Оно сидит в бакете
+`Tense=Past` + `Part` (**9112 токенов**), куда попадают и формы `-ta/-na` прошедшего
+(EM2-смежно: тег `Past` объединяет разное). Поверхностный фильтр по морфологии `-vas`
+даёт **~1612 токенов (17,7 % бакета)** — это **нижняя оценка** собственно перфектного
+причастия; во главе **vid** (vidvān, 1279 в бакете). Полный чистый счёт требует разбора
+морфологии, а не тега времени.
+
+## 5. Примеры
+
+Пять причастий (презенс актив/медий/пассив + перфект; канонические SLP1-копии — в
+[манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/present-perfect-participles/article.manifest.json),
+контракт [C4](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)):
+
+| ID | Форма | Разбор | Locus | Смысл |
+|---|---|---|---|---|
+| `ex:present-perfect-participles:1` | santau | as + -ant (презенс актив) | AĀ 1.3.4 (s10) | «двое сущих» |
+| `ex:present-perfect-participles:2` | yajamānaḥ | yaj + -māna (презенс медий) | AĀ 1.1.2 | «жертвователь (для себя)» = заказчик обряда |
+| `ex:present-perfect-participles:3` | kvāthyamānam | kvāthay + -yamāna (презенс пассив) | ACint 1 (s85) | «отвариваемое» |
+| `ex:present-perfect-participles:4` | vidvān | vid + -vas (перфект актив) | AbhCint 3 (s5) | «знающий, учёный» |
+| `ex:present-perfect-participles:5` | cakṛvān | kṛ + -vas (перфект актив, редупл.) | AVP 1.88 (s1) | «сделавший» |
+
+## 6. Образование (традиционно)
+
+[Уитни §§ 584–597](https://en.wikisource.org/wiki/Sanskrit_Grammar_%28Whitney%29): презентное
+активное причастие — суффикс **-ant** (склонение по основам на согласный, ж. р. -antī/-atī),
+среднее — **-māna** (тематические классы) / **-āna** (атематические); пассивное презенса —
+**-ya- + -māna** (kriyamāṇa). Перфектное активное ([§§ 802–806](https://en.wikisource.org/wiki/Sanskrit_Grammar_%28Whitney%29))
+— **-vaṃs/-vas** (сильная основа -vāṃs-, слабая -uṣ-: vidvān / viduṣ-), среднее перфекта — **-āna**.
+Формальный тест презенса — одновременность действию главного глагола; перфекта — состояние
+по завершённому действию.
+
+## 7. Ограничения
+
+1. **Актив/медий презенса не разделены (EM).** `Voice=None` (57 207) объединяет активное
+   -ant и среднее -māna; только пассивное -yamāna вынесено (`Voice=Pass` 7002).
+2. **Перфектное причастие не выделено чисто (EM2-смежно).** `-vas` сидит в бакете
+   `Tense=Past` + `Part` (9112) вместе с формами -ta/-na; поверхностный фильтр даёт ~1612
+   (нижняя оценка). Отдельного тега «перфект» у времени нет (как в SG-MO-017).
+3. **Пин зеркала.** Коммит-пин `04e0778…` осиротел; привязка — provenance-таблица +
+   SHA-256 + тег `c3-pin-04e0778-content` (§ 2), как у пилотов P1–P5 и актива G2.
+
+## 8. Место в системе причастий
+
+Кластер «Именные формы глагола» (канон ID — за реестром
+[C2](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/toc/data/articles.json)):
+
+- **презентное + перфектное** (эта статья) — `Tense=Pres` 64 209 + `-vas` ~1612
+- **прошедшее пассивное -ta/-na** — [SG-MO-023](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/ta-na-participles/index.mdx) (`Tense=None`, 266 660)
+- **будущего** — [SG-MO-021](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx) (`Tense=Fut`, 1575)
+- **абсолютив** — [SG-MO-026](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/absolutive/index.mdx); **герундив/инфинитив** — SG-MO-024/025 ②
+- общий deverbal-обзор — [kṛt](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-overview/index.mdx) (SG-WF-002)
+
+Вместе с -ta/-na и будущим причастная система корпуса покрыта нативно; актив/медий и
+чистый перфект — оговорки этой статьи.
+
+## 9. Провенанс и ревизии
+
+Статья исполнена в линии **производства сверх открывающей квоты** (по решению автора
+17-07-2026; открывающее ядро 19/19 закрыто) программы
+[C5 (§ 6)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx)
+(handoff [H1188](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1188-Opus_SanskritGrammar_sangram-mo-022-present-perfect-participles_17.07.26.md)).
+Презентное причастие — нативный **позитив** (64 209); перфектное — честная **частичная**
+оценка (`-vas` ~1612, EM2-смежно). Данные, скрипт и черновик — Opus 4.8
+(`claude-opus-4-8[1m]`), 17-07-2026; научная ответственность и виза на публикацию — автор.
+Реестр публикационных ревизий манифеста пуст до авторской визы (контракт C4).
+
+| Дата | Ревизия | Основание |
+|---|---|---|
+| 17-07-2026 | Статья-кандидат (до визы) — презенс 64 209 (позитив), перфект ~1612 (частично, EM2) | Сверх квоты; C5 § 6 SG-MO-022; H1188 |
+
+_Dr. Mārcis Gasūns_
