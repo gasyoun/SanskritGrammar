@@ -1,0 +1,3813 @@
+[
+  {
+    "text": "अग्नीषोमावष्टाभिरृग्भिरृषिरस्तौदिन्द्रावरुणौ च तिसृभिः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXVIII"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XXXVIII-877",
+        "b_id": "knauer-11-239",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.857,
+        "fidelity": "modified",
+        "note": "4 diff spans, score 0.857",
+        "a_text": "अग्नीषोमावष्टाभिरृग्भिरृषिरस्तौदिन्द्रावरुणौ च तिसृभिः",
+        "b_text": "षोमावष्टाभिर्ऋग्भिर्ऋषिरस्तौदिन्द्रावरुणौ च तिसृ"
+      }
+    ],
+    "catalog_id": "C0001"
+  },
+  {
+    "text": "अतिथिं पृच्छतु रात्रौ कुत्र न्यवस इति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-331",
+        "b_id": "knauer-10-214",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.968,
+        "fidelity": "orthographic",
+        "note": "'च्'->''",
+        "a_text": "अतिथिं पृच्छतु रात्रौ कुत्र न्यवस इति",
+        "b_text": "अतिथिं पृछतु रात्रौ कुत्र न्यवस इति"
+      }
+    ],
+    "catalog_id": "C0002"
+  },
+  {
+    "text": "अद्भिः पादौ क्षालयत्येष परिव्राट्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVI"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXVI-564",
+        "b_id": "knauer-5-101",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.912,
+        "fidelity": "orthographic",
+        "note": "'्येष'->'ि'",
+        "a_text": "अद्भिः पादौ क्षालयत्येष परिव्राट्",
+        "b_text": "अद्भिः पादौ क्षालयति परिव्राट्"
+      }
+    ],
+    "catalog_id": "C0003"
+  },
+  {
+    "text": "अधुना त्वष्टादश शतानि चत्वारि च शकानां राज्ञो वर्षाणि गतानि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "knauer": [
+        "8"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-693",
+        "b_id": "knauer-8-161",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.99,
+        "fidelity": "orthographic",
+        "note": "'ा'->''",
+        "a_text": "अधुना त्वष्टादश शतानि चत्वारि च शकानां राज्ञो वर्षाणि गतानि",
+        "b_text": "अधुना त्वष्टादश शतानि चत्वारि च शकानां रज्ञो वर्षाणि गतानि"
+      }
+    ],
+    "catalog_id": "C0004"
+  },
+  {
+    "text": "अन्येषां काव्यैरेष कविः कीर्तिमसाधयत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIX"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIX-437",
+        "b_id": "knauer-9-184",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अन्येषां काव्यैरेष कविः कीर्तिमसाधयत्",
+        "b_text": "अन्येषां काव्यैरेष कविः कीर्तिमसाधयत्"
+      }
+    ],
+    "catalog_id": "C0005"
+  },
+  {
+    "text": "अरयो जनानां धनं लुम्पन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-IV-51",
+        "b_id": "knauer-10-207",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अरयो जनानां धनं लुम्पन्ति",
+        "b_text": "अरयो जनानां धनं लुम्पन्ति"
+      }
+    ],
+    "catalog_id": "C0006"
+  },
+  {
+    "text": "अरयो जनानां वसूनि हरन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VI"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-VI-115",
+        "b_id": "kochergina-XIII-266",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अरयो जनानां वसूनि हरन्ति",
+        "b_text": "अरयो जनानां वसूनि हरन्ति"
+      }
+    ],
+    "catalog_id": "C0007"
+  },
+  {
+    "text": "अश्वा अश्राम्यन्भूमावपतंश्च",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XII"
+      ],
+      "kochergina": [
+        "X"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XII-300",
+        "b_id": "kochergina-X-155",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.962,
+        "fidelity": "orthographic",
+        "note": "'ं'->'ँ'",
+        "a_text": "अश्वा अश्राम्यन्भूमावपतंश्च",
+        "b_text": "अश्वा अश्राम्यन्भूमावपतँश्च"
+      }
+    ],
+    "catalog_id": "C0008"
+  },
+  {
+    "text": "अश्वेन जलं पीयते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ],
+      "kochergina": [
+        "XXIV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-260",
+        "b_id": "knauer-16-352",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अश्वेन जलं पीयते",
+        "b_text": "अश्वेन जलं पीयते"
+      },
+      {
+        "a_id": "buhler-X-260",
+        "b_id": "kochergina-XXIV-580",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अश्वेन जलं पीयते",
+        "b_text": "अश्वेन जलं पीयते"
+      },
+      {
+        "a_id": "knauer-16-352",
+        "b_id": "kochergina-XXIV-580",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अश्वेन जलं पीयते",
+        "b_text": "अश्वेन जलं पीयते"
+      }
+    ],
+    "catalog_id": "C0009"
+  },
+  {
+    "text": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं भूभुजः कविभ्यो विभजन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXVI"
+      ],
+      "knauer": [
+        "12"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXXVI-833",
+        "b_id": "knauer-12-274",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.941,
+        "fidelity": "orthographic",
+        "note": "'भूभु'->'रा'; ''->'ान'",
+        "a_text": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं भूभुजः कविभ्यो विभजन्ति",
+        "b_text": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति मत्वा भूयसीं श्रियं राजानः कविभ्यो विभजन्ति"
+      }
+    ],
+    "catalog_id": "C0010"
+  },
+  {
+    "text": "अहनी एव क्षत्रियावयुध्येताम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXV"
+      ],
+      "knauer": [
+        "6"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXV-543",
+        "b_id": "knauer-6-127",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "अहनी एव क्षत्रियावयुध्येताम्",
+        "b_text": "अहनी एव क्षत्रियावयुध्येताम्"
+      }
+    ],
+    "catalog_id": "C0011"
+  },
+  {
+    "text": "आचार्याः शिष्यान्धर्मं प्रब्रुवते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXVIII"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXVIII-880",
+        "b_id": "knauer-11-240",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "आचार्याः शिष्यान्धर्मं प्रब्रुवते",
+        "b_text": "आचार्याः शिष्यान्धर्मं प्रब्रुवते"
+      }
+    ],
+    "catalog_id": "C0012"
+  },
+  {
+    "text": "आपदि सुहृदो ऽस्मान्पालयेयुः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XX"
+      ],
+      "kochergina": [
+        "XXX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XX-453",
+        "b_id": "kochergina-XXX-733",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "आपदि सुहृदो ऽस्मान्पालयेयुः",
+        "b_text": "आपदि सुहृदो ऽस्मान्पालयेयुः"
+      }
+    ],
+    "catalog_id": "C0013"
+  },
+  {
+    "text": "आभिरद्भिः पाणी प्रक्षालय",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVII"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXVII-606",
+        "b_id": "knauer-9-187",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "आभिरद्भिः पाणी प्रक्षालय",
+        "b_text": "आभिरद्भिः पाणी प्रक्षालय"
+      }
+    ],
+    "catalog_id": "C0014"
+  },
+  {
+    "text": "इषुभी रणे ऽरयो नृपतिना जीयन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-256",
+        "b_id": "knauer-16-356",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "इषुभी रणे ऽरयो नृपतिना जीयन्ते",
+        "b_text": "इषुभी रणे ऽरयो नृपतिना जीयन्ते"
+      }
+    ],
+    "catalog_id": "C0015"
+  },
+  {
+    "text": "ई ईक्ष्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XLVIII"
+      ],
+      "kochergina": [
+        "XXXIV"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XLVIII-1091",
+        "b_id": "kochergina-XXXIV-1149",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.833,
+        "fidelity": "modified",
+        "note": "1 diff spans, score 0.833",
+        "a_text": "ई ईक्ष्",
+        "b_text": "ी ईक्ष्"
+      }
+    ],
+    "catalog_id": "C0016"
+  },
+  {
+    "text": "ऋषिः सूक्तानि पश्यति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-IV-61",
+        "b_id": "knauer-10-208",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "ऋषिः सूक्तानि पश्यति",
+        "b_text": "ऋषिः सूक्तानि पश्यति"
+      }
+    ],
+    "catalog_id": "C0017"
+  },
+  {
+    "text": "ऋषिरधुना पाणिना जलमाचामति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VI"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-VI-109",
+        "b_id": "kochergina-XIII-267",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "ऋषिरधुना पाणिना जलमाचामति",
+        "b_text": "ऋषिरधुना पाणिना जलमाचामति"
+      }
+    ],
+    "catalog_id": "C0018"
+  },
+  {
+    "text": "कन्याभ्यां गीतं गीयते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "kochergina": [
+        "XXIV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-254",
+        "b_id": "kochergina-XXIV-581",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कन्याभ्यां गीतं गीयते",
+        "b_text": "कन्याभ्यां गीतं गीयते"
+      }
+    ],
+    "catalog_id": "C0019"
+  },
+  {
+    "text": "कवयो हरिं शंसन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-IV-50",
+        "b_id": "kochergina-XIII-268",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कवयो हरिं शंसन्ति",
+        "b_text": "कवयो हरिं शंसन्ति"
+      }
+    ],
+    "catalog_id": "C0020"
+  },
+  {
+    "text": "कविभिर्नृपाः सदा स्तूयन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-252",
+        "b_id": "knauer-16-349",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कविभिर्नृपाः सदा स्तूयन्ते",
+        "b_text": "कविभिर्नृपाः सदा स्तूयन्ते"
+      }
+    ],
+    "catalog_id": "C0021"
+  },
+  {
+    "text": "कस्यै देव्यै स्तोत्रं रचयेम",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIX"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIX-427",
+        "b_id": "knauer-9-181",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कस्यै देव्यै स्तोत्रं रचयेम",
+        "b_text": "कस्यै देव्यै स्तोत्रं रचयेम"
+      }
+    ],
+    "catalog_id": "C0022"
+  },
+  {
+    "text": "कानि शास्त्राणि काश्यां त्वमध्यैथाः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXVIII"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXVIII-875",
+        "b_id": "knauer-11-238",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कानि शास्त्राणि काश्यां त्वमध्यैथाः",
+        "b_text": "कानि शास्त्राणि काश्यां त्वमध्यैथाः"
+      }
+    ],
+    "catalog_id": "C0023"
+  },
+  {
+    "text": "कालिदासस्य काव्यं मां श्रावयेः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVIII"
+      ],
+      "kochergina": [
+        "XXXV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVIII-408",
+        "b_id": "kochergina-XXXV-865",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कालिदासस्य काव्यं मां श्रावयेः",
+        "b_text": "कालिदासस्य काव्यं मां श्रावयेः"
+      }
+    ],
+    "catalog_id": "C0024"
+  },
+  {
+    "text": "काश्चित्सरितः समुद्रेण काश्चिदन्याभिः सरिद्भिः संगच्छन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XX"
+      ],
+      "kochergina": [
+        "XXX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XX-459",
+        "b_id": "kochergina-XXX-737",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "काश्चित्सरितः समुद्रेण काश्चिदन्याभिः सरिद्भिः संगच्छन्ते",
+        "b_text": "काश्चित्सरितः समुद्रेण काश्चिदन्याभिः सरिद्भिः संगच्छन्ते"
+      }
+    ],
+    "catalog_id": "C0025"
+  },
+  {
+    "text": "काश्या आजग्मुषो भ्रातॄनपश्याम",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXV"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXV-545",
+        "b_id": "knauer-7-146",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "काश्या आजग्मुषो भ्रातॄनपश्याम",
+        "b_text": "काश्या आजग्मुषो भ्रातॄनपश्याम"
+      }
+    ],
+    "catalog_id": "C0026"
+  },
+  {
+    "text": "कुप्यते मा कुप्यत",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIII"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXIII-513",
+        "b_id": "knauer-7-141",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "कुप्यते मा कुप्यत",
+        "b_text": "कुप्यते मा कुप्यत"
+      }
+    ],
+    "catalog_id": "C0027"
+  },
+  {
+    "text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVIII"
+      ],
+      "knauer": [
+        "17"
+      ],
+      "kochergina": [
+        "XXXV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVIII-413",
+        "b_id": "knauer-17-367",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति",
+        "b_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+      },
+      {
+        "a_id": "buhler-XVIII-413",
+        "b_id": "kochergina-XXXV-864",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति",
+        "b_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+      },
+      {
+        "a_id": "knauer-17-367",
+        "b_id": "kochergina-XXXV-864",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति",
+        "b_text": "क्षत्रिया युद्धे ऽरीन्मारयन्ति"
+      }
+    ],
+    "catalog_id": "C0028"
+  },
+  {
+    "text": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVIII"
+      ],
+      "knauer": [
+        "18"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXVIII-619",
+        "b_id": "knauer-18-387",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्",
+        "b_text": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्"
+      }
+    ],
+    "catalog_id": "C0029"
+  },
+  {
+    "text": "गुरुषु पिताचार्यो माता च गरीयांसः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIII"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXIII-517",
+        "b_id": "knauer-7-145",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "गुरुषु पिताचार्यो माता च गरीयांसः",
+        "b_text": "गुरुषु पिताचार्यो माता च गरीयांसः"
+      }
+    ],
+    "catalog_id": "C0030"
+  },
+  {
+    "text": "गोः क्षीरेण शिशवो मोदन्ताम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-365",
+        "b_id": "knauer-4-77",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "गोः क्षीरेण शिशवो मोदन्ताम्",
+        "b_text": "गोः क्षीरेण शिशवो मोदन्ताम्"
+      }
+    ],
+    "catalog_id": "C0031"
+  },
+  {
+    "text": "ग्रामण्यां स्तेनाः शरानमुञ्चन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVII"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVII-387",
+        "b_id": "knauer-3-62",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "ग्रामण्यां स्तेनाः शरानमुञ्चन्",
+        "b_text": "ग्रामण्यां स्तेनाः शरानमुञ्चन्"
+      }
+    ],
+    "catalog_id": "C0032"
+  },
+  {
+    "text": "ग्राममद्य गच्छेतमिति मातरौ पुत्रावभाषेताम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "kochergina": [
+        "XIX"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-364",
+        "b_id": "kochergina-XIX-456",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.987,
+        "fidelity": "orthographic",
+        "note": "'े'->''",
+        "a_text": "ग्राममद्य गच्छेतमिति मातरौ पुत्रावभाषेताम्",
+        "b_text": "ग्राममद्य गच्छतमिति मातरौ पुत्रावभाषेताम्"
+      }
+    ],
+    "catalog_id": "C0033"
+  },
+  {
+    "text": "घटौ घृतेन पूर्येते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-247",
+        "b_id": "knauer-16-347",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "घटौ घृतेन पूर्येते",
+        "b_text": "घटौ घृतेन पूर्येते"
+      }
+    ],
+    "catalog_id": "C0034"
+  },
+  {
+    "text": "चतुर्णां वेदानां तु बहवः शाखा वर्तन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "kochergina": [
+        "XXXI"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-689",
+        "b_id": "kochergina-XXXI-763",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "चतुर्णां वेदानां तु बहवः शाखा वर्तन्ते",
+        "b_text": "चतुर्णां वेदानां तु बहवः शाखा वर्तन्ते"
+      }
+    ],
+    "catalog_id": "C0035"
+  },
+  {
+    "text": "चत्वारो वेदा विद्यन्ते ऽष्टादश पुराणानि षट्त्रिंशत्स्मृतयः षड् दर्शनानीति विदुषां मतम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "kochergina": [
+        "XXXI"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-688",
+        "b_id": "kochergina-XXXI-762",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "चत्वारो वेदा विद्यन्ते ऽष्टादश पुराणानि षट्त्रिंशत्स्मृतयः षड् दर्शनानीति विदुषां मतम्",
+        "b_text": "चत्वारो वेदा विद्यन्ते ऽष्टादश पुराणानि षट्त्रिंशत्स्मृतयः षड् दर्शनानीति विदुषां मतम्"
+      }
+    ],
+    "catalog_id": "C0036"
+  },
+  {
+    "text": "जनैर्नगरं गम्यते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "kochergina": [
+        "XXIV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-249",
+        "b_id": "kochergina-XXIV-587",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जनैर्नगरं गम्यते",
+        "b_text": "जनैर्नगरं गम्यते"
+      }
+    ],
+    "catalog_id": "C0037"
+  },
+  {
+    "text": "जलं गिरेः पतति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-IV-52",
+        "b_id": "kochergina-XIII-263",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जलं गिरेः पतति",
+        "b_text": "जलं गिरेः पतति"
+      }
+    ],
+    "catalog_id": "C0038"
+  },
+  {
+    "text": "जलेनाग्निः शाम्यति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VI"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-VI-118",
+        "b_id": "knauer-10-210",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जलेनाग्निः शाम्यति",
+        "b_text": "जलेनाग्निः शाम्यति"
+      }
+    ],
+    "catalog_id": "C0039"
+  },
+  {
+    "text": "जामातरः श्वशुरान्स्नुषाः श्वश्रूर्दुहितरश्च पुत्राश्च पितरौ सेवेरन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVII"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVII-392",
+        "b_id": "knauer-10-218",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जामातरः श्वशुरान्स्नुषाः श्वश्रूर्दुहितरश्च पुत्राश्च पितरौ सेवेरन्",
+        "b_text": "जामातरः श्वशुरान्स्नुषाः श्वश्रूर्दुहितरश्च पुत्राश्च पितरौ सेवेरन्"
+      }
+    ],
+    "catalog_id": "C0040"
+  },
+  {
+    "text": "जीवतः पुत्रस्य मुखं पश्यन्तौ पितरौ तुष्यतः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIII"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXIII-510",
+        "b_id": "knauer-7-140",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जीवतः पुत्रस्य मुखं पश्यन्तौ पितरौ तुष्यतः",
+        "b_text": "जीवतः पुत्रस्य मुखं पश्यन्तौ पितरौ तुष्यतः"
+      }
+    ],
+    "catalog_id": "C0041"
+  },
+  {
+    "text": "जुह्वां घृतं तिष्ठति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-337",
+        "b_id": "knauer-3-60",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जुह्वां घृतं तिष्ठति",
+        "b_text": "जुह्वां घृतं तिष्ठति"
+      }
+    ],
+    "catalog_id": "C0042"
+  },
+  {
+    "text": "जुह्वाग्नौ घृतं प्रास्यानि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-335",
+        "b_id": "knauer-10-215",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "जुह्वाग्नौ घृतं प्रास्यानि",
+        "b_text": "जुह्वाग्नौ घृतं प्रास्यानि"
+      }
+    ],
+    "catalog_id": "C0043"
+  },
+  {
+    "text": "तद्यथा ऋग्वेदस्य पञ्च शाखा यजुर्वेदस्य षडशीतिः सामवेदस्य सप्ताथर्ववेदस्य नवेति सर्वाः संकलय्य सप्तोत्तरं शतं शाखानां श्रूयते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "kochergina": [
+        "XXXI"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-690",
+        "b_id": "kochergina-XXXI-764",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "तद्यथा ऋग्वेदस्य पञ्च शाखा यजुर्वेदस्य षडशीतिः सामवेदस्य सप्ताथर्ववेदस्य नवेति सर्वाः संकलय्य सप्तोत्तरं शतं शाखानां श्रूयते",
+        "b_text": "तद्यथा ऋग्वेदस्य पञ्च शाखा यजुर्वेदस्य षडशीतिः सामवेदस्य सप्ताथर्ववेदस्य नवेति सर्वाः संकलय्य सप्तोत्तरं शतं शाखानां श्रूयते"
+      }
+    ],
+    "catalog_id": "C0044"
+  },
+  {
+    "text": "तीव्रं तपस्तप्तुं यतिर्वनाय प्रस्थितः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXX"
+      ],
+      "knauer": [
+        "19"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXX-650",
+        "b_id": "knauer-19-418",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "तीव्रं तपस्तप्तुं यतिर्वनाय प्रस्थितः",
+        "b_text": "तीव्रं तपस्तप्तुं यतिर्वनाय प्रस्थितः"
+      }
+    ],
+    "catalog_id": "C0045"
+  },
+  {
+    "text": "त्रयः कनीयांसो भ्रातरो रामस्याभवन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXII"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXII-728",
+        "b_id": "knauer-7-147",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "त्रयः कनीयांसो भ्रातरो रामस्याभवन्",
+        "b_text": "त्रयः कनीयांसो भ्रातरो रामस्याभवन्"
+      }
+    ],
+    "catalog_id": "C0046"
+  },
+  {
+    "text": "त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्मणेभ्यो दत्तानि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "knauer": [
+        "8"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-694",
+        "b_id": "knauer-8-162",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.879,
+        "fidelity": "modified",
+        "note": "len 66 vs 52 (ratio 0.79)",
+        "a_text": "त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्मणेभ्यो दत्तानि",
+        "b_text": "त्रीणि लक्षाणि गवां षोडश ग्रामाश्चर्षभदत्तेन ब्राह्म"
+      }
+    ],
+    "catalog_id": "C0047"
+  },
+  {
+    "text": "त्वं जीव शरदः शतम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XX"
+      ],
+      "kochergina": [
+        "XXX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XX-457",
+        "b_id": "kochergina-XXX-736",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "त्वं जीव शरदः शतम्",
+        "b_text": "त्वं जीव शरदः शतम्"
+      }
+    ],
+    "catalog_id": "C0048"
+  },
+  {
+    "text": "दरिद्रान्भर कौन्तेय मा प्रयच्छेश्वरे धनम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXI"
+      ],
+      "kochergina": [
+        "XIV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXI-464",
+        "b_id": "kochergina-XIV-299",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "दरिद्रान्भर कौन्तेय मा प्रयच्छेश्वरे धनम्",
+        "b_text": "दरिद्रान् भर कौन्तेय मा प्रयच्छेश्वरे धनम्"
+      }
+    ],
+    "catalog_id": "C0049"
+  },
+  {
+    "text": "दीर्घं पश्यत मा ह्रस्वं परं पश्यत मापरम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "kochergina": [
+        "XXXVII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-324",
+        "b_id": "kochergina-XXXVII-930",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "दीर्घं पश्यत मा ह्रस्वं परं पश्यत मापरम्",
+        "b_text": "दीर्घं पश्यत मा ह्रस्वं परं पश्यत मापरम्"
+      }
+    ],
+    "catalog_id": "C0050"
+  },
+  {
+    "text": "दुहितरं पितरौ रक्षेतां स्वसारं भ्रातरो मातॄः पुत्राश्च रक्षेयुः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "kochergina": [
+        "XIX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-367",
+        "b_id": "kochergina-XIX-458",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "दुहितरं पितरौ रक्षेतां स्वसारं भ्रातरो मातॄः पुत्राश्च रक्षेयुः",
+        "b_text": "दुहितरं पितरौ रक्षेतां स्वसारं भ्रातरो मातॄः पुत्राश्च रक्षेयुः"
+      }
+    ],
+    "catalog_id": "C0051"
+  },
+  {
+    "text": "धर्मं चरत माधर्मं सत्यं वदत मानृतम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "kochergina": [
+        "XXXVII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-323",
+        "b_id": "kochergina-XXXVII-929",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "धर्मं चरत माधर्मं सत्यं वदत मानृतम्",
+        "b_text": "धर्मं चरत माधर्मं सत्यं वदत मानृतम्"
+      }
+    ],
+    "catalog_id": "C0052"
+  },
+  {
+    "text": "धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्रयोर्निश्चयः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XV"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XV-347",
+        "b_id": "knauer-10-216",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.931,
+        "fidelity": "orthographic",
+        "note": "'योर्निश्चयः'->''",
+        "a_text": "धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्रयोर्निश्चयः",
+        "b_text": "धर्माय देवान्यजावहा अर्थाय कीर्तये च सभासु पण्डितैः सह विवदावहा इति ब्राह्मणस्य पुत्र"
+      }
+    ],
+    "catalog_id": "C0053"
+  },
+  {
+    "text": "नरैः कटाः क्रियन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-251",
+        "b_id": "knauer-16-355",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "नरैः कटाः क्रियन्ते",
+        "b_text": "नरैः कटाः क्रियन्ते"
+      }
+    ],
+    "catalog_id": "C0054"
+  },
+  {
+    "text": "नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XII"
+      ],
+      "kochergina": [
+        "VI"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XII-286",
+        "b_id": "kochergina-VI-34",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः",
+        "b_text": "नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः"
+      }
+    ],
+    "catalog_id": "C0055"
+  },
+  {
+    "text": "नौषु नृणां युद्धमभवत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVII"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVII-396",
+        "b_id": "knauer-4-79",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "नौषु नृणां युद्धमभवत्",
+        "b_text": "नौषु नृणां युद्धमभवत्"
+      }
+    ],
+    "catalog_id": "C0056"
+  },
+  {
+    "text": "पथ्यस्माकं रथो भग्नः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVII"
+      ],
+      "knauer": [
+        "18",
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXVII-603",
+        "b_id": "knauer-9-186",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पथ्यस्माकं रथो भग्नः",
+        "b_text": "पथ्यस्माकं रथो भग्नः"
+      },
+      {
+        "a_id": "buhler-XXVII-603",
+        "b_id": "knauer-18-389",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पथ्यस्माकं रथो भग्नः",
+        "b_text": "पथ्यस्माकं रथो भग्नः"
+      }
+    ],
+    "catalog_id": "C0057"
+  },
+  {
+    "text": "पद्मं श्रिया वसतिः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIII"
+      ],
+      "knauer": [
+        "3"
+      ],
+      "kochergina": [
+        "XIV"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIII-310",
+        "b_id": "knauer-3-61",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पद्मं श्रिया वसतिः",
+        "b_text": "पद्मं श्रिया वसतिः"
+      },
+      {
+        "a_id": "buhler-XIII-310",
+        "b_id": "kochergina-XIV-287",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पद्मं श्रिया वसतिः",
+        "b_text": "पद्मं श्रिया वसतिः"
+      },
+      {
+        "a_id": "knauer-3-61",
+        "b_id": "kochergina-XIV-287",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पद्मं श्रिया वसतिः",
+        "b_text": "पद्मं श्रिया वसतिः"
+      }
+    ],
+    "catalog_id": "C0058"
+  },
+  {
+    "text": "पापाः कर्मणां विपाकेन द्वितीये जन्मनि तिर्यक्षु जायन्त इति स्मृतिः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXV"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXV-547",
+        "b_id": "knauer-5-102",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पापाः कर्मणां विपाकेन द्वितीये जन्मनि तिर्यक्षु जायन्त इति स्मृतिः",
+        "b_text": "पापाः कर्मणां विपाकेन द्वितीये जन्मनि तिर्यक्षु जायन्त इति स्मृतिः"
+      }
+    ],
+    "catalog_id": "C0059"
+  },
+  {
+    "text": "पुरि वास्तडागान्नाल्या पार्थिवो ऽनाययत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXII"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXII-497",
+        "b_id": "knauer-5-97",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.928,
+        "fidelity": "orthographic",
+        "note": "'ो'->''; 'ऽ'->'आ'; 'ाय'->''",
+        "a_text": "पुरि वास्तडागान्नाल्या पार्थिवो ऽनाययत्",
+        "b_text": "पुरि वास्तडागान्नाल्या पार्थिव आनयत्"
+      }
+    ],
+    "catalog_id": "C0060"
+  },
+  {
+    "text": "प्रद्विषतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXVIII"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXXVIII-891",
+        "b_id": "knauer-11-241",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.918,
+        "fidelity": "orthographic",
+        "note": "'प्रद्वि'->''",
+        "a_text": "प्रद्विषतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः",
+        "b_text": "षतीं भार्यां किं मां द्वेक्षीत्यब्रवीत्पतिः"
+      }
+    ],
+    "catalog_id": "C0061"
+  },
+  {
+    "text": "प्रभूतः काष्ठानां भारो नरेणोह्यते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-X-259",
+        "b_id": "knauer-16-354",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "प्रभूतः काष्ठानां भारो नरेणोह्यते",
+        "b_text": "प्रभूतः काष्ठानां भारो नरेणोह्यते"
+      }
+    ],
+    "catalog_id": "C0062"
+  },
+  {
+    "text": "प्रयागं गच्छतं सुखेन च तत्र निवसतम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "kochergina": [
+        "XIV"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-326",
+        "b_id": "kochergina-XIV-288",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.868,
+        "fidelity": "modified",
+        "note": "len 35 vs 27 (ratio 0.77)",
+        "a_text": "प्रयागं गच्छतं सुखेन च तत्र निवसतम्",
+        "b_text": "प्रयागं गच्छतं सुखेन च तत्र"
+      }
+    ],
+    "catalog_id": "C0063"
+  },
+  {
+    "text": "प्राचां देशे पाटलिपुत्रं नाम महन्नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकच्छम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXV"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXV-550",
+        "b_id": "knauer-5-103",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.956,
+        "fidelity": "orthographic",
+        "note": "'महन्'->''; 'च्'->''",
+        "a_text": "प्राचां देशे पाटलिपुत्रं नाम महन्नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकच्छम्",
+        "b_text": "प्राचां देशे पाटलिपुत्रं नाम नगरं विद्यत उदीचां तक्षशिला प्रतीचां भृगुकछम्"
+      }
+    ],
+    "catalog_id": "C0064"
+  },
+  {
+    "text": "बालो गुरवे पत्त्रं लिखति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-IV-72",
+        "b_id": "kochergina-XIII-264",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.95,
+        "fidelity": "orthographic",
+        "note": "'त्'->''",
+        "a_text": "बालो गुरवे पत्त्रं लिखति",
+        "b_text": "बालो गुरवे पत्रं लिखति"
+      }
+    ],
+    "catalog_id": "C0065"
+  },
+  {
+    "text": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIV"
+      ],
+      "knauer": [
+        "6"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXIV-533",
+        "b_id": "knauer-6-125",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते",
+        "b_text": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते"
+      }
+    ],
+    "catalog_id": "C0066"
+  },
+  {
+    "text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "kochergina": [
+        "XIX"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-360",
+        "b_id": "kochergina-XIX-459",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्",
+        "b_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+      },
+      {
+        "a_id": "buhler-XVI-360",
+        "b_id": "knauer-4-82",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.889,
+        "fidelity": "orthographic",
+        "note": "'पूजय'->'निषेव'; '्'->''",
+        "a_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्",
+        "b_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत"
+      },
+      {
+        "a_id": "knauer-4-82",
+        "b_id": "kochergina-XIX-459",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 0.889,
+        "fidelity": "orthographic",
+        "note": "'निषेव'->'पूजय'; ''->'्'",
+        "a_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव निषेवेत",
+        "b_text": "भर्तारं भर्तुश्च पितरं मातरं च पत्नी देवानिव पूजयेत्"
+      }
+    ],
+    "catalog_id": "C0067"
+  },
+  {
+    "text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVIII"
+      ],
+      "knauer": [
+        "17",
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVIII-410",
+        "b_id": "knauer-9-179",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्",
+        "b_text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+      },
+      {
+        "a_id": "buhler-XVIII-410",
+        "b_id": "knauer-17-368",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्",
+        "b_text": "भ्रातरो ऽस्मान्नगरं प्रास्थापयन्"
+      }
+    ],
+    "catalog_id": "C0068"
+  },
+  {
+    "text": "मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XII"
+      ],
+      "kochergina": [
+        "VI"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XII-285",
+        "b_id": "kochergina-VI-33",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः",
+        "b_text": "मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः"
+      }
+    ],
+    "catalog_id": "C0069"
+  },
+  {
+    "text": "मधुना क्षीरेण च तुष्यन्ति बालाः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VI"
+      ],
+      "knauer": [
+        "2"
+      ],
+      "kochergina": [
+        "XIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-VI-122",
+        "b_id": "knauer-2-27",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मधुना क्षीरेण च तुष्यन्ति बालाः",
+        "b_text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+      },
+      {
+        "a_id": "buhler-VI-122",
+        "b_id": "kochergina-XIII-265",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मधुना क्षीरेण च तुष्यन्ति बालाः",
+        "b_text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+      },
+      {
+        "a_id": "knauer-2-27",
+        "b_id": "kochergina-XIII-265",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मधुना क्षीरेण च तुष्यन्ति बालाः",
+        "b_text": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+      }
+    ],
+    "catalog_id": "C0070"
+  },
+  {
+    "text": "मन्त्रिणः स्वामिने कदापि न द्रुह्येयुः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXII"
+      ],
+      "knauer": [
+        "6"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXII-498",
+        "b_id": "knauer-6-124",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मन्त्रिणः स्वामिने कदापि न द्रुह्येयुः",
+        "b_text": "मन्त्रिणः स्वामिने कदापि न द्रुह्येयुः"
+      }
+    ],
+    "catalog_id": "C0071"
+  },
+  {
+    "text": "मयि त्वयि च पितरौ स्निह्यतः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIX"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIX-425",
+        "b_id": "knauer-9-180",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मयि त्वयि च पितरौ स्निह्यतः",
+        "b_text": "मयि त्वयि च पितरौ स्निह्यतः"
+      }
+    ],
+    "catalog_id": "C0072"
+  },
+  {
+    "text": "महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XL"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XL-928",
+        "b_id": "knauer-11-244",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.861,
+        "fidelity": "orthographic",
+        "note": "'महो'->'उ'; 'िमध्ये'->'ौ'",
+        "a_text": "महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति",
+        "b_text": "उदधौ शेषनागमधिशयानो विष्णुः सुखं स्वपिति"
+      }
+    ],
+    "catalog_id": "C0073"
+  },
+  {
+    "text": "मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यताम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XV"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XV-348",
+        "b_id": "knauer-4-80",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.958,
+        "fidelity": "orthographic",
+        "note": "'ाम्'->'े'",
+        "a_text": "मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यताम्",
+        "b_text": "मुक्तय ईश्वरः सृष्टेः कर्ता मनुष्यैर्भक्त्या सेव्यते"
+      }
+    ],
+    "catalog_id": "C0074"
+  },
+  {
+    "text": "मोक्षाय ज्ञानं यज्ञेभ्यः साधीय इति पुराणैरुक्तम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXII"
+      ],
+      "knauer": [
+        "8"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXII-726",
+        "b_id": "knauer-8-159",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "मोक्षाय ज्ञानं यज्ञेभ्यः साधीय इति पुराणैरुक्तम्",
+        "b_text": "मोक्षाय ज्ञानं यज्ञेभ्यः साधीय इति पुराणैरुक्तम्"
+      }
+    ],
+    "catalog_id": "C0075"
+  },
+  {
+    "text": "यथा वातो बलेन वृक्षान्भनक्त्येवं त्वं मे द्विषो भङ्ग्धि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XLII"
+      ],
+      "knauer": [
+        "12"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XLII-987",
+        "b_id": "knauer-12-280",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.979,
+        "fidelity": "orthographic",
+        "note": "'क'->'त'",
+        "a_text": "यथा वातो बलेन वृक्षान्भनक्त्येवं त्वं मे द्विषो भङ्ग्धि",
+        "b_text": "यथा वातो बलेन वृक्षान्भनत्त्येवं त्वं मे द्विषो भङ्ग्धि"
+      }
+    ],
+    "catalog_id": "C0076"
+  },
+  {
+    "text": "यदि शास्त्रमभ्यस्येयं तदा गुरवस्तुष्येयुः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "kochergina": [
+        "XVII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-368",
+        "b_id": "kochergina-XVII-403",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "यदि शास्त्रमभ्यस्येयं तदा गुरवस्तुष्येयुः",
+        "b_text": "यदि शास्त्रमभ्यस्येयं तदा गुरवस्तुष्येयुः"
+      }
+    ],
+    "catalog_id": "C0077"
+  },
+  {
+    "text": "यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पर्वती न्यहन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XLI"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XLI-956",
+        "b_id": "knauer-11-249",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.867,
+        "fidelity": "modified",
+        "note": "len 70 vs 57 (ratio 0.81)",
+        "a_text": "यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पर्वती न्यहन्",
+        "b_text": "रात्सर्वे ऽपि देवा अबिभयुस्तं शिवस्य पत्नी पार्वती न्यहन्"
+      }
+    ],
+    "catalog_id": "C0078"
+  },
+  {
+    "text": "या देवकी वसुदेवस्य पत्न्यभवत्तस्यां कृष्णो ऽजायत",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIX"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIX-433",
+        "b_id": "knauer-9-183",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "या देवकी वसुदेवस्य पत्न्यभवत्तस्यां कृष्णो ऽजायत",
+        "b_text": "या देवकी वसुदेवस्य पत्न्यभवत्तस्यां कृष्णो ऽजायत"
+      }
+    ],
+    "catalog_id": "C0079"
+  },
+  {
+    "text": "यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVII"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXVII-597",
+        "b_id": "knauer-9-185",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.986,
+        "fidelity": "orthographic",
+        "note": "'न्'->''",
+        "a_text": "यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यन्ते",
+        "b_text": "यानि कर्माण्यस्मिँल्लोके क्रियन्ते तेषां फलं कर्त्रामुष्मिँल्लोक उपभुज्यते"
+      }
+    ],
+    "catalog_id": "C0080"
+  },
+  {
+    "text": "यावन्ति हतस्य पशोश्चर्मणि लोमानि विद्यन्ते तावन्ति वर्षाणि हन्ता नरके वसेत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIV"
+      ],
+      "knauer": [
+        "7"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXIV-523",
+        "b_id": "knauer-7-143",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "यावन्ति हतस्य पशोश्चर्मणि लोमानि विद्यन्ते तावन्ति वर्षाणि हन्ता नरके वसेत्",
+        "b_text": "यावन्ति हतस्य पशोश्चर्मणि लोमानि विद्यन्ते तावन्ति वर्षाणि हन्ता नरके वसेत्"
+      }
+    ],
+    "catalog_id": "C0081"
+  },
+  {
+    "text": "युष्मन्मम दुःखं भवति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIX"
+      ],
+      "knauer": [
+        "9"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIX-429",
+        "b_id": "knauer-9-182",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "युष्मन्मम दुःखं भवति",
+        "b_text": "युष्मन्मम दुःखं भवति"
+      }
+    ],
+    "catalog_id": "C0082"
+  },
+  {
+    "text": "रामः क्षत्रियान्परशुनाक्राम्यति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VI"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-VI-113",
+        "b_id": "knauer-10-209",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "रामः क्षत्रियान्परशुनाक्राम्यति",
+        "b_text": "रामः क्षत्रियान्परशुनाक्राम्यति"
+      }
+    ],
+    "catalog_id": "C0083"
+  },
+  {
+    "text": "लोकस्य स्रष्टृभ्यो वसूनां दातृभ्यो देवेभ्यो नमो नमः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XV"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XV-351",
+        "b_id": "knauer-4-81",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "लोकस्य स्रष्टृभ्यो वसूनां दातृभ्यो देवेभ्यो नमो नमः",
+        "b_text": "लोकस्य स्रष्टृभ्यो वसूनां दातृभ्यो देवेभ्यो नमो नमः"
+      }
+    ],
+    "catalog_id": "C0084"
+  },
+  {
+    "text": "लोभात्क्रोधः प्रभवति लोभात्कामः प्रजायते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIII"
+      ],
+      "kochergina": [
+        "IX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIII-304",
+        "b_id": "kochergina-IX-115",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "लोभात्क्रोधः प्रभवति लोभात्कामः प्रजायते",
+        "b_text": "लोभात्क्रोधः प्रभवति लोभात्कामः प्रजायते"
+      }
+    ],
+    "catalog_id": "C0085"
+  },
+  {
+    "text": "लोभान्मोहश्च नाशश्च लोभः पापस्य कारणम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIII"
+      ],
+      "kochergina": [
+        "IX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIII-305",
+        "b_id": "kochergina-IX-116",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "लोभान्मोहश्च नाशश्च लोभः पापस्य कारणम्",
+        "b_text": "लोभान्मोहश्च नाशश्च लोभः पापस्य कारणम्"
+      }
+    ],
+    "catalog_id": "C0086"
+  },
+  {
+    "text": "वध्वाः स्निह्यत्यृषिः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-333",
+        "b_id": "knauer-3-58",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.974,
+        "fidelity": "orthographic",
+        "note": "'ः'->''",
+        "a_text": "वध्वाः स्निह्यत्यृषिः",
+        "b_text": "वध्वा स्निह्यत्यृषिः"
+      }
+    ],
+    "catalog_id": "C0087"
+  },
+  {
+    "text": "वनवृक्षान्धुन्वानस्य वायोः शब्दं पथा गच्छन्तावशृणुव",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXV"
+      ],
+      "knauer": [
+        "12"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXXV-812",
+        "b_id": "knauer-12-272",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.956,
+        "fidelity": "orthographic",
+        "note": "'वन'->''; 'च्'->''",
+        "a_text": "वनवृक्षान्धुन्वानस्य वायोः शब्दं पथा गच्छन्तावशृणुव",
+        "b_text": "वृक्षान्धुन्वानस्य वायोः शब्दं पथा गछन्तावशृणुव"
+      }
+    ],
+    "catalog_id": "C0088"
+  },
+  {
+    "text": "वायोर्बलेन तरवो ऽपात्यन्त",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVIII"
+      ],
+      "knauer": [
+        "17"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVIII-412",
+        "b_id": "knauer-17-369",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "वायोर्बलेन तरवो ऽपात्यन्त",
+        "b_text": "वायोर्बलेन तरवो ऽपात्यन्त"
+      }
+    ],
+    "catalog_id": "C0089"
+  },
+  {
+    "text": "विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXV"
+      ],
+      "kochergina": [
+        "XXVIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXV-548",
+        "b_id": "kochergina-XXVIII-694",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति",
+        "b_text": "विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति"
+      }
+    ],
+    "catalog_id": "C0090"
+  },
+  {
+    "text": "विष्णुमृषिर्यजति नृपाय",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "IV"
+      ],
+      "knauer": [
+        "2"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-IV-67",
+        "b_id": "knauer-2-17",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "विष्णुमृषिर्यजति नृपाय",
+        "b_text": "विष्णुमृषिर्यजति नृपाय"
+      }
+    ],
+    "catalog_id": "C0091"
+  },
+  {
+    "text": "वैश्याः कृष्या वाणिज्येन पाशुपाल्येन वा वर्तेरन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVII"
+      ],
+      "kochergina": [
+        "XII"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XVII-389",
+        "b_id": "kochergina-XII-236",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.925,
+        "fidelity": "orthographic",
+        "note": "' कृष्या'->''",
+        "a_text": "वैश्याः कृष्या वाणिज्येन पाशुपाल्येन वा वर्तेरन्",
+        "b_text": "वैश्याः वाणिज्येन पाशुपाल्येन वा वर्तेरन्"
+      }
+    ],
+    "catalog_id": "C0092"
+  },
+  {
+    "text": "व्याधितस्यौषधं पथ्यं नीरुजस्तु किमौषधैः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXI"
+      ],
+      "kochergina": [
+        "XIV"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXI-465",
+        "b_id": "kochergina-XIV-300",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.958,
+        "fidelity": "orthographic",
+        "note": "'तु'->'य'",
+        "a_text": "व्याधितस्यौषधं पथ्यं नीरुजस्तु किमौषधैः",
+        "b_text": "व्याधितस्यौषधं पथ्यं नीरुजस्य किमौषधैः"
+      }
+    ],
+    "catalog_id": "C0093"
+  },
+  {
+    "text": "शरदि कासुचित्सरित्सु पद्मानि दृश्यन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XX"
+      ],
+      "kochergina": [
+        "XXX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XX-463",
+        "b_id": "kochergina-XXX-735",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "शरदि कासुचित्सरित्सु पद्मानि दृश्यन्ते",
+        "b_text": "शरदि कासुचित्सरित्सु पद्मानि दृश्यन्ते"
+      }
+    ],
+    "catalog_id": "C0094"
+  },
+  {
+    "text": "शान्त्यर्षय इह शोभन्ते",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XII"
+      ],
+      "knauer": [
+        "2"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XII-287",
+        "b_id": "knauer-2-23",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "शान्त्यर्षय इह शोभन्ते",
+        "b_text": "शान्त्यर्षय इह शोभन्ते"
+      }
+    ],
+    "catalog_id": "C0095"
+  },
+  {
+    "text": "शास्त्रस्य कर्त्रे पाणिनये नमः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XV"
+      ],
+      "kochergina": [
+        "XIX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XV-350",
+        "b_id": "kochergina-XIX-461",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "शास्त्रस्य कर्त्रे पाणिनये नमः",
+        "b_text": "शास्त्रस्य कर्त्रे पाणिनये नमः"
+      }
+    ],
+    "catalog_id": "C0096"
+  },
+  {
+    "text": "शास्त्रे अधुना शिक्षामह इति पत्त्रे हरिर्लिखति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "VIII"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-VIII-179",
+        "b_id": "knauer-10-212",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.851,
+        "fidelity": "orthographic",
+        "note": "'ह'->'बालः पित्'; 'िर्'->'े '",
+        "a_text": "शास्त्रे अधुना शिक्षामह इति पत्त्रे हरिर्लिखति",
+        "b_text": "शास्त्रे अधुना शिक्षामह इति पत्त्रे बालः पित्रे लिखति"
+      }
+    ],
+    "catalog_id": "C0097"
+  },
+  {
+    "text": "श्रीमतो राज्ञः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धानि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVIII"
+      ],
+      "knauer": [
+        "18"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXVIII-615",
+        "b_id": "knauer-18-388",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.936,
+        "fidelity": "orthographic",
+        "note": "'ज'->'क'; 'ञ'->'ष'; 'नि'->''",
+        "a_text": "श्रीमतो राज्ञः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धानि",
+        "b_text": "श्रीमतो राक्षः संमतैरेभिः कविभिरिष्टानि वसूनि लब्धा"
+      }
+    ],
+    "catalog_id": "C0098"
+  },
+  {
+    "text": "श्रीविक्रमादित्यादनन्तरं पञ्चपञ्चाशोत्तरे शततमे संवत्सरे शकानां राजाभिषिक्तः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXXI"
+      ],
+      "knauer": [
+        "8"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXXI-692",
+        "b_id": "knauer-8-160",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "श्रीविक्रमादित्यादनन्तरं पञ्चपञ्चाशोत्तरे शततमे संवत्सरे शकानां राजाभिषिक्तः",
+        "b_text": "श्रीविक्रमादित्यादनन्तरं पञ्चपञ्चाशोत्तरे शततमे संवत्सरे शकानां राजाभिषिक्तः"
+      }
+    ],
+    "catalog_id": "C0099"
+  },
+  {
+    "text": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVIII"
+      ],
+      "knauer": [
+        "18"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXVIII-617",
+        "b_id": "knauer-18-386",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः",
+        "b_text": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः"
+      }
+    ],
+    "catalog_id": "C0100"
+  },
+  {
+    "text": "श्वश्र्वाः कोपाच्छोचतः स्नुषे",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-332",
+        "b_id": "knauer-3-57",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "श्वश्र्वाः कोपाच्छोचतः स्नुषे",
+        "b_text": "श्वश्र्वाः कोपाच्छोचतः स्नुषे"
+      }
+    ],
+    "catalog_id": "C0101"
+  },
+  {
+    "text": "ष षट्त्रिंशत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XLVIII"
+      ],
+      "kochergina": [
+        "XXXIV"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XLVIII-1106",
+        "b_id": "kochergina-XXXIV-1152",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 0.88,
+        "fidelity": "orthographic",
+        "note": "'ष'->'ध्'",
+        "a_text": "ष षट्त्रिंशत्",
+        "b_text": "ध् षट्त्रिंशत्"
+      }
+    ],
+    "catalog_id": "C0102"
+  },
+  {
+    "text": "संदिग्धां नावं नारोहेत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVII"
+      ],
+      "knauer": [
+        "4"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVII-390",
+        "b_id": "knauer-4-78",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "संदिग्धां नावं नारोहेत्",
+        "b_text": "संदिग्धां नावं नारोहेत्"
+      }
+    ],
+    "catalog_id": "C0103"
+  },
+  {
+    "text": "सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्माेक्तव्य इति राज्ञादिश्यत",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXX"
+      ],
+      "knauer": [
+        "18"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXX-654",
+        "b_id": "knauer-18-393",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.931,
+        "fidelity": "orthographic",
+        "note": "'ाे'->'ो'; 'दिश्यत'->''",
+        "a_text": "सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्माेक्तव्य इति राज्ञादिश्यत",
+        "b_text": "सर्वासु दिक्षु स्वैरं चरितुं यज्ञियो ऽश्वो भवद्भिर्मोक्तव्य इति राज्ञा"
+      }
+    ],
+    "catalog_id": "C0104"
+  },
+  {
+    "text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXX"
+      ],
+      "kochergina": [
+        "XXIII"
+      ],
+      "knauer": [
+        "19"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXX-647",
+        "b_id": "kochergina-XXIII-564",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्",
+        "b_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+      },
+      {
+        "a_id": "buhler-XXX-647",
+        "b_id": "knauer-19-415",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.977,
+        "fidelity": "orthographic",
+        "note": "'च्'->''",
+        "a_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्",
+        "b_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्"
+      },
+      {
+        "a_id": "knauer-19-415",
+        "b_id": "kochergina-XXIII-564",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 0.977,
+        "fidelity": "orthographic",
+        "note": "''->'च्'",
+        "a_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागछन्",
+        "b_text": "सर्वे पौराः कालिदासेन रचितं नाटकं द्रष्टुमागच्छन्"
+      }
+    ],
+    "catalog_id": "C0105"
+  },
+  {
+    "text": "सुन्दरि समाश्वसिहि समाश्वसिहीति भयनिमीलिताक्षीमुर्वशीं पुरूरवा अब्रवीत्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XL"
+      ],
+      "knauer": [
+        "11"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XL-931",
+        "b_id": "knauer-11-245",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.918,
+        "fidelity": "orthographic",
+        "note": "'यनिम'->''; 'लि'->''; 'क्षी'->''",
+        "a_text": "सुन्दरि समाश्वसिहि समाश्वसिहीति भयनिमीलिताक्षीमुर्वशीं पुरूरवा अब्रवीत्",
+        "b_text": "सुन्दरि समाश्वसिहि समाश्वसिहीति भीतामुर्वशीं पुरूरवा अब्रवीत्"
+      }
+    ],
+    "catalog_id": "C0106"
+  },
+  {
+    "text": "सूत अधुना स्थापय रथम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVIII"
+      ],
+      "knauer": [
+        "17"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XVIII-406",
+        "b_id": "knauer-17-366",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.944,
+        "fidelity": "orthographic",
+        "note": "' अ'->'ा'",
+        "a_text": "सूत अधुना स्थापय रथम्",
+        "b_text": "सूताधुना स्थापय रथम्"
+      }
+    ],
+    "catalog_id": "C0107"
+  },
+  {
+    "text": "स्त्री पत्ये रूपकाण्यर्पयति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVI"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-XXVI-565",
+        "b_id": "knauer-3-64",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.851,
+        "fidelity": "orthographic",
+        "note": "'्'->'ि '; 'र्पय'->'छ'",
+        "a_text": "स्त्री पत्ये रूपकाण्यर्पयति",
+        "b_text": "स्त्री पत्ये रूपकाणि यछति"
+      }
+    ],
+    "catalog_id": "C0108"
+  },
+  {
+    "text": "स्नुषाभिः सह श्वश्रूणां कलहः प्रावर्तत",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-329",
+        "b_id": "knauer-3-56",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "स्नुषाभिः सह श्वश्रूणां कलहः प्रावर्तत",
+        "b_text": "स्नुषाभिः सह श्वश्रूणां कलहः प्रावर्तत"
+      }
+    ],
+    "catalog_id": "C0109"
+  },
+  {
+    "text": "स्रग्भिरुपानद्भ्यां समेताः शिष्या गुरुं नोपतिष्ठेरन्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXI"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXI-475",
+        "b_id": "knauer-5-96",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "स्रग्भिरुपानद्भ्यां समेताः शिष्या गुरुं नोपतिष्ठेरन्",
+        "b_text": "स्रग्भिरुपानद्भ्यां समेताः शिष्या गुरुं नोपतिष्ठेरन्"
+      }
+    ],
+    "catalog_id": "C0110"
+  },
+  {
+    "text": "स्वयंभुवा जगत्स्रष्टुं मनः कृतम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXX"
+      ],
+      "knauer": [
+        "19"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXX-657",
+        "b_id": "knauer-19-417",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "स्वयंभुवा जगत्स्रष्टुं मनः कृतम्",
+        "b_text": "स्वयंभुवा जगत्स्रष्टुं मनः कृतम्"
+      }
+    ],
+    "catalog_id": "C0111"
+  },
+  {
+    "text": "स्वर्गं लब्धुं भूयसो यज्ञान्यष्टुमर्हसि",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXX"
+      ],
+      "knauer": [
+        "19"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XXX-653",
+        "b_id": "knauer-19-416",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "स्वर्गं लब्धुं भूयसो यज्ञान्यष्टुमर्हसि",
+        "b_text": "स्वर्गं लब्धुं भूयसो यज्ञान्यष्टुमर्हसि"
+      }
+    ],
+    "catalog_id": "C0112"
+  },
+  {
+    "text": "हन्वामश्वाल्लँँघ्वा यष्ट्याताडयम्",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XII"
+      ],
+      "knauer": [
+        "2"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XII-293",
+        "b_id": "knauer-2-24",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.842,
+        "fidelity": "modified",
+        "note": "len 33 vs 26 (ratio 0.79)",
+        "a_text": "हन्वामश्वाल्लँँघ्वा यष्ट्याताडयम्",
+        "b_text": "श्वाँल्लघ्वा यष्ट्याताडयम्"
+      }
+    ],
+    "catalog_id": "C0113"
+  },
+  {
+    "text": "हृद्येष पुमान्परं ब्रह्म ध्यायति",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXVI"
+      ],
+      "knauer": [
+        "5"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XXVI-558",
+        "b_id": "knauer-5-99",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.833,
+        "fidelity": "modified",
+        "note": "1 diff spans, score 0.833",
+        "a_text": "हृद्येष पुमान्परं ब्रह्म ध्यायति",
+        "b_text": "हृदि साधुः पुमान्परं ब्रह्म ध्यायति"
+      }
+    ],
+    "catalog_id": "C0114"
+  },
+  {
+    "text": "हे वधु वाप्या जलमानय",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XIV"
+      ],
+      "knauer": [
+        "3"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XIV-336",
+        "b_id": "knauer-3-59",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "हे वधु वाप्या जलमानय",
+        "b_text": "हे वधु वाप्या जलमानय"
+      }
+    ],
+    "catalog_id": "C0115"
+  },
+  {
+    "text": "हे शिशवः पितॄन्सेवध्वं भ्रातॄणां स्निह्यत",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "knauer": [
+        "10"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-371",
+        "b_id": "knauer-10-217",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "हे शिशवः पितॄन्सेवध्वं भ्रातॄणां स्निह्यत",
+        "b_text": "हे शिशवः पितॄन्सेवध्वं भ्रातॄणां स्निह्यत"
+      }
+    ],
+    "catalog_id": "C0116"
+  },
+  {
+    "text": "हे शिष्या गुरुणाहूयध्वे",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "X"
+      ],
+      "knauer": [
+        "16"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "buhler-X-250",
+        "b_id": "knauer-16-348",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.93,
+        "fidelity": "orthographic",
+        "note": "'ू'->'्व'",
+        "a_text": "हे शिष्या गुरुणाहूयध्वे",
+        "b_text": "हे शिष्या गुरुणाह्वयध्वे"
+      }
+    ],
+    "catalog_id": "C0117"
+  },
+  {
+    "text": "हे स्वसः पित्रोर्गृहे तिष्ठेः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XVI"
+      ],
+      "knauer": [
+        "4"
+      ],
+      "kochergina": [
+        "XIX"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "buhler-XVI-369",
+        "b_id": "knauer-4-83",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः",
+        "b_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+      },
+      {
+        "a_id": "buhler-XVI-369",
+        "b_id": "kochergina-XIX-455",
+        "a_book": "buhler",
+        "b_book": "kochergina",
+        "pair": "buhler↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः",
+        "b_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+      },
+      {
+        "a_id": "knauer-4-83",
+        "b_id": "kochergina-XIX-455",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः",
+        "b_text": "हे स्वसः पित्रोर्गृहे तिष्ठेः"
+      }
+    ],
+    "catalog_id": "C0118"
+  },
+  {
+    "text": "ा पीत्वा चैते नरः सुप्ताः",
+    "script": "deva",
+    "earliest_year": 1878,
+    "books": {
+      "buhler": [
+        "XXIX"
+      ],
+      "knauer": [
+        "19"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "buhler-XXIX-635",
+        "b_id": "knauer-19-411",
+        "a_book": "buhler",
+        "b_book": "knauer",
+        "pair": "buhler↔knauer",
+        "score": 0.84,
+        "fidelity": "modified",
+        "note": "len 25 vs 33 (ratio 0.76)",
+        "a_text": "ा पीत्वा चैते नरः सुप्ताः",
+        "b_text": "भुक्त्वा पीत्वा चैते नराः सुप्ताः"
+      }
+    ],
+    "catalog_id": "C0119"
+  },
+  {
+    "text": "gāraḥ çītaḥ kṛṣṇāyate karam",
+    "script": "iast",
+    "earliest_year": 1908,
+    "books": {
+      "knauer": [
+        "17"
+      ],
+      "kochergina": [
+        "XXXIV"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "knauer-17-380",
+        "b_id": "kochergina-XXXIV-1163",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 0.958,
+        "fidelity": "orthographic",
+        "note": "'ç'->'ś'",
+        "a_text": "gāraḥ çītaḥ kṛṣṇāyate karam",
+        "b_text": "gāraḥ śītaḥ kṛṣṇāyate karam"
+      }
+    ],
+    "catalog_id": "C0120"
+  },
+  {
+    "text": "नानुज्ञातो जगाम स्वनगरं तत्र च रेमे सह पत्न्या",
+    "script": "deva",
+    "earliest_year": 1908,
+    "books": {
+      "knauer": [
+        "15"
+      ],
+      "kochergina": [
+        "XXII"
+      ]
+    },
+    "fidelity": "modified",
+    "edges": [
+      {
+        "a_id": "knauer-15-334",
+        "b_id": "kochergina-XXII-532",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 0.841,
+        "fidelity": "modified",
+        "note": "len 46 vs 37 (ratio 0.80)",
+        "a_text": "नानुज्ञातो जगाम स्वनगरं तत्र च रेमे सह पत्न्या",
+        "b_text": "स जगाम स्वनगरं तत्र च रेमे सह पत्न्या"
+      }
+    ],
+    "catalog_id": "C0121"
+  },
+  {
+    "text": "पतिं द्रक्ष्यसि कल्याणि क्षिप्रम्",
+    "script": "deva",
+    "earliest_year": 1908,
+    "books": {
+      "knauer": [
+        "13"
+      ],
+      "kochergina": [
+        "XVIII"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "knauer-13-304",
+        "b_id": "kochergina-XVIII-428",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "पतिं द्रक्ष्यसि कल्याणि क्षिप्रम्",
+        "b_text": "पतिं द्रक्ष्यसि कल्याणि क्षिप्रम्"
+      }
+    ],
+    "catalog_id": "C0122"
+  },
+  {
+    "text": "प्रयागे गङ्गा यमुनया संगछते",
+    "script": "deva",
+    "earliest_year": 1908,
+    "books": {
+      "knauer": [
+        "1"
+      ],
+      "kochergina": [
+        "X"
+      ]
+    },
+    "fidelity": "identical",
+    "edges": [
+      {
+        "a_id": "knauer-1-1",
+        "b_id": "kochergina-X-153",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 1.0,
+        "fidelity": "identical",
+        "note": "",
+        "a_text": "प्रयागे गङ्गा यमुनया संगछते",
+        "b_text": "प्रयागे गङ्गा यमुनया संगछते"
+      }
+    ],
+    "catalog_id": "C0123"
+  },
+  {
+    "text": "मस्य रथ्यासु गजा भ्राम्यन्ति",
+    "script": "deva",
+    "earliest_year": 1908,
+    "books": {
+      "knauer": [
+        "1"
+      ],
+      "kochergina": [
+        "X"
+      ]
+    },
+    "fidelity": "orthographic",
+    "edges": [
+      {
+        "a_id": "knauer-1-4",
+        "b_id": "kochergina-X-154",
+        "a_book": "knauer",
+        "b_book": "kochergina",
+        "pair": "knauer↔kochergina",
+        "score": 0.926,
+        "fidelity": "orthographic",
+        "note": "''->'ग्रा'",
+        "a_text": "मस्य रथ्यासु गजा भ्राम्यन्ति",
+        "b_text": "ग्रामस्य रथ्यासु गजा भ्राम्यन्ति"
+      }
+    ],
+    "catalog_id": "C0124"
+  }
+]
