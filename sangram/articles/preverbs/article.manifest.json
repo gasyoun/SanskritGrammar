@@ -1,0 +1,80 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:preverbs",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-WF-011",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Глаголы с превербами (upasarga)",
+        "summary": "Статья SG-WF-011 (домен WF, кластер «Композиты»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Превербы (upasarga) — глагольные приставки, меняющие значение корня (gam «идти» → ā-gam «приходить», sam-gam «сходиться», ni-gam «входить», ut-gam «восходить») — восстановимы НАТИВНО: таблица lemma несёт поле preverbs, а сама лемма — преверб+корень. Крупный чистый позитив: 369 870 глагольных токенов (36,7 % всех глаголов, ~1 007 361) относятся к преверб-лемме; 10 017 преверб-лемм из 180 176. Топ-упасарги (токен-взвешенно): pra 58 118 «вперёд», ā 48 139 «к», sam 47 613 «вместе», vi 40 856 «врозь», upa 22 195, ni 20 423 «в/вниз», ut 17 275 «вверх», abhi 17 824 «к». Продуктивное сложение: 968 разных строк-превербов, многопреверб 25 906 токенов (samā = sam+ā). Топ преверб-глаголы: prāp (pra+āp «достигать») 6022, āgam (ā+gam) 4640, pravac (pra+vac «возглашать») 3242, ādā (ā+dā «брать») 3158, praviś (pra+viś «входить») 2848. Разбор на ~22 упасарги — по префиксу над нативным множеством, не поверхностная ловушка taddhita (~8 % «прочее» с неоднозначным префиксом). Оговорка: преверб на уровне леммы; ведийский тмесис (отделённый преверб) отдельно не разрешён. Значение сложения часто лексикализовано (prati+pad «получать»). Уитни §§1076–1087; Пан. 1.4.58–97 (gati/upasarga)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:preverbs:1",
+        "layer": "scientific",
+        "text_slp1": "AgataH",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s19)" },
+        "translations": { "ru": "пришедший (ā + gam, преверб ā «к»)" },
+        "gloss_ru": "преверб ā «к, движение к говорящему» + корень gam «идти» → āgam «приходить»; здесь āgataḥ «пришедший». ā-gam — самый частотный преверб-глагол на gam (4640) и второй преверб-глагол корпуса вообще. Показывает, как ā разворачивает «идти» в «приходить».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма āgam, preverbs=ā", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:preverbs:2",
+        "layer": "scientific",
+        "text_slp1": "saMgatam",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 12 (s44)" },
+        "translations": { "ru": "сошедшееся, соединённое (sam + gam, преверб sam «вместе»)" },
+        "gloss_ru": "преверб sam «вместе, со-» + gam → saṃgam «сходиться, соединяться»; saṃgatam «соединённое». sam — третья по частоте упасарга (47 613). Отглагольное имя saṃgama «схождение, союз» наследует тот же преверб (§ 7).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма saṃgam, preverbs=sam", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:preverbs:3",
+        "layer": "scientific",
+        "text_slp1": "udgatA",
+        "locus": { "corpus": "dcs", "work": "Amaruśataka", "ref": "AmaruŚ 1 (s91)" },
+        "translations": { "ru": "поднявшаяся, взошедшая (ut + gam, преверб ut «вверх»)" },
+        "gloss_ru": "преверб ut «вверх, воз-» + gam → udgam «восходить, подниматься»; udgatā «взошедшая» (сандхи ut+g → udg). ut — «вверх» (17 275); противопоставлен ni «вниз/в» (ниже). Одна пара превербов задаёт вертикальную ось движения.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма udgam, preverbs=ut", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:preverbs:4",
+        "layer": "scientific",
+        "text_slp1": "nigatam",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Śaunaka)", "ref": "AVŚ 13.4 (s12)" },
+        "translations": { "ru": "вошедшее, ушедшее вниз (ni + gam, преверб ni «в/вниз»)" },
+        "gloss_ru": "преверб ni «вниз, в-, внутрь» + gam → nigam «входить, уходить внутрь»; nigatam «вошедшее». ni (20 423) — противочлен ut. Ведийский пример (Атхарваведа): в древнем языке преверб мог отделяться от глагола (тмесис), но лемматизирован здесь как единое ni-gam (§ 6).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма nigam, preverbs=ni", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:preverbs:5",
+        "layer": "scientific",
+        "text_slp1": "aBigamyate",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 1 (s17)" },
+        "translations": { "ru": "к нему подходят / его посещают (abhi + gam, преверб abhi «к»)" },
+        "gloss_ru": "преверб abhi «к, против, на-» + gam → abhigam «подходить, приближаться, посещать»; пассив abhigamyate «к нему приближаются». abhi (17 824) — направленное движение «на/к цели»; часто с оттенком почтительного посещения (abhigamana «визит»).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма abhigam, preverbs=abhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:preverbs:6",
+        "layer": "scientific",
+        "text_slp1": "samAgataH",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 4 (s18)" },
+        "translations": { "ru": "сошедшийся вместе, встретившийся (sam + ā + gam, ДВОЙНОЙ преверб)" },
+        "gloss_ru": "ДВА преверба: sam «вместе» + ā «к» + gam → samāgam «сходиться вместе, встречаться»; samāgataḥ «встретившийся». Строка preverbs=samā — образец продуктивного сложения превербов (25 906 многопреверб-токенов). samāgama «встреча, собрание» — частый термин.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; VERB, лемма samāgam, preverbs=samā (sam+ā)", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
