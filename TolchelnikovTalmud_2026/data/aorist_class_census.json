@@ -1,0 +1,5933 @@
+{
+ "_meta": {
+  "what": "Census of per-root aorist-class assignments (col 10 of Приложение 1) in the author's manual Talmud-2.1.6.mdx — class size by ROOT COUNT (systematic productivity), not corpus token frequency. Built for H1054.",
+  "source": "Talmud-2.1.6.mdx, Приложение 1 (I.E. Tolchelnikov)",
+  "generator": "tools/aorist_class_census.py",
+  "class_key": {
+   "1": "root",
+   "2": "thematic a-",
+   "3": "reduplicated",
+   "4": "s-",
+   "5": "is-",
+   "6": "sis-",
+   "7": "sa-"
+  },
+  "pada_caveat": "pada is a per-root column, not per-aorist-class — the per-class pada split is indicative only"
+ },
+ "roots_total": 745,
+ "roots_with_no_aorist_class": 20,
+ "roots_per_class": {
+  "3": 342,
+  "5": 511,
+  "4": 196,
+  "1": 142,
+  "2": 116,
+  "6": 33,
+  "7": 26
+ },
+ "per_class_pada": {
+  "1": {
+   "U": 132,
+   "P": 8,
+   "Ā": 2
+  },
+  "2": {
+   "U": 100,
+   "P": 16
+  },
+  "3": {
+   "U": 301,
+   "P": 40,
+   "Ā": 1
+  },
+  "4": {
+   "U": 170,
+   "P": 22,
+   "Ā": 4
+  },
+  "5": {
+   "U": 350,
+   "P": 135,
+   "Ā": 26
+  },
+  "6": {
+   "U": 28,
+   "P": 5
+  },
+  "7": {
+   "P": 3,
+   "U": 23
+  }
+ },
+ "per_class_set": {
+  "1": {
+   "seṭ": 32,
+   "veṭ": 57,
+   "aniṭ": 52,
+   "?": 1
+  },
+  "2": {
+   "aniṭ": 40,
+   "veṭ": 51,
+   "seṭ": 25
+  },
+  "3": {
+   "veṭ": 130,
+   "aniṭ": 75,
+   "seṭ": 137
+  },
+  "4": {
+   "veṭ": 73,
+   "aniṭ": 102,
+   "seṭ": 21
+  },
+  "5": {
+   "veṭ": 137,
+   "seṭ": 337,
+   "aniṭ": 37
+  },
+  "6": {
+   "aniṭ": 25,
+   "veṭ": 8
+  },
+  "7": {
+   "veṭ": 10,
+   "aniṭ": 16
+  }
+ },
+ "top_class_combinations": {
+  "5": 262,
+  "3, 5": 115,
+  "4": 30,
+  "3, 4": 26,
+  "3": 25,
+  "3, 4, 5": 20,
+  "1, 3, 5": 20,
+  "2, 3, 5": 18,
+  "2, 3": 15,
+  "1, 2, 3, 4": 13,
+  "1, 3, 4": 11,
+  "1, 2, 3, 4, 5": 11,
+  "1, 3, 4, 5": 11,
+  "1, 4": 10,
+  "4, 6": 8
+ },
+ "roots": [
+  {
+   "id": "ØS",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "AKṢ.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "AKṢ.2",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "AJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "AṬ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "AT",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "AD",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "AN",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ANṬH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "AŚ.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "AŚ.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "AS",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "AH",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "ĀNCH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĀP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "ĀR",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĀS",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "I",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "IØJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "IṄG",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "IDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "IN",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "IRADH",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "IRAJY",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "IL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "IṢ.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "IṢ.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĪKṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ĪṄKH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĪḌ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĪR",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ĪRṢY",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĪŚ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ĪṢ",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "ĪH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "U",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "UØKṢ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "UØC",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "UØJ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UØD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "UØP.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "UØP.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UØŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "UØS.1",
+   "pada": "P",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "UØS.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "UØH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "UØ̄",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "UKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UC",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UJH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UÑCH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UD",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "UBJ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "UMBH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "UṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŪH.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŪH.2",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "Ṛ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "ṚC",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ṚJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ṚT",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ṚD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ṚDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ṚṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ṚH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "EJ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "EDH",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "O",
+   "pada": "P",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "M̥̄",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "N̥G",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "N̥C",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "N̥J",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KAC",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KATTH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KANP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KAṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KAS",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "KĀNKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KĀŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KĀS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KUC",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KUTH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KUP",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KUṢ",
+   "pada": "P",
+   "classes": [
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "KŪ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KŪJ",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "KŪḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KŪṆ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KŪRD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "KṚT.1",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KṚT.2",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṚP",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "KṚŚ",
+   "pada": "P",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "KṚṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "KṜ.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KṜ.2",
+   "pada": "U",
+   "classes": [
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KḶP",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KM̥̄",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KN̥̄",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KNŪ",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "KRAKṢ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KRATH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KRN̥D",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KRĪ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "KRĪḌ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KRUDH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "KRUŚ",
+   "pada": "U",
+   "classes": [
+    "7"
+   ]
+  },
+  {
+   "id": "KṚM̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KLATH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KLID",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "KLIŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "KLM̥̄",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KVAṆ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KVATH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢAD",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢAP",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢAR",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "KṢĀ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢI.1",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "KṢI.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "KṢIP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "KṢU",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢUD",
+   "pada": "U",
+   "classes": [
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "KṢUDH",
+   "pada": "P",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "KṢUP",
+   "pada": "P",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "KṢUBH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KṢM̥̄",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KṢN̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "KṢṆU",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢMAI",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢVIḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KṢVEL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHAC",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHAD",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHANJ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHARJ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHALL",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHĀD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "KHID",
+   "pada": "U",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "KHUD",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHEL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "KHN̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "KHYĀ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "GØ̄.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "GØ̄.2",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "GAD",
+   "pada": "U",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "GADH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GARJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GARH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GAL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GALBH",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GĀH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "GU",
+   "pada": "Ā",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "GUÑJ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GUP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "GUMPH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GUR",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GUH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "GṚDH",
+   "pada": "U",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "GṚØH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "GṜ.1",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GṜ.2",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "GM̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "GRAS",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GRN̥TH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "GLAH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GLĀ",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "GHAṬ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "GHAṬṬ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GHAS",
+   "pada": "P",
+   "classes": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "GHUṬ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "GHUR",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GHUṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "GHŪRṆ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GHṚ",
+   "pada": "P",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "GHṚṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "GHRĀ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "CAK",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CAKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CAṬ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CAT",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CN̥̄",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CANC",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CAR",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "CARC",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CARV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CI.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "CI.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "CIT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "CUD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CUP",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CUMB",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CŪṢ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CṚT",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CEṢṬ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CAI",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CM̥̄",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CN̥D",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CYU",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "CYUT",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CHØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "CHAD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CHID",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "CHUḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CHUR",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "CHṚD",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "CHN̥D",
+   "pada": "P",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "JAKṢ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JAGH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JAP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JAL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JALP",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JAS",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "JĀGṚ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JI",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "JINV",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JĪØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "JĪV",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JUṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JŪ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "JṚ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JṚṂBH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JṜ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JEH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JN̥BH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JN̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JÑĀ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "JYUT",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "JRI",
+   "pada": "P",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "JVAR",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JVAL",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "JHAR",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ṬANK",
+   "pada": "P",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "ṬAL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ṬĪK",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ḌANB",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ḌAM",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ḌĪ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ḌHAUK",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "TAK",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TAKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "TAḌ",
+   "pada": "P",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "TAND",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TAP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "TARJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TIJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TIM",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TU",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TUJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TUD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "TUL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TUŚ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TUṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "TṚD",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "TṚP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "TṚṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "TṚH",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "TṜ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "TAI",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TM̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "TN̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "TN̥C",
+   "pada": "P",
+   "classes": [
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "TN̥S",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "TYAJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "TRAP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "TRAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "TRĀ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "TRUṬ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TVAKṢ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "TVANG",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "TVIṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "TSAR",
+   "pada": "P",
+   "classes": [
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "DØ̄.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "DØ̄.2",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "DØ̄.3",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DAKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DAGH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2"
+   ]
+  },
+  {
+   "id": "DAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DAS",
+   "pada": "P",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "DAH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DĀ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "DĀŚ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DIŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "DIH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "DĪ",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "DĪKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DĪP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DĪV.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DĪV.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DUDH",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DUṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DUH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "DŪ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "DṚ.1",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "DṚ.2",
+   "pada": "Ā",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "DṚP",
+   "pada": "P",
+   "classes": [
+    "2",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "DṚBH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DṚŚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "DṚH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DE",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DM̥̄",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DN̥BH",
+   "pada": "P",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DN̥Ś",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "DYUT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "DRAM",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DRĀ.1",
+   "pada": "P",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "DRĀ.2",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "DRU",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "DRUH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "DRŪ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DVIṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "DHØ̄.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "DHØ̄.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "6"
+   ]
+  },
+  {
+   "id": "DHINV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DHĪ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DHUKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DHUṚ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "DHŪ",
+   "pada": "U",
+   "classes": [
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "DHṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "DHṚṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DHAU.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DHAU.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DHMĀ",
+   "pada": "U",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "DHYĀ",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "DHRAJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "DHVAN",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "DHVN̥S",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "NAD",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "NAND",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "NABH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NARD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NAŚ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "NAS",
+   "pada": "Ā",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "NAH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "NĀTH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NIṂS",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NIKṢ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NIJ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "NIND",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NĪ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "NU.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "NU.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NUD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "NṚT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "NED",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "NM̥",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "NN̥Ś",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "PØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "PAC",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "PAJ",
+   "pada": "Ā",
+   "classes": []
+  },
+  {
+   "id": "PAṬ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PAṬH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PAṆ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PAT",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "PATH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PAD",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "PARD",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PALAI",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PĀ",
+   "pada": "P",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "PINV",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PIBD",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PIŚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PIṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "PIS",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PĪḌ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "PĪY",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PUṬ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PUTH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PUṢ",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PŪ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PŪJ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "PŪY",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PṚØCH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "PṚ.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "PR.2",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PṚC",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "PṜ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PAI",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PN̥",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PYĀ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "PRATH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PRĀ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "PRĪ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "PRU",
+   "pada": "Ā",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "PRUTH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PRUṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PLU",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "PLUṢ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PSØ̄",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "PHAKK",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PHAṆ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "PHAR",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "PHAL.1",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "PHAL.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BAL",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "BĀDH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BUDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "BUL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BṚH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BN̥DH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BN̥H",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BRŪ",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "BHAKṢ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "BHAJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BHAṆ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHARTS",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHARV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHAṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHAS",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHĀ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "BHĀM",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHĀṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHĀS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHIKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHID",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BHĪ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BHUJ.1",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "BHUJ.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "BHUR",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHŪ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHŪṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BHṚJJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHN̥J",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "BHN̥D",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHYAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHRĪ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "BHRĀJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHREṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "BHRM̥̄",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "BHRN̥Ś",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MØ̄.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "MØ̄.2",
+   "pada": "Ā",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "MØ̄.3",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "MAJJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MAD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "MANC",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MĀRG",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MI.1",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "MI.2",
+   "pada": "P",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "MIØKṢ",
+   "pada": "U",
+   "classes": [
+    "1"
+   ]
+  },
+  {
+   "id": "MIKṢ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "MITH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MID",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "MIL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MIṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MIH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "MĪL",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MĪV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MUC",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "MUṬ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MUD",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "MUṢ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MUH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "MŪR",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "MṚØKṢ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MṚC",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "MṚJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "MṚḌ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MṚD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MṚDH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "MṚŚ",
+   "pada": "U",
+   "classes": [
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "MṚṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MṜ",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "MN̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "MN̥TH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "MN̥H",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MNĀ",
+   "pada": "P",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "MRIT",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MREḌ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MLĀ",
+   "pada": "U",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "MLICH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "MLUC",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "YAKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "YAT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "YABH",
+   "pada": "U",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "YAS",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "YĀ",
+   "pada": "U",
+   "classes": [
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "YĀC",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "YĀD",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "YU.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "YU.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "YUJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "YUDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "YUP",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "YM̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "RAKṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "RAC",
+   "pada": "P",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "RAṬ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RAD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RADH",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "RAN.1",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RAN.2",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RANG",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RANB",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RANBH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RANV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RANH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RAPŚ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RAS.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RAS.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RAH",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RĀ.1",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "RĀ.2",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "RĀJ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RĀDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "RĀS",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RI",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "RIKH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RIṄG",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RIC",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "RIPH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RIBH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RIṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RU.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RU.2",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RUC",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "RUJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "RUD",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RUDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "RUP",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "RUṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RUH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "7"
+   ]
+  },
+  {
+   "id": "RŪṢ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "REJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "REḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "RM̥",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "RN̥J",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "RN̥BH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "LAKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LAG",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LAJJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LAḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LANGH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LANB",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LAP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LABH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LAṢ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LĀ",
+   "pada": "P",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "LIKH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LIP",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "LIŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "LIH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "LĪ.1",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "LĪ.2",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "LUÑC",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LUṬH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LUṆṬH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LUP",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "LUBH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LUL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "LŪ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "LOC",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VAT",
+   "pada": "P",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "VADH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VANṬ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VAND",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VAL",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VALG",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VALH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VĀ",
+   "pada": "P",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "VĀNCH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VĀŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VĀH",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VIØC",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VIØDH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "VIC",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VIJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "VID.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VID.2",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "VIDH.1",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VIDH.2",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VIŚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "VIṢ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "VIṢṬ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VĪ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "VĪØJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VĪØ̄",
+   "pada": "U",
+   "classes": [
+    "2",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "VĪḌ",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "VṚ.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VṚ.2",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VṚØŚC",
+   "pada": "P",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VṚṂH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VṚJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "7"
+   ]
+  },
+  {
+   "id": "VṚT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VṚDH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5",
+    "7"
+   ]
+  },
+  {
+   "id": "VṚṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VṚH",
+   "pada": "P",
+   "classes": [
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "VEN",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VEP",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VELL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VM̥̄",
+   "pada": "P",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "VN̥C",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VN̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "id": "VYATH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "VYE",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VRAJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VRĀDH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VRĪḌ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VRUḌ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VRN̥D",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "VLĪ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "VLN̥G",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "6"
+   ]
+  },
+  {
+   "id": "ŚØ̄S",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "ŚAK",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "ŚAD.1",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "ŚAD.2",
+   "pada": "P",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "ŚANK",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚAP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "ŚAM",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚAŚ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚAS",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚIKṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚIÑJ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚIṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "ŚĪØ̄",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "ŚUC",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚUJ",
+   "pada": "Ā",
+   "classes": []
+  },
+  {
+   "id": "ŚUDH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚUBH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚUṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "ŚṚDH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚṚØTH",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "ŚṜ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚE",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚM̥̄",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚN̥S",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚCUT",
+   "pada": "P",
+   "classes": [
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚNATH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚRAN",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚRĀ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "ŚRI",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚRĪ",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "ŚRU",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "ŚRM̥̄",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚRN̥BH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚLĀGH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚLIṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "ŚVAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚVI",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚVIT",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "ŚVN̥C",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "ṢṬHĪV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "SAGH",
+   "pada": "P",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SAC",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SAJ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "SAD",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SAP",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "SARJ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SAS",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SAH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SĀDH",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "SIC",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SIDH.1",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SIDH.2",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SĪV",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SU",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SUØP",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SUBH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SŪ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SŪD",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "SŪRKṢ",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SṚ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "SṚJ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "SṚP",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SEV",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SN̥̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SKU",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SKN̥D",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SKN̥BH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SKHAL",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "STAN",
+   "pada": "U",
+   "classes": [
+    "2",
+    "5"
+   ]
+  },
+  {
+   "id": "STIGH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "STIM",
+   "pada": "P",
+   "classes": []
+  },
+  {
+   "id": "STU",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "STUBH",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "STṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "STN̥BH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "STYĀ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "STHØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "4"
+   ]
+  },
+  {
+   "id": "STHAG",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SNĀ",
+   "pada": "U",
+   "classes": [
+    "6"
+   ]
+  },
+  {
+   "id": "SNIH",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "SNU",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "SPAŚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3"
+   ]
+  },
+  {
+   "id": "SPṚ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "SPṚDH",
+   "pada": "U",
+   "classes": [
+    "1",
+    "5"
+   ]
+  },
+  {
+   "id": "SPṚŚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "7"
+   ]
+  },
+  {
+   "id": "SPṚH",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SPN̥D",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SPHAL",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SPHĀ",
+   "pada": "Ā",
+   "classes": []
+  },
+  {
+   "id": "SPHUṬ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SPHUR",
+   "pada": "U",
+   "classes": [
+    "3"
+   ]
+  },
+  {
+   "id": "SPHŪRJ",
+   "pada": "P",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SMI",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SMṚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "SYN̥D",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SRIDH",
+   "pada": "P",
+   "classes": [
+    "2"
+   ]
+  },
+  {
+   "id": "SRĪV",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "SRU",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SRN̥S",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SVAN",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "SVAR",
+   "pada": "P",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "SVĀD",
+   "pada": "U",
+   "classes": []
+  },
+  {
+   "id": "SVID",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "SVN̥J",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "HØ̄",
+   "pada": "U",
+   "classes": [
+    "1",
+    "4",
+    "6"
+   ]
+  },
+  {
+   "id": "HAD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HARI",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HĀ",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "HĀS",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HI",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "HIṂS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HIKK",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HIṆḌ",
+   "pada": "Ā",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HĪḌ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HU",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "HŪ",
+   "pada": "U",
+   "classes": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "HŪRCH",
+   "pada": "P",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HṚ.1",
+   "pada": "U",
+   "classes": [
+    "1",
+    "3",
+    "4"
+   ]
+  },
+  {
+   "id": "HR.2",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HṚṢ",
+   "pada": "U",
+   "classes": [
+    "2",
+    "3"
+   ]
+  },
+  {
+   "id": "HEṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HN̥",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "id": "HNU",
+   "pada": "U",
+   "classes": [
+    "4"
+   ]
+  },
+  {
+   "id": "HRAS",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HRĀD",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HRĪ",
+   "pada": "P",
+   "classes": [
+    "1",
+    "4"
+   ]
+  },
+  {
+   "id": "HREṢ",
+   "pada": "U",
+   "classes": [
+    "5"
+   ]
+  },
+  {
+   "id": "HLĀD",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HVAL",
+   "pada": "U",
+   "classes": [
+    "3",
+    "5"
+   ]
+  },
+  {
+   "id": "HVṚ",
+   "pada": "U",
+   "classes": [
+    "3",
+    "4"
+   ]
+  }
+ ]
+}

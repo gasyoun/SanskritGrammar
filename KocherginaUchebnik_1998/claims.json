@@ -1,6 +1,6 @@
 {
   "work": "Kochergina, Учебник санскрита (Sanskrit textbook), 1998",
-  "generated": "16-07-2026",
+  "generated": "17-07-2026",
   "synthesis": "On the full 40-lesson sweep, the headline of the verb-system pilot holds and sharpens: Kochergina's *factual accuracy is high* — the large majority of registered assertions are TRUE against the DCS-2021 corpus and Whitney 1889 — and her failures are almost never errors of fact but of *calibration*. Her presentation principle is the paradigm-completeness tradition of the Petersburg/Soviet school: give every form its rule and its exceptions, ordered by the grammatical system, and trust the learner to drill the tables. That principle is well-suited to accuracy and to reading the classical language, and it produces the many clean TRUE/JUSTIFIED anchors here (neuter N=A syncretism HK-13, one-final-consonant phonotactics HK-31, pronominal sarvam HK-30, the reduplication and passive-alignment rules).\n\nTwo systematic failure modes recur across the whole book. **(1) Universality overreach.** The beginner-facing rule is stated with an absolute quantifier — \"всегда\", \"только\", \"по единому правилу\" — where a well-known exception class exists. The sharpest case is HK-16 (\"основы на -ī и -ū всегда женского рода\"), which is simply FALSE: masculine ī/ū-stems (rathī, senānī, sudhī, monosyllabic bhū-) are well attested; she means the derived nadī/vadhū class. The same overreach drives HK-10 (accentless finite verb \"никогда\" — but it IS accented in a subordinate clause, Whitney §595), HK-14/HK-34 (a-/compound gender \"always\" the final/derived value — bahuvrīhi gender tracks the referent, contradicted in her own lesson), HK-25 (simple perfect \"от всех односложных\" — vid/ās/long-vowel roots take periphrastic), HK-38 (root aorist \"от некоторых -ā и bhū\" — the attested root-aorist set is much wider), and HK-40 (double-preverb ordering \"всегда\"). **(2) Frequency-blindness.** The tradition orders material by systematic regularity, not by how often a form is actually met, so a canonical \"base rule\" is foregrounded over the statistically dominant realisation of it. HK-4 (future -syá taught as the single rule while the seṭ -iṣya is 56.8% of forms) is the template; HK-15 (imperfect \"обычно\" the narrative past — stratum-dependent), HK-19 (class-IX \"большинство носовой+согласная\" — doubtful), HK-26, HK-32 all repeat it.\n\nA third, smaller bucket is genuinely **UNTESTABLE**: the precise percentages Kochergina asserts without a stated count base — HK-41 (prefixed-verb 60/30/<10% semantic split) and HK-42 (a- privative ≥1/3 of prefixed nouns, ~80% abstract). Directionally plausible, but not reproducible without her coding scheme; flagged rather than assumed. Where the corpus *can* adjudicate a frequency claim, it usually vindicates her: the conditional (HK-23, 0.03%), the middle precative (HK-39, 0.03%) and the 2nd-person imperative dominance (HK-17, 63%) all land where she says.\n\nRecommendation for the reading-site overlay: keep Kochergina's text intact (it is accurate) and badge the two failure modes — the FALSE/OVERSTATED universals with the counter-class, and the frequency-hidden claims with the corpus number — so the learner sees where an absolute rule has an escape hatch and where a \"variant\" is in fact the norm. The register generalises: the two axes are worth running on any grammar whose ordering predates corpus statistics (roadmap spine S1/S2).\n\n**The samasa-section audit (H1050, 16-07-2026, per MG's adjudication directive «весь раздел по самасам неверный — проверить все по Лейтану»)** sharpens the book's profile with a third pattern. Of the 46 section claims (registered + HK-234..HK-259), 36 are TRUE, 7 OVERSTATED, 0 FALSE, 3 UNTESTABLE — so the section's MECHANICS (stem changes, member order, dual/plural rules, junction sandhi) are sound, refuting the hypothesis at the fact level. But all seven flags sit on the CLASSIFICATORY SKELETON: the compound definition itself (HK-234 — excludes the upapada class her own lessons teach), all four type definitions (HK-236 tatpurusa and HK-237 karmadharaya delimited by part of speech instead of the Paninian case relation, each broken by her own appositional extension; HK-238 apposition forced to carry simile semantics; HK-239 dvigu missing the collective-sense criterion, over-capturing numeral bahuvrihis), and the gender rule (HK-34). Against the Leitan/Paninian arrangement (karmadharaya and dvigu as SUBTYPES of tatpurusa; case-relation, not POS, as the criterion) the framework is systematically non-standard even where every individual mechanical fact is right — the author's intuition holds for the system, not the facts.",
   "claims": [
     {
@@ -13,7 +13,8 @@
       "ref": "Whitney §824 (aorist recessive in classical); DCS verify_claims_dcs.py HK-1",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A model presentation: Kochergina states *which* part (≈half in Vedic, receding to rare in Classical) and *why* (diachronic loss), matching the corpus (0.31% of verbal tokens). The hedge \"лишь от части\" is if anything an understatement of how marginal the aorist is in the classical corpus. No frequency hidden.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-2",
@@ -25,7 +26,8 @@
       "ref": "Whitney §507 (interrogative + ca/caná/cid/ápi → indefinite); Kochergina's own paradigm mdx 6256-6258",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct and stated at the right altitude. The particle is genuinely invariant and the junction is external sandhi; MG's existing kenacid counts in DCS confirm the attested paradigm. Nothing overstated.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-3",
@@ -37,7 +39,8 @@
       "ref": "Whitney §961-966 (gerundive -ya/-tavya/-anīya); DCS verify_claims_dcs.py HK-3",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Formation description and the three-suffix inventory are accurate. Answering MG's \"насколько распространено\": the gerundive is a real but minor category (3.06% of verbal tokens), and the simple -ya type outnumbers -tavya and -anīya together among distinct forms. Kochergina lists the suffixes without ranking them; a frequency note (-ya dominant) would improve it but nothing is misstated.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-4a",
@@ -49,7 +52,8 @@
       "ref": "Whitney §931-935 (s-future, seṭ/aniṭ -iṣya vs -sya); DCS verify_claims_dcs.py HK-4",
       "verdict_pedagogy": "MISLEADING",
       "note": "\"От всех глаголов\" is defensible as a productivity/paradigm claim (the future is regularly formable). But \"по единому правилу -syá\" is overstated: the actual conditioning is the seṭ/aniṭ lexical class (whether a root takes the connecting -i-), not a single suffix. Presenting -syá as THE rule and -ṣya/-iṣya as mere \"варианты\" inverts corpus reality — see HK-4b. Ties to roadmap spine S2 (seṭ/aniṭ).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-4b",
@@ -61,7 +65,8 @@
       "ref": "Whitney §934-935 (union-vowel i in the s-future); DCS verify_claims_dcs.py HK-4",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "The three suffixes exist and the -ā→-sya rule holds, so the surface facts are right. But calling -ṣya/-iṣya \"варианты\" of a base -sya buries the corpus fact that -iṣya (seṭ) is the MAJORITY outcome (56.8%). The conditioning Kochergina gives is phonological (root-final sound), whereas the real predictor is the seṭ/aniṭ lexical class — a learner drilled on \"-sya is the rule\" will mis-predict the most common case.",
-      "mg_footnote": "В корпусе DCS-2021 «вариант» -iṣya (seṭ) — самая частая форма будущего: 56,8% различных форм (1 487), против -sya 24,9% (652) и -ṣya 18,3% (479). То, что подано как исключение, на деле — норма."
+      "mg_footnote": "В корпусе DCS-2021 «вариант» -iṣya (seṭ) — самая частая форма будущего: 56,8% различных форм (1 487), против -sya 24,9% (652) и -ṣya 18,3% (479). То, что подано как исключение, на деле — норма.",
+      "methodichka": null
     },
     {
       "id": "HK-5",
@@ -70,10 +75,11 @@
       "kind": "statistic",
       "verdict_fact": "OVERSTATED",
       "number": "MEASURED (16-07-2026, aorist_type_ranking.py, H1045): the DCS-2021 blocker (\"tags aorist only as Act/Med, not by formation type\") is stale — DCS-2026's feat_formation tag under feat_tense=Past distinguishes exactly Whitney's 7 types (root=I, them=II thematic, red=III, s=IV, is=V, sis=VI, sa=VII), the same identification built for HK-207 (H1040). Result is GENUINELY MIXED, dug into with a genre split + a lexical-outlier check before verdicting (same diligence as OCH-66/67): **whole corpus, raw tokens — Type I root aorist leads (5,690) over Type II thematic (2,781), NOT close; whole corpus excluding bhū (which alone supplies ~38% of Type I's tokens as a near- auxiliary \"was/became\") — Type I STILL leads (3,346 vs 2,781); whole corpus by distinct-lemma count — Type IV s-aorist leads (216 lemmas), Type II is 3rd (175).** Type II only comes out on top in a NARROWER reading: the classical (non-Vedic) text subset, EXCLUDING bhū specifically — there Type II leads both by token count (850 vs 724) and lemma-type count (58 vs 52). 2 of 6 checks confirm Type II as top; 4 do not",
-      "ref": "Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py; hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification)",
+      "ref": "Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py; hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification); TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054, catalog axis)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Whitney's own account (and every grammar that repeats it) may well be right for Classical Sanskrit narrative specifically — the classical-subset, bhū-excluded reading (the closest analogue to what these grammars actually describe) DOES confirm it. But the flat, unqualified 'самый распространенный в санскрите' claim does not hold against this corpus as a whole: root aorist dominates by raw frequency (not merely a bhū artifact) and s-aorist is the most productive type by root count. Recorded as OVERSTATED — directionally defensible in the narrowest reading, not in the broad one actually stated.",
-      "mg_footnote": null
+      "note": "Whitney's own account (and every grammar that repeats it) may well be right for Classical Sanskrit narrative specifically — the classical-subset, bhū-excluded reading (the closest analogue to what these grammars actually describe) DOES confirm it. But the flat, unqualified 'самый распространенный в санскрите' claim does not hold against this corpus as a whole: root aorist dominates by raw frequency (not merely a bhū artifact) and s-aorist is the most productive type by root count. Recorded as OVERSTATED — directionally defensible in the narrowest reading, not in the broad one actually stated. TALMUD CROSS-CHECK (17-07-2026, H1054): the systematic (catalog) axis agrees with the verdict — in the Talmud's Приложение-1 (745 roots, aorist_class_census.py) the thematic class 2 is only 5th of 7 by root count (116 roots, vs iṣ- 511 · reduplicated 342 · s- 196 · root 142), so «самый распространенный» is not supported on ANY measured axis, corpus or catalog.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-6",
@@ -85,7 +91,8 @@
       "ref": "Whitney §1043 (present participles), §332ff (a-stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Uncontroversial systemic fact; nothing to flag.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-7",
@@ -97,7 +104,8 @@
       "ref": "Whitney §17-22 (a the most frequent vowel; ā its long counterpart)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A clean, uncontroversial statistic. Not separately recomputed as a phoneme census here (the DCS-2021 relational export is lemmatised, not a running-text phoneme stream), but the a/ā dominance is one of the most robust facts about the language. No overreach.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-8",
@@ -109,7 +117,8 @@
       "ref": "Whitney §23-24 (ṛ common, ṝ/ḷ rare, ḹ a grammarians' fiction)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Accurate and well-calibrated: ḹ is famously all but non-existent, ṛ (the common one) is correctly separated from its rare long/lateral congeners. A model 'rare form flagged as rare'.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-9",
@@ -121,7 +130,8 @@
       "ref": "Whitney §159 (final-stop voicing), §202-203 (assimilation)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Textbook-standard sandhi, stated correctly and categorically. A good TRUE/JUSTIFIED anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-10",
@@ -133,7 +143,8 @@
       "ref": "Whitney §92-94 (enclitics), §592/§595 (verb accent: principal- vs subordinate-clause; the §168 cited before 16-07-2026 is a euphonic-combination section — corrected by the H1033 verification pass)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The particles/enclitics half is right, but 'verbum finitum ... никогда' overshoots: the very condition that makes the verb accentless (principal clause, non-initial) is exactly what the absolute 'никогда' hides. A learner told the verb is 'never' accented will misread accented Vedic subordinate clauses. The parenthetical 'в середине предложения' half-corrects it but the universal wording dominates.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-11",
@@ -145,7 +156,8 @@
       "ref": "Whitney §174-178 (final s-sandhi; the -as/-ās exception)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Precisely stated, including the crucial ā̆-exception that beginners usually miss. The rule is a well-formed categorical statement, not an overreach.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-12",
@@ -157,7 +169,8 @@
       "ref": "Whitney §326ff (a-stems, 'by far the most numerous class')",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A superlative frequency claim that is safe — the a-stem dominance is beyond dispute. Not re-counted from a nominal table here, but low-risk; Whitney himself calls it the most numerous class.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-13",
@@ -169,7 +182,8 @@
       "ref": "Whitney §148, §307 (neuter N=A=V)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A genuine exceptionless universal — the 'во всех числах' is fully earned. Strong anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-14",
@@ -181,7 +195,8 @@
       "ref": "Whitney §347ff (ā-stems: derived fem. vs root/monosyllabic)",
       "verdict_pedagogy": "MISLEADING",
       "note": "Practically fine for the class being taught (the productive -ā declension is feminine), but the unqualified 'являются ... женского рода' is an overreach against the root-ā class. Milder than the -ī/-ū version (HK-16) because the masculine ā-stems are rarer.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-15",
@@ -193,7 +208,8 @@
       "ref": "Whitney §779-783 (imperfect); §821-823 (perfect's later narrative drift)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Not wrong as a rough classical-prose heuristic, but 'обычно' flattens a real diachronic and register split (imperfect vs perfect vs aorist share different narrative niches by period).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-16",
@@ -205,7 +221,8 @@
       "ref": "Whitney §343-344, §352 (masculine ī/ū-stems), §355-356 (derived fem. nadī/vadhū)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The clearest overreach in the book. Kochergina means the derived nadī-/vadhū- feminine type, which is indeed feminine — but the absolute 'всегда женского рода' is contradicted by a standard, non-marginal set of masculine ī/ū-stems. A learner will mis-gender rathī / senānī. Overlay should badge with the counter-class.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-17",
@@ -217,7 +234,8 @@
       "ref": "Whitney §569ff (imperative); DCS verify_claims_dcs.py HK-17",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Directly corpus-confirmed: the 2nd person is the clear majority of imperative forms, exactly as Kochergina says (the imperative is inherently a directive addressed to '2nd person'). Well calibrated.",
-      "mg_footnote": "Формы 2-го лица составляют 62,7% различных форм императива в DCS-2021 (2 751 из 4 386); 3-е лицо — 31,2%, 1-е — 6,1%."
+      "mg_footnote": "Формы 2-го лица составляют 62,7% различных форм императива в DCS-2021 (2 751 из 4 386); 3-е лицо — 31,2%, 1-е — 6,1%.",
+      "methodichka": null
     },
     {
       "id": "HK-18",
@@ -229,7 +247,8 @@
       "ref": "Whitney §606ff (thematic conjugation), §733 (1st-person lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Two claims, both sound: thematic-class majority (frequency) and the categorical 1st-person lengthening (rule). No overreach.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-19",
@@ -241,7 +260,8 @@
       "ref": "Whitney §723ff (kryādi / class IX)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "The nasal-loss observation is right for the roots it applies to, but the 'большинство' framing inflates the share of nasal-final roots in the class. A count against Whitney's kryādi list would very likely refute the majority claim.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-20",
@@ -253,7 +273,8 @@
       "ref": "Whitney §613, §660 (reduplicating class 3pl endings)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A genuine categorical rule, correctly stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-21",
@@ -265,7 +286,8 @@
       "ref": "Whitney §216-217 (palatal reversion), §936 (future of such roots)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Accurate, and the hedge 'в большинстве случаев' is itself well-judged — but it leaves the h/j split (→ k vs → ṣ) unresolved for the learner. Complements HK-4b: the future's consonant resolution is genuinely multi-way.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-22",
@@ -277,7 +299,8 @@
       "ref": "Whitney §369-373 (r-stem declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A clean paradigmatic universal, correctly stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-23",
@@ -289,7 +312,8 @@
       "ref": "Whitney §950 (conditional rare); DCS verify_claims_dcs.py HK-23",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed: the conditional is one of the rarest finite categories. Kochergina's 'сравнительно редко' is exactly right and appropriately unemphatic.",
-      "mg_footnote": "Кондиционалис — 0,03% глагольных словоформ корпуса DCS-2021 (269 из 781 618). «Сравнительно редко» — точная характеристика."
+      "mg_footnote": "Кондиционалис — 0,03% глагольных словоформ корпуса DCS-2021 (269 из 781 618). «Сравнительно редко» — точная характеристика.",
+      "methodichka": null
     },
     {
       "id": "HK-24",
@@ -301,7 +325,8 @@
       "ref": "Whitney §590b (deaspiration in reduplication)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A fully general phonological rule, correctly stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-25",
@@ -313,7 +338,8 @@
       "ref": "Whitney §790 (reduplicated perfect), §1070-1071 (periphrastic perfect roots)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The reduplicated perfect is indeed the default for this shape-class, but the absolute 'от всех' hides the periphrastic-perfect roots the learner meets almost immediately (vid, ās). A 'as a rule, with a short exception list' framing would be accurate.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-26",
@@ -325,7 +351,8 @@
       "ref": "Whitney §797ff (seṭ/aniṭ in the perfect)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "The seṭ default is correct; the count word 'нескольких' undersells the aniṭ class (the same seṭ/aniṭ split that drives the future, HK-4). The exception set is closed but not tiny.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-27",
@@ -337,7 +364,8 @@
       "ref": "Whitney §275 (instrumental of agent), §999 (passive construction)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Core syntax, correctly and completely stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-28",
@@ -349,7 +377,8 @@
       "ref": "Whitney §999b (impersonal passive of intransitives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'всегда 3 л. sg.' is genuinely exceptionless here (it follows from the construction). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-29",
@@ -361,7 +390,8 @@
       "ref": "Whitney §952-957 (past passive participle -ta/-na); DCS verify_claims_dcs.py HK-29",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed: -ta is overwhelmingly dominant and -na is a lexically restricted minority (~8%), exactly matching '(реже) -na'. Well calibrated.",
-      "mg_footnote": "Причастий на -na — 8,0% различных форм PPP в DCS-2021 (383 против 4 385 на -ta). Ремарка «(реже) -na» подтверждается количественно."
+      "mg_footnote": "Причастий на -na — 8,0% различных форм PPP в DCS-2021 (383 против 4 385 на -ta). Ремарка «(реже) -na» подтверждается количественно.",
+      "methodichka": null
     },
     {
       "id": "HK-30",
@@ -373,7 +403,8 @@
       "ref": "Whitney §524 (sarva and the pronominal declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A precise, correctly-flagged lexical exception. Anchor for how the register should look.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-31",
@@ -385,7 +416,8 @@
       "ref": "Whitney §150 (one final consonant)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A genuine, exceptionless phonotactic universal. Strong anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-32",
@@ -397,7 +429,8 @@
       "ref": "Whitney §415-420 (-as/-is/-us stems and their genders)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "True for the neuter -as sub-type taken alone, but the claim generalises over -is and -us where the neuter majority is much weaker. A per-suffix gender note would fix it.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-33",
@@ -409,7 +442,8 @@
       "ref": "Whitney §483-486 (numeral declension; gender only in 1–4)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct and precisely bounded ('начиная с pañca'). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-34",
@@ -421,7 +455,8 @@
       "ref": "Whitney §1246ff (compound gender); §1293ff (bahuvrīhi agrees with referent)",
       "verdict_pedagogy": "MISLEADING",
       "note": "Stated as a flat universal where a major exception class (bahuvrīhi) is taught nearby. The rule needs the '(except bahuvrīhi)' rider to be true.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-35",
@@ -433,7 +468,8 @@
       "ref": "Whitney §1253 (dvandva number)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'всегда' is earned for the copulative (itaretara) dvandva. Correctly bounded to 3+ members. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-36",
@@ -445,7 +481,8 @@
       "ref": "Whitney §1041-1042 (causative formation and its transitivity)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Both halves sound. 'Всегда переходные' is defensible (the causee/patient supplies the object); the second clause is trivially true. A minor caveat on 'всегда' for lexicalised causatives, but no material overreach.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-37",
@@ -457,7 +494,8 @@
       "ref": "Whitney §1000-1002 (intensive: root restriction and rarity)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Both the formation restriction and the rarity are correct; 'редко' is well-judged. (Not separately counted — the DCS-2021 export does not carry an intensive tag — but the rarity is not in doubt.)",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-38",
@@ -468,8 +506,9 @@
       "number": "the Parasmaipada-only restriction is broadly right, but the root-aorist source set is wider than '-ā roots + bhū' — gam, sthā, dā, jñā, kram, dhā and others form root aorists (Whitney §829ff)",
       "ref": "Whitney §829-834 (root aorist; its root inventory)",
       "verdict_pedagogy": "MISLEADING",
-      "note": "Understates the root-aorist inventory. The 'только Parasmaipada' half is fine; '-ā roots + bhū' is an over-narrow characterisation of which roots take the type.",
-      "mg_footnote": null
+      "note": "Understates the root-aorist inventory. The 'только Parasmaipada' half is fine; '-ā roots + bhū' is an over-narrow characterisation of which roots take the type. TALMUD CROSS-CHECK (H1054): Приложение-1 assigns class 1 (root aorist) to 142 of 745 roots — the Vedic-inclusive breadth that confirms the inventory is far wider than '-ā + bhū'; on the classical P.-only narrowing the Talmud is silent (its Whitney-based system generates the Vedic middles too). Pairs with OCH-85, the post-Vedic-scoped variant of the same rule, which is TRUE.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-39",
@@ -481,7 +520,8 @@
       "ref": "Whitney §924 (middle precative scantily attested); DCS verify_claims_dcs.py HK-39",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed near-zero. Kochergina's 'крайне редко' is accurate and appropriately emphatic.",
-      "mg_footnote": "Прекатив Ātmanepada — 0,03% глагольных словоформ DCS-2021 (221 из 781 618). «Крайне редко» подтверждается."
+      "mg_footnote": "Прекатив Ātmanepada — 0,03% глагольных словоформ DCS-2021 (221 из 781 618). «Крайне редко» подтверждается.",
+      "methodichka": null
     },
     {
       "id": "HK-40",
@@ -493,7 +533,8 @@
       "ref": "Whitney §1076-1087 (verbal prefixes and their combination)",
       "verdict_pedagogy": "MISLEADING",
       "note": "A useful heuristic frozen into an absolute rule. The inner/outer preference is real but not exceptionless; the two 'всегда's overshoot.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-41",
@@ -505,7 +546,8 @@
       "ref": "no ground-truth source; classification base undisclosed",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Presenting hand-classified percentages as if measured, without a count base, is the register's cleanest UNTESTABLE case. Directionally plausible (most preverb+root meanings are compositional) but the exact figures cannot be checked.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-42",
@@ -517,7 +559,8 @@
       "ref": "no ground-truth source for part 1; KocherginaUchebnik_1998/privative_noun_abstractness.py; hk42_privative_noun_abstractness_stats.json; cf. HK-225/229 (H1047), HK-226/227 (semantic transparency)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Same failure mode as HK-41 for part 1: precise percentages with no reproducible base. Part 2 is now a properly sized attempt, not an unattempted assertion — but the candidate set itself needed semantic judgment (transparent negation vs lexicalized homograph) that structural pattern-matching against DCS's own lemma inventory cannot supply. Recorded with the specific contaminating examples so this exact wall isn't rediscovered from scratch.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-43",
@@ -529,7 +572,8 @@
       "ref": "Whitney §32 (the five series of mutes)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A foundational typological fact, stated with the correct count (5 vargas). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-44",
@@ -541,7 +585,8 @@
       "ref": "Whitney §37 (aspiration and its voicing)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct phonetic description of the aspirate series. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-45",
@@ -553,7 +598,8 @@
       "ref": "Whitney §170-172 (visarga from final s/r)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Accurate, and the relative-frequency parenthetical (-s ≫ -r) is well-judged. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-46",
@@ -565,7 +611,8 @@
       "ref": "Whitney §170 (visarga), §326d (a-stem N.sg -s); DCS verify_claims_dcs.py case_distribution",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A frequency claim the corpus vindicates: Nom is the most common case and its sg carries -s, so the visarga-in-N.sg observation is correct.",
-      "mg_footnote": "Именительный падеж — самый частый в корпусе DCS-2021: 983 591 словоформа (43,2% всех именных), из них 788 742 в единственном числе. Поскольку N.sg.m обычно оканчивается на -s, висарга действительно чаще всего встречается именно в этой форме."
+      "mg_footnote": "Именительный падеж — самый частый в корпусе DCS-2021: 983 591 словоформа (43,2% всех именных), из них 788 742 в единственном числе. Поскольку N.sg.m обычно оканчивается на -s, висарга действительно чаще всего встречается именно в этой форме.",
+      "methodichka": null
     },
     {
       "id": "HK-47",
@@ -577,7 +624,8 @@
       "ref": "Whitney §213 (final m-sandhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct, including the labial-series exception. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-48",
@@ -589,7 +637,8 @@
       "ref": "Whitney §213 (m-sandhi); DCS verify_claims_dcs.py case_distribution",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Directionally right and corpus-supported: acc.sg (and neuter nom-acc.sg) are the dominant word-final -m sources. A note that neuter nom-acc.sg also ends -m would round it out, but nothing is misstated.",
-      "mg_footnote": "Винительный ед.ч. — второй по частоте падеж корпуса DCS-2021 (432 746 словоформ); вместе с им.-вин. ед.ч. среднего рода (тоже на -m) он и даёт основную массу конечного -m → анусвары."
+      "mg_footnote": "Винительный ед.ч. — второй по частоте падеж корпуса DCS-2021 (432 746 словоформ); вместе с им.-вин. ед.ч. среднего рода (тоже на -m) он и даёт основную массу конечного -m → анусвары.",
+      "methodichka": null
     },
     {
       "id": "HK-49",
@@ -601,7 +650,8 @@
       "ref": "Whitney §71, §213c (anunāsika)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A rare form correctly flagged as rare. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-50",
@@ -613,7 +663,8 @@
       "ref": "Whitney §23-24 (vowel-length pairs; ḷ/ḹ marginal); DCS verify_claims_dcs.py HK7_vowel_census",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "True for a/i/u/ṛ; the ḷ inclusion is nominal (the census shows ḷ/ḹ are effectively absent). Kochergina's own 'ḷ marginal' framing is honest.",
-      "mg_footnote": "В поверхностном тексте DCS-2021 (11,4 млн гласных) ḷ и ḹ не встречаются вовсе (0 и 0); противопоставление по долготе реально лишь для a/i/u/ṛ, а пара ḷ:ḹ — искусственная конструкция грамматистов."
+      "mg_footnote": "В поверхностном тексте DCS-2021 (11,4 млн гласных) ḷ и ḹ не встречаются вовсе (0 и 0); противопоставление по долготе реально лишь для a/i/u/ṛ, а пара ḷ:ḹ — искусственная конструкция грамматистов.",
+      "methodichka": null
     },
     {
       "id": "HK-51",
@@ -625,7 +676,8 @@
       "ref": "Whitney §27-28 (e/o), §235-236 (guṇa/vṛddhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct historical + synchronic characterisation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-52",
@@ -637,7 +689,8 @@
       "ref": "Whitney §24 (ṛ common, ṝ/ḷ/ḹ rare); DCS verify_claims_dcs.py HK7_vowel_census",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed: among the syllabic sonants ṛ is the only frequent one. Well calibrated.",
-      "mg_footnote": "Среди слоговых сонантов ṛ — практически единственный употребительный: 199 930 гласных-вхождений (1,75%) в DCS-2021 против ṝ 1 588 (0,01%), ḷ 0 и ḹ 0 — то есть ~126-кратный перевес."
+      "mg_footnote": "Среди слоговых сонантов ṛ — практически единственный употребительный: 199 930 гласных-вхождений (1,75%) в DCS-2021 против ṝ 1 588 (0,01%), ḷ 0 и ḹ 0 — то есть ~126-кратный перевес.",
+      "methodichka": null
     },
     {
       "id": "HK-53",
@@ -649,7 +702,8 @@
       "ref": "Whitney §1121e (su-/dus- prefixes)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Directionally accurate account of su- polysemy; the noun/adjective split is a reasonable teaching simplification of a continuum.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-54",
@@ -661,7 +715,8 @@
       "ref": "Whitney §9 (writing; word-division convention)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct statement of the editorial/orthographic convention. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-55",
@@ -673,7 +728,8 @@
       "ref": "Whitney §156ff (assimilation; regressive default)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct generalisation about the direction of Sanskrit sandhi. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-56",
@@ -685,7 +741,8 @@
       "ref": "Whitney §202-203 (dental assimilation to palatal/cerebral/l)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Standard sandhi, correctly and categorically stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-57",
@@ -697,7 +754,8 @@
       "ref": "Whitney §161 (final t before nasals)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct categorical rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-58",
@@ -709,7 +767,8 @@
       "ref": "Whitney §203 (t + ś → c ch)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct, a commonly-missed detail stated precisely. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-59",
@@ -721,7 +780,8 @@
       "ref": "Whitney §170 (final s/r → visarga in pausa)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pausa rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-60",
@@ -733,7 +793,8 @@
       "ref": "Whitney §170-172 (s-sandhi before voiceless classes)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct four-way conditioning by the following voiceless class. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-61",
@@ -745,7 +806,8 @@
       "ref": "Whitney §179 (s/r loss before r- with lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct compensatory-lengthening rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-62",
@@ -757,7 +819,8 @@
       "ref": "Whitney §126 (coalescence of similar vowels)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct vowel-sandhi rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-63",
@@ -769,7 +832,8 @@
       "ref": "Whitney §127-128 (a + dissimilar vowel → guṇa/vṛddhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct guṇa/vṛddhi sandhi table. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-64",
@@ -781,7 +845,8 @@
       "ref": "Whitney §129 (i/u/ṛ → semivowel before vowel)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct semivowel sandhi. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-65",
@@ -793,7 +858,8 @@
       "ref": "Whitney §213 (final m-sandhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct; complements the line-520 statement. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-66",
@@ -805,7 +871,8 @@
       "ref": "Whitney §527ff (verbal categories)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of the finite-verb categories. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-67",
@@ -817,7 +884,8 @@
       "ref": "Whitney §528-529 (voice restriction of roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct typology. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-68",
@@ -829,7 +897,8 @@
       "ref": "Whitney §768 (passive stem)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: passive is derivational, not a basic diathesis. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-69",
@@ -841,7 +910,8 @@
       "ref": "Whitney §731-733 (thematic accent), §1085 (athematic strong/weak accent)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Fine as a first statement about the thematic present; the athematic strong/weak accent alternation (taught later) is the qualifier to keep in mind.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-70",
@@ -853,7 +923,8 @@
       "ref": "Whitney §512 (personal pronouns; ordinarily omitted)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct as the default; overt subject pronouns do occur for emphasis/topic-shift, but Kochergina's 'не употребляются' captures the unmarked case well.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-71",
@@ -865,7 +936,8 @@
       "ref": "Whitney §733 (thematic 1st-person lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct categorical rule (same fact underlies HK-18's second clause). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-72",
@@ -877,7 +949,8 @@
       "ref": "Whitney §265-266 (the dual; natural pairs)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct as a characterisation of the dual's typical use; the dual is grammatically general (any two), which a fuller note would add, but the paired-object prototype is right.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-73",
@@ -889,7 +962,8 @@
       "ref": "Whitney §266ff (the eight cases)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct case-count. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-74",
@@ -901,7 +975,8 @@
       "ref": "Whitney §111, §162 (stem taxonomy: vowel- vs consonant-stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A clean exhaustive taxonomy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-75",
@@ -913,7 +988,8 @@
       "ref": "Whitney §326-334 (a-stems; m./n. identity outside Nom-Acc)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct on both counts (no fem. a-stem; m./n. syncretism outside Nom-Acc). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-76",
@@ -925,7 +1001,8 @@
       "ref": "Whitney §307 (plural Nom=Voc; Dat=Abl -bhyas)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Two genuine plural universals, correctly stated. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-77",
@@ -937,7 +1014,8 @@
       "ref": "Whitney §175-177 (final -as/-ās sandhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct three-way conditioning of -as/-ās. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-78",
@@ -949,7 +1027,8 @@
       "ref": "Whitney §363-365 (ā-stem declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct interstitial-consonant rule for ā-stems. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-79",
@@ -961,7 +1040,8 @@
       "ref": "Whitney §307 (case-endings common to all stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The listed endings are genuinely universal; the a-stem Instr pl -ais is the standard exception worth a rider, but the claim as scoped is accurate.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-80",
@@ -973,7 +1053,8 @@
       "ref": "Whitney §180 (ruki s → ṣ)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct ruki rule with the right worked pair. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-81",
@@ -985,7 +1066,8 @@
       "ref": "Whitney §321-322 (adjectives decline as nouns)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct typological statement. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-82",
@@ -997,7 +1079,8 @@
       "ref": "Whitney §585, §541 (augment; augment accent)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the augment is the imperfect's marker and is accented. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-83",
@@ -1009,7 +1092,8 @@
       "ref": "Whitney §1081b (augment placement after preverb)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct augment-placement rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-84",
@@ -1021,7 +1105,8 @@
       "ref": "Whitney §566, §613d (optative endings)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct optative ending set. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-85",
@@ -1033,7 +1118,8 @@
       "ref": "Whitney §355b, §356 (ī-stems taking Nom sg -s)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A precise, correctly-flagged lexical exception. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-86",
@@ -1045,7 +1131,8 @@
       "ref": "Whitney §1223ff (feminine derivation -ā vs -ī); KocherginaUchebnik_1998/masc_animate_feminine_pattern.py; hk86_masc_animate_feminine_stats.json; animacy_lookup.py (H1056)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "A proportion claim whose base cannot yet be reconstructed cleanly — not for lack of trying, but because the surface-pattern check is heavily confounded by an unrelated grammatical phenomenon (bahuvrīhi compound agreement) that shares the exact same -a→-ā surface change the claim is about for simple nouns. Recorded with the compound-contamination finding so it isn't rediscovered from scratch; still flagged UNTESTABLE rather than forced to a verdict on a confounded, thin residual.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-87",
@@ -1057,7 +1144,8 @@
       "ref": "Whitney §1222 (feminine of -aka in -ikā)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct derivational rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-88",
@@ -1069,7 +1157,8 @@
       "ref": "Whitney §235ff (guṇa/vṛddhi grades); cf. ZalizniakOcherk_1978 §62 (subtype-1, same tyaj example); KocherginaUchebnik_1998/two_grade_root_vowel_check.py; hk88_two_grade_root_vowel_stats.json",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The prior UNTESTABLE verdict mischaracterized the claim as mislabeling the grade hierarchy — rereading the mdx directly shows it's a precise, standard description (Ocherk's own subtype-1 неполноизменяемость, using the identical tyaj example). One scope caveat: the crosswalk's 'defective' flag doesn't separate неполноизменяемость subtypes 1/2/3, so this measures the BROADER defective category, not subtype-1 alone — a reasonable proxy since Ocherk itself notes subtype-3 is 'очень малочисленный', but not a perfectly scoped match.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-89",
@@ -1081,7 +1170,8 @@
       "ref": "Whitney §335, §342 (gender distribution of i- and u-stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Matches Whitney's characterisation of the two classes' gender preponderances; exact proportions not recomputed but the tendency is the standard one.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-90",
@@ -1093,7 +1183,8 @@
       "ref": "Whitney §336-343 (i- and u-stems share the ending set)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: i/u-stems are one declensional pattern. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-91",
@@ -1105,7 +1196,8 @@
       "ref": "Whitney §349, §351, §383 (monosyllabic root-stem declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the root-stem declension is uniform for ā/ī/ū monosyllables. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-92",
@@ -1117,7 +1209,8 @@
       "ref": "Whitney §606ff (the ten present-classes; thematic/athematic split)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class count and the thematic/athematic partition. Anchor (see HK-18/HK-72 for the frequency of the split).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-93",
@@ -1129,7 +1222,8 @@
       "ref": "Whitney §745 (class-I guṇa of the root vowel)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class-I stem-formation rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-94",
@@ -1141,7 +1235,8 @@
       "ref": "Whitney §749 (class VI, tudádi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class-VI stem + accent. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-95",
@@ -1153,7 +1248,8 @@
       "ref": "Whitney §761 (class-IV lengthening before -ya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class-IV allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-96",
@@ -1165,7 +1261,8 @@
       "ref": "Whitney §775, §1041 (class X / -aya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class-X stem + accent. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-97",
@@ -1177,7 +1274,8 @@
       "ref": "Whitney §606 (athematic classes)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of the athematic classes. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-98",
@@ -1189,7 +1287,8 @@
       "ref": "Whitney §604, §555 (strong/weak stem alternation)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct characterisation of athematic gradation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-99",
@@ -1201,7 +1300,8 @@
       "ref": "Whitney §1085ff (athematic accent by grade)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct accent-by-grade rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-100",
@@ -1213,7 +1313,8 @@
       "ref": "Whitney §611ff (root class); DCS verify_claims_dcs.py HK18_verb_class_share (class II)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Historically accurate (the root class stopped taking new members); the corpus caveat is that class II is still token-frequent because its few surviving roots are extremely common. Productivity ≠ frequency.",
-      "mg_footnote": "Класс II в DCS-2021 даёт 154 301 словоформу, но это несколько замороженных высокочастотных корней (as, vac, brū, yā и др.), а не продуктивный тип: новых глаголов класс не пополняет. Высокая частотность при закрытом составе — как раз признак непродуктивности."
+      "mg_footnote": "Класс II в DCS-2021 даёт 154 301 словоформу, но это несколько замороженных высокочастотных корней (as, vac, brū, yā и др.), а не продуктивный тип: новых глаголов класс не пополняет. Высокая частотность при закрытом составе — как раз признак непродуктивности.",
+      "methodichka": null
     },
     {
       "id": "HK-101",
@@ -1225,7 +1326,8 @@
       "ref": "Whitney §697ff (class V, svādi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct class-V stem formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-102",
@@ -1237,7 +1339,8 @@
       "ref": "Whitney §683ff (class VII, nasal-infix)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: class VII is the nasal-infix class, all consonant-final. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-103",
@@ -1249,7 +1352,8 @@
       "ref": "Whitney §613 (athematic 3pl Ā endings)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct athematic-vs-thematic 3pl.Ā contrast. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-104",
@@ -1261,7 +1365,8 @@
       "ref": "Whitney §704 (imperative 2sg -dhi/-hi/zero)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct imperative-2sg conditioning. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-105",
@@ -1273,7 +1378,8 @@
       "ref": "Whitney §621 (ā-roots of the root class)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: ā-roots are invariant in the present. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-106",
@@ -1285,7 +1391,8 @@
       "ref": "Whitney §637 (han: ghn- in the weakest forms)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct han allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-107",
@@ -1297,7 +1404,8 @@
       "ref": "Whitney §714 (kṛ: kuru-/kur-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct kṛ present allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-108",
@@ -1309,7 +1417,8 @@
       "ref": "Whitney §935 (guṇa in the s-future)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct future-stem guṇa rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-109",
@@ -1321,7 +1430,8 @@
       "ref": "Whitney §936, §167 (d/dh/s → t before s)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pre-s internal sandhi. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-110",
@@ -1333,7 +1443,8 @@
       "ref": "Whitney §1182 (-tṛ agent nouns; seṭ -i-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct parallel between the -tṛ noun and the future stem. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-111",
@@ -1345,7 +1456,8 @@
       "ref": "Whitney §1182d (feminine of -tṛ)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct feminine-derivation rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-112",
@@ -1357,7 +1469,8 @@
       "ref": "Whitney §369-373 (r-stems: agent vṛddhi vs kinship guṇa)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct and precisely the well-known agent/kinship strong-case contrast. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-113",
@@ -1369,7 +1482,8 @@
       "ref": "Whitney §942-947 (periphrastic future)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct periphrastic-future construction incl. the 3rd-person auxiliary drop. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-114",
@@ -1381,7 +1495,8 @@
       "ref": "Whitney §588 (uses of reduplication)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of the reduplicating categories. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-115",
@@ -1393,7 +1508,8 @@
       "ref": "Whitney §590 (guttural → palatal, h → j in reduplication)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct reduplication-consonant mapping (distinct from the deaspiration rule HK-24). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-116",
@@ -1405,7 +1521,8 @@
       "ref": "Whitney §821-823 (perfect's later narrative use); DCS verify_claims_dcs.py HK15_past_tenses",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct diachronic observation; the corpus shows perfect and imperfect at comparable token counts, consistent with both serving past narration in the classical stratum.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-117",
@@ -1417,7 +1534,8 @@
       "ref": "Whitney §793-794 (perfect strong-form vṛddhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct perfect strong-grade rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-118",
@@ -1429,7 +1547,8 @@
       "ref": "Whitney §793a (ā-root perfect -au)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct ā-root perfect. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-119",
@@ -1441,7 +1560,8 @@
       "ref": "Whitney §794a (contracted -e- perfect of a-roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct account of the contracted perfect. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-120",
@@ -1453,7 +1573,8 @@
       "ref": "Whitney §1070-1071 (periphrastic perfect)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of periphrastic-perfect roots (the counterpart of the HK-25 overstatement). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-121",
@@ -1465,7 +1586,8 @@
       "ref": "Whitney §1071b-c (periphrastic-perfect auxiliaries; āsa ≫ cakāra > babhūva)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct auxiliary ranking, incl. the '(редко) bhū'. Anchor; exact token split not carried by the DCS-2021 export.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-122",
@@ -1477,7 +1599,8 @@
       "ref": "Whitney §491 (enclitic pronoun forms)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the enclitics are confined to Acc/Dat/Gen. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-123",
@@ -1489,7 +1612,8 @@
       "ref": "Whitney §543a (seṭ/aniṭ/veṭ)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct seṭ/aniṭ/veṭ typology (the lexical class behind the future HK-4b and perfect HK-26). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-124",
@@ -1501,7 +1625,8 @@
       "ref": "Whitney §968 (infinitive -tum)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the infinitive tracks seṭ/aniṭ exactly like the other -ta formations. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-125",
@@ -1513,7 +1638,8 @@
       "ref": "Whitney §990, §994 (absolutive -tvā vs -ya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct absolutive allomorphy by prefixation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-126",
@@ -1525,7 +1651,8 @@
       "ref": "Whitney §141ff, §216 (internal sandhi before t)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pre-t cluster formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-127",
@@ -1537,7 +1664,8 @@
       "ref": "Whitney §160 (aspirate + t; Bartholomae's law)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct Bartholomae-law outcomes. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-128",
@@ -1549,7 +1677,8 @@
       "ref": "Whitney §495 (tad as 3rd-person pronoun)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: Sanskrit has no dedicated 3rd-person pronoun; tad fills the slot. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-129",
@@ -1561,7 +1690,8 @@
       "ref": "Whitney §768 (passive stem -yá-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct passive-stem formation (the specific rule behind HK's passive cluster). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-130",
@@ -1573,7 +1703,8 @@
       "ref": "Whitney §770-772 (passive of vowel-final roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct, incl. the śī/hvā exceptions Kochergina flags. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-131",
@@ -1585,7 +1716,8 @@
       "ref": "Whitney §772 (double passive of -an roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct double-passive of -an roots. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-132",
@@ -1597,7 +1729,8 @@
       "ref": "Whitney §999b (impersonal passive of intransitives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct; overlaps HK-28 (the neighbouring line 5845). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-133",
@@ -1609,7 +1742,8 @@
       "ref": "Whitney §1043 (present participles -māna)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct present-passive-participle formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-134",
@@ -1621,7 +1755,8 @@
       "ref": "Whitney §500 (enad, defective paradigm)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct defective-paradigm statement. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-135",
@@ -1633,7 +1768,8 @@
       "ref": "Whitney §252 (samprasāraṇa)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct samprasāraṇa rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-136",
@@ -1645,7 +1781,8 @@
       "ref": "Whitney §160 (aspirate + t)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct; the PPP instantiation of Bartholomae's law. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-137",
@@ -1657,7 +1794,8 @@
       "ref": "Whitney §955a (m → n before t with lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -am-root PPP allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-138",
@@ -1669,7 +1807,8 @@
       "ref": "Whitney §952b (active sense of intransitive -ta)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: intransitive -ta = active past. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-139",
@@ -1681,7 +1820,8 @@
       "ref": "Whitney §510 (relative yad)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct relative-pronoun declension. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-140",
@@ -1693,7 +1833,8 @@
       "ref": "Whitney §516d (possessives in -īya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct possessive-derivation rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-141",
@@ -1705,7 +1846,8 @@
       "ref": "Whitney §959 (-tavant), §802ff (perfect participle -vaṃs)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of the two active past participles. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-142",
@@ -1717,7 +1859,8 @@
       "ref": "Whitney §443, §450 (present participles -ant/-at)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct thematic/athematic present-participle contrast. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-143",
@@ -1729,7 +1872,8 @@
       "ref": "Whitney §619, §741 (middle participles -māna/-āna)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct middle-participle allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-144",
@@ -1741,7 +1885,8 @@
       "ref": "Whitney §495-499 (pronominal declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pronominal-ending inventory. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-145",
@@ -1753,7 +1898,8 @@
       "ref": "Whitney §523-524 (pronominal adjectives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct; consistent with the sarva exception already registered at HK-30. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-146",
@@ -1765,7 +1911,8 @@
       "ref": "Whitney §210 (final -n doubling)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct n-doubling sandhi. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-147",
@@ -1777,7 +1924,8 @@
       "ref": "Whitney §141-143 (final-stop neutralisation)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct final-neutralisation rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-148",
@@ -1789,7 +1937,8 @@
       "ref": "Whitney §159 (final-stop voicing sandhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct final-voicing rule (companion to line 6803). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-149",
@@ -1801,7 +1950,8 @@
       "ref": "Whitney §421ff (consonant-stem declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: consonant stems are one declension bar the neuter Nom-Acc. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-150",
@@ -1813,7 +1963,8 @@
       "ref": "Whitney §421, §450, §462 (three-grade consonant stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct enumeration of the three-grade stems. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-151",
@@ -1825,7 +1976,8 @@
       "ref": "Whitney §426 (-man/-van stems retain -a-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the -man/-van vs rājan contrast. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-152",
@@ -1837,7 +1989,8 @@
       "ref": "Whitney §427 (śvan/yuvan weak stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct śvan/yuvan allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-153",
@@ -1849,7 +2002,8 @@
       "ref": "Whitney §453ff (-ant/-mant/-vant declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct strong/weak alternation for -ant stems. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-154",
@@ -1861,7 +2015,8 @@
       "ref": "Whitney §450 (mahant)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct mahant allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-155",
@@ -1873,7 +2028,8 @@
       "ref": "Whitney §439 (-in stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -in-stem alternation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-156",
@@ -1885,7 +2041,8 @@
       "ref": "Whitney §463-465 (comparative -īyaṃs declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct three-grade comparative declension. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-157",
@@ -1897,7 +2054,8 @@
       "ref": "Whitney §466ff (comparison of adjectives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct productivity statement; the exact share is not recounted but the generalisation is sound.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-158",
@@ -1909,7 +2067,8 @@
       "ref": "Whitney §471-473 (-tara/-tama)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct secondary-comparative formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-159",
@@ -1921,7 +2080,8 @@
       "ref": "Whitney §467 (primary -yaṃs less frequent than -tara)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the primary comparative is the minority, secondary -tara the productive default. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-160",
@@ -1933,7 +2093,8 @@
       "ref": "Whitney §1131 (ablative of comparison)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct comparative syntax. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-161",
@@ -1945,7 +2106,8 @@
       "ref": "Whitney §1130-1131 (partitive genitive/locative with superlative)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct superlative syntax. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-162",
@@ -1957,7 +2119,8 @@
       "ref": "Whitney §468, §473 (suppletive comparatives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct suppletive-comparative set. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-163",
@@ -1969,7 +2132,8 @@
       "ref": "Whitney §523 (pronominal declension of prepositional adjectives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pronominal declension of these adjectives. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-164",
@@ -1981,7 +2145,8 @@
       "ref": "Whitney §218, §226 (palatal/ṣ → ṭ/ḍ)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct final-palatal cerebralisation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-165",
@@ -1993,7 +2158,8 @@
       "ref": "Whitney §218a (diś/dṛś/spṛś → k/g)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct lexical exception. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-166",
@@ -2005,7 +2171,8 @@
       "ref": "Whitney §153 (deaspiration before bh)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct deaspiration rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-167",
@@ -2017,7 +2184,8 @@
       "ref": "Whitney §427 (m/f -as Nom sg lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -as Nom sg lengthening. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-168",
@@ -2029,7 +2197,8 @@
       "ref": "Whitney §389 (-ar/-ur root nouns)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct stable -ar root-noun declension. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-169",
@@ -2041,7 +2210,8 @@
       "ref": "Whitney §392 (-ir/-ur lengthening)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -ir/-ur lengthening. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-170",
@@ -2053,7 +2223,8 @@
       "ref": "Whitney §222, §403 (-h root nouns in composition)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct as a descriptive tendency (their compound-final use); the exact proportion is not recounted but the generalisation is standard.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-171",
@@ -2065,7 +2236,8 @@
       "ref": "Whitney §399, §1147 (root nouns and their thematic doublets)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct descriptive statement about root-noun/-a-stem doublets. Anchor; exact counts not recomputed.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-172",
@@ -2077,7 +2249,8 @@
       "ref": "Whitney §435, §449 (feminine -ī of consonant stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct feminine-derivation rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-173",
@@ -2089,7 +2262,8 @@
       "ref": "Whitney §449 (feminine on weak grade)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct weak-grade feminine. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-174",
@@ -2101,7 +2275,8 @@
       "ref": "Whitney §449b (feminine -ī on the strong participle stem)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct strong-stem feminine for participles. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-175",
@@ -2113,7 +2288,8 @@
       "ref": "Whitney §449c (class-VI participle feminines)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: class VI has the double feminine. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-176",
@@ -2125,7 +2301,8 @@
       "ref": "Whitney §435 (non-gradating stems m.=f.)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct m.=f. for non-gradating stems. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-177",
@@ -2137,7 +2314,8 @@
       "ref": "Whitney §487d (-tama ordinals of the tens)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct ordinal variant. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-178",
@@ -2149,7 +2327,8 @@
       "ref": "Whitney §480 (numeral-compound sandhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct numeral-compound allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-179",
@@ -2161,7 +2340,8 @@
       "ref": "Whitney §1293ff (bahuvrīhi structure)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct as a structural generalisation; the karmadhāraya/tatpuruṣa base ratio is not recounted but the claim is standard.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-180",
@@ -2173,7 +2353,8 @@
       "ref": "Whitney §1296, §1300 (bahuvrīhi stem-final adjustments)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct bahuvrīhi stem-final rules. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-181",
@@ -2185,7 +2366,8 @@
       "ref": "Whitney §1246ff (composition; length in the older language)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct diachronic-stylistic statement; the exact 2- vs 3-member distribution is not recounted (DCS-2021 does not tag compound depth) but the generalisation is sound.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-182",
@@ -2197,7 +2379,8 @@
       "ref": "Whitney §1253-1255 (dvandva number)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct dvandva number rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-183",
@@ -2209,7 +2392,8 @@
       "ref": "Whitney §1254 (dvandva member order)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct ordering tendency (a tendency, not an absolute — stated as such). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-184",
@@ -2221,7 +2405,8 @@
       "ref": "Whitney §1267, §1295 (compound accent)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct compound-accent contrast. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-185",
@@ -2233,7 +2418,8 @@
       "ref": "Whitney §1249, §1315 (stem changes in composition-final)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct compound-final stem change. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-186",
@@ -2245,7 +2431,8 @@
       "ref": "Whitney §383, §1147d (-t addition to root nouns in composition)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -t addition. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-187",
@@ -2257,7 +2444,8 @@
       "ref": "Whitney §1249c (nasal loss in composition-initial)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct nasal loss compound-initial. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-188",
@@ -2269,7 +2457,8 @@
       "ref": "Whitney §1249 (weak grade compound-initial)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct weak-grade compound-initial. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-189",
@@ -2281,7 +2470,8 @@
       "ref": "Whitney §1253d (-tṛ dvandva members in Nom sg)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct dvandva -tṛ rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-190",
@@ -2293,7 +2483,8 @@
       "ref": "Whitney §1060, §303 (gerund vs absolute construction)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct gerund-vs-absolute syntactic conditioning. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-191",
@@ -2305,7 +2496,8 @@
       "ref": "Whitney §303b (locative absolute; temporal ≫ conditional)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct function ranking of the locative absolute; the temporal/conditional split is not recounted but matches the grammar.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-192",
@@ -2317,7 +2509,8 @@
       "ref": "Whitney §300b (genitive absolute, concessive with api)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct genitive-absolute function. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-193",
@@ -2329,7 +2522,8 @@
       "ref": "Whitney §1041 (causative stem -aya, guṇa)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causative-stem formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-194",
@@ -2341,7 +2535,8 @@
       "ref": "Whitney §1042 (causative vṛddhi)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causative vṛddhi condition. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-195",
@@ -2353,7 +2548,8 @@
       "ref": "Whitney §1042f (guṇa causatives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct guṇa-causative exception. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-196",
@@ -2365,7 +2561,8 @@
       "ref": "Whitney §1042j (causative -paya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct -paya causative. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-197",
@@ -2377,7 +2574,8 @@
       "ref": "Whitney §1051 (causative participle -ita)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causative PPP formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-198",
@@ -2389,7 +2587,8 @@
       "ref": "Whitney §1046 (causative case-marking of the causee)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causee-marking for intransitive bases. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-199",
@@ -2401,7 +2600,8 @@
       "ref": "Whitney §1046 (causative of transitives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causee-marking for transitive bases. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-200",
@@ -2413,7 +2613,8 @@
       "ref": "Whitney §1053ff (denominative -ya)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct denominative-stem formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-201",
@@ -2425,7 +2626,8 @@
       "ref": "Whitney §1056 (denominative conjugation)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct denominative conjugation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-202",
@@ -2437,7 +2639,8 @@
       "ref": "Whitney §1027ff (desiderative)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct desiderative-stem formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-203",
@@ -2449,7 +2652,8 @@
       "ref": "Whitney §1029 (desiderative reduplication vowel)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct desiderative reduplication-vowel rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-204",
@@ -2461,7 +2665,8 @@
       "ref": "Whitney §1030 (unreduplicated desideratives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct unreduplicated-desiderative list. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-205",
@@ -2473,7 +2678,8 @@
       "ref": "Whitney §1002 (intensive 'heavy' reduplication)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct intensive reduplication. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-206",
@@ -2485,7 +2691,8 @@
       "ref": "Whitney §1009ff (intensive conjugation; rarity of non-present forms)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the intensive is chiefly a present-Ā formation; non-present intensive forms are near-absent (not recounted, but not in doubt). Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-207",
@@ -2496,8 +2703,9 @@
       "number": "SIZED, not \"no instrument\" (16-07-2026, aorist_register_probe.py, H1040): checked the full 270-text DCS inventory first — DCS carries ZERO drama/nāṭaka texts (no Śakuntalā, no Mṛcchakaṭikā, no Bhāsa play; Nāṭyaśāstra is a treatise ABOUT dramaturgy, not a play), so the literal comparison set the claim names does not exist in this corpus at all, full stop. Built a structural genre PROXY instead — the classical Upaniṣads as a catechism-dialogue text-class (Bṛhadāraṇyaka, Chāndogya, Kaṭha, Kauṣītaki, Śvetāśvatara, Muṇḍaka, Taittirīya, Aitareya) vs Brāhmaṇa+Śrautasūtra ritual-prescriptive prose as a narrative/procedural class — using DCS-2026's own aorist-specific feat_formation tags (root/them/s/is/red/sa/sis under feat_tense=Past, excluding the untagged Past remainder H1000/OCH-68 found dominated by the untagged reduplicated perfect). Result: dialogue proxy 1.14% aorist share of verbal tokens (91/8,010) vs narrative proxy 1.33% (1,530/114,924) — ratio 0.85, the OPPOSITE direction from the claim, though both sit close to the whole-corpus baseline (1.20%, 12,054/1,007,361) and epic (Mahābhārata+Rāmāyaṇa, genuinely mixed narration+dialogue, reported separately) sits lower still (0.84%). This null result does NOT refute Whitney's actual philological observation about DRAMATIC dialogue specifically — Upaniṣadic catechism is formulaic ritual prose, not the colloquial/naturalistic register Whitney means, so the proxy substitution is itself questionable, not just the measured direction",
       "ref": "Whitney §928 (aorist's recent-past / conversational value); DCS has no drama texts to test the literal claim (checked, not presumed); KocherginaUchebnik_1998/aorist_register_probe.py; hk207_aorist_register_stats.json",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "A known philological observation (the classical aorist survives chiefly in dialogue/drama as a recent past) that this corpus genuinely cannot test — not because no instrument was built, but because the referent (drama) isn't in DCS at all, and the best available structural stand-in (Upaniṣad dialogue-frame vs Brāhmaṇa/Śrautasūtra prescriptive prose) measures something adjacent, not identical, to what the claim means. Recorded as a sized negative pilot so the proxy is never re-derived as if it settled the question either way.",
-      "mg_footnote": null
+      "note": "A known philological observation (the classical aorist survives chiefly in dialogue/drama as a recent past) that this corpus genuinely cannot test — not because no instrument was built, but because the referent (drama) isn't in DCS at all, and the best available structural stand-in (Upaniṣad dialogue-frame vs Brāhmaṇa/Śrautasūtra prescriptive prose) measures something adjacent, not identical, to what the claim means. Recorded as a sized negative pilot so the proxy is never re-derived as if it settled the question either way. TALMUD CROSS-CHECK (H1054): the Talmud does NOT lift the untestability — it is a generative form catalog with no register/genre/usage dimension, so it cannot witness a claim about where aorist tokens occur in texts. Verdict stays UNTESTABLE.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-208",
@@ -2509,7 +2717,8 @@
       "ref": "Whitney §585, §579 (augment; augmentless aorist after mā)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct augment-placement and the mā-prohibitive. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-209",
@@ -2518,10 +2727,11 @@
       "kind": "typology",
       "verdict_fact": "TRUE",
       "number": "systemic: the thematic (a-)aorist inflects with the class-VI imperfect endings in both voices",
-      "ref": "Whitney §846-847 (thematic aorist)",
+      "ref": "Whitney §846-847 (thematic aorist); Талмуд — класс 2 = тематический {ø}, структурно о.н.в. VI кл. — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct thematic-aorist paradigm identity. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-210",
@@ -2533,7 +2743,8 @@
       "ref": "Whitney §856ff (reduplicated aorist)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct reduplicated-aorist formation. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-211",
@@ -2545,7 +2756,8 @@
       "ref": "Whitney §861, §1046 (reduplicated aorist of causatives)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct causative reduplicated-aorist allomorphy. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-212",
@@ -2557,7 +2769,8 @@
       "ref": "Whitney §1121a-b (privative a-/an-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the a-/an- privative is the most productive nominal prefix; the exact share is treated separately (UNTESTABLE, HK-42). Anchor for the productivity claim.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-213",
@@ -2569,7 +2782,8 @@
       "ref": "Whitney §1304 (sa- possessive compounds)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: sa- is an adjective-forming (possessive) prefix, not a noun-forming one. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-214",
@@ -2581,7 +2795,8 @@
       "ref": "Whitney §878ff (s-/iṣ-aorist)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct sigmatic-aorist suffix conditioning by seṭ/aniṭ. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-215",
@@ -2589,11 +2804,12 @@
       "claim_ru": "Формы аориста на -siṣ и на -sa встречаются редко.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
-      "number": "systemic: the siṣ-aorist (-siṣ) and the sa-aorist (-sa) are the two least frequent aorist formation types; the DCS-2021 export does not tag aorist sub-types (cf. HK-5), so the per-type count is not separately reproducible, but Whitney confirms their rarity",
-      "ref": "Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags",
+      "number": "systemic: the siṣ-aorist (-siṣ) and the sa-aorist (-sa) are the two least frequent aorist formation types; the DCS-2021 export does not tag aorist sub-types (cf. HK-5), so the per-type count is not separately reproducible, but Whitney confirms their rarity; TALMUD (H1054): a systematic per-type count now exists — classes 6 (siṣ) and 7 (sa) are the two SMALLEST classes of the Приложение-1 catalog, 33 and 26 roots of 745 (aorist_class_census.py)",
+      "ref": "Whitney §912ff (siṣ-aorist), §916 (sa-aorist); DCS-2021 lacks aorist sub-type tags; TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), so the claim rests on the reference grammar, which supports it.",
-      "mg_footnote": null
+      "note": "Correct rarity per Whitney; the corpus cannot confirm the sub-type split (same limitation as HK-5), but the Talmud catalog now supplies the systematic per-type count (siṣ 33 · sa 26 roots — the two smallest classes), upgrading the claim from reference-grammar-only to catalog-counted.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-216",
@@ -2605,7 +2821,8 @@
       "ref": "Whitney §883 (s-aorist grade by voice)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct s-aorist grade-by-voice rule. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-217",
@@ -2617,7 +2834,8 @@
       "ref": "Whitney §168, §226 (consonant sandhi before s)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct pre-s sandhi in the sigmatic aorist. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-218",
@@ -2629,7 +2847,8 @@
       "ref": "Whitney §884 (ā-root aorist)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct ā-root aorist split by voice. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-219",
@@ -2638,10 +2857,11 @@
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: the siṣ-aorist (type VI) is Parasmaipada-only and restricted to a few ā-roots, running parallel to their -s forms",
-      "ref": "Whitney §914 (siṣ-aorist)",
+      "ref": "Whitney §914 (siṣ-aorist); Талмуд — индикатив P-only вне его охвата, но Ā-прекатив «еще реже» строится и по 6 классу; класс 6 = 33 корня — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct siṣ-aorist restriction. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-220",
@@ -2653,7 +2873,8 @@
       "ref": "Whitney §916 (sa-aorist)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct sa-aorist restriction and stem. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-221",
@@ -2665,7 +2886,8 @@
       "ref": "KocherginaUchebnik_1998/animacy_lookup.py; dus_prefix_animacy.py; hk221_dus_prefix_animacy_stats.json; animacy_lemma_lookup.json",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Directionally plausible claim, now measured rather than asserted: animate dus-derivatives are a clear minority (10.7% of classified lemmas). Spot-checked the animacy tagger itself against 24 known animate/inanimate Sanskrit nouns before trusting it (22/24 correct; the 2 misses are explainable polysemy/ coverage gaps, not tagger bugs) — see animacy_lookup.py's own validation.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-222",
@@ -2677,7 +2899,8 @@
       "ref": "Whitney §1121f (ku- pejorative prefix)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: ku- is a genuinely rare prefix; the rarity is a known descriptive fact (not separately recounted).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-223",
@@ -2689,7 +2912,8 @@
       "ref": "Whitney §579 (injunctive; mā-prohibitive); DCS verify_claims_dcs.py (timws code 30)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed archaism: the injunctive is rare and concentrated in the mā-prohibitive, exactly as Kochergina says. Well calibrated.",
-      "mg_footnote": "Инъюнктив — реликтовая категория: в DCS-2021 всего 2 366 активных форм (0,30% глагольных словоформ), и уцелел он почти только как запрет 2-го лица с mā (безаугментный аорист)."
+      "mg_footnote": "Инъюнктив — реликтовая категория: в DCS-2021 всего 2 366 активных форм (0,30% глагольных словоформ), и уцелел он почти только как запрет 2-го лица с mā (безаугментный аорист).",
+      "methodichka": null
     },
     {
       "id": "HK-224",
@@ -2701,7 +2925,8 @@
       "ref": "Whitney §837b (precative of ā-roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct precative vowel change. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-225",
@@ -2713,7 +2938,8 @@
       "ref": "no clean prefixed/simple verb-lemma partition; count base undisclosed",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the DCS-2021 lemma inventory. Flagged UNTESTABLE. INDEPENDENTLY RE-ATTEMPTED 16-07-2026 (H1047) with a second, root-validated method (each of DCS-2026's 11,096 distinct VERB lemmas checked against the 930-root WhitneyRoots crosswalk as either a bare known root or a known-preverb + known-root compound) — hit the SAME wall from a different angle: only 28% of lemmas classify cleanly either way (626 simple + 2,464 prefixed), leaving 72% (8,006 lemmas) unclassifiable without genuine morphological segmentation, which neither export provides. Two independent attempts, two different methods, same conclusion: this needs real segmentation infrastructure this pipeline doesn't have, not a smarter query. Not re-derived without new infrastructure.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-226",
@@ -2725,7 +2951,8 @@
       "ref": "no ground-truth source; see HK-41",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Companion of HK-41; the semantic-transparency percentages have no reproducible base. The 'always transitive' sub-claim is a separate lexical-semantic assertion, also unquantified. Flagged UNTESTABLE.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-227",
@@ -2737,7 +2964,8 @@
       "ref": "no ground-truth source; see HK-41",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Companion of HK-41/line 10473; directionally plausible but not checkable. Flagged UNTESTABLE.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-228",
@@ -2749,7 +2977,8 @@
       "ref": "no clean desubstantive-by-preverb count; base undisclosed",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Directional and plausible, but the per-preverb productivity ranking cannot be reproduced from the available data. Flagged UNTESTABLE.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-229",
@@ -2761,7 +2990,8 @@
       "ref": "no noun-specific preverb count; general tally does not single out prati-",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
       "note": "Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base. INDEPENDENTLY RE-CHECKED 16-07-2026 (H1047, unvalidated NOUN-lemma prefix-string count, DCS-2026): prati- ranks 10th by lemma-type count (383) among preverbs, well behind vi- (1,716), ā- (1,443), pra- (1,204), su- (1,063) — CONSISTENT with the prior finding (prati- does not peak), though this count is unvalidated against a real stem lexicon (short preverbs like vi-/ā- likely inflate their own rank via coincidental word-initial letter matches, so the ranking below prati- is noisier than the simple fact that prati- doesn't lead). Two independent checks, same negative direction — not re-derived further without real morphological segmentation.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-230",
@@ -2773,7 +3003,8 @@
       "ref": "Whitney §1121ff (nominal prefixes); VisualDCS prefix tally (vi- 3rd)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The systemic part (vi-/nis-/ud- productive; vi-/nis- privative) is sound and vi-'s high frequency is directional support; the exact 'especially productive' ranking is not recounted per-category but is consistent with the data.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-231",
@@ -2785,7 +3016,8 @@
       "ref": "Whitney §1099, §1101, §1103 (adverbial -tra/-dā/-thā)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct semantic specialisation of the adverb suffixes. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-232",
@@ -2797,7 +3029,8 @@
       "ref": "Whitney §1111 (neuter accusative as adverb)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct: the neuter acc.sg is the default adverbial form. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-233",
@@ -2809,7 +3042,8 @@
       "ref": "Whitney §1313 (avyayībhāva)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct avyayībhāva description. Anchor.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-234",
@@ -2821,7 +3055,8 @@
       "ref": "Leitan codebook (upapada); Whitney compounds chapter (§§1246 слл.)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The working definition excludes the upapada class whose bound finals (-jit, -kṛt) the same textbook teaches one lesson later — the definition's universal «каждая» is contradicted by her own material.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-235",
@@ -2833,7 +3068,8 @@
       "ref": "Whitney compounds chapter (§§1246 слл., external combination as default)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Correct as the teaching default; the handful of irregular junctions are lexical items (see HK-259 on numeral compounds where one bites her own paradigm).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-236",
@@ -2845,7 +3081,8 @@
       "ref": "Leitan codebook (vibhakti-tatpuruṣa dvitīyā-saptamī; karmadhāraya = samānādhikaraṇa, Pāṇ. 1.2.42)",
       "verdict_pedagogy": "MISLEADING",
       "note": "A POS-based surrogate for a case-relation definition: internally leaky (appositional N+N compounds are karmadhāraya by her own next paragraph) and non-Pāṇinian (Leitan: karmadhāraya and dvigu are SUBTYPES of tatpuruṣa, not siblings).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-237",
@@ -2857,7 +3094,8 @@
       "ref": "Leitan codebook (karmadhāraya = samānādhikaraṇa-tatpuruṣa); Whitney descriptive compounds",
       "verdict_pedagogy": "MISLEADING",
       "note": "Same partition defect as HK-236, from the other side.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-238",
@@ -2869,7 +3107,8 @@
       "ref": "Leitan codebook (karmadhāraya: apposition OR simile); Whitney descriptive compounds",
       "verdict_pedagogy": "MISLEADING",
       "note": "«Тогда» turns a subtype (simile) into a property of the whole appositional class; rājarṣi-type appositives carry none.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-239",
@@ -2881,7 +3120,8 @@
       "ref": "Leitan codebook (dvigu = saṃkhyā-pūrva karmadhāraya, collective); ZalizniakOcherk_1978/och58_compound_stats.json context",
       "verdict_pedagogy": "MISLEADING",
       "note": "The numeral-first surface test over-captures: triloka- as bahuvrīhi ('three-worlded') is not dvigu; the defining feature is the collective vigraha, which the definition omits.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-240",
@@ -2893,7 +3133,8 @@
       "ref": "Whitney secondary adjective (possessive) compounds; ср. HK-184",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Accent half is meaningful only for the accented (Vedic) layer — same framing as HK-184.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-241",
@@ -2905,7 +3146,8 @@
       "ref": "Whitney secondary adjective compounds (feminine formation)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Thin falsifiable content («по известным правилам») — verified as the absence of a special bahuvrīhi-specific feminine rule.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-242",
@@ -2917,7 +3159,8 @@
       "ref": "P4 kappa_result.json (no name stratum)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Plausible (Mahābāhu, Pītāmbara type) but not adjudicable without an onomastic compound-type census — instrument spec, not a verdict.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-243",
@@ -2929,7 +3172,8 @@
       "ref": "Whitney copulative compounds (§§1252 слл.)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-244",
@@ -2941,7 +3185,8 @@
       "ref": "Whitney copulative compounds",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-245",
@@ -2953,7 +3198,8 @@
       "ref": "sangram/articles/compounds-overview/data/coverage_summary.json; Whitney on compound chains",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-246",
@@ -2965,7 +3211,8 @@
       "ref": "title inventory of the classical canon (DCS text list)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-247",
@@ -2977,7 +3224,8 @@
       "ref": "Whitney root-final compound members",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-248",
@@ -2989,7 +3237,8 @@
       "ref": "Pāṇinian samāhāra-dvandva extension; Whitney copulative compounds",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-249",
@@ -3001,7 +3250,8 @@
       "ref": "Pāṇinian shortening in dvigu/upasarjana; Whitney",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-250",
@@ -3013,7 +3263,8 @@
       "ref": "Leitan codebook (aluk under tat-other); Whitney case-form first members",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-251",
@@ -3025,7 +3276,8 @@
       "ref": "Whitney; DCS -artham adverbial tokens",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-252",
@@ -3037,7 +3289,8 @@
       "ref": "Whitney possessive compounds; DCS -ādi tokens",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-253",
@@ -3049,7 +3302,8 @@
       "ref": "Whitney descriptive compounds (anomalous order)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-254",
@@ -3061,7 +3315,8 @@
       "ref": "Whitney numerals",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-255",
@@ -3073,7 +3328,8 @@
       "ref": "Whitney numerals (irregular combinations); ср. HK-178",
       "verdict_pedagogy": "MISLEADING",
       "note": "True for the majority of junctions (catuḥṣaṣṭi, saptāśīti), but stated as an unqualified rule one line above paradigms containing ṣoḍaśa — the learner meets the counter-example immediately.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-256",
@@ -3085,7 +3341,8 @@
       "ref": "Whitney accent of compounds (subtype-dependent)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Instrument spec: a VedaWeb/accented-RV census of su-/dus- formations would settle it; until then flagged, not scored — with sumánas- as prima facie tension.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-257",
@@ -3097,7 +3354,8 @@
       "ref": "Pāṇinian bahuvrīhi with nañ/su/dur first members; Whitney possessive compounds",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-258",
@@ -3109,7 +3367,8 @@
       "ref": "ср. HK-221 (animacy untagged)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Second half doubles the HK-221-class animacy blocker; queued instrument (H1056 animacy tagging) would unlock both.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "HK-259",
@@ -3121,7 +3380,8 @@
       "ref": "Pāṇinian bahuvrīhi classes; Whitney possessive compounds",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     }
   ]
 }

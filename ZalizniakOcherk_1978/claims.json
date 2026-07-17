@@ -1,6 +1,6 @@
 {
   "work": "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978",
-  "generated": "16-07-2026",
+  "generated": "17-07-2026",
   "synthesis": "FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 + H1012 + H1022 instruments: 65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, the §207 style-gradient flagship measured by the period map, the §59 root-shape flagship measured by the root-shape parser, and the §§212-217 syntax cluster measured by the treebank instrument, see OCH-21..OCH-23, OCH-63, OCH-16 and OCH-65..OCH-68). Zaliznyak held ZERO fact-axis flags through 70 of 74 claims — longer than either sibling grammar — until the syntax cluster (§§212-217) became testable 16-07-2026: the treebank instrument found the one absolute quantifier in the book (OCH-68, the ya-...ta- antecedent-clause rule) holds at only 75.2% (n=335, genre-skew-checked), and two of three packed word-order tendencies in OCH-66 plus the §215 coordinate>subordinate claim (OCH-67, genuinely inverted 6.5:1) do not clear a majority either — all THREE flags land in the one domain (syntax) this register could not previously test, not scattered across the book. Where Kochergina's absolutes broke on known exception classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are engineered everywhere ELSE in the book: two-level hedges that the corpus confirms level by level (OCH-10 — his 'крайне редко' for final ṇ vs plain 'редко' for ṅ/ñ is exactly the order-of-magnitude split, 118 vs 659/1,934), absolutes reserved for structurally safe gaps (OCH-17 no short-a-final roots), enumerated escape hatches ('только as и группа samprasāraṇa, и несколько других'), and surface-frequency statements that measure out at 19:1 in his favour (OCH-29 saḥ→so/sa, 95.1%). The cleanest single contrast is the verb-accent rule (OCH-72): the SAME fact graded Kochergina OVERSTATED for «никогда» (HK-10) grades Zaliznyak TRUE for «как правило» — third data point of the programme's central finding that presentation calibration, not factual accuracy, is where grammars differ — a finding OCH-66/68 now ALSO extend (soft hedges still overreach when the underlying syntactic tendency itself turns out weak, not just when the quantifier is an absolute). On that axis the three books now rank: Zaliznyak (3 flags / 74 = 4.1%) > Bühler (5 / 64 = 7.8%) > Kochergina (12+24 / 234) — still the best-calibrated of the three, no longer flag-free.\n\nThe remaining UNTESTABLE entries are the register's second product: a requirements list for the pipeline's next instruments, each named in its entry — ~~period-tagged corpus slices~~ BUILT 16-07-2026 (period_style_gradient.py, H1000: OCH-63 flipped to measured TRUE — the style-I→style-II gradient is real and monotonic on every annotation-robust axis; OCH-47's early-vs-late causative half CLOSED the same day by the causative detector, H1001: the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots), ~~a root-shape parser over the Talmud catalog~~ BUILT 16-07-2026 (root_shape_parser.py, H1012: OCH-16 flipped to measured TRUE — 727/745 = 97.6% of the catalog fits the §59 six-slot template, 98.4% of the roots where a nucleus could even be located), ~~a treebank/parsed slice~~ BUILT 16-07-2026 (treebank_syntax_stats.py, H1022: dcs_full.sqlite's own head/deprel columns turned out to carry a genuine, fully-tagged 29,433-sentence UD slice all along — OCH-65 confirmed TRUE, OCH-66/68 flipped OVERSTATED, OCH-67 flipped FALSE, all genre-skew-checked against a classical-vs-Vedic split before verdicting; OCH-69's cross-LANGUAGE comparison against Russian/Latin stays out of scope, no comparable parsed corpus on the other side), compound-type tagging (OCH-58, OCH-60), and the 1978↔2026 morphoclass-series crosswalk (OCH-21..OCH-23). Two dead ends are recorded with their numbers so they are never re-derived as refutations: the naive Talmud series join INVERTS the §68 aniṭ/seṭ×series claim (36.8% aniṭ in the predicted-aniṭ group — but the join equates 1978 and 2026 series names without validation and skips the полноизменяемые filter), and the aggregate i-rate proxy INVERTS the §63 veṭ ranking (tvā 78.1% tops the scale — but composition bias across suffix populations disqualifies the aggregate as a measure of within-root fluctuation).\n\nReuse note, extending the seed's original point below: beyond the three direct reuses, the drain leaned on the whole programme — eleven entries cross-reference Bühler's register or harvest (the marj/vṛddhi, ṝ→īr/ūr, ar-future-i, gamya/gatya, causative-aorist, desiderative and intensive claims are now each attested in TWO independent grammars and one verdict), one reuses a verified Bühler entry outright (OCH-57 = HB-48, as this book's own harvest header planned), and the Talmud's Приложение-1 catalog served as the D-B morphoclass authority for the first time as DATA (OCH-15/OCH-17/OCH-32) rather than as citation. The original seed synthesis follows.\n\nSix-claim seed (H797 Phase 2, Ocherk). Three claims are DIRECT REUSES of ground truth already computed for other books in this cross-grammar program — a first demonstration that the program's corpus infrastructure genuinely compounds across grammars rather than needing rebuilding each time. OCH-1 (ṝ phoneme rarity) reuses Kochergina's HK-7 vowel census verbatim (ṛ is 126× the combined rare sonants ṝ/ḷ/ḹ) — TRUE, and Zaliznyak's own qualification (\"only in certain grammatical forms of ar-stems, §86\") is more precise than either Kochergina's or Bühler's phrasing of the same fact. OCH-3 (precative middle almost unattested post-Vedic) reuses Kochergina's HK-39 figure exactly (221 tokens, 0.03% of verbal) — TRUE. OCH-5 (rare -am absolutive) reuses Bühler's already-measured absolutive split (-ya 78.4% / -tvā 19.6% / -am 0.4%) — TRUE, and the three grammars' independent framing of the same fact (Kochergina doesn't discuss it; Bühler calls it \"очень редко\"; Zaliznyak calls it \"изредка\") converges on the same corpus reality. OCH-4 (çās as a documented exception to the closed-long-vowel-root defective pattern) cross-confirms the Knauer parse-audit's KN-3 finding (Whitney §639) from a completely different digitized source — the SAME irregular root flagged independently by two authors 30 years and two genres apart. OCH-2 (Class I is the largest present-stem class) is a clean, freshly-computed TRUE (30.34% of verbal tokens, more than double the next-largest thematic class). OCH-6 (thematic-stem formation ranks a > ya > aya by frequency) is TRUE in ranking direction but the margin between ya (12.58%) and aya (12.12%) is thin (0.46 points) — \"реже\" for aya is real but nowhere near as dramatic a gap as a-suffix's 44.44% dominance, worth flagging as a mild pedagogical understatement of how close the two minority classes actually are. No errors found in this seed; too small and too reuse-biased a sample (selected for verifiability, not randomly) to characterize Zaliznyak's overall calibration — that judgment awaits the 68-candidate backlog, which includes several potentially rich targets (§68's aniṭ/seṭ-by-alternation-series correlation; §207's flagship Vedic-to-Classical syntactic-style diachronic claim) that need new corpus queries this seed didn't build.",
   "claims": [
     {
@@ -13,7 +13,8 @@
       "ref": "DCS-2021 0.csv vowel census (../KocherginaUchebnik_1998/verify_claims_dcs.py); cf. KocherginaUchebnik_1998 HK-7",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Zaliznyak's qualification — confined to certain grammatical forms of ar-stem nouns (§86) — is more precise than a bare rarity claim; the corpus figure (126× rarer than ṛ) supports \"очень редко\" without overstatement. Third independent confirmation of the same underlying DCS fact (after Kochergina's own HK-7 statement of it), now cross-book reused rather than recomputed.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-2",
@@ -25,7 +26,8 @@
       "ref": "DCS-2021 verb_classes.json",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Not a close call — class I outnumbers every other class by a wide margin, confirming the parenthetical without qualification.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-3",
@@ -34,10 +36,11 @@
       "kind": "statistic",
       "verdict_fact": "TRUE",
       "number": "221 tokens = 0.03% of 781,618 verbal tokens ('Benedictive Medium', DCS-2021 — reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK39_precative_middle)",
-      "ref": "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко')",
+      "ref": "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко'); Талмуд обогащает — Ā-прекатив по 4 (продуктивно), 5 (реже) И 6 (еще реже) — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Second independent grammar making the identical, now-doubly-confirmed rarity claim about the same paradigm cell.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-4",
@@ -49,7 +52,8 @@
       "ref": "WhitneyGrammar_1889/09_The_Present_System.mdx §639; cf. KnauerFrazy_1908/parse_audit.yml KN-3 (same root, same Whitney citation, confirmed independently from a completely different digitized source — a phrase-reader footnote, not a grammar's exception list)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The same irregular root (çās) is flagged independently by Knauer's 1908 phrase-reader footnote (KN-3) and Zaliznyak's 1978 grammar's exception list, 70 years apart, in two completely different genres of source — a clean cross-corpus, cross-genre confirmation rather than a coincidence of citing the same textbook tradition.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-5",
@@ -61,7 +65,8 @@
       "ref": "DCS-2021 (BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 (same split, called 'очень редко' there vs 'изредка' here — both hedges hold up against the same 0.4% figure)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Three grammars, three framings of the same corpus fact: Kochergina doesn't mention the -am absolutive at all; Bühler calls it \"очень редкая\" (very rare); Zaliznyak calls it \"изредка\" (occasionally) — a slightly softer hedge than Bühler's, and if anything the more accurate one for a form that is rare but not vanishing (0.4%, not 0.04%).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-6",
@@ -73,7 +78,8 @@
       "ref": "DCS-2021 verb_classes.json",
       "verdict_pedagogy": "MISLEADING",
       "note": "The ranking direction (a > ya > aya) holds, but the gap Zaliznyak implies between \"обычно\" (a/ya) and \"реже\" (aya) is thin where it matters most: ya (12.58%) and aya (12.12%) are only 0.46 percentage points apart — nowhere near as decisive a split as a-suffix's 44.44% dominance over both. A learner reading \"реже\" for aya next to \"обычно\" for ya would expect a much bigger gap than the corpus actually shows between those two specifically.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-7",
@@ -85,7 +91,8 @@
       "ref": "Whitney §206 (final n before l); cf. BuhlerLeitfaden_1923 harvest (Урок VI, same rule)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Почти исключительно' is the right hedge: the n+l junction is where classical anunāsika lives; residual uses are Vedic recitation practice, outside this corpus's scope.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-8",
@@ -97,7 +104,8 @@
       "ref": "cf. Whitney §24 (the ri-pronunciation acknowledged as the modern practice)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The convention itself is well attested in the descriptive literature (Whitney reports it too); only the quantifier 'в большинстве школ' has no measurable base here. Same honesty class as Kochergina's HK-41/HK-42.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-9",
@@ -109,7 +117,8 @@
       "ref": "DCS-2021 0.csv final-consonant census",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A theoretically-possible-but-nearly-absent claim now carrying its corpus number — the exact kind of footnote-grade precision Zaliznyak's own text models.",
-      "mg_footnote": "Перепись конечных согласных по DCS-2021 (3,4 млн словоупотреблений): конечное l — 838 случаев, 0,025 % слов. «Практически почти не встречается» подтверждено числом."
+      "mg_footnote": "Перепись конечных согласных по DCS-2021 (3,4 млн словоупотреблений): конечное l — 838 случаев, 0,025 % слов. «Практически почти не встречается» подтверждено числом.",
+      "methodichka": null
     },
     {
       "id": "OCH-10",
@@ -121,7 +130,8 @@
       "ref": "DCS-2021 0.csv final-consonant census (verify_claims_dcs.py)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Even the fine two-level hedge is confirmed: ṇ (118) is an order of magnitude rarer than ṅ/ñ (659/1,934), exactly matching 'крайне редко' vs plain 'редко'.",
-      "mg_footnote": "Конечные носовые по DCS-2021: ṇ — 118, ṅ — 659, ñ — 1 934 словоупотребления против n — 83 091, m — 249 461, анусвара — 532 979. Двухступенчатая градация Зализняка («крайне редко» для ṇ против «редко» для ṅ/ñ) видна прямо в числах: ṇ на порядок реже ṅ/ñ."
+      "mg_footnote": "Конечные носовые по DCS-2021: ṇ — 118, ṅ — 659, ñ — 1 934 словоупотребления против n — 83 091, m — 249 461, анусвара — 532 979. Двухступенчатая градация Зализняка («крайне редко» для ṇ против «редко» для ṅ/ñ) видна прямо в числах: ṇ на порядок реже ṅ/ñ.",
+      "methodichka": null
     },
     {
       "id": "OCH-11",
@@ -133,7 +143,8 @@
       "ref": "DCS-2021 0.csv final-consonant census; Whitney §§161, 198 (optional t→n before nasals)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The claim is about the observed commonness of the t-variant; the input-frequency census settles the direction without needing junction-level sandhi tagging.",
-      "mg_footnote": "Частотность конечных смычных по DCS-2021: t — 99 262, k — 4 100, ṭ — 1 088, p — 113. «Наиболее обычен для t» держится уже на входной частоте: стыков с конечным t в 24 раза больше, чем со всеми прочими смычными вместе взятыми."
+      "mg_footnote": "Частотность конечных смычных по DCS-2021: t — 99 262, k — 4 100, ṭ — 1 088, p — 113. «Наиболее обычен для t» держится уже на входной частоте: стыков с конечным t в 24 раза больше, чем со всеми прочими смычными вместе взятыми.",
+      "methodichka": null
     },
     {
       "id": "OCH-12",
@@ -145,7 +156,8 @@
       "ref": "Whitney §163",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'обычно... (реже tad hi)' two-sided hedge matches Whitney's description exactly.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-13",
@@ -157,7 +169,8 @@
       "ref": "Whitney §§172, 185; cf. BuhlerLeitfaden_1923 harvest (Урок XIII, nis+p → niṣ)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Source-checked against the mdx (the harvest's paraphrase had inverted the direction — the deviation is s/r/ṣ INSTEAD OF expected ḥ). The two-level hedge (часто-не-всегда vs почти-всегда) matches the reference treatment's split between general seams and nis/dus.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-14",
@@ -169,7 +182,8 @@
       "ref": "Whitney §242; cf. BuhlerLeitfaden_1923 claims (passive ṝ → īr, ūr after labials — same rule, third book)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Third grammar in the programme stating the same labial conditioning; all three agree with Whitney.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-15",
@@ -181,7 +195,8 @@
       "ref": "TolchelnikovTalmud_2026/data/talmud_appendix1.json; Whitney's Roots",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The root-morphoclass authority (D-B) is the natural adjudicator here; its catalog is effectively 100% monosyllabic.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-16",
@@ -193,7 +208,8 @@
       "ref": "ZalizniakOcherk_1978/och16_root_shape_stats.json; root_shape_parser.py (15/15 self-test replicating the §'s own worked examples: √i, √nī, √çru, √sthā, √styā, √iṣ, √pad, √krudh, √jīv, √cumb, √kṣṇu, √takṣ, √vyath, √mlā, √katth)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Подавляющее большинство' (overwhelming majority) is not just directionally plausible but measured at 97.6% — a strong confirmation, with the exceptions he names (kṣ, v/m-in-slot-2, slot-6 clusters, s+stop) all independently attested in the catalog at the scale his hedged wording implies.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-17",
@@ -205,7 +221,8 @@
       "ref": "Whitney's Roots (no short-a-final entries); TolchelnikovTalmud_2026/data/talmud_appendix1.json",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A safe absolute: the gap is structural (short a in that position would be the alternating element itself, not a root-final).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-18",
@@ -217,7 +234,8 @@
       "ref": "Whitney §627 (mṛj); cf. OCH-19",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Очень малочислен' is if anything generous — the type is nearly a singleton in living use.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-19",
@@ -229,7 +247,8 @@
       "ref": "Whitney §627; = BuhlerLeitfaden_1923 HB-44 (Bühler: 'всегда'; Zaliznyak: 'как правило' — both hold; Zaliznyak's hedge additionally covers the mṛjanti-type weak forms)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Cross-grammar convergence with a calibration nuance: Bühler's absolute is safe for strong forms; Zaliznyak's 'как правило' is the more exact scope once weak-form variation counts.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-20",
@@ -241,7 +260,8 @@
       "ref": "Whitney §§636-645 (as, han); §§252-253 (samprasāraṇa roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Обычно... только... и несколько других' — hedged, enumerated, and escape-hatched; the reference inventory fits inside it.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-21",
@@ -253,7 +273,8 @@
       "ref": "ZalizniakOcherk_1978/och_1978_stats.json OCH21_openA2_split; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "UNBLOCKED by the 1978 crosswalk column built 15-07-2026 — the exact instrument this entry named. The split even reproduces the §'s own three-way texture: two near-even named camps and a fluctuating residue.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-22",
@@ -265,7 +286,8 @@
       "ref": "ZalizniakOcherk_1978/och22_token_weighted.json (8/8 validation); och_1978_stats.json OCH22_RMN_type_counts; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "UNBLOCKED with OCH-21/OCH-23 by the crosswalk instrument, then CLOSED STRICTLY 15-07-2026: the deferred lemma-frequency join keyed to citation forms is built (divergent keys mapped ṛc→arc, bṛh→bṛṃh, jambh→jabh, tark→tarkay, carc→carcay; 14 rare Vedic roots honestly reported unattested, not zero-faked). The token-weighted margin (96.6–96.8%) comes out STRONGER than the 87% type margin — the a-fortiori argument was correct and is now measured.\"",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-23",
@@ -277,7 +299,8 @@
       "ref": "ZalizniakOcherk_1978/och_1978_stats.json OCH23_s68_proper_join; build_1978_crosswalk.py (15/15 validation checks against §§66-68's own named roots)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The register's most valuable open item, CLOSED: the structural prediction behind the programme's flagship frequency fact (HK-4/HB-59's -iṣya majority) is real — seṭ/aniṭ membership tracks alternation-series × полноизменяемость almost deterministically at the plain-type level, with veṭ as the fluctuation band Zaliznyak's own hedge reserved. The dead-end pilot stays in history (see the drain-era note in git) as the PALSULE-audit lesson it was.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-24",
@@ -289,7 +312,8 @@
       "ref": "DCS-2021 15.csv/12.csv; proper test = per-root doublet analysis over Talmud set_code v1..v4 subtypes",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Second recorded dead end of this drain: the right instrument is a per-veṭ-root doublet census (does the SAME root fluctuate per suffix), joinable via the Talmud's set_code. Until then the claim stays open, with the misleading aggregate documented so nobody re-derives it as a refutation.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-25",
@@ -301,7 +325,8 @@
       "ref": "Whitney §§482-486",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'некоторые' are exactly the first four numerals — the inventory-true split.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-26",
@@ -313,7 +338,8 @@
       "ref": "Whitney §§370-371 (nṛ), 402 (han-compounds), 356 (strī)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'В редчайших случаях' with the full enumeration attached — calibrated and closed.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-27",
@@ -325,7 +351,8 @@
       "ref": "Whitney §§1096ff (indeclinables)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Safe smallness claim about a closed lexical residue.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-28",
@@ -337,7 +364,8 @@
       "ref": "Whitney §§447-448 (strong-case distribution incl. neuter pl.)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'В очень незначительной степени' = exactly the neuter N.V.Acc.pl slot; the structural reason is the strong-case definition itself.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-29",
@@ -349,7 +377,8 @@
       "ref": "DCS-2021 0.csv surface census",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "One of the few places any of the graded grammars states a SURFACE-frequency fact — and the corpus confirms it at 19:1.",
-      "mg_footnote": "Поверхностные варианты по DCS-2021: sa — 24 813, so — 3 955, saḥ — 1 482 словоупотребления: 95 % случаев местоимение реально стоит в виде sa/so. «Чаще всего» Зализняка — ещё и преуменьшение."
+      "mg_footnote": "Поверхностные варианты по DCS-2021: sa — 24 813, so — 3 955, saḥ — 1 482 словоупотребления: 95 % случаев местоимение реально стоит в виде sa/so. «Чаще всего» Зализняка — ещё и преуменьшение.",
+      "methodichka": null
     },
     {
       "id": "OCH-30",
@@ -361,7 +390,8 @@
       "ref": "DCS-2021 timws.csv",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The three-way split of the mood system into living core vs marginal triple is corpus-exact.",
-      "mg_footnote": "Частотность наклонений по DCS-2021: оптатив 72 826, императив 32 750 словоупотреблений — против прекатива (мед.) 221, инъюнктива 2 366 и кондиционалиса 269, вместе 0,37 % глагольных. «Сравнительно редко» — точная, даже мягкая формулировка."
+      "mg_footnote": "Частотность наклонений по DCS-2021: оптатив 72 826, императив 32 750 словоупотреблений — против прекатива (мед.) 221, инъюнктива 2 366 и кондиционалиса 269, вместе 0,37 % глагольных. «Сравнительно редко» — точная, даже мягкая формулировка.",
+      "methodichka": null
     },
     {
       "id": "OCH-31",
@@ -373,7 +403,8 @@
       "ref": "Whitney §§823, 826-828, 928; DCS timws.csv",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The instructive cross-grammar contrast: Zaliznyak asserts SEMANTIC equivalence only — exactly the half of Bühler's twin claim that survived verification (HB-61), without the frequency misstep that flagged Bühler's other half (HB-57). Kochergina's stratum-hedged version (HK-15) also stands. Three grammars, one fact, three calibrations — Zaliznyak's is the cleanest.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-32",
@@ -385,7 +416,8 @@
       "ref": "Whitney §529; TolchelnikovTalmud_2026/data/talmud_appendix1.json (pada P/A/U per root)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The Talmud catalog's pada column could turn this into an exact count in a future pass; the direction (P-only > A-only) matches its distribution and Bühler's deponent claim (HB-13) covers the middle-only half.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-33",
@@ -397,7 +429,8 @@
       "ref": "Whitney §§759-761",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Proportion not corpus-measured (no transitivity tagging); the class characterization is the reference grammar's own.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-34",
@@ -409,7 +442,8 @@
       "ref": "Whitney §§636 (as), 638 (han), 639 (çās); cf. OCH-4 and KnauerFrazy_1908 KN-3 (çās independently)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A sharp closed-list universal that holds; two of its four members are already independently verified in this programme (çās twice, as via Bühler HB-harvest).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-35",
@@ -421,7 +455,8 @@
       "ref": "Whitney §§655, 660-675",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "One of the few numeric claims in the book ('немногим более десятка') — matches the reference inventory's size.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-36",
@@ -433,7 +468,8 @@
       "ref": "Whitney §§683-696",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The structural restriction is real; Bühler's parallel description (Урок XLII) states the same class shape less precisely.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-37",
@@ -442,10 +478,11 @@
       "kind": "statistic",
       "verdict_fact": "TRUE",
       "number": "systemic: the reduplicated aorist is the causative's aorist (abībhidat from bhedayati); other derived conjugations' aorists are marginal and iṣ-type where attested",
-      "ref": "Whitney §§861, 1046-1047; = BuhlerLeitfaden_1923 harvest (Урок XLV: 'Этот аорист (и никакой другой) образуется от корней X кл. и каузативов')",
+      "ref": "Whitney §§861, 1046-1047; = BuhlerLeitfaden_1923 harvest (Урок XLV: 'Этот аорист (и никакой другой) образуется от корней X кл. и каузативов'); Talmud-2.1.6 § Аорист, Шаг 1 (H1054)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Cross-grammar convergence with Bühler on both halves, including the rarity of the residue.",
-      "mg_footnote": null
+      "note": "Cross-grammar convergence with Bühler on both halves, including the rarity of the residue. TALMUD CROSS-CHECK (H1054): exact match — the Talmud's derived-stem rule assigns CAUS. ({2/3.pay}) to aorist class 3 and the remaining derived suffixes (other CAUS., DES., denominative) to class 5, i.e. both halves of Zaliznyak's rule as stated. One corner diverges: the Talmud sends INT. to class 4 (s-), not 5 — with intensive aorists attested at near-zero, a catalog refinement of «прочие», not a refutation.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-38",
@@ -457,7 +494,8 @@
       "ref": "Whitney §§856, 1046",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The form-vs-function split ('образуется от корня' but functions as the causative's) is stated exactly as the reference grammar has it.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-39",
@@ -469,7 +507,8 @@
       "ref": "Whitney §§878-881; DCS timws.csv codes 10-13 (instrument caveat recorded)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Honest instrument note: the corpus export lumps aorist types and voices in a way that cannot check 'довольно редко' for type 4 specifically; the verdict rides on the systemic authority for both halves, with the code-lumping caveat recorded.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-40",
@@ -481,7 +520,8 @@
       "ref": "Whitney §§802-807, 959-960; cf. BuhlerLeitfaden_1923 HB-34 (the paradigm), HB-40 (the tavat competitor)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Consistent with the corpus-side picture from the Bühler register: the ta-participle carries the past-participle load (29.8% of verbal tokens).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-41",
@@ -493,7 +533,8 @@
       "ref": "Whitney §§934-935; = BuhlerLeitfaden_1923 harvest (Урок XLIV line 6763: 'у корней на ṛ всегда вставляется i' — same universal, two grammars)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A safe absolute independently stated by Bühler and Zaliznyak; Zaliznyak adds the sharper point (it cross-cuts the aniṭ/seṭ classification — kṛ itself is the demonstration).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-42",
@@ -505,7 +546,8 @@
       "ref": "Whitney §§945-947; DCS timws.csv code 7",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The corpus's own coding (no medium bucket) is indirect confirmation of how marginal the middle is.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-43",
@@ -517,7 +559,8 @@
       "ref": "Whitney §957; DCS 12.csv (HK29/BU4 split); cf. KocherginaUchebnik_1998 HK-29, BuhlerLeitfaden_1923 HB-38",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Fourth register appearance of the -ta/-na fact, and the most precise phrasing of the four: Zaliznyak names the exact root classes where -na wins, not just its minority status.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-44",
@@ -529,7 +572,8 @@
       "ref": "Whitney §§990-991, 1051; = BuhlerLeitfaden_1923 harvest (Урок XXIX: aniṭ gerunds mirror aniṭ participles; -ayitvā always for causatives/class X)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Both halves independently stated by Bühler; the ay-retention is HB-covered ('всегда -ayitvā') and Zaliznyak's 'обычно' correctly scopes the residue of mismatched doublets.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-45",
@@ -541,7 +585,8 @@
       "ref": "Whitney §992; = BuhlerLeitfaden_1923 harvest (Урок XXIX line 4015: the same doublet list)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Same doublets, two grammars — Bühler files them under 'неправильны', Zaliznyak derives them from series membership; the facts agree.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-46",
@@ -553,7 +598,8 @@
       "ref": "cf. Whitney §1041 (the phenomenon acknowledged qualitatively)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Real and commonly noted (kārayati ≈ karoti in narrative usage); the quantifier 'довольно часто' is what has no measure.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-47",
@@ -565,7 +611,8 @@
       "ref": "ZalizniakOcherk_1978/och47_causative_stats.json (per-root × period inventory + validation); causative_grade_detector.py",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Closed by the two-instrument chain the register itself specified: H1000's period map plus this pass's causative detector. The measured contrast is stark enough that the §'s cautious parenthesis («в раннем языке таких отступлений больше») reads as understatement: in the Vedic slice the 'deviation' was the MAJORITY option (81%) among fluctuating roots. Detector caveat kept honest: -ay lemmas conflate causative and class-10/denominative morphology; root-anchoring screens most denominatives, and grade CONTRAST within one root is causative territory regardless.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-48",
@@ -577,7 +624,8 @@
       "ref": "Whitney §1042 (the pāyayati type); cf. BuhlerLeitfaden_1923 HB-26/HB-27 (the ā-root causative treatments)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Обычно' correctly leaves room for the marginal pāpayati variant the tradition records.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-49",
@@ -589,7 +637,8 @@
       "ref": "Whitney §§1028-1030",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A two-conditional rule with two hedges ('обычно', 'как правило'), each sitting on the attested variation.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-50",
@@ -601,7 +650,8 @@
       "ref": "Whitney §§1032-1034; = BuhlerLeitfaden_1923 harvest (Урок XLVIII line 7211: 'одно только [настоящее] встречается довольно часто' — same claim, same direction)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Cross-grammar convergence with Bühler on the same rarity distribution.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-51",
@@ -613,7 +663,8 @@
       "ref": "Whitney §§1000-1019 (esp. 1016-1019); = BuhlerLeitfaden_1923 HB-63 (the two-type voice split) + harvest line 7325 (non-present forms 'крайне редко')",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "All three parts match Bühler's independent account once his two-type split is read against Zaliznyak's aggregate: the surviving productive type is the middle one, hence 'преимущественно в med.'.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-52",
@@ -625,7 +676,8 @@
       "ref": "cf. Whitney §§1053-1068 (denominatives, no distributional statement of this shape)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Plausibly drawn from Zaliznyak's own reading; needs a denominative-tagged form inventory to check.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-53",
@@ -637,7 +689,8 @@
       "ref": "Whitney §§1151-1152 (as-stems), 1168 (man-stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Safe minority claim about derivational semantics the reference grammar states the same way.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-54",
@@ -649,7 +702,8 @@
       "ref": "Whitney §§332-334 (ā/ī feminines of a-stems); ZalizniakOcherk mdx §180 (scope confirmed against the source)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The seemingly risky absolute ('только -ā- у причастий') is safe once the §'s scope — masculine stems in -a — is read: it covers gata-type participles, not the ant-stems, which the same § treats separately with their three-group ī-feminine rule.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-55",
@@ -661,7 +715,8 @@
       "ref": "Whitney §1181 (aka/ikā)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Обычно' covers the -akī residue; the dominant pattern is as stated.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-56",
@@ -673,7 +728,8 @@
       "ref": "Whitney §§344 (i-stems), 418 (as-stems), 400 (root stems)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Matches Bühler's parallel statements (his Урок IV/XXII adjective paragraphs) and Whitney.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-57",
@@ -685,7 +741,8 @@
       "ref": "Whitney §§466-474; = BuhlerLeitfaden_1923 HB-48 (the same claim, verified there 14-07-2026 — direct cross-book reuse, as the harvest note anticipated)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The 'verify once, promote to both books' plan from this book's own harvest header is hereby executed: HB-48's verification carries this entry, and the pairing observation ('обычно в паре') matches the suppletive pair lists both books give.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-58",
@@ -697,7 +754,8 @@
       "ref": "ZalizniakOcherk_1978/och58_compound_stats.json; compound_type_tagger.py; the parallel Bühler Урок-XXXIII dvigu candidates (claims_harvest.yml) are UNBLOCKED by the same instrument for a future drain",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The tagger is function-blind by design (bahuvrīhis of the same ADJ/NUM-first shape sit inside the pool — the very limitation OCH-60 documents), but the contamination applies to both shapes alike, so the comparative claim survives it. The §'s eka-exclusion is honored structurally: eka-first clusters counted separately, not as dvigu.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-59",
@@ -709,7 +767,8 @@
       "ref": "Whitney §1315 (a-stem substitutes in composition); cf. BuhlerLeitfaden_1923 harvest (Урок XXXIV line 4757)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Two grammars, two scopes, one fact: the narrower the scope (Bühler's tatpuruṣa-final), the stronger the quantifier can safely be.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-60",
@@ -721,7 +780,8 @@
       "ref": "cf. Whitney §1293ff (the accentual distinction that classical orthography loses); probe recorded in och58_compound_stats.json (och60_probe key)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "An expectation-vs-usage claim that is exactly right in kind but needs a disambiguated compound corpus to measure.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-61",
@@ -733,7 +793,8 @@
       "ref": "Whitney §1250 (case-forms as prior members); cf. BuhlerLeitfaden_1923 harvest (Урок XXXIII line 4673 — the same 'иногда' claim)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Third convergent hedge on the same fact ('изредка' / 'иногда'); the type is closed and enumerable.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-62",
@@ -745,7 +806,8 @@
       "ref": "DCS-2021 timws.csv codes 19, 24-27, 29 (numbers reused from BuhlerLeitfaden_1923 HB-19/HB-39)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The syntactic claim whose corpus shadow is fully visible without a treebank: the ta-participle's 29.8% share IS the nominal-past pattern Zaliznyak describes.",
-      "mg_footnote": "Числа по DCS-2021: личные формы пассива ≈ 3,9 % глагольных словоупотреблений, а причастие на -ta — ядро именного предложения прошедшего времени — 233 080 словоупотреблений (29,8 % всех глагольных, чаще настоящего времени). Оба звена утверждения Зализняка — «очень часто» и «обычно через именное предложение» — стоят прямо на статистическом центре корпуса."
+      "mg_footnote": "Числа по DCS-2021: личные формы пассива ≈ 3,9 % глагольных словоупотреблений, а причастие на -ta — ядро именного предложения прошедшего времени — 233 080 словоупотреблений (29,8 % всех глагольных, чаще настоящего времени). Оба звена утверждения Зализняка — «очень часто» и «обычно через именное предложение» — стоят прямо на статистическом центре корпуса.",
+      "methodichka": null
     },
     {
       "id": "OCH-63",
@@ -757,7 +819,8 @@
       "ref": "ZalizniakOcherk_1978/och63_period_style_stats.json (per-text table + validation); period_style_gradient.py (period map with dating basis per text)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The register's FLAGSHIP open item, CLOSED as the programme's third headline finding: the style-I → style-II shift is not just real, it is the strongest gradient this programme has measured (the compound axis nearly quintuples). Honesty boundaries kept: Buddhist-hybrid texts and lexica excluded as register-confounded; feats-based metrics (finite-verb rate, ta-participle rate) EXCLUDED from the verdict because DCS verbal annotation density collapses for later texts (measured: tagged ta-participles RV 1,874 → Daśakumāracarita 0) — the verdict rests only on annotation-robust axes. A60-adjacent paper material.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-64",
@@ -769,7 +832,8 @@
       "ref": "Whitney §§1123-1130",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The reference grammar makes the identical typological point; the hedge 'практически' covers the near-grammaticalized items (ā with ablative).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-65",
@@ -781,7 +845,8 @@
       "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py; cf. Whitney §1123ff",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Direction and magnitude both confirm 'относительно более редки' cleanly; unaffected by the genre-skew investigation below (OCH-66/67).",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-66",
@@ -793,7 +858,8 @@
       "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py",
       "verdict_pedagogy": "MISLEADING",
       "note": "The hedges themselves ('тяготеет'/'обычно', not 'всегда') are appropriately soft IF the underlying tendency were real — but on this instrument two of the three packed claims read as closer to free word order than a lean either way. This is the standard Indological consensus description of Classical Sanskrit typology, and a 3.9% DCS slice dominated by Vedic Saṃhitā/Brāhmaṇa/Śrauta-sūtra prose plus a thin post-Vedic tail may simply be under-powered or genre-mismatched for testing it — that uncertainty is real and not resolved here, but the number as measured does not support the claim as stated for two of its three parts.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-67",
@@ -805,7 +871,8 @@
       "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py",
       "verdict_pedagogy": "MISLEADING",
       "note": "The genre split shows the corpus skew is a REAL, partial contributor (coordination share roughly triples in classical texts) but does not reverse the inversion — subordinate clauses (chiefly relative acl:rel and complement ccomp) outnumber coordinate ones in every split tested, including the classical-only one. Whether this reflects DCS's specific text selection within \"classical\" (Mahābhārata is itself compilation/didactic-heavy) or a genuine correction to the traditional description is not resolved here — recorded as measured, not settled linguistic theory.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-68",
@@ -817,7 +884,8 @@
       "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json (counterexamples list); treebank_syntax_stats.py",
       "verdict_pedagogy": "MISLEADING",
       "note": "Flagged in advance (before any number existed) as the register's one absolute quantifier sitting on an unmeasured syntactic domain — exactly the kind of claim a corpus test could most plausibly dent, and it did. 75.2% is a real majority (the general tendency is genuine) but 'всегда' oversells it by a wide margin on n=335; this is the sharpest OVERSTATED case in the whole Ocherk register precisely because it uses the strongest possible quantifier on the thinnest-margin claim.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-69",
@@ -829,7 +897,8 @@
       "ref": "cf. OCH-66/OCH-67",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The direction is the consensus typological picture (absolutives + compounds do the subordination work); the comparison itself is unmeasured here.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-70",
@@ -841,7 +910,8 @@
       "ref": "Whitney §1102 (iti)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "'Почти всегда' matches the iti-device's monopoly; the corpus's ubiquitous iti-tokens are its surface shadow.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-71",
@@ -853,7 +923,8 @@
       "ref": "Whitney §§491b (pronoun enclitics), 500 (enad), 1122 (accentless particles); = BuhlerLeitfaden_1923 HB-30 (the pronoun half, verified) + OCH-seed's enad anaphora (HB-37 twin)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Zaliznyak's list is the union of three already-verified sublists across the programme's registers — closed, and cross-book consistent.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-72",
@@ -865,7 +936,8 @@
       "ref": "Whitney §§591-593 (verb accent, incl. the subordinate-clause exception §595), §314 (vocative)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The programme's third calibration data point on this exact fact: Kochergina's absolute «личная форма глагола никогда не несет ударения» graded OVERSTATED (HK-10 — the subordinate clause accents it); Zaliznyak's «как правило» owns the exceptions and grades TRUE. Same fact, opposite verdicts, hedging is the whole difference.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-73",
@@ -877,7 +949,8 @@
       "ref": "Whitney §§316-319 (accent in declension)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The complementary half of OCH-74; both sides of the split are the reference description.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-74",
@@ -889,7 +962,8 @@
       "ref": "Whitney §§316-319",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Consistent restatement of OCH-73's split from the other side; no counter-inventory exists.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-75",
@@ -901,7 +975,8 @@
       "ref": "ср. HB-100 (same missing instrument)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The guarded twin of Bühler's HB-100 «главное значение» — Zaliznyak hedges what Bühler states flatly.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-76",
@@ -913,7 +988,8 @@
       "ref": "same benefactivity wall as OCH-75/HB-100",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-77",
@@ -925,7 +1001,8 @@
       "ref": "och_voice_stats.py; Whitney ya-passive (present system) + 3sg aorist passive",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-78",
@@ -937,7 +1014,8 @@
       "ref": "sense-tagging wall (family of HK-226/227)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-79",
@@ -948,8 +1026,9 @@
       "number": "passive_by_tense: Pres 34,499 (94.0%) · Impf 1,443 (3.9%) · Past 759 (2.1%) — the Past bucket carries the 3sg -i aorist type (DCS folds aorists under Tense=Past); no Fut/Perf dedicated passive rows exist",
       "ref": "och_voice_stats.json passive_by_tense; Whitney §§768-774, 842-845",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The Tense=Past mapping conflates preterites (A65 EM2), so 759 is an upper bound for the aorist-passive — direction unaffected.",
-      "mg_footnote": null
+      "note": "The Tense=Past mapping conflates preterites (A65 EM2), so 759 is an upper bound for the aorist-passive — direction unaffected. TALMUD CROSS-CHECK (H1054): exact confirmation — «AOR.PASS. образует только форму Ā.3.SG.» (Talmud-2.1.6 § Аорист, Шаг 3), i.e. precisely Zaliznyak's «одна форма аориста».",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-80",
@@ -961,7 +1040,8 @@
       "ref": "och_voice_stats.py (ending classifier over lemma kram)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "A textbook-perfect hedge: both directions of the split measured within a few tokens of exceptionless.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-81",
@@ -973,7 +1053,8 @@
       "ref": "transitivity wall (shared with OCH-93's quantified reading)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-82",
@@ -985,7 +1066,8 @@
       "ref": "och_voice_stats.json i_middle_forms; Whitney §§ on i/adhī",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Post-Vedic scope per the Ocherk's own frame; the Vedic īmahe residue sits outside it.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-83",
@@ -997,7 +1079,8 @@
       "ref": "och_voice_stats.json as_middle_forms; Whitney §636",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "DCS lemma 'as' conflates as 'be' and as 'throw' — the middle residue dissolves into the homonym, which the form list makes explicit.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-84",
@@ -1009,7 +1092,8 @@
       "ref": "och_voice_stats.json shi_forms; Whitney §629 (śī with 3pl -r-)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-85",
@@ -1020,8 +1104,9 @@
       "number": "systemic: the classical root-aorist inventory narrows to the ā-class + abhūt, parasmaipada — the exact carve-out whose absence made Bühler's HB-2 voice-symmetry claim OVERSTATED; corpus cannot isolate aorist type (formation untagged, A65 EM2)",
       "ref": "Whitney §§829-834, classical restriction",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Note the scope discipline vs HK-38: Kochergina states the same restriction WITHOUT the post-Vedic scoping and lands OVERSTATED; Zaliznyak scopes it and lands TRUE.",
-      "mg_footnote": null
+      "note": "Note the scope discipline vs HK-38: Kochergina states the same restriction WITHOUT the post-Vedic scoping and lands OVERSTATED; Zaliznyak scopes it and lands TRUE. TALMUD CROSS-CHECK (H1054): the Talmud (Vedic-inclusive) assigns class 1 to 142 of 745 roots — the breadth of the base inventory from which Zaliznyak's post-Vedic «только -ā и bhū, только act.» is the narrowing; on the diachronic narrowing itself the Talmud is silent, which is exactly why the scoping decides the verdict here vs HK-38.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-86",
@@ -1033,7 +1118,8 @@
       "ref": "Whitney §§898-910 (iṣ-aorist grades)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-87",
@@ -1042,10 +1128,11 @@
       "kind": "rule",
       "verdict_fact": "TRUE",
       "number": "systemic: the siṣ-aorist is active-only in the standard description — the second HB-2 carve-out stated explicitly here",
-      "ref": "Whitney §§911-916 (siṣ-aorist)",
+      "ref": "Whitney §§911-916 (siṣ-aorist); Талмуд — та же прекативная оговорка (класс 6 в Ā-прекативе «еще реже», в med. те же корни обслуживает класс 4) — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-88",
@@ -1054,10 +1141,11 @@
       "kind": "rule",
       "verdict_fact": "TRUE",
       "number": "systemic: the active precative is built directly on the weak root + yā(s)- regardless of the root's aorist type; the middle rides the s-aorist stem",
-      "ref": "Whitney §§921-925 (precative formation)",
+      "ref": "Whitney §§921-925 (precative formation); Talmud-2.1.6 § Аорист, Шаг 3 (H1054)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "",
-      "mg_footnote": null
+      "note": "TALMUD CROSS-CHECK (H1054): exact confirmation of both halves — AOR.OPT. P. attaches {yās} to AOR.1 (the bare root-aorist stem) for ALL roots regardless of their own aorist class («не зависит»), while Ā. attaches {ī} to AOR.4, реже AOR.5, еще реже AOR.6 («лишь отчасти зависит») — the Talmud even supplies the productivity ranking.",
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-89",
@@ -1069,7 +1157,8 @@
       "ref": "Whitney §§768-774",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-90",
@@ -1081,7 +1170,8 @@
       "ref": "Whitney §§761, 768-774 (accent of ya-formations)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The semantic half («иногда почти неразличимы») shares OCH-78's sense-tagging wall, but the homonymy core is definitional.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-91",
@@ -1093,7 +1183,8 @@
       "ref": "Whitney §1052 (causative passive)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-92",
@@ -1102,10 +1193,11 @@
       "kind": "rule",
       "verdict_fact": "UNTESTABLE",
       "number": "no instrument for the core: passive SENSE of morphologically middle forms (cakre 'был сделан') is untagged; the rare pass-aorist-stem finites are below any reliable surface probe",
-      "ref": "sense-tagging wall (OCH-78 family)",
+      "ref": "sense-tagging wall (OCH-78 family); Талмуд закрывает системную половину (пассив аориста = только Ā.3.SG по построению), частотная половина остается UNTESTABLE — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-93",
@@ -1117,7 +1209,8 @@
       "ref": "Whitney §952 (past participle value by transitivity)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The per-token quantified reading would need transitivity tagging (OCH-81's wall); verdicted on the systemic rule, which Whitney states in the same terms.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-94",
@@ -1129,7 +1222,8 @@
       "ref": "och_voice_stats.json ayana_participles",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "«Возможны также» if anything undersells: the 'irregular' form runs at 48% of the pair.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-95",
@@ -1141,7 +1235,8 @@
       "ref": "och_voice_stats.py; Whitney §999 (impersonal passive)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     },
     {
       "id": "OCH-96",
@@ -1153,7 +1248,8 @@
       "ref": "och_voice_stats.py (treebank probe, same UD slice as §§212-217)",
       "verdict_pedagogy": "MISLEADING",
       "note": "The FOURTH flag of the §§212-217 syntax cluster (with OCH-66/67/68) — and again the Vedic skew caveat of FINDINGS §88 applies: verse texts open with particles (atha, tataḥ), so 'initial' is a strict reading; a softer 'early position' variant is not measured. Voice MORPHOLOGY stays clean; only the word-order §§ keep falling.",
-      "mg_footnote": null
+      "mg_footnote": null,
+      "methodichka": null
     }
   ]
 }

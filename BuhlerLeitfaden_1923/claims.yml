@@ -145,6 +145,10 @@ entries:
       are voice-defective (root and siṣ-aorists parasmaipada-only, the two intensives each
       single-voice). A beginner-facing simplification, but of the exact universality-overreach
       type the register tracks — the counter-classes are in the same book.
+      TALMUD CROSS-CHECK (H1054): the Talmud is SILENT on the classical voice defects — its
+      Whitney-based, Vedic-inclusive system generates both voices throughout (the Vedic middle
+      root-aorists are real), so the classical P.-only narrowings live below its resolution;
+      it cannot rescue or refute the Урок-I absolute.
 
   - id: HB-3
     loc: "Урок I / mdx line 129"
@@ -1168,6 +1172,10 @@ entries:
       paradigm is thematic). Queued for errata.yml as a text-correction candidate alongside
       this register entry; the two registers (errata = typos, claims = assertions) meet
       exactly here.
+      TALMUD CROSS-CHECK (H1054): independently confirms the FALSE verdict — in the Talmud's
+      system the thematic aorist (class 2, suffix {ø}) is structurally identical to the
+      class-VI present-stem type ({1.ø}, Таблица 17), while class VII is the nasal-infix
+      athematic type ({1.↶nø}) and matches nothing in a thematic paradigm.
 
   - id: HB-61
     loc: "Урок XLV / mdx line 7007"
@@ -5846,6 +5854,10 @@ entries:
     verdict_pedagogy: MISLEADING
     note: >-
       HB-60-style errata: read «согласный» for «гласный» (either a 1923 printing error or a digitization error — the scan should be checked). With that correction the rule (final consonant doubled after a single consonant or an r/n-initial cluster, otherwise usually the first consonant, with inserted i, very rarely a: ārtathat) is sound Whitney §865 doctrine.
+      TALMUD CROSS-CHECK (H1054): the Talmud's AORr algorithm agrees with the corrected reading —
+      for vowel-initial roots ([EX]-shape) the reduplication repeats CONSONANTAL material
+      ([EX] → [EXE'X], e.g. {√ṛdh} → ārdidh-), never the vowel; second independent confirmation
+      of the FALSE-as-printed verdict.
 
   - id: HB-373
     loc: "Урок XLV / mdx line 7007"
@@ -6037,7 +6049,7 @@ entries:
     verdict_fact: TRUE
     number: >-
       systemic: outside the 3sg in -i, the passive-aorist persons are supplied by the middle of the sibilant aorists (s/iṣ/sa types)
-    ref: "Whitney §§842-845"
+    ref: "Whitney §§842-845; Талмуд — AOR.PASS. образует ТОЛЬКО Ā.3.SG, вне 3SG пассивных форм нет по построению — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: >-
       Hedged «обыкновенно» graded as direction; the middle-suppletion pattern is Whitney's own description, with the optional special stems handled at mdx 7171.

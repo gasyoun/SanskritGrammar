@@ -172,7 +172,7 @@ entries:
     sources: [dcs]
     verdict_fact: TRUE
     number: "221 tokens = 0.03% of 781,618 verbal tokens ('Benedictive Medium', DCS-2021 — reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK39_precative_middle)"
-    ref: "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко')"
+    ref: "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко'); Талмуд обогащает — Ā-прекатив по 4 (продуктивно), 5 (реже) И 6 (еще реже) — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: "Second independent grammar making the identical, now-doubly-confirmed rarity claim about the same paradigm cell."
 
@@ -725,9 +725,15 @@ entries:
     sources: [whitney]
     verdict_fact: TRUE
     number: "systemic: the reduplicated aorist is the causative's aorist (abībhidat from bhedayati); other derived conjugations' aorists are marginal and iṣ-type where attested"
-    ref: "Whitney §§861, 1046-1047; = BuhlerLeitfaden_1923 harvest (Урок XLV: 'Этот аорист (и никакой другой) образуется от корней X кл. и каузативов')"
+    ref: "Whitney §§861, 1046-1047; = BuhlerLeitfaden_1923 harvest (Урок XLV: 'Этот аорист (и никакой другой) образуется от корней X кл. и каузативов'); Talmud-2.1.6 § Аорист, Шаг 1 (H1054)"
     verdict_pedagogy: JUSTIFIED
-    note: "Cross-grammar convergence with Bühler on both halves, including the rarity of the residue."
+    note: >-
+      Cross-grammar convergence with Bühler on both halves, including the rarity of the residue.
+      TALMUD CROSS-CHECK (H1054): exact match — the Talmud's derived-stem rule assigns CAUS.
+      ({2/3.pay}) to aorist class 3 and the remaining derived suffixes (other CAUS., DES.,
+      denominative) to class 5, i.e. both halves of Zaliznyak's rule as stated. One corner
+      diverges: the Talmud sends INT. to class 4 (s-), not 5 — with intensive aorists attested
+      at near-zero, a catalog refinement of «прочие», not a refutation.
 
   - id: OCH-38
     loc: "§142 / mdx line 2254"
@@ -1393,6 +1399,8 @@ entries:
     note: >-
       The Tense=Past mapping conflates preterites (A65 EM2), so 759 is an upper bound for
       the aorist-passive — direction unaffected.
+      TALMUD CROSS-CHECK (H1054): exact confirmation — «AOR.PASS. образует только форму
+      Ā.3.SG.» (Talmud-2.1.6 § Аорист, Шаг 3), i.e. precisely Zaliznyak's «одна форма аориста».
 
   - id: OCH-80
     loc: "§117 / mdx line 1960"
@@ -1475,6 +1483,10 @@ entries:
     note: >-
       Note the scope discipline vs HK-38: Kochergina states the same restriction WITHOUT
       the post-Vedic scoping and lands OVERSTATED; Zaliznyak scopes it and lands TRUE.
+      TALMUD CROSS-CHECK (H1054): the Talmud (Vedic-inclusive) assigns class 1 to 142 of 745
+      roots — the breadth of the base inventory from which Zaliznyak's post-Vedic «только -ā
+      и bhū, только act.» is the narrowing; on the diachronic narrowing itself the Talmud is
+      silent, which is exactly why the scoping decides the verdict here vs HK-38.
 
   - id: OCH-86
     loc: "§145 / mdx line 2314"
@@ -1496,7 +1508,7 @@ entries:
     sources: [whitney]
     verdict_fact: TRUE
     number: "systemic: the siṣ-aorist is active-only in the standard description — the second HB-2 carve-out stated explicitly here"
-    ref: "Whitney §§911-916 (siṣ-aorist)"
+    ref: "Whitney §§911-916 (siṣ-aorist); Талмуд — та же прекативная оговорка (класс 6 в Ā-прекативе «еще реже», в med. те же корни обслуживает класс 4) — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: ""
 
@@ -1510,9 +1522,13 @@ entries:
     sources: [whitney]
     verdict_fact: TRUE
     number: "systemic: the active precative is built directly on the weak root + yā(s)- regardless of the root's aorist type; the middle rides the s-aorist stem"
-    ref: "Whitney §§921-925 (precative formation)"
+    ref: "Whitney §§921-925 (precative formation); Talmud-2.1.6 § Аорист, Шаг 3 (H1054)"
     verdict_pedagogy: JUSTIFIED
-    note: ""
+    note: >-
+      TALMUD CROSS-CHECK (H1054): exact confirmation of both halves — AOR.OPT. P. attaches
+      {yās} to AOR.1 (the bare root-aorist stem) for ALL roots regardless of their own aorist
+      class («не зависит»), while Ā. attaches {ī} to AOR.4, реже AOR.5, еще реже AOR.6
+      («лишь отчасти зависит») — the Talmud even supplies the productivity ranking.
 
   - id: OCH-89
     loc: "§160 / mdx line 2492"
@@ -1567,7 +1583,7 @@ entries:
     sources: [dcs]
     verdict_fact: UNTESTABLE
     number: "no instrument for the core: passive SENSE of morphologically middle forms (cakre 'был сделан') is untagged; the rare pass-aorist-stem finites are below any reliable surface probe"
-    ref: "sense-tagging wall (OCH-78 family)"
+    ref: "sense-tagging wall (OCH-78 family); Талмуд закрывает системную половину (пассив аориста = только Ā.3.SG по построению), частотная половина остается UNTESTABLE — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: ""
 
