@@ -1,0 +1,75 @@
+{
+  "_source": "DCS-2021 sqlite (per-text token counts) + 15.csv aorist form-set (690 forms). Reproduces Whitney's per-text hand-counts (§826 aorist, §941 conditional, §925 precative). Absolute counts differ from Whitney's 1889 hand-counts because DCS uses full critical editions; direction/rarity/rank is what is checked.",
+  "aorist_form_set_size": 690,
+  "WH-H-1_aorist_per_text_826": {
+    "whitney_1889": {
+      "Nala(inside MBh)": 21,
+      "Hitopadeśa": 8,
+      "Manu": 7,
+      "BhG(inside MBh)": 6,
+      "Rāmāyaṇa_bk1": 66
+    },
+    "dcs_named": {
+      "Mahābhārata": 525,
+      "Hitopadeśa": 0,
+      "Manusmṛti": 2,
+      "Rāmāyaṇa": 26
+    },
+    "dcs_top": {
+      "Ṛgveda": 564,
+      "Mahābhārata": 525,
+      "Atharvaveda (Śaunaka)": 249,
+      "Kathāsaritsāgara": 199,
+      "Daśakumāracarita": 170,
+      "Divyāvadāna": 81,
+      "Maitrāyaṇīsaṃhitā": 81,
+      "Atharvaveda (Paippalāda)": 79
+    }
+  },
+  "WH-H-21_conditional_per_text_941": {
+    "whitney_1889": {
+      "Nala": 0,
+      "BhG": 0,
+      "Hitopadeśa": 0,
+      "Manu": 1,
+      "Śakuntalā": 2,
+      "MBh": "~25"
+    },
+    "dcs_named": {
+      "Mahābhārata": 134,
+      "Hitopadeśa": 0,
+      "Manusmṛti": 1,
+      "Rāmāyaṇa": 10
+    },
+    "dcs_top": {
+      "Mahābhārata": 134,
+      "Śatapathabrāhmaṇa": 41,
+      "Jaiminīyabrāhmaṇa": 17,
+      "Divyāvadāna": 14,
+      "Kathāsaritsāgara": 13,
+      "Chāndogyopaniṣad": 12,
+      "Rāmāyaṇa": 10,
+      "Harivaṃśa": 6
+    },
+    "hitopadeśa_absent_confirmed": true
+  },
+  "WH-H-18_precative_per_text_925": {
+    "whitney_1889": "once each in Manu/Nala/BhG/Śakuntalā/Hitopadeśa; <6 in the epics",
+    "dcs_named": {
+      "Mahābhārata": 12,
+      "Hitopadeśa": 3,
+      "Manusmṛti": 1,
+      "Rāmāyaṇa": 2
+    },
+    "dcs_top": {
+      "Maitrāyaṇīsaṃhitā": 41,
+      "Taittirīyasaṃhitā": 35,
+      "Ṛgveda": 32,
+      "Vārāhaśrautasūtra": 31,
+      "Āpastambaśrautasūtra": 28,
+      "Śatapathabrāhmaṇa": 22,
+      "Atharvaveda (Śaunaka)": 20,
+      "Śāṅkhāyanaśrautasūtra": 15
+    }
+  }
+}

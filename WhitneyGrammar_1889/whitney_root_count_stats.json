@@ -1,0 +1,106 @@
+{
+  "_source": "WhitneyRoots/crosswalk/roots.csv (930 roots, class + period_tags from Whitney 1889) — internal-consistency check of Whitney's running class-size numbers vs his own enumerated root list",
+  "total_roots": 930,
+  "claims": {
+    "WH-H-116": {
+      "class": "I",
+      "whitney_stated": 240,
+      "whitneyroots_count": 521,
+      "older_only_of_them": 84,
+      "ratio_measured_to_stated": 2.17,
+      "confirmed_order_of_magnitude": false,
+      "desc": "a-class (bhū/§744): ~240 RV roots, largest class"
+    },
+    "WH-H-106": {
+      "class": "III",
+      "whitney_stated": 50,
+      "whitneyroots_count": 45,
+      "older_only_of_them": 7,
+      "ratio_measured_to_stated": 0.9,
+      "confirmed_order_of_magnitude": true,
+      "desc": "reduplicating class (§659): ~50 roots, only ~16 later"
+    },
+    "WH-H-108": {
+      "class": "VII",
+      "whitney_stated": 30,
+      "whitneyroots_count": 29,
+      "older_only_of_them": 2,
+      "ratio_measured_to_stated": 0.97,
+      "confirmed_order_of_magnitude": true,
+      "desc": "nasal class (§694): ~30 roots"
+    },
+    "WH-H-117": {
+      "class": "VI",
+      "whitney_stated": 150,
+      "whitneyroots_count": 117,
+      "older_only_of_them": 21,
+      "ratio_measured_to_stated": 0.78,
+      "confirmed_order_of_magnitude": true,
+      "desc": "á-class (tud/§753): ~150 roots"
+    },
+    "WH-H-118": {
+      "class": "IV",
+      "whitney_stated": 130,
+      "whitneyroots_count": 137,
+      "older_only_of_them": 17,
+      "ratio_measured_to_stated": 1.05,
+      "confirmed_order_of_magnitude": true,
+      "desc": "ya-class (div/§761): >130 roots"
+    },
+    "WH-H-114": {
+      "class": "IX",
+      "whitney_stated": 50,
+      "whitneyroots_count": 57,
+      "older_only_of_them": 9,
+      "ratio_measured_to_stated": 1.14,
+      "confirmed_order_of_magnitude": true,
+      "desc": "nā-class (§727): >50 roots"
+    },
+    "WH-H-111": {
+      "class": "VIII",
+      "whitney_stated": 8,
+      "whitneyroots_count": 8,
+      "older_only_of_them": 0,
+      "ratio_measured_to_stated": 1.0,
+      "confirmed_order_of_magnitude": true,
+      "desc": "u-class (tan/§709): at most 8 roots"
+    },
+    "WH-H-110": {
+      "class": "V",
+      "whitney_stated": 50,
+      "whitneyroots_count": 50,
+      "older_only_of_them": 10,
+      "ratio_measured_to_stated": 1.0,
+      "confirmed_order_of_magnitude": true,
+      "desc": "nu-class (§708): ~50 roots"
+    },
+    "WH-H-102": {
+      "class": "II",
+      "whitney_stated": 150,
+      "whitneyroots_count": 129,
+      "older_only_of_them": 17,
+      "ratio_measured_to_stated": 0.86,
+      "confirmed_order_of_magnitude": true,
+      "desc": "root-class (§602/625): a small minority (~150)"
+    }
+  },
+  "largest_present_class": {
+    "counts_by_class": {
+      "I": 521,
+      "IV": 137,
+      "II": 129,
+      "VI": 117,
+      "IX": 57,
+      "V": 50,
+      "III": 45,
+      "VII": 29,
+      "VIII": 8,
+      "X": 1
+    },
+    "largest": [
+      "I",
+      521
+    ],
+    "class_I_is_largest": true
+  }
+}

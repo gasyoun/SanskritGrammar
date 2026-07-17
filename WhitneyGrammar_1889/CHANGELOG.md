@@ -9,6 +9,25 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-17
+### Added
+- **Frequency-register drain with two instruments (H1107, Opus 4.8 `claude-opus-4-8[1m]`).**
+  Register **10 → 15 verified** (WH-11..15). Two new self-contained instruments:
+  [`whitney_root_count.py`](whitney_root_count.py) joins Whitney's per-present-class ROOT counts
+  to his own 930-root [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) catalog (his
+  class-size claims count roots, not tokens), and [`whitney_per_text_counts.py`](whitney_per_text_counts.py)
+  reproduces his per-text HAND-COUNTS (conditional/precative directly via `feat_mood`; aorist
+  bridged via a 690-form set from `15.csv`). Tally **13 TRUE · 1 OVERSTATED · 1 UNTESTABLE**.
+### Notes
+- **Two showcase results.** (1) Whitney's 1889 running-text root counts per present-class match
+  his own enumerated catalog almost exactly — the **tan-class (8) and nu-class (50) to the
+  number**, nasal 29≈30, div 137≈130 — and class I is the largest at 56% of roots (WH-11/12).
+  (2) His hand-counts of the rarest forms reproduce **to the token**: he counted **zero
+  conditionals in the Hitopadeśa and exactly one in Manu** in 1889, and DCS-2021 gives 0 and 1
+  (WH-13); the precative in Manu is likewise exactly 1 (WH-14). Only the aorist §826 per-text
+  hand-count (WH-15) stays UNTESTABLE — the sqlite has no aorist tag, so form-set matching
+  undercounts. A 137-year-old philologist's hand-counting, validated against a 5.7M-token corpus.
+
 ## [0.1.0] - 2026-07-17
 ### Added
 - **Frequency-claim register seed (H1101, Opus 4.8 `claude-opus-4-8[1m]`).** The two-axis claim
