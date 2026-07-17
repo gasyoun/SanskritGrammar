@@ -1,0 +1,143 @@
+{
+  "study": "SG-MO-028 «Каузатив» — causative secondary conjugation (core W2 ①, content)",
+  "toc_ref": "SG-MO-028",
+  "kind": "content article (no kill-gate; map-heavy — measurable core + honest conflation)",
+  "method": "the causative is NOT tagged (Caus label = 0); the -aya- stem is the Westergaard class-10 (lemma.grammar '10.%'), which MERGES derived causative + primary curādi; measured as one bucket, with the causative proper flagged as non-isolable",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "finite_total": 523721
+  },
+  "class_x_aya_bucket": {
+    "finite_tokens": 55376,
+    "share_of_finite": 0.1057,
+    "distinct_lemmas": 1998,
+    "note": "class-X (-aya-) present = causative + primary curādi under one roof; NOT separable natively"
+  },
+  "causative_untagged_proof": {
+    "caus_label_count": 0,
+    "note": "zero 'Caus' entries anywhere → the causative has no dedicated tag"
+  },
+  "secondary_conjugations_dcs_separates": {
+    "denominative": 5482,
+    "desiderative": 1060,
+    "intensive": 921,
+    "note": "these secondary conjugations ARE tagged in lemma.grammar, so they do NOT contaminate the class-X bucket — the caus/curādi conflation is the ONLY remaining fusion"
+  },
+  "top_class_x_lemmas": [
+    {
+      "lemma": "kathay",
+      "tokens": 2083,
+      "kind": "curādi"
+    },
+    {
+      "lemma": "dhāray",
+      "tokens": 1337,
+      "kind": "caus"
+    },
+    {
+      "lemma": "kāray",
+      "tokens": 1327,
+      "kind": "caus"
+    },
+    {
+      "lemma": "pūjay",
+      "tokens": 1249,
+      "kind": "curādi"
+    },
+    {
+      "lemma": "janay",
+      "tokens": 1106,
+      "kind": "caus"
+    },
+    {
+      "lemma": "marday",
+      "tokens": 989,
+      "kind": "?"
+    },
+    {
+      "lemma": "kāmay",
+      "tokens": 942,
+      "kind": "curādi"
+    },
+    {
+      "lemma": "bhakṣay",
+      "tokens": 941,
+      "kind": "?"
+    },
+    {
+      "lemma": "cintay",
+      "tokens": 810,
+      "kind": "curādi"
+    },
+    {
+      "lemma": "tarpay",
+      "tokens": 765,
+      "kind": "?"
+    },
+    {
+      "lemma": "yojay",
+      "tokens": 706,
+      "kind": "caus"
+    },
+    {
+      "lemma": "darśay",
+      "tokens": 685,
+      "kind": "caus"
+    },
+    {
+      "lemma": "kalpay",
+      "tokens": 621,
+      "kind": "?"
+    },
+    {
+      "lemma": "sāday",
+      "tokens": 603,
+      "kind": "?"
+    },
+    {
+      "lemma": "sthāpay",
+      "tokens": 572,
+      "kind": "caus"
+    },
+    {
+      "lemma": "bhāvay",
+      "tokens": 563,
+      "kind": "?"
+    },
+    {
+      "lemma": "pātay",
+      "tokens": 550,
+      "kind": "caus"
+    },
+    {
+      "lemma": "niveday",
+      "tokens": 543,
+      "kind": "?"
+    },
+    {
+      "lemma": "varjay",
+      "tokens": 473,
+      "kind": "?"
+    },
+    {
+      "lemma": "sādhay",
+      "tokens": 445,
+      "kind": "?"
+    }
+  ],
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§1041–1052 (causative)"
+  },
+  "limits": {
+    "EM5_no_valency": "the causative is a derived conjugation with no tag; corpus-internally not isolable from primary curādi (both = class-X -aya-)",
+    "class_x_fusion": "lemma.grammar '10.' fuses derived causative + primary curādi; clean separation needs WhitneyRoots root-class + per-stem adjudication (sibling-root heuristic misfires, e.g. kathay)",
+    "surface_noise": "raw -ayati/-ayate surface matching is ~16-20% noisy AND still cannot separate caus from curādi",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

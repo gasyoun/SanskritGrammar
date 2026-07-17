@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:causative",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-028",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Вторичные спряжения: каузатив",
+        "summary": "Статья ядра W2 SG-MO-028 (домен MO, кластер «Спряжение»). Каузатив (вторичное спряжение: сильный корень + -aya-; kārayati, darśayati) по пинованному снапшоту DCS. Инструктивный трудный случай: каузатив в корпусе НЕ размечен (меток Caus — 0), его -aya-основа лежит под вестергоровским кодом X класса (10.), который СЛИВАЕТ производный каузатив (kāray, janay, darśay) с первичным curādi X класса (kathay, pūjay, cintay). Измеримо целое — класс-X -aya- = 55 376 финитных токенов (10,6 %), 1998 лемм — но каузатив как таковой из curādi корпусно НЕ отделим (предел EM5); чистое разделение требует внешнего инвентаря классов корня (WhitneyRoots). Прочие вторичные спряжения корпус различает: деноминатив 5482, дезидератив 1060, интенсив 921. Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:causative:1",
+        "layer": "scientific",
+        "text_slp1": "kArayati",
+        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 16 (s6)" },
+        "translations": { "ru": "заставляет делать (kṛ, каузатив)" },
+        "gloss_ru": "каузатив от √kṛ: kār-aya-ti (сильная ступень kār- + -aya-). Один из частотнейших несомненных каузативов (1327).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; класс-X -aya-, каузатив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:causative:2",
+        "layer": "scientific",
+        "text_slp1": "darSayati",
+        "locus": { "corpus": "dcs", "work": "Ayurvedarasāyana (комм. к AHS)", "ref": "AHS Sū 9 (s2)" },
+        "translations": { "ru": "показывает (dṛś, каузатив — «даёт увидеть»)" },
+        "gloss_ru": "каузатив от √dṛś: darś-aya-ti «показывает» (букв. «заставляет видеть»). Лексикализованное каузативное значение (685).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; класс-X -aya-, каузатив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:causative:3",
+        "layer": "scientific",
+        "text_slp1": "janayati",
+        "locus": { "corpus": "dcs", "work": "Aitareyopaniṣad", "ref": "AU 2.1" },
+        "translations": { "ru": "рождает, порождает (jan, каузатив)" },
+        "gloss_ru": "каузатив от √jan «рождаться»: jan-aya-ti «рождает / даёт родиться» (1106).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; класс-X -aya-, каузатив", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:causative:4",
+        "layer": "scientific",
+        "text_slp1": "sTApayati",
+        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 21 (s2)" },
+        "translations": { "ru": "ставит, помещает (sthā, каузатив со вставным -p-)" },
+        "gloss_ru": "каузатив от √sthā: sthā-p-aya-ti — со вставным -p- (корни на долгий гласный вставляют -p- перед -aya-).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; класс-X -aya-, каузатив -p-", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:causative:5",
+        "layer": "scientific",
+        "text_slp1": "kaTayati",
+        "locus": { "corpus": "dcs", "work": "Amaruśataka", "ref": "AmaruŚ 1 (s10)" },
+        "translations": { "ru": "рассказывает (kathay — ПЕРВИЧНЫЙ curādi, не каузатив)" },
+        "gloss_ru": "первичный глагол X класса (curādi) kathay «рассказывать»: kath-aya-ti — та же основа -aya-, что у каузатива, но НЕ производная. Частотнейшая класс-X лемма (2083) — иллюстрирует слияние каузатив↔curādi под кодом 10.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; класс-X -aya-, первичный curādi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
