@@ -1,0 +1,80 @@
+{
+  "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS dcs_full.sqlite — Whitney is the TARGET, verified against the corpus, not the adjudicator (methodological inversion)",
+  "WH-H-101_present_vs_others": {
+    "present_system_tokens": 353215,
+    "all_other_finite_tokens": 170506,
+    "ratio": 2.07,
+    "tense_census": {
+      "Fut": 21556,
+      "Impf": 46695,
+      "Past": 102055,
+      "Plp": 167,
+      "Pqp": 33,
+      "Pres": 353215
+    },
+    "confirmed": true
+  },
+  "WH-H-21_mood_census": {
+    "moods": {
+      "Pot": 32,
+      "Cond": 340,
+      "Prec": 577,
+      "Sub": 4325,
+      "Jus": 5258,
+      "Imp": 56506,
+      "Opt": 91912,
+      "Ind": 364771
+    },
+    "rarest_finite_mood": "Pot"
+  },
+  "named_verb_frequencies": {
+    "kṛ": {
+      "tokens": 40808,
+      "verb_lemma_rank": 1
+    },
+    "brū": {
+      "tokens": 9786,
+      "verb_lemma_rank": 10
+    },
+    "dā": {
+      "tokens": 12366,
+      "verb_lemma_rank": 7
+    },
+    "dhā": {
+      "tokens": 4861,
+      "verb_lemma_rank": 23
+    },
+    "gam": {
+      "tokens": 18352,
+      "verb_lemma_rank": 5
+    },
+    "vac": {
+      "tokens": 33950,
+      "verb_lemma_rank": 4
+    },
+    "bhū": {
+      "tokens": 43220,
+      "verb_lemma_rank": 1
+    },
+    "as": {
+      "tokens": 35763,
+      "verb_lemma_rank": 3
+    }
+  },
+  "WH-H-300_a_stem_share": {
+    "a_ending_lemmas": 47476,
+    "noun_adj_lemmas": 77764,
+    "pct": 61.1,
+    "majority": true
+  },
+  "WH-H-302_i_vs_u_stems": {
+    "i_ending_lemmas": 4477,
+    "u_ending_lemmas": 2236,
+    "i_gt_u": true
+  },
+  "reused_ground_truth": {
+    "WH-H-2_aorist_pct_of_verbal": "0.31% (2,452 tokens) — KocherginaUchebnik_1998 HK-1",
+    "WH-H-116_largest_present_class": "class I (thematic a) 30.34% of present-system tokens — ZalizniakOcherk_1978 OCH-2",
+    "WH-H-212_perfect_vs_imperfect": "perfect 61,986 > imperfect 47,554 (DCS aggregate) — BuhlerLeitfaden_1923 HB"
+  }
+}

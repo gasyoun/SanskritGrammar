@@ -11,6 +11,7 @@ Per-book registers of *verifiable grammatical assertions* (distinct from the typ
 | [ApteSyntax_1885](ApteSyntax_1885/CLAIMS_VERIFIED.md) | 39 | 39 | 9 |
 | [BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md) | 403 | 403 | 17 |
 | [KocherginaUchebnik_1998](KocherginaUchebnik_1998/CLAIMS_VERIFIED.md) | 260 | 260 | 29 |
+| [WhitneyGrammar_1889](WhitneyGrammar_1889/CLAIMS_VERIFIED.md) | 10 | 10 | 1 |
 | [ZalizniakKonspekt_2004](ZalizniakKonspekt_2004/CLAIMS_VERIFIED.md) | 17 | 17 | 0 |
 | [ZalizniakOcherk_1978](ZalizniakOcherk_1978/CLAIMS_VERIFIED.md) | 96 | 96 | 5 |
 
