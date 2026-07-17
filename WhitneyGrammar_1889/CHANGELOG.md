@@ -9,6 +9,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-07-17
+### Changed
+- **WH-2 aorist number refreshed to the feat_formation count (H1137, Opus 4.8
+  `claude-opus-4-8[1m]`).** WH-2 reused Kochergina HK-1's old figure (2,452 / 0.31%), which was
+  refreshed in H1136 — so WH-2 was left stale and internally inconsistent with this register's own
+  WH-15 (which already cites 12,054). Refreshed to **12,054 tokens = 2.30% of finite verbal forms**
+  (DCS `feat_formation`, via `whitney_aorist_tagger.py`), matching HK-1, APT-31, and WH-15. Verdict
+  unchanged (TRUE — the aorist is marginal either way); completes the aorist-number refresh across
+  every register that cites it.
+
 ## [0.3.0] - 2026-07-17
 ### Added
 - **Aorist-per-text tagger — closes WH-15 (H1134, Opus 4.8 `claude-opus-4-8[1m]`).** New

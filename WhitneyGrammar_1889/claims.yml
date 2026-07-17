@@ -58,7 +58,9 @@ synthesis: >-
   systems combined (2.07:1, WH-1); the a-stem declension is the majority of nominal stems (61.1%,
   WH-7); i-stems outnumber u-stems (WH-9); the roots he singles out as "extremely common" /
   "very frequent" (kṛ, brū, dā, dhā) are exactly the top of the verb-lemma frequency list (WH-5,
-  WH-6, WH-10); the aorist is the marginal classical category he says it is (0.31%, WH-2); the
+  WH-6, WH-10); the aorist is the marginal classical category he says it is (2.3% of finite
+  verbal, WH-2 — refreshed from the undercounting 0.31% tense-code figure to DCS's feat_formation
+  aorist tag); the
   conditional is the rarest standard finite mood (WH-8). The programme's central finding is
   restated at its cleanest: where the other five books' misses were CALIBRATION, Whitney has
   essentially none to find — a descriptive master's quantitative eye, checked a century later,
@@ -92,10 +94,15 @@ entries:
     falsifiable_as: "is the aorist a marginal category by token frequency in the (classical-weighted) corpus"
     sources: [dcs]
     verdict_fact: TRUE
-    number: "aorist 2,452 tokens = 0.31% of verbal tokens (DCS-2021, reused from KocherginaUchebnik_1998 HK-1)"
-    ref: "DCS-2021 verbal census; cf. KocherginaUchebnik_1998 HK-1; harvest WH-H-2 (§826)"
+    number: "aorist 12,054 tokens = 2.30% of 523,738 finite verbal forms (DCS feat_formation, all 7 aorist classes; whitney_aorist_tagger.py). REFRESHED 17-07-2026 from the DCS-2021 tense-code figure (2,452 / 0.31%, reused from Kochergina HK-1), which undercounted by omitting the root and thematic aorists."
+    ref: "DCS feat_formation aorist census (whitney_aorist_tagger.py, H1134); cf. KocherginaUchebnik_1998 HK-1 (refreshed to the same figure, H1136); harvest WH-H-2 (§826)"
     verdict_pedagogy: JUSTIFIED
-    note: "The same 0.31% that graded Kochergina's and Apte's aorist-marginality claims TRUE confirms Whitney's; the DCS corpus is Classical/Epic-weighted, exactly the register Whitney calls 'infrequent'."
+    note: >-
+      The aorist is 2.3% of finite verbal forms — still marginal beside the present system, exactly
+      the register Whitney calls 'infrequent'; the verdict is unchanged. NUMBER REFRESHED (H1137)
+      to DCS's own feat_formation aorist tag (12,054), matching the refreshed Kochergina HK-1 and
+      Apte APT-31 and this register's own WH-15; the older 0.31% tense-code figure undercounted the
+      root and thematic aorists (see WH-15).
 
   - id: WH-3
     loc: "§744 / present classes"
