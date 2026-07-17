@@ -1,0 +1,99 @@
+{
+  "study": "Sangram SG-SE-008 (Наклонения: императив и оптатив) — semantics read off native morphology",
+  "toc_ref": "SG-SE-008",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive (feat_mood); semantic contrast from person profile",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_moods": {
+      "Ind": 364771,
+      "Opt": 91912,
+      "Imp": 56506,
+      "Jus": 5258,
+      "Sub": 4325,
+      "Prec": 577,
+      "Cond": 340,
+      "Pot": 32
+    }
+  },
+  "imperative": {
+    "total": 56506,
+    "by_person": {
+      "2": 38144,
+      "3": 17373,
+      "1": 989
+    },
+    "by_number": {
+      "Sing": 44051,
+      "Plur": 10047,
+      "Dual": 2408
+    },
+    "by_voice": {
+      "null": 53180,
+      "Pass": 3326
+    },
+    "top_lemmas": [
+      "as (3028)",
+      "kṛ (2752)",
+      "śru (2437)",
+      "bhū (2029)",
+      "gam (1694)",
+      "pā (1675)",
+      "paś (1132)",
+      "brū (1106)"
+    ]
+  },
+  "optative": {
+    "total": 91912,
+    "by_person": {
+      "3": 86918,
+      "1": 4013,
+      "2": 981
+    },
+    "by_number": {
+      "Sing": 85274,
+      "Plur": 6147,
+      "Dual": 491
+    },
+    "by_voice": {
+      "null": 91064,
+      "Pass": 848
+    },
+    "top_lemmas": [
+      "as (9505)",
+      "bhū (6878)",
+      "kṛ (4641)",
+      "dā (2086)",
+      "pā (1238)",
+      "pac (1225)",
+      "vid (1204)",
+      "hu (1146)"
+    ]
+  },
+  "semantic_contrast": {
+    "imperative_2nd_person_pct": 67.5,
+    "imperative_3rd_person_pct": 30.7,
+    "optative_3rd_person_pct": 94.6,
+    "optative_3sg_pct": 92.8,
+    "finding": "imperative skews 2nd person (direct command to the hearer); optative is overwhelmingly 3rd-person singular (impersonal prescription/potential — 'one should', 'it would be'), the śāstric rule-giving register. The functional divergence is native (feat_mood+feat_person), not a claim imposed on the data."
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§569-582 (imperative), §§563-568 (optative/potential); the optative as prescription — classical śāstra usage"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "mood_native_not_function": "feat_mood is native and clean; the FUNCTION (command vs wish vs prescription) is inferred from the person/number profile + traditional grammar, not a semantic tag",
+    "injunctive_subjunctive_separate": "other non-indicative moods (Jus 5,258, Sub 4,325, Prec 577, Cond 340) are their own slots; this article covers only Imp + Opt",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

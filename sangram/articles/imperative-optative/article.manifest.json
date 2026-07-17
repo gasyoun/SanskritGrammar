@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:imperative-optative",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-SE-008",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Наклонения: императив и оптатив",
+        "summary": "Статья SG-SE-008 (домен SE, кластер «Глагольная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Два главных неиндикативных наклонения размечены НАТИВНО через feat_mood, и профиль по лицу вскрывает подлинный семантический контраст прямо из корпуса. ИМПЕРАТИВ (Imp) 56 506: перекос во 2-е лицо (38 144 = 67,5 %) — прямая команда адресату (śṛṇu «слушай!», kuru «делай!»), ед. ч. 78 %; значимое 3-е лицо (30,7 %) — юссивное «пусть он…» (astu). ОПТАТИВ (Opt) 91 912: подавляюще 3-е лицо ед. ч. (86 918 = 94,6 % / ед. ч. 92,8 %) — безличное ПРЕДПИСАНИЕ/потенциалис (kuryāt «следует делать», syāt «было бы»), регистр шастрического правила. Функциональное расхождение (команда vs общее предписание/возможность) измерено в нативном профиле feat_mood+feat_person, не навязано — SE-угол: семантика из морфологии без C6-синтаксиса. Топ-леммы: императив as/kṛ/śru (śṛṇu)/bhū/gam; оптатив as (syāt 9505)/bhū/kṛ (kuryāt)/dā/pā/pac. Прочие наклонения (Jus 5258, Sub 4325, Prec 577 = SG-MO-020, Cond 340) — отдельные слоты. Образование: императив -Ø/-hi/-tu/-ta; оптатив -yā-/-e- + вторичные окончания. Уитни §§563–582."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:imperative-optative:1",
+        "layer": "scientific",
+        "text_slp1": "kuru",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 6 (s26)" },
+        "translations": { "ru": "делай! (kṛ, императив 2 л. ед. ч.)" },
+        "gloss_ru": "ИМПЕРАТИВ 2 л. ед. ч.: kṛ «делать» → kuru «делай!». Прямая команда адресату — ядро императивной функции (2-е лицо = 67,5 % императивов). Окончание -u (нулевое личное) на презентной основе kuru-.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_mood=Imp, feat_person=2, лемма kṛ", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperative-optative:2",
+        "layer": "scientific",
+        "text_slp1": "SfRuta",
+        "locus": { "corpus": "dcs", "work": "Agastīyaratnaparīkṣā", "ref": "AgRPar 1 (s3)" },
+        "translations": { "ru": "слушайте! (śru, императив 2 л. мн. ч.)" },
+        "gloss_ru": "ИМПЕРАТИВ 2 л. мн. ч.: śru «слушать» → śṛṇuta «слушайте!» (окончание -ta). Глагол śru — типичная зачинная команда текста («слушайте!»); śru входит в топ-леммы императива именно из-за этой дискурсивной функции.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_mood=Imp, feat_person=2, feat_number=Plur, лемма śru", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperative-optative:3",
+        "layer": "scientific",
+        "text_slp1": "astu",
+        "locus": { "corpus": "dcs", "work": "Acintyastava", "ref": "Acintyastava 1 (s59)" },
+        "translations": { "ru": "пусть будет (as, императив 3 л. ед. ч., юссив)" },
+        "gloss_ru": "ИМПЕРАТИВ 3 л. ед. ч. (юссив): as «быть» → astu «пусть будет». Окончание -tu. 3-е лицо императива (30,7 %) — не команда адресату, а пожелание/дозволение о третьем лице: «да будет так».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_mood=Imp, feat_person=3, лемма as", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperative-optative:4",
+        "layer": "scientific",
+        "text_slp1": "syAt",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s38)" },
+        "translations": { "ru": "было бы, могло бы быть (as, оптатив 3 л. ед. ч., потенциалис)" },
+        "gloss_ru": "ОПТАТИВ 3 л. ед. ч. (потенциалис): as «быть» → syāt «было бы / могло бы быть». Самая частотная форма оптатива (as, 9505); форма общего/гипотетического утверждения в философских и научных текстах («в таком случае было бы…»).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_mood=Opt, feat_person=3, feat_number=Sing, лемма as", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperative-optative:5",
+        "layer": "scientific",
+        "text_slp1": "kuryAt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 248 (s6)" },
+        "translations": { "ru": "следует делать (kṛ, оптатив 3 л. ед. ч., предписание)" },
+        "gloss_ru": "ОПТАТИВ 3 л. ед. ч. (предписание): kṛ «делать» → kuryāt «(некто) пусть делает = следует делать». Суффикс -yā- + вторичное -t. Это грамматическая форма ПРАВИЛА в шастре (дхарма, ритуал, грамматика): безличное 3 л. ед. ч. = 94,6 % оптативов — регистр предписания.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_mood=Opt, feat_person=3, feat_number=Sing, лемма kṛ", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
