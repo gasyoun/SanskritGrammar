@@ -19,6 +19,18 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **Fidelity axis + teacher-facing reuse analysis over the Bühler/Knauer/Kochergina concordance (H1211, Opus 4.8 `claude-opus-4-8`).**
+  New [`scripts/fidelity_axis.py`](scripts/fidelity_axis.py) classifies each of the 124 shared-sentence
+  clusters as identical / orthographic-only / modified (reuses the H311/H327 clustering + near-match
+  verdicts), emitting [`scripts/data/fidelity.json`](scripts/data/fidelity.json) + `.csv`. Result:
+  **84 verbatim · 31 spelling-only · 9 flagged modified** (of which ~6 are sentence-splitter
+  truncation artifacts, only ~3 genuine rewordings) — i.e. the three primers copy each other
+  essentially 1:1. Written up for teachers in
+  [`TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md`](TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md)
+  (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
+  The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
+
 ### Changed
 - **Pending MG review-sheet visa decisions applied (H1205, Sonnet 5 `claude-sonnet-5`).**
   Swept the local `review/*_decisions.json` folder: 3 sheets already applied upstream
