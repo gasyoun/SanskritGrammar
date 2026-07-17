@@ -1,0 +1,131 @@
+{
+  "study": "Sangram SG-MO-019 (Аорист: редупл. и сигматический) — 7 native aorist types",
+  "toc_ref": "SG-MO-019",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive — partition of SG-MO-018's aorist",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_tense_past": 111167
+  },
+  "aorist_types_native": {
+    "types": {
+      "root": {
+        "en": "root/simple",
+        "ru": "корневой (простой)",
+        "tokens": 5690,
+        "distinct_lemmas": 210,
+        "top_lemmas": [
+          "bhū (2344)",
+          "gā (299)",
+          "kṛ (241)",
+          "pradā (231)",
+          "gam (221)"
+        ]
+      },
+      "them": {
+        "en": "thematic / a-aorist",
+        "ru": "тематический (a-аорист)",
+        "tokens": 2781,
+        "distinct_lemmas": 175,
+        "top_lemmas": [
+          "vac (837)",
+          "gam (412)",
+          "upagam (142)",
+          "āgam (132)",
+          "śak (108)"
+        ]
+      },
+      "red": {
+        "en": "reduplicated",
+        "ru": "редуплицированный",
+        "tokens": 833,
+        "distinct_lemmas": 150,
+        "top_lemmas": [
+          "jan (151)",
+          "vṛdh (53)",
+          "vijñapay (46)",
+          "dā (45)",
+          "mad (32)"
+        ]
+      },
+      "s": {
+        "en": "s-aorist",
+        "ru": "сигматический -s-",
+        "tokens": 1508,
+        "distinct_lemmas": 216,
+        "top_lemmas": [
+          "dṛś (197)",
+          "śru (160)",
+          "kṛ (121)",
+          "yaj (54)",
+          "sṛj (47)"
+        ]
+      },
+      "is": {
+        "en": "iṣ-aorist",
+        "ru": "сигматический -iṣ-",
+        "tokens": 1077,
+        "distinct_lemmas": 170,
+        "top_lemmas": [
+          "vadh (200)",
+          "vad (144)",
+          "grah (124)",
+          "prāś (46)",
+          "jan (40)"
+        ]
+      },
+      "sis": {
+        "en": "siṣ-aorist",
+        "ru": "сигматический -siṣ-",
+        "tokens": 41,
+        "distinct_lemmas": 14,
+        "top_lemmas": [
+          "prajñā (9)",
+          "gā (8)",
+          "yā (5)",
+          "udgā (4)",
+          "jñā (4)"
+        ]
+      },
+      "sa": {
+        "en": "sa-aorist",
+        "ru": "сигматический -sa-",
+        "tokens": 124,
+        "distinct_lemmas": 37,
+        "top_lemmas": [
+          "praviś (26)",
+          "duh (23)",
+          "ruh (9)",
+          "āruh (7)",
+          "yaj (7)"
+        ]
+      }
+    },
+    "combined_tokens": 12054,
+    "sigmatic_subtotal": 2750,
+    "note": "the 7 traditional aorist formation types via feat_formation on Tense=Past VERB; combined = the SG-MO-018 aggregate 12,054 (a PARTITION, not a new count)"
+  },
+  "not_aorist_periphrastic_perfect": {
+    "peri_under_past": 4046,
+    "note": "feat_formation='peri' on Tense=Past is the PERIPHRASTIC PERFECT (SG-MO-032), NOT an aorist; excluded"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 ch. IX §§824-930 (aorist systems: root, thematic, reduplicated, sibilant)"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "lower_bound": "inherits SG-MO-018's caveat — only 12,054 of ~102k Tense=Past carry a formation tag (EM2 conflates Past); the type split covers only formation-marked aorists",
+    "native_partition": "the split itself is native (feat_formation) and exhaustive over the marked aorists — no surface guessing",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
