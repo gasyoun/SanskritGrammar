@@ -1,29 +1,29 @@
 #!/usr/bin/env python
-"""check_claims_consistency.py — guardrail against superseded corpus figures drifting
-back into the claim registers (H1140).
+"""check_claims_consistency.py — guardrail against corpus figures drifting across the
+claim registers (H1140, extended H1164).
 
-WHY THIS EXISTS. The aorist token count was refreshed from the DCS-2021 tense-code figure
-(2,452 / 0.31%) to DCS's feat_formation count (12,054 / 2.30%) across Kochergina HK-1, Apte
-APT-31 and Whitney WH-2/WH-15 (H1134/H1136/H1137). The refresh drifted once: WH-2 REUSED
-Kochergina's number and was left stale for a turn, because nothing checked that a figure one
-register borrows from another stays in sync. This script is that check.
+TWO CHECKS, both over every `*/claims.yml`:
 
-WHAT IT CHECKS. A small CANONICAL_FIGURES registry lists corpus quantities that (a) are cited in
-more than one register and (b) have a superseded old value that must not reappear as a LIVE figure.
-For each register (`*/claims.yml`), split into blocks (the header/synthesis, then one per `- id:`
-entry) and, for each canonical figure, FLAG any block that cites a superseded value WITHOUT a
-correction marker (`refreshed`, `undercounted`, `older … figure`, etc.). A documented correction
-(e.g. "refreshed from 2,452 … undercounted") is fine; a bare stale citation is a drift and fails.
+  1. SUPERSESSION (CANONICAL_FIGURES) — a value that was recomputed and replaced must not
+     reappear as a LIVE number. Seeded with the aorist: the DCS-2021 tense-code count
+     (2,452 / 0.31%) was superseded by the feat_formation count (12,054 / 2.30%); any bare
+     citation of the old value (without a correction marker) is drift.
 
-Exit code 0 = clean, 1 = drift found (so it can gate `npm run check-claims` / CI / a pre-commit).
+  2. CONSISTENCY (CONSISTENCY_FIGURES) — a figure reused across registers must be cited with
+     ONE value everywhere. If the same quantity appears with two different live values, that is
+     drift too (this is how the DCS-2021 present count 157,003 and the DCS-2026 present-finite
+     count 353,215 got flagged and reconciled). Correction/version-noted blocks are exempt.
 
-TO ADD A FIGURE: append to CANONICAL_FIGURES — the canonical (current) value, the stale patterns
-that must not appear un-marked, and the correction-marker words that make a stale mention OK.
+A block = the register's header/synthesis, or one `- id:` entry. A block carrying a correction
+marker (`refreshed`, `undercounted`, `older …`, a version tag like `DCS-2021`) is treated as
+documentation and never counts as a live citation.
 
-Usage:  python scripts/check_claims_consistency.py [--self-test]
+Exit 0 = clean, 1 = drift found. Wired into CI via tests/test_claims_consistency.py and available
+as `npm run check-claims`.
 """
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
@@ -31,30 +31,38 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
 
-# Correction-marker words: if any appears in a block, a stale citation there is documentation.
 CORRECTION_MARKERS = [
     "refresh", "undercount", "superseded", "older", "tense-code", "stale",
-    "not the", "was verify_claims", "corrected", "REFRESHED",
+    "not the", "was verify_claims", "corrected",
 ]
-
+# ---- check 1: superseded values that must not reappear as live numbers ----
 CANONICAL_FIGURES = [
     {
         "name": "aorist token count",
         "canonical": "12,054 (2.30% of finite verbal; DCS feat_formation)",
-        # stale = the DCS-2021 tense-code figure that must not reappear as a live number
         "stale_patterns": [
             r"2,452\s+aorist", r"aorist\s+2,452", r"aorist\s+tokens?\s*=\s*2,452",
             r"0\.31\s*%\s*of\s*(?:781,618\s*)?verbal", r"0,31\s*%\s*глаголь",
         ],
     },
-    # Add further cross-register figures here as they are identified, e.g. present-system tokens,
-    # class-I share — same shape: {name, canonical, stale_patterns}.
+]
+
+# ---- check 2: figures reused across registers must cite only a KNOWN value. `capture` has one
+# group = the cited number; `allowed` is the set of canonical value(s) (a figure may have two if
+# they are genuinely version-distinguished, e.g. the DCS-2021 vs DCS-2026 present count). Any
+# cited value outside `allowed` is drift (a typo, a stale figure, or an un-reconciled recompute).
+# Captures are word-boundaried and number-format-specific to avoid false hits (e.g. `\bperfect`
+# excludes the "perfect" inside "imperfect"; the present counts are 6-digit XXX,XXX so a 5-digit
+# XX,XXX does not match). `allowed` values are comma-stripped, matching _norm().
+CONSISTENCY_FIGURES = [
+    {"name": "perfect tokens",     "capture": r"\bperfect\s+(\d{2,3},\d{3})\b",                 "allowed": {"61986"}},
+    {"name": "imperfect tokens",   "capture": r"\bimperfect[ ~]*(\d{2,3},\d{3})\b",             "allowed": {"47554"}},
+    {"name": "present tokens",     "capture": r"\bpresent[a-zé\- ]{0,18}?(\d{3},\d{3})\b",       "allowed": {"157003", "353215"}},
+    {"name": "verbal denominator", "capture": r"(\d{3},\d{3})\s*verbal\s*(?:token|словоуп)",     "allowed": {"781618"}},
 ]
 
 
 def blocks(text):
-    """Yield (block_id, block_text). The preamble (header+work+synthesis, before the first
-    '  - id:') is one block; each entry is its own block."""
     parts = re.split(r"(?m)^  - id:\s*(\S+)\s*$", text)
     yield ("<header/synthesis>", parts[0])
     for i in range(1, len(parts), 2):
@@ -67,41 +75,67 @@ def has_marker(block):
 
 
 def scan_file(path):
+    """Check-1 (supersession) violations in one file."""
     text = path.read_text(encoding="utf-8")
     violations = []
     for bid, block in blocks(text):
-        marked = has_marker(block)
+        if has_marker(block):
+            continue
         for fig in CANONICAL_FIGURES:
-            for pat in fig["stale_patterns"]:
-                if re.search(pat, block) and not marked:
-                    violations.append((path.name, bid, fig["name"], pat))
-                    break
+            if any(re.search(p, block) for p in fig["stale_patterns"]):
+                violations.append((path.name, bid, fig["name"]))
+                break
     return violations
 
 
+def _norm(v):
+    return v.replace(",", "").replace("~", "").strip()
+
+
 def check_all():
-    all_v = []
+    """Check-1 supersession violations across all registers (kept stable for the test API)."""
     files = sorted(ROOT.glob("*/claims.yml"))
+    v = []
     for f in files:
-        all_v.extend((f.parent.name, *v[1:]) for v in scan_file(f))
-    return files, all_v
+        v.extend((f.parent.name, *rest[1:]) for rest in scan_file(f))
+    return files, v
+
+
+def consistency_violations(files):
+    """Check-2: any figure cited with a value outside its `allowed` set (drift/typo/stale)."""
+    out = []
+    for f in files:
+        book = f.parent.name
+        for bid, block in blocks(f.read_text(encoding="utf-8")):
+            for fig in CONSISTENCY_FIGURES:
+                for m in re.finditer(fig["capture"], block):
+                    val = _norm(m.group(1))
+                    if val not in fig["allowed"]:
+                        out.append((fig["name"], book, bid, m.group(1), sorted(fig["allowed"])))
+    return out
 
 
 def self_test():
-    stale_bad = ("  - id: X-1\n    number: \"aorist 2,452 tokens = 0.31% of verbal\"\n"
-                 "    note: \"marginal\"\n")
-    stale_ok = ("  - id: X-2\n    number: \"aorist 12,054 tokens (feat_formation). REFRESHED from "
-                "2,452 / 0.31% which undercounted\"\n")
-    clean = "  - id: X-3\n    number: \"present 353,215\"\n"
     import tempfile
-    for name, body, expect_viol in [("bad", stale_bad, True), ("ok", stale_ok, False),
-                                     ("clean", clean, False)]:
-        txt = "entries:\n\n" + body
+    # supersession
+    bad = 'entries:\n\n  - id: X-1\n    number: "aorist 2,452 tokens = 0.31% of verbal"\n'
+    ok = ('entries:\n\n  - id: X-2\n    number: "aorist 12,054 (feat_formation). REFRESHED from '
+          '2,452 / 0.31% which undercounted"\n')
+    for body, expect in [(bad, True), (ok, False)]:
         with tempfile.NamedTemporaryFile("w", suffix=".yml", delete=False, encoding="utf-8") as tf:
-            tf.write(txt); p = Path(tf.name)
-        v = scan_file(p)
+            tf.write(body); p = Path(tf.name)
+        assert bool(scan_file(p)) == expect, body
         p.unlink()
-        assert bool(v) == expect_viol, (name, v)
+    # consistency: a perfect value outside the allowed set -> flagged
+    d = Path(tempfile.mkdtemp())
+    (d / "A").mkdir(); (d / "B").mkdir()
+    (d / "A" / "claims.yml").write_text('entries:\n\n  - id: A\n    n: "perfect 61,986"\n', encoding="utf-8")
+    (d / "B" / "claims.yml").write_text('entries:\n\n  - id: B\n    n: "perfect 99,999"\n', encoding="utf-8")
+    assert consistency_violations(sorted(d.glob("*/claims.yml"))), "out-of-set value not caught"
+    # both allowed present values (version-distinguished) -> NOT flagged
+    (d / "A" / "claims.yml").write_text('entries:\n\n  - id: A\n    n: "present 157,003"\n', encoding="utf-8")
+    (d / "B" / "claims.yml").write_text('entries:\n\n  - id: B\n    n: "present-system 353,215"\n', encoding="utf-8")
+    assert not consistency_violations(sorted(d.glob("*/claims.yml"))), "allowed version pair wrongly flagged"
     return True
 
 
@@ -110,16 +144,23 @@ def main():
         print("self-test:", "PASS" if self_test() else "FAIL")
         return
     assert self_test(), "self-test failed"
-    files, violations = check_all()
-    print(f"checked {len(files)} claim registers for {len(CANONICAL_FIGURES)} canonical figure(s)")
-    if not violations:
-        print("OK — no superseded figure cited as a live number. Registers consistent.")
+    files, stale = check_all()
+    cons = consistency_violations(files)
+    print(f"checked {len(files)} registers · {len(CANONICAL_FIGURES)} supersession + "
+          f"{len(CONSISTENCY_FIGURES)} consistency figure(s)")
+    if not stale and not cons:
+        print("OK — no superseded figure cited live, and every shared figure has one value.")
         sys.exit(0)
-    print(f"\nDRIFT: {len(violations)} superseded-figure citation(s) without a correction marker:")
-    for book, bid, name, pat in violations:
-        print(f"  ✗ {book}  [{bid}]  '{name}'  matched /{pat}/")
-    print("\nFix: refresh the figure to the canonical value, OR add a correction marker "
-          "(refreshed/undercounted/older …) if the mention is documenting the supersession.")
+    if stale:
+        print(f"\nSUPERSESSION drift ({len(stale)}):")
+        for book, bid, name in stale:
+            print(f"  ✗ {book} [{bid}] cites superseded '{name}'")
+    if cons:
+        print(f"\nCONSISTENCY drift ({len(cons)} out-of-set citation(s)):")
+        for name, book, bid, val, allowed in cons:
+            print(f"  ✗ {book} [{bid}] cites '{name}' = {val}, not in allowed {allowed}")
+    print("\nFix: refresh to a canonical value, OR (supersession) add a correction marker "
+          "if the mention documents the supersession.")
     sys.exit(1)
 
 

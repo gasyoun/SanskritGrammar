@@ -17,14 +17,22 @@ def test_self_test():
     assert cc.self_test() is True
 
 
-def test_no_drift_in_registers():
+def test_no_supersession_drift_in_registers():
     files, violations = cc.check_all()
     assert files, "no */claims.yml registers found — the check would be a silent no-op"
     assert not violations, (
         "superseded corpus figure(s) cited as a live number without a correction marker:\n"
-        + "\n".join(f"  {book} [{bid}] {name} /{pat}/" for book, bid, name, pat in violations)
-        + "\n\nRefresh to the canonical value, or add a correction marker "
-          "(refreshed/undercounted/older …) if documenting the supersession."
+        + "\n".join(f"  {book} [{bid}] {name}" for book, bid, name in violations)
+    )
+
+
+def test_no_consistency_drift_in_registers():
+    files, _ = cc.check_all()
+    v = cc.consistency_violations(files)
+    assert not v, (
+        "shared corpus figure(s) cited with a value outside the allowed set:\n"
+        + "\n".join(f"  {book} [{bid}] {name} = {val}, allowed {allowed}"
+                    for name, book, bid, val, allowed in v)
     )
 
 
