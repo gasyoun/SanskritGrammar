@@ -11,6 +11,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+
+## [0.3.0] - 2026-07-17
 ### Added
 - **Join provenance on every `whitney_talmud.json` record — `talmud_root` · `talmud_ref` · `talmud_match` (H1065).** Consumers could see *that* a Ряд/Тип/seṭ was `manual` but not **which** Приложение-1 entry it came from or how it was bound, so a downstream feed that wanted the audit trail had to re-join the catalog itself. [WhitneyRoots `alternation_type.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/alternation_type.csv) did exactly that and its independent join **smeared 16 authorial values across homonyms the author never catalogued** — his «2 iṣ» bound onto BOTH `iṣ¹` and `iṣ²`, his single «1 śṛ» onto `śṛ¹`/`śṛ²`/`śṛ³` — each row still claiming `grade_confidence=authorial`. Emitting the binding makes the canonical join auditable in place, so downstream **reads** it instead of repeating it. Additive fields only; `widget_roots.json` regenerates with no diff; `npm run build` green. (Opus 4.8 `claude-opus-4-8`)
 ### Fixed
