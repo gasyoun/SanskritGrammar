@@ -1,0 +1,150 @@
+{
+  "study": "SG-MO-027 «Пассив» — passive secondary conjugation (core W2 ①, content)",
+  "toc_ref": "SG-MO-027",
+  "kind": "content article (no kill-gate)",
+  "method": "finite verbs with Voice=Pass — natively tagged (like the imperfect); distribution over person/tense; the -ya- stem overlaps class-IV present (EM1), separated by the voice tag not the stem",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "finite_total": 523721,
+    "finite_passive": 29699,
+    "finite_passive_share": 0.0567,
+    "participial_passive": 7002
+  },
+  "person": {
+    "3": {
+      "tokens": 29131,
+      "share": 0.9809
+    },
+    "2": {
+      "tokens": 422,
+      "share": 0.0142
+    },
+    "1": {
+      "tokens": 146,
+      "share": 0.0049
+    }
+  },
+  "number": {
+    "Sing": {
+      "tokens": 25493,
+      "share": 0.8584
+    },
+    "Plur": {
+      "tokens": 3961,
+      "share": 0.1334
+    },
+    "Dual": {
+      "tokens": 245,
+      "share": 0.0082
+    }
+  },
+  "tense": {
+    "Pres": {
+      "tokens": 27497,
+      "share": 0.9259
+    },
+    "Impf": {
+      "tokens": 1443,
+      "share": 0.0486
+    },
+    "Past": {
+      "tokens": 759,
+      "share": 0.0256
+    }
+  },
+  "third_person_share_ci95": {
+    "k": 29131,
+    "n": 29699,
+    "ci95": [
+      0.9793,
+      0.9824
+    ]
+  },
+  "present_share_ci95": {
+    "k": 27497,
+    "n": 29699,
+    "ci95": [
+      0.9228,
+      0.9288
+    ]
+  },
+  "top_lemmas": [
+    {
+      "lemma": "vac",
+      "tokens": 3129
+    },
+    {
+      "lemma": "dṛś",
+      "tokens": 1347
+    },
+    {
+      "lemma": "kṛ",
+      "tokens": 1260
+    },
+    {
+      "lemma": "vid",
+      "tokens": 1195
+    },
+    {
+      "lemma": "śru",
+      "tokens": 709
+    },
+    {
+      "lemma": "muc",
+      "tokens": 610
+    },
+    {
+      "lemma": "vidhā",
+      "tokens": 516
+    },
+    {
+      "lemma": "kathay",
+      "tokens": 513
+    },
+    {
+      "lemma": "mṛ",
+      "tokens": 507
+    },
+    {
+      "lemma": "yuj",
+      "tokens": 403
+    },
+    {
+      "lemma": "grah",
+      "tokens": 393
+    },
+    {
+      "lemma": "iṣ",
+      "tokens": 379
+    },
+    {
+      "lemma": "dā",
+      "tokens": 376
+    },
+    {
+      "lemma": "antardhā",
+      "tokens": 373
+    },
+    {
+      "lemma": "vijñā",
+      "tokens": 312
+    }
+  ],
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "EM1_ya_overlap": "the passive -ya- stem is formally identical to the class-IV (divādi) present -ya- (paśyati vs dṛśyate); DCS separates them by Voice=Pass, not the stem shape (P2's class problem)",
+    "middle_vs_passive": "the passive uses middle (Ātmanepada) endings; DCS tags Voice=Pass explicitly, but morphologically passive ≈ middle in form outside the -ya- stem",
+    "participial": "passive participles (VerbForm=Part, Voice=Pass) are counted separately from the finite passive",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
