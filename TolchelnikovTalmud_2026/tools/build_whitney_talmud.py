@@ -346,6 +346,15 @@ def build():
         rec["set_code"] = row["set_code"]
         rec["set_source"] = "manual" if row["set"] else None
         rec["pada"] = row["pada"]
+        # WHICH catalog entry this came from, and how it was bound. Consumers must be
+        # able to audit the join without re-deriving it: WhitneyRoots' alternation_type
+        # feed re-joined talmud_appendix1 against roots.csv on its own and smeared 16
+        # authorial values across homonyms the author never catalogued (his «2 iṣ» onto
+        # BOTH iṣ¹ and iṣ², his «1 śṛ» onto śṛ¹/śṛ²/śṛ³). One canonical join, audit trail
+        # attached, so downstream reads rather than repeats it.
+        rec["talmud_root"] = row["root"]
+        rec["talmud_ref"] = row["whitney_ref"]
+        rec["talmud_match"] = meth
         # reconciliation vs the retired derived values
         d_r, d_s = derived_ryad.get(wno), derived_set.get(wno)
         if row["ryad"] and d_r:
