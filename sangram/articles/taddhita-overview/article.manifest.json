@@ -15,7 +15,7 @@
     },
     "examples": [
       {
-        "id": "ex:taddhita:1",
+        "id": "ex:taddhita-overview:1",
         "layer": "scientific",
         "text_slp1": "devatA",
         "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 1 (s82)" },
@@ -25,7 +25,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:2",
+        "id": "ex:taddhita-overview:2",
         "layer": "scientific",
         "text_slp1": "pakziRo",
         "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 19 (s17)" },
@@ -35,7 +35,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:3",
+        "id": "ex:taddhita-overview:3",
         "layer": "scientific",
         "text_slp1": "guRavat",
         "locus": { "corpus": "dcs", "work": "Arthaśāstra", "ref": "ArthaŚ 1.17 (s50)" },
@@ -45,7 +45,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:4",
+        "id": "ex:taddhita-overview:4",
         "layer": "scientific",
         "text_slp1": "kAryARi",
         "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s237)" },
@@ -55,7 +55,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:5",
+        "id": "ex:taddhita-overview:5",
         "layer": "scientific",
         "text_slp1": "sUryo",
         "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s9)" },
@@ -65,7 +65,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:6",
+        "id": "ex:taddhita-overview:6",
         "layer": "scientific",
         "text_slp1": "amftatvAya",
         "locus": { "corpus": "dcs", "work": "Hiraṇyakeśigṛhyasūtra", "ref": "HirGS 2.12 (s1)" },
@@ -75,7 +75,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:7",
+        "id": "ex:taddhita-overview:7",
         "layer": "scientific",
         "text_slp1": "vfdDatA",
         "locus": { "corpus": "dcs", "work": "Bṛhatkathāślokasaṃgraha", "ref": "BKŚS 22 (s114)" },
@@ -85,7 +85,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:8",
+        "id": "ex:taddhita-overview:8",
         "layer": "scientific",
         "text_slp1": "tejomayaH",
         "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 2.5 (s9)" },
@@ -95,7 +95,7 @@
         "as_of": "2026-07-17"
       },
       {
-        "id": "ex:taddhita:9",
+        "id": "ex:taddhita-overview:9",
         "layer": "scientific",
         "text_slp1": "mfgavat",
         "locus": { "corpus": "dcs", "work": "Pañcārthabhāṣya", "ref": "PABh 5.19 (s4)" },
