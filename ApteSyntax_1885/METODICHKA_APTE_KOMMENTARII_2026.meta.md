@@ -1,0 +1,60 @@
+# Metadoc — METODICHKA_APTE_KOMMENTARII_2026.md
+
+_Created: 17-07-2026 · Last updated: 17-07-2026_
+
+Companion record for the Apte print methodichka commentary manuscript
+([`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md)).
+
+## Purpose
+A print-first commentary companion to Apte's *Student's Guide to Sanskrit Composition* (1885,
+Likhushina Russian tr.), turning the 39-claim verification register into per-lesson pedagogical
+notes — where Apte overreaches, what the corpus/Whitney show, and what the learner should
+actually expect. Consumes the register (`claims.yml`/`claims.json`) rather than re-deriving it,
+exactly as the Kochergina methodichka consumes its register.
+
+## Audience
+MG (author of record) + any future session extending the methodichka (exercises/cross-refs v2).
+Russian self-study and taught learners already using Apte.
+
+## Provenance
+- Authored 17-07-2026 by Opus 4.8 (`claude-opus-4-8[1m]`) via [H1090](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1090-Opus_SanskritGrammar_apte-methodichka-commentary_17.07.26.md).
+- Built directly on the completed Apte register (H1055→H1087) and its reading-site overlay (H1089).
+- Every number cited by claim id; no figure invented in prose (the hybrid source-of-truth model
+  from the Kochergina methodichka Decision A).
+
+## Structure & thesis
+Раздел I only (commentary/accuracy), v1. Organised by lesson, note format
+**У Апте / Что показывают корпус и Уитни / Учащемуся** (the Kochergina раздел-I template). The
+manuscript's pedagogical thesis: **Apte is reliable on MEANING (particle lexicon), overreaches on
+DISTRIBUTION, GOVERNMENT and ASPECT** — which maps onto the three-instrument split of the drain.
+Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a strengths appendix.
+
+## Ranked improvement backlog
+1. **Exercise appendix (раздел II)** — corpus-sourced readings + authored graded drills per
+   covered lesson, matched to the flagged rules (e.g. a case-government drill for the motion-verb
+   goal cases). Deferred to v2, mirrors the Kochergina exercise section.
+2. **Cross-references (раздел III)** — «см. также» pointers to Whitney §§, the other Russian
+   grammars (Kochergina/Bühler/Zaliznyak) where the same rule is treated, and the Talmud. Deferred.
+3. **Reading-site overlay of the methodichka notes** — the commentary could feed the existing
+   `<ApteClaims/>` overlay as a per-claim "методичка" annotation, so print and web never diverge.
+4. **MG viza** — the commentary verdicts and learner-advice lines are human-visaed before print
+   (a `/review-sheet` pass like the Kochergina methodichka v1), currently undone.
+
+## Limitations
+- v1 is commentary only — no exercises, no cross-references yet.
+- The government-claim numbers rest on the windowed-cooccurrence proxy (a collocation
+  approximation, not dependency government); this is disclosed per-claim in the register.
+- Rights: the 1885 English is public domain, but the manuscript quotes the Likhushina translation
+  minimally; a DOI/print release needs `/publish-safety-check` first.
+
+## Related docs
+- [`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md) — the template this follows.
+- [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) / [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) — the register consumed.
+- [`src/components/ApteClaims.jsx`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/ApteClaims.jsx) / [`CLAIMS_OVERLAY.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_OVERLAY.mdx) — the reading-site overlay (H1089).
+
+## Revision history
+| Date | Model | Change |
+|---|---|---|
+| 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Created v1 раздел I (commentary) + this metadoc (H1090). All 10 flagged claims covered + strengths appendix. |
+
+_Dr. Mārcis Gasūns_
