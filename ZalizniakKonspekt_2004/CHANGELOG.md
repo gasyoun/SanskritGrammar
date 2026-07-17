@@ -9,6 +9,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.2.1] - 2026-07-17
+### Changed
+- **Aorist figure refreshed in KZ-3 (H1140).** 2,452 / 0.31% -> 12,054 / 2.30% (feat_formation);
+  verdict unchanged. Found by the cross-register consistency check.
+
 ## [0.2.0] - 2026-07-15
 ### Added
 - **Backlog FULLY DRAINED — 17 verified, all TRUE — by BUILDING the missing instrument (H797)** — all 15 backlog candidates promoted ([`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml) KZ-3..KZ-17): **17 TRUE · 0 OVERSTATED · 0 FALSE · 0 UNTESTABLE**; [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims_harvest.yml) is `candidates: []`. The five Rigveda exact fractions were unblocked by a NEW period-isolation instrument — [`rigveda_kz_fractions.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/rigveda_kz_fractions.py) over the pinned VisualDCS SQLite master (dcs-conllu `04e0778`, the H953 pilot's snapshot) → [`rigveda_kz_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/rigveda_kz_stats.json) — and measured **astonishingly exact**: 1/3 claimed vs 33.2% measured (-āsas, to 0.1pp), 7/8 vs 84.9%, 3/5 vs 65.6%, 1/2 vs 42.3%, 5/6 vs 76.9% — hand-era Vedic-philology fractions reproduced by a 2026 treebank. The same instrument flipped KZ-11 (injunctive 7.3% of RV finite verbs vs 0.5% MBh, ≈15×; optative reversed) and KZ-12 (ta-participle predication 1.7% of RV verbal roots vs 11.8-18.4% epic samples — the first measured point on the Ocherk-§207 style-I/style-II arc) from UNTESTABLE to measured TRUE. Zaliznyak across both books: 91 verified, zero fact-axis flags. Cross-book verdict pairs KZ-5=OCH-43, KZ-2=OCH-42, KZ-6=OCH-64; the Whitney-adjudicated diachrony precedent (KZ-7, §§1246-1247). (Fable 5 `claude-fable-5`)

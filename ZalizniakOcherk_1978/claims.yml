@@ -644,7 +644,7 @@ entries:
     falsifiable_as: "do the three past tenses level semantically in the later language"
     sources: [whitney, dcs]
     verdict_fact: TRUE
-    number: "systemic: Whitney describes the classical preterits as interchangeable narrative pasts; corpus context: imperfect ~47,554 · perfect 61,986 · aorist 2,452 tokens — semantic levelling with wildly unequal frequencies"
+    number: "systemic: Whitney describes the classical preterits as interchangeable narrative pasts; corpus context: imperfect ~47,554 · perfect 61,986 · aorist 12,054 tokens (feat_formation; REFRESHED 17-07-2026 from the older 2,452 tense-code count, which undercounted root+thematic aorists, H1134/H1136) — semantic levelling with still-unequal frequencies (the aorist the rarest of the three)"
     ref: "Whitney §§823, 826-828, 928; DCS timws.csv"
     verdict_pedagogy: JUSTIFIED
     note: >-

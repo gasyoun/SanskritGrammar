@@ -113,7 +113,7 @@ entries:
     falsifiable_as: "the tense/mood inventory is exactly 10, each with 3 numbers x 3 persons"
     sources: [whitney, dcs]
     verdict_fact: TRUE
-    number: "systemic: the traditional 10-fold inventory (pres, impf, impv, opt, perf, periphr. fut, simple fut, cond, prec, aor) x 3 numbers x 3 persons; DCS tokens are wildly skewed — present 157,003 (20.1% of verbal), optative 72,826 (9.3%), perfect 61,986, imperfect ~47,554, imperative 32,750, future 18,004 (2.3%), aorist 2,452 (0.31%), periphr. future 1,290 (0.17%), conditional 269 (0.03%), precative ~221 (0.03%)"
+    number: "systemic: the traditional 10-fold inventory (pres, impf, impv, opt, perf, periphr. fut, simple fut, cond, prec, aor) x 3 numbers x 3 persons; DCS tokens are wildly skewed — present 157,003 (20.1% of verbal), optative 72,826 (9.3%), perfect 61,986, imperfect ~47,554, imperative 32,750, future 18,004 (2.3%), aorist 12,054 (2.30% of finite verbal; feat_formation — REFRESHED 17-07-2026 from the older tense-code count 2,452/0.31%, which undercounted root+thematic aorists, H1134/H1136), periphr. future 1,290 (0.17%), conditional 269 (0.03%), precative ~221 (0.03%)"
     ref: "Whitney §527ff (conjugation system); DCS timws.csv via verify_claims_dcs.py"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
@@ -441,7 +441,7 @@ entries:
     falsifiable_as: "the imperfect functions as the narrative past"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "DCS-2021 past-tense competition: imperfect ~47,554 tokens · perfect 61,986 · aorist 2,452 — the imperfect is A narrative past, alongside the (aggregate-corpus more frequent) perfect"
+    number: "DCS-2021 past-tense competition: imperfect ~47,554 tokens · perfect 61,986 · aorist 12,054 (feat_formation; REFRESHED 17-07-2026 from the older 2,452 tense-code count, which undercounted root+thematic aorists, H1134/H1136) — the imperfect is A narrative past, alongside the (aggregate-corpus more frequent) perfect; the aorist remains the rarest of the three"
     ref: "Whitney §779; DCS timws.csv via verify_claims_dcs.py (HK15_past_tenses)"
     verdict_pedagogy: JUSTIFIED
     note: >-
@@ -1186,7 +1186,7 @@ entries:
     falsifiable_as: "aorists are rare in classical usage and semantically equivalent to the other pasts"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "DCS-2021: all aorist codes = 2,452 tokens = 0.31% of verbal — vs perfect 61,986 and imperfect ~47,554; 'редких' confirmed at 1:25 against either competitor"
+    number: "DCS-2021: all aorist formations = 12,054 tokens = 2.30% of finite verbal (feat_formation; REFRESHED 17-07-2026 from the older 2,452 / 0.31% tense-code count, which undercounted root+thematic aorists, H1134/H1136) — vs perfect 61,986 and imperfect ~47,554; 'редких' still confirmed: the aorist is the rarest of the three past tenses (~1:4 vs the imperfect, ~1:5 vs the perfect — was ~1:25 under the undercount)"
     ref: "Whitney §§824-826, 928; DCS via verify_claims_dcs.py (HK1_aorist, HK15_past_tenses)"
     verdict_pedagogy: JUSTIFIED
     note: >-

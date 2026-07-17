@@ -35,7 +35,7 @@
       "claim_ru": "Личные формы индикатива аориста... Основные типы аориста (прочие крайне редки): [пять типов]",
       "kind": "statistic",
       "verdict_fact": "TRUE",
-      "number": "systemic: the formations outside his five types are the sa-aorist (a closed class restricted to ś/ṣ/h-final roots with i/u/ṛ nuclei) and the siṣ-aorist (parasmaipada-only, a handful of ā-final roots + yam/ram/nam) — both marginal by class size; corpus context: ALL aorist types together are 2,452 tokens = 0.31% of verbal",
+      "number": "systemic: the formations outside his five types are the sa-aorist (a closed class restricted to ś/ṣ/h-final roots with i/u/ṛ nuclei) and the siṣ-aorist (parasmaipada-only, a handful of ā-final roots + yam/ram/nam) — both marginal by class size; corpus context: ALL aorist types together are 12,054 tokens = 2.30% of finite verbal (feat_formation; REFRESHED 17-07-2026 from the older 2,452 / 0.31% tense-code count, which undercounted root+thematic aorists, H1134/H1136), and the sa- (124) and siṣ- (41) types are the two smallest of the seven",
       "ref": "Whitney §§911-914 (siṣ), 916-920 (sa); DCS timws.csv; cf. HK-1/HB-61 (aorist rarity), OCH-30; TolchelnikovTalmud_2026/data/aorist_class_census.json (H1054)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The residue outside the five main types is doubly marginal — rare formations inside an already-rare category. 'Крайне редки' is exact. TALMUD CROSS-CHECK (H1054): catalog-counted — Zaliznyak's two excluded types are exactly the two smallest classes of the Talmud's Приложение-1: siṣ 33 and sa 26 roots of 745 (aorist_class_census.py), vs 116–511 for his five main types.",
