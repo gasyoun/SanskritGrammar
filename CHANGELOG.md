@@ -20,6 +20,21 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ### Changed
+- **Pending MG review-sheet visa decisions applied (H1205, Sonnet 5 `claude-sonnet-5`).**
+  Swept the local `review/*_decisions.json` folder: 3 sheets already applied upstream
+  confirmed done (sg-mo-002-a-stems, sg-mo-017-perfect, sg-wf-004-taddhita); 5 pending
+  sheets applied — [`sangram/articles/future/`](sangram/articles/future/index.mdx)
+  (SG-MO-021, 9/9 approve) and [`sangram/articles/causative/`](sangram/articles/causative/index.mdx)
+  (SG-MO-028, 10/10 approve) flipped `candidate` → `published`, with real content fixes
+  (a mixed-script Cyrillic/Latin "vṛддхи"→"vṛddhi" typo across the causative article,
+  §5 examples expanded 5→14/7 from live DCS queries, a genuine overclaim in future §1/§7
+  corrected — aorist/perfect are only partially/not natively measurable, unlike
+  present/imperfect/future); the Apte methodichka viza applied via its prepared
+  `apply_apte_methodichka_visa.py` script (8/9 approve) plus a real cross-check against
+  the Shercl/Bühler government index MG supplied; the A65 verdict-validation sheet
+  confirmed already fully applied (H1050–H1054), with its one open @WAITING item closed
+  (Sherzl cross-check for HB-10, independently corroborating Whitney §1128); and the
+  prose style guide's own viza applied (10/10 approve). `npm run build` green throughout.
 - **Whole claim programme standardized on DCS-2026 corpus figures (H1172, Opus 4.8 `claude-opus-4-8[1m]`).** MG ruled 17-07-2026 to replace the DCS-2021 vintage numbers that had been the shared basis of the six claim registers with recomputed DCS-2026 values, so every register cites one corpus snapshot — resolving the version-pair the [H1164 consistency check](scripts/check_claims_consistency.py) had explicitly left open. New [`scripts/dcs2026_figures.py`](scripts/dcs2026_figures.py) computes the authoritative table from `dcs_full.sqlite` (denominator = **523,738** finite verbal forms): present **353,215** · imperfect **46,695** · perfect **90,001** · aorist 12,054 · simple future **21,556** · optative **91,912** · imperative **56,506** · injunctive **5,258** · conditional **340** · precative **577** · pluperfect 200. **44 figure/percentage refreshes** across [Apte](ApteSyntax_1885/claims.yml), [Bühler](BuhlerLeitfaden_1923/claims.yml), [Kochergina](KocherginaUchebnik_1998/claims.yml), [Whitney](WhitneyGrammar_1889/claims.yml), [Konspekt](ZalizniakKonspekt_2004/claims.yml), [Ocherk](ZalizniakOcherk_1978/claims.yml); registers regenerated. **NO verdict flips:** perfect > imperfect (WH-4/HB-20/HB-57/OCH-31) holds and strengthens (90,001 > 46,695); aorist rarest of the three pasts holds (aorist:perfect ~1:7, :imperfect ~1:4); HK-116 "comparable" reworded since the perfect now exceeds the imperfect (verdict TRUE kept); HB-39 (PPP vs present) checked — DCS-2026 present-indicative 203,363 < DCS-2021 PPP 233,080, so the like-scope direction holds (the flag was a present-finite-vs-indicative scope artifact). Version-specific figures with no DCS-2026 equivalent kept + tagged: **periphrastic future 1,290** (no distinct 2026 tense tag) and the **precative-medium** (DCS-2026 gives only the whole-mood total 577; `feat_voice` does not tag pada — verified all 577 `feat_voice=None`, so the "medium/Ātmanepada" label is bounded above by 577 and flagged for author viza). The consistency check + pytest gate were updated to the DCS-2026 allowed-value sets and are green.
 
 ## [0.67.0] - 2026-07-17
