@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:imperfect",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-016",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Презентные основы: имперфект",
+        "summary": "Статья ядра W2 SG-MO-016 (домен MO, кластер «Спряжение»). Имперфект (аугмент a- + презентная основа + вторичные окончания: abhavat, akarot, abravīt) по пинованному снапшоту DCS: 46 695 токенов из 523 721 финитного. Ключевой контраст с пилотом P3: имперфект — единственный претерит, размеченный DCS ОТДЕЛЬНО (Tense=Impf) и потому восстановимый, тогда как аорист и перфект склеены под Tense=Past (предел EM2). Нарративная форма 3-го лица: 3-е 94,1 %, ед. 75,1 %, актив 96,9 %; частотнейшие корни — verba dicendi/бытия (brū abravīt, bhū, as āsīt, paś, kṛ). Несёт два предела: EM2 (сёстры-претериты склеены) и EM1 (презентный класс не в признаках, P2). Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:imperfect:1",
+        "layer": "scientific",
+        "text_slp1": "abravIt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 1 (s6)" },
+        "translations": { "ru": "сказал (brū, имперфект 3 л. ед.)" },
+        "gloss_ru": "имперфект от √brū (II): a-bravī-t (аугмент a- + основа bravī- + вторичное -t). Самый частотный корень имперфекта (5669) — «он сказал», двигатель повествования.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperfect:2",
+        "layer": "scientific",
+        "text_slp1": "aBavat",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 2 (s9)" },
+        "translations": { "ru": "стал, был (bhū, имперфект 3 л. ед.)" },
+        "gloss_ru": "имперфект от √bhū (I, тематический): a-bhava-t. Класс I даёт тематическую основу bhava-.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperfect:3",
+        "layer": "scientific",
+        "text_slp1": "AsIt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 2 (s3)" },
+        "translations": { "ru": "был (as, имперфект 3 л. ед.)" },
+        "gloss_ru": "имперфект от √as (II) «быть»: ās-ī-t — аугмент a- + as даёт вриддхи ās-. Частая связка повествования (3032).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperfect:4",
+        "layer": "scientific",
+        "text_slp1": "akarot",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 4 (s19)" },
+        "translations": { "ru": "делал, сделал (kṛ, имперфект 3 л. ед.)" },
+        "gloss_ru": "имперфект от √kṛ (VIII): a-karo-t (основа karo- класса VIII). Вид основы зависит от класса (гана) — не в признаках DCS (предел EM1).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:imperfect:5",
+        "layer": "scientific",
+        "text_slp1": "apaSyat",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 7 (s20)" },
+        "translations": { "ru": "увидел (paś, имперфект 3 л. ед.)" },
+        "gloss_ru": "имперфект от √paś «видеть»: a-paśya-t (тематическая основа paśya-). Verba perception — типичный нарративный глагол.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
