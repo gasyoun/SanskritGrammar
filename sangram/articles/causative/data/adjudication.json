@@ -1,0 +1,41 @@
+{
+  "study": "SG-MO-028 causative — hand-adjudication of the seeded class-10 (-ay) sample",
+  "adjudicator": "Opus 4.8 (claude-opus-4-8[1m])",
+  "as_of": "2026-07-17",
+  "seed": 20260717,
+  "sample_kind": "freq-weighted draw of distinct class-10 lemma types (estimates token-mass composition)",
+  "categories": {
+    "caus": "transparent verbal causative — -aya- stem derived from an attested simpler verbal root, with 'cause to X' / factitive semantics (kāray←kṛ, darśay←dṛś, janay←jan)",
+    "curadi": "primary curādi (class-X) or denominal-class-10 verb — the -aya- form is the base lexical verb, with no simpler verbal root (kathay, cintay, pūjay, bhakṣay); a FALSE POSITIVE if class-10 is read as 'causative'"
+  },
+  "verdicts": {
+    "śamay": "caus", "cintay": "curadi", "ākarṣay": "caus", "darśay": "caus",
+    "saṃlakṣay": "curadi", "sambhāvay": "caus", "vartay": "caus", "vipothay": "curadi",
+    "pūjay": "curadi", "lepay": "caus", "mocay": "caus", "pātay": "caus",
+    "varay": "caus", "vikalpay": "caus", "āvāray": "caus", "kāray": "caus",
+    "upāvartay": "caus", "visarjay": "caus", "poṣay": "caus", "yojay": "caus",
+    "anumoday": "caus", "bhakṣay": "curadi", "sampratipūjay": "curadi", "anugāpay": "caus",
+    "vardhay": "caus", "sādhay": "caus", "pūray": "caus", "dāpay": "caus",
+    "kathay": "curadi", "snāpay": "caus", "pracyāvay": "caus", "prahlāday": "caus",
+    "saṃtyājay": "caus", "dhāray": "caus", "kṣālay": "curadi", "saṃprakāśay": "caus",
+    "ājñāpay": "caus", "niveday": "caus", "abhivardhay": "caus", "khyāpay": "caus",
+    "bhojay": "caus", "niryātay": "curadi", "sāday": "caus", "ārocay": "caus",
+    "niyojay": "caus", "ghaṭay": "caus", "ramay": "caus", "paripālay": "curadi",
+    "varjay": "caus", "tarpay": "caus", "tāray": "caus", "vibhāvay": "caus",
+    "janay": "caus", "peṣay": "caus", "pothay": "curadi", "pratinivāray": "caus",
+    "vivarjay": "caus", "vācay": "caus", "samśoṣay": "caus", "mārjay": "caus"
+  },
+  "tally": {
+    "n": 60,
+    "caus": 49,
+    "curadi": 11,
+    "false_positive_rate": 0.1833,
+    "note": "false-positive rate of reading class-10 = causative; freq-weighted sample → estimates the primary-curādi share of the token mass (~18 %). Corroborated by the mechanical de-strengthening lower bound (79.7 % of bucket mass has an attested base root → ~20 % residual)."
+  },
+  "notable_false_positives": [
+    {"lemma": "kathay", "tokens": 2083, "why": "primary curādi 'narrate' (or denominal from kathā); no simpler verbal root — the single largest class-10 lemma"},
+    {"lemma": "pūjay", "tokens": 1249, "why": "primary curādi 'worship'; class-10 base verb, not a causative"},
+    {"lemma": "bhakṣay", "tokens": 941, "why": "primary curādi 'eat'; lexically class-X"},
+    {"lemma": "cintay", "tokens": 810, "why": "primary curādi 'think'; class-10 base verb"}
+  ]
+}

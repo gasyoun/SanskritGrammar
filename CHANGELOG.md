@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.56.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-028 «Вторичные спряжения: каузатив» — статья-кандидат, эндшпильный слот (H1139, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/causative/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/causative): каузатив **не размечен нативно** — в DCS **0 признаков `Caus`**. Единственная зацепка — класс-X (-ay) бакет `lemma.grammar='10.'`: **55 376 финитных токенов (10,57 % [10,49–10,66]), 2006 лемм**, в котором каузатив **слит с первичными curādi** (оба берут -aya-, оба кодируются классом 10). Профиль обычный глагольный: 85,2 % 3-е лицо, 78,4 % презенс. Две независимые меры доли собственно каузатива сходятся к **≈ 80 %**: ручная адъюдикация посеянной частотно-взвешенной выборки (60 лемм-типов → **49 каузативов, 11 первичных curādi, ≈ 18 % ложных**) и механическая нижняя оценка по расстрогованию (**79,7 %** массы бакета имеет аттестованную базу-корень; правило достаёт vṛддхи-каузативы kāray←kṛ, darśay←dṛś). Примесь первичных curādi ≈ 18–20 % (kathay 2083, pūjay 1249, bhakṣay, cintay) **не отделима** без лексической карты корней, самой лоссовой на vṛддхi/супплетиве. Граница формы-типа **EM5**; каузатив **частично восстановим**, как аорист (SG-MO-018). Скрипт [`sg_mo_028_causative.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_028_causative.py) + ручной разбор [`adjudication.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/data/adjudication.json); toc_validate + article_validate (18 манифестов) + docusaurus build green. Ядро W2: **17/19** (осталось 2: SG-WF-004 taddhita, SG-WF-009 бахуврихи — блокирован C6). Публикация гейтится авторской визой.
+
 ## [0.55.0] - 2026-07-17
 ### Added
 - **Cross-register claim-figure consistency check (H1140, Opus 4.8 `claude-opus-4-8[1m]`).** A
