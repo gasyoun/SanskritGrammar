@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:present-perfect-participles",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-022",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Причастия презенса и перфекта",
+        "summary": "Статья SG-MO-022 (домен MO, кластер «Именные формы глагола»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Причастия презенса и перфекта по пинованному снапшоту DCS, нативно размечены через feat_verbform=Part + feat_tense. ПРЕЗЕНТНОЕ причастие — чистый позитив: 64 209 токенов (18,8 % всех причастий). Залог: пассивное -yamāna нативно отделено (Voice=Pass 7002, kriyamāṇa «делаемое»); активное -ant + среднее -māna вместе 57 207 (Voice=None) — актив/медий НЕ разделены, различие невидимо (EM). Топ-леммы: as (sant), yaj (yajamāna «заказчик обряда»), kṛ (kurvant). ПЕРФЕКТНОЕ (редупл. активное) причастие -vas (vidvān «знающий/учёный», cakṛvān «сделавший») размечено, но не выделено чисто: сидит под Tense=Past, чей бакет причастий (9112) несёт и формы -ta/-na (EM2-смежно, как отсутствие тега «перфект» в SG-MO-017); поверхностный фильтр -vas даёт ~1612 (17,7 %) — нижняя оценка, во главе vid (1279). Дополняет причастия -ta/-na (SG-MO-023, Tense=None 266 660) и причастие будущего (SG-MO-021, Tense=Fut 1575). Позитив + честная оговорка. Уитни §§584–597 (презенс), §§802–806 (перфект)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:present-perfect-participles:1",
+        "layer": "scientific",
+        "text_slp1": "santO",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.3.4 (s10)" },
+        "translations": { "ru": "двое сущих (as + -ant, презенс актив, дв. ч.)" },
+        "gloss_ru": "презентное активное причастие: as «быть» + -ant → sant «сущий», здесь дв. ч. santau. Нативно Voice=None (актив/медий не разделены — EM, § 3). Самая частотная лемма презентного причастия (as, 3430).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part, Tense=Pres, лемма as", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:present-perfect-participles:2",
+        "layer": "scientific",
+        "text_slp1": "yajamAnaH",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.2" },
+        "translations": { "ru": "жертвователь (yaj + -māna, презенс медий)" },
+        "gloss_ru": "презентное СРЕДНЕЕ причастие: yaj «жертвовать» + -māna → yajamāna «жертвующий для себя» = заказчик обряда (термин). Медий формально -māna, но в DCS под Voice=None вместе с активом (EM, § 3). Вторая лемма по частоте (yaj, 2783).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part, Tense=Pres, лемма yaj", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:present-perfect-participles:3",
+        "layer": "scientific",
+        "text_slp1": "kvATyamAnam",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s85)" },
+        "translations": { "ru": "отвариваемое (kvāthay + -yamāna, презенс пассив)" },
+        "gloss_ru": "презентное ПАССИВНОЕ причастие: kvāthay «отваривать» + -ya- + -māna → «которое отваривается». Нативно Voice=Pass — единственный залог, вынесенный DCS отдельно (7002 токена, § 3). Медицинский контекст (декокт).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part, Tense=Pres, Voice=Pass", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:present-perfect-participles:4",
+        "layer": "scientific",
+        "text_slp1": "vidvAn",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 3 (s5)" },
+        "translations": { "ru": "знающий, учёный (vid + -vas, перфект актив)" },
+        "gloss_ru": "перфектное активное причастие: vid «знать» + -vas → vidvān «знающий/учёный» (сильная основа -vāṃs-, слабая viduṣ-). Эталон формы; лидер бакета Tense=Past Part (vid, 1279). Именно -vas-морфология выделяет перфект из EM2-смешанного бакета (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part, Tense=Past, лемма vid (-vas)", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:present-perfect-participles:5",
+        "layer": "scientific",
+        "text_slp1": "cakfvAn",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Paippalāda)", "ref": "AVP 1.88 (s1)" },
+        "translations": { "ru": "сделавший (kṛ + -vas, перфект актив, редуплицированный)" },
+        "gloss_ru": "перфектное активное причастие с редупликацией: kṛ «делать», перфект. основа cakṛ- + -vas → cakṛvān «сделавший». Показывает редупликацию перфекта в причастии (ведийский, Пайппалада).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Part, Tense=Past, лемма kṛ (-vas)", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}

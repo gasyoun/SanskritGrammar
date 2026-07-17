@@ -1,0 +1,70 @@
+{
+  "study": "Sangram SG-MO-022 (Причастия презенса и перфекта) — non-finite, native + honest caveat",
+  "toc_ref": "SG-MO-022",
+  "kind": "beyond-quota core ① (opening set already 19/19); positive (present) + partial/EM2 (perfect)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_participles_verbform_part": 341556
+  },
+  "present_participle_native_positive": {
+    "total": 64209,
+    "by_voice": {
+      "null": 57207,
+      "Pass": 7002
+    },
+    "voice_note": "Voice=Pass = passive present participle (-yamāna); Voice=None = active+middle (-ant/-māna) NOT natively split — the active/middle distinction is invisible (EM)",
+    "top_lemmas": [
+      "as (3430)",
+      "yaj (2783)",
+      "kṛ (1384)",
+      "sthā (787)",
+      "dṛś (773)",
+      "iṣ (691)",
+      "car (662)",
+      "brū (605)",
+      "vṛt (593)",
+      "jīv (574)"
+    ]
+  },
+  "perfect_active_participle_partial_EM2": {
+    "past_tense_part_bucket": 9112,
+    "vas_morphology_estimate": 1612,
+    "vas_pct_of_bucket": 17.7,
+    "note": "the reduplicated perfect active participle (-vas, vidvān) rides under Tense=Past, whose Part bucket also carries ta-na past forms (EM2-adjacent). The -vas surface filter is a partial/recoverable lower bound; led by vid (vidvān 'learned').",
+    "top_lemmas_in_bucket": [
+      "vid (1279)",
+      "jan (274)",
+      "dāś (223)",
+      "juṣ (204)",
+      "kṛ (190)",
+      "vac (143)",
+      "su (131)",
+      "vṛdh (124)"
+    ]
+  },
+  "cross_reference": {
+    "ta_na_ppp_tense_none": 266660,
+    "future_participle_tense_fut": 1575,
+    "note": "ta-na PPP (Tense=None) = SG-MO-023; future participle (Tense=Fut) = noted at SG-MO-021"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§584–597 (present participle), §§802–806 (perfect participle)"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "present_active_middle_not_split": "Voice=None conflates active (-ant) and middle (-māna); only passive is tagged",
+    "perfect_EM2": "perfect active participle not cleanly bucketed (Tense=Past mixes ta-na past forms); -vas count is a lower bound",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
