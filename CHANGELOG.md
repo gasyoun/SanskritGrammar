@@ -19,6 +19,18 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.55.0] - 2026-07-17
+### Added
+- **Cross-register claim-figure consistency check (H1140, Opus 4.8 `claude-opus-4-8[1m]`).** A
+  guardrail against superseded corpus figures drifting back into the claim registers, after the
+  aorist count (2,452 / 0.31% -> 12,054 / 2.30%) drifted repeatedly across registers that reuse
+  each other's numbers. New [`scripts/check_claims_consistency.py`](scripts/check_claims_consistency.py)
+  holds a canonical-figures registry and FAILs if any `*/claims.yml` cites a superseded value as a
+  live number without a correction marker; wired into CI via
+  [`tests/test_claims_consistency.py`](tests/test_claims_consistency.py) and available as
+  `npm run check-claims`. On its first run it caught **5 stale aorist citations** the manual
+  refresh had missed (Bühler HB-1/20/61, Zalizniak Ocherk OCH-31, Konspekt KZ-3), now all fixed.
+
 ## [0.54.0] - 2026-07-17
 
 ### Added

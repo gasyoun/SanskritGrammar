@@ -9,6 +9,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.9.1] - 2026-07-17
+### Changed
+- **Aorist figure refreshed in OCH-31 (H1140).** 2,452 -> 12,054 tokens (feat_formation) in the
+  past-tense-levelling context; verdict unchanged. Found by the cross-register consistency check.
+
 ## [0.9.0] - 2026-07-16
 ### Added
 - **Залоговая картина Очерка как отдельная DCS-гипотеза (H1051, Fable 5 `claude-fable-5`;

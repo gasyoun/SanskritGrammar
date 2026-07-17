@@ -8,6 +8,7 @@
     "errata": "python scripts/build_errata.py",
     "errata:print": "python scripts/build_errata_print_sheet.py",
     "claims": "python scripts/build_claims.py",
+    "check-claims": "python scripts/check_claims_consistency.py",
     "quantifiers": "python scripts/harvest_quantifiers.py && python scripts/build_quantifiers.py",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

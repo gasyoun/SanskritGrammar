@@ -9,6 +9,13 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.3.5] - 2026-07-17
+### Changed
+- **Aorist figure refreshed in HB-1/HB-20/HB-61 (H1140).** 2,452 / 0.31% -> 12,054 / 2.30%
+  (feat_formation), which the old tense-code method undercounted by omitting root+thematic aorists.
+  Verdicts unchanged (aorist stays rarest of the three past tenses; HB-61 ratio 1:25 -> ~1:4/~1:5).
+  Found by the new cross-register consistency check.
+
 ## [0.3.4] - 2026-07-16
 ### Added
 - **HB-21 (Урок XII.3б u-stem feminine -vī frequency) — MEASURED TRUE (H1044)** — new instrument [`u_stem_feminine_freq.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/u_stem_feminine_freq.py): the prior blocker ("needs lemma+gender+agreement joins the relational dump does not carry") didn't hold up — DCS lemmatizes guru/bahu to one lemma across genders, so a surface-form split of the already `feat_gender=Fem`-tagged tokens (gurv-/bahv- glide-inflected vs plain u-stem shape) needs no join at all. Testing Bühler's own two named examples: **guru — 95 -vī tokens vs 77 plain-u = 55.2%** (a real but narrow majority); **bahu — 150 -vī tokens vs 20 plain-u = 88.2%** (a strong majority). Both confirm "более употребительны" in the claimed direction, though not by an identical margin. Results: [`hb21_u_stem_feminine_freq.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/hb21_u_stem_feminine_freq.json). (Sonnet 5 `claude-sonnet-5`, [H1044](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1044-Sonnet_SanskritGrammar_u-stem-feminine-freq-hb21_16.07.26.md))
