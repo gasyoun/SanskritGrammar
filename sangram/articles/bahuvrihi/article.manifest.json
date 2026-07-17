@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:bahuvrihi",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-WF-009",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Посессивные композиты (bahuvrīhi): обзор",
+        "summary": "Обзорная статья SG-WF-009 (домен WF, кластер «Композиты»), ПОСЛЕДНИЙ (19-й) слот ядра W2 — с ним ядро закрыто 19/19. Посессивные (экзоцентрические) композиты bahuvrīhi по пинованному снапшоту DCS — единственный тип композита, не восстановимый из корпуса. bahuvrīhi экзоцентричен: референт лежит ВНЕ композита (bahu-vrīhi «много-рис» = «тот, у кого много риса»), поэтому тип не определяется из внутренней структуры, в отличие от tatpuruṣa/dvandva с внутренней вершиной. Одна цепочка членов может быть tatpuruṣa или bahuvrīhi по внешнему референту (mahā-bāhu «большая рука» / «долгорукий»). Решение требует внешней семантики/синтаксиса — программа C6, ещё не построена; тип композита в DCS размечен нулём признаков (EM4). Ценза нет и быть не может. Что показано — не ценз, а образцы из ВЫБОРКИ пилота P4 (SG-WF-008): слепая двойная разметка 120 композитов по кодбуку Лейтана (coarse κ=0,93) несла и метки bahuvrīhi — 36 меток из 240, 17 композитов где оба прохода согласны. Диагностика едина: виграха каждого образца кончается внешним относительным (yasya saḥ / yeṣāṃ te) — формальный след экзоцентричности. Доля ~15 % — артефакт выборки, НЕ частота корпуса. Публикует предел, как честно-отрицательные пилоты. Обзор, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:bahuvrihi:1",
+        "layer": "scientific",
+        "text_slp1": "AttacApa",
+        "locus": { "corpus": "dcs", "work": "Bhāgavatapurāṇa", "ref": "BhāgPur 4.16 (s20)" },
+        "translations": { "ru": "вооружённый луком (ātta-cāpa, bahuvrīhi)" },
+        "gloss_ru": "образец bahuvrīhi (оба прохода P4 согласны): виграха «ātta-cāpo yena saḥ» — «тот, кем взят лук». Внешний относительный yena saḥ выносит референт (воина) за композит — след экзоцентричности (§ 4). Тип не читается из членов ātta+cāpa — нужен внешний референт (C6).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; композит по разметке P4 (Лейтан), оба прохода bahuvrīhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:bahuvrihi:2",
+        "layer": "scientific",
+        "text_slp1": "caturBujA",
+        "locus": { "corpus": "dcs", "work": "Garuḍapurāṇa", "ref": "GarPur 1.41 (s2)" },
+        "translations": { "ru": "четырёхрукая (catur-bhujā, bahuvrīhi; эпитет божества)" },
+        "gloss_ru": "образец bahuvrīhi: виграха «catvāraḥ bhujā yasyāḥ sā» — «та, у которой четыре руки». Числовой посессив (samānādhikaraṇa); классический эпитет божества. Внутри — «четыре руки», но композит обозначает обладателя, а не руки (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; композит по разметке P4 (Лейтан), оба прохода bahuvrīhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:bahuvrihi:3",
+        "layer": "scientific",
+        "text_slp1": "kzatadeha",
+        "locus": { "corpus": "dcs", "work": "Kathāsaritsāgara", "ref": "KSS 1.7 (s96)" },
+        "translations": { "ru": "с израненным телом (kṣata-deha, bahuvrīhi)" },
+        "gloss_ru": "образец bahuvrīhi: виграха «kṣato deho yasya saḥ» — «тот, чьё тело изранено». Описательный посессив; та же цепочка kṣata+deha как tatpuruṣa значила бы «изранённое тело» (вещь), а как bahuvrīhi — её обладателя (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; композит по разметке P4 (Лейтан), оба прохода bahuvrīhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:bahuvrihi:4",
+        "layer": "scientific",
+        "text_slp1": "priyayaSas",
+        "locus": { "corpus": "dcs", "work": "Saundarānanda", "ref": "SaundĀ 8 (s57)" },
+        "translations": { "ru": "тот, кому дорога слава (priya-yaśas, bahuvrīhi)" },
+        "gloss_ru": "образец bahuvrīhi: виграха «priyaṃ yaśo yasya saḥ» — «тот, чья слава ему дорога». Внешний yasya saḥ; референт (человек, дорожащий славой) — за композитом.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; композит по разметке P4 (Лейтан), оба прохода bahuvrīhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:bahuvrihi:5",
+        "layer": "scientific",
+        "text_slp1": "hutaBAga",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Śaunaka)", "ref": "AVŚ 18.4 (s21)" },
+        "translations": { "ru": "те, чья доля — возлияние = боги (huta-bhāga, bahuvrīhi; ведийск.)" },
+        "gloss_ru": "образец bahuvrīhi (ведийский): виграха «hutaṃ bhāgo yeṣāṃ te» — «те, чья доля — возлияние». Множественный внешний относительный yeṣāṃ te; означает богов, а не долю. Показывает древность типа (Атхарваведа).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; композит по разметке P4 (Лейтан), оба прохода bahuvrīhi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
