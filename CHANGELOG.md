@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.54.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — обзорная статья SG-WF-002 «Первичная деривация (kṛt): обзор» — статья-кандидат (H1135, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/krt-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/krt-overview): обзор первичной деривации. Количественная опора — нативно размеченная половина kṛt: отглагольные формы `VerbForm∈{Part,Conv,Gdv,Inf}` = **483 623 токена (8,5 % корпуса)**, чистое замкнутое множество (0 утечки на не-VERB): причастие 341 556 (70,6 %), абсолютив 102 054 (21,1 %), герундив 28 260 (5,8 %), инфинитив 11 753 (2,4 %). kṛt-ИМЕНА (kartṛ, dāna) корпусом НЕ размечены (EM5): поверхностный отбор шумен (~59 % ложных, P5) — не считаются. Scoping — параллельный воркфлоу-скаут эндшпиля ядра (4 слота). Скрипт [`sg_wf_002_krt_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_002_krt_overview.py); 3 валидатора + CI build green. Ядро W2: 16/19. Публикация гейтится авторской визой.
+
 ## [0.53.0] - 2026-07-17
 
 ### Added
