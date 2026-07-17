@@ -9,6 +9,19 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-07-17
+### Added
+- **Print methodichka — раздел I commentary (H1090, Opus 4.8 `claude-opus-4-8[1m]`).** A
+  print-first companion consuming the 39-claim register, mirroring the Kochergina methodichka:
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md) (+ sibling
+  `.meta.md`). Per-lesson notes in the **У Апте / Что показывают корпус и Уитни / Учащемуся**
+  format over all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE), plus a strengths
+  appendix. Pedagogical thesis: Apte is reliable on *meaning* (particle lexicon), overreaches on
+  *distribution* (APT-5/23, APT-12), *government* (APT-18/19/21), and *aspect* (APT-31, the one
+  FALSE) — mapping onto the drain's three-instrument split. Every figure cited by claim id, no
+  number invented in prose. Exercises (раздел II) and cross-references (раздел III) deferred to
+  v2; MG viza pending before print.
+
 ## [0.7.0] - 2026-07-17
 ### Added
 - **Particle-sense Whitney pass (H1087, Opus 4.8 `claude-opus-4-8[1m]`).** Closed the reference-
