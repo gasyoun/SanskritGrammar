@@ -1,0 +1,65 @@
+{
+  "study": "Sangram SG-MO-025 (Инфинитив) — native positive; diachronic -tum reduction",
+  "toc_ref": "SG-MO-025",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive (VerbForm=Inf)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_nonfinite_deverbal_part_conv_gdv_inf": 483623
+  },
+  "infinitive_native_positive": {
+    "total_verbform_inf": 11753,
+    "suffix_split_by_surface": {
+      "-tum (acc., classical)": 9681,
+      "other": 1501,
+      "-toḥ (gen./abl., Ved.)": 154,
+      "-dhyai (Ved.)": 97,
+      "-tave/-tavai (dat., Ved.)": 320
+    },
+    "vedic_remnant_total": 571,
+    "vedic_remnant_pct": 4.9,
+    "diachronic_note": "classical Sanskrit reduced the infinitive to the accusative -tum alone; the corpus preserves the Vedic plethora (frozen case-forms of a verbal noun): -tave/-tavai (dat.), -toḥ (gen./abl.), -dhyai. The -tum share (~82%) vs Vedic remnant (~5%) shows the reduction.",
+    "top_lemmas": [
+      "kṛ (906)",
+      "dṛś (628)",
+      "vac (613)",
+      "śru (522)",
+      "gam (360)",
+      "han (338)",
+      "dā (276)",
+      "jīv (245)",
+      "ji (178)",
+      "pā (158)"
+    ],
+    "not_split_natively": {
+      "feat_case": {
+        "null": 11753
+      }
+    },
+    "case_note": "feat_case=None; the frozen case-nature of the Vedic infinitives is the traditional analysis (Whitney §§968-988), recovered by surface morphology, not a DCS annotation"
+  },
+  "cross_reference": {
+    "gerundive_gdv": 28260,
+    "absolutive_conv": 102054,
+    "note": "completes the non-finite deverbal quartet: gerundive (SG-MO-024, Gdv), absolutive (SG-MO-026, Conv); the infinitive shares the -tavya/-tum base with the gerundive"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§968-988 (infinitive: accusative -tum + the Vedic case-form infinitives)"
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "suffix_by_surface": "the suffix/case split is by surface morphology within the clean Inf set; DCS does not tag case (feat_case=None); 'other' ~ -tum sandhi variants",
+    "vedic_bias": "the Vedic remnant share reflects the pinned corpus's Vedic content; not a claim about any single register",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
