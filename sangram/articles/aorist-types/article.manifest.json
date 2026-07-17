@@ -1,0 +1,90 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:aorist-types",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-019",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Аорист: редуплицированный и сигматический (типы аориста)",
+        "summary": "Статья SG-MO-019 (домен MO, кластер «Перфект, аорист, будущее»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Более глубокий разрез аориста, чем обзорная SG-MO-018 (агрегат 12 054): семь традиционных типов образования аориста разделены НАТИВНО через feat_formation на Tense=Past+VERB. Несигматические (9304): корневой root 5690 (abhūt «стал», от bhū), тематический/a-аорист them 2781 (avocat «сказал»), редуплицированный red 833 (ajījanat «породил», каузативный оттенок). Сигматические (2750): -s- 1508 (akārṣīt «сделал»), -iṣ- 1077 (avadhīt «убил»), -sa- 124 (adhukṣat «подоил», к корням на -h/-ś/-ṣ), -siṣ- 41 (udagāsīt). Сумма 12 054 = агрегат SG-MO-018 — это РАЗБИЕНИЕ, не новый счёт. Внимание: feat_formation=peri на Tense=Past (4046) — перифрастический ПЕРФЕКТ (SG-MO-032), не аорист, исключён. Чистый нативный позитив: система типов восстановлена прямо из аннотации (feat_formation), не по морфологии финали. Оговорка от SG-MO-018: аорист — нижняя оценка (12 054 из ~102k Past несут формо-тег; EM2 объединяет Past). Уитни гл. IX §§824–930. Аугмент a- общий у всех."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:aorist-types:1",
+        "layer": "scientific",
+        "text_slp1": "aBUt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s8)" },
+        "translations": { "ru": "стал, был (bhū, корневой аорист)" },
+        "gloss_ru": "КОРНЕВОЙ (простой) аорист: аугмент a- + корень bhū + окончание → abhūt «стал/был». Самый частотный тип (root, 5690); лемма bhū суплетивно закрывает парадигму «быть». Аугмент a- общий у всех аористов (как у имперфекта).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=root", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:2",
+        "layer": "scientific",
+        "text_slp1": "avocata",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 2.2.2 (s6)" },
+        "translations": { "ru": "сказал (vac, тематический a-аорист)" },
+        "gloss_ru": "ТЕМАТИЧЕСКИЙ (a-)аорист: аугмент a- + корень (voc- от vac) + тематический -a- → avocat/avocata (медий). Эталон тематического типа (them, 2781); корень vac показывает характерную огласовку voc-.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=them, лемма vac", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:3",
+        "layer": "scientific",
+        "text_slp1": "ajIjanat",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 18 (s1)" },
+        "translations": { "ru": "породил (jan, редуплицированный аорист)" },
+        "gloss_ru": "РЕДУПЛИЦИРОВАННЫЙ аорист: аугмент a- + редупликация jī- + корень jan → ajījanat «породил». Тип red (833); часто несёт каузативный оттенок («заставил родиться»). Редупликация с долгим/i-огласованным слогом отличает его от редупл. перфекта.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=red, лемма jan", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:4",
+        "layer": "scientific",
+        "text_slp1": "akArzIt",
+        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 16 (s6)" },
+        "translations": { "ru": "сделал (kṛ, сигматический -s- аорист)" },
+        "gloss_ru": "СИГМАТИЧЕСКИЙ -s- аорист: аугмент a- + корень (вриддхи kār-) + -s- + окончание → akārṣīt «сделал». Самый частотный сигматический тип (s, 1508); вриддхи корня + сибилянт -ṣ- (из -s- по правилу ruki) — диагностика типа.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=s, лемма kṛ", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:5",
+        "layer": "scientific",
+        "text_slp1": "avaDIt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 2 (s17)" },
+        "translations": { "ru": "убил (vadh, сигматический -iṣ- аорист)" },
+        "gloss_ru": "СИГМАТИЧЕСКИЙ -iṣ- аорист: аугмент a- + корень vadh + соединительное -ī- + окончание → avadhīt «убил». Тип is (1077); соединительный -i-/-ī- перед сибилянтом отличает -iṣ- от чистого -s-. Эталон формы.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=is, лемма vadh", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:6",
+        "layer": "scientific",
+        "text_slp1": "aDukzat",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.22 (s2)" },
+        "translations": { "ru": "подоил (duh, сигматический -sa- аорист)" },
+        "gloss_ru": "СИГМАТИЧЕСКИЙ -sa- аорист: аугмент a- + корень duh + -sa- → adhukṣat «подоил». Редкий тип (sa, 124), к корням на -h/-ś/-ṣ (duh, diś, viś): корень + s даёт -kṣ-. Тематическое -a- отличает -sa- от -s-.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=sa, лемма duh", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist-types:7",
+        "layer": "scientific",
+        "text_slp1": "udagAsIt",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 5.34 (s1)" },
+        "translations": { "ru": "воспел, запел (udgā, сигматический -siṣ- аорист)" },
+        "gloss_ru": "СИГМАТИЧЕСКИЙ -siṣ- аорист: преверб ud- + аугмент a- + корень gā + -siṣ- → udagāsīt «воспел». Самый редкий тип (sis, 41 токен, 14 лемм); к корням на долгий гласный (gā, dhā, sthā). Крайняя периферия аористной системы.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Past, VERB, feat_formation=sis, лемма udgā", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
