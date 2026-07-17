@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.53.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-027 «Пассив» — статья-кандидат (H1108, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/passive/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/passive): несущий границу слот. Пассив (слабый корень + -ya- + медиальные окончания; ucyate/dṛśyate) нативно размечен (Voice=Pass) → измерим напрямую: **29 699 финитных токенов (5,7 %)** + 7 002 причастных. Профиль резче любого разреза глагола — голос безличной цитаты: **98,1 %** 3-е лицо, **92,6 %** презенс; во главе verba dicendi/восприятия (ucyate «говорится» — самый частотный пассив корпуса, dṛśyate, śrūyate, kathyate). Граница EM1: пассивная основа -ya- формально омонимична презенсу IV класса (divādi: paśyati vs dṛśyate), разделены тегом залога, не формой (P2). 5 примеров. Скрипт [`sg_mo_027_passive.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_027_passive.py); 3 валидатора + CI build green. Ядро W2: 15/19. Публикация гейтится авторской визой.
+
 ## [0.52.0] - 2026-07-17
 
 ### Added
