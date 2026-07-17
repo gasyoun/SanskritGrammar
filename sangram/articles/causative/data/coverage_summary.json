@@ -1,8 +1,8 @@
 {
-  "study": "SG-MO-028 «Каузатив» — causative secondary conjugation (core W2 ①, content)",
+  "study": "SG-MO-028 «Каузатив» — causative secondary conjugation (core W2 ①, endgame, map-heavy)",
   "toc_ref": "SG-MO-028",
-  "kind": "content article (no kill-gate; map-heavy — measurable core + honest conflation)",
-  "method": "the causative is NOT tagged (Caus label = 0); the -aya- stem is the Westergaard class-10 (lemma.grammar '10.%'), which MERGES derived causative + primary curādi; measured as one bucket, with the causative proper flagged as non-isolable",
+  "kind": "content article (endgame slot; publishes its limit like the pilots)",
+  "method": "the causative is NOT natively tagged (no Caus feature); it surfaces only as class-10 (-ay) lemmas, which conflate genuine causatives with primary curādi. We measure the class-10 bucket, a mechanical transparent-causative LOWER BOUND (de-strengthened base attested as a primary root), and a seeded sample for hand-adjudication of the conflation.",
   "snapshot": {
     "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
     "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
@@ -10,134 +10,417 @@
     "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
     "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
   },
+  "native_causative_feature": {
+    "grammar_codes_mentioning_caus": 0,
+    "note": "zero — DCS carries no explicit causative marker; the class-X -aya- surface is the only handle"
+  },
   "denominators": {
-    "finite_total": 523721
+    "finite_total": 523721,
+    "class10_ay_bucket": 55376,
+    "class10_ay_share": 0.1057,
+    "class10_ay_types": 2006,
+    "denominative_bucket": 5451,
+    "denominative_share": 0.0104
   },
-  "class_x_aya_bucket": {
-    "finite_tokens": 55376,
-    "share_of_finite": 0.1057,
-    "distinct_lemmas": 1998,
-    "note": "class-X (-aya-) present = causative + primary curādi under one roof; NOT separable natively"
+  "class10_share_ci95": {
+    "k": 55376,
+    "n": 523721,
+    "ci95": [
+      0.1049,
+      0.1066
+    ]
   },
-  "causative_untagged_proof": {
-    "caus_label_count": 0,
-    "note": "zero 'Caus' entries anywhere → the causative has no dedicated tag"
+  "person": {
+    "3": {
+      "tokens": 47197,
+      "share": 0.8523
+    },
+    "2": {
+      "tokens": 4295,
+      "share": 0.0776
+    },
+    "1": {
+      "tokens": 3884,
+      "share": 0.0701
+    }
   },
-  "secondary_conjugations_dcs_separates": {
-    "denominative": 5482,
-    "desiderative": 1060,
-    "intensive": 921,
-    "note": "these secondary conjugations ARE tagged in lemma.grammar, so they do NOT contaminate the class-X bucket — the caus/curādi conflation is the ONLY remaining fusion"
+  "number": {
+    "Sing": {
+      "tokens": 47583,
+      "share": 0.8593
+    },
+    "Plur": {
+      "tokens": 7271,
+      "share": 0.1313
+    },
+    "Dual": {
+      "tokens": 522,
+      "share": 0.0094
+    }
   },
-  "top_class_x_lemmas": [
+  "tense": {
+    "Pres": {
+      "tokens": 43410,
+      "share": 0.7839
+    },
+    "Impf": {
+      "tokens": 5646,
+      "share": 0.102
+    },
+    "Past": {
+      "tokens": 4031,
+      "share": 0.0728
+    },
+    "Fut": {
+      "tokens": 2289,
+      "share": 0.0413
+    }
+  },
+  "mood": {
+    "Ind": {
+      "tokens": 29090,
+      "share": 0.5253
+    },
+    "Opt": {
+      "tokens": 20963,
+      "share": 0.3786
+    },
+    "Imp": {
+      "tokens": 4812,
+      "share": 0.0869
+    },
+    "Jus": {
+      "tokens": 244,
+      "share": 0.0044
+    },
+    "Sub": {
+      "tokens": 235,
+      "share": 0.0042
+    },
+    "Cond": {
+      "tokens": 31,
+      "share": 0.0006
+    },
+    "Pot": {
+      "tokens": 1,
+      "share": 0.0
+    }
+  },
+  "third_person_share_ci95": {
+    "k": 47197,
+    "n": 55376,
+    "ci95": [
+      0.8493,
+      0.8552
+    ]
+  },
+  "present_share_ci95": {
+    "k": 43410,
+    "n": 55376,
+    "ci95": [
+      0.7805,
+      0.7873
+    ]
+  },
+  "transparent_causative_lower_bound": {
+    "matched_types": 1345,
+    "class10_types": 2006,
+    "matched_tokens": 44117,
+    "class10_tokens": 55376,
+    "matched_token_share_of_bucket": 0.7967,
+    "method": "class-10 lemma ending -ay whose de-strengthened base (guṇa/vṛddhi reversed, -p- augment dropped) is attested as a primary (non-10) root lemma",
+    "note": "LOWER bound — irregular strengthening and suppletion are missed, so the true causative share is higher; the residual mixes primary curādi + unmatched causatives",
+    "examples": [
+      {
+        "lemma": "kathay",
+        "base": "kath",
+        "tokens": 2083
+      },
+      {
+        "lemma": "dhāray",
+        "base": "dhṛ",
+        "tokens": 1337
+      },
+      {
+        "lemma": "kāray",
+        "base": "kṛ",
+        "tokens": 1327
+      },
+      {
+        "lemma": "janay",
+        "base": "jan",
+        "tokens": 1106
+      },
+      {
+        "lemma": "marday",
+        "base": "mṛd",
+        "tokens": 989
+      },
+      {
+        "lemma": "kāmay",
+        "base": "kam",
+        "tokens": 942
+      },
+      {
+        "lemma": "bhakṣay",
+        "base": "bhakṣ",
+        "tokens": 941
+      },
+      {
+        "lemma": "tarpay",
+        "base": "tṛ",
+        "tokens": 765
+      },
+      {
+        "lemma": "yojay",
+        "base": "yuj",
+        "tokens": 706
+      },
+      {
+        "lemma": "darśay",
+        "base": "dṛś",
+        "tokens": 685
+      },
+      {
+        "lemma": "kalpay",
+        "base": "kal",
+        "tokens": 621
+      },
+      {
+        "lemma": "sāday",
+        "base": "sad",
+        "tokens": 603
+      },
+      {
+        "lemma": "sthāpay",
+        "base": "sthā",
+        "tokens": 572
+      },
+      {
+        "lemma": "pātay",
+        "base": "pat",
+        "tokens": 550
+      },
+      {
+        "lemma": "niveday",
+        "base": "nivid",
+        "tokens": 543
+      },
+      {
+        "lemma": "varjay",
+        "base": "vṛj",
+        "tokens": 473
+      },
+      {
+        "lemma": "sādhay",
+        "base": "sādh",
+        "tokens": 445
+      },
+      {
+        "lemma": "arcay",
+        "base": "arc",
+        "tokens": 410
+      },
+      {
+        "lemma": "jāray",
+        "base": "jṛ",
+        "tokens": 396
+      },
+      {
+        "lemma": "nāśay",
+        "base": "naś",
+        "tokens": 387
+      },
+      {
+        "lemma": "vācay",
+        "base": "vac",
+        "tokens": 379
+      },
+      {
+        "lemma": "lakṣay",
+        "base": "lakṣ",
+        "tokens": 376
+      },
+      {
+        "lemma": "śamay",
+        "base": "śam",
+        "tokens": 375
+      },
+      {
+        "lemma": "vāray",
+        "base": "vṛ",
+        "tokens": 369
+      },
+      {
+        "lemma": "bhojay",
+        "base": "bhuj",
+        "tokens": 349
+      },
+      {
+        "lemma": "samardhay",
+        "base": "samṛdh",
+        "tokens": 346
+      },
+      {
+        "lemma": "dāpay",
+        "base": "dā",
+        "tokens": 342
+      },
+      {
+        "lemma": "pratiṣṭhāpay",
+        "base": "pratiṣṭhā",
+        "tokens": 335
+      },
+      {
+        "lemma": "pāyay",
+        "base": "pay",
+        "tokens": 327
+      },
+      {
+        "lemma": "lepay",
+        "base": "lip",
+        "tokens": 322
+      }
+    ]
+  },
+  "top_lemmas": [
     {
       "lemma": "kathay",
-      "tokens": 2083,
-      "kind": "curādi"
+      "grammar": "10. Ā.",
+      "tokens": 2083
     },
     {
       "lemma": "dhāray",
-      "tokens": 1337,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 1337
     },
     {
       "lemma": "kāray",
-      "tokens": 1327,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 1327
     },
     {
       "lemma": "pūjay",
-      "tokens": 1249,
-      "kind": "curādi"
+      "grammar": "10. Ā.",
+      "tokens": 1249
     },
     {
       "lemma": "janay",
-      "tokens": 1106,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 1106
     },
     {
       "lemma": "marday",
-      "tokens": 989,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 989
     },
     {
       "lemma": "kāmay",
-      "tokens": 942,
-      "kind": "curādi"
+      "grammar": "10. P.",
+      "tokens": 942
     },
     {
       "lemma": "bhakṣay",
-      "tokens": 941,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 941
     },
     {
       "lemma": "cintay",
-      "tokens": 810,
-      "kind": "curādi"
+      "grammar": "10. Ā.",
+      "tokens": 810
     },
     {
       "lemma": "tarpay",
-      "tokens": 765,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 765
     },
     {
       "lemma": "yojay",
-      "tokens": 706,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 706
     },
     {
       "lemma": "darśay",
-      "tokens": 685,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 685
     },
     {
       "lemma": "kalpay",
-      "tokens": 621,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 621
     },
     {
       "lemma": "sāday",
-      "tokens": 603,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 603
     },
     {
       "lemma": "sthāpay",
-      "tokens": 572,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 572
     },
     {
       "lemma": "bhāvay",
-      "tokens": 563,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 563
     },
     {
       "lemma": "pātay",
-      "tokens": 550,
-      "kind": "caus"
+      "grammar": "10. Ā.",
+      "tokens": 550
     },
     {
       "lemma": "niveday",
-      "tokens": 543,
-      "kind": "?"
+      "grammar": "10.P.,10.Ā.",
+      "tokens": 543
     },
     {
       "lemma": "varjay",
-      "tokens": 473,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 473
     },
     {
       "lemma": "sādhay",
-      "tokens": 445,
-      "kind": "?"
+      "grammar": "10. Ā.",
+      "tokens": 445
+    },
+    {
+      "lemma": "arcay",
+      "grammar": "10. Ā.",
+      "tokens": 410
+    },
+    {
+      "lemma": "jāray",
+      "grammar": "10. Ā.",
+      "tokens": 396
+    },
+    {
+      "lemma": "nāśay",
+      "grammar": "10. Ā.",
+      "tokens": 387
+    },
+    {
+      "lemma": "vācay",
+      "grammar": "10. Ā.",
+      "tokens": 379
+    },
+    {
+      "lemma": "lakṣay",
+      "grammar": "10. Ā.",
+      "tokens": 376
     }
   ],
-  "traditional_layer": {
-    "witness": "Whitney 1889 §§1041–1052 (causative)"
+  "adjudication_sample": {
+    "seed": 20260717,
+    "size": 60,
+    "weighting": "freq-weighted draw of distinct types",
+    "file": "adjudication_sample.tsv"
   },
   "limits": {
-    "EM5_no_valency": "the causative is a derived conjugation with no tag; corpus-internally not isolable from primary curādi (both = class-X -aya-)",
-    "class_x_fusion": "lemma.grammar '10.' fuses derived causative + primary curādi; clean separation needs WhitneyRoots root-class + per-stem adjudication (sibling-root heuristic misfires, e.g. kathay)",
-    "surface_noise": "raw -ayati/-ayate surface matching is ~16-20% noisy AND still cannot separate caus from curādi",
+    "EM5_family_type_not_marked": "the causative is a derivational category with no native tag; only the merged class-10 -ay surface is countable, and class-10 = causative over-counts by the primary-curādi share",
+    "curadi_conflation": "primary curādi (kathay, cintay, pūjay, kāmay) and derived causatives (kāray, janay, darśay) share the -aya- stem and the class-10 code; DCS does not separate them",
+    "base_match_lossy": "the transparent-causative lower bound under-counts: vṛddhi/suppletion (kāray←kṛ needs kār→kṛ) and multi-step strengthening escape the conservative de-strengthening ruleset",
+    "denominatives_separate": "denominatives (Denom., 5 451) also take -aya-; counted separately",
     "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
   }
 }
