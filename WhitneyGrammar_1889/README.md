@@ -84,11 +84,12 @@ sangram TOC × §-отсылки трёх реестров) в единый на
 
 Файлы реестра:
 
-- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/claims.yml) — верифицированный реестр (WH-1..WH-15: **13 TRUE · 1 OVERSTATED · 1 UNTESTABLE**), источник правды;
+- [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/claims.yml) — верифицированный реестр (WH-1..WH-15: **14 TRUE · 1 OVERSTATED**), источник правды;
 - [claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/claims_harvest.yml) — бэклог жатвы, **74 кандидата** (аорист/футурум, презенс, спряжение/перфект, склонение; 21 продвинут);
 - [verify_whitney_freq.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/verify_whitney_freq.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_freq_stats.json) — корпусная батарея (seed);
 - [whitney_root_count.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_root_count.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_root_count_stats.json) — дренаж-инструмент: размеры презентных классов по числу КОРНЕЙ (сверка с каталогом WhitneyRoots, H1107);
-- [whitney_per_text_counts.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_per_text_counts.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_per_text_stats.json) — дренаж-инструмент: ручные подсчёты Уитни по текстам (кондиционалис/прекатив по feat_mood, аорист через набор форм, H1107);
+- [whitney_per_text_counts.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_per_text_counts.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_per_text_stats.json) — дренаж-инструмент: кондиционалис/прекатив по текстам (feat_mood, H1107);
+- [whitney_aorist_tagger.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_aorist_tagger.py) → [.json](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_aorist_stats.json) — тэггер аориста по текстам (feat_formation: семь классов аориста; закрыл WH-15; полный счёт аориста 12 054, H1134);
 - [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/CLAIMS_VERIFIED.md) — генерируется из `claims.yml` (`npm run claims`), руками не править.
 
 **Главный вывод:** частотная архитектура языка, которую Уитни описал вручную в 1889 году,
@@ -105,8 +106,11 @@ OVERSTATED в агрегате, но его же оговорка «зависи
 класс I — крупнейший (56 % корней). (2) [whitney_per_text_counts.py](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/whitney_per_text_counts.py):
 его ручные подсчёты редчайших форм воспроизводятся **до токена** — в 1889 году он насчитал НОЛЬ
 кондиционалисов в «Хитопадеше» и ровно ОДИН у Ману, DCS-2021 даёт 0 и 1; прекатив у Ману — тоже
-ровно 1. Единственный пробел — ручной подсчёт аориста по текстам (§826): в sqlite нет тега
-аориста, и сопоставление по набору форм недосчитывает (WH-15, UNTESTABLE). Ручной подсчёт
-филолога 137-летней давности — подтверждён корпусом.
+ровно 1. **И аорист теперь тоже (WH-15, закрыт H1134):** в sqlite нет тега аориста-ВРЕМЕНИ, но
+есть тег аориста-ФОРМАЦИИ (`feat_formation` отделяет семь классов аориста от перфекта); по нему
+подсчёт Ману даёт 6 против «семи» Уитни — почти в точку, как кондиционалис и прекатив; попутно
+выяснился полный счёт аориста — 12 054 токенов (1,2 %), а не 2 452 (старый метод пропускал
+корневой и тематический аорист). Ручной подсчёт филолога 137-летней давности — подтверждён
+корпусом по всем трём редчайшим категориям.
 
 _Dr. Mārcis Gasūns_

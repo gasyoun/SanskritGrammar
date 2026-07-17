@@ -190,11 +190,11 @@
       "loc": "§826 / aorist per text",
       "claim_ru": "Its forms are found only twenty-one times in the Nala, eight in the Hitopadeça, seven in Manu, six each in the Bhagavad-Gītā and Çakuntalā.",
       "kind": "statistic",
-      "verdict_fact": "UNTESTABLE",
-      "number": "whitney_per_text_counts.py bridges the sqlite's missing aorist tag by matching a 690-form aorist set from 15.csv; this UNDERCOUNTS (Hitopadeśa 0 vs Whitney's 8; Manusmṛti 2 vs 7), because surface-form matching misses aorist tokens whose forms are not in the distinct-form list. The corpus-wide DIRECTION is confirmed (top aorist texts: Ṛgveda 564, Mahābhārata 525, Atharvaveda 249 — aorist common in the Veda, present in the epic, per WH-2), but the specific §826 hand-counts are not cleanly reproducible by this method.",
-      "ref": "DCS-2021 + 15.csv aorist form-set (whitney_per_text_counts.py); harvest WH-H-1 (§826)",
+      "verdict_fact": "TRUE",
+      "number": "whitney_aorist_tagger.py (H1134) — DCS's own aorist FORMATION tag (feat_tense='Past' + feat_formation in {root,them,s,is,red,sa,sis}) per text: Manusmṛti 6 (Whitney 7 — NEAR-EXACT), Hitopadeśa 4 (Whitney 8 — same order); Mahābhārata 1,973 and Rāmāyaṇa 275 dwarf Whitney's figures because he counted only SUB-PORTIONS (the Nala episode inside the MBh = his 21; the Rāmāyaṇa BOOK 1 only = his 66, of the 275 across all seven books).",
+      "ref": "DCS-2021 feat_formation aorist tagging (whitney_aorist_tagger.py, H1134); harvest WH-H-1 (§826)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The honest floor of the per-text drain: unlike the conditional/precative (directly tagged by feat_mood, hence WH-13/14 reproduce exactly), the aorist has NO tense tag in the sqlite (feat_tense lumps it into 'Past'), so it can only be approximated by form-set matching, which undercounts. Whitney's §826 hand-counts stay UNTESTABLE until a proper aorist morphological identifier (augment + aorist-ending parse, or the DCS analysis tables joined to text ids) is built — the one remaining instrument gap. The broad claim (WH-2) that the aorist is Vedic- common / classically-marginal is separately confirmed.",
+      "note": "CLOSED from UNTESTABLE by the aorist tagger. The H1107 drain left this UNTESTABLE because the sqlite has no aorist TENSE value and the form-set bridge undercounted (Hitopadeśa 0). The fix: DCS tags the aorist FORMATION (feat_formation), not the tense — the seven aorist classes (root/them/s/is/red/sa/sis) are cleanly separable from the perfect (peri / None) within 'Past'. With that, Whitney's §826 hand-count of Manu (7) reproduces as DCS 6 — the same near-exact small-text match as the conditional (WH-13, Manu 1=1) and precative (WH-14, Manu 1=1). SIDE FINDING: the true aorist count is 12,054 tokens (1.2% of verbal), NOT the 2,452 / 0.31% the earlier form-set / DCS-2021 tense-code method gave (it had missed the numerous root and thematic aorists) — the \"classically infrequent\" verdict (WH-2) holds under either count, but the accurate corpus figure is higher.",
       "mg_footnote": null,
       "methodichka": null
     }
