@@ -1,6 +1,6 @@
 # `whitney_talmud.json` — schema & provenance
 
-_Created: 07-07-2026 · Last updated: 08-07-2026_
+_Created: 07-07-2026 · Last updated: 17-07-2026_
 
 The Phase-3 enrichment crosswalk for the *Talmud санскрита* interactive companion
 (see [`IMPROVEMENT_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md)).
@@ -28,7 +28,8 @@ only as the Phase-4 paradigm deep-link, not as a data source.
 | :--- | :--- |
 | `source=whitney` | Copied **verbatim** from WhitneyRoots (`crosswalk/roots.csv`). |
 | `ryad_source=manual` | Ряд taken **verbatim** from the author's Приложение 1 catalog ([`talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json)). Un-indexed stays un-indexed (ruling #3). |
-| `ryad=null`, `ryad_source=null` | The root is **not in the author's catalog** — no series is asserted. |
+| `ryad=null`, `ryad_source=null` | The root is **not in the author's catalog** — no series is asserted. Since H1065 this also covers the roots whose spelling the author catalogues under a *different homonym* than Whitney's (`paś²`, `stu²`, `pā³`, 19 in all): binding a neighbouring homonym's values to them would assert something he did not, so they stay null pending his ruling. |
+| join method `spelling-alt` | The value is the author's, reached through a **secondary** «Список Уитни» spelling of a multi-form catalog row (`gam, gach` → both `gam` and `gach`). Still fully `manual` provenance — one morpheme cross-referenced under two of Whitney's citation forms (ruling #5), not an inference. 59 records, `gach` (DCS rank 5) among them, gained their Ряд/Тип/seṭ this way when H1065 fixed the join's first-hit-wins bug. |
 | `tip_source=manual` | Тип (`I`/`II`/`III`/`IV`, Table 5) taken verbatim from Приложение 1 where the author gives it. |
 | `set_source=manual` | seṭ/aniṭ/veṭ taken verbatim from Приложение 1 (Table 8). `set_code` keeps the finer `s`/`a`/`v1`…`v4`. |
 | `source=tolchelnikov` | The nominal roots the author tabulated in Приложение 2 — carried verbatim. |
