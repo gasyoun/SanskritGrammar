@@ -9,6 +9,19 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.10.0] - 2026-07-17
+### Added
+- **Methodichka viza applier (H1090 follow-on, Opus 4.8 `claude-opus-4-8[1m]`).** New self-tested
+  [`apply_apte_methodichka_visa.py`](apply_apte_methodichka_visa.py) folds an MG viza
+  `decisions.json` (from the 9-card sheet `sanskritgrammar-metodichka-apte-v1_17.07.26`) into
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md): a `## Статус визы
+  автора` summary table + per-section markers (approve → `_✅ Виза MG: одобрено._`; reject/defer →
+  a `>` blockquote flag for a human rewrite; unvoted → `_⏳ Виза: не голосовано._`). Dry-run by
+  default, `--apply` writes; **idempotent** (re-runnable after a re-vote — verified by identical
+  MD5 across two applies) and it never deletes section prose, only its own prior markers. Emits
+  pure Markdown (no HTML, per repo policy). Prepared ahead of the vote so applying is one command
+  the moment the reviewer saves `decisions.json`.
+
 ## [0.9.0] - 2026-07-17
 ### Added
 - **Methodichka «Учащемуся» takeaways in the reading-site overlay (H1095, Opus 4.8
