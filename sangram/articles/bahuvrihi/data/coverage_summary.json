@@ -1,0 +1,224 @@
+{
+  "study": "Sangram SG-WF-009 (Композиты: bahuvrīhi, обзор) — the endgame LIMIT article",
+  "toc_ref": "SG-WF-009",
+  "kind": "overview (no kill-gate); C6-BLOCKED — publishes the limit, no census (EM4 + exocentricity)",
+  "why_no_census": "bahuvrīhi is exocentric: referent lies OUTSIDE the compound, so type is not identifiable from internal structure — needs external semantics/syntax (C6, not built). DCS annotates compound type with 0 features (EM4).",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "p4_sample_illustrative_NOT_census": {
+    "source": "SG-WF-008 tatpuruṣa pilot P4 blind double-annotation (Leitan codebook), coarse κ=0.93",
+    "sampled_compounds": 120,
+    "annotations_both_passes": 240,
+    "coarse_mix": {
+      "tatpurusa": 189,
+      "bahuvrihi": 36,
+      "dvandva": 13,
+      "unclear": 2
+    },
+    "bahuvrihi_both_passes_agreed": 17,
+    "caveat": "the P4 sample was drawn FOR the tatpuruṣa study, not as a compound-type census; the ~15% bahuvrihi share is a SAMPLE artefact, NOT a corpus frequency"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§1293–1308 (possessive / bahuvrīhi compounds); Leitan codebook (Pāṇinian)"
+  },
+  "exemplars_both_passes_agreed": [
+    {
+      "cpd_token_id": 557709,
+      "vigraha": "ātta-cāpo yena saḥ",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "ātta",
+        "first_member_lemma": "ādā",
+        "text": "Bhāgavatapurāṇa",
+        "ref": "BhāgPur, 4, 16 (s20)"
+      }
+    },
+    {
+      "cpd_token_id": 4184387,
+      "vigraha": "āgato roṣo yayoḥ tau",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "āgata",
+        "first_member_lemma": "āgam",
+        "text": "Rāmāyaṇa",
+        "ref": "Rām, Yu, 64 (s24)"
+      }
+    },
+    {
+      "cpd_token_id": 4295984,
+      "vigraha": "priyaṃ yaśo yasya saḥ",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "priya",
+        "first_member_lemma": "priya",
+        "text": "Saundarānanda",
+        "ref": "SaundĀ, 8 (s57)"
+      }
+    },
+    {
+      "cpd_token_id": 425799,
+      "vigraha": "madirā ādir yeṣāṃ tāni, taiḥ",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "madirā",
+        "first_member_lemma": "madirā",
+        "text": "Aṣṭāṅgahṛdayasaṃhitā",
+        "ref": "AHS, Utt., 39 (s115)"
+      }
+    },
+    {
+      "cpd_token_id": 5573463,
+      "vigraha": "puravo vājā yāsāṃ tāḥ (ūtayaḥ)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "puru",
+        "first_member_lemma": "puru",
+        "text": "Ṛgveda",
+        "ref": "ṚV, 6, 10 (s5)"
+      }
+    },
+    {
+      "cpd_token_id": 230412,
+      "vigraha": "hutaṃ bhāgo yeṣāṃ te",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "huta",
+        "first_member_lemma": "hu",
+        "text": "Atharvaveda (Śaunaka)",
+        "ref": "AVŚ, 18, 4 (s21)"
+      }
+    },
+    {
+      "cpd_token_id": 1526107,
+      "vigraha": "kṣato deho yasya saḥ",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "kṣata",
+        "first_member_lemma": "kṣan",
+        "text": "Kathāsaritsāgara",
+        "ref": "KSS, 1, 7 (s96)"
+      }
+    },
+    {
+      "cpd_token_id": 2796047,
+      "vigraha": "naṣṭa ādityo yasmin (āhave)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "naṣṭa",
+        "first_member_lemma": "naś",
+        "text": "Mahābhārata",
+        "ref": "MBh, 8, 54 (s17)"
+      }
+    },
+    {
+      "cpd_token_id": 5577123,
+      "vigraha": "kṣatraṃ śrīr yasya saḥ",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "kṣatra",
+        "first_member_lemma": "kṣatra",
+        "text": "Ṛgveda",
+        "ref": "ṚV, 6, 26 (s8)"
+      }
+    },
+    {
+      "cpd_token_id": 4748445,
+      "vigraha": "pañcaviṃśatiḥ anto yasya tat",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "pañcaviṃśati",
+        "first_member_lemma": "pañcaviṃśati",
+        "text": "Tantrāloka",
+        "ref": "TĀ, 3 (s153)"
+      }
+    },
+    {
+      "cpd_token_id": 1090928,
+      "vigraha": "catvāraḥ bhujā yasyāḥ sā",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "catur",
+        "first_member_lemma": "catur",
+        "text": "Garuḍapurāṇa",
+        "ref": "GarPur, 1, 41 (s2)"
+      }
+    },
+    {
+      "cpd_token_id": 3893848,
+      "vigraha": "gaganam ādir yeṣāṃ tāni",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "gagana",
+        "first_member_lemma": "gagana",
+        "text": "Rasārṇava",
+        "ref": "RArṇ, 4 (s15)"
+      }
+    },
+    {
+      "cpd_token_id": 3576330,
+      "vigraha": "āḥkāraḥ anto yasya tat",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "āḥkāra",
+        "first_member_lemma": "āḥkāra",
+        "text": "Nirukta",
+        "ref": "N, 1, 17 (s12)"
+      }
+    },
+    {
+      "cpd_token_id": 4124260,
+      "vigraha": "varam ānanaṃ yasyāḥ (sā)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "vara",
+        "first_member_lemma": "vara",
+        "text": "Rāmāyaṇa",
+        "ref": "Rām, Su, 18 (s22)"
+      }
+    },
+    {
+      "cpd_token_id": 3450150,
+      "vigraha": "aṣṭau cakrāṇi yasya (yānasya)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "aṣṭa",
+        "first_member_lemma": "aṣṭan",
+        "text": "Matsyapurāṇa",
+        "ref": "MPur, 163 (s107)"
+      }
+    },
+    {
+      "cpd_token_id": 4005952,
+      "vigraha": "viṣaṇṇaṃ vadanaṃ yasya (saḥ)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "viṣaṇṇa",
+        "first_member_lemma": "viṣad",
+        "text": "Rāmāyaṇa",
+        "ref": "Rām, Bā, 61 (s3)"
+      }
+    },
+    {
+      "cpd_token_id": 2694673,
+      "vigraha": "ayaḥ haste yeṣām (te)",
+      "coarse": "bahuvrihi",
+      "locus": {
+        "first_member_form": "ayas",
+        "first_member_lemma": "ayas",
+        "text": "Mahābhārata",
+        "ref": "MBh, 7, 97 (s39)"
+      }
+    }
+  ],
+  "limits": {
+    "C6_blocked": "no census possible without the semantics/syntax program (C6)",
+    "EM4": "compound type unannotated in DCS (0 features)",
+    "exocentricity": "vigraha of every exemplar ends in an EXTERNAL relative (yasya saḥ / yeṣāṃ te) — the mark of the referent lying outside the compound",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
