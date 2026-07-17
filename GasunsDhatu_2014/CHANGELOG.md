@@ -9,6 +9,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **Гл. 3 §3.2/Выводы — одобрены автором 17-07-2026, без правок.** Closes a gap that fell through
+  the cracks: the §3.2/Выводы rework (H378, PR #91, 08-07-2026) and its later stitch to Гл. 7
+  (H1082, PR #319, 17-07-2026) both shipped with footnotes stating "Финальную редакцию визирует
+  автор," but neither ever went through an explicit visa-apply pass like Гл. 4-7 did — found on
+  a routine content check, not assumed either way. Footnotes `[^ed3d]`/`[^ed3e]` updated with
+  approval note. §3.1/§3.3/§3.4 (the bulk of the chapter, original 2014 prose) remain queued for
+  the human RWS style pass (269 remarks) — unaffected by this visa.
+  ([H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)/[H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.18.0] - 2026-07-17
 
 ### Changed
