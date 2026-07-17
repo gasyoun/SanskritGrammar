@@ -19,6 +19,10 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.56.0] - 2026-07-17
+### Changed
+- **Consistency check extended to five more shared figures (H1164, Opus 4.8 `claude-opus-4-8[1m]`).** [`scripts/check_claims_consistency.py`](scripts/check_claims_consistency.py) gains a second mode: alongside the aorist supersession guard, four cross-register figures (perfect 61,986 · imperfect 47,554 · present · verbal-denominator 781,618) are now pinned to an **allowed-value set** — any citation outside it (a typo, a stale value, an un-reconciled recompute) fails. The present allows a **version-distinguished pair** (157,003 DCS-2021 · 353,215 DCS-2026), which the check permits explicitly. Reconciliation outcome: **no value-level drift found** — every figure already uses only its known value(s); the two present counts are legitimately different corpus snapshots, not an inconsistency. A second pytest gate ([`tests/test_claims_consistency.py`](tests/test_claims_consistency.py)) enforces it in CI. NOTE: full standardization on DCS-2026 (which would collapse the present pair and recompute the DCS-2021 rarity family) is a corpus-version policy decision left open.
+
 ## [0.55.0] - 2026-07-17
 
 ### Added
