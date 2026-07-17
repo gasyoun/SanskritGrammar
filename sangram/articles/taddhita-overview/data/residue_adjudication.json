@@ -1,0 +1,37 @@
+{
+  "study": "SG-WF-004 taddhita residue -in/-ika/-ya — hand-adjudication of the seeded base-attested sample",
+  "adjudicator": "Opus 4.8 (claude-opus-4-8[1m])",
+  "as_of": "2026-07-17",
+  "seed": 20260717,
+  "sample_kind": "shuffled base-attested MW-adjectival lemmas across -in/-ika/-ya",
+  "categories": {
+    "taddhita": "genuine secondary derivation from a nominal base (relational/possessive/patronymic)",
+    "krt": "primary/deverbal — agentive -in or gerundive -ya on a verbal root (vibhraṃśin, prāpya)",
+    "compound": "the suffix sits on a compound final member (supathin, giriśaya)",
+    "primary": "underived / lexicalized"
+  },
+  "verdicts": {
+    "yāntrika":"taddhita","ārthika":"taddhita","śaunika":"taddhita","kaṃsika":"taddhita",
+    "aupaniṣadika":"taddhita","rābhasika":"taddhita","vaiṃśatika":"taddhita","ādhyāsika":"taddhita",
+    "granthin":"taddhita","ślokin":"taddhita","viṣin":"taddhita","aśanin":"taddhita",
+    "vibhraṃśin":"krt","ākrīḍin":"krt","pramathin":"krt","pragrahin":"krt","utpatin":"krt",
+    "apadhvaṃsin":"krt","ṣṭhīvin":"krt","ābhāsin":"krt","vāñchin":"krt","bhājin":"krt","viṣyandin":"krt",
+    "supathin":"compound",
+    "gavyaya":"taddhita","pāthya":"taddhita","aṅgurīya":"taddhita","śābalīya":"taddhita",
+    "enasya":"taddhita","kūpya":"taddhita","nālya":"taddhita","brahmavarcasya":"taddhita",
+    "aṃsya":"taddhita","viṣamaya":"taddhita","atapasya":"taddhita",
+    "pravāhya":"krt","prāpya":"krt","nakṣya":"krt","niryātya":"krt","sambhāṣya":"krt",
+    "apavāhya":"krt","yatya":"krt","parimārgya":"krt","nirmanthya":"krt","vidhāraya":"krt",
+    "praticakṣya":"krt","śrapaṇīya":"krt","nirbādhya":"krt","damya":"krt","vilaṅghya":"krt",
+    "dhaya":"krt","hiṃsya":"krt","abhibhāṣya":"krt","udvāsya":"krt","adhiśrayaṇīya":"krt",
+    "saṃrakṣya":"krt","gāya":"krt",
+    "amāya":"compound","giriśaya":"compound","pratyakṣadṛśya":"compound"
+  },
+  "per_class_precision": {
+    "ika": {"n": 8, "taddhita": 8, "precision": 1.00, "note": "relational vṛддхi -ika is a clean taddhita marker — no kṛt homonym"},
+    "in":  {"n": 16, "taddhita": 4, "precision": 0.25, "note": "dominated by kṛt AGENTIVE -in (vibhraṃśin, pramathin) — same ending, same mfn POS, same base-attestation as possessive taddhita"},
+    "ya":  {"n": 36, "taddhita": 11, "precision": 0.31, "note": "dominated by kṛt GERUNDIVE -ya (prāpya, sambhāṣya) — the polyfunctional ending Whitney flags"}
+  },
+  "overall": {"n": 60, "taddhita": 23, "krt": 33, "compound": 4, "precision": 0.38},
+  "verdict": "MW POS + base-attestation cleanly recovers -ika (relational, ~100%), but NOT -in or -ya: possessive/patronymic taddhita is homonymous with kṛt agentive/gerundive on the same ending, POS (mfn) and attested base — a genuinely hard border no lexical filter here separates. The POS-grounded token counts are therefore precision-adjusted below."
+}

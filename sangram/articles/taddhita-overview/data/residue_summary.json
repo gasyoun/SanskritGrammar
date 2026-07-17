@@ -1,0 +1,50 @@
+{
+  "study": "SG-WF-004 taddhita residue — -in/-ika/-ya via MW POS + base-attest + DCS",
+  "toc_ref": "SG-WF-004",
+  "method": "MW headwords ending in the suffix that MW marks adjectival (mfn/m:f#iṇī) = possessive/relational signature (POS-grounded); base-attested subset requires the vṛddhi-reversed stem to be an attested MW headword. Joined to pinned DCS for tokens.",
+  "corpus_snapshot": {
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "note": "pin 04e0778 bound by provenance + tag c3-pin-04e0778-content"
+  },
+  "mw_headwords": 193892,
+  "per_suffix": [
+    {
+      "suffix": "in",
+      "mw_adjectival_types": 3888,
+      "mw_base_attested_types": 345,
+      "dcs_attested_types_posgrounded": 1306,
+      "dcs_tokens_posgrounded": 16955,
+      "dcs_attested_types_baseattested": 245,
+      "dcs_tokens_baseattested": 6272
+    },
+    {
+      "suffix": "ika",
+      "mw_adjectival_types": 1563,
+      "mw_base_attested_types": 162,
+      "dcs_attested_types_posgrounded": 494,
+      "dcs_tokens_posgrounded": 4369,
+      "dcs_attested_types_baseattested": 72,
+      "dcs_tokens_baseattested": 1312
+    },
+    {
+      "suffix": "ya",
+      "mw_adjectival_types": 6016,
+      "mw_base_attested_types": 843,
+      "dcs_attested_types_posgrounded": 1270,
+      "dcs_tokens_posgrounded": 42076,
+      "dcs_attested_types_baseattested": 274,
+      "dcs_tokens_baseattested": 17299
+    }
+  ],
+  "adjudication_sample": {
+    "seed": 20260717,
+    "size": 60,
+    "file": "residue_sample.tsv",
+    "weighting": "shuffled base-attested set across -in/-ika/-ya"
+  },
+  "limits": {
+    "ya_polyfunctional": "-ya overlaps kṛt gerundive; the adjectival+base-attested filter is the defence, sample measures leakage",
+    "pos_grounded_vs_base": "POS-grounded is broader (any MW adjectival -X); base-attested is the transparent-derivation lower bound",
+    "compounds_included": "compound-final -in/-ya (aṃśa-bhāgin) are counted — they carry the suffix; not separated from simplex here"
+  }
+}
