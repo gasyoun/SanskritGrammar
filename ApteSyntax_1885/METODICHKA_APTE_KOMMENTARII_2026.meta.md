@@ -35,8 +35,15 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
    goal cases). Deferred to v2, mirrors the Kochergina exercise section.
 2. **Cross-references (раздел III)** — «см. также» pointers to Whitney §§, the other Russian
    grammars (Kochergina/Bühler/Zaliznyak) where the same rule is treated, and the Talmud. Deferred.
-3. **Reading-site overlay of the methodichka notes** — the commentary could feed the existing
-   `<ApteClaims/>` overlay as a per-claim "методичка" annotation, so print and web never diverge.
+3. ~~**Reading-site overlay of the methodichka notes** — the commentary could feed the existing
+   `<ApteClaims/>` overlay as a per-claim "методичка" annotation, so print and web never diverge.~~
+   ✅ **DONE (H1095, 17-07-2026).** Each of the 10 flagged claims now carries a `methodichka`
+   «Учащемуся» takeaway in [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml),
+   threaded through [`build_claims.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py)
+   into `claims.json` and rendered as a green «методичка» block by
+   [`ApteClaims.jsx`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/ApteClaims.jsx).
+   `claims.yml` is the single source, so print (this manuscript's «Учащемуся» lines) and web can no
+   longer diverge.
 4. **MG viza** — the commentary verdicts and learner-advice lines are human-visaed before print
    (a `/review-sheet` pass like the Kochergina methodichka v1), currently undone.
 
@@ -56,5 +63,6 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
 | Date | Model | Change |
 |---|---|---|
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Created v1 раздел I (commentary) + this metadoc (H1090). All 10 flagged claims covered + strengths appendix. |
+| 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Fed the «Учащемуся» takeaways into the `<ApteClaims/>` reading-site overlay via a `methodichka` field in `claims.yml` (single source) — backlog #3 closed (H1095). |
 
 _Dr. Mārcis Gasūns_

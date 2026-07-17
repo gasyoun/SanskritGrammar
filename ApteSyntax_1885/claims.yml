@@ -176,6 +176,10 @@ entries:
       pedagogy is defensible even though the factual quantifier overreaches — hence OVERSTATED /
       JUSTIFIED, not MISLEADING. Drain instrument: a treebank pass counting goal-case with
       motion-verb heads (gam/yā/...) would put a number on how marginal the non-accusative goal is.
+    methodichka: >-
+      «Все… винительным» — правило на 86 %, а не закон: grāmāya gacchati «идёт к деревне»
+      (дательный цели) — не ошибка, а та самая одна из семи. Для композиции винительный цели —
+      безопасное умолчание; при чтении держите в уме дательную и местную цель.
 
   - id: APT-6
     loc: "Урок 20 / mdx ~line 5226"
@@ -290,6 +294,9 @@ entries:
       paired with kim) is fine; the implicit position analogy overreaches. Method control: hi, an
       uncontested postpositive, measures 0.77% initial in the same battery — so the 23.66% is a
       real property of uta, not an artefact.
+    methodichka: >-
+      Пользуйтесь uta по смыслу («или»), но не считайте её строго постпозитивной, как ca:
+      она свободно открывает предложение (почти четверть вхождений — в начале).
 
   - id: APT-13
     loc: "Урок 1 / mdx <line 960"
@@ -375,6 +382,9 @@ entries:
       and the ablative-of-source. Teaching the locative as THE government for these verbs hides the
       construction the learner will actually meet — a frequency miss, hence MISLEADING. (Polysemy
       caveat: muc conflates 'throw at' and 'release'.) Corroborated by the Classical-corpus proxy at scale (H1062): locative only 1.22x baseline near kṣip/muc (n=12,479), ablative leads — the accusative/ablative dominance is not a small-sample artifact.
+    methodichka: >-
+      «Местный цели» у глаголов бросания — правильная конструкция, но редкая; чаще вы увидите
+      винительный объекта и отложительный источника.
 
   - id: APT-19
     loc: "Урок 10 / mdx ~line 2702"
@@ -391,6 +401,10 @@ entries:
       §297c) — but the corpus puts the accusative ahead of the genitive, so «управляют родительным
       падежом» presented as THE rule overreaches. The honest statement is 'genitive or accusative,
       accusative if anything commoner'. Corroborated by the Classical-corpus proxy (H1062): genitive weakly enriched (~1.5x) near īś/prabhū/smṛ/adhī but not the leading oblique (n=7,009).
+    methodichka: >-
+      Честная формулировка — «родительный или винительный, винительный если что чаще», а не
+      «управляют родительным» как единственным. Встретив smaranti tam «помнят его» (винительный),
+      не считайте это исключением.
 
   - id: APT-20
     loc: "Урок 7 / mdx ~line 1712"
@@ -429,6 +443,10 @@ entries:
       prescriptive-vs-descriptive gap — Apte teaches the grammarians' rule, the corpus prefers
       other cases — hence MISLEADING on the frequency axis (the rule is not 'wrong', but the
       learner will meet the dative-of-anger far less than the absolute phrasing implies).
+    methodichka: >-
+      ruc-дательный вы встретите как норму; «дательный гнева» — как книжное (панинийское)
+      правило, которое живой текст соблюдает куда реже, чем обещает абсолютная формулировка.
+      Типичный зазор «предписание против описания».
 
   - id: APT-22
     loc: "Урок 9 / mdx ~line 2412"
@@ -447,6 +465,9 @@ entries:
       locative-of-place and because the object of affection is often expressed by a genitive or a
       prepositional phrase. Graded OVERSTATED (direction right, strength overstated); the teaching
       target (locative) is defensible, hence pedagogy JUSTIFIED.
+    methodichka: >-
+      У глаголов любви местный падеж уместен, но не единственно возможен — направление верное,
+      сила преувеличена (местный чувства конкурирует с обычным местным места).
 
   - id: APT-23
     loc: "Урок 3 / mdx <line 960"
@@ -463,6 +484,9 @@ entries:
       absolute — the dative and locative goal together account for ~14% (Loc conflates goal with
       place, so 14% is an upper bound; the dative goal alone is ~4.6%). For a composition primer the
       accusative default is the right teaching target, so pedagogy stays JUSTIFIED.
+    methodichka: >-
+      Тот же урок 3, но с точным числом: винительный цели — 85,9 %, неаккузативная цель
+      (дательный + местный) — 14,1 %. Учите винительный как умолчание, а не как закон.
 
   - id: APT-24
     loc: "Урок 23 / mdx ~line 6111"
@@ -529,6 +553,9 @@ entries:
       the corpus, so «normally Parasmaipada» misleads on strength (the preverb condition Apte adds
       is real but the base claim itself is not the strong default it implies). Teaching a default
       pada is defensible, hence pedagogy JUSTIFIED.
+    methodichka: >-
+      Корневой залог по умолчанию учите как факт (ram → Ātmanepada ~95 %, han → Parasmaipada
+      ~90 %, реестр APT-26/27), но krīḍ помните как «оба залога» — распределение почти поровну.
 
   - id: APT-29
     loc: "Урок 29 / mdx ~line 7569"
@@ -561,6 +588,10 @@ entries:
       sense-rules with no corpus signal — DCS neither tags the P/Ā distinction nor the semantic
       trigger. Closing instruments: a pada-tagged root lexicon plus sense-disambiguated preverb-verb
       tokens (neither exists in the sibling repos today). Documented, not force-verdicted.
+    methodichka: >-
+      Тонкие панинийские правила «приставка + значение» — справочный материал, а не то, что
+      подтверждает частотность: корпус их не судит (DCS не размечает ни P/Ā, ни семантическое
+      условие). Держите их как ориентир, не как проверенный закон.
 
   # ---- WHITNEY ADJUDICATION (H1084, 17-07-2026) ----
 
@@ -598,6 +629,10 @@ entries:
       aorist is durative, the imperfect is not' learns the aspect backwards; and the aorist is in
       any case marginal in Classical usage (0.31% of verbal tokens, DCS — cf. Whitney §826), so the
       durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.
+    methodichka: >-
+      Заучите наоборот: длительное, продолжающееся прошлое несут имперфект и презенс, а аорист —
+      «завершительное, только что». Аорист в классике редок (0,31 % глагольных словоупотреблений
+      DCS; Whitney §826), так что длительное прошлое вы почти всегда встретите имперфектом.
 
   # ---- PARTICLE-SENSE WHITNEY PASS (H1087, 17-07-2026) — lessons 26–28 indeclinables ----
   # Finding: Apte's particle/indeclinable LEXICON is accurate — every gloss below checks out
