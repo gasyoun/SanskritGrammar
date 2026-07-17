@@ -19,6 +19,237 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.51.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-018 «Аорист» — статья-кандидат (H1098, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/aorist/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/aorist): несущий границу слот; заполняет **середину градиента восстановимости претеритов** имперфект→аорист→перфект. Аорист склеен с перфектом под Tense=Past (EM2, P3), но — в отличие от перфекта — feat_formation размечает типы аористной основы (корневой/s/iṣ/sa/siṣ/редупл./тематический) на **12 054 токенах (11,8 % Past)** по всем семи типам. Это **нижняя оценка**: P3 оценил перфект ≈76 % Past → аорист ≈24 %, размечена примерно половина; вторая половина неотделима от перфекта в неразмеченном массиве. Честная оговорка о смежности them/red (adadat — «ложный друг» P3). 4 примера по типам основы. Скрипт [`sg_mo_018_aorist.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_018_aorist.py); 3 валидатора + CI build green. Ядро W2: 14/19. Публикация гейтится авторской визой.
+
+## [0.50.0] - 2026-07-17
+### Added
+- **Талмуд-сверка аористов пяти реестров (H1054, директива адъюдикации к HK-5).** [AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md): 24 утверждения × система Талмуда 2.1.6 (Табл. 16, 7 классов) — ни одного противоречия вердиктам, Талмуд = третий свидетель FALSE по HB-60; системная находка: «только Parasmaipada» классов 1/6 — правда индикатива (класс 1 — универсальная база пассивного аориста и P-прекатива, класс 6 — редчайшая опция Ā-прекатива); OCH-92 системно закрыт (пассив аориста = только Ā.3.SG), частотные UNTESTABLE Талмуд не снимает по построению. 12 строк реестров получили Талмуд-ссылки. Fable 5 (`claude-fable-5`).
+
+## [0.49.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-016 «Имперфект» — статья-кандидат (H1096, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/imperfect/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/imperfect): первый несущий границу слот ядра и **позитивный двойник пилота P3**. Где P3 показал склейку перфекта/аориста под Tense=Past (EM2, recall перфекта 3,3 %), имперфект — **единственный претерит, размеченный DCS отдельно** (Tense=Impf), потому измерим: **46 695 токенов** из 523 721 финитного. Нарративное прошедшее, скошенное к 3-му лицу сильнее целого: 3-е **94,1 %** [93,9–94,4], ед. 75,1 %, актив 96,9 %; частотнейшие корни — verba dicendi/бытия (brū abravīt #1, bhū, as āsīt, paś, kṛ). Несёт два предела: EM2 (сёстры-претериты склеены) + EM1 (презентный класс не в признаках, P2). 5 примеров с аугментом. Скрипт [`sg_mo_016_imperfect.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_016_imperfect.py); 3 валидатора + CI build green. Ядро W2: 13/19. Публикация гейтится авторской визой.
+
+## [0.48.0] - 2026-07-17
+### Added
+- **Секвенционная проверка имперфекта — заметка адъюдикации к HK-15 (H1053).** Предрегистрированный инструмент [imperfect_switching_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py) (T2607-26 заморожена до замера) + отчет [IMPERFECT_SWITCHING_HK15_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md): кластеризация имперфекта повсеместна (runs-test p<0,001, все срезы; аорист кластеризуется сильнее всех — lift до 3,61), «переключение темы» в точке вкрапления значимо, но микроскопично в эпосе (+0,2 п.п., p=0,002) и содержательно лишь в ведийском (+1,5 п.п., p<0,001); классика — направление перевернуто. ЧАСТИЧНО ПОДТВЕРЖДЕНО; компаньон-формулировка к § 2 A65 в отчете. Fable 5 (`claude-fable-5`), по разрешению MG на Opus-ряд.
+
+## [0.47.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-026 «Абсолютив (-tvā/-ya)» — статья-кандидат (H1091, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/absolutive/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/absolutive): четвёртый (последний) частотный флективный слот — **группа закрыта**. Абсолютив несклоняем, поэтому рамка — алломорфия -tvā/-ya. **Корпус подтверждает традиционное правило на ≈98 %:** по сопоставлению суффикса с `lemma.preverbs` над 102 054 токенами Conv, -tvā на 98,5 % при простом корне (34 293/34 816 без преверба), -ya/-tya на 97,8 % при глаголе с превербом (56 501/57 790). Распределение: -ya/-tya 56,6 %, -tvā 34,1 %, прочее 8,8 %, редкий -am 0,5 %. «Аттестовано подтверждает традиционно». Несклоняем → порождённой парадигмы нет. 5 примеров (kṛtvā/gatvā простые; praṇamya/āgatya/vihāya составные). Скрипт [`sg_mo_026_absolutive.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_026_absolutive.py); 3 валидатора + CI build green. Ядро W2: 12/19. Публикация гейтится авторской визой.
+
+## [0.46.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-023 «Причастия на -ta/-na» (прош. страд.) — статья-кандидат (H1083, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/ta-na-participles/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/ta-na-participles): третий частотный флективный слот ядра (кластер именных форм глагола). Причастие -ta/-na (kṛta/gata/bhinna) — **самый частотный причастный тип**: **219 902 токена** (нижняя оценка) = 64,4 % всех 341 556 причастий, из 4742 корней, -ta к -na как 13,6:1; употребление преимущественно предикативное (57 % в Nom. — перифрастический пассив/перфект). Предел EM5 честно: DCS не тегирует класс -ta/-na (атрибут tense — для причастия настоящего), опознание по основе (снятие a-/ā-флексии, основа на -t/-n) — нижняя оценка, исключает ассимилированные labdha/rūḍha/baddha. Выборка 50 токенов: 0 ложных. Склоняется как a-основа (SG-MO-002). Скрипт [`sg_mo_023_ta_na_participles.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_023_ta_na_participles.py); 3 валидатора + CI build green (локальный build OOM под давлением памяти concurrent-сессий). Ядро W2: 11/19. Публикация гейтится авторской визой.
+
+## [0.45.0] - 2026-07-16
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-010 «Склонение: местоимения» — статья-кандидат; ИСКЛЮЧЕНИЕ из предела EM3 (H1064, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/pronouns/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/pronouns): второй частотный флективный слот ядра. Ключевой контраст: где открытый именной инвентарь (актив G2) даёт медиану **1** клетку на лемму, закрытый высокочастотный класс местоимений (**38 лемм / 544 999 токенов**) аттестует медиану **12,5** из 24 (среднее 12,13, макс 22, 39,5 % лемм ≥18 клеток) — 38 лемм несут ≈14 300 токенов каждая. Не потребитель G2 (G2 только по NOUN; местоимения — PRON, отдельный запрос). Супплетивный закрытый класс → порождение ≡ традиция: канонические парадигмы aham/tad из Уитни гл. VII, не машинно-порождённые. 5 аттестованных примеров с супплетивизмом (aham←mad, tasya←tad) + выборка 50 токенов. Скрипт [`sg_mo_010_pronouns.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_010_pronouns.py); 3 валидатора + build green. Ядро W2: 10/19. Публикация гейтится авторской визой.
+
+## [0.44.0] - 2026-07-16
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-006 «Склонение: согласные основы» — статья-кандидат; первый потребитель актива G2 (H1058, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/consonant-stems/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/consonant-stems): первый частотный флективный слот ядра после обзоров (порядок § 5 контрольной точки). Трёхслойная: АТТЕСТАЦИЯ **потребляет** актив G2 (H1048, не пересчитывает) — 4 212 согласных лемм / 232 935 токенов, медиана 1 клетка/лемма (EM3), покрытие растёт с частотой (rājan 20/24, karman 22/24); по подтипам -in 900 · -an 846 · -as 572 · -us/-is по 86 · корневые 1 722. ПОРОЖДЕНО (MWinflect) — парадигмы rājan/manas со ступенями основы (сильная rājā / слабая rājñā / средняя rājasu); ТРАДИЦИОННО — Уитни гл. V §§383–465. 5 аттестованных примеров по подтипам + посеянная выборка 50 токенов. Скрипт [`sg_mo_006_consonant_stems.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_006_consonant_stems.py); 3 валидатора + build green. Ядро W2: 9/19. Публикация гейтится авторской визой.
+
+## [0.43.0] - 2026-07-16
+### Changed
+- **A65: авторская адъюдикация 9 расхождений валидации применена — 9/9 за реестр (H1049,
+  Fable 5 `claude-fable-5`).** Ни один вердикт не правится: человеческий ярус подтвердил
+  первый проход против более строгого слепого второго; цепочка валидации закрыта (числа →
+  проход 1 → слепой проход 2 κ = 0,877 → человек 9/9). Машинная запись голосования —
+  [`verdict_validation/validation_adjudication.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/validation_adjudication.json);
+  валидационный отчет + § 5/§ 6/§ 11/аннотация статьи переведены в «выполнено». Заметки
+  адъюдикации развернуты: сноски [^hb2] (дидактика «модель — потом исключения») и [^hb10]
+  (управление ā, Уитни § 1128 + ожидаемые данные Шерцля) в § 2.2; пять исследовательских
+  директив → handoffs **H1050–H1054** (аудит раздела самас Кочергиной по Лейтану ·
+  залоговая гипотеза Зализняка-1978 на DCS · прошедшие времена в параллельном корпусе ·
+  имперфект как маркер переключения нарратива · сверка аористов с Талмудом); Шерцль-сверка —
+  GTD @WAITING; два открытых вопроса — в журнал вопросов. **До подачи A65 — только вычитка.**
+  ([H1049](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1049-Fable_SanskritGrammar_a65-adjudication-apply-9-approve_16.07.26.md))
+
+## [0.42.0] - 2026-07-16
+
+### Changed
+- **A65: авторская адъюдикация девяти расхождений κ-валидации применена — 9/9 за реестр (H1049, Fable 5 `claude-fable-5`).** Все девять спорных вердиктов (HB-2, HB-10, HB-57, HB-100, HK-4a, HK-4b, HK-5, HK-15, HK-34) оставлены как в первом проходе; машинная запись решений закоммичена ([validation_adjudication.json](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/validation_adjudication.json)), [валидационный отчет](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/VERDICT_VALIDATION_KAPPA_A65_2026.md) получил раздел «Адъюдикация автора — 9/9 за реестр». В статью внесены две заказанные адъюдикацией сноски (HB-10: Уитни § 1128 об управлении ā; HB-2: дидактический прием «модель — потом исключения»); § 6/§ 5/§ 11/аннотация переведены из «адъюдикация ожидается» в «выполнена». Заметки автора развернуты в программу продолжения: handoffs H1050–H1054 (самасы Кочергиной по Лейтану · залоги Зализняка-1978 на DCS · прошедшие времена в параллельном корпусе · имперфект как маркер переключения · аористы против Талмуда), @WAITING по данным Шерцля, два вопроса в QUESTIONS_LOG (HK-4a, HB-2).
+
+## [0.41.0] - 2026-07-16
+
+### Added
+- **Sangram G2 производный дата-актив — «аттестованные клетки склонения на лемму» (H1048, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/data/declension_cell_coverage/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/declension_cell_coverage): для каждой из **57 144** именных лемм — какие из 24 клеток (8 падежей × 3 числа) аттестованы в пинованном снапшоте DCS (1 790 270 токенов, знаменатель совпадает с SG-MO-001). Общая (все типы основ, все роды) версия покрытия пилота P1; кросс-статейный слой для SG-MO-001/002/006/010, рекомендованный контрольной точкой ядра W2 (§ 5 G2). **EM3 в масштабе корпуса:** медиана **1** клетка/лемма, 58,9 % лемм с одной клеткой, 0,0 % с полными 24, лишь **10,44 %** пространства лемма×клетка аттестовано; покрытие — артефакт частоты (среднее 1,0 у hapax → 17,3 при 1000+); Nom.Sg (41 998 лемм) против Dat.Du (128) — разброс ×328. `lemma_cell_coverage.csv` (битовая строка `cells_bits24`) + `coverage_summary.json` (разбивки по роду/основе/частоте) + README. Скрипт [`sg_g2_declension_cell_coverage.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_g2_declension_cell_coverage.py); read-only, C3-пин; build green.
+
+## [0.40.0] - 2026-07-16
+### Changed
+- **A65 подписана автором — 5/5.** [SIGNOFF_A65_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A65_author_pass.md): голосовые решения VC1–VC8 приняты без вето; статус в [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) переведен 4/5 → **5/5**. Остаточные флаги (адъюдикация девяти расхождений κ-валидации, Zenodo/OSF, ГОСТ/Зализняк-1975, кольцо § 10, верстка § 2.2) живут как самостоятельные GTD-позиции. (H1015, Fable 5 `claude-fable-5`.)
+
+## [0.39.0] - 2026-07-16
+### Changed
+- **A65: author-voice pass (/paper-author-pass) — proposed 5/5, awaiting the author's sign-off (H1015)** — [the manuscript](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) now reads as the author's own: academic frontmatter (М. Ю. Гасунс, независимый исследователь, ORCID, ya.ru — per AUTHOR.md), working banner removed, title recast («корпусная верификация…», the H797 tag dropped), §8 de-coded (companion papers named descriptively, no Axx), the LLM-adjudication sentence in journal register with model attribution preserved, appendix provenance glyphs/H-IDs neutralized. **No number, claim, or citation touched.** 8 voice calls + 5 residual flags recorded in [SIGNOFF_A65_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SIGNOFF_A65_author_pass.md) — a ~30-minute read-and-sign; the 5/5 bump itself waits for the signature. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
+## [0.38.0] - 2026-07-16
+
+### Changed
+- **Sangram: ретро-проход прозы по [style guide](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) — 4 оставшиеся опубликованные статьи (H1014, Fable 5 `claude-fable-5`).** Явный follow-up частичного исхода [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md) (perfect прошёл первым): проза [a-stems (P1)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/a-stems/index.mdx), [thematic-present (P2)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/thematic-present/index.mdx), [tatpurusha (P4)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/index.mdx) и [krt-suffixes (P5)](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-suffixes/index.mdx) выровнена по диагностике «птичьего языка» (гайд § 4): коммит-пины, зёрна выборок, дословные запросы и имена моделей-разметчиков уведены из аналитического текста в §§ данных/провенанса (в прозе — «разбирающий», «проход A/B»), падежные аббревиатуры и морфопризнаки получили русские чтения, вложенные скобки развёрнуты, техника восстановления пина у P1 свёрнута в примечание; попутно исправлены опечатки «Стярка» → «Сверка» (P2 § 3.2) и «деривациий» → «дериваций» (P5 § 5), шапка таблицы P1 § 3.3 уточнена («сколько лемм», не «доля»). **Все числа и выводы неприкосновенны** — ревизии `revision` внесены в манифесты всех четырёх статей (контракт C4); backlog гайда § 6 строки 3–6 → ✅. ([H1014](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1014-Fable_SanskritGrammar_sangram-prose-retro-pass-p1-p2-p4-p5_16.07.26.md))
+
+## [0.37.0] - 2026-07-16
+
+### Added
+- **Sangram ядро W2 — обзорная статья SG-WF-001 «Строение слова: корень, основа, аффикс» — статья-кандидат; ЧЕТВЁРТЫЙ и последний обзор ядра W2 (H1032, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/word-structure-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/word-structure-overview): структурная рамка слова по пинованному снапшоту, привязанная к трём нативно-измеримым слоям (не текстбучная схема): **A** — приоритетное разбиение всех **5 688 416** токенов (нарицательное 39,9 % — первичн./kṛt/taddhita НЕ разделены · закрытый класс 28,4 % · член композита 14,8 % · финитный глагол 9,2 % · отглагольное kṛt 7,6 %; прозрачно «корень+аффикс» 16,8 %); **B** — инвентарь корней: 8 053 аттестованные финитные леммы (топ-10 = 29,7 %, закон Ципфа) vs гана-инвентарь WhitneyRoots 1 133 корня (I класс 46,5 %); **C** — окно словообразования основы `feat_formation`, разрежено (1,7 %). Разбор нарицательных на первичные/kṛt/taddhita по поверхности НЕ делается (перенесённый предел P5/SG-WF-003: ~59 % ложных). Скрипт [`sg_wf_001_word_structure.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_001_word_structure.py); 3 валидатора + build green. **Завершает четвёрку обзоров ядра W2** (SG-MO-001 · SG-MO-012 · SG-WF-006 · SG-WF-001). Публикация гейтится авторской визой.
+
+## [0.36.0] - 2026-07-16
+### Added
+- **A65: валидация вердиктов выполнена — слепой двухпроходный κ-дизайн по шаблону A64
+  (H1041, Fable 5 `claude-fable-5`; аннотатор B — Sonnet 5 `claude-sonnet-5`).** Новая папка
+  [`verdict_validation/`](https://github.com/gasyoun/SanskritGrammar/tree/main/verdict_validation):
+  стратифицированная выборка n = 115 (ВСЕ 30 фактических флагов + ВСЕ 25 UNTESTABLE + 60
+  случайных TRUE, зерно 20260716), слепой пакет без вердиктов/заметок первого прохода,
+  **κ Коэна = 0,877** (95 %-ДИ бутстрэпа [0,796; 0,946], 2 000 ресэмплов), сырое согласие
+  106/115 = 92,2 %; Очерк 19/19 и Конспект 5/5 — полное согласие. Конфузия чистая на
+  TRUE и FALSE; все 9 расхождений — граница OVERSTATED/UNTESTABLE, в 7 случаях из 9 второй
+  аннотатор СТРОЖЕ (флаги реестров консервативны). Попутно классифицированы 7 OVERSTATED
+  Бюлера — **первое заполнение класса «система-против-узуса»** (HB-10, предлог ā + Acc.):
+  ровно у самой систематической книги, как § 2.2 и предсказывал; итог типологии — 22
+  классифицированных (14·4·1·3). Отчет
+  [`VERDICT_VALIDATION_KAPPA_A65_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/VERDICT_VALIDATION_KAPPA_A65_2026.md)
+  + воспроизводимые скрипты/данные; § 6/§ 2.2/§ 5/§ 11/аннотация статьи обновлены.
+  **Остаток до 5/5:** авторская адъюдикация 9 расхождений — review-sheet
+  `sanskritgrammar-a65-verdict-validation-disagreements_16.07.26_review.html` (локальный
+  `review/`) + вычитка.
+  ([H1041](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1041-Fable_SanskritGrammar_a65-verdict-validation-kappa_16.07.26.md))
+
+## [0.35.0] - 2026-07-16
+### Changed
+- **A65 (4/5): hostile referee pass applied to the canonical merged article (H1015; merit-merge after the H1033 collision)** — a fresh-context referee produced **10 Major + 16 Minor** findings ([disposition + collision note](https://github.com/gasyoun/SanskritGrammar/blob/main/REVIEW_A65_SYNTHESIS_REFEREE_2026.md)). The concurrent H1033 4/5 (PR #277, v0.34.0) was taken as base — it had performed the five-book typology classification (9/4/2/0 of 15) and fixed HK-10/HK-38 in the register — and the referee corrections absent from it were re-applied on top: first-substantive-FALSE attribution restored to HK-16; per-book two-axis counts; «пометка, не предрегистрация» instead of «ПРЕДСКАЗАЛ»; ACL-scoped novelty claim; per-genre word-order breakdowns inlined into the OCH-66 verdict; Fisher exact p = 0.42; systematic de-jargonization; bibliography upgrades (Кнауэр place, Бюлер translator, Зализняк-1975 title flagged for verification). PR #278 closed as superseded. Deferred to author-pass: banner, Zenodo deposit, GOST, RU-scholarship ring. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
+## [0.34.0] - 2026-07-16
+
+### Changed
+- **A65 продвинута 3/5 → 4/5: слияние A60 ВЫПОЛНЕНО (H1033, Fable 5 `claude-fable-5`).**
+  [Отчет-статья](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
+  принял весь аналитический состав A60, перебазированный с 43-клеточного пилота на осушенный
+  реестр 234 (доля расхождений Кочергиной 27,9 % → **5,1 %** — учебник точнее, чем показывал
+  пилот): § 1 — метод (единица анализа, две оси, правило D-B, четырехчастная типология
+  расхождений), § 2.2 — центральная таблица 12 расхождений с **точным** соответствием
+  класс⇄подача (8 сверхобобщений = MISLEADING, 4 частотных = FREQUENCY-HIDDEN) и находкой
+  пустого класса «система-против-узуса»; типология растянута на пять книг (15
+  классифицированных: 9 · 4 · 2 · 0; восемь FALSE Бюлера — опечаточный класс вне типологии,
+  его 7 OVERSTATED честно оставлены до валидации), § 2.3 — флагман -iṣya, § 2.4 —
+  петербургская традиция как источник профиля, § 10 — положение в литературе
+  (Hellwig/Nation/Biber/Arase/Hoenen + четыре пункта новизны), § 11 — заключение, § 12 —
+  +6 внешних позиций литературы. Черновик A60 помечен архивным источником (не продвигать,
+  не цитировать, не подавать отдельно). Адверсариальный верификационный проход перед
+  коммитом исправил 10 дефектов, включая **неверный § Уитни у HK-10** — § 168 (сандхи)
+  вместо §§ 592/595 (акцент глагола): ошибка сидела в самом реестре и исправлена в
+  `claims.yml` (+ регенерация CLAIMS_VERIFIED/claims.json), в методичке v1 (разделы I–II)
+  и в README книги. До 5/5 — человеческая валидация выборки вердиктов (κ-шаблон A64)
+  + авторская вычитка.
+  ([H1033](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1033-Fable_SanskritGrammar_a65-4of5-full-paper-a60-merge_16.07.26.md))
+
+### Added
+- **Sangram ядро W2 — обзорная статья SG-WF-006 «Композиты: обзор и классификация» — статья-кандидат (H1031, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/compounds-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/compounds-overview): третья обзорная статья ядра W2. Рамка композитов по пинованному снапшоту: **841 052** члена `Case=Cpd` → **595 021** реконструированный композит в 396 305 предложениях (**52,5 %** корпуса несут композит); гистограмма числа членов — двучлен 74,4 %, трёхчлен 17,6 %, 4-член 4,8 %, 5+ 3,3 %. Тип корпусом НЕ размечен (предел EM4): нативный сигнал только `compound:coord` (≈двандва) в разобранном подмножестве; количественный ориентир по типу — двухпроходная κ пилота P4 по выборке 120 (татпуруша 79,5 % / бахуврихи 14,5 % / двандва 5,1 %, честно как выборка). Скрипт [`sg_wf_006_compound_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_006_compound_overview.py); 3 валидатора + build green. Публикация гейтится авторской визой.
+
+### Added
+- **Sangram ядро W2 — обзорная статья SG-MO-012 «Спряжение: обзор» — статья-кандидат (H1028, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/conjugation-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/conjugation-overview): вторая обзорная статья ядра W2. Частотная рамка финитного глагола по **523 721** токену — распределение по пяти **нативным** морфопризнакам DCS (лицо/число/время/наклонение/залог), реальная аттестованная рамка без приближения: 3-е лицо 80,3 %, презенс 67,4 %, индикатив 69,6 %, оптатив 17,5 %, двойственное 1,8 %, пассив 5,7 %. Несёт пределы EM1 (класс не в признаках) + EM2 (Tense=Past склейка). Скрипт [`sg_mo_012_conjugation_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_012_conjugation_overview.py); 3 валидатора + build green. Публикация гейтится авторской визой.
+
+## [0.33.0] - 2026-07-16
+### Changed
+- **A65 (3/5) synchronized with the H1022 treebank wave — the programme headline honestly recast (H1015)** — the same-day treebank instrument measured the §§212-217 syntax cluster and ended Zalizniak's zero-flag run at 70/74: register now **65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE**. [The draft](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) replaces the flag-rate ranking (now statistically fragile: Бюлер 3.7% · Зализняк 4.1% · Кочергина 5.1%) with the two-tier picture — what separates the books is WHERE flags cluster (misprints vs quantifier absolutes vs one syntax §-cluster) — and records the register's pre-registered «hunting licence» on OCH-68 as a fulfilled prediction (75.2%, n=335); OCH-67 documented as the programme's first substantive FALSE (subordinate:coordinate 6.5:1, genre split checked); §7 inventory +row 13; the instrument's own lesson (the «no syntactic annotation» premise was never checked) added to §4. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
+## [0.32.1] - 2026-07-16
+### Changed
+- **A65: both human gates RULED by MG 16-07-2026 (H1024)** — ① venue/language =
+  **российская индология, RU as-is** (the eLex/GWC/ISCLS translation branch dropped);
+  ② **A60 merged into A65** — one paper: A65 § 2 absorbs A60's central divergence table
+  (4-way typology), the five-book count becomes its frame. Applied to the
+  [report](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
+  (banner, § 5, § 8, § 10 self-citation slot), its metadoc (backlog rebuilt — the 4/5
+  merge pass is the new head item), and the
+  [A60 draft](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60/DRAFT_grammar-claims-corpus-denies_A60.md)
+  header (🔀 MERGED INTO A65 — source material, do not advance separately; the A60 leg
+  of H967 is superseded). Uprava side (ARTICLES A65/A60 rows, GTD Publication Gates,
+  H967 banner) updated the same pass. (Fable 5 `claude-fable-5`,
+  [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md))
+
+## [0.32.0] - 2026-07-16
+
+### Changed
+- **P3 (SG-MO-017 перфект) — проза ВСЕЙ статьи переписана по [style guide прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (расширенный охват H1003 — «вся статья, не только § 6», решение MG 16-07-2026).**
+  [`sangram/articles/perfect/index.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/index.mdx),
+  §§ 1, 3.1–3.3, 3.5, 4: вложенные скобки-приписки развёрнуты в предложения, запросы и коммит-пин уведены
+  из аналитического текста (живут в § 2 «Данные и воспроизводимость»), телеграфные пункты kill-gate § 4
+  развёрнуты в связные абзацы с сырыми счётами при процентах (61 из 80, 8 из 80), административный регистр
+  («виза») заменён словами читателя; **все числа и выводы сохранены** (гайд правит слог, не находки — те под
+  авторской визой); попутно исправлена опечатка «Уитри» → «Уитни» (§ 3.4). Append-only ревизия `revision` в
+  [манифесте](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/article.manifest.json) (C4);
+  строка 1 очереди гайда (§ 6) обновлена. Проход подготовлен предыдущей сессией Fable 5 (`claude-fable-5`)
+  и удержан до решения MG о расширенном охвате; отревьюирован и дошлифован этой сессией — Fable 5
+  (`claude-fable-5`). ([H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md))
+- **Sangram SG-MO-001 «Склонение: обзор» — ОПУБЛИКОВАНА (виза MG 8/8 approve; H1013).**
+  [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview)
+  ([PR #262](https://github.com/gasyoun/SanskritGrammar/pull/262)): виза применена → ревизия `published`,
+  плашка кандидата снята; по карточке A4 § 3.2 переведён на реальную парадигматическую классификацию
+  (окончание Ins.Sg, покрытие 75,1 %) — реальная доля основ на -a **52,6 %** против завышенных
+  морфологических 62,9 %. Запись статьи-кандидата — в секции `[0.30.0]`, в чей тег она реально вошла
+  (см. Fixed ниже). (Opus 4.8 `claude-opus-4-8[1m]`)
+
+### Fixed
+- **CHANGELOG: дубликат заголовка `[0.29.0]` устранён** — запись SG-MO-001 «Склонение: обзор» (merged
+  [PR #255](https://github.com/gasyoun/SanskritGrammar/pull/255) ПОСЛЕ тега v0.29.0) при переносе H1015-записи
+  в 0.30.0 ([PR #257](https://github.com/gasyoun/SanskritGrammar/pull/257)) оказалась под вторым, ложным
+  заголовком `[0.29.0]`; запись-кандидат перенесена в секцию `[0.30.0]`, в чей тег она реально входит,
+  а её издательский статус (виза 8/8, [PR #262](https://github.com/gasyoun/SanskritGrammar/pull/262)) —
+  Changed-строкой этого релиза. (Fable 5 `claude-fable-5`)
+
+## [0.31.0] - 2026-07-16
+### Changed
+- **A65 advanced 2/5 → 3/5 per the house playbook (H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) is now a citable draft: abstract with first-class caveats (LLM-adjudicated verdicts vs deterministic corpus numbers, no second human annotator — stated up front), §6 reproducibility contract, §7 claim→artifact inventory (12 rows, 1 flagged gap), §8 anti-salami boundaries vs A60/A62/A63/A64, §10 references with ⬜ self-citation slots, @DECIDE banner (venue/language; A60 развязка). **Mandatory fact-check fan-out caught 2 real defects**: the headline «942 claims + 214 parses» double-counted (correct: 728 verdicted claims + 214 parses = 942 items; the source `.ai_state` line fixed in the same PR), and §59 cited the superseded H1008 figure 98.3% where the canonical H1012 parser reads 97.6%/98.4% (the two independent parsers agreeing within 1pp is now recorded as a robustness datum). (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+
+## [0.30.0] - 2026-07-16
+### Added
+- **Programme synthesis report (RU) — the H797 claim-verification programme in one document (A64 draft, H1015)** — [`REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) (+ sibling metadoc): 942 verified claims + 214 audited parses across five books, three equal lines — presentation-calibration ranking (Зализняк 0/74 > Бюлер 15/403 > Кочергина 12+24/234, with the verb-accent control pair), the measured diachrony (§207 five monotonic axes, §167 causative collapse 81→21%, the twice-replicated purāṇa epic-imitative signature, §§59/68/193 structural confirmations), and the honesty methodology (UNTESTABLE-as-instrument-spec, negative pilots with numbers, measured blockers, FINDINGS §86-88). Registered as **A65** in [Uprava/ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) (A64 was claimed concurrently by the Sangram P4 method paper). All numbers sourced from the generated registers and instrument JSONs — none hand-entered. (Fable 5 `claude-fable-5`, [H1015](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1015-Fable_SanskritGrammar_h797-programme-synthesis-report-ru_16.07.26.md))
+- **Sangram ядро W2 — обзорная статья SG-MO-001 «Склонение: обзор» — статья-кандидат (H1013, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/declension-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/declension-overview): первая обзорная статья ядра W2 — устанавливает тип «обзор» (скелет пилота минус §4 kill-gate плюс § «Карта подстатей»). Частотная рамка домена склонения по **1 790 270** словоизменённым именным токенам DCS: ед. 79,3 % / дв. **2,09 %** [2,07–2,12] / мн. 18,6 %; Nom 38,7 % + Acc 24,0 % доминируют, Dat реже всех 2,2 %; основы на **-a — 62,9 %** [62,86–63,0] (почему SG-MO-002 — флагман). Скрипт [`sg_mo_001_declension_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_001_declension_overview.py); 3 валидатора + build green. Публикация гейтится авторской визой (виза 8/8 применена позднее — см. `[0.32.0]`).
+
+## [0.29.0] - 2026-07-16
+
+### Added
+- **Sangram: style guide прозы по эталону rusgram.ru (H1003, виза P3 карточки B1+A7).**
+  [`sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+  (+ metadoc): разбор двух статей эталона («Будущее время» Стойновой 2018, «Творительный падеж») с таблицей
+  «у них — у нас», 6 правил слога (термин один раз и по-русски; процент + сырой счёт + словесное чтение;
+  технический провенанс — в `<details>`/«Данные и воспроизводимость»; абзац тезис→пример→комментарий;
+  безличный тон с лексическими хеджами; полное имя в прозе, аббревиатура в подписи), запрет «птичьего языка»
+  с 6 диагностическими признаками, чек-лист самопроверки перед PR, очередь потребителей (следующая —
+  методичка Кочергиной, по заказу MG 16-07-2026). Гайд держит СЛОГ, контракт C4 — структуру; при конфликте
+  структура за C4. **Демо на P3:** § 6 «Ограничения» статьи [perfect](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/perfect/index.mdx)
+  переписан по гайду — те же шесть оговорок и те же числа человекочитаемым слогом, техника пина свёрнута
+  в примечание (append-only `revision` в манифесте, C4). Сам гайд — под авторской визой: review-sheet
+  `sangram-prose-style-guide-visa_16.07.26` (локальный), @WAITING строка в GTD. (Fable 5 `claude-fable-5`,
+  [H1003](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1003-Fable_SanskritGrammar_sangram-style-guide-rusgram-etalon_16.07.26.md))
+- **Sangram: контрольная точка фундамента W1→W2 — ядро W2 (19 статей ①) ОТКРЫТО (H1007).**
+  [`sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx):
+  ворота входа пройдены (C2–C6 приняты + все 5 пилотов опубликованы ≥3), синтез пяти пилотов (2 положительных /
+  3 честных отрицательных, пределы EM1–EM5 подтверждены), решения по слоям аннотации § 9 (G1–G6 — ядро открывается
+  на дешёвых заплатках; G2/G3 агент-исполнимы; смета слоя класса G1 — на checkpoint 2028), и открытие ядра из
+  19 ① (4/19 произведено, 15 к производству + порядок). Отличается от годового checkpoint W2 (июль 2028). Релиз —
+  с ближайшей статьёй ядра. (Opus 4.8 `claude-opus-4-8[1m]`)
+
+### Changed
+- **RQ4 evaluation protocol § 6 — all four `@DECIDE` gates closed.** § 6.1–6.3 (Systema-hosted,
+  Systema's own Kochergina-stage students, 4-week retention) were already ruled 15-07-2026
+  ([H984](https://github.com/gasyoun/Uprava/blob/main/handoffs/H984-Sonnet_SanskritGrammar_rq4-item-bank-build_15.07.26.md));
+  a re-ask against "open call" reconfirmed the existing student-population ruling (the harness,
+  [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)/[Systema PR #536](https://github.com/gasyoun/Systema-Sanscriticum/pull/536),
+  already assumes real, retention-contactable Systema accounts). **§ 6.4 (consent wording)
+  APPROVED 16-07-2026 (MG), no revisions** — the plain-language Russian consent text drafted in
+  H987 is now finalised in [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](docs/RQ4_EVALUATION_PROTOCOL_2026.md)
+  § 6.4. Nothing blocks recruitment but flipping the `features.rq4_study` launch flag (a separate,
+  not-yet-made decision). ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
 ## [0.28.0] - 2026-07-16
 
 ### Fixed

@@ -1,0 +1,75 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:declension-overview",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-MO-001",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Склонение: категории и обзор системы",
+        "summary": "Обзорная статья SG-MO-001 (домен MO, кластер «Склонение», ядро W2). Рамка домена: 8 падежей × 3 числа × 3 рода над 1 790 270 словоизменённых именных токенов пинованного снапшота DCS. Матрица падеж×число (доминируют Nom 38,7 % и Acc 24,0 %; двойственное редко — 2,09 %) и инвентарь типов основ по РЕАЛЬНОЙ парадигме (окончание Ins.Sg, покрытие 75,1 %; тематические -a — 52,6 %) как частотная рамка, мотивирующая приоритет подстатей SG-MO-002…011. Не пилот: kill-gate отсутствует, но каждое число несёт знаменатель + пин + ДИ (C3)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:declension-overview:1",
+        "layer": "scientific",
+        "text_slp1": "devo",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s245)" },
+        "translations": { "ru": "бог (им. ед.)" },
+        "gloss_ru": "тематическая основа на -a (deva), Nom.Sg — самый частотный тип основы (62,9 %) и падеж (Nom 38,7 %).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -a-основы", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:declension-overview:2",
+        "layer": "scientific",
+        "text_slp1": "agninA",
+        "locus": { "corpus": "dcs", "work": "Agastīyaratnaparīkṣā", "ref": "AgRPar 1 (s42)" },
+        "translations": { "ru": "огнём (тв. ед.)" },
+        "gloss_ru": "основа на -i (agni), Ins.Sg — второй по частоте тип основы (8,9 %).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -i-основы", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:declension-overview:3",
+        "layer": "scientific",
+        "text_slp1": "pitrA",
+        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 6 (s4)" },
+        "translations": { "ru": "отцом (тв. ед.)" },
+        "gloss_ru": "основа на -ṛ (pitṛ, агентивно-родственная), Ins.Sg — слот SG-MO-005.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -ṛ-основы", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:declension-overview:4",
+        "layer": "scientific",
+        "text_slp1": "rAjYaS",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 6 (s3)" },
+        "translations": { "ru": "царя (род. ед.)" },
+        "gloss_ru": "согласная n-основа (rājan), Gen.Sg — слот SG-MO-006/007; сильная/слабая ступень основы.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация согласной основы", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:declension-overview:5",
+        "layer": "scientific",
+        "text_slp1": "nadIr",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Paippalāda)", "ref": "AVP 5.30 (s6)" },
+        "translations": { "ru": "рéки (им. мн.)" },
+        "gloss_ru": "основа на -ī (nadī, женский род), Nom.Pl — иллюстрирует множественное число и связь с SG-WF-005.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -ī-основы", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": [
+      { "date": "2026-07-16", "kind": "revision",
+        "note_ru": "Виза A4: инвентарь основ § 3.2 переведён с приближения по финали леммы на реальную парадигматическую классификацию (окончание Ins.Sg, покрытие 75,1 %); реальная доля -a 52,6 % против прежних 62,9 %." },
+      { "date": "2026-07-16", "kind": "published",
+        "note_ru": "Авторская виза (MG) 8/8 approve получена — статья опубликована; плашка кандидата снята." }
+    ]
+  }
+}

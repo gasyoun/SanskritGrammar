@@ -1,0 +1,139 @@
+{
+  "study": "SG-MO-023 «Именные формы: -ta/-na причастия» — past passive participle (core W2 ①, content)",
+  "toc_ref": "SG-MO-023",
+  "kind": "content article (no kill-gate)",
+  "method": "VerbForm=Part & tense IS NULL, stem-strip (a-/ā-stem ending removed), stem-final t→-ta / n→-na; lower bound (excludes sandhi-assimilated -dha/-ḍha/-bdha/-gdha)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "participle_system": {
+    "verbform_part_total": 341556,
+    "tense_dist": {
+      "None": 266660,
+      "Fut": 1575,
+      "Past": 9112,
+      "Pres": 64209
+    },
+    "note": "tense marks the PRESENT participle (Pres); the -ta/-na ppp is in the tense=NULL bulk"
+  },
+  "denominators": {
+    "tense_null_participles": 266660,
+    "ta_na_ppp_lower_bound": 219902,
+    "ta": 204861,
+    "na": 15041,
+    "ta_na_ratio": 13.6,
+    "share_of_tense_null": 82.5,
+    "share_of_all_participles": 64.4,
+    "distinct_roots": 4742,
+    "non_tn_stem_remainder": 46758
+  },
+  "case_distribution": {
+    "Nom": 125756,
+    "Cpd": 33363,
+    "Acc": 32176,
+    "Loc": 13604,
+    "Ins": 7527,
+    "Gen": 5729,
+    "Abl": 692,
+    "Dat": 646,
+    "Voc": 407,
+    "Cpd?": 2
+  },
+  "top_ppp_roots": [
+    {
+      "root": "vac",
+      "ppp_tokens": 8734
+    },
+    {
+      "root": "kṛ",
+      "ppp_tokens": 8655
+    },
+    {
+      "root": "gam",
+      "ppp_tokens": 6781
+    },
+    {
+      "root": "yuj",
+      "ppp_tokens": 4004
+    },
+    {
+      "root": "sthā",
+      "ppp_tokens": 3889
+    },
+    {
+      "root": "jan",
+      "ppp_tokens": 3722
+    },
+    {
+      "root": "han",
+      "ppp_tokens": 3151
+    },
+    {
+      "root": "smṛ",
+      "ppp_tokens": 3031
+    },
+    {
+      "root": "prāp",
+      "ppp_tokens": 2798
+    },
+    {
+      "root": "āgam",
+      "ppp_tokens": 2328
+    },
+    {
+      "root": "bhū",
+      "ppp_tokens": 2143
+    },
+    {
+      "root": "pravac",
+      "ppp_tokens": 1884
+    },
+    {
+      "root": "mṛ",
+      "ppp_tokens": 1743
+    },
+    {
+      "root": "dā",
+      "ppp_tokens": 1734
+    },
+    {
+      "root": "hā",
+      "ppp_tokens": 1406
+    },
+    {
+      "root": "ji",
+      "ppp_tokens": 1293
+    },
+    {
+      "root": "śru",
+      "ppp_tokens": 1282
+    },
+    {
+      "root": "muc",
+      "ppp_tokens": 1242
+    },
+    {
+      "root": "man",
+      "ppp_tokens": 1240
+    },
+    {
+      "root": "saṃyuj",
+      "ppp_tokens": 1165
+    }
+  ],
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "EM5_class_not_tagged": "DCS does not distinctly tag the -ta/-na class; identified by stem — a surface method",
+    "lower_bound": "excludes sandhi-assimilated ppp (labdha/rūḍha/baddha/dagdha: -dha/-ḍha/-bdha/-gdha) — true count is higher",
+    "declension": "ppp declines as a-stem (m/n) + ā-stem (f) — see SG-MO-002; not re-generated here",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

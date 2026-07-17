@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:absolutive",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-026",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Именные формы глагола: абсолютив (-tvā / -ya)",
+        "summary": "Статья ядра W2 SG-MO-026 (домен MO, кластер «Именные формы глагола»). Абсолютив (деепричастие, -tvā/-ya) по пинованному снапшоту DCS: 102 054 токена, форма несклоняемая. Ключевой результат — корпус подтверждает традиционное правило алломорфии на ≈98 %: -tvā при простом корне (34 293/34 816 = 98,5 % без преверба), -ya/-tya при глаголе с превербом (56 501/57 790 = 97,8 % с превербом), по сопоставлению суффикса с lemma.preverbs. Распределение: -ya/-tya 56,6 %, -tvā 34,1 %, прочее 8,8 %, редкий -am 0,5 %. Форма несклоняема — парадигмы нет; традиционный слой — Уитни §§989–995. Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:absolutive:1",
+        "layer": "scientific",
+        "text_slp1": "kftvA",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s5)" },
+        "translations": { "ru": "сделав (kṛ, -tvā, простой корень)" },
+        "gloss_ru": "абсолютив на -tvā от простого (несоставного) корня √kṛ: kṛ-tvā. -tvā — суффикс при отсутствии преверба (98,5 % таких токенов).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -tvā, простой корень", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:absolutive:2",
+        "layer": "scientific",
+        "text_slp1": "gatvA",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 1 (s6)" },
+        "translations": { "ru": "придя, уйдя (gam, -tvā, простой корень)" },
+        "gloss_ru": "абсолютив на -tvā от простого √gam: ga-tvā (слабая ступень). Простой корень → -tvā.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -tvā, простой корень", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:absolutive:3",
+        "layer": "scientific",
+        "text_slp1": "praRamya",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 7 (s1)" },
+        "translations": { "ru": "поклонившись (pra-nam, -ya, составной)" },
+        "gloss_ru": "абсолютив на -ya от глагола с превербом pra-√nam: pra-ṇam-ya (ṇ по ретрофлексии). Преверб → -ya (97,8 % токенов -ya/-tya составные).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ya, преверб pra", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:absolutive:4",
+        "layer": "scientific",
+        "text_slp1": "Agatya",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 15 (s9)" },
+        "translations": { "ru": "придя (ā-gam, -tya, составной)" },
+        "gloss_ru": "абсолютив на -tya от ā-√gam: ā-ga-tya. После краткогласного корня преверб даёт вариант -tya (аллофон -ya).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -tya, преверб ā", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:absolutive:5",
+        "layer": "scientific",
+        "text_slp1": "vihAya",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s5)" },
+        "translations": { "ru": "оставив, покинув (vi-hā, -ya, составной)" },
+        "gloss_ru": "абсолютив на -ya от vi-√hā: vi-hā-ya. Преверб vi → -ya. Частая форма в значении «отбросив, оставив».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; -ya, преверб vi", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}

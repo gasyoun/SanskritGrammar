@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:pronouns",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-MO-010",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Склонение: местоимения",
+        "summary": "Статья ядра W2 SG-MO-010 (домен MO, кластер «Склонение»). Склонение местоимений по пинованному снапшоту DCS: закрытый класс из 38 лемм / 544 999 токенов. Ключевой результат: местоимения — ИСКЛЮЧЕНИЕ из предела EM3 — медиана 12,5 аттестованных клеток на лемму против 1 у существительных (актив G2), 39,5 % лемм ≥18 клеток; причина — 38 высокочастотных лемм (≈14 300 токенов на лемму). Супплетивные основы (aham↔mad, sa/sā/tat↔tad) и особые местоимённые окончания (-smai/-smāt/-smin/-ṣām); для закрытого класса порождение ≡ традиция (Уитни гл. VII). Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:pronouns:1",
+        "layer": "scientific",
+        "text_slp1": "aham",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 1 (s1)" },
+        "translations": { "ru": "я (личное 1 л., Nom. ед.)" },
+        "gloss_ru": "личное местоимение 1 л.: Nom. ед. aham — чистый супплетивизм (косвенная основа ma-/asma-). DCS лемматизирует по косвенной основе: лемма mad.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; личное 1 л., Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:pronouns:2",
+        "layer": "scientific",
+        "text_slp1": "tvam",
+        "locus": { "corpus": "dcs", "work": "Acintyastava", "ref": "Acintyastava 1 (s20)" },
+        "translations": { "ru": "ты (личное 2 л., Nom. ед.)" },
+        "gloss_ru": "личное местоимение 2 л.: Nom. ед. tvam (косвенная основа tva-/yuṣma-). Лемма tvad.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; личное 2 л., Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:pronouns:3",
+        "layer": "scientific",
+        "text_slp1": "tasya",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s99)" },
+        "translations": { "ru": "его, того (указательное, муж., Gen. ед.)" },
+        "gloss_ru": "указательное tad «тот»: Gen. ед. муж. tasya — Nom. saḥ без t, косвенные на ta- с местоимённым окончанием. Самое частотное местоимение (184 809 токенов, 21/24 клетки).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; указательное, Gen. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:pronouns:4",
+        "layer": "scientific",
+        "text_slp1": "kaH",
+        "locus": { "corpus": "dcs", "work": "Acintyastava", "ref": "Acintyastava 1 (s15)" },
+        "translations": { "ru": "кто? (вопросительное, муж., Nom. ед.)" },
+        "gloss_ru": "вопросительное ka: Nom. ед. муж. kaḥ (ср. род kim). Склоняется по образцу tad.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; вопросительное, Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:pronouns:5",
+        "layer": "scientific",
+        "text_slp1": "yaH",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1" },
+        "translations": { "ru": "который (относительное, муж., Nom. ед.)" },
+        "gloss_ru": "относительное yad: Nom. ед. муж. yaḥ. Склоняется по образцу tad (косвенные ya-).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; относительное, Nom. ед.", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": []
+  }
+}

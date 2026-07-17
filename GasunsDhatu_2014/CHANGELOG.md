@@ -9,6 +9,250 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.19.0] - 2026-07-17
+
+### Changed
+- **Гл. 3 §3.2/Выводы — одобрены автором 17-07-2026, без правок.** Closes a gap that fell through
+  the cracks: the §3.2/Выводы rework (H378, PR #91, 08-07-2026) and its later stitch to Гл. 7
+  (H1082, PR #319, 17-07-2026) both shipped with footnotes stating "Финальную редакцию визирует
+  автор," but neither ever went through an explicit visa-apply pass like Гл. 4-7 did — found on
+  a routine content check, not assumed either way. Footnotes `[^ed3d]`/`[^ed3e]` updated with
+  approval note. §3.1/§3.3/§3.4 (the bulk of the chapter, original 2014 prose) remain queued for
+  the human RWS style pass (269 remarks) — unaffected by this visa.
+  ([H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)/[H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+## [0.18.0] - 2026-07-17
+
+### Changed
+- **Введение — рамка «Три вопроса и две части» одобрена автором 16-07-2026, без правок.** Footnote
+  `[^edvv1]` updated with approval note, `BOOK_PLAN.md` Введение закрыто. **Это последняя
+  глава-уровневая виза M03 — весь черновик рукописи (Введение → Часть I → Часть II → Заключение)
+  теперь завизирован; остаётся только сквозная человеческая литредактура (RWS) и финальная сверка
+  чисел при вёрстке.**
+  ([H1043](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1043-Opus_SanskritGrammar_m03-vvedenie-crosscheck_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+### Added
+- **Гл. 2 §2.1/§2.2 — слой данных 2026 для устройства перечня (последний пробел
+  агентского rework Части I).** После рекомпоновки H991 новые §2.1 «Устройство dhātupāṭha»
+  и §2.2 «Индийские способы цитирования» (бывшие §1.4/§1.2) оставались без слоя 2026 г. —
+  вердикт пилота «историография не переписывается» относился к другим секциям (ныне
+  §1.2/§1.4 Гл. 1). Добавлены измеренные слои по методу пилота: повторяемость
+  аупадешика-форм в цифровой дхатупатхе (224 формы / 517 вхождений / 183 в >1 гане; повторы
+  293 = разница «2 259 дхату ↔ 1 966 форм»), резко асимметричное наполнение десяти ган
+  (bhvādi 1 166 + curādi 509 = 74,1 %; tanādi 10), измеренные соответствия справке
+  Макдонелла «~2000 против ~800» (809/935 в MW, 590/935 в DCS) и исчислимость «призрачных»
+  единиц реестров (259 словарно-грамматических корней без корпусной аттестации, Гл. 6).
+  Числа посчитаны новым скриптом `revision-2026/dhatupatha_gana_stats.py` (+ provenance
+  JSON); карта данных — `revision-2026/CH2_DATA_MAP.md`; сноски `[^ed21a]`/`[^ed21b]`/`[^ed22a]`;
+  снят дословный дубль-предложение в §2.1 (errata, `found_by: H1069`). Антисаламная граница
+  сохранена: глубокая работа с vidyut — Гл. 5, корпус — Гл. 6.
+  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
+- **Чеклист готовности к подаче в «Нестор-Историю»** —
+  `revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md`: аудит рукописи/аппарата/
+  библиографии/издательского цикла против фаз `/book-press-prep`; машинная часть исчерпана
+  с точностью до двух предподачных проходов (ГОСТ-библиография, финальная сверка чисел),
+  человеческий остаток — именованные малые действия (RWS-литредактура, механика Фазы 3;
+  виза рамки Введения уже дана — GTD RESOLVED 17-07-2026).
+  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
+- **Гл. 3 «Морфонологическая запись корней» — стежок с Гл. 7.** Closes the last open gap in
+  Part I noted in `BOOK_PLAN.md`: the §3.2/Выводы line «Уитни описывает → Зализняк
+  абстрагирует → Толчельников порождает» (rewritten by H378, 08-07-2026, five days before
+  Ch. 7 existed) now gets a fourth, applied link forward to the Zaliznyak-model root index
+  (Гл. 7, approved 16-07-2026, H1037): the code axes discussed in §3.2 (ряд чередования,
+  seṭ/aniṭ, полноизменяемость) are exactly what the index applies over 749/930 crosswalk
+  roots (80,5 %). Two new footnotes, `[^ed3d]`/`[^ed3e]` (existing `[^ed3d]` relabelled
+  `[^ed3e]` to keep citation order); no empirical claim changed, §3.1/§3.3/§3.4 prose
+  untouched (still awaits the human RWS style pass, 269 findings, per `CH3_DATA_MAP.md`).
+  ([H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+## [0.17.0] - 2026-07-16
+
+### Changed
+- **Заключение — блок «Итог двух частей» одобрен автором 16-07-2026, без правок.** Footnote
+  `[^edz2]` updated with approval note, `BOOK_PLAN.md` Заключение закрыто. Синтез книги (три
+  вопроса дважды; 809 MW / 590 DCS / 550 ядро 58,8 %; класс 376/26; указатель Зализняка как
+  выполненное «дальнейшее направление работы» 2014 г.) остаётся неизменным.
+  ([H1039](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1039-Opus_SanskritGrammar_m03-conclusion-two-parts_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+- **Гл. 7 «Указатель Зализняка» — одобрена автором 16-07-2026, на исправленный текст.** Виза дана
+  после уточнения охвата §7.1 (749/930, PR #298). Draft banner removed, `[^ed7draft]` footnote
+  updated with approval note, `BOOK_PLAN.md` Часть II Гл. 7 закрыта. **Все четыре главы Части II
+  теперь одобрены (Гл. 4–7).**
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+### Fixed
+- **Гл. 7 «Указатель Зализняка» — уточнён охват трёх осей (§7.1, до визы).** Проверка данных
+  (`morphoclass_crosswalk_1975_2014_2026.csv` vs `WhitneyRoots/crosswalk/roots.csv`) показала: 876
+  записей файла дают **749 различных** корней Уитни (не 876 — 107 номеров дублируются гомонимами),
+  и все 749 лежат внутри 930-корневого хаба, то есть реальный охват трёх осей — **749/930 (80,5 %)**,
+  а не полные 930, как можно было понять из прежней формулировки «строится на 930 корнях». Также
+  добавлен пропущенный 1 корень со статусом `unknown` в разбивку полноизменяемости (было
+  429+424+22=875, стало +1 unknown=876). Формулировки в §7.1, Выводах и `[^ed7b]` уточнены; книжное
+  утверждение «930 корней» сохранено как верхняя рамка охвата (не весь словник), а не как заявление
+  о полноте разметки. Найдено при проверке главы перед визой (MG попросил проверить расхождение
+  930/876 до одобрения).
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+## [0.16.0] - 2026-07-16
+
+### Changed
+- **Веха: первый полный черновик рукописи собран и сверён — готовность M03 повышена 3/5 → 4/5.**
+  Каркас монографии замкнут по всем четырём осям: **Введение → Часть I → Часть II → Заключение**,
+  канон-числа сведены сквозняком (935 корней Уитни · 809 MW / 590 DCS / 550 ядро · класс 376/26).
+  Часть I в прозе (Обзор, Гл. 1–3 + Прил. 7), **Часть II — все 4 новые главы в прозе** (Гл. 4/5
+  завизированы, Гл. 6/7 черновики ждут визы), Заключение и Введение сшиты. По рубрике готовности
+  4/5 = *revising / pre-submission*: агентская сборка исчерпана, **остаток до 5/5 — только
+  человеческое** (авторские визы Гл. 6–7 + рамок, сквозная RWS-литредактура, финальная сверка +
+  вёрстка Фазы 3). Отражено в хабах Uprava — [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md),
+  [GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md),
+  [handoffs/README.md](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md) — и в репозиторном
+  [`.ai_state.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md).
+  (Opus 4.8 `claude-opus-4-8[1m]`)
+- **Гл. 6 «Корпусная аттестация корней» — одобрена автором 16-07-2026, без правок.** Draft banner
+  removed, `[^ed6draft]` footnote updated with approval note, `BOOK_PLAN.md` Часть II Гл. 6
+  закрыта. Content unchanged — 590/935 DCS-attested, 550 ready core, 259 corpus-absent,
+  gaṇa/preterite corpus-irrecoverability (SG-MO-013/017). Closes the three-witness arc opened in
+  Гл. 4.
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+- **Гл. 5 «Дхатупатха и паниниевская традиция как данные» — одобрена автором 16-07-2026, без
+  правок.** Draft banner removed, `[^ed5draft]` footnote updated with approval note,
+  `BOOK_PLAN.md` Часть II Гл. 5 закрыта. Content unchanged — vidyut дхатупатха 2 259, аудит
+  пальсуле-центризма конкорданса (añc подтверждён, and согласуется, ast уточнён), честный предел
+  it-stripped джойна (454/930).
+  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+## [0.15.0] - 2026-07-16
+### Changed
+- **Введение получило рамку двух частей** (сверка с финальной аркой). Перед формально-
+  квалификационным аппаратом добавлен абзац «**Три вопроса и две части**» (`[^edvv1]`): книга
+  строится вокруг трёх вопросов (*что такое корень · сколько · как записывать*) и отвечает на них
+  дважды — Часть I (наука до 2014, пересчитано) и Часть II, где корень проверяют **три свидетеля**
+  (грамматика/словарь/корпус), со ссылками на Гл. 4–7 и Заключение. Формальный аппарат
+  (объект/предмет/положения/задачи, визы Фазы 0) сохранён. **Сверка ссылок Введения:** §2.3/§3.2 и
+  Гл. 1/Гл. 3 актуальны после рекомпоновки — dangling-ссылок не осталось. Ждёт визы автора.
+  ([H1043](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1043-Opus_SanskritGrammar_m03-vvedenie-crosscheck_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.14.0] - 2026-07-16
+
+### Changed
+- **Гл. 4 «Кросс-уок и омонимия корней» — одобрена автором 16-07-2026.** Виза дана на
+  канонический текст ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md)
+  fixed a self-inconsistency: §4.1 replaced `roots.csv`-proxy 497/930 with the canonical
+  `MWS/root_crosswalk` 550/935 = 58,8 %, matching the book-wide 590/935 DCS figure) — черновик-баннер
+  и сноска `[^ed4draft]` сняты/обновлены; `BOOK_PLAN.md` Часть II Гл. 4 закрыта.
+  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+### Added
+- **Приложение 7 — печатный лист свёрстан (третий проход)**: `APPENDIX7_PRINT_SHEET.html`
+  ([`revision-2026/mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py)),
+  A4 трёхколоночная вёрстка всех 750 подлинных корней MW, по образцу листов опечаток
+  ([H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md)).
+  MG ruled **Route 2** on the H1018 scope question (the appendix page's own text argues against
+  inlining the full list into the book body — the print sheet is a separate asset, book body
+  unchanged) — page + footnote `[^ed2]` updated with the link.
+  ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+
+### Changed
+- **Приложение 7 — обогащение доведено: join по SLP1 + периоды аттестации (H1034).** Сверка
+  генератора `mw_genuine_roots.py` переведена с IAST-поверхностного ключа на **SLP1**
+  (`k1_slp1` ↔ `root_slp1`, устойчив к диакритике/нумерации омонимов); совокупные числа
+  **не изменились** (704 различных, 482 аттестованы, 294 ядро / 101 хвост — SLP1 даёт тот же
+  результат, но принципиальнее). Добавлены: колонка `dcs_periods` в
+  [`mw_genuine_roots.tsv`](revision-2026/mw_genuine_roots.tsv), **распределение по периодам
+  аттестации** (RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437) на странице
+  «Приложения издания 2026», и сводка покрытия
+  [`mw_genuine_roots_enrich_provenance.json`](revision-2026/mw_genuine_roots_enrich_provenance.json)
+  (покрытие · периоды · топ-20 по частоте). Это согласование параллельного второго прохода
+  [0.8.1] с независимой SLP1-реализацией того же H1006-задела (виза автора: reconcile, а не дубль).
+
+## [0.13.0] - 2026-07-16
+### Changed
+- **Заключение сшивает две части** — добавлен блок «**Итог двух частей**» (`[^edz2]`) после
+  «Верификации положений». Книга отвечает на три вопроса дважды (Часть I — наука до 2014,
+  пересчитано; Часть II — цифровая эпоха); корень проверяют **три свидетеля** — грамматика,
+  словарь, корпус, — сходящиеся на **550 из 935 (58,8 %)** «готовом ядре», с согласием класса
+  **376 : 26**; прикладной итог — указатель по модели Зализняка (Гл. 7). Открытым названо: тождество
+  корня в омонимии (потолок расщепления), класс и претериты из корпуса, полный список «потерянных»
+  пальсулевских корней. «Цифровое послесловие 2026» переориентировано: четыре направления «дальнейшей
+  работы» **развёрнуты в главы Части II** (Гл. 4–7), карта датасетов сохранена как сводка. Числа —
+  канонические (MWS/root_crosswalk + главы Части II), проверены скриптом. Ждёт визы автора.
+  ([H1039](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1039-Opus_SanskritGrammar_m03-conclusion-two-parts_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.12.0] - 2026-07-16
+### Added
+- **Часть II завершена вчерне — Глава 7 «Грамматический указатель корней по модели Зализняка»
+  (черновик)**, прикладная кульминация. Новая страница
+  [`07_glava7_ukazatel-zaliznyaka.mdx`](07_glava7_ukazatel-zaliznyaka.mdx) + план
+  [`revision-2026/CH7_PLAN_zaliznyak_index.md`](revision-2026/CH7_PLAN_zaliznyak_index.md).
+  Реализует «дальнейшее направление работы» Заключения 2014 г.: компактный код по модели Зализняка
+  (`ряд · seṭ/aniṭ · полноизменяемость · схема ударения`) на **930 корнях кросс-уока** (жёсткая
+  рамка). Проверенные скриптом оси: **18 рядов** чередования (A1 153, U1 140 …; уверенность
+  446/410/20), seṭ/aniṭ 308/287/176, полноизменяемость 429/424/22. Ударение — самая незакрытая ось:
+  **18 правил Уитни** (схемы a–f, сверка на 19 падежных клетках) + акцентуированная Ригведа
+  (VedaWeb), поскольку корпус акцента не несёт (Гл. 6). A56 (номинальный индекс, kosha) и Гл. 3
+  §3.3 — ссылка, не пересказ; точный список разрядов сверить с оригиналом до публикации. Ждёт визы.
+  **С этой главой все 4 главы Части II начаты вчерне.**
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.11.0] - 2026-07-16
+### Added
+- **Часть II, Глава 6 «Корпусная аттестация корней» (черновик)** — третья новая глава; замыкает
+  арку трёх свидетелей (Гл. 4). Новая страница [`06_glava6_korpusnaya-attestaciya.mdx`](06_glava6_korpusnaya-attestaciya.mdx)
+  + план [`revision-2026/CH6_PLAN_corpus_attestation.md`](revision-2026/CH6_PLAN_corpus_attestation.md).
+  Тезис: корпус — свидетель, который *подтверждает* ~2/3 словника **и** честно очерчивает свой
+  потолок. Канонические числа (MWS/root_crosswalk): **590/935 (63,1 %)** аттестованы в DCS, **550
+  (58,8 %)** «готовое ядро» (MW+DCS), **259** словарно-грамматических корней корпусно отсутствуют;
+  продуктивность топ-50 ≈ 70 %. Пределы (ссылка на SANGRAM, не пересказ): класс gaṇa корпусно
+  невосстановим (SG-MO-013, ≈ 38,9 %), претериты сливаются под `Tense=Past` (SG-MO-017), без
+  акцентуации неразличимы классы I/VI и IV/пассив (A06/A32). Ждёт визы автора.
+### Changed
+- **Гл. 4 — числа покрытия приведены к каноническим** (при сверке для Гл. 6): было 497/930 (53,4 %)
+  по `roots.csv`, стало **550/935 (58,8 %)** по MWS/root_crosswalk (809 MW, 590 DCS) — устранено
+  расхождение с общекнижным 590/935; сноска `[^ed4a]` обновлена.
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.10.0] - 2026-07-16
+### Added
+- **Часть II, Глава 5 «Дхатупатха и паниниевская традиция как данные» (черновик)** — вторая новая
+  глава. Новая страница [`05_glava5_dhatupatha-panini.mdx`](05_glava5_dhatupatha-panini.mdx) + план
+  [`revision-2026/CH5_PLAN_dhatupatha_panini.md`](revision-2026/CH5_PLAN_dhatupatha_panini.md).
+  Тезис: туземная традиция впервые становится **машиночитаемыми данными**. Проверенные скриптом
+  опоры: цифровая дхатупатха vidyut (**2 259 дхату**, адресация `gaṇa.sūtra`) + резолвер сутр
+  Аштадхьяи. **Аудит пальсуле-центризма** конкорданса (отзыв С. А. Крылова): `añc` — 5 дхату
+  семейства (4añc восстановим, упрёк подтверждён); `and` — только-Пальсуле (согласуется); `ast` —
+  **есть** в паниниевской дхатупатхе (уточняет отзыв). Честный предел: наивный it-stripped джойн
+  454/930, несовпавшие = √i/√ah/√an (аблаут, не потеря) → нужна нормализация ступеней; полный
+  список «потерянных корней» — задел статьи-компаньона A39. Деривация (A35) и микроструктура (A04)
+  — ссылка, не пересказ (антисаламная граница с M01). Ждёт визы автора.
+  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.9.0] - 2026-07-16
+### Added
+- **Часть II начата — Глава 4 «Кросс-уок и омонимия корней» (черновик)** — первая новая глава
+  «Корня в цифровую эпоху», написана из готовых данных 2026 г. (не rework). Новая страница
+  [`04_glava4_kross-uok-omonimiya.mdx`](04_glava4_kross-uok-omonimiya.mdx) + план
+  [`revision-2026/CH4_PLAN_crosswalk_homonymy.md`](revision-2026/CH4_PLAN_crosswalk_homonymy.md).
+  Тезис: корень проверяют **три свидетеля** — грамматика, словарь, корпус. Проверенные скриптом
+  числа: **497/930 (53,4 %)** корней Уитни имеют и MW-статью, и корпусную аттестацию; класс
+  презенса согласуется **376 : 26** (конкорданс MW↔Уитни, актив MWS/SANGRAM — цитируется, не
+  выводится); омонимия расходится по источникам (Пальсуле 933 · Уитни 67 · EWA 50 · Юэ 38 ·
+  Эдгрен 18), 143 помечены, автоматическое токенное расщепление упирается в потолок (≈5/38).
+  Пределы поданы как результат. Пишется в связке со статьёй-компаньоном A39; ждёт визы автора.
+  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
+## [0.8.1] - 2026-07-16
+### Changed
+- **Приложение 7 — обогащение подлинных корней MW** (второй проход). К каждому корню
+  присоединены **корпусная частота/ранг DCS** ([`roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv))
+  и **число словарей-источников** ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv))
+  через генератор `mw_genuine_roots.py` (join по `root_iast`). Кросс-таб по 704 различным
+  подлинным корням: **482 (68 %)** засвидетельствованы в DCS, **345** согласованы ≥4 словарями;
+  их пересечение -- **ядро из 294 корней** (подлинные + корпусно аттестованные + межсловарно
+  согласованные), на другом полюсе -- **хвост из 101** (подлинные по MW, но корпусно
+  неаттестованные и известные одному источнику). «Подлинность» градуируется тремя свидетелями.
+  Выжимка на странице «Приложения издания 2026» переработана в обогащённую (частота · словари);
+  TSV получил колонки `dcs_freq`/`dcs_rank`/`n_dicts`. `ERRATA.md` без изменения счёта.
+  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+
 ## [0.8.0] - 2026-07-16
 ### Added
 - **Приложение 7 «Подлинные корни словаря Монье-Уильямса»** — начато по визе автора (заметка

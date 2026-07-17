@@ -48,27 +48,34 @@ sidebar_label: "Приложения 2026 (состав)"
 
 Оговорка «2 113 корневых статей MW, из которых подлинных около 750» (Гл. 1, §1.2/§1.5; свод §2.3) опирается не на наше суждение, а на **собственную разметку** кёльнской цифровой версии словаря: в таблице корней `mw_roots.tsv` колонка `verb_type` разделяет **подлинные корни** (`genuineroot` -- 750) и **вторичные** (`root` -- 1 363). К вторичным словарь относит деноминативы (напр., *anyathaya* «поступать иначе»), каузативные основы (*arpaya* -- каузатив √*ṛ*), единицы без собственного настоящего класса (класс «0») и прочие искусственно внесённые в корневой список формы; подлинные же корни несут настоящий глагольный класс индийской традиции.
 
-Ниже -- иллюстративная выжимка (★ = подлинный по разметке MW); печатать полный список 750 корней в теле главы нецелесообразно -- он вынесен в цифровой носитель (и в компактный печатный список для вёрстки).
+Ниже -- иллюстративная выжимка (★ = подлинный по разметке MW), где подлинные корни **обогащены** корпусной частотой DCS и межсловарным согласием; печатать полный список 750 корней в теле главы нецелесообразно -- он вынесен в цифровой носитель и в отдельный печатный лист (см. ниже). Строки охватывают спектр от ядра (частотные, признанные многими словарями) до хвоста (подлинные по MW, но корпусно неаттестованные):
 
-| Корень | `verb_type` (MW) | Подлинный | Классы / примечание |
-|---|---|---|---|
-| √*aṃś* | `genuineroot` | ★ | 10P, 10Ā |
-| √*akṣ* | `genuineroot` | ★ | 1, 5 |
-| √*ag* | `genuineroot` | ★ | 1P |
-| √*agh* | `genuineroot` | ★ | 10P |
-| √*anyathaya* | `root` | -- | класс 0 (деноминатив «поступать иначе») |
-| √*arpaya* | `root` | -- | класс 0 (каузативная основа √*ṛ*) |
-| √*āñch* | `root` | -- | класс 0 |
+| Корень | Подлинный (MW) | Классы | DCS частота (ранг) | Словарей |
+|---|---|---|---|---|
+| √*kṛ* | ★ | I, II, V, VIII | 40 799 (#1) | 7 |
+| √*bhū* | ★ | I | 40 393 (#2) | 9 |
+| √*gam* | ★ | I, II | 18 341 (#5) | 8 |
+| √*ad* | ★ | 2P | 699 (#233) | 5 |
+| √*aj* | ★ | 1P | 55 (#1741) | 7 |
+| √*agh* | ★ | 10P | -- | 2 |
+| √*abhr* | ★ | 1P | -- | 2 |
+| √*anyathaya* | -- (вторичн.) | 0 (деноминатив) | -- | 0 |
 
 **Итог разметки MW: 750 подлинных : 1 363 вторичных** из 2 113 корневых статей -- то самое «отсеивание производных» при подсчёте подлинных корней (§1.5).
 
+Обогащение подлинных корней корпусной частотой (DCS) и межсловарным согласием (`root_oracle`) показывает, что сама «подлинность» по словарю распадается по степени внешней поддержки. Из **704** различных подлинных корней **482 (68 %)** засвидетельствованы в корпусе DCS (медиана частоты 150, максимум 40 799 у √*kṛ*), а **345** подтверждаются согласием четырёх и более словарей. Их пересечение даёт **ядро из 294 корней** -- подлинных по MW, засвидетельствованных корпусом и согласованных между словарями; на другом полюсе -- **хвост из 101 корня**, подлинных по разметке словаря, но ни разу не встретившихся в корпусе и известных лишь одному источнику. Тем самым «подлинность» оказывается не бинарным ярлыком, а величиной, градуируемой тремя свидетелями -- словарём, корпусом и межсловарным согласием (ср. Гл. 1, §1.5).
+
+Распределение подлинных корней по периодам аттестации DCS (корень может относиться к нескольким) показывает сквозное ядро -- оно засвидетельствовано от Ṛgveda до классического языка почти равномерно: RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437. Периоды приведены в обогащённых данных (колонка `dcs_periods`) для каждого корня.
+
 Полные данные (воспроизводимо):
 
-- полный размеченный список всех 2 113 корней MW с флагом `genuine` -- [`revision-2026/mw_genuine_roots.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv);
-- печатный компактный список 750 подлинных корней (★, по алфавиту) -- [`revision-2026/mw_genuine_roots_list.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md);
-- генератор (сверка воспроизводима) -- [`revision-2026/mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py);
+- полный размеченный список всех 2 113 корней MW с флагом `genuine` и обогащением (`dcs_freq`, `dcs_rank`, `n_dicts`, `dcs_periods`) -- [`revision-2026/mw_genuine_roots.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv);
+- сводка покрытия, распределение по периодам и топ-20 по частоте -- [`revision-2026/mw_genuine_roots_enrich_provenance.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_enrich_provenance.json);
+- печатный компактный список 750 подлинных корней (★, по алфавиту; классы · частота DCS · число словарей) -- [`revision-2026/mw_genuine_roots_list.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md);
+- **отдельный печатный лист** (A4, трёхколоночная вёрстка, по образцу листов опечаток) -- [`revision-2026/APPENDIX7_PRINT_SHEET.html`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/APPENDIX7_PRINT_SHEET.html) ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md));
+- генератор (сверка воспроизводима) -- [`revision-2026/mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py) + [`revision-2026/mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py);
 - источник -- [`csl-orig, v02/mw/mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw_roots.tsv) (колонка `verb_type`).
 
 [^ed1]: Страница добавлена при подготовке издания 2026 г. как карта комплектования приложений и цифровой заменитель полного конкорданса (Приложение 3). Выжимка построена по [WhitneyRoots/crosswalk/roots.csv](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv) (930 корней; срез DCS 2026 г.); прочерк означает, что соответствующий идентификатор в датасете для данной строки не заполнен. -- Прим. ред. 2026.
 
-[^ed2]: Приложение 7 добавлено по визе автора от 16-07-2026 (визовый лист Гл. 1, заметка к §1.5, H1006). Разделение подлинных и вторичных корней -- **собственная разметка** кёльнской цифровой версии MW (колонка `verb_type` таблицы [`mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw_roots.tsv): `genuineroot` = 750, `root` = 1 363), а не суждение настоящего издания; счёт 750 + 1 363 = 2 113 совпадает с приводимым в §1.2/§2.3. Списки и флаг воспроизводятся генератором [`mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py). Обогащение корпусной частотой и межсловарным согласием (root_oracle) -- задел следующего прохода. -- Прим. ред. 2026.
+[^ed2]: Приложение 7 добавлено по визе автора от 16-07-2026 (визовый лист Гл. 1, заметка к §1.5, H1006). Разделение подлинных и вторичных корней -- **собственная разметка** кёльнской цифровой версии MW (колонка `verb_type` таблицы [`mw_roots.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/mw/mw_roots.tsv): `genuineroot` = 750, `root` = 1 363), а не суждение настоящего издания; счёт 750 + 1 363 = 2 113 совпадает с приводимым в §1.2/§2.3. Списки, флаг и обогащение воспроизводятся генератором [`mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py). **Обогащение выполнено (второй проход):** к каждому корню добавлены корпусная частота/ранг и периоды аттестации DCS ([`WhitneyRoots/crosswalk/roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv)) и число словарей-источников ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv)); отсюда кросс-таб ядро/хвост (294/101) и распределение по периодам (сводка -- [`mw_genuine_roots_enrich_provenance.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_enrich_provenance.json)). Сопоставление ведётся по форме SLP1 (устойчивой к диакритике и нумерации омонимов); омонимы, делящие одну SLP1-форму, разделяют одно значение частоты (как в Приложении 3). **Печатный лист (третий проход, H1018, MG «Route 2»):** полный список 750 корней вынесен отдельным A4-листом [`APPENDIX7_PRINT_SHEET.html`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/APPENDIX7_PRINT_SHEET.html), сгенерированным [`mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py) по образцу листов опечаток ([H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md)) -- решение автора: полный список остаётся вне тела книги, но получает собственный печатаемый носитель. -- Прим. ред. 2026.

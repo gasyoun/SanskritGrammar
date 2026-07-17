@@ -9,6 +9,84 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-07-16
+### Added
+- **Полный аудит раздела самас по кодбуку Лейтана (H1050, Fable 5 `claude-fable-5`; директива
+  MG из адъюдикации A65: «весь раздел по самасам неверный — проверить все по Лейтану»).**
+  Реестр вырос 234 → 260: HK-234..HK-259 добирают все 26 нереестрованных утверждений
+  занятий XXX-XXXIII, XXXVIII, XXXX. **Секционный итог (46 утверждений): 36 TRUE · 7
+  OVERSTATED · 0 FALSE · 3 UNTESTABLE — гипотеза опровергнута для фактов и подтверждена
+  для каркаса:** все семь флагов сидят на классификационном скелете — определение
+  композита (HK-234, исключает upapada-класс её же уроков), все четыре определения типов
+  (HK-236 tatpuruṣa и HK-237 karmadhāraya — по частям речи вместо падежного отношения,
+  оба ломаются её же аппозитивным расширением; HK-238 — аппозиции навязана семантика
+  сравнения; HK-239 — dvigu без собирательного критерия, перехватывает числительные
+  бахуврихи) и правило рода (HK-34); 36 механических правил раздела (изменения основ,
+  порядок членов, сандхи стыков, двойств./множ. в dvandva) — верны. Синтез реестра
+  дополнен третьим паттерном («система, не факты»); 3 UNTESTABLE — инструментные
+  спецификации (ономастический ценз типов; акцентный ценз su-/dus-; анимационная
+  разметка — ср. H1056).
+
+## [0.10.0] - 2026-07-16
+### Changed
+- **HK-42 (a-/an- privative nouns, ~80% abstract) — part 2 sized, a third confound found (H1060)** — new instrument [`privative_noun_abstractness.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/privative_noun_abstractness.py) reuses `animacy_lookup.py`'s Sanskrit-WordNet sembank technique, rooted at abstraction/psychological_feature/knowledge/state/attribute/relation/event/act/phenomenon (all WordNet Tops nodes traditional grammar calls "abstract" — the narrow "abstraction" node alone gave a misleadingly low 30.6%). Measured **52.8% abstract** (171/324 classified privative noun lemmas) — short of ~80%, but NOT a refutation: candidate identification itself is contaminated by LEXICALIZED words that structurally pattern-match a-/an-+lemma without being felt as productive negations — asura ("demon") = a-+sura ("god", a real lemma), agni ("fire")+gni, aja ("goat")+ja, ahi ("snake")+hi, amṛta ("nectar")+mṛta. A minimum base-length filter doesn't fix this (checked). Same fundamental semantic-transparency wall as HK-226/227, discovered via a different structural pattern. Part 1 (≥1/3 of all prefixed nouns) stays untouched, same wall as HK-225/229. Results: [`hk42_privative_noun_abstractness_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk42_privative_noun_abstractness_stats.json). (Sonnet 5 `claude-sonnet-5`, [H1060](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1060-Sonnet_SanskritGrammar_privative-noun-abstractness-hk42_16.07.26.md))
+
+## [0.9.0] - 2026-07-16
+### Added
+- **DCS animacy tagging built — HK-221 MEASURED TRUE; HK-86 sized with a major confound found (H1056)** — new reusable instrument [`animacy_lookup.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/animacy_lookup.py): DCS's own `m_wordsem` column carries Sanskrit-WordNet sense ids (per VisualDCS's A38 packaging paper), and the mapping table that turns those ids into a usable category (`word-senses.csv` + `sembank-relations.csv`) already existed in the upstream `dcs-conllu` mirror's `lookup/` folder — never built into a corpus-side animacy tagger before. Animate = descends from "person" (574) or "animal" (575) via the WordNet subclass hierarchy; two more roots were added after spot-checks caught real gaps — "spiritual being" (42842, WordNet doesn't treat deities as "person") and "imaginary being" (42775, mythical monsters like rākṣasa sit under a "concept/idea" branch, not "entity" at all). Validated against 24 known animate/inanimate nouns: 22/24 correct.
+  - **HK-221** (dus-+S: few person-nouns, mostly inanimate) → **TRUE**: 6/56 classified dus-/dur-/duṣ-/duś-prefixed noun lemmas are animate (10.7%), confirming the claim clearly. Results: [`hk221_dus_prefix_animacy_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk221_dus_prefix_animacy_stats.json).
+  - **HK-86** (most animate masc a-stems form feminine in -ī) → stays `UNTESTABLE`, but SIZED not "no instrument": a naive surface-form check showed -ā dominating overwhelmingly, but this turned out to be almost entirely BAHUVRĪHI COMPOUND-FINAL AGREEMENT contamination (e.g. "putrā" mostly the tail of compounds like diti-vinaṣṭa-putrā, not the substantive noun putrā "daughter"). Filtered via the `mwt` compound-span table — even after filtering, -ā still dominates on a thin n=22 residual. Recorded as INCONCLUSIVE with the confound documented, not forced to a verdict. Results: [`hk86_masc_animate_feminine_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk86_masc_animate_feminine_stats.json).
+  - HK-42 (a-/an- privative nouns, ~80% abstract) still needs the same difficult prefixed-noun identification that hit a wall for HK-225/229 (H1047) — not re-attempted.
+
+## [0.8.0] - 2026-07-16
+### Added
+- **HK-88 (Занятие XIII two-grade root vowel) — MEASURED TRUE; prior UNTESTABLE premise was wrong (H1047)** — new instrument [`two_grade_root_vowel_check.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/two_grade_root_vowel_check.py) reuses the H978 morphoclass crosswalk, no new corpus query. Re-checked the mdx source directly: the claim is NOT internally confused as the prior verdict thought — it precisely names Ocherk §62's own subtype-1 неполноизменяемость (weak grade = guṇa, vṛddhi distinct; tyaj is the identical example in both books). Among 429 roots classified "defective" in the crosswalk, **261 = 60.8% are A-series (vowel -a-)** vs only **34/424 = 8.0%** among "full"-alternating roots — a ~7.6× overrepresentation, confirming "обычно это корни с гласной -a-" clearly. Results: [`hk88_two_grade_root_vowel_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk88_two_grade_root_vowel_stats.json).
+### Changed
+- **HK-225/HK-229 (prefixed-verb share; prati- noun productivity) — independently re-attempted, same wall confirmed (H1047)** — a second, root-validated verb-lemma classification (930-root WhitneyRoots crosswalk) leaves 72% of DCS-2026's 11,096 verb lemmas unclassifiable (neither a known bare root nor a known preverb+root compound) — genuine morphological segmentation this pipeline doesn't have, not a smarter-query problem. HK-229's unvalidated noun-prefix count corroborates the prior finding (prati- ranks 10th, not top). Both stay `UNTESTABLE`, with the second attempt documented so neither is re-derived without new segmentation infrastructure. (Sonnet 5 `claude-sonnet-5`, [H1047](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1047-Sonnet_SanskritGrammar_two-grade-root-vowel-hk88_16.07.26.md))
+
+## [0.7.0] - 2026-07-16
+### Changed
+- **HK-5 (Занятие XXXVII thematic aorist as the most widespread type) — MEASURED, flipped to OVERSTATED (H1045)** — new instrument [`aorist_type_ranking.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/aorist_type_ranking.py), reusing HK-207's (H1040) aorist-formation identification. Genuinely mixed result, dug into with a genre split + lexical-outlier check before verdicting (same diligence as OCH-66/67): **whole corpus, raw tokens — Type I root aorist leads (5,690) over Type II thematic (2,781); excluding bhū (≈38% of Type I's tokens) — Type I still leads (3,346 vs 2,781); by distinct-lemma count — Type IV s-aorist leads (216), Type II is 3rd (175).** Type II only tops the ranking in the classical (non-Vedic) text subset with bhū excluded — there it leads both by tokens (850 vs 724) and lemma-types (58 vs 52). 2/6 checks confirm Type II as top; 4 do not. Whitney's account may hold for Classical Sanskrit narrative specifically, but not as the flat unqualified "самый распространенный в санскрите" claim. Results: [`hk5_aorist_type_ranking.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk5_aorist_type_ranking.json). (Sonnet 5 `claude-sonnet-5`, [H1045](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1045-Sonnet_SanskritGrammar_aorist-type-ranking-hk5_16.07.26.md))
+
+## [0.6.0] - 2026-07-16
+### Changed
+- **HK-207 (aorist register: narrative vs dialogue/drama) — SIZED, not "no instrument" (H1040)** — new probe [`aorist_register_probe.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/aorist_register_probe.py): checked the full 270-text DCS inventory first — DCS carries **zero drama/nāṭaka texts** (no Śakuntalā, no Mṛcchakaṭikā; Nāṭyaśāstra is a treatise about dramaturgy, not a play), so the literal comparison the claim names cannot be tested at all. Built a structural genre proxy instead — catechism-dialogue Upaniṣads (Bṛhadāraṇyaka, Chāndogya, Kaṭha, Kauṣītaki, Śvetāśvatara, Muṇḍaka, Taittirīya, Aitareya) vs Brāhmaṇa+Śrautasūtra ritual-prescriptive prose — using DCS-2026's aorist-specific `feat_formation` tags. Result: dialogue proxy 1.14% aorist share (91/8,010 verbal) vs narrative proxy 1.33% (1,530/114,924) — the opposite direction from the claim, though both are close to the whole-corpus baseline (1.20%). This null result does NOT refute Whitney's actual observation about dramatic dialogue specifically — Upaniṣadic catechism is formulaic ritual prose, not the colloquial register Whitney means, so the proxy itself is a stretch, not just its direction. Recorded as a sized negative pilot. Results: [`hk207_aorist_register_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk207_aorist_register_stats.json). (Sonnet 5 `claude-sonnet-5`, [H1040](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1040-Sonnet_SanskritGrammar_aorist-register-frequency-hk207_16.07.26.md))
+
+## [0.5.0] - 2026-07-16
+### Added
+- **Методичка v1 (P0–P4) — три печатные рукописи-раздела (H807, Fable 5 `claude-fable-5`).**
+  Первый исполненный слайс плана [`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md):
+  - **Раздел I — комментарий точности и частотности**
+    ([`METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md)):
+    15 печатных заметок по 11 занятиям — все 12 не-TRUE утверждений реестра (11 OVERSTATED
+    + единственный FALSE HK-16 «-ī/-ū всегда женского рода»), два помеченных TRUE
+    (HK-21/HK-26) и карточка Занятия XXII (дистрибуция вспомогательных перифрастического
+    перфекта по визе P3/A4); приложение — 11 частотных бейджей М. Г. таблицей. Каждое
+    число цитируется по идентификатору `claims.yml`, UNTESTABLE в печать не включены.
+  - **Раздел II — упражнения**
+    ([`METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md)):
+    по тем же 11 занятиям — засвидетельствованные чтения только из общественного достояния
+    (Кнауэр 1908 / Bühler 1878, по банку `scripts/data/sentences.json` и конкордансу;
+    аористный блок — из Кнауэра Nr. 14 напрямую, банк его не покрывает) + авторские дриллы
+    с ключами и переводами, все помечены ⟦MG-viza⟧.
+  - **Раздел III — отсылки «см. также»**
+    ([`METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md)):
+    попозанятийные привязки к Очерку-1978 (по §§), Конспекту-2004 (по разделам),
+    Талмуду-2026 (по главам), Кнауэру (по Nr.) и Гасунсу-2014 (seṭ/aniṭ), выверенные по
+    цифровым текстам репозитория.
+- **`errata.yml`: поле `edition` в схеме записи** — привязка страницы/строки к конкретному
+  тиражу (K-1: эталон — оригинал 1998 г.); список намеренно пуст — печатного списка
+  опечаток и второго издания для diff нет, выдумывать errata запрещено гардрейлом H807.
+### Changed
+- План методички: § 2 обновлен на осушенный реестр (234), § 5 помечен «v1 EXECUTED»,
+  K-2 решен по рекомендации (ручные разделы v1, реестры `exercises.yml`/`crossrefs.yml` —
+  v2); metadoc — строка ревизии + бэклог (пп. 1/3 закрыты, п. 5 «расширение v2» добавлен).
+### Gate
+- **Визовый пакет:** review-sheet `sanskritgrammar-metodichka-kochergina-v1_16.07.26_review.html`
+  (13 карточек, локальный `review/`, реестр листов — Uprava). До визы автора разделы —
+  черновик рукописи; следующая ревизия прозы — по стайл-гайду Sangram (H1003), когда тот
+  получит визу.
+
 ## [0.4.1] - 2026-07-15
 ### Added
 - **Russian-language folder README documenting the register findings** — [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md): по-русски, зеркало бюлеровского README — метод двух осей и триангуляция DCS/Уитни/Талмуд, итог 234 проверенных (210 TRUE · 11 OVERSTATED · 1 FALSE · 12 UNTESTABLE · 11 сносок М.Г. · 24 с флагом), семь главных выводов (два типа сбоя: сверхобобщение универсалий с единственным FALSE HK-16 и слепота к частотности с шаблоном HK-4 -iṣya 56,8 %; честная зона UNTESTABLE; оправданные частотные хеджи; кросс-грамматический контроль с Бюлером; корпусные сноски М.Г.), инструкция воспроизведения чисел, связи с оверлеем/квантификаторами/методичкой. Синтез реестра был доступен только по-английски (CLAIMS_VERIFIED.md); русский оверлей показывает таблицу, но не выводы. (Fable 5 `claude-fable-5`)

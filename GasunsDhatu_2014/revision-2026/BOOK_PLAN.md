@@ -1,6 +1,6 @@
 # План книги — «Состав и строй древнеиндийских корней», 2-е издание (полная монография, 2027)
 
-_Created: 09-07-2026 · Last updated: 15-07-2026 (Гл.1 data-rework выполнен, H992)_
+_Created: 09-07-2026 · Last updated: 17-07-2026 (§2.1/§2.2 слой данных + чеклист «Нестор-Истории», H1069)_
 
 План превращения книги 2014 г. (кандидатская диссертация) в **полную новую монографию**
 для российского академического издательства, в составе корпуса докторской «по совокупности
@@ -70,23 +70,26 @@ RWS-проход) не пропадают — они становятся **фу
 
 | Гл. | Содержание | Состояние |
 |---|---|---|
-| Введение | три вопроса книги; две части; аппарат положений (после виз П1/П4/П7/П9/П10) | переписать |
+| Введение | три вопроса книги; две части; аппарат положений (после виз П1/П4/П7/П9/П10) | ✅ **одобрено автором 16-07-2026, без правок (H1043)**: рамка двух частей + сверка ссылок; формальный аппарат (визы Фазы 0) сохранён. **Последняя глава-уровневая виза M03 дана — весь черновик рукописи завизирован.** |
 | Обзор | проблемно-ориентированный обзор литературы | ✅ перестроен (H384), нужна авторская редактура |
 | 1 | Понятие глагольного корня (§1.1 зарождение анализа · §1.2 понятие *dhātu* · §1.3 роль корня · §1.4 формальные показатели · §1.5 первичные/вторичные) | ✅ рекомпонована (H991) + ✅ **data-rework выполнен** (H992): Выводы переработаны, §1.2/§1.3/§1.5 — слияния данных 2026 (dhātu 590/935; дефективность 429/424/22; первичность root_oracle 436/1847; числа проверены скриптом) + ✅ **завизировано автором 16-07-2026** (5/5, лист Гл. 1, H1002; уточнения: продуктивность, пандиахрон, дефективность=норма, >2000 лет). Осталось: §1.1/§1.4 — человек-стиль (RWS) |
-| 2 | Количество корней и структура перечня (§2.1 устройство dhātupāṭha · §2.2 цитирование · §2.3 количество · §2.4 фоностатистика Табл. 1–5 · §2.5 распределение рядов) | ✅ рекомпонована (H991); фоностат-пилот §2.3–2.5 выполнен (PR #55, виза автора) |
-| 3 | Морфонологическая запись корней | rework; §3.3 сшить с ZALIZNIAK-схемой (Гл. 7) |
+| 2 | Количество корней и структура перечня (§2.1 устройство dhātupāṭha · §2.2 цитирование · §2.3 количество · §2.4 фоностатистика Табл. 1–5 · §2.5 распределение рядов) | ✅ рекомпонована (H991); фоностат-пилот §2.3–2.5 выполнен (PR #55, виза автора) + ✅ **слой данных 2026 в §2.1/§2.2 добавлен** (H1069, 17-07-2026: повторяемость форм 224/517/183, наполнение ган bhvādi+curādi = 74,1 %, соответствия Макдонеллу 809/590 из 935, «призрачные» 259; карта — [CH2_DATA_MAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_DATA_MAP.md); снят дубль-предложение §2.1). Осталось: проза §2.1/§2.2 — человек-стиль (RWS, 223 замечания) |
+| 3 | Морфонологическая запись корней | ✅ **§3.2/Выводы одобрены автором 17-07-2026, без правок** (rework H378, 08-07-2026 + стежок с Гл. 7 H1082, 17-07-2026): линия «Уитни описывает → Зализняк абстрагирует → Толчельников порождает» (§3.2, Выводы) получила прикладное четвёртое звено — указатель по модели Зализняка (Гл. 7, 749/930 корней). Осталось: §3.1/§3.3/§3.4 — человек-стиль (RWS, 269 замечаний) |
 
 ### Часть II — Корень в цифровую эпоху: четыре новые главы
 
 | Гл. | Тема | Готовая опора данных |
 |---|---|---|
-| 4 | **Кросс-уок и омонимия корней** — Уитни↔MW↔DCS, 26 расщеплений омонимов; продолжение статьи «О записи омонимии корней…» (Прил. 2) | [WhitneyRoots/crosswalk/roots.csv](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv) (930 корней, FAIR-выпуск ~24 тыс. триплетов); [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv) (62 557 строк, 8 словарей); [mw_roots.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) (2 113) |
-| 5 | **Дхатупатха и паниниевская традиция как данные** — vidyut-дхатупатха, аудит Пальсуле-исключений, сутры и комментаторская рамка | [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md); [vidyut dhatupatha.tsv](https://github.com/gasyoun/WhitneyRoots/blob/main/scratch/vidyut_data/prakriya/dhatupatha.tsv) (2 259); инструментарий H413/H414 ([panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py), [commentary_corpus.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/commentary_corpus.py)) |
-| 6 | **Корпусная аттестация корней** — что из словарных корней корпус подтверждает (590/935 = 63,1 % в DCS), 749 аттестованных глагольных корней, классовый конкорданс (376 согласны / 26 конфликтов) | DCS (пин 2026-03-05), кросс-уок MWS/WhitneyRoots; честные пределы: без акцентуации классы I/VI и IV/пассив неразличимы |
-| 7 | **Грамматический указатель корней по модели Зализняка** — кульминационная прикладная глава: схема кодов, ударение, выборка | [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md); [accent_rules.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json) (18 правил) + accent_validation; VedaWeb (акцентуированная Ригведа, CC BY 4.0 — [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)) |
+| 4 ✅ **одобрена автором 16-07-2026 (H1019)** | **Кросс-уок и омонимия корней** — Уитни↔MW↔DCS (три свидетеля: канонические 550/935 = 58,8 % покрытие, [H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md); класс 376/26; омонимия 933/67/50/38/18); продолжение статьи «О записи омонимии корней…» (Прил. 2) · [`04_glava4_kross-uok-omonimiya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/04_glava4_kross-uok-omonimiya.mdx), план [CH4_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH4_PLAN_crosswalk_homonymy.md) | [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk) (935-корневой канонический хаб + class_concordance.csv, 737, MWS/SANGRAM); [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv) (8 словарей); [mw_roots.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) (2 113) |
+| 5 ✅ **одобрена автором 16-07-2026 (H1023)** | **Дхатупатха и паниниевская традиция как данные** — vidyut-дхатупатха (2 259, `gaṇa.sūtra`), аудит Пальсуле (añc/and/ast), сутры · [`05_glava5_dhatupatha-panini.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/05_glava5_dhatupatha-panini.mdx), план [CH5_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH5_PLAN_dhatupatha_panini.md) | [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md); [vidyut dhatupatha.tsv](https://github.com/gasyoun/WhitneyRoots/blob/main/scratch/vidyut_data/prakriya/dhatupatha.tsv) (2 259); инструментарий H413/H414 ([panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py), [commentary_corpus.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/commentary_corpus.py)) |
+| 6 ✅ **одобрена автором 16-07-2026 (H1027)** | **Корпусная аттестация корней** — корпус подтверждает 590/935 (63,1 %) в DCS, 550 (58,8 %) «готовое ядро» MW+DCS, 259 словарно-грамматических корней корпусно отсутствуют; пределы: класс/претериты невосстановимы (SG-MO-013/017) · [`06_glava6_korpusnaya-attestaciya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/06_glava6_korpusnaya-attestaciya.mdx), план [CH6_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH6_PLAN_corpus_attestation.md) | DCS (пин 2026-03-05, 180 176 лемм), канон. кросс-уок [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk); честные пределы: без акцентуации классы I/VI и IV/пассив неразличимы |
+| 7 ✅ **одобрена автором 16-07-2026 (H1037)** | **Грамматический указатель корней по модели Зализняка** — прикладной капстоун: код `ряд · seṭ/aniṭ · полноизменяемость · ударение`, три оси на 749/930 (80,5 %) корней кросс-уока; 18 рядов, 18 правил ударения + VedaWeb · [`07_glava7_ukazatel-zaliznyaka.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx), план [CH7_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH7_PLAN_zaliznyak_index.md) | [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md); [accent_rules.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json) (18 правил) + accent_validation; morphoclass_crosswalk (876); VedaWeb (акцентуированная Ригведа, CC BY 4.0 — [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)) |
 
-**Заключение** — переписать: верификация каждого положения (черновик H328 уже есть) +
-итог двух частей: три свидетеля, мера их согласия, что остается открытым.
+**Заключение** — ✅ **одобрено автором 16-07-2026, без правок (H1039).** Сшивка двух частей:
+«Верификация положений» (визы Фазы 0) + блок «Итог двух частей» (три свидетеля, 550/935 ядро,
+класс 376/26, что открыто; сноска `[^edz2]`); «Цифровое послесловие» переориентировано — четыре
+направления «дальнейшей работы» развёрнуты в Гл. 4–7. Финальная сквозная сверка чисел — при
+вёрстке.
 
 **Приложения** — полный набор 6 шт. по решению Р2 (см.
 [IMPROVEMENT_ROADMAP.md §3](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/IMPROVEMENT_ROADMAP.md)),
@@ -96,8 +99,13 @@ RWS-проход) не пропадают — они становятся **фу
 **полный список ~750 подлинных корней Монье-Уильямса** с ★-пометой — по собственной разметке
 кёльнской MW (`verb_type`: 750 `genuineroot` / 1 363 `root`); выжимка на странице «Приложения
 издания 2026», полные данные — `revision-2026/mw_genuine_roots.{tsv,py}` + печатный список
-`mw_genuine_roots_list.md`. Остаётся: обогащение корпусной частотой/root_oracle + вёрстка
-компактного печатного списка (Фаза 4).
+`mw_genuine_roots_list.md`. ✅ **Обогащение выполнено** (второй проход): +колонки DCS
+частота/ранг и число словарей (root_oracle); кросс-таб **ядро 294 / хвост 101** из 704
+различных подлинных (482 аттестованы в DCS). ✅ **Печатный лист свёрстан** (третий проход,
+[H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md),
+MG «Route 2»): отдельный A4-лист `APPENDIX7_PRINT_SHEET.html`
+(`mw_genuine_roots_print_sheet.py`), по образцу листов опечаток — полный список остаётся вне
+тела книги. Приложение 7 закрыто.
 
 ---
 

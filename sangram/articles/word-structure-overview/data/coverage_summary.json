@@ -1,0 +1,144 @@
+{
+  "study": "Sangram SG-WF-001 (Строение слова: корень, основа, аффикс) — структурная рамка слова",
+  "toc_ref": "SG-WF-001",
+  "kind": "overview (no kill-gate)",
+  "method": "три нативно-измеримых слоя: A) приоритетное разбиение всех токенов по типу строения; B) инвентарь корней (аттестованные финитные леммы + концентрация vs гана-инвентарь WhitneyRoots); C) окно словообразования основы (feat_formation). Разбор нарицательных на первичные/kṛt/taddhita по поверхностной финали НЕ делается — P5 показал ~59% ложных (предел, перенесён)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned after dcs-conllu history rewrite; binding is provenance table + SHA-256"
+  },
+  "denominator_all_tokens": 5688416,
+  "frame_a_structural_partition": {
+    "compound_member": {
+      "tokens": 841052,
+      "share": 0.1479
+    },
+    "nonfinite_deverbal": {
+      "tokens": 435081,
+      "share": 0.0765
+    },
+    "finite_verb": {
+      "tokens": 523738,
+      "share": 0.0921
+    },
+    "nominal_mixed": {
+      "tokens": 2271734,
+      "share": 0.3994
+    },
+    "closed_class": {
+      "tokens": 1616811,
+      "share": 0.2842
+    },
+    "other_punct": {
+      "tokens": 0,
+      "share": 0.0
+    }
+  },
+  "frame_a_note": "priority partition, first match wins; exhaustive + non-overlapping (sum == denominator)",
+  "nonfinite_deverbal_share_ci95": {
+    "k": 435081,
+    "n": 5688416,
+    "ci95": [
+      0.0763,
+      0.0767
+    ]
+  },
+  "frame_b_root_inventory": {
+    "finite_verb_tokens": 523721,
+    "distinct_finite_verb_lemmas_attested": 8053,
+    "concentration": {
+      "top10_share_of_finite": 0.2973,
+      "top50_share_of_finite": 0.4874,
+      "top100_share_of_finite": 0.5859
+    },
+    "top10_lemmas": [
+      {
+        "lemma": "bhū",
+        "tokens": 35749,
+        "share": 0.0683
+      },
+      {
+        "lemma": "as",
+        "tokens": 32257,
+        "share": 0.0616
+      },
+      {
+        "lemma": "vac",
+        "tokens": 21026,
+        "share": 0.0401
+      },
+      {
+        "lemma": "kṛ",
+        "tokens": 19827,
+        "share": 0.0379
+      },
+      {
+        "lemma": "ah",
+        "tokens": 9447,
+        "share": 0.018
+      },
+      {
+        "lemma": "brū",
+        "tokens": 9176,
+        "share": 0.0175
+      },
+      {
+        "lemma": "gam",
+        "tokens": 8296,
+        "share": 0.0158
+      },
+      {
+        "lemma": "vid",
+        "tokens": 8259,
+        "share": 0.0158
+      },
+      {
+        "lemma": "dā",
+        "tokens": 6540,
+        "share": 0.0125
+      },
+      {
+        "lemma": "dṛś",
+        "tokens": 5124,
+        "share": 0.0098
+      }
+    ],
+    "whitneyroots_gana_inventory_roots": 1133,
+    "whitneyroots_gana_distribution": {
+      "I": 527,
+      "IV": 146,
+      "II": 135,
+      "VI": 129,
+      "IX": 58,
+      "V": 50,
+      "III": 49,
+      "VII": 30,
+      "VIII": 8,
+      "X": 1
+    },
+    "gana_join_note": "traditional gaṇa lives in WhitneyRoots root_class.csv, NOT DCS lemma.grammar (which is gender/POS); the DCS present-class code is a DCS-internal index, not the gaṇa"
+  },
+  "frame_c_stem_formation": {
+    "verb_tokens": 1007361,
+    "formation_marked": 17440,
+    "formation_marked_share_of_verb": 0.0173,
+    "distribution": {
+      "root": 5690,
+      "peri": 5386,
+      "them": 2781,
+      "s": 1508,
+      "is": 1077,
+      "red": 833,
+      "sa": 124,
+      "sis": 41
+    },
+    "note": "feat_formation = how the (aorist/perfect/present) stem is built from the root — the only native stem-formation marker; sparse (most VERB tokens NULL)"
+  },
+  "limits": {
+    "nominal_split": "primary root-noun vs kṛt vs taddhita NOT natively separable; surface lemma-ending match is ~59% false (P5/SG-WF-003)",
+    "no_morpheme_segmentation": "DCS gives lemma + features, not a root+affix segmentation per token"
+  }
+}

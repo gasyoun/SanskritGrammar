@@ -1,0 +1,125 @@
+{
+  "instrument": "masc_animate_feminine_pattern.py — sizing probe, NOT a settled verdict instrument (see docstring: major compound-contamination confound found, partially but not fully corrected)",
+  "animate_masc_a_stem_lemmas": 2008,
+  "feminine_tokens_pre_filter": 940,
+  "feminine_tokens_standalone_after_mwt_filter": 67,
+  "lemmas_with_standalone_feminine_token": 22,
+  "i_pattern_dominant_lemmas": 3,
+  "a_pattern_dominant_lemmas": 19,
+  "neither_or_tied": 0,
+  "i_pattern_examples": [
+    [
+      "chucchundara",
+      2,
+      0
+    ],
+    [
+      "vamra",
+      3,
+      0
+    ],
+    [
+      "pipīla",
+      1,
+      0
+    ]
+  ],
+  "a_pattern_examples": [
+    [
+      "vatsa",
+      0,
+      13
+    ],
+    [
+      "rasajña",
+      0,
+      3
+    ],
+    [
+      "bhakta",
+      0,
+      1
+    ],
+    [
+      "ṛṣabha",
+      0,
+      6
+    ],
+    [
+      "putra",
+      0,
+      10
+    ],
+    [
+      "upajīka",
+      0,
+      1
+    ],
+    [
+      "gṛdhra",
+      0,
+      1
+    ],
+    [
+      "saraṭa",
+      0,
+      1
+    ],
+    [
+      "mitra",
+      0,
+      1
+    ],
+    [
+      "īkṣaṇika",
+      0,
+      1
+    ],
+    [
+      "daivata",
+      0,
+      1
+    ],
+    [
+      "soma",
+      0,
+      1
+    ],
+    [
+      "anyapuṣṭa",
+      0,
+      2
+    ],
+    [
+      "anuja",
+      0,
+      1
+    ],
+    [
+      "varāṭaka",
+      0,
+      2
+    ],
+    [
+      "kaparda",
+      0,
+      1
+    ],
+    [
+      "jāra",
+      0,
+      2
+    ],
+    [
+      "vīra",
+      0,
+      1
+    ],
+    [
+      "aśva",
+      0,
+      1
+    ]
+  ],
+  "conclusion": "INCONCLUSIVE — -ā pattern dominates even after excluding compound-final (mwt-covered) tokens, on a thin n=22 residual; further confounds not ruled out given effort already spent on the first one. Not registered as a fact verdict."
+}

@@ -1,0 +1,67 @@
+{
+  "instrument": "gender_resolution_probe.py over dcs_full.sqlite — sizing probe, not a full verdict instrument (see docstring for why n is this small)",
+  "mixed_gender_noun_conjunction_groups": 1847,
+  "predicate_adj_over_mixed_gender_subject_n": 4,
+  "matches": 2,
+  "mismatches": 2,
+  "cases": [
+    {
+      "sentence_id": 18003,
+      "anchor_idx": 1,
+      "conjunct_genders": [
+        "Fem",
+        "Masc"
+      ],
+      "adj_idx": 3,
+      "adj_gender": "Masc",
+      "adj_deprel": "root",
+      "subj_idx": 1,
+      "expected_by_rule": "Masc",
+      "matches_rule": true
+    },
+    {
+      "sentence_id": 138765,
+      "anchor_idx": 3,
+      "conjunct_genders": [
+        "Fem",
+        "Masc",
+        "Neut"
+      ],
+      "adj_idx": 18,
+      "adj_gender": "Neut",
+      "adj_deprel": "root",
+      "subj_idx": 3,
+      "expected_by_rule": "Neut",
+      "matches_rule": true
+    },
+    {
+      "sentence_id": 173918,
+      "anchor_idx": 2,
+      "conjunct_genders": [
+        "Masc",
+        "Neut"
+      ],
+      "adj_idx": 1,
+      "adj_gender": "Masc",
+      "adj_deprel": "root",
+      "subj_idx": 2,
+      "expected_by_rule": "Neut",
+      "matches_rule": false
+    },
+    {
+      "sentence_id": 738176,
+      "anchor_idx": 2,
+      "conjunct_genders": [
+        "Fem",
+        "Masc"
+      ],
+      "adj_idx": 1,
+      "adj_gender": "Fem",
+      "adj_deprel": "root",
+      "subj_idx": 2,
+      "expected_by_rule": "Masc",
+      "matches_rule": false
+    }
+  ],
+  "conclusion": "n too thin to verdict; recorded as a sized negative pilot"
+}

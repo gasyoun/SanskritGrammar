@@ -1,0 +1,45 @@
+{
+  "instrument": "dus_prefix_animacy.py, reusing animacy_lookup.py's lemma classification (H1048/H1047)",
+  "dus_prefixed_noun_lemma_candidates": 232,
+  "by_animacy": {
+    "untagged": 176,
+    "inanimate": 48,
+    "animate": 6,
+    "tied": 2
+  },
+  "classified_total": 56,
+  "animate_share_pct_of_classified": 10.7,
+  "untagged_count": 176,
+  "animate_examples": [
+    "durbhagā",
+    "durghoṣa",
+    "durgā",
+    "durjana",
+    "durārohadrumāśraya",
+    "duścyavana"
+  ],
+  "inanimate_examples": [
+    "durabhigraha",
+    "durabhigrahā",
+    "durbhikṣa",
+    "durdagdha",
+    "durdama",
+    "durdhara",
+    "durdharṣa",
+    "durdhā",
+    "durdina",
+    "durga",
+    "durgaha",
+    "durgandha",
+    "durgati",
+    "durgaśaila",
+    "durgraha",
+    "durita",
+    "durjarā",
+    "durjaya",
+    "durjayā",
+    "durjeya"
+  ],
+  "expected_by_hk221": "animate (person) share is a small minority",
+  "confirmed": true
+}

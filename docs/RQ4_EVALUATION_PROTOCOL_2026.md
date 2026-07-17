@@ -1,4 +1,4 @@
-_Created: 15-07-2026 · Last updated: 15-07-2026_
+_Created: 15-07-2026 · Last updated: 16-07-2026_
 
 # RQ4 evaluation protocol — does the Zaliznyak on-ramp teach faster and retain better than Талмуд-first?
 
@@ -14,11 +14,17 @@ First concrete arm, per the [A62 outline](https://github.com/gasyoun/SanskritGra
 > (instrumentation) and the actual recruitment/run are separate, later steps — several of which
 > are `@DECIDE` items for a human (§6).
 
-> **§6 RULED 15-07-2026 (MG):** recruitment = Systema-Sanscriticum's own Kochergina-stage students
-> (§6.1); retention window N = **4 weeks** (§6.2); hosting/instrumentation home = **Systema-hosted
-> flow** (§6.3, the recommended default). §6.4 (consent wording) is drafted as plain-language text
-> for MG's review, not yet finalised — see the harness handoff. §6 items below are kept as the
-> historical record of the decision; the ruling lives at the top of each.
+> **§6 FULLY RULED — recruitment = Systema-Sanscriticum's own Kochergina-stage students, not open
+> call** (§6.1, RULED 15-07-2026, MG reconfirmed 16-07-2026 after a re-ask against the "open call"
+> option — the harness at [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
+> already assumes real, retention-contactable Systema accounts, so the ruling stands); retention
+> window N = **4 weeks** (§6.2, RULED 15-07-2026); hosting/instrumentation home = **Systema-hosted
+> flow** (§6.3, RULED 15-07-2026) — harness built and merged, [Systema PR #536](https://github.com/gasyoun/Systema-Sanscriticum/pull/536).
+> **§6.4 (consent wording) APPROVED 16-07-2026 (MG)** — the draft in [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
+> is finalised as-is, no revisions ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md)).
+> **All four §6 `@DECIDE` gates are now closed — nothing blocks recruitment except flipping the
+> `features.rq4_study` flag on (a separate launch decision, not yet made).** §6 items below are
+> kept as the historical record of the decision; the ruling lives at the top of each.
 
 ## 1. Hypothesis (falsifiable)
 
@@ -112,11 +118,13 @@ row.
   **pilot** (§7), not a properly powered confirmatory study, and say so honestly in any resulting
   paper (A32).
 
-## 6. `@DECIDE` items (a human should decide before recruitment starts)
+## 6. `@DECIDE` items — ✅ ALL RULED (nothing blocks recruitment but the launch flag)
 
-**§6.1–6.3 RULED 15-07-2026 (MG):** Systema-hosted, Systema's own students, 4-week retention.
-§6.4 (consent wording) still open — drafted, not finalised (see the harness handoff,
-[H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)).
+**§6.1–6.3 RULED 15-07-2026 (MG):** Systema-hosted, Systema's own Kochergina-stage students
+(not open call — reconfirmed 16-07-2026), 4-week retention. **§6.4 APPROVED 16-07-2026 (MG):**
+the draft consent text below (from the harness handoff,
+[H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md))
+is finalised as-is.
 
 1. **Recruitment population + channel** — Systema-Sanscriticum's own Kochergina-stage students
    (has real accounts + a channel to reach them, but conflates "student of this specific school"
@@ -140,7 +148,13 @@ row.
 4. **Consent / ethics framing** — this is a small-scale pedagogical study, not clinical research,
    but participants should still see a plain-language one-paragraph explanation of what's measured
    and that participation is voluntary/anonymous-to-analysis. Exact wording is a human call (the
-   Society's own voice, not a generic boilerplate).
+   Society's own voice, not a generic boilerplate). **APPROVED 16-07-2026 (MG), no revisions:**
+
+   > Это исследование — часть работы Общества ревнителей санскрита над тем, как лучше учить
+   > санскриту. Вам будет показан один из двух вариантов введения в тему рядов/типов корней, затем
+   > короткий тест (несколько вопросов), и ещё раз — через 4 недели, без дополнительных материалов
+   > между тестами. Участие добровольное, результаты используются обезличенно (для анализа, не для
+   > оценки успеваемости). В любой момент можно выйти без объяснения причин.
 
 ## 7. Recommended first step: a pilot, not the full study
 

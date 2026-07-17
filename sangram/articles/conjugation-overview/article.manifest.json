@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:conjugation-overview",
+    "as_of": "2026-07-16",
+    "toc_ref": "SG-MO-012",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Спряжение: категории и обзор системы",
+        "summary": "Обзорная статья SG-MO-012 (домен MO, кластер «Спряжение: основания», ядро W2). Частотная рамка финитного глагола по 523 721 токену пинованного снапшота DCS — распределение по пяти НАТИВНЫМ морфопризнакам (лицо/число/время/наклонение/залог), реальная аттестованная рамка без приближения: 3-е лицо 80,3 %, презенс 67,4 %, индикатив 69,6 %, оптатив 17,5 %, двойственное редко (1,8 %), пассив 5,7 %. Мотивирует приоритет подстатей SG-MO-013…032. Не пилот: kill-gate нет, но каждое число несёт знаменатель + пин + ДИ."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:conjugation-overview:1",
+        "layer": "scientific",
+        "text_slp1": "Bavati",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s85)" },
+        "translations": { "ru": "становится / есть (3 л. ед., презенс индик.)" },
+        "gloss_ru": "презенс индикатив, 3 л. ед. (bhū) — доминирующее сочетание: 3-е лицо 80,3 %, презенс 67,4 %, индикатив 69,6 %.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; презенс индикатив", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:conjugation-overview:2",
+        "layer": "scientific",
+        "text_slp1": "aBavat",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 2 (s9)" },
+        "translations": { "ru": "стал / был (3 л. ед., имперфект)" },
+        "gloss_ru": "имперфект (bhū) — DCS выделяет Impf отдельно (8,9 %); прочие претериты склеены под Tense=Past (предел EM2, пилот P3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; имперфект", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:conjugation-overview:3",
+        "layer": "scientific",
+        "text_slp1": "syAt",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s38)" },
+        "translations": { "ru": "был бы / пусть будет (3 л. ед., оптатив)" },
+        "gloss_ru": "оптатив (as) — наклонение неожиданно частотно (17,5 %, второе после индикатива), особенно в шастровой прозе.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; оптатив", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:conjugation-overview:4",
+        "layer": "scientific",
+        "text_slp1": "gacCa",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 3.8 (s3)" },
+        "translations": { "ru": "иди (2 л. ед., императив)" },
+        "gloss_ru": "императив (gam), 2 л. ед. — императив 10,8 %; 2-е лицо в целом 12,2 %.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; императив", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      },
+      {
+        "id": "ex:conjugation-overview:5",
+        "layer": "scientific",
+        "text_slp1": "ucyate",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s11)" },
+        "translations": { "ru": "говорится (3 л. ед., пассив)" },
+        "gloss_ru": "пассив (vac) — залог: Pass выделен (5,7 %), средний залог отдельно не тегируется (предел разметки); слот SG-MO-027.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив", "visibility": "internal" },
+        "as_of": "2026-07-16"
+      }
+    ],
+    "revisions": []
+  }
+}

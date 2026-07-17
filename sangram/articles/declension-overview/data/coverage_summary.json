@@ -1,0 +1,140 @@
+{
+  "study": "Sangram SG-MO-001 (Склонение: обзор) — частотная рамка домена склонения",
+  "toc_ref": "SG-MO-001",
+  "kind": "overview (no kill-gate)",
+  "snapshot": {
+    "master": "<GitHub>\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "пин 04e0778 осиротел после перезаписи истории dcs-conllu; привязка — provenance-таблица + SHA-256 + тег c3-pin-04e0778-content"
+  },
+  "universe_where": "t.upos='NOUN' AND t.feat_case IS NOT NULL AND t.feat_case!='Cpd'",
+  "denominator_inflected_noun_tokens": 1790270,
+  "case_number_matrix": {
+    "Nom": {
+      "Sing": 561243,
+      "Dual": 15083,
+      "Plur": 116321
+    },
+    "Voc": {
+      "Sing": 59416,
+      "Dual": 1559,
+      "Plur": 4388
+    },
+    "Acc": {
+      "Sing": 348806,
+      "Dual": 9260,
+      "Plur": 72330
+    },
+    "Ins": {
+      "Sing": 118278,
+      "Dual": 3904,
+      "Plur": 62427
+    },
+    "Dat": {
+      "Sing": 33882,
+      "Dual": 576,
+      "Plur": 4732
+    },
+    "Abl": {
+      "Sing": 58166,
+      "Dual": 444,
+      "Plur": 3252
+    },
+    "Gen": {
+      "Sing": 88552,
+      "Dual": 4450,
+      "Plur": 45881
+    },
+    "Loc": {
+      "Sing": 151483,
+      "Dual": 2225,
+      "Plur": 23612
+    }
+  },
+  "case_totals": {
+    "Nom": 692647,
+    "Voc": 65363,
+    "Acc": 430396,
+    "Ins": 184609,
+    "Dat": 39190,
+    "Abl": 61862,
+    "Gen": 138883,
+    "Loc": 177320
+  },
+  "number_totals": {
+    "Sing": 1419826,
+    "Dual": 37501,
+    "Plur": 332943
+  },
+  "other_case_number": {},
+  "stem_type_tokens": {
+    "-a": 1126565,
+    "-i": 159169,
+    "-ā": 114823,
+    "n-основы (-an/-in/-man)": 85926,
+    "s-основы (-as/-is/-us)": 75366,
+    "-ī": 64668,
+    "-u": 59740,
+    "прочие согласные": 41125,
+    "-ṛ": 26619,
+    "t-основы (-ant/-mat/-vat)": 24375,
+    "r-основы": 6143,
+    "-ū": 5751
+  },
+  "stem_type_share": {
+    "-a": 0.6293,
+    "-i": 0.0889,
+    "-ā": 0.0641,
+    "n-основы (-an/-in/-man)": 0.048,
+    "s-основы (-as/-is/-us)": 0.0421,
+    "-ī": 0.0361,
+    "-u": 0.0334,
+    "прочие согласные": 0.023,
+    "-ṛ": 0.0149,
+    "t-основы (-ant/-mat/-vat)": 0.0136,
+    "r-основы": 0.0034,
+    "-ū": 0.0032
+  },
+  "stem_note": "приближение по финали леммы (цитатная форма ≠ основа); согласные подтипы — по конечному звуку",
+  "headline_shares_ci95": {
+    "sing_share": {
+      "k": 1419826,
+      "n": 1790270,
+      "share": 0.7931,
+      "ci95": [
+        0.7925,
+        0.7937
+      ]
+    },
+    "dual_share": {
+      "k": 37501,
+      "n": 1790270,
+      "share": 0.0209,
+      "ci95": [
+        0.0207,
+        0.0212
+      ]
+    },
+    "nom_share": {
+      "k": 692647,
+      "n": 1790270,
+      "share": 0.3869,
+      "ci95": [
+        0.3862,
+        0.3876
+      ]
+    },
+    "a_stem_share": {
+      "k": 1126565,
+      "n": 1790270,
+      "share": 0.6293,
+      "ci95": [
+        0.6286,
+        0.63
+      ]
+    }
+  }
+}

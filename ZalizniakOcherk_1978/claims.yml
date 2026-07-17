@@ -20,10 +20,16 @@
 # COVERAGE (seed 15-07-2026 + full drain 15-07-2026): OCH-1..OCH-74 — the seed's six
 # reuse-verified claims (OCH-1..OCH-6, PR #196) plus the complete 68-candidate backlog drain
 # (OCH-7..OCH-74, H797 Phase 2, Fable 5 `claude-fable-5`): claims_harvest.yml is now
-# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004 instruments, 16-07-2026): 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — OCH-63 (the §207 flagship) flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector (causative_grade_detector.py); earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
+# `candidates: []`. Fact-axis tally (after the H1000+H1001+H1004+H1012+H1022 instruments,
+# 16-07-2026): 65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE — OCH-63 (the §207 flagship)
+# flipped by the period map (period_style_gradient.py), OCH-47 by the causative detector
+# (causative_grade_detector.py), OCH-16 by the root-shape parser (root_shape_parser.py),
+# OCH-65/66/67/68 by the treebank instrument (treebank_syntax_stats.py, H1022) — the FIRST
+# three fact-axis flags in this register (OCH-66/68 OVERSTATED, OCH-67 FALSE), ending the
+# earlier "zero flags" status; earlier OCH-21..OCH-23 by the H978 1978-column instrument. The
 # UNTESTABLE block is INSTRUMENT gaps, not vague claims — each entry names the missing
-# instrument (period-tagged corpus slices, a treebank, compound-type tagging, the 1978↔2026
-# series crosswalk, a root-shape parser) and two entries additionally record NEGATIVE PILOT
+# instrument (a treebank cross-language comparison, compound-function tagging, the 1978↔2026
+# series crosswalk) and two entries additionally record NEGATIVE PILOT
 # measurements (OCH-23 naive series join, OCH-24 aggregate i-rate proxy) so the dead ends are
 # not re-derived. Fresh reproducible metrics live in this folder's verify_claims_dcs.py
 # (final-consonant census, saḥ/so/sa surface split, i-rates by suffix, rare-mood tokens,
@@ -32,11 +38,22 @@
 work: "Zalizniak, Грамматический очерк санскрита (Grammatical Essay of Sanskrit), 1978"
 
 synthesis: >-
-  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 instruments: 63 TRUE · 0 OVERSTATED · 0 FALSE · 11 UNTESTABLE — the §68 flagship and its §67 siblings measured by the 1978 column, and the §207 style-gradient flagship measured by the period map, see OCH-21..OCH-23 and OCH-63). Zaliznyak is the
-  first grammar in the programme to come through a complete drain with ZERO fact-axis flags:
-  not one OVERSTATED, not one FALSE. Where Kochergina's absolutes broke on known exception
+  FULL DRAIN (74 verified; after the H978 + H1000 + H1001 + H1004 + H1012 + H1022
+  instruments: 65 TRUE · 2 OVERSTATED · 1 FALSE · 6 UNTESTABLE — the §68 flagship and its
+  §67 siblings measured by the 1978 column, the §207 style-gradient flagship measured by
+  the period map, the §59 root-shape flagship measured by the root-shape parser, and the
+  §§212-217 syntax cluster measured by the treebank instrument, see OCH-21..OCH-23, OCH-63,
+  OCH-16 and OCH-65..OCH-68). Zaliznyak held ZERO fact-axis flags through 70 of 74 claims —
+  longer than either sibling grammar — until the syntax cluster (§§212-217) became testable
+  16-07-2026: the treebank instrument found the one absolute quantifier in the book (OCH-68,
+  the ya-...ta- antecedent-clause rule) holds at only 75.2% (n=335, genre-skew-checked), and
+  two of three packed word-order tendencies in OCH-66 plus the §215 coordinate>subordinate
+  claim (OCH-67, genuinely inverted 6.5:1) do not clear a majority either — all THREE flags
+  land in the one domain (syntax) this register could not previously test, not scattered
+  across the book. Where Kochergina's absolutes broke on known exception
   classes and even Bühler slipped once on a frequency direction, Zaliznyak's quantifiers are
-  engineered: two-level hedges that the corpus confirms level by level (OCH-10 — his 'крайне
+  engineered everywhere ELSE in the book: two-level hedges that the corpus confirms level by
+  level (OCH-10 — his 'крайне
   редко' for final ṇ vs plain 'редко' for ṅ/ñ is exactly the order-of-magnitude split, 118 vs
   659/1,934), absolutes reserved for structurally safe gaps (OCH-17 no short-a-final roots),
   enumerated escape hatches ('только as и группа samprasāraṇa, и несколько других'), and
@@ -44,8 +61,11 @@ synthesis: >-
   95.1%). The cleanest single contrast is the verb-accent rule (OCH-72): the SAME fact graded
   Kochergina OVERSTATED for «никогда» (HK-10) grades Zaliznyak TRUE for «как правило» — third
   data point of the programme's central finding that presentation calibration, not factual
-  accuracy, is where grammars differ. On that axis the three books now rank cleanly:
-  Zaliznyak (0 flags / 74) > Bühler (5 / 64) > Kochergina (12+24 / 234).
+  accuracy, is where grammars differ — a finding OCH-66/68 now ALSO extend (soft hedges still
+  overreach when the underlying syntactic tendency itself turns out weak, not just when the
+  quantifier is an absolute). On that axis the three books now rank:
+  Zaliznyak (3 flags / 74 = 4.1%) > Bühler (5 / 64 = 7.8%) > Kochergina (12+24 / 234) — still
+  the best-calibrated of the three, no longer flag-free.
 
 
   The remaining UNTESTABLE entries are the register's second product: a requirements list for
@@ -53,10 +73,18 @@ synthesis: >-
   BUILT 16-07-2026 (period_style_gradient.py, H1000: OCH-63 flipped to measured TRUE — the
   style-I→style-II gradient is real and monotonic on every annotation-robust axis; OCH-47's
   early-vs-late causative half CLOSED the same day by the causative detector, H1001:
-  the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots), a treebank/parsed slice (OCH-65..OCH-69: word order, subordination, the one risky
-  absolute — OCH-68's relative-correlative «всегда» — flagged with a hunting licence),
-  compound-type tagging (OCH-58, OCH-60), the 1978↔2026 morphoclass-series crosswalk (OCH-21..
-  OCH-23), and a root-shape parser over the Talmud catalog (OCH-16). Two dead ends are
+  the guṇa 'deviation' falls 81% → 26% → 21% веды→эпос→классика among fluctuating roots),
+  ~~a root-shape parser over the Talmud catalog~~ BUILT 16-07-2026 (root_shape_parser.py,
+  H1012: OCH-16 flipped to measured TRUE — 727/745 = 97.6% of the catalog fits the §59
+  six-slot template, 98.4% of the roots where a nucleus could even be located),
+  ~~a treebank/parsed slice~~ BUILT 16-07-2026 (treebank_syntax_stats.py, H1022: dcs_full.sqlite's
+  own head/deprel columns turned out to carry a genuine, fully-tagged 29,433-sentence UD
+  slice all along — OCH-65 confirmed TRUE, OCH-66/68 flipped OVERSTATED, OCH-67 flipped
+  FALSE, all genre-skew-checked against a classical-vs-Vedic split before verdicting;
+  OCH-69's cross-LANGUAGE comparison against Russian/Latin stays out of scope, no
+  comparable parsed corpus on the other side),
+  compound-type tagging (OCH-58, OCH-60), and the 1978↔2026 morphoclass-series crosswalk
+  (OCH-21..OCH-23). Two dead ends are
   recorded with their numbers so they are never re-derived as refutations: the naive Talmud
   series join INVERTS the §68 aniṭ/seṭ×series claim (36.8% aniṭ in the predicted-aniṭ group —
   but the join equates 1978 and 2026 series names without validation and skips the
@@ -355,13 +383,28 @@ entries:
     kind: statistic
     falsifiable_as: "what share of the root inventory fits Zaliznyak's six-slot template"
     sources: [talmud]
-    verdict_fact: UNTESTABLE
-    number: "needs a root-shape parser implementing HIS slot definitions (how s+stop clusters, aspirates and diphthong nuclei map onto the slots) — a naive regex over the 745-root catalog would misparse exactly the interesting cases; not computed rather than miscomputed"
-    ref: "cf. TolchelnikovTalmud_2026/data/talmud_appendix1.json (the inventory to parse, when the parser exists)"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the root-shape parser built 16-07-2026 (root_shape_parser.py, H1012):
+      over the 745-root Приложение-1 catalog, the nucleus (position 4) is located per the
+      root's own ryad tag using §50's weak/guṇa/vṛddhi table (plus §54's before-vowel
+      allomorphs — some citations show dhāv, not dhau); flanking consonants are tokenized
+      (kṣ and aspirate digraphs count as one unit each, per §59) and classified sonant vs
+      obstruent. **727/745 = 97.6% fit** the six-slot template overall (98.4% of the 739
+      roots where a nucleus could be identified at all). Named exceptions confirmed present
+      at real but minority scale: irregular v/m in slot 2 (21 roots, e.g. vyath, mlā),
+      slot-1 s+obstruent (22, e.g. sthā, styā), slot-6 obstruent clusters (126, e.g. katth).
+      The 18 residual non-fits are individually documented (not a silent cap): 9 genuine
+      unusual clusters (ts-, ps-, śc-, ṣṭh- onsets; -ll, -rṇ, -rṣy, -nv codas), 6
+      catalog/tradition citation mismatches (kṣmāi, sphur/sphar/sphṛ), 3 extra-syllable
+      roots (irādh, irajy, palāy)
+    ref: "ZalizniakOcherk_1978/och16_root_shape_stats.json; root_shape_parser.py (15/15 self-test replicating the §'s own worked examples: √i, √nī, √çru, √sthā, √styā, √iṣ, √pad, √krudh, √jīv, √cumb, √kṣṇu, √takṣ, √vyath, √mlā, √katth)"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      Testable in principle against the Talmud catalog; flagged as a future metric. 'Подавляющее
-      большинство' is directionally plausible but this register does not invent numbers.
+      'Подавляющее большинство' (overwhelming majority) is not just directionally plausible
+      but measured at 97.6% — a strong confirmation, with the exceptions he names (kṣ,
+      v/m-in-slot-2, slot-6 clusters, s+stop) all independently attested in the catalog at
+      the scale his hedged wording implies.
 
   - id: OCH-17
     loc: "§61 / mdx line 836"
@@ -1093,11 +1136,19 @@ entries:
     kind: statistic
     falsifiable_as: "is prati's unambiguous adpositional use the minority against its adverbial/preverb uses"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: distinguishing adpositional from adverbial/preverb tokens of prati needs syntactic annotation the export lacks"
-    ref: "cf. Whitney §1123ff"
+    verdict_fact: TRUE
+    number: >-
+      MEASURED with the treebank instrument built 16-07-2026 (treebank_syntax_stats.py,
+      H1022): dcs_full.sqlite's own head/deprel columns carry a genuine, fully-tagged
+      UD-style slice (223,751 tokens, 3.9% of the corpus, 29,433 complete sentences) — the
+      prior "no instrument, the export lacks syntactic annotation" premise was never
+      actually checked. Among 143 dependency-tagged lemma='prati' tokens, only 29 (20.3%)
+      carry the unambiguous adpositional deprel (`case`); the rest are adverbial (`advmod`,
+      91), part of a fixed multiword unit (`flat`, 14), or other (9). 20.3% is a clear
+      minority
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py; cf. Whitney §1123ff"
     verdict_pedagogy: JUSTIFIED
-    note: "Countable the day a dependency-parsed DCS slice enters the pipeline; direction consistent with the reference description."
+    note: "Direction and magnitude both confirm 'относительно более редки' cleanly; unaffected by the genre-skew investigation below (OCH-66/67)."
 
   - id: OCH-66
     loc: "§214 / mdx line 2846"
@@ -1105,11 +1156,34 @@ entries:
     kind: typology
     falsifiable_as: "do SOV-leaning word-order tendencies hold as statistical majorities in prose"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: word-order statistics need sentence-segmented, role-tagged text; the export's surface lines carry no such structure. The claim is the standard typological description (hedged as 'тяготеет'/'обычно' — tendencies, not rules)"
-    ref: "instrument gap — same treebank need as OCH-65/OCH-67/OCH-68"
-    verdict_pedagogy: JUSTIFIED
-    note: "Hedged exactly as a tendency claim should be; awaiting a treebank to become a number."
+    verdict_fact: OVERSTATED
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022) over the same 29,433-sentence slice.
+      Of the THREE tendencies packed into this one claim, only one is robustly confirmed:
+      modifier-precedes-head, 86.0% (22,142 det/amod/nmod/nummod edges) — holds equally in
+      a post-Vedic "classical" subset (Mahābhārata/Manusmṛti/Arthaśāstra/Rāmāyaṇa/
+      Buddhacarita, 86.5%) and the Vedic/Śrauta-sūtra remainder (86.0%). The other two do
+      NOT clear even a loose majority: verb-final 46.4% overall (classical 37.6%, vedic/
+      sūtra 46.8%; Arthaśāstra alone, the single largest non-metrical classical-prose
+      sample, 51.4%); subject-group-first 42.6% overall (classical 46.4%, vedic/sūtra
+      42.4%). GENRE-SKEW CHECKED, not assumed: a classical-vs-Vedic split and an
+      Arthaśāstra-only isolation both rule out "Vedic-skewed corpus" as the explanation —
+      neither sub-claim clears 52% in ANY split tested. Two operationalization
+      robustness checks (excluding trailing discourse-particles from the "last token"
+      test: 46.4%→48.4%; restricting to single-clause sentences only, to rule out a later
+      clause dragging the sentence-final position away from the root's own clause:
+      46.4%→51.1%) each moved the number under 5 points — not an artifact of the metric
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The hedges themselves ('тяготеет'/'обычно', not 'всегда') are appropriately soft IF
+      the underlying tendency were real — but on this instrument two of the three packed
+      claims read as closer to free word order than a lean either way. This is the
+      standard Indological consensus description of Classical Sanskrit typology, and a
+      3.9% DCS slice dominated by Vedic Saṃhitā/Brāhmaṇa/Śrauta-sūtra prose plus a thin
+      post-Vedic tail may simply be under-powered or genre-mismatched for testing it —
+      that uncertainty is real and not resolved here, but the number as measured does not
+      support the claim as stated for two of its three parts.
 
   - id: OCH-67
     loc: "§215 / mdx line 2850"
@@ -1117,11 +1191,31 @@ entries:
     kind: statistic
     falsifiable_as: "do coordinate complex sentences outnumber subordinate ones"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: clause-type counts need parsed sentences (same treebank gap)"
-    ref: "cf. OCH-66"
-    verdict_pedagogy: JUSTIFIED
-    note: "Consistent with the low-subordination profile the whole §215-217 cluster describes; unmeasured here."
+    verdict_fact: FALSE
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022). Among sentences with 2+ FINITE verbs
+      (feat_verbform IS NULL, mood-marked — verified against feat_mood; DCS's raw acl/
+      advcl/ccomp/xcomp deprels are dominated by NON-finite participial/absolutive
+      embedding, §217's actual preferred mechanism, which is not a 'сложноподчинённое
+      предложение' in the traditional finite-clause sense and was excluded from both
+      sides of this count): **419 coordinate (`conj`) vs 2,739 finite-subordinate
+      (`advcl`/`acl`/`ccomp`/`xcomp`) — subordinate outnumbers coordinate 6.5:1, the
+      OPPOSITE of the claimed direction.** GENRE-SKEW CHECKED: the classical subset shows
+      meaningfully MORE coordination proportionally (29 coordinate vs 58 subordinate =
+      33.3% coordinate share) than the Vedic/Śrauta-sūtra remainder (390 vs 2,681 = 12.7%
+      share) — a real, measurable shift in the expected direction — but even the
+      classical subset's 33.3% falls well short of the >50% the claim requires
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The genre split shows the corpus skew is a REAL, partial contributor (coordination
+      share roughly triples in classical texts) but does not reverse the inversion —
+      subordinate clauses (chiefly relative acl:rel and complement ccomp) outnumber
+      coordinate ones in every split tested, including the classical-only one. Whether
+      this reflects DCS's specific text selection within "classical" (Mahābhārata is
+      itself compilation/didactic-heavy) or a genuine correction to the traditional
+      description is not resolved here — recorded as measured, not settled linguistic
+      theory.
 
   - id: OCH-68
     loc: "§216 / mdx line 2854"
@@ -1129,14 +1223,26 @@ entries:
     kind: universality
     falsifiable_as: "does the head noun of a relative-correlative pair always sit in the first clause"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
-    number: "no instrument: verifying an 'всегда' over relative-correlative constructions needs parsed clause pairs. Flag: this is the register's one absolute quantifier sitting on an unmeasured syntactic domain — the first candidate to test when a treebank lands"
-    ref: "treebank gap (cf. OCH-66)"
-    verdict_pedagogy: JUSTIFIED
+    verdict_fact: OVERSTATED
+    number: >-
+      MEASURED (treebank_syntax_stats.py, H1022). Restricted to acl:rel edges (relative-
+      clause-verb -> head noun) where (a) the head is a genuine NOUN, not a bare
+      correlative pronoun (excludes cases like 'sa/tad' where no lexical antecedent is
+      shared — those don't test this claim), and (b) the relative clause's own subtree
+      contains a PRON lemma 'yad' (confirms a genuine yad-relative, not another acl:rel
+      type): **n = 335, head noun in the linearly-first clause in 252 = 75.2%.** A quarter
+      of a 335-case sample (83 counterexamples) falls short of "всегда." Manually inspected
+      several counterexamples against the raw token sequence to sanity-check the
+      clause-boundary logic before trusting this number — the operationalization holds up
+    ref: "ZalizniakOcherk_1978/och65_68_treebank_stats.json (counterexamples list); treebank_syntax_stats.py"
+    verdict_pedagogy: MISLEADING
     note: >-
-      Recorded with a hunting licence: of all Zaliznyak's claims, this absolute is the one a
-      corpus test could most plausibly dent (head-in-second-clause correlatives are the kind
-      of exception epic verse tolerates). Until then: open, not assumed.
+      Flagged in advance (before any number existed) as the register's one absolute
+      quantifier sitting on an unmeasured syntactic domain — exactly the kind of claim a
+      corpus test could most plausibly dent, and it did. 75.2% is a real majority (the
+      general tendency is genuine) but 'всегда' oversells it by a wide margin on n=335;
+      this is the sharpest OVERSTATED case in the whole Ocherk register precisely because
+      it uses the strongest possible quantifier on the thinnest-margin claim.
 
   - id: OCH-69
     loc: "§217 / mdx line 2856"
@@ -1213,3 +1319,316 @@ entries:
     ref: "Whitney §§316-319"
     verdict_pedagogy: JUSTIFIED
     note: "Consistent restatement of OCH-73's split from the other side; no counter-inventory exists."
+
+  # --- H1051: залоговая картина Очерка-1978 как отдельная DCS-гипотеза (директива MG из
+  # адъюдикации A65, заметка к HB-100). Инструмент: och_voice_stats.py → och_voice_stats.json.
+  # Ключевой факт инструмента: feat_voice снимка несет ТОЛЬКО 'Pass' (36 701) — Act/Mid
+  # в разметке нет; P/Ā восстановлены по однозначным личным окончаниям (покрытие 49,1 %).
+
+  - id: OCH-75
+    loc: "§109 / mdx line 1814"
+    claim_ru: >-
+      Средний залог показывает (в наиболее ясных случаях), что действие направлено на
+      сам субъект или производится для него, в его интересах.
+    kind: rule
+    falsifiable_as: "do middle forms of dual-voice verbs predominantly encode self-directed/self-benefactive meaning"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: per-token benefactivity/reflexivity is untagged (same wall as HB-100); the hedge «в наиболее ясных случаях» already concedes the fuzzy zone"
+    ref: "ср. HB-100 (same missing instrument)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The guarded twin of Bühler's HB-100 «главное значение» — Zaliznyak hedges what
+      Bühler states flatly.
+
+  - id: OCH-76
+    loc: "§109 / mdx line 1814"
+    claim_ru: "Нередко действительный и средний залоги употребляются без различия значения."
+    kind: statistic
+    falsifiable_as: "do act/mid doublets of the same root show no semantic contrast in a substantial share of usage"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: sense-difference tagging of doublets absent"
+    ref: "same benefactivity wall as OCH-75/HB-100"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-77
+    loc: "§109 / mdx line 1814"
+    claim_ru: >-
+      Противопоставление среднего и страдательного залогов возможно лишь в части форм.
+    kind: rule
+    falsifiable_as: "is the med/pass morphological contrast confined to a subset of the paradigm (present system + aorist -i)"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "corpus-consistent: dedicated Pass tokens sit 97.9% in the present system (Pres 34,499 + Impf 1,443 of 36,701) with a small Past bucket 759 (the -i aorist and residuals) — outside it no dedicated passive morphology exists (och_voice_stats.json passive_by_tense)"
+    ref: "och_voice_stats.py; Whitney ya-passive (present system) + 3sg aorist passive"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-78
+    loc: "§109 / mdx line 1814"
+    claim_ru: >-
+      Даже морфологически недвусмысленные формы страдательного залога нередко допускают
+      медиальное значение наряду с собственно пассивным.
+    kind: statistic
+    falsifiable_as: "do unambiguous ya-passive forms often carry middle (non-passive) meaning"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: per-token diathesis-SENSE (middle vs passive value of a ya-form) untagged"
+    ref: "sense-tagging wall (family of HK-226/227)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-79
+    loc: "§110 / mdx line 1832"
+    claim_ru: "Пассив. Имеется система презенса пассива и одна форма аориста."
+    kind: rule
+    falsifiable_as: "is the dedicated passive limited to the present system plus one aorist form (3sg -i)"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "passive_by_tense: Pres 34,499 (94.0%) · Impf 1,443 (3.9%) · Past 759 (2.1%) — the Past bucket carries the 3sg -i aorist type (DCS folds aorists under Tense=Past); no Fut/Perf dedicated passive rows exist"
+    ref: "och_voice_stats.json passive_by_tense; Whitney §§768-774, 842-845"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The Tense=Past mapping conflates preterites (A65 EM2), so 759 is an upper bound for
+      the aorist-passive — direction unaffected.
+
+  - id: OCH-80
+    loc: "§117 / mdx line 1960"
+    claim_ru: >-
+      Особый случай: krāma- (обычно в act.) и krama- (обычно в med.) от √kram.
+    kind: allomorphy
+    falsifiable_as: "does kram's present-stem grade split by voice: krāma- active vs krama- middle"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "measured: krāma- forms 84 P vs 4 Ā; krama- forms 94 Ā vs 7 P (och_voice_stats.json kram_grade_voice) — both «обычно» hold at 95%/93%"
+    ref: "och_voice_stats.py (ending classifier over lemma kram)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      A textbook-perfect hedge: both directions of the split measured within a few tokens
+      of exceptionless.
+
+  - id: OCH-81
+    loc: "§118 / mdx line 1976"
+    claim_ru: "Большинство глаголов с презенсом на ya непереходны и обозначают состояние."
+    kind: statistic
+    falsifiable_as: "are class-IV ya-presents mostly intransitive/stative"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: transitivity untagged in the snapshot; a valency lexicon join is the missing tool"
+    ref: "transitivity wall (shared with OCH-93's quantified reading)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-82
+    loc: "§127 / mdx line 2126"
+    claim_ru: "Med. [у √i] только в adhi-i «учиться»."
+    kind: rule
+    falsifiable_as: "is the middle of root i confined to adhi-i 'study' (post-Vedic)"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "bare-lemma i finite middles are marginal: 30 of 2,655 classifiable tokens (1.1%), and the list is Vedic prayers (īmahe 11) plus untagged ya-passives (īyate/īyase) and future middles — no post-Vedic plain middle present of bare i; adhi-i is lemmatized separately (adhī, adhīte)"
+    ref: "och_voice_stats.json i_middle_forms; Whitney §§ on i/adhī"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Post-Vedic scope per the Ocherk's own frame; the Vedic īmahe residue sits outside it.
+
+  - id: OCH-83
+    loc: "§127 / mdx line 2134"
+    claim_ru: "√as «быть»: Med. только в составе будущего II (§ 159)."
+    kind: rule
+    falsifiable_as: "does as 'be' attest middle endings only inside the periphrastic future"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "lemma as: 21,014 P-classified finite tokens vs 9 Ā-classified — and the 9 are as₂ 'throw' class-IV forms (asyatām 7, asyate 1) plus one ās- 'sit' artifact (āse); genuine middles of as 'be' outside future II: 0 in the classifiable mass"
+    ref: "och_voice_stats.json as_middle_forms; Whitney §636"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      DCS lemma 'as' conflates as 'be' and as 'throw' — the middle residue dissolves into
+      the homonym, which the form list makes explicit.
+
+  - id: OCH-84
+    loc: "§127 / mdx line 2140"
+    claim_ru: "√çī «лежать» (только med.)."
+    kind: rule
+    falsifiable_as: "is śī media tantum"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "measured: 487 Ā-classified finite tokens (śete 273, śerate 66, śayīta 113 …) vs 5 P-classified stragglers (99.0% Ā; the 5 are classifier noise at the sandhi floor)"
+    ref: "och_voice_stats.json shi_forms; Whitney §629 (śī with 3pl -r-)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-85
+    loc: "§140 / mdx line 2232"
+    claim_ru: >-
+      [Аорист 1 (корневой)] в послеведийский период возможен только у корней на ā и у
+      √bhū, только в act.
+    kind: rule
+    falsifiable_as: "is the post-Vedic root aorist restricted to ā-roots + bhū, active only"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the classical root-aorist inventory narrows to the ā-class + abhūt, parasmaipada — the exact carve-out whose absence made Bühler's HB-2 voice-symmetry claim OVERSTATED; corpus cannot isolate aorist type (formation untagged, A65 EM2)"
+    ref: "Whitney §§829-834, classical restriction"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Note the scope discipline vs HK-38: Kochergina states the same restriction WITHOUT
+      the post-Vedic scoping and lands OVERSTATED; Zaliznyak scopes it and lands TRUE.
+
+  - id: OCH-86
+    loc: "§145 / mdx line 2314"
+    claim_ru: "[Аорист 5 (iṣ-)] Ступень корня — в act. guṇa или vṛddhi, в med. всегда guṇa."
+    kind: rule
+    falsifiable_as: "is the iṣ-aorist middle invariably guṇa-graded"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic per Whitney's iṣ-aorist description (middle with guṇa; vṛddhi confined to the active); corpus cannot isolate the type (formation untagged)"
+    ref: "Whitney §§898-910 (iṣ-aorist grades)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-87
+    loc: "§146 / mdx line 2342"
+    claim_ru: "[Аорист 6 (siṣ-)] Имеется только act. (в med. у тех же корней выступает аорист 4)."
+    kind: rule
+    falsifiable_as: "is the siṣ-aorist parasmaipada-only, suppleted in the middle by the s-aorist"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the siṣ-aorist is active-only in the standard description — the second HB-2 carve-out stated explicitly here"
+    ref: "Whitney §§911-916 (siṣ-aorist)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-88
+    loc: "§149 / mdx line 2352"
+    claim_ru: >-
+      В act. он [прекатив] не зависит, а в med. лишь отчасти зависит от того, какой тип
+      аориста имеется у данного корня.
+    kind: rule
+    falsifiable_as: "is the active precative aorist-type-independent (weak root + yās)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the active precative is built directly on the weak root + yā(s)- regardless of the root's aorist type; the middle rides the s-aorist stem"
+    ref: "Whitney §§921-925 (precative formation)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-89
+    loc: "§160 / mdx line 2492"
+    claim_ru: >-
+      Пассив морфологически независим от соответствующих форм act. и med. При спряжении
+      пассив принимает окончания med.
+    kind: rule
+    falsifiable_as: "is the ya-passive stem-independent of the act/mid present while taking middle endings"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic + corpus-consistent: the -yá- passive stem is built on the weak root independently of the present class, inflected with middle endings (uc-ya-te vs vak-ti)"
+    ref: "Whitney §§768-774"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-90
+    loc: "§160 / mdx line 2496"
+    claim_ru: >-
+      [Ведийский пассив отличался от med. IV класса ударением (pacyáte/pácyate).]
+      В послеведийском языке такие формы омонимичны, а иногда почти неразличимы и по смыслу.
+    kind: rule
+    falsifiable_as: "are post-Vedic ya-passive and class-IV middle forms homonymous once accent is lost"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the contrast was accentual (pacyáte pass. vs pácyate med.); classical texts carry no accent, so the forms are segmentally identical by construction"
+    ref: "Whitney §§761, 768-774 (accent of ya-formations)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The semantic half («иногда почти неразличимы») shares OCH-78's sense-tagging wall,
+      but the homonymy core is definitional.
+
+  - id: OCH-91
+    loc: "§160 / mdx line 2498"
+    claim_ru: "У каузативов пассив образуется от усеченной основы — без конечного ay: bodhyate."
+    kind: rule
+    falsifiable_as: "is the causative passive built on the ay-truncated stem"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic + attested: bodhyate, kāryate type — the aya-suffix drops before the passive -ya"
+    ref: "Whitney §1052 (causative passive)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-92
+    loc: "§161 / mdx lines 2502-2504"
+    claim_ru: >-
+      Во всех остальных личных формах для передачи пассивного значения используется просто
+      med.; в очень редких случаях встречаются формы, образованные от основы 3 sg аориста
+      пассива.
+    kind: rule
+    falsifiable_as: "outside present system + aorist -i, is passive sense expressed by plain middle forms"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument for the core: passive SENSE of morphologically middle forms (cakre 'был сделан') is untagged; the rare pass-aorist-stem finites are below any reliable surface probe"
+    ref: "sense-tagging wall (OCH-78 family)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-93
+    loc: "§162 / mdx line 2508"
+    claim_ru: >-
+      Фактически они [причастия на -ta-/-na-] имеют пассивное значение только у переходных
+      глаголов (sthita-, mṛta- — активное; gata- — двоякое).
+    kind: rule
+    falsifiable_as: "does the ta-participle's passive value track transitivity (intransitives yield active-valued participles)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the standard doctrine — ta-participles of intransitives are active-valued (gata- 'ушедший', sthita-, mṛta-), of transitives passive-valued"
+    ref: "Whitney §952 (past participle value by transitivity)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The per-token quantified reading would need transitivity tagging (OCH-81's wall);
+      verdicted on the systemic rule, which Whitney states in the same terms.
+
+  - id: OCH-94
+    loc: "§115 примеч. / mdx line 3102"
+    claim_ru: >-
+      При основах на -aya- наряду с регулярными причастиями на -ayamāna- возможны также
+      причастия на -ayāna-.
+    kind: allomorphy
+    falsifiable_as: "do -ayāna- middle participles of aya-stems occur beside -ayamāna-"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "measured: 180 genuine -ayāna- participle tokens (cintayāna- 57, kāmayāna-, prārthayāna- …; substring matches at index <2 like śayāna- excluded) vs 196 -ayamāna- — near-PARITY, not a marginal alternative"
+    ref: "och_voice_stats.json ayana_participles"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      «Возможны также» if anything undersells: the 'irregular' form runs at 48% of the pair.
+
+  - id: OCH-95
+    loc: "§206 / mdx line 2816"
+    claim_ru: >-
+      Пассив может быть безличным. Безличная пассивная конструкция возможна даже для
+      непереходных глаголов: mayā gantavyam, tvayā sthīyatām.
+    kind: rule
+    falsifiable_as: "are passives of intransitives (the impersonal construction's morphology) attested"
+    sources: [dcs]
+    verdict_fact: TRUE
+    number: "existential core corpus-backed: dedicated passive tokens of gam 289 and sthā 62 exist (och_voice_stats.json intransitive_passive_tokens); the impersonal READING per token is untagged but the formation the claim licenses is robustly attested"
+    ref: "och_voice_stats.py; Whitney §999 (impersonal passive)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: OCH-96
+    loc: "§214 / mdx line 2846"
+    claim_ru: >-
+      В пассивных предложениях на первом месте обычно имя в I., обозначающее деятеля.
+    kind: statistic
+    falsifiable_as: "is the instrumental agent usually sentence-initial in passive sentences"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: "measured on 28,071 finite-passive sentences: first token instrumental in 5.9% unconditionally; even among the 8,332 passive sentences that CONTAIN a nominal instrumental, it is sentence-initial in only 18.6% (1,547) — «обычно» fails under both readings (och_voice_stats.json passive_clause_agent_position)"
+    ref: "och_voice_stats.py (treebank probe, same UD slice as §§212-217)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The FOURTH flag of the §§212-217 syntax cluster (with OCH-66/67/68) — and again the
+      Vedic skew caveat of FINDINGS §88 applies: verse texts open with particles (atha,
+      tataḥ), so 'initial' is a strict reading; a softer 'early position' variant is not
+      measured. Voice MORPHOLOGY stays clean; only the word-order §§ keep falling.

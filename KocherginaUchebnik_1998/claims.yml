@@ -29,8 +29,9 @@
 # lesson-ordered batches. Numbers are either reproducible DCS-2021 statistics (verify_claims_dcs.py:
 # vowel census, verb-class share, case distribution, tense/mood token counts) or systemic facts
 # adjudicated against Whitney 1889; M.G. frequency footnotes were added where Kochergina gives no
-# number and the corpus supplies one. This file = the VERIFIED register (234 entries; HK-4 splits
-# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-233; 0 pending).
+# number and the corpus supplies one. This file = the VERIFIED register (260 entries; HK-4 splits
+# into HK-4a universality + HK-4b allomorphy, so the max numbered id is HK-259; 0 pending).
+# H1050 (16-07-2026) added HK-234..HK-259 — the full samasa-section audit per the Leitan codebook.
 # The now-drained HARVEST BACKLOG is in claims_harvest.yml (candidates: [] — fully promoted).
 #
 # Entry shape: see the four seed hypotheses (HK-*) below.
@@ -58,7 +59,7 @@ synthesis: >-
   -ū всегда женского рода"), which is simply FALSE: masculine ī/ū-stems (rathī, senānī, sudhī,
   monosyllabic bhū-) are well attested; she means the derived nadī/vadhū class. The same overreach
   drives HK-10 (accentless finite verb "никогда" — but it IS accented in a subordinate clause,
-  Whitney §168), HK-14/HK-34 (a-/compound gender "always" the final/derived value — bahuvrīhi gender
+  Whitney §595), HK-14/HK-34 (a-/compound gender "always" the final/derived value — bahuvrīhi gender
   tracks the referent, contradicted in her own lesson), HK-25 (simple perfect "от всех односложных"
   — vid/ās/long-vowel roots take periphrastic), HK-38 (root aorist "от некоторых -ā и bhū" — the
   attested root-aorist set is much wider), and HK-40 (double-preverb ordering "всегда"). **(2)
@@ -82,6 +83,22 @@ synthesis: >-
   frequency-hidden claims with the corpus number — so the learner sees where an absolute rule has an
   escape hatch and where a "variant" is in fact the norm. The register generalises: the two axes are
   worth running on any grammar whose ordering predates corpus statistics (roadmap spine S1/S2).
+
+
+  **The samasa-section audit (H1050, 16-07-2026, per MG's adjudication directive «весь раздел
+  по самасам неверный — проверить все по Лейтану»)** sharpens the book's profile with a third
+  pattern. Of the 46 section claims (registered + HK-234..HK-259), 36 are TRUE, 7 OVERSTATED,
+  0 FALSE, 3 UNTESTABLE — so the section's MECHANICS (stem changes, member order, dual/plural
+  rules, junction sandhi) are sound, refuting the hypothesis at the fact level. But all seven
+  flags sit on the CLASSIFICATORY SKELETON: the compound definition itself (HK-234 — excludes
+  the upapada class her own lessons teach), all four type definitions (HK-236 tatpurusa and
+  HK-237 karmadharaya delimited by part of speech instead of the Paninian case relation, each
+  broken by her own appositional extension; HK-238 apposition forced to carry simile semantics;
+  HK-239 dvigu missing the collective-sense criterion, over-capturing numeral bahuvrihis), and
+  the gender rule (HK-34). Against the Leitan/Paninian arrangement (karmadharaya and dvigu as
+  SUBTYPES of tatpurusa; case-relation, not POS, as the criterion) the framework is
+  systematically non-standard even where every individual mechanical fact is right — the
+  author's intuition holds for the system, not the facts.
 
 entries:
 
@@ -191,14 +208,36 @@ entries:
     kind: statistic
     falsifiable_as: "is the thematic (a-)aorist the most frequent of the ~7 aorist types in DCS"
     sources: [dcs, whitney]
-    verdict_fact: UNTESTABLE
-    number: "DCS timws.csv tags aorist only as Act/Med (codes 10-13, 2,452 tokens), not by the 7 formation types — per-type split needs finer morphology than the 2021 export carries"
-    ref: "Whitney §846-847 (a-aorist common, from roots in consonants)"
+    verdict_fact: OVERSTATED
+    number: >-
+      MEASURED (16-07-2026, aorist_type_ranking.py, H1045): the DCS-2021 blocker
+      ("tags aorist only as Act/Med, not by formation type") is stale — DCS-2026's
+      feat_formation tag under feat_tense=Past distinguishes exactly Whitney's 7
+      types (root=I, them=II thematic, red=III, s=IV, is=V, sis=VI, sa=VII), the
+      same identification built for HK-207 (H1040). Result is GENUINELY MIXED, dug
+      into with a genre split + a lexical-outlier check before verdicting (same
+      diligence as OCH-66/67): **whole corpus, raw tokens — Type I root aorist
+      leads (5,690) over Type II thematic (2,781), NOT close; whole corpus
+      excluding bhū (which alone supplies ~38% of Type I's tokens as a near-
+      auxiliary "was/became") — Type I STILL leads (3,346 vs 2,781); whole corpus
+      by distinct-lemma count — Type IV s-aorist leads (216 lemmas), Type II is
+      3rd (175).** Type II only comes out on top in a NARROWER reading: the
+      classical (non-Vedic) text subset, EXCLUDING bhū specifically — there Type
+      II leads both by token count (850 vs 724) and lemma-type count (58 vs 52).
+      2 of 6 checks confirm Type II as top; 4 do not
+    ref: >-
+      Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py;
+      hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification)
     verdict_pedagogy: JUSTIFIED
     note: >-
-      Consistent with Whitney's account, but the DCS-2021 export does not tag aorists by formation
-      type, so the 'самый распространенный' ranking cannot be confirmed against the corpus here. Flagged
-      UNTESTABLE rather than assumed. Revisit if the DCS-2026 CoNLL-U import adds sub-type tags.
+      Whitney's own account (and every grammar that repeats it) may well be right
+      for Classical Sanskrit narrative specifically — the classical-subset,
+      bhū-excluded reading (the closest analogue to what these grammars actually
+      describe) DOES confirm it. But the flat, unqualified 'самый распространенный
+      в санскрите' claim does not hold against this corpus as a whole: root aorist
+      dominates by raw frequency (not merely a bhū artifact) and s-aorist is the
+      most productive type by root count. Recorded as OVERSTATED — directionally
+      defensible in the narrowest reading, not in the broad one actually stated.
 
   - id: HK-6
     loc: "Занятие XXIV / mdx line 5862"
@@ -270,8 +309,8 @@ entries:
     falsifiable_as: "is the finite verb *never* accented — or only unaccented in a principal clause"
     sources: [whitney]
     verdict_fact: OVERSTATED
-    number: "systemic: enclitic particles and short pronoun forms are genuinely accentless, but the finite verb is unaccented ONLY in a principal clause — it IS accented in a subordinate clause and when sentence-initial (Whitney §168)"
-    ref: "Whitney §92-94 (enclitics), §168 (verb accent: principal- vs subordinate-clause)"
+    number: "systemic: enclitic particles and short pronoun forms are genuinely accentless, but the finite verb is unaccented ONLY in a principal clause — it IS accented in a subordinate clause and when sentence-initial (Whitney §592, §595)"
+    ref: "Whitney §92-94 (enclitics), §592/§595 (verb accent: principal- vs subordinate-clause; the §168 cited before 16-07-2026 is a euphonic-combination section — corrected by the H1033 verification pass)"
     verdict_pedagogy: MISLEADING
     note: >-
       The particles/enclitics half is right, but 'verbum finitum ... никогда' overshoots: the very
@@ -742,13 +781,40 @@ entries:
     falsifiable_as: "do a-/an- privative nouns make up ≥1/3 of prefixed nouns, ~80% of them abstract"
     sources: [dcs]
     verdict_fact: UNTESTABLE
-    number: "the ≥1/3 and ~80% shares depend on Kochergina's undisclosed count base (which nouns counted as 'prefixed', abstract-vs-concrete coding); directionally plausible against the DCS lemma inventory but the hard figures are unverifiable"
-    ref: "no ground-truth source; count base undisclosed"
+    number: >-
+      SIZED, two parts, both still UNTESTABLE for DIFFERENT reasons (16-07-2026,
+      privative_noun_abstractness.py, H1060). Part 1 (a-/an- nouns >= 1/3 of ALL
+      prefixed nouns): unchanged — needs the same total-prefixed-noun denominator
+      that hit a wall for HK-225/229 (H1047), not re-attempted. Part 2 (~80% of
+      these are abstract): genuinely attempted with new infrastructure — reused
+      animacy_lookup.py's Sanskrit-WordNet sembank technique, rooted instead at
+      abstraction/psychological_feature/knowledge/state/attribute/relation/event/
+      act/phenomenon (all 9 WordNet Tops nodes a traditional grammar would call
+      "abstract" — quality/state/action/relation, not just the narrow
+      "abstraction" node, which alone gave a misleadingly low 30.6%). Measured
+      **52.8% abstract** (171/324 classified a-/an- privative noun lemmas) — well
+      short of ~80%, but NOT registered as a refutation: candidate IDENTIFICATION
+      itself turned out contaminated. "Base exists as its own independent lemma"
+      (the validation check) passes for LEXICALIZED words that are not felt as
+      productive negations at all — asura ("demon") = a-+sura ("god", a real
+      lemma), agni ("fire")+gni, aja ("goat")+ja, ahi ("snake")+hi, amṛta
+      ("nectar")+mṛta — all structurally valid a-/an-+lemma pairs, none genuine
+      privative derivations. A minimum base-length filter does not fix this
+      (checked: candidate count barely changes from length>=2 to length>=5) —
+      this is a semantic-transparency wall, the same fundamental kind already
+      deprioritized for HK-226/227, discovered via a different structural pattern
+    ref: >-
+      no ground-truth source for part 1; KocherginaUchebnik_1998/privative_noun_abstractness.py;
+      hk42_privative_noun_abstractness_stats.json; cf. HK-225/229 (H1047), HK-226/227 (semantic transparency)
     verdict_pedagogy: FREQUENCY-HIDDEN
     note: >-
-      Same failure mode as HK-41: precise percentages with no reproducible base. The a-privative's
-      productivity and abstract-antonym semantics are real, but '≥1/3' and '~80%' are asserted, not
-      shown.
+      Same failure mode as HK-41 for part 1: precise percentages with no
+      reproducible base. Part 2 is now a properly sized attempt, not an
+      unattempted assertion — but the candidate set itself needed semantic
+      judgment (transparent negation vs lexicalized homograph) that structural
+      pattern-matching against DCS's own lemma inventory cannot supply. Recorded
+      with the specific contaminating examples so this exact wall isn't
+      rediscovered from scratch.
 
 
   - id: HK-43
@@ -1383,13 +1449,36 @@ entries:
     sources:
     - whitney
     verdict_fact: UNTESTABLE
-    number: 'the ''-a → -ī for most animate masculines'' share is not reproducible: the feminine of an a-stem is formed
-      in -ā or -ī by suffixal/lexical conditioning, and ''большинство ... -ī'' has no stated or computable count base
-      (the DCS lemma inventory is not tagged for masc→fem derivation pairs)'
-    ref: Whitney §1223ff (feminine derivation -ā vs -ī); no reproducible count base
+    number: >-
+      SIZED, not "no instrument" (16-07-2026, masc_animate_feminine_pattern.py, H1056):
+      the animacy blocker itself is now resolved (animacy_lookup.py, same pass) — 2,008
+      animate masc a-stem NOUN lemmas identified. But the feminine-form check hit a
+      MAJOR CONFOUND, found and partially corrected, not hidden: a naive surface-form
+      split (940 feminine-tagged tokens of these lemmas) showed -ā dominating
+      overwhelmingly (157 lemmas vs 3) — inspecting the raw sentences showed this was
+      almost entirely BAHUVRĪHI COMPOUND-FINAL AGREEMENT (e.g. 'putrā', 140 tokens,
+      mostly the tail of compounds like diti-vinaṣṭa-putrā '[Diti] whose sons were
+      destroyed' — a bahuvrīhi adjective agreeing with a feminine head by simple
+      -a→-ā lengthening, NOT the substantive noun-pair derivation the claim means).
+      Excluded via the `mwt` compound-span table: 940 -> 67 standalone tokens, 22
+      lemmas. Even after filtering, -ā STILL dominates (19 lemmas vs 3) on this thin
+      residual. Recorded as INCONCLUSIVE: n=22 is thin, and further confounds
+      (external sandhi-compounding the mwt table doesn't capture; competing lexical
+      alternatives like duhitṛ 'daughter') were not ruled out given the effort already
+      spent isolating the first confound. Whether the claim is genuinely overstated or
+      a cleaner instrument would still confirm it stays open
+    ref: >-
+      Whitney §1223ff (feminine derivation -ā vs -ī); KocherginaUchebnik_1998/masc_animate_feminine_pattern.py;
+      hk86_masc_animate_feminine_stats.json; animacy_lookup.py (H1056)
     verdict_pedagogy: FREQUENCY-HIDDEN
-    note: A proportion claim whose base cannot be reconstructed. Directionally the -ī feminine is very common for animates,
-      but the '-ī is the majority' figure is asserted, not shown; -ā is the competing default. Flagged UNTESTABLE.
+    note: >-
+      A proportion claim whose base cannot yet be reconstructed cleanly — not for lack
+      of trying, but because the surface-pattern check is heavily confounded by an
+      unrelated grammatical phenomenon (bahuvrīhi compound agreement) that shares the
+      exact same -a→-ā surface change the claim is about for simple nouns. Recorded
+      with the compound-contamination finding so it isn't rediscovered from scratch;
+      still flagged UNTESTABLE rather than forced to a verdict on a confounded, thin
+      residual.
 
   - id: HK-87
     loc: Занятие XII / mdx line 2448
@@ -1411,14 +1500,33 @@ entries:
     falsifiable_as: Among two-grade roots, proportion with vowel -a- vs other vowels
     sources:
     - whitney
-    verdict_fact: UNTESTABLE
-    number: the claim conflates ablaut grades ('слабая = guṇa' is itself non-standard, guṇa being the middle grade)
-      and asserts an unquantified 'обычно' about which roots are two-grade — neither the phrasing nor the proportion
-      is checkable against a ground-truth source
-    ref: Whitney §235ff (guṇa/vṛddhi grades); claim phrasing internally unclear
-    verdict_pedagogy: ORDER-QUESTIONABLE
-    note: The statement mislabels the grade hierarchy and makes an unquantified frequency claim; flagged UNTESTABLE
-      rather than forced into a fact verdict on an ambiguous formulation.
+    verdict_fact: TRUE
+    number: >-
+      MEASURED (16-07-2026, two_grade_root_vowel_check.py, H1047), reusing the H978
+      morphoclass crosswalk (ryad_1978 + polnoizm_1978, no new corpus query needed).
+      The prior verdict's premise was wrong: re-checked the mdx source directly (line
+      2632) and the claim is NOT internally confused — it precisely names the
+      неполноизменяемый subtype where weak grade and guṇa COINCIDE ('совпадают слабая
+      ступень и ступень guṇa'), exactly Ocherk §62's own subtype-1 (tyaj: weak=guṇa=
+      tyaj, vṛddhi=tyāj — Kochergina's own example matches Ocherk's verbatim). Among
+      429 roots classified 'defective' (неполноизменяемый) in the crosswalk, **261 =
+      60.8% belong to the A-series (vowel -a-)** — vs only **34/424 = 8.0%** among
+      'full'-alternating (полноизменяемый) roots. A-series roots are ~7.6× overrepresented
+      among defective roots relative to full-alternating ones, confirming 'обычно это
+      корни с гласной -a-' clearly
+    ref: >-
+      Whitney §235ff (guṇa/vṛddhi grades); cf. ZalizniakOcherk_1978 §62 (subtype-1,
+      same tyaj example); KocherginaUchebnik_1998/two_grade_root_vowel_check.py;
+      hk88_two_grade_root_vowel_stats.json
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      The prior UNTESTABLE verdict mischaracterized the claim as mislabeling the grade
+      hierarchy — rereading the mdx directly shows it's a precise, standard description
+      (Ocherk's own subtype-1 неполноизменяемость, using the identical tyaj example).
+      One scope caveat: the crosswalk's 'defective' flag doesn't separate неполноизменяемость
+      subtypes 1/2/3, so this measures the BROADER defective category, not subtype-1
+      alone — a reasonable proxy since Ocherk itself notes subtype-3 is 'очень малочисленный',
+      but not a perfectly scoped match.
 
   - id: HK-89
     loc: Занятие XIII / mdx line 2644
@@ -3072,13 +3180,39 @@ entries:
     - dcs
     - whitney
     verdict_fact: UNTESTABLE
-    number: the narrative-vs-dialogue register split of the aorist cannot be measured against DCS-2021 (no register/speech-act
-      tagging); the aorist is rare overall (2,452 tokens, 0.31% — HK-1), consistent with a marginal, register-restricted
-      use
-    ref: Whitney §928 (aorist's recent-past / conversational value); DCS has no register tags
+    number: >-
+      SIZED, not "no instrument" (16-07-2026, aorist_register_probe.py, H1040): checked
+      the full 270-text DCS inventory first — DCS carries ZERO drama/nāṭaka texts (no
+      Śakuntalā, no Mṛcchakaṭikā, no Bhāsa play; Nāṭyaśāstra is a treatise ABOUT
+      dramaturgy, not a play), so the literal comparison set the claim names does not
+      exist in this corpus at all, full stop. Built a structural genre PROXY instead —
+      the classical Upaniṣads as a catechism-dialogue text-class (Bṛhadāraṇyaka,
+      Chāndogya, Kaṭha, Kauṣītaki, Śvetāśvatara, Muṇḍaka, Taittirīya, Aitareya) vs
+      Brāhmaṇa+Śrautasūtra ritual-prescriptive prose as a narrative/procedural class —
+      using DCS-2026's own aorist-specific feat_formation tags (root/them/s/is/red/sa/sis
+      under feat_tense=Past, excluding the untagged Past remainder H1000/OCH-68 found
+      dominated by the untagged reduplicated perfect). Result: dialogue proxy 1.14%
+      aorist share of verbal tokens (91/8,010) vs narrative proxy 1.33% (1,530/114,924)
+      — ratio 0.85, the OPPOSITE direction from the claim, though both sit close to the
+      whole-corpus baseline (1.20%, 12,054/1,007,361) and epic (Mahābhārata+Rāmāyaṇa,
+      genuinely mixed narration+dialogue, reported separately) sits lower still (0.84%).
+      This null result does NOT refute Whitney's actual philological observation about
+      DRAMATIC dialogue specifically — Upaniṣadic catechism is formulaic ritual prose,
+      not the colloquial/naturalistic register Whitney means, so the proxy substitution
+      is itself questionable, not just the measured direction
+    ref: >-
+      Whitney §928 (aorist's recent-past / conversational value); DCS has no drama texts
+      to test the literal claim (checked, not presumed); KocherginaUchebnik_1998/aorist_register_probe.py;
+      hk207_aorist_register_stats.json
     verdict_pedagogy: JUSTIFIED
-    note: A known philological observation (the classical aorist survives chiefly in dialogue/drama as a recent past),
-      but the register split is not corpus-checkable. Flagged UNTESTABLE while noting the overall rarity is confirmed.
+    note: >-
+      A known philological observation (the classical aorist survives chiefly in
+      dialogue/drama as a recent past) that this corpus genuinely cannot test — not
+      because no instrument was built, but because the referent (drama) isn't in DCS at
+      all, and the best available structural stand-in (Upaniṣad dialogue-frame vs
+      Brāhmaṇa/Śrautasūtra prescriptive prose) measures something adjacent, not
+      identical, to what the claim means. Recorded as a sized negative pilot so the
+      proxy is never re-derived as if it settled the question either way.
 
   - id: HK-208
     loc: Занятие XXXVII / mdx line 9618
@@ -3272,13 +3406,30 @@ entries:
     falsifiable_as: dus- person-nouns vs inanimate-nouns in lexicon
     sources:
     - dcs
-    verdict_fact: UNTESTABLE
-    number: the split of dus-+S derivatives into 'few person-nouns' vs a mass of inanimate nouns is a semantic (animate/inanimate)
-      classification with no stated or computable count base
-    ref: no ground-truth source; animacy classification base undisclosed
-    verdict_pedagogy: FREQUENCY-HIDDEN
-    note: Directionally plausible but the animate/inanimate share is asserted, not shown. Flagged UNTESTABLE (same failure
-      mode as HK-41/HK-42).
+    verdict_fact: TRUE
+    number: >-
+      MEASURED (16-07-2026, animacy_lookup.py + dus_prefix_animacy.py, H1056): the
+      prior blocker ("animacy classification base undisclosed") is resolved — DCS's
+      own m_wordsem column carries Sanskrit-WordNet sense ids, and the mapping table
+      that turns those ids into a usable category (word-senses.csv +
+      sembank-relations.csv) already exists in the upstream dcs-conllu mirror's own
+      lookup/ folder; it was never built into a corpus-side animacy tagger before now.
+      Among 232 dus-/dur-/duṣ-/duś-prefixed NOUN lemmas, 56 carry a wordsem-derived
+      animacy classification: **only 6/56 = 10.7% are animate (person-class)**, vs
+      48/56 = 85.7% inanimate (2 tied). Confirms 'сравнительно немногие наименования
+      лиц; основная масса — неодушевлённые' clearly. (176/232 lemmas are untagged —
+      no wordsem coverage — and excluded from the ratio, not silently folded into
+      either side.)
+    ref: >-
+      KocherginaUchebnik_1998/animacy_lookup.py; dus_prefix_animacy.py;
+      hk221_dus_prefix_animacy_stats.json; animacy_lemma_lookup.json
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Directionally plausible claim, now measured rather than asserted: animate
+      dus-derivatives are a clear minority (10.7% of classified lemmas). Spot-checked
+      the animacy tagger itself against 24 known animate/inanimate Sanskrit nouns
+      before trusting it (22/24 correct; the 2 misses are explainable polysemy/
+      coverage gaps, not tagger bugs) — see animacy_lookup.py's own validation.
 
   - id: HK-222
     loc: Занятие XXXVIII / mdx line 10196
@@ -3338,8 +3489,18 @@ entries:
       of all verb lemmas'
     ref: no clean prefixed/simple verb-lemma partition; count base undisclosed
     verdict_pedagogy: FREQUENCY-HIDDEN
-    note: Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted, not reproducible from the
-      DCS-2021 lemma inventory. Flagged UNTESTABLE.
+    note: >-
+      Directionally plausible (prefixed verbs are very common), but '≈1/3' is asserted,
+      not reproducible from the DCS-2021 lemma inventory. Flagged UNTESTABLE.
+      INDEPENDENTLY RE-ATTEMPTED 16-07-2026 (H1047) with a second, root-validated
+      method (each of DCS-2026's 11,096 distinct VERB lemmas checked against the
+      930-root WhitneyRoots crosswalk as either a bare known root or a known-preverb +
+      known-root compound) — hit the SAME wall from a different angle: only 28% of
+      lemmas classify cleanly either way (626 simple + 2,464 prefixed), leaving 72%
+      (8,006 lemmas) unclassifiable without genuine morphological segmentation, which
+      neither export provides. Two independent attempts, two different methods, same
+      conclusion: this needs real segmentation infrastructure this pipeline doesn't
+      have, not a smarter query. Not re-derived without new infrastructure.
 
   - id: HK-226
     loc: Занятие XXXIX / mdx line 10473
@@ -3399,8 +3560,18 @@ entries:
       no support for a prati- peak'
     ref: no noun-specific preverb count; general tally does not single out prati-
     verdict_pedagogy: FREQUENCY-HIDDEN
-    note: Not confirmable, and the one available (broad, limited-scope) preverb tally does not support 'especially numerous
-      with prati-'. Flagged UNTESTABLE rather than forced to a fact verdict on an uncertain base.
+    note: >-
+      Not confirmable, and the one available (broad, limited-scope) preverb tally does
+      not support 'especially numerous with prati-'. Flagged UNTESTABLE rather than
+      forced to a fact verdict on an uncertain base. INDEPENDENTLY RE-CHECKED
+      16-07-2026 (H1047, unvalidated NOUN-lemma prefix-string count, DCS-2026): prati-
+      ranks 10th by lemma-type count (383) among preverbs, well behind vi- (1,716),
+      ā- (1,443), pra- (1,204), su- (1,063) — CONSISTENT with the prior finding
+      (prati- does not peak), though this count is unvalidated against a real stem
+      lexicon (short preverbs like vi-/ā- likely inflate their own rank via coincidental
+      word-initial letter matches, so the ranking below prati- is noisier than the
+      simple fact that prati- doesn't lead). Two independent checks, same negative
+      direction — not re-derived further without real morphological segmentation.
 
   - id: HK-230
     loc: Занятие XXXX / mdx line 10708
@@ -3459,3 +3630,395 @@ entries:
     ref: Whitney §1313 (avyayībhāva)
     verdict_pedagogy: JUSTIFIED
     note: Correct avyayībhāva description. Anchor.
+
+  # --- H1050: полный аудит раздела самас (занятия XXX-XXXIII, XXXVIII, XXXX) по кодбуку
+  # Лейтана (sangram/articles/tatpurusha/data/codebook_leitan.md) + Whitney гл. о композитах
+  # (§§ 1246-1316) + корпусные пакеты P4/SG-WF-006. Директива MG 16-07-2026 (адъюдикация
+  # A65, заметка к HK-34): «весь раздел по самасам неверный. Проверить все по Лейтану».
+  # HK-234..HK-259 добирают 26 нереестрованных утверждений раздела.
+
+  - id: HK-234
+    loc: "Занятие XXXII / mdx line 8406"
+    claim_ru: >-
+      Сложным словом мы будем считать такое сочетание основ, при котором каждая из
+      основ встречается в самостоятельном употреблении в языке определенного периода.
+    kind: rule
+    falsifiable_as: "does EVERY compound member also occur as an independent word"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-class: bound kṛt finals never occur independently — -jit, -stha, -ga, -da (upapada compounds; codebook_leitan.md tier-2 'upapada'); Kochergina herself teaches ji→-jit, kar→-kṛt (HK-186)"
+    ref: "Leitan codebook (upapada); Whitney compounds chapter (§§1246 слл.)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The working definition excludes the upapada class whose bound finals (-jit, -kṛt)
+      the same textbook teaches one lesson later — the definition's universal «каждая»
+      is contradicted by her own material.
+
+  - id: HK-235
+    loc: "Занятие XXXII / mdx line 8408"
+    claim_ru: "Внутри сложного слова действуют правила внешних saṃdhi."
+    kind: rule
+    falsifiable_as: "do compound-member junctions follow external sandhi rules"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: member junctions follow external sandhi as the default (rāja + ṛṣi → rājarṣi; catuḥ + ṣaṣṭi → catuḥṣaṣṭi); lexicalized irregular junctions (ṣoḍaśa type) are closed exceptions, not the rule"
+    ref: "Whitney compounds chapter (§§1246 слл., external combination as default)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Correct as the teaching default; the handful of irregular junctions are lexical
+      items (see HK-259 on numeral compounds where one bites her own paradigm).
+
+  - id: HK-236
+    loc: "Занятие XXXII / mdx line 8410"
+    claim_ru: >-
+      Словами tatpuruṣa являются такие сложные слова, первый элемент которых выражен
+      именем существительным или местоимением; вторым элементом может быть
+      существительное, прилагательное или отглагольное образование.
+    kind: typology
+    falsifiable_as: "is tatpuruṣa correctly delimited by the PART OF SPEECH of member1 (noun/pronoun) rather than by the case relation"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "the Pāṇinian criterion is the CASE RELATION of member1 in the vigraha (vyadhikaraṇa, cases 2-7 — codebook tier 2), not its POS; her own L8426 admits noun+noun karmadhārayas, so 'noun-first ⇒ tatpuruṣa' fails inside her own partition"
+    ref: "Leitan codebook (vibhakti-tatpuruṣa dvitīyā-saptamī; karmadhāraya = samānādhikaraṇa, Pāṇ. 1.2.42)"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      A POS-based surrogate for a case-relation definition: internally leaky (appositional
+      N+N compounds are karmadhāraya by her own next paragraph) and non-Pāṇinian (Leitan:
+      karmadhāraya and dvigu are SUBTYPES of tatpuruṣa, not siblings).
+
+  - id: HK-237
+    loc: "Занятие XXXII / mdx line 8419"
+    claim_ru: >-
+      Словами karmadhāraya являются такие сложные слова, первый элемент которых выражен
+      именем прилагательным, причастием или наречием.
+    kind: typology
+    falsifiable_as: "is karmadhāraya delimited by member1 POS = adjective/participle/adverb"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-class in her own text: L8426 adds appositional noun+noun compounds (puruṣavyāghra type) to karmadhāraya — the POS criterion is broken by her own extension; the Pāṇinian criterion is same-case (samānādhikaraṇa)"
+    ref: "Leitan codebook (karmadhāraya = samānādhikaraṇa-tatpuruṣa); Whitney descriptive compounds"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      Same partition defect as HK-236, from the other side.
+
+  - id: HK-238
+    loc: "Занятие XXXII / mdx line 8426"
+    claim_ru: >-
+      К словам karmadhāraya относятся также сочетания двух существительных по типу
+      приложения; тогда сложное слово содержит элемент сравнения.
+    kind: rule
+    falsifiable_as: "do ALL appositional N+N karmadhārayas carry comparison (simile) semantics"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "the simile type (puruṣavyāghra 'man-tiger', meghaśyāma — codebook example) is real, but plain kind-apposition without simile is standard: rājarṣi 'царь-риши' — no comparison"
+    ref: "Leitan codebook (karmadhāraya: apposition OR simile); Whitney descriptive compounds"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      «Тогда» turns a subtype (simile) into a property of the whole appositional class;
+      rājarṣi-type appositives carry none.
+
+  - id: HK-239
+    loc: "Занятие XXXII / mdx line 8432"
+    claim_ru: >-
+      Словами dvigu являются такие сложные слова, первый элемент которых выражен
+      именем числительным.
+    kind: typology
+    falsifiable_as: "is every numeral-first compound a dvigu"
+    sources: [whitney, dcs]
+    verdict_fact: OVERSTATED
+    number: "dvigu traditionally requires the collective (samāhāra/taddhita) sense (codebook: 'numeral-initial karmadhāraya, collective sense'); the corpus NUM-first pool is dominated by numeral BAHUVRĪHIS (the OCH-58/A65 §4 negative pilot: a NUM-first gender census is unusable precisely because the class is flooded by bahuvrīhis)"
+    ref: "Leitan codebook (dvigu = saṃkhyā-pūrva karmadhāraya, collective); ZalizniakOcherk_1978/och58_compound_stats.json context"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      The numeral-first surface test over-captures: triloka- as bahuvrīhi ('three-worlded')
+      is not dvigu; the defining feature is the collective vigraha, which the definition omits.
+
+  - id: HK-240
+    loc: "Занятие XXXII / mdx line 8448"
+    claim_ru: >-
+      [Слова bahuvrīhi] превращаются в сложное определение-прилагательное, согласуясь с
+      определяемым словом в роде, числе и падеже и изменяя место ударения.
+    kind: rule
+    falsifiable_as: "do bahuvrīhi agree with their head in gender/number/case and shift the (Vedic) accent"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: adjectival agreement is definitional for the possessive class; the accent shift to the first member is the Vedic-accent regularity already verified as HK-184"
+    ref: "Whitney secondary adjective (possessive) compounds; ср. HK-184"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Accent half is meaningful only for the accented (Vedic) layer — same framing as HK-184.
+
+  - id: HK-241
+    loc: "Занятие XXXII / mdx line 8464"
+    claim_ru: >-
+      Bahuvrīhi как определения существительных женского рода образуются от основ
+      мужского рода по известным правилам.
+    kind: rule
+    falsifiable_as: "are feminine bahuvrīhi formed from the masculine stem by the regular feminine-derivation rules"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: fem. bahuvrīhi in -ā/-ī follow the ordinary adjectival feminine derivation; no standard counter-class"
+    ref: "Whitney secondary adjective compounds (feminine formation)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Thin falsifiable content («по известным правилам») — verified as the absence of a
+      special bahuvrīhi-specific feminine rule.
+
+  - id: HK-242
+    loc: "Занятие XXXII / mdx line 8466"
+    claim_ru: >-
+      Индийские имена и прозвища нередко являются сложными словами (чаще всего —
+      словами bahuvrīhi).
+    kind: statistic
+    falsifiable_as: "among compound personal names, is bahuvrīhi the most frequent type"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: DCS does not tag proper names by compound type; the P4 κ-sample (n=120) is not name-stratified"
+    ref: "P4 kappa_result.json (no name stratum)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Plausible (Mahābāhu, Pītāmbara type) but not adjudicable without an onomastic
+      compound-type census — instrument spec, not a verdict.
+
+  - id: HK-243
+    loc: "Занятие XXXII / mdx line 8474"
+    claim_ru: >-
+      В слова dvandva соединяются существительные, реже прилагательные. Dvandva могут
+      состоять из двух и более основ.
+    kind: statistic
+    falsifiable_as: "are dvandva members mostly nouns, with adjectival dvandvas rarer"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: copulative compounds are chiefly substantival; adjective dvandvas (śītoṣṇa type) form a recognized but smaller class"
+    ref: "Whitney copulative compounds (§§1252 слл.)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-244
+    loc: "Занятие XXXII / mdx line 8480"
+    claim_ru: >-
+      Двучленные dvandva, обозначающие множество предметов, могут иметь форму
+      множественного числа.
+    kind: rule
+    falsifiable_as: "are plural-ending two-member dvandvas attested when denoting pluralities"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic + attested (devamanuṣyāḥ type); existential «могут» is safe"
+    ref: "Whitney copulative compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-245
+    loc: "Занятие XXXII / mdx line 8490"
+    claim_ru: >-
+      Сложение, особенно dvandva, может встретиться внутри других типов сложных слов.
+    kind: rule
+    falsifiable_as: "are embedded compounds (especially dvandva) attested inside larger compounds"
+    sources: [dcs, whitney]
+    verdict_fact: TRUE
+    number: "existential core corpus-backed: 152,372 of 595,021 reconstructed compounds (25.6%) have 3+ members (SG-WF-006 coverage_summary.json) — embedding is the norm of the long tail; the «особенно dvandva» rider is systemically standard for long chains"
+    ref: "sangram/articles/compounds-overview/data/coverage_summary.json; Whitney on compound chains"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-246
+    loc: "Занятие XXXII / mdx line 8508"
+    claim_ru: "Сложные слова широко используются в заглавиях произведений на санскрите."
+    kind: statistic
+    falsifiable_as: "are Sanskrit work titles predominantly compounds"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "observational: the canonical title inventory is compound-dominated (Mahābhārata, Raghuvaṃśa, Kathāsaritsāgara, Daśakumāracarita …)"
+    ref: "title inventory of the classical canon (DCS text list)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-247
+    loc: "Занятие XXXIII / mdx line 8675"
+    claim_ru: "Корни на -ā изменяют -ā на a (в конце сложного слова)."
+    kind: allomorphy
+    falsifiable_as: "do root-final compound members in -ā appear shortened to -a (-stha, -jña, -ga, -da)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the -stha/-jña/-ga/-da finals are the standard shortened root forms"
+    ref: "Whitney root-final compound members"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-248
+    loc: "Занятие XXXIII / mdx line 8692"
+    claim_ru: >-
+      К основе на палатальные, d, ṣ или h в dvandva, имеющих собирательное значение,
+      присоединяется a.
+    kind: allomorphy
+    falsifiable_as: "do samāhāra-dvandva finals in palatal/d/ṣ/h extend with -a (chatropānaham type)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic (Pāṇinian samāhāra rule); her own example chatropānaham conforms"
+    ref: "Pāṇinian samāhāra-dvandva extension; Whitney copulative compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-249
+    loc: "Занятие XXXIII / mdx line 8698"
+    claim_ru: >-
+      Основа на долгую гласную или дифтонг в составе слов dvigu или dvandva имеет
+      соответствующую краткую гласную, т. е. ai, e → i; au, o → u.
+    kind: allomorphy
+    falsifiable_as: "do dvigu/dvandva finals with long vowel/diphthong shorten (dvikhāri type)"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic (Pāṇ. 1.2.47-48 class of rules); her dvikhāri example conforms"
+    ref: "Pāṇinian shortening in dvigu/upasarjana; Whitney"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-250
+    loc: "Занятие XXXIII / mdx line 8720"
+    claim_ru: >-
+      В исключительно редких случаях в словах tatpuruṣa первая основа сложения может
+      быть представлена словоформой.
+    kind: statistic
+    falsifiable_as: "are aluk-tatpuruṣas (inflected first member) exceptionally rare"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: aluk-samāsa is a small closed set (yudhiṣṭhira, vanecara type — codebook 'tat-other/aluk'); high token counts of individual names do not open the type"
+    ref: "Leitan codebook (aluk under tat-other); Whitney case-form first members"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-251
+    loc: "Занятие XXXIII / mdx line 8740"
+    claim_ru: >-
+      В словах tatpuruṣa основа -artha в форме косвенных падежей (обычно в A.)
+      означает «ради, для».
+    kind: rule
+    falsifiable_as: "does compound-final -artha (mostly acc. -artham) function as the postposition 'for the sake of'"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic + high-frequency attested (tadartham, kimartham); the acc. is indeed the dominant slot"
+    ref: "Whitney; DCS -artham adverbial tokens"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-252
+    loc: "Занятие XXXIII / mdx lines 8742-8748"
+    claim_ru: >-
+      В словах bahuvrīhi основы -ādi, -prabhṛti, -mātra, -apekṣā играют полуслужебную
+      роль; -ādi и -prabhṛti употребляются в значении «начиная с», -ādi часто служит и
+      для обозначения главного.
+    kind: rule
+    falsifiable_as: "are -ādi/-prabhṛti/-mātra/-apekṣā semi-grammaticalized bahuvrīhi finals with 'beginning with / measuring' senses"
+    sources: [whitney, dcs]
+    verdict_fact: TRUE
+    number: "systemic + attested: the -ādi type (rāmādayaḥ 'Rāma and the others') is a textbook-standard grammaticalized bahuvrīhi"
+    ref: "Whitney possessive compounds; DCS -ādi tokens"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-253
+    loc: "Занятие XXXIII / mdx line 8756"
+    claim_ru: >-
+      В редких случаях при основосложении karmadhāraya может быть изменен обычный
+      порядок следования основ.
+    kind: statistic
+    falsifiable_as: "are inverted-order karmadhārayas (gata-pūrva, pitā-maha) rare"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: the inverted type is a recognized closed list; «редких» is the correct hedge"
+    ref: "Whitney descriptive compounds (anomalous order)"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-254
+    loc: "Занятие XXXI / mdx line 8126"
+    claim_ru: >-
+      Количественные числительные образуются сложением единиц с десятками, тысячами,
+      причем единицы стоят на первом месте.
+    kind: rule
+    falsifiable_as: "in compound numerals do units precede tens/hundreds/thousands"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic: pañcaviṃśati type ordering is regular; the subtractive ekonaviṃśati type is a separate formation she footnotes, not an ordering counter-example"
+    ref: "Whitney numerals"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-255
+    loc: "Занятие XXXI / mdx line 8187"
+    claim_ru: >-
+      При образовании сложных числительных действуют правила внешних saṃdhi гласных и
+      согласных.
+    kind: rule
+    falsifiable_as: "do numeral-compound junctions follow regular external sandhi"
+    sources: [whitney]
+    verdict_fact: OVERSTATED
+    number: "counter-example inside her own paradigm: ṣoḍaśa '16' — regular external sandhi of ṣaṣ + daśa would give *ṣaḍdaśa (cf. viḍbhis-type ṣ→ḍ); the attested ṣo- junction is an irregular lexicalized form; the dvā-/aṣṭā- allomorphs (HK-178) likewise sit outside sandhi proper"
+    ref: "Whitney numerals (irregular combinations); ср. HK-178"
+    verdict_pedagogy: MISLEADING
+    note: >-
+      True for the majority of junctions (catuḥṣaṣṭi, saptāśīti), but stated as an
+      unqualified rule one line above paradigms containing ṣoḍaśa — the learner meets the
+      counter-example immediately.
+
+  - id: HK-256
+    loc: "Занятие XXXVIII / mdx line 10142"
+    claim_ru: >-
+      По значению существительные с su- и dus- сходны со сложными словами karmadhāraya,
+      но ударение в них падает на префикс.
+    kind: rule
+    falsifiable_as: "are Vedic su-/dus- nouns prefix-accented (vs the final-member accent of determinatives)"
+    sources: [whitney]
+    verdict_fact: UNTESTABLE
+    number: "no accent instrument: DCS carries no accent layer, and Whitney's accent statements for su-/dus- formations vary by subtype (cf. sumánas- with member accent) — the universal cannot be adjudicated without an accented-corpus census"
+    ref: "Whitney accent of compounds (subtype-dependent)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Instrument spec: a VedaWeb/accented-RV census of su-/dus- formations would settle it;
+      until then flagged, not scored — with sumánas- as prima facie tension.
+
+  - id: HK-257
+    loc: "Занятие XXXVIII / mdx line 10194"
+    claim_ru: >-
+      Индийская грамматическая традиция относила подобные прилагательные [с su-, dus-],
+      а также прилагательные с a-, sa- к bahuvrīhi.
+    kind: typology
+    falsifiable_as: "did the Pāṇinian tradition class su-/dus-/a-/sa- possessive adjectives as bahuvrīhi"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic-historical: nañ-bahuvrīhi (aputra-) and su-/dur- possessives (durmanas- 'whose mind is bad') are standard traditional bahuvrīhi classes"
+    ref: "Pāṇinian bahuvrīhi with nañ/su/dur first members; Whitney possessive compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""
+
+  - id: HK-258
+    loc: "Занятие XXXX / mdx line 10730"
+    claim_ru: >-
+      Десубстантивные прилагательные с другими префиксами встречаются редко;
+      употребляются преимущественно как определения живых существ и имеют посессивное
+      значение.
+    kind: statistic
+    falsifiable_as: "are desubstantival prefixal adjectives beyond vi-/nis-/ud- rare, mostly animate-modifying, possessive"
+    sources: [dcs]
+    verdict_fact: UNTESTABLE
+    number: "no instrument: DCS does not tag denominal prefixal adjectives as a class, and animacy of heads is untagged (same blocker family as HK-221)"
+    ref: "ср. HK-221 (animacy untagged)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Second half doubles the HK-221-class animacy blocker; queued instrument (H1056
+      animacy tagging) would unlock both.
+
+  - id: HK-259
+    loc: "Занятие XXXX / mdx line 10732 (+ fn line 15756)"
+    claim_ru: >-
+      Префиксальные десубстантивные прилагательные по значению аналогичны словам
+      bahuvrīhi; согласно индийской лингвистической традиции их и относили к сложным
+      словам bahuvrīhi.
+    kind: typology
+    falsifiable_as: "did the Indian tradition class prefixal possessive adjectives as bahuvrīhi"
+    sources: [whitney]
+    verdict_fact: TRUE
+    number: "systemic-historical: same traditional classification as HK-257 (prādi/nañ possessives under bahuvrīhi)"
+    ref: "Pāṇinian bahuvrīhi classes; Whitney possessive compounds"
+    verdict_pedagogy: JUSTIFIED
+    note: ""

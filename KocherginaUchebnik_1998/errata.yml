@@ -8,7 +8,23 @@
 #        python scripts/build_errata.py diff KocherginaUchebnik_1998 <old-git-ref> [<new-git-ref>]
 #      then fold reviewed candidates from errata.candidates.yml into `entries` below.
 #
-# Entry shape: { page, line, read, instead, found_by, date_added, fixed_in?, note? }
+# Entry shape: { page, line, read, instead, edition, found_by, date_added, fixed_in?, note? }
+#
+# `edition` (added by H807, 16-07-2026): which physical printing the page/line refs point at.
+#   Pin per K-1 (RESOLVED by MG 12-07-2026): the reference edition is the 1998 original —
+#   use edition: "1998". Later printings (2017 6th ed. Лихушина; 2024/2025) get their own
+#   value when MG supplies the scans (edition-diff pass, Decision C in
+#   METODICHKA_KOCHERGINA_COMPANION_2026.md §4.3). build_errata.py ignores unknown fields,
+#   so the column is forward-compatible; the renderer picks it up when multi-edition rows exist.
+#
+# SEED STATUS (H807, 16-07-2026): entries deliberately left EMPTY. No printed errata sheet
+# is catalogued, no second-edition scan exists to diff against, and the digitized .mdx alone
+# cannot distinguish a 1998 print typo from a digitization artifact — inventing rows would
+# violate the "do not invent errata" guardrail. First real rows come from either (A) a printed
+# sheet transcription or (B) a build_errata.py diff once a second edition text lands.
+# NOTE the open caveat: LEARNER_MATERIALS.md records the digitized copy as the 2017 6th ed.
+# (ред. Н. П. Лихушина) while K-1 pins errata refs to 1998 — if the .mdx is later shown to
+# transcribe the 2017 text, re-open K-1 before citing any page/line.
 
 work: "Kochergina, Sanskrit textbook (Учебник санскрита, 1998)"
 

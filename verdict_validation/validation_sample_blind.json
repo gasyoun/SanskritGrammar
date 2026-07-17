@@ -1,0 +1,1382 @@
+[
+ {
+  "id": "HB-10",
+  "book": "buhler",
+  "loc": "Урок V / mdx line 687",
+  "kind": "rule",
+  "claim_ru": "Предлог ā «до, вплоть до, начиная от» согласуется с Acc. или Abl.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "Whitney gives ā ('hither from; all the way to') with the ABLATIVE only (ā samudrāt); accusative government of ā is not the classical norm",
+   "ref": "Whitney §1128"
+  }
+ },
+ {
+  "id": "HB-100",
+  "book": "buhler",
+  "loc": "Урок VIII / mdx line 1042",
+  "kind": "rule",
+  "claim_ru": "Главное значение Ātmanepada у глаголов, которые имеют и par. и ātm., заключается в том, что действие совершается для самого же действующего лица, напр. yajati он приносит жертву (для кого-нибудь другого), yajate он приносит жертву (для себя самого)",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "missing instrument: per-token semantic tagging of benefactivity — DCS marks voice but not whether the action accrues to the agent, so the 'main meaning' cannot be counted",
+   "ref": "Whitney 1889 (middle voice value); cf. HB-13, OCH-32"
+  }
+ },
+ {
+  "id": "HB-106",
+  "book": "buhler",
+  "loc": "Урок VIII / mdx line 1060",
+  "kind": "allomorphy",
+  "claim_ru": "e и o перед a остаются без изменения, но последний выпадает ... Перед другими гласными и двугласными e и o превращаются или в ay и av или чаще в a",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: e/o + a- with elision of a is the invariable abhinihita treatment (vane 'pi); before other vowels the y/v of ay/av is usually dropped, so the a-with-hiatus form predominates — Whitney's own 'usually omitted'",
+   "ref": "Whitney 1889 (final e/o before vowels; abhinihita sandhi)"
+  }
+ },
+ {
+  "id": "HB-118",
+  "book": "buhler",
+  "loc": "Урок XI / mdx line 1417",
+  "kind": "rule",
+  "claim_ru": "Imperfectum Par., подобно индикативу, образуется от основы настоящего времени, к которой присоединяются вторичные формы личных окончаний. Перед глаголом появляется приращение a",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: augment + present stem + secondary endings is the definitional imperfect formation (ajayat, atudat, adīvyat)",
+   "ref": "Whitney 1889 (imperfect formation)"
+  }
+ },
+ {
+  "id": "HB-130",
+  "book": "buhler",
+  "loc": "Урок XVI / mdx line 2071",
+  "kind": "allomorphy",
+  "claim_ru": "С конечным a основы наст. вр. I, IV, VI и X классов оптативный ī сливается в e.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: thematic a + optative ī yields e exceptionlessly (bhavet, dīvyet, tudet, corayet)",
+   "ref": "Whitney 1889 (thematic optative)"
+  }
+ },
+ {
+  "id": "HB-133",
+  "book": "buhler",
+  "loc": "Урок XVII / mdx line 2228",
+  "kind": "allomorphy",
+  "claim_ru": "Существ. м. и ж. р. на ā, ī и ū, последним слогом которых является неизмененный глагольный корень, принимают те же окончания, что и nau. Те из них, которые оканчиваются на ā, теряют гласный перед гласными окончаниями, за искл. N. sing. pl. и Асc. pl.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the paradigm printed immediately below (mdx 2230) contradicts the stated exception list — Acc.sg. viśvapām retains ā before the vowel ending -am (not listed), while Acc.pl. viśvapaḥ loses it (yet is listed as an exception)",
+   "ref": "Whitney 1889 (root-stems in ā: ā retained in the strong cases)"
+  }
+ },
+ {
+  "id": "HB-142",
+  "book": "buhler",
+  "loc": "Урок XVIII / mdx line 2318",
+  "kind": "allomorphy",
+  "claim_ru": "Конечные краткие или долгие i, u и ṛ повышаются в vṛddhi, напр. nī, nāyayati; śru, śrāvayati; bhū, bhāvayati; kṛ, kārayati.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic counter-class: labial-preceded final ṝ gives ūr, not vṛddhi — pṝ forms the high-frequency pūrayati (the same ūr rule as OCH-14); nī/śru/bhū/kṛ/tṝ do take vṛddhi as stated",
+   "ref": "Whitney 1889 (causative stem); cf. OCH-14"
+  }
+ },
+ {
+  "id": "HB-150",
+  "book": "buhler",
+  "loc": "Урок XIX / mdx line 2509",
+  "kind": "statistic",
+  "claim_ru": "Часто употребляется множ. ч. вместо ед. ч. местоимений первого и второго лица.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "missing instrument: referent-number/pragmatic tagging — DCS morphology identifies vayam/yūyam tokens but not whether the referent is singular (pluralis maiestatis), so the 'вместо ед. ч.' proportion cannot be measured",
+   "ref": "Whitney 1889 (pronoun usage); Speijer-type syntax territory"
+  }
+ },
+ {
+  "id": "HB-158",
+  "book": "buhler",
+  "loc": "Урок XX / mdx line 2633",
+  "kind": "rule",
+  "claim_ru": "Прилагательное, относящееся к нескольким существительным различного рода, стоит в м. р., если эти сущ. состоят из имен м. и ж. рода; и в ср. р., если среди них находятся сущ. ср. р.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "SIZED, not \"no instrument\" (16-07-2026, gender_resolution_probe.py, built after ZalizniakOcherk_1978's treebank instrument (H1022) opened this door): DCS's own head/deprel columns DO encode the needed syntactic relation (a genuine UD-style slice, 223,751 tokens, 29,433 fully-parsed sentences — see H1022). Found 1,847 mixed-gender NOUN `conj` groups, but the claim needs specifically a PREDICATE adjective whose resolved gender covers the WHOLE coordination (an ordinary attributive adjective attaching to just one conjunct trivially agrees with THAT noun alone and doesn't test this rule at all — filtered out). Restricting to genuine predicate constructions (ADJ as root/copula-complement with an nsubj child inside a mixed-gender conjunction): **n = 4 in the entire annotated slice.** 2/4 match the stated rule exactly (jāyāḥ putrāḥ ca sumanasaḥ bhavantu — masc+fem → masc; a five-way Neut-containing list → medhyāni, neut); 2/4 show agreement with the nearest/first-listed conjunct instead (audumbaraḥ idhmaḥ paridhayaḥ mekṣaṇam ca bhavanti — masc+neut but predicate is masc, matching idhmaḥ; madhumatīr oṣadhīr dyāvo āpaḥ — masc+fem but predicate is fem, matching oṣadhīḥ) — exactly the RIVAL proximity/attraction strategy this entry's own note already anticipated from Whitney/Speijer, not a clean refutation. n=4 (2-for/2- against) is far too thin to verdict either way — a genuine data desert, not a missing instrument",
+   "ref": "BuhlerLeitfaden_1923/gender_resolution_probe.py; hb158_gender_resolution_probe.json; Speijer-type syntax territory; Whitney 1889 has no quantified treatment; cf. ZalizniakOcherk_1978/treebank_syntax_stats.py (H1022, same DCS head/deprel slice)"
+  }
+ },
+ {
+  "id": "HB-176",
+  "book": "buhler",
+  "loc": "Урок XXIV / mdx line 3114",
+  "kind": "universality",
+  "claim_ru": "Имена ср. р. на mat, yat и vat склоняются как имена на at; но в N. V. Асc. du. никогда не вставляется n. ... В N.sg. он оканчивается на mān, yān и vān, в V.sg. на man, yan, van.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the n-insertion option in du.n./fem. is confined to śatṛ participles, so mat/yat/vat stems never take it (du.n. śrīmatī, never *śrīmantī); N.sg.m. lengthens (śrīmān, kiyān, dhanavān), voc. śrīman, kiyan, dhanavan",
+   "ref": "Whitney 1889 (mant/vant declension)"
+  }
+ },
+ {
+  "id": "HB-186",
+  "book": "buhler",
+  "loc": "Урок XXV / mdx line 3355",
+  "kind": "rule",
+  "claim_ru": "N. V.sg. m. этих слов оканчиваются на a, N. V. Асc.sg, п. на ak; перед согласными оканчиниями конечный c изменяется согласно XXI, 1.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: N.V.sg.m. of añc-stems ends in -aṅ (prāṅ, udaṅ, pratyaṅ), not in -a as printed; neuter -ak and c→k before consonant endings are correct",
+   "ref": "Whitney §§407-410"
+  }
+ },
+ {
+  "id": "HB-198",
+  "book": "buhler",
+  "loc": "Урок XXVI / mdx line 3483",
+  "kind": "allomorphy",
+  "claim_ru": "Вместо формы pād, стоящей в конце сложных слов, в слабых падежах с вокальн. окончаниями, появляется pad",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Pāṇini 6.4.130 (pādaḥ pat) — -pād → -pad- before vowel-initial weak endings; Bühler's own example run dvipāt/dvipādam/dvipadaḥ instantiates it",
+   "ref": "Whitney 1889 (compound -pād); Pāṇini 6.4.130"
+  }
+ },
+ {
+  "id": "HB-199",
+  "book": "buhler",
+  "loc": "Урок XXVI / mdx line 3489",
+  "kind": "allomorphy",
+  "claim_ru": "kroṣṭṛ m. шакал образует V.sg., I. D. Abl.du. и Асc.I. D. Abl. G. L.pl. от kroṣṭṛ, а косвенные с вокальн. оканчаниями формы может образовывать от kroṣṭṛ или от kroṣṭu",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: V.sg. kroṣṭo, I.D.Abl.du. kroṣṭubhyām, Acc./I./D./Abl./L.pl. kroṣṭūn/kroṣṭubhiḥ etc. are u-stem forms — the sentence's first 'от kroṣṭṛ' must read 'от kroṣṭu', as its own printed examples (mdx 3491-3495) show",
+   "ref": "Whitney 1889 (kroṣṭṛ/kroṣṭu mixed declension); Pāṇini 7.1.95-97 (tṛjvat kroṣṭuḥ; vibhāṣā tṛtīyādiṣv aci)"
+  }
+ },
+ {
+  "id": "HB-2",
+  "book": "buhler",
+  "loc": "Урок I / mdx line 116",
+  "kind": "universality",
+  "claim_ru": "Все времена и наклонения имеют и активную (раrаsmaipada), и медиальную (ātmanepada) форму с характерными для каждой из них личными окончаниями.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "Bühler's own later lessons carve out the exceptions: root aorist 'встречается только P.' (Урок XLV), siṣ-aorist 'исключительно P.' (Урок XLVI), intensive I 'исключительно P.' / intensive II 'исключительно Ā.' (Урок XLVIII); DCS Benedictive Medium = 221 tokens (0.03%)",
+   "ref": "Whitney §829ff (root aorist active), §911 (siṣ-aorist active only); Bühler's own Уроки XLV, XLVI, XLVIII"
+  }
+ },
+ {
+  "id": "HB-200",
+  "book": "buhler",
+  "loc": "Урок XXVI / mdx line 3497",
+  "kind": "allomorphy",
+  "claim_ru": "pūṣan и aryaman два имени бога солнца, а также имена сложные с han, напр. brahmahan, в N.sg. т. имеют окончание āḥ; перед согласными суффиксами они отбрасывают n и перед гласными суффиксами слабых падежей выбрасывают a. В последнем случае звук h в слове han изменяется в gh",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the N.sg. of an-stems has no visarga — pūṣā, aryamā, brahmahā; the text's own example three words later prints 'N. brahmahā', contradicting its stated ending 'āḥ'",
+   "ref": "Whitney §426"
+  }
+ },
+ {
+  "id": "HB-21",
+  "book": "buhler",
+  "loc": "Урок XII / mdx line 1574",
+  "kind": "statistic",
+  "claim_ru": "Прилагательные на u, если конечному u предшествует только один согласный, в ж. р. могут принимать суффикс ī, и склоняются как nadī, напр. guru тяжелый, ж. p. gurvī ... Эти формы ж. р. более употребительны",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no adjective-gender-pairing annotation in the DCS export: counting gurvī- vs guru-feminines needs lemma+gender+agreement joins the current relational dump does not carry",
+   "ref": "cf. Whitney §344 (both formations acknowledged)"
+  }
+ },
+ {
+  "id": "HB-211",
+  "book": "buhler",
+  "loc": "Урок XXVIII / mdx line 3765",
+  "kind": "allomorphy",
+  "claim_ru": "После следующих, довольно употребительных корней на t, p и s вставляется i: dyut сиять, pat падать, krudh гневаться, lap говорить, vas жить, uṣita; śvas дышать, has смеяться.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: krudh forms kruddha, not *krudhita — and krudh ends in dh, violating the note's own 't, p и s' scope; the other six members (dyutita, patita, lapita, uṣita, śvasita, hasita) are correct",
+   "ref": "Whitney 1889 (seṭ ppp of t/p/s-final roots); kruddha per Whitney's Roots"
+  }
+ },
+ {
+  "id": "HB-214",
+  "book": "buhler",
+  "loc": "Урок XXVIII / mdx line 3787",
+  "kind": "allomorphy",
+  "claim_ru": "Конечный ś превращается в ṣ, после которого, как и после коренного ṣ, вместо t появляется ṭ, напр. dṛś, dṛṣṭa; daṅś, daṣṭa; dviṣ, dviṣṭa ... Подобным образом образуется от pṛch, pṛṣṭa; yaj, iṣṭa; sṛj, sṛṣṭa, mṛj, mṛṣṭa; śās, śiṣṭa.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: ś→ṣ with retroflexion of the following t (dṛṣṭa, daṣṭa with nasal loss, dviṣṭa) and the parallel ṣṭa-forms pṛṣṭa, iṣṭa (yaj with samprasāraṇa), sṛṣṭa, mṛṣṭa, śiṣṭa are all the received forms",
+   "ref": "Whitney 1889 (ś/ṣ-final ppp in -ṣṭa)"
+  }
+ },
+ {
+  "id": "HB-219",
+  "book": "buhler",
+  "loc": "Урок XXVIII / mdx line 3857",
+  "kind": "statistic",
+  "claim_ru": "Самые обычные глаголы на n и ṇ — следующие: khan, khāta; jan, jāta; tan растягивать, tata; man, mata; sam давать, sata; kṣaṇ повреждать, kṣata.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the fifth pair as printed, 'sam давать, sata', is corrupt — the root is san (Dhātupāṭha ṣaṇu dāne, matching the gloss 'давать') and its participle is sāta with lengthening (Pāṇini 6.4.42 janasanakhanām, parallel to jāta/khāta printed correctly beside it); 'sam' also violates the section's own 'глаголы на n и ṇ' scope",
+   "ref": "Whitney 1889 (ppp of n-final roots); Pāṇini 6.4.42"
+  }
+ },
+ {
+  "id": "HB-221",
+  "book": "buhler",
+  "loc": "Урок XXVIII / mdx line 3889",
+  "kind": "allomorphy",
+  "claim_ru": "Исключения: div играть (за деньги), dyūta; ṣṭhīv плевать — ṣṭhyūta; siv шить — syūta; takṣ плотничать — taṣṭa; bhrajj поджаривать — bhṛṣṭa.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: dyūta (div), ṣṭhyūta (ṣṭhīv), syūta (siv) with ūṭh-treatment of root-final v, and taṣṭa, bhṛṣṭa for the cluster-final takṣ, bhrajj — all are the received forms in Whitney's Roots and the lexica",
+   "ref": "Whitney 1889 (irregular aniṭ ppp of v- and cluster-final roots)"
+  }
+ },
+ {
+  "id": "HB-223",
+  "book": "buhler",
+  "loc": "Урок XXVIII / mdx line 3901",
+  "kind": "rule",
+  "claim_ru": "Совершенно неправильны: kṣai истощать — kṣāma; kṛś худеть, kṛśa; pac, pakva; śuṣ, śuṣka; phul расцветать phulla.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: kṣāma, kṛśa, pakva, śuṣka, phulla are the classic suppletive/nipātana participles (Pāṇini 8.2.51-55 sphere) and function adjectivally as the ppp of these roots",
+   "ref": "Whitney §§957-958"
+  }
+ },
+ {
+  "id": "HB-228",
+  "book": "buhler",
+  "loc": "Урок XXIX / mdx line 4013",
+  "kind": "allomorphy",
+  "claim_ru": "Корни на e, ai, ā имеют ā; корни на ṛ, корни, в середине которых находится носовой и корни, перечисленные в X, 2 б, трактуются как в praes. pass., напр. pradhyāya, vikīrya, prapūrya, nibadhya, procya, āhūya, pragṛhya, saṃpṛcchya.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the -ya gerund takes the same root shape as the ya-passive — ā for e/ai/ā roots (pradhyāya), īr/ūr for ṝ (vikīrya, prapūrya), nasal loss (nibadhya), samprasāraṇa (procya, pragṛhya, saṃpṛcchya, āhūya)",
+   "ref": "Whitney §992; cf. OCH-5"
+  }
+ },
+ {
+  "id": "HB-237",
+  "book": "buhler",
+  "loc": "Урок XXX / mdx line 4247",
+  "kind": "allomorphy",
+  "claim_ru": "Перед суффиксами, начинающимися с согласного, dṛś и sṛj должны принимать r вместо guṇa, а некоторые другие глаголы, как kṛṣ, tṛṣ, spṛś могут следовать этому правилу.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: draṣṭum/sraṣṭum are the only classical infinitives of dṛś/sṛj; kṛṣ and spṛś have sanctioned doublets (kraṣṭum~karṣṭum, spraṣṭum~sparṣṭum)",
+   "ref": "Whitney §227 (ra for ṛ in dṛś, sṛj, etc.)"
+  }
+ },
+ {
+  "id": "HB-242",
+  "book": "buhler",
+  "loc": "Урок XXX / mdx line 4261",
+  "kind": "allomorphy",
+  "claim_ru": "Перед anīya конечные дифтонги корней изменяются в ā, а допускающие подъем гласные — в guṇa, каузативы и корни X класса трактуются как в praes. pass. Примеры: dā — dānīya; gai — gānīya; śru — śravaṇīya; budh — bodhanīya; cur — coraṇīya; śrāvayati — śrāvaṇīya, но gūhanīya, mārjanīya.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: -anīya takes the guṇa-strengthened root with aya-drop in class X/causatives; all cited forms (śravaṇīya, bodhanīya, coraṇīya, śrāvaṇīya) are the attested standard ones",
+   "ref": "Whitney §965 (anīya-gerundive)"
+  }
+ },
+ {
+  "id": "HB-252",
+  "book": "buhler",
+  "loc": "Урок XXXII / mdx line 4581",
+  "kind": "allomorphy",
+  "claim_ru": "Основы на согласный принимают ту форму, которую они имеют перед окончанием L. pl, но основы на as это as всегда сохраняют",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: tara/tama attach to the pada (Loc.pl.) stem — dhanitara, balavattara, vidvattara; as-stems proper keep as (sumanastara)",
+   "ref": "Whitney 1889 (tara/tama on the middle/pada stem)"
+  }
+ },
+ {
+  "id": "HB-256",
+  "book": "buhler",
+  "loc": "Урок XXXII / mdx line 4587",
+  "kind": "statistic",
+  "claim_ru": "Следующие неправильные образования встречаются наиболее часто: antika — nedīyas, nediṣṭha; alpa — kanīyas, kaniṣṭha...; bahu — bhūyas, bhūyiṣṭha; yuvan — yavīyas, yaviṣṭha",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "UNTESTABLE: needs a per-lemma frequency join over īyas/iṣṭha comparatives in DCS; no permitted corpus number covers comparative lemma frequencies",
+   "ref": "Whitney §470 (the same canonical irregular-comparative list); cf. HB-47/HB-48/OCH-57"
+  }
+ },
+ {
+  "id": "HB-265",
+  "book": "buhler",
+  "loc": "Урок XXXIII / mdx line 4671",
+  "kind": "statistic",
+  "claim_ru": "те, где один член (большей частью передний) состоит ко второму в соотношении косвенного падежа",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: determinans-first order is definitional for the tatpuruṣa; reversed cases (pūrvakāya, madhyāhna type) are a small recognized closed set which Bühler himself lists as 'обратные случаи'",
+   "ref": "Whitney 1889 (dependent compounds)"
+  }
+ },
+ {
+  "id": "HB-268",
+  "book": "buhler",
+  "loc": "Урок XXXIII / mdx line 4683",
+  "kind": "statistic",
+  "claim_ru": "такие, первым членом которых является числительное количестьенное (dvigu). Они выражают большей частью группу или скопление и являются в таком случае сущ. сред. р. или женского рода на ī... Реже встречаются прилагательные этого класса",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "UNTESTABLE — blocker now MEASURED, not presumed (16-07-2026, H1008 negative pilot): the H1004 structural tagger finds the NUM-first compound class, but its final-member gender census (probe over 5,763 clusters, coverage 99.9%) shows 56% MASCULINE finals — i.e. the surface class is dominated by numeral BAHUVRĪHIS (caturbhuja-type agreeing with masculine heads), which are precisely NOT dvigus. Since DCS carries no compound- FUNCTION tagging (OCH-60's probe: mahābāhu last-member NOUN 192/193), dvigu-proper cannot be separated from numeral bahuvrīhi, and the collective-vs-adjectival proportions stay uncountable — recorded with numbers so the dead end is not re-derived",
+   "ref": "Whitney 1889 (numeral compounds); OCH-58 (the SHAPE statistic, measurable and measured); OCH-60 probe (function-blindness); ZalizniakOcherk_1978/compound_type_tagger.py"
+  }
+ },
+ {
+  "id": "HB-269",
+  "book": "buhler",
+  "loc": "Урок XXXIV / mdx line 4757",
+  "kind": "universality",
+  "claim_ru": "В конце всех tatpuruṣa rājan изменяется в rāja; sakhi в sakha; pathin в patha, за исключением тех случаев, когда предшествует su, kiṃ (худой) или a (не)",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the main substitutions (mahārāja, priyasakha, -patha) are solid Paninian samāsānta rules (Pāṇini 5.4.91), but the exception clause is not absolute — apatha n. 'бездорожье' is a common classical nañ-tatpuruṣa in patha, coexisting with apathin (nom. apanthāḥ)",
+   "ref": "Whitney 1889 (samāsānta a-stems); Pāṇini 5.4.91, 5.4.69"
+  }
+ },
+ {
+  "id": "HB-289",
+  "book": "buhler",
+  "loc": "Урок XXXVI / mdx line 5149",
+  "kind": "rule",
+  "claim_ru": "sam + kṛ дает saṅskṛ подготавливать, освящать. К этому корню приставляются также префиксы prādus и āvis делать очевидным, tiras закрывать, презирать, puras ставить впереди и alam украшать",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: s-insertion in sam+kṛ (saṃskaroti, saṃskṛta) and the quasi-preverbs prāduṣ-/āviṣ-/tiras-/puras-/alaṃ-karoti are all standard attested combinations",
+   "ref": "Whitney 1889 (sam+s+kṛ; gati combinations with kṛ)"
+  }
+ },
+ {
+  "id": "HB-296",
+  "book": "buhler",
+  "loc": "Урок XXXVIII / mdx line 5517",
+  "kind": "universality",
+  "claim_ru": "Все корни на u в сильных формах перед согласными окончаниями имеют vṛddhi (au) вместо guṇa (o). В корнях tu Р. быть сильным, ru Р. кричать, stu Р. Ā. прославлять может являться и guṇa. Но в таком случае вставляется долгий ī",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the marginal class II root ūrṇu makes ūrṇoti beside ūrṇauti (Pāṇini 7.3.90 vibhāṣā; MW cl. 2 ūrṇoti/ūrṇauti) — guṇa before a consonant ending without the ī that Bühler's exception clause requires",
+   "ref": "Whitney 1889 (class II u-roots); Pāṇini 7.3.89 (uto vṛddhir luki hali), 7.3.90, 7.3.95"
+  }
+ },
+ {
+  "id": "HB-304",
+  "book": "buhler",
+  "loc": "Урок XXXIX / mdx line 5751",
+  "kind": "allomorphy",
+  "claim_ru": "В корнях на ś, ṣ, kṣ и mṛj конечные звуки перед s (кот. в таком случае становится ṣ) превращаются в k, перед t и th (которые в таком случае становятся ṭ и ṭh) в ṣ, и перед dh (кот. становится ḍh) - в ḍ",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: dvekṣi / dveṣṭi / dviḍḍhi and mārṣṭi / mṛḍḍhi instantiate all three columns; this is the standard lingualizing series for final sibilants and second-series j (mṛj)",
+   "ref": "Whitney 1889 (internal sandhi of final sibilants; mṛj); cf. HB-44, OCH-19"
+  }
+ },
+ {
+  "id": "HB-326",
+  "book": "buhler",
+  "loc": "Урок XLII / mdx line 6183",
+  "kind": "rule",
+  "claim_ru": "Глаголы VII. кл. перед конечными согласными в сильных формах вставляют na [ṇa], в слабых n; последний ассимилируется следующему за ним согласному или, перед шипящими и h, превращается в anusvāra. Если корень уже содержит носовой, то последний исчезает.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: yunakti/yuñjanti (na/n infix with assimilation), piṃṣanti, tṛṃhanti (anusvāra before sibilant/h), bhañj→bhanakti (dictionary-form nasal superseded) — the definitional class VII architecture",
+   "ref": "Whitney §§683-687; cf. OCH-36"
+  }
+ },
+ {
+  "id": "HB-344",
+  "book": "buhler",
+  "loc": "Урок XLIII / mdx line 6599",
+  "kind": "allomorphy",
+  "claim_ru": "Корни vac, vad, vap, vaś, vas жить, и vah удваиваются посредством слога u, но в слабых формах удвоение отбрасывается, и коренной слог va переходит в ū. Подобно этому, корень yaj удваивается посредством i, а слабые формы имеют ī",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: uvāca/ūcuḥ/ūce, uvāha/ūhuḥ, iyāja/ījuḥ/īje — the samprasāraṇa-and-contraction pattern of exactly this root set is the standard doctrine",
+   "ref": "Whitney §§784b, 794b; cf. HB-55"
+  }
+ },
+ {
+  "id": "HB-349",
+  "book": "buhler",
+  "loc": "Урок XLIII / mdx line 6677",
+  "kind": "rule",
+  "claim_ru": "К корню присоединяется суффикс ām, в X кл. и для каузативов ayām, и к образованной таким образом форме прибавляется в Par. āsa, cakāra или babhūva, в Ātm. cakre",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: corayām āsa / gamayāṃ cakāra / īkṣāṃ cakre-type formations — the -ām (‑ayām for class X/causatives) stem plus the kṛ/as/bhū auxiliary set, with middle verbs taking cakre, is the standard formation rule",
+   "ref": "Whitney §§1070-1073; cf. HB-56"
+  }
+ },
+ {
+  "id": "HB-364",
+  "book": "buhler",
+  "loc": "Урок XLV / mdx line 6931",
+  "kind": "allomorphy",
+  "claim_ru": "Средние носовые выпадают, конечный ṛ переходит в guṇa.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: abhraśat (bhraṁś), asrasat (sraṁs) — penultimate nasal lost; ṛ-final roots show guṇa in the a-aorist stem",
+   "ref": "Whitney §847"
+  }
+ },
+ {
+  "id": "HB-372",
+  "book": "buhler",
+  "loc": "Урок XLV / mdx line 7005",
+  "kind": "allomorphy",
+  "claim_ru": "Начинающиеся с гласного корни удваивают конечный гласный, если они оканчиваются на один согласный или на группу, начинающуюся с r или n. При других сочетаниях удваивается большей частью первый согласный. Между согласными основы и удвоения вставляется i, очень редко a",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the printed «удваивают конечный гласный» contradicts every adjacent example — āśayati→āśiśat, arjayati→arjijat, īkṣayati→aicikṣat all double a CONSONANT",
+   "ref": "Whitney 1889 (reduplication of vowel-initial causative aorists, §865 territory)"
+  }
+ },
+ {
+  "id": "HB-374",
+  "book": "buhler",
+  "loc": "Урок XLVI / mdx line 7031",
+  "kind": "allomorphy",
+  "claim_ru": "Окончания, начинающиеся с sta или stha отбрасывают s после кратких гласных и после всех согласных, за исключением анусвары и r; dhvam после корневых гласных и дифтонгов, за исключением a, ā и после r превращается в ḍhvam",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: akṛthāḥ-type s-loss after short vowel/consonant (anusvāra and r excepted); astoḍhvam-type ḍhvam after non-a root vowels and r",
+   "ref": "Whitney §§881, 226c"
+  }
+ },
+ {
+  "id": "HB-396",
+  "book": "buhler",
+  "loc": "Урок XLVIII / mdx line 7211",
+  "kind": "statistic",
+  "claim_ru": "Настоящее время дезидератива, которое одно только и встречается довольно часто, спрягается (P. и Ā.) подобно VI классу.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Whitney describes the desiderative as in actual use practically confined to the present system, non-present forms being sporadic",
+   "ref": "Whitney 1889 (desiderative, §§1027, 1033-1034 territory); cf. OCH-49/OCH-50/HB-62"
+  }
+ },
+ {
+  "id": "HB-400",
+  "book": "buhler",
+  "loc": "Урок XLVIII / mdx line 7319",
+  "kind": "rule",
+  "claim_ru": "Интенсив глаголов значения „идти\" обозначает движение по кривой линии, у некоторых других глаголов он указывает, что действие совершается плохо.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "missing instrument: semantic tagging — no corpus means of verifying 'crooked movement' or pejorative readings of intensive tokens; the gap is confirmed programme-wide (OCH-63, KZ blocker analog for semantics)",
+   "ref": "Whitney §1000 territory; Pāṇini 3.1.23-24 (kauṭilya of motion verbs, garhā)"
+  }
+ },
+ {
+  "id": "HB-47",
+  "book": "buhler",
+  "loc": "Урок XXXII / mdx line 4579",
+  "kind": "universality",
+  "claim_ru": "Все прилагательные могут образовывать сравнительную степень посредством tara, f. tarā, а превосходную посредством tama, f. tamā",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the secondary comparison in -tara/-tama is fully productive across stem classes (and beyond adjectives — Bühler himself extends it to substantives and adverbs two lines later)",
+   "ref": "Whitney §§471-473"
+  }
+ },
+ {
+  "id": "HB-50",
+  "book": "buhler",
+  "loc": "Урок XXXVI / mdx line 5095",
+  "kind": "statistic",
+  "claim_ru": "Корни этого класса почти все оканчиваются на n или ṇ и спрягаются подобно корням V класса, оканчивающимся на гласные",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the class is ~9 roots — tan, kṣan, kṣiṇ, ghṛṇ, tṛṇ, man, van, san + kṛ; all but kṛ end in a nasal, and Bühler treats kṛ separately two paragraphs later",
+   "ref": "Whitney §§709-714"
+  }
+ },
+ {
+  "id": "HB-57",
+  "book": "buhler",
+  "loc": "Урок XLIII / mdx line 6727",
+  "kind": "statistic",
+  "claim_ru": "Перфект в классическом санскрите имеет то же значение, как и imperf. и только реже употребляется.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "DCS-2021 says the OPPOSITE direction on the corpus aggregate: perfect 61,986 tokens vs imperfect ~47,554 (all imperfect codes summed) — the perfect is ~1.3x MORE frequent. Semantic equivalence (first half of the claim) is confirmed (Whitney: the two are narrative equivalents in the later language)",
+   "ref": "DCS timws.csv via verify_claims_dcs.py (HK15_past_tenses); Whitney §§823, 826-827"
+  }
+ },
+ {
+  "id": "HB-60",
+  "book": "buhler",
+  "loc": "Урок XLV / mdx line 6929",
+  "kind": "rule",
+  "claim_ru": "Второй аорист образуется также как impf. VII кл., имеет P. и Ā.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the a-aorist is THEMATIC — it conjugates like a class VI imperfect (asicam, asicaḥ, asicat...), which is exactly the paradigm Bühler prints beside the rule; a class VII imperfect is athematic nasal-infixing (aruṇadham) and matches nothing in the paradigm shown",
+   "ref": "Whitney §§846-847; Bühler's own paradigm at Урок XLV"
+  }
+ },
+ {
+  "id": "HB-62",
+  "book": "buhler",
+  "loc": "Урок XLVIII / mdx line 7205",
+  "kind": "universality",
+  "claim_ru": "Все корни всех десяти классов и каузативные глаголы могут образовывать дезидератив, выражающий желание совершить действие, путем удвоения корня и присоединения суффикса sa [ṣa].",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the desiderative is a productive derived conjugation (cikīrṣati, śuśrūṣate, from causatives cikārayiṣati); as with the causative (HB-26), availability is paradigmatic even where usage is lexically sparse",
+   "ref": "Whitney §§1026-1031"
+  }
+ },
+ {
+  "id": "HB-8",
+  "book": "buhler",
+  "loc": "Урок III / mdx line 440",
+  "kind": "universality",
+  "claim_ru": "Родительный обозначает всякого рода принадлежность (Genitivus subjectivus, objectivus и partitivus).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the adnominal-possessive account covers the majority, but standard non-possessive genitives exist: genitive with verbs, genitive absolute, genitive of time; DCS case tokens: Gen = 1,050,398 (sg 725,761 / pl 300,296), the 3rd most frequent case",
+   "ref": "Whitney §§294-300 (esp. §300b genitive absolute); DCS tense_case_data.json cases"
+  }
+ },
+ {
+  "id": "HB-83",
+  "book": "buhler",
+  "loc": "Урок IV / mdx line 576",
+  "kind": "rule",
+  "claim_ru": "Висарга конечных aḥ и āḥ, восходящих к ar и ār, а также висарга окончаний iḥ, īḥ, uḥ, ūḥ, eḥ, aiḥ, oḥ перед начальными гласными и звонкими согласными превращается в r; перед r же она исчезает, а краткий предыдущий гласный удлинняется",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: r-origin and non-a-vowel visargas revert to r before voiced sounds (punar atra, agnir dahati, kavir ayam); before r- the r drops with lengthening of a short vowel (punā ramate)",
+   "ref": "Whitney 1889 (r-final and non-a visarga sandhi; loss with lengthening before r-); cf. HB-4, HB-9"
+  }
+ },
+ {
+  "id": "HK-10",
+  "book": "kochergina",
+  "loc": "Занятие VI / mdx line 1251",
+  "kind": "universality",
+  "claim_ru": "Имеются слова, никогда не носящие на себе ударение: частицы, краткие (энклитические) формы местоимений и verbum finitum в середине предложения.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: enclitic particles and short pronoun forms are genuinely accentless, but the finite verb is unaccented ONLY in a principal clause — it IS accented in a subordinate clause and when sentence-initial (Whitney §592, §595)",
+   "ref": "Whitney §92-94 (enclitics), §592/§595 (verb accent: principal- vs subordinate-clause; the §168 cited before 16-07-2026 is a euphonic-combination section — corrected by the H1033 verification pass)"
+  }
+ },
+ {
+  "id": "HK-118",
+  "book": "kochergina",
+  "loc": "Занятие XXII / mdx line 5229",
+  "kind": "rule",
+  "claim_ru": "Корни на -ā в 1/3 sg. P. принимают -au; опускают -ā перед окончаниями du/pl.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: ā-final roots take -au in the perfect 1sg/3sg P (dadau, yayau) and drop the -ā before the vowel-initial du/pl endings",
+   "ref": "Whitney §793a (ā-root perfect -au)"
+  }
+ },
+ {
+  "id": "HK-126",
+  "book": "kochergina",
+  "loc": "Занятие XXIII / mdx line 5573",
+  "kind": "allomorphy",
+  "claim_ru": "Глухие/непридыхательные звонкие перед t: -k,-kh,-g,-c,-j+t → -kt-; -p,-ph,-b+t → -pt-.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic (internal sandhi before -t): a voiceless or unaspirated-voiced final stop of an aniṭ root gives -kt-/-pt- clusters (vac → uktvā, chid → chittvā, svap → suptvā)",
+   "ref": "Whitney §141ff, §216 (internal sandhi before t)"
+  }
+ },
+ {
+  "id": "HK-129",
+  "book": "kochergina",
+  "loc": "Занятие XXIV / mdx line 5795",
+  "kind": "rule",
+  "claim_ru": "Основа пассива = ослабленный корень + ударяемый суффикс -ya.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the passive stem = the weak/zero-grade root + the accented suffix -yá- (dṛś → dṛśyá-, vac → ucyá-)",
+   "ref": "Whitney §768 (passive stem -yá-)"
+  }
+ },
+ {
+  "id": "HK-133",
+  "book": "kochergina",
+  "loc": "Занятие XXIV / mdx line 5855",
+  "kind": "rule",
+  "claim_ru": "Пассивные причастия настоящего = основа пассива + суффикс -māna.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: present passive participles = the passive stem + -māna (dīyamāna, kriyamāṇa)",
+   "ref": "Whitney §1043 (present participles -māna)"
+  }
+ },
+ {
+  "id": "HK-14",
+  "book": "kochergina",
+  "loc": "Занятие X / mdx line 1879",
+  "kind": "universality",
+  "claim_ru": "Существительные с основой на -ā являются существительными женского рода.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the derived (secondary) ā-declension is feminine, but monosyllabic/root ā-stems and some masculine proper nouns exist; the beginner rule ignores the root-noun class (Whitney §347-351)",
+   "ref": "Whitney §347ff (ā-stems: derived fem. vs root/monosyllabic)"
+  }
+ },
+ {
+  "id": "HK-15",
+  "book": "kochergina",
+  "loc": "Занятие X / mdx line 1957",
+  "kind": "statistic",
+  "claim_ru": "Imperfectum ... обычно употребляется как время повествования о событиях прошлого.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "true for classical narrative, but stratum-dependent: in Vedic the imperfect is the default past and the perfect competes for narration; 'обычно' hides the register/period conditioning",
+   "ref": "Whitney §779-783 (imperfect); §821-823 (perfect's later narrative drift)"
+  }
+ },
+ {
+  "id": "HK-16",
+  "book": "kochergina",
+  "loc": "Занятие XII / mdx line 2351",
+  "kind": "universality",
+  "claim_ru": "Основы на -ī и -ū всегда женского рода.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "counter-class well attested: masculine ī/ū-stems rathī 'charioteer', senānī 'army-leader', sudhī 'wise', monosyllabic bhū- (in compounds) — the 'всегда' universal is false",
+   "ref": "Whitney §343-344, §352 (masculine ī/ū-stems), §355-356 (derived fem. nadī/vadhū)"
+  }
+ },
+ {
+  "id": "HK-164",
+  "book": "kochergina",
+  "loc": "Занятие XXX / mdx line 7611",
+  "kind": "allomorphy",
+  "claim_ru": "ś, ṣ, ch, (иногда) j, h в конце словоформы и перед s дают ṭ, перед bh- дают ḍ.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: root-final ś/ṣ/ch (and sometimes j/h) go to ṭ word-finally and before -s, and to ḍ before bh-endings (viṭ, viḍbhis)",
+   "ref": "Whitney §218, §226 (palatal/ṣ → ṭ/ḍ)"
+  }
+ },
+ {
+  "id": "HK-165",
+  "book": "kochergina",
+  "loc": "Занятие XXX / mdx line 7621",
+  "kind": "allomorphy",
+  "claim_ru": "ś даёт -k/-g в корневых именах diś, dṛś, spṛś (dik, digbhis).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: in diś, dṛś, spṛś the root-final ś goes to k/g (dik, digbhis) rather than ṭ/ḍ — a lexical sub-rule",
+   "ref": "Whitney §218a (diś/dṛś/spṛś → k/g)"
+  }
+ },
+ {
+  "id": "HK-169",
+  "book": "kochergina",
+  "loc": "Занятие XXX / mdx line 7744",
+  "kind": "allomorphy",
+  "claim_ru": "Корневые имена на -ir, -ur удлиняют гласную перед r в определённых формах (gir→gīr).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: -ir/-ur root nouns lengthen the vowel before a consonant/zero ending (gir → gīr, gīrbhis; pur → pūr)",
+   "ref": "Whitney §392 (-ir/-ur lengthening)"
+  }
+ },
+ {
+  "id": "HK-17",
+  "book": "kochergina",
+  "loc": "Занятие XIV / mdx line 2970",
+  "kind": "statistic",
+  "claim_ru": "Наиболее часто ... употребляются формы 2-го лица [императива].",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "2nd-person imperative-active forms 2,751 = 62.7% of 4,386 distinct forms (DCS-2021); 3rd person 1,369 (31.2%), 1st person 266 (6.1%)",
+   "ref": "Whitney §569ff (imperative); DCS verify_claims_dcs.py HK-17"
+  }
+ },
+ {
+  "id": "HK-173",
+  "book": "kochergina",
+  "loc": "Занятие XXXI / mdx line 8017",
+  "kind": "rule",
+  "claim_ru": "От трёхступенчатых основ женский род = -ī к слабой ступени (rājan→rājñī).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: three-grade stems form the feminine with -ī on the weak grade (rājan → rājñī)",
+   "ref": "Whitney §449 (feminine on weak grade)"
+  }
+ },
+ {
+  "id": "HK-177",
+  "book": "kochergina",
+  "loc": "Занятие XXXI / mdx line 8122",
+  "kind": "rule",
+  "claim_ru": "Порядковые десятков 20-90 могут образовываться суффиксом -tama (viṃśatitama).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the ordinals of the tens 20-90 have a -tama variant (viṃśatitama beside viṃśa)",
+   "ref": "Whitney §487d (-tama ordinals of the tens)"
+  }
+ },
+ {
+  "id": "HK-189",
+  "book": "kochergina",
+  "loc": "Занятие XXXIII / mdx line 8728",
+  "kind": "universality",
+  "claim_ru": "В dvandva с основами на -tar первые всегда в N.sg (mātāpitarau).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: in a dvandva the -tar (kinship) first members stand in the Nom sg form (mātā-pitarau, not *mātṛ-)",
+   "ref": "Whitney §1253d (-tṛ dvandva members in Nom sg)"
+  }
+ },
+ {
+  "id": "HK-19",
+  "book": "kochergina",
+  "loc": "Занятие XVI / mdx line 3554",
+  "kind": "statistic",
+  "claim_ru": "Большинство входящих в IX класс глаголов оканчивается на \"носовой + согласная\" ... В основе настоящего времени носовой корня утрачивается.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "doubtful: many core kryādi roots are NOT nasal+consonant final — krī, jñā, grah, bandh, pū, lū, prī — so 'большинство ... носовой+согласная' overstates a real but minority sub-pattern",
+   "ref": "Whitney §723ff (kryādi / class IX)"
+  }
+ },
+ {
+  "id": "HK-196",
+  "book": "kochergina",
+  "loc": "Занятие XXXV / mdx line 9049b",
+  "kind": "allomorphy",
+  "claim_ru": "Корни на -ā, -e, -ai, -au присоединяют -páya; e и дифтонги → -ā (dā→dāpaya).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: ā/e/ai/au-final roots take causative -paya, with e and the diphthongs going to ā (dā → dāpaya-, dhā → dhāpaya-)",
+   "ref": "Whitney §1042j (causative -paya)"
+  }
+ },
+ {
+  "id": "HK-197",
+  "book": "kochergina",
+  "loc": "Занятие XXXV / mdx line 9099",
+  "kind": "rule",
+  "claim_ru": "Страдательное причастие каузатива утрачивает -aya, сохраняет guṇa (kāraya→kārita).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the causative past participle drops -aya but keeps the guṇa root vowel + -ita (kāraya- → kārita)",
+   "ref": "Whitney §1051 (causative participle -ita)"
+  }
+ },
+ {
+  "id": "HK-20",
+  "book": "kochergina",
+  "loc": "Занятие XVII / mdx line 3960",
+  "kind": "rule",
+  "claim_ru": "В личном окончании 3 л. pl praesens у глаголов III класса утрачивается -n.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the reduplicating class takes 3pl -ati/-ate (juhvati, dadati) — the nasal is dropped (Whitney §613, §660)",
+   "ref": "Whitney §613, §660 (reduplicating class 3pl endings)"
+  }
+ },
+ {
+  "id": "HK-207",
+  "book": "kochergina",
+  "loc": "Занятие XXXVII / mdx line 9614",
+  "kind": "statistic",
+  "claim_ru": "Аорист редко при повествовании, чаще в разговорной речи, диалоге (драмы).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the narrative-vs-dialogue register split of the aorist cannot be measured against DCS-2021 (no register/speech-act tagging); the aorist is rare overall (2,452 tokens, 0.31% — HK-1), consistent with a marginal, register-restricted use",
+   "ref": "Whitney §928 (aorist's recent-past / conversational value); DCS has no register tags"
+  }
+ },
+ {
+  "id": "HK-211",
+  "book": "kochergina",
+  "loc": "Занятие XXXVII / mdx line 9695",
+  "kind": "rule",
+  "claim_ru": "Тематический удвоительный аорист от корней с -p (каузатив): ā→i (jñā→ajijñipa).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the reduplicated aorist of -p causatives shows ā → i (jñā → ajijñipat) — the causative-linked reduplicated aorist",
+   "ref": "Whitney §861, §1046 (reduplicated aorist of causatives)"
+  }
+ },
+ {
+  "id": "HK-214",
+  "book": "kochergina",
+  "loc": "Занятие XXXVIII / mdx line 9950",
+  "kind": "allomorphy",
+  "claim_ru": "Сигматический аорист: -s для aniṭ, -iṣ для seṭ (позже распределение нарушается).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the sigmatic aorist takes -s for aniṭ roots and -iṣ for seṭ roots (the later language blurs the distribution)",
+   "ref": "Whitney §878ff (s-/iṣ-aorist)"
+  }
+ },
+ {
+  "id": "HK-221",
+  "book": "kochergina",
+  "loc": "Занятие XXXVIII / mdx line 10128",
+  "kind": "statistic",
+  "claim_ru": "dus-+S: сравнительно немногие наименования лиц; основная масса — неодушевлённые.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the split of dus-+S derivatives into 'few person-nouns' vs a mass of inanimate nouns is a semantic (animate/inanimate) classification with no stated or computable count base",
+   "ref": "no ground-truth source; animacy classification base undisclosed"
+  }
+ },
+ {
+  "id": "HK-225",
+  "book": "kochergina",
+  "loc": "Занятие XXXIX / mdx line 10421",
+  "kind": "statistic",
+  "claim_ru": "Примерно третья часть глаголов санскрита — префиксальные.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the '≈ one third of Sanskrit verbs are prefixed' share has no reproducible base in the available data: the VisualDCS prefix tally counts a specific derivation set (923 lemmas), not a clean prefixed-vs-simple partition of all verb lemmas",
+   "ref": "no clean prefixed/simple verb-lemma partition; count base undisclosed"
+  }
+ },
+ {
+  "id": "HK-226",
+  "book": "kochergina",
+  "loc": "Занятие XXXIX / mdx line 10473",
+  "kind": "statistic",
+  "claim_ru": "Полупрозрачные ~ треть (30%) префиксальных глаголов; всегда переходные.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the '≈30% semi-transparent' share is part of the same subjective semantic-transparency classification as HK-41 (60/30/<10%) — no stated corpus or coding scheme, not reproducible",
+   "ref": "no ground-truth source; see HK-41"
+  }
+ },
+ {
+  "id": "HK-227",
+  "book": "kochergina",
+  "loc": "Занятие XXXIX / mdx line 10485",
+  "kind": "statistic",
+  "claim_ru": "Глаголов с неразложимым значением менее 10%.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the '< 10% non-compositional' share is the third slice of the HK-41 semantic-transparency split — subjective, no count base, not reproducible against the corpus",
+   "ref": "no ground-truth source; see HK-41"
+  }
+ },
+ {
+  "id": "HK-228",
+  "book": "kochergina",
+  "loc": "Занятие XXXX / mdx line 10622",
+  "kind": "statistic",
+  "claim_ru": "Десубстантивы: префиксы ati-, adhi-, upa-, pra-, prati-, реже anu-, apa-, vi-.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the claim that ati-/adhi-/upa-/pra-/prati- dominate desubstantive noun derivation (vs anu-/apa-/vi-) is a per-preverb productivity ranking without a reproducible base; the VisualDCS preverb-lemma tally is a limited set and does not isolate desubstantive nouns",
+   "ref": "no clean desubstantive-by-preverb count; base undisclosed"
+  }
+ },
+ {
+  "id": "HK-229",
+  "book": "kochergina",
+  "loc": "Занятие XXXX / mdx line 10656",
+  "kind": "statistic",
+  "claim_ru": "Особенно многочисленны существительные с префиксом prati-.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "'prati- especially numerous [among nouns]' is not reproducible: the noun-specific prati- productivity has no stated base, and the general VisualDCS preverb-lemma tally ranks prati ~9th (behind sam/pra/vi), giving no support for a prati- peak",
+   "ref": "no noun-specific preverb count; general tally does not single out prati-"
+  }
+ },
+ {
+  "id": "HK-25",
+  "book": "kochergina",
+  "loc": "Занятие XXI / mdx line 4996",
+  "kind": "universality",
+  "claim_ru": "Формы простого перфекта образуются от всех односложных глагольных корней, начинающихся с согласной или с a, i, u и ṛ.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "exceptions exist: vid 'know', ās 'sit', and several long-vowel/derivative-heavy monosyllables take the periphrastic perfect (-ām + auxiliary), so 'от всех' is too strong",
+   "ref": "Whitney §790 (reduplicated perfect), §1070-1071 (periphrastic perfect roots)"
+  }
+ },
+ {
+  "id": "HK-32",
+  "book": "kochergina",
+  "loc": "Занятие XXX / mdx line 7644",
+  "kind": "statistic",
+  "claim_ru": "Имена с суффиксами -as, -is, -us в большинстве своем — среднего рода.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "neuter -as (manas, tejas type) is the salient class, but many masculine -as (candramas), and a mix of masc/fem -is/-us stems exist; lumping all three suffixes under 'в большинстве среднего рода' overstates",
+   "ref": "Whitney §415-420 (-as/-is/-us stems and their genders)"
+  }
+ },
+ {
+  "id": "HK-34",
+  "book": "kochergina",
+  "loc": "Занятие XXXII / mdx line 8408",
+  "kind": "universality",
+  "claim_ru": "Род сложного слова определяется родом последней основы.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "holds for tatpuruṣa/karmadhāraya/dvandva, but bahuvrīhi (possessive) gender tracks the *referent*, not the final stem — and Kochergina teaches bahuvrīhi in the same lessons, so the unqualified rule is self-contradicted",
+   "ref": "Whitney §1246ff (compound gender); §1293ff (bahuvrīhi agrees with referent)"
+  }
+ },
+ {
+  "id": "HK-36",
+  "book": "kochergina",
+  "loc": "Занятие XXXV / mdx line 9023",
+  "kind": "universality",
+  "claim_ru": "Каузативные глаголы всегда переходные. Способность образовать систему каузативных форм свойственна не всем глагольным корням.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the causative adds a valency (the causer), so it is transitive by construction; and causative formation is not fully productive across all roots — both clauses hold",
+   "ref": "Whitney §1041-1042 (causative formation and its transitivity)"
+  }
+ },
+ {
+  "id": "HK-38",
+  "book": "kochergina",
+  "loc": "Занятие XXXVII / mdx line 9623",
+  "kind": "rule",
+  "claim_ru": "I тип — корневой аорист. Образуется от некоторых корней на -ā и от bhū; образуются только формы залога Parasmaipada.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the Parasmaipada-only restriction is broadly right, but the root-aorist source set is wider than '-ā roots + bhū' — gam, sthā, dā, jñā, kram, dhā and others form root aorists (Whitney §829ff)",
+   "ref": "Whitney §829-834 (root aorist; its root inventory)"
+  }
+ },
+ {
+  "id": "HK-40",
+  "book": "kochergina",
+  "loc": "Занятие XXXIX / mdx line 10443",
+  "kind": "universality",
+  "claim_ru": "Глагол может иметь два префикса, причем в контактном положении к корню всегда будут стоять ā, ni, pra, parā, sam ... всегда в дистактном положении ... anu, apa, abhi, nis, pari и prati.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "preverb ordering has strong tendencies, but the doubled 'всегда' is too strong — attested double-preverb verbs show ordering variation, and a DCS scan of two-preverb forms surfaces counter-examples to a fixed inner/outer partition",
+   "ref": "Whitney §1076-1087 (verbal prefixes and their combination)"
+  }
+ },
+ {
+  "id": "HK-41",
+  "book": "kochergina",
+  "loc": "Занятие XXXIX / mdx line 10457",
+  "kind": "statistic",
+  "claim_ru": "Такие глаголы составляют большинство префиксальных глаголов (60%) ... примерно третью часть (30%) ... Глаголов этой группы менее 10%.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the 60/30/<10% partition is a subjective semantic-transparency classification with no stated corpus or coding scheme — not reproducible without Kochergina's own annotation",
+   "ref": "no ground-truth source; classification base undisclosed"
+  }
+ },
+ {
+  "id": "HK-42",
+  "book": "kochergina",
+  "loc": "Занятие XXXVII / mdx line 9736",
+  "kind": "statistic",
+  "claim_ru": "Не менее трети всех префиксальных существительных составляют существительные, образованные по модели a- + S. Из них большинство (около 80%) — наименования абстрактных понятий.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the ≥1/3 and ~80% shares depend on Kochergina's undisclosed count base (which nouns counted as 'prefixed', abstract-vs-concrete coding); directionally plausible against the DCS lemma inventory but the hard figures are unverifiable",
+   "ref": "no ground-truth source; count base undisclosed"
+  }
+ },
+ {
+  "id": "HK-4a",
+  "book": "kochergina",
+  "loc": "Занятие XVIII / mdx line 4277",
+  "kind": "universality",
+  "claim_ru": "Основа будущего времени образуется от ВСЕХ глаголов по единому правилу — прибавлением к корню ударяемого суффикса -syá.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "future is productive (18,004 finite fut. tokens, 2,618 distinct forms) but NOT one rule: three conditioned suffixes -sya/-ṣya/-iṣya, and the seṭ form -iṣya is the majority (56.8% of distinct forms) — see HK-4b",
+   "ref": "Whitney §931-935 (s-future, seṭ/aniṭ -iṣya vs -sya); DCS verify_claims_dcs.py HK-4"
+  }
+ },
+ {
+  "id": "HK-4b",
+  "book": "kochergina",
+  "loc": "Занятие XVIII / mdx line 4277",
+  "kind": "allomorphy",
+  "claim_ru": "Корни на согласные могут иметь варианты этого суффикса -ṣya или -iṣya. Суффикс -sya прибавляется к корням на -ā, -ṣya — к корням на другие гласные, -iṣya — к корням на дифтонги или на -ar.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "distinct future forms (DCS-2021): -iṣya 1,487 (56.8%) · -sya 652 (24.9%) · -ṣya 479 (18.3%). The seṭ form -iṣya is the single most common, not a marginal variant.",
+   "ref": "Whitney §934-935 (union-vowel i in the s-future); DCS verify_claims_dcs.py HK-4"
+  }
+ },
+ {
+  "id": "HK-5",
+  "book": "kochergina",
+  "loc": "Занятие XXXVII / mdx line 9655",
+  "kind": "statistic",
+  "claim_ru": "II тип [аориста] — тематический простой аорист. Самый распространенный в санскрите тип аориста. Обычно образуется от корней на согласную.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "DCS timws.csv tags aorist only as Act/Med (codes 10-13, 2,452 tokens), not by the 7 formation types — per-type split needs finer morphology than the 2021 export carries",
+   "ref": "Whitney §846-847 (a-aorist common, from roots in consonants)"
+  }
+ },
+ {
+  "id": "HK-55",
+  "book": "kochergina",
+  "loc": "Занятие V / mdx line 1071",
+  "kind": "statistic",
+  "claim_ru": "Среди внешних сандхи согласных широко распространена регрессивная ассимиляция.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Sanskrit external sandhi is overwhelmingly regressive (anticipatory) — the earlier segment assimilates in voice/place/nasality to the following one; progressive assimilation is the marked minority (e.g. n→ṇ, s→ṣ ruki)",
+   "ref": "Whitney §156ff (assimilation; regressive default)"
+  }
+ },
+ {
+  "id": "HK-82",
+  "book": "kochergina",
+  "loc": "Занятие X / mdx line 1959",
+  "kind": "rule",
+  "claim_ru": "Признак imperfectum — аугмент a-, на который падает ударение.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the imperfect (and aorist, and conditional) carries the augment a-, and the augment bears the accent (á-bhavat) in the accented (Vedic) text",
+   "ref": "Whitney §585, §541 (augment; augment accent)"
+  }
+ },
+ {
+  "id": "HK-86",
+  "book": "kochergina",
+  "loc": "Занятие XII / mdx line 2435",
+  "kind": "statistic",
+  "claim_ru": "От большинства мужских одушевлённых имён женский род образуется изменением -a на -ī.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the '-a → -ī for most animate masculines' share is not reproducible: the feminine of an a-stem is formed in -ā or -ī by suffixal/lexical conditioning, and 'большинство ... -ī' has no stated or computable count base (the DCS lemma inventory is not tagged for masc→fem derivation pairs)",
+   "ref": "Whitney §1223ff (feminine derivation -ā vs -ī); no reproducible count base"
+  }
+ },
+ {
+  "id": "HK-88",
+  "book": "kochergina",
+  "loc": "Занятие XIII / mdx line 2632",
+  "kind": "statistic",
+  "claim_ru": "Есть корни в двух ступенях (слабая = guṇa); обычно это корни с гласной -a-.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "the claim conflates ablaut grades ('слабая = guṇa' is itself non-standard, guṇa being the middle grade) and asserts an unquantified 'обычно' about which roots are two-grade — neither the phrasing nor the proportion is checkable against a ground-truth source",
+   "ref": "Whitney §235ff (guṇa/vṛddhi grades); claim phrasing internally unclear"
+  }
+ },
+ {
+  "id": "HK-97",
+  "book": "kochergina",
+  "loc": "Занятие XVI / mdx line 3469",
+  "kind": "typology",
+  "claim_ru": "Второе главное спряжение включает шесть классов: II, III, V, VIII, VII и IX.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the athematic ('second main') conjugation comprises exactly six present-classes — II, III, V, VII, VIII, IX — the count is exact",
+   "ref": "Whitney §606 (athematic classes)"
+  }
+ },
+ {
+  "id": "KZ-10",
+  "book": "konspekt",
+  "loc": "mdx line 521",
+  "kind": "statistic",
+  "claim_ru": "Во 2 pl атематических форм вместо -tha и -ta нередко бывает -thana и -tana.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Whitney lists -thana/-tana among the regular Vedic ending-variants of the 2pl, attested across the athematic classes (imperative and indicative) often enough to rank as side-forms, not curiosities",
+   "ref": "Whitney §553 and the Vedic-endings remarks of the conjugation chapters"
+  }
+ },
+ {
+  "id": "KZ-14",
+  "book": "konspekt",
+  "loc": "mdx line 509",
+  "kind": "statistic",
+  "claim_ru": "NVocAdu m а-склонения -ā вместо -au (в 7/8 случаев).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED: 808 -ā vs 144 -au among Ṛgveda NVA.du masc a-stem tokens = 84.9% against the claimed 7/8 = 87.5% — within 2.6pp of a hand-era fraction (rigveda_kz_fractions.py)",
+   "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ14_nvadu_m_aa"
+  }
+ },
+ {
+  "id": "KZ-16",
+  "book": "konspekt",
+  "loc": "mdx line 513",
+  "kind": "statistic",
+  "claim_ru": "Ipl m-n а-склонения -ebhis вместо -ais (в 1/2 случаев).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED: 492 -ebhis vs 670 -ais among Ṛgveda Ins.pl masc/neut a-stem tokens = 42.3% against the claimed 1/2 = 50% — 'в 1/2 случаев' as an approximate near-even split holds (42/58), though the measured value sits 7.7pp below the exact half (rigveda_kz_fractions.py)",
+   "ref": "ZalizniakKonspekt_2004/rigveda_kz_stats.json KZ16_ipl_ebhis"
+  }
+ },
+ {
+  "id": "KZ-4",
+  "book": "konspekt",
+  "loc": "mdx line 365",
+  "kind": "statistic",
+  "claim_ru": "Особо: у большинства корней вида СаС слабая основа перфекта имеет вид СеС (т.е без удвоения, но с заменой а на е), напр. ten- вместо *tatn- от tan 'тянуть'.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the e-perfect (pec-, ten-, sed-, yem-, men-) is Whitney's standing treatment for medial-a roots whose initial reduplicates without change; the residue keeping reduplication is the initial-guttural/aspirate class (gam → jagm-) plus lexical items (pat → papt-) — a conditioned minority, so 'большинство' holds at the class level",
+   "ref": "Whitney §794; = BuhlerLeitfaden_1923 HB-55 (the same contraction class, verified with the same conditioning)"
+  }
+ },
+ {
+  "id": "KZ-6",
+  "book": "konspekt",
+  "loc": "mdx line 456",
+  "kind": "statistic",
+  "claim_ru": "Чистые предлоги-послелоги (редкость): SAHA c, вместе с; VINĀ без; UPARI над.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Sanskrit has no productive adposition class — the case-governing words are adverbs/preverbs in secondary use; Zaliznyak's three named items are exactly the near-grammaticalized residue",
+   "ref": "Whitney §§1123-1130; = ZalizniakOcherk_1978 OCH-64 (the Ocherk twin «слов только-предлогов практически нет», verified TRUE)"
+  }
+ },
+ {
+  "id": "OCH-10",
+  "book": "ocherk",
+  "loc": "§19 footnote 3 / mdx line 329-334",
+  "kind": "statistic",
+  "claim_ru": "Носовая ṇ перед паузой или гласной, начинающей следующее слово, встречается 'крайне редко'; носовые n̄, ñ перед согласной, начинающей следующее слово, встречаются 'редко'.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "word-final counts (DCS-2021, 3.4M word tokens): ṇ 118 · ṅ 659 · ñ 1,934 — vs n 83,091 · m 249,461 · ṁ 532,979",
+   "ref": "DCS-2021 0.csv final-consonant census (verify_claims_dcs.py)"
+  }
+ },
+ {
+  "id": "OCH-11",
+  "book": "ocherk",
+  "loc": "§43 п.1 / mdx line 612",
+  "kind": "statistic",
+  "claim_ru": "Факультативный переход k, ṭ, t, p перед носовой в носовую соответствующего ряда: 'наиболее обычен такой переход для t', например tat nāma → tan nāma (реже tad nāma).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "final-stop census (DCS-2021): t 99,262 word-final tokens vs k 4,100 · ṭ 1,088 · p 113 — the t-junction is 24× the next stop's, so its nasal variant is by far the most-encountered one",
+   "ref": "DCS-2021 0.csv final-consonant census; Whitney §§161, 198 (optional t→n before nasals)"
+  }
+ },
+ {
+  "id": "OCH-12",
+  "book": "ocherk",
+  "loc": "§43 п.1 / mdx line 614",
+  "kind": "statistic",
+  "claim_ru": "h после k, ṭ, t, p может переходить (и обычно переходит) соответственно в gh, ḍh, dh, bh, например tat hi → tad dhi (реже tad hi).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: Whitney gives the conversion of initial h to the corresponding sonant aspirate after a final mute as the usual treatment, retained h as the minority option",
+   "ref": "Whitney §163"
+  }
+ },
+ {
+  "id": "OCH-21",
+  "book": "ocherk",
+  "loc": "§67 / mdx line 898",
+  "kind": "statistic",
+  "claim_ru": "Среди открытых корней ряда A2 оба типа [полноизменяемые/неполноизменяемые] представлены примерно поровну.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED with the 1978 crosswalk column (build_1978_crosswalk.py, §§66-67 rules + named lists over 749 roots): open A₂ roots split 19 полноизменяемые / 13 неполноизменяемые / 18 колеблющихся — among the decided, 59/41; with the fluctuating middle counted as §67 itself describes («ряд корней колеблется»), 'примерно поровну' holds",
+   "ref": "ZalizniakOcherk_1978/och_1978_stats.json OCH21_openA2_split; morphoclass_crosswalk_1975_2014_2026.csv (1978 columns)"
+  }
+ },
+ {
+  "id": "OCH-24",
+  "book": "ocherk",
+  "loc": "§63 / mdx line 864",
+  "kind": "statistic",
+  "claim_ru": "Смешанный тип (veṭ)... При таких колебаниях i чаще всего появляется перед -sya- и -tar-, реже всего — перед -ta- и -tvā-.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "AGGREGATE PROXY PILOT, recorded, not trusted: i-rates over ALL distinct forms are sya 56.8% · tar (periphrastic -tā) 42.1% · tavya 51.6% · ta 54.8% · tvā 78.1% — the aggregate puts tvā HIGHEST, inverting the claimed extremes. But the claim is about the WITHIN-ROOT fluctuation of veṭ roots, and the aggregate mixes seṭ-always-i and aniṭ-never-i roots whose lexical composition differs per suffix — composition bias disqualifies the proxy (verify_claims_dcs.py OCH_vet_i_rates)",
+   "ref": "DCS-2021 15.csv/12.csv; proper test = per-root doublet analysis over Talmud set_code v1..v4 subtypes"
+  }
+ },
+ {
+  "id": "OCH-27",
+  "book": "ocherk",
+  "loc": "§74 / mdx line 984",
+  "kind": "statistic",
+  "claim_ru": "Очень небольшое число существительных в классическом санскрите несклоняемо; например, svar небо.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: indeclinable substantives are a handful of frozen items (svar-type); Whitney treats them under indeclinables, not as a declension class",
+   "ref": "Whitney §§1096ff (indeclinables)"
+  }
+ },
+ {
+  "id": "OCH-42",
+  "book": "ocherk",
+  "loc": "§159 / mdx line 2488",
+  "kind": "statistic",
+  "claim_ru": "Встречается (очень редко) также med. [перифрастическое будущее II]... (в 3-м лице форм, отличных от act., нет).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic (Whitney: the middle periphrastic future is rare; 3rd person = the bare agent noun for both voices); corpus side: DCS carries no medium code for the periphrastic future at all — its 1,290 tokens are all filed active",
+   "ref": "Whitney §§945-947; DCS timws.csv code 7"
+  }
+ },
+ {
+  "id": "OCH-46",
+  "book": "ocherk",
+  "loc": "§167 / mdx line 2544",
+  "kind": "statistic",
+  "claim_ru": "Каузатив от переходного глагола довольно часто... имеет значение, практически равное значению исходного глагола (ср. kārayati).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no instrument: adjudicating semantic equivalence of causative vs base tokens needs sense-annotated usage data; neither DCS's morphological export nor Whitney's formal description measures it",
+   "ref": "cf. Whitney §1041 (the phenomenon acknowledged qualitatively)"
+  }
+ },
+ {
+  "id": "OCH-48",
+  "book": "ocherk",
+  "loc": "§167 / mdx line 2550",
+  "kind": "allomorphy",
+  "claim_ru": "У корней группы √pā/pāy (§ 70, п. 4) каузатив обычно типа pāyayati.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: pāyayati (with the āy-glide) is the accepted causative of pā 'drink'; the p-causative belongs to other ā-roots (sthāpayati, dāpayati)",
+   "ref": "Whitney §1042 (the pāyayati type); cf. BuhlerLeitfaden_1923 HB-26/HB-27 (the ā-root causative treatments)"
+  }
+ },
+ {
+  "id": "OCH-50",
+  "book": "ocherk",
+  "loc": "§169 / mdx line 2570",
+  "kind": "statistic",
+  "claim_ru": "Формы [дезидератива] за пределами презенса (довольно редкие) — от основы вида jijñās-, didṛkṣ- и т.д.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: the desiderative lives in its present system; the further tenses are sparsely attested and built on the sa-stem as stated",
+   "ref": "Whitney §§1032-1034; = BuhlerLeitfaden_1923 harvest (Урок XLVIII line 7211: 'одно только [настоящее] встречается довольно часто' — same claim, same direction)"
+  }
+ },
+ {
+  "id": "OCH-52",
+  "book": "ocherk",
+  "loc": "§172 / mdx line 2582",
+  "kind": "statistic",
+  "claim_ru": "Вне презенса [у деноминативов] употребительны только неличные формы, причем почти исключительно при основе на aya.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no instrument: the DCS export does not tag denominatives as a class, so their non-present/non-finite distribution cannot be isolated; Whitney's treatment does not state this specific distribution",
+   "ref": "cf. Whitney §§1053-1068 (denominatives, no distributional statement of this shape)"
+  }
+ },
+ {
+  "id": "OCH-59",
+  "book": "ocherk",
+  "loc": "§193 / mdx line 2724",
+  "kind": "statistic",
+  "claim_ru": "Основы на an, выступая в конце сложного слова, довольно часто заменяются основами на a, например: mahā-rāja- (ср. rājan-).",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "systemic: -rāja-, -ahna-, -akṣa- type compound finals are the standing pattern; Bühler states the tatpuruṣa case as near-universal ('rājan изменяется в rāja'), Zaliznyak's 'довольно часто' covers the wider compound field where -an finals also survive",
+   "ref": "Whitney §1315 (a-stem substitutes in composition); cf. BuhlerLeitfaden_1923 harvest (Урок XXXIV line 4757)"
+  }
+ },
+ {
+  "id": "OCH-60",
+  "book": "ocherk",
+  "loc": "§194 / mdx line 2736",
+  "kind": "statistic",
+  "claim_ru": "Омонимия первичных и вторичных сложных имен... практически встречается реже, чем можно было бы ожидать, поскольку за многими словами закрепляется одна из этих двух функций.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no instrument, now PROBED rather than presumed (16-07-2026, H1004): DCS tags compound members LEXICALLY — mahābāhu, a textbook bahuvrīhi, carries last-member upos NOUN in 192/193 clusters — so tatpuruṣa/bahuvrīhi FUNCTION is not recoverable from this snapshot at all; per-token function disambiguation (or Vedic accent, which classical orthography loses) remains the missing instrument",
+   "ref": "cf. Whitney §1293ff (the accentual distinction that classical orthography loses); probe recorded in och58_compound_stats.json (och60_probe key)"
+  }
+ },
+ {
+  "id": "OCH-66",
+  "book": "ocherk",
+  "loc": "§214 / mdx line 2846",
+  "kind": "typology",
+  "claim_ru": "Глагольное сказуемое... тяготеет к последнему месту в предложении, группа подлежащего — к первому... Определяющее слово обычно предшествует определяемому.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED (treebank_syntax_stats.py, H1022) over the same 29,433-sentence slice. Of the THREE tendencies packed into this one claim, only one is robustly confirmed: modifier-precedes-head, 86.0% (22,142 det/amod/nmod/nummod edges) — holds equally in a post-Vedic \"classical\" subset (Mahābhārata/Manusmṛti/Arthaśāstra/Rāmāyaṇa/ Buddhacarita, 86.5%) and the Vedic/Śrauta-sūtra remainder (86.0%). The other two do NOT clear even a loose majority: verb-final 46.4% overall (classical 37.6%, vedic/ sūtra 46.8%; Arthaśāstra alone, the single largest non-metrical classical-prose sample, 51.4%); subject-group-first 42.6% overall (classical 46.4%, vedic/sūtra 42.4%). GENRE-SKEW CHECKED, not assumed: a classical-vs-Vedic split and an Arthaśāstra-only isolation both rule out \"Vedic-skewed corpus\" as the explanation — neither sub-claim clears 52% in ANY split tested. Two operationalization robustness checks (excluding trailing discourse-particles from the \"last token\" test: 46.4%→48.4%; restricting to single-clause sentences only, to rule out a later clause dragging the sentence-final position away from the root's own clause: 46.4%→51.1%) each moved the number under 5 points — not an artifact of the metric",
+   "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+  }
+ },
+ {
+  "id": "OCH-67",
+  "book": "ocherk",
+  "loc": "§215 / mdx line 2850",
+  "kind": "statistic",
+  "claim_ru": "Из сложных предложений в санскрите преобладают сложносочиненные.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED (treebank_syntax_stats.py, H1022). Among sentences with 2+ FINITE verbs (feat_verbform IS NULL, mood-marked — verified against feat_mood; DCS's raw acl/ advcl/ccomp/xcomp deprels are dominated by NON-finite participial/absolutive embedding, §217's actual preferred mechanism, which is not a 'сложноподчинённое предложение' in the traditional finite-clause sense and was excluded from both sides of this count): **419 coordinate (`conj`) vs 2,739 finite-subordinate (`advcl`/`acl`/`ccomp`/`xcomp`) — subordinate outnumbers coordinate 6.5:1, the OPPOSITE of the claimed direction.** GENRE-SKEW CHECKED: the classical subset shows meaningfully MORE coordination proportionally (29 coordinate vs 58 subordinate = 33.3% coordinate share) than the Vedic/Śrauta-sūtra remainder (390 vs 2,681 = 12.7% share) — a real, measurable shift in the expected direction — but even the classical subset's 33.3% falls well short of the >50% the claim requires",
+   "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json; treebank_syntax_stats.py"
+  }
+ },
+ {
+  "id": "OCH-68",
+  "book": "ocherk",
+  "loc": "§216 / mdx line 2854",
+  "kind": "universality",
+  "claim_ru": "Существительное, к которому относится пара ya- ... ta- ..., всегда стоит в первом из двух предложений.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "MEASURED (treebank_syntax_stats.py, H1022). Restricted to acl:rel edges (relative- clause-verb -> head noun) where (a) the head is a genuine NOUN, not a bare correlative pronoun (excludes cases like 'sa/tad' where no lexical antecedent is shared — those don't test this claim), and (b) the relative clause's own subtree contains a PRON lemma 'yad' (confirms a genuine yad-relative, not another acl:rel type): **n = 335, head noun in the linearly-first clause in 252 = 75.2%.** A quarter of a 335-case sample (83 counterexamples) falls short of \"всегда.\" Manually inspected several counterexamples against the raw token sequence to sanity-check the clause-boundary logic before trusting this number — the operationalization holds up",
+   "ref": "ZalizniakOcherk_1978/och65_68_treebank_stats.json (counterexamples list); treebank_syntax_stats.py"
+  }
+ },
+ {
+  "id": "OCH-69",
+  "book": "ocherk",
+  "loc": "§217 / mdx line 2856",
+  "kind": "typology",
+  "claim_ru": "Сложноподчиненные предложения встречаются... в санскрите гораздо реже, чем, например, в русском или в латыни.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no instrument: a cross-language subordination-density comparison needs comparable parsed corpora on both sides — out of scope for this pipeline's ground truth",
+   "ref": "cf. OCH-66/OCH-67"
+  }
+ },
+ {
+  "id": "OCH-8",
+  "book": "ocherk",
+  "loc": "§7 / mdx line 130",
+  "kind": "statistic",
+  "claim_ru": "В большинстве индийских школ санскрита ṛ, ṝ, ḷ принято читать соответственно как ri, rī, li (или lri); распространено также чтение ç как ṣ.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "no instrument: a sociophonetic census of recitation schools is outside every ground-truth source of this pipeline (DCS is a text corpus; Whitney describes the same convention qualitatively)",
+   "ref": "cf. Whitney §24 (the ri-pronunciation acknowledged as the modern practice)"
+  }
+ },
+ {
+  "id": "OCH-9",
+  "book": "ocherk",
+  "loc": "§18 footnote 2 / mdx line 312",
+  "kind": "statistic",
+  "claim_ru": "l в конце слова и фразы теоретически возможно, но практически почти не встречается.",
+  "falsifiable_as": "",
+  "evidence": {
+   "number": "838 word-final l tokens of 3,402,414 word tokens = 0.025% (DCS-2021 surface text; verify_claims_dcs.py OCH_final_consonant_census)",
+   "ref": "DCS-2021 0.csv final-consonant census"
+  }
+ }
+]
