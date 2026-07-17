@@ -19,6 +19,10 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.48.0] - 2026-07-17
+### Added
+- **Секвенционная проверка имперфекта — заметка адъюдикации к HK-15 (H1053).** Предрегистрированный инструмент [imperfect_switching_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py) (T2607-26 заморожена до замера) + отчет [IMPERFECT_SWITCHING_HK15_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md): кластеризация имперфекта повсеместна (runs-test p<0,001, все срезы; аорист кластеризуется сильнее всех — lift до 3,61), «переключение темы» в точке вкрапления значимо, но микроскопично в эпосе (+0,2 п.п., p=0,002) и содержательно лишь в ведийском (+1,5 п.п., p<0,001); классика — направление перевернуто. ЧАСТИЧНО ПОДТВЕРЖДЕНО; компаньон-формулировка к § 2 A65 в отчете. Fable 5 (`claude-fable-5`), по разрешению MG на Opus-ряд.
+
 ## [0.47.0] - 2026-07-17
 
 ### Added
