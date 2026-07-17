@@ -1,0 +1,60 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:aorist",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-018",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Аорист",
+        "summary": "Статья ядра W2 SG-MO-018 (домен MO, кластер «Спряжение»). Аорист по пинованному снапшоту DCS: претерит, склеенный с перфектом под Tense=Past (предел EM2, пилот P3). Ключ: аорист ЧАСТИЧНО восстановим — признак feat_formation размечает типы аористной основы (корневой/s/iṣ/sa/siṣ/редупл./тематический) на 12 054 токенах из 102 055 Past (11,8 %), это НИЖНЯЯ оценка (P3: перфект ≈76 % Past → аорист ≈24 %, размечена примерно половина). Заполняет середину градиента восстановимости претеритов: имперфект (Tense=Impf, полностью) → аорист (feat_formation, частично) → перфект (не размечен, recall 3,3 %). Типы: корневой 5690, тематический 2781, s 1508, iṣ 1077, редупл. 833, sa 124, siṣ 41. Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:aorist:1",
+        "layer": "scientific",
+        "text_slp1": "aBUt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s8)" },
+        "translations": { "ru": "стал, был (bhū, корневой аорист, 3 л. ед.)" },
+        "gloss_ru": "корневой аорист от √bhū: a-bhū-t (аугмент + корень + окончание). Самый частотный размеченный аорист (2360 токенов); корневой тип — крупнейший (5690).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; аорист (root), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist:2",
+        "layer": "scientific",
+        "text_slp1": "akArzIt",
+        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 16 (s6)" },
+        "translations": { "ru": "сделал (kṛ, s-аорист, 3 л. ед.)" },
+        "gloss_ru": "s-аорист от √kṛ: a-kār-ṣ-īt (аугмент + вриддхи-основа + s + окончание). s-аорист — третий по частоте тип (1508).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; аорист (s), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist:3",
+        "layer": "scientific",
+        "text_slp1": "agamat",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Paippalāda)", "ref": "AVP 4.4 (s10)" },
+        "translations": { "ru": "пошёл (gam, тематический аорист, 3 л. ед.)" },
+        "gloss_ru": "тематический (a-)аорист от √gam: a-gama-t. Тип them — второй по частоте (2781); морфологически смежен с имперфектом (предел § 6 п. 2).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; аорист (them), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:aorist:4",
+        "layer": "scientific",
+        "text_slp1": "adAt",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 10 (s29)" },
+        "translations": { "ru": "дал (dā, корневой аорист, 3 л. ед.)" },
+        "gloss_ru": "корневой аорист от √dā: a-dā-t. Корневой аорист типичен для корней на долгий гласный (bhū, dā, gā, sthā).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; аорист (root), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
