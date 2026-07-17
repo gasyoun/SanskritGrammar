@@ -31,7 +31,7 @@ changelog tags as `vX.Y.Z`.
   (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
   The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
 
-## [0.68.0] - 2026-07-17
+## [0.70.0] - 2026-07-18
 
 ### Changed
 - **Pending MG review-sheet visa decisions applied (H1205, Sonnet 5 `claude-sonnet-5`).**
