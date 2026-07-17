@@ -54,11 +54,13 @@ CANONICAL_FIGURES = [
 # Captures are word-boundaried and number-format-specific to avoid false hits (e.g. `\bperfect`
 # excludes the "perfect" inside "imperfect"; the present counts are 6-digit XXX,XXX so a 5-digit
 # XX,XXX does not match). `allowed` values are comma-stripped, matching _norm().
+# DCS-2026 canonical values (MG standardized the whole programme on DCS-2026, denominator =
+# 523,738 finite verbal forms). Correction-marked blocks (`refreshed from 61,986 …`) are exempt.
 CONSISTENCY_FIGURES = [
-    {"name": "perfect tokens",     "capture": r"\bperfect\s+(\d{2,3},\d{3})\b",                 "allowed": {"61986"}},
-    {"name": "imperfect tokens",   "capture": r"\bimperfect[ ~]*(\d{2,3},\d{3})\b",             "allowed": {"47554"}},
-    {"name": "present tokens",     "capture": r"\bpresent[a-zé\- ]{0,18}?(\d{3},\d{3})\b",       "allowed": {"157003", "353215"}},
-    {"name": "verbal denominator", "capture": r"(\d{3},\d{3})\s*verbal\s*(?:token|словоуп)",     "allowed": {"781618"}},
+    {"name": "perfect tokens",     "capture": r"\bperfect\s+(\d{2,3},\d{3})\b",                 "allowed": {"90001"}},
+    {"name": "imperfect tokens",   "capture": r"\bimperfect[ ~]*(\d{2,3},\d{3})\b",             "allowed": {"46695"}},
+    {"name": "present tokens",     "capture": r"\bpresent[a-zé\- ]{0,18}?(\d{3},\d{3})\b",       "allowed": {"353215"}},
+    {"name": "verbal denominator", "capture": r"(\d{3},\d{3})\s*(?:finite )?verbal\s*(?:form|token|словоуп)", "allowed": {"523738"}},
 ]
 
 
@@ -107,6 +109,8 @@ def consistency_violations(files):
     for f in files:
         book = f.parent.name
         for bid, block in blocks(f.read_text(encoding="utf-8")):
+            if has_marker(block):   # a correction-documenting block may cite the old value
+                continue
             for fig in CONSISTENCY_FIGURES:
                 for m in re.finditer(fig["capture"], block):
                     val = _norm(m.group(1))
@@ -132,10 +136,15 @@ def self_test():
     (d / "A" / "claims.yml").write_text('entries:\n\n  - id: A\n    n: "perfect 61,986"\n', encoding="utf-8")
     (d / "B" / "claims.yml").write_text('entries:\n\n  - id: B\n    n: "perfect 99,999"\n', encoding="utf-8")
     assert consistency_violations(sorted(d.glob("*/claims.yml"))), "out-of-set value not caught"
-    # both allowed present values (version-distinguished) -> NOT flagged
-    (d / "A" / "claims.yml").write_text('entries:\n\n  - id: A\n    n: "present 157,003"\n', encoding="utf-8")
+    # the canonical DCS-2026 value -> NOT flagged
+    (d / "A" / "claims.yml").write_text('entries:\n\n  - id: A\n    n: "perfect 90,001"\n', encoding="utf-8")
     (d / "B" / "claims.yml").write_text('entries:\n\n  - id: B\n    n: "present-system 353,215"\n', encoding="utf-8")
-    assert not consistency_violations(sorted(d.glob("*/claims.yml"))), "allowed version pair wrongly flagged"
+    assert not consistency_violations(sorted(d.glob("*/claims.yml"))), "canonical value wrongly flagged"
+    # an old value carried in a correction-marked block -> exempt (documents the supersession)
+    (d / "A" / "claims.yml").write_text(
+        'entries:\n\n  - id: A\n    n: "perfect 90,001 — REFRESHED from the older DCS-2021 61,986"\n',
+        encoding="utf-8")
+    assert not consistency_violations(sorted(d.glob("*/claims.yml"))), "correction-marked old value wrongly flagged"
     return True
 
 

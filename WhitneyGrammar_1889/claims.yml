@@ -66,7 +66,7 @@ synthesis: >-
   essentially none to find — a descriptive master's quantitative eye, checked a century later,
   is right. The ONE flag is instructive precisely because it is so isolated: WH-4 — Whitney's
   hedged "the perfect is on the whole less common than the imperfect" — is FLIPPED in the DCS
-  aggregate (perfect 61,986 > imperfect 47,554), though his own "varies by author, sometimes
+  aggregate (perfect 90,001 > imperfect 46,695), though his own "varies by author, sometimes
   exceeds" hedge half-anticipates it, so it grades OVERSTATED-in-aggregate rather than FALSE. Even
   the gold standard has exactly one quantitative statement the modern corpus overturns, and he
   had already hedged it. NOTE: seed is deliberately small and skewed to corpus-token claims; the
@@ -126,7 +126,7 @@ entries:
     falsifiable_as: "is the perfect less frequent than the imperfect in the corpus aggregate"
     sources: [dcs]
     verdict_fact: OVERSTATED
-    number: "DCS aggregate: perfect 61,986 > imperfect 47,554 — the perfect is MORE common, the opposite of the headline claim (reused from BuhlerLeitfaden_1923 HB)"
+    number: "DCS aggregate: perfect 90,001 > imperfect 46,695 — the perfect is MORE common, the opposite of the headline claim (reused from BuhlerLeitfaden_1923 HB) (DCS-2026)"
     ref: "DCS-2021 tense census; cf. BuhlerLeitfaden_1923 HB; harvest WH-H-212 (§821)"
     verdict_pedagogy: JUSTIFIED
     note: >-
