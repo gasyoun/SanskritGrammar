@@ -20,6 +20,11 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ## [0.55.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-028 «Каузатив» — статья-кандидат (H1139, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/causative/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/causative): несущий границу слот, map-heavy с реальным измеримым ядром. Каузатив корпусом **не размечен** (меток Caus — 0): основа -aya- лежит под вестергоровским кодом X класса (`lemma.grammar 10.%`), который СЛИВАЕТ производный каузатив (kāray/janay/darśay) с первичным curādi (kathay/pūjay/cintay). Измеримо целое — **класс-X -aya- = 55 376 финитных токенов (10,6 %), 1998 лемм** — но каузатив как таковой из curādi не отделим (EM5). Контраст: прочие вторичные спряжения корпус РАЗЛИЧАЕТ (деноминатив 5482, дезидератив 1060, интенсив 921), т.е. caus↔curādi — единственное неразрешённое слияние; чистое разделение требует WhitneyRoots + разбора по стеблю. 5 примеров (4 каузатива + kathay curādi). Scoping — воркфлоу-скаут. Скрипт [`sg_mo_028_causative.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_028_causative.py); 3 валидатора + CI build green. Ядро W2: 17/19. Публикация гейтится авторской визой.
+
+## [0.55.0] - 2026-07-17
 ### Added
 - **Cross-register claim-figure consistency check (H1140, Opus 4.8 `claude-opus-4-8[1m]`).** A
   guardrail against superseded corpus figures drifting back into the claim registers, after the
