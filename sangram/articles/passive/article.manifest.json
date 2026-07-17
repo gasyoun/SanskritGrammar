@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:passive",
+    "as_of": "2026-07-17",
+    "toc_ref": "SG-MO-027",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Вторичные спряжения: пассив",
+        "summary": "Статья ядра W2 SG-MO-027 (домен MO, кластер «Спряжение»). Пассив (вторичное спряжение: слабый корень + -ya- + медиальные окончания; ucyate, dṛśyate, kriyate) по пинованному снапшоту DCS: 29 699 финитных токенов (5,7 % финитных глаголов) + 7 002 причастных. Нативно размечен (Voice=Pass) → измерим напрямую, как имперфект. Профиль резче любого разреза глагола: 98,1 % 3-е лицо, 92,6 % презенс — безличный, вневременной язык доктрины и цитаты; во главе verba dicendi/восприятия (ucyate «говорится» #1, dṛśyate, śrūyate). Несёт границу EM1: пассивная основа -ya- формально омонимична презенсу IV класса (divādi), разделены тегом залога, не формой (P2). Статья ядра, не пилот."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:passive:1",
+        "layer": "scientific",
+        "text_slp1": "ucyate",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s11)" },
+        "translations": { "ru": "говорится (vac, пассив през. 3 л. ед.)" },
+        "gloss_ru": "пассив от √vac: uc-ya-te (слабый корень uc + -ya- + медиальное -te). Самый частотный пассив корпуса (3129) — маркёр цитирования и определения в доктринальном тексте.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив, 3 л. ед. през.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:passive:2",
+        "layer": "scientific",
+        "text_slp1": "dfSyate",
+        "locus": { "corpus": "dcs", "work": "Abhidharmakośa", "ref": "AbhidhKo 1 (s42)" },
+        "translations": { "ru": "видится (dṛś, пассив през. 3 л. ед.)" },
+        "gloss_ru": "пассив от √dṛś: dṛś-ya-te. Контраст с активом IV класса paśyati «видит»: та же основа -ya-, различает залог (EM1).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив, 3 л. ед. през.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:passive:3",
+        "layer": "scientific",
+        "text_slp1": "kriyate",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.3" },
+        "translations": { "ru": "делается (kṛ, пассив през. 3 л. ед.)" },
+        "gloss_ru": "пассив от √kṛ: kri-ya-te (слабая ступень kri- + -ya- + -te). Один из частотнейших пассивов (1260).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив, 3 л. ед. през.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:passive:4",
+        "layer": "scientific",
+        "text_slp1": "SrUyate",
+        "locus": { "corpus": "dcs", "work": "Arthaśāstra", "ref": "ArthaŚ 1.13 (s3)" },
+        "translations": { "ru": "слышится (śru, пассив през. 3 л. ед.)" },
+        "gloss_ru": "пассив от √śru: śrū-ya-te. Verba perception — типичный источник безличного пассива («как слышно/сообщается»).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив, 3 л. ед. през.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:passive:5",
+        "layer": "scientific",
+        "text_slp1": "vidyate",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s15)" },
+        "translations": { "ru": "имеется, известно (vid, пассив през. 3 л. ед.)" },
+        "gloss_ru": "пассив от √vid: vid-ya-te «имеется/известно» — лексикализованное значение бытия. DCS помечает Voice=Pass; частотный (1195).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; пассив, 3 л. ед. през.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      }
+    ],
+    "revisions": []
+  }
+}
