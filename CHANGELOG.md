@@ -20,6 +20,11 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ## [0.56.0] - 2026-07-17
+
+### Changed
+- **Sangram SG-MO-028 «Каузатив» — коллизия двух сессий сведена в пользу более полной версии ([PR #366](https://github.com/gasyoun/SanskritGrammar/pull/366); Opus 4.8 `claude-opus-4-8[1m]`).** Две сессии произвели SG-MO-028 параллельно (обе H1139); первой смёржилась моя версия ([v0.55.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.55.0), «не отделим»), но параллельная сессия сделала строго лучше — с **количественной оценкой** доли каузативов. Принята она (тот же выбор, что P4 H989↔H990): то же ядро (класс-X -aya- 55 376 токенов, слияние с curādi под кодом 10, EM5), но с ответом «сколько именно каузативов» двумя сходящимися методами — **ручная адъюдикация** посеянной выборки 60 типов (49 каузативов / 11 curādi = 18,3 % ложных) и **механическое де-усиление** (44 117/55 376 = **79,7 %** массы бакета имеет аттестованный первичный корень) → **≈80 % каузативов**, ~18–20 % curādi неотделимы (частично восстановим, как аорист SG-MO-018). Добавлены `adjudication.json` + `adjudication_sample.tsv`; заслуга параллельной сессии. Ядро W2: 17/19 (без изменения счёта). Публикация гейтится авторской визой.
+
+## [0.56.0] - 2026-07-17
 ### Changed
 - **Consistency check extended to five more shared figures (H1164, Opus 4.8 `claude-opus-4-8[1m]`).** [`scripts/check_claims_consistency.py`](scripts/check_claims_consistency.py) gains a second mode: alongside the aorist supersession guard, four cross-register figures (perfect 61,986 · imperfect 47,554 · present · verbal-denominator 781,618) are now pinned to an **allowed-value set** — any citation outside it (a typo, a stale value, an un-reconciled recompute) fails. The present allows a **version-distinguished pair** (157,003 DCS-2021 · 353,215 DCS-2026), which the check permits explicitly. Reconciliation outcome: **no value-level drift found** — every figure already uses only its known value(s); the two present counts are legitimately different corpus snapshots, not an inconsistency. A second pytest gate ([`tests/test_claims_consistency.py`](tests/test_claims_consistency.py)) enforces it in CI. NOTE: full standardization on DCS-2026 (which would collapse the present pair and recompute the DCS-2021 rarity family) is a corpus-version policy decision left open.
 
