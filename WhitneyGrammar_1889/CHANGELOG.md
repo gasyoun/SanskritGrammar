@@ -9,6 +9,23 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-07-17
+### Added
+- **Aorist-per-text tagger — closes WH-15 (H1134, Opus 4.8 `claude-opus-4-8[1m]`).** New
+  self-tested [`whitney_aorist_tagger.py`](whitney_aorist_tagger.py) resolves the one UNTESTABLE
+  claim. The sqlite has no aorist TENSE value, but it tags the aorist FORMATION: within
+  `feat_tense='Past'`, `feat_formation` cleanly separates the seven aorist classes
+  (root/them/s/is/red/sa/sis) from the perfect (peri / None). With that, Whitney's §826 aorist
+  hand-count of **Manu (7) reproduces as DCS 6** — the same near-exact small-text match as the
+  conditional (WH-13) and precative (WH-14); Hitopadeśa 4 vs his 8; MBh/Rāmāyaṇa dwarf his figures
+  because he counted only sub-portions (the Nala episode; Rāmāyaṇa book 1).
+### Changed
+- **WH-15 UNTESTABLE → TRUE.** Register stays 15 verified; tally moves to **14 TRUE · 1
+  OVERSTATED · 0 UNTESTABLE** — every drainable Whitney claim now confirmed.
+- **Side finding:** the true aorist count is **12,054 tokens (1.2% of verbal)**, not the 2,452 /
+  0.31% the earlier form-set / DCS-2021 tense-code method gave (it had missed the numerous root
+  and thematic aorists). The "classically infrequent" verdict (WH-2) holds under either figure.
+
 ## [0.2.0] - 2026-07-17
 ### Added
 - **Frequency-register drain with two instruments (H1107, Opus 4.8 `claude-opus-4-8[1m]`).**

@@ -1,0 +1,51 @@
+{
+  "_source": "DCS-2021 sqlite feat_formation tagging (aorist = Past + formation in {root,them,s,is,red,sa,sis}, finite verbs) — DCS's own aorist-class tag, the authoritative identifier the form-set bridge (H1107) could not reach",
+  "aorist_formations_included": [
+    "root",
+    "them",
+    "s",
+    "is",
+    "red",
+    "sa",
+    "sis"
+  ],
+  "total_aorist_tokens": 12054,
+  "pct_of_verbal": 1.2,
+  "by_formation": {
+    "root": 5690,
+    "them": 2781,
+    "s": 1508,
+    "is": 1077,
+    "red": 833,
+    "sa": 124,
+    "sis": 41
+  },
+  "note_vs_earlier_count": "12,054 here vs ~2,452 from the earlier form-set/DCS-2021 tense-code method, which missed the root+thematic aorists; 'infrequent' holds either way",
+  "WH-15_per_text_vs_826": {
+    "whitney_1889": {
+      "Mahābhārata": "21 (Nala) + 6 (BhG), both sub-portions",
+      "Hitopadeśa": 8,
+      "Manusmṛti": 7,
+      "Rāmāyaṇa": "66 (book 1 only, of 7)"
+    },
+    "dcs_aorist": {
+      "Mahābhārata": 1973,
+      "Hitopadeśa": 4,
+      "Manusmṛti": 6,
+      "Rāmāyaṇa": 275
+    },
+    "dcs_top": {
+      "Mahābhārata": 1973,
+      "Ṛgveda": 1122,
+      "Kathāsaritsāgara": 825,
+      "Atharvaveda (Śaunaka)": 502,
+      "Maitrāyaṇīsaṃhitā": 415,
+      "Śatapathabrāhmaṇa": 362,
+      "Daśakumāracarita": 332,
+      "Bhāratamañjarī": 331
+    }
+  },
+  "self_test": {
+    "passed": true
+  }
+}

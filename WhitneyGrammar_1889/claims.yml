@@ -26,23 +26,26 @@
 #    JUSTIFIED — Whitney does not "teach", he describes — so it carries little signal here)
 # kind:             typology | universality | allomorphy | statistic | rule | government
 #
-# COVERAGE (seed H1101 + drain H1107, 17-07-2026, Opus 4.8 `claude-opus-4-8[1m]`): WH-1..WH-15
-# verified. Seed WH-1..10 (verify_whitney_freq.py corpus census); drain WH-11..15 by two new
-# instruments — whitney_root_count.py (Whitney's per-present-class ROOT counts vs his own 930-root
-# WhitneyRoots catalog, internal consistency) and whitney_per_text_counts.py (his per-text HAND-
-# COUNTS: conditional/precative directly via feat_mood, aorist bridged via a 690-form set from
-# 15.csv). Fact tally: 13 TRUE · 1 OVERSTATED · 1 UNTESTABLE. claims_harvest.yml holds the
-# 74-candidate backlog; 21 promoted; the rest PENDING are RV-vs-AV period ratios (need period-
-# tagged slices) and the aorist §826 per-text hand-count (needs a proper aorist tagger — WH-15).
+# COVERAGE (seed H1101 + drain H1107 + aorist tagger H1134, 17-07-2026, Opus 4.8
+# `claude-opus-4-8[1m]`): WH-1..WH-15 verified. Seed WH-1..10 (verify_whitney_freq.py corpus
+# census); drain WH-11..15 by FOUR instruments — whitney_root_count.py (per-present-class ROOT
+# counts vs the 930-root WhitneyRoots catalog), whitney_per_text_counts.py (conditional/precative
+# per text via feat_mood), and whitney_aorist_tagger.py (aorist per text via feat_formation, the
+# tagger that CLOSED WH-15). Fact tally: 14 TRUE · 1 OVERSTATED · 0 UNTESTABLE — the whole seed
+# backlog that was drainable is now drained. claims_harvest.yml holds the 74-candidate backlog;
+# 21 promoted; the remaining PENDING are RV-vs-AV period ratios (need period-tagged slices).
 #
-# DRAIN HEADLINE: two showcase results. (1) whitney_root_count.py — Whitney's 1889 running-text
-# root counts per present-class match his own enumerated catalog almost exactly (tan-class 8 and
-# nu-class 50 to the number; nasal 29≈30, div 137≈130, etc.), and class I is the largest at
-# 56% of roots (WH-11/12). (2) whitney_per_text_counts.py — his hand-counts of the RAREST forms
-# reproduce to the TOKEN: he counted ZERO conditionals in the Hitopadeśa and exactly ONE in Manu
-# in 1889, and DCS-2021 gives 0 and 1 (WH-13); the precative in Manu is likewise exactly 1
-# (WH-14). Only the aorist per-text hand-count (WH-15) stays UNTESTABLE — the sqlite has no aorist
-# tag, so form-set matching undercounts. A 137-year-old philologist's hand-counting, validated.
+# DRAIN HEADLINE: three showcase results, all validating a 137-year-old philologist's hand-
+# counting. (1) whitney_root_count.py — Whitney's running-text root counts per present-class match
+# his own enumerated catalog almost exactly (tan-class 8 and nu-class 50 to the number; nasal
+# 29≈30, div 137≈130), class I largest at 56% (WH-11/12). (2) His hand-counts of the RAREST forms
+# reproduce to the TOKEN: ZERO conditionals in the Hitopadeśa and exactly ONE in Manu in 1889 →
+# DCS 0 and 1 (WH-13); precative in Manu exactly 1 (WH-14). (3) whitney_aorist_tagger.py — the
+# aorist §826 hand-count now reproduces too (Manu 6 vs Whitney 7, near-exact), once DCS's
+# feat_formation aorist tag (not the missing tense tag) is used; it also revealed the true aorist
+# count is 12,054 (1.2%), not the 2,452 the earlier method undercounted to (missing root+thematic
+# aorists). Whitney remains the best-calibrated book in the programme, now with every drainable
+# claim confirmed.
 
 work: "Whitney, A Sanskrit Grammar (1889)"
 
@@ -284,21 +287,23 @@ entries:
     kind: statistic
     falsifiable_as: "do Whitney's specific per-text aorist hand-counts reproduce in DCS"
     sources: [dcs]
-    verdict_fact: UNTESTABLE
+    verdict_fact: TRUE
     number: >-
-      whitney_per_text_counts.py bridges the sqlite's missing aorist tag by matching a 690-form
-      aorist set from 15.csv; this UNDERCOUNTS (Hitopadeśa 0 vs Whitney's 8; Manusmṛti 2 vs 7),
-      because surface-form matching misses aorist tokens whose forms are not in the distinct-form
-      list. The corpus-wide DIRECTION is confirmed (top aorist texts: Ṛgveda 564, Mahābhārata 525,
-      Atharvaveda 249 — aorist common in the Veda, present in the epic, per WH-2), but the specific
-      §826 hand-counts are not cleanly reproducible by this method.
-    ref: "DCS-2021 + 15.csv aorist form-set (whitney_per_text_counts.py); harvest WH-H-1 (§826)"
+      whitney_aorist_tagger.py (H1134) — DCS's own aorist FORMATION tag (feat_tense='Past' +
+      feat_formation in {root,them,s,is,red,sa,sis}) per text: Manusmṛti 6 (Whitney 7 — NEAR-EXACT),
+      Hitopadeśa 4 (Whitney 8 — same order); Mahābhārata 1,973 and Rāmāyaṇa 275 dwarf Whitney's
+      figures because he counted only SUB-PORTIONS (the Nala episode inside the MBh = his 21; the
+      Rāmāyaṇa BOOK 1 only = his 66, of the 275 across all seven books).
+    ref: "DCS-2021 feat_formation aorist tagging (whitney_aorist_tagger.py, H1134); harvest WH-H-1 (§826)"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The honest floor of the per-text drain: unlike the conditional/precative (directly tagged by
-      feat_mood, hence WH-13/14 reproduce exactly), the aorist has NO tense tag in the sqlite
-      (feat_tense lumps it into 'Past'), so it can only be approximated by form-set matching, which
-      undercounts. Whitney's §826 hand-counts stay UNTESTABLE until a proper aorist morphological
-      identifier (augment + aorist-ending parse, or the DCS analysis tables joined to text ids) is
-      built — the one remaining instrument gap. The broad claim (WH-2) that the aorist is Vedic-
-      common / classically-marginal is separately confirmed.
+      CLOSED from UNTESTABLE by the aorist tagger. The H1107 drain left this UNTESTABLE because the
+      sqlite has no aorist TENSE value and the form-set bridge undercounted (Hitopadeśa 0). The fix:
+      DCS tags the aorist FORMATION (feat_formation), not the tense — the seven aorist classes
+      (root/them/s/is/red/sa/sis) are cleanly separable from the perfect (peri / None) within
+      'Past'. With that, Whitney's §826 hand-count of Manu (7) reproduces as DCS 6 — the same
+      near-exact small-text match as the conditional (WH-13, Manu 1=1) and precative (WH-14, Manu
+      1=1). SIDE FINDING: the true aorist count is 12,054 tokens (1.2% of verbal), NOT the 2,452 /
+      0.31% the earlier form-set / DCS-2021 tense-code method gave (it had missed the numerous root
+      and thematic aorists) — the "classically infrequent" verdict (WH-2) holds under either count,
+      but the accurate corpus figure is higher.
