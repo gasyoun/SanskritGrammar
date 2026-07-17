@@ -74,8 +74,8 @@ synthesis: >-
   without a stated count base — HK-41 (prefixed-verb 60/30/<10% semantic split) and HK-42 (a-
   privative ≥1/3 of prefixed nouns, ~80% abstract). Directionally plausible, but not reproducible
   without her coding scheme; flagged rather than assumed. Where the corpus *can* adjudicate a
-  frequency claim, it usually vindicates her: the conditional (HK-23, 0.03%), the middle precative
-  (HK-39, 0.03%) and the 2nd-person imperative dominance (HK-17, 63%) all land where she says.
+  frequency claim, it usually vindicates her: the conditional (HK-23, 0.06%), the middle precative
+  (HK-39, 0.11%) and the 2nd-person imperative dominance (HK-17, 63%) all land where she says.
 
 
   Recommendation for the reading-site overlay: keep Kochergina's text intact (it is accurate) and
@@ -173,7 +173,7 @@ entries:
     falsifiable_as: "is the future truly formed 'from all verbs by a single rule', or is -syá one of several conditioned outcomes"
     sources: [dcs, whitney]
     verdict_fact: OVERSTATED
-    number: "future is productive (18,004 finite fut. tokens, 2,618 distinct forms) but NOT one rule: three conditioned suffixes -sya/-ṣya/-iṣya, and the seṭ form -iṣya is the majority (56.8% of distinct forms) — see HK-4b"
+    number: "future is productive (21,556 finite fut. tokens, 2,618 distinct forms) but NOT one rule: three conditioned suffixes -sya/-ṣya/-iṣya, and the seṭ form -iṣya is the majority (56.8% of distinct forms) — see HK-4b"
     ref: "Whitney §931-935 (s-future, seṭ/aniṭ -iṣya vs -sya); DCS verify_claims_dcs.py HK-4"
     verdict_pedagogy: MISLEADING
     note: >-
@@ -506,10 +506,10 @@ entries:
     falsifiable_as: "is the conditional rare in the corpus relative to other finite categories"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "269 conditional tokens = 0.034% of 781,618 verbal tokens (DCS-2021), against present 157,003 — genuinely rare"
+    number: "340 conditional tokens = 0.06% of 523,738 finite verbal tokens (DCS-2026), against present 353,215 — genuinely rare"
     ref: "Whitney §950 (conditional rare); DCS verify_claims_dcs.py HK-23"
     verdict_pedagogy: JUSTIFIED
-    mg_footnote: "Кондиционалис — 0,03% глагольных словоформ корпуса DCS-2021 (269 из 781 618). «Сравнительно редко» — точная характеристика."
+    mg_footnote: "Кондиционалис — 0,06% глагольных словоформ корпуса DCS-2026 (340 из 523 738). «Сравнительно редко» — точная характеристика."
     note: >-
       Corpus-confirmed: the conditional is one of the rarest finite categories. Kochergina's
       'сравнительно редко' is exactly right and appropriately unemphatic.
@@ -737,10 +737,10 @@ entries:
     falsifiable_as: "is the middle (Ātmanepada) precative/benedictive extremely rare in the corpus"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "Benedictive/precative Medium: 221 tokens = 0.028% of 781,618 verbal tokens (DCS-2021) — 'крайне редко' confirmed"
+    number: "Benedictive/precative: 577 tokens = 0.11% of 523,738 finite verbal tokens (DCS-2026; 577 is the whole precative mood — DCS-2026 does not tag pada, so this bounds the Ātmanepada subset above; DCS-2021 medium-only code = 221) — 'крайне редко' confirmed a fortiori"
     ref: "Whitney §924 (middle precative scantily attested); DCS verify_claims_dcs.py HK-39"
     verdict_pedagogy: JUSTIFIED
-    mg_footnote: "Прекатив Ātmanepada — 0,03% глагольных словоформ DCS-2021 (221 из 781 618). «Крайне редко» подтверждается."
+    mg_footnote: "Прекатив Ātmanepada — 0,11% глагольных словоформ DCS-2026 (577 из 523 738). «Крайне редко» подтверждается."
     note: "Corpus-confirmed near-zero. Kochergina's 'крайне редко' is accurate and appropriately emphatic."
 
   - id: HK-40
@@ -1926,11 +1926,11 @@ entries:
     - dcs
     verdict_fact: 'TRUE'
     number: 'systemic (diachronic): in epic/classical Sanskrit the perfect loses its resultative value and is used as
-      a simple past ≈ the imperfect — DCS has 61,986 perfect tokens, comparable to the 47,554 imperfect, consistent
+      a simple past ≈ the imperfect — DCS has 90,001 perfect tokens, on the same order as (indeed now exceeding) the 46,695 imperfect, consistent
       with the two competing as past-narrative tenses'
     ref: Whitney §821-823 (perfect's later narrative use); DCS verify_claims_dcs.py HK15_past_tenses
     verdict_pedagogy: JUSTIFIED
-    note: Correct diachronic observation; the corpus shows perfect and imperfect at comparable token counts, consistent
+    note: Correct diachronic observation; the corpus shows perfect and imperfect at the same order of magnitude (perfect 90,001 > imperfect 46,695), consistent
       with both serving past narration in the classical stratum.
 
   - id: HK-117
@@ -3458,11 +3458,11 @@ entries:
     - dcs
     - whitney
     verdict_fact: 'TRUE'
-    number: 'the injunctive is an archaism: DCS-2021 has only 2,366 active injunctive tokens (0.30% of 781,618 verbal
+    number: 'the injunctive is an archaism: DCS-2026 has only 5,258 active injunctive tokens (1.0% of 523,738 finite verbal
       tokens), and it survives chiefly as the 2nd-person prohibitive with mā (an augmentless aorist/imperfect)'
     ref: Whitney §579 (injunctive; mā-prohibitive); DCS verify_claims_dcs.py (timws code 30)
     verdict_pedagogy: JUSTIFIED
-    mg_footnote: 'Инъюнктив — реликтовая категория: в DCS-2021 всего 2 366 активных форм (0,30% глагольных словоформ),
+    mg_footnote: 'Инъюнктив — реликтовая категория: в DCS-2026 всего 5 258 активных форм (1,0% глагольных словоформ),
       и уцелел он почти только как запрет 2-го лица с mā (безаугментный аорист).'
     note: 'Corpus-confirmed archaism: the injunctive is rare and concentrated in the mā-prohibitive, exactly as Kochergina
       says. Well calibrated.'

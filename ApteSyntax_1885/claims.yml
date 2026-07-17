@@ -72,9 +72,9 @@ synthesis: >-
   начале предложения» rule to the enclitic pronoun forms it actually holds for, and states the
   same postpositive rule for ca (APT-3) and tu (APT-4) exactly where Whitney §1133 puts it.
   (2) The SAME periphrastic-vs-simple-future frequency gap that graded Bühler ORDER-QUESTIONABLE
-  — he taught the 14×-rarer periphrastic future FIRST (HB-58) — grades Apte JUSTIFIED (APT-6):
+  — he taught the ~17×-rarer periphrastic future FIRST (HB-58) — grades Apte JUSTIFIED (APT-6):
   Apte explicitly says the periphrastic future is used «намного реже», which is precisely the
-  DCS ratio (1,290 vs 18,004 tokens). The one seed flag is the expected Type-1 overgeneralized
+  DCS ratio (1,290 periphrastic [DCS-2021] vs 21,556 simple-future [DCS-2026] tokens). The one seed flag is the expected Type-1 overgeneralized
   universal: «Все глаголы движения управляют винительным падежом» (APT-5, OVERSTATED) — the
   accusative of the goal is the default, but the dative and locative of the goal are attested
   (Whitney §274, §285d), so the absolute «все» overreaches exactly as Kochergina's absolutes do.
@@ -190,11 +190,11 @@ entries:
     falsifiable_as: "is the periphrastic (first) future far rarer than the simple future in the corpus"
     sources: [dcs]
     verdict_fact: TRUE
-    number: "periphrastic future 1,290 tokens (0.17% of verbal) vs simple future 18,004 (2.3%) — a 14:1 ratio (DCS-2021, reused verbatim from BuhlerLeitfaden_1923 HB-58 / its verify_claims_dcs.py tense census)"
-    ref: "DCS-2021 tense census (../BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 HB-58"
+    number: "periphrastic future 1,290 tokens (DCS-2021; no distinct DCS-2026 tense tag) vs simple future 21,556 (4.1%) — a ~17:1 ratio (simple future refreshed to DCS-2026, denom 523,738; periphrastic reused verbatim from BuhlerLeitfaden_1923 HB-58 / its verify_claims_dcs.py tense census)"
+    ref: "DCS-2026 tense census (dcs_full.sqlite) for the simple future; periphrastic 1,290 retained from DCS-2021 (../BuhlerLeitfaden_1923/verify_claims_dcs.py); cf. BuhlerLeitfaden_1923 HB-58"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The cleanest cross-book calibration contrast in the seed. The identical 14:1 DCS gap
+      The cleanest cross-book calibration contrast in the seed. The same DCS frequency gap (14:1 in the DCS-2021 figures Bühler used, ~17:1 refreshed to DCS-2026)
       graded Bühler ORDER-QUESTIONABLE because he TAUGHT the periphrastic future first (HB-58);
       Apte states outright that it is «намного реже», matching the corpus — so the same fact
       grades Apte JUSTIFIED. Presentation calibration, not accuracy, is the axis of difference.

@@ -1,0 +1,35 @@
+{
+  "_source": "DCS-2026 dcs_full.sqlite; denominator = finite verbal forms (523738)",
+  "denominator": 523738,
+  "figures": {
+    "present": 353215,
+    "imperfect": 46695,
+    "aorist": 12054,
+    "future": 21556,
+    "pluperfect": 200,
+    "optative": 91912,
+    "imperative": 56506,
+    "conditional": 340,
+    "precative": 577,
+    "injunctive": 5258,
+    "subjunctive": 4325,
+    "perfect": 90001,
+    "periphrastic_perfect": 4046,
+    "finite_verbal_denominator": 523738
+  },
+  "pct_of_finite_verbal": {
+    "present": 67.44,
+    "imperfect": 8.92,
+    "aorist": 2.3,
+    "future": 4.12,
+    "pluperfect": 0.04,
+    "optative": 17.55,
+    "imperative": 10.79,
+    "conditional": 0.06,
+    "precative": 0.11,
+    "injunctive": 1.0,
+    "subjunctive": 0.83,
+    "perfect": 17.18,
+    "periphrastic_perfect": 0.77
+  }
+}

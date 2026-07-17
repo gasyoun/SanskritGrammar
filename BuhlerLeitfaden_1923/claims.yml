@@ -83,12 +83,12 @@ synthesis: >-
   the book's own later lessons (root and siṣ-aorists "исключительно P.", the intensives each
   single-voice). Same overreach type as Kochergina's, but rarer: it is the opening simplification,
   not a recurring habit. **(2) Rare-before-common ordering.** Урок XLIV teaches the periphrastic
-  future before the simple future against a 14:1 corpus frequency ratio (HB-58), and the -tavat
+  future before the simple future against a 17:1 corpus frequency ratio (HB-58), and the -tavat
   active participle is billed "также часто" beside a passive twin 100× more frequent (HB-40).
   This is the paradigm-completeness tradition ordering by system rather than by text frequency —
   the same force behind Kochergina's frequency-blindness, a half-century earlier. **(3) The one
   stated frequency direction is flipped.** Bühler says the classical perfect is *rarer* than the
-  imperfect (HB-57); DCS-2021 has the perfect 1.3× *more* frequent (61,986 vs ~47,554 tokens) —
+  imperfect (HB-57); DCS-2026 has the perfect 1.9× *more* frequent (90,001 vs ~46,695 tokens) —
   stratum-dependent (the aggregate is epic-heavy), so OVERSTATED rather than FALSE, and flagged
   per the D-B tie-break. The single FALSE (HB-60, the a-aorist "спрягается как impf. VII кл."
   beside a thematic paradigm) and the ā+Acc government slip (HB-10) both smell of print/translation
@@ -98,7 +98,7 @@ synthesis: >-
   Recommendation for the reading-site overlay: badge the six flagged entries and surface the
   thirteen M.G. frequency footnotes — Bühler states almost no numbers, and the corpus can now
   supply them (the ppp at 29.8% of all verbal tokens as the true center of the verb system,
-  the optative as the second finite category at 9.3%, the -ya absolutive at 78.4% of the
+  the optative as the second finite category at 17.6%, the -ya absolutive at 78.4% of the
   inventory). The cross-grammar layer is doing what D-A intended: with two registers live,
   presentation calibration — not factual accuracy — is where the grammars measurably differ.
 
@@ -113,14 +113,14 @@ entries:
     falsifiable_as: "the tense/mood inventory is exactly 10, each with 3 numbers x 3 persons"
     sources: [whitney, dcs]
     verdict_fact: TRUE
-    number: "systemic: the traditional 10-fold inventory (pres, impf, impv, opt, perf, periphr. fut, simple fut, cond, prec, aor) x 3 numbers x 3 persons; DCS tokens are wildly skewed — present 157,003 (20.1% of verbal), optative 72,826 (9.3%), perfect 61,986, imperfect ~47,554, imperative 32,750, future 18,004 (2.3%), aorist 12,054 (2.30% of finite verbal; feat_formation — REFRESHED 17-07-2026 from the older tense-code count 2,452/0.31%, which undercounted root+thematic aorists, H1134/H1136), periphr. future 1,290 (0.17%), conditional 269 (0.03%), precative ~221 (0.03%)"
+    number: "systemic: the traditional 10-fold inventory (pres, impf, impv, opt, perf, periphr. fut, simple fut, cond, prec, aor) x 3 numbers x 3 persons; DCS tokens are wildly skewed — present 353,215 (67.4% of verbal), optative 91,912 (17.6%), perfect 90,001, imperfect ~46,695, imperative 56,506, future 21,556 (4.1%), aorist 12,054 (2.30% of finite verbal; feat_formation — REFRESHED 17-07-2026 from the older tense-code count 2,452/0.31%, which undercounted root+thematic aorists, H1134/H1136), periphr. future 1,290 (0.17%; DCS-2021; no distinct DCS-2026 tense tag), conditional 340 (0.06%), precative ~577 (0.11%)"
     ref: "Whitney §527ff (conjugation system); DCS timws.csv via verify_claims_dcs.py"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
-      Частотность десяти времен и наклонений по DCS-2021 (от 781 618 глагольных
-      словоупотреблений): настоящее 20,1 %, оптатив 9,3 %, перфект 7,9 %, имперфект 6,1 %,
-      императив 4,2 %, простое будущее 2,3 %, аорист 0,31 %, описательное будущее 0,17 %,
-      кондиционалис 0,03 %, прекатив 0,03 %. Четыре из десяти категорий — корпусно-маргинальны
+      Частотность десяти времен и наклонений по DCS-2026 (от 523 738 глагольных
+      словоупотреблений): настоящее 67,4 %, оптатив 17,6 %, перфект 17,2 %, имперфект 8,9 %,
+      императив 10,8 %, простое будущее 4,1 %, аорист 2,3 %, описательное будущее 0,17 %,
+      кондиционалис 0,06 %, прекатив 0,11 %. Три из десяти категорий — корпусно-маргинальны
       (< 0,4 % каждая).
     note: >-
       The inventory is the standard one and correct as a system. What the equal-billing list
@@ -137,7 +137,7 @@ entries:
     falsifiable_as: "every tense/mood category attests both parasmaipada and atmanepada"
     sources: [whitney, dcs]
     verdict_fact: OVERSTATED
-    number: "Bühler's own later lessons carve out the exceptions: root aorist 'встречается только P.' (Урок XLV), siṣ-aorist 'исключительно P.' (Урок XLVI), intensive I 'исключительно P.' / intensive II 'исключительно Ā.' (Урок XLVIII); DCS Benedictive Medium = 221 tokens (0.03%)"
+    number: "Bühler's own later lessons carve out the exceptions: root aorist 'встречается только P.' (Урок XLV), siṣ-aorist 'исключительно P.' (Урок XLVI), intensive I 'исключительно P.' / intensive II 'исключительно Ā.' (Урок XLVIII); DCS Benedictive Medium = 577 tokens (0.11%; DCS-2026 precative-mood total, pada untagged; DCS-2021 medium-code = 221)"
     ref: "Whitney §829ff (root aorist active), §911 (siṣ-aorist active only); Bühler's own Уроки XLV, XLVI, XLVIII"
     verdict_pedagogy: MISLEADING
     note: >-
@@ -441,7 +441,7 @@ entries:
     falsifiable_as: "the imperfect functions as the narrative past"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "DCS-2021 past-tense competition: imperfect ~47,554 tokens · perfect 61,986 · aorist 12,054 (feat_formation; REFRESHED 17-07-2026 from the older 2,452 tense-code count, which undercounted root+thematic aorists, H1134/H1136) — the imperfect is A narrative past, alongside the (aggregate-corpus more frequent) perfect; the aorist remains the rarest of the three"
+    number: "DCS-2026 past-tense competition: imperfect ~46,695 tokens · perfect 90,001 · aorist 12,054 (feat_formation; REFRESHED 17-07-2026 from the older 2,452 tense-code count, which undercounted root+thematic aorists, H1134/H1136) — the imperfect is A narrative past, alongside the (aggregate-corpus more frequent) perfect; the aorist remains the rarest of the three"
     ref: "Whitney §779; DCS timws.csv via verify_claims_dcs.py (HK15_past_tenses)"
     verdict_pedagogy: JUSTIFIED
     note: >-
@@ -504,12 +504,12 @@ entries:
     falsifiable_as: "optative = present stem + ī + secondary endings, with 3pl -uḥ the sole ending deviation"
     sources: [whitney, dcs]
     verdict_fact: TRUE
-    number: "systemic: the thematic optative paradigm (vadet... vadeyuḥ); DCS attests the optative at scale — 72,826 tokens"
+    number: "systemic: the thematic optative paradigm (vadet... vadeyuḥ); DCS attests the optative at scale — 91,912 tokens"
     ref: "Whitney §§564-568; DCS timws.csv code 2"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
-      Оптатив — вторая по частоте личная категория корпуса DCS-2021: 72 826 словоупотреблений
-      (9,3 % глагольных), после одного лишь настоящего времени. Урок XVI, а не приложение —
+      Оптатив — вторая по частоте личная категория корпуса DCS-2026: 91 912 словоупотреблений
+      (17,6 % глагольных), после одного лишь настоящего времени. Урок XVI, а не приложение —
       частотно оправданное место.
     note: >-
       Formation correct; the M.G. footnote records the striking corpus fact that the optative
@@ -1096,7 +1096,7 @@ entries:
     falsifiable_as: "is the perfect actually rarer than the imperfect"
     sources: [dcs, whitney]
     verdict_fact: OVERSTATED
-    number: "DCS-2021 says the OPPOSITE direction on the corpus aggregate: perfect 61,986 tokens vs imperfect ~47,554 (all imperfect codes summed) — the perfect is ~1.3x MORE frequent. Semantic equivalence (first half of the claim) is confirmed (Whitney: the two are narrative equivalents in the later language)"
+    number: "DCS-2026 says the OPPOSITE direction on the corpus aggregate: perfect 90,001 tokens vs imperfect ~46,695 (all imperfect codes summed) — the perfect is ~1.9x MORE frequent. Semantic equivalence (first half of the claim) is confirmed (Whitney: the two are narrative equivalents in the later language)"
     ref: "DCS timws.csv via verify_claims_dcs.py (HK15_past_tenses); Whitney §§823, 826-827"
     verdict_pedagogy: FREQUENCY-HIDDEN
     note: >-
@@ -1119,16 +1119,16 @@ entries:
     falsifiable_as: "the periphrastic future is formable from all roots; how frequent is it"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "formation systemic (kartāsmi, kartā); DCS-2021 frequency: periphrastic future 1,290 tokens (0.17% of verbal) vs simple future 18,004 — 14x rarer"
+    number: "formation systemic (kartāsmi, kartā); DCS-2026 frequency: periphrastic future 1,290 tokens (0.17% of verbal; DCS-2021; no distinct DCS-2026 tense tag) vs simple future 21,556 — 17x rarer"
     ref: "Whitney §§942-947; DCS timws.csv code 7 via verify_claims_dcs.py (HB_future_periphrastic)"
     verdict_pedagogy: ORDER-QUESTIONABLE
     mg_footnote: >-
-      Частотность по DCS-2021: описательное будущее — 1 290 словоупотреблений (0,17 %
-      глагольных) против 18 004 у простого будущего, т. е. в четырнадцать раз реже. В уроке
+      Частотность по DCS-2026: описательное будущее — 1 290 словоупотреблений (0,17 %
+      глагольных; 1 290 — DCS-2021, отдельного тега DCS-2026 нет) против 21 556 у простого будущего, т. е. в семнадцать раз реже. В уроке
       XLIV оно тем не менее изложено ПЕРЕД простым будущим.
     note: >-
       The formation claim is fine. The flag is ordering: Урок XLIV teaches the periphrastic
-      future first (line 6735) and the simple future second (line 6757), reversing a 14:1
+      future first (line 6735) and the simple future second (line 6757), reversing a 17:1
       corpus frequency ratio — the register's clearest rare-before-common ordering in Bühler.
 
   - id: HB-59
@@ -1186,7 +1186,7 @@ entries:
     falsifiable_as: "aorists are rare in classical usage and semantically equivalent to the other pasts"
     sources: [dcs, whitney]
     verdict_fact: TRUE
-    number: "DCS-2021: all aorist formations = 12,054 tokens = 2.30% of finite verbal (feat_formation; REFRESHED 17-07-2026 from the older 2,452 / 0.31% tense-code count, which undercounted root+thematic aorists, H1134/H1136) — vs perfect 61,986 and imperfect ~47,554; 'редких' still confirmed: the aorist is the rarest of the three past tenses (~1:4 vs the imperfect, ~1:5 vs the perfect — was ~1:25 under the undercount)"
+    number: "DCS-2026: all aorist formations = 12,054 tokens = 2.30% of finite verbal (feat_formation; REFRESHED 17-07-2026 from the older 2,452 / 0.31% tense-code count, which undercounted root+thematic aorists, H1134/H1136) — vs perfect 90,001 and imperfect ~46,695; 'редких' still confirmed: the aorist is the rarest of the three past tenses (~1:4 vs the imperfect, ~1:7 vs the perfect — was ~1:25 under the undercount)"
     ref: "Whitney §§824-826, 928; DCS via verify_claims_dcs.py (HK1_aorist, HK15_past_tenses)"
     verdict_pedagogy: JUSTIFIED
     note: >-
@@ -5626,7 +5626,7 @@ entries:
     ref: "Whitney §§940-941, 950"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
-      Частотность по DCS-2021: conditionalis — 269 токенов (0.03% глагольных форм), редчайшая личная форма глагола.
+      Частотность по DCS-2026: conditionalis — 340 токенов (0.06% глагольных форм), редчайшая личная форма глагола.
     note: >-
       Both the formation and the syntactic restriction are standard; Bühler's own exercise on this page uses the conditional in exactly the contrary-to-fact frame.
 
@@ -5643,7 +5643,7 @@ entries:
     ref: "Whitney §§921-925"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
-      Частотность по DCS-2021: бенедиктив (медий) — 221 токен (0.03% глагольных форм).
+      Частотность по DCS-2026: бенедиктив — 577 токенов (0.11% глагольных форм; всего в наклонении, пада не размечена; DCS-2021 медий-код = 221).
     note: >-
       Standard doctrine; the middle precative barely occurs in the corpus, matching Bühler's brief treatment.
 
@@ -5720,7 +5720,7 @@ entries:
     ref: "Whitney §§829-831, 834; cf. HK-1/HB-61 (aorist rarity)"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
-      Частотность по DCS-2021: аорист всех типов — 2 452 токена (0.31% глагольных форм).
+      Частотность по DCS-2026: аорист всех типов — 12 054 токена (2.3% глагольных форм).
     note: >-
       TRUE within the textbook's classical scope; the Vedic middle root-aorist forms fall outside it and Whitney flags them as such.
 
