@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.7] - 2026-07-17
 ### Changed
 - **HB-10 (ā government) @WAITING closed; source xlsx committed (H1205, Sonnet 5
   `claude-sonnet-5`).** `index_Shertsl_Byuler_dopoln_180721.xlsx` was untracked (also
