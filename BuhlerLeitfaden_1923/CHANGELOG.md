@@ -8,6 +8,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- **HB-10 (ā government) @WAITING closed; source xlsx committed (H1205, Sonnet 5
+  `claude-sonnet-5`).** `index_Shertsl_Byuler_dopoln_180721.xlsx` was untracked (also
+  the dangling link target of the [0.3.6] entry below) — now committed, so both that
+  entry's blob link and this one resolve. Cross-checked HB-10's claim (Whitney §1128:
+  adpositional ā governs only the ablative, not "Acc. or Abl." as Bühler's Russian
+  edition states) against the sheet's own «Abl. в соединении с предлогами и наречиями»
+  list (pp. 216–221) — ā appears there, and in no accusative-governing list anywhere
+  in the sheet. Independent 19th-century corroboration, added to
+  [`claims.yml`](claims.yml) HB-10's note; `CLAIMS_VERIFIED.md` regenerated.
 
 ## [0.3.6] - 2026-07-17
 ### Added

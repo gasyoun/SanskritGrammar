@@ -44,8 +44,14 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
    [`ApteClaims.jsx`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/ApteClaims.jsx).
    `claims.yml` is the single source, so print (this manuscript's «Учащемуся» lines) and web can no
    longer diverge.
-4. **MG viza** — the commentary verdicts and learner-advice lines are human-visaed before print
-   (a `/review-sheet` pass like the Kochergina methodichka v1), currently undone.
+4. ~~**MG viza** — the commentary verdicts and learner-advice lines are human-visaed before print
+   (a `/review-sheet` pass like the Kochergina methodichka v1), currently undone.~~ ✅ **DONE**
+   (17-07-2026) — 8/9 approve, `apply_apte_methodichka_visa.py --apply`; substantive notes folded
+   in (Likhushina direct quotes, Sherzl cross-check, tightened зан-10 ratio); zan-29 (Занятия
+   29–30) still unvoted.
+5. **Open from this viza round** — Елизаренкова «Аорист в Ригведе» scan (зан-19, needs MG's file);
+   a standalone uta-statistics dashboard (зан-22); a cross-book calibration table («что у кого
+   лучше», приложение).
 
 ## Limitations
 - v1 is commentary only — no exercises, no cross-references yet.
@@ -64,5 +70,6 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
 |---|---|---|
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Created v1 раздел I (commentary) + this metadoc (H1090). All 10 flagged claims covered + strengths appendix. |
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Fed the «Учащемуся» takeaways into the `<ApteClaims/>` reading-site overlay via a `methodichka` field in `claims.yml` (single source) — backlog #3 closed (H1095). |
+| 17-07-2026 | Sonnet 5 (`claude-sonnet-5`) | MG viza applied (8/9 approve) — backlog #4 closed. Likhushina direct quotes (Занятие 3/19), Sherzl government-index cross-check (Занятие 7/9), tightened Занятие 10 ratio; 3 open research asks parked as backlog #5. |
 
 _Dr. Mārcis Gasūns_

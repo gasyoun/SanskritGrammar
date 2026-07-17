@@ -8,6 +8,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- **MG viza applied to the print methodichka раздел I (8/9 approve, 1 unvoted).** Ran
+  `apply_apte_methodichka_visa.py --apply` against `review/sanskritgrammar-metodichka-apte-v1_
+  17.07.26_decisions.json` — every section now carries its verdict marker + a summary table.
+  Substantive viza notes actioned: (razdel-1-frame) permission confirmed to cite the Likhushina
+  translation more fully — Занятие 3 § 30 and Занятие 19 §§ 207/210 now carry direct quotes, not
+  paraphrase; (zan-07/zan-09, «а как Шерцль?») cross-checked ruc/krudh/druh and kṣip/muc/snih
+  against the `index_Shertsl_Byuler_dopoln_180721.xlsx` Sherzl/Bühler government index — Шерцль
+  independently corroborates the ruc-dative and kṣip/snih-locative attestations, and shows
+  krudh/druh already carrying variant government in the 19th-century index (explains the corpus's
+  sub-1.0 dative uplift); (zan-10) tightened the vinительный/родительный phrasing to the explicit
+  41%/30% ratio. Genuinely open notes parked as in-text backlog markers rather than invented:
+  zan-19 (Елизаренкова «Аорист в Ригведе» — needs the scan from MG), zan-22 (standalone stats
+  dashboard — separate build), prilozhenie (cross-book calibration table — separate handoff).
 
 ## [0.11.0] - 2026-07-17
 ### Changed

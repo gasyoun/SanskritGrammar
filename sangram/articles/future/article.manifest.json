@@ -63,8 +63,109 @@
         "gloss_ru": "простое будущее от √vac: vakṣyāmi «(я) скажу». Второе по частоте будущее (579), 1-е лицо — язык изложения/обещания в доктринальном тексте.",
         "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 1 л. ед.", "visibility": "internal" },
         "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:6",
+        "layer": "scientific",
+        "text_slp1": "Bavizyasi",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.18" },
+        "translations": { "ru": "будешь (bhū, простое буд. 2 л. ед.)" },
+        "gloss_ru": "простое будущее от √bhū, 2 л. ед. — 318 вхождений; заполняет 2-е лицо (12,0 % будущего) в примерном наборе.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 2 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:7",
+        "layer": "scientific",
+        "text_slp1": "pAtayizyAma",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 6.103" },
+        "translations": { "ru": "уроним (pātay, простое буд. 1 л. мн.)" },
+        "gloss_ru": "простое будущее (каузатив pātay < pat) — 1 л. мн., дополняет вторую строку числа (мн.) в наборе.",
+        "evidence": { "label_ru": "DCS, валидационная выборка; Tense=Fut, простое, 1 л. мн.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:8",
+        "layer": "scientific",
+        "text_slp1": "Bavizyanti",
+        "locus": { "corpus": "dcs", "work": "Alaṃkārasarvasva", "ref": "ASāh 10.22" },
+        "translations": { "ru": "будут (bhū, простое буд. 3 л. мн.)" },
+        "gloss_ru": "простое будущее от √bhū, 3 л. мн. — 508 вхождений, второе по частоте после ед. ч.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, простое, 3 л. мн.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:9",
+        "layer": "scientific",
+        "text_slp1": "kartAsmi",
+        "locus": { "corpus": "dcs", "work": "Bhāminīvilāsa (Mañjarī)", "ref": "BhāMañj 7.247" },
+        "translations": { "ru": "сделаю, отдалённо (kṛ, перифр. буд. 1 л. ед.)" },
+        "gloss_ru": "перифрастическое будущее от √kṛ, 1 л. ед. (kar-tā + asmi) — дополняет перифрастику лицами, помимо частотнейшего 3 л. ед. bhavitā.",
+        "evidence": { "label_ru": "DCS, валидационная выборка; Tense=Fut, перифрастическое (peri), 1 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:10",
+        "layer": "scientific",
+        "text_slp1": "drazwAsi",
+        "locus": { "corpus": "dcs", "work": "Aṣṭāvakragīta", "ref": "Aṣṭāvakragīta 1.7" },
+        "translations": { "ru": "увидишь, отдалённо (dṛś, перифр. буд. 2 л. ед.)" },
+        "gloss_ru": "перифрастическое будущее от √dṛś, 2 л. ед. (draṣ-ṭā + asi).",
+        "evidence": { "label_ru": "DCS, валидационная выборка; Tense=Fut, перифрастическое (peri), 2 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:11",
+        "layer": "scientific",
+        "text_slp1": "hantA",
+        "locus": { "corpus": "dcs", "work": "Atharvavedasaṃhitā (Śaunaka)", "ref": "AVŚ 1.7.1" },
+        "translations": { "ru": "убьёт, отдалённо (han, перифр. буд. 3 л. ед.)" },
+        "gloss_ru": "перифрастическое будущее от √han, 3 л. ед. — второй по частоте пример perifrastikи (50 вхождений формы) после bhavitā/kartā.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, перифрастическое (peri), 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:12",
+        "layer": "scientific",
+        "text_slp1": "anvatapsyat",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 5.47.12" },
+        "translations": { "ru": "раскаялся бы (anutap, кондиционал 3 л. ед.)" },
+        "gloss_ru": "кондиционал от anu-tap — второй по частоте кондиционал корпуса (25 вхождений формы) после abhaviṣyat.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, Mood=Cond, 3 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:13",
+        "layer": "scientific",
+        "text_slp1": "AgamizyaH",
+        "locus": { "corpus": "dcs", "work": "Śatapathabrāhmaṇa (Mādhyandina)", "ref": "ŚBM 10.6.1.4" },
+        "translations": { "ru": "пришёл бы (āgam, кондиционал 2 л. ед.)" },
+        "gloss_ru": "кондиционал от ā-gam, 2 л. ед. — дополняет кондиционал 2-м лицом (у abhaviṣyat — 3-е).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, Mood=Cond, 2 л. ед.", "visibility": "internal" },
+        "as_of": "2026-07-17"
+      },
+      {
+        "id": "ex:future:14",
+        "layer": "scientific",
+        "text_slp1": "yAsyAma",
+        "locus": { "corpus": "dcs", "work": "Gokarṇapurāṇasāra", "ref": "GokPurS 12.3" },
+        "translations": { "ru": "пошли бы (yā, кондиционал 1 л. мн.)" },
+        "gloss_ru": "кондиционал от √yā, 1 л. мн. — дополняет кондиционал множественным числом.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; Tense=Fut, Mood=Cond, 1 л. мн.", "visibility": "internal" },
+        "as_of": "2026-07-17"
       }
     ],
-    "revisions": []
+    "revisions": [
+      {
+        "date": "2026-07-17",
+        "kind": "published",
+        "note_ru": "Авторская виза (MG) получена (9/9 approve, лист sanskritgrammar-sg-mo-021-future_visa) — статья опубликована; плашка кандидата снята из MDX."
+      },
+      {
+        "date": "2026-07-17",
+        "kind": "revision",
+        "note_ru": "Примеры § 5 расширены с 5 до 14 (карточки визы MO021-05/07 — «примеров должно быть много»): по 3–6 на каждую формацию (простое/перифрастическое/кондиционал), персона и число разнообразнее. Термин «перволичная» помечен как рабочее (не заимствованное) обозначение (MO021-04). § 1 уточнён — каждое «нативно» теперь называет конкретное поле DCS (MO021-01)."
+      }
+    ]
   }
 }
