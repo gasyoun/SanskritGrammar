@@ -1,0 +1,207 @@
+{
+  "study": "SG-WF-004 taddhita — dictionary quantification (MWderivations wsfx × DCS token join)",
+  "toc_ref": "SG-WF-004",
+  "method": "MW headwords tagged wsfx:<suffix> in MWderivations/step3/analysis2.txt (curated MW-markup derivation) → SLP1→IAST → joined to pinned DCS snapshot for token counts",
+  "dictionary_source": {
+    "repo": "sanskrit-lexicon/MWderivations",
+    "file": "step3/analysis2.txt",
+    "signal": "wsfx:<suffix> = secondary (taddhita) suffix derivation of a MW headword"
+  },
+  "corpus_snapshot": {
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "note": "pin 04e0778 bound by provenance + tag c3-pin-04e0778-content"
+  },
+  "mw_wsfx_records": 6488,
+  "totals": {
+    "mw_types": 6390,
+    "dcs_attested_types": 1733,
+    "dcs_tokens": 36290
+  },
+  "per_suffix": [
+    {
+      "suffix": "tva",
+      "group": "абстракт",
+      "mw_types": 1995,
+      "dcs_attested_types": 178,
+      "dcs_tokens": 8024,
+      "top_lemmas": [
+        "sattva (4165)",
+        "tattva (2361)",
+        "pañcatva (106)",
+        "pṛthaktva (98)",
+        "ekatva (97)"
+      ]
+    },
+    {
+      "suffix": "tA",
+      "group": "абстракт",
+      "mw_types": 1751,
+      "dcs_attested_types": 257,
+      "dcs_tokens": 1300,
+      "top_lemmas": [
+        "śūnyatā (111)",
+        "dharmatā (96)",
+        "janatā (68)",
+        "sattā (57)",
+        "samatā (53)"
+      ]
+    },
+    {
+      "suffix": "vat",
+      "group": "поссессив",
+      "mw_types": 1382,
+      "dcs_attested_types": 745,
+      "dcs_tokens": 12793,
+      "top_lemmas": [
+        "bhagavat (3272)",
+        "balavat (919)",
+        "vīryavat (719)",
+        "pratāpavat (403)",
+        "guṇavat (284)"
+      ]
+    },
+    {
+      "suffix": "mat",
+      "group": "поссессив",
+      "mw_types": 325,
+      "dcs_attested_types": 205,
+      "dcs_tokens": 7065,
+      "top_lemmas": [
+        "dhīmat (1097)",
+        "śrīmat (968)",
+        "āyuṣmat (919)",
+        "buddhimat (379)",
+        "madhumat (335)"
+      ]
+    },
+    {
+      "suffix": "tas",
+      "group": "адверб",
+      "mw_types": 308,
+      "dcs_attested_types": 0,
+      "dcs_tokens": 0,
+      "top_lemmas": []
+    },
+    {
+      "suffix": "tama",
+      "group": "сравнение",
+      "mw_types": 214,
+      "dcs_attested_types": 160,
+      "dcs_tokens": 3238,
+      "top_lemmas": [
+        "sattama (1552)",
+        "anyatama (338)",
+        "śatatama (136)",
+        "priyatama (84)",
+        "sahasratama (68)"
+      ]
+    },
+    {
+      "suffix": "tara",
+      "group": "сравнение",
+      "mw_types": 197,
+      "dcs_attested_types": 121,
+      "dcs_tokens": 1306,
+      "top_lemmas": [
+        "dustara (115)",
+        "balavattara (88)",
+        "bahutara (85)",
+        "paratara (68)",
+        "priyatara (58)"
+      ]
+    },
+    {
+      "suffix": "Sas",
+      "group": "адверб",
+      "mw_types": 113,
+      "dcs_attested_types": 3,
+      "dcs_tokens": 4,
+      "top_lemmas": [
+        "alpaśas (2)",
+        "kramaśas (1)",
+        "śubhraśastama (1)"
+      ]
+    },
+    {
+      "suffix": "ka",
+      "group": "уменьш./относит.",
+      "mw_types": 37,
+      "dcs_attested_types": 20,
+      "dcs_tokens": 220,
+      "top_lemmas": [
+        "sahasraka (95)",
+        "dvika (30)",
+        "śroṇāparāntaka (27)",
+        "anuka (20)",
+        "pārijātaka (18)"
+      ]
+    },
+    {
+      "suffix": "vin",
+      "group": "поссессив",
+      "mw_types": 35,
+      "dcs_attested_types": 26,
+      "dcs_tokens": 2162,
+      "top_lemmas": [
+        "yaśasvin (496)",
+        "tapasvin (458)",
+        "tejasvin (346)",
+        "manasvin (224)",
+        "medhāvin (199)"
+      ]
+    },
+    {
+      "suffix": "vala",
+      "group": "поссессив",
+      "mw_types": 14,
+      "dcs_attested_types": 6,
+      "dcs_tokens": 46,
+      "top_lemmas": [
+        "rajasvala (32)",
+        "naḍvala (5)",
+        "śikhāvala (3)",
+        "ūrjasvala (3)",
+        "payasvala (2)"
+      ]
+    },
+    {
+      "suffix": "tana",
+      "group": "абстракт",
+      "mw_types": 8,
+      "dcs_attested_types": 2,
+      "dcs_tokens": 6,
+      "top_lemmas": [
+        "agretana (4)",
+        "pragetana (2)"
+      ]
+    },
+    {
+      "suffix": "tvana",
+      "group": "абстракт",
+      "mw_types": 8,
+      "dcs_attested_types": 7,
+      "dcs_tokens": 28,
+      "top_lemmas": [
+        "mahitvana (16)",
+        "vasutvana (5)",
+        "patitvana (2)",
+        "sakhitvana (2)",
+        "kavitvana (1)"
+      ]
+    },
+    {
+      "suffix": "min",
+      "group": "поссессив",
+      "mw_types": 3,
+      "dcs_attested_types": 3,
+      "dcs_tokens": 98,
+      "top_lemmas": [
+        "vāgmin (62)",
+        "gomin (18)",
+        "kakudmin (18)"
+      ]
+    }
+  ],
+  "coverage_note": "covers abstract/possessive/adverbial/comparison taddhita; possessive -in, relational -ika, patronymic -ya are NOT wsfx-tagged in MWderivations (compounds/atomic stems) — residue for an Apte/MW-etymology pass"
+}
