@@ -1,0 +1,42 @@
+{
+  "study": "SG-MO-026 «Абсолютив (-tvā/-ya)» — indeclinable converb (core W2 ①, content)",
+  "toc_ref": "SG-MO-026",
+  "kind": "content article (no kill-gate)",
+  "method": "VerbForm=Conv; surface split -tvā vs -ya/-tya; cross-tab vs lemma.preverbs — corpus test of the rule (-tvā↔simple, -ya↔compounded)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "conv_tokens": 102054
+  },
+  "ending_distribution": {
+    "ya": 57790,
+    "tvā": 34816,
+    "other": 8980,
+    "am": 468
+  },
+  "rule_test": {
+    "description": "-tvā ↔ simple root (no preverb); -ya/-tya ↔ preverb-compounded root",
+    "tva_simple": 34293,
+    "tva_with_preverb": 523,
+    "tva_pct_simple": 98.5,
+    "ya_simple": 1289,
+    "ya_with_preverb": 56501,
+    "ya_pct_compounded": 97.8
+  },
+  "validation_sample": {
+    "seed": 20260717,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "indeclinable": "the absolutive has no case/number — the frame is the -tvā/-ya allomorphy, not a paradigm",
+    "surface_classification": "-tvā/-ya split by m_unsandhied ending; the ~2% counter-rule residue is sandhi/lemmatization edge cases, not necessarily real exceptions",
+    "am_type": "the rare -am absolutive (Vedic/idiomatic) is counted separately",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
