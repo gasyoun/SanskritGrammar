@@ -1,0 +1,47 @@
+{
+  "study": "SG-WF-004 taddhita — hand-adjudication of the seeded surface-suffix sample",
+  "adjudicator": "Opus 4.8 (claude-opus-4-8[1m])",
+  "as_of": "2026-07-17",
+  "seed": 20260717,
+  "sample_kind": "freq-weighted draw of distinct nominal (NOUN/ADJ) lemma types matching a canonical taddhita suffix (estimates token-mass composition)",
+  "categories": {
+    "taddhita": "genuine secondary derivation from a nominal base (devatā←deva, vīrya←vīra, pakṣin←pakṣa, guṇavat←guṇa, gomaya←go, āditya←aditi)",
+    "krt": "primary/deverbal — the -ya/-aka/-in ending is a kṛt gerundive/agent on a verbal root (kārya←kṛ, ramaṇīya←ram, vyāpaka←vyāp, kāṅkṣin←kāṅkṣ), NOT a taddhita suffix",
+    "primary": "underived primary noun/adjective whose ending merely resembles a suffix (sūrya, haya, hiraṇya, priya, cintā, maya, niścaya)",
+    "pronoun_name": "lemmatized pronoun form or proper name (tā = nom/acc pl of tad)",
+    "compound": "the ending belongs to a compound final member, not a suffix on this stem (evaṃvīrya)"
+  },
+  "verdicts": {
+    "nāyaka": "krt", "mānin": "taddhita", "ātreya": "taddhita", "vratin": "taddhita",
+    "kārya": "krt", "sainya": "taddhita", "amātya": "taddhita", "āhavanīya": "krt",
+    "gomaya": "taddhita", "āmalaka": "primary", "priya": "primary", "vaikārika": "taddhita",
+    "dvitīya": "taddhita", "sūrya": "primary", "vyāpin": "krt", "ādya": "taddhita",
+    "tattva": "taddhita", "āpya": "krt", "dūṣya": "krt", "vīrya": "taddhita",
+    "vajrin": "taddhita", "bhavat": "primary", "kāṅkṣin": "krt", "vyāpaka": "krt",
+    "guṇavat": "taddhita", "bhaṅgurāvat": "taddhita", "śītaka": "taddhita", "caraka": "krt",
+    "pañcaka": "taddhita", "tarasvin": "taddhita", "taṇḍulīyaka": "primary", "tā": "pronoun_name",
+    "pralaya": "primary", "vādya": "krt", "pakṣin": "taddhita", "cintā": "primary",
+    "śiṣya": "krt", "vīryavat": "taddhita", "puṇya": "primary", "staimitya": "taddhita",
+    "haya": "primary", "abhraka": "taddhita", "āditya": "taddhita", "recaka": "krt",
+    "vāmadevya": "taddhita", "amedhya": "krt", "śīlin": "taddhita", "ramaṇīya": "krt",
+    "indriya": "taddhita", "javin": "taddhita", "niścaya": "primary", "saināpatya": "taddhita",
+    "akarmaka": "taddhita", "prāṇin": "taddhita", "devatā": "taddhita", "hiraṇya": "primary",
+    "martya": "krt", "maya": "primary", "anuśāyin": "krt", "evaṃvīrya": "compound"
+  },
+  "tally": {
+    "n": 60,
+    "taddhita": 30,
+    "krt": 16,
+    "primary": 12,
+    "pronoun_name": 1,
+    "compound": 1,
+    "precision": 0.50,
+    "false_positive_rate": 0.50,
+    "note": "surface taddhita-suffix matching over the nominal lexicon is ~50 % precise; the other ~50 % of the token mass is kṛt gerundives/agents (-ya/-aka/-in on verbal roots, 27 %), primary nouns (20 %), pronoun forms and compound finals. Comparable to the kṛt-name pilot P5 (~41 % precision / ~59 % false). Freq-weighted sample → estimates token-mass composition."
+  },
+  "worst_contaminant": {
+    "suffix": "-ya",
+    "nominal_tokens": 224191,
+    "why": "the largest surface bucket by far; conflates taddhita relational/abstract (vīrya, indriya, sainya) with kṛt gerundives (kārya, śiṣya, martya) and primary nouns (sūrya, haya, hiraṇya, priya)"
+  }
+}
