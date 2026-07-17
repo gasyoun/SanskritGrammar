@@ -257,18 +257,29 @@ def build_manual_index(catalog, verbal):
     #     homonym must agree — his «1 paś» must not bind Whitney's paś², nor «1 stu»
     #     Whitney's stu². Those divergences are left null for the author to rule on
     #     rather than guessed at (issue #50 precedent).
+    #   * where he did NOT index it, the alternate spelling must resolve to a SINGLE
+    #     Whitney record (or a single homonym-less one) — mirroring root-uniq/root-none
+    #     above. «vakṣ, ukṣ» is un-indexed and Whitney has ukṣ¹ AND ukṣ²: binding both
+    #     would assert he classified two morphemes where he catalogued one — the very
+    #     homonym-smear this pass must not reintroduce.
     for row in catalog:
-        if row["whitney_num"] is not None:
-            hom_ok = lambda c: c["homonym"] in (row["whitney_num"], None)
-        else:
-            hom_ok = lambda c: True        # un-indexed entry: no homonym to contradict
+        num = row["whitney_num"]
         for sp in row["whitney_spellings"]:
-            for cand in by_root.get(sp, []):
-                wno = cand["whitney_no"]
-                if wno in overlay or not hom_ok(cand):
-                    continue
-                overlay[wno] = (row, "spelling-alt")
-                methods.append("spelling-alt")
+            cands = [c for c in by_root.get(sp, []) if c["whitney_no"] not in overlay]
+            if not cands:
+                continue
+            if num is not None:
+                pick = [c for c in cands if c["homonym"] in (num, None)]
+                if len(pick) != 1:
+                    continue               # divergent or ambiguous — abstain
+            elif len(cands) == 1:
+                pick = cands
+            else:
+                pick = [c for c in cands if c["homonym"] is None]
+                if len(pick) != 1:
+                    continue               # un-indexed, several homonyms — abstain
+            overlay[pick[0]["whitney_no"]] = (row, "spelling-alt")
+            methods.append("spelling-alt")
     return overlay, methods, unmatched
 
 
