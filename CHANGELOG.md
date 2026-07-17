@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.49.0] - 2026-07-17
+
+### Added
+- **Sangram ядро W2 — статья SG-MO-016 «Имперфект» — статья-кандидат (H1096, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/imperfect/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/imperfect): первый несущий границу слот ядра и **позитивный двойник пилота P3**. Где P3 показал склейку перфекта/аориста под Tense=Past (EM2, recall перфекта 3,3 %), имперфект — **единственный претерит, размеченный DCS отдельно** (Tense=Impf), потому измерим: **46 695 токенов** из 523 721 финитного. Нарративное прошедшее, скошенное к 3-му лицу сильнее целого: 3-е **94,1 %** [93,9–94,4], ед. 75,1 %, актив 96,9 %; частотнейшие корни — verba dicendi/бытия (brū abravīt #1, bhū, as āsīt, paś, kṛ). Несёт два предела: EM2 (сёстры-претериты склеены) + EM1 (презентный класс не в признаках, P2). 5 примеров с аугментом. Скрипт [`sg_mo_016_imperfect.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_016_imperfect.py); 3 валидатора + CI build green. Ядро W2: 13/19. Публикация гейтится авторской визой.
+
 ## [0.48.0] - 2026-07-17
 ### Added
 - **Секвенционная проверка имперфекта — заметка адъюдикации к HK-15 (H1053).** Предрегистрированный инструмент [imperfect_switching_stats.py](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py) (T2607-26 заморожена до замера) + отчет [IMPERFECT_SWITCHING_HK15_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md): кластеризация имперфекта повсеместна (runs-test p<0,001, все срезы; аорист кластеризуется сильнее всех — lift до 3,61), «переключение темы» в точке вкрапления значимо, но микроскопично в эпосе (+0,2 п.п., p=0,002) и содержательно лишь в ведийском (+1,5 п.п., p<0,001); классика — направление перевернуто. ЧАСТИЧНО ПОДТВЕРЖДЕНО; компаньон-формулировка к § 2 A65 в отчете. Fable 5 (`claude-fable-5`), по разрешению MG на Opus-ряд.
