@@ -1,0 +1,184 @@
+{
+  "article": "SG-SE-013",
+  "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+  "total_tokens": 5688416,
+  "deprel_nonnull": 223751,
+  "deprel_coverage_pct": 3.9335,
+  "nsubj_pass_rows": 0,
+  "passive_verbs": 36701,
+  "passive_subject_case_dist": {
+    "None": 1,
+    "Dat": 1,
+    "Gen": 3,
+    "Loc": 39,
+    "Nom": 563
+  },
+  "passive_subject_total": 607,
+  "passive_subject_nom": 563,
+  "karaka_case_crosstab": [
+    {
+      "karaka": "kartR (agent, active)",
+      "deprels": "nsubj,csubj",
+      "case_tagged_total": 20230,
+      "top_case": "Nom",
+      "top_case_n": 19795,
+      "top_case_pct": 97.85,
+      "full_dist": {
+        "Nom": 19795,
+        "Acc": 60,
+        "Ins": 12,
+        "Dat": 14,
+        "Abl": 2,
+        "Gen": 54,
+        "Loc": 272,
+        "Voc": 13,
+        "Cpd": 8
+      }
+    },
+    {
+      "karaka": "kartR-passive (agent)",
+      "deprels": "obl:agent",
+      "case_tagged_total": 408,
+      "top_case": "Ins",
+      "top_case_n": 252,
+      "top_case_pct": 61.76,
+      "full_dist": {
+        "Acc": 1,
+        "Ins": 252,
+        "Dat": 2,
+        "Abl": 2,
+        "Gen": 71,
+        "Loc": 1,
+        "Cpd": 79
+      }
+    },
+    {
+      "karaka": "karman (patient/object)",
+      "deprels": "obj",
+      "case_tagged_total": 16874,
+      "top_case": "Acc",
+      "top_case_n": 15269,
+      "top_case_pct": 90.49,
+      "full_dist": {
+        "Nom": 33,
+        "Acc": 15269,
+        "Ins": 10,
+        "Dat": 35,
+        "Abl": 5,
+        "Gen": 333,
+        "Loc": 9,
+        "Voc": 2,
+        "Cpd": 1178
+      }
+    },
+    {
+      "karaka": "karaNa (instrument)",
+      "deprels": "obl:instr",
+      "case_tagged_total": 2692,
+      "top_case": "Ins",
+      "top_case_n": 2569,
+      "top_case_pct": 95.43,
+      "full_dist": {
+        "Nom": 1,
+        "Acc": 3,
+        "Ins": 2569,
+        "Dat": 2,
+        "Abl": 3,
+        "Gen": 12,
+        "Loc": 9,
+        "Voc": 1,
+        "Cpd": 92
+      }
+    },
+    {
+      "karaka": "sampradAna-recipient",
+      "deprels": "iobj",
+      "case_tagged_total": 2771,
+      "top_case": "Dat",
+      "top_case_n": 1841,
+      "top_case_pct": 66.44,
+      "full_dist": {
+        "Nom": 1,
+        "Acc": 785,
+        "Ins": 9,
+        "Dat": 1841,
+        "Abl": 1,
+        "Gen": 86,
+        "Loc": 14,
+        "Cpd": 34
+      }
+    },
+    {
+      "karaka": "sampradAna-goal",
+      "deprels": "obl:goal",
+      "case_tagged_total": 2336,
+      "top_case": "Acc",
+      "top_case_n": 1495,
+      "top_case_pct": 64.0,
+      "full_dist": {
+        "Nom": 1,
+        "Acc": 1495,
+        "Ins": 2,
+        "Dat": 47,
+        "Abl": 23,
+        "Gen": 20,
+        "Loc": 681,
+        "Cpd": 67
+      }
+    },
+    {
+      "karaka": "sampradAna-benef",
+      "deprels": "obl:benef",
+      "case_tagged_total": 438,
+      "top_case": "Dat",
+      "top_case_n": 206,
+      "top_case_pct": 47.03,
+      "full_dist": {
+        "Acc": 17,
+        "Ins": 1,
+        "Dat": 206,
+        "Abl": 1,
+        "Gen": 188,
+        "Loc": 18,
+        "Voc": 1,
+        "Cpd": 6
+      }
+    },
+    {
+      "karaka": "apAdAna (source)",
+      "deprels": "obl:source",
+      "case_tagged_total": 981,
+      "top_case": "Abl",
+      "top_case_n": 841,
+      "top_case_pct": 85.73,
+      "full_dist": {
+        "Nom": 1,
+        "Acc": 5,
+        "Ins": 17,
+        "Dat": 13,
+        "Abl": 841,
+        "Gen": 48,
+        "Loc": 2,
+        "Cpd": 54
+      }
+    },
+    {
+      "karaka": "adhikaraNa (locus)",
+      "deprels": "obl:loc",
+      "case_tagged_total": 1720,
+      "top_case": "Loc",
+      "top_case_n": 1453,
+      "top_case_pct": 84.48,
+      "full_dist": {
+        "Acc": 107,
+        "Ins": 11,
+        "Dat": 2,
+        "Abl": 30,
+        "Gen": 51,
+        "Loc": 1453,
+        "Cpd": 66
+      }
+    }
+  ],
+  "notes": "Kāraka overlaid on UD deprel (no native kāraka tags). deprel partial (~3.93%). nsubj:pass=0: passive karman->Nom not natively separable on subject side; only predicate-side route (nsubj of a Pass verb) is visible = 607 subjects, Nom 563, vs 36701 passive verbs total."
+}
