@@ -31,6 +31,11 @@ changelog tags as `vX.Y.Z`.
   (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
   The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
 
+## [0.72.0] - 2026-07-18
+
+### Added
+- **Sangram SG-SE-003 «Инструменталис и датив» — статья-кандидат, девятая сверх открывающей квоты (H1216, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/instrumental-dative/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/instrumental-dative): подстатья кластера падежной семантики (обзор — SG-SE-001) с двумя **измеренными** функциональными находками. **ИНСТРУМЕНТАЛИС** (`Ins`) **277 143** — полифункционален: орудие (топ-существительные manasā «умом» 1863, śareṇa «стрелой» 1603, karmaṇā «действием» 1471), **агенс пассива** (инструменталис в клаузе с `Voice=Pass` — **21 472 = 7,7 %**, нижняя оценка, связь с SG-MO-027), совместность (deprel нативно делит `obl:instr` 2569 vs `obl:soc` 488). **ДАТИВ** (`Dat`) **65 423** — **самый редкий** падеж (2,1 %): функция адресата отошла к генитиву (`Gen` 270 763 ≫ `Dat` 65 423), но датив стойко живёт в **ритуальном адресате** — топ-существительные все получатели приношений: **agnaye «Агни» 1221, devāya 1065, indrāya 997, pitṛbhyaḥ «предкам» 445, brāhmaṇāya 388** — плюс личных местоимениях (mahyam/tubhyam). Оговорка: функция не нативна (агенс/орудие — вывод из пассива + частичного deprel, не полный тег; эндшпиль kāraka — SE-013). 5 примеров (brahmaṇā/mayā/prajayā + agnaye/mahyam). Скрипт [`sg_se_003_instrumental_dative.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_se_003_instrumental_dative.py); article_validate PASS (--all green) + toc_validate (93 статьи, 0 нарушений) + docusaurus build green. Уитни §§ 278–287; Пан. 1.4.42/1.4.32. Сверхквотовая линия (ядро 19/19 закрыто). Публикация гейтится авторской визой.
+
 ## [0.71.0] - 2026-07-18
 
 ### Added
