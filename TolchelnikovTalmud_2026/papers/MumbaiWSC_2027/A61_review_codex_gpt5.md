@@ -4,8 +4,8 @@
 **Reviewer:** Codex, GPT-5 (OpenAI; the exact serving revision is not exposed in
 the session metadata)  
 **Target:** *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)*  
-**Recommendation:** **HOLD — major revision remains necessary, but the paper is
-now structurally viable.**
+**Recommendation (updated after evidence pass):** **HOLD FOR REGISTRY AND HUMAN
+PERMISSIONS — the manuscript-level source and venue gate is applied.**
 
 ## Overall assessment
 
@@ -16,11 +16,11 @@ custody into files, private correction into public version history, and entries
 into stable addresses. The counterclaim is equally important: technical
 transferability has not deconcentrated maintenance labour.
 
-The paper should remain at readiness 3/5 until the unresolved historical and
-legal claims below are locked or softened. The quantitative core is now
-substantially better: repository populations are named, bots are excluded by a
-curated override, submitter labels are not presented as people, and OBS-T and
-OBS-Q are no longer collapsed into one contributor count.
+The paper remains below submission readiness until the csl-observatory registry
+is brought into line with the retained exact claims and the author clears the
+quotation/permission gates. The manuscript-level historical, legal, numerical,
+bibliographic, and venue edits are recorded in
+`A61_EVIDENCE_GATE_2026-07-18.md`.
 
 ## Major findings applied in this revision
 
@@ -45,54 +45,49 @@ OBS-Q are no longer collapsed into one contributor count.
    organised around institutional production, collaborative formalisation,
    custody, public versioning, and succession without deconcentration.
 8. **A data dump stood in for provenance.** A61 now names the versioned
-   `a61-history-v1.0` evidence release, its calendar alias, its per-source cutoffs,
+   `a61-history-v1.1` evidence release, its calendar alias, its per-source cutoffs,
    and its claim/contradiction registers.
 9. **A13 and A61 duplicated one another.** A61 is now the canonical synthesis;
    A13 is a complementary analysis of repository visibility and institutional
    transition, not a first-person memoir.
 
-## Unresolved major findings
+## Evidence-pass disposition
 
-### M10. Secondary numerical claims remain outside the frozen release
+### M10. Unsupported secondary precision removed
 
-Several exact figures in §§3–7 and §10 are not yet represented in the A61 claim
-registry: the circa-190 worker estimate; 700/4,000 correction examples; detailed
-tag/citation subtotals; dictionary-specific lemma, alignment, and character-count
-figures; archive-file inventories; and the 482,400 visitor figure. Before
-submission, either add each figure to the release with a local, hashed source and
-method, or replace it with a non-numerical formulation. Do not treat a GitHub URL
-alone as a frozen source.
+Unsupported or stale figures in §§3–7 and §10 have been softened or removed.
+Exact values survive only where the evidence audit reproduced them locally. The
+remaining machine-readable work is to add claim rows and source hashes for those
+retained values; see the csl-observatory additions listed in the evidence-gate
+note. A GitHub URL alone is not treated as a frozen source.
 
-### M11. The pre-Git historical chain needs primary locators
+### M11. Public locators added; private email remains pending
 
-The 1994 founding, the 2004 collaboration, the 2008 conventions, the 2013 DCH
-transfer, and the 2016/2018 format transitions form the causal spine. The current
-draft has attributed recollection and project documents, but not a locator for
-every link. Attach dated reports, correspondence metadata, archived pages, or
-institutional records. The two email-derived milestone slots in the snapshot are
-correctly marked `evidence_pending`; they must stay out of asserted chronology
-until the author supplies the historical mail.
+The 1994 origin, 2008 conventions, funded collaboration, and 2013 DCH transfer
+now carry public project or University of Cologne locators. The 2004 start of
+collaboration remains explicitly Funderburk's attributed account rather than an
+inference from unsupplied mail. The two email-derived milestone slots remain
+`evidence_pending` and outside the asserted chronology.
 
-### M12. Copyright and public-domain language is legally overconfident
+### M12. Legal conclusions narrowed to reported positions and chronology
 
-Section 3.3 reports an important historical dispute, but the statement about EU
-database protection must be presented as Malten's stated position, not the
-paper's legal conclusion. Any assertion that a particular edition is public
-domain needs jurisdiction and edition-specific legal verification. The present
-attribution is an improvement, but legal language should receive a separate
-source check.
+Section 3.3 now presents database protection only as Malten's stated position in
+correspondence, not the paper's legal conclusion. The Apte passage now reports
+project access chronology without asserting a jurisdiction-specific public-
+domain date.
 
 ## Minor findings
 
-- Complete the Jachertz and Macdonell bibliographic records or delete the claims
-  that depend on them.
+- Jachertz and Macdonell bibliographic records are complete at the evidence
+  presently available; specific Jachertz-derived claims still need page locators.
 - Replace bare URLs in the references with archived or versioned locators where
   possible.
 - The future-plans section is still broad. For a conference paper, retain only
   plans that test or follow from the succession thesis; move the rest to a
   project roadmap.
-- Confirm the Mumbai WSC call, word limit, citation style, anonymity rule, and AI
-  disclosure policy against the official call before camera-ready preparation.
+- The official Mumbai WSC page is attached: deadline 1 February 2027; headline
+  dates 10–14 December 2027; contradictory footer 10–15 December. No word limit,
+  citation style, anonymity rule, or AI-disclosure policy was located.
 - Keep testimony visibly attributed. Quotations and participant-role claims
   require author review even when the surrounding prose is rewritten.
 
@@ -113,13 +108,14 @@ source check.
 
 ## Acceptance gate for the next pass
 
-1. Every exact claim retained in A61 is in `claim_registry.csv`, with population,
-   cutoff, source, and status.
-2. M10 figures are frozen or softened.
-3. M11 milestones have primary locators or are explicitly attributed testimony.
-4. M12 language is verified or narrowed to reported historical positions.
-5. Jachertz and Macdonell records are complete.
-6. The venue's current official instructions are attached and satisfied.
-7. The manuscript builds cleanly and contains no stale four-implementer, 210-
-   contributor, 65-of-76, or 2014-founding formulation.
-
+1. **OPEN (csl lane):** add every retained exact claim to `claim_registry.csv`,
+   with population, cutoff, local source/hash, and status.
+2. **APPLIED:** M10 figures are frozen or softened.
+3. **APPLIED WITH EMAIL HOLD:** M11 milestones have public locators or are
+   explicitly attributed testimony; two email rows remain `evidence_pending`.
+4. **APPLIED:** M12 language is narrowed to reported historical positions and
+   access chronology.
+5. **APPLIED:** Jachertz and Macdonell records are complete at current evidence.
+6. **PARTIAL:** current official venue dates/deadline are attached; unpublished
+   format and policy rules cannot yet be claimed satisfied.
+7. **PENDING FINAL TEST RUN:** build, manuscript checks, and stale-claim scan.
