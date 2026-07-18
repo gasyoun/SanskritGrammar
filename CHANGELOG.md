@@ -19,6 +19,25 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **Adversarial re-derivation ledger for every published DCS-derived number (H1229, Fable 5 `claude-fable-5`).**
+  [`DCS_DERIVED_NUMBERS_LEDGER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DCS_DERIVED_NUMBERS_LEDGER_2026.md)
+  (+ metadoc): all **129** mechanically checkable numbers across the Sangram articles/manifests/W2-checkpoint
+  re-derived from the pinned DCS master by three committed scripts under
+  [`sangram/audit/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/audit) —
+  **97 exact blind matches + 29 exact after recovering each generation script's true predicate + 3 REFUTED, 0 left "plausible"**.
+  None of the five known instrument caveats (gaṇa-code, red-aorist, kṛt-surface, taddhita-segmentation,
+  compound-type) contaminated a published number. Generation scripts re-ran byte-identically on the
+  emitted a-stems / consonant-stems / declension-overview data.
+
+### Fixed
+- **Two REFUTED published numbers, conclusion-neutral, per the H1229 fix policy:**
+  word-structure-overview transparent root+affix share **16,8 % → 16,9 %** (truncation instead of
+  rounding of the true 16.857 %); preverbs `ut` cell **17 275 → 17 322** (value had been copied from
+  the exact-string column while every other cell is the leading-upasarga fold). The third REFUTED item —
+  krt-suffixes' «зеро лемм на -tṛ» (an SLP1-vs-IAST encoding artifact; 771 IAST `-tṛ` lemmas exist) —
+  is argument-affecting and ships as a separate draft PR for a human ruling.
+
 ## [0.80.0] - 2026-07-18
 
 ### Added
