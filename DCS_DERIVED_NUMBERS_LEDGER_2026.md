@@ -34,7 +34,7 @@ query presented as a corpus fact.
 |---|---|---|---|---|
 | 1 | [word-structure-overview](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/word-structure-overview/index.mdx) line 73 | «16,8 %» transparent root+affix share | **16,9 %** (true 16.857 %, truncated instead of rounded) | conclusion unchanged → fixed in place, this PR |
 | 2 | [preverbs](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/preverbs/index.mdx) lines 5 + 60 | `ut` 17 275 | **17 322** — the 17 275 is the exact-string column; every other cell of the table is the leading-upasarga fold | conclusion unchanged (ranking unaffected) → fixed in place, this PR |
-| 3 | [krt-suffixes](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-suffixes/index.mdx) lines 56–61 | «лемм с исходом -tṛ … в снапшоте **ноль**» | **771 IAST `-tṛ` lemmas exist**; the zero is an artifact of querying SLP1 `%tf` against IAST lemma strings [C3] | **argument-affecting** (the pilot's stated reason for excluding -tṛ is false) → draft PR, a human decides |
+| 3 | [krt-suffixes](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/krt-suffixes/index.mdx) lines 56–61 | «лемм с исходом -tṛ … в снапшоте **ноль**» | **771 IAST `-tṛ` lemmas exist**; the zero is an artifact of querying SLP1 `%tf` against IAST lemma strings [C3] | **argument-affecting** (the pilot's stated reason for excluding -tṛ is false) → shipped as draft [PR #414](https://github.com/gasyoun/SanskritGrammar/pull/414); **MG ruled merge 18-07-2026** — correction live, -tṛ pilot re-run stays queued |
 
 ## Method — three rounds, all scripts committed
 

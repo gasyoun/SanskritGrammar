@@ -46,5 +46,6 @@ referees of the Sangram-derived papers; the author when citing counts externally
 | Date | Change | Actor |
 |---|---|---|
 | 18-07-2026 | Created with the full 129-row ledger (97 exact + 29 definitional + 3 refuted) | Fable 5 (`claude-fable-5`), H1229 |
+| 18-07-2026 | REFUTED #3 (-tṛ) resolved: MG ruled merge of [PR #414](https://github.com/gasyoun/SanskritGrammar/pull/414); ledger cell updated | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
