@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.81.0] - 2026-07-18
+
 ### Added
 - **Adversarial re-derivation ledger for every published DCS-derived number (H1229, Fable 5 `claude-fable-5`).**
   [`DCS_DERIVED_NUMBERS_LEDGER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DCS_DERIVED_NUMBERS_LEDGER_2026.md)
