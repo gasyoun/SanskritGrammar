@@ -1,0 +1,79 @@
+{
+  "study": "Sangram SG-SE-002 (Номинатив и аккузатив) — two largest cases; native totals + deprel-subset function split",
+  "toc_ref": "SG-SE-002",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive; workflow-probed + adversarially verified",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "case_bearing_tokens": 4014688,
+    "deprel_parsed_tokens": 223751,
+    "deprel_parsed_pct": 3.93
+  },
+  "totals_native": {
+    "nom": 1419146,
+    "acc": 742293,
+    "cpd_pseudo_case": 841052,
+    "nom_pct_of_corpus": 24.95,
+    "acc_pct_of_corpus": 13.05,
+    "nom_pct_of_case_bearing": 35.35,
+    "acc_pct_of_case_bearing": 18.49,
+    "note": "Nom and Acc are the two largest of the eight vibhakti; feat_case='Cpd' (841052, compound-member placeholder, not a case) is LARGER than Acc and is excluded from the 'largest case' claim"
+  },
+  "nominative_function_deprel_subset": {
+    "nsubj_total": 20062,
+    "nsubj_nom": 19626,
+    "nsubj_pct_nom": 97.8,
+    "nsubj_by_case": {
+      "Nom": 19626,
+      "Loc": 266,
+      "null": 63,
+      "Gen": 43,
+      "Acc": 43,
+      "Dat": 10,
+      "Cpd": 5,
+      "Ins": 4,
+      "Abl": 2
+    },
+    "predicate_nominative": 1372,
+    "note": "subject↔Nom near-canonical on the parsed subset; non-Nom nsubj include Loc (the locative-absolute subject, SG-SE-005) and Gen"
+  },
+  "accusative_function_deprel_subset": {
+    "obj_total": 16933,
+    "obj_acc": 15269,
+    "obj_pct_acc": 90.2,
+    "beyond_object": {
+      "obl_goal_acc": 1495,
+      "obl_temp_acc": 269,
+      "obl_path_acc": 183,
+      "iobj_acc": 785
+    },
+    "note": "the accusative reaches beyond the direct object: goal of motion (obl:goal), duration/time (obl:temp), path (obl:path) — all natively tagged; obj is ~90% Acc (rest Cpd/Gen)"
+  },
+  "double_accusative_CORRECTED": {
+    "naive_any_Acc_pair": 2747,
+    "genuine_dvikarmaka_core_object": 872,
+    "two_true_obj": 36,
+    "note": "the classical double-OBJECT (dvikarmaka) is ~872 verb heads (>=2 Acc in core-object roles obj/iobj/xcomp/ccomp), NOT the naive 2747 (which mixes object + adverbial/directional/temporal/coordinated Acc). The adversarial verify caught this ~3x over-count; 36 heads have two true `obj` deps (e.g. yāc 'ask X for Y')."
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§267-281 (nominative, accusative uses; accusative of goal/duration; double accusative); Pāṇini 1.4.49 (karman), 1.4.51 (dvikarmaka), 2.3.2 (Acc)"
+  },
+  "validation_sample": {
+    "seed": 20260718,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "function_subset_only": "deprel covers only ~3.93%% of tokens; ALL function splits (nsubj/obj/obl/iobj/predicate-nom/double-acc) are on that subset and must not be generalised to the whole case",
+    "obj_not_acc": "'direct object' (obj) and 'accusative' (feat_case) are distinct layers: ~10%% of obj are Cpd/Gen, not Acc",
+    "double_acc_definition_sensitive": "the double accusative depends on the deprel filter; the genuine dvikarmaka is ~872, not the naive 2747",
+    "cpd_larger_than_acc": "feat_case='Cpd' (841052) outranks Acc; 'two largest cases' excludes the compound-member placeholder",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
