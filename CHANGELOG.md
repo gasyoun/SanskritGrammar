@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.82.0] - 2026-07-18
+
+### Added
+- **Sangram SG-WF-004 taddhita — PWG denominal-derivation pass (§ 3-quater), citation-backed; realises visa note TAD2-01 (H1254, Opus 4.8 `claude-opus-4-8[1m]`).** New extractor [`scripts/sg_wf_004_taddhita_pwg.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_004_taddhita_pwg.py) mines the **Petersburger Wörterbuch** ([`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt), read-only). PWG marks derivation in German prose with the base in SLP1 (`{#aMSaka#}¦ (von 1. {#aMSa#})` = aṃśaka ← aṃśa). The Cologne extractor keeps only ROOT bases (→ 11,492 kṛt, 34 denominal); this **inverts** that guard — keeps `von {#non-root base#}` where the headword reconstructs as base(+vṛddhi/+final-vowel-elision) + a known taddhita suffix. Result: **5,026 denominal taddhita derivations, 98.2 % citation-backed** (`<ls>`; author's PWG-authority claim now measured), joined to the pinned DCS snapshot = **2,373 attested types / 77,963 tokens**. Classes (types/attested/tokens): relational -ya/-ika/-Iya/-eya 2261/1222/46018, possessive -in/-vat/-mat 653/452/18545, dimin./collective -ka 819/525/9808, abstract -tva/-tā 894/161/2031, comparison 43/26/918, material -maya 230/11/456. **Headline:** because PWG states the base *explicitly as nominal* and roots are excluded, denominal **-in/-ya are structurally separated from their kṛt homonyms** — the thing § 3-ter (MW POS-only: 25 %/31 %) could not do; -ya spot-check 25/25 genuine. Honest framing: a **high-precision lower bound** (partial coverage, token sums pulled by a few frequent words), complementary to DCS-segmentation (§ 3) and MW `wsfx` (§ 3-bis). Dataset: [`data/pwg_taddhita_derivations.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_derivations.tsv) + [`data/pwg_taddhita_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_summary.json). article_validate `--all` PASS; deterministic. Manifest gets a `revision` entry; the published article gains § 3-quater.
+
 ## [0.81.0] - 2026-07-18
 
 ### Added
