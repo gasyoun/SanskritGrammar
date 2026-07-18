@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:past-tenses",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-006",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Время и вид: конкуренция прошедших (имперфект, перфект, аорист)",
+        "summary": "Статья SG-SE-006 (домен SE, кластер «Глагольная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Данные собраны+адверсариально проверены воркфлоу probe→verify (все 4 заявки CONFIRMED, числа до токена). Среди финитных глаголов с временем (523 721) настоящее господствует — Pres 353 215 (67,4 %); финитная прошедшая система это Past 102 055 (19,5 %) + Impf 46 695 (8,9 %) ≈ 149 тыс.; будущее Fut 21 556 (4,1 %); плюсквамперфект ничтожен (Plp 167, Pqp 33). ГЛАВНОЕ: три классических прошедших НЕ отображаются на feat_tense (значений «Aor»/«Perf» нет). ИМПЕРФЕКТ размечен чисто (feat_tense='Impf' 46 695; аугментное повествовательное прошедшее, топ abravīt/āsīt/abhavat). АОРИСТ вычленяется через feat_formation внутри Past (root/them/s/is/red/sa/sis = 12 054; ср. SG-MO-019). ПЕРФЕКТ — парадокс видимости: он КРУПНЕЙШЕЕ финитное прошедшее (бакет Past+None 85 955, 84 % Past, во главе с uvāca «сказал» 13 880, āha 6731, babhūva, cakāra, dadarśa, jagāma), НО корпусно ТЁМНОЕ: нативно размечен лишь ПЕРИФРАСТИЧЕСКИЙ перфект (feat_formation='peri' 4046); простой (удвоительный) перфект тега НЕ имеет и восстановим лишь исключением (Past ∧ formation NULL). Отдельно: veda «знает» — перфект в значении настоящего. Честный предел: Past+None не на 100 % перфект — ~8,7 тыс. модальный остаток (инъюнктив/субъюнктив/прекатив Jus 4067/Sub 1317/Opt 1065/Prec 577); полный аспектуальный разбор требует -ta-причастия (аналитическое прошедшее, SE-011). 5 примеров: тройка «сказал» uvāca (перфект)/abravīt (имперфект)/avocat (аорист) + cintayāmāsa (перифраст. перфект) + veda (перфект-настоящее). Уитни §§ 780–823 (перфект), 824–930 (употребление прош.); Апте 1885."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:past-tenses:1",
+        "text_slp1": "uvAca",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 3.22" },
+        "translations": { "ru": "сказал (vac, перфект)" },
+        "gloss_ru": "ПЕРФЕКТ (удвоительный; feat_tense=Past, feat_formation NULL): vac → uvāca «сказал». Квотативное «он сказал» — ядро повествовательного перфекта; uvāca 13 880 возглавляет бакет Past+None. Перфект нативно НЕ тегирован — вычленяется лишь исключением (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; upos=VERB, feat_verbform NULL, feat_tense=Past, feat_formation NULL, лемма vac", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:past-tenses:2",
+        "text_slp1": "abravIt",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 2.25" },
+        "translations": { "ru": "сказал (brū, имперфект)" },
+        "gloss_ru": "ИМПЕРФЕКТ (аугментный; feat_tense=Impf): brū → abravīt «сказал». То же значение, что uvāca (прим. 1), но чистая нативная разметка (Impf 46 695); аугментное повествовательное прошедшее, топ-форма abravīt 3338 (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; upos=VERB, feat_verbform NULL, feat_tense=Impf, лемма brū", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:past-tenses:3",
+        "text_slp1": "avocat",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aṣṭasāhasrikā", "ref": "ASāh 1" },
+        "translations": { "ru": "сказал (vac, аорист)" },
+        "gloss_ru": "АОРИСТ (тематический; feat_tense=Past, feat_formation='them'): vac → avocat «сказал». Третье «сказал» — аорист; вычленяется через feat_formation (аорист = 12 054, ср. SG-MO-019). Три прошедших дают одно значение тремя способами (§ 3, 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; upos=VERB, feat_verbform NULL, feat_tense=Past, feat_formation=them, лемма vac", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:past-tenses:4",
+        "text_slp1": "cintayAmAsa",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aṣṭasāhasrikā", "ref": "ASāh 3" },
+        "translations": { "ru": "подумал, размышлял (cint, перифрастический перфект)" },
+        "gloss_ru": "ПЕРИФРАСТИЧЕСКИЙ ПЕРФЕКТ (feat_tense=Past, feat_formation='peri'): cint → cintayāmāsa «подумал» (основа на -ām + перфект вспом. глагола). Единственный нативно размеченный перфект (peri 4046); типичен для производных/долгих корней (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; upos=VERB, feat_verbform NULL, feat_tense=Past, feat_formation=peri, лемма cintay", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:past-tenses:5",
+        "text_slp1": "veda",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.1" },
+        "translations": { "ru": "знает (vid, перфект в значении настоящего)" },
+        "gloss_ru": "ПЕРФЕКТ В ЗНАЧЕНИИ НАСТОЯЩЕГО (feat_tense=Past, feat_formation NULL): vid → veda «знает» (морфологически перфект, семантически презенс). Классический стативный перфект (veda, āha «говорит») — лежит в том же нетегированном бакете Past+None; иллюстрирует, что «Past» ≠ прошлое время (§ 4, 6).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; upos=VERB, feat_verbform NULL, feat_tense=Past, feat_formation NULL, лемма vid", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}
