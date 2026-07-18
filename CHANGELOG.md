@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.85.0] - 2026-07-18
+
+### Added
+- **Конвейер свидетельской сетки конкорданса — проверенный H1242-пайплайн закоммичен как инструмент (подготовка H1243, Fable 5 `claude-fable-5`).** [`scripts/concordance_witness_grid.py`](scripts/concordance_witness_grid.py) (`extract` → `batch` → `merge`; валидация покрытия ключей и словаря вердиктов, экранированные пайпы, поддержка уже влитых колонок) + [`scripts/concordance_witness_agent_prompt_RU.md`](scripts/concordance_witness_agent_prompt_RU.md) — контракт промпта агента-свидетеля, отработанный на 1744 вердиктах v2 (семантика AGREE/DISAGREE/SILENT, жёсткое правило чтения пассажа, форматы локусов, TSV-выход, пост-агентная верификация DISAGREE-клеток), с PDF-спецификой для Вакернагеля/Рену (постраничный Read, честный предел без OCR-слоя). Смоук-тест: `extract` даёт 436 утверждений из сетки v2; тестовый `merge` воспроизводит witness_b23 (305/14/117) колонкой в копии отчёта, ширины таблиц консистентны. Контекст: гейт [H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md) обновлён рулением MG 18-07-2026 — archive.org НИКОГДА; собственные сканы Wackernagel, *Altindische Grammatik* I–III и Renou, *Grammaire sanscrite* будут предоставлены ~25-07-2026; по появлении файлов проход v3 запускается этим конвейером механически.
+
 ## [0.84.0] - 2026-07-18
 
 ### Added
