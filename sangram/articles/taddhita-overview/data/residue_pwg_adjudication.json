@@ -1,0 +1,86 @@
+{
+  "study": "SG-WF-004 taddhita residue — enlarged -in/-ika/-ya adjudication via PWG immediate von-base (TAD2-04)",
+  "as_of": "2026-07-18",
+  "root_inventory": "WhitneyRoots/crosswalk/roots.csv (855 canonical dhātus) — NOT the contaminated etymology_stats/dhatu_roots.txt",
+  "method": "adjudicate the full MW-adjectival base-attested -in/-ika/-ya set against PWG's explicit 'von {#base#}' note: nominal base → taddhita, Whitney-root base → kṛt (immediate base, no ultimate-root contamination)",
+  "per_suffix": [
+    {
+      "suffix": "in",
+      "mw_base_attested_types": 345,
+      "pwg_adjudicated_types": 114,
+      "pwg_taddhita": 79,
+      "pwg_krt": 35,
+      "pwg_noted_precision": 0.693,
+      "pwg_noted_precision_ci95": [
+        0.603,
+        0.77
+      ],
+      "coverage": 0.33
+    },
+    {
+      "suffix": "ika",
+      "mw_base_attested_types": 162,
+      "pwg_adjudicated_types": 68,
+      "pwg_taddhita": 67,
+      "pwg_krt": 1,
+      "pwg_noted_precision": 0.985,
+      "pwg_noted_precision_ci95": [
+        0.921,
+        0.997
+      ],
+      "coverage": 0.42
+    },
+    {
+      "suffix": "ya",
+      "mw_base_attested_types": 843,
+      "pwg_adjudicated_types": 220,
+      "pwg_taddhita": 146,
+      "pwg_krt": 74,
+      "pwg_noted_precision": 0.664,
+      "pwg_noted_precision_ci95": [
+        0.599,
+        0.723
+      ],
+      "coverage": 0.261
+    }
+  ],
+  "hand_crosscheck": {
+    "hand_sample_size": 60,
+    "shared_with_pwg": 24,
+    "agreement": 21,
+    "disagreement": 3,
+    "agreement_rate": 0.875,
+    "disagreements": [
+      {
+        "lemma": "pragrahin",
+        "hand": "krt",
+        "pwg": "taddhita"
+      },
+      {
+        "lemma": "pravāhya",
+        "hand": "krt",
+        "pwg": "taddhita"
+      },
+      {
+        "lemma": "damya",
+        "hand": "krt",
+        "pwg": "taddhita"
+      }
+    ],
+    "hand_verdicts_on_pwg_silent_lemmas": {
+      "taddhita": 7,
+      "krt": 25,
+      "compound": 4
+    },
+    "hand_verdicts_on_pwg_noted_lemmas": {
+      "taddhita": 16,
+      "krt": 8
+    },
+    "coverage_bias_note": "PWG-silent lemmas skew kṛt while PWG-noted skew taddhita → PWG preferentially documents DENOMINAL derivations; the PWG-noted precision is a high-precision floor, NOT the full-set precision."
+  },
+  "interpretation": {
+    "ika": "confirmed clean at ~6× the hand N (hand 8/8 → PWG ~98%)",
+    "in_ya": "PWG-noted subset ~66-69% taddhita is BIASED (PWG under-documents deverbals); full-set precision stays ~25-31% per the hand sample — vindicated, not overturned",
+    "floor": "PWG independently confirms a large citation-backed taddhita floor per suffix"
+  }
+}
