@@ -1,0 +1,80 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:locative",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-005",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Локатив (и локатив абсолютный)",
+        "summary": "Статья SG-SE-005 (домен SE, кластер «Падежная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Подстатья кластера падежной семантики (обзор — SG-SE-001). Локатив (местный падеж, adhikaraṇa) — 243 215 токенов (ед. ч. 204 735 / мн. 35 656 / дв. 2824); базовые функции — место и время (время-vs-место НЕ нативно — только эвристика по лемме, m_wordsem числовой). Главная тема — ЛОКАТИВ АБСОЛЮТНЫЙ (sati saptamī): «имя-в-локативе + причастие-в-локативе», обстоятельство «когда/поскольку X произошло». Нативный морфологический отпечаток — feat_case=Loc И feat_verbform=Part: 20 973 токена (8,6 % локативов) = КАНДИДАТНОЕ множество (верхняя граница). Слот выбран воркфлоу-скаутом + адверсариальной проверкой; проверка подтвердила числа, но заострила: причастие в локативе ≠ локатив абсолютный (морфология не отделяет абсолютив от атрибутивного/аргументного причастия; абсолютив тегом нигде не помечен). Диагностика: 86,6 % ед. ч. (18 165 — одночленная предикация); 1091 презентно-пассивный абсолютив (feat_voice=Pass); топ-леммы gam 910/as 830/vac 662/kṛ 637/han 403/sthā 319/udi 237. deprel покрывает 557 (2,66 %): advcl:temp+advcl+advcl:cond=367 доминируют (абсолютив), acl 35 + obl 48 не-абсолютив (~15 %, экстраполяция → ~3 тыс.). Высокоточный пол: 367 advcl* + 246 пар «подлежащее(nsubj)+причастие-вершина» (согласование в числе). Пан-корпусно (МБх 3925, Сушрута 832, Рамаяна 825). Уитни §§303–305 (sati saptamī); Пан. 2.3.36–37."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:locative:1",
+        "layer": "scientific",
+        "text_slp1": "loke",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s238)" },
+        "translations": { "ru": "в мире (loka, Loc — место)" },
+        "gloss_ru": "ОБЫЧНЫЙ локатив места (adhikaraṇa): loka + -e → loke «в мире». Базовая функция локатива — «где». Разделение место-vs-время НЕ нативно (нет семантического тега), поэтому в статье не даётся числом (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, лемма loka", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:locative:2",
+        "layer": "scientific",
+        "text_slp1": "kAle",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s60)" },
+        "translations": { "ru": "в срок, вовремя (kāla, Loc — время)" },
+        "gloss_ru": "ОБЫЧНЫЙ локатив времени: kāla + -e → kāle «в (нужное) время». Вторая базовая функция — «когда». Тот же падеж, что и место — DCS не различает роли; различие — традиционный анализ.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, лемма kāla", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:locative:3",
+        "layer": "scientific",
+        "text_slp1": "gate",
+        "locus": { "corpus": "dcs", "work": "Abhinavacintāmaṇi", "ref": "ACint 1 (s68)" },
+        "translations": { "ru": "когда [X] ушёл (gam, Loc Part — локатив абсолютный)" },
+        "gloss_ru": "ЛОКАТИВ АБСОЛЮТНЫЙ (голый): gam «идти» → gate — причастие прошедшего в локативе, эталонный тип «gate rāme» «когда Рама ушёл». Самая частотная лемма кандидатного множества (gam 910). Морфологический отпечаток абсолютива (feat_case=Loc + feat_verbform=Part, § 4) — но сам оборот тегом не помечен, это кандидат.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, feat_verbform=Part, лемма gam", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:locative:4",
+        "layer": "scientific",
+        "text_slp1": "udite",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 4.19 (s4)" },
+        "translations": { "ru": "когда взошло (udi, Loc Part — временной абсолютив)" },
+        "gloss_ru": "ЛОКАТИВ АБСОЛЮТНЫЙ временной: udi «восходить» → udite, классический оборот «udite sūrye» «когда солнце взошло» (маркёр времени начала обряда/дня). Прошедшее причастие в локативе.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, feat_verbform=Part, лемма udi", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:locative:5",
+        "layer": "scientific",
+        "text_slp1": "maTyamAne",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 3 (s7)" },
+        "translations": { "ru": "пока [огонь] добывается трением (math, Loc Part Pass — пассивный абсолютив)" },
+        "gloss_ru": "ЛОКАТИВ АБСОЛЮТНЫЙ пассивный: math «пахтать/добывать трением» → mathyamāne (наст. пассив причастие -yamāna в локативе), оборот «agnau mathyamāne» «пока огонь добывается трением». Нативно feat_voice=Pass — один из 1091 презентно-пассивных абсолютивов (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, feat_verbform=Part, feat_voice=Pass, лемма math", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:locative:6",
+        "layer": "scientific",
+        "text_slp1": "sTite",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 5.1.1" },
+        "translations": { "ru": "когда [X] установился/стоял (sthā, Loc Part — нативно помеченный абсолютив)" },
+        "gloss_ru": "ЛОКАТИВ АБСОЛЮТНЫЙ, НАТИВНО ПОДТВЕРЖДЁННЫЙ: sthā «стоять» → sthite, размечен deprel=advcl:temp — DCS сам пометил оборот как временную адвербиальную клаузу. Из тех 367 (2,66 % кандидатов), где синтаксический слой подтверждает абсолютив — высокоточный пол (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, feat_verbform=Part, deprel=advcl:temp, лемма sthā", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}

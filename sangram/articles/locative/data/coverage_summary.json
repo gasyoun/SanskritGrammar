@@ -1,0 +1,94 @@
+{
+  "study": "Sangram SG-SE-005 (Локатив) — locative + the locative absolute (native candidate + adjudicated floor)",
+  "toc_ref": "SG-SE-005",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive with adversarially-checked honesty framing",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "locative_total": 243215,
+    "locative_by_number": {
+      "Sing": 204735,
+      "Plur": 35656,
+      "Dual": 2824
+    }
+  },
+  "locative_absolute_candidate": {
+    "loc_participle_candidate": 20973,
+    "pct_of_locative": 8.6,
+    "by_number": {
+      "Sing": 18165,
+      "Plur": 2737,
+      "Dual": 71
+    },
+    "singular_pct": 86.6,
+    "voice_passive": 1091,
+    "top_lemmas": [
+      "gam (910)",
+      "as (830)",
+      "vac (662)",
+      "kṛ (637)",
+      "han (403)",
+      "jṛ (360)",
+      "prāp (335)",
+      "sthā (319)",
+      "jan (273)",
+      "vṛt (251)",
+      "udi (237)",
+      "bhū (202)"
+    ],
+    "distinct_sentences": 18515,
+    "by_text_top": [
+      "Mahābhārata (3925)",
+      "Suśrutasaṃhitā (832)",
+      "Rāmāyaṇa (825)",
+      "Bhāratamañjarī (822)",
+      "Aṣṭāṅgahṛdayasaṃhitā (724)",
+      "Kathāsaritsāgara (611)"
+    ],
+    "candidate_note": "20,973 is the CANDIDATE / morphological upper bound (every Loc participle); it also contains attributive and substantival Loc participles — the absolute is NOT natively flagged"
+  },
+  "adjudication_on_parsed_subset": {
+    "any_deprel": 557,
+    "pct_parsed": 2.66,
+    "adverbial_absolute_consistent_advcl": 367,
+    "deprel_breakdown": {
+      "advcl:temp": 184,
+      "advcl": 133,
+      "advcl:cond": 50,
+      "orphan": 45,
+      "conj": 45,
+      "acl": 35,
+      "obl:loc": 18,
+      "obl:goal": 18,
+      "obl": 12,
+      "root": 7,
+      "nsubj": 5,
+      "flat": 5
+    },
+    "attributive_acl": 35,
+    "oblique_obl": 48,
+    "structural_subject_participle_pairs": 246,
+    "note": "of the ~557 Loc participles carrying a deprel, advcl:temp/advcl/advcl:cond dominate (adverbial clause = the absolute); acl (attributive) + obl (argument) are the non-absolute residue. Extrapolating the ~65%/~17% split, roughly 14-17% of the 20,973 candidates are likely non-absolute. High-precision FLOOR = 367 advcl*-tagged + 246 subject-participle pairs."
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§303-305 (locative uses), §§303b (locative absolute / sati saptamī); Pāṇini 2.3.36-37 (adhikaraṇa) + 2.3.37 (bhāve / sati saptamī)"
+  },
+  "validation_sample": {
+    "seed": 20260718,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "candidate_not_construction": "loc participle (morphology) != locative absolute (construction); 20,973 is an upper bound",
+    "deprel_partial": "the dependency layer covers only ~2.76%% of the candidates (and 74/270 texts); the absolute/attributive/argument split is native only on that subset",
+    "tense_sparse": "feat_tense is None on 16,467/20,973 participles, so past-vs-present absolute cannot be totalled from feat_tense",
+    "time_vs_place_not_native": "the locative's time-vs-place split is NOT a native field (m_wordsem is a numeric sense id); any such figure is an inferred lemma heuristic",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
