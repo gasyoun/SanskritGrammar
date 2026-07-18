@@ -31,6 +31,11 @@ changelog tags as `vX.Y.Z`.
   (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
   The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
 
+## [0.74.0] - 2026-07-18
+
+### Added
+- **Sangram SG-SE-002 «Номинатив и аккузатив» — статья-кандидат, одиннадцатая сверх открывающей квоты; данные собраны + адверсариально проверены воркфлоу probe→verify (H1220, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/nominative-accusative/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/nominative-accusative): два крупнейших падежа — **номинатив 1 419 146** (35,3 % падежных, 24,95 % корпуса) + **аккузатив 742 293** (18,5 % / 13,05 %), нативно (`feat_case`). Внимание: `feat_case='Cpd'` (841 052, член композита, не падеж) больше Acc — «два крупнейших **падежа**» при исключении Cpd. Функц. разрез — на синтаксическом подмножестве (`deprel`, лишь **3,93 %**): подлежащее↔номинатив почти канонично (**nsubj 97,8 % Nom**; не-Nom подлежащие: 266 Loc = подлежащие локатива абсолютного SG-SE-005, 43 Gen); прямой объект↔аккузатив (**obj 90,2 % Acc**, прочее Cpd/Gen — «объект» ≠ «аккузатив»); аккузатив **за пределами объекта** нативно помечен — цель движения `obl:goal` 1495, длительность `obl:temp` 269, путь `obl:path` 183, косв. объект `iobj` 785. **Двойной аккузатив исправлен:** адверсариальная проверка выявила, что наивные **2747** («глагол с ≥2 Acc») смешивают объект+наречный/направительный/сочинённый Acc; подлинный дви-карман (ядерно-объектные роли) — **~872** (36 с двумя настоящими `obj`; тип yāc «просить X о Y»), переоценка ~втрое. Предикативный номинатив 1372 (dhanyo 'smi). 6 примеров (rājā/dhanyaḥ + vacanam/puram/saṃvatsaram/bheṣajam). Скрипт [`sg_se_002_nom_acc.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_se_002_nom_acc.py); article_validate PASS (--all green) + toc_validate (93 статьи, 0 нарушений) + docusaurus build green. Уитни §§ 267–281; Пан. 1.4.49/1.4.51. Сверхквотовая линия (ядро 19/19 закрыто). Публикация гейтится авторской визой.
+
 ## [0.73.0] - 2026-07-18
 
 ### Added
