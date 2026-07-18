@@ -1,0 +1,112 @@
+{
+  "study": "PWG → Aṣṭādhyāyī (Pāṇini sūtra) crosswalk",
+  "as_of": "2026-07-18",
+  "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
+  "total_sutra_refs": 47312,
+  "full_abc_refs": 39931,
+  "pada_only_refs": 7381,
+  "distinct_words": 22038,
+  "distinct_sutras": 14417,
+  "top_cited_sutras": [
+    {
+      "sutra": "P.4.2.80",
+      "n_words": 480
+    },
+    {
+      "sutra": "P.2.4.31",
+      "n_words": 227
+    },
+    {
+      "sutra": "P.4.1.105",
+      "n_words": 160
+    },
+    {
+      "sutra": "P.4.1.41",
+      "n_words": 147
+    },
+    {
+      "sutra": "P.4.1.112",
+      "n_words": 141
+    },
+    {
+      "sutra": "P.7.2.10",
+      "n_words": 138
+    },
+    {
+      "sutra": "P.4.1.123",
+      "n_words": 125
+    },
+    {
+      "sutra": "P.1.1.37",
+      "n_words": 120
+    },
+    {
+      "sutra": "P.4.1",
+      "n_words": 118
+    },
+    {
+      "sutra": "P.4.1.110",
+      "n_words": 108
+    },
+    {
+      "sutra": "P.4.1.99",
+      "n_words": 106
+    },
+    {
+      "sutra": "P.5.2.36",
+      "n_words": 94
+    },
+    {
+      "sutra": "P.4.1.96",
+      "n_words": 92
+    },
+    {
+      "sutra": "P.3.1.134",
+      "n_words": 83
+    },
+    {
+      "sutra": "P.3.1.27",
+      "n_words": 83
+    },
+    {
+      "sutra": "P.5.1.124",
+      "n_words": 82
+    },
+    {
+      "sutra": "P.1.4.57",
+      "n_words": 80
+    },
+    {
+      "sutra": "P.4.1.104",
+      "n_words": 80
+    },
+    {
+      "sutra": "P.4.2.60",
+      "n_words": 76
+    },
+    {
+      "sutra": "P.5.1.123",
+      "n_words": 73
+    },
+    {
+      "sutra": "P.4.2.127",
+      "n_words": 67
+    },
+    {
+      "sutra": "P.4.2.138",
+      "n_words": 63
+    },
+    {
+      "sutra": "P.4.1.151",
+      "n_words": 63
+    },
+    {
+      "sutra": "P.5.2.97",
+      "n_words": 63
+    },
+    {
+      "sutra": "P.4.2.90",
+      "n_words": 60
+    }
+  ]
+}
