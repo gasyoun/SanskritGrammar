@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- **HK-39 `mg_footnote` re-labeled from Ātmanepada-specific to whole-mood (H1253, Sonnet 5
+  `claude-sonnet-5`; review sheet `sanskritgrammar-precative-label-dcs2026-visa_17.07.26`,
+  policy B).** DCS-2026 doesn't tag pada, so the 577-token precative-mood figure cannot
+  isolate the medium/Ātmanepada subset (DCS-2021's separate medium-only code was 221). The
+  footnote now labels 577 as the whole mood and states it upper-bounds the Ātmanepada
+  subset; the book's own medium-specific thesis (`claim_ru`) is untouched. Verdict unchanged.
 
 ## [0.12.0] - 2026-07-17
 ### Changed

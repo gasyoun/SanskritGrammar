@@ -19,10 +19,39 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
-## [0.82.0] - 2026-07-18
+## [0.84.0] - 2026-07-18
+
+### Added
+- **Sangram SG-WF-004 taddhita — PWG denominal-derivation pass (§ 3-quater), citation-backed; realises visa note TAD2-01 (H1254, Opus 4.8 `claude-opus-4-8[1m]`).** New extractor [`scripts/sg_wf_004_taddhita_pwg.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_004_taddhita_pwg.py) mines the **Petersburger Wörterbuch** ([`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/pwg/pwg.txt), read-only). PWG marks derivation in German prose with the base in SLP1 (`{#aMSaka#}¦ (von 1. {#aMSa#})` = aṃśaka ← aṃśa). The Cologne extractor keeps only ROOT bases (→ 11,492 kṛt, 34 denominal); this **inverts** that guard — keeps `von {#non-root base#}` where the headword reconstructs as base(+vṛddhi/+final-vowel-elision) + a known taddhita suffix. Result: **5,026 denominal taddhita derivations, 98.2 % citation-backed** (`<ls>`; author's PWG-authority claim now measured), joined to the pinned DCS snapshot = **2,373 attested types / 77,963 tokens**. Classes (types/attested/tokens): relational -ya/-ika/-Iya/-eya 2261/1222/46018, possessive -in/-vat/-mat 653/452/18545, dimin./collective -ka 819/525/9808, abstract -tva/-tā 894/161/2031, comparison 43/26/918, material -maya 230/11/456. **Headline:** because PWG states the base *explicitly as nominal* and roots are excluded, denominal **-in/-ya are structurally separated from their kṛt homonyms** — the thing § 3-ter (MW POS-only: 25 %/31 %) could not do; -ya spot-check 25/25 genuine. Honest framing: a **high-precision lower bound** (partial coverage, token sums pulled by a few frequent words), complementary to DCS-segmentation (§ 3) and MW `wsfx` (§ 3-bis). Dataset: [`data/pwg_taddhita_derivations.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_derivations.tsv) + [`data/pwg_taddhita_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_summary.json). article_validate `--all` PASS; deterministic. Manifest gets a `revision` entry; the published article gains § 3-quater. _(0.82.0/0.83.0 were taken by concurrent sessions in the 18-07-2026 release race; tagged by this 0.84.0 cut.)_
 
 ### Changed
 - **Конкорданс v2: полная сетка четырёх свидетелей над всеми утверждениями (H1242, Fable 5 `claude-fable-5` — головной сеанс + 25 агентов той же модели).** [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок): к каждой из **436** строк (432 v1 + 4 новые строки [voice/SG-SE-009](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/voice/index.mdx) со свежим Уитни-проходом; итог v2: **367 AGREE · 43 DISAGREE · 26 WHITNEY-SILENT**) добавлены вердикты AGREE/DISAGREE/SILENT + локус четырёх оцифрованных источников: **Б-1923** (Бюлер: 305/14/117), **З-1975** (морфонологическая статья, только глагольные корни: 44/6/386), **З-1978** (очерк при словаре Кочергиной — внутришкольная сверка, оговорено: 373/11/52), **К-2004** (конспект: 242/12/182) — 1744 вердикта, каждый после чтения пассажа; все 43 свидетельские DISAGREE-клетки перечитаны головным сеансом. Новые §§ 6–7 отчёта: **30 свидетельских расхождений** (11 — школа опровергает Уитни-DISAGREE строки сама: veda-перфект, -iṣya-правило, kurvantī, ген.абс.; 19 — конфликты на строках, где Уитни поддерживал/молчал: HK-37 интенсивы, HK-47 анусвара — по 2–3 свидетеля) и **триангуляция фикс-очереди**: 27 строк «школа за утверждение против Уитни» (полная сетка 4/4: HK-95, HK-105, HK-108) + 6 смешанных + 5 «школа против» + 5 молчания; мисатрибуция «(Уитни)» бинарного деления аористов (aorist-types:61) получила реальный источник — деление Бюлера (уроки XLV–XLVI) и З-1978 (§ 139). Правило «всегда верить Витни» не тронуто: свидетели документируют позицию школьной линии Бюлер→Зализняк→Кочергина, колонка Уитни не менялась. Сырые вердикт-файлы: [`data/whitney_concordance_witness_verdicts_2026/`](data/whitney_concordance_witness_verdicts_2026/) (4 TSV × 436 строк). Вакернагель/Рену отложены до PDF ([H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md)); SG-SE-006+ — вход следующего прохода.
+
+## [0.83.0] - 2026-07-18
+
+### Added
+
+- `docs/PLAN_SANGRAM_EDITORIAL_NOTES_AND_CHARTER_2026H2.md` (+ `.meta.md`),
+  `docs/ROADMAP_SANSKRITGRAMMAR_2026H2.md` (+ `.meta.md`),
+  `docs/ARCHITECTURE_SANGRAM_EDITORIAL_NOTE_PIPELINE.md`,
+  `docs/IMPLEMENTATION_SANGRAM_EDITORIAL_NOTES.md`,
+  `docs/VERIFICATION_SANGRAM_EDITORIAL_NOTES.md` — the layered plan set for applying the author's
+  own visa notes, from the `/ask-batch` 2026-07 slice-2 pass. Handoffs H1273–H1277, 🟡 queued.
+
+### Changed
+
+- Recorded the measured state of the editorial-note backlog: the 13 voted `decisions.json` sheets
+  hold **120 items — 114 approve / 3 reject / 3 undecided**, of which 81 are applicable notes,
+  **21 already applied** (18 at visa time, 3 by [PR #416](https://github.com/gasyoun/SanskritGrammar/pull/416))
+  and **60 open**. An earlier reading of "87 unapplied notes" would have re-applied work already done.
+- Recorded that `review/` was gitignored under H856 while holding every author visa cast since
+  15-07-2026, and that **4 of 13 sheets have already lost their `_review.html`** — the loss this
+  reverses is partly historical, not hypothetical.
+
+## [0.82.0] - 2026-07-18
+
+### Fixed
+- **krt-suffixes § 3.1: the -tṛ zero-claim corrected — MG ruled merge 18-07-2026 (H1229 REFUTED `WF003-2`, Fable 5 `claude-fable-5`).** The published «лемм на -tṛ … ноль» was an SLP1-vs-IAST encoding artifact (query ran on SLP1 `%tf` against IAST lemmas): the snapshot has **771 IAST `-tṛ` NOUN/ADJ lemmas (31 042 tokens)**. § 3.1 now states the encoding error, the real numbers, and marks the -tṛ candidate pass as queued; the pilot's historical scope (-ana/-ti/-in) stands. [PR #414](https://github.com/gasyoun/SanskritGrammar/pull/414); ledger row updated.
 
 ## [0.81.0] - 2026-07-18
 
