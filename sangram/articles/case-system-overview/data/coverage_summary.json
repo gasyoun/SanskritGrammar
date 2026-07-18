@@ -1,0 +1,118 @@
+{
+  "study": "Sangram SG-SE-001 (Система падежных значений: обзор) — case system, native",
+  "toc_ref": "SG-SE-001",
+  "kind": "beyond-quota core ① (opening set already 19/19); cluster-representative overview; native positive (feat_case)",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "all_case_marked": 4014688
+  },
+  "case_system_native": {
+    "eight_vibhakti": [
+      {
+        "case": "Nom",
+        "function_ru": "именительный (kartṛ / подлежащее)",
+        "tokens": 1419146,
+        "by_number": {
+          "Sing": 1125230,
+          "Plur": 260873,
+          "Dual": 33043
+        }
+      },
+      {
+        "case": "Acc",
+        "function_ru": "винительный (karman / прямой объект, цель)",
+        "tokens": 742293,
+        "by_number": {
+          "Sing": 600942,
+          "Plur": 125528,
+          "Dual": 15823
+        }
+      },
+      {
+        "case": "Ins",
+        "function_ru": "творительный (karaṇa / орудие, агент пассива, совместность)",
+        "tokens": 277143,
+        "by_number": {
+          "Sing": 173384,
+          "Plur": 97909,
+          "Dual": 5850
+        }
+      },
+      {
+        "case": "Dat",
+        "function_ru": "дательный (sampradāna / адресат, цель)",
+        "tokens": 65423,
+        "by_number": {
+          "Sing": 53687,
+          "Plur": 10732,
+          "Dual": 1004
+        }
+      },
+      {
+        "case": "Abl",
+        "function_ru": "отложительный (apādāna / источник, сравнение, причина)",
+        "tokens": 74565,
+        "by_number": {
+          "Sing": 68828,
+          "Plur": 5168,
+          "Dual": 569
+        }
+      },
+      {
+        "case": "Gen",
+        "function_ru": "родительный (относит. / принадлежность)",
+        "tokens": 270763,
+        "by_number": {
+          "Sing": 180783,
+          "Plur": 81284,
+          "Dual": 8696
+        }
+      },
+      {
+        "case": "Loc",
+        "function_ru": "местный (adhikaraṇa / место, время, локатив абсолютный)",
+        "tokens": 243215,
+        "by_number": {
+          "Sing": 204735,
+          "Plur": 35656,
+          "Dual": 2824
+        }
+      },
+      {
+        "case": "Voc",
+        "function_ru": "звательный (обращение)",
+        "tokens": 81088,
+        "by_number": {
+          "Sing": 73627,
+          "Plur": 5623,
+          "Dual": 1838
+        }
+      }
+    ],
+    "real_case_total": 3173636,
+    "compound_pseudo_case_Cpd": 841052,
+    "cpd_note": "feat_case='Cpd' (841,052) marks a COMPOUND-INTERNAL member — no overt case ending, NOT one of the eight vibhakti; excluded from the case-function counts",
+    "note": "case is native on every nominal (feat_case); this overview counts the morphological vibhakti — the kāraka mapping (agent/patient ↔ case) is SE-013's endgame, not re-derived here"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§267-305 (case uses); Pāṇini 2.3 (vibhakti) + 1.4.23-55 (kāraka)"
+  },
+  "validation_sample": {
+    "seed": 20260718,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "cpd_pseudo_case": "Cpd is not a real case (compound member); the eight vibhakti exclude it",
+    "case_not_function": "feat_case is the morphological vibhakti; the FUNCTION (kāraka role, adverbial use) is the traditional layer + SE-013, not a native tag — one case covers many functions",
+    "syncretism": "some endings are syncretic (a-stem Abl=Gen sg -asya vs -āt distinct, but Nom/Acc du/pl overlap); counts are by DCS analysis, not by surface",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

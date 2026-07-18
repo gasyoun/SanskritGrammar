@@ -1,0 +1,100 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:case-system-overview",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-001",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Система падежных значений: обзор",
+        "summary": "Обзорная статья SG-SE-001 (домен SE, кластер «Падежная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто) — представитель кластера. Падеж размечен НАТИВНО на каждом имени через feat_case, вся система прямо счётна: восемь вибхакти — Nom 1 419 146 (44,7 %), Acc 742 293 (23,4 %), Ins 277 143, Gen 270 763, Loc 243 215, Voc 81 088, Abl 74 565, Dat 65 423, всего 3 173 636. Плюс псевдопадеж Cpd 841 052 = члены композита (без явного окончания, НЕ одна из восьми вибхакти), исключён — оговорка честности. Nom+Acc = 68 % (ядро «кто→что»); датив самый редкий (2,1 %) — функция адресата в классическом языке во многом отошла к генитиву (devasya «богу»). Обзор даёт нативный частотный костяк + традиционные функции (каждый падеж несёт пучок функций; Ins = орудие/агент пассива/совместность; Loc = место/время/локатив абсолютный; Уитни §§267–305) + карту подстатей (SE-002 Nom/Acc, SE-003 Ins/Dat, SE-004 Abl/Gen, SE-005 Loc, SE-013 kāraka vs падеж, SE-015 каузатив). Падеж = морфологическая вибхакти; отображение падеж↔kāraka (агенс/пациенс) — эндшпиль SE-013, здесь не выводится. Пример: deva во всех восьми падежах ед. ч. (окончания -aḥ/-am/-ena/-āya/-āt/-asya/-e/-Ø)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:case-system-overview:1",
+        "layer": "scientific",
+        "text_slp1": "devaH",
+        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s245)" },
+        "translations": { "ru": "бог (Nom, подлежащее)" },
+        "gloss_ru": "ИМЕНИТЕЛЬНЫЙ (Nom): deva + -aḥ → devaḥ. Функция — подлежащее (kartṛ). Самый частотный падеж (1 419 146 = 44,7 % всех падежных форм): язык номинативно-повествователен.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Nom, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:2",
+        "layer": "scientific",
+        "text_slp1": "devam",
+        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 1 (s11)" },
+        "translations": { "ru": "бога (Acc, прямой объект)" },
+        "gloss_ru": "ВИНИТЕЛЬНЫЙ (Acc): deva + -am → devam. Функция — прямой объект (karman), цель движения, длительность. Второй по частоте (742 293 = 23,4 %); вместе с Nom — 68 % падежей.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:3",
+        "layer": "scientific",
+        "text_slp1": "devena",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 7.20" },
+        "translations": { "ru": "богом (Ins, орудие / агент пассива)" },
+        "gloss_ru": "ТВОРИТЕЛЬНЫЙ (Ins): deva + -ena → devena. Пучок функций (karaṇa): орудие, агент пассива (devena hataḥ «убит богом»), совместность, образ действия, причина. 277 143 токена.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:4",
+        "layer": "scientific",
+        "text_slp1": "devAya",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.1" },
+        "translations": { "ru": "богу, для бога (Dat, адресат/цель)" },
+        "gloss_ru": "ДАТЕЛЬНЫЙ (Dat): deva + -āya → devāya. Функция — адресат (sampradāna), цель. Самый редкий падеж (65 423 = 2,1 %): его роль адресата в классическом языке во многом отошла к генитиву (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Dat, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:5",
+        "layer": "scientific",
+        "text_slp1": "devAt",
+        "locus": { "corpus": "dcs", "work": "Aṣṭādhyāyī", "ref": "Aṣṭādhyāyī 4.4" },
+        "translations": { "ru": "от бога, из-за бога (Abl, источник/сравнение)" },
+        "gloss_ru": "ОТЛОЖИТЕЛЬНЫЙ (Abl): deva + -āt → devāt. Функции (apādāna): исходная точка, сравнение (devāt «чем бог»), причина. 74 565 токенов. Locus — грамматика Пāṇини, где -āt диагностирует аблатив.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Abl, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:6",
+        "layer": "scientific",
+        "text_slp1": "devasya",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 2.7 (s1)" },
+        "translations": { "ru": "бога, у бога (Gen, принадлежность)" },
+        "gloss_ru": "РОДИТЕЛЬНЫЙ (Gen): deva + -asya → devasya. Функция — принадлежность, отношение, часть-целое; всё чаще берёт на себя роль адресата (вытесняя датив, § 3). 270 763 токена.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Gen, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:7",
+        "layer": "scientific",
+        "text_slp1": "deve",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Śaunaka)", "ref": "AVŚ 8.4 (s18)" },
+        "translations": { "ru": "в боге, при боге (Loc, место/время)" },
+        "gloss_ru": "МЕСТНЫЙ (Loc): deva + -e → deve. Функции (adhikaraṇa): место, время и локатив абсолютный (gate deve «когда бог ушёл»). 243 215 токенов.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:case-system-overview:8",
+        "layer": "scientific",
+        "text_slp1": "deva",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.5.3 (s1)" },
+        "translations": { "ru": "о бог! (Voc, обращение)" },
+        "gloss_ru": "ЗВАТЕЛЬНЫЙ (Voc): deva + -Ø → deva (нулевое окончание у a-основ ед. ч.). Функция — обращение; строго говоря не падеж, а форма адресации (Уитни). 81 088 токенов.",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Voc, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}
