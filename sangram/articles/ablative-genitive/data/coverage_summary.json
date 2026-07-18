@@ -1,0 +1,156 @@
+{
+  "study": "Sangram SG-SE-004 (Аблатив и генитив) — cases + the genitive absolute vs the locative absolute",
+  "toc_ref": "SG-SE-004",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive; workflow probe+verify",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "case_bearing_tokens": 4014688
+  },
+  "ablative": {
+    "total": 74565,
+    "pct_of_case_bearing": 1.86,
+    "by_number": {
+      "Sing": 68828,
+      "Plur": 5168,
+      "Dual": 569
+    },
+    "by_upos": {
+      "NOUN": 61862,
+      "PRON": 7264,
+      "ADJ": 3866,
+      "VERB": 1265,
+      "NUM": 298,
+      "ADP": 6,
+      "PART": 4
+    },
+    "top_noun_lemmas": [
+      "tva (3429)",
+      "bhaya (747)",
+      "kṣaṇa (637)",
+      "yoga (620)",
+      "prasāda (561)",
+      "bala (556)",
+      "hetu (458)",
+      "loka (454)",
+      "darśana (452)",
+      "vacana (435)"
+    ],
+    "note": "source/comparison/cause; 92% singular. NB the top 'lemma' tva is the segmentation-layer -tva suffix token (H1178), not a lexical ablative; true ablative nouns include bhaya 'fear', hetu 'cause', kāla"
+  },
+  "genitive": {
+    "total": 270763,
+    "pct_of_case_bearing": 6.74,
+    "by_number": {
+      "Sing": 180783,
+      "Plur": 81284,
+      "Dual": 8696
+    },
+    "by_upos": {
+      "NOUN": 138883,
+      "PRON": 88955,
+      "ADJ": 23976,
+      "VERB": 16942,
+      "NUM": 1991,
+      "PART": 12,
+      "ADP": 3,
+      "INTJ": 1
+    },
+    "top_noun_lemmas": [
+      "deva (3176)",
+      "ātman (2171)",
+      "rājan (1736)",
+      "pitṛ (1550)",
+      "ādi (1485)",
+      "yajña (1340)",
+      "agni (1228)",
+      "loka (1206)",
+      "bhūta (1206)",
+      "indra (1114)"
+    ],
+    "pronoun_share_note": "~33% of genitives are pronouns (tad/mad/tvad 'of him/me/you') — the possessive genitive dominates",
+    "genitive_as_object_partitive": 333,
+    "genitive_as_recipient_iobj": 86,
+    "genitive_nmod_possession_subset": 6696,
+    "note": "possession (adnominal) is the core; the genitive also took over the dative's recipient role (SG-SE-003 flip) and supplies the partitive/argument object (SG-SE-002 flip)"
+  },
+  "genitive_absolute_vs_locative": {
+    "genitive": {
+      "candidate": 16493,
+      "by_number": {
+        "Sing": 10444,
+        "Plur": 5616,
+        "Dual": 433
+      },
+      "parsed_deprel": 527,
+      "advcl_adverbial": 40,
+      "advcl_pct_of_parsed": 7.6,
+      "acl_attributive": 171,
+      "nmod_adnominal": 163,
+      "acl_nmod_pct_of_parsed": 63.4,
+      "subject_participle_pairs": 18,
+      "floor": 41,
+      "deprel_top": {
+        "nmod": 162,
+        "acl": 141,
+        "conj": 41,
+        "flat": 40,
+        "acl:ptcp": 16,
+        "obl:benef": 13,
+        "advcl:cond": 13,
+        "advcl": 13
+      }
+    },
+    "locative": {
+      "candidate": 20973,
+      "by_number": {
+        "Sing": 18165,
+        "Plur": 2737,
+        "Dual": 71
+      },
+      "parsed_deprel": 578,
+      "advcl_adverbial": 374,
+      "advcl_pct_of_parsed": 64.7,
+      "acl_attributive": 42,
+      "nmod_adnominal": 0,
+      "acl_nmod_pct_of_parsed": 7.3,
+      "subject_participle_pairs": 246,
+      "floor": 405,
+      "deprel_top": {
+        "advcl:temp": 184,
+        "advcl": 133,
+        "advcl:cond": 50,
+        "orphan": 45,
+        "conj": 45,
+        "acl": 35,
+        "obl:loc": 18,
+        "obl:goal": 18
+      }
+    },
+    "pasyat_idiom_gen_part": 373,
+    "pasyat_parsed": 1,
+    "mirror_image_native_proof": "on the deprel-parsed subsets the two cases are MIRROR images: Gen+Part is 7.6% adverbial(advcl*) / 63.4% attributive+adnominal(acl+nmod); Loc+Part is 64.7% adverbial / 7.3% attributive+adnominal — so the candidate near-parity is a provable artefact, not an assertion",
+    "finding": "candidate near-parity (Gen+Part 16493 vs Loc+Part 20973) is an ARTEFACT — most Gen participles are attributive(acl 171)+adnominal(nmod 163), not absolute; adjudicated FLOOR (advcl* + subject-participle pairs, dedup overlap, computed identically) is 41 for the genitive absolute vs 405 for the locative — the genitive absolute is ~10x rarer. BUT the floor UNDERSTATES: the paśyat- 'disregard' idiom (dṛś, 373 Gen+Part) is the genitive absolute's semantic signature yet only 1 are deprel-parsed, so the true count is in the hundreds, not 41."
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§289-302 (ablative, genitive uses; ablative of comparison; genitive absolute); Pāṇini 2.3.28 (apādāna/abl), 2.3.50 (śeṣa/gen), 2.3.38 (ṣaṣṭhī sati-like genitive absolute)"
+  },
+  "validation_sample": {
+    "seed": 20260718,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "candidate_not_construction": "Gen+Part (16493) is an upper bound for the genitive absolute; the adjudicated construction is ~41 (advcl* + pairs). Most Gen participles are attributive/adnominal.",
+    "deprel_partial": "the function split + absolute adjudication ride on the ~3-4%% dependency-parsed subset only",
+    "comparison_not_native": "ablative of comparison ('than X') is not a distinct native tag; obl:grad/context is a weak proxy — treated as traditional, not measured",
+    "seg_artifact": "the ablative -tva token (segmentation layer, H1178) inflates the raw lemma ranking; excluded from the 'true ablative noun' reading",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}

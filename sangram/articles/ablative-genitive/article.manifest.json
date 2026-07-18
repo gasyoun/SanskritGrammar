@@ -1,0 +1,80 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:ablative-genitive",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-004",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Аблатив и генитив",
+        "summary": "Статья SG-SE-004 (домен SE, кластер «Падежная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто); данные собраны+проверены воркфлоу probe→verify (проверка воспроизвела все числа до токена). Аблатив (Abl) 74 565 (2,3 % вибхакти, 92 % ед. ч.) — источник (нативно obl:source 841: lokāt «из мира»), сравнение (ulbāt «чем ulba»; obl:grad 129 — слабый след, в целом традиционно) и причина (bhaya «от страха» 747, hetu «причина» 458); топ-«лемма» tva 3429 — артефакт слоя сегментации -tva (H1178), не аблатив. Генитив (Gen) 270 763 (8,5 %) — принадлежность (адноминально nmod 6696; ~33 % местоимения tad/mad/tvad «его/меня/тебя»); принял функцию адресата у датива (iobj 86 + obl:benef 188 — переворот SE-003; śraddhā управляет генитивом лица: asya śraddadhati «ему верят»); даёт партитивно-аргументный объект (obj 333 — переворот SG-SE-002). ГЛАВНАЯ находка — генитив абсолютный vs локатив абсолютный: кандидат почти паритетен (Gen+Part 16 493 vs Loc+Part 20 973), НО зеркальность нативно доказуема — на размеченном подмножестве причастие в генитиве 63,4 % атрибутивно/адноминально (acl 171 + nmod 163) и лишь 7,6 % адвербиально, в локативе наоборот 64,7 % адвербиально. Адъюдицированный пол (advcl* + пары подлежащее+причастие, дедупл., одинаково) — 41 у генитива абсолютного vs 405 у локативного: ~10× реже. НО пол занижает: идиома paśyataḥ (dṛś, 373 Gen+Part, лишь 1 размечен) — семантическая подпись, невидимая для 96,8 % кандидатов → истинный счёт в сотнях. Уитни §§289–302; Пан. 2.3.28/2.3.50."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:ablative-genitive:1",
+        "text_slp1": "lokAt",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 7.1" },
+        "translations": { "ru": "из (этого) мира (loka, Abl — источник)" },
+        "gloss_ru": "АБЛАТИВ · источник (apādāna, deprel=obl:source): loka → lokāt, в «asmāt lokāt uccakrāma» «ушёл из этого мира». Источник — доминирующая нативная роль аблатива (obl:source 841 на размеченном подмножестве, § 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Abl, deprel=obl:source, лемма loka", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:ablative-genitive:2",
+        "text_slp1": "ulbAt",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.3" },
+        "translations": { "ru": "чем ulba (ulba, Abl — сравнение)" },
+        "gloss_ru": "АБЛАТИВ · сравнение (pañcamī после сравнительной степени): ulba → ulbāt, в «uttaram vai ulbāt jarāyu» «хорион выше, чем ulba». Есть слабый нативный след (deprel=obl:grad), но сравнение — традиционная функция, отдельным тегом не размеченная (§ 3, 7).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Abl, deprel=obl:grad, лемма ulba", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:ablative-genitive:3",
+        "text_slp1": "devAnAm",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.1" },
+        "translations": { "ru": "из богов (deva, Gen — принадлежность/часть-целое)" },
+        "gloss_ru": "ГЕНИТИВ · принадлежность/часть-целое (śeṣa, deprel=nmod): deva → devānām, в «agniḥ vai devānām avamaḥ» «Агни — низший из богов». Адноминальная принадлежность — ядро генитива (nmod 6696 на подмножестве, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Gen, deprel=nmod, лемма deva", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:ablative-genitive:4",
+        "text_slp1": "paSUnAm",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.2" },
+        "translations": { "ru": "скота (paśu, Gen — партитивно-аргументный объект)" },
+        "gloss_ru": "ГЕНИТИВ · партитивно-аргументный объект (deprel=obj): paśu → paśūnām, в «paśūnām avaruddhyai» «для добычи скота» — объект отглагольного имени в родительном. 333 генитива помечены obj (переворот утечки объекта из SG-SE-002, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Gen, deprel=obj, лемма paśu", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:ablative-genitive:5",
+        "text_slp1": "arcataH",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.2" },
+        "translations": { "ru": "пока он совершал поклонение (arc, Gen — генитив абсолютный)" },
+        "gloss_ru": "ГЕНИТИВ АБСОЛЮТНЫЙ (deprel=advcl:temp, с согласованным Gen-подлежащим tasya): arc → arcataḥ, в «tasya arcataḥ āpaḥ ajāyanta» «пока он совершал поклонение, возникли воды». Один из ~41 адъюдицированных (advcl* + пары); генитив абсолютный ~10× реже локативного (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Gen, feat_verbform=Part, deprel=advcl:temp, лемма arc", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:ablative-genitive:6",
+        "text_slp1": "asya",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.6" },
+        "translations": { "ru": "ему (idam, Gen — адресат/след датива)" },
+        "gloss_ru": "ГЕНИТИВ · адресат (deprel=iobj; след отступившего датива): idam → asya, в «asya śraddadhati» «(тогда) ему верят». Глагол śrad-dhā «доверять» управляет генитивом лица — классическое замещение датива генитивом (переворот SG-SE-003; iobj 86 + obl:benef 188, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Gen, deprel=iobj, лемма idam", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}
