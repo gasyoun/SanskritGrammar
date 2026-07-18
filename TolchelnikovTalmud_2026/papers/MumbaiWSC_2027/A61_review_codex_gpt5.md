@@ -1,11 +1,15 @@
 # Hostile referee review: A61
 
-**Date:** 2026-07-18  
+**Date:** 2026-07-18
+
 **Reviewer:** Codex, GPT-5 (OpenAI; the exact serving revision is not exposed in
-the session metadata)  
-**Target:** *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)*  
-**Recommendation (updated after evidence pass):** **HOLD FOR REGISTRY AND HUMAN
-PERMISSIONS — the manuscript-level source and venue gate is applied.**
+the session metadata)
+
+**Target:** *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026)*
+
+**Recommendation (updated after evidence pass):** **HOLD FOR FABLE VOICE PASS
+AND HUMAN PERMISSIONS — the evidence registry, manuscript-source, legal,
+bibliographic, venue, and build gates are complete.**
 
 ## Overall assessment
 
@@ -16,11 +20,10 @@ custody into files, private correction into public version history, and entries
 into stable addresses. The counterclaim is equally important: technical
 transferability has not deconcentrated maintenance labour.
 
-The paper remains below submission readiness until the csl-observatory registry
-is brought into line with the retained exact claims and the author clears the
-quotation/permission gates. The manuscript-level historical, legal, numerical,
-bibliographic, and venue edits are recorded in
-`A61_EVIDENCE_GATE_2026-07-18.md`.
+The paper remains below submission readiness until the H1222 Fable voice pass
+and the author's quotation/permission gates are complete. The registry and the
+manuscript-level historical, legal, numerical, bibliographic, venue, and build
+edits are recorded in `A61_EVIDENCE_GATE_2026-07-18.md`.
 
 ## Major findings applied in this revision
 
