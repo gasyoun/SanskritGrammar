@@ -1,0 +1,44 @@
+{
+  "article": "SG-SE-009",
+  "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+  "verb_tokens": 1007361,
+  "passive_tokens": 36701,
+  "passive_pct": 3.64,
+  "feat_voice_values": {
+    "None": 5651715,
+    "Pass": 36701
+  },
+  "passive_by_tense": {
+    "Pres": 34499,
+    "Impf": 1443,
+    "Past": 759
+  },
+  "passive_by_verbform": {
+    "None": 29699,
+    "Part": 7002
+  },
+  "top_passive_lemmas": {
+    "vac": 3225,
+    "kṛ": 1463,
+    "dṛś": 1404,
+    "vid": 1275,
+    "śru": 725,
+    "muc": 633,
+    "kathay": 569,
+    "mṛ": 539,
+    "vidhā": 519,
+    "yuj": 426,
+    "dā": 424,
+    "grah": 419
+  },
+  "root_pada": {
+    "roots_classified": 11432,
+    "parasmaipada_only": 6029,
+    "atmanepada_only": 1391,
+    "ubhayapada": 4012
+  },
+  "xpos_on_verbs": {
+    "None": 1007361
+  },
+  "notes": "Passive is the only native per-token voice (feat_voice in {NULL, Pass}); active/middle (P/Ā) is a lexical root property from lemma.grammar, not a token frequency; xpos is NULL for every verb so per-token pada is unrecoverable."
+}
