@@ -1,0 +1,80 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:nominative-accusative",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-002",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Номинатив и аккузатив",
+        "summary": "Статья SG-SE-002 (домен SE, кластер «Падежная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Подстатья кластера падежной семантики (обзор — SG-SE-001). Два крупнейших падежа: номинатив 1 419 146 (35,3 % падежных токенов, 24,95 % корпуса) и аккузатив 742 293 (18,5 % / 13,05 %) — оба нативны (feat_case); вместе ~54 % падежных форм. Внимание: feat_case=Cpd (841 052, член композита, НЕ падеж) больше аккузатива — «два крупнейших падежа» верно при исключении Cpd. Функциональный разрез — на синтаксически размеченном подмножестве (deprel, лишь 3,93 % токенов): подлежащее↔номинатив почти канонично (nsubj 97,8 % Nom; не-Nom подлежащие — 266 Loc = подлежащие локатива абсолютного SG-SE-005, 43 Gen, 43 Acc); прямой объект↔аккузатив (obj 90,2 % Acc, прочее Cpd/Gen — «объект» ≠ «аккузатив»). Аккузатив ВЫХОДИТ за прямой объект — нативно помечены цель движения obl:goal 1495, длительность/время obl:temp 269 (лишь 25 % Acc), путь obl:path 183, косвенный объект iobj 785. Двойной аккузатив (дви-карман): данные+адверсариальная проверка воркфлоу исправили наивные 2747 (смесь объект+наречный/направительный/сочинённый Acc) до подлинных ~872 глаголов с ≥2 Acc в ядерно-объектных ролях (36 — два настоящих obj; тип yāc «просить X о Y»). Предикативный номинатив 1372 (dhanyo 'smi, вершина связки cop; 82,6 % вершин cop — Nom). Оговорка: все функц. доли — только на 3,93 % подмножестве; сырые частоты нативны. Уитни §§267–281; Пан. 1.4.49 (karman)/1.4.51 (dvikarmaka)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:nominative-accusative:1",
+        "layer": "scientific",
+        "text_slp1": "rAjA",
+        "locus": { "corpus": "dcs", "work": "Rāmāyaṇa", "ref": "Rām Ay 1" },
+        "translations": { "ru": "царь (rājan, Nom — подлежащее)" },
+        "gloss_ru": "НОМИНАТИВ · подлежащее (kartṛ, deprel=nsubj): rājan → rājā «царь», в «rājā ... sasmāra ... sutau» «царь вспомнил сыновей». Подлежащее↔номинатив почти канонично: 97,8 % nsubj — номинативы (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Nom, deprel=nsubj, лемма rājan", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:nominative-accusative:2",
+        "layer": "scientific",
+        "text_slp1": "vacanam",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 1.133" },
+        "translations": { "ru": "речь (vacana, Acc — прямой объект)" },
+        "gloss_ru": "АККУЗАТИВ · прямой объект (karman, deprel=obj): vacana → vacanam, в «kuntī vacanam abravīt» «Кунти сказала речь». Прямой объект↔аккузатив: 90,2 % obj — аккузативы (прочее Cpd/Gen, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, deprel=obj, лемма vacana", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:nominative-accusative:3",
+        "layer": "scientific",
+        "text_slp1": "puram",
+        "locus": { "corpus": "dcs", "work": "Rāmāyaṇa", "ref": "Rām Ay 1" },
+        "translations": { "ru": "в город (pura, Acc — цель движения)" },
+        "gloss_ru": "АККУЗАТИВ ЗА ОБЪЕКТОМ · цель движения (deprel=obl:goal): pura → puram, в «sva puram prāviśat» «вошёл в свой город». Аккузатив направления «идти куда» — нативно помечен obl:goal (1495 аккузативов, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, deprel=obl:goal, лемма pura", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:nominative-accusative:4",
+        "layer": "scientific",
+        "text_slp1": "saMvatsaram",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Śaunaka)", "ref": "AVŚ 15.3" },
+        "translations": { "ru": "год (saṃvatsara, Acc — длительность)" },
+        "gloss_ru": "АККУЗАТИВ ЗА ОБЪЕКТОМ · длительность/протяжённость (deprel=obl:temp): saṃvatsara → saṃvatsaram, в «sa saṃvatsaram ūrdhvaḥ atiṣṭhat» «он год стоял прямо». Аккузатив меры времени; obl:temp лишь на 25 % аккузативный (время бывает и в Loc/Ins, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, deprel=obl:temp, лемма saṃvatsara", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:nominative-accusative:5",
+        "layer": "scientific",
+        "text_slp1": "Bezajam",
+        "locus": { "corpus": "dcs", "work": "Atharvaveda (Paippalāda)", "ref": "AVP 1.1" },
+        "translations": { "ru": "лекарство (bheṣaja, Acc — при двойном аккузативе yāc)" },
+        "gloss_ru": "ДВОЙНОЙ АККУЗАТИВ (дви-карман): глагол yāc «просить» управляет двумя аккузативами — apaḥ «во́ды» (у кого) и bheṣajam «лекарство» (что): «apaḥ yācāmi bheṣajam» «прошу у во́д лекарство». Один из ~872 подлинных дви-карман (исправлено с наивных 2747 адверсариальной проверкой, § 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, обе Acc-зависимости при глаголе yāc", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:nominative-accusative:6",
+        "layer": "scientific",
+        "text_slp1": "DanyaH",
+        "locus": { "corpus": "dcs", "work": "Mahābhārata", "ref": "MBh 1.1" },
+        "translations": { "ru": "блажен (dhanya, Nom — предикатив)" },
+        "gloss_ru": "НОМИНАТИВ · предикатив (именное сказуемое, вершина связки cop): dhanya → dhanyaḥ, в «dhanyaḥ vaḥ asmi adya darśanāt» «я блажен ныне от встречи с вами». Именное сказуемое стоит в номинативе (как подлежащее), а не в особом падеже; 82,6 % вершин cop — номинативы (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Nom, вершина cop-ребёнка, лемма dhanya", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}
