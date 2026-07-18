@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.82.0] - 2026-07-18
+
+### Fixed
+- **krt-suffixes § 3.1: the -tṛ zero-claim corrected — MG ruled merge 18-07-2026 (H1229 REFUTED `WF003-2`, Fable 5 `claude-fable-5`).** The published «лемм на -tṛ … ноль» was an SLP1-vs-IAST encoding artifact (query ran on SLP1 `%tf` against IAST lemmas): the snapshot has **771 IAST `-tṛ` NOUN/ADJ lemmas (31 042 tokens)**. § 3.1 now states the encoding error, the real numbers, and marks the -tṛ candidate pass as queued; the pilot's historical scope (-ana/-ti/-in) stands. [PR #414](https://github.com/gasyoun/SanskritGrammar/pull/414); ledger row updated.
+
 ## [0.81.0] - 2026-07-18
 
 ### Added
