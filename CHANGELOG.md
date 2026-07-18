@@ -31,6 +31,11 @@ changelog tags as `vX.Y.Z`.
   (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
   The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
 
+## [0.71.0] - 2026-07-18
+
+### Added
+- **Sangram SG-SE-001 «Система падежных значений: обзор» — статья-кандидат, восьмая сверх открывающей квоты; первый ИМЕННОЙ разрез после семи глагольных (H1214, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/case-system-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/case-system-overview): представитель кластера падежной семантики. Падеж размечен **нативно** на каждом имени через `feat_case`, вся система прямо счётна: **восемь вибхакти — 3 173 636** токенов: `Nom` **1 419 146 (44,7 %)**, `Acc` 742 293 (23,4 %), `Ins` 277 143, `Gen` 270 763, `Loc` 243 215, `Voc` 81 088, `Abl` 74 565, `Dat` **65 423 (2,1 %, самый редкий)**. Nom+Acc = **68 %** (ядро «кто→что»); **датив реже всех** — функция адресата в классическом языке во многом отошла к генитиву (devasya «богу»). Оговорка честности: `feat_case='Cpd'` (**841 052**) — член композита, НЕ одна из восьми вибхакти, исключён. И `feat_case` — морфологическая вибхакти; отображение падеж↔kāraka (агенс/пациенс) — эндшпиль SG-SE-013, здесь не выводится (один падеж = много функций: Ins = орудие/агент пассива/совместность). 8 примеров: **deva во всех восьми падежах** ед. ч. (одна основа, восемь окончаний). Карта подстатей: SE-002 Nom/Acc, SE-003 Ins/Dat, SE-004 Abl/Gen, SE-005 Loc, SE-013 kāraka vs падеж, SE-015 каузатив. Скрипт [`sg_se_001_case_overview.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_se_001_case_overview.py); article_validate PASS (--all green) + toc_validate (93 статьи, 0 нарушений) + docusaurus build green. Уитни §§ 267–305; Пан. 2.3 + 1.4.23–55. Сверхквотовая линия (ядро 19/19 закрыто). Публикация гейтится авторской визой.
+
 ## [0.70.0] - 2026-07-18
 
 ### Changed
