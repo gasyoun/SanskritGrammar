@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.20.0] - 2026-07-18
+
 ### Changed
 - **Гибридная RWS-литредактура очереди §1.1/§1.4, §3.1/§3.3/§3.4 — агентский line edit
   выполнен, гейт «агент прозу не переписывает» (H275) снят решением H1259.** 211 абзацев
