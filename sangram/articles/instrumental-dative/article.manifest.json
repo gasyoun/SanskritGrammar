@@ -1,0 +1,70 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:instrumental-dative",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-003",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Инструменталис и датив",
+        "summary": "Статья SG-SE-003 (домен SE, кластер «Падежная семантика»), производство сверх открывающей квоты (ядро W2 19/19 закрыто). Подстатья кластера падежной семантики (обзор — SG-SE-001). Оба падежа нативны (feat_case), но статья добавляет две ИЗМЕРЕННЫЕ функциональные находки. ИНСТРУМЕНТАЛИС (Ins) 277 143 — полифункционален: орудие (топ-существительные manasā «умом» 1863, śareṇa «стрелой» 1603, karmaṇā «действием» 1471), агенс пассива (инструменталис в клаузе с пассивным глаголом Voice=Pass — 21 472 = 7,7 %, нижняя оценка, связь с SG-MO-027), совместность; deprel DCS нативно делит obl:instr (орудие 2569) vs obl:soc (совместность 488) на разобранном подмножестве. По числу ведут местоимения (tad 13 256, mad 5605). ДАТИВ (Dat) 65 423 — САМЫЙ РЕДКИЙ падеж (2,1 %): функция адресата в классическом языке во многом отошла к генитиву (Gen 270 763 ≫ Dat 65 423), но датив стойко живёт в РИТУАЛЬНОМ адресате — топ-существительные все получатели приношений: agnaye «Агни» 1221, devāya «богу» 1065, indrāya «Индре» 997, pitṛbhyaḥ «предкам» 445, brāhmaṇāya «брахману» 388 — плюс личных местоимениях (mahyam/tubhyam «мне/тебе», mad 5834/tvad 5215) + дативе цели. Оговорка: функция не нативна (агенс/орудие — вывод из пассива+deprel, не полный тег; эндшпиль kāraka — SE-013). Уитни §§278–287; Пан. 1.4.42 (karaṇa)/1.4.32 (sampradāna)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:instrumental-dative:1",
+        "layer": "scientific",
+        "text_slp1": "brahmaRA",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.3" },
+        "translations": { "ru": "молитвой, посредством бра́хмана (Ins, орудие)" },
+        "gloss_ru": "ИНСТРУМЕНТАЛИС · орудие (karaṇa): brahman + -ā → brahmaṇā «молитвой, силой бра́хмана». Размечен deprel=obl:instr — нативная синтаксическая помета инструмента (2569 таких на разобранном подмножестве). Основное значение творительного (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins, deprel=obl:instr", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:instrumental-dative:2",
+        "layer": "scientific",
+        "text_slp1": "mayA",
+        "locus": { "corpus": "dcs", "work": "Amaruśataka", "ref": "AmaruŚ 1 (s20)" },
+        "translations": { "ru": "мною (Ins, агенс пассива)" },
+        "gloss_ru": "ИНСТРУМЕНТАЛИС · агенс пассива: mad → mayā «мною». Стоит в клаузе с пассивным глаголом (Voice=Pass) — деятель при страдательном залоге (mayā kṛtam «мною сделано»). 21 472 инструменталиса (7,7 %) со-встречаются с пассивом — нижняя оценка агентной функции (связь с SG-MO-027).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins в клаузе с Voice=Pass", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:instrumental-dative:3",
+        "layer": "scientific",
+        "text_slp1": "prajayA",
+        "locus": { "corpus": "dcs", "work": "Aitareyabrāhmaṇa", "ref": "AB 1.6" },
+        "translations": { "ru": "с потомством (Ins, совместность)" },
+        "gloss_ru": "ИНСТРУМЕНТАЛИС · совместность (sociative): prajā → prajayā «с потомством». Размечен deprel=obl:soc — нативная помета совместности (488 таких), отличная от орудия obl:instr. Часто с частицей saha «вместе» (prajayā paśubhiś ca «с потомством и скотом»).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins, deprel=obl:soc", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:instrumental-dative:4",
+        "layer": "scientific",
+        "text_slp1": "agnaye",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 1.1.1" },
+        "translations": { "ru": "Агни, для Агни (Dat, ритуальный адресат)" },
+        "gloss_ru": "ДАТИВ · ритуальный адресат (sampradāna): agni → agnaye «Агни, для Агни». Самая частотная дативная лемма-существительное (1221) — датив выжил прежде всего в культовом адресате приношения («возлить Агни»). Топ дативных существительных — божества (agni/deva/indra) и получатели даров (pitṛ/brāhmaṇa) (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Dat, лемма agni", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:instrumental-dative:5",
+        "layer": "scientific",
+        "text_slp1": "mahyam",
+        "locus": { "corpus": "dcs", "work": "Aitareya-Āraṇyaka", "ref": "AĀ 2.1.5 (s3)" },
+        "translations": { "ru": "мне (Dat, адресат — местоимение)" },
+        "gloss_ru": "ДАТИВ · адресат (местоимение): mad → mahyam «мне». Датив прочно держится в личных местоимениях (mahyam/tubhyam «мне/тебе»), даже когда у существительных его теснит генитив (§ 4). Бытовое «дай мне».",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Dat, лемма mad", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}

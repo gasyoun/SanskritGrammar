@@ -1,0 +1,120 @@
+{
+  "study": "Sangram SG-SE-003 (Инструменталис и датив) — case sub-article, native",
+  "toc_ref": "SG-SE-003",
+  "kind": "beyond-quota core ① (opening set already 19/19); native positive (feat_case) + measured function signals",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416
+  },
+  "instrumental": {
+    "total": 277143,
+    "by_number": {
+      "Sing": 173384,
+      "Plur": 97909,
+      "Dual": 5850
+    },
+    "top_lemmas": [
+      "tad (13256)",
+      "mad (5605)",
+      "tvad (3632)",
+      "yad (3627)",
+      "etad (3290)",
+      "idam (3177)",
+      "manas (1863)",
+      "śara (1603)",
+      "karman (1471)",
+      "rasa (1468)"
+    ],
+    "top_noun_lemmas": [
+      "manas (1863)",
+      "śara (1603)",
+      "karman (1471)",
+      "rasa (1468)",
+      "ādi (1451)",
+      "tapas (1221)",
+      "rūpa (1120)",
+      "deva (1070)"
+    ],
+    "deprel": {
+      "obl:instr": 2569,
+      "obl": 2235,
+      "conj": 804,
+      "flat": 741,
+      "orphan": 511,
+      "obl:soc": 488,
+      "det": 449,
+      "amod": 398,
+      "acl": 331,
+      "obl:agent": 252
+    },
+    "passive_agent_cooccurrence": 21472,
+    "passive_agent_pct": 7.7,
+    "obl_instr_deprel": 2569,
+    "obl_soc_deprel": 488,
+    "note": "poly-functional (instrument/agent/accompaniment); agent proxy = Ins in a clause with a Voice=Pass verb (lower bound, ties to SG-MO-027); deprel splits obl:instr vs obl:soc on the parsed subset"
+  },
+  "dative": {
+    "total": 65423,
+    "by_number": {
+      "Sing": 53687,
+      "Plur": 10732,
+      "Dual": 1004
+    },
+    "top_lemmas": [
+      "mad (5834)",
+      "tvad (5215)",
+      "tad (2762)",
+      "idam (2380)",
+      "agni (1221)",
+      "deva (1069)",
+      "indra (997)",
+      "pitṛ (445)",
+      "brāhmaṇa (388)",
+      "artha (359)"
+    ],
+    "top_noun_lemmas": [
+      "agni (1221)",
+      "deva (1065)",
+      "indra (997)",
+      "pitṛ (445)",
+      "brāhmaṇa (388)",
+      "artha (359)",
+      "tva (344)",
+      "rudra (331)"
+    ],
+    "deprel": {
+      "iobj": 1841,
+      "flat": 1068,
+      "advcl:fin": 470,
+      "conj": 423,
+      "orphan": 252,
+      "root": 250,
+      "obl:benef": 206,
+      "obl": 186,
+      "advcl": 167,
+      "acl": 140
+    },
+    "genitive_total_for_comparison": 270763,
+    "note": "the RAREST case; recipient role largely retreated into the genitive (Gen >> Dat); survives in ritual recipient (agnaye/devāya) + personal pronouns (mahyam/tubhyam) + dative of purpose"
+  },
+  "traditional_layer": {
+    "witness": "Whitney 1889 §§278-286 (instrumental), §§285-287 (dative); Pāṇini 1.4.42 (karaṇa), 1.4.32 (sampradāna)"
+  },
+  "validation_sample": {
+    "seed": 20260718,
+    "size": 50,
+    "file": "validation_sample.tsv"
+  },
+  "limits": {
+    "function_not_native": "feat_case is the vibhakti; the agent/instrument/accompaniment split is inferred (passive co-occurrence + partial deprel), not a full native tag (SE-013 kāraka endgame)",
+    "agent_proxy_lower_bound": "the passive-agent proxy counts any Ins in a passive clause — a lower bound, may include non-agent Ins",
+    "deprel_partial": "obl:instr/obl:soc are on the dependency-parsed subset only (~small fraction of Ins)",
+    "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+  }
+}
