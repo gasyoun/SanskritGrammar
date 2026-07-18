@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.79.0] - 2026-07-18
+
+### Changed
+- **Sangram SG-WF-004 «Вторичная деривация (taddhita): обзор» — ОПУБЛИКОВАНА: пере-виза автора проголосована 8/8 approve (H1236, apply — Opus 4.8 `claude-opus-4-8[1m]`; исходная волна H1168/H1178/H1189/H1192, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/taddhita-overview/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/taddhita-overview): первая виза (17-07) отклонила вердикт «не счётно» до словарного трека; словарный трек исполнен (§3-bis MWderivations `wsfx`×DCS = **36 290 токенов**; §3-ter остаток — **-ika чисто** ~100 %, -in/-ya = измеренная граница kṛt-омонимии ≈ 21 000), пере-виза приняла вердикт «в основном счётна». Плашка кандидата снята → статус «опубликовано», статья на [gasyoun.github.io/SanskritGrammar/sangram/articles/taddhita-overview](https://gasyoun.github.io/SanskritGrammar/sangram/articles/taddhita-overview). Правки по заметкам визы (числа и выводы без изменений): **(TAD2-03)** §3-ter — уточнено, что используется грамматическая помета **словаря** Монье-Вильямса (2-я ред., 1899), а не отдельная грамматика MW; **(TAD2-04)** §3-ter/§6 — оговорка о размере адъюдикационной выборки (60 лемм = порядок величины, кратно увеличить отдельным проходом); **(TAD2-01)** §3-bis/§6 — forward-note: следующий проход словарного трека по **PWG** (цитата-локус почти на каждое значение, усечён у MW). Манифест `art:taddhita-overview` получил ревизии `published` + `revision`.
+
 ## [0.78.0] - 2026-07-18
 
 ### Added
