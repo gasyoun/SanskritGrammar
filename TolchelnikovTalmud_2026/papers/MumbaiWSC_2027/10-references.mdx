@@ -1,9 +1,9 @@
 ---
-title: "References and Data Availability"
-sidebar_position: 10
+title: "12. References and Data Availability"
+sidebar_position: 12
 ---
 
-# References
+# 12. References
 
 _Created: 12-07-2026 · Last updated: 12-07-2026_
 
@@ -43,16 +43,23 @@ _Created: 12-07-2026 · Last updated: 12-07-2026_
 ## Unpublished and oral sources
 
 - Malten, Thomas. 2005. Correspondence concerning the scan collection and database rights (author's archive; quoted in §3.3).
-- Scharf, Peter M. 2025. Review of the earlier draft of this report, with project reports and datasets from the funded phases of 2004–2013 (author's archive; the datasets are itemised in §9.3).
+- Scharf, Peter M. 2025. Review of the earlier draft of this report, with project reports and datasets from the funded phases of 2004–2013 (author's archive; the datasets are itemised in §10.3).
 - Cologne Digital Sanskrit Dictionaries volunteer call, 27 June 2026. Public recording: https://youtu.be/42MIezNqj5w. Statements are cited from the automatic transcript in the author's archive; the transcript carries no speaker labels, and attributions were verified against the recording.
 - Personal email correspondence of the sanskrit-lexicon collaborators, 2007–2013 (author's archive; quoted in §8.3 on the Vācaspatyam re-entry).
 
 ## Data availability
 
+The article-specific evidence release is
+[`a61-history-v1.0`](https://github.com/sanskrit-lexicon/csl-observatory/tree/main/data/publication/a61-history-v1.0)
+(calendar alias `2026-07`). Its manifest locks the local input artifacts by
+SHA-256; `metrics.csv` defines each population and cutoff; `milestones.csv`
+separates verified events from pending email evidence; and
+`contradictions.csv` records rejected stale forms.
+
 Every quantitative claim in this report cites a committed, versioned dataset. The principal datasets and their homes:
 
 - Union headword index (323,425 headwords), pairwise overlap matrix, and markup-tag census: https://github.com/gasyoun/SanskritLexicography
-- Correction-event ledger (52,498 events) and organisation metrics: https://github.com/sanskrit-lexicon/csl-observatory
+- Correction-event ledger (52,498 events, 43 dictionaries, 208 release-safe corrector labels) and organisation metrics: https://github.com/sanskrit-lexicon/csl-observatory
 - Correction loci and change-file audit trail: https://github.com/sanskrit-lexicon/csl-corrections
 - Citation graph (828,505 citations, 912 texts), Harivaṃśa concordance, and Mahābhārata citation census: https://github.com/gasyoun/csl-atlas
 - Etymology root oracle and cross-dictionary agreement tables: https://github.com/sanskrit-lexicon/csl-orig (v02/etymology_stats)

@@ -45,7 +45,7 @@ Print dictionaries routinely present alternative spellings inside one article: M
 <LEND>
 ```
 
-This `{{Lbody=...}}` pointer is the *L-body technique*: a headword-bearing stub whose body is resolved by reference. It is a general mechanism, not just a spelling device. Because dictionaries frequently give feminine derivatives inside the masculine article (*devī* under *deva*), feminine forms can be made searchable as alternate headwords by exactly the same means — a planned application (§9). The design is not uncontested within the team: the alternates could equally be generated at XML-build time from a separate overlay file, leaving the transcription of the printed book untouched, and the difference of opinion — annotate the source, or annotate a layer above it — recurs in every structural question the project faces (§4.4).
+This `{{Lbody=...}}` pointer is the *L-body technique*: a headword-bearing stub whose body is resolved by reference. It is a general mechanism, not just a spelling device. Because dictionaries frequently give feminine derivatives inside the masculine article (*devī* under *deva*), feminine forms can be made searchable as alternate headwords by exactly the same means — a planned application (§10). The design is not uncontested within the team: the alternates could equally be generated at XML-build time from a separate overlay file, leaving the transcription of the printed book untouched, and the difference of opinion — annotate the source, or annotate a layer above it — recurs in every structural question the project faces (§4.4).
 
 ## 4.3 Markup inventory
 
@@ -59,7 +59,7 @@ The first, implemented at CDSL, is *normalization*: compute a normalized key for
 
 The second, argued by Scharf from the Sanskrit Library's experience, is *coordination against an independent base list*: maintain a Pāṇinian dictionary of Sanskrit — a lexicon whose headword forms are derived by rule — and map each dictionary's headwords to it in a standoff mapping file, leaving every dictionary exactly in its original form. On this view normalization toward any one convention is arbitrary, because the differences between the dictionaries are principled, not accidental. Two are structural: (1) MW combines preverbs with verbal roots in its headwords, while PW enters preverb combinations as subheadings under the simple root; (2) SKD and Apte use the nominative singular as the headword form where most European dictionaries use the stem. No key-normalization scheme can make these decisions disappear; it can only pick a winner per lookup.
 
-The two approaches are less opposed in practice than in principle — both leave the source text untouched and both produce a mapping — but the choice of *reference point* (a computed key versus a grammatically derived lexicon) remains open, and the project's position is stated in §9.
+The two approaches are less opposed in practice than in principle — both leave the source text untouched and both produce a mapping — but the choice of *reference point* (a computed key versus a grammatically derived lexicon) remains open, and the project's position is stated in §10.
 
 ## 4.5 The TEI question
 
