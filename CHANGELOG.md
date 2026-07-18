@@ -19,6 +19,28 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+
+## [0.83.0] - 2026-07-18
+
+### Added
+
+- `docs/PLAN_SANGRAM_EDITORIAL_NOTES_AND_CHARTER_2026H2.md` (+ `.meta.md`),
+  `docs/ROADMAP_SANSKRITGRAMMAR_2026H2.md` (+ `.meta.md`),
+  `docs/ARCHITECTURE_SANGRAM_EDITORIAL_NOTE_PIPELINE.md`,
+  `docs/IMPLEMENTATION_SANGRAM_EDITORIAL_NOTES.md`,
+  `docs/VERIFICATION_SANGRAM_EDITORIAL_NOTES.md` — the layered plan set for applying the author's
+  own visa notes, from the `/ask-batch` 2026-07 slice-2 pass. Handoffs H1273–H1277, 🟡 queued.
+
+### Changed
+
+- Recorded the measured state of the editorial-note backlog: the 13 voted `decisions.json` sheets
+  hold **120 items — 114 approve / 3 reject / 3 undecided**, of which 81 are applicable notes,
+  **21 already applied** (18 at visa time, 3 by [PR #416](https://github.com/gasyoun/SanskritGrammar/pull/416))
+  and **60 open**. An earlier reading of "87 unapplied notes" would have re-applied work already done.
+- Recorded that `review/` was gitignored under H856 while holding every author visa cast since
+  15-07-2026, and that **4 of 13 sheets have already lost their `_review.html`** — the loss this
+  reverses is partly historical, not hypothetical.
+
 ## [0.82.0] - 2026-07-18
 
 ### Fixed
