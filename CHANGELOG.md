@@ -19,7 +19,22 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.77.0] - 2026-07-18
+
 ### Added
+- **Конкорданс Уитни по всей серии Sangram + полному реестру Кочергиной (H1228, Fable 5 `claude-fable-5`).**
+  [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок):
+  первый корпусный аудит «утверждение ↔ Уитни 1889» под правило MG «всегда верить Витни» —
+  **432 вердикта** (172 грамматических утверждения из 33 живых статей Sangram + все 260 записей
+  [`KocherginaUchebnik_1998/claims.yml`](KocherginaUchebnik_1998/claims.yml)):
+  **364 AGREE · 42 DISAGREE · 26 WHITNEY-SILENT**, каждый § проверен по тексту
+  [`WhitneyGrammar_1889`](WhitneyGrammar_1889/00_index.mdx), а не по цитате-источнику
+  (12 fork-агентов Fable 5, аористы дополнительно по Толчельникову Талмуду/H1049).
+  Фикс-очередь: 42 DISAGREE (среди них 3 находки против самого реестра — HK-31, HK-35, HK-174
+  с `verdict_fact: TRUE`, который Уитни опровергает; veda как «редуплицированный» перфект;
+  семичленная ось наклонений и трёхчленная ось залогов из DCS-тегсета вместо инвентаря Уитни;
+  «-artham — датив цели» дважды), ~65 исправленных §-ссылок, 7 OCR-дефектов якорей
+  WhitneyGrammar_1889. Проза статей и вердикты реестра не менялись — правки гейтятся визой.
 - **Fidelity axis + teacher-facing reuse analysis over the Bühler/Knauer/Kochergina concordance (H1211, Opus 4.8 `claude-opus-4-8`).**
   New [`scripts/fidelity_axis.py`](scripts/fidelity_axis.py) classifies each of the 124 shared-sentence
   clusters as identical / orthographic-only / modified (reuses the H311/H327 clustering + near-match
