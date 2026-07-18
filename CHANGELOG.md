@@ -19,6 +19,12 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+- **SG-WF-004 taddhita — root-list contamination fixed + adjudication enlarged (visa note TAD2-04, H1254, Opus 4.8 `claude-opus-4-8[1m]`).** The PWG denominal extractor used `csl-orig/v02/etymology_stats/dhatu_roots.txt` to exclude root bases, but that list is **contaminated with nominal stems** (artha, krama, vana, aṅga listed as "roots"), so it wrongly dropped denominal taddhita whose base is a noun-homonym of a root — **including the article's own showcase examples devatā←deva, pakṣin←pakṣa, vīrya←vīra**. Switched [`scripts/sg_wf_004_taddhita_pwg.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_004_taddhita_pwg.py) to **Whitney's clean 855-root inventory** ([`WhitneyRoots/crosswalk/roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/master/crosswalk/roots.csv)): dataset **5,026 → 5,699 derivations, 77,963 → 117,243 tokens** (673 recovered denominals, spot-checked genuine).
+
+### Added
+- **Enlarged -in/-ika/-ya residue adjudication (TAD2-04).** New [`scripts/sg_wf_004_taddhita_residue_pwg.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_004_taddhita_residue_pwg.py) adjudicates the **full** MW base-attested set (not 60 hand lemmas) against PWG's explicit `von {#base#}` note (nominal→taddhita, Whitney-root→kṛt). Result (`data/residue_pwg_adjudication.json`): **-ika confirmed clean 98.5 %** (N=68, 95 % CI 92–100 %, ×6 the hand 8/8); -in/-ya on the PWG-noted subset 66–69 %, **but that subset is biased** — PWG preferentially documents denominal derivations and is silent on most deverbal -in/-ya (measured: PWG-silent hand lemmas skew 69 % kṛt), so the full-set precision **stays ≈25–31 %, vindicating §3-ter** rather than overturning it. Hand cross-check agreement 88 %. §3-quater rewritten with the honest floor-vs-full-set framing. article_validate `--all` PASS; deterministic.
+
 ## [0.84.0] - 2026-07-18
 
 ### Added

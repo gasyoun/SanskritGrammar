@@ -45,7 +45,13 @@ sys.stderr.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parents[1]
 GITHUB = ROOT.parent
 DEFAULT_PWG = GITHUB / "csl-orig" / "v02" / "pwg" / "pwg.txt"
-DEFAULT_DHATU = GITHUB / "csl-orig" / "v02" / "etymology_stats" / "dhatu_roots.txt"
+# Clean dhātu inventory: Whitney's ~855 canonical roots (crosswalk/roots.csv,
+# `root_slp1` column). NOT csl-orig/etymology_stats/dhatu_roots.txt — that list is
+# contaminated with nominal stems (artha, krama, vana, aṅga…), which made the root
+# exclusion drop genuine denominal taddhita whose base is a noun-homonym of a root
+# (arthika←artha wrongly excluded). Whitney's list contains only verbal roots, so a
+# base ∈ this set is a true kṛt signal (H1254 follow-up, TAD2-04).
+DEFAULT_DHATU = GITHUB / "WhitneyRoots" / "crosswalk" / "roots.csv"
 DEFAULT_DB = GITHUB / "VisualDCS" / "src" / "DCS-data-2026" / "dcs_full.sqlite"
 OUT_DIR = ROOT / "sangram" / "articles" / "taddhita-overview" / "data"
 
@@ -115,11 +121,22 @@ LEX_RE = re.compile(r"<lex>([^<]+)</lex>")
 
 
 def load_roots(path):
+    """Load the SLP1 root inventory. Whitney roots.csv (`root_slp1` column) preferred;
+    falls back to a one-root-per-line .txt for any other path."""
+    path = Path(path)
     roots = set()
-    for ln in open(path, encoding='utf-8'):
-        ln = ln.strip()
-        if ln and not ln.startswith('#'):
-            roots.add(ln)
+    if path.suffix.lower() == ".csv":
+        import csv as _csv
+        with path.open(encoding='utf-8') as f:
+            for r in _csv.DictReader(f):
+                v = (r.get("root_slp1") or "").strip()
+                if v:
+                    roots.add(v)
+    else:
+        for ln in open(path, encoding='utf-8'):
+            ln = ln.strip()
+            if ln and not ln.startswith('#'):
+                roots.add(ln)
     return roots
 
 
