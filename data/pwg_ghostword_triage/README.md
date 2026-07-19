@@ -5,14 +5,17 @@ _Created: 19-07-2026 · Last updated: 19-07-2026_
 The lexicon-only audit **v2** (H1310) leaves **2,270 distinct pwg-unique** headwords — present
 in no other digitised Cologne dictionary — of which **777 are absent even from Böhtlingk's own
 PWK** (`pw`), the hardest ghost-word core. Hand-adjudicating them is too much. This cascade
-auto-classifies each into a bucket using layers we already own plus one **reused** normalizer,
-so a human only ever reviews the small true residue — and it cross-checks every verdict against
-v2's independent citation-source category.
+auto-classifies each into a bucket using layers we already own plus two **reused** assets
+(SanskritSpellCheck's confusion-key normalizer and csl-atlas's DCS attested-lemma set), so a
+human only ever reviews the small true residue — and it cross-checks every verdict against v2's
+independent citation-source category and the DCS corpus.
 
-Result: **777 → 16 residue** (97.9 % triaged away). Every non-residue word carries its evidence
-(the matched attested word, the xref target, or the marker tags) so its verdict is checkable at
-a glance. The reduction chain across the whole programme: **974 (v1 core) → 788 (v2) → 141
-(triage stages 1–4) → 16 (greedy decomposition + expanded markers + v2-source fallback)**.
+Result: **777 → 16 residue** (97.9 % triaged away), and stage 6 independently **confirms all 16
+are absent from the DCS corpus** — genuine ghosts, not dictionary gaps. Every non-residue word
+carries its evidence (the matched attested word, the xref target, the marker tags, or the DCS
+band) so its verdict is checkable at a glance. The reduction chain across the whole programme:
+**974 (v1 core) → 788 (v2) → 141 (triage stages 1–4) → 16 (greedy decomposition + expanded
+markers + v2-source fallback); DCS attestation then confirms the 16 as the floor**.
 
 > Consumes the v2 [`pwg_ghostword_shortlist.tsv`](../pwg_lexicon_only_audit/pwg_ghostword_shortlist.tsv).
 > v2 already classifies each ghost-word by its **citation source** (`src_category`:
@@ -23,7 +26,7 @@ a glance. The reduction chain across the whole programme: **974 (v1 core) → 78
 ## The cascade
 
 Each word is tagged by **all** signals that fire; a single `verdict` is picked by precedence
-(misreading › spelling-variant › xref-attested › propername › compositional ›
+(corpus-attested › misreading › spelling-variant › xref-attested › propername › compositional ›
 descriptive-compound › catalogue-propername › kosa-corpus-gap › residue).
 
 | Stage | Signal → what it proves | Source |
@@ -33,6 +36,7 @@ descriptive-compound › catalogue-propername › kosa-corpus-gap › residue).
 | **3. Descriptive gloss** | German gloss is a `dessen…/deren…` bahuvrīhi paraphrase → a compound the splitter missed | own `pwg_german_glosses` |
 | **4. Normalization re-join** | the word's confusion-collapsed skeleton key matches an attested headword in another dictionary **within edit distance ≤ 2** → a spelling/OCR/sandhi variant of an attested word; the same key resolves each `= {#X#}` xref target | reused `slp1util.confusion_key` + `edit_distance` |
 | **5. v2 source fallback** | when 1–4 are silent: v2 `src_category = ms_catalogue_propernoun` → a catalogue name/title (`catalogue-propername`); `= kosa_nighantu_not_digitised` → attested in a koṣa PWG names but not digitised (`kosa-corpus-gap`) | v2 `src_category` |
+| **6. DCS corpus attestation** | the word is an attested lemma in the Digital Corpus of Sanskrit → a real **text-attested** word (`corpus-attested`), the strongest ground truth — wins the precedence. Its inverse defines the residue: a word confirmed **absent** from the corpus is a genuine ghost, not a mere dictionary gap | reused csl-atlas `data/dcs/dcs_lemma_summary.json` (SLP1, DCS-2021) |
 
 **Stage 4 reuses, does not re-implement.** The confusion-collapsing SLP1 skeleton key is
 [`SanskritSpellCheck/detectors/slp1util.py`](https://github.com/gasyoun/SanskritSpellCheck/blob/main/detectors/slp1util.py)
@@ -46,14 +50,22 @@ us record the **actual matched headword** rather than a bare dict code.
 
 | Verdict | Count | % | Meaning |
 |---|---:|---:|---|
-| **spelling-variant** | 293 | 37.7 % | variant of an attested word (`variant_of` names it) |
-| **propername** | 199 | 25.6 % | PWG `N. pr.` / `Titel …` / `Name eines …` — a name or work title |
-| **compositional** | 171 | 22.0 % | compound (incl. greedy-decomposed) / regular derivative |
-| **misreading** | 38 | 4.9 % | PWG flags a wrong reading / emendation / dialect variant |
-| **xref-attested** | 24 | 3.1 % | PWG `= X` where X is an attested synonym |
+| **spelling-variant** | 284 | 36.6 % | variant of an attested word (`variant_of` names it) |
+| **propername** | 198 | 25.5 % | PWG `N. pr.` / `Titel …` / `Name eines …` — a name or work title |
+| **compositional** | 168 | 21.6 % | compound (incl. greedy-decomposed) / regular derivative |
+| **misreading** | 37 | 4.8 % | PWG flags a wrong reading / emendation / dialect variant |
 | **catalogue-propername** | 23 | 3.0 % | (stage 5) cited only from a manuscript catalogue |
-| **residue** | 16 | 2.1 % | no signal fired → genuine ghost-word candidate (the human list) |
+| **xref-attested** | 21 | 2.7 % | PWG `= X` where X is an attested synonym |
+| **corpus-attested** | 17 | 2.2 % | (stage 6) attested in the DCS corpus → a real word missing only from *dictionaries* |
+| **residue** | 16 | 2.1 % | no signal fired **and** absent from DCS → genuine ghost-word candidate (the human list) |
 | **kosa-corpus-gap** | 13 | 1.7 % | (stage 5) attested in a non-digitised koṣa |
+
+**Stage 6 confirms rather than shrinks.** DCS attestation reclassifies **17** core words to
+`corpus-attested` (real words the corpus attests but no dictionary lexicalised — an interesting
+category in its own right), and — the decisive result — **0 of the 16 residue words appear in
+DCS**. So the residue is not merely absent from dictionaries; it is absent from the ~5.7M-token
+corpus too. That is the strongest available confirmation that these 16 are genuine ghosts, and
+it means the automated floor really is 16 — no further signal we hold moves it.
 
 The 16 residue: mostly transliterated **foreign toponyms** from Weber's Berlin-MS catalogue
 (`isaPahARa` = Isfahan, `pArAsapuli` = Persepolis, `oqISadeSa` = Odisha, `KamBAyatabindara` =
@@ -74,7 +86,7 @@ The full verdict × `src_category` cross-tab is in the summary JSON.
 
 - [`pwg_ghostword_triage.tsv`](pwg_ghostword_triage.tsv) — every pwg-unique word: `k1 · core ·
   verdict · tags · variant_of · variant_dicts · xref_target · compound_parts · v2_src_category ·
-  accented · gloss`.
+  dcs_band · accented · gloss`.
 - [`pwg_ghostword_residue.tsv`](pwg_ghostword_residue.tsv) — the **16-word review list**: `k1 ·
   accented (<k2>) · gloss`, ready to drop into a `/review-sheet` (see the toponym/technical make-up
   above).
@@ -87,9 +99,15 @@ The full verdict × `src_category` cross-tab is in the summary JSON.
   filter is what keeps precision. A spot-check of the spelling-variant bucket found every sampled
   match a genuine variant, but the verdict is a **machine judgement** — the `variant_of` /
   `compound_parts` columns exist so a human can confirm, not so the word is deleted.
-- Greedy decomposition is **string-level** — it does not undo sandhi at the compound join, so a
-  handful of sandhi-boundary compounds (`caturTa+AraRyaka`) stay in the residue; the deferred
-  **stage 6** (vidyut sandhi-aware split) + DCS corpus attestation would clear those.
+- Greedy decomposition is **string-level** — it does not undo sandhi at the compound join, so the
+  one sandhi-boundary compound in the residue (`bfhatsUryasidDAnt` = Bṛhat-sūryasiddhānta) is not
+  auto-split. **vidyut-cheda was tried** for this and rejected: on these rare out-of-corpus words
+  it either returns the word whole or mis-segments it (`bfhatsUryasidDAnt` → `bfhat·sUryas·idDAn·t`,
+  not the valid `bfhat·sūryasiddhānta`), so wiring it would add a heavy dependency for no reliable
+  gain. That single title is left for the human — cheaper than a wrong split.
+- DCS attestation is exact-SLP1 lemma membership against the DCS-2021 release; a corpus token under
+  a variant spelling would be missed, so `corpus-attested` is a lower bound and the residue's
+  corpus-absence is (like everything here) a strong signal, not a proof.
 - A `propername`/`compositional` word may also be a variant; the `tags` column keeps every signal,
   the `verdict` keeps only the highest-precedence one.
 

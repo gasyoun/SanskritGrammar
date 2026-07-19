@@ -1,49 +1,57 @@
 {
-  "study": "H1323 — PWG ghost-word triage cascade (stages 1-4), on the H1310 v2 shortlist",
+  "study": "H1323 — PWG ghost-word triage cascade (stages 1-6), on the H1310 v2 shortlist",
   "as_of": "2026-07-19",
   "confusion_key_reused": "SanskritSpellCheck detectors/slp1util.confusion_key",
-  "pwg_unique_total": 2270,
+  "dcs_set_reused": "csl-atlas data/dcs/dcs_lemma_summary.json",
+  "pwg_unique_total": 2266,
   "core_absent_from_every_dict": 777,
   "core_by_verdict": {
-    "spelling-variant": 293,
-    "propername": 199,
-    "compositional": 171,
-    "misreading": 38,
-    "xref-attested": 24,
+    "spelling-variant": 284,
+    "propername": 198,
+    "compositional": 168,
+    "misreading": 37,
     "catalogue-propername": 23,
+    "xref-attested": 21,
+    "corpus-attested": 17,
     "residue": 16,
     "kosa-corpus-gap": 13
   },
   "core_residue": 16,
+  "core_dcs_attested": 17,
+  "residue_dcs_attested": 0,
   "core_verdict_vs_v2_src_category": {
     "spelling-variant": {
-      "kosa_nighantu_not_digitised": 159,
+      "kosa_nighantu_not_digitised": 152,
       "ms_catalogue_propernoun": 65,
-      "scholarly_journal_technical": 65,
+      "scholarly_journal_technical": 63,
       "other_or_none": 4
     },
     "propername": {
       "ms_catalogue_propernoun": 133,
       "scholarly_journal_technical": 54,
-      "kosa_nighantu_not_digitised": 12
+      "kosa_nighantu_not_digitised": 11
     },
     "compositional": {
-      "scholarly_journal_technical": 67,
+      "scholarly_journal_technical": 64,
       "ms_catalogue_propernoun": 52,
       "kosa_nighantu_not_digitised": 50,
       "other_or_none": 2
     },
     "misreading": {
-      "scholarly_journal_technical": 17,
+      "scholarly_journal_technical": 16,
       "kosa_nighantu_not_digitised": 13,
       "ms_catalogue_propernoun": 8
     },
     "residue": {
       "scholarly_journal_technical": 16
     },
+    "corpus-attested": {
+      "kosa_nighantu_not_digitised": 10,
+      "scholarly_journal_technical": 7
+    },
     "xref-attested": {
-      "kosa_nighantu_not_digitised": 13,
-      "scholarly_journal_technical": 7,
+      "kosa_nighantu_not_digitised": 11,
+      "scholarly_journal_technical": 6,
       "ms_catalogue_propernoun": 4
     },
     "catalogue-propername": {
@@ -54,13 +62,14 @@
     }
   },
   "all_pwg_unique_by_verdict": {
-    "spelling-variant": 634,
-    "propername": 620,
-    "compositional": 498,
-    "residue": 129,
-    "misreading": 101,
-    "catalogue-propername": 99,
+    "propername": 602,
+    "spelling-variant": 587,
+    "compositional": 461,
+    "corpus-attested": 123,
+    "residue": 121,
+    "misreading": 99,
     "kosa-corpus-gap": 95,
-    "xref-attested": 94
+    "catalogue-propername": 90,
+    "xref-attested": 88
   }
 }
