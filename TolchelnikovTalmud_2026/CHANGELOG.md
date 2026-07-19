@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.3] - 2026-07-19
+
+### Fixed
+- **A61 §3.1/§3.3 — the last two PDF-verification findings resolved on the author's "go" ([H1318](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1318-Fable_SanskritGrammar_a61-s31-ocr-typing-reconcile-s33-locator_19.07.26.md), Fable 5 `claude-fable-5`).** §3.1's "typed in Azhivaikkal" origin of digital MW reconciled with the primary sources: the 2008 collaborators' account (https://www.sanskrit-lexicon.uni-koeln.de/talkMay2008/markingMonier.html) credits "Malten and his staff in Azhivaikkal" with MW's initial digitization while pointing back to the 1997 report's own pipeline — Kurzweil OCR at Cologne (~70%, 1995) with the files then corrected to specification in Azhivaikkal; §3.1 now states both stages with both citations (SF1). §3.3's declaration quote gains "(Kapp and Malten 1997, p. 9; typography normalised)" — citation parenthesis only, quoted words and legal framing untouched (SF2). Recorded in [SIGNOFF_A61_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/SIGNOFF_A61_author_pass.md); remaining to 5/5: §8.1 roles confirm + submission-time abstract wording.
+
 ## [0.4.2] - 2026-07-19
 
 ### Fixed
