@@ -91,4 +91,13 @@ Every Kapp–Malten quotation was checked word-by-word against the project PDF (
 
 Gate (b) is otherwise CLOSED: p. 1 locator verified, fair-dealing passed. Remaining to 5/5: the §3.3/§3.1 rulings above (author), §8.1 roles read-and-confirm, submission-time abstract wording.
 
+## §3.1 and §3.3 resolved on the author's "go" — 19-07-2026 ([H1318](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1318-Fable_SanskritGrammar_a61-s31-ocr-typing-reconcile-s33-locator_19.07.26.md), Fable 5 `claude-fable-5`)
+
+The two report-only findings above were resolved from the public record and applied (each vetoable):
+
+- **SF1 — §3.1 typed-vs-OCR reconciled.** The 2008 collaborators' account (Funderburk and Malten 2008, "Marking Monier": "The initial digitization of MW was accomplished by Malten and his staff in Azhivaikkal … and is described in the CDSL document") shows the Azhivaikkal attribution is genuine but names the India correction/completion stage of the 1997 report's own pipeline — Kurzweil OCR at Cologne (~70%, 1995, Kapp and Malten 1997, p. 2), files then corrected to specification in Azhivaikkal. §3.1 now states both stages and cites both sources; the Burnouf double-entry redundancy sentence stands unchanged. The paragraph no longer contradicts the primary source it cites.
+- **SF2 — §3.3 quote locator + normalisation note added.** The declaration quote now carries "(Kapp and Malten 1997, p. 9; typography normalised)" — the minimal amendment consistent with the byte-identical ruling's intent (the quoted words and the legal framing are untouched; only a citation parenthesis is added).
+
+Remaining to 5/5 after this pass: §8.1 roles read-and-confirm and the submission-time abstract wording — plus the standing §10 Amarakosha/print-changes retirement `@DECIDE`.
+
 _Dr. Mārcis Gasūns_
