@@ -57,11 +57,10 @@ other, but where they compete for capacity, the instrument serves the product, n
 
   `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md and execute it.`
 
-- **H1260 — Sangram consolidation policy and ledger**
-
-  Folder: `C:\Users\user\Documents\GitHub\SanskritGrammar` · model: Sonnet 5 (`claude-sonnet-5`)
-
-  `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md and execute it.`
+- **🔴 EXECUTED: [H1260 — Sangram consolidation policy and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)**
+  (Sonnet 5 `claude-sonnet-5`, 19-07-2026). Machine-readable freeze ledger +
+  `article_validate.py` freeze gate installed — see `.ai_state.md` Completed
+  and [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).
 
 - **H1261 — RQ4 go-live**
 

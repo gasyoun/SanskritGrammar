@@ -1,0 +1,849 @@
+{
+  "$schema": "./consolidation_ledger.schema.json",
+  "contract_version": "1.0.0",
+  "freeze": {
+    "active": true,
+    "ruled_by": "Dr. Marcis Gasuns",
+    "ruled_date": "2026-07-18",
+    "ruling_handoff": "MG in-chat ruling, 18-07-2026",
+    "installing_handoff": "H1260",
+    "precedence_rule": "Sangram's 'full cadence' (the general 7C ruling that every research track stays at full production cadence) is superseded, for Sangram only, by this consolidation freeze: 'full cadence' now means consolidation cadence (repair/revise/visa/disposition of the 26 baseline candidates), not new-topic production. Other research tracks are unaffected.",
+    "exit_criterion": "freeze.active flips to false only when every baseline_ids[] row has disposition in {published, revised, rejected, kill_gated} — i.e. disposition == 'unknown' for zero rows.",
+    "baseline_snapshot_date": "2026-07-18",
+    "related_handoffs": [
+      "H1257 (applies 11 of the 26 baseline candidates' w2-core visa decisions; consumed here without duplication once it lands)",
+      "H1229 (DCS-derived-number adversarial re-derivation; source of rederivation_evidence)"
+    ],
+    "counts": {
+      "published_at_freeze": 9,
+      "candidate_at_freeze": 26,
+      "total_at_freeze": 35
+    }
+  },
+  "last_refresh": {
+    "date": "2026-07-19",
+    "commands": [
+      "python scripts/consolidation_ledger_refresh.py",
+      "python scripts/article_validate.py --all",
+      "python -m pytest",
+      "npm run build"
+    ],
+    "build_status": "pass"
+  },
+  "published_context": [
+    {
+      "toc_ref": "SG-MO-002",
+      "art_id": "art:a-stems",
+      "path": "sangram/articles/a-stems/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-MO-028",
+      "art_id": "art:causative",
+      "path": "sangram/articles/causative/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-MO-001",
+      "art_id": "art:declension-overview",
+      "path": "sangram/articles/declension-overview/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-MO-021",
+      "art_id": "art:future",
+      "path": "sangram/articles/future/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-WF-003",
+      "art_id": "art:krt-suffixes",
+      "path": "sangram/articles/krt-suffixes/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-MO-017",
+      "art_id": "art:perfect",
+      "path": "sangram/articles/perfect/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-WF-004",
+      "art_id": "art:taddhita-overview",
+      "path": "sangram/articles/taddhita-overview/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-WF-008",
+      "art_id": "art:tatpurusha",
+      "path": "sangram/articles/tatpurusha/article.manifest.json"
+    },
+    {
+      "toc_ref": "SG-MO-013",
+      "art_id": "art:thematic-present",
+      "path": "sangram/articles/thematic-present/article.manifest.json"
+    }
+  ],
+  "baseline_ids": [
+    {
+      "toc_ref": "SG-SE-004",
+      "art_id": "art:ablative-genitive",
+      "path": "sangram/articles/ablative-genitive/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 7,
+        "refuted": 0,
+        "checked_ids": [
+          "SE004-1",
+          "SE004-2",
+          "SE004-3",
+          "SE004-4",
+          "SE004-5",
+          "SE004-6",
+          "SE004-7"
+        ],
+        "note": "H1229 adversarial re-derivation: 7/7 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-026",
+      "art_id": "art:absolutive",
+      "path": "sangram/articles/absolutive/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO026-1",
+          "MO026-2"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO26'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-019",
+      "art_id": "art:aorist-types",
+      "path": "sangram/articles/aorist-types/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 4,
+        "refuted": 0,
+        "checked_ids": [
+          "MO017-1",
+          "MO017-2",
+          "MO017-3",
+          "MO019-1"
+        ],
+        "note": "H1229 adversarial re-derivation: 4/4 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-018",
+      "art_id": "art:aorist",
+      "path": "sangram/articles/aorist/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 3,
+        "refuted": 0,
+        "checked_ids": [
+          "MO017-1",
+          "MO017-2",
+          "MO018-1"
+        ],
+        "note": "H1229 adversarial re-derivation: 3/3 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO18'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-WF-009",
+      "art_id": "art:bahuvrihi",
+      "path": "sangram/articles/bahuvrihi/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "not_audited",
+        "confirmed": 0,
+        "refuted": 0,
+        "checked_ids": [],
+        "note": "no article-native published number fell inside H1229's 129-check adversarial re-derivation scope; absence of evidence, not evidence of correctness."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-001",
+      "art_id": "art:case-system-overview",
+      "path": "sangram/articles/case-system-overview/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 4,
+        "refuted": 0,
+        "checked_ids": [
+          "SE001-1",
+          "SE001-2",
+          "SE001-3",
+          "SE001-4"
+        ],
+        "note": "H1229 adversarial re-derivation: 4/4 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-WF-006",
+      "art_id": "art:compounds-overview",
+      "path": "sangram/articles/compounds-overview/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 3,
+        "refuted": 0,
+        "checked_ids": [
+          "WF006-2",
+          "WF006-3",
+          "WF006-5"
+        ],
+        "note": "H1229 adversarial re-derivation: 3/3 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'WF06'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-012",
+      "art_id": "art:conjugation-overview",
+      "path": "sangram/articles/conjugation-overview/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 7,
+        "refuted": 0,
+        "checked_ids": [
+          "MO012-1",
+          "MO012-2",
+          "MO012-3",
+          "MO012-4",
+          "MO012-5",
+          "MO012-6",
+          "MO012-7"
+        ],
+        "note": "H1229 adversarial re-derivation: 7/7 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO12'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-006",
+      "art_id": "art:consonant-stems",
+      "path": "sangram/articles/consonant-stems/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "not_audited",
+        "confirmed": 0,
+        "refuted": 0,
+        "checked_ids": [],
+        "note": "no article-native published number fell inside H1229's 129-check adversarial re-derivation scope; absence of evidence, not evidence of correctness."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO06'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-024",
+      "art_id": "art:gerundive",
+      "path": "sangram/articles/gerundive/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO024-1",
+          "MO024-2"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-008",
+      "art_id": "art:imperative-optative",
+      "path": "sangram/articles/imperative-optative/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 4,
+        "refuted": 0,
+        "checked_ids": [
+          "MO012-5",
+          "SE008-1",
+          "SE008-2",
+          "SE008-3"
+        ],
+        "note": "H1229 adversarial re-derivation: 4/4 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-016",
+      "art_id": "art:imperfect",
+      "path": "sangram/articles/imperfect/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO016-1",
+          "MO016-2"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO16'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-025",
+      "art_id": "art:infinitive",
+      "path": "sangram/articles/infinitive/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO025-1",
+          "MO025-2"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-003",
+      "art_id": "art:instrumental-dative",
+      "path": "sangram/articles/instrumental-dative/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 7,
+        "refuted": 0,
+        "checked_ids": [
+          "SE003-1",
+          "SE003-2",
+          "SE003-3",
+          "SE003-4",
+          "SE003-5",
+          "SE003-6",
+          "SE003-7"
+        ],
+        "note": "H1229 adversarial re-derivation: 7/7 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-013",
+      "art_id": "art:karaka-case",
+      "path": "sangram/articles/karaka-case/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 14,
+        "refuted": 0,
+        "checked_ids": [
+          "BASE-5",
+          "SE013-1",
+          "SE013-10",
+          "SE013-11",
+          "SE013-12",
+          "SE013-13",
+          "SE013-2",
+          "SE013-3",
+          "SE013-4",
+          "SE013-5",
+          "SE013-6",
+          "SE013-7",
+          "SE013-8",
+          "SE013-9"
+        ],
+        "note": "H1229 adversarial re-derivation: 14/14 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-WF-002",
+      "art_id": "art:krt-overview",
+      "path": "sangram/articles/krt-overview/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 4,
+        "refuted": 0,
+        "checked_ids": [
+          "WF002-1",
+          "WF002-2",
+          "WF002-3",
+          "WF002-4"
+        ],
+        "note": "H1229 adversarial re-derivation: 4/4 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-005",
+      "art_id": "art:locative",
+      "path": "sangram/articles/locative/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 6,
+        "refuted": 0,
+        "checked_ids": [
+          "SE004-5",
+          "SE005-1",
+          "SE005-2",
+          "SE005-3",
+          "SE005-4",
+          "SE005-5"
+        ],
+        "note": "H1229 adversarial re-derivation: 6/6 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-002",
+      "art_id": "art:nominative-accusative",
+      "path": "sangram/articles/nominative-accusative/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 6,
+        "refuted": 0,
+        "checked_ids": [
+          "SE002-1",
+          "SE002-2",
+          "SE002-3",
+          "SE002-4",
+          "SE002-5",
+          "SE002-6"
+        ],
+        "note": "H1229 adversarial re-derivation: 6/6 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-027",
+      "art_id": "art:passive",
+      "path": "sangram/articles/passive/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO012-6",
+          "SE013-10"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO27'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-006",
+      "art_id": "art:past-tenses",
+      "path": "sangram/articles/past-tenses/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "not_audited",
+        "confirmed": 0,
+        "refuted": 0,
+        "checked_ids": [],
+        "note": "no article-native published number fell inside H1229's 129-check adversarial re-derivation scope; absence of evidence, not evidence of correctness."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-022",
+      "art_id": "art:present-perfect-participles",
+      "path": "sangram/articles/present-perfect-participles/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 4,
+        "refuted": 0,
+        "checked_ids": [
+          "MO022-1",
+          "MO022-2",
+          "MO022-3",
+          "MO022-4"
+        ],
+        "note": "H1229 adversarial re-derivation: 4/4 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-WF-011",
+      "art_id": "art:preverbs",
+      "path": "sangram/articles/preverbs/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "refuted_fixed",
+        "confirmed": 3,
+        "refuted": 1,
+        "checked_ids": [
+          "WF011-1",
+          "WF011-2",
+          "WF011-3",
+          "WF011-4"
+        ],
+        "note": "H1229 found WF011-2: corrected: **17 322** — ut cell copied from the exact-string column; every other cell is the leading-upasarga fold"
+      },
+      "visa_evidence": {
+        "status": "not_submitted",
+        "sheet": null,
+        "note": ""
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-010",
+      "art_id": "art:pronouns",
+      "path": "sangram/articles/pronouns/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 2,
+        "refuted": 0,
+        "checked_ids": [
+          "MO010-1",
+          "MO010-2"
+        ],
+        "note": "H1229 adversarial re-derivation: 2/2 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO10'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-MO-023",
+      "art_id": "art:ta-na-participles",
+      "path": "sangram/articles/ta-na-participles/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "confirmed",
+        "confirmed": 1,
+        "refuted": 0,
+        "checked_ids": [
+          "WF002-3"
+        ],
+        "note": "H1229 adversarial re-derivation: 1/1 checks CONFIRMED, 0 REFUTED."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'MO23'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-SE-009",
+      "art_id": "art:voice",
+      "path": "sangram/articles/voice/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "not_audited",
+        "confirmed": 0,
+        "refuted": 0,
+        "checked_ids": [],
+        "note": "no article-native published number fell inside H1229's 129-check adversarial re-derivation scope; absence of evidence, not evidence of correctness."
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'V'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    },
+    {
+      "toc_ref": "SG-WF-001",
+      "art_id": "art:word-structure-overview",
+      "path": "sangram/articles/word-structure-overview/article.manifest.json",
+      "revision_state": "candidate",
+      "rederivation_evidence": {
+        "status": "refuted_fixed",
+        "confirmed": 4,
+        "refuted": 1,
+        "checked_ids": [
+          "WF001-1",
+          "WF001-2",
+          "WF001-3",
+          "WF001-4",
+          "WF001-5"
+        ],
+        "note": "H1229 found WF001-5: corrected: **16,9 %** — rounding: true 16.857 % was truncated to 16.8 instead of rounded to 16.9"
+      },
+      "visa_evidence": {
+        "status": "approved",
+        "sheet": "sangram-w2-core-11candidates-visa_17.07.26",
+        "note": "vote='approve' on local review sheet 'sangram-w2-core-11candidates-visa_17.07.26' (short code 'WF01'); apply via its owning handoff, never by analogy."
+      },
+      "validator_evidence": {
+        "article_validate": "pass",
+        "checked_at": "2026-07-19"
+      },
+      "disposition": "unknown",
+      "blocking_note": "",
+      "source_links": []
+    }
+  ]
+}
