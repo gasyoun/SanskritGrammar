@@ -1,31 +1,31 @@
 {
   "pwg_lexicon_only_total": 32690,
-  "ghostword_shortlist_total": 2298,
-  "ghostword_also_in_pw_same_source": 1510,
+  "ghostword_shortlist_total": 2294,
+  "ghostword_also_in_pw_same_source": 1506,
   "ghostword_absent_from_every_dict": 788,
   "ghostword_by_source_category": {
     "scholarly_journal_technical": 834,
     "ms_catalogue_propernoun": 768,
-    "kosa_nighantu_not_digitised": 678,
+    "kosa_nighantu_not_digitised": 674,
     "other_or_none": 18
   },
   "verdict_counts": {
     "text-attested": 12606,
-    "kosa-corroborated": 10724,
-    "dict-lexical": 7062,
-    "pwg-unique": 2298
+    "kosa-corroborated": 10812,
+    "dict-lexical": 6978,
+    "pwg-unique": 2294
   },
   "verdict_by_pwg_text_sibling": {
     "dict-lexical": {
-      "no_text_sibling": 6959,
-      "with_text_sibling": 103
+      "no_text_sibling": 6876,
+      "with_text_sibling": 102
     },
     "kosa-corroborated": {
-      "no_text_sibling": 10500,
-      "with_text_sibling": 224
+      "no_text_sibling": 10587,
+      "with_text_sibling": 225
     },
     "pwg-unique": {
-      "no_text_sibling": 2192,
+      "no_text_sibling": 2188,
       "with_text_sibling": 106
     },
     "text-attested": {
@@ -42,6 +42,7 @@
     "abch": 3455,
     "skd": 3430,
     "ap90": 2393,
+    "amar": 2208,
     "bhs": 1606,
     "armh": 1592,
     "gra": 547,
@@ -53,6 +54,7 @@
     "abch": 11580,
     "acph": 1453,
     "acsj": 634,
+    "amar": 9788,
     "ap": 88869,
     "ap90": 34277,
     "armh": 6673,
@@ -64,7 +66,7 @@
     "skd": 40817,
     "vcp": 48636
   },
-  "novel_kosa_corroboration_words": 10010,
+  "novel_kosa_corroboration_words": 10032,
   "pwg_unique_rescued_by_normalisation": 73,
   "kosa_dicts": [
     "armh",
@@ -73,7 +75,8 @@
     "abch",
     "acph",
     "acsj",
-    "nmmb"
+    "nmmb",
+    "amar"
   ],
   "text_dicts": [
     "mw",
@@ -83,5 +86,9 @@
     "ap",
     "pw"
   ],
-  "amara_gap": "AK not digitised in csl-orig; PWG sources col records AK citations directly"
+  "kosa_extra_dicts": [
+    "amar"
+  ],
+  "amara_gap": "H1326: AK (Amarakosha) now joined via kosa_extra/amar.txt (sanskrit-kosha/kosha, GNU GPL v3.0) -- was a gap in v2, resolved in v3.",
+  "still_unresolved_kosa_gap": "H1326: Rajanighantu (RAJAN), Trikandashesha (TRIK), generic Nighantu (NIGH) remain undigitised as bulk lemma-tagged headword sets -- every source checked is unsegmented sandhi-joined verse (see kosa_extra/README.md for the full source audit)."
 }
