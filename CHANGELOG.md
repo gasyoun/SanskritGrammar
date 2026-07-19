@@ -19,6 +19,14 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.98.0] - 2026-07-19
+
+### Added
+- **Visa review sheets get a generator; the copy-paste skeleton is retired (H1315, Opus 4.8 `claude-opus-4-8`).** Every «виза» sheet in [`review/`](https://github.com/gasyoun/SanskritGrammar/tree/main/review) was until now a hand-authored copy of the same inline `<style>`/`<script>` skeleton — the exact drift the org review-sheet standard exists to kill. [`scripts/build_visa_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_visa_sheet.py) now builds a sheet from a JSON spec through [`csl-pyutil`](https://github.com/sanskrit-lexicon/csl-pyutil)'s `render_review_sheet` at the v0.3.0 standard: visible card-id chips (V3), `title_href` where a stable URL exists (V4), taller notes (V6), Cyrillic highlighting (V7 — these sheets are heavily Russian), and a save-path banner naming the sheet_id + export destination (V8). **No rating row** (V1/V5): visa sheets are categorical approve/reject/defer and do not score on a scale. `decided` stays the integer count the org decisions contract uses.
+  - **Contract:** `review/specs/<sheet_id>.json` is the hand-edited source, `review/<sheet_id>_review.html` is generated and never hand-edited — the same split [`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py) already uses. `generated` is read from the spec and never stamped at build time, so a rebuild cannot silently re-date a sheet a human already voted; an already-voted sheet is never regenerated in place, which would orphan its `decisions.json`.
+  - **Fidelity proof, pinned as a test.** [`tests/test_visa_sheet_generator.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_visa_sheet_generator.py) round-trips the tracked, already-applied `sanskritgrammar-sg-mo-021-future_visa` sheet (H1180, 9 cards) through the generator and asserts identical sheet_id, card ids and order, titles, question HTML and panels — content-equal while the shell grows from 22,570 to 29,595 bytes. A deliberate one-card mutation is caught, so the comparison is not self-satisfying. [`scripts/visa_sheet_spec_from_html.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/visa_sheet_spec_from_html.py) is the migration aid that reads an old sheet back into a spec (hand-copying dense Russian card HTML would risk silent transcription drift).
+  - Existing sheets are **not** rewritten en masse — only new ones use the generator, and the two sheets whose votes H1316 is applying were deliberately left untouched.
+
 ## [0.97.0] - 2026-07-19
 
 ### Changed

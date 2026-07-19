@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 11-07-2026_
+_Created: 05-07-2026 · Last updated: 19-07-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Apte's syntax reference, Bühler's exercise course, Gasūns's
@@ -290,6 +290,33 @@ skill audits a whole tree of `.doc`/`.docx`/`.pdf` for whether each already has 
 and **batch-OCRs any image-only PDF** that has no text layer (detected with `pdftotext`,
 OCR'd with `ocrmypdf` + tesseract, langs `san+rus+deu+eng`) to a `<name>.ocr.pdf` before
 conversion.
+
+## Review sheets («визы») — [`scripts/build_visa_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_visa_sheet.py)
+
+An author «виза» is the human gate before a Sangram article is published: a
+self-contained HTML sheet of approve/reject/defer cards that exports a
+`<sheet_id>_decisions.json`. Sheets live in [`review/`](https://github.com/gasyoun/SanskritGrammar/tree/main/review).
+
+**The generator is the only sanctioned way to author a new sheet** (H1315). Every
+sheet predating it was a hand-authored copy-paste of the same inline
+`<style>`/`<script>` skeleton — the drift the org review-sheet standard exists to
+kill. The shell now comes from one place, [`csl-pyutil`](https://github.com/sanskrit-lexicon/csl-pyutil)'s
+`render_review_sheet` at the v0.3.0 standard (visible card-id chips, taller notes,
+save-path banner, Cyrillic highlighting; no rating row — visa sheets are
+categorical, they do not score on a scale).
+
+| Command | What it does |
+|---|---|
+| `python scripts/build_visa_sheet.py review/specs/<sheet_id>.json` | Build a sheet. `review/specs/<sheet_id>.json` is the hand-edited SOURCE; `review/<sheet_id>_review.html` is GENERATED and must never be edited by hand. |
+| `python scripts/visa_sheet_spec_from_html.py <sheet>.html -o review/specs/<id>.json` | Migration aid — read an old hand-authored sheet back into a spec. |
+
+Two standing rules: `generated` is read from the spec and never stamped at build
+time, so a rebuild cannot silently re-date a sheet a human already voted; and an
+**already-voted sheet is never regenerated in place**, which would orphan its
+`decisions.json`. Existing sheets are not being rewritten en masse — only new ones
+use the generator. [`tests/test_visa_sheet_generator.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_visa_sheet_generator.py)
+pins the fidelity claim: an existing sheet round-trips through the generator with
+identical sheet_id, card ids, titles, questions and panels.
 
 ## Use cases
 
