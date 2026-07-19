@@ -51,29 +51,34 @@ Breakdown of all 124 shared clusters:
 ### Q1 — Where did **Bühler** get *his* sentences? (answered)
 
 **He wrote about nine tenths of them himself.** Of his 585 Devanāgarī exercise sentences
-(603 entries minus Lesson XLVIII's 18 alphabet-chart rows), matched against DCS 2026 and
-Böhtlingk's *Indische Sprüche* by
+(603 entries minus Lesson XLVIII's 18 alphabet-chart rows), matched against DCS 2026,
+Böhtlingk's *Indische Sprüche* and GRETIL by
 [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py):
 
 | Verdict | n | share |
 |---|---:|---:|
-| verbatim **quotation** | 50 | 8.5 % |
-| **adapted** (real verse, a word changed) | 16 | 2.7 % |
-| **invented** grammar drill | 518 | 88.5 % |
-| unknown (hit too short to judge) | 1 | 0.2 % |
+| verbatim **quotation** | 51 | 8.7 % |
+| **adapted** (real verse, a word changed) | 17 | 2.9 % |
+| **invented** grammar drill | 515 | 88.0 % |
+| unknown (hit too short to judge) | 2 | 0.3 % |
 
 Three qualifications matter more than the headline:
 
 - **Attestation is late-book.** Nothing before Lesson XII is attested; lessons I–XXIV run
-  6.9 % attested, XXV–XLVII run 17.6 %. Bühler writes his own prose while paradigms are
+  7.2 % attested, XXV–XLII run 18.1 %. Bühler writes his own prose while paradigms are
   being learned and switches to literature once the student can read it.
-- **The unit of borrowing is the verse, not the sentence.** 85 % of attested sentences sit
+- **The unit of borrowing is the verse, not the sentence.** 82 % of attested sentences sit
   in consecutive runs — Bühler splits one śloka across two exercise numbers (and sometimes
-  runs several verses back to back). The 66 attested sentences are really ~39 borrowed verses.
+  runs several verses back to back). The 68 attested sentences are really ~41 borrowed verses.
 - **The source is gnomic literature, not the Veda.** Subhāṣita/nīti (*Indische Sprüche* 28,
-  Hitopadeśa 8, Bhartṛhari 4) plus dharmaśāstra (13) are four fifths of the hits; kāvya is
+  Hitopadeśa 8, Bhartṛhari 4) plus dharmaśāstra (14) are four fifths of the hits; kāvya is
   nearly absent. And the sentences *naming* Kālidāsa and Pāṇini are invented — they are
   about those authors, not from them.
+- **That last finding survived a deliberate attempt to break it.** Adding GRETIL's 56 kāvya
+  texts — Raghuvaṃśa, Kumārasaṃbhava, Māgha, Bhāravi, Bāṇa, Daṇḍin and Aśvaghoṣa among them,
+  85,401 verse lines, an 11 % bigger haystack — moved the invention share by 0.5 pp and
+  produced exactly **one** new kāvya attestation — Bhaṭṭi's *Rāvaṇavadha*, the one kāvya
+  written to illustrate Pāṇinian grammar. The single poem Bühler drew on is itself a grammar.
 
 `लोभात्क्रोधः प्रभवति…` is confirmed a verbatim *Hitopadeśa* quotation. `त्वं जीव शरदः शतम्`
 is **adapted, not quoted**: the formula is genuinely Vedic and recurs across the gṛhya
@@ -206,9 +211,10 @@ Inputs, all already committed: [`scripts/data/matches.json`](https://github.com/
   larger than 124 clusters. The fidelity verdicts inherit this: "identical/orthographic" is
   reliable; the small "modified" bucket is contaminated by extraction-boundary truncation, hand-flagged above.
 - Q1 (primary-source provenance) is now answered above; its own limitations — chiefly that
-  `invented` means *not found in DCS + Indische Sprüche*, never *composed by Bühler* — are
-  set out in [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md).
+  `invented` means *not found in DCS + Indische Sprüche + GRETIL*, never *composed by
+  Bühler* — are set out in [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md),
+  along with the corpus-expansion test that put that caveat on a much firmer footing.
 
-_Analysis by Opus 4.8 (`claude-opus-4-8`), 17-07-2026 (H1211); Q1/axis 6 added 19-07-2026 (H1212). Data pipeline: H311/H327._
+_Analysis by Opus 4.8 (`claude-opus-4-8`), 17-07-2026 (H1211); Q1/axis 6 added 19-07-2026 (H1212), corpus-extended and corrected the same day (H1344). Data pipeline: H311/H327._
 
 _Dr. Mārcis Gasūns_
