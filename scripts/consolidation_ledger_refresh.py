@@ -11,10 +11,11 @@ sangram/editorial/data/consolidation_ledger.json from the repo's own state and
 NEVER touches the human-verdict fields (`disposition`, `blocking_note`,
 `source_links`) — those are read from the existing ledger (if any) and written
 back byte-identical. `visa_evidence` is a hybrid: mechanically re-derived from
-the local (gitignored, machine-local) `review/*_decisions.json` sheets when
-present, else preserved from the prior ledger untouched (never silently
-downgraded to "unknown" just because this machine lacks the local review/
-directory — e.g. a CI runner).
+`review/*_decisions.json` sheets (tracked in git since H1273/#455, which
+reversed H856's earlier gitignore) when present, else preserved from the prior
+ledger untouched (defensive only now that review/ is committed — this branch
+still protects a future re-gitignore or a shallow/sparse checkout that omits
+review/, never silently downgrading to "unknown" in that case).
 
 The frozen 26-ID baseline itself is a LITERAL, HARDCODED list (FROZEN_BASELINE
 below) — it is fixed at the moment the freeze was ruled and must never be
