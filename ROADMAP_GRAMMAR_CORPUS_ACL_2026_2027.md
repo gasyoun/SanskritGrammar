@@ -1,6 +1,8 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 18-07-2026_
+_Created: 10-07-2026 · Last updated: 19-07-2026_
+
+> _Revision 19-07-2026 ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md), Fable 5 `claude-fable-5`): executed the 18-07-2026 **keep-both ruling** — Sangram is the product of record for the corpus-grammar line; Track C's two ACL papers are its **publication arm**, and the former "four spines" S1–S4 are demoted to **instruments** that feed Sangram (labels kept for link stability). Measured basis, 19-07-2026 against `origin/main`: `sangram/` accounts for 204 of 596 files touched since 14-07-2026 — **34.2 %, the single largest stream of work in the repo, 3.2× the next bucket** (`scripts/`, 64). The S1 τ result is already consumed as evidence by three Sangram programme docs; the agreement-metric method of the S2 paper is already practised inside `sangram/articles/tatpurusha/` — the papers productionise analyses that exist as one-offs. The portfolio order below (M03 first) is untouched: "Sangram primary" ranks Sangram over its instruments, not over the monograph._
 
 This is the repository's **authoritative portfolio-ordering document**. It says which result
 comes first and how the five active tracks share capacity. It does not duplicate their detailed
@@ -9,8 +11,9 @@ their own sources of truth, linked below.
 
 The portfolio outcome for 2026–2027 is: finish the **M03 GasunsDhatu monograph** for publisher
 preparation; turn Sangram's high-velocity candidate corpus into a verified publication set;
-launch the already-built RQ4 learner evaluation; keep the comparative research programme moving;
-and maintain the public grammar archive without opening a new rights programme this cycle.
+launch the already-built RQ4 learner evaluation; keep the comparative research programme moving
+as **Sangram's publication arm**; and maintain the public grammar archive without opening a new
+rights programme this cycle.
 
 ---
 
@@ -21,13 +24,21 @@ and maintain the public grammar archive without opening a new rights programme t
 | **1** | **M — M03 GasunsDhatu monograph** | Complete author-visaed draft; the remaining bottleneck is the 1,127-finding RWS line edit, then two mechanical pre-submission passes | [`GasunsDhatu_2014/revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md) and the [press-readiness checklist](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md) | Highest-labelled priority; hybrid agent/human line edit; manuscript freeze **31-10-2026**; contact «Нестор-История» in **November 2026** |
 | **2** | **S — Sangram corpus grammar** | 35 article manifests: 9 published, 26 candidates; the 18-07 adversarial re-derivation found 3 refuted numerical claims, 2 fixed and 1 routed to a draft fix | [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) and the [DCS-derived-number ledger](https://github.com/gasyoun/SanskritGrammar/blob/main/DCS_DERIVED_NUMBERS_LEDGER_2026.md) | **Consolidation freeze:** no new topic/article manifests until all 26 baseline candidates reach a documented published, revised, rejected, or kill-gated disposition |
 | **3** | **P — Digital Sanskrit pedagogy / RQ4** | Protocol, consent, item bank, and Systema harness complete | [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) and [`docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) | **GO now:** activate the existing RQ4 feature and recruit exactly under the approved protocol |
-| **4** | **C — Comparative corpus / papers** | S1–S4 evidence and methods remain live; A60/A61 and other already-open paper work continue | This document §§1–4 and [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) | Full cadence continues alongside M03; M03 is the highest-labelled priority, not an exclusivity rule |
+| **4** | **C — Comparative corpus / papers, the publication arm of Sangram** | S1–S4 are **instruments feeding Sangram** (§2), no longer independent workstreams; the two ACL papers productionise analyses Sangram already consumes or practises; A60/A61 and other already-open paper work continue | This document §§1–4 and [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) | Full cadence continues alongside M03; M03 is the highest-labelled priority, not an exclusivity rule |
 | **5** | **A — Archive and reading site** | Public Docusaurus archive and source/concordance pipelines are operational | [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md) | Maintenance and correctness work only; the existing third-party-rights caveat remains, with no new rights audit this cycle |
 
 The specific Sangram freeze overrides the general full-cadence ruling: **full cadence for Sangram
 means verification, visa, repair, and disposition of the 26-candidate baseline—not new-topic
 production**. Comparative papers, archive maintenance, and other research may continue at full
 cadence without waiting for M03.
+
+**How tracks S and C relate (ruling of 18-07-2026, keep both).** Sangram is the product;
+Track C is its publication arm. The corpus-grammar line has one factory — 35 article manifests,
+the single largest stream of work in the repo (34.2 % of all files touched since 14-07-2026,
+measured 19-07-2026) — and the S1–S4 instruments of §2 exist to feed it: their datasets ground
+Sangram's numbers, and the two ACL papers of §4 turn analyses Sangram already consumes or
+practises into peer-reviewed method statements. Neither track is cancelled in favour of the
+other, but where they compete for capacity, the instrument serves the product, not the reverse.
 
 ### Portfolio waves
 
@@ -85,9 +96,23 @@ Q3 below requires a new derivation.
 
 ---
 
-## 2. The four spines
+## 2. The four instruments
+
+Formerly "the four spines" — four independent comparative workstreams. Demoted by the
+18-07-2026 keep-both ruling: S1–S4 are now **instruments that feed Sangram**, the corpus
+grammar of record, and each is described below by what it delivers to Sangram. The S1–S4
+labels survive unchanged for link stability. None of this adds a Sangram topic or article
+manifest — the consolidation freeze (§0, ruling 2) binds this section too.
 
 ### S1 — Textbook sequencing corpus (highest leverage, lowest cost)
+
+**Feeds Sangram:** the sequencing evidence base behind Sangram's pedagogical ordering claims.
+Its τ result ([`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md))
+is already consumed as evidence by three Sangram programme docs —
+[`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx),
+[`sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_MORPHOLOGY_PROGRAM_W2.mdx),
+[`sangram/SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx) —
+though no Sangram *article* cites it yet. Paper 1 (§4) productionises this instrument.
 
 Bühler, Knauer, Kochergina, Apte are **four independent orderings of the same grammar**, and
 Whitney's 1,316 § is a ready-made spine to align them against. Nobody has measured which topics
@@ -152,6 +177,16 @@ Central table completion is gated on the H768 full harvest + the cross-grammar e
 
 ### S2 — Morphoclass disagreement study
 
+**Feeds Sangram:** the agreement-metric method this instrument's paper proposes to formalise is
+**already practised inside Sangram** —
+[`sangram/articles/tatpurusha/index.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/index.mdx)
+reports Cohen κ = 0,929 (n = 120) and κ = 0,720 (n = 93) over two LLM annotator passes on
+compound classification, echoed in
+[`sangram/articles/compounds-overview/index.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/compounds-overview/index.mdx).
+That is a *different* κ from this instrument's own three-scheme agreement over the 876-root
+morphoclass crosswalk (Q3.4), **which has never been run** — Paper 2 (§4) formalises the method
+Sangram already uses in practice and delivers the missing S2 number.
+
 Three classifications of the same verbal roots — Zaliznyak 1975, Gasūns 2014, Tolchelnikov 2026 —
 already crosswalked over 876 roots on Whitney root numbers, with the lineage argued in
 [`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md).
@@ -165,6 +200,10 @@ already crosswalked over 876 roots on Whitney root numbers, with the lineage arg
 
 ### S3 — Pāṇini ↔ Western grammar alignment (moonshot, gated)
 
+**Feeds Sangram:** sūtra-provenanced derivations for the apparatus of *existing* Sangram
+articles — the pilot's sūtra-lookup harness is already the natural citation backend wherever an
+article invokes a Pāṇinian rule. No new article is implied; the freeze binds.
+
 Map Whitney's descriptive statements to Aṣṭādhyāyī sūtras; measure what each tradition says that
 the other cannot.
 
@@ -175,6 +214,9 @@ the other cannot.
   §§98–260; ch. XI aorist §§824–930) with a hard kill-gate, not a year-long commitment.
 
 ### S4 — Phonostatistics / style forensics (fold in, do not paper)
+
+**Feeds Sangram:** nothing directly — this instrument's answer already sits in the M03 monograph
+(Track M), and that is where it stays.
 
 The existing varga-share work already produced its answer: **Cramér's V = 0.037** — essentially no
 association. That is a legitimate negative result, and it belongs in the Dhātu monograph where it
@@ -267,10 +309,20 @@ registered in [`kosha/data/manifest/datasets.json`](https://github.com/gasyoun/k
 
 ---
 
-## 4. Track C — comparative-research delivery plan
+## 4. Track C — the publication arm of Sangram
 
 Full-throttle sizing, per the human decision to promote this repo. Each quarter ends in a
-shippable artifact, and each depends only on the one before it.
+shippable artifact, and each depends only on the one before it. Re-based 19-07-2026 (H1277):
+each item below is stated as **what it delivers to Sangram** — the instruments of §2 mature
+here, and the two papers of Q1 2027 are how Sangram's methods reach peer review. Nothing in
+this section proposes a new Sangram topic or article manifest (freeze, §0 ruling 2): where a
+deliverable touches Sangram, it grounds, cites, or hardens **existing** articles.
+
+**Plainly, as of 19-07-2026:** Q3.1 is done (the agenda memo exists) and Q3.2 is done
+([`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md),
+computed 10-07-2026); Q4.1–Q4.5 are **unclaimed and unstarted** — no TRACER/Passim/RefD
+implementation exists in the repo, and the Q4.4 Whitney↔DCS↔Vidyut crosswalk file does not
+exist. Presenting them otherwise would be false.
 
 ### Q3 2026 (Jul–Sep) — Measure what is already committed
 
@@ -302,10 +354,13 @@ report a κ computed by one person.
 ### Q1 2027 (Jan–Mar) — Two papers
 
 - **Paper 1 (resource/DH).** *Four grammars, one spine: measuring textbook sequencing and exercise
-  reuse in the Sanskrit teaching tradition.* Venue candidates: [NLP4DH](https://aclanthology.org/venues/nlp4dh/)
+  reuse in the Sanskrit teaching tradition.* Productionises the S1 instrument whose τ result three
+  Sangram programme docs already cite as evidence. Venue candidates: [NLP4DH](https://aclanthology.org/venues/nlp4dh/)
   (published the Sanskrit TRACER paper), LaTeCH-CLfL, or CHR. → `@DECIDE D1`.
 - **Paper 2 (method).** *Does the corpus prefer a classification? Adjudicating three
-  morphophonological schemes for Sanskrit verbal roots.* Venue: WSC / ISCLS or SIGMORPHON.
+  morphophonological schemes for Sanskrit verbal roots.* Formalises the agreement-metric method
+  Sangram already practises in its compound-classification articles (§2 S2) and delivers the
+  never-run three-scheme κ. Venue: WSC / ISCLS or SIGMORPHON.
   Contribution = the adjudication framing, which has no precedent.
 - Site: **B3 + B8** (bulk `all.bib`, DOIs).
 - Register both in [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)
