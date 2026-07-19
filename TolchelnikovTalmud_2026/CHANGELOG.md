@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.6] - 2026-07-19
+
+### Changed
+- **A61 abstract — adopted corrigibility sentence APPLIED ([H1322](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1322-Fable_SanskritGrammar_a61-abstract-corrigibility-sentence-applied_19.07.26.md), author-instructed, Fable 5 `claude-fable-5`).** The parked sentence adopted at the sign-off now stands in [00-front-matter.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/00-front-matter.mdx): "…not scale alone but corrigibility: a scholarly object whose sources, identifiers, and procedures a successor can recover." Word count mechanically verified **258 → 256** (inside the 250–300 band); [README.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx) word-count record updated, the evidence gate stays as a historical record. Only submission-time item left: WSC-2027 CfP formatting when rules are published.
+
 ## [0.4.5] - 2026-07-19
 
 ### Added
