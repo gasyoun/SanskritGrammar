@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **PWG full derivation graph — the kṛt half added, unified + homonym-precise (H1282 follow-up, Opus 4.8 `claude-opus-4-8[1m]`).** New [`scripts/pwg_derivation_graph.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_derivation_graph.py) extracts **every** `von`/`Wurzel`/`Stamm {#base#}` note from the committed `pwg.txt` and classifies it into [`data/pwg_derivation_graph/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_derivation_graph) — **28,588 derivations**: **kṛt 8,834** (verbal-root base, the half the taddhita layer excluded) · **taddhita 5,720** · denominal-other 13,509 (denominative verbs / rarer suffixes) · prefixed 525. Homonym-precise (each row carries the entry's `<h>`); root inventory is Whitney's clean 855 (not the contaminated `dhatu_roots.txt`, FINDINGS §130); uses the **immediate** base, fixing the ultimate-root contamination of the Cologne `pwg_etymology` extractor. Supersets the taddhita-only slice. Deterministic, README-of-record.
+
 ## [0.86.0] - 2026-07-19
 
 ### Added

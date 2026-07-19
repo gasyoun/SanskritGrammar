@@ -1,0 +1,18 @@
+{
+  "study": "PWG full derivation graph (von/Wurzel notes, classified, homonym-precise)",
+  "as_of": "2026-07-19",
+  "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
+  "root_inventory": "WhitneyRoots/crosswalk/roots.csv (855 dhātus) — not the contaminated dhatu_roots.txt",
+  "total_derivations": 28588,
+  "by_deriv_kind": {
+    "denominal-other": 13509,
+    "krt": 8834,
+    "taddhita": 5720,
+    "prefixed": 525
+  },
+  "by_base_type": {
+    "nominal": 19229,
+    "root": 8834,
+    "prefix": 525
+  }
+}
