@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.95.0] - 2026-07-19
+
 ### Added
 - **Where Bühler got his exercise sentences — quotation vs adapted vs invented (H1212, Opus 4.8 `claude-opus-4-8`).** Answers Q1 of [`TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md) (comparison axis #6), deferred by [H1211](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1211-Opus_SanskritGrammar_buhler-knauer-kochergina-fidelity-axis-pedagogy_17.07.26.md): the concordance was textbook↔textbook only, and nobody had matched Bühler against **primary Sanskrit literature**. New [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py) matches his 603 Devanāgarī entries against two rights-settled local corpora — DCS 2026 (`dcs_full.sqlite`, 754 726 sandhied sentences, provenance-pinned `04e0778d`) and Böhtlingk's *Indische Sprüche* (`archive.sqlite`, 7 537 sayings) — emitting [`scripts/data/buhler_provenance.{json,csv}`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/buhler_provenance.json). Of **585** exercise sentences (Lesson XLVIII's 18 alphabet-chart rows excluded): **quotation 50 (8.5 %) · adapted 16 (2.7 %) · invented 518 (88.5 %) · unknown 1**. **Bühler wrote ~89 % of his own drill prose.**
   - **Attestation is a curricular variable, not a stylistic one.** Nothing before Lesson XII is attested; lessons I–XXIV run 6.9 % attested, XXV–XLVII run 17.6 % — a 2.5× jump. He writes his own sentences while paradigms are being learned, then switches to literature.
