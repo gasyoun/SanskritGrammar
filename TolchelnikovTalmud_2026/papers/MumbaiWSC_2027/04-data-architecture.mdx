@@ -5,9 +5,9 @@ sidebar_position: 4
 
 # 4. Data Architecture
 
-_Created: 12-07-2026 · Last updated: 12-07-2026_
+_Created: 12-07-2026 · Last updated: 18-07-2026_
 
-This section describes the CDSL data model in enough detail that the audit in §§5–7 can be read without prior contact with the files. Terms defined here — the `L` number, the metaline, the L-body mechanism — are used throughout.
+This section describes the CDSL data model in enough detail that the audit in §§5–7 can be read without prior contact with the files. Terms defined here — the `L` number, the metaline, the L-body mechanism — are used throughout. In the argument of this report the architecture is not background but mechanism: stable identifiers and portable line-oriented sources are what made correction addressable and succession technically possible (§1, §3.5).
 
 ## 4.1 The entry format
 
@@ -45,11 +45,11 @@ Print dictionaries routinely present alternative spellings inside one article: M
 <LEND>
 ```
 
-This `{{Lbody=...}}` pointer is the *L-body technique*: a headword-bearing stub whose body is resolved by reference. It is a general mechanism, not just a spelling device. Because dictionaries frequently give feminine derivatives inside the masculine article (*devī* under *deva*), feminine forms can be made searchable as alternate headwords by exactly the same means — a planned application (§9). The design is not uncontested within the team: the alternates could equally be generated at XML-build time from a separate overlay file, leaving the transcription of the printed book untouched, and the difference of opinion — annotate the source, or annotate a layer above it — recurs in every structural question the project faces (§4.4).
+This `{{Lbody=...}}` pointer is the *L-body technique*: a headword-bearing stub whose body is resolved by reference. It is a general mechanism, not just a spelling device. Because dictionaries frequently give feminine derivatives inside the masculine article (*devī* under *deva*), feminine forms can be made searchable as alternate headwords by exactly the same means — a planned application (§10). The design is not uncontested within the team: the alternates could equally be generated at XML-build time from a separate overlay file, leaving the transcription of the printed book untouched, and the difference of opinion — annotate the source, or annotate a layer above it — recurs in every structural question the project faces (§4.4).
 
 ## 4.3 Markup inventory
 
-Across all 44 dictionaries the sources use 96 distinct tags with 17.5 million tag instances in total (census of March 2026; the per-dictionary table is committed as [`markup_tag_census.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv)). The inventory is deliberately small and dictionary-specific rather than uniform: language tags (`<lat>`, `<gk>`, `<arab>`, `<tib>`...), structural tags inherited from the print layout, domain labels (`<bot>`, `<zoo>`), and the citation tag `<ls>`. Seven dictionaries — AP90, BEN, BHS, GRA, MW, PW, PWG — carry `<ls>` markup dense enough for corpus linking (§6); in others, notably Apte 1957, the literary sources are present in the text but not yet tagged. The census also quantifies under-marking per dictionary, which turns "the tagging is incomplete" (a reviewer-proof but vague statement) into a measurable backlog.
+Across the 44-work collection, a committed per-dictionary census inventories the source tags and their instances ([`markup_tag_census.tsv`](https://github.com/gasyoun/SanskritLexicography/blob/master/data/markup_tag_census.tsv)). The inventory is dictionary-specific rather than uniform: language tags (`<lat>`, `<gk>`, `<arab>`, `<tib>`...), structural tags inherited from the print layout, domain labels (`<bot>`, `<zoo>`), and the citation tag `<ls>`. A subset of dictionaries carries `<ls>` markup dense enough for corpus linking (§6); in others, notably Apte 1957, literary sources are present in the text but not yet tagged. The census makes "the tagging is incomplete" measurable, but its aggregate tag totals are not used here until their generation command and source hashes are locked in the evidence registry.
 
 ## 4.4 Headword normalization and coordination
 
@@ -59,7 +59,7 @@ The first, implemented at CDSL, is *normalization*: compute a normalized key for
 
 The second, argued by Scharf from the Sanskrit Library's experience, is *coordination against an independent base list*: maintain a Pāṇinian dictionary of Sanskrit — a lexicon whose headword forms are derived by rule — and map each dictionary's headwords to it in a standoff mapping file, leaving every dictionary exactly in its original form. On this view normalization toward any one convention is arbitrary, because the differences between the dictionaries are principled, not accidental. Two are structural: (1) MW combines preverbs with verbal roots in its headwords, while PW enters preverb combinations as subheadings under the simple root; (2) SKD and Apte use the nominative singular as the headword form where most European dictionaries use the stem. No key-normalization scheme can make these decisions disappear; it can only pick a winner per lookup.
 
-The two approaches are less opposed in practice than in principle — both leave the source text untouched and both produce a mapping — but the choice of *reference point* (a computed key versus a grammatically derived lexicon) remains open, and the project's position is stated in §9.
+The two approaches are less opposed in practice than in principle — both leave the source text untouched and both produce a mapping — but the choice of *reference point* (a computed key versus a grammatically derived lexicon) remains open, and the project's position is stated in §10.
 
 ## 4.5 The TEI question
 
