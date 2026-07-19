@@ -36,9 +36,9 @@ register-sensitive Russian editorial → Fable.
 |---|---|
 | Tier | **Sonnet** — deterministic parse, file move, gitignore edit; no Russian judgment |
 | Repo | SanskritGrammar |
-| Deliverable | (a) `review/EDITORIAL_NOTES_LEDGER.tsv` — one row per applicable note; (b) `.gitignore` line 23 `/review/` removed; (c) `docs/DECISION_RECORD_REVIEW_TRACKING_H856_REVERSAL.md` |
+| Deliverable | (a) `review/EDITORIAL_NOTE_INDEX.tsv` — one row per applicable note; (b) `.gitignore` line 23 `/review/` removed; (c) `docs/DECISION_RECORD_REVIEW_TRACKING_H856_REVERSAL.md` |
 | Human gate | none |
-| Acceptance | Ledger has exactly **81** rows; the 6 non-applicable items appear in a separate `EDITORIAL_NOTES_EXCLUDED.tsv` with their disposition; `git status` shows all 13 `decisions.json` + 9 `review.html` as tracked additions; the decision record names H856 and states the reversal rationale |
+| Acceptance | Index has exactly **81** rows; the 6 non-applicable items appear in a separate `review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv` with their disposition; `git status` shows all 13 `decisions.json` + 9 `review.html` as tracked additions; the decision record names H856 and states the reversal rationale |
 
 Ledger columns: `note_uid · sheet_id · item_id · decision · target_file · applied_status ·
 note_class · note_ru`. `note_uid` = `<sheet_id>#<item_id>` — stable, and the only thing that survives

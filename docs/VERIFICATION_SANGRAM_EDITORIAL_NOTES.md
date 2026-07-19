@@ -1,9 +1,11 @@
 # Verification — Sangram editorial notes, charter and roadmap
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-07-2026_
 
 Acceptance gates for wave 1. A handoff is not done until its gate passes and the check is recorded.
 Implementation: [`docs/IMPLEMENTATION_SANGRAM_EDITORIAL_NOTES.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_SANGRAM_EDITORIAL_NOTES.md).
+
+> **Naming note (19-07-2026, [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md)).** Gates A1/A2 below originally named this artifact `EDITORIAL_NOTES_LEDGER.tsv` / `EDITORIAL_NOTES_EXCLUDED.tsv`. It shipped as [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv) / [`review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv) instead — a deliberate divergence so the word "ledger" stays [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)'s alone (that handoff owns the Sangram **article-disposition ledger**, a different object). Gate names below are updated to match. **Gate A6 also shipped a different count than spec'd** (4 rows, not 8) — H1273's fresh re-derivation against `origin/main` found half of the originally-assumed-open `prose-style-guide`/`perfect` notes were already applied by prior sessions (H1003, H1205) before the sheet HTML was lost, so only 4 notes were genuinely still open+orphaned. Full accounting in [PR #455](https://github.com/gasyoun/SanskritGrammar/pull/455).
 
 ## 1. Invariants — must hold at every point in the wave
 
@@ -27,12 +29,12 @@ Implementation: [`docs/IMPLEMENTATION_SANGRAM_EDITORIAL_NOTES.md`](https://githu
 
 | Gate | Pass condition |
 |---|---|
-| A1 | `EDITORIAL_NOTES_LEDGER.tsv` exists with 81 rows, 8 columns |
-| A2 | `EDITORIAL_NOTES_EXCLUDED.tsv` has 6 rows, each with a disposition |
+| A1 | `review/EDITORIAL_NOTE_INDEX.tsv` exists with 81 rows, 8 columns |
+| A2 | `review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv` has 6 rows, each with a disposition |
 | A3 | `git check-ignore review/` returns nothing (no longer ignored) |
 | A4 | `git status --short review/` lists 13 `decisions.json` + 9 `_review.html` as staged additions |
 | A5 | `docs/DECISION_RECORD_REVIEW_TRACKING_H856_REVERSAL.md` exists and names H856, the reversal, and the ~250 KB cost |
-| A6 | 8 rows carry `provenance=RECONSTRUCTED` (the `prose-style-guide` + `perfect` open notes) |
+| A6 | **Shipped as 4, not 8** — rows carry `provenance=RECONSTRUCTED` only for the genuinely-still-open `prose-style-guide`/`perfect` notes (`prose-style-guide` A1/A2/B1 + `perfect` A5); the other 8 orphan-sheet rows that turned out already resolved via an existing citation carry `provenance=ORPHAN_MOOT` instead (see PR #455) |
 | A7 | Every row's `target_file` exists on disk |
 
 Failure mode to check explicitly: a ledger of **87** rows means the note-only filter was used

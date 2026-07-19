@@ -1,6 +1,6 @@
 # Implementation — applying the Sangram editorial notes
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-07-2026_
 
 Step-by-step execution detail for wave 1. Architecture:
 [`docs/ARCHITECTURE_SANGRAM_EDITORIAL_NOTE_PIPELINE.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ARCHITECTURE_SANGRAM_EDITORIAL_NOTE_PIPELINE.md).
@@ -39,7 +39,7 @@ become tracked artifacts (§1.3); normalise on read, never on disk. `decision` i
 `"approve"` / `"reject"` / **JSON `null`**, and `null` is a value, not a missing key.
 
 Emit a row **only** where `decision == "approve"` and `note` is non-empty → exactly **81** rows.
-Everything else goes to `EDITORIAL_NOTES_EXCLUDED.tsv` (6 rows: 3 `reject`, 3 `null`).
+Everything else goes to `review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv` (6 rows: 3 `reject`, 3 `null`).
 
 > Do not filter on `note` alone. 87 items carry notes, but 3 of those notes are rejection rationale
 > and 3 sit on undecided items. Applying all 87 applies six things the author did not approve.

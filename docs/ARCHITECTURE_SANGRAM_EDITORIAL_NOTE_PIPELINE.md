@@ -1,6 +1,6 @@
 # Architecture — the Sangram editorial-note pipeline
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 19-07-2026_
 
 How a note written in the margin of a review sheet becomes a tracked, addressable worklist item and
 then an article revision — without losing the link back to the sheet it came from. Cover doc:
@@ -11,7 +11,7 @@ then an article revision — without losing the link back to the sheet it came f
 ```mermaid
 flowchart LR
   A[review sheet HTML] -->|author votes| B[decisions.json]
-  B -->|W1-A parse| C[EDITORIAL_NOTES_LEDGER.tsv]
+  B -->|W1-A parse| C[EDITORIAL_NOTE_INDEX.tsv]
   B -->|non-applicable| X[EXCLUDED.tsv]
   C -->|W1-B adjudicate| D{applied_status}
   D -->|APPLIED| E[revision-history row]
