@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.5] - 2026-07-19
+
+### Added
+- **A61 §10.6 — explicit retirement of the 2024-announced Amarakosha + print-changes items ([H1321](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1321-Fable_SanskritGrammar_a61-s10-amarakosha-printchanges-retirement_19.07.26.md), author-decided, Fable 5 `claude-fable-5`).** One sentence in [09-future-plans.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/09-future-plans.mdx) §10.6 converts the two silent drops flagged by the [§10-vs-2024 comparison](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/A61_SECTION10_VS_2024_TALKS_ROADMAP.md) into the paper's measured-honesty idiom; the comparison doc and [SIGNOFF](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/SIGNOFF_A61_author_pass.md) record the decision. Last open `@DECIDE` closed; submission-time remainder = abstract sentence + CfP formatting only.
+
 ## [0.4.4] - 2026-07-19
 
 ### Changed
