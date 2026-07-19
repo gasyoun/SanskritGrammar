@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.87.0] - 2026-07-19
+
 ### Changed
 - **ACL roadmap re-based Sangram-primary (H1277, Fable 5 `claude-fable-5`).** [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) executes the 18-07-2026 keep-both ruling: §2 "four spines" → "**four instruments** feeding Sangram" (S1–S4 labels kept for link stability), Track C re-titled the **publication arm of Sangram** with an explicit §0 relation paragraph, per-instrument "Feeds Sangram" leads carrying the honest citation split (S1 τ consumed by three Sangram programme docs but no article; tatpurusha's Cohen κ = 0,929/0,720 is compound-classification agreement, *not* the never-run S2/Q3.4 three-scheme κ), Q3.1/Q3.2 marked done and Q4.1–Q4.5 plainly unstarted, measured `sangram/` share 34.2 % of files touched since 14-07-2026. Consolidation freeze respected: no new topics/manifests, charter untouched. Metadoc history backfilled with the un-recorded 18-07 portfolio rewrite ([PR #417](https://github.com/gasyoun/SanskritGrammar/pull/417)).
 
