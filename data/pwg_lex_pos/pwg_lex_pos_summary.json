@@ -1,0 +1,19 @@
+{
+  "study": "PWG <lex> POS/gender layer",
+  "as_of": "2026-07-19",
+  "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
+  "entries_with_lex": 98639,
+  "by_primary_pos": {
+    "m": 35184,
+    "adj": 31666,
+    "n": 15112,
+    "f": 14192,
+    "adv": 1808,
+    "m.n": 459,
+    "indecl": 110,
+    "interj": 85,
+    "m.f.n": 12,
+    "m.f": 7,
+    "f.n": 4
+  }
+}
