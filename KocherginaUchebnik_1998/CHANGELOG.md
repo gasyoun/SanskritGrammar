@@ -9,6 +9,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 ### Changed
+- **A65 claim-level write-backs: HK-4a, HK-4b, HK-5, HK-15, HK-34 (H1276, Fable 5
+  `claude-fable-5`).** Same write-back gap as the Bühler register: the notes were discharged
+  by the H1049 fan-out, leaving no trace on the claim entries. HK-15 records that the
+  narrative-switching effect is microscopic in the epic and **inverted in classical** texts
+  (T2607-26, partially confirmed); HK-34 records that "весь раздел неверный" was **refuted for
+  the factual layer** and upheld only for the framing (7 flags, H1050); HK-5 gains the Talmud
+  root-count census, which independently declines to make the thematic aorist the largest type
+  (is-aorist leads with 511 roots of 745). HK-4b is cross-referenced to H1228, which owns the
+  Whitney policy sweep — no sweep duplicated here. HK-4a is **ESCALATED**: whether -ṣya/-iṣya
+  are invariants of -syá is a morphonological position the corpus cannot settle.
 - **HK-39 `mg_footnote` re-labeled from Ātmanepada-specific to whole-mood (H1253, Sonnet 5
   `claude-sonnet-5`; review sheet `sanskritgrammar-precative-label-dcs2026-visa_17.07.26`,
   policy B).** DCS-2026 doesn't tag pada, so the 577-token precative-mood figure cannot

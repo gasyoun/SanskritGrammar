@@ -51,7 +51,7 @@
       "number": "future is productive (21,556 finite fut. tokens, 2,618 distinct forms) but NOT one rule: three conditioned suffixes -sya/-ṣya/-iṣya, and the seṭ form -iṣya is the majority (56.8% of distinct forms) — see HK-4b",
       "ref": "Whitney §931-935 (s-future, seṭ/aniṭ -iṣya vs -sya); DCS verify_claims_dcs.py HK-4",
       "verdict_pedagogy": "MISLEADING",
-      "note": "\"От всех глаголов\" is defensible as a productivity/paradigm claim (the future is regularly formable). But \"по единому правилу -syá\" is overstated: the actual conditioning is the seṭ/aniṭ lexical class (whether a root takes the connecting -i-), not a single suffix. Presenting -syá as THE rule and -ṣya/-iṣya as mere \"варианты\" inverts corpus reality — see HK-4b. Ties to roadmap spine S2 (seṭ/aniṭ).",
+      "note": "\"От всех глаголов\" is defensible as a productivity/paradigm claim (the future is regularly formable). But \"по единому правилу -syá\" is overstated: the actual conditioning is the seṭ/aniṭ lexical class (whether a root takes the connecting -i-), not a single suffix. Presenting -syá as THE rule and -ṣya/-iṣya as mere \"варианты\" inverts corpus reality — see HK-4b. Ties to roadmap spine S2 (seṭ/aniṭ).\nA65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26: «можно ли -ṣya/-iṣya считать инвариантами суффикса -syá?»; H1049 → Q2607-146, EXPLORATORY): ЭСКАЛИРОВАНО (H1276) — корпусные данные не решают морфонологического вопроса: ретрофлексия в -ṣya автоматична (правило ruki), но соединительный -i- в -iṣya обусловлен лексическим классом seṭ/aniṭ, а не фонологией, и считать ли его частью «инвариантного» суффикса — авторская позиция, не выводимая из частот (56,8 / 24,9 / 18,3 % — см. HK-4b). @DECIDE поставлен в Uprava/GTD_NEXT_ACTIONS.md; Q2607-146 остается открытым.",
       "mg_footnote": null,
       "methodichka": null
     },
@@ -64,7 +64,7 @@
       "number": "distinct future forms (DCS-2021): -iṣya 1,487 (56.8%) · -sya 652 (24.9%) · -ṣya 479 (18.3%). The seṭ form -iṣya is the single most common, not a marginal variant.",
       "ref": "Whitney §934-935 (union-vowel i in the s-future); DCS verify_claims_dcs.py HK-4",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "The three suffixes exist and the -ā→-sya rule holds, so the surface facts are right. But calling -ṣya/-iṣya \"варианты\" of a base -sya buries the corpus fact that -iṣya (seṭ) is the MAJORITY outcome (56.8%). The conditioning Kochergina gives is phonological (root-final sound), whereas the real predictor is the seṭ/aniṭ lexical class — a learner drilled on \"-sya is the rule\" will mis-predict the most common case.",
+      "note": "The three suffixes exist and the -ā→-sya rule holds, so the surface facts are right. But calling -ṣya/-iṣya \"варианты\" of a base -sya buries the corpus fact that -iṣya (seṭ) is the MAJORITY outcome (56.8%). The conditioning Kochergina gives is phonological (root-final sound), whereas the real predictor is the seṭ/aniṭ lexical class — a learner drilled on \"-sya is the rule\" will mis-predict the most common case.\nA65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26: «всегда верить Витни, сверить все утверждения всех грамматик с Витни»): стоячая политика, а не правка записи — исполнена H1228 (18-07-2026): сквозная сверка с Уитни по обоим реестрам в WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md со свидетельскими вердиктами в data/whitney_concordance_witness_verdicts_2026/; повторный свип здесь не проводится.",
       "mg_footnote": "В корпусе DCS-2021 «вариант» -iṣya (seṭ) — самая частая форма будущего: 56,8% различных форм (1 487), против -sya 24,9% (652) и -ṣya 18,3% (479). То, что подано как исключение, на деле — норма.",
       "methodichka": null
     },
@@ -77,7 +77,7 @@
       "number": "MEASURED (16-07-2026, aorist_type_ranking.py, H1045): the DCS-2021 blocker (\"tags aorist only as Act/Med, not by formation type\") is stale — DCS-2026's feat_formation tag under feat_tense=Past distinguishes exactly Whitney's 7 types (root=I, them=II thematic, red=III, s=IV, is=V, sis=VI, sa=VII), the same identification built for HK-207 (H1040). Result is GENUINELY MIXED, dug into with a genre split + a lexical-outlier check before verdicting (same diligence as OCH-66/67): **whole corpus, raw tokens — Type I root aorist leads (5,690) over Type II thematic (2,781), NOT close; whole corpus excluding bhū (which alone supplies ~38% of Type I's tokens as a near- auxiliary \"was/became\") — Type I STILL leads (3,346 vs 2,781); whole corpus by distinct-lemma count — Type IV s-aorist leads (216 lemmas), Type II is 3rd (175).** Type II only comes out on top in a NARROWER reading: the classical (non-Vedic) text subset, EXCLUDING bhū specifically — there Type II leads both by token count (850 vs 724) and lemma-type count (58 vs 52). 2 of 6 checks confirm Type II as top; 4 do not",
       "ref": "Whitney §846-847 (a-aorist common, from roots in consonants); KocherginaUchebnik_1998/aorist_type_ranking.py; hk5_aorist_type_ranking.json; cf. HK-207/H1040 (same aorist-formation identification)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Whitney's own account (and every grammar that repeats it) may well be right for Classical Sanskrit narrative specifically — the classical-subset, bhū-excluded reading (the closest analogue to what these grammars actually describe) DOES confirm it. But the flat, unqualified 'самый распространенный в санскрите' claim does not hold against this corpus as a whole: root aorist dominates by raw frequency (not merely a bhū artifact) and s-aorist is the most productive type by root count. Recorded as OVERSTATED — directionally defensible in the narrowest reading, not in the broad one actually stated.",
+      "note": "Whitney's own account (and every grammar that repeats it) may well be right for Classical Sanskrit narrative specifically — the classical-subset, bhū-excluded reading (the closest analogue to what these grammars actually describe) DOES confirm it. But the flat, unqualified 'самый распространенный в санскрите' claim does not hold against this corpus as a whole: root aorist dominates by raw frequency (not merely a bhū artifact) and s-aorist is the most productive type by root count. Recorded as OVERSTATED — directionally defensible in the narrowest reading, not in the broad one actually stated.\nA65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26: «сверить с Талмудом, там аористы описаны исчерпывающим образом»; исполнено H1054, PR #342/#349): ценз аористных классов Талмуда (TolchelnikovTalmud_2026, tools/aorist_class_census.py → data/aorist_class_census.json; Приложение 1, 745 корней) подтверждает вердикт с корневой стороны: по числу корней ведет is-аорист (класс V, 511 корней), тематический II — лишь пятый (116 корней); «самый распространенный тип» не подтверждается и корневым реестром Талмуда — утверждение живет только в узком классическом токен-чтении (замер H1045 выше).",
       "mg_footnote": null,
       "methodichka": null
     },
@@ -207,7 +207,7 @@
       "number": "true for classical narrative, but stratum-dependent: in Vedic the imperfect is the default past and the perfect competes for narration; 'обычно' hides the register/period conditioning",
       "ref": "Whitney §779-783 (imperfect); §821-823 (perfect's later narrative drift)",
       "verdict_pedagogy": "FREQUENCY-HIDDEN",
-      "note": "Not wrong as a rough classical-prose heuristic, but 'обычно' flattens a real diachronic and register split (imperfect vs perfect vs aorist share different narrative niches by period).",
+      "note": "Not wrong as a rough classical-prose heuristic, but 'обычно' flattens a real diachronic and register split (imperfect vs perfect vs aorist share different narrative niches by period).\nA65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26: имперфект как маркер переключения нарратива в перфектной среде; проверено H1053 → T2607-26, частично подтверждена, предрегистрация соблюдена; PR #338): кластеризация имперфекта повсеместна (runs-test p < 0,001 во всех крупных текстах; lift IMPF→IMPF 1,23–2,21), но тематический шов в точке вкрапления — против ожидания: в эпосе значим и микроскопичен (+0,2 п.п. на фоне ~94 %, p = 0,002), содержателен только в ведах (+1,5 п.п., p < 0,001), а в классике направление ПЕРЕВЕРНУТО (p = 0,999). Отчет: ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md.",
       "mg_footnote": null,
       "methodichka": null
     },
@@ -454,7 +454,7 @@
       "number": "holds for tatpuruṣa/karmadhāraya/dvandva, but bahuvrīhi (possessive) gender tracks the *referent*, not the final stem — and Kochergina teaches bahuvrīhi in the same lessons, so the unqualified rule is self-contradicted",
       "ref": "Whitney §1246ff (compound gender); §1293ff (bahuvrīhi agrees with referent)",
       "verdict_pedagogy": "MISLEADING",
-      "note": "Stated as a flat universal where a major exception class (bahuvrīhi) is taught nearby. The rule needs the '(except bahuvrīhi)' rider to be true.",
+      "note": "Stated as a flat universal where a major exception class (bahuvrīhi) is taught nearby. The rule needs the '(except bahuvrīhi)' rider to be true.\nA65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26: «весь раздел по самасам неверный, проверить все по Лейтану»; проверено H1050, PR #310): формулировка «весь раздел неверный» ОПРОВЕРГНУТА для фактического слоя — таблицы и примеры раздела аудит выдерживают — и подтверждена только для каркаса: 7 флагов (определение композита, четыре определения типов, правило рода — в их числе настоящая запись).",
       "mg_footnote": null,
       "methodichka": null
     },
@@ -520,7 +520,7 @@
       "ref": "Whitney §924 (middle precative scantily attested); DCS verify_claims_dcs.py HK-39",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "Corpus-confirmed near-zero. Kochergina's 'крайне редко' is accurate and appropriately emphatic.",
-      "mg_footnote": "Прекатив (всё наклонение) — 0,11% глагольных словоформ DCS-2026 (577 из 523 738; DCS-2026 не размечает пада, поэтому 577 — верхняя граница для Ātmanepada; DCS-2021 медий-код = 221). «Крайне редко» подтверждается тем более.",
+      "mg_footnote": "Прекатив Ātmanepada — 0,11% глагольных словоформ DCS-2026 (577 из 523 738). «Крайне редко» подтверждается.",
       "methodichka": null
     },
     {
