@@ -1,4 +1,4 @@
-# PWG lexicon-only headwords — cross-dictionary audit (v2)
+# PWG lexicon-only headwords — cross-dictionary audit (v3)
 
 _Created: 19-07-2026 · Last updated: 19-07-2026_
 
@@ -7,8 +7,10 @@ Audit of the **32,690 PWG headwords flagged `lexicon_only=1`** by the
 (gross) attests **only** from Sanskrit koṣas, never from a dated text — against the other
 digitised dictionaries, to answer: is each lexicon-only word attested elsewhere, and which
 of them are genuine "ghost-words" unique to PWG? Handoff
-[H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md).
-This **v2 supersedes** the first pass (PR #447) — see [Version history](#version-history--v2-supersedes-v1-pr-447).
+[H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md)
+(v2), [H1326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1326-Sonnet_SanskritGrammar_kosa-corpus-fill-amara-rajanighantu-lexicon-audit_19.07.26.md)
+(v3 — this pass, adds Amara). This **v3 supersedes** v2 — see
+[Version history](#version-history).
 
 ## Two ways bare dictionary membership lies — and how the join corrects each
 
@@ -28,43 +30,55 @@ This **v2 supersedes** the first pass (PR #447) — see [Version history](#versi
 
 | Role | Dictionaries |
 |---|---|
-| **Koṣa** (Sanskrit–Sanskrit thesauri) | `armh` Abhidhānaratnamālā · `abch` Abhidhānacintāmaṇi · `acph` Abhidhānacintāmaṇipariśiṣṭa · `acsj` Abhidhānacintāmaṇiśiloñcha · `nmmb` Nāmamālikā · `vcp` Vācaspatya · `skd` Śabdakalpadruma |
+| **Koṣa** (Sanskrit–Sanskrit thesauri) | `armh` Abhidhānaratnamālā · `abch` Abhidhānacintāmaṇi · `acph` Abhidhānacintāmaṇipariśiṣṭa · `acsj` Abhidhānacintāmaṇiśiloñcha · `nmmb` Nāmamālikā · `vcp` Vācaspatya · `skd` Śabdakalpadruma · `amar` **Amarakośa (H1326)** |
 | **Independent text corpus** | `gra` Grassmann (Ṛgveda) · `bhs` Edgerton (Buddhist Hybrid Sanskrit) |
 | **Text-dictionary** | `mw` (with `L.`-split) · `ap90` · `ap` (Apte) |
 | **Same source (not corroboration)** | `pw` (Böhtlingk, kürzere Fassung) |
 
-**Coverage gap:** **Amara (AK), Rājanighaṇṭu, Trikāṇḍaśeṣa, Nighaṇṭu, Ratnamālā, Hārāvalī**
-are koṣas/nighaṇṭus PWG *cites* but which are **not digitised in `csl-orig`** — the single
-biggest limit on this audit (see the ghost-word breakdown). PWG's own `sources` column already
-records its `AK` (Amara) etc. citations directly, so PWG-side provenance is not lost; the gap
-is on the *comparison* side.
+**Coverage gap (v3 — narrowed):** **H1326 sourced Amara (`amar`, GNU GPL v3.0, from
+[`sanskrit-kosha/kosha`](https://github.com/sanskrit-kosha/kosha) — see
+[`kosa_extra/README.md`](kosa_extra/README.md))**, closing that gap. **Rājanighaṇṭu,
+Trikāṇḍaśeṣa, generic Nighaṇṭu, Ratnamālā, Hārāvalī remain undigitised** as bulk
+lemma-tagged headword sets — every source checked (`csl-orig`, `sanskrit-kosha/kosha`'s own
+raw texts, the `cltk/sanskrit_text_dcs` DCS mirror, web search) is unsegmented sandhi-joined
+verse with no per-word tagging; see `kosa_extra/README.md` for the full source audit. PWG's
+own `sources` column already records its `AK`/`RĀJAN`/`TRIK`/`NIGH` etc. citations directly,
+so PWG-side provenance is not lost; the residual gap is on the *comparison* side only.
 
-## Result — 32,690 lexicon-only headwords
+## Result — 32,690 lexicon-only headwords (v3)
 
 | Verdict | Count | % | Meaning |
 |---|---:|---:|---|
 | **text-attested** | 12,606 | 38.6 % | MW non-`L.` citation, or present in a text corpus (`gra`/`bhs`) — genuine text attestation, independent of PW-copying |
-| **koṣa-corroborated** | 10,724 | 32.8 % | in ≥1 of the 7 koṣas (no text attestation) |
-| **dict-lexical** | 7,062 | 21.6 % | only in MW-`L.` / Apte headword lists — lexical, no koṣa / real cite |
-| **pwg-unique** | 2,298 | 7.0 % | in **no independent** dictionary → ghost-word shortlist |
+| **koṣa-corroborated** | 10,812 | 33.1 % | in ≥1 of the 8 koṣas (no text attestation) |
+| **dict-lexical** | 6,978 | 21.3 % | only in MW-`L.` / Apte headword lists — lexical, no koṣa / real cite |
+| **pwg-unique** | 2,294 | 7.0 % | in **no independent** dictionary → ghost-word shortlist |
 
-- The **2,298 pwg-unique** split into **1,510 present only in same-source PW** (Böhtlingk's
+- **v3 delta (Amara joined):** koṣa-corroborated **10,724 → 10,812** (+88), dict-lexical
+  **7,062 → 6,978** (−84), pwg-unique **2,298 → 2,294** (−4), text-attested unchanged
+  (12,606). Of the 4 newly-resolved pwg-uniques, all 4 came from the "present only in
+  same-source PW" fringe (1,510 → 1,506) — the **hardest 788 "absent from every dictionary"
+  core is unchanged** (none of those 788 happen to be Amara-cited words). This is a real but
+  modest gain: Amara alone does not meaningfully shrink the hardest residue, though it is now
+  methodologically joined rather than recorded as a gap.
+- The **2,294 pwg-unique** split into **1,506 present only in same-source PW** (Böhtlingk's
   own *kürzere Fassung* — not independent corroboration) and **788 absent from every digitised
-  dictionary** (the hardest ghost-word core). Of those 788, **73 collapse** onto an existing
-  headword under a light normalisation (drop final visarga/anusvara) → **≈715 truly-absent**.
-- **10,010** lexicon-only words are corroborated by a koṣa PWG did **not** itself cite
-  (novel corroboration).
+  dictionary** (the hardest ghost-word core, unchanged from v2). Of those 788, **73 collapse**
+  onto an existing headword under a light normalisation (drop final visarga/anusvara) →
+  **≈715 truly-absent**.
+- **10,032** lexicon-only words are corroborated by a koṣa PWG did **not** itself cite
+  (novel corroboration; was 10,010 in v2).
 
 ### The ghost-word shortlist is real vocabulary, not OCR noise
 
-Hand-adjudication of a stratified sample and a source-token breakdown of all **2,298**
-pwg-unique words:
+Hand-adjudication of a stratified sample and a source-token breakdown of all **2,294**
+(v3; was 2,298) pwg-unique words:
 
 | Dominant source | Count | Character |
 |---|---:|---|
 | **scholarly / journal / technical** (Colebrooke, Indische Studien, Burnouf) | 834 | maths, metrics, grammar terms & proper nouns |
 | **MS catalogue / proper noun** (`Verz. d. B. H.` = Weber's Berlin catalogue) | 768 | names of works, authors, physicians — real but onomastic |
-| **koṣa / nighaṇṭu not digitised** (Rājanighaṇṭu, Trikāṇḍaśeṣa, Amara, Nighaṇṭu, Ratnamālā) | 678 | genuine plant/medical/synonym vocabulary — *corpus gap*, not ghosts |
+| **koṣa / nighaṇṭu not digitised** (Rājanighaṇṭu, Trikāṇḍaśeṣa, Nighaṇṭu, Ratnamālā — Amara now digitised, v3) | 674 | genuine plant/medical/synonym vocabulary — *corpus gap*, not ghosts (was 678; −4 resolved by Amara) |
 | **other / unresolved** | 18 | the only genuine OCR/segmentation-artifact residue |
 
 Sampled entries — `atyamlaparRa` (*Asclepias acida*, Rājanighaṇṭu), `ahiPeRa` (opium,
@@ -85,17 +99,22 @@ the digitised comparison set.
 - **`text-attested` is a floor.** Only MW is `L.`-split; Apte is not, so a word attested only
   in Apte with a real source is scored `dict-lexical`. A few MW non-`L.` `<ls>` sources are
   themselves named lexica, so a small part of `text-attested` is koṣa-corroboration in disguise.
-- **Amara is absent** from the comparison side (biggest coverage gap).
+- **Rājanighaṇṭu, Trikāṇḍaśeṣa, generic Nighaṇṭu are absent** from the comparison side
+  (v3: Amara resolved, these three remain the biggest coverage gap — see
+  `kosa_extra/README.md` for the full source audit of why they could not be sourced in bulk).
 
 ## Feedback to the register layer
 
 The audit **confirms** the register layer's `lexicon_only` flag is sound: adjudication found
 real words, and the layer correctly separates homonyms (e.g. `aMhati` hom1 vedic/RV vs hom2
-lexical). No re-derivation is warranted. The productive next step is **corpus coverage**, not
-a flag change: digitising Amara / Rājanighaṇṭu / Trikāṇḍaśeṣa / Nighaṇṭu would reclassify most
-of the 678 koṣa/nighaṇṭu pwg-uniques from "unique" to "corroborated".
+lexical). No re-derivation is warranted. **v3 update:** digitising Amara (done, H1326) only
+shrank the pwg-unique shortlist by 4 and left the hardest 788-word "absent from every
+dictionary" core untouched — the corpus-coverage lever is real but smaller than v2 projected.
+Rājanighaṇṭu/Trikāṇḍaśeṣa/Nighaṇṭu (674 of the 2,294 pwg-uniques cite one of these) remain the
+productive next step, but require a real Sanskrit segmenter/annotation pass, not just a
+bulk-download — see `kosa_extra/README.md`.
 
-## Version history — v2 supersedes v1 (PR #447)
+## Version history
 
 A first pass ([PR #447](https://github.com/gasyoun/SanskritGrammar/pull/447), commit
 `3c57f29`, also Opus 4.8, same day) shipped `pwg_lexicon_only_audit.tsv` +
@@ -119,20 +138,39 @@ undifferentiated block. Adding the six other koṣas and splitting MW's `L.` rec
 while making the large middle buckets (`text-attested`, `koṣa-corroborated`) meaningful for the
 first time. **The lesson v2 makes visible: most PWG "ghost-words" are corpus gaps, not ghosts.**
 
+**v3 (H1326, this pass)** joined Amara (`amar`, `kosa_extra/amar.txt`, GNU GPL v3.0) as an 8th
+koṣa. Effect: koṣa-corroborated 10,724→10,812 (+88), dict-lexical 7,062→6,978 (−84),
+pwg-unique 2,298→2,294 (−4); the hardest 788 truly-absent core is **unchanged**. Rājanighaṇṭu,
+Trikāṇḍaśeṣa and generic Nighaṇṭu were exhaustively searched (`csl-orig`, `sanskrit-kosha/kosha`
+raw texts, the `cltk/sanskrit_text_dcs` DCS mirror, web search) but **no bulk lemma-tagged
+headword set exists for any of the three** — every digitisation found is unsegmented
+sandhi-joined verse; full audit in [`kosa_extra/README.md`](kosa_extra/README.md). **v3 does
+not meet the "≥2 new koṣas" target set by H1326** — only Amara was cleanly sourceable; this is
+reported as a scoped partial result rather than forcing a low-quality parse of the raw verse
+texts.
+
+| Axis | v2 | v3 (this pass) |
+|---|---|---|
+| Koṣa comparison set | 7 koṣas | **8 koṣas** — adds `amar` (Amarakośa) |
+| pwg-unique | 2,298 (788 truly-absent) | **2,294** (788 truly-absent, unchanged) |
+| koṣa-corroborated | 10,724 | **10,812** |
+| Remaining gap | Amara + Rājanighaṇṭu + Trikāṇḍaśeṣa + Nighaṇṭu + Ratnamālā + Hārāvalī | **Rājanighaṇṭu + Trikāṇḍaśeṣa + Nighaṇṭu only** (Ratnamālā/Hārāvalī: Ratnamālā already covered as `armh`; Hārāvalī checked, raw verse only, not sourceable) |
+
 ## Files
 
 | File | |
 |---|---|
 | [`pwg_lexicon_only_cross_dictionary_census.tsv`](pwg_lexicon_only_cross_dictionary_census.tsv) | 32,690 rows — `verdict`, `mw_realcite`, `corpus_hit`, `also_in_pw_same_source`, `pwg_text_sibling`, `present_in`, `novel_kosa`, `pwg_cited_sources` |
-| [`pwg_ghostword_shortlist.tsv`](pwg_ghostword_shortlist.tsv) | the 2,298 pwg-unique rows + `src_category` |
+| [`pwg_ghostword_shortlist.tsv`](pwg_ghostword_shortlist.tsv) | the 2,294 pwg-unique rows + `src_category` |
 | [`census_summary.json`](census_summary.json) | all counts (machine-readable) |
-| [`build_census.py`](build_census.py) | reproducible pipeline (reads `csl-orig/v02` + the register TSV) |
-| [`pwg_lexicon_only_audit.meta.md`](pwg_lexicon_only_audit.meta.md) | metadoc — provenance, backlog, v1→v2 history |
+| [`build_census.py`](build_census.py) | reproducible pipeline (reads `csl-orig/v02` + `kosa_extra/` + the register TSV) |
+| [`kosa_extra/`](kosa_extra/) | koṣa data sourced by H1326 outside `csl-orig` (`amar.txt` + provenance `README.md`) |
+| [`pwg_lexicon_only_audit.meta.md`](pwg_lexicon_only_audit.meta.md) | metadoc — provenance, backlog, v1→v2→v3 history |
 
 ## Regenerate
 
 ```sh
-# needs csl-orig checked out as a sibling of the repo root, and the register TSV present
+# needs csl-orig checked out as a sibling of the repo root, kosa_extra/ present, and the register TSV present
 python build_census.py
 ```
 

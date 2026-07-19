@@ -525,7 +525,6 @@ L_id	k1	hom	verdict	mw_realcite	corpus_hit	also_in_pw_same_source	pwg_text_sibli
 45262	pitfpitar		pwg-unique	0		1	0	0	pw		AK	kosa_nighantu_not_digitised
 45270	pitfvAnDava		pwg-unique	0		0	0	0			ŚKDR	kosa_nighantu_not_digitised
 45310	pittavant		pwg-unique	0		1	0	0	pw		H	kosa_nighantu_not_digitised
-45323	pitsant		pwg-unique	0		1	0	0	pw		AK|H|MED|TRIK|WILS|ŚKDR	kosa_nighantu_not_digitised
 45345	pipatizant		pwg-unique	0		1	0	0	pw		H|MED	kosa_nighantu_not_digitised
 45959	puMBUman		pwg-unique	0		1	0	0	pw		AK|TRIK	kosa_nighantu_not_digitised
 46095	purut		pwg-unique	0		1	0	0	pw		TRIK	kosa_nighantu_not_digitised
@@ -590,7 +589,6 @@ L_id	k1	hom	verdict	mw_realcite	corpus_hit	also_in_pw_same_source	pwg_text_sibli
 51868	barhiHpuzpa		pwg-unique	0		0	0	0			AK|ŚKDR	kosa_nighantu_not_digitised
 51961	balAtkAragaRa		pwg-unique	0		0	0	0			Verz	ms_catalogue_propernoun
 52042	ballAlasena		pwg-unique	0		1	0	0	pw		COLEBR|Verz	ms_catalogue_propernoun
-52048	balhIka		pwg-unique	0		1	0	0	pw		AK|COLEBR	kosa_nighantu_not_digitised
 52085	bahirmudrA		pwg-unique	0		0	0	0			Verz	ms_catalogue_propernoun
 52272	bahurUpAzwaka		pwg-unique	0		1	0	0	pw		Verz	ms_catalogue_propernoun
 52328	bahusaMpuwa		pwg-unique	0		1	0	0	pw		RĀJAN|ŚKDR	kosa_nighantu_not_digitised
@@ -1754,7 +1752,6 @@ L_id	k1	hom	verdict	mw_realcite	corpus_hit	also_in_pw_same_source	pwg_text_sibli
 92602	vimalasarasvati		pwg-unique	0		0	0	0			COLEBR	scholarly_journal_technical
 92797	virAgavant		pwg-unique	0		1	0	0	pw		Verz	ms_catalogue_propernoun
 92852	virudDArTadIpaka		pwg-unique	0		0	0	0			Spr	scholarly_journal_technical
-92892	viroDAcaraRa		pwg-unique	0		1	0	0	pw		AK	kosa_nighantu_not_digitised
 92979	vilUray		pwg-unique	0		1	0	0	pw		Z	scholarly_journal_technical
 93047	vivanDika		pwg-unique	0		1	0	0	pw		AK|COLEBR|ŚKDR	kosa_nighantu_not_digitised
 93142	viviwwyE		pwg-unique	0		0	0	0			Ind	scholarly_journal_technical
@@ -1966,7 +1963,6 @@ L_id	k1	hom	verdict	mw_realcite	corpus_hit	also_in_pw_same_source	pwg_text_sibli
 106040	saMparAyaka		pwg-unique	0		1	0	0	pw		AK|ŚKDR	kosa_nighantu_not_digitised
 106055	saMpAwa		pwg-unique	0		1	0	0	pw		COLEBR|ŚABDAM|ŚKDR	kosa_nighantu_not_digitised
 106075	saMpAvEyaSva		pwg-unique	0		0	0	0			Ind	scholarly_journal_technical
-106077	saMpiDAna		pwg-unique	0		1	0	0	pw		AK|H|MED	kosa_nighantu_not_digitised
 106083	saMpuwaka		pwg-unique	0		1	0	0	pw		AK|Spr	kosa_nighantu_not_digitised
 106094	saMpUrRavrata		pwg-unique	0		1	0	0	pw		Verz	ms_catalogue_propernoun
 106101	saMprakASya		pwg-unique	0		1	0	0	pw		Spr	scholarly_journal_technical

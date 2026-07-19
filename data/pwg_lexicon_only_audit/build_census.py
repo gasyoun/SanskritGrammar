@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
-"""H1310 - Audit PWG's 32,690 lexicon-only headwords against digitised kosas.
+"""H1310/H1326 - Audit PWG's 32,690 lexicon-only headwords against digitised kosas.
 
 Input : pwg_register_genre.tsv  (col8 lexicon_only==1)  -- SLP1 k1
 Corpus: csl-orig/v02 dictionaries, headword sets in SLP1
   kosas (Sanskrit-Sanskrit thesauri): armh vcp skd (<k1> fmt) + abch acph acsj nmmb (kosha <syns> fmt)
+    + amar (H1326: Amarakosha, <syns> fmt, sourced from kosa_extra/ -- NOT in csl-orig, see
+    kosa_extra/README.md for provenance/licence)
   text-dicts (weaker evidence -- MW's L. hides kosa provenance): mw ap90 ap pw
-  (Amara AK not digitised in csl-orig -- recorded as a gap; PWG's own `sources` col names its AK citations)
+  (H1326: Rajanighantu/Trikandashesha/generic Nighantu checked but NOT sourceable as bulk
+   lemma-tagged headword sets -- every digitisation found (sanskrit-kosha/kosha's own raw texts,
+   the cltk/sanskrit_text_dcs DCS mirror) is unsegmented sandhi-joined verse with no <syns>/<k1>
+   tagging; recorded as a residual gap, see kosa_extra/README.md)
 Output: pwg_lexicon_only_cross_dictionary_census.tsv + summary json
 """
 import re, sys, os, json, collections
@@ -30,10 +35,12 @@ PWG = os.environ.get('PWG_REGISTER_TSV') or _first_existing([
     os.path.join(HERE, 'pwg_register_genre.tsv'),
 ], 'pwg_register_genre.tsv')
 SCRATCH = HERE   # outputs land next to this script
+EXTRA_DIR = os.path.join(HERE, 'kosa_extra')  # H1326: newly-sourced kosas NOT in csl-orig
 
 KOSA_K1   = ['armh', 'vcp', 'skd']            # kosa, <k1> Cologne format
 KOSA_SYNS = ['abch', 'acph', 'acsj', 'nmmb']  # kosa, sanskrit-kosha <syns> format
-KOSA      = KOSA_K1 + KOSA_SYNS
+KOSA_EXTRA = ['amar']  # H1326: Amarakosha, <syns> format, read from EXTRA_DIR (not csl-orig)
+KOSA      = KOSA_K1 + KOSA_SYNS + KOSA_EXTRA
 # independence axis (folded in from the v1 audit, PR #447):
 CORPUS    = ['bhs', 'gra']  # text-CORPUS dicts (Edgerton BHS, Grassmann RV) -- every headword is
                             # text-sourced, and NOT of the Bohtlingk/PW tradition -> real independence
@@ -44,7 +51,7 @@ TEXTDICTS = ['mw'] + CORPUS + APTE + SAME_SRC
 K1_DICTS  = KOSA_K1 + TEXTDICTS
 
 # PWG `sources` tokens that correspond to a kosa we compare against (for novelty test)
-PWG_TOKEN_TO_DICT = {'H': 'abch', 'HALAY': 'armh', 'ŚKDR': 'skd', 'SKDR': 'skd'}
+PWG_TOKEN_TO_DICT = {'H': 'abch', 'HALAY': 'armh', 'ŚKDR': 'skd', 'SKDR': 'skd', 'AK': 'amar'}
 
 ALPHA = re.compile(r'^[a-zA-Z]+$')
 
@@ -63,10 +70,10 @@ def load_k1(code):
                             hw.add(w)
     return hw
 
-def load_syns(code):
+def load_syns_file(path):
     """kosha format: `<eid>N<syns>[<s>]lemma-GEN,lemma-GEN,...[</s>]` on the <syns> line."""
     hw = set()
-    with open(f'{CSL}/{code}/{code}.txt', encoding='utf-8') as f:
+    with open(path, encoding='utf-8') as f:
         for line in f:
             if '<syns>' not in line:
                 continue
@@ -77,6 +84,9 @@ def load_syns(code):
                 if lemma and ALPHA.match(lemma):
                     hw.add(lemma)
     return hw
+
+def load_syns(code):
+    return load_syns_file(f'{CSL}/{code}/{code}.txt')
 
 def load_mw_citations():
     """Split MW into <L>..<LEND> entries; per k1 record whether ANY entry carries a
@@ -107,6 +117,8 @@ for c in K1_DICTS:
     sets[c] = load_k1(c)
 for c in KOSA_SYNS:
     sets[c] = load_syns(c)
+for c in KOSA_EXTRA:
+    sets[c] = load_syns_file(os.path.join(EXTRA_DIR, f'{c}.txt'))
 for c in sorted(sets):
     tag = 'kosa' if c in KOSA else 'text'
     print(f'  {c:6s} [{tag}] {len(sets[c]):>7,} headwords', file=sys.stderr)
@@ -158,7 +170,7 @@ per_dict_hits = collections.Counter()
 novel_kosa_words = []
 for r in rows:
     k1 = r['k1']
-    present = [c for c in K1_DICTS + KOSA_SYNS if k1 in sets[c]]
+    present = [c for c in K1_DICTS + KOSA_SYNS + KOSA_EXTRA if k1 in sets[c]]
     kosa_hit = [c for c in KOSA if c in present]
     corpus_hit = [c for c in CORPUS if c in present]      # independent text-corpus attestation
     also_in_pw = 'pw' in present                          # same-source Bohtlingk (not independent)
@@ -253,8 +265,13 @@ summary = {
     'dict_headword_sizes': {c: len(sets[c]) for c in sorted(sets)},
     'novel_kosa_corroboration_words': len(novel_kosa_words),
     'pwg_unique_rescued_by_normalisation': uniq_rescued,
-    'kosa_dicts': KOSA, 'text_dicts': TEXTDICTS,
-    'amara_gap': 'AK not digitised in csl-orig; PWG sources col records AK citations directly',
+    'kosa_dicts': KOSA, 'text_dicts': TEXTDICTS, 'kosa_extra_dicts': KOSA_EXTRA,
+    'amara_gap': 'H1326: AK (Amarakosha) now joined via kosa_extra/amar.txt (sanskrit-kosha/kosha, '
+                 'GNU GPL v3.0) -- was a gap in v2, resolved in v3.',
+    'still_unresolved_kosa_gap': 'H1326: Rajanighantu (RAJAN), Trikandashesha (TRIK), generic '
+                                 'Nighantu (NIGH) remain undigitised as bulk lemma-tagged headword '
+                                 'sets -- every source checked is unsegmented sandhi-joined verse '
+                                 '(see kosa_extra/README.md for the full source audit).',
 }
 with open(os.path.join(SCRATCH, 'census_summary.json'), 'w', encoding='utf-8') as f:
     json.dump(summary, f, ensure_ascii=False, indent=2)
