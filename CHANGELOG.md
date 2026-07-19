@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.99.0] - 2026-07-19
+
 ### Changed
 - **Two complete-but-unapplied author visas applied; W2 core goes from production to print (H1316, Opus 4.8 `claude-opus-4-8`).** Both sheets had a fully-decided `decisions.json` sitting beside them in the gitignored [`review/`](https://github.com/gasyoun/SanskritGrammar/tree/main/review) since 17-07-2026 while [`REVIEW_SHEETS_INDEX.md`](https://github.com/gasyoun/Uprava/blob/main/REVIEW_SHEETS_INDEX.md) still showed them awaiting a vote — a vote is not applied until something in the tree changes.
   - **`sangram-w2-core-11candidates-visa_17.07.26` (12/12 approve).** Ten articles gain a `published` revision in their manifest and lose the candidate banner from `index.mdx`: SG-MO-012 conjugation-overview · SG-WF-006 compounds-overview · SG-WF-001 word-structure-overview · SG-MO-006 consonant-stems · SG-MO-010 pronouns · SG-MO-023 ta-na-participles · SG-MO-026 absolutive · SG-MO-016 imperfect · SG-MO-018 aorist · SG-MO-027 passive. The eleventh card, **SG-MO-028 causative, was already published** on 17-07-2026 by its own dedicated sheet (`sanskritgrammar-sg-mo-028-causative_visa`, 10/10) — this sheet's MO28 card was a duplicate approval, so applying it was a no-op, not a second publication.
