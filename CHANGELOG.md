@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.86.0] - 2026-07-19
+
 ### Added
 - **PWG L_id ↔ (headword, homonym) map — the homonym-alignment key for the PWG layers (H1282 follow-up, Opus 4.8 `claude-opus-4-8[1m]`).** Every PWG entry header states its homonym explicitly (`<L>2…<k1>a<h>2`); new [`scripts/pwg_lid_hom_map.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_lid_hom_map.py) extracts `L_id → (k1, hom)` for all **123,366 entries** (6,494 explicit homonyms · 2,345 multi-homonym headwords) into [`data/pwg_lid_hom_map/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lid_hom_map). This lets the derivation/Pāṇini/compound layers (each keyed by `L_id`) pin to the **exact** homonym instead of attaching to all, removing the `homonym_ambiguous` guardrail for multi-homonym headwords. **Validated: 100.00 % of the pwg_ru headword index's 96,166 (k1, hom) pairs resolve in the map.** Deterministic, README-of-record.
 - **Wave-2 additions staged in the pedagogy plan (queued, docs-only, via [`/ask-batch`](https://github.com/gasyoun/claude-config/blob/main/commands/ask-batch.md), Fable 5 `claude-fable-5`):** new
