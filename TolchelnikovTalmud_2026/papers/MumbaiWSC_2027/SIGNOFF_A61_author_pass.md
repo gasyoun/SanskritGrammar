@@ -1,6 +1,6 @@
 # SIGNOFF — A61 author-voice pass (H1222)
 
-_Created: 18-07-2026 · Last updated: 19-07-2026_
+_Created: 18-07-2026 · Last updated: 19-07-2026_ (timestamp-gate addendum added later the same day)
 
 **Paper:** A61 — *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026): From Institutional Project to Shared Infrastructure* ([chapter folder](https://github.com/gasyoun/SanskritGrammar/tree/codex/a61-sol-evidence/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027), [draft PR #403](https://github.com/gasyoun/SanskritGrammar/pull/403))
 
@@ -63,5 +63,17 @@ Source: the author's annotated answer sheet (local working file `papers/A61.md`,
    - **§8.1 participant roles — not a missing-detail problem** (answering "not enough detail?"): the gate asks the author to confirm that each row's role description in [08-people.mdx](https://github.com/gasyoun/SanskritGrammar/blob/codex/a61-sol-evidence/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/08-people.mdx) §8.1 is accurate and fair to the living people named — a read-and-confirm, not an expansion.
 6. **Byline/contact — ruled:** gasyoun@gmail.com is the contact address for English-language venues (the author's stated default).
 7. **Final authorial approval — recorded for everything above.** A61 stays 4/5 until the two remaining mechanical gates land: (a) call-quotation timestamps + attribution check, (b) the §3.3 archive locator and the p. 1 fair-dealing verification. Those two plus submission-time abstract wording are the whole distance to 5/5.
+
+## Timestamp gate — CLOSED 19-07-2026 ([H1309](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1309-Fable_SanskritGrammar_a61-call-quotation-timestamps_19.07.26.md), Fable 5 `claude-fable-5`)
+
+Gate (a) is done. Every quotation and testimonial citation of the 27 June 2026 call now carries an hh:mm:ss locator taken from the recording's own caption timing (the author fetched the timed track from the player; alignment was character-exact against the caption stream, then context-verified passage by passage). Thirteen locators across [03-history.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/03-history.mdx), [05-corrections.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/05-corrections.mdx), [08-people.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/08-people.mdx); the call entry in [10-references.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/10-references.mdx) now states the locator convention.
+
+**One vetoable edit (TS1) + two attribution flags for the author's recording check:**
+
+- **TS1 — §5 attribution narrowed.** The recording shows the daily-digest statement spoken by D. Patel (00:55:03, "we have clubbed that to a daily digest"), but the two adjacent claims — "2026 first year more closed than opened" (00:55:46) and the annual carry-over (00:52:13) — are spoken by the screen-sharing dashboard presenter, who from context appears to be M. Gasūns, not Patel. The §5 sentence therefore now attributes only the digest claim to Patel and cites the other two to the call without a personal name ("Testimony on the same call"). Restore the names as the recording confirms — single revertable edit.
+- **Flag — §8.2 "so many things at such a quality" (02:48:53)** is attributed to M. Gasūns; the surrounding context ("if I would have to describe who is Jim, Jim is a factory") is consistent with that, but the transcript carries no speaker labels — confirm by ear.
+- **Note — §8.2 closing retirement statement** joins two moments hours apart ("psychologically…" at 02:50:39; "We're in good hands" at 00:41:20); both locators are now cited, the ellipsis stands.
+
+Remaining to 5/5 after this pass: gate (b) — §3.3 archive locator (the references already carry "Malten, Thomas. 2005 … author's archive; quoted in §3.3"; an inline pointer is optional) and the Kapp–Malten p. 1 + fair-dealing verification — plus §8.1 roles read-and-confirm and the submission-time abstract wording.
 
 _Dr. Mārcis Gasūns_
