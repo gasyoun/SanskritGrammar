@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""H1323 — PWG ghost-word triage cascade (stages 1-4).
+"""H1323 — PWG ghost-word triage cascade (stages 1-6).
 
 The lexicon-only audit v2 (H1310) leaves 2,298 pwg-unique headwords — in no other digitised
 Cologne dictionary — of which 788 are absent even from Böhtlingk's own PWK (`pw`). Hand-
 adjudicating them is too much. This cascade auto-classifies each into a bucket using layers we
-already own plus one reused normalizer, so a human only ever reviews the small true residue,
-and cross-checks each verdict against v2's citation-source category (`src_category`).
+already own plus two reused assets (SanskritSpellCheck's confusion-key normalizer and csl-atlas's
+DCS attested-lemma set), so a human only ever reviews the small true residue, and cross-checks
+each verdict against v2's citation-source category (`src_category`).
 
 Every word is tagged by ALL signals that fire; a single `verdict` is chosen by precedence.
 
@@ -28,9 +29,14 @@ Every word is tagged by ALL signals that fire; a single `verdict` is chosen by p
      v2's `src_category` = `ms_catalogue_propernoun` → cited only from a manuscript catalogue,
      so a name/title (`catalogue-propername`); = `kosa_nighantu_not_digitised` → attested in a
      koṣa PWG names but Cologne has not digitised (`kosa-corpus-gap`), not a ghost.
+  Stage 6 — DCS CORPUS ATTESTATION (reuses csl-atlas's SLP1 DCS lemma set)
+     the word is an attested lemma in the Digital Corpus of Sanskrit → a real text-attested
+     word (`corpus-attested`), the strongest ground-truth signal, wins the precedence. Its
+     inverse is the point of the residue: a residue word confirmed ABSENT from the corpus is a
+     genuine ghost, not merely a dictionary gap. (Records the DCS frequency band.)
 
-  → RESIDUE — no signal fired: a genuine simplex ghost-word candidate. Emitted with its
-     accented headword (`<k2>`) + German gloss for fast human review.
+  → RESIDUE — no signal fired AND absent from the DCS corpus: a genuine simplex ghost-word
+     candidate. Emitted with its accented headword (`<k2>`) + German gloss for fast human review.
 
 Read-only. Deterministic. Reuses the org normalizer rather than re-implementing one
 (prior-art: SHARED_CODE.md §12 marks `confusion_key` the canonical scribal/OCR skeleton key).
@@ -57,6 +63,8 @@ MW = ['mw']
 KOSA = ['skd']
 SAME_SOURCE = ['pw']
 ALL_DICTS = MW + INDEP + KOSA + SAME_SOURCE
+# stage 6 — DCS (Digital Corpus of Sanskrit) attested-lemma set, SLP1-keyed, sibling csl-atlas
+DCS_REL = ('csl-atlas', 'data', 'dcs', 'dcs_lemma_summary.json')
 
 RE_L = re.compile(r'<L>(\d+)')
 RE_K1 = re.compile(r'<k1>([^<]*)')
@@ -176,6 +184,18 @@ def main():
             if r['k1'] in targets and r['k1'] not in accent:
                 accent[r['k1']] = r.get('k2', '')
 
+    # stage 6 — DCS corpus attestation (SLP1-keyed lemma set, sibling csl-atlas; read-only)
+    dcs_path = github.joinpath(*DCS_REL)
+    DCS = {}
+    if dcs_path.exists():
+        raw = json.loads(dcs_path.read_text(encoding='utf-8'))
+        lem = raw.get('lemmas', raw)          # lemma entries are nested under "lemmas"
+        DCS = {k: v.get('freqBand', '') for k, v in lem.items()
+               if isinstance(v, dict) and v.get('attested')}
+    else:
+        print('WARN: DCS lemma set not found (%s) — stage 6 corpus attestation SKIPPED; clone '
+              'csl-atlas as a sibling to enable it.' % dcs_path, file=sys.stderr)
+
     bodies = {}
     for lid, k1, hom, body in entries(pwg):
         if k1 in targets:
@@ -294,8 +314,15 @@ def main():
         elif xref_kind == 'xref-attested':
             tags.add('xref-attested')
 
-        # ---- primary verdict by precedence ----
-        if 'misreading' in tags:
+        # stage 6 — DCS corpus attestation (the strongest "real word" signal: a text token)
+        dcs_band = DCS.get(k1, '')
+        if k1 in DCS:
+            tags.add('corpus-attested')
+
+        # ---- primary verdict by precedence (corpus attestation is ground truth, wins) ----
+        if 'corpus-attested' in tags:
+            verdict = 'corpus-attested'
+        elif 'misreading' in tags:
             verdict = 'misreading'
         elif 'spelling-variant' in tags:
             verdict = 'spelling-variant'
@@ -325,13 +352,14 @@ def main():
             'xref_target': xref_hit,
             'compound_parts': compound_parts,
             'v2_src_category': v2cat.get(k1, ''),
+            'dcs_band': dcs_band,
             'accented': accent.get(k1, ''),
             'gloss': gl,
         })
 
     # ---- outputs ----------------------------------------------------------------
     cols = ['k1', 'core', 'verdict', 'tags', 'variant_of', 'variant_dicts', 'xref_target',
-            'compound_parts', 'v2_src_category', 'accented', 'gloss']
+            'compound_parts', 'v2_src_category', 'dcs_band', 'accented', 'gloss']
     with (out / 'pwg_ghostword_triage.tsv').open('w', encoding='utf-8', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t')
         w.writeheader()
@@ -353,13 +381,17 @@ def main():
         xval.setdefault(r['verdict'], Counter())[r['v2_src_category'] or '(none)'] += 1
     xval = {v: dict(c.most_common()) for v, c in xval.items()}
     summary = {
-        'study': 'H1323 — PWG ghost-word triage cascade (stages 1-4), on the H1310 v2 shortlist',
+        'study': 'H1323 — PWG ghost-word triage cascade (stages 1-6), on the H1310 v2 shortlist',
         'as_of': '2026-07-19',
         'confusion_key_reused': 'SanskritSpellCheck detectors/slp1util.confusion_key' if ckey else None,
+        'dcs_set_reused': 'csl-atlas data/dcs/dcs_lemma_summary.json' if DCS else None,
         'pwg_unique_total': len(rows),
         'core_absent_from_every_dict': len(core),
         'core_by_verdict': dist(core),
         'core_residue': len(residue),
+        # stage-6 confirmation: how many core / residue words are attested in the DCS corpus
+        'core_dcs_attested': sum(1 for r in core if r['dcs_band']),
+        'residue_dcs_attested': sum(1 for r in residue if r['dcs_band']),
         'core_verdict_vs_v2_src_category': xval,
         'all_pwg_unique_by_verdict': dist(rows),
     }
@@ -367,7 +399,9 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
     print('core (absent from every dict) verdicts: %s' % dist(core), file=sys.stderr)
-    print('core residue (genuine ghost candidates): %d' % len(residue), file=sys.stderr)
+    print('core residue: %d | DCS-attested: core %d, residue %d'
+          % (len(residue), summary['core_dcs_attested'], summary['residue_dcs_attested']),
+          file=sys.stderr)
     print('wrote triage.tsv + residue.tsv + summary', file=sys.stderr)
     return 0
 
