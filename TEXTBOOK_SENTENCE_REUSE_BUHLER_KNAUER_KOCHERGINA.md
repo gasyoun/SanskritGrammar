@@ -1,4 +1,4 @@
-_Created: 17-07-2026 · Last updated: 17-07-2026_
+_Created: 17-07-2026 · Last updated: 19-07-2026_
 
 # What three Sanskrit primers copied from each other — a reuse analysis for teachers
 
@@ -48,17 +48,39 @@ Breakdown of all 124 shared clusters:
 | Bühler ↔ Kochergina only | 33 |
 | Knauer ↔ Kochergina only | 5 |
 
-### Q1 — Where did **Bühler** get *his* sentences? (the open question)
+### Q1 — Where did **Bühler** get *his* sentences? (answered)
 
-This is **not yet answered** and is the subject of a queued follow-up
-([H1212](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1212-Opus_SanskritGrammar_buhler-sentence-primary-source-attestation_17.07.26.md)).
-The concordance is textbook↔textbook only; nobody has matched Bühler's sentences against
-**primary Sanskrit literature** (Veda, epic, Manu, nīti/subhāṣita, kāvya). The data hints at the
-answer: some sentences are clearly adapted maxims (`लोभात्क्रोधः प्रभवति…` — a nīti commonplace),
-some are Vedic blessing-formulae (`त्वं जीव शरदः शतम्` — "may you live a hundred autumns"), and
-several name authors (Kālidāsa, Pāṇini). The empirical question H1212 will settle: **what fraction
-of Bühler's exercise sentences are verbatim quotations, adaptations, or pure grammar-drill
-inventions — and are the quotations 1:1 or modified?**
+**He wrote about nine tenths of them himself.** Of his 585 Devanāgarī exercise sentences
+(603 entries minus Lesson XLVIII's 18 alphabet-chart rows), matched against DCS 2026 and
+Böhtlingk's *Indische Sprüche* by
+[`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py):
+
+| Verdict | n | share |
+|---|---:|---:|
+| verbatim **quotation** | 50 | 8.5 % |
+| **adapted** (real verse, a word changed) | 16 | 2.7 % |
+| **invented** grammar drill | 518 | 88.5 % |
+| unknown (hit too short to judge) | 1 | 0.2 % |
+
+Three qualifications matter more than the headline:
+
+- **Attestation is late-book.** Nothing before Lesson XII is attested; lessons I–XXIV run
+  6.9 % attested, XXV–XLVII run 17.6 %. Bühler writes his own prose while paradigms are
+  being learned and switches to literature once the student can read it.
+- **The unit of borrowing is the verse, not the sentence.** 85 % of attested sentences sit
+  in consecutive runs — Bühler splits one śloka across two exercise numbers (and sometimes
+  runs several verses back to back). The 66 attested sentences are really ~39 borrowed verses.
+- **The source is gnomic literature, not the Veda.** Subhāṣita/nīti (*Indische Sprüche* 28,
+  Hitopadeśa 8, Bhartṛhari 4) plus dharmaśāstra (13) are four fifths of the hits; kāvya is
+  nearly absent. And the sentences *naming* Kālidāsa and Pāṇini are invented — they are
+  about those authors, not from them.
+
+`लोभात्क्रोधः प्रभवति…` is confirmed a verbatim *Hitopadeśa* quotation. `त्वं जीव शरदः शतम्`
+is **adapted, not quoted**: the formula is genuinely Vedic and recurs across the gṛhya
+literature, but Bühler's exact line matches no attested text — he assembled it from stock
+parts. Full method, the three false-positive classes that had to be eliminated, the
+hand-adjudicated cases and the limitations (`invented` = *not found*, never *composed*):
+[`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md).
 
 ---
 
@@ -102,7 +124,7 @@ convention** — which is a normalization opportunity, not a scholarly disagreem
 
 ## In how many ways can we compare the list?
 
-Nine axes. Four are computed, five are open (the map for future work):
+Nine axes. Five are computed, four are open (the map for future work):
 
 | # | Axis | Question it answers | Status |
 |---|---|---|---|
@@ -111,7 +133,7 @@ Nine axes. Four are computed, five are open (the map for future work):
 | 3 | **Sequencing** | is a shared sentence taught at a comparable point? | ✅ [S1 τ result](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md) |
 | 4 | **Selection pressure** | which Bühler sentences each successor kept vs dropped | ⚪ derivable from catalog |
 | 5 | **Transmission direction / stemma** | is a later variant closer to Bühler or to the intermediary | ⚪ open |
-| 6 | **Primary-source provenance** | quotation vs adapted vs invented (Q1) | ⚪ [H1212](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1212-Opus_SanskritGrammar_buhler-sentence-primary-source-attestation_17.07.26.md) |
+| 6 | **Primary-source provenance** | quotation vs adapted vs invented (Q1) | ✅ [adjudication](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md) |
 | 7 | **Grammatical feature drilled** | which construction each sentence targets | ⚪ open |
 | 8 | **Register / content** | Vedic vs nīti vs myth vs mundane drill | ⚪ open |
 | 9 | **Cross-lingual gloss** | German vs Russian translations of the same sentence | ⚪ open |
@@ -165,7 +187,8 @@ clusters already are.
 ## Reproduce
 
 ```
-python scripts/fidelity_axis.py     # -> scripts/data/fidelity.{json,csv} + summary
+python scripts/fidelity_axis.py       # -> scripts/data/fidelity.{json,csv} + summary
+python scripts/buhler_provenance.py   # -> scripts/data/buhler_provenance.{json,csv} (Q1/axis 6)
 ```
 
 Inputs, all already committed: [`scripts/data/matches.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches.json)
@@ -182,9 +205,10 @@ Inputs, all already committed: [`scripts/data/matches.json`](https://github.com/
   reuse but **misses paraphrase** (same content, different wording), so the true borrowing may be
   larger than 124 clusters. The fidelity verdicts inherit this: "identical/orthographic" is
   reliable; the small "modified" bucket is contaminated by extraction-boundary truncation, hand-flagged above.
-- Q1 (primary-source provenance) is out of scope here and queued as
-  [H1212](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1212-Opus_SanskritGrammar_buhler-sentence-primary-source-attestation_17.07.26.md).
+- Q1 (primary-source provenance) is now answered above; its own limitations — chiefly that
+  `invented` means *not found in DCS + Indische Sprüche*, never *composed by Bühler* — are
+  set out in [`BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md).
 
-_Analysis by Opus 4.8 (`claude-opus-4-8`), 17-07-2026 (H1211). Data pipeline: H311/H327._
+_Analysis by Opus 4.8 (`claude-opus-4-8`), 17-07-2026 (H1211); Q1/axis 6 added 19-07-2026 (H1212). Data pipeline: H311/H327._
 
 _Dr. Mārcis Gasūns_
