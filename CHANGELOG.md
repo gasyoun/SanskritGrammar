@@ -19,7 +19,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
-## [0.96.0] - 2026-07-19
+## [0.97.0] - 2026-07-19
 
 ### Changed
 - **Bühler provenance: third corpus, the IAST subset ruled out, and three corrections to H1212 (H1344, Opus 4.8 `claude-opus-4-8`).** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py) gains GRETIL plaintext as corpus C (`SanskritSpellCheck/detectors/gretil_*_raw/`, **85,401 verse lines**, +11 % haystack) behind `--no-gretil`, and a `--scripts deva,iast` mode. Headline moves 50/16/518/1 → **51 quotation · 17 adapted · 515 invented · 2 unknown** of 585.
