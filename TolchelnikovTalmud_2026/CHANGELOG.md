@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-07-19
+
+### Fixed
+- **A61 Kapp–Malten 1997 quote fidelity — sign-off gate (b) verified against the PDF ([H1317](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1317-Fable_SanskritGrammar_a61-kapp-malten-pdf-verification_19.07.26.md), Fable 5 `claude-fable-5`).** Word-by-word check of every Kapp–Malten quotation against https://www.sanskrit-lexicon.uni-koeln.de/CDSL.pdf: p. 1 locator CONFIRMED and fair-dealing PASS for the §1 block quote, but two silent deviations restored to the original ("an easy access"; "will be structured and unified" — the paraphrase had turned the 1997 future-tense plan into an accomplished fact); §7.2's quotation had silently rewritten the source's "PW1" to "PWG" *inside quotation marks* and dropped the "It may be surmised" hedge — now quoted verbatim with the p. 6 locator and a siglum gloss. Report-only findings for the author (files frozen or substance): §3.3's quote normalises the PDF's own typos ("to to", "availabe") and lacks its p. 9 locator; §3.1's "typed in Azhivaikkal" account contradicts the 1997 report's Kurzweil-OCR origin for MW (p. 2). All recorded in [SIGNOFF_A61_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/SIGNOFF_A61_author_pass.md).
+
 ## [0.4.1] - 2026-07-19
 
 ### Added
