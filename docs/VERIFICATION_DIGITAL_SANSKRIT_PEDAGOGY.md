@@ -34,6 +34,25 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
   builds. Incidental finding: the `mismatch` flag doubles as a DCS annotation-error
   detector (`artha` Voc.Sing attests *arthaiḥ*, an instrumental plural, n=6).
 
+- **W2-add-c ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)).
+  [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py)
+  green (20 tests) and `npm run build` **SUCCESS**; the widget was exercised in a served
+  build (head graded, ladder unfolds right→left, question slots keep ≥2 candidates).
+  Corpus: **5 443 ladders** from 168 880 upstream rows (gates: 156 762 below freq 5,
+  5 799 deeper than 4 members, 209 rejected on member order, 635 missing a RU gloss).
+  Gold set: **30 hand-checked** analyses in
+  [`gold_ladder_30.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/samasa_ladder/gold_ladder_30.tsv),
+  each with question chain, vigraha and smooth RU; bahuvrīhi rows carry the extra
+  `…yasya saḥ` rung, and the genuinely ambiguous `dharmarāja-` keeps **both** readings.
+  H948 is cross-linked, not duplicated: type and split drills stay kosha's, and no rung
+  here asserts a compound type. Report:
+  [`COVERAGE_REPORT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/samasa_ladder/COVERAGE_REPORT.md).
+  Incidental finding: **209 upstream `names.csv` rows carry a split that is reversed,
+  rotated, over-repeated or lifted from a different word** — invisible to a type-drill
+  (which never depends on member order) but fatal to a head-first ladder; the ordered
+  consonant-skeleton gate is what catches them. Gold-set ratification is agent-side
+  (Opus 4.8) — a human philological sign-off has not been taken.
+
 ## Risks & spikes register
 
 - **RQ1 may return a null result** — the `core_rank` "learn-these-first" order might *not* beat textbook order. **Spike before committing:** correlate `core_rank` with an independent difficulty proxy (rare-form density, first-attestation era). If the correlation is weak, RQ1 reports the null honestly — a negative result is still a result, not a failure to hide.
