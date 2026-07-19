@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **PWG gaṇa-membership layer — external Gaṇapāṭha × Pāṇini crosswalk (H1282 follow-up, Opus 4.8 `claude-opus-4-8[1m]`).** PWG has no gaṇapāṭha markup of its own (5 refs), so gaṇa membership is joined in from the digitised Gaṇapāṭha. New [`scripts/pwg_gana_membership.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_gana_membership.py) parses the vendored MIT [`ganapatha.rs`](https://github.com/ambuda-org/vidyut/blob/main/vidyut-prakriya/src/ganapatha.rs) (ambuda-org/vidyut, from ashtadhyayi.com; SLP1) → **227 gaṇas** (193 basic / 34 ākṛti), inverts to member→gaṇa, joins onto PWG headwords, and cross-validates against the Pāṇini crosswalk (#426). Result in [`data/pwg_gana_membership/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_gana_membership): **4,514 Gaṇapāṭha member words · 3,035 attested in PWG · 1,666 independently corroborated** by PWG's own citation of the gaṇa's governing sūtra (ādyaśvi ∈ gahādiḥ/P.4.2.138). Small but high-precision and genuinely Pāṇinian, vs PWG's 5 refs. Closes the 6-layer exploration (5 PWG-native layers + this external join; gaṇa was the documented PWG-negative). Deterministic, README-of-record.
+
 ## [0.87.0] - 2026-07-19
 
 ### Changed
