@@ -1,0 +1,264 @@
+{
+  "generated_by": "sangram/data/samasa_ladder/build_samasa_ladder.py (H1298)",
+  "inputs": {
+    "compounds": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\derived-data\\Kompozity\\names.csv",
+    "ru_gloss": "C:\\Users\\user\\Documents\\GitHub\\SanskritRussian\\lemma_glossary.tsv",
+    "lemma_frequency": "C:\\Users\\user\\Documents\\GitHub\\kosha\\data\\frequency\\lemma_frequency.tsv"
+  },
+  "parameters": {
+    "min_freq": 5,
+    "max_members": 4
+  },
+  "gates": {
+    "rows read": 168880,
+    "frequency + depth ok": 6287,
+    "member order verified": 6078,
+    "SHIPPED": 5443,
+    "REJECTED: member order not verifiable in surface": 209,
+    "no RU gloss for some member": 635,
+    "deeper than --max-members": 5799,
+    "single-member (not a compound)": 32,
+    "below --min-freq": 156762
+  },
+  "shipped": 5443,
+  "depth_histogram": {
+    "2": 5187,
+    "3": 235,
+    "4": 21
+  },
+  "band_histogram": {
+    "ядро": 60,
+    "частые": 320,
+    "средние": 1559,
+    "редкие": 3504
+  },
+  "rejected_order_examples": [
+    {
+      "surface": "ūrdhvaṁ",
+      "split": "daśan rātra",
+      "freq": 564
+    },
+    {
+      "surface": "devasya",
+      "split": "deva deva",
+      "freq": 423
+    },
+    {
+      "surface": "brāhmaṇasya",
+      "split": "brāhmaṇa manu",
+      "freq": 251
+    },
+    {
+      "surface": "gaur",
+      "split": "go go",
+      "freq": 159
+    },
+    {
+      "surface": "apo",
+      "split": "ap ap",
+      "freq": 154
+    },
+    {
+      "surface": "devāya",
+      "split": "deva deva",
+      "freq": 112
+    },
+    {
+      "surface": "dharmālokamukhaṁ",
+      "split": "āloka mukha dharma",
+      "freq": 86
+    },
+    {
+      "surface": "traya",
+      "split": "tri tri",
+      "freq": 74
+    },
+    {
+      "surface": "keśān",
+      "split": "keśa keśa",
+      "freq": 64
+    },
+    {
+      "surface": "savyaṁ",
+      "split": "savya savya",
+      "freq": 61
+    },
+    {
+      "surface": "bhaikṣaṁ",
+      "split": "bhaikṣa bhaikṣa",
+      "freq": 59
+    },
+    {
+      "surface": "ahorātraṁ",
+      "split": "ahar rātra",
+      "freq": 56
+    },
+    {
+      "surface": "sattvā",
+      "split": "vana latā",
+      "freq": 56
+    },
+    {
+      "surface": "savyena",
+      "split": "savya savya",
+      "freq": 50
+    },
+    {
+      "surface": "ajaḥ",
+      "split": "aja aja",
+      "freq": 46
+    },
+    {
+      "surface": "satyavāg",
+      "split": "satya vāc",
+      "freq": 46
+    },
+    {
+      "surface": "samidham",
+      "split": "samidh samidh",
+      "freq": 43
+    },
+    {
+      "surface": "ṣaḍguṇaṁ",
+      "split": "ṣaṣ guṇa",
+      "freq": 41
+    },
+    {
+      "surface": "trisāhasramahāsāhasreṣu",
+      "split": "tri mahat mahat sāhasra",
+      "freq": 39
+    },
+    {
+      "surface": "ahorātre",
+      "split": "ahan rātra",
+      "freq": 38
+    },
+    {
+      "surface": "ahorātre",
+      "split": "ahar rātra",
+      "freq": 38
+    },
+    {
+      "surface": "ṣaṣṭhasyāhno",
+      "split": "ṣaṣṭha ahar",
+      "freq": 30
+    },
+    {
+      "surface": "ahanyahani",
+      "split": "ahar ahar",
+      "freq": 29
+    },
+    {
+      "surface": "caturthasyāhno",
+      "split": "caturtha ahar",
+      "freq": 29
+    },
+    {
+      "surface": "prathamasyāhno",
+      "split": "prathama ahar",
+      "freq": 29
+    }
+  ],
+  "top_missing_gloss_members": [
+    [
+      "aṁśa",
+      36
+    ],
+    [
+      "siṁha",
+      16
+    ],
+    [
+      "aṅgula",
+      15
+    ],
+    [
+      "śaila",
+      12
+    ],
+    [
+      "hatyā",
+      10
+    ],
+    [
+      "saṁgha",
+      10
+    ],
+    [
+      "taila",
+      10
+    ],
+    [
+      "daitya",
+      10
+    ],
+    [
+      "tridoṣa",
+      8
+    ],
+    [
+      "jā",
+      7
+    ],
+    [
+      "mūṣā",
+      6
+    ],
+    [
+      "mātā",
+      6
+    ],
+    [
+      "paura",
+      6
+    ],
+    [
+      "saṁkāśa",
+      6
+    ],
+    [
+      "māṁsa",
+      6
+    ],
+    [
+      "daiva",
+      6
+    ],
+    [
+      "saṁjñā",
+      5
+    ],
+    [
+      "guñjā",
+      5
+    ],
+    [
+      "vaṁśa",
+      5
+    ],
+    [
+      "jambīra",
+      5
+    ],
+    [
+      "triphalā",
+      5
+    ],
+    [
+      "raudra",
+      5
+    ],
+    [
+      "trailokya",
+      5
+    ],
+    [
+      "triṁśat",
+      5
+    ],
+    [
+      "saṁdhyā",
+      4
+    ]
+  ]
+}
