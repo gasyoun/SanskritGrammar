@@ -1,0 +1,35 @@
+{
+  "study": "H1310 — PWG lexicon-only headwords vs other digitised dictionaries",
+  "as_of": "2026-07-19",
+  "lexicon_only_k1": 31925,
+  "comparison_independent_textbased": [
+    "ap90",
+    "ap",
+    "bhs",
+    "gra"
+  ],
+  "comparison_mw_weak_derived_from_pw": [
+    "mw"
+  ],
+  "comparison_kosa": [
+    "skd"
+  ],
+  "comparison_same_source_excluded": [
+    "pw"
+  ],
+  "by_verdict": {
+    "mw-only": 21874,
+    "text-independent": 7331,
+    "pwg-unique": 2619,
+    "kosa-only": 101
+  },
+  "per_dict_hits": {
+    "mw": 28935,
+    "ap90": 2268,
+    "ap": 5969,
+    "bhs": 1537,
+    "gra": 502,
+    "skd": 3359,
+    "pw": 29550
+  }
+}
