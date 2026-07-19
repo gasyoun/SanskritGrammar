@@ -1,0 +1,19 @@
+{
+  "study": "PWG register/genre layer (diachronic profile per headword from <ls> citations)",
+  "as_of": "2026-07-19",
+  "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
+  "entries_with_citations": 116033,
+  "citation_tokens_seen": 566678,
+  "citation_tokens_mapped_pct": 90.6,
+  "curated_source_tokens": 124,
+  "lexicon_only_headwords": 32690,
+  "by_register": {
+    "lexical": 32690,
+    "classical": 21511,
+    "sutra": 19221,
+    "vedic": 17636,
+    "epic": 14500,
+    "uncategorised": 5331,
+    "brahmana": 5144
+  }
+}
