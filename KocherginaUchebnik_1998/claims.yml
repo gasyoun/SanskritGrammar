@@ -740,7 +740,7 @@ entries:
     number: "Benedictive/precative: 577 tokens = 0.11% of 523,738 finite verbal tokens (DCS-2026; 577 is the whole precative mood — DCS-2026 does not tag pada, so this bounds the Ātmanepada subset above; DCS-2021 medium-only code = 221) — 'крайне редко' confirmed a fortiori"
     ref: "Whitney §924 (middle precative scantily attested); DCS verify_claims_dcs.py HK-39"
     verdict_pedagogy: JUSTIFIED
-    mg_footnote: "Прекатив Ātmanepada — 0,11% глагольных словоформ DCS-2026 (577 из 523 738). «Крайне редко» подтверждается."
+    mg_footnote: "Прекатив (всё наклонение) — 0,11% глагольных словоформ DCS-2026 (577 из 523 738; DCS-2026 не размечает пада, поэтому 577 — верхняя граница для Ātmanepada; DCS-2021 медий-код = 221). «Крайне редко» подтверждается тем более."
     note: "Corpus-confirmed near-zero. Kochergina's 'крайне редко' is accurate and appropriately emphatic."
 
   - id: HK-40

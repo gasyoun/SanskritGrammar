@@ -171,7 +171,7 @@ entries:
     falsifiable_as: "is the middle-voice precative genuinely almost absent from post-Vedic Sanskrit in DCS token counts"
     sources: [dcs]
     verdict_fact: TRUE
-    number: "577 tokens = 0.11% of 523,738 verbal tokens ('Benedictive Medium', DCS-2021 — reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK39_precative_middle)"
+    number: "577 tokens = 0.11% of 523,738 finite verbal tokens (DCS-2026 whole precative mood; pada untagged, so 577 upper-bounds the Ātmanepada subset; DCS-2021 medium-only code = 221 — cf. KocherginaUchebnik_1998 HK-39)"
     ref: "DCS-2021 timws.csv; cf. KocherginaUchebnik_1998 HK-39 (same figure, independently stated there as 'крайне редко'); Талмуд обогащает — Ā-прекатив по 4 (продуктивно), 5 (реже) И 6 (еще реже) — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)"
     verdict_pedagogy: JUSTIFIED
     note: "Second independent grammar making the identical, now-doubly-confirmed rarity claim about the same paradigm cell."
@@ -628,12 +628,12 @@ entries:
     falsifiable_as: "are precative/injunctive/conditional rare next to the big three moods"
     sources: [dcs]
     verdict_fact: TRUE
-    number: "DCS-2021 tokens: benedictive-medium 577 + injunctive 5,258 + conditional 340 = 1.18% of verbal — vs optative 91,912 (17.6%), imperative 56,506 (10.8%), indicative present alone 353,215 (verify_claims_dcs.py OCH_rare_moods)"
+    number: "DCS-2021 tokens: precative (whole mood, pada untagged) 577 + injunctive 5,258 + conditional 340 = 1.18% of verbal — vs optative 91,912 (17.6%), imperative 56,506 (10.8%), indicative present alone 353,215 (verify_claims_dcs.py OCH_rare_moods)"
     ref: "DCS-2021 timws.csv"
     verdict_pedagogy: JUSTIFIED
     mg_footnote: >-
       Частотность наклонений по DCS-2021: оптатив 91 912, императив 56 506 словоупотреблений —
-      против прекатива (мед.) 577, инъюнктива 5 258 и кондиционалиса 340, вместе 1,18 %
+      против прекатива (всё наклонение, пада не размечена) 577, инъюнктива 5 258 и кондиционалиса 340, вместе 1,18 %
       глагольных. «Сравнительно редко» — точная, даже мягкая формулировка.
     note: "The three-way split of the mood system into living core vs marginal triple is corpus-exact."
 
