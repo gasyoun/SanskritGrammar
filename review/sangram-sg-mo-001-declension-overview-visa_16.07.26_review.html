@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Sangram: виза на обзор SG-MO-001 «Склонение» — H1013 (первый обзор ядра W2)</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #1a1d24; --panel2: #22262f; --text: #e8e8ea;
+    --muted: #9aa0ac; --accent: #6ea8fe; --green: #3fb950; --red: #f85149;
+    --amber: #d29922; --border: #30363d;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f1f4; --text:#1a1d24; --muted:#5b616e; --border:#d8dbe0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
+  header { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border); padding:14px 20px; }
+  header h1 { margin:0 0 4px; font-size:1.15rem; }
+  header .sub { color:var(--muted); font-size:0.85rem; }
+  .tally { display:flex; gap:14px; margin-top:10px; font-size:0.85rem; flex-wrap:wrap; }
+  .tally span { padding:3px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--border); }
+  .tally b { font-variant-numeric: tabular-nums; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px; }
+  .toolbar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center; }
+  button.dl { background:var(--accent); color:#0b0d10; border:none; border-radius:8px; padding:9px 16px; font-weight:600; cursor:pointer; }
+  button.dl:hover { opacity:0.9; }
+  .hint { color:var(--muted); font-size:0.8rem; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:18px; transition: border-color .15s; }
+  .card.voted-approve { border-color: var(--green); }
+  .card.voted-reject { border-color: var(--red); }
+  .card.voted-defer { border-color: var(--amber); }
+  .card.focused { outline: 2px solid var(--accent); }
+  .card h2 { margin:0 0 2px; font-size:1.05rem; }
+  .card .id { color:var(--muted); font-size:0.78rem; margin-bottom:10px; }
+  .box { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.92rem; margin:10px 0; }
+  .box h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .box.content h3 { color: var(--accent); }
+  .evidence { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.88rem; margin-top:10px; }
+  .evidence h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .evidence ul { margin:4px 0 0; padding-left:18px; }
+  .evidence li { margin-bottom:4px; }
+  .votebar { display:flex; gap:8px; margin-top:14px; align-items:center; flex-wrap:wrap; }
+  .votebar button { border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px; padding:8px 14px; cursor:pointer; font-size:0.88rem; }
+  .votebar button.approve.active { background:var(--green); color:#06210c; border-color:var(--green); }
+  .votebar button.reject.active { background:var(--red); color:#2b0705; border-color:var(--red); }
+  .votebar button.defer.active { background:var(--amber); color:#2b1c02; border-color:var(--amber); }
+  .votebar .key { opacity:.6; font-size:0.75rem; }
+  textarea.note { width:100%; margin-top:10px; min-height:46px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:0.88rem; resize:vertical; }
+  footer { text-align:center; color:var(--muted); font-size:0.78rem; padding:20px; }
+  code { background: var(--panel2); border-radius:4px; padding:1px 5px; font-size:0.85em; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sangram: виза на обзор SG-MO-001 «Склонение: категории и обзор системы»</h1>
+  <div class="sub">Первый <b>обзор</b> ядра W2 (H1013) · сгенерировано 16-07-2026 (Opus 4.8, <code>claude-opus-4-8[1m]</code>) · sheet_id: <code>sangram-sg-mo-001-declension-overview-visa_16.07.26</code> · кандидат merged (<a href="https://github.com/gasyoun/SanskritGrammar/pull/255">PR #255</a>) · <b>карточка A1 = приёмка ШАБЛОНА «обзор» перед SG-MO-012 / SG-WF-001 / SG-WF-006</b></div>
+  <div class="tally" id="tally"></div>
+</header>
+<main>
+  <div class="toolbar">
+    <button class="dl" id="dlBtn">Download decisions.json</button>
+    <span class="hint">клавиши: a=approve · r=reject · d=defer · ↑/↓ = следующая карточка (кликните карточку, чтобы сфокусировать)</span>
+  </div>
+  <div id="items"></div>
+</main>
+<footer>Голоса сохраняются в localStorage браузера (ключ = sheet_id). Экспортируйте decisions.json после прохода и положите рядом с листом.</footer>
+
+<script>
+const SHEET_ID = "sangram-sg-mo-001-declension-overview-visa_16.07.26";
+const ITEMS = [
+  {
+    id: "A1",
+    title: "Тип статьи «обзор» — новый шаблон (ключевая карточка)",
+    content: "Первая обзорная статья ядра W2 задаёт НОВЫЙ тип «обзор», отличный от измерительного пилота: скелет пилота МИНУС § 4 «Валидация и kill-gate» (обзор не проверяет предел свидетельств), ПЛЮС § «Карта подстатей» (связывает подстатьи кластера), а § 1 переформулирован из «Вопрос статьи (предел EMx)» в «Рамка кластера» (структурная и частотная рамка домена). § 2 «Данные», § «Примеры», § «Ограничения», § «Провенанс» сохранены; любое корпусное число по-прежнему несёт пин + знаменатель + ДИ (C3). Approve здесь = принять этот шаблон для ВСЕХ обзоров — SG-MO-012, SG-WF-001, SG-WF-006 пишутся по нему.",
+    evidence: [
+      "Пилоты P1–P5 — измерительные, с kill-gate; обзор кластера не проверяет предел, а вводит домен и раскладывает его на подстатьи.",
+      "Слот SG-MO-001 в реестре C2 назван обзором-представителем ① кластера «Склонение» (программа C5 § 6)."
+    ]
+  },
+  {
+    id: "A2",
+    title: "Универсум: только словоизменённые нарицательные (NOUN)",
+    content: "Рамка считается по `upos=NOUN`, падеж задан и ≠ `Cpd`. Исключены прилагательные (`ADJ`), местоимения (`PRON`), числительные — они склоняются, но вынесены в собственные слоты (SG-MO-008/009/010/011); нефинальные члены композитов (`Case=Cpd`) — предмет кластера «Композиты». Знаменатель: 1 790 270 токенов. Вопрос: верна ли эта граница для обзора склонения (не размывать местоимениями/прилагательными)?",
+    evidence: [
+      "Реестр C2, запрос SG-MO-001: dcs:morph POS=NOUN &amp; Case=* &amp; Number=* («матрица падеж×число как базовая частотная рамка домена»).",
+      "Местоимения имеют отдельный ① слот SG-MO-010 — рамка NOUN их не дублирует."
+    ]
+  },
+  {
+    id: "A3",
+    title: "Матрица падеж×число как частотная рамка",
+    content: "По числу: ед. 79,3 % / мн. 18,6 % / дв. 2,09 % [2,07–2,12] — двойственное редко. По падежу: Nom 38,7 % + Acc 24,0 % несут почти две трети употреблений, дательный реже всех (2,2 %). Практическое следствие для домена: редкие клетки (дв., Dat, Abl) малочисленны, поэтому количественные утверждения по ним требуют явных знаменателей и ДИ. Полная матрица 24 клеток и ДИ — в coverage_summary.json.",
+    evidence: [
+      "Скрипт sg_mo_001_declension_overview.py — воспроизводимо на пинованном мастере; доли с ДИ по Уилсону, знаменатель записан.",
+      "Согласуется с пилотом P1 (предел EM3): покрытие клеток на лемму почти всегда неполно."
+    ]
+  },
+  {
+    id: "A4",
+    title: "Инвентарь типов основ — приближение по финали леммы (нужна ли настоящая парадигматика?)",
+    content: "Инвентарь считается токен-взвешенно по ФИНАЛИ ЛЕММЫ: -a 62,9 % [62,86–63,0], -i 8,9 %, -ā 6,4 %, n-основы 4,8 %, s-основы 4,2 %, -ī 3,6 %, -u 3,3 %, прочие согласные 2,3 %. Важно: цитатная форма леммы ≠ основа (n-основа rājan цитируется на -n, но парадигма имеет сильную/слабую ступени), поэтому доли — ОРИЕНТИРОВОЧНАЯ рамка, а не парадигматический разбор. Вопрос визы: принять приближение с явной оговоркой (§ 6 п. 1), или обзор должен ждать настоящей парадигматической классификации основ?",
+    evidence: [
+      "Доминирование -a (≈ 63 %) — количественная мотивация, почему статья -a-основ (SG-MO-002) выбрана флагманом пилотов.",
+      "Оговорка § 6 п. 1 фиксирует приближённость; точное разложение основ — задача подстатей кластера."
+    ]
+  },
+  {
+    id: "A5",
+    title: "Примеры: по одному корпусному представителю на тип основы",
+    content: "Пять реальных токенов DCS, каждый с устойчивым locus: devo (deva, -a, Nom.ед., AbhCint) · agninā (agni, -i, Ins.ед., AgRPar) · pitrā (pitṛ, -ṛ, Ins.ед., AvŚat) · rājñaś (rājan, n-основа, Gen.ед., AgniPur) · nadīr (nadī, -ī, Nom.мн., AVP). Хранятся канонической SLP1-копией в манифесте (контракт C4). Покрывают контраст основ + разные падежи и числа (в т. ч. мн. число и женский род).",
+    evidence: [
+      "Все пять — реальные токены пинованного снапшота с locus (C3 § 4.5), не сконструированные.",
+      "Выбор представителей повторяет частотный порядок § 3.2 (сначала -a, затем -i, -ṛ, согласная, -ī)."
+    ]
+  },
+  {
+    id: "A6",
+    title: "Карта подстатей: ссылка на реестр, без дублирования TOC",
+    content: "§ «Карта подстатей» связывает подстатьи кластера SG-MO-002…011 с пометкой приоритета ① (ядро W2: 002 -a, 006 согласные, 010 местоимения) / ② (расширение: 003/004/005/007/008/009/011). Обзор НЕ переизлагает инвентарь слотов и граф зависимостей — они машинно-генерируются на странице домена из реестра C2 (append-only); обзор лишь ссылается на них. Вопрос: верна ли эта разметка ①/② и порядок?",
+    evidence: [
+      "Страница домена 03-formal-morphology.mdx — auto-generated («do not hand-edit; edit the registry»); дублировать её нельзя.",
+      "Сплит ①/② — из программы C5 § 6 (ядро 15–25 статей, ≥1 на кластер)."
+    ]
+  },
+  {
+    id: "A7",
+    title: "Ограничения — полон ли список для обзора?",
+    content: "Четыре оговорки § 6: (1) тип основы — приближение по финали леммы (цитатная форма ≠ основа); (2) универсум только NOUN (ADJ/PRON/числительные/Cpd исключены); (3) полуавтоматическая разметка + дефекты C3 (сандхи/NFD-нормализация Д3 смещают финаль; акцент отсутствует); (4) пин зеркала осиротел — привязка provenance-таблица + SHA-256 + тег c3-pin-04e0778-content. Вопрос: достаточен ли набор оговорок для обзорной статьи?",
+    evidence: [
+      "Дефекты Д1–Д3 контракта C3 напрямую задевают финаль леммы и признаки склонения.",
+      "Тот же разрыв провенанса пина, что зафиксирован у пилотов P1–P5."
+    ]
+  },
+  {
+    id: "B1",
+    title: "ВИЗА: опубликовать обзор + принять шаблон «обзор»",
+    content: "Approve = (а) статья публикуется: ревизия `published` в манифест, плашка кандидата снимается из index.mdx; (б) тип «обзор» (карточка A1) принимается как редакционная норма — SG-MO-012 (Спряжение: обзор), SG-WF-001 (Строение слова), SG-WF-006 (Композиты: обзор) пишутся по этому шаблону. Reject = обзор снимается / тип пересматривается до тиража. Defer = остаётся кандидатом до заметок. Заметки к любым карточкам (напр. по A4 — требовать парадигматику) исполняются follow-up-сессией по decisions.json.",
+    evidence: [
+      "Definition of done H1013: обзор + скрипт + данные merged (PR #255, кандидат); review-sheet создан и зарегистрирован; финальную приёмку даёт виза автора.",
+      "Паттерн пилотов P1–P5: кандидат land'ится merged PR, публикация — только по авторской визе."
+    ]
+  }
+];
+
+const state = JSON.parse(localStorage.getItem("reviewsheet:" + SHEET_ID) || "{}");
+function save() { localStorage.setItem("reviewsheet:" + SHEET_ID, JSON.stringify(state)); renderTally(); }
+
+function renderTally() {
+  const counts = {approve:0, reject:0, defer:0, unvoted:0};
+  ITEMS.forEach(it => {
+    const d = state[it.id] && state[it.id].decision;
+    if (d === "approve") counts.approve++;
+    else if (d === "reject") counts.reject++;
+    else if (d === "defer") counts.defer++;
+    else counts.unvoted++;
+  });
+  document.getElementById("tally").innerHTML =
+    `<span>Всего: <b>${ITEMS.length}</b></span>` +
+    `<span>✅ Approve: <b>${counts.approve}</b></span>` +
+    `<span>❌ Reject: <b>${counts.reject}</b></span>` +
+    `<span>⏸ Defer: <b>${counts.defer}</b></span>` +
+    `<span>⬜ Не голосовано: <b>${counts.unvoted}</b></span>`;
+}
+
+function vote(id, decision) {
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  updateCard(id);
+}
+
+function noteChange(id, val) {
+  state[id] = state[id] || {};
+  state[id].note = val;
+  save();
+}
+
+function updateCard(id) {
+  const card = document.getElementById("card-" + id);
+  card.classList.remove("voted-approve", "voted-reject", "voted-defer");
+  const d = state[id] && state[id].decision;
+  if (d) card.classList.add("voted-" + d);
+  ["approve","reject","defer"].forEach(k => {
+    document.getElementById(`btn-${id}-${k}`).classList.toggle("active", d === k);
+  });
+}
+
+function render() {
+  const wrap = document.getElementById("items");
+  wrap.innerHTML = "";
+  ITEMS.forEach((it, idx) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.id = "card-" + it.id;
+    div.tabIndex = 0;
+    div.innerHTML = `
+      <h2>${it.id} · ${it.title}</h2>
+      <div class="id">#${idx+1} из ${ITEMS.length}</div>
+      <div class="box content"><h3>Что в статье</h3>${it.content}</div>
+      <div class="evidence"><h3>Основание</h3><ul>${it.evidence.map(e => `<li>${e}</li>`).join("")}</ul></div>
+      <div class="votebar">
+        <button class="approve" id="btn-${it.id}-approve" onclick="vote('${it.id}','approve')">✅ Approve <span class="key">(a)</span></button>
+        <button class="reject" id="btn-${it.id}-reject" onclick="vote('${it.id}','reject')">❌ Reject <span class="key">(r)</span></button>
+        <button class="defer" id="btn-${it.id}-defer" onclick="vote('${it.id}','defer')">⏸ Defer <span class="key">(d)</span></button>
+      </div>
+      <textarea class="note" placeholder="Заметка (необязательно)…" oninput="noteChange('${it.id}', this.value)">${(state[it.id] && state[it.id].note) || ""}</textarea>
+    `;
+    wrap.appendChild(div);
+    updateCard(it.id);
+  });
+}
+
+let focusedIdx = 0;
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  if (active && active.tagName === "TEXTAREA") return;
+  const cards = ITEMS.map(it => it.id);
+  if (e.key === "ArrowDown") { focusedIdx = Math.min(focusedIdx+1, cards.length-1); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (e.key === "ArrowUp") { focusedIdx = Math.max(focusedIdx-1, 0); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (["a","r","d"].includes(e.key)) {
+    const id = cards[focusedIdx];
+    const map = {a:"approve", r:"reject", d:"defer"};
+    vote(id, map[e.key]);
+  }
+});
+
+document.getElementById("dlBtn").addEventListener("click", () => {
+  const decided = ITEMS.filter(it => state[it.id] && state[it.id].decision).length;
+  const payload = {
+    sheet_id: SHEET_ID,
+    generated: "16-07-2026",
+    decided: decided,
+    items: ITEMS.map(it => ({
+      id: it.id,
+      decision: (state[it.id] && state[it.id].decision) || null,
+      note: (state[it.id] && state[it.id].note) || ""
+    }))
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "sangram-sg-mo-001-declension-overview-visa_16.07.26_decisions.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+render();
+renderTally();
+</script>
+</body>
+</html>

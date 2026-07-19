@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Методичка к Кочергиной v1 (H807) — виза автора — 13 items</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:44px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Методичка к Кочергиной v1 (H807) — виза автора — 13 items</h1>
+    <div class="sub">Generated 16-07-2026 &middot; sheet_id <code>sanskritgrammar-metodichka-kochergina-v1_16.07.26</code> &middot; Визовый пакет v1 методички-компаньона (разделы I–III + ключи упражнений). Approve = пункт готов в печатную рукопись как написано; Reject = снять/переписать; Defer = решить позже. Числа — из claims.yml (234 проверенных утверждения) и корпусных пакетов Sangram; чтения — только из изданий в общественном достоянии (Кнауэр 1908, Bühler 1878/1923).</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">13</span></span>
+  </div>
+</header>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="frame">Рамка</button><button data-filter="zan">Занятия</button><button data-filter="otsylki">Отсылки</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="razdel-1-frame" data-filt="frame">
+    <header><div class="hw">Раздел I — рамка + приложение частотных бейджей </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Что на визе</h4><p>Вводная рамка раздела I: учебник фактически точен, сбои — «сверхобобщение универсалий» и «скрытая частотность»; 12 UNTESTABLE-строк реестра в печать не включены. Приложение — 11 готовых примечаний М. Г. (mg_footnote из claims.yml: HK-46, 48, 50, 52, 17, 100, 4b, 23, 29, 39, 223) таблицей по занятиям.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-06" data-filt="zan">
+    <header><div class="hw">Занятие VI — ударение (HK-10) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>«verbum finitum никогда не ударен» — сверхобобщение; глагол ударен в придаточном и в начале предложения (Whitney § 168). Совет: ударный личный глагол в ведийском тексте — сигнал придаточного.</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>VI-1: отделить энклитики (ca, me, iva, vā, te) от ударных слов; ключ формулирует условие безударности глагола.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-10" data-filt="zan">
+    <header><div class="hw">Занятие X — основы на -ā (HK-14) + имперфект (HK-15) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметки</h4><p>(1) «-ā женского рода» — правило класса, не звука (корневые ā-основы вне правила); (2) имперфект «обычно повествование» — верно для классической прозы, но скрывает расслоение по эпохе.</p></div><div class="panel"><h4>Чтения</h4><p>aśvā aśrāmyan bhūmāv apataṃś ca (Bühler XII = Кочергина X, C0008) · udyāne patadbhyo vihagebhyo dhānyaṃ kiratīḥ kanyā apaśyam (Bühler XXIII).</p></div><div class="panel"><h4>Дриллы + ключ</h4><p>Склонение senā: senā / senām / senayā / senāyai / senāyāḥ / senāyāḥ / senāyām / sene. Презенс→имперфект: abhavat, agacchat, avadat, apaśyat, avasat.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-12" data-filt="zan">
+    <header><div class="hw">Занятие XII — «-ī/-ū всегда женского рода» (HK-16, единственный FALSE) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>Единственная фактическая ошибка книги: мужские rathī́, senānī́, sudhī́, bhū- — стандартный класс; честная формулировка: производные nadī́/vadhū́ — женские.</p></div><div class="panel"><h4>Чтения</h4><p>padmaṃ śriyā vasatiḥ (C0058; примечание в рукописи: śriyā ← śriyāḥ G.sg перед звонким) · nadīṣu matsyān apaśyāma (Bühler XI).</p></div><div class="panel"><h4>Дриллы + ключ</h4><p>Склонение nadī: nadī / nadīm / nadyā / nadyai / nadyāḥ / nadyāḥ / nadyām / nadi. Род: nadī ж · rathī м · senānī м · vadhū ж · svayaṃbhū м.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-16" data-filt="zan">
+    <header><div class="hw">Занятие XVI — IX класс (HK-19) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>«Большинство на носовой+согласная» завышает долю; ядро класса — krī, jñā, grah, pū, lū, prī.</p></div><div class="panel"><h4>Чтения</h4><p>sa eva puruṣo yaḥ krodhaṃ hayam iva nigṛhṇāti (Кнауэр 12) · yad dhyāyate yat kurute dhṛtiṃ badhnāti yatra ca … (Bühler XLII, фрагмент).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>3 л. ед. ч.: krīṇā́ti, jānā́ti, gṛhṇā́ti, badhnā́ti, punā́ti; носовой утрачен в bandh → badhnā́ti.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-18" data-filt="zan">
+    <header><div class="hw">Занятие XVIII — будущее (HK-4a/4b) + рефлекс палатальных (HK-21) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметки</h4><p>«Единого правила -syá» нет — реальный предиктор seṭ/aniṭ; -iṣya 56,8 % против -sya 24,9 % и -ṣya 18,3 % (HK-4b); рефлекс j/h → k/ṣ лексикализован (пример в рукописи: srakṣyáti при drakṣyáti — проверить примеры).</p></div><div class="panel"><h4>Чтения</h4><p>yatra bhartā me bhaviṣyati yatra ca taṃ neṣyasi tatrāhaṃ ca gamiṣyāmi (Кнауэр 13) · patiṃ drakṣyasi kalyāṇi kṣipram (Кнауэр 13).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>bhaviṣyáti seṭ · kariṣyáti seṭ · dāsyáti aniṭ · gamiṣyáti seṭ · drakṣyáti aniṭ · lapsyáte aniṭ (Ā).</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-21" data-filt="zan">
+    <header><div class="hw">Занятие XXI — перфект (HK-25) + соединительное -i- (HK-26) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметки</h4><p>«От всех односложных» — кроме vid, ās и корней с долгим гласным (перифрастика); «нескольких корней» aniṭ — на деле десятки (закрытый класс).</p></div><div class="panel"><h4>Чтение</h4><p>tataḥ prabhṛti na svasthā nalaṃ prati babhūva sā (Кнауэр 15).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>uvāca ← vac · jagāma ← gam · cakāra ← kṛ · babhūva ← bhū · dadau ← dā · reme ← ram.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-22" data-filt="zan">
+    <header><div class="hw">Занятие XXII — перифрастический перфект (карточка A4 визы P3) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>Корпусная дистрибуция вспомогательных: as 91,4 % · kṛ 7,4 % · bhū 0,8 % (из 4 046 форм; 3 sg 86,6 %; SG-MO-017 § 3.4). Совет: учите шаблон °ayām āsa. Внесено по визе MG 15-07-2026 (карточка A4).</p></div><div class="panel"><h4>Чтения</h4><p>gateṣu pārthiveṣu bhīmo vivāhaṃ kārayām āsa damayantyā nalasya ca (Кнауэр 15) · satyaṃ cikīrṣamāṇas tu dhārayām āsa hṛcchayam (Кнауэр 17).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>kathayām āsa · darśayām āsa · tāḍayām āsa · vid → vidāṃ cakāra (особый случай со вспомогательным kṛ — проверить).</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-30" data-filt="zan">
+    <header><div class="hw">Занятие XXX — основы на -as/-is/-us (HK-32) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>«В большинстве среднего рода» надежно только для -as; правило пользовать посуффиксно.</p></div><div class="panel"><h4>Чтения</h4><p>haviṣā devā vartante (Кнауэр 6) · svayaṃbhuvā jagat sraṣṭuṃ manaḥ kṛtam (Bühler XXX = Кнауэр 19).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>manaḥ ср · tejaḥ ср · yaśaḥ ср · candramāḥ м · haviḥ ср · āyuḥ ср · cakṣuḥ ср.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-32" data-filt="zan">
+    <header><div class="hw">Занятие XXXII — род композита (HK-34) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>Правило верно кроме bahuvrīhi (род по носителю признака); рекомендованная оговорка «…кроме bahuvrīhi».</p></div><div class="panel"><h4>Чтение</h4><p>mahodadhimadhye śeṣanāgam adhiśayāno viṣṇuḥ sukhaṃ svapiti (Bühler XL = Кнауэр 11, C0073).</p></div><div class="panel"><h4>Дриллы + ключ</h4><p>Минимальная пара: pītāmbaram (ср., определительный) / pītāmbaraḥ (м., bahuvrīhi о Вишну). Разбор mahodadhimadhye: mahā+udadhi (карма-дхарая) → +madhya (татпуруша) → L.sg.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-37" data-filt="zan">
+    <header><div class="hw">Занятие XXXVII — корневой аорист (HK-38) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>Инвентарь корневого аориста шире «-ā и bhū»: gam, sthā, dā, dhā, jñā, kram (Whitney § 829–834).</p></div><div class="panel"><h4>Чтения</h4><p>tapasvinām uparodho mā bhūt (Кнауэр Nr. 14; запретительное mā + безаугментный корневой) · gopasya bhayād vṛkaḥ śvānam amucad vanaṃ ca niragāt (Кнауэр Nr. 14).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>ábhūt / ádāt / ásthāt — корневые · ágamat — тематический (у gam есть и корневой ágan) · ávocat — редуплицированный · ákārṣīt — сигматический.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-39" data-filt="zan">
+    <header><div class="hw">Занятие XXXIX — порядок двух превербов (HK-40) </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p>Двойное «всегда» — эвристика, не закон; корпус дает контрпримеры к жесткому делению внутренние/внешние.</p></div><div class="panel"><h4>Чтения</h4><p>etasyāṃ puri śrīmato rājñoḥ samāgamo 'jāyata (Bühler XXIV) · vidvāṃso vidvadbhiḥ saha samāgamāya spṛhayanti (Bühler XXV).</p></div><div class="panel"><h4>Дрилл + ключ</h4><p>samāgacchati = sam+ā+gam · pratyudgacchati = prati+ud+gam · samuttiṣṭhati = sam+ud+sthā (контрпример к «sam всегда контактный») · upasaṃharati = upa+sam+hṛ (правилу соответствует).</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md" target="_blank">Раздел II</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="razdel-3-otsylki" data-filt="otsylki">
+    <header><div class="hw">Раздел III — отсылки «см. также» по 11 занятиям </div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Что на визе</h4><p>Привязки для каждого занятия: Очерк-1978 по §§ (будущее § 157, seṭ/aniṭ §§ 62–63, аорист §§ 139–149, перфект § 150, описательный перфект § 156, композиты §§ 191–197, склонение §§ 83/85/92/98, IX класс § 136, превербы § 199 + § 237, ударение §§ 221–238); Конспект-2004 по разделам; Талмуд-2026 по главам (III соединительная i, IV редупликация, IX, X); Кнауэр по Nr. (1, 3, 6, 10–15, 17); Гасунс-2014 для seṭ/aniṭ. Выверено по цифровым текстам 16-07-2026.</p></div><div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md" target="_blank">Раздел III</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+</main>
+<footer class="hint">H807 · Fable 5 (claude-fable-5) · SanskritGrammar/KocherginaUchebnik_1998 Keyboard: <kbd>a</kbd> Approve &middot; <kbd>r</kbd> Reject
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "sanskritgrammar-metodichka-kochergina-v1_16.07.26";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["razdel-1-frame", "zan-06", "zan-10", "zan-12", "zan-16", "zan-18", "zan-21", "zan-22", "zan-30", "zan-32", "zan-37", "zan-39", "razdel-3-otsylki"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "16-07-2026", decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
