@@ -9,9 +9,22 @@ locally-available attested-text corpora:
      ``VisualDCS/src/DCS-data-2026/dcs_full.sqlite`` (754,726 sandhied IAST sentences).
   B. Böhtlingk, *Indische Sprüche* -- table ``subhashita`` in
      ``VisualDCS/src/DCS-data-2026/archive.sqlite`` (7,537 sayings, Deva + IAST).
+  C. GRETIL plaintext -- the local ``SanskritSpellCheck/detectors/gretil_*_raw/`` dirs
+     (kāvya, subhāṣita, smṛti, purāṇa, epic, stotra), added by H1344.
 
-GRETIL is deliberately NOT ingested: the org's GRETIL rights budget is an open @DECIDE
-(SamudraManthanam D5), and both corpora above are already on disk and rights-settled.
+Corpus C exists to falsify a finding of the first pass. That pass concluded "kāvya is
+nearly absent" from Bühler's sources -- but DCS carries no Raghuvaṃśa and no Śiśupālavadha,
+so the finding may have been an artefact of *corpus composition* rather than a fact about
+Bühler. GRETIL's Kāvya section (56 texts, Raghuvaṃśa and Kumārasaṃbhava included) is the
+direct test. See
+``BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`` for the outcome.
+
+**Rights.** GRETIL plaintext is CC BY-NC-SA 4.0. The house convention (PROJECT_INTERLINKS)
+is: do not commit the raw source text, commit only derived summaries. This script therefore
+*reads* the gitignored raw dirs and emits verdicts plus short evidence snippets; it never
+copies a corpus file into the repo. An earlier revision of this docstring claimed GRETIL was
+blocked by an open @DECIDE (SamudraManthanam D5) -- that was wrong. D5 gates the *Russian
+translation* sourcing budget; its Sanskrit/GRETIL side is marked converted.
 
 Method
 ------
@@ -60,6 +73,7 @@ import argparse
 import bisect
 import csv
 import json
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -74,6 +88,16 @@ import sanskrit_util as su  # noqa: E402
 
 DEFAULT_DB = GITHUB / "VisualDCS" / "src" / "DCS-data-2026" / "dcs_full.sqlite"
 DEFAULT_ARCHIVE = GITHUB / "VisualDCS" / "src" / "DCS-data-2026" / "archive.sqlite"
+# CC BY-NC-SA plaintext, gitignored where it lives; read here, never copied into this repo.
+DEFAULT_GRETIL = GITHUB / "SanskritSpellCheck" / "detectors"
+GRETIL_DIRS = (
+    "gretil_kavya_raw",
+    "gretil_subhasita_raw",
+    "gretil_smrti_raw",
+    "gretil_purana_raw",
+    "gretil_epic_raw",
+    "gretil_pilot_raw",
+)
 SENTENCES = ROOT / "scripts" / "data" / "sentences.json"
 OUT_JSON = ROOT / "scripts" / "data" / "buhler_provenance.json"
 OUT_CSV = ROOT / "scripts" / "data" / "buhler_provenance.csv"
@@ -138,19 +162,50 @@ class Haystack:
         return out
 
 
-def load_buhler() -> list[dict]:
+APPARATUS_PATTERNS = (
+    # root + conjugation-class + pada: "mā III. Ā", "viṣ III. P. Ā"
+    (re.compile(r"\b(?:I|II|III|IV|V|VI|VII|VIII|IX|X)\.?\s*(?:P|Ā|U)\b"), "root+class"),
+    # bare grammatical labels: "Part. praes. Ātm", "Ind. pr. par.", "N. V. viśvapāḥ"
+    (re.compile(r"\b(?:Ind|pr|praes|par|parasm|Ātm|impf|Perf|Aor|Fut|Pass|Caus|Des|Opt|"
+                r"Imp|Pot|sg|du|pl|N|A|G|L|I|D|Ab|V|Part|Nom|Acc|Gen|Loc|Instr|Dat|Abl|"
+                r"Voc)\.\s"), "grammatical label"),
+    # derivation / alternation pairs: "dhū -- dhuva", "guṇa - e"
+    (re.compile(r"\s--?\s"), "derivation pair"),
+)
+
+
+def classify_apparatus(text: str) -> str | None:
+    """Return an apparatus subtype, or None if this looks like real prose.
+
+    Bühler's IAST entries are overwhelmingly *grammatical apparatus* -- root lists with
+    conjugation classes, case labels, sandhi demonstration pairs, guṇa tables -- not
+    exercise sentences. Running provenance over them would manufacture a ~99 % "invented"
+    figure that looks like a finding and is an artefact of the input. They are classified
+    out here and reported separately (H1344).
+    """
+    for rx, label in APPARATUS_PATTERNS:
+        if rx.search(text):
+            return label
+    if len(text.split()) < 3:
+        return "fragment"
+    return None
+
+
+def load_buhler(scripts: tuple[str, ...] = ("deva",)) -> list[dict]:
     data = json.loads(SENTENCES.read_text(encoding="utf-8"))
     out = []
     for s in data:
-        if s.get("book") != "buhler" or s.get("script") != "deva":
+        if s.get("book") != "buhler" or s.get("script") not in scripts:
             continue
-        iast = su.deva_to_iast(s["text"])
+        iast = su.deva_to_iast(s["text"]) if s["script"] == "deva" else s["text"]
         k_norm, k_fold = keys(iast)
         out.append(
             {
                 "id": s["id"],
                 "lesson": s.get("lesson"),
-                "deva": s["text"],
+                "script": s["script"],
+                "apparatus": classify_apparatus(iast) if s["script"] == "iast" else None,
+                "deva": s["text"] if s["script"] == "deva" else "",
                 "iast": iast,
                 "k_norm": k_norm,
                 "k_fold": k_fold,
@@ -162,7 +217,56 @@ def load_buhler() -> list[dict]:
     return out
 
 
-def load_corpora(db: Path, archive: Path) -> tuple[Haystack, list[dict]]:
+def gretil_title(stem: str) -> str:
+    """'sa_azvaghoSa-buddhacarita-alt' -> 'Aśvaghoṣa, buddhacarita (alt)'-ish label."""
+    s = stem[3:] if stem.startswith("sa_") else stem
+    return s.replace("-", " · ")
+
+
+def load_gretil(base: Path, hay: "Haystack", rows: list[dict]) -> int:
+    """Add GRETIL plaintext verse lines. Returns the number of lines added.
+
+    Each file carries a header terminated by a '# Text' marker; everything after it is the
+    body, one verse-line per line. Editorial preamble occasionally follows the marker in
+    English -- left in rather than heuristically stripped, since an English line cannot
+    match a Sanskrit needle anyway; a hit would be visible in the evidence snippet.
+    """
+    n = 0
+    for d in GRETIL_DIRS:
+        dirp = base / d
+        if not dirp.is_dir():
+            continue
+        section = d.replace("gretil_", "").replace("_raw", "")
+        for fp in sorted(dirp.glob("*.txt")):
+            try:
+                raw = fp.read_text(encoding="utf-8", errors="replace")
+            except OSError:
+                continue
+            i = raw.find("# Text")
+            body = raw[i + 6:] if i >= 0 else raw
+            title = gretil_title(fp.stem)
+            for ln in body.splitlines():
+                ln = ln.strip()
+                if len(ln) < 8 or ln.startswith(("#", "##")):
+                    continue
+                k_norm, k_fold = keys(ln)
+                row = {
+                    "corpus": "gretil",
+                    "ref": f"GRETIL {section}: {title}",
+                    "text": ln,
+                    "k_norm": k_norm,
+                    "k_fold": k_fold,
+                    "sl_norm": spaceless(k_norm),
+                    "sl_fold": spaceless(k_fold),
+                    "cite": f"GRETIL {fp.stem}",
+                }
+                hay.add(row["sl_fold"], row)
+                rows.append(row)
+                n += 1
+    return n
+
+
+def load_corpora(db: Path, archive: Path, gretil: Path | None = None) -> tuple[Haystack, list[dict]]:
     """Returns (haystack over both corpora, list of corpus rows for the token index)."""
     hay = Haystack()
     rows: list[dict] = []
@@ -223,6 +327,10 @@ def load_corpora(db: Path, archive: Path) -> tuple[Haystack, list[dict]]:
     con.close()
     print(f"[sprueche] {m:,} sayings")
 
+    if gretil is not None:
+        g = load_gretil(gretil, hay, rows)
+        print(f"[gretil] {g:,} verse lines (CC BY-NC-SA, read-only, never committed)")
+
     hay.build()
     return hay, rows
 
@@ -246,14 +354,23 @@ def main() -> int:
     ap.add_argument("--db", type=Path, default=DEFAULT_DB)
     ap.add_argument("--archive", type=Path, default=DEFAULT_ARCHIVE)
     ap.add_argument("--limit", type=int, default=0, help="debug: only first N sentences")
+    ap.add_argument("--gretil", type=Path, default=DEFAULT_GRETIL,
+                    help="dir holding the gretil_*_raw plaintext dirs")
+    ap.add_argument("--no-gretil", action="store_true",
+                    help="DCS + Indische Sprüche only (reproduces the H1212 first pass)")
+    ap.add_argument("--scripts", default="deva",
+                    help="comma-separated: deva, iast, or deva,iast (default deva)")
     args = ap.parse_args()
 
-    needles = load_buhler()
+    needles = load_buhler(tuple(x.strip() for x in args.scripts.split(",")))
     if args.limit:
         needles = needles[: args.limit]
-    print(f"[buhler] {len(needles)} Devanāgarī exercise sentences")
+    from collections import Counter as _C
+    _sc = _C(n["script"] for n in needles)
+    print(f"[buhler] {len(needles)} entries ({dict(_sc)})")
 
-    hay, rows = load_corpora(args.db, args.archive)
+    hay, rows = load_corpora(args.db, args.archive,
+                             None if args.no_gretil else args.gretil)
     N = len(rows)
 
     vocab = {t for nd in needles for t in nd["tokens"]}
@@ -269,6 +386,8 @@ def main() -> int:
         rec = {
             "id": nd["id"],
             "lesson": nd["lesson"],
+            "script": nd["script"],
+            "apparatus": nd["apparatus"],
             "deva": nd["deva"],
             "iast": nd["iast"],
             "n_tokens": len(nd["tokens"]),
@@ -349,10 +468,11 @@ def main() -> int:
         n_chars = rec["n_chars"]
         if (
             nd["lesson"] in NON_PROSE_LESSONS
+            or nd["apparatus"]
             or n_chars < MIN_SENTENCE_CHARS
             or rec["n_tokens"] < MIN_SENTENCE_TOKENS
         ):
-            # alphabet / writing-chart rows, not exercise prose
+            # alphabet/writing-chart rows and grammatical apparatus, not exercise prose
             rec["verdict"] = "not-a-sentence"
             rec["confidence"] = "high"
         elif verbatim and n_chars >= MIN_VERBATIM_CHARS:
