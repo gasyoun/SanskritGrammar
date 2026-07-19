@@ -111,6 +111,24 @@ The full verdict × `src_category` cross-tab is in the summary JSON.
 - A `propername`/`compositional` word may also be a variant; the `tags` column keeps every signal,
   the `verdict` keeps only the highest-precedence one.
 
+## Human adjudication of the 16 residue (19-07-2026)
+
+The auto-cascade's terminal `residue` bucket — the 16 words no signal could resolve — was
+put to a human vote (review sheet
+[`sanskritgrammar-pwg-ghostword-residue_h1323_review.html`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/sanskritgrammar-pwg-ghostword-residue_h1323_review.html),
+verdicts in
+[`pwg_ghostword_residue_adjudicated.tsv`](pwg_ghostword_residue_adjudicated.tsv)):
+**11 confirmed as genuine unique ghost-words, 5 rejected.** The 5 rejects were not "not real"
+so much as "not a *clean* unique ghost": `BAgApahArajAti` is decomposable
+(`BAga` + `apahAra…`); `bfhatsUryasidDAnt` is a technical/astronomical title; and `ISvare`,
+`KamBAyatabindara`, `babakARa` were flagged for **untranslated German residue**
+(`ebend.`, `desgl.`, `<ls>`) in the underlying PWG portrait — a data-quality issue routed to
+the pwg_ru German-residue cleanup, not a ghost-word verdict. The confirmed 11 (incl. the
+foreign toponyms `isaPahARa`=Isfahan, `pArAsapuli`=Persepolis, `oqISadeSa`=Odisha) are the
+final, human-signed floor of the H1310→H1323 study. This closes the study's only human gate.
+The auto-triage `verdict` column is unchanged (still `residue` for these 16) — the human layer
+lives in its own file so the cascade stays reproducible.
+
 ## Regenerate
 
 ```sh
