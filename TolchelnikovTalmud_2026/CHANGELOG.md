@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-07-19
+
+### Added
+- **A61 call-quotation timestamps — the first of the two remaining sign-off gates CLOSED ([H1309](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1309-Fable_SanskritGrammar_a61-call-quotation-timestamps_19.07.26.md), Fable 5 `claude-fable-5`).** All thirteen quotations/testimonial citations of the 27 June 2026 Cologne volunteer call now carry `hh:mm:ss` locators from the recording's own caption timing (author-fetched timed track, character-exact alignment + per-passage context verification) across [03-history.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/03-history.mdx) / [05-corrections.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/05-corrections.mdx) / [08-people.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/08-people.mdx); the [10-references.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/10-references.mdx) call entry states the convention. One vetoable attribution narrowing (TS1: the §5 "more closed than opened" + carry-over claims are spoken by the dashboard presenter, not D. Patel) and two attribution flags recorded in [SIGNOFF_A61_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/SIGNOFF_A61_author_pass.md) for the author's by-ear check. Remaining to 5/5: Kapp–Malten p. 1/fair-dealing verification, §8.1 roles confirm, submission-time abstract wording.
+
 ## [0.4.0] - 2026-07-19
 
 ### Added
