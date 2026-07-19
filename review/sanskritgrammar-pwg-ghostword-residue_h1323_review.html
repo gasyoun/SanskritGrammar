@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PWG ghost-words — финальная адъюдикация (16 слов) — 16 items</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:88px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+  .idchip { font-family:ui-monospace,Consolas,monospace; font-size:11px; color:var(--muted);
+            background:var(--panel2); border:1px solid var(--border); padding:2px 7px;
+            border-radius:6px; user-select:all; }
+  .card header { gap:10px; }
+  .hw a.hwlink { color:inherit; text-decoration:underline dotted; text-underline-offset:3px; }
+  .hw a.hwlink:hover { color:var(--accent); }
+  mark.hl { background:#453407; color:#ffd75e; padding:0 2px; border-radius:3px; }
+  .savebanner { max-width:980px; margin:10px auto 0; padding:8px 20px; font-size:12.5px; }
+  .savebanner code { background:var(--panel2); border:1px solid var(--border); padding:1px 6px; border-radius:5px; }
+  .ratingrow { display:flex; align-items:center; gap:6px; margin-top:10px; flex-wrap:wrap; }
+  .ratinglabel { font-size:12px; color:var(--muted); margin-right:4px; }
+  button.rate { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                width:34px; padding:6px 0; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.rate.active { background:var(--accent); border-color:var(--accent); color:#fff; }
+  button.rate.active.below { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .rate-state { font-size:12px; color:var(--muted); margin-left:4px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>PWG ghost-words — финальная адъюдикация (16 слов) — 16 items</h1>
+    <div class="sub">Generated 19-07-2026 &middot; sheet_id <code>sanskritgrammar-pwg-ghostword-residue_h1323</code> &middot; Остаток триаж-каскада H1323: 974 → 788 → 141 → 16. Автоматика разобрала всё, что смогла (варианты написания, имена, компаунды, опечатки). Эти 16 слов есть ТОЛЬКО в PWG и не разрешены ни одним сигналом — в основном иноязычные топонимы и редкие технические термины. Решите по каждому: настоящий ли это уникальный ghost-word.</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">16</span></span>
+  </div>
+</header>
+<div class="savebanner">&#128229; Your export downloads as <code>sanskritgrammar-pwg-ghostword-residue_h1323_decisions.json</code> &rarr; save it to <code>SanskritGrammar\review\sanskritgrammar-pwg-ghostword-residue_h1323_decisions.json</code> (the <code>sheet_id</code> inside the file is <code>sanskritgrammar-pwg-ghostword-residue_h1323</code> — that is how a later session knows which sheet these decisions belong to).</div>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="toponym">топонимы</button><button data-filter="lexeme">лексемы</button><button data-filter="title">названия</button><button data-filter="variant">варианты</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="54442" data-filt="lexeme">
+    <header><div class="hw">BAgApahArajAti <span class="badge">редкая лексема</span></div><span class="idchip" title="card id — cite this id back when discussing this card">54442</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>BAgApahArajAti</b> &nbsp;<span style="color:#666">акцент:</span> BAgApahArajAti</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «assimilation of fractional decrease, reduction to uniformity of a decrease by a fraction, or the subtraction of a part»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> COLEBR</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#BAgApahArajAti#}¦ (&lt;hom&gt;1.&lt;/hom&gt; {#BAga — a˚#} + {#jA˚#}) &lt;lex&gt;f.&lt;/lex&gt; {%assimilation of fractional decrease, reduction to uniformity of a decrease by a fraction, or the subtraction of a part%} &lt;ls&gt;COLEBR. Alg. 15&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="67440" data-filt="lexeme">
+    <header><div class="hw">ISvare <span class="badge">редкая лексема</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">67440</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>ISvare</b> &nbsp;<span style="color:#666">акцент:</span> ISvare</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> HALL</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#ISvare#}¦ {#nityasuKAvasTApanam#} &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;HALL 41&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="72280" data-filt="toponym">
+    <header><div class="hw">KamBAyatabindara <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">72280</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>KamBAyatabindara</b> &nbsp;<span style="color:#666">акцент:</span> KamBAyatabindara</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#KamBAyatabindara#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 343,a, No. 802&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="51809" data-filt="toponym">
+    <header><div class="hw">babakARa <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">51809</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>babakARa</b> &nbsp;<span style="color:#666">акцент:</span> babakARa</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#babakARa#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 339,a,45&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="53055" data-filt="title">
+    <header><div class="hw">bfhatsUryasidDAnt <span class="badge">название/текст</span></div><span class="idchip" title="card id — cite this id back when discussing this card">53055</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>bfhatsUryasidDAnt</b> &nbsp;<span style="color:#666">акцент:</span> bfhatsUryasidDAnt</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «der ausführliche»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> COLEBR</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#bfhatsUryasidDAnt#}¦ &lt;lex&gt;m.&lt;/lex&gt; {%der ausführliche%} ({#bfhant#}) &lt;is&gt;Sūryasiddhānta&lt;/is&gt; &lt;ls&gt;COLEBR. Misc. Ess. II, 484&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="73881" data-filt="lexeme">
+    <header><div class="hw">cuwikA <span class="badge">редкая лексема</span></div><span class="idchip" title="card id — cite this id back when discussing this card">73881</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>cuwikA</b> &nbsp;<span style="color:#666">акцент:</span> cuwikA</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «ein Behälter zum Waschen der Füsse»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> Ind</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#cuwikA#}¦, {#cuRwikA#} (&lt;ab&gt;Conj.&lt;/ab&gt; von &lt;ls&gt;HAAS&lt;/ls&gt;) {%ein Behälter zum Waschen der Füsse%} (?) &lt;ls&gt;Ind. St. 5,300&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="117310" data-filt="toponym">
+    <header><div class="hw">hUNgarAI <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">117310</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>hUNgarAI</b> &nbsp;<span style="color:#666">акцент:</span> hUNgarAI</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#hUNgarAI#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 339,b,22&lt;/ls&gt;. &lt;ls n=&quot;ebend. 339,b,&quot;&gt;39&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="67365" data-filt="toponym">
+    <header><div class="hw">isPIva <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">67365</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>isPIva</b> &nbsp;<span style="color:#666">акцент:</span> isPIva</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#isPIva#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 338,b,44&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="67363" data-filt="toponym">
+    <header><div class="hw">isaPahARa <span class="badge">топоним/геоним</span></div><span class="idchip" title="card id — cite this id back when discussing this card">67363</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>isaPahARa</b> &nbsp;<span style="color:#666">акцент:</span> isaPahARa</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «Isfahan»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#isaPahARa#}¦ {%Isfahan%} &lt;ls&gt;ebend. 338,b,41&lt;/ls&gt;. &lt;div n=&quot;v&quot;&gt;— &lt;ab&gt;Vgl.&lt;/ab&gt; {#ipAhaRa#}.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="60866" data-filt="toponym">
+    <header><div class="hw">mugasTAna <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">60866</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>mugasTAna</b> &nbsp;<span style="color:#666">акцент:</span> mugasTAna</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#mugasTAna#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 340,a,10&lt;/ls&gt;.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="40723" data-filt="lexeme">
+    <header><div class="hw">namiTuna <span class="badge">редкая лексема</span></div><span class="idchip" title="card id — cite this id back when discussing this card">40723</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>namiTuna</b> &nbsp;<span style="color:#666">акцент:</span> namiTuna</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «die Zwillinge im Thierkreise»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> Ind</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#namiTuna#}¦ (&lt;hom&gt;1.&lt;/hom&gt; {#nar#} + {#mi˚#}) &lt;lex&gt;n.&lt;/lex&gt; {%die Zwillinge im Thierkreise%} &lt;ls&gt;Ind. St. 2,415&lt;/ls&gt;. &lt;div n=&quot;v&quot;&gt;— &lt;ab&gt;Vgl.&lt;/ab&gt; {#nfyugma#}.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="69128" data-filt="toponym">
+    <header><div class="hw">oqISadeSa <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">69128</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>oqISadeSa</b> &nbsp;<span style="color:#666">акцент:</span> oqISadeSa</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#oqISadeSa#}¦ &lt;lex&gt;m.&lt;/lex&gt; &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend.&lt;/ls&gt;</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="78513" data-filt="toponym">
+    <header><div class="hw">pArAsapuli <span class="badge">топоним/геоним</span></div><span class="idchip" title="card id — cite this id back when discussing this card">78513</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>pArAsapuli</b> &nbsp;<span style="color:#666">акцент:</span> pArAsapuli</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «Persepolis»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#pArAsapuli#}¦ {%Persepolis%} &lt;ls&gt;ebend. 339,b,2 v. u.&lt;/ls&gt;</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="11973" data-filt="lexeme">
+    <header><div class="hw">upayicArika <span class="badge">редкая лексема</span></div><span class="idchip" title="card id — cite this id back when discussing this card">11973</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>upayicArika</b> &nbsp;<span style="color:#666">акцент:</span> upayicArika</div><div style="margin:.2em 0"><span style="color:#666">нем. глосса:</span> «Wächter eines»</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> BURN</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#upayicArika#}¦ &lt;lex&gt;m.&lt;/lex&gt; {%Wächter eines%} &lt;is&gt;Vihāra&lt;/is&gt; &lt;ls&gt;BURN. Intr. 269, N. 3&lt;/ls&gt;. Es ist wohl {#upavihArika#} zu lesen.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="67569" data-filt="toponym">
+    <header><div class="hw">uterijA <span class="badge">топоним/геоним</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">67569</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>uterijA</b> &nbsp;<span style="color:#666">акцент:</span> uterijA</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> ebend</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#uterijA#}¦ &lt;ab&gt;desgl.&lt;/ab&gt; &lt;ls&gt;ebend. 338,b,1 v. u.&lt;/ls&gt;</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+
+  <section class="card" data-id="93142" data-filt="variant">
+    <header><div class="hw">viviwwyE <span class="badge">внутр. вариант</span><span class="badge">без глоссы</span></div><span class="idchip" title="card id — cite this id back when discussing this card">93142</span></header>
+    <div class="question"><div style="margin:.2em 0"><b>viviwwyE</b> &nbsp;<span style="color:#666">акцент:</span> viviwwyE</div><div style="margin:.2em 0"><span style="color:#666">источники PWG:</span> Ind</div><div style="margin:.4em 0;padding:.4em .6em;background:#f6f6f4;border-radius:5px;font-size:.93em"><span style="color:#666">статья PWG (verbatim):</span><br>{#viviwwyE#}¦ &lt;ls&gt;TAITT. ĀR. 10,58&lt;/ls&gt;_in_&lt;ls&gt;Ind. St. 2,87&lt;/ls&gt; = {#vivizwyE#}.</div><div style="margin:.3em 0;color:#933;font-size:.92em">Автоматический каскад не разрешил это слово: нет компонентного разбора, маркеров имени/опечатки и близкого варианта в других словарях. Кандидат в настоящие ghost-words PWG — слово, зафиксированное только в Большом Петербургском словаре.</div></div>
+    
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ настоящий ghost-word</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ не ghost (вариант/имя/опечатка)</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="если это НЕ ghost — что это (вариант чего / чьё имя / опечатка)?"></textarea>
+  </section>
+</main>
+<footer class="hint">✅ настоящий ghost-word = слово реально существует только в PWG (оставить как уникальную запись). ❌ не ghost = это вариант написания / имя собственное / название сочинения / опечатка — уточните в заметке. ⏸ отложить = решить позже. Поле заметки — для частичной правки вместо полного отклонения. Keyboard: <kbd>a</kbd> ✅ настоящий ghost-word &middot; <kbd>r</kbd> ❌ не ghost (вариант/имя/опечатка)
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "sanskritgrammar-pwg-ghostword-residue_h1323";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["54442", "67440", "72280", "51809", "53055", "73881", "117310", "67365", "67363", "60866", "40723", "69128", "78513", "11973", "67569", "93142"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "19-07-2026", decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
