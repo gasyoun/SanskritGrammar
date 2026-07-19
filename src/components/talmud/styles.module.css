@@ -340,3 +340,99 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   display: inline-block;
 }
+
+/* ------------------------------------------------------------------ *
+ * AttestedDeclensionDrill (H1296) — attested-cell declension trainer.  *
+ * ------------------------------------------------------------------ */
+
+.drillCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  background: var(--ifm-background-color);
+}
+
+.drillLemma {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.drillMeta {
+  display: block;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 0.15rem;
+}
+
+.drillPrompt {
+  font-size: 0.95rem;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.drillForm {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.drillInput {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 1rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  width: min(20rem, 100%);
+  margin-bottom: 0.75rem;
+}
+.drillInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.drillRight,
+.drillWrong {
+  border-left: 3px solid;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 6px 6px 0;
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+}
+.drillRight {
+  border-left-color: var(--ifm-color-success);
+  background: var(--ifm-color-success-contrast-background);
+}
+.drillWrong {
+  border-left-color: var(--ifm-color-warning);
+  background: var(--ifm-color-warning-contrast-background);
+}
+
+.drillEvidence {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+.drillEvidence code {
+  font-size: 0.85rem;
+}
+
+.drillFlagged {
+  margin-top: 0.85rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+}
+.drillFlagged ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.1rem;
+}
+.drillFlagged li {
+  margin: 0.15rem 0;
+}

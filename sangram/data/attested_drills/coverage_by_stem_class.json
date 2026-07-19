@@ -1,0 +1,115 @@
+{
+  "asset": "Sangram W2-add-a — attested-cell declension drills (H1296)",
+  "method": "lemma_cell_coverage.csv x kosha lemma_frequency.tsv x Zaliznyak headword_index.tsv stem_class; per-cell counts and unsandhied surface forms from the pinned DCS snapshot; expected forms from vidyut-prakriya, disagreements flagged never resolved",
+  "corpus_attribution": "DCS (Oliver Hellwig) via the pinned VisualDCS snapshot",
+  "lemmas": 5838,
+  "drill_items": 45045,
+  "mean_cells_of_24": 7.72,
+  "cell_space_coverage_pct": 32.15,
+  "agreement": {
+    "match": 33886,
+    "variant": 6977,
+    "mismatch": 4152,
+    "no_generation": 30
+  },
+  "by_stem_class": {
+    "a-stem": {
+      "lemmas": 4143,
+      "attested_cells": 32169,
+      "mean_cells_of_24": 7.76,
+      "cell_space_coverage_pct": 32.35,
+      "tokens": 950571,
+      "top_band_lemmas": 499,
+      "top_band_mean_cells_of_24": 11.43
+    },
+    "consonant-stem": {
+      "lemmas": 585,
+      "attested_cells": 4480,
+      "mean_cells_of_24": 7.66,
+      "cell_space_coverage_pct": 31.91,
+      "tokens": 206664,
+      "top_band_lemmas": 102,
+      "top_band_mean_cells_of_24": 8.89
+    },
+    "i-stem": {
+      "lemmas": 462,
+      "attested_cells": 3675,
+      "mean_cells_of_24": 7.95,
+      "cell_space_coverage_pct": 33.14,
+      "tokens": 135485,
+      "top_band_lemmas": 36,
+      "top_band_mean_cells_of_24": 13.36
+    },
+    "ā-stem": {
+      "lemmas": 284,
+      "attested_cells": 2169,
+      "mean_cells_of_24": 7.64,
+      "cell_space_coverage_pct": 31.82,
+      "tokens": 52095,
+      "top_band_lemmas": 30,
+      "top_band_mean_cells_of_24": 8.73
+    },
+    "u-stem": {
+      "lemmas": 204,
+      "attested_cells": 1577,
+      "mean_cells_of_24": 7.73,
+      "cell_space_coverage_pct": 32.21,
+      "tokens": 52449,
+      "top_band_lemmas": 36,
+      "top_band_mean_cells_of_24": 8.97
+    },
+    "ī-stem": {
+      "lemmas": 94,
+      "attested_cells": 632,
+      "mean_cells_of_24": 6.72,
+      "cell_space_coverage_pct": 28.01,
+      "tokens": 18011,
+      "top_band_lemmas": 5,
+      "top_band_mean_cells_of_24": 11.8
+    },
+    "indeclinable": {
+      "lemmas": 52,
+      "attested_cells": 233,
+      "mean_cells_of_24": 4.48,
+      "cell_space_coverage_pct": 18.67,
+      "tokens": 7512,
+      "top_band_lemmas": 28,
+      "top_band_mean_cells_of_24": 4.93
+    },
+    "ū-stem": {
+      "lemmas": 14,
+      "attested_cells": 110,
+      "mean_cells_of_24": 7.86,
+      "cell_space_coverage_pct": 32.74,
+      "tokens": 1485,
+      "top_band_lemmas": 1,
+      "top_band_mean_cells_of_24": 1.0
+    }
+  },
+  "cells_ranked": {
+    "Nom.Sing": 5338,
+    "Acc.Sing": 4475,
+    "Loc.Sing": 3609,
+    "Ins.Sing": 3379,
+    "Gen.Sing": 3272,
+    "Nom.Plur": 3175,
+    "Abl.Sing": 2777,
+    "Ins.Plur": 2687,
+    "Acc.Plur": 2604,
+    "Gen.Plur": 2063,
+    "Dat.Sing": 1986,
+    "Loc.Plur": 1766,
+    "Nom.Dual": 1751,
+    "Voc.Sing": 1352,
+    "Acc.Dual": 1106,
+    "Gen.Dual": 920,
+    "Ins.Dual": 710,
+    "Abl.Plur": 616,
+    "Loc.Dual": 438,
+    "Dat.Plur": 389,
+    "Voc.Plur": 303,
+    "Abl.Dual": 136,
+    "Voc.Dual": 123,
+    "Dat.Dual": 70
+  }
+}

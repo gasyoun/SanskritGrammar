@@ -18,6 +18,22 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
 | **W2-add-c** bracket trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)) | 30-compound gold ladder set committed + regression green; widget builds; H948 cross-linked not duplicated | `npm run build` SUCCESS; gold regression |
 | **Registration** | MEGABOOK §2.10 present + §2.9 strengthened; A62 in ARTICLES with bumped marker; GTD straddle tier row; ROADMAP_INDEX entry; handoffs registered | `crosslink_weave_check.py MEGABOOK.md` passes; A62 marker → A63; registry counts add up |
 
+### Verified
+
+- **W2-add-a ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)).
+  [`tests/test_attested_drills.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_attested_drills.py)
+  green (6 tests): joiner fixture over 20 lemmas, the 20-item spot-check of the real
+  corpus against `lemma_cell_coverage.csv` bitstrings, a bit-index↔`cells_order` guard,
+  and a check that every flagged disagreement ships **both** sides. Corpus:
+  **5 838 lemmas · 45 045 drill items**, mean 7.72 attested cells of 24;
+  `match` 33 886 / `variant` 6 977 / `mismatch` 4 152 / `no_generation` 30 —
+  `mismatch` cells are excluded from drilling (no authoritative answer to grade against)
+  and shown as evidence instead. Per-class report:
+  [`COVERAGE_REPORT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/attested_drills/COVERAGE_REPORT.md).
+  Site page [`sangram/articles/attested-drills`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/attested-drills/index.mdx)
+  builds. Incidental finding: the `mismatch` flag doubles as a DCS annotation-error
+  detector (`artha` Voc.Sing attests *arthaiḥ*, an instrumental plural, n=6).
+
 ## Risks & spikes register
 
 - **RQ1 may return a null result** — the `core_rank` "learn-these-first" order might *not* beat textbook order. **Spike before committing:** correlate `core_rank` with an independent difficulty proxy (rare-form density, first-attestation era). If the correlation is weak, RQ1 reports the null honestly — a negative result is still a result, not a failure to hide.
