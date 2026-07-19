@@ -19,6 +19,16 @@ Checks, in order:
   3. Private-data leakage — the serialized manifest contains no private hub
      URL, no local filesystem path, no volatile-registry pattern. Leakage
      must be exactly 0 to pass (same rule as atlas_validate_bundle.py).
+  4. Consolidation-freeze gate (H1260) — while
+     sangram/editorial/data/consolidation_ledger.json's `freeze.active` is
+     true, a manifest whose `article.toc_ref` is not a member of the frozen
+     18-07-2026 baseline (26 candidates + 9 already-published, 35 total)
+     FAILS. `toc_ref: null` (not yet assigned by C2) is exempt — this is the
+     fixture's own state and every unassigned draft's. Repairs/revisions to
+     an existing baseline toc_ref are always allowed; only a genuinely new
+     toc_ref outside the frozen set is rejected. If the ledger file itself is
+     missing or unparseable the gate WARNS and no-ops (never silently passes
+     as an error, never blocks on an infrastructure hiccup).
 
 Usage:
   python scripts/article_validate.py sangram/editorial/data/article.fixture.json
@@ -41,6 +51,7 @@ sys.stderr.reconfigure(encoding="utf-8")
 HERE = Path(__file__).resolve().parent
 SCHEMA_PATH = HERE.parent / "sangram" / "editorial" / "data" / "article.schema.json"
 FIXTURE_PATH = HERE.parent / "sangram" / "editorial" / "data" / "article.fixture.json"
+FREEZE_LEDGER_PATH = HERE.parent / "sangram" / "editorial" / "data" / "consolidation_ledger.json"
 
 ART_ID_RE = re.compile(r"^art:[a-z0-9][a-z0-9-]*$")
 EX_ID_RE = re.compile(r"^ex:([a-z0-9][a-z0-9-]*):([1-9]\d*)$")
@@ -120,6 +131,27 @@ def _builtin_schema_subset(manifest, err):
             err(f"example {ex.get('id', '?')}: translations.ru is mandatory")
         if not DATE_RE.match(str(ex.get("as_of", ""))):
             err(f"example {ex.get('id', '?')}: as_of is not YYYY-MM-DD")
+
+
+def load_freeze_baseline(path: Path = FREEZE_LEDGER_PATH):
+    """Return (active: bool, allowed_toc_refs: set[str] | None, warning: str | None).
+
+    allowed_toc_refs is None when the gate could not load a ledger (missing or
+    unparseable file) — callers must treat None as "cannot check", never as
+    "everything allowed" or "everything rejected".
+    """
+    if not path.exists():
+        return False, None, f"consolidation ledger not found at {path} — freeze gate skipped"
+    try:
+        ledger = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError) as e:
+        return False, None, f"consolidation ledger unreadable ({e}) — freeze gate skipped"
+    freeze = ledger.get("freeze", {})
+    active = bool(freeze.get("active", False))
+    allowed = {row.get("toc_ref") for row in ledger.get("baseline_ids", [])}
+    allowed |= {row.get("toc_ref") for row in ledger.get("published_context", [])}
+    allowed.discard(None)
+    return active, allowed, None
 
 
 def _walk_keys(obj, path=""):
@@ -206,6 +238,19 @@ def validate(manifest, serialized):
         if pattern in serialized:
             err(f"leakage: forbidden pattern {pattern!r} present in serialized manifest")
 
+    # -- 4. consolidation-freeze gate (H1260) --------------------------------
+    toc_ref = art.get("toc_ref")
+    if toc_ref is not None:
+        active, allowed, load_warning = load_freeze_baseline()
+        if load_warning:
+            warn(f"freeze gate: {load_warning}")
+        elif active and toc_ref not in allowed:
+            err(f"freeze active (H1260): toc_ref {toc_ref!r} is not part of the frozen "
+                f"18-07-2026 baseline (26 candidates + 9 published, 35 total) — no new "
+                f"article manifest may be added until every baseline candidate has an "
+                f"explicit disposition; repairs/revisions to an EXISTING baseline toc_ref "
+                f"remain allowed")
+
     return errors, warnings
 
 
@@ -261,15 +306,52 @@ def self_test() -> int:
         "missing ru translation": lambda m: m["article"]["examples"][0]["translations"].pop("ru"),
         "leakage pattern in manifest": lambda m: m["article"]["examples"][0]["gloss_ru"].__class__ and
             m["article"]["examples"][0].__setitem__("gloss_ru", "see GTD_NEXT_ACTIONS row"),
+        # H1260 consolidation-freeze gate — negative case: a synthetic 27th/new
+        # toc_ref must be rejected while the real on-disk ledger's freeze is
+        # active (checked against the actual consolidation_ledger.json, not a
+        # mock, so a stale/mis-generated ledger would surface here too).
+        "new toc_ref outside the frozen H1260 baseline, freeze active": lambda m: m["article"].__setitem__(
+            "toc_ref", "SG-MO-999"),
     }
     for name, mutate in cases.items():
         if not mutated(mutate):
             failures.append(f"mutation {name!r} should fail but passed")
 
+    # H1260 freeze gate — positive case: an EXISTING frozen-baseline toc_ref
+    # must still pass while freeze is active (repairs/revisions stay allowed).
+    freeze_active, freeze_allowed, freeze_warn = load_freeze_baseline()
+    if freeze_active and freeze_allowed:
+        baseline_toc_ref = sorted(freeze_allowed)[0]
+        m = copy.deepcopy(fixture)
+        m["article"]["toc_ref"] = baseline_toc_ref
+        s = json.dumps(m, ensure_ascii=False)
+        errs, _ = validate(m, s)
+        if any("freeze active" in e for e in errs):
+            failures.append(f"baseline toc_ref {baseline_toc_ref!r} was wrongly rejected while "
+                             f"freeze is active: {errs}")
+    else:
+        failures.append(f"could not load the real freeze ledger for the positive self-test "
+                         f"(active={freeze_active}, warn={freeze_warn!r}) — freeze gate is untestable")
+
+    # H1260 freeze gate — inactive bypass: a synthetic ledger with active=False
+    # must let a non-baseline toc_ref through.
+    import tempfile
+    with tempfile.TemporaryDirectory() as td:
+        tmp_ledger = Path(td) / "consolidation_ledger.json"
+        tmp_ledger.write_text(json.dumps({
+            "freeze": {"active": False}, "baseline_ids": [], "published_context": [],
+        }), encoding="utf-8")
+        active, allowed, warn_ = load_freeze_baseline(tmp_ledger)
+        if active is not False or allowed != set():
+            failures.append(f"inactive-ledger load returned active={active!r} allowed={allowed!r}, "
+                             f"expected (False, set())")
+
+    n_freeze_extra = 2
     for f in failures:
         print(f"SELF-TEST FAIL: {f}")
+    total = len(cases) + 1 + n_freeze_extra
     print(f"{'PASS' if not failures else 'FAIL'}  self-test: "
-          f"{len(cases) + 1 - len(failures)}/{len(cases) + 1} checks green")
+          f"{total - len(failures)}/{total} checks green")
     return 0 if not failures else 1
 
 

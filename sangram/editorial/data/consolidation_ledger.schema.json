@@ -1,0 +1,159 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gasyoun.github.io/SanskritGrammar/schemas/sangram-consolidation-ledger.schema.json",
+  "title": "Sangram consolidation freeze ledger (H1260)",
+  "description": "Machine-readable freeze governance ledger. Baseline: the exact set of article manifests (published + candidate) that existed when Dr. Marcis Gasuns ruled the consolidation freeze on 18-07-2026. While freeze.active is true, no article manifest with a toc_ref outside baseline_ids/published_context may pass scripts/article_validate.py. Every baseline_ids row must reach an explicit disposition before the freeze can be lifted. Unknown fields are represented explicitly as \"unknown\"/null; a refresh script must never infer a pass.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contract_version", "freeze", "last_refresh", "baseline_ids", "published_context"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "contract_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "freeze": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "active", "ruled_by", "ruled_date", "ruling_handoff", "installing_handoff",
+        "precedence_rule", "exit_criterion", "baseline_snapshot_date", "counts",
+        "related_handoffs"
+      ],
+      "properties": {
+        "active": { "type": "boolean" },
+        "ruled_by": { "type": "string" },
+        "ruled_date": { "$ref": "#/$defs/isoDate" },
+        "ruling_handoff": { "type": "string" },
+        "installing_handoff": { "type": "string" },
+        "precedence_rule": { "type": "string" },
+        "exit_criterion": { "type": "string" },
+        "baseline_snapshot_date": { "$ref": "#/$defs/isoDate" },
+        "related_handoffs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["published_at_freeze", "candidate_at_freeze", "total_at_freeze"],
+          "properties": {
+            "published_at_freeze": { "type": "integer", "const": 9 },
+            "candidate_at_freeze": { "type": "integer", "const": 26 },
+            "total_at_freeze": { "type": "integer", "const": 35 }
+          }
+        }
+      }
+    },
+    "last_refresh": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["date", "commands", "build_status"],
+      "description": "Repo-wide evidence recorded once per refresh run rather than duplicated on every row (npm run build is expensive to run per-ID).",
+      "properties": {
+        "date": { "type": ["string", "null"] },
+        "commands": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "build_status": { "enum": ["pass", "fail", "unknown"] }
+      }
+    },
+    "published_context": {
+      "type": "array",
+      "description": "The 9 IDs already published when the freeze was ruled. Not required to carry a new disposition (they already have one: published) but included so the freeze-reject check has the full 35-ID allowed set, not just the 26 candidates.",
+      "items": { "$ref": "#/$defs/publishedRow" }
+    },
+    "baseline_ids": {
+      "type": "array",
+      "description": "The exact 26-ID frozen baseline. Every row must reach a disposition before freeze.active may flip to false.",
+      "items": { "$ref": "#/$defs/baselineRow" }
+    }
+  },
+  "$defs": {
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "publishedRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["toc_ref", "art_id", "path"],
+      "properties": {
+        "toc_ref": { "type": "string" },
+        "art_id": { "type": "string" },
+        "path": { "type": "string" }
+      }
+    },
+    "baselineRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "toc_ref", "art_id", "path", "revision_state",
+        "rederivation_evidence", "visa_evidence", "validator_evidence",
+        "disposition", "blocking_note", "source_links"
+      ],
+      "properties": {
+        "toc_ref": { "type": "string" },
+        "art_id": { "type": "string" },
+        "path": { "type": "string" },
+        "revision_state": {
+          "type": "string",
+          "description": "Non-judgmental, machine-derived from article.manifest.json revisions[]: candidate | published | unknown."
+        },
+        "rederivation_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "confirmed", "refuted", "checked_ids", "note"],
+          "properties": {
+            "status": {
+              "enum": ["confirmed", "refuted_fixed", "refuted_open", "not_audited", "unknown"]
+            },
+            "confirmed": { "type": "integer" },
+            "refuted": { "type": "integer" },
+            "checked_ids": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "note": { "type": "string" }
+          }
+        },
+        "visa_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "sheet", "note"],
+          "description": "Human/handoff-sourced but mechanically re-derivable from the local review/ sheet decisions each refresh; never hand-typed.",
+          "properties": {
+            "status": {
+              "enum": ["approved", "pending", "not_submitted", "unknown"]
+            },
+            "sheet": { "type": ["string", "null"] },
+            "note": { "type": "string" }
+          }
+        },
+        "validator_evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["article_validate", "checked_at"],
+          "properties": {
+            "article_validate": { "enum": ["pass", "fail", "unknown"] },
+            "checked_at": { "type": ["string", "null"] }
+          }
+        },
+        "disposition": {
+          "enum": ["unknown", "published", "revised", "rejected", "kill_gated"],
+          "description": "Human verdict field. Never inferred; defaults to 'unknown' and is preserved verbatim by the refresh script once a human/handoff sets it."
+        },
+        "blocking_note": {
+          "type": "string",
+          "description": "Human verdict field, preserved across regeneration. Empty string when nothing blocks."
+        },
+        "source_links": {
+          "type": "array",
+          "description": "Human-curated PR/handoff links backing the disposition. Preserved across regeneration.",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}
