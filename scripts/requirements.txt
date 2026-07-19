@@ -11,3 +11,7 @@ pyyaml>=6.0
 
 # GasunsDhatu_2014/revision-2026/rws_to_docx.py emits .docx review packets.
 python-docx>=1.1.0
+
+# build_visa_sheet.py renders «виза» review sheets through the org's shared
+# review-sheet emitter, pinned to the ratified v0.3.0 standard (H1315).
+csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.3.0
