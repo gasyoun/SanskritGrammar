@@ -1,6 +1,6 @@
 # Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
-_Created: 10-07-2026 · Last updated: 14-07-2026_
+_Created: 10-07-2026 · Last updated: 19-07-2026_
 
 A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
@@ -121,5 +121,7 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 10-07-2026 | **D2 closed.** [H449](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H449-Sonnet_SanskritGrammar_zaliznyak-zalizniak-rename-sweep_10.07.26.md) checked the premise behind cancelling the Zaliznyak→Zalizniak rename (that "Zaliznyak" was the historically-printed citation spelling) against real evidence — Tolchelnikov's own published paper already cites "Andrei Zalizniak. 1975." (i-spelling) — and found it false. Rename proceeded ([SanskritGrammar PR #78](https://github.com/gasyoun/SanskritGrammar/pull/78) + [RuWritingStyles PR #70](https://github.com/gasyoun/RuWritingStyles/pull/70), both merged); B6 (`people.yaml` name-variant map) demoted from "dissolves D2" to an independent, optional backlog item. Also fixed this metadoc's stale `ZALIZNYAK_1975_1978_2004_COMPARISON.md` self-reference to the renamed filename. | Sonnet 5 (`claude-sonnet-5`) |
 | 11-07-2026 | template v2 backfill (H663) | Sonnet 5 (`claude-sonnet-5`) |
 | 14-07-2026 | **S1 cross-grammar milestone recorded (H797 Phase 2).** S1 sub-thread updated: D-A/D-B rulings noted, second register live — [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml) 64 verified + 339-candidate backlog ([PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186)); two-register calibration finding added; remaining Knauer/Zaliznyak stated. | Fable 5 (`claude-fable-5`) |
+| 18-07-2026 | **Portfolio rewrite (backfilled row — the authoring session did not update this metadoc).** [PR #417](https://github.com/gasyoun/SanskritGrammar/pull/417) rebuilt the file from an ACL-track roadmap into the repo's five-track **portfolio umbrella** (M03 · Sangram · pedagogy/RQ4 · comparative · archive) per the 18-07-2026 roadmap interview: 8 rulings, waves W1–W4, H1259/H1260/H1261 pointers, Sangram consolidation freeze. | recorded 19-07-2026 by Fable 5 (`claude-fable-5`) |
+| 19-07-2026 | **Sangram-primary re-base ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md)).** Keep-both ruling executed: §2 "four spines" → "four instruments" feeding Sangram (labels kept), Track C re-titled the **publication arm of Sangram** with a §0 relation paragraph, per-instrument "Feeds Sangram" leads (honest τ/κ citation split: τ cited by three programme docs, not articles; tatpurusha's Cohen κ ≠ the never-run S2/Q3.4 κ), Q3.1/Q3.2 marked done and Q4.1–Q4.5 plainly unstarted, measured 34.2 % sangram/ share since 14-07. Freeze respected: no new topics/manifests, charter untouched. | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
