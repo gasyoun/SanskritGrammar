@@ -1,0 +1,87 @@
+{
+  "pwg_lexicon_only_total": 32690,
+  "ghostword_shortlist_total": 2298,
+  "ghostword_also_in_pw_same_source": 1510,
+  "ghostword_absent_from_every_dict": 788,
+  "ghostword_by_source_category": {
+    "scholarly_journal_technical": 834,
+    "ms_catalogue_propernoun": 768,
+    "kosa_nighantu_not_digitised": 678,
+    "other_or_none": 18
+  },
+  "verdict_counts": {
+    "text-attested": 12606,
+    "kosa-corroborated": 10724,
+    "dict-lexical": 7062,
+    "pwg-unique": 2298
+  },
+  "verdict_by_pwg_text_sibling": {
+    "dict-lexical": {
+      "no_text_sibling": 6959,
+      "with_text_sibling": 103
+    },
+    "kosa-corroborated": {
+      "no_text_sibling": 10500,
+      "with_text_sibling": 224
+    },
+    "pwg-unique": {
+      "no_text_sibling": 2192,
+      "with_text_sibling": 106
+    },
+    "text-attested": {
+      "no_text_sibling": 9849,
+      "with_text_sibling": 2757
+    }
+  },
+  "k1_with_text_sibling_homonym": 68516,
+  "per_dictionary_hits": {
+    "pw": 30280,
+    "mw": 29659,
+    "vcp": 13686,
+    "ap": 6204,
+    "abch": 3455,
+    "skd": 3430,
+    "ap90": 2393,
+    "bhs": 1606,
+    "armh": 1592,
+    "gra": 547,
+    "acph": 516,
+    "nmmb": 376,
+    "acsj": 192
+  },
+  "dict_headword_sizes": {
+    "abch": 11580,
+    "acph": 1453,
+    "acsj": 634,
+    "ap": 88869,
+    "ap90": 34277,
+    "armh": 6673,
+    "bhs": 17777,
+    "gra": 11108,
+    "mw": 194084,
+    "nmmb": 2265,
+    "pw": 151349,
+    "skd": 40817,
+    "vcp": 48636
+  },
+  "novel_kosa_corroboration_words": 10010,
+  "pwg_unique_rescued_by_normalisation": 73,
+  "kosa_dicts": [
+    "armh",
+    "vcp",
+    "skd",
+    "abch",
+    "acph",
+    "acsj",
+    "nmmb"
+  ],
+  "text_dicts": [
+    "mw",
+    "bhs",
+    "gra",
+    "ap90",
+    "ap",
+    "pw"
+  ],
+  "amara_gap": "AK not digitised in csl-orig; PWG sources col records AK citations directly"
+}

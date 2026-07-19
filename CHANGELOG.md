@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **PWG lexicon-only audit — v2 supersedes v1 (H1310, Opus 4.8 `claude-opus-4-8[1m]`).** Re-run of the [0.88.0](#0880---2026-07-19) audit with a corrected comparison corpus, after review flagged that v1 lacked the smaller Cologne koṣas and read MW as an undifferentiated block. v2 ([`data/pwg_lexicon_only_audit/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_lexicon_only_audit), new [`build_census.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_lexicon_only_audit/build_census.py) + [metadoc](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_lexicon_only_audit/pwg_lexicon_only_audit.meta.md)): (1) joins against **7 koṣas** (armh/abch/acph/acsj/nmmb/vcp/skd, not `skd` alone); (2) **`L.`-splits MW** — 30.8 % of MW's headwords are `L.`-only/koṣa-copied, so only a non-`L.` `<ls>` citation counts as text attestation; (3) preserves v1's independence axis (corpus dicts `gra`/`bhs`, PW as same-source); (4) flags homonym-collapse and adjudicates the shortlist. Of 32,690 lexicon-only entries: **text-attested 12,606** (38.6 %) · **koṣa-corroborated 10,724** (32.8 %) · **dict-lexical 7,062** · **pwg-unique 2,298** (7.0 %; 788 absent from every dictionary, ≈715 after normalisation). Key finding: the ghost-word artifact rate is ≈0.05 % — **most PWG "ghost-words" are corpus gaps (Rājanighaṇṭu, Trikāṇḍaśeṣa, Amara, not digitised), not ghosts.** Removes v1's `pwg_lexicon_only_audit.tsv`/`pwg_unique_shortlist.tsv`/summary + `scripts/pwg_lexicon_only_audit.py`; v1→v2 rationale preserved in the README + metadoc.
+
 ## [0.88.0] - 2026-07-19
 
 ### Added
