@@ -100,4 +100,10 @@ The two report-only findings above were resolved from the public record and appl
 
 Remaining to 5/5 after this pass: §8.1 roles read-and-confirm and the submission-time abstract wording — plus the standing §10 Amarakosha/print-changes retirement `@DECIDE`.
 
+## §8.1 roles ratified — ALL human gates CLOSED — A61 readiness 5/5 — 19-07-2026 ([H1320](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1320-Fable_SanskritGrammar_a61-roles-ratified-readiness-5of5_19.07.26.md), Fable 5 `claude-fable-5`)
+
+The author confirmed every row of the §8.1 principal-contributors table in [08-people.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/08-people.mdx) as accurate and fair. With that, **every human-permission item of the evidence gate is closed**: quotation timestamps + attributions (H1309, ratified), Malten-correspondence permission (RECEIVED) with the references locator, Kapp–Malten p. 1 + fair-dealing (H1317) with the §3.1/§3.3 follow-through (H1318), Jachertz ruled not needing page locators, participant roles (this section), byline/contact ruled (gasyoun@gmail.com for English venues).
+
+**A61 moves to 5/5 — submission-ready.** What remains is submission-time mechanics only, none of it a readiness blocker: apply the adopted abstract sentence at formatting (258 → 256 words); CfP formatting once WSC-2027 publishes rules (none located as of 18-07-2026); and the optional §10 editorial decision on explicitly retiring Amarakosha/print-changes (see [A61_SECTION10_VS_2024_TALKS_ROADMAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/A61_SECTION10_VS_2024_TALKS_ROADMAP.md)) — open, but a wording choice, not a gate.
+
 _Dr. Mārcis Gasūns_

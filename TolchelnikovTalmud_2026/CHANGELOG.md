@@ -12,6 +12,11 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.4.4] - 2026-07-19
+
+### Changed
+- **A61 readiness 4/5 → 5/5 — SUBMISSION-READY ([H1320](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1320-Fable_SanskritGrammar_a61-roles-ratified-readiness-5of5_19.07.26.md), Fable 5 `claude-fable-5`).** The author ratified every §8.1 principal-contributors row — the last open human-permission gate of the evidence gate. All gates now closed (timestamps H1309, quote fidelity H1317/H1318, Malten permission, Jachertz ruling, roles, byline); what remains is submission-time mechanics only (abstract sentence at formatting, WSC-2027 CfP rules when published, optional §10 retirement wording). Recorded in [SIGNOFF_A61_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/SIGNOFF_A61_author_pass.md).
+
 ## [0.4.3] - 2026-07-19
 
 ### Fixed
