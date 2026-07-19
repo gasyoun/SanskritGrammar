@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.96.0] - 2026-07-19
+
 ### Changed
 - **Bühler provenance: third corpus, the IAST subset ruled out, and three corrections to H1212 (H1344, Opus 4.8 `claude-opus-4-8`).** [`scripts/buhler_provenance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/buhler_provenance.py) gains GRETIL plaintext as corpus C (`SanskritSpellCheck/detectors/gretil_*_raw/`, **85,401 verse lines**, +11 % haystack) behind `--no-gretil`, and a `--scripts deva,iast` mode. Headline moves 50/16/518/1 → **51 quotation · 17 adapted · 515 invented · 2 unknown** of 585.
   - **The invention finding survived a targeted attempt to break it.** H1212 worried that `invented` might just mean *absent from DCS*, and flagged "kāvya is nearly absent" as the likely artefact. Adding GRETIL's 56 kāvya texts — **Raghuvaṃśa, Kumārasaṃbhava, Māgha, Bhāravi, Bāṇa, Daṇḍin, Aśvaghoṣa** among them — moved exactly **three sentences** and the invention share by **0.5 pp**. Exactly one new kāvya attestation appeared: Bhaṭṭi's *Rāvaṇavadha*, the one kāvya composed to illustrate Pāṇinian grammar. The single poem Bühler drew on is itself a grammar.
