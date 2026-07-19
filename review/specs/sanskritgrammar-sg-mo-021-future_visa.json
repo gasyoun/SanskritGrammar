@@ -1,0 +1,135 @@
+{
+  "sheet_id": "sanskritgrammar-sg-mo-021-future_visa",
+  "title": "Виза: SG-MO-021 «Будущее время и кондиционал» — статья-кандидат ядра W2",
+  "subtitle": "Авторская виза на публикацию (H1180, Opus 4.8 claude-opus-4-8[1m]). Замыкает финитную систему времён; первая сверх открывающей квоты. 9 карточек.",
+  "footer": "<b>Одобрить</b> — принять формулировку/число карточки как написано · <b>Отклонить</b> — оставить без изменений, не публиковать в этом виде · <b>Отложить</b> — решить позже. Поле заметки — для запроса частичной правки вместо отклонения.",
+  "generated": "2026-07-17",
+  "approve_label": "✅ Одобрить",
+  "reject_label": "❌ Отклонить",
+  "filters": [
+    [
+      "вывод",
+      "Выводы"
+    ],
+    [
+      "данные",
+      "Данные"
+    ],
+    [
+      "текст",
+      "Текст статьи"
+    ]
+  ],
+  "highlight_cyrillic": true,
+  "items": [
+    {
+      "id": "MO021-01",
+      "filt": "вывод",
+      "title": "Будущее замыкает финитную систему времён",
+      "question": "Статья позиционирует будущее как замыкающее финитную систему: презенс, имперфект, аорист, перфект, будущее — все нативно размечены и измеримы. Будущее нативно размечено `Tense=Fut`. <i>Одобрить рамку §1?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-02",
+      "filt": "данные",
+      "title": "Знаменатель: 21 556 финитных токенов (4,1 %)",
+      "question": "Универсум — финитный глагол с `Tense=Fut`: <b>21 556 токенов (4,1 % [4,06–4,17]</b> из 523 721 финитного). Причастие будущего (1575) вынесено отдельно. <i>Одобрить универсум и знаменатель?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/data/coverage_summary.json\" target=\"_blank\" rel=\"noopener\">coverage_summary.json</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-03",
+      "filt": "данные",
+      "title": "Простое vs перифрастическое — нативно (feat_formation)",
+      "question": "Контраст, который просит реестр C2, разделён нативно по `feat_formation`: простое (s-)будущее <b>20 216 (93,8 %)</b>, перифрастическое -tā <b>1340 (6,2 % [5,9–6,6]</b>; во главе bhavitā 332, kartā 55). Отдалённое перифрастическое — маргинальная ~1/16. <i>Одобрить разделение и числа?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/data/coverage_summary.json\" target=\"_blank\" rel=\"noopener\">coverage_summary.json</a></li><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-04",
+      "filt": "вывод",
+      "title": "Уникальный профиль: 1-е лицо 36,4 % — время намерения",
+      "question": "Ключевое наблюдение §3: будущее — <b>самая перволичная финитная форма</b> (1 л. <b>36,4 %</b> [35,8–37,1] против 0,5 % у пассива, narrative-3-е у имперфекта). Язык заявленного намерения/предсказания (vakṣyāmi «скажу», kariṣyāmi «сделаю»). <i>Одобрить этот тезис?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/data/coverage_summary.json\" target=\"_blank\" rel=\"noopener\">coverage_summary.json</a></li><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-05",
+      "filt": "данные",
+      "title": "Кондиционал 340 (контрфактив, feat_mood=Cond)",
+      "question": "Кондиционал — контрфактическое «сделал бы» (abhaviṣyat), `feat_mood=Cond`: <b>340 (1,6 % будущего)</b>; наклонение будущего почти целиком изъявительное (98,3 %). <i>Одобрить трактовку кондиционала как редкого контрфактива, а не рядового будущего?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/data/coverage_summary.json\" target=\"_blank\" rel=\"noopener\">coverage_summary.json</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-06",
+      "filt": "текст",
+      "title": "Образование §4 (Уитни §§931–949)",
+      "question": "§4: простое — корень (guṇa) + -sya-/-iṣya- + первичные окончания; перифрастическое — имя деятеля -tṛ (-tā) + as; кондиционал — аугмент + -sya- + вторичные окончания. <i>Одобрить традиционно-порождённый слой?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-07",
+      "filt": "текст",
+      "title": "Примеры §5 (простое ×2, перифр., кондиционал, 1 л.)",
+      "question": "Таблица: bhaviṣyati (простое 3 л.), kariṣyāmaḥ (простое 1 л. мн.), bhavitā (перифр.), abhaviṣyat (кондиционал), vakṣyāmi (простое 1 л.). Показывают обе формации + кондиционал + перволичность. <i>Одобрить состав примеров?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/article.manifest.json\" target=\"_blank\" rel=\"noopener\">article.manifest.json</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-08",
+      "filt": "текст",
+      "title": "Ограничения §6 (перифр. ↔ перифр. перфект по времени)",
+      "question": "§6: кондиционал редок; простое/перифр. держится на `feat_formation`; перифрастическое будущее (-tṛ+as) разделяет форму -tṛ с перифрастическим перфектом, DCS различает временем (Fut vs Past); причастие будущего отдельно; осиротевший пин. <i>Одобрить ограничения?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    },
+    {
+      "id": "MO021-09",
+      "filt": "вывод",
+      "title": "Статус: первая статья СВЕРХ открывающей квоты 19",
+      "question": "SG-MO-021 — первая статья, произведённая по решению автора продолжить производство ядра сверх открывающего набора (18/19, SG-WF-009 блокирован C6). Счёт открывающего набора не меняется; это отдельная линия к квоте хартии 15–25 ①. Статья — кандидат до визы. <i>Одобрить статус и издательскую рамку?</i>",
+      "panels": [
+        [
+          "Источники",
+          "<ul><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx\" target=\"_blank\" rel=\"noopener\">SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx</a></li><li><a href=\"https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/future/index.mdx\" target=\"_blank\" rel=\"noopener\">index.mdx</a></li></ul>"
+        ]
+      ]
+    }
+  ],
+  "note_placeholder": "Заметка / частичная правка (иначе — отклонить)…"
+}
