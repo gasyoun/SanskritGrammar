@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **PWG ghost-word triage cascade (stages 1–4) — 777 → 141 (H1323, Opus 4.8 `claude-opus-4-8[1m]`).** New [`scripts/pwg_ghostword_triage.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pwg_ghostword_triage.py) auto-classifies the v2 ghost-word core (777 words absent from every digitised dictionary) into buckets using layers we already own + one **reused** normalizer, cutting the hand-review list by 81.9 % → [`data/pwg_ghostword_triage/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pwg_ghostword_triage). Stage 1 compositional (own compound-split + derivation-graph + body `(X+Y)`/`von` backstop); stage 2 PWG body markers (`N. pr.` proper name · `falsche/richtige Lesart` misreading · `= {#X#}` cross-ref); stage 3 bahuvrīhi gloss; **stage 4 reuses [`SanskritSpellCheck/detectors/slp1util.py`](https://github.com/gasyoun/SanskritSpellCheck/blob/main/detectors/slp1util.py) `confusion_key` + `edit_distance`** (SHARED_CODE §12 prior-art — not re-implemented) to skeleton-match each word to an attested headword within edit distance ≤ 2, recording the actual matched word. Of the 777: **spelling-variant 294** (`AdyavIja`→`AdyabIja`, `Adityapatra`→`Adityapattra`) · propername 170 · **residue 141** (genuine ghost candidates — maths terms `BAgApahArajAti`, toponyms `andulIsa`=Andalusia/`antAkzI`=Antioch) · compositional 117 · misreading 31 · xref-attested 24. **Cross-validates the orthogonal v2 `src_category`** (my `propername` ↔ v2 `ms_catalogue_propernoun` 115/170; residue's top v2 category `scholarly_journal_technical`). Residue emitted with accent + gloss, ready for `/review-sheet`. Deterministic, read-only, README-of-record. Closes H1323.
+
 ## [0.89.0] - 2026-07-19
 
 ### Changed

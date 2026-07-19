@@ -1,0 +1,58 @@
+{
+  "study": "H1323 — PWG ghost-word triage cascade (stages 1-4), on the H1310 v2 shortlist",
+  "as_of": "2026-07-19",
+  "confusion_key_reused": "SanskritSpellCheck detectors/slp1util.confusion_key",
+  "pwg_unique_total": 2270,
+  "core_absent_from_every_dict": 777,
+  "core_by_verdict": {
+    "spelling-variant": 294,
+    "propername": 170,
+    "residue": 141,
+    "compositional": 117,
+    "misreading": 31,
+    "xref-attested": 24
+  },
+  "core_residue": 141,
+  "core_verdict_vs_v2_src_category": {
+    "spelling-variant": {
+      "kosa_nighantu_not_digitised": 160,
+      "ms_catalogue_propernoun": 65,
+      "scholarly_journal_technical": 65,
+      "other_or_none": 4
+    },
+    "propername": {
+      "ms_catalogue_propernoun": 115,
+      "scholarly_journal_technical": 43,
+      "kosa_nighantu_not_digitised": 12
+    },
+    "compositional": {
+      "ms_catalogue_propernoun": 44,
+      "scholarly_journal_technical": 41,
+      "kosa_nighantu_not_digitised": 30,
+      "other_or_none": 2
+    },
+    "residue": {
+      "scholarly_journal_technical": 57,
+      "ms_catalogue_propernoun": 49,
+      "kosa_nighantu_not_digitised": 35
+    },
+    "misreading": {
+      "scholarly_journal_technical": 13,
+      "kosa_nighantu_not_digitised": 10,
+      "ms_catalogue_propernoun": 8
+    },
+    "xref-attested": {
+      "kosa_nighantu_not_digitised": 13,
+      "scholarly_journal_technical": 7,
+      "ms_catalogue_propernoun": 4
+    }
+  },
+  "all_pwg_unique_by_verdict": {
+    "spelling-variant": 637,
+    "residue": 513,
+    "compositional": 487,
+    "propername": 454,
+    "xref-attested": 94,
+    "misreading": 85
+  }
+}
