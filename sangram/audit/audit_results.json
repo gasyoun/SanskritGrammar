@@ -1,0 +1,1936 @@
+{
+ "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+ "checks": [
+  {
+   "id": "BASE-1",
+   "anchor": "SANGRAM_CORPUS_EVIDENCE_METHOD.mdx:44",
+   "label": "total tokens",
+   "expected": 5688416,
+   "derived": 5688416,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "BASE-2",
+   "anchor": "same",
+   "label": "texts",
+   "expected": 270,
+   "derived": 270,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "BASE-3",
+   "anchor": "same",
+   "label": "sentences",
+   "expected": 754726,
+   "derived": 754726,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "BASE-4",
+   "anchor": "preverbs manifest",
+   "label": "lemmas",
+   "expected": 180176,
+   "derived": 180176,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "BASE-5",
+   "anchor": "karaka-case:54",
+   "label": "deprel-tagged tokens (parsed subset)",
+   "expected": 223751,
+   "derived": 223751,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "BASE-6",
+   "anchor": "SANGRAM_CORPUS_EVIDENCE_METHOD.mdx:44",
+   "label": "texts with syntax trees",
+   "expected": 74,
+   "derived": 74,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-1",
+   "anchor": "conjugation-overview:50",
+   "label": "finite verb tokens",
+   "expected": 523721,
+   "derived": 523721,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-2",
+   "anchor": "conjugation-overview:65",
+   "label": "person 3/2/1",
+   "expected": [
+    420305,
+    63865,
+    39551
+   ],
+   "derived": [
+    420305,
+    63865,
+    39551
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-3",
+   "anchor": "conjugation-overview:67",
+   "label": "number Sing/Plur/Dual",
+   "expected": [
+    420271,
+    94078,
+    9372
+   ],
+   "derived": [
+    420271,
+    94078,
+    9372
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-4",
+   "anchor": "conjugation-overview:73",
+   "label": "tense Pres/Past/Impf/Fut",
+   "expected": [
+    353215,
+    102055,
+    46695,
+    21556
+   ],
+   "derived": [
+    353215,
+    102055,
+    46695,
+    21556
+   ],
+   "match": true,
+   "note": "full tense dist: [('Pres', 353215), ('Past', 102055), ('Impf', 46695), ('Fut', 21556), ('Plp', 167), ('Pqp', 33)]"
+  },
+  {
+   "id": "MO012-5",
+   "anchor": "conjugation-overview:84 + imperative-optative:110",
+   "label": "mood Ind/Opt/Imp/Jus/Sub/Prec/Cond/Pot",
+   "expected": [
+    364771,
+    91912,
+    56506,
+    5258,
+    4325,
+    577,
+    340,
+    32
+   ],
+   "derived": [
+    364771,
+    91912,
+    56506,
+    5258,
+    4325,
+    577,
+    340,
+    32
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-6",
+   "anchor": "conjugation-overview:96 + passive:48",
+   "label": "finite passive",
+   "expected": 29699,
+   "derived": 29699,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO012-7",
+   "anchor": "conjugation-overview:96",
+   "label": "finite active (unmarked)",
+   "expected": 494022,
+   "derived": 494022,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF001-1",
+   "anchor": "word-structure-overview:67",
+   "label": "partition nominal/closed/Cpd/finite/krt",
+   "expected": [
+    2271734,
+    1616811,
+    841052,
+    523738,
+    435081
+   ],
+   "derived": [
+    2271734,
+    1616811,
+    841052,
+    523738,
+    435081
+   ],
+   "match": true,
+   "note": "finite_verb bucket (no person filter) vs MO012 universe differs by design"
+  },
+  {
+   "id": "WF001-2",
+   "anchor": "word-structure-overview:78",
+   "label": "distinct finite-verb lemmas",
+   "expected": 8053,
+   "derived": 8053,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF001-3",
+   "anchor": "word-structure-overview:80",
+   "label": "top-10/50/100 finite concentration %",
+   "expected": [
+    29.7,
+    48.7,
+    58.6
+   ],
+   "derived": [
+    29.7,
+    48.7,
+    58.6
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF001-4",
+   "anchor": "word-structure-overview:95",
+   "label": "feat_formation on all VERB [C2]",
+   "expected": [
+    17440,
+    5690,
+    5386,
+    2781,
+    1508,
+    1077,
+    833,
+    124,
+    41
+   ],
+   "derived": [
+    17440,
+    5690,
+    5386,
+    2781,
+    1508,
+    1077,
+    833,
+    124,
+    41
+   ],
+   "match": true,
+   "note": "formation values present: ['is', 'peri', 'red', 'root', 's', 'sa', 'sis', 'them']"
+  },
+  {
+   "id": "WF001-5",
+   "anchor": "word-structure-overview:49+73",
+   "label": "root+affix transparent share %",
+   "expected": 16.8,
+   "derived": 16.9,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO001-1",
+   "anchor": "declension-overview:44",
+   "label": "inflected common-noun tokens",
+   "expected": 1790270,
+   "derived": 1790270,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO001-2",
+   "anchor": "declension-overview:58",
+   "label": "noun number Sing/Plur/Dual",
+   "expected": [
+    1419826,
+    332943,
+    37501
+   ],
+   "derived": [
+    1419826,
+    332943,
+    37501
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO001-3",
+   "anchor": "declension-overview:67",
+   "label": "noun case dist Nom..Dat",
+   "expected": [
+    692647,
+    430396,
+    184609,
+    177320,
+    138883,
+    65363,
+    61862,
+    39190
+   ],
+   "derived": [
+    692647,
+    430396,
+    184609,
+    177320,
+    138883,
+    65363,
+    61862,
+    39190
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO001-4",
+   "anchor": "checkpoint:87 (G2)",
+   "label": "distinct declined-noun lemmas",
+   "expected": 57144,
+   "derived": 54544,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO001-5",
+   "anchor": "checkpoint:87 (G2)",
+   "label": "G2: median cells / %exactly-1 / %all-24 / fill%",
+   "expected": [
+    1,
+    58.9,
+    0.0,
+    10.44
+   ],
+   "derived": [
+    1.0,
+    58.7,
+    0.0,
+    10.6
+   ],
+   "match": false,
+   "note": "lemma universe here 54544 (G2 asset says 57,144)"
+  },
+  {
+   "id": "SE001-1",
+   "anchor": "case-system-overview:40",
+   "label": "tokens with feat_case (any upos)",
+   "expected": 4014688,
+   "derived": 4014688,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE001-2",
+   "anchor": "case-system-overview:41",
+   "label": "8 vibhakti total / Cpd excluded",
+   "expected": [
+    3173636,
+    841052
+   ],
+   "derived": [
+    3173636,
+    841052
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE001-3",
+   "anchor": "case-system-overview:53 + SE002/3/4/5 universes",
+   "label": "all-upos case dist Nom/Acc/Ins/Gen/Loc/Voc/Abl/Dat",
+   "expected": [
+    1419146,
+    742293,
+    277143,
+    270763,
+    243215,
+    81088,
+    74565,
+    65423
+   ],
+   "derived": [
+    1419146,
+    742293,
+    277143,
+    270763,
+    243215,
+    81088,
+    74565,
+    65423
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE001-4",
+   "anchor": "case-system-overview:65",
+   "label": "Nom+Acc share of 8-vibhakti %",
+   "expected": 68,
+   "derived": 68,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE002-1",
+   "anchor": "nominative-accusative:55",
+   "label": "nsubj case-tagged: total/Nom/Loc/Gen/Acc",
+   "expected": [
+    20062,
+    19626,
+    266,
+    43,
+    43
+   ],
+   "derived": [
+    19999,
+    19626,
+    266,
+    43,
+    43
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE002-2",
+   "anchor": "nominative-accusative:76",
+   "label": "obj case-tagged: total/Acc",
+   "expected": [
+    16933,
+    15269
+   ],
+   "derived": [
+    16874,
+    15269
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE002-3",
+   "anchor": "nominative-accusative:61",
+   "label": "cop-head Nom count / % of cop-heads",
+   "expected": [
+    1372,
+    82.6
+   ],
+   "derived": [
+    1372,
+    87.2
+   ],
+   "match": false,
+   "note": "cop-head case dist: {'Acc': 36, 'Dat': 42, 'Gen': 53, 'Ins': 6, 'Loc': 63, 'Nom': 1372, 'Voc': 1}"
+  },
+  {
+   "id": "SE002-4",
+   "anchor": "nominative-accusative:84",
+   "label": "verbs with two true obj (Acc)",
+   "expected": 36,
+   "derived": 36,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE002-5",
+   "anchor": "nominative-accusative:84",
+   "label": "naive double-acc (>=2 Acc deps of a verb)",
+   "expected": 2747,
+   "derived": 2747,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE002-6",
+   "anchor": "nominative-accusative:84",
+   "label": "corrected double-acc (core roles) ~872",
+   "expected": 872,
+   "derived": 787,
+   "match": false,
+   "note": "exact deprel set is the article's method choice"
+  },
+  {
+   "id": "SE003-1",
+   "anchor": "instrumental-dative:58",
+   "label": "obl:instr case-tagged total / obl:soc",
+   "expected": [
+    2692,
+    488
+   ],
+   "derived": [
+    2692,
+    587
+   ],
+   "match": false,
+   "note": "SE003 article prints Ins-only 2,569; SE013 prints case-tagged 2,692"
+  },
+  {
+   "id": "SE003-2",
+   "anchor": "instrumental-dative:58",
+   "label": "obl:instr that are Ins (article's 2,569)",
+   "expected": 2569,
+   "derived": 2569,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE003-3",
+   "anchor": "instrumental-dative:55",
+   "label": "Ins with Pass head (passive-agent proxy)",
+   "expected": 21472,
+   "derived": 157,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE003-4",
+   "anchor": "instrumental-dative:61",
+   "label": "Ins pronouns tad/mad",
+   "expected": [
+    13256,
+    5605
+   ],
+   "derived": [
+    13256,
+    5557
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE003-5",
+   "anchor": "instrumental-dative:51",
+   "label": "top Ins noun forms manasā/śareṇa/karmaṇā",
+   "expected": [
+    1863,
+    1603,
+    1471
+   ],
+   "derived": [
+    1838,
+    null,
+    1059
+   ],
+   "match": false,
+   "note": "top-12: [('manasā', 1838), ('śaraiḥ', 1487), ('ādibhiḥ', 1184), ('tapasā', 1151), ('karmaṇā', 1059), ('tejasā', 1009)]"
+  },
+  {
+   "id": "SE003-6",
+   "anchor": "instrumental-dative:71",
+   "label": "top Dat noun forms agnaye/devāya/indrāya",
+   "expected": [
+    1221,
+    1065,
+    997
+   ],
+   "derived": [
+    1081,
+    null,
+    992
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE003-7",
+   "anchor": "instrumental-dative:74",
+   "label": "Dat pronouns mad/tvad",
+   "expected": [
+    5834,
+    5215
+   ],
+   "derived": [
+    5830,
+    5215
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE004-1",
+   "anchor": "ablative-genitive:53",
+   "label": "Abl singular %",
+   "expected": 92,
+   "derived": 92,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE004-2",
+   "anchor": "ablative-genitive:58+61",
+   "label": "Abl lemmas bhaya/hetu/tva [C4]",
+   "expected": [
+    747,
+    458,
+    3429
+   ],
+   "derived": [
+    747,
+    458,
+    3429
+   ],
+   "match": true,
+   "note": "tva is the C4 segmentation-artifact 'lemma', excluded by the article"
+  },
+  {
+   "id": "SE004-3",
+   "anchor": "ablative-genitive:69",
+   "label": "Gen pronoun share ~33%",
+   "expected": 33,
+   "derived": 33,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE004-4",
+   "anchor": "ablative-genitive:69/73/75",
+   "label": "Gen deprel nmod/iobj/obl:benef/obj",
+   "expected": [
+    6696,
+    86,
+    188,
+    333
+   ],
+   "derived": [
+    6696,
+    86,
+    188,
+    333
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE004-5",
+   "anchor": "ablative-genitive:85 + locative:45",
+   "label": "Gen+Part / Loc+Part candidates",
+   "expected": [
+    16493,
+    20973
+   ],
+   "derived": [
+    16493,
+    20973
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE004-6",
+   "anchor": "ablative-genitive:86",
+   "label": "Gen+Part advcl* / acl*+nmod",
+   "expected": [
+    40,
+    334
+   ],
+   "derived": [
+    40,
+    333
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE004-7",
+   "anchor": "ablative-genitive:101",
+   "label": "paśyataḥ idiom: dṛś Gen+Part / advcl-tagged",
+   "expected": [
+    373,
+    1
+   ],
+   "derived": [
+    373,
+    0
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE005-1",
+   "anchor": "locative:54",
+   "label": "Loc number Sing/Plur/Dual",
+   "expected": [
+    204735,
+    35656,
+    2824
+   ],
+   "derived": [
+    204735,
+    35656,
+    2824
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE005-2",
+   "anchor": "locative:71",
+   "label": "Loc+Part singular / natively-passive",
+   "expected": [
+    18165,
+    1091
+   ],
+   "derived": [
+    18165,
+    1091
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE005-3",
+   "anchor": "locative:77",
+   "label": "Loc+Part top lemmas gam/as/vac/kṛ",
+   "expected": [
+    910,
+    830,
+    662,
+    637
+   ],
+   "derived": [
+    910,
+    830,
+    662,
+    637
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE005-4",
+   "anchor": "locative:88",
+   "label": "Loc+Part parsed / advcl-set / acl / obl",
+   "expected": [
+    557,
+    367,
+    35,
+    48
+   ],
+   "derived": [
+    578,
+    367,
+    42,
+    50
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE005-5",
+   "anchor": "locative:79",
+   "label": "Loc-abs candidate by text: MBh / Suśruta / Rām",
+   "expected": [
+    3925,
+    832,
+    825
+   ],
+   "derived": [
+    3925,
+    832,
+    825
+   ],
+   "match": true,
+   "note": "top texts: [('Mahābhārata', 3925), ('Suśrutasaṃhitā', 832), ('Rāmāyaṇa', 825), ('Bhāratamañjarī', 822), ('Aṣṭāṅgahṛdayasaṃhitā', 724), ('Kathāsaritsāgara', 611)]"
+  },
+  {
+   "id": "SE008-1",
+   "anchor": "imperative-optative:40+51",
+   "label": "Imp: total/2nd/3rd/1st/Sing",
+   "expected": [
+    56506,
+    38144,
+    17373,
+    989,
+    44051
+   ],
+   "derived": [
+    56506,
+    38144,
+    17373,
+    989,
+    44051
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE008-2",
+   "anchor": "imperative-optative:40+51",
+   "label": "Opt: total/2nd/3rd/1st/Sing",
+   "expected": [
+    91912,
+    981,
+    86918,
+    4013,
+    85274
+   ],
+   "derived": [
+    91912,
+    981,
+    86918,
+    4013,
+    85274
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE008-3",
+   "anchor": "imperative-optative:63",
+   "label": "syāt (lemma as, Opt)",
+   "expected": 9505,
+   "derived": 7654,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "SE013-1",
+   "anchor": "karaka-case:84-88",
+   "label": "kartR-active: N / %Nom",
+   "expected": [
+    20230,
+    97.8
+   ],
+   "derived": [
+    20230,
+    97.8
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-2",
+   "anchor": "karaka-case:84-88",
+   "label": "karman: N / %Acc",
+   "expected": [
+    16874,
+    90.5
+   ],
+   "derived": [
+    16874,
+    90.5
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-3",
+   "anchor": "karaka-case:84-88",
+   "label": "karaNa: N / %Ins",
+   "expected": [
+    2692,
+    95.4
+   ],
+   "derived": [
+    2692,
+    95.4
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-4",
+   "anchor": "karaka-case:84-88",
+   "label": "apAdAna: N / %Abl",
+   "expected": [
+    981,
+    85.7
+   ],
+   "derived": [
+    981,
+    85.7
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-5",
+   "anchor": "karaka-case:84-88",
+   "label": "adhikaraNa: N / %Loc",
+   "expected": [
+    1720,
+    84.5
+   ],
+   "derived": [
+    1720,
+    84.5
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-6",
+   "anchor": "karaka-case:84-88",
+   "label": "kartR-passive: N / %Ins",
+   "expected": [
+    408,
+    61.8
+   ],
+   "derived": [
+    408,
+    61.8
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-7",
+   "anchor": "karaka-case:84-88",
+   "label": "sampradAna-recip: N / %Dat",
+   "expected": [
+    2771,
+    66.4
+   ],
+   "derived": [
+    2771,
+    66.4
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-8",
+   "anchor": "karaka-case:84-88",
+   "label": "sampradAna-goal: N / %Acc",
+   "expected": [
+    2336,
+    64.0
+   ],
+   "derived": [
+    2336,
+    64.0
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-9",
+   "anchor": "karaka-case:166",
+   "label": "nsubj:pass rows",
+   "expected": 0,
+   "derived": 0,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-10",
+   "anchor": "karaka-case:166 + passive:48",
+   "label": "Pass-voice verb tokens (all forms)",
+   "expected": 36701,
+   "derived": 36701,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-11",
+   "anchor": "karaka-case:166",
+   "label": "nsubj at Pass head: total / Nom",
+   "expected": [
+    607,
+    563
+   ],
+   "derived": [
+    607,
+    563
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-12",
+   "anchor": "karaka-case:173",
+   "label": "kartR (nsubj+csubj) Loc off-diagonal",
+   "expected": 272,
+   "derived": 272,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "SE013-13",
+   "anchor": "karaka-case:88",
+   "label": "obl:benef Dat/Gen split %",
+   "expected": [
+    47.0,
+    42.9
+   ],
+   "derived": [
+    47.0,
+    42.9
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO016-1",
+   "anchor": "imperfect:66",
+   "label": "Impf person/number/voice profile %",
+   "expected": [
+    94.1,
+    3.3,
+    2.5,
+    75.1,
+    22.6,
+    2.3,
+    96.9,
+    3.1
+   ],
+   "derived": [
+    94.1,
+    3.3,
+    2.5,
+    75.1,
+    22.6,
+    2.3,
+    96.9,
+    3.1
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO016-2",
+   "anchor": "imperfect:69",
+   "label": "Impf top roots brū/bhū/as/paś/kṛ",
+   "expected": [
+    5669,
+    3769,
+    3032,
+    1385,
+    1002
+   ],
+   "derived": [
+    5669,
+    3769,
+    3032,
+    1385,
+    1002
+   ],
+   "match": true,
+   "note": "top-8: [('brū', 5669), ('bhū', 3769), ('as', 3032), ('paś', 1385), ('kṛ', 1002), ('sṛj', 696), ('bhāṣ', 528), ('jan', 368)]"
+  },
+  {
+   "id": "MO017-1",
+   "anchor": "perfect:77 + aorist:65 + aorist-types:53",
+   "label": "Past formation NULL/peri/root/them/s/is/red/sa/sis [C2]",
+   "expected": [
+    85955,
+    4046,
+    5690,
+    2781,
+    1508,
+    1077,
+    833,
+    124,
+    41
+   ],
+   "derived": [
+    85955,
+    4046,
+    5690,
+    2781,
+    1508,
+    1077,
+    833,
+    124,
+    41
+   ],
+   "match": true,
+   "note": "values present: ['NULL', 'is', 'peri', 'red', 'root', 's', 'sa', 'sis', 'them']"
+  },
+  {
+   "id": "MO017-2",
+   "anchor": "aorist:60 + aorist-types:41",
+   "label": "formation-tagged aorist total [C2]",
+   "expected": 12054,
+   "derived": 12054,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO017-3",
+   "anchor": "aorist-types:61",
+   "label": "non-sigmatic / sigmatic split [C2]",
+   "expected": [
+    9304,
+    2750
+   ],
+   "derived": [
+    9304,
+    2750
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO017-4",
+   "anchor": "perfect:66",
+   "label": "pluperfect-tagged tokens ~200",
+   "expected": 200,
+   "derived": 200,
+   "match": true,
+   "note": "tense values on VERB: ['Fut', 'Impf', 'Past', 'Plp', 'Pqp', 'Pres']"
+  },
+  {
+   "id": "MO019-1",
+   "anchor": "aorist-types:53",
+   "label": "aorist lemma counts root/them/red/s/is/sa/sis",
+   "expected": [
+    210,
+    175,
+    150,
+    216,
+    170,
+    37,
+    14
+   ],
+   "derived": [
+    210,
+    175,
+    150,
+    216,
+    170,
+    37,
+    14
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO018-1",
+   "anchor": "aorist:78",
+   "label": "tagged-aorist top roots bhū/vac/gam/kṛ/gā/dā",
+   "expected": [
+    2360,
+    837,
+    664,
+    452,
+    312,
+    255
+   ],
+   "derived": [
+    2360,
+    837,
+    664,
+    452,
+    312,
+    255
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO017-5",
+   "anchor": "perfect:118",
+   "label": "peri tokens by lemma: as/kṛ/bhū",
+   "expected": [
+    3697,
+    298,
+    32
+   ],
+   "derived": [
+    null,
+    null,
+    null
+   ],
+   "match": false,
+   "note": "peri lemma dist: [('cintay', 200), ('preṣay', 184), ('pūjay', 160), ('janay', 159), ('darśay', 131), ('kathay', 125)]"
+  },
+  {
+   "id": "MO017-6",
+   "anchor": "perfect:121",
+   "label": "peri person-number 3Sing/3Plur/3Dual/1Sing/2Sing",
+   "expected": [
+    3503,
+    466,
+    68,
+    8,
+    1
+   ],
+   "derived": [
+    3503,
+    466,
+    68,
+    8,
+    1
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO021-1",
+   "anchor": "future:68",
+   "label": "Fut person % 3rd/1st/2nd",
+   "expected": [
+    51.6,
+    36.4,
+    12.0
+   ],
+   "derived": [
+    51.6,
+    36.4,
+    12.0
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO021-2",
+   "anchor": "future:80",
+   "label": "Fut simple / periphrastic",
+   "expected": [
+    20216,
+    1340
+   ],
+   "derived": [
+    20216,
+    1340
+   ],
+   "match": true,
+   "note": "formation on Fut: [('peri', 1340), ('simple', 20216)]"
+  },
+  {
+   "id": "MO021-3",
+   "anchor": "future:73",
+   "label": "top Fut forms bhaviṣyati/vakṣyāmi/pravakṣyāmi",
+   "expected": [
+    2013,
+    579,
+    532
+   ],
+   "derived": [
+    2013,
+    580,
+    532
+   ],
+   "match": false,
+   "note": "top-8: [('bhaviṣyati', 2013), ('vakṣyāmi', 580), ('pravakṣyāmi', 532), ('bhaviṣyanti', 508), ('vyākhyāsyāmaḥ', 500), ('kariṣyāmi', 351), ('kariṣyati', 344), ('bhavitā', 336)]"
+  },
+  {
+   "id": "MO021-4",
+   "anchor": "future:80",
+   "label": "top periphrastic-future forms bhavitā/kartā",
+   "expected": [
+    332,
+    55
+   ],
+   "derived": [
+    332,
+    55
+   ],
+   "match": true,
+   "note": "top-4: [('bhavitā', 332), ('kartā', 55), ('hantā', 50), ('gantā', 50)]"
+  },
+  {
+   "id": "MO021-5",
+   "anchor": "future:91",
+   "label": "conditional (feat_mood=Cond) total",
+   "expected": 340,
+   "derived": 340,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO021-6",
+   "anchor": "future:47",
+   "label": "future participles (Part & Fut)",
+   "expected": 1575,
+   "derived": 1575,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF002-1",
+   "anchor": "krt-overview:47+60",
+   "label": "quartet total / Part / Conv / Gdv / Inf",
+   "expected": [
+    483623,
+    341556,
+    102054,
+    28260,
+    11753
+   ],
+   "derived": [
+    483623,
+    341556,
+    102054,
+    28260,
+    11753
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF002-2",
+   "anchor": "krt-overview:47",
+   "label": "quartet leakage onto non-VERB",
+   "expected": 0,
+   "derived": 0,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF002-3",
+   "anchor": "krt-overview:66 + ta-na-participles:48",
+   "label": "tense-NULL participles",
+   "expected": 266660,
+   "derived": 266660,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF002-4",
+   "anchor": "krt-overview:73 [C3]",
+   "label": "surface tokens -ana / -ti / -tṛ(IAST)",
+   "expected": [
+    95263,
+    74927,
+    31042
+   ],
+   "derived": [
+    95263,
+    74927,
+    31042
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF003-1",
+   "anchor": "krt-suffixes:60 [C3]",
+   "label": "lemma counts -ana / -ti / -in",
+   "expected": [
+    3438,
+    1886,
+    2926
+   ],
+   "derived": [
+    3438,
+    1886,
+    2926
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF003-2",
+   "anchor": "krt-suffixes:60 — THE -tṛ ENCODING TRAP [C3]",
+   "label": "lemmas ending SLP1 'tf' (published: 0 => 'DCS never lemmatises -tṛ') vs IAST 'tṛ' reality",
+   "expected": [
+    0,
+    0
+   ],
+   "derived": [
+    0,
+    771
+   ],
+   "match": false,
+   "note": "expected (0,0) states the PUBLISHED claim; second derived value is the IAST truth — a nonzero second element REFUTES the published scoping claim"
+  },
+  {
+   "id": "MO022-1",
+   "anchor": "present-perfect-participles:60+65",
+   "label": "Pres Part total / Pass / None-voice",
+   "expected": [
+    64209,
+    7002,
+    57207
+   ],
+   "derived": [
+    64209,
+    7002,
+    57207
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO022-2",
+   "anchor": "present-perfect-participles:68",
+   "label": "top Pres-Part lemmas as/yaj/kṛ",
+   "expected": [
+    3430,
+    2783,
+    1384
+   ],
+   "derived": [
+    3430,
+    2783,
+    1384
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO022-3",
+   "anchor": "present-perfect-participles:80",
+   "label": "Past+Part bucket",
+   "expected": 9112,
+   "derived": 9112,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO022-4",
+   "anchor": "present-perfect-participles:82",
+   "label": "vid in Past+Part (-vas leader)",
+   "expected": 1279,
+   "derived": 1279,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO024-1",
+   "anchor": "gerundive:61",
+   "label": "top Gdv lemmas kṛ/jñā/dā/grah/vijñā",
+   "expected": [
+    3576,
+    1427,
+    1319,
+    694,
+    683
+   ],
+   "derived": [
+    3576,
+    1427,
+    1319,
+    694,
+    683
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO024-2",
+   "anchor": "gerundive:54",
+   "label": "Gdv suffix split -ya/-tavya/-anīya (approx surface)",
+   "expected": [
+    19901,
+    5740,
+    1280
+   ],
+   "derived": [
+    21031,
+    5740,
+    1183
+   ],
+   "match": false,
+   "note": "my crude classifier; ambiguous bucket 306 (article: 1,339) — treat near-match as method-consistent"
+  },
+  {
+   "id": "MO025-1",
+   "anchor": "infinitive:69",
+   "label": "top Inf lemmas kṛ/dṛś/vac/śru/gam",
+   "expected": [
+    906,
+    628,
+    613,
+    522,
+    360
+   ],
+   "derived": [
+    906,
+    628,
+    613,
+    522,
+    360
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO025-2",
+   "anchor": "infinitive:56+66",
+   "label": "Inf split -tum/-tave/-toḥ/-dhyai",
+   "expected": [
+    9681,
+    320,
+    154,
+    97
+   ],
+   "derived": [
+    8768,
+    320,
+    154,
+    97
+   ],
+   "match": false,
+   "note": "other bucket 2414 (article 'прочее' 1,339; Vedic residue 571)"
+  },
+  {
+   "id": "MO026-1",
+   "anchor": "absolutive:61",
+   "label": "Conv split -ya(-tya)/-tvā/other/-am",
+   "expected": [
+    57790,
+    34816,
+    8980,
+    468
+   ],
+   "derived": [
+    57790,
+    34816,
+    8980,
+    468
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO026-2",
+   "anchor": "absolutive:71",
+   "label": "allomorphy cross-tab tvā-nopv/tvā-pv/ya-nopv/ya-pv",
+   "expected": [
+    34293,
+    523,
+    1289,
+    56501
+   ],
+   "derived": [
+    34293,
+    523,
+    1289,
+    56501
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO028-1",
+   "anchor": "causative:44 [C1]",
+   "label": "class-10 bucket finite tokens / lemma types",
+   "expected": [
+    55376,
+    2006
+   ],
+   "derived": [
+    55376,
+    2006
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO028-2",
+   "anchor": "causative:47 [C1]",
+   "label": "denominative finite tokens",
+   "expected": 5451,
+   "derived": 5451,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO028-3",
+   "anchor": "causative:64 [C1]",
+   "label": "top class-10 lemmas kathay/dhāray/kāray/pūjay",
+   "expected": [
+    2083,
+    1337,
+    1327,
+    1249
+   ],
+   "derived": [
+    2083,
+    1337,
+    1327,
+    1249
+   ],
+   "match": true,
+   "note": "top-8: [('kathay', 2083), ('dhāray', 1337), ('kāray', 1327), ('pūjay', 1249), ('janay', 1106), ('marday', 989), ('kāmay', 942), ('bhakṣay', 941)]"
+  },
+  {
+   "id": "MO013-1",
+   "anchor": "thematic-present:46",
+   "label": "finite Pres tokens / distinct lemma_ids",
+   "expected": [
+    353215,
+    7186
+   ],
+   "derived": [
+    353215,
+    7186
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "MO010-1",
+   "anchor": "pronouns:55",
+   "label": "PRON tokens / distinct lemmas",
+   "expected": [
+    544999,
+    38
+   ],
+   "derived": [
+    586225,
+    41
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO010-2",
+   "anchor": "pronouns:73",
+   "label": "top-8 pronoun tokens+cells all match",
+   "expected": true,
+   "derived": false,
+   "match": false,
+   "note": "[('tad', False, 197078, 21), ('yad', False, 62086, 21), ('mad', False, 62747, 21), ('idam', False, 52518, 22), ('tvad', False, 51156, 21), ('etad', False, 41418, 21), ('sarva', False, 37138, 18), ('ka', False, 14115, 18)]"
+  },
+  {
+   "id": "MO002-1",
+   "anchor": "a-stems:54",
+   "label": "-a stems Masc: lemmas/tokens (approx universe, no dictionary-gender whitelist)",
+   "expected": [
+    21837,
+    716864
+   ],
+   "derived": [
+    22529,
+    741479
+   ],
+   "match": false,
+   "note": "script additionally filters by lemma.grammar gender whitelist; near-match = universe reproduced, exact match needs whitelist"
+  },
+  {
+   "id": "MO002-2",
+   "anchor": "a-stems:54",
+   "label": "-a stems Neut: lemmas/tokens (approx universe, no dictionary-gender whitelist)",
+   "expected": [
+    13857,
+    359194
+   ],
+   "derived": [
+    14828,
+    369605
+   ],
+   "match": false,
+   "note": "script additionally filters by lemma.grammar gender whitelist; near-match = universe reproduced, exact match needs whitelist"
+  },
+  {
+   "id": "MO002-3",
+   "anchor": "a-stems:67+118",
+   "label": "putra: tokens / attested cells",
+   "expected": [
+    9729,
+    23
+   ],
+   "derived": [
+    9895,
+    23
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO002-4",
+   "anchor": "a-stems:67+118",
+   "label": "deva: tokens / attested cells",
+   "expected": [
+    17536,
+    22
+   ],
+   "derived": [
+    17565,
+    22
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO002-5",
+   "anchor": "a-stems:67+118",
+   "label": "netra: tokens / attested cells",
+   "expected": [
+    385,
+    22
+   ],
+   "derived": [
+    712,
+    22
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO002-6",
+   "anchor": "a-stems:67+118",
+   "label": "phala: tokens / attested cells",
+   "expected": [
+    3973,
+    17
+   ],
+   "derived": [
+    4303,
+    18
+   ],
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "MO002-7",
+   "anchor": "a-stems:185 [C4]",
+   "label": "tva as neuter 'lemma' token count",
+   "expected": 9972,
+   "derived": 9972,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF004-1",
+   "anchor": "taddhita-overview:55",
+   "label": "NOUN+ADJ universe / NOUN / ADJ",
+   "expected": [
+    2996410,
+    2395188,
+    601222
+   ],
+   "derived": [
+    2996410,
+    2395188,
+    601222
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF004-2",
+   "anchor": "taddhita-overview:77+80 [C4]",
+   "label": "segmentation-suffix tokens tva/tā/vat/maya + total",
+   "expected": [
+    10850,
+    5919,
+    4125,
+    3214,
+    24108
+   ],
+   "derived": [
+    10850,
+    5919,
+    4125,
+    3214,
+    24108
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF004-3",
+   "anchor": "taddhita-overview:77 [C4]",
+   "label": "base recoverable at idx-1 %",
+   "expected": 99.8,
+   "derived": 99.8,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF004-4",
+   "anchor": "taddhita-overview:86 [C4]",
+   "label": "-tva base POS ADJ/NOUN/VERB",
+   "expected": [
+    4876,
+    4441,
+    1107
+   ],
+   "derived": [
+    4876,
+    4441,
+    1107
+   ],
+   "match": true,
+   "note": "full base-POS dist: [('ADJ', 4876), ('NOUN', 4441), ('VERB', 1107), ('PRON', 194), ('NUM', 99), ('ADV', 86), ('PART', 13), ('SCONJ', 1)]"
+  },
+  {
+   "id": "WF004-5",
+   "anchor": "taddhita-overview:157 [C3]",
+   "label": "-ya surface selection tokens",
+   "expected": 224191,
+   "derived": 224191,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF004-6",
+   "anchor": "taddhita-overview:195",
+   "label": "possessive -vant (bhagavant) / -mant (surface variants tried)",
+   "expected": [
+    7100,
+    5188,
+    1272
+   ],
+   "derived": [
+    27920,
+    3272,
+    8614
+   ],
+   "match": false,
+   "note": "lemmatisation form (-vat vs -vant) is the method variable here"
+  },
+  {
+   "id": "WF006-1",
+   "anchor": "P4-design:22 vs tatpurusha:53",
+   "label": "sentences with >=1 Cpd token (raw)",
+   "expected": 396571,
+   "derived": 396571,
+   "match": true,
+   "note": "the P4 design doc's 396,571; the articles' 396,305 counts only sentences with a WELL-FORMED reconstructed compound (dangling runs skipped)"
+  },
+  {
+   "id": "WF006-2",
+   "anchor": "compounds-overview:51+59",
+   "label": "reconstructed compounds / sentences-with",
+   "expected": [
+    595021,
+    396305
+   ],
+   "derived": [
+    595021,
+    396305
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF006-3",
+   "anchor": "compounds-overview:65",
+   "label": "member histogram 2/3/4/5+",
+   "expected": [
+    442649,
+    104460,
+    28372,
+    19540
+   ],
+   "derived": [
+    442649,
+    104460,
+    28372,
+    19540
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF006-4",
+   "anchor": "tatpurusha:53",
+   "label": "two-member / multi-member",
+   "expected": [
+    442649,
+    152372
+   ],
+   "derived": [
+    442649,
+    152372
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF006-5",
+   "anchor": "compounds-overview:73 [C5]",
+   "label": "compound:coord / :name / generic",
+   "expected": [
+    2044,
+    51,
+    119
+   ],
+   "derived": [
+    2044,
+    51,
+    119
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF008-1",
+   "anchor": "tatpurusha:70 [C5]",
+   "label": "the '2,214 compound:coord' claim = coord+name+generic sum, not coord alone",
+   "expected": 2214,
+   "derived": 2214,
+   "match": true,
+   "note": "published label says compound:coord covers 2,214; true coord alone is 2044; 2,214 is the sum of all three compound deprels"
+  },
+  {
+   "id": "WF011-1",
+   "anchor": "preverbs:41",
+   "label": "preverbed verb tokens / % of verbs / lemmas",
+   "expected": [
+    369870,
+    36.7,
+    10017
+   ],
+   "derived": [
+    369870,
+    36.7,
+    10017
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF011-2",
+   "anchor": "preverbs:54 — the ut cell",
+   "label": "leading-upasarga ut (published 17,275)",
+   "expected": 17275,
+   "derived": 17322,
+   "match": false,
+   "note": "published table is leading-upasarga fold everywhere else; ut cell was copied from the exact-string column (17,275); fold value is 17322"
+  },
+  {
+   "id": "WF011-3",
+   "anchor": "preverbs:54",
+   "label": "leading-upasarga pra/ā/sam/vi/upa/ni/abhi",
+   "expected": [
+    58118,
+    48139,
+    47613,
+    40856,
+    22195,
+    20423,
+    17824
+   ],
+   "derived": [
+    58118,
+    48139,
+    47613,
+    40856,
+    22195,
+    20423,
+    17824
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "WF011-4",
+   "anchor": "preverbs:67+111",
+   "label": "multi-preverb tokens / (other) bucket",
+   "expected": [
+    25906,
+    28956
+   ],
+   "derived": [
+    25906,
+    28956
+   ],
+   "match": true,
+   "note": ""
+  }
+ ]
+}

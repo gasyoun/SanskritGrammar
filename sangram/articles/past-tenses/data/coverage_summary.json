@@ -1,0 +1,92 @@
+{
+  "article": "SG-SE-006",
+  "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+  "finite_with_tense": 523721,
+  "tense_dist": {
+    "Pres": 353215,
+    "Past": 102055,
+    "Impf": 46695,
+    "Fut": 21556,
+    "Plp": 167,
+    "Pqp": 33
+  },
+  "past_bucket_total": 102055,
+  "past_by_formation": {
+    "None": 85955,
+    "root": 5690,
+    "peri": 4046,
+    "them": 2781,
+    "s": 1508,
+    "is": 1077,
+    "red": 833,
+    "sa": 124,
+    "sis": 41
+  },
+  "imperfect": 46695,
+  "aorist_finite": 12054,
+  "perfect_periphrastic": 4046,
+  "perfect_simple_untagged_bucket": 85955,
+  "past_none_top_forms": [
+    {
+      "form": "uvāca",
+      "lemma": "vac",
+      "n": 13880
+    },
+    {
+      "form": "āha",
+      "lemma": "ah",
+      "n": 6731
+    },
+    {
+      "form": "veda",
+      "lemma": "vid",
+      "n": 2358
+    },
+    {
+      "form": "āhuḥ",
+      "lemma": "ah",
+      "n": 1800
+    },
+    {
+      "form": "babhūva",
+      "lemma": "bhū",
+      "n": 1220
+    },
+    {
+      "form": "jagāma",
+      "lemma": "gam",
+      "n": 1140
+    },
+    {
+      "form": "dadarśa",
+      "lemma": "dṛś",
+      "n": 1083
+    },
+    {
+      "form": "yayau",
+      "lemma": "yā",
+      "n": 970
+    },
+    {
+      "form": "ūcuḥ",
+      "lemma": "vac",
+      "n": 889
+    },
+    {
+      "form": "prāha",
+      "lemma": "prāh",
+      "n": 871
+    },
+    {
+      "form": "cakāra",
+      "lemma": "kṛ",
+      "n": 871
+    },
+    {
+      "form": "cakre",
+      "lemma": "kṛ",
+      "n": 852
+    }
+  ],
+  "notes": "feat_tense has no Aor/Perf. Imperfect clean (Impf); aorist = Past + aorist feat_formation; perfect corpus-dark: only periphrastic (peri) labeled, simple/reduplicated perfect untagged inside Past+None (dominated by uvāca/āha 'said'). Simple perfect not natively countable."
+}

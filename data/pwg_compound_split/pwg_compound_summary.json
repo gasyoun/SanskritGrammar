@@ -1,0 +1,14 @@
+{
+  "study": "PWG compound (samāsa) segmentation layer",
+  "as_of": "2026-07-19",
+  "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
+  "method": "first `+`-joined {#member#} chain in the entry head, ≥2 members, lead-compatible with the headword",
+  "compounds": 16745,
+  "arity_distribution": {
+    "2": 16729,
+    "3": 15,
+    "4": 1
+  },
+  "excluded_abbreviated_member_analyses": 18852,
+  "note": "PWG abbreviates a repeated stem with `˚` (A˚); such analyses are excluded here because the member is truncated — only fully-spelled member splits are kept."
+}

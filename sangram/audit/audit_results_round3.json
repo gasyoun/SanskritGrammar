@@ -1,0 +1,150 @@
+{
+ "checks": [
+  {
+   "id": "R3-SE002-1",
+   "label": "nsubj total, no case filter",
+   "expected": 20062,
+   "derived": 20062,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-SE002-2",
+   "label": "obj total, no case filter",
+   "expected": 16933,
+   "derived": 16933,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-SE002-6",
+   "label": "double-acc CORE_OBJ obj/iobj/xcomp/xcomp:result/ccomp",
+   "expected": 872,
+   "derived": 872,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-SE003-5",
+   "label": "Ins NOUN lemmas manas/sara/karman",
+   "expected": [
+    1863,
+    1603,
+    1471
+   ],
+   "derived": [
+    1863,
+    1603,
+    1471
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-SE003-6",
+   "label": "Dat NOUN lemmas agni/deva/indra",
+   "expected": [
+    1221,
+    1065,
+    997
+   ],
+   "derived": [
+    1221,
+    1065,
+    997
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-SE008-3",
+   "label": "lemma 'as' + mood Opt, no FIN filter",
+   "expected": 9505,
+   "derived": 9505,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-MO017-5",
+   "label": "peri aux tails as/kr/bhu (surface of peri token)",
+   "expected": [
+    3697,
+    298,
+    32
+   ],
+   "derived": [
+    3697,
+    298,
+    32
+   ],
+   "match": true,
+   "note": "other bucket: 19"
+  },
+  {
+   "id": "R3-MO021-3",
+   "label": "vaksyami grouped with lemma vac",
+   "expected": 579,
+   "derived": 579,
+   "match": true,
+   "note": "the 580th token carries a different lemma"
+  },
+  {
+   "id": "R3-WF004-6",
+   "label": "lemma %vant tokens / bhagavant / %mant",
+   "expected": [
+    7100,
+    5188,
+    1272
+   ],
+   "derived": [
+    7100,
+    5188,
+    1272
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R3-MO025-2",
+   "label": "Inf split, script classifier (retroflex ṭum included)",
+   "expected": [
+    9681,
+    320,
+    154,
+    97
+   ],
+   "derived": [
+    9681,
+    320,
+    154,
+    97
+   ],
+   "match": true,
+   "note": "other 1501 / none 0"
+  },
+  {
+   "id": "R3-MO024-2",
+   "label": "Gdv split, script classifier -ya/-tavya/-aniya",
+   "expected": [
+    19901,
+    5740,
+    1280
+   ],
+   "derived": [
+    19901,
+    5740,
+    1280
+   ],
+   "match": true,
+   "note": "other 1339 / none 0"
+  },
+  {
+   "id": "R3-WF001-5",
+   "label": "root+affix share: true value vs published 16.8",
+   "expected": 16.8,
+   "derived": 16.9,
+   "match": false,
+   "note": "exact 16.8556%: round-half-up gives 16.9; published 16.8 can only come from truncation — a genuine (trivial) error"
+  }
+ ]
+}

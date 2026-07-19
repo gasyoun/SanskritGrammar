@@ -1,0 +1,100 @@
+{
+  "$schema": "../../editorial/data/article.schema.json",
+  "contract_version": "1.0.0",
+  "canonical_script": "slp1",
+  "article": {
+    "id": "art:karaka-case",
+    "as_of": "2026-07-18",
+    "toc_ref": "SG-SE-013",
+    "layers": ["scientific"],
+    "locales": {
+      "ru": {
+        "title": "Kāraka и падеж: две модели над одними свидетельствами",
+        "summary": "Статья SG-SE-013 (домен SE, кластер «Падежная семантика») — эндшпиль, замыкающий падежный кластер (обзор SE-001 + четыре парные подстатьи SE-002/003/004/005). Синтез: над ОДНИМ корпусным свидетельством накладываются ДВЕ модели — паниниевские караки (6 семантических ролей, Пан. 1.4.23–55) и вибхакти (8 морфологических падежей, feat_case) — плюс ТРЕТЬЯ, невольно данная DCS: слой зависимостей Universal Dependencies (deprel), непаниниевский западный формализм. У DCS НЕТ разметки карак: караки наложены на deprel-прокси (научное утверждение, не нативный тег), а deprel частичен (~3,93 % токенов, 223 751 из 5 688 416) — вся раскладка видит менее 4 % корпуса. Данные собраны+адверсариально проверены воркфlow probe→verify (все 4 заявки пережили опровержение; числа воспроизведены до токена). Кросс-таблица kāraka↔падеж даёт ПЯТЬ сильных диагоналей (роль≈падеж): kartṛ→Nom 97,8 %, karman→Acc 90,5 %, karaṇa→Ins 95,4 %, apādāna→Abl 85,7 %, adhikaraṇa→Loc 84,5 %. И два системных РАЗРЫВА (зачем Пāṇини вообще нужна карака отдельно от падежа): (1) kartṛ-пассивный агенс уходит в ИНСТРУМЕНТАЛИС (obl:agent→Ins 61,8 %; та же роль агенса, что Nom в активе) — а инструменталис при этом несёт ДВЕ караки (орудие karaṇa 95,4 % И агенс пассива), одно к одному не отображается; (2) единая паниниевская sampradāna дробится в UD на три отношения с РАЗНЫМИ падежами — адресат (iobj)→Dat 66,4 %, цель (obl:goal)→Acc 64,0 % (Dat лишь 2 %), бенефициант (obl:benef)→почти поровну Dat 47,0 %/Gen 42,9 %. Честный предел: знаменитейший разрыв — karman→Nom в пассиве — НЕ отделим нативно на стороне подлежащего: nsubj:pass = 0 строк, активный агенс и пассивный пациенс делят nsubj, у всех feat_voice=None. Пассив массово засвидетельствован на глаголе (feat_voice=Pass = 36 701), но подлежащее пассива видно лишь предикатным маршрутом (nsubj при Pass-глаголе = 607, из них Nom 563 = 92,8 %) — разрыв подтверждён на видимой доле, но скрыт в масштабе. Уитни §§261–320; Толчельников (непаниниевский взгляд на систему форм)."
+      }
+    },
+    "examples": [
+      {
+        "id": "ex:karaka-case:1",
+        "text_slp1": "agniH",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Aitareyopaniṣad", "ref": "AU 1.2" },
+        "translations": { "ru": "огонь (agni, Nom — kartṛ/агенс актива)" },
+        "gloss_ru": "kartṛ (агенс) → НОМИНАТИВ (deprel=nsubj): agni → agniḥ, в «agniḥ vāc bhūtvā mukham prāviśat» «огонь, став речью, вошёл в рот» — подлежащее финитного глагола актива. Сильная диагональ: kartṛ→Nom 97,8 % (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Nom, deprel=nsubj, лемма agni, tid 83864", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:2",
+        "text_slp1": "striyA",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.4" },
+        "translations": { "ru": "женщиной (strī, Ins — kartṛ/агенс пассива, РАЗРЫВ)" },
+        "gloss_ru": "kartṛ (агенс) → ИНСТРУМЕНТАЛИС (deprel=obl:agent) — РАЗРЫВ №1: strī → striyā, в «ayam ākāśaḥ striyā pūryate» «это пространство заполняется женщиной». Та же роль агенса, что в прим. 1 (там Nom), но в пассиве уходит в Ins (obl:agent→Ins 61,8 %). Роль инвариантна, падеж — нет (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins, deprel=obl:agent, глава-глагол pūryate feat_voice=Pass, лемма strī, tid 753201", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:3",
+        "text_slp1": "striyam",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 6.4" },
+        "translations": { "ru": "женщину (strī, Acc — karman/пациенс)" },
+        "gloss_ru": "karman (пациенс) → АККУЗАТИВ (deprel=obj): strī → striyam, в «saḥ striyam sasṛje» «он сотворил женщину» — прямой объект. Сильная диагональ karman→Acc 90,5 %. Ср. прим. 2: то же слово strī, но в роли пациенса — Acc, в роли агенса пассива — Ins (§ 3, 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, deprel=obj, лемма strī, tid 769534", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:4",
+        "text_slp1": "adBiH",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 6.4" },
+        "translations": { "ru": "водой (ap, Ins — karaṇa/орудие)" },
+        "gloss_ru": "karaṇa (орудие) → ИНСТРУМЕНТАЛИС (deprel=obl:instr): ap → adbhiḥ, в «adbhiḥ abhyukṣati» «окропляет водой». Сильная диагональ karaṇa→Ins 95,4 %. ВАЖНО: инструменталис несёт ДВЕ караки — орудие (здесь) и агенс пассива (прим. 2): одно к одному падеж↔карака не отображается (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Ins, deprel=obl:instr, лемма ap, tid 770216", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:5",
+        "text_slp1": "paSuByaH",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.5" },
+        "translations": { "ru": "скоту (paśu, Dat — sampradāna/адресат)" },
+        "gloss_ru": "sampradāna (адресат) → ДАТИВ (deprel=iobj): paśu → paśubhyaḥ, в «paśubhyaḥ ekam prāyacchat» «одну (долю) дал скоту» — канонический адресат передачи. Диагональ адресата sampradāna→Dat 66,4 % (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Dat, deprel=iobj, лемма paśu, tid 754188", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:6",
+        "text_slp1": "devAn",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.5" },
+        "translations": { "ru": "к богам (deva, Acc — sampradāna/цель, РАЗРЫВ)" },
+        "gloss_ru": "sampradāna (цель) → АККУЗАТИВ (deprel=obl:goal) — РАЗРЫВ №2: deva → devān, в «saḥ devān apigacchati» «он идёт/достигает к богам». Единая паниниевская sampradāna в UD дробится: адресат (прим. 5)→Dat, а цель-движения→Acc 64,0 % (Dat лишь 2 %). Одна роль — три отношения, три падежа (§ 4).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Acc, deprel=obl:goal, лемма deva, tid 754216", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:7",
+        "text_slp1": "prARAt",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.5" },
+        "translations": { "ru": "из дыхания (prāṇa, Abl — apādāna/исходник)" },
+        "gloss_ru": "apādāna (исходник) → АБЛАТИВ (deprel=obl:source): prāṇa → prāṇāt, в «prāṇāt vai eṣa udeti» «из дыхания он восходит» — точка исхода. Сильная диагональ apādāna→Abl 85,7 % (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Abl, deprel=obl:source, лемма prāṇa, tid 755277", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      },
+      {
+        "id": "ex:karaka-case:8",
+        "text_slp1": "apsu",
+        "layer": "scientific",
+        "locus": { "corpus": "dcs", "work": "Bṛhadāraṇyakopaniṣad", "ref": "BĀU 1.2" },
+        "translations": { "ru": "в водах (ap, Loc — adhikaraṇa/место)" },
+        "gloss_ru": "adhikaraṇa (место) → ЛОКАТИВ (deprel=obl:loc): ap → apsu, в «eṣaḥ apsu pratiṣṭhitaḥ» «он утверждён в водах». Сильная диагональ adhikaraṇa→Loc 84,5 %. Ср. прим. 4: то же слово ap в роли орудия — Ins, в роли места — Loc (§ 3).",
+        "evidence": { "label_ru": "DCS, пинованный снапшот; feat_case=Loc, deprel=obl:loc, лемма ap, tid 751803", "visibility": "internal" },
+        "as_of": "2026-07-18"
+      }
+    ],
+    "revisions": []
+  }
+}

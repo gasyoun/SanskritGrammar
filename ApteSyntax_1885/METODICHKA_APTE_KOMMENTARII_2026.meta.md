@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_APTE_KOMMENTARII_2026.md
 
-_Created: 17-07-2026 · Last updated: 17-07-2026_
+_Created: 17-07-2026 · Last updated: 19-07-2026_
 
 Companion record for the Apte print methodichka commentary manuscript
 ([`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md)).
@@ -71,5 +71,6 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Created v1 раздел I (commentary) + this metadoc (H1090). All 10 flagged claims covered + strengths appendix. |
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Fed the «Учащемуся» takeaways into the `<ApteClaims/>` reading-site overlay via a `methodichka` field in `claims.yml` (single source) — backlog #3 closed (H1095). |
 | 17-07-2026 | Sonnet 5 (`claude-sonnet-5`) | MG viza applied (8/9 approve) — backlog #4 closed. Likhushina direct quotes (Занятие 3/19), Sherzl government-index cross-check (Занятие 7/9), tightened Занятие 10 ratio; 3 open research asks parked as backlog #5. |
+| 19-07-2026 | Fable 5 (`claude-fable-5`) | H1275: все 8 одобренных правок визы доведены до письменной диспозиции (таблица «Ревизии правок визы» в рукописи). Сноски-оговорки 1–3 (зан-3/19/22) — настоящие `[^n]`-сноски вместо прозы; прямая перецитата формулировок правил по Лихушиной расширена на §§ 63/94/98/113/258; контрольная сверка Шерцля по `government_lexicon.jsonl` выявила и сняла три неточности цитирования H1205 (krudh «acc.», ruc «только», пропущенный dat. 160 у muc + глосса превербов). Елизаренкова (зан-19), dashboard (зан-22) и межкнижный список (приложение) отложены с именованными блокерами; zan-29 эскалирован на повторную визу (@DECIDE). |
 
 _Dr. Mārcis Gasūns_

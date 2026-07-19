@@ -1,0 +1,398 @@
+{
+ "checks": [
+  {
+   "id": "R2-MO001-4",
+   "label": "G2 lemma universe by lemma_id",
+   "expected": 57144,
+   "derived": 57144,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO001-5",
+   "label": "G2 median / %exactly-1 / fill% (by lemma_id)",
+   "expected": [
+    1,
+    58.9,
+    10.44
+   ],
+   "derived": [
+    1.0,
+    58.9,
+    10.44
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-1",
+   "label": "nsubj case-tagged incl Cpd",
+   "expected": 20062,
+   "derived": 19999,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-2",
+   "label": "obj case-tagged incl Cpd",
+   "expected": 16933,
+   "derived": 16874,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-1b",
+   "label": "nsubj with feat_case='Cpd'",
+   "expected": 63,
+   "derived": 5,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-2b",
+   "label": "obj with feat_case='Cpd'",
+   "expected": 59,
+   "derived": 1178,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-3",
+   "label": "cop-head denominator (all heads, incl case-less)",
+   "expected": 1661,
+   "derived": 1661,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE002-6",
+   "label": "corrected double-acc, script's core set obj/iobj/xcomp/ccomp",
+   "expected": 872,
+   "derived": 663,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-SE003-1",
+   "label": "obl:soc that are Ins",
+   "expected": 488,
+   "derived": 488,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE003-3",
+   "label": "Ins tokens in a sentence containing a Pass verb",
+   "expected": 21472,
+   "derived": 21472,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE003-4",
+   "label": "mad Ins (no upos filter)",
+   "expected": 5605,
+   "derived": 5605,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE003-7",
+   "label": "mad Dat (no upos filter)",
+   "expected": 5834,
+   "derived": 5834,
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-SE003-5",
+   "label": "top Ins noun m_unsandhied manasā/śareṇa/karmaṇā",
+   "expected": [
+    1863,
+    1603,
+    1471
+   ],
+   "derived": [
+    1838,
+    null,
+    1059
+   ],
+   "match": false,
+   "note": "top: [('manasā', 1838), ('śaraiḥ', 1487), ('ādibhiḥ', 1184), ('tapasā', 1151), ('karmaṇā', 1059), ('tejasā', 1009)]"
+  },
+  {
+   "id": "R2-SE003-6",
+   "label": "top Dat noun m_unsandhied agnaye/devāya/indrāya",
+   "expected": [
+    1221,
+    1065,
+    997
+   ],
+   "derived": [
+    1081,
+    null,
+    992
+   ],
+   "match": false,
+   "note": "top: [('agnaye', 1081), ('indrāya', 992), ('devebhyaḥ', 856), ('arthāya', 356), ('tvāya', 344), ('pitṛbhyaḥ', 342)]"
+  },
+  {
+   "id": "R2-SE004-6",
+   "label": "Gen+Part acl*+nmod* (nmod subtypes included)",
+   "expected": 334,
+   "derived": 334,
+   "match": true,
+   "note": "full deprel dist: {'nmod': 162, 'acl': 141, 'conj': 41, 'flat': 40, 'acl:ptcp': 16, 'obl:benef': 13, 'advcl:cond': 13, 'advcl': 13, 'acl:dpct': 12, 'advcl:temp': 10, 'root': 9, 'obj': 9, 'orphan': 7, 'iobj': 6, 'cop': 6, 'obl:loc': 5, 'parataxis': 4, 'nsubj': 4, 'advcl:ccomp': 3, 'obl:agent': 2, 'ccomp': 2, 'obl:source': 1, 'obl:manner': 1, 'obl:grad': 1, 'obl': 1, 'nmod:appos': 1, 'csubj': 1, 'advcl:concess': 1, 'acl:rel': 1, 'acl:attr': 1}"
+  },
+  {
+   "id": "R2-SE004-7",
+   "label": "Gen+Part advcl lemma set contains a paś/dṛś watcher",
+   "expected": true,
+   "derived": true,
+   "match": true,
+   "note": "advcl lemmas: {'abhinirhṛ': 1, 'adhijigāṃs': 1, 'anvārabh': 1, 'arc': 1, 'avado': 2, 'avasic': 1, 'car': 1, 'cintay': 1, 'dviṣ': 1, 'dīkṣ': 1, 'hu': 2, 'iṣ': 3, 'kṛ': 1, 'marmṛj': 1, 'math': 1, 'paś': 1, 'pratyācakṣ': 1, 'ruc': 2, 'samāvṛt': 1, 'saṃnī': 2, 'stu': 1, 'svap': 1, 'sṛj': 1, 'triṣphalīkṛ': 1, 'udi': 1, 'utthā': 1, 'vac': 1, 'vid': 1, 'yaj': 2, 'ādhā': 1, 'ās': 2, 'śram': 1}"
+  },
+  {
+   "id": "R2-SE005-4",
+   "label": "Loc+Part: top-12-deprel sum (article's 557) vs true total",
+   "expected": [
+    557,
+    578
+   ],
+   "derived": [
+    557,
+    578
+   ],
+   "match": true,
+   "note": "full dist: {'advcl:temp': 184, 'advcl': 133, 'advcl:cond': 50, 'orphan': 45, 'conj': 45, 'acl': 35, 'obl:loc': 18, 'obl:goal': 18, 'obl': 12, 'root': 7, 'nsubj': 5, 'flat': 5, 'acl:ptcp': 5, 'advcl:ccomp': 4, 'cop': 3, 'obl:temp': 2, 'advcl:concess': 2, 'obj': 1, 'iobj': 1, 'advcl:caus': 1, 'acl:rel': 1, 'acl:dpct': 1}"
+  },
+  {
+   "id": "R2-SE008-3",
+   "label": "as+Opt+3+Sing tokens (syāt incl sandhi variants)",
+   "expected": 9505,
+   "derived": 7661,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-MO021-3",
+   "label": "vakṣyāmi count by m_unsandhied only",
+   "expected": 579,
+   "derived": 580,
+   "match": false,
+   "note": ""
+  },
+  {
+   "id": "R2-MO010-1",
+   "label": "PRON universe (script WHERE): tokens / lemmas",
+   "expected": [
+    544999,
+    38
+   ],
+   "derived": [
+    544999,
+    38
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO010-2",
+   "label": "top-8 pronoun tokens/cells (script universe)",
+   "expected": [
+    [
+     "tad",
+     184809,
+     21
+    ],
+    [
+     "yad",
+     61421,
+     21
+    ],
+    [
+     "mad",
+     60575,
+     21
+    ],
+    [
+     "idam",
+     52461,
+     22
+    ],
+    [
+     "tvad",
+     49725,
+     21
+    ],
+    [
+     "etad",
+     40991,
+     21
+    ],
+    [
+     "sarva",
+     22865,
+     18
+    ],
+    [
+     "ka",
+     14087,
+     18
+    ]
+   ],
+   "derived": [
+    [
+     "tad",
+     184809,
+     21
+    ],
+    [
+     "yad",
+     61421,
+     21
+    ],
+    [
+     "mad",
+     60575,
+     21
+    ],
+    [
+     "idam",
+     52461,
+     22
+    ],
+    [
+     "tvad",
+     49725,
+     21
+    ],
+    [
+     "etad",
+     40991,
+     21
+    ],
+    [
+     "sarva",
+     22865,
+     18
+    ],
+    [
+     "ka",
+     14087,
+     18
+    ]
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO010-3",
+   "label": "pronoun median cells / mean / % >=18",
+   "expected": [
+    12.5,
+    12.13,
+    39.5
+   ],
+   "derived": [
+    12.5,
+    12.13,
+    39.5
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO002-3",
+   "label": "putra (Masc): tokens / cells",
+   "expected": [
+    9729,
+    23
+   ],
+   "derived": [
+    9729,
+    23
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO002-4",
+   "label": "deva (Masc): tokens / cells",
+   "expected": [
+    17536,
+    22
+   ],
+   "derived": [
+    17536,
+    22
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO002-5",
+   "label": "netra (Neut): tokens / cells",
+   "expected": [
+    385,
+    22
+   ],
+   "derived": [
+    385,
+    22
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO002-6",
+   "label": "phala (Neut): tokens / cells",
+   "expected": [
+    3973,
+    17
+   ],
+   "derived": [
+    3973,
+    17
+   ],
+   "match": true,
+   "note": ""
+  },
+  {
+   "id": "R2-MO002-5b",
+   "label": "netra tokens gender-free (round-1 got 712)",
+   "expected": 712,
+   "derived": 712,
+   "match": true,
+   "note": "the excess over 385 is netra tagged with other/missing gender"
+  },
+  {
+   "id": "R2-WF004-6",
+   "label": "vant/mant variant hunt",
+   "expected": [
+    7100,
+    5188,
+    1272
+   ],
+   "derived": {
+    "ADJ %vat": 20507,
+    "NOUN+ADJ %vat": 20820,
+    "bhagavat all-upos": 3272,
+    "bhagavat NOUN": 0,
+    "bhagavat non-Cpd case": 3238,
+    "ADJ %mat": 7342,
+    "NOUN+ADJ %mat": 7342
+   },
+   "match": null,
+   "note": "manual adjudication from variants"
+  },
+  {
+   "id": "R2-MO025-2",
+   "label": "Inf ending -tum OR -tuṃ (anusvara variant)",
+   "expected": 9681,
+   "derived": 8768,
+   "match": false,
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-07-18",
+  "method": "PWG denominal-derivation extraction (von {#non-root base#} + reconstruction gate) x DCS token join",
+  "source_pwg": "csl-orig/v02/pwg/pwg.txt",
+  "dcs_source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+  "total_derivations": 5699,
+  "with_citation": 5603,
+  "citation_coverage_pct": 98.3,
+  "dcs_attested_types": 2775,
+  "dcs_total_tokens": 117243,
+  "by_class_types": {
+    "относит./vṛddhi": 2523,
+    "абстракт": 1007,
+    "уменьш./собират.": 929,
+    "поссессив": 756,
+    "материал": 269,
+    "адверб": 147,
+    "сравнение": 55,
+    "герундивообразный": 13
+  },
+  "by_class_attested_types": {
+    "относит./vṛddhi": 1410,
+    "уменьш./собират.": 612,
+    "поссессив": 544,
+    "абстракт": 193,
+    "сравнение": 35,
+    "материал": 12,
+    "адверб": 2,
+    "герундивообразный": 2
+  },
+  "by_class_tokens": {
+    "относит./vṛddhi": 66651,
+    "поссессив": 26731,
+    "уменьш./собират.": 16267,
+    "абстракт": 5963,
+    "сравнение": 986,
+    "материал": 457,
+    "герундивообразный": 185,
+    "адверб": 3
+  },
+  "by_suffix_types": {
+    "ya": 1088,
+    "ka": 929,
+    "ika": 841,
+    "in": 708,
+    "tA": 572,
+    "tva": 413,
+    "Iya": 322,
+    "eya": 272,
+    "maya": 269,
+    "tas": 85,
+    "Sas": 62,
+    "tama": 31,
+    "vat": 30,
+    "tara": 24,
+    "tana": 22,
+    "vin": 9,
+    "tavya": 7,
+    "vala": 6,
+    "anIya": 6,
+    "min": 3
+  }
+}

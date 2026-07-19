@@ -9,6 +9,30 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.13.0] - 2026-07-19
+### Changed
+- **Apte-methodichka viza notes brought to final written disposition — all 8 approved notes closed (H1275, Fable 5 `claude-fable-5`).**
+  New «Ревизии правок визы» table in
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md) records
+  APPLIED/DEFERRED/ESCALATED per `item_id`. (1) The three «оговорить в сноске» notes
+  (zan-03/19/22) now use real `[^n]` Markdown footnotes (decision recorded: the manuscript takes
+  true footnotes — the author asked «в сноске» three times, the site build renders GFM footnotes,
+  precedent throughout `Apte-unicode.mdx`); body prose kept. (2) Likhushina direct quotes widened
+  to every visaed lesson (§ 63 зан-7, full §§ 94/98 зан-9, § 113 зан-10, full § 258 зан-22) —
+  still confined to the formulation of the commented rule; the closing rights paragraph untouched;
+  appendix summary rows stay paraphrase (author's structural call). (3) Adversarial re-check of
+  the Sherzl cross-references against
+  [`government_lexicon.jsonl`](../BuhlerLeitfaden_1923/government_class_index/government_lexicon.jsonl)
+  caught and fixed three H1205 citation defects: krudh «acc.» (not in the lexicon — dat./gen./loc.
+  only), ruc «ТОЛЬКО» (an example-only instr. record exists, p. 121), muc's missing dat. 160
+  (→acc.) + the preverb gloss («loc./acc./dat.» → loc.-example replaceable by dat.). (4) Registry
+  sync: aorist rarity in зан-19 «Учащемуся» 0,31 % → ~2,3 % per the H1136 refresh already in
+  `claims.yml`/`CLAIMS_VERIFIED.md` (probe `whitney_aorist_tagger.py`, H1134) — the manuscript
+  lagged its own register; APT-31 verdict unchanged. Deferred with named blockers: Елизаренкова
+  scan (zan-19, needs MG's file — @DO in GTD), uta dashboard (zan-22) and cross-book calibration
+  list (prilozhenie) — both separate features under the 18-07-2026 consolidation freeze. zan-29
+  (vote null) escalated to a re-vote @DECIDE, its section untouched.
+
 ## [0.12.0] - 2026-07-17
 ### Changed
 - **MG viza applied to the print methodichka раздел I (8/9 approve, 1 unvoted).** Ran
