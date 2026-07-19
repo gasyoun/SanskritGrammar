@@ -5,54 +5,62 @@
   "pwg_unique_total": 2270,
   "core_absent_from_every_dict": 777,
   "core_by_verdict": {
-    "spelling-variant": 294,
-    "propername": 170,
-    "residue": 141,
-    "compositional": 117,
-    "misreading": 31,
-    "xref-attested": 24
+    "spelling-variant": 293,
+    "propername": 199,
+    "compositional": 171,
+    "misreading": 38,
+    "xref-attested": 24,
+    "catalogue-propername": 23,
+    "residue": 16,
+    "kosa-corpus-gap": 13
   },
-  "core_residue": 141,
+  "core_residue": 16,
   "core_verdict_vs_v2_src_category": {
     "spelling-variant": {
-      "kosa_nighantu_not_digitised": 160,
+      "kosa_nighantu_not_digitised": 159,
       "ms_catalogue_propernoun": 65,
       "scholarly_journal_technical": 65,
       "other_or_none": 4
     },
     "propername": {
-      "ms_catalogue_propernoun": 115,
-      "scholarly_journal_technical": 43,
+      "ms_catalogue_propernoun": 133,
+      "scholarly_journal_technical": 54,
       "kosa_nighantu_not_digitised": 12
     },
     "compositional": {
-      "ms_catalogue_propernoun": 44,
-      "scholarly_journal_technical": 41,
-      "kosa_nighantu_not_digitised": 30,
+      "scholarly_journal_technical": 67,
+      "ms_catalogue_propernoun": 52,
+      "kosa_nighantu_not_digitised": 50,
       "other_or_none": 2
     },
-    "residue": {
-      "scholarly_journal_technical": 57,
-      "ms_catalogue_propernoun": 49,
-      "kosa_nighantu_not_digitised": 35
-    },
     "misreading": {
-      "scholarly_journal_technical": 13,
-      "kosa_nighantu_not_digitised": 10,
+      "scholarly_journal_technical": 17,
+      "kosa_nighantu_not_digitised": 13,
       "ms_catalogue_propernoun": 8
+    },
+    "residue": {
+      "scholarly_journal_technical": 16
     },
     "xref-attested": {
       "kosa_nighantu_not_digitised": 13,
       "scholarly_journal_technical": 7,
       "ms_catalogue_propernoun": 4
+    },
+    "catalogue-propername": {
+      "ms_catalogue_propernoun": 23
+    },
+    "kosa-corpus-gap": {
+      "kosa_nighantu_not_digitised": 13
     }
   },
   "all_pwg_unique_by_verdict": {
-    "spelling-variant": 637,
-    "residue": 513,
-    "compositional": 487,
-    "propername": 454,
-    "xref-attested": 94,
-    "misreading": 85
+    "spelling-variant": 634,
+    "propername": 620,
+    "compositional": 498,
+    "residue": 129,
+    "misreading": 101,
+    "catalogue-propername": 99,
+    "kosa-corpus-gap": 95,
+    "xref-attested": 94
   }
 }

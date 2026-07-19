@@ -10,18 +10,24 @@ and cross-checks each verdict against v2's citation-source category (`src_catego
 
 Every word is tagged by ALL signals that fire; a single `verdict` is chosen by precedence.
 
-  Stage 1 — COMPOSITIONAL (own datasets + body backstop)
+  Stage 1 — COMPOSITIONAL (own datasets + body backstop + greedy decomposition)
      word ∈ pwg_compound_splits / pwg_derivation_graph, or its PWG body carries a
-     `({#X#} + {#Y#})` compound formula or a `von {#base#}` derivation note → not a novel simplex.
+     `({#X#} + {#Y#})` compound formula or a `von {#base#}` derivation note, or the word splits
+     (greedy longest-prefix) into ≥2 attested headwords → not a novel simplex.
   Stage 2 — BODY MARKERS (one regex pass over the committed pwg.txt entry body)
-     `<ab>N. pr.</ab>`/`<ab>N.</ab>` → proper name · `falsche/richtige Lesart` → PWG-declared
-     misreading · `= {#X#}` → PWG's own cross-reference to another word X.
+     `<ab>N. pr.</ab>`/`<ab>N.</ab>`/`Titel eines …`/`Name eines …` → proper name or work title ·
+     `falsche/richtige Lesart`/`zu lesen für`/`fehlerhaft`/`… kritisch für` → PWG-declared
+     misreading, emendation or dialect variant · `= {#X#}` → PWG's cross-reference to word X.
   Stage 3 — DESCRIPTIVE GLOSS (own pwg_german_glosses)
      German gloss is a `dessen…/deren…` bahuvrīhi paraphrase → a compound the splitter missed.
   Stage 4 — NORMALIZATION RE-JOIN (reuses SanskritSpellCheck `slp1util.confusion_key`)
      the word's confusion-collapsed skeleton key matches an attested headword in another
      dictionary → a spelling/OCR variant of an attested word, not genuinely unique. The same
      key resolves each `= {#X#}` xref target (spelling-variant vs attested synonym).
+  Stage 5 — V2 CITATION-SOURCE FALLBACK (only when stages 1-4 are silent)
+     v2's `src_category` = `ms_catalogue_propernoun` → cited only from a manuscript catalogue,
+     so a name/title (`catalogue-propername`); = `kosa_nighantu_not_digitised` → attested in a
+     koṣa PWG names but Cologne has not digitised (`kosa-corpus-gap`), not a ghost.
 
   → RESIDUE — no signal fired: a genuine simplex ghost-word candidate. Emitted with its
      accented headword (`<k2>`) + German gloss for fast human review.
@@ -35,6 +41,7 @@ Emits data/pwg_ghostword_triage/ : the full triage TSV, the residue review-list,
 """
 import argparse
 import csv
+import functools
 import json
 import re
 import sys
@@ -58,7 +65,10 @@ K1_DICT = re.compile(r'<k1>([^<]+)')
 
 # stage-2 body markers
 NPR = re.compile(r'<ab>\s*N\.(?:\s*pr\.)?\s*</ab>')       # <ab>N. pr.</ab> / <ab>N.</ab>
-MISREAD = re.compile(r'(?:falsche|fehlerhafte?)\s+Lesart|richtige\s+Lesart\s+ist|fehlerhaft\s+f[uü]r')
+TITLE_NAME = re.compile(r'\bTitel\b|\bName\s+ein')       # "Titel eines Werkes/Schrift" · "Name eines …"
+MISREAD = re.compile(                                     # PWG-declared error / emendation / dialect variant
+    r'(?:falsche|fehlerhafte?)\s+Lesart|richtige\s+Lesart\s+ist|fehlerhaft'
+    r'|zu\s+lesen\s+f[uü]r|so,?\s+nicht\s+\{#|kritisch\s+f[uü]r')
 XREF = re.compile(r'=\s*\{#([^#]+)#\}')                   # = {#X#}
 COMPOUND_BODY = re.compile(r'\(\s*\{#[^#]+#\}\s*\+\s*\{#[^#]+#\}')   # ({#X#} + {#Y#})
 VON = re.compile(r'\bvon\s+\{#([^#]+)#\}')               # von {#base#}
@@ -202,8 +212,30 @@ def main():
             return None, []
         return best, sorted(dicts[best])
 
-    print('  loaded %d target words · %d comp · %d deriv · %d gloss · normalizer=%s'
-          % (len(targets), len(comp_set), len(deriv_set), len(gloss), bool(ckey)), file=sys.stderr)
+    # union of all attested headwords, for greedy string-level compound decomposition
+    HW_ALL = set().union(*dict_exact.values()) if dict_exact else set()
+    DECOMP_MIN = 3
+
+    @functools.lru_cache(maxsize=None)
+    def decompose(w):
+        """Greedy longest-prefix split of `w` into attested headwords (≥ DECOMP_MIN chars each).
+        Returns the tuple of parts if it splits into ≥2, else None. String-level only — it does
+        not undo sandhi at the join, so sandhi-boundary compounds (caturTa+AraRyaka) are left for
+        the deferred vidyut splitter (stage 5)."""
+        if len(w) < DECOMP_MIN:
+            return None
+        if w in HW_ALL:
+            return (w,)
+        for i in range(len(w) - DECOMP_MIN, DECOMP_MIN - 1, -1):
+            if w[:i] in HW_ALL:
+                rest = decompose(w[i:])
+                if rest:
+                    return (w[:i],) + rest
+        return None
+
+    print('  loaded %d target words · %d comp · %d deriv · %d gloss · %d headword-union · normalizer=%s'
+          % (len(targets), len(comp_set), len(deriv_set), len(gloss), len(HW_ALL), bool(ckey)),
+          file=sys.stderr)
 
     # ---- classify ---------------------------------------------------------------
     def clean_xref(t):
@@ -218,16 +250,22 @@ def main():
         # stage 2 — body markers
         if MISREAD.search(body):
             tags.add('misreading')
-        if NPR.search(body):
+        if NPR.search(body) or TITLE_NAME.search(body):
             tags.add('propername')
         xref_targets = [clean_xref(t) for t in XREF.findall(body)]
         xref_targets = [t for t in xref_targets if t and '˚' not in t and t != k1]
 
-        # stage 1 — compositional (own datasets + body backstop)
+        # stage 1 — compositional (own datasets + body backstop + greedy decomposition)
+        compound_parts = ''
         if k1 in comp_set or COMPOUND_BODY.search(body):
             tags.add('compound')
         if k1 in deriv_set or VON.search(body):
             tags.add('derivative')
+        if 'compound' not in tags:
+            d = decompose(k1)
+            if d and len(d) >= 2:              # splits into ≥2 attested headwords → a compound
+                tags.add('compound')
+                compound_parts = '+'.join(d)
 
         # stage 3 — descriptive/bahuvrīhi gloss
         if BVR.search(gl):
@@ -269,6 +307,11 @@ def main():
             verdict = 'compositional'
         elif 'descriptive-compound' in tags:
             verdict = 'descriptive-compound'
+        # stage 5 — v2 citation-source fallback (only when no direct signal fired)
+        elif v2cat.get(k1) == 'ms_catalogue_propernoun':
+            verdict = 'catalogue-propername'   # cited only from a manuscript catalogue → a name/title
+        elif v2cat.get(k1) == 'kosa_nighantu_not_digitised':
+            verdict = 'kosa-corpus-gap'        # attested in a koṣa PWG names but not digitised
         else:
             verdict = 'residue'
 
@@ -280,6 +323,7 @@ def main():
             'variant_of': variant_of or '',
             'variant_dicts': '|'.join(variant_dicts),
             'xref_target': xref_hit,
+            'compound_parts': compound_parts,
             'v2_src_category': v2cat.get(k1, ''),
             'accented': accent.get(k1, ''),
             'gloss': gl,
@@ -287,7 +331,7 @@ def main():
 
     # ---- outputs ----------------------------------------------------------------
     cols = ['k1', 'core', 'verdict', 'tags', 'variant_of', 'variant_dicts', 'xref_target',
-            'v2_src_category', 'accented', 'gloss']
+            'compound_parts', 'v2_src_category', 'accented', 'gloss']
     with (out / 'pwg_ghostword_triage.tsv').open('w', encoding='utf-8', newline='') as f:
         w = csv.DictWriter(f, fieldnames=cols, delimiter='\t')
         w.writeheader()
