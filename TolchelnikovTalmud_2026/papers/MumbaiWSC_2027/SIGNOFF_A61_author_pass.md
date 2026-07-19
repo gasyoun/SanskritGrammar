@@ -76,4 +76,8 @@ Gate (a) is done. Every quotation and testimonial citation of the 27 June 2026 c
 
 Remaining to 5/5 after this pass: gate (b) — §3.3 archive locator (the references already carry "Malten, Thomas. 2005 … author's archive; quoted in §3.3"; an inline pointer is optional) and the Kapp–Malten p. 1 + fair-dealing verification — plus §8.1 roles read-and-confirm and the submission-time abstract wording.
 
+## Author ratification of the timestamp gate — 19-07-2026
+
+The author confirmed all three items above against the recording, same day: **TS1 stands as final** (the §5 "more closed than opened" and carry-over claims remain cited to the call without a personal attribution; the dashboard-presenter reading is correct), the **§8.2 "such a quality" = M. Gasūns attribution is correct**, and the **two-moment ellipsis in the §8.2 closing statement stands** with both locators cited. No text changes follow — the manuscript already reads as ratified. The attribution-review half of the evidence gate's human items is hereby CLOSED; what remains to 5/5 is unchanged from the list above minus these checks: Kapp–Malten p. 1 + fair-dealing, §8.1 roles read-and-confirm, and the submission-time abstract wording.
+
 _Dr. Mārcis Gasūns_
