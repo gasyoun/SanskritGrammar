@@ -1,6 +1,6 @@
 # Verification — Digital Sanskrit Pedagogy
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 19-07-2026_
 
 Acceptance criteria per wave-1 deliverable, the exact check that proves each, and the risks/spikes
 register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
@@ -13,6 +13,9 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
 | **W1b** A62 draft | outline at readiness-2; survey + hypotheses (RQ1–4) + evaluation-design sections present; venue line; dashboard regen | `python Uprava/tools/build_dashboard_data.py` regenerates; A62 row shows readiness 2 |
 | **W1c** Zaliznyak on-ramp | on-ramp `.mdx` builds; graded sequence renders; "one tap deeper" links resolve to Талмуд chapters | `npm run build` → SUCCESS, 0 new broken links; spot-check the deep links |
 | **W1d** last-mile spec | spec complete; kosha↔Systema contract defined; one-rung demo path specified; **no Systema production code changed** | `git diff` touches only the spec doc; contract section names inputs/outputs of each hop |
+| **W2-add-a** attested drills ([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)) | joiner fixture test green; drill items carry ONLY attested cells (spot-check 20 vs `lemma_cell_coverage.csv`); generated-vs-attested disagreements flagged, never silently picked; per-class coverage report present | run the join script → `attested_drill_items.tsv` + coverage report; fixture test |
+| **W2-add-b** corpus-linked methodichka ([H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)) | every companion lemma carries band + DCS locus; restricted-rendering rows ship Sanskrit-only with the marker; both metadocs ticked | banding regression on 20 lemmas; grep zero restricted-layer text in the published section |
+| **W2-add-c** bracket trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)) | 30-compound gold ladder set committed + regression green; widget builds; H948 cross-linked not duplicated | `npm run build` SUCCESS; gold regression |
 | **Registration** | MEGABOOK §2.10 present + §2.9 strengthened; A62 in ARTICLES with bumped marker; GTD straddle tier row; ROADMAP_INDEX entry; handoffs registered | `crosslink_weave_check.py MEGABOOK.md` passes; A62 marker → A63; registry counts add up |
 
 ## Risks & spikes register

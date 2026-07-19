@@ -1,6 +1,6 @@
 # Plan — Digital Sanskrit Pedagogy as a priority research field (2026–2028)
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 19-07-2026_
 
 **This is the cover/index** of the layered plan that establishes and builds out
 [digital Sanskrit pedagogy](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
@@ -21,6 +21,7 @@ metadoc is the definition; this plan is how it gets built.
 - **Architecture (data model + how views derive):** [`docs/ARCHITECTURE_DIGITAL_SANSKRIT_PEDAGOGY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ARCHITECTURE_DIGITAL_SANSKRIT_PEDAGOGY.md)
 - **Implementation (wave-1 file-level steps):** [`docs/IMPLEMENTATION_DIGITAL_SANSKRIT_PEDAGOGY_WAVE1.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_DIGITAL_SANSKRIT_PEDAGOGY_WAVE1.md)
 - **Verification (acceptance + risks):** [`docs/VERIFICATION_DIGITAL_SANSKRIT_PEDAGOGY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/VERIFICATION_DIGITAL_SANSKRIT_PEDAGOGY.md)
+- **Implementation (Wave-2 additions, 19-07-2026):** [`docs/IMPLEMENTATION_DIGITAL_SANSKRIT_PEDAGOGY_ATTESTED_RU_ADDITIONS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_DIGITAL_SANSKRIT_PEDAGOGY_ATTESTED_RU_ADDITIONS.md)
 
 ## Decisions taken (the 17 rulings — the execution agent trusts these without re-deriving)
 
@@ -43,6 +44,9 @@ metadoc is the definition; this plan is how it gets built.
 | 15 | Ambiguity policy | **Pick marked default + log** | Keeps the unattended run moving; human reviews logged calls |
 | 16 | Merge authority | **Commit → PR → merge autonomously** | The user explicitly overrode the standing "don't merge unless asked" for these handoffs |
 | 17 | Fence | **csl-orig only** (+ standing publish/rights gates apply globally) | Only added build-scope fence; public-deploy & rights-gated publish stay behind publish-safety-check |
+| 18 | Wave-2 additions (19-07-2026, `/ask-batch` interview) | **Three attestation-first builds queued:** attested-cell declension drills (H1296) · corpus-linked methodichka layer (H1297) · samāsa bracket-method trainer (H1298) | The audited gap: nothing exploits G2's 10.44 %-attestation finding, the companions are corpus-blind, and no surface teaches the vigraha *method* |
+| 19 | RU rights gate (19-07-2026) | **Published RU glosses only from the SanskritRussian public site-tier subset**; restricted layers stay local-only inputs | Bulk layers align published translations — not redistributable |
+| 20 | Methodichka dup ruling (19-07-2026) | H1297 minted `--allow-dup` over H1258/H1275 — **distinct payload** (new corpus data layer vs applying review notes) | The mint guard fired on shared tokens; the delta is real and stated in the handoff |
 
 ## Wave-1 builds
 
