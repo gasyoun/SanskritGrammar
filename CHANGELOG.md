@@ -19,6 +19,12 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **`review/` is now tracked — reverses H856 (H1273, Sonnet 5 `claude-sonnet-5`).** [`.gitignore`](https://github.com/gasyoun/SanskritGrammar/blob/main/.gitignore) no longer excludes `/review/`: 13 `*_decisions.json` (120 adjudicated items, 87 carrying notes) + 9 surviving `*_review.html` are committed (4 of 13 sheets had already lost their HTML before this reversal — a partial loss already realised, the argument for tracking now). See [`docs/DECISION_RECORD_REVIEW_TRACKING_H856_REVERSAL.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/DECISION_RECORD_REVIEW_TRACKING_H856_REVERSAL.md).
+
+### Added
+- **`review/EDITORIAL_NOTE_INDEX.tsv` — per-note open/applied index (H1273, Sonnet 5 `claude-sonnet-5`).** 81 rows / 8 columns (`note_uid`, `sheet_id`, `item_id`, `note`, `target_file`, `applied_status`, `evidence`, `provenance`) covering every approved+noted item across the 13 review sheets, plus [`EDITORIAL_NOTE_INDEX_EXCLUDED.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX_EXCLUDED.tsv) (6 rows: 3 reject, 3 undecided, each with a disposition). Freshly re-derived against `origin/main` rather than the plan's stated "21 applied / 60 open" anchor, which turned out stale: **33 APPLIED, 2 PARTIAL, 46 OPEN** — concurrent handoffs H1205 (17-07) and H1275 (19-07, merged) had already applied far more of the backlog than the plan (drafted 18-07) accounted for. Full discrepancy writeup in the PR body.
+
 ## [0.90.0] - 2026-07-19
 
 ### Added

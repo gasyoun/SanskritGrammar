@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Sangram: сводная виза на 11 статей-кандидатов ядра W2 (17-07-2026)</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #1a1d24; --panel2: #22262f; --text: #e8e8ea;
+    --muted: #9aa0ac; --accent: #6ea8fe; --green: #3fb950; --red: #f85149;
+    --amber: #d29922; --border: #30363d;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f1f4; --text:#1a1d24; --muted:#5b616e; --border:#d8dbe0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
+  header { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border); padding:14px 20px; }
+  header h1 { margin:0 0 4px; font-size:1.15rem; }
+  header .sub { color:var(--muted); font-size:0.85rem; }
+  .tally { display:flex; gap:14px; margin-top:10px; font-size:0.85rem; flex-wrap:wrap; }
+  .tally span { padding:3px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--border); }
+  .tally b { font-variant-numeric: tabular-nums; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px; }
+  .toolbar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center; }
+  button.dl { background:var(--accent); color:#0b0d10; border:none; border-radius:8px; padding:9px 16px; font-weight:600; cursor:pointer; }
+  button.dl:hover { opacity:0.9; }
+  .hint { color:var(--muted); font-size:0.8rem; }
+  .group { margin: 6px 0 2px; padding: 8px 12px; border-radius:8px; background:var(--panel2); border:1px solid var(--border); font-size:0.82rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:18px; transition: border-color .15s; }
+  .card.voted-approve { border-color: var(--green); }
+  .card.voted-reject { border-color: var(--red); }
+  .card.voted-defer { border-color: var(--amber); }
+  .card h2 { margin:0 0 2px; font-size:1.05rem; }
+  .card .id { color:var(--muted); font-size:0.78rem; margin-bottom:10px; }
+  .box { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.92rem; margin:10px 0; }
+  .box h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .box.content h3 { color: var(--accent); }
+  .evidence { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.88rem; margin-top:10px; }
+  .evidence h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .evidence ul { margin:4px 0 0; padding-left:18px; }
+  .evidence li { margin-bottom:4px; }
+  .votebar { display:flex; gap:8px; margin-top:14px; align-items:center; flex-wrap:wrap; }
+  .votebar button { border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px; padding:8px 14px; cursor:pointer; font-size:0.88rem; }
+  .votebar button.approve.active { background:var(--green); color:#06210c; border-color:var(--green); }
+  .votebar button.reject.active { background:var(--red); color:#2b0705; border-color:var(--red); }
+  .votebar button.defer.active { background:var(--amber); color:#2b1c02; border-color:var(--amber); }
+  .votebar .key { opacity:.6; font-size:0.75rem; }
+  textarea.note { width:100%; margin-top:10px; min-height:46px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:0.88rem; resize:vertical; }
+  footer { text-align:center; color:var(--muted); font-size:0.78rem; padding:20px; }
+  code { background: var(--panel2); border-radius:4px; padding:1px 5px; font-size:0.85em; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sangram: сводная виза на 11 статей-кандидатов ядра W2</h1>
+  <div class="sub">Вся производственная волна 16–17-07-2026 · сгенерировано 17-07-2026 (Opus 4.8, <code>claude-opus-4-8[1m]</code>) · sheet_id: <code>sangram-w2-core-11candidates-visa_17.07.26</code> · заменяет лист 9 кандидатов (+ пассив, каузатив) · SG-MO-001 уже опубликован (виза 8/8) · по одной карточке на статью (approve = опубликовать)</div>
+  <div class="tally" id="tally"></div>
+</header>
+<main>
+  <div class="toolbar">
+    <button class="dl" id="dlBtn">Download decisions.json</button>
+    <span class="hint">клавиши: a=approve · r=reject · d=defer · ↑/↓ = следующая карточка (кликните карточку, чтобы сфокусировать)</span>
+  </div>
+  <div id="items"></div>
+</main>
+<footer>Голоса сохраняются в localStorage браузера (ключ = sheet_id). Экспортируйте decisions.json после прохода и положите рядом с листом — follow-up сессия внесёт published-ревизии в манифесты одобренных.</footer>
+
+<script>
+const SHEET_ID = "sangram-w2-core-11candidates-visa_17.07.26";
+const ITEMS = [
+  { group: "Обзоры кластеров (3)" },
+  {
+    id: "MO12",
+    title: "SG-MO-012 «Спряжение: обзор»",
+    content: "Обзор глагольной системы. Частотная рамка финитного глагола по 523 721 токену — распределение по пяти НАТИВНЫМ признакам DCS (лицо/число/время/наклонение/залог): 3-е лицо 80,3 %, презенс 67,4 %, индикатив 69,6 %, оптатив неожиданно частотен 17,5 %, пассив 5,7 %. Нативная рамка, без приближения (в отличие от основ склонения). Несёт пределы EM1 (класс презенса) + EM2 (Past-склейка). Approve = опубликовать.",
+    evidence: [
+      "PR #269 (кандидат merged); 5 примеров с loci (bhavati/abhavat/syāt/gaccha/ucyate); карта подстатей SG-MO-013…032.",
+      "Шаблон «обзор» уже принят на SG-MO-001 (8/8)."
+    ]
+  },
+  {
+    id: "WF06",
+    title: "SG-WF-006 «Композиты: обзор»",
+    content: "Обзор композитов. 841 052 члена Case=Cpd → 595 021 композит в 396 305 предложениях (52,5 % корпуса несут композит); гистограмма числа членов (двучлен 74,4 %). КЛЮЧЕВАЯ ЧЕСТНОСТЬ: тип композита корпусом НЕ размечен (EM4) — доли типов (татпуруша 79,5 % / бахуврихи 14,5 % / двандва 5,1 %) даны как ВЫБОРКА пилота P4 (κ=0,93 по 120 двучленам), а НЕ как корпусный подсчёт. Approve = опубликовать.",
+    evidence: [
+      "PR #274 (кандидат merged); нативный сигнал типа только compound:coord (2 044, ≈двандва) в разобранном подмножестве; 3 примера.",
+      "Ключевая карточка честности: доля типа — выборка, не корпус."
+    ]
+  },
+  {
+    id: "WF01",
+    title: "SG-WF-001 «Строение слова»",
+    content: "Обзор строения слова (корень/основа/аффикс). Приоритетное разбиение всех 5 688 416 токенов: нарицательное 39,9 %, закрытый класс 28,4 %, композит 14,8 %, финитный глагол 9,2 %, отглагольное kṛt 7,6 % (прозрачно «корень+аффикс» 16,8 %). Инвентарь корней: 8 053 аттестованные финитные леммы (топ-10 = 29,7 %) vs WhitneyRoots 1 133 корня. ЧЕСТНЫЙ ПРЕДЕЛ: нарицательное 39,9 % по способу деривации НЕ размечено (P5: ~59 % ложных по поверхности). Approve = опубликовать.",
+    evidence: [
+      "PR #287, релиз v0.37.0; окно словообразования основы feat_formation (разрежено, 1,7 %).",
+      "Разбор первичное/kṛt/taddhita по поверхности сознательно НЕ делается."
+    ]
+  },
+  { group: "Склонение (2)" },
+  {
+    id: "MO06",
+    title: "SG-MO-006 «Согласные основы»",
+    content: "Согласные основы. ПЕРВЫЙ ПОТРЕБИТЕЛЬ актива G2 (не пересчитывает покрытие): 4 212 согласных лемм / 232 935 токенов; медиана 1 клетка/лемму (EM3), покрытие растёт с частотой (rājan 20/24, karman 22/24). Порождённая парадигма (MWinflect) со ступенями основы: сильная rājā / слабая rājñā / средняя rājasu. Подтипы -in 900 · -an 846 · -as 572. Approve = опубликовать.",
+    evidence: [
+      "PR #308 (кандидат merged); традиционный слой — Уитни гл. V §§383–465; 5 примеров по подтипам.",
+      "Потребляет производный актив G2 (H1048) — рекомендация контрольной точки § 5."
+    ]
+  },
+  {
+    id: "MO10",
+    title: "SG-MO-010 «Местоимения»",
+    content: "Местоимения. ИСКЛЮЧЕНИЕ из предела EM3: закрытый высокочастотный класс 38 лемм / 544 999 токенов, медиана 12,5 клетки/лемму против 1 у существительных (39,5 % лемм ≥18 клеток). Супплетивные основы (aham↔mad, sa/sā/tat↔tad); для закрытого супплетивного класса порождение ≡ традиция — канонические парадигмы aham/tad из Уитни гл. VII, не машинно-порождённые. Approve = опубликовать.",
+    evidence: [
+      "PR #315 (кандидат merged); топ tad 184 809 (21/24), idam 22/24; 5 примеров с супплетивизмом.",
+      "Контрастная граница активу G2 (местоимения — PRON, не NOUN; отдельный запрос)."
+    ]
+  },
+  { group: "Именные формы глагола (2)" },
+  {
+    id: "MO23",
+    title: "SG-MO-023 «Причастия -ta/-na»",
+    content: "Причастие прош. страд. Самый частотный причастный тип: 219 902 токена (нижняя оценка) = 64,4 % всех 341 556 причастий, из 4742 корней, -ta к -na как 13,6:1; употребление преимущественно предикативное (57 % Nom. — перифрастический пассив/перфект). ЧЕСТНО: DCS не тегирует класс -ta/-na — опознание по основе (снятие a-флексии), нижняя оценка (исключает ассимилированные labdha/rūḍha/baddha). Выборка 50: 0 ложных. Approve = опубликовать.",
+    evidence: [
+      "PR #323 (кандидат merged); склоняется как a-основа (SG-MO-002); 5 примеров (kṛtam/sthitaḥ/upāgataḥ/bhinnaḥ/hata).",
+      "EM5-тип предела, но база уже отфильтрована VerbForm=Part — метод чист на выборке."
+    ]
+  },
+  {
+    id: "MO26",
+    title: "SG-MO-026 «Абсолютив -tvā/-ya»",
+    content: "Абсолютив (несклоняем). КОРПУС ПОДТВЕРЖДАЕТ ТРАДИЦИОННОЕ ПРАВИЛО на ≈98 %: по сопоставлению суффикса с lemma.preverbs над 102 054 токенами, -tvā на 98,5 % при простом корне (34 293/34 816), -ya/-tya на 97,8 % при глаголе с превербом (56 501/57 790). «Аттестовано подтверждает традиционно» — самое чистое позитивное подтверждение правила в ядре. Approve = опубликовать.",
+    evidence: [
+      "PR #334 (кандидат merged); 5 примеров (kṛtvā/gatvā простые; praṇamya/āgatya/vihāya составные); остаток ~2 % — краевые сандхи.",
+      "Несклоняем → порождённой парадигмы нет; традиция — Уитни §§989–995."
+    ]
+  },
+  { group: "Претериты — градиент восстановимости (2)" },
+  {
+    id: "MO16",
+    title: "SG-MO-016 «Имперфект»",
+    content: "Имперфект — ВОССТАНОВИМЫЙ претерит, позитивный двойник пилота P3. Единственный претерит, размеченный DCS отдельно (Tense=Impf), потому измерим напрямую: 46 695 токенов из 523 721 финитного. Нарративное прошедшее 3-го лица (94,1 %, ещё сильнее целого), verba dicendi/бытия (brū abravīt #1, bhū, as āsīt). Несёт два предела: EM2 (сёстры-претериты склеены) + EM1 (презентный класс не в признаках). Approve = опубликовать.",
+    evidence: [
+      "PR #337 (кандидат merged); 5 примеров с аугментом (abravīt/abhavat/āsīt/akarot/apaśyat).",
+      "Показывает, что о прошедшем корпус ПОЗВОЛЯЕТ измерить (в отличие от P3-негатива)."
+    ]
+  },
+  {
+    id: "MO18",
+    title: "SG-MO-018 «Аорист»",
+    content: "Аорист — СЕРЕДИНА градиента (имперфект→аорист→перфект). Склеен с перфектом под Tense=Past (EM2, P3), но — в отличие от перфекта — feat_formation размечает типы аористной основы (корневой/s/iṣ/sa/siṣ/редупл./тематический) на 12 054 токенах (11,8 % Past) по всем семи типам. НИЖНЯЯ ОЦЕНКА: P3 оценил перфект ≈76 % Past → аорист ≈24 %, размечена примерно половина; вторая половина неотделима от перфекта. Честная оговорка смежности them/red (adadat). Approve = опубликовать.",
+    evidence: [
+      "PR #344, релиз v0.51.0; корневой тип 5 690 (крупнейший); 4 примера по типам (abhūt/akārṣīt/agamat/adāt).",
+      "Заполняет средний уровень восстановимости претеритов между SG-MO-016 и P3."
+    ]
+  },
+  { group: "Вторичные спряжения (2)" },
+  {
+    id: "MO27",
+    title: "SG-MO-027 «Пассив»",
+    content: "Пассив (слабый корень + -ya- + медиальные окончания; ucyate, dṛśyate). НАТИВНО размечен (Voice=Pass) → измерим напрямую, как имперфект: 29 699 финитных токенов (5,7 %) + 7 002 причастных. Профиль резче любого разреза глагола — голос безличной цитаты: 98,1 % 3-е лицо, 92,6 % презенс; во главе verba dicendi (ucyate «говорится» — самый частотный пассив корпуса, dṛśyate, śrūyate, kathyate). Граница EM1: пассивная основа -ya- омонимична презенсу IV класса (paśyati vs dṛśyate), разделены тегом залога, не формой. Approve = опубликовать.",
+    evidence: [
+      "PR #350, релиз v0.53.0; 5 примеров (ucyate/dṛśyate/kriyate/śrūyate/vidyate); средний залог отдельно не тегируется.",
+      "Как имперфект — нативно размечен, потому измерим; несёт границу EM1."
+    ]
+  },
+  {
+    id: "MO28",
+    title: "SG-MO-028 «Каузатив» (сводная версия)",
+    content: "Каузатив (усиленный корень + -aya-; kārayati «велит сделать»). НЕ размечен нативно (метки Caus — 0): основа -aya- под кодом X класса (10.), СЛИТА с первичным curādi (kathay/pūjay/cintay). Измеримо целое — класс-X 55 376 токенов (10,6 %) — но каузатив как таковой не отделим. КОЛИЧЕСТВЕННО ≈80 % каузативов: ручная адъюдикация 60 типов (49 кауз./11 curādi = 18,3 % ложных) + механическое де-усиление (44 117/55 376 = 79,7 % массы имеет аттестованный первичный корень). Частично восстановим, как аорист. Прочие вторичные (деноминатив/дезидератив/интенсив) корпус различает. Approve = опубликовать.",
+    evidence: [
+      "PR #366 (СВОДНАЯ версия: коллизия двух сессий сведена в пользу более полной, аналог P4 H989↔H990), релиз v0.56.0; adjudication.json (60 вердиктов); 5 примеров (4 каузатива + kathay curādi).",
+      "Граница EM5: чистое разделение каузатив↔curādi требует внешней карты классов корня (WhitneyRoots)."
+    ]
+  },
+  { group: "ВИЗА" },
+  {
+    id: "V",
+    title: "ВИЗА: опубликовать одобренные (продвинуть ядро W2)",
+    content: "Approve по каждой карточке выше = ЭТА статья публикуется (ревизия published в манифест, плашка кандидата снята из index.mdx). Reject = снять / пересмотреть до тиража. Defer = оставить кандидатом до заметок. Голосуйте по каждой статье НЕЗАВИСИМО. С публикацией одобренных ядро W2 (17/19 произведено) продвигается от производства к тиражу (SG-MO-001 уже опубликован, виза 8/8). Заметки к любым карточкам (усилить оговорку, поправить пример) исполняются follow-up-сессией по decisions.json. Шаблоны «обзор» и «статья ядра» уже приняты на SG-MO-001.",
+    evidence: [
+      "11 кандидатов merged (PR #269–#366), каждый с 3 валидаторами + CI/local build green.",
+      "Паттерн пилотов P1–P5 и SG-MO-001: кандидат land'ится merged PR, публикация — только по авторской визе."
+    ]
+  }
+];
+
+const state = JSON.parse(localStorage.getItem("reviewsheet:" + SHEET_ID) || "{}");
+function save() { localStorage.setItem("reviewsheet:" + SHEET_ID, JSON.stringify(state)); renderTally(); }
+
+const VOTABLE = ITEMS.filter(it => it.id);
+
+function renderTally() {
+  const counts = {approve:0, reject:0, defer:0, unvoted:0};
+  VOTABLE.forEach(it => {
+    const d = state[it.id] && state[it.id].decision;
+    if (d === "approve") counts.approve++;
+    else if (d === "reject") counts.reject++;
+    else if (d === "defer") counts.defer++;
+    else counts.unvoted++;
+  });
+  document.getElementById("tally").innerHTML =
+    `<span>Статей: <b>${VOTABLE.length}</b></span>` +
+    `<span>✅ Approve: <b>${counts.approve}</b></span>` +
+    `<span>❌ Reject: <b>${counts.reject}</b></span>` +
+    `<span>⏸ Defer: <b>${counts.defer}</b></span>` +
+    `<span>⬜ Не голосовано: <b>${counts.unvoted}</b></span>`;
+}
+
+function vote(id, decision) {
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  updateCard(id);
+}
+
+function noteChange(id, val) {
+  state[id] = state[id] || {};
+  state[id].note = val;
+  save();
+}
+
+function updateCard(id) {
+  const card = document.getElementById("card-" + id);
+  card.classList.remove("voted-approve", "voted-reject", "voted-defer");
+  const d = state[id] && state[id].decision;
+  if (d) card.classList.add("voted-" + d);
+  ["approve","reject","defer"].forEach(k => {
+    document.getElementById(`btn-${id}-${k}`).classList.toggle("active", d === k);
+  });
+}
+
+function render() {
+  const wrap = document.getElementById("items");
+  wrap.innerHTML = "";
+  let vidx = 0;
+  ITEMS.forEach((it) => {
+    if (!it.id) {
+      const g = document.createElement("div");
+      g.className = "group";
+      g.textContent = it.group;
+      wrap.appendChild(g);
+      return;
+    }
+    vidx++;
+    const div = document.createElement("div");
+    div.className = "card";
+    div.id = "card-" + it.id;
+    div.tabIndex = 0;
+    div.innerHTML = `
+      <h2>${it.id} · ${it.title}</h2>
+      <div class="id">#${vidx} из ${VOTABLE.length}</div>
+      <div class="box content"><h3>Что в статье</h3>${it.content}</div>
+      <div class="evidence"><h3>Основание</h3><ul>${it.evidence.map(e => `<li>${e}</li>`).join("")}</ul></div>
+      <div class="votebar">
+        <button class="approve" id="btn-${it.id}-approve" onclick="vote('${it.id}','approve')">✅ Approve <span class="key">(a)</span></button>
+        <button class="reject" id="btn-${it.id}-reject" onclick="vote('${it.id}','reject')">❌ Reject <span class="key">(r)</span></button>
+        <button class="defer" id="btn-${it.id}-defer" onclick="vote('${it.id}','defer')">⏸ Defer <span class="key">(d)</span></button>
+      </div>
+      <textarea class="note" placeholder="Заметка (необязательно)…" oninput="noteChange('${it.id}', this.value)">${(state[it.id] && state[it.id].note) || ""}</textarea>
+    `;
+    wrap.appendChild(div);
+    updateCard(it.id);
+  });
+}
+
+let focusedIdx = 0;
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  if (active && active.tagName === "TEXTAREA") return;
+  const cards = VOTABLE.map(it => it.id);
+  if (e.key === "ArrowDown") { focusedIdx = Math.min(focusedIdx+1, cards.length-1); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (e.key === "ArrowUp") { focusedIdx = Math.max(focusedIdx-1, 0); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (["a","r","d"].includes(e.key)) {
+    const id = cards[focusedIdx];
+    const map = {a:"approve", r:"reject", d:"defer"};
+    vote(id, map[e.key]);
+  }
+});
+
+document.getElementById("dlBtn").addEventListener("click", () => {
+  const decided = VOTABLE.filter(it => state[it.id] && state[it.id].decision).length;
+  const payload = {
+    sheet_id: SHEET_ID,
+    generated: "17-07-2026",
+    decided: decided,
+    items: VOTABLE.map(it => ({
+      id: it.id,
+      decision: (state[it.id] && state[it.id].decision) || null,
+      note: (state[it.id] && state[it.id].note) || ""
+    }))
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "sangram-w2-core-11candidates-visa_17.07.26_decisions.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+render();
+renderTally();
+</script>
+</body>
+</html>

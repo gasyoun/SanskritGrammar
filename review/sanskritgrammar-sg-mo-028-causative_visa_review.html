@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Виза: SG-MO-028 «Каузатив» — статья-кандидат ядра W2 — 10 items</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:760px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .chip { display:inline-block; background:#263042; border-radius:5px; padding:2px 7px; margin:2px 3px 2px 0; font-size:12px; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:44px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Виза: SG-MO-028 «Каузатив» — статья-кандидат ядра W2 — 10 items</h1>
+    <div class="sub">Generated 2026-07-17 &middot; sheet_id <code>sanskritgrammar-sg-mo-028-causative_visa</code> &middot; Авторская виза на публикацию (H1139, Opus 4.8 claude-opus-4-8[1m]). 10 карточек: ядро вывода, знаменатель, слияние с curādi, оценка ≈ 80 %, корроборация, вердикт, образование, примеры, ограничения.</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">10</span></span>
+  </div>
+</header>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="all">Все</button><button data-filter="вывод">Выводы</button><button data-filter="данные">Данные</button><button data-filter="метод">Метод</button><button data-filter="текст">Текст статьи</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="MO028-01" data-filt="вывод">
+    <header><div class="hw">Ядро вывода: каузатив НЕ размечен нативно </div></header>
+    <div class="question">Статья утверждает: в аннотации DCS <b>нет признака Caus</b> ни на одном уровне (проверено — 0 грамматических кодов со значением каузатива). Каузатив как словообразовательная категория из разметки не выделяется; единственная зацепка — омонимичная класс-X (-ay) поверхность. <i>Одобрить эту рамку как главный тезис §1?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/data/coverage_summary.json" target="_blank" rel="noopener">coverage_summary.json</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-02" data-filt="данные">
+    <header><div class="hw">Знаменатель: класс-X (-ay) бакет 55 376 токенов (10,57 %) </div></header>
+    <div class="question">Операционный универсум — финитный глагол, чья лемма несёт код класса 10 (10.P./10.Ā.) и оканчивается на -ay: <b>55 376 токенов (10,57 % [10,49–10,66]</b> из 523 721 финитного), <b>2006 лемм-типов</b>. Деноминативы (Denom., 5451) вынесены отдельно. <i>Одобрить выбор универсума и знаменателя?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/data/coverage_summary.json" target="_blank" rel="noopener">coverage_summary.json</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-03" data-filt="вывод">
+    <header><div class="hw">Слияние: каузатив ∩ первичный curādi в одном коде </div></header>
+    <div class="question">Тезис §3: класс-10 бакет смешивает собственно каузативы (kāray←kṛ, darśay←dṛś, janay←jan) с <b>первичными curādi</b>, которые не выведены из более простого корня (kathay «рассказывать», cintay «думать», pūjay «почитать», bhakṣay «есть»). Оба берут -aya-, оба кодируются классом 10; DCS их не разделяет. <i>Одобрить формулировку слияния?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-04" data-filt="метод">
+    <header><div class="hw">Оценка доли каузатива ≈ 80 % (ручная адъюдикация) </div></header>
+    <div class="question">Ручной разбор посеянной частотно-взвешенной выборки 60 лемм-типов (seed 20260717): <b>49 каузативов, 11 первичных curādi</b> → доля ложных срабатываний прочтения «класс-10 = каузатив» <b>≈ 18 %</b>. Поскольку выборка частотно-взвешена, это оценка доли curādi в токенной массе. <i>Одобрить метод и число?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/data/adjudication.json" target="_blank" rel="noopener">adjudication.json</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-05" data-filt="метод">
+    <header><div class="hw">Корроборация: механическая нижняя оценка 79,7 % </div></header>
+    <div class="question">Независимая мера: для каждой класс-10 леммы на -ay снимается -ay, обращаются guṇa/vṛддхи и -p-приставка, проверяется, есть ли база как первичный (не-10) корень. Совпало <b>79,7 % массы</b> бакета (44 117/55 376). Правило верно достаёт даже vṛддхi-каузативы (kāray←kṛ, darśay←dṛś, tāray←tṛ) и верно исключает 9/11 ручных curādi. <i>Одобрить как корроборацию ≈ 80 %?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_028_causative.py" target="_blank" rel="noopener">sg_mo_028_causative.py</a></li><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/data/coverage_summary.json" target="_blank" rel="noopener">coverage_summary.json</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-06" data-filt="текст">
+    <header><div class="hw">Названные ложные срабатывания (kathay, pūjay, bhakṣay, cintay) </div></header>
+    <div class="question">Статья прямо называет крупнейшие первичные curādi, которых аннотация не отличает от каузатива: <b>kathay</b> (2083, №1 класс-10 лемма), <b>pūjay</b> (1249), <b>bhakṣay</b> (941), <b>cintay</b> (810). <i>Одобрить перечень и трактовку (это НЕ каузативы, а образцовые ложные срабатывания)?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-07" data-filt="вывод">
+    <header><div class="hw">Вердикт: «частично восстановим, как аорист» </div></header>
+    <div class="question">§7: каузатив <b>частично восстановим</b> — класс-X поверхность даёт ≈ 80 % каузативов, но словообразовательная категория не отделима без лексической карты корней (самой лоссовой на vṛддхi/супплетиве). Та же форма вывода, что у аориста (SG-MO-018, «частично восстановим»). <i>Одобрить эту рамку вердикта?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx" target="_blank" rel="noopener">SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-08" data-filt="текст">
+    <header><div class="hw">Правило образования §4 (Уитни §§1041–1052) + -p-приставка </div></header>
+    <div class="question">§4: усиленная ступень корня (guṇa, у многих vṛддхi) + -áya-; у корней на долгий гласный вставляется -p- (sthā→sthāp-aya-, dā→dāp-aya-, jñā→jñāp-aya-). Каузативный -aya- формально совпадает с презенсом X класса curādi (cur→cor-aya-ti, где -aya- не каузативный). <i>Одобрить традиционно-порождённый слой?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-09" data-filt="текст">
+    <header><div class="hw">Примеры §5 — 4 каузатива + 1 контрастный curādi </div></header>
+    <div class="question">Таблица примеров: kārayet (kṛ), darśayet (dṛś), janayanti (jan), ājñāpayatu (jñā, -p-приставка) — каузативы; <b>kathayati</b> — первичный curādi «рассказывать», крупнейшая класс-10 лемма, образцовое ложное срабатывание. <i>Одобрить состав примеров, включая контрастный curādi пятым?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/article.manifest.json" target="_blank" rel="noopener">article.manifest.json</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+
+  <section class="card" data-id="MO028-10" data-filt="текст">
+    <header><div class="hw">Ограничения §6 + статус кандидата / checkpoint 17/19 </div></header>
+    <div class="question">§6 фиксирует 5 пределов (нет признака Caus EM5; примесь curādi 18–20 %; лексическая карта лоссовая; деноминативы отдельно; осиротевший пин). Статья помечена <b>кандидатом</b> до визы; ядро W2 = <b>17/19</b> (осталось 2: SG-WF-004 taddhita, SG-WF-009 бахуврихи — блокирован C6). <i>Одобрить ограничения и издательский статус?</i></div>
+    <div class="panel"><h4>Источники</h4><ul><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx" target="_blank" rel="noopener">index.mdx</a></li><li><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx" target="_blank" rel="noopener">SANGRAM_W2_CORE_OPENING_CHECKPOINT_2026.mdx</a></li></ul></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; ✅ Одобрить</button>
+      <button class="vote reject" data-vote="reject">&#10060; ❌ Отклонить</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="Заметка / частичная правка (иначе — отклонить)…"></textarea>
+  </section>
+</main>
+<footer class="hint"><b>Одобрить</b> — принять формулировку/число карточки как написано · <b>Отклонить</b> — оставить без изменений, не публиковать в этом виде · <b>Отложить</b> — решить позже. Поле заметки — для запроса частичной правки вместо отклонения. Keyboard: <kbd>a</kbd> ✅ Одобрить &middot; <kbd>r</kbd> ❌ Отклонить
+  &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = accept the proposed change/answer shown on the card (no separate "approve as-is" —
+  approving means agreeing as written). <b>Reject</b> = keep the current entry/answer unchanged.
+  <b>Defer</b> = not sure yet, decide later. The note field is for requesting a partial tweak instead
+  of an outright reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "sanskritgrammar-sg-mo-028-causative_visa";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["MO028-01", "MO028-02", "MO028-03", "MO028-04", "MO028-05", "MO028-06", "MO028-07", "MO028-08", "MO028-09", "MO028-10"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "2026-07-17", decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>

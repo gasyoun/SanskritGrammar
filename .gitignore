@@ -18,10 +18,6 @@ npm-debug.log*
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
 **/errata.candidates.yml
 
-# H856: interactive review-sheet artifacts (personal working artifacts, not
-# repo deliverables) — sheet HTML + voted decisions.json land here
-/review/
-
 # Book folders — track ONLY the derived digital edition (root .mdx + their *_media/).
 # Everything else stays out of git: the Word/PDF sources, the GasunsDhatu_2014 PhD-defense
 # dump (~281 MB of PDFs, .xlsm, .rar/.zip, ВАК paperwork) and the Talmud prior-conversion

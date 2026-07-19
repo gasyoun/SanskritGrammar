@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Виза: подпись корпусной цифры прекатива (DCS-2026) — H1172</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #1a1d24; --panel2: #22262f; --text: #e8e8ea;
+    --muted: #9aa0ac; --accent: #6ea8fe; --green: #3fb950; --red: #f85149;
+    --amber: #d29922; --border: #30363d;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f1f4; --text:#1a1d24; --muted:#5b616e; --border:#d8dbe0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; }
+  header { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border); padding:14px 20px; }
+  header h1 { margin:0 0 4px; font-size:1.15rem; }
+  header .sub { color:var(--muted); font-size:0.85rem; }
+  .tally { display:flex; gap:14px; margin-top:10px; font-size:0.85rem; flex-wrap:wrap; }
+  .tally span { padding:3px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--border); }
+  .tally b { font-variant-numeric: tabular-nums; }
+  main { max-width: 980px; margin: 0 auto; padding: 20px; }
+  .toolbar { display:flex; gap:10px; margin-bottom:18px; flex-wrap:wrap; align-items:center; }
+  button.dl { background:var(--accent); color:#0b0d10; border:none; border-radius:8px; padding:9px 16px; font-weight:600; cursor:pointer; }
+  button.dl:hover { opacity:0.9; }
+  .hint { color:var(--muted); font-size:0.8rem; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:18px 20px; margin-bottom:18px; transition: border-color .15s; }
+  .card.voted-approve { border-color: var(--green); }
+  .card.voted-reject { border-color: var(--red); }
+  .card.voted-defer { border-color: var(--amber); }
+  .card.focused { outline: 2px solid var(--accent); }
+  .card h2 { margin:0 0 2px; font-size:1.05rem; }
+  .card .id { color:var(--muted); font-size:0.78rem; margin-bottom:10px; }
+  .box { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.92rem; margin:10px 0; }
+  .box h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .box.content h3 { color: var(--accent); }
+  .box.cur h3 { color: var(--red); }
+  .box.prop h3 { color: var(--green); }
+  .box code, code { background: rgba(110,168,254,.12); border-radius:4px; padding:1px 5px; font-size:0.85em; }
+  .evidence { background:var(--panel2); border:1px solid var(--border); border-radius:8px; padding:10px 12px; font-size:0.88rem; margin-top:10px; }
+  .evidence h3 { margin:0 0 6px; font-size:0.78rem; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .evidence ul { margin:4px 0 0; padding-left:18px; }
+  .evidence li { margin-bottom:4px; }
+  .votebar { display:flex; gap:8px; margin-top:14px; align-items:center; flex-wrap:wrap; }
+  .votebar button { border:1px solid var(--border); background:var(--panel2); color:var(--text); border-radius:8px; padding:8px 14px; cursor:pointer; font-size:0.88rem; }
+  .votebar button.approve.active { background:var(--green); color:#06210c; border-color:var(--green); }
+  .votebar button.reject.active { background:var(--red); color:#2b0705; border-color:var(--red); }
+  .votebar button.defer.active { background:var(--amber); color:#2b1c02; border-color:var(--amber); }
+  .votebar .key { opacity:.6; font-size:0.75rem; }
+  textarea.note { width:100%; margin-top:10px; min-height:46px; background:var(--panel2); color:var(--text); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-family:inherit; font-size:0.88rem; resize:vertical; }
+  footer { text-align:center; color:var(--muted); font-size:0.78rem; padding:20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Виза: как подписывать корпусную цифру прекатива после перехода на DCS-2026 (H1172)</h1>
+  <div class="sub">Флаг из <a href="https://github.com/gasyoun/Uprava/blob/main/handoffs/H1172-Opus_SanskritGrammar_standardize-registers-dcs2026_17.07.26.md">H1172</a> (стандартизация регистров на DCS-2026, <a href="https://github.com/gasyoun/SanskritGrammar/pull/367">PR #367</a> merged) · сгенерировано 17-07-2026 (Opus 4.8, <code>claude-opus-4-8[1m]</code>) · sheet_id: <code>sanskritgrammar-precative-label-dcs2026-visa_17.07.26</code></div>
+  <div class="tally" id="tally"></div>
+</header>
+<main>
+  <div class="toolbar">
+    <button class="dl" id="dlBtn">Скачать decisions.json</button>
+    <span class="hint">клавиши: a=approve · r=reject · d=defer · ↑/↓ = следующая карточка (кликните карточку, чтобы сфокусировать)</span>
+  </div>
+  <div id="items"></div>
+</main>
+<footer>Голоса сохраняются в localStorage браузера (ключ = sheet_id). Экспортируйте decisions.json после прохода и положите рядом с листом (<code>review/…_decisions.json</code>) — follow-up-сессия применит его.</footer>
+
+<script>
+const SHEET_ID = "sanskritgrammar-precative-label-dcs2026-visa_17.07.26";
+const ITEMS = [
+  {
+    id: "P1",
+    title: "Политика подписи (зонтичное решение)",
+    content: "<b>Суть.</b> DCS-2021 имел отдельный код «прекатив-медий» = <b>221</b>. DCS-2026 (<code>dcs_full.sqlite</code>) даёт только цифру ВСЕГО наклонения <code>feat_mood='Prec'</code> = <b>577</b> и НЕ размечает пада (проверено: у всех 577 <code>feat_voice=None</code>), поэтому изолировать медий/Ātmanepada нельзя. Вердикт «крайне редко» держится при любом варианте (даже вся масса наклонения = 0,11 %). <b>Три варианта:</b> <b>A</b> — везде заменить «медий/Ātmanepada» → «прекатив (всё наклонение)»; <b>B (рекомендуется)</b> — сохранить привязку к медий-специфичному тезису книги, но подписать 577 как <b>верхнюю границу</b> медий-подмножества (DCS-2026 не размечает пада; DCS-2021 медий-код = 221); <b>C</b> — вернуть медий-цифру DCS-2021 = 221 с версия-тегом, как описательное будущее 1 290. <b>Approve</b> = принять <b>B</b> как общую политику (карточки P2–P5 приводятся к ней); <b>Reject</b> = выбрать A или C (укажите в заметке); <b>Defer</b>.",
+    evidence: [
+      "Проверка: <code>SELECT feat_voice, COUNT(*) FROM token WHERE upos='VERB' AND feat_verbform IS NULL AND feat_mood='Prec' GROUP BY feat_voice</code> → <code>(None, 577)</code> — пада не размечена, медий не выделяется.",
+      "Вердикт не зависит от варианта: и медий-подмножество (≤577), и всё наклонение (577) дают 0,11 % — «крайне редко» подтверждается тем более.",
+      "Прецедент — описательное будущее 1 290: цифра DCS-2021 без чистого эквивалента в DCS-2026, оставлена с версия-тегом (тот же класс проблемы)."
+    ]
+  },
+  {
+    id: "P2",
+    title: "HK-39 · русское mg_footnote (Кочергина)",
+    content: "Единственная незачищенная русская подпись, где 577 всё ещё названо «Ātmanepada».",
+    cur: "Прекатив Ātmanepada — 0,11% глагольных словоформ DCS-2026 (577 из 523 738). «Крайне редко» подтверждается.",
+    prop: "Прекатив (всё наклонение) — 0,11% глагольных словоформ DCS-2026 (577 из 523 738; DCS-2026 не размечает пада, поэтому 577 — верхняя граница для Ātmanepada; DCS-2021 медий-код = 221). «Крайне редко» подтверждается тем более.",
+    evidence: [
+      "Тезис Кочергины (claim_ru, L735) — именно про Ātmanepada-прекатив; цифра же теперь всего наклонения.",
+      "Английское поле number (L740) уже несёт этот уточнитель — для единообразия то же по-русски."
+    ]
+  },
+  {
+    id: "P3",
+    title: "OCH-3 · поле number (Зализняк, Очерк)",
+    content: "Двойная проблема: ярлык «Benedictive Medium» на цифре 577 И устаревший тег «DCS-2021» на цифре, которая теперь DCS-2026.",
+    cur: "577 tokens = 0.11% of 523,738 verbal tokens ('Benedictive Medium', DCS-2021 — reused verbatim from KocherginaUchebnik_1998/claims_dcs_stats.json HK39_precative_middle)",
+    prop: "577 tokens = 0.11% of 523,738 finite verbal tokens (DCS-2026 whole precative mood; pada untagged, so 577 upper-bounds the Ātmanepada subset; DCS-2021 medium-only code = 221 — cf. KocherginaUchebnik_1998 HK-39)",
+    evidence: [
+      "577 — цифра DCS-2026 (523 738 — знаменатель DCS-2026), поэтому тег «DCS-2021» рядом с ней ошибочен.",
+      "consistency-check не ловит эту строку (нет паттерна знаменателя), так что правка ручная."
+    ]
+  },
+  {
+    id: "P4",
+    title: "OCH-30 · поле number (Зализняк, Очерк)",
+    content: "Ярлык «benedictive-medium» на 577 в сводке трёх редких наклонений.",
+    cur: "benedictive-medium 577 + injunctive 5,258 + conditional 340 = 1.18% of verbal",
+    prop: "precative (whole mood, pada untagged) 577 + injunctive 5,258 + conditional 340 = 1.18% of verbal",
+    evidence: [
+      "Сумма 1,18 % и вывод «редки против большой тройки» не меняются — правка только ярлыка.",
+      "Инъюнктив 5 258 и кондиционалис 340 уже DCS-2026 и медий-нейтральны — трогать не нужно."
+    ]
+  },
+  {
+    id: "P5",
+    title: "OCH-30 · русское mg_footnote (Зализняк, Очерк)",
+    content: "«(мед.)» при 577 — та же неточность, что P4, по-русски.",
+    cur: "против прекатива (мед.) 577, инъюнктива 5 258 и кондиционалиса 340, вместе 1,18 %",
+    prop: "против прекатива (всё наклонение, пада не размечена) 577, инъюнктива 5 258 и кондиционалиса 340, вместе 1,18 %",
+    evidence: [
+      "Параллельно P4; вердикт «сравнительно редко» держится."
+    ]
+  },
+  {
+    id: "P6",
+    title: "Уже применённые подписи — подтвердить формулировку",
+    content: "Три места уже несут уточнитель в стиле <b>B</b> (577 = всё наклонение, пада не размечена, DCS-2021 = 221): <b>HK-39 английское number</b> (L740), <b>Bühler HB-24</b> (L140, «DCS-2026 precative-mood total, pada untagged»), <b>Bühler mg 5646</b> («бенедиктив — 577 … всего в наклонении, пада не размечена»). <b>Approve</b> = формулировка годится как эталон, и P2–P5 приводятся к ней; <b>Reject</b> = переписать (укажите как в заметке); <b>Defer</b>.",
+    evidence: [
+      "Эти три — образец, по которому предложены правки P2–P5; approve здесь = единый стиль по всем шести книгам.",
+      "Ярлык-слово «Medium» в Bühler HB-24 остаётся, но тут же снят инлайн-уточнителем — при желании сгладить укажите в заметке."
+    ]
+  },
+  {
+    id: "P7",
+    title: "Формулировка тезиса/теста — оставить медий-специфичной?",
+    content: "Сами тезисы книг (HK-39 <code>claim_ru</code> «Прекатив Ātmanepada … крайне редко»; OCH-3 про med.-прекатив) и поля <code>falsifiable_as</code> («is the middle (Ātmanepada) precative … extremely rare») медий-специфичны — и это ВЕРНО: они цитируют/оформляют тезис источника. Меняется только подпись КОРПУСНОЙ цифры (P2–P5). <b>Approve</b> = оставить медий-формулировку тезиса и теста как есть; <b>Reject</b> = переформулировать (заметка); <b>Defer</b>.",
+    evidence: [
+      "Правило: тезис фиксирует, что утверждает КНИГА (медий); подпись фиксирует, что показывает КОРПУС (всё наклонение — верхняя граница). Смешивать не следует.",
+      "При approve тесты остаются медий-специфичными, но evidence честно помечен как верхняя граница."
+    ]
+  }
+];
+
+const state = JSON.parse(localStorage.getItem("reviewsheet:" + SHEET_ID) || "{}");
+function save() { localStorage.setItem("reviewsheet:" + SHEET_ID, JSON.stringify(state)); renderTally(); }
+
+function renderTally() {
+  const counts = {approve:0, reject:0, defer:0, unvoted:0};
+  ITEMS.forEach(it => {
+    const d = state[it.id] && state[it.id].decision;
+    if (d === "approve") counts.approve++;
+    else if (d === "reject") counts.reject++;
+    else if (d === "defer") counts.defer++;
+    else counts.unvoted++;
+  });
+  document.getElementById("tally").innerHTML =
+    "<span>Всего: <b>" + ITEMS.length + "</b></span>" +
+    "<span>✅ Approve: <b>" + counts.approve + "</b></span>" +
+    "<span>❌ Reject: <b>" + counts.reject + "</b></span>" +
+    "<span>⏸ Defer: <b>" + counts.defer + "</b></span>" +
+    "<span>⬜ Не голосовано: <b>" + counts.unvoted + "</b></span>";
+}
+
+function vote(id, decision) {
+  state[id] = state[id] || {};
+  state[id].decision = (state[id].decision === decision) ? null : decision;
+  save();
+  updateCard(id);
+}
+
+function noteChange(id, val) {
+  state[id] = state[id] || {};
+  state[id].note = val;
+  save();
+}
+
+function updateCard(id) {
+  const card = document.getElementById("card-" + id);
+  card.classList.remove("voted-approve", "voted-reject", "voted-defer");
+  const d = state[id] && state[id].decision;
+  if (d) card.classList.add("voted-" + d);
+  ["approve","reject","defer"].forEach(k => {
+    document.getElementById("btn-" + id + "-" + k).classList.toggle("active", d === k);
+  });
+}
+
+function render() {
+  const wrap = document.getElementById("items");
+  wrap.innerHTML = "";
+  ITEMS.forEach((it, idx) => {
+    const div = document.createElement("div");
+    div.className = "card";
+    div.id = "card-" + it.id;
+    div.tabIndex = 0;
+    let diff = "";
+    if (it.cur) diff += '<div class="box cur"><h3>Сейчас</h3>' + it.cur + '</div>';
+    if (it.prop) diff += '<div class="box prop"><h3>Предлагается (вариант B)</h3>' + it.prop + '</div>';
+    div.innerHTML =
+      "<h2>" + it.id + " · " + it.title + "</h2>" +
+      '<div class="id">#' + (idx+1) + " из " + ITEMS.length + "</div>" +
+      '<div class="box content"><h3>Контекст</h3>' + it.content + "</div>" +
+      diff +
+      '<div class="evidence"><h3>Основание</h3><ul>' + it.evidence.map(e => "<li>" + e + "</li>").join("") + "</ul></div>" +
+      '<div class="votebar">' +
+        '<button class="approve" id="btn-' + it.id + '-approve" onclick="vote(\'' + it.id + '\',\'approve\')">✅ Approve <span class="key">(a)</span></button>' +
+        '<button class="reject" id="btn-' + it.id + '-reject" onclick="vote(\'' + it.id + '\',\'reject\')">❌ Reject <span class="key">(r)</span></button>' +
+        '<button class="defer" id="btn-' + it.id + '-defer" onclick="vote(\'' + it.id + '\',\'defer\')">⏸ Defer <span class="key">(d)</span></button>' +
+      "</div>" +
+      '<textarea class="note" placeholder="Заметка (напр. «взять вариант A» / уточнить формулировку)…" oninput="noteChange(\'' + it.id + '\', this.value)">' + ((state[it.id] && state[it.id].note) || "") + "</textarea>";
+    wrap.appendChild(div);
+    updateCard(it.id);
+  });
+}
+
+let focusedIdx = 0;
+document.addEventListener("keydown", (e) => {
+  const active = document.activeElement;
+  if (active && active.tagName === "TEXTAREA") return;
+  const cards = ITEMS.map(it => it.id);
+  if (e.key === "ArrowDown") { focusedIdx = Math.min(focusedIdx+1, cards.length-1); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (e.key === "ArrowUp") { focusedIdx = Math.max(focusedIdx-1, 0); document.getElementById("card-"+cards[focusedIdx]).scrollIntoView({behavior:"smooth", block:"center"}); document.getElementById("card-"+cards[focusedIdx]).focus(); }
+  if (["a","r","d"].includes(e.key)) {
+    const id = cards[focusedIdx];
+    const map = {a:"approve", r:"reject", d:"defer"};
+    vote(id, map[e.key]);
+  }
+});
+
+document.getElementById("dlBtn").addEventListener("click", () => {
+  const decided = ITEMS.filter(it => state[it.id] && state[it.id].decision).length;
+  const payload = {
+    sheet_id: SHEET_ID,
+    generated: "17-07-2026",
+    decided: decided,
+    items: ITEMS.map(it => ({
+      id: it.id,
+      decision: (state[it.id] && state[it.id].decision) || null,
+      note: (state[it.id] && state[it.id].note) || ""
+    }))
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], {type: "application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = SHEET_ID + "_decisions.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+
+render();
+renderTally();
+</script>
+</body>
+</html>

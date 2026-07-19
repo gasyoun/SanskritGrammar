@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Методичка к Апте v1 (H1090) — виза автора — 9 items</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --text:#e6e6e6; --muted:#9aa0aa;
+          --accent:#5b8cff; --ok:#3fb950; --bad:#f85149; --defer:#d29922; --border:#2a2f3a; }
+  * { box-sizing: border-box; }
+  body { background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,sans-serif;
+         margin:0; padding:0 0 120px 0; }
+  header.top { position:sticky; top:0; z-index:10; background:var(--panel); border-bottom:1px solid var(--border);
+               padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+  header.top h1 { font-size:16px; margin:0; }
+  header.top .sub { color:var(--muted); font-size:12px; max-width:820px; }
+  .tally { display:flex; gap:14px; font-size:13px; }
+  .tally span.count { font-weight:700; }
+  .tally .approve { color:var(--ok); } .tally .reject { color:var(--bad); }
+  .tally .defer { color:var(--defer); } .tally .unvoted { color:var(--muted); }
+  .toolbar { padding:10px 20px; display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+  button.dl { background:var(--accent); color:#fff; border:none; padding:8px 14px; border-radius:6px;
+              cursor:pointer; font-size:13px; }
+  button.dl:hover { opacity:.9; }
+  .filterbar { display:flex; gap:6px; flex-wrap:wrap; }
+  .filterbar button { background:var(--panel2); border:1px solid var(--border); color:var(--text);
+                       padding:6px 10px; border-radius:14px; font-size:12px; cursor:pointer; }
+  .filterbar button.active { border-color:var(--accent); color:var(--accent); }
+  main { max-width:980px; margin:0 auto; padding:10px 20px; }
+  .card { background:var(--panel); border:1px solid var(--border); border-radius:10px; padding:16px;
+          margin-bottom:16px; }
+  .card.voted-approve { border-left:4px solid var(--ok); }
+  .card.voted-reject { border-left:4px solid var(--bad); }
+  .card.voted-defer { border-left:4px solid var(--defer); }
+  .card header { display:flex; justify-content:space-between; align-items:baseline; }
+  .card .hw { font-size:18px; font-weight:700; }
+  .badge { font-size:11px; background:var(--panel2); padding:2px 8px; border-radius:10px;
+           margin-left:8px; color:var(--muted); }
+  .question { margin:8px 0 12px; font-size:14px; }
+  .panel { background:var(--panel2); border-radius:8px; padding:10px 12px; font-size:13px; margin-bottom:10px; }
+  .panel h4 { margin:0 0 6px; font-size:11px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); }
+  .panel pre { white-space:pre-wrap; word-break:break-word; margin:0; font-size:12px; line-height:1.45; }
+  .verdict { display:inline-block; font-size:11px; font-weight:700; border-radius:5px; padding:1px 7px; margin-right:5px; }
+  .v-over { background:#b26a00; color:#fff; } .v-false { background:#a11; color:#fff; }
+  .v-unt { background:#3a3f4a; color:#cfd3da; } .v-true { background:#1f7a3d; color:#fff; }
+  .muted { color:var(--muted); font-style:italic; }
+  .controls { display:flex; align-items:center; gap:8px; margin-top:4px; }
+  button.vote { border:1px solid var(--border); background:var(--panel2); color:var(--text);
+                padding:7px 12px; border-radius:6px; cursor:pointer; font-size:13px; }
+  button.vote.approve.active { background:var(--ok); border-color:var(--ok); color:#04240b; }
+  button.vote.reject.active { background:var(--bad); border-color:var(--bad); color:#2a0a08; }
+  button.vote.defer.active { background:var(--defer); border-color:var(--defer); color:#2a1d02; }
+  .vote-state { margin-left:6px; font-size:12px; color:var(--muted); }
+  textarea.note { width:100%; margin-top:10px; min-height:44px; background:#11141a; color:var(--text);
+                  border:1px solid var(--border); border-radius:6px; padding:8px; font-size:13px;
+                  font-family:inherit; resize:vertical; }
+  a { color:var(--accent); }
+  footer.hint { max-width:980px; margin:20px auto; padding:0 20px; color:var(--muted); font-size:12px; }
+  kbd { background:#263042; border-radius:4px; padding:1px 5px; font-size:11px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Методичка к Апте v1 (H1090) — виза автора — 9 items</h1>
+    <div class="sub">Generated 17-07-2026 &middot; sheet_id <code>sanskritgrammar-metodichka-apte-v1_17.07.26</code> &middot; Визовый пакет раздела I методички-компаньона к Apte, <i>Guide to Sanskrit Composition</i> (1885). Approve = заметка идёт в печатную рукопись как написано; Reject = снять/переписать; Defer = решить позже. Все числа — из <code>claims.yml</code> (APT-1..APT-39); текст Апте (перевод Лихушиной 2021) цитируется минимально.</div>
+  </div>
+  <div class="tally" id="tally">
+    <span class="approve">&#9989; <span class="count" id="c-approve">0</span></span>
+    <span class="reject">&#10060; <span class="count" id="c-reject">0</span></span>
+    <span class="defer">&#9208; <span class="count" id="c-defer">0</span></span>
+    <span class="unvoted">&#9711; <span class="count" id="c-unvoted">9</span></span>
+  </div>
+</header>
+<div class="toolbar">
+  <button class="dl" id="downloadBtn">Download decisions.json</button><button class="dl" id="saveBtn" style="display:none;margin-left:8px">Save to folder…</button>
+  <div class="filterbar" id="filterbar"><button data-filter="all" class="active">all</button><button data-filter="frame">Рамка</button><button data-filter="zan">Занятия</button><button data-filter="pril">Приложение</button><button data-filter="unvoted">unvoted only</button></div>
+</div>
+<main id="cards">
+
+  <section class="card" data-id="razdel-1-frame" data-filt="frame">
+    <header><div class="hw">Раздел I — рамка + тезис</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Что на визе</h4><p>Вводный тезис методички: Апте <b>надёжен в том, что́ слово ЗНАЧИТ</b> (словарь частиц), но <b>завышает РАСПРЕДЕЛЕНИЕ, УПРАВЛЕНИЕ и АСПЕКТ</b>. Три вида сбоя + формат заметок «У Апте / Что показывают корпус и Уитни / Учащемуся». Правовая рамка: англ. 1885 — public domain, перевод Лихушиной цитируется минимально.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md" target="_blank">реестр</a></p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-03" data-filt="zan">
+    <header><div class="hw">Занятие 3 — движение → винительный (APT-5/23)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-over">OVERSTATED</span>«Все глаголы движения → винительный». Винительный цели — умолчание (Уитни §274), но дательный (§285d) и местный цели тоже есть. Корпус: винительный цели <b>85,9 %</b> против неаккузативной цели <b>14,1 %</b> (n=873). Учащемуся: правило на 86 %, не закон; grāmāya gacchati — не ошибка.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-5, APT-23</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-07" data-filt="zan">
+    <header><div class="hw">Занятие 7 — ruc + гнев → дательный (APT-20/21)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-true">TRUE</span><b>ruc «нравиться» → дательный</b> — подтверждено: дательный обогащён <b>в 3,06×</b> над фоном (n=786); по ведийскому срезу правило выглядело завышенным — классический корпус его оправдал (умолчание зависит от эпохи). <span class="verdict v-over">OVERSTATED</span><b>гнев (krudh…) → дательный</b> — панинийское правило (1.4.37) как частотность не держится: подъём <b>0,91×</b> (n=2 798), лидирует винительный. Урок о зазоре предписание/описание.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-20, APT-21</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-09" data-filt="zan">
+    <header><div class="hw">Занятие 9 — бросать / любить → местный (APT-18/22)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-over">OVERSTATED</span><b>kṣip, muc «бросать» → местный цели</b>: местный лишь <b>3 из 142</b> (2,1 %), господствует винительный (muc = «освобождать»). <span class="verdict v-over">OVERSTATED</span><b>snih «любить» → местный</b>: ведущий, но обогащён слабо (<b>1,08×</b>, n=662) — направление верное, сила преувеличена.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-18, APT-22</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-10" data-filt="zan">
+    <header><div class="hw">Занятие 10 — власть / память → родительный (APT-19)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-over">OVERSTATED</span>«īś, smṛ и др. → родительный объекта». Оба падежа реальны (smṛ род. ИЛИ вин., Уитни §297c), но в корпусе винительный впереди: родительный <b>30 %</b> против винительного <b>41 %</b> (n=142). Честно: «родительный или винительный, винительный если что чаще».</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-19</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-19" data-filt="zan">
+    <header><div class="hw">Занятие 19 — аорист «длительность» (APT-31, единственный FALSE)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-false">FALSE</span>«Аорист выражает длительность; имперфект не может» — единственная фактическая ошибка книги. Уитни §§927-929: классический аорист равнозначен имперфекту/перфекту (§927), старый аорист <b>завершителен</b> — «завершённое относительно настоящего» (§928) — противоположность длительности. Сверен англ. оригинал §210 (ошибка самого Апте, не перевода) + самопротиворечие §207 («беспорядочно»). Учащемуся: длительное прошлое — имперфект/презенс; аорист редок (0,31 %).</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-31</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-22" data-filt="zan">
+    <header><div class="hw">Занятие 22 — частица uta (APT-12)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-over">OVERSTATED</span>Значение uta («или», в паре с kim) — верно. Но Апте ставит её в ряд со строго постпозитивными (ca, tu, hi), а корпус: uta в начале предложения <b>23,66 %</b> (62/262) против &lt;1 % у ca/tu/ced/iva/eva и 0,77 % у контрольной hi. Учащемуся: пользоваться по смыслу, но не как постпозитивной.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-12</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="zan-29" data-filt="zan">
+    <header><div class="hw">Занятия 29–30 — залог (APT-28 / APT-30)</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Заметка</h4><p><span class="verdict v-over">OVERSTATED</span><b>krīḍ «обычно Parasmaipada»</b> — почти поровну: <b>57,6 % P / 42,4 % Ā</b> (n=151), а не с явным перевесом. <span class="verdict v-unt">UNTESTABLE</span><b>тонкие правила «приставка + значение»</b> (~15 штук) непроверяемы: DCS не размечает ни P/Ā (только пассив), ни семантическое условие. Учащемуся: корневой залог учить как факт (ram→Ā 95 %, han→P 90 %), krīḍ — «оба».</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-28, APT-30, APT-26/27</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+
+  <section class="card" data-id="prilozhenie" data-filt="pril">
+    <header><div class="hw">Приложение — где Апте образцово надёжен</div></header>
+    <div class="question">Годится в печатную рукопись как написано? (заметка — для точечной правки)</div>
+    <div class="panel"><h4>Что на визе</h4><p>Таблица сильных сторон (контраст к помеченным местам): APT-2 (все прилагательные согласуются — TRUE-универсал, класс исключений пуст); APT-8 (энклитики никогда не в начале — и, в отличие от Кочергиной HK-10, Апте ограничивает правило именно энклитиками); APT-6 (описательное будущее «намного реже» — 14:1, лучше калибровано, чем у Бюлера); APT-16/17 (страх/отвращение → аблатив, 5,52×/3,96×); APT-32..39 (весь словарь частиц по Уитни — все восемь TRUE). Вывод: доверять как словарю и своду умолчаний; проверять по числу — управление и частотность, и одно утверждение об аспекте.</p></div>
+    <div class="panel"><h4>Ссылки</h4><p><a href="https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md" target="_blank">Раздел I</a> · APT-2, APT-8, APT-6, APT-16/17, APT-32..39</p></div>
+    <div class="controls">
+      <button class="vote approve" data-vote="approve">&#9989; Approve</button>
+      <button class="vote reject" data-vote="reject">&#10060; Reject</button>
+      <button class="vote defer" data-vote="defer">&#9208; Defer</button>
+      <span class="vote-state">unvoted</span>
+    </div>
+    <textarea class="note" placeholder="free-text note (optional)"></textarea>
+  </section>
+</main>
+<footer class="hint">H1090 · Opus 4.8 (claude-opus-4-8[1m]) · SanskritGrammar/ApteSyntax_1885 Keyboard: <kbd>a</kbd> Approve
+  &middot; <kbd>r</kbd> Reject &middot; <kbd>d</kbd> defer &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> next/prev. Votes autosave to
+  this browser's localStorage; click "Download decisions.json" when done (unvoted items export with
+  decision:null).</footer>
+<div class="legend" style="max-width:980px;margin:0 auto 20px;padding:0 20px;color:var(--muted);font-size:12px">
+  <b>Approve</b> = заметка идёт в печать как написана. <b>Reject</b> = снять или переписать (укажите в заметке).
+  <b>Defer</b> = решить позже. Поле заметки — для частичной правки вместо полного reject.
+</div>
+<script>
+(function () {
+  var SHEET_ID = "sanskritgrammar-metodichka-apte-v1_17.07.26";
+  var STORE_KEY = 'review-sheet:' + SHEET_ID;
+  var ids = ["razdel-1-frame", "zan-03", "zan-07", "zan-09", "zan-10", "zan-19", "zan-22", "zan-29", "prilozhenie"];
+  var state = {};
+  try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+  function tally() {
+    var c = { approve:0, reject:0, defer:0 };
+    ids.forEach(function (id) { var v = state[id] && state[id].decision; if (v && c.hasOwnProperty(v)) c[v]++; });
+    document.getElementById('c-approve').textContent = c.approve;
+    document.getElementById('c-reject').textContent = c.reject;
+    document.getElementById('c-defer').textContent = c.defer;
+    document.getElementById('c-unvoted').textContent = ids.length - c.approve - c.reject - c.defer;
+  }
+  function applyCardUI(card) {
+    var id = card.getAttribute('data-id'); var rec = state[id] || {};
+    card.classList.remove('voted-approve','voted-reject','voted-defer');
+    card.querySelectorAll('button.vote').forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-vote') === rec.decision); });
+    card.querySelector('.vote-state').textContent = rec.decision ? rec.decision : 'unvoted';
+    if (rec.decision) card.classList.add('voted-' + rec.decision);
+    var ta = card.querySelector('textarea.note'); if (rec.note && !ta.value) ta.value = rec.note;
+  }
+  function save() { localStorage.setItem(STORE_KEY, JSON.stringify(state)); tally(); }
+  function vote(id, d) { state[id] = state[id] || {}; state[id].decision = d; save(); }
+  function noteChange(id, t) { state[id] = state[id] || {}; state[id].note = t; save(); }
+  document.querySelectorAll('.card').forEach(function (card) {
+    var id = card.getAttribute('data-id'); applyCardUI(card);
+    card.querySelectorAll('button.vote').forEach(function (btn) {
+      btn.addEventListener('click', function () { vote(id, btn.getAttribute('data-vote')); applyCardUI(card); });
+    });
+    var ta = card.querySelector('textarea.note'); ta.addEventListener('input', function () { noteChange(id, ta.value); });
+  });
+  tally();
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    var payload = { sheet_id: SHEET_ID, generated: "17-07-2026", decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type:'application/json' });
+    var url = URL.createObjectURL(blob); var a = document.createElement('a');
+    a.href = url; a.download = SHEET_ID + '_decisions.json'; document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+  var filterbar = document.getElementById('filterbar');
+  filterbar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button[data-filter]'); if (!btn) return;
+    filterbar.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
+    btn.classList.add('active'); var f = btn.getAttribute('data-filter');
+    document.querySelectorAll('.card').forEach(function (card) {
+      var show = true;
+      if (f === 'unvoted') { var id = card.getAttribute('data-id'); show = !(state[id] && state[id].decision); }
+      else if (f !== 'all') { show = card.getAttribute('data-filt') === f; }
+      card.style.display = show ? '' : 'none';
+    });
+  });
+  var cardsEl = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var activeIdx = 0;
+  function visibleCards() { return cardsEl.filter(function (c) { return c.style.display !== 'none'; }); }
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'TEXTAREA') return;
+    var vis = visibleCards(); if (!vis.length) return;
+    if (activeIdx >= vis.length) activeIdx = vis.length - 1;
+    var card = vis[activeIdx]; var id = card.getAttribute('data-id');
+    if (e.key === 'a') { vote(id, 'approve'); applyCardUI(card); }
+    else if (e.key === 'r') { vote(id, 'reject'); applyCardUI(card); }
+    else if (e.key === 'd') { vote(id, 'defer'); applyCardUI(card); }
+    else if (e.key === 'ArrowDown') { activeIdx = Math.min(activeIdx + 1, vis.length - 1); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else if (e.key === 'ArrowUp') { activeIdx = Math.max(activeIdx - 1, 0); vis[activeIdx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    else return;
+    e.preventDefault();
+  });
+
+  var saveHandle = null, saveTimer = null;
+  function exportPayload() {
+    var decided = ids.filter(function (id) { return state[id] && state[id].decision; }).length;
+    return JSON.stringify({ sheet_id: SHEET_ID, generated: new Date().toISOString(), decided: decided,
+      items: ids.map(function (id) { var rec = state[id] || {}; return { id: id, decision: rec.decision || null, note: rec.note || '' }; }) }, null, 2);
+  }
+  function scheduleAutosave() {
+    if (!saveHandle) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      saveHandle.createWritable().then(function (w) {
+        w.write(exportPayload()).then(function () { w.close(); });
+      }).catch(function () {});
+    }, 1000);
+  }
+  var _origSave = save;
+  save = function () { _origSave(); scheduleAutosave(); };
+  if (window.showSaveFilePicker) {
+    var saveBtn = document.getElementById('saveBtn');
+    saveBtn.style.display = '';
+    saveBtn.addEventListener('click', function () {
+      window.showSaveFilePicker({suggestedName: SHEET_ID + '_decisions.json'}).then(function (h) {
+        saveHandle = h; scheduleAutosave();
+      }).catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
