@@ -29,9 +29,8 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`), MG lead 20-07-2026.
     `Palsule-ConcordDhatu1955-*.pdf`, `Palsule-DhatuConcordance-1961-WithMyComm.pdf`, + Usha's derived
     `Palsule-ForPh.D.xlsx` / `Palsule-Dhatus-ForPhD*`), and **_Bhāratīya Upasargārtha-Candrikā_** (1976;
     `Bharatiya-UpasargarthaChandrika-P1-1976.pdf`) — **rights held by MG**; usable with attribution.
-  - Any *other* scans in the trove not named above (e.g. `dhatukarika.pdf`, `itviveka.pdf`, generic
-    Dhātupāṭha/Aṣṭādhyāyī edition scans) still default to consult-only until their rights are checked —
-    run [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) before publishing those.
+  - The other scans in the trove (`dhatukarika.pdf`, `itviveka.pdf`) are **also rights-held by MG**
+    (confirmed 20-07-2026) — usable with attribution. Nothing in the trove is now consult-only.
 
 ## Tier A — directly reusable structured data (machine-readable, no OCR)
 
@@ -62,11 +61,13 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`), MG lead 20-07-2026.
 - `Ch-0…Ch-4`, `Ch-5a-Conclusion`, `Ch-End-Parishishtam` `.docx` — full thesis text (Śābdabodha
   method, dhātu-vistāra, kāraka-vistāra, NLP method).
 
-## Tier C — third-party reference (rights-restricted, do not republish)
+## Tier C — third-party works (all cleared — rights held / public-domain)
 
-Abhyankar 1961 (`KVAbhyankar-GramDic-1961.pdf`, `.djvu`), Krishnacharya 1924, Palsule 1955/1961
-(`Palsule-DhatuConcordance-1961-WithMyComm.pdf`, `Palsule-ConcordDhatu1955-02 (OCR).pdf`),
-Bhāratīya Upasargārtha-Candrikā 1976, `dhatukarika.pdf`, `itviveka.pdf`. Consult only.
+Corrected 20-07-2026 (MG holds the rights, or PD by age): Abhyankar 1961 (`KVAbhyankar-GramDic-1961.pdf`,
+`.djvu`), Krishnacharya 1924 (PD by age), Palsule 1955/1961 (`Palsule-DhatuConcordance-1961-WithMyComm.pdf`,
+`Palsule-ConcordDhatu1955-02 (OCR).pdf`), Bhāratīya Upasargārtha-Candrikā 1976, `dhatukarika.pdf`,
+`itviveka.pdf` — **all usable with attribution**. (The earlier "rights-restricted, do not republish"
+was a conservative default, not a determination.)
 
 ## Highest-leverage next steps
 
