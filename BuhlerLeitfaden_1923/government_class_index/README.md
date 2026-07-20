@@ -182,7 +182,9 @@ Requires sibling clones: [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots)
   direct government arc with a single (non-defect) contradiction, so a consumer can now filter
   frames by `verdict` in
   [government_corpus_verdicts.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/government_corpus_verdicts.tsv).
-  Registering the verdicts as a public kosha dataset touches DCS licensing and is deferred to
-  `/publish-safety-check` (H1372 follow-up), per the publication fence.
+  The verdicts are registered as a **public** kosha dataset (id `scherzl-government-dcs-adjudication`
+  in [kosha datasets.json](https://github.com/gasyoun/kosha/blob/main/data/manifest/datasets.json)) —
+  cleared through `/publish-safety-check`, which ruled GO because DCS is CC BY 4.0 (attribution only)
+  and the verdicts are aggregate counts, not DCS text.
 
 _Dr. Mārcis Gasūns_
