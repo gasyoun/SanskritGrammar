@@ -35,6 +35,7 @@ verb_parsed = Counter()
 dep_gov = defaultdict(Counter)      # lemma -> case -> count
 dep_deprel = defaultdict(Counter)   # lemma -> deprel -> count
 cooc = defaultdict(Counter)         # lemma -> case -> sentence-count
+sent_with_case = Counter()          # case -> # sentences containing >=1 nominal in that case (base rate)
 
 n_files = 0
 n_sent = 0
@@ -56,6 +57,8 @@ def flush_sentence(tokens):
         n_sent_parsed += 1
     # cases present in this sentence (for co-occurrence)
     cases_here = {t["case"] for t in tokens if t["case"] in REAL_CASES}
+    for c in cases_here:
+        sent_with_case[c] += 1
     for t in tokens:
         if t["upos"] != "VERB":
             continue
@@ -114,6 +117,7 @@ out = {
         "n_files": n_files, "n_sent": n_sent, "n_sent_parsed": n_sent_parsed,
         "n_tok": n_tok, "n_verb_lemmas": len(verb_freq),
     },
+    "sent_with_case": dict(sent_with_case),
     "verb_freq": dict(verb_freq),
     "verb_parsed": dict(verb_parsed),
     "dep_gov": {k: dict(v) for k, v in dep_gov.items()},
