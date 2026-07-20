@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+- **Sangram consolidation ledger — 11 evidence-complete rows dispositioned, post-H1316 drift cleared (H1374, Sonnet 5 `claude-sonnet-5`).** [`sangram/editorial/data/consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json): SG-SE-009 (voice) had `visa_evidence.status="approved"` (12/12 w2-core sheet, card `V`) but its `article.manifest.json` was never flipped to `published` — [H1316](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1316-Opus_SanskritGrammar_apply-voted-precative-w2core-visas_19.07.26.md) (PR #472) applied only 10 of the 12 approved cards, silently dropping `V`. Applied the missed publication (manifest revision + candidate banner stripped from [`sangram/articles/voice/index.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/voice/index.mdx)), then set `disposition="published"` + `source_links` on all 11 rows whose evidence chain is now complete (`revision_state="published"` + `visa_evidence.status="approved"`): SG-MO-026/018/012/016/027/010/023, SG-WF-006/001, SG-MO-006, SG-SE-009. The remaining 15 baseline rows stay `disposition="unknown"` (visa `not_submitted`) — the freeze ([H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)) stays active until every row clears. `python scripts/consolidation_ledger_refresh.py --check`, `article_validate.py --all` (29/29 pass), `pytest` (126/126 pass), `npm run build` all green.
+
 ## [0.103.0] - 2026-07-20
 
 ### Fixed

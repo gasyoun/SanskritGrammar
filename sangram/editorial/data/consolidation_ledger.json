@@ -135,9 +135,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-019",
@@ -194,9 +196,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-WF-009",
@@ -278,9 +282,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-012",
@@ -311,9 +317,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-006",
@@ -336,9 +344,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-024",
@@ -422,9 +432,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-025",
@@ -645,9 +657,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-SE-006",
@@ -758,9 +772,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-MO-023",
@@ -785,15 +801,17 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     },
     {
       "toc_ref": "SG-SE-009",
       "art_id": "art:voice",
       "path": "sangram/articles/voice/article.manifest.json",
-      "revision_state": "candidate",
+      "revision_state": "published",
       "rederivation_evidence": {
         "status": "not_audited",
         "confirmed": 0,
@@ -810,9 +828,12 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472",
+        "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1374-Sonnet_SanskritGrammar_consolidation-ledger-disposition-evidence-complete-rows_20.07.26.md"
+      ]
     },
     {
       "toc_ref": "SG-WF-001",
@@ -841,9 +862,11 @@
         "article_validate": "pass",
         "checked_at": "2026-07-20"
       },
-      "disposition": "unknown",
+      "disposition": "published",
       "blocking_note": "",
-      "source_links": []
+      "source_links": [
+        "https://github.com/gasyoun/SanskritGrammar/pull/472"
+      ]
     }
   ]
 }
