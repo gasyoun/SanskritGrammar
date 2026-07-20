@@ -1,0 +1,9185 @@
+{
+"abhibhāṣ": {
+"verb_freq": 287,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Acc": 3,
+"Nom": 1
+},
+"dep_deprel": {
+"iobj": 2,
+"advcl": 1,
+"obj": 1
+}
+},
+"abhidhā": {
+"verb_freq": 1103,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Acc": 11,
+"Ins": 7,
+"Nom": 3,
+"Gen": 2
+},
+"dep_deprel": {
+"obl:instr": 5,
+"obj": 5,
+"advcl:ccomp": 4,
+"nsubj": 2,
+"obl:agent": 1,
+"obl:loc": 1,
+"obl": 1,
+"iobj": 1,
+"obl:goal": 1,
+"conj": 1,
+"xcomp": 1
+}
+},
+"abhidruh": {
+"verb_freq": 43,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Acc": 5,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 2,
+"flat": 1,
+"obl:manner": 1,
+"advmod": 1,
+"nsubj": 1
+}
+},
+"abhilikh": {
+"verb_freq": 12,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"abhirocay": {
+"verb_freq": 15,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"abhivardhay": {
+"verb_freq": 35,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"abhiṣic": {
+"verb_freq": 805,
+"verb_parsed_freq": 28,
+"dep_gov": {
+"Nom": 16,
+"Ins": 10,
+"Acc": 6,
+"Abl": 3,
+"Dat": 2,
+"Loc": 2,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 9,
+"obl:instr": 8,
+"conj": 7,
+"obj": 3,
+"obl:temp": 3,
+"obl": 2,
+"advcl:ccomp": 2,
+"flat": 1,
+"iobj": 1,
+"advcl:temp": 1,
+"advcl:fin": 1,
+"obl:loc": 1,
+"obl:goal": 1,
+"xcomp:result": 1
+}
+},
+"abhyas": {
+"verb_freq": 305,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Loc": 2,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"conj": 2,
+"obj": 2,
+"obl:instr": 1
+}
+},
+"ad": {
+"verb_freq": 699,
+"verb_parsed_freq": 86,
+"dep_gov": {
+"Acc": 59,
+"Nom": 44,
+"Ins": 27,
+"Gen": 4,
+"Loc": 2,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 58,
+"nsubj": 29,
+"obl:instr": 16,
+"obl": 8,
+"advcl": 6,
+"flat": 4,
+"conj": 4,
+"obl:agent": 3,
+"advcl:manner": 2,
+"obl:loc": 2,
+"nmod": 1,
+"orphan": 1,
+"parataxis": 1,
+"obl:manner": 1,
+"advmod": 1,
+"obl:temp": 1
+}
+},
+"adhibrū": {
+"verb_freq": 5,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"adhigam": {
+"verb_freq": 631,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Nom": 8,
+"Acc": 6,
+"Ins": 4,
+"Loc": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obl": 4,
+"conj": 3,
+"obl:loc": 2,
+"iobj": 1,
+"advcl": 1,
+"obl:soc": 1,
+"flat": 1,
+"obj": 1,
+"obl:goal": 1,
+"obl:instr": 1
+}
+},
+"adhiruh": {
+"verb_freq": 191,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Acc": 14,
+"Nom": 11,
+"Ins": 3,
+"Dat": 1
+},
+"dep_deprel": {
+"obl:goal": 12,
+"nsubj": 5,
+"obl:instr": 3,
+"parataxis": 3,
+"advcl:dpct": 1,
+"conj": 1,
+"advmod": 1,
+"advcl:fin": 1,
+"obl": 1,
+"advcl:manner": 1
+}
+},
+"adhiśī": {
+"verb_freq": 35,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2
+},
+"dep_deprel": {
+"nsubj": 2
+}
+},
+"adhyāpay": {
+"verb_freq": 130,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Loc": 1
+},
+"dep_deprel": {
+"advcl:cond": 1
+}
+},
+"ah": {
+"verb_freq": 9447,
+"verb_parsed_freq": 662,
+"dep_gov": {
+"Acc": 348,
+"Nom": 323,
+"Dat": 37,
+"Ins": 25,
+"Gen": 16,
+"Loc": 13,
+"Abl": 1
+},
+"dep_deprel": {
+"ccomp": 274,
+"obj": 180,
+"nsubj": 93,
+"iobj": 71,
+"advmod": 43,
+"xcomp": 27,
+"advcl": 17,
+"obl": 16,
+"conj": 10,
+"advcl:temp": 7,
+"advcl:fin": 7,
+"flat": 4,
+"obl:instr": 2,
+"advcl:cond": 2,
+"advcl:dpct": 2,
+"discourse": 2,
+"obl:temp": 2,
+"mark": 1,
+"parataxis": 1,
+"advcl:ccomp": 1,
+"dislocated": 1
+}
+},
+"antardhā": {
+"verb_freq": 1011,
+"verb_parsed_freq": 38,
+"dep_gov": {
+"Acc": 30,
+"Ins": 8,
+"Nom": 4,
+"Loc": 3,
+"Abl": 2,
+"Gen": 2
+},
+"dep_deprel": {
+"obj": 25,
+"obl:instr": 8,
+"nsubj": 3,
+"obl:goal": 3,
+"obl": 2,
+"obl:loc": 2,
+"conj": 1,
+"obl:benef": 1,
+"obl:temp": 1,
+"advmod": 1,
+"obl:source": 1,
+"advcl": 1
+}
+},
+"anubhū": {
+"verb_freq": 390,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 10,
+"Ins": 6,
+"Nom": 5,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 10,
+"nsubj": 5,
+"obl:instr": 5,
+"obl:soc": 1,
+"obl:loc": 1,
+"obl": 1
+}
+},
+"anugam": {
+"verb_freq": 792,
+"verb_parsed_freq": 26,
+"dep_gov": {
+"Nom": 13,
+"Acc": 7,
+"Loc": 7,
+"Ins": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"nsubj": 12,
+"obl:path": 4,
+"advcl:temp": 4,
+"obl": 3,
+"obl:instr": 2,
+"obj": 1,
+"obl:temp": 1,
+"discourse": 1,
+"obl:agent": 1,
+"obl:goal": 1,
+"advcl:caus": 1,
+"det": 1
+}
+},
+"anugrah": {
+"verb_freq": 279,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Acc": 3,
+"Nom": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 3,
+"nsubj": 1,
+"obl:soc": 1,
+"obl": 1
+}
+},
+"anukūj": {
+"verb_freq": 2,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"anuman": {
+"verb_freq": 289,
+"verb_parsed_freq": 27,
+"dep_gov": {
+"Acc": 2,
+"Ins": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"flat": 2,
+"obl:agent": 2,
+"obj": 1
+}
+},
+"anupad": {
+"verb_freq": 70,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"anuvad": {
+"verb_freq": 54,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl": 1,
+"nsubj": 1
+}
+},
+"anuvinaś": {
+"verb_freq": 4,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"anuśī": {
+"verb_freq": 13,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl": 1,
+"nsubj": 1
+}
+},
+"apagam": {
+"verb_freq": 143,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"flat": 1
+}
+},
+"apanī": {
+"verb_freq": 226,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"aparañj": {
+"verb_freq": 3,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"aparādh": {
+"verb_freq": 131,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 3,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"advcl:caus": 2
+}
+},
+"apatrap": {
+"verb_freq": 13,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"apavah": {
+"verb_freq": 52,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"apayā": {
+"verb_freq": 103,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ape": {
+"verb_freq": 272,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Nom": 7,
+"Abl": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obl": 2,
+"obl:source": 1,
+"advcl": 1,
+"flat": 1
+}
+},
+"arc": {
+"verb_freq": 413,
+"verb_parsed_freq": 26,
+"dep_gov": {
+"Acc": 14,
+"Dat": 9,
+"Nom": 8,
+"Ins": 3,
+"Gen": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 10,
+"nsubj": 5,
+"iobj": 5,
+"obl": 5,
+"conj": 4,
+"advcl:fin": 2,
+"obl:instr": 2,
+"obl:benef": 2,
+"advcl": 2,
+"obl:loc": 1
+}
+},
+"arh": {
+"verb_freq": 2380,
+"verb_parsed_freq": 19,
+"dep_gov": {
+"Nom": 13,
+"Acc": 5,
+"Ins": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 8,
+"obj": 5,
+"parataxis": 2,
+"obl": 2,
+"advcl": 1,
+"advcl:concess": 1,
+"vocative": 1
+}
+},
+"arthay": {
+"verb_freq": 117,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"as": {
+"verb_freq": 35753,
+"verb_parsed_freq": 2147,
+"dep_gov": {
+"Nom": 349,
+"Acc": 73,
+"Dat": 66,
+"Loc": 53,
+"Gen": 31,
+"Abl": 15,
+"Ins": 10
+},
+"dep_deprel": {
+"flat": 220,
+"nsubj": 178,
+"obl:loc": 31,
+"obj": 27,
+"conj": 24,
+"obl": 21,
+"obl:goal": 19,
+"advmod": 17,
+"obl:benef": 8,
+"obl:source": 7,
+"iobj": 7,
+"parataxis": 6,
+"obl:temp": 6,
+"xcomp": 4,
+"advcl": 4,
+"obl:instr": 3,
+"advcl:dpct": 3,
+"advcl:manner": 2,
+"acl:attr": 2,
+"nmod": 2,
+"obl:manner": 1,
+"obl:agent": 1,
+"advcl:ccomp": 1,
+"advcl:fin": 1,
+"advcl:cond": 1,
+"acl:ptcp": 1
+}
+},
+"atibhūṣay": {
+"verb_freq": 1,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"atiric": {
+"verb_freq": 459,
+"verb_parsed_freq": 33,
+"dep_gov": {
+"Nom": 13,
+"Ins": 2,
+"Acc": 1,
+"Loc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 12,
+"obl": 2,
+"advmod": 1,
+"obj": 1,
+"obl:instr": 1,
+"obl:loc": 1
+}
+},
+"atiśī": {
+"verb_freq": 33,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 3
+},
+"dep_deprel": {
+"obj": 3
+}
+},
+"atyas": {
+"verb_freq": 6,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"atyaś": {
+"verb_freq": 12,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 2,
+"obl:instr": 1
+}
+},
+"av": {
+"verb_freq": 867,
+"verb_parsed_freq": 143,
+"dep_gov": {
+"Acc": 98,
+"Nom": 83,
+"Ins": 24,
+"Loc": 12,
+"Gen": 8,
+"Dat": 7
+},
+"dep_deprel": {
+"obj": 86,
+"nsubj": 66,
+"obl": 17,
+"flat": 15,
+"conj": 14,
+"obl:instr": 7,
+"obl:temp": 5,
+"nmod": 4,
+"obl:loc": 3,
+"obl:soc": 2,
+"advcl:dpct": 2,
+"advcl:fin": 2,
+"amod": 2,
+"advmod": 1,
+"parataxis": 1,
+"obl:manner": 1,
+"dislocated": 1,
+"iobj": 1,
+"advcl": 1,
+"advcl:manner": 1
+}
+},
+"avaci": {
+"verb_freq": 12,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"avadhāv": {
+"verb_freq": 5,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1,
+"Nom": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"advmod": 1,
+"nsubj": 1,
+"obl:source": 1
+}
+},
+"avalamb": {
+"verb_freq": 101,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"obl:loc": 1,
+"nsubj": 1,
+"obl:manner": 1
+}
+},
+"avalambay": {
+"verb_freq": 13,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"avapat": {
+"verb_freq": 25,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl:benef": 1
+}
+},
+"avaplu": {
+"verb_freq": 87,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"avaruh": {
+"verb_freq": 122,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Nom": 3,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"advcl:dpct": 3,
+"obl": 1,
+"obj": 1,
+"flat": 1
+}
+},
+"avasthā": {
+"verb_freq": 814,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Nom": 7,
+"Loc": 2,
+"Acc": 1,
+"Abl": 1,
+"Gen": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 4,
+"advcl": 2,
+"obl:loc": 2,
+"obl": 1,
+"obl:goal": 1,
+"advcl:dpct": 1,
+"obl:source": 1,
+"advcl:ccomp": 1
+}
+},
+"avāp": {
+"verb_freq": 1574,
+"verb_parsed_freq": 17,
+"dep_gov": {
+"Acc": 19,
+"Nom": 10,
+"Ins": 7
+},
+"dep_deprel": {
+"obj": 14,
+"advcl": 6,
+"conj": 5,
+"nsubj": 3,
+"obl:instr": 3,
+"obl": 2,
+"obl:agent": 1,
+"obl:goal": 1,
+"advcl:cond": 1
+}
+},
+"aś": {
+"verb_freq": 1948,
+"verb_parsed_freq": 175,
+"dep_gov": {
+"Acc": 144,
+"Nom": 94,
+"Ins": 19,
+"Loc": 16,
+"Gen": 14,
+"Abl": 3,
+"Dat": 3
+},
+"dep_deprel": {
+"obj": 110,
+"nsubj": 62,
+"obl:goal": 23,
+"advcl": 15,
+"obl": 14,
+"conj": 10,
+"obl:temp": 10,
+"obl:manner": 7,
+"obl:instr": 7,
+"advmod": 5,
+"advcl:manner": 4,
+"flat": 4,
+"obl:source": 3,
+"obl:soc": 3,
+"parataxis": 3,
+"orphan": 2,
+"advcl:cond": 2,
+"advcl:dpct": 2,
+"obl:benef": 1,
+"advcl:ccomp": 1,
+"advcl:fin": 1,
+"advcl:concess": 1,
+"advcl:temp": 1,
+"acl:dpct": 1,
+"obl:loc": 1
+}
+},
+"aṭ": {
+"verb_freq": 60,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"bandh": {
+"verb_freq": 2654,
+"verb_parsed_freq": 89,
+"dep_gov": {
+"Acc": 52,
+"Nom": 32,
+"Loc": 23,
+"Dat": 18,
+"Ins": 17,
+"Gen": 2,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 43,
+"nsubj": 22,
+"obl:loc": 14,
+"obl:instr": 13,
+"iobj": 10,
+"obl": 9,
+"advcl:fin": 7,
+"flat": 7,
+"advcl:ccomp": 5,
+"obl:goal": 3,
+"advcl": 3,
+"conj": 2,
+"obl:benef": 2,
+"obl:temp": 1,
+"xcomp:result": 1,
+"xcomp": 1,
+"obl:soc": 1,
+"parataxis": 1,
+"ccomp": 1
+}
+},
+"bhaj": {
+"verb_freq": 1164,
+"verb_parsed_freq": 28,
+"dep_gov": {
+"Acc": 24,
+"Nom": 19,
+"Dat": 3,
+"Loc": 2,
+"Ins": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 25,
+"nsubj": 9,
+"obl": 4,
+"conj": 3,
+"iobj": 3,
+"advcl:dpct": 2,
+"advcl": 2,
+"obl:manner": 1,
+"flat": 1,
+"advcl:manner": 1
+}
+},
+"bhakṣ": {
+"verb_freq": 162,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Gen": 2,
+"Acc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 2,
+"obl": 1,
+"obl:manner": 1
+}
+},
+"bharts": {
+"verb_freq": 6,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"bhañj": {
+"verb_freq": 754,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Acc": 7,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 6,
+"advcl:manner": 1,
+"xcomp": 1
+}
+},
+"bhaṣ": {
+"verb_freq": 11,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"advcl": 1
+}
+},
+"bhid": {
+"verb_freq": 2047,
+"verb_parsed_freq": 62,
+"dep_gov": {
+"Acc": 38,
+"Nom": 16,
+"Ins": 5,
+"Loc": 3,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 34,
+"nsubj": 8,
+"conj": 7,
+"obl:manner": 5,
+"obl": 3,
+"obl:instr": 2,
+"advcl:dpct": 1,
+"advcl:temp": 1,
+"flat": 1,
+"obl:benef": 1,
+"advcl:manner": 1
+}
+},
+"bhikṣ": {
+"verb_freq": 103,
+"verb_parsed_freq": 16,
+"dep_gov": {
+"Acc": 9,
+"Nom": 9,
+"Gen": 2,
+"Loc": 1,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 9,
+"conj": 4,
+"nsubj": 3,
+"obl": 2,
+"det": 1,
+"advmod": 1,
+"iobj": 1,
+"obl:instr": 1,
+"acl:dpct": 1
+}
+},
+"bhram": {
+"verb_freq": 592,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"bhraṃś": {
+"verb_freq": 340,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Abl": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl:source": 1,
+"nsubj": 1
+}
+},
+"bhuj": {
+"verb_freq": 2725,
+"verb_parsed_freq": 62,
+"dep_gov": {
+"Acc": 33,
+"Nom": 20,
+"Loc": 6,
+"Ins": 4,
+"Dat": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 25,
+"nsubj": 13,
+"obl:temp": 12,
+"advcl": 3,
+"obl": 3,
+"advcl:cond": 2,
+"advcl:fin": 1,
+"parataxis": 1,
+"advcl:caus": 1,
+"conj": 1,
+"obl:loc": 1,
+"flat": 1,
+"obl:manner": 1,
+"advcl:manner": 1
+}
+},
+"bhā": {
+"verb_freq": 741,
+"verb_parsed_freq": 24,
+"dep_gov": {
+"Nom": 30,
+"Acc": 7,
+"Ins": 4,
+"Gen": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 15,
+"obl": 5,
+"advcl": 5,
+"obj": 3,
+"advcl:dpct": 3,
+"conj": 3,
+"advmod": 2,
+"obl:manner": 2,
+"advcl:manner": 1,
+"obl:goal": 1,
+"obl:temp": 1,
+"obl:instr": 1,
+"obl:soc": 1
+}
+},
+"bhāṣ": {
+"verb_freq": 1532,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Nom": 27,
+"Acc": 18,
+"Ins": 8,
+"Loc": 3,
+"Gen": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 14,
+"iobj": 12,
+"ccomp": 10,
+"conj": 8,
+"obj": 6,
+"obl": 2,
+"advcl": 2,
+"advcl:temp": 1,
+"obl:temp": 1,
+"advcl:dpct": 1,
+"obl:loc": 1,
+"obl:soc": 1
+}
+},
+"bhī": {
+"verb_freq": 1384,
+"verb_parsed_freq": 60,
+"dep_gov": {
+"Nom": 37,
+"Abl": 22,
+"Acc": 4,
+"Ins": 1,
+"Loc": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 33,
+"obl:source": 12,
+"obl": 9,
+"obj": 3,
+"advmod": 3,
+"ccomp": 2,
+"obl:temp": 1,
+"advcl": 1,
+"advcl:temp": 1,
+"flat": 1
+}
+},
+"bhū": {
+"verb_freq": 40393,
+"verb_parsed_freq": 2033,
+"dep_gov": {
+"Nom": 1718,
+"Dat": 96,
+"Ins": 78,
+"Loc": 78,
+"Acc": 68,
+"Gen": 42,
+"Abl": 31
+},
+"dep_deprel": {
+"nsubj": 667,
+"xcomp:result": 455,
+"xcomp": 378,
+"obl": 95,
+"conj": 90,
+"flat": 59,
+"obl:loc": 46,
+"advcl": 40,
+"advmod": 37,
+"obl:benef": 35,
+"iobj": 26,
+"advcl:fin": 24,
+"parataxis": 24,
+"obl:instr": 20,
+"obl:source": 14,
+"advcl:manner": 12,
+"obl:manner": 10,
+"advcl:dpct": 9,
+"det": 9,
+"obj": 8,
+"advcl:cond": 8,
+"obl:temp": 7,
+"csubj": 6,
+"obl:soc": 5,
+"dislocated": 5,
+"advcl:concess": 4,
+"advcl:temp": 4,
+"discourse": 3,
+"advcl:caus": 3,
+"obl:goal": 2,
+"nmod": 2,
+"acl:rel": 1,
+"mark": 1,
+"obl:agent": 1,
+"acl": 1
+}
+},
+"bodhay": {
+"verb_freq": 217,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Acc": 9,
+"Ins": 4,
+"Dat": 3,
+"Loc": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 8,
+"obl": 5,
+"advcl:fin": 2,
+"parataxis": 1,
+"nsubj": 1,
+"obl:instr": 1,
+"flat": 1
+}
+},
+"brū": {
+"verb_freq": 9781,
+"verb_parsed_freq": 405,
+"dep_gov": {
+"Nom": 328,
+"Acc": 182,
+"Dat": 68,
+"Loc": 19,
+"Gen": 19,
+"Ins": 7,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 198,
+"iobj": 156,
+"ccomp": 107,
+"obj": 71,
+"advcl": 19,
+"conj": 12,
+"advmod": 12,
+"discourse": 9,
+"obl": 5,
+"xcomp": 5,
+"parataxis": 5,
+"obl:benef": 4,
+"obl:temp": 3,
+"advcl:dpct": 2,
+"obl:instr": 2,
+"advcl:temp": 2,
+"advcl:manner": 2,
+"flat": 1,
+"advcl:fin": 1,
+"dislocated": 1,
+"advcl:cond": 1,
+"advcl:concess": 1,
+"csubj": 1,
+"obl:loc": 1,
+"orphan": 1,
+"obl:manner": 1,
+"obl:source": 1
+}
+},
+"budh": {
+"verb_freq": 1118,
+"verb_parsed_freq": 23,
+"dep_gov": {
+"Nom": 8,
+"Acc": 7,
+"Ins": 3,
+"Loc": 2,
+"Dat": 1,
+"Abl": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"flat": 6,
+"obj": 6,
+"obl": 5,
+"nsubj": 3,
+"obl:loc": 1,
+"obl:source": 1,
+"obl:instr": 1
+}
+},
+"bādh": {
+"verb_freq": 456,
+"verb_parsed_freq": 24,
+"dep_gov": {
+"Acc": 14,
+"Nom": 10,
+"Ins": 4,
+"Abl": 2,
+"Dat": 1,
+"Loc": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 13,
+"nsubj": 9,
+"obl": 2,
+"flat": 2,
+"obl:source": 2,
+"obl:instr": 2,
+"advcl": 1,
+"iobj": 1,
+"obl:temp": 1
+}
+},
+"bībhats": {
+"verb_freq": 15,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Nom": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"nsubj": 3,
+"obl:source": 2
+}
+},
+"cakṣ": {
+"verb_freq": 103,
+"verb_parsed_freq": 20,
+"dep_gov": {
+"Nom": 18,
+"Acc": 14,
+"Dat": 3,
+"Abl": 2,
+"Ins": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 14,
+"nsubj": 12,
+"obl": 4,
+"advcl": 2,
+"obl:manner": 1,
+"advcl:manner": 1,
+"advcl:dpct": 1,
+"advcl:temp": 1,
+"obl:source": 1,
+"advmod": 1,
+"iobj": 1
+}
+},
+"cal": {
+"verb_freq": 491,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"car": {
+"verb_freq": 4027,
+"verb_parsed_freq": 238,
+"dep_gov": {
+"Nom": 127,
+"Acc": 110,
+"Ins": 40,
+"Loc": 38,
+"Abl": 6,
+"Gen": 5,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 78,
+"obj": 57,
+"obl": 56,
+"advcl": 28,
+"obl:temp": 16,
+"flat": 12,
+"obl:loc": 10,
+"conj": 8,
+"obl:path": 8,
+"obl:manner": 6,
+"obl:instr": 5,
+"advcl:dpct": 5,
+"advcl:manner": 5,
+"advmod": 4,
+"obl:soc": 4,
+"obl:goal": 4,
+"obl:agent": 3,
+"obl:source": 3,
+"iobj": 2,
+"discourse": 2,
+"advcl:temp": 2,
+"advcl:cond": 2,
+"ccomp": 1,
+"advcl:fin": 1,
+"xcomp": 1,
+"advcl:local": 1,
+"advcl:ccomp": 1,
+"advcl:caus": 1,
+"acl:rel": 1
+}
+},
+"ceṣṭ": {
+"verb_freq": 200,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Nom": 4,
+"Acc": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"obj": 2,
+"obl:manner": 1,
+"flat": 1,
+"advmod": 1
+}
+},
+"chanday": {
+"verb_freq": 38,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Loc": 3,
+"Acc": 3,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 3,
+"obl:loc": 2,
+"advmod": 1,
+"nsubj": 1
+}
+},
+"chid": {
+"verb_freq": 2139,
+"verb_parsed_freq": 63,
+"dep_gov": {
+"Nom": 29,
+"Acc": 24,
+"Abl": 9,
+"Ins": 5,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 21,
+"nsubj": 16,
+"flat": 10,
+"conj": 5,
+"obl:source": 3,
+"obl:instr": 3,
+"advcl:ccomp": 3,
+"obl": 2,
+"advcl:manner": 1,
+"dislocated": 1,
+"advcl": 1,
+"iobj": 1,
+"discourse": 1,
+"obl:goal": 1
+}
+},
+"ci": {
+"verb_freq": 763,
+"verb_parsed_freq": 54,
+"dep_gov": {
+"Acc": 41,
+"Nom": 18,
+"Ins": 8,
+"Dat": 7,
+"Gen": 4,
+"Loc": 4,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 21,
+"obl": 18,
+"nsubj": 14,
+"advmod": 9,
+"conj": 4,
+"obl:instr": 2,
+"xcomp": 2,
+"nmod": 2,
+"parataxis": 1,
+"obl:temp": 1,
+"advcl:cond": 1,
+"advcl": 1,
+"det": 1,
+"obl:source": 1,
+"advcl:manner": 1,
+"iobj": 1,
+"advcl:dpct": 1,
+"advcl:fin": 1,
+"orphan": 1
+}
+},
+"cintay": {
+"verb_freq": 1544,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Gen": 2,
+"Nom": 2
+},
+"dep_deprel": {
+"nsubj": 1,
+"conj": 1,
+"ccomp": 1,
+"xcomp": 1
+}
+},
+"cit": {
+"verb_freq": 266,
+"verb_parsed_freq": 50,
+"dep_gov": {
+"Nom": 33,
+"Acc": 16,
+"Ins": 9,
+"Gen": 9,
+"Dat": 5,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 19,
+"obj": 15,
+"obl": 6,
+"conj": 5,
+"advcl:dpct": 4,
+"obl:instr": 4,
+"flat": 3,
+"iobj": 3,
+"advcl": 3,
+"advcl:manner": 1,
+"advmod": 1,
+"advcl:temp": 1,
+"advcl:fin": 1,
+"obl:path": 1,
+"vocative": 1,
+"acl:dpct": 1,
+"acl:ptcp": 1,
+"csubj": 1,
+"xcomp": 1,
+"obl:manner": 1
+}
+},
+"coday": {
+"verb_freq": 682,
+"verb_parsed_freq": 20,
+"dep_gov": {
+"Acc": 11,
+"Nom": 8,
+"Ins": 4,
+"Loc": 4,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 6,
+"obl": 3,
+"obl:agent": 2,
+"ccomp": 1,
+"obl:goal": 1,
+"advcl:fin": 1,
+"advcl:dpct": 1,
+"obl:manner": 1,
+"obl:temp": 1,
+"amod": 1,
+"obl:loc": 1
+}
+},
+"cumb": {
+"verb_freq": 71,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"cyu": {
+"verb_freq": 715,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Nom": 8,
+"Abl": 4,
+"Ins": 3,
+"Acc": 2,
+"Dat": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obl:source": 5,
+"nsubj": 4,
+"conj": 3,
+"obj": 2,
+"flat": 1,
+"advcl:manner": 1,
+"advcl:cond": 1,
+"obl:loc": 1,
+"advcl": 1
+}
+},
+"dah": {
+"verb_freq": 2275,
+"verb_parsed_freq": 50,
+"dep_gov": {
+"Acc": 40,
+"Nom": 26,
+"Ins": 6,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 38,
+"nsubj": 18,
+"obl:instr": 5,
+"advcl:manner": 3,
+"advcl:dpct": 1,
+"dislocated": 1,
+"conj": 1,
+"obl:soc": 1,
+"obl:loc": 1,
+"flat": 1,
+"obl:manner": 1,
+"advcl": 1,
+"advmod": 1
+}
+},
+"dakṣ": {
+"verb_freq": 8,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Dat": 2
+},
+"dep_deprel": {
+"iobj": 2
+}
+},
+"darśay": {
+"verb_freq": 1264,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 10,
+"Nom": 2,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 8,
+"iobj": 2,
+"advcl:ccomp": 1,
+"nsubj": 1,
+"obl:benef": 1,
+"obl:instr": 1
+}
+},
+"day": {
+"verb_freq": 38,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 6,
+"Ins": 4,
+"Nom": 4
+},
+"dep_deprel": {
+"obj": 5,
+"nsubj": 4,
+"conj": 2,
+"obl": 2,
+"obl:instr": 1
+}
+},
+"daśasy": {
+"verb_freq": 33,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Dat": 2,
+"Acc": 1,
+"Gen": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 2,
+"obl:benef": 1,
+"obl": 1,
+"iobj": 1
+}
+},
+"daṇḍay": {
+"verb_freq": 176,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"dhanv": {
+"verb_freq": 47,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 7,
+"Loc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"obl": 2,
+"advcl:dpct": 1,
+"advcl:manner": 1,
+"obl:manner": 1,
+"obl:soc": 1,
+"advcl": 1
+}
+},
+"dhanāy": {
+"verb_freq": 5,
+"verb_parsed_freq": 2,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"dhā": {
+"verb_freq": 4694,
+"verb_parsed_freq": 601,
+"dep_gov": {
+"Acc": 541,
+"Loc": 272,
+"Nom": 231,
+"Dat": 119,
+"Ins": 73,
+"Abl": 14,
+"Gen": 9
+},
+"dep_deprel": {
+"obj": 437,
+"nsubj": 140,
+"obl": 134,
+"obl:goal": 121,
+"iobj": 94,
+"advmod": 56,
+"obl:loc": 48,
+"flat": 40,
+"advcl": 28,
+"obl:instr": 28,
+"conj": 28,
+"advcl:manner": 16,
+"obl:manner": 16,
+"advcl:fin": 12,
+"xcomp": 12,
+"obl:temp": 11,
+"obl:soc": 7,
+"advcl:ccomp": 6,
+"advcl:dpct": 6,
+"obl:source": 3,
+"obl:benef": 3,
+"ccomp": 2,
+"dislocated": 2,
+"advcl:caus": 2,
+"csubj": 1,
+"obl:agent": 1,
+"acl": 1,
+"parataxis": 1,
+"xcomp:result": 1,
+"advcl:temp": 1,
+"acl:dpct": 1
+}
+},
+"dhāray": {
+"verb_freq": 1833,
+"verb_parsed_freq": 78,
+"dep_gov": {
+"Acc": 79,
+"Nom": 33,
+"Loc": 23,
+"Ins": 12,
+"Dat": 10,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 63,
+"nsubj": 24,
+"obl": 14,
+"obl:loc": 13,
+"iobj": 9,
+"xcomp": 7,
+"obl:instr": 5,
+"advcl": 4,
+"advcl:manner": 3,
+"advcl:temp": 2,
+"advcl:ccomp": 2,
+"conj": 2,
+"obl:temp": 2,
+"obl:manner": 1,
+"dislocated": 1,
+"advcl:dpct": 1,
+"obl:goal": 1,
+"advmod": 1,
+"flat": 1,
+"advcl:fin": 1,
+"csubj": 1
+}
+},
+"dhāv": {
+"verb_freq": 582,
+"verb_parsed_freq": 30,
+"dep_gov": {
+"Nom": 18,
+"Acc": 10,
+"Loc": 6,
+"Ins": 3,
+"Dat": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"obl": 10,
+"obl:manner": 6,
+"obl:goal": 3,
+"obj": 2,
+"iobj": 1,
+"advcl:ccomp": 1,
+"advcl:temp": 1,
+"obl:instr": 1,
+"obl:path": 1,
+"obl:loc": 1,
+"xcomp": 1,
+"advcl": 1,
+"advcl:manner": 1
+}
+},
+"dhū": {
+"verb_freq": 245,
+"verb_parsed_freq": 23,
+"dep_gov": {
+"Nom": 15,
+"Acc": 13,
+"Dat": 3,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 8,
+"conj": 5,
+"advcl:manner": 2,
+"obl": 2,
+"advcl:fin": 2,
+"advcl:dpct": 1,
+"flat": 1,
+"ccomp": 1,
+"advmod": 1,
+"xcomp": 1
+}
+},
+"dih": {
+"verb_freq": 185,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Ins": 3,
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"obl": 3,
+"nsubj": 1,
+"obj": 1
+}
+},
+"diś": {
+"verb_freq": 186,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Dat": 2,
+"Acc": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"iobj": 2,
+"obj": 2,
+"parataxis": 2
+}
+},
+"dru": {
+"verb_freq": 1073,
+"verb_parsed_freq": 15,
+"dep_gov": {
+"Nom": 6,
+"Acc": 6,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 4,
+"advcl": 3,
+"obl": 3,
+"obl:goal": 2,
+"obl:path": 1,
+"obj": 1
+}
+},
+"druh": {
+"verb_freq": 70,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Dat": 2,
+"Nom": 2,
+"Acc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"iobj": 2,
+"advcl:caus": 1,
+"obj": 1,
+"nsubj": 1,
+"obl:instr": 1
+}
+},
+"duh": {
+"verb_freq": 806,
+"verb_parsed_freq": 120,
+"dep_gov": {
+"Acc": 109,
+"Nom": 62,
+"Dat": 19,
+"Ins": 15,
+"Loc": 8,
+"Gen": 4,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 75,
+"nsubj": 45,
+"iobj": 26,
+"conj": 14,
+"obl": 11,
+"obl:instr": 10,
+"obl:manner": 7,
+"advcl": 5,
+"flat": 4,
+"obl:benef": 4,
+"obl:temp": 3,
+"xcomp": 2,
+"advmod": 2,
+"advcl:manner": 2,
+"obl:source": 2,
+"advcl:fin": 2,
+"obl:goal": 1,
+"obl:agent": 1,
+"advcl:ccomp": 1,
+"obl:loc": 1,
+"acl:ptcp": 1
+}
+},
+"dviṣ": {
+"verb_freq": 1343,
+"verb_parsed_freq": 124,
+"dep_gov": {
+"Acc": 53,
+"Nom": 37,
+"Gen": 15,
+"Loc": 3,
+"Dat": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 38,
+"nsubj": 31,
+"flat": 21,
+"nmod": 13,
+"conj": 2,
+"obl": 2,
+"advcl": 1,
+"iobj": 1,
+"obl:agent": 1
+}
+},
+"dā": {
+"verb_freq": 12008,
+"verb_parsed_freq": 338,
+"dep_gov": {
+"Acc": 266,
+"Dat": 197,
+"Nom": 128,
+"Loc": 31,
+"Ins": 24,
+"Gen": 19,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 225,
+"iobj": 179,
+"nsubj": 94,
+"conj": 57,
+"obl": 21,
+"flat": 17,
+"obl:temp": 13,
+"obl:agent": 8,
+"advcl": 7,
+"advcl:manner": 6,
+"advcl:fin": 5,
+"advcl:temp": 4,
+"parataxis": 3,
+"obl:manner": 3,
+"advcl:cond": 2,
+"obl:goal": 2,
+"obl:loc": 2,
+"csubj": 2,
+"advcl:ccomp": 2,
+"nmod": 2,
+"advmod": 1,
+"obl:soc": 1,
+"obl:source": 1,
+"obl:path": 1,
+"obl:instr": 1,
+"xcomp:result": 1,
+"appos": 1,
+"det": 1,
+"xcomp": 1,
+"obl:benef": 1,
+"advcl:dpct": 1,
+"dislocated": 1
+}
+},
+"dāhay": {
+"verb_freq": 68,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"dāś": {
+"verb_freq": 290,
+"verb_parsed_freq": 39,
+"dep_gov": {
+"Dat": 11,
+"Nom": 6,
+"Ins": 3,
+"Acc": 2
+},
+"dep_deprel": {
+"iobj": 8,
+"nsubj": 5,
+"obl:instr": 2,
+"advcl:fin": 2,
+"advmod": 1,
+"orphan": 1,
+"obj": 1,
+"advcl": 1,
+"det": 1
+}
+},
+"ej": {
+"verb_freq": 85,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Nom": 13,
+"Loc": 2,
+"Ins": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"conj": 3,
+"obl": 2,
+"obl:loc": 1,
+"advcl:manner": 1
+}
+},
+"gad": {
+"verb_freq": 466,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"gam": {
+"verb_freq": 18341,
+"verb_parsed_freq": 453,
+"dep_gov": {
+"Nom": 290,
+"Acc": 284,
+"Ins": 56,
+"Loc": 28,
+"Dat": 18,
+"Gen": 12,
+"Abl": 11
+},
+"dep_deprel": {
+"nsubj": 176,
+"obl:goal": 175,
+"obl": 118,
+"advcl": 37,
+"conj": 34,
+"flat": 19,
+"advcl:manner": 15,
+"obl:manner": 15,
+"advmod": 13,
+"obl:soc": 13,
+"advcl:dpct": 12,
+"obl:path": 7,
+"obj": 6,
+"obl:instr": 6,
+"advcl:fin": 5,
+"advcl:temp": 5,
+"obl:loc": 5,
+"obl:temp": 4,
+"obl:source": 4,
+"parataxis": 4,
+"orphan": 3,
+"acl:dpct": 3,
+"advcl:concess": 2,
+"obl:agent": 2,
+"dislocated": 2,
+"discourse": 2,
+"advcl:cond": 2,
+"advcl:ccomp": 2,
+"obl:benef": 2,
+"acl": 1,
+"iobj": 1,
+"advcl:caus": 1,
+"xcomp": 1,
+"ccomp:rel": 1,
+"acl:ptcp": 1
+}
+},
+"garh": {
+"verb_freq": 185,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Loc": 3,
+"Nom": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"advcl:cond": 2,
+"obl": 1
+}
+},
+"gaṇay": {
+"verb_freq": 164,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ghaṭ": {
+"verb_freq": 119,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ghrā": {
+"verb_freq": 130,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Acc": 5,
+"Ins": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 5,
+"obl:instr": 2,
+"advcl": 1
+}
+},
+"ghātay": {
+"verb_freq": 243,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obj": 1
+}
+},
+"grah": {
+"verb_freq": 7073,
+"verb_parsed_freq": 307,
+"dep_gov": {
+"Acc": 223,
+"Nom": 112,
+"Ins": 68,
+"Loc": 35,
+"Gen": 17,
+"Dat": 7,
+"Abl": 7
+},
+"dep_deprel": {
+"obj": 190,
+"nsubj": 82,
+"obl:instr": 40,
+"conj": 39,
+"obl": 29,
+"flat": 13,
+"obl:loc": 12,
+"obl:temp": 10,
+"obl:agent": 7,
+"advmod": 7,
+"advcl": 6,
+"advcl:manner": 5,
+"advcl:ccomp": 5,
+"iobj": 3,
+"obl:benef": 2,
+"obl:goal": 2,
+"obl:source": 2,
+"obl:soc": 2,
+"advcl:temp": 2,
+"obl:manner": 2,
+"advcl:fin": 1,
+"parataxis": 1,
+"advcl:caus": 1,
+"xcomp:result": 1,
+"advcl:dpct": 1,
+"det": 1,
+"ccomp": 1,
+"xcomp": 1,
+"orphan": 1
+}
+},
+"gras": {
+"verb_freq": 519,
+"verb_parsed_freq": 19,
+"dep_gov": {
+"Nom": 4,
+"Acc": 3,
+"Ins": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 3,
+"nsubj": 2,
+"conj": 2,
+"advcl:cond": 1,
+"obl:agent": 1,
+"obl:instr": 1
+}
+},
+"grāhay": {
+"verb_freq": 200,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Acc": 14,
+"Ins": 11,
+"Nom": 5,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 12,
+"obl:agent": 9,
+"iobj": 3,
+"conj": 2,
+"advcl:ccomp": 1,
+"parataxis": 1,
+"nsubj": 1,
+"advcl": 1,
+"advcl:dpct": 1
+}
+},
+"guh": {
+"verb_freq": 468,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Nom": 13,
+"Acc": 6,
+"Loc": 6,
+"Ins": 4
+},
+"dep_deprel": {
+"conj": 9,
+"obj": 6,
+"obl:loc": 5,
+"nsubj": 3,
+"obl": 3,
+"obl:agent": 1,
+"advcl": 1,
+"obl:instr": 1
+}
+},
+"gup": {
+"verb_freq": 563,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Nom": 15,
+"Acc": 12,
+"Ins": 7,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 13,
+"obj": 10,
+"obl:agent": 3,
+"obl:instr": 3,
+"dislocated": 2,
+"advcl": 1,
+"obl:loc": 1,
+"obl": 1,
+"advcl:fin": 1
+}
+},
+"gā": {
+"verb_freq": 1911,
+"verb_parsed_freq": 158,
+"dep_gov": {
+"Nom": 102,
+"Acc": 94,
+"Loc": 19,
+"Ins": 12,
+"Dat": 10,
+"Abl": 3,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 67,
+"obj": 40,
+"obl": 28,
+"obl:goal": 18,
+"advcl": 16,
+"advmod": 11,
+"conj": 10,
+"ccomp": 6,
+"iobj": 6,
+"obl:manner": 5,
+"flat": 4,
+"obl:loc": 4,
+"obl:instr": 3,
+"advcl:fin": 3,
+"obl:temp": 3,
+"obl:benef": 3,
+"advcl:temp": 2,
+"advcl:cond": 2,
+"advcl:dpct": 2,
+"xcomp": 2,
+"obl:source": 2,
+"obl:path": 1,
+"advcl:manner": 1,
+"parataxis": 1,
+"obl:soc": 1,
+"xcomp:result": 1
+}
+},
+"gāh": {
+"verb_freq": 69,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 8,
+"Acc": 6,
+"Ins": 2
+},
+"dep_deprel": {
+"nsubj": 5,
+"advcl": 4,
+"obl:goal": 2,
+"obl": 2,
+"obl:path": 1,
+"flat": 1,
+"obj": 1
+}
+},
+"han": {
+"verb_freq": 8744,
+"verb_parsed_freq": 216,
+"dep_gov": {
+"Acc": 162,
+"Nom": 104,
+"Ins": 43,
+"Loc": 13,
+"Gen": 7,
+"Abl": 4,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 148,
+"nsubj": 70,
+"obl": 25,
+"obl:instr": 22,
+"advcl": 18,
+"conj": 12,
+"advcl:manner": 5,
+"obl:temp": 5,
+"flat": 4,
+"advmod": 3,
+"advcl:dpct": 3,
+"parataxis": 3,
+"obl:manner": 2,
+"obl:soc": 2,
+"obl:goal": 2,
+"nmod": 2,
+"ccomp": 1,
+"orphan": 1,
+"dislocated": 1,
+"advcl:temp": 1,
+"advcl:caus": 1,
+"obl:agent": 1,
+"obl:loc": 1,
+"obl:source": 1,
+"obl:benef": 1
+}
+},
+"hary": {
+"verb_freq": 43,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 5,
+"Nom": 4
+},
+"dep_deprel": {
+"obj": 4,
+"nsubj": 3,
+"flat": 1,
+"advcl": 1
+}
+},
+"has": {
+"verb_freq": 419,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Loc": 1
+},
+"dep_deprel": {
+"obl": 1
+}
+},
+"heṣ": {
+"verb_freq": 26,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"hi": {
+"verb_freq": 224,
+"verb_parsed_freq": 49,
+"dep_gov": {
+"Acc": 32,
+"Nom": 16,
+"Ins": 12,
+"Dat": 10,
+"Loc": 7
+},
+"dep_deprel": {
+"obj": 24,
+"obl": 11,
+"nsubj": 9,
+"obl:manner": 6,
+"iobj": 4,
+"obl:agent": 4,
+"advcl:manner": 3,
+"conj": 3,
+"advcl:fin": 2,
+"obl:instr": 2,
+"obl:temp": 2,
+"obl:benef": 2,
+"advcl:cond": 1,
+"flat": 1,
+"obl:loc": 1,
+"dislocated": 1,
+"obl:goal": 1
+}
+},
+"hnu": {
+"verb_freq": 6,
+"verb_parsed_freq": 1,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"hrī": {
+"verb_freq": 28,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"hu": {
+"verb_freq": 6418,
+"verb_parsed_freq": 1016,
+"dep_gov": {
+"Acc": 507,
+"Loc": 371,
+"Nom": 291,
+"Ins": 198,
+"Dat": 138,
+"Gen": 78,
+"Abl": 16
+},
+"dep_deprel": {
+"obj": 430,
+"nsubj": 159,
+"obl:instr": 132,
+"obl": 129,
+"advcl:ccomp": 111,
+"obl:goal": 111,
+"conj": 95,
+"advcl": 66,
+"obl:temp": 54,
+"iobj": 52,
+"obl:loc": 51,
+"advcl:temp": 30,
+"advmod": 29,
+"obl:benef": 28,
+"advcl:cond": 22,
+"ccomp": 21,
+"advcl:manner": 12,
+"flat": 11,
+"obl:manner": 10,
+"parataxis": 8,
+"obl:agent": 6,
+"advcl:fin": 5,
+"discourse": 5,
+"xcomp": 4,
+"obl:soc": 3,
+"advcl:dpct": 3,
+"nmod": 2,
+"obl:source": 2,
+"csubj": 2,
+"orphan": 2,
+"acl:ptcp": 1,
+"obl:grad": 1,
+"xcomp:result": 1,
+"obl:path": 1
+}
+},
+"hvā": {
+"verb_freq": 981,
+"verb_parsed_freq": 167,
+"dep_gov": {
+"Acc": 148,
+"Nom": 92,
+"Dat": 33,
+"Ins": 24,
+"Loc": 12,
+"Gen": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 122,
+"nsubj": 42,
+"advcl": 22,
+"advcl:fin": 21,
+"obl": 14,
+"obl:instr": 14,
+"iobj": 13,
+"conj": 11,
+"advcl:manner": 9,
+"obl:manner": 8,
+"flat": 4,
+"parataxis": 4,
+"obl:soc": 4,
+"advcl:dpct": 4,
+"obl:benef": 3,
+"xcomp": 3,
+"obl:source": 2,
+"obl:agent": 2,
+"csubj": 2,
+"obl:temp": 2,
+"acl:dpct": 2,
+"advcl:concess": 1,
+"obl:goal": 1,
+"advcl:caus": 1,
+"advmod": 1,
+"advcl:temp": 1,
+"appos": 1
+}
+},
+"hā": {
+"verb_freq": 2739,
+"verb_parsed_freq": 74,
+"dep_gov": {
+"Acc": 51,
+"Nom": 47,
+"Abl": 6,
+"Ins": 5,
+"Loc": 3,
+"Dat": 3,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 44,
+"nsubj": 37,
+"conj": 7,
+"obl": 5,
+"obl:temp": 3,
+"advcl": 3,
+"obl:source": 3,
+"flat": 2,
+"obl:manner": 2,
+"obl:loc": 1,
+"advcl:manner": 1,
+"obl:soc": 1,
+"csubj": 1,
+"advcl:cond": 1,
+"iobj": 1,
+"advcl:fin": 1,
+"obl:benef": 1,
+"advmod": 1,
+"obl:goal": 1
+}
+},
+"hīḍ": {
+"verb_freq": 29,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Ins": 2,
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 1,
+"obl:instr": 1,
+"conj": 1,
+"nsubj": 1
+}
+},
+"i": {
+"verb_freq": 3673,
+"verb_parsed_freq": 531,
+"dep_gov": {
+"Nom": 377,
+"Acc": 318,
+"Ins": 85,
+"Abl": 37,
+"Loc": 15,
+"Dat": 10,
+"Gen": 7
+},
+"dep_deprel": {
+"nsubj": 207,
+"obl:goal": 177,
+"obl": 129,
+"advcl": 79,
+"obl:manner": 29,
+"conj": 24,
+"obl:path": 24,
+"flat": 23,
+"advcl:manner": 23,
+"obj": 16,
+"obl:source": 15,
+"obl:instr": 15,
+"obl:temp": 13,
+"advcl:dpct": 12,
+"obl:soc": 12,
+"advmod": 11,
+"xcomp": 9,
+"obl:loc": 8,
+"advcl:fin": 6,
+"iobj": 3,
+"advcl:temp": 3,
+"acl:dpct": 3,
+"advcl:local": 2,
+"advcl:caus": 1,
+"parataxis": 1,
+"obl:benef": 1,
+"csubj": 1,
+"dislocated": 1,
+"acl:ptcp": 1
+}
+},
+"irajy": {
+"verb_freq": 14,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"iṣ": {
+"verb_freq": 4842,
+"verb_parsed_freq": 140,
+"dep_gov": {
+"Acc": 105,
+"Nom": 53,
+"Ins": 20,
+"Loc": 14,
+"Dat": 13,
+"Gen": 5,
+"Abl": 3
+},
+"dep_deprel": {
+"obj": 91,
+"nsubj": 36,
+"obl": 17,
+"iobj": 11,
+"conj": 8,
+"advcl": 6,
+"obl:loc": 6,
+"obl:instr": 5,
+"obl:manner": 4,
+"parataxis": 4,
+"advmod": 4,
+"obl:agent": 3,
+"discourse": 3,
+"obl:temp": 2,
+"xcomp": 2,
+"mark": 1,
+"obl:benef": 1,
+"advcl:manner": 1,
+"obl:soc": 1,
+"advcl:ccomp": 1,
+"orphan": 1,
+"ccomp": 1,
+"acl:dpct": 1,
+"obl:source": 1,
+"amod": 1,
+"advcl:dpct": 1
+}
+},
+"jakṣ": {
+"verb_freq": 114,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Gen": 2,
+"Nom": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 2,
+"obl:agent": 1,
+"nsubj": 1,
+"conj": 1
+}
+},
+"jalp": {
+"verb_freq": 126,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 5,
+"Acc": 2
+},
+"dep_deprel": {
+"conj": 4,
+"nsubj": 1,
+"obj": 1,
+"advcl:fin": 1
+}
+},
+"jan": {
+"verb_freq": 9247,
+"verb_parsed_freq": 511,
+"dep_gov": {
+"Nom": 331,
+"Abl": 74,
+"Acc": 65,
+"Loc": 58,
+"Ins": 25,
+"Gen": 22,
+"Dat": 20
+},
+"dep_deprel": {
+"nsubj": 239,
+"obl": 66,
+"obl:source": 57,
+"conj": 43,
+"flat": 30,
+"obj": 29,
+"obl:loc": 20,
+"advcl": 15,
+"iobj": 14,
+"xcomp": 12,
+"obl:temp": 8,
+"parataxis": 5,
+"obl:soc": 5,
+"advmod": 5,
+"obl:manner": 5,
+"xcomp:result": 5,
+"advcl:temp": 4,
+"advcl:dpct": 4,
+"obl:benef": 4,
+"nmod": 4,
+"advcl:manner": 4,
+"acl": 3,
+"dislocated": 3,
+"advcl:ccomp": 2,
+"advcl:concess": 2,
+"obl:agent": 2,
+"obl:instr": 1,
+"obl:goal": 1,
+"advcl:caus": 1,
+"advcl:fin": 1,
+"amod": 1
+}
+},
+"janay": {
+"verb_freq": 1524,
+"verb_parsed_freq": 79,
+"dep_gov": {
+"Acc": 66,
+"Nom": 30,
+"Ins": 14,
+"Dat": 7,
+"Loc": 4,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 57,
+"nsubj": 24,
+"obl:instr": 9,
+"obl": 9,
+"flat": 6,
+"iobj": 6,
+"xcomp": 3,
+"obl:temp": 2,
+"obl:source": 2,
+"advmod": 2,
+"conj": 2,
+"xcomp:result": 1
+}
+},
+"jap": {
+"verb_freq": 1702,
+"verb_parsed_freq": 118,
+"dep_gov": {
+"Acc": 61,
+"Nom": 60,
+"Loc": 31,
+"Gen": 6,
+"Abl": 4,
+"Ins": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 43,
+"ccomp": 40,
+"advcl": 20,
+"obl:temp": 13,
+"nsubj": 10,
+"advcl:temp": 9,
+"conj": 9,
+"obl": 7,
+"advcl:manner": 3,
+"advcl:fin": 2,
+"advmod": 2,
+"obl:loc": 2,
+"advcl:cond": 1,
+"advcl:local": 1,
+"mark": 1,
+"obl:goal": 1,
+"advcl:dpct": 1
+}
+},
+"ji": {
+"verb_freq": 4082,
+"verb_parsed_freq": 180,
+"dep_gov": {
+"Acc": 113,
+"Nom": 86,
+"Ins": 46,
+"Loc": 3,
+"Gen": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 102,
+"nsubj": 53,
+"obl:instr": 26,
+"conj": 20,
+"obl": 16,
+"advcl": 7,
+"advmod": 4,
+"flat": 3,
+"obl:temp": 3,
+"obl:soc": 3,
+"discourse": 3,
+"advcl:dpct": 2,
+"obl:agent": 2,
+"advcl:manner": 2,
+"parataxis": 1,
+"acl:rel": 1,
+"nmod": 1,
+"obl:manner": 1,
+"obl:loc": 1
+}
+},
+"jinv": {
+"verb_freq": 288,
+"verb_parsed_freq": 45,
+"dep_gov": {
+"Nom": 25,
+"Acc": 18,
+"Ins": 7,
+"Dat": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 17,
+"flat": 15,
+"nsubj": 10,
+"obl:instr": 6,
+"obl:agent": 1,
+"advcl": 1,
+"conj": 1,
+"advcl:manner": 1,
+"obl:benef": 1
+}
+},
+"jugups": {
+"verb_freq": 72,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Abl": 3,
+"Acc": 1
+},
+"dep_deprel": {
+"obl:source": 2,
+"obl": 1,
+"obj": 1
+}
+},
+"juṣ": {
+"verb_freq": 1226,
+"verb_parsed_freq": 138,
+"dep_gov": {
+"Acc": 56,
+"Nom": 42,
+"Dat": 13,
+"Ins": 10,
+"Loc": 7,
+"Gen": 3
+},
+"dep_deprel": {
+"obj": 44,
+"nsubj": 22,
+"flat": 20,
+"obl": 11,
+"iobj": 9,
+"advcl": 5,
+"advcl:manner": 3,
+"obl:loc": 3,
+"conj": 2,
+"obl:instr": 2,
+"obl:soc": 1,
+"obl:agent": 1,
+"obl:manner": 1,
+"det": 1,
+"orphan": 1,
+"nmod": 1,
+"acl:attr": 1,
+"acl:dpct": 1,
+"advmod": 1,
+"obl:benef": 1
+}
+},
+"jval": {
+"verb_freq": 827,
+"verb_parsed_freq": 25,
+"dep_gov": {
+"Nom": 14,
+"Ins": 6,
+"Loc": 3
+},
+"dep_deprel": {
+"nsubj": 11,
+"obl": 8,
+"advcl": 2,
+"dislocated": 1,
+"obl:instr": 1
+}
+},
+"jyā": {
+"verb_freq": 93,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 3
+},
+"dep_deprel": {
+"obj": 2,
+"obl": 1
+}
+},
+"jñā": {
+"verb_freq": 5041,
+"verb_parsed_freq": 78,
+"dep_gov": {
+"Acc": 68,
+"Nom": 32,
+"Ins": 5,
+"Loc": 4,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 50,
+"nsubj": 20,
+"xcomp": 15,
+"conj": 6,
+"obl": 5,
+"ccomp": 3,
+"iobj": 2,
+"parataxis": 2,
+"obl:loc": 2,
+"advcl:manner": 1,
+"orphan": 1,
+"advcl": 1,
+"dislocated": 1,
+"advcl:dpct": 1,
+"obl:instr": 1
+}
+},
+"jīv": {
+"verb_freq": 2222,
+"verb_parsed_freq": 101,
+"dep_gov": {
+"Nom": 44,
+"Acc": 17,
+"Ins": 8,
+"Abl": 6,
+"Loc": 3,
+"Gen": 3,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 18,
+"advcl": 11,
+"obl": 9,
+"flat": 8,
+"obl:instr": 7,
+"obl:source": 6,
+"obl:temp": 5,
+"advcl:dpct": 5,
+"obl:manner": 5,
+"conj": 2,
+"parataxis": 2,
+"advcl:cond": 1,
+"advmod": 1,
+"advcl:concess": 1,
+"obl:loc": 1
+}
+},
+"jū": {
+"verb_freq": 88,
+"verb_parsed_freq": 16,
+"dep_gov": {
+"Nom": 5,
+"Acc": 4,
+"Ins": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 4,
+"nsubj": 3,
+"flat": 2,
+"obl:loc": 1,
+"obl:instr": 1,
+"obl:soc": 1
+}
+},
+"kalpay": {
+"verb_freq": 1092,
+"verb_parsed_freq": 55,
+"dep_gov": {
+"Acc": 56,
+"Nom": 21,
+"Ins": 16,
+"Dat": 5,
+"Loc": 4,
+"Gen": 4,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 45,
+"nsubj": 16,
+"obl": 12,
+"iobj": 7,
+"obl:instr": 5,
+"advcl:ccomp": 4,
+"obl:loc": 3,
+"xcomp": 2,
+"conj": 2,
+"advcl:manner": 2,
+"obl:source": 2,
+"advcl:fin": 2,
+"flat": 1,
+"obl:goal": 1,
+"obl:benef": 1,
+"discourse": 1,
+"advcl:cond": 1,
+"xcomp:result": 1
+}
+},
+"kamp": {
+"verb_freq": 237,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"kathay": {
+"verb_freq": 3474,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Nom": 3,
+"Loc": 2,
+"Ins": 2,
+"Gen": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 2,
+"nsubj": 2,
+"obl:soc": 2,
+"discourse": 1,
+"iobj": 1,
+"obl:temp": 1,
+"obl:agent": 1
+}
+},
+"khan": {
+"verb_freq": 352,
+"verb_parsed_freq": 65,
+"dep_gov": {
+"Acc": 49,
+"Nom": 18,
+"Ins": 10,
+"Loc": 6,
+"Dat": 5,
+"Abl": 4
+},
+"dep_deprel": {
+"obj": 39,
+"nsubj": 16,
+"obl": 14,
+"obl:instr": 6,
+"iobj": 5,
+"advcl": 3,
+"obl:loc": 3,
+"conj": 2,
+"xcomp:result": 1,
+"obl:path": 1,
+"advcl:ccomp": 1,
+"advmod": 1
+}
+},
+"kheday": {
+"verb_freq": 25,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"khyā": {
+"verb_freq": 777,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 8,
+"Acc": 7,
+"Dat": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 6,
+"advcl:manner": 4,
+"nsubj": 3,
+"iobj": 1,
+"advcl": 1,
+"obl:temp": 1,
+"advcl:temp": 1
+}
+},
+"kram": {
+"verb_freq": 414,
+"verb_parsed_freq": 30,
+"dep_gov": {
+"Nom": 19,
+"Acc": 12,
+"Ins": 4,
+"Loc": 3,
+"Gen": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 12,
+"obl": 5,
+"obl:goal": 4,
+"obl:path": 3,
+"advcl:manner": 3,
+"obj": 3,
+"obl:instr": 2,
+"advcl:ccomp": 2,
+"advcl:dpct": 1,
+"obl:manner": 1,
+"flat": 1,
+"advcl:cond": 1,
+"conj": 1,
+"advcl": 1,
+"acl:dpct": 1
+}
+},
+"krand": {
+"verb_freq": 183,
+"verb_parsed_freq": 32,
+"dep_gov": {
+"Nom": 32,
+"Acc": 8,
+"Loc": 3
+},
+"dep_deprel": {
+"nsubj": 11,
+"obl": 7,
+"obl:manner": 7,
+"flat": 4,
+"obl:goal": 4,
+"conj": 3,
+"advcl:dpct": 3,
+"advcl:manner": 2,
+"advcl": 2
+}
+},
+"krudh": {
+"verb_freq": 1659,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Nom": 3,
+"Dat": 2,
+"Acc": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"iobj": 2,
+"conj": 1,
+"obj": 1,
+"obl": 1
+}
+},
+"krī": {
+"verb_freq": 439,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Acc": 16,
+"Ins": 6,
+"Loc": 3,
+"Nom": 1,
+"Abl": 1,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 13,
+"obl": 7,
+"conj": 4,
+"nsubj": 2,
+"obl:instr": 2,
+"obl:temp": 1
+}
+},
+"krīḍ": {
+"verb_freq": 494,
+"verb_parsed_freq": 16,
+"dep_gov": {
+"Nom": 11,
+"Loc": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"obl:manner": 5,
+"nsubj": 4,
+"obl:loc": 2,
+"acl:dpct": 1,
+"advcl": 1,
+"conj": 1
+}
+},
+"kup": {
+"verb_freq": 521,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"kāray": {
+"verb_freq": 1659,
+"verb_parsed_freq": 49,
+"dep_gov": {
+"Acc": 55,
+"Loc": 19,
+"Nom": 6,
+"Abl": 3,
+"Ins": 3,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 43,
+"obl": 11,
+"obl:loc": 9,
+"obl:temp": 9,
+"conj": 6,
+"nsubj": 3,
+"obl:source": 1,
+"iobj": 1,
+"advcl:dpct": 1,
+"advcl:cond": 1,
+"obl:agent": 1,
+"advmod": 1
+}
+},
+"kāṅkṣ": {
+"verb_freq": 202,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 4,
+"Nom": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 3,
+"conj": 2,
+"nsubj": 1,
+"obl": 1
+}
+},
+"kīrtay": {
+"verb_freq": 771,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Nom": 7,
+"Gen": 6,
+"Acc": 4,
+"Loc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 5,
+"nsubj": 4,
+"obl": 3,
+"conj": 2,
+"parataxis": 1,
+"advmod": 1,
+"advcl": 1,
+"obl:loc": 1,
+"ccomp": 1,
+"iobj": 1
+}
+},
+"kṣam": {
+"verb_freq": 439,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Nom": 5,
+"Dat": 3,
+"Loc": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"iobj": 2,
+"obl:temp": 2,
+"advcl:manner": 1,
+"obj": 1,
+"obl": 1,
+"advcl": 1
+}
+},
+"kṣar": {
+"verb_freq": 220,
+"verb_parsed_freq": 31,
+"dep_gov": {
+"Nom": 26,
+"Acc": 9,
+"Dat": 5,
+"Ins": 4,
+"Loc": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"nsubj": 13,
+"obl:goal": 7,
+"advcl:manner": 5,
+"obl:soc": 3,
+"obl:manner": 3,
+"advcl": 3,
+"advcl:dpct": 3,
+"obl:source": 2,
+"obl": 2,
+"parataxis": 1,
+"advmod": 1,
+"advcl:fin": 1,
+"obl:benef": 1,
+"obl:path": 1,
+"conj": 1,
+"iobj": 1,
+"obl:loc": 1
+}
+},
+"kṣi": {
+"verb_freq": 1181,
+"verb_parsed_freq": 59,
+"dep_gov": {
+"Nom": 27,
+"Acc": 9,
+"Loc": 8,
+"Gen": 6,
+"Ins": 4,
+"Abl": 2
+},
+"dep_deprel": {
+"nsubj": 17,
+"obj": 11,
+"obl": 6,
+"obl:loc": 5,
+"advcl": 4,
+"flat": 2,
+"obl:manner": 2,
+"advcl:manner": 2,
+"obl:instr": 1,
+"conj": 1,
+"obl:temp": 1,
+"advmod": 1,
+"obl:source": 1,
+"orphan": 1,
+"advcl:dpct": 1
+}
+},
+"kṣip": {
+"verb_freq": 2461,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Acc": 4,
+"Nom": 2,
+"Loc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 3,
+"advcl:dpct": 1,
+"obl:goal": 1,
+"discourse": 1,
+"obl": 1,
+"conj": 1
+}
+},
+"labh": {
+"verb_freq": 3345,
+"verb_parsed_freq": 33,
+"dep_gov": {
+"Acc": 21,
+"Nom": 14,
+"Ins": 8,
+"Loc": 4,
+"Dat": 2,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 21,
+"nsubj": 9,
+"obl": 5,
+"conj": 5,
+"advcl": 2,
+"obl:instr": 2,
+"obl:agent": 2,
+"advcl:fin": 1,
+"advcl:concess": 1,
+"acl": 1,
+"iobj": 1,
+"csubj": 1
+}
+},
+"lajj": {
+"verb_freq": 109,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"advcl:temp": 1
+}
+},
+"lakṣ": {
+"verb_freq": 39,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"lamb": {
+"verb_freq": 130,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"las": {
+"verb_freq": 59,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"laṅgh": {
+"verb_freq": 32,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"laṅghay": {
+"verb_freq": 137,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"lih": {
+"verb_freq": 405,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"likh": {
+"verb_freq": 509,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Acc": 17,
+"Ins": 2,
+"Abl": 2,
+"Nom": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"conj": 10,
+"obj": 4,
+"flat": 3,
+"obl:instr": 2,
+"advmod": 1,
+"advcl:ccomp": 1,
+"obl": 1,
+"obl:loc": 1
+}
+},
+"lubh": {
+"verb_freq": 325,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"mad": {
+"verb_freq": 1085,
+"verb_parsed_freq": 53,
+"dep_gov": {
+"Nom": 29,
+"Ins": 17,
+"Acc": 14,
+"Loc": 10,
+"Gen": 3,
+"Dat": 3
+},
+"dep_deprel": {
+"nsubj": 17,
+"obl": 13,
+"obj": 12,
+"obl:instr": 9,
+"obl:loc": 5,
+"advcl": 4,
+"flat": 3,
+"obl:temp": 3,
+"advcl:dpct": 3,
+"conj": 2,
+"appos": 2,
+"advcl:temp": 1,
+"obl:manner": 1,
+"advcl:fin": 1
+}
+},
+"majj": {
+"verb_freq": 343,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Loc": 3,
+"Acc": 2,
+"Nom": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obl:loc": 2,
+"obl": 2,
+"conj": 1,
+"obl:goal": 1,
+"nsubj": 1,
+"advcl": 1
+}
+},
+"man": {
+"verb_freq": 4697,
+"verb_parsed_freq": 143,
+"dep_gov": {
+"Acc": 112,
+"Nom": 100,
+"Ins": 9,
+"Loc": 7,
+"Gen": 4,
+"Abl": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 61,
+"xcomp": 60,
+"nsubj": 52,
+"advcl": 15,
+"conj": 12,
+"obl": 8,
+"obl:instr": 5,
+"ccomp": 3,
+"iobj": 3,
+"advcl:manner": 2,
+"advmod": 2,
+"flat": 2,
+"advcl:dpct": 1,
+"advcl:temp": 1,
+"orphan": 1,
+"advcl:concess": 1,
+"nmod:appos": 1,
+"obl:agent": 1,
+"advcl:fin": 1,
+"obl:goal": 1,
+"obl:temp": 1,
+"obl:manner": 1
+}
+},
+"mantray": {
+"verb_freq": 276,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 3,
+"Acc": 3
+},
+"dep_deprel": {
+"nsubj": 3,
+"obj": 2,
+"iobj": 1
+}
+},
+"mith": {
+"verb_freq": 6,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"miśray": {
+"verb_freq": 186,
+"verb_parsed_freq": 1,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"mokṣay": {
+"verb_freq": 143,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2,
+"Abl": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 2,
+"obl:source": 1,
+"nsubj": 1
+}
+},
+"muc": {
+"verb_freq": 3850,
+"verb_parsed_freq": 118,
+"dep_gov": {
+"Acc": 64,
+"Nom": 53,
+"Abl": 49,
+"Ins": 15,
+"Gen": 6,
+"Dat": 5,
+"Loc": 4
+},
+"dep_deprel": {
+"obj": 50,
+"obl:source": 43,
+"nsubj": 36,
+"obl": 15,
+"flat": 11,
+"advcl": 11,
+"obl:instr": 6,
+"iobj": 4,
+"advcl:manner": 4,
+"conj": 4,
+"obl:goal": 3,
+"advcl:fin": 2,
+"advcl:caus": 2,
+"advcl:dpct": 2,
+"parataxis": 1,
+"dislocated": 1,
+"obl:manner": 1
+}
+},
+"muṣ": {
+"verb_freq": 162,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Acc": 4,
+"Nom": 4
+},
+"dep_deprel": {
+"obj": 3,
+"nsubj": 2,
+"obl:manner": 2,
+"iobj": 1
+}
+},
+"mā": {
+"verb_freq": 680,
+"verb_parsed_freq": 36,
+"dep_gov": {
+"Acc": 22,
+"Nom": 22,
+"Ins": 8,
+"Dat": 4,
+"Loc": 3,
+"Abl": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 21,
+"nsubj": 11,
+"advcl": 6,
+"obl": 6,
+"flat": 3,
+"obl:manner": 3,
+"obl:loc": 2,
+"conj": 2,
+"obl:source": 1,
+"advcl:fin": 1,
+"obl:instr": 1,
+"obl:path": 1,
+"obl:benef": 1,
+"obl:temp": 1,
+"advcl:manner": 1,
+"iobj": 1
+}
+},
+"mūrch": {
+"verb_freq": 189,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nad": {
+"verb_freq": 460,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nakṣ": {
+"verb_freq": 57,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 9,
+"Nom": 9,
+"Ins": 4
+},
+"dep_deprel": {
+"obl": 6,
+"nsubj": 5,
+"obl:goal": 3,
+"obj": 3,
+"advcl:dpct": 2,
+"obl:soc": 1,
+"advcl:manner": 1,
+"obl:manner": 1
+}
+},
+"nam": {
+"verb_freq": 666,
+"verb_parsed_freq": 35,
+"dep_gov": {
+"Nom": 29,
+"Acc": 27,
+"Dat": 10,
+"Ins": 4,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 22,
+"obj": 11,
+"obl:goal": 8,
+"obl": 8,
+"iobj": 4,
+"obl:manner": 4,
+"conj": 3,
+"advcl:manner": 3,
+"advcl": 2,
+"obl:benef": 2,
+"obl:path": 1,
+"advcl:cond": 1,
+"obl:instr": 1,
+"advmod": 1
+}
+},
+"naś": {
+"verb_freq": 1418,
+"verb_parsed_freq": 59,
+"dep_gov": {
+"Nom": 41,
+"Acc": 23,
+"Abl": 5,
+"Ins": 5,
+"Loc": 4,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 30,
+"obj": 14,
+"obl": 9,
+"advcl": 6,
+"conj": 5,
+"obl:source": 4,
+"obl:goal": 4,
+"dislocated": 2,
+"obl:instr": 2,
+"advcl:manner": 1,
+"advcl:temp": 1,
+"obl:manner": 1,
+"obl:soc": 1
+}
+},
+"nibādh": {
+"verb_freq": 4,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nidhā": {
+"verb_freq": 1595,
+"verb_parsed_freq": 195,
+"dep_gov": {
+"Acc": 142,
+"Loc": 78,
+"Nom": 36,
+"Gen": 14,
+"Ins": 11,
+"Dat": 9,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 104,
+"obl:goal": 46,
+"obl:loc": 34,
+"nsubj": 21,
+"obl": 20,
+"conj": 20,
+"advcl:ccomp": 15,
+"xcomp": 4,
+"advcl": 3,
+"ccomp": 3,
+"obl:instr": 3,
+"obl:soc": 2,
+"advmod": 2,
+"advcl:fin": 2,
+"iobj": 2,
+"advcl:temp": 1,
+"obl:source": 1,
+"discourse": 1,
+"obl:manner": 1,
+"obl:benef": 1,
+"advcl:manner": 1,
+"obl:agent": 1,
+"orphan": 1,
+"flat": 1,
+"det": 1,
+"csubj": 1
+}
+},
+"nigrah": {
+"verb_freq": 353,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 6,
+"Loc": 3,
+"Nom": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 6,
+"obl:loc": 2,
+"nsubj": 1,
+"obl:goal": 1,
+"obl:instr": 1
+}
+},
+"niguh": {
+"verb_freq": 64,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Ins": 1
+},
+"dep_deprel": {
+"obl": 1
+}
+},
+"nikṣip": {
+"verb_freq": 630,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Loc": 2,
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 1,
+"obl": 1,
+"advcl:ccomp": 1,
+"obl:goal": 1
+}
+},
+"nimantray": {
+"verb_freq": 91,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nipat": {
+"verb_freq": 898,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl:goal": 1
+}
+},
+"nipātay": {
+"verb_freq": 396,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 3,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 2,
+"advcl:ccomp": 1,
+"obl": 1
+}
+},
+"nirbhaj": {
+"verb_freq": 48,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Abl": 6,
+"Acc": 6,
+"Nom": 3,
+"Ins": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 6,
+"obl:source": 5,
+"nsubj": 3,
+"obl": 2,
+"conj": 1
+}
+},
+"nirdiś": {
+"verb_freq": 523,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 3,
+"Ins": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"advcl:cond": 2,
+"csubj": 1,
+"obl:instr": 1,
+"obj": 1
+}
+},
+"nirgam": {
+"verb_freq": 547,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nirgā": {
+"verb_freq": 31,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nirmā": {
+"verb_freq": 600,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Acc": 14,
+"Nom": 12,
+"Abl": 10,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"obj": 9,
+"obl:source": 8,
+"conj": 4,
+"obl": 2,
+"xcomp": 1,
+"xcomp:result": 1,
+"ccomp": 1,
+"obl:temp": 1
+}
+},
+"nirvah": {
+"verb_freq": 26,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2
+},
+"dep_deprel": {
+"nsubj": 2,
+"obj": 2
+}
+},
+"nirveday": {
+"verb_freq": 1,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"nirvid": {
+"verb_freq": 27,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 3,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 3,
+"nsubj": 1
+}
+},
+"nirvāsay": {
+"verb_freq": 49,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"niryā": {
+"verb_freq": 354,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"obl": 2,
+"advcl": 1
+}
+},
+"niryāc": {
+"verb_freq": 13,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 1,
+"obl:source": 1
+}
+},
+"nivartay": {
+"verb_freq": 206,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Acc": 2,
+"Nom": 1,
+"Ins": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 1,
+"nsubj": 1,
+"obl": 1,
+"parataxis": 1,
+"advcl:fin": 1
+}
+},
+"nivas": {
+"verb_freq": 396,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 4,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"conj": 2,
+"advcl": 2,
+"obj": 1,
+"nsubj": 1,
+"obl:soc": 1
+}
+},
+"niveday": {
+"verb_freq": 879,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 7,
+"Dat": 5,
+"Ins": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"iobj": 5,
+"obj": 4,
+"xcomp": 2,
+"advmod": 1,
+"obl:instr": 1,
+"nsubj": 1
+}
+},
+"nivāray": {
+"verb_freq": 405,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"niyam": {
+"verb_freq": 1013,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Acc": 7,
+"Nom": 6,
+"Dat": 3,
+"Abl": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 6,
+"nsubj": 5,
+"obl": 3,
+"iobj": 3,
+"advmod": 1,
+"obl:temp": 1,
+"parataxis": 1
+}
+},
+"niyojay": {
+"verb_freq": 233,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"niṣkas": {
+"verb_freq": 19,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"niṣkrī": {
+"verb_freq": 67,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Acc": 14,
+"Abl": 7,
+"Nom": 7,
+"Ins": 4
+},
+"dep_deprel": {
+"obj": 12,
+"obl:source": 6,
+"nsubj": 4,
+"obl": 4,
+"conj": 2,
+"advcl:cond": 2,
+"advmod": 1,
+"obl:instr": 1
+}
+},
+"niṣpad": {
+"verb_freq": 115,
+"verb_parsed_freq": 1,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"niṣpat": {
+"verb_freq": 108,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl:source": 1
+}
+},
+"nud": {
+"verb_freq": 332,
+"verb_parsed_freq": 36,
+"dep_gov": {
+"Acc": 29,
+"Abl": 14,
+"Nom": 9,
+"Ins": 8
+},
+"dep_deprel": {
+"obj": 24,
+"obl": 13,
+"nsubj": 8,
+"obl:source": 5,
+"obl:instr": 4,
+"conj": 2,
+"obl:goal": 2,
+"advmod": 1,
+"advcl": 1
+}
+},
+"nī": {
+"verb_freq": 2350,
+"verb_parsed_freq": 133,
+"dep_gov": {
+"Acc": 131,
+"Nom": 76,
+"Ins": 14,
+"Dat": 11,
+"Loc": 5,
+"Abl": 3,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 69,
+"nsubj": 43,
+"obl:goal": 23,
+"obl": 21,
+"flat": 13,
+"advcl": 12,
+"advcl:manner": 8,
+"obl:path": 8,
+"advmod": 6,
+"iobj": 5,
+"obl:manner": 5,
+"obl:source": 4,
+"advcl:dpct": 3,
+"advcl:fin": 3,
+"advcl:ccomp": 3,
+"obl:temp": 3,
+"obl:instr": 3,
+"obl:soc": 2,
+"obl:benef": 2,
+"xcomp": 1,
+"conj": 1,
+"obl:agent": 1,
+"acl:attr": 1,
+"orphan": 1
+}
+},
+"nū": {
+"verb_freq": 102,
+"verb_parsed_freq": 20,
+"dep_gov": {
+"Nom": 25,
+"Acc": 9,
+"Loc": 5,
+"Ins": 3,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 16,
+"advcl:manner": 5,
+"obl": 4,
+"obj": 3,
+"obl:manner": 3,
+"iobj": 3,
+"obl:temp": 2,
+"advcl": 2,
+"obl:goal": 1,
+"obl:loc": 1,
+"obl:instr": 1,
+"advcl:fin": 1,
+"advmod": 1
+}
+},
+"pac": {
+"verb_freq": 2058,
+"verb_parsed_freq": 44,
+"dep_gov": {
+"Acc": 32,
+"Nom": 22,
+"Loc": 10,
+"Ins": 9,
+"Dat": 6,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 22,
+"nsubj": 20,
+"obl": 16,
+"advmod": 5,
+"iobj": 3,
+"obl:temp": 3,
+"xcomp:result": 2,
+"advcl": 2,
+"conj": 1,
+"orphan": 1,
+"obl:instr": 1,
+"obl:benef": 1,
+"xcomp": 1,
+"obl:manner": 1,
+"obl:loc": 1
+}
+},
+"pad": {
+"verb_freq": 134,
+"verb_parsed_freq": 33,
+"dep_gov": {
+"Nom": 13,
+"Acc": 9,
+"Loc": 4,
+"Abl": 3,
+"Dat": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"obl": 5,
+"obl:goal": 4,
+"iobj": 3,
+"obl:source": 2,
+"advcl": 2,
+"flat": 2,
+"nmod": 1,
+"parataxis": 1,
+"obj": 1,
+"xcomp": 1
+}
+},
+"panay": {
+"verb_freq": 9,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 2,
+"advcl:manner": 1
+}
+},
+"paribādh": {
+"verb_freq": 17,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 2,
+"Nom": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obj": 1,
+"obl": 1,
+"flat": 1
+}
+},
+"parigam": {
+"verb_freq": 81,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"parigaṇay": {
+"verb_freq": 8,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"parikrī": {
+"verb_freq": 31,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 6,
+"Nom": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 5,
+"advmod": 1,
+"obl:instr": 1,
+"xcomp": 1
+}
+},
+"parikṣip": {
+"verb_freq": 116,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"parituṣ": {
+"verb_freq": 102,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"parivarjay": {
+"verb_freq": 206,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 2,
+"obl": 2
+}
+},
+"pat": {
+"verb_freq": 3123,
+"verb_parsed_freq": 43,
+"dep_gov": {
+"Nom": 36,
+"Acc": 11,
+"Loc": 5,
+"Ins": 4,
+"Abl": 4,
+"Dat": 3,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 24,
+"obl": 11,
+"advcl": 8,
+"conj": 4,
+"obl:goal": 3,
+"obl:loc": 2,
+"advcl:fin": 2,
+"dislocated": 2,
+"obl:manner": 2,
+"obl:soc": 1,
+"advcl:temp": 1,
+"obl:source": 1,
+"advmod": 1,
+"obl:temp": 1,
+"advcl:manner": 1,
+"obl:grad": 1
+}
+},
+"patay": {
+"verb_freq": 35,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 6,
+"Loc": 2,
+"Gen": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obl:loc": 1,
+"obl:manner": 1,
+"advcl:manner": 1,
+"nmod": 1,
+"conj": 1
+}
+},
+"paś": {
+"verb_freq": 4732,
+"verb_parsed_freq": 186,
+"dep_gov": {
+"Acc": 158,
+"Nom": 99,
+"Ins": 22,
+"Loc": 10,
+"Abl": 4,
+"Gen": 3,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 133,
+"nsubj": 78,
+"obl": 13,
+"obl:instr": 13,
+"flat": 11,
+"advcl": 9,
+"xcomp": 8,
+"conj": 7,
+"obl:loc": 6,
+"obl:source": 4,
+"advcl:temp": 2,
+"obl:manner": 2,
+"obl:temp": 2,
+"parataxis": 1,
+"advcl:fin": 1,
+"mark": 1,
+"advcl:dpct": 1,
+"xcomp:result": 1,
+"discourse": 1,
+"advcl:ccomp": 1,
+"advmod": 1,
+"obl:goal": 1
+}
+},
+"paṇ": {
+"verb_freq": 36,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Ins": 1
+},
+"dep_deprel": {
+"obl": 1
+}
+},
+"pinv": {
+"verb_freq": 182,
+"verb_parsed_freq": 32,
+"dep_gov": {
+"Acc": 20,
+"Nom": 19,
+"Ins": 7,
+"Dat": 7,
+"Loc": 4
+},
+"dep_deprel": {
+"obj": 14,
+"nsubj": 12,
+"obl": 8,
+"obl:instr": 5,
+"obl:manner": 4,
+"iobj": 4,
+"advcl:manner": 2,
+"advmod": 1,
+"flat": 1,
+"dislocated": 1,
+"obl:loc": 1,
+"conj": 1,
+"acl:dpct": 1,
+"advcl": 1,
+"obl:temp": 1
+}
+},
+"piś": {
+"verb_freq": 36,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Acc": 10,
+"Nom": 5,
+"Ins": 3
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 3,
+"advcl:manner": 2,
+"obl:instr": 2,
+"advcl": 1,
+"obl": 1
+}
+},
+"plu": {
+"verb_freq": 297,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Loc": 2,
+"Nom": 2
+},
+"dep_deprel": {
+"obl": 1,
+"obl:manner": 1,
+"advcl": 1,
+"obl:loc": 1
+}
+},
+"prabhū": {
+"verb_freq": 357,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Nom": 10,
+"Abl": 4,
+"Dat": 1,
+"Acc": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 8,
+"obl:source": 4,
+"iobj": 1,
+"advcl": 1,
+"obl": 1,
+"advcl:caus": 1,
+"obl:loc": 1
+}
+},
+"prabodhay": {
+"verb_freq": 75,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 4,
+"Dat": 1
+},
+"dep_deprel": {
+"advmod": 2,
+"obj": 2,
+"advcl:fin": 1
+}
+},
+"prabrū": {
+"verb_freq": 244,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Dat": 16,
+"Acc": 15,
+"Nom": 9,
+"Ins": 3,
+"Loc": 1
+},
+"dep_deprel": {
+"iobj": 15,
+"obj": 12,
+"nsubj": 5,
+"obl": 3,
+"advmod": 2,
+"conj": 2,
+"ccomp": 2,
+"advcl:cond": 1,
+"obl:manner": 1,
+"flat": 1
+}
+},
+"pracch": {
+"verb_freq": 2851,
+"verb_parsed_freq": 83,
+"dep_gov": {
+"Acc": 68,
+"Nom": 44,
+"Ins": 7,
+"Loc": 3
+},
+"dep_deprel": {
+"iobj": 35,
+"nsubj": 25,
+"obj": 24,
+"ccomp": 11,
+"obl": 9,
+"flat": 5,
+"conj": 3,
+"obl:agent": 2,
+"advcl": 2,
+"obl:instr": 2,
+"advcl:caus": 1,
+"advmod": 1,
+"advcl:temp": 1,
+"advcl:dpct": 1
+}
+},
+"pracyu": {
+"verb_freq": 140,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 3,
+"Nom": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"obl:source": 2,
+"conj": 2,
+"nsubj": 2,
+"obl": 1,
+"obl:goal": 1
+}
+},
+"pradru": {
+"verb_freq": 267,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 6
+},
+"dep_deprel": {
+"nsubj": 6
+}
+},
+"pradā": {
+"verb_freq": 1348,
+"verb_parsed_freq": 35,
+"dep_gov": {
+"Dat": 19,
+"Acc": 17,
+"Ins": 12,
+"Nom": 6
+},
+"dep_deprel": {
+"iobj": 19,
+"obj": 17,
+"obl": 6,
+"nsubj": 3,
+"obl:instr": 3,
+"advcl:ccomp": 2,
+"flat": 2,
+"parataxis": 1,
+"obl:agent": 1
+}
+},
+"prahas": {
+"verb_freq": 476,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"prahi": {
+"verb_freq": 433,
+"verb_parsed_freq": 15,
+"dep_gov": {
+"Acc": 11,
+"Nom": 8,
+"Ins": 3,
+"Dat": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 7,
+"nsubj": 5,
+"obl:agent": 2,
+"conj": 2,
+"obl:goal": 2,
+"advcl": 2,
+"obl": 2,
+"flat": 1,
+"xcomp": 1,
+"iobj": 1
+}
+},
+"prajan": {
+"verb_freq": 882,
+"verb_parsed_freq": 83,
+"dep_gov": {
+"Nom": 31,
+"Ins": 18,
+"Acc": 15,
+"Abl": 8,
+"Loc": 3,
+"Gen": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 21,
+"obl": 13,
+"obl:instr": 10,
+"obl:source": 8,
+"conj": 6,
+"obj": 5,
+"advcl": 4,
+"flat": 2,
+"obl:temp": 2,
+"parataxis": 2,
+"advcl:temp": 1,
+"advcl:fin": 1,
+"xcomp:result": 1,
+"obl:path": 1,
+"advcl:cond": 1
+}
+},
+"prajval": {
+"verb_freq": 222,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"prakāśay": {
+"verb_freq": 233,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2
+},
+"dep_deprel": {
+"obj": 2
+}
+},
+"prakṣip": {
+"verb_freq": 370,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Loc": 3,
+"Acc": 2,
+"Nom": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obl:goal": 3,
+"obj": 2,
+"nsubj": 1,
+"obl": 1
+}
+},
+"prapat": {
+"verb_freq": 189,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Nom": 3,
+"Loc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"obl:goal": 1,
+"advcl:caus": 1
+}
+},
+"prarud": {
+"verb_freq": 61,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"prasad": {
+"verb_freq": 989,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"flat": 1
+}
+},
+"prasidh": {
+"verb_freq": 450,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"prasthā": {
+"verb_freq": 555,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Nom": 4
+},
+"dep_deprel": {
+"nsubj": 2,
+"advcl": 2
+}
+},
+"prasū": {
+"verb_freq": 751,
+"verb_parsed_freq": 54,
+"dep_gov": {
+"Nom": 15,
+"Ins": 10,
+"Dat": 9,
+"Acc": 9,
+"Loc": 3,
+"Gen": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"iobj": 8,
+"nsubj": 7,
+"flat": 7,
+"obj": 5,
+"ccomp": 4,
+"obl:agent": 3,
+"obl": 3,
+"obl:temp": 3,
+"conj": 2,
+"advcl:fin": 2,
+"obl:source": 1,
+"obl:path": 1,
+"advcl:ccomp": 1,
+"obl:instr": 1,
+"xcomp": 1
+}
+},
+"pratan": {
+"verb_freq": 76,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Abl": 3,
+"Acc": 3,
+"Nom": 3
+},
+"dep_deprel": {
+"obl:source": 3,
+"nsubj": 3,
+"flat": 1,
+"obj": 1,
+"advmod": 1
+}
+},
+"prath": {
+"verb_freq": 365,
+"verb_parsed_freq": 32,
+"dep_gov": {
+"Nom": 20,
+"Ins": 8,
+"Acc": 8,
+"Loc": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 11,
+"obl": 8,
+"flat": 5,
+"obj": 3,
+"obl:loc": 2,
+"advcl:dpct": 2,
+"conj": 1,
+"dislocated": 1,
+"advcl": 1,
+"advcl:manner": 1,
+"obl:instr": 1,
+"advcl:temp": 1,
+"obl:grad": 1,
+"obl:manner": 1
+}
+},
+"prathay": {
+"verb_freq": 109,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Acc": 12,
+"Ins": 4,
+"Nom": 4
+},
+"dep_deprel": {
+"advcl:ccomp": 5,
+"obj": 4,
+"nsubj": 3,
+"advcl": 2,
+"obl": 2,
+"obl:agent": 1,
+"obl:manner": 1,
+"flat": 1,
+"xcomp:result": 1
+}
+},
+"pratibhā": {
+"verb_freq": 164,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"xcomp": 1,
+"nsubj": 1,
+"iobj": 1
+}
+},
+"pratigam": {
+"verb_freq": 76,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"pratigarj": {
+"verb_freq": 8,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"pratihan": {
+"verb_freq": 245,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Acc": 2,
+"Nom": 2,
+"Loc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 2,
+"nsubj": 2,
+"obl:instr": 1,
+"conj": 1,
+"obl:goal": 1
+}
+},
+"pratiśru": {
+"verb_freq": 184,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2,
+"Dat": 1,
+"Ins": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"iobj": 1,
+"obl": 1,
+"obj": 1,
+"advcl": 1
+}
+},
+"pravac": {
+"verb_freq": 3242,
+"verb_parsed_freq": 38,
+"dep_gov": {
+"Nom": 25,
+"Acc": 23,
+"Dat": 21,
+"Loc": 7,
+"Ins": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 24,
+"obj": 22,
+"iobj": 21,
+"ccomp": 3,
+"obl": 2,
+"xcomp": 2,
+"conj": 1,
+"obl:manner": 1,
+"obl:loc": 1,
+"obl:temp": 1
+}
+},
+"pravical": {
+"verb_freq": 6,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"praviś": {
+"verb_freq": 2848,
+"verb_parsed_freq": 132,
+"dep_gov": {
+"Acc": 104,
+"Nom": 79,
+"Loc": 15,
+"Dat": 15,
+"Ins": 10,
+"Abl": 4,
+"Gen": 1
+},
+"dep_deprel": {
+"obl:goal": 73,
+"nsubj": 66,
+"obl": 20,
+"conj": 17,
+"advcl:fin": 15,
+"advmod": 9,
+"obj": 8,
+"flat": 4,
+"obl:temp": 3,
+"advcl": 3,
+"obl:source": 2,
+"advcl:manner": 1,
+"obl:path": 1,
+"advcl:cond": 1,
+"advcl:dpct": 1,
+"advcl:temp": 1,
+"obl:soc": 1,
+"advcl:ccomp": 1,
+"obl:loc": 1
+}
+},
+"pravraj": {
+"verb_freq": 222,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 8,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"advcl": 3,
+"advcl:dpct": 2,
+"obl:soc": 1
+}
+},
+"prayam": {
+"verb_freq": 1563,
+"verb_parsed_freq": 101,
+"dep_gov": {
+"Acc": 84,
+"Dat": 75,
+"Nom": 33,
+"Ins": 7,
+"Gen": 4,
+"Abl": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"iobj": 77,
+"obj": 74,
+"nsubj": 26,
+"advcl:ccomp": 6,
+"advmod": 5,
+"obl:instr": 4,
+"flat": 3,
+"obl": 2,
+"xcomp": 2,
+"advcl": 1,
+"obl:source": 1,
+"advcl:fin": 1,
+"obl:soc": 1,
+"advcl:temp": 1,
+"obl:loc": 1
+}
+},
+"prayuj": {
+"verb_freq": 1196,
+"verb_parsed_freq": 61,
+"dep_gov": {
+"Acc": 60,
+"Nom": 11,
+"Loc": 8,
+"Dat": 8,
+"Ins": 2
+},
+"dep_deprel": {
+"obj": 45,
+"obl": 10,
+"obl:temp": 8,
+"advmod": 8,
+"nsubj": 5,
+"conj": 3,
+"advcl:ccomp": 2,
+"advcl:fin": 2,
+"discourse": 1,
+"advcl:cond": 1,
+"obl:instr": 1,
+"ccomp": 1,
+"advcl": 1,
+"advcl:dpct": 1
+}
+},
+"prayā": {
+"verb_freq": 1436,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 9,
+"Acc": 6,
+"Ins": 5,
+"Loc": 2
+},
+"dep_deprel": {
+"nsubj": 6,
+"obl:goal": 4,
+"advcl": 2,
+"obl:instr": 2,
+"obl:temp": 2,
+"obl:soc": 2,
+"advcl:manner": 1,
+"advcl:temp": 1,
+"advcl:dpct": 1,
+"obl:path": 1
+}
+},
+"praśaṃs": {
+"verb_freq": 1071,
+"verb_parsed_freq": 24,
+"dep_gov": {
+"Nom": 14,
+"Acc": 13,
+"Loc": 8,
+"Ins": 4,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 8,
+"nsubj": 8,
+"advcl:cond": 3,
+"obl:manner": 3,
+"obl": 3,
+"advcl": 2,
+"flat": 2,
+"conj": 2,
+"obl:loc": 2,
+"obl:instr": 2,
+"advcl:fin": 1,
+"xcomp": 1,
+"advmod": 1,
+"vocative": 1,
+"obl:temp": 1
+}
+},
+"praṇam": {
+"verb_freq": 985,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"prāp": {
+"verb_freq": 6022,
+"verb_parsed_freq": 51,
+"dep_gov": {
+"Acc": 43,
+"Nom": 26,
+"Ins": 4,
+"Loc": 3,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 22,
+"obl:goal": 19,
+"nsubj": 17,
+"obl": 4,
+"conj": 3,
+"advcl": 3,
+"csubj": 2,
+"advcl:dpct": 2,
+"discourse": 1,
+"obl:manner": 1,
+"obl:source": 1,
+"obl:agent": 1,
+"obl:temp": 1,
+"obl:instr": 1
+}
+},
+"prārthay": {
+"verb_freq": 424,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Loc": 1,
+"Nom": 1,
+"Abl": 1,
+"Acc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"advcl": 1,
+"nsubj": 1,
+"obl:source": 1,
+"obj": 1,
+"obl": 1
+}
+},
+"prāṇ": {
+"verb_freq": 156,
+"verb_parsed_freq": 33,
+"dep_gov": {
+"Nom": 17,
+"Ins": 9,
+"Acc": 2,
+"Loc": 1,
+"Dat": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obl:instr": 8,
+"conj": 8,
+"nsubj": 6,
+"obl": 2,
+"flat": 2,
+"obj": 2,
+"discourse": 1,
+"mark": 1,
+"advcl:fin": 1
+}
+},
+"prī": {
+"verb_freq": 1770,
+"verb_parsed_freq": 108,
+"dep_gov": {
+"Acc": 87,
+"Nom": 31,
+"Ins": 23,
+"Gen": 3,
+"Loc": 3,
+"Dat": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 64,
+"advmod": 19,
+"obl": 16,
+"nsubj": 10,
+"conj": 10,
+"obl:instr": 7,
+"advcl": 5,
+"flat": 5,
+"obl:agent": 4,
+"advcl:ccomp": 3,
+"advcl:cond": 2,
+"discourse": 1,
+"obl:temp": 1,
+"obl:grad": 1,
+"obl:manner": 1,
+"acl": 1
+}
+},
+"puṣ": {
+"verb_freq": 438,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Acc": 11,
+"Nom": 10,
+"Loc": 3,
+"Ins": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 8,
+"conj": 5,
+"obl": 4,
+"nsubj": 3,
+"obl:manner": 3,
+"obl:loc": 1,
+"advcl": 1,
+"advcl:manner": 1
+}
+},
+"pā": {
+"verb_freq": 5393,
+"verb_parsed_freq": 288,
+"dep_gov": {
+"Acc": 183,
+"Nom": 134,
+"Ins": 41,
+"Abl": 35,
+"Gen": 27,
+"Dat": 19,
+"Loc": 15
+},
+"dep_deprel": {
+"obj": 169,
+"nsubj": 79,
+"obl": 38,
+"flat": 35,
+"obl:source": 23,
+"advcl": 23,
+"obl:instr": 16,
+"advcl:fin": 13,
+"conj": 9,
+"obl:temp": 7,
+"advcl:dpct": 7,
+"obl:soc": 5,
+"obl:manner": 5,
+"obl:loc": 4,
+"dislocated": 3,
+"csubj": 2,
+"advcl:manner": 2,
+"advcl:ccomp": 2,
+"obl:benef": 2,
+"advmod": 2,
+"parataxis": 1,
+"ccomp:rel": 1,
+"vocative": 1,
+"obl:agent": 1,
+"orphan": 1,
+"obl:goal": 1,
+"xcomp": 1,
+"advcl:temp": 1
+}
+},
+"pāday": {
+"verb_freq": 24,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 6,
+"Loc": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 3,
+"obl:goal": 2,
+"xcomp:result": 1,
+"advmod": 1,
+"flat": 1,
+"advcl:ccomp": 1
+}
+},
+"pū": {
+"verb_freq": 2162,
+"verb_parsed_freq": 230,
+"dep_gov": {
+"Nom": 108,
+"Acc": 70,
+"Ins": 36,
+"Dat": 20,
+"Loc": 11,
+"Abl": 9,
+"Gen": 7
+},
+"dep_deprel": {
+"nsubj": 57,
+"obj": 51,
+"obl": 25,
+"flat": 23,
+"obl:instr": 21,
+"conj": 17,
+"advcl": 14,
+"obl:manner": 6,
+"advcl:dpct": 6,
+"obl:benef": 5,
+"iobj": 4,
+"obl:goal": 4,
+"advmod": 3,
+"advcl:manner": 3,
+"advcl:fin": 3,
+"obl:loc": 3,
+"obl:agent": 2,
+"acl": 1,
+"parataxis": 1,
+"advcl:ccomp": 1,
+"nmod": 1,
+"advcl:cond": 1,
+"csubj": 1,
+"advcl:temp": 1,
+"det": 1,
+"xcomp:result": 1,
+"xcomp": 1,
+"acl:attr": 1,
+"acl:dpct": 1,
+"obl:path": 1,
+"amod": 1
+}
+},
+"rah": {
+"verb_freq": 15,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"rakṣ": {
+"verb_freq": 1929,
+"verb_parsed_freq": 87,
+"dep_gov": {
+"Acc": 65,
+"Nom": 62,
+"Abl": 13,
+"Ins": 9,
+"Loc": 4,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 59,
+"nsubj": 47,
+"obl": 9,
+"obl:source": 9,
+"advcl": 4,
+"obl:instr": 3,
+"advmod": 3,
+"advcl:dpct": 3,
+"obl:manner": 2,
+"xcomp": 2,
+"advcl:caus": 2,
+"obl:loc": 2,
+"advcl:manner": 2,
+"obl:temp": 2,
+"obl:soc": 1,
+"obl:agent": 1,
+"flat": 1,
+"conj": 1,
+"advcl:fin": 1
+}
+},
+"ram": {
+"verb_freq": 1553,
+"verb_parsed_freq": 41,
+"dep_gov": {
+"Nom": 18,
+"Loc": 17,
+"Acc": 5,
+"Ins": 2,
+"Abl": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 14,
+"obl": 8,
+"obl:loc": 5,
+"obj": 5,
+"advcl": 4,
+"flat": 4,
+"obl:benef": 1,
+"obl:temp": 1,
+"obl:path": 1,
+"obl:instr": 1
+}
+},
+"randhay": {
+"verb_freq": 45,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Dat": 11,
+"Acc": 9,
+"Nom": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 9,
+"iobj": 9,
+"obl": 2,
+"advcl": 1,
+"nsubj": 1,
+"obl:benef": 1
+}
+},
+"rañj": {
+"verb_freq": 210,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"conj": 1
+}
+},
+"raṇ": {
+"verb_freq": 30,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Gen": 1
+},
+"dep_deprel": {
+"obl": 1
+}
+},
+"rej": {
+"verb_freq": 40,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Nom": 7,
+"Gen": 1,
+"Ins": 1,
+"Loc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obl:manner": 1,
+"orphan": 1,
+"advcl": 1,
+"obl": 1,
+"obl:temp": 1,
+"obl:source": 1
+}
+},
+"ric": {
+"verb_freq": 206,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Nom": 16,
+"Acc": 7,
+"Abl": 3,
+"Dat": 3,
+"Ins": 2,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 8,
+"obl": 7,
+"obj": 4,
+"advcl": 3,
+"iobj": 2,
+"advcl:manner": 2,
+"flat": 1,
+"conj": 1,
+"advcl:cond": 1,
+"parataxis": 1,
+"obl:source": 1,
+"obl:benef": 1,
+"obl:manner": 1
+}
+},
+"rih": {
+"verb_freq": 47,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 9,
+"Acc": 8,
+"Loc": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obj": 5,
+"advcl:manner": 4,
+"obl:manner": 3,
+"obl:loc": 2,
+"obl": 1,
+"obl:instr": 1
+}
+},
+"riṣ": {
+"verb_freq": 257,
+"verb_parsed_freq": 39,
+"dep_gov": {
+"Nom": 16,
+"Acc": 7,
+"Loc": 5,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 12,
+"conj": 5,
+"obl": 5,
+"flat": 3,
+"obj": 2,
+"advcl:dpct": 1,
+"obl:temp": 1,
+"acl:ptcp": 1
+}
+},
+"rocay": {
+"verb_freq": 184,
+"verb_parsed_freq": 24,
+"dep_gov": {
+"Ins": 18,
+"Nom": 12,
+"Acc": 11,
+"Dat": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 9,
+"obl:instr": 8,
+"flat": 6,
+"obl:soc": 5,
+"iobj": 2,
+"csubj": 1,
+"advmod": 1,
+"advcl": 1,
+"obl:loc": 1
+}
+},
+"ropay": {
+"verb_freq": 53,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 3,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 2,
+"nsubj": 1,
+"obl:goal": 1
+}
+},
+"ru": {
+"verb_freq": 86,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 9,
+"Acc": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"advcl": 3,
+"ccomp": 2,
+"obj": 1,
+"flat": 1
+}
+},
+"ruc": {
+"verb_freq": 501,
+"verb_parsed_freq": 45,
+"dep_gov": {
+"Nom": 38,
+"Loc": 6,
+"Acc": 5,
+"Ins": 4,
+"Gen": 4,
+"Abl": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 19,
+"obl:grad": 6,
+"flat": 5,
+"advcl": 5,
+"obl:loc": 4,
+"obl": 4,
+"advmod": 3,
+"advcl:manner": 2,
+"obl:instr": 2,
+"iobj": 2,
+"advcl:dpct": 2,
+"obl:manner": 2,
+"xcomp": 1,
+"acl:dpct": 1,
+"obl:temp": 1,
+"obl:source": 1
+}
+},
+"rud": {
+"verb_freq": 669,
+"verb_parsed_freq": 16,
+"dep_gov": {
+"Nom": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"advcl": 1,
+"obj": 1
+}
+},
+"rudh": {
+"verb_freq": 892,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Acc": 12,
+"Nom": 6,
+"Ins": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 11,
+"nsubj": 4,
+"obl": 3,
+"advcl": 1,
+"advcl:cond": 1
+}
+},
+"ruh": {
+"verb_freq": 487,
+"verb_parsed_freq": 49,
+"dep_gov": {
+"Nom": 45,
+"Acc": 21,
+"Ins": 7,
+"Loc": 7,
+"Abl": 4,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 22,
+"obl": 16,
+"conj": 13,
+"obl:goal": 11,
+"obl:loc": 4,
+"obl:manner": 4,
+"advcl:manner": 3,
+"advcl": 3,
+"obl:source": 3,
+"obj": 3,
+"flat": 1,
+"obl:instr": 1,
+"orphan": 1
+}
+},
+"ruj": {
+"verb_freq": 129,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Nom": 11,
+"Acc": 4,
+"Loc": 1,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"conj": 5,
+"obj": 4,
+"nsubj": 2,
+"advcl:temp": 1,
+"advcl:manner": 1,
+"advcl": 1,
+"obl": 1,
+"advcl:dpct": 1,
+"obl:manner": 1,
+"obl:instr": 1
+}
+},
+"ruṣ": {
+"verb_freq": 102,
+"verb_parsed_freq": 2,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"rā": {
+"verb_freq": 214,
+"verb_parsed_freq": 26,
+"dep_gov": {
+"Acc": 14,
+"Dat": 11,
+"Nom": 6,
+"Gen": 1,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 14,
+"iobj": 9,
+"nsubj": 5,
+"advcl": 1,
+"advcl:fin": 1,
+"obl:source": 1,
+"obl": 1,
+"obl:benef": 1,
+"obl:soc": 1
+}
+},
+"rādh": {
+"verb_freq": 240,
+"verb_parsed_freq": 30,
+"dep_gov": {
+"Ins": 12,
+"Nom": 12,
+"Loc": 4,
+"Dat": 2
+},
+"dep_deprel": {
+"obl": 11,
+"nsubj": 7,
+"flat": 3,
+"iobj": 2,
+"advcl": 1,
+"conj": 1,
+"obl:loc": 1,
+"parataxis": 1,
+"obl:soc": 1,
+"obl:instr": 1,
+"obl:agent": 1
+}
+},
+"rāj": {
+"verb_freq": 405,
+"verb_parsed_freq": 15,
+"dep_gov": {
+"Nom": 10,
+"Gen": 4,
+"Loc": 3,
+"Acc": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 7,
+"obj": 5,
+"obl": 4,
+"advcl:dpct": 1,
+"obl:instr": 1,
+"advcl": 1,
+"obl:manner": 1,
+"obl:goal": 1
+}
+},
+"sac": {
+"verb_freq": 323,
+"verb_parsed_freq": 54,
+"dep_gov": {
+"Nom": 39,
+"Acc": 36,
+"Ins": 12,
+"Loc": 7,
+"Dat": 4,
+"Gen": 3,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 27,
+"obj": 25,
+"obl": 17,
+"obl:soc": 6,
+"advcl:manner": 5,
+"obl:loc": 3,
+"obl:manner": 3,
+"advcl": 3,
+"flat": 2,
+"advcl:dpct": 2,
+"advmod": 2,
+"iobj": 1,
+"advcl:fin": 1,
+"obl:goal": 1,
+"csubj": 1,
+"obl:temp": 1,
+"obl:path": 1,
+"advcl:temp": 1
+}
+},
+"sad": {
+"verb_freq": 953,
+"verb_parsed_freq": 79,
+"dep_gov": {
+"Nom": 43,
+"Acc": 26,
+"Loc": 21,
+"Gen": 3,
+"Dat": 2,
+"Ins": 2
+},
+"dep_deprel": {
+"nsubj": 17,
+"obl": 14,
+"advcl": 13,
+"obl:loc": 12,
+"obl:goal": 10,
+"flat": 9,
+"advcl:manner": 5,
+"obl:manner": 4,
+"advcl:dpct": 4,
+"obj": 3,
+"obl:soc": 2,
+"advcl:fin": 1,
+"advmod": 1,
+"obl:temp": 1,
+"xcomp": 1
+}
+},
+"sah": {
+"verb_freq": 791,
+"verb_parsed_freq": 60,
+"dep_gov": {
+"Acc": 36,
+"Nom": 26,
+"Ins": 7,
+"Loc": 2,
+"Abl": 1,
+"Dat": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 31,
+"conj": 15,
+"nsubj": 11,
+"obl": 5,
+"obl:instr": 3,
+"flat": 2,
+"obl:source": 1,
+"obl:temp": 1,
+"advcl:manner": 1,
+"advcl": 1,
+"iobj": 1,
+"obl:benef": 1,
+"obl:manner": 1
+}
+},
+"samarpay": {
+"verb_freq": 239,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"sambhāṣ": {
+"verb_freq": 136,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Ins": 7,
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl:soc": 5,
+"advmod": 1,
+"advcl:cond": 1,
+"obl:loc": 1,
+"iobj": 1
+}
+},
+"sambhū": {
+"verb_freq": 1477,
+"verb_parsed_freq": 91,
+"dep_gov": {
+"Nom": 83,
+"Abl": 27,
+"Acc": 19,
+"Loc": 16,
+"Ins": 15,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 46,
+"obl": 20,
+"obl:source": 15,
+"xcomp": 14,
+"xcomp:result": 10,
+"obj": 9,
+"advmod": 9,
+"obl:loc": 7,
+"obl:temp": 6,
+"obl:soc": 6,
+"conj": 4,
+"advcl": 4,
+"flat": 4,
+"obl:instr": 2,
+"parataxis": 1,
+"advcl:temp": 1,
+"advcl:ccomp": 1,
+"obl:benef": 1,
+"nmod:appos": 1
+}
+},
+"sampad": {
+"verb_freq": 1547,
+"verb_parsed_freq": 53,
+"dep_gov": {
+"Nom": 40,
+"Ins": 18,
+"Acc": 9,
+"Loc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 19,
+"xcomp": 12,
+"obl": 12,
+"conj": 9,
+"obl:soc": 6,
+"xcomp:result": 6,
+"advmod": 2,
+"advcl": 1,
+"orphan": 1,
+"obl:loc": 1
+}
+},
+"sampat": {
+"verb_freq": 115,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Abl": 1,
+"Loc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl": 2,
+"nsubj": 1
+}
+},
+"sampracch": {
+"verb_freq": 29,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"samādhā": {
+"verb_freq": 337,
+"verb_parsed_freq": 10,
+"dep_gov": {
+"Nom": 8,
+"Loc": 5,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 5,
+"obl:loc": 3,
+"obl:goal": 2,
+"acl": 1,
+"obl": 1,
+"parataxis": 1,
+"flat": 1
+}
+},
+"samāgam": {
+"verb_freq": 744,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"obl": 1,
+"obl:soc": 1
+}
+},
+"samānī": {
+"verb_freq": 227,
+"verb_parsed_freq": 10,
+"dep_gov": {
+"Acc": 8,
+"Loc": 6,
+"Nom": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 6,
+"obl": 3,
+"advcl": 2,
+"obl:temp": 2,
+"nsubj": 2,
+"conj": 1,
+"flat": 1,
+"obl:agent": 1
+}
+},
+"samīkṣ": {
+"verb_freq": 364,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 7,
+"Nom": 4,
+"Ins": 3
+},
+"dep_deprel": {
+"obj": 7,
+"obl": 2,
+"nsubj": 2,
+"advcl": 2,
+"obl:instr": 1
+}
+},
+"sarj": {
+"verb_freq": 3,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"sañj": {
+"verb_freq": 478,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Loc": 6,
+"Nom": 4,
+"Acc": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obl:loc": 3,
+"obl": 3,
+"nsubj": 2,
+"conj": 1,
+"advcl:temp": 1,
+"obj": 1,
+"advcl:caus": 1
+}
+},
+"saṃcar": {
+"verb_freq": 193,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Nom": 13,
+"Acc": 10,
+"Ins": 3,
+"Loc": 1
+},
+"dep_deprel": {
+"obl": 8,
+"nsubj": 8,
+"obl:path": 3,
+"obl:goal": 2,
+"conj": 2,
+"advcl:dpct": 1,
+"flat": 1,
+"obl:loc": 1,
+"advcl:manner": 1
+}
+},
+"saṃdhā": {
+"verb_freq": 779,
+"verb_parsed_freq": 43,
+"dep_gov": {
+"Acc": 31,
+"Nom": 17,
+"Ins": 14,
+"Loc": 4,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 26,
+"obl:soc": 13,
+"nsubj": 13,
+"advmod": 3,
+"obl:goal": 2,
+"parataxis": 1,
+"iobj": 1,
+"advcl:manner": 1,
+"obl:loc": 1,
+"ccomp": 1,
+"advcl": 1,
+"obl:instr": 1,
+"advcl:ccomp": 1,
+"obl": 1,
+"conj": 1
+}
+},
+"saṃkrudh": {
+"verb_freq": 546,
+"verb_parsed_freq": 2,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"saṃnidhā": {
+"verb_freq": 206,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Acc": 6,
+"Loc": 4,
+"Nom": 4
+},
+"dep_deprel": {
+"obj": 6,
+"nsubj": 4,
+"obl": 2,
+"obl:loc": 2
+}
+},
+"saṃsthā": {
+"verb_freq": 927,
+"verb_parsed_freq": 43,
+"dep_gov": {
+"Nom": 15,
+"Loc": 15,
+"Acc": 10
+},
+"dep_deprel": {
+"nsubj": 24,
+"advmod": 8,
+"advcl": 2,
+"obl:loc": 2,
+"conj": 2,
+"obl:manner": 1,
+"advcl:manner": 1
+}
+},
+"saṃtuṣ": {
+"verb_freq": 155,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"saṃyuj": {
+"verb_freq": 1284,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Acc": 11,
+"Nom": 8,
+"Ins": 7
+},
+"dep_deprel": {
+"conj": 6,
+"nsubj": 6,
+"obj": 4,
+"obl:soc": 3,
+"iobj": 3,
+"obl": 2,
+"det": 2
+}
+},
+"sev": {
+"verb_freq": 1328,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 6,
+"Nom": 3,
+"Ins": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 5,
+"nsubj": 2,
+"conj": 2,
+"advcl:manner": 1,
+"advcl:fin": 1
+}
+},
+"sic": {
+"verb_freq": 687,
+"verb_parsed_freq": 60,
+"dep_gov": {
+"Acc": 55,
+"Nom": 27,
+"Loc": 17,
+"Ins": 15,
+"Dat": 2,
+"Gen": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 35,
+"nsubj": 21,
+"obl": 15,
+"obl:goal": 9,
+"advmod": 8,
+"obl:instr": 6,
+"obl:loc": 4,
+"xcomp": 4,
+"advcl": 3,
+"obl:manner": 3,
+"conj": 2,
+"flat": 2,
+"discourse": 1,
+"xcomp:result": 1,
+"obl:temp": 1,
+"obl:benef": 1,
+"advcl:dpct": 1,
+"dislocated": 1
+}
+},
+"sidh": {
+"verb_freq": 2028,
+"verb_parsed_freq": 37,
+"dep_gov": {
+"Nom": 16,
+"Ins": 8,
+"Acc": 8,
+"Abl": 6,
+"Loc": 3,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 13,
+"obl": 6,
+"obj": 6,
+"conj": 5,
+"obl:temp": 5,
+"obl:instr": 3,
+"advmod": 2,
+"flat": 1,
+"obl:benef": 1
+}
+},
+"skand": {
+"verb_freq": 247,
+"verb_parsed_freq": 20,
+"dep_gov": {
+"Nom": 15,
+"Acc": 7,
+"Loc": 3,
+"Gen": 2
+},
+"dep_deprel": {
+"nsubj": 14,
+"obl": 4,
+"obj": 3,
+"obl:goal": 1,
+"obl:temp": 1,
+"obl:benef": 1,
+"advcl:temp": 1,
+"advcl": 1,
+"obl:agent": 1
+}
+},
+"skhal": {
+"verb_freq": 118,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"smi": {
+"verb_freq": 227,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 2,
+"Ins": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl:agent": 1,
+"advcl": 1,
+"obl:manner": 1,
+"obl": 1
+}
+},
+"smāray": {
+"verb_freq": 41,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"snih": {
+"verb_freq": 125,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"snā": {
+"verb_freq": 1648,
+"verb_parsed_freq": 57,
+"dep_gov": {
+"Nom": 10,
+"Loc": 10,
+"Acc": 10,
+"Ins": 5,
+"Abl": 1
+},
+"dep_deprel": {
+"conj": 14,
+"obl:temp": 8,
+"obl:loc": 3,
+"advcl": 3,
+"obl": 3,
+"obl:instr": 2,
+"acl": 1,
+"advcl:dpct": 1,
+"advmod": 1
+}
+},
+"spand": {
+"verb_freq": 52,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"sphur": {
+"verb_freq": 357,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Acc": 3,
+"Nom": 2,
+"Ins": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 3,
+"nsubj": 2,
+"obl:instr": 1,
+"obl": 1
+}
+},
+"sphuṭ": {
+"verb_freq": 154,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"sru": {
+"verb_freq": 538,
+"verb_parsed_freq": 19,
+"dep_gov": {
+"Nom": 16,
+"Acc": 6,
+"Dat": 4,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"obl:goal": 3,
+"conj": 3,
+"obl": 3,
+"flat": 2,
+"obl:benef": 2,
+"advcl:cond": 1,
+"obl:path": 1,
+"obj": 1,
+"advmod": 1
+}
+},
+"sthā": {
+"verb_freq": 9268,
+"verb_parsed_freq": 308,
+"dep_gov": {
+"Nom": 200,
+"Acc": 70,
+"Loc": 64,
+"Dat": 23,
+"Ins": 17,
+"Gen": 11,
+"Abl": 9
+},
+"dep_deprel": {
+"nsubj": 110,
+"obl": 60,
+"advcl": 50,
+"obl:loc": 45,
+"advcl:dpct": 13,
+"advcl:manner": 12,
+"flat": 12,
+"obl:manner": 11,
+"obl:temp": 11,
+"obl:goal": 10,
+"conj": 9,
+"iobj": 8,
+"obj": 7,
+"xcomp": 4,
+"parataxis": 4,
+"obl:source": 3,
+"obl:instr": 3,
+"obl:soc": 3,
+"advcl:temp": 3,
+"advcl:fin": 3,
+"orphan": 3,
+"ccomp": 2,
+"obl:benef": 2,
+"acl:dpct": 2,
+"acl": 1,
+"discourse": 1,
+"advmod": 1,
+"csubj": 1
+}
+},
+"sthāpay": {
+"verb_freq": 1205,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 13,
+"Ins": 2,
+"Nom": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 7,
+"advcl:manner": 3,
+"obl:instr": 2,
+"nsubj": 2,
+"xcomp": 1,
+"obl:goal": 1,
+"advmod": 1,
+"advcl:temp": 1,
+"obl:loc": 1
+}
+},
+"stu": {
+"verb_freq": 2204,
+"verb_parsed_freq": 124,
+"dep_gov": {
+"Nom": 50,
+"Acc": 46,
+"Ins": 40,
+"Loc": 14,
+"Dat": 8,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 29,
+"nsubj": 28,
+"obl:instr": 25,
+"obl": 21,
+"iobj": 18,
+"advcl": 9,
+"ccomp": 5,
+"conj": 4,
+"advcl:dpct": 3,
+"obl:loc": 3,
+"obl:temp": 2,
+"obl:agent": 2,
+"advcl:manner": 2,
+"advmod": 1,
+"advcl:fin": 1,
+"flat": 1,
+"csubj": 1,
+"obl:soc": 1,
+"obl:manner": 1,
+"acl": 1,
+"obl:benef": 1
+}
+},
+"svad": {
+"verb_freq": 81,
+"verb_parsed_freq": 25,
+"dep_gov": {
+"Nom": 13,
+"Acc": 9,
+"Dat": 5,
+"Gen": 2,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 10,
+"flat": 5,
+"iobj": 4,
+"obj": 3,
+"obl:benef": 2,
+"advcl:temp": 1,
+"obl": 1,
+"conj": 1,
+"xcomp": 1,
+"advcl": 1,
+"cop": 1,
+"obl:instr": 1
+}
+},
+"svap": {
+"verb_freq": 1100,
+"verb_parsed_freq": 34,
+"dep_gov": {
+"Nom": 15,
+"Acc": 12,
+"Gen": 2,
+"Abl": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"conj": 10,
+"nsubj": 6,
+"advmod": 6,
+"advcl": 2,
+"advcl:dpct": 2,
+"advcl:manner": 1,
+"obj": 1,
+"orphan": 1,
+"flat": 1,
+"obl:loc": 1
+}
+},
+"tak": {
+"verb_freq": 7,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Nom": 1,
+"Acc": 1,
+"Abl": 1
+},
+"dep_deprel": {
+"obl": 2,
+"nsubj": 1
+}
+},
+"takṣ": {
+"verb_freq": 161,
+"verb_parsed_freq": 29,
+"dep_gov": {
+"Nom": 24,
+"Acc": 18,
+"Dat": 9,
+"Ins": 5,
+"Loc": 3,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 16,
+"obj": 13,
+"obl": 8,
+"obl:manner": 7,
+"advcl:manner": 4,
+"iobj": 3,
+"obl:loc": 2,
+"advcl": 2,
+"obl:temp": 1,
+"obl:source": 1,
+"obl:instr": 1,
+"advcl:fin": 1,
+"xcomp": 1
+}
+},
+"tan": {
+"verb_freq": 716,
+"verb_parsed_freq": 72,
+"dep_gov": {
+"Acc": 54,
+"Nom": 46,
+"Ins": 11,
+"Loc": 6,
+"Gen": 3,
+"Dat": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 35,
+"nsubj": 24,
+"obl": 10,
+"flat": 9,
+"advcl:manner": 9,
+"conj": 6,
+"obl:manner": 6,
+"obl:path": 6,
+"obl:instr": 4,
+"advcl:dpct": 2,
+"advcl": 2,
+"obl:loc": 2,
+"obl:benef": 1,
+"advcl:cond": 1,
+"xcomp": 1,
+"advmod": 1,
+"iobj": 1,
+"obl:goal": 1,
+"xcomp:result": 1,
+"vocative": 1
+}
+},
+"tap": {
+"verb_freq": 2065,
+"verb_parsed_freq": 125,
+"dep_gov": {
+"Nom": 75,
+"Acc": 52,
+"Ins": 14,
+"Loc": 2,
+"Abl": 1,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 54,
+"obj": 41,
+"obl:instr": 9,
+"advmod": 9,
+"obl:manner": 5,
+"obl": 5,
+"xcomp:result": 5,
+"advcl:dpct": 4,
+"advcl": 3,
+"conj": 3,
+"parataxis": 2,
+"flat": 1,
+"obl:soc": 1,
+"obl:source": 1,
+"obl:loc": 1,
+"obl:benef": 1,
+"advcl:manner": 1
+}
+},
+"tarj": {
+"verb_freq": 9,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"tras": {
+"verb_freq": 267,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 3,
+"Abl": 1
+},
+"dep_deprel": {
+"obl:manner": 2,
+"obl": 1,
+"nsubj": 1
+}
+},
+"tsar": {
+"verb_freq": 8,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Acc": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 1,
+"nsubj": 1,
+"obl": 1
+}
+},
+"tud": {
+"verb_freq": 99,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Nom": 3,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"obj": 2,
+"obl:instr": 1,
+"conj": 1
+}
+},
+"tulay": {
+"verb_freq": 62,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"tuś": {
+"verb_freq": 12,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 4,
+"Loc": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"obl:goal": 2,
+"advcl": 1,
+"nsubj": 1,
+"advcl:fin": 1,
+"acl:ptcp": 1,
+"obl:manner": 1
+}
+},
+"tuṣ": {
+"verb_freq": 840,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Nom": 3,
+"Ins": 3,
+"Loc": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obl": 4,
+"nsubj": 2,
+"advcl:caus": 1,
+"obl:instr": 1
+}
+},
+"tvar": {
+"verb_freq": 539,
+"verb_parsed_freq": 3,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"tyaj": {
+"verb_freq": 2417,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Acc": 11,
+"Nom": 6,
+"Loc": 4,
+"Abl": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 11,
+"nsubj": 4,
+"advcl": 4,
+"advcl:caus": 1,
+"obl:agent": 1,
+"advcl:temp": 1,
+"obl:temp": 1,
+"obl": 1
+}
+},
+"uc": {
+"verb_freq": 51,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Loc": 2,
+"Nom": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obl": 2,
+"nsubj": 1,
+"obj": 1,
+"advcl:manner": 1
+}
+},
+"udi": {
+"verb_freq": 960,
+"verb_parsed_freq": 112,
+"dep_gov": {
+"Nom": 28,
+"Loc": 26,
+"Abl": 11,
+"Acc": 10,
+"Gen": 3,
+"Ins": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"nsubj": 42,
+"obl:source": 9,
+"conj": 7,
+"flat": 5,
+"obl": 4,
+"obl:loc": 3,
+"advcl": 2,
+"advcl:temp": 2,
+"obl:temp": 2,
+"obl:soc": 1,
+"obl:benef": 1,
+"discourse": 1,
+"nmod": 1,
+"orphan": 1
+}
+},
+"udvij": {
+"verb_freq": 270,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"advcl": 1,
+"iobj": 1
+}
+},
+"udyam": {
+"verb_freq": 942,
+"verb_parsed_freq": 31,
+"dep_gov": {
+"Acc": 14,
+"Nom": 6,
+"Loc": 2,
+"Ins": 2,
+"Dat": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 13,
+"nsubj": 5,
+"advmod": 1,
+"advcl:ccomp": 1,
+"advcl:temp": 1,
+"obl:instr": 1,
+"iobj": 1,
+"conj": 1,
+"advcl:manner": 1,
+"advcl:fin": 1,
+"obl": 1
+}
+},
+"und": {
+"verb_freq": 81,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Acc": 6,
+"Nom": 4,
+"Ins": 4,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 5,
+"flat": 3,
+"advcl:ccomp": 2,
+"ccomp": 2,
+"obl:instr": 2,
+"acl": 1,
+"obl": 1
+}
+},
+"upagam": {
+"verb_freq": 600,
+"verb_parsed_freq": 8,
+"dep_gov": {
+"Acc": 8,
+"Nom": 6,
+"Ins": 4,
+"Gen": 1
+},
+"dep_deprel": {
+"obl": 6,
+"obl:goal": 5,
+"nsubj": 4,
+"conj": 2,
+"obj": 1,
+"discourse": 1
+}
+},
+"upakram": {
+"verb_freq": 291,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Nom": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"conj": 1
+}
+},
+"upanidhā": {
+"verb_freq": 51,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 5,
+"Nom": 3,
+"Abl": 2,
+"Loc": 2,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 5,
+"obl:goal": 3,
+"nsubj": 2,
+"obl:benef": 1,
+"obl:loc": 1,
+"iobj": 1,
+"parataxis": 1
+}
+},
+"upapad": {
+"verb_freq": 876,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 6,
+"Acc": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 4,
+"advcl": 2,
+"obl:goal": 1,
+"obl": 1
+}
+},
+"uparam": {
+"verb_freq": 157,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 3
+},
+"dep_deprel": {
+"nsubj": 3
+}
+},
+"upasthā": {
+"verb_freq": 1672,
+"verb_parsed_freq": 117,
+"dep_gov": {
+"Acc": 85,
+"Nom": 58,
+"Ins": 44,
+"Loc": 11,
+"Dat": 2,
+"Gen": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obl": 63,
+"nsubj": 27,
+"obl:instr": 25,
+"advcl:ccomp": 20,
+"obj": 19,
+"advcl": 9,
+"conj": 8,
+"obl:temp": 6,
+"obl:goal": 6,
+"obl:manner": 4,
+"obl:benef": 4,
+"ccomp": 3,
+"advcl:manner": 2,
+"advcl:cond": 2,
+"advcl:dpct": 1,
+"csubj": 1,
+"advcl:temp": 1,
+"obl:soc": 1,
+"iobj": 1
+}
+},
+"upavīj": {
+"verb_freq": 7,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"upayuj": {
+"verb_freq": 453,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Acc": 5,
+"Nom": 4,
+"Abl": 2,
+"Ins": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 5,
+"nsubj": 2,
+"conj": 1,
+"obl": 1,
+"obl:instr": 1,
+"iobj": 1,
+"advcl": 1,
+"obl:source": 1
+}
+},
+"upe": {
+"verb_freq": 2226,
+"verb_parsed_freq": 117,
+"dep_gov": {
+"Acc": 111,
+"Nom": 47,
+"Ins": 18,
+"Loc": 12,
+"Abl": 9,
+"Dat": 4,
+"Gen": 2
+},
+"dep_deprel": {
+"obl": 54,
+"obl:goal": 38,
+"nsubj": 34,
+"obj": 13,
+"advcl": 12,
+"obl:temp": 11,
+"conj": 9,
+"obl:soc": 8,
+"advmod": 7,
+"obl:source": 5,
+"obl:instr": 5,
+"advcl:ccomp": 2,
+"advcl:fin": 2,
+"csubj": 1,
+"flat": 1,
+"advcl:dpct": 1
+}
+},
+"uruṣy": {
+"verb_freq": 51,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 5,
+"Acc": 5,
+"Abl": 4,
+"Ins": 2,
+"Dat": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 5,
+"nsubj": 4,
+"obl:source": 4,
+"iobj": 1,
+"obl:instr": 1,
+"obl:manner": 1,
+"obl:loc": 1,
+"obl": 1
+}
+},
+"utkaṇṭh": {
+"verb_freq": 27,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"utpad": {
+"verb_freq": 1180,
+"verb_parsed_freq": 7,
+"dep_gov": {
+"Loc": 4,
+"Ins": 2,
+"Abl": 2,
+"Nom": 2,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"obl:agent": 2,
+"obl:loc": 2,
+"obl:source": 2,
+"advcl:fin": 1,
+"advcl:cond": 1
+}
+},
+"vac": {
+"verb_freq": 33948,
+"verb_parsed_freq": 664,
+"dep_gov": {
+"Nom": 553,
+"Acc": 212,
+"Dat": 36,
+"Ins": 28,
+"Loc": 24,
+"Gen": 13,
+"Abl": 7
+},
+"dep_deprel": {
+"nsubj": 383,
+"iobj": 139,
+"ccomp": 118,
+"obj": 77,
+"xcomp": 29,
+"discourse": 29,
+"obl": 25,
+"conj": 11,
+"obl:agent": 9,
+"advmod": 8,
+"advcl": 7,
+"obl:temp": 5,
+"obl:loc": 5,
+"obl:instr": 4,
+"advcl:temp": 3,
+"obl:source": 3,
+"obl:benef": 3,
+"flat": 2,
+"csubj": 2,
+"obl:manner": 2,
+"parataxis": 1,
+"vocative": 1,
+"orphan": 1,
+"advcl:ccomp": 1,
+"advcl:dpct": 1,
+"dislocated": 1,
+"advcl:fin": 1,
+"advcl:manner": 1,
+"nmod": 1
+}
+},
+"vad": {
+"verb_freq": 3914,
+"verb_parsed_freq": 182,
+"dep_gov": {
+"Nom": 113,
+"Acc": 103,
+"Loc": 23,
+"Ins": 18,
+"Gen": 5,
+"Abl": 2,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 77,
+"nsubj": 58,
+"obl": 19,
+"advcl": 16,
+"obl:instr": 12,
+"iobj": 12,
+"ccomp": 12,
+"conj": 10,
+"advmod": 7,
+"advcl:dpct": 7,
+"flat": 6,
+"xcomp": 5,
+"advcl:temp": 5,
+"obl:agent": 3,
+"obl:loc": 3,
+"advcl:manner": 2,
+"obl:temp": 2,
+"obl:source": 2,
+"dislocated": 2,
+"obl:path": 1,
+"obl:goal": 1,
+"discourse": 1,
+"orphan": 1,
+"obl:manner": 1,
+"nmod": 1
+}
+},
+"vadh": {
+"verb_freq": 1236,
+"verb_parsed_freq": 23,
+"dep_gov": {
+"Acc": 13,
+"Ins": 8,
+"Nom": 7,
+"Loc": 2,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 13,
+"nsubj": 5,
+"obl:instr": 4,
+"obl": 3,
+"advcl": 3,
+"flat": 2,
+"obl:temp": 1
+}
+},
+"vah": {
+"verb_freq": 1845,
+"verb_parsed_freq": 127,
+"dep_gov": {
+"Acc": 115,
+"Nom": 86,
+"Dat": 28,
+"Ins": 14,
+"Gen": 5,
+"Abl": 3,
+"Loc": 3
+},
+"dep_deprel": {
+"obj": 89,
+"nsubj": 46,
+"obl": 24,
+"advcl": 22,
+"iobj": 15,
+"conj": 10,
+"flat": 9,
+"obl:goal": 8,
+"advcl:manner": 5,
+"advmod": 3,
+"obl:instr": 3,
+"advcl:dpct": 3,
+"obl:manner": 3,
+"obl:benef": 3,
+"advcl:fin": 2,
+"obl:soc": 2,
+"obl:source": 2,
+"xcomp": 1,
+"xcomp:result": 1,
+"obl:temp": 1,
+"obl:loc": 1,
+"obl:path": 1
+}
+},
+"van": {
+"verb_freq": 220,
+"verb_parsed_freq": 24,
+"dep_gov": {
+"Acc": 19,
+"Nom": 13,
+"Loc": 3,
+"Ins": 3,
+"Dat": 2
+},
+"dep_deprel": {
+"obj": 13,
+"nsubj": 11,
+"obl": 6,
+"flat": 2,
+"advcl:manner": 2,
+"iobj": 2,
+"conj": 2,
+"advcl": 1,
+"obl:soc": 1
+}
+},
+"vand": {
+"verb_freq": 632,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Acc": 10,
+"Nom": 6,
+"Ins": 3,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 8,
+"nsubj": 4,
+"obl:instr": 2,
+"obl": 2,
+"flat": 1,
+"obl:manner": 1,
+"advcl:fin": 1,
+"xcomp": 1
+}
+},
+"vardhay": {
+"verb_freq": 480,
+"verb_parsed_freq": 48,
+"dep_gov": {
+"Acc": 42,
+"Nom": 14,
+"Ins": 10,
+"Loc": 3,
+"Dat": 3
+},
+"dep_deprel": {
+"obj": 35,
+"nsubj": 8,
+"obl:instr": 6,
+"flat": 4,
+"obl": 4,
+"obl:manner": 4,
+"advcl": 3,
+"acl:dpct": 2,
+"advmod": 1,
+"obl:temp": 1,
+"advcl:fin": 1,
+"iobj": 1,
+"obl:loc": 1,
+"xcomp": 1
+}
+},
+"varjay": {
+"verb_freq": 1435,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Acc": 23,
+"Nom": 3,
+"Loc": 2
+},
+"dep_deprel": {
+"obj": 20,
+"obl:temp": 2,
+"advcl:dpct": 1,
+"advcl": 1,
+"advmod": 1,
+"nsubj": 1,
+"obl:loc": 1,
+"conj": 1
+}
+},
+"vartay": {
+"verb_freq": 386,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Acc": 14,
+"Dat": 8,
+"Abl": 3,
+"Ins": 3,
+"Nom": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 13,
+"iobj": 4,
+"obl": 2,
+"obl:source": 2,
+"obl:instr": 2,
+"advcl": 2,
+"nsubj": 1,
+"advcl:manner": 1,
+"obl:manner": 1,
+"obl:benef": 1,
+"advcl:fin": 1,
+"advcl:caus": 1
+}
+},
+"vas": {
+"verb_freq": 2538,
+"verb_parsed_freq": 98,
+"dep_gov": {
+"Nom": 61,
+"Acc": 54,
+"Loc": 32,
+"Ins": 5,
+"Dat": 5,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 34,
+"obj": 26,
+"obl:loc": 24,
+"obl:temp": 20,
+"obl": 12,
+"advcl": 9,
+"conj": 6,
+"flat": 4,
+"parataxis": 3,
+"advcl:manner": 3,
+"advcl:temp": 2,
+"obl:soc": 2,
+"advcl:cond": 2,
+"advmod": 2,
+"obl:instr": 2,
+"acl:dpct": 2,
+"advcl:concess": 1,
+"nmod": 1,
+"obl:manner": 1,
+"xcomp": 1,
+"obl:goal": 1
+}
+},
+"vaś": {
+"verb_freq": 302,
+"verb_parsed_freq": 70,
+"dep_gov": {
+"Acc": 19,
+"Nom": 18,
+"Ins": 4,
+"Dat": 3,
+"Gen": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 14,
+"nsubj": 11,
+"conj": 6,
+"obl": 5,
+"obl:benef": 2,
+"advcl": 2,
+"orphan": 1,
+"advcl:manner": 1,
+"obl:manner": 1,
+"xcomp:result": 1,
+"parataxis": 1,
+"obl:loc": 1,
+"obl:soc": 1
+}
+},
+"vibhaj": {
+"verb_freq": 606,
+"verb_parsed_freq": 17,
+"dep_gov": {
+"Acc": 11,
+"Nom": 7,
+"Ins": 3,
+"Abl": 2,
+"Gen": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 4,
+"obl": 3,
+"flat": 2,
+"obl:benef": 1,
+"advcl": 1,
+"obl:temp": 1,
+"xcomp": 1,
+"obl:agent": 1,
+"advcl:concess": 1,
+"advcl:manner": 1
+}
+},
+"vibhid": {
+"verb_freq": 136,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1
+},
+"dep_deprel": {
+"obj": 1
+}
+},
+"vic": {
+"verb_freq": 8,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"vid": {
+"verb_freq": 11314,
+"verb_parsed_freq": 1043,
+"dep_gov": {
+"Nom": 641,
+"Acc": 488,
+"Gen": 43,
+"Ins": 34,
+"Loc": 29,
+"Dat": 23,
+"Abl": 6
+},
+"dep_deprel": {
+"nsubj": 555,
+"obj": 443,
+"flat": 44,
+"xcomp": 38,
+"conj": 32,
+"obl": 21,
+"obl:instr": 20,
+"ccomp": 13,
+"obl:loc": 13,
+"advcl": 11,
+"advmod": 9,
+"iobj": 7,
+"parataxis": 6,
+"obl:manner": 6,
+"obl:benef": 4,
+"advcl:fin": 4,
+"obl:agent": 3,
+"advcl:cond": 3,
+"discourse": 3,
+"obl:temp": 3,
+"acl": 3,
+"csubj": 2,
+"obl:source": 2,
+"orphan": 2,
+"xcomp:result": 2,
+"advcl:concess": 2,
+"nmod:appos": 2,
+"advcl:manner": 1,
+"dislocated": 1,
+"mark": 1,
+"advcl:caus": 1,
+"det": 1,
+"advcl:local": 1,
+"advcl:dpct": 1,
+"obl:soc": 1,
+"acl:dpct": 1,
+"obl:grad": 1,
+"ccomp:rel": 1
+}
+},
+"vidh": {
+"verb_freq": 209,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Nom": 7,
+"Dat": 7,
+"Ins": 7,
+"Acc": 5,
+"Loc": 1
+},
+"dep_deprel": {
+"iobj": 7,
+"nsubj": 5,
+"obj": 5,
+"obl:instr": 4,
+"obl": 3,
+"advcl": 1,
+"obl:loc": 1,
+"conj": 1
+}
+},
+"vidhā": {
+"verb_freq": 2738,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Nom": 14,
+"Acc": 7,
+"Ins": 5,
+"Dat": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 9,
+"obj": 6,
+"conj": 4,
+"iobj": 2,
+"obl:agent": 2,
+"xcomp": 1,
+"obl:loc": 1,
+"advcl:fin": 1,
+"dislocated": 1,
+"obl:instr": 1,
+"obl:soc": 1
+}
+},
+"vihas": {
+"verb_freq": 99,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"vihā": {
+"verb_freq": 568,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 3,
+"Dat": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 3,
+"iobj": 1,
+"nsubj": 1
+}
+},
+"vij": {
+"verb_freq": 27,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Acc": 2,
+"Abl": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl": 2,
+"obl:source": 1,
+"nsubj": 1
+}
+},
+"vijan": {
+"verb_freq": 177,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"flat": 1
+}
+},
+"vijñā": {
+"verb_freq": 2282,
+"verb_parsed_freq": 82,
+"dep_gov": {
+"Nom": 44,
+"Acc": 29,
+"Ins": 8,
+"Loc": 8,
+"Gen": 4,
+"Abl": 2
+},
+"dep_deprel": {
+"nsubj": 24,
+"obj": 23,
+"ccomp": 10,
+"obl:instr": 7,
+"advmod": 6,
+"xcomp": 5,
+"conj": 5,
+"advcl": 2,
+"obl:loc": 2,
+"parataxis": 2,
+"obl:benef": 2,
+"obl": 2,
+"orphan": 1,
+"obl:source": 1,
+"advcl:temp": 1,
+"obl:temp": 1,
+"flat": 1
+}
+},
+"vijñāpay": {
+"verb_freq": 209,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 5,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"obj": 2,
+"parataxis": 1
+}
+},
+"vikram": {
+"verb_freq": 413,
+"verb_parsed_freq": 15,
+"dep_gov": {
+"Nom": 5,
+"Acc": 4,
+"Ins": 3,
+"Dat": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obl": 5,
+"nsubj": 4,
+"flat": 2,
+"iobj": 2,
+"advcl": 1,
+"obl:loc": 1
+}
+},
+"vikrī": {
+"verb_freq": 181,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 2
+},
+"dep_deprel": {
+"obl": 1,
+"obj": 1
+}
+},
+"vimuc": {
+"verb_freq": 1113,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Acc": 7,
+"Ins": 4,
+"Nom": 3,
+"Loc": 3,
+"Abl": 3
+},
+"dep_deprel": {
+"obj": 6,
+"nsubj": 5,
+"obl:source": 4,
+"obl:instr": 2,
+"obl:agent": 1,
+"conj": 1,
+"advcl": 1
+}
+},
+"vimuh": {
+"verb_freq": 95,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"vinaś": {
+"verb_freq": 596,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"advcl": 1
+}
+},
+"vinirgam": {
+"verb_freq": 76,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl": 1
+}
+},
+"viniryā": {
+"verb_freq": 41,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"vip": {
+"verb_freq": 156,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Nom": 2,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obl": 2,
+"nsubj": 1,
+"flat": 1
+}
+},
+"vipravas": {
+"verb_freq": 35,
+"verb_parsed_freq": 5,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"viprayuj": {
+"verb_freq": 26,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"viracay": {
+"verb_freq": 107,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"virah": {
+"verb_freq": 34,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"viram": {
+"verb_freq": 225,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Loc": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obl": 1,
+"advcl:temp": 1,
+"obl:temp": 1
+}
+},
+"virudh": {
+"verb_freq": 467,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"virādh": {
+"verb_freq": 3,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Ins": 2,
+"Nom": 1
+},
+"dep_deprel": {
+"obl": 2,
+"nsubj": 1
+}
+},
+"vivad": {
+"verb_freq": 92,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Dat": 1,
+"Nom": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"advcl": 1,
+"nsubj": 1,
+"obl": 1
+}
+},
+"vivas": {
+"verb_freq": 130,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Nom": 4,
+"Abl": 2,
+"Dat": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"orphan": 3,
+"flat": 2,
+"nsubj": 1,
+"conj": 1,
+"advcl": 1,
+"iobj": 1
+}
+},
+"viyu": {
+"verb_freq": 25,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 2,
+"nsubj": 1,
+"obl": 1,
+"conj": 1
+}
+},
+"viyuj": {
+"verb_freq": 150,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obj": 1
+}
+},
+"viś": {
+"verb_freq": 1053,
+"verb_parsed_freq": 46,
+"dep_gov": {
+"Nom": 42,
+"Acc": 31,
+"Loc": 6,
+"Ins": 3,
+"Dat": 2
+},
+"dep_deprel": {
+"nsubj": 26,
+"obl:goal": 21,
+"obl": 13,
+"advcl": 6,
+"advcl:manner": 5,
+"obj": 3,
+"flat": 3,
+"advcl:dpct": 2,
+"advcl:concess": 1,
+"advcl:fin": 1,
+"advcl:temp": 1,
+"acl": 1,
+"obl:manner": 1
+}
+},
+"viśaṅk": {
+"verb_freq": 38,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"viśiṣ": {
+"verb_freq": 629,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2
+},
+"dep_deprel": {
+"advcl:concess": 1,
+"nsubj": 1
+}
+},
+"viśudh": {
+"verb_freq": 630,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Ins": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obl:instr": 1,
+"nsubj": 1,
+"obl": 1
+}
+},
+"viśvas": {
+"verb_freq": 192,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 1,
+"obl:benef": 1
+}
+},
+"viṣṭhā": {
+"verb_freq": 147,
+"verb_parsed_freq": 12,
+"dep_gov": {
+"Nom": 8,
+"Acc": 3,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"advcl:dpct": 3,
+"obl": 2,
+"obl:loc": 1,
+"advmod": 1,
+"flat": 1,
+"advcl": 1
+}
+},
+"vraj": {
+"verb_freq": 1202,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Nom": 12,
+"Acc": 3,
+"Gen": 1
+},
+"dep_deprel": {
+"conj": 7,
+"nsubj": 3,
+"advcl:manner": 2,
+"obl:goal": 1,
+"orphan": 1,
+"advcl:temp": 1,
+"advcl:dpct": 1
+}
+},
+"vraśc": {
+"verb_freq": 145,
+"verb_parsed_freq": 46,
+"dep_gov": {
+"Acc": 36,
+"Nom": 14,
+"Dat": 10,
+"Ins": 6,
+"Loc": 4,
+"Gen": 3
+},
+"dep_deprel": {
+"obj": 28,
+"iobj": 12,
+"nsubj": 10,
+"obl:instr": 5,
+"advcl:manner": 4,
+"conj": 4,
+"advcl": 4,
+"obl:loc": 3,
+"obl": 1,
+"obl:benef": 1,
+"obl:manner": 1
+}
+},
+"vyabhicar": {
+"verb_freq": 21,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"obj": 2,
+"obl:temp": 1
+}
+},
+"vyadh": {
+"verb_freq": 1636,
+"verb_parsed_freq": 56,
+"dep_gov": {
+"Ins": 35,
+"Nom": 33,
+"Acc": 33,
+"Loc": 9,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 33,
+"obl:instr": 26,
+"nsubj": 23,
+"obl": 9,
+"conj": 6,
+"obl:loc": 5,
+"obl:goal": 2,
+"advcl": 2,
+"obl:source": 1,
+"advcl:fin": 1,
+"cop": 1,
+"obl:agent": 1,
+"obl:manner": 1
+}
+},
+"vyardhay": {
+"verb_freq": 47,
+"verb_parsed_freq": 10,
+"dep_gov": {
+"Ins": 7,
+"Acc": 6
+},
+"dep_deprel": {
+"obl": 7,
+"obj": 6
+}
+},
+"vyath": {
+"verb_freq": 397,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Nom": 5,
+"Loc": 4,
+"Abl": 1
+},
+"dep_deprel": {
+"nsubj": 4,
+"flat": 2,
+"obl:loc": 2,
+"advcl:caus": 1,
+"obl": 1
+}
+},
+"vyathay": {
+"verb_freq": 44,
+"verb_parsed_freq": 1,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"vye": {
+"verb_freq": 46,
+"verb_parsed_freq": 13,
+"dep_gov": {
+"Nom": 9,
+"Acc": 7,
+"Ins": 4,
+"Loc": 4,
+"Gen": 1
+},
+"dep_deprel": {
+"obl": 8,
+"nsubj": 6,
+"obj": 5,
+"obl:instr": 2,
+"advcl:manner": 2,
+"conj": 1,
+"advcl": 1
+}
+},
+"vyādiś": {
+"verb_freq": 72,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 2,
+"Nom": 1,
+"Dat": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 1,
+"nsubj": 1,
+"iobj": 1,
+"obl:loc": 1,
+"conj": 1
+}
+},
+"vyāvartay": {
+"verb_freq": 55,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Acc": 5,
+"Ins": 3,
+"Nom": 1
+},
+"dep_deprel": {
+"obj": 3,
+"obl:source": 2,
+"discourse": 1,
+"advmod": 1,
+"nsubj": 1,
+"obl:instr": 1
+}
+},
+"vā": {
+"verb_freq": 298,
+"verb_parsed_freq": 10,
+"dep_gov": {
+"Nom": 11,
+"Acc": 9
+},
+"dep_deprel": {
+"nsubj": 6,
+"obj": 3,
+"obl": 2,
+"advcl:manner": 2,
+"obl:path": 1,
+"obl:goal": 1,
+"parataxis": 1,
+"advmod": 1,
+"advcl:dpct": 1,
+"advcl": 1,
+"obl:manner": 1
+}
+},
+"vāray": {
+"verb_freq": 652,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 10,
+"Nom": 6,
+"Ins": 3,
+"Loc": 2,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 9,
+"nsubj": 4,
+"obl:instr": 3,
+"obl:source": 1,
+"obl:loc": 1,
+"advcl:manner": 1,
+"obl:manner": 1,
+"obl": 1,
+"conj": 1
+}
+},
+"vāsay": {
+"verb_freq": 207,
+"verb_parsed_freq": 9,
+"dep_gov": {
+"Acc": 9,
+"Loc": 4,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 7,
+"obl": 4,
+"obl:temp": 1,
+"obl:manner": 1,
+"obl:instr": 1
+}
+},
+"yaj": {
+"verb_freq": 6755,
+"verb_parsed_freq": 757,
+"dep_gov": {
+"Acc": 177,
+"Ins": 177,
+"Nom": 159,
+"Loc": 37,
+"Gen": 25,
+"Dat": 22,
+"Abl": 6
+},
+"dep_deprel": {
+"obj": 101,
+"obl": 91,
+"obl:instr": 89,
+"nsubj": 87,
+"flat": 33,
+"conj": 27,
+"iobj": 27,
+"advcl": 23,
+"acl": 18,
+"obl:temp": 15,
+"advmod": 14,
+"orphan": 11,
+"det": 10,
+"obl:agent": 10,
+"obl:loc": 8,
+"parataxis": 7,
+"advcl:cond": 7,
+"advcl:dpct": 4,
+"obl:benef": 3,
+"ccomp": 3,
+"advcl:manner": 3,
+"xcomp": 2,
+"advcl:fin": 2,
+"advcl:temp": 2,
+"obl:path": 1,
+"advcl:ccomp": 1,
+"obl:source": 1,
+"obl:soc": 1,
+"dislocated": 1,
+"acl:ptcp": 1
+}
+},
+"yam": {
+"verb_freq": 1093,
+"verb_parsed_freq": 116,
+"dep_gov": {
+"Acc": 84,
+"Nom": 60,
+"Dat": 33,
+"Loc": 24,
+"Ins": 9,
+"Gen": 7,
+"Abl": 7
+},
+"dep_deprel": {
+"obj": 79,
+"nsubj": 41,
+"iobj": 29,
+"obl": 13,
+"obl:temp": 7,
+"advcl:manner": 7,
+"obl:loc": 6,
+"obl:instr": 6,
+"conj": 5,
+"advcl": 5,
+"advcl:temp": 4,
+"flat": 4,
+"obl:manner": 4,
+"advmod": 2,
+"advcl:fin": 2,
+"obl:benef": 2,
+"obl:agent": 2,
+"advcl:dpct": 2,
+"xcomp": 1,
+"nmod": 1,
+"acl:dpct": 1,
+"advcl:cond": 1
+}
+},
+"yat": {
+"verb_freq": 548,
+"verb_parsed_freq": 21,
+"dep_gov": {
+"Nom": 13,
+"Loc": 9,
+"Ins": 4,
+"Acc": 3,
+"Dat": 2
+},
+"dep_deprel": {
+"nsubj": 11,
+"obl": 10,
+"obj": 2,
+"obl:manner": 2,
+"obl:loc": 2,
+"obl:instr": 1,
+"obl:goal": 1,
+"advcl:fin": 1,
+"obl:soc": 1
+}
+},
+"yu": {
+"verb_freq": 199,
+"verb_parsed_freq": 23,
+"dep_gov": {
+"Acc": 14,
+"Nom": 11,
+"Abl": 5,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 11,
+"nsubj": 9,
+"obl:source": 4,
+"obl": 2,
+"flat": 1,
+"advmod": 1,
+"advcl:manner": 1,
+"obl:manner": 1,
+"advcl": 1
+}
+},
+"yudh": {
+"verb_freq": 1267,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Nom": 8,
+"Ins": 2,
+"Gen": 2,
+"Loc": 2
+},
+"dep_deprel": {
+"nsubj": 4,
+"obl": 3,
+"obl:manner": 2,
+"obl:soc": 1,
+"conj": 1,
+"obl:benef": 1,
+"advcl": 1,
+"advcl:manner": 1
+}
+},
+"yuj": {
+"verb_freq": 5933,
+"verb_parsed_freq": 191,
+"dep_gov": {
+"Acc": 77,
+"Nom": 59,
+"Loc": 23,
+"Ins": 22,
+"Dat": 13,
+"Gen": 7,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 42,
+"nsubj": 36,
+"flat": 23,
+"conj": 22,
+"obl": 22,
+"obl:soc": 10,
+"obl:temp": 7,
+"advmod": 5,
+"iobj": 5,
+"obl:loc": 4,
+"advcl:manner": 4,
+"advcl:fin": 4,
+"parataxis": 2,
+"xcomp": 2,
+"obl:instr": 2,
+"obl:manner": 2,
+"ccomp": 1,
+"orphan": 1,
+"advcl:ccomp": 1,
+"obl:agent": 1,
+"advcl": 1,
+"discourse": 1,
+"nummod": 1,
+"advcl:dpct": 1,
+"csubj": 1,
+"advcl:temp": 1
+}
+},
+"yā": {
+"verb_freq": 5649,
+"verb_parsed_freq": 153,
+"dep_gov": {
+"Nom": 109,
+"Acc": 70,
+"Ins": 53,
+"Dat": 10,
+"Abl": 9,
+"Loc": 9
+},
+"dep_deprel": {
+"obl": 45,
+"nsubj": 37,
+"obl:goal": 29,
+"advcl": 29,
+"advcl:dpct": 16,
+"obl:instr": 12,
+"obj": 12,
+"obl:soc": 10,
+"obl:manner": 10,
+"flat": 9,
+"advcl:manner": 7,
+"obl:path": 7,
+"conj": 7,
+"advcl:fin": 6,
+"obl:source": 5,
+"obl:loc": 4,
+"advmod": 4,
+"iobj": 3,
+"obl:temp": 2,
+"advcl:temp": 2,
+"discourse": 1,
+"acl:dpct": 1,
+"vocative": 1,
+"advcl:consec": 1
+}
+},
+"yāc": {
+"verb_freq": 755,
+"verb_parsed_freq": 31,
+"dep_gov": {
+"Acc": 27,
+"Nom": 5,
+"Dat": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 17,
+"iobj": 10,
+"nsubj": 4,
+"advcl:caus": 1,
+"obl:temp": 1,
+"obl": 1
+}
+},
+"ācakṣ": {
+"verb_freq": 937,
+"verb_parsed_freq": 72,
+"dep_gov": {
+"Acc": 64,
+"Nom": 61,
+"Ins": 13,
+"Dat": 7,
+"Loc": 6,
+"Gen": 2
+},
+"dep_deprel": {
+"obj": 49,
+"ccomp": 33,
+"xcomp": 16,
+"iobj": 11,
+"obl:manner": 8,
+"nsubj": 7,
+"advmod": 7,
+"obl": 5,
+"dislocated": 4,
+"conj": 2,
+"advcl:cond": 2,
+"advcl:dpct": 2,
+"advcl": 1,
+"acl": 1,
+"obl:loc": 1,
+"obl:instr": 1,
+"parataxis": 1,
+"flat": 1,
+"advcl:temp": 1
+}
+},
+"ādeśay": {
+"verb_freq": 15,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ādiś": {
+"verb_freq": 609,
+"verb_parsed_freq": 19,
+"dep_gov": {
+"Acc": 8,
+"Nom": 7,
+"Dat": 2,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 4,
+"advmod": 3,
+"advcl": 2,
+"nsubj": 2,
+"xcomp": 2,
+"conj": 1,
+"advcl:manner": 1,
+"obl:temp": 1,
+"advcl:ccomp": 1,
+"iobj": 1
+}
+},
+"ādā": {
+"verb_freq": 3158,
+"verb_parsed_freq": 205,
+"dep_gov": {
+"Acc": 188,
+"Nom": 85,
+"Ins": 35,
+"Gen": 21,
+"Abl": 15,
+"Loc": 10,
+"Dat": 8
+},
+"dep_deprel": {
+"obj": 169,
+"advcl:ccomp": 47,
+"conj": 34,
+"nsubj": 31,
+"obl:instr": 22,
+"obl": 16,
+"obl:source": 13,
+"advcl": 6,
+"advmod": 6,
+"obl:temp": 4,
+"advcl:manner": 3,
+"ccomp": 3,
+"obl:soc": 2,
+"flat": 2,
+"iobj": 1,
+"advcl:dpct": 1,
+"advcl:fin": 1,
+"orphan": 1
+}
+},
+"āhvā": {
+"verb_freq": 689,
+"verb_parsed_freq": 14,
+"dep_gov": {
+"Acc": 4,
+"Abl": 2,
+"Nom": 2,
+"Dat": 1,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obj": 4,
+"obl:source": 1,
+"iobj": 1,
+"flat": 1,
+"advcl": 1,
+"obl:loc": 1,
+"obl:agent": 1,
+"conj": 1
+}
+},
+"ākarṇay": {
+"verb_freq": 236,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ākhyā": {
+"verb_freq": 972,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Nom": 6,
+"Dat": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"ccomp": 2,
+"iobj": 2,
+"xcomp": 1,
+"obl:instr": 1
+}
+},
+"ālamb": {
+"verb_freq": 130,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Nom": 4,
+"Loc": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"advcl:caus": 1,
+"obl:temp": 1,
+"nsubj": 1,
+"obj": 1,
+"advcl": 1,
+"obl:manner": 1
+}
+},
+"āmnā": {
+"verb_freq": 75,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2
+},
+"dep_deprel": {
+"nsubj": 2,
+"obj": 1,
+"xcomp": 1
+}
+},
+"āmuc": {
+"verb_freq": 46,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ānī": {
+"verb_freq": 1178,
+"verb_parsed_freq": 53,
+"dep_gov": {
+"Acc": 48,
+"Loc": 23,
+"Nom": 7,
+"Dat": 6,
+"Abl": 4,
+"Ins": 4
+},
+"dep_deprel": {
+"obj": 39,
+"obl:goal": 14,
+"obl": 10,
+"obl:benef": 3,
+"obl:loc": 3,
+"nsubj": 3,
+"obl:instr": 3,
+"advcl:ccomp": 3,
+"conj": 3,
+"advmod": 2,
+"obl:source": 2,
+"iobj": 2,
+"advcl": 2,
+"advcl:manner": 1,
+"obl:soc": 1,
+"flat": 1
+}
+},
+"āp": {
+"verb_freq": 2314,
+"verb_parsed_freq": 169,
+"dep_gov": {
+"Acc": 149,
+"Nom": 59,
+"Ins": 56,
+"Dat": 8,
+"Loc": 7,
+"Gen": 6,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 118,
+"nsubj": 43,
+"obl:instr": 35,
+"advmod": 15,
+"obl": 15,
+"conj": 11,
+"obl:goal": 10,
+"obl:agent": 10,
+"iobj": 8,
+"obl:loc": 5,
+"advcl": 5,
+"obl:manner": 4,
+"discourse": 2,
+"parataxis": 1,
+"advcl:cond": 1,
+"obl:benef": 1,
+"ccomp": 1,
+"advcl:dpct": 1
+}
+},
+"āpat": {
+"verb_freq": 400,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Acc": 1,
+"Nom": 1
+},
+"dep_deprel": {
+"obl:goal": 1,
+"advcl:dpct": 1
+}
+},
+"ās": {
+"verb_freq": 1955,
+"verb_parsed_freq": 135,
+"dep_gov": {
+"Nom": 72,
+"Loc": 34,
+"Acc": 25,
+"Abl": 7,
+"Dat": 6,
+"Gen": 6,
+"Ins": 4
+},
+"dep_deprel": {
+"nsubj": 32,
+"advcl": 24,
+"obl:loc": 23,
+"obl": 15,
+"obl:temp": 15,
+"obj": 11,
+"conj": 7,
+"advcl:temp": 5,
+"advcl:dpct": 4,
+"obl:manner": 3,
+"flat": 3,
+"advmod": 2,
+"advcl:ccomp": 2,
+"advcl:cond": 2,
+"advcl:manner": 2,
+"iobj": 1,
+"acl": 1,
+"acl:dpct": 1,
+"obl:instr": 1
+}
+},
+"āsañj": {
+"verb_freq": 262,
+"verb_parsed_freq": 1,
+"dep_gov": {
+"Acc": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obj": 1,
+"obl:goal": 1
+}
+},
+"āsphālay": {
+"verb_freq": 13,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"āsthā": {
+"verb_freq": 1328,
+"verb_parsed_freq": 18,
+"dep_gov": {
+"Acc": 11,
+"Nom": 6,
+"Abl": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"obl:goal": 5,
+"obl": 4,
+"flat": 3,
+"nsubj": 2,
+"advcl:ccomp": 2,
+"parataxis": 1,
+"advmod": 1,
+"obl:instr": 1
+}
+},
+"āsvāday": {
+"verb_freq": 78,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ātap": {
+"verb_freq": 26,
+"verb_parsed_freq": 3,
+"dep_gov": {
+"Nom": 2,
+"Acc": 2,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 2,
+"obl:instr": 1,
+"advmod": 1,
+"obj": 1
+}
+},
+"āvah": {
+"verb_freq": 245,
+"verb_parsed_freq": 23,
+"dep_gov": {
+"Acc": 18,
+"Nom": 10,
+"Dat": 3,
+"Abl": 2,
+"Ins": 2
+},
+"dep_deprel": {
+"obj": 13,
+"flat": 6,
+"nsubj": 4,
+"obl:source": 2,
+"iobj": 2,
+"obl:instr": 1,
+"obl:soc": 1,
+"obl:temp": 1,
+"advcl:manner": 1,
+"obl:goal": 1,
+"parataxis": 1,
+"acl": 1,
+"acl:rel": 1
+}
+},
+"īkṣ": {
+"verb_freq": 473,
+"verb_parsed_freq": 32,
+"dep_gov": {
+"Nom": 29,
+"Acc": 12,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 19,
+"obj": 11,
+"ccomp": 8,
+"advcl:ccomp": 2,
+"advcl": 1,
+"discourse": 1
+}
+},
+"īr": {
+"verb_freq": 87,
+"verb_parsed_freq": 17,
+"dep_gov": {
+"Nom": 23,
+"Acc": 3,
+"Dat": 2,
+"Loc": 1,
+"Ins": 1
+},
+"dep_deprel": {
+"nsubj": 15,
+"advcl": 2,
+"obl:benef": 2,
+"obl:manner": 2,
+"obl": 2,
+"obj": 1,
+"obl:temp": 1,
+"advcl:manner": 1,
+"obl:goal": 1,
+"conj": 1,
+"orphan": 1,
+"parataxis": 1
+}
+},
+"īś": {
+"verb_freq": 425,
+"verb_parsed_freq": 71,
+"dep_gov": {
+"Nom": 55,
+"Gen": 46,
+"Acc": 14,
+"Ins": 4,
+"Loc": 3,
+"Abl": 1
+},
+"dep_deprel": {
+"obj": 51,
+"nsubj": 44,
+"conj": 10,
+"obl": 5,
+"obl:instr": 3,
+"advcl": 2,
+"nmod": 2,
+"flat": 1,
+"discourse": 1,
+"obl:agent": 1,
+"dislocated": 1,
+"obl:loc": 1,
+"obl:temp": 1
+}
+},
+"īḍ": {
+"verb_freq": 352,
+"verb_parsed_freq": 48,
+"dep_gov": {
+"Acc": 21,
+"Nom": 20,
+"Loc": 9,
+"Ins": 5,
+"Gen": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 16,
+"nsubj": 10,
+"obl": 10,
+"flat": 5,
+"obl:instr": 3,
+"parataxis": 2,
+"xcomp": 2,
+"advcl": 2,
+"obl:temp": 2,
+"csubj": 1,
+"acl:dpct": 1,
+"advcl:fin": 1,
+"iobj": 1,
+"advcl:temp": 1
+}
+},
+"īṣ": {
+"verb_freq": 24,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Nom": 5,
+"Abl": 2,
+"Gen": 1,
+"Acc": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"nsubj": 4,
+"obl:source": 2,
+"flat": 1,
+"obl:goal": 1,
+"obl": 1,
+"advcl:manner": 1
+}
+},
+"śak": {
+"verb_freq": 1952,
+"verb_parsed_freq": 62,
+"dep_gov": {
+"Nom": 14,
+"Acc": 10,
+"Dat": 8,
+"Ins": 7,
+"Loc": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 9,
+"obl": 7,
+"nsubj": 6,
+"flat": 5,
+"iobj": 5,
+"conj": 2,
+"advcl": 2,
+"advcl:concess": 1,
+"parataxis": 1,
+"advcl:caus": 1,
+"xcomp": 1,
+"obl:benef": 1
+}
+},
+"śap": {
+"verb_freq": 484,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Acc": 7,
+"Nom": 6,
+"Ins": 2
+},
+"dep_deprel": {
+"obj": 6,
+"nsubj": 4,
+"obl:instr": 2,
+"advcl": 1,
+"flat": 1,
+"advcl:cond": 1
+}
+},
+"śaṃs": {
+"verb_freq": 1785,
+"verb_parsed_freq": 64,
+"dep_gov": {
+"Acc": 39,
+"Nom": 15,
+"Loc": 10,
+"Dat": 10,
+"Ins": 8,
+"Gen": 6,
+"Abl": 4
+},
+"dep_deprel": {
+"obj": 31,
+"nsubj": 14,
+"iobj": 9,
+"obl:temp": 7,
+"conj": 6,
+"obl:benef": 5,
+"obl": 4,
+"advmod": 3,
+"obl:instr": 3,
+"xcomp": 2,
+"ccomp": 2,
+"advcl": 2,
+"flat": 1,
+"obl:soc": 1,
+"obl:agent": 1,
+"obl:manner": 1
+}
+},
+"śaṅk": {
+"verb_freq": 273,
+"verb_parsed_freq": 2,
+"dep_gov": {
+"Nom": 1
+},
+"dep_deprel": {
+"nsubj": 1
+}
+},
+"śeṣay": {
+"verb_freq": 30,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"śikṣ": {
+"verb_freq": 345,
+"verb_parsed_freq": 16,
+"dep_gov": {
+"Nom": 6,
+"Dat": 6,
+"Acc": 3,
+"Ins": 2,
+"Abl": 1,
+"Loc": 1
+},
+"dep_deprel": {
+"obl": 6,
+"nsubj": 4,
+"obj": 4,
+"iobj": 3,
+"advcl": 1,
+"advcl:manner": 1
+}
+},
+"śikṣay": {
+"verb_freq": 175,
+"verb_parsed_freq": 0,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"śliṣ": {
+"verb_freq": 92,
+"verb_parsed_freq": 1,
+"dep_gov": {},
+"dep_deprel": {}
+},
+"ślāgh": {
+"verb_freq": 186,
+"verb_parsed_freq": 4,
+"dep_gov": {
+"Ins": 1,
+"Nom": 1,
+"Acc": 1
+},
+"dep_deprel": {
+"obl:agent": 1,
+"nsubj": 1,
+"advmod": 1
+}
+},
+"śraddhā": {
+"verb_freq": 343,
+"verb_parsed_freq": 11,
+"dep_gov": {
+"Gen": 3,
+"Dat": 2,
+"Acc": 2
+},
+"dep_deprel": {
+"iobj": 3,
+"mark": 1,
+"obj": 1,
+"advcl:fin": 1,
+"acl": 1
+}
+},
+"śrapay": {
+"verb_freq": 290,
+"verb_parsed_freq": 59,
+"dep_gov": {
+"Acc": 49,
+"Loc": 21,
+"Nom": 14,
+"Ins": 6,
+"Dat": 1,
+"Gen": 1
+},
+"dep_deprel": {
+"obj": 43,
+"obl:loc": 10,
+"obl": 10,
+"advcl": 5,
+"nsubj": 5,
+"obl:temp": 4,
+"advmod": 4,
+"advcl:ccomp": 2,
+"flat": 1,
+"conj": 1,
+"advcl:manner": 1,
+"obl:instr": 1,
+"advcl:temp": 1,
+"iobj": 1,
+"xcomp": 1,
+"obl:soc": 1,
+"dislocated": 1
+}
+},
+"śri": {
+"verb_freq": 451,
+"verb_parsed_freq": 44,
+"dep_gov": {
+"Nom": 33,
+"Loc": 22,
+"Acc": 17,
+"Dat": 3,
+"Gen": 2,
+"Ins": 2
+},
+"dep_deprel": {
+"nsubj": 25,
+"obl:loc": 15,
+"obl": 13,
+"obj": 7,
+"advmod": 3,
+"advcl": 3,
+"flat": 3,
+"advcl:fin": 2,
+"conj": 2,
+"advcl:manner": 2,
+"obl:goal": 1,
+"advcl:dpct": 1,
+"obl:benef": 1,
+"iobj": 1
+}
+},
+"śru": {
+"verb_freq": 10505,
+"verb_parsed_freq": 183,
+"dep_gov": {
+"Nom": 82,
+"Acc": 79,
+"Ins": 21,
+"Gen": 19,
+"Loc": 8,
+"Dat": 5,
+"Abl": 2
+},
+"dep_deprel": {
+"obj": 78,
+"nsubj": 43,
+"conj": 15,
+"obl:instr": 13,
+"advcl": 11,
+"obl": 10,
+"xcomp": 7,
+"ccomp": 5,
+"obl:manner": 4,
+"flat": 3,
+"iobj": 3,
+"obl:source": 3,
+"obl:agent": 3,
+"csubj": 2,
+"advcl:dpct": 2,
+"obl:temp": 2,
+"obl:loc": 2,
+"advcl:temp": 1,
+"parataxis": 1,
+"advcl:fin": 1,
+"mark": 1,
+"nmod": 1,
+"dislocated": 1,
+"advmod": 1,
+"advcl:cond": 1,
+"acl:dpct": 1,
+"obl:soc": 1
+}
+},
+"śuc": {
+"verb_freq": 777,
+"verb_parsed_freq": 22,
+"dep_gov": {
+"Nom": 10,
+"Loc": 4,
+"Acc": 2,
+"Ins": 2
+},
+"dep_deprel": {
+"nsubj": 7,
+"obl": 3,
+"obl:loc": 2,
+"advcl:caus": 1,
+"obl:grad": 1,
+"advcl": 1,
+"conj": 1,
+"obl:instr": 1,
+"obj": 1
+}
+},
+"śuṣ": {
+"verb_freq": 166,
+"verb_parsed_freq": 5,
+"dep_gov": {
+"Nom": 3,
+"Acc": 1
+},
+"dep_deprel": {
+"nsubj": 3,
+"advmod": 1
+}
+},
+"śās": {
+"verb_freq": 533,
+"verb_parsed_freq": 25,
+"dep_gov": {
+"Acc": 15,
+"Nom": 6,
+"Ins": 1,
+"Dat": 1
+},
+"dep_deprel": {
+"obj": 10,
+"nsubj": 2,
+"mark": 2,
+"advcl:manner": 2,
+"obl:agent": 1,
+"csubj": 1,
+"iobj": 1,
+"ccomp": 1,
+"obl:benef": 1,
+"obl": 1,
+"obl:manner": 1
+}
+},
+"śī": {
+"verb_freq": 1116,
+"verb_parsed_freq": 51,
+"dep_gov": {
+"Nom": 33,
+"Acc": 11,
+"Loc": 10,
+"Gen": 1
+},
+"dep_deprel": {
+"nsubj": 17,
+"obl:loc": 9,
+"conj": 7,
+"obl": 4,
+"obl:temp": 4,
+"obl:manner": 3,
+"advcl": 2,
+"advmod": 2,
+"advcl:manner": 2,
+"advcl:temp": 1,
+"csubj": 1,
+"discourse": 1,
+"advcl:dpct": 1,
+"xcomp": 1
+}
+},
+"ūh": {
+"verb_freq": 98,
+"verb_parsed_freq": 6,
+"dep_gov": {
+"Acc": 2,
+"Gen": 2,
+"Nom": 2,
+"Dat": 1
+},
+"dep_deprel": {
+"advcl:fin": 1,
+"obj": 1,
+"advcl:ccomp": 1,
+"orphan": 1,
+"conj": 1,
+"xcomp": 1,
+"nsubj": 1
+}
+}
+}
