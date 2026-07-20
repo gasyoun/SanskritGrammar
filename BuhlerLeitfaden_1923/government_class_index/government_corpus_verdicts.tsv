@@ -1,0 +1,1169 @@
+root	stem	dcs_lemma	scherzl_case	ud_case	subtype	example_only	pages	verdict	dep_gov_count	dep_total	cooc_count	cooc_expected	cooc_ratio	verb_freq	verb_parsed_freq
+ad	ad	ad	instr	Ins	orug	True	105	CONFIRMED	27	138	199	162.2	1.227	699	86
+ad	ad	ad	instr	Ins	adv	True	131	CONFIRMED	27	138	199	162.2	1.227	699	86
+ad	ad	ad	gen	Gen		False	254,255	CONFIRMED	4	138	222	175.7	1.264	699	86
+ah	ah	ah	acc	Acc		False	59	CONFIRMED	348	763	6678	4578.4	1.459	9447	662
+ah	ah	ah	acc	Acc		False	73,75	CONFIRMED	348	763	6678	4578.4	1.459	9447	662
+an	prāṇ	prāṇ	instr	Ins	orud	True	112	CONFIRMED	9	31	66	36.2	1.823	156	33
+āp	āp	āp	acc	Acc		False	45	CONFIRMED	149	286	2132	1121.5	1.901	2314	169
+āp	prāp	prāp	instr	Ins	pros	True	102	CONFIRMED	4	78	1560	1397.6	1.116	6022	51
+āp	avāp	avāp	instr	Ins	pros	True	102	CONFIRMED	7	36	380	365.3	1.04	1574	17
+āp	avāp	avāp	abl	Abl		True	202,205	UNATTESTED-INSUFFICIENT	0	36	207	123.1	1.682	1574	17
+ar	samarpay	samarpay	gen	Gen		False	261,263	UNATTESTED-INSUFFICIENT	0	1	67	60.1	1.116	239	1
+ar	ud-ṛ		instr	Ins	orud	True	108	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ar	ar		acc	Acc		False	51,52	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ar	ar		instr	Ins	pros	True	101	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ar	ar		dat	Dat	dop	False	150	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ar	ar		loc	Loc		True	307	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ar	(nir-ar)		abl	Abl		False	190	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+arc	arc	arc	acc	Acc		False	45	CONFIRMED	14	38	314	200.2	1.569	413	26
+arc	arc	arc	dat	Dat	dop	False	151	CONFIRMED	9	38	91	23.9	3.813	413	26
+arc	arc	arc	abl	Abl		True	223	CONTRADICTED	0	38	14	32.3	0.434	413	26
+arch/arcch	arch		acc	Acc		False	51	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+arch/arcch	ṛcch		abl	Abl		True	202	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ard	ard		acc	Acc		False	60,61	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ardh	vyardhay	vyardhay	instr	Ins	sep	False	133,135	CONFIRMED	7	13	41	10.9	3.759	47	10
+arh	arh	arh	acc	Acc		False	45,47	CONFIRMED	5	20	2043	1153.4	1.771	2380	19
+arth	arthay	arthay	acc	Acc		False	69,71	UNATTESTED-INSUFFICIENT	0	0	68	56.7	1.199	117	0
+arth	prārthay	prārthay	acc	Acc		False	71	CONFIRMED	1	5	330	205.5	1.606	424	3
+arth	prārthay	prārthay	loc	Loc		True	287	CONFIRMED	1	5	81	86.9	0.932	424	3
+as	abhyas	abhyas	acc	Acc		True	63	CONFIRMED	2	5	203	147.8	1.373	305	3
+as	as	as	nom	Nom		False	24	CONFIRMED	349	597	34665	26576.2	1.304	35753	2147
+as	as	as	nom	Nom		True	25	CONFIRMED	349	597	34665	26576.2	1.304	35753	2147
+as	as	as	acc	Acc		False	65	CONFIRMED	73	597	13237	17327.4	0.764	35753	2147
+as	as	as	instr	Ins	sep	True	136	CONFIRMED	10	597	7550	8297.8	0.91	35753	2147
+as	as	as	dat	Dat	ogr	False	163,165	CONFIRMED	66	597	4170	2066.1	2.018	35753	2147
+as	as	as	abl	Abl		False	197	CONFIRMED	15	597	3448	2795.3	1.233	35753	2147
+as	as	as	gen	Gen		False	245	CONFIRMED	31	597	14269	8985.0	1.588	35753	2147
+as	as	as	loc	Loc		False	282	CONFIRMED	53	597	9155	7327.9	1.249	35753	2147
+as	as	as	dat	Dat	ogr	False	159	CONFIRMED	66	597	4170	2066.1	2.018	35753	2147
+as	atyas	atyas	acc	Acc		False	62	UNATTESTED-INSUFFICIENT	0	0	3	2.9	1.032	6	0
+as	(prati-as)	as	dat	Dat	dop	True	151	CONFIRMED	66	597	4170	2066.1	2.018	35753	2147
+aś	aś	aś	acc	Acc		False	45	CONFIRMED	144	293	1622	944.1	1.718	1948	175
+aś	aś	aś	abl	Abl		True	202	CONFIRMED	3	293	165	152.3	1.083	1948	175
+aś	aś	aś	gen	Gen		False	254,255	CONFIRMED	14	293	677	489.5	1.383	1948	175
+aś	aś	aś	loc	Loc		True	281,288	CONFIRMED	16	293	375	399.3	0.939	1948	175
+aś	atyaś	atyaś	acc	Acc		True	62	CONFIRMED	2	3	10	5.8	1.719	12	2
+aś	(pra-aś)	aś	gen	Gen		True	255	CONFIRMED	14	293	677	489.5	1.383	1948	175
+ās	ās	ās	acc	Acc		False	51,52	CONFIRMED	25	154	1266	947.5	1.336	1955	135
+ās	(sam-ās)	ās	acc	Acc		True	63	CONFIRMED	25	154	1266	947.5	1.336	1955	135
+aṭ	aṭ	aṭ	acc	Acc		False	51	UNATTESTED-INSUFFICIENT	0	0	41	29.1	1.41	60	0
+av	av	av	loc	Loc		False	301	CONFIRMED	12	232	230	177.7	1.294	867	143
+badh	bībhats	bībhats	abl	Abl		False	192	CONFIRMED	2	5	13	1.2	11.085	15	4
+bādh	bādh	bādh	instr	Ins	orud	True	105,108	CONFIRMED	4	33	193	105.8	1.824	456	24
+bādh	bādh	bādh	instr	Ins	pr	True	121	CONFIRMED	4	33	193	105.8	1.824	456	24
+bādh	nibādh	nibādh	instr	Ins	orud	True	113	UNATTESTED-INSUFFICIENT	0	0	4	0.9	4.309	4	0
+bādh	paribādh	paribādh	abl	Abl		False	191,192,10	CONFIRMED	1	4	8	1.3	6.019	17	3
+bandh	bandh	bandh	acc	Acc		False	46	CONFIRMED	52	146	1596	1286.2	1.241	2654	89
+bandh	bandh	bandh	abl	Abl		True	188	CONFIRMED	2	146	249	207.5	1.2	2654	89
+bandh	bandh	bandh	loc	Loc		False	311	CONFIRMED	23	146	873	544.0	1.605	2654	89
+bhā	bhā	bhā	nom	Nom		False	24	CONFIRMED	30	43	712	550.8	1.293	741	24
+bhā	bhā	bhā	instr	Ins	orud	True	108	CONFIRMED	4	43	248	172.0	1.442	741	24
+bhā	pratibhā	pratibhā	nom	Nom		False	24	CONFIRMED	2	3	156	121.9	1.28	164	1
+bhā	pratibhā	pratibhā	gen	Gen		False	252,253	UNATTESTED-INSUFFICIENT	0	3	108	41.2	2.62	164	1
+bhaj	bhaj	bhaj	acc	Acc		False	46	CONFIRMED	24	51	1053	564.1	1.867	1164	28
+bhaj	bhaj	bhaj	gen	Gen		False	254,256	CONFIRMED	1	51	290	292.5	0.991	1164	28
+bhaj	bhaj	bhaj	loc	Loc		True	309	CONFIRMED	2	51	216	238.6	0.905	1164	28
+bhaj	nirbhaj	nirbhaj	abl	Abl		False	186	CONFIRMED	6	17	23	3.8	6.129	48	6
+bhaj	vibhaj	vibhaj	acc	Acc		False	69	CONFIRMED	11	25	441	293.7	1.502	606	17
+bhaj	vibhaj	vibhaj	gen	Gen		True	271	CONFIRMED	1	25	175	152.3	1.149	606	17
+bhakṣ	bhakṣ	bhakṣ	gen	Gen		False	254,255	CONFIRMED	2	4	51	40.7	1.253	162	2
+bhañj	bhañj	bhañj	acc	Acc		False	46	CONFIRMED	7	8	347	365.4	0.95	754	9
+bhar	ābhar		abl	Abl		True	188	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+bhar	bhar		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+bhar	bhar		instr	Ins	orud	True	107	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+bhar	bhar		dat	Dat	dop	False	151	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+bharts	bharts	bharts	acc	Acc		False	59	UNATTESTED-INSUFFICIENT	0	0	2	2.9	0.688	6	0
+bhaṣ	bhaṣ	bhaṣ	acc	Acc		False	59	UNATTESTED-INSUFFICIENT	0	2	7	5.3	1.313	11	1
+bhāṣ	abhibhāṣ	abhibhāṣ	acc	Acc		False	59	CONFIRMED	3	4	223	139.1	1.603	287	4
+bhāṣ	bhāṣ	bhāṣ	acc	Acc		False	59	CONFIRMED	18	59	1162	742.5	1.565	1532	22
+bhāṣ	bhāṣ	bhāṣ	acc	Acc		False	69	CONFIRMED	18	59	1162	742.5	1.565	1532	22
+bhāṣ	bhāṣ	bhāṣ	instr	Ins	p	True	121	CONFIRMED	8	59	372	355.6	1.046	1532	22
+bhāṣ	sambhāṣ	sambhāṣ	acc	Acc		False	59	CONFIRMED	1	9	86	65.9	1.305	136	8
+bhī	bhī	bhī	abl	Abl		False	192,193	CONFIRMED	22	66	433	108.2	4.002	1384	60
+bhī	bhī	bhī	gen	Gen		False	249	CONFIRMED	1	66	385	347.8	1.107	1384	60
+bhid	bhid	bhid	acc	Acc		False	46,48	CONFIRMED	38	64	1168	992.1	1.177	2047	62
+bhid	bhid	bhid	instr	Ins	orud	True	107	CONFIRMED	5	64	708	475.1	1.49	2047	62
+bhid	bhid	bhid	instr	Ins	adv	True	131	CONFIRMED	5	64	708	475.1	1.49	2047	62
+bhid	bhid	bhid	abl	Abl		False	207,208	UNATTESTED-INSUFFICIENT	0	64	255	160.0	1.593	2047	62
+bhid	vibhid	vibhid	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	1	56	31.6	1.774	136	1
+bhikṣ	bhikṣ	bhikṣ	gen	Gen		False	254,256	CONFIRMED	2	23	32	25.9	1.236	103	16
+bhram	bhram	bhram	acc	Acc		False	51,53	UNATTESTED-INSUFFICIENT	0	0	291	286.9	1.014	592	0
+bhraṁś	bhraṁś	bhraṃś	abl	Abl		False	186,188	CONFIRMED	1	2	125	26.6	4.702	340	2
+bhū	anubhū	anubhū	acc	Acc		False	62	CONFIRMED	10	23	262	189.0	1.386	390	11
+bhū	bhū	bhū	nom	Nom		False	24	CONFIRMED	1718	2111	38978	30025.2	1.298	40393	2033
+bhū	bhū	bhū	acc	Acc		False	65	CONFIRMED	68	2111	12923	19576.1	0.66	40393	2033
+bhū	bhū	bhū	instr	Ins	pros	True	102	CONFIRMED	78	2111	8903	9374.7	0.95	40393	2033
+bhū	bhū	bhū	instr	Ins	orud	True	108,109,112	CONFIRMED	78	2111	8903	9374.7	0.95	40393	2033
+bhū	bhū	bhū	dat	Dat	ogr	False	163,164	CONFIRMED	96	2111	2847	2334.2	1.22	40393	2033
+bhū	bhū	bhū	abl	Abl		True	190,196,215	CONFIRMED	31	2111	4208	3158.1	1.332	40393	2033
+bhū	bhū	bhū	gen	Gen		False	245	CONFIRMED	42	2111	15342	10151.1	1.511	40393	2033
+bhū	bhū	bhū	loc	Loc		False	282,286,301	CONFIRMED	78	2111	9734	8278.9	1.176	40393	2033
+bhū	prabhū	prabhū	dat	Dat	ogr	False	163,164	CONFIRMED	1	17	30	20.6	1.454	357	8
+bhū	prabhū	prabhū	abl	Abl		False	196,197	CONFIRMED	4	17	92	27.9	3.296	357	8
+bhū	prabhū	prabhū	gen	Gen		False	260	UNATTESTED-INSUFFICIENT	0	17	106	89.7	1.181	357	8
+bhū	prabhū	prabhū	loc	Loc		False	301	CONFIRMED	1	17	98	73.2	1.339	357	8
+bhū	sambhū	sambhū	acc	Acc		True	49,63	CONFIRMED	19	161	507	715.8	0.708	1477	91
+bhū	sambhū	sambhū	instr	Ins	soz	False	97,98	CONFIRMED	15	161	358	342.8	1.044	1477	91
+bhū	sambhū	sambhū	instr	Ins	pr	True	120	CONFIRMED	15	161	358	342.8	1.044	1477	91
+bhū	sambhū	sambhū	abl	Abl		True	197	CONFIRMED	27	161	265	115.5	2.295	1477	91
+bhū	sambhū	sambhū	gen	Gen		True	270	CONFIRMED	1	161	497	371.2	1.339	1477	91
+bhū	sambhū	sambhū	loc	Loc		True	286	CONFIRMED	16	161	391	302.7	1.292	1477	91
+bhuj	bhuj	bhuj	acc	Acc		False	63,67	CONFIRMED	33	66	1849	1320.6	1.4	2725	62
+bhuj	bhuj	bhuj	instr	Ins	orud	True	110	CONFIRMED	4	66	789	632.4	1.248	2725	62
+bhuj	bhuj	bhuj	instr	Ins	adv	True	132	CONFIRMED	4	66	789	632.4	1.248	2725	62
+bhuj	bhuj	bhuj	loc	Loc		True	281	CONFIRMED	6	66	707	558.5	1.266	2725	62
+bhūṣ	atibhūṣay	atibhūṣay	acc	Acc		True	62	UNATTESTED-INSUFFICIENT	0	0	1	0.5	2.063	1	0
+brū	adhibrū	adhibrū	dat	Dat	dop	False	151	UNATTESTED-INSUFFICIENT	0	0	4	0.3	13.844	5	0
+brū	brū	brū	nom	Nom		False	27	CONFIRMED	328	624	7931	7270.5	1.091	9781	405
+brū	brū	brū	acc	Acc		False	59	CONFIRMED	182	624	7820	4740.3	1.65	9781	405
+brū	brū	brū	acc	Acc		False	71	CONFIRMED	182	624	7820	4740.3	1.65	9781	405
+brū	brū	brū	acc	Acc		False	73	CONFIRMED	182	624	7820	4740.3	1.65	9781	405
+brū	brū	brū	dat	Dat	dop	False	151	CONFIRMED	68	624	917	565.2	1.622	9781	405
+brū	brū	brū	dat	Dat	ogr	True	176	CONFIRMED	68	624	917	565.2	1.622	9781	405
+brū	brū	brū	gen	Gen		False	264,265	CONFIRMED	19	624	2330	2458.0	0.948	9781	405
+brū	prabrū	prabrū	dat	Dat	dop	False	151	CONFIRMED	16	44	90	14.1	6.383	244	22
+budh	bodhay	bodhay	loc	Loc		True	289	CONFIRMED	2	19	43	44.5	0.967	217	12
+budh	budh	budh	acc	Acc		False	46	CONFIRMED	7	23	725	541.8	1.338	1118	23
+budh	budh	budh	acc	Acc		False	73	CONFIRMED	7	23	725	541.8	1.338	1118	23
+budh	budh	budh	gen	Gen		False	257	CONFIRMED	1	23	312	281.0	1.11	1118	23
+budh	prabodhay	prabodhay	dat	Dat	ogr	False	166	CONFIRMED	1	5	6	4.3	1.384	75	2
+cakṣ	ācakṣ	ācakṣ	gen	Gen		False	264,265	CONFIRMED	2	153	395	235.5	1.677	937	72
+cakṣ	cakṣ	cakṣ	acc	Acc		False	46	CONFIRMED	14	39	75	49.9	1.502	103	20
+cal	cal	cal	instr	Ins	p	True	122	UNATTESTED-INSUFFICIENT	0	0	131	114.0	1.15	491	0
+cal	cal	cal	abl	Abl		False	186,187,190,213	UNATTESTED-INSUFFICIENT	0	0	108	38.4	2.813	491	0
+cal	pravical	pravical	abl	Abl		True	190	UNATTESTED-INSUFFICIENT	0	0	3	0.5	6.395	6	0
+car	car	car	nom	Nom		True	25	CONFIRMED	127	327	3082	2993.4	1.03	4027	238
+car	car	car	acc	Acc		False	46,51,52	CONFIRMED	110	327	2772	1951.6	1.42	4027	238
+car	car	car	acc	Acc		True	67	CONFIRMED	110	327	2772	1951.6	1.42	4027	238
+car	car	car	acc	Acc		False	73	CONFIRMED	110	327	2772	1951.6	1.42	4027	238
+car	car	car	instr	Ins	soz	True	93,96	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	car	car	instr	Ins	pros	True	101	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	car	car	instr	Ins	orud	True	108,109	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	car	car	instr	Ins	pr	True	121	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	car	car	loc	Loc		True	304	CONFIRMED	38	327	1297	825.4	1.571	4027	238
+car	saṁcar	saṃcar	instr	Ins	orud	True	103	CONFIRMED	3	27	45	44.8	1.005	193	21
+car	vyabhicar	vyabhicar	gen	Gen		False	249	UNATTESTED-INSUFFICIENT	0	5	5	5.3	0.947	21	2
+car	(sam-ā-car)	car	instr	Ins	soz	True	98	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	(sam-ā-car)	car	instr	Ins	orud	True	103	CONFIRMED	40	327	1140	934.6	1.22	4027	238
+car	(sam-ā-car)	car	gen	Gen		True	267	CONFIRMED	5	327	993	1012.0	0.981	4027	238
+ceṣṭ	ceṣṭ	ceṣṭ	dat	Dat	dop	True	154	UNATTESTED-INSUFFICIENT	0	8	10	11.6	0.865	200	9
+ceṣṭ	ceṣṭ	ceṣṭ	abl	Abl		True	202	UNATTESTED-INSUFFICIENT	0	8	19	15.6	1.215	200	9
+chad/chand	chanday	chanday	acc	Acc		False	60	CONFIRMED	3	7	27	18.4	1.466	38	3
+chad/chand	chanday	chanday	instr	Ins	orud	True	108	UNATTESTED-INSUFFICIENT	0	7	31	8.8	3.515	38	3
+chad/chand	chanday	chanday	dat	Dat	dop	True	153	UNATTESTED-INSUFFICIENT	0	7	1	2.2	0.455	38	3
+chad/chand	chanday	chanday	loc	Loc		True	302	CONFIRMED	3	7	6	7.8	0.77	38	3
+chid	chid	chid	acc	Acc		False	46,48	CONFIRMED	24	69	1438	1036.6	1.387	2139	63
+chid	chid	chid	instr	Ins	orud	True	105,107	CONFIRMED	5	69	852	496.4	1.716	2139	63
+chid	chid	chid	dat	Dat	ogr	True	175	CONFIRMED	1	69	55	123.6	0.445	2139	63
+ci	ci	ci	acc	Acc		False	46	CONFIRMED	41	83	497	369.8	1.344	763	54
+ci	avaci	avaci	acc	Acc		False	69,71	UNATTESTED-INSUFFICIENT	0	0	10	5.8	1.719	12	0
+cint	cintay	cintay	acc	Acc		False	60	UNATTESTED-INSUFFICIENT	0	4	984	748.3	1.315	1544	4
+cit	cit	cit	nom	Nom		True	25	CONFIRMED	33	73	226	197.7	1.143	266	50
+cit	cit	cit	gen	Gen		False	257,258	CONFIRMED	9	73	123	66.8	1.84	266	50
+cud	coday	coday	dat	Dat	ogr	False	159	CONFIRMED	1	28	55	39.4	1.396	682	20
+cumb	cumb	cumb	abl	Abl		True	215	UNATTESTED-INSUFFICIENT	0	0	6	5.6	1.081	71	0
+cyu	cyu	cyu	abl	Abl		False	186	CONFIRMED	4	19	336	55.9	6.011	715	14
+cyu	pracyu	pracyu	abl	Abl		True	190	CONFIRMED	2	8	89	10.9	8.131	140	6
+dā	ādā	ādā	instr	Ins	orud	True	108	CONFIRMED	35	362	839	732.9	1.145	3158	205
+dā	ādā	ādā	abl	Abl		True	187	CONFIRMED	15	362	364	246.9	1.474	3158	205
+dā	ādā	ādā	gen	Gen		True	270	CONFIRMED	21	362	938	793.6	1.182	3158	205
+dā	ādā	ādā	loc	Loc		True	283,315,316	CONFIRMED	10	362	739	647.3	1.142	3158	205
+dā	dā	dā	acc	Acc		False	46,48	CONFIRMED	266	666	8958	5819.6	1.539	12008	338
+dā	dā	dā	acc	Acc		False	69,71	CONFIRMED	266	666	8958	5819.6	1.539	12008	338
+dā	dā	dā	acc	Acc		True	76	CONFIRMED	266	666	8958	5819.6	1.539	12008	338
+dā	dā	dā	instr	Ins	orud	True	109,110,112	CONFIRMED	24	666	3190	2786.9	1.145	12008	338
+dā	dā	dā	instr	Ins	adv	True	132	CONFIRMED	24	666	3190	2786.9	1.145	12008	338
+dā	dā	dā	instr	Ins		True	141	CONFIRMED	24	666	3190	2786.9	1.145	12008	338
+dā	dā	dā	dat	Dat	dop	False	150	CONFIRMED	197	666	3885	693.9	5.599	12008	338
+dā	dā	dā	abl	Abl		True	200,213	CONFIRMED	1	666	762	938.8	0.812	12008	338
+dā	dā	dā	gen	Gen		False	254,256,261	CONFIRMED	19	666	3251	3017.7	1.077	12008	338
+dā	dā	dā	loc	Loc		True	305	CONFIRMED	31	666	2880	2461.1	1.17	12008	338
+dā	pradā	pradā	gen	Gen		False	261,263	UNATTESTED-INSUFFICIENT	0	54	340	338.8	1.004	1348	35
+dah	dah	dah	acc	Acc		False	46,48	CONFIRMED	40	73	1363	1102.6	1.236	2275	50
+dah	dah	dah	instr	Ins	orud	True	107,107	CONFIRMED	6	73	862	528.0	1.633	2275	50
+dah	dah	dah	instr	Ins	p	True	121	CONFIRMED	6	73	862	528.0	1.633	2275	50
+dah	dah	dah	abl	Abl		True	223	UNATTESTED-INSUFFICIENT	0	73	167	177.9	0.939	2275	50
+dah	dāhay	dāhay	instr	Ins	orud	True	107	UNATTESTED-INSUFFICIENT	0	0	27	15.8	1.711	68	0
+dakṣ	dakṣ	dakṣ	dat	Dat	dop	False	152,153	CONFIRMED	2	2	3	0.5	6.489	8	3
+ḍamb	ḍamb		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+daṇḍ	daṇḍay	daṇḍay	acc	Acc		False	69	UNATTESTED-INSUFFICIENT	0	0	120	85.3	1.407	176	0
+dar	dar		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darś		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darś		instr	Ins	orud	True	104,107	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darś		instr	Ins	adv	True	132	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darś		dat	Dat	ogr	True	175	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darś		abl	Abl		True	198	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+darś	darśay	darśay	acc	Acc		True	72	CONFIRMED	10	14	1006	612.6	1.642	1264	8
+darś	darśay	darśay	instr	Ins	orud	True	107	CONFIRMED	1	14	370	293.4	1.261	1264	8
+darś	darśay	darśay	instr	Ins	pr	True	121	CONFIRMED	1	14	370	293.4	1.261	1264	8
+darś	darśay	darśay	gen	Gen		False	261,263	UNATTESTED-INSUFFICIENT	0	14	399	317.7	1.256	1264	8
+darś	saṁdarś		nom	Nom		True	26	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dāś	dāś	dāś	instr	Ins	pros	True	101	CONFIRMED	3	22	86	67.3	1.278	290	39
+dāś	dāś	dāś	dat	Dat	dop	False	152,153	CONFIRMED	11	22	217	16.8	12.949	290	39
+daśasy	daśasy	daśasy	dat	Dat	dop	False	150,151	CONFIRMED	2	5	20	1.9	10.488	33	4
+day	day	day	acc	Acc		False	63	CONFIRMED	6	14	32	18.4	1.738	38	6
+day	day	day	gen	Gen		False	252,253	UNATTESTED-INSUFFICIENT	0	14	7	9.5	0.733	38	6
+dhā	abhidhā	abhidhā	instr	Ins	soz	True	96	CONFIRMED	7	23	466	256.0	1.82	1103	13
+dhā	abhidhā	abhidhā	loc	Loc		False	309	UNATTESTED-INSUFFICIENT	0	23	293	226.1	1.296	1103	13
+dhā	antardhā	antardhā	abl	Abl		False	192,194	CONFIRMED	2	49	101	79.0	1.278	1011	38
+dhā	dhā	dhā	acc	Acc		False	46,48	CONFIRMED	541	1259	4336	2274.9	1.906	4694	601
+dhā	dhā	dhā	acc	Acc		False	73	CONFIRMED	541	1259	4336	2274.9	1.906	4694	601
+dhā	dhā	dhā	instr	Ins	soz	True	93,2,140	CONFIRMED	73	1259	1104	1089.4	1.013	4694	601
+dhā	dhā	dhā	instr	Ins	orud	True	144	CONFIRMED	73	1259	1104	1089.4	1.013	4694	601
+dhā	dhā	dhā	dat	Dat	dop	False	150	CONFIRMED	119	1259	1274	271.3	4.697	4694	601
+dhā	dhā	dhā	dat	Dat	ogr	True	161	CONFIRMED	119	1259	1274	271.3	4.697	4694	601
+dhā	dhā	dhā	gen	Gen		False	261,263	CONFIRMED	9	1259	1432	1179.6	1.214	4694	601
+dhā	dhā	dhā	loc	Loc		True	304,305	CONFIRMED	272	1259	2447	962.1	2.543	4694	601
+dhā	nidhā	nidhā	loc	Loc		False	305	CONFIRMED	78	292	994	326.9	3.041	1595	195
+dhā	samādhā	samādhā	acc	Acc		True	68	CONFIRMED	1	14	226	163.3	1.384	337	10
+dhā	saṁdhā	saṃdhā	instr	Ins	soz	False	97	CONFIRMED	14	67	331	180.8	1.831	779	43
+dhā	saṁdhā	saṃdhā	dat	Dat	dop	True	152	CONFIRMED	1	67	67	45.0	1.488	779	43
+dhā	saṁdhā	saṃdhā	loc	Loc		True	308	CONFIRMED	4	67	144	159.7	0.902	779	43
+dhā	saṁnidhā	saṃnidhā	loc	Loc		True	307	CONFIRMED	4	14	93	42.2	2.203	206	9
+dhā	śraddhā	śraddhā	dat	Dat	dop	False	150	CONFIRMED	2	7	42	19.8	2.119	343	11
+dhā	śraddhā	śraddhā	gen	Gen		False	261	CONFIRMED	3	7	136	86.2	1.578	343	11
+dhā	upanidhā	upanidhā	gen	Gen		True	263	CONFIRMED	1	14	15	12.8	1.17	51	11
+dhā	vidhā	vidhā	acc	Acc		False	73,75	CONFIRMED	7	29	1553	1326.9	1.17	2738	18
+dhanāy	dhanāy	dhanāy	gen	Gen		False	252,253	UNATTESTED-INSUFFICIENT	0	0	1	1.3	0.796	5	2
+dhanv	dhanv	dhanv	gen	Gen		True	269	UNATTESTED-INSUFFICIENT	0	10	6	11.8	0.508	47	7
+dhar	dhāray	dhāray	instr	Ins	orud	True	106	CONFIRMED	12	158	569	425.4	1.338	1833	78
+dhar	dhāray	dhāray	dat	Dat	dop	False	150	CONFIRMED	10	158	160	105.9	1.511	1833	78
+dhar	uddhar		acc	Acc		True	67	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dhar	dhar		acc	Acc		False	73,75	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dhar	dhar		instr	Ins		True	140	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dhar	dhar		abl	Abl		True	223	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dharṣ	dharṣ		acc	Acc		False	51	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dhāv	avadhāv	avadhāv	instr	Ins	orud	True	113	UNATTESTED-INSUFFICIENT	0	3	2	1.2	1.723	5	1
+dhāv	dhāv	dhāv	acc	Acc		False	51,58	CONFIRMED	10	40	339	282.1	1.202	582	30
+dhāv	dhāv	dhāv	instr	Ins	soz	True	94	CONFIRMED	3	40	188	135.1	1.392	582	30
+dhāv	dhāv	dhāv	instr	Ins	pros	True	100	CONFIRMED	3	40	188	135.1	1.392	582	30
+dhāv	dhāv	dhāv	abl	Abl		False	192,194,195	UNATTESTED-INSUFFICIENT	0	40	34	45.5	0.747	582	30
+dhāv	dhāv	dhāv	gen	Gen		True	268	CONFIRMED	1	40	161	146.3	1.101	582	30
+dhū	dhū	dhū	acc	Acc		False	46	CONFIRMED	13	33	181	118.7	1.524	245	23
+dhū	dhū	dhū	acc	Acc		False	69,71	CONFIRMED	13	33	181	118.7	1.524	245	23
+dhyai	dhyai		acc	Acc		False	60,61	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dhyai	dhyai		instr	Ins	pr	True	119	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dih	dih	dih	acc	Acc		False	46	CONFIRMED	1	5	96	89.7	1.071	185	9
+diś	ādeśay	ādeśay	gen	Gen		False	261,263,264	UNATTESTED-INSUFFICIENT	0	0	8	3.8	2.122	15	0
+diś	ādiś	ādiś	acc	Acc		True	50	CONFIRMED	8	18	468	295.1	1.586	609	19
+diś	ādiś	ādiś	dat	Dat	dop	False	151	CONFIRMED	2	18	69	35.2	1.961	609	19
+diś	ādiś	ādiś	gen	Gen		False	263,264	UNATTESTED-INSUFFICIENT	0	18	193	153.0	1.261	609	19
+diś	ādiś	ādiś	loc	Loc		True	289	CONFIRMED	1	18	130	124.8	1.041	609	19
+diś	diś	diś	acc	Acc		False	46	CONFIRMED	2	6	148	90.1	1.642	186	3
+diś	diś	diś	acc	Acc		False	69	CONFIRMED	2	6	148	90.1	1.642	186	3
+diś	diś	diś	dat	Dat	dop	False	151,152	CONFIRMED	2	6	72	10.7	6.699	186	3
+diś	nirdiś	nirdiś	acc	Acc		False	71	CONFIRMED	1	5	242	253.5	0.955	523	6
+diś	nirdiś	nirdiś	abl	Abl		True	213	UNATTESTED-INSUFFICIENT	0	5	63	40.9	1.541	523	6
+diś	samādiś	diś	acc	Acc		True	76	CONFIRMED	2	6	148	90.1	1.642	186	3
+diś	vyādiś	vyādiś	dat	Dat	ogr	False	166	CONFIRMED	1	5	17	4.2	4.086	72	1
+div	div		instr	Ins	orud	False	110,111	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+dru	pradru	pradru	abl	Abl		True	200	UNATTESTED-INSUFFICIENT	0	6	48	20.9	2.299	267	7
+dru	dru	dru	acc	Acc		False	51	CONFIRMED	6	14	607	520.0	1.167	1073	15
+druh	abhidruh	abhidruh	dat	Dat	dop	True	155	UNATTESTED-INSUFFICIENT	0	6	17	2.5	6.841	43	5
+druh	abhidruh	abhidruh	loc	Loc		True	309	UNATTESTED-INSUFFICIENT	0	6	6	8.8	0.681	43	5
+druh	druh	druh	dat	Dat	dop	False	155	CONFIRMED	2	6	27	4.0	6.675	70	4
+druh	druh	druh	gen	Gen		False	249	UNATTESTED-INSUFFICIENT	0	6	26	17.6	1.478	70	4
+duh	duh	duh	acc	Acc		False	46,69,70	CONFIRMED	109	219	664	390.6	1.7	806	120
+duh	duh	duh	loc	Loc		True	306	CONFIRMED	8	219	149	165.2	0.902	806	120
+dviṣ	dviṣ	dviṣ	acc	Acc		False	46	CONFIRMED	53	110	1144	650.9	1.758	1343	124
+dviṣ	dviṣ	dviṣ	gen	Gen		False	249	CONFIRMED	15	110	650	337.5	1.926	1343	124
+ej	ej	ej	instr	Ins	soz	True	93	CONFIRMED	1	17	29	19.7	1.47	85	13
+gā	gā	gā	acc	Acc		False	51	CONFIRMED	94	242	1412	926.1	1.525	1911	158
+gā	gā	gā	dat	Dat	ogr	False	159	CONFIRMED	10	242	182	110.4	1.648	1911	158
+gā	nirgā	nirgā	abl	Abl		False	196	UNATTESTED-INSUFFICIENT	0	0	15	2.4	6.189	31	0
+gad	gad	gad	acc	Acc		False	59	UNATTESTED-INSUFFICIENT	0	0	326	225.8	1.443	466	0
+gad	gad	gad	acc	Acc		False	69	UNATTESTED-INSUFFICIENT	0	0	326	225.8	1.443	466	0
+gad	gad	gad	gen	Gen		False	264	UNATTESTED-INSUFFICIENT	0	0	130	117.1	1.11	466	0
+gad	gad	gad	loc	Loc		False	301,303	UNATTESTED-INSUFFICIENT	0	0	71	95.5	0.743	466	0
+gāh	gāh	gāh	acc	Acc		False	51,52	CONFIRMED	6	16	63	33.4	1.884	69	7
+gai	gai		dat	Dat	ogr	True	176	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+gai	gai		loc	Loc		True	287	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+gam	adhigam	adhigam	instr	Ins	adv	True	131	CONFIRMED	4	21	200	146.4	1.366	631	12
+gam	anugam	anugam	instr	Ins	soz	True	93	CONFIRMED	3	32	237	183.8	1.289	792	26
+gam	apagam	apagam	instr	Ins	adv	True	132	UNATTESTED-INSUFFICIENT	0	1	43	33.2	1.296	143	1
+gam	apagam	apagam	dat	Dat	ogr	True	161	UNATTESTED-INSUFFICIENT	0	1	4	8.3	0.484	143	1
+gam	gam	gam	nom	Nom		True	25	CONFIRMED	290	699	14148	13633.4	1.038	18341	453
+gam	gam	gam	acc	Acc		False	51,52,55,56	CONFIRMED	284	699	13698	8888.8	1.541	18341	453
+gam	gam	gam	acc	Acc		False	73	CONFIRMED	284	699	13698	8888.8	1.541	18341	453
+gam	gam	gam	instr	Ins	soz	True	93	CONFIRMED	56	699	4601	4256.7	1.081	18341	453
+gam	gam	gam	instr	Ins	pros	True	100,102	CONFIRMED	56	699	4601	4256.7	1.081	18341	453
+gam	gam	gam	instr	Ins	orud	True	103,143	CONFIRMED	56	699	4601	4256.7	1.081	18341	453
+gam	gam	gam	instr	Ins	p	True	121	CONFIRMED	56	699	4601	4256.7	1.081	18341	453
+gam	gam	gam	instr	Ins	mod	True	130	CONFIRMED	56	699	4601	4256.7	1.081	18341	453
+gam	gam	gam	dat	Dat	ogr	False	159	CONFIRMED	18	699	819	1059.9	0.773	18341	453
+gam	gam	gam	abl	Abl		False	186,188,212,215	CONFIRMED	11	699	1504	1434.0	1.049	18341	453
+gam	gam	gam	gen	Gen		True	247	CONFIRMED	12	699	4639	4609.2	1.006	18341	453
+gam	gam	gam	loc	Loc		True	289,305	CONFIRMED	28	699	3827	3759.2	1.018	18341	453
+gam	nirgam	nirgam	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	0	219	42.8	5.121	547	0
+gam	parigam	parigam	instr	Ins	adv	True	131	UNATTESTED-INSUFFICIENT	0	0	33	18.8	1.755	81	0
+gam	pratigam	pratigam	instr	Ins	adv	True	131	UNATTESTED-INSUFFICIENT	0	0	9	17.6	0.51	76	0
+gam	samāgam	samāgam	instr	Ins	soz	False	97,98	CONFIRMED	1	4	238	172.7	1.378	744	6
+gam	saṁupagam	gam	abl	Abl		True	215	CONFIRMED	11	699	1504	1434.0	1.049	18341	453
+gam	upagam	upagam	acc	Acc		True	50	CONFIRMED	8	19	518	290.8	1.781	600	8
+gam	upagam	upagam	instr	Ins	soz	True	96	CONFIRMED	4	19	164	139.3	1.178	600	8
+gam	upagam	upagam	gen	Gen		True	268	CONFIRMED	1	19	161	150.8	1.068	600	8
+gam	vinirgam	vinirgam	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	2	33	5.9	5.554	76	1
+gaṇ	parigaṇay	parigaṇay	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	0	1	0.6	1.599	8	0
+gaṇ	gaṇay	gaṇay	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	0	19	12.8	1.482	164	0
+gar	anugar		dat	Dat	dop	False	151	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+gardh	gardh		loc	Loc		False	301,302	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+garh	garh	garh	acc	Acc		False	46,58	UNATTESTED-INSUFFICIENT	0	6	86	89.7	0.959	185	7
+garj	pratigarj	pratigarj	gen	Gen		False	249,251	UNATTESTED-INSUFFICIENT	0	0	5	2.0	2.487	8	0
+garv	garv		instr	Ins	orud	True	112	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ghaṭ	ghaṭ	ghaṭ	instr	Ins	orud	True	143	UNATTESTED-INSUFFICIENT	0	0	53	27.6	1.919	119	0
+ghaṭ	ghātay	ghātay	instr	Ins	orud	True	111	UNATTESTED-INSUFFICIENT	0	2	107	56.4	1.897	243	1
+ghrā	ghrā	ghrā	acc	Acc		False	46,48	CONFIRMED	5	8	86	63.0	1.365	130	5
+glā/glai	glai		dat	Dat	dop	False	155	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+gṝ	gṝ		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+gṝ	gṝ		instr	Ins	orud	True	113	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+grah	anugrah	anugrah	gen	Gen		False	252	UNATTESTED-INSUFFICIENT	0	6	94	70.1	1.341	279	4
+grah	grah	grah	acc	Acc		False	46,66	CONFIRMED	223	469	5356	3427.9	1.562	7073	307
+grah	grah	grah	instr	Ins	orud	True	105,108,110,111,144	CONFIRMED	68	469	2374	1641.6	1.446	7073	307
+grah	grah	grah	instr	Ins	adv	True	131	CONFIRMED	68	469	2374	1641.6	1.446	7073	307
+grah	grah	grah	instr	Ins		True	141	CONFIRMED	68	469	2374	1641.6	1.446	7073	307
+grah	grah	grah	dat	Dat	dop	True	152	CONFIRMED	7	469	1083	408.7	2.65	7073	307
+grah	grah	grah	abl	Abl		True	204	CONFIRMED	7	469	845	553.0	1.528	7073	307
+grah	grah	grah	gen	Gen		True	270	CONFIRMED	17	469	2156	1777.5	1.213	7073	307
+grah	grah	grah	loc	Loc		True	283	CONFIRMED	35	469	1778	1449.7	1.226	7073	307
+grah	grāhay	grāhay	acc	Acc		False	72	CONFIRMED	14	31	186	96.9	1.919	200	14
+grah	nigrah	nigrah	loc	Loc		True	283	CONFIRMED	3	11	98	72.4	1.355	353	8
+gras	gras	gras	acc	Acc		True	66	CONFIRMED	3	10	355	251.5	1.411	519	19
+guh	guh	guh	instr	Ins	orud	True	108	CONFIRMED	4	29	134	108.6	1.234	468	22
+guh	guh	guh	instr	Ins		True	140	CONFIRMED	4	29	134	108.6	1.234	468	22
+guh	guh	guh	abl	Abl		False	192,195	UNATTESTED-INSUFFICIENT	0	29	43	36.6	1.175	468	22
+guh	niguh	niguh	gen	Gen		True	270	UNATTESTED-INSUFFICIENT	0	1	12	16.1	0.746	64	2
+gup	gup	gup	gen	Gen		True	271	UNATTESTED-INSUFFICIENT	0	35	142	141.5	1.004	563	21
+gup	jugups	jugups	abl	Abl		False	192,194,195	CONFIRMED	3	4	16	5.6	2.842	72	4
+hā	hā	hā	dat	Dat	dop	False	153	CONFIRMED	3	116	87	158.3	0.55	2739	74
+hā	hā	hā	acc	Acc		False	47	CONFIRMED	51	116	1641	1327.4	1.236	2739	74
+hā	hā	hā	instr	Ins	sep	False	133,135	CONFIRMED	5	116	716	635.7	1.126	2739	74
+hā	hā	hā	abl	Abl		True	214	CONFIRMED	6	116	370	214.1	1.728	2739	74
+hā	vihā	vihā	abl	Abl		True	187	UNATTESTED-INSUFFICIENT	0	5	61	44.4	1.374	568	6
+han	han	han	acc	Acc		False	47	CONFIRMED	162	335	6201	4237.7	1.463	8744	216
+han	han	han	instr	Ins	orud	True	107,16,2,139,140	CONFIRMED	43	335	2807	2029.4	1.383	8744	216
+han	han	han	instr	Ins		True	140	CONFIRMED	43	335	2807	2029.4	1.383	8744	216
+han	han	han	abl	Abl		True	186,213,215	CONFIRMED	4	335	512	683.6	0.749	8744	216
+han	han	han	loc	Loc		True	288,306	CONFIRMED	13	335	2033	1792.2	1.134	8744	216
+han	pratihan	pratihan	instr	Ins	orud	True	105	CONFIRMED	1	7	84	56.9	1.477	245	5
+har	apahar		nom	Nom		True	25	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	apahar		abl	Abl		True	189	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	har		acc	Acc		False	47	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	har		instr	Ins	orud	True	108,2,140	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	har		abl	Abl		True	224	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	har		gen	Gen		True	269	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	har		dat	Dat	dop	True	155	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	prahar		dat	Dat	ogr	False	159,160	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	(pra-ud-hṛ)		abl	Abl		True	188	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	(ud-ā-har)		acc	Acc		False	74,75	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	upahar		acc	Acc		True	66	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	upahar		gen	Gen		True	270	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	vihar		instr	Ins	soz	True	95	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	(vi-a-har)		dat	Dat	dop	False	151	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+har	ud-hāray		abl	Abl		True	212	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+harṣ	anuharṣ		acc	Acc		True	62	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+harṣ	harṣ		instr	Ins	orud	True	111	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+harṣ	harṣ		dat	Dat	dop	True	153	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+hary	hary	hary	loc	Loc		True	287	UNATTESTED-INSUFFICIENT	0	9	7	8.8	0.794	43	8
+has	has	has	acc	Acc		False	64	UNATTESTED-INSUFFICIENT	0	1	243	203.1	1.197	419	2
+has	has	has	abl	Abl		True	202	UNATTESTED-INSUFFICIENT	0	1	25	32.8	0.763	419	2
+has	has	has	loc	Loc		False	301,303	CONFIRMED	1	1	85	85.9	0.99	419	2
+has	prahas	prahas	acc	Acc		True	63	CONFIRMED	1	1	348	230.7	1.509	476	3
+has	vihas	vihas	gen	Gen		False	253,254	UNATTESTED-INSUFFICIENT	0	0	18	24.9	0.723	99	0
+heṣ	heṣ	heṣ	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	0	1	2.0	0.492	26	0
+hi	hi	hi	loc	Loc		True	314	CONFIRMED	7	77	55	45.9	1.198	224	49
+hi	prahi	prahi	dat	Dat	ogr	False	159,160	CONFIRMED	2	25	125	25.0	4.996	433	15
+hīḍ	hīḍ	hīḍ	acc	Acc		False	47	CONFIRMED	1	4	24	14.1	1.708	29	6
+hnu	hnu	hnu	dat	Dat	dop	False	155	UNATTESTED-INSUFFICIENT	0	0	3	0.3	8.652	6	1
+hrī	hrī	hrī	abl	Abl		False	193,195	UNATTESTED-INSUFFICIENT	0	0	3	2.2	1.37	28	0
+hrī	hrī	hrī	gen	Gen		False	249,251	UNATTESTED-INSUFFICIENT	0	0	6	7.0	0.853	28	0
+hū	āhvā	āhvā	dat	Dat	dop	True	151	CONFIRMED	1	11	79	39.8	1.984	689	14
+hū	āhvā	āhvā	dat	Dat	ogr	False	159,161	CONFIRMED	1	11	79	39.8	1.984	689	14
+hū	āhvā	āhvā	loc	Loc		True	308	CONFIRMED	1	11	177	141.2	1.253	689	14
+hū	hvā	hvā	acc	Acc		False	47	CONFIRMED	148	314	873	475.4	1.836	981	167
+hū	hvā	hvā	loc	Loc		True	287,308	CONFIRMED	12	314	260	201.1	1.293	981	167
+hu	hu	hu	acc	Acc		False	47	CONFIRMED	507	1599	4625	3110.4	1.487	6418	1016
+hu	hu	hu	gen	Gen		False	255,256	CONFIRMED	78	1599	1937	1612.9	1.201	6418	1016
+hū	(sam-ā-hve)		dat	Dat	ogr	True	161	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+i	(abhi-i)	i	dat	Dat	ogr	False	159	CONFIRMED	10	849	355	212.3	1.673	3673	531
+i	adhyāpay	adhyāpay	acc	Acc		True	72	UNATTESTED-INSUFFICIENT	0	1	97	63.0	1.54	130	5
+i	ape	ape	gen	Gen		True	270	UNATTESTED-INSUFFICIENT	0	10	68	68.4	0.995	272	18
+i	(ati-i)	i	instr	Ins	orud	True	108	CONFIRMED	85	849	1082	852.5	1.269	3673	531
+i	(ava-i)	i	acc	Acc		True	74	CONFIRMED	318	849	2903	1780.1	1.631	3673	531
+i	(ā-i)	i	instr	Ins	soz	True	93	CONFIRMED	85	849	1082	852.5	1.269	3673	531
+i	(ā-i)	i	dat	Dat	ogr	False	159	CONFIRMED	10	849	355	212.3	1.673	3673	531
+i	i	i	nom	Nom		True	25	CONFIRMED	377	849	3123	2730.2	1.144	3673	531
+i	i	i	acc	Acc		False	51,52,55,56	CONFIRMED	318	849	2903	1780.1	1.631	3673	531
+i	i	i	acc	Acc		False	69	CONFIRMED	318	849	2903	1780.1	1.631	3673	531
+i	i	i	instr	Ins	soz	True	93	CONFIRMED	85	849	1082	852.5	1.269	3673	531
+i	i	i	dat	Dat	ogr	False	159	CONFIRMED	10	849	355	212.3	1.673	3673	531
+i	i	i	abl	Abl		False	186,195,197	CONFIRMED	37	849	475	287.2	1.654	3673	531
+i	i	i	loc	Loc		False	305	CONFIRMED	15	849	653	752.8	0.867	3673	531
+i	(prati-i)	i	gen	Gen		False	253,254	CONFIRMED	7	849	1166	923.1	1.263	3673	531
+i	(pra-i)	i	instr	Ins	pros	True	100	CONFIRMED	85	849	1082	852.5	1.269	3673	531
+i	(sam-i)	i	instr	Ins	soz	True	97	CONFIRMED	85	849	1082	852.5	1.269	3673	531
+i	udi	udi	abl	Abl		False	195,197	CONFIRMED	11	81	110	75.1	1.466	960	112
+i	upe	upe	instr	Ins	pros	True	102	CONFIRMED	18	203	586	516.6	1.134	2226	117
+īḍ	īḍ	īḍ	acc	Acc		False	69	CONFIRMED	21	57	255	170.6	1.495	352	48
+īkṣ	samīkṣ	samīkṣ	acc	Acc		True	63	CONFIRMED	7	14	325	176.4	1.842	364	11
+īkṣ	(ati-vi-īkṣ)	īkṣ	instr	Ins	mod	True	129	UNATTESTED-INSUFFICIENT	0	42	123	109.8	1.12	473	32
+īr	(pra-īray)	īr	dat	Dat	ogr	False	159	CONFIRMED	2	30	13	5.0	2.586	87	17
+iṣ	iṣ	iṣ	dat	Dat	ogr	False	159	CONFIRMED	13	213	314	279.8	1.122	4842	140
+iṣ	iṣ	iṣ	abl	Abl		False	186	CONFIRMED	3	213	526	378.6	1.389	4842	140
+iṣ	iṣ	iṣ	acc	Acc		False	45,47	CONFIRMED	105	213	3621	2346.6	1.543	4842	140
+iṣ	iṣ	iṣ	acc	Acc		False	73,75	CONFIRMED	105	213	3621	2346.6	1.543	4842	140
+iṣ	iṣ	iṣ	loc	Loc		True	313	CONFIRMED	14	213	878	992.4	0.885	4842	140
+īś	īś	īś	acc	Acc		True	49	CONFIRMED	14	123	212	206.0	1.029	425	71
+īś	īś	īś	gen	Gen		False	260	CONFIRMED	46	123	339	106.8	3.174	425	71
+īṣ	īṣ	īṣ	acc	Acc		True	67	CONFIRMED	1	10	15	11.6	1.29	24	5
+īṣ	īṣ	īṣ	abl	Abl		True	186	CONFIRMED	2	10	15	1.9	7.994	24	5
+jabh/jambh	jambh		gen	Gen		False	254	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+jāgar	jāgar		loc	Loc		False	301,302	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+jakṣ	jakṣ	jakṣ	gen	Gen		False	254,255	CONFIRMED	2	5	26	28.6	0.908	114	5
+jalp	jalp	jalp	acc	Acc		False	59	CONFIRMED	2	7	81	61.1	1.326	126	3
+jan	jan	jan	abl	Abl		False	195,196,211	CONFIRMED	74	595	1871	723.0	2.588	9247	511
+jan	jan	jan	gen	Gen		True	270	CONFIRMED	22	595	3025	2323.8	1.302	9247	511
+jan	jan	jan	loc	Loc		True	286,303	CONFIRMED	58	595	2901	1895.3	1.531	9247	511
+jan	janay	janay	dat	Dat	org	True	177	CONFIRMED	7	123	129	88.1	1.465	1524	79
+jan	prajan	prajan	loc	Loc		True	303	CONFIRMED	3	78	209	180.8	1.156	882	83
+jan	(ud-jan)	jan	abl	Abl		True	211	CONFIRMED	74	595	1871	723.0	2.588	9247	511
+jan	vijan	vijan	loc	Loc		True	303	UNATTESTED-INSUFFICIENT	0	1	32	36.3	0.882	177	1
+jap	jap	jap	acc	Acc		True	66	CONFIRMED	61	165	1363	824.9	1.652	1702	118
+jar	jar		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ji	ji	ji	acc	Acc		False	46	CONFIRMED	113	251	2662	1978.3	1.346	4082	180
+ji	ji	ji	acc	Acc		False	69,71	CONFIRMED	113	251	2662	1978.3	1.346	4082	180
+jinv	jinv	jinv	dat	Dat	ogr	False	166	CONFIRMED	2	53	162	16.6	9.734	288	45
+jīv	jīv	jīv	acc	Acc		True	66	CONFIRMED	17	82	1288	1076.9	1.196	2222	101
+jīv	jīv	jīv	instr	Ins	orud	True	109	CONFIRMED	8	82	537	515.7	1.041	2222	101
+jīv	jīv	jīv	dat	Dat	ogr	True	177	CONFIRMED	1	82	181	128.4	1.41	2222	101
+jīv	jīv	jīv	loc	Loc		False	301,302	CONFIRMED	3	82	416	455.4	0.913	2222	101
+jñā	jñā	jñā	acc	Acc		False	46,48	CONFIRMED	68	111	2983	2443.1	1.221	5041	78
+jñā	jñā	jñā	acc	Acc		False	73,74	CONFIRMED	68	111	2983	2443.1	1.221	5041	78
+jñā	jñā	jñā	abl	Abl		True	214	UNATTESTED-INSUFFICIENT	0	111	528	394.1	1.34	5041	78
+jñā	jñā	jñā	gen	Gen		False	260	UNATTESTED-INSUFFICIENT	0	111	1533	1266.8	1.21	5041	78
+jñā	vijñā	vijñā	acc	Acc		True	151	CONFIRMED	29	95	1090	1106.0	0.986	2282	82
+jñā	vijñā	vijñā	abl	Abl		True	215	CONFIRMED	2	95	172	178.4	0.964	2282	82
+jñā	vijñāpay	vijñāpay	abl	Abl		True	205	UNATTESTED-INSUFFICIENT	0	6	16	16.3	0.979	209	3
+jū	jū	jū	acc	Acc		False	46	CONFIRMED	4	12	67	42.6	1.571	88	16
+juṣ	juṣ	juṣ	acc	Acc		False	46,48	CONFIRMED	56	131	1001	594.2	1.685	1226	138
+juṣ	juṣ	juṣ	gen	Gen		False	254,255	CONFIRMED	3	131	490	308.1	1.59	1226	138
+juṣ	juṣ	juṣ	dat	Dat	ogr	False	159,160	CONFIRMED	13	131	397	70.8	5.604	1226	138
+jval	jval	jval	acc	Acc		True	66	UNATTESTED-INSUFFICIENT	0	23	435	400.8	1.085	827	25
+jval	prajval	prajval	abl	Abl		True	200	UNATTESTED-INSUFFICIENT	0	1	15	17.4	0.864	222	4
+jyā	jyā	jyā	acc	Acc		False	69	CONFIRMED	3	3	78	45.1	1.731	93	8
+kalp	kalp		dat	Dat	ogr	False	163	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kalp	kalpay	kalpay	instr	Ins	pros	True	102	CONFIRMED	16	108	383	253.4	1.511	1092	55
+kalp	apakalp		dat	Dat	ogr	True	163	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kamp	kamp	kamp	instr	Ins	mod	True	130	UNATTESTED-INSUFFICIENT	0	0	78	55.0	1.418	237	0
+kāṅkṣ	kāṅkṣ	kāṅkṣ	acc	Acc		False	46,48	CONFIRMED	4	7	152	97.9	1.553	202	3
+kāṅkṣ	kāṅkṣ	kāṅkṣ	acc	Acc		True	76	CONFIRMED	4	7	152	97.9	1.553	202	3
+kaṇṭh	utkaṇṭh	utkaṇṭh	gen	Gen		False	252,253	UNATTESTED-INSUFFICIENT	0	0	8	6.8	1.179	27	0
+kar	anukar		gen	Gen		False	253,254	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	apakar		gen	Gen		False	249,251	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		nom	Nom		True	28	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		acc	Acc		False	46,47,66	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		acc	Acc		False	69,70	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		acc	Acc		False	73,74	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		instr	Ins	pros	True	102	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		instr	Ins	orud	False	106	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		instr	Ins	pr	True	121	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		instr	Ins	adv	True	131	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		dat	Dat	ogr	False	166	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		abl	Abl		True	201,214,212	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		gen	Gen		False	266	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		loc	Loc		True	288,307	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		gen	Gen		False	257	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kar		dat	Dat	ogr	True	176	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	kāray	kāray	acc	Acc		False	72	CONFIRMED	55	87	1457	804.0	1.812	1659	49
+kar	pratikar		dat	Dat	dop	False	150,151	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	pratikar		gen	Gen		False	249,250	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	upakar		gen	Gen		False	252,253,254	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kar	vikar		instr	Ins		True	141	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+karṇ	ākarṇay	ākarṇay	instr	Ins	adv	True	132	UNATTESTED-INSUFFICIENT	0	0	67	54.8	1.223	236	0
+karṣ	karṣ		acc	Acc		False	46,51,53	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+karṣ	karṣ		acc	Acc		False	69,71	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kart	kart		abl	Abl		True	187	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+kas	niṣkas	niṣkas	instr	Ins	pros	True	101	UNATTESTED-INSUFFICIENT	0	0	1	4.4	0.227	19	0
+kāś	prakāśay	prakāśay	acc	Acc		True	49	CONFIRMED	2	2	150	112.9	1.328	233	2
+kāś	prakāśay	prakāśay	gen	Gen		False	261	UNATTESTED-INSUFFICIENT	0	2	66	58.6	1.127	233	2
+kath	kathay	kathay	acc	Acc		False	59,67	CONFIRMED	1	10	1566	1683.6	0.93	3474	4
+kath	kathay	kathay	instr	Ins	soz	True	94	CONFIRMED	2	10	1224	806.3	1.518	3474	4
+kath	kathay	kathay	instr	Ins	mod	True	129	CONFIRMED	2	10	1224	806.3	1.518	3474	4
+kath	kathay	kathay	instr	Ins	adv	True	132	CONFIRMED	2	10	1224	806.3	1.518	3474	4
+kath	kathay	kathay	dat	Dat	dop	False	151	UNATTESTED-INSUFFICIENT	0	10	423	200.8	2.107	3474	4
+kath	kathay	kathay	abl	Abl		True	223	UNATTESTED-INSUFFICIENT	0	10	294	271.6	1.082	3474	4
+kath	kathay	kathay	gen	Gen		False	264,265	CONFIRMED	2	10	1402	873.0	1.606	3474	4
+khad	khad		instr	Ins	soz	True	95	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+khan	khan	khan	instr	Ins	orud	True	105	CONFIRMED	10	92	128	81.7	1.567	352	65
+khan	khan	khan	dat	Dat	ogr	True	176	CONFIRMED	5	92	52	20.3	2.556	352	65
+khid	kheday	kheday	acc	Acc		True	49	UNATTESTED-INSUFFICIENT	0	0	18	12.1	1.486	25	0
+khyā	ākhyā	ākhyā	acc	Acc		False	59	UNATTESTED-INSUFFICIENT	0	9	556	471.1	1.18	972	6
+khyā	ākhyā	ākhyā	abl	Abl		True	215	UNATTESTED-INSUFFICIENT	0	9	56	76.0	0.737	972	6
+khyā	ākhyā	ākhyā	gen	Gen		False	264,265	UNATTESTED-INSUFFICIENT	0	9	403	244.3	1.65	972	6
+khyā	khyā	khyā	acc	Acc		False	59	CONFIRMED	7	17	175	376.6	0.465	777	11
+kīrt	kīrtay	kīrtay	gen	Gen		False	257,264	CONFIRMED	6	20	305	193.8	1.574	771	14
+kram	kram	kram	abl	Abl		True	187	UNATTESTED-INSUFFICIENT	0	41	76	32.4	2.348	414	30
+kram	upakram	upakram	instr	Ins	adv	True	131	UNATTESTED-INSUFFICIENT	0	3	108	67.5	1.599	291	5
+kram	upakram	upakram	dat	Dat	ogr	False	159	UNATTESTED-INSUFFICIENT	0	3	34	16.8	2.022	291	5
+kram	(ud-kram)	kram	instr	Ins	soz	True	93	CONFIRMED	4	41	131	96.1	1.363	414	30
+kram	(ud-kram)	kram	abl	Abl		True	187	UNATTESTED-INSUFFICIENT	0	41	76	32.4	2.348	414	30
+kram	vikram	vikram	acc	Acc		True	66	CONFIRMED	4	15	225	200.2	1.124	413	15
+kram	vikram	vikram	instr	Ins	soz	True	94	CONFIRMED	3	15	110	95.9	1.148	413	15
+krand	krand	krand	acc	Acc		False	59	CONFIRMED	8	43	103	88.7	1.161	183	32
+krand	krand	krand	instr	Ins	pr	True	120	UNATTESTED-INSUFFICIENT	0	43	44	42.5	1.036	183	32
+krap	krap		acc	Acc		False	63	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+krī	niṣkrī	niṣkrī	abl	Abl		False	190	CONFIRMED	7	32	25	5.2	4.772	67	12
+krī	krī	krī	instr	Ins	orud	False	110,111	CONFIRMED	6	29	199	101.9	1.953	439	21
+krī	krī	krī	gen	Gen		True	269	CONFIRMED	1	29	122	110.3	1.106	439	21
+krī	parikrī	parikrī	dat	Dat	ogr	True	166	UNATTESTED-INSUFFICIENT	0	8	8	1.8	4.466	31	6
+krī	vikrī	vikrī	instr	Ins	orud	False	110,111	UNATTESTED-INSUFFICIENT	0	2	58	42.0	1.381	181	2
+krīḍ	krīḍ	krīḍ	instr	Ins	soz	True	94	UNATTESTED-INSUFFICIENT	0	14	252	114.7	2.198	494	16
+krīḍ	krīḍ	krīḍ	instr	Ins	pros	True	101	UNATTESTED-INSUFFICIENT	0	14	252	114.7	2.198	494	16
+krīḍ	krīḍ	krīḍ	instr	Ins	orud	True	104	UNATTESTED-INSUFFICIENT	0	14	252	114.7	2.198	494	16
+krudh	krudh	krudh	dat	Dat	dop	False	155	CONFIRMED	2	8	58	95.9	0.605	1659	12
+krudh	krudh	krudh	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	8	395	416.9	0.947	1659	12
+krudh	krudh	krudh	loc	Loc		True	308	CONFIRMED	1	8	384	340.0	1.129	1659	12
+krudh	saṁkrudh	saṃkrudh	dat	Dat	dop	True	155	UNATTESTED-INSUFFICIENT	0	0	8	31.6	0.254	546	2
+kṣam	kṣam	kṣam	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	11	42	34.3	1.224	439	4
+kṣam	kṣam	kṣam	gen	Gen		False	252,253	CONFIRMED	1	11	188	110.3	1.704	439	4
+kṣar	kṣar	kṣar	abl	Abl		False	190	CONFIRMED	2	49	27	17.2	1.57	220	31
+kṣi	kṣi	kṣi	gen	Gen		False	260	CONFIRMED	6	56	418	296.8	1.408	1181	59
+kṣi	kṣi	kṣi	acc	Acc		False	46	CONFIRMED	9	56	540	572.4	0.943	1181	59
+kṣip	kṣip	kṣip	acc	Acc		False	46	CONFIRMED	4	8	1880	1192.7	1.576	2461	7
+kṣip	kṣip	kṣip	instr	Ins	pros	True	101,102	UNATTESTED-INSUFFICIENT	0	8	725	571.2	1.269	2461	7
+kṣip	kṣip	kṣip	instr	Ins		True	141	UNATTESTED-INSUFFICIENT	0	8	725	571.2	1.269	2461	7
+kṣip	kṣip	kṣip	dat	Dat	ogr	False	159,160	UNATTESTED-INSUFFICIENT	0	8	86	142.2	0.605	2461	7
+kṣip	kṣip	kṣip	abl	Abl		True	189	CONFIRMED	1	8	166	192.4	0.863	2461	7
+kṣip	kṣip	kṣip	gen	Gen		False	268	UNATTESTED-INSUFFICIENT	0	8	434	618.5	0.702	2461	7
+kṣip	kṣip	kṣip	loc	Loc		False	305,307	CONFIRMED	1	8	1422	504.4	2.819	2461	7
+kṣip	nikṣip	nikṣip	loc	Loc		True	309	CONFIRMED	2	4	392	129.1	3.036	630	2
+kṣip	parikṣip	parikṣip	abl	Abl		True	215	UNATTESTED-INSUFFICIENT	0	0	7	9.1	0.772	116	0
+kṣip	prakṣip	prakṣip	loc	Loc		True	307	CONFIRMED	3	7	272	75.8	3.587	370	4
+kṣip	samparikṣip	kṣip	instr	Ins		True	140	UNATTESTED-INSUFFICIENT	0	8	725	571.2	1.269	2461	7
+kūj	anukūj	anukūj	gen	Gen		True	254	UNATTESTED-INSUFFICIENT	0	0	0	0.5	0.0	2	0
+kup	kup	kup	instr	Ins	p	True	121	UNATTESTED-INSUFFICIENT	0	0	144	120.9	1.191	521	0
+kup	kup	kup	dat	Dat	dop	False	155	UNATTESTED-INSUFFICIENT	0	0	27	30.1	0.897	521	0
+kup	kup	kup	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	0	129	130.9	0.985	521	0
+labh	labh	labh	acc	Acc		False	47	CONFIRMED	21	51	2653	1621.1	1.637	3345	33
+labh	labh	labh	abl	Abl		True	204	CONFIRMED	2	51	502	261.5	1.919	3345	33
+labh	labh	labh	loc	Loc		True	304	CONFIRMED	4	51	675	685.6	0.985	3345	33
+lajj	lajj	lajj	abl	Abl		False	193,195	UNATTESTED-INSUFFICIENT	0	1	16	8.5	1.877	109	2
+lakṣ	apalakṣ	lakṣ	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	0	4	3.0	1.312	39	0
+lamb	ālamb	ālamb	loc	Loc		True	283	CONFIRMED	1	6	24	26.6	0.901	130	1
+lamb	avalambay	avalambay	instr	Ins	orud	True	144	UNATTESTED-INSUFFICIENT	0	0	6	3.0	1.989	13	0
+lamb	avalamb	avalamb	acc	Acc		False	62,63	CONFIRMED	1	3	78	48.9	1.594	101	2
+lamb	lamb	lamb	instr	Ins	orud	True	107	UNATTESTED-INSUFFICIENT	0	0	35	30.2	1.16	130	0
+laṅgh	laṅgh	laṅgh	acc	Acc		False	51	UNATTESTED-INSUFFICIENT	0	0	21	15.5	1.354	32	0
+laṅgh	laṅghay	laṅghay	dat	Dat	ogr	True	175	UNATTESTED-INSUFFICIENT	0	0	5	7.9	0.632	137	0
+las	(ud-las)	las	instr	Ins	p	True	121	UNATTESTED-INSUFFICIENT	0	0	13	13.7	0.949	59	0
+laṣ	laṣ		acc	Acc		False	60	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+lih	lih	lih	instr	Ins	orud	True	105	UNATTESTED-INSUFFICIENT	0	0	194	94.0	2.064	405	0
+likh	abhilikh	abhilikh	instr	Ins	orud	True	144	UNATTESTED-INSUFFICIENT	0	0	7	2.8	2.513	12	0
+likh	likh	likh	instr	Ins	soz	True	95	CONFIRMED	2	23	198	118.1	1.676	509	9
+likh	likh	likh	instr	Ins	orud	True	105	CONFIRMED	2	23	198	118.1	1.676	509	9
+likh	likh	likh	instr	Ins	pr	True	122	CONFIRMED	2	23	198	118.1	1.676	509	9
+lubh	lubh	lubh	dat	Dat	dop	False	153,154	UNATTESTED-INSUFFICIENT	0	0	12	18.8	0.639	325	0
+lubh	lubh	lubh	loc	Loc		True	308	UNATTESTED-INSUFFICIENT	0	0	61	66.6	0.916	325	0
+mā	mā	mā	acc	Acc		False	46	CONFIRMED	22	62	427	329.6	1.296	680	36
+mā	mā	mā	instr	Ins	orud	True	104	CONFIRMED	8	62	234	157.8	1.483	680	36
+mā	mā	mā	loc	Loc		False	301	CONFIRMED	3	62	148	139.4	1.062	680	36
+mā	mā	mā	instr	Ins	p	True	120	CONFIRMED	8	62	234	157.8	1.483	680	36
+mā	nirmā	nirmā	instr	Ins	orud	True	143	UNATTESTED-INSUFFICIENT	0	37	289	139.3	2.075	600	14
+mā	nirmā	nirmā	abl	Abl		True	205	CONFIRMED	10	37	112	46.9	2.388	600	14
+mad	mad	mad	gen	Gen		False	252	CONFIRMED	3	76	240	272.7	0.88	1085	53
+mad	mad	mad	gen	Gen		False	255,256	CONFIRMED	3	76	240	272.7	0.88	1085	53
+majj	(ud-majj)	majj	abl	Abl		True	212	UNATTESTED-INSUFFICIENT	0	8	30	26.8	1.119	343	5
+man	anuman	anuman	dat	Dat	dop	False	154	UNATTESTED-INSUFFICIENT	0	5	50	16.7	2.994	289	27
+man	man	man	acc	Acc		False	60	CONFIRMED	112	235	2930	2276.4	1.287	4697	143
+man	man	man	dat	Dat	ogr	True	176	CONFIRMED	1	235	230	271.4	0.847	4697	143
+man	man	man	nom	Nom		False	27	CONFIRMED	100	235	3850	3491.4	1.103	4697	143
+man	man	man	acc	Acc		False	60	CONFIRMED	112	235	2930	2276.4	1.287	4697	143
+man	man	man	acc	Acc		False	74	CONFIRMED	112	235	2930	2276.4	1.287	4697	143
+man	man	man	dat	Dat	ogr	False	163,164	CONFIRMED	1	235	230	271.4	0.847	4697	143
+man	man	man	gen	Gen		False	257,258	CONFIRMED	4	235	1616	1180.4	1.369	4697	143
+manth	manth		acc	Acc		False	69,71	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+manth	nirmanth		acc	Acc		False	69	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+mantr	mantray	mantray	acc	Acc		True	66	CONFIRMED	3	6	161	133.8	1.204	276	6
+mantr	mantray	mantray	dat	Dat	ogr	False	166	UNATTESTED-INSUFFICIENT	0	6	6	15.9	0.376	276	6
+mantr	nimantray	nimantray	dat	Dat	ogr	False	166	UNATTESTED-INSUFFICIENT	0	0	2	5.3	0.38	91	0
+mar	anumar		acc	Acc		True	62	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+mar	mar		instr	Ins	pr	True	121	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+mar	mar		loc	Loc		True	286	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+marc	marc		instr	Ins	orud	True	112	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+mard	mard		dat	Dat	dop	False	152,153	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+marg	marg		abl	Abl		True	205	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+marj	apamarj		instr	Ins	orud	True	112	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+marṣ	marṣ		gen	Gen		False	252,253	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+miśr	miśray	miśray	instr	Ins	soz	False	97	UNATTESTED-INSUFFICIENT	0	0	96	43.2	2.224	186	1
+mith	mith	mith	acc	Acc		False	46	CONFIRMED	1	1	4	2.9	1.376	6	1
+mnā	āmnā	āmnā	acc	Acc		True	76	CONFIRMED	2	4	39	36.3	1.073	75	3
+mokṣ	mokṣay	mokṣay	abl	Abl		False	190	CONFIRMED	1	4	48	11.2	4.293	143	2
+muc	āmuc	āmuc	loc	Loc		True	307	UNATTESTED-INSUFFICIENT	0	0	15	9.4	1.591	46	0
+muc	muc	muc	acc	Acc		False	46,48	CONFIRMED	64	196	2491	1865.9	1.335	3850	118
+muc	muc	muc	instr	Ins	pros	True	102	CONFIRMED	15	196	1229	893.5	1.375	3850	118
+muc	muc	muc	instr	Ins	orud	True	111	CONFIRMED	15	196	1229	893.5	1.375	3850	118
+muc	muc	muc	instr	Ins	sep	False	133,135	CONFIRMED	15	196	1229	893.5	1.375	3850	118
+muc	muc	muc	dat	Dat	ogr	False	160	CONFIRMED	5	196	182	222.5	0.818	3850	118
+muc	muc	muc	abl	Abl		False	186,190,223	CONFIRMED	49	196	1137	301.0	3.777	3850	118
+muc	muc	muc	gen	Gen		True	270	CONFIRMED	6	196	879	967.5	0.908	3850	118
+muc	vimuc	vimuc	instr	Ins	sep	False	133,135	CONFIRMED	4	20	362	258.3	1.401	1113	22
+muc	vimuc	vimuc	instr	Ins	orud	True	112	CONFIRMED	4	20	362	258.3	1.401	1113	22
+muh	vimuh	vimuh	abl	Abl		True	186	UNATTESTED-INSUFFICIENT	0	0	12	7.4	1.616	95	0
+mūrch	mūrch	mūrch	loc	Loc		True	303	UNATTESTED-INSUFFICIENT	0	0	48	38.7	1.239	189	0
+muṣ	muṣ	muṣ	acc	Acc		False	46	CONFIRMED	4	8	119	78.5	1.516	162	4
+muṣ	muṣ	muṣ	acc	Acc		False	69,71	CONFIRMED	4	8	119	78.5	1.516	162	4
+nad	nad	nad	acc	Acc		True	66	UNATTESTED-INSUFFICIENT	0	0	271	222.9	1.216	460	0
+nakṣ	nakṣ	nakṣ	acc	Acc		False	51	CONFIRMED	9	22	52	27.6	1.882	57	11
+nam	nam	nam	dat	Dat	dop	False	152,154	CONFIRMED	10	71	81	38.5	2.105	666	35
+nam	nam	nam	gen	Gen		False	253,254	UNATTESTED-INSUFFICIENT	0	71	197	167.4	1.177	666	35
+nam	praṇam	praṇam	gen	Gen		False	267	UNATTESTED-INSUFFICIENT	0	1	161	247.5	0.65	985	2
+nart	upanart		acc	Acc		True	63	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+nart	anunart		acc	Acc		False	62	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+naś	anuvinaś	anuvinaś	acc	Acc		False	62	UNATTESTED-INSUFFICIENT	0	0	4	1.9	2.063	4	0
+naś	naś	naś	acc	Acc		False	62,67	CONFIRMED	23	80	557	687.2	0.811	1418	59
+naś	pranaś	naś	gen	Gen		True	268	CONFIRMED	2	80	435	356.4	1.221	1418	59
+naś	vinaś	vinaś	instr	Ins	p	True	121	UNATTESTED-INSUFFICIENT	0	1	124	138.3	0.896	596	3
+nī	ānī	ānī	gen	Gen		False	261,263	UNATTESTED-INSUFFICIENT	0	92	302	296.0	1.02	1178	53
+nī	apanī	apanī	abl	Abl		True	189	UNATTESTED-INSUFFICIENT	0	0	39	17.7	2.207	226	0
+nī	nī	nī	acc	Acc		False	46,48,51,53	CONFIRMED	131	241	2049	1138.9	1.799	2350	133
+nī	nī	nī	acc	Acc		False	55,57	CONFIRMED	131	241	2049	1138.9	1.799	2350	133
+nī	nī	nī	acc	Acc		True	67	CONFIRMED	131	241	2049	1138.9	1.799	2350	133
+nī	nī	nī	instr	Ins	soz	True	96	CONFIRMED	14	241	883	545.4	1.619	2350	133
+nī	nī	nī	instr	Ins	mod	True	130,15	CONFIRMED	14	241	883	545.4	1.619	2350	133
+nī	nī	nī	instr	Ins	adv	True	132	CONFIRMED	14	241	883	545.4	1.619	2350	133
+nī	nī	nī	dat	Dat	ogr	False	159,160	CONFIRMED	11	241	260	135.8	1.915	2350	133
+nī	nī	nī	abl	Abl		True	212	CONFIRMED	3	241	233	183.7	1.268	2350	133
+nī	nī	nī	gen	Gen		False	261,263	CONFIRMED	1	241	551	590.6	0.933	2350	133
+nī	nī	nī	loc	Loc		True	283,314	CONFIRMED	5	241	488	481.7	1.013	2350	133
+nī	samānī	samānī	instr	Ins	soz	False	97	CONFIRMED	1	18	71	52.7	1.348	227	10
+nind /nid	nid		acc	Acc		False	46,48	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+nu/nū	nū	nū	acc	Acc		False	46	CONFIRMED	9	43	72	49.4	1.457	102	20
+nud	nud	nud	acc	Acc		False	46	CONFIRMED	29	60	279	160.9	1.734	332	36
+pā	pā	pā	acc	Acc		False	46	CONFIRMED	183	454	4334	2613.7	1.658	5393	288
+pā	pā	pā	instr	Ins	soz	True	95	CONFIRMED	41	454	1691	1251.7	1.351	5393	288
+pā	pā	pā	instr	Ins	orud	True	104,110	CONFIRMED	41	454	1691	1251.7	1.351	5393	288
+pā	pā	pā	instr	Ins	mod	True	129	CONFIRMED	41	454	1691	1251.7	1.351	5393	288
+pā	pā	pā	abl	Abl		True	205	CONFIRMED	35	454	607	421.6	1.44	5393	288
+pā	pā	pā	gen	Gen		False	254,255	CONFIRMED	27	454	1575	1355.3	1.162	5393	288
+pā	pā	pā	loc	Loc		True	281	CONFIRMED	15	454	1135	1105.3	1.027	5393	288
+pā	pā	pā	acc	Acc		False	46	CONFIRMED	183	454	4334	2613.7	1.658	5393	288
+pā	pā	pā	instr	Ins	soz	True	93	CONFIRMED	41	454	1691	1251.7	1.351	5393	288
+pā	pā	pā	abl	Abl		False	191	CONFIRMED	35	454	607	421.6	1.44	5393	288
+pac	pac	pac	instr	Ins	orud	True	107	CONFIRMED	9	80	858	477.6	1.796	2058	44
+pac	pac	pac	dat	Dat	ogr	True	176	CONFIRMED	6	80	100	118.9	0.841	2058	44
+pac	pac	pac	abl	Abl		True	224	UNATTESTED-INSUFFICIENT	0	80	116	160.9	0.721	2058	44
+pad	anupad	anupad	abl	Abl		False	190	UNATTESTED-INSUFFICIENT	0	0	6	5.5	1.096	70	0
+pad	niṣpad	niṣpad	abl	Abl		False	196	UNATTESTED-INSUFFICIENT	0	0	29	9.0	3.225	115	1
+pad	pad	pad	acc	Acc		False	51	CONFIRMED	9	32	97	64.9	1.494	134	33
+pad	pad	pad	dat	Dat	ogr	True	174	CONFIRMED	2	32	14	7.7	1.808	134	33
+pad	pāday	pāday	acc	Acc		True	72	CONFIRMED	6	9	24	11.6	2.063	24	6
+pad	pratipad[4,	pad	gen	Gen		False	261,263	CONFIRMED	1	32	42	33.7	1.247	134	33
+pad	sampad	sampad	instr	Ins	soz	False	97	CONFIRMED	18	69	377	359.0	1.05	1547	53
+pad	upapad	upapad	dat	Dat	ogr	False	163	UNATTESTED-INSUFFICIENT	0	8	49	50.6	0.968	876	6
+pad	upapad	upapad	loc	Loc		True	308	CONFIRMED	1	8	302	179.5	1.682	876	6
+pad	utpad	utpad	abl	Abl		False	196,197,215	CONFIRMED	2	11	323	92.3	3.501	1180	7
+pad	utpad	utpad	loc	Loc		True	304	CONFIRMED	4	11	435	241.9	1.799	1180	7
+pad	utpaday	pad	loc	Loc		True	304	CONFIRMED	4	32	33	27.5	1.202	134	33
+pan	panay	panay	gen	Gen		False	252	UNATTESTED-INSUFFICIENT	0	3	7	2.3	3.095	9	2
+paṇ	paṇ	paṇ	instr	Ins	orud	True	111	CONFIRMED	1	1	13	8.4	1.556	36	1
+par	par		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+par	par		instr	Ins	orud	True	109	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+par	par		dat	Dat	dop	False	150	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+par	par		abl	Abl		True	186,191,192	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+par	par		gen	Gen		False	254,256	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+par	(vi-a-pṛ)		loc	Loc		False	301	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+parc	parc		gen	Gen		False	254,256	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+paś	paś	paś	acc	Acc		False	46,48	CONFIRMED	158	297	4251	2293.3	1.854	4732	186
+paś	paś	paś	acc	Acc		False	73,75	CONFIRMED	158	297	4251	2293.3	1.854	4732	186
+paś	paś	paś	instr	Ins	soz	True	96	CONFIRMED	22	297	1059	1098.2	0.964	4732	186
+paś	paś	paś	instr	Ins	orud	True	104	CONFIRMED	22	297	1059	1098.2	0.964	4732	186
+paś	paś	paś	abl	Abl		True	198	CONFIRMED	4	297	331	370.0	0.895	4732	186
+pat	āpat	āpat	gen	Gen		True	268	UNATTESTED-INSUFFICIENT	0	2	108	100.5	1.074	400	2
+pat	avapat	avapat	abl	Abl		True	189	UNATTESTED-INSUFFICIENT	0	2	8	2.0	4.093	25	1
+pat	nipat	nipat	abl	Abl		False	186,187	UNATTESTED-INSUFFICIENT	0	2	120	70.2	1.709	898	2
+pat	nipātay	nipātay	loc	Loc		True	307	CONFIRMED	1	4	172	81.2	2.119	396	2
+pat	niṣpat	niṣpat	abl	Abl		False	186,188	CONFIRMED	1	2	38	8.4	4.5	108	1
+pat	pat	pat	acc	Acc		False	46	CONFIRMED	11	65	1207	1513.5	0.797	3123	43
+pat	pat	pat	dat	Dat	dop	False	152	CONFIRMED	3	65	64	180.5	0.355	3123	43
+pat	pat	pat	acc	Acc		False	51,53	CONFIRMED	11	65	1207	1513.5	0.797	3123	43
+pat	pat	pat	instr	Ins	soz	True	96	CONFIRMED	4	65	787	724.8	1.086	3123	43
+pat	pat	pat	instr	Ins	pros	True	101	CONFIRMED	4	65	787	724.8	1.086	3123	43
+pat	pat	pat	instr	Ins	mod	True	129	CONFIRMED	4	65	787	724.8	1.086	3123	43
+pat	pat	pat	abl	Abl		False	186,201	CONFIRMED	4	65	473	244.2	1.937	3123	43
+pat	pat	pat	loc	Loc		True	289,305	CONFIRMED	5	65	1370	640.1	2.14	3123	43
+pat	prapat	prapat	abl	Abl		False	190	CONFIRMED	1	5	52	14.8	3.519	189	5
+pat	sampat	sampat	instr	Ins	soz	False	97	UNATTESTED-INSUFFICIENT	0	3	40	26.7	1.499	115	2
+pat	(ud-pat)	pat	abl	Abl		True	187,189	CONFIRMED	4	65	473	244.2	1.937	3123	43
+pat	patay	patay	instr	Ins	pros	True	101	UNATTESTED-INSUFFICIENT	0	10	10	8.1	1.231	35	7
+pinv	pinv	pinv	nom	Nom		True	25	CONFIRMED	19	57	118	135.3	0.872	182	32
+pinv	pinv	pinv	instr	Ins	orud	True	109	CONFIRMED	7	57	59	42.2	1.397	182	32
+piś	piś	piś	instr	Ins	orud	True	108	CONFIRMED	3	18	13	8.4	1.556	36	9
+plu	avaplu	avaplu	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	0	64	6.8	9.409	87	0
+plu	plu	plu	acc	Acc		False	51,53	UNATTESTED-INSUFFICIENT	0	4	149	143.9	1.035	297	6
+plu	(ud-plu)	plu	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	4	23	23.2	0.99	297	6
+pracch	pariprach	pracch	loc	Loc		True	302	CONFIRMED	3	122	381	584.3	0.652	2851	83
+pracch	prach	pracch	acc	Acc		False	46,66	CONFIRMED	68	122	2178	1381.7	1.576	2851	83
+pracch	prach	pracch	acc	Acc		False	69,70	CONFIRMED	68	122	2178	1381.7	1.576	2851	83
+pracch	prach	pracch	instr	Ins	adv	True	132	CONFIRMED	7	122	879	661.7	1.328	2851	83
+pracch	prach	pracch	loc	Loc		True	290,301,302	CONFIRMED	3	122	381	584.3	0.652	2851	83
+pracch	sampracch	sampracch	loc	Loc		False	301	UNATTESTED-INSUFFICIENT	0	0	6	5.9	1.009	29	0
+prath	prathay	prathay	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	20	6	8.5	0.704	109	13
+prath	prath	prath	nom	Nom		False	24,25	CONFIRMED	20	39	327	271.3	1.205	365	32
+prī	prī	prī	acc	Acc		False	46	CONFIRMED	87	150	1157	857.8	1.349	1770	108
+prī	prī	prī	gen	Gen		False	252	CONFIRMED	3	150	498	444.8	1.12	1770	108
+pū	pū	pū	acc	Acc		False	46	CONFIRMED	70	261	1423	1047.8	1.358	2162	230
+pūj	pūj		acc	Acc		False	46	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+puṣ	puṣ	puṣ	acc	Acc		False	63,64,66	CONFIRMED	11	26	310	212.3	1.46	438	22
+rā	rā	rā	gen	Gen		True	255	CONFIRMED	1	34	57	53.8	1.06	214	26
+rac	viracay	viracay	instr	Ins	orud	True	108	UNATTESTED-INSUFFICIENT	0	0	49	24.8	1.973	107	0
+rādh	aparādh	aparādh	dat	Dat	dop	False	155	UNATTESTED-INSUFFICIENT	0	4	1	7.6	0.132	131	2
+rādh	aparādh	aparādh	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	4	65	32.9	1.974	131	2
+rādh	rādh	rādh	dat	Dat	dop	False	153	CONFIRMED	2	30	85	13.9	6.129	240	30
+rādh	virādh	virādh	instr	Ins	sep	False	133,135	CONFIRMED	2	3	3	0.7	4.309	3	1
+radh/randh	randh		dat	Dat	dop	False	152,154	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+radh/randh	randhay	randhay	dat	Dat	dop	False	153	CONFIRMED	11	23	37	2.6	14.228	45	12
+rah	rah	rah	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	0	7	3.5	2.011	15	0
+rah	virah	virah	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	0	29	7.9	3.675	34	0
+raj	irajy	irajy	gen	Gen		False	260	UNATTESTED-INSUFFICIENT	0	1	10	3.5	2.842	14	1
+raj	anuraj		acc	Acc		True	62	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+raj	rañj	rañj	acc	Acc		False	47	CONFIRMED	1	2	83	101.8	0.816	210	2
+raj	rañj	rañj	loc	Loc		False	301,302	UNATTESTED-INSUFFICIENT	0	2	74	43.0	1.719	210	2
+rāj	rāj	rāj	nom	Nom		True	25	CONFIRMED	10	21	354	301.0	1.176	405	15
+rāj	rāj	rāj	gen	Gen		False	260	CONFIRMED	4	21	126	101.8	1.238	405	15
+rakṣ	rakṣ	rakṣ	acc	Acc		False	47	CONFIRMED	65	154	1355	934.9	1.449	1929	87
+rakṣ	rakṣ	rakṣ	instr	Ins	orud	True	104,106	CONFIRMED	9	154	644	447.7	1.438	1929	87
+rakṣ	rakṣ	rakṣ	abl	Abl		False	191,192	CONFIRMED	13	154	270	150.8	1.79	1929	87
+rakṣ	rakṣ	rakṣ	gen	Gen		True	268	UNATTESTED-INSUFFICIENT	0	154	472	484.8	0.974	1929	87
+ram	pariram	ram	abl	Abl		True	201	CONFIRMED	1	44	59	121.4	0.486	1553	41
+ram	ram	ram	instr	Ins	soz	True	94	CONFIRMED	2	44	395	360.4	1.096	1553	41
+ram	ram	ram	instr	Ins	orud	True	112	CONFIRMED	2	44	395	360.4	1.096	1553	41
+ram	ram	ram	loc	Loc		False	301	CONFIRMED	17	44	747	318.3	2.347	1553	41
+ram	uparam	uparam	abl	Abl		False	190,191	UNATTESTED-INSUFFICIENT	0	3	29	12.3	2.363	157	3
+ram	viram	viram	abl	Abl		False	190	CONFIRMED	1	3	64	17.6	3.638	225	3
+ram	viram	viram	loc	Loc		False	301,303	CONFIRMED	2	3	54	46.1	1.171	225	3
+raṇ	raṇ	raṇ	dat	Dat	ogr	True	176	UNATTESTED-INSUFFICIENT	0	1	1	1.7	0.577	30	1
+raṇ	raṇ	raṇ	loc	Loc		False	301	UNATTESTED-INSUFFICIENT	0	1	18	6.1	2.927	30	1
+raṇ	raṇ	raṇ	loc	Loc		False	301	UNATTESTED-INSUFFICIENT	0	1	18	6.1	2.927	30	1
+rañj	aparañj	aparañj	abl	Abl		True	187	UNATTESTED-INSUFFICIENT	0	0	2	0.2	8.527	3	0
+rej	rej	rej	abl	Abl		False	193,194	CONFIRMED	1	11	12	3.1	3.837	40	8
+ric	atiric	atiric	abl	Abl		False	207,208	CONFIRMED	1	18	96	35.9	2.675	459	33
+ric	ric	ric	instr	Ins	sep	False	133,135	CONFIRMED	2	33	57	47.8	1.192	206	14
+ric	ric	ric	abl	Abl		True	207	CONFIRMED	3	33	14	16.1	0.869	206	14
+rih	rih	rih	instr	Ins	orud	True	105	CONFIRMED	1	21	20	10.9	1.833	47	11
+rij	rij		instr	Ins	pr	True	120	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+riṣ	riṣ	riṣ	loc	Loc		True	287	CONFIRMED	5	30	67	52.7	1.272	257	39
+ru	ru	ru	acc	Acc		True	66	CONFIRMED	2	12	54	41.7	1.296	86	11
+ru	ru	ru	loc	Loc		True	287	UNATTESTED-INSUFFICIENT	0	12	26	17.6	1.475	86	11
+ruc	abhirocay	abhirocay	dat	Dat	dop	True	154	UNATTESTED-INSUFFICIENT	0	0	1	0.9	1.154	15	0
+ruc	rocay	rocay	instr	Ins	pr	True	121	CONFIRMED	18	43	59	42.7	1.382	184	24
+ruc	rocay	rocay	dat	Dat	ogr	True	176	CONFIRMED	1	43	13	10.6	1.223	184	24
+ruc	ruc	ruc	instr	Ins	pr	True	121	CONFIRMED	4	60	117	116.3	1.006	501	45
+ruc	ruc	ruc	dat	Dat	dop	False	153,154	CONFIRMED	1	60	98	29.0	3.385	501	45
+ruc	ruc	ruc	gen	Gen		False	252,253	CONFIRMED	4	60	255	125.9	2.025	501	45
+rud	prarud	prarud	acc	Acc		True	63	UNATTESTED-INSUFFICIENT	0	0	40	29.6	1.353	61	0
+rud	rud	rud	acc	Acc		False	64	CONFIRMED	1	3	399	324.2	1.231	669	16
+rud	rud	rud	instr	Ins	p	True	120	UNATTESTED-INSUFFICIENT	0	3	139	155.3	0.895	669	16
+rudh	virudh	virudh	instr	Ins	orud	True	105	UNATTESTED-INSUFFICIENT	0	0	167	108.4	1.541	467	0
+rudh	rudh	rudh	acc	Acc		False	47	CONFIRMED	12	20	607	432.3	1.404	892	13
+rudh	rudh	rudh	acc	Acc		True	67	CONFIRMED	12	20	607	432.3	1.404	892	13
+ruh	adhiruh	adhiruh	instr	Ins	orud	True	107	CONFIRMED	3	29	71	44.3	1.602	191	18
+ruh	(anu-āruh)	ruh	instr	Ins	pros	True	101	CONFIRMED	7	85	121	113.0	1.071	487	49
+ruh	avaruh	avaruh	instr	Ins	orud	True	107	CONFIRMED	1	6	22	28.3	0.777	122	14
+ruh	avaruh	avaruh	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	6	61	9.5	6.395	122	14
+ruh	ruh	ruh	acc	Acc		False	51	CONFIRMED	21	85	315	236.0	1.335	487	49
+ruh	ruh	ruh	instr	Ins	soz	True	94	CONFIRMED	7	85	121	113.0	1.071	487	49
+ruh	ruh	ruh	instr	Ins	mod	True	129	CONFIRMED	7	85	121	113.0	1.071	487	49
+ruh	ruh	ruh	abl	Abl		True	189	CONFIRMED	4	85	42	38.1	1.103	487	49
+ruh	(vi-apa-ruh)	ruh	instr	Ins	sep	False	133	CONFIRMED	7	85	121	113.0	1.071	487	49
+ruh	(vi-apa-ruh)	ruh	abl	Abl		False	190	CONFIRMED	4	85	42	38.1	1.103	487	49
+ruj	ruj	ruj	acc	Acc		False	47	CONFIRMED	4	18	76	62.5	1.216	129	13
+ruj	ruj	ruj	gen	Gen		False	251	UNATTESTED-INSUFFICIENT	0	18	49	32.4	1.511	129	13
+rup	ropay	ropay	loc	Loc		False	305	UNATTESTED-INSUFFICIENT	0	4	14	10.9	1.289	53	2
+rūpam	rūpam		nom	Nom		False	28	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+ruṣ	ruṣ	ruṣ	gen	Gen		True	268	UNATTESTED-INSUFFICIENT	0	0	28	25.6	1.092	102	2
+ruṣ	ruṣ	ruṣ	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	0	28	25.6	1.092	102	2
+sac	sac	sac	acc	Acc		False	51,54	CONFIRMED	36	102	267	156.5	1.706	323	54
+sac	sac	sac	instr	Ins	soz	False	97	CONFIRMED	12	102	95	75.0	1.267	323	54
+sad	prasad	prasad	acc	Acc		True	63	UNATTESTED-INSUFFICIENT	0	2	486	479.3	1.014	989	3
+sad	prasad	prasad	dat	Dat	dop	False	153,154	UNATTESTED-INSUFFICIENT	0	2	95	57.2	1.662	989	3
+sad	prasad	prasad	gen	Gen		False	252,253	UNATTESTED-INSUFFICIENT	0	2	358	248.5	1.44	989	3
+sad	visad	sad	abl	Abl		False	193,195	UNATTESTED-INSUFFICIENT	0	97	57	74.5	0.765	953	79
+sah	sah	sah	acc	Acc		False	47,49	CONFIRMED	36	74	648	383.4	1.69	791	60
+śak	śak	śak	acc	Acc		False	47	CONFIRMED	10	41	1226	946.0	1.296	1952	62
+śak	śak	śak	dat	Dat	ogr	False	163	CONFIRMED	8	41	155	112.8	1.374	1952	62
+śak	śak	śak	gen	Gen		True	256	CONFIRMED	1	41	522	490.6	1.064	1952	62
+śaṁs	aśaṁs	śaṃs	dat	Dat	dop	True	154	CONFIRMED	10	92	342	103.2	3.316	1785	64
+śaṁs	praśaṁs	praśaṃs	loc	Loc		True	286	CONFIRMED	8	40	356	219.5	1.622	1071	24
+śaṁs	śaṁs	śaṃs	acc	Acc		False	59	CONFIRMED	39	92	1194	865.1	1.38	1785	64
+śaṁs	śaṁs	śaṃs	instr	Ins	p	True	120	CONFIRMED	8	92	361	414.3	0.871	1785	64
+śaṁs	śaṁs	śaṃs	dat	Dat	ogr	True	176	CONFIRMED	10	92	342	103.2	3.316	1785	64
+śaṁs	śaṁs	śaṃs	gen	Gen		False	264,265	CONFIRMED	6	92	665	448.6	1.482	1785	64
+śaṁs	śaṁs	śaṃs	loc	Loc		True	290	CONFIRMED	10	92	613	365.9	1.676	1785	64
+sañj	āsañj	āsañj	loc	Loc		True	314	CONFIRMED	1	2	101	53.7	1.881	262	1
+sañj	saj	sañj	dat	Dat	ogr	True	160	CONFIRMED	1	12	8	27.6	0.29	478	9
+śaṅk	śaṅk	śaṅk	instr	Ins	p	True	120	UNATTESTED-INSUFFICIENT	0	1	54	63.4	0.852	273	2
+śaṅk	śaṅk	śaṅk	abl	Abl		False	193,195	UNATTESTED-INSUFFICIENT	0	1	40	21.3	1.874	273	2
+śaṅk	śaṅk	śaṅk	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	1	80	68.6	1.166	273	2
+śaṅk	viśaṅk	viśaṅk	abl	Abl		False	193,194	UNATTESTED-INSUFFICIENT	0	1	6	3.0	2.02	38	1
+śap	śap	śap	dat	Dat	dop	False	155	UNATTESTED-INSUFFICIENT	0	15	34	28.0	1.216	484	11
+śap	śap	śap	dat	Dat	ogr	False	166	UNATTESTED-INSUFFICIENT	0	15	34	28.0	1.216	484	11
+sar	apasar		abl	Abl		True	187	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sar	visar		instr	Ins	sep	False	133	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sar	niḥsar		abl	Abl		False	186,188	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sarj	avasarj	sarj	gen	Gen		False	268	UNATTESTED-INSUFFICIENT	0	0	1	0.8	1.326	3	0
+sarj	prasarj	sarj	dat	Dat	ogr	True	161	UNATTESTED-INSUFFICIENT	0	0	0	0.2	0.0	3	0
+sarj	sarj	sarj	acc	Acc		False	47	UNATTESTED-INSUFFICIENT	0	0	2	1.5	1.376	3	0
+sarj	sarj	sarj	dat	Dat	ogr	False	159	UNATTESTED-INSUFFICIENT	0	0	0	0.2	0.0	3	0
+sarj	sarj	sarj	abl	Abl		True	204	UNATTESTED-INSUFFICIENT	0	0	0	0.2	0.0	3	0
+sarj	sarj	sarj	loc	Loc		True	305	UNATTESTED-INSUFFICIENT	0	0	0	0.6	0.0	3	0
+sarj	upasarj	sarj	dat	Dat	ogr	False	159,160	UNATTESTED-INSUFFICIENT	0	0	0	0.2	0.0	3	0
+sarj	visarj	sarj	dat	Dat	ogr	False	159,161	UNATTESTED-INSUFFICIENT	0	0	0	0.2	0.0	3	0
+sarj	visarj	sarj	gen	Gen		False	261,264	UNATTESTED-INSUFFICIENT	0	0	1	0.8	1.326	3	0
+sarv	sarv		nom	Nom		True	25	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+śās	śās	śās	acc	Acc		False	47,49	CONFIRMED	15	23	341	258.3	1.32	533	25
+śās	śās	śās	acc	Acc		False	69,71	CONFIRMED	15	23	341	258.3	1.32	533	25
+sev	sev	sev	acc	Acc		False	64	CONFIRMED	6	11	770	643.6	1.196	1328	6
+sev	sev	sev	instr	Ins		False	111	CONFIRMED	1	11	445	308.2	1.444	1328	6
+sev	sev	sev	instr	Ins	adv	True	132	CONFIRMED	1	11	445	308.2	1.444	1328	6
+sev	sev	sev	instr	Ins	orud	True	143	CONFIRMED	1	11	445	308.2	1.444	1328	6
+śī	adhiśī	adhiśī	acc	Acc		True	62	UNATTESTED-INSUFFICIENT	0	2	30	17.0	1.769	35	2
+śī	anuśī	anuśī	acc	Acc		True	62	CONFIRMED	1	2	13	6.3	2.063	13	1
+śī	atiśī	atiśī	acc	Acc		True	62	CONFIRMED	3	3	26	16.0	1.626	33	3
+śī	śī	śī	instr	Ins	orud	False	106	UNATTESTED-INSUFFICIENT	0	55	233	259.0	0.9	1116	51
+sic	abhiṣic	abhiṣic	loc	Loc		True	288	CONFIRMED	2	41	325	165.0	1.97	805	28
+sic	sic	sic	instr	Ins	orud	True	108	CONFIRMED	15	118	332	159.4	2.082	687	60
+sic	sic	sic	loc	Loc		True	306	CONFIRMED	17	118	202	140.8	1.435	687	60
+sidh	prasidh	prasidh	abl	Abl		True	197	UNATTESTED-INSUFFICIENT	0	1	58	35.2	1.649	450	3
+sidh	sidh	sidh	abl	Abl		True	186	CONFIRMED	6	42	318	158.6	2.006	2028	37
+sidh	sidh	sidh	loc	Loc		False	305	CONFIRMED	3	42	633	415.7	1.523	2028	37
+śikṣ	śikṣ	śikṣ	acc	Acc		True	50	CONFIRMED	3	19	217	167.2	1.298	345	16
+śikṣ	śikṣ	śikṣ	abl	Abl		True	205	CONFIRMED	1	19	20	27.0	0.741	345	16
+śikṣ	śikṣ	śikṣ	gen	Gen		False	255,256	UNATTESTED-INSUFFICIENT	0	19	138	86.7	1.592	345	16
+śikṣ	śikṣay	śikṣay	instr	Ins	pros	True	102	UNATTESTED-INSUFFICIENT	0	0	62	40.6	1.527	175	0
+śiṣ	śeṣay	śeṣay	acc	Acc		True	67	UNATTESTED-INSUFFICIENT	0	0	22	14.5	1.513	30	0
+śiṣ	viśiṣ	viśiṣ	instr	Ins	sep	True	135	UNATTESTED-INSUFFICIENT	0	2	163	146.0	1.117	629	2
+śiṣ	viśiṣ	viśiṣ	abl	Abl		False	207,208	UNATTESTED-INSUFFICIENT	0	2	212	49.2	4.311	629	2
+skand	skand	skand	acc	Acc		False	51,54	CONFIRMED	7	27	156	119.7	1.303	247	20
+skhal	skhal	skhal	abl	Abl		True	213	UNATTESTED-INSUFFICIENT	0	1	17	9.2	1.843	118	1
+ślāgh	ślāgh	ślāgh	dat	Dat	dop	False	153	UNATTESTED-INSUFFICIENT	0	3	7	10.7	0.651	186	4
+ślāgh	ślāgh	ślāgh	loc	Loc		True	288	UNATTESTED-INSUFFICIENT	0	3	45	38.1	1.18	186	4
+śliṣ	(vi-śliṣ)	śliṣ	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	0	23	21.4	1.077	92	1
+smar	smar		acc	Acc		False	47,49	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+smar	smar		instr	Ins	soz	True	96	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+smar	smar		instr	Ins	mod	True	129	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+smar	smar		gen	Gen		False	259	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+smar	smāray	smāray	acc	Acc		False	72	UNATTESTED-INSUFFICIENT	0	0	29	19.9	1.459	41	0
+smi	smi	smi	instr	Ins	pros	True	101	CONFIRMED	2	5	66	52.7	1.253	227	7
+smi	smi	smi	instr	Ins	orud	True	112	CONFIRMED	2	5	66	52.7	1.253	227	7
+smi	smi	smi	loc	Loc		False	301,302	UNATTESTED-INSUFFICIENT	0	5	27	46.5	0.58	227	7
+snā	snā	snā	abl	Abl		True	186	CONFIRMED	1	36	84	128.8	0.652	1648	57
+snih	snih	snih	gen	Gen		False	252	UNATTESTED-INSUFFICIENT	0	0	49	31.4	1.56	125	0
+snih	snih	snih	loc	Loc		False	301,303	UNATTESTED-INSUFFICIENT	0	0	47	25.6	1.835	125	0
+spand	spand	spand	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	0	8	4.1	1.968	52	0
+spardh	spardh		instr	Ins	soz	False	97	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparh	sparh		dat	Dat	dop	False	153	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparh	sparh		gen	Gen		False	249,251,252	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparś	sparś		instr	Ins	orud	True	105	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparś	sparś		instr	Ins		True	141	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparś	sparś		loc	Loc		True	286	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparś	samsparś		instr	Ins	soz	True	97	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sparś	samsparś		instr	Ins		True	141	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sphālay	āsphālay	āsphālay	loc	Loc		True	307	UNATTESTED-INSUFFICIENT	0	0	3	2.7	1.126	13	0
+sphur	sphur	sphur	instr	Ins	sep	True	134	CONFIRMED	1	7	110	82.9	1.328	357	5
+sphur	sphur	sphur	instr	Ins	orud	True	144	CONFIRMED	1	7	110	82.9	1.328	357	5
+sphuṭ	sphuṭ	sphuṭ	instr	Ins	p	True	120	UNATTESTED-INSUFFICIENT	0	0	51	35.7	1.427	154	0
+śrā	śrapay	śrapay	instr	Ins	soz	True	95	CONFIRMED	6	92	101	67.3	1.501	290	59
+śri	śri	śri	acc	Acc		False	51	CONFIRMED	17	79	333	218.6	1.524	451	44
+śri	śri	śri	acc	Acc		False	68,69,71	CONFIRMED	17	79	333	218.6	1.524	451	44
+śru	pratiśru	pratiśru	dat	Dat	dop	False	150	CONFIRMED	1	5	41	10.6	3.856	184	2
+śru	pratiśru	pratiśru	gen	Gen		True	269	UNATTESTED-INSUFFICIENT	0	5	74	46.2	1.6	184	2
+śru	śru	śru	acc	Acc		False	72	CONFIRMED	79	216	7907	5091.2	1.553	10505	183
+śru	śru	śru	acc	Acc		False	74,75	CONFIRMED	79	216	7907	5091.2	1.553	10505	183
+śru	śru	śru	instr	Ins	soz	True	96	CONFIRMED	21	216	2147	2438.1	0.881	10505	183
+śru	śru	śru	instr	Ins	orud	True	105	CONFIRMED	21	216	2147	2438.1	0.881	10505	183
+śru	śru	śru	instr	Ins	mod	True	129	CONFIRMED	21	216	2147	2438.1	0.881	10505	183
+śru	śru	śru	instr	Ins	adv	True	131	CONFIRMED	21	216	2147	2438.1	0.881	10505	183
+śru	śru	śru	dat	Dat	dop	True	152,154	CONFIRMED	5	216	453	607.1	0.746	10505	183
+śru	śru	śru	abl	Abl		True	205	CONFIRMED	2	216	895	821.3	1.09	10505	183
+śru	śru	śru	gen	Gen		False	257,258	CONFIRMED	19	216	4854	2640.0	1.839	10505	183
+sru	sru	sru	abl	Abl		True	188,211	UNATTESTED-INSUFFICIENT	0	27	112	42.1	2.663	538	19
+star	prastar		abl	Abl		True	204	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+star	star		instr	Ins	orud	True	108	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+sthā	adhisthā	sthā	acc	Acc		True	62	CONFIRMED	70	394	4523	4491.7	1.007	9268	308
+sthā	anusthā	sthā	gen	Gen		False	253,254	CONFIRMED	11	394	2720	2329.1	1.168	9268	308
+sthā	āsthā	āsthā	acc	Acc		True	63	CONFIRMED	11	19	1243	643.6	1.931	1328	18
+sthā	āsthā	āsthā	dat	Dat	ogr	False	159	UNATTESTED-INSUFFICIENT	0	19	38	76.7	0.495	1328	18
+sthā	avasthā	avasthā	acc	Acc		True	67	CONFIRMED	1	13	449	394.5	1.138	814	9
+sthā	paristhā	sthā	acc	Acc		True	63	CONFIRMED	70	394	4523	4491.7	1.007	9268	308
+sthā	prasthā	prasthā	acc	Acc		True	63	UNATTESTED-INSUFFICIENT	0	4	380	269.0	1.413	555	13
+sthā	prasthā	prasthā	dat	Dat	ogr	False	159,161	UNATTESTED-INSUFFICIENT	0	4	65	32.1	2.027	555	13
+sthā	saṁsthā	saṃsthā	abl	Abl		True	202	UNATTESTED-INSUFFICIENT	0	40	45	72.5	0.621	927	43
+sthā	sthā	sthā	instr	Ins	pros	True	102	CONFIRMED	17	394	2029	2151.0	0.943	9268	308
+sthā	sthā	sthā	instr	Ins	orud	True	106	CONFIRMED	17	394	2029	2151.0	0.943	9268	308
+sthā	sthā	sthā	dat	Dat	dop	True	154	CONFIRMED	23	394	421	535.6	0.786	9268	308
+sthā	sthā	sthā	dat	Dat	ogr	False	163	CONFIRMED	23	394	421	535.6	0.786	9268	308
+sthā	sthā	sthā	abl	Abl		True	189	CONFIRMED	9	394	612	724.6	0.845	9268	308
+sthā	sthā	sthā	gen	Gen		False	253	CONFIRMED	11	394	2720	2329.1	1.168	9268	308
+sthā	sthā	sthā	loc	Loc		False	282,285,301	CONFIRMED	64	394	4370	1899.6	2.301	9268	308
+sthā	sthāpay	sthāpay	acc	Acc		False	74	CONFIRMED	13	19	836	584.0	1.432	1205	8
+sthā	upasthā	upasthā	nom	Nom		True	25	CONFIRMED	58	203	1190	1242.8	0.957	1672	117
+sthā	upasthā	upasthā	acc	Acc		True	63	CONFIRMED	85	203	1241	810.3	1.531	1672	117
+sthā	)	sthā	abl	Abl		True	189,196,214	CONFIRMED	9	394	612	724.6	0.845	9268	308
+sthā	viṣṭhā	viṣṭhā	instr	Ins	sep	False	133	CONFIRMED	1	12	28	34.1	0.821	147	12
+stu	stu	stu	instr	Ins	pr	True	121	CONFIRMED	40	159	1118	511.5	2.186	2204	124
+stu	stu	stu	dat	Dat	ogr	False	166	CONFIRMED	8	159	327	127.4	2.567	2204	124
+sū	prasū	prasū	instr	Ins	adv	True	132	CONFIRMED	10	49	218	174.3	1.251	751	54
+śuc	śuc	śuc	acc	Acc		False	64	CONFIRMED	2	18	483	376.6	1.283	777	22
+śuc	śuc	śuc	loc	Loc		False	301,302	CONFIRMED	4	18	125	159.3	0.785	777	22
+śudh	viśudh	viśudh	instr	Ins	orud	True	112	CONFIRMED	2	3	195	146.2	1.334	630	4
+śuṣ	śuṣ	śuṣ	loc	Loc		True	315	UNATTESTED-INSUFFICIENT	0	4	39	34.0	1.146	166	5
+svad	svad	svad	instr	Ins	orud	True	109	CONFIRMED	1	31	12	18.8	0.638	81	25
+svad	svad	svad	dat	Dat	dop	False	153	CONFIRMED	5	31	28	4.7	5.982	81	25
+svad	svad	svad	gen	Gen		True	268	CONFIRMED	2	31	28	20.4	1.376	81	25
+svad	āsvāday	āsvāday	dat	Dat	ogr	True	174	UNATTESTED-INSUFFICIENT	0	0	4	4.5	0.887	78	0
+svap	svap	svap	instr	Ins	soz	True	95	UNATTESTED-INSUFFICIENT	0	31	250	255.3	0.979	1100	34
+śvas	viśvas	viśvas	gen	Gen		False	253,254	CONFIRMED	1	2	35	48.3	0.725	192	1
+śvas	viśvas	viśvas	loc	Loc		False	301,302	UNATTESTED-INSUFFICIENT	0	2	90	39.4	2.287	192	1
+tak	nirtak	tak	abl	Abl		True	187	CONFIRMED	1	3	1	0.5	1.827	7	4
+takṣ	takṣ	takṣ	dat	Dat	ogr	False	166	CONFIRMED	9	60	46	9.3	4.944	161	29
+tan	pratan	pratan	abl	Abl		False	196	CONFIRMED	3	9	14	5.9	2.356	76	14
+tan	tan	tan	acc	Acc		False	46	CONFIRMED	54	123	562	347.0	1.62	716	72
+tan	tan	tan	dat	Dat	ogr	True	176	CONFIRMED	2	123	81	41.4	1.958	716	72
+tap	ātap	ātap	abl	Abl		True	189	UNATTESTED-INSUFFICIENT	0	5	3	2.0	1.476	26	3
+tap	tap	tap	acc	Acc		False	46,67	CONFIRMED	52	146	1343	1000.8	1.342	2065	125
+tap	tap	tap	instr	Ins	orud	True	106	CONFIRMED	14	146	577	479.3	1.204	2065	125
+tar	(ava-tṝ)		nom	Nom		True	25	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	(ava-tṝ)		instr	Ins	soz	True	96	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	(ava-tṝ)		instr	Ins	orud	True	107	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	(ava-tṝ)		abl	Abl		False	186,189	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	tar		acc	Acc		False	46,48	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	tar		instr	Ins	pros	True	100	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	tar		instr	Ins	orud	True	104,3	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tar	vitar		loc	Loc		False	309,310	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarj	tarj	tarj	acc	Acc		False	46,48	UNATTESTED-INSUFFICIENT	0	0	4	4.4	0.917	9	0
+tark	tark		acc	Acc		False	60,61	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tark	tark		acc	Acc		False	73,75	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tark	tark		gen	Gen		False	260	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarp	tarp		instr	Ins		True	140	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarp	tarp		gen	Gen		False	252	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarp	tarp		abl	Abl		False	252	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarp	tarp		loc	Loc		False	301,303	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tarp	tarp		gen	Gen		False	252	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+trai	trai		abl	Abl		False	191,192	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+trap	apatrap	apatrap	instr	Ins	orud	True	111	UNATTESTED-INSUFFICIENT	0	0	7	3.0	2.32	13	0
+tras	tras	tras	instr	Ins	sep	False	133	UNATTESTED-INSUFFICIENT	0	4	59	62.0	0.952	267	1
+tras	tras	tras	abl	Abl		False	192,194	CONFIRMED	1	4	45	20.9	2.156	267	1
+tras	tras	tras	abl	Abl		True	213	CONFIRMED	1	4	45	20.9	2.156	267	1
+tsar	tsar	tsar	acc	Acc		False	51,54	CONFIRMED	2	3	6	3.9	1.548	8	3
+tud	tud	tud	instr	Ins	orud	True	108	CONFIRMED	1	6	60	23.0	2.611	99	5
+tul	tulay	tulay	instr	Ins	soz	False	97	UNATTESTED-INSUFFICIENT	0	0	35	14.4	2.432	62	0
+turv	turv		abl	Abl		False	191,192	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+tuś	tuś	tuś	dat	Dat	dop	False	150	CONFIRMED	1	7	8	0.7	11.536	12	3
+tuś	tuś	tuś	gen	Gen		False	252	UNATTESTED-INSUFFICIENT	0	7	2	3.0	0.663	12	3
+tuṣ	parituṣ	parituṣ	instr	Ins	orud	True	112	UNATTESTED-INSUFFICIENT	0	0	46	23.7	1.943	102	0
+tuṣ	saṁtuṣ	saṃtuṣ	instr	Ins	orud	True	112	UNATTESTED-INSUFFICIENT	0	0	55	36.0	1.529	155	0
+tuṣ	tuṣ	tuṣ	instr	Ins	orud	True	111	CONFIRMED	3	8	343	195.0	1.759	840	7
+tuṣ	tuṣ	tuṣ	gen	Gen		False	252	CONFIRMED	1	8	311	211.1	1.473	840	7
+tuṣ	tuṣ	tuṣ	loc	Loc		False	301,302	CONFIRMED	1	8	128	172.2	0.743	840	7
+tvar	tvar	tvar	dat	Dat	ogr	True	161	UNATTESTED-INSUFFICIENT	0	0	20	31.1	0.642	539	3
+tvar	tvar	tvar	loc	Loc		False	305	UNATTESTED-INSUFFICIENT	0	0	84	110.5	0.76	539	3
+tyaj	tyaj	tyaj	acc	Acc		False	46	CONFIRMED	11	24	1992	1171.4	1.701	2417	14
+uc	uc	uc	dat	Dat	dop	True	151	UNATTESTED-INSUFFICIENT	0	5	4	2.9	1.357	51	4
+ūh	(ni-ūh)	ūh	instr	Ins	orud	True	103	UNATTESTED-INSUFFICIENT	0	7	25	22.7	1.099	98	6
+ūh	ūh	ūh	nom	Nom		False	27	CONFIRMED	2	7	73	72.8	1.002	98	6
+ūh	ūh	ūh	acc	Acc		False	46	CONFIRMED	2	7	66	47.5	1.39	98	6
+ūh	ūh	ūh	abl	Abl		True	223	UNATTESTED-INSUFFICIENT	0	7	5	7.7	0.653	98	6
+ūh	ūh	ūh	loc	Loc		False	301	UNATTESTED-INSUFFICIENT	0	7	22	20.1	1.095	98	6
+ūh	ūh	ūh	instr	Ins	orud	True	103	UNATTESTED-INSUFFICIENT	0	7	25	22.7	1.099	98	6
+und	und	und	instr	Ins	orud	True	108	CONFIRMED	4	16	36	18.8	1.915	81	12
+uruṣy	uruṣy	uruṣy	abl	Abl		False	191,192	CONFIRMED	4	18	19	4.0	4.765	51	11
+vā	vā	vā	acc	Acc		False	64	CONFIRMED	9	20	133	144.4	0.921	298	10
+vā	vā	vā	dat	Dat	ogr	True	176	UNATTESTED-INSUFFICIENT	0	20	25	17.2	1.452	298	10
+vā	vā	vā	abl	Abl		True	201	UNATTESTED-INSUFFICIENT	0	20	21	23.3	0.901	298	10
+vac	pravac	pravac	dat	Dat	dop	False	151	CONFIRMED	21	78	243	187.3	1.297	3242	38
+vac	vac	vac	nom	Nom		True	27,8	CONFIRMED	553	873	30865	25234.5	1.223	33948	664
+vac	vac	vac	acc	Acc		False	59	CONFIRMED	212	873	12496	16452.6	0.76	33948	664
+vac	vac	vac	acc	Acc		False	74,2,139	CONFIRMED	212	873	12496	16452.6	0.76	33948	664
+vac	vac	vac	abl	Abl		True	202,204	CONFIRMED	7	873	2113	2654.2	0.796	33948	664
+vac	vac	vac	gen	Gen		False	264,265	CONFIRMED	13	873	5689	8531.4	0.667	33948	664
+vac	vac	vac	loc	Loc		False	309,310,8	CONFIRMED	24	873	4763	6958.0	0.685	33948	664
+vad	anuvad	anuvad	acc	Acc		True	62	CONFIRMED	1	2	49	26.2	1.872	54	1
+vad	samvad	vad	instr	Ins	soz	False	97	CONFIRMED	18	266	939	908.4	1.034	3914	182
+vad	vad	vad	acc	Acc		False	59,60	CONFIRMED	103	266	2754	1896.9	1.452	3914	182
+vad	vad	vad	acc	Acc		False	74,75	CONFIRMED	103	266	2754	1896.9	1.452	3914	182
+vad	vad	vad	gen	Gen		False	264	CONFIRMED	5	266	1268	983.6	1.289	3914	182
+vad	vad	vad	loc	Loc		False	301,302,309	CONFIRMED	23	266	734	802.2	0.915	3914	182
+vad	vivad	vivad	loc	Loc		False	301	CONFIRMED	1	3	32	18.9	1.697	92	3
+vadh	vadh	vadh	instr	Ins	orud	True	107	CONFIRMED	8	31	508	286.9	1.771	1236	23
+vadh	vadh	vadh	gen	Gen		True	269	CONFIRMED	1	31	363	310.6	1.169	1236	23
+vah	(ā-vah)	vah	acc	Acc		True	68	CONFIRMED	115	254	1546	894.2	1.729	1845	127
+vah	apavah	apavah	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	0	15	4.1	3.689	52	0
+vah	āvah	āvah	abl	Abl		True	211	CONFIRMED	2	35	32	19.2	1.671	245	23
+vah	nirvah	nirvah	abl	Abl		False	191	UNATTESTED-INSUFFICIENT	0	4	5	2.0	2.46	26	6
+vah	vah	vah	acc	Acc		False	47	CONFIRMED	115	254	1546	894.2	1.729	1845	127
+vah	vah	vah	acc	Acc		True	68	CONFIRMED	115	254	1546	894.2	1.729	1845	127
+vah	vah	vah	instr	Ins	orud	True	103,106	CONFIRMED	14	254	486	428.2	1.135	1845	127
+vah	vah	vah	abl	Abl		True	188,201	CONFIRMED	3	254	106	144.3	0.735	1845	127
+van	van	van	acc	Acc		False	47	CONFIRMED	19	40	198	106.6	1.857	220	24
+van	van	van	dat	Dat	ogr	False	159	CONFIRMED	2	40	54	12.7	4.248	220	24
+vand	vand	vand	acc	Acc		False	47,49	CONFIRMED	10	20	464	306.3	1.515	632	14
+var	nivāray	nivāray	abl	Abl		False	186,190,191	UNATTESTED-INSUFFICIENT	0	0	49	31.7	1.547	405	0
+var	var		instr	Ins	orud	True	108	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		instr	Ins	pr	True	120	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		nom	Nom		True	25	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		acc	Acc		False	47,49	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		acc	Acc		False	69,71	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		instr	Ins	orud	True	111	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		acc	Acc		False	74,75	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		abl	Abl		False	207	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	var		loc	Loc		True	287	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+var	vāray	vāray	instr	Ins	mod	True	132	CONFIRMED	3	22	290	151.3	1.916	652	11
+var	vāray	vāray	abl	Abl		True	191,191,192	CONFIRMED	1	22	73	51.0	1.432	652	11
+vardh	abhivardhay	abhivardhay	loc	Loc		True	282	UNATTESTED-INSUFFICIENT	0	1	12	7.2	1.673	35	1
+vardh	parivardh		instr	Ins		True	140	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vardh	vardh		acc	Acc		False	64	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vardh	vardh		acc	Acc		True	72	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vardh	vardh		loc	Loc		True	286	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vardh	vardhay	vardhay	loc	Loc		True	282	CONFIRMED	3	72	104	98.4	1.057	480	48
+varj	parivarj		instr	Ins	sep	True	134	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varj	parivarj		abl	Abl		True	215	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varj	parivarjay	parivarjay	abl	Abl		True	215	UNATTESTED-INSUFFICIENT	0	4	13	16.1	0.807	206	2
+varj	varj		acc	Acc		False	47	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varj	varj		instr	Ins	sep	False	133,135	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varj	varjay	varjay	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	28	293	333.0	0.88	1435	21
+varj	vivarj		instr	Ins	sep	False	133	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varṣ	abhivarṣ		instr	Ins	orud	True	108	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varṣ	varṣ		acc	Acc		True	66	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varṣ	varṣ		instr	Ins	mod	True	130	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+varṣ	varṣ		dat	Dat	ogr	True	177	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	abhivart		dat	Dat	ogr	False	159,161	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	anuvart		instr	Ins	soz	True	94	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	nirvart		abl	Abl		False	196	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	nivart		abl	Abl		False	186,187	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	nivartay	nivartay	abl	Abl		True	190	UNATTESTED-INSUFFICIENT	0	5	37	16.1	2.297	206	5
+vart	pravart		instr	Ins	pros	True	100	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	pravart		dat	Dat	dop	True	152	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	pravart		dat	Dat	ogr	False	159,161	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	pravart		abl	Abl		False	196,197	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	pravart		loc	Loc		True	284,301	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vart		acc	Acc		True	66	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vart		dat	Dat	ogr	True	161	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vart		gen	Gen		True	247	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vart		loc	Loc		False	282,284,301,303	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vartay	vartay	instr	Ins	orud	True	107,109	CONFIRMED	3	31	153	89.6	1.708	386	18
+vart	vartay	vartay	abl	Abl		True	201	CONFIRMED	3	31	36	30.2	1.193	386	18
+vart	vinivart		abl	Abl		True	187,190	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vivart		instr	Ins	sep	False	133	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+vart	vyāvartay	vyāvartay	instr	Ins	sep	False	133	CONFIRMED	3	9	23	12.8	1.802	55	4
+vas	nirvāsay	nirvāsay	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	0	21	3.8	5.482	49	0
+vas	nivas	nivas	instr	Ins	adv	True	131	CONFIRMED	1	7	88	91.9	0.957	396	3
+vas	vas	vas	acc	Acc		False	47,49,67	CONFIRMED	54	158	1377	1230.0	1.119	2538	98
+vas	vas	vas	acc	Acc		False	51,64,14	CONFIRMED	54	158	1377	1230.0	1.119	2538	98
+vas	vas	vas	instr	Ins	mod	True	129,131	CONFIRMED	5	158	567	589.0	0.963	2538	98
+vas	vas	vas	loc	Loc		True	304	CONFIRMED	32	158	1331	520.2	2.559	2538	98
+vas	vipravas	vipravas	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	0	4	2.7	1.462	35	5
+vas	vivas	vivas	abl	Abl		False	186	CONFIRMED	2	9	9	10.2	0.885	130	12
+vaś	vaś	vaś	acc	Acc		False	60	CONFIRMED	19	47	271	146.4	1.852	302	70
+vās	vāsay	vāsay	instr	Ins		True	140	CONFIRMED	1	14	86	48.0	1.79	207	9
+vic	vic	vic	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	0	1	1.9	0.539	8	0
+vid	nirveday	nirveday	dat	Dat	dop	False	151	UNATTESTED-INSUFFICIENT	0	0	0	0.1	0.0	1	0
+vid	nirvid	nirvid	abl	Abl		False	193	UNATTESTED-INSUFFICIENT	0	4	5	2.1	2.369	27	3
+vid	nirvid	nirvid	gen	Gen		True	251	UNATTESTED-INSUFFICIENT	0	4	3	6.8	0.442	27	3
+vid	niveday	niveday	acc	Acc		False	72	CONFIRMED	7	14	634	426.0	1.488	879	6
+vid	niveday	niveday	acc	Acc		False	73	CONFIRMED	7	14	634	426.0	1.488	879	6
+vid	niveday	niveday	gen	Gen		False	264,265	UNATTESTED-INSUFFICIENT	0	14	208	220.9	0.942	879	6
+vid	vid	vid	acc	Acc		False	47	CONFIRMED	488	1264	8128	5483.2	1.482	11314	1043
+vid	vid	vid	abl	Abl		True	204	CONFIRMED	6	1264	1058	884.6	1.196	11314	1043
+vid	vid	vid	gen	Gen		False	257,258,259,3	CONFIRMED	43	1264	4428	2843.3	1.557	11314	1043
+vid	vid	vid	acc	Acc		False	47	CONFIRMED	488	1264	8128	5483.2	1.482	11314	1043
+vid	vid	vid	instr	Ins	pros	True	102	CONFIRMED	34	1264	2267	2625.8	0.863	11314	1043
+vid	vid	vid	loc	Loc		False	282	CONFIRMED	29	1264	2170	2318.9	0.936	11314	1043
+vid	vid	vid	acc	Acc		False	74,75,76	CONFIRMED	488	1264	8128	5483.2	1.482	11314	1043
+vidh	vidh	vidh	dat	Dat	dop	False	153	CONFIRMED	7	27	156	12.1	12.916	209	21
+vij	udvij	udvij	abl	Abl		False	193,194	UNATTESTED-INSUFFICIENT	0	2	65	21.1	3.079	270	2
+vij	udvij	udvij	gen	Gen		False	249,250	CONFIRMED	1	2	83	67.9	1.223	270	2
+vij	vij	vij	dat	Dat	ogr	True	177	UNATTESTED-INSUFFICIENT	0	4	0	1.6	0.0	27	4
+vīj	upavīj	upavīj	instr	Ins		True	140	UNATTESTED-INSUFFICIENT	0	0	7	1.6	4.309	7	0
+vip	vip	vip	instr	Ins	orud	True	144	CONFIRMED	1	4	34	36.2	0.939	156	4
+viś	aviviś	viś	loc	Loc		False	305,306	CONFIRMED	6	84	202	215.8	0.936	1053	46
+viś	praviś	praviś	acc	Acc		True	68	CONFIRMED	104	228	2382	1380.3	1.726	2848	132
+viś	praviś	praviś	instr	Ins	pros	True	101	CONFIRMED	10	228	697	661.0	1.054	2848	132
+viś	praviś	praviś	loc	Loc		False	305,306	CONFIRMED	15	228	660	583.7	1.131	2848	132
+viś	viś	viś	nom	Nom		True	25	CONFIRMED	42	84	857	782.7	1.095	1053	46
+viś	viś	viś	acc	Acc		False	51,53	CONFIRMED	31	84	863	510.3	1.691	1053	46
+viś	viś	viś	instr	Ins	soz	True	95	CONFIRMED	3	84	244	244.4	0.998	1053	46
+viś	viś	viś	instr	Ins	pros	True	100	CONFIRMED	3	84	244	244.4	0.998	1053	46
+viś	viś	viś	dat	Dat	ogr	True	174	CONFIRMED	2	84	45	60.9	0.74	1053	46
+viś	viś	viś	loc	Loc		False	305,306	CONFIRMED	6	84	202	215.8	0.936	1053	46
+vraj	prativraj	vraj	dat	Dat	ogr	False	159	UNATTESTED-INSUFFICIENT	0	16	44	69.5	0.633	1202	11
+vraj	pravraj	pravraj	dat	Dat	ogr	True	159	UNATTESTED-INSUFFICIENT	0	9	16	12.8	1.247	222	6
+vraj	vraj	vraj	acc	Acc		False	51,54	CONFIRMED	3	16	993	582.5	1.705	1202	11
+vraj	vraj	vraj	acc	Acc		False	55,58	CONFIRMED	3	16	993	582.5	1.705	1202	11
+vraj	vraj	vraj	dat	Dat	ogr	False	159	UNATTESTED-INSUFFICIENT	0	16	44	69.5	0.633	1202	11
+vraj	vraj	vraj	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	16	129	94.0	1.373	1202	11
+vraj	vraj	vraj	loc	Loc		True	304	UNATTESTED-INSUFFICIENT	0	16	277	246.4	1.124	1202	11
+vraśc	vraśc	vraśc	instr	Ins	orud	True	107	CONFIRMED	6	73	47	33.7	1.397	145	46
+vraśc	vraśc	vraśc	abl	Abl		True	187	UNATTESTED-INSUFFICIENT	0	73	14	11.3	1.235	145	46
+vraśc	vraśc	vraśc	loc	Loc		True	314	CONFIRMED	4	73	24	29.7	0.808	145	46
+vyadh	vyadh	vyadh	loc	Loc		True	306	CONFIRMED	9	111	426	335.3	1.27	1636	56
+vyath	vyath	vyath	abl	Abl		False	193,194	CONFIRMED	1	10	45	31.0	1.45	397	18
+vyath	vyath	vyath	gen	Gen		False	249,250	UNATTESTED-INSUFFICIENT	0	10	79	99.8	0.792	397	18
+vyath	vyathay	vyathay	abl	Abl		False	190	UNATTESTED-INSUFFICIENT	0	0	5	3.4	1.453	44	1
+vye	vye	vye	dat	Dat	ogr	True	178	UNATTESTED-INSUFFICIENT	0	25	5	2.7	1.881	46	13
+yā	niryā	niryā	instr	Ins	soz	True	94	CONFIRMED	1	5	108	82.2	1.315	354	2
+yā	niryā	niryā	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	5	101	27.7	3.649	354	2
+yā	apayā	apayā	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	0	30	8.1	3.725	103	0
+yā	prayā	prayā	instr	Ins	pros	True	100	CONFIRMED	5	22	342	333.3	1.026	1436	11
+yā	prayā	prayā	instr	Ins	orud	True	104	CONFIRMED	5	22	342	333.3	1.026	1436	11
+yā	viniryā	viniryā	abl	Abl		True	188	UNATTESTED-INSUFFICIENT	0	0	15	3.2	4.679	41	0
+yā	yā	yā	acc	Acc		False	51,53	CONFIRMED	70	260	4488	2737.7	1.639	5649	153
+yā	yā	yā	acc	Acc		False	55,57	CONFIRMED	70	260	4488	2737.7	1.639	5649	153
+yā	yā	yā	acc	Acc		False	69	CONFIRMED	70	260	4488	2737.7	1.639	5649	153
+yā	yā	yā	instr	Ins	soz	True	93,96	CONFIRMED	53	260	1629	1311.1	1.243	5649	153
+yā	yā	yā	instr	Ins	pros	True	100	CONFIRMED	53	260	1629	1311.1	1.243	5649	153
+yā	yā	yā	instr	Ins	orud	True	103	CONFIRMED	53	260	1629	1311.1	1.243	5649	153
+yā	yā	yā	dat	Dat	ogr	False	159	CONFIRMED	10	260	325	326.4	0.996	5649	153
+yā	yā	yā	abl	Abl		True	186,188,202,222	CONFIRMED	9	260	452	441.7	1.023	5649	153
+yā	yā	yā	loc	Loc		True	286,305	CONFIRMED	9	260	1110	1157.8	0.959	5649	153
+yāc	niryāc	niryāc	dat	Dat	ogr	True	176	UNATTESTED-INSUFFICIENT	0	2	9	0.8	11.98	13	1
+yāc	yāc	yāc	acc	Acc		False	47,49	CONFIRMED	27	34	568	365.9	1.552	755	31
+yāc	yāc	yāc	acc	Acc		False	69	CONFIRMED	27	34	568	365.9	1.552	755	31
+yāc	yāc	yāc	dat	Dat	dop	False	152,153	CONFIRMED	1	34	82	43.6	1.879	755	31
+yaj	yaj	yaj	acc	Acc		False	46,49	CONFIRMED	177	603	4757	3273.7	1.453	6755	757
+yaj	yaj	yaj	dat	Dat	dop	False	152	CONFIRMED	22	603	946	390.4	2.423	6755	757
+yaj	yaj	yaj	gen	Gen		False	255,256	CONFIRMED	25	603	2019	1697.6	1.189	6755	757
+yam	niyam	niyam	abl	Abl		False	190,191	CONFIRMED	2	20	114	79.2	1.439	1013	12
+yam	prayam	prayam	dat	Dat	dop	False	150	CONFIRMED	75	205	769	90.3	8.514	1563	101
+yam	prayam	prayam	abl	Abl		True	187	CONFIRMED	1	205	98	122.2	0.802	1563	101
+yam	prayam	prayam	gen	Gen		True	256,261,263	CONFIRMED	4	205	413	392.8	1.051	1563	101
+yam	prayam	prayam	loc	Loc		False	309,310	CONFIRMED	1	205	254	320.4	0.793	1563	101
+yam	udyam	udyam	dat	Dat	ogr	False	160	CONFIRMED	2	27	107	54.4	1.966	942	31
+yam	yam	yam	acc	Acc		False	46	CONFIRMED	84	224	881	529.7	1.663	1093	116
+yam	yam	yam	dat	Dat	dop	False	150	CONFIRMED	33	224	369	63.2	5.842	1093	116
+yam	yam	yam	dat	Dat	ogr	True	160	CONFIRMED	33	224	369	63.2	5.842	1093	116
+yam	yam	yam	loc	Loc		True	286,305	CONFIRMED	24	224	232	224.0	1.036	1093	116
+yat	yat	yat	instr	Ins	soz	False	97	CONFIRMED	4	31	159	127.2	1.25	548	21
+yat	yat	yat	dat	Dat	ogr	False	166	CONFIRMED	2	31	51	31.7	1.61	548	21
+yat	yat	yat	loc	Loc		True	308	CONFIRMED	9	31	221	112.3	1.968	548	21
+yu	viyu	viyu	instr	Ins	sep	False	133	CONFIRMED	1	5	9	5.8	1.551	25	3
+yu	yu	yu	abl	Abl		False	186,190	CONFIRMED	5	31	65	15.6	4.178	199	23
+yuch	yucch		abl	Abl		False	186	NOT-ADJUDICABLE	0	0	0	0.0		0	0
+yudh	yudh	yudh	acc	Acc		False	63,64	UNATTESTED-INSUFFICIENT	0	14	630	614.0	1.026	1267	18
+yudh	yudh	yudh	instr	Ins	soz	False	97	CONFIRMED	2	14	477	294.1	1.622	1267	18
+yudh	yudh	yudh	instr	Ins		False	111	CONFIRMED	2	14	477	294.1	1.622	1267	18
+yudh	yudh	yudh	instr	Ins	adv	True	131	CONFIRMED	2	14	477	294.1	1.622	1267	18
+yuj	niyojay	niyojay	instr	Ins	soz	False	97	UNATTESTED-INSUFFICIENT	0	0	54	54.1	0.999	233	0
+yuj	niyojay	niyojay	dat	Dat	ogr	False	159,161	UNATTESTED-INSUFFICIENT	0	0	7	13.5	0.52	233	0
+yuj	niyojay	niyojay	instr	Ins	soz	False	97	UNATTESTED-INSUFFICIENT	0	0	54	54.1	0.999	233	0
+yuj	niyojay	niyojay	dat	Dat	ogr	True	161	UNATTESTED-INSUFFICIENT	0	0	7	13.5	0.52	233	0
+yuj	niyojay	niyojay	loc	Loc		True	309	UNATTESTED-INSUFFICIENT	0	0	137	47.8	2.869	233	0
+yuj	prayuj	prayuj	abl	Abl		True	212	UNATTESTED-INSUFFICIENT	0	89	93	93.5	0.995	1196	61
+yuj	saṁyuj	saṃyuj	instr	Ins	soz	False	97	CONFIRMED	7	26	490	298.0	1.644	1284	22
+yuj	upayuj	upayuj	gen	Gen		False	267	UNATTESTED-INSUFFICIENT	0	13	150	113.8	1.318	453	7
+yuj	viprayuj	viprayuj	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	0	12	6.0	1.989	26	0
+yuj	viyuj	viyuj	instr	Ins	sep	False	133,135	UNATTESTED-INSUFFICIENT	0	2	101	34.8	2.901	150	1
+yuj	viyuj	viyuj	abl	Abl		False	186	UNATTESTED-INSUFFICIENT	0	2	17	11.7	1.45	150	1
+yuj	yuj	yuj	acc	Acc		False	47	CONFIRMED	77	202	2898	2875.4	1.008	5933	191
+yuj	yuj	yuj	instr	Ins	soz	False	97	CONFIRMED	22	202	2566	1377.0	1.863	5933	191
+yuj	yuj	yuj	dat	Dat	ogr	False	166	CONFIRMED	13	202	357	342.9	1.041	5933	191
+yuj	yuj	yuj	loc	Loc		True	288	CONFIRMED	23	202	1635	1216.0	1.345	5933	191
