@@ -11,7 +11,11 @@
   },
   "denominators": {
     "all_tokens": 5688416,
+    "case_bearing_tokens": 4014688,
+    "real_vibhakti_tokens": 3173636,
     "locative_total": 243215,
+    "locative_pct_of_case_bearing": 6.06,
+    "locative_pct_of_real_vibhakti": 7.66,
     "locative_by_number": {
       "Sing": 204735,
       "Plur": 35656,

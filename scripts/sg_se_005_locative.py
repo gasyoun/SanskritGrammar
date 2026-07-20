@@ -74,6 +74,12 @@ def main():
     sha = "skipped" if args.skip_checksum else sha256_file(db)
 
     total = cur.execute("SELECT COUNT(*) FROM token").fetchone()[0]
+    # case-marked denominator family (SG-SE denominator contract, H1371) — the same basis
+    # as the sibling case sub-articles: case_bearing incl the Cpd pseudo-case, real_vibhakti excl Cpd.
+    case_bearing = cur.execute("SELECT COUNT(*) FROM token WHERE feat_case IS NOT NULL").fetchone()[0]
+    real_vibhakti = cur.execute(
+        "SELECT COUNT(*) FROM token WHERE feat_case IN "
+        "('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')").fetchone()[0]
     loc = cur.execute("SELECT COUNT(*) FROM token WHERE feat_case='Loc'").fetchone()[0]
     loc_number = {k: c for k, c in cur.execute(
         "SELECT feat_number, COUNT(*) FROM token WHERE feat_case='Loc' GROUP BY feat_number ORDER BY COUNT(*) DESC")}
@@ -137,7 +143,11 @@ def main():
             "imported_at": prov.get("imported_at"), "sha256": sha,
             "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content",
         },
-        "denominators": {"all_tokens": total, "locative_total": loc, "locative_by_number": loc_number},
+        "denominators": {"all_tokens": total, "case_bearing_tokens": case_bearing,
+                         "real_vibhakti_tokens": real_vibhakti, "locative_total": loc,
+                         "locative_pct_of_case_bearing": round(100 * loc / case_bearing, 2),
+                         "locative_pct_of_real_vibhakti": round(100 * loc / real_vibhakti, 2),
+                         "locative_by_number": loc_number},
         "locative_absolute_candidate": {
             "loc_participle_candidate": lp,
             "pct_of_locative": round(100 * lp / loc, 1),
