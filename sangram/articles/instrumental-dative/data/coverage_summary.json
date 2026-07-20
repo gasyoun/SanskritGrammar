@@ -10,7 +10,9 @@
     "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
   },
   "denominators": {
-    "all_tokens": 5688416
+    "all_tokens": 5688416,
+    "case_bearing_tokens": 4014688,
+    "real_vibhakti_tokens": 3173636
   },
   "instrumental": {
     "total": 277143,
@@ -53,6 +55,8 @@
       "acl": 331,
       "obl:agent": 252
     },
+    "pct_of_case_bearing": 6.9,
+    "pct_of_real_vibhakti": 8.73,
     "passive_agent_cooccurrence": 21472,
     "passive_agent_pct": 7.7,
     "obl_instr_deprel": 2569,
@@ -100,8 +104,10 @@
       "advcl": 167,
       "acl": 140
     },
+    "pct_of_case_bearing": 1.63,
+    "pct_of_real_vibhakti": 2.06,
     "genitive_total_for_comparison": 270763,
-    "note": "the RAREST case; recipient role largely retreated into the genitive (Gen >> Dat); survives in ritual recipient (agnaye/devāya) + personal pronouns (mahyam/tubhyam) + dative of purpose"
+    "note": "the RAREST case (2.1% of the real vibhakti); recipient role largely retreated into the genitive (Gen >> Dat); survives in ritual recipient (agnaye/devāya) + personal pronouns (mahyam/tubhyam) + dative of purpose"
   },
   "traditional_layer": {
     "witness": "Whitney 1889 §§278-286 (instrumental), §§285-287 (dative); Pāṇini 1.4.42 (karaṇa), 1.4.32 (sampradāna)"

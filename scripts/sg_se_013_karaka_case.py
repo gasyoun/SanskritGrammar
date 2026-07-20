@@ -19,6 +19,7 @@ Re-running against the same pin reproduces every figure to the token.
 
 Model: Opus 4.8 (claude-opus-4-8[1m]), 18-07-2026. Data probe+verify workflow.
 """
+import hashlib
 import sqlite3
 import json
 import os
@@ -28,6 +29,14 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 DB = r"C:/Users/user/Documents/GitHub/VisualDCS/src/DCS-data-2026/dcs_full.sqlite"
 PIN = "04e0778d3dc971030229179e25eea043d06ff397"
+
+
+def sha256_file(path, chunk=4 * 1024 * 1024):
+    h = hashlib.sha256()
+    with open(path, "rb") as f:
+        for block in iter(lambda: f.read(chunk), b""):
+            h.update(block)
+    return h.hexdigest()
 
 # Kāraka (Pāṇini 1.4.23–55) overlaid on UD deprel proxies. NOT native kāraka tags.
 KARAKA_MAP = [
@@ -58,11 +67,23 @@ def case_dist(cur, deprels):
 
 
 def main():
-    con = sqlite3.connect(DB)
+    con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
     cur = con.cursor()
+    prov = dict(cur.execute("SELECT key, value FROM provenance").fetchall())
+    if "source_commit" not in prov:
+        print("ERROR: master has no provenance pin — refusing (C3 §2.1)", file=sys.stderr)
+        return 1
+    sha = sha256_file(DB)
 
     cur.execute("SELECT COUNT(*) FROM token")
     total_tokens = cur.fetchone()[0]
+    # case-marked denominator family (SG-SE denominator contract, H1371) — same basis as
+    # the sibling case sub-articles (SE-001/002/003/004): case_bearing incl the Cpd pseudo-case,
+    # real_vibhakti = the eight true vibhakti excl Cpd.
+    case_bearing = cur.execute("SELECT COUNT(*) FROM token WHERE feat_case IS NOT NULL").fetchone()[0]
+    real_vibhakti = cur.execute(
+        "SELECT COUNT(*) FROM token WHERE feat_case IN "
+        "('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')").fetchone()[0]
     cur.execute("SELECT COUNT(*) FROM token WHERE deprel IS NOT NULL AND deprel<>''")
     deprel_nonnull = cur.fetchone()[0]
     coverage = round(100.0 * deprel_nonnull / total_tokens, 4)
@@ -118,6 +139,18 @@ def main():
     out = {
         "article": "SG-SE-013",
         "pin": PIN,
+        "snapshot": {
+            "source_repo": prov.get("source_repo"),
+            "source_commit": prov.get("source_commit"),
+            "imported_at": prov.get("imported_at"),
+            "sha256": sha,
+            "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content",
+        },
+        "denominators": {
+            "all_tokens": total_tokens,
+            "case_bearing_tokens": case_bearing,
+            "real_vibhakti_tokens": real_vibhakti,
+        },
         "total_tokens": total_tokens,
         "deprel_nonnull": deprel_nonnull,
         "deprel_coverage_pct": coverage,

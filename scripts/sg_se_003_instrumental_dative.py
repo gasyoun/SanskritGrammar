@@ -84,6 +84,13 @@ def main():
     sha = "skipped" if args.skip_checksum else sha256_file(db)
 
     total = cur.execute("SELECT COUNT(*) FROM token").fetchone()[0]
+    # case-marked denominator family (SG-SE denominator contract, H1371):
+    #   case_bearing_tokens = every feat_case incl the Cpd pseudo-case (the SE-002/004 basis);
+    #   real_vibhakti_tokens = the eight true vibhakti, excl Cpd (the basis behind "Dat 2.1%").
+    case_bearing = cur.execute("SELECT COUNT(*) FROM token WHERE feat_case IS NOT NULL").fetchone()[0]
+    real_vibhakti = cur.execute(
+        "SELECT COUNT(*) FROM token WHERE feat_case IN "
+        "('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')").fetchone()[0]
     ins = profile(cur, "Ins")
     dat = profile(cur, "Dat")
     gen_total = cur.execute("SELECT COUNT(*) FROM token WHERE feat_case='Gen'").fetchone()[0]
@@ -124,9 +131,12 @@ def main():
             "imported_at": prov.get("imported_at"), "sha256": sha,
             "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content",
         },
-        "denominators": {"all_tokens": total},
+        "denominators": {"all_tokens": total, "case_bearing_tokens": case_bearing,
+                         "real_vibhakti_tokens": real_vibhakti},
         "instrumental": {
             **ins,
+            "pct_of_case_bearing": round(100 * ins["total"] / case_bearing, 2),
+            "pct_of_real_vibhakti": round(100 * ins["total"] / real_vibhakti, 2),
             "passive_agent_cooccurrence": agent,
             "passive_agent_pct": round(100 * agent / ins["total"], 1),
             "obl_instr_deprel": obl_instr, "obl_soc_deprel": obl_soc,
@@ -135,9 +145,12 @@ def main():
         },
         "dative": {
             **dat,
+            "pct_of_case_bearing": round(100 * dat["total"] / case_bearing, 2),
+            "pct_of_real_vibhakti": round(100 * dat["total"] / real_vibhakti, 2),
             "genitive_total_for_comparison": gen_total,
-            "note": "the RAREST case; recipient role largely retreated into the genitive (Gen >> Dat); survives in "
-                    "ritual recipient (agnaye/devāya) + personal pronouns (mahyam/tubhyam) + dative of purpose",
+            "note": "the RAREST case (2.1% of the real vibhakti); recipient role largely retreated into the "
+                    "genitive (Gen >> Dat); survives in ritual recipient (agnaye/devāya) + personal pronouns "
+                    "(mahyam/tubhyam) + dative of purpose",
         },
         "traditional_layer": {"witness": "Whitney 1889 §§278-286 (instrumental), §§285-287 (dative); "
                                           "Pāṇini 1.4.42 (karaṇa), 1.4.32 (sampradāna)"},

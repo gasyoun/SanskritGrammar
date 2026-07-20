@@ -19,6 +19,12 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **Machine-checked case-count denominator contract over the SANGRAM SE cluster (H1371, Opus 4.8 `claude-opus-4-8`).** The `SG-SE-*` case-semantics articles all publish case counts off the same pinned DCS-2026 snapshot, but did so against incommensurable denominators. New gate [`scripts/check_denominator_commensurability.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_denominator_commensurability.py) pins the canonical case-marked family — `all_tokens` 5,688,416, `case_bearing` 4,014,688 (incl the `Cpd` pseudo-case), `real_vibhakti` 3,173,636 (the eight vibhakti, excl `Cpd`), with `case_bearing == real_vibhakti + Cpd` — and enforces five checks over every `sangram/articles/*/data/coverage_summary.json`: master-value agreement across all alias keys, family arithmetic, snapshot pin, the case-cluster **gap** check (every SE case article must cite the `case_bearing` master), and the sub-denominator bound. Wired into CI via [`tests/test_denominator_commensurability.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_denominator_commensurability.py) and `npm run check-denominators`. Full reconciliation (the master partitions exactly by `upos`; `declension-overview`'s 1,790,270 and `pronouns`' 544,999 are the NOUN/PRON cells of the real-vibhakti partition): [`docs/AUDIT_SANGRAM_CASE_DENOMINATOR_COMMENSURABILITY_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/AUDIT_SANGRAM_CASE_DENOMINATOR_COMMENSURABILITY_2026.md).
+
+### Fixed
+- **Three under-denominated SE case articles regenerated from the pinned DCS-2026 snapshot (H1371).** `instrumental-dative` (SG-SE-003), `locative` (SG-SE-005) and `karaka-case` (SG-SE-013) reported case counts but cited no case-marked master, so their shares were not reconcilable. All three now carry `case_bearing_tokens` + `real_vibhakti_tokens`; SE-003/005 additionally publish each case's share on **both** bases (the `pct_of_case_bearing` incl `Cpd` used by SE-002/004, and the `pct_of_real_vibhakti` behind "Dat = 2.1 %"), and SE-013 gains the `snapshot`/`denominators` blocks its siblings already had (sha256 `8f3b06…` verified). Every other figure reproduces to the token.
+
 ## [0.99.0] - 2026-07-19
 
 ### Changed

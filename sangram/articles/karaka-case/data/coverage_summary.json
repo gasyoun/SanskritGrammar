@@ -1,6 +1,18 @@
 {
   "article": "SG-SE-013",
   "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "denominators": {
+    "all_tokens": 5688416,
+    "case_bearing_tokens": 4014688,
+    "real_vibhakti_tokens": 3173636
+  },
   "total_tokens": 5688416,
   "deprel_nonnull": 223751,
   "deprel_coverage_pct": 3.9335,
