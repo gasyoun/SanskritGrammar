@@ -1,0 +1,762 @@
+{
+  "audit": "H1371 universe-commensurability over the SANGRAM case cluster",
+  "pin": "04e0778d3dc971030229179e25eea043d06ff397",
+  "universes": {
+    "case_bearing": {
+      "label": "feat_case NOT NULL (incl Cpd pseudo-case)",
+      "predicate": "feat_case IS NOT NULL",
+      "denominator": 4014688,
+      "expected": 4014688,
+      "match": true
+    },
+    "real_vibhakti": {
+      "label": "the eight true vibhakti (excl Cpd)",
+      "predicate": "feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')",
+      "denominator": 3173636,
+      "expected": 3173636,
+      "match": true
+    },
+    "noun_inflected": {
+      "label": "inflected NOUN (upos=NOUN, excl Cpd)",
+      "predicate": "upos='NOUN' AND feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')",
+      "denominator": 1790270,
+      "expected": 1790270,
+      "match": true
+    },
+    "pron_inflected": {
+      "label": "inflected PRON (upos=PRON, excl Cpd)",
+      "predicate": "upos='PRON' AND feat_case IN ('Nom','Acc','Ins','Dat','Abl','Gen','Loc','Voc')",
+      "denominator": 544999,
+      "expected": 544999,
+      "match": true
+    }
+  },
+  "containment_lattice": [
+    "case_bearing ⊇ noun_inflected",
+    "case_bearing ⊇ pron_inflected",
+    "case_bearing ⊇ real_vibhakti",
+    "real_vibhakti ⊇ noun_inflected",
+    "real_vibhakti ⊇ pron_inflected"
+  ],
+  "published_claims": [
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Nom",
+      "universe": "real_vibhakti",
+      "numerator": 1419146,
+      "denominator": 3173636,
+      "share_pct": 44.72
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Acc",
+      "universe": "real_vibhakti",
+      "numerator": 742293,
+      "denominator": 3173636,
+      "share_pct": 23.39
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Ins",
+      "universe": "real_vibhakti",
+      "numerator": 277143,
+      "denominator": 3173636,
+      "share_pct": 8.73
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Dat",
+      "universe": "real_vibhakti",
+      "numerator": 65423,
+      "denominator": 3173636,
+      "share_pct": 2.06
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Abl",
+      "universe": "real_vibhakti",
+      "numerator": 74565,
+      "denominator": 3173636,
+      "share_pct": 2.35
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Gen",
+      "universe": "real_vibhakti",
+      "numerator": 270763,
+      "denominator": 3173636,
+      "share_pct": 8.53
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Loc",
+      "universe": "real_vibhakti",
+      "numerator": 243215,
+      "denominator": 3173636,
+      "share_pct": 7.66
+    },
+    {
+      "article": "case-system-overview",
+      "toc_ref": "SG-SE-001",
+      "category": "Voc",
+      "universe": "real_vibhakti",
+      "numerator": 81088,
+      "denominator": 3173636,
+      "share_pct": 2.56
+    },
+    {
+      "article": "nominative-accusative",
+      "toc_ref": "SG-SE-002",
+      "category": "Nom",
+      "universe": "case_bearing",
+      "numerator": 1419146,
+      "denominator": 4014688,
+      "share_pct": 35.35
+    },
+    {
+      "article": "nominative-accusative",
+      "toc_ref": "SG-SE-002",
+      "category": "Acc",
+      "universe": "case_bearing",
+      "numerator": 742293,
+      "denominator": 4014688,
+      "share_pct": 18.49
+    },
+    {
+      "article": "instrumental-dative",
+      "toc_ref": "SG-SE-003",
+      "category": "Ins",
+      "universe": "case_bearing",
+      "numerator": 277143,
+      "denominator": 4014688,
+      "share_pct": 6.9
+    },
+    {
+      "article": "instrumental-dative",
+      "toc_ref": "SG-SE-003",
+      "category": "Dat",
+      "universe": "case_bearing",
+      "numerator": 65423,
+      "denominator": 4014688,
+      "share_pct": 1.63
+    },
+    {
+      "article": "instrumental-dative",
+      "toc_ref": "SG-SE-003",
+      "category": "Ins",
+      "universe": "real_vibhakti",
+      "numerator": 277143,
+      "denominator": 3173636,
+      "share_pct": 8.73
+    },
+    {
+      "article": "instrumental-dative",
+      "toc_ref": "SG-SE-003",
+      "category": "Dat",
+      "universe": "real_vibhakti",
+      "numerator": 65423,
+      "denominator": 3173636,
+      "share_pct": 2.06
+    },
+    {
+      "article": "ablative-genitive",
+      "toc_ref": "SG-SE-004",
+      "category": "Abl",
+      "universe": "case_bearing",
+      "numerator": 74565,
+      "denominator": 4014688,
+      "share_pct": 1.86
+    },
+    {
+      "article": "ablative-genitive",
+      "toc_ref": "SG-SE-004",
+      "category": "Gen",
+      "universe": "case_bearing",
+      "numerator": 270763,
+      "denominator": 4014688,
+      "share_pct": 6.74
+    },
+    {
+      "article": "locative",
+      "toc_ref": "SG-SE-005",
+      "category": "Loc",
+      "universe": "case_bearing",
+      "numerator": 243215,
+      "denominator": 4014688,
+      "share_pct": 6.06
+    },
+    {
+      "article": "locative",
+      "toc_ref": "SG-SE-005",
+      "category": "Loc",
+      "universe": "real_vibhakti",
+      "numerator": 243215,
+      "denominator": 3173636,
+      "share_pct": 7.66
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Nom",
+      "universe": "noun_inflected",
+      "numerator": 692647,
+      "denominator": 1790270,
+      "share_pct": 38.69
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Acc",
+      "universe": "noun_inflected",
+      "numerator": 430396,
+      "denominator": 1790270,
+      "share_pct": 24.04
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Ins",
+      "universe": "noun_inflected",
+      "numerator": 184609,
+      "denominator": 1790270,
+      "share_pct": 10.31
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Dat",
+      "universe": "noun_inflected",
+      "numerator": 39190,
+      "denominator": 1790270,
+      "share_pct": 2.19
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Abl",
+      "universe": "noun_inflected",
+      "numerator": 61862,
+      "denominator": 1790270,
+      "share_pct": 3.46
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Gen",
+      "universe": "noun_inflected",
+      "numerator": 138883,
+      "denominator": 1790270,
+      "share_pct": 7.76
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Loc",
+      "universe": "noun_inflected",
+      "numerator": 177320,
+      "denominator": 1790270,
+      "share_pct": 9.9
+    },
+    {
+      "article": "declension-overview",
+      "toc_ref": "SG-MO-001",
+      "category": "Voc",
+      "universe": "noun_inflected",
+      "numerator": 65363,
+      "denominator": 1790270,
+      "share_pct": 3.65
+    }
+  ],
+  "verdicts": [
+    {
+      "category": "Nom",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 44.72
+      },
+      "b": {
+        "article": "nominative-accusative",
+        "toc_ref": "SG-SE-002",
+        "universe": "case_bearing",
+        "share_pct": 35.35
+      }
+    },
+    {
+      "category": "Nom",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 44.72
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 38.69
+      }
+    },
+    {
+      "category": "Nom",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "nominative-accusative",
+        "toc_ref": "SG-SE-002",
+        "universe": "case_bearing",
+        "share_pct": 35.35
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 38.69
+      }
+    },
+    {
+      "category": "Acc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 23.39
+      },
+      "b": {
+        "article": "nominative-accusative",
+        "toc_ref": "SG-SE-002",
+        "universe": "case_bearing",
+        "share_pct": 18.49
+      }
+    },
+    {
+      "category": "Acc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 23.39
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 24.04
+      }
+    },
+    {
+      "category": "Acc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "nominative-accusative",
+        "toc_ref": "SG-SE-002",
+        "universe": "case_bearing",
+        "share_pct": 18.49
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 24.04
+      }
+    },
+    {
+      "category": "Ins",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 8.73
+      },
+      "b": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "case_bearing",
+        "share_pct": 6.9
+      }
+    },
+    {
+      "category": "Ins",
+      "verdict": "COMMENSURABLE",
+      "universe_relation": "same",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 8.73
+      },
+      "b": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "real_vibhakti",
+        "share_pct": 8.73
+      }
+    },
+    {
+      "category": "Ins",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 8.73
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 10.31
+      }
+    },
+    {
+      "category": "Ins",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "case_bearing",
+        "share_pct": 6.9
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 10.31
+      }
+    },
+    {
+      "category": "Ins",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "real_vibhakti",
+        "share_pct": 8.73
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 10.31
+      }
+    },
+    {
+      "category": "Dat",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.06
+      },
+      "b": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "case_bearing",
+        "share_pct": 1.63
+      }
+    },
+    {
+      "category": "Dat",
+      "verdict": "COMMENSURABLE",
+      "universe_relation": "same",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.06
+      },
+      "b": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "real_vibhakti",
+        "share_pct": 2.06
+      }
+    },
+    {
+      "category": "Dat",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.06
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 2.19
+      }
+    },
+    {
+      "category": "Dat",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "case_bearing",
+        "share_pct": 1.63
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 2.19
+      }
+    },
+    {
+      "category": "Dat",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "instrumental-dative",
+        "toc_ref": "SG-SE-003",
+        "universe": "real_vibhakti",
+        "share_pct": 2.06
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 2.19
+      }
+    },
+    {
+      "category": "Abl",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.35
+      },
+      "b": {
+        "article": "ablative-genitive",
+        "toc_ref": "SG-SE-004",
+        "universe": "case_bearing",
+        "share_pct": 1.86
+      }
+    },
+    {
+      "category": "Abl",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.35
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 3.46
+      }
+    },
+    {
+      "category": "Abl",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "ablative-genitive",
+        "toc_ref": "SG-SE-004",
+        "universe": "case_bearing",
+        "share_pct": 1.86
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 3.46
+      }
+    },
+    {
+      "category": "Gen",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 8.53
+      },
+      "b": {
+        "article": "ablative-genitive",
+        "toc_ref": "SG-SE-004",
+        "universe": "case_bearing",
+        "share_pct": 6.74
+      }
+    },
+    {
+      "category": "Gen",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 8.53
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 7.76
+      }
+    },
+    {
+      "category": "Gen",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "ablative-genitive",
+        "toc_ref": "SG-SE-004",
+        "universe": "case_bearing",
+        "share_pct": 6.74
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 7.76
+      }
+    },
+    {
+      "category": "Loc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 7.66
+      },
+      "b": {
+        "article": "locative",
+        "toc_ref": "SG-SE-005",
+        "universe": "case_bearing",
+        "share_pct": 6.06
+      }
+    },
+    {
+      "category": "Loc",
+      "verdict": "COMMENSURABLE",
+      "universe_relation": "same",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 7.66
+      },
+      "b": {
+        "article": "locative",
+        "toc_ref": "SG-SE-005",
+        "universe": "real_vibhakti",
+        "share_pct": 7.66
+      }
+    },
+    {
+      "category": "Loc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 7.66
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 9.9
+      }
+    },
+    {
+      "category": "Loc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "locative",
+        "toc_ref": "SG-SE-005",
+        "universe": "case_bearing",
+        "share_pct": 6.06
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 9.9
+      }
+    },
+    {
+      "category": "Loc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "locative",
+        "toc_ref": "SG-SE-005",
+        "universe": "real_vibhakti",
+        "share_pct": 7.66
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 9.9
+      }
+    },
+    {
+      "category": "Voc",
+      "verdict": "INCOMMENSURABLE-DECLARED",
+      "universe_relation": "nested",
+      "a": {
+        "article": "case-system-overview",
+        "toc_ref": "SG-SE-001",
+        "universe": "real_vibhakti",
+        "share_pct": 2.56
+      },
+      "b": {
+        "article": "declension-overview",
+        "toc_ref": "SG-MO-001",
+        "universe": "noun_inflected",
+        "share_pct": 3.65
+      }
+    }
+  ],
+  "tally": {
+    "INCOMMENSURABLE-DECLARED": 25,
+    "COMMENSURABLE": 3
+  },
+  "pairs_total": 28,
+  "unclassified": 0,
+  "canonical_universe_ruling": "For a corpus-wide 'case distribution' claim the canonical universe is real_vibhakti (the eight true vibhakti, 3,173,636), NOT case_bearing (which folds in the Cpd pseudo-case) and NOT a POS-restricted universe. A sub-article MUST state its universe and cross-link any sibling reporting the same category on a different one (method П8)."
+}

@@ -21,7 +21,7 @@
     }
   },
   "last_refresh": {
-    "date": "2026-07-19",
+    "date": "2026-07-20",
     "commands": [
       "python scripts/consolidation_ledger_refresh.py",
       "python scripts/article_validate.py --all",
@@ -105,7 +105,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -133,7 +133,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -163,7 +163,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -192,7 +192,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -217,7 +217,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -247,7 +247,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -276,7 +276,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -309,7 +309,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -334,7 +334,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -362,7 +362,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -392,7 +392,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -420,7 +420,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -448,7 +448,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -481,7 +481,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -521,7 +521,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -551,7 +551,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -583,7 +583,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -615,7 +615,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -643,7 +643,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -668,7 +668,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -698,7 +698,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -728,7 +728,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -756,7 +756,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -783,7 +783,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -808,7 +808,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",
@@ -839,7 +839,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-07-19"
+        "checked_at": "2026-07-20"
       },
       "disposition": "unknown",
       "blocking_note": "",

@@ -1,6 +1,6 @@
 # DCS-derived published numbers — adversarial re-derivation ledger (H1229)
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 20-07-2026_
 
 Every mechanically checkable DCS-derived number published in the Sangram series
 (articles under [sangram/articles](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles),
@@ -199,6 +199,29 @@ each at `<slug>/index.mdx`. A check bundling several published values counts onc
 | `WF011-2` | preverbs:54 — the ut cell | leading-upasarga ut (published 17,275) | 17275 | **REFUTED** | corrected: **17 322** — ut cell copied from the exact-string column; every other cell is the leading-upasarga fold |
 | `WF011-3` | preverbs:54 | leading-upasarga pra/ā/sam/vi/upa/ni/abhi | [58118, 48139, 47613, 40856, 22195, 20423, 17824] | CONFIRMED | exact (round 1) |
 | `WF011-4` | preverbs:67+111 | multi-preverb tokens / (other) bucket | [25906, 28956] | CONFIRMED | exact (round 1) |
+
+## What a per-number audit cannot catch — cross-article commensurability (H1371)
+
+This ledger verifies each number against its **own** generating predicate, so two articles can
+both be CONFIRMED here yet be **incomparable** to a reader: the same category counted over a
+silently different **universe** (denominator). Worked seed — both CONFIRMED above, the pair a
+category error:
+
+| Article | Category | Universe (denominator) | Share |
+|---|---|---|---|
+| case-system-overview (SG-SE-001) | Nom | real vibhakti, all POS — 3 173 636 | 44,7 % |
+| declension-overview (SG-MO-001) | Nom | inflected NOUN only — 1 790 270 | 38,7 % |
+
+A number-level audit is **structurally blind** to this — nothing is wrong *inside* either
+article; only the cross-article comparison is. It is caught by a separate contract layer (H1371):
+[`sangram/audit/universe_commensurability.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability.py)
+enumerates every cross-article pair reporting the same case category and adjudicates each
+COMMENSURABLE / INCOMMENSURABLE-DECLARED / INCOMMENSURABLE-UNDECLARED (28 pairs, 0 unclassified —
+25 declared-divergent, 3 made directly comparable by the H1371 denominator fix); the committed
+[`universe_commensurability_verdicts.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability_verdicts.json)
+is CI-gated. Full write-up:
+[SANGRAM_CASE_UNIVERSE_COMMENSURABILITY_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/SANGRAM_CASE_UNIVERSE_COMMENSURABILITY_2026.md).
+The method rule is [П8](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx).
 
 ## Frozen invariants honoured
 

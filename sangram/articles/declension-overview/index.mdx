@@ -42,6 +42,13 @@ Ins, Dat, Abl, Gen, Loc) × **3 числа** (ед., дв., мн.) × **3 род
 - **Универсум:** словоизменённые **нарицательные** имена — `upos = NOUN`,
   `Case` задан и не равен `Cpd` (нефинальные члены композитов вынесены, они —
   предмет кластера «Композиты»). **Знаменатель: 1 790 270 токенов.**
+- **Межстатейная оговорка (соизмеримость, метод П8).** Доли ниже — от этого
+  NOUN-универсума, а не от всех падежных токенов: Nom здесь **38,7 %** (692 647 из
+  1 790 270 нарицательных). Обзор [SG-SE-001 «Падежная система»](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/case-system-overview/index.mdx)
+  считает ту же категорию по ВСЕМ частям речи и даёт Nom **44,7 %** (1 419 146 из
+  3 173 636 реальных вибхакти) — та же категория над РАЗНЫМИ универсумами, доли
+  напрямую не сопоставимы. Машинный вердикт: `INCOMMENSURABLE-DECLARED`
+  ([universe_commensurability_verdicts.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability_verdicts.json)).
 - **Скрипт:** [sg_mo_001_declension_overview.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_001_declension_overview.py)
   — повторный прогон обязан дать те же числа (C3 § 4.1); все выкладки, полная
   матрица падеж×число (24 клетки) и ДИ — в [coverage_summary.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/declension-overview/data/coverage_summary.json).
