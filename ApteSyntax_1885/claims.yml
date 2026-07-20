@@ -602,7 +602,7 @@ entries:
       длительности действия. Имперфект не может быть использован в этом значении.
     kind: typology
     falsifiable_as: "does the aorist carry a durative ('continuousness') value that the imperfect cannot, per Whitney"
-    sources: [whitney]
+    sources: [whitney, elizarenkova]
     verdict_fact: FALSE
     number: >-
       Contradicted by Whitney §§927-929. §927: 'The aorist of the later language is simply a
@@ -613,7 +613,7 @@ entries:
       i.e. completive/punctual, the opposite of durative 'continuousness'. §929: the aorist is
       distinguished FROM the imperfect precisely as a non-narrative tense. Whitney assigns the
       aorist no durative value anywhere.
-    ref: "Whitney 1889 §§927-929; Apte, Guide to Sanskrit Composition §210 (English original verified: 'also implies the idea of continuousness. The Imperfect cannot be used in this sense'); harvest APT-H-219 (Урок 19)"
+    ref: "Whitney 1889 §§927-929; Apte, Guide to Sanskrit Composition §210 (English original verified: 'also implies the idea of continuousness. The Imperfect cannot be used in this sense'); Елизаренкова Т. Я. «Ведийский язык» с. 20 + «Санскрит» с. 28, 44, in Языки мира: Индоарийские языки древнего и среднего периодов (М.: Academia, 2004) — corroborating cross-check, H1373; harvest APT-H-219 (Урок 19)"
     verdict_pedagogy: MISLEADING
     note: >-
       The register's first FALSE. Two checks make it solid. (1) The error is APTE'S OWN, not the
@@ -631,6 +631,20 @@ entries:
       aorist tag — refreshed 17-07-2026 from the older 0.31% tense-code figure, which undercounted
       the root+thematic aorists, see whitney_aorist_tagger.py H1134; cf. Whitney §826), so the
       durative past the learner meets is overwhelmingly the imperfect/present, never the aorist.
+      (3) THIRD-SOURCE CORROBORATION (H1373, 20-07-2026), added on the MG viza's ask «что сказано
+      в книге Елизаренковой»: the viza named «Аорист в Ригведе» (1960), which was not supplied;
+      the scan MG did supply is Elizarenkova's «Ведийский язык» / «Санскрит» essays in Языки мира:
+      Индоарийские языки древнего и среднего периодов (М.: Academia, 2004) — nearer the point,
+      since §210 concerns the CLASSICAL aorist and the 1960 monograph the Vedic one. She confirms
+      the verdict on both halves, independently of Whitney and in Russian: the aorist is perfective,
+      «действие, только что произошедшее на глазах у субъекта» (Санскрит, с. 44) and «закончившееся
+      в недавнем прошлом, иногда точечное действие» (Ведийский язык, с. 20) — the opposite of
+      duration; while the imperfective/durative is assigned precisely to the IMPERFECT, «действие
+      нейтрального или несовершенного вида в прошлом… время повествования» (с. 20), inverting
+      Apte's «имперфект не может быть использован в этом значении». For classical Sanskrit she
+      records the three-way past opposition as levelled and the choice stylistic (с. 44; epic
+      Sanskrit «семантические различия… минимальны», с. 28), matching Whitney §§927-929 and Apte's
+      own §207. The scan is in copyright and stays out of git (gitignored, cited by printed page).
     methodichka: >-
       Заучите наоборот: длительное, продолжающееся прошлое несут имперфект и презенс, а аорист —
       «завершительное, только что». Аорист в классике редок (~2,3 % глагольных форм в DCS по тегу
