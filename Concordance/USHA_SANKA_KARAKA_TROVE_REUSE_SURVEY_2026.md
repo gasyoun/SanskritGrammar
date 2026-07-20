@@ -20,18 +20,18 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`), MG lead 20-07-2026.
   `DhatuVistara/` HTML, the `DhatuKaraka-Akanksha-*` files): her thesis was **published in 2014**
   (corrected 20-07-2026 — earlier wrongly called unpublished), so reuse is fine **with scholarly
   attribution** — cite her thesis.
-- **Third-party works — mostly cleared (rights held / public-domain), one to verify** (corrected
-  20-07-2026 — the earlier blanket "reference-only, never republish" was a conservative default, not a
-  rights determination):
+- **Third-party works — all cleared** (corrected 20-07-2026 — the earlier blanket "reference-only,
+  never republish" was a conservative default, not a rights determination):
   - **Krishnacharya** *Bṛhad-Rūpāvalī / DhātuKośa* (1924; `Krishnacharya-BrihadRupavali-1924.pdf`,
     `DhatuKosha-Krishnacharya-BrihadRupavali-1924.pdf`) — **public domain by age** (>95 yr), free to use.
   - **Abhyankar** *Dictionary of Sanskrit Grammar* (1961; `Abhyankar-GramDic-1961.pdf`,
-    `KVAbhyankar-GramDic-1961.pdf`) and **Palsule** *Dhātu Concordance / Artha* (1955/1961;
+    `KVAbhyankar-GramDic-1961.pdf`), **Palsule** *Dhātu Concordance / Artha* (1955/1961;
     `Palsule-ConcordDhatu1955-*.pdf`, `Palsule-DhatuConcordance-1961-WithMyComm.pdf`, + Usha's derived
-    `Palsule-ForPh.D.xlsx` / `Palsule-Dhatus-ForPhD*`) — **rights held by MG**; usable with attribution.
-  - **Verify before publishing:** *Bhāratīya Upasargārtha-Candrikā* (1976; `Bharatiya-UpasargarthaChandrika-P1-1976.pdf`)
-    — the most recent, rights not confirmed. Run
-    [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) on this one before any public surface.
+    `Palsule-ForPh.D.xlsx` / `Palsule-Dhatus-ForPhD*`), and **_Bhāratīya Upasargārtha-Candrikā_** (1976;
+    `Bharatiya-UpasargarthaChandrika-P1-1976.pdf`) — **rights held by MG**; usable with attribution.
+  - Any *other* scans in the trove not named above (e.g. `dhatukarika.pdf`, `itviveka.pdf`, generic
+    Dhātupāṭha/Aṣṭādhyāyī edition scans) still default to consult-only until their rights are checked —
+    run [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) before publishing those.
 
 ## Tier A — directly reusable structured data (machine-readable, no OCR)
 
