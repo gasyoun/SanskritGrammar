@@ -9,6 +9,33 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.14.0] - 2026-07-20
+### Changed
+- **зан-19 Elizarenkova cross-check executed — the last open `LOCAL` viza note of the
+  methodichka is closed (H1373, Opus 4.8 `claude-opus-4-8`).** The note asked what
+  Elizarenkova's «Аорист в Ригведе» (1960) says about the aorist; that monograph was
+  **not** among the materials supplied. What MG did supply is a different Elizarenkova
+  work — her «Ведийский язык» and «Санскрит» essays in «Языки мира: Индоарийские языки
+  древнего и среднего периодов» (М.: Academia, 2004) — which is in fact closer to the
+  point, since Apte § 210 concerns the **classical** aorist while the 1960 monograph
+  treats the Vedic one. The check confirms verdict APT-31 («ложно») on both halves of
+  Apte's claim, from a third and Russian-language authority: the aorist carries perfective
+  aspect, «действие, только что произошедшее на глазах у субъекта» (Санскрит, с. 44) /
+  «закончившееся в недавнем прошлом, иногда точечное действие» (Ведийский язык, с. 20) —
+  the opposite of duration; while the imperfective/durative is assigned precisely to the
+  **imperfect**, «действие нейтрального или несовершенного вида в прошлом… время
+  повествования» (с. 20), inverting Apte's «имперфект не может быть использован в этом
+  значении». For classical Sanskrit the three-way past opposition is levelled and the
+  choice stylistic (с. 44; epic Sanskrit с. 28), independently corroborating Whitney
+  §§ 927–929 and Apte's own § 207. Recorded as a dated row in the «Ревизии правок визы»
+  table; the residual gap (the 1960 monograph itself) is stated in-text and does not
+  affect APT-31.
+### Added
+- **Rights guard for the supplied scan.** `Elizarenkova_2004/` added to
+  [`.gitignore`](../.gitignore) — the 2004 Academia volume is in copyright, so it is
+  consulted locally and cited by printed page, never committed (same policy as the H552
+  Zalizniak scan).
+
 ## [0.13.0] - 2026-07-19
 ### Changed
 - **Apte-methodichka viza notes brought to final written disposition — all 8 approved notes closed (H1275, Fable 5 `claude-fable-5`).**
