@@ -1,0 +1,112 @@
+{
+ "article": "SG-SE-013",
+ "note": "Role-level comparison of the Usha Sanka native kāraka gold (Concordance/usha_karaka_gold/) against the DCS deprel proxy (coverage_summary.json). Per-lemma agreement join is a follow-up (needs dcs_full.sqlite + root↔lemma crosswalk).",
+ "gold": {
+  "verb_groups": 145,
+  "distinct_dhatus": 581,
+  "total_citations": 1372
+ },
+ "proxy": {
+  "deprel_coverage_pct": 3.9335,
+  "deprel_nonnull_tokens": 223751
+ },
+ "roles": [
+  {
+   "role": "kartṛ",
+   "in_deprel_proxy": true,
+   "gold_citations": 282,
+   "gold_rank_core": 1,
+   "proxy_deprels": "kartR (agent, active),kartR-passive (agent)",
+   "proxy_visible_tokens": 20638,
+   "proxy_rank_core": 1,
+   "proxy_dominant_case": "Nom 97.85%"
+  },
+  {
+   "role": "karman",
+   "in_deprel_proxy": true,
+   "gold_citations": 261,
+   "gold_rank_core": 2,
+   "proxy_deprels": "karman (patient/object)",
+   "proxy_visible_tokens": 16874,
+   "proxy_rank_core": 2,
+   "proxy_dominant_case": "Acc 90.49%"
+  },
+  {
+   "role": "karaṇa",
+   "in_deprel_proxy": true,
+   "gold_citations": 100,
+   "gold_rank_core": 4,
+   "proxy_deprels": "karaNa (instrument)",
+   "proxy_visible_tokens": 2692,
+   "proxy_rank_core": 4,
+   "proxy_dominant_case": "Ins 95.43%"
+  },
+  {
+   "role": "sampradāna",
+   "in_deprel_proxy": true,
+   "gold_citations": 40,
+   "gold_rank_core": 6,
+   "proxy_deprels": "sampradAna-recipient,sampradAna-goal,sampradAna-benefactive",
+   "proxy_visible_tokens": 5107,
+   "proxy_rank_core": 3,
+   "proxy_dominant_case": "Dat 66.44%"
+  },
+  {
+   "role": "apādāna",
+   "in_deprel_proxy": true,
+   "gold_citations": 55,
+   "gold_rank_core": 5,
+   "proxy_deprels": "apAdAna (source)",
+   "proxy_visible_tokens": 981,
+   "proxy_rank_core": 6,
+   "proxy_dominant_case": "Abl 85.73%"
+  },
+  {
+   "role": "adhikaraṇa",
+   "in_deprel_proxy": true,
+   "gold_citations": 259,
+   "gold_rank_core": 3,
+   "proxy_deprels": "adhikaraNa (locus)",
+   "proxy_visible_tokens": 1720,
+   "proxy_rank_core": 5,
+   "proxy_dominant_case": "Loc 84.48%"
+  },
+  {
+   "role": "tādarthya",
+   "in_deprel_proxy": false,
+   "gold_citations": 33,
+   "gold_rank_core": null,
+   "proxy_deprels": null,
+   "proxy_visible_tokens": null,
+   "proxy_rank_core": null,
+   "proxy_dominant_case": null
+  },
+  {
+   "role": "hetu",
+   "in_deprel_proxy": false,
+   "gold_citations": 180,
+   "gold_rank_core": null,
+   "proxy_deprels": null,
+   "proxy_visible_tokens": null,
+   "proxy_rank_core": null,
+   "proxy_dominant_case": null
+  },
+  {
+   "role": "anya",
+   "in_deprel_proxy": false,
+   "gold_citations": 162,
+   "gold_rank_core": null,
+   "proxy_deprels": null,
+   "proxy_visible_tokens": null,
+   "proxy_rank_core": null,
+   "proxy_dominant_case": null
+  }
+ ],
+ "proxy_blind_roles": [
+  "tādarthya",
+  "hetu",
+  "anya"
+ ],
+ "proxy_blind_citations": 375,
+ "proxy_blind_semantic_citations": 213
+}
