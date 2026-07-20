@@ -27,8 +27,10 @@ wrongly called it unpublished). Her **selection and analysis** — this derived 
 meaning-class model, the role assignments — may therefore be **used, quoted, and republished with
 scholarly attribution** (cite her thesis). The classical citations it quotes are public-domain
 primary texts (Mahābhārata, Rāmāyaṇa, Purāṇas, Upaniṣads, Gṛhyasūtras, Subhāṣita). The **third-party**
-works in the surrounding trove (Abhyankar 1961, Krishnacharya 1924, Palsule 1955/61) are separate and
-remain reference-only.
+works in the surrounding trove are mostly cleared too: Krishnacharya *Bṛhad-Rūpāvalī* (1924) is
+public-domain by age; Abhyankar *Dictionary of Sanskrit Grammar* (1961) and Palsule *Dhātu Concordance*
+(1955/1961) are rights-held (usable with attribution); only *Bhāratīya Upasargārtha-Candrikā* (1976) is
+still to verify before publishing.
 
 ## Contents
 

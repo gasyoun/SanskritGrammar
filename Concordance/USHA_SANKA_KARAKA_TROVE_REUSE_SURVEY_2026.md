@@ -20,11 +20,18 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`), MG lead 20-07-2026.
   `DhatuVistara/` HTML, the `DhatuKaraka-Akanksha-*` files): her thesis was **published in 2014**
   (corrected 20-07-2026 — earlier wrongly called unpublished), so reuse is fine **with scholarly
   attribution** — cite her thesis.
-- **Third-party copyrighted works — reference only, NEVER republish** (the repo has a public Pages
-  site): Abhyankar *Dictionary of Sanskrit Grammar* (1961, + djvu), Krishnacharya *Bṛhad-Rūpāvalī /
-  DhātuKośa* (1924), *Bhāratīya Upasargārtha-Candrikā* (1976), Palsule *Dhātu Concordance* (1955/1961),
-  `dhatukarika.pdf`, and any published Dhātupāṭha/Aṣṭādhyāyī edition scans. Run
-  [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) before anything here goes near a public surface.
+- **Third-party works — mostly cleared (rights held / public-domain), one to verify** (corrected
+  20-07-2026 — the earlier blanket "reference-only, never republish" was a conservative default, not a
+  rights determination):
+  - **Krishnacharya** *Bṛhad-Rūpāvalī / DhātuKośa* (1924; `Krishnacharya-BrihadRupavali-1924.pdf`,
+    `DhatuKosha-Krishnacharya-BrihadRupavali-1924.pdf`) — **public domain by age** (>95 yr), free to use.
+  - **Abhyankar** *Dictionary of Sanskrit Grammar* (1961; `Abhyankar-GramDic-1961.pdf`,
+    `KVAbhyankar-GramDic-1961.pdf`) and **Palsule** *Dhātu Concordance / Artha* (1955/1961;
+    `Palsule-ConcordDhatu1955-*.pdf`, `Palsule-DhatuConcordance-1961-WithMyComm.pdf`, + Usha's derived
+    `Palsule-ForPh.D.xlsx` / `Palsule-Dhatus-ForPhD*`) — **rights held by MG**; usable with attribution.
+  - **Verify before publishing:** *Bhāratīya Upasargārtha-Candrikā* (1976; `Bharatiya-UpasargarthaChandrika-P1-1976.pdf`)
+    — the most recent, rights not confirmed. Run
+    [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md) on this one before any public surface.
 
 ## Tier A — directly reusable structured data (machine-readable, no OCR)
 
