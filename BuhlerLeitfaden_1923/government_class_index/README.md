@@ -23,6 +23,10 @@ Built by Opus 4.8 (`claude-opus-4-8`), handoff
 | [verb_class_voice_census.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/verb_class_voice_census.jsonl) | 763 | Per-root **5-source class + voice comparison** + Talmud morphoclass (ryad/tip/seṭ) |
 | [verb_class_disagreements.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/verb_class_disagreements.csv) | 399 | Screening subset: every row where a class or voice source conflicts |
 | [build_government_class_index.py](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/build_government_class_index.py) | — | Regenerates all four from the .xlsx + sibling sources |
+| [GOVERNMENT_VS_DCS_ADJUDICATION.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/GOVERNMENT_VS_DCS_ADJUDICATION.md) | — | **Corpus adjudication report** — all 1 168 relations scored against the DCS treebank (§3 below) |
+| [government_vs_dcs_adjudication.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/government_vs_dcs_adjudication.jsonl) | 1 168 | Per-relation verdict (CONFIRMED / COOCCURRENCE / UNATTESTED / ABSENT) + dep-arc / co-occurrence / verb-frequency evidence |
+| [dcs_verb_government_profiles.json](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/dcs_verb_government_profiles.json) | 491 | DCS treebank-attested governed-case frame + deprel distribution for each matched verb — the corpus valency frame to set beside Scherzl's |
+| [adjudicate_government_vs_dcs.py](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/adjudicate_government_vs_dcs.py) + [aggregate_dcs_gov.py](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/aggregate_dcs_gov.py) | — | Rebuild the adjudication from the [dcs-conllu](https://github.com/gasyoun/dcs-conllu) treebank |
 
 ## 1. Government (управление / Rektion)
 
@@ -107,6 +111,34 @@ For all 697 joined roots the census attaches Talmud's morphoclass — `ryad` (ab
 `A₁`), `tip` (alternation type I–IV), `seṭ`/`aniṭ`/`veṭ`, and `pada` (P/U/Ā) — none of which the
 19th-century index records. This is the cleanest "what Talmud adds beyond class." Whitney records no
 voice at all, so the voice axis (index vs Bühler vs Talmud `pada`) is a Talmud-only contribution.
+
+## 3. Corpus adjudication — Scherzl's government vs the DCS treebank
+
+All **1 168 governed-case relations** are checked, root by root, against the
+[dcs-conllu](https://github.com/gasyoun/dcs-conllu) dependency treebank (15 900 CoNLL-U files,
+5.69 M tokens, 754 726 sentences) — full report in
+[GOVERNMENT_VS_DCS_ADJUDICATION.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/GOVERNMENT_VS_DCS_ADJUDICATION.md).
+Each relation resolves to its most specific DCS verb lemma (reading-stem first — with anusvāra
+`ṁ→ṃ` normalisation — then bare root) and is scored on two evidence tiers: a **direct government
+arc** (a case-marked nominal that is a dependency child of the verb; strong) and **co-occurrence**
+(case + verb in one sentence; weak, informative only when zero).
+
+| Verdict | Relations | % | |
+|---|---:|---:|---|
+| CONFIRMED | 693 | 59.3 % | direct government arc found in the treebank |
+| COOCCURRENCE | 280 | 24.0 % | case co-occurs with the verb, no parsed arc |
+| UNATTESTED | 9 | 0.8 % | verb present in DCS but this case never pairs with it |
+| ABSENT | 186 | 15.9 % | root/stem not a DCS verb lemma — not adjudicable |
+
+**Only ~3.9 % of DCS sentences carry dependency arcs**, so CONFIRMED is strong positive evidence
+while a zero dep-count is *not* disconfirming by itself. Read on the **982 adjudicable** relations,
+**70.6 % are directly confirmed** and **99.1 % find at least co-occurrence** — Scherzl's
+19th-century government catalogue is strongly corroborated by the modern corpus, with **zero**
+high-frequency contradictions (no verb where a well-attested root never pairs with its
+Scherzl-claimed case). The ABSENT bucket is dominated by lemma-form mismatches (Scherzl's guṇa
+stem `sarj` vs DCS `sṛj`), not missing verbs, so the confirmation rate is a *lower* bound. The
+sibling [dcs_verb_government_profiles.json](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/dcs_verb_government_profiles.json)
+gives each verb's corpus-attested valency frame for direct comparison.
 
 ## Limitations (read before citing a conflict as fact)
 
