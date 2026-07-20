@@ -39,6 +39,14 @@ _Создано: 18-07-2026 · Последнее обновление: 18-07-20
   [`c3-pin-04e0778-content`](https://github.com/gasyoun/dcs-conllu/tree/c3-pin-04e0778-content).
 - **Универсум:** токены с `feat_case` — **4 014 688** (70,6 % корпуса); из них восемь
   реальных вибхакти **3 173 636**, псевдопадеж `Cpd` 841 052 исключён (§ 3).
+- **Межстатейная оговорка (соизмеримость, метод П8).** Доли § 3 — от 3 173 636
+  реальных вибхакти по ВСЕМ частям речи (Nom **44,7 %**). Подстатья о склонении
+  [SG-MO-001 «Склонение: обзор»](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/declension-overview/index.mdx)
+  считает те же падежи только по нарицательным (`upos = NOUN`, знаменатель
+  1 790 270) и даёт Nom **38,7 %**: одна категория над разными универсумами,
+  напрямую не сопоставима. Полный разбор всех 28 межстатейных пар (25
+  `INCOMMENSURABLE-DECLARED`, 3 `COMMENSURABLE`) —
+  [universe_commensurability_verdicts.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability_verdicts.json).
 - **Валидационная выборка:** 50 падежных форм, посеянная (seed 20260718).
 - **Скрипт:** [sg_se_001_case_overview.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_se_001_case_overview.py)
   — повторный прогон даёт те же числа; выкладки — в
