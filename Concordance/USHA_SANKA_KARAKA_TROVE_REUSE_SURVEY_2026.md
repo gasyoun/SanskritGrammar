@@ -17,8 +17,9 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`), MG lead 20-07-2026.
   Do **not** commit the tree wholesale; extract only the structured derivations named below.
   Register the tree in [Uprava/DATA_LAYERS_CENSUS.md](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md).
 - **Usha Sanka's own work** (Ch-0…Ch-5a, `dhatu_chart.csv`, her `.xlsx` derivations, the
-  `DhatuVistara/` HTML, the `DhatuKaraka-Akanksha-*` files): reuse needs her **permission +
-  attribution** — it is an unpublished doctoral corpus, not a released open dataset.
+  `DhatuVistara/` HTML, the `DhatuKaraka-Akanksha-*` files): her thesis was **published in 2014**
+  (corrected 20-07-2026 — earlier wrongly called unpublished), so reuse is fine **with scholarly
+  attribution** — cite her thesis.
 - **Third-party copyrighted works — reference only, NEVER republish** (the repo has a public Pages
   site): Abhyankar *Dictionary of Sanskrit Grammar* (1961, + djvu), Krishnacharya *Bṛhad-Rūpāvalī /
   DhātuKośa* (1924), *Bhāratīya Upasargārtha-Candrikā* (1976), Palsule *Dhātu Concordance* (1955/1961),
@@ -70,7 +71,8 @@ Bhāratīya Upasargārtha-Candrikā 1976, `dhatukarika.pdf`, `itviveka.pdf`. Con
    against GasunsDhatu_2014 and the pwg_ru 749-root list.
 4. **Aṣṭādhyāyī** — load the sūtrapāṭha XLSX behind the Pāṇini skills.
 5. **pwg_ru** — mine `PWG-Dhatu-Upasarga-entries.htm` for the verb-root translation queue.
-6. **Rights** — confirm reuse permission + attribution terms from Usha Sanka before any derived
-   dataset is published; keep Tier C off every public surface.
+6. **Rights** — Usha Sanka's thesis was **published in 2014**, so her work is reusable with
+   scholarly attribution (no permission gate); keep only the **third-party** Tier C works off every
+   public surface.
 
 _Dr. Mārcis Gasūns_
