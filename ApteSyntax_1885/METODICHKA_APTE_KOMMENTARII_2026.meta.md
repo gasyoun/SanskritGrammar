@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_APTE_KOMMENTARII_2026.md
 
-_Created: 17-07-2026 · Last updated: 19-07-2026_
+_Created: 17-07-2026 · Last updated: 20-07-2026_
 
 Companion record for the Apte print methodichka commentary manuscript
 ([`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md)).
@@ -49,9 +49,15 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
    (17-07-2026) — 8/9 approve, `apply_apte_methodichka_visa.py --apply`; substantive notes folded
    in (Likhushina direct quotes, Sherzl cross-check, tightened зан-10 ratio); zan-29 (Занятия
    29–30) still unvoted.
-5. **Open from this viza round** — Елизаренкова «Аорист в Ригведе» scan (зан-19, needs MG's file);
-   a standalone uta-statistics dashboard (зан-22); a cross-book calibration table («что у кого
-   лучше», приложение).
+5. **Open from this viza round** — ~~Елизаренкова scan (зан-19, needs MG's file)~~ ✅ **DONE**
+   (20-07-2026, H1373): cross-check run against the scan MG actually supplied — «Ведийский язык» /
+   «Санскрит» in «Языки мира: Индоарийские языки древнего и среднего периодов» (М.: Academia,
+   2004) — **not** the «Аорист в Ригведе» (1960) monograph named in the viza, which was not among
+   the materials. The substitution is favourable: Apte § 210 concerns the *classical* aorist, the
+   1960 monograph the Vedic one. APT-31 confirmed on both halves of Apte's claim. Scan gitignored
+   as in-copyright. Residual — the 1960 monograph itself, if it ever arrives: a Vedic slice, not a
+   verdict change. **Still open from this round:** a standalone uta-statistics dashboard (зан-22);
+   a cross-book calibration table («что у кого лучше», приложение).
 
 ## Limitations
 - v1 is commentary only — no exercises, no cross-references yet.
@@ -72,5 +78,6 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
 | 17-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | Fed the «Учащемуся» takeaways into the `<ApteClaims/>` reading-site overlay via a `methodichka` field in `claims.yml` (single source) — backlog #3 closed (H1095). |
 | 17-07-2026 | Sonnet 5 (`claude-sonnet-5`) | MG viza applied (8/9 approve) — backlog #4 closed. Likhushina direct quotes (Занятие 3/19), Sherzl government-index cross-check (Занятие 7/9), tightened Занятие 10 ratio; 3 open research asks parked as backlog #5. |
 | 19-07-2026 | Fable 5 (`claude-fable-5`) | H1275: все 8 одобренных правок визы доведены до письменной диспозиции (таблица «Ревизии правок визы» в рукописи). Сноски-оговорки 1–3 (зан-3/19/22) — настоящие `[^n]`-сноски вместо прозы; прямая перецитата формулировок правил по Лихушиной расширена на §§ 63/94/98/113/258; контрольная сверка Шерцля по `government_lexicon.jsonl` выявила и сняла три неточности цитирования H1205 (krudh «acc.», ruc «только», пропущенный dat. 160 у muc + глосса превербов). Елизаренкова (зан-19), dashboard (зан-22) и межкнижный список (приложение) отложены с именованными блокерами; zan-29 эскалирован на повторную визу (@DECIDE). |
+| 20-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | H1373: сверка зан-19 с Елизаренковой выполнена — последний открытый `LOCAL`-пункт визы закрыт. Источник: очерки «Ведийский язык» (с. 20) и «Санскрит» (с. 28, 44) в «Языки мира: Индоарийские языки древнего и среднего периодов» (М.: Academia, 2004); названной в визе монографии «Аорист в Ригведе» (1960) среди переданных материалов не было, и замена ближе к делу (§ 210 — классический аорист). Вердикт APT-31 подтверждён по обеим половинам утверждения: аорист = совершенный вид, «только что произошедшее на глазах у субъекта»; несовершенный вид/длительность закреплены за имперфектом; в классике оппозиция нивелирована, выбор стилистический — независимое подтверждение Уитни §§ 927–929 и Апте § 207. Скан внесён в `.gitignore` (авторское право, порядок H552), цитируется по страницам печатного тома. |
 
 _Dr. Mārcis Gasūns_
