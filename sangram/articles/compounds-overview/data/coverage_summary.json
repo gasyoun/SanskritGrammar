@@ -91,6 +91,6 @@
   "type_classification_reference": {
     "study": "P4 / SG-WF-008 (tatpuruṣa)",
     "basis": "two-pass Cohen κ over a seeded 120-compound sample (NOT a full-corpus type count)",
-    "note": "codebook anchored on Edgar Leitan's Pāṇinian arrangement (dvigu ⊂ karmadhāraya ⊂ tatpuruṣa)"
+    "note": "codebook anchored on Edgar Leitan's Panini-based arrangement (dvigu ⊂ karmadhāraya ⊂ tatpuruṣa) — cross-checked 2026-07-21 (H1346) against his own written konspekt 'Сложные слова в санскрите. Категории композитов с примерами: краткий конспект' (SamasaChakram/leitan/leitan-samasa-konspekt-export-15-07-2026.txt, registered in Uprava/PROJECT_INTERLINKS.md 'Sanskrit toolkit' -> Samasa/Leitan) and corroborated by his lecture recordings, course 'Веселый синтаксис санскрита' (auto-transcribed, Uprava/stenogrammy/Синтаксис санскрита/, commit 8b6d83cf952b1c200f83780f89f3e07b3456267b): confirms karmadharaya as a subclass of tatpuruṣa (not a 5th class) and dvigu as a subclass specifically of karmadharaya, per Indian grammatical tradition"
   }
 }

@@ -88,6 +88,22 @@ def main():
     tense_dist = {(t or "None"): c for t, c in cur.execute(
         "SELECT feat_tense, COUNT(*) FROM token WHERE feat_verbform='Part' GROUP BY feat_tense")}
 
+    # broader deverbal-formation context (H1346 card MO23, follow-up to visa note):
+    # every non-finite VerbForm-tagged category in the pinned snapshot, so the -ta/-na
+    # ppp count can be checked against deverbal formations OTHER than participles too
+    # (converb/absolutive, gerundive, infinitive) -- not just against other participle
+    # sub-types. No stem-strip needed here: Conv/Gdv/Inf are tagged directly.
+    verbform_dist = {(v or "None"): c for v, c in cur.execute(
+        "SELECT feat_verbform, COUNT(*) FROM token WHERE feat_verbform IS NOT NULL "
+        "GROUP BY feat_verbform")}
+    # finite verbal forms, same convention as scripts/dcs2026_figures.py: upos='VERB' AND
+    # feat_verbform IS NULL -- NOT "feat_mood is set" (17 upos='VERB' tokens carry neither
+    # feat_verbform nor feat_mood and are still finite-denominator members under this rule;
+    # an earlier draft of this article mis-described the criterion as "feat_mood set", which
+    # undercounts by those 17 -- fixed here so the number is reproducible under its own stated rule)
+    finite_verbal_total = cur.execute(
+        "SELECT COUNT(*) FROM token WHERE upos='VERB' AND feat_verbform IS NULL").fetchone()[0]
+
     # -ta/-na ppp = tense-NULL participles whose stripped stem ends in t / n
     rows = cur.execute(
         "SELECT id, m_unsandhied, lemma, feat_case, feat_number, feat_gender "
@@ -156,6 +172,21 @@ def main():
             "share_of_all_participles": round(100 * n_ppp / part_total, 1),
             "distinct_roots": len(roots),
             "non_tn_stem_remainder": other,
+        },
+        "deverbal_context": {
+            "note": "non-finite VerbForm-tagged categories in the pinned snapshot (Part/Conv/Gdv/Inf); "
+                    "-ta/-na ppp is a subset of Part (tense=NULL, stem-strip, see above)",
+            "verbform_counts": verbform_dist,
+            "total_non_finite_deverbal": sum(verbform_dist.values()),
+            "ta_na_ppp_share_of_all_deverbal": round(100 * n_ppp / sum(verbform_dist.values()), 1),
+            "next_largest_non_participle_category": max(
+                ((k, v) for k, v in verbform_dist.items() if k != "Part"), key=lambda kv: kv[1]),
+            "finite_verbal_forms": {
+                "criterion": "upos='VERB' AND feat_verbform IS NULL (dcs2026_figures.py convention; "
+                              "does NOT require feat_mood to be set)",
+                "count": finite_verbal_total,
+                "excluded_from_deverbal_comparison": True,
+            },
         },
         "case_distribution": dict(case_counter.most_common()),
         "top_ppp_roots": [{"root": r, "ppp_tokens": c} for r, c in root_freq.most_common(20)],

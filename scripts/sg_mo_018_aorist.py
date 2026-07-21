@@ -46,6 +46,20 @@ PAST = f"{FIN} AND feat_tense='Past'"
 # aorist stem-formation types (within Tense=Past): root/s/is/sa/sis/red aorists + thematic (a-)aorist
 AORIST_FORMATIONS = ("root", "s", "is", "sa", "sis", "red", "them")
 
+# H1346 (MO18 visa follow-up): the reviewer asked for the aorist's overall RARITY
+# ("not a word about the exceptional rarity, 1% of all verbal forms?"). That "~1%"
+# and the programme-wide "2.3%" (scripts/dcs2026_figures.py) are both correct --
+# they are shares of two DIFFERENT, non-interchangeable denominators, so both are
+# computed and named explicitly (house convention:
+# scripts/check_denominator_commensurability.py / H1371).
+#   FIN_2026        = dcs2026_figures.py's own "finite verbal forms" convention
+#                      (upos='VERB' AND feat_verbform IS NULL) -- reproduces 523,738.
+#   ALL_VERB        = every upos='VERB' token regardless of feat_verbform (finite +
+#                      participle/converb/gerundive/infinitive) -- the widest base,
+#                      the one that yields the reviewer's "~1%".
+FIN_2026 = "upos='VERB' AND feat_verbform IS NULL"
+ALL_VERB = "upos='VERB'"
+
 SEED = 20260717
 SAMPLE_SIZE = 50
 
@@ -88,6 +102,15 @@ def main():
     fin_total = cur.execute(f"SELECT COUNT(*) FROM token WHERE {FIN}").fetchone()[0]
     past_total = cur.execute(f"SELECT COUNT(*) FROM token WHERE {PAST}").fetchone()[0]
 
+    # H1346: two wider, non-interchangeable denominator bases for the rarity figure.
+    fin_2026_total = cur.execute(f"SELECT COUNT(*) FROM token WHERE {FIN_2026}").fetchone()[0]
+    all_verb_total = cur.execute(f"SELECT COUNT(*) FROM token WHERE {ALL_VERB}").fetchone()[0]
+    verbform_breakdown = dict(cur.execute(
+        "SELECT feat_verbform, COUNT(*) FROM token WHERE upos='VERB' "
+        "GROUP BY feat_verbform ORDER BY COUNT(*) DESC").fetchall())
+    verbform_breakdown = {(k if k is not None else "Fin(NULL)"): v
+                           for k, v in verbform_breakdown.items()}
+
     formation = {}
     for v, c in cur.execute(
             f"SELECT feat_formation, COUNT(*) FROM token WHERE {PAST} "
@@ -98,6 +121,15 @@ def main():
     aor_total = cur.execute(
         f"SELECT COUNT(*) FROM token WHERE {PAST} AND feat_formation IN ({ph})",
         AORIST_FORMATIONS).fetchone()[0]
+
+    # H1346: aorist-marked count under dcs2026_figures.py's own FIN convention -- must
+    # equal aor_total (both scripts' PAST universes agree at 102,055 even though their
+    # FIN clauses differ by 17 tokens on feat_person filtering; this is the reproduction
+    # check for "12,054 / 523,738 = 2.3%").
+    aor_total_fin2026 = cur.execute(
+        f"SELECT COUNT(*) FROM token WHERE {FIN_2026} AND feat_tense='Past' "
+        f"AND feat_formation IN ({ph})", AORIST_FORMATIONS).fetchone()[0]
+
     aor_by_type = {t: cur.execute(
         f"SELECT COUNT(*) FROM token WHERE {PAST} AND feat_formation=?", (t,)).fetchone()[0]
         for t in AORIST_FORMATIONS}
@@ -156,6 +188,38 @@ def main():
         },
         "perfect_ish_remainder": {"unmarked_none": unmarked, "periphrastic_peri": peri,
                                   "note": "None (unmarked, mostly reduplicated perfect + hidden aorists) + peri (periphrastic perfect)"},
+        "rarity_denominator_bases": {
+            "note": "H1346 (MO18 visa follow-up): the aorist's overall rarity has THREE legitimate, "
+                    "NON-INTERCHANGEABLE denominator bases -- each answers a different question, per "
+                    "the house denominator-commensurability convention (scripts/check_denominator_commensurability.py, H1371). "
+                    "The numerator (aorist_formation_marked, 12,054) is the same lower-bound count in all three; only the base changes.",
+            "past_finite_base": {
+                "denominator": past_total,
+                "denominator_label": "finite Tense=Past tokens only (aorist+perfect conflated, EM2)",
+                "aorist_marked": aor_total,
+                "share_pct": round(100 * aor_total / past_total, 1),
+                "share_ci95": wilson_ci(aor_total, past_total),
+            },
+            "finite_verbal_2026_base": {
+                "denominator": fin_2026_total,
+                "denominator_label": "ALL finite verbal forms (upos='VERB' AND feat_verbform IS NULL), "
+                                      "scripts/dcs2026_figures.py's programme-wide convention",
+                "aorist_marked": aor_total_fin2026,
+                "share_pct": round(100 * aor_total_fin2026 / fin_2026_total, 2),
+                "share_ci95": wilson_ci(aor_total_fin2026, fin_2026_total),
+                "cross_check": "reproduces scripts/dcs2026_figures.json's aorist=12054/finite_verbal_denominator=523738=2.3%",
+            },
+            "all_verbal_forms_base": {
+                "denominator": all_verb_total,
+                "denominator_label": "EVERY upos='VERB' token regardless of feat_verbform -- finite "
+                                      "(Fin/None) + non-finite participle/converb/gerundive/infinitive",
+                "verbform_breakdown": verbform_breakdown,
+                "aorist_marked": aor_total,
+                "share_pct": round(100 * aor_total / all_verb_total, 2),
+                "share_ci95": wilson_ci(aor_total, all_verb_total),
+                "cross_check": "this is the widest base and the one that yields the reviewer's colloquial '~1% of all verbal forms'",
+            },
+        },
         "top_aorist_lemmas": [{"lemma": l, "tokens": c} for l, c in top],
         "validation_sample": {"seed": SEED, "size": len(sample), "file": "validation_sample.tsv"},
         "limits": {
@@ -169,10 +233,19 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     lb = summary["aorist_lower_bound"]
+    rb = summary["rarity_denominator_bases"]
     print(f"finite {fin_total:,}; Past {past_total:,}", file=sys.stderr)
     print(f"aorist-marked (lower bound): {aor_total:,} ({lb['share_of_past']}% of Past); by type: {aor_by_type}", file=sys.stderr)
     print(f"perfect-ish remainder: None {unmarked:,} + peri {peri:,}", file=sys.stderr)
     print(f"top: {[(x['lemma'], x['tokens']) for x in summary['top_aorist_lemmas'][:8]]}", file=sys.stderr)
+    if aor_total_fin2026 != aor_total:
+        print(f"WARNING: aor_total_fin2026 ({aor_total_fin2026:,}) != aor_total ({aor_total:,}) "
+              "-- the two FIN conventions disagree on the numerator, investigate before publishing",
+              file=sys.stderr)
+    print(f"rarity bases: {rb['past_finite_base']['share_pct']}% of Past ({past_total:,}); "
+          f"{rb['finite_verbal_2026_base']['share_pct']}% of finite verbal forms ({fin_2026_total:,}); "
+          f"{rb['all_verbal_forms_base']['share_pct']}% of ALL verbal forms ({all_verb_total:,})",
+          file=sys.stderr)
     return 0
 
 

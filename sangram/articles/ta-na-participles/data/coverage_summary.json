@@ -31,6 +31,26 @@
     "distinct_roots": 4742,
     "non_tn_stem_remainder": 46758
   },
+  "deverbal_context": {
+    "note": "non-finite VerbForm-tagged categories in the pinned snapshot (Part/Conv/Gdv/Inf); -ta/-na ppp is a subset of Part (tense=NULL, stem-strip, see above)",
+    "verbform_counts": {
+      "Conv": 102054,
+      "Gdv": 28260,
+      "Inf": 11753,
+      "Part": 341556
+    },
+    "total_non_finite_deverbal": 483623,
+    "ta_na_ppp_share_of_all_deverbal": 45.5,
+    "next_largest_non_participle_category": [
+      "Conv",
+      102054
+    ],
+    "finite_verbal_forms": {
+      "criterion": "upos='VERB' AND feat_verbform IS NULL (dcs2026_figures.py convention; does NOT require feat_mood to be set)",
+      "count": 523738,
+      "excluded_from_deverbal_comparison": true
+    }
+  },
   "case_distribution": {
     "Nom": 125756,
     "Cpd": 33363,

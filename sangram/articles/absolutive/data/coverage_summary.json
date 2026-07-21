@@ -33,6 +33,139 @@
     "size": 50,
     "file": "validation_sample.tsv"
   },
+  "ya_tya_split_mo26": {
+    "note": "Follow-up split of the merged 'ya' bucket (57,790) into true -ya vs -tya surface endings, per reviewer note on visa card MO26 (H1346): '-ya/-tya на 97,8% - так сколько -ya и сколько -tya?'. -tya remains linguistically the -ya allomorph after a short-vowel root (Whitney §§989-995) — this is a surface-form disaggregation for transparency, not a change to the traditional rule or to ending_class() above.",
+    "tya_tokens": 10719,
+    "ya_pure_tokens": 47071,
+    "sum_matches_merged_ya_bucket": true,
+    "tya_pct_of_conv_total": 10.5,
+    "ya_pure_pct_of_conv_total": 46.1,
+    "tya_pct_of_merged_ya_bucket": 18.5,
+    "ya_pure_pct_of_merged_ya_bucket": 81.5,
+    "crosstab": {
+      "tya_simple": 93,
+      "tya_with_preverb": 10626,
+      "ya_pure_simple": 1196,
+      "ya_pure_with_preverb": 45875,
+      "tya_pct_compounded": 99.1,
+      "ya_pure_pct_compounded": 97.5
+    },
+    "examples_seed": 20260717,
+    "examples_tya_top5": [
+      {
+        "token_id": 3707693,
+        "form": "uddhṛtya",
+        "unsandhied": "uddhṛtya",
+        "lemma": "uddhṛ",
+        "preverbs": "ut",
+        "text": "Rasamañjarī",
+        "chapter_ref": "RMañj, 5",
+        "sent_counter": "42",
+        "form_freq_in_bucket": 383
+      },
+      {
+        "token_id": 1535960,
+        "form": "etya",
+        "unsandhied": "etya",
+        "lemma": "e",
+        "preverbs": "ā",
+        "text": "Kathāsaritsāgara",
+        "chapter_ref": "KSS, 2, 5",
+        "sent_counter": "30",
+        "form_freq_in_bucket": 348
+      },
+      {
+        "token_id": 1134942,
+        "form": "āgatya",
+        "unsandhied": "āgatya",
+        "lemma": "āgam",
+        "preverbs": "ā",
+        "text": "Garuḍapurāṇa",
+        "chapter_ref": "GarPur, 1, 143",
+        "sent_counter": "23",
+        "form_freq_in_bucket": 322
+      },
+      {
+        "token_id": 4342091,
+        "form": "āśritya",
+        "unsandhied": "āśritya",
+        "lemma": "āśri",
+        "preverbs": "ā",
+        "text": "Skandapurāṇa (Revākhaṇḍa)",
+        "chapter_ref": "SkPur (Rkh), Revākhaṇḍa, 10",
+        "sent_counter": "57",
+        "form_freq_in_bucket": 322
+      },
+      {
+        "token_id": 2377041,
+        "form": "sametya",
+        "unsandhied": "sametya",
+        "lemma": "same",
+        "preverbs": "samā",
+        "text": "Mahābhārata",
+        "chapter_ref": "MBh, 3, 174",
+        "sent_counter": "14",
+        "form_freq_in_bucket": 291
+      }
+    ],
+    "examples_ya_pure_top5": [
+      {
+        "token_id": 1316525,
+        "form": "ādāya",
+        "unsandhied": "ādāya",
+        "lemma": "ādā",
+        "preverbs": "ā",
+        "text": "Harivaṃśa",
+        "chapter_ref": "HV, 85",
+        "sent_counter": "66",
+        "form_freq_in_bucket": 1779
+      },
+      {
+        "token_id": 1315576,
+        "form": "prāpya",
+        "unsandhied": "prāpya",
+        "lemma": "prāp",
+        "preverbs": "pra",
+        "text": "Harivaṃśa",
+        "chapter_ref": "HV, 84",
+        "sent_counter": "34",
+        "form_freq_in_bucket": 1314
+      },
+      {
+        "token_id": 3090557,
+        "form": "āsādya",
+        "unsandhied": "āsādya",
+        "lemma": "āsāday",
+        "preverbs": "ā",
+        "text": "Mahābhārata",
+        "chapter_ref": "MBh, 13, 26",
+        "sent_counter": "8",
+        "form_freq_in_bucket": 927
+      },
+      {
+        "token_id": 3078972,
+        "form": "āsthāya",
+        "unsandhied": "āsthāya",
+        "lemma": "āsthā",
+        "preverbs": "ā",
+        "text": "Mahābhārata",
+        "chapter_ref": "MBh, 13, 14",
+        "sent_counter": "86",
+        "form_freq_in_bucket": 591
+      },
+      {
+        "token_id": 3563083,
+        "form": "praviśya",
+        "unsandhied": "praviśya",
+        "lemma": "praviś",
+        "preverbs": "pra",
+        "text": "Narmamālā",
+        "chapter_ref": "KṣNarm, 2",
+        "sent_counter": "125",
+        "form_freq_in_bucket": 574
+      }
+    ]
+  },
   "limits": {
     "indeclinable": "the absolutive has no case/number — the frame is the -tvā/-ya allomorphy, not a paradigm",
     "surface_classification": "-tvā/-ya split by m_unsandhied ending; the ~2% counter-rule residue is sandhi/lemmatization edge cases, not necessarily real exceptions",
