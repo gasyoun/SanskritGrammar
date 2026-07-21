@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_KOCHERGINA_COMPANION_2026.md
 
-_Created: 12-07-2026 · Last updated: 16-07-2026_
+_Created: 12-07-2026 · Last updated: 21-07-2026_
 
 Companion record for the Kochergina methodichka roadmap
 ([`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)).
@@ -36,6 +36,15 @@ Fable 5).
 5. **v2 widening** — comprehensive commentary over the full 234-claim register (the drained
    H797 register supersedes the 43-claim basis this plan was written against); DCS-2026
    re-run may resolve the 12 UNTESTABLE rows.
+6. ~~**Corpus layer (раздел IV)** — per-lemma DCS frequency band + one attested example
+   with a Russian rendering for every lemma the раздел-I commentary turns on.~~
+   ✅ **DONE (H1297, 21-07-2026):**
+   [`METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md)
+   (31 lemmas over 9 занятий) backed by
+   [`corpus_layer/corpus_layer.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/corpus_layer/corpus_layer.tsv)
+   and pinned by [`tests/test_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_corpus_layer.py).
+   Residual: the freshly authored Russian renderings await the MG viza, like the rest of
+   the manuscript.
 
 ## Limitations
 - The roadmap plans; it does not itself contain any commentary content (that is the
@@ -58,5 +67,6 @@ Fable 5).
 | 12-07-2026 | Opus 4.8 (`claude-opus-4-8`) | Created roadmap + metadoc; Decisions A–D locked; H807 minted for v1. |
 | 16-07-2026 | Fable 5 (`claude-fable-5`) | § 4.2: queued material for Занятие 22 (стр. 153) per MG's P3-visa card A4 — periphrastic-perfect auxiliary distribution (as 91,4 % / kṛ 7,4 % / bhū 0,8 %, 3 sg 86,6 %) from the SG-MO-017 corpus package. |
 | 16-07-2026 | Fable 5 (`claude-fable-5`) | **v1 (P0–P4) executed — H807.** Three manuscript sections authored (разделы I–III: комментарий / упражнения / отсылки); §2 pillar table refreshed to the drained 234-claim register; §5 marked v1 EXECUTED; `errata.yml` `edition` field added (seed empty); K-2 resolved (hand-authored v1); backlog items 1/3 closed, item 5 (v2 widening) added. |
+| 21-07-2026 | Fable 5 (`claude-fable-5`) | **Corpus layer (раздел IV) authored — H1297.** 31 lemmas per занятие with DCS frequency bands (kosha `lemma_frequency.tsv` rank_all: топ-100/топ-1000/редкое) + one attested DCS-2026 example each, RU renderings freshly authored (no restricted layer opened). Working TSVs under `corpus_layer/`, banding regression + locus/rights checks in `tests/test_corpus_layer.py`. Backlog item 6 added and closed. |
 
 _Dr. Mārcis Gasūns_
