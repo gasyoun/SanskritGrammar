@@ -183,6 +183,15 @@ entries:
       THE rule and -ṣya/-iṣya as mere "варианты" inverts corpus reality — see HK-4b. Ties to roadmap
       spine S2 (seṭ/aniṭ).
 
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «можно ли -ṣya/-iṣya считать инвариантами суффикса -syá?»; H1049 → Q2607-146,
+      EXPLORATORY): ЭСКАЛИРОВАНО (H1276) — корпусные данные не решают морфонологического
+      вопроса: ретрофлексия в -ṣya автоматична (правило ruki), но соединительный -i- в -iṣya
+      обусловлен лексическим классом seṭ/aniṭ, а не фонологией, и считать ли его частью
+      «инвариантного» суффикса — авторская позиция, не выводимая из частот (56,8 / 24,9 /
+      18,3 % — см. HK-4b). @DECIDE поставлен в Uprava/GTD_NEXT_ACTIONS.md; Q2607-146
+      остается открытым.
+
   - id: HK-4b
     loc: "Занятие XVIII / mdx line 4277"
     claim_ru: >-
@@ -203,6 +212,13 @@ entries:
       outcome (56.8%). The conditioning Kochergina gives is phonological (root-final sound), whereas the
       real predictor is the seṭ/aniṭ lexical class — a learner drilled on "-sya is the rule" will
       mis-predict the most common case.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «всегда верить Витни, сверить все утверждения всех грамматик с Витни»): стоячая
+      политика, а не правка записи — исполнена H1228 (18-07-2026): сквозная сверка с Уитни
+      по обоим реестрам в WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md со свидетельскими
+      вердиктами в data/whitney_concordance_witness_verdicts_2026/; повторный свип здесь не
+      проводится.
 
   - id: HK-5
     loc: "Занятие XXXVII / mdx line 9655"
@@ -242,6 +258,15 @@ entries:
       dominates by raw frequency (not merely a bhū artifact) and s-aorist is the
       most productive type by root count. Recorded as OVERSTATED — directionally
       defensible in the narrowest reading, not in the broad one actually stated.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «сверить с Талмудом, там аористы описаны исчерпывающим образом»; исполнено H1054,
+      PR #342/#349): ценз аористных классов Талмуда (TolchelnikovTalmud_2026,
+      tools/aorist_class_census.py → data/aorist_class_census.json; Приложение 1, 745 корней)
+      подтверждает вердикт с корневой стороны: по числу корней ведет is-аорист (класс V,
+      511 корней), тематический II — лишь пятый (116 корней); «самый распространенный тип»
+      не подтверждается и корневым реестром Талмуда — утверждение живет только в узком
+      классическом токен-чтении (замер H1045 выше).
 
   - id: HK-6
     loc: "Занятие XXIV / mdx line 5862"
@@ -394,6 +419,15 @@ entries:
     note: >-
       Not wrong as a rough classical-prose heuristic, but 'обычно' flattens a real diachronic and
       register split (imperfect vs perfect vs aorist share different narrative niches by period).
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      имперфект как маркер переключения нарратива в перфектной среде; проверено H1053 →
+      T2607-26, частично подтверждена, предрегистрация соблюдена; PR #338): кластеризация
+      имперфекта повсеместна (runs-test p < 0,001 во всех крупных текстах; lift IMPF→IMPF
+      1,23–2,21), но тематический шов в точке вкрапления — против ожидания: в эпосе значим и
+      микроскопичен (+0,2 п.п. на фоне ~94 %, p = 0,002), содержателен только в ведах
+      (+1,5 п.п., p < 0,001), а в классике направление ПЕРЕВЕРНУТО (p = 0,999). Отчет:
+      ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md.
 
   - id: HK-16
     loc: "Занятие XII / mdx line 2351"
@@ -669,6 +703,13 @@ entries:
     note: >-
       Stated as a flat universal where a major exception class (bahuvrīhi) is taught nearby. The rule
       needs the '(except bahuvrīhi)' rider to be true.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «весь раздел по самасам неверный, проверить все по Лейтану»; проверено H1050, PR #310):
+      формулировка «весь раздел неверный» ОПРОВЕРГНУТА для фактического слоя — таблицы и
+      примеры раздела аудит выдерживают — и подтверждена только для каркаса: 7 флагов
+      (определение композита, четыре определения типов, правило рода — в их числе настоящая
+      запись).
 
   - id: HK-35
     loc: "Занятие XXXII / mdx line 8484"

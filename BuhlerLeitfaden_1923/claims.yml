@@ -32,7 +32,7 @@
 # BU-4→HB-38, BU-5→HB-56) plus the complete 339-candidate backlog drain (HB-65..HB-403,
 # verdicted by 6 parallel agents under the drain style guide, merged with loc-alignment
 # validation and a manual spot-check of every FALSE). Fact-axis tally: 381 TRUE ·
-# 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 23 M.G. footnotes. claims_harvest.yml is now
+# 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 24 M.G. footnotes (24th: HB-10, A65 write-back H1276). claims_harvest.yml is now
 # candidates: []. All 8 FALSE are MISPRINT-CLASS (self-contradicted by an adjacent paradigm
 # or example in the same passage) — each carries an errata note; the register doubles as a
 # print-corruption sweep of the 1923/2008 text.
@@ -40,7 +40,7 @@
 work: "Bühler, Руководство к элементарному курсу санскритского языка (Leitfaden), 1923"
 
 synthesis: >-
-  FULL DRAIN (403 verified: 381 TRUE · 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 23 M.G.
+  FULL DRAIN (403 verified: 381 TRUE · 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 24 M.G.
   footnotes). The full-book picture sharpens the 64-entry core's verdict on both axes. FACT
   AXIS: Bühler's own grammar survives almost untouched — the three OVERSTATED added by the
   drain are genuine but narrow (final-vṛddhi in causatives defeated by pṝ→pūrayati, HB-2318;
@@ -149,6 +149,15 @@ entries:
       Whitney-based, Vedic-inclusive system generates both voices throughout (the Vedic middle
       root-aorists are real), so the classical P.-only narrowings live below its resolution;
       it cannot rescue or refute the Урок-I absolute.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26,
+      approve, вердикт OVERSTATED оставлен; исполнено H1049): дидактическая оговорка внесена
+      сноской [^hb2] в REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md — подача «сначала
+      цельная модель — потом исключения, когда ученик созрел» признана осознанным приемом,
+      а не небрежностью; вопрос автора «кто еще из грамматиков так строит подачу» вынесен в
+      реестр вопросов как Q2607-147 (EXPLORATORY, открыт). Смежно T2607-24 (H1051,
+      подтверждена, PR #317): залоговая картина Зализняка-1978 по морфологии безфлаговая —
+      HB-2 OVERSTATED ровно на тех карве-аутах, которые Очерк выписывает (§§ 140/146/149/159).
 
   - id: HB-3
     loc: "Урок I / mdx line 129"
@@ -280,6 +289,11 @@ entries:
     number: "Whitney gives ā ('hither from; all the way to') with the ABLATIVE only (ā samudrāt); accusative government of ā is not the classical norm"
     ref: "Whitney §1128"
     verdict_pedagogy: MISLEADING
+    mg_footnote: >-
+      Оговорка: у Уитни (§ 1128) предлог ā «до, вплоть до, начиная от» дан только с аблативом
+      (ā samudrāt); аккузативное управление, печатаемое книгой, не подтверждается ни справочной
+      грамматикой, ни списками управления Шерцля (index_Shertsl_Byuler_dopoln_180721.xlsx,
+      лист «структура», стр. 216–221) — вероятна ошибка русского издания 1923 г.
     note: >-
       The ablative half is standard; the accusative half lacks support in the reference
       grammar. Possibly an editorial slip of the Russian edition (cf. German prepositional
@@ -291,6 +305,13 @@ entries:
       (bṛhataḥ parvatād ā «with a high mountain, all the way»); ā appears in NO
       accusative-governing list anywhere in the sheet. Independent 19th-century corroboration
       of Whitney §1128: two sources, zero accusative attestation for adpositional ā.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26;
+      исполнено H1049 + H1205): сноска-оговорка про Уитни § 1128 дана в отчете (сноска
+      [^hb10] в REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md), сверка с Шерцлем
+      выполнена и записана выше. Решение H1276: оговорка добавлена и в mg_footnote — аппарат,
+      отображаемый над местом чтения, где читатель 1923 года видит само ошибочное «Acc. или
+      Abl.»; поле note остается внутренним следом вердикта.
 
   - id: HB-11
     loc: "Урок VI / mdx line 795"
@@ -1115,6 +1136,15 @@ entries:
       verbal) — two paths, same flipped direction; the imperfect totals differ only in which
       marginal imperfect codes are summed.
 
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «сверить по токенам санскритско-русского корпуса, отличают ли переводчики разные
+      прошедшие времена»; исполнено H1052 → T2607-25, подтверждена; SamudraManthanam PR #81):
+      русские переводчики НЕЙТРАЛИЗУЮТ противопоставление — и перфект, и имперфект уходят в
+      русское прошедшее совершенного вида (64,7 % и 67,7 % по 5 487 стиховым парам с
+      детектированной категорией из 41 023). Против сглаживания: χ² = 38,7 значим, но
+      V Крамера 0,084 — различие статистически значимо и содержательно ничтожно; «то же
+      значение» подтверждено практикой перевода, частотное направление книги это не спасает.
+
   - id: HB-58
     loc: "Урок XLIV / mdx line 6735"
     claim_ru: >-
@@ -1791,6 +1821,16 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       The claim is the canonical Pāṇinian doctrine with the stock yajati/yajate example, and Whitney gives the same description while noting the opposition is much effaced in actual usage. Verifying 'predominantly self-benefactive' would need semantic annotation that does not exist.
+
+      A65-ЗАМЕТКА АВТОРА (лист sanskritgrammar-a65-verdict-validation-disagreements_16.07.26:
+      «что насчет залогов пишет Зализняк 1978; проверить отдельной гипотезой на DCS»;
+      исполнено H1051 → T2607-24, подтверждена; SanskritGrammar PR #317): 29 залоговых
+      утверждений Очерка дают 23 TRUE · 1 OVERSTATED (только синтаксис, § 214) · 0 FALSE ·
+      5 UNTESTABLE — морфология безфлаговая; залоговая картина Зализняка-1978 выдерживает
+      корпусную проверку лучше бюлеровской (реестр ZalizniakOcherk_1978/claims.yml, 96
+      записей), а карве-ауты Очерка §§ 140/146/149/159 — ровно те места, на которых HB-2
+      OVERSTATED. Само HB-100 остается UNTESTABLE: семантическая разметка бенефактивности
+      по-прежнему отсутствует; заметка автора закрыта переадресацией на Очерк.
 
   - id: HB-101
     loc: "Урок VIII / mdx line 1046"

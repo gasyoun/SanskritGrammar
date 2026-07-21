@@ -8,6 +8,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- **A65 claim-level write-backs: HB-2, HB-10, HB-57, HB-100 now cite the probe that
+  answered the author's note (H1276, Fable 5 `claude-fable-5`).** The four Bühler notes on
+  the sheet `sanskritgrammar-a65-verdict-validation-disagreements_16.07.26` were discharged
+  back on 16–17-07 by the H1049 fan-out — five research handoffs and two questions-log rows,
+  not in-place edits — so the merged evidence was invisible at the point of use. Each entry
+  now names its note, its discharging probe and the verdict, with the against-expectation
+  results stated rather than smoothed: HB-57's translation check confirms neutralization but
+  at Cramér's V 0.084 (significant, negligible); HB-100 stays UNTESTABLE and redirects to
+  Zaliznyak's flag-free voice picture (T2607-24). HB-10 additionally gains an `mg_footnote` —
+  the Whitney §1128 caveat now renders over the reading site, where the reader meets the
+  erroneous "Acc. или Abl." itself, not only in the internal `note` field. M.G.-footnote
+  tally 23 → 24.
 
 ## [0.4.0] - 2026-07-20
 ### Added
