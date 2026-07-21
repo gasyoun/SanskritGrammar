@@ -1,0 +1,438 @@
+{
+  "probe": "h1274-A5-perfect-lexicon",
+  "db": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+  "n_forms_probed": 60,
+  "cross_check": {
+    "past_bucket": 102055,
+    "peri": 4046
+  },
+  "per_form": [
+    {
+      "form": "uvāca",
+      "tokens": 13880,
+      "tense_past": 13880,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "āha",
+      "tokens": 6731,
+      "tense_past": 6731,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "veda",
+      "tokens": 2359,
+      "tense_past": 2358,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "āhuḥ",
+      "tokens": 1800,
+      "tense_past": 1800,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "babhūva",
+      "tokens": 1220,
+      "tense_past": 1220,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jagāma",
+      "tokens": 1140,
+      "tense_past": 1140,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dadarśa",
+      "tokens": 1083,
+      "tense_past": 1083,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "yayau",
+      "tokens": 970,
+      "tense_past": 970,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "ūcuḥ",
+      "tokens": 889,
+      "tense_past": 889,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cakāra",
+      "tokens": 871,
+      "tense_past": 871,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cakre",
+      "tokens": 852,
+      "tense_past": 852,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dadau",
+      "tokens": 699,
+      "tense_past": 699,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "viduḥ",
+      "tokens": 646,
+      "tense_past": 646,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jajñe",
+      "tokens": 556,
+      "tense_past": 556,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jaghāna",
+      "tokens": 473,
+      "tense_past": 473,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "tasthau",
+      "tokens": 419,
+      "tense_past": 419,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "papāta",
+      "tokens": 419,
+      "tense_past": 419,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cakruḥ",
+      "tokens": 322,
+      "tense_past": 322,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "yayuḥ",
+      "tokens": 263,
+      "tense_past": 263,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "lebhe",
+      "tokens": 262,
+      "tense_past": 262,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jagmuḥ",
+      "tokens": 253,
+      "tense_past": 253,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "mumoca",
+      "tokens": 237,
+      "tense_past": 237,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "babhūvuḥ",
+      "tokens": 236,
+      "tense_past": 236,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "āsa",
+      "tokens": 233,
+      "tense_past": 233,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dadṛśuḥ",
+      "tokens": 216,
+      "tense_past": 216,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "sasarja",
+      "tokens": 177,
+      "tense_past": 177,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "śuśrāva",
+      "tokens": 167,
+      "tense_past": 167,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "babhāṣe",
+      "tokens": 150,
+      "tense_past": 150,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jahāra",
+      "tokens": 145,
+      "tense_past": 145,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "nanāda",
+      "tokens": 143,
+      "tense_past": 143,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "uvāsa",
+      "tokens": 134,
+      "tense_past": 134,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "tasthuḥ",
+      "tokens": 119,
+      "tense_past": 119,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "bibheda",
+      "tokens": 115,
+      "tense_past": 115,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "ūce",
+      "tokens": 98,
+      "tense_past": 98,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "vavarṣa",
+      "tokens": 94,
+      "tense_past": 94,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "śaśāpa",
+      "tokens": 93,
+      "tense_past": 93,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "vavande",
+      "tokens": 81,
+      "tense_past": 81,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "reme",
+      "tokens": 78,
+      "tense_past": 78,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "nināya",
+      "tokens": 75,
+      "tense_past": 75,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "daduḥ",
+      "tokens": 73,
+      "tense_past": 73,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jaghnuḥ",
+      "tokens": 68,
+      "tense_past": 68,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dadhāra",
+      "tokens": 68,
+      "tense_past": 68,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "tutoṣa",
+      "tokens": 61,
+      "tense_past": 61,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "petuḥ",
+      "tokens": 54,
+      "tense_past": 54,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jahau",
+      "tokens": 44,
+      "tense_past": 44,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cukruśuḥ",
+      "tokens": 41,
+      "tense_past": 41,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "āsuḥ",
+      "tokens": 40,
+      "tense_past": 40,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "papau",
+      "tokens": 37,
+      "tense_past": 37,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cukopa",
+      "tokens": 32,
+      "tense_past": 32,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "siṣeve",
+      "tokens": 27,
+      "tense_past": 27,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "rurodha",
+      "tokens": 26,
+      "tense_past": 26,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "śiśriye",
+      "tokens": 24,
+      "tense_past": 24,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jugopa",
+      "tokens": 18,
+      "tense_past": 18,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "śuśruvuḥ",
+      "tokens": 16,
+      "tense_past": 16,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jaghāsa",
+      "tokens": 15,
+      "tense_past": 15,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dudoha",
+      "tokens": 14,
+      "tense_past": 14,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "jahruḥ",
+      "tokens": 11,
+      "tense_past": 11,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "dadhau",
+      "tokens": 5,
+      "tense_past": 5,
+      "tense_null": 0,
+      "has_formation": 0
+    },
+    {
+      "form": "cikāya",
+      "tokens": 3,
+      "tense_past": 3,
+      "tense_null": 0,
+      "has_formation": 0
+    }
+  ],
+  "forms_found": 59,
+  "forms_absent": [
+    "ciccheda"
+  ],
+  "totals": {
+    "tokens": 39375,
+    "tagged_tense_past": 39374,
+    "carrying_any_formation": 0,
+    "formation_recall_on_known_perfects": 0.0
+  },
+  "formation_breakdown": {
+    "None": 39375
+  },
+  "reading": "Of 39375 verbal tokens of 59 known-perfect surface forms, 39374 sit in the Tense=Past bucket and only 0 carry ANY form-class tag (0.0%) — the lexicon probe from the known side confirms § 4's recall finding: the main (reduplicated) perfect formation is invisible to the annotation's form-class feature."
+}

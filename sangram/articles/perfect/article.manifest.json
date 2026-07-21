@@ -6,7 +6,9 @@
     "id": "art:perfect",
     "as_of": "2026-07-15",
     "toc_ref": "SG-MO-017",
-    "layers": ["scientific"],
+    "layers": [
+      "scientific"
+    ],
     "locales": {
       "ru": {
         "title": "Перфект: отбор по форма-классу вместо UD-времени",
@@ -19,7 +21,11 @@
         "layer": "scientific",
         "text_slp1": "tAM SarEr daSaBiH krudDas tAqayAmAsa rAkzasaH",
         "segmentation_slp1": "tAm SarEH daSaBiH krudDaH tAqayAmAsa rAkzasaH",
-        "locus": { "corpus": "dcs", "work": "Rāmāyaṇa", "ref": "Rām, Su, 42" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Rāmāyaṇa",
+          "ref": "Rām, Su, 42"
+        },
         "translations": {
           "ru": "…разгневанный ракшаса поразил её десятью стрелами."
         },
@@ -36,7 +42,11 @@
         "layer": "scientific",
         "text_slp1": "ApaH ha vE vftraM jaGnuH",
         "segmentation_slp1": "ApaH ha vE vftram jaGnuH",
-        "locus": { "corpus": "dcs", "work": "Śatapathabrāhmaṇa", "ref": "ŚBM, 3, 9, 4" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Śatapathabrāhmaṇa",
+          "ref": "ŚBM, 3, 9, 4"
+        },
         "translations": {
           "ru": "…во́ды же сразили Вритру."
         },
@@ -53,7 +63,11 @@
         "layer": "scientific",
         "text_slp1": "ajIjanat sa tAM kanyAM SatarUpAM tapo'nvitAm",
         "segmentation_slp1": "ajIjanat sa tAm kanyAm SatarUpAm tapaH anvitAm",
-        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur, 18" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Agnipurāṇa",
+          "ref": "AgniPur, 18"
+        },
         "translations": {
           "ru": "…он породил ту деву Шатарупу, исполненную подвижничества."
         },
@@ -91,6 +105,11 @@
         "date": "2026-07-17",
         "kind": "revision",
         "note_ru": "§ 6 п. 1 уточнён по визе style guide (карточка A8, лист sangram-prose-style-guide-visa_16.07.26): «сам корпус слова «перфект» не знает» → «сама схема разметки DCS (проект О. Хельвига) не знает» — точнее, чем безличное «корпус» в общем смысле."
+      },
+      {
+        "date": "2026-07-21",
+        "kind": "revision",
+        "note_ru": "H1274 (W1-C, лист sangram-sg-mo-017-perfect-visa_15.07.26, карточка A5): лексиконный зонд исполнен (probe_h1274_perfect_lexicon) — 60 заведомых перфектных форм, 59 найдено, 39 375 финитных токенов, полнота форма-класса 0 %; § 3.5 переведён из задела в результат; кросс-чеки опубликованных чисел (102 055 Past, 4 046 peri) воспроизведены; выводы § 4 подтверждены, числа не менялись."
       }
     ]
   }

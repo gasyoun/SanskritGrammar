@@ -6,7 +6,9 @@
     "id": "art:declension-overview",
     "as_of": "2026-07-16",
     "toc_ref": "SG-MO-001",
-    "layers": ["scientific"],
+    "layers": [
+      "scientific"
+    ],
     "locales": {
       "ru": {
         "title": "Склонение: категории и обзор системы",
@@ -18,58 +20,114 @@
         "id": "ex:declension-overview:1",
         "layer": "scientific",
         "text_slp1": "devo",
-        "locus": { "corpus": "dcs", "work": "Abhidhānacintāmaṇi", "ref": "AbhCint 2 (s245)" },
-        "translations": { "ru": "бог (им. ед.)" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Abhidhānacintāmaṇi",
+          "ref": "AbhCint 2 (s245)"
+        },
+        "translations": {
+          "ru": "бог (им. ед.)"
+        },
         "gloss_ru": "тематическая основа на -a (deva), Nom.Sg — самый частотный тип основы (62,9 %) и падеж (Nom 38,7 %).",
-        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -a-основы", "visibility": "internal" },
+        "evidence": {
+          "label_ru": "DCS, пинованный снапшот; иллюстрация -a-основы",
+          "visibility": "internal"
+        },
         "as_of": "2026-07-16"
       },
       {
         "id": "ex:declension-overview:2",
         "layer": "scientific",
         "text_slp1": "agninA",
-        "locus": { "corpus": "dcs", "work": "Agastīyaratnaparīkṣā", "ref": "AgRPar 1 (s42)" },
-        "translations": { "ru": "огнём (тв. ед.)" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Agastīyaratnaparīkṣā",
+          "ref": "AgRPar 1 (s42)"
+        },
+        "translations": {
+          "ru": "огнём (тв. ед.)"
+        },
         "gloss_ru": "основа на -i (agni), Ins.Sg — второй по частоте тип основы (8,9 %).",
-        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -i-основы", "visibility": "internal" },
+        "evidence": {
+          "label_ru": "DCS, пинованный снапшот; иллюстрация -i-основы",
+          "visibility": "internal"
+        },
         "as_of": "2026-07-16"
       },
       {
         "id": "ex:declension-overview:3",
         "layer": "scientific",
         "text_slp1": "pitrA",
-        "locus": { "corpus": "dcs", "work": "Avadānaśataka", "ref": "AvŚat 6 (s4)" },
-        "translations": { "ru": "отцом (тв. ед.)" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Avadānaśataka",
+          "ref": "AvŚat 6 (s4)"
+        },
+        "translations": {
+          "ru": "отцом (тв. ед.)"
+        },
         "gloss_ru": "основа на -ṛ (pitṛ, агентивно-родственная), Ins.Sg — слот SG-MO-005.",
-        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -ṛ-основы", "visibility": "internal" },
+        "evidence": {
+          "label_ru": "DCS, пинованный снапшот; иллюстрация -ṛ-основы",
+          "visibility": "internal"
+        },
         "as_of": "2026-07-16"
       },
       {
         "id": "ex:declension-overview:4",
         "layer": "scientific",
         "text_slp1": "rAjYaS",
-        "locus": { "corpus": "dcs", "work": "Agnipurāṇa", "ref": "AgniPur 6 (s3)" },
-        "translations": { "ru": "царя (род. ед.)" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Agnipurāṇa",
+          "ref": "AgniPur 6 (s3)"
+        },
+        "translations": {
+          "ru": "царя (род. ед.)"
+        },
         "gloss_ru": "согласная n-основа (rājan), Gen.Sg — слот SG-MO-006/007; сильная/слабая ступень основы.",
-        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация согласной основы", "visibility": "internal" },
+        "evidence": {
+          "label_ru": "DCS, пинованный снапшот; иллюстрация согласной основы",
+          "visibility": "internal"
+        },
         "as_of": "2026-07-16"
       },
       {
         "id": "ex:declension-overview:5",
         "layer": "scientific",
         "text_slp1": "nadIr",
-        "locus": { "corpus": "dcs", "work": "Atharvaveda (Paippalāda)", "ref": "AVP 5.30 (s6)" },
-        "translations": { "ru": "рéки (им. мн.)" },
+        "locus": {
+          "corpus": "dcs",
+          "work": "Atharvaveda (Paippalāda)",
+          "ref": "AVP 5.30 (s6)"
+        },
+        "translations": {
+          "ru": "рéки (им. мн.)"
+        },
         "gloss_ru": "основа на -ī (nadī, женский род), Nom.Pl — иллюстрирует множественное число и связь с SG-WF-005.",
-        "evidence": { "label_ru": "DCS, пинованный снапшот; иллюстрация -ī-основы", "visibility": "internal" },
+        "evidence": {
+          "label_ru": "DCS, пинованный снапшот; иллюстрация -ī-основы",
+          "visibility": "internal"
+        },
         "as_of": "2026-07-16"
       }
     ],
     "revisions": [
-      { "date": "2026-07-16", "kind": "revision",
-        "note_ru": "Виза A4: инвентарь основ § 3.2 переведён с приближения по финали леммы на реальную парадигматическую классификацию (окончание Ins.Sg, покрытие 75,1 %); реальная доля -a 52,6 % против прежних 62,9 %." },
-      { "date": "2026-07-16", "kind": "published",
-        "note_ru": "Авторская виза (MG) 8/8 approve получена — статья опубликована; плашка кандидата снята." }
+      {
+        "date": "2026-07-16",
+        "kind": "revision",
+        "note_ru": "Виза A4: инвентарь основ § 3.2 переведён с приближения по финали леммы на реальную парадигматическую классификацию (окончание Ins.Sg, покрытие 75,1 %); реальная доля -a 52,6 % против прежних 62,9 %."
+      },
+      {
+        "date": "2026-07-16",
+        "kind": "published",
+        "note_ru": "Авторская виза (MG) 8/8 approve получена — статья опубликована; плашка кандидата снята."
+      },
+      {
+        "date": "2026-07-21",
+        "kind": "revision",
+        "note_ru": "H1274 (W1-C, лист sangram-sg-mo-001-declension-overview-visa_16.07.26): A2 «Композиты»→«Сложные слова» + оговорка о местоимениях/прилагательных (§ 5 п. 2); A3 зонд редкости дательного (probe_h1274_dat_attestation) — «почти не засвидетельствован» подтверждён на уровне лемм (8,5 %) и в Dat.Du (576 токенов), отклонён для падежа в целом (235/270 текстов), § 3.1 дополнен, 2,2 % не тронуто, «ДИ» введено по-русски; A6 отвечена — адрес githubio в шапке, проверен живым; A7 § 5 п. 4 переписан по-русски; B1 § 1.1 сверка с сеткой «Языков мира» (Елизаренкова 2004); A5 → style guide § 3.7; A1 эскалирована в GTD. Числа и выводы не менялись."
+      }
     ]
   }
 }
