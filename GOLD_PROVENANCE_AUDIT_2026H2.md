@@ -1,6 +1,6 @@
 # Gold-standard provenance and LLM-contamination audit (2026 H2)
 
-_Created: 19-07-2026 · Last updated: 19-07-2026_
+_Created: 19-07-2026 · Last updated: 21-07-2026_
 
 Cross-repo audit of every dataset the Sanskrit Lexicon org trades as "gold", "adjudicated",
 or evaluation ground truth — asking, per dataset, what its annotation provenance actually is
@@ -77,7 +77,7 @@ two blind LLM passes with an LLM adjudicator is not GOLD, whatever the κ.
 | [pwg_ru judge A/B defect battery](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/research/JUDGE_AB.md) | SanskritLexicography | CONTAMINATED | CONFIRMED | Battery built by the judges' own family |
 | [A44 verified correction queue + IRR](https://github.com/drdhaval2785/SanskritSpellCheck/blob/master/corrections_draft/irr/agreement_stats.md) | SanskritSpellCheck | CONTAMINATED | CONFIRMED | Sonnet 5 + Fable 5 vs Opus 4.8 |
 | [Which-dictionary routing gold panel](https://github.com/sanskrit-lexicon/csl-guides/blob/main/src/data/which-dictionary-gold.json) | csl-guides | CONTAMINATED | CONFIRMED | Fable 5, single pass |
-| [csl-atlas human-review overlay queues](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/review/h5-anomaly-review.json) | csl-atlas | CONTAMINATED | **not run** | 93% LLM agents labelled "human review" |
+| [csl-atlas human-review overlay queues](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/src/data/review/h5-anomaly-review.json) | csl-atlas | CONTAMINATED | CONFIRMED | 93% LLM agents labelled "human review" |
 | [OBS-T correction-typology gold sample](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/validation/gold_sample.csv) | csl-observatory | CONTAMINATED | CONFIRMED | Sonnet 4.6 rule classifier, 0 humans |
 | [MW defgen frozen 500-headword sample](https://github.com/gasyoun/kosha/blob/main/data/eval/defgen/frozen_sample.tsv) | kosha | CONTAMINATED | CONFIRMED | DeepSeek judges its own output |
 | [IndologyScholars thematic classification + IRR](https://github.com/gasyoun/IndologyScholars/blob/main/analytics_output/interrater_sample_blind.csv) | IndologyScholars | CONTAMINATED | CONFIRMED | DeepSeek, second pass same model |
@@ -153,12 +153,22 @@ datasets applies to it: a model assessing whether model annotation is trustworth
 independent instrument. The human vote on the repair actions is the real gate, and nothing
 here should be treated as adjudicated until that vote happens.
 
-**One acceptance criterion is not met.** H1272 requires that no CONTAMINATED verdict ship
-without a refutation pass. The csl-atlas overlay-queue verdict did not get one — the run was
-cut short by a session limit. Its evidence is strong and self-consistent (the reviewer field
-values are directly readable in the committed JSON), but it has not been adversarially
-challenged, and it is marked accordingly in the census table above. Running that one
-refutation is the first task of any session resuming this work.
+**The acceptance criterion is now met (closed 21-07-2026).** H1272 requires that no
+CONTAMINATED verdict ship without a refutation pass. The csl-atlas overlay-queue verdict
+initially shipped without one (the 19-07 run was cut short by a session limit); the missing
+refutation ran 21-07-2026 (Fable 5, `claude-fable-5`) and returned **CONFIRMED**: an
+independent recount of all 14 review-queue files on `origin/main` reproduced the reviewer
+distribution exactly (130 `codex` / 7 `Antigravity` / 10 `gasyoun`, `reviewed-corrected` = 0
+everywhere); "codex"/"Antigravity" are agent identities, not human aliases (the human
+reviewer has his own token, `gasyoun`, in the same schema); no subsequent human gate over
+the agent verdicts exists anywhere in the repo — an archived session journal even treats the
+codex verdicts *as* the human review, which is the contamination, not a refutation;
+[`build-benchmark-report.mjs`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/scripts/build-benchmark-report.mjs)
+counts gold by `reviewStatus` alone and never reads the reviewer field (`annotatorType`
+appears nowhere in the repo); and nothing in the review layer changed after 19-07. One
+wording refinement: the codex notes are boilerplate keyed to sampleClass × reviewed value —
+codex did differentiate rows — but that remains LLM adjudication with zero documented human
+verification. All ten CONTAMINATED verdicts have now survived adversarial refutation.
 
 **The census is exhaustive by construction, not by proof.** It was built from a term sweep
 plus the consumer-side hub read plus per-repo document sweeps. Any gold dataset found later
@@ -199,6 +209,8 @@ proposed change routes through a review sheet and a human vote.
 
 Census, per-dataset verdicts and adversarial refutations: Fable 5 (`claude-fable-5`) subagents
 under a workflow harness, 18–19-07-2026. Report synthesis: Opus 4.8 (`claude-opus-4-8`).
+The final csl-atlas refutation (closing the 10/10 acceptance criterion) and this revision:
+Fable 5 (`claude-fable-5`), 21-07-2026.
 Raw per-dataset verdict records, including full evidence lists, are committed alongside this
 report as [GOLD_PROVENANCE_AUDIT_2026H2_verdicts.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GOLD_PROVENANCE_AUDIT_2026H2_verdicts.json).
 Gold files' git status was verified unchanged against a pre-audit baseline snapshot.
