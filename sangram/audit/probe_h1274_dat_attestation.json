@@ -1,0 +1,97 @@
+{
+  "probe": "h1274-A3-dat-attestation",
+  "db": "C:\\Users\\user\\Documents\\GitHub\\VisualDCS\\src\\DCS-data-2026\\dcs_full.sqlite",
+  "universe_where": "t.upos='NOUN' AND t.feat_case IS NOT NULL AND t.feat_case!='Cpd'",
+  "denominator_inflected_noun_tokens": 1790270,
+  "dat_tokens": 39190,
+  "dat_share": 0.0219,
+  "dat_by_number": {
+    "Dual": 576,
+    "Plur": 4732,
+    "Sing": 33882
+  },
+  "dat_dual_share_of_universe": 0.00032,
+  "texts_with_noun_universe": 270,
+  "texts_with_dat": 235,
+  "lemmas_in_universe": 57144,
+  "lemmas_with_dat": 4881,
+  "lemma_dat_attestation_share": 0.0854,
+  "lemmas_with_case_by_case": {
+    "Abl": {
+      "lemmas": 7140,
+      "share_of_universe_lemmas": 0.1249
+    },
+    "Acc": {
+      "lemmas": 20632,
+      "share_of_universe_lemmas": 0.3611
+    },
+    "Dat": {
+      "lemmas": 4881,
+      "share_of_universe_lemmas": 0.0854
+    },
+    "Gen": {
+      "lemmas": 10411,
+      "share_of_universe_lemmas": 0.1822
+    },
+    "Ins": {
+      "lemmas": 11990,
+      "share_of_universe_lemmas": 0.2098
+    },
+    "Loc": {
+      "lemmas": 12506,
+      "share_of_universe_lemmas": 0.2189
+    },
+    "Nom": {
+      "lemmas": 44689,
+      "share_of_universe_lemmas": 0.782
+    },
+    "Voc": {
+      "lemmas": 3258,
+      "share_of_universe_lemmas": 0.057
+    }
+  },
+  "top_dat_lemmas": [
+    {
+      "lemma": "agni",
+      "tokens": 1221
+    },
+    {
+      "lemma": "deva",
+      "tokens": 1065
+    },
+    {
+      "lemma": "indra",
+      "tokens": 997
+    },
+    {
+      "lemma": "pitṛ",
+      "tokens": 445
+    },
+    {
+      "lemma": "brāhmaṇa",
+      "tokens": 388
+    },
+    {
+      "lemma": "artha",
+      "tokens": 359
+    },
+    {
+      "lemma": "tva",
+      "tokens": 344
+    },
+    {
+      "lemma": "rudra",
+      "tokens": 331
+    },
+    {
+      "lemma": "brahman",
+      "tokens": 331
+    },
+    {
+      "lemma": "pati",
+      "tokens": 298
+    }
+  ],
+  "top10_share_of_dat": 0.1475,
+  "verdict": "NOT SUPPORTABLE for the case as a whole: Dat has 39190 tokens, occurs in 235/270 texts and in 4881 of 57144 noun lemmas (8.5%); 'почти не засвидетельствован' fits only the dual cell (576 tokens, 0.032% of the universe)."
+}

@@ -1,6 +1,6 @@
 # Metadoc — SANGRAM_STYLE_GUIDE_PROSE_RU.mdx
 
-_Created: 16-07-2026 · Last updated: 16-07-2026_
+_Created: 16-07-2026 · Last updated: 21-07-2026_
 
 **Purpose.** Editorial prose style guide for Sangram corpus-grammar articles: makes them readable by humans (rusgram.ru as the etalon), not only by agents. Complements contract C4 ([SANGRAM_EDITORIAL_I18N_CONTRACT.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)): C4 owns structure (manifests, IDs, locales, revisions), the guide owns prose style. On conflict, structure follows C4.
 
@@ -11,8 +11,10 @@ _Created: 16-07-2026 · Last updated: 16-07-2026_
 **Improvement backlog (ranked).**
 1. **Kochergina methodichka prose pass** — [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md) (+ its `.meta.md`) is the second named consumer of this guide, MG-requested 16-07-2026, next in line after the P3 § 6 demo; out of H1003's scope by its own guardrail (demo scoped to P3 § 6 only). Mint a fresh handoff when picked up.
 2. ~~Prose passes over the four remaining published pilots (a-stems, thematic-present, tatpurusha, krt-suffixes) — guide § 6 rows 3-6~~ — **DONE 16-07-2026** ([H1014](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1014-Fable_SanskritGrammar_sangram-prose-retro-pass-p1-p2-p4-p5_16.07.26.md)): all four passed, append-only `revision` in each manifest, numbers untouched.
-3. Fold MG's visa verdicts/notes on the guide back into the rules once the review-sheet is voted (same cycle as the P1-P5 article visas).
-4. Consider a mechanical linter for the § 4 bird-language diagnostics (bare percents, hashes in analytic prose) — the rules have now survived 5 applications (P3 + the H1014 four), so this is no longer premature.
+3. ~~Fold MG's visa verdicts/notes on the guide back into the rules once the review-sheet is voted~~ — **DONE in two waves**: 17-07-2026 (visa 10/10 applied, backlog rows 8–9 opened) and 21-07-2026 ([H1274](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1274-Fable_SanskritGrammar_sangram-apply-notes-articles-remainder_18.07.26.md), Fable 5 `claude-fable-5`): A1 → standing RWS-council rule + checklist item 9; B1 → § 1.1 lifecycle (Chicago Manual model); A2 first half → four git-history anti-examples in § 4; plus the two cross-sheet policy rules — § 3.7 min-five-examples and § 4 sign 7 (no invented jargon).
+4. Consider a mechanical linter for the § 4 bird-language diagnostics (bare percents, hashes in analytic prose) — the rules have now survived 5 applications (P3 + the H1014 four), so this is no longer premature. Sign 7 (invented terms) needs a curated allowlist to lint.
+5. Live rusgram.ru reading session (guide § 6 row 8, second half of visa card A2): ≥2 articles per author + per-author stylistics; site reachable over plain `http://` only.
+6. Examples sweep per guide § 3.7 (row 10): declension-overview, perfect, taddhita-overview owe the five-example rule; expansion inside existing manifests only (H1260 freeze).
 
 **Limitations.** The etalon sample is two articles (the guardrail caps at 2-3) — conventions like the «Статистика»-section placement vary across rusgram authors and are generalized cautiously. Parenthesis-density and sentence-length observations are eyeball measurements over stripped text, not a parsed corpus study. As of 16-07-2026 the guide has been applied to all five published pilots (P3 demo + full article, then P1/P2/P4/P5 via H1014) — but not yet to a non-Sangram consumer (Kochergina methodichka, backlog row 1).
 
@@ -21,5 +23,6 @@ _Created: 16-07-2026 · Last updated: 16-07-2026_
 |---|---|
 | 16-07-2026 | Created — etalon study, 6 rules, bird-language ban, checklist, consumer backlog; P3 § 6 demo in the same PR (H1003). |
 | 16-07-2026 | Backlog § 6 rows 3-6 done: retro prose pass over P1/P2/P4/P5 shipped ([H1014](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1014-Fable_SanskritGrammar_sangram-prose-retro-pass-p1-p2-p4-p5_16.07.26.md), Fable 5 `claude-fable-5`); guide § 6 statuses flipped, linter idea (backlog 4) unblocked. |
+| 21-07-2026 | W1-C note application ([H1274](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1274-Fable_SanskritGrammar_sangram-apply-notes-articles-remainder_18.07.26.md), Fable 5 `claude-fable-5`): § 1 RWS-council standing rule (A1); § 1.1 guide lifecycle per Chicago Manual (B1 + perfect#B1); § 3.7 min-five-examples policy (declension#A5, taddhita#WF004-09 + family); § 4 sign 7 no-invented-jargon (five-sheet family) + four git-history anti-examples (A2 first half); checklist items 8–9; backlog rows 8 (half-done), 9 (done), 10 (new — examples sweep queue). |
 
 _Dr. Mārcis Gasūns_
