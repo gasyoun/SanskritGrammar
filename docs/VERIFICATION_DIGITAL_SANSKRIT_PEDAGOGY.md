@@ -1,6 +1,6 @@
 # Verification — Digital Sanskrit Pedagogy
 
-_Created: 14-07-2026 · Last updated: 19-07-2026_
+_Created: 14-07-2026 · Last updated: 21-07-2026_
 
 Acceptance criteria per wave-1 deliverable, the exact check that proves each, and the risks/spikes
 register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
@@ -33,6 +33,27 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
   Site page [`sangram/articles/attested-drills`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/attested-drills/index.mdx)
   builds. Incidental finding: the `mismatch` flag doubles as a DCS annotation-error
   detector (`artha` Voc.Sing attests *arthaiḥ*, an instrumental plural, n=6).
+
+- **W2-add-b ✅ 21-07-2026** (Fable 5 `claude-fable-5`, [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)).
+  [`tests/test_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_corpus_layer.py)
+  green (5 tests): the 20-lemma banding regression (fixture pinned + live cross-check
+  against kosha `lemma_frequency.tsv`), band-boundary pins (100/101, 1000/1001), a
+  DCS-locus check on every published example, the rights gate (every rendering
+  `authored`/`public-glossary`; a `restricted` row must ship Sanskrit-only with the
+  marker — zero such rows in this edition, and no restricted layer was opened at all),
+  and a manuscript↔TSV drift guard (band + rank + locus per lemma). Corpus layer:
+  **31 lemmas / 9 занятий** for Kochergina
+  ([`METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md)),
+  **34 lemmas / 7 разделов** for Apte
+  ([`METODICHKA_APTE_CORPUS_LAYER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_CORPUS_LAYER_2026.md));
+  bands from kosha `lemma_frequency.tsv` `rank_all`, examples from the DCS-2026 import
+  (`dcs_full.sqlite`, source commit `04e0778`), lesson-matched forms via DCS features
+  (`tense=Fut` for Занятие XVIII futures, `formation=root` for Занятие XXXVII root
+  aorists, `formation=peri` for the periphrastic perfect). Both metadocs ticked.
+  Incidental finding: the DCS lemma string `hā` conflates the verb «покидать» with the
+  interjection «увы» (the generic query returned only verb forms; the interjection is
+  tagged `upos=ADV`), and kosha frequency rows inherit the conflation — banded rows for
+  `hā`/`vara` carry an upper-bound footnote in the Apte manuscript.
 
 - **W2-add-c ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)).
   [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py)

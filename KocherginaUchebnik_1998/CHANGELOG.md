@@ -8,6 +8,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Корпусный слой методички (раздел IV) — H1297 (Fable 5 `claude-fable-5`).**
+  [`METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md):
+  31 лемма по 9 занятиям раздела I, каждая с частотной полосой
+  (топ-100/топ-1000/редкое по `rank_all` таблицы kosha `lemma_frequency.tsv`,
+  DCS-производной) и одним живым примером из DCS-2026 с локусом; будущее — реальными
+  формами -iṣya/-kṣya, корневой аорист — формами asthāt/adāt/dhīmahi/akramuḥ,
+  перифрастический перфект — °ayām āsa. Русские переводы примеров авторские
+  (закрытые слои выравнивания не открывались), ждут визы. Данные:
+  [`corpus_layer/`](https://github.com/gasyoun/SanskritGrammar/tree/main/KocherginaUchebnik_1998/corpus_layer)
+  (curated inventory + generated candidates + итоговый `corpus_layer.tsv`); сборка —
+  [`scripts/build_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py);
+  регресс полос на 20 леммах + проверка локусов/прав —
+  [`tests/test_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_corpus_layer.py).
 ### Changed
 - **A65 claim-level write-backs: HK-4a, HK-4b, HK-5, HK-15, HK-34 (H1276, Fable 5
   `claude-fable-5`).** Same write-back gap as the Bühler register: the notes were discharged

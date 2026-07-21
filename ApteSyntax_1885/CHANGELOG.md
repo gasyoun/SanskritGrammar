@@ -8,6 +8,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Корпусный слой методички (раздел II) — H1297 (Fable 5 `claude-fable-5`).**
+  [`METODICHKA_APTE_CORPUS_LAYER_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_CORPUS_LAYER_2026.md):
+  34 леммы по 7 разделам комментария, каждая с частотной полосой
+  (топ-100/топ-1000/редкое по `rank_all` таблицы kosha `lemma_frequency.tsv`) и одним
+  живым примером из DCS-2026 с локусом; примеры подобраны так, чтобы показывать
+  вердикты раздела I об управлении в живом тексте (вин. при druh/asūy/smṛ, род. при
+  īś/prabhū/īrṣy, местн. при kṣip/snih, дат. при ruc, пара kim… uta). Оговорка об
+  омонимном слиянии полос (hā, vara) — сноской. Русские переводы примеров авторские
+  (закрытые слои не открывались), ждут визы. Данные:
+  [`corpus_layer/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885/corpus_layer);
+  сборка — [`scripts/build_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py);
+  регресс — [`tests/test_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_corpus_layer.py).
 
 ## [0.14.0] - 2026-07-20
 ### Changed
