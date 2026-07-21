@@ -61,6 +61,21 @@ def ending_class(m):
     return "other"
 
 
+def fine_ending_class(m):
+    """MO26 reviewer follow-up (visa card MO26, H1346): "-ya/-tya на 97,8% -
+    так сколько -ya и сколько -tya?". ending_class() above deliberately merges
+    -tya into "ya" (it IS the -ya allomorph after a short-vowel root — Whitney
+    §§989-995 — and that merge stays correct for the main distribution). This
+    splits the same merged bucket by literal surface ending for a transparency
+    breakdown the reviewer asked for; the two counts sum back to the "ya"
+    total from ending_class() by construction."""
+    if m.endswith("tya"):
+        return "tya"
+    if m.endswith("ya"):
+        return "ya_pure"
+    return None
+
+
 def has_preverb(pv):
     return bool(pv and pv.strip())
 
@@ -92,12 +107,24 @@ def main():
     ending = Counter()
     crosstab = Counter()  # (ending_class, has_preverb)
     ids_by_class = {}
+    fine_ending = Counter()
+    fine_crosstab = Counter()  # (fine_ending_class, has_preverb)
+    fine_form_counts = {"tya": Counter(), "ya_pure": Counter()}  # (lemma, preverbs, m_unsandhied) -> n
+    fine_ids_by_form = {}
     for tid, m, lemma, pv in rows:
         ec = ending_class(m)
         ending[ec] += 1
         if ec in ("tvā", "ya"):
             crosstab[(ec, has_preverb(pv))] += 1
         ids_by_class.setdefault(ec, []).append(tid)
+
+        fc = fine_ending_class(m)
+        if fc is not None:
+            fine_ending[fc] += 1
+            fine_crosstab[(fc, has_preverb(pv))] += 1
+            fkey = (lemma, pv or "", m)
+            fine_form_counts[fc][fkey] += 1
+            fine_ids_by_form.setdefault((fc, lemma, pv or "", m), []).append(tid)
 
     tva_simple = crosstab[("tvā", False)]
     tva_pref = crosstab[("tvā", True)]
@@ -118,6 +145,35 @@ def main():
             "JOIN sentence s ON s.id=t.sentence_id JOIN chapter c ON c.chapter_id=s.chapter_id "
             "JOIN text x ON x.text_id=c.text_id WHERE t.id=?", (tid,)).fetchone()
         sample.append(d)
+
+    # MO26 reviewer follow-up (H1346): 5 frequent, distinct examples for each of
+    # -tya and -ya (pure), picked by frequency rank rather than "first N" DB
+    # order — a dedicated seeded RNG (same SEED constant as the article's
+    # validation sample) chooses which attestation of each top-5 form to cite,
+    # kept separate from the `rng` above so the pre-existing validation_sample
+    # stays bit-identical.
+    freq_rng = random.Random(SEED)
+    fine_examples = {}
+    for fc in ("tya", "ya_pure"):
+        top5_keys = [k for k, _ in fine_form_counts[fc].most_common(5)]
+        ex_list = []
+        for key in top5_keys:
+            lemma_k, pv_k, m_k = key
+            ids = sorted(fine_ids_by_form[(fc, lemma_k, pv_k, m_k)])
+            chosen_tid = freq_rng.choice(ids)
+            d2 = cur.execute(
+                "SELECT t.id, t.form, t.m_unsandhied, t.lemma, l.preverbs, "
+                "x.name, c.ref, s.sent_counter FROM token t "
+                "JOIN lemma l ON l.lemma_id=t.lemma_id "
+                "JOIN sentence s ON s.id=t.sentence_id JOIN chapter c ON c.chapter_id=s.chapter_id "
+                "JOIN text x ON x.text_id=c.text_id WHERE t.id=?", (chosen_tid,)).fetchone()
+            ex_list.append({
+                "token_id": d2[0], "form": d2[1], "unsandhied": d2[2], "lemma": d2[3],
+                "preverbs": d2[4], "text": d2[5], "chapter_ref": d2[6], "sent_counter": d2[7],
+                "form_freq_in_bucket": fine_form_counts[fc][key],
+            })
+        fine_examples[fc] = ex_list
+
     con.close()
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -148,6 +204,34 @@ def main():
             "ya_pct_compounded": round(100 * ya_pref / (ya_simple + ya_pref), 1),
         },
         "validation_sample": {"seed": SEED, "size": len(sample), "file": "validation_sample.tsv"},
+        "ya_tya_split_mo26": {
+            "note": "Follow-up split of the merged 'ya' bucket (57,790) into true -ya vs "
+                    "-tya surface endings, per reviewer note on visa card MO26 (H1346): "
+                    "'-ya/-tya на 97,8% - так сколько -ya и сколько -tya?'. -tya remains "
+                    "linguistically the -ya allomorph after a short-vowel root (Whitney "
+                    "§§989-995) — this is a surface-form disaggregation for transparency, "
+                    "not a change to the traditional rule or to ending_class() above.",
+            "tya_tokens": fine_ending["tya"],
+            "ya_pure_tokens": fine_ending["ya_pure"],
+            "sum_matches_merged_ya_bucket": fine_ending["tya"] + fine_ending["ya_pure"] == ending["ya"],
+            "tya_pct_of_conv_total": round(100 * fine_ending["tya"] / total, 1),
+            "ya_pure_pct_of_conv_total": round(100 * fine_ending["ya_pure"] / total, 1),
+            "tya_pct_of_merged_ya_bucket": round(100 * fine_ending["tya"] / ending["ya"], 1),
+            "ya_pure_pct_of_merged_ya_bucket": round(100 * fine_ending["ya_pure"] / ending["ya"], 1),
+            "crosstab": {
+                "tya_simple": fine_crosstab[("tya", False)],
+                "tya_with_preverb": fine_crosstab[("tya", True)],
+                "ya_pure_simple": fine_crosstab[("ya_pure", False)],
+                "ya_pure_with_preverb": fine_crosstab[("ya_pure", True)],
+                "tya_pct_compounded": round(100 * fine_crosstab[("tya", True)] /
+                                             (fine_crosstab[("tya", True)] + fine_crosstab[("tya", False)]), 1),
+                "ya_pure_pct_compounded": round(100 * fine_crosstab[("ya_pure", True)] /
+                                                 (fine_crosstab[("ya_pure", True)] + fine_crosstab[("ya_pure", False)]), 1),
+            },
+            "examples_seed": SEED,
+            "examples_tya_top5": fine_examples["tya"],
+            "examples_ya_pure_top5": fine_examples["ya_pure"],
+        },
         "limits": {
             "indeclinable": "the absolutive has no case/number — the frame is the -tvā/-ya allomorphy, not a paradigm",
             "surface_classification": "-tvā/-ya split by m_unsandhied ending; the ~2% counter-rule residue is sandhi/lemmatization edge cases, not necessarily real exceptions",
@@ -162,6 +246,10 @@ def main():
     print(f"Conv tokens: {total:,}; endings: {dict(ending.most_common())}", file=sys.stderr)
     print(f"RULE: -tvā {rt['tva_pct_simple']}% simple ({tva_simple}/{tva_simple+tva_pref}); "
           f"-ya/-tya {rt['ya_pct_compounded']}% compounded ({ya_pref}/{ya_simple+ya_pref})", file=sys.stderr)
+    yt = summary["ya_tya_split_mo26"]
+    print(f"MO26 split: -tya {yt['tya_tokens']:,} ({yt['tya_pct_of_conv_total']}%); "
+          f"-ya (pure) {yt['ya_pure_tokens']:,} ({yt['ya_pure_pct_of_conv_total']}%); "
+          f"sum_matches_merged={yt['sum_matches_merged_ya_bucket']}", file=sys.stderr)
     return 0
 
 

@@ -7,7 +7,7 @@
     "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
     "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
     "imported_at": "2026-06-06T16:22:57+00:00",
-    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "sha256": "skipped",
     "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
   },
   "denominators": {
@@ -136,6 +136,71 @@
       "tokens": 312
     }
   ],
+  "era_breakdown": {
+    "available": true,
+    "join_method": "token->sentence->chapter; chapter.chapter_id == dcs-conllu lookup/chapter-info.xml <chapterId> (verified 15789/15790 DB chapters match by chapter_id+text_id, 1 orphan, 21-07-2026)",
+    "chapter_info_source": "gasyoun/dcs-conllu lookup/chapter-info.xml",
+    "slot_era_source": "VisualDCS derived-data/Fonetika/varga-series-diachrony/slot_era_map.csv",
+    "unmatched_finite_tokens": 54,
+    "unmatched_passive_tokens": 7,
+    "by_slot": {
+      "1": {
+        "era_ru": "Ведийская",
+        "approx_date": "~1500–500 BCE",
+        "finite_total": 183811,
+        "finite_passive": 5036,
+        "share": 0.0274,
+        "share_ci95": [
+          0.0267,
+          0.0282
+        ]
+      },
+      "2": {
+        "era_ru": "Эпос и ранние шāстры",
+        "approx_date": "~400 BCE–200 CE",
+        "finite_total": 148692,
+        "finite_passive": 8797,
+        "share": 0.0592,
+        "share_ci95": [
+          0.058,
+          0.0604
+        ]
+      },
+      "3": {
+        "era_ru": "Ранняя классика",
+        "approx_date": "~200–600 CE",
+        "finite_total": 87785,
+        "finite_passive": 8119,
+        "share": 0.0925,
+        "share_ci95": [
+          0.0906,
+          0.0944
+        ]
+      },
+      "4": {
+        "era_ru": "Поздняя классика",
+        "approx_date": "~600–1000 CE",
+        "finite_total": 73852,
+        "finite_passive": 5676,
+        "share": 0.0769,
+        "share_ci95": [
+          0.075,
+          0.0788
+        ]
+      },
+      "5": {
+        "era_ru": "Средневековье",
+        "approx_date": "~1000–1700 CE",
+        "finite_total": 29496,
+        "finite_passive": 2059,
+        "share": 0.0698,
+        "share_ci95": [
+          0.067,
+          0.0728
+        ]
+      }
+    }
+  },
   "validation_sample": {
     "seed": 20260717,
     "size": 50,
