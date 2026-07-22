@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
+## [0.109.0] - 2026-07-22
+
+### Changed
+- **H1257 — sangram-w2-core-11candidates-visa_17.07.26 sheet closed out; residual MO28 card resolved (Sonnet 5 `claude-sonnet-5`).** The 12/12-approve visa's publication (H1316) and 9 substantive notes (H1346) were already done; this handoff resolved the one card `EDITORIAL_NOTE_INDEX.tsv` still showed `OPEN` — **MO28** («слита с первичным curādi — кто из грамматик сливает, кто держит раздельно, как Кнауэр?»), which the causative article's own dedicated visa (`MO028-05/07/08/09`) never actually addressed despite H1346's summary claiming otherwise. New § 4 paragraph in [causative/index.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx) compares three grammars against primary text: Whitney (§607/§1041b) formally merges the exposition and explicitly quantifies ≈1/3 non-causative -áya-stems in the RV; Kochergina keeps curādi (Занятие XV) and causative (Занятие XXXV) structurally and silently separate, no homonymy caveat; TolchelnikovTalmud_2026's `CAUS.` allomorph-selection formalism doesn't address the traditional ten-class scheme at all. The specific Knauer caveat the visa recalls could not be located in the org archive — only [KnauerFrazy_1908](https://github.com/gasyoun/SanskritGrammar/tree/main/KnauerFrazy_1908) (an exercise companion citing paragraph numbers into Knauer's fuller, undigitized grammar) is on disk — parked as source-not-found rather than fabricated, per the WF06/Leitan precedent. Full closure record: [`review/decisions_applied_2026-07-22_sangram-w2-core-11candidates.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/decisions_applied_2026-07-22_sangram-w2-core-11candidates.md). `pytest` 128/128, `article_validate.py --all` 19/19, `consolidation_ledger_refresh.py --check` green.
+
 ## [0.108.0] - 2026-07-21
 
 ### Changed
