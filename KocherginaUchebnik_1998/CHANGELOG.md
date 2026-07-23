@@ -9,6 +9,37 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 ### Changed
+- **Девять открытых пунктов визы H1258 разобраны — H1454 (Fable 5 `claude-fable-5`),
+  23-07-2026.** Пять закрыто разбором и свернуто в
+  [`METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md)
+  / [`_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md):
+  занятие VI — знаменатель ударения подсчитан (84,6 % из 125 572 токенов
+  акцентуированной Ригведы [rvlinks](https://github.com/sanskrit-lexicon/rvlinks)
+  несут письменный знак; скрипт
+  [hk10_rv_accent_tokens.py](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk10_rv_accent_tokens.py));
+  занятие XII — три частотных среза производного женского типа nadī́/vadhū́ по DCS-2026
+  (motion-феминативы 47,7 % · первичные 24,8 % · суффиксальные 9,8 %; односложные
+  корневые 15,2 % отсечены как отдельная парадигма; скрипт
+  [hk16_nadi_vadhu_layers.py](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk16_nadi_vadhu_layers.py)
+  + summary CSV); занятие XVIII — «Талмуд» Толчельникова подтверждает
+  лексикализованность рефлекса j/h → k/ṣ перед -sya (закрытые списки корней в правилах
+  19/27/29, аллос sṛøj в корневом реестре, диахронии нет); занятие XXII — разбивка
+  4 046 перифрастических перфектов по типу основы (каузативы 63,9 % + пограничная
+  полоса 9,0 %, X класс 18,6 %, деноминативы 4,3 %, первичные корни 4,1 %,
+  дезидеративы 0,1 %, интенсивы 0; скрипт
+  [peri_perfect_formation.py](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/peri_perfect_formation.py)
+  + 2 CSV); занятие XXXIX — библиография работ Кочергиной о префиксации установлена и
+  процитирована в разделе III (докторская «Монофункциональные способы санскритского
+  словообразования (префиксация и основосложение)», МГУ, 1983; монография
+  «Словообразование санскрита», М.: Изд-во МГУ, 1990, 206 с., ISBN 5-211-00869-3 —
+  [каталог РГБ](https://search.rsl.ru/ru/record/01001570590)). Занятие X (REJECT) —
+  кандидатные переписи обеих заметок вынесены на отдельную визу:
+  [sanskritgrammar-metodichka-zan10-rewrite-visa_23.07.26_review.html](https://github.com/gasyoun/SanskritGrammar/blob/main/review/sanskritgrammar-metodichka-zan10-rewrite-visa_23.07.26_review.html)
+  (spec в `review/specs/`; в рукописи до визы остается v1 с флагом REJECT). Приложение
+  «Открытые вопросы визы (H1258)» сокращено до четырех реально открытых, все
+  автор-гейтед: скан 1998 г. для переписи опечаток (пагинированного источника в
+  орг-репозиториях нет — проверено), виза занятия X, точная ссылка критики Лейтана,
+  страницы Конспекта-2004 + идентичность «Миллера».
 - **Виза автора применена к v1 методички — H1258 (Sonnet 5 `claude-sonnet-5`), 12 approve /
   1 reject / 0 defer из 13.** `METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`,
   `_OTSYLKI_2026.md`, `_UPRAZHNENIIA_2026.md`: свернуты 12 одобренных заметок визы (рамка

@@ -1,0 +1,22 @@
+layer,distinct_lemmas,tokens,pct_of_ii_uu_fem_tokens,top5_examples
+A_suffixal,416,8739,9.8,sarasvatī (1009); bṛhatī (499); jagatī (452); dhātrī (379); vāhinī (319)
+B_motion,1821,42343,47.7,devī (3940); tanū (1146); gāyatrī (1093); mahī (1090); nārī (1028)
+C_primary,2136,22073,24.8,pṛthivī (4028); patnī (1829); nadī (1626); lakṣmī (694); dyāvāpṛthivī (555)
+AMBIG,485,2156,2.4,pārvatī (266); padmāvatī (79); mandākinī (79); haimavatī (74); anīkinī (63)
+R_root,29,13521,15.2,śrī (4422); strī (4304); bhū (2826); dhī (1082); bhrū (386)
+
+layer/subtype,distinct_lemmas,tokens,pct,top5_examples
+B_motion/a_stem_motion,1787,40219,45.3,devī (3940); gāyatrī (1093); mahī (1090); nārī (1028); purī (695)
+C_primary/no_derivation_found,2134,19753,22.2,pṛthivī (4028); patnī (1829); dyāvāpṛthivī (555); vadhū (533); nāḍī (466)
+R_root/monosyllabic_root_noun,29,13521,15.2,śrī (4422); strī (4304); bhū (2826); dhī (1082); bhrū (386)
+A_suffixal/ini,198,3281,3.7,vāhinī (319); medinī (315); bhaginī (261); bhāminī (220); kāminī (153)
+A_suffixal/vati_mati,126,2455,2.8,sarasvatī (1009); satyavatī (171); revatī (135); dvāravatī (99); jyotiṣmatī (91)
+C_primary/curated_override,2,2320,2.6,nadī (1626); lakṣmī (694)
+B_motion/uu_from_u_stem,26,1851,2.1,tanū (1146); kaṇḍū (399); subhrū (72); kuhū (69); sarayū (56)
+A_suffixal/anti_ati_participial,13,1278,1.4,bṛhatī (499); jagatī (452); satī (229); pṛṣatī (28); mahatī (22)
+AMBIG/ini_shape_base_unattested,277,1018,1.1,mandākinī (79); anīkinī (63); ujjayinī (62); nīlinī (50); yāminī (46)
+A_suffixal/ani,57,923,1.0,vāṇī (194); indrāṇī (104); bhavānī (88); maheśānī (75); yavānī (57)
+AMBIG/vati_mati_shape_base_unattested,119,879,1.0,pārvatī (266); padmāvatī (79); haimavatī (74); amarāvatī (53); jāmbavatī (43)
+A_suffixal/tri,22,802,0.9,dhātrī (379); pātrī (134); astrī (110); janitrī (65); netrī (35)
+B_motion/u_stem_motion,8,273,0.3,pṛthvī (188); sādhvī (59); kaṭvī (14); gurvī (7); laghvī (2)
+AMBIG/tri_shape_base_unattested,89,259,0.3,dharitrī (52); bhūdhātrī (20); kulastrī (16); śailaputrī (16); bhūtadhātrī (7)
