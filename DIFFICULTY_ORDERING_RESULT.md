@@ -1,6 +1,6 @@
 # Difficulty & ordering: does corpus frequency predict Sanskrit learning order?
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 22-07-2026_
 
 The first measured result of [RQ1](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
 of the digital-Sanskrit-pedagogy field (wave-1a, handoff
@@ -97,10 +97,43 @@ mutual agreement (τ up to 0.83) on a *non-frequency* order says the grammar-top
 scaffold. This directly shapes the field's **frequency-ordered SRS** deliverable: strip the function
 words, genre-weight the counts, and sequence *within* the grammar spine — do not SRS raw `rank_all`.
 
+## W2 robustness: lemmatised join (added 22-07-2026, handoff H1465)
+
+B's near-zero τ was measured on a **surface-form** join, whose 14–19% type coverage is
+skewed toward indeclinables and pronouns (lemma == surface). W2 adds a heuristic
+**a-stem / ā-stem suffix-stripping lemmatiser** — [`scripts/build_lemmatised_join_robustness.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lemmatised_join_robustness.py) —
+that recovers the citation-form stem from inflected nominal surface forms (case-ending
+tables for the two declension classes covering the large majority of Sanskrit nominal
+content words), then re-runs the textbook-vs-frequency join **restricted to nominal
+content-word POS** (m/f/n/mf/mn/fn/mfn/adj) so the comparison is apples-to-apples with
+the surface-only content-word subset, not with the (4) figure's indeclinable/pronoun-heavy
+sample.
+
+| Book | Surface-only (nominal subset) n / cov / τ | Lemmatised join n / cov / τ | Coverage gain |
+|---|---|---|---|
+| Bühler | 182 / 6.7% / τ=−0.051 | 487 / 18.0% / τ=+0.101 | +11.3 pp |
+| Knauer | 135 / 9.8% / τ=+0.066 | 311 / 22.7% / τ=−0.006 | +12.9 pp |
+| Kochergina | 292 / 8.7% / τ=+0.015 | 651 / 19.3% / τ=+0.023 | +10.6 pp |
+
+Coverage on the nominal content-word subset roughly **doubles-to-triples** and τ stays in
+the same near-zero band (all |τ| ≤ 0.10, all far below (5)'s textbook-vs-textbook 0.45–0.84).
+**Result (4) is robust**: textbook introduction order is frequency-agnostic for inflected
+content-word nominals, not merely an artefact of the surface-join's bias toward
+easily-matched, high-frequency function words. Full numbers:
+[`data/difficulty_ordering/lemmatised_join_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/lemmatised_join_stats.json) ·
+per-token join: [`lemmatised_join.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/lemmatised_join.tsv).
+
+**Scope of the W2 lemmatiser** — a-stem and ā-stem thematic declension only (the two
+classes covering most Sanskrit nouns/adjectives): i-stem, u-stem, and consonant-stem
+nominals, and all verb conjugation, are **out of scope**. Recovering a verb root from a
+conjugated surface form needs guṇa/vṛddhi ablaut reversal, not suffix stripping, and
+consonant stems are irregular enough that a hand suffix table would be unreliable —
+stated as a limitation, not hidden.
+
 ## Limitations
 
-- **B is a surface-form join** (no segmenter): type coverage 14–19 %, token coverage 32–43 %, biased toward indeclinables/pronouns (lemma == surface). The near-zero τ is consistent across three books, but a lemmatised join (W2) is needed to confirm it for inflected content words.
-- **A rests on one curated list** (Leonchenko) as the "expert" ground truth; a second curated order would strengthen it.
+- **W2 lemmatised join covers only a-/aa-stem nominal declension** (see above) — i-/u-/consonant-stem nominals and all verb-conjugation forms still rely on the surface-only join; a real morphological analyser (segmenter) would be needed for full-coverage confirmation (→ 5/5 gate).
+- **A rests on one curated list** ("Leonchenko" core-vocabulary compilation, extracted from the VisualDCS archive — an internal learn-these-first ranking, not itself a peer-reviewed publication) as the "expert" ground truth; a second curated order would strengthen it.
 - **Frequency = one corpus** (DCS); the genre-bias point is argued, not yet quantified against a register-balanced count.
 - No learning-gain evidence — this is an *ordering* study, not an *outcome* study (that is RQ4/A32).
 
@@ -109,10 +142,11 @@ words, genre-weight the counts, and sequence *within* the grammar spine — do n
 ```
 python scripts/build_difficulty_ordering.py            # reads ../kosha frequency + scripts/data
 python scripts/build_difficulty_ordering.py --freq <path-to-lemma_frequency.tsv>
+python scripts/build_lemmatised_join_robustness.py      # W2: a-/aa-stem lemmatised join
 ```
 
 Outputs → [`data/difficulty_ordering/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/difficulty_ordering):
-`core_vs_frequency.tsv` (7,120 lemmas, both ranks + delta) · `pos_divergence.tsv` · `textbook_frequency_join.tsv` · `stats.json` (all headline numbers + provenance).
+`core_vs_frequency.tsv` (7,120 lemmas, both ranks + delta) · `pos_divergence.tsv` · `textbook_frequency_join.tsv` · `stats.json` (all headline numbers + provenance) · `lemmatised_join.tsv` + `lemmatised_join_stats.json` (W2).
 
 ---
 

@@ -1,0 +1,59 @@
+{
+  "handoff": "H1465",
+  "rq": "RQ1",
+  "wave": "W2 (lemmatised-join robustness)",
+  "scope": "a-stem + aa-stem thematic nominal declension only (suffix-stripping); i/u/consonant-stem nominals and all verb conjugation OUT OF SCOPE (see docstring)",
+  "results": {
+    "buhler": {
+      "types_total_content_word_candidates": 2699,
+      "surface_only_content_word_join": {
+        "n_matched": 182,
+        "type_coverage_pct": 6.7,
+        "kendall_tau_lesson_vs_freqrank": -0.0513,
+        "kendall_p": 0.3165325989999358
+      },
+      "lemmatised_join": {
+        "n_matched": 487,
+        "type_coverage_pct": 18.0,
+        "n_via_suffix_strip": 305,
+        "kendall_tau_lesson_vs_freqrank": 0.1006,
+        "kendall_p": 0.0011083443510792686
+      },
+      "coverage_gain_pct_points": 11.3
+    },
+    "knauer": {
+      "types_total_content_word_candidates": 1373,
+      "surface_only_content_word_join": {
+        "n_matched": 135,
+        "type_coverage_pct": 9.8,
+        "kendall_tau_lesson_vs_freqrank": 0.0664,
+        "kendall_p": 0.2732922439635398
+      },
+      "lemmatised_join": {
+        "n_matched": 311,
+        "type_coverage_pct": 22.7,
+        "n_via_suffix_strip": 176,
+        "kendall_tau_lesson_vs_freqrank": -0.0061,
+        "kendall_p": 0.8773879901230537
+      },
+      "coverage_gain_pct_points": 12.8
+    },
+    "kochergina": {
+      "types_total_content_word_candidates": 3365,
+      "surface_only_content_word_join": {
+        "n_matched": 292,
+        "type_coverage_pct": 8.7,
+        "kendall_tau_lesson_vs_freqrank": 0.0145,
+        "kendall_p": 0.7225922115758412
+      },
+      "lemmatised_join": {
+        "n_matched": 651,
+        "type_coverage_pct": 19.3,
+        "n_via_suffix_strip": 359,
+        "kendall_tau_lesson_vs_freqrank": 0.0225,
+        "kendall_p": 0.40227770399720697
+      },
+      "coverage_gain_pct_points": 10.7
+    }
+  }
+}
