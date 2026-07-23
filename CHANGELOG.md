@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
-## [Unreleased]
+## [0.110.0] - 2026-07-23
 
 ### Added
 - **A64 English venue-paper draft (compound-type inter-annotator κ) (Sonnet 5 `claude-sonnet-5`).** New [`TolchelnikovTalmud_2026/papers/CompoundTypeKappa_A64/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/papers/CompoundTypeKappa_A64) — `OUTLINE_compound-type-kappa_A64.md` + `DRAFT_compound-type-kappa_A64.md`, the English IMRaD conference-paper draft of the published RU pilot [SG-WF-008](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/index.mdx) (κ_coarse=0.9295 [0.8356–1.0], κ_fine=0.7201 [0.6017–0.8171], both numbers byte-verified against the frozen `kappa_result.json`/`coverage_summary.json`). Related work (§2) carries 6 live-fetched citations (Artstein & Poesio 2008; Krishna et al. 2016; Sandhan et al. 2023 DepNeCTI; Hellwig et al. 2020; Vallejo Vera & Driggers 2024; Negi et al. 2026); the same-model-family (Opus 4.8 + Sonnet 5) reproducibility-vs-reliability caveat is stated in both the abstract and limitations; venue is proposed as a ranked shortlist, not chosen. Handoff [H1466](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1466-Sonnet_SanskritGrammar_a64-tatpurusa-english-venue-prose_22.07.26.md).
