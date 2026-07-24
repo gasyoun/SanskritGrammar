@@ -1,0 +1,23 @@
+{
+  "handoff": "H1613",
+  "executor": "Grok 4.5 (grok-4.5)",
+  "date": "2026-07-24",
+  "toc_ref": "SG-WF-002",
+  "art_id": "art:krt-overview",
+  "slug": "krt-overview",
+  "programme_slot": "C5 · cluster «Деривация» (overview; script self-labels no kill-gate)",
+  "matrix_path": "sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "matrix_url": "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "instrument_script": "scripts/sg_wf_002_krt_overview.py",
+  "kill_gate_criterion": "MISSING — overview, not pilot. Related C5 § 7 P5 (SG-WF-003) is a different published article.",
+  "criterion_status": "MISSING",
+  "probe_action": "park_and_skip",
+  "disposition_action": "leave_unknown",
+  "verdict": "escalated",
+  "do_not": "Do NOT re-fire P5 surface-suffix dictionary-validation gate against the WF-002 overview spine (native VerbForm in {Part,Conv,Gdv,Inf}).",
+  "escalate_path": "Visa-only or @DECIDE for an overview-specific freeze rule. Context: C5 EM5.",
+  "corpus_probe_run": false,
+  "kill_gated": false,
+  "survivor_for_visa": true,
+  "note": "No fireable C5 § 7 pilot kill-gate for this C2 slot. Per freeze-exit autonomy, park with ledger blocking_note; route to non-SE visa sheet or human @DECIDE for a written per-slot gate. Not H1614 (SE-only)."
+}

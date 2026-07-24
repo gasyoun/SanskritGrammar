@@ -1,0 +1,80 @@
+{
+  "handoff": "H1613",
+  "executor": "Grok 4.5 (grok-4.5)",
+  "date": "2026-07-24",
+  "scope": "MO/WF disposition=unknown baseline stragglers",
+  "n_probed": 7,
+  "outcomes": {
+    "kill_gated": 0,
+    "survivor_clear_gate": 0,
+    "escalated_missing_criterion": 7
+  },
+  "rows": [
+    {
+      "toc_ref": "SG-MO-019",
+      "art_id": "art:aorist-types",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_aorist-types.md"
+    },
+    {
+      "toc_ref": "SG-MO-022",
+      "art_id": "art:present-perfect-participles",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_present-perfect-participles.md"
+    },
+    {
+      "toc_ref": "SG-MO-024",
+      "art_id": "art:gerundive",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_gerundive.md"
+    },
+    {
+      "toc_ref": "SG-MO-025",
+      "art_id": "art:infinitive",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_infinitive.md"
+    },
+    {
+      "toc_ref": "SG-WF-002",
+      "art_id": "art:krt-overview",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_krt-overview.md"
+    },
+    {
+      "toc_ref": "SG-WF-009",
+      "art_id": "art:bahuvrihi",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_bahuvrihi.md"
+    },
+    {
+      "toc_ref": "SG-WF-011",
+      "art_id": "art:preverbs",
+      "verdict": "escalated",
+      "criterion_status": "MISSING",
+      "disposition": "unknown",
+      "probe_md": "sangram/audit/probe_freeze_preverbs.md"
+    }
+  ],
+  "visa_list_non_se": [
+    "SG-MO-019",
+    "SG-MO-022",
+    "SG-MO-024",
+    "SG-MO-025",
+    "SG-WF-002",
+    "SG-WF-009",
+    "SG-WF-011"
+  ],
+  "note": "All 7 MO/WF unknowns lack a named C5 § 7 pilot kill-gate (H1611 matrix). H1613 parks every row with blocking_note; none are kill_gated. Survivors for a later non-SE visa sheet (not H1614): all 7 toc_refs listed."
+}
