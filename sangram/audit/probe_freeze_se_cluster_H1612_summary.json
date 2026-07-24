@@ -1,0 +1,23 @@
+{
+  "survivors": [],
+  "kill_gated": [
+    "SG-SE-006"
+  ],
+  "blocking_note": [
+    "SG-SE-001",
+    "SG-SE-002",
+    "SG-SE-003",
+    "SG-SE-004",
+    "SG-SE-005",
+    "SG-SE-008",
+    "SG-SE-013"
+  ],
+  "n": 8,
+  "provenance": {
+    "handoff": "H1612",
+    "model": "Grok 4.5 (grok-4.5)",
+    "intended_executor": "Opus 4.8 (claude-opus-4-8) — user-launched override",
+    "date": "2026-07-24",
+    "plan": "docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md § A1"
+  }
+}

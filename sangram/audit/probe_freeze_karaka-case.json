@@ -1,0 +1,41 @@
+{
+  "toc_ref": "SG-SE-013",
+  "art_id": "art:karaka-case",
+  "slug": "karaka-case",
+  "c6_slot": "sem-a-karaka-vs-case",
+  "pilot": null,
+  "criterion_status": "MISSING",
+  "criterion_quoted": null,
+  "criterion_source": "C6 § 7 has no pilot for kāraka↔case. E1 (no classical dependency trees) is a method rule (manual ≥100), not a freeze kill threshold — not inventing one.",
+  "article_script": "scripts/sg_se_013_karaka_case.py",
+  "coverage_summary": "sangram/articles/karaka-case/data/coverage_summary.json",
+  "pin_expected": "04e0778d3dc971030229179e25eea043d06ff397",
+  "integrity": {
+    "kind": "token total + deprel coverage base",
+    "all_match": true,
+    "checks": {
+      "total_tokens": {
+        "expected": 5688416,
+        "live": 5688416,
+        "match": true
+      },
+      "deprel_nonnull": {
+        "expected": 223751,
+        "live": 223751,
+        "match": true
+      }
+    },
+    "deprel_coverage_pct_live": 3.9335
+  },
+  "provenance": {
+    "handoff": "H1612",
+    "model": "Grok 4.5 (grok-4.5)",
+    "intended_executor": "Opus 4.8 (claude-opus-4-8) — user-launched override",
+    "date": "2026-07-24",
+    "plan": "docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md § A1"
+  },
+  "kill_gate": null,
+  "outcome": "blocking_note",
+  "disposition": "unknown",
+  "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-013 (sem-a-karaka-vs-case; not a § 7 pilot). C6 § 7 has no pilot for kāraka↔case. E1 (no classical dependency trees) is a method rule (manual ≥100), not a freeze kill threshold — not inventing one. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path."
+}
