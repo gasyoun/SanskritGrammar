@@ -1,0 +1,41 @@
+{
+  "toc_ref": "SG-SE-003",
+  "art_id": "art:instrumental-dative",
+  "slug": "instrumental-dative",
+  "c6_slot": "sem-a-instrumental / sem-a-dative-experiencer",
+  "pilot": null,
+  "criterion_status": "MISSING",
+  "criterion_quoted": null,
+  "criterion_source": "C6 § 7 has no pilot for Ins/Dat. Agent-proxy / deprel limits are honesty notes, not kill thresholds.",
+  "article_script": "scripts/sg_se_003_instrumental_dative.py",
+  "coverage_summary": "sangram/articles/instrumental-dative/data/coverage_summary.json",
+  "pin_expected": "04e0778d3dc971030229179e25eea043d06ff397",
+  "integrity": {
+    "kind": "Ins/Dat feat_case totals",
+    "source": "coverage_summary",
+    "all_match": true,
+    "checks": {
+      "Ins": {
+        "expected": 277143,
+        "live": 277143,
+        "match": true
+      },
+      "Dat": {
+        "expected": 65423,
+        "live": 65423,
+        "match": true
+      }
+    }
+  },
+  "provenance": {
+    "handoff": "H1612",
+    "model": "Grok 4.5 (grok-4.5)",
+    "intended_executor": "Opus 4.8 (claude-opus-4-8) — user-launched override",
+    "date": "2026-07-24",
+    "plan": "docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md § A1"
+  },
+  "kill_gate": null,
+  "outcome": "blocking_note",
+  "disposition": "unknown",
+  "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-003 (sem-a-instrumental / sem-a-dative-experiencer; not a § 7 pilot). C6 § 7 has no pilot for Ins/Dat. Agent-proxy / deprel limits are honesty notes, not kill thresholds. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path."
+}

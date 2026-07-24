@@ -1,0 +1,82 @@
+{
+  "toc_ref": "SG-SE-006",
+  "art_id": "art:past-tenses",
+  "slug": "past-tenses",
+  "c6_slot": "sem-b-past-competition",
+  "pilot": "P2",
+  "criterion_status": "QUOTED",
+  "criterion_quoted": "Родные теги различают три претерита в <95% выборки → количественная часть снимается, статья публикует честный отрицательный результат",
+  "criterion_source": "sangram/SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7 row P2 (sem-b-past-competition)",
+  "article_script": "scripts/sg_se_006_past_tenses.py",
+  "coverage_summary": "sangram/articles/past-tenses/data/coverage_summary.json",
+  "pin_expected": "04e0778d3dc971030229179e25eea043d06ff397",
+  "integrity": {
+    "kind": "SE-006 past-tense census",
+    "all_match": true,
+    "checks": {
+      "finite_with_tense": {
+        "expected": 523721,
+        "live": 523721,
+        "match": true
+      },
+      "Impf": {
+        "expected": 46695,
+        "live": 46695,
+        "match": true
+      },
+      "Past": {
+        "expected": 102055,
+        "live": 102055,
+        "match": true
+      },
+      "aorist_formation": {
+        "expected": 12054,
+        "live": 12054,
+        "match": true
+      },
+      "peri": {
+        "expected": 4046,
+        "live": 4046,
+        "match": true
+      },
+      "Past_None": {
+        "expected": 85955,
+        "live": 85955,
+        "match": true
+      }
+    },
+    "live": {
+      "finite_with_tense": 523721,
+      "Impf": 46695,
+      "Past": 102055,
+      "aorist": 12054,
+      "peri": 4046,
+      "Past_None": 85955
+    }
+  },
+  "provenance": {
+    "handoff": "H1612",
+    "model": "Grok 4.5 (grok-4.5)",
+    "intended_executor": "Opus 4.8 (claude-opus-4-8) — user-launched override",
+    "date": "2026-07-24",
+    "plan": "docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md § A1"
+  },
+  "kill_gate": {
+    "criterion_quoted": "Родные теги различают три претерита в <95% выборки → количественная часть снимается, статья публикует честный отрицательный результат",
+    "criterion_source": "sangram/SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7 row P2 (sem-b-past-competition)",
+    "operationalisation": "universe = count(finite ∧ feat_tense ∈ {Impf, Past}); assigned = Impf + (Past∧aorist-formation) + (Past∧peri); share = assigned/universe; fire if share < 0.95",
+    "universe": 148750,
+    "assigned": 62795,
+    "unassigned_Past_None": 85955,
+    "share": 0.422151,
+    "share_pct": 42.22,
+    "threshold": 0.95,
+    "gate_fires": true,
+    "programme_consequence_if_fires": "количественная часть снимается, статья публикует честный отрицательный результат",
+    "freeze_disposition": "kill_gated",
+    "rationale": "Native tags do not distinguish the three classical preterites on ≥95% of the finite past universe (simple perfect lives in untagged Past+None). Clear P2 fail → disposition kill_gated without human visa (freeze-exit mechanism)."
+  },
+  "outcome": "kill_gated",
+  "disposition": "kill_gated",
+  "blocking_note": ""
+}

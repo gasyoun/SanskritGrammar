@@ -1,0 +1,75 @@
+{
+  "toc_ref": "SG-SE-001",
+  "art_id": "art:case-system-overview",
+  "slug": "case-system-overview",
+  "c6_slot": "sem-a-case-overview",
+  "pilot": null,
+  "criterion_status": "MISSING",
+  "criterion_quoted": null,
+  "criterion_source": "C6 § 7 pilots are only P1–P5; sem-a-case-overview is not a pilot. No numeric kill-gate in SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7.",
+  "article_script": "scripts/sg_se_001_case_overview.py",
+  "coverage_summary": "sangram/articles/case-system-overview/data/coverage_summary.json",
+  "pin_expected": "04e0778d3dc971030229179e25eea043d06ff397",
+  "integrity": {
+    "kind": "feat_case eight vibhakti (+ Cpd)",
+    "all_match": true,
+    "checks": {
+      "Nom": {
+        "expected": 1419146,
+        "live": 1419146,
+        "match": true
+      },
+      "Acc": {
+        "expected": 742293,
+        "live": 742293,
+        "match": true
+      },
+      "Ins": {
+        "expected": 277143,
+        "live": 277143,
+        "match": true
+      },
+      "Dat": {
+        "expected": 65423,
+        "live": 65423,
+        "match": true
+      },
+      "Abl": {
+        "expected": 74565,
+        "live": 74565,
+        "match": true
+      },
+      "Gen": {
+        "expected": 270763,
+        "live": 270763,
+        "match": true
+      },
+      "Loc": {
+        "expected": 243215,
+        "live": 243215,
+        "match": true
+      },
+      "Voc": {
+        "expected": 81088,
+        "live": 81088,
+        "match": true
+      },
+      "Cpd": {
+        "expected": 841052,
+        "live": 841052,
+        "match": true
+      }
+    }
+  },
+  "provenance": {
+    "handoff": "H1612",
+    "model": "Grok 4.5 (grok-4.5)",
+    "intended_executor": "Opus 4.8 (claude-opus-4-8) — user-launched override",
+    "date": "2026-07-24",
+    "plan": "docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md § A1"
+  },
+  "kill_gate": null,
+  "outcome": "blocking_note",
+  "disposition": "unknown",
+  "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-001 (sem-a-case-overview; not a § 7 pilot). C6 § 7 pilots are only P1–P5; sem-a-case-overview is not a pilot. No numeric kill-gate in SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path."
+}
