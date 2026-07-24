@@ -1,6 +1,11 @@
 # Plan — Sangram editorial notes, charter de-calendaring and roadmap re-basing (2026 H2)
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 24-07-2026_
+
+> **Status 24-07-2026:** wave largely **drained** (H1273–H1277 executed). Successor plan for the next
+> agent wave:
+> [`docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md).
+> Keep this file as the historical record of the editorial-notes / charter / roadmap-rebase wave.
 
 **This is the cover/index** of a layered plan covering the second half of 2026 in
 [SanskritGrammar](https://github.com/gasyoun/SanskritGrammar). Its subject is the unapplied

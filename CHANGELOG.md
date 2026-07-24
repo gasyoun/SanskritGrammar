@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
+## [Unreleased]
+
+### Added
+- **`/ask-batch` Pass 4 — freeze-exit + methodichka residual plan (Grok 4.5 `grok-4.5`, 24-07-2026).** New layered plan set under `docs/`: cover [`PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md) (+ `.meta.md`) · roadmap · architecture · implementation · verification. Stages agent wave-1 after H1273–H1277 drained the 18-07 editorial-notes plan: probe-first C5/C6 kill-gates on the 15 freeze-stuck candidates, then visas only for survivors; methodichka residual in parallel (H1454 kept + Apte residual); hygiene triage. 18-07 plan marked historical with successor pointer. Staging: [ASK_BATCH_STAGING_2026-07.md](https://github.com/gasyoun/Uprava/blob/main/ASK_BATCH_STAGING_2026-07.md) § Pass 4. **Nothing executes until handoffs are launched.**
+
 ## [0.110.0] - 2026-07-23
 
 ### Added
