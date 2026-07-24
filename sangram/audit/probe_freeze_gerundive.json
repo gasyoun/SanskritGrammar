@@ -1,0 +1,23 @@
+{
+  "handoff": "H1613",
+  "executor": "Grok 4.5 (grok-4.5)",
+  "date": "2026-07-24",
+  "toc_ref": "SG-MO-024",
+  "art_id": "art:gerundive",
+  "slug": "gerundive",
+  "programme_slot": "C5 · cluster «Именные формы глагола»; C6 also lists construction slot syn-c-gerundive (not mapped on this C2 id)",
+  "matrix_path": "sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "matrix_url": "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "instrument_script": "scripts/sg_mo_024_gerundive.py",
+  "kill_gate_criterion": "MISSING — not a C5/C6 pilot.",
+  "criterion_status": "MISSING",
+  "probe_action": "park_and_skip",
+  "disposition_action": "leave_unknown",
+  "verdict": "escalated",
+  "do_not": "Do not invent a gerundive construction kill-gate from C6 SYN-C without a written programme criterion.",
+  "escalate_path": "Human @DECIDE or visa-only path.",
+  "corpus_probe_run": false,
+  "kill_gated": false,
+  "survivor_for_visa": true,
+  "note": "No fireable C5 § 7 pilot kill-gate for this C2 slot. Per freeze-exit autonomy, park with ledger blocking_note; route to non-SE visa sheet or human @DECIDE for a written per-slot gate. Not H1614 (SE-only)."
+}

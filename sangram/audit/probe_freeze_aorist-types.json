@@ -1,0 +1,23 @@
+{
+  "handoff": "H1613",
+  "executor": "Grok 4.5 (grok-4.5)",
+  "date": "2026-07-24",
+  "toc_ref": "SG-MO-019",
+  "art_id": "art:aorist-types",
+  "slug": "aorist-types",
+  "programme_slot": "C5 · cluster «Перфект, аорист, будущее» (beyond-quota partition of SG-MO-018)",
+  "matrix_path": "sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "matrix_url": "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
+  "instrument_script": "scripts/sg_mo_019_aorist_types.py",
+  "kill_gate_criterion": "MISSING — C5 § 7 pilots are only MO-002 / MO-013 / MO-017 / WF-008 / WF-003. Nearest related pilot text is C5 P3 (SG-MO-017 perfect), which does NOT transfer.",
+  "criterion_status": "MISSING",
+  "probe_action": "park_and_skip",
+  "disposition_action": "leave_unknown",
+  "verdict": "escalated",
+  "do_not": "Do not transfer C5 P3 form-class 95% gate from perfect to aorist-types.",
+  "escalate_path": "Human @DECIDE for a per-slot MO-019 gate, or visa-only path. Context: C5 EM2.",
+  "corpus_probe_run": false,
+  "kill_gated": false,
+  "survivor_for_visa": true,
+  "note": "No fireable C5 § 7 pilot kill-gate for this C2 slot. Per freeze-exit autonomy, park with ledger blocking_note; route to non-SE visa sheet or human @DECIDE for a written per-slot gate. Not H1614 (SE-only)."
+}
