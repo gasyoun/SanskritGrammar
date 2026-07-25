@@ -1,0 +1,631 @@
+{
+  "handoff": "H913",
+  "rq": "RQ1",
+  "model": "Opus 4.8 (claude-opus-4-8[1m])",
+  "date": "2026-07-14",
+  "freq_source": "lemma_frequency.tsv",
+  "analysis_A_core_vs_frequency": {
+    "n_shared": 7120,
+    "kendall_tau": 0.8866,
+    "kendall_p": 0.0,
+    "spearman_rho": 0.9229,
+    "spearman_p": 0.0,
+    "top50_freq_absent_from_core_n": 23,
+    "top50_freq_absent_from_core": [
+      "ca",
+      "tad",
+      "na",
+      "yad",
+      "iti",
+      "tvad",
+      "idam",
+      "tu",
+      "api",
+      "etad",
+      "taTA",
+      "tatas",
+      "iva",
+      "aTa",
+      "tatra",
+      "evam",
+      "sa",
+      "ka",
+      "yaTA",
+      "punar",
+      "vE",
+      "eka",
+      "anya"
+    ],
+    "exclusion_by_frequency_band": {
+      "top50": {
+        "n_excluded": 23,
+        "pct_excluded": 46.0,
+        "by_pos": {
+          "ind": 15,
+          "pron": 8
+        }
+      },
+      "top100": {
+        "n_excluded": 30,
+        "pct_excluded": 30.0,
+        "by_pos": {
+          "ind": 19,
+          "pron": 11
+        }
+      },
+      "top200": {
+        "n_excluded": 44,
+        "pct_excluded": 22.0,
+        "by_pos": {
+          "ind": 31,
+          "pron": 13
+        }
+      }
+    },
+    "promoted": [
+      [
+        "acCa",
+        "adj",
+        3354,
+        3130,
+        319.0
+      ],
+      [
+        "avakASa",
+        "m",
+        3619,
+        3390,
+        318.5
+      ],
+      [
+        "acira",
+        "adj",
+        3640,
+        3409,
+        318.5
+      ],
+      [
+        "agnizwoma",
+        "m",
+        3354,
+        3131,
+        318.0
+      ],
+      [
+        "aBimAna",
+        "m",
+        3446,
+        3221,
+        318.0
+      ],
+      [
+        "BEzajya",
+        "n",
+        3619,
+        3391,
+        317.5
+      ],
+      [
+        "aDiruh",
+        "1.Ā.",
+        3640,
+        3410,
+        317.5
+      ],
+      [
+        "Bukti",
+        "f",
+        3446,
+        3223,
+        317.0
+      ],
+      [
+        "gaRay",
+        "10.Ā.",
+        3669,
+        3439,
+        317.0
+      ],
+      [
+        "daSA",
+        "f",
+        3603,
+        3374,
+        316.5
+      ],
+      [
+        "carv",
+        "1.Ā.",
+        3619,
+        3392,
+        316.5
+      ],
+      [
+        "Bramara",
+        "m",
+        3640,
+        3411,
+        316.5
+      ],
+      [
+        "ajYAta",
+        "adj",
+        3354,
+        3133,
+        316.0
+      ],
+      [
+        "abDi",
+        "m",
+        3790,
+        3556,
+        316.0
+      ],
+      [
+        "apekz",
+        "1.Ā.",
+        3339,
+        3117,
+        315.5
+      ]
+    ],
+    "demoted": [
+      [
+        "vara",
+        "adj",
+        82,
+        7443,
+        -6977.0
+      ],
+      [
+        "vIra",
+        "m",
+        138,
+        7361,
+        -6851.0
+      ],
+      [
+        "rakta",
+        "adj",
+        226,
+        7374,
+        -6782.0
+      ],
+      [
+        "yA",
+        "2.Ā.",
+        81,
+        7208,
+        -6744.0
+      ],
+      [
+        "varza",
+        "mn",
+        186,
+        7252,
+        -6697.5
+      ],
+      [
+        "SIta",
+        "adj",
+        351,
+        7320,
+        -6609.0
+      ],
+      [
+        "piRqa",
+        "mn",
+        810,
+        7494,
+        -6358.0
+      ],
+      [
+        "kawu",
+        "adj",
+        723,
+        7383,
+        -6330.0
+      ],
+      [
+        "rakzas",
+        "n",
+        523,
+        7001,
+        -6135.0
+      ],
+      [
+        "eva",
+        "ind",
+        5,
+        6511,
+        -6105.0
+      ],
+      [
+        "haMsa",
+        "m",
+        1084,
+        7471,
+        -6082.5
+      ],
+      [
+        "balin",
+        "adj",
+        923,
+        7298,
+        -6059.0
+      ],
+      [
+        "indriya",
+        "n",
+        224,
+        6617,
+        -6034.0
+      ],
+      [
+        "kevala",
+        "adj",
+        1046,
+        7348,
+        -5998.0
+      ],
+      [
+        "maDura",
+        "adj",
+        334,
+        6677,
+        -5989.0
+      ]
+    ],
+    "pos_divergence": [
+      {
+        "pos": "10.Ā.",
+        "n": 197,
+        "mean_delta": 244.5,
+        "median_rank_all": 3016,
+        "median_core_rank": 2815
+      },
+      {
+        "pos": "5.Ā.",
+        "n": 21,
+        "mean_delta": 225.0,
+        "median_rank_all": 2502,
+        "median_core_rank": 2329
+      },
+      {
+        "pos": "10.P.",
+        "n": 98,
+        "mean_delta": 224.5,
+        "median_rank_all": 5758,
+        "median_core_rank": 5125
+      },
+      {
+        "pos": "Denom.Ā.",
+        "n": 22,
+        "mean_delta": 195.3,
+        "median_rank_all": 5333,
+        "median_core_rank": 4861
+      },
+      {
+        "pos": "Denom.P.",
+        "n": 27,
+        "mean_delta": 178.9,
+        "median_rank_all": 5931,
+        "median_core_rank": 5245
+      },
+      {
+        "pos": "fn",
+        "n": 33,
+        "mean_delta": 136.0,
+        "median_rank_all": 5157,
+        "median_core_rank": 4726
+      },
+      {
+        "pos": "mfn",
+        "n": 36,
+        "mean_delta": 134.3,
+        "median_rank_all": 3847,
+        "median_core_rank": 4208
+      },
+      {
+        "pos": "f",
+        "n": 1050,
+        "mean_delta": 128.6,
+        "median_rank_all": 5018,
+        "median_core_rank": 4708
+      },
+      {
+        "pos": "3.Ā.",
+        "n": 35,
+        "mean_delta": 128.2,
+        "median_rank_all": 3294,
+        "median_core_rank": 3124
+      },
+      {
+        "pos": "2.P.",
+        "n": 63,
+        "mean_delta": 109.7,
+        "median_rank_all": 2491,
+        "median_core_rank": 2366
+      },
+      {
+        "pos": "mf",
+        "n": 99,
+        "mean_delta": 78.2,
+        "median_rank_all": 4256,
+        "median_core_rank": 4120
+      },
+      {
+        "pos": "1.Ā.",
+        "n": 247,
+        "mean_delta": 77.7,
+        "median_rank_all": 2772,
+        "median_core_rank": 2673
+      },
+      {
+        "pos": "4.P.",
+        "n": 77,
+        "mean_delta": 49.0,
+        "median_rank_all": 2349,
+        "median_core_rank": 2499
+      },
+      {
+        "pos": "m",
+        "n": 1888,
+        "mean_delta": 34.3,
+        "median_rank_all": 3745,
+        "median_core_rank": 3850
+      },
+      {
+        "pos": "1.P.",
+        "n": 156,
+        "mean_delta": 30.3,
+        "median_rank_all": 3480,
+        "median_core_rank": 3474
+      },
+      {
+        "pos": "6.P.",
+        "n": 74,
+        "mean_delta": 8.4,
+        "median_rank_all": 3242,
+        "median_core_rank": 3218
+      },
+      {
+        "pos": "4.Ā.",
+        "n": 62,
+        "mean_delta": -0.3,
+        "median_rank_all": 2455,
+        "median_core_rank": 2330
+      },
+      {
+        "pos": "8.Ā.",
+        "n": 22,
+        "mean_delta": -5.5,
+        "median_rank_all": 3181,
+        "median_core_rank": 3532
+      },
+      {
+        "pos": "mn",
+        "n": 555,
+        "mean_delta": -26.1,
+        "median_rank_all": 3354,
+        "median_core_rank": 3536
+      },
+      {
+        "pos": "6.Ā.",
+        "n": 71,
+        "mean_delta": -48.9,
+        "median_rank_all": 2860,
+        "median_core_rank": 3044
+      },
+      {
+        "pos": "9.Ā.",
+        "n": 25,
+        "mean_delta": -57.1,
+        "median_rank_all": 2716,
+        "median_core_rank": 2792
+      },
+      {
+        "pos": "n",
+        "n": 914,
+        "mean_delta": -79.3,
+        "median_rank_all": 4006,
+        "median_core_rank": 4259
+      },
+      {
+        "pos": "adj",
+        "n": 1202,
+        "mean_delta": -159.6,
+        "median_rank_all": 4094,
+        "median_core_rank": 4318
+      },
+      {
+        "pos": "2.Ā.",
+        "n": 36,
+        "mean_delta": -168.8,
+        "median_rank_all": 2755,
+        "median_core_rank": 2727
+      }
+    ]
+  },
+  "analysis_B_textbook_vs_frequency": {
+    "buhler": {
+      "types_total": 2699,
+      "types_matched": 371,
+      "type_coverage_pct": 13.7,
+      "token_coverage_pct": 32.3,
+      "kendall_tau_lesson_vs_freqrank": 0.0496,
+      "kendall_p": 0.16310456920489447,
+      "lesson_meanfreqrank_trend_rho": 0.0925,
+      "lesson_meanfreqrank_trend_p": 0.5603304666282429,
+      "lesson_means_sample": [
+        [
+          1,
+          3692.9,
+          11
+        ],
+        [
+          2,
+          18318.0,
+          5
+        ],
+        [
+          3,
+          35321.7,
+          3
+        ],
+        [
+          4,
+          19254.1,
+          24
+        ],
+        [
+          6,
+          11260.5,
+          10
+        ],
+        [
+          7,
+          24293.3,
+          7
+        ],
+        [
+          8,
+          4965.6,
+          11
+        ],
+        [
+          9,
+          13150.3,
+          13
+        ]
+      ]
+    },
+    "knauer": {
+      "types_total": 1373,
+      "types_matched": 266,
+      "type_coverage_pct": 19.4,
+      "token_coverage_pct": 42.5,
+      "kendall_tau_lesson_vs_freqrank": 0.0557,
+      "kendall_p": 0.19236075071416392,
+      "lesson_meanfreqrank_trend_rho": -0.0632,
+      "lesson_meanfreqrank_trend_p": 0.797282917844937,
+      "lesson_means_sample": [
+        [
+          1,
+          10370.2,
+          26
+        ],
+        [
+          2,
+          16011.3,
+          33
+        ],
+        [
+          3,
+          14431.1,
+          12
+        ],
+        [
+          4,
+          26705.4,
+          7
+        ],
+        [
+          5,
+          15506.8,
+          22
+        ],
+        [
+          6,
+          26299.1,
+          17
+        ],
+        [
+          7,
+          19686.1,
+          15
+        ],
+        [
+          8,
+          11125.6,
+          12
+        ]
+      ]
+    },
+    "kochergina": {
+      "types_total": 3365,
+      "types_matched": 536,
+      "type_coverage_pct": 15.9,
+      "token_coverage_pct": 43.0,
+      "kendall_tau_lesson_vs_freqrank": 0.0724,
+      "kendall_p": 0.01575345406986265,
+      "lesson_meanfreqrank_trend_rho": 0.3506,
+      "lesson_meanfreqrank_trend_p": 0.028648269758830634,
+      "lesson_means_sample": [
+        [
+          2,
+          103.0,
+          3
+        ],
+        [
+          3,
+          2623.4,
+          5
+        ],
+        [
+          4,
+          14495.8,
+          6
+        ],
+        [
+          5,
+          12071.9,
+          13
+        ],
+        [
+          6,
+          15286.6,
+          18
+        ],
+        [
+          7,
+          10345.2,
+          13
+        ],
+        [
+          8,
+          12000.9,
+          17
+        ],
+        [
+          9,
+          16298.3,
+          18
+        ]
+      ]
+    }
+  },
+  "analysis_C_textbook_vs_textbook_S1": [
+    {
+      "pair": "Buehler↔Knauer",
+      "n": "86",
+      "tau": "0.2357",
+      "p_value": "2.140e-03",
+      "interpretation": "weak agreement; significant"
+    },
+    {
+      "pair": "Buehler↔Kochergina",
+      "n": "40",
+      "tau": "0.4457",
+      "p_value": "1.159e-04",
+      "interpretation": "moderate agreement; significant"
+    },
+    {
+      "pair": "Knauer↔Kochergina",
+      "n": "12",
+      "tau": "0.8347",
+      "p_value": "2.360e-04",
+      "interpretation": "very strong agreement; significant"
+    }
+  ]
+}

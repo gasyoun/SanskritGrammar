@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-25T20:31:52Z",
+  "generator": "scripts/build_pedagogy_export.py",
+  "feeds": [
+    {
+      "id": "rq4_item_bank",
+      "path": "data/pedagogy_export/rq4_item_bank.json",
+      "sha256": "ebc5ec51b9574692d327c00c8a116b9200ef6a943befb2a7b7710be404235f07",
+      "rights": "aggregate-public-safe",
+      "consumer_hint": "Systema resources/data/rq4_item_bank.json"
+    },
+    {
+      "id": "difficulty_ordering_stats",
+      "path": "data/pedagogy_export/difficulty_ordering_stats.json",
+      "sha256": "4100010f8e09158f2dcd34ec2c0c5138c6eb99ff8c2b0335102effe41ca4e5c5",
+      "rights": "aggregate-public-safe",
+      "consumer_hint": "advisory sequencing metadata (Hop C)"
+    },
+    {
+      "id": "difficulty_ordering_core_vs_frequency",
+      "path": "data/pedagogy_export/difficulty_ordering_core_vs_frequency.tsv",
+      "sha256": "fe87471bf60c3b5ed500144e773384b129b604a9f8ad8012673db8415ba2c3e2",
+      "rights": "aggregate-public-safe",
+      "consumer_hint": "frequency vs core_rank join"
+    },
+    {
+      "id": "difficulty_ordering_pos_divergence",
+      "path": "data/pedagogy_export/difficulty_ordering_pos_divergence.tsv",
+      "sha256": "ca34fe9fbd37402c22e02108cc2bae1c3a32694273871530d218f3c608baad17",
+      "rights": "aggregate-public-safe",
+      "consumer_hint": "POS-level frequency divergence"
+    },
+    {
+      "id": "difficulty_ordering_textbook_join",
+      "path": "data/pedagogy_export/difficulty_ordering_textbook_frequency_join.tsv",
+      "sha256": "b6221fb11455113ab5b5e6da72d87959293c6b3eb198075e69ef87ab4bb9fc0b",
+      "rights": "aggregate-public-safe",
+      "consumer_hint": "textbook lesson vs frequency join"
+    },
+    {
+      "id": "methodichka_corpus_layer_pointers",
+      "path": "data/pedagogy_export/methodichka_corpus_layer_pointers.json",
+      "sha256": "ec0faba7861ba5d515fbad4c96d0cce1c76031cf87e0ac08a856446da8e5e988",
+      "rights": "pointer-only-no-bulk-gloss",
+      "consumer_hint": "paths to methodichka corpus layers; not redistributable textbook text"
+    }
+  ],
+  "last_mile_hop_status": {
+    "A_reader": "shipped-in-Systema",
+    "B_srs": "shipped-in-Systema",
+    "C_difficulty": "shipped-in-Systema",
+    "rq4_harness": "shipped-flag-off"
+  },
+  "omissions": []
+}

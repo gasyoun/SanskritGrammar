@@ -19,6 +19,9 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **H1643 — versioned `pedagogy_export` adapter + LAST_MILE measured-status (Grok 4.5 `grok-4.5`, 25-07-2026).** New [`scripts/build_pedagogy_export.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_pedagogy_export.py) (`build` + `--check`, schema_version **1.0.0**) writes [`data/pedagogy_export/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pedagogy_export) (RQ4 item bank, difficulty_ordering TSVs/stats, methodichka corpus-layer **pointers** only, `last_mile_hop_status`). Tests: [`tests/test_pedagogy_export.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_pedagogy_export.py). npm: `pedagogy-export` / `check-pedagogy-export`. [`docs/LAST_MILE_PIPELINE_SPEC.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/LAST_MILE_PIPELINE_SPEC.md) §0 records Hops A/B/C + RQ4 as **shipped in Systema** (no rebuild). Unblocks H1644 smoke.
+
 ## [0.111.0] - 2026-07-25
 
 ### Added

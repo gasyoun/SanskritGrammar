@@ -1,0 +1,18 @@
+[
+  {
+    "id": "apte_corpus_layer",
+    "title": "Apte methodichka corpus layer",
+    "path": "ApteSyntax_1885/METODICHKA_APTE_CORPUS_LAYER_2026.md",
+    "corpus_tsv": "ApteSyntax_1885/corpus_layer/corpus_layer.tsv",
+    "visa_status": "pending-or-applied",
+    "rights": "pointer-only-no-bulk-gloss"
+  },
+  {
+    "id": "kochergina_corpus_layer",
+    "title": "Kochergina methodichka corpus layer",
+    "path": "KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md",
+    "corpus_tsv": "KocherginaUchebnik_1998/corpus_layer/corpus_layer.tsv",
+    "visa_status": "pending-or-applied",
+    "rights": "pointer-only-no-bulk-gloss"
+  }
+]

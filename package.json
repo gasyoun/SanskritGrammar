@@ -10,6 +10,8 @@
     "claims": "python scripts/build_claims.py",
     "check-claims": "python scripts/check_claims_consistency.py",
     "check-denominators": "python scripts/check_denominator_commensurability.py",
+    "pedagogy-export": "python scripts/build_pedagogy_export.py",
+    "check-pedagogy-export": "python scripts/build_pedagogy_export.py --check",
     "quantifiers": "python scripts/harvest_quantifiers.py && python scripts/build_quantifiers.py",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

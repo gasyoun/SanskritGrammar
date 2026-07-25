@@ -1,17 +1,42 @@
 # Last-mile pipeline — kosha → learner (Systema): the contract spec
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 25-07-2026_
 
 Specifies the **"last mile"** [MEGABOOK §14.2](https://github.com/gasyoun/Uprava/blob/main/MEGABOOK.md) flags
 as the chain's main unclosed link: how the open kosha data/lookup layer feeds the Tier-0
 [Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) learning platform. Wave-1d of the
 [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md),
 handoff [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md).
-Model: Opus 4.8 (`claude-opus-4-8[1m]`).
+Model: Opus 4.8 (`claude-opus-4-8[1m]`). Measured-status + export packaging: H1643 (Grok 4.5 `grok-4.5`, 25-07-2026).
 
-> **This is a spec, not a build.** Per the field's straddle-tier fence, wave-1 touches **no Systema
-> production code** — the wiring is Wave 2, behind feature flags, after human review. This document is the
-> contract the Wave-2 executor implements.
+> **Contract history.** H916 wrote this as a **spec, not a build**. By mid-July 2026 Systema
+> had already shipped the hop demos and RQ4 harness (see §0). Agents must **not** re-implement
+> Hops A–C or the study harness — consume the vendored-file contract and the SG export package
+> at [`data/pedagogy_export/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/pedagogy_export).
+
+## 0. Measured status (25-07-2026)
+
+| Surface | Status | Evidence (Systema unless noted) |
+|---|---|---|
+| **Hop A** reader-as-a-service demo | **Shipped** | `ReadingPackController`, `resources/views/reading/kosha-demo.blade.php`, `resources/data/kosha_reading_pack_*.json`, H959 |
+| **Hop B** frequency-ordered SRS demo | **Shipped** | `ImportKoshaSrsDeckB1Demo`, `resources/data/kosha_srs_deck_b1_demo.json`, H955 |
+| **Hop C** difficulty advisory | **Shipped** | `resources/data/kosha_reading_pack_difficulty.json` consumption, H965 |
+| **RQ4 study harness** | **Shipped, flag OFF** | `/rq4-study`, `Rq4StudyController`, `resources/data/rq4_item_bank.json`, tests `Rq4*`, H987; prod flip = human @DO (H1261 residual) |
+| **SG public-safe export package** | **This handoff (H1643)** | [`data/pedagogy_export/export_manifest.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pedagogy_export/export_manifest.json) · `python scripts/build_pedagogy_export.py` · `--check` · pytest `tests/test_pedagogy_export.py` |
+| **Local hop smoke (export → Systema load)** | **Queued H1644** | Depends on H1643 merge |
+| **Production `features.rq4_study` flip** | **Human @DO** | Not agent-unattended |
+
+**Remaining gaps (do not invent new hops):** (1) keep export hashes CI-green; (2) H1644 local/staging smoke; (3) human production flag + cohort ops. Vendored-file ruling in §1 is unchanged.
+
+**Consumer entry point for SG feeds:**
+
+```powershell
+cd C:\Users\user\Documents\GitHub\SanskritGrammar
+python scripts/build_pedagogy_export.py
+python scripts/build_pedagogy_export.py --check
+```
+
+Manifest `schema_version` **1.0.0** (semver major pin for Systema).
 
 ## 1. The integration decision — vendored data-file, not live API
 
