@@ -1,6 +1,6 @@
 # Verification — SanskritGrammar pedagogy last-mile residual
 
-_Created: 25-07-2026 · Last updated: 25-07-2026_
+_Created: 25-07-2026 · Last updated: 26-07-2026_
 
 Acceptance criteria, commands, and risks for
 [`docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md).
@@ -16,6 +16,17 @@ Acceptance criteria, commands, and risks for
 | A1.3 | No invented corpus numbers | Diff review: numbers only from committed JSON/TSV or prior published claims |
 | A1.4 | Re-vote sheets exist for remaining null/blocked cards | Sheet HTML + decisions.json path listed (or “already voted” evidence) |
 | A1.5 | Suite green if code/site touched | `python -m pytest` and/or `npm run build` as applicable |
+
+**A1 status (H1454 Kochergina, 26-07-2026, Grok 4.5 `grok-4.5`):** residual table in
+[`KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md)
+appendix «Открытые вопросы визы (H1258) — residual после H1454». Sheet
+`sanskritgrammar-metodichka-kochergina-v1_16.07.26` items terminalized in
+[`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv)
+(APPLIED / DEFERRED / ESCALATED / re-sheeted — no OPEN left on this sheet).
+Re-vote sheet: [`review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html)
+(spec under `review/specs/`). Numbers from
+`hk_peri_formation_share_h1454.json` / `hk16_feminine_ending_probe_h1454.json` / DCS
+probes only. **Apte residual (H1615) is out of this PR’s scope.**
 
 ### A2 — H-B pedagogy export
 
@@ -78,12 +89,12 @@ Record the **actual** commands that passed in the smoke PR; if filters renamed, 
 
 ## 4. Checklist (tick on close)
 
-- [ ] A1 residual table committed / in merged PR
+- [x] A1 residual table committed / in merged PR — H1454 Kochergina (26-07-2026); Apte H1615 still open
 - [ ] A2 export + `--check` green
 - [ ] A2 LAST_MILE measured-status section live
 - [ ] A3 smoke log with item id + schema_version
 - [ ] A3 prod flag untouched
-- [ ] CHANGELOG `[Unreleased]` bullets in touched repos
+- [x] CHANGELOG `[Unreleased]` bullets in touched repos — Kochergina book + root H1454 bullet
 - [ ] `.ai_state.md` Next Steps point at any residual human @DO (prod RQ4 flip)
 - [ ] GTD / RESULTS row + tracking issue comment if applicable
 

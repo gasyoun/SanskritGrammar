@@ -1,0 +1,113 @@
+{
+  "probe": "H1454 item 4 — feminine ending proxy (HK-16 / zan-12)",
+  "model": "Grok 4.5 (grok-4.5)",
+  "date": "26-07-2026",
+  "source": "VisualDCS DCS-2026 dcs_full.sqlite",
+  "universe": "feat_gender=Fem AND upos in (NOUN, ADJ, PROPN)",
+  "n_tokens": 362594,
+  "by_lemma_ending_pct": {
+    "consonant/other": 31.73,
+    "-ā": 29.22,
+    "-ī": 17.72,
+    "-i": 16.86,
+    "-r/-ṛ": 1.73,
+    "-ū": 1.53,
+    "-u": 1.21
+  },
+  "long_i": {
+    "lemmas": 4496,
+    "tokens": 64245,
+    "top10_pct_of_i": 29.5,
+    "top10": [
+      [
+        "devī",
+        3821
+      ],
+      [
+        "pṛthivī",
+        3556
+      ],
+      [
+        "strī",
+        3000
+      ],
+      [
+        "śrī",
+        1971
+      ],
+      [
+        "patnī",
+        1713
+      ],
+      [
+        "nadī",
+        1255
+      ],
+      [
+        "gāyatrī",
+        1026
+      ],
+      [
+        "sarasvatī",
+        968
+      ],
+      [
+        "nārī",
+        848
+      ],
+      [
+        "mahī",
+        766
+      ]
+    ]
+  },
+  "long_u": {
+    "lemmas": 147,
+    "tokens": 5544,
+    "top10_pct_of_u": 87.4,
+    "top10": [
+      [
+        "bhū",
+        2256
+      ],
+      [
+        "tanū",
+        1006
+      ],
+      [
+        "vadhū",
+        386
+      ],
+      [
+        "camū",
+        305
+      ],
+      [
+        "juhū",
+        304
+      ],
+      [
+        "bhrū",
+        175
+      ],
+      [
+        "yavāgū",
+        175
+      ],
+      [
+        "kaṇḍū",
+        100
+      ],
+      [
+        "śvaśrū",
+        70
+      ],
+      [
+        "subhrū",
+        70
+      ]
+    ]
+  },
+  "caveat": "DCS lemma.grammar for nouns is only f/mf — no nadī/vadhū paradigm tag. Ending proxy is NOT the three morphological formation layers MG asked for. Disposition: DEFERRED.",
+  "disposition": "DEFERRED"
+}

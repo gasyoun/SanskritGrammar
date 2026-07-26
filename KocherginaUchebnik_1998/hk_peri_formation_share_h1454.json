@@ -1,0 +1,44 @@
+{
+  "probe": "H1454 item 9 — periphrastic perfect formation-type share",
+  "model": "Grok 4.5 (grok-4.5)",
+  "date": "26-07-2026",
+  "source": "VisualDCS DCS-2026 dcs_full.sqlite",
+  "filter": "feat_formation=peri AND m_unsandhied (spaces stripped, ṃ→m) matches STEM-(ā)m + as/kṛ/bhū perfect auxiliary; excludes periphrastic future (-tā + as)",
+  "n_perfect_like": 4024,
+  "n_peri_tag_total": 5386,
+  "published_sg_mo_017_n": 4046,
+  "aux": {
+    "as": 3697,
+    "kṛ": 295,
+    "bhū": 32
+  },
+  "formation_share": {
+    "class-10 / -aya (causative ∪ curādi ∪ untagged denom)": {
+      "tokens": 3752,
+      "pct": 93.24
+    },
+    "denominative (DCS Denom.)": {
+      "tokens": 171,
+      "pct": 4.25
+    },
+    "primary / other": {
+      "tokens": 96,
+      "pct": 2.39
+    },
+    "desiderative": {
+      "tokens": 5,
+      "pct": 0.12
+    },
+    "intensive": {
+      "tokens": 0,
+      "pct": 0.0
+    }
+  },
+  "notes": [
+    "DCS lemma.grammar marks class 10 and Denom. but not causative separately; class-10/-aya is an upper bound on the causative∪curādi∪untagged-denom amalgam.",
+    "Explicit Denom.* is a lower bound on denominatives (many denominatives may be tagged only as 10).",
+    "Desiderative/intensive are negligible.",
+    "Answer to MG (zan-22): predominantly the -aya/class-10 layer (~93%); other derived types are a minority (explicit denom ~4%, desid ~0.1%); primary/other ~2%.",
+    "n=4024 is DCS-2026 with the strict surface filter; SG-MO-017 published 4046 on the DCS-2021 pin — not a drop-in replacement for that figure."
+  ]
+}

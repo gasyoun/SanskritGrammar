@@ -8,7 +8,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **H1454 — open items визы H1258 доведены до terminal dispositions (Grok 4.5
+  `grok-4.5`, 26-07-2026).** Residual table в приложении
+  `METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`; probes
+  [`hk_peri_formation_share_h1454.json`](hk_peri_formation_share_h1454.json)
+  (peri perfect ~93 % class-10/-aya) и
+  [`hk16_feminine_ending_probe_h1454.json`](hk16_feminine_ending_probe_h1454.json)
+  (ending-proxy only); библиография Кочергиной 1983/1990 в
+  `METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md` Zan XXXIX (citation only); однокарточная
+  виза переписи Zan X —
+  [`review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html`](../review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html)
+  (spec + generated HTML; **не** влита unilaterally).
 ### Changed
+- **H1454 dispositions на 9 open items H1258:** APPLIED zan-18 (Талмуд j/h→k/ṣ),
+  zan-22 (peri formation share), zan-32 (Лейтан *dvigu*), zan-39 (библиография);
+  DEFERRED razdel-1-frame (errata census), zan-06 (accent fraction — DCS unaccented),
+  zan-12 (three-layer feminine); ESCALATED razdel-3-otsylki (Konspekt pages + Miller);
+  re-sheeted zan-10 (REJECT rewrite candidates). `EDITORIAL_NOTE_INDEX.tsv` rows for
+  this sheet terminalized; COMPANION v2 note for within-lesson reordering.
 - **Виза автора применена к v1 методички — H1258 (Sonnet 5 `claude-sonnet-5`), 12 approve /
   1 reject / 0 defer из 13.** `METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`,
   `_OTSYLKI_2026.md`, `_UPRAZHNENIIA_2026.md`: свернуты 12 одобренных заметок визы (рамка
