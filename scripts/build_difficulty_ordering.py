@@ -222,6 +222,71 @@ def analysis_B(freq, sentences_path):
     return results, join_rows
 
 
+def analysis_B_lemmatised(freq, sentences_path, chedaka):
+    """W2 (H1465): analysis_B re-joined on the vidyut-lemmatised token stream instead of
+    the exact SLP1 surface form, so inflected content words (verbs, declined nominals) join
+    the frequency table too, not just indeclinables/pronouns whose surface == lemma.
+    """
+    by_lemma = {r["lemma"]: r for r in freq}
+    sentences = json.load(open(sentences_path, encoding="utf-8"))
+
+    parsed = []  # (book, lesson_int, [lemma, ...]) — segment once, reuse for both passes
+    for s in sentences:
+        book = s["book"]
+        li = lesson_to_int(book, s["lesson"])
+        if li is None:
+            continue
+        slp1 = transliterate(s["text"], sanscript.DEVANAGARI, sanscript.SLP1)
+        lemmas = [t.lemma for t in chedaka.run(slp1) if t.lemma]
+        parsed.append((book, li, lemmas))
+
+    first_lesson = defaultdict(dict)
+    total_tokens = defaultdict(int)
+    tok_cov = defaultdict(int)
+    for book, li, lemmas in parsed:
+        for lemma in lemmas:
+            total_tokens[book] += 1
+            if lemma in by_lemma:
+                tok_cov[book] += 1
+            cur = first_lesson[book].get(lemma)
+            if cur is None or li < cur:
+                first_lesson[book][lemma] = li
+
+    results, join_rows = {}, []
+    for book, fl in first_lesson.items():
+        matched = [(lemma, les, by_lemma[lemma]) for lemma, les in fl.items()
+                   if lemma in by_lemma and by_lemma[lemma]["rank_all"] is not None]
+        types_total = len(fl)
+        types_matched = len(matched)
+        les_all = [m[1] for m in matched]
+        rank_all = [m[2]["rank_all"] for m in matched]
+        tau, tau_p = kendalltau(les_all, rank_all) if len(matched) >= 8 else (None, None)
+
+        # content-word-only: exclude indeclinables/pronouns, the exact classes that made
+        # the surface join easy — this speaks directly to the gap H913's Limitations named.
+        content = [m for m in matched if m[2]["pos"] not in ("ind", "pron")]
+        tau_c, tau_c_p = (kendalltau([m[1] for m in content], [m[2]["rank_all"] for m in content])
+                          if len(content) >= 8 else (None, None))
+
+        results[book] = {
+            "types_total": types_total,
+            "types_matched": types_matched,
+            "type_coverage_pct": round(100 * types_matched / types_total, 1) if types_total else 0,
+            "token_coverage_pct": round(100 * tok_cov[book] / total_tokens[book], 1) if total_tokens[book] else 0,
+            "kendall_tau_lesson_vs_freqrank": round(tau, 4) if tau is not None else None,
+            "kendall_p": tau_p,
+            "content_word_n": len(content),
+            "content_word_kendall_tau": round(tau_c, 4) if tau_c is not None else None,
+            "content_word_kendall_p": tau_c_p,
+        }
+        for lemma, l, fr in sorted(matched, key=lambda m: (m[1], m[2]["rank_all"])):
+            join_rows.append({"book": book, "lemma_slp1": lemma, "first_lesson": l,
+                              "rank_all": int(fr["rank_all"]),
+                              "count_all": int(fr["count_all"]) if fr["count_all"] else "",
+                              "pos": fr["pos"]})
+    return results, join_rows
+
+
 def analysis_C(summary_path):
     if not summary_path.exists():
         return []
