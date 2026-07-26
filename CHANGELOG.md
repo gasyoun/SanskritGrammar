@@ -24,6 +24,8 @@ changelog tags as `vX.Y.Z`.
 
 ### Changed
 
+- **A62 advanced 2→3/5: live-verified §7 related work, §2 survey table, abstract (H1464, Sonnet 5 `claude-sonnet-5`, [PR #511](https://github.com/gasyoun/SanskritGrammar/pull/511)).** [`OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md) §7 replaced its stub with 8 live-verified citations across 4 threads (L2 frequency/extensive reading — Nation 2001, Waring & Takaki 2003; ICALL — Heift & Schulze 2007; ACL readability — Xia/Kochmar/Briscoe W16-0502 + W16-0509; Sanskrit computational resources — Hellwig DCS, Goyal & Huet COLING 2012, vidyut); §2 survey table reproduces the field metadoc's §4a aspect×CEFR matrix; a full abstract added ahead of §1. Dropped (unverifiable/out of the 8-citation core, not fabricated): Śabdabrahman ACL-2024, LANGUAGECERT Classical Greek CEFR precedent, Samskrita Bharati/NPTEL/Ambuda/DharmaMitra/learnsanskrit.org learner-programme citations — none invented.
+
 - **Pedagogy last-mile wave-1 closed (Grok 4.5 `grok-4.5`, 26-07-2026).** H-A H1454+H1615 + H-B H1643 + H-C H1644 all merged; VERIFICATION A1–A3 ticked; residual human @DO = prod RQ4 flag, zan-10 rewrite vote, errata/Miller/Konspekt.
 
 
