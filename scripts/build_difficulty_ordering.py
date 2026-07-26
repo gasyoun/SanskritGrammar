@@ -297,6 +297,10 @@ def analysis_C(summary_path):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--freq", default=str(REPO.parent / "kosha" / "data" / "frequency" / "lemma_frequency.tsv"))
+    ap.add_argument("--lemmatised", action="store_true",
+                     help="also run analysis_B_lemmatised (W2, H1465): vidyut-lemmatised textbook join")
+    ap.add_argument("--vidyut-data", default=str(REPO.parent / "kosha" / "data" / "vidyut"),
+                     help="vidyut cheda+kosha data directory (see kosha data/vidyut)")
     args = ap.parse_args()
 
     freq_path = Path(args.freq)
