@@ -381,6 +381,13 @@ def main():
     print("=== Analysis C: existing S1 textbook-vs-textbook tau ===")
     for row in C:
         print(f"  {row['pair']}: tau={row['tau']} (n={row['n']})")
+    if B_lem is not None:
+        print("=== Analysis B' (W2): vidyut-lemmatised textbook join vs surface join ===")
+        for book, b in B.items():
+            lb = B_lem.get(book, {})
+            print(f"  {book}: surface cov {b['type_coverage_pct']}% -> lemmatised cov {lb.get('type_coverage_pct')}%, "
+                  f"tau {lb.get('kendall_tau_lesson_vs_freqrank')}, content-word tau {lb.get('content_word_kendall_tau')} "
+                  f"(n={lb.get('content_word_n')})")
     print(f"\nwrote -> {OUT}")
 
 
