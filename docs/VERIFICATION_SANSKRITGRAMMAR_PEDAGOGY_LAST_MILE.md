@@ -89,14 +89,14 @@ Record the **actual** commands that passed in the smoke PR; if filters renamed, 
 
 ## 4. Checklist (tick on close)
 
-- [x] A1 residual table committed / in merged PR — H1454 Kochergina (26-07-2026); Apte H1615 still open
-- [ ] A2 export + `--check` green
-- [ ] A2 LAST_MILE measured-status section live
-- [ ] A3 smoke log with item id + schema_version
-- [ ] A3 prod flag untouched
-- [x] CHANGELOG `[Unreleased]` bullets in touched repos — Kochergina book + root H1454 bullet
-- [ ] `.ai_state.md` Next Steps point at any residual human @DO (prod RQ4 flip)
-- [ ] GTD / RESULTS row + tracking issue comment if applicable
+- [x] A1 residual table committed / in merged PR — H1454 Kochergina ([PR #525](https://github.com/gasyoun/SanskritGrammar/pull/525)); H1615 Apte ([PR #524](https://github.com/gasyoun/SanskritGrammar/pull/524))
+- [x] A2 export + `--check` green — H1643 ([PR #523](https://github.com/gasyoun/SanskritGrammar/pull/523)); re-verified 26-07-2026: schema 1.0.0, 6 feeds, pytest green
+- [x] A2 LAST_MILE measured-status section live — H1643 §0 Measured status (25-07-2026)
+- [x] A3 smoke log with item id + schema_version — H1644 Systema ([PR #699](https://github.com/gasyoun/Systema-Sanscriticum/pull/699)): `pedagogy:sync-sg-export` + `SyncPedagogyExportFromSgTest` (local artisan re-run 26-07 blocked: no `vendor/` in this clone)
+- [x] A3 prod flag untouched — H1644 fence; no prod `features.rq4_study` flip
+- [x] CHANGELOG `[Unreleased]` bullets in touched repos — SG + Systema release notes for H1643/H1644/H1454/H1615
+- [x] `.ai_state.md` Next Steps point at residual human @DO (prod RQ4 flip + zan-10 vote + errata/Miller/Konspekt)
+- [x] Registry close H1454/H1615/H1643/H1644 → ✅ (Uprava handoff_close + reconcile flush 26-07-2026)
 
 ## 5. Post-wave human @DO (not agent wave-1)
 
