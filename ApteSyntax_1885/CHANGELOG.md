@@ -9,6 +9,9 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Changed
+- **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** [`review/EDITORIAL_NOTE_INDEX.tsv`](../review/EDITORIAL_NOTE_INDEX.tsv) rows for `sanskritgrammar-metodichka-apte-v1_17.07.26`: **zan-19 → APPLIED** (footnote H1275 + Elizarenkova 2004 corroboration H1373; index lag closed; named 1960 monograph not supplied = non-blocking Vedic residual only); **zan-22 → DEFERRED** (uta footnote applied; dashboard separate feature under 18-07-2026 consolidation freeze); **prilozhenie → DEFERRED** (cross-book calibration list under same freeze; no consolidated list in-repo). Revision-history row in [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md); prose body unchanged.
+
 ## [0.15.0] - 2026-07-21
 ### Added
 - **Корпусный слой методички (раздел II) — H1297 (Fable 5 `claude-fable-5`).**

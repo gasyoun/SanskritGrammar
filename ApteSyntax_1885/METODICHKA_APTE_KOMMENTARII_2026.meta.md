@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_APTE_KOMMENTARII_2026.md
 
-_Created: 17-07-2026 · Last updated: 21-07-2026_
+_Created: 17-07-2026 · Last updated: 26-07-2026_
 
 Companion record for the Apte print methodichka commentary manuscript
 ([`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md)).
@@ -56,8 +56,7 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
    the materials. The substitution is favourable: Apte § 210 concerns the *classical* aorist, the
    1960 monograph the Vedic one. APT-31 confirmed on both halves of Apte's claim. Scan gitignored
    as in-copyright. Residual — the 1960 monograph itself, if it ever arrives: a Vedic slice, not a
-   verdict change. **Still open from this round:** a standalone uta-statistics dashboard (зан-22);
-   a cross-book calibration table («что у кого лучше», приложение).
+   verdict change. **Terminalised H1615 (26-07-2026):** zan-19 APPLIED (H1373 already closed Elizarenkova with 2004 essays; index lag fixed); zan-22 DEFERRED (uta-statistics dashboard — separate feature under 18-07-2026 consolidation freeze); prilozhenie DEFERRED (cross-book calibration table — same freeze; no consolidated list in-repo).
 6. ~~**Corpus layer (раздел II)** — per-lemma DCS frequency band + one attested example
    with a Russian rendering for every lemma the раздел-I commentary turns on.~~
    ✅ **DONE (H1297, 21-07-2026):**
@@ -90,5 +89,6 @@ Covers all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE) + a stren
 | 19-07-2026 | Fable 5 (`claude-fable-5`) | H1275: все 8 одобренных правок визы доведены до письменной диспозиции (таблица «Ревизии правок визы» в рукописи). Сноски-оговорки 1–3 (зан-3/19/22) — настоящие `[^n]`-сноски вместо прозы; прямая перецитата формулировок правил по Лихушиной расширена на §§ 63/94/98/113/258; контрольная сверка Шерцля по `government_lexicon.jsonl` выявила и сняла три неточности цитирования H1205 (krudh «acc.», ruc «только», пропущенный dat. 160 у muc + глосса превербов). Елизаренкова (зан-19), dashboard (зан-22) и межкнижный список (приложение) отложены с именованными блокерами; zan-29 эскалирован на повторную визу (@DECIDE). |
 | 21-07-2026 | Fable 5 (`claude-fable-5`) | **Corpus layer (раздел II) authored — H1297.** 34 lemmas per занятие with DCS frequency bands + one attested DCS-2026 example each; examples selected to demonstrate the раздел-I government verdicts in living text; RU renderings freshly authored (no restricted layer opened); homonym-band caveat footnoted (hā, vara). Working TSVs under `corpus_layer/`, checks in `tests/test_corpus_layer.py`. Backlog item 6 added and closed. |
 | 20-07-2026 | Opus 4.8 (`claude-opus-4-8[1m]`) | H1373: сверка зан-19 с Елизаренковой выполнена — последний открытый `LOCAL`-пункт визы закрыт. Источник: очерки «Ведийский язык» (с. 20) и «Санскрит» (с. 28, 44) в «Языки мира: Индоарийские языки древнего и среднего периодов» (М.: Academia, 2004); названной в визе монографии «Аорист в Ригведе» (1960) среди переданных материалов не было, и замена ближе к делу (§ 210 — классический аорист). Вердикт APT-31 подтверждён по обеим половинам утверждения: аорист = совершенный вид, «только что произошедшее на глазах у субъекта»; несовершенный вид/длительность закреплены за имперфектом; в классике оппозиция нивелирована, выбор стилистический — независимое подтверждение Уитни §§ 927–929 и Апте § 207. Скан внесён в `.gitignore` (авторское право, порядок H552), цитируется по страницам печатного тома. |
+| 26-07-2026 | Grok 4.5 (`grok-4.5`) | H1615: residual Apte OPEN/PARTIAL index rows terminalised — zan-19 APPLIED (H1373 prose already live; index lag closed), zan-22 DEFERRED (dashboard under consolidation freeze), prilozhenie DEFERRED (cross-book calibration under same freeze). Zero bare OPEN/PARTIAL on Apte methodichka targets. |
 
 _Dr. Mārcis Gasūns_
