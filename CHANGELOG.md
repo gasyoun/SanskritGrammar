@@ -18,6 +18,10 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Changed
+
+- **Pedagogy last-mile wave-1 closed (Grok 4.5 `grok-4.5`, 26-07-2026).** H-A H1454+H1615 + H-B H1643 + H-C H1644 all merged; VERIFICATION A1–A3 ticked; residual human @DO = prod RQ4 flag, zan-10 rewrite vote, errata/Miller/Konspekt.
+
 
 ### Changed
 - **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** Index rows `sanskritgrammar-metodichka-apte-v1_17.07.26#zan-19|zan-22|prilozhenie` → APPLIED / DEFERRED / DEFERRED with revision-history evidence (VERIFICATION A1). Zero bare OPEN/PARTIAL on Apte methodichka targets. Details: [ApteSyntax_1885/CHANGELOG.md](ApteSyntax_1885/CHANGELOG.md).
