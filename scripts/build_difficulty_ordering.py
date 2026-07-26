@@ -340,6 +340,18 @@ def main():
         "analysis_B_textbook_vs_frequency": B,
         "analysis_C_textbook_vs_textbook_S1": C,
     }
+
+    B_lem = None
+    if args.lemmatised:
+        import vidyut.cheda as cheda
+        chedaka = cheda.Chedaka(args.vidyut_data)
+        B_lem, join_rows_lem = analysis_B_lemmatised(freq, REPO / "scripts" / "data" / "sentences.json", chedaka)
+        stats["analysis_B_lemmatised"] = B_lem
+        with open(OUT / "textbook_frequency_join_lemmatised.tsv", "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["book", "lemma_slp1", "first_lesson", "rank_all", "count_all", "pos"], delimiter="\t")
+            w.writeheader()
+            w.writerows(join_rows_lem)
+
     with open(OUT / "stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
 
