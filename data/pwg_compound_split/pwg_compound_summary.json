@@ -1,14 +1,26 @@
 {
   "study": "PWG compound (samāsa) segmentation layer",
-  "as_of": "2026-07-19",
+  "as_of": "2026-07-26",
   "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
-  "method": "first `+`-joined {#member#} chain in the entry head, ≥2 members, lead-compatible with the headword",
-  "compounds": 16745,
+  "method": "balanced etymology paren anchored on the entry's own `{#headword#}¦`, nested `[...]` blanked, split on `+` at depth 0, one member per part (first `{#…#}`, or the unique candidate that composes the headword where the part offers several), ≥2 members, lead-compatible with the headword",
+  "revision": "26-07-2026 (SanskritGrammar#527, H1703): headword-anchored + bracket-aware re-derivation. vs the 19-07-2026 cut — 16,094 rows unchanged, 139 members corrected, 512 dropped as unresolvable, 879 added that the old head-scan missed.",
+  "compounds": 17112,
   "arity_distribution": {
-    "2": 16729,
-    "3": 15,
-    "4": 1
+    "2": 17095,
+    "3": 17
   },
   "excluded_abbreviated_member_analyses": 18852,
-  "note": "PWG abbreviates a repeated stem with `˚` (A˚); such analyses are excluded here because the member is truncated — only fully-spelled member splits are kept."
+  "dropped_unresolved": {
+    "ambiguous_no_unique_cover": 357,
+    "ambiguous_sense_divider": 49,
+    "lead_mismatch": 94,
+    "no_head": 38,
+    "no_paren": 46146,
+    "paren_after_article_text": 4,
+    "paren_after_other_word": 6748,
+    "paren_too_far": 821,
+    "part_without_member": 9392,
+    "single_member": 23753
+  },
+  "note": "PWG abbreviates a repeated stem with `˚` (A˚); such analyses are excluded here because the member is truncated — only fully-spelled member splits are kept. `dropped_unresolved` counts entries whose paren could not be resolved to a top-level chain for THIS headword — no `¦` head, no paren, the paren analyses a neighbouring word, it sits too far into the article, it is unbalanced, a `+`-part carries no member or PWG's sense divider, the part offers several candidates and none uniquely composes the headword, only one member, or the first member is not a lead-compatible prefix. All dropped, never guessed at (SanskritGrammar#527)."
 }
