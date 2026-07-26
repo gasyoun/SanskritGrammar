@@ -1,6 +1,6 @@
 # Methodichka — a printed companion-commentary to Kochergina, *Учебник санскрита*
 
-_Created: 12-07-2026 · Last updated: 16-07-2026_
+_Created: 12-07-2026 · Last updated: 26-07-2026_
 
 The roadmap for a **thin printed companion booklet** (методичка) to V. A. Kochergina's
 *Учебник санскрита* — grammatical-accuracy notes, clarity/frequency refinements, extra
@@ -161,7 +161,7 @@ registry once the shape stabilizes (@DECIDE K-2).
 | **P3** | v1 exercise appendix (corpus reading + authored drills + key) | appendix `.md` (→ `exercises.yml` if needed) | H807 |
 | **P4** | v1 cross-reference "см. также" pointers | authored prose, reusing the concordance | H807 |
 | **P5** | Print assembly (RU manuscript → PDF) + MG viza | `book-press-prep` / manual | follow-on H### |
-| **v2** | Comprehensive commentary over all 43 claims / ~40 занятия; formal assembler; edition-diff errata; DCS-2026 re-run | registries | follow-on H### (built on the H768 harvest) |
+| **v2** | Comprehensive commentary over all 43 claims / ~40 занятия; formal assembler; edition-diff errata; DCS-2026 re-run; **within-lesson material reordering** flagged by MG at H1258/H1454 (`#razdel-1-frame`: «Где-то надо поменять местами материал в рамках одного урока» — no per-lesson map yet; collect candidates when errata/print pass runs) | registries | follow-on H### (built on the H768 harvest); H1454 residual |
 
 **v1 = P0–P4** in the H807 handoff. **P5 (print) and v2 (comprehensive)** are follow-on
 handoffs minted when v1 content is visaed.

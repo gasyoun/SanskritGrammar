@@ -17,11 +17,17 @@
 #   METODICHKA_KOCHERGINA_COMPANION_2026.md §4.3). build_errata.py ignores unknown fields,
 #   so the column is forward-compatible; the renderer picks it up when multi-edition rows exist.
 #
-# SEED STATUS (H807, 16-07-2026): entries deliberately left EMPTY. No printed errata sheet
-# is catalogued, no second-edition scan exists to diff against, and the digitized .mdx alone
-# cannot distinguish a 1998 print typo from a digitization artifact — inventing rows would
-# violate the "do not invent errata" guardrail. First real rows come from either (A) a printed
-# sheet transcription or (B) a build_errata.py diff once a second edition text lands.
+# SEED STATUS (H807, 16-07-2026; reaffirmed H1454, 26-07-2026): entries deliberately left EMPTY.
+# No printed errata sheet is catalogued, no second-edition scan exists to diff against, and the
+# digitized .mdx alone cannot distinguish a 1998 print typo from a digitization artifact —
+# inventing rows would violate the "do not invent errata" guardrail. First real rows come from
+# either (A) a printed sheet transcription or (B) a build_errata.py diff once a second edition
+# text lands.
+#
+# H1454 / visa #razdel-1-frame (MG): author census — «750+ typos in 1998/2015 printing,
+# ≥50 still in 2024 reprint» — is recorded as a visa note in
+# METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md, NOT expanded into invented page/line rows.
+# Disposition: DEFERRED until print/scans + K-1 edition pin.
 # NOTE the open caveat: LEARNER_MATERIALS.md records the digitized copy as the 2017 6th ed.
 # (ред. Н. П. Лихушина) while K-1 pins errata refs to 1998 — if the .mdx is later shown to
 # transcribe the 2017 text, re-open K-1 before citing any page/line.
