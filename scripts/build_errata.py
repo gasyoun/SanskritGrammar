@@ -233,13 +233,18 @@ def changelog_hints(changelog: Path, book_dir: str = None):
 
 
 def md_cell(s: str) -> str:
-    return (s or "").replace("|", "\\|").replace("\n", " ")
+    s = (s or "").replace("|", "\\|").replace("\n", " ")
+    return re.sub(r"([{}])", r"\\\1", s)  # MDX: an unescaped { or } starts an expression
+
+
+TIER_LABEL = {"erratum": "erratum", "revision": "↻ revision", "retraction": "🚫 retraction"}
 
 
 def render_book(work, entries, versions, book_dir):
     n = len(entries)
     fixed = sum(1 for e in entries if e.get("fixed_in"))
     openc = n - fixed
+    tiers_present = sorted({e["tier"] for e in entries})
     header = [
         f"# Errata — {work}",
         "",
@@ -271,14 +276,19 @@ def render_book(work, entries, versions, book_dir):
         return "\n".join(header + body), 0, 0, 0
     lines = header + [
         f"_Generated: {ddmmyyyy(TODAY)} · {n} errata "
-        f"({openc} open · {fixed} fixed in the digital edition)_",
+        f"({openc} open · {fixed} fixed in the digital edition) · tiers: "
+        f"{', '.join(TIER_LABEL[t] for t in tiers_present)}_",
         "",
         "**read** = the correct form · **instead of** = what the print shows. "
         "Line refs use the sources' Russian shorthand: `св.` = from the top "
-        "(сверху), `сн.` = from the bottom (снизу).",
+        "(сверху), `сн.` = from the bottom (снизу). Each row carries a stable "
+        "[id](https://aclanthology.org/info/ids/) and content checksum, per the "
+        "[ACL three-tier corrections model](https://aclanthology.org/info/corrections/) "
+        "— **erratum** (note alongside), **revision** (replacement, id gains `.v2`), "
+        "**retraction** (withdrawn, never deleted).",
         "",
-        "| # | Page | Line | Read | Instead of | Found by | Added | Status |",
-        "|--:|--:|--|--|--|--|--|--|",
+        "| # | ID | Tier | Page | Line | Read | Instead of | Found by | Added | Checksum | Status |",
+        "|--:|--|--|--:|--|--|--|--|--|--|--|",
     ]
     for i, e in enumerate(entries, 1):
         fx = e.get("fixed_in")
@@ -288,12 +298,21 @@ def render_book(work, entries, versions, book_dir):
         else:
             status = "open"
         found = md_cell("; ".join(e["found_by"]))
-        row = (f"| {i} | {md_cell(str(e['page']))} | {md_cell(e['line'])} | "
-               f"{md_cell(e['read'])} | {md_cell(e['instead'])} | {found} | "
-               f"{md_cell(e['date_added'])} | {status} |")
+        tier = e["tier"]
+        read_cell, instead_cell = md_cell(e["read"]), md_cell(e["instead"])
+        if tier == "retraction":
+            read_cell, instead_cell = f"~~{read_cell}~~", f"~~{instead_cell}~~"
+            status = "🚫 **RETRACTED**"
+        row = (f"| {i} | `{md_cell(e['id'])}` | {TIER_LABEL[tier]} | {md_cell(str(e['page']))} | "
+               f"{md_cell(e['line'])} | {read_cell} | {instead_cell} | {found} | "
+               f"{md_cell(e['date_added'])} | `{e['checksum']}` | {status} |")
         lines.append(row)
+        if tier == "revision":
+            lines.append(f"| | | | | | | | | | | _replaces `{md_cell(e['revises'])}`_ |")
+        if tier == "retraction":
+            lines.append(f"| | | | | | | | | | | _reason: {md_cell(str(e['reason']))}_ |")
         if e.get("note"):
-            lines.append(f"| | | | | | | | _{md_cell(str(e['note']))}_ |")
+            lines.append(f"| | | | | | | | | | | _{md_cell(str(e['note']))}_ |")
 
     hints = (changelog_hints(ROOT / book_dir / "CHANGELOG.md")
              + changelog_hints(ROOT / "CHANGELOG.md", book_dir))
