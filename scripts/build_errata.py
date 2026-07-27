@@ -351,10 +351,11 @@ def render_index(rows):
 
 
 def book_text_file(book_dir: str):
-    """The book's canonical human-readable text file (the .mdx, else a .md), not ERRATA.md."""
+    """The book's canonical human-readable text file (the .mdx, else a .md), not ERRATA.mdx/.md."""
     d = ROOT / book_dir
-    cands = sorted(d.glob("*.mdx")) or sorted(
-        p for p in d.glob("*.md") if p.name.upper() != "ERRATA.MD")
+    not_errata = lambda p: p.stem.upper() != "ERRATA"
+    cands = sorted(filter(not_errata, d.glob("*.mdx"))) or \
+        sorted(filter(not_errata, d.glob("*.md")))
     return cands[0] if cands else None
 
 
