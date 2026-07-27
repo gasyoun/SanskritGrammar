@@ -25,6 +25,7 @@ changelog tags as `vX.Y.Z`.
   export → Systema vendor → smoke cycle (build → `--check` → `pedagogy:sync-sg-export` →
   `php artisan test --filter=Rq4`), flag-OFF fence, rights fence, and a failure table
   including a CRLF/autocrlf sha256-drift gotcha found live while authoring it (H1673).
+<<<<<<< HEAD
   ⚠️ That gotcha's diagnosis was **wrong** and is corrected below (H1768).
 
 ### Fixed
@@ -52,6 +53,13 @@ changelog tags as `vX.Y.Z`.
   the existing `tests/test_pedagogy_export.py` could not catch this because its autouse
   fixture rebuilds the export first, comparing every build only to itself.
 
+- **H1676 — Sangram freeze-exit operator runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
+  [`docs/runbooks/SANGRAM_FREEZE_EXIT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/SANGRAM_FREEZE_EXIT.md)
+  documents the freeze-N matrix → SE/MO/WF probe → kill_gated-vs-survivor → visa-sheet-or-no-sheet
+  pipeline for the next Sangram freeze wave, first-classing the zero-survivors branch (H1614
+  pattern) with a disposition-memo template, when to call `/sangram-freeze-killgate` vs.
+  handoff-mint a new probe, and what an agent may still touch while the freeze is active. Cites
+  the existing skills rather than re-implementing them; runs no new freeze disposition.
 ### Added
 
 - **H1674 — methodichka visa-apply runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
