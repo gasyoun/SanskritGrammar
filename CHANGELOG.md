@@ -25,7 +25,6 @@ changelog tags as `vX.Y.Z`.
   export → Systema vendor → smoke cycle (build → `--check` → `pedagogy:sync-sg-export` →
   `php artisan test --filter=Rq4`), flag-OFF fence, rights fence, and a failure table
   including a CRLF/autocrlf sha256-drift gotcha found live while authoring it (H1673).
-<<<<<<< HEAD
   ⚠️ That gotcha's diagnosis was **wrong** and is corrected below (H1768).
 
 ### Fixed
