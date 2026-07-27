@@ -264,6 +264,49 @@ supply evidence into it and never restate it.
 | **RQ3** textbook-vs-corpus | the per-claim TRUE / OVERSTATED / FALSE verdict (A60) | PM5 (zero-attestation residue), PM2 (`mismatch` cells) | the PMs contribute attestation evidence; the verdict stays A60's and is never pronounced in this register. |
 | **RQ4** evaluation | **learning gain and retention — one instrument for the whole field** | *none by design* | **No PM may define a learning-gain or retention metric.** Every aspect claim stays a capability claim until RQ4's protocol measures an outcome. This is the one rule that keeps twelve aspects from growing twelve incompatible rulers. |
 
+### 4e′. Recalibration — the bars are proposed, and they expire
+
+**Review point: 27-09-2026** (two months after the register was written, 27-07-2026). A human
+should decide then whether to ratify the bars as they stand, revise them against whatever was
+measured in between, or leave them proposed for another window. Tracked as a `@DECIDE` row in
+[`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md);
+this section is the working material for that decision.
+
+**Nothing here is empirically calibrated.** Each bar was argued from the nearest available
+anchor at the time of writing — but the anchors differ enormously in strength, and pretending
+otherwise is how a proposed threshold quietly becomes a standard nobody chose. So the table
+below records, per bar, *what it was argued from* and *what would move it*. Read the
+**Anchor** column first: a bar resting on a measured number is a different kind of claim from
+one resting on an argument about learner tolerance.
+
+| PM | Bar | Anchor — what it was argued from | Strength | What would move it |
+|---|---|---|---|---|
+| **PM1** | ≥90% agreement | PM2's already-achieved 90.7% keyed share — a new gold set should not be held below what the existing one reaches | 🟠 measured, but **borrowed** from a different aspect | the first sandhi gold set: if 200 hand-checked items land far from 90%, the bar was transplanted, not derived |
+| **PM2** | ≥95% keyed | one step above today's measured 90.7% | 🟢 measured, same instrument | whether the Talmud Phase-4 bank's answer-keying is structurally harder than the attested-cell bank's — if so, 95% across the union is the wrong denominator |
+| **PM3** | 0 function words in top 100 | measured: 30 of the top-100 corpus lemmas are absent from the expert curation, all function words | 🟢 measured, and the bar is "do what the curation already does" | nothing about the count; only a decision that *some* function words should be drilled after all |
+| **PM4** | τ ≥ 0.40 | sits between two measured anchors — textbook-vs-frequency τ ≈ 0.05 and the weakest textbook-vs-textbook pair τ = 0.446 | 🟢 measured on **both** sides | the first scorer: if it lands at 0.30, decide whether "above the frequency floor" or "inside the human band" was the real requirement — the current bar assumes both |
+| **PM5** | ≥80% resolved | **none** — a judgment about what density a teaching surface needs | 🔴 unanchored | the first concordance sample; there is no reason to defend 80% over 70% today |
+| **PM6** | *(reporting rule, no threshold)* | n/a — a disclosure discipline, not a bar | — | only a change to what the on-ramp teaches |
+| **PM7** | ≥1 licensed unit | zero baseline; the bar is "more than nothing" | 🟢 trivially justified | nothing |
+| **PM8** | first 50 conjuncts ≥90% | **none** — an expectation that conjunct frequency is steeply Zipfian | 🔴 unanchored, and the distribution is **computable today** | computing it. This is the cheapest bar in the table to replace with a measurement |
+| **PM9** | ≥95% on the three commonest metres | **none** — from what an auto-graded drill can tolerate before it marks a correct answer wrong | 🟠 reasoned from consequence, not measured | the first gold set; also whether mis-IDs cluster in one metre (a per-metre bar may be right where a global one is not) |
+| **PM10** | precision ≥0.90 at recall ≥0.50 | **none** — from the asymmetric cost: a false error-flag on a correct form costs more learner trust than a miss | 🟠 reasoned from consequence | real learner data. The asymmetry argument is sound; the *numbers* are placeholders |
+| **PM11** | ≥85% auto-resolution | **none** — a cost-class boundary (below it, the guided interface becomes a manual-anchoring project) | 🔴 unanchored | a first sample; the *shape* of the argument (cost class) survives even if 85% does not |
+| **PM12** | ≤2% false positives | **none** — a judgment about learner tolerance for being wrongly corrected | 🔴 unanchored | measuring the current faultfinder against correct text — also cheap, also not yet done |
+
+**The honest summary: 4 of 12 bars rest on a measurement** (PM2, PM3, PM4, PM7), one is a
+disclosure rule with no threshold (PM6), and **7 are reasoned but unanchored** (PM1, PM5, PM8,
+PM9, PM10, PM11, PM12). Two of the unanchored ones — **PM8 and PM12** — could be replaced by a
+real number with existing data and no new build; that is the cheapest possible improvement to
+this register and the first thing to do before the review point.
+
+**Revision protocol.** A bar may be changed — that is expected, not a failure. It changes *in
+the open*: edit the bar here, state the measurement or argument that moved it, and add a row to
+[the metadoc's revision history](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.meta.md)
+recording the old value, the new one and why. **Never relax a bar in the same pass as the
+measurement that failed it** — that is the one move this whole register exists to prevent.
+Superseded values stay in the history rather than being overwritten.
+
 ---
 
 ## 5. The research agenda — the wave-1 spine
