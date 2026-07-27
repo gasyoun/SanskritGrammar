@@ -1,4 +1,8 @@
-_Created: 15-07-2026 · Last updated: 16-07-2026_
+_Created: 15-07-2026 · Last updated: 27-07-2026_
+
+> **Operator checklist → [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md)**
+> (H1672, 27-07-2026) — the human-only day-of/retention/stop-rules checklist for the §7 pilot.
+> This protocol's design is unchanged; the runbook only sequences the human steps.
 
 # RQ4 evaluation protocol — does the Zaliznyak on-ramp teach faster and retain better than Талмуд-first?
 

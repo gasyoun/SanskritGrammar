@@ -20,6 +20,19 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 ### Added
 
+- **H1672 — RQ4 human go-live ops runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
+  [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md)
+  is the missing human-operator checklist for the already-ruled RQ4 pilot — preflight (R20
+  cabinet non-collision window, closing 04-08-2026; Kochergina-stage-only cohort; verbatim §6.4
+  consent; flag/item-bank state), day-of flag-flip sequencing (`RQ4_STUDY` → `config:clear` →
+  `rq4:send-retention-reminders` scheduler check → smoke-test), 4-week retention path, stop rules
+  (n≈5, abort/rollback conditions), and after-pilot A32/GTD closure. No protocol redesign — every
+  decision it sequences was already ruled in
+  [docs/RQ4_EVALUATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md)
+  §6/§7 and [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md).
+  Cross-linked from the protocol's top banner. Fence stated first: no agent recruits, flips the
+  prod flag, or edits consent wording.
+
 - **H1514 — three-tier ACL-style errata schema + stable sentence-id grammar (Sonnet 5 `claude-sonnet-5`).** [`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py) generalizes to the [ACL corrections model](https://aclanthology.org/info/corrections/): every entry gets a `tier` (**erratum** default / **revision**, id gains `.v2` via `revises: <id>` / **retraction**, watermarked + needs a `reason`, never deleted), a stable `id` (`<book-slug>-<edition-year>.<page>.<n>`), a `date`, and a content `checksum`. Per-book output moved from `ERRATA.md` to `ERRATA.mdx` so it renders live on the Docusaurus site via the existing auto-discovery (zero `docusaurus.config.mjs` edits) — all 8 books' errata pages now build. [`TolchelnikovTalmud_2026/errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/errata.yml) carries one labelled schema-demonstration example of each tier (no book in this corpus has yet had a genuine revision or retraction). Separately, [`scripts/data/sentences.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json)'s 3,213 exercise-sentence ids moved from `buhler-I-1` to the `YEAR.VOLUME.NUMBER`-style `buhler-1923.I.1` (roadmap B2, [ACL id policy](https://aclanthology.org/info/ids/)); every downstream artifact that embeds these ids — `matches.json`, the hand-labeled gold set [`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv) (128 human verdicts preserved, only the id columns remapped), `buhler_provenance.{json,csv}`, `fidelity.json`, and prose citations in `BUHLER_SENTENCE_PROVENANCE_ADJUDICATION.md`/the Kochergina методичка — was migrated in lockstep (content verified byte-identical except the id format). `pytest` 195/195, `npm run build` green (per-book errata pages present, all three tiers render). Roadmap [Q3.5 / Angle B1–B2](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md). Handoff [H1514](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1514-Sonnet_SanskritGrammar_errata-corrections-schema-and-ids_22.07.26.md).
 
 ## [0.114.0] - 2026-07-27

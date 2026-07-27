@@ -4,9 +4,10 @@ _Created: 27-07-2026 · Last updated: 27-07-2026_
 
 > **Fence, read first:** agents prepare docs and code only. **No agent recruits, contacts, or
 > enrols a participant. No agent flips the production `RQ4_STUDY` flag. No agent alters the
-> consent wording below — it is reproduced byte-identical from the approved protocol.** This
-> document is an operator checklist for a **human**, not an execution script an agent may run
-> unattended.
+> consent wording below — it is reproduced byte-identical from the approved protocol. No
+> `csl-orig` involvement — this pilot touches only Systema-Sanscriticum and SanskritGrammar.**
+> This document is an operator checklist for a **human**, not an execution script an agent may
+> run unattended.
 
 This is the **execution runbook** for the already-ruled RQ4 pilot (on-ramp-first vs
 Талмуд-first). It does not redesign the study — every decision below is already closed in
