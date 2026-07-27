@@ -1,7 +1,7 @@
 # errata.yml — structured errata source for KnauerFrazy_1908
 #
-# This is the hand-edited source. ERRATA.md is GENERATED from it by
-# scripts/build_errata.py (npm run errata) — never edit ERRATA.md directly.
+# This is the hand-edited source. ERRATA.mdx is GENERATED from it by
+# scripts/build_errata.py (npm run errata) — never edit ERRATA.mdx directly.
 #
 # Each entry:
 #   page:       printed page number (integer)
@@ -12,6 +12,12 @@
 #   date_added: ISO date this erratum entered THIS list (not the reporter's date)
 #   fixed_in:   (optional) version tag once corrected in the digital .docx/.mdx, e.g. v0.2.0
 #   note:       (optional) free remark
+#   tier:       (optional) erratum (default) | revision | retraction — the ACL
+#               three-tier corrections model (https://aclanthology.org/info/corrections/).
+#   revises:    (revision only) the `id` of the entry this one replaces — its own
+#               id becomes `<that-id>.v2` (or `.v3`, ... for a chain).
+#   reason:     (retraction only) why this entry is withdrawn.
+#   id / date / checksum are never hand-authored — build_errata.py computes them.
 #
 # Rows that share (page, line, read, instead) are auto-merged, unioning found_by —
 # so an erratum listed by both the 1908 print sheet and the 2023 errata sheet
