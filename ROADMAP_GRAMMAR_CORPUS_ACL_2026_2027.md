@@ -451,4 +451,10 @@ The H1259/H1260/H1261 folder, model, and literal start lines are in §0. The Oct
 freeze triggers the two final agent passes named in the press-readiness checklist; the November
 publisher contact remains a human `@DO`, not an autonomous handoff.
 
+## Related documents (awareness weave H1728)
+
+- Claim-verification synthesis: [REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md)
+- kosha pedagogy + sandhi: [ROADMAP_KOSHA_PEDAGOGY_SURFACES_2026_2027.md](https://github.com/gasyoun/kosha/blob/main/docs/ROADMAP_KOSHA_PEDAGOGY_SURFACES_2026_2027.md) · [SANDHI_PROGRAMME.md](https://github.com/gasyoun/kosha/blob/main/SANDHI_PROGRAMME.md)
+
+
 _Dr. Mārcis Gasūns_

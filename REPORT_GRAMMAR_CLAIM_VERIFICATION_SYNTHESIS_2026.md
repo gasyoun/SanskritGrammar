@@ -706,4 +706,9 @@ HK-5, § 2.2), а пустота класса «система-против-уз
 17. Hoenen A. Lachmannian Archetype Reconstruction for Ancient Manuscript
     Corpora // NAACL 2015 ([N15-1127](https://aclanthology.org/N15-1127/)).
 
+## Related documents (awareness weave H1728)
+
+- Forward roadmap: [ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md)
+
+
 _Dr. Mārcis Gasūns_
