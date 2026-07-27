@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.114.0] - 2026-07-27
+### Added
+
+- **§4e′ — the PM bars now carry their provenance and an expiry date (Opus 5 1M `claude-opus-5[1m]`, 27-07-2026).** [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) §4e′ sets a **27-09-2026 review point** and records, per bar, *what it was argued from*, how strong that anchor is, and *what evidence would move it* — so recalibrating in two months is reading a table, not re-deriving twelve thresholds. The honest split it makes visible: **4 of 12 bars rest on a measurement** (PM2 on the 90.7% keyed share; PM3 on the 30-of-top-100 function-word count; PM4 between the measured τ ≈ 0.05 frequency floor and the 0.446 weakest textbook pair; PM7 trivially, from a zero baseline), one is a disclosure rule with no threshold (PM6), and **7 are reasoned but unanchored** (PM1, PM5, PM8, PM9, PM10, PM11, PM12). **PM8 and PM12 are computable from existing data** — the cheapest pre-review improvement, needing no new build. Revision protocol fixed in the same section: a bar changes in the open, with the measurement or argument that moved it and a metadoc history row keeping the superseded value, and **never in the same pass as the measurement that failed it**. Mirrored as a `@DECIDE` row in [`Uprava/GTD_NEXT_ACTIONS.md`](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) so the review point surfaces to a human on time rather than depending on someone re-reading the doc. Follow-up to [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md).
+
 ## [0.113.0] - 2026-07-27
 ### Added
 
