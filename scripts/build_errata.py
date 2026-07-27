@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-"""Generate per-book ERRATA.md (and a root index) from each book's errata.yml.
+"""Generate per-book ERRATA.mdx (and a root ERRATA.md index) from each book's errata.yml.
 
-Design: `<Book>/errata.yml` is the hand-edited structured source; `<Book>/ERRATA.md`
+Design: `<Book>/errata.yml` is the hand-edited structured source; `<Book>/ERRATA.mdx`
 is generated and must never be edited by hand — same "source + generate" pattern the
-repo already uses for `.docx -> .mdx`.
+repo already uses for `.docx -> .mdx`. It is `.mdx` (not `.md`) so the existing
+docusaurus.config.mjs/sidebars.mjs auto-discovery (any top-level dir containing an
+`.mdx`) picks it up on the site with zero config edits.
 
 What it does
 ------------
@@ -15,7 +17,11 @@ What it does
 4. Cross-references CHANGELOG.md: an entry with `fixed_in: vX.Y.Z` is rendered as
    "fixed" and the version is confirmed to exist in the changelog; changelog lines
    that mention a book + a correction keyword print a reminder to set `fixed_in`.
-5. Writes `<Book>/ERRATA.md` and a root `ERRATA.md` index.
+5. Assigns each entry a three-tier ACL-style correction record — `tier` (erratum /
+   revision / retraction, per https://aclanthology.org/info/corrections/), a stable
+   `id` (`YEAR.VOLUME.NUMBER`-style, per https://aclanthology.org/info/ids/), a
+   `date`, and a content `checksum` — see `assign_tiers()`.
+6. Writes `<Book>/ERRATA.mdx` and a root `ERRATA.md` index.
 
 Two ways errata get INTO a book's errata.yml:
   A. transcribe a printed errata/opechatki sheet (e.g. Knauer's 1908 + 2011/2015/2023 sheets);
@@ -36,6 +42,7 @@ import sys
 import re
 import difflib
 import datetime
+import hashlib
 import subprocess
 from pathlib import Path
 
