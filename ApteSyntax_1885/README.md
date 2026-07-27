@@ -25,7 +25,7 @@ rendered [Docusaurus page](https://gasyoun.github.io/SanskritGrammar/grammars/Ap
 | [Apte-unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.mdx) | **The main deliverable** — the full Russian translation of Apte's syntax (Likhushina v3.0, 2021), 15 lessons + introduction + abbreviations, in build-ready MDX |
 | [Apte-unicode.docx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.docx) · [Apte-unicode.doc](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.doc) | Source Word documents the `.mdx` is extracted from (the `.docx` is authoritative) |
 | [01_Apte.zip](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/01_Apte.zip) | The complete original working archive (~101 MB), unpacked under [`src/01_Apte/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885/src/01_Apte) |
-| [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/ERRATA.md) · [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml) | Per-book errata list (empty so far) — regenerate via the `/errata` skill |
+| [ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/ERRATA.mdx) · [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml) | Per-book errata list (empty so far) — regenerate via the `/errata` skill |
 
 ## Реестр проверенных утверждений (H1055, seed — фаза 2)
 

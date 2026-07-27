@@ -12,7 +12,7 @@ _Created: 16-07-2026 · Last updated: 22-07-2026_
 учебников-хрестоматий, находящихся в общественном достоянии, — Ф. И. Кнауэр, *Фразы* (1908;
 уроки 13–17 — эпизод о Нале) и G. Bühler, *Leitfaden* (1878/1923), — по банку предложений
 репозитория [sentences.json](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json)
-(3 213 предложений; идентификаторы вида `knauer-13-303` устойчивы). Совпадения между
+(3 213 предложений; идентификаторы вида `knauer-1908.13.303` устойчивы). Совпадения между
 учебниками сверены по [конкордансу](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx).
 Текст Кочергиной не цитируется.
 
@@ -35,7 +35,7 @@ ca · devaḥ · me (энкл.) · iva · gacchati · vā · te (энкл.) · n
 **Чтение X-1** (Bühler XII; общее с Кочергиной, конкорданс C0008):
 аश्वा अश्राम्यन्भूमावपतंश्च — aśvā aśrāmyan bhūmāv apataṃś ca.
 
-**Чтение X-2** (Bühler XXIII, `buhler-XXIII-514`):
+**Чтение X-2** (Bühler XXIII, `buhler-1923.XXIII.514`):
 उद्याने पतद्भ्यो विहगेभ्यो धान्यं किरतीः कन्या अपश्यम् —
 udyāne patadbhyo vihagebhyo dhānyaṃ kiratīḥ kanyā apaśyam.
 
@@ -49,7 +49,7 @@ bhavati → … · gacchati → … · vadati → … · paśyati → … · vas
 **Чтение XII-1** (Bühler XIII = Кнауэр 3 = Кочергина XIV, конкорданс C0058):
 पद्मं श्रिया वसतिः — padmaṃ śriyā vasatiḥ (śriyā ← śriyāḥ, G.sg от śrī, перед звонким).
 
-**Чтение XII-2** (Bühler XI, `buhler-XI-269`):
+**Чтение XII-2** (Bühler XI, `buhler-1923.XI.269`):
 नदीषु मत्स्यानपश्याम — nadīṣu matsyān apaśyāma.
 
 **Дрилл XII-1** ⟦MG-viza⟧. Просклоняйте nadī «река» в единственном числе.
@@ -59,10 +59,10 @@ nadī · rathī «колесничий» · senānī «полководец» ·
 
 ## К занятию XVI (IX класс презенса)
 
-**Чтение XVI-1** (Кнауэр 12, `knauer-12-279`):
+**Чтение XVI-1** (Кнауэр 12, `knauer-1908.12.279`):
 स एव पुरुषो यः क्रोधं हयमिव निगृह्णाति — sa eva puruṣo yaḥ krodhaṃ hayam iva nigṛhṇāti.
 
-**Чтение XVI-2** (Bühler XLII, `buhler-XLII-979`, фрагмент стиха):
+**Чтение XVI-2** (Bühler XLII, `buhler-1923.XLII.979`, фрагмент стиха):
 यद्ध्यायते यत्कुरुते धृतिं बध्नाति यत्र च … — yad dhyāyate yat kurute dhṛtiṃ badhnāti yatra ca …
 
 **Дрилл XVI-1** ⟦MG-viza⟧ (к заметке HK-19). Образуйте 3 л. ед. ч. настоящего времени
@@ -71,12 +71,12 @@ IX класса: krī «покупать» → … · jñā «знать» → �
 
 ## К занятию XVIII (будущее время)
 
-**Чтение XVIII-1** (Кнауэр 13, `knauer-13-303`; слова Дамаянти):
+**Чтение XVIII-1** (Кнауэр 13, `knauer-1908.13.303`; слова Дамаянти):
 यत्र भर्ता मे भविष्यति यत्र च तं नेष्यसि तत्राहं च गमिष्यामि —
 yatra bhartā me bhaviṣyati yatra ca taṃ neṣyasi tatrāhaṃ ca gamiṣyāmi.
 Три будущих в одной фразе: два seṭ (-iṣya-) и одно aniṭ (neṣyasi ← nī).
 
-**Чтение XVIII-2** (Кнауэр 13, `knauer-13-304`):
+**Чтение XVIII-2** (Кнауэр 13, `knauer-1908.13.304`):
 पतिं द्रक्ष्यसि कल्याणि क्षिप्रम् — patiṃ drakṣyasi kalyāṇi kṣipram
 (drakṣyasi ← dṛś: рефлекс палатального перед -sya, к заметке HK-21).
 
@@ -86,7 +86,7 @@ bhū → … · kṛ → … · dā → … · gam → … · dṛś → … · 
 
 ## К занятию XXI (простой перфект)
 
-**Чтение XXI-1** (Кнауэр 15, `knauer-15-337`; о Дамаянти):
+**Чтение XXI-1** (Кнауэр 15, `knauer-1908.15.337`; о Дамаянти):
 ततः प्रभृति न स्वस्था नलं प्रति बभूव सा — tataḥ prabhṛti na svasthā nalaṃ prati babhūva sā.
 
 **Дрилл XXI-1** ⟦MG-viza⟧. От каких корней образованы перфекты?
@@ -94,13 +94,13 @@ uvāca · jagāma · cakāra · babhūva · dadau · reme
 
 ## К занятию XXII (перифрастический перфект)
 
-**Чтение XXII-1** (Кнауэр 15, `knauer-15-333`):
+**Чтение XXII-1** (Кнауэр 15, `knauer-1908.15.333`):
 गतेषु पार्थिवेषु भीमो विवाहं कारयामास दमयन्त्या नलस्य च —
 gateṣu pārthiveṣu bhīmo vivāhaṃ kārayām āsa damayantyā nalasya ca.
 Каузатив kāray- + ām āsa — ровно тот шаблон °ayām āsa (3 л. ед. ч.), который
 покрывает девять случаев из десяти (раздел I, занятие XXII).
 
-**Чтение XXII-2** (Кнауэр 17, `knauer-17-370`):
+**Чтение XXII-2** (Кнауэр 17, `knauer-1908.17.370`):
 सत्यं चिकीर्षमाणस्तु धारयामास हृच्छयम् — satyaṃ cikīrṣamāṇas tu dhārayām āsa hṛcchayam.
 
 **Дрилл XXII-1** ⟦MG-viza⟧. Образуйте перифрастический перфект (3 л. ед. ч.):
@@ -109,10 +109,10 @@ vid «знать» → … (особый случай: вспомогатель�
 
 ## К занятию XXX (основы на -as, -is, -us)
 
-**Чтение XXX-1** (Кнауэр 6, `knauer-6-123`):
+**Чтение XXX-1** (Кнауэр 6, `knauer-1908.6.123`):
 हविषा देवा वर्तन्ते — haviṣā devā vartante.
 
-**Чтение XXX-2** (Bühler XXX = Кнауэр 19, `buhler-XXX-657`):
+**Чтение XXX-2** (Bühler XXX = Кнауэр 19, `buhler-1923.XXX.657`):
 स्वयंभुवा जगत्स्रष्टुं मनः कृतम् — svayaṃbhuvā jagat sraṣṭuṃ manaḥ kṛtam
 (manas ср. р.; svayaṃbhū — мужская основа на -ū, к дриллу XII-2).
 
@@ -156,11 +156,11 @@ gopasya bhayād vṛkaḥ śvānam amucad vanaṃ ca niragāt
 
 ## К занятию XXXIX (глагольные превербы)
 
-**Чтение XXXIX-1** (Bühler XXIV, `buhler-XXIV-532`):
+**Чтение XXXIX-1** (Bühler XXIV, `buhler-1923.XXIV.532`):
 एतस्यां पुरि श्रीमतो राज्ञोः समागमो ऽजायत —
 etasyāṃ puri śrīmato rājñoḥ samāgamo 'jāyata (samāgama ← sam + ā + gam).
 
-**Чтение XXXIX-2** (Bühler XXV, `buhler-XXV-548`):
+**Чтение XXXIX-2** (Bühler XXV, `buhler-1923.XXV.548`):
 विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति — vidvāṃso vidvadbhiḥ saha samāgamāya spṛhayanti.
 
 **Дрилл XXXIX-1** ⟦MG-viza⟧ (к заметке HK-40). Разложите на превербы и корень:

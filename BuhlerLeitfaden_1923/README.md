@@ -8,7 +8,7 @@ Elementarcursus des Sanskrit*, 1883), электронная версия 2.0 Н
 48 уроков. Исходники — [Buhler_Unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx)
 (читательская страница сайта) и `.doc`/`.docx`; система опечаток —
 [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml) →
-[ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.md);
+[ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.mdx);
 журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CHANGELOG.md).
 
 Отдельный производный набор данных — **указатель управления (Rektion) и падежного управления

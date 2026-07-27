@@ -11,7 +11,7 @@ _Created: 15-07-2026 · Last updated: 16-07-2026_
 `.doc`/`.docx`; система опечаток —
 [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/errata.yml)
 (пока пуст — ждёт печатного листа) →
-[ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/ERRATA.md);
+[ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/ERRATA.mdx);
 журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CHANGELOG.md).
 Написание фамилии в латинице — **Zalizniak** (i-написание: так автор процитирован в
 опубликованной статье Толчельникова; решение D2, 10-07-2026).

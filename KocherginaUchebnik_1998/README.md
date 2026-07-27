@@ -6,7 +6,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 [Kochergina_unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/Kochergina_unicode.mdx)
 (читательская страница сайта, 15 756 строк) и `.docx`; система опечаток —
 [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/errata.yml) →
-[ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.md)
+[ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.mdx)
 (пока пуст — ждёт печатного листа опечаток); журнал изменений —
 [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CHANGELOG.md).
 Смежные слои папки: реестр квантификаторов метаязыка

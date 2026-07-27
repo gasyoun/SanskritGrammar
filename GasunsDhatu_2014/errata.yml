@@ -1,6 +1,6 @@
 # errata.yml — structured errata source for GasunsDhatu_2014
 #
-# GENERATED target: ERRATA.md (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.md.
+# GENERATED target: ERRATA.mdx (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.mdx.
 #
 # Pages are those of the printed 2014 dissertation (487 pp.) where the 2014 TOC
 # lets them be anchored; `page: 0` = article-appendix or file-level item (the four
@@ -9,6 +9,13 @@
 # the human sign-off vehicle is the PR carrying this file.
 #
 # Entry shape: { page, line, read, instead, found_by, date_added, fixed_in?, note? }
+#
+# tier:    (optional) erratum (default) | revision | retraction — the ACL
+#          three-tier corrections model (https://aclanthology.org/info/corrections/).
+# revises: (revision only) the `id` of the entry this one replaces — its own
+#          id becomes `<that-id>.v2` (or `.v3`, ... for a chain).
+# reason:  (retraction only) why this entry is withdrawn.
+# id / date / checksum are never hand-authored — build_errata.py computes them.
 
 work: "Гасунс М.Ю. Состав и строй древнеиндийских корней: история изучения (дисс. 2014; печатное издание 2026 готовится)"
 
