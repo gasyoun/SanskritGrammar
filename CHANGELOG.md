@@ -18,6 +18,13 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+### Added
+
+- `docs/runbooks/PEDAGOGY_EXPORT_HOP.md` — standing operator runbook for the pedagogy
+  export → Systema vendor → smoke cycle (build → `--check` → `pedagogy:sync-sg-export` →
+  `php artisan test --filter=Rq4`), flag-OFF fence, rights fence, and a failure table
+  including a CRLF/autocrlf sha256-drift gotcha found live while authoring it (H1673).
 ### Added
 
 - **H1672 — RQ4 human go-live ops runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
