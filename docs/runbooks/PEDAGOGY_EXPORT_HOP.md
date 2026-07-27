@@ -1,6 +1,6 @@
 # Runbook — pedagogy export → Systema hop
 
-_Created: 26-07-2026 · Last updated: 26-07-2026_
+_Created: 26-07-2026 · Last updated: 28-07-2026_
 
 Operator contract for every future SanskritGrammar (SG) pedagogy-export → Systema-Sanscriticum
 vendor → smoke cycle. Consumed by the org `/export-consumer-smoke` skill for this repo pair.
@@ -77,7 +77,7 @@ the manifest) and logged, not silently included.
 | Symptom | Likely cause | Fix |
 |---|---|---|
 | `build_pedagogy_export.py --check` reports `FAIL: feed <id>: path/sha256 missing` | Manifest references a feed file that was deleted/renamed, or `build` was never run before `--check` | Re-run `python scripts/build_pedagogy_export.py` (no `--check`) to regenerate, then re-check |
-| `--check` reports `FAIL: feed <id>: sha256 drift` | The feed file's bytes changed after the manifest was written — **or** a Windows checkout with `core.autocrlf=true` silently rewrote the committed JSON's line endings on clone (LF→CRLF), so the working-tree sha256 no longer matches the pinned hash even though content is unchanged. Reproduced live during H1673 authoring on `methodichka_corpus_layer_pointers.json` | Confirm with `git diff <file>` — if git only warns about CRLF and shows no content diff, this is the autocrlf case: re-run `build` to regenerate the manifest against the current working-tree bytes (do **not** hand-edit the hash). If `git diff` shows a real content change, investigate before regenerating — an unexplained content drift is a data-integrity signal, not a formatting one |
+| `--check` reports `FAIL: feed <id>: sha256 drift` | The feed file's bytes genuinely changed after the manifest was written. **Historically this was also a false alarm** — until [H1768](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1768-Opus_SanskritGrammar_pedagogy-export-crlf-hash-platform-drift_27.07.26.md) the builder pinned the sha256 of whatever line endings the *building* checkout carried, so a Windows-built manifest failed on 4 of 6 feeds on every LF checkout (fresh clone, Linux, CI). That is fixed at source: the export is LF on every platform and the hashes are platform-invariant | Confirm with `git diff <file>`. Since H1768 a line-ending drift should be **impossible** — if you see one, do **not** just re-run `build` to make it go away (that was the old advice and it re-pinned the platform-local bytes, hiding the bug). Treat any drift as a real content change: find what wrote the file. `python -m pytest tests/test_pedagogy_export_lf_determinism.py` is the standing gate |
 | `php artisan pedagogy:sync-sg-export` errors on schema major | SG bumped `schema_version` to a new major and Systema's loader still pins the old major | This is the intended breaking-change gate (semver major = R8 in VERIFICATION §3) — update Systema's loader to accept the new major, do not force the version down |
 | `php artisan test --filter=Rq4` fails or the whole PHP suite is unreachable | Local PHP/Composer/Systema env not bootstrapped in this session (no `vendor/`, no `.env`, DB not migrated) | Document the blocked step explicitly (env, missing binary, error text) and stop — do not skip the smoke silently. This is the same class of soft-failure VERIFICATION §3 R3 already anticipates: log it, don't force it green |
 
