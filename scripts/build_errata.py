@@ -187,6 +187,9 @@ def load_book(yml: Path):
                 "date_added": str(e.get("date_added", "")).strip(),
                 "fixed_in": e.get("fixed_in"),
                 "note": e.get("note"),
+                "tier": e.get("tier") or DEFAULT_TIER,
+                "revises": e.get("revises"),
+                "reason": e.get("reason"),
             }
 
     def page_key(e):
