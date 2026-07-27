@@ -109,6 +109,33 @@ def _sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+# Text feeds are normalised to LF before hashing so the manifest's sha256 is a
+# property of the CONTENT, not of the OS that ran the build. Without this the
+# builder pinned the CRLF bytes a Windows checkout happens to carry, and
+# --check then failed on every LF checkout (fresh clone, Linux, CI) with a
+# 4-of-6 "sha256 drift" that looks like data corruption but is pure line-ending
+# skew. Consumers still verify a plain sha256 of the exported bytes — those
+# bytes are now LF everywhere, so the consumer contract is unchanged.
+_TEXT_SUFFIXES = {".json", ".tsv", ".csv", ".txt", ".md"}
+
+
+def _copy_feed(src: Path, dest: Path) -> None:
+    """Copy a feed, normalising CRLF -> LF for text formats."""
+    if src.suffix.lower() in _TEXT_SUFFIXES:
+        dest.write_bytes(src.read_bytes().replace(b"\r\n", b"\n"))
+    else:
+        shutil.copy2(src, dest)
+
+
+def _write_text_lf(path: Path, text: str) -> None:
+    """Write UTF-8 text with LF endings on every platform.
+
+    `Path.write_text` uses universal newlines, which silently rewrites "\\n" as
+    "\\r\\n" on Windows — the defect above.
+    """
+    path.write_text(text, encoding="utf-8", newline="\n")
+
+
 def _rel(path: Path) -> str:
     return path.relative_to(REPO).as_posix()
 
@@ -126,7 +153,7 @@ def build_export() -> dict:
             print(f"OMIT {spec['id']}: source missing ({src})", file=sys.stderr)
             continue
         dest = EXPORT_DIR / spec["export_name"]
-        shutil.copy2(src, dest)
+        _copy_feed(src, dest)
         feeds.append(
             {
                 "id": spec["id"],
@@ -156,9 +183,9 @@ def build_export() -> dict:
             "rights": "pointer-only-no-bulk-gloss",
         }
         live_pointers.append(entry)
-    pointers_path.write_text(
+    _write_text_lf(
+        pointers_path,
         json.dumps(live_pointers, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
     )
     feeds.append(
         {
@@ -179,9 +206,9 @@ def build_export() -> dict:
         "omissions": omitted,
     }
     manifest_path = EXPORT_DIR / MANIFEST_NAME
-    manifest_path.write_text(
+    _write_text_lf(
+        manifest_path,
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
     )
     print(f"Wrote { _rel(manifest_path) } schema_version={SCHEMA_VERSION} feeds={len(feeds)}")
     if omitted:

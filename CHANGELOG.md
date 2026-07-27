@@ -25,6 +25,33 @@ changelog tags as `vX.Y.Z`.
   export → Systema vendor → smoke cycle (build → `--check` → `pedagogy:sync-sg-export` →
   `php artisan test --filter=Rq4`), flag-OFF fence, rights fence, and a failure table
   including a CRLF/autocrlf sha256-drift gotcha found live while authoring it (H1673).
+  ⚠️ That gotcha's diagnosis was **wrong** and is corrected below (H1768).
+
+### Fixed
+
+- **H1768 — pedagogy export pinned Windows-CRLF hashes, so `--check` failed on every LF
+  checkout (Opus 5 1M `claude-opus-5[1m]`, 28-07-2026).**
+  [`data/pedagogy_export/export_manifest.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pedagogy_export/export_manifest.json)
+  pinned a per-feed sha256 computed over whatever line endings the *building* checkout
+  happened to carry. On Windows that is CRLF, so
+  [`scripts/build_pedagogy_export.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_pedagogy_export.py)
+  `--check` passed locally and **failed on 4 of 6 feeds** on any LF checkout — fresh clone,
+  Linux, CI — reporting `sha256 drift`, which reads as data corruption but was pure
+  line-ending skew. Since the Systema consumer (`pedagogy:sync-sg-export`) verifies the same
+  hashes, the vendor step was broken off-Windows too. Root cause: `Path.write_text` uses
+  universal newlines (LF→CRLF on Windows) for the two generated JSON feeds, and
+  `shutil.copy2` carried the CRLF bytes of the `.tsv` sources, which `.gitattributes` did not
+  cover. Fixed at source — `*.tsv text eol=lf`, an LF-normalising `_copy_feed()`, and
+  `_write_text_lf()`; the manifest is regenerated against LF bytes and now validates
+  identically on Windows and on a fresh LF clone. The prior H1673 runbook advice ("re-run
+  `build` to regenerate against the current working-tree bytes") **perpetuated** the bug by
+  re-pinning platform-local hashes, and is corrected in the runbook's failure table.
+  New standing gate
+  [`tests/test_pedagogy_export_lf_determinism.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_pedagogy_export_lf_determinism.py)
+  validates the **committed** manifest against the **committed** feed blobs via `git show` —
+  the existing `tests/test_pedagogy_export.py` could not catch this because its autouse
+  fixture rebuilds the export first, comparing every build only to itself.
+
 ### Added
 
 - **H1674 — methodichka visa-apply runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
