@@ -79,16 +79,11 @@ class TestAssignTiers:
         assert entries[0]["checksum"] == be.checksum(entries[0])
         assert entries[0]["date"] == "2026-01-01"
 
-    def test_revision_id_gains_v2_suffix(self, capsys):
+    def test_revision_id_gains_v2_suffix(self):
         base = self._entry(page=5, line="8 сн.")
-        rev = self._entry(page=5, line="9 сн.", tier="revision")
-        entries = [base, rev]
-        be.assign_tiers(entries, "TestBook_2020")
-        rev["revises"] = base["id"]
-        # re-run with the real base id now known (round-trip, characterizes the
-        # human editorial workflow: look up the base id, then set `revises`)
-        entries = [base, rev]
-        be.assign_tiers(entries, "TestBook_2020")
+        be.assign_tiers([base], "TestBook_2020")  # look up the base id first, as an editor would
+        rev = self._entry(page=5, line="9 сн.", tier="revision", revises=base["id"])
+        be.assign_tiers([base, rev], "TestBook_2020")
         assert rev["id"] == f"{base['id']}.v2"
 
     def test_revision_chain_increments_version(self):
