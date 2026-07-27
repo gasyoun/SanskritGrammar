@@ -58,6 +58,14 @@ TODAY = datetime.date.today()
 # something was actually corrected in the digital source do.
 CORRECTION_KEYWORDS = ("fixed", "corrected", "исправл")
 
+# The ACL corrections model (https://aclanthology.org/info/corrections/): three
+# tiers, append-only — an erratum is a note read alongside the original; a
+# revision is a full replacement (its id gains a `.v2`/`.v3`/... suffix); a
+# retraction withdraws an entry (watermarked, never deleted from errata.yml).
+TIERS = ("erratum", "revision", "retraction")
+DEFAULT_TIER = "erratum"
+CHECKSUM_LEN = 12
+
 
 def ddmmyyyy(d: datetime.date) -> str:
     return d.strftime("%d-%m-%Y")
