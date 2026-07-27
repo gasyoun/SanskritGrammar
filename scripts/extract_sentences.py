@@ -126,6 +126,13 @@ def split_iast_sentences(chunk):
     return sentences
 
 
+def sentence_id(book_id, edition_year, lesson_id, idx):
+    """Stable per-item id, `<book>-<edition-year>.<lesson>.<n>`, mirroring the
+    ACL `YEAR.VOLUME.NUMBER` id policy (https://aclanthology.org/info/ids/) —
+    e.g. `buhler-1923.XIV.10` (roadmap B2)."""
+    return f"{book_id}-{edition_year}.{lesson_id}.{idx}"
+
+
 def extract():
     all_sentences = []
     for book_id, cfg in BOOKS.items():
@@ -137,7 +144,7 @@ def extract():
             for sent in split_devanagari_sentences(chunk):
                 idx += 1
                 all_sentences.append({
-                    "id": f"{book_id}-{lesson_id}-{idx}",
+                    "id": sentence_id(book_id, cfg["edition_year"], lesson_id, idx),
                     "book": book_id,
                     "book_label": cfg["label"],
                     "year": cfg["year"],
@@ -148,7 +155,7 @@ def extract():
             for sent in split_iast_sentences(chunk):
                 idx += 1
                 all_sentences.append({
-                    "id": f"{book_id}-{lesson_id}-{idx}",
+                    "id": sentence_id(book_id, cfg["edition_year"], lesson_id, idx),
                     "book": book_id,
                     "book_label": cfg["label"],
                     "year": cfg["year"],
