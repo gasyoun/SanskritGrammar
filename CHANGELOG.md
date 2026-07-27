@@ -21,6 +21,18 @@ changelog tags as `vX.Y.Z`.
 
 ### Added
 
+- **H1675 — monthly errata + claims maintenance runbooks (Sonnet 5
+  `claude-sonnet-5`, 27-07-2026).**
+  [`docs/runbooks/MONTHLY_ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/MONTHLY_ERRATA.md)
+  and
+  [`docs/runbooks/CLAIMS_MAINTENANCE.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/CLAIMS_MAINTENANCE.md) —
+  one-pagers for the two recurring maintenance passes: Phase 1A printed-sheet intake /
+  Phase 1B edition-diff / Phase 3 `fixed_in` CHANGELOG cross-check for errata, and
+  rebuild-vs-check / per-book verify-script / harvest-promotion-rule for claims. Book
+  inventory verified live (8 books carry `errata.yml`, entry counts 0–93; 6 carry
+  `claims.yml`, 2 use variant instruments — `KnauerFrazy_1908` parse-audit,
+  `ZalizniakMorphology_1975` root-classifier). Both fence generated-file hand-editing
+  and point to `/errata` for full skill depth beyond the checklist.
 - `docs/runbooks/PEDAGOGY_EXPORT_HOP.md` — standing operator runbook for the pedagogy
   export → Systema vendor → smoke cycle (build → `--check` → `pedagogy:sync-sg-export` →
   `php artisan test --filter=Rq4`), flag-OFF fence, rights fence, and a failure table
