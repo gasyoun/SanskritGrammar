@@ -1,6 +1,6 @@
 # Metadoc — DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 27-07-2026_
 
 Companion record for [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
 — the "document about the document" a fresh session should read before editing the field metadoc.
@@ -31,10 +31,11 @@ Not a learner-facing document.
 
 1. **Fill the §4a matrix cells with counts, not just status glyphs** — once the asset inventory has per-cell tallies, the matrix becomes a coverage dashboard.
 2. **Auto-generate the §3 asset rows from a machine index** — today they are hand-curated; a `pedagogy_assets.tsv` (tagged on the six layers) driving both this doc and the derived views would keep them in sync and let the matrix/journey/capability pivots be generated, not maintained.
-3. **Add a per-aspect "first measurable result" line** — tie each aspect to the one metric that would prove progress (extends RQ4).
+3. ✅ **DONE 27-07-2026** ([H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md)) — **per-aspect "first measurable result"**: §4e now carries the PM1–PM12 register (metric + denominator · data source · today · bar · refutation condition), a per-aspect line in §3.1–3.12, a metric column in the §4a matrix, and the RQ-composition table that reserves learning gain and retention to RQ4 alone.
 4. **Wire the traditional-discipline (§4d) frame into the Sangram corpus-grammar** — the emic Vedāṅga axis is currently prose; it could anchor a real cross-tab.
 5. **Reconcile with kosha's `CONCORDANCE_ROADMAP.md` Q4** (Pāṇini-sūtra↔corpus) as it lands — §3.5's central gap.
 6. **Decide audio** (§3.7): TTS vs recorded reciter — the gating decision for the A0–A2 rungs (currently a GTD @DECIDE in the Systema ladder).
+7. **Keep §4e's "today" column from rotting** — 10 of the 12 PMs read "unmeasured", and the two that carry numbers (PM2, PM6) were computed from committed artifacts. Both are derivable, so the column is a generation target, not a maintenance chore — the natural extension of item 2.
 
 ## Limitations
 
@@ -42,6 +43,8 @@ Not a learner-facing document.
 - **External-project claims** (vidyut, Heritage, Samsaadhanii, DCS, VedaWeb capabilities) are as of the audit's knowledge; re-verify before citing in print.
 - **Not a learner document** — no lesson content lives here; it is a map, not a course.
 - **The derived views (§4) are illustrative**, not generated — until backlog item 2 lands, the matrix can lag the aspect rows.
+- **§4e's bars are proposed, not ratified.** Every PM's threshold (τ ≥ 0.40, ≥90% agreement, ≤2% false positives…) was set by argument from the nearest measured anchor — for PM4 the gap between the measured textbook-vs-frequency τ ≈ 0.05 floor and the textbook-vs-textbook 0.45–0.84 band; for PM2 the current 90.7% keyed share; elsewhere from what the aspect's consumer can tolerate. They are defensible starting bars, not empirically calibrated ones, and a first real measurement is the right moment to revise a bar — in the open, with the reason, not by quietly relaxing it.
+- **Ten of the twelve PMs read "unmeasured"** (27-07-2026). That is the honest state of the field, not an omission: only PM2 and PM6 have committed artifacts to compute from today. Do not read a missing number as a failing one.
 
 ## Related docs
 
@@ -54,6 +57,7 @@ Not a learner-facing document.
 | Date | Change | Model |
 |---|---|---|
 | 14-07-2026 | Created — field defined, 12 aspects mapped, 4-RQ agenda, gap register; registered org-wide | Opus 4.8 (`claude-opus-4-8`) |
+| 27-07-2026 | Backlog item 3 — §4e metric register (PM1–PM12): one falsifiable capability metric per aspect with data source, today's value, bar and refutation condition; metric column added to the §4a matrix and to the §3.8–3.12 table; §5 + §8 state the RQ4 exclusivity rule (no PM may measure learning gain or retention). Two baselines measured, not asserted: PM2 = 90.7% answer-keyed items, PM6 = 56.5% type / 56.2% DCS-token on-ramp scope transfer (new [`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py)). [H1476](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1476-Opus_SanskritGrammar_pedagogy-aspect-measurable-result-metrics_22.07.26.md) | Opus 5 (`claude-opus-5[1m]`) |
 
 ---
 
