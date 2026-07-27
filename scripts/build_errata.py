@@ -432,15 +432,19 @@ def main():
     for yml in ymls:
         book_dir = yml.parent.name
         work, entries = load_book(yml)
+        assign_tiers(entries, book_dir)
         # Each book's own CHANGELOG.md is authoritative for its fixed_in versions
         # (per-book release scheme, H318); fall back to the root CHANGELOG for any
         # fixed_in set before the split.
         versions = {**root_versions, **changelog_versions(ROOT / book_dir / "CHANGELOG.md")}
         md, n, openc, fixed = render_book(work, entries, versions, book_dir)
-        (yml.parent / "ERRATA.md").write_text(md, encoding="utf-8")
+        old = yml.parent / "ERRATA.md"
+        if old.exists():
+            old.unlink()  # superseded by ERRATA.mdx (docs-site auto-discovery)
+        (yml.parent / "ERRATA.mdx").write_text(md, encoding="utf-8")
         index_rows.append((book_dir, n, openc, fixed))
         print(f"  {book_dir}: {n} errata ({openc} open, {fixed} fixed) -> "
-              f"{book_dir}/ERRATA.md")
+              f"{book_dir}/ERRATA.mdx")
 
     # Refresh the root index over every book that currently has an errata.yml.
     all_rows = []
