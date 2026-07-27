@@ -80,8 +80,12 @@ def line_sort_key(line: str):
 
 
 def dedup_key(e: dict):
+    # tier is part of the key so a retraction/revision of an erratum — which
+    # naturally shares that erratum's (page, line, read, instead) — never merges
+    # into the row it is correcting.
     return (str(e.get("page", "")), str(e.get("line", "")).strip(),
-            str(e.get("read", "")).strip(), str(e.get("instead", "")).strip())
+            str(e.get("read", "")).strip(), str(e.get("instead", "")).strip(),
+            e.get("tier") or DEFAULT_TIER)
 
 
 def as_list(v):
