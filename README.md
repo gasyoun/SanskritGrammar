@@ -85,8 +85,8 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
 ## Errata
 
 **Most book folders carry an `errata.yml`** (seeded empty if they have no
-corrections yet) → a generated `ERRATA.md` — text corrections, separate from
-the book's own
+corrections yet) → a generated `ERRATA.mdx`, rendered live on the Docusaurus
+site alongside the book — text corrections, separate from the book's own
 [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
 (which records changes to *our digital* edition; see
 [Per-book releases](#per-book-releases) below — the
