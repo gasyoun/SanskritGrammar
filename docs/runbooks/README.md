@@ -30,11 +30,12 @@ siblings.
 | [`RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md) | ✅ merged | [H1672](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1672-Sonnet_SanskritGrammar_runbook-rq4-go-live-human_26.07.26.md) | Human-operator checklist for the RQ4 pilot (n≈5) go-live: preflight, flag-flip sequencing, retention path, stop rules. |
 | [`PEDAGOGY_EXPORT_HOP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/PEDAGOGY_EXPORT_HOP.md) | ✅ merged | [H1673](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1673-Sonnet_SanskritGrammar_runbook-pedagogy-export-hop_26.07.26.md) | Pedagogy export → Systema vendor → smoke cycle (build → `--check` → sync → RQ4 smoke test), flag-OFF/rights fences, failure table. |
 | [`METHODICHKA_VISA_APPLY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/METHODICHKA_VISA_APPLY.md) | ✅ merged | [H1674](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1674-Sonnet_SanskritGrammar_runbook-methodichka-visa-apply_26.07.26.md) | Methodichka residual visa-apply checklist runbook (procedure; apply itself remains H1454/H1615). |
-| (monthly errata + claims maintenance one-pager) | 🟡 pending handoff | [H1675](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1675-Sonnet_SanskritGrammar_runbook-monthly-errata-claims_26.07.26.md) | Monthly `npm run errata` / `npm run claims` maintenance cycle. |
+| [`MONTHLY_ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/MONTHLY_ERRATA.md) | ✅ merged | [H1675](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1675-Sonnet_SanskritGrammar_runbook-monthly-errata-claims_26.07.26.md) | Monthly `npm run errata` maintenance cycle (printed-sheet intake, edition-diff, CHANGELOG cross-check). |
+| [`CLAIMS_MAINTENANCE.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/CLAIMS_MAINTENANCE.md) | ✅ merged | [H1675](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1675-Sonnet_SanskritGrammar_runbook-monthly-errata-claims_26.07.26.md) | `npm run claims` rebuild/check + harvest-promotion cadence. |
 | (Sangram freeze-exit operator runbook) | 🟡 pending handoff | [H1676](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1676-Sonnet_SanskritGrammar_runbook-sangram-freeze-exit_26.07.26.md) | Sangram freeze-exit procedure (zero-survivors = no review sheet, per H1614). |
 
-Rows for H1675–H1676 will get their filename + a full-blob-URL link and flip to ✅ merged as
-each sibling PR lands — update this table in the same pass as that merge, do not re-author the
+The H1676 row will get its filename + a full-blob-URL link and flip to ✅ merged as that
+sibling PR lands — update this table in the same pass as that merge, do not re-author the
 runbook body here.
 
 ## Related
