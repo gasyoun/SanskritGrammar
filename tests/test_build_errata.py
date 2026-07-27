@@ -6,6 +6,8 @@ line-ref. These tests pin that behavior against a synthetic errata.yml fixture.
 """
 import datetime
 
+import pytest
+
 import build_errata as be
 
 
