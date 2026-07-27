@@ -1,6 +1,6 @@
 # Last-mile pipeline — kosha → learner (Systema): the contract spec
 
-_Created: 14-07-2026 · Last updated: 25-07-2026_
+_Created: 14-07-2026 · Last updated: 26-07-2026_
 
 Specifies the **"last mile"** [MEGABOOK §14.2](https://github.com/gasyoun/Uprava/blob/main/MEGABOOK.md) flags
 as the chain's main unclosed link: how the open kosha data/lookup layer feeds the Tier-0
@@ -23,10 +23,10 @@ Model: Opus 4.8 (`claude-opus-4-8[1m]`). Measured-status + export packaging: H16
 | **Hop C** difficulty advisory | **Shipped** | `resources/data/kosha_reading_pack_difficulty.json` consumption, H965 |
 | **RQ4 study harness** | **Shipped, flag OFF** | `/rq4-study`, `Rq4StudyController`, `resources/data/rq4_item_bank.json`, tests `Rq4*`, H987; prod flip = human @DO (H1261 residual) |
 | **SG public-safe export package** | **This handoff (H1643)** | [`data/pedagogy_export/export_manifest.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pedagogy_export/export_manifest.json) · `python scripts/build_pedagogy_export.py` · `--check` · pytest `tests/test_pedagogy_export.py` |
-| **Local hop smoke (export → Systema load)** | **Queued H1644** | Depends on H1643 merge |
+| **Local hop smoke (export → Systema load)** | **Shipped (H1644)** | `pedagogy:sync-sg-export` artisan command, `Rq4`/`SyncPedagogyExportFromSg` tests green, flag OFF — [Systema PR #699](https://github.com/gasyoun/Systema-Sanscriticum/pull/699) |
 | **Production `features.rq4_study` flip** | **Human @DO** | Not agent-unattended |
 
-**Remaining gaps (do not invent new hops):** (1) keep export hashes CI-green; (2) H1644 local/staging smoke; (3) human production flag + cohort ops. Vendored-file ruling in §1 is unchanged.
+**Remaining gaps (do not invent new hops):** (1) keep export hashes CI-green; (2) human production flag + cohort ops. Vendored-file ruling in §1 is unchanged. Standing operator runbook for repeating the export→vendor→smoke cycle: [`docs/runbooks/PEDAGOGY_EXPORT_HOP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/PEDAGOGY_EXPORT_HOP.md) (H1673).
 
 **Consumer entry point for SG feeds:**
 
