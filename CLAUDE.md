@@ -63,6 +63,8 @@ Three layers in one repo (full orientation:
 | `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
 
+Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](https://github.com/gasyoun/SanskritGrammar/tree/main/docs/runbooks).
+
 ## Traps
 
 - ⚠️ **`Concordance/Usha-PhD-Sampurna.pdf` has a broken text layer** (Sanskrit2003
