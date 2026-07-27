@@ -20,6 +20,25 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 ### Added
 
+- **H1674 — methodichka visa-apply runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
+  [`docs/runbooks/METHODICHKA_VISA_APPLY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/METHODICHKA_VISA_APPLY.md)
+  documents the reusable procedure for terminalising residual OPEN/PARTIAL editorial notes on
+  a methodichka companion after a `/review-sheet` round: mandatory re-audit of
+  `review/EDITORIAL_NOTE_INDEX.tsv` first (a prior apply PR may already have closed notes a
+  stale plan still lists as OPEN), then per-note classification into the three terminal states
+  — **APPLIED** (edit + dated revision-history row citing `sheet_id#item_id`), **DEFERRED**
+  (evidence/data genuinely missing — a named probe stub, never an invented number), or
+  **re-sheet** (the note is a research question, not an edit — moved to
+  `EDITORIAL_NOTE_INDEX_EXCLUDED.tsv` and queued as a fresh `@DECIDE`, the `zan-29` class). Also
+  covers when to call `/decisions-apply` (clean batch verdicts) vs hand-apply (per-item
+  editorial judgment, the H1454/H1615 pattern — no dedicated apply script exists for these
+  targets) and re-sheet generation via `/review-sheet`. This is process documentation only —
+  it does **not** re-apply the H1454 (Kochergina) / H1615 (Apte) residual backlogs those
+  handoffs still own.
+  [`docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md)'s
+  H-A row now points here for future waves. Handoff
+  [H1674](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1674-Sonnet_SanskritGrammar_runbook-methodichka-visa-apply_26.07.26.md).
+
 - **H1672 — RQ4 human go-live ops runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
   [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md)
   is the missing human-operator checklist for the already-ruled RQ4 pilot — preflight (R20
