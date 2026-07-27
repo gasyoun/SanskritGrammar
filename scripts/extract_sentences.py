@@ -31,18 +31,21 @@ BOOKS = {
     "buhler": {
         "label": "Bühler 1923",
         "year": 1878,  # historical first edition; this file is the 1923 reprint proxy
+        "edition_year": 1923,  # the edition this .mdx is actually transcribed from — used in `id`
         "path": os.path.join(ROOT, "BuhlerLeitfaden_1923", "Buhler_Unicode.mdx"),
         "lesson_re": re.compile(r"^#\s*УРОК\s+([IVXL]+)\.?\s*$", re.MULTILINE),
     },
     "knauer": {
         "label": "Knauer 1908",
         "year": 1908,
+        "edition_year": 1908,
         "path": os.path.join(ROOT, "KnauerFrazy_1908", "Frazy-Knauer-03.05.2023.mdx"),
         "lesson_re": re.compile(r"^#\s*Nr\.\s*(\d+)\s*\(([^)]*)\)\.?\s*$", re.MULTILINE),
     },
     "kochergina": {
         "label": "Kochergina 1998",
         "year": 1998,
+        "edition_year": 1998,
         "path": os.path.join(ROOT, "KocherginaUchebnik_1998", "Kochergina_unicode.mdx"),
         "lesson_re": re.compile(r"^Занятие\s+([IVXL]+)\s*$", re.MULTILINE),
     },
