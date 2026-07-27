@@ -43,7 +43,7 @@ _Created: 16-07-2026 · Last updated: 26-07-2026_
 выше и мест с недостаточно четкой формулировкой); часть материала внутри отдельных
 занятий нуждается в перестановке. Опечатки — предмет отдельного реестра
 [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/errata.yml)
-→ [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.md)
+→ [ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.mdx)
 (H807 P2; поле `edition` есть, строки пусты по guardrail «не изобретать errata» —
 постраничный census 750+/≥50 ждет сверки с печатью/сканами, K-1 edition pin
 открыт). Перестановка материала внутри занятий — задача v2

@@ -85,8 +85,8 @@ npm run convert     # scripts/docx_to_mdx.py  (Pandoc)  then  scripts/mdx_postpr
 ## Errata
 
 **Most book folders carry an `errata.yml`** (seeded empty if they have no
-corrections yet) → a generated `ERRATA.md` — text corrections, separate from
-the book's own
+corrections yet) → a generated `ERRATA.mdx`, rendered live on the Docusaurus
+site alongside the book — text corrections, separate from the book's own
 [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md)
 (which records changes to *our digital* edition; see
 [Per-book releases](#per-book-releases) below — the
@@ -110,11 +110,11 @@ Same "source + generate" pattern as the `.mdx`:
 | File | Role |
 |---|---|
 | [`<Book>/errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/errata.yml) | hand-edited structured source (one entry per correction) |
-| [`<Book>/ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md) | **generated** table — never hand-edited |
+| [`<Book>/ERRATA.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.mdx) | **generated** table — never hand-edited; `.mdx` so it renders on the site like the book itself |
 | [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) (root) | generated per-book index with open/fixed counts |
 
 ```sh
-npm run errata                              # regenerate every book's ERRATA.md + the index
+npm run errata                              # regenerate every book's ERRATA.mdx + the index
 python scripts/build_errata.py KnauerFrazy_1908   # one book
 ```
 
@@ -124,18 +124,35 @@ one row citing all of them), and cross-references **that book's own
 CHANGELOG** (falling back to the root CHANGELOG for any `fixed_in` set before
 the per-book split): set `fixed_in: v0.X.Y` on an entry once the typo is
 corrected in the digital source and it renders `✓ fixed in v0.X.Y` instead of
-`open`. The whole workflow — ingesting a pasted errata sheet, the edition-diff
-path, regenerating, and the monthly CHANGELOG cross-check — is wrapped in the
-`/errata` skill. Eight books have an `errata.yml`
+`open`. Every entry also carries a three-tier ACL-style correction record —
+**erratum** (note read alongside the original), **revision** (a full
+replacement; its `id` gains a `.v2`/`.v3`/... suffix via `revises: <id>`), or
+**retraction** (withdrawn, watermarked, never deleted; needs a `reason`) —
+per the [ACL corrections model](https://aclanthology.org/info/corrections/),
+plus a stable `id` (`YEAR.VOLUME.NUMBER`-style, per the
+[ACL id policy](https://aclanthology.org/info/ids/)) and a content
+`checksum`; see the doc comment in any `errata.yml`. The whole workflow —
+ingesting a pasted errata sheet, the edition-diff path, regenerating, and the
+monthly CHANGELOG cross-check — is wrapped in the `/errata` skill. Eight
+books have an `errata.yml`
 ([ApteSyntax_1885](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml),
 BuhlerLeitfaden_1923, GasunsDhatu_2014, KnauerFrazy_1908, KocherginaUchebnik_1998,
-TolchelnikovTalmud_2026, ZalizniakKonspekt_2004, ZalizniakOcherk_1978). Two lists
-are populated so far:
-[`GasunsDhatu_2014`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.md)
-(75 errata — 71 open, 4 fixed — accrued from the 2026 revision passes) and
-[`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md)
-(25 errata from the 1908 print and the 2011/2015/2023 errata sheets); the other
-six are seeded empty and ready to fill. `ZalizniakMorphology_1975`,
+TolchelnikovTalmud_2026, ZalizniakKonspekt_2004, ZalizniakOcherk_1978); five
+lists are populated:
+[`GasunsDhatu_2014`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.mdx)
+(93 errata — 64 open, 29 fixed — accrued from the 2026 revision passes),
+[`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.mdx)
+(25 errata from the 1908 print and the 2011/2015/2023 errata sheets),
+[`BuhlerLeitfaden_1923`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.mdx)
+(8, from H797 claims-verification) and
+[`ZalizniakOcherk_1978`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/ERRATA.mdx)
+(2, from the H978 crosswalk encoding pass), plus
+[`TolchelnikovTalmud_2026`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/ERRATA.mdx)
+(3 — a labelled schema demonstration, not real corrections: no book in this
+corpus has yet had a genuine revision or retraction, so H1514 parked one
+worked example of each tier there so all three render on the site). The other
+three (`ApteSyntax_1885`, `KocherginaUchebnik_1998`, `ZalizniakKonspekt_2004`)
+are seeded empty and ready to fill. `ZalizniakMorphology_1975`,
 `Concordance`, and `SubjectConcordance` are not yet wired into the
 errata/changelog system (no `errata.yml`, no per-book `CHANGELOG.md` yet).
 

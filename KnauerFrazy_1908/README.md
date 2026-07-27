@@ -10,7 +10,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 **отдельному, не оцифрованному** тому грамматики Кнауэра) и `.doc`/`.docx`; система
 опечаток — [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/errata.yml)
 (31 запись с печатного листа опечаток — единственная из книг репозитория с заполненным
-реестром) → [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.md);
+реестром) → [ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.mdx);
 журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/CHANGELOG.md).
 
 ## Аудит морфологических разборов (H797, фаза 2 — развилка метода)

@@ -6,6 +6,8 @@ line-ref. These tests pin that behavior against a synthetic errata.yml fixture.
 """
 import datetime
 
+import pytest
+
 import build_errata as be
 
 
@@ -24,7 +26,102 @@ class TestSmallHelpers:
 
     def test_dedup_key_stringifies_and_strips(self):
         e = {"page": 5, "line": " 8 сн. ", "read": "x", "instead": "y"}
-        assert be.dedup_key(e) == ("5", "8 сн.", "x", "y")
+        assert be.dedup_key(e) == ("5", "8 сн.", "x", "y", "erratum")
+
+    def test_dedup_key_tier_disambiguates_same_page_line_text(self):
+        e1 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        e2 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y", "tier": "retraction"}
+        assert be.dedup_key(e1) != be.dedup_key(e2)
+
+
+class TestChecksum:
+    def test_deterministic_over_content_fields(self):
+        e = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        assert be.checksum(e) == be.checksum(dict(e))
+
+    def test_changes_when_content_changes(self):
+        e1 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        e2 = {"page": 5, "line": "8 сн.", "read": "x2", "instead": "y"}
+        assert be.checksum(e1) != be.checksum(e2)
+
+    def test_length(self):
+        e = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        assert len(be.checksum(e)) == be.CHECKSUM_LEN
+
+
+class TestBookSlugYear:
+    def test_splits_camelcase_and_trailing_year(self):
+        assert be.book_slug_year("BuhlerLeitfaden_1923") == ("buhler-leitfaden", "1923")
+
+    def test_single_word_name(self):
+        assert be.book_slug_year("GasunsDhatu_2014") == ("gasuns-dhatu", "2014")
+
+    def test_no_trailing_year_falls_back(self):
+        assert be.book_slug_year("NoYearHere") == ("noyearhere", "")
+
+
+class TestAssignTiers:
+    def _entry(self, **kw):
+        base = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y",
+                "found_by": [], "date_added": "2026-01-01", "fixed_in": None, "note": None,
+                "tier": "erratum", "revises": None, "reason": None}
+        base.update(kw)
+        return base
+
+    def test_erratum_gets_fresh_sequential_id_per_page(self):
+        entries = [self._entry(page=5, line="8 сн."), self._entry(page=5, line="9 сн."),
+                   self._entry(page=6, line="1 св.")]
+        be.assign_tiers(entries, "TestBook_2020")
+        assert [e["id"] for e in entries] == [
+            "test-book-2020.5.1", "test-book-2020.5.2", "test-book-2020.6.1"]
+
+    def test_checksum_and_date_populated(self):
+        entries = [self._entry()]
+        be.assign_tiers(entries, "TestBook_2020")
+        assert entries[0]["checksum"] == be.checksum(entries[0])
+        assert entries[0]["date"] == "2026-01-01"
+
+    def test_revision_id_gains_v2_suffix(self):
+        base = self._entry(page=5, line="8 сн.")
+        be.assign_tiers([base], "TestBook_2020")  # look up the base id first, as an editor would
+        rev = self._entry(page=5, line="9 сн.", tier="revision", revises=base["id"])
+        be.assign_tiers([base, rev], "TestBook_2020")
+        assert rev["id"] == f"{base['id']}.v2"
+
+    def test_revision_chain_increments_version(self):
+        base = self._entry(page=5, line="8 сн.")
+        be.assign_tiers([base], "TestBook_2020")
+        rev1 = self._entry(page=5, line="9 сн.", tier="revision", revises=base["id"])
+        rev2 = self._entry(page=5, line="10 сн.", tier="revision", revises=base["id"])
+        entries = [base, rev1, rev2]
+        be.assign_tiers(entries, "TestBook_2020")
+        assert rev1["id"] == f"{base['id']}.v2"
+        assert rev2["id"] == f"{base['id']}.v3"
+
+    def test_revision_without_revises_exits(self):
+        entries = [self._entry(tier="revision")]
+        with pytest.raises(SystemExit):
+            be.assign_tiers(entries, "TestBook_2020")
+
+    def test_revision_with_unknown_revises_exits(self):
+        entries = [self._entry(tier="revision", revises="nope-2020.1.1")]
+        with pytest.raises(SystemExit):
+            be.assign_tiers(entries, "TestBook_2020")
+
+    def test_retraction_without_reason_exits(self):
+        entries = [self._entry(tier="retraction")]
+        with pytest.raises(SystemExit):
+            be.assign_tiers(entries, "TestBook_2020")
+
+    def test_retraction_with_reason_gets_fresh_id(self):
+        entries = [self._entry(tier="retraction", reason="withdrawn")]
+        be.assign_tiers(entries, "TestBook_2020")
+        assert entries[0]["id"] == "test-book-2020.5.1"
+
+    def test_unknown_tier_exits(self):
+        entries = [self._entry(tier="nonsense")]
+        with pytest.raises(SystemExit):
+            be.assign_tiers(entries, "TestBook_2020")
 
 
 class TestLineSortKey:

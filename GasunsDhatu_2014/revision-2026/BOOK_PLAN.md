@@ -115,7 +115,7 @@ MG «Route 2»): отдельный A4-лист `APPENDIX7_PRINT_SHEET.html`
 
 | Актив | Состояние |
 |---|---|
-| Errata-контур: [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/errata.yml) + [ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.md) | 75 позиций; 71 открыто, но большинство — черновики, ждущие визы |
+| Errata-контур: [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/errata.yml) + [ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.mdx) | 75 позиций; 71 открыто, но большинство — черновики, ждущие визы |
 | Пересчет всех вычислительных данных §2.5–2.6 (H382, [DATA_RECOMPUTE_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/DATA_RECOMPUTE_MEMO.md)) | ✅ Табл. 1–3 подтверждены, Табл. 4–5 пересмотрены; скрипты воспроизводимы |
 | Черновики положений П1/П4/П7/П9/П10 + блок «Верификация положений» ([PROPOSALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PROPOSALS.md)) | черновики готовы (H328/H415) — **ждут визы автора** |
 | RWS-стилистический проход: [RWS_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_REPORT.md) (1 127 находок) + [RWS_REPORT_ZALIZNIAK9.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_REPORT_ZALIZNIAK9.md) | выполнен; 5 errata-строк ждут визы; сплошная литредактура — человек |

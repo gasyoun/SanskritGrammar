@@ -44,7 +44,7 @@ switches to real literature once the student can read it. Provenance is therefor
 *curricular* variable, not a stylistic one, and any per-lesson claim must control for it.
 
 **2. 82 % of attested sentences sit in consecutive runs.** 56 of the 68 attested sentences
-(82.4 %) are adjacent to another attested sentence, forming 20 multi-sentence runs. `buhler-XIII-304` +
+(82.4 %) are adjacent to another attested sentence, forming 20 multi-sentence runs. `buhler-1923.XIII.304` +
 `-305` are the two lines of *Hitopadeśa* I's `lobhāt krodhaḥ prabhavati…`; `-341`/`-342`
 and `-464`/`-465` likewise. Bühler splits a verse across consecutive exercise numbers, one
 pāda-pair each.
@@ -111,11 +111,11 @@ editorial interventions by Bühler, which is itself the evidence that he adapted
 
 | Sentence | Attested form | Bühler's change |
 |---|---|---|
-| `buhler-XXXVI-829` | `aśeṣadoṣaduṣṭo 'pi` (Hitop. 2) | → `anekadoṣaduṣṭo 'pi` |
-| `buhler-XXXVI-826` | `śubhaṃ vā dvijasattama` (MBh 3, 200) | → `śubhaṃ vā yadi sattama` |
-| `buhler-XXXVII-845` | `nirloṭhitena` (Rājataraṅgiṇī 5) | → `nirluṇṭhitena` |
-| `buhler-XXV-539` | `vidyā lambhyate sarvaṃ` (Sprüche) | → `vidyayā labhyate sarvaṃ` |
-| `buhler-XX-457` | `tvaṃ jīva śaradaḥ suvarcā` (AVP 1, 13) | → `tvaṃ jīva śaradaḥ śatam` |
+| `buhler-1923.XXXVI.829` | `aśeṣadoṣaduṣṭo 'pi` (Hitop. 2) | → `anekadoṣaduṣṭo 'pi` |
+| `buhler-1923.XXXVI.826` | `śubhaṃ vā dvijasattama` (MBh 3, 200) | → `śubhaṃ vā yadi sattama` |
+| `buhler-1923.XXXVII.845` | `nirloṭhitena` (Rājataraṅgiṇī 5) | → `nirluṇṭhitena` |
+| `buhler-1923.XXV.539` | `vidyā lambhyate sarvaṃ` (Sprüche) | → `vidyayā labhyate sarvaṃ` |
+| `buhler-1923.XX.457` | `tvaṃ jīva śaradaḥ suvarcā` (AVP 1, 13) | → `tvaṃ jīva śaradaḥ śatam` |
 
 The last is the sentence MG named. It is **adapted, not quoted**: the benediction formula
 `jīva śaradaḥ śatam` is genuinely Vedic and recurs across the gṛhya literature, but
@@ -138,9 +138,9 @@ expansion of the haystack, aimed squarely at the register the first pass said wa
 
 | Sentence | was | now | evidence |
 |---|---|---|---|
-| `buhler-XIII-312` `ratho dhyaṣṭhīyata rāmeṇa` | invented | adapted | Bhaṭṭi, *Rāvaṇavadha* |
-| `buhler-XXXV-806` `ācārādvicyuto vipro…` | invented | quotation | Manusmṛti (GRETIL) |
-| `buhler-XXXVIII-889` `yadā sa devo` | invented | unknown | Manusmṛti, 10 chars |
+| `buhler-1923.XIII.312` `ratho dhyaṣṭhīyata rāmeṇa` | invented | adapted | Bhaṭṭi, *Rāvaṇavadha* |
+| `buhler-1923.XXXV.806` `ācārādvicyuto vipro…` | invented | quotation | Manusmṛti (GRETIL) |
+| `buhler-1923.XXXVIII.889` `yadā sa devo` | invented | unknown | Manusmṛti, 10 chars |
 
 88.5 % invented → 88.0 % invented. **The invention finding survives a targeted attempt to
 break it**, which is a much stronger claim than the original "upper bound" caveat. And the
@@ -148,7 +148,7 @@ kāvya finding survives in the sharpest possible way: 56 kāvya texts yielded **
 new attestation — Bhaṭṭi's *Rāvaṇavadha*, which is the one kāvya composed to illustrate
 Pāṇinian grammar. The single poem Bühler drew on is the poem that is itself a grammar.
 
-`buhler-XXXV-806` is methodologically the interesting one. DCS stores it as
+`buhler-1923.XXXV.806` is methodologically the interesting one. DCS stores it as
 `ācārāt vicyutaḥ vipraḥ na veda phalam aśnute` — **analyzed word forms, not the sandhied
 surface** — while GRETIL has the true `ācārād vicyuto vipro na vedaphalam aśnute`. The DCS
 column is named `text_sandhied` but is not reliably sandhied, which silently downgrades

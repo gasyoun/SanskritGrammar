@@ -1,6 +1,6 @@
 # errata.yml — structured errata source for ApteSyntax_1885
 #
-# GENERATED target: ERRATA.md (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.md.
+# GENERATED target: ERRATA.mdx (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.mdx.
 #
 # This book has no printed errata sheet catalogued yet. Add corrections either by:
 #   A. transcribing a printed errata/opechatki sheet (see KnauerFrazy_1908/errata.yml for the shape), or
@@ -9,6 +9,13 @@
 #      then fold reviewed candidates from errata.candidates.yml into `entries` below.
 #
 # Entry shape: { page, line, read, instead, found_by, date_added, fixed_in?, note? }
+#
+# tier:    (optional) erratum (default) | revision | retraction — the ACL
+#          three-tier corrections model (https://aclanthology.org/info/corrections/).
+# revises: (revision only) the `id` of the entry this one replaces — its own
+#          id becomes `<that-id>.v2` (or `.v3`, ... for a chain).
+# reason:  (retraction only) why this entry is withdrawn.
+# id / date / checksum are never hand-authored — build_errata.py computes them.
 
 work: "Apte, Sanskrit syntax reference (reprint reference 1885; 2022 electronic edition)"
 

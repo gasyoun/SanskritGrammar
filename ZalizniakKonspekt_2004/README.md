@@ -11,7 +11,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 (читательская страница сайта; грамматической прозы ~65 строк) и `.doc`/`.docx`; система
 опечаток — [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/errata.yml)
 (пока пуст — ждёт печатного листа) →
-[ERRATA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/ERRATA.md);
+[ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/ERRATA.mdx);
 журнал изменений — [CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/CHANGELOG.md).
 Написание фамилии в латинице — **Zalizniak** (i-написание; решение D2, 10-07-2026).
 

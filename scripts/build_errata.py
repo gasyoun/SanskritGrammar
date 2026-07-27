@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-"""Generate per-book ERRATA.md (and a root index) from each book's errata.yml.
+"""Generate per-book ERRATA.mdx (and a root ERRATA.md index) from each book's errata.yml.
 
-Design: `<Book>/errata.yml` is the hand-edited structured source; `<Book>/ERRATA.md`
+Design: `<Book>/errata.yml` is the hand-edited structured source; `<Book>/ERRATA.mdx`
 is generated and must never be edited by hand — same "source + generate" pattern the
-repo already uses for `.docx -> .mdx`.
+repo already uses for `.docx -> .mdx`. It is `.mdx` (not `.md`) so the existing
+docusaurus.config.mjs/sidebars.mjs auto-discovery (any top-level dir containing an
+`.mdx`) picks it up on the site with zero config edits.
 
 What it does
 ------------
@@ -15,7 +17,11 @@ What it does
 4. Cross-references CHANGELOG.md: an entry with `fixed_in: vX.Y.Z` is rendered as
    "fixed" and the version is confirmed to exist in the changelog; changelog lines
    that mention a book + a correction keyword print a reminder to set `fixed_in`.
-5. Writes `<Book>/ERRATA.md` and a root `ERRATA.md` index.
+5. Assigns each entry a three-tier ACL-style correction record — `tier` (erratum /
+   revision / retraction, per https://aclanthology.org/info/corrections/), a stable
+   `id` (`YEAR.VOLUME.NUMBER`-style, per https://aclanthology.org/info/ids/), a
+   `date`, and a content `checksum` — see `assign_tiers()`.
+6. Writes `<Book>/ERRATA.mdx` and a root `ERRATA.md` index.
 
 Two ways errata get INTO a book's errata.yml:
   A. transcribe a printed errata/opechatki sheet (e.g. Knauer's 1908 + 2011/2015/2023 sheets);
@@ -36,6 +42,7 @@ import sys
 import re
 import difflib
 import datetime
+import hashlib
 import subprocess
 from pathlib import Path
 
@@ -51,6 +58,14 @@ TODAY = datetime.date.today()
 # something was actually corrected in the digital source do.
 CORRECTION_KEYWORDS = ("fixed", "corrected", "исправл")
 
+# The ACL corrections model (https://aclanthology.org/info/corrections/): three
+# tiers, append-only — an erratum is a note read alongside the original; a
+# revision is a full replacement (its id gains a `.v2`/`.v3`/... suffix); a
+# retraction withdraws an entry (watermarked, never deleted from errata.yml).
+TIERS = ("erratum", "revision", "retraction")
+DEFAULT_TIER = "erratum"
+CHECKSUM_LEN = 12
+
 
 def ddmmyyyy(d: datetime.date) -> str:
     return d.strftime("%d-%m-%Y")
@@ -65,14 +80,82 @@ def line_sort_key(line: str):
 
 
 def dedup_key(e: dict):
+    # tier is part of the key so a retraction/revision of an erratum — which
+    # naturally shares that erratum's (page, line, read, instead) — never merges
+    # into the row it is correcting.
     return (str(e.get("page", "")), str(e.get("line", "")).strip(),
-            str(e.get("read", "")).strip(), str(e.get("instead", "")).strip())
+            str(e.get("read", "")).strip(), str(e.get("instead", "")).strip(),
+            e.get("tier") or DEFAULT_TIER)
 
 
 def as_list(v):
     if v is None:
         return []
     return v if isinstance(v, list) else [v]
+
+
+def checksum(e: dict) -> str:
+    """Content fixity hash over the fields that define a correction — recomputed,
+    never hand-authored. A yml entry whose text changes without its tier/id
+    changing is exactly the case the ACL model calls a `revision`."""
+    payload = "|".join([str(e.get("page", "")), e.get("line", ""),
+                        e.get("read", ""), e.get("instead", "")])
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:CHECKSUM_LEN]
+
+
+def book_slug_year(book_dir: str):
+    """'BuhlerLeitfaden_1923' -> ('buhler-leitfaden', '1923')."""
+    name, sep, year = book_dir.rpartition("_")
+    if not sep or not year.isdigit():
+        return book_dir.lower(), ""
+    slug = re.sub(r"(?<!^)(?=[A-Z])", "-", name).lower()
+    return slug, year
+
+
+def assign_tiers(entries: list, book_dir: str):
+    """Assign each entry its ACL-style `tier`, `id`, `date`, `checksum`.
+
+    id grammar: `<book-slug>-<edition-year>.<page>.<n>` (n = 1-based sequence
+    within that page), mirroring the ACL `YEAR.VOLUME.NUMBER` id policy
+    (https://aclanthology.org/info/ids/). erratum/retraction entries each get a
+    fresh id; a `revision` entry does not — it inherits its `revises` target's id
+    with a `.v2`/`.v3`/... suffix (the id "gains a version", per the corrections
+    policy), so `revises` must name an id already assigned to another entry in
+    this same book.
+    """
+    slug, year = book_slug_year(book_dir)
+    page_seq: dict = {}
+    revision_counts: dict = {}
+    fresh, deferred = [], []
+    for e in entries:
+        e["tier"] = e.get("tier") or DEFAULT_TIER
+        if e["tier"] not in TIERS:
+            sys.exit(f"{book_dir}: unknown tier {e['tier']!r} (page {e.get('page')}, "
+                      f"line {e.get('line')!r}) — must be one of {TIERS}")
+        e["date"] = e.get("date_added", "")
+        e["checksum"] = checksum(e)
+        if e["tier"] == "retraction" and not e.get("reason"):
+            sys.exit(f"{book_dir}: retraction (page {e.get('page')}, line {e.get('line')!r}) "
+                      "needs a `reason`")
+        (deferred if e["tier"] == "revision" else fresh).append(e)
+
+    for e in fresh:
+        p = str(e.get("page", ""))
+        page_seq[p] = page_seq.get(p, 0) + 1
+        e["id"] = f"{slug}-{year}.{p}.{page_seq[p]}" if year else f"{slug}.{p}.{page_seq[p]}"
+
+    assigned_ids = {e["id"] for e in fresh}
+    for e in deferred:
+        base = e.get("revises")
+        if not base:
+            sys.exit(f"{book_dir}: revision (page {e.get('page')}, line {e.get('line')!r}) "
+                      "needs a `revises: <id>` pointing at the entry it replaces")
+        if base not in assigned_ids and base not in revision_counts:
+            sys.exit(f"{book_dir}: revision `revises: {base}` does not match any "
+                      "entry id in this book")
+        revision_counts[base] = revision_counts.get(base, 1) + 1
+        e["id"] = f"{base}.v{revision_counts[base]}"
+        assigned_ids.add(e["id"])
 
 
 def load_book(yml: Path):
@@ -104,6 +187,9 @@ def load_book(yml: Path):
                 "date_added": str(e.get("date_added", "")).strip(),
                 "fixed_in": e.get("fixed_in"),
                 "note": e.get("note"),
+                "tier": e.get("tier") or DEFAULT_TIER,
+                "revises": e.get("revises"),
+                "reason": e.get("reason"),
             }
 
     def page_key(e):
@@ -147,13 +233,18 @@ def changelog_hints(changelog: Path, book_dir: str = None):
 
 
 def md_cell(s: str) -> str:
-    return (s or "").replace("|", "\\|").replace("\n", " ")
+    s = (s or "").replace("|", "\\|").replace("\n", " ")
+    return re.sub(r"([{}])", r"\\\1", s)  # MDX: an unescaped { or } starts an expression
+
+
+TIER_LABEL = {"erratum": "erratum", "revision": "↻ revision", "retraction": "🚫 retraction"}
 
 
 def render_book(work, entries, versions, book_dir):
     n = len(entries)
     fixed = sum(1 for e in entries if e.get("fixed_in"))
     openc = n - fixed
+    tiers_present = sorted({e["tier"] for e in entries})
     header = [
         f"# Errata — {work}",
         "",
@@ -185,14 +276,19 @@ def render_book(work, entries, versions, book_dir):
         return "\n".join(header + body), 0, 0, 0
     lines = header + [
         f"_Generated: {ddmmyyyy(TODAY)} · {n} errata "
-        f"({openc} open · {fixed} fixed in the digital edition)_",
+        f"({openc} open · {fixed} fixed in the digital edition) · tiers: "
+        f"{', '.join(TIER_LABEL[t] for t in tiers_present)}_",
         "",
         "**read** = the correct form · **instead of** = what the print shows. "
         "Line refs use the sources' Russian shorthand: `св.` = from the top "
-        "(сверху), `сн.` = from the bottom (снизу).",
+        "(сверху), `сн.` = from the bottom (снизу). Each row carries a stable "
+        "[id](https://aclanthology.org/info/ids/) and content checksum, per the "
+        "[ACL three-tier corrections model](https://aclanthology.org/info/corrections/) "
+        "— **erratum** (note alongside), **revision** (replacement, id gains `.v2`), "
+        "**retraction** (withdrawn, never deleted).",
         "",
-        "| # | Page | Line | Read | Instead of | Found by | Added | Status |",
-        "|--:|--:|--|--|--|--|--|--|",
+        "| # | ID | Tier | Page | Line | Read | Instead of | Found by | Added | Checksum | Status |",
+        "|--:|--|--|--:|--|--|--|--|--|--|--|",
     ]
     for i, e in enumerate(entries, 1):
         fx = e.get("fixed_in")
@@ -202,12 +298,21 @@ def render_book(work, entries, versions, book_dir):
         else:
             status = "open"
         found = md_cell("; ".join(e["found_by"]))
-        row = (f"| {i} | {md_cell(str(e['page']))} | {md_cell(e['line'])} | "
-               f"{md_cell(e['read'])} | {md_cell(e['instead'])} | {found} | "
-               f"{md_cell(e['date_added'])} | {status} |")
+        tier = e["tier"]
+        read_cell, instead_cell = md_cell(e["read"]), md_cell(e["instead"])
+        if tier == "retraction":
+            read_cell, instead_cell = f"~~{read_cell}~~", f"~~{instead_cell}~~"
+            status = "🚫 **RETRACTED**"
+        row = (f"| {i} | `{md_cell(e['id'])}` | {TIER_LABEL[tier]} | {md_cell(str(e['page']))} | "
+               f"{md_cell(e['line'])} | {read_cell} | {instead_cell} | {found} | "
+               f"{md_cell(e['date_added'])} | `{e['checksum']}` | {status} |")
         lines.append(row)
+        if tier == "revision":
+            lines.append(f"| | | | | | | | | | | _replaces `{md_cell(e['revises'])}`_ |")
+        if tier == "retraction":
+            lines.append(f"| | | | | | | | | | | _reason: {md_cell(str(e['reason']))}_ |")
         if e.get("note"):
-            lines.append(f"| | | | | | | | _{md_cell(str(e['note']))}_ |")
+            lines.append(f"| | | | | | | | | | | _{md_cell(str(e['note']))}_ |")
 
     hints = (changelog_hints(ROOT / book_dir / "CHANGELOG.md")
              + changelog_hints(ROOT / "CHANGELOG.md", book_dir))
@@ -239,17 +344,18 @@ def render_index(rows):
         "|--|--:|--:|--:|",
     ]
     for book, n, openc, fixed in rows:
-        lines.append(f"| [{book}]({book}/ERRATA.md) | {n} | {openc} | {fixed} |")
+        lines.append(f"| [{book}]({book}/ERRATA.mdx) | {n} | {openc} | {fixed} |")
     lines += ["", f"_Auto-generated by [`scripts/build_errata.py`]"
               f"(scripts/build_errata.py) on {ddmmyyyy(TODAY)}._", ""]
     return "\n".join(lines)
 
 
 def book_text_file(book_dir: str):
-    """The book's canonical human-readable text file (the .mdx, else a .md), not ERRATA.md."""
+    """The book's canonical human-readable text file (the .mdx, else a .md), not ERRATA.mdx/.md."""
     d = ROOT / book_dir
-    cands = sorted(d.glob("*.mdx")) or sorted(
-        p for p in d.glob("*.md") if p.name.upper() != "ERRATA.MD")
+    not_errata = lambda p: p.stem.upper() != "ERRATA"
+    cands = sorted(filter(not_errata, d.glob("*.mdx"))) or \
+        sorted(filter(not_errata, d.glob("*.md")))
     return cands[0] if cands else None
 
 
@@ -326,15 +432,19 @@ def main():
     for yml in ymls:
         book_dir = yml.parent.name
         work, entries = load_book(yml)
+        assign_tiers(entries, book_dir)
         # Each book's own CHANGELOG.md is authoritative for its fixed_in versions
         # (per-book release scheme, H318); fall back to the root CHANGELOG for any
         # fixed_in set before the split.
         versions = {**root_versions, **changelog_versions(ROOT / book_dir / "CHANGELOG.md")}
         md, n, openc, fixed = render_book(work, entries, versions, book_dir)
-        (yml.parent / "ERRATA.md").write_text(md, encoding="utf-8")
+        old = yml.parent / "ERRATA.md"
+        if old.exists():
+            old.unlink()  # superseded by ERRATA.mdx (docs-site auto-discovery)
+        (yml.parent / "ERRATA.mdx").write_text(md, encoding="utf-8")
         index_rows.append((book_dir, n, openc, fixed))
         print(f"  {book_dir}: {n} errata ({openc} open, {fixed} fixed) -> "
-              f"{book_dir}/ERRATA.md")
+              f"{book_dir}/ERRATA.mdx")
 
     # Refresh the root index over every book that currently has an errata.yml.
     all_rows = []
