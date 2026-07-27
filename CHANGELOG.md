@@ -21,6 +21,9 @@ changelog tags as `vX.Y.Z`.
 
 ### Added
 
+- `docs/runbooks/README.md` — operator index of the H1672–H1677 runbook suite (status +
+  owning handoff + full blob URL per row); `docs/ROADMAP_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.meta.md`
+  — sibling metadoc for the wave-1 roadmap, matching the existing PLAN metadoc pattern (H1677).
 - **H1675 — monthly errata + claims maintenance runbooks (Sonnet 5
   `claude-sonnet-5`, 27-07-2026).**
   [`docs/runbooks/MONTHLY_ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/MONTHLY_ERRATA.md)
