@@ -90,6 +90,70 @@ def as_list(v):
     return v if isinstance(v, list) else [v]
 
 
+def checksum(e: dict) -> str:
+    """Content fixity hash over the fields that define a correction — recomputed,
+    never hand-authored. A yml entry whose text changes without its tier/id
+    changing is exactly the case the ACL model calls a `revision`."""
+    payload = "|".join([str(e.get("page", "")), e.get("line", ""),
+                        e.get("read", ""), e.get("instead", "")])
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:CHECKSUM_LEN]
+
+
+def book_slug_year(book_dir: str):
+    """'BuhlerLeitfaden_1923' -> ('buhler-leitfaden', '1923')."""
+    name, sep, year = book_dir.rpartition("_")
+    if not sep or not year.isdigit():
+        return book_dir.lower(), ""
+    slug = re.sub(r"(?<!^)(?=[A-Z])", "-", name).lower()
+    return slug, year
+
+
+def assign_tiers(entries: list, book_dir: str):
+    """Assign each entry its ACL-style `tier`, `id`, `date`, `checksum`.
+
+    id grammar: `<book-slug>-<edition-year>.<page>.<n>` (n = 1-based sequence
+    within that page), mirroring the ACL `YEAR.VOLUME.NUMBER` id policy
+    (https://aclanthology.org/info/ids/). erratum/retraction entries each get a
+    fresh id; a `revision` entry does not — it inherits its `revises` target's id
+    with a `.v2`/`.v3`/... suffix (the id "gains a version", per the corrections
+    policy), so `revises` must name an id already assigned to another entry in
+    this same book.
+    """
+    slug, year = book_slug_year(book_dir)
+    page_seq: dict = {}
+    revision_counts: dict = {}
+    fresh, deferred = [], []
+    for e in entries:
+        e["tier"] = e.get("tier") or DEFAULT_TIER
+        if e["tier"] not in TIERS:
+            sys.exit(f"{book_dir}: unknown tier {e['tier']!r} (page {e.get('page')}, "
+                      f"line {e.get('line')!r}) — must be one of {TIERS}")
+        e["date"] = e.get("date_added", "")
+        e["checksum"] = checksum(e)
+        if e["tier"] == "retraction" and not e.get("reason"):
+            sys.exit(f"{book_dir}: retraction (page {e.get('page')}, line {e.get('line')!r}) "
+                      "needs a `reason`")
+        (deferred if e["tier"] == "revision" else fresh).append(e)
+
+    for e in fresh:
+        p = str(e.get("page", ""))
+        page_seq[p] = page_seq.get(p, 0) + 1
+        e["id"] = f"{slug}-{year}.{p}.{page_seq[p]}" if year else f"{slug}.{p}.{page_seq[p]}"
+
+    assigned_ids = {e["id"] for e in fresh}
+    for e in deferred:
+        base = e.get("revises")
+        if not base:
+            sys.exit(f"{book_dir}: revision (page {e.get('page')}, line {e.get('line')!r}) "
+                      "needs a `revises: <id>` pointing at the entry it replaces")
+        if base not in assigned_ids and base not in revision_counts:
+            sys.exit(f"{book_dir}: revision `revises: {base}` does not match any "
+                      "entry id in this book")
+        revision_counts[base] = revision_counts.get(base, 1) + 1
+        e["id"] = f"{base}.v{revision_counts[base]}"
+        assigned_ids.add(e["id"])
+
+
 def load_book(yml: Path):
     data = yaml.safe_load(yml.read_text(encoding="utf-8")) or {}
     work = data.get("work", yml.parent.name)
