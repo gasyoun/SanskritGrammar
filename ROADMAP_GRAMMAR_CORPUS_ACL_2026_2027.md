@@ -79,7 +79,7 @@ Every row below is a committed artifact in this repo. The roadmap builds only on
 
 | Asset | Path | Size | What it already is |
 |---|---|---:|---|
-| Exercise-sentence pool | [`scripts/data/sentences.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json) | 3,213 sentences | Bühler / Knauer / Kochergina, each tagged `book`, `lesson`, `script`, stable id (`buhler-XIV-364`) |
+| Exercise-sentence pool | [`scripts/data/sentences.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json) | 3,213 sentences | Bühler / Knauer / Kochergina, each tagged `book`, `lesson`, `script`, stable id (`buhler-1923.XIV.364`) |
 | Shared-sentence catalog | [`scripts/data/catalog.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/catalog.csv) | 124 clusters | 7 in all three books · 79 Bühler↔Knauer · 33 Bühler↔Kochergina · 5 Knauer↔Kochergina |
 | **Hand-classified near-matches** | [`scripts/data/matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv) | 128 pairs | Each carries a human `verdict` (`spelling_variant`, …) — **this is already a gold set** |
 | Subject-coverage matrix | [`SubjectConcordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/SubjectConcordance/catalog.mdx) | 9 works × 18 chapters + 41 fine categories | Keyword-lexicon first pass, self-described as *"a finding-aid, not an authority"* |
@@ -87,7 +87,7 @@ Every row below is a committed artifact in this repo. The roadmap builds only on
 | Whitney spine | [`WhitneyGrammar_1889/`](https://github.com/gasyoun/SanskritGrammar/tree/main/WhitneyGrammar_1889) | 18 ch · 1,316 § | Generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots), each § linked to Wikisource |
 | Phonostatistics | [`GasunsDhatu_2014/revision-2026/`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014/revision-2026) | 6 CSVs | consonant coefficient, RV/Rāmāyaṇa clusters, varga shares, syllables-per-word, + provenance JSON |
 | Pāṇini lookup harness | [`GasunsDhatu_2014/revision-2026/panini_sutra.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py) | script + `panini_cache/` | Already used to verify 2 sūtra citations in H415 |
-| Errata pipeline | 8 × `errata.yml` → [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) | 1 populated of 8 | [`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py); Knauer only |
+| Errata pipeline | 8 × `errata.yml` → [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) (root index) | 5 populated of 8; three-tier erratum/revision/retraction schema (H1514) | [`scripts/build_errata.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_errata.py); per-book output is `ERRATA.mdx`, rendered on-site |
 | Site | [gasyoun.github.io/SanskritGrammar](https://gasyoun.github.io/SanskritGrammar/) | 10 books | Docusaurus, auto-registering `bookDirs`, GitHub Pages |
 
 **The headline:** three of the four spines are testable on data already committed. Nothing in
