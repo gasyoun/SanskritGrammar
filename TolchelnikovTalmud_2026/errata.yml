@@ -1,6 +1,6 @@
 # errata.yml — structured errata source for TolchelnikovTalmud_2026
 #
-# GENERATED target: ERRATA.md (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.md.
+# GENERATED target: ERRATA.mdx (via scripts/build_errata.py / `npm run errata`) — never edit ERRATA.mdx.
 #
 # This book has no printed errata sheet catalogued yet. Add corrections either by:
 #   A. transcribing a printed errata/opechatki sheet (see KnauerFrazy_1908/errata.yml for the shape), or
@@ -9,7 +9,35 @@
 #      then fold reviewed candidates from errata.candidates.yml into `entries` below.
 #
 # Entry shape: { page, line, read, instead, found_by, date_added, fixed_in?, note? }
+#
+# tier:    (optional) erratum (default) | revision | retraction — the ACL
+#          three-tier corrections model (https://aclanthology.org/info/corrections/).
+# revises: (revision only) the `id` of the entry this one replaces — its own
+#          id becomes `<that-id>.v2` (or `.v3`, ... for a chain).
+# reason:  (retraction only) why this entry is withdrawn.
+# id / date / checksum are never hand-authored — build_errata.py computes them.
 
 work: "Tolchelnikov, Талмуд санскрита (generative Sanskrit morphonology, 2026) — refactored edition"
 
-entries: []
+entries:
+  # ── H1514 schema demonstration — NOT real corrections against this book's text.
+  #    No book in this corpus has yet had a genuine revision-of-a-correction or a
+  #    retraction (checked git history + every errata.yml, 22-07-2026); these three
+  #    rows exist only so build_errata.py's three-tier rendering has one real,
+  #    built example of each tier on the site (H1514 DoD). Remove once a genuine
+  #    case of either tier appears in any book, or keep as living documentation. ──
+  - { page: 0, line: "—", tier: erratum,
+      read: "H1514 schema demo — erratum tier: a note read alongside the original, the original text untouched",
+      instead: "(no prior printed/digital reading — demonstration entry, not a real correction)",
+      found_by: "H1514 three-tier schema demonstration", date_added: "2026-07-27",
+      note: "not a real correction — see the block comment above `entries:`" }
+  - { page: 0, line: "—", tier: revision, revises: "tolchelnikov-talmud-2026.0.1",
+      read: "H1514 schema demo — revision tier: a full replacement of the erratum above; the id gains a `.v2` suffix",
+      instead: "H1514 schema demo — erratum tier: a note read alongside the original, the original text untouched",
+      found_by: "H1514 three-tier schema demonstration", date_added: "2026-07-27",
+      note: "not a real correction — see the block comment above `entries:`" }
+  - { page: 0, line: "——", tier: retraction, reason: "demonstration only — no genuine retraction exists in this corpus yet (H1514)",
+      read: "H1514 schema demo — retraction tier: the entry is withdrawn but never deleted, and is watermarked on render",
+      instead: "(demonstration entry)",
+      found_by: "H1514 three-tier schema demonstration", date_added: "2026-07-27",
+      note: "not a real correction — see the block comment above `entries:`" }
