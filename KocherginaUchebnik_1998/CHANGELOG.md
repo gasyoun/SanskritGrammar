@@ -8,18 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Changed
-- **H1758 — стилевой пас по всем пяти файлам методички (Fable 5 `claude-fable-5`,
-  28-07-2026)** — первое применение
-  [SANGRAM-гайда прозы](../sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
-  вне серии Sangram (его backlog-строка 2 / metadoc row 1 закрыты тем же PR):
-  административные пометы H1454 переписаны читаемым русским, голые проценты
-  получили базы подсчета и словесные чтения (zan-12: 362 594 токена; аорист:
-  781 618 словоформ; peri: счеты 3 752/171/96/5/0), провенанс-пины ушли из
-  аналитической прозы в примечания, правило § 3.7 о примерном ряде оговорено явно,
-  таблицы «Ревизии» добавлены во все четыре раздела рукописи; исправлен сбойный
-  знак деванагари в чтении X-1 (аश् → अश्). Числа и вердикты `claims.json` /
-  реестра не тронуты.
+
+## [0.14.0] - 2026-07-28
 ### Added
 - **H1454 — open items визы H1258 доведены до terminal dispositions (Grok 4.5
   `grok-4.5`, 26-07-2026).** Residual table в приложении
@@ -33,6 +23,17 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   [`review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html`](../review/sanskritgrammar-metodichka-kochergina-zan10-rewrite_26.07.26_review.html)
   (spec + generated HTML; **не** влита unilaterally).
 ### Changed
+- **H1758 — стилевой пас по всем пяти файлам методички (Fable 5 `claude-fable-5`,
+  28-07-2026)** — первое применение
+  [SANGRAM-гайда прозы](../sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+  вне серии Sangram (его backlog-строка 2 / metadoc row 1 закрыты тем же PR):
+  административные пометы H1454 переписаны читаемым русским, голые проценты
+  получили базы подсчета и словесные чтения (zan-12: 362 594 токена; аорист:
+  781 618 словоформ; peri: счеты 3 752/171/96/5/0), провенанс-пины ушли из
+  аналитической прозы в примечания, правило § 3.7 о примерном ряде оговорено явно,
+  таблицы «Ревизии» добавлены во все четыре раздела рукописи; исправлен сбойный
+  знак деванагари в чтении X-1 (аश् → अश्). Числа и вердикты `claims.json` /
+  реестра не тронуты.
 - **H1454 dispositions на 9 open items H1258:** APPLIED zan-18 (Талмуд j/h→k/ṣ),
   zan-22 (peri formation share), zan-32 (Лейтан *dvigu*), zan-39 (библиография);
   DEFERRED razdel-1-frame (errata census), zan-06 (accent fraction — DCS unaccented),
