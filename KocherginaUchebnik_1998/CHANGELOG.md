@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-07-28
+
 ### Added
 - **Четыре правки оцифровки внесены в `errata.yml` как `kind: digitization` (H1804, Opus 5 1M
   `claude-opus-5[1m]`, 28-07-2026).** Раньше «что вместо чего и когда» по этим правкам нигде не
