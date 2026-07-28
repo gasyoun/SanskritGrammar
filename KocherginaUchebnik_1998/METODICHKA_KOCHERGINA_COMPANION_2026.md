@@ -1,6 +1,6 @@
 # Methodichka — a printed companion-commentary to Kochergina, *Учебник санскрита*
 
-_Created: 12-07-2026 · Last updated: 26-07-2026_
+_Created: 12-07-2026 · Last updated: 28-07-2026_
 
 The roadmap for a **thin printed companion booklet** (методичка) to V. A. Kochergina's
 *Учебник санскрита* — grammatical-accuracy notes, clarity/frequency refinements, extra
@@ -55,7 +55,7 @@ five pillars already have working infrastructure:
 
 **Headline finding already in hand** (the model for the whole booklet): Kochergina
 teaches the future stem as one rule `-syá` with `-ṣya/-iṣya` as "варианты", but in DCS the
-seṭ form **-iṣya is the majority (56.8 %)** of distinct future forms — every surface fact
+seṭ form **-iṣya is the majority — 56.8 %, 1 487 of 2 618 distinct future forms** — every surface fact
 is correct, yet the ordering hides the distribution the learner will actually meet
 (claims HK-4a/HK-4b). Factually right, pedagogically misleading: exactly the commentary
 this методичка exists to add. The H768 sweep already found **12 more such cases** (11

@@ -1,6 +1,6 @@
 # Методичка к Кочергиной — корпусный слой: частотные полосы и живые примеры
 
-_Created: 21-07-2026 · Last updated: 21-07-2026_
+_Created: 21-07-2026 · Last updated: 28-07-2026_
 
 Раздел IV методички-компаньона к В. А. Кочергиной, *Учебник санскрита* (план издания:
 [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md);
@@ -25,14 +25,20 @@ _Created: 21-07-2026 · Last updated: 21-07-2026_
 - **топ-1000** — первая тысяча: надежный актив первого года чтения;
 - **редкое** — за пределами первой тысячи: узнавать, но не заучивать первым.
 
-**Примеры** взяты из корпуса DCS-2026 (импорт conllu-разметки О. Хельвига,
-[VisualDCS](https://github.com/gasyoun/VisualDCS), коммит источника `04e0778`); каждый
-пример несет свой локус DCS (текст, глава, номер предложения) и может быть проверен по
-корпусу. Предпочтение отдано текстам, которые русскоязычный учащийся откроет первыми:
+**Примеры** взяты из среза DCS-2026 цифрового корпуса санскрита О. Хельвига (точный
+технический пин источника — в примечании в конце раздела); каждый пример несет свой
+локус в корпусе (текст, глава, номер предложения) и может быть проверен по нему.
+Предпочтение отдано текстам, которые русскоязычный учащийся откроет первыми:
 «Хитопадеша», «Манусмрити», «Рамаяна», эпос. Русские переводы примеров выполнены
-заново для этой методички (Fable 5, `claude-fable-5`; сверка регистра — по публичному
-слою глоссария [SanskritRussian](https://github.com/gasyoun/SanskritRussian)) и ждут
-визы автора, как и весь текст методички.
+заново для этой методички и, как и весь ее текст, ждут визы автора; сверка регистра
+переводов шла по публичному слою глоссария
+[SanskritRussian](https://github.com/gasyoun/SanskritRussian).
+
+Слой сознательно дает по одному живому предложению на лемму — это флагманские
+примеры в смысле правила «не меньше пяти примеров»
+([гайд прозы § 3.7](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx));
+запасные примеры к тем же грамматическим местам — чтения раздела II, а полный ряд
+аттестаций каждой леммы открывается по ее локусу прямо в корпусе.
 
 **Правовая рамка слоя.** В печать идут только переводы, созданные для методички, либо
 взятые из публичного слоя SanskritRussian. Закрытые слои выравнивания при построении
@@ -164,10 +170,20 @@ ruh → *rokṣya-*.
 
 ---
 
+## Ревизии
+
+| Дата | Ревизия | Основание |
+|---|---|---|
+| 21-07-2026 | Раздел IV написан: частотные полосы и живые примеры к 8 занятиям | [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md); Fable 5 (`claude-fable-5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): технический пин источника и атрибуция переводов перенесены из вводной прозы в это примечание, оговорено правило § 3.7 о примерном ряде. Полосы, ранги и примеры не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
+
 _Раздел IV методички. Числа полос воспроизводимы скриптом
 [scripts/build_corpus_layer.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py)
 из [corpus_layer/corpus_layer.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/corpus_layer/corpus_layer.tsv);
-корпусные данные — Digital Corpus of Sanskrit (О. Хельвиг). Перед печатью —
+корпусные данные — Digital Corpus of Sanskrit (О. Хельвиг), импорт
+[VisualDCS](https://github.com/gasyoun/VisualDCS), коммит источника `04e0778`.
+Русские переводы примеров — Fable 5 (`claude-fable-5`), 21-07-2026, до визы автора —
+черновик. Перед печатью —
 [/publish-safety-check](https://github.com/gasyoun/claude-config/blob/main/commands/publish-safety-check.md)._
 
 _Dr. Mārcis Gasūns_
