@@ -1,6 +1,6 @@
 # Методичка к Кочергиной — v1, раздел III: отсылки «см. также»
 
-_Created: 16-07-2026 · Last updated: 26-07-2026_
+_Created: 16-07-2026 · Last updated: 28-07-2026_
 
 Печатная рукопись (раздел III методички-компаньона; план —
 [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md),
@@ -21,23 +21,24 @@ _Created: 16-07-2026 · Last updated: 26-07-2026_
 Привязки выверены по цифровым текстам репозитория (16-07-2026); это ручной куррированный
 слой v1 — реестр `crossrefs.yml` отложен до v2 (решение K-2).
 
-**Пункты визы H1258 / residual H1454 (`…#razdel-3-otsylki`).** Автор одобрил раздел
-III, с двумя дополнениями:
+**Пункты визы автора (H1258; проверены в H1454).** Автор одобрил раздел III, с двумя
+дополнениями — оба ждут материалов, которые может дать только он:
 
-1. **Номера страниц у Конспекта → ESCALATED (H1454).** Ссылки ниже — по названиям
-   разделов (нумерации разделов в Конспекте нет). Оцифрованные
-   `.mdx`/`.doc`/`.docx`
+1. **Номера страниц Конспекта — вопрос передан автору.** Ссылки ниже даны по
+   названиям разделов: нумерации разделов в Конспекте нет, а оцифрованные версии
    ([ZalizniakKonspekt_2004/](https://github.com/gasyoun/SanskritGrammar/tree/main/ZalizniakKonspekt_2004))
-   **не** сохраняют page breaks. Пагинированного PDF/скана **нет** в репозитории,
-   в [SHADOW_ASSETS_POINTERS.md](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md)
-   и в [DATA_LAYERS_CENSUS.md](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md)
-   (проверка 26-07-2026). Номера страниц **не** выдуманы; ждут shadow-asset от автора.
-2. **Миллер → ESCALATED (H1454).** Какой труд (В. Ф. Миллер? иной?) — в визе не
-   уточнено; org-источники методички имени не фиксируют. Раздел «Миллер» **не**
-   добавлен наугад.
+   не сохраняют разбиение на страницы. Пагинированной копии (PDF или скана) нет ни в
+   репозитории, ни в реестрах внешних активов проекта
+   ([SHADOW_ASSETS_POINTERS.md](https://github.com/gasyoun/Uprava/blob/main/SHADOW_ASSETS_POINTERS.md),
+   [DATA_LAYERS_CENSUS.md](https://github.com/gasyoun/Uprava/blob/main/DATA_LAYERS_CENSUS.md);
+   проверка 26-07-2026). Номера страниц не выдумывались — они появятся, когда автор
+   положит пагинированную копию.
+2. **Миллер — вопрос передан автору.** Какой труд имеется в виду (В. Ф. Миллер? иной
+   автор?) — в визе не уточнено, и источники проекта этого имени не фиксируют.
+   Раздел «Миллер» наугад не добавлялся.
 
-Сводный residual table — приложение
-[`METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md#открытые-вопросы-визы-h1258--residual-после-h1454-26-07-2026).
+Сводная таблица открытых вопросов — приложение к
+[разделу I](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md#открытые-вопросы-визы-h1258--residual-после-h1454-26-07-2026).
 
 ---
 
@@ -126,7 +127,7 @@ dvandva, bahuvrīhi); Кнауэр Nr. 11 (bahuvrīhi puruṣasiṃha в сно�
 превербов»); Талмуд, гл. IX (аугмент и превербы) и Приложение 2; Кнауэр Nr. 11
 (sam-abhy-ā- и другие двухпревербные формы в упражнениях).
 
-**Кочергина — префиксация (H1454, citation only; `…#zan-39` APPLIED):**
+**Кочергина — префиксация (установлено в H1454; только библиографическая отсылка):**
 
 - Кочергина В. А. *Монофункциональные способы санскритского словообразования
   (префиксация и основосложение)*. Дисс. на соиск. уч. степ. д-ра филол. наук.
@@ -134,13 +135,22 @@ dvandva, bahuvrīhi); Кнауэр Nr. 11 (bahuvrīhi puruṣasiṃha в сно�
 - Кочергина В. А. *Словообразование санскрита: (Префиксация и основосложение)*.
   М.: Издательство Московского университета, 1990. — 206, \[1\] с.
 
-Источники библиографии: каталоги РГБ/CORBIS; страница кафедры
-[genhis.philol.msu.ru](http://genhis.philol.msu.ru/article_17.shtml); Wikipedia s.v.
-Кочергина, Вера Александровна. **Текст диссертации/монографии в рукопись не
-включён** (in copyright); сверка формулировки «всегда контактный / всегда
-дистактный» с содержанием 1990 г. не проводилась — только отсылка.
+Источники библиографии: каталоги РГБ и CORBIS; страница кафедры
+[genhis.philol.msu.ru](http://genhis.philol.msu.ru/article_17.shtml); Википедия s.v.
+Кочергина, Вера Александровна. Текст диссертации и монографии в рукопись не
+включен — обе работы охраняются авторским правом; сверка формулировки «всегда
+контактный / всегда дистактный» с содержанием книги 1990 г. не проводилась — дана
+только отсылка.
 
 ---
+
+## Ревизии
+
+| Дата | Ревизия | Основание |
+|---|---|---|
+| 16-07-2026 | Раздел III написан: «см. также» по 11 занятиям, пять пособий лестницы | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
+| 26-07-2026 | Пункты визы H1258 отработаны: два вопроса переданы автору (страницы Конспекта, Миллер), библиография Кочергиной по префиксации добавлена к занятию XXXIX | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): пометы визы переписаны полными русскими предложениями, служебный жаргон убран из прозы. Привязки и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел III методички. Привязки к Очерку даны по §§ издания 1978 г.; к Конспекту —
 по заголовкам разделов (цифровая версия 2004/2015); к Талмуду — по главам рукописи

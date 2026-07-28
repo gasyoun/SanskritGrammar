@@ -1,6 +1,6 @@
 # Metadoc — METODICHKA_KOCHERGINA_COMPANION_2026.md
 
-_Created: 12-07-2026 · Last updated: 21-07-2026_
+_Created: 12-07-2026 · Last updated: 28-07-2026_
 
 Companion record for the Kochergina methodichka roadmap
 ([`METODICHKA_KOCHERGINA_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)).
@@ -68,5 +68,6 @@ Fable 5).
 | 16-07-2026 | Fable 5 (`claude-fable-5`) | § 4.2: queued material for Занятие 22 (стр. 153) per MG's P3-visa card A4 — periphrastic-perfect auxiliary distribution (as 91,4 % / kṛ 7,4 % / bhū 0,8 %, 3 sg 86,6 %) from the SG-MO-017 corpus package. |
 | 16-07-2026 | Fable 5 (`claude-fable-5`) | **v1 (P0–P4) executed — H807.** Three manuscript sections authored (разделы I–III: комментарий / упражнения / отсылки); §2 pillar table refreshed to the drained 234-claim register; §5 marked v1 EXECUTED; `errata.yml` `edition` field added (seed empty); K-2 resolved (hand-authored v1); backlog items 1/3 closed, item 5 (v2 widening) added. |
 | 21-07-2026 | Fable 5 (`claude-fable-5`) | **Corpus layer (раздел IV) authored — H1297.** 31 lemmas per занятие with DCS frequency bands (kosha `lemma_frequency.tsv` rank_all: топ-100/топ-1000/редкое) + one attested DCS-2026 example each, RU renderings freshly authored (no restricted layer opened). Working TSVs under `corpus_layer/`, banding regression + locus/rights checks in `tests/test_corpus_layer.py`. Backlog item 6 added and closed. |
+| 28-07-2026 | Fable 5 (`claude-fable-5`) | **Prose style pass over all five methodichka files — [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md)**, per the [SANGRAM prose guide](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) §§ 3–4 (its first non-Sangram application): H1454 disposition blocks rewritten as readable Russian, bare percents given raw counts/bases, provenance pins moved out of analytic prose, § 3.7 example-count rule explicitly acknowledged, one Devanagari mojibake fixed in раздел II. Numbers and verdicts untouched; the roadmap itself only gained the -iṣya raw count. |
 
 _Dr. Mārcis Gasūns_
