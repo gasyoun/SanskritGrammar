@@ -67,6 +67,29 @@ changelog tags as `vX.Y.Z`.
   the existing `tests/test_pedagogy_export.py` could not catch this because its autouse
   fixture rebuilds the export first, comparing every build only to itself.
 
+- **H1769 — org-wide sweep for the H1768 hash-determinism defect class, SanskritGrammar
+  slice (Sonnet 5 `claude-sonnet-5`, 28-07-2026).** Audited 8 files a static regex scanner
+  flagged for `hashlib.sha256`/`sha1`/`md5` co-occurring with a text write and no
+  `newline=`/`write_bytes` guard:
+  [`GasunsDhatu_2014/revision-2026/rws_extract_worklist.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/rws_extract_worklist.py)
+  and the seven `sg_mo_*`/`sg_se_*`/`sg_wf_*` Sangram corpus-frame scripts under
+  [`scripts/`](https://github.com/gasyoun/SanskritGrammar/tree/main/scripts). All 8 triaged
+  **already-safe**: the seven Sangram scripts `sha256`-hash `dcs_full.sqlite` opened `"rb"`
+  (a binary file they only read, never write), and `rws_extract_worklist.py` hashes an
+  in-memory paragraph string (from a universal-newline-normalised read, used only as a
+  12-char display id, never compared for equality) — none write the bytes they hash. Found
+  one real instance of the same *writer* defect outside the scanner's regex (co-occurrence
+  with a hash, not the trigger here): `consolidation_ledger_refresh.py`'s three
+  `LEDGER_PATH.write_text(...)` calls (main-run write + two self-test round-trips) had no
+  `newline=`, so every refresh dirtied
+  [`sangram/editorial/data/consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json)
+  with CRLF on Windows. `.gitattributes` already pins `*.json  text eol=lf`, so `git add`
+  renormalised the committed blob and no drift ever landed — but the working-tree bytes were
+  still host-dependent, the same defect shape one step short of the H1768 failure mode. Fixed
+  all three call sites with `newline="\n"`; new gate
+  [`tests/test_consolidation_ledger_lf_determinism.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_consolidation_ledger_lf_determinism.py)
+  exercises the real `main()` write path and fails pre-fix on a Windows host.
+
 - **H1676 — Sangram freeze-exit operator runbook (Sonnet 5 `claude-sonnet-5`, 27-07-2026).**
   [`docs/runbooks/SANGRAM_FREEZE_EXIT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/SANGRAM_FREEZE_EXIT.md)
   documents the freeze-N matrix → SE/MO/WF probe → kill_gated-vs-survivor → visa-sheet-or-no-sheet

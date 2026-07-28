@@ -460,7 +460,14 @@ def main() -> int:
         print("FAIL  consolidation_ledger.json is stale — run without --check to refresh")
         return 1
 
-    LEDGER_PATH.write_text(serialized, encoding="utf-8")
+    # newline="\n": Path.write_text applies universal-newline translation
+    # (LF -> CRLF on Windows) by default. .gitattributes already pins *.json
+    # to eol=lf so `git add` renormalises the committed blob either way, but
+    # writing LF directly keeps the working-tree bytes deterministic across
+    # platforms too (H1769, the H1768 defect-class sibling case: a writer
+    # that dirties the tree with host-dependent bytes even when the commit
+    # itself is safe).
+    LEDGER_PATH.write_text(serialized, encoding="utf-8", newline="\n")
     print(f"wrote {LEDGER_PATH}")
     return 0
 
@@ -499,14 +506,15 @@ def self_test() -> int:
         LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
         original = LEDGER_PATH.read_text(encoding="utf-8") if LEDGER_PATH.exists() else None
         try:
-            LEDGER_PATH.write_text(json.dumps(first, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            LEDGER_PATH.write_text(
+                json.dumps(first, indent=2, ensure_ascii=False) + "\n", encoding="utf-8", newline="\n")
             second = build_ledger(today, "unknown")
             row0b = next(r for r in second["baseline_ids"] if r["toc_ref"] == row0["toc_ref"])
             if row0b["disposition"] != "revised" or row0b["blocking_note"] != "SELF-TEST SENTINEL":
                 failures.append("human-verdict fields were NOT preserved across a refresh run")
         finally:
             if original is not None:
-                LEDGER_PATH.write_text(original, encoding="utf-8")
+                LEDGER_PATH.write_text(original, encoding="utf-8", newline="\n")
             elif LEDGER_PATH.exists():
                 LEDGER_PATH.unlink()
     except SystemExit as e:
