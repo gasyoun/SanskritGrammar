@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.17.0] - 2026-07-28
+
 ### Fixed
 - **Занятия 5 и 7: точки у трёх оставшихся маркеров упражнений (H1795, Opus 5 1M
   `claude-opus-5[1m]`, 28-07-2026).** H1790 закрыл занятие 30 и утверждал, со ссылкой на
