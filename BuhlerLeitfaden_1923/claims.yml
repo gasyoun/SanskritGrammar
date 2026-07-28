@@ -158,6 +158,10 @@ entries:
       реестр вопросов как Q2607-147 (EXPLORATORY, открыт). Смежно T2607-24 (H1051,
       подтверждена, PR #317): залоговая картина Зализняка-1978 по морфологии безфлаговая —
       HB-2 OVERSTATED ровно на тех карве-аутах, которые Очерк выписывает (§§ 140/146/149/159).
+    methodichka: >-
+      «Все времена и наклонения имеют обе формы залога» — программа курса, не закон: сама книга
+      позже выносит корневой аорист и siṣ-аорист в чистые Parasmaipada (уроки XLV–XLVI), а оба
+      интенсива — в однозалоговые (урок XLVIII). Дойдя туда, вернитесь к этой строке.
 
   - id: HB-3
     loc: "Урок I / mdx line 129"
@@ -262,6 +266,10 @@ entries:
       'всякого рода' overreaches: the genitive absolute and verbal-government genitives are not
       possession. Defensible didactically, flagged factually — same pattern as Kochergina's
       hedged universals.
+    methodichka: >-
+      «Всякого рода принадлежность» покрывает большинство, но не все: приглагольный родительный,
+      genetivus absolutus и родительный времени — не принадлежность. Для урока III формула
+      работает; при чтении не сводите к ней все употребления третьего по частоте падежа.
 
   - id: HB-9
     loc: "Урок V / mdx line 675"
@@ -312,6 +320,10 @@ entries:
       выполнена и записана выше. Решение H1276: оговорка добавлена и в mg_footnote — аппарат,
       отображаемый над местом чтения, где читатель 1923 года видит само ошибочное «Acc. или
       Abl.»; поле note остается внутренним следом вердикта.
+    methodichka: >-
+      Запомните в честном виде: ā + аблатив (ā samudrāt «вплоть до океана»). Аккузативное
+      управление, напечатанное книгой, не подтверждается ни Уитни (§ 1128), ни списками Шерцля —
+      вероятная ошибка русского издания 1923 г.
 
   - id: HB-11
     loc: "Урок VI / mdx line 795"
@@ -834,6 +846,10 @@ entries:
       The formation rule is exact, but the parallel 'также часто' places the -tavat finite
       substitute on a par with the gataḥ-construction — the corpus shows a two-orders-of-
       magnitude gap. The one clear frequency-hidden flag in Bühler's participle chapters.
+    methodichka: >-
+      Правило образования точно, но «также часто» скрывает два порядка: -tavat — 2 350
+      словоупотреблений против 233 080 у -ta. Распознавайте sa gatavān при чтении, а рабочим
+      прошедшим держите sa gataḥ / tena kṛtam.
 
   - id: HB-41
     loc: "Урок XXIX / mdx line 4011"
@@ -1144,6 +1160,11 @@ entries:
       детектированной категорией из 41 023). Против сглаживания: χ² = 38,7 значим, но
       V Крамера 0,084 — различие статистически значимо и содержательно ничтожно; «то же
       значение» подтверждено практикой перевода, частотное направление книги это не спасает.
+    methodichka: >-
+      Значение — то же (и русские переводчики уводят оба времени в прошедшее сов. вида), но
+      частотное направление в корпусе в целом перевернуто: перфект ~в 1,9 раза чаще имперфекта —
+      эпос ведет повествование перфектом. В узком срезе кавьи/шастры направление Бюлера может
+      держаться.
 
   - id: HB-58
     loc: "Урок XLIV / mdx line 6735"
@@ -1166,6 +1187,10 @@ entries:
       The formation claim is fine. The flag is ordering: Урок XLIV teaches the periphrastic
       future first (line 6735) and the simple future second (line 6757), reversing a 17:1
       corpus frequency ratio — the register's clearest rare-before-common ordering in Bühler.
+    methodichka: >-
+      Порядок урока перевернут относительно частот: описательное будущее в 17 раз реже простого (1
+      290 против 21 556). Учите сначала kariṣyati; kartā опознавайте как редкую, стилистически
+      отмеченную форму.
 
   - id: HB-59
     loc: "Урок XLIV / mdx line 6757"
@@ -1212,6 +1237,9 @@ entries:
       system the thematic aorist (class 2, suffix {ø}) is structurally identical to the
       class-VI present-stem type ({1.ø}, Таблица 17), while class VII is the nasal-infix
       athematic type ({1.↶nø}) and matches nothing in a thematic paradigm.
+    methodichka: >-
+      Опечатка: читать «как impf. VI кл.» — a-аорист тематический (asicat как atudat), что и
+      показывает парадигма рядом. Опора — парадигма, не номер класса.
 
   - id: HB-61
     loc: "Урок XLV / mdx line 7007"
@@ -2317,6 +2345,10 @@ entries:
     verdict_pedagogy: MISLEADING
     note: >-
       Errata (HB-60 precedent): 'за искл. N. sing. pl. и Асc. pl.' should read '... и Асc. sing.' — retention holds exactly in the strong cases (sarvanāmasthāna: N.sg/du/pl, Acc.sg/du). The loss rule itself is sound; the printed exception list is the defect, contradicted by the book's own table.
+    methodichka: >-
+      Опечатка: читать «за искл. N. sing. pl. и Acc. sing.». Ориентир — принцип, не список: ā
+      удерживается в сильных падежах, выпадает в слабых перед гласным; парадигма рядом (viśvapām /
+      viśvapaḥ) верна — верьте ей.
 
   - id: HB-134
     loc: "Урок XVII / mdx line 2228"
@@ -2448,6 +2480,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       The rule covers the overwhelming majority of final-vowel roots; pūrayati is the standing exception Bühler does not flag. The i-final p-takers (jāpayati, adhyāpayati) are already carved out by his own paya-clause, so they do not count against him.
+    methodichka: >-
+      Правило верно с одним корнем-исключением: pṝ → pūrayati (губной + ṝ дает ūr, не вриддхи).
+      Каузатив на -ūrayati — не от корня на ū.
 
   - id: HB-143
     loc: "Урок XVIII / mdx line 2322"
@@ -3119,6 +3154,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       Errata: the text prints 'оканчиваются на a' where 'на aṅ' is required — the ṅ has been lost in print/digitization (the parallel neuter 'ak' keeps its consonant, exposing the gap). Intended rule is sound; graded FALSE as printed per the HB-60 misprint precedent.
+    methodichka: >-
+      Опечатка: читать «оканчиваются на aṅ» — prāṅ, udaṅ, pratyaṅ (средний род — prāk). В печати
+      потерян ṅ; параллельное среднее «ak» свой согласный сохранило.
 
   - id: HB-187
     loc: "Урок XXV / mdx line 3357"
@@ -3307,6 +3345,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       Errata: print/digitization confuses kroṣṭu with kroṣṭṛ in the first clause, so the claim as printed contradicts the paradigm beside it (HB-60 precedent → FALSE). The intended rule — strong cases tṛ-like, consonant cases and V.sg. from kroṣṭu, vowel obliques optionally kroṣṭunā/kroṣṭrā — is standard Pāṇinian doctrine.
+    methodichka: >-
+      Опечатка: первое «от kroṣṭṛ» читать «от kroṣṭu» — формы рядом (kroṣṭo, kroṣṭubhyām, kroṣṭūn)
+      u-основные. Мнемоника: сильные падежи — шакал-tṛ (kroṣṭā), слабые — шакал-u.
 
   - id: HB-200
     loc: "Урок XXVI / mdx line 3497"
@@ -3322,6 +3363,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       Errata: 'окончание āḥ' must read 'ā' — contradicted by the paradigm printed next to it (brahmahā, mdx 3497), the guide's definitional FALSE condition. The remainder is correct: n dropped before consonant suffixes (brahmahabhiḥ), a syncopated in weak vowel cases with han → ghn (brahmaghnā), and pūṣan/aryaman/han keeping short a in strong cases (brahmahaṇau) per Whitney §426.
+    methodichka: >-
+      Опечатка: читать «окончание ā» — pūṣā, aryamā, brahmahā (книга сама печатает «N. brahmahā»
+      рядом). Тип -an в N. sg. всегда без -ḥ.
 
   - id: HB-201
     loc: "Урок XXVI / mdx line 3499"
@@ -3486,6 +3530,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       Errata: 'krudh гневаться' is almost certainly a corruption of kup гневаться (kupita) — kup fits the gloss, the p-final scope, and the seṭ behavior, while krudh as printed both breaks the list's scope and implies a nonexistent form against universal kruddha. FALSE as printed per the HB-60 misprint precedent.
+    methodichka: >-
+      Опечатка: читать «kup гневаться, kupita» — krudh дает kruddha и ломает рамку списка «на t, p
+      и s». Контрастная пара для памяти: kupita (с i) — kruddha (без i).
 
   - id: HB-212
     loc: "Урок XXVIII / mdx line 3769"
@@ -3604,6 +3651,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       Errata: read 'san (ṣaṇ), sāta'. The other five pairs (khāta, jāta, tata, mata, kṣata) are the standard nasal-loss participles; graded FALSE as printed per the HB-60 misprint precedent since the corrupt member contradicts the section's stated scope.
+    methodichka: >-
+      Опечатка: читать «san (ṣaṇ) давать, sāta» — тройка jan/san/khan удлиняет гласный при потере
+      носового: jāta, sāta, khāta.
 
   - id: HB-220
     loc: "Урок XXVIII / mdx line 3871"
@@ -4375,6 +4425,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       The universality of rājan/sakhi substitution stands. What is overstated is only the su/kiṃ/a carve-out for pathin: attested apatha (and Vedic supatha) show the blocked form does occur, i.e. the block is optional in usage.
+    methodichka: >-
+      Замены rājan → rāja, sakhi → sakha, pathin → patha — закон; оговорка su/kiṃ/a — тенденция:
+      классическое apatha «бездорожье» законно сосуществует с apathin.
 
   - id: HB-270
     loc: "Урок XXXIV / mdx line 4759"
@@ -4775,6 +4828,9 @@ entries:
     verdict_pedagogy: JUSTIFIED
     note: >-
       For the roots the lesson actually teaches, the vṛddhi rule (stauti, nauti) and the tu/ru/stu guṇa-plus-ī option (stavīti) are exact Pāṇinian doctrine; the absolute «все» fails only on the rare derived root ūrṇu, whose omission from a beginner's book is sound.
+    methodichka: >-
+      stauti/nauti — надежное правило для корней урока; «все» падает лишь на маргинальном ūrṇu
+      (ūrṇoti рядом с ūrṇauti). Доверия к au это не подрывает.
 
   - id: HB-297
     loc: "Урок XXXVIII / mdx line 5541"
@@ -5904,6 +5960,10 @@ entries:
       for vowel-initial roots ([EX]-shape) the reduplication repeats CONSONANTAL material
       ([EX] → [EXE'X], e.g. {√ṛdh} → ārdidh-), never the vowel; second independent confirmation
       of the FALSE-as-printed verdict.
+    methodichka: >-
+      Опечатка: читать «удваивают конечный согласный» — все примеры рядом (āśiśat, ārjijat,
+      aicikṣat) удваивают согласный. Каузативный аорист от гласного корня узнается по «эху»
+      согласного: ā-śi-śat.
 
   - id: HB-373
     loc: "Урок XLV / mdx line 7007"
