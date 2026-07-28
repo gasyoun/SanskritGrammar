@@ -1,6 +1,6 @@
 # Кочергина 1998 — «Учебник санскрита»: цифровое издание и корпусная проверка утверждений
 
-_Created: 15-07-2026 · Last updated: 15-07-2026_
+_Created: 15-07-2026 · Last updated: 28-07-2026_
 
 Папка книги: В. А. Кочергина, «Учебник санскрита» (М., 1998), 40 занятий. Исходники —
 [Kochergina_unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/Kochergina_unicode.mdx)
@@ -16,6 +16,11 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 [GRADATION_METALANGUAGE_KOCHERGINA.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/GRADATION_METALANGUAGE_KOCHERGINA.md))
 и план печатной методички-компаньона
 [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md).
+Машинная пригодность оцифровки —
+[EXERCISE_BLOCK_COVERAGE_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/EXERCISE_BLOCK_COVERAGE_KOCHERGINA_2026.md):
+блок «Упражнения» извлекается для 35 занятий из 40, заголовки четырёх занятий
+дублируются в хрестоматии, а маркеры заданий оцифрованы пятью разными формами —
+читать перед любой работой, которой нужна гранулярность по заданию.
 
 ## Реестр проверенных утверждений (H768 → H797, фаза 1)
 

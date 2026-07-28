@@ -8,6 +8,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **H1789 — промер машинной пригодности оцифровки: блоки «Упражнения» по всем 40
+  занятиям (Opus 5 1M `claude-opus-5[1m]`, 28-07-2026).**
+  [`EXERCISE_BLOCK_COVERAGE_KOCHERGINA_2026.md`](EXERCISE_BLOCK_COVERAGE_KOCHERGINA_2026.md)
+  — таблица на 40 строк: номер строки заголовка, номер строки `Упражнения`, размер
+  блока, число заданий. Три факта, ради которых промер делался: блок извлекается для
+  **35 занятий из 40** (у 11, 20, 27, 34, 40 строки `Упражнения` в источнике нет);
+  заголовки занятий XI, XX, XXVII и XXXIV встречаются **дважды** — второй раз в
+  хрестоматии со стр. 11008, так что обход «с конца» попадёт не в тело книги; маркеры
+  заданий оцифрованы **пятью** формами (`I. ` · `**II.**` · `III\.` · `II` без точки ·
+  `II.` без пробела), и наивное `^[IVX]+\.` пропускает четыре из пяти. Потребитель
+  промера — [`KocherginaExerciseSource`](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/app/Services/KocherginaExerciseSource.php)
+  в Systema-Sanscriticum (H1764), который берёт блок целиком; на него пять форм не
+  влияют, но на любую будущую работу с гранулярностью по заданию — влияют. Текст
+  учебника в промер не переносится, только структурные метаданные.
 
 ## [0.14.0] - 2026-07-28
 ### Added
