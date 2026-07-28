@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.115.0] - 2026-07-28
+
 ### Added
 
 - **Errata теперь различают правку печати и правку оцифровки — поле `kind` (H1804, Opus 5 1M
