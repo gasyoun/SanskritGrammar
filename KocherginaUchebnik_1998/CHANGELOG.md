@@ -9,6 +9,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.16.0] - 2026-07-28
+
 ### Fixed
 - **Занятие 30: маркеру упражнения II вернули точку (H1790, Opus 5 1M
   `claude-opus-5[1m]`, 28-07-2026).** В `.docx` этот маркер стоял отдельным абзацем как
