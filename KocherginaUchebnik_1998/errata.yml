@@ -8,7 +8,17 @@
 #        python scripts/build_errata.py diff KocherginaUchebnik_1998 <old-git-ref> [<new-git-ref>]
 #      then fold reviewed candidates from errata.candidates.yml into `entries` below.
 #
-# Entry shape: { page, line, read, instead, edition, found_by, date_added, fixed_in?, note? }
+# Entry shape: { page, line, read, instead, edition, found_by, date_added, fixed_in?, note?,
+#                kind?, locus? }
+#
+# kind:   print (default) | digitization — WHAT is being corrected. `print` corrects the
+#         printed edition; `digitization` corrects our own extraction and claims nothing
+#         about the paper book. Orthogonal to `tier`; rendered as its own column so the
+#         two can be sorted apart before reconciling against a physical copy.
+# locus:  (digitization only) where the fix was applied — file + line in the generated
+#         .mdx plus the `w14:paraId` inside the .docx. Shown in the Line/locus column,
+#         and part of the dedup key + checksum, since digitization rows share an empty
+#         (page, line) and may share the same read/instead pair.
 #
 # tier:    (optional) erratum (default) | revision | retraction — the ACL
 #          three-tier corrections model (https://aclanthology.org/info/corrections/).
@@ -41,4 +51,72 @@
 
 work: "Kochergina, Sanskrit textbook (Учебник санскрита, 1998)"
 
-entries: []
+# ---------------------------------------------------------------------------
+# `kind: digitization` — corrections to OUR extraction, not to the 1998 print.
+#
+# These do NOT violate the "do not invent errata" guardrail above, because they
+# claim nothing about the printed page: each one records that the digitized
+# source disagreed with ITSELF (a marker set without its dot while its own
+# siblings in the same lesson carry one). They are filed here, in the same
+# table, so there is a single list of every replacement — `kind` is the column
+# to sort on when the print/digitization distinction matters.
+#
+# `page` is deliberately empty: we do not know the printed page. `locus` gives
+# the position in the generated .mdx plus the paragraph id inside the .docx,
+# which is where the fix was actually applied.
+# ---------------------------------------------------------------------------
+entries:
+  - kind: digitization
+    page: ""
+    line: ""
+    locus: "Kochergina_unicode.mdx:7789 · docx w14:paraId=18EF4BDE · занятие 30"
+    read: "II."
+    instead: "II"
+    edition: "1998"
+    found_by: "H1790 (Opus 5 1M `claude-opus-5[1m]`) — промер покрытия H1789"
+    date_added: "2026-07-28"
+    fixed_in: "0.16.0"
+    note: >-
+      Маркер упражнения II стоял отдельным абзацем без точки, тогда как III/IV/V
+      того же занятия — с точкой. Правка в .docx (+1 символ).
+
+  - kind: digitization
+    page: ""
+    line: ""
+    locus: "Kochergina_unicode.mdx:1113 · docx run before ' Напишите шрифтом ' · занятие 5"
+    read: "II."
+    instead: "II"
+    edition: "1998"
+    found_by: "H1795 (Opus 5 1M `claude-opus-5[1m]`) — сплошной аудит всех 178 маркеров"
+    date_added: "2026-07-28"
+    fixed_in: "0.17.0"
+    note: >-
+      Пропущен аудитом H1790, который искал только маркеры, стоящие одни на
+      строке. Правка в .docx (+1 символ).
+
+  - kind: digitization
+    page: ""
+    line: ""
+    locus: "Kochergina_unicode.mdx:1425 · docx w14:paraId=3D05C58C · занятие 7"
+    read: "III."
+    instead: "III"
+    edition: "1998"
+    found_by: "H1795 (Opus 5 1M `claude-opus-5[1m]`) — сплошной аудит всех 178 маркеров"
+    date_added: "2026-07-28"
+    fixed_in: "0.17.0"
+    note: >-
+      Маркер без точки при соседях с точкой. Правка в .docx (+1 символ).
+
+  - kind: digitization
+    page: ""
+    line: ""
+    locus: "Kochergina_unicode.mdx:1432 · docx w14:paraId=23C95DE3 · занятие 7"
+    read: "IV."
+    instead: "IV"
+    edition: "1998"
+    found_by: "H1795 (Opus 5 1M `claude-opus-5[1m]`) — сплошной аудит всех 178 маркеров"
+    date_added: "2026-07-28"
+    fixed_in: "0.17.0"
+    note: >-
+      Маркер без точки при соседях с точкой. Правка в .docx (+1 символ).
+

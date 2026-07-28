@@ -26,12 +26,27 @@ class TestSmallHelpers:
 
     def test_dedup_key_stringifies_and_strips(self):
         e = {"page": 5, "line": " 8 сн. ", "read": "x", "instead": "y"}
-        assert be.dedup_key(e) == ("5", "8 сн.", "x", "y", "erratum")
+        assert be.dedup_key(e) == ("5", "8 сн.", "x", "y", "erratum", "print", "")
 
     def test_dedup_key_tier_disambiguates_same_page_line_text(self):
         e1 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
         e2 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y", "tier": "retraction"}
         assert be.dedup_key(e1) != be.dedup_key(e2)
+
+    def test_dedup_key_kind_disambiguates(self):
+        e1 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        e2 = {**e1, "kind": "digitization"}
+        assert be.dedup_key(e1) != be.dedup_key(e2)
+
+    def test_dedup_key_locus_disambiguates_two_digitization_rows(self):
+        """Two digitization fixes share an empty (page, line) and can share the
+        same read/instead — only `locus` tells them apart. Without it they merged
+        into one row (the занятие-30 / занятие-5 collision, H1795)."""
+        base = {"page": "", "line": "", "read": "II.", "instead": "II",
+                "kind": "digitization"}
+        a = {**base, "locus": "file.mdx:7789"}
+        b = {**base, "locus": "file.mdx:1113"}
+        assert be.dedup_key(a) != be.dedup_key(b)
 
 
 class TestChecksum:
@@ -43,6 +58,17 @@ class TestChecksum:
         e1 = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
         e2 = {"page": 5, "line": "8 сн.", "read": "x2", "instead": "y"}
         assert be.checksum(e1) != be.checksum(e2)
+
+    def test_absent_locus_leaves_existing_checksums_untouched(self):
+        """`locus` joins the payload only when set, so every print-errata row
+        already published keeps its checksum byte-for-byte."""
+        e = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}
+        assert be.checksum(e) == be.checksum({**e, "locus": ""})
+        assert be.checksum(e) == be.checksum({**e, "locus": None})
+
+    def test_locus_distinguishes_otherwise_identical_rows(self):
+        e = {"page": "", "line": "", "read": "II.", "instead": "II"}
+        assert be.checksum({**e, "locus": "a:1"}) != be.checksum({**e, "locus": "b:2"})
 
     def test_length(self):
         e = {"page": 5, "line": "8 сн.", "read": "x", "instead": "y"}

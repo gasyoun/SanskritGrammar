@@ -64,6 +64,15 @@ CORRECTION_KEYWORDS = ("fixed", "corrected", "исправл")
 # retraction withdraws an entry (watermarked, never deleted from errata.yml).
 TIERS = ("erratum", "revision", "retraction")
 DEFAULT_TIER = "erratum"
+
+# `kind` is ORTHOGONAL to `tier`: tier says how strong the correction is (ACL
+# model), kind says what is being corrected — the printed edition, or our own
+# digitization of it. Both live in the same table so nothing is hidden, and the
+# column exists so they can be filtered apart when the distinction matters
+# (e.g. when reconciling against a physical copy: a `digitization` row says
+# nothing about what the 1998 print shows).
+KINDS = ("print", "digitization")
+DEFAULT_KIND = "print"
 CHECKSUM_LEN = 12
 
 
@@ -83,9 +92,12 @@ def dedup_key(e: dict):
     # tier is part of the key so a retraction/revision of an erratum — which
     # naturally shares that erratum's (page, line, read, instead) — never merges
     # into the row it is correcting.
+    # `locus` distinguishes digitization rows, which share an empty (page, line):
+    # two different places in the file can carry the same read/instead pair.
     return (str(e.get("page", "")), str(e.get("line", "")).strip(),
             str(e.get("read", "")).strip(), str(e.get("instead", "")).strip(),
-            e.get("tier") or DEFAULT_TIER)
+            e.get("tier") or DEFAULT_TIER, e.get("kind") or DEFAULT_KIND,
+            str(e.get("locus") or "").strip())
 
 
 def as_list(v):
@@ -100,6 +112,11 @@ def checksum(e: dict) -> str:
     changing is exactly the case the ACL model calls a `revision`."""
     payload = "|".join([str(e.get("page", "")), e.get("line", ""),
                         e.get("read", ""), e.get("instead", "")])
+    # `locus` joins the payload ONLY when set, so checksums of existing
+    # print-errata rows (which have no locus) stay byte-identical.
+    locus = str(e.get("locus") or "").strip()
+    if locus:
+        payload += "|" + locus
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()[:CHECKSUM_LEN]
 
 
@@ -132,6 +149,10 @@ def assign_tiers(entries: list, book_dir: str):
         if e["tier"] not in TIERS:
             sys.exit(f"{book_dir}: unknown tier {e['tier']!r} (page {e.get('page')}, "
                       f"line {e.get('line')!r}) — must be one of {TIERS}")
+        e["kind"] = e.get("kind") or DEFAULT_KIND
+        if e["kind"] not in KINDS:
+            sys.exit(f"{book_dir}: unknown kind {e['kind']!r} (page {e.get('page')}, "
+                      f"line {e.get('line')!r}) — must be one of {KINDS}")
         e["date"] = e.get("date_added", "")
         e["checksum"] = checksum(e)
         if e["tier"] == "retraction" and not e.get("reason"):
@@ -140,7 +161,12 @@ def assign_tiers(entries: list, book_dir: str):
         (deferred if e["tier"] == "revision" else fresh).append(e)
 
     for e in fresh:
+        # a row with no printed page (a digitization fix) would otherwise produce
+        # an id with an empty segment — `…-1998..1`. Give it a named segment so
+        # the id stays readable and says which sequence it belongs to.
         p = str(e.get("page", ""))
+        if not p:
+            p = "dig" if (e.get("kind") or DEFAULT_KIND) == "digitization" else "na"
         page_seq[p] = page_seq.get(p, 0) + 1
         e["id"] = f"{slug}-{year}.{p}.{page_seq[p]}" if year else f"{slug}.{p}.{page_seq[p]}"
 
@@ -188,6 +214,8 @@ def load_book(yml: Path):
                 "fixed_in": e.get("fixed_in"),
                 "note": e.get("note"),
                 "tier": e.get("tier") or DEFAULT_TIER,
+                "kind": e.get("kind") or DEFAULT_KIND,
+                "locus": e.get("locus"),
                 "revises": e.get("revises"),
                 "reason": e.get("reason"),
             }
@@ -238,6 +266,7 @@ def md_cell(s: str) -> str:
 
 
 TIER_LABEL = {"erratum": "erratum", "revision": "↻ revision", "retraction": "🚫 retraction"}
+KIND_LABEL = {"print": "print", "digitization": "⚙ digitization"}
 
 
 def render_book(work, entries, versions, book_dir):
@@ -245,6 +274,9 @@ def render_book(work, entries, versions, book_dir):
     fixed = sum(1 for e in entries if e.get("fixed_in"))
     openc = n - fixed
     tiers_present = sorted({e["tier"] for e in entries})
+    kind_counts = {k: sum(1 for e in entries if (e.get("kind") or DEFAULT_KIND) == k)
+                   for k in KINDS}
+    kinds_present = [k for k in KINDS if kind_counts[k]]
     header = [
         f"# Errata — {work}",
         "",
@@ -277,9 +309,16 @@ def render_book(work, entries, versions, book_dir):
     lines = header + [
         f"_Generated: {ddmmyyyy(TODAY)} · {n} errata "
         f"({openc} open · {fixed} fixed in the digital edition) · tiers: "
-        f"{', '.join(TIER_LABEL[t] for t in tiers_present)}_",
+        f"{', '.join(TIER_LABEL[t] for t in tiers_present)} · kinds: "
+        f"{', '.join(f'{KIND_LABEL[k]} {kind_counts[k]}' for k in kinds_present)}_",
         "",
-        "**read** = the correct form · **instead of** = what the print shows. "
+        "**Kind** separates two things that must not be conflated: a **print** row "
+        "corrects the printed edition, a **⚙ digitization** row corrects our own "
+        "extraction of it and says *nothing* about what the paper book shows — sort "
+        "on this column before reconciling against a physical copy. A digitization "
+        "row has no printed page; its **Line / locus** cell gives the file position "
+        "instead. "
+        "**read** = the correct form · **instead of** = what the corrected source showed. "
         "Line refs use the sources' Russian shorthand: `св.` = from the top "
         "(сверху), `сн.` = from the bottom (снизу). Each row carries a stable "
         "[id](https://aclanthology.org/info/ids/) and content checksum, per the "
@@ -287,8 +326,8 @@ def render_book(work, entries, versions, book_dir):
         "— **erratum** (note alongside), **revision** (replacement, id gains `.v2`), "
         "**retraction** (withdrawn, never deleted).",
         "",
-        "| # | ID | Tier | Page | Line | Read | Instead of | Found by | Added | Checksum | Status |",
-        "|--:|--|--|--:|--|--|--|--|--|--|--|",
+        "| # | ID | Tier | Kind | Page | Line / locus | Read | Instead of | Found by | Added | Checksum | Status |",
+        "|--:|--|--|--|--:|--|--|--|--|--|--|--|",
     ]
     for i, e in enumerate(entries, 1):
         fx = e.get("fixed_in")
@@ -303,16 +342,21 @@ def render_book(work, entries, versions, book_dir):
         if tier == "retraction":
             read_cell, instead_cell = f"~~{read_cell}~~", f"~~{instead_cell}~~"
             status = "🚫 **RETRACTED**"
-        row = (f"| {i} | `{md_cell(e['id'])}` | {TIER_LABEL[tier]} | {md_cell(str(e['page']))} | "
-               f"{md_cell(e['line'])} | {read_cell} | {instead_cell} | {found} | "
+        kind = e.get("kind") or DEFAULT_KIND
+        # a digitization row has no printed page/line — it carries a `locus`
+        # (file + line, docx paraId) instead, shown in the same column
+        line_cell = md_cell(e["line"]) or md_cell(str(e.get("locus") or ""))
+        row = (f"| {i} | `{md_cell(e['id'])}` | {TIER_LABEL[tier]} | {KIND_LABEL[kind]} | "
+               f"{md_cell(str(e['page']))} | "
+               f"{line_cell} | {read_cell} | {instead_cell} | {found} | "
                f"{md_cell(e['date_added'])} | `{e['checksum']}` | {status} |")
         lines.append(row)
         if tier == "revision":
-            lines.append(f"| | | | | | | | | | | _replaces `{md_cell(e['revises'])}`_ |")
+            lines.append(f"| | | | | | | | | | | | _replaces `{md_cell(e['revises'])}`_ |")
         if tier == "retraction":
-            lines.append(f"| | | | | | | | | | | _reason: {md_cell(str(e['reason']))}_ |")
+            lines.append(f"| | | | | | | | | | | | _reason: {md_cell(str(e['reason']))}_ |")
         if e.get("note"):
-            lines.append(f"| | | | | | | | | | | _{md_cell(str(e['note']))}_ |")
+            lines.append(f"| | | | | | | | | | | | _{md_cell(str(e['note']))}_ |")
 
     hints = (changelog_hints(ROOT / book_dir / "CHANGELOG.md")
              + changelog_hints(ROOT / "CHANGELOG.md", book_dir))
