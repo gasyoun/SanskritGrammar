@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- **Методичка-компаньон v1 (H1757, Fable 5 `claude-fable-5`).**
+  [METODICHKA_BUHLER_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md)
+  (durable spec in the Kochergina COMPANION shape, + sibling `.meta.md`) and
+  [METODICHKA_BUHLER_V1_KOMMENTARII_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_KOMMENTARII_2026.md)
+  — Russian commentary on all 17 flagged claims (8 FALSE misprint-class, 7 OVERSTATED,
+  2 pedagogy-only), the Scherzl↔DCS case-government section (693/982 confirmed, 3.9 %
+  dep-arc ceiling stated), the 8-row errata slice, Knauer cross-references, and the
+  24-badge frequency annex. `claims.yml` gains 17 learner-facing `methodichka` fills
+  (0 → 17; Apte precedent), regenerated into `claims.json`/`CLAIMS_VERIFIED.md`.
+  Pre-print gate: every verdict awaits ⟦MG-виза⟧.
+
 ### Changed
 - **A65 claim-level write-backs: HB-2, HB-10, HB-57, HB-100 now cite the probe that
   answered the author's note (H1276, Fable 5 `claude-fable-5`).** The four Bühler notes on
