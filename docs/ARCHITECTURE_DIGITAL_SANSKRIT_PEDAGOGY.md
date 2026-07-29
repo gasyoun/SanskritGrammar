@@ -1,6 +1,6 @@
 # Architecture — Digital Sanskrit Pedagogy
 
-_Created: 14-07-2026 · Last updated: 14-07-2026_
+_Created: 14-07-2026 · Last updated: 29-07-2026_
 
 Component boundaries, the data model behind the aspect taxonomy, and the build-vs-reuse verdict per
 piece. For the [field definition](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md);
@@ -65,7 +65,7 @@ already live; product integration lands in Systema (T0) and is spec-only until a
 | SRS | **REUSE** | Systema "Saraswati" (FSRS) + kosha Anki export exist |
 | Paradigm drills | **REUSE + wire** | kosha paradigm engine, SG widgets, csl-inflect, VisualDCS flashcards all exist |
 | Frequency/graded vocabulary | **REUSE** | kosha `core_rank` "learn-these-first" is the spine |
-| **Difficulty scorer** | **BUILD** | new; feeds RQ1 + reading + SRS; nobody owns it yet |
+| **Difficulty scorer** | ~~**BUILD**~~ ✅ **BUILT** (kosha H949) | shipped `data/difficulty/reading_pack_difficulty.json` (4 axes), before this table was refreshed; consumed by Systema's `/reading/kosha-demo` (H965) |
 | **Auto-drill generation + answer verification** | **BUILD** | on top of the Talmud drill bank + Systema engines |
 | **Evaluation harness (user study)** | **BUILD** | RQ4; the field's falsifiability backbone |
 | **Zaliznyak on-ramp** | **BUILD** (new UI over existing data) | reuses *Очерк*/index/token + Talmud widgets; the *presentation* is new |

@@ -1,6 +1,6 @@
 # Roadmap — Digital Sanskrit Pedagogy (2026–2028)
 
-_Created: 14-07-2026 · Last updated: 19-07-2026_
+_Created: 14-07-2026 · Last updated: 29-07-2026_
 
 Waves for the [digital Sanskrit pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md).
 Cover + decisions: [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
@@ -25,9 +25,9 @@ ROADMAP_INDEX) + wave-1 handoffs minted. *Unblocked by:* the three-audit prior-a
 | Deliverable | Unblocked by |
 |---|---|
 | First **user study** proving learning gain (RQ4, paper A32) | W1a/W1c shipped (something to evaluate) |
-| **Difficulty scorer** productionised (score any text → target-level reading set) | W1a result |
+| ~~**Difficulty scorer** productionised (score any text → target-level reading set)~~ ✅ **DONE** — kosha H949 shipped `data/difficulty/reading_pack_difficulty.json` (4-axis scoring), consumed by Systema's `/reading/kosha-demo` (H965) | W1a result |
 | **Auto-drill generation** with verified answer keys (RQ2) | drill schema + segmenter/paradigm engines (exist) |
-| Reading-pack generator (Gītā 1, Nala 1) live | kosha reading-pack data un-gated |
+| ~~Reading-pack generator (Gītā 1, Nala 1) live~~ ✅ **DONE** — the Nala-1/Gītā reading packs already existed from H848/H871 (found stale when H959 built the Systema-side reader route) | kosha reading-pack data un-gated |
 
 ## Wave 2 additions — attested-drills + RU corpus layer 🟡 (staged 19-07-2026 via `/ask-batch`)
 

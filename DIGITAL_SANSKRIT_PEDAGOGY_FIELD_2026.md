@@ -1,6 +1,6 @@
 # Digital Sanskrit Pedagogy — the field (org-wide metadocument)
 
-_Created: 14-07-2026 · Last updated: 27-07-2026_
+_Created: 14-07-2026 · Last updated: 29-07-2026_
 
 **What this is.** The single org-wide definition of **digital Sanskrit pedagogy** as a
 *priority research field* across the ~85-repo Sanskrit-lexicon ecosystem. It sits **above** the
@@ -123,7 +123,7 @@ Reading real text with scaffolding — where all the sub-skills compose into com
 - **Rungs** B1 (subhāṣitas) → B2 (epic) → C1 (Vedic/commentary) · **Disc.** kāvya · **NLP** `L4 alignment`, `L3`, `L2`, `difficulty`
 - **Assets:** kosha reading packs Gītā 1 / Nala 1 (📋 data-gated) · kosha dict↔corpus **KWIC** [concordance](https://github.com/gasyoun/kosha/blob/main/concordance/dict/index.html) (✅) · [RussianRamayana](https://github.com/gasyoun/RussianRamayana) parallel reader (✅, the flagship B2 graded text) · `corpus_lexicon` interlinear (1.09M aligned Sa↔Ru pairs, ✅) · Indische Sprüche (7,537 subhāṣitas, ✅) · [SamudraManthanam](https://github.com/gasyoun/SamudraManthanam) parallel corpus (✅) · [buhler-sanskrit-book](https://github.com/alexander-myltsev/buhler-sanskrit-book) exercises (🟡 20/48 lessons) · [Nalopakhyanam](https://github.com/gasyoun/Nalopakhyanam) beginner reader (⬜ stub)
 - **Research-Q** RQ1 (**difficulty-score any text** → auto-assemble a graded reader at a target level), RQ2 (reading-pack generation from DCS lemmatisation)
-- **Gap:** the difficulty scorer itself; kosha reading packs (data-gated); the Nala beginner reader is an empty stub.
+- **Gap:** ~~the difficulty scorer itself~~ ✅ **shipped (kosha H949, before Wave 2 close** — `data/difficulty/reading_pack_difficulty.json`, 4 axes; consumed by Systema H965); kosha reading packs (data-gated); the Nala beginner reader is an empty stub.
 - **First measurable result — PM4, scorer agreement with an independent ordering** (§4e): Kendall-τ between predicted passage difficulty and the textbook lesson at which that passage's vocabulary is first fully covered, over ≥100 held-out passages. Today unmeasured (no scorer); the anchors are textbook-vs-frequency τ ≈ **0.05–0.07** and textbook-vs-textbook τ **0.446–0.835**. Bar τ ≥ 0.40 — above the frequency floor, inside the human-agreement band.
 
 ### 3.5 Pāṇinian derivation / grammar-rule pedagogy
