@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.116.0] - 2026-07-30
+
 ### Fixed
 
 - **`data/pwg_panini_crosswalk/` purged of non-Pāṇini citations — extraction now
