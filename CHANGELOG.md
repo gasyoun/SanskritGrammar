@@ -19,6 +19,19 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+
+- **`data/pwg_panini_crosswalk/` purged of non-Pāṇini citations — extraction now
+  anchored on the `<ls>`-resolved abbreviation, not a bare number run (H1888,
+  Sonnet 5 `claude-sonnet-5`, 30-07-2026).** 74.5% of the previous 14,417 "sūtra"
+  keys were structurally impossible (adhyāya > 8 or pāda > 4) — a `\bP\.` regex
+  over the raw entry prose also matched compound abbreviations like `BHĀG. P.`
+  (Bhāgavata Purāṇa) and stray Vedic/epic citations. Distinct sūtra keys
+  14,417 → 3,792 (≤ the Aṣṭādhyāyī's real 3,983); total references
+  47,312 → 22,825. A structural assertion (adhyāya ∈ 1–8, pāda ∈ 1–4) now guards
+  the builder. See
+  [SanskritGrammar#563](https://github.com/gasyoun/SanskritGrammar/issues/563).
+
 ## [0.115.0] - 2026-07-28
 
 ### Added
