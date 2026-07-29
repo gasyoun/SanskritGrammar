@@ -1,6 +1,14 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 19-07-2026_
+_Created: 10-07-2026 · Last updated: 29-07-2026_
+
+> _Revision 29-07-2026 (Codex root, best-effort after the
+> configured Fable Planner returned no draft): rebased current state on
+> `origin/main` after the H1259 line edit, H1514 errata/stable-ID delivery,
+> H1611–H1614 freeze probes, pedagogy last-mile closure, and A61 readiness.
+> Added a subordinate
+> [architecture modernization plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md)
+> without changing the portfolio order._
 
 > _Revision 19-07-2026 ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md), Fable 5 `claude-fable-5`): executed the 18-07-2026 **keep-both ruling** — Sangram is the product of record for the corpus-grammar line; Track C's two ACL papers are its **publication arm**, and the former "four spines" S1–S4 are demoted to **instruments** that feed Sangram (labels kept for link stability). Measured basis, 19-07-2026 against `origin/main`: `sangram/` accounts for 204 of 596 files touched since 14-07-2026 — **34.2 %, the single largest stream of work in the repo, 3.2× the next bucket** (`scripts/`, 64). The S1 τ result is already consumed as evidence by three Sangram programme docs; the agreement-metric method of the S2 paper is already practised inside `sangram/articles/tatpurusha/` — the papers productionise analyses that exist as one-offs. The portfolio order below (M03 first) is untouched: "Sangram primary" ranks Sangram over its instruments, not over the monograph._
 
@@ -21,11 +29,11 @@ rights programme this cycle.
 
 | Order | Track | Current state | Authoritative detail | Cadence ruling |
 |---:|---|---|---|---|
-| **1** | **M — M03 GasunsDhatu monograph** | Complete author-visaed draft; the remaining bottleneck is the 1,127-finding RWS line edit, then two mechanical pre-submission passes | [`GasunsDhatu_2014/revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md) and the [press-readiness checklist](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md) | Highest-labelled priority; hybrid agent/human line edit; manuscript freeze **31-10-2026**; contact «Нестор-История» in **November 2026** |
-| **2** | **S — Sangram corpus grammar** | 35 article manifests: 9 published, 26 candidates; the 18-07 adversarial re-derivation found 3 refuted numerical claims, 2 fixed and 1 routed to a draft fix | [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) and the [DCS-derived-number ledger](https://github.com/gasyoun/SanskritGrammar/blob/main/DCS_DERIVED_NUMBERS_LEDGER_2026.md) | **Consolidation freeze:** no new topic/article manifests until all 26 baseline candidates reach a documented published, revised, rejected, or kill-gated disposition |
-| **3** | **P — Digital Sanskrit pedagogy / RQ4** | Protocol, consent, item bank, and Systema harness complete | [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) and [`docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) | **GO now:** activate the existing RQ4 feature and recruit exactly under the approved protocol |
+| **1** | **M — M03 GasunsDhatu monograph** | H1259's hybrid line edit is complete; the live bottleneck is human review of 290 highlighted paragraphs, followed by the two mechanical pre-submission passes | [`GasunsDhatu_2014/revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md) and the [press-readiness checklist](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md) | Highest-labelled priority; human review now; manuscript freeze **31-10-2026**; contact «Нестор-История» in **November 2026** |
+| **2** | **S — Sangram corpus grammar** | The 26-item freeze baseline is 11 published, 1 kill-gated, and 14 unknown as of the 24-07 ledger refresh; H1611–H1614 proved that several unknowns lack legitimate C5/C6 gates and must not be dispositioned by invention | [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) and the [consolidation ledger](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) | **Consolidation freeze:** no new topic/article manifests until the 14 unknowns receive legitimate gates, visa, or another documented terminal disposition |
+| **3** | **P — Digital Sanskrit pedagogy / RQ4** | Protocol, consent, item bank, six-feed export, Systema harness, sync, smoke test, and operator runbook are complete | [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) and [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md) | Human authorizes the production flag after the non-collision window; the 28-08 marathon cohort remains excluded |
 | **4** | **C — Comparative corpus / papers, the publication arm of Sangram** | S1–S4 are **instruments feeding Sangram** (§2), no longer independent workstreams; the two ACL papers productionise analyses Sangram already consumes or practises; A60/A61 and other already-open paper work continue | This document §§1–4 and [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) | Full cadence continues alongside M03; M03 is the highest-labelled priority, not an exclusivity rule |
-| **5** | **A — Archive and reading site** | Public Docusaurus archive and source/concordance pipelines are operational | [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md) | Maintenance and correctness work only; the existing third-party-rights caveat remains, with no new rights audit this cycle |
+| **5** | **A — Archive, reading site, and technical architecture** | Public Docusaurus archive is operational; the repo-wide architecture audit found publication-boundary, reproducibility, script-monolith, dependency, and deployment-gating debt | [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md) and the [architecture modernization plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md) | Product throughput remains first; a subordinate 12–18-month technical lane begins with delivery safety and two vertical pilots |
 
 The specific Sangram freeze overrides the general full-cadence ruling: **full cadence for Sangram
 means verification, visa, repair, and disposition of the 26-candidate baseline—not new-topic
@@ -44,29 +52,29 @@ other, but where they compete for capacity, the instrument serves the product, n
 
 | Wave | Window | Deliverables | What unblocks it |
 |---|---|---|---|
-| **W1 — establish the gates** | 18-07 → 31-08-2026 | Start M03 hybrid line edit; enforce Sangram's machine-readable freeze ledger; activate and smoke-test RQ4; finish already-open review/QA work | The eight author rulings recorded in §5 |
+| **W1 — close human gates and prove the architecture pilots** | 18-07 → 31-08-2026 | Human review of the completed M03 line edit; define or source legitimate Sangram C5/C6 gates; authorize RQ4 after its non-collision window; harden delivery/publication safety; prove Knauer and SG-MO-021 vertical pilots | Existing product artifacts plus the 23 architecture rulings recorded in the subordinate plan |
 | **W2 — finish the manuscript** | 01-09 → 31-10-2026 | Complete tracked RWS edit and human sign-off; freeze M03; run final number consistency and ГОСТ bibliography/citation passes; continue Sangram candidate dispositions and comparative research | W1 line-edit packet; no unresolved argument-changing edit at freeze |
 | **W3 — publisher and live study** | 01-11 → 31-12-2026 | Contact «Нестор-История»; obtain house requirements and Devanāgarī/IAST confirmation; recruit the approved RQ4 cohort; continue research tracks | Frozen manuscript; verified RQ4 production route |
 | **W4 — publication year** | 2027 H1 | Publisher review/typesetting, two reviewers, RQ4 retention results, comparative papers/benchmark, and Sangram reopening only if the 26-candidate baseline is fully dispositioned | Publisher response; completed study window; Sangram consolidation exit criterion |
 
 ### Wave-1 execution pointers
 
-- **H1259 — M03 hybrid line edit and freeze**
-
-  Folder: `C:\Users\user\Documents\GitHub\SanskritGrammar` · model: Fable 5 (`claude-fable-5`)
-
-  `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md and execute it.`
+- **H1259 — M03 hybrid line edit: EXECUTED.** Human review of
+  [`GasunsDhatu_2026_RWS_review.docx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GasunsDhatu_2026_RWS_review.docx)
+  is the remaining gate; it is not a new agent handoff.
 
 - **🔴 EXECUTED: [H1260 — Sangram consolidation policy and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)**
   (Sonnet 5 `claude-sonnet-5`, 19-07-2026). Machine-readable freeze ledger +
   `article_validate.py` freeze gate installed — see `.ai_state.md` Completed
   and [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).
 
-- **H1261 — RQ4 go-live**
+- **H1261 — RQ4 go-live:** technical preparation is complete. The actual production
+  flag remains human-only and follows
+  [`RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md).
 
-  Folder: `C:\Users\user\Documents\GitHub\Systema-Sanscriticum` · model: Sonnet 5 (`claude-sonnet-5`)
-
-  `Read C:\Users\user\Documents\GitHub\Uprava\handoffs\H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md and execute it.`
+- **Architecture Wave 1:** execute the handoffs named in the
+  [architecture modernization plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md)
+  only after its autonomy-readiness gate passes.
 
 The already-minted **H1257** applies the first 11-candidate Sangram visa batch. H1260 must consume
 that work as evidence and must not duplicate or overwrite it.
@@ -317,11 +325,13 @@ here, and the two papers of Q1 2027 are how Sangram's methods reach peer review.
 this section proposes a new Sangram topic or article manifest (freeze, §0 ruling 2): where a
 deliverable touches Sangram, it grounds, cites, or hardens **existing** articles.
 
-**Plainly, as of 19-07-2026:** Q3.1 is done (the agenda memo exists) and Q3.2 is done
+**Plainly, as of 29-07-2026:** Q3.1 is done (the agenda memo exists), Q3.2 is done
 ([`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md),
-computed 10-07-2026); Q4.1–Q4.5 are **unclaimed and unstarted** — no TRACER/Passim/RefD
-implementation exists in the repo, and the Q4.4 Whitney↔DCS↔Vidyut crosswalk file does not
-exist. Presenting them otherwise would be false.
+computed 10-07-2026), and Q3.5 shipped through H1514 (three-tier correction schema, stable
+sentence IDs, and live per-work `ERRATA.mdx`). The literal Q4.1–Q4.5 deliverables still require
+a fresh evidence check before execution: adjacent gold-provenance, stable-ID, pedagogy-export,
+and crosswalk work has changed their assumptions, while no verified TRACER/Passim replacement
+has been accepted. Treat the rows as research directions, not current execution status.
 
 ### Q3 2026 (Jul–Sep) — Measure what is already committed
 
@@ -333,7 +343,7 @@ No new derivations. Convert three existing hand-waves into numbers.
 | Q3.2 | **Lesson-order divergence** | 79 + 33 shared clusters | Kendall's τ ([J06-4002](https://aclanthology.org/J06-4002/)) | first real result; τ per book pair |
 | Q3.3 | **Score the coverage matrix** | freeze 150 (chapter × work) cells | 2 annotators → Fleiss κ → P/R/F1 of the keyword lexicon ([J08-4004](https://aclanthology.org/J08-4004/)) | turns *"finding-aid, not an authority"* into a measured number |
 | Q3.4 | **Three-scheme agreement** | 876-root crosswalk | Fleiss κ / Krippendorff α over Zal./Gas./Tol. as three coders | where the three actually disagree, quantified |
-| Q3.5 | **Errata schema B1 + IDs B2** | 8 `errata.yml` | [ACL corrections model](https://aclanthology.org/info/corrections/) | site v1 |
+| Q3.5 | **Errata schema B1 + IDs B2 — DONE (H1514)** | 8 `errata.yml` | [ACL corrections model](https://aclanthology.org/info/corrections/) | Three-tier correction schema, stable sentence IDs, and live `ERRATA.mdx` |
 
 **Gate:** Q3.3 needs a second annotator. Per [[feedback-second-annotator-deferred]] no candidate
 exists and recruitment is parked for 2026 — so Q3.3 runs as **single-annotator + adjudicated
@@ -441,15 +451,22 @@ sessions must not re-open them without new evidence or an explicit author reques
 
 ## 6. Immediate execution order
 
-1. **H1259 — required next action:** execute the M03 hybrid edit/freeze mission.
-2. **H1260 — parallel quality gate:** establish the Sangram consolidation ledger and enforce the
-   no-new-topic baseline; consume H1257 rather than duplicating it.
-3. **H1261 — parallel launch:** activate and verify RQ4 without changing its protocol.
-4. Keep already-open comparative-paper and archive correctness work moving at full cadence.
+1. **Human M03 review:** adjudicate the 290 highlighted paragraphs in the H1259 review
+   document; then run the October number and ГОСТ passes and freeze on 31-10-2026.
+2. **Human RQ4 authorization:** after the non-collision window, flip only the approved
+   production feature and exclude the 28-08 marathon cohort.
+3. **Sangram freeze exit:** supply legitimate C5/C6 instruments or route the 14 unknowns
+   through visa/another documented terminal path; agents must not invent thresholds.
+4. **Integrity:** keep issue 563's contaminated PWG–Pāṇini crosswalk suppressed until a
+   contextual extractor regenerates it.
+5. **Architecture lane:** execute delivery safety, then the Knauer and SG-MO-021 pilots from
+   the subordinate
+   [architecture plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md).
+6. Keep already-open comparative-paper work moving at full cadence where it does not compete
+   with the gates above.
 
-The H1259/H1260/H1261 folder, model, and literal start lines are in §0. The October manuscript
-freeze triggers the two final agent passes named in the press-readiness checklist; the November
-publisher contact remains a human `@DO`, not an autonomous handoff.
+The October manuscript freeze triggers the two final agent passes named in the press-readiness
+checklist; the November publisher contact remains a human `@DO`, not an autonomous handoff.
 
 ## Related documents (awareness weave H1728)
 
