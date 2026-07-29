@@ -1,16 +1,17 @@
 {
   "study": "PWG → Aṣṭādhyāyī (Pāṇini sūtra) crosswalk",
-  "as_of": "2026-07-18",
+  "as_of": "2026-07-30",
   "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
-  "total_sutra_refs": 47312,
-  "full_abc_refs": 39931,
-  "pada_only_refs": 7381,
-  "distinct_words": 22038,
-  "distinct_sutras": 14417,
+  "total_sutra_refs": 22825,
+  "full_abc_refs": 22821,
+  "pada_only_refs": 4,
+  "rejected_non_panini_or_out_of_range": 102,
+  "distinct_words": 12974,
+  "distinct_sutras": 3792,
   "top_cited_sutras": [
     {
       "sutra": "P.4.2.80",
-      "n_words": 480
+      "n_words": 496
     },
     {
       "sutra": "P.2.4.31",
@@ -18,15 +19,15 @@
     },
     {
       "sutra": "P.4.1.105",
-      "n_words": 160
+      "n_words": 167
     },
     {
       "sutra": "P.4.1.41",
-      "n_words": 147
+      "n_words": 149
     },
     {
       "sutra": "P.4.1.112",
-      "n_words": 141
+      "n_words": 145
     },
     {
       "sutra": "P.7.2.10",
@@ -34,79 +35,79 @@
     },
     {
       "sutra": "P.4.1.123",
-      "n_words": 125
+      "n_words": 131
     },
     {
       "sutra": "P.1.1.37",
-      "n_words": 120
-    },
-    {
-      "sutra": "P.4.1",
-      "n_words": 118
+      "n_words": 123
     },
     {
       "sutra": "P.4.1.110",
-      "n_words": 108
+      "n_words": 119
     },
     {
       "sutra": "P.4.1.99",
-      "n_words": 106
+      "n_words": 111
     },
     {
       "sutra": "P.5.2.36",
-      "n_words": 94
+      "n_words": 95
     },
     {
       "sutra": "P.4.1.96",
-      "n_words": 92
-    },
-    {
-      "sutra": "P.3.1.134",
-      "n_words": 83
-    },
-    {
-      "sutra": "P.3.1.27",
-      "n_words": 83
-    },
-    {
-      "sutra": "P.5.1.124",
-      "n_words": 82
+      "n_words": 93
     },
     {
       "sutra": "P.1.4.57",
-      "n_words": 80
+      "n_words": 90
+    },
+    {
+      "sutra": "P.3.1.134",
+      "n_words": 87
     },
     {
       "sutra": "P.4.1.104",
-      "n_words": 80
+      "n_words": 82
     },
     {
-      "sutra": "P.4.2.60",
-      "n_words": 76
+      "sutra": "P.3.1.27",
+      "n_words": 79
+    },
+    {
+      "sutra": "P.5.1.124",
+      "n_words": 77
     },
     {
       "sutra": "P.5.1.123",
       "n_words": 73
     },
     {
-      "sutra": "P.4.2.127",
-      "n_words": 67
+      "sutra": "P.4.1.151",
+      "n_words": 69
     },
     {
       "sutra": "P.4.2.138",
-      "n_words": 63
+      "n_words": 68
     },
     {
-      "sutra": "P.4.1.151",
-      "n_words": 63
+      "sutra": "P.4.2.127",
+      "n_words": 68
     },
     {
       "sutra": "P.5.2.97",
-      "n_words": 63
+      "n_words": 65
+    },
+    {
+      "sutra": "P.4.1.154",
+      "n_words": 64
     },
     {
       "sutra": "P.4.2.90",
-      "n_words": 60
+      "n_words": 62
+    },
+    {
+      "sutra": "P.2.1.72",
+      "n_words": 59
     }
   ]
 }

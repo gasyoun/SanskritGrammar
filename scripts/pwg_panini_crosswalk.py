@@ -36,8 +36,19 @@ def to_iast(s):
     return ''.join(SLP1.get(c, c) for c in s)
 
 
-# `P. a,b` or `P. a,b,c` (with an optional `.d` continuation on the sūtra number)
-SUTRA = re.compile(r'\bP\.\s*(\d+),\s*(\d+)(?:,\s*(\d+))?')
+# Every `<ls>` (or `<ls n="...">`) citation tag, capturing the optional inherited
+# abbreviation (`n=`) and the tag's own visible text separately — a citation's
+# *source* is the abbreviation, never a bare number run in the prose around it.
+LS_TAG = re.compile(r'<ls(?:\s+n="([^"]*)")?>([^<]*)</ls>')
+
+# Anchored on the resolved abbreviation starting with "P." (Pāṇini) — never a
+# `\bP\.` match anywhere in the running text, which also fires inside compound
+# abbreviations like `BHĀG. P.` (Bhāgavata Purāṇa) because they merely CONTAIN
+# "P." after a space. Same anchoring rule SanskritLexicography's ls_resolver.py
+# LsPattern for Pāṇini uses (`^(P[.]) ...`), ported narrowly here rather than
+# importing the full resolver. The `,?` after "P." tolerates the rare stray-comma
+# range-continuation echo (`<ls n="P. , 5,4,">91</ls>`, i.e. "P.5.4.88—91").
+PANINI = re.compile(r'^P\.\s*,?\s*(\d+)\s*,\s*(\d+)(?:\s*,\s*(\d+))?')
 
 
 def entries(path):
@@ -83,11 +94,19 @@ def main():
     word2sutra = {}          # headword_slp1 -> (L_id, sorted set of display sutras)
     sutra2word = defaultdict(set)
     sortkey = {}
-    n_refs = full = partial = 0
+    n_refs = full = partial = rejected = 0
     for L, hw, body in entries(pwg):
         found = set()
-        for m in SUTRA.finditer(body):
+        for tag in LS_TAG.finditer(body):
+            n_attr, visible = tag.groups()
+            effective = ((n_attr or '') + ' ' + visible).lstrip()
+            m = PANINI.match(effective)
+            if not m:
+                continue
             a, b, c = m.groups()
+            if not (1 <= int(a) <= 8 and 1 <= int(b) <= 4):
+                rejected += 1
+                continue
             n_refs += 1
             full += 1 if c else 0
             partial += 0 if c else 1
@@ -122,11 +141,12 @@ def main():
     top = sorted(sutra2word.items(), key=lambda kv: -len(kv[1]))[:25]
     summary = {
         "study": "PWG → Aṣṭādhyāyī (Pāṇini sūtra) crosswalk",
-        "as_of": "2026-07-18",
+        "as_of": "2026-07-30",
         "source": "csl-orig/v02/pwg/pwg.txt (read-only)",
         "total_sutra_refs": n_refs,
         "full_abc_refs": full,
         "pada_only_refs": partial,
+        "rejected_non_panini_or_out_of_range": rejected,
         "distinct_words": len(word2sutra),
         "distinct_sutras": len(sutra2word),
         "top_cited_sutras": [{"sutra": "P." + d, "n_words": len(w)} for d, w in top],
@@ -134,9 +154,11 @@ def main():
     (out / "pwg_panini_summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-    print(f"sūtra refs {n_refs} (full {full} / pāda-only {partial})")
+    print(f"sūtra refs {n_refs} (full {full} / pāda-only {partial}) · rejected {rejected}")
     print(f"distinct words {len(word2sutra)} · distinct sūtras {len(sutra2word)}")
     print(f"wrote {w2s.name}, {s2w.name}, pwg_panini_summary.json → {out}")
+    for disp, (a, b, c) in sortkey.items():
+        assert 1 <= a <= 8 and 1 <= b <= 4, f"structural assertion failed: P.{disp}"
     return 0
 
 

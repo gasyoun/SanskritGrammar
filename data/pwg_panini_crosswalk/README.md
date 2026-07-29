@@ -1,28 +1,35 @@
 # PWG → Aṣṭādhyāyī (Pāṇini sūtra) crosswalk
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 30-07-2026_
 
 A corpus↔grammar index mined from the großes Petersburger Wörterbuch (PWG): the
 Pāṇinian sūtra that PWG cites as the authority for each headword. Normally an
-expensive dataset to assemble; here it falls out of one regex pass over the
-committed `pwg.txt` (read-only), so it is cheap to regenerate and to keep fresh.
+expensive dataset to assemble; here it falls out of one pass over the committed
+`pwg.txt` (read-only), so it is cheap to regenerate and to keep fresh.
 
 ## What it is
 
 PWG cites the grammar as `P. a,b` (adhyāya, pāda) or `P. a,b,c` (adhyāya, pāda,
-sūtra). This extraction reads every reference and builds **both directions**:
+sūtra). Extraction is anchored on the `<ls>`-resolved citation abbreviation (not a
+bare `a,b,c`-shaped number run in the prose), so a Vedic/epic citation that merely
+*contains* "P." after another abbreviation (`BHĀG. P.` = Bhāgavata Purāṇa) is never
+mistaken for Pāṇini — see [H1888](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1888-Sonnet_SanskritGrammar_panini-crosswalk-nonpanini-citation-purge_29.07.26.md),
+which found 74.5% of the previous 14,417 "sūtra" keys were impossible (adhyāya > 8
+or pāda > 4). A structural assertion (adhyāya ∈ 1–8, pāda ∈ 1–4) now guards the
+builder itself. This extraction reads every reference and builds **both directions**:
 
 | File | Rows | Direction |
 |---|---|---|
-| [`pwg_panini_word2sutra.tsv`](pwg_panini_word2sutra.tsv) | 22,038 words | headword → the sūtra(s) that license it |
-| [`pwg_panini_sutra2word.tsv`](pwg_panini_sutra2word.tsv) | 14,417 sūtras | sūtra → the words attested under it (capped at 50/row) |
-| [`pwg_panini_summary.json`](pwg_panini_summary.json) | — | counts + the 25 most-cited sūtras |
+| [`pwg_panini_word2sutra.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_panini_crosswalk/pwg_panini_word2sutra.tsv) | 12,974 words | headword → the sūtra(s) that license it |
+| [`pwg_panini_sutra2word.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_panini_crosswalk/pwg_panini_sutra2word.tsv) | 3,792 sūtras | sūtra → the words attested under it (capped at 50/row) |
+| [`pwg_panini_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_panini_crosswalk/pwg_panini_summary.json) | — | counts + the 25 most-cited sūtras |
 
-Totals: **47,312 references** (39,931 full `a.b.c` · 7,381 pāda-only). The most-cited
+Totals: **22,825 references** (22,821 full `a.b.c` · 4 pāda-only; 102 candidate
+`P.`-prefixed citations rejected by the structural assertion). The most-cited
 sūtras are the Adhyāya-4 taddhita rules (`P.4.2.80`, `P.4.1.105`, `P.2.4.31`…) —
 PWG cites Pāṇini densest for secondary derivation, which is what makes this a good
 companion to the taddhita derivation layer
-([`sangram/articles/taddhita-overview/`](../../sangram/articles/taddhita-overview/index.mdx)).
+([`sangram/articles/taddhita-overview/`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/index.mdx)).
 
 ## Regenerate
 
