@@ -1,6 +1,6 @@
 # Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
-_Created: 10-07-2026 · Last updated: 19-07-2026_
+_Created: 10-07-2026 · Last updated: 29-07-2026_
 
 A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
@@ -45,6 +45,9 @@ that closes between now and Q1 2027 changes the contribution claim.
   — the H450 agenda (landed 10-07-2026): hypotheses SG-H1…SG-H9, visualisations SG-V1…SG-V6, the
   14-citation ACL crosswalk, sections N1–N4, and the ranked 11-item build backlog. **This roadmap
   is the plan; that memo is the agenda; neither is the analysis.**
+- [`docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md)
+  — the subordinate 12–18-month technical lane added 29-07-2026. It does not supersede this
+  portfolio umbrella; this file still resolves priority conflicts.
 
 ## Known limitations / caveats
 
@@ -104,13 +107,14 @@ that closes between now and Q1 2027 changes the contribution claim.
 
 | # | Item | Status |
 |---|---|---|
-| 1 | Spell out the **S1 fallback** if `@DO D4` resolves negatively (keep order comparison, drop directionality) | open |
-| 2 | Reconcile the **D3 tier promotion** into GTD's standing tier order — name what it displaces | open |
-| 3 | Add **S/M/L effort estimates** to every Q3–Q2 item, not just Angle B | open |
+| 1 | Spell out the **S1 fallback** if `@DO D4` resolves negatively (keep order comparison, drop directionality) | parked — revisit when D4 evidence lands |
+| 2 | Reconcile the **D3 tier promotion** into GTD's standing tier order — name what it displaces | parked — portfolio order now governs; revisit at quarterly review |
+| 3 | Add **S/M/L effort estimates** to every Q3–Q2 item, not just Angle B | parked — re-estimate from measured H1912/H1913 pilot cost |
 | 4 | Fold H450's numbered hypotheses back in as the roadmap's **hypothesis IDs** once the memo lands | ✅ closed 10-07-2026 — memo landed with IDs **SG-H1…SG-H9** (S1: H1/H2/H3/H4/H9 · S2: H5/H6 · S3: H7 · S4: H8) + viz **SG-V1…SG-V6**; see [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) |
-| 5 | Re-verify the four **ACL non-findings** before any submission (they are the novelty claims) | open — due Q1 2027 |
-| 6 | Decide whether **S4** gets a lane or is formally closed | open |
-| 7 | Add a **budget line** — token/time cost per quarter — H450's backlog now carries S/M/L per item, quarterly roll-up still missing | open |
+| 5 | Re-verify the four **ACL non-findings** before any submission (they are the novelty claims) | parked — mandatory submission-time check, due Q1 2027 |
+| 6 | Decide whether **S4** gets a lane or is formally closed | parked — remains inside M03 unless new evidence appears |
+| 7 | Add a **budget line** — token/time cost per quarter — H450's backlog now carries S/M/L per item, quarterly roll-up still missing | parked — use measured architecture-pilot and publication throughput |
+| 8 | Keep portfolio status synchronized with the subordinate architecture lane | queued — H1911–H1913 via the [architecture PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md) |
 
 ## Revision history
 
@@ -123,5 +127,6 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 14-07-2026 | **S1 cross-grammar milestone recorded (H797 Phase 2).** S1 sub-thread updated: D-A/D-B rulings noted, second register live — [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml) 64 verified + 339-candidate backlog ([PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186)); two-register calibration finding added; remaining Knauer/Zaliznyak stated. | Fable 5 (`claude-fable-5`) |
 | 18-07-2026 | **Portfolio rewrite (backfilled row — the authoring session did not update this metadoc).** [PR #417](https://github.com/gasyoun/SanskritGrammar/pull/417) rebuilt the file from an ACL-track roadmap into the repo's five-track **portfolio umbrella** (M03 · Sangram · pedagogy/RQ4 · comparative · archive) per the 18-07-2026 roadmap interview: 8 rulings, waves W1–W4, H1259/H1260/H1261 pointers, Sangram consolidation freeze. | recorded 19-07-2026 by Fable 5 (`claude-fable-5`) |
 | 19-07-2026 | **Sangram-primary re-base ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md)).** Keep-both ruling executed: §2 "four spines" → "four instruments" feeding Sangram (labels kept), Track C re-titled the **publication arm of Sangram** with a §0 relation paragraph, per-instrument "Feeds Sangram" leads (honest τ/κ citation split: τ cited by three programme docs, not articles; tatpurusha's Cohen κ ≠ the never-run S2/Q3.4 κ), Q3.1/Q3.2 marked done and Q4.1–Q4.5 plainly unstarted, measured 34.2 % sangram/ share since 14-07. Freeze respected: no new topics/manifests, charter untouched. | Fable 5 (`claude-fable-5`) |
+| 29-07-2026 | **Current-state and architecture rebase.** H1259 moved from execution to its human 290-paragraph review gate; Sangram refreshed to 11 published / 1 kill-gated / 14 unknown; RQ4 technical closure and H1514 recorded; Q4 language made evidence-sensitive; subordinate modular-monorepo plan + H1911–H1913 linked. Configured Fable Planner returned no draft; MG authorized root best-effort. | Codex root |
 
 _Dr. Mārcis Gasūns_
