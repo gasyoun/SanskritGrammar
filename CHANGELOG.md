@@ -19,6 +19,10 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+
+- **Grammatical abbreviation terminology crosswalk (H2048, Grok 4.5 `grok-4.5` dual-run vs Fable lock)** — [`docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md`](docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md) (+ metadoc): all 11 fixed grammar corpora + LES-1990 + Kochergina dict text; cases locked Latin-stay (MG 31-07); non-case default Latin-stay + Koch-style tooltips where no attested RU short tag exists.
+
 ## [0.116.0] - 2026-07-30
 
 ### Fixed
