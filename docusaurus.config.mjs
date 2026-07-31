@@ -3,24 +3,25 @@
 // Each book lives as .mdx beside its .docx source in its own top-level folder;
 // this docs instance includes them directly (no copy into a docs/ dir).
 // remarkRstTable renders the ```rst-table fenced grid tables as real <table>s.
-import fs from 'fs';
 import remarkRstTable from './src/remark/rstTable.mjs';
 import remarkFixHeadingAnchors from './src/remark/fixHeadingAnchors.mjs';
+import { discoverSite } from './src/discovery.mjs';
 
-// Auto-discover book folders (any top-level dir containing at least one .mdx),
-// instead of a hand-maintained static list. A folder dropped in and converted
-// to .mdx is picked up on the next build with zero config edits — the previous
-// static array silently omitted any new book until someone remembered to add
-// it by hand (found 06-07-2026: ZalizniakMorphology_1975 converted fine but
-// was never in `include`, so the build reported [SUCCESS] with the book
-// simply absent from the site).
-const SKIP_DIRS = new Set(['node_modules', 'build', '.docusaurus', 'src', '.git', '.github', 'scripts']);
-const bookDirs = fs
-  .readdirSync('.', { withFileTypes: true })
-  .filter((d) => d.isDirectory() && !SKIP_DIRS.has(d.name) && !d.name.startsWith('.'))
-  .filter((d) => fs.readdirSync(d.name).some((f) => f.endsWith('.mdx')))
-  .map((d) => d.name)
-  .sort();
+// Auto-discover book folders from the **tracked** `.mdx` set (`git ls-files`),
+// not a filesystem scan. A folder dropped in, converted, and `git add`ed is
+// picked up on the next build with zero config edits — while anything
+// `.gitignore`'d (private/archival/raw MDX that should never publish) is never
+// read. The earlier filesystem scan read ignored archival MDX and a single
+// malformed front-matter file in such an archive killed `npm run build`
+// locally while CI stayed green on the fresh clone (H1911 Slice A,
+// docs/architecture/baseline/H1911_A0_BASELINE.md).
+//
+// The previous static array silently omitted any new book until someone
+// remembered to add it by hand (found 06-07-2026: ZalizniakMorphology_1975
+// converted fine but was never in `include`, so the build reported [SUCCESS]
+// with the book simply absent from the site) — tracked-file discovery keeps
+// that property without the ignore-poisoning failure mode.
+const { bookDirs, include: includePaths, exclude: excludePatterns, trackedCount, ignoredCount } = discoverSite();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -59,8 +60,8 @@ const config = {
           path: '.',
           routeBasePath: 'grammars',
           sidebarPath: './sidebars.mjs',
-          include: bookDirs.map((d) => `${d}/**/*.mdx`),
-          exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**'],
+          include: includePaths,
+          exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**', ...excludePatterns],
           remarkPlugins: [remarkRstTable, remarkFixHeadingAnchors],
           editUrl: undefined,
         },
