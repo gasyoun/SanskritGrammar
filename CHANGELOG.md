@@ -18,6 +18,9 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+
+- **Natural-method story scaffold + chapter drafts v0 (H2113, Fable 5 `claude-fable-5`)** — [`docs/NATURAL_METHOD_STORY_START_CHTENIYA/`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/README.md): 3 graded chapters of original continuous Sanskrit with RU gloss (Devanāgarī + IAST + padapāṭha per sentence), vocab budget + difficulty targets anchored to kosha frequency bands L1–3, pack-JSON export-schema note; the «Старт чтения» long-term spine (interim pilot stays Hitopadeśa-0 until human editorial visa).
 
 ## [0.116.2] - 2026-08-01
 ### Added
