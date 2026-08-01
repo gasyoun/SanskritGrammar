@@ -19,6 +19,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.116.2] - 2026-08-01
 ### Added
 
 - **«Старт чтения» classroom curriculum map W1–W5 (H2112, Grok 4.5 `grok-4.5`)** — [`docs/CURRICULUM_START_CHTENIYA_W1_W5.md`](docs/CURRICULUM_START_CHTENIYA_W1_W5.md): week → drills → pack → homework with concrete kosha / Karaoke / csl-guides / Systema paths; interim Hitopadeśa-0 + subhāṣita-beginner spine; fence vs research pedagogy W1–W5.
