@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.117.1] - 2026-08-02
+### Changed
+
+- **Curriculum map W1–W5 dual-run compare + freeze-sync (H2121, Fable 5 `claude-fable-5`)** — [`docs/CURRICULUM_START_CHTENIYA_W1_W5.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_START_CHTENIYA_W1_W5.md): independent Fable re-census verified all 20 cited paths and every numeric claim of the Grok 4.5 (`grok-4.5`) override (H2112); merge-adjudicated patches — H2109 cohort-freeze pin paths (`kosha/data/cohort_start_chteniya/`, landed) now named as the canonical consumer paths, W4 caveat that Karaoke `subh_1249`/`subh_6087` carry a German-only translation layer, W5 subhāṣita `subhashita_reader_pack` ≠ `reading_pack_v1` adapter warning for H2110.
+
 ## [0.117.0] - 2026-08-01
 ### Added
 
