@@ -1,3 +1,7 @@
 # Test/dev dependencies (not needed to run the build scripts themselves).
 -r requirements.txt
 pytest>=8.0
+# Draft-2020-12 schema validation for article / claims / atlas / ledger
+# (optional at runtime — scripts fall back to a builtin subset — but CI
+# should exercise the real jsonschema path).
+jsonschema>=4.0

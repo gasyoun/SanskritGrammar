@@ -60,8 +60,19 @@ Three layers in one repo (full orientation:
 | `npm run convert` | regenerate `.mdx` from the Word sources (Pandoc + postprocess) |
 | `npm run build` / `npm run start` | build / serve the Docusaurus site |
 | `npm run errata` | regenerate every book's `ERRATA.md` + the index from `errata.yml` |
-| `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer |
+| `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer (+ claims schema validate) |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
+
+**CI enforcement (H1840):** `.github/workflows/ci.yml` job `validators` is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
+
+1. `python scripts/check_claims_consistency.py`
+2. `python scripts/claims_schema_validate.py --all` (H1842)
+3. `python scripts/check_denominator_commensurability.py`
+4. `python scripts/toc_validate.py`
+5. `python scripts/article_validate.py --all`
+6. `python scripts/consolidation_ledger_refresh.py --check`
+
+If `--check` fails with "stale", refresh and commit: `python scripts/consolidation_ledger_refresh.py` (no `--check`). A planted stale aorist figure in any `*/claims.yml` is caught by step 1 (see `tests/test_claims_consistency.py::test_scan_flags_a_planted_stale`).
 
 Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](https://github.com/gasyoun/SanskritGrammar/tree/main/docs/runbooks).
 

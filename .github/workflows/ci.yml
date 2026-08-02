@@ -29,6 +29,34 @@ jobs:
       - name: Run pytest
         run: python -m pytest
 
+  # Blocking drift gates (H1840). Each step fails the job on nonzero exit.
+  # consolidation_ledger.json must be refreshed before --check starts green
+  # (see scripts/consolidation_ledger_refresh.py). H1842 claims schema is
+  # chained into npm run check-claims and also run here explicitly.
+  validators:
+    name: Pipeline validators (blocking)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install deps
+        run: pip install -r scripts/requirements-dev.txt
+      - name: check_claims_consistency
+        run: python scripts/check_claims_consistency.py
+      - name: claims_schema_validate --all
+        run: python scripts/claims_schema_validate.py --all
+      - name: check_denominator_commensurability
+        run: python scripts/check_denominator_commensurability.py
+      - name: toc_validate
+        run: python scripts/toc_validate.py
+      - name: article_validate --all
+        run: python scripts/article_validate.py --all
+      - name: consolidation_ledger_refresh --check
+        run: python scripts/consolidation_ledger_refresh.py --check
+
   build:
     name: Docusaurus build (smoke)
     runs-on: ubuntu-latest

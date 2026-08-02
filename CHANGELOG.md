@@ -19,6 +19,14 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+
+- **claims.yml JSON Schema + validator (H1842, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new [`sangram/editorial/data/claims.schema.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/claims.schema.json) encodes the documented `verdict_fact` / `verdict_pedagogy` / `kind` enums and required entry keys (zero invented fields); new [`scripts/claims_schema_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/claims_schema_validate.py) (`--all` / per-file / `--self-test`, same CLI shape as `article_validate.py`) exits 0 on all six existing registers without content edits; wired into `npm run check-claims`; pytest [`tests/test_claims_schema_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_claims_schema_validate.py).
+- **Core-pipeline validator test coverage (H1839, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new pytest modules for `build_catalog`, `render_catalog_mdx`, `toc_build_pages`, `toc_validate`, `build_errata_print_sheet`, `atlas_build_bundle`, `atlas_validate_bundle` (synthetic fixtures; pure helpers extracted from `build_catalog`/`render_catalog_mdx` without behaviour change). Already-covered: `check_claims_consistency`, `check_denominator_commensurability`, `article_validate`, `build_corpus_layer`, `build_visa_sheet`, `consolidation_ledger_refresh`.
+- **CI blocking pipeline validators (H1840, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new `validators` job in [`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/ci.yml) runs claims consistency + schema, denominators, toc_validate, article_validate --all, consolidation_ledger_refresh --check; regenerated [`consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) so the gate starts green; CLAUDE.md Common commands notes CI enforcement.
+- **Offline Docusaurus full-text search (H1841, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — `@easyops-cn/docusaurus-search-local` (MIT, no API key) wired in [`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs) with `language: ['ru', 'en']` for the site's Russian locale + mixed Cyrillic/IAST content; `npm run build` produces a local search index under `build/`. Verified ≥5 cross-book terms in `build/search-index.json` (аорист, Bühler, Whitney, Зализняк, аблятив, tatpuruṣa, dhatu). Companion build unblocks already-red main: MDX-safe autolinks in Gasuns Cologne paper; exclude `GasunsDhatu_2026_RWS_review.mdx` from the docs plugin (editorial worksheet, not a reading page).
+
+
 ## [0.117.1] - 2026-08-02
 ### Changed
 

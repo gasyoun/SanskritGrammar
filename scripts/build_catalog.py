@@ -43,13 +43,15 @@ class UnionFind:
             self.parent[ra] = rb
 
 
-def main():
-    with open(os.path.join(DATA_DIR, "matches.json"), encoding="utf-8") as f:
-        matches = json.load(f)
+def cluster_matches(matches):
+    """Union-find clustering of pairwise matches into catalog rows (pure).
 
+    IAST matches are kept only when both sides have >=4 words (H311 noise floor).
+    Devanagari is the primary signal. Returns rows sorted by (earliest_year, text)
+    with catalog_id C0001… assigned.
+    """
     uf = UnionFind()
     nodes = {}  # id -> sentence dict
-    edges = []  # kept (a,b,score,exact) for provenance
     for m in matches:
         if m["script"] == "iast":
             if len(m["a"]["text"].split()) < 4 or len(m["b"]["text"].split()) < 4:
@@ -58,7 +60,6 @@ def main():
         nodes[a["id"]] = a
         nodes[b["id"]] = b
         uf.union(a["id"], b["id"])
-        edges.append(m)
 
     clusters = {}
     for node_id in nodes:
@@ -88,12 +89,16 @@ def main():
     rows.sort(key=lambda r: (r["earliest_year"], r["text"]))
     for i, r in enumerate(rows, 1):
         r["catalog_id"] = f"C{i:04d}"
+    return rows
 
-    out_json = os.path.join(DATA_DIR, "catalog.json")
+
+def write_catalog(rows, data_dir=DATA_DIR):
+    """Write catalog.json + catalog.csv under data_dir; return (json_path, csv_path)."""
+    out_json = os.path.join(data_dir, "catalog.json")
     with open(out_json, "w", encoding="utf-8") as f:
         json.dump(rows, f, ensure_ascii=False, indent=2)
 
-    out_csv = os.path.join(DATA_DIR, "catalog.csv")
+    out_csv = os.path.join(data_dir, "catalog.csv")
     with open(out_csv, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
         w.writerow(["catalog_id", "earliest_book", "earliest_year", "script", "text",
@@ -105,6 +110,15 @@ def main():
                 ";".join(r["books"].get("knauer", [])),
                 ";".join(r["books"].get("kochergina", [])),
             ])
+    return out_json, out_csv
+
+
+def main():
+    with open(os.path.join(DATA_DIR, "matches.json"), encoding="utf-8") as f:
+        matches = json.load(f)
+
+    rows = cluster_matches(matches)
+    out_json, out_csv = write_catalog(rows)
 
     n_all3 = sum(1 for r in rows if len(r["books"]) == 3)
     n_bk = sum(1 for r in rows if set(r["books"]) == {"buhler", "knauer"})

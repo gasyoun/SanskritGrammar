@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gasyoun.github.io/SanskritGrammar/schemas/claims.schema.json",
+  "title": "Grammar claim-verification register (claims.yml)",
+  "description": "Structural contract for each book’s claims.yml — the two-axis falsifiable-assertion register (verdict_fact × verdict_pedagogy). Enums and required keys are taken verbatim from the documented header comments of the six existing registers (ApteSyntax_1885, BuhlerLeitfaden_1923, KocherginaUchebnik_1998, WhitneyGrammar_1889, ZalizniakKonspekt_2004, ZalizniakOcherk_1978); no invented categories. Rendered output is CLAIMS_VERIFIED.md via scripts/build_claims.py.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["work", "entries"],
+  "properties": {
+    "work": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human label of the source work (author, short title, year)."
+    },
+    "synthesis": {
+      "type": "string",
+      "description": "Optional free-text synthesis of the book’s presentation principles (rendered into CLAIMS_VERIFIED.md)."
+    },
+    "entries": {
+      "type": "array",
+      "description": "Verified claim entries. Empty array is legal for a seed that has not yet promoted any harvest candidate.",
+      "items": { "$ref": "#/$defs/claimEntry" }
+    }
+  },
+  "$defs": {
+    "claimEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "loc", "claim_ru", "kind", "verdict_fact", "verdict_pedagogy"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable claim id within the book (e.g. HK-1, HB-60, APT-31, WH-4, KZ-3, OCH-66)."
+        },
+        "loc": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Locus in the source (lesson/§/mdx line)."
+        },
+        "claim_ru": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The falsifiable assertion, quoted or paraphrased from the book (Russian or English)."
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["typology", "universality", "allomorphy", "statistic", "rule", "government"],
+          "description": "Claim kind as documented in each claims.yml header (government is used by syntax-weighted books: Apte, Whitney)."
+        },
+        "verdict_fact": {
+          "type": "string",
+          "enum": ["TRUE", "OVERSTATED", "FALSE", "UNTESTABLE", "PENDING"],
+          "description": "Fact axis: is the assertion true vs corpus + reference grammars. PENDING = harvested, not yet verified. YAML unquoted TRUE/FALSE must be coerced to strings before validation."
+        },
+        "verdict_pedagogy": {
+          "type": "string",
+          "enum": ["JUSTIFIED", "MISLEADING", "RARE-AS-CENTRAL", "FREQUENCY-HIDDEN", "ORDER-QUESTIONABLE"],
+          "description": "Pedagogy axis: is the presentation defensible (ordering, foregrounding, hidden frequency)."
+        },
+        "falsifiable_as": {
+          "type": "string",
+          "description": "Optional one-line restatement of what would count as a falsifying observation."
+        },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "Optional ground-truth sources (e.g. dcs, whitney, talmud)."
+        },
+        "number": {
+          "type": "string",
+          "description": "Optional corpus figure or systemic fact that supports the fact-axis verdict."
+        },
+        "ref": {
+          "type": "string",
+          "description": "Optional citation / instrument pointer."
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional free-text adjudication note."
+        },
+        "mg_footnote": {
+          "type": "string",
+          "description": "Optional corpus-frequency apparatus added by M.G. where the book states no number (rendered over the reading site)."
+        },
+        "methodichka": {
+          "type": "string",
+          "description": "Optional learner-facing methodichka gloss (how to teach / remember the corrected claim)."
+        }
+      }
+    }
+  }
+}
