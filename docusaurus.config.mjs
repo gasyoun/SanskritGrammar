@@ -49,7 +49,27 @@ const config = {
   // onBrokenMarkdownLinks moved under markdown.hooks — the top-level option is
   // deprecated and removed in Docusaurus v4 (was warning on every build).
   markdown: { mermaid: true, hooks: { onBrokenMarkdownLinks: 'warn' } },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    // Offline full-text search (H1841) — no Algolia key/account. Site default
+    // locale is Russian with mixed Cyrillic / IAST / Devanagari content; lunr
+    // `ru` tokenizes Cyrillic, `en` covers Latin/IAST word runs. Devanagari is
+    // indexed as raw terms (no zh-style segmenter); multi-script pages remain
+    // findable by their Cyrillic/IAST headings and prose.
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['ru', 'en'],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: 'grammars',
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -61,7 +81,17 @@ const config = {
           routeBasePath: 'grammars',
           sidebarPath: './sidebars.mjs',
           include: includePaths,
-          exclude: ['**/node_modules/**', '**/build/**', '**/.docusaurus/**', '**/src/**', ...excludePatterns],
+          exclude: [
+            '**/node_modules/**',
+            '**/build/**',
+            '**/.docusaurus/**',
+            '**/src/**',
+            // RWS review worksheet: tracked but not MDX-safe (escaped markdown,
+            // bare { } / * expressions). Public book reading pages are unaffected;
+            // keep the .mdx in git as the editorial work product (H1841 build fix).
+            '**/GasunsDhatu_2026_RWS_review.mdx',
+            ...excludePatterns,
+          ],
           remarkPlugins: [remarkRstTable, remarkFixHeadingAnchors],
           editUrl: undefined,
         },

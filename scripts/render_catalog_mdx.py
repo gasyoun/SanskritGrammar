@@ -23,10 +23,8 @@ def cell(r, book):
     return ", ".join(lessons) if lessons else "—"
 
 
-def main():
-    with open(os.path.join(DATA_DIR, "catalog.json"), encoding="utf-8") as f:
-        rows = json.load(f)
-
+def render_mdx(rows):
+    """Render catalog rows to Concordance/catalog.mdx body (pure string)."""
     n_all3 = sum(1 for r in rows if len(r["books"]) == 3)
     n_bk = sum(1 for r in rows if set(r["books"]) == {"buhler", "knauer"})
     n_bko = sum(1 for r in rows if set(r["books"]) == {"buhler", "kochergina"})
@@ -108,10 +106,17 @@ def main():
             f"| {cell(r, 'buhler')} | {cell(r, 'knauer')} | {cell(r, 'kochergina')} |"
         )
     lines.append("")
+    return "\n".join(lines)
 
+
+def main():
+    with open(os.path.join(DATA_DIR, "catalog.json"), encoding="utf-8") as f:
+        rows = json.load(f)
+
+    body = render_mdx(rows)
     out_path = os.path.join(OUT_DIR, "catalog.mdx")
     with open(out_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+        f.write(body)
     print(f"wrote {out_path} ({len(rows)} rows)", file=sys.stderr)
 
 
