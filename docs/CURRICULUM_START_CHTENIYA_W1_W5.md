@@ -1,4 +1,4 @@
-_Created: 01-08-2026 · Last updated: 01-08-2026_
+_Created: 01-08-2026 · Last updated: 02-08-2026_
 
 # CURRICULUM — «Старт чтения» classroom weeks W1–W5
 
@@ -23,7 +23,8 @@ so ORS copy (H2108), Systema deep links (H2106), kosha freeze (H2109), and Karao
 |---|---|---|
 | Weeks 3 continuous prose (default) | Hitopadeśa-0 + RU gloss | [kosha `reading/data/hitopadesa-0.json`](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.json) |
 | Week 5 literature band (default) | subhāṣita-beginner (106 sayings) | [kosha `data/subhashita/subhashita_beginner_pack.json`](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_pack.json) |
-| Long-term story swap | Natural-method continuous SA+RU | *Not yet* — H2113 scaffold; **does not block** this map |
+| Long-term story swap | Natural-method continuous SA+RU | Scaffold landed (H2113): [SanskritGrammar `docs/NATURAL_METHOD_STORY_START_CHTENIYA/`](https://github.com/gasyoun/SanskritGrammar/tree/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA) CH1–CH3 v0 — human visa required before live-cohort use; **does not block** this map |
+| **Cohort freeze (landed, H2109)** | Pinned copies of both packs + sandhi L1–3 + SRS lemma TSV | [kosha `data/cohort_start_chteniya/MANIFEST.json`](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/MANIFEST.json) — sha256-pinned; **cohort consumers (H2106/H2110) read the pin paths, not the live sources above** |
 
 Textbook ladder context only (not the weekly drill list):
 [LEARNER_MATERIALS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/LEARNER_MATERIALS.md)
@@ -89,7 +90,7 @@ Every cell below either names a path or is marked **live-only**.
 | Cell | Asset | Path / note |
 |---|---|---|
 | Live | Read-aloud continuous prose; comprehension Q | **live-only** |
-| Pack (canonical freeze) | Hitopadeśa Prastāvikā opening | JSON: [kosha `reading/data/hitopadesa-0.json`](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.json) · JS sibling: [hitopadesa-0.js](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.js) · Reader: [kosha `reading/index.html#hitopadesa-0`](https://github.com/gasyoun/kosha/blob/main/reading/index.html) · Stats: 125 sentences / 900 tokens; `gloss_ru` present (~94.6% per [RU_GLOSS_COVERAGE.md](https://github.com/gasyoun/kosha/blob/main/reading/RU_GLOSS_COVERAGE.md)) · License note: DCS CC BY 4.0 (source field in JSON) |
+| Pack (canonical freeze) | Hitopadeśa Prastāvikā opening | JSON: [kosha `reading/data/hitopadesa-0.json`](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.json) · JS sibling: [hitopadesa-0.js](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.js) · Reader: [kosha `reading/index.html#hitopadesa-0`](https://github.com/gasyoun/kosha/blob/main/reading/index.html) · Stats: 125 sentences / 900 tokens; `gloss_ru` present (~94.6% per [RU_GLOSS_COVERAGE.md](https://github.com/gasyoun/kosha/blob/main/reading/RU_GLOSS_COVERAGE.md); the frozen copy reports **95.0%** — 855/900 — per MANIFEST) · License note: DCS CC BY 4.0 (source field in JSON) · **Cohort pin (H2109, landed):** [kosha `data/cohort_start_chteniya/hitopadesa-0.json`](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/hitopadesa-0.json), sha256-pinned in [MANIFEST.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/MANIFEST.json) |
 | Systema embed (post H2106/H2110) | Vendored freeze under cohort dir | Target: `Systema-Sanscriticum/resources/data/cohort_start_chteniya/` (created by H2109→H2106; Nala pattern: [kosha_reading_pack_nala_1.json](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/resources/data/kosha_reading_pack_nala_1.json)) |
 | Drill — sandhi join/split | Sandhi drills over continuous text | [kosha `reading/sandhi/drills/`](https://github.com/gasyoun/kosha/blob/main/reading/sandhi/drills/index.html) · corpus Hitop. sandhi events: [kosha `data/sandhi/hitopadesa_sandhi.tsv`](https://github.com/gasyoun/kosha/blob/main/data/sandhi/hitopadesa_sandhi.tsv) |
 | Homework | Assigned Hitop. loci + split practice | Deep link to pack slug `hitopadesa-0` in cabinet; SRS lemmas from pack (cohort flag) |
@@ -104,6 +105,7 @@ Every cell below either names a path or is marked **live-only**.
 | Live | Oral paraphrase / questions on week-3 text | **live-only** (teacher voice = audio v1 per PLAN D4) |
 | Metre pack (H2114 residual) | 3–5 existing verses, `has_audio: false`, **metre quiz only** | Karaoke index: [SanskritKaraoke `verses/index.json`](https://github.com/gasyoun/SanskritKaraoke/blob/main/verses/index.json) · Data dir: [verses/data/](https://github.com/gasyoun/SanskritKaraoke/tree/main/verses/data) |
 | **Pinned W4 set (default)** | BhG 2.47–49 + 2 beginner subhāṣita already in Karaoke | `bhg_2_47` · `bhg_2_48` · `bhg_2_49` · `subh_1249` (*udyamena…*, also #2 in beginner band) · `subh_6087` (*vidyā dadāti vinayaṃ…*) — all five files under [verses/data/](https://github.com/gasyoun/SanskritKaraoke/tree/main/verses/data); `has_audio: false` |
+| ⚠ RU-cohort caveat | `subh_1249` / `subh_6087` translation layer in Karaoke is **German only** (`language_tags: ['de']`, Böhtlingk source); BhG 2.47–49 carry `ru`+`en` | For RU support on the two subhāṣita verses, point students to the kosha subhāṣita pack (RU lemma gloss) — the Karaoke screen shows DE; teacher covers RU live. Adding a RU layer to those two verse files is H2114-adjacent, **not** this map's scope |
 | Student path | Wave diagram + **meter quiz only** | Fence: **no** `align_chapter` / render / audio-drop pipeline this pilot (PLAN D8 / H2114) |
 | Carry pack | Hitop. review subset | Same week-3 pack path |
 | Homework | Metre ID quiz on the five IDs + oral prep notes | Karaoke learner path (post H2114 wire); live oral is **live-only** |
@@ -115,21 +117,23 @@ Every cell below either names a path or is marked **live-only**.
 | Cell | Asset | Path / note |
 |---|---|---|
 | Live | Joint reading; next-course ladder talk | **live-only** |
-| Pack (default) | subhāṣita-beginner band | Pack: [kosha `data/subhashita/subhashita_beginner_pack.json`](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_pack.json) (106 sayings; `gloss_ru` ~85.3%) · Band TSV: [beginner_band.tsv](https://github.com/gasyoun/kosha/blob/main/data/subhashita/beginner_band.tsv) · Curation: [CURATION_NOTES.md](https://github.com/gasyoun/kosha/blob/main/data/subhashita/CURATION_NOTES.md) · Reader page: [kosha `reading/subhashita/`](https://github.com/gasyoun/kosha/blob/main/reading/subhashita/index.html) · Optional Anki: [subhashita_beginner_anki.apkg](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_anki.apkg) |
+| Pack (default) | subhāṣita-beginner band | Pack: [kosha `data/subhashita/subhashita_beginner_pack.json`](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_pack.json) (106 sayings; `gloss_ru` ~85.3%) · Band TSV: [beginner_band.tsv](https://github.com/gasyoun/kosha/blob/main/data/subhashita/beginner_band.tsv) · Curation: [CURATION_NOTES.md](https://github.com/gasyoun/kosha/blob/main/data/subhashita/CURATION_NOTES.md) · Reader page: [kosha `reading/subhashita/`](https://github.com/gasyoun/kosha/blob/main/reading/subhashita/index.html) · Optional Anki: [subhashita_beginner_anki.apkg](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_anki.apkg) · **Cohort pin (H2109, landed):** [data/cohort_start_chteniya/subhashita_beginner_pack.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/subhashita_beginner_pack.json) — ⚠ schema is `subhashita_reader_pack` (`sayings[].lines[].chunks[]`), **not** `reading_pack_v1`; H2110 import must adapt per the MANIFEST `adapter_note` |
 | Alt pack (if story ready) | Natural-method chapter export | H2113 → pack JSON schema per [ARCHITECTURE_AKRO…](https://github.com/gasyoun/Uprava/blob/main/docs/ARCHITECTURE_AKRO_START_CHTENIYA_2026.md); human visa before live cohort |
 | Alt stretch (not required) | Nala-1 start | [kosha `reading/data/nala-1.json`](https://github.com/gasyoun/kosha/blob/main/reading/data/nala-1.json) — optional ladder demo only |
 | Homework | 5–10 beginner sayings + ladder CTA | ORS/Systema next-course UTM (`utm_campaign=start-chteniya`); no invented RUB/dates |
 
 ---
 
-## Freeze set for H2109 (derived from this map)
+## Freeze set for H2109 — ✅ LANDED (kosha `data/cohort_start_chteniya/`, 01-08-2026)
 
-Pin these sources into `kosha/data/cohort_start_chteniya/` (or equivalent):
+The freeze this map specified has shipped; cohort consumers (H2106 vendoring, H2110 import)
+read these **pin paths**, sha256-verified against
+[MANIFEST.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/MANIFEST.json):
 
-1. [reading/data/hitopadesa-0.json](https://github.com/gasyoun/kosha/blob/main/reading/data/hitopadesa-0.json)
-2. [data/subhashita/subhashita_beginner_pack.json](https://github.com/gasyoun/kosha/blob/main/data/subhashita/subhashita_beginner_pack.json)
-3. Sandhi curriculum **L1–3** subset of [data/sandhi/sandhi_curriculum.tsv](https://github.com/gasyoun/kosha/blob/main/data/sandhi/sandhi_curriculum.tsv) + matching drills from [data/sandhi/sandhi_drills.json](https://github.com/gasyoun/kosha/blob/main/data/sandhi/sandhi_drills.json)
-4. Optional lemma TSV: vocab L1 50 rows from [data/frequency/vocab_curriculum.tsv](https://github.com/gasyoun/kosha/blob/main/data/frequency/vocab_curriculum.tsv) + Hitop. pack lemmas for SRS
+1. [data/cohort_start_chteniya/hitopadesa-0.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/hitopadesa-0.json) (from `reading/data/hitopadesa-0.json`; 95.0% `gloss_ru`)
+2. [data/cohort_start_chteniya/subhashita_beginner_pack.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/subhashita_beginner_pack.json) (from `data/subhashita/`; schema ≠ `reading_pack_v1` — see MANIFEST `adapter_note`)
+3. [data/cohort_start_chteniya/sandhi_curriculum_l1_l3.tsv](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/sandhi_curriculum_l1_l3.tsv) (ranks 1–10, cum. 31.87%) + [sandhi_drills_l1_l3.json](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/sandhi_drills_l1_l3.json)
+4. [data/cohort_start_chteniya/lemmas_for_srs.tsv](https://github.com/gasyoun/kosha/blob/main/data/cohort_start_chteniya/lemmas_for_srs.tsv) (SRS seed)
 
 Karaoke W4 IDs are **not** kosha freeze — they stay in SanskritKaraoke (H2114).
 
@@ -184,6 +188,6 @@ Gate all five behind cohort entitlement `start_chteniya_cohort` (name final in H
 
 ## Provenance
 
-Authored Grok 4.5 (`grok-4.5`) executing H2112 (filename tier Fable 5) on 01-08-2026 from IMPLEMENTATION step 1.1 + live path census. Dual-run residual for intended Fable compare: see Uprava handoffs residual if minted.
+Authored Grok 4.5 (`grok-4.5`) executing H2112 (filename tier Fable 5) on 01-08-2026 from IMPLEMENTATION step 1.1 + live path census. Dual-run compare executed 02-08-2026 by Fable 5 (`claude-fable-5`) under [H2121](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2121-Fable_SanskritGrammar_h2112-grok-dual-run-compare_01.08.26.md): independent path census re-verified every cited path (20/20) and numeric claim (vocab L1 = 50 lemmas; morph L1 = 107 a-stems; sandhi L1–3 cum. 31.87% / top-23 = 51.15%; the 50-lemma IAST list); merge-adjudicated patches: H2109 freeze pin paths (landed), W4 DE-only translation caveat for `subh_1249`/`subh_6087`, W5 subhāṣita schema adapter warning.
 
 _Dr. Mārcis Gasūns_
