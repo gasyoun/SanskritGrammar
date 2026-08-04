@@ -1,18 +1,21 @@
 # A62 — Digital Sanskrit pedagogy: a research agenda (outline)
 
-_Created: 14-07-2026 · Last updated: 22-07-2026_
+_Created: 14-07-2026 · Last updated: 04-08-2026_
 
-**ID:** A62 · **Readiness:** 3/5 (live-verified related work + abstract) · **Home:** SanskritGrammar ·
+**ID:** A62 · **Readiness:** 4/5 (evaluation methodology + metric register specified in full) · **Home:** SanskritGrammar ·
 **Venue candidates:** eLex / Lexikos / ISCLS / CALICO / ReCALL / an NLP4DH venue (a human `@DECIDE`s).
 The field-defining paper of the [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md);
 handoff [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md);
-3/5 pass = [H1464](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1464-Sonnet_SanskritGrammar_a62-agenda-related-work-abstract_22.07.26.md).
+3/5 pass = [H1464](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1464-Sonnet_SanskritGrammar_a62-agenda-related-work-abstract_22.07.26.md);
+4/5 pass = [H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md).
 Aggregate numbers only (in-copyright textbook sources).
 
 > **Provenance note.** H914 is tier-locked to Fable 5; this readiness-2 scaffold was authored on
 > **Opus 4.8 (`claude-opus-4-8[1m]`)** by author decision (the "go" override). The 3/5 pass (abstract,
-> survey table, related work) was authored on **Sonnet 5 (`claude-sonnet-5`)**. The Fable author-voice
-> pass still belongs at readiness 4→5, on the prose, not this skeleton.
+> survey table, related work) was authored on **Sonnet 5 (`claude-sonnet-5`)**. The 4/5 pass (§2 metric
+> re-sync, §4 capability-vs-outcome methodology and the PM1–PM12 register) was authored on
+> **Opus 5 (`claude-opus-5`)** under H1731. The Fable author-voice pass still belongs at readiness
+> 4→5, on the prose, not this skeleton.
 
 ## Abstract
 
@@ -34,9 +37,16 @@ by a two-axis textbook-vs-corpus divergence method already applied to five Sansk
 of the four RQs already have integration deliverables built or building — a frequency-ordered SRS
 spec, a Zaliznyak on-ramp A/B testbed, and a two-axis claim-verification pipeline — showing the
 research and integration layers of the field compose into one programme rather than two. We close
-with the evaluation methodology (RQ4) that makes every "this tool teaches better" claim in the field
-falsifiable for the first time, and a gap register — most saliently, the complete absence of audio
-anywhere in the ecosystem, which blocks every beginner (A0–A2) rung.
+with a two-layer evaluation methodology that makes every "this tool teaches better" claim in the
+field falsifiable for the first time: a register of twelve **capability** metrics, one per aspect,
+each with a denominator, a data source and a refutation condition and each computable from committed
+artifacts today — of which **only two currently carry a measured value** (90.7% answer-keyed
+morphology drill items; 56.5% by type and 56.2% by corpus token mass for the derivation on-ramp's
+taught scope) — held strictly apart from learner **outcome** (learning gain, retention), which
+remains the exclusive province of RQ4's single protocol. That separation is what lets eleven aspects
+be tested before any user study runs, while keeping one ruler for teaching effect across all of them.
+We close with a gap register — most saliently, the complete absence of audio anywhere in the
+ecosystem, which blocks every beginner (A0–A2) rung.
 
 ## Thesis
 
@@ -54,7 +64,10 @@ productive rather than aspirational.
   partial maps; "this tool teaches better" is asserted, never tested; MEGABOOK flags "the last mile
   to the student" as the chain's main unclosed link.
 - The contribution: (a) a field definition + aspect taxonomy; (b) four falsifiable research
-  questions; (c) a first result; (d) an integration architecture that closes the last mile.
+  questions; (c) a first result; (d) an integration architecture that closes the last mile;
+  (e) a two-layer evaluation methodology — one falsifiable capability metric per aspect, measurable
+  from committed artifacts today, held apart from learner outcome, which stays with a single study
+  protocol.
 
 ## §2 The landscape (survey)
 
@@ -65,21 +78,32 @@ reference. Headline: the **B1–B2 middle is asset-rich but unintegrated**; the 
 thin** (audio, native beginner grammar); **C1–C2 is planned depth**.
 
 Survey table — the field metadoc's [§4a matrix](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4a-matrix--aspect--cefr-rung--where-the-assets-and-gaps-are),
-aspect × CEFR rung (✅ built · 🟡 partial · 📋 planned · ⬜ gap · — not applicable at that rung):
+aspect × CEFR rung (✅ built · 🟡 partial · 📋 planned · ⬜ gap · — not applicable at that rung),
+with each aspect's pedagogy metric (PM) from the same document's
+[§4e register](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4e-metric-view--the-first-measurable-result-per-aspect)
+in the last column — the metric's value **today**, and the bar that would count as progress. The
+full register, with denominators, data sources and refutation conditions, is §4:
 
-| Aspect ↓ / Rung → | A0–A1 | A2 | B1 | B2 | C1–C2 |
-|---|---|---|---|---|---|
-| Sandhi | — | ✅ split drills | 🟡 sandhied reading | 🟡 | — |
-| Morphology | — | ✅ a-stems/present | ✅ paradigms | 🟡 all classes | 🟡 |
-| Vocabulary/SRS | 🟡 | ✅ freq decks | ✅ | ✅ | ✅ |
-| Reading | — | — | ✅ subhāṣitas | 🟡 epic | 📋 Vedic/comm. |
-| Pāṇini | — | — | — | 📋 | 📋 sūtra↔corpus |
-| Zaliznyak on-ramp | — | ⬜ **build** | ⬜ **build** | 🟡 Талмуд | 🟡 |
-| Audio/śikṣā | ⬜ **gap** | ⬜ **gap** | — | — | 📋 accent (VedaWeb) |
+| Aspect ↓ / Rung → | A0–A1 | A2 | B1 | B2 | C1–C2 | Metric — today → bar |
+|---|---|---|---|---|---|---|
+| Sandhi | — | ✅ split drills | 🟡 sandhied reading | 🟡 | — | **PM1** — unmeasured → ≥90% |
+| Morphology | — | ✅ a-stems/present | ✅ paradigms | 🟡 all classes | 🟡 | **PM2** — 90.7% → ≥95% |
+| Vocabulary/SRS | 🟡 | ✅ freq decks | ✅ | ✅ | ✅ | **PM3** — no corrected order → 0 function words in top 100 |
+| Reading | — | — | ✅ subhāṣitas | 🟡 epic | 📋 Vedic/comm. | **PM4** — no scorer → τ ≥ 0.40 |
+| Pāṇini | — | — | — | 📋 | 📋 sūtra↔corpus | **PM5** — unmeasured → ≥80% resolved |
+| Zaliznyak on-ramp | — | ⬜ **build** | ⬜ **build** | 🟡 Талмуд | 🟡 | **PM6** — 56.5% type / 56.2% token (measured) |
+| Audio/śikṣā | ⬜ **gap** | ⬜ **gap** | — | — | 📋 accent (VedaWeb) | **PM7** — **0** → ≥1 licensed unit |
 
 The pattern the table makes visible: **A0–A1 is the thinnest column** (audio and native beginner
 grammar are the two holes), the **B1–B2 middle is asset-rich but unintegrated** (§5's integration
 architecture is the fix), and **C1–C2 is planned depth**, not yet built (Pāṇini, Vedic, commentary).
+
+The metric column adds a second and less comfortable reading of the same rows. **Only two of the
+seven wave-1 aspects carry a number at all** — PM2 and PM6 — and across the full twelve-aspect
+taxonomy the count is two of twelve. The ✅ glyphs record that an asset was *built*, not that
+anything about it was *measured*; the distance between those two claims is the distance this
+paper's agenda is proposing to close. A survey that stopped at the glyphs would reproduce exactly
+the condition §1 describes as the field's central defect — assets asserted to teach, never tested.
 
 ## §3 The research agenda (four falsifiable questions)
 
@@ -88,7 +112,7 @@ architecture is the fix), and **C1–C2 is planned depth**, not yet built (Pā�
 | **RQ1** difficulty/ordering | Corpus frequency predicts learning order **for content vocabulary**, but only after **function-word exclusion + genre correction**. | **CONFIRMED** — Kendall-τ 0.887 (core_rank vs rank_all); 46 % of top-50 lemmas excluded (all indeclinables/pronouns); DCS epic-genre bias; textbook order frequency-agnostic (τ≈0.05). [`DIFFICULTY_ORDERING_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIFFICULTY_ORDERING_RESULT.md) (A63). | kosha `core_rank`, textbook-τ (S1), [SG-H9](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) (difficulty proxies), SG-H2 (positional drift) |
 | **RQ2** drill generation | Valid, answer-keyed drills (sandhi-split, cloze, paradigm-fill) can be auto-generated from attested corpus with verified answers. | open | Talmud drill bank, Systema sort/match/cloze engines |
 | **RQ3** textbook vs corpus | A subset of textbook grammar rules is not corpus-confirmed, and **those failures are pedagogically load-bearing** (they mislead learners). | partial — [A60](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60) (4/5), [FINDINGS §72](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) two-axis method | Kochergina claim register, SG-H* fact-check axis |
-| **RQ4** evaluation | A tool's teaching effect is measurable via learning-gain + retention user studies; the Zaliznyak on-ramp is the first testbed (**on-ramp-first vs Талмуд-first**). | open — [A32](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md); testbed [built](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/onramp) | learner-modelling, MEGABOOK §2.9 |
+| **RQ4** evaluation | A tool's teaching effect is measurable via learning-gain + retention user studies; the Zaliznyak on-ramp is the first testbed (**on-ramp-first vs Талмуд-first**). | open on the outcome layer — protocol [specified in full](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md), gated on a launch decision; testbed [built](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/onramp); the capability layer (§4.2, PM1–PM12) is measurable now — 2 of 12 measured | learner-modelling, MEGABOOK §2.9 |
 
 **Meta-claim (research + integration composes):** RQ1's result already *constrains* the integration
 — the frequency-ordered SRS deck spec ([last-mile spec](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/LAST_MILE_PIPELINE_SPEC.md)
@@ -97,10 +121,101 @@ agenda's questions and its plumbing are the same programme.
 
 ## §4 Evaluation methodology (RQ4 — the backbone)
 
-Without a learning-gain metric, every "teaches better" claim is unfalsifiable. Design: pre/post
-diagnostic, matched cohorts, retention at N weeks; the first concrete arm is **A/B on the Zaliznyak
-on-ramp** (W1c) — on-ramp-first vs Талмуд-first — measuring time-to-first-correct-derivation and
-retention. This is the section that makes the field a *science*, not a toolbox.
+Without a learning-gain metric, every "teaches better" claim is unfalsifiable. But a single
+learning-gain study cannot be the field's only instrument either, because it gates every aspect's
+progress on one recruitment. This section therefore states a **two-layer** methodology and defends
+the line between the layers, which is the load-bearing methodological commitment of the paper.
+
+### 4.1 Capability and outcome are different claims, and only one of them is measurable today
+
+A **capability metric** is computed from committed artifacts — a coverage share, a rank
+correlation, an agreement rate against a gold set — with no human subjects and no launch decision.
+An **outcome metric** — learning gain, retention — requires learners, and is measured by the
+protocol in §4.3.
+
+The field's register admits **one capability metric per aspect** (§4.2) and reserves outcome
+measurement **exclusively** to RQ4. Three consequences follow, and each is a claim this paper is
+making rather than a bookkeeping convention:
+
+1. **Aspects become falsifiable now.** If every aspect's metric were an outcome metric, nothing in
+   the field would be measurable until recruitment runs — twelve aspects would sit unfalsifiable
+   behind one study's launch flag.
+2. **The field keeps one ruler for teaching effect.** Twelve aspects each free to define "teaches
+   better" would produce twelve incompatible learning-gain instruments and no comparability
+   between them. Exactly one instrument (§4.3) measures outcome; the capability metrics feed
+   evidence into it and never restate it.
+3. **A capability result may not be reported as a teaching result.** "PM2 reached 95%" means the
+   drill bank is answer-keyable at that rate — it does not mean learners learn more from it. This
+   paper treats the substitution of the first claim for the second as the field's characteristic
+   error, and the two-layer split as the fix.
+
+The cost of the split is real and worth stating: capability metrics can all move while teaching
+effect stays flat, and the register cannot detect that. That is precisely why RQ4 is not optional
+and why the twelve metrics are framed as *evidence into* an evaluation, not as a substitute for one.
+
+### 4.2 The metric register — one falsifiable capability metric per aspect
+
+The register is maintained in the field metadoc
+([§4e](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4e-metric-view--the-first-measurable-result-per-aspect)),
+which is its source of truth; this paper reproduces it and does not re-define any metric. One
+metric per aspect, deliberately: a basket of indicators always lets a stalled aspect show something
+green. A metric is admitted only with a denominator, a data source, a current value and a
+**refutation condition** — a metric that cannot be refuted is an indicator, not a claim.
+
+| ID | Aspect | Metric (denominator) | Today | Bar → refuted if |
+|---|---|---|---|---|
+| **PM1** | Sandhi | auto-split items confirmed by an independent second segmenter / ≥200 hand-checked attested lines | unmeasured — no gold set | ≥90% → refuted if <90%: auto-split drills are not answer-keyable at scale |
+| **PM2** | Morphology | drill items with an authoritative answer key / all drill items | **90.7%** — 40 863 / 45 045 attested cells | ≥95% across the union with the Talmud bank → refuted if the keyed share rises while the flagged share falls (coverage bought by fabricated keys) |
+| **PM3** | Vocabulary/SRS | Kendall-τ of the published learn-order vs raw frequency rank; function words left in its top 100 | no corrected order published (curated vs raw τ = 0.887) | 0 function words in the top 100 → refuted if τ ≥ 0.99: the corrections are cosmetic |
+| **PM4** | Reading | τ between predicted difficulty and first-full-coverage textbook lesson / ≥100 held-out passages | unmeasured — no scorer | τ ≥ 0.40 → refuted if τ < 0.20: the scorer reproduces frequency or length, not difficulty |
+| **PM5** | Pāṇini | form-deriving sūtras with ≥1 attested corpus form / a fixed sūtra sample | unmeasured — concordance planned | ≥80% resolved → refuted if <50%: too sparse to teach from |
+| **PM6** | Zaliznyak on-ramp | Приложение-1 roots in the 4 taught ablaut rows / the catalogue, by type **and** DCS token mass | **56.5% type** (421/745) · **56.2% token** (483 532/860 159; 82.7% join) | reporting rule, no threshold → refuted if added rows raise type coverage without raising token coverage |
+| **PM7** | Audio | learner-facing units with a playable, licence-stamped track (absolute count) | **0** — the field's only zero baseline | ≥1 complete A0 unit with a provenance row → refuted if audio ships without one: it cannot be published, so it counts as 0 |
+| **PM8** | Script | DCS conjunct-token mass covered by the first 50 conjuncts of the taught order | unmeasured — order named, coverage never computed | ≥90% → refuted if <70%: frequency-first is too weak an ordering |
+| **PM9** | Metre | correct automatic metre IDs / ≥200 hand-labelled verses, reported per metre | unmeasured — trainer built, no gold set | ≥95% on the three commonest metres → refuted if <90% on śloka/anuṣṭubh |
+| **PM10** | Composition | precision (and recall) of auto-feedback flags / ≥100 hand-labelled learner sentences | unmeasured — review is human-only | precision ≥0.90 at recall ≥0.50 → refuted if precision <0.80: false error-flags cost more trust than misses |
+| **PM11** | Commentary | pratīka anchors resolving automatically to the exact mūla locus / ≥500 references | unmeasured | ≥85%, 0 guessed anchors → refuted if <60%: a manual-anchoring project, a different cost class |
+| **PM12** | Spell/error | *correct* forms the faultfinder flags as errors / ≥5 000 correct learner-level forms | unmeasured — tuned scholar-facing | ≤2% → refuted if >5%: scholar-grade strictness is unusable for learners |
+
+**Two of the twelve metrics have a value; ten do not.** PM2 (90.7% answer-keyed drill items) and
+PM6 (56.5% by type, 56.2% by DCS token mass) are measured; PM7's zero is a real baseline rather
+than a measurement; the remaining nine are unmeasured. We state this plainly because it *is* the
+research programme this paper proposes — the register's function is to name what has never been
+counted, and a field-defining paper that presented ten empty cells as an embarrassment would be
+concealing its own agenda. The two cheapest to fill require no new build: PM8's conjunct
+distribution and PM12's false-positive rate are both computable against data already committed.
+
+Two further honesty conditions travel with the register. **The bars are proposed, not empirically
+ratified** — four of the twelve rest on a measurement (PM2, PM3, PM4, PM7), one is a disclosure
+rule with no threshold (PM6), and seven are reasoned from consequence or cost but unanchored (PM1,
+PM5, PM8, PM9, PM10, PM11, PM12); they carry a scheduled recalibration point and may be revised in
+the open against what gets measured, never in the same pass as a measurement that failed them.
+And **a bar may never be relaxed to accommodate a result** — the register's revision protocol
+records the old value, the new one and the reason, so a moved goalpost stays visible.
+
+PM6 is worth one sentence of its own as a result rather than a status line: the on-ramp's four
+taught ablaut rows reach **56.5% of Приложение-1 by type and 56.2% by DCS token mass**, and the
+near-identity of the two figures says the taught rows are frequency-neutral — they are neither the
+common roots nor the rare ones, so type coverage can be read as reading-relevant coverage for this
+catalogue. That is a small finding, but it is the kind the field currently has none of: a scope
+claim about a teaching artifact with a denominator attached.
+
+### 4.3 The outcome layer — one instrument for the whole field
+
+Design: pre/post diagnostic, matched cohorts, retention at N weeks. The first concrete arm is
+**A/B on the Zaliznyak on-ramp** (W1c) — on-ramp-first vs Талмуд-first — measuring
+time-to-first-correct-derivation and retention, with a pre-registered analysis plan (ANCOVA on the
+retention score with the immediate post-test as covariate, so retention decay is separated from
+initial gain) and differential attrition reported per arm rather than dropped. The protocol is
+specified in full in
+[`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md);
+its design decisions are ruled and its remaining gate is a launch decision, not a methodological
+one. Recommended first step is a pilot, not the full study.
+
+This is the section that makes the field a *science* rather than a toolbox — but only in
+combination with §4.2. The register without the study measures capability and calls it teaching;
+the study without the register measures one arm of one aspect and leaves the other eleven
+unfalsifiable.
 
 ## §5 Integration architecture (closing the last mile)
 
@@ -115,6 +230,13 @@ layer produces the signals; the integration layer delivers them to a learner. Th
 Audio (the biggest, blocks A0–A2); DCS genre bias (RQ1); the still-open last mile; no learner corpus
 (the raw material for RQ4 + adaptive modelling); reading-pack + difficulty datasets planned-not-built.
 (Field metadoc §6.)
+
+**The measurement gap is itself a gap, and the largest one.** Ten of the twelve capability metrics
+in §4.2 have never been computed, seven of the twelve bars are reasoned rather than anchored in a
+measurement, and the outcome layer has produced no data at all because it is gated on a launch
+decision. The risk this creates is specific: a proposed bar that goes unmeasured long enough stops
+being read as a proposal and starts being cited as a standard. §4.2's recalibration point and
+revision protocol exist to bound that risk, not to eliminate it.
 
 ## §7 Related work (live-verified 22-07-2026)
 
@@ -173,6 +295,10 @@ classical Indo-Aryan language.
 | Claim | Backing asset |
 |---|---|
 | the field + taxonomy | [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) |
+| the PM1–PM12 metric register (§4.2) | same doc, [§4e](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4e-metric-view--the-first-measurable-result-per-aspect) + §4e′ (bar anchors) — **source of truth; this paper reproduces, never re-defines** |
+| PM2 = 90.7% | [`attested_drill_items.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/attested_drills/attested_drill_items.tsv) + [`COVERAGE_REPORT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/attested_drills/COVERAGE_REPORT.md) |
+| PM6 = 56.5% type / 56.2% token | [`measure_onramp_scope.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/tools/measure_onramp_scope.py) over [`talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json) × kosha `lemma_frequency.tsv` — re-run 04-08-2026, unchanged |
+| RQ4 protocol (§4.3) | [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) |
 | RQ1 result | [`DIFFICULTY_ORDERING_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIFFICULTY_ORDERING_RESULT.md) + [`data/difficulty_ordering/`](https://github.com/gasyoun/SanskritGrammar/tree/main/data/difficulty_ordering) (A63) |
 | RQ3 method + result | [A60 draft](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/GrammarClaimsCorpusDenies_A60) + FINDINGS §72 |
 | RQ4 testbed | [`TolchelnikovTalmud_2026/onramp/`](https://github.com/gasyoun/SanskritGrammar/tree/main/TolchelnikovTalmud_2026/onramp) (W1c) |
@@ -183,7 +309,7 @@ classical Indo-Aryan language.
 ## To 3/5 → 5/5
 
 - ~~**3/5:** live-verified §7 related work (real citations); the survey table filled from the metadoc; abstract written.~~ **DONE 22-07-2026** (H1464) — 8 live-verified external citations across four related-work threads (L2 frequency/extensive-reading, ICALL, ACL readability, Sanskrit computational resources) + the metadoc §4a matrix reproduced in §2 + a full abstract.
-- **4/5:** RQ4 evaluation protocol specified in full.
+- ~~**4/5:** RQ4 evaluation protocol specified in full.~~ **DONE 04-08-2026** ([H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md)) — §4 rebuilt as a two-layer methodology: §4.1 states and defends the capability-vs-outcome split, §4.2 reproduces the PM1–PM12 register with denominators, refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that 10 of 12 are unmeasured, §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column; §6 gains the measurement gap.
 - **5/5:** venue `@DECIDE` + byline/ORCID; a Fable author-voice pass over the prose.
 
 ---
