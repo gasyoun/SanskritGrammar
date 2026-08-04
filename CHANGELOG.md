@@ -19,6 +19,15 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.118.1] - 2026-08-04
+### Added
+
+- **`atlas_build_bundle` full end-to-end rebuild test (H2271, residual of H1839, Sonnet 5 `claude-sonnet-5` override dual-run of Grok)** — new [`tests/test_atlas_build_bundle_e2e.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_atlas_build_bundle_e2e.py) runs the real `--uprava`/`--out` rebuild against a local Uprava checkout and feeds the output through `atlas_validate_bundle.py`, skipping itself when no private hub is present (CI stays pure-helper-only per the H1839 residual note). The H2271 mint's "6 uncovered scripts" premise was already stale at mint time — `check_claims_consistency`, `check_denominator_commensurability`, `article_validate`, `build_corpus_layer`, `build_visa_sheet`, `consolidation_ledger_refresh` all had pre-existing test coverage under non-matching filenames (confirmed against PR #578's own body); the real residual gap was depth on `atlas_build_bundle`'s untested e2e path, which this closes.
+
+### Fixed
+
+- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`[§3.3](#33-...)` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
+
 ## [0.118.0] - 2026-08-04
 
 ### Added
