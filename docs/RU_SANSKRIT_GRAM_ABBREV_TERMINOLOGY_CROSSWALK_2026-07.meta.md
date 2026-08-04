@@ -1,6 +1,6 @@
 # Metadoc — RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07
 
-_Created: 31-07-2026 · Last updated: 31-07-2026_
+_Created: 31-07-2026 · Last updated: 04-08-2026_
 
 ## Purpose
 
@@ -34,7 +34,7 @@ Durable crosswalk of high-frequency PWG grammatical abbreviation families agains
 - Wide multi-source table cells are citation pointers, not exhaustive frequency counts.
 - Elizarenkova local tree is PDF-only; Morphology 1975 is English-only; Talmud uses different metalanguage (МП).
 - Apte “abbreviations” list is source-sigla only.
-- Dual-run: Fable may disagree on non-case recommendations — keep both artifacts until a human decides.
+- ~~Dual-run: Fable may disagree on non-case recommendations — keep both artifacts until a human decides.~~ **Resolved 04-08-2026 (H2053):** Fable independently confirmed all cells and recommendations, 0 conflicts — see [RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md).
 
 ## Related docs
 
@@ -47,5 +47,6 @@ Durable crosswalk of high-frequency PWG grammatical abbreviation families agains
 | Date | Change | By |
 |---|---|---|
 | 31-07-2026 | Initial dual-run crosswalk (Grok) | Grok 4.5 (`grok-4.5`) |
+| 04-08-2026 | H2053 Fable dual-run: all citations independently verified, 0 conflicts; added `U.` (Ubhayapada) row, de-tentativized Knauer `denom.`; compare memo linked from header + provenance | Fable 5 (`claude-fable-5`) |
 
 _Dr. Mārcis Gasūns_
