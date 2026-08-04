@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.118.2] - 2026-08-04
 ### Added
 
 - **H2053 Fable dual-run confirm of the H2048 RU grammar-abbreviation crosswalk (Fable 5 `claude-fable-5`)** — new compare memo [`docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md): every load-bearing citation of the Grok 4.5 (`grok-4.5`) lane independently re-opened and verified (Kochergina legend line-exact, Knauer tag counts, Zalizniak §71/§109, Bühler Урок I, Gasuns L3165–3227, Apte sigla, LES jurisdiction, Kochergina-1987 dict live fetch) — **0 conflicting cells**; Latin-stay + tooltip policy independently re-derived. Canonical crosswalk patched with net-new: `U.` (Ubhayapada) row (legend K:L221 + dict text), Knauer `denom.` de-tentativized (×1 attested); Fable provenance block + metadoc dual-run limitation resolved.
