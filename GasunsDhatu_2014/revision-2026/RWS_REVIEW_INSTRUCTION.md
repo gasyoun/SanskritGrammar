@@ -33,7 +33,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 - **Цифры и данные не менялись** — это отдельная задача
   ([H382](https://github.com/gasyoun/Uprava/blob/main/handoffs/H382-Opus_SanskritGrammar_gasuns-dhatu-data-recompute_08.07.26.md)).
 - **Структура уровня книги** (порядок глав, скелет ВАК→монография) — задача
-  [H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md).
+  [H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md).
 - **Ссылки, сноски, номера сутр и стихов НЕ добавлялись**: находки, требовавшие источника,
   точной страницы, номера сутры Панини или ведийского стиха, которых нет на руках, **не
   внедрялись** — они собраны в

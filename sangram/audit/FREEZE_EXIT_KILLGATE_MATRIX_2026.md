@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1611](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1611-Sonnet_SanskritGrammar_freeze-15-killgate-matrix_24.07.26.md) (W1-A0).
+**Handoff:** [H1611](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1611-Sonnet_SanskritGrammar_freeze-15-killgate-matrix_24.07.26.md) (W1-A0).
 **Plan:** [`docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md).
 **Ledger source:** [`sangram/editorial/data/consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) — filter `disposition == "unknown"` (15/15 rows below; ledger refresh date 2026-07-22).
 **Provenance:** assembled 24-07-2026 by Grok 4.5 (`grok-4.5`) executing H1611 under user-launched override of the intended Sonnet 5 (`claude-sonnet-5`) executor. **No probe code was run in this handoff; zero probe JSON written.**

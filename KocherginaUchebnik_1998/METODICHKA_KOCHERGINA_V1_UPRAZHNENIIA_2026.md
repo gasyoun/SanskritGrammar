@@ -246,7 +246,7 @@ XXX-2: «Самосущий вознамерился сотворить мир»
 |---|---|---|
 | 16-07-2026 | Раздел II написан: чтения и дриллы с ключами к 11 занятиям | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
 | 22-07-2026 | Помета отказа визы по занятию X перенесена на заголовок блока | H1258-цепочка |
-| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): проценты перифрастики и аориста получили базы подсчета, поправлен сбойный знак деванагари в чтении X-1 (аश् → अश्). Задания, ключи и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): проценты перифрастики и аориста получили базы подсчета, поправлен сбойный знак деванагари в чтении X-1 (аश् → अश्). Задания, ключи и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел II методички. Все чтения — из изданий в общественном достоянии (Кнауэр 1908,
 Bühler 1878/1923); авторские дриллы, переводы и ключи до визы автора — черновик._

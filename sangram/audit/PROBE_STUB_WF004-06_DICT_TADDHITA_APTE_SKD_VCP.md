@@ -17,16 +17,16 @@ _Created: 21-07-2026 · Last updated: 21-07-2026_
 ## Что уже существует (prior art — не перестраивать)
 
 Автор прав: извлечение уже делалось. В
-[csl-orig/v02/etymology_stats](https://github.com/sanskrit-lexicon/csl-orig/tree/master/v02/etymology_stats)
+[csl-orig/v02/etymology_stats](https://github.com/sanskrit-lexicon/csl-orig/tree/main/v02/etymology_stats)
 живёт кросс-словарный этимологический конвейер
-([stats_etymology.py](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/stats_etymology.py)),
+([stats_etymology.py](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/stats_etymology.py)),
 а его входы — готовые TSV с разбором kāraka + pratyaya в стиле санскритской традиции:
 
 | Словарь | Файл | Строк данных | Ключевые колонки |
 |---|---|---:|---|
-| SKD | [skd/skd_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/skd/skd_etymology.tsv) | 2 213 | `headword_slp1`, `root_slp1`, `affix`/`affix_slp1` (имя пратьяи), `group`, `context` |
-| VCP | [vcp/vcp_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/vcp/vcp_etymology.tsv) | 3 664 | те же |
-| Апте (AP90) | [ap90/ap90_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/ap90/ap90_etymology.tsv) | 332 | те же; `affix_source=Apte-SH(affix_map.tsv)` — карта аффиксов санскритско-хинди Апте уже задействована |
+| SKD | [skd/skd_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/skd/skd_etymology.tsv) | 2 213 | `headword_slp1`, `root_slp1`, `affix`/`affix_slp1` (имя пратьяи), `group`, `context` |
+| VCP | [vcp/vcp_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/vcp/vcp_etymology.tsv) | 3 664 | те же |
+| Апте (AP90) | [ap90/ap90_etymology.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/ap90/ap90_etymology.tsv) | 332 | те же; `affix_source=Apte-SH(affix_map.tsv)` — карта аффиксов санскритско-хинди Апте уже задействована |
 
 ## Что решит зонд
 

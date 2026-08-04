@@ -3,7 +3,7 @@
 _Created: 27-07-2026 · Last updated: 27-07-2026_
 
 Operator contract for future Sangram consolidation-freeze dispositions. Authored by
-[H1676](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1676-Sonnet_SanskritGrammar_runbook-sangram-freeze-exit_26.07.26.md).
+[H1676](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1676-Sonnet_SanskritGrammar_runbook-sangram-freeze-exit_26.07.26.md).
 Does **not** re-run or re-derive freeze-15 wave-1 (H1611–H1614, all DONE) — this is the durable
 how-to for the *next* freeze wave, and the branch decision procedure for any single
 `toc_ref` still sitting at `disposition=unknown`.

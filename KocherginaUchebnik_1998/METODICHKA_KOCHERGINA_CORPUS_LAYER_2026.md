@@ -7,7 +7,7 @@ _Created: 21-07-2026 · Last updated: 28-07-2026_
 разделы I–III: [комментарий](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_KOMMENTARII_2026.md) ·
 [упражнения](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_UPRAZHNENIIA_2026.md) ·
 [отсылки](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_V1_OTSYLKI_2026.md)).
-Слайс исполнения — [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md).
+Слайс исполнения — [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md).
 
 ## Что это и как читать
 
@@ -174,8 +174,8 @@ ruh → *rokṣya-*.
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 21-07-2026 | Раздел IV написан: частотные полосы и живые примеры к 8 занятиям | [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md); Fable 5 (`claude-fable-5`) |
-| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): технический пин источника и атрибуция переводов перенесены из вводной прозы в это примечание, оговорено правило § 3.7 о примерном ряде. Полосы, ранги и примеры не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
+| 21-07-2026 | Раздел IV написан: частотные полосы и живые примеры к 8 занятиям | [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md); Fable 5 (`claude-fable-5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): технический пин источника и атрибуция переводов перенесены из вводной прозы в это примечание, оговорено правило § 3.7 о примерном ряде. Полосы, ранги и примеры не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел IV методички. Числа полос воспроизводимы скриптом
 [scripts/build_corpus_layer.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py)

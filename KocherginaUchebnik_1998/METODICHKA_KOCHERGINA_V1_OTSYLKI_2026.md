@@ -149,8 +149,8 @@ dvandva, bahuvrīhi); Кнауэр Nr. 11 (bahuvrīhi puruṣasiṃha в сно�
 | Дата | Ревизия | Основание |
 |---|---|---|
 | 16-07-2026 | Раздел III написан: «см. также» по 11 занятиям, пять пособий лестницы | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
-| 26-07-2026 | Пункты визы H1258 отработаны: два вопроса переданы автору (страницы Конспекта, Миллер), библиография Кочергиной по префиксации добавлена к занятию XXXIX | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
-| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): пометы визы переписаны полными русскими предложениями, служебный жаргон убран из прозы. Привязки и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
+| 26-07-2026 | Пункты визы H1258 отработаны: два вопроса переданы автору (страницы Конспекта, Миллер), библиография Кочергиной по префиксации добавлена к занятию XXXIX | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): пометы визы переписаны полными русскими предложениями, служебный жаргон убран из прозы. Привязки и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел III методички. Привязки к Очерку даны по §§ издания 1978 г.; к Конспекту —
 по заголовкам разделов (цифровая версия 2004/2015); к Талмуду — по главам рукописи

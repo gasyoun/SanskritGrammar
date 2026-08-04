@@ -25,7 +25,7 @@ MG (author of record, pre-print visa); future sessions executing follow-on slice
 
 - Spec + v1 manuscript + `methodichka` registry fills authored by Fable 5
   (`claude-fable-5`) under
-  [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md)
+  [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md)
   (28-07-2026), following the Kochergina COMPANION § 0–§ 2 shape (H807 precedent,
   Fable 5).
 - Data drained: [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)

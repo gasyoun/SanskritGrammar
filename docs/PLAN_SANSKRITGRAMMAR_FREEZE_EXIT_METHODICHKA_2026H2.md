@@ -15,7 +15,7 @@ candidates, **11 are published and 15 sit at `disposition=unknown` with `visa=no
 parallel, **19 OPEN / 3 PARTIAL** editorial notes remain (mostly Kochergina + Apte methodichkas and
 six A65 research notes). Wave 1 runs **two equal fronts**: (A) per-article C5/C6 kill-gate probes on
 the 15 unknowns, then visas only for survivors (one SE multi-article sheet for SE survivors); (B)
-methodichka residual — keep [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md)
+methodichka residual — keep [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md)
 and mint Apte residual. Human M03 RWS review and RQ4 feature flip stay GTD `@DO`, not agent work.
 
 ## Layer docs
@@ -72,12 +72,12 @@ Portfolio order of record (unchanged):
 
 | Front | ID | Tier | Deliverable |
 |---|---|---|---|
-| A0 | [H1611](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1611-Sonnet_SanskritGrammar_freeze-15-killgate-matrix_24.07.26.md) | Sonnet | Matrix: toc_ref → C5/C6 kill-gate + script path + acceptance criterion |
-| A1 | [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md) | Opus | Probes for SE unknowns; artifacts + ledger updates |
-| A2 | [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) | Opus | Probes for MO/WF stragglers |
-| A3 | [H1614](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1614-Sonnet_SanskritGrammar_freeze-se-survivor-visa-sheet_24.07.26.md) | Sonnet | One multi-article SE visa sheet for **survivors only** (blocked on H1612) |
-| B0 | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) | Fable | **Existing** — do not re-mint |
-| B1 | [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) | Fable | Terminalise Apte OPEN/PARTIAL residual notes |
+| A0 | [H1611](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1611-Sonnet_SanskritGrammar_freeze-15-killgate-matrix_24.07.26.md) | Sonnet | Matrix: toc_ref → C5/C6 kill-gate + script path + acceptance criterion |
+| A1 | [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md) | Opus | Probes for SE unknowns; artifacts + ledger updates |
+| A2 | [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) | Opus | Probes for MO/WF stragglers |
+| A3 | [H1614](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1614-Sonnet_SanskritGrammar_freeze-se-survivor-visa-sheet_24.07.26.md) | Sonnet | One multi-article SE visa sheet for **survivors only** (blocked on H1612) |
+| B0 | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) | Fable | **Existing** — do not re-mint |
+| B1 | [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) | Fable | Terminalise Apte OPEN/PARTIAL residual notes |
 | C0 | [H1616](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1616-Sonnet_SanskritGrammar_sg-handoff-hygiene-archive-triage_24.07.26.md) | Sonnet | Archive/triage stale SanskritGrammar handoffs |
 
 Optional parallel (existing, not re-minted): H1464, H1465, H1466, H1476, H1514.

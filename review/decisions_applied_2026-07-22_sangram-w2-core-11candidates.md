@@ -8,7 +8,7 @@ across three sessions.
 
 - **Decisions file:** `review/sangram-w2-core-11candidates-visa_17.07.26_decisions.json`
   (voted 17-07-2026, reviewer `gasyoun`, 12/12 approve).
-- **Handoff:** [H1257](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1257-Sonnet_sangram_apply-sangram-w2-core-11candidates-visa_17.07.26-decisions_18.07.26.md)
+- **Handoff:** [H1257](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1257-Sonnet_sangram_apply-sangram-w2-core-11candidates-visa_17.07.26-decisions_18.07.26.md)
   (this session — closes the sheet); publication and the 9 substantive notes were
   already done by [H1316](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1316-Opus_SanskritGrammar_apply-voted-precative-w2core-visas_19.07.26.md)
   and [H1346](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1346-Sonnet_SanskritGrammar_w2-core-visa-editorial-notes_19.07.26.md).

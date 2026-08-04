@@ -21,7 +21,7 @@ Opus 4.8 (`claude-opus-4-8[1m]`). Надстраивается над стать
 | Пер-рут указатель Уитни | [WhitneyRoots/crosswalk/roots.csv](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv) | 930 корней; 562 с MW-id; 697 с Apte-id; 713 засвидетельствованы в DCS; 143 помечены омонимами |
 | Три свидетеля вместе | (пересечение) | **497 / 930 = 53,4 %** корней Уитни имеют и MW-id, и корпусную аттестацию |
 | Конкорданс классов MW↔Уитни | [MWS/root_crosswalk/class_concordance.csv](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk) | 737 строк: **376 согласны, 26 конфликтов**, 249 частичное перекрытие, 18/57 одна сторона пуста |
-| Межсловарное согласие | [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv) | 3 036 корней, 8 словарей (ср. Прил. 7: ядро 294 / хвост 101) |
+| Межсловарное согласие | [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv) | 3 036 корней, 8 словарей (ср. Прил. 7: ядро 294 / хвост 101) |
 | Омонимия по источникам (Прил. 2) | статья «О записи омонимии» | Пальсуле 933 (25,3 %); EWA 50; Уитни 67; Эдгрен 18; Юэ 38 |
 | Потолок токенного расщепления | BOOK_PLAN §8 | 5/38 (эксперимент WhitneyRoots) — не для автоправки |
 

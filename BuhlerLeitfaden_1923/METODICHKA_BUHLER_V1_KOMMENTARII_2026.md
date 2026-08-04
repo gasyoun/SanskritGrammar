@@ -6,7 +6,7 @@ _Created: 28-07-2026 · Last updated: 28-07-2026_
 элементарному курсу санскритского языка», Стокгольм, 1923; электронное издание 2.0
 Н. П. Лихушиной, 2008, 48 уроков). План издания:
 [METODICHKA_BUHLER_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md);
-слайс исполнения — [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md).
+слайс исполнения — [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md).
 
 Каждое число в этом разделе живет в реестре
 [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)

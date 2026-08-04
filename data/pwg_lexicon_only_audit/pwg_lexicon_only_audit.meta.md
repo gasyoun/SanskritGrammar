@@ -15,8 +15,8 @@ coverage, and anyone building on the [PWG register/genre layer](../pwg_register_
 
 ## Provenance
 
-- **Handoffs:** [H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md)
-  (v2), [H1326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1326-Sonnet_SanskritGrammar_kosa-corpus-fill-amara-rajanighantu-lexicon-audit_19.07.26.md)
+- **Handoffs:** [H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md)
+  (v2), [H1326](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1326-Sonnet_SanskritGrammar_kosa-corpus-fill-amara-rajanighantu-lexicon-audit_19.07.26.md)
   (v3, this pass).
 - **Input:** `data/pwg_register_genre/pwg_register_genre.tsv` (PR #438, `lexicon_only=1`).
 - **Comparison corpus:** `csl-orig/v02` headword sets (read-only), SLP1 `k1` keys, plus (v3)

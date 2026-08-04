@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md)
+**Handoff:** [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md)
 **Model:** Grok 4.5 (`grok-4.5`) — user-launched override of Opus 4.8
 
 ## Survivor list

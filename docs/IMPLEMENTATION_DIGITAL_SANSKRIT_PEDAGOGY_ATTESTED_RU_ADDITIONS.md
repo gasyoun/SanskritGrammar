@@ -22,7 +22,7 @@ corpus-derived numbers surface.
 
 ---
 
-## W2-add-a — Attested-cell declension drill generator ([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md), Opus)
+## W2-add-a — Attested-cell declension drill generator ([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md), Opus)
 
 **The delta vs everything shipped:** kosha's W1a morphology drills (H946) drill the
 *paradigm engine's* forms; nothing anywhere exploits the G2 finding that only **10.44 %**
@@ -50,7 +50,7 @@ frequency, grouped by stem class.
 5. **Tests + registration**: joiner unit test on a 20-lemma fixture; dataset row in
    kosha's manifest if the TSV is consumed cross-repo; changelog + release.
 
-## W2-add-b — Corpus-linked methodichka ([H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md), Fable)
+## W2-add-b — Corpus-linked methodichka ([H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md), Fable)
 
 **The delta vs H1258/H1275 (explicitly ruled distinct at mint, `--allow-dup`):** those
 apply *author review notes* to the existing companions. This build adds a **new data
@@ -77,7 +77,7 @@ rendering** — turning static textbook companions into corpus-linked ones.
 5. **Tests**: banding join regression on 20 known lemmas; every example sentence carries
    its DCS locus.
 
-## W2-add-c — Samāsa right-to-left bracket-method trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md), Opus)
+## W2-add-c — Samāsa right-to-left bracket-method trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md), Opus)
 
 **The delta vs kosha's shipped W1c samāsa trainer (H948):** H948 drills identify-type +
 split. This trainer teaches the **resolution method** — the head-first (right-to-left)

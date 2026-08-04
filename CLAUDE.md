@@ -51,7 +51,7 @@ Three layers in one repo (full orientation:
 - ⚠️ The three-file `rstTable*` remark plugin exists as **three hand-synced copies**
   (canonical TypeScript in [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book/tree/main/src/remark),
   `.mjs` ports here and in csl-guides) — keep all three in sync by hand; a drift-guard
-  is wave-1 lane-3 work ([H1394](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1394-Sonnet_sanskrit-util_reuse-context-w1-consolidation-finish_20.07.26.md)).
+  is wave-1 lane-3 work ([H1394](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1394-Sonnet_sanskrit-util_reuse-context-w1-consolidation-finish_20.07.26.md)).
 
 ## Common commands
 

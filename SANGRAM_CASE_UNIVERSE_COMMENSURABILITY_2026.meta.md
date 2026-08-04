@@ -21,7 +21,7 @@ when citing a case-distribution figure externally.
 
 ## Provenance
 
-- Handoff: [H1371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1371-Opus_SanskritGrammar_se-cluster-case-count-commensurability-denominator-contract_20.07.26.md)
+- Handoff: [H1371](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1371-Opus_SanskritGrammar_se-cluster-case-count-commensurability-denominator-contract_20.07.26.md)
 - Model: Opus 4.8 (`claude-opus-4-8[1m]`), 20-07-2026
 - Corpus: `dcs_full.sqlite` pin `04e0778d3dc971030229179e25eea043d06ff397`
 - Regenerator: [sangram/audit/universe_commensurability.py](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability.py) → [universe_commensurability_verdicts.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/universe_commensurability_verdicts.json)

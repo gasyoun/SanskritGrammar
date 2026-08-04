@@ -5,7 +5,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 План структурной перестройки книги
 [`02_gasuns-dhatu-PhD-text2.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx)
 из формата ВАК-диссертации в монографию по задаче
-[H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md)
+[H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md)
 (исполнитель Opus 4.8 `claude-opus-4-8`).
 
 ## ⚠️ Статус: ПЛАН, файл НЕ трогался
