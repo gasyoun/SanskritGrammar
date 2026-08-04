@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.118.0] - 2026-08-04
+
 ### Added
 
 - **A62 advanced 3/5 → 4/5 — evaluation methodology + the PM1–PM12 metric register (H1731, Opus 5 `claude-opus-5`)** — [`OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md) §4 rebuilt as a two-layer methodology: §4.1 states and defends the **capability-vs-outcome** split (a PM measures capability from committed artifacts; only RQ4 measures teaching effect — one ruler for the whole field), §4.2 reproduces the register from [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) §4e with denominators and refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that **10 of 12 PMs are unmeasured** — the research programme A62 proposes, not a weakness to hide; §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column (the "✅ records built, not measured" reading); PM6 re-measured rather than quoted — 56.5% by type / 56.2% by DCS token mass, unchanged, its near-identity read as a frequency-neutral-scope finding; §6 gains the measurement gap as a first-class risk. The field doc stays source of truth; the paper reproduces and never re-defines a metric.
