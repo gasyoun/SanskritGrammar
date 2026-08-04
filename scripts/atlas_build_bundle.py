@@ -287,6 +287,10 @@ EXTERNAL_STACKS = [
      "Вендоренная копия там, где уже вшита.", "Не добавлять новые вендоренные копии без строки в реестре."),
     ("ext:samskrtam-ru", "samskrtam.ru", "https://samskrtam.ru/", None,
      "Статические deep links (например, корневой указатель /z/).", "Не дублировать контент сайта в репозиториях."),
+    ("ext:sanskrit-lexicon-scans", "sanskrit-lexicon-scans (GitHub Pages scan hosting)",
+     "https://sanskrit-lexicon-scans.github.io/", None,
+     "pwg-scan-index-campaign — 37 PWG/PWK page-scan link-target репозиториев (~11.2 GB) отдают сканы через app1/app2 на <dir>.",
+     "Не дублировать сканы в других репозиториях; ссылаться на GH Pages хост."),
 ]
 
 # tsv `ext:` name → node id above.
@@ -299,6 +303,7 @@ EXT_NAME_MAP = {
     "Samsaadhanii": "ext:samsaadhanii",
     "Nagari": "ext:nagari",
     "samskrtam.ru": "ext:samskrtam-ru",
+    "sanskrit-lexicon-scans": "ext:sanskrit-lexicon-scans",
 }
 
 VERDICT_MAP = {"усилить": "amplify", "поддерживать": "sustain"}
@@ -453,7 +458,12 @@ def parse_anchors(lines):
             for cells in md_table_rows(lines, i):
                 if len(cells) < 2:
                     continue
-                sections = [s.strip().lstrip("§") for s in cells[0].split("/")]
+                def _bare_section(raw):
+                    raw = raw.strip()
+                    m = re.match(r"^\[§([\d.]+)\]\(#", raw)
+                    return m.group(1) if m else raw.lstrip("§")
+
+                sections = [_bare_section(s) for s in cells[0].split("/")]
                 repos = [r.strip() for r in cells[1].split(",")]
                 for sec in sections:
                     for repo in repos:
