@@ -14,8 +14,13 @@ Aggregate numbers only (in-copyright textbook sources).
 > **Opus 4.8 (`claude-opus-4-8[1m]`)** by author decision (the "go" override). The 3/5 pass (abstract,
 > survey table, related work) was authored on **Sonnet 5 (`claude-sonnet-5`)**. The 4/5 pass (§2 metric
 > re-sync, §4 capability-vs-outcome methodology and the PM1–PM12 register) was authored on
-> **Opus 5 (`claude-opus-5`)** under H1731. The Fable author-voice pass still belongs at readiness
-> 4→5, on the prose, not this skeleton.
+> **Opus 5 (`claude-opus-5`)** under H1731. The author-voice pass over the prose ran 04-08-2026 —
+> the 4→5 slot it was reserved for — on **Fable 5 (`claude-fable-5`)**
+> ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md)):
+> the prose was aligned to the
+> [Sangram prose guide](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+> — telegraphic bullets expanded into full sentences, internal labels given plain-language readings
+> at first use — with no claim, figure or citation changed.
 
 ## Abstract
 
@@ -60,22 +65,24 @@ productive rather than aspirational.
 
 ## §1 Introduction
 
-- The gap: the substance of Sanskrit pedagogy exists but scattered across ~10 repos and three
-  partial maps; "this tool teaches better" is asserted, never tested; MEGABOOK flags "the last mile
-  to the student" as the chain's main unclosed link.
-- The contribution: (a) a field definition + aspect taxonomy; (b) four falsifiable research
-  questions; (c) a first result; (d) an integration architecture that closes the last mile;
-  (e) a two-layer evaluation methodology — one falsifiable capability metric per aspect, measurable
-  from committed artifacts today, held apart from learner outcome, which stays with a single study
-  protocol.
+- The gap. The substance of Sanskrit pedagogy already exists, but it sits scattered across roughly
+  ten repositories and three partial maps, and the claim "this tool teaches better" is asserted,
+  never tested. The project's master planning document (MEGABOOK) names the last mile to the
+  student as the chain's main unclosed link.
+- The contribution is fivefold: (a) a field definition with an aspect taxonomy; (b) four
+  falsifiable research questions; (c) a first confirmed result; (d) an integration architecture
+  that closes the last mile; (e) a two-layer evaluation methodology — one falsifiable capability
+  metric per aspect, measurable from committed artifacts today, held apart from learner outcome,
+  which stays with a single study protocol.
 
 ## §2 The landscape (survey)
 
-Reuses the field metadoc's aspect-primary taxonomy (12 aspects × CEFR rung × NLP capability ×
-traditional discipline × owning repo). Consolidates the three pre-existing maps — Systema's
-asset-index + A0–C2 ladder, SanskritGrammar's `LEARNER_MATERIALS`, kosha's `POSITIONING` — by
-reference. Headline: the **B1–B2 middle is asset-rich but unintegrated**; the **A0–A1 column is
-thin** (audio, native beginner grammar); **C1–C2 is planned depth**.
+The survey reuses the field metadoc's aspect-primary taxonomy (12 aspects × CEFR rung × NLP
+capability × traditional discipline × owning repo) and consolidates the three pre-existing maps by
+reference: Systema's asset index with its A0–C2 ladder, the learner-materials inventory in
+SanskritGrammar (`LEARNER_MATERIALS`), and kosha's positioning survey (`POSITIONING`). The headline
+reading: the **B1–B2 middle is asset-rich but unintegrated**, the **A0–A1 column is thin** (audio
+and a native beginner grammar are the missing pieces), and **C1–C2 is planned depth**.
 
 Survey table — the field metadoc's [§4a matrix](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4a-matrix--aspect--cefr-rung--where-the-assets-and-gaps-are),
 aspect × CEFR rung (✅ built · 🟡 partial · 📋 planned · ⬜ gap · — not applicable at that rung),
@@ -116,8 +123,8 @@ the condition §1 describes as the field's central defect — assets asserted to
 
 **Meta-claim (research + integration composes):** RQ1's result already *constrains* the integration
 — the frequency-ordered SRS deck spec ([last-mile spec](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/LAST_MILE_PIPELINE_SPEC.md)
-Hop B) consumes `core_rank` and strips function words *because* RQ1 showed raw frequency fails. The
-agenda's questions and its plumbing are the same programme.
+Hop B) consumes kosha's `core_rank` "learn-these-first" ordering and strips function words *because*
+RQ1 showed raw frequency fails. The agenda's questions and its plumbing are the same programme.
 
 ## §4 Evaluation methodology (RQ4 — the backbone)
 
@@ -202,15 +209,16 @@ claim about a teaching artifact with a denominator attached.
 
 ### 4.3 The outcome layer — one instrument for the whole field
 
-Design: pre/post diagnostic, matched cohorts, retention at N weeks. The first concrete arm is
-**A/B on the Zaliznyak on-ramp** (W1c) — on-ramp-first vs Талмуд-first — measuring
-time-to-first-correct-derivation and retention, with a pre-registered analysis plan (ANCOVA on the
-retention score with the immediate post-test as covariate, so retention decay is separated from
-initial gain) and differential attrition reported per arm rather than dropped. The protocol is
+The design rests on a pre/post diagnostic with matched cohorts and retention measured at N weeks.
+The first concrete arm is an **A/B study on the Zaliznyak on-ramp** (work package W1c), comparing
+an on-ramp-first cohort with a Талмуд-first cohort and measuring time to first correct derivation
+alongside retention, with a pre-registered analysis plan (ANCOVA on the retention score with the
+immediate post-test as covariate, so retention decay is separated from initial gain) and
+differential attrition reported per arm rather than dropped. The protocol is
 specified in full in
 [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md);
 its design decisions are ruled and its remaining gate is a launch decision, not a methodological
-one. Recommended first step is a pilot, not the full study.
+one. The recommended first step is a pilot, not the full study.
 
 This is the section that makes the field a *science* rather than a toolbox — but only in
 combination with §4.2. The register without the study measures capability and calls it teaching;
@@ -220,16 +228,19 @@ unfalsifiable.
 ## §5 Integration architecture (closing the last mile)
 
 The [last-mile spec](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/LAST_MILE_PIPELINE_SPEC.md)
-(W1d) is the field's delivery vehicle: kosha (open data/lookup) → Systema (product), via a
-vendored-data-file contract, three hops (reader / SRS deck / difficulty→sequencing). The research
-layer produces the signals; the integration layer delivers them to a learner. This is the
-"research → education → value" chain made concrete.
+(work package W1d) is the field's delivery vehicle: data flows from kosha (open data and lookup)
+into Systema (the student-facing product) over a vendored-data-file contract, in three hops — a
+reader, an SRS deck, and difficulty-driven sequencing. The research layer produces the signals; the
+integration layer delivers them to a learner. This is the "research → education → value" chain made
+concrete.
 
 ## §6 Gaps & risks
 
-Audio (the biggest, blocks A0–A2); DCS genre bias (RQ1); the still-open last mile; no learner corpus
-(the raw material for RQ4 + adaptive modelling); reading-pack + difficulty datasets planned-not-built.
-(Field metadoc §6.)
+Five gaps carry the risk register (field metadoc §6). Audio is the largest: its absence blocks
+every beginner rung (A0–A2). The epic-genre bias of the underlying corpus (the Digital Corpus of
+Sanskrit, DCS) qualifies RQ1's result. The last mile to the student stays open until §5's
+architecture ships. No learner corpus exists yet — the raw material for RQ4 and for adaptive
+modelling. And the reading-pack and difficulty datasets are planned, not built.
 
 **The measurement gap is itself a gap, and the largest one.** Ten of the twelve capability metrics
 in §4.2 have never been computed, seven of the twelve bars are reasoned rather than anchored in a
@@ -310,7 +321,9 @@ classical Indo-Aryan language.
 
 - ~~**3/5:** live-verified §7 related work (real citations); the survey table filled from the metadoc; abstract written.~~ **DONE 22-07-2026** (H1464) — 8 live-verified external citations across four related-work threads (L2 frequency/extensive-reading, ICALL, ACL readability, Sanskrit computational resources) + the metadoc §4a matrix reproduced in §2 + a full abstract.
 - ~~**4/5:** RQ4 evaluation protocol specified in full.~~ **DONE 04-08-2026** ([H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md)) — §4 rebuilt as a two-layer methodology: §4.1 states and defends the capability-vs-outcome split, §4.2 reproduces the PM1–PM12 register with denominators, refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that 10 of 12 are unmeasured, §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column; §6 gains the measurement gap.
-- **5/5:** venue `@DECIDE` + byline/ORCID; a Fable author-voice pass over the prose.
+- **5/5:** venue `@DECIDE` + byline/ORCID; ~~a Fable author-voice pass over the prose~~ — voice
+  pass **done 04-08-2026** ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md),
+  Fable 5 `claude-fable-5`), over the post-H1731 text; venue + byline/ORCID remain.
 
 ---
 
