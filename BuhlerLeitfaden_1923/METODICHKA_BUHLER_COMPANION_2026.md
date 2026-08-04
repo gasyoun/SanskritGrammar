@@ -8,7 +8,7 @@ translation of the *Leitfaden für den Elementarcursus des Sanskrit*, 1883; elec
 edition v2.0 by N. P. Likhushina, 2008, 48 lessons). Grammatical-accuracy notes,
 frequency refinements, a corpus-adjudicated case-government section, the misprint errata,
 and cross-references to Knauer's *Фразы*. This plan is the durable spec; the executing
-slice for v1 is [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md).
+slice for v1 is [H1757](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1757-Fable_SanskritGrammar_buhler-metodichka-v1-companion-commentary_27.07.26.md).
 The pattern followed is the Kochergina companion,
 [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)
 (H807 precedent) — decisions already ruled there are inherited, not re-litigated.

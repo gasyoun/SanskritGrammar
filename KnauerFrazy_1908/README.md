@@ -16,7 +16,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 ## Аудит морфологических разборов (H797, фаза 2 — развилка метода)
 
 Третья книга конвейера проверки утверждений — и первая, где конвейер пришлось
-**адаптировать под жанр**. [H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)
+**адаптировать под жанр**. [H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)
 предписывает перенести на Кнауэра двухосевой конвейер Кочергиной/Бюлера
 ([KocherginaUchebnik_1998/README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/README.md),
 [BuhlerLeitfaden_1923/README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/README.md)),
@@ -83,7 +83,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 [knauer-frazy-v0.2.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/knauer-frazy-v0.2.0)
 (посев) и v0.3.0 (полный слив);
 статус зафиксирован жёлтым баннером в
-[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md).
+[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md).
 
 ### Как воспроизвести
 

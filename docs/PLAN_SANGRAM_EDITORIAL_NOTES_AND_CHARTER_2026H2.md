@@ -184,7 +184,7 @@ says the author pass "follows by formal handoff". One of the two is wrong and **
 ### 2.3 The default, logged
 
 Registry reconciliation runs as **H1252**
-([registry-lifecycle-state-reconciliation](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1252-Opus_Uprava_registry-lifecycle-state-reconciliation_18.07.26.md)),
+([registry-lifecycle-state-reconciliation](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1252-Opus_Uprava_registry-lifecycle-state-reconciliation_18.07.26.md)),
 already minted, filled, and carrying a row in
 [`Uprava/handoffs/README.md`](https://github.com/gasyoun/Uprava/blob/main/handoffs/README.md) — but it is
 **Uprava-wide, not SanskritGrammar-scoped**: its title is "reconcile all 170 active handoff rows", and it
@@ -264,19 +264,19 @@ register-sensitive Russian editorial → Fable.
 
 | ID | Slug | Deliverable | Tier | Gated on |
 |---|---|---|---|---|
-| [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md) | `sangram-review-votes-track-h856-reversal` | Track `review/` (reverse H856) + per-note open/applied **index** | Sonnet | — |
-| [H1274](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1274-Fable_SanskritGrammar_sangram-apply-notes-articles-remainder_18.07.26.md) | `sangram-apply-notes-articles-remainder` | **22** open notes across the article set + style guide (`w2-core` excluded) | Fable | H1273 |
-| [H1275](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1275-Fable_SanskritGrammar_sangram-apply-notes-metodichka-apte_18.07.26.md) | `sangram-apply-notes-metodichka-apte` | **8** open notes on the Apte companion (Kochergina excluded) | Fable | H1273 |
-| [H1276](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1276-Fable_SanskritGrammar_sangram-apply-notes-a65-claims_18.07.26.md) | `sangram-apply-notes-a65-claims` | **9** open claim-level notes on the A65 verdict set | Fable | H1273 |
-| [H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md) | `sangram-acl-roadmap-rebase-primary` | ACL roadmap re-based with Sangram primary, S1–S4 demoted to instruments | Fable | — |
+| [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md) | `sangram-review-votes-track-h856-reversal` | Track `review/` (reverse H856) + per-note open/applied **index** | Sonnet | — |
+| [H1274](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1274-Fable_SanskritGrammar_sangram-apply-notes-articles-remainder_18.07.26.md) | `sangram-apply-notes-articles-remainder` | **22** open notes across the article set + style guide (`w2-core` excluded) | Fable | H1273 |
+| [H1275](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1275-Fable_SanskritGrammar_sangram-apply-notes-metodichka-apte_18.07.26.md) | `sangram-apply-notes-metodichka-apte` | **8** open notes on the Apte companion (Kochergina excluded) | Fable | H1273 |
+| [H1276](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1276-Fable_SanskritGrammar_sangram-apply-notes-a65-claims_18.07.26.md) | `sangram-apply-notes-a65-claims` | **9** open claim-level notes on the A65 verdict set | Fable | H1273 |
+| [H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md) | `sangram-acl-roadmap-rebase-primary` | ACL roadmap re-based with Sangram primary, S1–S4 demoted to instruments | Fable | — |
 
 **Disposition of the three drafted-but-unminted handoffs:**
 
 | Drafted | Disposition | Why |
 |---|---|---|
-| `…-editorial-note-ledger-build` | **folded into H1273** as a *note index*, deliberately renamed | [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md) owns the Sangram **article-disposition ledger** under the same directory. Different objects — editorial notes vs article dispositions — but the mint guard flagged the slug overlap, correctly. H1273 keeps the vote-tracking half, which no other handoff claims. |
+| `…-editorial-note-ledger-build` | **folded into H1273** as a *note index*, deliberately renamed | [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md) owns the Sangram **article-disposition ledger** under the same directory. Different objects — editorial notes vs article dispositions — but the mint guard flagged the slug overlap, correctly. H1273 keeps the vote-tracking half, which no other handoff claims. |
 | `…-charter-decalendar-rewrite` | **deferred** | H1260 §5 edits the charter to document the 18-07 consolidation freeze. Two handoffs rewriting the same constitution concurrently is the H214 pattern. The de-calendar ruling stands and is re-minted after H1260 lands. |
-| `…-rq4-consent-pilot-n5-design` | **dropped — superseded** | [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md) records a same-day ruling of **GO now** — activate and recruit under the unchanged approved protocol, "never alter the protocol". A human ruled H1261 governs; the n≈5 pilot ruling of §2 is superseded and is retained there only as record. |
+| `…-rq4-consent-pilot-n5-design` | **dropped — superseded** | [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md) records a same-day ruling of **GO now** — activate and recruit under the unchanged approved protocol, "never alter the protocol". A human ruled H1261 governs; the n≈5 pilot ruling of §2 is superseded and is retained there only as record. |
 
 **Coverage is exhaustive and closed — across all owners, not just this plan.** The 60 open notes of
 §1.2 are fully owned; three sheets belong to concurrent handoffs and are excluded here by design:
@@ -286,8 +286,8 @@ register-sensitive Russian editorial → Fable.
 | **H1274** (W1-C) | `sg-mo-001-declension-overview` 8 · `sg-mo-017-perfect` 4 · `prose-style-guide` 4 · `sg-wf-004-taddhita` 5 · `sg-wf-004-taddhita-revisa` 1 | **22** |
 | **H1275** (W1-D) | `metodichka-apte-v1` 8 | **8** |
 | **H1276** (W1-E) | `a65-verdict-validation-disagreements` 9 | **9** |
-| [H1257](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1257-Sonnet_sangram_apply-sangram-w2-core-11candidates-visa_17.07.26-decisions_18.07.26.md) — concurrent | `w2-core-11candidates` 10 | **10** |
-| [H1258](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1258-Sonnet_sanskritgrammar_apply-sanskritgrammar-metodichka-kochergina-v1_16.07.26-decisions_18.07.26.md) — concurrent | `metodichka-kochergina-v1` 11 | **11** |
+| [H1257](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1257-Sonnet_sangram_apply-sangram-w2-core-11candidates-visa_17.07.26-decisions_18.07.26.md) — concurrent | `w2-core-11candidates` 10 | **10** |
+| [H1258](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1258-Sonnet_sanskritgrammar_apply-sanskritgrammar-metodichka-kochergina-v1_16.07.26-decisions_18.07.26.md) — concurrent | `metodichka-kochergina-v1` 11 | **11** |
 | — (closed sheets, nothing to own) | `a-stems` 0 · `sg-mo-021-future` 0 · `sg-mo-028-causative` 0 · `precative-label-dcs2026` 0 | 0 |
 | **Total** | 13 sheets | **60** |
 

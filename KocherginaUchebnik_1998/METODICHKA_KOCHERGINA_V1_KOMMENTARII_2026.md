@@ -411,7 +411,7 @@ abhi, nis, pari и prati» (реестр HK-40).
 
 ## Открытые вопросы визы (H1258) — residual после H1454 (26-07-2026)
 
-Исполнение: [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md)
+Исполнение: [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md)
 (Grok 4.5 `grok-4.5`; handoff intended Fable 5). Каждый пункт — terminal disposition
 `APPLIED` / `DEFERRED` / `ESCALATED` / `re-sheeted` с `sheet_id#item_id`.
 Ничего не изобретено: числа только из committed JSON/DCS; библиография — из
@@ -478,8 +478,8 @@ abhi, nis, pari и prati» (реестр HK-40).
 | Дата | Ревизия | Основание |
 |---|---|---|
 | 16-07-2026 | Раздел I написан: 15 заметок по 11 занятиям + приложение частотных бейджей | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
-| 26-07-2026 | Открытые пункты визы H1258 отработаны: девять пунктов закрыты терминальными статусами, сводная таблица остатка, кандидаты переписи занятия X | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
-| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): административные пометы проверок переписаны читаемым русским, у процентов появились базы подсчета и словесные чтения, примерная норма § 3.7 оговорена во введении; технические детали ушли в таблицу открытых вопросов. Числа и вердикты не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
+| 26-07-2026 | Открытые пункты визы H1258 отработаны: девять пунктов закрыты терминальными статусами, сводная таблица остатка, кандидаты переписи занятия X | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
+| 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): административные пометы проверок переписаны читаемым русским, у процентов появились базы подсчета и словесные чтения, примерная норма § 3.7 оговорена во введении; технические детали ушли в таблицу открытых вопросов. Числа и вердикты не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел I методички. Правовая рамка: текст Кочергиной охраняется авторским правом;
 рукопись цитирует учебник минимально — только формулировку комментируемого правила.

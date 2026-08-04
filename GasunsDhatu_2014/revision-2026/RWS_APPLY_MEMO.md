@@ -71,7 +71,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 доводить **после**
 [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)
 (Гл. 3 сейчас в активной переработке) и
-[H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md)
+[H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md)
 (перестройка скелета), иначе якоря продолжат смещаться.
 
 ## Метод и трудозатраты

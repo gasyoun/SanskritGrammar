@@ -67,7 +67,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 
 **Статус в программе:** инфраструктурный проход, НЕ вердикт-реестр — планка «≥ N
 проверенных» к этому жанру не применяется (постановление зафиксировано в
-[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)).
+[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)).
 С этим проходом закрыт пятый — последний — источник программы: итог по всем пяти книгам —
 **942 проверенных утверждения + 214 аудированных разборов + классификатор корней**;
 у Зализняка по трём его текстам — ни одного фактического флага.

@@ -92,9 +92,9 @@ as **H1454** (Kochergina) + **H1615** (Apte). This plan **does not re-mint** H-A
 
 | # | Role | Model | Repo | ID / path |
 |---|---|---|---|---|
-| H-A | Methodichka residual (reuse — do not re-mint) | Fable 5 | SanskritGrammar | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) · [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) — procedure for any future wave: [`docs/runbooks/METHODICHKA_VISA_APPLY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/METHODICHKA_VISA_APPLY.md) (H1674) |
-| H-B | Thin pedagogy export adapter + LAST_MILE gap close | Sonnet 5 | SanskritGrammar | [H1643](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1643-Sonnet_SanskritGrammar_pedagogy-export-adapter-last-mile_25.07.26.md) |
-| H-C | Systema local/staging hop smoke against H-B export | Sonnet 5 | Systema-Sanscriticum | [H1644](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1644-Sonnet_Systema-Sanscriticum_pedagogy-export-hop-smoke_25.07.26.md) |
+| H-A | Methodichka residual (reuse — do not re-mint) | Fable 5 | SanskritGrammar | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) · [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) — procedure for any future wave: [`docs/runbooks/METHODICHKA_VISA_APPLY.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/METHODICHKA_VISA_APPLY.md) (H1674) |
+| H-B | Thin pedagogy export adapter + LAST_MILE gap close | Sonnet 5 | SanskritGrammar | [H1643](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1643-Sonnet_SanskritGrammar_pedagogy-export-adapter-last-mile_25.07.26.md) |
+| H-C | Systema local/staging hop smoke against H-B export | Sonnet 5 | Systema-Sanscriticum | [H1644](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1644-Sonnet_Systema-Sanscriticum_pedagogy-export-hop-smoke_25.07.26.md) |
 
 Execution order: **H-A ∥ H-B** (disjoint files), then **H-C** (depends on H-B artifact on a merged main or a reachable commit). Re-vote cards (`zan-29`, WF004-03/04/07) stay on H1615 / a follow-up sheet from that handoff — not a third parallel mint.
 

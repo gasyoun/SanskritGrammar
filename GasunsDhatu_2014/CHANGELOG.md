@@ -267,7 +267,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Changed
 - **Приложение 7 — обогащение подлинных корней MW** (второй проход). К каждому корню
   присоединены **корпусная частота/ранг DCS** ([`roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv))
-  и **число словарей-источников** ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/master/v02/etymology_stats/root_oracle.tsv))
+  и **число словарей-источников** ([`root_oracle.tsv`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv))
   через генератор `mw_genuine_roots.py` (join по `root_iast`). Кросс-таб по 704 различным
   подлинным корням: **482 (68 %)** засвидетельствованы в DCS, **345** согласованы ≥4 словарями;
   их пересечение -- **ядро из 294 корней** (подлинные + корпусно аттестованные + межсловарно

@@ -7,8 +7,8 @@ Audit of the **32,690 PWG headwords flagged `lexicon_only=1`** by the
 (gross) attests **only** from Sanskrit koṣas, never from a dated text — against the other
 digitised dictionaries, to answer: is each lexicon-only word attested elsewhere, and which
 of them are genuine "ghost-words" unique to PWG? Handoff
-[H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md)
-(v2), [H1326](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1326-Sonnet_SanskritGrammar_kosa-corpus-fill-amara-rajanighantu-lexicon-audit_19.07.26.md)
+[H1310](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1310-Opus_SanskritLexicography_pwg-lexicon-only-ghostword-cross-dictionary-audit_19.07.26.md)
+(v2), [H1326](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1326-Sonnet_SanskritGrammar_kosa-corpus-fill-amara-rajanighantu-lexicon-audit_19.07.26.md)
 (v3 — this pass, adds Amara). This **v3 supersedes** v2 — see
 [Version history](#version-history).
 

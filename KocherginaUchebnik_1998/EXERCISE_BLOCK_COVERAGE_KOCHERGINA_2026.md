@@ -122,11 +122,11 @@ _Created: 28-07-2026 · Last updated: 28-07-2026_
 [KocherginaExerciseSource.php](https://github.com/gasyoun/Systema-Sanscriticum/blob/main/app/Services/KocherginaExerciseSource.php)
 (метод `forLesson()`); таблица снята с неё построчным зеркалом на Python 28-07-2026,
 модель Opus 5 1M (`claude-opus-5[1m]`), handoffs
-[H1789](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1789-Opus_multi_kochergina-source-coverage-table_28.07.26.md)
+[H1789](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1789-Opus_multi_kochergina-source-coverage-table_28.07.26.md)
 (промер),
-[H1790](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1790-Opus_SanskritGrammar_kochergina-zan30-exercise-ii-marker_28.07.26.md)
+[H1790](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1790-Opus_SanskritGrammar_kochergina-zan30-exercise-ii-marker_28.07.26.md)
 (маркер занятия 30) и
-[H1795](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1795-Opus_SanskritGrammar_kochergina-remaining-dotless-markers_28.07.26.md)
+[H1795](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1795-Opus_SanskritGrammar_kochergina-remaining-dotless-markers_28.07.26.md)
 (маркеры занятий 5 и 7).
 
 Номера строк относятся к состоянию `Kochergina_unicode.mdx` на 28-07-2026. Файл

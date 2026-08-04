@@ -2,9 +2,9 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1614](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1614-Sonnet_SanskritGrammar_freeze-se-survivor-visa-sheet_24.07.26.md)
+**Handoff:** [H1614](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1614-Sonnet_SanskritGrammar_freeze-se-survivor-visa-sheet_24.07.26.md)
 **Executor:** Grok 4.5 (`grok-4.5`) — user-launched override of Sonnet 5
-**Upstream:** [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md) · [PR #517](https://github.com/gasyoun/SanskritGrammar/pull/517) · survivors roll-up [`probe_freeze_se_H1612_survivors.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_se_H1612_survivors.md)
+**Upstream:** [H1612](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md) · [PR #517](https://github.com/gasyoun/SanskritGrammar/pull/517) · survivors roll-up [`probe_freeze_se_H1612_survivors.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_se_H1612_survivors.md)
 
 ## Verdict
 
@@ -38,6 +38,6 @@ kill_gated articles are excluded from any future SE freeze-survivor sheet by the
 
 ## Residual (out of scope for H1614)
 
-The seven SE `blocking_note` parks and the seven MO/WF escalations from [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) remain freeze-stuck until a later handoff defines fireable C5/C6 gates or a non-SE visa route. That is not a sheet-with-zero-cards; it is separate work.
+The seven SE `blocking_note` parks and the seven MO/WF escalations from [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) remain freeze-stuck until a later handoff defines fireable C5/C6 gates or a non-SE visa route. That is not a sheet-with-zero-cards; it is separate work.
 
 _Dr. Mārcis Gasūns_

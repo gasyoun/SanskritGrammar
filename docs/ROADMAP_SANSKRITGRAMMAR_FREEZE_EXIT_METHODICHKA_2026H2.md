@@ -67,7 +67,7 @@ RQ4 feature flip; A61 CfP when published.
 ### W1-B0 · H1454 (existing) — Fable
 
 Do not re-mint. See
-[H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md).
+[H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md).
 
 ### W1-B1 · `metodichka-apte-open-residual` — Fable
 

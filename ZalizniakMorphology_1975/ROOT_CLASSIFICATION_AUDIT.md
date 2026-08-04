@@ -9,7 +9,7 @@ hand-written summary of a bespoke script's output.
 
 ## Why this register looks different from the other three
 
-[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)'s
+[H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md)'s
 pipeline harvests **discursive corpus-frequency claims** (Kochergina/Bühler/Ocherk/Konspekt:
 "usually", "rarely", verified against DCS token counts) or **individual footnote parses**
 (Knauer: verified one at a time against Whitney citations). This paper — Zaliznyak's actual

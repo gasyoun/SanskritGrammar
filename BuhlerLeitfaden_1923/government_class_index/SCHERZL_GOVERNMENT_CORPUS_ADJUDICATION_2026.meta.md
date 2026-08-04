@@ -22,7 +22,7 @@ choosing which Scherzl relations to trust; anyone auditing the government lexico
 
 ## Provenance
 
-- **Handoff:** [H1372](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1372-Opus_SanskritGrammar_scherzl-government-relations-vs-dcs-treebank-adjudication_20.07.26.md) (20-task wave H1355–H1374).
+- **Handoff:** [H1372](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1372-Opus_SanskritGrammar_scherzl-government-relations-vs-dcs-treebank-adjudication_20.07.26.md) (20-task wave H1355–H1374).
 - **Model:** Opus 4.8 (`claude-opus-4-8`).
 - **Inputs:** [`government_lexicon.jsonl`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/government_lexicon.jsonl) (H1195) + the [dcs-conllu](https://github.com/gasyoun/dcs-conllu) treebank. The CoNLL-U export is the same DCS-2026 master as `VisualDCS/src/DCS-data-2026/dcs_full.sqlite`: token count **5 688 416** and **11 096** verb lemmas match the sqlite exactly, which is why the conllu serialisation (which carries HEAD/DEPREL directly) was used in place of the sqlite the handoff named.
 - **Shipped:** [PR #476](https://github.com/gasyoun/SanskritGrammar/pull/476) (first cut, 3-tier) then the completing PR bringing it to the handoff's 4-tier spec + hand-adjudication.

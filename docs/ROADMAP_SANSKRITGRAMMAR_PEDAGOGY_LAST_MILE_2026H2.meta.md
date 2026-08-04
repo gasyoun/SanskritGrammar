@@ -21,7 +21,7 @@ the standing operator runbooks that make each cycle repeatable without re-spec'i
 |---|---|
 | Cover plan | [`docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md) (+ its own [metadoc](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.meta.md)) |
 | Roadmap authored | 25-07-2026, Grok 4.5 (xAI) — session in RussianTranslation cwd targeting SanskritGrammar |
-| This metadoc authored | 27-07-2026, Sonnet 5 (`claude-sonnet-5`), [H1677](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1677-Sonnet_SanskritGrammar_runbooks-index-and-metadocs_26.07.26.md) |
+| This metadoc authored | 27-07-2026, Sonnet 5 (`claude-sonnet-5`), [H1677](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1677-Sonnet_SanskritGrammar_runbooks-index-and-metadocs_26.07.26.md) |
 | Subject repo | [gasyoun/SanskritGrammar](https://github.com/gasyoun/SanskritGrammar) |
 | Runbook suite it produced | [`docs/runbooks/README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/README.md) — H1672–H1677 |
 

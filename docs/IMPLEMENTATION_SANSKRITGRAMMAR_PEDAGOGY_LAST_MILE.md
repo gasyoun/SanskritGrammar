@@ -32,8 +32,8 @@ reachable commit (merged main preferred).
 | Tier | **Fable 5** (`claude-fable-5`) |
 | Repo | SanskritGrammar |
 | Status | **Already staged** by freeze-exit plan B0/B1 |
-| Kochergina | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) |
-| Apte | [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) |
+| Kochergina | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) |
+| Apte | [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) |
 | Unblocks | Clean companions; D1/D2 for *this* plan’s close checklist |
 
 ### Steps

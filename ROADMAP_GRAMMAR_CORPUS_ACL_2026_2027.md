@@ -10,7 +10,7 @@ _Created: 10-07-2026 · Last updated: 29-07-2026_
 > [architecture modernization plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md)
 > without changing the portfolio order._
 
-> _Revision 19-07-2026 ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md), Fable 5 `claude-fable-5`): executed the 18-07-2026 **keep-both ruling** — Sangram is the product of record for the corpus-grammar line; Track C's two ACL papers are its **publication arm**, and the former "four spines" S1–S4 are demoted to **instruments** that feed Sangram (labels kept for link stability). Measured basis, 19-07-2026 against `origin/main`: `sangram/` accounts for 204 of 596 files touched since 14-07-2026 — **34.2 %, the single largest stream of work in the repo, 3.2× the next bucket** (`scripts/`, 64). The S1 τ result is already consumed as evidence by three Sangram programme docs; the agreement-metric method of the S2 paper is already practised inside `sangram/articles/tatpurusha/` — the papers productionise analyses that exist as one-offs. The portfolio order below (M03 first) is untouched: "Sangram primary" ranks Sangram over its instruments, not over the monograph._
+> _Revision 19-07-2026 ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md), Fable 5 `claude-fable-5`): executed the 18-07-2026 **keep-both ruling** — Sangram is the product of record for the corpus-grammar line; Track C's two ACL papers are its **publication arm**, and the former "four spines" S1–S4 are demoted to **instruments** that feed Sangram (labels kept for link stability). Measured basis, 19-07-2026 against `origin/main`: `sangram/` accounts for 204 of 596 files touched since 14-07-2026 — **34.2 %, the single largest stream of work in the repo, 3.2× the next bucket** (`scripts/`, 64). The S1 τ result is already consumed as evidence by three Sangram programme docs; the agreement-metric method of the S2 paper is already practised inside `sangram/articles/tatpurusha/` — the papers productionise analyses that exist as one-offs. The portfolio order below (M03 first) is untouched: "Sangram primary" ranks Sangram over its instruments, not over the monograph._
 
 This is the repository's **authoritative portfolio-ordering document**. It says which result
 comes first and how the five active tracks share capacity. It does not duplicate their detailed
@@ -63,7 +63,7 @@ other, but where they compete for capacity, the instrument serves the product, n
   [`GasunsDhatu_2026_RWS_review.docx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GasunsDhatu_2026_RWS_review.docx)
   is the remaining gate; it is not a new agent handoff.
 
-- **🔴 EXECUTED: [H1260 — Sangram consolidation policy and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)**
+- **🔴 EXECUTED: [H1260 — Sangram consolidation policy and ledger](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)**
   (Sonnet 5 `claude-sonnet-5`, 19-07-2026). Machine-readable freeze ledger +
   `article_validate.py` freeze gate installed — see `.ai_state.md` Completed
   and [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).

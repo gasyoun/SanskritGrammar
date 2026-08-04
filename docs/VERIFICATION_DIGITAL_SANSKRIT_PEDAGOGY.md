@@ -13,14 +13,14 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
 | **W1b** A62 draft | outline at readiness-2; survey + hypotheses (RQ1–4) + evaluation-design sections present; venue line; dashboard regen | `python Uprava/tools/build_dashboard_data.py` regenerates; A62 row shows readiness 2 |
 | **W1c** Zaliznyak on-ramp | on-ramp `.mdx` builds; graded sequence renders; "one tap deeper" links resolve to Талмуд chapters | `npm run build` → SUCCESS, 0 new broken links; spot-check the deep links |
 | **W1d** last-mile spec | spec complete; kosha↔Systema contract defined; one-rung demo path specified; **no Systema production code changed** | `git diff` touches only the spec doc; contract section names inputs/outputs of each hop |
-| **W2-add-a** attested drills ([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)) | joiner fixture test green; drill items carry ONLY attested cells (spot-check 20 vs `lemma_cell_coverage.csv`); generated-vs-attested disagreements flagged, never silently picked; per-class coverage report present | run the join script → `attested_drill_items.tsv` + coverage report; fixture test |
-| **W2-add-b** corpus-linked methodichka ([H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)) | every companion lemma carries band + DCS locus; restricted-rendering rows ship Sanskrit-only with the marker; both metadocs ticked | banding regression on 20 lemmas; grep zero restricted-layer text in the published section |
-| **W2-add-c** bracket trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)) | 30-compound gold ladder set committed + regression green; widget builds; H948 cross-linked not duplicated | `npm run build` SUCCESS; gold regression |
+| **W2-add-a** attested drills ([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)) | joiner fixture test green; drill items carry ONLY attested cells (spot-check 20 vs `lemma_cell_coverage.csv`); generated-vs-attested disagreements flagged, never silently picked; per-class coverage report present | run the join script → `attested_drill_items.tsv` + coverage report; fixture test |
+| **W2-add-b** corpus-linked methodichka ([H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)) | every companion lemma carries band + DCS locus; restricted-rendering rows ship Sanskrit-only with the marker; both metadocs ticked | banding regression on 20 lemmas; grep zero restricted-layer text in the published section |
+| **W2-add-c** bracket trainer ([H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)) | 30-compound gold ladder set committed + regression green; widget builds; H948 cross-linked not duplicated | `npm run build` SUCCESS; gold regression |
 | **Registration** | MEGABOOK §2.10 present + §2.9 strengthened; A62 in ARTICLES with bumped marker; GTD straddle tier row; ROADMAP_INDEX entry; handoffs registered | `crosslink_weave_check.py MEGABOOK.md` passes; A62 marker → A63; registry counts add up |
 
 ### Verified
 
-- **W2-add-a ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)).
+- **W2-add-a ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)).
   [`tests/test_attested_drills.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_attested_drills.py)
   green (6 tests): joiner fixture over 20 lemmas, the 20-item spot-check of the real
   corpus against `lemma_cell_coverage.csv` bitstrings, a bit-index↔`cells_order` guard,
@@ -34,7 +34,7 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
   builds. Incidental finding: the `mismatch` flag doubles as a DCS annotation-error
   detector (`artha` Voc.Sing attests *arthaiḥ*, an instrumental plural, n=6).
 
-- **W2-add-b ✅ 21-07-2026** (Fable 5 `claude-fable-5`, [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)).
+- **W2-add-b ✅ 21-07-2026** (Fable 5 `claude-fable-5`, [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md)).
   [`tests/test_corpus_layer.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_corpus_layer.py)
   green (5 tests): the 20-lemma banding regression (fixture pinned + live cross-check
   against kosha `lemma_frequency.tsv`), band-boundary pins (100/101, 1000/1001), a
@@ -55,7 +55,7 @@ register. Plan cover [here](https://github.com/gasyoun/SanskritGrammar/blob/main
   tagged `upos=ADV`), and kosha frequency rows inherit the conflation — banded rows for
   `hā`/`vara` carry an upper-bound footnote in the Apte manuscript.
 
-- **W2-add-c ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)).
+- **W2-add-c ✅ 19-07-2026** (Opus 4.8 `claude-opus-4-8`, [H1298](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1298-Opus_SanskritGrammar_sangram-samasa-bracket-method-trainer_19.07.26.md)).
   [`tests/test_samasa_ladder.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_samasa_ladder.py)
   green (20 tests) and `npm run build` **SUCCESS**; the widget was exercised in a served
   build (head graded, ladder unfolds right→left, question slots keep ≥2 candidates).

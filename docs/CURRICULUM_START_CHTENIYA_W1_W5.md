@@ -172,7 +172,7 @@ Gate all five behind cohort entitlement `start_chteniya_cohort` (name final in H
 |---|---|
 | [H2108](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2108-Fable_ORS-FAQ_start-chteniya-landing_01.08.26.md) | Landing arc copy (week promises) |
 | [H2105](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2105-Sonnet_Systema-Sanscriticum_start-chteniya-cohort-funnel_01.08.26.md) | Lesson skeleton / entitlement scope |
-| [H2109](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2109-Sonnet_kosha_start-chteniya-pack-freeze_01.08.26.md) | Freeze file list |
+| [H2109](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2109-Sonnet_kosha_start-chteniya-pack-freeze_01.08.26.md) | Freeze file list |
 | [H2106](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2106-Sonnet_Systema-Sanscriticum_start-chteniya-pack-wire-srs_01.08.26.md) | `/dvaram` deep links per week |
 | [H2114](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2114-Sonnet_SanskritKaraoke_start-chteniya-week4-metre_01.08.26.md) | W4 pinned verse IDs |
 | [H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md) | Story swap target for W3–W5 |

@@ -5,7 +5,7 @@ _Created: 21-07-2026 · Last updated: 21-07-2026_
 Раздел II методички-компаньона к V. S. Apte, *The Student's Guide to Sanskrit
 Composition* (1885; рус. пер. Н. П. Лихушиной, 2021). Раздел I (комментарий точности):
 [METODICHKA_APTE_KOMMENTARII_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md).
-Слайс исполнения — [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md).
+Слайс исполнения — [H1297](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1297-Fable_SanskritGrammar_metodichka-corpus-linked-kochergina-apte_19.07.26.md).
 
 ## Что это и как читать
 

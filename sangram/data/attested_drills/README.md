@@ -3,7 +3,7 @@
 _Created: 19-07-2026 · Last updated: 19-07-2026_
 
 Derived data asset behind the [attested-cell declension trainer](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/attested-drills/index.mdx)
-([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)).
+([H1296](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1296-Opus_SanskritGrammar_sangram-attested-cell-declension-drills_19.07.26.md)).
 Every other morphology drill in the project — [kosha W1a (H946)](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H946-Sonnet_kosha_morphology-drills_15.07.26.md)
 included — drills the paradigm *engine's* 24 generated cells. This asset drills only
 the cells the corpus actually attests, which the

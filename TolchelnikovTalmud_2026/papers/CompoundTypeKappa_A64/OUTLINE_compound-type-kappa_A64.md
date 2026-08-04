@@ -8,7 +8,7 @@ see § "Venue" below — not chosen here).
 Paper layer of the [Sangram morphology programme](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md),
 English venue-paper draft of the published RU pilot [SG-WF-008](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/tatpurusha/index.mdx)
 (handoff [H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md), [v0.25.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.25.0)).
-Model: Sonnet 5 (`claude-sonnet-5`), handoff [H1466](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1466-Sonnet_SanskritGrammar_a64-tatpurusa-english-venue-prose_22.07.26.md).
+Model: Sonnet 5 (`claude-sonnet-5`), handoff [H1466](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1466-Sonnet_SanskritGrammar_a64-tatpurusa-english-venue-prose_22.07.26.md).
 
 ## Thesis
 

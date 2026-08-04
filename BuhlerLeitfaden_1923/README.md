@@ -107,7 +107,7 @@ CC BY, через соседний репозиторий VisualDCS), **Уитн
 [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)
 и в сгенерированном
 [CLAIMS_VERIFIED.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CLAIMS_VERIFIED.md);
-история — [H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md),
+история — [H797](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H797-Fable_SanskritGrammar_claim-verification-backlog-verify-and-cross-grammar-generalise_12.07.26.md),
 [PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186), релизы
 [buhler-leitfaden-v0.2.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/buhler-leitfaden-v0.2.0)
 и [v0.13.0](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.13.0). Подмножество

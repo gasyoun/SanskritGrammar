@@ -27,8 +27,8 @@ register-sensitive Russian editorial → Fable.
 
 ### W1-A · `sangram-editorial-note-ledger-build`
 
-> **Minted as [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md), re-scoped.**
-> The ledger half was dropped — [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)
+> **Minted as [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md), re-scoped.**
+> The ledger half was dropped — [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md)
 > owns the Sangram article-disposition ledger. H1273 keeps the `review/` tracking + H856 reversal and
 > a deliberately-renamed per-note **index**. See the disposition table in the plan's §4.
 
@@ -121,7 +121,7 @@ guide / method doc rather than applied locally: `[HK-4b]` «Всегда вер�
 
 ### W2-A · `sangram-charter-decalendar-rewrite`
 
-> **NOT minted — deferred, 18-07-2026.** [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md) §5
+> **NOT minted — deferred, 18-07-2026.** [H1260](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1260-Sonnet_SanskritGrammar_sangram-consolidation-policy-ledger_18.07.26.md) §5
 > is concurrently editing the charter to document the consolidation freeze. The de-calendar ruling
 > stands and is re-minted once H1260 lands; two sessions rewriting the same constitution at once is
 > the H214 pattern this org guards against.
@@ -151,7 +151,7 @@ slug; only the internal calendar goes.
 
 ### W3-A · `sangram-rq4-consent-pilot-n5-design`
 
-> **NOT minted — superseded, 18-07-2026.** [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md)
+> **NOT minted — superseded, 18-07-2026.** [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md)
 > records a same-day ruling of **GO now** — activate and recruit under the unchanged approved
 > protocol, "never alter the protocol". A human ruled that H1261 governs, so the n≈5 pilot is not
 > built. This section is retained as the record of a superseded ruling, not as work.
@@ -191,7 +191,7 @@ this is a hard sequencing constraint, not a preference, and W3 does not open unt
 | A61 branch consolidation | Ruling 6 — human-gated; two live Codex worktrees |
 | H1243 Wackernagel + Renou columns | Ruling 7 — blocked on MG supplying both PDFs; a human `@DO` |
 | H1242 Bühler + Zaliznyak v2 grid | Proceeds independently in its own live worktree |
-| Registry reconciliation | Inherited from **H1252** ([Uprava-wide, all 170 rows](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1252-Opus_Uprava_registry-lifecycle-state-reconciliation_18.07.26.md); depends on H1247/H1248/H1251). Not re-minted here, and no wave-1 gate blocks on it |
+| Registry reconciliation | Inherited from **H1252** ([Uprava-wide, all 170 rows](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1252-Opus_Uprava_registry-lifecycle-state-reconciliation_18.07.26.md); depends on H1247/H1248/H1251). Not re-minted here, and no wave-1 gate blocks on it |
 | Precative sheet notes | Already applied on `origin/main` (`3b4f9e4`, [PR #416](https://github.com/gasyoun/SanskritGrammar/pull/416), H1253). 0 open — no handoff owns it |
 
 _Dr. Mārcis Gasūns_

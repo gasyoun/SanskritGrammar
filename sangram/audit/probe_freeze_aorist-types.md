@@ -2,7 +2,7 @@
 
 _Created: 24-07-2026 · Last updated: 24-07-2026_
 
-**Handoff:** [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) (W1-A2).
+**Handoff:** [H1613](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1613-Opus_SanskritGrammar_freeze-probe-mo-wf-stragglers_24.07.26.md) (W1-A2).
 **Executor:** Grok 4.5 (grok-4.5) (user-launched override of intended Opus 4.8).
 **Matrix:** [`sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md).
 
