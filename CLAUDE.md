@@ -86,6 +86,12 @@ Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](htt
 - Whitney chapters under `WhitneyGrammar_1889/` are **generated** from
   [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) by `scripts/build_whitney.py`
   — fix the generator or the source repo, not the output.
+- `tests/test_atlas_build_bundle_e2e.py` (H2271) self-skips unless `../Uprava`
+  is cloned as a sibling with `MEGABOOK.md` + `interlinks_edges.tsv` — a green
+  local run without that checkout proves nothing about the real rebuild path.
+  It caught two real production bugs in `scripts/atlas_build_bundle.py`
+  (`ext:` external-stack drift, markdown-linked §-refs in MEGABOOK.md §9.x)
+  that the pure-helper `tests/test_atlas_build_bundle.py` could not see.
 
 ## Operational hazard notes
 
