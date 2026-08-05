@@ -112,6 +112,22 @@ def build_config(spec):
     return config
 
 
+def build_screening(spec):
+    """H1649 screening block: visa sheets have no upstream screening pass —
+    every item here is already human-required, so it is reported as such
+    (0 deterministic/lookup/agent, 100% human) rather than inventing a step
+    that never ran.
+    """
+    return {
+        "deterministic": 0,
+        "lookup": 0,
+        "agent": 0,
+        "human": len(spec["items"]),
+        "evidence_path": "review/specs/%s.json" % spec["sheet_id"],
+        "rules": [],
+    }
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("spec", help="path to review/specs/<sheet_id>.json")
@@ -121,7 +137,8 @@ def main():
     args = ap.parse_args()
 
     spec = json.loads(Path(args.spec).read_text(encoding="utf-8"))
-    html_doc = render_review_sheet(build_items(spec), build_config(spec))
+    html_doc = render_review_sheet(
+        build_items(spec), build_config(spec), screening=build_screening(spec))
 
     out_dir = Path(args.out_dir) if args.out_dir else ROOT / "review"
     out_dir.mkdir(parents=True, exist_ok=True)
