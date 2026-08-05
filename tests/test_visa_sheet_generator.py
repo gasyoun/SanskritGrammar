@@ -54,7 +54,8 @@ def regenerated(original, tmp_path_factory):
     spec_path = out / "spec.json"
     spec_path.write_text(json.dumps(original, ensure_ascii=False, indent=2), encoding="utf-8")
     html_doc = build_visa_sheet.render_review_sheet(
-        build_visa_sheet.build_items(original), build_visa_sheet.build_config(original))
+        build_visa_sheet.build_items(original), build_visa_sheet.build_config(original),
+        screening=build_visa_sheet.build_screening(original))
     return extract_spec(html_doc), html_doc
 
 
