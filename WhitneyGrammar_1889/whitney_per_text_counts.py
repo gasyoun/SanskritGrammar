@@ -44,8 +44,13 @@ WHITNEY_TEXTS = ["Mahābhārata", "Hitopadeśa", "Manusmṛti", "Rāmāyaṇa"]
 
 
 def aorist_form_set():
+    # NB: 15.csv is HEADERLESS — its first line (`21865,158442,'likhyante',24,9,`) is a
+    # real finite-form row. An earlier `[1:]` here skipped it, copying the header slice
+    # that is correct for the *sibling* table timws.csv (which does have one). Harmless
+    # in this instance only because that row's tense_code 24 is not an aorist; the sibling
+    # verify_claims_dcs.py readers of 15.csv correctly take every line. See VisualDCS #70.
     forms = set()
-    for ln in FORMS_CSV.read_text(encoding="utf-8").splitlines()[1:]:
+    for ln in FORMS_CSV.read_text(encoding="utf-8").splitlines():
         p = ln.split(",")
         if len(p) < 4:
             continue
