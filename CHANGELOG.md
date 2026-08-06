@@ -19,6 +19,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.121.1] - 2026-08-06
 ### Added
 
 - **H2276 Grok dual-run compare of H2271 atlas_build_bundle e2e (Grok 4.5 `grok-4.5`)** — compare memo
