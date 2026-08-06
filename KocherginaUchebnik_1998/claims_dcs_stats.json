@@ -13,9 +13,9 @@
     "tokens": 23942,
     "pct_of_verbal": 3.06,
     "suffix_split_types": {
+      "-ya": 1046,
       "-tavya": 523,
-      "-anīya": 230,
-      "-ya": 1046
+      "-anīya": 230
     },
     "cf_ppp_tokens": 233080,
     "cf_ppp_pct": 29.82,
@@ -107,9 +107,10 @@
   },
   "HK15_past_tenses": {
     "imperfect_tokens": 47554,
+    "imperfect_active_tokens": 40363,
     "perfect_tokens": 61986,
     "aorist_tokens": 2452,
-    "note": "imperfect = active+medium+augmentless+passive imperfect codes; perfect = code 15; aorist = 10-13"
+    "note": "imperfect = active+medium+augmentless+passive imperfect codes; imperfect_active = codes 4+8 only; perfect = code 15; aorist = 10-13"
   },
   "case_distribution": {
     "Nom": {
@@ -195,14 +196,14 @@
     "distinct_forms": 3415,
     "tokens": 81508,
     "suffix_split_types": {
-      "-tvā": 668,
       "-ya": 2679,
+      "-tvā": 668,
       "other": 54,
       "-am": 14
     },
     "suffix_split_pct": {
-      "-tvā": 19.6,
       "-ya": 78.4,
+      "-tvā": 19.6,
       "other": 1.6,
       "-am": 0.4
     }

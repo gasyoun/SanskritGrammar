@@ -65,14 +65,24 @@ Three layers in one repo (full orientation:
 
 **CI enforcement (H1840):** `.github/workflows/ci.yml` job `validators` is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
 
-1. `python scripts/check_claims_consistency.py`
-2. `python scripts/claims_schema_validate.py --all` (H1842)
-3. `python scripts/check_denominator_commensurability.py`
-4. `python scripts/toc_validate.py`
-5. `python scripts/article_validate.py --all`
-6. `python scripts/consolidation_ledger_refresh.py --check`
+1. `python scripts/refresh_published_figures.py --check` (H2298 — shape guard on the vendored cross-repo asset)
+2. `python scripts/check_claims_consistency.py`
+3. `python scripts/claims_schema_validate.py --all` (H1842)
+4. `python scripts/check_denominator_commensurability.py`
+5. `python scripts/toc_validate.py`
+6. `python scripts/article_validate.py --all`
+7. `python scripts/consolidation_ledger_refresh.py --check`
 
-If `--check` fails with "stale", refresh and commit: `python scripts/consolidation_ledger_refresh.py` (no `--check`). A planted stale aorist figure in any `*/claims.yml` is caught by step 1 (see `tests/test_claims_consistency.py::test_scan_flags_a_planted_stale`).
+If `--check` fails with "stale", refresh and commit: `python scripts/consolidation_ledger_refresh.py` (no `--check`). A planted stale aorist figure in any `*/claims.yml` is caught by step 2 (see `tests/test_claims_consistency.py::test_scan_flags_a_planted_stale`).
+
+**⚠️ We consume a VisualDCS asset (H2298).** `check_claims_consistency.py` check 3 compares our DCS-2021 figures against
+[`data/dcs_published_figures.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/dcs_published_figures.json),
+a vendored copy of what [VisualDCS publishes](https://github.com/gasyoun/VisualDCS/blob/main/dcs_published_figures.json)
+(CI checks out one repo, so a sibling-clone read is impossible). Refresh with `python scripts/refresh_published_figures.py`
+after upstream regenerates via `regen_widgets.py --figures-only`. **Before adding a pair, read
+[docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md)** —
+our `imperfect_tokens` (47,554, five codes) is **not** the pair for a published `Imperfect Active`
+(40,363, codes 4+8); `imperfect_active_tokens` is. An `incommensurable` report means re-adjudicate the pair, never edit a number to match.
 
 Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](https://github.com/gasyoun/SanskritGrammar/tree/main/docs/runbooks).
 

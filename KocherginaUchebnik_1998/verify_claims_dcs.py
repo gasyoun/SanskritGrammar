@@ -275,9 +275,18 @@ def analyze():
         # HK-15 / backlog: past-tense category competition (imperfect vs perfect vs aorist)
         "HK15_past_tenses": {
             "imperfect_tokens": TOK[4] + TOK[8] + TOK[9] + TOK[16] + TOK[27],
+            # The ACTIVE-only imperfect, kept separate (H2298). timws.csv spells `Imperfect
+            # Active` over TWO codes (4 = 35,921 and 8 = 4,442); a name-keyed reader that
+            # let code 8 overwrite code 4 is how VisualDCS published 4,442 for months
+            # instead of 40,363 (H1486). `imperfect_tokens` above is a DIFFERENT quantity —
+            # it adds medium, augmentless and passive — so it is NOT the figure to compare
+            # against a published `Imperfect Active`. Both are correct; only one is
+            # commensurable with the cross-repo contract asset.
+            "imperfect_active_tokens": TOK[4] + TOK[8],
             "perfect_tokens": TOK[15],
             "aorist_tokens": sum(TOK[c] for c in (10, 11, 12, 13)),
-            "note": "imperfect = active+medium+augmentless+passive imperfect codes; perfect = code 15; aorist = 10-13",
+            "note": "imperfect = active+medium+augmentless+passive imperfect codes; "
+                    "imperfect_active = codes 4+8 only; perfect = code 15; aorist = 10-13",
         },
         # backlog (visarga/anusvāra 'mainly in this case-form'): case-slot token distribution
         "case_distribution": {

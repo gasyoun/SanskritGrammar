@@ -19,6 +19,43 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **`check_claims_consistency.py` gains check 3 — CROSS-REPO CONSISTENCY (H2298).** The gate's
+  blind spot was reach, not logic: check 2 already asserts "a figure reused across registers
+  must be cited with ONE value everywhere", but it reads only this repo's `*/claims.yml`. So
+  when `verify_claims_dcs.py` derived DCS-2021 Imperfect Active from `timws.csv` codes 4+8
+  while VisualDCS published 4,442 (code 8 alone, a name-keyed last-wins read — H1486), nothing
+  compared them. Check 3 compares our committed
+  [`claims_dcs_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims_dcs_stats.json)
+  against VisualDCS's published contract asset, vendored at
+  [`data/dcs_published_figures.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/dcs_published_figures.json).
+  Five seeded pairs; part of the blocking `validators` CI job via step 1.
+  - **Both sides derive independently** — ours from `timws.csv` via our own script, theirs from
+    the same file via `regen_widgets.py`. This is a comparison of two derivations, not a pin of
+    a copy against a copy.
+  - A changed code set is reported as **`incommensurable`**, never as `drift` — "drift" invites
+    editing a number until it matches, the wrong fix when two sides stopped measuring the same
+    thing.
+- `scripts/refresh_published_figures.py` — the re-vendoring step (no network, no sibling clone
+  needed in CI); `--check` runs as a CI shape guard.
+- [`docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md)
+  — the adjudication record: 5 accepted pairs and, more importantly, 4 rejected ones with
+  reasons.
+
+### Changed
+- **`verify_claims_dcs.py` now derives `imperfect_active_tokens` (codes 4+8 = 40,363)** beside
+  the existing `imperfect_tokens` (codes 4+8+9+16+27 = **47,554**, adding medium, augmentless
+  and passive). H2298 assumed the two-code figure already existed here; it did not. Both are
+  correct, they are **not** the same quantity, and pairing 47,554 against a published
+  `Imperfect Active` would have produced a permanent 7,191-token false alarm — the fastest way
+  to get a blocking gate switched off.
+
+### Fixed
+- Seven new tests in `tests/test_claims_consistency.py`, including the **retrodiction**: with
+  the pre-H1486 figure 4,442 planted in the real vendored asset the gate exits 1 (reported
+  delta −35,921 = exactly the count of the code the name-keyed read dropped), and every seeded
+  pair is proven load-bearing by a planted divergence of its own.
+
 ## [0.118.2] - 2026-08-04
 ### Added
 
