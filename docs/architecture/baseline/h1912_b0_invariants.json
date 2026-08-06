@@ -1,0 +1,207 @@
+{
+  "handoff": "H1912",
+  "slice": "B0",
+  "work": "KnauerFrazy_1908",
+  "frozen_at_commit": "acc37412c16d3500425726af67b03d5f0862c113",
+  "files": [
+    {
+      "path": "KnauerFrazy_1908/CHANGELOG.md",
+      "role": "provenance",
+      "bytes": 4067,
+      "sha256": "bbbdc7bfe91f8e725bd52b61dbeed2cd6a71bba271b4d5036bbad4222b54ec10",
+      "sha256_lf_normalized": "bbbdc7bfe91f8e725bd52b61dbeed2cd6a71bba271b4d5036bbad4222b54ec10"
+    },
+    {
+      "path": "KnauerFrazy_1908/ERRATA.mdx",
+      "role": "generated-errata",
+      "bytes": 7109,
+      "sha256": "af3c58f61ff82503a7eb0873de1197cd550593b8cda8522fe45e19ccfe0b28cf",
+      "sha256_lf_normalized": "af3c58f61ff82503a7eb0873de1197cd550593b8cda8522fe45e19ccfe0b28cf"
+    },
+    {
+      "path": "KnauerFrazy_1908/ERRATA_PRINT_SHEET.html",
+      "role": "generated-print-sheet",
+      "bytes": 4717,
+      "sha256": "ec6e091c9156d42cb47301d4dea9876913246684fbdbfb00f262ac20305c9bf7",
+      "sha256_lf_normalized": "b87d1f060c1b83cb3b599c96af8f1dc7f31ccf1a6f185a1ce1c87442c5747ed5"
+    },
+    {
+      "path": "KnauerFrazy_1908/Frazy-Knauer-03.05.2023.doc",
+      "role": "source-legacy",
+      "bytes": 182272,
+      "sha256": "d76c4df99bd9913188be223fcd9159ebe6b346fbd726ff4914f8704463b6336b"
+    },
+    {
+      "path": "KnauerFrazy_1908/Frazy-Knauer-03.05.2023.docx",
+      "role": "source-authoritative",
+      "bytes": 38572,
+      "sha256": "31287a387cf094485ef8ffc92f6fe0f7c5f4147d5c0954a53418b5ffd3553430"
+    },
+    {
+      "path": "KnauerFrazy_1908/Frazy-Knauer-03.05.2023.mdx",
+      "role": "generated-mdx",
+      "bytes": 45346,
+      "sha256": "d03e9b910105a4a111d57edbba47aa5bb5318642b80b3dec58e9a11cf6dbd13f",
+      "sha256_lf_normalized": "d03e9b910105a4a111d57edbba47aa5bb5318642b80b3dec58e9a11cf6dbd13f"
+    },
+    {
+      "path": "KnauerFrazy_1908/PARSE_AUDIT.md",
+      "role": "generated-parse-audit",
+      "bytes": 127610,
+      "sha256": "99712f84f14402e92c84f3cec3fc3e65054d7f19e39b5e5c0a631d90185b412f",
+      "sha256_lf_normalized": "99712f84f14402e92c84f3cec3fc3e65054d7f19e39b5e5c0a631d90185b412f"
+    },
+    {
+      "path": "KnauerFrazy_1908/README.md",
+      "role": "doc",
+      "bytes": 10894,
+      "sha256": "fb67f3ffe8aa09fb7fdab1adbd49848555ee2424d8351b7c79a9afa59bd38376",
+      "sha256_lf_normalized": "fb67f3ffe8aa09fb7fdab1adbd49848555ee2424d8351b7c79a9afa59bd38376"
+    },
+    {
+      "path": "KnauerFrazy_1908/build_parse_audit.py",
+      "role": "generator-script",
+      "bytes": 3236,
+      "sha256": "a9b940cea128dd2c2dac24ed6b06d3f9090f96e6043474900adc221ac7894bf4"
+    },
+    {
+      "path": "KnauerFrazy_1908/errata.yml",
+      "role": "hand-edited-source",
+      "bytes": 7059,
+      "sha256": "ed50983a769b95b5313f29da35ff6e091534e1ef646862cec945adecd0588adc",
+      "sha256_lf_normalized": "bb58ddee152db8149198d94c8f8e5474be5c20b65a1e068ebcef9d4967128e19"
+    },
+    {
+      "path": "KnauerFrazy_1908/parse_audit.yml",
+      "role": "hand-edited-source",
+      "bytes": 193891,
+      "sha256": "8a6f5bfe417885821c1e819dd0cc061fdef7e1411d576d6b66566de274e10bfd",
+      "sha256_lf_normalized": "a1a51937483b807848d0f42ff752a7f48c2f41b70126806d63a265c640865cec"
+    }
+  ],
+  "media_inventory": [],
+  "site": {
+    "base_url": "/SanskritGrammar/",
+    "routes": [
+      "/SanskritGrammar/KnauerFrazy_1908/Frazy-Knauer-03.05.2023",
+      "/SanskritGrammar/KnauerFrazy_1908/ERRATA"
+    ],
+    "anchors": {
+      "Frazy-Knauer-03.05.2023.mdx": [
+        {
+          "level": 1,
+          "text": "Nr. 1 (§§ 45---47)"
+        },
+        {
+          "level": 1,
+          "text": "Nr. 2 (§§ 48---51)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 3 (§§ 52---56)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 4 (§§ 57---61)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 5 (§§ 62---68)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 6 (§§ 69---73)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 7 (§§ 74---79)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 8 (§§ 85---98)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 9 (§§ 99---109)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 10 (§§ 119---126)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 11 (§§ 127---143)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 12 (§§ 144---151)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 13 (§§ 152---154)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 14 (§§ 155---164)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 15 (§§ 165---178)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 16 (§§ 179---182)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 17 (§§ 183---195)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 18 (§§ 200---202)."
+        },
+        {
+          "level": 1,
+          "text": "Nr. 19 (§§ 203---205)."
+        }
+      ],
+      "ERRATA.mdx": [
+        {
+          "level": 1,
+          "text": "Errata — Knauer, Sanskrit phrase collection (Frazy-Knauer, reprint reference 1908)"
+        }
+      ]
+    }
+  },
+  "errata": {
+    "source": "KnauerFrazy_1908/errata.yml",
+    "raw_yml_rows": 30,
+    "generated_merged_entries": 25
+  },
+  "parse_audit": {
+    "source": "KnauerFrazy_1908/parse_audit.yml",
+    "ids": 214,
+    "first_id": "KN-1",
+    "last_id": "KN-214",
+    "verdicts": {
+      "CONFIRMED": 210,
+      "QUESTIONABLE": 4
+    }
+  },
+  "release_provenance": {
+    "book_version": "0.3.0",
+    "repo_version": "0.119.0"
+  },
+  "consumers": {
+    "code_level": [
+      "scripts/build_errata.py",
+      "scripts/build_errata_print_sheet.py",
+      "scripts/build_subject_concordance.py",
+      "scripts/extract_sentences.py",
+      "scripts/mdx_postprocess.py",
+      "scripts/render_catalog_mdx.py",
+      "src/pages/index.js"
+    ],
+    "repo_files_referencing_knauer_outside_context": 109
+  }
+}
