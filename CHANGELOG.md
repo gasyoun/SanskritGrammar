@@ -19,6 +19,17 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+
+- **H2276 Grok dual-run compare of H2271 atlas_build_bundle e2e (Grok 4.5 `grok-4.5`)** — compare memo
+  [`docs/ATLAS_BUILD_BUNDLE_H2276_GROK_DUAL_RUN_COMPARE_2026-08.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ATLAS_BUILD_BUNDLE_H2276_GROK_DUAL_RUN_COMPARE_2026-08.md):
+  independent live rebuild VALID (149 nodes / 285 edges / leakage=0); PR #585 classified
+  **identical/equivalent** on scope + e2e shape + both drift fixes; **net-new** three pure-helper
+  unit tests in
+  [`tests/test_atlas_build_bundle.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_atlas_build_bundle.py)
+  so `parse_anchors` markdown-§ links and `ext:sanskrit-lexicon-scans` stay pinned in CI without
+  the private Uprava hub (the only path #585 guarded them).
+
 ## [0.121.0] - 2026-08-06
 
 ### Added
