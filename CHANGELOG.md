@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.119.0] - 2026-08-06
+
 ### Added
 - **`check_claims_consistency.py` gains check 3 — CROSS-REPO CONSISTENCY (H2298).** The gate's
   blind spot was reach, not logic: check 2 already asserts "a figure reused across registers
