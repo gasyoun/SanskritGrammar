@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.120.0] - 2026-08-06
+
 ### Added
 - **H1912 Slice B0 — KnauerFrazy_1908 pre-cutover invariants frozen.**
   [`docs/architecture/baseline/H1912_B0_INVARIANTS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/baseline/H1912_B0_INVARIANTS.md)
