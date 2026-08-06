@@ -10,8 +10,9 @@ const require = createRequire(import.meta.url);
 const lunr = require('lunr');
 require('lunr-languages/lunr.stemmer.support')(lunr);
 require('lunr-languages/lunr.ru')(lunr);
+require('lunr-languages/lunr.sa')(lunr); // H2300: adds Devanagari to the trimmer's wordCharacters
 require('lunr-languages/lunr.multi')(lunr);
-const plugin = lunr.multiLanguage('ru', 'en');
+const plugin = lunr.multiLanguage('ru', 'en', 'sa');
 
 const idxPath = path.join(process.cwd(), 'build', 'search-index.json');
 const raw = JSON.parse(fs.readFileSync(idxPath, 'utf8'));
@@ -21,7 +22,9 @@ const shards = raw.map(({ documents, index }) => ({
 }));
 
 function tokenize(text) {
-  // client/utils/tokenize.js: language=['ru','en'] -> regExpMatchWords = /[^-\s]+/g
+  // client/utils/tokenize.js: 'sa' isn't in the {ja,jp,th,zh} special-cased
+  // set, so language=['ru','en','sa'] still falls through to the same
+  // regExpMatchWords = /[^-\s]+/g as the pre-H2300 ['ru','en'] config.
   return text.toLowerCase().match(/[^-\s]+/g) || [];
 }
 

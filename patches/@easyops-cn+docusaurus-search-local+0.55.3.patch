@@ -1,0 +1,17 @@
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js
+index 996d7f3..ed1f5b5 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js
+@@ -1 +1 @@
+-export const LANGUAGES_NEED_WORDCUT = ["th", "hi", "te", "ta", "kn", "sa"];
++export const LANGUAGES_NEED_WORDCUT = ["th", "hi", "te", "ta", "kn"];
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/server/shared/constants.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/server/shared/constants.js
+index 897d206..eb62995 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/server/shared/constants.js
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/server/shared/constants.js
+@@ -1,4 +1,4 @@
+ "use strict";
+ Object.defineProperty(exports, "__esModule", { value: true });
+ exports.LANGUAGES_NEED_WORDCUT = void 0;
+-exports.LANGUAGES_NEED_WORDCUT = ["th", "hi", "te", "ta", "kn", "sa"];
++exports.LANGUAGES_NEED_WORDCUT = ["th", "hi", "te", "ta", "kn"];

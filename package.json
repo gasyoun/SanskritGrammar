@@ -4,6 +4,7 @@
   "private": true,
   "description": "Docusaurus book site for the digitized Sanskrit grammar sources (Apte, Bühler, Kochergina, Zalizniak, Knauer).",
   "scripts": {
+    "postinstall": "patch-package",
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",
     "errata:print": "python scripts/build_errata_print_sheet.py",
@@ -32,7 +33,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",
-    "@docusaurus/types": "3.10.2"
+    "@docusaurus/types": "3.10.2",
+    "patch-package": "^8.0.1"
   },
   "overrides": {
     "webpack": "5.97.1"

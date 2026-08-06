@@ -19,6 +19,27 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+- **H2300 — Devanāgarī offline-search indexing fixed (was 0/5 in H2272).**
+  `@easyops-cn/docusaurus-search-local`'s `language: ['ru','en']` combined
+  trimmer excluded the Devanāgarī range entirely, stripping every
+  Devanāgarī token to `""` before indexing. Added `'sa'` to the plugin's
+  `language` list for its `wordCharacters` range, patched via `patch-package`
+  (`patches/`) so `lunr-languages`' `lunr.sa` no longer hard-depends on the
+  `wordcut` segmenter (its browserify UMD bundle has a dynamic `require()`
+  that fatally breaks webpack) — this corpus is already whitespace-segmented,
+  so the plugin's own default tokenizer is sufficient once the trimmer keeps
+  Devanāgarī tokens intact. Also fixed a pre-existing `lunr-languages` bug
+  found in the process: `lunr.sa.js`'s `ᆰ0-ᆰ9` (meant as an
+  astral-plane Vedic Extensions range) is unreachable in a plain 4-hex-digit
+  `\uXXXX` escape and silently parsed as a bogus `0x30-0x11B0` character-class
+  range, which made the trimmer stop stripping ASCII punctuation (`{`, `}`, …)
+  for every language the moment `'sa'` was loaded — regressing 1 of the 5
+  already-passing IAST terms until removed. `npm run build` (normal minified
+  mode) succeeds; Devanāgarī 5/5, Cyrillic 5/5, IAST 5/5 on H2272's own probe
+  script and 15 terms — see
+  [verdict_validation/H2272_TOKENIZATION_VERIFICATION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/H2272_TOKENIZATION_VERIFICATION_2026.md).
+
 ## [0.121.1] - 2026-08-06
 ### Added
 

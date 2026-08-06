@@ -1,0 +1,152 @@
+[
+  {
+    "script": "cyrillic",
+    "term": "падеж",
+    "book": "ApteSyntax_1885",
+    "expectedUrlFragment": "ApteSyntax_1885",
+    "topHitUrl": "/SanskritGrammar/grammars/sangram/articles/declension-overview",
+    "expectedFound": true,
+    "expectedRank": 8,
+    "totalHits": 42
+  },
+  {
+    "script": "cyrillic",
+    "term": "глаголов",
+    "book": "BuhlerLeitfaden_1923",
+    "expectedUrlFragment": "BuhlerLeitfaden_1923",
+    "topHitUrl": "/SanskritGrammar/grammars/TolchelnikovTalmud_2026/Talmud-2.1.6",
+    "expectedFound": true,
+    "expectedRank": 8,
+    "totalHits": 49
+  },
+  {
+    "script": "cyrillic",
+    "term": "санскрите",
+    "book": "ZalizniakOcherk_1978",
+    "expectedUrlFragment": "ZalizniakOcherk_1978",
+    "topHitUrl": "/SanskritGrammar/grammars/GasunsDhatu_2014/gasuns-dhatu-PhD-text2",
+    "expectedFound": true,
+    "expectedRank": 4,
+    "totalHits": 36
+  },
+  {
+    "script": "cyrillic",
+    "term": "корень",
+    "book": "GasunsDhatu_2014",
+    "expectedUrlFragment": "GasunsDhatu_2014",
+    "topHitUrl": "/SanskritGrammar/grammars/sangram/articles/word-structure-overview",
+    "expectedFound": true,
+    "expectedRank": 2,
+    "totalHits": 57
+  },
+  {
+    "script": "cyrillic",
+    "term": "значение",
+    "book": "KocherginaUchebnik_1998",
+    "expectedUrlFragment": "KocherginaUchebnik_1998",
+    "topHitUrl": "/SanskritGrammar/grammars/TolchelnikovTalmud_2026/papers/Plungyan_2025/",
+    "expectedFound": true,
+    "expectedRank": 32,
+    "totalHits": 47
+  },
+  {
+    "script": "iast",
+    "term": "guṇa",
+    "book": "ApteSyntax_1885",
+    "expectedUrlFragment": "ApteSyntax_1885",
+    "topHitUrl": "/SanskritGrammar/grammars/sangram/toc/formal-morphology",
+    "expectedFound": true,
+    "expectedRank": 35,
+    "totalHits": 44
+  },
+  {
+    "script": "iast",
+    "term": "vṛddhi",
+    "book": "BuhlerLeitfaden_1923",
+    "expectedUrlFragment": "BuhlerLeitfaden_1923",
+    "topHitUrl": "/SanskritGrammar/grammars/TolchelnikovTalmud_2026/Talmud-2.1.6",
+    "expectedFound": true,
+    "expectedRank": 7,
+    "totalHits": 33
+  },
+  {
+    "script": "iast",
+    "term": "dhātu",
+    "book": "WhitneyGrammar_1889",
+    "expectedUrlFragment": "WhitneyGrammar_1889",
+    "topHitUrl": "/SanskritGrammar/grammars/GasunsDhatu_2014/gasuns-dhatu-PhD-text2",
+    "expectedFound": true,
+    "expectedRank": 15,
+    "totalHits": 16
+  },
+  {
+    "script": "iast",
+    "term": "Pāṇini",
+    "book": "GasunsDhatu_2014",
+    "expectedUrlFragment": "GasunsDhatu_2014",
+    "topHitUrl": "/SanskritGrammar/grammars/sangram/atlas/provenance",
+    "expectedFound": true,
+    "expectedRank": 10,
+    "totalHits": 15
+  },
+  {
+    "script": "iast",
+    "term": "saṃdhi",
+    "book": "KocherginaUchebnik_1998",
+    "expectedUrlFragment": "KocherginaUchebnik_1998",
+    "topHitUrl": "/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode",
+    "expectedFound": true,
+    "expectedRank": 1,
+    "totalHits": 6
+  },
+  {
+    "script": "devanagari",
+    "term": "किं",
+    "book": "ApteSyntax_1885",
+    "expectedUrlFragment": "ApteSyntax_1885",
+    "topHitUrl": "/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode",
+    "expectedFound": true,
+    "expectedRank": 1,
+    "totalHits": 5
+  },
+  {
+    "script": "devanagari",
+    "term": "इति",
+    "book": "BuhlerLeitfaden_1923",
+    "expectedUrlFragment": "BuhlerLeitfaden_1923",
+    "topHitUrl": "/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode",
+    "expectedFound": true,
+    "expectedRank": 4,
+    "totalHits": 5
+  },
+  {
+    "script": "devanagari",
+    "term": "तस्य",
+    "book": "WhitneyGrammar_1889",
+    "expectedUrlFragment": "WhitneyGrammar_1889",
+    "topHitUrl": "/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode",
+    "expectedFound": true,
+    "expectedRank": 3,
+    "totalHits": 4
+  },
+  {
+    "script": "devanagari",
+    "term": "राजा",
+    "book": "KnauerFrazy_1908",
+    "expectedUrlFragment": "KnauerFrazy_1908",
+    "topHitUrl": "/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023",
+    "expectedFound": true,
+    "expectedRank": 1,
+    "totalHits": 8
+  },
+  {
+    "script": "devanagari",
+    "term": "तथा",
+    "book": "KocherginaUchebnik_1998",
+    "expectedUrlFragment": "KocherginaUchebnik_1998",
+    "topHitUrl": "/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode",
+    "expectedFound": true,
+    "expectedRank": 2,
+    "totalHits": 2
+  }
+]
