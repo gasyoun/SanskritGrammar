@@ -1,0 +1,389 @@
+{
+  "handoff": "H1913",
+  "slice": "C0",
+  "article": "sangram/articles/future",
+  "frozen_at_commit": "d00f9dca69cef8adbf71ab3756172c19c3c7abf4",
+  "files": [
+    {
+      "path": "sangram/articles/future/article.manifest.json",
+      "role": "hand-edited-manifest",
+      "bytes": 12526,
+      "sha256": "fc6cbe4e6d3059747dd1d90295c5d639b7a5375f94a07f664c745dcf9d8d1eea",
+      "sha256_lf_normalized": "fc6cbe4e6d3059747dd1d90295c5d639b7a5375f94a07f664c745dcf9d8d1eea"
+    },
+    {
+      "path": "sangram/articles/future/data/coverage_summary.json",
+      "role": "generated-dataset",
+      "bytes": 4934,
+      "sha256": "76c33b4dd98ffe2c1cc26b99898cf3cd669cfef162e6ef4162e01cbc250e58c2",
+      "sha256_lf_normalized": "76c33b4dd98ffe2c1cc26b99898cf3cd669cfef162e6ef4162e01cbc250e58c2"
+    },
+    {
+      "path": "sangram/articles/future/data/validation_sample.tsv",
+      "role": "generated-dataset",
+      "bytes": 4214,
+      "sha256": "b8398031539cd92b7e98d39e5ae8e7b915e2aff385d774d6279195f86fdbc454",
+      "sha256_lf_normalized": "b8398031539cd92b7e98d39e5ae8e7b915e2aff385d774d6279195f86fdbc454"
+    },
+    {
+      "path": "sangram/articles/future/index.mdx",
+      "role": "authored-article",
+      "bytes": 16964,
+      "sha256": "a381d02affb2bd02dc605e0c279b6315b3f800f6ca6c998b704fc5eb1f5877db",
+      "sha256_lf_normalized": "a381d02affb2bd02dc605e0c279b6315b3f800f6ca6c998b704fc5eb1f5877db"
+    },
+    {
+      "path": "scripts/sg_mo_021_future.py",
+      "role": "generator-script",
+      "bytes": 9357,
+      "sha256": "d7bba082054905f795078e2732a6ac80b198ccb0319f9bd6089cc83dc1dabb55",
+      "sha256_lf_normalized": "d7bba082054905f795078e2732a6ac80b198ccb0319f9bd6089cc83dc1dabb55"
+    }
+  ],
+  "stable_ids": {
+    "article_id": "art:future",
+    "toc_ref": "SG-MO-021",
+    "contract_version": "1.0.0",
+    "canonical_script": "slp1",
+    "as_of": "2026-07-17",
+    "example_ids": [
+      "ex:future:1",
+      "ex:future:2",
+      "ex:future:3",
+      "ex:future:4",
+      "ex:future:5",
+      "ex:future:6",
+      "ex:future:7",
+      "ex:future:8",
+      "ex:future:9",
+      "ex:future:10",
+      "ex:future:11",
+      "ex:future:12",
+      "ex:future:13",
+      "ex:future:14"
+    ],
+    "revisions": 2
+  },
+  "published_numbers": {
+    "study": "SG-MO-021 «Будущее время и кондиционал» — future + conditional (core W2 ①, content)",
+    "toc_ref": "SG-MO-021",
+    "kind": "content article (no kill-gate) — closes the finite tense system",
+    "method": "finite verbs with Tense=Fut — natively tagged (like the imperfect); simple vs periphrastic separated by feat_formation='peri'; conditional by feat_mood='Cond'; future participle (VerbForm=Part & Tense=Fut) counted separately",
+    "snapshot": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+      "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+    },
+    "denominators": {
+      "finite_total": 523721,
+      "finite_future": 21556,
+      "finite_future_share": 0.0412,
+      "simple_future": 20216,
+      "periphrastic_future": 1340,
+      "periphrastic_share_of_future": 0.0622,
+      "conditional": 340,
+      "future_participle": 1575
+    },
+    "future_share_ci95": {
+      "k": 21556,
+      "n": 523721,
+      "ci95": [
+        0.0406,
+        0.0417
+      ]
+    },
+    "periphrastic_share_ci95": {
+      "k": 1340,
+      "n": 21556,
+      "ci95": [
+        0.059,
+        0.0655
+      ]
+    },
+    "person": {
+      "3": {
+        "tokens": 11127,
+        "share": 0.5162
+      },
+      "1": {
+        "tokens": 7851,
+        "share": 0.3642
+      },
+      "2": {
+        "tokens": 2578,
+        "share": 0.1196
+      }
+    },
+    "number": {
+      "Sing": {
+        "tokens": 16256,
+        "share": 0.7541
+      },
+      "Plur": {
+        "tokens": 4997,
+        "share": 0.2318
+      },
+      "Dual": {
+        "tokens": 303,
+        "share": 0.0141
+      }
+    },
+    "mood": {
+      "Ind": {
+        "tokens": 21184,
+        "share": 0.9827
+      },
+      "Cond": {
+        "tokens": 340,
+        "share": 0.0158
+      },
+      "Pot": {
+        "tokens": 32,
+        "share": 0.0015
+      }
+    },
+    "first_person_share_ci95": {
+      "k": 7851,
+      "n": 21556,
+      "ci95": [
+        0.3578,
+        0.3707
+      ]
+    },
+    "third_person_share_ci95": {
+      "k": 11127,
+      "n": 21556,
+      "ci95": [
+        0.5095,
+        0.5229
+      ]
+    },
+    "top_forms": [
+      {
+        "form": "bhaviṣyati",
+        "lemma": "bhū",
+        "tokens": 2013
+      },
+      {
+        "form": "vakṣyāmi",
+        "lemma": "vac",
+        "tokens": 579
+      },
+      {
+        "form": "pravakṣyāmi",
+        "lemma": "pravac",
+        "tokens": 532
+      },
+      {
+        "form": "bhaviṣyanti",
+        "lemma": "bhū",
+        "tokens": 508
+      },
+      {
+        "form": "vyākhyāsyāmaḥ",
+        "lemma": "vyākhyā",
+        "tokens": 500
+      },
+      {
+        "form": "kariṣyāmi",
+        "lemma": "kṛ",
+        "tokens": 351
+      },
+      {
+        "form": "kariṣyati",
+        "lemma": "kṛ",
+        "tokens": 344
+      },
+      {
+        "form": "bhavitā",
+        "lemma": "bhū",
+        "tokens": 336
+      },
+      {
+        "form": "bhaviṣyasi",
+        "lemma": "bhū",
+        "tokens": 318
+      },
+      {
+        "form": "vakṣye",
+        "lemma": "vac",
+        "tokens": 239
+      },
+      {
+        "form": "gamiṣyāmi",
+        "lemma": "gam",
+        "tokens": 229
+      },
+      {
+        "form": "vakṣyati",
+        "lemma": "vac",
+        "tokens": 187
+      },
+      {
+        "form": "bhaviṣyāmi",
+        "lemma": "bhū",
+        "tokens": 186
+      },
+      {
+        "form": "vakṣyāmaḥ",
+        "lemma": "vac",
+        "tokens": 184
+      },
+      {
+        "form": "dāsyāmi",
+        "lemma": "dā",
+        "tokens": 148
+      }
+    ],
+    "top_periphrastic": [
+      {
+        "form": "bhavitā",
+        "lemma": "bhū",
+        "tokens": 332
+      },
+      {
+        "form": "kartā",
+        "lemma": "kṛ",
+        "tokens": 55
+      },
+      {
+        "form": "gantā",
+        "lemma": "gam",
+        "tokens": 50
+      },
+      {
+        "form": "hantā",
+        "lemma": "han",
+        "tokens": 50
+      },
+      {
+        "form": "kartāsmi",
+        "lemma": "kṛ",
+        "tokens": 48
+      },
+      {
+        "form": "draṣṭāsi",
+        "lemma": "dṛś",
+        "tokens": 35
+      },
+      {
+        "form": "gantāsi",
+        "lemma": "gam",
+        "tokens": 29
+      },
+      {
+        "form": "draṣṭā",
+        "lemma": "dṛś",
+        "tokens": 28
+      }
+    ],
+    "validation_sample": {
+      "seed": 20260717,
+      "size": 50,
+      "file": "validation_sample.tsv"
+    },
+    "limits": {
+      "conditional_rare": "the conditional (feat_mood=Cond) is very rare (340); it is the counterfactual 'would have', not a plain future",
+      "periphrastic_via_formation": "simple vs periphrastic rests on feat_formation='peri'; the periphrastic future (-tṛ + as) shares the -tṛ agent-noun shape with the periphrastic PERFECT — DCS separates them by Tense (Fut vs Past), the tag we trust",
+      "future_participle_separate": "the future participle (VerbForm=Part & Tense=Fut) is counted apart from the finite future",
+      "pin": "orphaned 04e0778, bound by provenance table + SHA-256 + tag"
+    }
+  },
+  "sampling": {
+    "seed": 20260717,
+    "sample_size": 50,
+    "universe_finite_predicate": "upos='VERB' AND (feat_verbform='Fin' OR feat_verbform IS NULL)  AND feat_person IS NOT NULL",
+    "future_restriction": "feat_tense='Fut'",
+    "validation_sample_rows": 50
+  },
+  "source_db": {
+    "default_path_expr": "GITHUB / \"VisualDCS\" / \"src\" / \"DCS-data-2026\" / \"dcs_full.sqlite\"",
+    "snapshot": {
+      "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+      "imported_at": "2026-06-06T16:22:57+00:00",
+      "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+      "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+    }
+  },
+  "site": {
+    "base_url": "/SanskritGrammar/",
+    "routes": [
+      "/SanskritGrammar/sangram/articles/future/"
+    ],
+    "anchors": {
+      "index.mdx": [
+        {
+          "level": 1,
+          "text": "Будущее время и кондиционал"
+        },
+        {
+          "level": 2,
+          "text": "1. Будущее: замыкание системы времён"
+        },
+        {
+          "level": 2,
+          "text": "2. Данные и воспроизводимость"
+        },
+        {
+          "level": 2,
+          "text": "3. Аттестация — время намерения"
+        },
+        {
+          "level": 2,
+          "text": "4. Образование (традиционно + порождено)"
+        },
+        {
+          "level": 2,
+          "text": "5. Примеры"
+        },
+        {
+          "level": 2,
+          "text": "6. Ограничения"
+        },
+        {
+          "level": 2,
+          "text": "7. Провенанс и ревизии"
+        }
+      ]
+    }
+  },
+  "ledger_state": [
+    {
+      "path": "DCS_DERIVED_NUMBERS_LEDGER_2026.md",
+      "exists": true,
+      "sha256_lf_normalized": "d3fbc13f454011c22a1a2772e349ccbf3583b4dad05a20f1cccb7e76caf3ba6d",
+      "sg_mo_021_mentions": 0,
+      "art_future_mentions": 0
+    },
+    {
+      "path": "sangram/editorial/data/consolidation_ledger.json",
+      "exists": true,
+      "sha256_lf_normalized": "621a29d9657ca01659b5de0200cd5aa2d1ec5d6de82aedd50af2d4d1c029451f",
+      "sg_mo_021_mentions": 1,
+      "art_future_mentions": 1
+    }
+  ],
+  "release_provenance": {
+    "repo_version": "0.120.0"
+  },
+  "consumers": {
+    "code_level": [
+      "sangram/articles/aorist-types/index.mdx",
+      "sangram/articles/imperative-optative/index.mdx",
+      "sangram/articles/present-perfect-participles/index.mdx",
+      "sangram/audit/rederive_dcs_numbers_round3.py",
+      "sangram/editorial/data/consolidation_ledger.json"
+    ],
+    "repo_files_referencing_outside_context": 32
+  },
+  "issue_563_gate": {
+    "declared_inputs": [
+      "the pinned DCS sqlite snapshot (see source_db)"
+    ],
+    "crosswalk_tokens_in_generator": [],
+    "clean": true
+  }
+}
