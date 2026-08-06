@@ -19,6 +19,43 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **`check_claims_consistency.py` gains check 3 — CROSS-REPO CONSISTENCY (H2298).** The gate's
+  blind spot was reach, not logic: check 2 already asserts "a figure reused across registers
+  must be cited with ONE value everywhere", but it reads only this repo's `*/claims.yml`. So
+  when `verify_claims_dcs.py` derived DCS-2021 Imperfect Active from `timws.csv` codes 4+8
+  while VisualDCS published 4,442 (code 8 alone, a name-keyed last-wins read — H1486), nothing
+  compared them. Check 3 compares our committed
+  [`claims_dcs_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims_dcs_stats.json)
+  against VisualDCS's published contract asset, vendored at
+  [`data/dcs_published_figures.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/dcs_published_figures.json).
+  Five seeded pairs; part of the blocking `validators` CI job via step 1.
+  - **Both sides derive independently** — ours from `timws.csv` via our own script, theirs from
+    the same file via `regen_widgets.py`. This is a comparison of two derivations, not a pin of
+    a copy against a copy.
+  - A changed code set is reported as **`incommensurable`**, never as `drift` — "drift" invites
+    editing a number until it matches, the wrong fix when two sides stopped measuring the same
+    thing.
+- `scripts/refresh_published_figures.py` — the re-vendoring step (no network, no sibling clone
+  needed in CI); `--check` runs as a CI shape guard.
+- [`docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CROSSREPO_FIGURE_COMMENSURABILITY_DCS_2026.md)
+  — the adjudication record: 5 accepted pairs and, more importantly, 4 rejected ones with
+  reasons.
+
+### Changed
+- **`verify_claims_dcs.py` now derives `imperfect_active_tokens` (codes 4+8 = 40,363)** beside
+  the existing `imperfect_tokens` (codes 4+8+9+16+27 = **47,554**, adding medium, augmentless
+  and passive). H2298 assumed the two-code figure already existed here; it did not. Both are
+  correct, they are **not** the same quantity, and pairing 47,554 against a published
+  `Imperfect Active` would have produced a permanent 7,191-token false alarm — the fastest way
+  to get a blocking gate switched off.
+
+### Fixed
+- Seven new tests in `tests/test_claims_consistency.py`, including the **retrodiction**: with
+  the pre-H1486 figure 4,442 planted in the real vendored asset the gate exits 1 (reported
+  delta −35,921 = exactly the count of the code the name-keyed read dropped), and every seeded
+  pair is proven load-bearing by a planted divergence of its own.
+
 ## [0.118.2] - 2026-08-04
 ### Added
 
@@ -40,11 +77,9 @@ changelog tags as `vX.Y.Z`.
 - **A62 advanced 3/5 → 4/5 — evaluation methodology + the PM1–PM12 metric register (H1731, Opus 5 `claude-opus-5`)** — [`OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md) §4 rebuilt as a two-layer methodology: §4.1 states and defends the **capability-vs-outcome** split (a PM measures capability from committed artifacts; only RQ4 measures teaching effect — one ruler for the whole field), §4.2 reproduces the register from [`DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md) §4e with denominators and refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that **10 of 12 PMs are unmeasured** — the research programme A62 proposes, not a weakness to hide; §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column (the "✅ records built, not measured" reading); PM6 re-measured rather than quoted — 56.5% by type / 56.2% by DCS token mass, unchanged, its near-identity read as a frequency-neutral-scope finding; §6 gains the measurement gap as a first-class risk. The field doc stays source of truth; the paper reproduces and never re-defines a metric.
 - **claims.yml JSON Schema + validator (H1842, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new [`sangram/editorial/data/claims.schema.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/claims.schema.json) encodes the documented `verdict_fact` / `verdict_pedagogy` / `kind` enums and required entry keys (zero invented fields); new [`scripts/claims_schema_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/claims_schema_validate.py) (`--all` / per-file / `--self-test`, same CLI shape as `article_validate.py`) exits 0 on all six existing registers without content edits; wired into `npm run check-claims`; pytest [`tests/test_claims_schema_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_claims_schema_validate.py).
 - **Core-pipeline validator test coverage (H1839, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new pytest modules for `build_catalog`, `render_catalog_mdx`, `toc_build_pages`, `toc_validate`, `build_errata_print_sheet`, `atlas_build_bundle`, `atlas_validate_bundle` (synthetic fixtures; pure helpers extracted from `build_catalog`/`render_catalog_mdx` without behaviour change). Already-covered: `check_claims_consistency`, `check_denominator_commensurability`, `article_validate`, `build_corpus_layer`, `build_visa_sheet`, `consolidation_ledger_refresh`.
-- **`atlas_build_bundle` full end-to-end rebuild test (H2271, residual of H1839, Sonnet 5 `claude-sonnet-5` override dual-run of Grok)** — new [`tests/test_atlas_build_bundle_e2e.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_atlas_build_bundle_e2e.py) runs the real `--uprava`/`--out` rebuild against a local Uprava checkout and feeds the output through `atlas_validate_bundle.py`, skipping itself when no private hub is present (CI stays pure-helper-only per the H1839 residual note). The H2271 mint's "6 uncovered scripts" premise was already stale at mint time — `check_claims_consistency`, `check_denominator_commensurability`, `article_validate`, `build_corpus_layer`, `build_visa_sheet`, `consolidation_ledger_refresh` all had pre-existing test coverage under non-matching filenames (confirmed against PR #578's own body); the real residual gap was depth on `atlas_build_bundle`'s untested e2e path, which this closes.
 
 ### Fixed
 
-- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`[§3.3](#33-...)` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
 - **CI blocking pipeline validators (H1840, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — new `validators` job in [`.github/workflows/ci.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/ci.yml) runs claims consistency + schema, denominators, toc_validate, article_validate --all, consolidation_ledger_refresh --check; regenerated [`consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) so the gate starts green; CLAUDE.md Common commands notes CI enforcement.
 - **Offline Docusaurus full-text search (H1841, Grok 4.5 `grok-4.5` dual-run override of Opus 5)** — `@easyops-cn/docusaurus-search-local` (MIT, no API key) wired in [`docusaurus.config.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs) with `language: ['ru', 'en']` for the site's Russian locale + mixed Cyrillic/IAST content; `npm run build` produces a local search index under `build/`. Verified ≥5 cross-book terms in `build/search-index.json` (аорист, Bühler, Whitney, Зализняк, аблятив, tatpuruṣa, dhatu). Companion build unblocks already-red main: MDX-safe autolinks in Gasuns Cologne paper; exclude `GasunsDhatu_2026_RWS_review.mdx` from the docs plugin (editorial worksheet, not a reading page).
 

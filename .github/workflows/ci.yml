@@ -44,6 +44,8 @@ jobs:
           cache: pip
       - name: Install deps
         run: pip install -r scripts/requirements-dev.txt
+      - name: refresh_published_figures --check
+        run: python scripts/refresh_published_figures.py --check
       - name: check_claims_consistency
         run: python scripts/check_claims_consistency.py
       - name: claims_schema_validate --all
