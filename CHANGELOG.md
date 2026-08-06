@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.121.0] - 2026-08-06
+
 ### Added
 - **H1913 Slice C0 — SG-MO-021 future article pre-cutover invariants frozen.**
   [`docs/architecture/baseline/H1913_C0_INVARIANTS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/baseline/H1913_C0_INVARIANTS.md)
