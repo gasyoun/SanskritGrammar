@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.121.3] - 2026-08-07
 ### Fixed
 - **H2355 — `csl-pyutil` pin bumped v0.3.0 → v0.9.0, restoring `build_visa_sheet.py` CI.**
   `render_review_sheet(..., screening=...)` requires a param csl-pyutil only gained
