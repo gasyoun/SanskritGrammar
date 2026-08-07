@@ -26,6 +26,15 @@ changelog tags as `vX.Y.Z`.
   is a `PreflightWarning` (migration ramp, becomes an error in csl-pyutil 1.0.0).
   [PR #604](https://github.com/gasyoun/SanskritGrammar/pull/604).
 
+## [0.121.3] - 2026-08-07
+### Fixed
+- **H2355 — `csl-pyutil` pin bumped v0.3.0 → v0.9.0, restoring `build_visa_sheet.py` CI.**
+  `render_review_sheet(..., screening=...)` requires a param csl-pyutil only gained
+  in v0.8.0; the stale v0.3.0 pin predated it and raised `TypeError`. v0.9.0's added
+  `manifest=` evidence gate (H1889) is not passed here, so the only observed effect
+  is a `PreflightWarning` (migration ramp, becomes an error in csl-pyutil 1.0.0).
+  [PR #604](https://github.com/gasyoun/SanskritGrammar/pull/604).
+
 ## [0.121.2] - 2026-08-07
 ### Fixed
 - **H2300 — Devanāgarī offline-search indexing fixed (was 0/5 in H2272).**
