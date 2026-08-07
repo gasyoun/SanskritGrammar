@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.121.4] - 2026-08-07
 ### Fixed
 - **H2355 residual — `build_visa_sheet.py` passes V9 `manifest=` to `render_review_sheet`.**
   Closes the csl-pyutil migration ramp that warned (and will error in 1.0.0) when
