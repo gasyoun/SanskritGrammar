@@ -19,6 +19,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.121.2] - 2026-08-07
 ### Fixed
 - **H2300 — Devanāgarī offline-search indexing fixed (was 0/5 in H2272).**
   `@easyops-cn/docusaurus-search-local`'s `language: ['ru','en']` combined
