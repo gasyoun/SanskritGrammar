@@ -13,5 +13,9 @@ pyyaml>=6.0
 python-docx>=1.1.0
 
 # build_visa_sheet.py renders «виза» review sheets through the org's shared
-# review-sheet emitter, pinned to the ratified v0.3.0 standard (H1315).
-csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.3.0
+# review-sheet emitter. Pinned to v0.9.0 (H2355) — v0.8.0 made screening=
+# required on render_review_sheet(..., extras=True), which build_visa_sheet.py
+# already passes; the stale v0.3.0 pin predates that param and raised
+# TypeError in CI. v0.9.0 additionally adds an opt-in manifest= evidence gate
+# (H1889) that we don't pass, so behaviour here is unchanged beyond the fix.
+csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@v0.9.0
