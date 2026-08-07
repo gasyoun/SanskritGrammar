@@ -1,0 +1,62 @@
+diff --git a/node_modules/lunr-languages/lunr.sa.js b/node_modules/lunr-languages/lunr.sa.js
+index 3d459f9..0a5041e 100644
+--- a/node_modules/lunr-languages/lunr.sa.js
++++ b/node_modules/lunr-languages/lunr.sa.js
+@@ -67,8 +67,20 @@
+       }
+     };
+ 
+-    /* lunr trimmer function */
+-    lunr.sa.wordCharacters = "\u0900-\u0903\u0904-\u090f\u0910-\u091f\u0920-\u092f\u0930-\u093f\u0940-\u094f\u0950-\u095f\u0960-\u096f\u0970-\u097f\uA8E0-\uA8F1\uA8F2-\uA8F7\uA8F8-\uA8FB\uA8FC-\uA8FD\uA8FE-\uA8FF\u11B00-\u11B09";
++    /* lunr trimmer function
++     * H2300: upstream's trailing "\u11B00-\u11B09" (meant to be the astral-
++     * plane Vedic Extensions block) is unreachable in a plain \uXXXX escape
++     * -- JS takes exactly 4 hex digits, so it parses as "\u11B0" + literal
++     * "0", "-", "\u11B0" + literal "9". That silently manufactures a
++     * 0x30-0x11B0 character-class RANGE ("0-<U+11B0>"), which swallows most
++     * of the BMP -- including ASCII punctuation like "{" and "}" -- into
++     * "word characters", so lunr's trimmer stops stripping leading/trailing
++     * punctuation for EVERY language once 'sa' is loaded (reproduced:
++     * "{gu\u1E47a" trims to "gu\u1E47a" without this fix, "gu\u1E47a" unchanged with it).
++     * Dropped rather than corrected to a real astral-plane escape: this
++     * corpus has no Vedic accent marks to index, so there is nothing to
++     * regress by removing an already-broken, unreachable range. */
++    lunr.sa.wordCharacters = "\u0900-\u0903\u0904-\u090f\u0910-\u091f\u0920-\u092f\u0930-\u093f\u0940-\u094f\u0950-\u095f\u0960-\u096f\u0970-\u097f\uA8E0-\uA8F1\uA8F2-\uA8F7\uA8F8-\uA8FB\uA8FC-\uA8FD\uA8FE-\uA8FF";
+     lunr.sa.trimmer = lunr.trimmerSupport.generateTrimmer(lunr.sa.wordCharacters);
+ 
+     lunr.Pipeline.registerFunction(lunr.sa.trimmer, 'trimmer-sa');
+@@ -91,16 +103,25 @@
+       }
+     })();
+ 
+-    var segmenter = lunr.wordcut;
+-    segmenter.init();
+-    lunr.sa.tokenizer = function(obj) {
+-      if (!arguments.length || obj == null || obj == undefined) return []
+-      if (Array.isArray(obj)) return obj.map(function(t) {
+-        return isLunr2 ? new lunr.Token(t.toLowerCase()) : t.toLowerCase()
+-      });
++    /* H2300: lunr.wordcut's browserify UMD bundle has a dynamic require() that
++     * fatally breaks webpack's static analysis, so this corpus (already
++     * whitespace-segmented) skips the wordcut-based segmenter tokenizer
++     * entirely and relies on lunr.multiLanguage's default whitespace
++     * tokenizer + this file's trimmer/wordCharacters/stopWordFilter/stemmer
++     * instead. Only define the segmenter-based tokenizer if some other
++     * caller has already loaded lunr.wordcut. */
++    if (typeof lunr.wordcut !== 'undefined') {
++      var segmenter = lunr.wordcut;
++      segmenter.init();
++      lunr.sa.tokenizer = function(obj) {
++        if (!arguments.length || obj == null || obj == undefined) return []
++        if (Array.isArray(obj)) return obj.map(function(t) {
++          return isLunr2 ? new lunr.Token(t.toLowerCase()) : t.toLowerCase()
++        });
+ 
+-      var str = obj.toString().toLowerCase().replace(/^\s+/, '');
+-      return segmenter.cut(str).split('|');
++        var str = obj.toString().toLowerCase().replace(/^\s+/, '');
++        return segmenter.cut(str).split('|');
++      }
+     }
+ 
+     lunr.Pipeline.registerFunction(lunr.sa.stemmer, 'stemmer-sa');

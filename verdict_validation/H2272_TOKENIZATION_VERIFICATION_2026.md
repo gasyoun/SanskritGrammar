@@ -1,6 +1,6 @@
 # H2272 — offline-search tri-script tokenization verification
 
-_Created: 05-08-2026 · Last updated: 05-08-2026_
+_Created: 05-08-2026 · Last updated: 06-08-2026_
 
 Verifies [H1841](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1841-Opus_SanskritGrammar_docusaurus-offline-search_29.07.26.md)'s
 explicit watch-out — "pick a tokenizer/locale config that actually handles the
@@ -119,5 +119,43 @@ scope — **this deserves its own follow-up handoff** rather than a rushed patch
   [h2272_terms.json](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/h2272_terms.json),
   [h2272_probe_results.json](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/h2272_probe_results.json).
 - Failed-fix build log excerpt (both minified and `--no-minify`) reproduced above.
+
+## H2300 — Devanāgarī fix (real engineering, not a limitation)
+
+_Appended 06-08-2026._ Picked up H2272's own follow-up recommendation.
+`language: ['ru','en','sa']` + a `patch-package` patch (`patches/`) neutralizing
+`lunr.sa`'s `wordcut` hard-dependency (Approach 1 of the 3 candidates
+H2272/H2300 listed — `patch-package` against the dependency, not a webpack
+override or a from-scratch tokenizer). Full root cause + patch rationale: this
+repo's [`CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md)
+`[Unreleased]` entry.
+
+Same 15 terms (5 per script, same `h2272_terms.json`), re-run against the
+`npm run build` (normal minified mode) output with the fix applied. Raw output:
+[h2300_probe_results.json](https://github.com/gasyoun/SanskritGrammar/blob/main/verdict_validation/h2300_probe_results.json).
+
+| Script | Term | Source book | Found? | Rank / total hits |
+|---|---|---|---|---|
+| Cyrillic | падеж | ApteSyntax_1885 | ✅ pass | 8 / 42 |
+| Cyrillic | глаголов | BuhlerLeitfaden_1923 | ✅ pass | 8 / 49 |
+| Cyrillic | санскрите | ZalizniakOcherk_1978 | ✅ pass | 4 / 36 |
+| Cyrillic | корень | GasunsDhatu_2014 | ✅ pass | 2 / 57 |
+| Cyrillic | значение | KocherginaUchebnik_1998 | ✅ pass | 32 / 47 |
+| IAST | guṇa | ApteSyntax_1885 | ✅ pass | 35 / 44 |
+| IAST | vṛddhi | BuhlerLeitfaden_1923 | ✅ pass | 7 / 33 |
+| IAST | dhātu | WhitneyGrammar_1889 | ✅ pass | 15 / 16 |
+| IAST | Pāṇini | GasunsDhatu_2014 | ✅ pass | 10 / 15 |
+| IAST | saṃdhi | KocherginaUchebnik_1998 | ✅ pass | 1 / 6 |
+| Devanāgarī | किं (kim) | ApteSyntax_1885 | ✅ **pass** | 1 / 5 |
+| Devanāgarī | इति (iti) | BuhlerLeitfaden_1923 | ✅ **pass** | 4 / 5 |
+| Devanāgarī | तस्य (tasya) | WhitneyGrammar_1889 | ✅ **pass** | 3 / 4 |
+| Devanāgarī | राजा (rājā) | KnauerFrazy_1908 | ✅ **pass** | 1 / 8 |
+| Devanāgarī | तथा (tathā) | KocherginaUchebnik_1998 | ✅ **pass** | 2 / 2 |
+
+**15/15.** Cyrillic and IAST ranks/hit-counts are byte-identical to H2272's
+original baseline above (confirming the fix is neutral there once the
+upstream astral-range bug — see CHANGELOG — is also patched out); Devanāgarī
+flips from 0/5 to 5/5. `npm run build` succeeded in normal minified mode (not
+`--no-minify`) — see the CI/build log for this PR.
 
 _Dr. Mārcis Gasūns_

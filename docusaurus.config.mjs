@@ -53,14 +53,17 @@ const config = {
     '@docusaurus/theme-mermaid',
     // Offline full-text search (H1841) — no Algolia key/account. Site default
     // locale is Russian with mixed Cyrillic / IAST / Devanagari content; lunr
-    // `ru` tokenizes Cyrillic, `en` covers Latin/IAST word runs. Devanagari is
-    // indexed as raw terms (no zh-style segmenter); multi-script pages remain
-    // findable by their Cyrillic/IAST headings and prose.
+    // `ru` tokenizes Cyrillic, `en` covers Latin/IAST word runs, `sa` widens
+    // the trimmer's wordCharacters to the Devanagari range (H2300) so those
+    // tokens survive lunr's trim step instead of being stripped to "". The
+    // `sa` wordcut segmenter/tokenizer itself is patched out (patches/) since
+    // it fatally breaks webpack; this corpus is already whitespace-segmented
+    // so the plugin's own default tokenizer is sufficient once trimming works.
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        language: ['ru', 'en'],
+        language: ['ru', 'en', 'sa'],
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
