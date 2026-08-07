@@ -22,9 +22,11 @@ import json
 import re
 import subprocess
 import sys
+import warnings
 from pathlib import Path
 
 import pytest
+from csl_pyutil import PreflightWarning
 
 import build_visa_sheet
 from visa_sheet_spec_from_html import extract_spec
@@ -49,13 +51,17 @@ def original():
 
 @pytest.fixture(scope="module")
 def regenerated(original, tmp_path_factory):
-    """Round-trip: original sheet -> spec -> generated sheet -> spec."""
+    """Round-trip: original sheet -> spec -> generated sheet -> spec.
+
+    Must pass V9 ``manifest=`` without a PreflightWarning (H2355 residual —
+    csl-pyutil 1.0.0 hardens the missing-manifest nag into an error).
+    """
     out = tmp_path_factory.mktemp("visa")
     spec_path = out / "spec.json"
     spec_path.write_text(json.dumps(original, ensure_ascii=False, indent=2), encoding="utf-8")
-    html_doc = build_visa_sheet.render_review_sheet(
-        build_visa_sheet.build_items(original), build_visa_sheet.build_config(original),
-        screening=build_visa_sheet.build_screening(original))
+    with warnings.catch_warnings():
+        warnings.simplefilter("error", PreflightWarning)
+        html_doc = build_visa_sheet.render_visa_sheet(original, repo_root=ROOT)
     return extract_spec(html_doc), html_doc
 
 
@@ -115,3 +121,25 @@ def test_generator_cli_runs(tmp_path, original):
         capture_output=True, text=True, encoding="utf-8")
     assert r.returncode == 0, r.stderr
     assert (tmp_path / ("%s_review.html" % original["sheet_id"])).exists()
+
+
+def test_manifest_covers_every_card(original):
+    """V9 floor: every card has title+question evidence fields; no starved cards."""
+    man = build_visa_sheet.build_manifest(original, repo_root=ROOT)
+    assert man.sheet_id == original["sheet_id"]
+    assert set(man.row_ids) == {raw["id"] for raw in original["items"]}
+    assert set(man.cards) == set(man.row_ids)
+    for cid, card in man.cards.items():
+        assert card["fields"] == ["title", "question"], cid
+    assert (build_visa_sheet.SPEC_EVIDENCE_TEMPLATE % original["sheet_id"]) in man.joined
+
+
+def test_render_visa_sheet_emits_no_preflight_warning(original):
+    """Pin the H2355 residual: wiring manifest= silences the migration PreflightWarning."""
+    with warnings.catch_warnings(record=True) as rec:
+        warnings.simplefilter("always", PreflightWarning)
+        html_doc = build_visa_sheet.render_visa_sheet(original, repo_root=ROOT)
+    preflight_warns = [w for w in rec if issubclass(w.category, PreflightWarning)]
+    assert preflight_warns == [], "unexpected PreflightWarning: %s" % [
+        str(w.message) for w in preflight_warns]
+    assert "<!DOCTYPE html>" in html_doc

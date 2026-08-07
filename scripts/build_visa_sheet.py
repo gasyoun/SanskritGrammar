@@ -5,9 +5,9 @@ THE ONLY SANCTIONED WAY to author a new visa sheet (H1315, 19-07-2026). Until
 now every sheet in `review/` was a hand-authored copy-paste of an identical
 inline <style>/<script> skeleton — the exact drift the org review-sheet
 standard exists to kill. The shell now comes from ONE place,
-`csl_pyutil.render_review_sheet` at the v0.3.0 standard (V1-V8, ratified from
-the h178_da vote), and this script only maps the SanskritGrammar item shape
-onto it.
+`csl_pyutil.render_review_sheet` at the v0.9.0 standard (V1-V8 + V9 evidence
+manifest, ratified from the h178_da vote / H1889), and this script only maps
+the SanskritGrammar item shape onto it.
 
 Contract, "hand-edited source + generated output" like scripts/build_errata.py:
     review/specs/<sheet_id>.json     is the SOURCE (hand-edited)
@@ -21,6 +21,10 @@ Standard options applied here (see the handoff for why each):
                                   heavily Russian; applied to question/panel
                                   HTML only, never to the escaped title)
     title_href               V4 - per item, only where a stable URL exists
+    manifest=                V9 - EvidenceManifest (spec path joined; every card
+                                  carries title+question evidence fields) so the
+                                  missing-manifest PreflightWarning is gone and
+                                  csl-pyutil 1.0.0 will not hard-fail this path
 NO rating row (V1/V5): visa sheets are categorical approve/reject/defer, they
 do not score on a scale. `decided` stays the integer count the org contract
 uses, and `generated` is read from the spec, never computed here, so a rebuild
@@ -39,7 +43,7 @@ import json
 import sys
 from pathlib import Path
 
-from csl_pyutil import mark_cyrillic, render_review_sheet
+from csl_pyutil import EvidenceManifest, mark_cyrillic, render_review_sheet
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -52,6 +56,9 @@ SAVE_AS_TEMPLATE = "SanskritGrammar\\review\\%s_decisions.json"
 
 DEFAULT_APPROVE = "✅ Одобрить"
 DEFAULT_REJECT = "❌ Отклонить"
+
+# Relative path the screening block already names as the sheet's evidence source.
+SPEC_EVIDENCE_TEMPLATE = "review/specs/%s.json"
 
 
 def build_items(spec):
@@ -93,8 +100,17 @@ def build_items(spec):
     return items
 
 
+# File/format tokens that appear in visa-sheet prose (paths like
+# `sangram/articles/.../index.mdx`) and trip the V9 SLP1 detector's
+# CamelCase/marker heuristics even though they are not Sanskrit encodings.
+# Tunable via the spec's optional `allow_slp1_tokens` list (appended).
+DEFAULT_ALLOW_SLP1 = ("mdx", "MDX", "html", "HTML", "json", "JSON", "tsv", "TSV")
+
+
 def build_config(spec):
     sheet_id = spec["sheet_id"]
+    allow = list(DEFAULT_ALLOW_SLP1)
+    allow.extend(spec.get("allow_slp1_tokens") or [])
     config = {
         "sheet_id": sheet_id,
         "title": spec["title"],
@@ -108,6 +124,8 @@ def build_config(spec):
         "show_ids": True,
         "note_min_height_px": 88,
         "save_as": SAVE_AS_TEMPLATE % sheet_id,
+        # V9: domain file extensions are not SLP1 leaks (H2355 residual).
+        "preflight": {"allow_slp1_tokens": allow},
     }
     return config
 
@@ -123,9 +141,47 @@ def build_screening(spec):
         "lookup": 0,
         "agent": 0,
         "human": len(spec["items"]),
-        "evidence_path": "review/specs/%s.json" % spec["sheet_id"],
+        "evidence_path": SPEC_EVIDENCE_TEMPLATE % spec["sheet_id"],
         "rules": [],
     }
+
+
+def build_manifest(spec, repo_root=None):
+    """V9 evidence-reuse manifest (csl-pyutil H1889 / v0.9.0+).
+
+    Without ``manifest=``, ``render_review_sheet`` emits a PreflightWarning that
+    becomes a hard error in csl-pyutil 1.0.0. The sheet's source of truth is the
+    JSON spec (same path the screening block names); each card carries the
+    title + question the human is asked to decide on as its evidence fields.
+
+    ``repo_root`` defaults to this repo root so the prior-art walk stays scoped
+    to SanskritGrammar (not the process CWD of a foreign caller).
+    """
+    sheet_id = spec["sheet_id"]
+    row_ids = [raw["id"] for raw in spec["items"]]
+    man = EvidenceManifest(
+        sheet_id,
+        row_ids,
+        repo_root=str(repo_root if repo_root is not None else ROOT),
+        min_evidence_fields=2,
+    )
+    man.declare_joined(
+        SPEC_EVIDENCE_TEMPLATE % sheet_id,
+        ["id", "title", "question", "panels"],
+    )
+    for raw in spec["items"]:
+        man.add_card(raw["id"], ["title", "question"])
+    return man
+
+
+def render_visa_sheet(spec, repo_root=None):
+    """Build items/config/screening/manifest and render. Single entry for CLI + tests."""
+    return render_review_sheet(
+        build_items(spec),
+        build_config(spec),
+        screening=build_screening(spec),
+        manifest=build_manifest(spec, repo_root=repo_root),
+    )
 
 
 def main():
@@ -137,8 +193,7 @@ def main():
     args = ap.parse_args()
 
     spec = json.loads(Path(args.spec).read_text(encoding="utf-8"))
-    html_doc = render_review_sheet(
-        build_items(spec), build_config(spec), screening=build_screening(spec))
+    html_doc = render_visa_sheet(spec)
 
     out_dir = Path(args.out_dir) if args.out_dir else ROOT / "review"
     out_dir.mkdir(parents=True, exist_ok=True)

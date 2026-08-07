@@ -18,6 +18,16 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Fixed
+- **H2355 residual — `build_visa_sheet.py` passes V9 `manifest=` to `render_review_sheet`.**
+  Closes the csl-pyutil migration ramp that warned (and will error in 1.0.0) when
+  `render_review_sheet` was called with `screening=` but no `EvidenceManifest`.
+  New `build_manifest` / `render_visa_sheet` join `review/specs/<sheet_id>.json`
+  and give every card `title` + `question` evidence fields; `preflight.allow_slp1_tokens`
+  covers domain file extensions (`mdx`/`html`/`json`/…) that the SLP1 detector
+  otherwise flags in path prose. Tests pin zero-`PreflightWarning` under `-W error`.
+  Pin remains `csl-pyutil@v0.9.0`
+  ([#604](https://github.com/gasyoun/SanskritGrammar/pull/604)).
 
 ## [0.121.3] - 2026-08-07
 ### Fixed
