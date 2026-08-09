@@ -19,6 +19,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+## [0.121.5] - 2026-08-09
 ### Added
 - **Grammar Lab execution plan:** five cross-linked `/ask` documents and a metadoc define a
   25–40-topic Whitney + Zalizniak concordance/evidence graph, multilingual offline hybrid search,
