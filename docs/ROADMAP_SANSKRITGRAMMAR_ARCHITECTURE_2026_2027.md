@@ -1,6 +1,6 @@
 # Roadmap — SanskritGrammar architecture, 2026–2027
 
-_Created: 29-07-2026 · Last updated: 29-07-2026_
+_Created: 29-07-2026 · Last updated: 09-08-2026_
 
 _Provenance: root best-effort after the configured Fable Planner returned no draft. No Planner or Advisor approval is claimed._
 
@@ -28,6 +28,7 @@ documents.
 | M03 monograph | H1259 line edit complete; 290 highlighted paragraphs await review | Human accepts/reverts changes; freeze 31-10-2026; publisher contact in November | Human |
 | Sangram | Freeze baseline: 11 published, 1 kill-gated, 14 unknown | Supply legitimate C5/C6 gates or use visa/another documented terminal path | Scholarly/human gate, agent evidence |
 | RQ4 | Protocol, item bank, export, Systema harness, smoke test, and runbook complete | Human production authorization after the non-collision window | Human |
+| Grammar Lab | Five-layer plan and 29 rulings complete; concordance/index/product gap scoped | Build the evidence graph, then Systema import/search, learning loop and entitlement/pilot | Four Grok 4.5 handoffs |
 | Comparative/publication | A61 submission-ready; A64 draft with venue/form unresolved | CfP-triggered submission work and later author rulings | Mixed |
 | Archive/site | CI and Pages green; local populated archive can fail discovery | Delivery/publication safety slice | Agent |
 | Integrity | Issue 563 shows 74.5% impossible PWG–Pāṇini “sūtra” keys | Suppress until contextual extraction and regeneration | Agent research, scholarly acceptance |
@@ -143,6 +144,14 @@ W0 truth rebase
 
 W1-B and W1-C may run in parallel after W1-A publishes the package, manifest, path, and test
 contracts. They must use disjoint files and may not independently redefine those contracts.
+
+### Parallel product lane · Grammar Lab
+
+The [Grammar Lab roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md)
+is a product lane, not a fourth architecture-migration pilot. Its SanskritGrammar bundle must
+adopt the declared-pipeline and deterministic-check conventions as they land, but it need not
+wait for the full W2 monorepo migration. Its dependency chain is data graph → Systema import and
+hybrid search → exercises/SRS/recommendations → entitlement and learner pilot.
 
 ## 5. W2 — migrate the core factories
 

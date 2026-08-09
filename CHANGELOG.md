@@ -19,6 +19,13 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **Grammar Lab execution plan:** five cross-linked `/ask` documents and a metadoc define a
+  25–40-topic Whitney + Zalizniak concordance/evidence graph, multilingual offline hybrid search,
+  risk-tiered exercises, SRS/recommendations, provider-independent paid entitlement, and a
+  5–10-student Systema pilot. Existing portfolio, architecture, pedagogy and last-mile roadmaps
+  now point to the new product lane; Sandhi is explicitly gated on Emeneau.
+
 ## [0.121.4] - 2026-08-07
 ### Fixed
 - **H2355 residual — `build_visa_sheet.py` passes V9 `manifest=` to `render_review_sheet`.**

@@ -1,11 +1,18 @@
 # Roadmap — SanskritGrammar pedagogy last-mile residual (2026 H2 wave-1)
 
-_Created: 25-07-2026 · Last updated: 25-07-2026_
+_Created: 25-07-2026 · Last updated: 09-08-2026_
 
 Wave structure for the plan whose cover is
 [`docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_PEDAGOGY_LAST_MILE_2026H2.md).
 This roadmap is **wave-1 only** (ruling 3). Later portfolio tracks (M03 freeze,
 Sangram consolidation exit, paper venues) keep their own roadmaps.
+
+**Successor product layer (09-08-2026):** the export and local Systema smoke this roadmap
+specified are shipped. The next learner/revenue wave is the
+[Grammar Lab roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md):
+a Whitney + Zalizniak concordance and evidence graph feeding semantic search, exercises, SRS,
+recommendations and a hybrid paid entitlement. This document remains the integration-contract
+history; it is not expanded into the new product spec.
 
 ## 1. Relation to existing roadmaps
 

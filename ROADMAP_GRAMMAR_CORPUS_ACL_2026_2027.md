@@ -1,6 +1,12 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 29-07-2026_
+_Created: 10-07-2026 · Last updated: 09-08-2026_
+
+> _Revision 09-08-2026 (Codex `gpt-5.6-sol`): added the decision-locked
+> [Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md)
+> as the product continuation of the shipped pedagogy export/Systema hop. It adds a Whitney +
+> Zalizniak grammar concordance, learner indexes/tools, and a hybrid paid entitlement without
+> changing M03 or Sangram's scholarly order._
 
 > _Revision 29-07-2026 (Codex root, best-effort after the
 > configured Fable Planner returned no draft): rebased current state on
@@ -19,7 +25,8 @@ their own sources of truth, linked below.
 
 The portfolio outcome for 2026–2027 is: finish the **M03 GasunsDhatu monograph** for publisher
 preparation; turn Sangram's high-velocity candidate corpus into a verified publication set;
-launch the already-built RQ4 learner evaluation; keep the comparative research programme moving
+launch the already-built RQ4 learner evaluation and prove the Grammar Lab paid-product slice;
+keep the comparative research programme moving
 as **Sangram's publication arm**; and maintain the public grammar archive without opening a new
 rights programme this cycle.
 
@@ -31,7 +38,7 @@ rights programme this cycle.
 |---:|---|---|---|---|
 | **1** | **M — M03 GasunsDhatu monograph** | H1259's hybrid line edit is complete; the live bottleneck is human review of 290 highlighted paragraphs, followed by the two mechanical pre-submission passes | [`GasunsDhatu_2014/revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md) and the [press-readiness checklist](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md) | Highest-labelled priority; human review now; manuscript freeze **31-10-2026**; contact «Нестор-История» in **November 2026** |
 | **2** | **S — Sangram corpus grammar** | The 26-item freeze baseline is 11 published, 1 kill-gated, and 14 unknown as of the 24-07 ledger refresh; H1611–H1614 proved that several unknowns lack legitimate C5/C6 gates and must not be dispositioned by invention | [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) and the [consolidation ledger](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) | **Consolidation freeze:** no new topic/article manifests until the 14 unknowns receive legitimate gates, visa, or another documented terminal disposition |
-| **3** | **P — Digital Sanskrit pedagogy / RQ4** | Protocol, consent, item bank, six-feed export, Systema harness, sync, smoke test, and operator runbook are complete | [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md) and [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md) | Human authorizes the production flag after the non-collision window; the 28-08 marathon cohort remains excluded |
+| **3** | **P — Digital Sanskrit pedagogy / Grammar Lab / RQ4** | The export/Systema hop and RQ4 harness are complete; Grammar Lab is decision-locked for a 25–40-topic root-alternation/verbal-morphology slice with Whitney + Zalizniak, semantic search, SRS and hybrid entitlement | [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md), [`docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md), and [`docs/runbooks/RQ4_GO_LIVE_HUMAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/RQ4_GO_LIVE_HUMAN.md) | Four serial-safe Grammar Lab handoffs may proceed in parallel capacity; production subscription/flag activation stays human-only |
 | **4** | **C — Comparative corpus / papers, the publication arm of Sangram** | S1–S4 are **instruments feeding Sangram** (§2), no longer independent workstreams; the two ACL papers productionise analyses Sangram already consumes or practises; A60/A61 and other already-open paper work continue | This document §§1–4 and [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md) | Full cadence continues alongside M03; M03 is the highest-labelled priority, not an exclusivity rule |
 | **5** | **A — Archive, reading site, and technical architecture** | Public Docusaurus archive is operational; the repo-wide architecture audit found publication-boundary, reproducibility, script-monolith, dependency, and deployment-gating debt | [`README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md) and the [architecture modernization plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md) | Product throughput remains first; a subordinate 12–18-month technical lane begins with delivery safety and two vertical pilots |
 

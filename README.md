@@ -372,6 +372,10 @@ identical sheet_id, card ids, titles, questions and panels.
 Beyond the archive, this repo hosts an active research track that draws on these
 sources: a one-year research agenda in
 [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md)
+and the decision-locked
+[Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md),
+which turns the Whitney/Zalizniak concordance and dictionary/corpus evidence into an
+entitlement-gated Systema learner service,
 and the polemic article **A54** — a response to Kulikov on Sanskrit alternations,
 drafted for *Indo-Iranian Languages*
 ([`IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_ARTICLE_2027.md),
