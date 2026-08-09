@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/work.schema.json",
+  "title": "SanskritGrammar work contract (contract_version 1)",
+  "description": "Operational contract for one bounded-context work. NOT a publication manifest: the presence or absence of work.yml never includes or excludes a page, publication is decided only by site discovery. See docs/ARCHITECTURE_SANSKRITGRAMMAR_MODULAR_MONOREPO.md section 6.1.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "work_id",
+    "title",
+    "source_authority",
+    "rights",
+    "stable_routes",
+    "outputs"
+  ],
+  "properties": {
+    "contract_version": { "const": 1 },
+    "work_id": {
+      "type": "string",
+      "pattern": "^work:[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable semantic identity. Never changes because a folder or title changed."
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "source_authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The authoritative witness. 'newest file' is never an authority rule."
+        },
+        "witnesses": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "generated_text"],
+      "properties": {
+        "source": { "$ref": "#/$defs/rights" },
+        "generated_text": { "$ref": "#/$defs/rights" },
+        "media": { "$ref": "#/$defs/rights" },
+        "statement": {
+          "type": "string",
+          "description": "Free prose is recorded for humans only. A build never interprets it as permission."
+        }
+      }
+    },
+    "stable_routes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary"],
+      "properties": {
+        "primary": { "type": "string", "minLength": 1 },
+        "additional": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "transformations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["pipeline"],
+        "properties": {
+          "pipeline": {
+            "type": "string",
+            "pattern": "^pipeline:[a-z0-9]+(-[a-z0-9]+)*$"
+          }
+        }
+      }
+    },
+    "generated_roots": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "media_roots": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "outputs": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true,
+      "description": "Every generated output has exactly one declared generator. A generated file may never also be a source."
+    }
+  },
+  "$defs": {
+    "rights": {
+      "enum": [
+        "publishable",
+        "publishable-derived-input",
+        "restricted-source",
+        "per-file",
+        "unknown"
+      ],
+      "description": "A missing optional rights determination stays representable as 'unknown' and is not a pipeline failure. It is still not permission."
+    }
+  }
+}

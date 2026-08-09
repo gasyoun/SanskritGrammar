@@ -1,0 +1,62 @@
+# Site publication pipeline — the one pipeline Slice A itself owns.
+#
+# Declares the publication boundary as a first-class contract instead of leaving
+# it implicit in docusaurus.config.mjs. Its steps are intentionally verification
+# steps, not content generation: the site build is a PURE CONSUMER of repository
+# state (architecture § 5.1), so nothing here mutates content.
+#
+# `sg pipeline check repo-site` validates this manifest, the provenance lock, and
+# reports that `site.*` commands have no registered generator yet — Slice A ships
+# the registry with zero content generators on purpose. `sg pipeline run` is
+# therefore expected to fail closed until a pilot registers them; the npm
+# scripts remain the executable path for the site itself.
+
+contract_version: 1
+pipeline_id: pipeline:repo-site
+owner: SanskritGrammar maintainers
+context: repo:site
+generator: site
+description: >-
+  Publication-boundary contract for the Docusaurus book site: tracked-content
+  discovery, remark plugin behaviour, and the site build gate.
+
+inputs:
+  - id: tracked-mdx
+    path: .
+    rights: publishable
+    version: git-ls-files
+
+steps:
+  - id: discover
+    command: site.discover
+    inputs:
+      - src/discovery.mjs
+    outputs:
+      - .docusaurus/discovery-report.json
+
+  - id: build
+    command: site.build
+    needs:
+      - discover
+    outputs:
+      - build/index.html
+
+verification:
+  - site.discovery
+  - site.plugins
+  - site.build
+
+external_consumers:
+  - name: GitHub Pages (gasyoun.github.io/SanskritGrammar)
+    repo: gasyoun/SanskritGrammar
+    path: .github/workflows/ci.yml
+    owner: SanskritGrammar maintainers
+    contract: Pages artifact uploaded by the gated CI run for the same SHA
+    smoke: npm run build
+    rollback: Re-run Deploy Pages for the last green SHA
+    status: merged
+
+rollback:
+  procedure: >-
+    Revert the offending commit on main and re-run the gated CI workflow; Pages
+    redeploys from the artifact built for that SHA.

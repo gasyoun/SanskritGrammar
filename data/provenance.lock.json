@@ -1,0 +1,17 @@
+{
+  "contract_version": 1,
+  "comment": "Single machine-verifiable index of external immutable inputs. A mutable branch URL, a 'latest' download, a local absolute path, or an undocumented sibling checkout is not valid provenance. This lock records identity and integrity only: it never transfers ownership or grants redistribution rights.",
+  "inputs": [
+    {
+      "id": "external:csl-pyutil",
+      "owner": "sanskrit-lexicon/csl-pyutil",
+      "repository": "https://github.com/sanskrit-lexicon/csl-pyutil",
+      "revision": "d6cbe911cb65191d4b8abc77cc2c67533230e8a7",
+      "revision_label": "v0.9.0",
+      "revision_note": "Commit the v0.9.0 tag points at. The annotated tag OBJECT is 4421880c9d358017527919f2226c7fae6383403a; the commit is pinned here because that is what is actually built.",
+      "path": "csl_pyutil",
+      "rights": "publishable-derived-input",
+      "consumers": ["pipeline:repo-visa-sheet"]
+    }
+  ]
+}
