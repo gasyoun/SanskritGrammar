@@ -1,6 +1,6 @@
 # Digital Sanskrit Pedagogy — the field (org-wide metadocument)
 
-_Created: 14-07-2026 · Last updated: 29-07-2026_
+_Created: 14-07-2026 · Last updated: 09-08-2026_
 
 **What this is.** The single org-wide definition of **digital Sanskrit pedagogy** as a
 *priority research field* across the ~85-repo Sanskrit-lexicon ecosystem. It sits **above** the
@@ -13,6 +13,10 @@ agenda that turns a pile of learner-facing assets into a falsifiable field.
 Registered as a field in [`MEGABOOK.md` §2.10](https://github.com/gasyoun/Uprava/blob/main/MEGABOOK.md)
 (with §2.9 strengthened); the execution plan is
 [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
+The first paid grammar-product implementation is the
+[Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md):
+a neutral Whitney + Zalizniak topic graph with dictionary/corpus evidence, multilingual hybrid
+search, exercises, SRS, recommendations and Systema-owned entitlement/learner state.
 
 ---
 
