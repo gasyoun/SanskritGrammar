@@ -1,0 +1,64 @@
+# Root workspace for the SanskritGrammar monorepo (Slice A, H2309).
+#
+# Ruling 13: pyproject.toml + a locked uv workspace, so CI and developers install
+# the exact same dependency graph instead of resolving lower bounds at install
+# time. `uv sync --frozen` is the contract; `pip install -r requirements*.txt`
+# remains only as the legacy path CI is migrating off.
+#
+# Every Git dependency is pinned by IMMUTABLE COMMIT, not only by a mutable tag —
+# a tag can be moved, which would silently change what CI installed. The tag is
+# kept alongside as a human label, and the same pin is mirrored in
+# data/provenance.lock.json.
+
+[project]
+name = "sanskritgrammar"
+version = "0.1.0"
+description = "Digitized Sanskrit grammar sources: build tooling, pipelines, and the Docusaurus book site."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { file = "LICENSE" }
+authors = [{ name = "Mārcis Gasūns" }]
+
+dependencies = [
+  # scripts/build_whitney.py — Devanagari from Whitney's IAST (H427)
+  "indic-transliteration>=2.3.0",
+  # scripts/sequence_tau.py — Kendall's tau for S1 textbook sequencing
+  "scipy>=1.10",
+  # build_claims.py / build_errata.py / build_quantifiers.py / harvest_quantifiers.py
+  "pyyaml>=6.0",
+  # GasunsDhatu_2014/revision-2026/rws_to_docx.py — .docx review packets
+  "python-docx>=1.1.0",
+  # Draft-2020-12 validation for article / claims / atlas / ledger / pipeline
+  # contracts. Optional at runtime (scripts fall back to a builtin subset) but
+  # CI must exercise the real jsonschema path.
+  "jsonschema>=4.0",
+  # build_visa_sheet.py — the org's shared review-sheet emitter. v0.9.0 (H2355):
+  # v0.8.0 made screening= required on render_review_sheet(..., extras=True),
+  # which build_visa_sheet.py already passes; the stale v0.3.0 pin predated that
+  # parameter and raised TypeError in CI. Pinned to the COMMIT the v0.9.0 tag
+  # points at (d6cbe911), not the annotated tag object (4421880c) — see
+  # data/provenance.lock.json for the same pin.
+  "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@d6cbe911cb65191d4b8abc77cc2c67533230e8a7",
+  # The repo's own tooling package, resolved from the workspace below.
+  "sg-tooling",
+  # Test runner — a direct dep so `uv sync --frozen && uv run python -m pytest`
+  # works without --extra flags. V-A gate requires that exact form.
+  "pytest>=8.0",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[tool.uv.workspace]
+members = ["packages/sg_tooling"]
+
+[tool.uv.sources]
+sg-tooling = { workspace = true }
+
+[tool.pytest.ini_options]
+# Mirrors pytest.ini so `uv run python -m pytest` and a bare `python -m pytest`
+# collect the same suites. tests/conftest.py puts scripts/ on sys.path.
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-q"

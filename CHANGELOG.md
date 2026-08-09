@@ -18,6 +18,50 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **H2309 Slice A (partial) — shared Wave-1 contracts: `uv` workspace, `sg_tooling`, pipeline/work/provenance
+  schemas, and the discovery + plugin test suites.** Steps A1, A2 and A4 of the
+  [architecture modernization implementation](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION.md);
+  A5 (neutral rights footer) and A6 (same-SHA delivery gate) are deliberately **not** in this
+  change and remain owned by the intended Codex Sol executor.
+  - **A1 packaging:** root [`pyproject.toml`](https://github.com/gasyoun/SanskritGrammar/blob/main/pyproject.toml)
+    + [`uv.lock`](https://github.com/gasyoun/SanskritGrammar/blob/main/uv.lock) define a locked `uv`
+    workspace (ruling 13), so `uv sync --frozen` installs one exact dependency graph instead of
+    resolving lower bounds. `csl-pyutil` is now pinned by **immutable commit** `d6cbe911` — the
+    v0.9.0 *annotated tag object* is `4421880c`, a different SHA, and pinning the tag object is
+    what a mutable-tag pin looks like in practice. Node engine floor corrected `>=18.0` → `>=20.0`
+    (Docusaurus 3.10.2's actual requirement; the old floor advertised a version that cannot build).
+  - **A1 CLI:** installable [`sg_tooling`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/README.md)
+    with the five architecture layers (`cli`/`domain`/`adapters`/`generators`/`contracts`) and the
+    `sg pipeline list|check|run` contract. Exit codes are contractual (`0`/`1`/`3`/`4`) because CI
+    gates on them. Slice A registers **zero** content generators: the Wave-1 pilots register their
+    own through `generators.register`, which refuses duplicate command names.
+  - **A2 contracts:** [`pipeline.schema.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/pipeline.schema.json),
+    [`work.schema.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/work.schema.json),
+    and [`data/provenance.lock.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/provenance.lock.json).
+    Schema validation runs through real `jsonschema` when present and a bounded builtin subset
+    otherwise (the split `claims_schema_validate.py` already uses). Graph invariants JSON Schema
+    cannot express — unique step IDs, acyclic `needs`, one producer per output, no input/output
+    overlap — are checked separately. A manifest command must match a registered-operation pattern,
+    so shell text in YAML is rejected; `rights: unknown` stays representable and is never permission.
+  - **A4 discovery policy + tests:** [`src/discovery.mjs`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/discovery.mjs)
+    gains the explicit deny layer A3 promised but never implemented — denied path segments at any
+    depth (NFC-normalized, case-insensitive), denied filename suffixes, `draft`/`private`/`archived`/
+    `publish: false` front matter, and arbitrary root MDX — and now reports *why* a file is
+    unpublished instead of dropping it silently. Measured: **265 tracked `.mdx`, 0 denied**, 14 book
+    dirs unchanged, so the published set is byte-identical; the layer exists so a future
+    `git add`ed draft cannot publish merely by being tracked.
+  - **A4 test seams:** 68 Node tests (`npm run test:discovery` / `test:site`) covering the full
+    verification-doc fixture matrix plus the `rstTable` parser/AST and heading-anchor plugins, and
+    38 Python tests (`tests/contract/`, `tests/integration/`) pinning the contracts, the layer
+    boundaries, and the CLI exit codes. A `tsconfig.json` opt-in seam type-checks new `.d.ts`
+    contracts without converting any existing `.jsx` (ruling 14).
+### Fixed
+- **Non-ASCII MDX paths were invisible to `git ls-files | grep` audits.** `git ls-files` C-quotes
+  any path with non-ASCII bytes, so the line stops ending in `.mdx` and such an audit undercounts —
+  it reported 203 tracked MDX here against an actual 265, hiding 62 Cyrillic/IAST-named files.
+  `discovery.mjs` was already correct (`-z` + filtering in JS); the trap is now documented there so
+  a future audit does not "confirm" a wrong number.
 
 ## [0.121.5] - 2026-08-09
 ### Added

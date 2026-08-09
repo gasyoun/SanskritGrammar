@@ -1,0 +1,26 @@
+{
+  "//": "TypeScript seam for NEW and REFACTORED site code only (ruling 14, A4).",
+  "//2": "This is deliberately NOT a mass conversion: `include` lists the checked files one by one, and the ~30 untouched .jsx components stay unchecked until something touches them. `allowJs` + `checkJs: false` means a .mjs file can be imported by a checked file without itself being type-checked. Adding a file here is how a future slice opts in.",
+  "extends": "@docusaurus/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "es2022",
+    "types": ["node"]
+  },
+  "include": [
+    "src/types/site.d.ts",
+    "src/discovery.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    ".docusaurus"
+  ]
+}
