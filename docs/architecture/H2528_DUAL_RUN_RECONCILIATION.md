@@ -52,3 +52,10 @@ silently preferred.
 
 Remote CI and the deliberately-red control run remain required evidence before
 the handoff can close; missing remote evidence is inconclusive, never pass.
+
+First merged main run [#924](https://github.com/gasyoun/SanskritGrammar/actions/runs/31334163383)
+failed before checkout because `setup-uv` v9 uses immutable release tags and has
+no floating `v9` ref. Both downstream jobs were skipped, proving fail-closed
+ordering. Repair pins the official v9.0.0 action commit
+`c771a70e6277c0a99b617c7a806ffedaca235ff9`; this failed run is diagnostic, not
+the deliberately-red acceptance control.
