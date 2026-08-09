@@ -395,8 +395,11 @@ Paper status is tracked in the org inventory
   transcriptions (2022–2023), not scans of the 1885/1908 originals.
 - No license file governs the individual textbook contents. The repo-level
   [LICENSE](https://github.com/gasyoun/SanskritGrammar/blob/main/LICENSE) covers
-  the code/tooling here, **not** the third-party textbook text — check the
-  original publishers' rights before redistributing full texts.
+  the code/tooling here under MIT, **not** the third-party textbook text.
+  Text/source status therefore varies by work. An unrecorded or `unknown`
+  determination is a provenance gap, never permission; consult each work's
+  source notes and the original publication record before redistribution.
+
 
 ## Related
 
