@@ -114,7 +114,13 @@ const config = {
           { href: 'https://github.com/gasyoun/SanskritGrammar', label: 'GitHub', position: 'right' },
         ],
       },
-      footer: { style: 'dark', links: [], copyright: 'Digitized Sanskrit grammar sources · CC BY-SA 4.0' },
+      footer: {
+        style: 'dark',
+        links: [],
+        copyright:
+          'Repository code: <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LICENSE">MIT</a>. ' +
+          'Text and source rights vary by work; see the <a href="https://github.com/gasyoun/SanskritGrammar#caveats-found-in-the-source-files">work provenance notes</a>.',
+      },
     }),
 };
 

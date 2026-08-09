@@ -1,73 +1,130 @@
-name: CI
-
-# Pre-merge safety net: run the Python unit tests and a full Docusaurus build on
-# every PR and every push to main. The Pages deploy (deploy-pages.yml) only
-# builds AFTER a merge to main — this catches a broken build (e.g. the
-# @docusaurus version-skew that broke `docusaurus build`) on the PR instead.
+name: CI and same-SHA Pages
 
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      fail_required_gate:
+        description: Deliberately fail the required gate to prove deploy is blocked
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
+concurrency:
+  group: pages-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
-  pytest:
-    name: Python unit tests
+  quality:
+    name: Required Python, contract, frontend, and site gates
     runs-on: ubuntu-latest
+    outputs:
+      artifact_sha: ${{ steps.identity.outputs.sha }}
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
-          cache: pip
-      - name: Install deps
-        run: pip install -r scripts/requirements-dev.txt
-      - name: Run pytest
-        run: python -m pytest
-
-  # Blocking drift gates (H1840). Each step fails the job on nonzero exit.
-  # consolidation_ledger.json must be refreshed before --check starts green
-  # (see scripts/consolidation_ledger_refresh.py). H1842 claims schema is
-  # chained into npm run check-claims and also run here explicitly.
-  validators:
-    name: Pipeline validators (blocking)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: astral-sh/setup-uv@v9
         with:
-          python-version: '3.12'
-          cache: pip
-      - name: Install deps
-        run: pip install -r scripts/requirements-dev.txt
-      - name: refresh_published_figures --check
-        run: python scripts/refresh_published_figures.py --check
-      - name: check_claims_consistency
-        run: python scripts/check_claims_consistency.py
-      - name: claims_schema_validate --all
-        run: python scripts/claims_schema_validate.py --all
-      - name: check_denominator_commensurability
-        run: python scripts/check_denominator_commensurability.py
-      - name: toc_validate
-        run: python scripts/toc_validate.py
-      - name: article_validate --all
-        run: python scripts/article_validate.py --all
-      - name: consolidation_ledger_refresh --check
-        run: python scripts/consolidation_ledger_refresh.py --check
-
-  build:
-    name: Docusaurus build (smoke)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v7
+          enable-cache: true
       - uses: actions/setup-node@v7
         with:
-          node-version: 22        # LTS; webpack pin 5.97.1 keeps it green on newer Node
-      - name: Install
+          node-version: 22
+          cache: npm
+
+      - name: Install locked Python environment
+        run: uv sync --frozen
+      - name: Install locked Node environment
         run: npm ci
-      - name: Build (Docusaurus -> build/)
+      - name: Python unit tests
+        run: uv run python -m pytest
+      - name: Pipeline contract smoke
+        run: uv run sg pipeline list
+      - name: Pipeline validators
+        run: |
+          uv run python scripts/refresh_published_figures.py --check
+          uv run python scripts/check_claims_consistency.py
+          uv run python scripts/claims_schema_validate.py --all
+          uv run python scripts/check_denominator_commensurability.py
+          uv run python scripts/toc_validate.py
+          uv run python scripts/article_validate.py --all
+          uv run python scripts/consolidation_ledger_refresh.py --check
+      - name: Frontend and plugin tests
+        run: npm run test:site
+      - name: TypeScript seam
+        run: npm run typecheck
+      - name: Build site for this commit
         run: npm run build
+
+      # Dispatch main with fail_required_gate=true. A normal main dispatch is
+      # deploy-eligible, so this planted failure causally proves both downstream
+      # jobs are blocked before any deployable artifact exists.
+      - name: Deliberately red same-SHA control
+        if: ${{ inputs.fail_required_gate }}
+        run: |
+          echo "Intentional required-gate failure; Pages must not deploy this run."
+          exit 1
+
+      - id: identity
+        name: Record artifact commit
+        run: |
+          echo "${GITHUB_SHA}" > build/deployment-sha.txt
+          echo "sha=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
+      - name: Stage exact-SHA site artifact
+        if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-${{ github.sha }}
+          path: build
+          if-no-files-found: error
+          retention-days: 1
+
+  pages-artifact:
+    name: Verify and upload Pages artifact
+    if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+    needs: quality
+    runs-on: ubuntu-latest
+    outputs:
+      artifact_sha: ${{ steps.identity.outputs.sha }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v5
+        with:
+          name: site-${{ needs.quality.outputs.artifact_sha }}
+          path: build
+      - id: identity
+        name: Verify artifact belongs to this run SHA
+        run: |
+          test "$(tr -d '\r\n' < build/deployment-sha.txt)" = "${GITHUB_SHA}"
+          echo "sha=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
+      - uses: actions/configure-pages@v6
+      - name: Upload exact-SHA Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build
+
+  deploy:
+    name: Deploy gated Pages artifact
+    if: ${{ needs.pages-artifact.outputs.artifact_sha == github.sha }}
+    needs: pages-artifact
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        name: Deploy without rebuilding
+        uses: actions/deploy-pages@v5
+      - name: Record deployed SHA
+        run: echo "Deployed Pages artifact for ${GITHUB_SHA}" >> "${GITHUB_STEP_SUMMARY}"
