@@ -19,6 +19,11 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **H2528 Slice A completion:** independent Codex-vs-Fable adjudication, the
+  `apps/site` transition seam, canonical-only `site_tools.py`, neutral
+  code-versus-text rights presentation, and one exact-SHA CI→Pages chain with a
+  deliberately-red deployment control ([PR #849](https://github.com/gasyoun/SanskritGrammar/pull/849),
+  [PR #850](https://github.com/gasyoun/SanskritGrammar/pull/850)).
 - **H2309 Slice A (partial) — shared Wave-1 contracts: `uv` workspace, `sg_tooling`, pipeline/work/provenance
   schemas, and the discovery + plugin test suites.** Steps A1, A2 and A4 of the
   [architecture modernization implementation](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION.md);
