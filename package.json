@@ -14,6 +14,9 @@
     "pedagogy-export": "python scripts/build_pedagogy_export.py",
     "check-pedagogy-export": "python scripts/build_pedagogy_export.py --check",
     "quantifiers": "python scripts/harvest_quantifiers.py && python scripts/build_quantifiers.py",
+    "test:discovery": "node --test tests/site/discovery.test.mjs",
+    "test:site": "node --test tests/site/*.test.mjs",
+    "typecheck": "tsc --project tsconfig.json",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -34,7 +37,8 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "patch-package": "^8.0.1"
+    "patch-package": "^8.0.1",
+    "typescript": "5.9.3"
   },
   "overrides": {
     "webpack": "5.97.1"
@@ -52,6 +56,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=20.0"
   }
 }

@@ -34,7 +34,29 @@ export const DEFAULT_SKIP_DIRS = new Set([
   'pipelines',
   'packages',
   'apps',
+  'archive',
+  'archives',
+  'cache',
+  'draft',
+  'drafts',
+  'private',
+  'raw',
+  'review',
+  'scratch',
+  'source',
+  'sources',
+  'worktree',
+  'worktrees',
 ]);
+
+export function publicationDenialReason(file, skipDirs = DEFAULT_SKIP_DIRS) {
+  const segments = file.split('/');
+  if (segments.length < 2) return 'root MDX is outside an approved content zone';
+  const denied = segments.find(
+    (segment) => skipDirs.has(segment.toLowerCase()) || segment.startsWith('.'),
+  );
+  return denied ? `denied path segment: ${denied}` : null;
+}
 
 function runGit(cwd, args) {
   try {
@@ -100,9 +122,9 @@ export function discoverIgnoredMdx(cwd = process.cwd(), skipDirs = DEFAULT_SKIP_
 
 export function discoverBookDirs(trackedMdx, skipDirs = DEFAULT_SKIP_DIRS) {
   const dirs = new Set();
-  for (const path of trackedMdx) {
-    const top = path.split('/')[0];
-    if (!top || skipDirs.has(top) || top.startsWith('.')) continue;
+  for (const file of trackedMdx) {
+    if (publicationDenialReason(file, skipDirs)) continue;
+    const top = file.split('/')[0];
     dirs.add(top);
   }
   return [...dirs].sort();
@@ -136,5 +158,8 @@ export function discoverSite(cwd = process.cwd(), skipDirs = DEFAULT_SKIP_DIRS) 
     exclude: discoverExcludePatterns(ignoredMdx),
     trackedCount: trackedMdx.length,
     ignoredCount: ignoredMdx.length,
+    denied: trackedMdx
+      .map((file) => ({file, reason: publicationDenialReason(file, skipDirs)}))
+      .filter((item) => item.reason !== null),
   };
 }

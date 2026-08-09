@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gasyoun.github.io/SanskritGrammar/contracts/work.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "authority", "source_pointers", "generated_roots", "media_roots", "routes", "rights", "pipelines"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
+    "authority": {"type": "string", "minLength": 1},
+    "source_pointers": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "generated_roots": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "media_roots": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "routes": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "rights": {
+      "type": "object", "additionalProperties": false, "required": ["status", "statement"],
+      "properties": {
+        "status": {"enum": ["unknown", "public-domain", "licensed", "restricted"]},
+        "statement": {"type": "string"},
+        "source": {"type": "string"}
+      }
+    },
+    "pipelines": {"type": "array", "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}, "uniqueItems": true}
+  }
+}
+

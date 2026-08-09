@@ -1,0 +1,26 @@
+[project]
+name = "sanskritgrammar"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+  "csl-pyutil @ git+https://github.com/sanskrit-lexicon/csl-pyutil@d6cbe911cb65191d4b8abc77cc2c67533230e8a7",
+  "indic-transliteration==2.3.75",
+  "jsonschema==4.25.1",
+  "python-docx==1.2.0",
+  "PyYAML==6.0.3",
+  "scipy==1.17.0",
+  "sg-tooling",
+]
+
+[dependency-groups]
+dev = ["pytest==9.0.2"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+sg-tooling = { workspace = true }
+
+[tool.uv.workspace]
+members = ["packages/sg_tooling"]
+
