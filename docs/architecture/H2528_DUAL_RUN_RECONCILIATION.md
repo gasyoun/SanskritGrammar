@@ -50,8 +50,19 @@ silently preferred.
 - `tests/test_same_sha_workflow.py` — 3 passed, including the planted-red
   control ordering and the no-rebuild deploy assertion.
 
-Remote CI and the deliberately-red control run remain required evidence before
-the handoff can close; missing remote evidence is inconclusive, never pass.
+## Remote same-SHA evidence
+
+- Delivery: [PR #849](https://github.com/gasyoun/SanskritGrammar/pull/849),
+  repaired by [PR #850](https://github.com/gasyoun/SanskritGrammar/pull/850).
+- Green main run [#928](https://github.com/gasyoun/SanskritGrammar/actions/runs/31334518093)
+  on `132a620d368dae88b2c9db08161f1ecedd646aec`: required quality job passed,
+  the downloaded artifact's `deployment-sha.txt` matched `github.sha`, the
+  Pages artifact uploaded, and deploy consumed it without checkout or rebuild.
+- Deliberately-red control [#930](https://github.com/gasyoun/SanskritGrammar/actions/runs/31334671187)
+  on the same SHA: all substantive gates and build passed; the planted step
+  failed; identity/staging, Pages artifact, and deploy were skipped.
+
+Verdict: **PASS** for the same-SHA gate and its negative control.
 
 First merged main run [#924](https://github.com/gasyoun/SanskritGrammar/actions/runs/31334163383)
 failed before checkout because `setup-uv` v9 uses immutable release tags and has
