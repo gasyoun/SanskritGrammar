@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.121.6] - 2026-08-13
 ### Added
 - **H2492 Grammar Lab G1 — Whitney + Zalizniak evidence graph.** Versioned
   bundle under [`data/grammar_lab/`](data/grammar_lab/): 32 publishable
