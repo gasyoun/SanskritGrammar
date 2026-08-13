@@ -18,6 +18,8 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+## [0.122.0] - 2026-08-09
 ### Added
 - **H2309 Slice A (partial) — shared Wave-1 contracts: `uv` workspace, `sg_tooling`, pipeline/work/provenance
   schemas, and the discovery + plugin test suites.** Steps A1, A2 and A4 of the
