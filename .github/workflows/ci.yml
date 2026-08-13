@@ -55,6 +55,7 @@ jobs:
           uv run python scripts/toc_validate.py
           uv run python scripts/article_validate.py --all
           uv run python scripts/consolidation_ledger_refresh.py --check
+          uv run python scripts/build_grammar_lab.py --check
       - name: Frontend and plugin tests
         run: npm run test:site
       - name: TypeScript seam

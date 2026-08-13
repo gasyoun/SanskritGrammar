@@ -1,0 +1,19 @@
+id: ex:grammar-lab:perfect-strong-weak
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:perfect-strong-weak
+risk_class: deterministic
+status: published
+prompt_ru: 3 pl перфекта от kṛ — это…
+choices:
+- cakāra
+- cakruḥ
+- akārṣīt
+answer: cakruḥ
+answer_normalized: cakruḥ
+distractors:
+- cakāra
+- akārṣīt
+approval_record: null
+source_ids:
+- whitney-sec:781-823
+- zalizniak-1975:morphological-positions

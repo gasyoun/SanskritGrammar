@@ -1,0 +1,19 @@
+id: ex:grammar-lab:samprasarana
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:samprasarana
+risk_class: deterministic
+status: published
+prompt_ru: Слабая ступень корня vac «говорить» — это…
+choices:
+- vac
+- uc / ukta
+- vāc
+answer: uc / ukta
+answer_normalized: uc / ukta
+distractors:
+- vac
+- vāc
+approval_record: null
+source_ids:
+- whitney-sec:252
+- zalizniak-1975:samprasarana

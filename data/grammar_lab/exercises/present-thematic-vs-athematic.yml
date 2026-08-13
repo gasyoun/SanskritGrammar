@@ -1,0 +1,17 @@
+id: ex:grammar-lab:present-thematic-vs-athematic
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-thematic-vs-athematic
+risk_class: deterministic
+status: published
+prompt_ru: bhavati — форма…
+choices:
+- тематическая
+- атематическая
+answer: тематическая
+answer_normalized: тематическая
+distractors:
+- атематическая
+approval_record: null
+source_ids:
+- whitney-sec:599-606
+- zalizniak-1975:morphological-positions

@@ -1,0 +1,19 @@
+id: ex:grammar-lab:ppp-ta-na
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:ppp-ta-na
+risk_class: deterministic
+status: published
+prompt_ru: PPP от kṛ — это…
+choices:
+- kārtaḥ
+- kṛtaḥ
+- karitaḥ
+answer: kṛtaḥ
+answer_normalized: kṛtaḥ
+distractors:
+- kārtaḥ
+- karitaḥ
+approval_record: null
+source_ids:
+- whitney-sec:952-956
+- zalizniak-1975:morphological-positions

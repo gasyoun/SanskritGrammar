@@ -1,0 +1,17 @@
+id: ex:grammar-lab:present-aya-class
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-aya-class
+risk_class: deterministic
+status: published
+prompt_ru: kārayati — это прежде всего…
+choices:
+- первичный X класс без каузации
+- каузатив на -aya
+answer: каузатив на -aya
+answer_normalized: каузатив на -aya
+distractors:
+- первичный X класс без каузации
+approval_record: null
+source_ids:
+- whitney-sec:775
+- whitney-sec:1041-1052

@@ -1,6 +1,6 @@
 # Plan — SanskritGrammar Grammar Lab concordance and paid learner service (2026 H2)
 
-_Created: 09-08-2026 · Last updated: 09-08-2026_
+_Created: 09-08-2026 · Last updated: 13-08-2026_
 
 This is the cover/index for the execution-ready `/ask` plan that turns the existing
 SanskritGrammar concordances, indexes, dictionary links, and corpus evidence into a paid
@@ -100,7 +100,7 @@ The four handoffs are serial-safe at their boundaries:
 
 | Lane | Handoff | Dependency |
 |---|---|---|
-| G1 | [H2492 (Grok 4.5) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md) | This plan |
+| G1 | [H2492 (Grok 4.6) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md) | This plan — **shipped 13-08-2026** (32 topics) |
 | G2 | [H2493 (Grok 4.5) — Grammar Lab G2: Systema import, explorer, and offline hybrid search](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2493-Grok_Systema-Sanscriticum_grammar-lab-g2-systema-search-ui_09.08.26.md) | G1 merged |
 | G3 | [H2494 (Grok 4.5) — Grammar Lab G3: risk-tiered drills, FSRS, mastery, and recommendations](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2494-Grok_Systema-Sanscriticum_grammar-lab-g3-learning-loop_09.08.26.md) | G2 stable topic/import contract merged |
 | G4 | [H2495 (Grok 4.5) — Grammar Lab G4: hybrid entitlement, sandbox matrix, and learner pilot](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2495-Grok_Systema-Sanscriticum_grammar-lab-g4-entitlement-pilot_09.08.26.md) | G2 + G3 merged |

@@ -1,0 +1,19 @@
+id: ex:grammar-lab:passive-ya
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:passive-ya
+risk_class: deterministic
+status: published
+prompt_ru: Пассив 3 sg от kṛ — это…
+choices:
+- karoti
+- kriyate
+- kāryate
+answer: kriyate
+answer_normalized: kriyate
+distractors:
+- karoti
+- kāryate
+approval_record: null
+source_ids:
+- whitney-sec:768-774
+- zalizniak-1975:morphological-positions

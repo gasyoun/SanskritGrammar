@@ -1,0 +1,121 @@
+id: subject:grammar-lab:alternation-series
+schema_version: 1.0.0
+status: published
+title_ru: Ряды чередования A–N
+cluster: alternation
+aliases:
+  ru:
+  - ряд чередования
+  - ряд A
+  - ряд I
+  - ряд U
+  - ряд R
+  deva:
+  - गुणनपङ्क्ति
+  iast:
+  - ablaut series
+  - A-series
+  - I-series
+  - U-series
+  slp1:
+  - A1
+  - I1
+  - U1
+  - R1
+summary_ru: 'Зализняк группирует корни по чередующемуся элементу: ряды A, I, U, R,
+  L, M, N с индексами 1/2. Уитни тех же чередований касается по гласным и по отдельным
+  корням, но ряда как классификационного ключа не строит. Подписные варианты I0/M0
+  из базы /z/ — ошибка обработки, не категория Зализняка.'
+alignment_note: Series is a Zalizniak abstraction. Whitney has the vowels, not the
+  series calculus.
+prerequisites:
+- subject:grammar-lab:ablaut-grades
+difficulty: intermediate
+sources:
+- anchor_type: whitney-sec
+  anchor_id: whitney-sec:235-243
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: SanskritGrammar/WhitneyGrammar_1889
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:table-1
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:table-2
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:60
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-2004
+  anchor_id: zalizniak-2004:three-grade
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakKonspekt_2004
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: whitney-root
+  anchor_id: whitney-root:427
+  anchor_key_slp1: nI
+  target_locus: subject:grammar-lab:alternation-series
+  link_type: thematic
+  source_dataset: WhitneyRoots/crosswalk/roots.csv
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+dictionary_evidence:
+- kind: dictionary
+  dict: mw
+  entry_id: mw:111189
+  root_slp1: nI
+  whitney_no: 427
+  gloss: lead
+  homonym: ''
+corpus_evidence:
+- kind: corpus
+  status: attested
+  corpus_snapshot: WhitneyRoots/crosswalk/roots.csv@b453ce0e dcs_freq
+  query: whitney_no=427 root_slp1=nI
+  dcs_freq: 2350
+  dcs_rank: 55
+  attested_forms: nayet:180|nītvā:164|nayati:123|naya:121|nayanti:107|nītā:76|nināya:75|nīyate:73
+  limitation: DCS token counts from the pinned WhitneyRoots roots.csv fold (revision
+    b453ce0e); absence is snapshot-limited, not linguistic impossibility. Homonymous
+    roster rows may share a folded frequency.
+exercise_ids:
+- ex:grammar-lab:alternation-series
+provenance:
+  curated_date: 13-08-2026
+  curator: Grok 4.6 (grok-4.6) H2492
+  source_snapshot: WhitneyRoots@b453ce0e739c761aa0e32a1df6200d9875b148a5 roots.csv
+  notes: Series is a Zalizniak abstraction. Whitney has the vowels, not the series
+    calculus.

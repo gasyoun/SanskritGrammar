@@ -1,0 +1,19 @@
+id: ex:grammar-lab:infinitive-tum
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:infinitive-tum
+risk_class: deterministic
+status: published
+prompt_ru: Инфинитив от kṛ — это…
+choices:
+- kṛtum
+- kartum
+- kārtum
+answer: kartum
+answer_normalized: kartum
+distractors:
+- kṛtum
+- kārtum
+approval_record: null
+source_ids:
+- whitney-sec:968
+- zalizniak-1975:morphological-positions

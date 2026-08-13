@@ -1,0 +1,21 @@
+id: ex:grammar-lab:root-type-ii
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-type-ii
+risk_class: deterministic
+status: published
+prompt_ru: Какой тип 1975 у jñā (jñātaḥ, не *jñitaḥ)?
+choices:
+- I
+- II
+- III
+- IV
+answer: II
+answer_normalized: ii
+distractors:
+- I
+- III
+- IV
+approval_record: null
+source_ids:
+- whitney-sec:952-956
+- zalizniak-1975:type-ii

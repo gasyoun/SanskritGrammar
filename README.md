@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 19-07-2026_
+_Created: 05-07-2026 · Last updated: 13-08-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Apte's syntax reference, Bühler's exercise course, Gasūns's
@@ -216,6 +216,30 @@ regenerate the full per-`.mdx` list any time with `python scripts/site_tools.py 
 - [Subject concordance — what each grammar covers, on Whitney's spine](https://gasyoun.github.io/SanskritGrammar/grammars/SubjectConcordance/catalog)
 
 Locally (`npm start`) the same routes serve from `http://localhost:3000/SanskritGrammar/…`.
+
+## Grammar Lab — Whitney + Zalizniak evidence bundle (H2492)
+
+Wave-1 data contract for the paid Systema Grammar Lab: a neutral topic graph
+over root alternation and verbal morphology. SanskritGrammar owns the versioned
+static bundle; Systema imports it (G2).
+
+| Path | Role |
+|---|---|
+| [data/grammar_lab/topics/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/topics/) | 32 published YAML topics + 1 `needs_review` omit |
+| [data/grammar_lab/export/grammar_lab.json](https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/export/grammar_lab.json) | Consumer bundle |
+| [data/grammar_lab/export/typed_links.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/export/typed_links.tsv) | Type-D edges |
+| [data/grammar_lab/export/manifest.json](https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/export/manifest.json) | Semver + sha256 feeds |
+| [data/grammar_lab/loci/IDENTIFIER_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/loci/IDENTIFIER_AUDIT.md) | Whitney reuse + Zalizniak locus rules |
+
+```sh
+python scripts/grammar_lab_inventory.py --emit   # regenerate curated YAML from the inventory table
+python scripts/build_grammar_lab.py              # bundle, Type-D TSV, vectors, queries, manifest
+python scripts/build_grammar_lab.py --check      # hash + evidence-contract gate (also in CI)
+python -m pytest tests/test_grammar_lab.py
+```
+
+Plan: [PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md).
+G2–G4 stay in Systema.
 
 ## Concordance — shared exercise sentences (Bühler / Knauer / Kochergina)
 

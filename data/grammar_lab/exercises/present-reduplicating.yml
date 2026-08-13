@@ -1,0 +1,21 @@
+id: ex:grammar-lab:present-reduplicating
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-reduplicating
+risk_class: deterministic
+status: published
+prompt_ru: juhoti — презенс какого традиционного класса?
+choices:
+- I
+- II
+- III
+- VII
+answer: III
+answer_normalized: iii
+distractors:
+- I
+- II
+- VII
+approval_record: null
+source_ids:
+- whitney-sec:642-682
+- zalizniak-1975:morphological-positions

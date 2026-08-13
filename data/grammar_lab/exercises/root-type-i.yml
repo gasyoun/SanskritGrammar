@@ -1,0 +1,21 @@
+id: ex:grammar-lab:root-type-i
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-type-i
+risk_class: deterministic
+status: published
+prompt_ru: Какой тип 1975 у kṛ (kṛtaḥ / kartum)?
+choices:
+- I
+- II
+- III
+- IV
+answer: I
+answer_normalized: i
+distractors:
+- II
+- III
+- IV
+approval_record: null
+source_ids:
+- whitney-sec:235-243
+- whitney-sec:952-956

@@ -1,0 +1,19 @@
+id: ex:grammar-lab:present-nu-class
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-nu-class
+risk_class: deterministic
+status: published
+prompt_ru: Презенс 3 sg от śru — это…
+choices:
+- śravati
+- śṛṇoti
+- śṛṇāti
+answer: śṛṇoti
+answer_normalized: śṛṇoti
+distractors:
+- śravati
+- śṛṇāti
+approval_record: null
+source_ids:
+- whitney-sec:697-716
+- zalizniak-1975:morphological-positions
