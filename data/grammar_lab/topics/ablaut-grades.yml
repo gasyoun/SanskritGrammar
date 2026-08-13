@@ -1,0 +1,118 @@
+id: subject:grammar-lab:ablaut-grades
+schema_version: 1.0.0
+status: published
+title_ru: Три ступени чередования
+cluster: grade
+aliases:
+  ru:
+  - гуна
+  - вриддхи
+  - нулевая ступень
+  - три ступени
+  deva:
+  - गुण
+  - वृद्धि
+  iast:
+  - guṇa
+  - vṛddhi
+  - zero-grade
+  slp1:
+  - guRa
+  - vfdDi
+summary_ru: 'Whitney описывает guṇa и vṛddhi как последовательные усиления гласного
+  (§§235–243) без нулевой ступени как члена той же шкалы. Зализняк 1975/1978/2004
+  задаёт трёхчленную шкалу слабая / guṇa / vṛddhi. Это один наблюдаемый факт (три
+  огласовки) и две разные модели: у Уитни нет абстракции «ряда» и нет нуля как обязательного
+  третьего члена.'
+alignment_note: Shared phenomenon, different models. Do not equate Whitney increment
+  with 1975 position.
+prerequisites: []
+difficulty: intro
+sources:
+- anchor_type: whitney-sec
+  anchor_id: whitney-sec:235-243
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: SanskritGrammar/WhitneyGrammar_1889
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:three-grade-alternation
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:table-1
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:50
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-2004
+  anchor_id: zalizniak-2004:three-grade
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakKonspekt_2004
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: whitney-root
+  anchor_id: whitney-root:106
+  anchor_key_slp1: kf
+  target_locus: subject:grammar-lab:ablaut-grades
+  link_type: thematic
+  source_dataset: WhitneyRoots/crosswalk/roots.csv
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+dictionary_evidence:
+- kind: dictionary
+  dict: mw
+  entry_id: mw:54148
+  root_slp1: kf
+  whitney_no: 106
+  gloss: make
+  homonym: '1'
+corpus_evidence:
+- kind: corpus
+  status: attested
+  corpus_snapshot: WhitneyRoots/crosswalk/roots.csv@b453ce0e dcs_freq
+  query: whitney_no=106 root_slp1=kf
+  dcs_freq: 40799
+  dcs_rank: 1
+  attested_forms: kṛtvā:6008|kuryāt:2720|kṛta:2601|karoti:2396|kṛtam:1646|kurute:1170|kṛtaṃ:1052|kuru:878
+  limitation: DCS token counts from the pinned WhitneyRoots roots.csv fold (revision
+    b453ce0e); absence is snapshot-limited, not linguistic impossibility. Homonymous
+    roster rows may share a folded frequency.
+exercise_ids:
+- ex:grammar-lab:ablaut-grades
+provenance:
+  curated_date: 13-08-2026
+  curator: Grok 4.6 (grok-4.6) H2492
+  source_snapshot: WhitneyRoots@b453ce0e739c761aa0e32a1df6200d9875b148a5 roots.csv
+  notes: Shared phenomenon, different models. Do not equate Whitney increment with
+    1975 position.

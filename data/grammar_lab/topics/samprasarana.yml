@@ -1,0 +1,110 @@
+id: subject:grammar-lab:samprasarana
+schema_version: 1.0.0
+status: published
+title_ru: Саспрасарана
+cluster: alternation
+aliases:
+  ru:
+  - сампрасарана
+  - вокализация сонанта
+  deva:
+  - सम्प्रसारण
+  iast:
+  - samprasāraṇa
+  - samprasarana
+  slp1:
+  - samprasAraRa
+summary_ru: Саспрасарана — чередование ya/va/ra в полной ступени с i/u/ṛ в слабой
+  (yaj / iṣṭaḥ, vac / uktaḥ, svap / suptaḥ). Уитни §252; Зализняк 1975 как ряды YA/VA/RA;
+  очерк §50/52. Это не отдельный презентный класс.
+alignment_note: Same named process in both spines.
+prerequisites:
+- subject:grammar-lab:alternation-series
+difficulty: intermediate
+sources:
+- anchor_type: whitney-sec
+  anchor_id: whitney-sec:252
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: SanskritGrammar/WhitneyGrammar_1889
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:samprasarana
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:50
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:52
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-2004
+  anchor_id: zalizniak-2004:three-grade
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakKonspekt_2004
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: whitney-root
+  anchor_id: whitney-root:699
+  anchor_key_slp1: vac
+  target_locus: subject:grammar-lab:samprasarana
+  link_type: thematic
+  source_dataset: WhitneyRoots/crosswalk/roots.csv
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+dictionary_evidence:
+- kind: dictionary
+  dict: mw
+  entry_id: mw:184615
+  root_slp1: vac
+  whitney_no: 699
+  gloss: speak
+  homonym: ''
+corpus_evidence:
+- kind: corpus
+  status: attested
+  corpus_snapshot: WhitneyRoots/crosswalk/roots.csv@b453ce0e dcs_freq
+  query: whitney_no=699 root_slp1=vac
+  dcs_freq: 33948
+  dcs_rank: 4
+  attested_forms: uvāca:13880|ucyate:2868|uktam:2586|uktvā:2372|uktaḥ:1698|ūcuḥ:889|ukta:789|uktaṃ:704
+  limitation: DCS token counts from the pinned WhitneyRoots roots.csv fold (revision
+    b453ce0e); absence is snapshot-limited, not linguistic impossibility. Homonymous
+    roster rows may share a folded frequency.
+exercise_ids:
+- ex:grammar-lab:samprasarana
+provenance:
+  curated_date: 13-08-2026
+  curator: Grok 4.6 (grok-4.6) H2492
+  source_snapshot: WhitneyRoots@b453ce0e739c761aa0e32a1df6200d9875b148a5 roots.csv
+  notes: Same named process in both spines.

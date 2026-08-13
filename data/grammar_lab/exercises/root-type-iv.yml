@@ -1,0 +1,17 @@
+id: ex:grammar-lab:root-type-iv
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-type-iv
+risk_class: deterministic
+status: published
+prompt_ru: Тип IV статьи 1975 — это то же, что IV класс Уитни (divyati)?
+choices:
+- да
+- нет
+answer: нет
+answer_normalized: нет
+distractors:
+- да
+approval_record: null
+source_ids:
+- whitney-sec:235-243
+- zalizniak-1975:type-iv

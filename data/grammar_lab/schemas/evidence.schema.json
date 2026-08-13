@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/schemas/evidence.schema.json",
+  "title": "Grammar Lab published-topic evidence contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "topic_id",
+    "has_whitney",
+    "has_zalizniak",
+    "has_dictionary",
+    "has_corpus",
+    "has_exercise",
+    "has_four_script_aliases",
+    "publishable"
+  ],
+  "properties": {
+    "topic_id": {"type": "string"},
+    "has_whitney": {"type": "boolean"},
+    "has_zalizniak": {"type": "boolean"},
+    "has_dictionary": {"type": "boolean"},
+    "has_corpus": {"type": "boolean"},
+    "has_exercise": {"type": "boolean"},
+    "has_four_script_aliases": {"type": "boolean"},
+    "publishable": {"type": "boolean"},
+    "omissions": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,17 @@
+id: ex:grammar-lab:present-ya-class
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-ya-class
+risk_class: deterministic
+status: published
+prompt_ru: manyate — это презенс IV класса или пассив?
+choices:
+- IV класс от man
+- пассив от man
+answer: IV класс от man
+answer_normalized: iv класс от man
+distractors:
+- пассив от man
+approval_record: null
+source_ids:
+- whitney-sec:759-767
+- zalizniak-1975:morphological-positions

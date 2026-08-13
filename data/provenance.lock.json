@@ -12,6 +12,17 @@
       "path": "csl_pyutil",
       "rights": "publishable-derived-input",
       "consumers": ["pipeline:repo-visa-sheet"]
+    },
+    {
+      "id": "external:whitneyroots-roots-csv",
+      "owner": "gasyoun/WhitneyRoots",
+      "repository": "https://github.com/gasyoun/WhitneyRoots",
+      "revision": "b453ce0e739c761aa0e32a1df6200d9875b148a5",
+      "revision_label": "roots.csv pin for Grammar Lab G1",
+      "revision_note": "Dictionary/corpus evidence cards consume a committed slice at data/grammar_lab/pins/whitneyroots_roots_slice.csv. The sibling checkout is not a CI input.",
+      "path": "crosswalk/roots.csv",
+      "rights": "publishable-derived-input",
+      "consumers": ["pipeline:grammar-lab-g1"]
     }
   ]
 }

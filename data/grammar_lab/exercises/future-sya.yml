@@ -1,0 +1,19 @@
+id: ex:grammar-lab:future-sya
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:future-sya
+risk_class: deterministic
+status: published
+prompt_ru: Будущее от bhū — это…
+choices:
+- bhūsyati
+- bhaviṣyati
+- bhavsyati
+answer: bhaviṣyati
+answer_normalized: bhaviṣyati
+distractors:
+- bhūsyati
+- bhavsyati
+approval_record: null
+source_ids:
+- whitney-sec:931-940
+- zalizniak-1975:morphological-positions

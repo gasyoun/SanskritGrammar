@@ -1,0 +1,13 @@
+id: ex:grammar-lab:type-vs-class-essay
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-type-i
+risk_class: interpretive
+status: approval-required
+prompt_ru: Почему тип I Зализняка 1975 нельзя отождествлять с I презентным классом
+  Уитни? Ответьте кратко по обеим осям.
+answer: Тип описывает чередование по позициям; класс — устройство презенсной основы.
+answer_normalized: type=ablaut-by-position; class=present-stem
+approval_record: null
+source_ids:
+- zalizniak-1975:type-i
+- whitney-sec:733-758

@@ -1,0 +1,17 @@
+id: ex:grammar-lab:attested-vs-predicted
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:attested-vs-predicted
+risk_class: deterministic
+status: published
+prompt_ru: dcs_freq = 0 в pin-срезе значит…
+choices:
+- форма невозможна
+- в этом снимке нет токенов
+answer: в этом снимке нет токенов
+answer_normalized: в этом снимке нет токенов
+distractors:
+- форма невозможна
+approval_record: null
+source_ids:
+- whitney-sec:98-100
+- zalizniak-1975:inventory-scope

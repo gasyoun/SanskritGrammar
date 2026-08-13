@@ -1,0 +1,57 @@
+id: subject:grammar-lab:fixture-valid
+schema_version: "1.0.0"
+status: published
+title_ru: Фикстура валидной темы
+cluster: grade
+aliases:
+  ru: [фикстура]
+  deva: [गुण]
+  iast: [guṇa]
+  slp1: [guRa]
+summary_ru: Достаточно длинное резюме фикстуры, чтобы пройти минимальную длину схемы.
+prerequisites: []
+difficulty: intro
+sources:
+  - anchor_type: whitney-sec
+    anchor_id: whitney-sec:235-243
+    anchor_key_slp1: ""
+    target_locus: subject:grammar-lab:fixture-valid
+    link_type: thematic
+    source_dataset: SanskritGrammar/WhitneyGrammar_1889
+    match_method: curated
+    confidence: 0.97
+    evidence_count: null
+    date: 13-08-2026
+  - anchor_type: zalizniak-1978-sec
+    anchor_id: zalizniak-1978-sec:50
+    anchor_key_slp1: ""
+    target_locus: subject:grammar-lab:fixture-valid
+    link_type: thematic
+    source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+    match_method: curated
+    confidence: 0.97
+    evidence_count: null
+    date: 13-08-2026
+dictionary_evidence:
+  - kind: dictionary
+    dict: mw
+    entry_id: mw:54148
+    root_slp1: kf
+    whitney_no: 106
+    gloss: make
+    homonym: "1"
+corpus_evidence:
+  - kind: corpus
+    status: attested
+    corpus_snapshot: pin
+    query: whitney_no=106
+    dcs_freq: 1
+    dcs_rank: 1
+    attested_forms: kṛta:1
+    limitation: Snapshot-limited DCS fold; not a claim of impossibility.
+exercise_ids:
+  - ex:grammar-lab:fixture-valid
+provenance:
+  curated_date: 13-08-2026
+  curator: fixture
+  source_snapshot: fixture

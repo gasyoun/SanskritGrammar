@@ -1,0 +1,17 @@
+id: ex:grammar-lab:root-variants
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-variants
+risk_class: deterministic
+status: published
+prompt_ru: dham и dhmā в классификации 1975 считаются…
+choices:
+- одним узлом
+- двумя вариантами-узлами одной парадигмы
+answer: двумя вариантами-узлами одной парадигмы
+answer_normalized: двумя вариантами-узлами одной парадигмы
+distractors:
+- одним узлом
+approval_record: null
+source_ids:
+- whitney-sec:251
+- zalizniak-1975:root-variants

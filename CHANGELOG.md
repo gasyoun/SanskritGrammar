@@ -19,6 +19,12 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 ### Added
+- **H2492 Grammar Lab G1 — Whitney + Zalizniak evidence graph.** Versioned
+  bundle under [`data/grammar_lab/`](data/grammar_lab/): 32 publishable
+  root-alternation/verbal-morphology topics, Type-D TSV, frozen 192-query
+  set, offline topic vectors, `scripts/build_grammar_lab.py` build/`--check`,
+  and `scripts/grammar_lab_embed.py`. Zalizniak 1975/2004 section loci are a
+  deterministic registry (those works have no native §§); 1978 reuses `sN`.
 - **H2528 Slice A completion:** independent Codex-vs-Fable adjudication, the
   `apps/site` transition seam, canonical-only `site_tools.py`, neutral
   code-versus-text rights presentation, and one exact-SHA CI→Pages chain with a
