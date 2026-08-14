@@ -87,6 +87,13 @@ attempt → mastery → SRS/recommendation works end-to-end with reversible cont
 **Exit:** sandbox entitlement matrix green; pilot can run without a production charge; pilot
 readout and human activation packet exist; all production switches remain OFF.
 
+**Status 14-08-2026 (H2495):** shipped in Systema
+[PR #1665](https://github.com/gasyoun/Systema-Sanscriticum/pull/1665) — `canUse()` resolves
+course / subscription / admin / pilot grants identically; expiry and revocation deny;
+`grammar-lab:rehearse-entitlement` sandbox matrix; consent + instrumentation dark behind
+`GRAMMAR_LAB_PILOT`; activation packet and “pilot not human-authorized” readout committed.
+No production charge or flag flip.
+
 ## Required sequencing and merge discipline
 
 ```text
