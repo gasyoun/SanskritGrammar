@@ -1,6 +1,6 @@
 # revision-2026 — рабочие материалы подготовки печатного издания 2026 г.
 
-_Created: 07-07-2026 · Last updated: 16-07-2026_
+_Created: 07-07-2026 · Last updated: 17-08-2026_
 
 Working notes for the 2026 print edition of Gasūns, «Состав и строй древнеиндийских корней»
 ([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
@@ -45,5 +45,32 @@ These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only i
 | [mw_genuine_roots_list.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md) | Печатный компактный список 750 подлинных (★, по алфавиту; классы · частота DCS · словари · периоды) |
 | [mw_genuine_roots_enrich_provenance.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_enrich_provenance.json) | Сводка: покрытие (482/750 DCS-аттест., 294 ядро / 101 хвост из 704), распределение по периодам (RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437), топ-20 по частоте |
 | [mw_genuine_roots_print_sheet.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py) → `APPENDIX7_PRINT_SHEET.html` | Печатный лист A4 (трёхколоночная вёрстка всех 750 корней, по образцу листов опечаток H993) — отдельный носитель, тело книги не тронуто (MG Route 2, H1018) |
+
+## Заморозочная оснастка — два предподачных прохода (H2871)
+
+Между авторской проверкой review-docx ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md))
+и рабочей заморозкой **31-10-2026** стоят два прохода: ГОСТ по библиографии и финальная
+сверка чисел. Оба теперь машинные — на день заморозки остается «запустить два скрипта и
+прочитать два отчета», а не изобретать две методики под сроком.
+
+**Оба checker-а только читают.** Ни один не правит рукопись: проза авторская (H275),
+review-docx под автором и не перегенерируется. Невмешательство закреплено тестом
+[tests/test_m03_freeze_harness.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_m03_freeze_harness.py).
+
+| File | What it is |
+|---|---|
+| [gost_bibliography_check.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/gost_bibliography_check.py) | ГОСТ Р 7.0.100-2018 по 525 записям библиографии (`G0`–`G12`: нумерация, год сиглы против выходных данных, предписанная пунктуация, инициалы, аналитическое описание, артефакты конвертации) + целостность ссылочного аппарата (`R1`–`R3`, `A1`–`A2`: 1 049 внутритекстовых `[Автор Год]` против списка и против «Принятых сокращений») |
+| [GOST_BIBLIOGRAPHY_DRYRUN_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GOST_BIBLIOGRAPHY_DRYRUN_REPORT.md) | Его сухой прогон по текущей рукописи, 17-08-2026 — **инвентарь, не правки** |
+| [numbers_crosscheck.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/numbers_crosscheck.py) | Сверка чисел (`N1` производные колонки таблиц · `N2` проценты · `N3` арифметика в прозе · `N4` внутренние перекрестные ссылки и список иллюстраций · `N5` привязка к `*_provenance.json` 2026 г. · `N6` дрейф мультимножества чисел против git-ревизии — та проверка H1259, что жила только в теле PR) |
+| [NUMBERS_CROSSCHECK_DRYRUN_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/NUMBERS_CROSSCHECK_DRYRUN_REPORT.md) | Его сухой прогон, 17-08-2026 |
+| [numbers_anchor_map.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/numbers_anchor_map.json) | Пин `N5`: какие числа провенанс-джейсонов рукопись цитирует и в каких строках. Генерируется `--update-map`, руками не правится |
+| [m03_checkers_common.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/m03_checkers_common.py) | Общая подложка обоих: состав файлов рукописи, снятие MDX-шума, нормализация чисел |
+| [M03_FREEZE_HARNESS_SPOTCHECK.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/M03_FREEZE_HARNESS_SPOTCHECK.md) | Ручная сверка по три позиции из каждого отчета (приемка H2871) |
+
+```
+cd GasunsDhatu_2014/revision-2026
+python gost_bibliography_check.py
+python numbers_crosscheck.py
+```
 
 _Dr. Mārcis Gasūns_
