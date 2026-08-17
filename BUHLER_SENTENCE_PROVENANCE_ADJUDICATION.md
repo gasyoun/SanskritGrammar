@@ -169,8 +169,7 @@ stated.** Classifying those 765 entries:
 | explicit grammatical labels (`Part. praes. Ātm`) | 109 |
 | derivation / alternation pairs (`dhū -- dhuva`) | 36 |
 | residue after classification | 42 (5.5 %) |
-| **…of which actually scored** (6 more drop on the length/token floor — `brū P. Ā` and
-  five siblings the class regex misses for lacking a Roman numeral) | **36** (4.7 %) |
+| **…of which actually scored** (6 more drop on the length/token floor — `brū P. Ā` and five siblings the class regex misses for lacking a Roman numeral) | **36** (4.7 %) |
 
 They are Bühler's **grammatical apparatus**, not exercise prose. Running provenance over
 them wholesale would have produced a ~99 % "invented" figure that reads like a finding and
