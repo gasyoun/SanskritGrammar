@@ -43,7 +43,7 @@ import json
 import sys
 from pathlib import Path
 
-from csl_pyutil import EvidenceManifest, mark_cyrillic, render_review_sheet
+from csl_pyutil import EvidenceManifest, RU_UI_STRINGS, mark_cyrillic, render_review_sheet
 
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
@@ -126,6 +126,15 @@ def build_config(spec):
         "save_as": SAVE_AS_TEMPLATE % sheet_id,
         # V9: domain file extensions are not SLP1 leaks (H2355 residual).
         "preflight": {"allow_slp1_tokens": allow},
+        # U6 (H2847): Russian-only reviewer chrome. save_banner overridden
+        # because RU_UI_STRINGS excludes it by design (its default bakes in
+        # this sheet's own sheet_id/save_as).
+        "ui_strings": dict(RU_UI_STRINGS, save_banner=(
+            "&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> "
+            "&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> "
+            "внутри файла &mdash; <code>%s</code> &mdash; так следующая сессия узнаёт, "
+            "к какому листу относятся эти решения)."
+            % (sheet_id, SAVE_AS_TEMPLATE % sheet_id, sheet_id))),
     }
     return config
 
