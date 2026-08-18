@@ -1,0 +1,16 @@
+id,root,lemmas,expected,P,A,P_pct,A_pct,n_classified,observed_pada,verdict,sense_only,transitivity_note,reason
+APT-H-601,kram,kram,A,77,80,49.0,51.0,157,both,OVERSTATED,True,,"expected A-dominant; observed both (P49.0%/A51.0%, n=157)"
+APT-H-603,sam+gam,saṃgam,A,5,22,18.5,81.5,27,,UNTESTABLE-thin,True,,<40 classified present forms (n=27)
+APT-H-604,ud+car,uccar,A,10,1,90.9,9.1,11,,UNTESTABLE-thin,False,transitivity check too thin to report (n=11 < 15),<40 classified present forms (n=11)
+APT-H-605,vi/parā+ji,viji|parāji,A,16,66,19.5,80.5,82,A,TRUE,True,,"expected A-dominant; observed A (P19.5%/A80.5%, n=82)"
+APT-H-606,vi/ud+tap,vitap|uttap,A,1,0,100.0,0.0,1,,UNTESTABLE-thin,False,transitivity check too thin to report (n=1 < 15),<40 classified present forms (n=1)
+APT-H-607,nī (bare/ud/upa/vi),nī|unnī|upanī|vinī,A,541,43,92.6,7.4,584,P,OVERSTATED,False,,"expected A-dominant; observed P (P92.6%/A7.4%, n=584)"
+APT-H-608,vi+nī,vinī,P,15,3,83.3,16.7,18,,UNTESTABLE-thin,True,,<40 classified present forms (n=18)
+APT-H-610,upa+sthā,upasthā,A,72,558,11.4,88.6,630,A,TRUE,True,,"expected A-dominant; observed A (P11.4%/A88.6%, n=630)"
+APT-H-611,anu+hṛ,anuhṛ,A,6,0,100.0,0.0,6,,UNTESTABLE-thin,True,,<40 classified present forms (n=6)
+APT-H-613,sam+śru,saṃśru,split,2,2,50.0,50.0,4,,UNTESTABLE-thin,False,transitivity check too thin to report (n=4 < 15),<40 classified present forms (n=4)
+APT-H-614,bhuj,bhuj,A,52,421,11.0,89.0,473,A,TRUE,True,,"expected A-dominant; observed A (P11.0%/A89.0%, n=473)"
+APT-H-615,pra/upa+yuj,prayuj|upayuj,A,66,95,41.0,59.0,161,both,OVERSTATED,True,,"expected A-dominant; observed both (P41.0%/A59.0%, n=161)"
+APT-H-616,jñā (desiderative),jijñās,A,2,6,25.0,75.0,8,,UNTESTABLE-thin,False,,<40 classified present forms (n=8)
+APT-H-617,causatives of budh/yudh/naś/jan/i+adhi/dru/sru,bodhay|yodhay|nāśay|janay|adhyāpay|drāvay|srāvay,P,584,52,91.8,8.2,636,P,TRUE,False,,"expected P-dominant; observed P (P91.8%/A8.2%, n=636)"
+APT-H-619,pari/vi/ava+krī,parikrī|vikrī|avakrī,A,19,23,45.2,54.8,42,both,OVERSTATED,True,,"expected A-dominant; observed both (P45.2%/A54.8%, n=42)"
