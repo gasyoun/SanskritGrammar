@@ -574,24 +574,31 @@ entries:
 
   - id: APT-30
     loc: "Уроки 29–30 / mdx ~lines 7569–8563"
-    claim_ru: "[домен] Тонкие правила залога по приставке и значению (kram+длительность → Ātm.; tap+ud, если непереходен → Ātm.; и т. п.)."
+    claim_ru: "[домен] Семантическое условие тонких правил залога по приставке и значению (kram+длительность → Ātm.; tap+ud, если непереходен → Ātm.; и т. п.) — не сам P/Ā, а именно СМЫСЛОВОЙ триггер."
     kind: government
-    falsifiable_as: "can the fine preverb+sense voice-assignment rules of lessons 29-30 be verified against DCS"
+    falsifiable_as: "is the SENSE condition itself (duration, transitivity, 'own body', 'worship', 'protect/rule', etc.) of the fine preverb+sense voice-assignment rules of lessons 29-30 recoverable from DCS"
     sources: [dcs]
     verdict_fact: UNTESTABLE
-    number: "no signal path: DCS-2021 feat_voice tags only Passive (not Parasmaipada/Ātmanepada), and the ~15 fine rules (APT-H-601/603/604/605/606/607/608/610/611/613/614/615/617/618/619) condition on a SENSE ('when duration is implied', 'when intransitive', 'when referring to one's own body') that the corpus does not annotate"
-    ref: "DCS-2021 feat_voice census + apte_pada_stats.py scope note; harvest APT-H-601..619 (Уроки 29–30)"
+    number: "H3113 (zan-29) split this claim in two: the PADA itself for these preverb-compound lemmas turned out to be testable via the same ending-recovery method as APT-26..29 (see APT-40 — 8/15 rules resolved at n>=40, 4 TRUE / 4 OVERSTATED); the residual UNTESTABLE here is narrower — the SENSE trigger a token's pada is supposedly conditioned on. DCS's dependency layer covers too little of the corpus (~0.5% of tokens carry a deprel) to split by transitivity even for the 3 rules that condition on it (APT-H-604/606/613); the remaining rules condition on a gloss ('worship', 'practice' vs 'resemble', 'protect/rule') DCS does not tag at all."
+    ref: "DCS-2021 feat_voice + deprel census; apte_pada_preverb_stats.py + apte_pada_preverb_sense_spotcheck.md (H3113, 18-08-2026); harvest APT-H-601..619 (Уроки 29–30); see APT-40 for the pada-level layer"
     verdict_pedagogy: JUSTIFIED
     note: >-
-      The honest floor of the voice domain: root-DEFAULT pada is recoverable from endings (APT-26..29),
-      but the preverb+semantic conditions that make up most of lessons 29-30 are Pāṇinian
-      sense-rules with no corpus signal — DCS neither tags the P/Ā distinction nor the semantic
-      trigger. Closing instruments: a pada-tagged root lexicon plus sense-disambiguated preverb-verb
-      tokens (neither exists in the sibling repos today). Documented, not force-verdicted.
+      The honest floor of the voice domain, narrowed by H3113: root-DEFAULT pada is recoverable
+      from endings (APT-26..29), and so is preverb-compound pada for 8 of the 15 fine rules
+      (APT-40) — but the SENSE condition Apte adds on top of pada ('when duration is implied',
+      'when intransitive', 'in the worship sense', 'when referring to one's own body') has no
+      corpus-scale signal: DCS's syntactic parse is too sparse for a transitivity split, and
+      nothing tags the purely lexical senses. A manual spot-check against the Sanskrit-Russian
+      parallel corpus (apte_pada_preverb_sense_spotcheck.md) confirms this is a real gap, not
+      neglect — for upasthā, the claimed 'worship' sense was a minority of the sampled Ā
+      occurrences, meaning even a confirmed pada default does not validate the narrower sense
+      claim. Closing instrument: sense-disambiguated preverb-verb tokens (does not exist in the
+      sibling repos today). Documented, not force-verdicted.
     methodichka: >-
-      Тонкие панинийские правила «приставка + значение» — справочный материал, а не то, что
-      подтверждает частотность: корпус их не судит (DCS не размечает ни P/Ā, ни семантическое
-      условие). Держите их как ориентир, не как проверенный закон.
+      Смысловой триггер тонких панинийских правил «приставка + значение» остаётся не проверяем
+      корпусом (сам залог P/Ā для части этих глаголов теперь проверен — см. реестр APT-40 — но
+      ИМЕННО СМЫСЛОВОЕ условие корпус не размечает и разметить в общем случае нельзя). Держите
+      их как ориентир, не как проверенный закон.
 
   # ---- WHITNEY ADJUDICATION (H1084, 17-07-2026) ----
 
@@ -752,3 +759,44 @@ entries:
     ref: "Whitney 1889 §1133b, §1112; harvest APT-H-511/512 (Урок 28)"
     verdict_pedagogy: JUSTIFIED
     note: "A correctly-described classical idiom; the nominative of both members and the adversative correlative are standard. Closes the substantive particle-sense set; the residual lesson-26-28 candidates (balavat adverbial, yat/yena clause-linkers) are uncontested descriptive glosses left in the harvest."
+
+  - id: APT-40
+    loc: "Уроки 29–30 / mdx ~lines 7569–8563"
+    claim_ru: "[домен] Залог (P/Ā) для глаголов-приставочных композитов, названных в тонких правилах занятий 29–30 (kram, saṃgam, uccar, viji/parāji, vitap/uttap, nī-группа, upasthā, anuhṛ, saṃśru, bhuj, prayuj/upayuj, jijñās, каузативы budh/yudh/naś/jan/adhi+i/dru/sru, krī-группа) — сам залог, независимо от смыслового условия (см. APT-30)."
+    kind: government
+    falsifiable_as: "is the DEFAULT observed pada of each preverb-compound lemma named in Apte's fine lesson-29-30 rules consistent with the pada his rule states, independent of the semantic condition attached to it"
+    sources: [dcs]
+    verdict_fact: OVERSTATED
+    number: >-
+      apte_pada_preverb_stats.py, finite present-indicative endings, passive (feat_voice='Pass')
+      excluded. 8/15 rules reach n>=40 classified forms: TRUE (matches Apte's stated pada) —
+      APT-H-605 vi/parā+ji (P19.5%/A80.5%, n=82), APT-H-610 upa+sthā (P11.4%/A88.6%, n=630),
+      APT-H-614 bhuj (P11.0%/A89.0%, n=473), APT-H-617 causatives of budh/yudh/naś/jan/adhi+i/
+      dru/sru (P91.8%/A8.2%, n=636, the one rule with NO sense condition at all). OVERSTATED
+      (genuinely mixed or the opposite default) — APT-H-601 kram bare (P49.0%/A51.0%, n=157),
+      APT-H-607 nī bare/+ud/upa/vi (P92.6%/A7.4%, n=584 — corpus favors P where Apte's rule says
+      Ā), APT-H-615 pra/upa+yuj (P41.0%/A59.0%, n=161), APT-H-619 pari/vi/ava+krī (P45.2%/A54.8%,
+      n=42, heterogeneous per-lemma: parikrī 86.7% P vs vikrī 77.8% A). The remaining 7 rules
+      (APT-H-603/604/606/608/611/613/616) stay UNTESTABLE-thin even at the pada layer (n<40 —
+      too few attested finite-present forms of that specific preverb-compound in DCS-2021).
+      Full table + per-lemma breakdown: apte_pada_preverb_stats.{json,csv},
+      apte_pada_preverb_sense_spotcheck.md.
+    ref: "DCS-2021 present-ending pada proxy, feat_voice-filtered (apte_pada_preverb_stats.py); harvest APT-H-601..619 (Уроки 29–30); H3113 (zan-29, 18-08-2026)"
+    verdict_pedagogy: JUSTIFIED
+    note: >-
+      Answers the pada half of zan-29's escalation: yes, P/Ā is recoverable for preverb-compound
+      lemmas the same way it is for bare roots, and it settles a real minority of the fine rules
+      (4 confirmed, 4 overstated/mixed) — but this claim is deliberately silent on WHY a token
+      takes that pada; the sense trigger Apte names stays with APT-30. Two verdicts read as
+      contradictory at a glance and are not: a lemma can have a solid pada default (TRUE here)
+      while the specific semantic gloss Apte attaches to it is still unverified (UNTESTABLE in
+      APT-30) — upasthā is the clearest case (see apte_pada_preverb_sense_spotcheck.md: Ā-default
+      confirmed, but the 'worship' sense is a minority of the sampled Ā occurrences).
+    methodichka: >-
+      Для части приставочных композитов (viji/parāji, upasthā, bhuj, каузативы) залог по
+      умолчанию теперь подтверждён корпусом — держите как факт. Для kram (без приставки), nī
+      (без приставки/+ud/upa/vi), prayuj/upayuj и krī-группы корпус расходится с правилом Апте
+      или показывает подлинно смешанную картину — не учите эти как жёсткое правило. Но даже там,
+      где залог подтверждён, СМЫСЛОВОЕ условие («в значении почитания», «при переходности»)
+      корпусом не проверено (реестр APT-30) — залог может быть верным по умолчанию для глагола
+      вообще, а не именно из-за названного Апте значения.
