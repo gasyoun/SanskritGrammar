@@ -38,6 +38,19 @@ def norm(data: bytes) -> bytes:
     form; content drift still fails loudly.
     """
     return data.replace(b"\r\n", b"\n")
+
+
+def without_input_hash(data: bytes) -> str:
+    """Blank the snapshot's embedded input sha256 (sqlite file bytes differ
+    across platform sqlite builds); the hash binding itself is verified live
+    in tests/golden/sg_mo_021_future/test_sg_mo_021_golden.py."""
+    import re
+
+    return re.sub(
+        r'"sha256": "[0-9a-f]{64}"',
+        '"sha256": "<input-hash>"',
+        norm(data).decode("utf-8"),
+    )
 OUTPUTS = (
     "sangram/articles/future/data/coverage_summary.json",
     "sangram/articles/future/data/validation_sample.tsv",
@@ -93,8 +106,8 @@ def test_run_writes_golden_identical_outputs(env):
     root = env["root"]
     assert main(["--root", str(root), "pipeline", "run", PIPELINE_ID]) == EXIT_OK
     for rel in OUTPUTS:
-        produced = norm((out_dir / Path(rel).name).read_bytes())
-        golden = norm((EXPECTED_DIR / Path(rel).name).read_bytes())
+        produced = without_input_hash((out_dir / Path(rel).name).read_bytes())
+        golden = without_input_hash((EXPECTED_DIR / Path(rel).name).read_bytes())
         assert produced == golden, f"{rel} drifted from the pre-cutover golden"
 
 

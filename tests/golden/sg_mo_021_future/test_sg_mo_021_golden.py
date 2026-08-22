@@ -40,6 +40,34 @@ def norm(data: bytes) -> bytes:
     return data.replace(b"\r\n", b"\n")
 
 
+def without_input_hash(data: bytes) -> str:
+    """Blank out the snapshot's embedded input sha256 for cross-platform parity.
+
+    The summary binds its declared input by content hash - which is exactly
+    right for the real master - but sqlite FILE bytes are not identical across
+    platform sqlite builds, so a fixture rebuilt on CI hashes differently than
+    the locally-captured golden. Content parity is asserted on everything
+    else; the hash itself is verified LIVE against the actual database in
+    test_snapshot_hash_binds_the_actual_input.
+    """
+    import re
+
+    text = norm(data).decode("utf-8")
+    return re.sub(r'"sha256": "[0-9a-f]{64}"', '"sha256": "<input-hash>"', text)
+
+
+def test_snapshot_hash_binds_the_actual_input(fixture_db):
+    """The published hash must be the hash of the database actually read."""
+    import hashlib
+    import tempfile
+
+    live = hashlib.sha256(fixture_db.read_bytes()).hexdigest()
+    out = Path(tempfile.mkdtemp())
+    run_registered_command(fixture_db, out)
+    produced = json.loads((out / "coverage_summary.json").read_text(encoding="utf-8"))
+    assert produced["snapshot"]["sha256"] == live
+
+
 @pytest.fixture(scope="module")
 def fixture_db(tmp_path_factory):
     return build_fixture.build_dcs_fixture(
@@ -58,8 +86,8 @@ def run_registered_command(db, out_dir):
 def test_golden_outputs_reproduced_by_registered_command(fixture_db, tmp_path):
     run_registered_command(fixture_db, tmp_path)
     for name in ("coverage_summary.json", "validation_sample.tsv"):
-        produced = norm((tmp_path / name).read_bytes())
-        golden = norm((EXPECTED_DIR / name).read_bytes())
+        produced = without_input_hash((tmp_path / name).read_bytes())
+        golden = without_input_hash((EXPECTED_DIR / name).read_bytes())
         assert produced == golden, f"{name} drifted from the captured golden"
 
 
