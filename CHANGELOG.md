@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
-## [Unreleased]
+## [0.122.0] - 2026-08-22
 ### Added
 - **H1913 Slice C — SG-MO-021 future pilot: the first vertical pipeline.**
   [`pipelines/sg-mo-021-future.yml`](pipelines/sg-mo-021-future.yml) declares
