@@ -1,0 +1,99 @@
+# SG-MO-021 «Будущее время и кондиционал» — the future and the conditional.
+#
+# H1913 Slice C1: the pilot's build graph as a first-class contract. The
+# generator behind sg_mo_021_future.generate is the extracted pre-cutover
+# script (C2), pinned byte-for-byte by tests/golden/sg_mo_021_future against
+# the frozen behavior; every published number lives in the C0 record
+# (docs/architecture/baseline/h1913_c0_invariants.json).
+#
+# Determinism: seeded sample (20260717 / 50), fixed JSON key order, no
+# wall-clock or host-specific bytes in any output. The only declared input is
+# the pinned DCS snapshot - issue 563 data appears nowhere in the input surface.
+
+contract_version: 1
+pipeline_id: pipeline:sg-mo-021-future
+owner: SanskritGrammar maintainers
+context: sangram:future
+generator: sg_mo_021_future
+description: >-
+  Future/conditional census over the pinned DCS master feeding
+  sangram/articles/future: denominators, simple-vs-periphrastic split,
+  person/number/mood distributions, Wilson CIs, top forms, and the seeded
+  validation sample.
+
+inputs:
+  - id: dcs-snapshot
+    path: ../VisualDCS/src/DCS-data-2026/dcs_full.sqlite
+    provenance_id: external:dcs-conllu-sqlite-c3-pin
+    sha256: 8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc
+    version: c3-pin-04e0778-content
+    rights: publishable-derived-input
+
+steps:
+  - id: generate
+    command: sg_mo_021_future.generate
+    inputs:
+      - dcs-snapshot
+    outputs:
+      - sangram/articles/future/data/coverage_summary.json
+      - sangram/articles/future/data/validation_sample.tsv
+
+verification:
+  # Golden parity: the registered command reproduces the pre-cutover goldens
+  # byte for byte (uv run pytest tests/golden/sg_mo_021_future).
+  - sg_mo_021_future.golden-parity
+  # Determinism: run twice, then git diff --exit-code (V-C transcript).
+  - sg_mo_021_future.determinism-double-run
+  # Sangram schema validation across every manifest incl. this article.
+  - sangram.article-validate-all
+  # Claims/figures consistency gate over the published numbers.
+  - sangram.claims-consistency
+
+external_consumers:
+  - name: aorist-types article cross-link
+    repo: gasyoun/SanskritGrammar
+    path: sangram/articles/aorist-types/index.mdx
+    owner: SanskritGrammar maintainers
+    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    smoke: npm run build
+    status: merged
+
+  - name: imperative-optative article cross-link
+    repo: gasyoun/SanskritGrammar
+    path: sangram/articles/imperative-optative/index.mdx
+    owner: SanskritGrammar maintainers
+    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    smoke: npm run build
+    status: merged
+
+  - name: present-perfect-participles article cross-link
+    repo: gasyoun/SanskritGrammar
+    path: sangram/articles/present-perfect-participles/index.mdx
+    owner: SanskritGrammar maintainers
+    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    smoke: npm run build
+    status: merged
+
+  - name: audit re-derivation round 3
+    repo: gasyoun/SanskritGrammar
+    path: sangram/audit/rederive_dcs_numbers_round3.py
+    owner: SanskritGrammar maintainers
+    contract: comment-level method reference (MO021 rows); re-implements its own census SQL inline and imports nothing from the generator
+    status: merged
+
+  - name: editorial consolidation ledger
+    repo: gasyoun/SanskritGrammar
+    path: sangram/editorial/data/consolidation_ledger.json
+    owner: SanskritGrammar maintainers
+    contract: one SG-MO-021 / art:future mention; data file, no code dependency
+    status: merged
+
+rollback:
+  procedure: >-
+    Revert to the pre-cutover release (commit below): scripts/sg_mo_021_future.py
+    is restored as the active generation path, pipelines/sg-mo-021-future.yml and
+    the packages/sg_tooling pilot modules are removed, and the committed article
+    data (unchanged by the cutover) stays valid. Re-run python
+    scripts/article_validate.py --all and npm run build after the revert.
+  commit: d00f9dca69cef8adbf71ab3756172c19c3c7abf4
+  artifact: docs/architecture/baseline/h1913_c0_invariants.json
