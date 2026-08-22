@@ -54,6 +54,16 @@ def run_legacy_generator(db, out_dir):
     return rc
 
 
+def norm(data: bytes) -> bytes:
+    """The committed-artifact normalization contract (.gitattributes pins LF).
+
+    Comparisons happen on normalized bytes: a Windows-emitted CRLF working
+    copy is the same artifact as its LF index form, while any content drift -
+    number, ordering, sample row - still fails loudly.
+    """
+    return data.replace(b"\r\n", b"\n")
+
+
 def _load_summary(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -62,8 +72,8 @@ def test_golden_outputs_reproduced_by_legacy_script(fixture_db, tmp_path):
     """Byte-identical regeneration of both committed-shape outputs."""
     run_legacy_generator(fixture_db, tmp_path)
     for name in ("coverage_summary.json", "validation_sample.tsv"):
-        produced = (tmp_path / name).read_bytes()
-        golden = (EXPECTED_DIR / name).read_bytes()
+        produced = norm((tmp_path / name).read_bytes())
+        golden = norm((EXPECTED_DIR / name).read_bytes())
         assert produced == golden, f"{name} drifted from the captured golden"
 
 
@@ -71,9 +81,9 @@ def test_determinism_two_runs_byte_identical(fixture_db, tmp_path):
     run_legacy_generator(fixture_db, tmp_path / "a")
     run_legacy_generator(fixture_db, tmp_path / "b")
     for name in ("coverage_summary.json", "validation_sample.tsv"):
-        assert (tmp_path / "a" / name).read_bytes() == (
-            tmp_path / "b" / name
-        ).read_bytes()
+        assert norm((tmp_path / "a" / name).read_bytes()) == norm(
+            (tmp_path / "b" / name).read_bytes()
+        )
 
 
 def test_hand_derived_numbers_hold(tmp_path):

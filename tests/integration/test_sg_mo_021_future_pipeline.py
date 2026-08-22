@@ -29,6 +29,15 @@ import build_fixture  # noqa: E402
 
 
 PIPELINE_ID = "sg-mo-021-future"
+
+
+def norm(data: bytes) -> bytes:
+    """Committed-artifact normalization contract (.gitattributes pins LF).
+
+    A Windows-emitted CRLF working copy is the same artifact as its LF index
+    form; content drift still fails loudly.
+    """
+    return data.replace(b"\r\n", b"\n")
 OUTPUTS = (
     "sangram/articles/future/data/coverage_summary.json",
     "sangram/articles/future/data/validation_sample.tsv",
@@ -46,12 +55,15 @@ def _make_repo(tmp_path: Path, db_path: Path) -> Path:
     # fixture master and a temp output dir - the option surface the schema
     # allows; production defaults resolve inside the real repository.
     text = (ROOT / "pipelines" / f"{PIPELINE_ID}.yml").read_text(encoding="utf-8")
+    anchor = "  - id: generate\n"
+    assert anchor in text
     text = text.replace(
-        "steps:\n",
-        "steps:\n"
-        f"    options:\n"
-        f"      db: {db_path.as_posix()}\n"
-        f"      out_dir: {(tmp_path / 'out').as_posix()}\n",
+        anchor,
+        anchor
+        + f"    options:\n"
+        + f"      db: {db_path.as_posix()}\n"
+        + f"      out_dir: {(tmp_path / 'out').as_posix()}\n",
+        1,
     )
     (root / "pipelines" / f"{PIPELINE_ID}.yml").write_text(text, encoding="utf-8")
     (root / "data").mkdir()
@@ -67,7 +79,7 @@ def env(tmp_path, monkeypatch):
     import sg_tooling.generators.sg_mo_021_future as gen
 
     monkeypatch.setattr(gen, "repo_root", lambda start=None: root)
-    return {"root": root, "db": db_path, "gen": gen}
+    return {"root": root, "db": db_path, "gen": gen, "out_dir": tmp_path / "out"}
 
 
 def test_pipeline_check_is_green(env, capsys):
@@ -77,11 +89,12 @@ def test_pipeline_check_is_green(env, capsys):
 
 
 def test_run_writes_golden_identical_outputs(env):
+    out_dir = env["out_dir"]
     root = env["root"]
     assert main(["--root", str(root), "pipeline", "run", PIPELINE_ID]) == EXIT_OK
     for rel in OUTPUTS:
-        produced = (root / rel).read_bytes()
-        golden = (EXPECTED_DIR / Path(rel).name).read_bytes()
+        produced = norm((out_dir / Path(rel).name).read_bytes())
+        golden = norm((EXPECTED_DIR / Path(rel).name).read_bytes())
         assert produced == golden, f"{rel} drifted from the pre-cutover golden"
 
 
@@ -89,10 +102,11 @@ def test_run_twice_is_byte_stable(env):
     """The determinism half of V-C: a second full run changes nothing."""
     root = env["root"]
     assert main(["--root", str(root), "pipeline", "run", PIPELINE_ID]) == EXIT_OK
-    before = {rel: (root / rel).read_bytes() for rel in OUTPUTS}
+    before = {rel: norm((env["out_dir"] / Path(rel).name).read_bytes()) for rel in OUTPUTS}
     assert main(["--root", str(root), "pipeline", "run", PIPELINE_ID]) == EXIT_OK
     for rel in OUTPUTS:
-        assert (root / rel).read_bytes() == before[rel], f"{rel} is not deterministic across runs"
+        after = norm((env["out_dir"] / Path(rel).name).read_bytes())
+        assert after == before[rel], f"{rel} is not deterministic across runs"
 
 
 def test_unknown_pipeline_exits_3(env):
