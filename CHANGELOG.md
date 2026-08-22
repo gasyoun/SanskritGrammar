@@ -18,6 +18,30 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Added
+- **H1913 Slice C — SG-MO-021 future pilot: the first vertical pipeline.**
+  [`pipelines/sg-mo-021-future.yml`](pipelines/sg-mo-021-future.yml) declares
+  the future/conditional census as a contract (pinned snapshot input, one
+  registered `sg_mo_021_future.generate` step, V-C verification list, all five
+  code-level consumers, rollback to the pre-cutover release). The generator
+  moved behind the Slice-A extension points
+  ([`adapters/dcs.py`](packages/sg_tooling/src/sg_tooling/adapters/dcs.py)
+  generic characterized DCS master adapter + the pilot's own generator module),
+  the registry discovers pilot modules lazily, and the legacy active path
+  `scripts/sg_mo_021_future.py` is removed — hard cutover, no compatibility
+  shim. Published numbers unchanged and re-proven against the pinned master:
+  finite 523 721 / future 21 556 (4,12 %) / simple 20 216 / periphrastic 1 340 /
+  conditional 340 / participle 1 575; double-run byte-stable,
+  `git diff --exit-code` clean; golden fixture suite pins behavior CI-side.
+
+### Fixed
+- **H3103 residual:** Russian reviewer chrome defined locally in
+  `scripts/build_visa_sheet.py` against the pinned csl-pyutil v0.9.0
+  `UI_STRINGS` keys — the imported `RU_UI_STRINGS` never existed upstream and
+  broke test collection repo-wide since 57dadc4.
+- Grammar-lab manifest feed hashes re-pinned to LF-blob form and
+  `.gitattributes` now pins `*.yml`/`*.yaml` to `eol=lf`, ending the
+  platform-dependent `build_grammar_lab --check` failures.
 
 ## [0.121.6] - 2026-08-13
 ### Added
