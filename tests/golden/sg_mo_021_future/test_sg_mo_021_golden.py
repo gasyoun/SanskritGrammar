@@ -1,13 +1,12 @@
-"""C2 characterization: pin the CURRENT SG-MO-021 generator behavior before
-any code movement (H1913 Slice C2, "characterization/golden tests pin current
-behavior before movement").
+"""C2/C3 golden contract for the SG-MO-021 pilot (H1913).
 
-The goldens in expected/ were captured by driving the pre-cutover
-``scripts/sg_mo_021_future.py`` against the deterministic fixture DB
-(capture_goldens.py); every number in them is hand-derived and asserted
-explicitly below, so a mechanical capture error cannot silently become the
-contract. After the extraction these SAME goldens must be reproduced through
-the registered ``sg_mo_021_future.generate`` command — byte for byte.
+The goldens in expected/ were captured from the pre-cutover generator
+(scripts/sg_mo_021_future.py, deleted in the hard cutover; the capture driver
+is preserved in git history as tests/golden/sg_mo_021_future/capture_goldens.py
+@ 1f56d3e). Since the cutover they are reproduced through the REGISTERED
+command — the same resolution path the pipeline runner uses — and every
+headline number is asserted against hand-derived fixture values, so a
+mechanical capture error can never silently become the contract.
 """
 from __future__ import annotations
 
@@ -21,6 +20,10 @@ import build_fixture
 
 HERE = Path(__file__).resolve().parent
 EXPECTED_DIR = HERE / "expected"
+GENERATOR_SOURCE = (
+    HERE.parents[2] / "packages" / "sg_tooling" / "src" / "sg_tooling" /
+    "generators" / "sg_mo_021_future.py"
+)
 
 # Hand-derived fixture numbers (see build_fixture.py docstring).
 FIN_TOTAL = 80
@@ -32,6 +35,11 @@ POT = 2
 FUT_PART = 4
 
 
+def norm(data: bytes) -> bytes:
+    """The committed-artifact normalization contract (.gitattributes pins LF)."""
+    return data.replace(b"\r\n", b"\n")
+
+
 @pytest.fixture(scope="module")
 def fixture_db(tmp_path_factory):
     return build_fixture.build_dcs_fixture(
@@ -39,38 +47,16 @@ def fixture_db(tmp_path_factory):
     )
 
 
-def run_legacy_generator(db, out_dir):
-    """Drive the pre-cutover script exactly as production did."""
-    import sg_mo_021_future as legacy
+def run_registered_command(db, out_dir):
+    """Drive sg_mo_021_future.generate the way the manifest step does."""
+    from sg_tooling.generators import resolve
 
-    legacy.OUT_DIR = Path(out_dir)
-    old_argv = sys.argv
-    sys.argv = ["sg_mo_021_future", "--db", str(db)]
-    try:
-        rc = legacy.main()
-    finally:
-        sys.argv = old_argv
-    assert rc == 0
-    return rc
+    step = {"options": {"db": str(db), "out_dir": str(out_dir)}}
+    return resolve("sg_mo_021_future.generate")(step, {})
 
 
-def norm(data: bytes) -> bytes:
-    """The committed-artifact normalization contract (.gitattributes pins LF).
-
-    Comparisons happen on normalized bytes: a Windows-emitted CRLF working
-    copy is the same artifact as its LF index form, while any content drift -
-    number, ordering, sample row - still fails loudly.
-    """
-    return data.replace(b"\r\n", b"\n")
-
-
-def _load_summary(path: Path) -> dict:
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def test_golden_outputs_reproduced_by_legacy_script(fixture_db, tmp_path):
-    """Byte-identical regeneration of both committed-shape outputs."""
-    run_legacy_generator(fixture_db, tmp_path)
+def test_golden_outputs_reproduced_by_registered_command(fixture_db, tmp_path):
+    run_registered_command(fixture_db, tmp_path)
     for name in ("coverage_summary.json", "validation_sample.tsv"):
         produced = norm((tmp_path / name).read_bytes())
         golden = norm((EXPECTED_DIR / name).read_bytes())
@@ -78,18 +64,18 @@ def test_golden_outputs_reproduced_by_legacy_script(fixture_db, tmp_path):
 
 
 def test_determinism_two_runs_byte_identical(fixture_db, tmp_path):
-    run_legacy_generator(fixture_db, tmp_path / "a")
-    run_legacy_generator(fixture_db, tmp_path / "b")
+    run_registered_command(fixture_db, tmp_path / "a")
+    run_registered_command(fixture_db, tmp_path / "b")
     for name in ("coverage_summary.json", "validation_sample.tsv"):
         assert norm((tmp_path / "a" / name).read_bytes()) == norm(
             (tmp_path / "b" / name).read_bytes()
         )
 
 
-def test_hand_derived_numbers_hold(tmp_path):
+def test_hand_derived_numbers_hold():
     """The goldens are not just self-consistent: every headline number equals
     the hand-derived value for this row set (build_fixture docstring)."""
-    summary = _load_summary(EXPECTED_DIR / "coverage_summary.json")
+    summary = json.loads((EXPECTED_DIR / "coverage_summary.json").read_text(encoding="utf-8"))
     den = summary["denominators"]
     assert den["finite_total"] == FIN_TOTAL
     assert den["finite_future"] == FIN_FUT
@@ -138,6 +124,6 @@ def test_hand_derived_numbers_hold(tmp_path):
 
 def test_issue_563_tokens_absent_from_generator_source():
     """C0 gate: no crosswalk/Pāṇini token enters the declared input surface."""
-    source = (HERE.parents[2] / "scripts" / "sg_mo_021_future.py").read_text(encoding="utf-8")
+    source = GENERATOR_SOURCE.read_text(encoding="utf-8")
     for token in ("crosswalk", "whitneyroots", "WhitneyRoots"):
         assert token not in source
