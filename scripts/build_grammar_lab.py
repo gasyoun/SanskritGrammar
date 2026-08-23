@@ -307,6 +307,27 @@ def content_view(manifest: dict) -> dict:
     return view
 
 
+def write_manifest_if_content_changed(out_path: Path, manifest: dict) -> bool:
+    """H3066 (FINDINGS 464): a rebuild whose CONTENT is unchanged must not
+    touch the file. generated_at alone changes every run, which turned every
+    verify-style invocation into a tracked-file diff. Compare content_view()
+    (generated_at excluded); on equality keep the committed bytes so repeated
+    runs are byte-idempotent. Returns True only when the file was rewritten."""
+    if out_path.exists():
+        try:
+            old = json.loads(out_path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            old = None
+        if isinstance(old, dict) and content_view(old) == content_view(manifest):
+            # Content-equal: skip ONLY when the committed bytes are already the
+            # canonical serialization of themselves (LF, key order). A legacy
+            # CRLF/non-canonical copy is rewritten ONCE, then stays stable.
+            if out_path.read_bytes() == stable_json(old):
+                return False
+    out_path.write_bytes(stable_json(manifest))
+    return True
+
+
 def build() -> dict:
     if not TOPICS_DIR.is_dir() or not any(TOPICS_DIR.glob("*.yml")):
         # Local authoring helper; CI consumes committed YAML.
@@ -486,7 +507,7 @@ def build() -> dict:
         for err in errors:
             print(err, file=sys.stderr)
         raise SystemExit(1)
-    (EXPORT / MANIFEST_NAME).write_bytes(stable_json(manifest))
+    write_manifest_if_content_changed(EXPORT / MANIFEST_NAME, manifest)
     print(
         f"published={len(published)} needs_review={len(review)} "
         f"links={len(links)} queries={len(queries['queries'])} "
