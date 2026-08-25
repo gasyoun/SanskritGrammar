@@ -512,7 +512,7 @@ def render_personalized_text(level, interest, fixture, quizzes, emb, ctx) -> str
                               for i, o in enumerate(item["options"]))
             parts.append(f"❓ **Вопрос ({qid})** — {item['prompt']}")
             parts.append(f"> {opts}")
-            parts.append("(ответ сверяйте в quizzes.json → answer_keys)")
+            parts.append("(отметьте свой ответ — проверка и разбор на занятии)")
             parts.append("")
         if sec["id"] == "five-rows":
             parts.append(weak_spots_block(fixture, reg))
