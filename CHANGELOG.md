@@ -17,6 +17,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
+## [Unreleased]
+
+## [0.122.1] - 2026-08-25
+### Added
+
+- **H3321 (Codex GPT-5) — independent SG-MO-021 Slice C lane.** Declares the
+  pinned DCS pipeline, moves the article into its canonical content boundary,
+  extracts a read-only SQLite adapter and pure generator, and adds golden +
+  integration coverage proving byte-identical outputs and full C0 scholarly
+  parity. The final surviving code is selected in
+  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
+
 ## [0.122.0] - 2026-08-22
 ### Added
 - **H1913 Slice C — SG-MO-021 future pilot: the first vertical pipeline.**
@@ -42,15 +54,6 @@ changelog tags as `vX.Y.Z`.
 - Grammar-lab manifest feed hashes re-pinned to LF-blob form and
   `.gitattributes` now pins `*.yml`/`*.yaml` to `eol=lf`, ending the
   platform-dependent `build_grammar_lab --check` failures.
-
-### Added
-
-- **H3321 (Codex GPT-5) — independent SG-MO-021 Slice C lane.** Declares the
-  pinned DCS pipeline, moves the article into its canonical content boundary,
-  extracts a read-only SQLite adapter and pure generator, and adds golden +
-  integration coverage proving byte-identical outputs and full C0 scholarly
-  parity. The final surviving code is selected in
-  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
 
 ## [0.121.6] - 2026-08-13
 ### Added
