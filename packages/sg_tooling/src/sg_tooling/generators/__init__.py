@@ -54,9 +54,6 @@ def _discover_pilot_modules() -> None:
             continue
         importlib.import_module(f"{__name__}.{path.stem}")
 
-_REGISTRY: dict[str, Callable[..., object]] = {}
-
-
 def register(name: str) -> Callable[[Callable[..., object]], Callable[..., object]]:
     """Register a callable under a manifest command name.
 

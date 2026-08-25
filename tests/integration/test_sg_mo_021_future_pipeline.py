@@ -11,6 +11,8 @@ from __future__ import annotations
 
 import shutil
 import sys
+import hashlib
+import json
 from pathlib import Path
 
 import pytest
@@ -52,8 +54,8 @@ def without_input_hash(data: bytes) -> str:
         norm(data).decode("utf-8"),
     )
 OUTPUTS = (
-    "sangram/articles/future/data/coverage_summary.json",
-    "sangram/articles/future/data/validation_sample.tsv",
+    "content/sangram/articles/future/data/coverage_summary.json",
+    "content/sangram/articles/future/data/validation_sample.tsv",
 )
 
 
@@ -68,6 +70,11 @@ def _make_repo(tmp_path: Path, db_path: Path) -> Path:
     # fixture master and a temp output dir - the option surface the schema
     # allows; production defaults resolve inside the real repository.
     text = (ROOT / "pipelines" / f"{PIPELINE_ID}.yml").read_text(encoding="utf-8")
+    fixture_sha = hashlib.sha256(db_path.read_bytes()).hexdigest()
+    text = text.replace(
+        "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+        fixture_sha,
+    )
     anchor = "  - id: generate\n"
     assert anchor in text
     text = text.replace(
@@ -132,3 +139,29 @@ def test_frozen_seed_and_sample_size_are_refused(env):
     }
     with pytest.raises(ValueError, match="frozen"):
         env["gen"].generate(step, {})
+
+
+def test_declared_snapshot_hash_is_enforced(env):
+    context = {
+        "inputs": [{
+            "provenance_id": "external:dcs-conllu-sqlite-c3-pin",
+            "sha256": "0" * 64,
+        }]
+    }
+    with pytest.raises(ValueError, match="SHA-256 mismatch"):
+        env["gen"].generate(
+            {"options": {"db": str(env["db"]), "out_dir": str(env["out_dir"])}},
+            context,
+        )
+
+
+def test_real_outputs_match_the_c0_scholarly_payload() -> None:
+    generated = json.loads(
+        (ROOT / "content" / "sangram" / "articles" / "future" / "data" / "coverage_summary.json")
+        .read_text(encoding="utf-8")
+    )
+    frozen = json.loads(
+        (ROOT / "docs" / "architecture" / "baseline" / "h1913_c0_invariants.json")
+        .read_text(encoding="utf-8")
+    )
+    assert generated == frozen["published_numbers"]
