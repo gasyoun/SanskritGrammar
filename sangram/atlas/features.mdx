@@ -1,0 +1,48 @@
+---
+title: "Атлас: каталог возможностей"
+sidebar_label: Возможности
+sidebar_position: 7
+slug: /sangram/atlas/features
+description: Представление каталога возможностей атласа Sangram — публичные семейства переиспользуемых активов и строки каталога FEATURES_INDEX, которые их наполняют; неприсоединённые строки видны с причинами.
+---
+
+import AtlasFeatures from '@site/src/components/AtlasFeatures';
+import bundle from './data/atlas.bundle.json';
+import unmatched from './data/features_unmatched.json';
+
+# Каталог возможностей
+
+_Создано: 25-08-2026 · Последнее обновление: 25-08-2026_
+
+Шестое представление [атласа](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/atlas).
+Оно отвечает на один вопрос: **какие переиспользуемые активы уже есть у
+организации и какие строки каталога возможностей (FEATURES_INDEX, разделы
+I–IV) их наполняют**. Каждая строка каталога либо присоединена к семейству
+(поле `feature_ids` узла), либо лежит в списке неприсоединённых с причиной —
+тихих потерь нет.
+
+## Представление
+
+Карточки семейств активов несут права (`open` / `rights-gated` /
+`quarantine`), запрет пересоздания и чипы присоединённых строк. Ниже —
+полный список неприсоединённых строк с причинами.
+
+<AtlasFeatures bundle={bundle} unmatched={unmatched} />
+
+## Провенанс
+
+Представление добавлено контрактом данных **1.1.1**
+([B1](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/atlas/data-contract))
+в рамках волны 1 плана визуализации графа репозиториев
+([PLAN_UPRAVA_REPO_GRAPH_VISUALIZATION_2026H2](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_UPRAVA_REPO_GRAPH_VISUALIZATION_2026H2.md),
+handoff H3509; ссылка на план — внутренний архив Uprava). Источник строк —
+[features_index.json](https://github.com/gasyoun/SanskritLexicography/blob/master/features_index.json)
+публичного SanskritLexicography; join-таблица живёт в билдере бандла.
+Реализация — OxAlpha (`x-preview-f-free`); оценки и научная ответственность —
+автор.
+
+| Дата | Ревизия | Основание |
+|---|---|---|
+| 25-08-2026 | Представление 1.0: карточки семейств + `feature_ids` join контракта 1.1.1 + список неприсоединённых строк с причинами | Контракт 1.1.1, H3509 |
+
+_Dr. Mārcis Gasūns_

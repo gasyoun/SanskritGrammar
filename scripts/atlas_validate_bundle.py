@@ -38,7 +38,7 @@ NODE_KINDS = {"thesis", "source-class", "repo", "asset", "external-stack", "stag
 EDGE_KINDS = {"replenishes", "generates", "attests", "crosslinks", "fills",
               "feeds", "consumes", "vendors", "produces", "cites",
               "creates", "strengthens", "funds", "scales", "anchors", "owns"}
-VIEW_IDS = {"attention", "reuse", "value-chain", "dependencies", "provenance"}
+VIEW_IDS = {"attention", "reuse", "value-chain", "dependencies", "provenance", "features"}
 NODE_ID_RE = re.compile(r"^(thesis|class|repo|asset|ext|stage|surface):[a-z0-9][a-z0-9.-]*$")
 EDGE_ID_RE = re.compile(r"^e:[a-z0-9][a-z0-9.:-]*$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
