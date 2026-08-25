@@ -25,7 +25,8 @@ changelog tags as `vX.Y.Z`.
 - **H3321 (Codex) — H1913 dual-run compare - independent Codex re-run of the
   SG-MO-021 Slice C pilot vs the override lane.** Refreshed the cold-start and
   session-state documentation with the canonical content boundary, pinned-input
-  check command, release links, and reconciliation record.
+  check command, release links, and reconciliation record; refreshed the
+  generated consolidation ledger required by the blocking validator.
 
 ## [0.122.1] - 2026-08-25
 ### Added
