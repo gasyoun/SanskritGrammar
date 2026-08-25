@@ -43,6 +43,15 @@ changelog tags as `vX.Y.Z`.
   `.gitattributes` now pins `*.yml`/`*.yaml` to `eol=lf`, ending the
   platform-dependent `build_grammar_lab --check` failures.
 
+### Added
+
+- **H3321 (Codex GPT-5) — independent SG-MO-021 Slice C lane.** Declares the
+  pinned DCS pipeline, moves the article into its canonical content boundary,
+  extracts a read-only SQLite adapter and pure generator, and adds golden +
+  integration coverage proving byte-identical outputs and full C0 scholarly
+  parity. The final surviving code is selected in
+  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
+
 ## [0.121.6] - 2026-08-13
 ### Added
 - **H2492 Grammar Lab G1 — Whitney + Zalizniak evidence graph.** Versioned
@@ -810,7 +819,7 @@ changelog tags as `vX.Y.Z`.
 - **Pending MG review-sheet visa decisions applied (H1205, Sonnet 5 `claude-sonnet-5`).**
   Swept the local `review/*_decisions.json` folder: 3 sheets already applied upstream
   confirmed done (sg-mo-002-a-stems, sg-mo-017-perfect, sg-wf-004-taddhita); 5 pending
-  sheets applied — [`sangram/articles/future/`](sangram/articles/future/index.mdx)
+  sheets applied — [`content/sangram/articles/future/`](content/sangram/articles/future/index.mdx)
   (SG-MO-021, 9/9 approve) and [`sangram/articles/causative/`](sangram/articles/causative/index.mdx)
   (SG-MO-028, 10/10 approve) flipped `candidate` → `published`, with real content fixes
   (a mixed-script Cyrillic/Latin "vṛддхи"→"vṛddhi" typo across the causative article,
@@ -877,7 +886,7 @@ changelog tags as `vX.Y.Z`.
 ## [0.59.0] - 2026-07-17
 
 ### Added
-- **Sangram ядро W2 — статья SG-MO-021 «Будущее время и кондиционал» — статья-кандидат, ПЕРВАЯ сверх открывающей квоты 19 (H1180, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/future): будущее **замыкает финитную систему времён** (презенс/имперфект/аорист/перфект/будущее — все нативно размечены). Нативный тег `Tense=Fut` = **21 556 финитных токенов (4,1 % [4,06–4,17])**. Простое vs перифрастическое разделены **нативно** (`feat_formation`): простое (s-)будущее **20 216 (93,8 %)**, перифрастическое -tā **1340 (6,2 %)** (во главе bhavitā, kartā). Кондиционал (контрфактическое «сделал бы», `feat_mood=Cond`) **340 (1,6 %)**; причастие будущего **1575** — отдельно. Уникальный профиль: будущее — **самая перволичная финитная форма** (1 л. **36,4 %** [35,8–37,1] против 0,5 % у пассива, narrative-3-е у имперфекта) — язык заявленного намерения (bhaviṣyati, vakṣyāmi «скажу», kariṣyāmi «сделаю»). Скрипт [`sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_021_future.py); toc_validate + article_validate (20 манифестов) + docusaurus build green. Первая статья, произведённая по решению автора продолжить производство ядра сверх открывающей квоты (opening set остаётся 18/19). Публикация гейтится авторской визой.
+- **Sangram ядро W2 — статья SG-MO-021 «Будущее время и кондиционал» — статья-кандидат, ПЕРВАЯ сверх открывающей квоты 19 (H1180, Opus 4.8 `claude-opus-4-8[1m]`).** [`content/sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/content/sangram/articles/future): будущее **замыкает финитную систему времён** (презенс/имперфект/аорист/перфект/будущее — все нативно размечены). Нативный тег `Tense=Fut` = **21 556 финитных токенов (4,1 % [4,06–4,17])**. Простое vs перифрастическое разделены **нативно** (`feat_formation`): простое (s-)будущее **20 216 (93,8 %)**, перифрастическое -tā **1340 (6,2 %)** (во главе bhavitā, kartā). Кондиционал (контрфактическое «сделал бы», `feat_mood=Cond`) **340 (1,6 %)**; причастие будущего **1575** — отдельно. Уникальный профиль: будущее — **самая перволичная финитная форма** (1 л. **36,4 %** [35,8–37,1] против 0,5 % у пассива, narrative-3-е у имперфекта) — язык заявленного намерения (bhaviṣyati, vakṣyāmi «скажу», kariṣyāmi «сделаю»). Генератор [`sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py); toc_validate + article_validate (20 манифестов) + docusaurus build green. Первая статья, произведённая по решению автора продолжить производство ядра сверх открывающей квоты (opening set остаётся 18/19). Публикация гейтится авторской визой.
 - **Fix: SG-WF-004 taddhita example IDs `ex:taddhita:N` → `ex:taddhita-overview:N`** (H1180). The manifest/MDX example IDs must match the article slug (`taddhita-overview`); the mismatch made `article_validate --all` FAIL on `main` (shipped in #368, not caught by the segmentation synthesis #369/#370). `--all` restored to green (21 PASS).
 
 ## [0.58.0] - 2026-07-17

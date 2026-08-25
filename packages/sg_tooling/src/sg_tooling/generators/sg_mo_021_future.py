@@ -68,7 +68,7 @@ def default_db_path(root=None) -> Path:
 
 
 def default_out_dir(root=None) -> Path:
-    return (root or repo_root()) / "sangram" / "articles" / "future" / "data"
+    return (root or repo_root()) / "content" / "sangram" / "articles" / "future" / "data"
 
 
 # ------------------------------------------------------------- pure domain --
@@ -166,7 +166,8 @@ def build_summary(
 
 # ------------------------------------------------------------------ wiring --
 def run_census(db_path, out_dir, *, seed: int = DEFAULT_SEED,
-               sample_size: int = DEFAULT_SAMPLE_SIZE) -> dict:
+               sample_size: int = DEFAULT_SAMPLE_SIZE,
+               expected_sha256: str | None = None) -> dict:
     """One deterministic census pass: read the pinned master, write both outputs.
 
     Returns the assembled summary. Raises :class:`MissingProvenancePin` on an
@@ -175,6 +176,11 @@ def run_census(db_path, out_dir, *, seed: int = DEFAULT_SEED,
     with DcsMaster(db_path) as master:
         prov = master.provenance()
         sha = master.sha256()
+        if expected_sha256 is not None and sha != expected_sha256:
+            raise ValueError(
+                "sg_mo_021_future: DCS snapshot SHA-256 mismatch; "
+                f"expected {expected_sha256}, got {sha}"
+            )
 
         fin_total = master.count(FIN)
         fin_fut = master.count(FINFUT)
@@ -264,4 +270,16 @@ def generate(step, context) -> dict:
 
     db_path = Path(options["db"]) if options.get("db") else default_db_path(root)
     out_dir = Path(options["out_dir"]) if options.get("out_dir") else default_out_dir(root)
-    return run_census(db_path, out_dir, seed=seed, sample_size=sample_size)
+    declared_inputs = context.get("inputs") or []
+    declared_dcs = next(
+        (item for item in declared_inputs if item.get("provenance_id") == "external:dcs-conllu-sqlite-c3-pin"),
+        None,
+    )
+    expected_sha256 = declared_dcs.get("sha256") if declared_dcs else None
+    return run_census(
+        db_path,
+        out_dir,
+        seed=seed,
+        sample_size=sample_size,
+        expected_sha256=expected_sha256,
+    )

@@ -73,7 +73,7 @@ before(() => {
   // --- publishable ---------------------------------------------------------
   write('ExampleWork_1900/example.mdx', MDX('Example work'));
   write('ExampleWork_1900/nested/second.mdx', MDX('Second page'));
-  write('sangram/articles/future/index.mdx', MDX('Sangram future'));
+  write('content/sangram/articles/future/index.mdx', MDX('Sangram future'));
 
   // --- tracked but denied --------------------------------------------------
   write('ExampleWork_1900/sources/transcription.mdx', MDX('Raw source'));
@@ -112,7 +112,7 @@ describe('allowed zones are discovered', () => {
   });
 
   test('valid Sangram MDX is discovered', () => {
-    assert.ok(discoverPublishableMdx(repo).includes('sangram/articles/future/index.mdx'));
+    assert.ok(discoverPublishableMdx(repo).includes('content/sangram/articles/future/index.mdx'));
   });
 
   test('a newly tracked valid work appears with no config edit', () => {

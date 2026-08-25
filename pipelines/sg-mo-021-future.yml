@@ -17,7 +17,7 @@ context: sangram:future
 generator: sg_mo_021_future
 description: >-
   Future/conditional census over the pinned DCS master feeding
-  sangram/articles/future: denominators, simple-vs-periphrastic split,
+  content/sangram/articles/future: denominators, simple-vs-periphrastic split,
   person/number/mood distributions, Wilson CIs, top forms, and the seeded
   validation sample.
 
@@ -35,8 +35,8 @@ steps:
     inputs:
       - dcs-snapshot
     outputs:
-      - sangram/articles/future/data/coverage_summary.json
-      - sangram/articles/future/data/validation_sample.tsv
+      - content/sangram/articles/future/data/coverage_summary.json
+      - content/sangram/articles/future/data/validation_sample.tsv
 
 verification:
   # Golden parity: the registered command reproduces the pre-cutover goldens
@@ -54,7 +54,7 @@ external_consumers:
     repo: gasyoun/SanskritGrammar
     path: sangram/articles/aorist-types/index.mdx
     owner: SanskritGrammar maintainers
-    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    contract: links to the /sangram/articles/future/ route; target moved to content/ while the slug preserves the route
     smoke: npm run build
     status: merged
 
@@ -62,7 +62,7 @@ external_consumers:
     repo: gasyoun/SanskritGrammar
     path: sangram/articles/imperative-optative/index.mdx
     owner: SanskritGrammar maintainers
-    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    contract: links to the /sangram/articles/future/ route; target moved to content/ while the slug preserves the route
     smoke: npm run build
     status: merged
 
@@ -70,7 +70,7 @@ external_consumers:
     repo: gasyoun/SanskritGrammar
     path: sangram/articles/present-perfect-participles/index.mdx
     owner: SanskritGrammar maintainers
-    contract: links to the /sangram/articles/future/ route; route unchanged by this cutover
+    contract: links to the /sangram/articles/future/ route; target moved to content/ while the slug preserves the route
     smoke: npm run build
     status: merged
 
@@ -92,8 +92,8 @@ rollback:
   procedure: >-
     Revert to the pre-cutover release (commit below): scripts/sg_mo_021_future.py
     is restored as the active generation path, pipelines/sg-mo-021-future.yml and
-    the packages/sg_tooling pilot modules are removed, and the committed article
-    data (unchanged by the cutover) stays valid. Re-run python
+    the packages/sg_tooling pilot modules are removed, and the article directory
+    moves back from content/ to its legacy path. Re-run python
     scripts/article_validate.py --all and npm run build after the revert.
   commit: d00f9dca69cef8adbf71ab3756172c19c3c7abf4
   artifact: docs/architecture/baseline/h1913_c0_invariants.json
