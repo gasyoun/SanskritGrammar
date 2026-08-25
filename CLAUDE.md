@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 22-08-2026_
+_Created: 20-07-2026 · Last updated: 25-08-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
@@ -54,6 +54,16 @@ Three layers in one repo (full orientation:
   (canonical TypeScript in [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book/tree/main/src/remark),
   `.mjs` ports here and in csl-guides) — keep all three in sync by hand; a drift-guard
   is wave-1 lane-3 work ([H1394](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1394-Sonnet_sanskrit-util_reuse-context-w1-consolidation-finish_20.07.26.md)).
+- **SG-MO-021 is a hard-cutover content pipeline.** Its source and generated
+  artifacts live under
+  [`content/sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/content/sangram/articles/future),
+  and [`pipelines/sg-mo-021-future.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/sg-mo-021-future.yml)
+  pins the DCS SQLite input and dispatches
+  [`packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py).
+  Run `uv run sg pipeline check sg-mo-021-future`
+  before generation; the runtime SHA refusal is intentional. The independent
+  and override implementations were reconciled in
+  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
 
 ## Common commands
 
@@ -63,6 +73,7 @@ Three layers in one repo (full orientation:
 | `npm run build` / `npm run start` | build / serve the Docusaurus site |
 | `npm run errata` | regenerate every book's `ERRATA.md` + the index from `errata.yml` |
 | `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer (+ claims schema validate) |
+| `uv run sg pipeline check sg-mo-021-future` | validate the pinned SG-MO-021 Slice C pipeline before generation |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
 
 **CI enforcement (H1840):** `.github/workflows/ci.yml` job `validators` is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
