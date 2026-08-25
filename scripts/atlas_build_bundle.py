@@ -33,7 +33,7 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-CONTRACT_VERSION = "1.1.0"
+CONTRACT_VERSION = "1.1.1"
 DENYLIST_VERSION = "2026-07-11"
 
 # ---------------------------------------------------------------------------
@@ -306,6 +306,185 @@ EXT_NAME_MAP = {
     "sanskrit-lexicon-scans": "ext:sanskrit-lexicon-scans",
 }
 
+# ---------------------------------------------------------------------------
+# FEATURES_INDEX (SanskritLexicography) sections I–IV → public asset families.
+# Contract 1.1.1. Explicit exact-id join table; a row either joins here or is
+# written to features_unmatched.json with a reason — never silently dropped,
+# and no family is invented to force the join rate up (plan R4.2/R4.5).
+
+# Exact-id join table: FEATURES_INDEX row id -> public asset family node.
+FEATURE_ID_JOINS = {
+    "A1": "asset:sa-ru-alignment",
+    "A3": "asset:sa-ru-alignment",
+    "B5": "asset:mw-roots",
+    "C13": "asset:union-headwords",
+    "C14": "asset:mw-heritage-crosswalk",
+    "C15": "asset:dcs-cdsl-crosswalk",
+    "L1": "asset:transliteration",
+    "L10": "asset:transliteration",
+    "L2": "asset:correction-pipeline",
+    "L3": "asset:php-endpoints",
+    "L4": "asset:entry-render",
+    "L7": "asset:translation-kit",
+    "L8": "asset:site-generator",
+    "L9": "asset:ci-fanout",
+}
+
+FEATURE_ID_RE = re.compile(r"^[A-FGLMlg][0-9]+$")
+
+
+def load_features(path):
+    rows = json.loads(Path(path).read_text(encoding="utf-8"))
+    return [
+        {
+            "id": str(r.get("id", "")),
+            "section": str(r.get("section", "")),
+            "title": str(r.get("title", ""))[:160],
+        }
+        for r in rows
+    ]
+
+
+def join_features(features):
+    """Split FEATURES_INDEX I-IV rows into (per-family ids, unmatched list).
+
+    Every row lands in exactly one of the two places (plan R4.2); an
+    ambiguous join stays unmatched and logged (W1-B default, plan R5.1).
+    """
+    joined = {}
+    unmatched = []
+    for row in features:
+        fid = row["id"]
+        target = FEATURE_ID_JOINS.get(fid)
+        if target:
+            bucket = joined.setdefault(target, [])
+            if fid not in bucket:
+                bucket.append(fid)
+            continue
+        if not FEATURE_ID_RE.match(fid):
+            shape = "ext-stack" if fid.startswith("M") else "dict-code"
+        else:
+            shape = "no-join"
+        unmatched.append({**row, "reason": UNMATCHED_NOTE_BY_SHAPE[shape]})
+    return joined, unmatched
+
+
+def escape_mermaid(text):
+    return text.replace('"', "'").replace("[", "(").replace("]", ")")
+
+
+def build_dependencies_mermaid(nodes, edges):
+    """Clustered flowchart of the dependency graph grouped by programme_ru.
+
+    Returns (mermaid_text, is_full_graph). Above MERMAID_MAX_NODES
+    participating nodes: cluster-of-clusters fallback (logged default,
+    verification risk 5).
+    """
+    dep_kinds = {"feeds", "consumes", "vendors", "produces", "cites"}
+    part_ids = set()
+    dep_edges = []
+    for e in edges:
+        if e["kind"] in dep_kinds and e["source"] != e["target"]:
+            dep_edges.append(e)
+            part_ids.add(e["source"])
+            part_ids.add(e["target"])
+    by_id = {n["id"]: n for n in nodes}
+    label_of, programme_of = {}, {}
+    for nid in part_ids:
+        n = by_id[nid]
+        label = n.get("name") or n.get("label_ru") or nid
+        if n["kind"] == "external-stack":
+            label = f"ext:{label}"
+        elif n["kind"] == "surface":
+            label = f"*{label}"
+        label_of[nid] = escape_mermaid(label)
+        programme_of[nid] = escape_mermaid(n.get("programme_ru") or "Вне групп census")
+
+    lines = ["flowchart LR"]
+    lines.append("  accTitle: Кластеризованный граф зависимостей репозиториев")
+    if len(part_ids) > MERMAID_MAX_NODES:
+        agg = {}
+        cid_of = {}
+        for c in sorted(set(programme_of.values())):
+            cid_of[c] = f"c{len(cid_of)}"
+        for e in dep_edges:
+            pair = (programme_of[e["source"]], programme_of[e["target"]])
+            if pair[0] == pair[1]:
+                continue
+            agg[pair] = agg.get(pair, 0) + 1
+        for c, cid in sorted(cid_of.items()):
+            lines.append(f'  subgraph "{c}"')
+            lines.append(f'    {cid}["{c}"]')
+            lines.append("  end")
+        for (cs, ct), cnt in sorted(agg.items()):
+            lines.append(f'  {cid_of[cs]} -- "{cnt}" --> {cid_of[ct]}')
+        return "\n".join(lines), False
+
+    by_prog = {}
+    for nid in sorted(part_ids, key=lambda x: label_of[x]):
+        by_prog.setdefault(programme_of[nid], []).append(nid)
+    for prog, members in sorted(by_prog.items()):
+        lines.append(f'  subgraph "{prog}"')
+        for nid in members:
+            short = nid.split(":", 1)[1]
+            lines.append(f'    {short}["{label_of[nid]}"]')
+        lines.append("  end")
+    for e in sorted(dep_edges, key=lambda x: x["id"]):
+        s = e["source"].split(":", 1)[1]
+        t = e["target"].split(":", 1)[1]
+        arrow = '-.->' if e["kind"] == "cites" else "-->"
+        lines.append(f'  {s} -- "{e["kind"]}" {arrow} {t}')
+    return "\n".join(lines), True
+
+
+MERMAID_OPEN = (
+    "{/* [generated-block: atlas-dependencies-mermaid — do not hand-edit; "
+    "regenerated by scripts/atlas_build_bundle.py] */}"
+)
+MERMAID_CLOSE = "{/* [/generated-block] */}"
+
+DEPENDENCIES_MDX = (
+    Path(__file__).resolve().parent.parent / "sangram" / "atlas" / "dependencies.mdx"
+)
+
+
+def upsert_dependencies_mdx(mdx_path, mermaid_text, mode_note_ru):
+    block = "\n".join([
+        MERMAID_OPEN,
+        "```mermaid",
+        mermaid_text,
+        "```",
+        MERMAID_CLOSE,
+    ])
+    text = mdx_path.read_text(encoding="utf-8")
+    start = text.find(MERMAID_OPEN)
+    if start >= 0:
+        end = text.find(MERMAID_CLOSE, start)
+        if end < 0:
+            raise SystemExit("dependencies.mdx: open marker without close marker")
+        end += len(MERMAID_CLOSE)
+        text = text[:start] + block + text[end:]
+    else:
+        section = f"\n## Граф зависимостей\n\n{mode_note_ru}\n\n{block}\n"
+        anchor = "<AtlasDependencies"
+        idx = text.find(anchor)
+        if idx < 0:
+            raise SystemExit("dependencies.mdx: <AtlasDependencies> anchor not found")
+        text = text[:idx] + section + "\n" + text[idx:]
+    mdx_path.write_text(text, encoding="utf-8", newline="\n")
+
+
+UNMATCHED_NOTE_BY_SHAPE = {
+    "dict-code": (
+        "Roster keyed by dictionary code (MW, AP90, …), outside the "
+        "feature_ids id pattern; the source texts themselves are "
+        "csl-orig (asset:cdsl-source-texts)."
+    ),
+    "ext-stack": "External stack — consumed via ext:* nodes, not owned as an asset.",
+    "no-join": "No explicit join to a public asset family yet (wave-2 drain).",
+}
+MERMAID_MAX_NODES = 45  # above this, emit the cluster-of-clusters fallback
+
 VERDICT_MAP = {"усилить": "amplify", "поддерживать": "sustain"}
 IMPORTANCE_MAP = {"\U0001f534": "key", "\U0001f7e0": "mid", "\U0001f7e1": "aux"}
 STATE_MAP = {"\U0001f534": "blocked", "\U0001f7e1": "partial", "\U0001f535": "stable"}
@@ -363,6 +542,15 @@ def build_views(as_of):
             "edge_kinds": ["replenishes", "generates", "attests", "crosslinks", "fills"],
             "seed": seed("Онтология источников §1.4 и карта происхождения §8 (внутренний Uprava)", "§8", "A1"),
             "route": {"slug": "/sangram/atlas/provenance", "owner_slot": "B6"},
+        },
+        {
+            "id": "features",
+            "title_ru": "Каталог возможностей",
+            "question_ru": "Какие переиспользуемые активы уже есть у организации и какие строки каталога возможностей их наполняют — а что пока не присоединено?",
+            "node_kinds": ["asset"],
+            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites"],
+            "seed": seed("FEATURES_INDEX I–IV (публичный SanskritLexicography), join контракта 1.1.1", None, "B7"),
+            "route": {"slug": "/sangram/atlas/features", "owner_slot": "B6"},
         },
     ]
 
@@ -502,6 +690,10 @@ def git_short_sha(repo_dir, rel_path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--uprava", default="../Uprava")
+    ap.add_argument("--features", default=None,
+                    help="features_index.json from the SanskritLexicography "
+                    "sibling clone (W1-A sidecar); defaults to "
+                    "../SanskritLexicography/features_index.json")
     ap.add_argument("--out", default="sangram/atlas/data/atlas.bundle.json")
     ap.add_argument("--generated-by", default="manual run")
     ap.add_argument("--date", default=datetime.date.today().isoformat())
@@ -510,6 +702,10 @@ def main():
     uprava = Path(args.uprava)
     megabook = uprava / "MEGABOOK.md"
     tsv = uprava / "interlinks_edges.tsv"
+    features_path = (
+        Path(args.features) if args.features
+        else uprava.parent / "SanskritLexicography" / "features_index.json"
+    )
     lines = megabook.read_text(encoding="utf-8").splitlines()
     as_of = args.date
 
@@ -646,6 +842,51 @@ def main():
         if nid in nodes:
             nodes[nid]["programme_ru"] = prog
 
+    # Contract 1.1.1: FEATURES_INDEX I–IV join onto asset families.
+    if not features_path.exists():
+        raise SystemExit(
+            f"features sidecar not found: {features_path} — pass --features "
+            "(W1-A: python build_features_index_html.py --emit-json …)"
+        )
+    features = load_features(features_path)
+    joined, unmatched = join_features(features)
+    unknown_family = sorted(set(joined) - set(nodes))
+    if unknown_family:
+        raise SystemExit(f"FEATURE_ID_JOINS target missing from bundle: {unknown_family}")
+    for family, fids in joined.items():
+        nodes[family]["feature_ids"] = sorted(fids)
+
+    unmatched_doc = {
+        "contract_version": CONTRACT_VERSION,
+        "generated": as_of,
+        "note_ru": ("Строки FEATURES_INDEX (I–IV), не присоединённые к "
+                    "публичным семействам активов; каждая несёт причину. "
+                    "Присоединённые строки — поле feature_ids узлов asset."),
+        "unmatched": unmatched,
+    }
+    unmatched_serialized = json.dumps(unmatched_doc, ensure_ascii=False, indent=2)
+    for pattern in LEAKAGE_PATTERNS:
+        if pattern in unmatched_serialized:
+            raise SystemExit(f"LEAKAGE: banned pattern in features_unmatched: {pattern!r}")
+    unmatched_out = Path(args.out).parent / "features_unmatched.json"
+    unmatched_out.write_text(unmatched_serialized + "\n", encoding="utf-8")
+
+    # Contract 1.1.1: clustered mermaid on the Dependencies page.
+    mermaid, is_full = build_dependencies_mermaid(nodes.values(), edges)
+    mode_note_ru = (
+        "Полный граф зависимостей, кластеризованный по программным группам "
+        f"census; пунктирная стрелка — ребро вида cites. Сгенерирован из "
+        f"bundle контракта {CONTRACT_VERSION}, срез на {as_of}."
+        if is_full
+        else (
+            "Обзорный граф программных групп census: узлов слишком много для "
+            "полного графа, внутри группы читайте карточки выше. Число у ребра — "
+            f"количество типизированных связей. Контракт {CONTRACT_VERSION}, "
+            f"срез на {as_of}."
+        )
+    )
+    upsert_dependencies_mdx(DEPENDENCIES_MDX, mermaid, mode_note_ru)
+
     bundle = {
         "$schema": "./atlas.schema.json",
         "contract_version": CONTRACT_VERSION,
@@ -662,6 +903,8 @@ def main():
                 {"name": "interlinks_edges.tsv (Uprava, приватный hub)",
                  "commit": git_short_sha(uprava, "interlinks_edges.tsv"),
                  "visibility": "internal"},
+                {"name": "features_index.json (SanskritLexicography, публичный каталог)",
+                 "visibility": "public"},
             ],
             "sanitisation": {
                 "denylist_version": DENYLIST_VERSION,
@@ -685,8 +928,11 @@ def main():
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(serialized + "\n", encoding="utf-8")
+    n_families = sum(1 for n in nodes.values() if n.get("feature_ids"))
     print(f"wrote {out}: {len(bundle['nodes'])} nodes, {len(bundle['edges'])} edges, "
           f"{len(bundle['views'])} views; dropped {len(dropped_nodes)} nodes / {dropped_edges} edges")
+    print(f"features 1.1.1: {sum(len(v) for v in joined.values())} ids joined onto "
+          f"{n_families} families; {len(unmatched)} unmatched -> {unmatched_out}")
 
 
 if __name__ == "__main__":
