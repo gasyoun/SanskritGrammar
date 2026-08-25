@@ -19,6 +19,15 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Added
+- **H3521 (OxAlpha) — Learn Your Way wave-1 lessonpack generator.**
+  `scripts/build_lessonpack.py` + 9 committed Kochergina занятие-1 packs
+  (`KocherginaUchebnik_1998/LessonPacks/zan1/`, base + ноль/продолжающий ×
+  йога/аюрведа/кино/паломничество) + k-anon SRS aggregate fixture +
+  `tests/test_build_lessonpack.py` contract suite. Book-scoped details in the
+  [book changelog](KocherginaUchebnik_1998/CHANGELOG.md); serving is a
+  Systema-Sanscriticum PR behind default-OFF `LYW_ENABLED`.
+
 ## [0.122.2] - 2026-08-25
 ### Changed
 

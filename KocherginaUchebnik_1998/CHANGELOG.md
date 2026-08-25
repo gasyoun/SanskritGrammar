@@ -9,6 +9,22 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Added
+- **Learn Your Way wave 1: занятие-1 lesson packs + build-time generator (H3521, OxAlpha,
+  25-08-2026).** Новый build-time генератор `scripts/build_lessonpack.py` (assembler+validator;
+  prose-трансформации авторской агентной сессии зашиты в CONTENT-таблицы — регенерация
+  байт-в-байт) и закоммиченная матрица из 9 профилей под `LessonPacks/zan1/` (base +
+  ноль/продолжающий × йога/аюрведа/кино/паломничество): re-levelled `personalized_text.md`
+  с подсвеченными interest-swap'ами (🎯), embedded MCQ с answer-key'ями, Glows/Grows рубрика,
+  мнемоники и Mermaid mind map (`views/mindmap.mmd`). SRS-ось питается синтетическим
+  k-anonymized агрегатом `LessonPacks/srs_aggregate.json` (band-schema, ноль пользовательских
+  идентификаторов; реальный экспорт — wave 2). Контракт-сьют `tests/test_build_lessonpack.py`
+  (15 тестов): схема манифеста v1, полнота матрицы, no-fabrication gate против слайса
+  «Занятие I» mdx + HK-claims урока, resolvable answer keys, Mermaid sanity, приватность
+  фикстуры, byte-stable rebuild, seeded-defect детекты. Каждый манифест пинит
+  sha256(claims.yml) — расхождение валит `--check`. Serving на Systema-Sanscriticum — за
+  default-OFF флагом `LYW_ENABLED`; включение только после MG sign-off.
+
 ## [0.18.0] - 2026-07-28
 
 ### Added
