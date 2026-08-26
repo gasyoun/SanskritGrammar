@@ -20,6 +20,18 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ### Added
+- **H3493 (Fable 5 `claude-fable-5`) — natural-method story chapters 4–5 v0.**
+  [`CHAPTER_4_SLOKAH.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/CHAPTER_4_SLOKAH.md)
+  (metre chapter: anuṣṭubh 4 × 8 counted in-story, gerund *-tvā*; W4 Karaoke verses
+  `subh_6087` · `bhg_2_47` · `bhg_2_48`, `subh_1249` recalled) and
+  [`CHAPTER_5_SUBHASITANI.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/CHAPTER_5_SUBHASITANI.md)
+  (yad–tad correlative; beginner-pack verses `subh_2366` · `subh_3371` · `subh_7583`;
+  ladder ending on *paṭha putra*). Four layers + verse gloss + sandhi list + budget
+  line each; 2 register passes per chapter. Budget doc rows 4–5 flipped to actuals
+  (15/13 lemmas, glue 25 %/27 %); cumulative 75 content lemmas / 49 top-150 (target met).
+  New gate `tools/story_chapter_budget_check.py` (band counts vs cap, verse-ID
+  resolution against kosha pack + Karaoke files, † count) — PASS on ch. 1–5.
+  Still **NOT cleared for a live cohort** — human editorial visa owed on ch. 4–5.
 - **H3521 (OxAlpha) — Learn Your Way wave-1 lessonpack generator.**
   `scripts/build_lessonpack.py` + 9 committed Kochergina занятие-1 packs
   (`KocherginaUchebnik_1998/LessonPacks/zan1/`, base + ноль/продолжающий ×
