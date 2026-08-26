@@ -20,6 +20,7 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ### Added
+- **H3550 (OxAlpha) — SanskritGrammar 30-day risk-ranked code review and future independent review gate: execution-ready five-layer plan staged** (OxAlpha (x-preview-f-free), plan authored 26-08-2026 by Codex Sol (gpt-5.6-sol)). [Plan index](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_OXALPHA_CODE_REVIEW_HARDENING_2026Q3.md) fixes the 30-day window, ten-slice risk cap, independent Standards/Spec passes, evidence-only P0/P1 repair contract, canonical GitHub adapter, and an inactive future status-gate design.
 - **H3521 (OxAlpha) — Learn Your Way wave-1 lessonpack generator.**
   `scripts/build_lessonpack.py` + 9 committed Kochergina занятие-1 packs
   (`KocherginaUchebnik_1998/LessonPacks/zan1/`, base + ноль/продолжающий ×
