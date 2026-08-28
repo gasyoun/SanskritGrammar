@@ -45,10 +45,17 @@ const KIND_META = {
     out_ru: 'ссылается на',
     in_ru: 'цитируется в',
   },
+  advises: {
+    badge: 'advises',
+    className: styles.kindAdvises,
+    legend_ru: 'данные источника служат ориентиром для экспертной работы цели (пока без программного потребления)',
+    out_ru: 'консультирует',
+    in_ru: 'консультируется у',
+  },
 };
 
 // Which endpoint holds the CANONICAL asset of the relation (see legend).
-const CANONICAL_END = { feeds: 'source', consumes: 'target', vendors: 'target', produces: 'source', cites: null };
+const CANONICAL_END = { feeds: 'source', consumes: 'target', vendors: 'target', produces: 'source', cites: null, advises: 'source' };
 
 const STATUS_META = {
   live: { label: 'live', className: styles.statusLive },

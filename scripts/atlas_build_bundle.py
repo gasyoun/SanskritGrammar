@@ -71,6 +71,8 @@ SANSKRIT_LEXICON = {
     "csl-apidev", "csl-app", "csl-atlas", "csl-corrections", "csl-devanagari",
     "csl-doc", "csl-guides", "csl-inflect", "csl-newsletter", "csl-observatory",
     "csl-orig", "csl-pywork", "csl-santam", "csl-standards", "csl-websanlexicon",
+    "csl-pyutil", "csl-ldev", "csl-lnum", "csl-westergaard", "csl-whitroot",
+    "mw-dev",
     "sanskrit-lexicon.github.io", "sanskrit-util",
 }
 ORG_OVERRIDES = {
@@ -84,6 +86,8 @@ GASYOUN = {
     "SanskritLexicography", "SanskritRussian", "SOCKS5-VPS",
     "Systema-Sanscriticum", "VisualDCS", "WhitneyRoots", "ZettelkastenWiki",
     "kosha",
+    "claude-config", "codex-config", "dcs-conllu", "rvlinks", "pwg-ru-data",
+    "ruwritingstyles-obsidian", "IndologyArchiveAtlas", "SamasaChakram",
 }
 
 
@@ -105,6 +109,15 @@ def slug(name):
 
 def internal_evidence(label_ru):
     return {"label_ru": label_ru, "visibility": "internal"}
+
+
+def sanitize_evidence(text):
+    """Strip private-hub URL stems from TSV evidence before it reaches the
+    public bundle (LEAKAGE_PATTERNS scans the serialized output)."""
+    for pat, sub in (("https://github.com/gasyoun/Uprava", "Uprava (приватный hub)"),
+                     ("https://github.com/gasyoun/github-spine", "github-spine")):
+        text = text.replace(pat, sub)
+    return text
 
 
 def public_evidence(label_ru, url):
@@ -291,6 +304,13 @@ EXTERNAL_STACKS = [
      "https://sanskrit-lexicon-scans.github.io/", None,
      "pwg-scan-index-campaign — 37 PWG/PWK page-scan link-target репозиториев (~11.2 GB) отдают сканы через app1/app2 на <dir>.",
      "Не дублировать сканы в других репозиториях; ссылаться на GH Pages хост."),
+    ("ext:yui", "Yahoo! UI Library 2.6.0 (vendored)", "https://github.com/yui/yui2", "BSD",
+     "Статические disp-ассеты, вендоренные в csl-westergaard/csl-whitroot (S1 coownership, H3373).",
+     "Архивный апстрим; не обновлять вручную."),
+    ("ext:agricidaniel-claude-seo", "claude-seo plugin (AgriciDaniel)",
+     "https://github.com/AgriciDaniel/claude-seo", None,
+     "Апстрим Claude-плагина; skills/agents вендорены в claude-config (H3373).",
+     "Не редактировать вендоренные копии."),
 ]
 
 # tsv `ext:` name → node id above.
@@ -302,6 +322,8 @@ EXT_NAME_MAP = {
     "vidyut": "ext:vidyut",
     "Samsaadhanii": "ext:samsaadhanii",
     "Nagari": "ext:nagari",
+    "yui": "ext:yui",
+    "AgriciDaniel-claude-seo": "ext:agricidaniel-claude-seo",
     "samskrtam.ru": "ext:samskrtam-ru",
     "sanskrit-lexicon-scans": "ext:sanskrit-lexicon-scans",
 }
@@ -380,7 +402,7 @@ def build_dependencies_mermaid(nodes, edges):
     participating nodes: cluster-of-clusters fallback (logged default,
     verification risk 5).
     """
-    dep_kinds = {"feeds", "consumes", "vendors", "produces", "cites"}
+    dep_kinds = {"feeds", "consumes", "vendors", "produces", "cites", "advises"}
     part_ids = set()
     dep_edges = []
     for e in edges:
@@ -512,7 +534,7 @@ def build_views(as_of):
             "title_ru": "Переиспользование готовых активов",
             "question_ru": "У кого уже есть нужный актив, кто его потребляет и что запрещено пересоздавать?",
             "node_kinds": ["repo", "asset", "external-stack", "surface"],
-            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites"],
+            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites", "advises"],
             "seed": seed("Карта переиспользования MEGABOOK §12 (внутренний Uprava)", "§12", "A3"),
             "route": {"slug": "/sangram/atlas/reuse", "owner_slot": "B3"},
         },
@@ -530,7 +552,7 @@ def build_views(as_of):
             "title_ru": "Зависимости репозиториев",
             "question_ru": "Какие репозитории питают, потребляют, вендорят и цитируют друг друга?",
             "node_kinds": ["repo", "external-stack", "surface"],
-            "edge_kinds": ["feeds", "consumes", "vendors", "produces", "cites"],
+            "edge_kinds": ["feeds", "consumes", "vendors", "produces", "cites", "advises"],
             "seed": seed("Типизированный список ребер interlinks_edges.tsv (внутренний Uprava)", None, "A1"),
             "route": {"slug": "/sangram/atlas/dependencies", "owner_slot": "B5"},
         },
@@ -548,7 +570,7 @@ def build_views(as_of):
             "title_ru": "Каталог возможностей",
             "question_ru": "Какие переиспользуемые активы уже есть у организации и какие строки каталога возможностей их наполняют — а что пока не присоединено?",
             "node_kinds": ["asset"],
-            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites"],
+            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites", "advises"],
             "seed": seed("FEATURES_INDEX I–IV (публичный SanskritLexicography), join контракта 1.1.1", None, "B7"),
             "route": {"slug": "/sangram/atlas/features", "owner_slot": "B6"},
         },
@@ -812,29 +834,51 @@ def main():
 
     # Assessed: repo dependency edges from interlinks_edges.tsv.
     seen_dep = {}
+    def cell_names(cell):
+        """TSV endpoint cell -> individual names: comma lists expand;
+        'Wil-YAT' is the Wilson/Yates pair (mirrors Uprava repo_graph_check)."""
+        out = []
+        for part in cell.split(","):
+            part = part.strip()
+            if not part:
+                continue
+            if part == "Wil-YAT":
+                out.extend(["Wil", "YAT"])
+            else:
+                out.append(part)
+        return out
+
     for row in parse_tsv(tsv):
         def resolve(name):
             if name == "*":
                 return "surface:org-wide"
             if name.startswith("ext:"):
-                ext_id = EXT_NAME_MAP.get(name[4:])
-                if ext_id is None:
-                    raise SystemExit(f"unmapped external stack: {name}")
+                ext_id = EXT_NAME_MAP.get(name[4:], f"ext:{slug(name[4:])}")
                 return ext_id
             return ensure_repo(name)
 
-        sid, tid = resolve(row["source"]), resolve(row["target"])
-        if sid is None or tid is None:
-            dropped_edges += 1
-            continue
-        base = f"e:dep-{slug(sid.split(':', 1)[1])}-{row['kind']}-{slug(tid.split(':', 1)[1])}"
-        n = seen_dep.get(base, 0)
-        seen_dep[base] = n + 1
-        eid = base if n == 0 else f"{base}-{n + 1}"
-        edges.append({"id": eid, "source": sid, "target": tid, "kind": row["kind"],
-                      "asset_ru": row["asset"], "status": row["status"],
-                      "temperature": "assessed", "as_of": as_of,
-                      "evidence": internal_evidence(f"interlinks_edges.tsv: {row['evidence']} (внутренний Uprava)")})
+        seen_pairs = set()
+        for src in cell_names(row["source"]):
+            sid = resolve(src)
+            if sid is None:
+                dropped_edges += 1
+                continue
+            for tgt in cell_names(row["target"]):
+                if (src, tgt) in seen_pairs:
+                    continue
+                seen_pairs.add((src, tgt))
+                tid = resolve(tgt)
+                if tid is None:
+                    dropped_edges += 1
+                    continue
+                base = f"e:dep-{slug(sid.split(':', 1)[1])}-{row['kind']}-{slug(tid.split(':', 1)[1])}"
+                n = seen_dep.get(base, 0)
+                seen_dep[base] = n + 1
+                eid = base if n == 0 else f"{base}-{n + 1}"
+                edges.append({"id": eid, "source": sid, "target": tid, "kind": row["kind"],
+                              "asset_ru": row["asset"], "status": row["status"],
+                              "temperature": "assessed", "as_of": as_of,
+                              "evidence": internal_evidence(sanitize_evidence(f"interlinks_edges.tsv: {row['evidence']} (внутренний Uprava)"))})
 
     # Structural: census programme group (§9.x subsection) per repo node.
     for name, prog in programme_by_repo.items():

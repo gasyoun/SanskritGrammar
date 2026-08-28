@@ -207,7 +207,7 @@
           "type": "string",
           "enum": [
             "replenishes", "generates", "attests", "crosslinks", "fills",
-            "feeds", "consumes", "vendors", "produces", "cites",
+            "feeds", "consumes", "vendors", "produces", "cites", "advises",
             "creates", "strengthens", "funds", "scales",
             "anchors", "owns"
           ]
@@ -248,7 +248,7 @@
             "type": "string",
             "enum": [
               "replenishes", "generates", "attests", "crosslinks", "fills",
-              "feeds", "consumes", "vendors", "produces", "cites",
+              "feeds", "consumes", "vendors", "produces", "cites", "advises",
               "creates", "strengthens", "funds", "scales",
               "anchors", "owns"
             ]
