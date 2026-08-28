@@ -2,9 +2,9 @@
   "$schema": "./atlas.schema.json",
   "contract_version": "1.1.1",
   "provenance": {
-    "generated": "2026-08-28",
+    "generated": "2026-08-29",
     "generator": "scripts/atlas_build_bundle.py",
-    "generated_by": "OxAlpha (zai-coding-plan/glm-5.3-flash via opencode)",
+    "generated_by": "manual run",
     "series_slot": "B1 (H623)",
     "sources": [
       {
@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "4440b4e4a",
+        "commit": "240740f56",
         "visibility": "internal"
       },
       {
@@ -1706,7 +1706,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1729,7 +1729,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1751,7 +1751,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1777,7 +1777,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1804,7 +1804,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1831,7 +1831,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1858,7 +1858,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1888,7 +1888,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1911,7 +1911,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1937,7 +1937,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1964,7 +1964,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -1991,7 +1991,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2021,7 +2021,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2048,7 +2048,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2075,7 +2075,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2102,7 +2102,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2132,7 +2132,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2155,7 +2155,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2177,7 +2177,7 @@
       "verdict": "amplify",
       "gates": [],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2203,7 +2203,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -2230,7 +2230,7 @@
         }
       ],
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "MEGABOOK §6 — оценка автора (внутренний Uprava)",
         "visibility": "internal"
@@ -3828,7 +3828,7 @@
       "asset_ru": "canonical CDSL source texts (v02/<dict>/<dict>.txt)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md CDSL spine (внутренний Uprava)",
         "visibility": "internal"
@@ -3842,7 +3842,7 @@
       "asset_ru": "generate_dict.sh + updateByLine.py build/XML-validation pipeline",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md correction workflow (внутренний Uprava)",
         "visibility": "internal"
@@ -3856,7 +3856,7 @@
       "asset_ru": "maintainer corrections (Jim Funderburk pattern)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
         "visibility": "internal"
@@ -3870,7 +3870,7 @@
       "asset_ru": "audit-trail change files for applied corrections",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS spine section (внутренний Uprava)",
         "visibility": "internal"
@@ -3884,7 +3884,7 @@
       "asset_ru": "data/derived/correction_loci.tsv (39,540 locus-resolved records)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-corrections PR #291; consumer build queued (H294) (внутренний Uprava)",
         "visibility": "internal"
@@ -3898,7 +3898,7 @@
       "asset_ru": "per-dict XML/SQLite for the PHP web frontend",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
         "visibility": "internal"
@@ -3912,7 +3912,7 @@
       "asset_ru": "dict data for the search API",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §5 (внутренний Uprava)",
         "visibility": "internal"
@@ -3926,7 +3926,7 @@
       "asset_ru": "CDSL dictionaries packaged as offline Flutter app",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-app/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3940,7 +3940,7 @@
       "asset_ru": "SLP1 source text for Devanagari round-trip",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md steps 2-7 (внутренний Uprava)",
         "visibility": "internal"
@@ -3954,7 +3954,7 @@
       "asset_ru": "Devanagari-tag round-trip diffs back to source",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-devanagari/readme.md (to_devanagari.py / to_slp1.py / diff) (внутренний Uprava)",
         "visibility": "internal"
@@ -3968,7 +3968,7 @@
       "asset_ru": "MW-derived CDSL headwords keying paradigm tables",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3982,7 +3982,7 @@
       "asset_ru": "huet_mw_map_data.py root crosswalk (678 entries)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-inflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -3996,7 +3996,7 @@
       "asset_ru": "all dict source texts for the cross-dict headword atlas",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
         "visibility": "internal"
@@ -4010,7 +4010,7 @@
       "asset_ru": "dict body texts for body-grounded triage",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS hubs section (внутренний Uprava)",
         "visibility": "internal"
@@ -4024,7 +4024,7 @@
       "asset_ru": "MW1899 nominal/verb entries",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MWinflect/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4038,7 +4038,7 @@
       "asset_ru": "full MW inflection tables for form→lemma lookup",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MWinflect/README.md claim; kosha currently uses vidyut instead (внутренний Uprava)",
         "visibility": "internal"
@@ -4052,7 +4052,7 @@
       "asset_ru": "mw_etymology.tsv → crosswalk/mw_derivations.json (620 roots)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: WhitneyRoots PR #22 (внутренний Uprava)",
         "visibility": "internal"
@@ -4066,7 +4066,7 @@
       "asset_ru": "etymology_stats → src/data/etymology-oracle.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas PR #178 (внутренний Uprava)",
         "visibility": "internal"
@@ -4080,7 +4080,7 @@
       "asset_ru": "TEI/OntoLex-Lemon/FrAC export modelling ownership",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas docs/TEI_ONTOLEX_MIGRATION.md pointer (H271) (внутренний Uprava)",
         "visibility": "internal"
@@ -4094,7 +4094,7 @@
       "asset_ru": "hand-synced forked basicadjust.php/basicdisplay.php",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-fork-sync-check skill (внутренний Uprava)",
         "visibility": "internal"
@@ -4108,7 +4108,7 @@
       "asset_ru": "src/data/atlas-extract.json (OBS-R/OBS-C figures)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H278; csl-atlas data/obs/* (внутренний Uprava)",
         "visibility": "internal"
@@ -4122,7 +4122,7 @@
       "asset_ru": "citation graph + L2 cladogram → citation-sources.json/cladogram.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H279; csl-guides PR #94 (внутренний Uprava)",
         "visibility": "internal"
@@ -4136,7 +4136,7 @@
       "asset_ru": "top-2,000 lemma_frequency excerpt → src/data/corpus-frequency.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-corpus-frequency.mjs; EDGE CONTRACT SHARED_CODE s24 (sha pin + --check), PR https://github.com/sanskrit-lexicon/csl-guides/pull/199 (внутренний Uprava)",
         "visibility": "internal"
@@ -4150,7 +4150,7 @@
       "asset_ru": "mw_heritage_crosswalk aggregates → src/data/heritage-coverage.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H282; csl-guides scripts/build-heritage-coverage.mjs (внутренний Uprava)",
         "visibility": "internal"
@@ -4164,7 +4164,7 @@
       "asset_ru": "each newsletter edition doubles as a blog post",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-newsletter/CLAUDE.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4178,7 +4178,7 @@
       "asset_ru": "30-day org commits/issues harvested via gh",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-newsletter scripts/draft-newsletter.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4192,7 +4192,7 @@
       "asset_ru": "committed rendered HTML reports from source repos",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: sanskrit-lexicon.github.io/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4206,7 +4206,7 @@
       "asset_ru": "front-matter scans OCR'd into GRA/prefaces/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; GRA prefaces (внутренний Uprava)",
         "visibility": "internal"
@@ -4220,7 +4220,7 @@
       "asset_ru": "front-matter scans OCR'd into MD/prefaces/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-preface-ocr; MD prefaces (внутренний Uprava)",
         "visibility": "internal"
@@ -4234,7 +4234,7 @@
       "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
         "visibility": "internal"
@@ -4248,7 +4248,7 @@
       "asset_ru": "*pref_all.* consolidated preface editions in ocr-prefaces.mdx",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS untapped-feeds (wired 26-06) (внутренний Uprava)",
         "visibility": "internal"
@@ -4262,7 +4262,7 @@
       "asset_ru": "canonical CONTRIBUTING standard bootstrapped org-wide",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: /cologne-contributing-all skill (внутренний Uprava)",
         "visibility": "internal"
@@ -4276,7 +4276,7 @@
       "asset_ru": "published Cologne workflow skills (Codex counterpart of ~/.claude/commands)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: cologne-skills/README.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4290,7 +4290,7 @@
       "asset_ru": "tamil SQLite corpus (mwd+cap+otl, 321,620 entries) fold",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-santam docs/ROADMAP_2026_2027.md Wave 4 (внутренний Uprava)",
         "visibility": "internal"
@@ -4304,7 +4304,7 @@
       "asset_ru": "org-wide repo metrics (manifest.json)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-observatory dashboard (внутренний Uprava)",
         "visibility": "internal"
@@ -4318,7 +4318,7 @@
       "asset_ru": "correction_events_release.csv (50,953 events)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: pending Zenodo DOI re-mint (внутренний Uprava)",
         "visibility": "internal"
@@ -4332,7 +4332,7 @@
       "asset_ru": "upstream DCS corpus data (CoNLL-U)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4346,7 +4346,7 @@
       "asset_ru": "data/frequency/lemma_frequency.tsv (83,277 rows, M9 join)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha build_frequency_layer.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4360,7 +4360,7 @@
       "asset_ru": "frequency-first pwg_ru worklist ordering",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_pwg_freq_order.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4374,7 +4374,7 @@
       "asset_ru": "dcs_ppp_verified.tsv (5,181 corpus-attested PPP forms)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: WhitneyRoots scripts/build_decisions_doc.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4388,7 +4388,7 @@
       "asset_ru": "citation registers",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4402,7 +4402,7 @@
       "asset_ru": "DCS-2026 lemmas.csv → wf.txt refresh + dcs_cdsl_xref.tsv",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-apidev simple-search/wf1 + dcs_xref (внутренний Uprava)",
         "visibility": "internal"
@@ -4416,7 +4416,7 @@
       "asset_ru": "DCS morphology feed for atlas mining",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS corpus feeds (внутренний Uprava)",
         "visibility": "internal"
@@ -4430,7 +4430,7 @@
       "asset_ru": "GPU morphology/lemma runs",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas #89/#92 (внутренний Uprava)",
         "visibility": "internal"
@@ -4444,7 +4444,7 @@
       "asset_ru": "akshara/varna/conjunct frequency CSVs (Fonetika regen-2026)",
       "status": "unverified",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS Fonetika row (downstream named, wiring unconfirmed) (внутренний Uprava)",
         "visibility": "internal"
@@ -4458,7 +4458,7 @@
       "asset_ru": "varga-series-diachrony aggregates → GasunsDhatu 2026 §2.6",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: VisualDCS derived-data/Fonetika/varga-series-diachrony (внутренний Uprava)",
         "visibility": "internal"
@@ -4472,7 +4472,7 @@
       "asset_ru": "archive.sqlite parallels → data/crosstext/archive_parallels.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: CommentaryStrategies crosstext_archive_parallels.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4486,7 +4486,7 @@
       "asset_ru": "subhashita verse feed (10 curated anuṣṭubhs)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/import_subhashita.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4500,7 +4500,7 @@
       "asset_ru": "indische_sprueche.jsonl (7,537 sayings mirror)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: VisualDCS export_subhashita_jsonl.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4514,7 +4514,7 @@
       "asset_ru": "4-layer accented Rigveda export → non-derived/vedaweb/",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H096; host down per SERVER_OUTAGES.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4528,7 +4528,7 @@
       "asset_ru": "gate dicts + verse-aligned corpus_builder JSONL → L0/TMX + name glossaries",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_src.py + build_l0.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4542,7 +4542,7 @@
       "asset_ru": "samskrtam.ru /z/ verb-root deep links (static root→id table)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: buhler-sanskrit-book PR #12 (внутренний Uprava)",
         "visibility": "internal"
@@ -4556,7 +4556,7 @@
       "asset_ru": "corpus_lexicon.jsonl → 3-layer Sa→Ru glossary",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritRussian README + RussianTranslation/src pipeline (внутренний Uprava)",
         "visibility": "internal"
@@ -4570,7 +4570,7 @@
       "asset_ru": "form→lemma maps for glossary rollup",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation/src/build_dcs_maps (внутренний Uprava)",
         "visibility": "internal"
@@ -4584,7 +4584,7 @@
       "asset_ru": "kosha fallback lemmatization",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: vendored vidyut fallback artifact vidyut_form2lemma.tsv (28-08-2026 re-verify; build-script pointer stale) (внутренний Uprava)",
         "visibility": "internal"
@@ -4598,7 +4598,7 @@
       "asset_ru": "inflection/lemmatization engine (dual-engine E1)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha E1 report v0.10.0 (внутренний Uprava)",
         "visibility": "internal"
@@ -4612,7 +4612,7 @@
       "asset_ru": "corpus-aligned RU glosses baked into verses/data/*.json",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritKaraoke tools/build_glosses.py (внутренний Uprava)",
         "visibility": "internal"
@@ -4626,7 +4626,7 @@
       "asset_ru": "root-layer RU glosses ↔ Whitney/mw_roots crosswalk",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritRussian row (potential downstream) (внутренний Uprava)",
         "visibility": "internal"
@@ -4640,7 +4640,7 @@
       "asset_ru": "darkone23 mirror → mw_heritage_crosswalk.tsv (185,803 MW entries)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: HeadwordLists/HERITAGE_MIRROR_INVENTORY.md (H099) (внутренний Uprava)",
         "visibility": "internal"
@@ -4654,7 +4654,7 @@
       "asset_ru": "union_headwords + mw_roots + mw_etymology in data-v0.1.0 release",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (внутренний Uprava)",
         "visibility": "internal"
@@ -4668,7 +4668,7 @@
       "asset_ru": "HeadwordLists/union/union_headwords.tsv attestation gate",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #13 (union_attestation.py) (внутренний Uprava)",
         "visibility": "internal"
@@ -4682,7 +4682,7 @@
       "asset_ru": "nochange/do_not_file_suppress.txt (2,297 deliberate non-standard spellings)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: csl-atlas PR #188 (внутренний Uprava)",
         "visibility": "internal"
@@ -4696,7 +4696,7 @@
       "asset_ru": "ortho_drift/*_reform_map.tsv (de 15,685 / ru 7,709) for gloss query normalization (1901-th/-iren + 1918-* subset)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3340; SHARED_CODE §24 contract (check:ortho-edge); csl-guides PR #200 merged 23-08-2026 (внутренний Uprava)",
         "visibility": "internal"
@@ -4710,7 +4710,7 @@
       "asset_ru": "ortho-drift census → /tools/ortho-drift page (PH5 ORTHO-CLOCK)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H1577 + H3340 verification; csl-atlas PR #308 merged (внутренний Uprava)",
         "visibility": "internal"
@@ -4724,7 +4724,7 @@
       "asset_ru": "corpustei plaintext (6 sections) for meter QA + typo checking",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SanskritSpellCheck PR #24 (local-only, CC BY-NC-SA) (внутренний Uprava)",
         "visibility": "internal"
@@ -4738,7 +4738,7 @@
       "asset_ru": "in-corpus e-text typo reports upstream",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: GRETIL_TEXT_TYPOS.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4752,7 +4752,7 @@
       "asset_ru": "DCS×Heritage alignment (130,270 sentences)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready); no LICENSE upstream (внутренний Uprava)",
         "visibility": "internal"
@@ -4766,7 +4766,7 @@
       "asset_ru": "Sundarakāṇḍa gold kāraka treebank",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: approved pilot (GTD Agent-Ready) (внутренний Uprava)",
         "visibility": "internal"
@@ -4780,7 +4780,7 @@
       "asset_ru": "canonical IAST⇄SLP1⇄Devanagari transcoders (Py+JS)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
         "visibility": "internal"
@@ -4794,7 +4794,7 @@
       "asset_ru": "original transcoder donor code",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (внутренний Uprava)",
         "visibility": "internal"
@@ -4808,7 +4808,7 @@
       "asset_ru": "vendored JS transcoder v0.4.0",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE §1 (H280) (внутренний Uprava)",
         "visibility": "internal"
@@ -4822,7 +4822,7 @@
       "asset_ru": "static-site generator engine (extracted from ors_faq/publish.py)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ZettelkastenWiki/CLAUDE.md (Wave 2 parity gate) (внутренний Uprava)",
         "visibility": "internal"
@@ -4836,7 +4836,7 @@
       "asset_ru": "published static FAQ site + bot",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ORS-FAQ/CLAUDE.md (внутренний Uprava)",
         "visibility": "internal"
@@ -4850,7 +4850,7 @@
       "asset_ru": "source-archive upstream + docx→mdx/rstTable book pipeline",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS SanskritGrammar row; SHARED_CODE §15 (внутренний Uprava)",
         "visibility": "internal"
@@ -4864,7 +4864,7 @@
       "asset_ru": "per-lemma static dictionary cards",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: TODO(kosha) marker in Dictionary.tsx (внутренний Uprava)",
         "visibility": "internal"
@@ -4878,7 +4878,7 @@
       "asset_ru": "data-v* releases: canonical derived-dataset serving tier",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json (D-HUB-1..8) (внутренний Uprava)",
         "visibility": "internal"
@@ -4892,7 +4892,7 @@
       "asset_ru": "voice-conversion audio tooling for karaoke recordings",
       "status": "unverified",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ROADMAP_ALL_REPOS_2026H2 P1 grouping; no artifact edge yet (внутренний Uprava)",
         "visibility": "internal"
@@ -4906,7 +4906,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
         "visibility": "internal"
@@ -4920,7 +4920,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (Amarakośa in CDSL format)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4934,7 +4934,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category + org CLAUDE.md spine (внутренний Uprava)",
         "visibility": "internal"
@@ -4948,7 +4948,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (csl-orig/v02/ap90/ap90.txt)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -4962,7 +4962,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4976,7 +4976,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -4990,7 +4990,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5004,7 +5004,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5018,7 +5018,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5032,7 +5032,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5046,7 +5046,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5060,7 +5060,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (Frish reader, Cologne 2015)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -5074,7 +5074,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../graxml/gra.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -5088,7 +5088,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5102,7 +5102,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
         "visibility": "internal"
@@ -5116,7 +5116,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine; pwg_ru gate-evidence dict",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category; ROADMAP_ALL_REPOS P2 (внутренний Uprava)",
         "visibility": "internal"
@@ -5130,7 +5130,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5144,7 +5144,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5158,7 +5158,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5172,7 +5172,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5186,7 +5186,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5200,7 +5200,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../mwsxml/mws.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -5214,7 +5214,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5228,7 +5228,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../pwgxml/pwg.xml); source of the RU/EN kit",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -5242,7 +5242,7 @@
       "asset_ru": "source dictionary text for the pwg_ru / pwg_en translation kit",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: RussianTranslation kit (5-layer merged source) (внутренний Uprava)",
         "visibility": "internal"
@@ -5256,7 +5256,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (../pwkxml/pwk.xml)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: org CLAUDE.md organisation table (внутренний Uprava)",
         "visibility": "internal"
@@ -5270,7 +5270,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5284,7 +5284,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5298,7 +5298,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5312,7 +5312,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5326,7 +5326,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5340,7 +5340,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5354,7 +5354,7 @@
       "asset_ru": "per-dictionary working repo over the CDSL spine (Wilson/Yates pair)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: MASTER_INDEX CDSL category (внутренний Uprava)",
         "visibility": "internal"
@@ -5368,7 +5368,7 @@
       "asset_ru": "corpus_sandhi.tsv — corpus-attested sandhi teaching layer over DCS (manifest corpus-sandhi/gita-sandhi/sandhi-curriculum)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md kosha-sandhi-programme (H882->H902); kosha/SANDHI_PROGRAMME.md (внутренний Uprava)",
         "visibility": "internal"
@@ -5382,7 +5382,7 @@
       "asset_ru": "declension_cell_coverage (lemma_cell_coverage.csv, 57144 lemmas) derived from pinned dcs_full.sqlite",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md SanskritGrammar-Sangram-G2 (H1048) (внутренний Uprava)",
         "visibility": "internal"
@@ -5396,7 +5396,7 @@
       "asset_ru": "DCS text->period diachronic map (PERIOD_MAP over pinned dcs_full.sqlite)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md SanskritGrammar-text-period-map (H1000) (внутренний Uprava)",
         "visibility": "internal"
@@ -5410,7 +5410,7 @@
       "asset_ru": "Klammerdiagramm SVG generator + samasa right-to-left reading method/rulings",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md SamasaChakram (H1010) (внутренний Uprava)",
         "visibility": "internal"
@@ -5424,7 +5424,7 @@
       "asset_ru": "INDOLOGY-L mailing-list archive atlas (62115 msgs 1990-2026; split from IndologyScholars Indology/ subtree)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md IndologyScholars-split (H460) (внутренний Uprava)",
         "visibility": "internal"
@@ -5438,7 +5438,7 @@
       "asset_ru": "VedaWeb 2.0 Rig-Veda accented-text feed (non-derived/vedaweb/, 10551 stanzas joined 0-miss)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md VedaWeb-feed (H096) (внутренний Uprava)",
         "visibility": "internal"
@@ -5452,7 +5452,7 @@
       "asset_ru": "RussianTranslation translation memory / TM-TMX lanes (build_l0.py; RU+oral registers)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md RU-translation-memory (H215) (внутренний Uprava)",
         "visibility": "internal"
@@ -5466,7 +5466,7 @@
       "asset_ru": "pwg-scan-index-campaign — 37 PWG/PWK page-scan link-target repos (~11.2 GB), each serving app1/app2 at sanskrit-lexicon-scans.github.io/<dir>/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md pwg-scan-index-campaign (H1706) (внутренний Uprava)",
         "visibility": "internal"
@@ -5480,7 +5480,7 @@
       "asset_ru": "pwg-scan-index-campaign — PWG scan-index campaign registry + e-text candidate queue + scan-target audit (data/pwg_scan_index_tracker/)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md pwg-scan-index-campaign (H1706) (внутренний Uprava)",
         "visibility": "internal"
@@ -5494,7 +5494,7 @@
       "asset_ru": "ramayana-edition-alignment (scan-backed edition alignment feed)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md ramayana-edition-alignment (внутренний Uprava)",
         "visibility": "internal"
@@ -5508,7 +5508,7 @@
       "asset_ru": "paradigm_nominal (visual/paradigm_nominal.json + sanskrit_nominal_dashboard.html, H1472)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: PROJECT_INTERLINKS.md paradigm_nominal (H1472) (внутренний Uprava)",
         "visibility": "internal"
@@ -5522,7 +5522,7 @@
       "asset_ru": "dcs_published_figures",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H2298; VisualDCS/dcs_published_figures.json; SanskritGrammar/data/dcs_published_figures.json + check_claims_consistency.py check 3 (внутренний Uprava)",
         "visibility": "internal"
@@ -5536,7 +5536,7 @@
       "asset_ru": "cohort_start_chteniya",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H2109→H2110; kosha data/cohort_start_chteniya; Systema resources/data/cohort_start_chteniya via scripts/vendor_cohort_start_chteniya_packs.py (внутренний Uprava)",
         "visibility": "internal"
@@ -5550,7 +5550,7 @@
       "asset_ru": "rv_hymn_pages_ru_geldner_griffith",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: Uprava (приватный hub)/blob/main/PROJECT_INTERLINKS.md (внутренний Uprava)",
         "visibility": "internal"
@@ -5564,7 +5564,7 @@
       "asset_ru": "dcs_conllu_gold_corpus",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: Uprava (приватный hub)/blob/main/PROJECT_INTERLINKS.md (внутренний Uprava)",
         "visibility": "internal"
@@ -5578,7 +5578,7 @@
       "asset_ru": "pwg-sense-attestation-window (PWG per-sense attestation window, Ceiling C2 phase 1)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3168; PROJECT_INTERLINKS.md line ~495; RussianTranslation/src/pwg_sense_attestation_window.jsonl (внутренний Uprava)",
         "visibility": "internal"
@@ -5592,7 +5592,7 @@
       "asset_ru": "heritage phase-6 witness cross-validation: heritage_phase6_crossval.md + h3171_results.jsonl + classified disagreement TSV (Heritage sktreader vs pinned local DharmaMitra ByT5, over the H1349 adjudicated glossary sample)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3171; RussianTranslation/gold/heritage_phase6_crossval.md (внутренний Uprava)",
         "visibility": "internal"
@@ -5606,7 +5606,7 @@
       "asset_ru": "per-entry exploded dict-text snapshot (v02/*; ieg/bor/ae/mwe family holds ~10.1k files byte-identical with csl-lnum's csl-orig explosion where both upstreams agree)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 reports/S1_coownership.tsv + probe 26-08-2026; repo README (explodes csl-devanagari); snapshot predates upstream tip by design (внутренний Uprava)",
         "visibility": "internal"
@@ -5620,7 +5620,7 @@
       "asset_ru": "per-entry exploded dict-text snapshot (v02/*)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 reports/S1_coownership.tsv + probe 26-08-2026; repo README (explodes csl-orig); snapshot drift vs current csl-orig blobs is expected for a dated explosion (внутренний Uprava)",
         "visibility": "internal"
@@ -5634,7 +5634,7 @@
       "asset_ru": "disp/yui_2.6.0 vendored Yahoo UI library (315 assets, ~10MB)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026: byte-identical YUI tree also held by csl-whitroot disp/yui_2.6.0 (внутренний Uprava)",
         "visibility": "internal"
@@ -5648,7 +5648,7 @@
       "asset_ru": "disp/yui_2.6.0 vendored Yahoo UI library (315 assets, ~10MB)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026: byte-identical YUI tree also held by csl-westergaard disp/yui_2.6.0 (внутренний Uprava)",
         "visibility": "internal"
@@ -5662,7 +5662,7 @@
       "asset_ru": "skills/seo* + agents/seo* vendored from the claude-seo Claude Code plugin (200 files)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; claude-seo origin = https://github.com/AgriciDaniel/claude-seo (external upstream) (внутренний Uprava)",
         "visibility": "internal"
@@ -5676,7 +5676,7 @@
       "asset_ru": "harness skill twins: deeppapernote, scroll-world, obsidian-markdown, i-have-adhd, improve-animations +4 (51 files byte-identical)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; playbook-canonical-source regime (Claude .md canonical, twins generated/copied) (внутренний Uprava)",
         "visibility": "internal"
@@ -5690,7 +5690,7 @@
       "asset_ru": "obsidian-plugin release copy (src/test/main.js built from RuWritingStyles obsidian-plugin/)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; RuWritingStyles obsidian-plugin/release-repo pointer dir (внутренний Uprava)",
         "visibility": "internal"
@@ -5704,7 +5704,7 @@
       "asset_ru": "abcode/web display frontend copied from GRA vn/gra-dev (~93 shared blobs: webtc1/webtc2 assets, fonts, help images)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; GRA vn/gra-dev dates to 2023-06, mw-dev abcode imported later (внутренний Uprava)",
         "visibility": "internal"
@@ -5718,7 +5718,7 @@
       "asset_ru": "static display assets of the v00/grav00 template instance shared with GRA vn/gra-dev (Old Standard fonts, help images, keyboard.js/css); PHP endpoints stay under SHARED_CODE s5 template rule",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026 (внутренний Uprava)",
         "visibility": "internal"
@@ -5732,7 +5732,7 @@
       "asset_ru": "pysanskrit v1/v2 inflection engine copies (nominals|verbs/pysanskrit*, web/utilities, sqlite/lg* - 85 files byte-identical)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; both sanskrit-lexicon org repos, engine family shared unregistered until now (внутренний Uprava)",
         "visibility": "internal"
@@ -5746,7 +5746,7 @@
       "asset_ru": "build/_images scan copies of MWS prefaces/scans jpgs/pngs + mwauthorities scans (~22.4MB, 46 blobs)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; doc-build inputs copied from MWS scan assets (внутренний Uprava)",
         "visibility": "internal"
@@ -5760,7 +5760,7 @@
       "asset_ru": "published mirror of CORRECTIONS ngram/output/html comparison pages (54 html, ~11.4MB)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 coownership census H3373 probe 26-08-2026; publication copy of correction artifacts (внутренний Uprava)",
         "visibility": "internal"
@@ -5774,7 +5774,7 @@
       "asset_ru": "csl_pyutil/review_sheet.py — render_review_sheet(), the canonical HTML review/voting-sheet emitter (v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026: real `from csl_pyutil import render_review_sheet` in Uprava tools/build_glossary_sense_sheet.py + tools/build_h2582_rec_approval_sheet.py, SanskritLexicography article-comparison/_build_gloss_review_sheets.py, csl-atlas scripts/build-review-sheets.py, SamudraManthanam scripts/build_nkrya_adjudication_sheet.py, CommentaryStrategies scripts/build_licence_register_review_sheet.py, WhitneyRoots scripts/dcs/build_review_sheets.py; /review-sheet skill mandates it (\"always\"); supersedes the ledger note \"no local renderer found\" (внутренний Uprava)",
         "visibility": "internal"
@@ -5788,7 +5788,7 @@
       "asset_ru": "curation/meso_discipline_crosswalk.csv meso-code to discipline crosswalk (50 confidence-scored mappings) + curation/disciplines.csv spine",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3567 ruling F5; read by IndologyScholars pipeline/disciplines.py into person_discipline; csl-atlas + kosha named as intended consumers, neither reads a discipline mapping as of 26-08-2026 (внутренний Uprava)",
         "visibility": "internal"
@@ -5802,7 +5802,7 @@
       "asset_ru": "Type-D link-ID grammar (SHARED_CODE s16: typed_link_lint / concordance_core)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~288 (внутренний Uprava)",
         "visibility": "internal"
@@ -5816,7 +5816,7 @@
       "asset_ru": "DCS-2026 lemma export -> simple-search",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~463 (feed live) (внутренний Uprava)",
         "visibility": "internal"
@@ -5830,7 +5830,7 @@
       "asset_ru": "GRA-VedaWeb crosswalk (gra_vedaweb_crosswalk.tsv)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~445 (внутренний Uprava)",
         "visibility": "internal"
@@ -5844,7 +5844,7 @@
       "asset_ru": "TEI/OntoLex-Lemon/FrAC/RDF export modelling standard (C-SALT/Kosh API)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~57 (внутренний Uprava)",
         "visibility": "internal"
@@ -5858,7 +5858,7 @@
       "asset_ru": "same export-modelling standard, MW-side leg",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); same line, MD-specific evidence thin (внутренний Uprava)",
         "visibility": "internal"
@@ -5872,7 +5872,7 @@
       "asset_ru": "derived Sa-Ru glossary search site",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~646 (внутренний Uprava)",
         "visibility": "internal"
@@ -5886,7 +5886,7 @@
       "asset_ru": "DCS CoNLL-U corpus (57,144 lemmas, cells_bits24)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~310 (внутренний Uprava)",
         "visibility": "internal"
@@ -5900,7 +5900,7 @@
       "asset_ru": "PWG scan-index campaign registry (H1706, PR #107)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~PWG observatory (внутренний Uprava)",
         "visibility": "internal"
@@ -5914,7 +5914,7 @@
       "asset_ru": "heritage_anchor witness anchors",
       "status": "proposed",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); Heritage-witness line (внутренний Uprava)",
         "visibility": "internal"
@@ -5928,7 +5928,7 @@
       "asset_ru": "PD-DCS corpus-coverage crosswalk (H1336)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS H1336 row (внутренний Uprava)",
         "visibility": "internal"
@@ -5942,7 +5942,7 @@
       "asset_ru": "PD-DCS corpus-coverage crosswalk, DCS leg (H1336)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS H1336 row (внутренний Uprava)",
         "visibility": "internal"
@@ -5956,7 +5956,7 @@
       "asset_ru": "MW-Whitney-DCS root triangulation join (SHARED_CODE s17)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); WhitneyRoots PR #33 (внутренний Uprava)",
         "visibility": "internal"
@@ -5970,7 +5970,7 @@
       "asset_ru": "OCR'd front-matter prefaces (ocr-prefaces.mdx)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS prefaces row (внутренний Uprava)",
         "visibility": "internal"
@@ -5984,7 +5984,7 @@
       "asset_ru": "OCR'd front-matter prefaces (ocr-prefaces.mdx)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS prefaces row (внутренний Uprava)",
         "visibility": "internal"
@@ -5998,7 +5998,7 @@
       "asset_ru": "68-sarga Kostina ballot portal",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS apparatus row (внутренний Uprava)",
         "visibility": "internal"
@@ -6012,7 +6012,7 @@
       "asset_ru": "2,110 static per-adhyaya pages",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~SanskritLexicography (внутренний Uprava)",
         "visibility": "internal"
@@ -6026,7 +6026,7 @@
       "asset_ru": "External Reach dashboard",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); reach dashboard row (внутренний Uprava)",
         "visibility": "internal"
@@ -6040,7 +6040,7 @@
       "asset_ru": "review reports <-> reviewed files mapping",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); review-reports row (внутренний Uprava)",
         "visibility": "internal"
@@ -6054,7 +6054,7 @@
       "asset_ru": "kosha directory pages (H236)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); kosha directory row (внутренний Uprava)",
         "visibility": "internal"
@@ -6068,7 +6068,7 @@
       "asset_ru": "frozen MASKED eval dialogue snapshot corpora/eval/2026-07-05-masked.jsonl (export 05-07-2026, 2621 dialogues)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3563 producer-side registration (F4, settled by F3); census of record message-intent-classifier corpora/README.md; PII policy Systema docs/ARCHITECTURE_MESSAGE_INTENT_CLASSIFIER_2026.md - MASKED SNAPSHOT ONLY, raw dialog_*.txt never committed anywhere, no sample quoted; probed 28-08-2026: corpora/ upstream still holds README only (внутренний Uprava)",
         "visibility": "internal"
@@ -6082,7 +6082,7 @@
       "asset_ru": "MASKED train dialogue snapshot corpora/train/2026-08-22-masked.jsonl (snapshot 22-08-2026, 2776 dialogues)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3563 producer-side registration (F4, settled by F3); 2776 = distinct dialogue ids in the producer store, probed 28-08-2026 (2763 dialog_*.txt, files are a strict subset); freeze protocol H3527 corpora/README.md - MASKED SNAPSHOT ONLY, no sample quoted; not yet committed upstream (внутренний Uprava)",
         "visibility": "internal"
@@ -6096,7 +6096,7 @@
       "asset_ru": "pinned vendored classifier engine + rules/v1 + taxonomy/v1 + golden vectors (PINNED_SHA e3320e671e03)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3562 consumer-side registration (F3); vendored by H3529 25-08-2026 into Systema tools/message-intent-classifier; runtime sync app/Console/Commands/SupportRulesSync.php reads generated rules/v1/*.json (symfony/yaml is dev-only in the app) and leaves legacy pattern_hash IS NULL rows alive - live rule set is package UNION legacy tail; drift gate .github/workflows/ci.yml job mic-vendor-drift verifies JSON freshness only until MIC_UPSTREAM_TOKEN is set (Systema FINDINGS.md S2) (внутренний Uprava)",
         "visibility": "internal"
@@ -6110,7 +6110,7 @@
       "asset_ru": "CONSUMER side of the frozen MASKED eval dialogue snapshot corpora/eval/2026-07-05-masked.jsonl (export 05-07-2026, 2621 dialogues)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3562 consumer-side counterpart of the H3563 producer row ORS-FAQ->message-intent-classifier; MASKED SNAPSHOT ONLY - Systema holds NO copy, its vendored tree has no corpora/ dir, no sample/name/payment figure quoted anywhere; not read by anything yet (upstream corpora/ still README-only, probed 28-08-2026); RETIREMENT: drop this row if the freeze has not landed by the next interlinks coverage census (внутренний Uprava)",
         "visibility": "internal"
@@ -6124,7 +6124,7 @@
       "asset_ru": "CONSUMER side of the MASKED train dialogue snapshot corpora/train/2026-08-22-masked.jsonl (snapshot 22-08-2026, 2776 dialogues)",
       "status": "queued",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3562 consumer-side counterpart of the H3563 producer row ORS-FAQ->message-intent-classifier; MASKED SNAPSHOT ONLY - Systema holds NO copy, no sample/name/payment figure quoted anywhere; not read by anything yet (upstream corpora/ still README-only, probed 28-08-2026); RETIREMENT: drop this row if the freeze has not landed by the next interlinks coverage census (внутренний Uprava)",
         "visibility": "internal"
@@ -6138,7 +6138,7 @@
       "asset_ru": "KEWA etymology lane — kewa_pwg_crosswalk.tsv (11,418 rows; OCRed KEWA heading index + form→lemma witnesses joined to PWG key1, ceiling C4 modern-IE lane)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; PROJECT_INTERLINKS KEWA lane; RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md (внутренний Uprava)",
         "visibility": "internal"
@@ -6152,7 +6152,7 @@
       "asset_ru": "KEWA etymology lane — kewa_pwg_crosswalk.tsv (11,418 rows; OCRed KEWA heading index + form→lemma witnesses joined to PWG key1, ceiling C4 modern-IE lane)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; PROJECT_INTERLINKS KEWA lane; RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md (внутренний Uprava)",
         "visibility": "internal"
@@ -6166,7 +6166,7 @@
       "asset_ru": "KEWA etymology lane — kewa_pwg_crosswalk.tsv (11,418 rows; OCRed KEWA heading index + form→lemma witnesses joined to PWG key1, ceiling C4 modern-IE lane)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; PROJECT_INTERLINKS KEWA lane; RussianTranslation/docs/KEWA_INDEX_NORMALIZATION_AND_PWG_JOIN_25-08-2026.md (внутренний Uprava)",
         "visibility": "internal"
@@ -6180,7 +6180,7 @@
       "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
@@ -6194,7 +6194,7 @@
       "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
@@ -6208,7 +6208,7 @@
       "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
@@ -6222,7 +6222,7 @@
       "asset_ru": "wsd_frame_c1 gold frames (wsd_frame_c1_200.tsv — 200 DCS token occurrences × 48 polysemous PWG lemmas with RU sense menus; DCS token+sentence+chapter via dcs_full.sqlite)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3172; RussianTranslation/src/eval/wsd_frame_c1_200.tsv; WSD_GOLD_SET_ANNOTATION_PROTOCOL_2026.md (внутренний Uprava)",
         "visibility": "internal"
@@ -6236,7 +6236,7 @@
       "asset_ru": "blocked-host egress via socks5://vps-exit:1080 tailnet runner (microsocks; rebind script tools/bind_tailnet_socks_vps_exit.sh)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ASSUMPTIONS §1 egress premise measured 25-08-2026; PROJECT_INTERLINKS egress row (внутренний Uprava)",
         "visibility": "internal"
@@ -6250,7 +6250,7 @@
       "asset_ru": "blocked-host egress via socks5://vps-exit:1080 tailnet runner (microsocks; rebind script tools/bind_tailnet_socks_vps_exit.sh)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ASSUMPTIONS §1 egress premise measured 25-08-2026; PROJECT_INTERLINKS egress row (внутренний Uprava)",
         "visibility": "internal"
@@ -6264,7 +6264,7 @@
       "asset_ru": "blocked-host egress via socks5://vps-exit:1080 tailnet runner (microsocks; rebind script tools/bind_tailnet_socks_vps_exit.sh)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: ASSUMPTIONS §1 egress premise measured 25-08-2026; PROJECT_INTERLINKS egress row (внутренний Uprava)",
         "visibility": "internal"
@@ -6278,7 +6278,7 @@
       "asset_ru": "KEWA heading index digitization — samskrtam.ru/sanskrit-lexicon/KEWA/ static index (9,591 anchors; OCR 2005-2013) upstream of Index/lib/x86_64-win64/Data/KEWA.txt; provenance post samskrtam.ru/kewa-ewa/",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: provenance pages fetched 27-08-2026; H3169 source index (внутренний Uprava)",
         "visibility": "internal"
@@ -6292,7 +6292,7 @@
       "asset_ru": "render_review_sheet() HTML voting-sheet emitter imports (csl_pyutil/review_sheet.py v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
         "visibility": "internal"
@@ -6306,7 +6306,7 @@
       "asset_ru": "render_review_sheet() HTML voting-sheet emitter imports (csl_pyutil/review_sheet.py v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
         "visibility": "internal"
@@ -6320,7 +6320,7 @@
       "asset_ru": "render_review_sheet() HTML voting-sheet emitter imports (csl_pyutil/review_sheet.py v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
         "visibility": "internal"
@@ -6334,7 +6334,7 @@
       "asset_ru": "render_review_sheet() HTML voting-sheet emitter imports (csl_pyutil/review_sheet.py v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
         "visibility": "internal"
@@ -6348,7 +6348,7 @@
       "asset_ru": "render_review_sheet() HTML voting-sheet emitter imports (csl_pyutil/review_sheet.py v0.22.0)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
         "visibility": "internal"
@@ -6362,7 +6362,7 @@
       "asset_ru": "Litpam print-readiness lane: deterministic InDesign/ExtendScript index-building toolkit (Litpam-Indexator/tools/print_ready.py + tools/indesign/) with its gate config and versioned artefact store (gate-report.json, coverage, defect ledger, IDML/PDF proofs) for the two-volume Литературные памятники Ramayana edition",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3568 ruling F5 — SPECULATIVE ROW, the single one verification Gate 2 budgets to the whole programme. NO CONSUMER IDENTIFIED TODAY: measured 28-08-2026 across every sibling clone (kosha, SanskritLexicography, CommentaryStrategies, BookIndex, SamudraManthanam, github-spine, csl-atlas, IndologyScholars, SanskritKaraoke, AfanasiyNikitin, Systema-Sanscriticum, ORS-FAQ), zero repo reads any Litpam artefact — the only sibling hits are the unrelated English phrase print-readiness in the dictionary sense and a litpamyatniki.ru URL. Producer side is real and active: H2590 (Book II, merged https://github.com/gasyoun/RussianRamayana/pull/98) plus H2589 (Book I) ship gate-report.json / coverage / defect-ledger artefacts under artifacts/print-readiness/. RETIREMENT CONDITION: name a real consumer in another repo by the next interlinks coverage census or this row is removed and the RussianRamayana ledger verdict reverts. Do NOT add a second speculative row anywhere — Gate 2's budget is spent here. (внутренний Uprava)",
         "visibility": "internal"
@@ -6376,7 +6376,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6390,7 +6390,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6404,7 +6404,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6418,7 +6418,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6432,7 +6432,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6446,7 +6446,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6460,7 +6460,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6474,7 +6474,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6488,7 +6488,7 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
@@ -6502,9 +6502,23 @@
       "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
       "status": "live",
       "temperature": "assessed",
-      "as_of": "2026-08-28",
+      "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritlexicography-vendors-sanskrit-util",
+      "source": "repo:sanskritlexicography",
+      "target": "repo:sanskrit-util",
+      "kind": "vendors",
+      "asset_ru": "German metalanguage detector classify_german_metalanguage + exported inventories (sanskrit-util v0.6.0, H2876) via the vendored shim RussianTranslation/src/sanskrit_util.py + _sanskrit_util_vendored.py (re-synced by /cologne-sanskrit-util-sync)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-29",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: SHARED_CODE s23; consumers RussianTranslation/src/store_flags.py (row_metalanguage_ok) + pwg_tm_fragmentize.py (imports GERMAN_* via the shim, no private copy); pinned by tests/test_metalanguage_flags.py; dual-run 28-08-2026: this s23 leg landed in the salvage pass after the first landing registered only s21+kosha rows (внутренний Uprava)",
         "visibility": "internal"
       }
     }
