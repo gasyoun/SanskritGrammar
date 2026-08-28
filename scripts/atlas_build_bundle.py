@@ -38,10 +38,13 @@ DENYLIST_VERSION = "2026-07-11"
 
 # ---------------------------------------------------------------------------
 # Sanitisation: repos that never enter the public bundle.
-# private  = GitHub-private repos (visibility checked 11-07-2026);
+# private  = GitHub-private repos (visibility checked 11-07-2026;
+#            pwg-ru-data re-verified PRIVATE 28-08-2026 via gh, Q3
+#            edges-audit follow-up — Uprava-side repo_graph_check DENYLIST
+#            fixed in the same pass, keep-in-sync contract);
 # local    = local-only working dirs with no public remote;
 # unresolved = names in source registries with no resolvable public repo.
-PRIVATE_REPOS = {"Uprava", "github-spine", "RuWritingStyles-corpus", "telegram-sanskrit-corpus"}
+PRIVATE_REPOS = {"Uprava", "github-spine", "RuWritingStyles-corpus", "telegram-sanskrit-corpus", "pwg-ru-data"}
 LOCAL_ONLY_REPOS = {"Sundara-commentaries", "prefaces_ieg", "samskrutam-crossword"}
 UNRESOLVED_REPOS = {"YAT"}
 DROP_REPOS = PRIVATE_REPOS | LOCAL_ONLY_REPOS | UNRESOLVED_REPOS
@@ -50,8 +53,10 @@ DROP_REPOS = PRIVATE_REPOS | LOCAL_ONLY_REPOS | UNRESOLVED_REPOS
 LEAKAGE_PATTERNS = [
     "github.com/gasyoun/Uprava",
     "github.com/gasyoun/github-spine",
+    "github.com/gasyoun/pwg-ru-data",
     "RuWritingStyles-corpus",
     "telegram-sanskrit-corpus",
+    "pwg-ru-data",
     "C:/Users",
     "C:\\Users",
     "GTD_NEXT_ACTIONS",

@@ -4,7 +4,7 @@
   "provenance": {
     "generated": "2026-08-28",
     "generator": "scripts/atlas_build_bundle.py",
-    "generated_by": "manual run",
+    "generated_by": "OxAlpha (zai-coding-plan/glm-5.3-flash via opencode)",
     "series_slot": "B1 (H623)",
     "sources": [
       {
@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "6a48fa8ee",
+        "commit": "4440b4e4a",
         "visibility": "internal"
       },
       {
@@ -34,8 +34,8 @@
     ],
     "sanitisation": {
       "denylist_version": "2026-07-11",
-      "dropped_nodes": 10,
-      "dropped_edges": 27
+      "dropped_nodes": 11,
+      "dropped_edges": 55
     }
   },
   "nodes": [
@@ -1301,15 +1301,6 @@
       "url": "https://github.com/sanskrit-lexicon/PWG",
       "temperature": "structural",
       "programme_ru": "CDSL dictionaries"
-    },
-    {
-      "id": "repo:pwg-ru-data",
-      "kind": "repo",
-      "label_ru": "pwg-ru-data",
-      "org": "gasyoun",
-      "name": "pwg-ru-data",
-      "url": "https://github.com/gasyoun/pwg-ru-data",
-      "temperature": "structural"
     },
     {
       "id": "repo:pwk",
@@ -5580,20 +5571,6 @@
       }
     },
     {
-      "id": "e:dep-pwg-ru-data-feeds-sanskritlexicography",
-      "source": "repo:pwg-ru-data",
-      "target": "repo:sanskritlexicography",
-      "kind": "feeds",
-      "asset_ru": "pwg_ru_nonstop_lane_store",
-      "status": "live",
-      "temperature": "assessed",
-      "as_of": "2026-08-28",
-      "evidence": {
-        "label_ru": "interlinks_edges.tsv: https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/docs/ARCHITECTURE_RussianTranslation_pwg_nonstop_multilane.md (внутренний Uprava)",
-        "visibility": "internal"
-      }
-    },
-    {
       "id": "e:dep-sanskritlexicography-feeds-kosha-2",
       "source": "repo:sanskritlexicography",
       "target": "repo:kosha",
@@ -5912,20 +5889,6 @@
       "as_of": "2026-08-28",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~310 (внутренний Uprava)",
-        "visibility": "internal"
-      }
-    },
-    {
-      "id": "e:dep-pwg-ru-data-consumes-pwg",
-      "source": "repo:pwg-ru-data",
-      "target": "repo:pwg",
-      "kind": "consumes",
-      "asset_ru": "PWG source data for the RU lane",
-      "status": "live",
-      "temperature": "assessed",
-      "as_of": "2026-08-28",
-      "evidence": {
-        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS pwg-ru-data row (внутренний Uprava)",
         "visibility": "internal"
       }
     },
@@ -6388,6 +6351,160 @@
       "as_of": "2026-08-28",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3575 verification 26-08-2026 — real `from csl_pyutil import render_review_sheet` in committed code of all six; /review-sheet mandate (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-russianramayana-produces-org-wide",
+      "source": "repo:russianramayana",
+      "target": "surface:org-wide",
+      "kind": "produces",
+      "asset_ru": "Litpam print-readiness lane: deterministic InDesign/ExtendScript index-building toolkit (Litpam-Indexator/tools/print_ready.py + tools/indesign/) with its gate config and versioned artefact store (gate-report.json, coverage, defect ledger, IDML/PDF proofs) for the two-volume Литературные памятники Ramayana edition",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3568 ruling F5 — SPECULATIVE ROW, the single one verification Gate 2 budgets to the whole programme. NO CONSUMER IDENTIFIED TODAY: measured 28-08-2026 across every sibling clone (kosha, SanskritLexicography, CommentaryStrategies, BookIndex, SamudraManthanam, github-spine, csl-atlas, IndologyScholars, SanskritKaraoke, AfanasiyNikitin, Systema-Sanscriticum, ORS-FAQ), zero repo reads any Litpam artefact — the only sibling hits are the unrelated English phrase print-readiness in the dictionary sense and a litpamyatniki.ru URL. Producer side is real and active: H2590 (Book II, merged https://github.com/gasyoun/RussianRamayana/pull/98) plus H2589 (Book I) ship gate-report.json / coverage / defect-ledger artefacts under artifacts/print-readiness/. RETIREMENT CONDITION: name a real consumer in another repo by the next interlinks coverage census or this row is removed and the RussianRamayana ledger verdict reverts. Do NOT add a second speculative row anywhere — Gate 2's budget is spent here. (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-whitneyroots-consumes-kosha",
+      "source": "repo:whitneyroots",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-consumes-kosha",
+      "source": "repo:visualdcs",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritspellcheck-consumes-kosha",
+      "source": "repo:sanskritspellcheck",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritrussian-consumes-kosha",
+      "source": "repo:sanskritrussian",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritgrammar-consumes-kosha",
+      "source": "repo:sanskritgrammar",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-systema-sanscriticum-consumes-kosha",
+      "source": "repo:systema-sanscriticum",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-consumes-kosha",
+      "source": "repo:csl-guides",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-observatory-consumes-kosha",
+      "source": "repo:csl-observatory",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-standards-consumes-kosha",
+      "source": "repo:csl-standards",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskritkaraoke-consumes-kosha",
+      "source": "repo:sanskritkaraoke",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "kosha datasets.json manifest consumers (per-dataset grain lives in the manifest): mw-roots + mw-etymology + roots-frequency-curriculum (WhitneyRoots), dcs-cdsl-xref + dcs-full-sqlite + paradigm grids (VisualDCS), union-headwords union=N tags (SanskritSpellCheck), corpus-lexicon + sa-ru-glossary + samudra-corpus-db mw_ru validation (SanskritRussian), varga-series-diachrony GasunsDhatu s2.6 (SanskritGrammar), grammar-lab-g1 + kosha-srs-deck-b1-demo + cohort-start-chteniya-pack-freeze (Systema-Sanscriticum), which-dictionary-routing-benchmark + samasa-trainer quiz (csl-guides), pwg-scan-index-campaign + pwg-ls-counts reports/dashboard (csl-observatory), pwg-tm-canonical-v1 + pwg-de-edition-v1 LLOD (csl-standards), reading-pack-metre trainer UI (SanskritKaraoke)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: kosha data/manifest/datasets.json consumers census 28-08-2026 (Q3 probe pass); pairs already registered separately: Uprava (row 148), SanskritLexicography (row 87), csl-atlas (row 187) (внутренний Uprava)",
         "visibility": "internal"
       }
     }
