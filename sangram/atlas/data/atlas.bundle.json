@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "c67a2b54b",
+        "commit": "6a48fa8ee",
         "visibility": "internal"
       },
       {
@@ -6214,12 +6214,12 @@
       "source": "repo:samudramanthanam",
       "target": "repo:sanskritlexicography",
       "kind": "advises",
-      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; no programmatic consumer yet)",
+      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
       "as_of": "2026-08-28",
       "evidence": {
-        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
+        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
       }
     },
@@ -6228,12 +6228,12 @@
       "source": "repo:sanskritrussian",
       "target": "repo:sanskritlexicography",
       "kind": "advises",
-      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; no programmatic consumer yet)",
+      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
       "as_of": "2026-08-28",
       "evidence": {
-        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
+        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
       }
     },
@@ -6242,12 +6242,12 @@
       "source": "repo:csl-orig",
       "target": "repo:sanskritlexicography",
       "kind": "advises",
-      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; no programmatic consumer yet)",
+      "asset_ru": "KEWA/EWA etymology evidence advisory to pwg_ru translation reviews (KOCHERGINA_CORRECTIONS §56 precedent; card renderer shipped 28-08-2026 — G5 builder display-only block, vote digests proven unaffected)",
       "status": "live",
       "temperature": "assessed",
       "as_of": "2026-08-28",
       "evidence": {
-        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
+        "label_ru": "interlinks_edges.tsv: H3169; MG ruling 28-08-2026 (advises kind minted, audit Q3); MG ruling 28-08-2026 «строить подачу»; SanskritLexicography f5d8dcc90; KOCHERGINA_CORRECTIONS.md §56 (внутренний Uprava)",
         "visibility": "internal"
       }
     },
