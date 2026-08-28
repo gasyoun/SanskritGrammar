@@ -72,7 +72,7 @@ SANSKRIT_LEXICON = {
     "csl-doc", "csl-guides", "csl-inflect", "csl-newsletter", "csl-observatory",
     "csl-orig", "csl-pywork", "csl-santam", "csl-standards", "csl-websanlexicon",
     "csl-pyutil", "csl-ldev", "csl-lnum", "csl-westergaard", "csl-whitroot",
-    "mw-dev",
+    "mw-dev", "PD",
     "sanskrit-lexicon.github.io", "sanskrit-util",
 }
 ORG_OVERRIDES = {
@@ -88,6 +88,7 @@ GASYOUN = {
     "kosha",
     "claude-config", "codex-config", "dcs-conllu", "rvlinks", "pwg-ru-data",
     "ruwritingstyles-obsidian", "IndologyArchiveAtlas", "SamasaChakram",
+    "gasyoun.github.io", "message-intent-classifier",
 }
 
 

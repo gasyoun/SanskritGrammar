@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "bd91a67c5",
+        "commit": "c67a2b54b",
         "visibility": "internal"
       },
       {
@@ -35,7 +35,7 @@
     "sanitisation": {
       "denylist_version": "2026-07-11",
       "dropped_nodes": 10,
-      "dropped_edges": 25
+      "dropped_edges": 27
     }
   },
   "nodes": [
@@ -1098,6 +1098,15 @@
       "programme_ru": "CDSL dictionaries"
     },
     {
+      "id": "repo:gasyoun.github.io",
+      "kind": "repo",
+      "label_ru": "gasyoun.github.io",
+      "org": "gasyoun",
+      "name": "gasyoun.github.io",
+      "url": "https://github.com/gasyoun/gasyoun.github.io",
+      "temperature": "structural"
+    },
+    {
       "id": "repo:gra",
       "kind": "repo",
       "label_ru": "GRA",
@@ -1207,6 +1216,15 @@
       "programme_ru": "CDSL dictionaries"
     },
     {
+      "id": "repo:message-intent-classifier",
+      "kind": "repo",
+      "label_ru": "message-intent-classifier",
+      "org": "gasyoun",
+      "name": "message-intent-classifier",
+      "url": "https://github.com/gasyoun/message-intent-classifier",
+      "temperature": "structural"
+    },
+    {
       "id": "repo:mw-dev",
       "kind": "repo",
       "label_ru": "mw-dev",
@@ -1254,6 +1272,15 @@
       "url": "https://github.com/gasyoun/ORS-FAQ",
       "temperature": "structural",
       "programme_ru": "Образование и выручка"
+    },
+    {
+      "id": "repo:pd",
+      "kind": "repo",
+      "label_ru": "PD",
+      "org": "sanskrit-lexicon",
+      "name": "PD",
+      "url": "https://github.com/sanskrit-lexicon/PD",
+      "temperature": "structural"
     },
     {
       "id": "repo:pui",
@@ -4568,7 +4595,7 @@
       "temperature": "assessed",
       "as_of": "2026-08-28",
       "evidence": {
-        "label_ru": "interlinks_edges.tsv: build_vidyut_fallback (внутренний Uprava)",
+        "label_ru": "interlinks_edges.tsv: vendored vidyut fallback artifact vidyut_form2lemma.tsv (28-08-2026 re-verify; build-script pointer stale) (внутренний Uprava)",
         "visibility": "internal"
       }
     },
@@ -5787,6 +5814,356 @@
       "as_of": "2026-08-28",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: H3567 ruling F5; read by IndologyScholars pipeline/disciplines.py into person_discipline; csl-atlas + kosha named as intended consumers, neither reads a discipline mapping as of 26-08-2026 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-commentarystrategies-consumes-kosha",
+      "source": "repo:commentarystrategies",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "Type-D link-ID grammar (SHARED_CODE s16: typed_link_lint / concordance_core)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~288 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-dcs-feeds-csl-apidev",
+      "source": "repo:dcs",
+      "target": "repo:csl-apidev",
+      "kind": "feeds",
+      "asset_ru": "DCS-2026 lemma export -> simple-search",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~463 (feed live) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-consumes-gra",
+      "source": "repo:visualdcs",
+      "target": "repo:gra",
+      "kind": "consumes",
+      "asset_ru": "GRA-VedaWeb crosswalk (gra_vedaweb_crosswalk.tsv)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~445 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-csl-standards",
+      "source": "repo:csl-atlas",
+      "target": "repo:csl-standards",
+      "kind": "consumes",
+      "asset_ru": "TEI/OntoLex-Lemon/FrAC/RDF export modelling standard (C-SALT/Kosh API)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~57 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-md-consumes-csl-standards",
+      "source": "repo:md",
+      "target": "repo:csl-standards",
+      "kind": "consumes",
+      "asset_ru": "same export-modelling standard, MW-side leg",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); same line, MD-specific evidence thin (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gasyoun.github.io-vendors-sanskritrussian",
+      "source": "repo:gasyoun.github.io",
+      "target": "repo:sanskritrussian",
+      "kind": "vendors",
+      "asset_ru": "derived Sa-Ru glossary search site",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~646 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-visualdcs-consumes-dcs-conllu",
+      "source": "repo:visualdcs",
+      "target": "repo:dcs-conllu",
+      "kind": "consumes",
+      "asset_ru": "DCS CoNLL-U corpus (57,144 lemmas, cells_bits24)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~310 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-pwg-ru-data-consumes-pwg",
+      "source": "repo:pwg-ru-data",
+      "target": "repo:pwg",
+      "kind": "consumes",
+      "asset_ru": "PWG source data for the RU lane",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS pwg-ru-data row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-observatory-consumes-pwg",
+      "source": "repo:csl-observatory",
+      "target": "repo:pwg",
+      "kind": "consumes",
+      "asset_ru": "PWG scan-index campaign registry (H1706, PR #107)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~PWG observatory (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-kosha",
+      "source": "repo:csl-atlas",
+      "target": "repo:kosha",
+      "kind": "consumes",
+      "asset_ru": "heritage_anchor witness anchors",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); Heritage-witness line (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-pd",
+      "source": "repo:csl-atlas",
+      "target": "repo:pd",
+      "kind": "consumes",
+      "asset_ru": "PD-DCS corpus-coverage crosswalk (H1336)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS H1336 row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-dcs",
+      "source": "repo:csl-atlas",
+      "target": "repo:dcs",
+      "kind": "consumes",
+      "asset_ru": "PD-DCS corpus-coverage crosswalk, DCS leg (H1336)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS H1336 row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-mws-consumes-whitneyroots",
+      "source": "repo:mws",
+      "target": "repo:whitneyroots",
+      "kind": "consumes",
+      "asset_ru": "MW-Whitney-DCS root triangulation join (SHARED_CODE s17)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); WhitneyRoots PR #33 (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-consumes-gra",
+      "source": "repo:csl-guides",
+      "target": "repo:gra",
+      "kind": "consumes",
+      "asset_ru": "OCR'd front-matter prefaces (ocr-prefaces.mdx)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS prefaces row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-guides-consumes-md",
+      "source": "repo:csl-guides",
+      "target": "repo:md",
+      "kind": "consumes",
+      "asset_ru": "OCR'd front-matter prefaces (ocr-prefaces.mdx)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS prefaces row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gasyoun.github.io-vendors-commentarystrategies",
+      "source": "repo:gasyoun.github.io",
+      "target": "repo:commentarystrategies",
+      "kind": "vendors",
+      "asset_ru": "68-sarga Kostina ballot portal",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS apparatus row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gasyoun.github.io-vendors-sanskritlexicography",
+      "source": "repo:gasyoun.github.io",
+      "target": "repo:sanskritlexicography",
+      "kind": "vendors",
+      "asset_ru": "2,110 static per-adhyaya pages",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); PROJECT_INTERLINKS line ~SanskritLexicography (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-sanskrit-lexicon.github.io-vendors-csl-observatory",
+      "source": "repo:sanskrit-lexicon.github.io",
+      "target": "repo:csl-observatory",
+      "kind": "vendors",
+      "asset_ru": "External Reach dashboard",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); reach dashboard row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-whitneyroots",
+      "source": "repo:csl-atlas",
+      "target": "repo:whitneyroots",
+      "kind": "consumes",
+      "asset_ru": "review reports <-> reviewed files mapping",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); review-reports row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-gasyoun.github.io-vendors-kosha",
+      "source": "repo:gasyoun.github.io",
+      "target": "repo:kosha",
+      "kind": "vendors",
+      "asset_ru": "kosha directory pages (H236)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: S1 R5 applied (MG chat vote 27-08-2026); kosha directory row (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ors-faq-feeds-message-intent-classifier",
+      "source": "repo:ors-faq",
+      "target": "repo:message-intent-classifier",
+      "kind": "feeds",
+      "asset_ru": "frozen MASKED eval dialogue snapshot corpora/eval/2026-07-05-masked.jsonl (export 05-07-2026, 2621 dialogues)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3563 producer-side registration (F4, settled by F3); census of record message-intent-classifier corpora/README.md; PII policy Systema docs/ARCHITECTURE_MESSAGE_INTENT_CLASSIFIER_2026.md - MASKED SNAPSHOT ONLY, raw dialog_*.txt never committed anywhere, no sample quoted; probed 28-08-2026: corpora/ upstream still holds README only (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-ors-faq-feeds-message-intent-classifier-2",
+      "source": "repo:ors-faq",
+      "target": "repo:message-intent-classifier",
+      "kind": "feeds",
+      "asset_ru": "MASKED train dialogue snapshot corpora/train/2026-08-22-masked.jsonl (snapshot 22-08-2026, 2776 dialogues)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3563 producer-side registration (F4, settled by F3); 2776 = distinct dialogue ids in the producer store, probed 28-08-2026 (2763 dialog_*.txt, files are a strict subset); freeze protocol H3527 corpora/README.md - MASKED SNAPSHOT ONLY, no sample quoted; not yet committed upstream (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-systema-sanscriticum-vendors-message-intent-classifier",
+      "source": "repo:systema-sanscriticum",
+      "target": "repo:message-intent-classifier",
+      "kind": "vendors",
+      "asset_ru": "pinned vendored classifier engine + rules/v1 + taxonomy/v1 + golden vectors (PINNED_SHA e3320e671e03)",
+      "status": "live",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3562 consumer-side registration (F3); vendored by H3529 25-08-2026 into Systema tools/message-intent-classifier; runtime sync app/Console/Commands/SupportRulesSync.php reads generated rules/v1/*.json (symfony/yaml is dev-only in the app) and leaves legacy pattern_hash IS NULL rows alive - live rule set is package UNION legacy tail; drift gate .github/workflows/ci.yml job mic-vendor-drift verifies JSON freshness only until MIC_UPSTREAM_TOKEN is set (Systema FINDINGS.md S2) (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-systema-sanscriticum-consumes-message-intent-classifier",
+      "source": "repo:systema-sanscriticum",
+      "target": "repo:message-intent-classifier",
+      "kind": "consumes",
+      "asset_ru": "CONSUMER side of the frozen MASKED eval dialogue snapshot corpora/eval/2026-07-05-masked.jsonl (export 05-07-2026, 2621 dialogues)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3562 consumer-side counterpart of the H3563 producer row ORS-FAQ->message-intent-classifier; MASKED SNAPSHOT ONLY - Systema holds NO copy, its vendored tree has no corpora/ dir, no sample/name/payment figure quoted anywhere; not read by anything yet (upstream corpora/ still README-only, probed 28-08-2026); RETIREMENT: drop this row if the freeze has not landed by the next interlinks coverage census (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-systema-sanscriticum-consumes-message-intent-classifier-2",
+      "source": "repo:systema-sanscriticum",
+      "target": "repo:message-intent-classifier",
+      "kind": "consumes",
+      "asset_ru": "CONSUMER side of the MASKED train dialogue snapshot corpora/train/2026-08-22-masked.jsonl (snapshot 22-08-2026, 2776 dialogues)",
+      "status": "queued",
+      "temperature": "assessed",
+      "as_of": "2026-08-28",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3562 consumer-side counterpart of the H3563 producer row ORS-FAQ->message-intent-classifier; MASKED SNAPSHOT ONLY - Systema holds NO copy, no sample/name/payment figure quoted anywhere; not read by anything yet (upstream corpora/ still README-only, probed 28-08-2026); RETIREMENT: drop this row if the freeze has not landed by the next interlinks coverage census (внутренний Uprava)",
         "visibility": "internal"
       }
     },
