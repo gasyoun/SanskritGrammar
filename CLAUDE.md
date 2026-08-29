@@ -118,3 +118,20 @@ registered centrally in an org-private hub
 org members only); the public-safe subset is mirrored in the generated block of
 [AGENTS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/AGENTS.md). Check them
 before running anything that writes.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in this repo's GitHub Issues via the `gh` CLI; PRs are NOT a triage
+surface (intake OFF). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`,
+`ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (root `CONTEXT.md` + `docs/adr/`, created lazily —
+do not scaffold them upfront). See `docs/agents/domain.md`.
