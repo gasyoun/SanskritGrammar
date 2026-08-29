@@ -19,6 +19,17 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+- **H3550 (OxAlpha) — stale-base guard miscounted removals after a removed `--`-prefixed line (F1, P1).**
+  In `scripts/pre_push_stale_base_check.py` the `---`/`+++` file-header test ran on every
+  diff line, so inside a hunk a removed line whose *content* starts with `--` (a Markdown
+  `---` rule, a `-- comment`) was skipped as a header AND never advanced `old_line` — every
+  later removal in the hunk was blamed at a shifted number, so the blocking guard
+  survivor-checked and blamed the wrong lines (false negatives on the exact silent-revert
+  class it exists to catch). Headers are now recognized only before the first hunk;
+  regression tests in `tests/test_pre_push_stale_base_check.py` (fail-before/pass-after).
+  Uprava canonical copy sync + org re-deploy tracked separately.
+
 ### Added
 - **H3550 (OxAlpha `x-preview-f-free`) — canonical issue-tracker adapter + OxAlpha code-review plan family (bootstrap).**
   `docs/agents/` (issue-tracker GitHub with PR intake OFF, triage labels, domain docs),
