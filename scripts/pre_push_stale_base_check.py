@@ -141,12 +141,21 @@ def removed_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     numbers: list[int] = []
     old_line = 0
+    seen_hunk = False
     for line in out.splitlines():
         m = HUNK_RE.match(line)
         if m:
+            seen_hunk = True
             old_line = int(m.group(1))
             continue
-        if line.startswith("---") or line.startswith("+++"):
+        # The `---`/`+++` markers are FILE headers: they appear once, before the
+        # first hunk of this file's diff. Past the first hunk, a line starting
+        # with `---` is a REMOVED line whose content begins with `--` (a Markdown
+        # `---` rule, a `-- comment`) — H3550: skipping it there both dropped the
+        # line from the removal set AND stalled old_line, so every later removal
+        # in the hunk was blamed at a shifted number and the guard read the
+        # wrong lines.
+        if not seen_hunk and (line.startswith("---") or line.startswith("+++")):
             continue
         if line.startswith("-"):
             numbers.append(old_line)
