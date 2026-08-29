@@ -20,6 +20,14 @@ changelog tags as `vX.Y.Z`.
 ## [Unreleased]
 
 ### Added
+- **H3550 (OxAlpha `x-preview-f-free`) — canonical issue-tracker adapter + OxAlpha code-review plan family (bootstrap).**
+  `docs/agents/` (issue-tracker GitHub with PR intake OFF, triage labels, domain docs),
+  `## Agent skills` block in CLAUDE.md, five triage labels live
+  (`needs-triage`/`needs-info`/`ready-for-agent`/`ready-for-human`/`wontfix`),
+  and the five-document plan family under `docs/`
+  (PLAN_…_OXALPHA_CODE_REVIEW_HARDENING_2026Q3 + ROADMAP/ARCHITECTURE/
+  IMPLEMENTATION/VERIFICATION siblings) for the 26-07-2026..25-08-2026
+  retrospective review.
 - **H3493 (Fable 5 `claude-fable-5`) — natural-method story chapters 4–5 v0.**
   [`CHAPTER_4_SLOKAH.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/CHAPTER_4_SLOKAH.md)
   (metre chapter: anuṣṭubh 4 × 8 counted in-story, gerund *-tvā*; W4 Karaoke verses
