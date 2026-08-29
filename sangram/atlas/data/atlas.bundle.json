@@ -4,12 +4,12 @@
   "provenance": {
     "generated": "2026-08-29",
     "generator": "scripts/atlas_build_bundle.py",
-    "generated_by": "manual run",
+    "generated_by": "H3683 wave-2 unmatched-join drain (OxAlpha, opencode/z-ai/glm-5.3-flash)",
     "series_slot": "B1 (H623)",
     "sources": [
       {
         "name": "MEGABOOK.md (Uprava, приватный hub)",
-        "commit": "24d9514c9",
+        "commit": "091df8354",
         "sections": [
           "§1.2",
           "§1.4",
@@ -24,7 +24,7 @@
       },
       {
         "name": "interlinks_edges.tsv (Uprava, приватный hub)",
-        "commit": "240740f56",
+        "commit": "302021269",
         "visibility": "internal"
       },
       {
@@ -102,7 +102,10 @@
       "evidence": {
         "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
         "visibility": "internal"
-      }
+      },
+      "feature_ids": [
+        "E48"
+      ]
     },
     {
       "id": "asset:correction-pipeline",
@@ -126,6 +129,8 @@
         "visibility": "internal"
       },
       "feature_ids": [
+        "E32",
+        "E41",
         "L2"
       ]
     },
@@ -193,7 +198,17 @@
       "evidence": {
         "label_ru": "Карта переиспользования MEGABOOK §12.2 (внутренний Uprava)",
         "visibility": "internal"
-      }
+      },
+      "feature_ids": [
+        "B12",
+        "E25",
+        "E26",
+        "E27",
+        "E28",
+        "E29",
+        "E30",
+        "L6"
+      ]
     },
     {
       "id": "asset:docx-mdx-pipeline",
@@ -257,7 +272,13 @@
         "visibility": "internal"
       },
       "feature_ids": [
-        "C14"
+        "C14",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24"
       ]
     },
     {
@@ -280,7 +301,10 @@
         "visibility": "internal"
       },
       "feature_ids": [
-        "B5"
+        "B10",
+        "B11",
+        "B5",
+        "B9"
       ]
     },
     {
@@ -303,6 +327,7 @@
         "visibility": "internal"
       },
       "feature_ids": [
+        "G1",
         "L3"
       ]
     },
@@ -325,7 +350,9 @@
       },
       "feature_ids": [
         "A1",
-        "A3"
+        "A2",
+        "A3",
+        "A4"
       ]
     },
     {
@@ -371,6 +398,7 @@
         "visibility": "internal"
       },
       "feature_ids": [
+        "L11",
         "L7"
       ]
     },
@@ -438,7 +466,11 @@
         "visibility": "internal"
       },
       "feature_ids": [
-        "C13"
+        "C13",
+        "C16",
+        "C17",
+        "C18",
+        "E40"
       ]
     },
     {
@@ -6364,7 +6396,7 @@
       "temperature": "assessed",
       "as_of": "2026-08-29",
       "evidence": {
-        "label_ru": "interlinks_edges.tsv: H3568 ruling F5 — SPECULATIVE ROW, the single one verification Gate 2 budgets to the whole programme. NO CONSUMER IDENTIFIED TODAY: measured 28-08-2026 across every sibling clone (kosha, SanskritLexicography, CommentaryStrategies, BookIndex, SamudraManthanam, github-spine, csl-atlas, IndologyScholars, SanskritKaraoke, AfanasiyNikitin, Systema-Sanscriticum, ORS-FAQ), zero repo reads any Litpam artefact — the only sibling hits are the unrelated English phrase print-readiness in the dictionary sense and a litpamyatniki.ru URL. Producer side is real and active: H2590 (Book II, merged https://github.com/gasyoun/RussianRamayana/pull/98) plus H2589 (Book I) ship gate-report.json / coverage / defect-ledger artefacts under artifacts/print-readiness/. RETIREMENT CONDITION: name a real consumer in another repo by the next interlinks coverage census or this row is removed and the RussianRamayana ledger verdict reverts. Do NOT add a second speculative row anywhere — Gate 2's budget is spent here. (внутренний Uprava)",
+        "label_ru": "interlinks_edges.tsv: H3568 ruling F5, amended by ruling F5b (MG, 29-08-2026): CONSUMER NAMED — the printed two-volume Literaturnye Pamyatniki Ramayana edition itself (Grintser / Nauka), the book this lane exists to make printable. That consumer is OFF-GIT and outside the repo graph, so Gate 2's third test (the consumer contains something that reads it) is repo-shaped and does not apply; the row is ruled real, not measured real, and its retirement condition is DISCHARGED — the ledger verdict edges-registered stands and does not revert at the next census. The 28-08-2026 measurement is not retracted and must not be re-opened as a defect: measured 28-08-2026 across every sibling clone (kosha, SanskritLexicography, CommentaryStrategies, BookIndex, SamudraManthanam, github-spine, csl-atlas, IndologyScholars, SanskritKaraoke, AfanasiyNikitin, Systema-Sanscriticum, ORS-FAQ), zero repo reads any Litpam artefact — the only sibling hits are the unrelated English phrase print-readiness in the dictionary sense and a litpamyatniki.ru URL. Producer side is real and active: H2590 (Book II, merged https://github.com/gasyoun/RussianRamayana/pull/98) plus H2589 (Book I) ship gate-report.json / coverage / defect-ledger artefacts under artifacts/print-readiness/. Book II stands at AUTOMATED_PASS / HUMAN_REVIEW_WAITING, so delivery to the consumer is in flight, not hypothetical. Gate 2's speculative budget is NOT hereby freed: ruling F5a kept the IndologyScholars crosswalk producer-side only because this row held the single slot, and F5b does not re-open F5a — whether the slot is now unspent is a separate human call, and until it is made the answer is no second speculative row anywhere. (внутренний Uprava)",
         "visibility": "internal"
       }
     },
@@ -6519,6 +6551,34 @@
       "as_of": "2026-08-29",
       "evidence": {
         "label_ru": "interlinks_edges.tsv: SHARED_CODE s23; consumers RussianTranslation/src/store_flags.py (row_metalanguage_ok) + pwg_tm_fragmentize.py (imports GERMAN_* via the shim, no private copy); pinned by tests/test_metalanguage_flags.py; dual-run 28-08-2026: this s23 leg landed in the salvage pass after the first landing registered only s21+kosha rows (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-csl-atlas-consumes-indologyscholars",
+      "source": "repo:csl-atlas",
+      "target": "repo:indologyscholars",
+      "kind": "consumes",
+      "asset_ru": "curation/meso_discipline_crosswalk.csv meso-code to discipline crosswalk (50 confidence-scored mappings) + curation/disciplines.csv spine - CONSUMER side, named by ruling F5, not yet reading",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-08-29",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3567 ruling F5 consumer half, withheld by F5a and RELEASED by ruling F5c (MG, 29-08-2026, «gains, free the slot») once F5b freed Gate 2's speculative slot. SPECULATIVE, RE-MEASURED 29-08-2026 not inherited: `git grep -il meso_discipline_crosswalk|person_disciplines|disciplines.csv` over this repo returns NOTHING - it still does not read any discipline mapping, three days after F5 named it. Registered anyway because MG ruled the named-consumer intent load-bearing: consume this crosswalk rather than re-deriving a Russian-Indology discipline taxonomy, and never fall back to keyword_filtering.py (>=7.1% error floor). BUDGET: F5c treats the csl-atlas + kosha pair as ONE speculative registration - one ruling, one asset - occupying the single freed slot, so Gate 2's budget is SPENT AGAIN and no third speculative row is authorised anywhere. RETIREMENT CONDITION: if this repo still reads nothing by the next interlinks coverage census, this row is removed and the slot returns to F5b's freed state. (внутренний Uprava)",
+        "visibility": "internal"
+      }
+    },
+    {
+      "id": "e:dep-kosha-consumes-indologyscholars",
+      "source": "repo:kosha",
+      "target": "repo:indologyscholars",
+      "kind": "consumes",
+      "asset_ru": "curation/meso_discipline_crosswalk.csv meso-code to discipline crosswalk (50 confidence-scored mappings) + curation/disciplines.csv spine - CONSUMER side, named by ruling F5, not yet reading",
+      "status": "proposed",
+      "temperature": "assessed",
+      "as_of": "2026-08-29",
+      "evidence": {
+        "label_ru": "interlinks_edges.tsv: H3567 ruling F5 consumer half, withheld by F5a and RELEASED by ruling F5c (MG, 29-08-2026, «gains, free the slot») once F5b freed Gate 2's speculative slot. SPECULATIVE, RE-MEASURED 29-08-2026 not inherited: `git grep -il meso_discipline_crosswalk|person_disciplines|disciplines.csv` over this repo returns NOTHING - it still does not read any discipline mapping, three days after F5 named it. Registered anyway because MG ruled the named-consumer intent load-bearing: consume this crosswalk rather than re-deriving a Russian-Indology discipline taxonomy, and never fall back to keyword_filtering.py (>=7.1% error floor). BUDGET: F5c treats the csl-atlas + kosha pair as ONE speculative registration - one ruling, one asset - occupying the single freed slot, so Gate 2's budget is SPENT AGAIN and no third speculative row is authorised anywhere. RETIREMENT CONDITION: if this repo still reads nothing by the next interlinks coverage census, this row is removed and the slot returns to F5b's freed state. (внутренний Uprava)",
         "visibility": "internal"
       }
     }

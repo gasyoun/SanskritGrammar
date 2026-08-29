@@ -4,346 +4,196 @@
   "note_ru": "Строки FEATURES_INDEX (I–IV), не присоединённые к публичным семействам активов; каждая несёт причину. Присоединённые строки — поле feature_ids узлов asset.",
   "unmatched": [
     {
-      "id": "A2",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "SanskritRussian glossary (3-layer)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "A4",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "lemma / root glossary (DCS)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
       "id": "A5",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "jamison_brereton_en_2014.json",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "RV translation-evidence spine column (Jamison–Brereton EN); the only bilingual family is Sa→Ru (asset:sa-ru-alignment), no translation-column family exists."
     },
     {
       "id": "A6",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "rv_renou_evp_witness.jsonl",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Renou EVP witness file beside the RV translation spine; no witness/translation-column family exists."
     },
     {
       "id": "B6",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "mw_etymology.tsv / pwg_etymology.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Pāṇinian headword→root derivation tables over 10 dicts; no etymology family — asset:mw-roots owns the Whitney root inventory only."
     },
     {
       "id": "B7",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "etymology_stats",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Cross-dict etymology aggregates; no etymology family among the 18."
     },
     {
       "id": "B8",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "etymology-oracle.json",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "B9",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "root_crosswalk.csv + class_concordance.csv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "B10",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "Whitney_DCS_audit.json",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "B11",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "corpus_class_verdicts.json",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "B12",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "dcs_ppp_verified.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "C16",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "union coverage_additions.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "C17",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "csl-atlas alignment-confidence.json",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "C18",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "csl-atlas low-confidence review set",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "csl-atlas verbatim aggregator over etymology_stats; no etymology family."
     },
     {
       "id": "C19",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "semdom ↔ Amarakosha crosswalk",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D19",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "heritage_forms_oracle.tsv.gz",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D20",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "heritage_dico_gloss.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D21",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "heritage_forms_oracle_disagreements.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D22",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "heritage_only_forms.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D23",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "heritage_mirror/DATA/ frequency tables",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "D24",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "sanhw1.xlsx (Sanskrit-Hybrid Word)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E25",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "VisualDCS DCS ingest + lemma summary",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E26",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "kosha frequency layer",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E27",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "dcs_form2lemma.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E28",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "dcs_lemma2root.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E29",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "vidyut_form2lemma.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E30",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "surface_dcs_misses.tsv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "SIL semdom ↔ Amarakosha semantic-domain map; the named crosswalk families are DCS↔CDSL and MW↔Heritage only — no semdom family."
     },
     {
       "id": "E31",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Zaliznyak grammar index",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E32",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "correction_events_release.csv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Zaliznyak-style grammar-token index over PWG headwords; no grammar-index family."
     },
     {
       "id": "E38",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "<ls> citation-frequency graph",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Citation-frequency census over <ls> markup; analysis product — no family owns derived markup studies."
     },
     {
       "id": "E39",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "markup-tag census",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E40",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "headword overlap matrix + unique counts",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Read-only markup-tag census over csl-orig/v02; analysis product, feeds no pipeline family."
     },
     {
       "id": "E47",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "witness-independence map + corroboration re-audit",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E41",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "correction_events_{all,typed,final}.csv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Witness-independence map over the 15-dict union; audit product, not the union itself."
     },
     {
       "id": "E42",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Kompozity names.csv",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "DCS proper-name compound splits with frequency vectors; analysis product over the corpus, not the ingest grain."
     },
     {
       "id": "E43",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "kosha corpus sandhi (programme)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Programme-level corpus-sandhi rule sets; no sandhi/morphology family among the 18."
     },
     {
       "id": "E43",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "code-duplication census + LOC/language-mix per repo",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Org-wide repo-hygiene census; analysis product, not the ci-fanout deploy machinery itself. The id is double-defined upstream (kept and logged in wave 1), so an id-level join would misfile the sandhi row."
     },
     {
       "id": "E44",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "POS distribution per text",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "UD-upos distribution per DCS text; corpus statistics study — asset:dcs-corpus owns the ingest grain, not derived studies."
     },
     {
       "id": "E45",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "sense/polysemy distribution per dict (11/44 general lexica)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Senses-per-entry distribution per dict; dictionary-microstructure statistics, no owning family."
     },
     {
       "id": "E46",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "paradigm-cell coverage per root",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Attested finite paradigm cells per root over DCS; corpus statistics study, not the ingest grain."
     },
     {
       "id": "E49",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "definition typology (synonym / equivalent / encyclopedic)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Definition typology over all 44 dicts; dictionary-microstructure statistics, no owning family."
     },
     {
       "id": "E50",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Rāmāyaṇa edition-alignment family (Gorresio · Bombay · Southern↔critical)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "E48",
-      "section": "I. Data assets — query it, someone already spent the compute",
-      "title": "kosha Pāṇinian sūtra↔corpus concordance",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Rāmāyaṇa three-edition alignment programme; no edition-alignment family."
     },
     {
       "id": "E51",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "nominal case×number grid per declension class",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Case×number grid per declension class over DCS tokens; corpus statistics study, not the ingest grain."
     },
     {
       "id": "E52",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "attested declension cells per lemma (Sangram G2)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Attested declension cells per lemma; corpus statistics study, not the ingest grain."
     },
     {
       "id": "F33",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Indische Sprüche",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Standalone public-domain subhāṣita JSONL; no standalone-corpus family."
     },
     {
       "id": "F34",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "ortho-drift reform maps",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "19th-c.→modern spelling-reform maps for SanskritSpellCheck; asset:correction-pipeline fixes dictionary text, not spell-check data."
     },
     {
       "id": "F35",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "do-not-file corpus",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Deliberately non-standard headword suppressions; ambiguous against asset:correction-pipeline (which corrects text, not filing) — left unmatched per plan R5.1."
     },
     {
       "id": "F36",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "csl-santam Tamil SQLite",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Derived Tamil SQLite of csl-santam; families own source texts and named products, not per-dict derived databases."
     },
     {
       "id": "F37",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "OCR'd dictionary front-matter",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "OCR'd title pages/prefaces/abbreviations as Markdown; no front-matter family."
     },
     {
       "id": "F43",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "allngramtxt.txt char-n-gram oracle",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Character n-gram membership oracle for the spell-check method; no spell-check family."
     },
     {
       "id": "F44",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "INDOLOGY-L mailing-list archive atlas",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Standalone mailing-list archive repo; no family owns external-list corpora."
     },
     {
       "id": "F45",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Laukika-nyāya (Jacob's \"Handful of Popular Maxims\")",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Standalone maxim collection (Jacob, PD); no standalone-corpus family."
     },
     {
       "id": "F46",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "VK wall archive — «Общество ревнителей санскрита» (vk-ors)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Standalone VK wall archive repo; no family owns external-list corpora."
     },
     {
       "id": "F47",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "PWG literary-source scan-index campaign registry",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Registry of the PWG scan-index campaign; the scans live under ext:sanskrit-lexicon-scans, the registry has no owning family."
     },
     {
       "id": "F48",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "Sanskrit definition-generation benchmark (defgen) + gloss-grounded WSD pilot",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Frozen definition-generation benchmark + WSD pilot; no evaluation-benchmark family."
     },
     {
       "id": "F49",
       "section": "I. Data assets — query it, someone already spent the compute",
       "title": "ЛЭС-1990 static dump (les-1990)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Static mirror of an external linguistics encyclopedia; no family owns external references."
     },
     {
       "id": "MW",
@@ -610,22 +460,16 @@
       "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     },
     {
-      "id": "G1",
-      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
-      "title": "Cologne Digital Sanskrit Dictionaries (CDSL)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
       "id": "G2",
       "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
       "title": "C-SALT / Kosh API",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "C-SALT/Kosh REST+GraphQL serving layer; families own data artifacts and the PHP face (asset:php-endpoints), not API services."
     },
     {
       "id": "G3",
       "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
       "title": "kosha — translator-first dictionary",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "kosha web product surface; its data artifacts are family-covered (data-hub releases, dcs-corpus frequency), the product itself is not."
     },
     {
       "id": "H4",
@@ -757,49 +601,37 @@
       "id": "L5",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "ls_resolver.py + nws_ls_markup.py (H1809, H1909)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "L6",
-      "section": "IV. Tools — import the toolkit, call the external stacks",
-      "title": "build_vidyut_fallback.py",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
-    },
-    {
-      "id": "L11",
-      "section": "IV. Tools — import the toolkit, call the external stacks",
-      "title": "pwg_ru headless control plane (H1618)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "Translation-lane <ls> citation→scan resolver (RussianTranslation/src); asset:entry-render renders csl-orig entries — no owning family for the translation lane."
     },
     {
       "id": "M10",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "Samsaadhanii / SCL (Amba Kulkarni, UoHyd)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     },
     {
       "id": "M11",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "Sanskrit Heritage (Gérard Huet, INRIA)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     },
     {
       "id": "M12",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "DharmaMitra (Berkeley)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     },
     {
       "id": "M13",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "VedaWeb (Cologne / UZH, CC BY 4.0)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     },
     {
       "id": "M14",
       "section": "IV. Tools — import the toolkit, call the external stacks",
       "title": "vidyut (Ambuda)",
-      "reason": "No explicit join to a public asset family yet (wave-2 drain)."
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
     }
   ]
 }

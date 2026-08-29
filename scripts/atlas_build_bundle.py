@@ -339,21 +339,54 @@ EXT_NAME_MAP = {
 # Contract 1.1.1. Explicit exact-id join table; a row either joins here or is
 # written to features_unmatched.json with a reason — never silently dropped,
 # and no family is invented to force the join rate up (plan R4.2/R4.5).
+#
+# Wave 2 (H3683, 29-08-2026) drained the 68 "wave-2 drain" placeholder rows:
+# 28 gained a real family join below, 40 carry an explicit per-row reason in
+# FEATURE_ROW_NOTES. A live I–IV row may no longer ship with the placeholder
+# — join_features hard-fails on an unclassified row (plan R4.2 join bar).
 
 # Exact-id join table: FEATURES_INDEX row id -> public asset family node.
 FEATURE_ID_JOINS = {
     "A1": "asset:sa-ru-alignment",
     "A3": "asset:sa-ru-alignment",
+    "A2": "asset:sa-ru-alignment",
+    "A4": "asset:sa-ru-alignment",
     "B5": "asset:mw-roots",
+    "B9": "asset:mw-roots",
+    "B10": "asset:mw-roots",
+    "B11": "asset:mw-roots",
     "C13": "asset:union-headwords",
+    "C16": "asset:union-headwords",
+    "C17": "asset:union-headwords",
+    "C18": "asset:union-headwords",
+    "E40": "asset:union-headwords",
     "C14": "asset:mw-heritage-crosswalk",
+    "D19": "asset:mw-heritage-crosswalk",
+    "D20": "asset:mw-heritage-crosswalk",
+    "D21": "asset:mw-heritage-crosswalk",
+    "D22": "asset:mw-heritage-crosswalk",
+    "D23": "asset:mw-heritage-crosswalk",
+    "D24": "asset:mw-heritage-crosswalk",
     "C15": "asset:dcs-cdsl-crosswalk",
+    "B12": "asset:dcs-corpus",
+    "E25": "asset:dcs-corpus",
+    "E26": "asset:dcs-corpus",
+    "E27": "asset:dcs-corpus",
+    "E28": "asset:dcs-corpus",
+    "E29": "asset:dcs-corpus",
+    "E30": "asset:dcs-corpus",
+    "L6": "asset:dcs-corpus",
     "L1": "asset:transliteration",
     "L10": "asset:transliteration",
     "L2": "asset:correction-pipeline",
+    "E32": "asset:correction-pipeline",
+    "E41": "asset:correction-pipeline",
     "L3": "asset:php-endpoints",
+    "G1": "asset:php-endpoints",
     "L4": "asset:entry-render",
     "L7": "asset:translation-kit",
+    "L11": "asset:translation-kit",
+    "E48": "asset:concordance-core",
     "L8": "asset:site-generator",
     "L9": "asset:ci-fanout",
 }
@@ -378,6 +411,9 @@ def join_features(features):
 
     Every row lands in exactly one of the two places (plan R4.2); an
     ambiguous join stays unmatched and logged (W1-B default, plan R5.1).
+    Since the wave-2 drain (H3683) a live row may not fall through to the
+    old "wave-2 drain" placeholder: an unclassified id hard-fails the build
+    so the unmatched list stays fully accounted for.
     """
     joined = {}
     unmatched = []
@@ -389,12 +425,34 @@ def join_features(features):
             if fid not in bucket:
                 bucket.append(fid)
             continue
+        note = feature_row_note(fid, row["title"])
+        if note:
+            unmatched.append({**row, "reason": note})
+            continue
         if not FEATURE_ID_RE.match(fid):
             shape = "ext-stack" if fid.startswith("M") else "dict-code"
-        else:
-            shape = "no-join"
-        unmatched.append({**row, "reason": UNMATCHED_NOTE_BY_SHAPE[shape]})
+            unmatched.append({**row, "reason": UNMATCHED_NOTE_BY_SHAPE[shape]})
+            continue
+        raise SystemExit(
+            f"uncategorised FEATURES_INDEX I-IV row: {fid} — "
+            f"{row['title']!r}: add FEATURE_ID_JOINS entry or a "
+            "FEATURE_ROW_NOTES reason (plan R4.2 join bar)"
+        )
     return joined, unmatched
+
+
+def feature_row_note(fid, title):
+    """Wave-2 per-row unmatched note: exact id, or 'ID|title-prefix'."""
+    note = FEATURE_ROW_NOTES.get(fid)
+    if note is not None:
+        return note
+    for key, val in FEATURE_ROW_NOTES.items():
+        if "|" not in key:
+            continue
+        kid, prefix = key.split("|", 1)
+        if kid == fid and title.startswith(prefix):
+            return val
+    return None
 
 
 def escape_mermaid(text):
@@ -509,7 +567,161 @@ UNMATCHED_NOTE_BY_SHAPE = {
         "csl-orig (asset:cdsl-source-texts)."
     ),
     "ext-stack": "External stack — consumed via ext:* nodes, not owned as an asset.",
-    "no-join": "No explicit join to a public asset family yet (wave-2 drain).",
+}
+
+# Wave-2 drain (H3683, 29-08-2026): per-row "stays unmatched" reasons for the
+# FEATURES_INDEX I–IV rows that have no honest home among the 18 public asset
+# families (plan R4.2/R4.5 — no family invented to force the rate up). Keys
+# are exact row ids, or "ID|title-prefix" where an id is double-defined
+# upstream (E43: sandhi programme vs code-duplication census).
+FEATURE_ROW_NOTES = {
+    # I. Data assets
+    "A5": (
+        "RV translation-evidence spine column (Jamison–Brereton EN); the only "
+        "bilingual family is Sa→Ru (asset:sa-ru-alignment), no "
+        "translation-column family exists."
+    ),
+    "A6": (
+        "Renou EVP witness file beside the RV translation spine; no "
+        "witness/translation-column family exists."
+    ),
+    "B6": (
+        "Pāṇinian headword→root derivation tables over 10 dicts; no etymology "
+        "family — asset:mw-roots owns the Whitney root inventory only."
+    ),
+    "B7": "Cross-dict etymology aggregates; no etymology family among the 18.",
+    "B8": "csl-atlas verbatim aggregator over etymology_stats; no etymology family.",
+    "C19": (
+        "SIL semdom ↔ Amarakosha semantic-domain map; the named crosswalk "
+        "families are DCS↔CDSL and MW↔Heritage only — no semdom family."
+    ),
+    "E31": (
+        "Zaliznyak-style grammar-token index over PWG headwords; no "
+        "grammar-index family."
+    ),
+    "E38": (
+        "Citation-frequency census over <ls> markup; analysis product — no "
+        "family owns derived markup studies."
+    ),
+    "E39": (
+        "Read-only markup-tag census over csl-orig/v02; analysis product, "
+        "feeds no pipeline family."
+    ),
+    "E42": (
+        "DCS proper-name compound splits with frequency vectors; analysis "
+        "product over the corpus, not the ingest grain."
+    ),
+    "E43|kosha corpus sandhi": (
+        "Programme-level corpus-sandhi rule sets; no sandhi/morphology family "
+        "among the 18."
+    ),
+    "E43|code-duplication census": (
+        "Org-wide repo-hygiene census; analysis product, not the ci-fanout "
+        "deploy machinery itself. The id is double-defined upstream (kept and "
+        "logged in wave 1), so an id-level join would misfile the sandhi row."
+    ),
+    "E44": (
+        "UD-upos distribution per DCS text; corpus statistics study — "
+        "asset:dcs-corpus owns the ingest grain, not derived studies."
+    ),
+    "E45": (
+        "Senses-per-entry distribution per dict; dictionary-microstructure "
+        "statistics, no owning family."
+    ),
+    "E46": (
+        "Attested finite paradigm cells per root over DCS; corpus statistics "
+        "study, not the ingest grain."
+    ),
+    "E47": (
+        "Witness-independence map over the 15-dict union; audit product, not "
+        "the union itself."
+    ),
+    "E49": (
+        "Definition typology over all 44 dicts; dictionary-microstructure "
+        "statistics, no owning family."
+    ),
+    "E50": (
+        "Rāmāyaṇa three-edition alignment programme; no edition-alignment "
+        "family."
+    ),
+    "E51": (
+        "Case×number grid per declension class over DCS tokens; corpus "
+        "statistics study, not the ingest grain."
+    ),
+    "E52": (
+        "Attested declension cells per lemma; corpus statistics study, not "
+        "the ingest grain."
+    ),
+    "F33": (
+        "Standalone public-domain subhāṣita JSONL; no standalone-corpus "
+        "family."
+    ),
+    "F34": (
+        "19th-c.→modern spelling-reform maps for SanskritSpellCheck; "
+        "asset:correction-pipeline fixes dictionary text, not spell-check "
+        "data."
+    ),
+    "F35": (
+        "Deliberately non-standard headword suppressions; ambiguous against "
+        "asset:correction-pipeline (which corrects text, not filing) — left "
+        "unmatched per plan R5.1."
+    ),
+    "F36": (
+        "Derived Tamil SQLite of csl-santam; families own source texts and "
+        "named products, not per-dict derived databases."
+    ),
+    "F37": (
+        "OCR'd title pages/prefaces/abbreviations as Markdown; no front-matter "
+        "family."
+    ),
+    "F43": (
+        "Character n-gram membership oracle for the spell-check method; no "
+        "spell-check family."
+    ),
+    "F44": (
+        "Standalone mailing-list archive repo; no family owns external-list "
+        "corpora."
+    ),
+    "F45": (
+        "Standalone maxim collection (Jacob, PD); no standalone-corpus family."
+    ),
+    "F46": (
+        "Standalone VK wall archive repo; no family owns external-list "
+        "corpora."
+    ),
+    "F47": (
+        "Registry of the PWG scan-index campaign; the scans live under "
+        "ext:sanskrit-lexicon-scans, the registry has no owning family."
+    ),
+    "F48": (
+        "Frozen definition-generation benchmark + WSD pilot; no "
+        "evaluation-benchmark family."
+    ),
+    "F49": (
+        "Static mirror of an external linguistics encyclopedia; no family "
+        "owns external references."
+    ),
+    # III. Interfaces
+    "G2": (
+        "C-SALT/Kosh REST+GraphQL serving layer; families own data artifacts "
+        "and the PHP face (asset:php-endpoints), not API services."
+    ),
+    "G3": (
+        "kosha web product surface; its data artifacts are family-covered "
+        "(data-hub releases, dcs-corpus frequency), the product itself is not."
+    ),
+    # IV. Tools
+    "L5": (
+        "Translation-lane <ls> citation→scan resolver (RussianTranslation/src); "
+        "asset:entry-render renders csl-orig entries — no owning family for "
+        "the translation lane."
+    ),
+    # IV. External stacks, explicit (title-verified wave-2 pass)
+    "M10": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M11": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M12": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M13": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M14": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
 }
 MERMAID_MAX_NODES = 45  # above this, emit the cluster-of-clusters fallback
 
