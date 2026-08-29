@@ -31,6 +31,16 @@ changelog tags as `vX.Y.Z`.
   Uprava canonical copy sync + org re-deploy tracked separately.
 
 ### Added
+- **H3550 (OxAlpha) — 30-day retrospective code review report + future OxAlpha status gate design (inactive).**
+  [docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md):
+  ten risk-ranked executable-code slices from the 26-07..25-08-2026 window with exact
+  base/head SHAs, independent Standards and Spec verdicts, exclusions, and findings —
+  one P1 fixed (F1, PR #888), three evidence-backed observations, zero unsupported
+  findings, zero no-spec outcomes.
+  [docs/OXALPHA_STATUS_GATE_DESIGN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/OXALPHA_STATUS_GATE_DESIGN_2026.md):
+  executable-code matching, an independent `oxalpha-review-gate` check design, and
+  human-approval paths (CI/deploy, repo-integrity guards, claims-truth gates,
+  student-facing generation) — **design only, nothing enabled**.
 - **H3550 (OxAlpha `x-preview-f-free`) — canonical issue-tracker adapter + OxAlpha code-review plan family (bootstrap).**
   `docs/agents/` (issue-tracker GitHub with PR intake OFF, triage labels, domain docs),
   `## Agent skills` block in CLAUDE.md, five triage labels live
