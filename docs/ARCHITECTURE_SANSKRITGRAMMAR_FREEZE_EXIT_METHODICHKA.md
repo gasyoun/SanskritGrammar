@@ -1,6 +1,6 @@
 # Architecture — freeze exit + methodichka residual
 
-_Created: 24-07-2026 · Last updated: 24-07-2026_
+_Created: 24-07-2026 · Last updated: 30-08-2026_
 
 Cover:
 [`docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_FREEZE_EXIT_METHODICHKA_2026H2.md).
@@ -18,7 +18,13 @@ Cover:
 | Kill-gate matrix | toc_ref → criterion map | `sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md` |
 | Visa sheet builder | Spec → HTML | [`scripts/build_visa_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_visa_sheet.py) |
 | Editorial note index | Note OPEN/APPLIED tracking | [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv) |
-| Methodichka manuscripts | Russian pedagogy companions | `KocherginaUchebnik_1998/`, `ApteSyntax_1885/` |
+| Methodichka manuscripts | Russian pedagogy companions | `KocherginaUchebnik_1998/`, `ApteSyntax_1885/`, `BuhlerLeitfaden_1923/` |
+
+Each of those lines owes the same **five artifacts** (COMPANION · CORPUS_LAYER ·
+KOMMENTARII · OTSYLKI · UPRAZHNENIIA). The convention, the two rules that go with it
+(exercises drawn not invented; every `s.v.` a live Cologne link), and the live
+per-line coverage matrix are in
+[CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md).
 
 ## 2. Data flow (freeze front)
 
