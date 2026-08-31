@@ -30,13 +30,13 @@ Two rules that are not obvious from the filenames:
 
 A long-lived COMPANION also carries a sibling `<name>.meta.md`.
 
-## Coverage — measured 31-08-2026 (Apte row closed by H3739)
+## Coverage — measured 31-08-2026 (Apte row closed by H3739, Bühler row by H3804)
 
 | Line | COMPANION | CORPUS_LAYER | KOMMENTARII | OTSYLKI | UPRAZHNENIIA |
 |---|---|---|---|---|---|
 | Kochergina — [`KocherginaUchebnik_1998/`](https://github.com/gasyoun/SanskritGrammar/tree/main/KocherginaUchebnik_1998) | yes | yes | yes (V1) | yes (V1) | yes (V1) |
 | Apte — [`ApteSyntax_1885/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885) | yes (+meta) | yes | yes | yes (V1) | yes (V1) |
-| Bühler — [`BuhlerLeitfaden_1923/`](https://github.com/gasyoun/SanskritGrammar/tree/main/BuhlerLeitfaden_1923) | yes | — | yes (V1) | — | — |
+| Bühler — [`BuhlerLeitfaden_1923/`](https://github.com/gasyoun/SanskritGrammar/tree/main/BuhlerLeitfaden_1923) | yes (+meta) | yes | yes (V1) | yes (V1) | yes (V1) |
 
 **Kochergina is the reference implementation.** When building a missing artifact for
 another line, read the Kochergina file of that kind first and mirror its section order
@@ -52,9 +52,18 @@ moving between lines finds the same thing in the same place.
   [UPRAZHNENIIA](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md).
   **The shape transferred cleanly** — the one friction point was раздел numbering (the
   Apte corpus layer had already claimed «раздел II», so отсылки/упражнения are III/IV
-  against Kochergina's II/III; recorded as Decision D in the Apte companion). A sibling
-  handoff can take the **Bühler** row (needs CORPUS_LAYER, OTSYLKI, UPRAZHNENIIA) on the
-  same pattern.
+  against Kochergina's II/III; recorded as Decision D in the Apte companion).
+- **H3804 — EXECUTED 31-08-2026** (Fable 5, `claude-fable-5`): the Bühler row is complete
+  on the Apte numbering (II corpus layer · III отсылки · IV упражнения) —
+  [CORPUS_LAYER](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_CORPUS_LAYER_2026.md)
+  (31 lemmas incl. the causative-as-lemma note, `corpus_layer/` data + the shared
+  build/test harness extended to a third book),
+  [OTSYLKI](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_OTSYLKI_2026.md)
+  (MW s.v. links — keys verified offline against csl-orig during a portal per-IP
+  throttle window — plus Scherzl pages from the line's own government lexicon),
+  [UPRAZHNENIIA](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_UPRAZHNENIIA_2026.md)
+  (exercises drawn from Bühler's own lessons, Decision D of the Bühler companion now
+  delivered).
 - **H3386** (Fable 5, 🟢1 trivial) — a separate job on the same line: *applying* the
   voted `review/sanskritgrammar-metodichka-apte-v1_17.07.26_decisions.json` verdicts.
   H3739 consumed those verdicts as constraints (8 approvals, 1 null — nothing rejected);
