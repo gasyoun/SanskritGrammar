@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.17.0] - 2026-08-31
 ### Added
 - **H3739 — five-artifact parity: the Apte metodichka line completed (Fable 5 `claude-fable-5`, 31-08-2026).**
   Four new documents bring the line to the shape the Kochergina line established
