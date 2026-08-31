@@ -9,6 +9,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-08-31
 ### Added
 - **Five-artifact parity: разделы II–IV методички (H3804, Fable 5 `claude-fable-5`).**
   The Bühler line's coverage row in
