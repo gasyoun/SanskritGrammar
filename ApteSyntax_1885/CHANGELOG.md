@@ -9,6 +9,23 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 ### Added
+- **H3739 — five-artifact parity: the Apte metodichka line completed (Fable 5 `claude-fable-5`, 31-08-2026).**
+  Four new documents bring the line to the shape the Kochergina line established
+  ([convention + coverage matrix](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md)):
+  [`METODICHKA_APTE_COMPANION_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md)
+  (roadmap/spec written retroactively over the shipped разделы I–II, decisions A–D locked)
+  + sibling [`.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.meta.md);
+  [`METODICHKA_APTE_V1_OTSYLKI_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_OTSYLKI_2026.md)
+  (раздел III: per-занятие «см. также» — AP90 s.v. Cologne getword links on SLP1 keys, all
+  38 verified live 31-08-2026; Шерцль government-lexicon pages; Whitney §§; Елизаренкова-2004;
+  Kochergina-line parallels);
+  [`METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md)
+  (раздел IV: readings/разборы/translation tasks for занятия 3-7-9-10-19-22-29/30, every item
+  drawn from Apte's own lessons with § citations — convention rule 1, no invented drills;
+  keys ⟦MG-viza⟧ draft). README metodichka index section added; convention coverage matrix
+  flipped to `yes` across the Apte row. Consumed the 17-07-2026 visa decisions as
+  constraints (8 approvals, 1 null — nothing rejected); H3386 (applying that decisions
+  file) remains separate.
 - **H3114 - zan-22/zan-10/prilozhenie: cross-claim statistics dashboard + cross-book calibration block (OxAlpha `x-preview-f-free`, 24-08-2026).** New [`scripts/build_cross_claim_dashboard.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_cross_claim_dashboard.py) (derive-don't-store, `--check` drift gate) regenerates [`CLAIMS_STATS_DASHBOARD.md`](CLAIMS_STATS_DASHBOARD.md): cross-registry verdict totals for the four books with claim registers (Knauer honestly absent - no claims.yml), per-instrument quantified rows from the four committed `apte_*_stats.json` instruments, zan-10 (APT-19 acc-vs-gen) and zan-22 (uta position) anchors, full FALSE/OVERSTATED lists. Marker-fenced generated calibration table inserted into the prilozhenie section of [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md), closing the two 19-07-2026 DEFERRED residuals of H1615.
 
 ## [0.16.0] - 2026-08-19

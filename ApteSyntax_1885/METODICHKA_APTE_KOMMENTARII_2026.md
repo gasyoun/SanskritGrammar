@@ -1,12 +1,13 @@
 # Методичка к Апте, «Руководство по санскритской композиции» — раздел I: комментарий точности и калибровки
 
-_Created: 17-07-2026 · Last updated: 19-08-2026_
+_Created: 17-07-2026 · Last updated: 31-08-2026_
 
 Печатная рукопись (раздел I методички-компаньона к V. S. Apte, *The Student's Guide to Sanskrit
 Composition*, 1885, в русском переводе Н. П. Лихушиной, 2021). Слайс исполнения —
 [H1090](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1090-Opus_SanskritGrammar_apte-methodichka-commentary_17.07.26.md);
-план по образцу методички Кочергиной
-([METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)).
+план линии — [METODICHKA_APTE_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md)
+(написан позже, H3739, по образцу методички Кочергиной —
+[METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md)).
 
 Каждое число в этом разделе живёт в реестре
 [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml)

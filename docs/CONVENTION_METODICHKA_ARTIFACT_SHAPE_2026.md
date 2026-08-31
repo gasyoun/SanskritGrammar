@@ -1,6 +1,6 @@
 # Metodichka artifact shape — the five documents a textbook line owes
 
-_Created: 30-08-2026 · Last updated: 30-08-2026_
+_Created: 30-08-2026 · Last updated: 31-08-2026_
 
 Each digitised textbook line in this repo carries a Russian-language *metodichka* —
 a teaching apparatus wrapped around the source book. The apparatus is not one file
@@ -30,12 +30,12 @@ Two rules that are not obvious from the filenames:
 
 A long-lived COMPANION also carries a sibling `<name>.meta.md`.
 
-## Coverage — measured 30-08-2026 on `origin/main`
+## Coverage — measured 31-08-2026 (Apte row closed by H3739)
 
 | Line | COMPANION | CORPUS_LAYER | KOMMENTARII | OTSYLKI | UPRAZHNENIIA |
 |---|---|---|---|---|---|
 | Kochergina — [`KocherginaUchebnik_1998/`](https://github.com/gasyoun/SanskritGrammar/tree/main/KocherginaUchebnik_1998) | yes | yes | yes (V1) | yes (V1) | yes (V1) |
-| Apte — [`ApteSyntax_1885/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885) | — | yes | yes | — | — |
+| Apte — [`ApteSyntax_1885/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885) | yes (+meta) | yes | yes | yes (V1) | yes (V1) |
 | Bühler — [`BuhlerLeitfaden_1923/`](https://github.com/gasyoun/SanskritGrammar/tree/main/BuhlerLeitfaden_1923) | yes | — | yes (V1) | — | — |
 
 **Kochergina is the reference implementation.** When building a missing artifact for
@@ -45,12 +45,20 @@ moving between lines finds the same thing in the same place.
 
 ## In flight
 
-- **H3739** (Fable 5, 🔴3 hard) — closes the **Apte** row: COMPANION, OTSYLKI,
-  UPRAZHNENIIA plus a COMPANION metadoc. Bühler is deliberately excluded from its
-  scope; if the shape transfers cleanly, a sibling handoff takes Bühler.
+- **H3739 — EXECUTED 31-08-2026** (Fable 5, `claude-fable-5`): the Apte row is complete —
+  [COMPANION](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md)
+  (+ [metadoc](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.meta.md)),
+  [OTSYLKI](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_OTSYLKI_2026.md),
+  [UPRAZHNENIIA](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md).
+  **The shape transferred cleanly** — the one friction point was раздел numbering (the
+  Apte corpus layer had already claimed «раздел II», so отсылки/упражнения are III/IV
+  against Kochergina's II/III; recorded as Decision D in the Apte companion). A sibling
+  handoff can take the **Bühler** row (needs CORPUS_LAYER, OTSYLKI, UPRAZHNENIIA) on the
+  same pattern.
 - **H3386** (Fable 5, 🟢1 trivial) — a separate job on the same line: *applying* the
   voted `review/sanskritgrammar-metodichka-apte-v1_17.07.26_decisions.json` verdicts.
-  H3739 consumes those verdicts as constraints; it does not do H3386's work.
+  H3739 consumed those verdicts as constraints (8 approvals, 1 null — nothing rejected);
+  it did not do H3386's work.
 
 Update the coverage table in the same pass as any artifact that lands.
 

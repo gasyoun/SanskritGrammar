@@ -1,6 +1,6 @@
 # ApteSyntax_1885 — Apte, *The Student's Guide to Sanskrit Composition* (1885)
 
-_Created: 06-07-2026 · Last updated: 16-07-2026_
+_Created: 06-07-2026 · Last updated: 31-08-2026_
 
 Raw-source archive and faithful [`.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.mdx)
 extraction of **Vaman Shivaram Apte's** *The Student's Guide to Sanskrit
@@ -26,6 +26,19 @@ rendered [Docusaurus page](https://gasyoun.github.io/SanskritGrammar/grammars/Ap
 | [Apte-unicode.docx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.docx) · [Apte-unicode.doc](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.doc) | Source Word documents the `.mdx` is extracted from (the `.docx` is authoritative) |
 | [01_Apte.zip](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/01_Apte.zip) | The complete original working archive (~101 MB), unpacked under [`src/01_Apte/`](https://github.com/gasyoun/SanskritGrammar/tree/main/ApteSyntax_1885/src/01_Apte) |
 | [ERRATA.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/ERRATA.mdx) · [errata.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml) | Per-book errata list (empty so far) — regenerate via the `/errata` skill |
+
+## Методичка-компаньон (five-artifact line, complete since H3739)
+
+The line carries the full five-artifact teaching apparatus per the
+[metodichka convention](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md):
+
+| Artifact | File |
+|---|---|
+| Plan / companion | [METODICHKA_APTE_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md) (+ [metadoc](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.meta.md)) |
+| Раздел I — комментарий точности | [METODICHKA_APTE_KOMMENTARII_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md) |
+| Раздел II — корпусный слой | [METODICHKA_APTE_CORPUS_LAYER_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_CORPUS_LAYER_2026.md) |
+| Раздел III — отсылки «см. также» | [METODICHKA_APTE_V1_OTSYLKI_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_OTSYLKI_2026.md) |
+| Раздел IV — упражнения | [METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_V1_UPRAZHNENIIA_2026.md) |
 
 ## Реестр проверенных утверждений (H1055, seed — фаза 2)
 
