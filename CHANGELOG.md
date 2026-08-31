@@ -19,6 +19,14 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Changed
+- **Corpus-layer harness extended to a third book (H3804, Fable 5 `claude-fable-5`).**
+  `scripts/build_corpus_layer.py` gains the `buhler` book config and the lesson-heading
+  regex now also matches `## Урок`/`## Уроки` (the Bühler manuscripts head sections by
+  урок, not занятие); `tests/test_corpus_layer.py` pins the new
+  `BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv` ↔ manuscript pair in its BOOKS
+  drift guard (locus/band/rank agreement, rights gate, DCS-locus presence).
+
 ### Fixed
 - **H3550 (OxAlpha) — stale-base guard miscounted removals after a removed `--`-prefixed line (F1, P1).**
   In `scripts/pre_push_stale_base_check.py` the `---`/`+++` file-header test ran on every

@@ -30,6 +30,8 @@ BOOKS = {
         REPO / "KocherginaUchebnik_1998" / "METODICHKA_KOCHERGINA_CORPUS_LAYER_2026.md",
     REPO / "ApteSyntax_1885" / "corpus_layer" / "corpus_layer.tsv":
         REPO / "ApteSyntax_1885" / "METODICHKA_APTE_CORPUS_LAYER_2026.md",
+    REPO / "BuhlerLeitfaden_1923" / "corpus_layer" / "corpus_layer.tsv":
+        REPO / "BuhlerLeitfaden_1923" / "METODICHKA_BUHLER_CORPUS_LAYER_2026.md",
 }
 
 RESTRICTED_MARKER = "перевод в закрытом слое"

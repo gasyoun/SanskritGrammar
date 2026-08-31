@@ -9,6 +9,24 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+### Added
+- **Five-artifact parity: разделы II–IV методички (H3804, Fable 5 `claude-fable-5`).**
+  The Bühler line's coverage row in
+  [docs/CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CONVENTION_METODICHKA_ARTIFACT_SHAPE_2026.md)
+  now reads yes across, on the Apte (H3739) numbering:
+  [METODICHKA_BUHLER_CORPUS_LAYER_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_CORPUS_LAYER_2026.md)
+  (раздел II — 31 lemmas across уроки XVIII/XXVIII/XXXIV/XXXVIII/XLIII/XLIV/XLV + the
+  Scherzl government frames, bands from kosha `rank_all`, one DCS-attested example each,
+  `corpus_layer/` data registry: `lemmas_selected.tsv` → `corpus_layer.tsv`);
+  [METODICHKA_BUHLER_V1_OTSYLKI_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_OTSYLKI_2026.md)
+  (раздел III — MW s.v. getword links on SLP1 keys, all 30 verified offline against
+  csl-orig `mw.txt` + live spot-check during a CDSL per-IP throttle window; Scherzl
+  pages from `government_lexicon.jsonl`; Whitney/Очерк §§; Kochergina parallels);
+  [METODICHKA_BUHLER_V1_UPRAZHNENIIA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_UPRAZHNENIIA_2026.md)
+  (раздел IV — чтения/разборы/переводы drawn from Bühler's own lessons with урок+пункт
+  citations, keys ⟦MG-виза⟧; Decision D of the companion plan delivered). Russian
+  renderings and keys are pre-visa drafts.
+
 ## [0.5.0] - 2026-07-28
 ### Added
 - **Методичка-компаньон v1 (H1757, Fable 5 `claude-fable-5`).**

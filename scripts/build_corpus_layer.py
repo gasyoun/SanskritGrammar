@@ -74,6 +74,12 @@ BOOKS = {
             "METODICHKA_APTE_KOMMENTARII_2026.md",
         ],
     },
+    "buhler": {
+        "dir": REPO / "BuhlerLeitfaden_1923",
+        "manuscripts": [
+            "METODICHKA_BUHLER_V1_KOMMENTARII_2026.md",
+        ],
+    },
 }
 
 # Texts a Russian-textbook learner is most likely to meet next; candidate
@@ -102,7 +108,7 @@ STOPLIST = {
     "can", "give", "us",
 }
 
-LESSON_RE = re.compile(r"^##\s+(Занятие|Занятия)\s+([IVXLC\d]+(?:[–-][IVXLC\d]+)?)", re.M)
+LESSON_RE = re.compile(r"^##\s+(Занятие|Занятия|Урок|Уроки)\s+([IVXLC\d]+(?:[–-][IVXLC\d]+)?)", re.M)
 
 
 def iast_to_slp1(text):
