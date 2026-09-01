@@ -124,11 +124,16 @@ def test_quiz_counts_within_rubric_and_glows_grows_cover_scores():
 
 
 def test_interest_packs_have_highlighted_swaps_base_does_not():
+    """H3824: interest personalization threads inline into the five-rows table
+    (an arrow-marked row note, at least one) AND keeps at least one trailing
+    🎯 aside for smaller sections — base has neither."""
     base_text = (PACKS_ROOT / "base" / "personalized_text.md").read_text(encoding="utf-8")
     assert "🎯" not in base_text
+    assert "\n   →" not in base_text
     for rel in sorted(EXPECTED_PROFILES - {"base"}):
         text = (PACKS_ROOT / rel / "personalized_text.md").read_text(encoding="utf-8")
-        assert text.count("🎯") >= 2, f"{rel}: fewer than two interest swaps"
+        assert text.count("🎯") >= 1, f"{rel}: no trailing interest aside"
+        assert text.count("\n   →") >= 1, f"{rel}: no inline five-rows interest note"
         assert "Занятие I" in text
 
 
