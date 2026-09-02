@@ -31,6 +31,23 @@ changelog tags as `vX.Y.Z`.
   block, `imperfect_switching_stats.py` carries a do-not-drive-by-rerun pointer, and the guarded
   re-run plus corrected report are scheduled as H3966. Direction of the bias is unmeasured.
 
+### Verified
+- **Monthly errata Phase 3 reconciliation (H3880, Sonnet 5 `claude-sonnet-5`, 02-09-2026).**
+  Ran [`docs/runbooks/MONTHLY_ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/MONTHLY_ERRATA.md)
+  end to end: `npm run errata` regenerated all 8 books' `ERRATA.mdx` + the root
+  [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) index
+  (open/fixed counts unchanged — Bühler 8/8/0, GasunsDhatu 93/64/29, Knauer 25/25/0,
+  Kochergina 4/0/4, Talmud 3/3/0, Ocherk 2/2/0, Apte/Konspekt 0/0/0), and the Phase 3
+  `CHANGELOG.md`→`errata.yml` `fixed_in` cross-check surfaced no unresolved
+  correction-keyword line — every changelog "fixed/corrected/исправл" hit across all
+  8 book changelogs + this root changelog already has a matching `fixed_in` set on its
+  errata entry (verified by hand against each book's own `CHANGELOG.md`, e.g. Kochergina's
+  four `kind: digitization` rows against its `[0.16.0]`/`[0.17.0]` entries). No new
+  printed errata sheets or edition-diff candidates surfaced this pass. `pytest` 349/349,
+  `npm run errata` clean. Only the generated `_Generated: DD-MM-YYYY_` stamps moved
+  (28-07-2026 → 02-09-2026); no `errata.yml` source changed, so no new corrections were
+  invented. [H3880](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3880-Sonnet_SanskritGrammar_monthly-errata-reconcile_02.09.26.md).
+
 ## [0.122.3] - 2026-08-31
 ### Fixed
 - **H3550 (OxAlpha) — stale-base guard miscounted removals after a removed `--`-prefixed line (F1, P1).**
