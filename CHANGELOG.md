@@ -19,6 +19,8 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+
+## [0.122.5] - 2026-09-02
 ### Added
 - **[`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md)
   — metadoc for the imperfect-switching report** (H3965 `/document` sweep, Opus 5 `claude-opus-5`).
