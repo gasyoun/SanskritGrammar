@@ -408,6 +408,12 @@ plan in
 Paper status is tracked in the org inventory
 [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
+One-off corpus studies live beside the book they answer to: [`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md) tests
+whether the imperfect marks narrative switching among perfects (verdict: **partially
+confirmed** — clustering yes, topic-shift microscopic). Its `PERF` bucket is known to be
+**10,15 % non-indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md)) and the figures are deliberately left
+un-recomputed until the mood-guarded re-run [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
+
 ## Caveats found in the source files
 
 - File-embedded metadata shows these `.doc` files were produced/edited by

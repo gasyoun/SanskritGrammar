@@ -19,6 +19,29 @@ changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+### Added
+- **[`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md)
+  — metadoc for the imperfect-switching report** (H3965 `/document` sweep, Opus 5 `claude-opus-5`).
+  Three-row trust table separating what still holds (Markov transitions, runs-test, clustering —
+  the effect is an order of magnitude larger than the contamination) from what is conditional
+  (the `PERF` bucket's absolute size 85,955 and every share derived from it) and what is clean
+  (the `AOR` bucket, 12,054 tokens, 0 non-indicative); the design defect and MG's 02-09-2026
+  ruling that a silent renumbering would destroy the pre-registration; a ranked three-item backlog
+  (guarded re-run · injunctive slice of the 8,726 discarded tokens · an in-script mood guard so
+  the defect cannot recur); revision history.
+
+### Changed
+- **`Formation`-outside-the-indicative trap recorded where consumers read it** (H3965 `/document` sweep).
+  [CLAUDE.md](https://github.com/gasyoun/SanskritGrammar/blob/main/CLAUDE.md) `## Traps` now carries
+  the H3878/G22 fact — DCS never assigns `Formation` outside `Mood=Ind`, so any finite past-tense
+  bucket defined as "no formation tag" swallows the whole non-indicative past by construction —
+  with the measured 10.15 % (8,726 of 85,955) for this repo's own
+  `ZalizniakOcherk_1978/imperfect_switching_stats.py`, the standing mandate to put `feat_mood='Ind'`
+  in every new finite past bucket, and an explicit prohibition on silently re-deriving the published
+  figures to "fix" the report. [README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md)
+  `## Research layer` introduces the study and its live caveat;
+  [.ai_state.md](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md) carries the H3966
+  queue row and the H3965 completion entry.
 
 ## [0.122.4] - 2026-09-02
 ### Changed
