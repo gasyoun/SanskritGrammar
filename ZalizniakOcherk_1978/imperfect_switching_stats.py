@@ -15,6 +15,17 @@ shuffle (1000 permutations, seed 20260717); (c) content-lemma Jaccard turnover a
 insertions inside perfect chains (>=4 of 6 finite-past neighbours PERF) vs background
 PERF points of the same chains, windows of +/-5 sentences.
 
+H3878 CAVEAT (02-09-2026, MG ruling on T2607-26 -- annotate now, re-run under H3966).
+DO NOT re-run this script as-is and present the output as a correction. The finiteness
+filter below is `feat_person IS NOT NULL` with NO `feat_mood='Ind'` guard, and H3878
+finding G22 established that DCS never assigns `Formation` outside the indicative
+(17,440 occurrences corpus-wide, not one of them non-indicative). Every finite
+non-indicative past token therefore lands in PERF by construction: 8,726 of 85,955
+(10.15 %) -- Jus 4,067, Imp 1,700, Sub 1,317, Opt 1,065, Prec 577. The AOR bucket is
+clean (12,054, non-indicative 0) for the same reason. The published v0.48.0 tables stand
+with that caveat (see IMPERFECT_SWITCHING_HK15_REPORT.md, section "Оговорка H3878");
+the guarded re-run and the corrected report are H3966's job, not a drive-by edit here.
+
 Fable 5 (claude-fable-5), 17-07-2026, per MG's authorization to run the Opus-tier row.
 """
 

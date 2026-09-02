@@ -18,6 +18,18 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+### Changed
+- **H3878 caveat annotated onto the released imperfect-switching report (H3965, Opus 5
+  `claude-opus-5`; MG ruling 02-09-2026 on Uprava T2607-26).**
+  `ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md` (shipped in v0.48.0, #338) buckets
+  PERF as `feat_tense='Past' AND feat_formation IS NULL` over a finiteness filter of
+  `feat_person IS NOT NULL` — with **no** `feat_mood='Ind'` guard. H3878 finding G22 proved DCS
+  never assigns `Formation` outside the indicative, so **8,726 of the bucket's 85,955 tokens
+  (10.15 %) are non-indicative by construction** (Jus 4,067 · Imp 1,700 · Sub 1,317 · Opt 1,065 ·
+  Prec 577); the AOR bucket is clean (12,054, non-indicative 0) for the same reason. The published
+  tables are **not** recomputed or retracted in this pass — the report carries a measured caveat
+  block, `imperfect_switching_stats.py` carries a do-not-drive-by-rerun pointer, and the guarded
+  re-run plus corrected report are scheduled as H3966. Direction of the bias is unmeasured.
 
 ## [0.122.3] - 2026-08-31
 ### Fixed
