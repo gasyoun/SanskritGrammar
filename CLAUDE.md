@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 25-08-2026_
+_Created: 20-07-2026 · Last updated: 02-09-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
@@ -101,6 +101,19 @@ Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](htt
 
 ## Traps
 
+- ⚠️ **DCS never tags `Formation` outside the indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md),
+  VisualDCS G22) — so a bucket defined as "past tense with **no** formation tag" over *finite*
+  tokens silently swallows the entire non-indicative past. In
+  [`ZalizniakOcherk_1978/imperfect_switching_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py)
+  the `PERF` bucket (`feat_tense='Past' AND feat_formation IS NULL`, finite filter
+  `feat_person IS NOT NULL`, **no** `feat_mood='Ind'` guard) is **10,15 % non-indicative** —
+  8 726 of 85 955 tokens (Jus 4 067 · Imp 1 700 · Sub 1 317 · Opt 1 065 · Prec 577), mostly
+  augmentless injunctives; the `AOR` bucket is clean (12 054 tokens, 0 non-indicative). **Put
+  `feat_mood='Ind'` in every new finite past-tense bucket.** The published
+  [HK-15 imperfect-switching report](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
+  carries the caveat and its figures are deliberately **not** recomputed — the guarded re-run is
+  [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
+  Do **not** silently re-derive the numbers to "fix" the report.
 - ⚠️ **`Concordance/Usha-PhD-Sampurna.pdf` has a broken text layer** (Sanskrit2003
   font, no ToUnicode map) — text extraction yields garbage; use page rendering +
   vision OCR instead.
