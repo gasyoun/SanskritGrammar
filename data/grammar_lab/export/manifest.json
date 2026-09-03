@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "bundle_version": "1.0.0",
-  "generated_at": "2026-08-22T12:09:31Z",
+  "generated_at": "2026-08-28T15:33:18Z",
   "generator": "scripts/build_grammar_lab.py",
   "published_topic_count": 32,
   "needs_review_count": 1,
@@ -21,7 +21,7 @@
     {
       "id": "topic_vectors",
       "path": "data/grammar_lab/export/topic_vectors.json",
-      "sha256": "e5150fab87e0848bdd133be4d298fac27693c8c8fdc2317733b287103e45ff0f",
+      "sha256": "e210de535fc0c8d3b3d49b467750080c8e4fa772e409cc8ff2810f9f7a31b54b",
       "rights": "aggregate-public-safe"
     },
     {
