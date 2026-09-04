@@ -22,9 +22,12 @@ TAIL_BYTES = 4000
 
 
 def run_gate(name: str, cmd: str, hard: bool, repo: str, timeout: int) -> dict:
+    # shlex.split, not a shell route: the commands come from the committed
+    # workflow, but there is no reason to route them through /bin/sh.
+    import shlex
     proc = subprocess.run(
-        cmd, shell=True, cwd=repo, capture_output=True, text=True,
-        encoding="utf-8", errors="replace", timeout=timeout)
+        shlex.split(cmd), shell=False, cwd=repo, capture_output=True,
+        text=True, encoding="utf-8", errors="replace", timeout=timeout)
     tail = ((proc.stdout or "") + (proc.stderr or ""))[-TAIL_BYTES:]
     return {
         "name": name,

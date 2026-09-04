@@ -43,10 +43,8 @@ MAX_FINDINGS_PER_HUNK = 5
 
 #: Added-line heuristics: (regex, severity, failure_mode, repro).
 #: High precision on purpose - a shadow gate that cries wolf gets ignored.
+#: Scanned against string-stripped code (see _strip_strings).
 HEURISTICS = (
-    (re.compile(r"(?i)\b(api_key|apikey|token|password|secret|passwd)\s*=\s*[\"'][^\"' ]{8,}[\"']"),
-     "P0", "hardcoded credential in source",
-     "introduce KEY = \"...\" literal in an added line"),
     (re.compile(r"\beval\s*\("), "P1", "eval() executes attacker-influenceable strings",
      "call eval(<expr>) on a non-literal"),
     (re.compile(r"\bexec\s*\("), "P1", "exec() executes dynamic code",
@@ -61,16 +59,24 @@ HEURISTICS = (
      "pickle.loads(untrusted_bytes)"),
     (re.compile(r"\byaml\.load\s*\((?![^)]*Loader)"), "P2", "yaml.load without Loader",
      "yaml.load(text) without Loader arg"),
-    (re.compile(r"subprocess\.(run|call|check_call|check_output|Popen)\((?![^)]*timeout)"),
-     "P2", "subprocess without timeout can hang the pipeline",
-     "subprocess.run([...]) without timeout="),
-    (re.compile(r"requests\.(get|post|put|delete|head|patch)\((?![^)]*timeout)"),
-     "P2", "requests call without timeout can hang the caller",
-     "requests.get(url) without timeout="),
     (re.compile(r"\bPath\.home\(\)"), "P3", "Path.home() profile sandboxes lie (org rule)",
      "call Path.home() outside a test"),
     (re.compile(r"\b(TODO|FIXME|XXX)\b"), "P3", "placeholder marker committed",
      "add a TODO/FIXME comment"),
+)
+
+#: Multiline heuristics: the call may span several added lines, so the
+#: timeout check runs over a window of the hunk, not one line.
+WINDOW_LINES = 6
+MULTILINE_HEURISTICS = (
+    (re.compile(r"\bsubprocess\.(run|call|check_call|check_output|Popen)\("),
+     re.compile(r"\btimeout\s*="),
+     "P2", "subprocess without timeout can hang the pipeline",
+     "subprocess.run([...]) without timeout="),
+    (re.compile(r"\brequests\.(get|post|put|delete|head|patch)\("),
+     re.compile(r"\btimeout\s*="),
+     "P2", "requests call without timeout can hang the caller",
+     "requests.get(url) without timeout="),
 )
 
 #: Weight added to a hunk's risk score per heuristic hit; sensitive paths add
@@ -156,7 +162,7 @@ def diff_hunks(base: str, head: str, repo: str, paths: list[str]) -> list[dict]:
         score = SENSITIVE_BONUS if _sensitive_file(h["file"]) else 0
         for pat, _sev, _mode, _rep in HEURISTICS:
             for ln in h["added"]:
-                if pat.search(ln["text"]):
+                if pat.search(_strip_strings(ln["text"])):
                     score += TOKEN_WEIGHT
                     break
         h["score"] = score
@@ -169,15 +175,60 @@ def _sensitive_file(path: str) -> bool:
     return is_sensitive(path)
 
 
+#: Heuristics that must see the RAW line: the defect IS the literal.
+RAW_HEURISTICS = (
+    (re.compile(r"(?i)\b(api_key|apikey|token|password|secret|passwd)\s*=\s*[\"'][^\"' ]{8,}[\"']"),
+     "P0", "hardcoded credential in source",
+     "introduce KEY = \"...\" literal in an added line"),
+)
+
+
+def _strip_strings(text: str) -> str:
+    """Remove quoted string-literal contents: the scanner reviews code, not
+    prose about code (the first live run flagged the detector table's own
+    repro strings). Escape-aware for the two common quote styles."""
+    text = re.sub(r'"(?:\\.|[^"\\])*"', '""', text)
+    text = re.sub(r"'(?:\\.|[^'\\])*'", "''", text)
+    return text
+
+
 def heuristic_findings(hunks: list[dict]) -> list[dict]:
     findings: list[dict] = []
     for h in hunks:
         per_hunk = 0
-        for ln in h["added"]:
-            for pat, sev, mode, repro in HEURISTICS:
+        texts = [ln["text"] for ln in h["added"]]
+        for idx, ln in enumerate(h["added"]):
+            # Pattern-definition lines (re.compile(...)) carry the detector
+            # strings themselves - the scanner must not flag its own table.
+            if "re.compile(" in ln["text"]:
+                continue
+            for pat, sev, mode, repro in RAW_HEURISTICS:
                 if per_hunk >= MAX_FINDINGS_PER_HUNK:
                     break
                 if pat.search(ln["text"]):
+                    findings.append({
+                        "severity": sev, "file": h["file"], "line": ln["line"],
+                        "failure_mode": mode, "repro": repro,
+                        "axis": "standards-heuristic",
+                    })
+                    per_hunk += 1
+            for pat, sev, mode, repro in HEURISTICS:
+                if per_hunk >= MAX_FINDINGS_PER_HUNK:
+                    break
+                if pat.search(_strip_strings(ln["text"])):
+                    findings.append({
+                        "severity": sev, "file": h["file"], "line": ln["line"],
+                        "failure_mode": mode, "repro": repro,
+                        "axis": "standards-heuristic",
+                    })
+                    per_hunk += 1
+            for call_re, sat_re, sev, mode, repro in MULTILINE_HEURISTICS:
+                if per_hunk >= MAX_FINDINGS_PER_HUNK:
+                    break
+                if not call_re.search(ln["text"]):
+                    continue
+                window = _strip_strings(" ".join(texts[idx:idx + WINDOW_LINES]))
+                if not sat_re.search(window):
                     findings.append({
                         "severity": sev, "file": h["file"], "line": ln["line"],
                         "failure_mode": mode, "repro": repro,
