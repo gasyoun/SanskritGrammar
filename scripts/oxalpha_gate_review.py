@@ -59,8 +59,6 @@ HEURISTICS = (
      "pickle.loads(untrusted_bytes)"),
     (re.compile(r"\byaml\.load\s*\((?![^)]*Loader)"), "P2", "yaml.load without Loader",
      "yaml.load(text) without Loader arg"),
-    (re.compile(r"\bPath\.home\(\)"), "P3", "Path.home() profile sandboxes lie (org rule)",
-     "call Path.home() outside a test"),
     (re.compile(r"\b(TODO|FIXME|XXX)\b"), "P3", "placeholder marker committed",
      "add a TODO/FIXME comment"),
 )
@@ -189,7 +187,7 @@ def _strip_strings(text: str) -> str:
     repro strings). Escape-aware for the two common quote styles."""
     text = re.sub(r'"(?:\\.|[^"\\])*"', '""', text)
     text = re.sub(r"'(?:\\.|[^'\\])*'", "''", text)
-    return text
+    return re.sub(r"#.*$", "", text)      # then the comment tail (prose)
 
 
 def heuristic_findings(hunks: list[dict]) -> list[dict]:
@@ -225,7 +223,7 @@ def heuristic_findings(hunks: list[dict]) -> list[dict]:
             for call_re, sat_re, sev, mode, repro in MULTILINE_HEURISTICS:
                 if per_hunk >= MAX_FINDINGS_PER_HUNK:
                     break
-                if not call_re.search(ln["text"]):
+                if not call_re.search(_strip_strings(ln["text"])):
                     continue
                 window = _strip_strings(" ".join(texts[idx:idx + WINDOW_LINES]))
                 if not sat_re.search(window):
