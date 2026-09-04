@@ -63,6 +63,39 @@ class HunkTests(unittest.TestCase):
         hunks.sort(key=lambda h: (-h["score"], h["file"], h["start"]))
         self.assertLessEqual(len(hunks[:R.MAX_HUNKS]), R.MAX_HUNKS)
 
+    def test_pattern_definition_lines_are_not_flagged(self):
+        # Regression (first live gate run, 04-09-2026): the scanner flagged its
+        # own HEURISTICS table (literal eval(/exec(/os.system( strings).
+        hunks = [{"file": "scripts/oxalpha_gate_review.py", "start": 49, "score": 0,
+                  "added": [
+                      {"line": 49,
+                       "text": '    (re.compile(r"\\beval\\s*\\("), "P1", "eval() executes"'},
+                      {"line": 50,
+                       "text": '     "call eval(<expr>) on a non-literal"),'},
+                  ]}]
+        self.assertEqual(R.heuristic_findings(hunks), [])
+
+    def test_multiline_timeout_on_following_line_is_not_flagged(self):
+        # Regression (first live gate run): timeout= sits on a continuation
+        # line; the old single-line regex produced false P2s.
+        hunks = [{"file": "scripts/oxalpha_gate_match.py", "start": 60, "score": 0,
+                  "added": [
+                      {"line": 60, "text": "    proc = subprocess.run("},
+                      {"line": 61, "text": "        [\"git\", \"diff\"],"},
+                      {"line": 62, "text": "        timeout=60)"},
+                  ]}]
+        self.assertEqual(R.heuristic_findings(hunks), [])
+
+    def test_subprocess_without_timeout_anywhere_in_window_is_flagged(self):
+        hunks = [{"file": "scripts/newmod.py", "start": 1, "score": 0,
+                  "added": [
+                      {"line": 1, "text": "    proc = subprocess.run("},
+                      {"line": 2, "text": "        [\"git\", \"diff\"])"},
+                  ]}]
+        findings = R.heuristic_findings(hunks)
+        self.assertTrue(any(f["severity"] == "P2" and "timeout" in f["failure_mode"]
+                            for f in findings))
+
     def test_rubric_mentions_findings_shape(self):
         self.assertIn('"findings"', R.RUBRIC)
         self.assertIn("severity", R.RUBRIC)
