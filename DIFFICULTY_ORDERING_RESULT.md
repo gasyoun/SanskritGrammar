@@ -66,10 +66,11 @@ beginner-register frequency would rank these differently. (Per-POS, derived/caus
 `10.Ā`/`Denom` are mildly promoted, adjectives mildly demoted; effects are small — see
 [`pos_divergence.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/pos_divergence.tsv).)
 
-### B. Textbook introduction order is frequency-agnostic
+### B. Textbook introduction order correlates only weakly with frequency
 
-On the exact-match subset, the lesson at which a word is first introduced is **essentially
-uncorrelated** with its corpus frequency, in all three textbooks:
+On the exact-match subset, the lesson at which a word is first introduced is only **weakly
+correlated** with its corpus frequency in all three textbooks — weak (|τ| ≈ 0.05–0.10), and in
+Kochergina's case statistically significant on the surface join (τ = 0.072, p = 0.0158):
 
 | Textbook | τ(lesson, freq-rank) | type coverage | token coverage |
 |---|--:|--:|--:|
@@ -82,14 +83,15 @@ Textbooks sequence by **grammar topic**, not vocabulary frequency: Bühler lesso
 
 ### C. …yet the textbooks agree with each other far more than with frequency (context, S1)
 
-Bühler↔Kochergina τ = 0.446, Knauer↔Kochergina τ = 0.835 — an order of magnitude above the ≈0.05
-textbook-vs-frequency agreement. There **is** a shared pedagogical sequence; it just isn't the
+Bühler↔Kochergina τ = 0.446, Knauer↔Kochergina τ = 0.835 — an order of magnitude above the weak
+|τ| ≈ 0.05–0.10 textbook-vs-frequency band. There **is** a shared pedagogical sequence; it just isn't the
 frequency sequence.
 
 ## Pedagogical reading (the bottom line)
 
-Corpus frequency is a useful **ordering** signal for content vocabulary (τ=0.89 against expert
-curation) but **not a drop-in learning order**. To become one it needs two corrections the raw
+Corpus frequency is a useful **ordering** signal for content vocabulary (τ=0.89 between the archive's
+two frequency-counting channels; the curated list's expert content is the exclusion decision, not its
+internal order) but **not a drop-in learning order**. To become one it needs two corrections the raw
 number can't supply: **(1) function-word exclusion** — the top ~46 % of high-frequency lemmas are
 grammar words to teach structurally, not to drill; and **(2) genre correction** — DCS frequency is
 epic/kāvya-weighted, so it over-ranks that register's content words. And the textbooks' own strong
@@ -115,11 +117,15 @@ sample.
 | Knauer | 135 / 9.8% / τ=+0.066 | 311 / 22.7% / τ=−0.006 | +12.9 pp |
 | Kochergina | 292 / 8.7% / τ=+0.015 | 651 / 19.3% / τ=+0.023 | +10.6 pp |
 
-Coverage on the nominal content-word subset roughly **doubles-to-triples** and τ stays in
-the same near-zero band (all |τ| ≤ 0.10, all far below (5)'s textbook-vs-textbook 0.45–0.84).
-**Result (4) is robust**: textbook introduction order is frequency-agnostic for inflected
-content-word nominals, not merely an artefact of the surface-join's bias toward
-easily-matched, high-frequency function words. Full numbers:
+Coverage on the nominal content-word subset roughly **doubles-to-triples** and τ stays weak — exact
+per-book values: surface-only join Bühler τ=−0.051, Knauer +0.066, Kochergina +0.015; lemmatised join
+Bühler **+0.101 (p = 0.0011, statistically significant)**, Knauer −0.006, Kochergina +0.023; on the
+part-B surface join Kochergina reaches 0.072 (p = 0.0158, statistically significant). I.e. weak
+(|τ| ≈ 0.05–0.10), in places statistically significant, and always far below (5)'s
+textbook-vs-textbook 0.45–0.84.
+**Result (4) is robust**: for inflected content-word nominals the textbook–frequency correlation
+stays in this weak band (one join significant at p < 0.01), not merely an artefact of the
+surface-join's bias toward easily-matched, high-frequency function words. Full numbers:
 [`data/difficulty_ordering/lemmatised_join_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/lemmatised_join_stats.json) ·
 per-token join: [`lemmatised_join.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/lemmatised_join.tsv).
 
