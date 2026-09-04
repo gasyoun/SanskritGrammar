@@ -66,10 +66,11 @@ beginner-register frequency would rank these differently. (Per-POS, derived/caus
 `10.Ā`/`Denom` are mildly promoted, adjectives mildly demoted; effects are small — see
 [`pos_divergence.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/difficulty_ordering/pos_divergence.tsv).)
 
-### B. Textbook introduction order is frequency-agnostic
+### B. Textbook introduction order correlates only weakly with frequency
 
-On the exact-match subset, the lesson at which a word is first introduced is **essentially
-uncorrelated** with its corpus frequency, in all three textbooks:
+On the exact-match subset, the lesson at which a word is first introduced is only **weakly
+correlated** with its corpus frequency in all three textbooks — weak (|τ| ≈ 0.05–0.10), and in
+Kochergina's case statistically significant on the surface join (τ = 0.072, p = 0.0158):
 
 | Textbook | τ(lesson, freq-rank) | type coverage | token coverage |
 |---|--:|--:|--:|
