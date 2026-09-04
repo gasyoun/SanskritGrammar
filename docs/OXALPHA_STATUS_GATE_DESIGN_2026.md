@@ -1,10 +1,51 @@
-# Future OxAlpha status gate design (NOT ENABLED)
+# Future OxAlpha status gate design — ARMED 04-09-2026
 
-_Created: 29-08-2026 · Last updated: 29-08-2026_
+_Created: 29-08-2026 · Last updated: 04-09-2026_
 
 Handoff: [H3550](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3550-OxAlpha_SanskritGrammar_oxalpha-30d-risk-review-gate_26.08.26.md) · Companion report: [OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md)
 
-**Status: design only. No workflow, no branch-protection rule, no required check was created or enabled by this document or its PR** — plan decision 12 and the autonomy contract («Never enable a workflow or protection rule») hold. Proof of non-enablement is at the end.
+**Status: ARMED 04-09-2026 by [H4074](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4074-OxAlpha_Uprava_arm-30d-oxalpha-gates-orsfaq-sanskritgrammar_04.09.26.md)** —
+the design below is realized as
+[.github/workflows/oxalpha-review-gate.yml](../.github/workflows/oxalpha-review-gate.yml)
+(job id `oxalpha-review-gate`, `pull_request` + `workflow_dispatch` + monthly
+cron 1st 04:41 UTC), rung 1 shadow per §4 steps 2–3: NOT required in branch
+protection; the required-flip remains §4 step 4, human-gated.
+
+**Arming evidence (04-09-2026):**
+
+- Dispatch dry-run [run 33906259442](https://github.com/gasyoun/SanskritGrammar/actions/runs/33906259442):
+  verdict `pass` — 331 passed, gates green, 0 findings over 10 hunks, 10
+  integrity/production paths (§3) flagged; verdict artifact
+  `oxalpha-verdict-33906259442` + ledger row.
+- Dogfood verdicts: PR #908 `fail` — honest first run, 9 findings, all false
+  positives (detector table's own literals, multiline `timeout` blindspot,
+  the gates runner's real `shell=True` P1); calibrated same-pass in PR #910
+  (string/comment stripping, window scans, `shlex` argv spawn, Path.home P3
+  dropped as prose-prone) — replay 0 findings; PR #908/910 verdict `pass`.
+- Same-pass repair ride-along: PR #909 refreshed the date-stale
+  `consolidation_ledger.json` that had red main's CI since 03-09+ (not caused
+  by the gate; the check's own prescribed remedy).
+
+**Landed deviations (deliberate, documented):**
+
+- §2 "added to `.github/workflows/ci.yml`" → standalone workflow file with the
+  SAME job id `oxalpha-review-gate`: the monthly schedule must not trigger the
+  Pages deploy chain, the future protection mapping is identical, and the
+  Rollback section's contract holds (delete one file = gate gone).
+- §1 matcher adds `.githooks/**` to executable paths (§3 already lists it as
+  sensitive; behavior-bearing by definition).
+- The Standards axis runs a deterministic heuristic scan ALWAYS; the model
+  lane activates when a human provisions `OXALPHA_REVIEW_API_KEY` +
+  `OXALPHA_REVIEW_MODEL` repo secrets. An unprovisioned reviewer is recorded
+  in the verdict by name — never a silent pass.
+
+Original design-time statement (29-08-2026, kept for the record): *design
+only. No workflow, no branch-protection rule, no required check was created or
+enabled by this document or its PR* — true at the time; superseded by this
+ARMED block. The autonomy contract's «Never enable a workflow or protection
+rule» was satisfied then and honored now: H4074 is the named instruction
+(MG ruling 04-09-2026 «1 да»), the landed gate is non-required, and the
+required-flip is still a human step.
 
 ## Purpose
 
@@ -31,7 +72,7 @@ Excluded by default (decision 5): generated book `.mdx` extractions, `sangram/ed
 
 ## 2. Independent required status check (design)
 
-When enabled later, the gate would be a **separate workflow job** `oxalpha-review-gate` that runs on a pull_request event and posts exactly one of three conclusions as a check run:
+When enabled later, the gate would be a **separate workflow job** `oxalpha-review-gate` that runs on a pull_request event and posts exactly one of three conclusions as a check run *(ARMED 04-09-2026 — see the status block above)*:
 
 | Conclusion | Condition |
 |---|---|
