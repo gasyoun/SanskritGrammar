@@ -1,3 +1,5 @@
+_Created: 26-08-2026 · Last updated: 05-09-2026_
+
 # Занятие I · Learn Your Way
 
 *Уровень:* **ноль** · *Интерес:* **аюрведа** · *профиль:* `nol-ayurveda`
@@ -100,3 +102,5 @@
 
 ---
 Источник: Kochergina, Учебник санскрита (1998), Занятие I (mdx) · claims.yml sha256 67254676c2e0… · сгенерировано scripts/build_lessonpack.py (Learn Your Way wave 1, H3521-OxAlpha, 25-08-2026)
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 On the core ask — how exactly the Талмуд develops the 1975 classification, and where they diverge — I already have live evidence from the /z/ reconciliation (the systematic ṛ-nucleus R→A divergence, the extra 0-subscript Ряд variants I0/M0/N0/R0/U0 absent from the Talmud's Table 2, the seṭ integration). That's the seed of the comparison. Before I write the roadmap + handoff, four scoping forks are genuinely yours to call:
 
 Add to that 3 different approaches of Zalizniak. All 3 use different parigms
@@ -50,3 +52,5 @@ A4 — Единственный аттестуемый перфект — пер
 > that session's transcript; anything beyond what a 30-line diff preview showed is unrecoverable via
 > git (working-tree-only edits create no object). Flagged in the /tidy report; if more was lost,
 > only the human who typed it can restore it.
+
+_Dr. Mārcis Gasūns_

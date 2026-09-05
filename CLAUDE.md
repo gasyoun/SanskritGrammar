@@ -148,3 +148,5 @@ Default five-role vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`,
 
 Single-context layout (root `CONTEXT.md` + `docs/adr/`, created lazily —
 do not scaffold them upfront). See `docs/agents/domain.md`.
+
+_Dr. Mārcis Gasūns_

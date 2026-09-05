@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — KocherginaUchebnik_1998
 
 All notable changes to this book's digital edition are documented here.
@@ -346,3 +348,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   grid tables — 124 grid tables, the most of any book here — images extracted
   to `Kochergina_unicode_media/`, UTF-8 Devanagari intact).
 - Initial mint: reprint source edition (*Учебник санскрита*, 1998).
+
+_Dr. Mārcis Gasūns_

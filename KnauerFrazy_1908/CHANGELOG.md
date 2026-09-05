@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — KnauerFrazy_1908
 
 All notable changes to this book's digital edition are documented here.
@@ -36,3 +38,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   in this repo.
 - Initial mint: reprint source scan/edition (`.doc`, `.docx`) plus faithful
   `.mdx` extraction (prose, 0 grid tables) via the `/docx-to-md` skill.
+
+_Dr. Mārcis Gasūns_

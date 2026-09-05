@@ -30,3 +30,5 @@ evidence base. The "what's new vs. done" boundary is a judgment call that the au
 
 **Revision history.**
 - 15-07-2026 — created (H986), executing Q4 visa.
+
+_Dr. Mārcis Gasūns_

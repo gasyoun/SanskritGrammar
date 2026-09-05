@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # H3113 (zan-29) -- preverb-conditioned pada extraction + sense spot-check
 
 _Created: 18-08-2026._ Resolves the escalated, unvoted `zan-29` card

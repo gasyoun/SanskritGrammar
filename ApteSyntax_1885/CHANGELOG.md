@@ -1,8 +1,10 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — ApteSyntax_1885
 
 All notable changes to this book's digital edition are documented here.
 Cross-book/infra changes (errata system, site tooling, docs) live in the
-[root CHANGELOG](../CHANGELOG.md).
+[root CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -28,13 +30,13 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   flipped to `yes` across the Apte row. Consumed the 17-07-2026 visa decisions as
   constraints (8 approvals, 1 null — nothing rejected); H3386 (applying that decisions
   file) remains separate.
-- **H3114 - zan-22/zan-10/prilozhenie: cross-claim statistics dashboard + cross-book calibration block (OxAlpha `x-preview-f-free`, 24-08-2026).** New [`scripts/build_cross_claim_dashboard.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_cross_claim_dashboard.py) (derive-don't-store, `--check` drift gate) regenerates [`CLAIMS_STATS_DASHBOARD.md`](CLAIMS_STATS_DASHBOARD.md): cross-registry verdict totals for the four books with claim registers (Knauer honestly absent - no claims.yml), per-instrument quantified rows from the four committed `apte_*_stats.json` instruments, zan-10 (APT-19 acc-vs-gen) and zan-22 (uta position) anchors, full FALSE/OVERSTATED lists. Marker-fenced generated calibration table inserted into the prilozhenie section of [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md), closing the two 19-07-2026 DEFERRED residuals of H1615.
+- **H3114 - zan-22/zan-10/prilozhenie: cross-claim statistics dashboard + cross-book calibration block (OxAlpha `x-preview-f-free`, 24-08-2026).** New [`scripts/build_cross_claim_dashboard.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_cross_claim_dashboard.py) (derive-don't-store, `--check` drift gate) regenerates [`CLAIMS_STATS_DASHBOARD.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_STATS_DASHBOARD.md): cross-registry verdict totals for the four books with claim registers (Knauer honestly absent - no claims.yml), per-instrument quantified rows from the four committed `apte_*_stats.json` instruments, zan-10 (APT-19 acc-vs-gen) and zan-22 (uta position) anchors, full FALSE/OVERSTATED lists. Marker-fenced generated calibration table inserted into the prilozhenie section of [`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md), closing the two 19-07-2026 DEFERRED residuals of H1615.
 
 ## [0.16.0] - 2026-08-19
 
 ### Changed
 - **H3113 — zan-29 (DCS pada extraction for preverb-compound voice rules) resolved by data, not re-vote (Sonnet 5 `claude-sonnet-5`, 18-08-2026).** New [`apte_pada_preverb_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_preverb_stats.py) extends the H1081 root-default voice instrument to 15 preverb-compound lemmas from Apte lessons 29-30, with a passive-form correction over the original instrument. New claim `APT-40` (pada layer, 8/15 rules resolved: 4 TRUE / 4 OVERSTATED); `APT-30` narrowed to the genuinely-untestable sense-trigger residual, backed by a 17-gloss hand spot-check against `SanskritLexicography/RussianTranslation/src/corpus_lexicon.jsonl` ([`apte_pada_preverb_sense_spotcheck.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_preverb_sense_spotcheck.md)). `METODICHKA_APTE_KOMMENTARII_2026.md`'s lessons 29-30 section, summary table, and escalation log rewritten.
-- **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** [`review/EDITORIAL_NOTE_INDEX.tsv`](../review/EDITORIAL_NOTE_INDEX.tsv) rows for `sanskritgrammar-metodichka-apte-v1_17.07.26`: **zan-19 → APPLIED** (footnote H1275 + Elizarenkova 2004 corroboration H1373; index lag closed; named 1960 monograph not supplied = non-blocking Vedic residual only); **zan-22 → DEFERRED** (uta footnote applied; dashboard separate feature under 18-07-2026 consolidation freeze); **prilozhenie → DEFERRED** (cross-book calibration list under same freeze; no consolidated list in-repo). Revision-history row in [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md); prose body unchanged.
+- **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv) rows for `sanskritgrammar-metodichka-apte-v1_17.07.26`: **zan-19 → APPLIED** (footnote H1275 + Elizarenkova 2004 corroboration H1373; index lag closed; named 1960 monograph not supplied = non-blocking Vedic residual only); **zan-22 → DEFERRED** (uta footnote applied; dashboard separate feature under 18-07-2026 consolidation freeze); **prilozhenie → DEFERRED** (cross-book calibration list under same freeze; no consolidated list in-repo). Revision-history row in [`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md); prose body unchanged.
 
 ## [0.15.0] - 2026-07-21
 ### Added
@@ -74,7 +76,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   affect APT-31.
 ### Added
 - **Rights guard for the supplied scan.** `Elizarenkova_2004/` added to
-  [`.gitignore`](../.gitignore) — the 2004 Academia volume is in copyright, so it is
+  [`.gitignore`](https://github.com/gasyoun/SanskritGrammar/blob/main/.gitignore) — the 2004 Academia volume is in copyright, so it is
   consulted locally and cited by printed page, never committed (same policy as the H552
   Zalizniak scan).
 
@@ -82,7 +84,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Changed
 - **Apte-methodichka viza notes brought to final written disposition — all 8 approved notes closed (H1275, Fable 5 `claude-fable-5`).**
   New «Ревизии правок визы» table in
-  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md) records
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md) records
   APPLIED/DEFERRED/ESCALATED per `item_id`. (1) The three «оговорить в сноске» notes
   (zan-03/19/22) now use real `[^n]` Markdown footnotes (decision recorded: the manuscript takes
   true footnotes — the author asked «в сноске» three times, the site build renders GFM footnotes,
@@ -91,7 +93,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   still confined to the formulation of the commented rule; the closing rights paragraph untouched;
   appendix summary rows stay paraphrase (author's structural call). (3) Adversarial re-check of
   the Sherzl cross-references against
-  [`government_lexicon.jsonl`](../BuhlerLeitfaden_1923/government_class_index/government_lexicon.jsonl)
+  [`government_lexicon.jsonl`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/government_class_index/government_lexicon.jsonl)
   caught and fixed three H1205 citation defects: krudh «acc.» (not in the lexicon — dat./gen./loc.
   only), ruc «ТОЛЬКО» (an example-only instr. record exists, p. 121), muc's missing dat. 160
   (→acc.) + the preverb gloss («loc./acc./dat.» → loc.-example replaceable by dat.). (4) Registry
@@ -131,9 +133,9 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.10.0] - 2026-07-17
 ### Added
 - **Methodichka viza applier (H1090 follow-on, Opus 4.8 `claude-opus-4-8[1m]`).** New self-tested
-  [`apply_apte_methodichka_visa.py`](apply_apte_methodichka_visa.py) folds an MG viza
+  [`apply_apte_methodichka_visa.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apply_apte_methodichka_visa.py) folds an MG viza
   `decisions.json` (from the 9-card sheet `sanskritgrammar-metodichka-apte-v1_17.07.26`) into
-  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md): a `## Статус визы
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md): a `## Статус визы
   автора` summary table + per-section markers (approve → `_✅ Виза MG: одобрено._`; reject/defer →
   a `>` blockquote flag for a human rewrite; unvoted → `_⏳ Виза: не голосовано._`). Dry-run by
   default, `--apply` writes; **idempotent** (re-runnable after a re-vote — verified by identical
@@ -146,10 +148,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **Methodichka «Учащемуся» takeaways in the reading-site overlay (H1095, Opus 4.8
   `claude-opus-4-8[1m]`).** Closed metadoc backlog #3: each of the 10 flagged claims (8 OVERSTATED ·
   1 FALSE · 1 UNTESTABLE) now carries a `methodichka` learner-takeaway field in
-  [`claims.yml`](claims.yml), threaded through [`build_claims.py`](../scripts/build_claims.py) into
+  [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml), threaded through [`build_claims.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_claims.py) into
   `claims.json` + a new «Методичка — учащемуся» section of
-  [`CLAIMS_VERIFIED.md`](CLAIMS_VERIFIED.md), and rendered as a green «методичка» block by
-  [`ApteClaims.jsx`](../src/components/ApteClaims.jsx). `claims.yml` is the single source, so the
+  [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md), and rendered as a green «методичка» block by
+  [`ApteClaims.jsx`](https://github.com/gasyoun/SanskritGrammar/blob/main/src/components/ApteClaims.jsx). `claims.yml` is the single source, so the
   print methodichka's per-lesson «Учащемуся» advice and the web overlay can no longer diverge. JSX
   compiles clean (Babel/preset-react); no verdicts or numbers changed.
 
@@ -157,7 +159,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - **Print methodichka — раздел I commentary (H1090, Opus 4.8 `claude-opus-4-8[1m]`).** A
   print-first companion consuming the 39-claim register, mirroring the Kochergina methodichka:
-  [`METODICHKA_APTE_KOMMENTARII_2026.md`](METODICHKA_APTE_KOMMENTARII_2026.md) (+ sibling
+  [`METODICHKA_APTE_KOMMENTARII_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md) (+ sibling
   `.meta.md`). Per-lesson notes in the **У Апте / Что показывают корпус и Уитни / Учащемуся**
   format over all 10 flagged claims (8 OVERSTATED · 1 FALSE · 1 UNTESTABLE), plus a strengths
   appendix. Pedagogical thesis: Apte is reliable on *meaning* (particle lexicon), overreaches on
@@ -201,7 +203,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **Lessons 26–30 harvested and drained (H1081, Opus 4.8 `claude-opus-4-8[1m]`).** Closes the
   coverage gap carried since the seed — all 30 lessons now harvested (backlog 79 → **115
   candidates**). Register **24 → 30 verified** (APT-25..30). New self-tested
-  [`apte_pada_stats.py`](apte_pada_stats.py) → [`apte_pada_stats.json`](apte_pada_stats.json)
+  [`apte_pada_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.py) → [`apte_pada_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_pada_stats.json)
   recovers Parasmaipada/Ātmanepada from finite present endings — necessary because **DCS
   `feat_voice` tags only `Pass`, not the P/Ā distinction** — method-validated (as/bhū → P
   100%/99.7%, labh/īś → Ā 97.6%/100%).
@@ -219,12 +221,12 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.4.0] - 2026-07-16
 ### Added
 - **Classical-corpus government instrument (H1062, Opus 4.8 `claude-opus-4-8[1m]`).** New
-  self-tested [`apte_classical_government_stats.py`](apte_classical_government_stats.py) closes
+  self-tested [`apte_classical_government_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.py) closes
   the case-government gap the treebank drain left open: a windowed-cooccurrence + baseline-lift
   proxy over the FULL 5.69M-token corpus (`feat_case` on 70.6%, escaping the Vedic-skewed 3.9%
   dependency slice), method-validated by positive controls (bhī/jugups reproduce their ablative)
   and a negative control (dṛś shows no spurious government, dative lift 0.23). Output in
-  [`apte_classical_government_stats.json`](apte_classical_government_stats.json).
+  [`apte_classical_government_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_classical_government_stats.json).
 ### Changed
 - **Both former UNTESTABLE government rows resolved; one verdict corrected.** Register stays 24
   verified but the tally moves to **17 TRUE · 7 OVERSTATED · 0 UNTESTABLE**:
@@ -239,7 +241,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.3.0] - 2026-07-16
 ### Added
 - **Treebank drain of the claim backlog (H1059, Opus 4.8 `claude-opus-4-8[1m]`).** New
-  [`apte_treebank_stats.py`](apte_treebank_stats.py) (self-tested) measures the syntax backlog
+  [`apte_treebank_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.py) (self-tested) measures the syntax backlog
   against DCS's own head/deprel/feat_case dependency slice (223,751 tokens / 29,433 fully-parsed
   sentences). Register **8 → 24 verified** (APT-9..APT-24): **16 TRUE · 6 OVERSTATED · 2
   UNTESTABLE**. Honest split: particle-position and agreement claims drain robustly (subject–verb
@@ -250,16 +252,16 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   genitive **OVERSTATED** (a competing case leads in the corpus), anger/love → dative/locative
   **UNTESTABLE** (<10 case-tagged arguments in the Vedic-skewed slice). Motion-goal measurement
   quantifies the APT-5 flag: accusative goal 85.91% vs non-accusative 14.09% (n=873). Output in
-  [`apte_treebank_stats.json`](apte_treebank_stats.json).
+  [`apte_treebank_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/apte_treebank_stats.json).
 
 ## [0.2.0] - 2026-07-16
 ### Added
 - **Claim-verification register seed (H1055, Opus 4.8 `claude-opus-4-8[1m]`).** Ported the
   two-axis (fact × pedagogy) claim pipeline to Apte — the fifth book after Kochergina, Bühler
   and Zaliznyak ×2, and the **first syntax manual** in the register. New
-  [`claims.yml`](claims.yml) (APT-1..APT-8: **7 TRUE · 1 OVERSTATED**) → generated
-  [`CLAIMS_VERIFIED.md`](CLAIMS_VERIFIED.md) + `claims.json` via `npm run claims`; new
-  [`claims_harvest.yml`](claims_harvest.yml) — a 79-candidate backlog (lessons 1–25 from a
+  [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml) (APT-1..APT-8: **7 TRUE · 1 OVERSTATED**) → generated
+  [`CLAIMS_VERIFIED.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CLAIMS_VERIFIED.md) + `claims.json` via `npm run claims`; new
+  [`claims_harvest.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims_harvest.yml) — a 79-candidate backlog (lessons 1–25 from a
   5-reader parallel harvest; lessons 26–30 logged as a coverage gap). Genre-checked first: Apte
   is syntax-weighted, so most claims are case-government/agreement rules testable against the
   DCS treebank layer, not surface frequency — flagged honestly, not forced. Three seed claims
@@ -271,3 +273,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - Initial mint: reprint source scan/edition (`.doc`, `.docx`) plus faithful `.mdx`
   extraction (8 grid tables preserved) via the `/docx-to-md` skill.
+
+_Dr. Mārcis Gasūns_

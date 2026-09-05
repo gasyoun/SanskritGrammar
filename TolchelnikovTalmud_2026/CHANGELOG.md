@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — TolchelnikovTalmud_2026
 
 All notable changes to this book's digital edition are documented here.
@@ -152,3 +154,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - `IMPROVEMENT_PLAN.md` — interactive-companion planning note.
 - Initial mint: `.mdx` for the dissertation text plus a separate `-uroky`
   (lessons) edition, converted via the `/docx-to-md` skill.
+
+_Dr. Mārcis Gasūns_

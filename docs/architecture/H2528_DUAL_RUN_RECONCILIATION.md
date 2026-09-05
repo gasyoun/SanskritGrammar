@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # H2528 Slice A dual-run reconciliation
 
 _Adjudicated 09-08-2026 by Codex Sol (`gpt-5.6-sol`)._
@@ -70,3 +72,5 @@ no floating `v9` ref. Both downstream jobs were skipped, proving fail-closed
 ordering. Repair pins the official v9.0.0 action commit
 `c771a70e6277c0a99b617c7a806ffedaca235ff9`; this failed run is diagnostic, not
 the deliberately-red acceptance control.
+
+_Dr. Mārcis Gasūns_

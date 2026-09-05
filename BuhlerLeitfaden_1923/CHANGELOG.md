@@ -1,8 +1,10 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — BuhlerLeitfaden_1923
 
 All notable changes to this book's digital edition are documented here.
 Cross-book/infra changes (errata system, site tooling, docs) live in the
-[root CHANGELOG](../CHANGELOG.md).
+[root CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -72,7 +74,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   edition states) against the sheet's own «Abl. в соединении с предлогами и наречиями»
   list (pp. 216–221) — ā appears there, and in no accusative-governing list anywhere
   in the sheet. Independent 19th-century corroboration, added to
-  [`claims.yml`](claims.yml) HB-10's note; `CLAIMS_VERIFIED.md` regenerated.
+  [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml) HB-10's note; `CLAIMS_VERIFIED.md` regenerated.
 
 ## [0.3.6] - 2026-07-17
 ### Added
@@ -126,3 +128,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   intact).
 - Initial mint: reprint source (Stockholm, 1923; electronic edition v2.0 by
   N. P. Likhushina).
+
+_Dr. Mārcis Gasūns_

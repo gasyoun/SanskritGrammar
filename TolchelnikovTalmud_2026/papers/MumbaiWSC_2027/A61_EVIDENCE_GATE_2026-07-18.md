@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # A61 manuscript, source, and venue gate
 
 **Date:** 18 July 2026
@@ -100,3 +102,5 @@ The csl lane completed the following reconciliation in `a61-history-v1.1`
 - Add page locators before retaining specific Jachertz-derived historical
   assertions.
 - Author-review participant roles, byline/affiliation, and all testimony.
+
+_Dr. Mārcis Gasūns_

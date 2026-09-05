@@ -1,8 +1,10 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — GasunsDhatu_2014
 
 All notable changes to this book's digital edition are documented here.
 Cross-book/infra changes (errata system, site tooling, docs) live in the
-[root CHANGELOG](../CHANGELOG.md).
+[root CHANGELOG](https://github.com/gasyoun/SanskritGrammar/blob/main/CHANGELOG.md).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -26,7 +28,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   назад» → «в 2001 г.» (EWA). Числа данных, цитаты и сноски не тронуты (проверено
   сверкой мультимножеств чисел и якорей сносок). Каждый правленый абзац — жёлтая заливка +
   комментарий «Было:» в перегенерированном
-  [GasunsDhatu_2026_RWS_review.docx](revision-2026/GasunsDhatu_2026_RWS_review.docx)
+  [GasunsDhatu_2026_RWS_review.docx](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GasunsDhatu_2026_RWS_review.docx)
   (290 подсвеченных абзацев, вкл. 79 прежних H385) — проверка автора откатывает любую
   правку вручную. Рабочая дата заморозки рукописи — **31-10-2026** — внесена в
   BOOK_PLAN §7 (Фазы 3–4) и чеклист «Нестор-Истории» (§1/§3/§4/§5).
@@ -181,10 +183,10 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   (`k1_slp1` ↔ `root_slp1`, устойчив к диакритике/нумерации омонимов); совокупные числа
   **не изменились** (704 различных, 482 аттестованы, 294 ядро / 101 хвост — SLP1 даёт тот же
   результат, но принципиальнее). Добавлены: колонка `dcs_periods` в
-  [`mw_genuine_roots.tsv`](revision-2026/mw_genuine_roots.tsv), **распределение по периодам
+  [`mw_genuine_roots.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv), **распределение по периодам
   аттестации** (RV 361 · AV 325 · V 409 · B 424 · S 336 · E 424 · C 437) на странице
   «Приложения издания 2026», и сводка покрытия
-  [`mw_genuine_roots_enrich_provenance.json`](revision-2026/mw_genuine_roots_enrich_provenance.json)
+  [`mw_genuine_roots_enrich_provenance.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_enrich_provenance.json)
   (покрытие · периоды · топ-20 по частоте). Это согласование параллельного второго прохода
   [0.8.1] с независимой SLP1-реализацией того же H1006-задела (виза автора: reconcile, а не дубль).
 
@@ -205,8 +207,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - **Часть II завершена вчерне — Глава 7 «Грамматический указатель корней по модели Зализняка»
   (черновик)**, прикладная кульминация. Новая страница
-  [`07_glava7_ukazatel-zaliznyaka.mdx`](07_glava7_ukazatel-zaliznyaka.mdx) + план
-  [`revision-2026/CH7_PLAN_zaliznyak_index.md`](revision-2026/CH7_PLAN_zaliznyak_index.md).
+  [`07_glava7_ukazatel-zaliznyaka.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx) + план
+  [`revision-2026/CH7_PLAN_zaliznyak_index.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH7_PLAN_zaliznyak_index.md).
   Реализует «дальнейшее направление работы» Заключения 2014 г.: компактный код по модели Зализняка
   (`ряд · seṭ/aniṭ · полноизменяемость · схема ударения`) на **930 корнях кросс-уока** (жёсткая
   рамка). Проверенные скриптом оси: **18 рядов** чередования (A1 153, U1 140 …; уверенность
@@ -220,8 +222,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.11.0] - 2026-07-16
 ### Added
 - **Часть II, Глава 6 «Корпусная аттестация корней» (черновик)** — третья новая глава; замыкает
-  арку трёх свидетелей (Гл. 4). Новая страница [`06_glava6_korpusnaya-attestaciya.mdx`](06_glava6_korpusnaya-attestaciya.mdx)
-  + план [`revision-2026/CH6_PLAN_corpus_attestation.md`](revision-2026/CH6_PLAN_corpus_attestation.md).
+  арку трёх свидетелей (Гл. 4). Новая страница [`06_glava6_korpusnaya-attestaciya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/06_glava6_korpusnaya-attestaciya.mdx)
+  + план [`revision-2026/CH6_PLAN_corpus_attestation.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH6_PLAN_corpus_attestation.md).
   Тезис: корпус — свидетель, который *подтверждает* ~2/3 словника **и** честно очерчивает свой
   потолок. Канонические числа (MWS/root_crosswalk): **590/935 (63,1 %)** аттестованы в DCS, **550
   (58,8 %)** «готовое ядро» (MW+DCS), **259** словарно-грамматических корней корпусно отсутствуют;
@@ -237,8 +239,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.10.0] - 2026-07-16
 ### Added
 - **Часть II, Глава 5 «Дхатупатха и паниниевская традиция как данные» (черновик)** — вторая новая
-  глава. Новая страница [`05_glava5_dhatupatha-panini.mdx`](05_glava5_dhatupatha-panini.mdx) + план
-  [`revision-2026/CH5_PLAN_dhatupatha_panini.md`](revision-2026/CH5_PLAN_dhatupatha_panini.md).
+  глава. Новая страница [`05_glava5_dhatupatha-panini.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/05_glava5_dhatupatha-panini.mdx) + план
+  [`revision-2026/CH5_PLAN_dhatupatha_panini.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH5_PLAN_dhatupatha_panini.md).
   Тезис: туземная традиция впервые становится **машиночитаемыми данными**. Проверенные скриптом
   опоры: цифровая дхатупатха vidyut (**2 259 дхату**, адресация `gaṇa.sūtra`) + резолвер сутр
   Аштадхьяи. **Аудит пальсуле-центризма** конкорданса (отзыв С. А. Крылова): `añc` — 5 дхату
@@ -253,8 +255,8 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - **Часть II начата — Глава 4 «Кросс-уок и омонимия корней» (черновик)** — первая новая глава
   «Корня в цифровую эпоху», написана из готовых данных 2026 г. (не rework). Новая страница
-  [`04_glava4_kross-uok-omonimiya.mdx`](04_glava4_kross-uok-omonimiya.mdx) + план
-  [`revision-2026/CH4_PLAN_crosswalk_homonymy.md`](revision-2026/CH4_PLAN_crosswalk_homonymy.md).
+  [`04_glava4_kross-uok-omonimiya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/04_glava4_kross-uok-omonimiya.mdx) + план
+  [`revision-2026/CH4_PLAN_crosswalk_homonymy.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH4_PLAN_crosswalk_homonymy.md).
   Тезис: корень проверяют **три свидетеля** — грамматика, словарь, корпус. Проверенные скриптом
   числа: **497/930 (53,4 %)** корней Уитни имеют и MW-статью, и корпусную аттестацию; класс
   презенса согласуется **376 : 26** (конкорданс MW↔Уитни, актив MWS/SANGRAM — цитируется, не
@@ -285,9 +287,9 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   (`genuineroot`) против **1 363 вторичных** (`root`, — деноминативы, каузативные основы,
   класс-0) из 2 113 статей; сумма совпадает с §1.2/§2.3. На страницу «Приложения издания 2026»
   добавлена секция с выжимкой (★-помета) и ссылками; сгенерированы полный размеченный
-  [`mw_genuine_roots.tsv`](revision-2026/mw_genuine_roots.tsv) (2 113 строк, флаг `genuine`),
-  печатный компактный список 750 подлинных [`mw_genuine_roots_list.md`](revision-2026/mw_genuine_roots_list.md)
-  и воспроизводимый генератор [`mw_genuine_roots.py`](revision-2026/mw_genuine_roots.py).
+  [`mw_genuine_roots.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv) (2 113 строк, флаг `genuine`),
+  печатный компактный список 750 подлинных [`mw_genuine_roots_list.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md)
+  и воспроизводимый генератор [`mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py).
   ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.7.0] - 2026-07-16
@@ -324,7 +326,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
     сводный `root_oracle` (3 036 корней, 8 словарей): 436 корней с согласием ≥4 источников
     против 1 847 в единственном; первичность как степень межисточникового согласия.
   Абзацы-вставки ждут авторской визы пакетом. `ERRATA.md` перегенерирован (82 записи, 18 fixed);
-  карта — [`revision-2026/CH1_DATA_MAP.md`](revision-2026/CH1_DATA_MAP.md). Осталось по Гл. 1:
+  карта — [`revision-2026/CH1_DATA_MAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_DATA_MAP.md). Осталось по Гл. 1:
   §1.1/§1.4 — человек-редактор (стиль).
   ([H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
@@ -336,7 +338,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   *veṭ* : 176 *aniṭ*) и полноизменяемость (429 дефективных / 424 полноизменяемых / 22
   колеблющихся); «дефективность» традиции стала исчисляемым параметром реестра (сноска `[^ed1d]`,
   источник — [`TolchelnikovTalmud_2026/…/morphoclass_crosswalk_1975_2014_2026.csv`](TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv), числа проверены скриптом).
-  Карта данных для дальнейших проходов — [`revision-2026/CH1_DATA_MAP.md`](revision-2026/CH1_DATA_MAP.md).
+  Карта данных для дальнейших проходов — [`revision-2026/CH1_DATA_MAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_DATA_MAP.md).
 ### Fixed
 - **Снят дубль-абзац в §1.4** (о синтетическом подходе Панини/Яске стоял дважды подряд —
   дефект конверсии 2014 г.). `ERRATA.md` перегенерирован (79 записей, 15 fixed).
@@ -356,7 +358,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   оглавление обновлены; Выводы обеих глав перераспределены по вопросам; провенанс — сноски
   `[^edrecomp1]`/`[^edrecomp2]`/`[^ed1d]`. `errata.yml`: §-якоря обновлены + запись о
   рекомпоновке; `ERRATA.md` перегенерирован (77 записей, 13 fixed). План:
-  [`revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md`](revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md).
+  [`revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md).
   Прозаический rework новой Гл. 1 по методу пилота Гл. 2 — следующий шаг.
   ([H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
@@ -374,18 +376,18 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   сноска о типологической сопоставимости индо-арабского понятия корня (устное сообщение
   А. А. Зализняка, `[^edp10b]`). `ERRATA.md` перегенерирован (76 записей, 12 fixed).
 ### Added
-- **Q4 закрыт запиской [`revision-2026/A39_SANGRAM_SCOPE_MEMO.md`](revision-2026/A39_SANGRAM_SCOPE_MEMO.md)**
+- **Q4 закрыт запиской [`revision-2026/A39_SANGRAM_SCOPE_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/A39_SANGRAM_SCOPE_MEMO.md)**
   (+ `.meta.md`): решение автора — рефрейм статьи-компаньона A39 через SANGRAM (что уже
   сделано и цитируется: SG-MO-013, SG-MO-017, два crosswalk-CSV, метод C3, типология A60;
   vs. собственный вклад A39 — покорневой трёхсторонний синтез + книжная рамка).
-- **Старт Фазы 1:** памятка [`revision-2026/CH1_REWORK_MEMO.md`](revision-2026/CH1_REWORK_MEMO.md)
+- **Старт Фазы 1:** памятка [`revision-2026/CH1_REWORK_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_REWORK_MEMO.md)
   — карта переработки Гл. 1, узлы слияния 2026-данных, развилка заглавия (@DECIDE).
   ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.2.2] - 2026-07-13
 ### Changed
 - **Титульная формула 2-го издания решена: «2-е изд., перераб. и доп.»** (MG, 13-07-2026).
-  Закрывает развилку §9 п.3 плана ([`revision-2026/BOOK_PLAN.md`](revision-2026/BOOK_PLAN.md))
+  Закрывает развилку §9 п.3 плана ([`revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md))
   против «изд. 2-е, существенно расширенное»; совпадает с Р9 и заглавием M03 в реестре;
   финальная сверка с серийными нормами «Нестор-Истории» — при вёрстке (Фаза 4). Заодно
   приоритет M03 поднят до «активно сейчас»: Фаза 0 (визовый пакет) — единственный
@@ -396,7 +398,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Changed
 - **Издательство M03 решено: «Нестор-История»** (MG, 13-07-2026). Закрывает открытый
   `@DECIDE` §6 плана 2-го издания
-  ([`revision-2026/BOOK_PLAN.md`](revision-2026/BOOK_PLAN.md)): ЯСК и «Наука» сняты с
+  ([`revision-2026/BOOK_PLAN.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/BOOK_PLAN.md)): ЯСК и «Наука» сняты с
   рассмотрения, гриф ИЯз РАН уже был закрыт 10-07-2026. Р6/§6/§7 Фаза 3/§9 обновлены;
   к Фазе 3 остается только операционное (заявка + договор + рецензенты).
   ([H847](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H847-Opus_SanskritGrammar_m03-publisher-nestor-istoria-decided_13.07.26.md), Opus 4.8 `claude-opus-4-8`.)
@@ -404,7 +406,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ## [0.2.0] - 2026-07-08
 ### Added
 - **2026 print-edition execution (H328).** Executed the
-  [`revision-2026/IMPROVEMENT_ROADMAP.md`](revision-2026/IMPROVEMENT_ROADMAP.md)
+  [`revision-2026/IMPROVEMENT_ROADMAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/IMPROVEMENT_ROADMAP.md)
   per the four author decisions of 07-07-2026: положения re-composed
   (П1/П4 redrafted, П7/П9/П10 demoted to illustrative paragraphs with
   editorial footnotes, П8→П7); Заключение gained a per-положение
@@ -449,3 +451,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - RWS style report (`feat(gasuns-dhatu): add RWS style report`).
 - Initial mint: dissertation + article appendices, converted to `.mdx` via
   the `/docx-to-md` skill.
+
+_Dr. Mārcis Gasūns_

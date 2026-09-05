@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — ZalizniakMorphology_1975
 
 All notable changes to this book's digital edition are documented here.
@@ -39,3 +41,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Added
 - Initial mint: English translation (I. Tolchelnikov, ed. M. Ishimbaev) of Zaliznyak's 1975
   morphophonological root-classification paper, `.docx` + `.mdx`.
+
+_Dr. Mārcis Gasūns_

@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — ZalizniakOcherk_1978
 
 All notable changes to this book's digital edition are documented here.
@@ -111,3 +113,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - Initial mint: reprint source scan/edition (`.doc`, `.docx`) plus faithful
   `.mdx` extraction (aligned edition, 55 grid tables) via the `/docx-to-md`
   skill.
+
+_Dr. Mārcis Gasūns_
