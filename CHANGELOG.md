@@ -398,7 +398,7 @@ changelog tags as `vX.Y.Z`.
 
 ### Fixed
 
-- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`[§3.3](#33-...)` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
+- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`§3.3` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
 
 ## [0.118.0] - 2026-08-04
 

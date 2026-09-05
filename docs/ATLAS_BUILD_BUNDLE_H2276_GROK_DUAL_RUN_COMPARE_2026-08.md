@@ -62,11 +62,11 @@ python scripts/atlas_validate_bundle.py <tmp>/atlas.bundle.json
 
 **Fix B — `parse_anchors` markdown-linked § refs**
 
-- Live MEGABOOK §9 table cells: **26 linked** (`[§N.M](#slug)`), **0 bare**,
+- Live MEGABOOK §9 table cells: **26 linked** (`§N.M`), **0 bare**,
   **0 other** forms.
 - `parse_anchors` on live MEGABOOK: 83 triples, 16 unique section tokens, all
   matching `^[\d.]+$` (no `[`/`]`/`#` residue).
-- The `_bare_section` helper correctly strips both `[§N.M](#…)` and bare `§N.M`.
+- The `_bare_section` helper correctly strips both `§N.M` and bare `§N.M`.
 
 ## Comparison class (dual-run-salvage scheme)
 

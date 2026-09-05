@@ -28,8 +28,8 @@ back to a stable source instead of maintaining its own copy.
 
 One directory per source work, named `<Author><ShortTitle>_<year>`. Ten source
 works are currently present (plus two generated cross-reference folders,
-[Concordance](#concordance--shared-exercise-sentences-bühler--knauer--kochergina)
-and [SubjectConcordance](#subject-concordance--what-each-grammar-covers-whitneys-spine),
+[Concordance](#concordance-shared-exercise-sentences-bühler-knauer-kochergina)
+and [SubjectConcordance](#subject-concordance-what-each-grammar-covers-whitneys-spine),
 covered below):
 
 | Directory | Work | Format present | Grid tables |
