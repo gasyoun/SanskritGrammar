@@ -4,7 +4,8 @@ Pre-registered design: Uprava/QUESTIONS_LOG.md T2607-26 (frozen 17-07-2026 BEFOR
 script first ran). Deterministic; snapshot = dcs_full.sqlite (dcs-conllu 04e0778), path
 convention as in och_voice_stats.py; genre slices reuse period_style_gradient.PERIOD_MAP.
 
-Categories (validated against the snapshot before prereg):
+Categories (validated against the snapshot before prereg; mood guard added by H3966):
+  every bucket additionally requires feat_mood='Ind' (MOOD_GUARD_SQL)
   IMPF = feat_tense='Impf'
   PERF = feat_tense='Past' AND feat_formation IS NULL   (top forms: uvāca, babhūva, jagāma)
   AOR  = feat_tense='Past' AND feat_formation IN (root,them,s,is,red,sa,sis)
@@ -15,18 +16,27 @@ shuffle (1000 permutations, seed 20260717); (c) content-lemma Jaccard turnover a
 insertions inside perfect chains (>=4 of 6 finite-past neighbours PERF) vs background
 PERF points of the same chains, windows of +/-5 sentences.
 
-H3878 CAVEAT (02-09-2026, MG ruling on T2607-26 -- annotate now, re-run under H3966).
-DO NOT re-run this script as-is and present the output as a correction. The finiteness
-filter below is `feat_person IS NOT NULL` with NO `feat_mood='Ind'` guard, and H3878
-finding G22 established that DCS never assigns `Formation` outside the indicative
-(17,440 occurrences corpus-wide, not one of them non-indicative). Every finite
-non-indicative past token therefore lands in PERF by construction: 8,726 of 85,955
-(10.15 %) -- Jus 4,067, Imp 1,700, Sub 1,317, Opt 1,065, Prec 577. The AOR bucket is
-clean (12,054, non-indicative 0) for the same reason. The published v0.48.0 tables stand
-with that caveat (see IMPERFECT_SWITCHING_HK15_REPORT.md, section "Оговорка H3878");
-the guarded re-run and the corrected report are H3966's job, not a drive-by edit here.
+H3966 MOOD GUARD (06-09-2026) -- the defect below is FIXED; this text is the record.
+
+CAT_SQL now carries `feat_mood='Ind'` on every branch (MOOD_GUARD_SQL). Before the guard,
+the finiteness filter was `feat_person IS NOT NULL` alone, and H3878 finding G22 established
+that DCS never assigns `Formation` outside the indicative (17,440 occurrences corpus-wide,
+not one of them non-indicative). Every finite non-indicative past token therefore landed in
+PERF by construction: 8,726 of 85,955 (10.15 %) -- Jus 4,067, Imp 1,700, Sub 1,317, Opt 1,065,
+Prec 577. The IMPF (46,695) and AOR (12,054) buckets were already 100 % indicative and are
+unchanged by the guard; only PERF loses tokens (85,955 -> 77,229).
+
+The unguarded v0.48.0 numbers are NOT retracted and NOT silently renumbered -- that would
+destroy the pre-registration. They stay in IMPERFECT_SWITCHING_HK15_REPORT.md (marked
+superseded) beside imperfect_switching_stats.json; this script now writes the guarded run to
+imperfect_switching_stats_v049.json, and IMPERFECT_SWITCHING_HK15_REPORT_V049.md carries the
+before/after delta on every headline number.
+
+Regression guard: tests/test_imperfect_switching_mood_guard.py fails if MOOD_GUARD_SQL ever
+leaves CAT_SQL, and assert_mood_guard() below refuses to run the study without it.
 
 Fable 5 (claude-fable-5), 17-07-2026, per MG's authorization to run the Opus-tier row.
+Mood guard + v0.49 re-run: Claude Code Opus 5 (claude-opus-5[1m]), 06-09-2026, H3966.
 """
 
 import json
@@ -42,7 +52,9 @@ from period_style_gradient import PERIOD_MAP  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[1]
 DCS_SQLITE = REPO.parent / "VisualDCS" / "src" / "DCS-data-2026" / "dcs_full.sqlite"
-OUT = Path(__file__).resolve().parent / "imperfect_switching_stats.json"
+OUT = Path(__file__).resolve().parent / "imperfect_switching_stats_v049.json"
+# v0.48.0, mood-unguarded, kept verbatim as the pre-registration record -- never overwritten:
+LEGACY_OUT = Path(__file__).resolve().parent / "imperfect_switching_stats.json"
 
 SEED = 20260717
 N_PERM = 1000
@@ -52,13 +64,31 @@ CHAIN_MIN_PERF = 4
 CONTENT_UPOS = ("NOUN", "VERB", "PROPN", "ADJ")
 AOR_FORMATIONS = ("root", "them", "s", "is", "red", "sa", "sis")
 
+MOOD_INDICATIVE = "Ind"
+# H3966: DCS never tags Formation outside the indicative (H3878 G22), so without this
+# guard every finite non-indicative past token falls into PERF by construction. Do not
+# remove -- assert_mood_guard() and tests/test_imperfect_switching_mood_guard.py both
+# fail if it goes.
+MOOD_GUARD_SQL = f"feat_mood={MOOD_INDICATIVE!r}"
+
 CAT_SQL = f"""
 CASE
-  WHEN feat_tense='Impf' THEN 'IMPF'
-  WHEN feat_tense='Past' AND feat_formation IS NULL THEN 'PERF'
-  WHEN feat_tense='Past' AND feat_formation IN {AOR_FORMATIONS!r} THEN 'AOR'
+  WHEN {MOOD_GUARD_SQL} AND feat_tense='Impf' THEN 'IMPF'
+  WHEN {MOOD_GUARD_SQL} AND feat_tense='Past' AND feat_formation IS NULL THEN 'PERF'
+  WHEN {MOOD_GUARD_SQL} AND feat_tense='Past' AND feat_formation IN {AOR_FORMATIONS!r} THEN 'AOR'
 END
 """
+
+
+def assert_mood_guard():
+    """Refuse to compute the study if the H3966 mood guard left CAT_SQL."""
+    branches = CAT_SQL.split('WHEN')[1:]
+    if len(branches) != 3 or any(MOOD_GUARD_SQL not in b for b in branches):
+        raise SystemExit(
+            "H3966 REFUSAL: CAT_SQL lost the feat_mood='Ind' guard on one or more "
+            "branches. Without it the PERF bucket absorbs 8,726 finite non-indicative "
+            "past tokens (H3878 G22). Restore MOOD_GUARD_SQL before running."
+        )
 
 
 def load(db):
@@ -197,14 +227,52 @@ def perm_diff_p(a_vals, b_vals, rng):
     return obs, ge / N_PERM
 
 
+def discarded_by_mood_guard(db):
+    """Tokens the H3966 guard removes, per bucket and mood - the guard's own evidence."""
+    unguarded = f"""
+    CASE
+      WHEN feat_tense='Impf' THEN 'IMPF'
+      WHEN feat_tense='Past' AND feat_formation IS NULL THEN 'PERF'
+      WHEN feat_tense='Past' AND feat_formation IN {AOR_FORMATIONS!r} THEN 'AOR'
+    END
+    """
+    q = f"""
+    SELECT {unguarded} AS cat, COALESCE(feat_mood,'<NULL>') AS mood, COUNT(*)
+    FROM token
+    WHERE feat_person IS NOT NULL AND ({unguarded}) IS NOT NULL
+    GROUP BY cat, mood
+    """
+    kept, dropped = defaultdict(int), defaultdict(dict)
+    for cat, mood, n in db.cursor().execute(q):
+        if mood == MOOD_INDICATIVE:
+            kept[cat] += n
+        else:
+            dropped[cat][mood] = n
+    return {
+        "guard": MOOD_GUARD_SQL,
+        "kept_indicative": dict(kept),
+        "dropped_non_indicative": {c: dict(m) for c, m in dropped.items()},
+        "dropped_total": sum(n for m in dropped.values() for n in m.values()),
+    }
+
+
 def main():
+    assert_mood_guard()
+    if OUT == LEGACY_OUT:
+        raise SystemExit(
+            "H3966 REFUSAL: refusing to overwrite the v0.48.0 pre-registration "
+            "record at %s." % LEGACY_OUT)
     rng = random.Random(SEED)
-    db = sqlite3.connect(DCS_SQLITE)
+    db = sqlite3.connect(f"file:{DCS_SQLITE}?mode=ro", uri=True)
     texts, seqs = load(db)
     name_to_period = {n: p for n, (p, _) in PERIOD_MAP.items()}
 
     out = {"instrument": "imperfect_switching_stats.py over dcs_full.sqlite (dcs-conllu 04e0778)",
            "prereg": "Uprava/QUESTIONS_LOG.md T2607-26 (frozen before first run)",
+           "version": "v0.49 (H3966 mood-guarded re-run)",
+           "supersedes": "imperfect_switching_stats.json (v0.48.0, mood-unguarded; kept as the pre-registration record, not retracted)",
+           "mood_guard": MOOD_GUARD_SQL,
+           "mood_guard_effect": discarded_by_mood_guard(db),
            "seed": SEED, "n_perm": N_PERM,
            "design": {"window_sents": WINDOW_SENTS, "chain_neighbours": CHAIN_NEIGHBOURS,
                       "chain_min_perf": CHAIN_MIN_PERF, "content_upos": CONTENT_UPOS},
