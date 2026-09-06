@@ -47,6 +47,11 @@ SCHEMA = "lyw-pack-v1"
 QUIZ_SCHEMA = "lyw-quiz-v1"
 GENERATED_DATE = "25-08-2026"
 SESSION_TAG = "H3521-OxAlpha"
+# H4241: pinned to match the H4092 byline pass (commit e75d1a5) so a rebuild
+# stays byte-stable — never "today's date", the generator has no build clock.
+DOC_CREATED_DATE = "26-08-2026"
+DOC_UPDATED_DATE = "05-09-2026"
+DOC_BYLINE = "_Dr. Mārcis Gasūns_"
 
 LEVELS = ("nol", "prodolzhayushchiy")
 INTERESTS = ("yoga", "ayurveda", "kino", "palomnichestvo")
@@ -533,7 +538,8 @@ def render_personalized_text(level, interest, fixture, quizzes, emb, ctx) -> str
     title = "Занятие I · Learn Your Way"
     banner = (f"*Уровень:* **{LEVEL_RU[level]}** · *Интерес:* **{INTEREST_RU[interest]}** · "
               f"*профиль:* `{tag}`")
-    parts = [f"# {title}", "", banner, ""]
+    parts = [f"_Created: {DOC_CREATED_DATE} · Last updated: {DOC_UPDATED_DATE}_", "",
+             f"# {title}", "", banner, ""]
     for sec in SECTIONS:
         parts.append(f"## {sec['title']}")
         parts.append("")
@@ -580,6 +586,8 @@ def render_personalized_text(level, interest, fixture, quizzes, emb, ctx) -> str
         f"scripts/build_lessonpack.py (Learn Your Way wave 1, {SESSION_TAG}, "
         f"{GENERATED_DATE})"
     )
+    parts.append("")
+    parts.append(DOC_BYLINE)
     return "\n".join(parts) + "\n"
 
 

@@ -1,4 +1,4 @@
-_Created: 25-08-2026 · Last updated: 05-09-2026_
+_Created: 25-08-2026 · Last updated: 06-09-2026_
 
 # Changelog — KocherginaUchebnik_1998
 
@@ -10,6 +10,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.19.0] - 2026-09-06
 
 ### Added
 - **Learn Your Way wave 1: занятие-1 lesson packs + build-time generator (H3521, OxAlpha,
@@ -26,6 +28,22 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   фикстуры, byte-stable rebuild, seeded-defect детекты. Каждый манифест пинит
   sha256(claims.yml) — расхождение валит `--check`. Serving на Systema-Sanscriticum — за
   default-OFF флагом `LYW_ENABLED`; включение только после MG sign-off.
+
+### Fixed
+- **`build_lessonpack.py` regeneration drift fixed by teaching the generator the H4092
+  byline header instead of stripping it (H4241, fork side (a), 06-09-2026).** The H4092
+  mechanical byline/header pass (commit `e75d1a5`) hand-added
+  `_Created: 26-08-2026 · Last updated: 05-09-2026_` + a closing `_Dr. Mārcis Gasūns_` to
+  all nine committed `personalized_text.md` packs under `LessonPacks/zan1/`, which the
+  generator did not emit — every rebuild since then failed
+  `test_rebuild_is_byte_stable_against_committed_packs` (`main` red 05-09→06-09-2026).
+  Generated files are supposed to be non-authored, so the byline arguably should not
+  have landed on them at all (fork side (b)); chosen (a) instead because the generator
+  already carries a fixed, non-"today" `GENERATED_DATE` constant for its own footer —
+  adding two more pinned constants (`DOC_CREATED_DATE`, `DOC_UPDATED_DATE`) to reproduce
+  the exact header/byline costs nothing and keeps the byline policy uniform across
+  authored and generated `.md`. Next mechanical byline sweep over a *new* generated pack
+  must update these three constants in the same pass, not hand-edit the committed output.
 
 ## [0.18.0] - 2026-07-28
 
