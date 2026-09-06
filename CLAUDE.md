@@ -105,15 +105,21 @@ Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](htt
   VisualDCS G22) — so a bucket defined as "past tense with **no** formation tag" over *finite*
   tokens silently swallows the entire non-indicative past. In
   [`ZalizniakOcherk_1978/imperfect_switching_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py)
-  the `PERF` bucket (`feat_tense='Past' AND feat_formation IS NULL`, finite filter
-  `feat_person IS NOT NULL`, **no** `feat_mood='Ind'` guard) is **10,15 % non-indicative** —
+  the `PERF` bucket as v0.48.0 defined it (`feat_tense='Past' AND feat_formation IS NULL`,
+  finite filter `feat_person IS NOT NULL`, **no** `feat_mood='Ind'` guard) was
+  **10,15 % non-indicative** corpus-wide —
   8 726 of 85 955 tokens (Jus 4 067 · Imp 1 700 · Sub 1 317 · Opt 1 065 · Prec 577), mostly
-  augmentless injunctives; the `AOR` bucket is clean (12 054 tokens, 0 non-indicative). **Put
-  `feat_mood='Ind'` in every new finite past-tense bucket.** The published
-  [HK-15 imperfect-switching report](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
-  carries the caveat and its figures are deliberately **not** recomputed — the guarded re-run is
-  [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
-  Do **not** silently re-derive the numbers to "fix" the report.
+  augmentless injunctives; the `AOR` and `IMPF` buckets are clean (12 054 and 46 695 tokens,
+  0 non-indicative). **Put `feat_mood='Ind'` in every new finite past-tense bucket.** The guarded
+  re-run shipped 06-09-2026 as [HK-15 report v0.49](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md) ([H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md), [PR #912](https://github.com/gasyoun/SanskritGrammar/pull/912)):
+  the instrument now carries the guard on all three `CAT_SQL` branches plus an
+  `assert_mood_guard()` refusal and a regression test, and
+  [v0.48.0](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
+  stays superseded-but-unaltered as the pre-registration record — **still do not silently
+  re-derive its numbers.** ⚠️ **The re-run's own lesson: a corpus-wide contamination share can
+  badly misestimate a slice.** 10,15 % corpus-wide was **29,22 %** in the vedic slice and 0,88 %
+  in the puranic one — injunctive is a vedic category. Measure contamination *per analysed
+  stratum*, not once over the corpus, before deciding a caveat is small enough to publish under.
 - ⚠️ **`Concordance/Usha-PhD-Sampurna.pdf` has a broken text layer** (Sanskrit2003
   font, no ToUnicode map) — text extraction yields garbage; use page rendering +
   vision OCR instead.

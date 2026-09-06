@@ -408,11 +408,15 @@ plan in
 Paper status is tracked in the org inventory
 [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
 
-One-off corpus studies live beside the book they answer to: [`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md) tests
-whether the imperfect marks narrative switching among perfects (verdict: **partially
-confirmed** — clustering yes, topic-shift microscopic). Its `PERF` bucket is known to be
-**10,15 % non-indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md)) and the figures are deliberately left
-un-recomputed until the mood-guarded re-run [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
+One-off corpus studies live beside the book they answer to: [`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md)
+tests whether the imperfect marks narrative switching among perfects (verdict: **partially
+confirmed** — clustering yes, topic-shift microscopic). The v0.48.0 run's `PERF` bucket was
+**10,15 % non-indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md));
+the mood-guarded re-run shipped 06-09-2026 as **v0.49** ([H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md), [PR #912](https://github.com/gasyoun/SanskritGrammar/pull/912)) and
+the verdict held — the contamination turned out to be a **vedic** phenomenon (vedic `PERF`
+−29,22 %, not the even 10,15 %), and the study's one substantive signal got *stronger*
+(vedic turnover +1,5 → +2,5 pp). [v0.48.0](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
+stays in place, superseded and unaltered, as the pre-registration record.
 
 ## Caveats found in the source files
 
