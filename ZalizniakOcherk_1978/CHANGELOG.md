@@ -1,4 +1,4 @@
-_Created: 25-08-2026 · Last updated: 05-09-2026_
+_Created: 25-08-2026 · Last updated: 06-09-2026_
 
 # Changelog — ZalizniakOcherk_1978
 
@@ -11,6 +11,31 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 ### Changed
+- **Пересчет исследования T2607-26 с гардом `feat_mood='Ind'`; отчет v0.49 заменяет v0.48.0
+  (H3966, Claude Code Opus 5 `claude-opus-5[1m]`).**
+  [`imperfect_switching_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py)
+  ставит `feat_mood='Ind'` на все три ветви `CAT_SQL` — без него корзина PERF поглощала
+  8 726 финитных неиндикативных форм прошедшего времени по построению (H3878 G22: DCS не
+  проставляет `Formation` вне индикатива). Прогон по тому же снимку `dcs-conllu 04e0778`,
+  тот же seed 20260717, те же 1000 перестановок →
+  [`imperfect_switching_stats_v049.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats_v049.json);
+  запись v0.48.0 не перезаписана и защищена отказом в самом скрипте.
+  **Вердикт устоял:** из 73 сверенных величин материальна ровно одна, и это вход, а не
+  вывод — ведийская корзина PERF −29,22 % против корпусных 10,15 % оговорки, то есть примесь
+  была ведийским явлением. Единственный содержательный сигнал отчета усилился: ведийский
+  лексический оборот при имперфектном вкраплении +1,5 → **+2,5 п. п.** Ни один lift не
+  пересек 1,0, ни один runs-test не сменил направление, ни одна дельта оборота не сменила
+  знак; предрегистрированный критерий (эпос, +, p < 0,01) выполняется по-прежнему.
+  Новое: отчет
+  [`IMPERFECT_SWITCHING_HK15_REPORT_V049.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md)
+  с дельтой «до/после» на каждом головном числе, инструмент дифа
+  [`imperfect_switching_delta.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_delta.py)
+  → [`imperfect_switching_delta_v048_v049.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_delta_v048_v049.json),
+  и регрессионный тест
+  [`tests/test_imperfect_switching_mood_guard.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_imperfect_switching_mood_guard.py)
+  (10 проверок), падающий, если гард снимут с любой ветви или если поедут предрегистрированные
+  константы. v0.48.0 помечен ЗАМЕНЕН; ни одна его цифра не тронута — оговорка H3878 остается
+  в нем как исторический документ.
 - **OCH-3 and OCH-30 precative labels re-labeled from Ātmanepada/medium-specific to
   whole-mood (H1253, Sonnet 5 `claude-sonnet-5`; review sheet
   `sanskritgrammar-precative-label-dcs2026-visa_17.07.26`, policy B).** DCS-2026 doesn't tag
