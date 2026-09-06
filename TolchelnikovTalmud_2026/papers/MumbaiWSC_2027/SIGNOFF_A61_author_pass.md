@@ -1,6 +1,6 @@
 # SIGNOFF — A61 author-voice pass (H1222)
 
-_Created: 18-07-2026 · Last updated: 19-07-2026_ (timestamp-gate addendum added later the same day)
+_Created: 18-07-2026 · Last updated: 06-09-2026_ (timestamp-gate addendum added 19-07-2026; Pass 2 appended 06-09-2026)
 
 **Paper:** A61 — *How the Cologne Digital Sanskrit Lexicon Endured (1994–2026): From Institutional Project to Shared Infrastructure* ([chapter folder](https://github.com/gasyoun/SanskritGrammar/tree/codex/a61-sol-evidence/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027), [draft PR #403](https://github.com/gasyoun/SanskritGrammar/pull/403))
 
@@ -113,5 +113,34 @@ The author ruled: retire explicitly. One sentence added to [09-future-plans.mdx]
 ## Adopted abstract sentence — APPLIED — 19-07-2026 ([H1322](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1322-Fable_SanskritGrammar_a61-abstract-corrigibility-sentence-applied_19.07.26.md), Fable 5 `claude-fable-5`)
 
 On the author's instruction the parked sentence was applied ahead of formatting: the abstract's "CDSL's durable achievement is therefore not scale alone. It is a corrigible scholarly object whose sources, identifiers, and procedures can be recovered by successors." now reads "CDSL's durable achievement is therefore not scale alone but corrigibility: a scholarly object whose sources, identifiers, and procedures a successor can recover." Word count verified mechanically: **256** (258 − 2, inside the 250–300 band). The 258-word figure recorded by the evidence gate and [README.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx) is superseded — the README record is updated; [A61_EVIDENCE_GATE_2026-07-18.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/A61_EVIDENCE_GATE_2026-07-18.md) stays as written (historical record of the 18-07 state). **The only submission-time item left is WSC-2027 CfP formatting when rules are published** — then `/paper-submission-pack A61`.
+
+## Pass 2 — 06-09-2026 (Fable 5.1 `claude-fable-5-1`)
+
+**Scope.** Second author-voice pass over the chapter set's abstract, introduction and conclusion — [00-front-matter.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/00-front-matter.mdx), [01-introduction.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/01-introduction.mdx), [11-conclusion.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/11-conclusion.mdx) and the folder [README.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx) — under [H3857](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3857-Fable_Uprava_all-articles-author-voice-pass-workflow_01.09.26.md), executed 06-09-2026 by Fable 5.1 (`claude-fable-5-1`). Voice, register and framing only; no number, claim or citation altered; mechanical drift gate CLEAN on every edited file. Because the paper stands at 5/5 with every human gate closed above, the pass is deliberately light: three surgical edits in the introduction (two of them reverted after the adversarial verify, see the table — one stands), nothing in the front matter (the abstract stays byte-identical at 256 words), nothing in the conclusion, nothing in the README. Chapters 02–10 were read as context only.
+
+### 1. Voice calls made — each may be vetoed
+
+| # | Location | Call | Rationale |
+|---|---|---|---|
+| P2-1 | [01-introduction.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/01-introduction.mdx), opening sentence | ~~"did not arise in a vacuum" → "has a datable origin"~~ | **Reverted after adversarial verify (meaning):** the metaphor is the author's own; "has a datable origin" asserts a dating claim the sentence did not make. Original wording restored |
+| P2-2 | [01-introduction.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/01-introduction.mdx), §1 second paragraph, last sentence | The doubly dashed sentence "…strip the structural markup — in particular the literary-source tags … — which this report argues is the collection's most valuable asset (§6)" recast as "…strip the structural markup, in particular the literary-source tags …; this report argues that this markup is the collection's most valuable asset (§6)" | **Reverted after adversarial verify (meaning):** the recast re-attached the "most valuable asset" claim to the markup as a whole, while the original scope attaches it to the literary-source tags. Original wording restored |
+| P2-3 | [01-introduction.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/01-introduction.mdx), last paragraph, first sentence | "should be made at the outset" → "belongs at the outset" | Impersonal passive dropped; the author is the one placing the correction. Scharf attribution untouched |
+
+`Last updated` bumped to 06-09-2026 on 01-introduction.mdx only.
+
+**Considered and left unchanged.** (a) The third-person "the author" self-reference: the WSC venue would allow first person, but the form runs through chapters 02–10 as well (§3.3, §8.2, §10.6), so a switch in the introduction alone would split the register — a whole-manuscript decision, listed under flags. (b) The conclusion's "did not endure because… Its history is instead…" is a genuine argumentative contrast, not the "not X, it's Y" tic; kept. (c) The section road-map paragraph keeps its conventional "Section N …" openers; a conference reader expects them. (d) The README's backticked `A61_EVIDENCE_GATE_2026-07-18.md` is not a link; turning it into one adds a URL, which the drift gate counts as substance, so it is left for a non-voice edit.
+
+### 2. Substance flags carried (not fixed)
+
+1. **Companion-paper title drift, both directions.** The front matter cites the companion as *CDSL as methodological infrastructure: an empirical survey*; the A14 manuscript in csl-observatory ([article/01-empirical-companion.md](https://github.com/sanskrit-lexicon/csl-observatory/blob/main/article/01-empirical-companion.md)) is titled *Methodological infrastructure of the Cologne Digital Sanskrit Dictionaries*, and its own subtitle still cites A61 under the 2025 title *Report on Cologne Digital Sanskrit Lexicon Project*. Both cross-references need aligning before either paper is submitted — a human should decide which titles are final.
+2. **"People" versus "implementers".** The conclusion says "no more than five people per year implemented corrections in the git era"; the abstract says "no year contains more than five correction implementers" and warns that corrector labels are not persons. OBS-Q counts Git identities. A human should decide whether "people" overstates identity resolution; the pass did not touch it because it changes claim strength.
+3. **"Most valuable asset" pointer to §6.** The introduction says the report argues in §6 that the structural markup is the collection's most valuable asset; §6 makes the case through the citation graph (828,505 citations, 912 texts) but never states the superlative. A human should decide whether §6 says it or the introduction softens the pointer.
+4. **Byline identifiers.** The title block carries no ORCID (0000-0003-4513-884X) and uses gasyoun@gmail.com, the address the author ruled for English venues on 19-07-2026. Adding the ORCID is a one-line suggestion, not applied, because the byline was reserved to the author under H1222.
+5. **Standing residuals from the README, unchanged:** Jachertz page locator before any specific quotation; the §7.2 MW↔PWG sense-sequence measurement still open; WSC-2027 CfP formatting rules still unpublished as of the 18-07-2026 check; the two email-derived milestones still `evidence_pending`.
+6. **Global register decision:** first person singular versus "the author", see (a) above — if the author wants "I", every chapter must move together.
+
+### 3. Read-and-sign
+
+About fifteen minutes: three vetoable edits in one file, six flags. Proposed readiness: **5/5 stands** (the pass proposes no change; the flags above are submission-formatting matters, none a readiness gate). Venue: no change recommended — the 20th WSC, Computational Sanskrit and Digital Humanities section, remains the target; the submission freeze until 2026-11-01 applies.
 
 _Dr. Mārcis Gasūns_
