@@ -1,13 +1,16 @@
 # A62 — Digital Sanskrit pedagogy: a research agenda (outline)
 
-_Created: 14-07-2026 · Last updated: 04-08-2026_
+_Created: 14-07-2026 · Last updated: 06-09-2026_
+
+Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.org/0000-0003-4513-884X)), gasyoun@ya.ru
 
 **ID:** A62 · **Readiness:** 4/5 (evaluation methodology + metric register specified in full) · **Home:** SanskritGrammar ·
 **Venue candidates:** eLex / Lexikos / ISCLS / CALICO / ReCALL / an NLP4DH venue (a human `@DECIDE`s).
 The field-defining paper of the [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md);
 handoff [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md);
 3/5 pass = [H1464](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1464-Sonnet_SanskritGrammar_a62-agenda-related-work-abstract_22.07.26.md);
-4/5 pass = [H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md).
+4/5 pass = [H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md);
+author-voice pass 06-09-2026 ([SIGNOFF_A62_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/SIGNOFF_A62_author_pass.md)).
 Aggregate numbers only (in-copyright textbook sources).
 
 > **Provenance note.** H914 is tier-locked to Fable 5; this readiness-2 scaffold was authored on
@@ -26,7 +29,7 @@ Aggregate numbers only (in-copyright textbook sources).
 
 Sanskrit computing has produced dictionaries, morphological engines, annotated corpora, and dozens
 of learner-facing tools, but no field that studies *how those assets teach*, and no falsifiable
-account of what actually works pedagogically. We name **digital Sanskrit pedagogy** as a
+account of what actually works pedagogically. I name **digital Sanskrit pedagogy** as a
 research-and-integration field, give it a twelve-aspect taxonomy that unifies the ecosystem's
 scattered assets across CEFR rung, NLP capability, and traditional Sanskrit discipline (śikṣā,
 vyākaraṇa, nirukta, chandas, kośa, kāvya, bhāṣya), and state a falsifiable agenda of four research
@@ -45,7 +48,7 @@ and always far below the 0.45–0.84 between-textbook agreement. RQ3 is partiall
 by a two-axis textbook-vs-corpus divergence method already applied to five Sanskrit grammars. Three
 of the four RQs already have integration deliverables built or building — a frequency-ordered SRS
 spec, a Zaliznyak on-ramp A/B testbed, and a two-axis claim-verification pipeline — showing the
-research and integration layers of the field compose into one programme rather than two. We close
+research and integration layers of the field compose into one programme rather than two. I close
 with a two-layer evaluation methodology that makes every "this tool teaches better" claim in the
 field falsifiable for the first time: a register of twelve **capability** metrics, one per aspect,
 each with a denominator, a data source and a refutation condition and each computable from committed
@@ -54,7 +57,7 @@ morphology drill items; 56.5% by type and 56.2% by corpus token mass for the der
 taught scope) — held strictly apart from learner **outcome** (learning gain, retention), which
 remains the exclusive province of RQ4's single protocol. That separation is what lets eleven aspects
 be tested before any user study runs, while keeping one ruler for teaching effect across all of them.
-We close with a gap register — most saliently, the complete absence of audio anywhere in the
+I close with a gap register — most saliently, the complete absence of audio anywhere in the
 ecosystem, which blocks every beginner (A0–A2) rung.
 
 ## Thesis
@@ -69,15 +72,16 @@ productive rather than aspirational.
 
 ## §1 Introduction
 
-- The gap. The substance of Sanskrit pedagogy already exists, but it sits scattered across roughly
-  ten repositories and three partial maps, and the claim "this tool teaches better" is asserted,
-  never tested. The project's master planning document (MEGABOOK) names the last mile to the
-  student as the chain's main unclosed link.
-- The contribution is fivefold: (a) a field definition with an aspect taxonomy; (b) four
-  falsifiable research questions; (c) a first confirmed result; (d) an integration architecture
-  that closes the last mile; (e) a two-layer evaluation methodology — one falsifiable capability
-  metric per aspect, measurable from committed artifacts today, held apart from learner outcome,
-  which stays with a single study protocol.
+The gap is this: the substance of Sanskrit pedagogy already exists, but it sits scattered across
+roughly ten repositories and three partial maps, and the claim "this tool teaches better" is
+asserted, never tested. The project's master planning document (MEGABOOK) names the last mile to
+the student as the chain's main unclosed link.
+
+The contribution is fivefold: (a) a field definition with an aspect taxonomy; (b) four falsifiable
+research questions; (c) a first confirmed result; (d) an integration architecture that closes the
+last mile; (e) a two-layer evaluation methodology — one falsifiable capability metric per aspect,
+measurable from committed artifacts today, held apart from learner outcome, which stays with a
+single study protocol.
 
 ## §2 The landscape (survey)
 
@@ -85,8 +89,8 @@ The survey reuses the field metadoc's aspect-primary taxonomy (12 aspects × CEF
 capability × traditional discipline × owning repo) and consolidates the three pre-existing maps by
 reference: Systema's asset index with its A0–C2 ladder, the learner-materials inventory in
 SanskritGrammar (`LEARNER_MATERIALS`), and kosha's positioning survey (`POSITIONING`). The headline
-reading: the **B1–B2 middle is asset-rich but unintegrated**, the **A0–A1 column is thin** (audio
-and a native beginner grammar are the missing pieces), and **C1–C2 is planned depth**.
+reading is that the **B1–B2 middle is asset-rich but unintegrated**, the **A0–A1 column is thin**
+(audio and a native beginner grammar are the missing pieces), and **C1–C2 is planned depth**.
 
 Survey table — the field metadoc's [§4a matrix](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md#4a-matrix--aspect--cefr-rung--where-the-assets-and-gaps-are),
 aspect × CEFR rung (✅ built · 🟡 partial · 📋 planned · ⬜ gap · — not applicable at that rung),
@@ -105,9 +109,10 @@ full register, with denominators, data sources and refutation conditions, is §4
 | Zaliznyak on-ramp | — | ⬜ **build** | ⬜ **build** | 🟡 Талмуд | 🟡 | **PM6** — 56.5% type / 56.2% token (measured) |
 | Audio/śikṣā | ⬜ **gap** | ⬜ **gap** | — | — | 📋 accent (VedaWeb) | **PM7** — **0** → ≥1 licensed unit |
 
-The pattern the table makes visible: **A0–A1 is the thinnest column** (audio and native beginner
-grammar are the two holes), the **B1–B2 middle is asset-rich but unintegrated** (§5's integration
-architecture is the fix), and **C1–C2 is planned depth**, not yet built (Pāṇini, Vedic, commentary).
+Read by column, the table shows the same three things: **A0–A1 is the thinnest column** (audio and
+native beginner grammar are the two holes), the **B1–B2 middle is asset-rich but unintegrated**
+(§5's integration architecture is the fix), and **C1–C2 is planned depth**, not yet built (Pāṇini,
+Vedic, commentary).
 
 The metric column adds a second and less comfortable reading of the same rows. **Only two of the
 seven wave-1 aspects carry a number at all** — PM2 and PM6 — and across the full twelve-aspect
@@ -160,9 +165,9 @@ making rather than a bookkeeping convention:
    paper treats the substitution of the first claim for the second as the field's characteristic
    error, and the two-layer split as the fix.
 
-The cost of the split is real and worth stating: capability metrics can all move while teaching
-effect stays flat, and the register cannot detect that. That is precisely why RQ4 is not optional
-and why the twelve metrics are framed as *evidence into* an evaluation, not as a substitute for one.
+The split has a real cost: capability metrics can all move while teaching effect stays flat, and the
+register cannot detect that. That is why RQ4 is not optional and why the twelve metrics are framed
+as *evidence into* an evaluation, not as a substitute for one.
 
 ### 4.2 The metric register — one falsifiable capability metric per aspect
 
@@ -190,7 +195,7 @@ green. A metric is admitted only with a denominator, a data source, a current va
 
 **Two of the twelve metrics have a value; ten do not.** PM2 (90.7% answer-keyed drill items) and
 PM6 (56.5% by type, 56.2% by DCS token mass) are measured; PM7's zero is a real baseline rather
-than a measurement; the remaining nine are unmeasured. We state this plainly because it *is* the
+than a measurement; the remaining nine are unmeasured. I state this plainly because it *is* the
 research programme this paper proposes — the register's function is to name what has never been
 counted, and a field-defining paper that presented ten empty cells as an embarrassment would be
 concealing its own agenda. The two cheapest to fill require no new build: PM8's conjunct
@@ -204,12 +209,12 @@ the open against what gets measured, never in the same pass as a measurement tha
 And **a bar may never be relaxed to accommodate a result** — the register's revision protocol
 records the old value, the new one and the reason, so a moved goalpost stays visible.
 
-PM6 is worth one sentence of its own as a result rather than a status line: the on-ramp's four
-taught ablaut rows reach **56.5% of Приложение-1 by type and 56.2% by DCS token mass**, and the
-near-identity of the two figures says the taught rows are frequency-neutral — they are neither the
-common roots nor the rare ones, so type coverage can be read as reading-relevant coverage for this
-catalogue. That is a small finding, but it is the kind the field currently has none of: a scope
-claim about a teaching artifact with a denominator attached.
+PM6 also reads as a result rather than a status line: the on-ramp's four taught ablaut rows reach
+**56.5% of Приложение-1 by type and 56.2% by DCS token mass**, and the near-identity of the two
+figures says the taught rows are frequency-neutral — they are neither the common roots nor the rare
+ones, so type coverage can be read as reading-relevant coverage for this catalogue. That is a small
+finding, but it is the kind the field currently has none of: a scope claim about a teaching artifact
+with a denominator attached.
 
 ### 4.3 The outcome layer — one instrument for the whole field
 
@@ -302,8 +307,8 @@ frequency literature (Nation; Waring & Takaki) is language-general and never app
 ICALL literature (Heift & Schulze) predates the current Sanskrit-corpus tooling and was never
 extended to it; the ACL readability line has no Sanskrit-language instantiation; and the Sanskrit
 computational-resource line (DCS, Heritage, vidyut) is infrastructure, not pedagogy research — none
-of it asks whether the infrastructure teaches. RQ1's already-confirmed result (§3, A63) is, to this
-paper's knowledge, the first test of corpus-frequency-predicts-learning-order for Sanskrit or any
+of it asks whether the infrastructure teaches. RQ1's already-confirmed result (§3, A63) is, to my
+knowledge, the first test of corpus-frequency-predicts-learning-order for Sanskrit or any
 classical Indo-Aryan language.
 
 ## Data inventory (claim → committed asset)
