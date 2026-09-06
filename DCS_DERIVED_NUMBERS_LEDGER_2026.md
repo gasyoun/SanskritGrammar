@@ -140,7 +140,7 @@ each at `<slug>/index.mdx`. A check bundling several published values counts onc
 | `SE013-13` | karaka-case:88 | obl:benef Dat/Gen split % | [47.0, 42.9] | CONFIRMED | exact (round 1) |
 | `MO016-1` | imperfect:66 | Impf person/number/voice profile % | [94.1, 3.3, 2.5, 75.1, 22.6, 2.3, 96.9, 3.1] | CONFIRMED | exact (round 1) |
 | `MO016-2` | imperfect:69 | Impf top roots brū/bhū/as/paś/kṛ | [5669, 3769, 3032, 1385, 1002] | CONFIRMED | exact (round 1) |
-| `MO017-1` | perfect:77 + aorist:65 + aorist-types:53 | Past formation NULL/peri/root/them/s/is/red/sa/sis [C2] | [85955, 4046, 5690, 2781, 1508, 1077, 833, 124, 41] | CONFIRMED | exact (round 1) |
+| `MO017-1` | perfect:77 + aorist:65 + aorist-types:53 | Past formation NULL/peri/root/them/s/is/red/sa/sis [C2] | [85955, 4046, 5690, 2781, 1508, 1077, 833, 124, 41] | CONFIRMED | exact (round 1) — ⚠️ mood-unguarded: the 85 955 `NULL`-formation cell is 10,15 % non-indicative (H3878 G22); the indicative-only count is **77 229** (H3966). Fine as a formation census, wrong as a "perfect" bucket. |
 | `MO017-2` | aorist:60 + aorist-types:41 | formation-tagged aorist total [C2] | 12054 | CONFIRMED | exact (round 1) |
 | `MO017-3` | aorist-types:61 | non-sigmatic / sigmatic split [C2] | [9304, 2750] | CONFIRMED | exact (round 1) |
 | `MO017-4` | perfect:66 | pluperfect-tagged tokens ~200 | 200 | CONFIRMED | exact (round 1) |
