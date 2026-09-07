@@ -337,7 +337,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   **измеримый слой** — покорневая сверка 876 глагольных корней даёт seṭ/aniṭ (308 *seṭ* : 287
   *veṭ* : 176 *aniṭ*) и полноизменяемость (429 дефективных / 424 полноизменяемых / 22
   колеблющихся); «дефективность» традиции стала исчисляемым параметром реестра (сноска `[^ed1d]`,
-  источник — [`TolchelnikovTalmud_2026/…/morphoclass_crosswalk_1975_2014_2026.csv`](TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv), числа проверены скриптом).
+  источник — `TolchelnikovTalmud_2026/…/morphoclass_crosswalk_1975_2014_2026.csv`, числа проверены скриптом).
   Карта данных для дальнейших проходов — [`revision-2026/CH1_DATA_MAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_DATA_MAP.md).
 ### Fixed
 - **Снят дубль-абзац в §1.4** (о синтетическом подходе Панини/Яске стоял дважды подряд —

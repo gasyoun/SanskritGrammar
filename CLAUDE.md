@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 this repository.
 
 > Org-level conventions (hubs, `.ai_state.md` protocol, Windows encoding rules, the
-> csl-orig fence) live in [`../CLAUDE.md`](../CLAUDE.md) and load automatically. Before
+> csl-orig fence) live in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md) and load automatically. Before
 > touching encodings, transliteration, or corpus data, read the
 > [Sanskrit context primer](https://github.com/gasyoun/github-spine/blob/main/SANSKRIT_CONTEXT_PRIMER.md).
 > This file covers only what is specific to **this** repository.
