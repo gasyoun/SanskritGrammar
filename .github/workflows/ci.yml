@@ -79,7 +79,7 @@ jobs:
           echo "sha=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
       - name: Stage exact-SHA site artifact
         if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: site-${{ github.sha }}
           path: build
