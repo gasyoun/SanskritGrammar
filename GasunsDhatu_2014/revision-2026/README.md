@@ -1,6 +1,6 @@
 # revision-2026 — рабочие материалы подготовки печатного издания 2026 г.
 
-_Created: 07-07-2026 · Last updated: 17-08-2026_
+_Created: 07-07-2026 · Last updated: 10-09-2026_
 
 Working notes for the 2026 print edition of Gasūns, «Состав и строй древнеиндийских корней»
 ([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
