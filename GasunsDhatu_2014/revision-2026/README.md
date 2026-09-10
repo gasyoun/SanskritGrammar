@@ -73,4 +73,10 @@ python gost_bibliography_check.py
 python numbers_crosscheck.py
 ```
 
+## phd_corpus — dissertation supplements + bibliography digitized (H4479, 10-09-2026)
+
+| File | What it is |
+|---|---|
+| [phd_corpus/README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/README.md) | TOC index of the whole dissertation (landed vs new), extraction method, and the concordance claim-census that unblocks PALSULE_AUDIT.md step 1 |
+
 _Dr. Mārcis Gasūns_
