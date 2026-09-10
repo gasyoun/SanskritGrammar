@@ -12,14 +12,14 @@ in the repo, and builds a structured claim-census from the dhātu concordance.
 
 | File | Content |
 |---|---|
-| [toc_index.json](toc_index.json) | Full TOC — every dissertation part, its yadisk source, landed/new status, repo path |
-| [bibliography_ref.jsonl](bibliography_ref.jsonl) | Per-page text of `01_gasuns-dhatu-PhD-ref.pdf` (23pp, standalone reference list) |
-| [suppl1_whitney_bucknell_roots.jsonl](suppl1_whitney_bucknell_roots.jsonl) | Приложение 1 — Whitney/Bucknell root list |
-| [suppl2_whitney_roots_by_prefix.jsonl](suppl2_whitney_roots_by_prefix.jsonl) | Приложение 2 — Whitney roots by prefix |
-| [suppl3_concordance_text.jsonl](suppl3_concordance_text.jsonl) | Приложение 3 — concordance, raw PDF text (236pp) |
-| [suppl4_huet_roots.jsonl](suppl4_huet_roots.jsonl) | Приложение 4 — Huet root list (580 roots, autumn-2014 snapshot) |
-| [suppl5_binary_source_comparison.jsonl](suppl5_binary_source_comparison.jsonl) | Приложение 5 — binary source-comparison matrix |
-| [dhatu_concordance_claim_census.jsonl](dhatu_concordance_claim_census.jsonl) / [.csv](dhatu_concordance_claim_census.csv) | **Claim-census** — structured concordance parsed from `gasuns-dhatu-concordance.xlsm` (sheet `Final`): for each Palsule dhātu, presence/absence in Whitney/Mayrhofer-EWA/Werba-VIA-I/Böhtlingk-PWG |
+| [toc_index.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/toc_index.json) | Full TOC — every dissertation part, its yadisk source, landed/new status, repo path |
+| [bibliography_ref.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/bibliography_ref.jsonl) | Per-page text of `01_gasuns-dhatu-PhD-ref.pdf` (23pp, standalone reference list) |
+| [suppl1_whitney_bucknell_roots.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/suppl1_whitney_bucknell_roots.jsonl) | Приложение 1 — Whitney/Bucknell root list |
+| [suppl2_whitney_roots_by_prefix.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/suppl2_whitney_roots_by_prefix.jsonl) | Приложение 2 — Whitney roots by prefix |
+| [suppl3_concordance_text.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/suppl3_concordance_text.jsonl) | Приложение 3 — concordance, raw PDF text (236pp) |
+| [suppl4_huet_roots.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/suppl4_huet_roots.jsonl) | Приложение 4 — Huet root list (580 roots, autumn-2014 snapshot) |
+| [suppl5_binary_source_comparison.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/suppl5_binary_source_comparison.jsonl) | Приложение 5 — binary source-comparison matrix |
+| [dhatu_concordance_claim_census.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/dhatu_concordance_claim_census.jsonl) / [.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/dhatu_concordance_claim_census.csv) | **Claim-census** — structured concordance parsed from `gasuns-dhatu-concordance.xlsm` (sheet `Final`): for each Palsule dhātu, presence/absence in Whitney/Mayrhofer-EWA/Werba-VIA-I/Böhtlingk-PWG |
 
 PDFs and the source `.xlsm` are **not** committed — they stay in local/yadisk storage
 per the derived-only landing rule ([reports/YADISK_INVENTORY_07-09-2026.md](https://github.com/gasyoun/Uprava/blob/main/reports/YADISK_INVENTORY_07-09-2026.md) §7).
