@@ -1,0 +1,82 @@
+# claims_harvest.yml — harvest backlog for SpeyerSyntax_1886 (feeds a future claims.yml)
+#
+# Candidate falsifiable assertions harvested from J.S. Speyer, *Sanskrit Syntax* (Leiden,
+# 1886), via SanskritLexicography's OCR/text-extraction of the source PDF (H4483,
+# 10-09-2026). Source line numbers below cite
+# https://github.com/gasyoun/SanskritLexicography/blob/master/literature/md/Speyer-Syntax1886.md
+# for traceability back to the (moderately OCR-noisy) extracted text — re-read the cited
+# line before promoting, per the runbook fence (no invented corpus numbers).
+#
+# SCOPE: this pass is a harvest only — no verification, no corpus probe run, no promotion.
+# 40 candidates sampled across the book's major topic clusters (concord, case government,
+# compounding, pronouns/particles, tense/mood, participle/absolutive/infinitive, sentence-
+# level word order) via keyword search ("as a rule", "always", "never") over the full text,
+# not a single contiguous chapter — coverage is a representative cross-section, not
+# exhaustive (unlike the Apte harvest's lesson-by-lesson sweep).
+#
+# testability tag names the instrument each claim needs (taxonomy shared with
+# ApteSyntax_1885/claims_harvest.yml):
+#   morphology-DCS    — surface token frequency / case distribution (verify_claims_dcs.py battery)
+#   syntax-treebank   — case-government / agreement / particle-position / word-order
+#                        (ZalizniakOcherk_1978/treebank_syntax_stats.py, head/deprel layer)
+#   reference-Whitney — systematic grammatical fact (Whitney 1889, adjudicated by reading, not corpus count)
+#   untestable        — no candidate below is tagged untestable; each has a concrete corpus
+#                        or reference check available
+
+candidates:
+
+  # ===== Passive, subject/agent ellipsis (source: p.4-13, lines ~365-500) =====
+  - {id: SPE-H-1,  topic: passive,   source_line: 388,  quantifier: "чрезвычайно часто", kind: statistic,    testability: syntax-treebank,   claim_en: "Impersonal passive constructions built on an intransitive verb are extremely common in classical Sanskrit prose."}
+  - {id: SPE-H-2,  topic: passive,   source_line: 400,  quantifier: "изредка",   kind: rule,        testability: reference-Whitney, claim_en: "Even the copula verb (as-/bhū-) occasionally takes a passive form."}
+  - {id: SPE-H-3,  topic: ellipsis,  source_line: 465,  quantifier: "часто",     kind: rule,        testability: morphology-DCS,    claim_en: "The grammatical subject of a sentence is not always expressed; it is often left to be inferred from the verb's person/number ending alone."}
+  - {id: SPE-H-4,  topic: ellipsis,  source_line: 483,  quantifier: "реже, чем при опущении подлежащего", kind: statistic, testability: syntax-treebank, claim_en: "In passive sentences the personal pronoun denoting the agent may be omitted, but this omission is not nearly as frequent as subject-omission is in active sentences."}
+  - {id: SPE-H-5,  topic: ellipsis,  source_line: 499,  quantifier: "регулярно", kind: rule,        testability: syntax-treebank,   claim_en: "Omission of the agent pronoun is the regular (default) construction with passive imperatives."}
+
+  # ===== Concord (source: p.19-20, line ~1078) =====
+  - {id: SPE-H-6,  topic: concord,   source_line: 1078, quantifier: "как правило", kind: agreement,  testability: morphology-DCS,    claim_en: "As a rule, grammatical gender and number agree with real (natural) gender and number; collective nouns and some pluralia tantum are the stated exception."}
+
+  # ===== Case government (source: lines ~2355-5231) =====
+  - {id: SPE-H-7,  topic: accusative, source_line: 2355, quantifier: "не обязателен", kind: government, testability: syntax-treebank, claim_en: "The accusative governed by verbs of showing respect/reverence is not obligatory — such verbs of speaking also admit the dative or locative."}
+  - {id: SPE-H-8,  topic: instrumental, source_line: 3526, quantifier: "как правило", kind: typology,  testability: syntax-treebank,  claim_en: "The instrumental case is used, as a rule, whenever accompanying circumstance, instrument, means, manner, or measure of space/time is to be expressed — one of the broadest-employed cases in Sanskrit syntax."}
+  - {id: SPE-H-9,  topic: instrumental, source_line: 3748, quantifier: "требуется при неоднозначности", kind: government, testability: syntax-treebank, claim_en: "With a gerundive (kṛtya), the logical agent may stand in either the instrumental or the genitive; the instrumental is required whenever the genitive would create ambiguity."}
+  - {id: SPE-H-10, topic: ablative,  source_line: 4125, quantifier: "всегда избегается", kind: statistic, testability: morphology-DCS, claim_en: "The causal ablative built with the special feminine ending is, as a rule, always avoided in practice."}
+  - {id: SPE-H-11, topic: genitive,  source_line: 5231, quantifier: "всегда",  kind: government,  testability: syntax-treebank,   claim_en: "Action nouns (bhāvavacana / nomina actionis) doing duty for an infinitive are nonetheless always felt as true noun-cases, and so still take the genitive government of their underlying verb rather than an infinitive's own construction."}
+
+  # ===== Compounding (source: lines ~9324-15788) =====
+  - {id: SPE-H-12, topic: compounding, source_line: 9324, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "A postposed case-governing particle that always stands before its noun is nonetheless, as a rule, also allowed to be compounded with that noun, the particle then forming the first member."}
+  - {id: SPE-H-13, topic: word-order, source_line: 10676, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "The particle api is, as a rule, placed after (behind) the noun it qualifies, at least in prose."}
+  - {id: SPE-H-14, topic: compounding, source_line: 12813, quantifier: "как правило", kind: universality, testability: syntax-treebank, claim_en: "As a rule, any genitive relation may be expressed as a compound (ṣaṣṭhī-tatpuruṣa)."}
+  - {id: SPE-H-15, topic: compounding, source_line: 12817, quantifier: "не допускается", kind: rule, testability: syntax-treebank, claim_en: "A genitive is not allowed to be compounded with a following participle, gerund, gerundive (kṛtya), or infinitive."}
+  - {id: SPE-H-16, topic: compounding, source_line: 12821, quantifier: "не допускается", kind: rule, testability: syntax-treebank, claim_en: "A genitive is not allowed to be compounded with a following comparative, superlative, or ordinal-number word."}
+  - {id: SPE-H-17, topic: compounding, source_line: 12833, quantifier: "как правило исключены", kind: rule, testability: syntax-treebank, claim_en: "Partitive genitives, and the dative-like ('purpose') genitive, are as a rule excluded from compounding."}
+  - {id: SPE-H-18, topic: compounding, source_line: 14429, quantifier: "как правило", kind: typology, testability: reference-Whitney, claim_en: "Bahuvrīhi compounds in -mātra ('whose exact measure is X') are, as a rule, used as if their final member functioned as a restrictive particle meaning 'only, but'."}
+  - {id: SPE-H-19, topic: adverbial-case, source_line: 15154, quantifier: "как правило", kind: rule, testability: morphology-DCS, claim_en: "When an adjective is used adverbially, the accusative of the neuter singular is, as a rule, the form employed."}
+  - {id: SPE-H-20, topic: compounding, source_line: 15788, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "In the reduplicated-noun idiom (e.g. 'day by day'), the case-endings of the first member are, as a rule, retained rather than reduced to a compound stem."}
+
+  # ===== Pronouns / particles (source: lines ~16113-27923) =====
+  - {id: SPE-H-21, topic: pronoun,   source_line: 16407, quantifier: "всегда", kind: universality, testability: morphology-DCS, claim_en: "The reflexive pronoun ātman is always masculine singular, regardless of the gender and number of its antecedent."}
+  - {id: SPE-H-22, topic: address,   source_line: 16113, quantifier: "как правило", kind: rule, testability: reference-Whitney, claim_en: "Addressing a person by a kinship or professional title shows, as a rule, greater respect than using the generic word for 'lord/sir'; unlike the generic term, such titles can denote the third person as well as the second."}
+  - {id: SPE-H-23, topic: pronoun,   source_line: 17280, quantifier: "редко / как правило", kind: typology, testability: syntax-treebank, claim_en: "The pronoun idam/ayam ('this') is seldom used inside compounds; when a compound of this sense is needed, tyad or etad is substituted, as a rule, instead."}
+  - {id: SPE-H-24, topic: pronoun,   source_line: 17424, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "In classical Sanskrit, the interrogative pronoun ka- used as a pure indefinite ('someone, anyone') is, as a rule, combined with a further particle rather than standing alone."}
+  - {id: SPE-H-25, topic: particle,  source_line: 25662, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "When negation is combined with a connective particle (ca, vā, tu), the negative na, as a rule, precedes the particle rather than following it."}
+  - {id: SPE-H-26, topic: particle,  source_line: 27838, quantifier: "всегда", kind: rule, testability: syntax-treebank, claim_en: "The particle hi is exceedingly frequent, and is always added when the sentence draws an inference or conclusion."}
+  - {id: SPE-H-27, topic: particle,  source_line: 27923, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "When a negative clause is linked to a following affirmative clause, the negation, as a rule, precedes the connective particle joining them."}
+
+  # ===== Tense / mood (source: lines ~20332-21988) =====
+  - {id: SPE-H-28, topic: tense,     source_line: 20384, quantifier: "как правило", kind: typology, testability: reference-Whitney, claim_en: "As a rule, the English pluperfect/simple past ('he did', 'he had done') can be rendered by the Sanskrit aorist, imperfect, perfect, or a past participle, according to context."}
+  - {id: SPE-H-29, topic: tense,     source_line: 20532, quantifier: "всегда и везде", kind: rule, testability: reference-Whitney, claim_en: "The imperfect tense is used indiscriminately of past facts both within and outside the speaker's own experience — it is not restricted to eyewitnessed events."}
+  - {id: SPE-H-30, topic: mood,      source_line: 21984, quantifier: "всегда (в протасисе)", kind: rule, testability: reference-Whitney, claim_en: "In a conditional (unreal) period, the protasis with the conditional mood always expresses a hypothetical past, while the apodosis may express either a hypothetical past or a hypothetical present."}
+
+  # ===== Participle / absolutive / infinitive (source: lines ~22933-24354) =====
+  - {id: SPE-H-31, topic: participle, source_line: 22933, quantifier: "никогда", kind: universality, testability: syntax-treebank, claim_en: "Past passive participles in -ta that carry an intransitive sense never convey a transitive/active meaning — they are, as a rule, always intransitive."}
+  - {id: SPE-H-32, topic: absolutive, source_line: 23315, quantifier: "всегда", kind: rule, testability: syntax-treebank, claim_en: "The absolutive (indeclinable gerund in -tvā) is always missing/omitted with impersonal verbs, since there is no expressed agent for it to refer to."}
+  - {id: SPE-H-33, topic: absolutive, source_line: 24047, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "The absolutive, as a rule, denotes the action prior to the main action, performed by the same subject as the finite verb."}
+  - {id: SPE-H-34, topic: infinitive, source_line: 24354, quantifier: "как правило", kind: government, testability: syntax-treebank, claim_en: "The infinitive in -tum may, as a rule, be attached to any predicate to express purpose, functioning as the equivalent of a dative of purpose."}
+
+  # ===== Sentence-level word order (source: lines ~25999-29868) =====
+  - {id: SPE-H-35, topic: negation,  source_line: 25999, quantifier: "всегда", kind: universality, testability: syntax-treebank, claim_en: "In an asyndetic (paratactic) sequence of negative clauses, the negation is always repeated in each clause rather than being expressed once."}
+  - {id: SPE-H-36, topic: word-order, source_line: 26034, quantifier: "как правило (в прозе)", kind: rule, testability: syntax-treebank, claim_en: "Interrogative pronouns and adverbs, as a rule, stand at the head of the sentence in prose; in verse they may be placed anywhere."}
+  - {id: SPE-H-37, topic: word-order, source_line: 28229, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "The relative pronoun, as a rule, is the first word of its own clause."}
+  - {id: SPE-H-38, topic: relative-correlative, source_line: 28325, quantifier: "как правило", kind: typology, testability: reference-Whitney, claim_en: "In Sanskrit relative-correlative sentences it is, as a rule, not the demonstrative that is logically antecedent to the relative, but the reverse — the relative clause is primary and the demonstrative correlate refers back to it."}
+  - {id: SPE-H-39, topic: relative-correlative, source_line: 28572, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "Pronominal adjectives of comparison (e.g. tādṛś-type words) are, as a rule, used together with their correlative demonstrative counterpart."}
+  - {id: SPE-H-40, topic: word-order, source_line: 29868, quantifier: "как правило", kind: rule, testability: syntax-treebank, claim_en: "The conditional particle (yadi/ced) introducing the protasis, as a rule, heads the sentence, unless the protasis marker is itself a relative pronoun."}
