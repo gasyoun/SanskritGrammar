@@ -36,7 +36,7 @@ genuine IAST/Latin-diacritic root tables (Приложения 1/2/3), not a bla
 
 ## Claim-census — feeds PALSULE_AUDIT.md
 
-[PALSULE_AUDIT.md](../PALSULE_AUDIT.md) names the exact blocker this unblocks:
+[PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md) names the exact blocker this unblocks:
 
 > «Метод полной сверки… 1. Оцифровать колонку исключений Приложения 3 (в `.mdx` вошли
 > только «Материалы для конкорданса» §3.4; полный конкорданс — в исходном `.docx`/PDF
