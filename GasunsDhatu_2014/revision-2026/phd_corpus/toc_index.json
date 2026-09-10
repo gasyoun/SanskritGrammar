@@ -1,0 +1,95 @@
+{
+  "source_yadisk_folder": "yadisk:Sanskrityatina/34_Диссертация/Итоговый текст/",
+  "extraction_method": "PyMuPDF (fitz) text-layer extraction; pdftotext/poppler is FORBIDDEN on Cyrillic PDFs per FINDINGS.md Sec506 (silent zero-Cyrillic blank-trap, measured H3153)",
+  "parts": [
+    {
+      "part": "Введение / Обзор литературы / Глава 1-3 / Заключение / Библиография (inline)",
+      "yadisk_source": "02_gasuns-dhatu-PhD-text.pdf (+ doc/02_gasuns-dhatu-PhD-text2.doc)",
+      "status": "already landed",
+      "repo_path": "GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx",
+      "note": "4691 lines; headings verified: Введение, Обзор литературы, Глава 1/2/3 (incl. 3.4 Материалы для конкорданса), Заключение, Состояние вопроса на 2026 год, Цифровое послесловие 2026, Принятые сокращения, Список иллюстративного материала, Библиография."
+    },
+    {
+      "part": "Глава 4. Кросс-уок омонимия",
+      "status": "already landed",
+      "repo_path": "GasunsDhatu_2014/04_glava4_kross-uok-omonimiya.mdx"
+    },
+    {
+      "part": "Глава 5. Dhatupatha Панини",
+      "status": "already landed",
+      "repo_path": "GasunsDhatu_2014/05_glava5_dhatupatha-panini.mdx"
+    },
+    {
+      "part": "Глава 6. Корпусная аттестация",
+      "status": "already landed",
+      "repo_path": "GasunsDhatu_2014/06_glava6_korpusnaya-attestaciya.mdx"
+    },
+    {
+      "part": "Глава 7. Указатель Зализняка",
+      "status": "already landed",
+      "repo_path": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx"
+    },
+    {
+      "part": "Библиография (standalone reference list, 525 entries per GOST_BIBLIOGRAPHY_DRYRUN_REPORT.md)",
+      "yadisk_source": "01_gasuns-dhatu-PhD-ref.pdf",
+      "status": "NEW — text-layer extracted this pass",
+      "repo_path": "phd_corpus/bibliography_ref.jsonl",
+      "pages": 23,
+      "cyr_ratio": 0.974,
+      "note": "Cross-check candidate against the inline Библиография section of 02_gasuns-dhatu-PhD-text2.mdx and gost_bibliography_check.py's 525-entry count — not yet diffed (out of this pass's scope)."
+    },
+    {
+      "part": "Приложение 1. Список корней У. Уитни и Р. Бакнелла",
+      "yadisk_source": "03_01-gasuns-dhatu-suppl.pdf",
+      "status": "NEW — not previously in repo",
+      "repo_path": "phd_corpus/suppl1_whitney_bucknell_roots.jsonl",
+      "pages": 7,
+      "cyr_ratio": 0.233,
+      "note": "Low Cyrillic ratio is EXPECTED, not a blank-trap: page content is IAST-transliterated root list (Latin+diacritics), Russian is only the caption prose."
+    },
+    {
+      "part": "Приложение 2. Список корней У. Уитни (по префиксам)",
+      "yadisk_source": "04_02-gasuns-dhatu-suppl.pdf",
+      "status": "NEW",
+      "repo_path": "phd_corpus/suppl2_whitney_roots_by_prefix.jsonl",
+      "pages": 7,
+      "cyr_ratio": 0.063,
+      "note": "Same IAST-heavy pattern as Приложение 1 — verified not blank via page-1 text sample, not just the ratio heuristic."
+    },
+    {
+      "part": "Приложение 3. Конкорданс древнеиндийских корней — THE table PALSULE_AUDIT.md names as the blocker for the “потерянные настоящие корни” method (step 1: Оцифровать колонку исключений Приложения 3)",
+      "yadisk_source": "05_03-gasuns-dhatu-suppl.pdf (236pp, PDF text layer) + gasuns-dhatu-concordance.xlsm (machine-readable source spreadsheet, sheets 'Final' and 'c PWK')",
+      "status": "NEW — digitized this pass, both as raw text and as structured claim-census",
+      "repo_path": "phd_corpus/suppl3_concordance_text.jsonl (raw PDF text, 236 pages) + phd_corpus/dhatu_concordance_claim_census.jsonl + .csv (structured, from the xlsm)",
+      "pages": 236,
+      "cyr_ratio": 0.045,
+      "note": "Cyrillic ratio is low by design (IAST root forms + German Böhtlingk glosses); verified against page-1 sample: header row confirms 'Приложение 3 / Конкорданс древнеиндийских корней / Palsule Dhātupāṭha ... Whitney ... Mayrhofer EWA ... Werba VIA I ... Böhtlingk PWG'. THIS UNBLOCKS PALSULE_AUDIT.md step 1."
+    },
+    {
+      "part": "Приложение 4. Список корней Ж. Юэта (обычный и обратный)",
+      "yadisk_source": "06_04-gasuns-dhatu-suppl.pdf",
+      "status": "NEW",
+      "repo_path": "phd_corpus/suppl4_huet_roots.jsonl",
+      "pages": 3,
+      "cyr_ratio": 0.085,
+      "note": "580 roots per Huet's database (autumn 2014 snapshot) — candidate cross-check against WhitneyRoots crosswalk and vidyut dhatupatha, same family of comparison as PALSULE_AUDIT."
+    },
+    {
+      "part": "Приложение 5. Бинарное сопоставление книг-источников",
+      "yadisk_source": "07_05-gasuns-dhatu-suppl.pdf",
+      "status": "NEW",
+      "repo_path": "phd_corpus/suppl5_binary_source_comparison.jsonl",
+      "pages": 9,
+      "cyr_ratio": 0.929,
+      "note": "Feature-comparison matrix of 13 dictionary/dhatupatha sources (Wh1,Bk,Ht,Wg,Pa,Pl,PWG,MW,Lh,Zn,Mc,KEWA,EWA,VIAI) across coverage/method criteria."
+    },
+    {
+      "part": "08-gasuns-PhD.pdf (combined full document)",
+      "status": "NOT ingested — redundant with the split files above; skipped to avoid duplicate corpus text",
+      "pages": 487,
+      "note": "Held back deliberately; if a future pass needs a single-file cross-check, re-derive from this pass's method rather than re-ingesting a duplicate JSONL."
+    }
+  ],
+  "not_landed_pdfs_stay_gitignored": true,
+  "raw_pdfs_location": "local staging only (yadisk WebDAV fetch, not committed) — per mission 'derived-only, PDFs gitignored'"
+}
