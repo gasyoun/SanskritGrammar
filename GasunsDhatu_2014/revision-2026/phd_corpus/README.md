@@ -30,7 +30,7 @@ per the derived-only landing rule ([reports/YADISK_INVENTORY_07-09-2026.md](http
 measured it returning *zero* Cyrillic on Russian text while looking shape-plausible
 (right token count, right spacing). All extraction here used **PyMuPDF (`fitz`)**,
 one of the four readers that scored 8/8 in that bake-off. Every file's Cyrillic-letter
-ratio is recorded in [toc_index.json](toc_index.json); three supplements score low
+ratio is recorded in [toc_index.json](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/toc_index.json); three supplements score low
 (0.05–0.23) — verified by reading the page-1 text sample, not the ratio alone, to be
 genuine IAST/Latin-diacritic root tables (Приложения 1/2/3), not a blank-trap.
 
