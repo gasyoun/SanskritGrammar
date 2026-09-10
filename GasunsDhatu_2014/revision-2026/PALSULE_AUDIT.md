@@ -54,4 +54,19 @@ _Created: 07-07-2026 · Last updated: 10-09-2026_
 Список кандидатов для А39 по-прежнему заблокирован шагом 1 (оцифровка колонки
 исключений Приложения 3 из исходного `.docx`/PDF).
 
+## Шаг 1 выполнен (10-09-2026, H4479) — Приложение 3 оцифровано
+
+Полный конкорданс Приложения 3 (`gasuns-dhatu-concordance.xlsm`, лист `Final`, 7 379
+строк) обработан в структурированный claim-census: 3 687 записей-корней, из них
+**1 323 (35,9 %) встречаются только у Пальсуле** (0 других источников) — прямое
+измерение размаха претензии Крылова по всему конкордансу, не только по трём
+примерам-корням. Артефакты: [phd_corpus/dhatu_concordance_claim_census.jsonl](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/dhatu_concordance_claim_census.jsonl) /
+[.csv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/dhatu_concordance_claim_census.csv),
+метод и известное ограничение (эвристика `root_entry` vs `continuation_or_gloss` по
+одной колонке) — [phd_corpus/README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/README.md).
+**Шаг 2 (нормализация в SLP1) и шаг 3 (джойн против vidyut dhatupatha.tsv +
+WhitneyRoots/crosswalk/roots.csv) остаются не выполненными** — этот пасс дал только
+структурированный список Palsule-only кандидатов, не финальный список «потерянных
+корней» на визу автору.
+
 _Dr. Mārcis Gasūns_
