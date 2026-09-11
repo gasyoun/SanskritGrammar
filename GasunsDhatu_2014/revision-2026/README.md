@@ -1,6 +1,6 @@
 # revision-2026 — рабочие материалы подготовки печатного издания 2026 г.
 
-_Created: 07-07-2026 · Last updated: 17-08-2026_
+_Created: 07-07-2026 · Last updated: 10-09-2026_
 
 Working notes for the 2026 print edition of Gasūns, «Состав и строй древнеиндийских корней»
 ([H246](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H246-Fable_GasunsDhatu_2026_printed_book_prep_06.07.26.md), private hub).
@@ -72,5 +72,11 @@ cd GasunsDhatu_2014/revision-2026
 python gost_bibliography_check.py
 python numbers_crosscheck.py
 ```
+
+## phd_corpus — dissertation supplements + bibliography digitized (H4479, 10-09-2026)
+
+| File | What it is |
+|---|---|
+| [phd_corpus/README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/README.md) | TOC index of the whole dissertation (landed vs new), extraction method, and the concordance claim-census that unblocks PALSULE_AUDIT.md step 1 |
 
 _Dr. Mārcis Gasūns_
