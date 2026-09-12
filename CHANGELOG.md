@@ -105,6 +105,13 @@ _Created: 25-08-2026 · Last updated: 22-09-2026_
   generalized with front-matter overrides (pilot output byte-identical) and new
   [tools/pdf_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/pdf_to_mdx.py)
   (PyMuPDF per-page verbatim; poppler banned on Cyrillic).
+- H4479 (OxAlpha, glm-5.3-flash): Gasuns PhD dissertation derived corpus —
+  7 PDFs from yadisk `Sanskrityatina/34_Диссертация` extracted via PyMuPDF
+  text layer (7/7 PASS, 508 pp, ~974k chars; pdftotext-forbidden rule held),
+  per-page JSONL + 31-entry TOC index + dhātu claim-census committed in
+  [corpus/gasuns-dissertation/](https://github.com/gasyoun/SanskritGrammar/tree/main/corpus/gasuns-dissertation)
+  (PDFs gitignored). Приложение 3 concordance fully digitized — unblocks
+  PALSULE_AUDIT step 1; @DECIDE pending: first supplement to feed revision-2026.
 - H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
   27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
   [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
