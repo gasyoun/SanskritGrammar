@@ -4,6 +4,16 @@ _Created: 25-08-2026 · Last updated: 10-09-2026_
 
 ## [Unreleased]
 
+- H4486 (OxAlpha, glm-5.3-flash): Emeneau & van Nooten *Sanskrit Sandhi and
+  Exercises* (2nd ed.) → sandhi-drills gold enrich — 95 gold-format drill
+  items (join/identify MCQ) extracted from the external-sandhi exercises 11–14
+  of the 2019 vintage, answers derived by a committed rules-41–71 junction
+  engine parity-gated against 37 worked examples printed in the pamphlet;
+  extraction census (3 vintages) + format mapping committed under
+  [data/emeneo_sandhi/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/emeneo_sandhi/);
+  `.doc` sources stay local (yadisk `Санскрит/18_Эмено/`). Verdict: gold
+  enrichment (item layer keyed to MG course lessons; rule layer duplicates
+  kosha corpus-sandhi coverage).
 - H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
   27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
   [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
