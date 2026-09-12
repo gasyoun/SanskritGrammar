@@ -166,3 +166,6 @@ Elizarenkova_2004/
 **/__MACOSX/
 
 review/
+
+# H4479: dissertation PDF sources stay local; only derived text/indexes commit.
+corpus/gasuns-dissertation/src/
