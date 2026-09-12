@@ -1,6 +1,16 @@
-_Created: 25-08-2026 · Last updated: 05-09-2026_
+_Created: 25-08-2026 · Last updated: 13-09-2026_
 
 # Changelog
+
+## [Unreleased]
+
+- H4483 (OxAlpha, glm-5.3-flash, two independent passes): SpeyerSyntax_1886
+  claims-harvest queue — 82 unpromoted candidates from Speijer *Sanskrit Syntax*
+  1886 (pass 1 `SPE-H-1..40` keyword-sweep 10-09-2026; pass 2 `SPE-H-101..142`
+  section-sampled second reader 13-09-2026, 5 cross-pass agreements marked
+  `dup_with`) + per-book text-layer verdicts for the whole yadisk syntax set
+  ([docs/SYNTAX_DARK_LIBRARY_TEXTLAYER_VERDICT_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SYNTAX_DARK_LIBRARY_TEXTLAYER_VERDICT_2026.md)).
+  Queue: [SpeyerSyntax_1886/claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/SpeyerSyntax_1886/claims_harvest.yml).
 
 All notable changes to this repo's shared infrastructure (errata system, site
 tooling, docs) are documented here. **Book-specific changes now live in each
