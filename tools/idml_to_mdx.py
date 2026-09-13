@@ -17,7 +17,11 @@ Method:
      CharacterStyleRange → <Content>, with <Br/> as line breaks.
   4. Emit YAML-front-mattered .mdx with provenance + verbatim body.
 
-Usage: python3 tools/idml_to_mdx.py <file.idml> <out.mdx>
+Usage: python3 tools/idml_to_mdx.py <file.idml> <out.mdx> [--key=value ...]
+
+Optional --key=value pairs override front-matter fields (source_package,
+source_path, source_exported, extractor, status, title). With no overrides
+the output reproduces the H4484 Lihushina pilot byte-identically.
 """
 import re
 import sys
@@ -83,10 +87,17 @@ def story_text(zf, story_id):
     return paras
 
 def main():
-    if len(sys.argv) != 3:
+    pos, overrides = [], {}
+    for a in sys.argv[1:]:
+        if a.startswith("--") and "=" in a:
+            k, v = a[2:].split("=", 1)
+            overrides[k] = v
+        else:
+            pos.append(a)
+    if len(pos) != 2:
         print(__doc__)
         return 2
-    src, out = sys.argv[1], sys.argv[2]
+    src, out = pos
     zf = zipfile.ZipFile(src)
     ordered, seen = [], set()
     for sp in spread_order(zf):
@@ -115,12 +126,22 @@ def main():
         stats["deva"] += sum(1 for p in paras for ch in p if "\u0900" <= ch <= "\u097F")
     doc = "\n\n".join(body)
 
+    meta = {
+        "source_package": "lihusina-15.12.14.idml",
+        "source_path": "yadisk:Sanskrityatina/33_Lihusina/lihusina-15.12.14.idml",
+        "source_exported": "2014-12-16",
+        "extractor": "tools/idml_to_mdx.py (H4484)",
+        "status": "pilot (H4484)",
+        "title": "# Хрестоматия (верстка lihusina, IDML 15.12.2014) — пилотная цифровая редакция",
+    }
+    meta.update(overrides)
+
     header = (
         "---\n"
-        "source_package: lihusina-15.12.14.idml\n"
-        "source_path: yadisk:Sanskrityatina/33_Lihusina/lihusina-15.12.14.idml\n"
-        "source_exported: 2014-12-16\n"
-        "extractor: tools/idml_to_mdx.py (H4484)\n"
+        f"source_package: {meta['source_package']}\n"
+        f"source_path: {meta['source_path']}\n"
+        f"source_exported: {meta['source_exported']}\n"
+        f"extractor: {meta['extractor']}\n"
         "method: >-\n"
         "  IDML Story XML verbatim extraction; spread order from designmap.xml,\n"
         "  frames ordered by ItemTransform (top,left) per spread; stories not placed\n"
@@ -131,9 +152,9 @@ def main():
         f"paragraphs: {stats['paras']}\n"
         f"chars: {stats['chars']}\n"
         f"devanagari_chars: {stats['deva']}\n"
-        "status: pilot (H4484)\n"
+        f"status: {meta['status']}\n"
         "---\n\n"
-        "# Хрестоматия (верстка lihusina, IDML 15.12.2014) — пилотная цифровая редакция\n\n"
+        f"{meta['title']}\n\n"
     )
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(header + doc + "\n")
