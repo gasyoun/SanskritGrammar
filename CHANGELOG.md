@@ -1,9 +1,17 @@
-_Created: 25-08-2026 · Last updated: 10-09-2026_
+_Created: 25-08-2026 · Last updated: 13-09-2026_
 
 # Changelog
 
 ## [Unreleased]
 
+- H4642 (OxAlpha, opencode/z-ai/glm-5.3-flash): Bibliotheca e-publish wave 1 —
+  toms II–V (idml route) + tom XVIII (never-print D3, MG 13-09-2026: block-PDF
+  e-publish); full entry in
+  [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md).
+  Shared tooling: [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)
+  generalized with front-matter overrides (pilot output byte-identical) and new
+  [tools/pdf_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/pdf_to_mdx.py)
+  (PyMuPDF per-page verbatim; poppler banned on Cyrillic).
 - H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
   27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
   [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
