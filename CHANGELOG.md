@@ -1,9 +1,16 @@
-_Created: 25-08-2026 · Last updated: 10-09-2026_
+_Created: 25-08-2026 · Last updated: 13-09-2026_
 
 # Changelog
 
 ## [Unreleased]
 
+- H4628 (OxAlpha, opencode/z-ai/glm-5.3-flash): e-publish волна 1, тома II–V
+  Bibliotheca Sanscritica — 4 mdx + coverage-check GREEN; manifest:
+  [BibliothecaSanscritica/E_PUBLISH_MANIFEST.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/E_PUBLISH_MANIFEST.md),
+  full entry in
+  [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md).
+  Tools: idml_to_mdx.py per-volume provenance; new pdf_to_mdx.py (PyMuPDF) +
+  idml_coverage_check.py (independent re-extraction gate, floor 90%).
 - H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
   27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
   [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
