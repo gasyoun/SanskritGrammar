@@ -1,0 +1,17 @@
+{
+  "study": "PWG compound-split layer × DCS attested compounds (census A6, H4712)",
+  "as_of": "2026-09-15",
+  "pwg_layer": "data/pwg_compound_split/pwg_compound_splits.tsv",
+  "dcs_source": "VisualDCS/derived-data/Kompozity/names.csv",
+  "dcs_keys": 167280,
+  "pwg_rows": 17112,
+  "attested": 577,
+  "prefix_evidence": 3353,
+  "unattested": 13182,
+  "attested_exact_form": 260,
+  "attested_folded_only": 317,
+  "arity_agree": 576,
+  "arity_disagree": 1,
+  "seam_no_sandhi": 295,
+  "seam_sandhi": 282
+}
