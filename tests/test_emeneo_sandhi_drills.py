@@ -54,6 +54,17 @@ def test_choices_are_4way_mcq():
         assert choices[0] == r["answer"], r["id"]
 
 
+def test_no_duplicate_question_answer():
+    """Gold must not carry literal duplicate drills (pamphlet repeats junctions)."""
+    seen, dups = set(), []
+    for r in _rows():
+        key = (r["question"], r["answer"])
+        if key in seen:
+            dups.append(r["id"])
+        seen.add(key)
+    assert not dups, f"duplicate drills: {dups}"
+
+
 def test_context_carries_provenance():
     for r in _rows():
         assert "Emeneau&vanNooten 2nd ed." in r["context"], r["id"]

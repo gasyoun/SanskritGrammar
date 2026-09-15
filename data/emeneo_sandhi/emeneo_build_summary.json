@@ -1,15 +1,15 @@
 {
   "vintage": "2019",
-  "drills": 95,
+  "drills": 94,
   "by_type": {
-    "join": 73,
-    "identify": 22
+    "identify": 22,
+    "join": 72
   },
   "by_category": {
+    "vowel coalescence": 22,
     "consonant": 13,
-    "anusvāra / nasal": 13,
     "visarga": 29,
-    "vowel coalescence": 23,
+    "anusvāra / nasal": 13,
     "unchanged junction": 17
   },
   "parity_examples_passed": 37,
@@ -122,6 +122,7 @@
     "Ex11 compound go+aśva (documented exclusion)",
     "Ex14 compound tat+ḍiṇḍima (documented exclusion)",
     "Ex14 compound vidyut+lekhā (documented exclusion)",
-    "Ex14 compound vidyut+mālā (documented exclusion)"
+    "Ex14 compound vidyut+mālā (documented exclusion)",
+    "ESD-0011 duplicate of an earlier drill ('Join (external sandhi): asti + araṇye') — dropped"
   ]
 }

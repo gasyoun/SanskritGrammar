@@ -55,7 +55,7 @@ Emeneo drills keep the exact column set; `--check` mode asserts ≥50 rows.
 
 - The junction/rule layer DUPLICATES kosha corpus-sandhi coverage (the same
   Whitney rules induce kosha's 13k-rule table).
-- The ITEM layer ENRICHES: 95 human-authored practice instances keyed to MG's
+- The ITEM layer ENRICHES: 94 human-authored practice instances keyed to MG's
   own course lessons (Kochergina/Zaliznyak/Elizarenkova anchors), a corpus the
   kosha drills (auto-induced from DCS) do not contain. Verdict: **gold
   enrichment**.

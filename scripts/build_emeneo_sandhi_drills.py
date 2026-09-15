@@ -640,6 +640,21 @@ def build(vintage: str = "2019") -> dict:
             "context": ctx,
         })
 
+    # Exact-(question, answer) dedupe: the pamphlet repeats the same junction
+    # in consecutive exercise items (e.g. Ex.11 items 6,7 and 8 are both
+    # asti + araṇye); gold must not carry literal duplicate drills. First
+    # occurrence wins (earliest provenance), the dropped twin is logged.
+    seen_qa: set[tuple[str, str]] = set()
+    deduped = []
+    for d in drills:
+        key = (d["question"], d["answer"])
+        if key in seen_qa:
+            excluded.append(f"{d['id']} duplicate of an earlier drill ('{d['question']}') — dropped")
+            continue
+        seen_qa.add(key)
+        deduped.append(d)
+    drills = deduped
+
     return {"census": census, "drills": drills, "excluded": excluded, "vintage": vintage}
 
 
