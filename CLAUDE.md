@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 02-09-2026_
+_Created: 20-07-2026 · Last updated: 15-09-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
@@ -154,5 +154,9 @@ Default five-role vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`,
 
 Single-context layout (root `CONTEXT.md` + `docs/adr/`, created lazily —
 do not scaffold them upfront). See `docs/agents/domain.md`.
+
+## Memory store
+
+This repo keeps a committed memory store at [`.claude/projects/SanskritGrammar/memory/`](https://github.com/gasyoun/SanskritGrammar/tree/main/.claude/projects/SanskritGrammar/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
 
 _Dr. Mārcis Gasūns_

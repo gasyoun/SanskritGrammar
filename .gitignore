@@ -12,7 +12,9 @@ npm-debug.log*
 ~$*
 
 # Local Claude Code machine state (not repo content)
-/.claude/
+/.claude/*
+# committed memory store (H4547)
+!/.claude/projects/
 **/.claude/settings.local.json
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
@@ -166,3 +168,10 @@ Elizarenkova_2004/
 **/__MACOSX/
 
 review/
+
+# H4631 sandbox/credential baseline (13-09-2026): real env files are never
+# committed — house convention keeps secrets in ~/.secrets/;
+# .env.example stays tracked.
+.env
+.env.*
+!.env.example

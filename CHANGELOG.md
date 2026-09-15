@@ -1,12 +1,13 @@
-_Created: 25-08-2026 · Last updated: 10-09-2026_
+_Created: 25-08-2026 · Last updated: 15-09-2026_
 
 # Changelog
 
 ## [Unreleased]
 
 - H4486 (OxAlpha, glm-5.3-flash): Emeneau & van Nooten *Sanskrit Sandhi and
-  Exercises* (2nd ed.) → sandhi-drills gold enrich — 95 gold-format drill
-  items (join/identify MCQ) extracted from the external-sandhi exercises 11–14
+  Exercises* (2nd ed.) → sandhi-drills gold enrich — 94 gold-format drill
+  items (join/identify MCQ; 95 before exact-duplicate dedupe — one pamphlet
+  junction printed twice) extracted from the external-sandhi exercises 11–14
   of the 2019 vintage, answers derived by a committed rules-41–71 junction
   engine parity-gated against 37 worked examples printed in the pamphlet;
   extraction census (3 vintages) + format mapping committed under
@@ -14,6 +15,17 @@ _Created: 25-08-2026 · Last updated: 10-09-2026_
   `.doc` sources stay local (yadisk `Санскрит/18_Эмено/`). Verdict: gold
   enrichment (item layer keyed to MG course lessons; rule layer duplicates
   kosha corpus-sandhi coverage).
+- H4476 (OxAlpha, glm-5.3-flash): grammar-index catalog —
+  [GrammarIndexes/sanskrityatina/](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/GRAMMAR_INDEXES_CATALOG_13-09-2026.md)
+  catalogs 19 index items + 2 companion rows from
+  `yadisk:Sanskrityatina/Указатели указателей/` + `Index/Data/` (pages, granularity,
+  OCR state per file), maps each to a claims-audit target
+  (Kochergina 260-row + Bühler 403-row + Whitney 15-row registries as the
+  text-ready direct targets), and lands the derived
+  [index_of_owners.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/index_of_owners.tsv)
+  (21 rows × 11 cols). Raw scans stay on yadisk (rclone refetch documented); @DECIDE
+  pending on the first claims-harvest wave (recommendation: Kochergina ukazateli).
+
 - H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
   27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
   [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
