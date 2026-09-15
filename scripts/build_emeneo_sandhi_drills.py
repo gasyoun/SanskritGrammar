@@ -145,7 +145,11 @@ def junction(w1: str, w2: str) -> tuple[str, str, bool]:
         if i == "a":  # 46: after short diphthong initial a- drops
             return (w1 + " '" + w2[1:], "E46", True)
         if i in VOWEL:  # 47: -e before other vowel -> -a
-            return (w1[:-1] + "a" + w2[1:], "E47", True)
+            # then the ordinary a-junction resolves the surface form
+            # (e.g. e + ṛ -> a + ṛ -> ar, araṇye + ṛṣiḥ -> araṇyarṣiḥ);
+            # w2's initial vowel is never dropped (H4486 verifier fix).
+            joined, _sub, _ch = junction(w1[:-1] + "a", w2)
+            return (joined, "E47", True)
         return (f"{w1} {w2}", "E-none", False)
     if fcls == "o":
         if i == "a":  # 48-excluded case: o + a- -> av + a -> ā
@@ -178,6 +182,8 @@ def junction(w1: str, w2: str) -> tuple[str, str, bool]:
                     return (w1[:-2] + "o '" + w2[1:], "E50", True)
                 if w1.endswith("ās"):  # 55: -ās before vowel
                     return (w1[:-1] + " " + w2, "E55", True)
+                if w1.endswith(("is", "us")):  # 57+58: -is/-us + vowel -> -ir/-ur
+                    return (w1[:-1] + "r " + w2, "E57+E58", True)
                 return (w1[:-1] + " " + w2, "E51", True)  # 51: -as + other vowel -> a
             if w1 in ("sas", "eṣas"):  # 52: sas/eṣas + consonant
                 return (w1[:-1] + " " + w2, "E52", True)
@@ -186,8 +192,8 @@ def junction(w1: str, w2: str) -> tuple[str, str, bool]:
             if w1.endswith("ās") and i in VOWEL:  # 55 before vowel too
                 return (w1[:-1] + " " + w2, "E55", True)
             if i in VOICELESS_STOPS_SET:  # 57 -> visarga; 59 may sibilate
-                if i in VOICELESS_PAL_RT_DENT:  # 59
-                    return (w1 + " " + w2, "E57+E59", False)
+                if i in VOICELESS_PAL_RT_DENT:  # 59: s -> homorganic sibilant
+                    return (w1[:-1] + SIB_OF_STOP[i] + " " + w2, "E57+E59", True)
                 return (w1[:-1] + "ḥ " + w2, "E57", True)  # labial stop: ḥ stays
             if i in SIBILANTS:  # 57 net (sibilant is not a stop; visarga stays)
                 return (w1[:-1] + "ḥ " + w2, "E57", True)

@@ -2,15 +2,15 @@
   "vintage": "2019",
   "drills": 94,
   "by_type": {
-    "identify": 22,
-    "join": 72
+    "join": 76,
+    "identify": 18
   },
   "by_category": {
-    "vowel coalescence": 22,
-    "consonant": 13,
-    "visarga": 29,
     "anusvāra / nasal": 13,
-    "unchanged junction": 17
+    "consonant": 13,
+    "unchanged junction": 17,
+    "visarga": 29,
+    "vowel coalescence": 22
   },
   "parity_examples_passed": 37,
   "census": [
