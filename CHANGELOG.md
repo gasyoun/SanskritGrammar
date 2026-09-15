@@ -14,7 +14,10 @@ _Created: 25-08-2026 · Last updated: 15-09-2026_
   [data/emeneo_sandhi/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/emeneo_sandhi/);
   `.doc` sources stay local (yadisk `Санскрит/18_Эмено/`). Verdict: gold
   enrichment (item layer keyed to MG course lessons; rule layer duplicates
-  kosha corpus-sandhi coverage).
+  kosha corpus-sandhi coverage). Round-2 verifier correction (DeepSeek,
+  15-09-2026, [PR #938](https://github.com/gasyoun/SanskritGrammar/pull/938)):
+  engine s-final/e-final paths fixed — 5 wrong answers corrected
+  (ESD-0012/0021/0031/0059/0079), final split join=76 / identify=18.
 - H4476 (OxAlpha, glm-5.3-flash): grammar-index catalog —
   [GrammarIndexes/sanskrityatina/](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/GRAMMAR_INDEXES_CATALOG_13-09-2026.md)
   catalogs 19 index items + 2 companion rows from
