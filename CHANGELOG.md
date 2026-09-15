@@ -1,8 +1,19 @@
-_Created: 25-08-2026 · Last updated: 13-09-2026_
+_Created: 25-08-2026 · Last updated: 15-09-2026_
 
 # Changelog
 
 ## [Unreleased]
+
+- H4716 (OxAlpha, glm-5.3-flash): kosha `shiva-sutras-machine` consumed as the vendored
+  pratyāhāra reference table — byte-identical snapshot
+  [data/shiva_sutras/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/shiva_sutras/)
+  (14 sūtras + 42 pratyāhāra spans + 57-token master sequence, MIT, upstream-of-truth kosha
+  `11a243eb`) + deterministic verifier
+  [scripts/verify_shiva_pratyahara.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/verify_shiva_pratyahara.py)
+  (PASS: 14-sūtra master round-trip, 42/42 pratyāhāra expansion round-trip, all 14
+  it-markers consumed, classic aC/haL canaries). Report:
+  [REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md).
+  First consumer of the H4471 dataset; edge registered Uprava-side (H4716, 15-09-2026).
 
 - H4476 (OxAlpha, glm-5.3-flash): grammar-index catalog —
   [GrammarIndexes/sanskrityatina/](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/GRAMMAR_INDEXES_CATALOG_13-09-2026.md)
