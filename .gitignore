@@ -12,7 +12,9 @@ npm-debug.log*
 ~$*
 
 # Local Claude Code machine state (not repo content)
-/.claude/
+/.claude/*
+# committed memory store (H4547)
+!/.claude/projects/
 **/.claude/settings.local.json
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
