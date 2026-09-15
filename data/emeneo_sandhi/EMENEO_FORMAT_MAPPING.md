@@ -17,7 +17,7 @@ Emeneo drills keep the exact column set; `--check` mode asserts ≥50 rows.
 | kosha field | Emeneo source | convention |
 |---|---|---|
 | `id` | — | `ESD-####` (Emeneau sandhi drill; kosha uses `SD-####`, disjoint) |
-| `type` | item shape | `join` (surface changed), `identify` (junction unchanged — pragṛhiya, m+vowel, voiceless-before-voiceless etc.) |
+| `type` | item shape | `join` (junction resolved by rule application — the surface may still be identical when the net change is invisible, e.g. ESD-0078 itas + tatas: 57+59 fires but s before dental t stays s), `identify` (junction unchanged — pragṛhiya, m+vowel, voiceless-before-voiceless etc.) |
 | `rule` | pamphlet rule no. | `E41…E71`, chains `E66+E67`; pamphlet rule = Whitney ch.III ref (in `context`) |
 | `category` | rule class | kosha corpus-sandhi taxonomy: `vowel coalescence` (41–49), `visarga` (50–59), `anusvāra / nasal` (60–65), `consonant` (66–71), `unchanged junction` |
 | `lesson` | «После X занятия» anchor | first MG-course lesson number of the exercise: Ex11→7, Ex12→6, Ex13→7, Ex14→5 (full hint preserved in `context`) |
