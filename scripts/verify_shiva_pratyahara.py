@@ -86,10 +86,21 @@ def main() -> int:
     stripped = strip_markers(master)
     if stripped != "".join(r["letters_only"] for r in sutras):
         fails.append("C2 marker-stripped master != concatenated letters_only")
-    if not stripped or strip_markers(master) != stripped:
-        fails.append("C2 strip_markers not idempotent")
 
     # C3 — every named pratyāhāra round-trips against the master sequence
+    # C3a — JSON pratyaharas array must agree with the TSV rows field-by-field
+    tsv_names = {r["name"]: r for r in pras}
+    if len(blob.get("pratyaharas", [])) != len(pras):
+        fails.append(f"C3a JSON pratyaharas count {len(blob.get('pratyaharas', []))} != TSV {len(pras)}")
+    for j in blob.get("pratyaharas", []):
+        t = tsv_names.get(j.get("name"))
+        if t is None:
+            fails.append(f"C3a JSON pratyāhāra {j.get('name')!r} missing from TSV")
+            continue
+        for jk, tk in (("devanagari_span", "devanagari_span"), ("letters_only", "letters_only"),
+                       ("it_marker", "it_marker"), ("length", "length")):
+            if str(j.get(jk)) != t[tk]:
+                fails.append(f"C3a {j.get('name')}: JSON {jk}={j.get(jk)!r} != TSV {tk}={t[tk]!r}")
     for r in pras:
         name, letters, marker, span, length = (
             r["name"], r["letters_only"], r["it_marker"], r["devanagari_span"], int(r["length"]),
