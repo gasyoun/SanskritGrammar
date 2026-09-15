@@ -32,11 +32,11 @@ Machine-readable: `emeneo_items_census.tsv`, `emeneo_build_summary.json`.
 ## Drill harvest (from the 2019 vintage)
 
 - External-sandhi exercises 11, 12, 13, 14 → 37 sentence items → split into
-  **80 junction drills** (72 join + 22 identify… see summary JSON for final
-  counts) + **15 verified compound drills** (Ex 11b + 14a) → **95 drills**
-  before exact-duplicate dedupe → **94 drills** (Ex.11 items 6,7 and 8 are the
-  same junction asti + araṇye in the pamphlet; first occurrence kept, the
-  dropped twin logged in `excluded`).
+  80 junction drills + **15 verified compound drills** (Ex 11b + 14a) →
+  95 drills raw → **94 drills** after exact-duplicate dedupe (Ex.11 items 6,7
+  and 8 are the same junction asti + araṇye in the pamphlet; first occurrence
+  kept, the dropped twin logged in `excluded`). Final split: 76 join + 18
+  identify (see summary JSON); categories sum to 94.
 - Format: kosha `sandhi-drills` gold columns (see EMENEO_FORMAT_MAPPING.md).
 - Every answer is derived by the committed junction engine (rules 41–71) and
   parity-gated against **37 worked examples printed in the pamphlet itself**

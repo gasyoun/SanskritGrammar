@@ -65,6 +65,30 @@ def test_no_duplicate_question_answer():
     assert not dups, f"duplicate drills: {dups}"
 
 
+def test_engine_s_final_and_e_final_paths():
+    """H4486 verifier round 2: junction classes the printed parity examples
+    never exercise (all printed rule-59 examples are visarga-final, so the
+    -s-final branch shipped broken and parity stayed 37/37). Derivations:
+    rules 57+59 (s -> homorganic sibilant), 57+58 (-is/-us + vowel -> -ir/-ur),
+    47+43 (-e -> -a, then guṇa a+ṛ -> ar)."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("build_emeneo", BUILDER)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    cases = [
+        (("purusas", "ca"), "purusaś ca"),
+        (("tatas", "ca"), "tataś ca"),
+        (("pṛṣṭas", "ca"), "pṛṣṭaś ca"),
+        (("itas", "tatas"), "itas tatas"),  # s before dental t stays s
+        (("paraśubhis", "akṛntan"), "paraśubhir akṛntan"),
+        (("araṇye", "ṛṣiḥ"), "araṇyarṣiḥ"),
+    ]
+    for (w1, w2), expected in cases:
+        joined, _rule, _changed = mod.junction(w1, w2)
+        assert joined == expected, f"{w1} + {w2}: {joined!r} != {expected!r}"
+
+
 def test_context_carries_provenance():
     for r in _rows():
         assert "Emeneau&vanNooten 2nd ed." in r["context"], r["id"]
