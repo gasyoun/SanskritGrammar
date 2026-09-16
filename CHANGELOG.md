@@ -4,6 +4,20 @@ _Created: 25-08-2026 · Last updated: 16-09-2026_
 
 ## [Unreleased]
 
+- Opus 5 (`claude-opus-5`): escaped the MDX-unsafe characters in
+  [LihushinaChrestomathy_2015_pilot.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015_pilot.mdx),
+  the third and last independent cause of the red `main`. The pilot is a raw
+  IDML→MDX dump of legacy font-encoded Devanagari (Xdvng), where `<` and `{`
+  are ordinary glyph bytes (`AaTman< stt<`, `o{f>`); `1933–<1966>` is the
+  library convention for an open-ended series. MDX read each as the start of a
+  JSX tag or a JS expression and the site build died at the first one. The file
+  contains **zero** real HTML/JSX tags and no import/export, so all 169
+  occurrences were escaped (`\<`, `\{`, `\}` all render literally) rather
+  than only the three the build happened to reach — the narrow fix would have
+  reddened again on the next one. `<!-- -->` comments are left intact.
+  Verified with a full `docusaurus build` (exit 0); the remaining broken-anchor
+  warnings on the OCR'd Talmud pages are pre-existing and unrelated.
+
 - Opus 5 (`claude-opus-5`): nightly `consolidation_ledger.json` refresh
   ([.github/workflows/consolidation-ledger-nightly.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/consolidation-ledger-nightly.yml)).
   The `consolidation_ledger_refresh.py --check` gate in `ci.yml` compares date
