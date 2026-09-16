@@ -69,3 +69,27 @@ def test_multi_hunk_numbers_stay_independent(monkeypatch):
         + "@@ -40,1 +41,1 @@\n-old b\n+new b\n"
     )
     assert run_scanner(body, monkeypatch) == [10, 11, 40]
+
+
+def run_added_scanner(diff_body: str, monkeypatch) -> list[int]:
+    monkeypatch.setattr(guard, "git", lambda *args, **kwargs: diff_body)
+    return guard.added_line_numbers("origin/main", "HEAD", "x.md")
+
+
+def test_added_plusplus_content_line_is_counted_and_keeps_later_numbers(monkeypatch):
+    """The mirror of the removal defect: inside a hunk `++++` is an ADDED line
+    whose content is `+++`, not a file header. Skipping it also left
+    `new_line` un-incremented, shifting every later addition in the hunk."""
+    body = (
+        FILE_HEADERS
+        + "@@ -10,0 +10,3 @@\n"
+        + "+row A\n"
+        + "++++\n"        # added content line `+++`
+        + "+row C\n"
+    )
+    assert run_added_scanner(body, monkeypatch) == [10, 11, 12]
+
+
+def test_added_file_headers_before_first_hunk_are_still_ignored(monkeypatch):
+    body = FILE_HEADERS + "@@ -7,1 +7,1 @@\n-old row\n+new row\n"
+    assert run_added_scanner(body, monkeypatch) == [7]

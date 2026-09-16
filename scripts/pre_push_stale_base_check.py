@@ -557,12 +557,18 @@ def removed_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     numbers: list[int] = []
     old_line = 0
+    in_hunk = False
     for line in out.splitlines():
         m = HUNK_RE.match(line)
         if m:
             old_line = int(m.group(1))
+            in_hunk = True
             continue
-        if line.startswith("---") or line.startswith("+++"):
+        # `---`/`+++` are FILE headers only before the first hunk. Inside a hunk
+        # they are ordinary content: `----` is a removed Markdown `---` rule.
+        # Testing them unconditionally skipped such a line AND left `old_line`
+        # un-incremented, shifting every later removal in the same hunk.
+        if not in_hunk and (line.startswith("---") or line.startswith("+++")):
             continue
         if line.startswith("-"):
             numbers.append(old_line)
@@ -575,14 +581,18 @@ def added_line_numbers(remote_ref: str, local_ref: str, path: str) -> list[int]:
     out = git("diff", "-w", "-U0", remote_ref, local_ref, "--", path)
     numbers: list[int] = []
     new_line = 0
+    in_hunk = False
     for line in out.splitlines():
         # The plus side of the hunk header carries the NEW start; HUNK_RE above
         # captures only the minus side, so this needs its own pattern.
         hm = re.match(r"^@@ -\d+(?:,\d+)? \+(\d+)", line)
         if hm:
             new_line = int(hm.group(1))
+            in_hunk = True
             continue
-        if line.startswith("---") or line.startswith("+++"):
+        # Same header-vs-content rule as removed_line_numbers(): inside a hunk
+        # `+++` is an added line whose content is `++`, not a file header.
+        if not in_hunk and (line.startswith("---") or line.startswith("+++")):
             continue
         if line.startswith("+"):
             numbers.append(new_line)
