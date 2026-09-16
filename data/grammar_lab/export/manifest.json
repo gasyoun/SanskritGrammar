@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "bundle_version": "1.0.0",
-  "generated_at": "2026-08-22T12:09:31Z",
+  "generated_at": "2026-09-06T11:36:45Z",
   "generator": "scripts/build_grammar_lab.py",
   "published_topic_count": 32,
   "needs_review_count": 1,
@@ -39,7 +39,7 @@
     {
       "id": "zalizniak_loci",
       "path": "data/grammar_lab/loci/zalizniak_section_loci.yml",
-      "sha256": "34a2182669c93e802a2b554cce134be4916c078be317eea0df10de7b3160d0e0",
+      "sha256": "a518329ff8346b439f71d50bfd27328de72c5b9be26b18aeac8e674a62f906c3",
       "rights": "pointer-only-no-bulk-gloss"
     }
   ],
