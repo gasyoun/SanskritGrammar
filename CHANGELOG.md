@@ -3,7 +3,9 @@ _Created: 25-08-2026 · Last updated: 16-09-2026_
 # Changelog
 
 ## [Unreleased]
+<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+## [0.122.6] - 2026-09-16
 - Opus 5 (`claude-opus-5`): escaped the MDX-unsafe characters in
   [LihushinaChrestomathy_2015_pilot.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015_pilot.mdx),
   the third and last independent cause of the red `main`. The pilot is a raw
@@ -93,7 +95,6 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
-<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
 ### Added
 - **H4178 (OxAlpha `zai-coding-plan/glm-5.3-flash`): first consumer of the VisualDCS M9 dataset `dcs-verb-roots-by-class` — per-class attested-roots probe (06-09-2026).** [`scripts/dcs_verb_roots_by_class_probe.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/dcs_verb_roots_by_class_probe.py) reads the ten per-class CSVs (root + corpus count, IAST) from the sibling VisualDCS checkout read-only (manifest parity: 463 rows = 463) and lands the curriculum probe the REUSE_INDEX census named as this dataset's zero-consumer gap: per-class attested inventory (443 distinct roots, 281,491 corpus occurrences), per-class occurrence share (the frequency-ordered drill argument), the 19 cross-class roots a single-class drill would present falsely, and a top-20 frequency drill seed. Report: [`reports/DCS_VERB_ROOTS_BY_CLASS_PROBE_06.09.2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/reports/DCS_VERB_ROOTS_BY_CLASS_PROBE_06.09.2026.md).
