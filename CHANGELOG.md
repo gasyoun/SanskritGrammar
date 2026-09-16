@@ -4,6 +4,17 @@ _Created: 25-08-2026 · Last updated: 16-09-2026_
 
 ## [Unreleased]
 
+- Opus 5 (`claude-opus-5`): nightly `consolidation_ledger.json` refresh
+  ([.github/workflows/consolidation-ledger-nightly.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/consolidation-ledger-nightly.yml)).
+  The `consolidation_ledger_refresh.py --check` gate in `ci.yml` compares date
+  stamps, so the ledger went stale by the calendar alone and reddened `main` —
+  and with it every open PR — without a single code change. MG ruling
+  16-09-2026: move the regeneration into a nightly job rather than loosen the
+  gate, so the gate keeps its meaning and a robot pays the daily cost. Runs
+  03:17 UTC, PR-first (never pushes to `main`), opens nothing on a no-op night,
+  and fails rather than opening a PR if the refresh touches any file other than
+  the ledger.
+
 - Opus 5 (`claude-opus-5`): stale-base guard removal/addition scanners —
   `---`/`+++` are now treated as FILE headers only before the first hunk
   header. `removed_line_numbers()` tested `startswith("---")` on every line,
