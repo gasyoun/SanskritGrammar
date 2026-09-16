@@ -1,8 +1,47 @@
-_Created: 25-08-2026 · Last updated: 15-09-2026_
+_Created: 25-08-2026 · Last updated: 16-09-2026_
 
 # Changelog
 
 ## [Unreleased]
+
+- Opus 5 (`claude-opus-5`): escaped the MDX-unsafe characters in
+  [LihushinaChrestomathy_2015_pilot.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015_pilot.mdx),
+  the third and last independent cause of the red `main`. The pilot is a raw
+  IDML→MDX dump of legacy font-encoded Devanagari (Xdvng), where `<` and `{`
+  are ordinary glyph bytes (`AaTman< stt<`, `o{f>`); `1933–<1966>` is the
+  library convention for an open-ended series. MDX read each as the start of a
+  JSX tag or a JS expression and the site build died at the first one. The file
+  contains **zero** real HTML/JSX tags and no import/export, so all 169
+  occurrences were escaped (`\<`, `\{`, `\}` all render literally) rather
+  than only the three the build happened to reach — the narrow fix would have
+  reddened again on the next one. `<!-- -->` comments are left intact.
+  Verified with a full `docusaurus build` (exit 0); the remaining broken-anchor
+  warnings on the OCR'd Talmud pages are pre-existing and unrelated.
+
+- Opus 5 (`claude-opus-5`): nightly `consolidation_ledger.json` refresh
+  ([.github/workflows/consolidation-ledger-nightly.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/consolidation-ledger-nightly.yml)).
+  The `consolidation_ledger_refresh.py --check` gate in `ci.yml` compares date
+  stamps, so the ledger went stale by the calendar alone and reddened `main` —
+  and with it every open PR — without a single code change. MG ruling
+  16-09-2026: move the regeneration into a nightly job rather than loosen the
+  gate, so the gate keeps its meaning and a robot pays the daily cost. Runs
+  03:17 UTC, PR-first (never pushes to `main`), opens nothing on a no-op night,
+  and fails rather than opening a PR if the refresh touches any file other than
+  the ledger.
+
+- Opus 5 (`claude-opus-5`): stale-base guard removal/addition scanners —
+  `---`/`+++` are now treated as FILE headers only before the first hunk
+  header. `removed_line_numbers()` tested `startswith("---")` on every line,
+  so a removed line whose content is a Markdown `---` rule (diff text
+  `----`) was skipped **and** left `old_line` un-incremented, shifting every
+  later removal in the same hunk; the guard then blamed the wrong lines —
+  silent reverts slipped through, legitimate edits were misattributed.
+  `added_line_numbers()` carried the identical, untested defect for `+++`
+  content lines; both are fixed and the added side now has regression tests.
+  This un-reds `main`, which had failed its required gate on three
+  consecutive runs since 15-09-2026 and was red-gating all 8 open PRs
+  (4 of them dependabot). Pre-fix 3 failures, post-fix 7/7 green
+  ([PR #940](https://github.com/gasyoun/SanskritGrammar/pull/940)).
 
 - H4486 (OxAlpha, glm-5.3-flash): Emeneau & van Nooten *Sanskrit Sandhi and
   Exercises* (2nd ed.) → sandhi-drills gold enrich — 94 gold-format drill
