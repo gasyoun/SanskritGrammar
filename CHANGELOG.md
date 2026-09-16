@@ -4,6 +4,20 @@ _Created: 25-08-2026 · Last updated: 15-09-2026_
 
 ## [Unreleased]
 
+- Opus 5 (`claude-opus-5`): stale-base guard removal/addition scanners —
+  `---`/`+++` are now treated as FILE headers only before the first hunk
+  header. `removed_line_numbers()` tested `startswith("---")` on every line,
+  so a removed line whose content is a Markdown `---` rule (diff text
+  `----`) was skipped **and** left `old_line` un-incremented, shifting every
+  later removal in the same hunk; the guard then blamed the wrong lines —
+  silent reverts slipped through, legitimate edits were misattributed.
+  `added_line_numbers()` carried the identical, untested defect for `+++`
+  content lines; both are fixed and the added side now has regression tests.
+  This un-reds `main`, which had failed its required gate on three
+  consecutive runs since 15-09-2026 and was red-gating all 8 open PRs
+  (4 of them dependabot). Pre-fix 3 failures, post-fix 7/7 green
+  ([PR #940](https://github.com/gasyoun/SanskritGrammar/pull/940)).
+
 - H4486 (OxAlpha, glm-5.3-flash): Emeneau & van Nooten *Sanskrit Sandhi and
   Exercises* (2nd ed.) → sandhi-drills gold enrich — 94 gold-format drill
   items (join/identify MCQ; 95 before exact-duplicate dedupe — one pamphlet
