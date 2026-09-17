@@ -1,0 +1,316 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - link "Sign in" [ref=e55] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgasyoun%2Fkosha%2Fpull%2F584
+            - link "Sign up" [ref=e58] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fvoltron%2Fpull_requests_fragments%2Fpull_request_layout&source=header-repo&source_repo=gasyoun%2Fkosha
+            - button "Appearance settings" [ref=e61] [cursor=pointer]
+  - main [ref=e68]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e72]:
+          - link "gasyoun" [ref=e76] [cursor=pointer]:
+            - /url: /gasyoun
+          - generic [ref=e77]: /
+          - strong [ref=e78]:
+            - link "kosha" [ref=e79] [cursor=pointer]:
+              - /url: /gasyoun/kosha
+          - generic [ref=e80]: Public
+        - generic [ref=e81]:
+          - list:
+            - listitem [ref=e82]:
+              - link "You must be signed in to change notification settings" [ref=e83] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2Fkosha
+                - text: Notifications
+            - listitem [ref=e86]:
+              - link "Fork 0" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2Fkosha
+                - text: Fork
+                - generic "0" [ref=e90]
+            - listitem [ref=e91]:
+              - link "You must be signed in to star a repository" [ref=e93] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2Fkosha
+                - text: Star
+                - generic "0 users starred this repository" [ref=e96]: "0"
+      - navigation "Repository" [ref=e97]:
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "Code" [ref=e100] [cursor=pointer]:
+              - /url: /gasyoun/kosha
+          - listitem [ref=e104]:
+            - link "Issues 11" [ref=e105] [cursor=pointer]:
+              - /url: /gasyoun/kosha/issues
+              - generic [ref=e109]: Issues
+              - generic "11" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Pull requests 8" [ref=e112] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pulls
+              - generic [ref=e115]: Pull requests
+              - generic "8" [ref=e116]
+          - listitem [ref=e117]:
+            - link "Actions" [ref=e118] [cursor=pointer]:
+              - /url: /gasyoun/kosha/actions
+          - listitem [ref=e122]:
+            - link "Projects" [ref=e123] [cursor=pointer]:
+              - /url: /gasyoun/kosha/projects
+          - listitem [ref=e127]:
+            - link "Security and quality" [ref=e128] [cursor=pointer]:
+              - /url: /gasyoun/kosha/security
+          - listitem [ref=e132]:
+            - link "Insights" [ref=e133] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pulse
+    - generic [ref=e143]:
+      - generic [ref=e147]:
+        - generic [ref=e149]:
+          - 'heading "H4730: zaliznyak-oddbank-drills — classsplit verdicts as oddball drill bank - #584" [level=1] [ref=e150]':
+            - text: "H4730: zaliznyak-oddbank-drills — classsplit verdicts as oddball drill bank"
+            - generic [ref=e151]: "- #584"
+          - generic [aria-hidden] [ref=e153]: "#584"
+        - generic [ref=e155]:
+          - generic [ref=e157]:
+            - img "Pull request" [ref=e158]
+            - text: Merged
+          - generic [ref=e161]:
+            - link "gasyoun" [ref=e162] [cursor=pointer]:
+              - /url: /gasyoun
+            - text: merged 2 commits into
+            - generic [ref=e163]:
+              - link "main" [ref=e164] [cursor=pointer]:
+                - /url: /gasyoun/kosha/tree/main
+              - generic [ref=e165]: from
+              - generic [ref=e166]:
+                - link "h4730-drain" [ref=e167] [cursor=pointer]:
+                  - /url: /gasyoun/kosha/tree/h4730-drain
+                - button "Copy head branch name to clipboard" [ref=e168] [cursor=pointer]
+            - generic [ref=e172]: Sep 15, 2026Sep 15, 2026
+        - navigation "Pull request navigation" [ref=e177]:
+          - generic [ref=e178]:
+            - link "Conversation" [ref=e179] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pull/584
+            - link "Commits (2)" [ref=e182] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pull/584/commits
+              - text: Commits
+              - generic [aria-hidden] [ref=e185]: "2"
+              - generic [ref=e186]: (2)
+            - link "Checks" [ref=e187] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pull/584/checks
+            - link "Files changed" [ref=e190] [cursor=pointer]:
+              - /url: /gasyoun/kosha/pull/584/files
+      - generic [ref=e197]:
+        - generic [ref=e199]:
+          - heading "Conversation" [level=2] [ref=e200]
+          - generic [ref=e201]:
+            - generic [ref=e202]:
+              - generic [ref=e204]:
+                - link [ref=e205] [cursor=pointer]:
+                  - /url: /gasyoun
+                  - img "@gasyoun" [ref=e206]
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - heading [level=3] [ref=e210]:
+                      - generic [ref=e211]:
+                        - strong [ref=e212]:
+                          - link "gasyoun" [ref=e213] [cursor=pointer]:
+                            - /url: /gasyoun
+                        - text: commented
+                        - link "Sep 15, 202615 minutes ago" [ref=e214] [cursor=pointer]:
+                          - /url: "#issue-5457747783"
+                    - generic [ref=e215]:
+                      - group [ref=e217]:
+                        - button [ref=e218] [cursor=pointer]:
+                          - img "Show options" [ref=e221]
+                      - generic "This user is the owner of the kosha repository." [ref=e224]: Owner
+                  - generic [ref=e229]:
+                    - 'heading "H4730 — census C3: dcs-nominal-class-split(-adj) → zaliznyak-oddbank-drills" [level=2] [ref=e230]'
+                    - paragraph [ref=e231]: First consumer of the H3984/H4011 -ant/-at pooled-class verdict banks.
+                    - list [ref=e232]:
+                      - listitem [ref=e233]:
+                        - strong [ref=e234]: "Builder:"
+                        - code [ref=e235]: scripts/build_zaliznyak_oddbank_drills.py
+                        - text: — reads both VisualDCS verdict files at build time (never vendored); deterministic (no RNG)
+                      - listitem [ref=e236]:
+                        - strong [ref=e237]: "Bank:"
+                        - text: 1,722 items = 1,464
+                        - code [ref=e238]: classify-verdict
+                        - text: (one per resolved verdict row) + 258
+                        - code [ref=e239]: odd-one-out
+                        - text: (3 alternants + 1 at_only/ant_only oddball); 695 unresolved rows excluded, not guessed
+                      - listitem [ref=e240]:
+                        - strong [ref=e241]: "Traceability:"
+                        - text: every item carries
+                        - code [ref=e242]: verdict_refs
+                        - text: "→ {source_dataset, lemma_id, lemma, verdict};"
+                        - code [ref=e243]: "--check"
+                        - text: re-resolves all refs against the live sources — an untraceable item is a build failure
+                      - listitem [ref=e244]:
+                        - strong [ref=e245]: "Registry:"
+                        - text: new
+                        - code [ref=e246]: datasets.json
+                        - text: row + consumers flipped on both producer rows; data statement; changelog queue entry; report
+                        - code [ref=e247]: docs/H4730_ODDBANK_DRILLS_REPORT_15.09.26.md
+                    - paragraph [ref=e248]:
+                      - text: "Evidence:"
+                      - code [ref=e249]: "CHECK PASS: 1722 items, all verdict_refs re-resolve"
+                      - text: ; answer positions rotation-balanced (64/65/65/64); bhagavant/bhagavat pinned-pair item verified.
+              - generic [ref=e250]:
+                - generic [ref=e261]:
+                  - link [ref=e264] [cursor=pointer]:
+                    - /url: /gasyoun
+                    - img "@gasyoun" [ref=e265]
+                  - generic [ref=e266]:
+                    - code [ref=e267]:
+                      - 'link "H4730: zaliznyak-oddbank-drills — first consumer of dcs-nominal-class…" [ref=e268] [cursor=pointer]':
+                        - /url: /gasyoun/kosha/pull/584/commits/f76c29f2850a2323d0c3a10e942f890dc249f9ad
+                    - button "Commit message body" [ref=e270] [cursor=pointer]: …
+                  - group [ref=e274]:
+                    - img "2 / 3 checks OK" [ref=e276] [cursor=pointer]
+                  - code [ref=e279]:
+                    - link "f76c29f" [ref=e280] [cursor=pointer]:
+                      - /url: /gasyoun/kosha/pull/584/commits/f76c29f2850a2323d0c3a10e942f890dc249f9ad
+                - generic [ref=e287]:
+                  - link [ref=e289] [cursor=pointer]:
+                    - /url: /gasyoun
+                    - img "@gasyoun" [ref=e290]
+                  - generic [ref=e291]:
+                    - link "gasyoun" [ref=e292] [cursor=pointer]:
+                      - /url: /gasyoun
+                    - text: enabled auto-merge (squash)
+                    - link "September 15, 2026 05:0215 minutes ago" [ref=e293] [cursor=pointer]:
+                      - /url: "#event-31148091041"
+                - generic [ref=e304]:
+                  - link [ref=e307] [cursor=pointer]:
+                    - /url: /gasyoun
+                    - img "@gasyoun" [ref=e308]
+                  - generic [ref=e309]:
+                    - code [ref=e310]:
+                      - 'link "H4730: README dataset-count invariant 133→134 (116 public) for zalizn…" [ref=e311] [cursor=pointer]':
+                        - /url: /gasyoun/kosha/pull/584/commits/7187f18061d7e0b117d551c376371aba50f08d25
+                    - button "Commit message body" [ref=e313] [cursor=pointer]: …
+                  - group [ref=e317]:
+                    - img "3 / 3 checks OK" [ref=e319] [cursor=pointer]
+                  - code [ref=e322]:
+                    - link "7187f18" [ref=e323] [cursor=pointer]:
+                      - /url: /gasyoun/kosha/pull/584/commits/7187f18061d7e0b117d551c376371aba50f08d25
+                - generic [ref=e324]:
+                  - generic [ref=e329]:
+                    - button "View details" [ref=e330] [cursor=pointer]
+                    - generic [ref=e331]:
+                      - link [ref=e333] [cursor=pointer]:
+                        - /url: /gasyoun
+                        - img "@gasyoun" [ref=e334]
+                      - generic [ref=e335]:
+                        - link "gasyoun" [ref=e336] [cursor=pointer]:
+                          - /url: /gasyoun
+                        - text: merged commit
+                        - link [ref=e337] [cursor=pointer]:
+                          - /url: /gasyoun/kosha/commit/8dca3a832cb60eef663a77519b6be647b9f7f175
+                          - code [ref=e338]: 8dca3a8
+                        - text: into
+                        - generic [ref=e339]: main
+                        - link "Sep 15, 20269 minutes ago" [ref=e341] [cursor=pointer]:
+                          - /url: https://github.com/gasyoun/kosha/pull/584#event-31148336684
+                        - generic [ref=e342]: 3 checks passed
+                  - generic [ref=e349]:
+                    - link [ref=e351] [cursor=pointer]:
+                      - /url: /gasyoun
+                      - img "@gasyoun" [ref=e352]
+                    - generic [ref=e353]:
+                      - link "gasyoun" [ref=e354] [cursor=pointer]:
+                        - /url: /gasyoun
+                      - text: deleted the
+                      - generic [ref=e355]: h4730-drain
+                      - text: branch
+                      - link "September 15, 2026 05:089 minutes ago" [ref=e357] [cursor=pointer]:
+                        - /url: "#event-31148337394"
+            - generic [ref=e361]:
+              - link "Sign up for free" [ref=e362] [cursor=pointer]:
+                - /url: /join?source=comment-repo
+              - strong [ref=e363]: to join this conversation on GitHub
+              - text: . Already have an account?
+              - link "Sign in to comment" [ref=e364] [cursor=pointer]:
+                - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgasyoun%2Fkosha%2Fpull%2F584
+        - generic [ref=e368]:
+          - form "Select reviewers" [ref=e370]:
+            - heading "Reviewers" [level=3] [ref=e371]
+            - text: No reviews
+          - form "Select assignees" [ref=e373]:
+            - heading "Assignees" [level=3] [ref=e374]
+            - text: No one assigned
+          - generic [ref=e375]:
+            - heading "Labels" [level=3] [ref=e376]
+            - generic [ref=e377]: None yet
+          - form "Select projects" [ref=e379]:
+            - heading "Projects" [level=3] [ref=e380]
+            - text: None yet
+          - form "Select milestones" [ref=e382]:
+            - heading "Milestone" [level=3] [ref=e383]
+            - text: No milestone
+          - form "Link issues" [ref=e389]:
+            - heading "Development" [level=3] [ref=e390]
+            - paragraph [ref=e391]: Successfully merging this pull request may close these issues.
+            - paragraph [ref=e393]: None yet
+          - generic [ref=e395]:
+            - heading "1 participant" [level=3] [ref=e396]
+            - link [ref=e398] [cursor=pointer]:
+              - /url: /gasyoun
+              - img "@gasyoun" [ref=e399]
+  - contentinfo [ref=e400]:
+    - heading "Footer" [level=2] [ref=e401]
+    - generic [ref=e402]:
+      - generic [ref=e403]:
+        - link "GitHub Homepage" [ref=e404] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e407]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e408]:
+        - heading "Footer navigation" [level=3] [ref=e409]
+        - list "Footer navigation" [ref=e410]:
+          - listitem [ref=e411]:
+            - link "Terms" [ref=e412] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e413]:
+            - link "Privacy" [ref=e414] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e415]:
+            - link "Security" [ref=e416] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e417]:
+            - link "Status" [ref=e418] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e419]:
+            - link "Community" [ref=e420] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e421]:
+            - link "Docs" [ref=e422] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e423]:
+            - link "Contact" [ref=e424] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e425]:
+            - button "Manage cookies" [ref=e427] [cursor=pointer]
+          - listitem [ref=e428]:
+            - button "Do not share my personal information" [ref=e430] [cursor=pointer]
