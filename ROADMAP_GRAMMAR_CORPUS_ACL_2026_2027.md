@@ -1,7 +1,9 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 09-08-2026_
+_Created: 10-07-2026 · Last updated: 20-09-2026_
 
+
+> **Truth-pass 20-09-2026** — `roadmap_handoff_truth.py --check` verified every H### handoff referenced below DONE/terminal against the combined registry (0 OPEN). Backlog fully drained; page retained in place as the programme record (H3075 classification — rulings survive their backlog).
 > _Revision 09-08-2026 (Codex `gpt-5.6-sol`): added the decision-locked
 > [Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md)
 > as the product continuation of the shipped pedagogy export/Systema hop. It adds a Whitney +
