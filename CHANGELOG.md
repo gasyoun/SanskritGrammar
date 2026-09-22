@@ -70,6 +70,15 @@ _Created: 25-08-2026 · Last updated: 16-09-2026_
   15-09-2026, [PR #938](https://github.com/gasyoun/SanskritGrammar/pull/938)):
   engine s-final/e-final paths fixed — 5 wrong answers corrected
   (ESD-0012/0021/0031/0059/0079), final split join=76 / identify=18.
+- H4712 (OxAlpha, glm-5.3-flash): census A6 — PWG compound-split layer × DCS
+  attested compounds cross-check. 17,112 splits × DCS Kompozity `names.csv`
+  (168,880 forms): 577 attested (3.4 %) · 3,353 prefix-evidence (19.6 %) ·
+  13,182 absent-from-set (77 %); arity agreement 576/577 (99.8 %) on the overlap;
+  30-row hand sample 30/30 verified (1 source-side PWG oddity documented:
+  `kṣārodaka = kāra + udaka` is PWG's own paren, errata-queue candidate). Lands
+  [pwg_splits_vs_dcs_names.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_compound_split/pwg_splits_vs_dcs_names.tsv),
+  summary JSON, [dated report](https://github.com/gasyoun/SanskritGrammar/blob/main/reports/PWG_SPLITS_VS_DCS_NAMES_XCHECK_15.09.2026.md)
+  and stdlib regen script `scripts/build_pwg_splits_dcs_names_xcheck.py`.
 - H4476 (OxAlpha, glm-5.3-flash): grammar-index catalog —
   [GrammarIndexes/sanskrityatina/](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/GRAMMAR_INDEXES_CATALOG_13-09-2026.md)
   catalogs 19 index items + 2 companion rows from
