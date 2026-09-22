@@ -17,14 +17,13 @@ Method:
      CharacterStyleRange → <Content>, with <Br/> as line breaks.
   4. Emit YAML-front-mattered .mdx with provenance + verbatim body.
 
-Usage: python3 tools/idml_to_mdx.py <file.idml> <out.mdx> --source-path yadisk:<path> [--title ...] [--status ...]
+Usage: python3 tools/idml_to_mdx.py <file.idml> <out.mdx> [--key=value ...]
 
-H4628 wave 1: per-volume provenance flags (--source-path/--title/--status); the
-Lihushina pilot mdx (H4484) stays as committed and is NOT regenerated.
+Optional --key=value pairs override front-matter fields (source_package,
+source_path, source_exported, extractor, status, title). With no overrides
+the output reproduces the H4484 Lihushina pilot byte-identically.
 """
-import argparse
-import datetime
-import os
+import re
 import sys
 import zipfile
 import xml.etree.ElementTree as ET
@@ -88,18 +87,17 @@ def story_text(zf, story_id):
     return paras
 
 def main():
-    ap = argparse.ArgumentParser(description="Extract an InDesign IDML package into a verbatim .mdx edition file.")
-    ap.add_argument("idml", help="input .idml package")
-    ap.add_argument("out", help="output .mdx path")
-    ap.add_argument("--source-path", required=True,
-                    help="upstream provenance path (e.g. yadisk:Bibliotheca/…)")
-    ap.add_argument("--title", help="edition title line (default derived from file name)")
-    ap.add_argument("--status", default="wave-1 (H4628)",
-                    help="status line recorded in the mdx front matter")
-    ap.add_argument("--extractor-tag", default="H4628",
-                    help="handoff tag recorded after 'extractor: tools/idml_to_mdx.py'")
-    args = ap.parse_args()
-    src, out = args.idml, args.out
+    pos, overrides = [], {}
+    for a in sys.argv[1:]:
+        if a.startswith("--") and "=" in a:
+            k, v = a[2:].split("=", 1)
+            overrides[k] = v
+        else:
+            pos.append(a)
+    if len(pos) != 2:
+        print(__doc__)
+        return 2
+    src, out = pos
     zf = zipfile.ZipFile(src)
     ordered, seen = [], set()
     for sp in spread_order(zf):
@@ -128,15 +126,22 @@ def main():
         stats["deva"] += sum(1 for p in paras for ch in p if "\u0900" <= ch <= "\u097F")
     doc = "\n\n".join(body)
 
-    exported_date = datetime.date.fromtimestamp(os.path.getmtime(src)).isoformat()
-    title = args.title or (
-        src.rsplit("/", 1)[-1].rsplit(".", 1)[0] + " — вербатим-цифровая редакция")
+    meta = {
+        "source_package": "lihusina-15.12.14.idml",
+        "source_path": "yadisk:Sanskrityatina/33_Lihusina/lihusina-15.12.14.idml",
+        "source_exported": "2014-12-16",
+        "extractor": "tools/idml_to_mdx.py (H4484)",
+        "status": "pilot (H4484)",
+        "title": "# Хрестоматия (верстка lihusina, IDML 15.12.2014) — пилотная цифровая редакция",
+    }
+    meta.update(overrides)
+
     header = (
         "---\n"
-        f"source_package: {src.rsplit('/', 1)[-1]}\n"
-        f"source_path: {args.source_path}\n"
-        f"source_exported: {exported_date}\n"
-        f"extractor: tools/idml_to_mdx.py ({args.extractor_tag})\n"
+        f"source_package: {meta['source_package']}\n"
+        f"source_path: {meta['source_path']}\n"
+        f"source_exported: {meta['source_exported']}\n"
+        f"extractor: {meta['extractor']}\n"
         "method: >-\n"
         "  IDML Story XML verbatim extraction; spread order from designmap.xml,\n"
         "  frames ordered by ItemTransform (top,left) per spread; stories not placed\n"
@@ -147,9 +152,9 @@ def main():
         f"paragraphs: {stats['paras']}\n"
         f"chars: {stats['chars']}\n"
         f"devanagari_chars: {stats['deva']}\n"
-        f"status: {args.status}\n"
+        f"status: {meta['status']}\n"
         "---\n\n"
-        f"# {title}\n\n"
+        f"{meta['title']}\n\n"
     )
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(header + doc + "\n")

@@ -15,6 +15,18 @@ _Created: 10-09-2026 · Last updated: 13-09-2026_
   [tools/pdf_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/pdf_to_mdx.py),
   гейт [tools/idml_coverage_check.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_coverage_check.py)
   (независимая переэкстракция, пол 90%). Derived-only: бинарники не коммитятся.
+- H4642 (OxAlpha, opencode/z-ai/glm-5.3-flash): e-publish wave 1 — digital
+  editions of toms II, III, IV, V (idml route, pilot-proven extractor) and
+  tom XVIII (never-print ruling D3, MG 13-09-2026: e-published from the final
+  block PDF via PyMuPDF, standing
+  [never-print directive](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/STANDING_DIRECTIVE_neverprint_toms_epub_2026-09-13.md)
+  registered) — per-tom stats, spot-checks and honest facsimile/OCR residue in
+  [BIBLIOTHECA_EPUB_WAVE1_REPORT_2026-09-13.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/BIBLIOTHECA_EPUB_WAVE1_REPORT_2026-09-13.md);
+  [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)
+  generalized with front-matter overrides (pilot output re-verified
+  byte-identical), new
+  [tools/pdf_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/pdf_to_mdx.py).
+  Derived-only: no InDesign binaries or print PDFs committed.
 - H4484 (OxAlpha, glm-5.3-flash): series onboarded — 27-tom state census
   (14 издан / 2 в правке / 11 не начат, evidence per tom, @DECIDE memo D1–D5
   reprint/e-publish/new-tom) in
