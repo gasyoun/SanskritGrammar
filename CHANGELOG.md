@@ -1,10 +1,8 @@
 _Created: 25-08-2026 · Last updated: 22-09-2026_
-_Created: 25-08-2026 · Last updated: 13-09-2026_
 
 # Changelog
 
 ## [Unreleased]
-<<<<<<< HEAD
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
 - H4716 (OxAlpha, glm-5.3-flash): kosha `shiva-sutras-machine` consumed as the vendored
@@ -113,16 +111,6 @@ _Created: 25-08-2026 · Last updated: 13-09-2026_
   (per-book release scheme, H318). Shared extractor added:
   [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)
   (verbatim IDML→mdx, spread-ordered).
-=======
-
-- H4483 (OxAlpha, glm-5.3-flash, two independent passes): SpeyerSyntax_1886
-  claims-harvest queue — 82 unpromoted candidates from Speijer *Sanskrit Syntax*
-  1886 (pass 1 `SPE-H-1..40` keyword-sweep 10-09-2026; pass 2 `SPE-H-101..142`
-  section-sampled second reader 13-09-2026, 5 cross-pass agreements marked
-  `dup_with`) + per-book text-layer verdicts for the whole yadisk syntax set
-  ([docs/SYNTAX_DARK_LIBRARY_TEXTLAYER_VERDICT_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SYNTAX_DARK_LIBRARY_TEXTLAYER_VERDICT_2026.md)).
-  Queue: [SpeyerSyntax_1886/claims_harvest.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/SpeyerSyntax_1886/claims_harvest.yml).
->>>>>>> 8428630 (H4483: second-reader pass — +42 candidates SPE-H-101..142 (section-sampled, 5 cross-pass agreements marked dup_with); backlog 82 total)
 
 All notable changes to this repo's shared infrastructure (errata system, site
 tooling, docs) are documented here. **Book-specific changes now live in each
