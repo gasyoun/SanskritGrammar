@@ -5,6 +5,17 @@ _Created: 25-08-2026 · Last updated: 16-09-2026_
 ## [Unreleased]
 <!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
 
+- H4716 (OxAlpha, glm-5.3-flash): kosha `shiva-sutras-machine` consumed as the vendored
+  pratyāhāra reference table — byte-identical snapshot
+  [data/shiva_sutras/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/shiva_sutras/)
+  (14 sūtras + 42 pratyāhāra spans + 57-token master sequence, MIT, upstream-of-truth kosha
+  `11a243eb`) + deterministic verifier
+  [scripts/verify_shiva_pratyahara.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/verify_shiva_pratyahara.py)
+  (PASS: 14-sūtra master round-trip, 42/42 pratyāhāra expansion round-trip, all 14
+  it-markers consumed, classic aC/haL canaries). Report:
+  [REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md).
+  First consumer of the H4471 dataset; edge registered Uprava-side (H4716, 15-09-2026).
+
 ## [0.122.6] - 2026-09-16
 - Opus 5 (`claude-opus-5`): escaped the MDX-unsafe characters in
   [LihushinaChrestomathy_2015_pilot.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015_pilot.mdx),
