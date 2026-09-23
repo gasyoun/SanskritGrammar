@@ -19,9 +19,10 @@ resolve_config / cost_usd. Key TYPESAFE_API_KEY from ~/.secrets/typesafe.env,
 never echoed. Stdlib + PyYAML; dry-run DEFAULT (no network).
 
 Usage:
-  python3 scripts/jev_claims_preverifier.py                # dry-run: parse + validate 131 requests offline
+  python3 scripts/jev_claims_preverifier.py                # dry-run: parse + validate 128 requests offline
   python3 scripts/jev_claims_preverifier.py --run          # live calls + metrics + report/JSON artifacts
   python3 scripts/jev_claims_preverifier.py --run --limit 3  # smoke slice
+  python3 scripts/jev_claims_preverifier.py --report-only RESULTS.json  # re-emit report, no network
 """
 from __future__ import annotations
 
@@ -217,10 +218,11 @@ def metrics(results: list) -> dict:
                            "min": min(sel), "max": max(sel)}
 
     bins = {}
-    for lo in [round(0.1 * i, 1) for i in range(10)]:
-        sel = [r for r in scored if lo <= r["noul"] < lo + 0.1]
+    for i in range(10):
+        lo, hi = i / 10, (i + 1) / 10  # integer-decile bounds — no float drift
+        sel = [r for r in scored if lo <= r["noul"] < hi]
         if sel:
-            bins[f"{lo:.1f}-{lo+0.1:.1f}"] = {
+            bins[f"{lo:.1f}-{hi:.1f}"] = {
                 "n": len(sel),
                 "share_true": sum(r["y"] for r in sel) / len(sel),
                 "mean_noul": sum(r["noul"] for r in sel) / len(sel),
@@ -270,6 +272,8 @@ def main() -> int:
     if args.report_only:
         saved = json.loads(Path(args.report_only).read_text(encoding="utf-8"))
         m = metrics(saved["results"])
+        saved["metrics"] = m  # re-derive the metrics block in place — raw results untouched
+        Path(args.report_only).write_text(json.dumps(saved, ensure_ascii=False, indent=2), encoding="utf-8")
         emit_outputs(saved["results"], m, args, write_json=False)
         return 0
 
