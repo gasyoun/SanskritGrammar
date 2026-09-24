@@ -51,7 +51,7 @@ Retained exact empirical figures are limited to locally reproducible evidence:
 - 52,498 OBS-T events / 43 dictionaries / 208 release-safe labels;
 - sixteen normalized non-bot Git identities;
 - five maximum annual OBS-Q implementers and 64–100% annual lead share;
-- 323,425 union headwords; 105 pairwise comparisons; BHS 58.7% unique;
+- 323,422 union headwords; 105 pairwise comparisons; BHS 58.7% unique;
   Cappeller 0.6% unique;
 - 94,753 MW–PWG common lemmas;
 - 828,505 canonicalised citations resolving to 912 texts.
