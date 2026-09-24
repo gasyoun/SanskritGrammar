@@ -63,6 +63,20 @@ file-level steps:
 | Adaptive learning contour with provable provenance (MEGABOOK §2.9 future) | evaluation harness (Wave 2) + learner corpus |
 | Learner corpus + error analysis | a live learner surface producing data |
 
+## What is left (verdict pass 24-09-2026 — gated checkboxes, replaces the loose Wave 2/3/4 prose above where a deliverable has no live handoff)
+
+Zero of the six rows below have a merged PR or a live H### against their own wording
+(checked via `hub_grep.py`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)) — this is the unminted-prose table the verdict pass found, kept as the acceptance record.
+
+- [ ] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** Not human-gated — drill schema + segmenter/paradigm engines already exist per the row above; open only because no handoff has been minted for it yet.
+- [ ] **Wave 2 — first user study proving learning gain (RQ4, paper A32).** Human-gated: needs a live learner cohort/consent design, not something an agent can run unattended. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W2-RQ4`.
+- [ ] **Wave 3 — Pāṇini sūtra ↔ corpus pedagogy surface.** Blocked on an external prerequisite (kosha Concordance Q4) that has not itself shipped — re-check when kosha's Concordance roadmap reports Q4 done.
+- [ ] **Wave 3 — `pedagogy_assets.tsv` machine index.** Not human-gated — the metadoc is stable per the row above; open only because no handoff has been minted for it yet.
+- [ ] **Wave 3 — Commentary-reading interface (C1/C2).** Blocked on an external prerequisite (CommentaryStrategies apparatus maturing) that has not itself shipped.
+- [ ] **Wave 4 — Audio/śikṣā, adaptive learning contour, learner corpus (all three).** Human-gated / prerequisite-gated: audio needs an explicit MG @DECIDE (TTS vs reciter) plus external content; adaptivity needs the Wave-2 evaluation harness (RQ2/RQ4 above) plus a learner corpus; the learner corpus itself needs a live learner surface producing data — none exists yet. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W4-audio` (audio-source decide) and `@WAITING H5364-W4-adaptive` (blocked on RQ2/RQ4 + learner corpus, no date — re-check when Wave 2 ships).
+
+No real calendar-dated trigger is named anywhere in the source roadmap for any of the six rows above (only prerequisite conditions), so none qualifies for a silent-until-\<date\> verdict per ruling 3 — they stay open gated checkboxes instead.
+
 ## Non-goals (explicit)
 
 - **Not** building/owning the LMS — [Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) owns it; the field feeds it.
