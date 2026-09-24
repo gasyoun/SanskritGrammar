@@ -1,6 +1,18 @@
 # Roadmap — morphophonological classification of Sanskrit verbal roots: Zalizniak 1975 → Gasuns 2014 → Tolchelnikov 2026
 
-_Created: 08-07-2026 · Last updated: 08-07-2026_
+_Created: 08-07-2026 · Last updated: 24-09-2026_
+
+> **✅ Truth-pass 24-09-2026 (H5370, E015 close-out wave 1) — verdict: REFRESHED, alive on one gated leftover.**
+> The deliverable **shipped**: the Russian memo + crosswalk landed as
+> [`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md)
+> (+ [`.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.meta.md))
+> via H357 (SanskritGrammar PR #60, merged), all five Suggested phases executed —
+> per-root divergence re-anchored directly on 1975 (memo §5), crosswalk grown to
+> four columns (+1978) in
+> [`TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv),
+> the `0`-subscript open question resolved by the author (issue #50, 09-07-2026: Shirobokov-DB bug, `FN-0016 approved`,
+> `FN-0015 rejected`). **What is left is gated, not agent-open** — see
+> [«What is left»](#what-is-left-truth-pass-24-09-2026) below; tracked as Uprava GTD @WAITING (Ivan gate), 24-09-2026.
 
 Plan for a **deep three-way comparison** answering MG's question: *how exactly does
 Tolchelnikov's Талмуд develop Zalizniak's 1975 morphophonological classification, and
@@ -107,5 +119,24 @@ derived** values — the memo must re-anchor divergences against **Zalizniak 197
 - **1975 source is committed on `main`** (08-07 errata→main merge) — build on `main`.
 - **WhitneyRoots is read-only**; this work reads the three sources + `/z/` and writes only
   new derived assets inside the Talmud repo.
+
+## What is left (truth-pass 24-09-2026)
+
+All original phases are done — H357 (memo, PR #60), H978 (§68 checks), H329 (`/z/`
+reconciliation), issue #50 (author dispositions FN-0015/16). One work item remains,
+**gated on the author** (I. E. Tolchelnikov), filed as `FN-0017` / `status: pending` in
+[`footnote-proposals/proposals.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/footnote-proposals/proposals.yml)
+since 09-07-2026 — per-mechanism attribution of the §-concordance (движок → 1975, запись/парадигмы →
+1978, диахрония → 2004) instead of blanket «→ Очерк 1978» (memo §6, open @DO «наш»):
+
+- [ ] **Ivan rules on `FN-0017`** (footnote form of the attribution fix) → Uprava GTD
+      **@WAITING 24-09-2026 (гейт: автор Иван, FN-0017)** — [GTD row](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+- [ ] **Apply the per-mechanism attribution to
+      [`zalizniak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zalizniak-concordance.mdx)**
+      per that ruling (unminted agent edit — mint in a next wave only after the gate flips).
+
+_No other open items: every checkbox-class phase (1–5) is shipped; the intra-Zalizniak
+2nd pass lives in
+[`ZALIZNIAK_1975_1978_2004_COMPARISON.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZALIZNIAK_1975_1978_2004_COMPARISON.md)._
 
 _Dr. Mārcis Gasūns_
