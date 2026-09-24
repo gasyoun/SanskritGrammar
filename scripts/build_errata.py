@@ -48,6 +48,8 @@ from pathlib import Path
 
 import yaml
 
+from blob_links import absolutize
+
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -496,7 +498,7 @@ def main():
         work, entries = load_book(yml)
         fixed = sum(1 for e in entries if e.get("fixed_in"))
         all_rows.append((yml.parent.name, len(entries), len(entries) - fixed, fixed))
-    (ROOT / "ERRATA.md").write_text(render_index(all_rows), encoding="utf-8")
+    (ROOT / "ERRATA.md").write_text(absolutize(render_index(all_rows)), encoding="utf-8")
     print(f"  index -> ERRATA.md ({len(all_rows)} book(s))")
 
 
