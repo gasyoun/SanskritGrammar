@@ -1,0 +1,41 @@
+{
+  "asset": "Attested-sentence cloze drills (RQ2 cloze type)",
+  "method": "candidate sentences of 4-12 tokens from the pinned DCS snapshot; first eligible NOUN (case+number) or finite VERB (tense+mood+person+number) target per sentence, walking word order; answer is the token's own attested form -- no generation step, nothing to disagree with; distractors are other attested forms of the same lemma in a different cell",
+  "corpus_attribution": "DCS (Oliver Hellwig) via the pinned VisualDCS snapshot",
+  "items": 3000,
+  "distinct_lemmas": 1007,
+  "by_upos": {
+    "VERB": {
+      "items": 767,
+      "mcq": 767,
+      "open": 0
+    },
+    "NOUN": {
+      "items": 2233,
+      "mcq": 2233,
+      "open": 0
+    }
+  },
+  "cells_ranked": {
+    "Nom.Sing": 821,
+    "Acc.Sing": 319,
+    "Nom.Plur": 214,
+    "Loc.Sing": 197,
+    "Pres.Ind.3.Sing.NonPass": 139,
+    "Ins.Sing": 136,
+    "Pres.Opt.3.Sing.NonPass": 117,
+    "Abl.Sing": 96,
+    "Gen.Sing": 86,
+    "Pres.Imp.2.Sing.NonPass": 86,
+    "Past.Ind.3.Sing.NonPass": 71,
+    "Acc.Plur": 71,
+    "Ins.Plur": 70,
+    "Gen.Plur": 67,
+    "Pres.Ind.3.Plur.NonPass": 66,
+    "Pres.Ind.1.Sing.NonPass": 43,
+    "Nom.Dual": 30,
+    "Past.Ind.3.Plur.NonPass": 29,
+    "Loc.Plur": 28,
+    "Pres.Imp.3.Sing.NonPass": 28
+  }
+}

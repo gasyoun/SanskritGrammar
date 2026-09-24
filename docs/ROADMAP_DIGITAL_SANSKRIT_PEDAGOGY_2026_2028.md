@@ -30,7 +30,7 @@ ROADMAP_INDEX) + wave-1 handoffs minted. *Unblocked by:* the three-audit prior-a
 |---|---|
 | First **user study** proving learning gain (RQ4, paper A32) | W1a/W1c shipped (something to evaluate) |
 | ~~**Difficulty scorer** productionised (score any text → target-level reading set)~~ ✅ **DONE** — kosha H949 shipped `data/difficulty/reading_pack_difficulty.json` (4-axis scoring), consumed by Systema's `/reading/kosha-demo` (H965) | W1a result |
-| **Auto-drill generation** with verified answer keys (RQ2) | drill schema + segmenter/paradigm engines (exist) |
+| ~~**Auto-drill generation** with verified answer keys (RQ2)~~ ✅ **DONE (25-09-2026)** — sandhi-split and paradigm-fill already shipped; [attested-sentence cloze drills](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/attested_cloze_drills/README.md) close the third named shape (cloze), 3 000 items / 1 007 lemmas, self-contained on the pinned DCS snapshot | drill schema + segmenter/paradigm engines (exist) |
 | ~~Reading-pack generator (Gītā 1, Nala 1) live~~ ✅ **DONE** — the Nala-1/Gītā reading packs already existed from H848/H871 (found stale when H959 built the Systema-side reader route) | kosha reading-pack data un-gated |
 
 ## Wave 2 additions — attested-drills + RU corpus layer 🟡 (staged 19-07-2026 via `/ask-batch`)
@@ -65,10 +65,10 @@ file-level steps:
 
 ## What is left (verdict pass 24-09-2026 — gated checkboxes, replaces the loose Wave 2/3/4 prose above where a deliverable has no live handoff)
 
-Zero of the six rows below have a merged PR or a live H### against their own wording
-(checked via `hub_grep.py`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)) — this is the unminted-prose table the verdict pass found, kept as the acceptance record.
+Zero of the six rows below had a merged PR or a live H### against their own wording at the
+24-09-2026 verdict pass (checked via `hub_grep.py`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)) — this is the unminted-prose table the verdict pass found, kept as the acceptance record. One of the six (RQ2) shipped the next day; the remaining five are unaffected.
 
-- [x] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** ✅ 25-09-2026 (Sonnet 5, A07 drain unit) — [`sangram/data/unified_drills/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/unified_drills) unifies the three existing engines (declension/samasa/sandhi) into one schema with a re-derived `verified` answer-key flag per row: 46,400/50,582 (91.7%) verified, non-fabrication guaranteed by test. PR: [#976](https://github.com/gasyoun/SanskritGrammar/pull/976).
+- [x] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** ✅ 25-09-2026 (Sonnet 5, A07 drain unit) — [`sangram/data/unified_drills/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/unified_drills) unifies the three existing engines (declension/samasa/sandhi) into one schema with a re-derived `verified` answer-key flag per row: 46,400/50,582 (91.7%) verified, non-fabrication guaranteed by test. PR: [#976](https://github.com/gasyoun/SanskritGrammar/pull/976). **Addendum, same day (concurrent A07 dispatch, independent worktree):** the three unified engines are sandhi-split + two paradigm-fill variants (declension, samasa) — RQ2's own third named shape, **cloze**, was still uncovered. [Attested-sentence cloze drills](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/data/attested_cloze_drills/README.md) close it: 3,000 items / 1,007 lemmas, self-contained on the pinned DCS snapshot (no kosha/vidyut dependency). PR: [#978](https://github.com/gasyoun/SanskritGrammar/pull/978).
 - [ ] **Wave 2 — first user study proving learning gain (RQ4, paper A32).** Human-gated: needs a live learner cohort/consent design, not something an agent can run unattended. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W2-RQ4`.
 - [ ] **Wave 3 — Pāṇini sūtra ↔ corpus pedagogy surface.** Blocked on an external prerequisite (kosha Concordance Q4) that has not itself shipped — re-check when kosha's Concordance roadmap reports Q4 done.
 - [ ] **Wave 3 — `pedagogy_assets.tsv` machine index.** Not human-gated — the metadoc is stable per the row above; open only because no handoff has been minted for it yet.
