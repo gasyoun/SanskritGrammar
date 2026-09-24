@@ -1,8 +1,10 @@
 # Roadmap — SanskritGrammar architecture, 2026–2027
 
-_Created: 29-07-2026 · Last updated: 09-08-2026_
+_Created: 29-07-2026 · Last updated: 24-09-2026_
 
 _Provenance: root best-effort after the configured Fable Planner returned no draft. No Planner or Advisor approval is claimed._
+
+> **Truth-pass 24-09-2026** ([H5366](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5366-OxAlpha_SanskritGrammar_rm-verdict-sanskritgrammar-architecture-2026_24.09.26.md), OxAlpha `zai-coding-plan/glm-5.3-flash`, E015 close-out wave 1): W0 and all of Wave-1 SHIPPED — H1911 ([PR #569](https://github.com/gasyoun/SanskritGrammar/pull/569)), H1912 ([PR #595](https://github.com/gasyoun/SanskritGrammar/pull/595)), H1913 ([PR #597](https://github.com/gasyoun/SanskritGrammar/pull/597) + [PR #874](https://github.com/gasyoun/SanskritGrammar/pull/874)); this roadmap registered in [Uprava/ROADMAP_INDEX.md](https://github.com/gasyoun/Uprava/blob/main/ROADMAP_INDEX.md) on 09-08-2026. Verdict = REFRESH, not archive: the Wave-2 factory migration (§5; improvement-backlog rank 4, parked until the pilots published measured effort — that park condition cleared 22-08-2026) plus the W3/W4 chain are UNMINTED PROSE WORK, now rewritten as gated checkboxes in §10; the W2 launch ruling is MG @DO dated 08-10-2026 in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md). The §1 product-lane rows are status observations owned by the [umbrella portfolio roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md); the Grammar-Lab lane is owned by [its own roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md) (separate verdict pass H5367).
 
 This is the subordinate technical roadmap for the
 [SanskritGrammar portfolio roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
@@ -221,5 +223,27 @@ not neutral infrastructure work or accurate provenance messaging.
 - No broad migration before both pilots pass.
 - No compatibility release after hard cutover.
 - No architecture task that displaces a time-bound M03, RQ4, or Sangram gate.
+
+## 10. What is left — truth-pass 24-09-2026
+
+Added by the H5366 verdict pass; §1–§9 stand as written 09-08-2026. Waves still open by
+evidence, not calendar (§2).
+
+- [ ] **W1 exit note** — collect the joint rollback + known-consumer smoke evidence from the
+  three executed pilots (H1911/H1912/H1913, each closed with green V-gates) into one W1 exit
+  review artifact. No human gate — agent-doable on pickup; mint the handoff on pickup.
+- [ ] **W2 — core factories migration (§5)** — human-only gate: the launch ruling belongs to
+  MG; parked under the
+  [30-day launch-criterion direction](https://github.com/gasyoun/Uprava/blob/main/docs/STANDING_POLICY_DIRECTION_30_DAYS_LAUNCH_CRITERION_2026-09.md)
+  until 08-10-2026 — **MG @DO 08-10-2026** in
+  [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+  (section "Human gate registered 24-09-2026"). On a launch ruling: rank migration batches by
+  the measured pilot effort (improvement-backlog rank 4; H1912/H1913 evidence), then mint per
+  §5's evidence-driven order.
+- [ ] **W3 — hard cutover (§6)** — gate: W2 output reproducible and the consumer census
+  complete. Mint only after the first W2 factory batch passes rollback + known-consumer smoke.
+- [ ] **W4 — consolidate, measure, sunset (§7)** — gate: cutover stable for one release
+  interval. Closes this roadmap: archive it per §7's own clause once its contracts are
+  complete.
 
 _Dr. Mārcis Gasūns_
