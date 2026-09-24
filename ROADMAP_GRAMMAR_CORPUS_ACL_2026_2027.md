@@ -543,8 +543,17 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   raw numbers
   [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json).
   PR: _link filled in at merge_.
-- [ ] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
-  Whitney spine. No human gate — agent-doable.
+- [x] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
+  Whitney spine. No human gate — agent-doable. **DONE 25-09-2026 (Sonnet 5
+  `claude-sonnet-5`):** [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py)
+  extended with Apte (lesson-structured, same mechanism) and a dedicated
+  Whitney-appendix extractor (Whitney's 18 chapter files are paradigm tables,
+  not connected exercise sentences — only its Appendix carries continuous
+  prose). Pool: 3,213 → 6,393 candidates. **Split note:** `matches.json` /
+  `Concordance/catalog.mdx` intentionally left at their 3-book state — the
+  clustering/rendering pipeline hardcodes 3 books and needs its own pass to
+  honestly carry 5 (owner residual, see CHANGELOG). PR: _link filled in at
+  merge_.
 - [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
   consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
   [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
