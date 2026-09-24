@@ -353,14 +353,35 @@ def render_report(result):
     kappa_letter = letter["fleiss_kappa"]
     lines.append(
         f"Full-code Fleiss κ = {kappa_full}; letter-only Fleiss κ = {kappa_letter}. Per the "
-        "Landis & Koch (1977) scale (routinely cited for this metric range) a κ this low sits "
-        "in **slight-to-fair** agreement territory — the three schemes agree on gross alternation "
-        "series far less often than a shared classification tradition would predict, and the gap "
-        "does not close much when the disputed 0-vs-1/2 subindex is collapsed away. This is the "
-        "number Paper 2 (§4 Q1 2027) formalises.\n"
+        f"Landis & Koch (1977) scale (routinely cited for this metric range), full-code κ sits in "
+        f"**{landis_koch_band(kappa_full)}** agreement and letter-only κ in "
+        f"**{landis_koch_band(kappa_letter)}** — the three schemes agree on gross alternation "
+        "series far more often than chance, but genuine three-way disagreement survives even "
+        "after the disputed 0-vs-1/2 subindex is collapsed away: 10 roots (letter granularity) "
+        "where 1975, 1978 and 2026 each assign a *different* series, plus the weaker 1975↔2026 "
+        f"pairwise link ({letter['pairwise']['1975_vs_2026']['cohen_kappa']}) than either "
+        f"1975↔1978 ({letter['pairwise']['1975_vs_1978']['cohen_kappa']}, same original author, "
+        "two editions) — expected, since 1975/1978 share an author and 2026 is a fully "
+        "independent scholar's scheme. This is the number Paper 2 (§4 Q1 2027) formalises.\n"
     )
     lines.append("_Dr. Mārcis Gasūns_")
     return "\n".join(lines) + "\n"
+
+
+def landis_koch_band(kappa):
+    if kappa is None:
+        return "n/a"
+    if kappa < 0:
+        return "poor"
+    if kappa < 0.20:
+        return "slight"
+    if kappa < 0.40:
+        return "fair"
+    if kappa < 0.60:
+        return "moderate"
+    if kappa < 0.80:
+        return "substantial"
+    return "almost perfect"
 
 
 def main():
