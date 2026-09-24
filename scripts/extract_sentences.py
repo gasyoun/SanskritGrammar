@@ -150,6 +150,42 @@ def split_iast_sentences(chunk):
     return sentences
 
 
+def extract_whitney_appendix():
+    """Pull the two connected-prose passages out of Whitney's Appendix
+    (section A: the Hitopadesa jackal fable; section B: the Rig-Veda X.125
+    hymn, IAST transliteration only — see module docstring). Both are
+    continuous Latin-script prose punctuated with periods/semicolons, not
+    danda, so they need their own sentence splitter rather than
+    `split_iast_sentences` (which splits on dashes/newlines for the
+    lesson-book vocabulary-list style)."""
+    with open(WHITNEY_APPENDIX_PATH, encoding="utf-8") as f:
+        text = strip_footnotes(f.read())
+
+    a_start = text.index("The Hunter, Deer, Boar, and Jackal.") + len(
+        "The Hunter, Deer, Boar, and Jackal."
+    )
+    a_end = text.index("B. The following text is given in order to illustrate")
+    fable = text[a_start:a_end]
+
+    b_start = text.index("aháṁ rudrébhir vásubhiç carāmy")
+    b_end = text.index("On the next page is given")
+    hymn = text[b_start:b_end]
+
+    sections = [("A", fable), ("B", hymn)]
+    results = []
+    for lesson_id, chunk in sections:
+        chunk = re.sub(r"\s+", " ", chunk).strip()
+        for piece in re.split(r"(?<=[.;])\s+", chunk):
+            piece = re.sub(r"^\d+\.\s*", "", piece).strip(" .;")
+            piece = re.sub(r"\s+", " ", piece)
+            if len(piece) < 6 or not IAST_DIACRITIC.search(piece):
+                continue
+            if len(piece.split()) < 2:
+                continue
+            results.append((lesson_id, piece))
+    return results
+
+
 def sentence_id(book_id, edition_year, lesson_id, idx):
     """Stable per-item id, `<book>-<edition-year>.<lesson>.<n>`, mirroring the
     ACL `YEAR.VOLUME.NUMBER` id policy (https://aclanthology.org/info/ids/) —
