@@ -252,7 +252,7 @@ and the extraction/matching/rendering pipeline:
 
 | File | Role |
 |---|---|
-| [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) | pulls Devanagari- and IAST-script sentence candidates out of the three `.mdx`, tagged by book/lesson/script; then pairwise-matches them per script pool (`difflib`, similarity ≥ 0.82) |
+| [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) | pulls Devanagari- and IAST-script sentence candidates out of Bühler/Knauer/Kochergina/Apte (lesson-structured `.mdx`) plus the two connected passages in Whitney's Appendix (roadmap Q4.3, 5 books on the spine), tagged by book/lesson/script; then pairwise-matches them per script pool (`difflib`, similarity ≥ 0.82) |
 | [`scripts/build_catalog.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_catalog.py) | clusters pairwise matches (union-find) into `scripts/data/catalog.json` / `.csv` |
 | [`scripts/render_catalog_mdx.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/render_catalog_mdx.py) | renders `catalog.json` into the generated `Concordance/catalog.mdx` page — never hand-edit it |
 
