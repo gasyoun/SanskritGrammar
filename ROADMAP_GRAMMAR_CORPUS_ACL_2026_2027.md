@@ -488,9 +488,26 @@ mint a handoff on pickup; human-gated rows point at their MG row in
 [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
 (section "Human gate registered 24-09-2026 (H5371)").
 
-- [ ] **S1 claim-register extension (§2 S1)** — Knauer register (≥50 verified), then Zaliznyak
-  (≥50 verified), plus the 339-candidate Bühler backlog drain. No human gate — agent-doable;
-  mint on pickup. Feeds A60's central table (§2, paper A60).
+- [x] **S1 claim-register extension (§2 S1)** — Knauer register (≥50 verified), then Zaliznyak
+  (≥50 verified), plus the 339-candidate Bühler backlog drain. Feeds A60's central table
+  (§2, paper A60). **Verdict 24-09-2026 (H5417, Sonnet 5): all three sub-items already
+  shipped, only the checkbox was stale.** Bühler backlog: fully drained, 403 entries in
+  [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)
+  (H797 Phase 2, 15-07-2026, [PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186));
+  `claims_harvest.yml` candidates: []. Zaliznyak: 17 entries in
+  [`ZalizniakKonspekt_2004/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml)
+  + 96 in [`ZalizniakOcherk_1978/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
+  (both H797, 15-07-2026) — 113 combined, both harvest backlogs drained to `candidates: []`.
+  Knauer: **not** a `claims.yml` register — an author-ruled genre adaptation, since the
+  digitized Кнауэр 1908 text is a phrase-reader with no discursive universal/frequency
+  assertions to harvest (verified against source before work started). Instead
+  [`KnauerFrazy_1908/parse_audit.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/parse_audit.yml)
+  audits footnote-parse correctness (root + category + preverb vs. Whitney 1889): **210
+  CONFIRMED of 214** ([PR #189](https://github.com/gasyoun/SanskritGrammar/pull/189),
+  15-07-2026) — exceeds the ≥50 bar in substance; see
+  [`KnauerFrazy_1908/README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md)
+  for the adaptation rationale. `python scripts/claims_schema_validate.py --all` PASS on
+  all six registers (0 errors) as of this verdict.
 - [ ] **Q3.4 three-scheme agreement (§4)** — Fleiss κ / Krippendorff α over the 876-root
   crosswalk; never run (§2 S2). No human gate — agent-doable; the number Paper 2 formalises.
 - [ ] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
