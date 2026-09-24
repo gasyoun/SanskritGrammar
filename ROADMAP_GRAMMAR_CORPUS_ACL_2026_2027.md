@@ -525,9 +525,24 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   Zal./Gas./Tol. framing is required for Paper 2, that needs a fresh `@DECIDE` on either
   building a genuine Gasuns-2014 per-root scheme or re-scoping the paper's claim.
   PR [#967](https://github.com/gasyoun/SanskritGrammar/pull/967).
-- [ ] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
+- [x] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
   ([`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv))
-  before any detector swap. No human gate — agent-doable.
+  before any detector swap. **SHIPPED 24-09-2026 (Sonnet 5, worker A04).** Precision of
+  the shipped `score >= 0.82` operating point: strict (TP=`spelling_variant` only)
+  0.4531 (58/128); lenient (TP=`spelling_variant`+`length_mismatch`, FP=`low_similarity`
+  per the pipeline's own documented false-positive class) 0.6094 (78/128). **Finding
+  worth acting on:** the precision sweep shows nearly all `low_similarity` false
+  positives cluster at score 0.82–0.85 — retuning the threshold to 0.85 alone would cut
+  false positives from 50 to 1 while keeping 75/128 candidates, before any TRACER/Passim
+  swap. Scope: this measures precision of what difflib already flagged, not recall of
+  reuse it never surfaced — that gap is exactly what Q4.2 gates on. Generator
+  [`scripts/q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q41_difflib_gold_evaluation.py),
+  tests [`tests/test_q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q41_difflib_gold_evaluation.py)
+  (8 tests), full report
+  [`Q4_1_DIFFLIB_EVALUATION_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/Q4_1_DIFFLIB_EVALUATION_RESULT.md),
+  raw numbers
+  [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json).
+  PR: _link filled in at merge_.
 - [ ] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
   Whitney spine. No human gate — agent-doable.
 - [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
