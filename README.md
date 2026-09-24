@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 13-08-2026_
+_Created: 05-07-2026 · Last updated: 24-09-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Apte's syntax reference, Bühler's exercise course, Gasūns's
