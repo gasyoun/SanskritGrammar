@@ -1,6 +1,6 @@
 # Roadmap — Digital Sanskrit Pedagogy (2026–2028)
 
-_Created: 14-07-2026 · Last updated: 24-09-2026_
+_Created: 14-07-2026 · Last updated: 25-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
 
@@ -68,7 +68,7 @@ file-level steps:
 Zero of the six rows below have a merged PR or a live H### against their own wording
 (checked via `hub_grep.py`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)) — this is the unminted-prose table the verdict pass found, kept as the acceptance record.
 
-- [ ] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** Not human-gated — drill schema + segmenter/paradigm engines already exist per the row above; open only because no handoff has been minted for it yet.
+- [x] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** ✅ 25-09-2026 (Sonnet 5, A07 drain unit) — [`sangram/data/unified_drills/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/data/unified_drills) unifies the three existing engines (declension/samasa/sandhi) into one schema with a re-derived `verified` answer-key flag per row: 46,400/50,582 (91.7%) verified, non-fabrication guaranteed by test. PR: (opened same pass, see commit history).
 - [ ] **Wave 2 — first user study proving learning gain (RQ4, paper A32).** Human-gated: needs a live learner cohort/consent design, not something an agent can run unattended. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W2-RQ4`.
 - [ ] **Wave 3 — Pāṇini sūtra ↔ corpus pedagogy surface.** Blocked on an external prerequisite (kosha Concordance Q4) that has not itself shipped — re-check when kosha's Concordance roadmap reports Q4 done.
 - [ ] **Wave 3 — `pedagogy_assets.tsv` machine index.** Not human-gated — the metadoc is stable per the row above; open only because no handoff has been minted for it yet.
