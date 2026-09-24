@@ -1,6 +1,6 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 24-09-2026_
+_Created: 10-07-2026 · Last updated: 25-09-2026_
 
 
 > **Truth-pass 24-09-2026** ([H5371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5371-OxAlpha_SanskritGrammar_rm-verdict-grammar-corpus-acl-2026-2027_24.09.26.md), OxAlpha `zai-coding-plan/glm-5.3-flash`, E015 close-out wave 1): the 20-09-2026 H###-backlog verification (0 OPEN) stands; Q3.1/Q3.2/Q3.5 SHIPPED (research agenda · [`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md) · H1514 errata schema); Grammar-Lab execution owned by [its own roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md) (separate verdict H5367), architecture lane owned by the [subordinate roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_ARCHITECTURE_2026_2027.md) (verdict H5366), Sangram state owned by the [charter](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) + consolidation ledger. Verdict = **REFRESH, not archive**: the comparative corpus / ACL-papers line (§2 S1 registers, §3 B3–B8, §4 Q3.3–Q3.4, Q4.1–Q4.5, the two Q1-2027 papers, the Q2-2027 S3 pilot) is UNMINTED PROSE WORK — live-handoff scan 24-09-2026 found zero mints covering it — now rewritten as gated checkboxes in §7; the six human gates (M-H1, M-H2, P-H1, C-D1, C-D4, C-D5) plus the Sangram C5/C6 gate ruling are MG rows dated 24-09-2026 in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) (section "Human gate registered 24-09-2026 (H5371)").
@@ -543,8 +543,17 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   raw numbers
   [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json).
   PR: _link filled in at merge_.
-- [ ] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
-  Whitney spine. No human gate — agent-doable.
+- [x] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
+  Whitney spine. No human gate — agent-doable. **DONE 25-09-2026 (Sonnet 5
+  `claude-sonnet-5`):** [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py)
+  extended with Apte (lesson-structured, same mechanism) and a dedicated
+  Whitney-appendix extractor (Whitney's 18 chapter files are paradigm tables,
+  not connected exercise sentences — only its Appendix carries continuous
+  prose). Pool: 3,213 → 6,393 candidates. **Split note:** `matches.json` /
+  `Concordance/catalog.mdx` intentionally left at their 3-book state — the
+  clustering/rendering pipeline hardcodes 3 books and needs its own pass to
+  honestly carry 5 (owner residual, see CHANGELOG). PR: _link filled in at
+  merge_.
 - [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
   consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
   [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
