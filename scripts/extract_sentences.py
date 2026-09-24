@@ -1,14 +1,26 @@
 #!/usr/bin/env python3
-"""Extract Sanskrit sentences (both Devanagari and IAST) from the three
-grammar .mdx files (Buhler 1923, Knauer 1908, Kochergina 1998) and find
-cross-book matches.
+"""Extract Sanskrit sentences (both Devanagari and IAST) from five grammar
+.mdx sources (Buhler 1923, Knauer 1908, Kochergina 1998, Apte 1885, Whitney
+1889) and find cross-book matches.
 
 First-pass tool for the Buhler/Knauer/Kochergina exercise-sentence
-concordance (H311). Each extracted sentence keeps a `script` tag
-("deva"/"iast") recording which script it was originally set in. Matching
-is done within each script pool separately (deva-vs-deva, iast-vs-iast) —
-cross-script (Devanagari vs IAST) matching would need a transliteration
-step and is a follow-up (see handoff).
+concordance (H311), extended to Apte + Whitney (roadmap Q4.3). Each
+extracted sentence keeps a `script` tag ("deva"/"iast") recording which
+script it was originally set in. Matching is done within each script pool
+separately (deva-vs-deva, iast-vs-iast) — cross-script (Devanagari vs IAST)
+matching would need a transliteration step and is a follow-up (see handoff).
+
+Apte 1885 is lesson-structured like Buhler/Knauer/Kochergina and is
+extracted the same way. Whitney 1889 is a reference grammar, not a graded
+exercise book: eighteen of its nineteen chapter files contain isolated
+paradigm forms rather than connected sentences (grep for danda/period runs
+confirms this — only `19_Appendix.mdx` carries continuous prose). Its
+contribution to the pool is therefore the two connected passages in that
+appendix (the Hitopadesa jackal fable, section A; the Rig-Veda X.125 hymn,
+section B) rather than per-lesson exercises — extracted via
+`extract_whitney_appendix()`, IAST only (the appendix's Devanagari setting
+of the hymn has a corrupted conjunct-rendering in the source .mdx and is
+skipped to avoid seeding garbage into the pool).
 
 Usage:
     python scripts/extract_sentences.py extract   # writes data/sentences.json
@@ -49,7 +61,19 @@ BOOKS = {
         "path": os.path.join(ROOT, "KocherginaUchebnik_1998", "Kochergina_unicode.mdx"),
         "lesson_re": re.compile(r"^Занятие\s+([IVXL]+)\s*$", re.MULTILINE),
     },
+    "apte": {
+        "label": "Apte 1885",
+        "year": 1885,
+        "edition_year": 1885,
+        "path": os.path.join(ROOT, "ApteSyntax_1885", "Apte-unicode.mdx"),
+        "lesson_re": re.compile(r"^#\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
+    },
 }
+
+WHITNEY_APPENDIX_PATH = os.path.join(ROOT, "WhitneyGrammar_1889", "19_Appendix.mdx")
+WHITNEY_LABEL = "Whitney 1889"
+WHITNEY_YEAR = 1889
+WHITNEY_EDITION_YEAR = 1889
 
 DEVANAGARI_RUN = re.compile(r"[ऀ-ॿ][ऀ-ॿ\s]*[ऀ-ॿ]")
 FOOTNOTE_MARK = re.compile(r"\^\d+\^|\[\^\d+\]")
