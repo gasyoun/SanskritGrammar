@@ -129,8 +129,13 @@ reconciliation), issue #50 (author dispositions FN-0015/16). One work item remai
 since 09-07-2026 — per-mechanism attribution of the §-concordance (движок → 1975, запись/парадигмы →
 1978, диахрония → 2004) instead of blanket «→ Очерк 1978» (memo §6, open @DO «наш»):
 
-- [ ] **Ivan rules on `FN-0017`** (footnote form of the attribution fix) → Uprava GTD
-      **@WAITING 24-09-2026 (гейт: автор Иван, FN-0017)** — [GTD row](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+- [x] **Ivan rules on `FN-0017`** (footnote form of the attribution fix) → Uprava GTD
+      **@WAITING 24-09-2026 (гейт: автор Иван, FN-0017)** — routed and confirmed live in
+      [GTD_NEXT_ACTIONS.md § «Human gate registered 24-09-2026»](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
+      A09 verdict (24-09-2026): the GTD `@WAITING` row for `FN-0017` already exists (minted
+      same day by a prior OxAlpha pass) — routing is DONE, checkbox ticked. **The ruling
+      itself is not** — it is Ivan/I. E. Tolchelnikov's call and no agent can supply it; the
+      next checkbox stays open until he answers.
 - [ ] **Apply the per-mechanism attribution to
       [`zalizniak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zalizniak-concordance.mdx)**
       per that ruling (unminted agent edit — mint in a next wave only after the gate flips).
