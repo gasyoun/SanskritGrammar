@@ -1,7 +1,9 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 20-09-2026_
+_Created: 10-07-2026 · Last updated: 24-09-2026_
 
+
+> **Truth-pass 24-09-2026** ([H5371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5371-OxAlpha_SanskritGrammar_rm-verdict-grammar-corpus-acl-2026-2027_24.09.26.md), OxAlpha `zai-coding-plan/glm-5.3-flash`, E015 close-out wave 1): the 20-09-2026 H###-backlog verification (0 OPEN) stands; Q3.1/Q3.2/Q3.5 SHIPPED (research agenda · [`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md) · H1514 errata schema); Grammar-Lab execution owned by [its own roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md) (separate verdict H5367), architecture lane owned by the [subordinate roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_ARCHITECTURE_2026_2027.md) (verdict H5366), Sangram state owned by the [charter](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) + consolidation ledger. Verdict = **REFRESH, not archive**: the comparative corpus / ACL-papers line (§2 S1 registers, §3 B3–B8, §4 Q3.3–Q3.4, Q4.1–Q4.5, the two Q1-2027 papers, the Q2-2027 S3 pilot) is UNMINTED PROSE WORK — live-handoff scan 24-09-2026 found zero mints covering it — now rewritten as gated checkboxes in §7; the six human gates (M-H1, M-H2, P-H1, C-D1, C-D4, C-D5) plus the Sangram C5/C6 gate ruling are MG rows dated 24-09-2026 in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) (section "Human gate registered 24-09-2026 (H5371)").
 
 > **Truth-pass 20-09-2026** — `roadmap_handoff_truth.py --check` verified every H### handoff referenced below DONE/terminal against the combined registry (0 OPEN). Backlog fully drained; page retained in place as the programme record (H3075 classification — rulings survive their backlog).
 > _Revision 09-08-2026 (Codex `gpt-5.6-sol`): added the decision-locked
@@ -476,6 +478,52 @@ sessions must not re-open them without new evidence or an explicit author reques
 
 The October manuscript freeze triggers the two final agent passes named in the press-readiness
 checklist; the November publisher contact remains a human `@DO`, not an autonomous handoff.
+
+## 7. What is left — verdict pass 24-09-2026
+
+Added by the H5371 verdict pass; §0–§6 stand as written. The H### backlog is fully drained
+(0 OPEN, verified 20-09-2026); the rows below are the UNMINTED PROSE WORK the verdict found
+(live-handoff scan 24-09-2026: zero mints cover them). Agent-doable rows carry no gate and
+mint a handoff on pickup; human-gated rows point at their MG row in
+[Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+(section "Human gate registered 24-09-2026 (H5371)").
+
+- [ ] **S1 claim-register extension (§2 S1)** — Knauer register (≥50 verified), then Zaliznyak
+  (≥50 verified), plus the 339-candidate Bühler backlog drain. No human gate — agent-doable;
+  mint on pickup. Feeds A60's central table (§2, paper A60).
+- [ ] **Q3.4 three-scheme agreement (§4)** — Fleiss κ / Krippendorff α over the 876-root
+  crosswalk; never run (§2 S2). No human gate — agent-doable; the number Paper 2 formalises.
+- [ ] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
+  ([`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv))
+  before any detector swap. No human gate — agent-doable.
+- [ ] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
+  Whitney spine. No human gate — agent-doable.
+- [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
+  consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
+  [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+  + the kosha manifest. No human gate — agent-doable under the boundary.
+- [ ] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first (§4
+  preamble: the literal Q4 deliverables "require a fresh evidence check before execution").
+  Mint after Q4.1 lands.
+- [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
+  DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
+- [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
+  annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
+  in GTD. Blocked until ruled.
+- [ ] **Papers 1 + 2 (§4 Q1 2027)** — human gates: Paper 1 venue is **C-D1** (`@DECIDE`);
+  Q4.5 RefD directionality is blocked on **C-D4** (1878 Bühler first edition); register in
+  [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) only when a skeleton
+  exists. **MG @DECIDE / @WAITING 24-09-2026** in GTD.
+- [ ] **S3 Pāṇini two-chapter pilot (§4 Q2 2027)** — future-dated by the roadmap's own
+  sequencing, hard precision@5 ≥ 0.4 kill-gate. **MG @WAITING** until:2027-01 (GTD).
+- [ ] **M-H1 — M03 290-paragraph review (§5)** — **MG @DO by 31-10-2026** in GTD; gates the
+  manuscript freeze (§6 item 1).
+- [ ] **M-H2 — «Нестор-История» contact (§5)** — **MG @DO November 2026** in GTD (§6, W3).
+- [ ] **P-H1 — RQ4 recruitment authorization (§5)** — H1261 shipped the production route
+  (archived, terminal); recruitment start stays human. **MG @DO 24-09-2026** in GTD.
+- [ ] **Sangram freeze exit — legitimate C5/C6 gates (§0, §6 item 3)** — ratify instruments
+  or approve visa/terminal routing for the 14 unknowns; agents must not invent thresholds.
+  **MG @DO 24-09-2026** in GTD.
 
 ## Related documents (awareness weave H1728)
 
