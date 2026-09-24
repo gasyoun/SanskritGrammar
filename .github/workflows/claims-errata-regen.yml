@@ -1,0 +1,112 @@
+name: Claims + errata regen
+
+# Uprava H5423 (E016 wave 5) — live trigger for the generated claims and errata
+# registers. CLAIMS_VERIFIED.md sat at Apte 39 claims for a month after APT-40 was
+# added to claims.yml (25-08-2026) because nothing re-ran scripts/build_claims.py.
+#
+#   pull_request            regenerate + refuse a real drift (fix: npm run claims && npm run errata)
+#   push to main / dispatch regenerate + commit the result back to main
+#
+# Both generators stamp today's date (DD-MM-YYYY) into every file, so the compare
+# is scripts/check_generated_outputs.py (dates masked, counts kept), never a plain
+# `git diff --exit-code` — that would be red every day, or commit date churn.
+# main is unprotected, so the bot pushes directly; a GITHUB_TOKEN push does not
+# re-trigger workflows, so this cannot loop.
+
+on:
+  pull_request:
+    paths:
+      - "*/claims.yml"
+      - "*/claims_harvest.yml"
+      - "*/errata.yml"
+      - "CHANGELOG.md"
+      - "*/CHANGELOG.md"
+      - "CLAIMS_VERIFIED.md"
+      - "ERRATA.md"
+      - "*/CLAIMS_VERIFIED.md"
+      - "*/claims.json"
+      - "*/ERRATA.mdx"
+      - "scripts/build_claims.py"
+      - "scripts/build_errata.py"
+      - "scripts/blob_links.py"
+      - "scripts/check_generated_outputs.py"
+      - ".github/workflows/claims-errata-regen.yml"
+  push:
+    branches: [main]
+    paths:
+      - "*/claims.yml"
+      - "*/claims_harvest.yml"
+      - "*/errata.yml"
+      - "CHANGELOG.md"
+      - "*/CHANGELOG.md"
+      - "CLAIMS_VERIFIED.md"
+      - "ERRATA.md"
+      - "*/CLAIMS_VERIFIED.md"
+      - "*/claims.json"
+      - "*/ERRATA.mdx"
+      - "scripts/build_claims.py"
+      - "scripts/build_errata.py"
+      - "scripts/blob_links.py"
+      - "scripts/check_generated_outputs.py"
+      - ".github/workflows/claims-errata-regen.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: claims-errata-regen-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  regen:
+    name: Regenerate claims + errata registers
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/
+            /CHANGELOG.md
+            /CLAIMS_VERIFIED.md
+            /ERRATA.md
+            /*/CHANGELOG.md
+            /*/claims.yml
+            /*/claims_harvest.yml
+            /*/errata.yml
+            /*/CLAIMS_VERIFIED.md
+            /*/claims.json
+            /*/ERRATA.mdx
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pip install pyyaml
+      - name: Regenerate
+        run: |
+          python scripts/build_claims.py
+          python scripts/build_errata.py
+      - name: Refuse drift (pull request)
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! python scripts/check_generated_outputs.py; then
+            echo "::error::Generated claims/errata registers lag their sources. Fix: npm run claims && npm run errata (python scripts/build_claims.py && python scripts/build_errata.py), then commit the outputs."
+            exit 1
+          fi
+      - name: Commit regenerated registers (main)
+        if: github.event_name != 'pull_request'
+        run: |
+          if python scripts/check_generated_outputs.py --restore-date-only; then
+            echo "registers already current (date-stamp-only changes discarded)"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- CLAIMS_VERIFIED.md ERRATA.md '*/CLAIMS_VERIFIED.md' '*/claims.json' '*/ERRATA.mdx'
+          git commit -m "chore(claims,errata): regenerate registers from sources [H5423]"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep $((i * 10))
+          done
+          echo "::error::could not land the regenerated registers after 3 attempts"
+          exit 1
