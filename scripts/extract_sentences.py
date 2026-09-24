@@ -226,6 +226,21 @@ def extract():
         n_deva = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "deva")
         n_iast = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "iast")
         print(f"{book_id}: {n_deva} deva + {n_iast} iast sentence candidates", file=sys.stderr)
+
+    idx = 0
+    for lesson_id, sent in extract_whitney_appendix():
+        idx += 1
+        all_sentences.append({
+            "id": sentence_id("whitney", WHITNEY_EDITION_YEAR, lesson_id, idx),
+            "book": "whitney",
+            "book_label": WHITNEY_LABEL,
+            "year": WHITNEY_YEAR,
+            "lesson": lesson_id,
+            "script": "iast",
+            "text": sent,
+        })
+    print(f"whitney: 0 deva + {idx} iast sentence candidates", file=sys.stderr)
+
     out_path = os.path.join(DATA_DIR, "sentences.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(all_sentences, f, ensure_ascii=False, indent=2)
