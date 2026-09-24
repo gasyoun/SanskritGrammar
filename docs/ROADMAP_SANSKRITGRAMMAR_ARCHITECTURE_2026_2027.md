@@ -229,9 +229,16 @@ not neutral infrastructure work or accurate provenance messaging.
 Added by the H5366 verdict pass; §1–§9 stand as written 09-08-2026. Waves still open by
 evidence, not calendar (§2).
 
-- [ ] **W1 exit note** — collect the joint rollback + known-consumer smoke evidence from the
+- [x] **W1 exit note** — collect the joint rollback + known-consumer smoke evidence from the
   three executed pilots (H1911/H1912/H1913, each closed with green V-gates) into one W1 exit
   review artifact. No human gate — agent-doable on pickup; mint the handoff on pickup.
+  **Done 24-09-2026** ([H5418](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5418-Sonnet_SanskritGrammar_w1-exit-note-rollback-consumer-smoke_24.09.26.md)):
+  [W1_EXIT_NOTE_24-09-2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/W1_EXIT_NOTE_24-09-2026.md).
+  This row's own premise did not hold on verification — only H1911 (Slice A) and H1913
+  (Slice C) are fully closed with evidence; **H1912 (Slice B) never advanced past its B0
+  baseline freeze**, B1–B4 rollback/cutover were never executed. See the exit note's
+  "Net conclusion for W2" before treating W2's launch ruling as resting on three completed
+  pilots.
 - [ ] **W2 — core factories migration (§5)** — human-only gate: the launch ruling belongs to
   MG; parked under the
   [30-day launch-criterion direction](https://github.com/gasyoun/Uprava/blob/main/docs/STANDING_POLICY_DIRECTION_30_DAYS_LAUNCH_CRITERION_2026-09.md)
