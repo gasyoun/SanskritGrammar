@@ -24,7 +24,7 @@ FIXTURE = [
 
 def test_fleiss_kappa_matches_hand_derivation():
     kappa, p_bar = q34.fleiss_kappa(FIXTURE)
-    assert kappa == q34.pytest.approx(1 / 3, abs=1e-9) if hasattr(q34, "pytest") else abs(kappa - 1 / 3) < 1e-9
+    assert abs(kappa - 1 / 3) < 1e-9
     assert abs(p_bar - 2 / 3) < 1e-9
 
 
