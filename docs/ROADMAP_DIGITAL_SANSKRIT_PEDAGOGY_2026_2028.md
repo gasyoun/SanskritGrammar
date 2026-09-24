@@ -1,8 +1,10 @@
 # Roadmap — Digital Sanskrit Pedagogy (2026–2028)
 
-_Created: 14-07-2026 · Last updated: 27-08-2026_
+_Created: 14-07-2026 · Last updated: 24-09-2026_
 
 > **Truth-pass 27-08-2026** (Grok 4.6 `grok-4.6`). Closed references checked against the combined registry. Kept in place ([FINDINGS §475](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md) clause 3). Not archived.
+
+> **Verdict pass 24-09-2026** (OxAlpha `opencode/z-ai/glm-5.3-flash`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)). Verdict = **REFRESH** (not archive): Wave 0, Wave 1 (all four deliverables) and the Wave 2 additions are shipped with cited evidence below; Wave 2's remaining two deliverables and all of Wave 3/Wave 4 are genuine unminted prose work with no merged PR or live H### against them (checked via `hub_grep.py` — zero hits on every remaining deliverable's own wording). Rewritten as gated checkboxes under "What is left"; each human gate has a dated GTD row in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
 
 Waves for the [digital Sanskrit pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md).
 Cover + decisions: [`docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md).
@@ -13,14 +15,14 @@ Each deliverable states what unblocks it.
 Field metadoc + layered plan + registration (MEGABOOK §2.10/§2.9, ARTICLES A62, GTD straddle tier,
 ROADMAP_INDEX) + wave-1 handoffs minted. *Unblocked by:* the three-audit prior-art sweep. **Done.**
 
-## Wave 1 — First results + the on-ramp (2026 H2)
+## Wave 1 — First results + the on-ramp (2026 H2) ✅ (all four shipped, verified 24-09-2026)
 
-| Deliverable | Unblocked by |
-|---|---|
-| **W1a** Difficulty/ordering dataset + analysis + method paper skeleton (RQ1) | kosha `core_rank` + SanskritGrammar textbook-τ (both exist) |
-| **W1b** A62 agenda paper draft (survey + hypotheses + evaluation design) | the field metadoc (exists) |
-| **W1c** Zaliznyak-made-learnable on-ramp (graded, minimal-notation; Талмуд as deep tier) | *Очерк*/*Конспект* + Talmud widgets + Zaliznyak index (all exist) |
-| **W1d** Consolidated last-mile pipeline spec (kosha → learner hop) | kosha reader/segmenter/frequency + Systema SRS (exist); W1a difficulty signal |
+| Deliverable | Unblocked by | Evidence |
+|---|---|---|
+| **W1a** Difficulty/ordering dataset + analysis + method paper skeleton (RQ1) | kosha `core_rank` + SanskritGrammar textbook-τ (both exist) | ✅ [H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md) archived (RQ1 confirmed, cited from A62 §survey) |
+| **W1b** A62 agenda paper draft (survey + hypotheses + evaluation design) | the field metadoc (exists) | ✅ [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md) archived; A62 now 4/5 in [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md), awaiting MG sign-off ([SIGNOFF_A62_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/SIGNOFF_A62_author_pass.md)) for 5/5 — that residual is A62's own, not this roadmap's |
+| **W1c** Zaliznyak-made-learnable on-ramp (graded, minimal-notation; Талмуд as deep tier) | *Очерк*/*Конспект* + Talmud widgets + Zaliznyak index (all exist) | ✅ [H915](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H915-Opus_SanskritGrammar_pedagogy-w1c-zaliznyak-onramp_14.07.26.md) archived |
+| **W1d** Consolidated last-mile pipeline spec (kosha → learner hop) | kosha reader/segmenter/frequency + Systema SRS (exist); W1a difficulty signal | ✅ [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md) archived |
 
 ## Wave 2 — Evaluation + generation (2027 H1)
 
@@ -60,6 +62,20 @@ file-level steps:
 | **Audio / śikṣā** — TTS or recorded recitation → unblock A0–A2 (RQ agenda §3.7) | a human GO on the audio-source @DECIDE (TTS vs reciter) + external content |
 | Adaptive learning contour with provable provenance (MEGABOOK §2.9 future) | evaluation harness (Wave 2) + learner corpus |
 | Learner corpus + error analysis | a live learner surface producing data |
+
+## What is left (verdict pass 24-09-2026 — gated checkboxes, replaces the loose Wave 2/3/4 prose above where a deliverable has no live handoff)
+
+Zero of the six rows below have a merged PR or a live H### against their own wording
+(checked via `hub_grep.py`, [H5364](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5364-OxAlpha_SanskritGrammar_rm-verdict-digital-sanskrit-pedagogy-2026-202_24.09.26.md)) — this is the unminted-prose table the verdict pass found, kept as the acceptance record.
+
+- [ ] **Wave 2 — auto-drill generation with verified answer keys (RQ2).** Not human-gated — drill schema + segmenter/paradigm engines already exist per the row above; open only because no handoff has been minted for it yet.
+- [ ] **Wave 2 — first user study proving learning gain (RQ4, paper A32).** Human-gated: needs a live learner cohort/consent design, not something an agent can run unattended. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W2-RQ4`.
+- [ ] **Wave 3 — Pāṇini sūtra ↔ corpus pedagogy surface.** Blocked on an external prerequisite (kosha Concordance Q4) that has not itself shipped — re-check when kosha's Concordance roadmap reports Q4 done.
+- [ ] **Wave 3 — `pedagogy_assets.tsv` machine index.** Not human-gated — the metadoc is stable per the row above; open only because no handoff has been minted for it yet.
+- [ ] **Wave 3 — Commentary-reading interface (C1/C2).** Blocked on an external prerequisite (CommentaryStrategies apparatus maturing) that has not itself shipped.
+- [ ] **Wave 4 — Audio/śikṣā, adaptive learning contour, learner corpus (all three).** Human-gated / prerequisite-gated: audio needs an explicit MG @DECIDE (TTS vs reciter) plus external content; adaptivity needs the Wave-2 evaluation harness (RQ2/RQ4 above) plus a learner corpus; the learner corpus itself needs a live learner surface producing data — none exists yet. GTD row: [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) `@WAITING H5364-W4-audio` (audio-source decide) and `@WAITING H5364-W4-adaptive` (blocked on RQ2/RQ4 + learner corpus, no date — re-check when Wave 2 ships).
+
+No real calendar-dated trigger is named anywhere in the source roadmap for any of the six rows above (only prerequisite conditions), so none qualifies for a silent-until-\<date\> verdict per ruling 3 — they stay open gated checkboxes instead.
 
 ## Non-goals (explicit)
 
