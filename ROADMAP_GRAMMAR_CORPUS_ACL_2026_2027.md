@@ -508,8 +508,23 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   [`KnauerFrazy_1908/README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md)
   for the adaptation rationale. `python scripts/claims_schema_validate.py --all` PASS on
   all six registers (0 errors) as of this verdict.
-- [ ] **Q3.4 three-scheme agreement (§4)** — Fleiss κ / Krippendorff α over the 876-root
-  crosswalk; never run (§2 S2). No human gate — agent-doable; the number Paper 2 formalises.
+- [x] **Q3.4 three-scheme agreement (§4)** — Fleiss κ / Krippendorff α over the 876-root
+  crosswalk. **SHIPPED 24-09-2026 (Sonnet 5, worker A04).** Result:
+  [S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md)
+  (letter-granularity Fleiss κ = 0.8178, Krippendorff α = 0.8179, "almost perfect" per
+  Landis & Koch; full-code κ = 0.7593, α = 0.7594, "substantial"; n = 844/876) — generator
+  [`scripts/q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q34_three_scheme_agreement.py),
+  tests in [`tests/test_q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q34_three_scheme_agreement.py),
+  raw numbers in
+  [`TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json).
+  **Coder substitution, read before citing:** "Gasuns 2014" has no independent per-root
+  scheme in this repo (his 2014 dissertation and its 2026-revision index both reuse
+  Zaliznyak 1975's series unchanged — see `MORPHOCLASS_3WAY_MEMO.md` axis 2 and
+  `GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx` §7.1); the third coder actually
+  computed is **Zaliznyak's own 1978 (Ocherk) revision**, not Gasuns. If the literal
+  Zal./Gas./Tol. framing is required for Paper 2, that needs a fresh `@DECIDE` on either
+  building a genuine Gasuns-2014 per-root scheme or re-scoping the paper's claim.
+  PR: (opening in this pass).
 - [ ] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
   ([`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv))
   before any detector swap. No human gate — agent-doable.
