@@ -524,7 +524,7 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   computed is **Zaliznyak's own 1978 (Ocherk) revision**, not Gasuns. If the literal
   Zal./Gas./Tol. framing is required for Paper 2, that needs a fresh `@DECIDE` on either
   building a genuine Gasuns-2014 per-root scheme or re-scoping the paper's claim.
-  PR: (opening in this pass).
+  PR [#967](https://github.com/gasyoun/SanskritGrammar/pull/967).
 - [ ] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
   ([`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv))
   before any detector swap. No human gate — agent-doable.
