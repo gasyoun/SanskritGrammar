@@ -543,8 +543,27 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   raw numbers
   [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json).
   PR: _link filled in at merge_.
-- [ ] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
-  Whitney spine. No human gate — agent-doable.
+- [x] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
+  Whitney spine. **SHIPPED 25-09-2026 (Sonnet 5, worker A04).** Pool grew from 3,213 to
+  6,385 sentences, purely additive (0 existing ids changed — the Q4.1 128-pair gold set
+  stays fully valid, re-verified byte-identical after the regen). Apte 1885 slots into the
+  existing lesson-based extractor cleanly (3,144 deva + 13 iast candidates across 30
+  lessons). **Finding worth acting on:** Whitney 1889 is a *reference* grammar (inflection
+  paradigms + a word-form index across its 18 chapters), not a graduated exercise book like
+  the other four — a full sweep found the chapters contribute essentially zero comparable
+  multi-word exercise sentences (mostly paradigm-table fragments, several chapters' Deva
+  runs using broken private-use-area glyphs from a legacy font). Whitney's one genuine
+  cleanly-rendered specimen is the Appendix's Hitopadeça-fable passage (IAST, 15
+  sentences) — extracted; its companion Rig-Veda hymn specimen is excluded (same broken
+  accent-glyph rendering, IAST not cleanly separable from the interleaved broken
+  Devanagari) and flagged as a follow-up, not silently dropped. Generator
+  [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py)
+  (`WHITNEY_APPENDIX_PATH` comment documents the scope decision), tests
+  [`tests/test_extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_extract_sentences.py)
+  (4 tests), data
+  [`scripts/data/sentences.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json) +
+  [`scripts/data/matches.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches.json).
+  PR: _link filled in at merge_.
 - [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
   consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
   [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)

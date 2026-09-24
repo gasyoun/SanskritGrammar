@@ -4,6 +4,75 @@
     "exact": true,
     "script": "deva",
     "a": {
+      "id": "apte-1885.27.2350",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "27",
+      "script": "deva",
+      "text": "यथाज्ञापयति देवः"
+    },
+    "b": {
+      "id": "buhler-1923.XVIII.407",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "यथाज्ञापयति देवः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.30.3010",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "30",
+      "script": "deva",
+      "text": "आशयच्चामृतं देवान्वेदमध्यापयद्विधिम्"
+    },
+    "b": {
+      "id": "buhler-1923.XVIII.405",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "आशयच्चामृतं देवान्वेदमध्यापयद्विधिम्"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.30.3011",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "30",
+      "script": "deva",
+      "text": "आसयत्सलिले पृथ्वीं यः स मे श्रीहरिर्गतिः"
+    },
+    "b": {
+      "id": "buhler-1923.XIX.422",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XIX",
+      "script": "deva",
+      "text": "आसयत्सलिले पृथ्वीं यः स मे श्रीहरिर्गतिः"
+    }
+  },
+  {
+    "score": 1.0,
+    "exact": true,
+    "script": "deva",
+    "a": {
       "id": "buhler-1923.IV.51",
       "book": "buhler",
       "book_label": "Bühler 1923",
@@ -2622,6 +2691,29 @@
     }
   },
   {
+    "score": 0.973,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.30.3009",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "30",
+      "script": "deva",
+      "text": "शत्रूनगमयत्स्वर्गं वेदार्थं स्वामवेदयत्"
+    },
+    "b": {
+      "id": "buhler-1923.XVIII.404",
+      "book": "buhler",
+      "book_label": "Bühler 1923",
+      "year": 1878,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "शत्रूनगमयत्स्वर्गं वेदार्थं स्वानवेदयत्"
+    }
+  },
+  {
     "score": 0.968,
     "exact": false,
     "script": "deva",
@@ -3429,6 +3521,29 @@
   {
     "score": 0.917,
     "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.4.254",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "4",
+      "script": "deva",
+      "text": "गां दोग्धि पयः"
+    },
+    "b": {
+      "id": "knauer-1908.11.247",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "11",
+      "script": "deva",
+      "text": "गां दुग्धि पयः"
+    }
+  },
+  {
+    "score": 0.917,
+    "exact": false,
     "script": "iast",
     "a": {
       "id": "buhler-1923.XXXI.716",
@@ -3470,6 +3585,29 @@
       "lesson": "5",
       "script": "deva",
       "text": "अद्भिः पादौ क्षालयति परिव्राट्"
+    }
+  },
+  {
+    "score": 0.909,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.27.2358",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "27",
+      "script": "deva",
+      "text": "यथा वृक्षस्तथा फलं"
+    },
+    "b": {
+      "id": "kochergina-1998.IX.112",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "IX",
+      "script": "deva",
+      "text": "यथा वृक्षस्तथा फलम्"
     }
   },
   {
@@ -4183,6 +4321,52 @@
       "lesson": "3",
       "script": "deva",
       "text": "स्त्री पत्ये रूपकाणि यछति"
+    }
+  },
+  {
+    "score": 0.848,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.20.1747",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "20",
+      "script": "deva",
+      "text": "अहं तं गमयिष्यामि"
+    },
+    "b": {
+      "id": "kochergina-1998.XVIII.430",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XVIII",
+      "script": "deva",
+      "text": "अहं तव गृहं गमिष्यामि"
+    }
+  },
+  {
+    "score": 0.844,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.19.1688",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "19",
+      "script": "deva",
+      "text": "तपोवनवासिनामुपरोधो मा भूत्"
+    },
+    "b": {
+      "id": "knauer-1908.14.320",
+      "book": "knauer",
+      "book_label": "Knauer 1908",
+      "year": 1908,
+      "lesson": "14",
+      "script": "deva",
+      "text": "तपस्विनामुपरोधो मा भूत्"
     }
   },
   {
@@ -5402,6 +5586,29 @@
       "lesson": "XXXIV",
       "script": "iast",
       "text": "vand Ā I"
+    }
+  },
+  {
+    "score": 0.83,
+    "exact": false,
+    "script": "deva",
+    "a": {
+      "id": "apte-1885.17.1503",
+      "book": "apte",
+      "book_label": "Apte 1885",
+      "year": 1885,
+      "lesson": "17",
+      "script": "deva",
+      "text": "अस्त्युत्तरस्यां दिशि हिमालयो नाम नगाधिराजः"
+    },
+    "b": {
+      "id": "kochergina-1998.XXXII.794",
+      "book": "kochergina",
+      "book_label": "Kochergina 1998",
+      "year": 1998,
+      "lesson": "XXXII",
+      "script": "deva",
+      "text": "हिमालयः अस्त्युत्तरस्यां दिशि देवतात्मा हिमालयो नाम नगाधिराजः"
     }
   }
 ]

@@ -1,14 +1,21 @@
 #!/usr/bin/env python3
-"""Extract Sanskrit sentences (both Devanagari and IAST) from the three
-grammar .mdx files (Buhler 1923, Knauer 1908, Kochergina 1998) and find
-cross-book matches.
+"""Extract Sanskrit sentences (both Devanagari and IAST) from the grammar
+.mdx files (Buhler 1923, Knauer 1908, Kochergina 1998, Apte 1885, Whitney
+1889) and find cross-book matches.
 
 First-pass tool for the Buhler/Knauer/Kochergina exercise-sentence
-concordance (H311). Each extracted sentence keeps a `script` tag
-("deva"/"iast") recording which script it was originally set in. Matching
-is done within each script pool separately (deva-vs-deva, iast-vs-iast) —
-cross-script (Devanagari vs IAST) matching would need a transliteration
-step and is a follow-up (see handoff).
+concordance (H311), extended to Apte + Whitney by
+ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md §4 Q4.3. Each extracted sentence
+keeps a `script` tag ("deva"/"iast") recording which script it was
+originally set in. Matching is done within each script pool separately
+(deva-vs-deva, iast-vs-iast) — cross-script (Devanagari vs IAST) matching
+would need a transliteration step and is a follow-up (see handoff).
+
+Whitney 1889 is a reference grammar (paradigm tables + a word-form index
+across its 18 chapters), not a graduated exercise book like the other four
+— the Q4.3 evidence check found essentially no comparable multi-word
+exercise-sentence content there (see `extract_whitney_appendix` below for
+what the check found and what it deliberately excludes).
 
 Usage:
     python scripts/extract_sentences.py extract   # writes data/sentences.json
@@ -49,7 +56,59 @@ BOOKS = {
         "path": os.path.join(ROOT, "KocherginaUchebnik_1998", "Kochergina_unicode.mdx"),
         "lesson_re": re.compile(r"^Занятие\s+([IVXL]+)\s*$", re.MULTILINE),
     },
+    "apte": {
+        "label": "Apte 1885",
+        "year": 1885,
+        "edition_year": 1885,
+        "path": os.path.join(ROOT, "ApteSyntax_1885", "Apte-unicode.mdx"),
+        # e.g. `# Урок 4` or `# **Урок 1.**` — TOC lines start with `[`, not `#`.
+        "lesson_re": re.compile(r"^#\s*\**Урок\s+(\d+)\.?\**\s*$", re.MULTILINE),
+    },
 }
+
+# Whitney 1889 (WhitneyGrammar_1889/) is split across 19 per-chapter .mdx
+# files with no lesson structure, and chapters I-XVIII are inflection
+# paradigms and a word-form index, not exercise sentences — a naive regex
+# sweep over them mostly surfaces paradigm-table fragments and, in several
+# chapters, Devanagari runs with broken conjunct/matra rendering (private-
+# use-area glyphs from a legacy font), not real sentences. The one place
+# with genuine, cleanly-rendered multi-sentence prose is the Appendix's
+# first specimen passage (a Hitopadeca fable, given in Devanagari then IAST
+# transliteration) — its IAST half splits cleanly on sentence-final periods.
+# The Appendix's second specimen (a Rig-Veda hymn) is excluded: its
+# Devanagari uses the same broken accent-mark rendering, and its IAST is not
+# cleanly separable from the interleaved broken Devanagari without a hand
+# fix — a follow-up, not silently dropped.
+WHITNEY_APPENDIX_PATH = os.path.join(ROOT, "WhitneyGrammar_1889", "19_Appendix.mdx")
+WHITNEY_FABLE_END_MARKER = "B. The following text is given"
+
+
+def extract_whitney_appendix():
+    """Return the Whitney 1889 Appendix's Hitopadeca-fable sentences (IAST only)."""
+    with open(WHITNEY_APPENDIX_PATH, encoding="utf-8") as f:
+        lines = f.readlines()
+    part1 = lines[12].strip()  # "aasiit kalyaaNakaTakavaastavyo ..." paragraph
+    part2_line = lines[14]
+    end = part2_line.find(WHITNEY_FABLE_END_MARKER)
+    part2 = part2_line[:end].strip()
+    fable = part1 + " " + part2
+    sentences = []
+    idx = 0
+    for piece in re.split(r"(?<=\.)\s+", fable):
+        piece = piece.strip()
+        if len(piece) < 6 or len(piece.split()) < 2:
+            continue
+        idx += 1
+        sentences.append({
+            "id": sentence_id("whitney", 1889, "appendix", idx),
+            "book": "whitney",
+            "book_label": "Whitney 1889",
+            "year": 1889,
+            "lesson": "appendix",
+            "script": "iast",
+            "text": piece,
+        })
+    return sentences
 
 DEVANAGARI_RUN = re.compile(r"[ऀ-ॿ][ऀ-ॿ\s]*[ऀ-ॿ]")
 FOOTNOTE_MARK = re.compile(r"\^\d+\^|\[\^\d+\]")
@@ -166,6 +225,12 @@ def extract():
         n_deva = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "deva")
         n_iast = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "iast")
         print(f"{book_id}: {n_deva} deva + {n_iast} iast sentence candidates", file=sys.stderr)
+
+    whitney_sentences = extract_whitney_appendix()
+    all_sentences.extend(whitney_sentences)
+    print(f"whitney: 0 deva + {len(whitney_sentences)} iast sentence candidates "
+          "(Appendix fable only — see WHITNEY_APPENDIX_PATH comment)", file=sys.stderr)
+
     out_path = os.path.join(DATA_DIR, "sentences.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(all_sentences, f, ensure_ascii=False, indent=2)
@@ -189,7 +254,7 @@ def match(threshold=0.82):
     for s in sentences:
         by_key.setdefault((s["book"], s["script"]), []).append(s)
 
-    book_ids = list(BOOKS.keys())
+    book_ids = sorted({s["book"] for s in sentences})
     book_pairs = [(book_ids[i], book_ids[j]) for i in range(len(book_ids)) for j in range(i + 1, len(book_ids))]
 
     results = []
