@@ -1,0 +1,86 @@
+{
+  "source_csv": "TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv",
+  "n_source_rows": 876,
+  "coders": {
+    "1975": "ryad_derived",
+    "1978": "ryad_1978",
+    "2026": "z_series"
+  },
+  "coder_substitution_note": "Gasuns 2014 has no independent per-root scheme in this repo (reuses Zaliznyak 1975's series unchanged); substituted with Zaliznyak's own 1978 Ocherk revision as the third coder. See MORPHOCLASS_3WAY_MEMO.md axis 2 and GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx §7.1.",
+  "seed": 20260924,
+  "n_bootstrap": 2000,
+  "granularities": [
+    {
+      "granularity": "full",
+      "n_items": 844,
+      "n_missing_any_coder": 1,
+      "n_uncertain_excluded": 31,
+      "n_categories": 18,
+      "fleiss_kappa": 0.7593,
+      "fleiss_kappa_ci95": [
+        0.7319,
+        0.7845
+      ],
+      "observed_agreement_p_bar": 0.7923,
+      "krippendorff_alpha": 0.7594,
+      "krippendorff_alpha_ci95": [
+        0.732,
+        0.7846
+      ],
+      "n_all_three_disagree": 56,
+      "pairwise": {
+        "1975_vs_1978": {
+          "n": 844,
+          "raw_agreement": 0.8851,
+          "cohen_kappa": 0.864
+        },
+        "1975_vs_2026": {
+          "n": 844,
+          "raw_agreement": 0.731,
+          "cohen_kappa": 0.6914
+        },
+        "1978_vs_2026": {
+          "n": 844,
+          "raw_agreement": 0.7607,
+          "cohen_kappa": 0.7275
+        }
+      }
+    },
+    {
+      "granularity": "letter",
+      "n_items": 844,
+      "n_missing_any_coder": 1,
+      "n_uncertain_excluded": 31,
+      "n_categories": 7,
+      "fleiss_kappa": 0.8178,
+      "fleiss_kappa_ci95": [
+        0.7934,
+        0.8414
+      ],
+      "observed_agreement_p_bar": 0.861,
+      "krippendorff_alpha": 0.8179,
+      "krippendorff_alpha_ci95": [
+        0.7935,
+        0.8414
+      ],
+      "n_all_three_disagree": 10,
+      "pairwise": {
+        "1975_vs_1978": {
+          "n": 844,
+          "raw_agreement": 0.9171,
+          "cohen_kappa": 0.8883
+        },
+        "1975_vs_2026": {
+          "n": 844,
+          "raw_agreement": 0.8258,
+          "cohen_kappa": 0.7746
+        },
+        "1978_vs_2026": {
+          "n": 844,
+          "raw_agreement": 0.84,
+          "cohen_kappa": 0.7952
+        }
+      }
+    }
+  ]
+}
