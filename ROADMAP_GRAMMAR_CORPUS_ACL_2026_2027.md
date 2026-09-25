@@ -575,7 +575,7 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   + [kosha manifest PR #646](https://github.com/gasyoun/kosha/pull/646) (auto-merge enabled).
   **Not** wired into repo CI — the generator needs sibling `VisualDCS`/`kosha`
   checkouts CI does not have (same pattern as `refresh_published_figures.py`, H2298);
-  regenerate manually after either source updates. PR: _link filled in at merge_.
+  regenerate manually after either source updates. PR: [#980](https://github.com/gasyoun/SanskritGrammar/pull/980) (auto-merge enabled).
 - [ ] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first (§4
   preamble: the literal Q4 deliverables "require a fresh evidence check before execution").
   Mint after Q4.1 lands.
