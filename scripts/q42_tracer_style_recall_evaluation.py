@@ -377,8 +377,5 @@ def write_report(result):
         f.write("\n".join(lines))
 
 
-BASELINE_WHOLE_THRESHOLD_DOC = BASELINE_WHOLE_THRESHOLD
-
-
 if __name__ == "__main__":
     main()
