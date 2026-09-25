@@ -45,51 +45,49 @@ def load_dcs_lemmas():
     return data["lemmas"], data.get("corpusRelease", "unknown")
 
 
+def join_row(r, dcs_lemmas, kosha_by_bare):
+    """Join one Whitney-crosswalk row against the DCS lemma and kosha
+    dhatu-crosswalk lookups. Pure function -- no file I/O -- so the join
+    logic is unit-testable against synthetic fixtures."""
+    whitney_no = r["whitney_no"]
+    root_iast = r["root"]
+    root_slp1 = transliterate(root_iast, sanscript.IAST, sanscript.SLP1)
+
+    dcs_entry = dcs_lemmas.get(root_slp1)
+    dcs_attested = bool(dcs_entry and dcs_entry.get("attested"))
+    dcs_freq_band = dcs_entry.get("freqBand") if dcs_entry else None
+
+    vidyut_matches = kosha_by_bare.get(root_slp1, [])
+    vidyut_aupadeshika_set = {m["aupadeshika"] for m in vidyut_matches if m.get("aupadeshika")}
+    vidyut_aupadeshika = ";".join(sorted(vidyut_aupadeshika_set))
+    vidyut_codes = ";".join(sorted({m["code"] for m in vidyut_matches if m.get("code")}))
+    vidyut_ambiguous = len(vidyut_aupadeshika_set) > 1
+
+    return {
+        "whitney_no": whitney_no,
+        "root_iast": root_iast,
+        "root_slp1": root_slp1,
+        "homonym": r.get("homonym", ""),
+        "gloss": r.get("gloss", ""),
+        "dcs_lemma_attested": dcs_attested,
+        "dcs_freq_band": dcs_freq_band if dcs_freq_band is not None else "",
+        "vidyut_aupadeshika": vidyut_aupadeshika,
+        "vidyut_dhatupatha_code": vidyut_codes,
+        "vidyut_match_count": len(vidyut_matches),
+        "vidyut_ambiguous": vidyut_ambiguous,
+    }
+
+
 def main():
     kosha_by_bare, vidyut_version = load_kosha_by_bare_root()
     dcs_lemmas, dcs_release = load_dcs_lemmas()
 
     rows = list(csv.DictReader(WHITNEY_CROSSWALK.open(encoding="utf-8")))
 
-    out_rows = []
-    n_dcs_attested = 0
-    n_vidyut_matched = 0
-    n_vidyut_ambiguous = 0
-
-    for r in rows:
-        whitney_no = r["whitney_no"]
-        root_iast = r["root"]
-        root_slp1 = transliterate(root_iast, sanscript.IAST, sanscript.SLP1)
-
-        dcs_entry = dcs_lemmas.get(root_slp1)
-        dcs_attested = bool(dcs_entry and dcs_entry.get("attested"))
-        dcs_freq_band = dcs_entry.get("freqBand") if dcs_entry else None
-        if dcs_attested:
-            n_dcs_attested += 1
-
-        vidyut_matches = kosha_by_bare.get(root_slp1, [])
-        vidyut_aupadeshika_set = {m["aupadeshika"] for m in vidyut_matches if m.get("aupadeshika")}
-        vidyut_aupadeshika = ";".join(sorted(vidyut_aupadeshika_set))
-        vidyut_codes = ";".join(sorted({m["code"] for m in vidyut_matches if m.get("code")}))
-        vidyut_ambiguous = len(vidyut_aupadeshika_set) > 1
-        if vidyut_matches:
-            n_vidyut_matched += 1
-        if vidyut_ambiguous:
-            n_vidyut_ambiguous += 1
-
-        out_rows.append({
-            "whitney_no": whitney_no,
-            "root_iast": root_iast,
-            "root_slp1": root_slp1,
-            "homonym": r.get("homonym", ""),
-            "gloss": r.get("gloss", ""),
-            "dcs_lemma_attested": dcs_attested,
-            "dcs_freq_band": dcs_freq_band if dcs_freq_band is not None else "",
-            "vidyut_aupadeshika": vidyut_aupadeshika,
-            "vidyut_dhatupatha_code": vidyut_codes,
-            "vidyut_match_count": len(vidyut_matches),
-            "vidyut_ambiguous": vidyut_ambiguous,
-        })
+    out_rows = [join_row(r, dcs_lemmas, kosha_by_bare) for r in rows]
+    n_dcs_attested = sum(1 for row in out_rows if row["dcs_lemma_attested"])
+    n_vidyut_matched = sum(1 for row in out_rows if row["vidyut_match_count"] > 0)
+    n_vidyut_ambiguous = sum(1 for row in out_rows if row["vidyut_ambiguous"])
 
     OUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     with OUT_CSV.open("w", encoding="utf-8", newline="") as f:
