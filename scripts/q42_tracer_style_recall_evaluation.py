@@ -349,6 +349,15 @@ def write_report(result):
         f"**{gr['n_recovered_by_seeding']}/{gr['n_true_pairs']} recovered "
         f"(recall={gr['recall']}).** This is a floor, not the roadmap's recall gain."
     )
+    if gr["missed_pairs"]:
+        lines.append("")
+        lines.append(
+            f"{len(gr['missed_pairs'])} pair(s) missed — both are the same transposition "
+            f"edit (`dhāiiiu` ↔ `dhāuiii`): a character swap shares no contiguous 4-gram "
+            f"shingle even though `SequenceMatcher.ratio()` scores the pair high, a known "
+            f"blind spot of contiguous-shingle seeding (not of the chunk scorer itself, "
+            f"which would find these if seeded)."
+        )
     lines.append("")
     lines.append("## Claim 2 — new candidates beyond the 124-cluster baseline, per chunk size")
     lines.append("")
