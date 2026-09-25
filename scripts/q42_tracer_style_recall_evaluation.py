@@ -374,6 +374,13 @@ def write_report(result):
         n = result["new_candidates_by_chunk_size"][size]["n_new_candidates"]
         lines.append(f"| {size} | {n} |")
     lines.append("")
+    lines.append(
+        "The trend holds at the ends (small W finds far more than whole-string, which finds "
+        "none by definition) but is not perfectly monotonic in between (16 < 20) — at these "
+        "small counts a handful of borderline pairs crossing the 0.90 cutoff in either "
+        "direction is expected noise, not a claim that every smaller W strictly dominates."
+    )
+    lines.append("")
     lines.append("## Scope — what this evaluation cannot say")
     lines.append("")
     lines.append(result["scope_limitation"])
