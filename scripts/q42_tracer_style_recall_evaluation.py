@@ -101,8 +101,8 @@ OUT_REPORT = ROOT / "Q4_2_TRACER_STYLE_RECALL_EVALUATION_RESULT.md"
 BASELINE_BOOKS = ("buhler", "knauer", "kochergina")
 
 BASELINE_WHOLE_THRESHOLD = 0.82  # extract_sentences.py match(threshold=0.82)
-SEED_NGRAM = 6
-MIN_SHARED_SEEDS = 2
+SEED_NGRAM = 4
+MIN_SHARED_SEEDS = 1
 CHUNK_SIZES = (8, 12, 16, 20, "whole")
 NEW_CANDIDATE_THRESHOLD = 0.90  # high bar for a "new candidate", since these are unverified
 LENGTH_RATIO_GUARD = 0.4  # same guard extract_sentences.match() uses
