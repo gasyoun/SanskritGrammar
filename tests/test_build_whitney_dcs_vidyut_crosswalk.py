@@ -64,6 +64,7 @@ def test_unattested_root_and_no_vidyut_match():
 
 
 def test_lemma_present_but_not_attested():
-    out = q44.join_row(_row("5", "GOsta"), DCS_LEMMAS, KOSHA_BY_BARE)
-    assert out["root_slp1"] == "GOsta"
+    out = q44.join_row(_row("5", "ghost"), DCS_LEMMAS, KOSHA_BY_BARE)
+    assert out["root_slp1"] == "Gost"
+    assert out["dcs_freq_band"] == 0
     assert out["dcs_lemma_attested"] is False
