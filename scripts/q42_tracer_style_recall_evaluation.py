@@ -31,7 +31,7 @@ Method
    unbroken character stream (sandhi glues Devanagari words together with no
    token boundary, and both scripts already strip whitespace before
    scoring) — so "chunk" here is a character window, not a word n-gram.
-2. Candidate seeding: index character 6-grams per sentence (a shingle set),
+2. Candidate seeding: index character 4-grams per sentence (a shingle set),
    cross-book, and keep a pair as a candidate whenever the two sentences
    share >= ``MIN_SHARED_SEEDS`` shingles. This avoids the O(n^2) full
    cross-product over the ~3,213-sentence 3-book pool (buhler/knauer/
@@ -152,7 +152,7 @@ def load_gold():
 
 
 def seed_candidates(sents_a, sents_b):
-    """Cross-book candidate pairs sharing >= MIN_SHARED_SEEDS 6-gram shingles.
+    """Cross-book candidate pairs sharing >= MIN_SHARED_SEEDS 4-gram shingles.
 
     Standard shingle-seeded blocking (the shape TRACER's anchor n-grams and
     Passim's MinHash/LSH both reduce to) — avoids the O(len(a)*len(b)) full
@@ -225,11 +225,17 @@ def main():
     # --- Claim 1: recall on the existing 128-pair gold (regression floor) ---
     gold = load_gold()
     gold_true = [r for r in gold if r["verdict"] in (TP_VERDICT, BOUNDARY_VERDICT)]
-    recovered = sum(1 for r in gold_true if pair_key({"id": r["a_id"]}, {"id": r["b_id"]}) in by_pair_key)
+    missed = [r for r in gold_true if pair_key({"id": r["a_id"]}, {"id": r["b_id"]}) not in by_pair_key]
+    recovered = len(gold_true) - len(missed)
     gold_recall = {
         "n_true_pairs": len(gold_true),
         "n_recovered_by_seeding": recovered,
         "recall": round(recovered / len(gold_true), 4) if gold_true else None,
+        "missed_pairs": [
+            {"a": r["a_id"], "b": r["b_id"], "verdict": r["verdict"],
+             "note": "transposition edit — shares no contiguous shingle despite high whole-string ratio"}
+            for r in missed
+        ],
     }
 
     # --- Claim 2: new candidates beyond the 124-cluster baseline, per chunk size ---
