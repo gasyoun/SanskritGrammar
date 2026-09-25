@@ -576,9 +576,26 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   **Not** wired into repo CI — the generator needs sibling `VisualDCS`/`kosha`
   checkouts CI does not have (same pattern as `refresh_published_figures.py`, H2298);
   regenerate manually after either source updates. PR: _link filled in at merge_.
-- [ ] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first (§4
-  preamble: the literal Q4 deliverables "require a fresh evidence check before execution").
-  Mint after Q4.1 lands.
+- [x] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first, cleared
+  24-09-2026. **SHIPPED 25-09-2026 (Sonnet 5 `claude-sonnet-5`, worker A05):** neither JVM/Spark
+  tool is vendored (both named "unverified externals" in
+  [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md));
+  implements the one transferable finding from Miyagawa et al. 2024
+  ([2024.nlp4dh-1.12](https://aclanthology.org/2024.nlp4dh-1.12/), TRACER validated on Sanskrit)
+  — smaller matching chunks raise recall — as 4-gram shingle-seeded candidate generation +
+  sliding-window scoring over the same 3-book pool the 124-cluster catalog was built from.
+  **Result:** 97.4% (76/78) gold-pair recall floor (2 misses are a documented transposition
+  blind spot); 168/35/6/7 new candidates found at chunk sizes 8/12/16/20 vs 0 at whole-string,
+  confirming the paper's finding — reported as UNVERIFIED discovery counts, not a verified
+  recall percentage (no H327-style review pass has scored the new candidates; that pass is the
+  owner residual). Generator
+  [`scripts/q42_tracer_style_recall_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q42_tracer_style_recall_evaluation.py),
+  tests [`tests/test_q42_tracer_style_recall_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q42_tracer_style_recall_evaluation.py)
+  (9 tests), full report
+  [`Q4_2_TRACER_STYLE_RECALL_EVALUATION_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/Q4_2_TRACER_STYLE_RECALL_EVALUATION_RESULT.md),
+  raw numbers
+  [`scripts/data/q42_tracer_style_recall_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q42_tracer_style_recall_evaluation.json).
+  PR: _link filled in at merge_.
 - [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
   DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
