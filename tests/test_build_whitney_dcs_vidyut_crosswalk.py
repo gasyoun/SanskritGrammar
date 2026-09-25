@@ -9,7 +9,7 @@ import build_whitney_dcs_vidyut_crosswalk as q44
 DCS_LEMMAS = {
     "kf": {"freqBand": 5, "attested": True},
     "gam": {"freqBand": 5, "attested": True},
-    "ghost": {"freqBand": 0, "attested": False},
+    "Gost": {"freqBand": 0, "attested": False},
 }
 
 KOSHA_BY_BARE = {
