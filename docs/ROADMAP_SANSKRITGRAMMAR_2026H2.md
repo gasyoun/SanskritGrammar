@@ -207,6 +207,20 @@ Unminted-prose table (item · evidence · verdict) required by the H5365 accepta
 
 - [x] W1-E — re-adjudicate the 6 OPEN a65 claim notes (HB-100, HB-57, HK-15, HK-34, HK-4a, HK-5) + `MO021-09` in [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv). Done 25-09-2026 (A10, Sonnet 5): the branch `origin/h1276-a65-writeback` named in HB-100's stale evidence column was gone because it was **merged and deleted**, not abandoned — [H1276](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1276-Fable_SanskritGrammar_sangram-apply-notes-a65-claims_18.07.26.md) landed via [SanskritGrammar PR #502](https://github.com/gasyoun/SanskritGrammar/pull/502) on 21-07-2026, writing all 6 dispositions into `claims.yml`; the ledger row was simply never refreshed after. `MO021-09` resolved separately: both companion methodichkas it asks for now exist and cite it directly ([H807](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md), [H1757](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md)). No claims.yml re-derivation was needed or performed — only the ledger's `applied_status`/`evidence` columns were re-adjudicated against already-merged evidence.
 - [ ] W1-C/D residuals — `sangram-prose-style-guide-visa_16.07.26#A2` (`PARTIAL`, 4 more counter-examples), `sangram-sg-mo-001-declension-overview-visa_16.07.26#A1` (`ESCALATED`), `sanskritgrammar-metodichka-kochergina-v1_16.07.26#razdel-3-otsylki` (`ESCALATED`). Fable tier.
+  **Split status, A13 (25-09-2026, Sonnet 5):** first sub-item now `APPLIED` in full —
+  [`sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+  § 2.1 reads 3 more rusgram.ru articles over `http://` (Stoynova's second piece +
+  2 by Paducheva) and documents each author's individual register, plus a factual
+  correction (ТП is Печёный's only rusgram.ru article, not Stoynova's second) —
+  [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv)
+  row `sangram-prose-style-guide-visa_16.07.26#A2` flipped `PARTIAL` → `APPLIED`.
+  **The other two sub-items are unchanged and stay `ESCALATED`** — both are
+  genuinely human-gated, not agent-doable: `declension-overview-visa#A1` needs an
+  authorial genre ruling (Zaliznyak-essay vs. Whitney-normative register, already
+  routed to a human `@DECIDE` per its own evidence column); `razdel-3-otsylki`
+  needs (a) a paginated Konspekt-2004 PDF that does not exist in the repo or any
+  shadow asset store, and (b) a specific Miller work named by a human — an agent
+  cannot invent either. Checkbox stays open pending those two.
 - [ ] W2-A — rewrite [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) to remove the calendar (mermaid gantt lines + wave-year headers), replacing with contract/checkpoint gates per the original W2-A acceptance line above. Fable tier (constitution-level Russian register).
 
 ## 3. Out of scope, with reasons
