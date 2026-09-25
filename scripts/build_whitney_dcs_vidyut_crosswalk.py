@@ -68,9 +68,10 @@ def main():
             n_dcs_attested += 1
 
         vidyut_matches = kosha_by_bare.get(root_slp1, [])
-        vidyut_aupadeshika = ";".join(sorted({m["aupadeshika"] for m in vidyut_matches}))
+        vidyut_aupadeshika_set = {m["aupadeshika"] for m in vidyut_matches if m.get("aupadeshika")}
+        vidyut_aupadeshika = ";".join(sorted(vidyut_aupadeshika_set))
         vidyut_codes = ";".join(sorted({m["code"] for m in vidyut_matches if m.get("code")}))
-        vidyut_ambiguous = len({m["aupadeshika"] for m in vidyut_matches}) > 1
+        vidyut_ambiguous = len(vidyut_aupadeshika_set) > 1
         if vidyut_matches:
             n_vidyut_matched += 1
         if vidyut_ambiguous:
