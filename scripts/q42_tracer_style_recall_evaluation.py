@@ -347,7 +347,7 @@ def write_report(result):
     lines.append("## Claim 2 — new candidates beyond the 124-cluster baseline, per chunk size")
     lines.append("")
     lines.append(
-        f"Pairs with whole-sentence ratio < {result['new_candidate_threshold'] if False else BASELINE_WHOLE_THRESHOLD_DOC} "
+        f"Pairs with whole-sentence ratio < {BASELINE_WHOLE_THRESHOLD} "
         f"(never surfaced by the shipped detector) whose best chunk ratio at window size W "
         f"clears {result['new_candidate_threshold']}. Per Miyagawa et al.'s own finding, smaller "
         f"W should surface more such pairs than the whole-string reference row:"
