@@ -554,10 +554,28 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   clustering/rendering pipeline hardcodes 3 books and needs its own pass to
   honestly carry 5 (owner residual, see CHANGELOG). PR: _link filled in at
   merge_.
-- [ ] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
+- [x] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
   consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
   [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
-  + the kosha manifest. No human gate — agent-doable under the boundary.
+  + the kosha manifest. No human gate — agent-doable under the boundary. **SHIPPED
+  25-09-2026 (Sonnet 5 `claude-sonnet-5`, worker A05):** joined the existing 876-root
+  Whitney crosswalk
+  ([`TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv))
+  to VisualDCS `dcs_lemma_summary.json` (corpus attestation/freq band) and kosha
+  `data/e1/dhatu_crosswalk.json` (H855, vidyut-prakriya aupadeśika dhātu + dhātupātha
+  code) via IAST→SLP1 root transliteration — both sources consumed read-only, neither
+  re-derived. 876 rows: 720 DCS-attested (82.2%), 541 vidyut-matched (61.8%, 70
+  ambiguous — root string maps to >1 distinct aupadeśika, reported not resolved).
+  Generator [`scripts/build_whitney_dcs_vidyut_crosswalk.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_whitney_dcs_vidyut_crosswalk.py),
+  tests [`tests/test_build_whitney_dcs_vidyut_crosswalk.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_build_whitney_dcs_vidyut_crosswalk.py)
+  (5 tests, pure join-logic unit fixtures), output
+  [`data/whitney_dcs_vidyut_crosswalk.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/whitney_dcs_vidyut_crosswalk.csv)
+  + [`data/whitney_dcs_vidyut_crosswalk_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/whitney_dcs_vidyut_crosswalk_summary.json).
+  Registered [Uprava PROJECT_INTERLINKS.md PR #3821](https://github.com/gasyoun/Uprava/pull/3821)
+  + [kosha manifest PR #646](https://github.com/gasyoun/kosha/pull/646) (auto-merge enabled).
+  **Not** wired into repo CI — the generator needs sibling `VisualDCS`/`kosha`
+  checkouts CI does not have (same pattern as `refresh_published_figures.py`, H2298);
+  regenerate manually after either source updates. PR: _link filled in at merge_.
 - [ ] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first (§4
   preamble: the literal Q4 deliverables "require a fresh evidence check before execution").
   Mint after Q4.1 lands.
