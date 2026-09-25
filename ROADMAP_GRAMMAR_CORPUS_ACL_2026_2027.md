@@ -598,6 +598,12 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   PR: _link filled in at merge_.
 - [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
   DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
+  **B7 shipped (A06, 25-09-2026):** SHA-256 fixity manifest for every tracked
+  `.doc`/`.docx` source ([`scripts/build_source_checksums.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_source_checksums.py)).
+  Owner residual: a human with `workflow`-scope push adds
+  `uv run python scripts/build_source_checksums.py --check` to
+  `.github/workflows/ci.yml`'s `validators` step (the agent push token lacked
+  that scope). B3–B6 and B8 remain open. PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.
