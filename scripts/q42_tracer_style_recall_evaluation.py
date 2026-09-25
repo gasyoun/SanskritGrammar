@@ -257,7 +257,10 @@ def main():
                 new_pairs.append(r)
         new_candidates_by_size[str(size)] = {
             "n_new_candidates": len(new_pairs),
-            "examples": sorted(new_pairs, key=lambda r: -r[col])[:5],
+            # secondary key on (a, b) makes ordering deterministic across runs even
+            # when scores tie — set/dict iteration order depends on PYTHONHASHSEED,
+            # which is randomized per process and would otherwise flip tie order
+            "examples": sorted(new_pairs, key=lambda r: (-r[col], r["a"], r["b"]))[:5],
         }
 
     result = {
