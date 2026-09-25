@@ -1,0 +1,17 @@
+{
+  "_about": "Q4.4 crosswalk: Whitney root number <-> DCS corpus lemma attestation <-> vidyut-prakriya dhatupatha code. Joins two already-derived assets (VisualDCS dcs_lemma_summary.json, kosha data/e1/dhatu_crosswalk.json) via IAST->SLP1 root transliteration; neither source is re-derived.",
+  "generated_by": "scripts/build_whitney_dcs_vidyut_crosswalk.py",
+  "sources": {
+    "whitney_root_crosswalk": "TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv",
+    "dcs_lemma_summary": "VisualDCS/dcs_lemma_summary.json",
+    "dcs_corpus_release": "DCS-2021",
+    "kosha_dhatu_crosswalk": "kosha/data/e1/dhatu_crosswalk.json",
+    "vidyut_version": "0.4.0"
+  },
+  "row_count": 876,
+  "dcs_attested_count": 720,
+  "dcs_attested_pct": 82.19,
+  "vidyut_matched_count": 541,
+  "vidyut_matched_pct": 61.76,
+  "vidyut_ambiguous_count": 70
+}
