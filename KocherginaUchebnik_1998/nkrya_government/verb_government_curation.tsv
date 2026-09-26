@@ -1,0 +1,11 @@
+pair_id	action	verb	dependent	direction	reason
+XVI-1.1|утрачен|-|gen	drop				passive participle «утрачен»; «Носовой» is its subject, no governed object
+XXII-1.1|лексикализованный|-|acc	drop				participle used as an adjective of «оборот» (its head noun), not an object
+XXXVII-1.1|засвидетельствован|-|gen	drop				passive participle; «корневой (ágan)» is its subject
+XXXIX-1.1|стоит|в|loc	drop				pymorphy lemma «стоить» is wrong here (sam стоит в положении = стоять); re-added below
+X-2.1|слетающимся|-|dat	drop				«слетающимся» agrees with «птицам»; the dative is governed by «сыплющих» (сыпать кому); re-added below
+XXXIX-1.3|произошла|-|gen	drop				«царей» depends on the subject «встреча»; произойти governs nothing here
+XXXIX-1.1|стоит|в|loc	add	стоять	положении	right	sam стоит в дистактном положении — стоять + в + loc
+X-2.1|сыплющих|-|dat	add	сыпать	птицам	right	сыплющих зерно слетающимся птицам — сыпать + dat (recipient)
+XVI-1.3|привязывает|к|dat	add	привязывать	чему	left	к чему привязывает волю — the window stopped at the acc object «волю» on the right
+XXII-2.1|подавлял|-|acc	add	подавлять	любовь	right	the parenthesis «(в сердце)» breaks the clause window before «любовь»
