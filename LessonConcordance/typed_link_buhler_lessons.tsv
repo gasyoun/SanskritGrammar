@@ -1,0 +1,15 @@
+anchor_type	anchor_id	anchor_key_slp1	target_locus	link_type	source_dataset	match_method	confidence	evidence_count	date
+buhler-topic	buhler-topic:I.present-a		subject:sanskritgrammar:present_a	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.97		01-10-2026
+buhler-topic	buhler-topic:I.present-a		whitney-sec:733-750	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	2	01-10-2026
+buhler-topic	buhler-topic:I.present-a		kochergina-lesson:VIII	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.present-a		knauer-fraza:Nr.1	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.present-a		knauer-fraza:Nr.2	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.85	1	01-10-2026
+buhler-topic	buhler-topic:I.present-a		zalizniak-1978-sec:114	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.85		01-10-2026
+buhler-topic	buhler-topic:I.present-a		zalizniak-2004:klassy-prezensa	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.8		01-10-2026
+buhler-topic	buhler-topic:I.present-a		sangram-article:thematic-present	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9		01-10-2026
+buhler-topic	buhler-topic:I.present-a		talmud:morphoclass-crosswalk-1975-2014-2026	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	13	01-10-2026
+buhler-topic	buhler-topic:I.sandhi-visarga		whitney-sec:144-148	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.sandhi-visarga		whitney-sec:170-173	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.85		01-10-2026
+buhler-topic	buhler-topic:I.sandhi-visarga		kochergina-lesson:VI	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.95	1	01-10-2026
+buhler-topic	buhler-topic:I.sandhi-visarga		zalizniak-1978-sec:32-46	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.85		01-10-2026
+buhler-topic	buhler-topic:I.sandhi-visarga		zalizniak-2004:morfonologija	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.8		01-10-2026

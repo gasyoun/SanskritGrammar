@@ -1,0 +1,105 @@
+---
+title: "Поурочный конкорданс Бюлера"
+sidebar_label: "Поурочный конкорданс"
+---
+
+# Поурочный конкорданс Бюлера — урок I (пилот)
+
+_Сгенерировано [`scripts/build_lesson_concordance.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py) из [`typed_link_buhler_lessons.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv) + [`topics.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml) — не редактировать руками._
+
+Поурочное сшивание «урок [Бюлера-1923](../BuhlerLeitfaden_1923/Buhler_Unicode) ↔ каждый источник сайта» по плану [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md) (решения D1-D16; пилот — урок I). Это finding-aid: строка = связь «урок+тема → локус-источник», `match_method=curated`, confidence 0.7-0.97.
+
+## Связи урока I
+
+### Тема `present-a` — Настоящее время, I класс (тематические основы на -a)
+
+Спайн: present_a. Локус у Бюлера: BuhlerLeitfaden_1923/Buhler_Unicode.mdx «# УРОК I.» строки 112-252: правило образования (vad → vada/vadā, строка 129), парадигма vadāmi, список 13 корней I класса, упражнения
+
+| target_locus | что это | link_type | confidence | evidence |
+|---|---|---|---|---|
+| `subject:sanskritgrammar:present_a` | спайн SubjectConcordance, категория present_a | thematic | 0.97 | — |
+| `whitney-sec:733-750` | Уитни §§733-750 — Present, a-class (I / bhū-class) | thematic | 0.9 | 2 |
+| `kochergina-lesson:VIII` | Кочергина, Занятие VIII — спряжение в настоящем времени (Parasmaipada/Ātmanepada) | thematic | 0.9 | 1 |
+| `knauer-fraza:Nr.1` | Кнауэр, Nr. 1 (§§ 45-47) — фразы на настоящем: devā narān rakṣanti… | thematic | 0.9 | 1 |
+| `knauer-fraza:Nr.2` | Кнауэр, Nr. 2 (§§ 48-51) — çaṅsanti / patati / vasati… | thematic | 0.85 | 1 |
+| `zalizniak-1978-sec:114` | Зализняк-1978, § 114 — тематическое vs атематическое спряжение | thematic | 0.85 | — |
+| `zalizniak-2004:klassy-prezensa` | Зализняк-2004, «Классы презенса» (Конспект) | thematic | 0.8 | — |
+| `sangram-article:thematic-present` | Sangram, статья thematic-present | thematic | 0.9 | — |
+| `talmud:morphoclass-crosswalk-1975-2014-2026` | Толчельников-Талмуд-2026, crosswalk морфоклассов 1975/2014/2026 | thematic | 0.9 | 13 |
+
+### Тема `sandhi-visarga` — Сандхи: конечные s/r → висарга
+
+Спайн: none. Локус у Бюлера: BuhlerLeitfaden_1923/Buhler_Unicode.mdx «# УРОК I.» правило 2 (строка ~131): «Конечные s и r слов, стоящих в конце предложений, всегда превращаются в висаргу, : = ḥ, обыкновенно также и перед k, kh, p, ph и перед шипящими [ś, ṣ, s]»
+
+| target_locus | что это | link_type | confidence | evidence |
+|---|---|---|---|---|
+| `whitney-sec:144-148` | Уитни §§144-148 — конечные r/s → висарга; висарга как субститут s/r | thematic | 0.9 | 1 |
+| `whitney-sec:170-173` | Уитни §§170-173 — висарга перед последующими звуками; §171a/§173 — исключения | thematic | 0.85 | — |
+| `kochergina-lesson:VI` | Кочергина, Занятие VI — висарга: -s/-r → ḥ (строки 1259-1265) | thematic | 0.95 | 1 |
+| `zalizniak-1978-sec:32-46` | Зализняк-1978, §§ 32-46 — правила сандхи (разделы по § 31) | thematic | 0.85 | — |
+| `zalizniak-2004:morfonologija` | Зализняк-2004, «Морфонология» (внешние/внутренние сандхи) | thematic | 0.8 | — |
+
+## Гипотеза MG: кто даёт списки исключений (голос D2)
+
+### `present-a`
+
+- **buhler:** НЕТ списка исключений в уроке I — правило дано плоско (13 корней списком, без оговорок о корнях, ведущих себя иначе); единственная оговорка урока — saṃdhi-«обыкновенно» (см. sandhi-visarga)
+- **whitney:** ВСЕГДА: §§733-750 идут с попримечаниями по отдельным корням и отклонениям; для сандхи-правил — языковая оговорка исключений прямо в правиле (§171a, цитата в sandhi-visarga)
+- **zalizniak_1978:** ОТСУТСТВУЮТ как списки по индийским классам: индийских классов в очерке нет, §114 вводит дихотомию тематическое/атематическое спряжение («основа презенса оканчивается на a» — Zalizniak-Ocherk_29-11-20-aligned.mdx, span#s114); расхождение по классу конкретного корня всплывает не списком исключений, а морфонологической классификацией 1975 г. (ряд/класс в crosswalk)
+- **kochergina:** ОТСУТСТВУЮТ в Занятии VIII — и более того, само образование основ отложено: «О способах образования основ настоящего времени (о.н.в.) речь будет идти позже (см. Занятия XV-XVII)» (Kochergina_unicode.mdx строка 1472); занятие VIII даёт окончания и парадигму без классной теории
+
+- **lemma/corpus_layer:** ПУСТО для урока I: BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv покрывает уроки XVIII, XXVIII, XXXIV, XXXVIII, XLIII-XLV (плюс 5 строк-мусора «управление») — урок I без леммных строк; разрыв зафиксирован, не замазан
+- **lemma/roots:** 13 корней урока сшиты с WhitneyRoots/crosswalk/roots.csv (класс по Уитни, частота/ранг DCS) и TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975-2014-2026 (ряд/класс З-1975) — таблица на catalog.mdx
+- **lemma/vas_homonym_finding:** ОМОНИМИЯ РАЗРЕШЕНА (пилотная проверка): «vas - жить, обитать» = vas-3 (roots.csv №717, gloss «dwell», класс I) — класс-I чтение подтверждена ростером; омонимы vas-1 «shine» / vas-2 «clothe» (№715/716, классы II|VI) к уроку I не относятся; форма vasāvaḥ из упражнений — от основы «dwell»
+
+### `sandhi-visarga`
+
+- **buhler:** ОГОВОРКА В ПРАВИЛЕ: «всегда» (пауза) + «обыкновенно также и перед k, kh, p, ph и перед шипящими» — штатный список позиций с наречным кустарем «обыкновенно», но без списка исключений в уроке I
+- **whitney:** ВСЕГДА, и явно: §170a «The स् s … becomes visarga before a pause. b. It is retained unchanged only when followed by त् t or थ् th…»; §171a: «The first three of these rules are almost universal; to the last one there are numerous exceptions…»; §173 «There are one or two exceptions…» (WhitneyGrammar_1889/03_Rules_of_Euphonic_Combination.mdx)
+- **zalizniak_1978:** НЕ ОТСУТСТВУЮТ (вопреки гипотезе): правила внешних сандхи §§32-46, и исключение выписано списком — «Исключение из §§ 41 и 42. Не подвергаются внешним сандхи: а) конечные ī, ū, е в словоформах двойственного числа имен и глаголов (а также в ami, § 105); б) конечные гласные междометий и конечное o…» (Zalizniak-Ocherk_29-11-20-aligned.mdx строка 606)
+- **kochergina:** ПРАВИЛО ЕСТЬ, списка исключений НЕТ: Занятие VI, строки 1259-1265 — «В конце предложения или стихотворной строки -s и -r изменяются в висаргу ḥ» + «в висаргу перед k, kh, p, ph, ś, ṣ, s: prathamaḥ sargaḥ…» — тот же охват, что у Бюлера, без исключений (Kochergina_unicode.mdx)
+
+
+## Корни I класса урока I — сшивка с регистрами
+
+Класс и частота — [`roots.csv`](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/roots.csv) (ростер Уитни), ряд З-1975 — crosswalk морфоклассов (арбитр по шапке claims.yml).
+
+| корень | у Бюлера | Уитни № | класс | DCS частота | ряд З-1975 | строк crosswalk |
+|---|---|---|---|---|---|---|
+| pat | падать, лететь | 440, 441 | I|IV | 3,123 | A₁ | 2 |
+| dah | гореть, жечь | 348 | I|II|IV | 2,275 | A₁ | 1 |
+| yaj | приносить жертву | 597 | I|II | 6,755 | A₁ | 1 |
+| śaṃs | прославлять | 766 | I | 1,785 | A₁ | 2 |
+| vas | жить, обитать | 715, 716, 717 | I|II|VI | 2,538 | A₁, A₂ | 5 |
+| rakṣ | защищать | 613 | I | 1,929 | A₁ | 1 |
+| jīv | жить | 260 | I | 2,222 | I₂ | 1 |
+| car | ходить, совершать, пастись | 220 | I | 4,027 | R?, R₂ | 2 |
+| nam | кланяться (D.), почитать | 416 | I | 666 | M₁ | 1 |
+| pac | варить, готовить | 435 | I|IV | 2,058 | A₁ | 1 |
+| dhāv | бежать | 395, 396 | I | 582 | A₁, A₂ | 3 |
+| tyaj | покидать | 324 | I | 2,417 | A₁ | 1 |
+| vah | нести, течь, дуть, веять | 718 | I|II | 1,845 | A₁, A₂ | 4 |
+
+⚠ **Омонимия корней:** «vas - жить, обитать» у Бюлера = vas-3 (roots.csv №717, gloss «dwell», класс I) — класс-I чтение подтверждена; омонимы vas-1 «shine» / vas-2 «clothe» (№715/716, II|VI) к уроку I не относятся. Ряды З-1975 (jīv → I₂, nam → M₁, car → R?) — значения crosswalk как есть, арбитраж морфокласса за talmud-регистром.
+
+## HB-указатель урока I (claims.yml)
+
+| id | mdx line |
+|---|---|
+| HB-1 | 116 |
+| HB-2 | 116 |
+| HB-3 | 129 |
+| HB-4 | 145 |
+| HB-65 | 131 |
+| HB-66 | 147 |
+
+## Reuse-кластеры [Concordance/catalog.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx)
+
+Кластеров общих предложений с уроком I: **0** — упражнения урока I элементарны и общих предложений с Кнауэром/Кочергиной не дают.
+
+## Реестр уроков (парсер, не один паттерн)
+
+Найдено уроков: **48** из 48. Парсер нормализует заголовочный делимитер (`# УРОК N.`) и жирный (`**Урок N.**`) — риск №1 плана.
+ Нестандартный делимитер: V (строка 650), XXXIX (строка 5645).
+
+Пилот: урок **I**. Остальные 45 — batch-минт после ревью MG.
