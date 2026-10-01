@@ -12,7 +12,9 @@ npm-debug.log*
 ~$*
 
 # Local Claude Code machine state (not repo content)
-/.claude/
+/.claude/*
+# committed memory store (H4547)
+!/.claude/projects/
 **/.claude/settings.local.json
 
 # Transient edition-diff review scratch (fold into errata.yml, then delete)
@@ -37,6 +39,22 @@ GasunsDhatu_2014/*
 TolchelnikovTalmud_2026/*
 !TolchelnikovTalmud_2026/*.mdx
 !TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md
+# H4484 Bibliotheca Sanscritica series: derived digital editions only — the yadisk
+# .indd/.idml/print sources never enter git; allow-list re-includes the derived mdx,
+# the census doc and the series CHANGELOG.
+BibliothecaSanscritica/*
+!BibliothecaSanscritica/*.md
+!BibliothecaSanscritica/LihushinaChrestomathy_2015/
+!BibliothecaSanscritica/LihushinaChrestomathy_2015/*.mdx
+# H4642 wave 1 (derived mdx only)
+!BibliothecaSanscritica/FrishChrestomathyII_2022/
+!BibliothecaSanscritica/FrishChrestomathyII_2022/*.mdx
+!BibliothecaSanscritica/KnauerUchebnik_2021/
+!BibliothecaSanscritica/KnauerUchebnik_2021/*.mdx
+!BibliothecaSanscritica/MillerRukovodstvo_2021/
+!BibliothecaSanscritica/MillerRukovodstvo_2021/*.mdx
+!BibliothecaSanscritica/KanunDrevneindiyskoyFilosofii_2022/
+!BibliothecaSanscritica/KanunDrevneindiyskoyFilosofii_2022/*.mdx
 !TolchelnikovTalmud_2026/student-roadmap.md
 !TolchelnikovTalmud_2026/visual-grammar.md
 !TolchelnikovTalmud_2026/talmud-refactoring.md
@@ -157,3 +175,14 @@ Concordance/Usha-PhD-Sampurna.pdf
 Elizarenkova_2004/
 
 **/__MACOSX/
+
+review/
+
+# H4631 sandbox/credential baseline (13-09-2026): real env files are never
+# committed — house convention keeps secrets in ~/.secrets/;
+# .env.example stays tracked.
+.env
+.env.*
+!.env.example
+# H4479: dissertation PDF sources stay local; only derived text/indexes commit.
+corpus/gasuns-dissertation/src/

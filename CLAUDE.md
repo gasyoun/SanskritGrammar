@@ -1,10 +1,12 @@
 # CLAUDE.md
 
+_Created: 20-07-2026 · Last updated: 15-09-2026_
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
 
 > Org-level conventions (hubs, `.ai_state.md` protocol, Windows encoding rules, the
-> csl-orig fence) live in [`../CLAUDE.md`](../CLAUDE.md) and load automatically. Before
+> csl-orig fence) live in [`../CLAUDE.md`](../Uprava-h4060-drain/CLAUDE.md) and load automatically. Before
 > touching encodings, transliteration, or corpus data, read the
 > [Sanskrit context primer](https://github.com/gasyoun/github-spine/blob/main/SANSKRIT_CONTEXT_PRIMER.md).
 > This file covers only what is specific to **this** repository.
@@ -52,6 +54,16 @@ Three layers in one repo (full orientation:
   (canonical TypeScript in [buhler-sanskrit-book](https://github.com/gasyoun/buhler-sanskrit-book/tree/main/src/remark),
   `.mjs` ports here and in csl-guides) — keep all three in sync by hand; a drift-guard
   is wave-1 lane-3 work ([H1394](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1394-Sonnet_sanskrit-util_reuse-context-w1-consolidation-finish_20.07.26.md)).
+- **SG-MO-021 is a hard-cutover content pipeline.** Its source and generated
+  artifacts live under
+  [`content/sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/content/sangram/articles/future),
+  and [`pipelines/sg-mo-021-future.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/sg-mo-021-future.yml)
+  pins the DCS SQLite input and dispatches
+  [`packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py).
+  Run `uv run sg pipeline check sg-mo-021-future`
+  before generation; the runtime SHA refusal is intentional. The independent
+  and override implementations were reconciled in
+  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
 
 ## Common commands
 
@@ -61,6 +73,7 @@ Three layers in one repo (full orientation:
 | `npm run build` / `npm run start` | build / serve the Docusaurus site |
 | `npm run errata` | regenerate every book's `ERRATA.md` + the index from `errata.yml` |
 | `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer (+ claims schema validate) |
+| `uv run sg pipeline check sg-mo-021-future` | validate the pinned SG-MO-021 Slice C pipeline before generation |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
 
 **CI enforcement (H1840):** `.github/workflows/ci.yml` job `validators` is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
@@ -88,6 +101,25 @@ Operator runbooks (RQ4 go-live, pedagogy-export hop, etc.): [docs/runbooks/](htt
 
 ## Traps
 
+- ⚠️ **DCS never tags `Formation` outside the indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md),
+  VisualDCS G22) — so a bucket defined as "past tense with **no** formation tag" over *finite*
+  tokens silently swallows the entire non-indicative past. In
+  [`ZalizniakOcherk_1978/imperfect_switching_stats.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.py)
+  the `PERF` bucket as v0.48.0 defined it (`feat_tense='Past' AND feat_formation IS NULL`,
+  finite filter `feat_person IS NOT NULL`, **no** `feat_mood='Ind'` guard) was
+  **10,15 % non-indicative** corpus-wide —
+  8 726 of 85 955 tokens (Jus 4 067 · Imp 1 700 · Sub 1 317 · Opt 1 065 · Prec 577), mostly
+  augmentless injunctives; the `AOR` and `IMPF` buckets are clean (12 054 and 46 695 tokens,
+  0 non-indicative). **Put `feat_mood='Ind'` in every new finite past-tense bucket.** The guarded
+  re-run shipped 06-09-2026 as [HK-15 report v0.49](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md) ([H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md), [PR #912](https://github.com/gasyoun/SanskritGrammar/pull/912)):
+  the instrument now carries the guard on all three `CAT_SQL` branches plus an
+  `assert_mood_guard()` refusal and a regression test, and
+  [v0.48.0](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
+  stays superseded-but-unaltered as the pre-registration record — **still do not silently
+  re-derive its numbers.** ⚠️ **The re-run's own lesson: a corpus-wide contamination share can
+  badly misestimate a slice.** 10,15 % corpus-wide was **29,22 %** in the vedic slice and 0,88 %
+  in the puranic one — injunctive is a vedic category. Measure contamination *per analysed
+  stratum*, not once over the corpus, before deciding a caveat is small enough to publish under.
 - ⚠️ **`Concordance/Usha-PhD-Sampurna.pdf` has a broken text layer** (Sanskrit2003
   font, no ToUnicode map) — text extraction yields garbage; use page rendering +
   vision OCR instead.
@@ -105,3 +137,26 @@ registered centrally in an org-private hub
 org members only); the public-safe subset is mirrored in the generated block of
 [AGENTS.md](https://github.com/gasyoun/SanskritGrammar/blob/main/AGENTS.md). Check them
 before running anything that writes.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in this repo's GitHub Issues via the `gh` CLI; PRs are NOT a triage
+surface (intake OFF). See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-role vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`,
+`ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context layout (root `CONTEXT.md` + `docs/adr/`, created lazily —
+do not scaffold them upfront). See `docs/agents/domain.md`.
+
+## Memory store
+
+This repo keeps a committed memory store at [`.claude/projects/SanskritGrammar/memory/`](https://github.com/gasyoun/SanskritGrammar/tree/main/.claude/projects/SanskritGrammar/memory) per the org Memory-routing rule ([`/danger-memory`](https://github.com/gasyoun/claude-config/blob/main/commands/danger-memory.md)) — write dangerous/durable facts there and index each in its `MEMORY.md` (H4547).
+
+_Dr. Mārcis Gasūns_

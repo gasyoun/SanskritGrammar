@@ -1,0 +1,60 @@
+source	locus	verb	verb_pos	prep	case	case_ru	dependent	dependent_form	pronoun	status	sketch_relations	modern_hits	c19_hits	flag	snippet
+metodichka_translations	X-2	видеть	VERB		accs|gent	В.|Р.	девушка	девушек		ambiguous_case				ambiguous_case	я видел девушек ,
+metodichka_translations	XII-2	видеть	VERB		accs|gent	В.|Р.	рыба	рыб		ambiguous_case				ambiguous_case	мы видели рыб
+metodichka_translations	XXXII-1	возлежать	PRTF		datv|loct	Д.|П.	шеш	шеше		ambiguous_case				ambiguous_case	, возлежащий на змее Шеше ,
+metodichka_translations	XXXIX-2	жаждать	VERB		accs|gent	В.|Р.	встреча	встречи		ambiguous_case				ambiguous_case	Ученые жаждут встречи с
+lessonpack_answer	zan1/base/zan1-base-06	завернуть	PRTS		accs|gent	В.|Р.	язык	языка		ambiguous_case				ambiguous_case	кончик языка завёрнут назад
+lessonpack_answer	zan1/base/zan1-base-06	касаться	VERB		accs|gent	В.|Р.	нёбо	нёба		ambiguous_case				ambiguous_case	и касается нёба
+lessonpack_answer	zan1/base/zan1-base-06	касаться	VERB		accs|gent	В.|Р.	язык	языка		ambiguous_case				ambiguous_case	кончик языка завёрнут назад и касается нёба
+metodichka_translations	XVIII-1	повести	VERB		accs|gent	В.|Р.	он	его	1	ambiguous_case				ambiguous_case	ты его поведешь ,
+metodichka_translations	XXI-1	потерять	VERB	с	accs|gent	В.|Р.	пора	поры		ambiguous_case				ambiguous_case	той поры она потеряла покой
+metodichka_translations	XXXIX-1	произойти	VERB		accs|gent	В.|Р.	царь	царей		ambiguous_case				ambiguous_case	городе произошла встреча двух славных царей
+metodichka_translations	XXX-2	сотворить	INFN		accs|gent	В.|Р.	мир	мир		ambiguous_case				ambiguous_case	вознамерился сотворить мир
+metodichka_translations	XVIII-2	увидеть	VERB		accs|gent	В.|Р.	супруг	супруга		ambiguous_case				ambiguous_case	ты увидишь супруга ,
+metodichka_translations	XXII-1	устроить	VERB		ablt|accs|datv|gent|loct	Т.|В.|Д.|Р.|П.	дамаянти	дамаянти		ambiguous_case				ambiguous_case	Бхима устроил свадьбу Дамаянти и
+metodichka_translations	XXII-1	устроить	VERB		ablt|accs|datv|gent|loct	Т.|В.|Д.|Р.|П.	налы	налы		ambiguous_case				ambiguous_case	Бхима устроил свадьбу Дамаянти и Налы
+metodichka_translations	XXII-1	устроить	VERB		accs|gent	В.|Р.	бхим	бхима		ambiguous_case				ambiguous_case	, Бхима устроил свадьбу
+metodichka_keys	XXXII-1	родиться	VERB		accs|gent	В.|Р.	член	члена		ambiguous_verb				ambiguous_verb	— род последнего члена (
+metodichka_keys	XXXII-1	родиться	VERB		accs|gent	В.|Р.	носитель	носителя		ambiguous_verb				ambiguous_verb	— род носителя признака
+metodichka_keys	XXXII-1	родиться	VERB		accs|gent	В.|Р.	основа	основы		ambiguous_verb				ambiguous_verb	наследует род последней основы ;
+metodichka_keys	XXXII-1	родиться	VERB		gent	Р.	признак	признака		ambiguous_verb				ambiguous_verb	— род носителя признака (
+metodichka_keys	XXXIX-1	стоить	VERB	в	loct	П.	положение	положении		ambiguous_verb				ambiguous_verb	— стоит в дистактном положении (
+lessonpack_prompt	zan1/base/zan1-base-03	стоить	VERB	в	loct	П.	ряд	ряду		ambiguous_verb				ambiguous_verb	каком ряду стоит буква
+metodichka_translations	X-2	видеть	VERB	в	loct	П.	сад	саду						unknown	В саду я видел девушек
+metodichka_translations	XII-2	видеть	VERB	в	loct	П.	река	реках						unknown	В реках мы видели рыб
+metodichka_translations	XXXII-1	возлежать	PRTF	на	loct	П.	змея	змее						unknown	, возлежащий на змее Шеше
+metodichka_translations	XXXIX-2	жаждать	VERB	с	ablt	Т.	учёный	учеными						unknown	Ученые жаждут встречи с учеными
+metodichka_translations	XXX-1	жить	VERB		ablt	Т.	возлияние	возлиянием						unknown	Жертвенным возлиянием живут боги
+lessonpack_answer	zan1/base/zan1-base-06	завернуть	PRTS		accs	В.	кончик	кончик						unknown	кончик языка завёрнут назад
+metodichka_keys	XXII-1	лексикализовать	PRTF		accs	В.	оборот	оборот						unknown	( лексикализованный оборот со
+metodichka_keys	XXXII-1	наследовать	VERB		accs	В.	композит	композит						unknown	Определительный композит наследует род
+lessonpack_prompt	zan1/prodolzhayushchiy/ayurveda/zan1-prodolzhayushchiy-ayurveda-01	образовать	VERB		accs	В.	группа	группу						unknown	) образуют группу ?
+metodichka_translations	XVI-1	обуздывать	VERB		accs	В.	гнев	гнев						unknown	кто обуздывает гнев ,
+lessonpack_prompt	zan1/prodolzhayushchiy/ayurveda/zan1-prodolzhayushchiy-ayurveda-03	открывать	VERB		accs	В.	ряд	ряд						unknown	: открывает ряд
+metodichka_translations	XXXVII-2	отпустить	VERB		accs	В.	собака	собаку						unknown	волк отпустил собаку и
+metodichka_translations	XXXVII-2	отпустить	VERB		accs	В.	волк	волк						unknown	пастухом волк отпустил собаку
+metodichka_translations	XXXVII-2	отпустить	VERB		gent	Р.	страх	страха						unknown	Из страха перед пастухом волк отпустил собаку
+metodichka_translations	XXXVII-2	отпустить	VERB	перед	ablt	Т.	пастух	пастухом						unknown	перед пастухом волк отпустил собаку
+metodichka_translations	X-1	падать	VERB	на	accs	В.	земля	землю						unknown	и падали на землю
+lessonpack_prompt	zan1/base/zan1-base-07	передавать	VERB		accs	В.	знак	знак						unknown	Что передаёт один графический знак (
+metodichka_translations	XXI-1	потерять	VERB		accs	В.	покой	покой						unknown	она потеряла покой из-за
+metodichka_translations	XXI-1	потерять	VERB	из-за	gent	Р.	налы	налы						unknown	она потеряла покой из-за Налы
+metodichka_translations	XVI-2(фрагмент)	привязывать	VERB		accs	В.	воля	волю						unknown	чему привязывает волю
+metodichka_translations	XVI-2(фрагмент)	привязывать	VERB	к	datv	Д.	что	чему	1					unknown	к чему привязывает волю
+metodichka_keys	XXX-1	проверять	VERB	по	datv	Д.	словарь	словарю						unknown	род проверяйте по словарю .
+metodichka_translations	XXXIX-1	произойти	VERB	в	loct	П.	город	городе						unknown	этом городе произошла встреча
+metodichka_translations	XXXIX-1	произойти	VERB	в	loct	П.	это	этом						unknown	В этом городе произошла встреча
+metodichka_translations	XXII-2	сдержать	INFN		accs	В.	слово	слово						unknown	Стремясь сдержать слово ,
+metodichka_translations	X-2	слетаться	PRTF		accs	В.	зерно	зерно						unknown	сыплющих зерно слетающимся птицам
+metodichka_translations	X-2	слетаться	PRTF		datv	Д.	птица	птицам						unknown	зерно слетающимся птицам
+metodichka_keys	XXXII-1	согласоваться	VERB		accs	В.	прилагательное	прилагательное						unknown	— прилагательное и согласуется с
+metodichka_keys	XXXII-1	согласоваться	VERB	с	ablt	Т.	референт	референтом						unknown	и согласуется с референтом .
+metodichka_keys	XXXIX-1	соответствовать	VERB		datv	Д.	правило	правилу						unknown	, правилу соответствует (
+lessonpack_prompt	zan1/nol/yoga/zan1-nol-yoga-07	спрятать	PRTS		accs	В.	слово	слово						unknown	Какое слово урока спрятано в
+lessonpack_prompt	zan1/nol/yoga/zan1-nol-yoga-07	спрятать	PRTS		gent	Р.	урок	урока						unknown	слово урока спрятано в
+lessonpack_prompt	zan1/nol/yoga/zan1-nol-yoga-07	спрятать	PRTS	в	loct	П.	имя	имени						unknown	урока спрятано в имени ?
+metodichka_translations	X-2	сыпать	PRTF		accs	В.	зерно	зерно						unknown	, сыплющих зерно слетающимся
+metodichka_translations	X-2	сыпать	PRTF		datv	Д.	птица	птицам						unknown	, сыплющих зерно слетающимся птицам
+metodichka_translations	XXXVII-2	уйти	VERB		accs	В.	собака	собаку						unknown	отпустил собаку и ушел в
+metodichka_translations	XXXVII-2	уйти	VERB	в	accs	В.	лес	лес						unknown	и ушел в лес
+metodichka_translations	XXII-1	устроить	VERB		accs	В.	свадьба	свадьбу						unknown	Бхима устроил свадьбу Дамаянти

@@ -1,0 +1,19 @@
+id: ex:grammar-lab:root-type-iii
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-type-iii
+risk_class: deterministic
+status: published
+prompt_ru: Тип III в позиции 2 даёт какую ступень?
+choices:
+- нулевую
+- guṇa
+- vṛddhi
+answer: нулевую
+answer_normalized: нулевую
+distractors:
+- guṇa
+- vṛddhi
+approval_record: null
+source_ids:
+- whitney-sec:968
+- zalizniak-1975:type-iii

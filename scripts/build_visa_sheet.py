@@ -50,6 +50,42 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# U6 (H2847) Russian-only reviewer chrome, defined locally against the
+# csl-pyutil v0.9.0 UI_STRINGS contract. The pinned emitter exports no
+# RU_UI_STRINGS - the H3103 import referenced an unpinned local edit and broke
+# test collection repo-wide (required CI job red since 57dadc4). Keys mirror
+# csl_pyutil.review_sheet.UI_STRINGS exactly; every value is the REPLACEMENT
+# TEXT for that chrome element (for regex keys, the new ``body`` group).
+# save_banner stays out: its default bakes in this sheet's own sheet_id/save_as,
+# so build_config overrides it per sheet below.
+RU_LEGEND = (
+    "<b>Одобрить</b> &mdash; принять предложенное изменение/ответ на карточке "
+    "(отдельного «одобрить как есть» нет: одобрение означает согласие с написанным). "
+    "<b>Отклонить</b> &mdash; оставить текущую запись/ответ без изменений. "
+    "<b>Отложить</b> &mdash; пока не решено, вернуться позже. Поле заметки &mdash; "
+    "для запроса частичной правки вместо полного отклонения."
+)
+RU_DEFER_BUTTON = "Отложить"
+RU_REJECT_REASON_LABEL = "Причина"
+
+
+def _ru_ui_strings(approve_label, reject_label):
+    """Per-sheet Russian chrome; the keyboard hint embeds this sheet's own vote labels."""
+    return {
+        "download_button": "Скачать decisions.json",
+        "save_button": "Сохранить в папку\u2026",
+        "legend": RU_LEGEND,
+        "defer_button": RU_DEFER_BUTTON,
+        "reject_reason_label": RU_REJECT_REASON_LABEL,
+        "footer_hint": (
+            "Клавиатура: <kbd>a</kbd> %(approve)s &middot; <kbd>r</kbd> %(reject)s "
+            "&middot; <kbd>d</kbd> отложить &middot; <kbd>&darr;</kbd>/<kbd>&uarr;</kbd> "
+            "вперёд/назад. Голоса автосохраняются в localStorage этого браузера; "
+            "по завершении нажмите «Скачать decisions.json» "
+            "(неразобранные пункты экспортируются со значением decision:null)."
+        ) % {"approve": approve_label, "reject": reject_label},
+    }
+
 # V8: the exact destination the reviewer should save the export to. Backslashes
 # because the humans voting these sheets are on Windows.
 SAVE_AS_TEMPLATE = "SanskritGrammar\\review\\%s_decisions.json"
@@ -111,13 +147,15 @@ def build_config(spec):
     sheet_id = spec["sheet_id"]
     allow = list(DEFAULT_ALLOW_SLP1)
     allow.extend(spec.get("allow_slp1_tokens") or [])
+    approve_label = spec.get("approve_label", DEFAULT_APPROVE)
+    reject_label = spec.get("reject_label", DEFAULT_REJECT)
     config = {
         "sheet_id": sheet_id,
         "title": spec["title"],
         "subtitle": spec.get("subtitle", ""),
         "footer": spec.get("footer", ""),
-        "approve_label": spec.get("approve_label", DEFAULT_APPROVE),
-        "reject_label": spec.get("reject_label", DEFAULT_REJECT),
+        "approve_label": approve_label,
+        "reject_label": reject_label,
         "filters": [(k, label) for k, label in spec.get("filters", [])],
         # Reproducibility: the spec owns the date, the generator never stamps one.
         "generated": spec["generated"],
@@ -126,6 +164,15 @@ def build_config(spec):
         "save_as": SAVE_AS_TEMPLATE % sheet_id,
         # V9: domain file extensions are not SLP1 leaks (H2355 residual).
         "preflight": {"allow_slp1_tokens": allow},
+        # U6 (H2847): Russian-only reviewer chrome. save_banner overridden
+        # because RU_UI_STRINGS excludes it by design (its default bakes in
+        # this sheet's own sheet_id/save_as).
+        "ui_strings": dict(_ru_ui_strings(approve_label, reject_label), save_banner=(
+            "&#128229; Ваш экспорт скачивается как <code>%s_decisions.json</code> "
+            "&rarr; сохраните его в <code>%s</code> (значение <code>sheet_id</code> "
+            "внутри файла &mdash; <code>%s</code> &mdash; так следующая сессия узнаёт, "
+            "к какому листу относятся эти решения)."
+            % (sheet_id, SAVE_AS_TEMPLATE % sheet_id, sheet_id))),
     }
     return config
 

@@ -1,0 +1,19 @@
+id: ex:grammar-lab:set-anit-vet
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:set-anit-vet
+risk_class: deterministic
+status: published
+prompt_ru: Форма bhaviṣyati показывает, что bhū в будущем ведёт себя как…
+choices:
+- aniṭ
+- seṭ
+- без соединительного гласного
+answer: seṭ
+answer_normalized: seṭ
+distractors:
+- aniṭ
+- без соединительного гласного
+approval_record: null
+source_ids:
+- whitney-sec:254
+- whitney-sec:934-935

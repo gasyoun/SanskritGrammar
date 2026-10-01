@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Подлинные корни словаря Монье-Уильямса (★ = genuineroot), обогащённые
 
 _Сгенерировано `mw_genuine_roots.py` из `mw_roots.tsv` (verb_type) + `roots.csv` (частота/периоды DCS) + `root_oracle.tsv` (число словарей); join по SLP1. Всего 750 подлинных из 2113 статей MW. Формат: ★ √корень — кл. классы · DCS частота (ранг) · N словарей · периоды._
@@ -752,3 +754,5 @@ _Сгенерировано `mw_genuine_roots.py` из `mw_roots.tsv` (verb_type
 - ★ √*ṛṣ* — кл. 1P · DCS 147 #957 · 3 слов. · RV|AV|V|B
 - ★ √*ṛṣ* — кл. 6P · DCS 147 #957 · 3 слов. · RV|AV|V|B
 - ★ √*ṣṭhiv* — кл. 1,4P · DCS — · 4 слов.
+
+_Dr. Mārcis Gasūns_

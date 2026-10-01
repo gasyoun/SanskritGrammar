@@ -1,21 +1,59 @@
-_Created: 01-08-2026 · Last updated: 02-08-2026_
+_Created: 01-08-2026 · Last updated: 17-08-2026_
 
-# CURRICULUM — «Старт чтения» classroom weeks W1–W5
+# CURRICULUM — «Старт чтения» W1–W5 map, revised for the two-course split
 
-**One-page map** for the paid 5-week pilot. Parent plan:
-[PLAN_AKRO_START_CHTENIYA_2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_AKRO_START_CHTENIYA_2026.md)
-· implementation step 1.1 ([H2112](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2112-Fable_SanskritGrammar_start-chteniya-w1w5-curriculum_01.08.26.md)).
+> **Superseded framing (H2172).** This sheet was authored under
+> [H2112](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2112-Fable_SanskritGrammar_start-chteniya-w1w5-curriculum_01.08.26.md)
+> as the one-page map of a **single paid 5-week cohort** covering both texts
+> (Hitopadeśa/Nala prose + subhāṣita band in one funnel). MG ruled on 02-08-2026
+> ([PLAN_NALOPAKHYANA_SUBHASHITA_COURSES_2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_NALOPAKHYANA_SUBHASHITA_COURSES_2026.md),
+> decisions D1/D11) that **Nalopākhyāna and Subhāṣita are two independent live
+> courses**, each with its own structure — open-ended continuous reading vs a finite
+> 4-blocks-of-4-lessons plan — and that **nothing is sold as a 5-week cohort**.
+> Systema's real sellable unit is the 4-lesson block, not the week (D6).
+>
+> The week-by-week tables below are therefore **no longer a live cohort schedule**.
+> They are kept as the **asset-path registry** they always usefully were — drill
+> pages, reading packs, sha256 freeze pins, teacher cheat-sheets — because most of
+> that material now serves as shared foundations for either course.
 
-> **Name fence.** These are **classroom product weeks** for the Akro-style pilot.
-> They are **not** research-pedagogy waves W1–W5 in
+## The two courses — where the live curricula now live
+
+| Course | Structure | Curriculum doc | Landing / course page (ORS-FAQ, H2171) |
+|---|---|---|---|
+| **Субхашита 4×4** | Finite: 4 blocks × 4 lessons = 16 lessons over the 106-saying kosha `subhashita-beginner` pack | [docs/CURRICULUM_SUBHASHITA_4X4.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_SUBHASHITA_4X4.md) — shipped by [H2169](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2169-Fable_SanskritGrammar_subhashita-16-lesson-plan_02.08.26.md) (Fable 5) via [SanskritGrammar#862](https://github.com/gasyoun/SanskritGrammar/pull/862) | [landing_subhashita.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/landing_subhashita.md) · [course_page_subhashita.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/course_page_subhashita.md) |
+| **Наль (Nalopākhyāna)** | Open-ended continuous reading, live-teacher-led (65 prior informal sessions); kosha packs nala-1/2/3 as cabinet supplement (D3) | **Pending** — the methodology doc from [H2170](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2170-Fable_SanskritGrammar_nala-transcript-methodology_02.08.26.md) (Fable 5, Nala transcript-derived methodology) has **not shipped**: it is blocked on a 152-ФЗ source-access policy conflict over the private lesson-transcript archive. Do not cite a Nala curriculum doc until that handoff lands. | [landing_nalopakhyana.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/landing_nalopakhyana.md) · [course_page_nalopakhyana.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/course_page_nalopakhyana.md) |
+
+The ORS-FAQ landing split itself shipped via
+[H2171](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2171-Fable_ORS-FAQ_nala-subhashita-landing-split_02.08.26.md)
+(Fable 5) in [ORS-FAQ#221](https://github.com/gasyoun/ORS-FAQ/pull/221); the old
+single-cohort pages are retired to pointer stubs there:
+[landing_start_chteniya.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/landing_start_chteniya.md)
+· [course_page_start_chteniya.md](https://github.com/gasyoun/ORS-FAQ/blob/main/docs/course_page_start_chteniya.md).
+
+## What survives from the W1–W5 map, and where it goes
+
+| Old cell | New home / status |
+|---|---|
+| W1 script + top-50 lemmas; W2 morphology band-1 + sandhi L1–3 | **Shared foundations** — onboarding drill set reusable by either course's cabinet; paths unchanged (see registry below) |
+| W3 Hitopadeśa-0 continuous prose | **Demoted (D4)** — stays frozen and available as the ladder-up text for a *future* course; part of neither Nala nor Subhāṣita |
+| W4 metre-only Karaoke quiz | Reusable adjacent drill for the Subhāṣita course (87 of its 106 sayings are anuṣṭubh); pinned verse IDs unchanged |
+| W5 subhāṣita-beginner band | **Superseded** by the full 16-lesson plan in [CURRICULUM_SUBHASHITA_4X4.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_SUBHASHITA_4X4.md) — same 106-saying pack, now cut into 4 difficulty-graded blocks instead of one review week |
+| H2109 cohort freeze (sha256 pins) | **Still valid data** — pinned copies remain the stable consumption path for cabinet wiring; nothing about the split invalidates the pins |
+| `start_chteniya_cohort` entitlement (H2105) | **Generalized (D8)** into a reusable per-course-slug entitlement pattern; the five `start_chteniya_w*` lesson slugs below are historical |
+
+> **Name fence (unchanged).** These are **classroom product** assets. They are
+> **not** research-pedagogy waves W1–W5 in
 > [DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
 > / SanGram freezes / kosha pedagogy Wave-1 builds. Do not renumber or merge those axes.
 
-## Purpose
+---
 
-Map each live week → **drills** → **reading pack** → **homework**, with **concrete repo paths**
-so ORS copy (H2108), Systema deep links (H2106), kosha freeze (H2109), and Karaoke metre
-(H2114) share one spine.
+# Legacy W1–W5 asset registry (historical — retired single-cohort framing)
+
+Everything below this line is the H2112 map as it stood for the retired 5-week
+pilot, kept because its **paths are still the canonical drill/pack registry**.
+Read "Week N" as "asset bundle N", not as a live schedule.
 
 ## Interim pilot spine
 
@@ -87,6 +125,9 @@ Every cell below either names a path or is marked **live-only**.
 
 ## Week 3 — Continuous prose (Hitopadeśa-0 interim)
 
+> Split note (H2172): Hitopadeśa-0 is **demoted per PLAN D4** — future ladder text,
+> part of neither live course. Registry rows kept for the freeze/pin paths.
+
 | Cell | Asset | Path / note |
 |---|---|---|
 | Live | Read-aloud continuous prose; comprehension Q | **live-only** |
@@ -114,6 +155,11 @@ Every cell below either names a path or is marked **live-only**.
 
 ## Week 5 — First literature band + ladder
 
+> Split note (H2172): this bundle is where the standalone Subhāṣita course grew
+> from — the same 106-saying pack is now a full 16-lesson course in
+> [CURRICULUM_SUBHASHITA_4X4.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_SUBHASHITA_4X4.md);
+> the "Nala-1 optional stretch" row below became its own open-ended course (curriculum pending H2170).
+
 | Cell | Asset | Path / note |
 |---|---|---|
 | Live | Joint reading; next-course ladder talk | **live-only** |
@@ -139,7 +185,11 @@ Karaoke W4 IDs are **not** kosha freeze — they stay in SanskritKaraoke (H2114)
 
 ---
 
-## Systema deep-link skeleton (for H2106)
+## Systema deep-link skeleton (for H2106) — historical
+
+> Split note (H2172): the `start_chteniya_cohort` entitlement was generalized into a
+> per-course-slug pattern (PLAN D8); these five weekly slugs describe the retired
+> single-cohort wiring and are kept only as the record of what H2106 was scoped against.
 
 | Week | Suggested lesson slug key | Primary digital target |
 |---:|---|---|
@@ -157,27 +207,27 @@ Gate all five behind cohort entitlement `start_chteniya_cohort` (name final in H
 
 - Second LMS / second sandhi engine / second dictionary stack
 - Professional audio library or TTS (audio v1 = live teacher)
-- CommentaryStrategies apparatus in the 5-week funnel
+- CommentaryStrategies apparatus in the funnel
 - Global `SRS_ENABLED` flip
-- Waiting on Gītā-from-DCS isolation or natural-method story before pilot
-- Confusing **research** pedagogy W1–W5 with these **classroom** weeks
-- Inventing public RUB prices or cohort dates (human ops)
+- Confusing **research** pedagogy W1–W5 with these **classroom** asset bundles
+- Inventing public RUB prices or course start dates (human ops — PLAN D7)
+- Resurrecting the single-cohort «Старт чтения» framing (PLAN non-goal)
 - Executing sibling handoffs from this map alone
 
 ---
 
-## Downstream consumers
+## Downstream consumers — status after the split
 
-| Handoff | Uses this map for |
-|---|---|
-| [H2108](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2108-Fable_ORS-FAQ_start-chteniya-landing_01.08.26.md) | Landing arc copy (week promises) |
-| [H2105](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2105-Sonnet_Systema-Sanscriticum_start-chteniya-cohort-funnel_01.08.26.md) | Lesson skeleton / entitlement scope |
-| [H2109](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2109-Sonnet_kosha_start-chteniya-pack-freeze_01.08.26.md) | Freeze file list |
-| [H2106](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2106-Sonnet_Systema-Sanscriticum_start-chteniya-pack-wire-srs_01.08.26.md) | `/dvaram` deep links per week |
-| [H2114](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2114-Sonnet_SanskritKaraoke_start-chteniya-week4-metre_01.08.26.md) | W4 pinned verse IDs |
-| [H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md) | Story swap target for W3–W5 |
+| Handoff | Used this map for | Status after the two-course split |
+|---|---|---|
+| [H2108](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2108-Fable_ORS-FAQ_start-chteniya-landing_01.08.26.md) | Landing arc copy (week promises) | Superseded — landing split into two course pages by H2171 ([ORS-FAQ#221](https://github.com/gasyoun/ORS-FAQ/pull/221)) |
+| [H2105](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2105-Sonnet_Systema-Sanscriticum_start-chteniya-cohort-funnel_01.08.26.md) | Lesson skeleton / entitlement scope | Entitlement pattern generalized per-course (PLAN D8) |
+| [H2109](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2109-Sonnet_kosha_start-chteniya-pack-freeze_01.08.26.md) | Freeze file list | Landed; pins remain valid data |
+| [H2106](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2106-Sonnet_Systema-Sanscriticum_start-chteniya-pack-wire-srs_01.08.26.md) | `/dvaram` deep links per week | Weekly slugs historical; reading-pack wiring re-scoped to the two courses (PLAN D2) |
+| [H2114](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2114-Sonnet_SanskritKaraoke_start-chteniya-week4-metre_01.08.26.md) | W4 pinned verse IDs | IDs remain valid as a Subhāṣita-adjacent metre drill |
+| [H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md) | Story swap target for W3–W5 | Story scaffold unaffected; still human-visa-gated, tied to the future Hitopadeśa-ladder course (D4), not to Nala/Subhāṣita |
 
-## Acceptance (H2112)
+## Acceptance (H2112 — historical)
 
 | Criterion | Status |
 |---|---|
@@ -188,6 +238,6 @@ Gate all five behind cohort entitlement `start_chteniya_cohort` (name final in H
 
 ## Provenance
 
-Authored Grok 4.5 (`grok-4.5`) executing H2112 (filename tier Fable 5) on 01-08-2026 from IMPLEMENTATION step 1.1 + live path census. Dual-run compare executed 02-08-2026 by Fable 5 (`claude-fable-5`) under [H2121](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2121-Fable_SanskritGrammar_h2112-grok-dual-run-compare_01.08.26.md): independent path census re-verified every cited path (20/20) and numeric claim (vocab L1 = 50 lemmas; morph L1 = 107 a-stems; sandhi L1–3 cum. 31.87% / top-23 = 51.15%; the 50-lemma IAST list); merge-adjudicated patches: H2109 freeze pin paths (landed), W4 DE-only translation caveat for `subh_1249`/`subh_6087`, W5 subhāṣita schema adapter warning.
+Authored Grok 4.5 (`grok-4.5`) executing H2112 (filename tier Fable 5) on 01-08-2026 from IMPLEMENTATION step 1.1 + live path census. Dual-run compare executed 02-08-2026 by Fable 5 (`claude-fable-5`) under [H2121](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2121-Fable_SanskritGrammar_h2112-grok-dual-run-compare_01.08.26.md): independent path census re-verified every cited path (20/20) and numeric claim (vocab L1 = 50 lemmas; morph L1 = 107 a-stems; sandhi L1–3 cum. 31.87% / top-23 = 51.15%; the 50-lemma IAST list); merge-adjudicated patches: H2109 freeze pin paths (landed), W4 DE-only translation caveat for `subh_1249`/`subh_6087`, W5 subhāṣita schema adapter warning. Revised 17-08-2026 by Fable 5 (`claude-fable-5`) under [H2172](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2172-Fable_SanskritGrammar_nala-subhashita-curriculum-revise_02.08.26.md) for the two-course split (PLAN D1/D11): rewrite-in-place chosen over a pointer stub because the W1–W5 tables remain the canonical asset-path registry and the Nala methodology doc (H2170) has not shipped, leaving shared foundation content no other home; single-cohort framing retired, H2169/H2171 outputs cross-linked, H2170 marked pending.
 
 _Dr. Mārcis Gasūns_

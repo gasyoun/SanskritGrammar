@@ -1,0 +1,19 @@
+id: ex:grammar-lab:present-nasal-infix
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-nasal-infix
+risk_class: deterministic
+status: published
+prompt_ru: 3 sg презенса от chid VII класса — это…
+choices:
+- chidati
+- chinatti
+- chedati
+answer: chinatti
+answer_normalized: chinatti
+distractors:
+- chidati
+- chedati
+approval_record: null
+source_ids:
+- whitney-sec:683-696
+- zalizniak-1975:morphological-positions

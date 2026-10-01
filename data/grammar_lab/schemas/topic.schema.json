@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/schemas/topic.schema.json",
+  "title": "Grammar Lab topic",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "status",
+    "title_ru",
+    "aliases",
+    "summary_ru",
+    "prerequisites",
+    "difficulty",
+    "sources",
+    "dictionary_evidence",
+    "corpus_evidence",
+    "exercise_ids",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^subject:grammar-lab:[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "status": {"type": "string", "enum": ["published", "needs_review", "draft"]},
+    "title_ru": {"type": "string", "minLength": 1},
+    "cluster": {
+      "type": "string",
+      "enum": [
+        "alternation",
+        "root-type",
+        "grade",
+        "attestation",
+        "homonymy",
+        "tense-stem"
+      ]
+    },
+    "needs_review_reason": {"type": "string"},
+    "aliases": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ru", "deva", "iast", "slp1"],
+      "properties": {
+        "ru": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+        "deva": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "iast": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "slp1": {"type": "array", "items": {"type": "string", "minLength": 1}}
+      }
+    },
+    "summary_ru": {"type": "string", "minLength": 20},
+    "alignment_note": {"type": "string"},
+    "prerequisites": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^subject:grammar-lab:[a-z0-9]+(?:-[a-z0-9]+)*$"}
+    },
+    "difficulty": {"type": "string", "enum": ["intro", "intermediate", "advanced"]},
+    "sources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sourceEdge"}
+    },
+    "dictionary_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/dictionaryEvidence"}
+    },
+    "corpus_evidence": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/corpusEvidence"}
+    },
+    "exercise_ids": {
+      "type": "array",
+      "items": {"type": "string", "pattern": "^ex:grammar-lab:[a-z0-9]+(?:-[a-z0-9]+)*$"}
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["curated_date", "curator", "source_snapshot"],
+      "properties": {
+        "curated_date": {"type": "string", "pattern": "^[0-3][0-9]-[0-1][0-9]-[0-9]{4}$"},
+        "curator": {"type": "string"},
+        "source_snapshot": {"type": "string"},
+        "notes": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "sourceEdge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "anchor_type",
+        "anchor_id",
+        "target_locus",
+        "link_type",
+        "source_dataset",
+        "match_method",
+        "confidence",
+        "date"
+      ],
+      "properties": {
+        "anchor_type": {
+          "type": "string",
+          "enum": [
+            "whitney-sec",
+            "whitney-root",
+            "zalizniak-1975",
+            "zalizniak-1978-sec",
+            "zalizniak-2004",
+            "root"
+          ]
+        },
+        "anchor_id": {"type": "string", "minLength": 3},
+        "anchor_key_slp1": {"type": "string"},
+        "target_locus": {"type": "string", "pattern": "^subject:grammar-lab:"},
+        "link_type": {"type": "string", "const": "thematic"},
+        "source_dataset": {"type": "string", "minLength": 3},
+        "match_method": {
+          "type": "string",
+          "enum": ["id-link", "curated", "xref", "exact"]
+        },
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "evidence_count": {"type": ["integer", "null"]},
+        "date": {"type": "string", "pattern": "^[0-3][0-9]-[0-1][0-9]-[0-9]{4}$"}
+      }
+    },
+    "dictionaryEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "dict", "entry_id", "root_slp1", "whitney_no", "gloss"],
+      "properties": {
+        "kind": {"type": "string", "const": "dictionary"},
+        "dict": {"type": "string", "enum": ["mw", "apte", "whitney-roots"]},
+        "entry_id": {"type": "string"},
+        "root_slp1": {"type": "string"},
+        "whitney_no": {"type": "integer", "minimum": 1},
+        "gloss": {"type": "string"},
+        "homonym": {"type": "string"}
+      }
+    },
+    "corpusEvidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "status",
+        "corpus_snapshot",
+        "query",
+        "limitation"
+      ],
+      "properties": {
+        "kind": {"type": "string", "const": "corpus"},
+        "status": {"type": "string", "enum": ["attested", "not_attested"]},
+        "corpus_snapshot": {"type": "string"},
+        "query": {"type": "string"},
+        "dcs_freq": {"type": ["integer", "null"]},
+        "dcs_rank": {"type": ["integer", "null"]},
+        "attested_forms": {"type": "string"},
+        "limitation": {"type": "string", "minLength": 10}
+      }
+    }
+  }
+}

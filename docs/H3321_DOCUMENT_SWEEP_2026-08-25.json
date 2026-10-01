@@ -1,0 +1,629 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-08-25 20:21:50",
+  "artifacts": [
+    {
+      "artifact": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\pipelines\\sg-mo-021-future.yml",
+      "repo": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "Operator-only pipeline details belong in CLAUDE.md and the architecture record; the repository audience and product overview are unchanged."
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CLAUDE.md:60: and [`pipelines/sg-mo-021-future.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/sg-mo-021-future.yml)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md is the repository cold-start guide and now carries the command; generated policy-only AGENTS.md should not duplicate it."
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "The architecture reconciliation record is the governing sibling domain document for this bounded Slice C cutover."
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "These are a pipeline manifest, implementation module, and bounded decision record, not a long-lived manual, roadmap, or specification requiring a sibling metadoc."
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CHANGELOG.md:42: [`pipelines/sg-mo-021-future.yml`](pipelines/sg-mo-021-future.yml) declares"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\.ai_state.md:588: 109 passed): существующий лист `sg-mo-021-future` (H1180, 9 карточек, голоса уже применены)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "No tracking issue was named; merged PRs 879 and 880 are the authoritative delivery records."
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The handoff is complete with no shipped-work residual, so no GTD action is owed."
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The closed H3321 registry/archive entry records the delivery by handoff ID; duplicating implementation paths in the registry is unnecessary."
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "This is repository-local build tooling and an article pipeline, not a reusable org-wide user-facing feature or dataset."
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The existing VisualDCS DCS-master consumer contract already governs this pinned read-only SQLite use; no producer, owner, or repo-pair relationship changed."
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The read-only adapter, pinned-SHA refusal, and hard cutover introduce no destructive or irreversible operator action."
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The reconciliation resolved the lane differences and left no open research question."
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The work implements an existing architecture slice and does not revise an org-level thesis."
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No hook or enforcement contract changed."
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\Uprava\\REPO_STATUS_ROLLUP.md:2531: - `MG @DO · minor · ~0d` **Виза статьи Sangram SG-MO-021 «Будущее время и кондиционал» (H1180):** review 9 items in `SanskritGrammar\\review\\sanskritgrammar-sg-m"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No new hub, generated source, or rollup input was introduced."
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The bounded reconciliation record captures the implementation selection; it does not establish an org-wide premise, contradiction, gap, abandoned approach, recipe, staleness rule, or glossary term."
+        }
+      ]
+    },
+    {
+      "artifact": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\packages\\sg_tooling\\src\\sg_tooling\\generators\\sg_mo_021_future.py",
+      "repo": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "Operator-only pipeline details belong in CLAUDE.md and the architecture record; the repository audience and product overview are unchanged."
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CLAUDE.md:62: [`packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/ge"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md is the repository cold-start guide and now carries the command; generated policy-only AGENTS.md should not duplicate it."
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "The architecture reconciliation record is the governing sibling domain document for this bounded Slice C cutover."
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "These are a pipeline manifest, implementation module, and bounded decision record, not a long-lived manual, roadmap, or specification requiring a sibling metadoc."
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CHANGELOG.md:44: registered `sg_mo_021_future.generate` step, V-C verification list, all five"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\.ai_state.md:25: [sg_mo_021_future.py](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py)."
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "No tracking issue was named; merged PRs 879 and 880 are the authoritative delivery records."
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The handoff is complete with no shipped-work residual, so no GTD action is owed."
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The closed H3321 registry/archive entry records the delivery by handoff ID; duplicating implementation paths in the registry is unnecessary."
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "This is repository-local build tooling and an article pipeline, not a reusable org-wide user-facing feature or dataset."
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The existing VisualDCS DCS-master consumer contract already governs this pinned read-only SQLite use; no producer, owner, or repo-pair relationship changed."
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The read-only adapter, pinned-SHA refusal, and hard cutover introduce no destructive or irreversible operator action."
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The reconciliation resolved the lane differences and left no open research question."
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The work implements an existing architecture slice and does not revise an org-level thesis."
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No hook or enforcement contract changed."
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The rollup already tracks the SG-MO-021 programme; this closure adds no distinct portfolio status beyond the archived handoff."
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No new hub, generated source, or rollup input was introduced."
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The bounded reconciliation record captures the implementation selection; it does not establish an org-wide premise, contradiction, gap, abandoned approach, recipe, staleness rule, or glossary term."
+        }
+      ]
+    },
+    {
+      "artifact": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\docs\\architecture\\H1913_DUAL_RUN_RECONCILIATION.md",
+      "repo": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "Operator-only pipeline details belong in CLAUDE.md and the architecture record; the repository audience and product overview are unchanged."
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CLAUDE.md:66: [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md)."
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md is the repository cold-start guide and now carries the command; generated policy-only AGENTS.md should not duplicate it."
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "The architecture reconciliation record is the governing sibling domain document for this bounded Slice C cutover."
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "These are a pipeline manifest, implementation module, and bounded decision record, not a long-lived manual, roadmap, or specification requiring a sibling metadoc."
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\CHANGELOG.md:37: [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md)."
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\user\\Documents\\GitHub\\SanskritGrammar\\.ai_state.md:27: [H1913_DUAL_RUN_RECONCILIATION.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md)."
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "No tracking issue was named; merged PRs 879 and 880 are the authoritative delivery records."
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The handoff is complete with no shipped-work residual, so no GTD action is owed."
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The closed H3321 registry/archive entry records the delivery by handoff ID; duplicating implementation paths in the registry is unnecessary."
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "This is repository-local build tooling and an article pipeline, not a reusable org-wide user-facing feature or dataset."
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The existing VisualDCS DCS-master consumer contract already governs this pinned read-only SQLite use; no producer, owner, or repo-pair relationship changed."
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The read-only adapter, pinned-SHA refusal, and hard cutover introduce no destructive or irreversible operator action."
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The reconciliation resolved the lane differences and left no open research question."
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The work implements an existing architecture slice and does not revise an org-level thesis."
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No hook or enforcement contract changed."
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The rollup already tracks the SG-MO-021 programme; this closure adds no distinct portfolio status beyond the archived handoff."
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "No new hub, generated source, or rollup input was introduced."
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "The bounded reconciliation record captures the implementation selection; it does not establish an org-wide premise, contradiction, gap, abandoned approach, recipe, staleness rule, or glossary term."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id: ex:grammar-lab:present-thematic-a
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-thematic-a
+risk_class: deterministic
+status: published
+prompt_ru: bhavati — традиционный презентный класс…
+choices:
+- I
+- II
+- IV
+- X
+answer: I
+answer_normalized: i
+distractors:
+- II
+- IV
+- X
+approval_record: null
+source_ids:
+- whitney-sec:733-758
+- zalizniak-1975:morphological-positions

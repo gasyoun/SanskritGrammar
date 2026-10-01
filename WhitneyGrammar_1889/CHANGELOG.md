@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Changelog — WhitneyGrammar_1889
 
 All notable changes to this book's digital edition are documented here.
@@ -73,3 +75,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   best calibration in the programme. The single flag is Whitney's own hedged "perfect on the whole
   less common than the imperfect" (WH-4), which the DCS aggregate flips (perfect 61,986 > imperfect
   47,554) — OVERSTATED-in-aggregate, half-anticipated by his "varies by author" hedge.
+
+_Dr. Mārcis Gasūns_

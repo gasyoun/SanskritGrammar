@@ -1,6 +1,6 @@
 # Implementation — SanskritGrammar Grammar Lab Wave 1
 
-_Created: 09-08-2026 · Last updated: 09-08-2026_
+_Created: 09-08-2026 · Last updated: 13-08-2026_
 
 Ordered build sequence for the
 [Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md).
@@ -28,6 +28,9 @@ Each lane is one Grok 4.5 execution handoff and may merge only after its depende
 
 **Exit:** 25–40 publishable topics; zero schema/Type-D/hash errors; 5-topic fixture and full
 bundle reproduce; every published topic satisfies the evidence contract.
+
+**Status 13-08-2026 (H2492):** shipped — 32 published topics, 1 `needs_review` omit, 182 Type-D
+edges, 192 frozen queries, `--check` and `tests/test_grammar_lab.py` green.
 
 ## G2 — Systema import, explorer and semantic search
 
@@ -83,6 +86,13 @@ attempt → mastery → SRS/recommendation works end-to-end with reversible cont
 
 **Exit:** sandbox entitlement matrix green; pilot can run without a production charge; pilot
 readout and human activation packet exist; all production switches remain OFF.
+
+**Status 14-08-2026 (H2495):** shipped in Systema
+[PR #1665](https://github.com/gasyoun/Systema-Sanscriticum/pull/1665) — `canUse()` resolves
+course / subscription / admin / pilot grants identically; expiry and revocation deny;
+`grammar-lab:rehearse-entitlement` sandbox matrix; consent + instrumentation dark behind
+`GRAMMAR_LAB_PILOT`; activation packet and “pilot not human-authorized” readout committed.
+No production charge or flag flip.
 
 ## Required sequencing and merge discipline
 

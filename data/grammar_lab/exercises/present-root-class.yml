@@ -1,0 +1,21 @@
+id: ex:grammar-lab:present-root-class
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-root-class
+risk_class: deterministic
+status: published
+prompt_ru: asti относится к презентному классу…
+choices:
+- I
+- II
+- IV
+- VI
+answer: II
+answer_normalized: ii
+distractors:
+- I
+- IV
+- VI
+approval_record: null
+source_ids:
+- whitney-sec:611-641
+- zalizniak-1975:morphological-positions

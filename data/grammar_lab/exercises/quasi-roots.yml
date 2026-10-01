@@ -1,0 +1,17 @@
+id: ex:grammar-lab:quasi-roots
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:quasi-roots
+risk_class: deterministic
+status: published
+prompt_ru: dattaḥ от dā построен от…
+choices:
+- первичного dā без изменения
+- квазикорня dad
+answer: квазикорня dad
+answer_normalized: квазикорня dad
+distractors:
+- первичного dā без изменения
+approval_record: null
+source_ids:
+- whitney-sec:66
+- whitney-sec:102

@@ -1,0 +1,21 @@
+id: ex:grammar-lab:alternation-series
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:alternation-series
+risk_class: deterministic
+status: published
+prompt_ru: К какому ряду Зализняк относит корень nī «вести»?
+choices:
+- A1
+- I1
+- U1
+- R1
+answer: I1
+answer_normalized: i1
+distractors:
+- A1
+- U1
+- R1
+approval_record: null
+source_ids:
+- whitney-sec:235-243
+- zalizniak-1975:table-1

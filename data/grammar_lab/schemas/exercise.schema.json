@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/schemas/exercise.schema.json",
+  "title": "Grammar Lab exercise",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "topic_id",
+    "risk_class",
+    "status",
+    "prompt_ru",
+    "answer",
+    "answer_normalized"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^ex:grammar-lab:[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "topic_id": {"type": "string", "pattern": "^subject:grammar-lab:"},
+    "risk_class": {"type": "string", "enum": ["deterministic", "interpretive"]},
+    "status": {
+      "type": "string",
+      "enum": ["published", "approval-required", "draft"]
+    },
+    "prompt_ru": {"type": "string", "minLength": 8},
+    "prompt_iast": {"type": "string"},
+    "choices": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 2
+    },
+    "answer": {"type": "string", "minLength": 1},
+    "answer_normalized": {"type": "string", "minLength": 1},
+    "distractors": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "approval_record": {"type": ["string", "null"]},
+    "source_ids": {
+      "type": "array",
+      "items": {"type": "string"}
+    }
+  }
+}

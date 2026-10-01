@@ -1,0 +1,101 @@
+id: subject:grammar-lab:present-root-class
+schema_version: 1.0.0
+status: published
+title_ru: Презенс II класса (корневой)
+cluster: tense-stem
+aliases:
+  ru:
+  - второй класс
+  - корневой презенс
+  - класс ad
+  deva:
+  - अदादि
+  iast:
+  - root class
+  - class 2
+  - ad-class
+  slp1:
+  - adAdi
+summary_ru: 'Уитни §§611–641: основа равна корню, сильные формы с guṇa. Очерк §127.
+  Не путать с типом II 1975. Образцы: dviṣ / dveṣṭi, as / asti.'
+alignment_note: Whitney class 2 = 1978 class II. Not 1975 type II.
+prerequisites:
+- subject:grammar-lab:present-thematic-vs-athematic
+difficulty: intermediate
+sources:
+- anchor_type: whitney-sec
+  anchor_id: whitney-sec:611-641
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:present-root-class
+  link_type: thematic
+  source_dataset: SanskritGrammar/WhitneyGrammar_1889
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:morphological-positions
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:present-root-class
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:127
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:present-root-class
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-2004
+  anchor_id: zalizniak-2004:verb-overview
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:present-root-class
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakKonspekt_2004
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: whitney-root
+  anchor_id: whitney-root:22
+  anchor_key_slp1: as
+  target_locus: subject:grammar-lab:present-root-class
+  link_type: thematic
+  source_dataset: WhitneyRoots/crosswalk/roots.csv
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+dictionary_evidence:
+- kind: dictionary
+  dict: mw
+  entry_id: mw:20353
+  root_slp1: as
+  whitney_no: 22
+  gloss: be
+  homonym: '1'
+corpus_evidence:
+- kind: corpus
+  status: attested
+  corpus_snapshot: WhitneyRoots/crosswalk/roots.csv@b453ce0e dcs_freq
+  query: whitney_no=22 root_slp1=as
+  dcs_freq: 35753
+  dcs_rank: 3
+  attested_forms: syāt:5508|asi:5164|asti:3927|āsīt:1833|syād:1790|astu:1733|'si:1482|asmi:1460
+  limitation: DCS token counts from the pinned WhitneyRoots roots.csv fold (revision
+    b453ce0e); absence is snapshot-limited, not linguistic impossibility. Homonymous
+    roster rows may share a folded frequency.
+exercise_ids:
+- ex:grammar-lab:present-root-class
+provenance:
+  curated_date: 13-08-2026
+  curator: Grok 4.6 (grok-4.6) H2492
+  source_snapshot: WhitneyRoots@b453ce0e739c761aa0e32a1df6200d9875b148a5 roots.csv
+  notes: Whitney class 2 = 1978 class II. Not 1975 type II.

@@ -1,0 +1,269 @@
+{
+  "pool": {
+    "books": [
+      "buhler",
+      "knauer",
+      "kochergina"
+    ],
+    "n_sentences": 3213,
+    "n_seeded_candidate_pairs": 32216,
+    "baseline_cluster_count": 124,
+    "baseline_raw_match_count": 235
+  },
+  "seed_ngram": 4,
+  "min_shared_seeds": 1,
+  "chunk_sizes": [
+    "8",
+    "12",
+    "16",
+    "20",
+    "whole"
+  ],
+  "new_candidate_threshold": 0.9,
+  "gold_recall_regression_floor": {
+    "n_true_pairs": 78,
+    "n_recovered_by_seeding": 76,
+    "recall": 0.9744,
+    "missed_pairs": [
+      {
+        "a": "buhler-1923.XLVIII.1182",
+        "b": "kochergina-1998.XXXIV.1226",
+        "verdict": "spelling_variant",
+        "note": "transposition edit — shares no contiguous shingle despite high whole-string ratio"
+      },
+      {
+        "a": "buhler-1923.XLVIII.1339",
+        "b": "kochergina-1998.XXXIV.1226",
+        "verdict": "spelling_variant",
+        "note": "transposition edit — shares no contiguous shingle despite high whole-string ratio"
+      }
+    ]
+  },
+  "new_candidates_by_chunk_size": {
+    "8": {
+      "n_new_candidates": 168,
+      "examples": [
+        {
+          "a": "buhler-1923.II.25",
+          "b": "kochergina-1998.XIX.460",
+          "script": "deva",
+          "whole": 0.4255,
+          "w8": 1.0,
+          "w12": 0.75,
+          "w16": 0.5625,
+          "w20": 0.5
+        },
+        {
+          "a": "buhler-1923.II.25",
+          "b": "kochergina-1998.XXIV.586",
+          "script": "deva",
+          "whole": 0.5306,
+          "w8": 1.0,
+          "w12": 0.75,
+          "w16": 0.6875,
+          "w20": 0.55
+        },
+        {
+          "a": "buhler-1923.II.25",
+          "b": "kochergina-1998.XXVII.676",
+          "script": "deva",
+          "whole": 0.5,
+          "w8": 1.0,
+          "w12": 0.8333,
+          "w16": 0.625,
+          "w20": 0.55
+        },
+        {
+          "a": "buhler-1923.II.27",
+          "b": "kochergina-1998.XXIX.719",
+          "script": "deva",
+          "whole": 0.4407,
+          "w8": 1.0,
+          "w12": 0.6667,
+          "w16": 0.5625,
+          "w20": 0.55
+        },
+        {
+          "a": "buhler-1923.III.33",
+          "b": "knauer-1908.4.83",
+          "script": "deva",
+          "whole": 0.44,
+          "w8": 1.0,
+          "w12": 0.75,
+          "w16": 0.5625,
+          "w20": 0.5
+        }
+      ]
+    },
+    "12": {
+      "n_new_candidates": 35,
+      "examples": [
+        {
+          "a": "buhler-1923.IX.224",
+          "b": "knauer-1908.1.3",
+          "script": "deva",
+          "whole": 0.5789,
+          "w8": 0.75,
+          "w12": 1.0,
+          "w16": 0.875,
+          "w20": 0.8
+        },
+        {
+          "a": "buhler-1923.VI.120",
+          "b": "knauer-1908.10.211",
+          "script": "deva",
+          "whole": 0.7907,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9189
+        },
+        {
+          "a": "buhler-1923.VIII.176",
+          "b": "knauer-1908.17.369",
+          "script": "deva",
+          "whole": 0.7556,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 0.8125,
+          "w20": 0.7
+        },
+        {
+          "a": "buhler-1923.X.254",
+          "b": "knauer-1908.16.350",
+          "script": "deva",
+          "whole": 0.7742,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 0.8571,
+          "w20": 0.7742
+        },
+        {
+          "a": "buhler-1923.XII.288",
+          "b": "kochergina-1998.XXIV.582",
+          "script": "deva",
+          "whole": 0.5818,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 0.8125,
+          "w20": 0.65
+        }
+      ]
+    },
+    "16": {
+      "n_new_candidates": 6,
+      "examples": [
+        {
+          "a": "buhler-1923.VI.120",
+          "b": "knauer-1908.10.211",
+          "script": "deva",
+          "whole": 0.7907,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9189
+        },
+        {
+          "a": "buhler-1923.XXII.496",
+          "b": "knauer-1908.6.120",
+          "script": "deva",
+          "whole": 0.7727,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9189
+        },
+        {
+          "a": "buhler-1923.XXIV.525",
+          "b": "knauer-1908.7.144",
+          "script": "deva",
+          "whole": 0.8052,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 1.0
+        },
+        {
+          "a": "buhler-1923.XXV.541",
+          "b": "kochergina-1998.XXVIII.695",
+          "script": "deva",
+          "whole": 0.76,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9744
+        },
+        {
+          "a": "knauer-1908.15.333",
+          "b": "kochergina-1998.XXII.531",
+          "script": "deva",
+          "whole": 0.8148,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 1.0
+        }
+      ]
+    },
+    "20": {
+      "n_new_candidates": 7,
+      "examples": [
+        {
+          "a": "buhler-1923.XXIV.525",
+          "b": "knauer-1908.7.144",
+          "script": "deva",
+          "whole": 0.8052,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 1.0
+        },
+        {
+          "a": "knauer-1908.15.333",
+          "b": "kochergina-1998.XXII.531",
+          "script": "deva",
+          "whole": 0.8148,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 1.0
+        },
+        {
+          "a": "knauer-1908.3.76",
+          "b": "kochergina-1998.XVII.413",
+          "script": "iast",
+          "whole": 0.7606,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 1.0
+        },
+        {
+          "a": "buhler-1923.XXV.541",
+          "b": "kochergina-1998.XXVIII.695",
+          "script": "deva",
+          "whole": 0.76,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9744
+        },
+        {
+          "a": "buhler-1923.VI.120",
+          "b": "knauer-1908.10.211",
+          "script": "deva",
+          "whole": 0.7907,
+          "w8": 1.0,
+          "w12": 1.0,
+          "w16": 1.0,
+          "w20": 0.9189
+        }
+      ]
+    },
+    "whole": {
+      "n_new_candidates": 0,
+      "examples": []
+    }
+  },
+  "scope_limitation": "New candidates (claim 2) are UNVERIFIED — no H327-style human review pass has scored them. This reports discovery counts and score distributions, not a verified recall percentage or precision figure, because no ground truth exists yet for pairs outside the 128-pair gold. A verified Δ recall number requires running the same review pass Q4.1's gold set went through on this new-candidate pool first."
+}

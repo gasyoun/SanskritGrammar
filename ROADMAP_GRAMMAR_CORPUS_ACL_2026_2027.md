@@ -1,7 +1,11 @@
 # SanskritGrammar portfolio roadmap — 2026–2027
 
-_Created: 10-07-2026 · Last updated: 09-08-2026_
+_Created: 10-07-2026 · Last updated: 25-09-2026_
 
+
+> **Truth-pass 24-09-2026** ([H5371](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5371-OxAlpha_SanskritGrammar_rm-verdict-grammar-corpus-acl-2026-2027_24.09.26.md), OxAlpha `zai-coding-plan/glm-5.3-flash`, E015 close-out wave 1): the 20-09-2026 H###-backlog verification (0 OPEN) stands; Q3.1/Q3.2/Q3.5 SHIPPED (research agenda · [`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md) · H1514 errata schema); Grammar-Lab execution owned by [its own roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_GRAMMAR_LAB_2026_2027.md) (separate verdict H5367), architecture lane owned by the [subordinate roadmap](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_ARCHITECTURE_2026_2027.md) (verdict H5366), Sangram state owned by the [charter](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) + consolidation ledger. Verdict = **REFRESH, not archive**: the comparative corpus / ACL-papers line (§2 S1 registers, §3 B3–B8, §4 Q3.3–Q3.4, Q4.1–Q4.5, the two Q1-2027 papers, the Q2-2027 S3 pilot) is UNMINTED PROSE WORK — live-handoff scan 24-09-2026 found zero mints covering it — now rewritten as gated checkboxes in §7; the six human gates (M-H1, M-H2, P-H1, C-D1, C-D4, C-D5) plus the Sangram C5/C6 gate ruling are MG rows dated 24-09-2026 in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) (section "Human gate registered 24-09-2026 (H5371)").
+
+> **Truth-pass 20-09-2026** — `roadmap_handoff_truth.py --check` verified every H### handoff referenced below DONE/terminal against the combined registry (0 OPEN). Backlog fully drained; page retained in place as the programme record (H3075 classification — rulings survive their backlog).
 > _Revision 09-08-2026 (Codex `gpt-5.6-sol`): added the decision-locked
 > [Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md)
 > as the product continuation of the shipped pedagogy export/Systema hop. It adds a Whitney +
@@ -474,6 +478,149 @@ sessions must not re-open them without new evidence or an explicit author reques
 
 The October manuscript freeze triggers the two final agent passes named in the press-readiness
 checklist; the November publisher contact remains a human `@DO`, not an autonomous handoff.
+
+## 7. What is left — verdict pass 24-09-2026
+
+Added by the H5371 verdict pass; §0–§6 stand as written. The H### backlog is fully drained
+(0 OPEN, verified 20-09-2026); the rows below are the UNMINTED PROSE WORK the verdict found
+(live-handoff scan 24-09-2026: zero mints cover them). Agent-doable rows carry no gate and
+mint a handoff on pickup; human-gated rows point at their MG row in
+[Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md)
+(section "Human gate registered 24-09-2026 (H5371)").
+
+- [x] **S1 claim-register extension (§2 S1)** — Knauer register (≥50 verified), then Zaliznyak
+  (≥50 verified), plus the 339-candidate Bühler backlog drain. Feeds A60's central table
+  (§2, paper A60). **Verdict 24-09-2026 (H5417, Sonnet 5): all three sub-items already
+  shipped, only the checkbox was stale.** Bühler backlog: fully drained, 403 entries in
+  [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)
+  (H797 Phase 2, 15-07-2026, [PR #186](https://github.com/gasyoun/SanskritGrammar/pull/186));
+  `claims_harvest.yml` candidates: []. Zaliznyak: 17 entries in
+  [`ZalizniakKonspekt_2004/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml)
+  + 96 in [`ZalizniakOcherk_1978/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml)
+  (both H797, 15-07-2026) — 113 combined, both harvest backlogs drained to `candidates: []`.
+  Knauer: **not** a `claims.yml` register — an author-ruled genre adaptation, since the
+  digitized Кнауэр 1908 text is a phrase-reader with no discursive universal/frequency
+  assertions to harvest (verified against source before work started). Instead
+  [`KnauerFrazy_1908/parse_audit.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/parse_audit.yml)
+  audits footnote-parse correctness (root + category + preverb vs. Whitney 1889): **210
+  CONFIRMED of 214** ([PR #189](https://github.com/gasyoun/SanskritGrammar/pull/189),
+  15-07-2026) — exceeds the ≥50 bar in substance; see
+  [`KnauerFrazy_1908/README.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/README.md)
+  for the adaptation rationale. `python scripts/claims_schema_validate.py --all` PASS on
+  all six registers (0 errors) as of this verdict.
+- [x] **Q3.4 three-scheme agreement (§4)** — Fleiss κ / Krippendorff α over the 876-root
+  crosswalk. **SHIPPED 24-09-2026 (Sonnet 5, worker A04).** Result:
+  [S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md)
+  (letter-granularity Fleiss κ = 0.8178, Krippendorff α = 0.8179, "almost perfect" per
+  Landis & Koch; full-code κ = 0.7593, α = 0.7594, "substantial"; n = 844/876) — generator
+  [`scripts/q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q34_three_scheme_agreement.py),
+  tests in [`tests/test_q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q34_three_scheme_agreement.py),
+  raw numbers in
+  [`TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json).
+  **Coder substitution, read before citing:** "Gasuns 2014" has no independent per-root
+  scheme in this repo (his 2014 dissertation and its 2026-revision index both reuse
+  Zaliznyak 1975's series unchanged — see `MORPHOCLASS_3WAY_MEMO.md` axis 2 and
+  `GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx` §7.1); the third coder actually
+  computed is **Zaliznyak's own 1978 (Ocherk) revision**, not Gasuns. If the literal
+  Zal./Gas./Tol. framing is required for Paper 2, that needs a fresh `@DECIDE` on either
+  building a genuine Gasuns-2014 per-root scheme or re-scoping the paper's claim.
+  PR [#967](https://github.com/gasyoun/SanskritGrammar/pull/967).
+- [x] **Q4.1 difflib evaluation (§4)** — score `difflib` against the 128-pair gold set
+  ([`matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv))
+  before any detector swap. **SHIPPED 24-09-2026 (Sonnet 5, worker A04).** Precision of
+  the shipped `score >= 0.82` operating point: strict (TP=`spelling_variant` only)
+  0.4531 (58/128); lenient (TP=`spelling_variant`+`length_mismatch`, FP=`low_similarity`
+  per the pipeline's own documented false-positive class) 0.6094 (78/128). **Finding
+  worth acting on:** the precision sweep shows nearly all `low_similarity` false
+  positives cluster at score 0.82–0.85 — retuning the threshold to 0.85 alone would cut
+  false positives from 50 to 1 while keeping 75/128 candidates, before any TRACER/Passim
+  swap. Scope: this measures precision of what difflib already flagged, not recall of
+  reuse it never surfaced — that gap is exactly what Q4.2 gates on. Generator
+  [`scripts/q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q41_difflib_gold_evaluation.py),
+  tests [`tests/test_q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q41_difflib_gold_evaluation.py)
+  (8 tests), full report
+  [`Q4_1_DIFFLIB_EVALUATION_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/Q4_1_DIFFLIB_EVALUATION_RESULT.md),
+  raw numbers
+  [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json).
+  PR: _link filled in at merge_.
+- [x] **Q4.3 Apte + Whitney extraction (§4)** — extend the sentence pool 3 → 5 books on the
+  Whitney spine. No human gate — agent-doable. **DONE 25-09-2026 (Sonnet 5
+  `claude-sonnet-5`):** [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py)
+  extended with Apte (lesson-structured, same mechanism) and a dedicated
+  Whitney-appendix extractor (Whitney's 18 chapter files are paradigm tables,
+  not connected exercise sentences — only its Appendix carries continuous
+  prose). Pool: 3,213 → 6,393 candidates. **Split note:** `matches.json` /
+  `Concordance/catalog.mdx` intentionally left at their 3-book state — the
+  clustering/rendering pipeline hardcodes 3 books and needs its own pass to
+  honestly carry 5 (owner residual, see CHANGELOG). PR: _link filled in at
+  merge_.
+- [x] **Q4.4 Whitney-no ↔ DCS ↔ Vidyut crosswalk (§4)** — net-new derived asset; boundary:
+  consume [VisualDCS](https://github.com/gasyoun/VisualDCS), never re-derive; register in
+  [PROJECT_INTERLINKS.md](https://github.com/gasyoun/Uprava/blob/main/PROJECT_INTERLINKS.md)
+  + the kosha manifest. No human gate — agent-doable under the boundary. **SHIPPED
+  25-09-2026 (Sonnet 5 `claude-sonnet-5`, worker A05):** joined the existing 876-root
+  Whitney crosswalk
+  ([`TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv))
+  to VisualDCS `dcs_lemma_summary.json` (corpus attestation/freq band) and kosha
+  `data/e1/dhatu_crosswalk.json` (H855, vidyut-prakriya aupadeśika dhātu + dhātupātha
+  code) via IAST→SLP1 root transliteration — both sources consumed read-only, neither
+  re-derived. 876 rows: 720 DCS-attested (82.2%), 541 vidyut-matched (61.8%, 70
+  ambiguous — root string maps to >1 distinct aupadeśika, reported not resolved).
+  Generator [`scripts/build_whitney_dcs_vidyut_crosswalk.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_whitney_dcs_vidyut_crosswalk.py),
+  tests [`tests/test_build_whitney_dcs_vidyut_crosswalk.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_build_whitney_dcs_vidyut_crosswalk.py)
+  (5 tests, pure join-logic unit fixtures), output
+  [`data/whitney_dcs_vidyut_crosswalk.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/whitney_dcs_vidyut_crosswalk.csv)
+  + [`data/whitney_dcs_vidyut_crosswalk_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/data/whitney_dcs_vidyut_crosswalk_summary.json).
+  Registered [Uprava PROJECT_INTERLINKS.md PR #3821](https://github.com/gasyoun/Uprava/pull/3821)
+  + [kosha manifest PR #646](https://github.com/gasyoun/kosha/pull/646) (auto-merge enabled).
+  **Not** wired into repo CI — the generator needs sibling `VisualDCS`/`kosha`
+  checkouts CI does not have (same pattern as `refresh_published_figures.py`, H2298);
+  regenerate manually after either source updates. PR: _link filled in at merge_.
+- [x] **Q4.2 TRACER/Passim swap (§4)** — gate: Q4.1's evidence check accepted first, cleared
+  24-09-2026. **SHIPPED 25-09-2026 (Sonnet 5 `claude-sonnet-5`, worker A05):** neither JVM/Spark
+  tool is vendored (both named "unverified externals" in
+  [`docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/SANSKRITGRAMMAR_RESEARCH_AGENDA.md));
+  implements the one transferable finding from Miyagawa et al. 2024
+  ([2024.nlp4dh-1.12](https://aclanthology.org/2024.nlp4dh-1.12/), TRACER validated on Sanskrit)
+  — smaller matching chunks raise recall — as 4-gram shingle-seeded candidate generation +
+  sliding-window scoring over the same 3-book pool the 124-cluster catalog was built from.
+  **Result:** 97.4% (76/78) gold-pair recall floor (2 misses are a documented transposition
+  blind spot); 168/35/6/7 new candidates found at chunk sizes 8/12/16/20 vs 0 at whole-string,
+  confirming the paper's finding — reported as UNVERIFIED discovery counts, not a verified
+  recall percentage (no H327-style review pass has scored the new candidates; that pass is the
+  owner residual). Generator
+  [`scripts/q42_tracer_style_recall_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q42_tracer_style_recall_evaluation.py),
+  tests [`tests/test_q42_tracer_style_recall_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q42_tracer_style_recall_evaluation.py)
+  (9 tests), full report
+  [`Q4_2_TRACER_STYLE_RECALL_EVALUATION_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/Q4_2_TRACER_STYLE_RECALL_EVALUATION_RESULT.md),
+  raw numbers
+  [`scripts/data/q42_tracer_style_recall_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q42_tracer_style_recall_evaluation.json).
+  PR: _link filled in at merge_.
+- [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
+  DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
+  **B7 shipped (A06, 25-09-2026):** SHA-256 fixity manifest for every tracked
+  `.doc`/`.docx` source ([`scripts/build_source_checksums.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_source_checksums.py)).
+  Owner residual: a human with `workflow`-scope push adds
+  `uv run python scripts/build_source_checksums.py --check` to
+  `.github/workflows/ci.yml`'s `validators` step (the agent push token lacked
+  that scope). B3–B6 and B8 remain open. PR: _link filled in at merge_.
+- [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
+  annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
+  in GTD. Blocked until ruled.
+- [ ] **Papers 1 + 2 (§4 Q1 2027)** — human gates: Paper 1 venue is **C-D1** (`@DECIDE`);
+  Q4.5 RefD directionality is blocked on **C-D4** (1878 Bühler first edition); register in
+  [ARTICLES.md](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md) only when a skeleton
+  exists. **MG @DECIDE / @WAITING 24-09-2026** in GTD.
+- [ ] **S3 Pāṇini two-chapter pilot (§4 Q2 2027)** — future-dated by the roadmap's own
+  sequencing, hard precision@5 ≥ 0.4 kill-gate. **MG @WAITING** until:2027-01 (GTD).
+- [ ] **M-H1 — M03 290-paragraph review (§5)** — **MG @DO by 31-10-2026** in GTD; gates the
+  manuscript freeze (§6 item 1).
+- [ ] **M-H2 — «Нестор-История» contact (§5)** — **MG @DO November 2026** in GTD (§6, W3).
+- [ ] **P-H1 — RQ4 recruitment authorization (§5)** — H1261 shipped the production route
+  (archived, terminal); recruitment start stays human. **MG @DO 24-09-2026** in GTD.
+- [ ] **Sangram freeze exit — legitimate C5/C6 gates (§0, §6 item 3)** — ratify instruments
+  or approve visa/terminal routing for the 14 unknowns; agents must not invent thresholds.
+  **MG @DO 24-09-2026** in GTD.
 
 ## Related documents (awareness weave H1728)
 

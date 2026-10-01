@@ -1,0 +1,19 @@
+id: ex:grammar-lab:ablaut-grades
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:ablaut-grades
+risk_class: deterministic
+status: published
+prompt_ru: Какая ступень у корня kṛ в kartum (инфинитив на -tum)?
+choices:
+- нулевая
+- guṇa
+- vṛddhi
+answer: guṇa
+answer_normalized: guṇa
+distractors:
+- нулевая
+- vṛddhi
+approval_record: null
+source_ids:
+- whitney-sec:235-243
+- zalizniak-1975:three-grade-alternation

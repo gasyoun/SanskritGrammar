@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/schemas/manifest.schema.json",
+  "title": "Grammar Lab export manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "bundle_version",
+    "generator",
+    "published_topic_count",
+    "feeds",
+    "source_snapshot"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "bundle_version": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "generator": {"type": "string"},
+    "published_topic_count": {"type": "integer", "minimum": 25, "maximum": 40},
+    "needs_review_count": {"type": "integer", "minimum": 0},
+    "feeds": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "sha256", "rights"],
+        "properties": {
+          "id": {"type": "string"},
+          "path": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "rights": {
+            "type": "string",
+            "enum": ["aggregate-public-safe", "pointer-only-no-bulk-gloss"]
+          }
+        }
+      }
+    },
+    "source_snapshot": {"type": "object"},
+    "embedding": {"type": "object"},
+    "omissions": {"type": "array", "items": {"type": "string"}}
+  }
+}

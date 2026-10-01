@@ -1,6 +1,6 @@
 # Metadoc — ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md
 
-_Created: 10-07-2026 · Last updated: 29-07-2026_
+_Created: 10-07-2026 · Last updated: 24-09-2026_
 
 A document about [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md).
 
@@ -128,5 +128,6 @@ that closes between now and Q1 2027 changes the contribution claim.
 | 18-07-2026 | **Portfolio rewrite (backfilled row — the authoring session did not update this metadoc).** [PR #417](https://github.com/gasyoun/SanskritGrammar/pull/417) rebuilt the file from an ACL-track roadmap into the repo's five-track **portfolio umbrella** (M03 · Sangram · pedagogy/RQ4 · comparative · archive) per the 18-07-2026 roadmap interview: 8 rulings, waves W1–W4, H1259/H1260/H1261 pointers, Sangram consolidation freeze. | recorded 19-07-2026 by Fable 5 (`claude-fable-5`) |
 | 19-07-2026 | **Sangram-primary re-base ([H1277](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1277-Fable_SanskritGrammar_sangram-acl-roadmap-rebase-primary_18.07.26.md)).** Keep-both ruling executed: §2 "four spines" → "four instruments" feeding Sangram (labels kept), Track C re-titled the **publication arm of Sangram** with a §0 relation paragraph, per-instrument "Feeds Sangram" leads (honest τ/κ citation split: τ cited by three programme docs, not articles; tatpurusha's Cohen κ ≠ the never-run S2/Q3.4 κ), Q3.1/Q3.2 marked done and Q4.1–Q4.5 plainly unstarted, measured 34.2 % sangram/ share since 14-07. Freeze respected: no new topics/manifests, charter untouched. | Fable 5 (`claude-fable-5`) |
 | 29-07-2026 | **Current-state and architecture rebase.** H1259 moved from execution to its human 290-paragraph review gate; Sangram refreshed to 11 published / 1 kill-gated / 14 unknown; RQ4 technical closure and H1514 recorded; Q4 language made evidence-sensitive; subordinate modular-monorepo plan + H1911–H1913 linked. Configured Fable Planner returned no draft; MG authorized root best-effort. | Codex root |
+| 24-09-2026 | **Verdict pass (H5371, E015 close-out wave 1): REFRESH, not archive.** The 20-09 truth-pass (0 OPEN H###) stands; the unminted-prose scan found the comparative/ACL line (S1 registers, B3–B8, Q3.3–Q3.4, Q4.1–Q4.5, papers, S3 pilot) never minted — rewritten as gated §7 checkboxes; six human gates + the Sangram C5/C6 gate ruling landed as MG rows in Uprava GTD. Grammar-Lab/architecture lanes confirmed owned by their own roadmaps (H5367/H5366). | OxAlpha (`zai-coding-plan/glm-5.3-flash`) |
 
 _Dr. Mārcis Gasūns_

@@ -1,6 +1,11 @@
 # Roadmap — SanskritGrammar, second half of 2026
 
-_Created: 18-07-2026 · Last updated: 18-07-2026_
+_Created: 18-07-2026 · Last updated: 25-09-2026_
+
+
+> **Truth-pass 20-09-2026** — `roadmap_handoff_truth.py --check` verified every H### handoff referenced below DONE/terminal against the combined registry (0 OPEN). Backlog fully drained; page retained in place as the programme record (H3075 classification — rulings survive their backlog). That check only scans H### tokens — two waves below were never minted at all and stayed invisible to it; see the 24-09-2026 verdict pass in §2a for what that check missed.
+>
+> **Verdict pass 24-09-2026 (H5365)** — REFRESH, not archive: two genuine unminted prose items survive (§2a). Every other wave item is shipped or moot; table below.
 
 Wave structure and full handoff specs for the plan whose cover is
 [`docs/PLAN_SANGRAM_EDITORIAL_NOTES_AND_CHARTER_2026H2.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANGRAM_EDITORIAL_NOTES_AND_CHARTER_2026H2.md).
@@ -182,6 +187,41 @@ anonymous-to-analysis; participants are told what is measured and that a second 
 **The collision the pilot must respect:** Systema's R20 cabinet baseline was already ruled to
 serialise against the **same** student population. The pilot must not recruit into that window —
 this is a hard sequencing constraint, not a preference, and W3 does not open until R20's window closes.
+
+## 2a. Verdict pass 24-09-2026 (H5365) — what is left
+
+Unminted-prose table (item · evidence · verdict) required by the H5365 acceptance gate:
+
+| Item | Evidence | Verdict |
+|---|---|---|
+| W1-A ledger build | [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv) (81 rows) + `_EXCLUDED.tsv` exist | **Shipped** — [H1273](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1273-Sonnet_SanskritGrammar_sangram-review-votes-track-h856-reversal_18.07.26.md), archived |
+| W1-B adjudication | ledger `applied_status` column fully populated, 0 `UNKNOWN` rows | **Shipped** |
+| W1-C articles apply | ledger: 62 `APPLIED` / 6 `DEFERRED`, 0 `UNKNOWN` | **Shipped**, residual noted below |
+| W1-D metodichki apply | Apte/Kochergina rows `APPLIED` except one `ESCALATED` | **Mostly shipped**, 1 residual noted below |
+| W1-E a65 claim notes | Re-adjudicated 25-09-2026 (A10): the 6 rows were stale, not actually open — [H1276](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1276-Fable_SanskritGrammar_sangram-apply-notes-a65-claims_18.07.26.md) already wrote all 6 into `claims.yml` via merged [SanskritGrammar PR #502](https://github.com/gasyoun/SanskritGrammar/pull/502) (21-07-2026); the ledger row was simply never refreshed after that merge. Now: HB-100/HB-57/HK-15/HK-34/HK-5 `APPLIED`, HK-4a `ESCALATED` (genuine, `Q2607-146` still open), `MO021-09` `APPLIED` (both companion methodichkas cite it directly); HK-4b already `APPLIED` | **Shipped** — [PR #974](https://github.com/gasyoun/SanskritGrammar/pull/974), ledger refreshed |
+| W2-A charter decalendar rewrite | [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) still carries the mermaid gantt dates and `W2 · 2027–2028` / `W3 · 2028–2029` / `W4 · 2029–2030` wave headers | **Unminted prose work** — deferred 18-07-2026 pending H1260 (now archived/landed), never re-minted |
+| W2-B ACL roadmap rebase | [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) — "Sangram" occurs 46× (was 0) | **Shipped** |
+| W3-A RQ4 pilot runbook | [H1261](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1261-Sonnet_Systema-Sanscriticum_rq4-study-go-live_18.07.26.md) records a same-day human ruling: **GO now** under the unchanged approved protocol, no runbook built | **Moot / human-ruled-superseded** — not open work |
+
+**What is left** (both gated, human gate: none — no MG `@DO`/`@WAITING` row needed):
+
+- [x] W1-E — re-adjudicate the 6 OPEN a65 claim notes (HB-100, HB-57, HK-15, HK-34, HK-4a, HK-5) + `MO021-09` in [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv). Done 25-09-2026 (A10, Sonnet 5): the branch `origin/h1276-a65-writeback` named in HB-100's stale evidence column was gone because it was **merged and deleted**, not abandoned — [H1276](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1276-Fable_SanskritGrammar_sangram-apply-notes-a65-claims_18.07.26.md) landed via [SanskritGrammar PR #502](https://github.com/gasyoun/SanskritGrammar/pull/502) on 21-07-2026, writing all 6 dispositions into `claims.yml`; the ledger row was simply never refreshed after. `MO021-09` resolved separately: both companion methodichkas it asks for now exist and cite it directly ([H807](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md), [H1757](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md)). No claims.yml re-derivation was needed or performed — only the ledger's `applied_status`/`evidence` columns were re-adjudicated against already-merged evidence.
+- [ ] W1-C/D residuals — `sangram-prose-style-guide-visa_16.07.26#A2` (`PARTIAL`, 4 more counter-examples), `sangram-sg-mo-001-declension-overview-visa_16.07.26#A1` (`ESCALATED`), `sanskritgrammar-metodichka-kochergina-v1_16.07.26#razdel-3-otsylki` (`ESCALATED`). Fable tier.
+  **Split status, A13 (25-09-2026, Sonnet 5):** first sub-item now `APPLIED` in full —
+  [`sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
+  § 2.1 reads 3 more rusgram.ru articles over `http://` (Stoynova's second piece +
+  2 by Paducheva) and documents each author's individual register, plus a factual
+  correction (ТП is Печёный's only rusgram.ru article, not Stoynova's second) —
+  [`review/EDITORIAL_NOTE_INDEX.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/review/EDITORIAL_NOTE_INDEX.tsv)
+  row `sangram-prose-style-guide-visa_16.07.26#A2` flipped `PARTIAL` → `APPLIED`.
+  **The other two sub-items are unchanged and stay `ESCALATED`** — both are
+  genuinely human-gated, not agent-doable: `declension-overview-visa#A1` needs an
+  authorial genre ruling (Zaliznyak-essay vs. Whitney-normative register, already
+  routed to a human `@DECIDE` per its own evidence column); `razdel-3-otsylki`
+  needs (a) a paginated Konspekt-2004 PDF that does not exist in the repo or any
+  shadow asset store, and (b) a specific Miller work named by a human — an agent
+  cannot invent either. Checkbox stays open pending those two.
+- [ ] W2-A — rewrite [`sangram/SANGRAM_CHARTER_2026_2031.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CHARTER_2026_2031.mdx) to remove the calendar (mermaid gantt lines + wave-year headers), replacing with contract/checkpoint gates per the original W2-A acceptance line above. Fable tier (constitution-level Russian register).
 
 ## 3. Out of scope, with reasons
 

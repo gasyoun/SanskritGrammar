@@ -1,0 +1,108 @@
+id: subject:grammar-lab:root-type-iii
+schema_version: 1.0.0
+status: published
+title_ru: Тип III — нуль во второй позиции
+cluster: root-type
+aliases:
+  ru:
+  - тип III
+  deva:
+  - तृतीयवर्ग
+  iast:
+  - type III
+  slp1:
+  - typeIII
+summary_ru: Тип III не имеет позиции 3 и в позиции 2 остаётся в нулевой ступени (bhikṣitum,
+  cumbitum). Уитни фиксирует те же «неусиленные» инфинитивы как исключения к правилу
+  guṇa перед -tum. Это не III презентный класс (удваивающий hu-класс).
+alignment_note: 1975 type III ≠ Whitney present class III.
+prerequisites:
+- subject:grammar-lab:root-type-i
+difficulty: advanced
+sources:
+- anchor_type: whitney-sec
+  anchor_id: whitney-sec:968
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: SanskritGrammar/WhitneyGrammar_1889
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:type-iii
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1975
+  anchor_id: zalizniak-1975:series-iur
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakMorphology_1975
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-1978-sec
+  anchor_id: zalizniak-1978-sec:164
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakOcherk_1978
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: zalizniak-2004
+  anchor_id: zalizniak-2004:partial-alternators
+  anchor_key_slp1: ''
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: SanskritGrammar/ZalizniakKonspekt_2004
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+- anchor_type: whitney-root
+  anchor_id: whitney-root:242
+  anchor_key_slp1: Cid
+  target_locus: subject:grammar-lab:root-type-iii
+  link_type: thematic
+  source_dataset: WhitneyRoots/crosswalk/roots.csv
+  match_method: curated
+  confidence: 0.97
+  evidence_count: null
+  date: 13-08-2026
+dictionary_evidence:
+- kind: dictionary
+  dict: mw
+  entry_id: mw:75907
+  root_slp1: Cid
+  whitney_no: 242
+  gloss: cut off
+  homonym: ''
+corpus_evidence:
+- kind: corpus
+  status: attested
+  corpus_snapshot: WhitneyRoots/crosswalk/roots.csv@b453ce0e dcs_freq
+  query: whitney_no=242 root_slp1=Cid
+  dcs_freq: 2139
+  dcs_rank: 64
+  attested_forms: cicheda:469|chinna:371|chittvā:318|chinnam:69|chinddhi:64|chinatti:60|chinnaṃ:50|chinnā:45
+  limitation: DCS token counts from the pinned WhitneyRoots roots.csv fold (revision
+    b453ce0e); absence is snapshot-limited, not linguistic impossibility. Homonymous
+    roster rows may share a folded frequency.
+exercise_ids:
+- ex:grammar-lab:root-type-iii
+provenance:
+  curated_date: 13-08-2026
+  curator: Grok 4.6 (grok-4.6) H2492
+  source_snapshot: WhitneyRoots@b453ce0e739c761aa0e32a1df6200d9875b148a5 roots.csv
+  notes: 1975 type III ≠ Whitney present class III.

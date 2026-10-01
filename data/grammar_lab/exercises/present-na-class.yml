@@ -1,0 +1,19 @@
+id: ex:grammar-lab:present-na-class
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:present-na-class
+risk_class: deterministic
+status: published
+prompt_ru: 3 sg презенса от krī — это…
+choices:
+- krayati
+- krīṇāti
+- krīṇoti
+answer: krīṇāti
+answer_normalized: krīṇāti
+distractors:
+- krayati
+- krīṇoti
+approval_record: null
+source_ids:
+- whitney-sec:717-732
+- zalizniak-1975:morphological-positions

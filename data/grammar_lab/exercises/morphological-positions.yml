@@ -1,0 +1,19 @@
+id: ex:grammar-lab:morphological-positions
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:morphological-positions
+risk_class: deterministic
+status: published
+prompt_ru: Какую ступень по Зализняку 1975 ждёт морфологическая позиция 1?
+choices:
+- нулевую
+- guṇa
+- vṛddhi
+answer: нулевую
+answer_normalized: нулевую
+distractors:
+- guṇa
+- vṛddhi
+approval_record: null
+source_ids:
+- whitney-sec:952-956
+- whitney-sec:931-940

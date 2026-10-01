@@ -1,0 +1,17 @@
+id: ex:grammar-lab:open-vs-closed-roots
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:open-vs-closed-roots
+risk_class: deterministic
+status: published
+prompt_ru: chid «рассекать» по очерку §61 — это корень…
+choices:
+- открытый
+- закрытый
+answer: закрытый
+answer_normalized: закрытый
+distractors:
+- открытый
+approval_record: null
+source_ids:
+- whitney-sec:235-243
+- zalizniak-1975:series-a2

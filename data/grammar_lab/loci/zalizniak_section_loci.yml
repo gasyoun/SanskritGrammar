@@ -1,0 +1,61 @@
+# Deterministic Zalizniak section-locus registry.
+# 1978 uses native §§ and is listed here only as a verified inventory.
+# 1975 and 2004 have no native § ids; tails are slugs of titled source blocks
+# in document order. Do not invent Whitney-style numbers for those works.
+schema_version: "1.0.0"
+works:
+  zalizniak-1975:
+    work_id: zalizniak-1975
+    title: Morphophonological Classification of Sanskrit Verbal Roots
+    year: 1975
+    source_path: ZalizniakMorphology_1975/A. Zalizniak Morphophonological Classification (English).mdx
+    native_paragraphs: false
+    prefix: zalizniak-1975
+    loci:
+      - {id: "zalizniak-1975:root-as-construct", title: "Root as synchronic construct", order: 1}
+      - {id: "zalizniak-1975:root-designation", title: "Real vs conventional root designation", order: 2}
+      - {id: "zalizniak-1975:root-variants", title: "Root-variants and parallel allomorphs", order: 3}
+      - {id: "zalizniak-1975:quasi-roots", title: "Quasi-roots / secondary roots", order: 4}
+      - {id: "zalizniak-1975:inventory-scope", title: "Whitney-list inventory scope (~750 roots)", order: 5}
+      - {id: "zalizniak-1975:three-grade-alternation", title: "Three-grade alternation", order: 6}
+      - {id: "zalizniak-1975:table-1", title: "Table 1 A I U R L series", order: 7}
+      - {id: "zalizniak-1975:table-2", title: "Table 2 M N series", order: 8}
+      - {id: "zalizniak-1975:morphological-positions", title: "Morphological Positions for the Roots", order: 9}
+      - {id: "zalizniak-1975:type-calculus", title: "Four types of roots (Table 3)", order: 10}
+      - {id: "zalizniak-1975:type-i", title: "Type I full alternation", order: 11}
+      - {id: "zalizniak-1975:type-ii", title: "Type II partial / guṇa-fixed", order: 12}
+      - {id: "zalizniak-1975:type-iii", title: "Type III zero-fixed (no MP3)", order: 13}
+      - {id: "zalizniak-1975:type-iv", title: "Type IV vṛddhi-fixed", order: 14}
+      - {id: "zalizniak-1975:homonymy", title: "Homonymous roots of different types", order: 15}
+      - {id: "zalizniak-1975:series-a1", title: "Alternation Series A1", order: 16}
+      - {id: "zalizniak-1975:samprasarana", title: "Samprasāraṇa series", order: 17}
+      - {id: "zalizniak-1975:series-a2", title: "Alternation Series A2", order: 18}
+      - {id: "zalizniak-1975:series-iur", title: "Alternation Series I U R", order: 19}
+      - {id: "zalizniak-1975:series-l", title: "Alternation Series L", order: 20}
+      - {id: "zalizniak-1975:series-mn", title: "Alternation Series M and N", order: 21}
+      - {id: "zalizniak-1975:set-anit", title: "Connective vowel / seṭ aniṭ", order: 22}
+  zalizniak-1978:
+    work_id: zalizniak-1978
+    title: Грамматический очерк санскрита
+    year: 1978
+    source_path: ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned.mdx
+    native_paragraphs: true
+    prefix: zalizniak-1978-sec
+    note: "Tails are the work's own § numbers (span#sN). Wave-1 used subset listed in used_sections."
+    used_sections: [25, 50, 52, 55, 60, 61, 62, 63, 109, 110, 111, 112, 113, 114, 117, 118, 119, 122, 126, 127, 130, 131, 134, 135, 136, 139, 140, 141, 142, 143, 144, 145, 150, 157, 160, 162, 164, 165, 167]
+  zalizniak-2004:
+    work_id: zalizniak-2004
+    title: Конспект грамматических сведений о санскрите
+    year: 2004
+    source_path: ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t.mdx
+    native_paragraphs: false
+    prefix: zalizniak-2004
+    loci:
+      - {id: "zalizniak-2004:historical-phonetics", title: "Из исторической фонетики", order: 1}
+      - {id: "zalizniak-2004:morphonology", title: "Морфонология", order: 2}
+      - {id: "zalizniak-2004:three-grade", title: "Трехступенчатые чередования", order: 3}
+      - {id: "zalizniak-2004:open-closed", title: "Открытые и закрытые корни", order: 4}
+      - {id: "zalizniak-2004:partial-alternators", title: "Неполноизменяемые корни", order: 5}
+      - {id: "zalizniak-2004:set-anit", title: "Вставное i / seṭ aniṭ veṭ", order: 6}
+      - {id: "zalizniak-2004:sandhi", title: "Сандхи", order: 7, publishable: false, reason: "Sandhi fenced until Emeneau"}
+      - {id: "zalizniak-2004:verb-overview", title: "Глагол (conspectus verbal synopsis)", order: 8}

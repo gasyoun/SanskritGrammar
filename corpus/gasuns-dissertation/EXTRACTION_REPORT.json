@@ -1,0 +1,82 @@
+{
+  "tool": "extract_text_layer.py (PyMuPDF 1.28.x)",
+  "verdicts": [
+    {
+      "file": "01_gasuns-dhatu-PhD-ref.pdf",
+      "size_bytes": 312738,
+      "pages": 23,
+      "pages_ok": 23,
+      "pages_cyr": 23,
+      "chars": 51899,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/01_gasuns-dhatu-PhD-ref.jsonl"
+    },
+    {
+      "file": "02_gasuns-dhatu-PhD-text.pdf",
+      "size_bytes": 1525350,
+      "pages": 223,
+      "pages_ok": 223,
+      "pages_cyr": 202,
+      "chars": 537994,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/02_gasuns-dhatu-PhD-text.jsonl"
+    },
+    {
+      "file": "03_01-gasuns-dhatu-suppl.pdf",
+      "size_bytes": 165887,
+      "pages": 7,
+      "pages_ok": 7,
+      "pages_cyr": 7,
+      "chars": 16831,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/03_01-gasuns-dhatu-suppl.jsonl"
+    },
+    {
+      "file": "04_02-gasuns-dhatu-suppl.pdf",
+      "size_bytes": 183140,
+      "pages": 7,
+      "pages_ok": 7,
+      "pages_cyr": 7,
+      "chars": 16330,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/04_02-gasuns-dhatu-suppl.jsonl"
+    },
+    {
+      "file": "05_03-gasuns-dhatu-suppl.pdf",
+      "size_bytes": 3685585,
+      "pages": 236,
+      "pages_ok": 236,
+      "pages_cyr": 236,
+      "chars": 330339,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/05_03-gasuns-dhatu-suppl.jsonl"
+    },
+    {
+      "file": "06_04-gasuns-dhatu-suppl.pdf",
+      "size_bytes": 129100,
+      "pages": 3,
+      "pages_ok": 3,
+      "pages_cyr": 3,
+      "chars": 7572,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/06_04-gasuns-dhatu-suppl.jsonl"
+    },
+    {
+      "file": "07_05-gasuns-dhatu-suppl.pdf",
+      "size_bytes": 190407,
+      "pages": 9,
+      "pages_ok": 9,
+      "pages_cyr": 9,
+      "chars": 11626,
+      "usable_ratio": 1.0,
+      "text_layer": "PASS",
+      "jsonl": "/Users/mac/Documents/GitHub/SanskritGrammar-h4479-drain/corpus/gasuns-dissertation/text/07_05-gasuns-dhatu-suppl.jsonl"
+    }
+  ]
+}

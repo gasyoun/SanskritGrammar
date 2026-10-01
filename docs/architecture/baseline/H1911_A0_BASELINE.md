@@ -46,3 +46,5 @@ green on a fresh clone; `npm run build` green on a fresh clone. Both hold.
 
 Provenance: Sonnet 4.6 (`claude-sonnet-4-6`) executing H1911 on
 opencode (`z-ai/glm-5.2`).
+
+_Dr. Mārcis Gasūns_

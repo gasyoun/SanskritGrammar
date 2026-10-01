@@ -49,7 +49,10 @@ sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
-ARTICLES = ROOT / "sangram" / "articles"
+ARTICLE_ROOTS = (
+    ROOT / "sangram" / "articles",
+    ROOT / "content" / "sangram" / "articles",
+)
 
 # ---- the canonical case-marked family (DCS-2026 pinned snapshot) ----
 ALL_TOKENS = 5_688_416
@@ -148,7 +151,11 @@ def check_file(path):
 
 
 def check_all():
-    files = sorted(ARTICLES.glob("*/data/coverage_summary.json"))
+    files = sorted(
+        path
+        for root in ARTICLE_ROOTS
+        for path in root.glob("*/data/coverage_summary.json")
+    )
     violations = []
     for f in files:
         violations.extend(check_file(f))
@@ -197,7 +204,7 @@ def main():
         return 1
     files, violations = check_all()
     if not files:
-        print("FAIL: no sangram/articles/*/data/coverage_summary.json found — the gate would be a no-op",
+        print("FAIL: no canonical article coverage_summary.json found — the gate would be a no-op",
               file=sys.stderr)
         return 1
     present = {f.parent.parent.name for f in files}

@@ -1,0 +1,19 @@
+{
+  "total": 50582,
+  "verified": 46400,
+  "verified_share": 0.9173,
+  "by_type": {
+    "declension": {
+      "total": 45045,
+      "verified": 40863
+    },
+    "samasa": {
+      "total": 5443,
+      "verified": 5443
+    },
+    "sandhi": {
+      "total": 94,
+      "verified": 94
+    }
+  }
+}

@@ -1,0 +1,595 @@
+{
+  "instrument": "apte_pada_preverb_stats.py -- H3113 (zan-29) preverb-conditioned voice extraction, extends apte_pada_stats.py",
+  "rules": [
+    {
+      "id": "APT-H-601",
+      "root": "kram",
+      "lemmas": [
+        "kram"
+      ],
+      "expected": "A",
+      "condition": "duration/intensity/increase implied",
+      "sense_only": true,
+      "per_lemma": {
+        "kram": {
+          "finite_pres": 228,
+          "P": 77,
+          "A": 80,
+          "unclassified": 71,
+          "P_pct": 49.0,
+          "A_pct": 51.0,
+          "n_classified": 157
+        }
+      },
+      "P": 77,
+      "A": 80,
+      "P_pct": 49.0,
+      "A_pct": 51.0,
+      "n_classified": 157,
+      "observed_pada": "both",
+      "verdict": "OVERSTATED",
+      "reason": "expected A-dominant; observed both (P49.0%/A51.0%, n=157)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-603",
+      "root": "sam+gam",
+      "lemmas": [
+        "saṃgam"
+      ],
+      "expected": "A",
+      "condition": "sense 'associate/join with'",
+      "sense_only": true,
+      "per_lemma": {
+        "saṃgam": {
+          "finite_pres": 50,
+          "P": 5,
+          "A": 22,
+          "unclassified": 23,
+          "P_pct": 18.5,
+          "A_pct": 81.5,
+          "n_classified": 27
+        }
+      },
+      "P": 5,
+      "A": 22,
+      "P_pct": 18.5,
+      "A_pct": 81.5,
+      "n_classified": 27,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=27)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-604",
+      "root": "ud+car",
+      "lemmas": [
+        "uccar"
+      ],
+      "expected": "A",
+      "condition": "transitive",
+      "sense_only": false,
+      "per_lemma": {
+        "uccar": {
+          "finite_pres": 33,
+          "P": 10,
+          "A": 1,
+          "unclassified": 22,
+          "P_pct": 90.9,
+          "A_pct": 9.1,
+          "n_classified": 11
+        }
+      },
+      "P": 10,
+      "A": 1,
+      "P_pct": 90.9,
+      "A_pct": 9.1,
+      "n_classified": 11,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=11)",
+      "transitivity_note": "transitivity check too thin to report (n=11 < 15)"
+    },
+    {
+      "id": "APT-H-605",
+      "root": "vi/parā+ji",
+      "lemmas": [
+        "viji",
+        "parāji"
+      ],
+      "expected": "A",
+      "condition": "sense 'conquer/rout'",
+      "sense_only": true,
+      "per_lemma": {
+        "viji": {
+          "finite_pres": 97,
+          "P": 13,
+          "A": 53,
+          "unclassified": 31,
+          "P_pct": 19.7,
+          "A_pct": 80.3,
+          "n_classified": 66
+        },
+        "parāji": {
+          "finite_pres": 28,
+          "P": 3,
+          "A": 13,
+          "unclassified": 12,
+          "P_pct": 18.8,
+          "A_pct": 81.2,
+          "n_classified": 16
+        }
+      },
+      "P": 16,
+      "A": 66,
+      "P_pct": 19.5,
+      "A_pct": 80.5,
+      "n_classified": 82,
+      "observed_pada": "A",
+      "verdict": "TRUE",
+      "reason": "expected A-dominant; observed A (P19.5%/A80.5%, n=82)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-606",
+      "root": "vi/ud+tap",
+      "lemmas": [
+        "vitap",
+        "uttap"
+      ],
+      "expected": "A",
+      "condition": "intransitive / body-part object",
+      "sense_only": false,
+      "per_lemma": {
+        "vitap": {
+          "finite_pres": 1,
+          "P": 1,
+          "A": 0,
+          "unclassified": 0,
+          "P_pct": 100.0,
+          "A_pct": 0.0,
+          "n_classified": 1
+        },
+        "uttap": {
+          "finite_pres": 1,
+          "P": 0,
+          "A": 0,
+          "unclassified": 1,
+          "P_pct": null,
+          "A_pct": null,
+          "n_classified": 0
+        }
+      },
+      "P": 1,
+      "A": 0,
+      "P_pct": 100.0,
+      "A_pct": 0.0,
+      "n_classified": 1,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=1)",
+      "transitivity_note": "transitivity check too thin to report (n=1 < 15)"
+    },
+    {
+      "id": "APT-H-607",
+      "root": "nī (bare/ud/upa/vi)",
+      "lemmas": [
+        "nī",
+        "unnī",
+        "upanī",
+        "vinī"
+      ],
+      "expected": "A",
+      "condition": "no prefix, or +ud/upa/vi",
+      "sense_only": false,
+      "per_lemma": {
+        "nī": {
+          "finite_pres": 975,
+          "P": 393,
+          "A": 22,
+          "unclassified": 560,
+          "P_pct": 94.7,
+          "A_pct": 5.3,
+          "n_classified": 415
+        },
+        "unnī": {
+          "finite_pres": 153,
+          "P": 108,
+          "A": 5,
+          "unclassified": 40,
+          "P_pct": 95.6,
+          "A_pct": 4.4,
+          "n_classified": 113
+        },
+        "upanī": {
+          "finite_pres": 90,
+          "P": 25,
+          "A": 13,
+          "unclassified": 52,
+          "P_pct": 65.8,
+          "A_pct": 34.2,
+          "n_classified": 38
+        },
+        "vinī": {
+          "finite_pres": 41,
+          "P": 15,
+          "A": 3,
+          "unclassified": 23,
+          "P_pct": 83.3,
+          "A_pct": 16.7,
+          "n_classified": 18
+        }
+      },
+      "P": 541,
+      "A": 43,
+      "P_pct": 92.6,
+      "A_pct": 7.4,
+      "n_classified": 584,
+      "observed_pada": "P",
+      "verdict": "OVERSTATED",
+      "reason": "expected A-dominant; observed P (P92.6%/A7.4%, n=584)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-608",
+      "root": "vi+nī",
+      "lemmas": [
+        "vinī"
+      ],
+      "expected": "P",
+      "condition": "sense 'teach/train/tame' (exception to APT-H-607's own vi+nī row)",
+      "sense_only": true,
+      "per_lemma": {
+        "vinī": {
+          "finite_pres": 41,
+          "P": 15,
+          "A": 3,
+          "unclassified": 23,
+          "P_pct": 83.3,
+          "A_pct": 16.7,
+          "n_classified": 18
+        }
+      },
+      "P": 15,
+      "A": 3,
+      "P_pct": 83.3,
+      "A_pct": 16.7,
+      "n_classified": 18,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=18)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-610",
+      "root": "upa+sthā",
+      "lemmas": [
+        "upasthā"
+      ],
+      "expected": "A",
+      "condition": "sense 'worship/wait upon a deity'",
+      "sense_only": true,
+      "per_lemma": {
+        "upasthā": {
+          "finite_pres": 801,
+          "P": 72,
+          "A": 558,
+          "unclassified": 171,
+          "P_pct": 11.4,
+          "A_pct": 88.6,
+          "n_classified": 630
+        }
+      },
+      "P": 72,
+      "A": 558,
+      "P_pct": 11.4,
+      "A_pct": 88.6,
+      "n_classified": 630,
+      "observed_pada": "A",
+      "verdict": "TRUE",
+      "reason": "expected A-dominant; observed A (P11.4%/A88.6%, n=630)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-611",
+      "root": "anu+hṛ",
+      "lemmas": [
+        "anuhṛ"
+      ],
+      "expected": "A",
+      "condition": "sense 'practice' (A) vs 'resemble' (P) -- two senses, one lemma",
+      "sense_only": true,
+      "per_lemma": {
+        "anuhṛ": {
+          "finite_pres": 6,
+          "P": 6,
+          "A": 0,
+          "unclassified": 0,
+          "P_pct": 100.0,
+          "A_pct": 0.0,
+          "n_classified": 6
+        }
+      },
+      "P": 6,
+      "A": 0,
+      "P_pct": 100.0,
+      "A_pct": 0.0,
+      "n_classified": 6,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=6)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-613",
+      "root": "sam+śru",
+      "lemmas": [
+        "saṃśru"
+      ],
+      "expected": "split",
+      "condition": "Parasmaipada if transitive, Ātmanepada if intransitive",
+      "sense_only": false,
+      "per_lemma": {
+        "saṃśru": {
+          "finite_pres": 5,
+          "P": 2,
+          "A": 2,
+          "unclassified": 1,
+          "P_pct": 50.0,
+          "A_pct": 50.0,
+          "n_classified": 4
+        }
+      },
+      "P": 2,
+      "A": 2,
+      "P_pct": 50.0,
+      "A_pct": 50.0,
+      "n_classified": 4,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=4)",
+      "transitivity_note": "transitivity check too thin to report (n=4 < 15)"
+    },
+    {
+      "id": "APT-H-614",
+      "root": "bhuj",
+      "lemmas": [
+        "bhuj"
+      ],
+      "expected": "A",
+      "condition": "except sense 'protect/rule' -> P",
+      "sense_only": true,
+      "per_lemma": {
+        "bhuj": {
+          "finite_pres": 889,
+          "P": 52,
+          "A": 421,
+          "unclassified": 416,
+          "P_pct": 11.0,
+          "A_pct": 89.0,
+          "n_classified": 473
+        }
+      },
+      "P": 52,
+      "A": 421,
+      "P_pct": 11.0,
+      "A_pct": 89.0,
+      "n_classified": 473,
+      "observed_pada": "A",
+      "verdict": "TRUE",
+      "reason": "expected A-dominant; observed A (P11.0%/A89.0%, n=473)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-615",
+      "root": "pra/upa+yuj",
+      "lemmas": [
+        "prayuj",
+        "upayuj"
+      ],
+      "expected": "A",
+      "condition": "except re sacrificial vessels",
+      "sense_only": true,
+      "per_lemma": {
+        "prayuj": {
+          "finite_pres": 300,
+          "P": 56,
+          "A": 79,
+          "unclassified": 165,
+          "P_pct": 41.5,
+          "A_pct": 58.5,
+          "n_classified": 135
+        },
+        "upayuj": {
+          "finite_pres": 107,
+          "P": 10,
+          "A": 16,
+          "unclassified": 81,
+          "P_pct": 38.5,
+          "A_pct": 61.5,
+          "n_classified": 26
+        }
+      },
+      "P": 66,
+      "A": 95,
+      "P_pct": 41.0,
+      "A_pct": 59.0,
+      "n_classified": 161,
+      "observed_pada": "both",
+      "verdict": "OVERSTATED",
+      "reason": "expected A-dominant; observed both (P41.0%/A59.0%, n=161)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-616",
+      "root": "jñā (desiderative)",
+      "lemmas": [
+        "jijñās"
+      ],
+      "expected": "A",
+      "condition": "desiderative stem only -- no sense condition",
+      "sense_only": false,
+      "per_lemma": {
+        "jijñās": {
+          "finite_pres": 9,
+          "P": 2,
+          "A": 6,
+          "unclassified": 1,
+          "P_pct": 25.0,
+          "A_pct": 75.0,
+          "n_classified": 8
+        }
+      },
+      "P": 2,
+      "A": 6,
+      "P_pct": 25.0,
+      "A_pct": 75.0,
+      "n_classified": 8,
+      "observed_pada": null,
+      "verdict": "UNTESTABLE-thin",
+      "reason": "<40 classified present forms (n=8)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-617",
+      "root": "causatives of budh/yudh/naś/jan/i+adhi/dru/sru",
+      "lemmas": [
+        "bodhay",
+        "yodhay",
+        "nāśay",
+        "janay",
+        "adhyāpay",
+        "drāvay",
+        "srāvay"
+      ],
+      "expected": "P",
+      "condition": "none -- pure lexical list, no sense condition",
+      "sense_only": false,
+      "per_lemma": {
+        "bodhay": {
+          "finite_pres": 88,
+          "P": 29,
+          "A": 3,
+          "unclassified": 56,
+          "P_pct": 90.6,
+          "A_pct": 9.4,
+          "n_classified": 32
+        },
+        "yodhay": {
+          "finite_pres": 43,
+          "P": 15,
+          "A": 0,
+          "unclassified": 28,
+          "P_pct": 100.0,
+          "A_pct": 0.0,
+          "n_classified": 15
+        },
+        "nāśay": {
+          "finite_pres": 337,
+          "P": 111,
+          "A": 9,
+          "unclassified": 217,
+          "P_pct": 92.5,
+          "A_pct": 7.5,
+          "n_classified": 120
+        },
+        "janay": {
+          "finite_pres": 660,
+          "P": 393,
+          "A": 29,
+          "unclassified": 238,
+          "P_pct": 93.1,
+          "A_pct": 6.9,
+          "n_classified": 422
+        },
+        "adhyāpay": {
+          "finite_pres": 55,
+          "P": 15,
+          "A": 4,
+          "unclassified": 36,
+          "P_pct": 78.9,
+          "A_pct": 21.1,
+          "n_classified": 19
+        },
+        "drāvay": {
+          "finite_pres": 86,
+          "P": 4,
+          "A": 6,
+          "unclassified": 76,
+          "P_pct": 40.0,
+          "A_pct": 60.0,
+          "n_classified": 10
+        },
+        "srāvay": {
+          "finite_pres": 42,
+          "P": 17,
+          "A": 1,
+          "unclassified": 24,
+          "P_pct": 94.4,
+          "A_pct": 5.6,
+          "n_classified": 18
+        }
+      },
+      "P": 584,
+      "A": 52,
+      "P_pct": 91.8,
+      "A_pct": 8.2,
+      "n_classified": 636,
+      "observed_pada": "P",
+      "verdict": "TRUE",
+      "reason": "expected P-dominant; observed P (P91.8%/A8.2%, n=636)",
+      "transitivity_note": null
+    },
+    {
+      "id": "APT-H-619",
+      "root": "pari/vi/ava+krī",
+      "lemmas": [
+        "parikrī",
+        "vikrī",
+        "avakrī"
+      ],
+      "expected": "A",
+      "condition": "sense 'buy' (inherent to krī)",
+      "sense_only": true,
+      "per_lemma": {
+        "parikrī": {
+          "finite_pres": 18,
+          "P": 13,
+          "A": 2,
+          "unclassified": 3,
+          "P_pct": 86.7,
+          "A_pct": 13.3,
+          "n_classified": 15
+        },
+        "vikrī": {
+          "finite_pres": 56,
+          "P": 6,
+          "A": 21,
+          "unclassified": 29,
+          "P_pct": 22.2,
+          "A_pct": 77.8,
+          "n_classified": 27
+        },
+        "avakrī": {
+          "finite_pres": 1,
+          "P": 0,
+          "A": 0,
+          "unclassified": 1,
+          "P_pct": null,
+          "A_pct": null,
+          "n_classified": 0
+        }
+      },
+      "P": 19,
+      "A": 23,
+      "P_pct": 45.2,
+      "A_pct": 54.8,
+      "n_classified": 42,
+      "observed_pada": "both",
+      "verdict": "OVERSTATED",
+      "reason": "expected A-dominant; observed both (P45.2%/A54.8%, n=42)",
+      "transitivity_note": null
+    }
+  ]
+}

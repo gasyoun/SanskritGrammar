@@ -1,0 +1,19 @@
+id: ex:grammar-lab:aorist-systems
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:aorist-systems
+risk_class: deterministic
+status: published
+prompt_ru: akārṣīt — это аорист с показателем…
+choices:
+- нулевым (корневой)
+- s (сигматический)
+- тематическим -a
+answer: s (сигматический)
+answer_normalized: s (сигматический)
+distractors:
+- нулевым (корневой)
+- тематическим -a
+approval_record: null
+source_ids:
+- whitney-sec:824-827
+- whitney-sec:878-897

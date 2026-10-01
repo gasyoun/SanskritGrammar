@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # Hostile referee review: A61
 
 **Date:** 2026-07-18
@@ -122,3 +124,5 @@ domain date.
 6. **PARTIAL:** current official venue dates/deadline are attached; unpublished
    format and policy rules cannot yet be claimed satisfied.
 7. **PENDING FINAL TEST RUN:** build, manuscript checks, and stale-claim scan.
+
+_Dr. Mārcis Gasūns_

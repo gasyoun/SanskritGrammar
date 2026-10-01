@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/gasyoun/SanskritGrammar/blob/main/data/grammar_lab/schemas/typed_link.schema.json",
+  "title": "Grammar Lab Type-D edge",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "anchor_type",
+    "anchor_id",
+    "anchor_key_slp1",
+    "target_locus",
+    "link_type",
+    "source_dataset",
+    "match_method",
+    "confidence",
+    "evidence_count",
+    "date"
+  ],
+  "properties": {
+    "anchor_type": {"type": "string"},
+    "anchor_id": {"type": "string"},
+    "anchor_key_slp1": {"type": "string"},
+    "target_locus": {"type": "string"},
+    "link_type": {"type": "string", "const": "thematic"},
+    "source_dataset": {"type": "string"},
+    "match_method": {"type": "string"},
+    "confidence": {"type": ["number", "string"]},
+    "evidence_count": {"type": ["integer", "string", "null"]},
+    "date": {"type": "string"}
+  }
+}

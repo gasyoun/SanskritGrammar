@@ -1,0 +1,17 @@
+id: ex:grammar-lab:root-designation
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-designation
+risk_class: deterministic
+status: published
+prompt_ru: Заголовок smṛ (не smar) выбран потому, что корень типа I ряда R. Это…
+choices:
+- условное обозначение
+- единственный реальный алломорф
+answer: условное обозначение
+answer_normalized: условное обозначение
+distractors:
+- единственный реальный алломорф
+approval_record: null
+source_ids:
+- whitney-sec:98-100
+- zalizniak-1975:root-designation

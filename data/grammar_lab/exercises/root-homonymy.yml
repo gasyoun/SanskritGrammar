@@ -1,0 +1,17 @@
+id: ex:grammar-lab:root-homonymy
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:root-homonymy
+risk_class: deterministic
+status: published
+prompt_ru: as «быть» и as «бросать» у Зализняка 1975 — это…
+choices:
+- один корень двух типов
+- два омонима разных типов
+answer: два омонима разных типов
+answer_normalized: два омонима разных типов
+distractors:
+- один корень двух типов
+approval_record: null
+source_ids:
+- whitney-sec:608
+- whitney-sec:636

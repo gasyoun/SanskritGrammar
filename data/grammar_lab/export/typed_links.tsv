@@ -1,0 +1,183 @@
+anchor_type	anchor_id	anchor_key_slp1	target_locus	link_type	source_dataset	match_method	confidence	evidence_count	date
+whitney-root	whitney-root:106	kf	subject:grammar-lab:ablaut-grades	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:235-243		subject:grammar-lab:ablaut-grades	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:table-1		subject:grammar-lab:ablaut-grades	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:three-grade-alternation		subject:grammar-lab:ablaut-grades	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:50		subject:grammar-lab:ablaut-grades	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:three-grade		subject:grammar-lab:ablaut-grades	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:427	nI	subject:grammar-lab:alternation-series	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:235-243		subject:grammar-lab:alternation-series	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:table-1		subject:grammar-lab:alternation-series	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:table-2		subject:grammar-lab:alternation-series	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:60		subject:grammar-lab:alternation-series	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:three-grade		subject:grammar-lab:alternation-series	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:aorist-systems	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:824-827		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:878-897		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:139		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:144		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:aorist-systems	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:815	Sru	subject:grammar-lab:attested-vs-predicted	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:98-100		subject:grammar-lab:attested-vs-predicted	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:inventory-scope		subject:grammar-lab:attested-vs-predicted	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:109		subject:grammar-lab:attested-vs-predicted	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:attested-vs-predicted	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:causative-grade	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:1041-1052		subject:grammar-lab:causative-grade	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:causative-grade	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:167		subject:grammar-lab:causative-grade	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:causative-grade	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:528	BU	subject:grammar-lab:future-sya	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:931-940		subject:grammar-lab:future-sya	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:future-sya	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:157		subject:grammar-lab:future-sya	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:set-anit		subject:grammar-lab:future-sya	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:infinitive-tum	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:968		subject:grammar-lab:infinitive-tum	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:infinitive-tum	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:164		subject:grammar-lab:infinitive-tum	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:set-anit		subject:grammar-lab:infinitive-tum	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:morphological-positions	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:931-940		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:952-956		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:968		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:157		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:162		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:164		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:morphological-positions	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:170	gam	subject:grammar-lab:nasal-alternation	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:683-696		subject:grammar-lab:nasal-alternation	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:952-956		subject:grammar-lab:nasal-alternation	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:series-mn		subject:grammar-lab:nasal-alternation	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:60		subject:grammar-lab:nasal-alternation	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:three-grade		subject:grammar-lab:nasal-alternation	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:815	Sru	subject:grammar-lab:open-vs-closed-roots	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:235-243		subject:grammar-lab:open-vs-closed-roots	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:series-a2		subject:grammar-lab:open-vs-closed-roots	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:61		subject:grammar-lab:open-vs-closed-roots	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:open-closed		subject:grammar-lab:open-vs-closed-roots	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:passive-ya	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:768-774		subject:grammar-lab:passive-ya	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:passive-ya	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:160		subject:grammar-lab:passive-ya	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:passive-ya	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:perfect-strong-weak	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:781-823		subject:grammar-lab:perfect-strong-weak	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:perfect-strong-weak	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:150		subject:grammar-lab:perfect-strong-weak	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:152		subject:grammar-lab:perfect-strong-weak	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:perfect-strong-weak	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:ppp-ta-na	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:952-956		subject:grammar-lab:ppp-ta-na	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:ppp-ta-na	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:162		subject:grammar-lab:ppp-ta-na	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:set-anit		subject:grammar-lab:ppp-ta-na	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:present-aya-class	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:1041-1052		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:775		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:quasi-roots		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:119		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:167		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-aya-class	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:120	krI	subject:grammar-lab:present-na-class	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:717-732		subject:grammar-lab:present-na-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-na-class	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:136		subject:grammar-lab:present-na-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-na-class	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:242	Cid	subject:grammar-lab:present-nasal-infix	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:683-696		subject:grammar-lab:present-nasal-infix	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-nasal-infix	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:134		subject:grammar-lab:present-nasal-infix	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-nasal-infix	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:815	Sru	subject:grammar-lab:present-nu-class	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:697-716		subject:grammar-lab:present-nu-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-nu-class	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:135		subject:grammar-lab:present-nu-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-nu-class	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:919	hu	subject:grammar-lab:present-reduplicating	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:642-682		subject:grammar-lab:present-reduplicating	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-reduplicating	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:113		subject:grammar-lab:present-reduplicating	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:130		subject:grammar-lab:present-reduplicating	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-reduplicating	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:22	as	subject:grammar-lab:present-root-class	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:611-641		subject:grammar-lab:present-root-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-root-class	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:127		subject:grammar-lab:present-root-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-root-class	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:528	BU	subject:grammar-lab:present-thematic-a	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:733-758		subject:grammar-lab:present-thematic-a	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-thematic-a	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:117		subject:grammar-lab:present-thematic-a	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-thematic-a	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:528	BU	subject:grammar-lab:present-thematic-vs-athematic	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:599-606		subject:grammar-lab:present-thematic-vs-athematic	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-thematic-vs-athematic	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:114		subject:grammar-lab:present-thematic-vs-athematic	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-thematic-vs-athematic	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:546	man	subject:grammar-lab:present-ya-class	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:759-767		subject:grammar-lab:present-ya-class	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:morphological-positions		subject:grammar-lab:present-ya-class	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:118		subject:grammar-lab:present-ya-class	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:verb-overview		subject:grammar-lab:present-ya-class	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:349	dA	subject:grammar-lab:quasi-roots	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:102		subject:grammar-lab:quasi-roots	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:66		subject:grammar-lab:quasi-roots	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:quasi-roots		subject:grammar-lab:quasi-roots	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:131		subject:grammar-lab:quasi-roots	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:quasi-roots	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:root-designation	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:98-100		subject:grammar-lab:root-designation	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:root-designation		subject:grammar-lab:root-designation	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:25		subject:grammar-lab:root-designation	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:root-designation	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:22	as	subject:grammar-lab:root-homonymy	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:608		subject:grammar-lab:root-homonymy	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:636		subject:grammar-lab:root-homonymy	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:homonymy		subject:grammar-lab:root-homonymy	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:127		subject:grammar-lab:root-homonymy	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:root-homonymy	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:106	kf	subject:grammar-lab:root-type-i	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:235-243		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:952-956		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:type-calculus		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:type-i		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:50		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:partial-alternators		subject:grammar-lab:root-type-i	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:269	jYA	subject:grammar-lab:root-type-ii	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:952-956		subject:grammar-lab:root-type-ii	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:type-ii		subject:grammar-lab:root-type-ii	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:61		subject:grammar-lab:root-type-ii	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:partial-alternators		subject:grammar-lab:root-type-ii	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:242	Cid	subject:grammar-lab:root-type-iii	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:968		subject:grammar-lab:root-type-iii	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:series-iur		subject:grammar-lab:root-type-iii	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:type-iii		subject:grammar-lab:root-type-iii	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:164		subject:grammar-lab:root-type-iii	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:partial-alternators		subject:grammar-lab:root-type-iii	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:528	BU	subject:grammar-lab:root-type-iv	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:235-243		subject:grammar-lab:root-type-iv	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:type-iv		subject:grammar-lab:root-type-iv	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:60		subject:grammar-lab:root-type-iv	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:partial-alternators		subject:grammar-lab:root-type-iv	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:874	sTA	subject:grammar-lab:root-variants	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:251		subject:grammar-lab:root-variants	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:root-variants		subject:grammar-lab:root-variants	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:111		subject:grammar-lab:root-variants	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:morphonology		subject:grammar-lab:root-variants	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:699	vac	subject:grammar-lab:samprasarana	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:252		subject:grammar-lab:samprasarana	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:samprasarana		subject:grammar-lab:samprasarana	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:50		subject:grammar-lab:samprasarana	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:52		subject:grammar-lab:samprasarana	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:three-grade		subject:grammar-lab:samprasarana	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026
+whitney-root	whitney-root:528	BU	subject:grammar-lab:set-anit-vet	thematic	WhitneyRoots/crosswalk/roots.csv	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:254		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:934-935		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:956		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+whitney-sec	whitney-sec:968		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/WhitneyGrammar_1889	curated	0.97		13-08-2026
+zalizniak-1975	zalizniak-1975:set-anit		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/ZalizniakMorphology_1975	curated	0.97		13-08-2026
+zalizniak-1978-sec	zalizniak-1978-sec:63		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/ZalizniakOcherk_1978	curated	0.97		13-08-2026
+zalizniak-2004	zalizniak-2004:set-anit		subject:grammar-lab:set-anit-vet	thematic	SanskritGrammar/ZalizniakKonspekt_2004	curated	0.97		13-08-2026

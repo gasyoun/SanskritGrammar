@@ -1,0 +1,757 @@
+{
+  "generated_by": "numbers_crosscheck.py --update-map (H2871)",
+  "note": "Пин: какие числа провенанс-джейсонов цитирует рукопись и где. Не редактировать вручную — перегенерировать.",
+  "anchors": [
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Atharvaveda (Śaunaka).C",
+      "value": 212812,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1374"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Atharvaveda (Śaunaka).V",
+      "value": 159779,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1374"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Mahābhārata.C",
+      "value": 3711486,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1380"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Mahābhārata.V",
+      "value": 2689255,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1380"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Meghadūta.C",
+      "value": 11510,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1376"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Meghadūta.V",
+      "value": 8296,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1376"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Rāmāyaṇa.C",
+      "value": 853340,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1378"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Rāmāyaṇa.V",
+      "value": 620385,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1378"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Rāmāyaṇa.words",
+      "value": 204959,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:4590"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Ṛgveda.C",
+      "value": 500725,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1382"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Ṛgveda.V",
+      "value": 384006,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1382"
+      ]
+    },
+    {
+      "key": "dcs_phonostats_provenance.json::per_text.Ṛgveda.words",
+      "value": 160783,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:4590"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::distinct_raw_forms",
+      "value": 1966,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:289",
+        "02_gasuns-dhatu-PhD-text2.mdx:317",
+        "02_gasuns-dhatu-PhD-text2.mdx:461",
+        "02_gasuns-dhatu-PhD-text2.mdx:750",
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:1318",
+        "02_gasuns-dhatu-PhD-text2.mdx:2082",
+        "02_gasuns-dhatu-PhD-text2.mdx:2348",
+        "02_gasuns-dhatu-PhD-text2.mdx:2891",
+        "02_gasuns-dhatu-PhD-text2.mdx:3189",
+        "02_gasuns-dhatu-PhD-text2.mdx:3283",
+        "02_gasuns-dhatu-PhD-text2.mdx:3495",
+        "02_gasuns-dhatu-PhD-text2.mdx:3547",
+        "02_gasuns-dhatu-PhD-text2.mdx:3697",
+        "02_gasuns-dhatu-PhD-text2.mdx:3755",
+        "02_gasuns-dhatu-PhD-text2.mdx:4115",
+        "02_gasuns-dhatu-PhD-text2.mdx:4293",
+        "02_gasuns-dhatu-PhD-text2.mdx:4331",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "Морфонологическая запись глагольных корней санскрита.mdx:42",
+        "Морфонологическая запись глагольных корней санскрита.mdx:126",
+        "Морфонологическая запись глагольных корней санскрита.mdx:146"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::entries_in_repeated_forms",
+      "value": 517,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:4035",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::forms_in_multiple_ganas",
+      "value": 183,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:87",
+        "02_gasuns-dhatu-PhD-text2.mdx:511",
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:4061",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::forms_repeated",
+      "value": 224,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:99",
+        "02_gasuns-dhatu-PhD-text2.mdx:101",
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:2070",
+        "02_gasuns-dhatu-PhD-text2.mdx:2412",
+        "02_gasuns-dhatu-PhD-text2.mdx:3807",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.01 bhvādi",
+      "value": 1166,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.02 adādi",
+      "value": 77,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1056",
+        "02_gasuns-dhatu-PhD-text2.mdx:3271",
+        "02_gasuns-dhatu-PhD-text2.mdx:4516",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.03 juhotyādi",
+      "value": 26,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:321",
+        "02_gasuns-dhatu-PhD-text2.mdx:407",
+        "02_gasuns-dhatu-PhD-text2.mdx:918",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:1284",
+        "02_gasuns-dhatu-PhD-text2.mdx:1308",
+        "02_gasuns-dhatu-PhD-text2.mdx:1450",
+        "02_gasuns-dhatu-PhD-text2.mdx:1640",
+        "02_gasuns-dhatu-PhD-text2.mdx:2316",
+        "02_gasuns-dhatu-PhD-text2.mdx:3112",
+        "02_gasuns-dhatu-PhD-text2.mdx:3138",
+        "02_gasuns-dhatu-PhD-text2.mdx:3309",
+        "02_gasuns-dhatu-PhD-text2.mdx:4400",
+        "02_gasuns-dhatu-PhD-text2.mdx:4638",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "04_glava4_kross-uok-omonimiya.mdx:50",
+        "04_glava4_kross-uok-omonimiya.mdx:76",
+        "04_glava4_kross-uok-omonimiya.mdx:104",
+        "06_glava6_korpusnaya-attestaciya.mdx:49",
+        "Распределение рядов согласных.mdx:84"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.04 divādi",
+      "value": 163,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:610",
+        "02_gasuns-dhatu-PhD-text2.mdx:1349",
+        "02_gasuns-dhatu-PhD-text2.mdx:1780",
+        "02_gasuns-dhatu-PhD-text2.mdx:3597",
+        "02_gasuns-dhatu-PhD-text2.mdx:4499",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.05 svādi",
+      "value": 38,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:441",
+        "02_gasuns-dhatu-PhD-text2.mdx:608",
+        "02_gasuns-dhatu-PhD-text2.mdx:952",
+        "02_gasuns-dhatu-PhD-text2.mdx:1244",
+        "02_gasuns-dhatu-PhD-text2.mdx:1316",
+        "02_gasuns-dhatu-PhD-text2.mdx:1474",
+        "02_gasuns-dhatu-PhD-text2.mdx:1768",
+        "02_gasuns-dhatu-PhD-text2.mdx:1802",
+        "02_gasuns-dhatu-PhD-text2.mdx:1900",
+        "02_gasuns-dhatu-PhD-text2.mdx:2554",
+        "02_gasuns-dhatu-PhD-text2.mdx:3100",
+        "02_gasuns-dhatu-PhD-text2.mdx:3439",
+        "02_gasuns-dhatu-PhD-text2.mdx:4227",
+        "02_gasuns-dhatu-PhD-text2.mdx:4427",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "04_glava4_kross-uok-omonimiya.mdx:63",
+        "04_glava4_kross-uok-omonimiya.mdx:66",
+        "04_glava4_kross-uok-omonimiya.mdx:110",
+        "04_glava4_kross-uok-omonimiya.mdx:112",
+        "06_glava6_korpusnaya-attestaciya.mdx:52",
+        "06_glava6_korpusnaya-attestaciya.mdx:96",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:42"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.06 tudādi",
+      "value": 174,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:836",
+        "02_gasuns-dhatu-PhD-text2.mdx:3771",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.07 rudhādi",
+      "value": 25,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:351",
+        "02_gasuns-dhatu-PhD-text2.mdx:387",
+        "02_gasuns-dhatu-PhD-text2.mdx:407",
+        "02_gasuns-dhatu-PhD-text2.mdx:630",
+        "02_gasuns-dhatu-PhD-text2.mdx:646",
+        "02_gasuns-dhatu-PhD-text2.mdx:724",
+        "02_gasuns-dhatu-PhD-text2.mdx:962",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:1214",
+        "02_gasuns-dhatu-PhD-text2.mdx:1392",
+        "02_gasuns-dhatu-PhD-text2.mdx:1448",
+        "02_gasuns-dhatu-PhD-text2.mdx:1640",
+        "02_gasuns-dhatu-PhD-text2.mdx:1778",
+        "02_gasuns-dhatu-PhD-text2.mdx:1862",
+        "02_gasuns-dhatu-PhD-text2.mdx:2046",
+        "02_gasuns-dhatu-PhD-text2.mdx:2340",
+        "02_gasuns-dhatu-PhD-text2.mdx:2402",
+        "02_gasuns-dhatu-PhD-text2.mdx:2554",
+        "02_gasuns-dhatu-PhD-text2.mdx:2899",
+        "02_gasuns-dhatu-PhD-text2.mdx:3231",
+        "02_gasuns-dhatu-PhD-text2.mdx:3307",
+        "02_gasuns-dhatu-PhD-text2.mdx:3849",
+        "02_gasuns-dhatu-PhD-text2.mdx:4397",
+        "02_gasuns-dhatu-PhD-text2.mdx:4584",
+        "02_gasuns-dhatu-PhD-text2.mdx:4586",
+        "02_gasuns-dhatu-PhD-text2.mdx:4614",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "04_glava4_kross-uok-omonimiya.mdx:62",
+        "04_glava4_kross-uok-omonimiya.mdx:110",
+        "Морфонологическая запись глагольных корней санскрита.mdx:50",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:42",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:212",
+        "Распределение рядов согласных.mdx:36",
+        "Распределение рядов согласных.mdx:84"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.08 tanādi",
+      "value": 10,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:18",
+        "02_gasuns-dhatu-PhD-text2.mdx:213",
+        "02_gasuns-dhatu-PhD-text2.mdx:215",
+        "02_gasuns-dhatu-PhD-text2.mdx:309",
+        "02_gasuns-dhatu-PhD-text2.mdx:387",
+        "02_gasuns-dhatu-PhD-text2.mdx:391",
+        "02_gasuns-dhatu-PhD-text2.mdx:447",
+        "02_gasuns-dhatu-PhD-text2.mdx:461",
+        "02_gasuns-dhatu-PhD-text2.mdx:527",
+        "02_gasuns-dhatu-PhD-text2.mdx:559",
+        "02_gasuns-dhatu-PhD-text2.mdx:772",
+        "02_gasuns-dhatu-PhD-text2.mdx:810",
+        "02_gasuns-dhatu-PhD-text2.mdx:948",
+        "02_gasuns-dhatu-PhD-text2.mdx:980",
+        "02_gasuns-dhatu-PhD-text2.mdx:1056",
+        "02_gasuns-dhatu-PhD-text2.mdx:1134",
+        "02_gasuns-dhatu-PhD-text2.mdx:1156",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:1248",
+        "02_gasuns-dhatu-PhD-text2.mdx:1390",
+        "02_gasuns-dhatu-PhD-text2.mdx:1418",
+        "02_gasuns-dhatu-PhD-text2.mdx:1594",
+        "02_gasuns-dhatu-PhD-text2.mdx:1808",
+        "02_gasuns-dhatu-PhD-text2.mdx:1814",
+        "02_gasuns-dhatu-PhD-text2.mdx:1844",
+        "02_gasuns-dhatu-PhD-text2.mdx:1908",
+        "02_gasuns-dhatu-PhD-text2.mdx:1920",
+        "02_gasuns-dhatu-PhD-text2.mdx:1922",
+        "02_gasuns-dhatu-PhD-text2.mdx:2176",
+        "02_gasuns-dhatu-PhD-text2.mdx:2228",
+        "02_gasuns-dhatu-PhD-text2.mdx:2230",
+        "02_gasuns-dhatu-PhD-text2.mdx:2232",
+        "02_gasuns-dhatu-PhD-text2.mdx:2274",
+        "02_gasuns-dhatu-PhD-text2.mdx:2282",
+        "02_gasuns-dhatu-PhD-text2.mdx:2286",
+        "02_gasuns-dhatu-PhD-text2.mdx:2336",
+        "02_gasuns-dhatu-PhD-text2.mdx:2550",
+        "02_gasuns-dhatu-PhD-text2.mdx:3067",
+        "02_gasuns-dhatu-PhD-text2.mdx:3307",
+        "02_gasuns-dhatu-PhD-text2.mdx:3329",
+        "02_gasuns-dhatu-PhD-text2.mdx:3339",
+        "02_gasuns-dhatu-PhD-text2.mdx:3371",
+        "02_gasuns-dhatu-PhD-text2.mdx:3379",
+        "02_gasuns-dhatu-PhD-text2.mdx:3421",
+        "02_gasuns-dhatu-PhD-text2.mdx:3425",
+        "02_gasuns-dhatu-PhD-text2.mdx:3467",
+        "02_gasuns-dhatu-PhD-text2.mdx:3481",
+        "02_gasuns-dhatu-PhD-text2.mdx:3487",
+        "02_gasuns-dhatu-PhD-text2.mdx:3551",
+        "02_gasuns-dhatu-PhD-text2.mdx:4227",
+        "02_gasuns-dhatu-PhD-text2.mdx:4361",
+        "02_gasuns-dhatu-PhD-text2.mdx:4471",
+        "02_gasuns-dhatu-PhD-text2.mdx:4582",
+        "02_gasuns-dhatu-PhD-text2.mdx:4620",
+        "02_gasuns-dhatu-PhD-text2.mdx:4630",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "02_gasuns-dhatu-PhD-text2.mdx:4681",
+        "05_glava5_dhatupatha-panini.mdx:48",
+        "05_glava5_dhatupatha-panini.mdx:53",
+        "05_glava5_dhatupatha-panini.mdx:91",
+        "05_glava5_dhatupatha-panini.mdx:95",
+        "05_glava5_dhatupatha-panini.mdx:97",
+        "Приложения издания 2026.mdx:60",
+        "Морфонологическая запись глагольных корней санскрита.mdx:10",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:10",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:38",
+        "Распределение рядов согласных.mdx:24",
+        "Распределение рядов согласных.mdx:120"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.09 kryādi",
+      "value": 71,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:910",
+        "02_gasuns-dhatu-PhD-text2.mdx:970",
+        "02_gasuns-dhatu-PhD-text2.mdx:1006",
+        "02_gasuns-dhatu-PhD-text2.mdx:3351",
+        "02_gasuns-dhatu-PhD-text2.mdx:4481",
+        "02_gasuns-dhatu-PhD-text2.mdx:4504",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::per_gana.10 curādi",
+      "value": 509,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:251",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:3713",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645"
+      ]
+    },
+    {
+      "key": "dhatupatha_gana_stats_provenance.json::total_entries",
+      "value": 2259,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:171",
+        "02_gasuns-dhatu-PhD-text2.mdx:948",
+        "02_gasuns-dhatu-PhD-text2.mdx:950",
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:1343",
+        "02_gasuns-dhatu-PhD-text2.mdx:3140",
+        "02_gasuns-dhatu-PhD-text2.mdx:3156",
+        "02_gasuns-dhatu-PhD-text2.mdx:4609",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "05_glava5_dhatupatha-panini.mdx:25",
+        "05_glava5_dhatupatha-panini.mdx:29",
+        "05_glava5_dhatupatha-panini.mdx:70",
+        "05_glava5_dhatupatha-panini.mdx:85"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::consensus_ge4_dicts",
+      "value": 345,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:3543",
+        "Приложения издания 2026.mdx:66"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::core_attested_and_ge4",
+      "value": 294,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:2721",
+        "02_gasuns-dhatu-PhD-text2.mdx:2723",
+        "02_gasuns-dhatu-PhD-text2.mdx:2725",
+        "02_gasuns-dhatu-PhD-text2.mdx:2727",
+        "02_gasuns-dhatu-PhD-text2.mdx:3015",
+        "02_gasuns-dhatu-PhD-text2.mdx:3537",
+        "04_glava4_kross-uok-omonimiya.mdx:34",
+        "Приложения издания 2026.mdx:66",
+        "Приложения издания 2026.mdx:81",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:172",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:174",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:176",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:178"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::dcs_attested",
+      "value": 482,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:4235",
+        "Приложения издания 2026.mdx:66"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::distinct_genuine_slp1",
+      "value": 704,
+      "loci": [
+        "Приложения издания 2026.mdx:66"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::genuine_roots",
+      "value": 750,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:171",
+        "02_gasuns-dhatu-PhD-text2.mdx:688",
+        "02_gasuns-dhatu-PhD-text2.mdx:1058",
+        "02_gasuns-dhatu-PhD-text2.mdx:1345",
+        "02_gasuns-dhatu-PhD-text2.mdx:1349",
+        "02_gasuns-dhatu-PhD-text2.mdx:1355",
+        "02_gasuns-dhatu-PhD-text2.mdx:3142",
+        "02_gasuns-dhatu-PhD-text2.mdx:4606",
+        "02_gasuns-dhatu-PhD-text2.mdx:4609",
+        "02_gasuns-dhatu-PhD-text2.mdx:4610",
+        "Приложения издания 2026.mdx:20",
+        "Приложения издания 2026.mdx:49",
+        "Приложения издания 2026.mdx:51",
+        "Приложения издания 2026.mdx:64",
+        "Приложения издания 2026.mdx:74",
+        "Приложения издания 2026.mdx:81"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.AV",
+      "value": 325,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:3911",
+        "02_gasuns-dhatu-PhD-text2.mdx:4287",
+        "Приложения издания 2026.mdx:68",
+        "О записи омонимии корней в словарях древнеиндийского языка.mdx:206"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.B",
+      "value": 424,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:746",
+        "02_gasuns-dhatu-PhD-text2.mdx:1066",
+        "02_gasuns-dhatu-PhD-text2.mdx:4197",
+        "02_gasuns-dhatu-PhD-text2.mdx:4600",
+        "07_glava7_ukazatel-zaliznyaka.mdx:35",
+        "07_glava7_ukazatel-zaliznyaka.mdx:96",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.C",
+      "value": 437,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:3683",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.E",
+      "value": 424,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:746",
+        "02_gasuns-dhatu-PhD-text2.mdx:1066",
+        "02_gasuns-dhatu-PhD-text2.mdx:4197",
+        "02_gasuns-dhatu-PhD-text2.mdx:4600",
+        "07_glava7_ukazatel-zaliznyaka.mdx:35",
+        "07_glava7_ukazatel-zaliznyaka.mdx:96",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.RV",
+      "value": 361,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:4163",
+        "02_gasuns-dhatu-PhD-text2.mdx:4475",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.S",
+      "value": 336,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1730",
+        "02_gasuns-dhatu-PhD-text2.mdx:4153",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::period_distribution.V",
+      "value": 409,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:644",
+        "02_gasuns-dhatu-PhD-text2.mdx:4189",
+        "Приложения издания 2026.mdx:68"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::tail_unattested_le1",
+      "value": 101,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:429",
+        "02_gasuns-dhatu-PhD-text2.mdx:2773",
+        "02_gasuns-dhatu-PhD-text2.mdx:3485",
+        "02_gasuns-dhatu-PhD-text2.mdx:4564",
+        "04_glava4_kross-uok-omonimiya.mdx:35",
+        "07_glava7_ukazatel-zaliznyaka.mdx:30",
+        "07_glava7_ukazatel-zaliznyaka.mdx:94",
+        "Приложения издания 2026.mdx:66",
+        "Приложения издания 2026.mdx:81"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.0.dcs_freq",
+      "value": 40799,
+      "loci": [
+        "Приложения издания 2026.mdx:28",
+        "Приложения издания 2026.mdx:55",
+        "Приложения издания 2026.mdx:66"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.1.dcs_freq",
+      "value": 40799,
+      "loci": [
+        "Приложения издания 2026.mdx:28",
+        "Приложения издания 2026.mdx:55",
+        "Приложения издания 2026.mdx:66"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.10.dcs_freq",
+      "value": 11314,
+      "loci": [
+        "Приложения издания 2026.mdx:36"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.11.dcs_freq",
+      "value": 11314,
+      "loci": [
+        "Приложения издания 2026.mdx:36"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.2.dcs_freq",
+      "value": 40393,
+      "loci": [
+        "Приложения издания 2026.mdx:29",
+        "Приложения издания 2026.mdx:56"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.3.dcs_freq",
+      "value": 35753,
+      "loci": [
+        "Приложения издания 2026.mdx:30",
+        "Приложения издания 2026.mdx:31"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.4.dcs_freq",
+      "value": 35753,
+      "loci": [
+        "Приложения издания 2026.mdx:30",
+        "Приложения издания 2026.mdx:31"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.5.dcs_freq",
+      "value": 33948,
+      "loci": [
+        "Приложения издания 2026.mdx:32"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.6.dcs_freq",
+      "value": 18341,
+      "loci": [
+        "Приложения издания 2026.mdx:33",
+        "Приложения издания 2026.mdx:57"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.7.dcs_freq",
+      "value": 14866,
+      "loci": [
+        "Приложения издания 2026.mdx:34"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.8.dcs_freq",
+      "value": 12008,
+      "loci": [
+        "Приложения издания 2026.mdx:35"
+      ]
+    },
+    {
+      "key": "mw_genuine_roots_enrich_provenance.json::top20_by_dcs_freq.9.dcs_freq",
+      "value": 12008,
+      "loci": [
+        "Приложения издания 2026.mdx:35"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.any.2",
+      "value": 375,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:798",
+        "02_gasuns-dhatu-PhD-text2.mdx:1552",
+        "02_gasuns-dhatu-PhD-text2.mdx:4173",
+        "02_gasuns-dhatu-PhD-text2.mdx:4584",
+        "Приложения издания 2026.mdx:34"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.any.3",
+      "value": 384,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1554",
+        "02_gasuns-dhatu-PhD-text2.mdx:3657",
+        "02_gasuns-dhatu-PhD-text2.mdx:4584",
+        "02_gasuns-dhatu-PhD-text2.mdx:4659",
+        "02_gasuns-dhatu-PhD-text2.mdx:4671"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.any.4+",
+      "value": 52,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:952",
+        "02_gasuns-dhatu-PhD-text2.mdx:1332",
+        "02_gasuns-dhatu-PhD-text2.mdx:1506",
+        "02_gasuns-dhatu-PhD-text2.mdx:1746",
+        "02_gasuns-dhatu-PhD-text2.mdx:3025",
+        "02_gasuns-dhatu-PhD-text2.mdx:3455",
+        "02_gasuns-dhatu-PhD-text2.mdx:4455",
+        "07_glava7_ukazatel-zaliznyaka.mdx:95"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.final.2",
+      "value": 132,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:662",
+        "02_gasuns-dhatu-PhD-text2.mdx:1560",
+        "02_gasuns-dhatu-PhD-text2.mdx:2078",
+        "02_gasuns-dhatu-PhD-text2.mdx:3731",
+        "02_gasuns-dhatu-PhD-text2.mdx:4425",
+        "02_gasuns-dhatu-PhD-text2.mdx:4588"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.final.3",
+      "value": 30,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:319",
+        "02_gasuns-dhatu-PhD-text2.mdx:393",
+        "02_gasuns-dhatu-PhD-text2.mdx:423",
+        "02_gasuns-dhatu-PhD-text2.mdx:461",
+        "02_gasuns-dhatu-PhD-text2.mdx:958",
+        "02_gasuns-dhatu-PhD-text2.mdx:1202",
+        "02_gasuns-dhatu-PhD-text2.mdx:1458",
+        "02_gasuns-dhatu-PhD-text2.mdx:1562",
+        "02_gasuns-dhatu-PhD-text2.mdx:1760",
+        "02_gasuns-dhatu-PhD-text2.mdx:3311",
+        "02_gasuns-dhatu-PhD-text2.mdx:4408",
+        "02_gasuns-dhatu-PhD-text2.mdx:4522",
+        "02_gasuns-dhatu-PhD-text2.mdx:4588"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.initial.2",
+      "value": 108,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:726",
+        "02_gasuns-dhatu-PhD-text2.mdx:896",
+        "02_gasuns-dhatu-PhD-text2.mdx:1556",
+        "02_gasuns-dhatu-PhD-text2.mdx:3035",
+        "02_gasuns-dhatu-PhD-text2.mdx:3393",
+        "02_gasuns-dhatu-PhD-text2.mdx:4445",
+        "02_gasuns-dhatu-PhD-text2.mdx:4578",
+        "02_gasuns-dhatu-PhD-text2.mdx:4588"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::counts_types.initial.3",
+      "value": 21,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:41",
+        "02_gasuns-dhatu-PhD-text2.mdx:373",
+        "02_gasuns-dhatu-PhD-text2.mdx:698",
+        "02_gasuns-dhatu-PhD-text2.mdx:1146",
+        "02_gasuns-dhatu-PhD-text2.mdx:1148",
+        "02_gasuns-dhatu-PhD-text2.mdx:1158",
+        "02_gasuns-dhatu-PhD-text2.mdx:1440",
+        "02_gasuns-dhatu-PhD-text2.mdx:1558",
+        "02_gasuns-dhatu-PhD-text2.mdx:1826",
+        "02_gasuns-dhatu-PhD-text2.mdx:1846",
+        "02_gasuns-dhatu-PhD-text2.mdx:1928",
+        "02_gasuns-dhatu-PhD-text2.mdx:3301",
+        "02_gasuns-dhatu-PhD-text2.mdx:4207",
+        "02_gasuns-dhatu-PhD-text2.mdx:4383",
+        "02_gasuns-dhatu-PhD-text2.mdx:4562",
+        "02_gasuns-dhatu-PhD-text2.mdx:4588",
+        "02_gasuns-dhatu-PhD-text2.mdx:4645",
+        "02_gasuns-dhatu-PhD-text2.mdx:4647"
+      ]
+    },
+    {
+      "key": "wordlist_clusters_provenance.json::headwords",
+      "value": 323425,
+      "loci": [
+        "02_gasuns-dhatu-PhD-text2.mdx:1550",
+        "02_gasuns-dhatu-PhD-text2.mdx:3158",
+        "02_gasuns-dhatu-PhD-text2.mdx:4584"
+      ]
+    }
+  ]
+}

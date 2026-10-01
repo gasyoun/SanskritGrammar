@@ -1,0 +1,19 @@
+id: ex:grammar-lab:nasal-alternation
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:nasal-alternation
+risk_class: deterministic
+status: published
+prompt_ru: PPP от gam — это…
+choices:
+- gamitaḥ
+- gataḥ
+- gāntaḥ
+answer: gataḥ
+answer_normalized: gataḥ
+distractors:
+- gamitaḥ
+- gāntaḥ
+approval_record: null
+source_ids:
+- whitney-sec:952-956
+- whitney-sec:683-696

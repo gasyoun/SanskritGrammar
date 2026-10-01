@@ -1,6 +1,6 @@
 # Verification — SanskritGrammar Grammar Lab
 
-_Created: 09-08-2026 · Last updated: 09-08-2026_
+_Created: 09-08-2026 · Last updated: 14-08-2026_
 
 Acceptance and risk register for the
 [Grammar Lab plan](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_GRAMMAR_LAB_2026H2.md).
@@ -41,6 +41,19 @@ npm run build
 Expected Systema proof commands are added by G2–G4 to this document and must include focused
 PHP tests plus the repository's required quality gates. The semantic benchmark command must
 accept a frozen query file and emit machine-readable per-query ranks and aggregate Recall@5.
+
+G4 (Systema, H2495, 14-08-2026):
+
+```powershell
+php artisan test --filter=GrammarLab
+php artisan grammar-lab:rehearse-entitlement --json
+php artisan grammar-lab:pilot-eligibility --json
+php artisan grammar-lab:pilot-report
+```
+
+A15–A17: sandbox matrix is the rehearse command + `GrammarLabEntitlementLifecycleTest`;
+pilot readout is “not human-authorized” until a roster is named;
+production switches remain OFF (`GRAMMAR_LAB`, `GRAMMAR_LAB_PILOT`).
 
 Manual staging flow:
 

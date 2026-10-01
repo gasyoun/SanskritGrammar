@@ -1,0 +1,19 @@
+id: ex:grammar-lab:causative-grade
+schema_version: 1.0.0
+topic_id: subject:grammar-lab:causative-grade
+risk_class: deterministic
+status: published
+prompt_ru: kārayati имеет в корне ступень…
+choices:
+- нулевую
+- guṇa
+- vṛddhi
+answer: vṛddhi
+answer_normalized: vṛddhi
+distractors:
+- нулевую
+- guṇa
+approval_record: null
+source_ids:
+- whitney-sec:1041-1052
+- zalizniak-1975:morphological-positions
