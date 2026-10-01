@@ -92,11 +92,17 @@ jobs:
           HEAD: ${{ steps.window.outputs.head }}
         run: python scripts/oxalpha_gate_match.py --base "$BASE" --head "$HEAD" --repo . --out match.json --gha >> "$GITHUB_OUTPUT"
 
+      # setup-uv honors [tool.uv] required-version from pyproject.toml; a bare
+      # `pip install uv` does not, and once uv crosses the pinned family
+      # (>=0.11,<0.12) `uv sync --frozen` refuses and the gate fails closed.
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: true
+
       - name: Repository gates (locked env + test suite)
         id: gates
         if: steps.window.outputs.base != '' && (steps.match.outputs.executable == 'true' || github.event_name != 'pull_request')
         run: |
-          pip install uv
           uv sync --frozen
           python scripts/oxalpha_gate_gates.py --repo . --out gates.json \
             --gate "pytest|uv run python -m pytest|hard|2400"
