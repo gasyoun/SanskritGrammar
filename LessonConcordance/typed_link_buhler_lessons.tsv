@@ -1,0 +1,13 @@
+anchor_type	anchor_id	anchor_key_slp1	target_locus	link_type	source_dataset	match_method	confidence	evidence_count	date
+buhler-topic	buhler-topic:I.present-class-i		whitney-sec:733-750	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.97	2	01-10-2026
+buhler-topic	buhler-topic:I.present-class-i		zalizniak-1978-sec:114-121	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.present-class-i		kochergina-lesson:XV	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.present-class-i		knauer-fraza:Nr.1	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.85	1	01-10-2026
+buhler-topic	buhler-topic:I.present-class-i		knauer-fraza:Nr.2	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.75		01-10-2026
+buhler-topic	buhler-topic:I.present-class-i		sangram-article:conjugation-overview	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.visarga-sandhi		whitney-sec:170-178	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.97	1	01-10-2026
+buhler-topic	buhler-topic:I.visarga-sandhi		kochergina-lesson:VI	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.9	1	01-10-2026
+buhler-topic	buhler-topic:I.visarga-sandhi		zalizniak-1978-sec:31	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.75		01-10-2026
+buhler-topic	buhler-topic:I.visarga-sandhi		knauer-fraza:Nr.1	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.7		01-10-2026
+buhler-topic	buhler-topic:I.verb-roots		dhatu:glava7-ukazatel-zaliznyaka	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.8		01-10-2026
+buhler-topic	buhler-topic:I.verb-roots		talmud:morphoclass-crosswalk-1975-2014-2026	thematic	SanskritGrammar/LessonConcordance/typed_link_buhler_lessons.tsv	curated	0.8		01-10-2026

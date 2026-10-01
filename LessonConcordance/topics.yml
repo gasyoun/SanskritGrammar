@@ -1,0 +1,66 @@
+# topics.yml — controlled topic vocabulary + per-topic curation notes for LessonConcordance
+#
+# Hand-curated sidecar consumed by scripts/build_lesson_concordance.py (do not edit
+# catalog.mdx by hand — re-run the generator). Topic keys are versioned: adding a key
+# is allowed, renaming/moving requires a bump of `version` and a changelog_queue row.
+# Exception verdicts encode the per-topic answer to MG's hypothesis (01-10-2026):
+# «списки исключений — у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»
+# Each verdict cites loci; the hypothesis is tested per lesson-topic as lessons land.
+
+version: 1
+hypothesis: "MG 01-10-2026: Bühler carries long exception lists; Zaliznyak-1978 does not; Whitney always does"
+lessons:
+  I:
+    title: "Present indicativus I класса (тематические a-основы); висарга-saṃdhi"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 112–252 (заголовок «# УРОК I.»)"
+    claims: [HB-1, HB-2, HB-3, HB-4, HB-5, HB-66]
+    reuse_clusters: []   # Concordance/catalog.mdx: no shared-sentence clusters at lesson I
+    corpus_layer: []     # corpus_layer.tsv: lesson I has no rows (first rows start at XVIII)
+    topics:
+      - key: present-class-i
+        title: "Present indicativus parasmaipada, I класс — тематическая гласная a/ā"
+        buhler_locus: "урок I, §1 и таблица vad-ā-mi / vad-ā-vaḥ(s) / vad-a-si… (mdx 127–151)"
+        topic_claims: [HB-3, HB-5, HB-66]
+        exceptions:
+          verdict: "PARTIAL-REFUTED (на этом локусе)"
+          buhler: "B− — правило дано чисто, без списка исключений; перечень исключений приходит у Бюлера в более поздних уроках, не в I"
+          whitney: "W+ — §§733–750: условие guṇa-усиления §734 (корень на a не усиливается: vad); систематические оговорки по отдельным корням по всему диапазону"
+          zalizniak-1978: "Z+ — §121: «В небольшом числе случаев тематическая основа презенса образована… в два этапа», «Изредка встречаются тематические основы, произведённые от других атематических классов»; §120 перегруппировывает традиционные 10 классов («деление не вполне последовательно») — З-1978 исключения не только ЕСТЬ, они у него собраны отдельным §"
+          kochergina: "K+ — Занятие XV: «Есть несколько глаголов I класса, образующих основу настоящего времени особым образом»: gam/yam → cch (gáccha-, yáccha-), pā/sthā удвоением (píba-, tíṣṭha-)"
+        notes: "Кочергина (3215) вводит I класс глаголами «встречавшимися ранее» — систематическое изложение именно в Занятии XV, упражнялись раньше"
+      - key: visarga-sandhi
+        title: "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и шипящими)"
+        buhler_locus: "урок I, §2 (mdx 153): «всегда превращаются в висаргу… обыкновенно также перед k, kh, p, ph и перед шипящими»"
+        topic_claims: [HB-4]
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — правило с оговоркой «обыкновенно», список исключений не приводится"
+          whitney: "W+ — §170: s→visarga в паузе (a), сохранение перед t/th (b), ассимиляция перед c/ch, ṭ/ṭh (c); §170d: перед k/kh/p/ph теоретически jihvāmūlīya/upadhmānīya, на практике visarga; §171: «to the last one there are numerous exceptions» (удержание сибилянта в композитах: namaskāra, vācaspati; ведийское удержание); §172 перед шипящими; §178: r следует правилам s"
+          zalizniak-1978: "Z± — §31 определяет двухэтапную архитектуру сандхи (внутренние/внешние), но висарга-частности в Очерке не расписаны"
+          kochergina: "K+ — Занятие VI: правило (1259: -s, -r → ḥ в конце предложения) + перед k/kh/p/ph/ś/ṣ/s (1265) + случаи удержания а)–г): punaḥ punaḥ, sutaś ca, vṛkṣaṣ ṭīkate, antas-tāpa (1266–1271)"
+        notes: "Три свидетеля дают исключения/уточнения, Бюлер ограничивается правилом с «обыкновенно» — студенческая ценность конкорданса: показать, где список полон"
+      - key: verb-roots
+        title: "Лемма-слой: 13 глаголов I класса урока (морфонологическая запись)"
+        buhler_locus: "урок I, список «Глаголы I класса» (mdx 155–181)"
+        topic_claims: []
+        lemmas:
+          - {root: pat,  gloss: "падать, лететь",   z1975: "A1 (conf medium → A₁)", z1978: "A₁", crosswalk: "yes"}
+          - {root: dah,  gloss: "гореть, жечь",     z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+          - {root: yaj,  gloss: "приносить жертву", z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+          - {root: śaṃs, gloss: "прославлять",      z1975: "?",  z1978: "?",  crosswalk: "NO — строки в crosswalk_1975_2014_2026.csv нет"}
+          - {root: vas,  gloss: "жить, обитать",    z1975: "A1", z1978: "A₁", crosswalk: "yes (омонимы: vas «сиять/одевать» отдельными строками)"}
+          - {root: rakṣ, gloss: "защищать",         z1975: "?",  z1978: "?",  crosswalk: "NO"}
+          - {root: jīv,  gloss: "жить",             z1975: "?",  z1978: "?",  crosswalk: "NO"}
+          - {root: car,  gloss: "ходить, пастись",  z1975: "R0/R2 (две строки)", z1978: "R₂ (z-series)", crosswalk: "yes, открытый вопрос классификации"}
+          - {root: nam,  gloss: "кланяться (D.)",   z1975: "M1 (conf medium → M₁)", z1978: "M₁", crosswalk: "yes"}
+          - {root: pac,  gloss: "варить, готовить", z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+          - {root: dhāv, gloss: "бежать",           z1975: "U0", z1978: "U₀", crosswalk: "yes"}
+          - {root: tyaj, gloss: "покидать",         z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+          - {root: vah,  gloss: "нести, течь, дуть", z1975: "A1 + U1 (две строки)", z1978: "A₁/U₁", crosswalk: "yes, омонимия"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: список корней дан без морфонологической записи (запись гуна-ступенью, как у всей школьной линии)"
+          whitney: "W: корни без классов в тексте урока; классификация — в root-аппарате WhitneyRoots"
+          zalizniak-1978: "Z: класс-система перегруппирована (§120), запись через ряды A1/R/M/U"
+          kochergina: "K: класс даётся при глаголе, морфонологической записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk 1975↔2014 покрывает 10/13 корней урока; śaṃs/rakṣ/jīv в нём отсутствуют — известный пробел реестра, не ошибка урока"
