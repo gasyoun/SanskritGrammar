@@ -49,6 +49,12 @@ dependencies = [
 [project.optional-dependencies]
 dev = []
 
+[tool.uv]
+# Pin the uv family: CI setup-uv falls back to LATEST otherwise, and a newer uv's
+# `uv run` re-resolves uv.lock, tripping the nightly ledger guard
+# ("refresh touched files outside the ledger", 26-09..30-09 runs).
+required-version = ">=0.11,<0.12"
+
 [tool.uv.workspace]
 members = ["packages/sg_tooling"]
 
