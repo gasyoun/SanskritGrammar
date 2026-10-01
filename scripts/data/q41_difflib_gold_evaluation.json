@@ -1,0 +1,99 @@
+{
+  "gold_set": "scripts/data/matches_review.tsv",
+  "n_pairs": 128,
+  "operating_threshold": 0.82,
+  "verdict_counts": {
+    "spelling_variant": 58,
+    "length_mismatch": 20,
+    "low_similarity": 50
+  },
+  "score_stats_by_verdict": {
+    "low_similarity": {
+      "n": 50,
+      "min": 0.833,
+      "median": 0.833,
+      "mean": 0.8337,
+      "max": 0.857
+    },
+    "length_mismatch": {
+      "n": 20,
+      "min": 0.833,
+      "median": 0.923,
+      "mean": 0.8956,
+      "max": 0.947
+    },
+    "spelling_variant": {
+      "n": 58,
+      "min": 0.851,
+      "median": 0.921,
+      "mean": 0.9123,
+      "max": 0.99
+    }
+  },
+  "precision_at_operating_threshold": {
+    "cutoff": 0.82,
+    "n_retained": 128,
+    "tp_spelling_variant": 58,
+    "boundary_length_mismatch": 20,
+    "fp_low_similarity": 50,
+    "precision_strict": 0.4531,
+    "precision_lenient": 0.6094
+  },
+  "precision_sweep": [
+    {
+      "cutoff": 0.82,
+      "n_retained": 128,
+      "tp_spelling_variant": 58,
+      "boundary_length_mismatch": 20,
+      "fp_low_similarity": 50,
+      "precision_strict": 0.4531,
+      "precision_lenient": 0.6094
+    },
+    {
+      "cutoff": 0.85,
+      "n_retained": 75,
+      "tp_spelling_variant": 58,
+      "boundary_length_mismatch": 16,
+      "fp_low_similarity": 1,
+      "precision_strict": 0.7733,
+      "precision_lenient": 0.9867
+    },
+    {
+      "cutoff": 0.9,
+      "n_retained": 44,
+      "tp_spelling_variant": 33,
+      "boundary_length_mismatch": 11,
+      "fp_low_similarity": 0,
+      "precision_strict": 0.75,
+      "precision_lenient": 1.0
+    },
+    {
+      "cutoff": 0.95,
+      "n_retained": 15,
+      "tp_spelling_variant": 15,
+      "boundary_length_mismatch": 0,
+      "fp_low_similarity": 0,
+      "precision_strict": 1.0,
+      "precision_lenient": 1.0
+    },
+    {
+      "cutoff": 0.98,
+      "n_retained": 3,
+      "tp_spelling_variant": 3,
+      "boundary_length_mismatch": 0,
+      "fp_low_similarity": 0,
+      "precision_strict": 1.0,
+      "precision_lenient": 1.0
+    },
+    {
+      "cutoff": 0.99,
+      "n_retained": 1,
+      "tp_spelling_variant": 1,
+      "boundary_length_mismatch": 0,
+      "fp_low_similarity": 0,
+      "precision_strict": 1.0,
+      "precision_lenient": 1.0
+    }
+  ],
+  "scope_limitation": "This gold set is 128 pairs difflib already surfaced at score >= 0.82. It scores difflib's PRECISION at that operating point (of what it flagged, how much is genuine reuse) and how score separates the verdict classes. It cannot measure RECALL (reused sentences difflib never surfaced at all) — that needs an independent detector, which is the Q4.2 TRACER/Passim swap this evaluation gates."
+}

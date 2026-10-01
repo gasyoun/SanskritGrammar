@@ -33,15 +33,18 @@ from pathlib import Path
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
-CONTRACT_VERSION = "1.1.0"
+CONTRACT_VERSION = "1.1.1"
 DENYLIST_VERSION = "2026-07-11"
 
 # ---------------------------------------------------------------------------
 # Sanitisation: repos that never enter the public bundle.
-# private  = GitHub-private repos (visibility checked 11-07-2026);
+# private  = GitHub-private repos (visibility checked 11-07-2026;
+#            pwg-ru-data re-verified PRIVATE 28-08-2026 via gh, Q3
+#            edges-audit follow-up — Uprava-side repo_graph_check DENYLIST
+#            fixed in the same pass, keep-in-sync contract);
 # local    = local-only working dirs with no public remote;
 # unresolved = names in source registries with no resolvable public repo.
-PRIVATE_REPOS = {"Uprava", "github-spine", "RuWritingStyles-corpus", "telegram-sanskrit-corpus"}
+PRIVATE_REPOS = {"Uprava", "github-spine", "RuWritingStyles-corpus", "telegram-sanskrit-corpus", "pwg-ru-data"}
 LOCAL_ONLY_REPOS = {"Sundara-commentaries", "prefaces_ieg", "samskrutam-crossword"}
 UNRESOLVED_REPOS = {"YAT"}
 DROP_REPOS = PRIVATE_REPOS | LOCAL_ONLY_REPOS | UNRESOLVED_REPOS
@@ -50,8 +53,10 @@ DROP_REPOS = PRIVATE_REPOS | LOCAL_ONLY_REPOS | UNRESOLVED_REPOS
 LEAKAGE_PATTERNS = [
     "github.com/gasyoun/Uprava",
     "github.com/gasyoun/github-spine",
+    "github.com/gasyoun/pwg-ru-data",
     "RuWritingStyles-corpus",
     "telegram-sanskrit-corpus",
+    "pwg-ru-data",
     "C:/Users",
     "C:\\Users",
     "GTD_NEXT_ACTIONS",
@@ -71,6 +76,8 @@ SANSKRIT_LEXICON = {
     "csl-apidev", "csl-app", "csl-atlas", "csl-corrections", "csl-devanagari",
     "csl-doc", "csl-guides", "csl-inflect", "csl-newsletter", "csl-observatory",
     "csl-orig", "csl-pywork", "csl-santam", "csl-standards", "csl-websanlexicon",
+    "csl-pyutil", "csl-ldev", "csl-lnum", "csl-westergaard", "csl-whitroot",
+    "mw-dev", "PD",
     "sanskrit-lexicon.github.io", "sanskrit-util",
 }
 ORG_OVERRIDES = {
@@ -84,6 +91,9 @@ GASYOUN = {
     "SanskritLexicography", "SanskritRussian", "SOCKS5-VPS",
     "Systema-Sanscriticum", "VisualDCS", "WhitneyRoots", "ZettelkastenWiki",
     "kosha",
+    "claude-config", "codex-config", "dcs-conllu", "rvlinks", "pwg-ru-data",
+    "ruwritingstyles-obsidian", "IndologyArchiveAtlas", "SamasaChakram",
+    "gasyoun.github.io", "message-intent-classifier",
 }
 
 
@@ -105,6 +115,15 @@ def slug(name):
 
 def internal_evidence(label_ru):
     return {"label_ru": label_ru, "visibility": "internal"}
+
+
+def sanitize_evidence(text):
+    """Strip private-hub URL stems from TSV evidence before it reaches the
+    public bundle (LEAKAGE_PATTERNS scans the serialized output)."""
+    for pat, sub in (("https://github.com/gasyoun/Uprava", "Uprava (приватный hub)"),
+                     ("https://github.com/gasyoun/github-spine", "github-spine")):
+        text = text.replace(pat, sub)
+    return text
 
 
 def public_evidence(label_ru, url):
@@ -291,6 +310,13 @@ EXTERNAL_STACKS = [
      "https://sanskrit-lexicon-scans.github.io/", None,
      "pwg-scan-index-campaign — 37 PWG/PWK page-scan link-target репозиториев (~11.2 GB) отдают сканы через app1/app2 на <dir>.",
      "Не дублировать сканы в других репозиториях; ссылаться на GH Pages хост."),
+    ("ext:yui", "Yahoo! UI Library 2.6.0 (vendored)", "https://github.com/yui/yui2", "BSD",
+     "Статические disp-ассеты, вендоренные в csl-westergaard/csl-whitroot (S1 coownership, H3373).",
+     "Архивный апстрим; не обновлять вручную."),
+    ("ext:agricidaniel-claude-seo", "claude-seo plugin (AgriciDaniel)",
+     "https://github.com/AgriciDaniel/claude-seo", None,
+     "Апстрим Claude-плагина; skills/agents вендорены в claude-config (H3373).",
+     "Не редактировать вендоренные копии."),
 ]
 
 # tsv `ext:` name → node id above.
@@ -302,9 +328,402 @@ EXT_NAME_MAP = {
     "vidyut": "ext:vidyut",
     "Samsaadhanii": "ext:samsaadhanii",
     "Nagari": "ext:nagari",
+    "yui": "ext:yui",
+    "AgriciDaniel-claude-seo": "ext:agricidaniel-claude-seo",
     "samskrtam.ru": "ext:samskrtam-ru",
     "sanskrit-lexicon-scans": "ext:sanskrit-lexicon-scans",
 }
+
+# ---------------------------------------------------------------------------
+# FEATURES_INDEX (SanskritLexicography) sections I–IV → public asset families.
+# Contract 1.1.1. Explicit exact-id join table; a row either joins here or is
+# written to features_unmatched.json with a reason — never silently dropped,
+# and no family is invented to force the join rate up (plan R4.2/R4.5).
+#
+# Wave 2 (H3683, 29-08-2026) drained the 68 "wave-2 drain" placeholder rows:
+# 28 gained a real family join below, 40 carry an explicit per-row reason in
+# FEATURE_ROW_NOTES. A live I–IV row may no longer ship with the placeholder
+# — join_features hard-fails on an unclassified row (plan R4.2 join bar).
+
+# Exact-id join table: FEATURES_INDEX row id -> public asset family node.
+FEATURE_ID_JOINS = {
+    "A1": "asset:sa-ru-alignment",
+    "A3": "asset:sa-ru-alignment",
+    "A2": "asset:sa-ru-alignment",
+    "A4": "asset:sa-ru-alignment",
+    "B5": "asset:mw-roots",
+    "B9": "asset:mw-roots",
+    "B10": "asset:mw-roots",
+    "B11": "asset:mw-roots",
+    "C13": "asset:union-headwords",
+    "C16": "asset:union-headwords",
+    "C17": "asset:union-headwords",
+    "C18": "asset:union-headwords",
+    "E40": "asset:union-headwords",
+    "C14": "asset:mw-heritage-crosswalk",
+    "D19": "asset:mw-heritage-crosswalk",
+    "D20": "asset:mw-heritage-crosswalk",
+    "D21": "asset:mw-heritage-crosswalk",
+    "D22": "asset:mw-heritage-crosswalk",
+    "D23": "asset:mw-heritage-crosswalk",
+    "D24": "asset:mw-heritage-crosswalk",
+    "C15": "asset:dcs-cdsl-crosswalk",
+    "B12": "asset:dcs-corpus",
+    "E25": "asset:dcs-corpus",
+    "E26": "asset:dcs-corpus",
+    "E27": "asset:dcs-corpus",
+    "E28": "asset:dcs-corpus",
+    "E29": "asset:dcs-corpus",
+    "E30": "asset:dcs-corpus",
+    "L6": "asset:dcs-corpus",
+    "L1": "asset:transliteration",
+    "L10": "asset:transliteration",
+    "L2": "asset:correction-pipeline",
+    "E32": "asset:correction-pipeline",
+    "E41": "asset:correction-pipeline",
+    "L3": "asset:php-endpoints",
+    "G1": "asset:php-endpoints",
+    "L4": "asset:entry-render",
+    "L7": "asset:translation-kit",
+    "L11": "asset:translation-kit",
+    "E48": "asset:concordance-core",
+    "L8": "asset:site-generator",
+    "L9": "asset:ci-fanout",
+}
+
+FEATURE_ID_RE = re.compile(r"^[A-FGLMlg][0-9]+$")
+
+
+def load_features(path):
+    rows = json.loads(Path(path).read_text(encoding="utf-8"))
+    return [
+        {
+            "id": str(r.get("id", "")),
+            "section": str(r.get("section", "")),
+            "title": str(r.get("title", ""))[:160],
+        }
+        for r in rows
+    ]
+
+
+def join_features(features):
+    """Split FEATURES_INDEX I-IV rows into (per-family ids, unmatched list).
+
+    Every row lands in exactly one of the two places (plan R4.2); an
+    ambiguous join stays unmatched and logged (W1-B default, plan R5.1).
+    Since the wave-2 drain (H3683) a live row may not fall through to the
+    old "wave-2 drain" placeholder: an unclassified id hard-fails the build
+    so the unmatched list stays fully accounted for.
+    """
+    joined = {}
+    unmatched = []
+    for row in features:
+        fid = row["id"]
+        target = FEATURE_ID_JOINS.get(fid)
+        if target:
+            bucket = joined.setdefault(target, [])
+            if fid not in bucket:
+                bucket.append(fid)
+            continue
+        note = feature_row_note(fid, row["title"])
+        if note:
+            unmatched.append({**row, "reason": note})
+            continue
+        if not FEATURE_ID_RE.match(fid):
+            shape = "ext-stack" if fid.startswith("M") else "dict-code"
+            unmatched.append({**row, "reason": UNMATCHED_NOTE_BY_SHAPE[shape]})
+            continue
+        raise SystemExit(
+            f"uncategorised FEATURES_INDEX I-IV row: {fid} — "
+            f"{row['title']!r}: add FEATURE_ID_JOINS entry or a "
+            "FEATURE_ROW_NOTES reason (plan R4.2 join bar)"
+        )
+    return joined, unmatched
+
+
+def feature_row_note(fid, title):
+    """Wave-2 per-row unmatched note: exact id, or 'ID|title-prefix'."""
+    note = FEATURE_ROW_NOTES.get(fid)
+    if note is not None:
+        return note
+    for key, val in FEATURE_ROW_NOTES.items():
+        if "|" not in key:
+            continue
+        kid, prefix = key.split("|", 1)
+        if kid == fid and title.startswith(prefix):
+            return val
+    return None
+
+
+def escape_mermaid(text):
+    return text.replace('"', "'").replace("[", "(").replace("]", ")")
+
+
+def build_dependencies_mermaid(nodes, edges):
+    """Clustered flowchart of the dependency graph grouped by programme_ru.
+
+    Returns (mermaid_text, is_full_graph). Above MERMAID_MAX_NODES
+    participating nodes: cluster-of-clusters fallback (logged default,
+    verification risk 5).
+    """
+    dep_kinds = {"feeds", "consumes", "vendors", "produces", "cites", "advises"}
+    part_ids = set()
+    dep_edges = []
+    for e in edges:
+        if e["kind"] in dep_kinds and e["source"] != e["target"]:
+            dep_edges.append(e)
+            part_ids.add(e["source"])
+            part_ids.add(e["target"])
+    by_id = {n["id"]: n for n in nodes}
+    label_of, programme_of = {}, {}
+    for nid in part_ids:
+        n = by_id[nid]
+        label = n.get("name") or n.get("label_ru") or nid
+        if n["kind"] == "external-stack":
+            label = f"ext:{label}"
+        elif n["kind"] == "surface":
+            label = f"*{label}"
+        label_of[nid] = escape_mermaid(label)
+        programme_of[nid] = escape_mermaid(n.get("programme_ru") or "Вне групп census")
+
+    lines = ["flowchart LR"]
+    lines.append("  accTitle: Кластеризованный граф зависимостей репозиториев")
+    if len(part_ids) > MERMAID_MAX_NODES:
+        agg = {}
+        cid_of = {}
+        for c in sorted(set(programme_of.values())):
+            cid_of[c] = f"c{len(cid_of)}"
+        for e in dep_edges:
+            pair = (programme_of[e["source"]], programme_of[e["target"]])
+            if pair[0] == pair[1]:
+                continue
+            agg[pair] = agg.get(pair, 0) + 1
+        for c, cid in sorted(cid_of.items()):
+            lines.append(f'  subgraph "{c}"')
+            lines.append(f'    {cid}["{c}"]')
+            lines.append("  end")
+        for (cs, ct), cnt in sorted(agg.items()):
+            lines.append(f'  {cid_of[cs]} -- "{cnt}" --> {cid_of[ct]}')
+        return "\n".join(lines), False
+
+    by_prog = {}
+    for nid in sorted(part_ids, key=lambda x: label_of[x]):
+        by_prog.setdefault(programme_of[nid], []).append(nid)
+    for prog, members in sorted(by_prog.items()):
+        lines.append(f'  subgraph "{prog}"')
+        for nid in members:
+            short = nid.split(":", 1)[1]
+            lines.append(f'    {short}["{label_of[nid]}"]')
+        lines.append("  end")
+    for e in sorted(dep_edges, key=lambda x: x["id"]):
+        s = e["source"].split(":", 1)[1]
+        t = e["target"].split(":", 1)[1]
+        arrow = '-.->' if e["kind"] == "cites" else "-->"
+        lines.append(f'  {s} -- "{e["kind"]}" {arrow} {t}')
+    return "\n".join(lines), True
+
+
+MERMAID_OPEN = (
+    "{/* [generated-block: atlas-dependencies-mermaid — do not hand-edit; "
+    "regenerated by scripts/atlas_build_bundle.py] */}"
+)
+MERMAID_CLOSE = "{/* [/generated-block] */}"
+
+DEPENDENCIES_MDX = (
+    Path(__file__).resolve().parent.parent / "sangram" / "atlas" / "dependencies.mdx"
+)
+
+
+def upsert_dependencies_mdx(mdx_path, mermaid_text, mode_note_ru):
+    block = "\n".join([
+        MERMAID_OPEN,
+        "```mermaid",
+        mermaid_text,
+        "```",
+        MERMAID_CLOSE,
+    ])
+    text = mdx_path.read_text(encoding="utf-8")
+    start = text.find(MERMAID_OPEN)
+    if start >= 0:
+        end = text.find(MERMAID_CLOSE, start)
+        if end < 0:
+            raise SystemExit("dependencies.mdx: open marker without close marker")
+        end += len(MERMAID_CLOSE)
+        text = text[:start] + block + text[end:]
+    else:
+        section = f"\n## Граф зависимостей\n\n{mode_note_ru}\n\n{block}\n"
+        anchor = "<AtlasDependencies"
+        idx = text.find(anchor)
+        if idx < 0:
+            raise SystemExit("dependencies.mdx: <AtlasDependencies> anchor not found")
+        text = text[:idx] + section + "\n" + text[idx:]
+    mdx_path.write_text(text, encoding="utf-8", newline="\n")
+
+
+UNMATCHED_NOTE_BY_SHAPE = {
+    "dict-code": (
+        "Roster keyed by dictionary code (MW, AP90, …), outside the "
+        "feature_ids id pattern; the source texts themselves are "
+        "csl-orig (asset:cdsl-source-texts)."
+    ),
+    "ext-stack": "External stack — consumed via ext:* nodes, not owned as an asset.",
+}
+
+# Wave-2 drain (H3683, 29-08-2026): per-row "stays unmatched" reasons for the
+# FEATURES_INDEX I–IV rows that have no honest home among the 18 public asset
+# families (plan R4.2/R4.5 — no family invented to force the rate up). Keys
+# are exact row ids, or "ID|title-prefix" where an id is double-defined
+# upstream (E43: sandhi programme vs code-duplication census).
+FEATURE_ROW_NOTES = {
+    # I. Data assets
+    "A5": (
+        "RV translation-evidence spine column (Jamison–Brereton EN); the only "
+        "bilingual family is Sa→Ru (asset:sa-ru-alignment), no "
+        "translation-column family exists."
+    ),
+    "A6": (
+        "Renou EVP witness file beside the RV translation spine; no "
+        "witness/translation-column family exists."
+    ),
+    "B6": (
+        "Pāṇinian headword→root derivation tables over 10 dicts; no etymology "
+        "family — asset:mw-roots owns the Whitney root inventory only."
+    ),
+    "B7": "Cross-dict etymology aggregates; no etymology family among the 18.",
+    "B8": "csl-atlas verbatim aggregator over etymology_stats; no etymology family.",
+    "C19": (
+        "SIL semdom ↔ Amarakosha semantic-domain map; the named crosswalk "
+        "families are DCS↔CDSL and MW↔Heritage only — no semdom family."
+    ),
+    "E31": (
+        "Zaliznyak-style grammar-token index over PWG headwords; no "
+        "grammar-index family."
+    ),
+    "E38": (
+        "Citation-frequency census over <ls> markup; analysis product — no "
+        "family owns derived markup studies."
+    ),
+    "E39": (
+        "Read-only markup-tag census over csl-orig/v02; analysis product, "
+        "feeds no pipeline family."
+    ),
+    "E42": (
+        "DCS proper-name compound splits with frequency vectors; analysis "
+        "product over the corpus, not the ingest grain."
+    ),
+    "E43|kosha corpus sandhi": (
+        "Programme-level corpus-sandhi rule sets; no sandhi/morphology family "
+        "among the 18."
+    ),
+    "E43|code-duplication census": (
+        "Org-wide repo-hygiene census; analysis product, not the ci-fanout "
+        "deploy machinery itself. The id is double-defined upstream (kept and "
+        "logged in wave 1), so an id-level join would misfile the sandhi row."
+    ),
+    "E44": (
+        "UD-upos distribution per DCS text; corpus statistics study — "
+        "asset:dcs-corpus owns the ingest grain, not derived studies."
+    ),
+    "E45": (
+        "Senses-per-entry distribution per dict; dictionary-microstructure "
+        "statistics, no owning family."
+    ),
+    "E46": (
+        "Attested finite paradigm cells per root over DCS; corpus statistics "
+        "study, not the ingest grain."
+    ),
+    "E47": (
+        "Witness-independence map over the 15-dict union; audit product, not "
+        "the union itself."
+    ),
+    "E49": (
+        "Definition typology over all 44 dicts; dictionary-microstructure "
+        "statistics, no owning family."
+    ),
+    "E50": (
+        "Rāmāyaṇa three-edition alignment programme; no edition-alignment "
+        "family."
+    ),
+    "E51": (
+        "Case×number grid per declension class over DCS tokens; corpus "
+        "statistics study, not the ingest grain."
+    ),
+    "E52": (
+        "Attested declension cells per lemma; corpus statistics study, not "
+        "the ingest grain."
+    ),
+    "F33": (
+        "Standalone public-domain subhāṣita JSONL; no standalone-corpus "
+        "family."
+    ),
+    "F34": (
+        "19th-c.→modern spelling-reform maps for SanskritSpellCheck; "
+        "asset:correction-pipeline fixes dictionary text, not spell-check "
+        "data."
+    ),
+    "F35": (
+        "Deliberately non-standard headword suppressions; ambiguous against "
+        "asset:correction-pipeline (which corrects text, not filing) — left "
+        "unmatched per plan R5.1."
+    ),
+    "F36": (
+        "Derived Tamil SQLite of csl-santam; families own source texts and "
+        "named products, not per-dict derived databases."
+    ),
+    "F37": (
+        "OCR'd title pages/prefaces/abbreviations as Markdown; no front-matter "
+        "family."
+    ),
+    "F43": (
+        "Character n-gram membership oracle for the spell-check method; no "
+        "spell-check family."
+    ),
+    "F44": (
+        "Standalone mailing-list archive repo; no family owns external-list "
+        "corpora."
+    ),
+    "F45": (
+        "Standalone maxim collection (Jacob, PD); no standalone-corpus family."
+    ),
+    "F46": (
+        "Standalone VK wall archive repo; no family owns external-list "
+        "corpora."
+    ),
+    "F47": (
+        "Registry of the PWG scan-index campaign; the scans live under "
+        "ext:sanskrit-lexicon-scans, the registry has no owning family."
+    ),
+    "F48": (
+        "Frozen definition-generation benchmark + WSD pilot; no "
+        "evaluation-benchmark family."
+    ),
+    "F49": (
+        "Static mirror of an external linguistics encyclopedia; no family "
+        "owns external references."
+    ),
+    # III. Interfaces
+    "G2": (
+        "C-SALT/Kosh REST+GraphQL serving layer; families own data artifacts "
+        "and the PHP face (asset:php-endpoints), not API services."
+    ),
+    "G3": (
+        "kosha web product surface; its data artifacts are family-covered "
+        "(data-hub releases, dcs-corpus frequency), the product itself is not."
+    ),
+    # IV. Tools
+    "L5": (
+        "Translation-lane <ls> citation→scan resolver (RussianTranslation/src); "
+        "asset:entry-render renders csl-orig entries — no owning family for "
+        "the translation lane."
+    ),
+    # IV. External stacks, explicit (title-verified wave-2 pass)
+    "M10": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M11": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M12": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M13": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+    "M14": UNMATCHED_NOTE_BY_SHAPE["ext-stack"],
+}
+MERMAID_MAX_NODES = 45  # above this, emit the cluster-of-clusters fallback
 
 VERDICT_MAP = {"усилить": "amplify", "поддерживать": "sustain"}
 IMPORTANCE_MAP = {"\U0001f534": "key", "\U0001f7e0": "mid", "\U0001f7e1": "aux"}
@@ -333,7 +752,7 @@ def build_views(as_of):
             "title_ru": "Переиспользование готовых активов",
             "question_ru": "У кого уже есть нужный актив, кто его потребляет и что запрещено пересоздавать?",
             "node_kinds": ["repo", "asset", "external-stack", "surface"],
-            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites"],
+            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites", "advises"],
             "seed": seed("Карта переиспользования MEGABOOK §12 (внутренний Uprava)", "§12", "A3"),
             "route": {"slug": "/sangram/atlas/reuse", "owner_slot": "B3"},
         },
@@ -351,7 +770,7 @@ def build_views(as_of):
             "title_ru": "Зависимости репозиториев",
             "question_ru": "Какие репозитории питают, потребляют, вендорят и цитируют друг друга?",
             "node_kinds": ["repo", "external-stack", "surface"],
-            "edge_kinds": ["feeds", "consumes", "vendors", "produces", "cites"],
+            "edge_kinds": ["feeds", "consumes", "vendors", "produces", "cites", "advises"],
             "seed": seed("Типизированный список ребер interlinks_edges.tsv (внутренний Uprava)", None, "A1"),
             "route": {"slug": "/sangram/atlas/dependencies", "owner_slot": "B5"},
         },
@@ -363,6 +782,15 @@ def build_views(as_of):
             "edge_kinds": ["replenishes", "generates", "attests", "crosslinks", "fills"],
             "seed": seed("Онтология источников §1.4 и карта происхождения §8 (внутренний Uprava)", "§8", "A1"),
             "route": {"slug": "/sangram/atlas/provenance", "owner_slot": "B6"},
+        },
+        {
+            "id": "features",
+            "title_ru": "Каталог возможностей",
+            "question_ru": "Какие переиспользуемые активы уже есть у организации и какие строки каталога возможностей их наполняют — а что пока не присоединено?",
+            "node_kinds": ["asset"],
+            "edge_kinds": ["owns", "feeds", "consumes", "vendors", "produces", "cites", "advises"],
+            "seed": seed("FEATURES_INDEX I–IV (публичный SanskritLexicography), join контракта 1.1.1", None, "B7"),
+            "route": {"slug": "/sangram/atlas/features", "owner_slot": "B6"},
         },
     ]
 
@@ -502,6 +930,10 @@ def git_short_sha(repo_dir, rel_path):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--uprava", default="../Uprava")
+    ap.add_argument("--features", default=None,
+                    help="features_index.json from the SanskritLexicography "
+                    "sibling clone (W1-A sidecar); defaults to "
+                    "../SanskritLexicography/features_index.json")
     ap.add_argument("--out", default="sangram/atlas/data/atlas.bundle.json")
     ap.add_argument("--generated-by", default="manual run")
     ap.add_argument("--date", default=datetime.date.today().isoformat())
@@ -510,6 +942,10 @@ def main():
     uprava = Path(args.uprava)
     megabook = uprava / "MEGABOOK.md"
     tsv = uprava / "interlinks_edges.tsv"
+    features_path = (
+        Path(args.features) if args.features
+        else uprava.parent / "SanskritLexicography" / "features_index.json"
+    )
     lines = megabook.read_text(encoding="utf-8").splitlines()
     as_of = args.date
 
@@ -616,35 +1052,102 @@ def main():
 
     # Assessed: repo dependency edges from interlinks_edges.tsv.
     seen_dep = {}
+    def cell_names(cell):
+        """TSV endpoint cell -> individual names: comma lists expand;
+        'Wil-YAT' is the Wilson/Yates pair (mirrors Uprava repo_graph_check)."""
+        out = []
+        for part in cell.split(","):
+            part = part.strip()
+            if not part:
+                continue
+            if part == "Wil-YAT":
+                out.extend(["Wil", "YAT"])
+            else:
+                out.append(part)
+        return out
+
     for row in parse_tsv(tsv):
         def resolve(name):
             if name == "*":
                 return "surface:org-wide"
             if name.startswith("ext:"):
-                ext_id = EXT_NAME_MAP.get(name[4:])
-                if ext_id is None:
-                    raise SystemExit(f"unmapped external stack: {name}")
+                ext_id = EXT_NAME_MAP.get(name[4:], f"ext:{slug(name[4:])}")
                 return ext_id
             return ensure_repo(name)
 
-        sid, tid = resolve(row["source"]), resolve(row["target"])
-        if sid is None or tid is None:
-            dropped_edges += 1
-            continue
-        base = f"e:dep-{slug(sid.split(':', 1)[1])}-{row['kind']}-{slug(tid.split(':', 1)[1])}"
-        n = seen_dep.get(base, 0)
-        seen_dep[base] = n + 1
-        eid = base if n == 0 else f"{base}-{n + 1}"
-        edges.append({"id": eid, "source": sid, "target": tid, "kind": row["kind"],
-                      "asset_ru": row["asset"], "status": row["status"],
-                      "temperature": "assessed", "as_of": as_of,
-                      "evidence": internal_evidence(f"interlinks_edges.tsv: {row['evidence']} (внутренний Uprava)")})
+        seen_pairs = set()
+        for src in cell_names(row["source"]):
+            sid = resolve(src)
+            if sid is None:
+                dropped_edges += 1
+                continue
+            for tgt in cell_names(row["target"]):
+                if (src, tgt) in seen_pairs:
+                    continue
+                seen_pairs.add((src, tgt))
+                tid = resolve(tgt)
+                if tid is None:
+                    dropped_edges += 1
+                    continue
+                base = f"e:dep-{slug(sid.split(':', 1)[1])}-{row['kind']}-{slug(tid.split(':', 1)[1])}"
+                n = seen_dep.get(base, 0)
+                seen_dep[base] = n + 1
+                eid = base if n == 0 else f"{base}-{n + 1}"
+                edges.append({"id": eid, "source": sid, "target": tid, "kind": row["kind"],
+                              "asset_ru": row["asset"], "status": row["status"],
+                              "temperature": "assessed", "as_of": as_of,
+                              "evidence": internal_evidence(sanitize_evidence(f"interlinks_edges.tsv: {row['evidence']} (внутренний Uprava)"))})
 
     # Structural: census programme group (§9.x subsection) per repo node.
     for name, prog in programme_by_repo.items():
         nid = f"repo:{slug(name)}"
         if nid in nodes:
             nodes[nid]["programme_ru"] = prog
+
+    # Contract 1.1.1: FEATURES_INDEX I–IV join onto asset families.
+    if not features_path.exists():
+        raise SystemExit(
+            f"features sidecar not found: {features_path} — pass --features "
+            "(W1-A: python build_features_index_html.py --emit-json …)"
+        )
+    features = load_features(features_path)
+    joined, unmatched = join_features(features)
+    unknown_family = sorted(set(joined) - set(nodes))
+    if unknown_family:
+        raise SystemExit(f"FEATURE_ID_JOINS target missing from bundle: {unknown_family}")
+    for family, fids in joined.items():
+        nodes[family]["feature_ids"] = sorted(fids)
+
+    unmatched_doc = {
+        "contract_version": CONTRACT_VERSION,
+        "generated": as_of,
+        "note_ru": ("Строки FEATURES_INDEX (I–IV), не присоединённые к "
+                    "публичным семействам активов; каждая несёт причину. "
+                    "Присоединённые строки — поле feature_ids узлов asset."),
+        "unmatched": unmatched,
+    }
+    unmatched_serialized = json.dumps(unmatched_doc, ensure_ascii=False, indent=2)
+    for pattern in LEAKAGE_PATTERNS:
+        if pattern in unmatched_serialized:
+            raise SystemExit(f"LEAKAGE: banned pattern in features_unmatched: {pattern!r}")
+    unmatched_out = Path(args.out).parent / "features_unmatched.json"
+    unmatched_out.write_text(unmatched_serialized + "\n", encoding="utf-8")
+
+    # Contract 1.1.1: clustered mermaid on the Dependencies page.
+    mermaid, is_full = build_dependencies_mermaid(nodes.values(), edges)
+    mode_note_ru = (
+        "Полный граф зависимостей, кластеризованный по программным группам "
+        f"census; пунктирная стрелка — ребро вида cites. Сгенерирован из "
+        f"bundle контракта {CONTRACT_VERSION}, срез на {as_of}."
+        if is_full
+        else (
+            "Обзорный граф программных групп census: узлов слишком много для "
+            "полного графа, внутри группы читайте карточки выше. Число у ребра — "
+            f"количество типизированных связей. Контракт {CONTRACT_VERSION}, "
+            f"срез на {as_of}."
+        )
+    )
+    upsert_dependencies_mdx(DEPENDENCIES_MDX, mermaid, mode_note_ru)
 
     bundle = {
         "$schema": "./atlas.schema.json",
@@ -662,6 +1165,8 @@ def main():
                 {"name": "interlinks_edges.tsv (Uprava, приватный hub)",
                  "commit": git_short_sha(uprava, "interlinks_edges.tsv"),
                  "visibility": "internal"},
+                {"name": "features_index.json (SanskritLexicography, публичный каталог)",
+                 "visibility": "public"},
             ],
             "sanitisation": {
                 "denylist_version": DENYLIST_VERSION,
@@ -685,8 +1190,11 @@ def main():
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(serialized + "\n", encoding="utf-8")
+    n_families = sum(1 for n in nodes.values() if n.get("feature_ids"))
     print(f"wrote {out}: {len(bundle['nodes'])} nodes, {len(bundle['edges'])} edges, "
           f"{len(bundle['views'])} views; dropped {len(dropped_nodes)} nodes / {dropped_edges} edges")
+    print(f"features 1.1.1: {sum(len(v) for v in joined.values())} ids joined onto "
+          f"{n_families} families; {len(unmatched)} unmatched -> {unmatched_out}")
 
 
 if __name__ == "__main__":

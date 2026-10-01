@@ -1,0 +1,637 @@
+{
+  "contract_version": "1.1.1",
+  "generated": "2026-08-29",
+  "note_ru": "Строки FEATURES_INDEX (I–IV), не присоединённые к публичным семействам активов; каждая несёт причину. Присоединённые строки — поле feature_ids узлов asset.",
+  "unmatched": [
+    {
+      "id": "A5",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "jamison_brereton_en_2014.json",
+      "reason": "RV translation-evidence spine column (Jamison–Brereton EN); the only bilingual family is Sa→Ru (asset:sa-ru-alignment), no translation-column family exists."
+    },
+    {
+      "id": "A6",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "rv_renou_evp_witness.jsonl",
+      "reason": "Renou EVP witness file beside the RV translation spine; no witness/translation-column family exists."
+    },
+    {
+      "id": "B6",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "mw_etymology.tsv / pwg_etymology.tsv",
+      "reason": "Pāṇinian headword→root derivation tables over 10 dicts; no etymology family — asset:mw-roots owns the Whitney root inventory only."
+    },
+    {
+      "id": "B7",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "etymology_stats",
+      "reason": "Cross-dict etymology aggregates; no etymology family among the 18."
+    },
+    {
+      "id": "B8",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "etymology-oracle.json",
+      "reason": "csl-atlas verbatim aggregator over etymology_stats; no etymology family."
+    },
+    {
+      "id": "C19",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "semdom ↔ Amarakosha crosswalk",
+      "reason": "SIL semdom ↔ Amarakosha semantic-domain map; the named crosswalk families are DCS↔CDSL and MW↔Heritage only — no semdom family."
+    },
+    {
+      "id": "E31",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Zaliznyak grammar index",
+      "reason": "Zaliznyak-style grammar-token index over PWG headwords; no grammar-index family."
+    },
+    {
+      "id": "E38",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "<ls> citation-frequency graph",
+      "reason": "Citation-frequency census over <ls> markup; analysis product — no family owns derived markup studies."
+    },
+    {
+      "id": "E39",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "markup-tag census",
+      "reason": "Read-only markup-tag census over csl-orig/v02; analysis product, feeds no pipeline family."
+    },
+    {
+      "id": "E47",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "witness-independence map + corroboration re-audit",
+      "reason": "Witness-independence map over the 15-dict union; audit product, not the union itself."
+    },
+    {
+      "id": "E42",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Kompozity names.csv",
+      "reason": "DCS proper-name compound splits with frequency vectors; analysis product over the corpus, not the ingest grain."
+    },
+    {
+      "id": "E43",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "kosha corpus sandhi (programme)",
+      "reason": "Programme-level corpus-sandhi rule sets; no sandhi/morphology family among the 18."
+    },
+    {
+      "id": "E43",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "code-duplication census + LOC/language-mix per repo",
+      "reason": "Org-wide repo-hygiene census; analysis product, not the ci-fanout deploy machinery itself. The id is double-defined upstream (kept and logged in wave 1), so an id-level join would misfile the sandhi row."
+    },
+    {
+      "id": "E44",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "POS distribution per text",
+      "reason": "UD-upos distribution per DCS text; corpus statistics study — asset:dcs-corpus owns the ingest grain, not derived studies."
+    },
+    {
+      "id": "E45",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "sense/polysemy distribution per dict (11/44 general lexica)",
+      "reason": "Senses-per-entry distribution per dict; dictionary-microstructure statistics, no owning family."
+    },
+    {
+      "id": "E46",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "paradigm-cell coverage per root",
+      "reason": "Attested finite paradigm cells per root over DCS; corpus statistics study, not the ingest grain."
+    },
+    {
+      "id": "E49",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "definition typology (synonym / equivalent / encyclopedic)",
+      "reason": "Definition typology over all 44 dicts; dictionary-microstructure statistics, no owning family."
+    },
+    {
+      "id": "E50",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Rāmāyaṇa edition-alignment family (Gorresio · Bombay · Southern↔critical)",
+      "reason": "Rāmāyaṇa three-edition alignment programme; no edition-alignment family."
+    },
+    {
+      "id": "E51",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "nominal case×number grid per declension class",
+      "reason": "Case×number grid per declension class over DCS tokens; corpus statistics study, not the ingest grain."
+    },
+    {
+      "id": "E52",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "attested declension cells per lemma (Sangram G2)",
+      "reason": "Attested declension cells per lemma; corpus statistics study, not the ingest grain."
+    },
+    {
+      "id": "F33",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Indische Sprüche",
+      "reason": "Standalone public-domain subhāṣita JSONL; no standalone-corpus family."
+    },
+    {
+      "id": "F34",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "ortho-drift reform maps",
+      "reason": "19th-c.→modern spelling-reform maps for SanskritSpellCheck; asset:correction-pipeline fixes dictionary text, not spell-check data."
+    },
+    {
+      "id": "F35",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "do-not-file corpus",
+      "reason": "Deliberately non-standard headword suppressions; ambiguous against asset:correction-pipeline (which corrects text, not filing) — left unmatched per plan R5.1."
+    },
+    {
+      "id": "F36",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "csl-santam Tamil SQLite",
+      "reason": "Derived Tamil SQLite of csl-santam; families own source texts and named products, not per-dict derived databases."
+    },
+    {
+      "id": "F37",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "OCR'd dictionary front-matter",
+      "reason": "OCR'd title pages/prefaces/abbreviations as Markdown; no front-matter family."
+    },
+    {
+      "id": "F43",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "allngramtxt.txt char-n-gram oracle",
+      "reason": "Character n-gram membership oracle for the spell-check method; no spell-check family."
+    },
+    {
+      "id": "F44",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "INDOLOGY-L mailing-list archive atlas",
+      "reason": "Standalone mailing-list archive repo; no family owns external-list corpora."
+    },
+    {
+      "id": "F45",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Laukika-nyāya (Jacob's \"Handful of Popular Maxims\")",
+      "reason": "Standalone maxim collection (Jacob, PD); no standalone-corpus family."
+    },
+    {
+      "id": "F46",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "VK wall archive — «Общество ревнителей санскрита» (vk-ors)",
+      "reason": "Standalone VK wall archive repo; no family owns external-list corpora."
+    },
+    {
+      "id": "F47",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "PWG literary-source scan-index campaign registry",
+      "reason": "Registry of the PWG scan-index campaign; the scans live under ext:sanskrit-lexicon-scans, the registry has no owning family."
+    },
+    {
+      "id": "F48",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "Sanskrit definition-generation benchmark (defgen) + gloss-grounded WSD pilot",
+      "reason": "Frozen definition-generation benchmark + WSD pilot; no evaluation-benchmark family."
+    },
+    {
+      "id": "F49",
+      "section": "I. Data assets — query it, someone already spent the compute",
+      "title": "ЛЭС-1990 static dump (les-1990)",
+      "reason": "Static mirror of an external linguistics encyclopedia; no family owns external references."
+    },
+    {
+      "id": "MW",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Monier-Williams Sanskrit-English Dictionary",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "PWG",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Grosses Petersburger Wörterbuch",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "PW",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Sanskrit-Wörterbuch in kürzerer Fassung",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "GRA",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Wörterbuch zum Rig-Veda",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "AP90",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Apte Practical Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "AP",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Practical Sanskrit-English Dictionary (rev.)",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "MW72",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Monier-Williams Sanskrit-English (1st ed.)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "WIL",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Wilson Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "YAT",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Yates Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "GST",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Goldstücker Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "BEN",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Benfey Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "LAN",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Lanman's Sanskrit Reader Vocabulary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "LRV",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Vaidya Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "CAE",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Cappeller Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "MD",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Macdonell Sanskrit-English Dictionary",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "SHS",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Śabda-Sāgara Sanskrit-English Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "PD",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Encyclopedic Dictionary of Sanskrit on Historical Principles",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "MWE",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Monier-Williams English-Sanskrit Dictionary",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "BOR",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Borooah English-Sanskrit Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "AE",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Apte Student's English-Sanskrit Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "BUR",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Burnouf Dictionnaire Sanscrit-Français",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "STC",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Stchoupak Dictionnaire Sanscrit-Français",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "BOP",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Bopp Glossarium Sanscritum",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "SKD",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Śabdakalpadruma",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "VCP",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Vācaspatyam",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "CCS",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Cappeller Sanskrit Wörterbuch",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "SCH",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Schmidt Nachträge zum Sanskrit-Wörterbuch",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "ARMH",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Abhidhānaratnamālā of Halāyudha",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "ABCH",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Abhidhānacintāmaṇi of Hemacandra",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "ACPH",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Abhidhānacintāmaṇipariśiṣṭa",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "ACSJ",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Abhidhānacintāmaṇiśiloñcha of Jinadeva",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "NMMB",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Nāmamālikā of Bhoja",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "INM",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Index to the Names in the Mahābhārata",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "VEI",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Vedic Index of Names and Subjects",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "PUI",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "The Purāṇa Index",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "BHS",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Buddhist Hybrid Sanskrit Dictionary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "FRI",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Friš Sanskrit Reader Vocabulary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "ACC",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Aufrecht's Catalogus Catalogorum",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "KRM",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Kṛdantarūpamālā",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "IEG",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Indian Epigraphical Glossary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "SNP",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Meulenbeld's Sanskrit Names of Plants",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "PE",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Puranic Encyclopedia",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "PGN",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Names in the Gupta Inscriptions",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "MCI",
+      "section": "II. Dictionaries — the 44 digitised from canonical source text",
+      "title": "Mahābhārata Cultural Index",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "G2",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "C-SALT / Kosh API",
+      "reason": "C-SALT/Kosh REST+GraphQL serving layer; families own data artifacts and the PHP face (asset:php-endpoints), not API services."
+    },
+    {
+      "id": "G3",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "kosha — translator-first dictionary",
+      "reason": "kosha web product surface; its data artifacts are family-covered (data-hub releases, dcs-corpus frequency), the product itself is not."
+    },
+    {
+      "id": "H4",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Samudra Manthanam",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "H5",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Sanskrit→Russian Glossary",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "H6",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Russian Rāmāyaṇa portal",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "H7",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Sanskrit Karaoke",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "H8",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Systema in-cabinet reading packs («Старт чтения»)",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I8",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "CSL Observatory",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I9",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "VisualDCS — verb-form frequency",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I10",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "VisualDCS — paradigm browser",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I11",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "BookIndex / Zalizniakiada",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I12",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "IndologyScholars — forum archive",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I14",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "VisualDCS — nominal paradigm",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "I13",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "vk-ors wall retrospective",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J13",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "CSL Guides",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J14",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "CommentaryStrategies essays",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J15",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "SamudraManthanam corpus-FAQ",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J16",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "PWG article dashboard",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J17",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Uprava articles dashboard",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "J21",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "kosha data & tools directory",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "K18",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "CSL App (Flutter)",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "K19",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "Systema Sanscriticum",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "K20",
+      "section": "III. Interfaces — sites, search UIs, dashboards, reader apps, APIs",
+      "title": "csl-santam — Tamil lexicon search",
+      "reason": "Roster keyed by dictionary code (MW, AP90, …), outside the feature_ids id pattern; the source texts themselves are csl-orig (asset:cdsl-source-texts)."
+    },
+    {
+      "id": "L5",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "ls_resolver.py + nws_ls_markup.py (H1809, H1909)",
+      "reason": "Translation-lane <ls> citation→scan resolver (RussianTranslation/src); asset:entry-render renders csl-orig entries — no owning family for the translation lane."
+    },
+    {
+      "id": "M10",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "Samsaadhanii / SCL (Amba Kulkarni, UoHyd)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "M11",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "Sanskrit Heritage (Gérard Huet, INRIA)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "M12",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "DharmaMitra (Berkeley)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "M13",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "VedaWeb (Cologne / UZH, CC BY 4.0)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    },
+    {
+      "id": "M14",
+      "section": "IV. Tools — import the toolkit, call the external stacks",
+      "title": "vidyut (Ambuda)",
+      "reason": "External stack — consumed via ext:* nodes, not owned as an asset."
+    }
+  ]
+}

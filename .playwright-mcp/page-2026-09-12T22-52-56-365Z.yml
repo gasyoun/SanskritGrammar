@@ -1,0 +1,956 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]
+            - link "Sign in" [ref=e55] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fgasyoun%2FSanskritGrammar%2Fpull%2F924%2Ffiles
+            - link "Sign up" [ref=e58] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fpull_requests%2Fshow%2Ffiles&source=header-repo&source_repo=gasyoun%2FSanskritGrammar
+            - button "Appearance settings" [ref=e61] [cursor=pointer]
+  - main [ref=e68]:
+    - generic [ref=e69]:
+      - generic [ref=e70]:
+        - generic [ref=e72]:
+          - link "gasyoun" [ref=e76] [cursor=pointer]:
+            - /url: /gasyoun
+          - generic [ref=e77]: /
+          - strong [ref=e78]:
+            - link "SanskritGrammar" [ref=e79] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar
+          - generic [ref=e80]: Public
+        - generic [ref=e81]:
+          - list:
+            - listitem [ref=e82]:
+              - link "You must be signed in to change notification settings" [ref=e83] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2FSanskritGrammar
+                - text: Notifications
+            - listitem [ref=e86]:
+              - link "Fork 0" [ref=e87] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2FSanskritGrammar
+                - text: Fork
+                - generic "0" [ref=e90]
+            - listitem [ref=e91]:
+              - link "You must be signed in to star a repository" [ref=e93] [cursor=pointer]:
+                - /url: /login?return_to=%2Fgasyoun%2FSanskritGrammar
+                - text: Star
+                - generic "0 users starred this repository" [ref=e96]: "0"
+      - navigation "Repository" [ref=e97]:
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "Code" [ref=e100] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar
+          - listitem [ref=e104]:
+            - link "Issues 10" [ref=e105] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/issues
+              - generic [ref=e109]: Issues
+              - generic "10" [ref=e110]
+          - listitem [ref=e111]:
+            - link "Pull requests 9" [ref=e112] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/pulls
+              - generic [ref=e115]: Pull requests
+              - generic "9" [ref=e116]
+          - listitem [ref=e117]:
+            - link "Actions" [ref=e118] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/actions
+          - listitem [ref=e122]:
+            - link "Projects" [ref=e123] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/projects
+          - listitem [ref=e127]:
+            - link "Security and quality" [ref=e128] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/security
+          - listitem [ref=e132]:
+            - link "Insights" [ref=e133] [cursor=pointer]:
+              - /url: /gasyoun/SanskritGrammar/pulse
+    - generic [ref=e142]:
+      - generic [ref=e144]:
+        - generic [ref=e146]:
+          - 'heading "H4479: digitize Gasuns PhD dhatu dissertation supplements + concordance claim-census #924" [level=1] [ref=e147]'
+          - group [ref=e149]:
+            - button "New issue" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - 'generic "Status: Open" [ref=e153]': Open
+          - generic [ref=e156]:
+            - link "gasyoun" [ref=e157] [cursor=pointer]:
+              - /url: /gasyoun
+            - text: wants to merge 14 commits into
+            - generic "gasyoun/SanskritGrammar:main" [ref=e158]:
+              - link "main" [ref=e159] [cursor=pointer]:
+                - /url: /gasyoun/SanskritGrammar/tree/main
+            - text: from
+            - generic "gasyoun/SanskritGrammar:h4479-drain" [ref=e161]:
+              - link "h4479-drain" [ref=e162] [cursor=pointer]:
+                - /url: /gasyoun/SanskritGrammar/tree/h4479-drain
+            - button "Copy" [ref=e166]
+      - navigation "Pull request tabs" [ref=e173]:
+        - link "Conversation 3" [ref=e174] [cursor=pointer]:
+          - /url: /gasyoun/SanskritGrammar/pull/924
+          - text: Conversation
+          - generic "3" [ref=e177]
+        - link "Commits 14" [ref=e178] [cursor=pointer]:
+          - /url: /gasyoun/SanskritGrammar/pull/924/commits
+          - text: Commits
+          - generic "14" [ref=e181]
+        - link "Checks 0" [ref=e182] [cursor=pointer]:
+          - /url: /gasyoun/SanskritGrammar/pull/924/checks
+          - text: Checks
+          - generic "0" [ref=e185]
+        - link "Files changed" [ref=e186] [cursor=pointer]:
+          - /url: /gasyoun/SanskritGrammar/pull/924/files
+      - generic [ref=e189]:
+        - generic [ref=e193]:
+          - button "Hide file tree" [ref=e196] [cursor=pointer]
+          - group [ref=e200]:
+            - button [ref=e201] [cursor=pointer]:
+              - text: Changes from
+              - strong [ref=e202]: all commits
+          - group [ref=e204]:
+            - button [ref=e205] [cursor=pointer]:
+              - strong [ref=e206]: File filter
+          - group [ref=e208]:
+            - button [ref=e209] [cursor=pointer]:
+              - strong [ref=e210]: Conversations
+          - group [ref=e212]:
+            - button [ref=e213] [cursor=pointer]:
+              - img "Diff settings" [ref=e214]
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - textbox "Filter changed files" [ref=e221]
+            - navigation "File Tree Navigation" [ref=e224]:
+              - tree "File Tree" [ref=e225]:
+                - treeitem [level=1] [ref=e226]:
+                  - link ".ai_state.md" [ref=e227] [cursor=pointer]:
+                    - /url: "#diff-40144f323a7aa5552c4fe03a68e8041827f806fc1be59c3aa962f538976fa3f3"
+                - treeitem [level=1] [ref=e228]:
+                  - link ".gitignore" [ref=e229] [cursor=pointer]:
+                    - /url: "#diff-bc37d034bad564583790a46f19d807abfe519c5671395fd494d8cce506c42947"
+                - treeitem [level=1] [ref=e230]:
+                  - button "BibliothecaSanscritica" [expanded] [ref=e231] [cursor=pointer]
+                  - group [ref=e233]:
+                    - treeitem [level=2] [ref=e234]:
+                      - link "BIBLIOTHECA_SANSCRITICA_CENSUS_2026-09-10.md" [ref=e235] [cursor=pointer]:
+                        - /url: "#diff-1bee34a9d165cbb08aa044bc56555887fcd126dcf1e109588d851e445726136e"
+                    - treeitem [level=2] [ref=e236]:
+                      - link "CHANGELOG.md" [ref=e237] [cursor=pointer]:
+                        - /url: "#diff-0eb86d6fc3853848a1d96c2327eb5579ec891c171597ec91a93b9c65ee263fb9"
+                    - treeitem [level=2] [ref=e238]:
+                      - button "LihushinaChrestomathy_2015" [expanded] [ref=e239] [cursor=pointer]
+                      - group [ref=e241]:
+                        - treeitem [level=3] [ref=e242]:
+                          - link "LihushinaChrestomathy_2015_pilot.mdx" [ref=e243] [cursor=pointer]:
+                            - /url: "#diff-52b4bbcf2947cf09bf4eedc69e97ac0a828275a1cb885a0619e3c93276221d8b"
+                - treeitem [level=1] [ref=e244]:
+                  - link "CHANGELOG.md" [ref=e245] [cursor=pointer]:
+                    - /url: "#diff-06572a96a58dc510037d5efa622f9bec8519bc1beab13c9f251e97e657a9d4ed"
+                - treeitem [level=1] [ref=e246]:
+                  - button "GasunsDhatu_2014/revision-2026" [expanded] [ref=e247] [cursor=pointer]
+                  - group [ref=e249]:
+                    - treeitem [level=2] [ref=e250]:
+                      - link "PALSULE_AUDIT.md" [ref=e251] [cursor=pointer]:
+                        - /url: "#diff-71b837822d8ffffdfe80e3b36d73fe05c9f7830a9437de940db4af4bd925d89a"
+                    - treeitem [level=2] [ref=e252]:
+                      - link "README.md" [ref=e253] [cursor=pointer]:
+                        - /url: "#diff-589c3488ef2e43ca38d65f043379d56258a0d22552a90f00fa61cc0a180d36f0"
+                    - treeitem [level=2] [ref=e254]:
+                      - button "phd_corpus" [expanded] [ref=e255] [cursor=pointer]
+                      - group [ref=e257]:
+                        - treeitem [level=3] [ref=e258]:
+                          - link "README.md" [ref=e259] [cursor=pointer]:
+                            - /url: "#diff-105790f4029dbd9dc78c01c2dba45128ba7b146dbb8bc9322378ddcef72894f0"
+                        - treeitem [level=3] [ref=e260]:
+                          - link "bibliography_ref.jsonl" [ref=e261] [cursor=pointer]:
+                            - /url: "#diff-0dda882130b5f2c14795fb57c02364857e5649598886f1e7a3f1801d5c6178ab"
+                        - treeitem [level=3] [ref=e262]:
+                          - link "dhatu_concordance_claim_census.csv" [ref=e263] [cursor=pointer]:
+                            - /url: "#diff-9d8fdaf16008f05c0c107f957ee467cd5fc59fdd8c7c97dc8ce4c9b66e6aa02a"
+                        - treeitem [level=3] [ref=e264]:
+                          - link "dhatu_concordance_claim_census.jsonl" [ref=e265] [cursor=pointer]:
+                            - /url: "#diff-2fa0eb13e1337bced07eb5e65ca1dd786d34f4197c404382bb3916ffc8f054de"
+                        - treeitem [level=3] [ref=e266]:
+                          - link "suppl1_whitney_bucknell_roots.jsonl" [ref=e267] [cursor=pointer]:
+                            - /url: "#diff-6ebdd1e585d3df2ac514906577545a797bc7428076d3b2003dfc37583d2a94a6"
+                        - treeitem [level=3] [ref=e268]:
+                          - link "suppl2_whitney_roots_by_prefix.jsonl" [ref=e269] [cursor=pointer]:
+                            - /url: "#diff-1fb6294d0268a95d2aa7d7a3271c65b455f2696da08dcaf3579ca95e117044b1"
+                        - treeitem [level=3] [ref=e270]:
+                          - link "suppl3_concordance_text.jsonl" [ref=e271] [cursor=pointer]:
+                            - /url: "#diff-45a8a2cfa4d766680fcf43a485d8b556dc703b07997a1134a5951175e4dce713"
+                        - treeitem [level=3] [ref=e272]:
+                          - link "suppl4_huet_roots.jsonl" [ref=e273] [cursor=pointer]:
+                            - /url: "#diff-a5da1c5a436b9625b7d403c80b125350d69fa8dbf25a918b8f9a6c0896691081"
+                        - treeitem [level=3] [ref=e274]:
+                          - link "suppl5_binary_source_comparison.jsonl" [ref=e275] [cursor=pointer]:
+                            - /url: "#diff-0531f9002ff87d073611bf8aae0c4c52bf561aa62db49128919123695d87a3a2"
+                        - treeitem [level=3] [ref=e276]:
+                          - link "toc_index.json" [ref=e277] [cursor=pointer]:
+                            - /url: "#diff-62aa9556153ccaf72cc8ce4917b7e53a6e4f1e54d8a9cb1055b657c811a8e645"
+                - treeitem [level=1] [ref=e278]:
+                  - button "changelog_queue" [expanded] [ref=e279] [cursor=pointer]
+                  - group [ref=e281]:
+                    - treeitem [level=2] [ref=e282]:
+                      - link "H4479-gasuns-phd-corpus-10-09-2026.md" [ref=e283] [cursor=pointer]:
+                        - /url: "#diff-970b495e099d91b8d58c0067f7d8a467fa2c28fd711d987cd7886669493b90fe"
+                - treeitem [level=1] [ref=e284]:
+                  - button "corpus/gasuns-dissertation" [expanded] [ref=e285] [cursor=pointer]
+                  - group [ref=e287]:
+                    - treeitem [level=2] [ref=e288]:
+                      - link "EXTRACTION_REPORT.json" [ref=e289] [cursor=pointer]:
+                        - /url: "#diff-b85ca29e2a81a81538ecab0bbac2d66fc53792c20790e2b6cce49a5c85342698"
+                    - treeitem [level=2] [ref=e290]:
+                      - link "README.md" [ref=e291] [cursor=pointer]:
+                        - /url: "#diff-b1d44400a951501c8270d21246bd0a2a79b141a1a95712e32496b594576dc2d5"
+                    - treeitem [level=2] [ref=e292]:
+                      - link "build_claim_census.py" [ref=e293] [cursor=pointer]:
+                        - /url: "#diff-35f880eb5f9eb67a559d1645185146236ef6543719062d7781a00632dd8e5e91"
+                    - treeitem [level=2] [ref=e294]:
+                      - link "build_toc_index.py" [ref=e295] [cursor=pointer]:
+                        - /url: "#diff-1ec80cc87a323c214753d1a38cff7d41148b0be305b95a4af601b4fcce0008cf"
+                    - treeitem [level=2] [ref=e296]:
+                      - link "claim_census.json" [ref=e297] [cursor=pointer]:
+                        - /url: "#diff-66e2fe74633777bfdf396736aa682b637e1ebc89b9ec45f4f32ad47bb4d9db63"
+                    - treeitem [level=2] [ref=e298]:
+                      - link "claim_census.md" [ref=e299] [cursor=pointer]:
+                        - /url: "#diff-cac3812b81104eb1ad3cca9a8c87235396394bfd3669e930fe6950549c473c10"
+                    - treeitem [level=2] [ref=e300]:
+                      - link "extract_text_layer.py" [ref=e301] [cursor=pointer]:
+                        - /url: "#diff-ca820306363edf3ac2cc6ffeed1d94dcd75488110044063ef5996a69a3ff30b8"
+                    - treeitem [level=2] [ref=e302]:
+                      - button "text" [expanded] [ref=e303] [cursor=pointer]
+                      - group [ref=e305]:
+                        - treeitem [level=3] [ref=e306]:
+                          - link "01_gasuns-dhatu-PhD-ref.jsonl" [ref=e307] [cursor=pointer]:
+                            - /url: "#diff-56cda2d8350648e2b370ad809040af033c22200834affc36c39886a3ff602d41"
+                        - treeitem [level=3] [ref=e308]:
+                          - link "02_gasuns-dhatu-PhD-text.jsonl" [ref=e309] [cursor=pointer]:
+                            - /url: "#diff-0ca33dfed02300680da792f1a5bd33662887696eac99b7d3c5210deac05b1edc"
+                        - treeitem [level=3] [ref=e310]:
+                          - link "03_01-gasuns-dhatu-suppl.jsonl" [ref=e311] [cursor=pointer]:
+                            - /url: "#diff-7c7a92657bf60c6a209211916bfb894e1a96a05ca6ae89fc8779b668cfb2cc32"
+                        - treeitem [level=3] [ref=e312]:
+                          - link "04_02-gasuns-dhatu-suppl.jsonl" [ref=e313] [cursor=pointer]:
+                            - /url: "#diff-23506d59032c437455227ef636969d11d8b412650155aab4429bcc24d9a02968"
+                        - treeitem [level=3] [ref=e314]:
+                          - link "05_03-gasuns-dhatu-suppl.jsonl" [ref=e315] [cursor=pointer]:
+                            - /url: "#diff-65eec75c41536bb8b7140e400b392a792ffbf8c9fc43c7e871338b87317a9958"
+                        - treeitem [level=3] [ref=e316]:
+                          - link "06_04-gasuns-dhatu-suppl.jsonl" [ref=e317] [cursor=pointer]:
+                            - /url: "#diff-f3d7527f19613099db5d4ae99824721a171de4eaa8d8ca2ea93303b2bf79afc9"
+                        - treeitem [level=3] [ref=e318]:
+                          - link "07_05-gasuns-dhatu-suppl.jsonl" [ref=e319] [cursor=pointer]:
+                            - /url: "#diff-131eabd01c724d9a42f1c3094aba12f1f0b29e2443deeb291282a394ac051412"
+                    - treeitem [level=2] [ref=e320]:
+                      - link "toc_index.json" [ref=e321] [cursor=pointer]:
+                        - /url: "#diff-95c22baa8cd89f724e62799da57e0bce7ba193b35eb2417c1cf5e551f197ad55"
+                - treeitem [level=1] [ref=e322]:
+                  - button "tools" [expanded] [ref=e323] [cursor=pointer]
+                  - group [ref=e325]:
+                    - treeitem [level=2] [ref=e326]:
+                      - link "idml_to_mdx.py" [ref=e327] [cursor=pointer]:
+                        - /url: "#diff-ca29f4550fc3bc95362002d024ad71f2108e2052b49e50a0728b7ce8533d4597"
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]:
+                    - button "Toggle diff contents" [expanded] [ref=e335] [cursor=pointer]
+                    - generic [ref=e338]: "13 changes: 12 additions & 1 deletion"
+                    - generic [aria-hidden] [ref=e339]: "13"
+                    - generic [ref=e345]:
+                      - link ".ai_state.md" [ref=e346] [cursor=pointer]:
+                        - /url: "#diff-40144f323a7aa5552c4fe03a68e8041827f806fc1be59c3aa962f538976fa3f3"
+                      - button "Copy" [ref=e348]
+                  - generic [ref=e354]:
+                    - generic [ref=e355]:
+                      - button "Display the source diff" [ref=e357] [cursor=pointer]
+                      - button "Display the rich diff" [ref=e361] [cursor=pointer]
+                    - group [ref=e364]:
+                      - button [ref=e365] [cursor=pointer]:
+                        - img "Show options" [ref=e367]
+                - table [ref=e372]:
+                  - rowgroup [ref=e373]:
+                    - row [ref=e374]:
+                      - columnheader "Original file line number" [ref=e375]
+                      - columnheader "Diff line number" [ref=e376]
+                      - columnheader "Diff line change" [ref=e377]
+                  - rowgroup [ref=e382]:
+                    - row [ref=e383]:
+                      - cell "..." [ref=e384]
+                      - cell "..." [ref=e385]
+                      - cell "@@ -1,8 +1,19 @@" [ref=e386]
+                    - row [ref=e387]:
+                      - cell "1" [ref=e388] [cursor=pointer]
+                      - cell [ref=e389] [cursor=pointer]
+                      - 'cell "- _Created: 25-08-2026 · Last updated: 06-09-2026_" [ref=e390]'
+                    - row [ref=e392]:
+                      - cell [ref=e393] [cursor=pointer]
+                      - cell "1" [ref=e394] [cursor=pointer]
+                      - 'cell "+ _Created: 25-08-2026 · Last updated: 10-09-2026_" [ref=e395]'
+                    - row [ref=e397]:
+                      - cell "2" [ref=e398] [cursor=pointer]
+                      - cell "2" [ref=e399] [cursor=pointer]
+                      - cell [ref=e400]
+                    - row [ref=e401]:
+                      - cell "3" [ref=e402] [cursor=pointer]
+                      - cell "3" [ref=e403] [cursor=pointer]
+                      - 'cell "# Project Objective: Operate SanskritGrammar as one ordered portfolio: finish the M03 GasunsDhatu monograph, consolidate and verify Sangram, run the digital-pedagogy evaluations, advance comparative-grammar research, and maintain the source archive/site." [ref=e404]'
+                    - row [ref=e406]:
+                      - cell "4" [ref=e407] [cursor=pointer]
+                      - cell "4" [ref=e408] [cursor=pointer]
+                      - cell [ref=e409]
+                    - row [ref=e410]:
+                      - cell "5" [ref=e411] [cursor=pointer]
+                      - cell "5" [ref=e412] [cursor=pointer]
+                      - cell "## ➡️ Next Steps (Queue)" [ref=e413]
+                    - row [ref=e415]:
+                      - cell [ref=e416] [cursor=pointer]
+                      - cell "6" [ref=e417] [cursor=pointer]
+                      - 'cell "+ - **🟡 H4479 — Gasūns PhD dhātu dissertation supplements + concordance claim-census DELIVERED, PR OPEN 10-09-2026 (OxAlpha `opencode/z-ai/glm-5.3-flash`).**" [ref=e418]'
+                    - row [ref=e420]:
+                      - cell [ref=e421] [cursor=pointer]
+                      - cell "7" [ref=e422] [cursor=pointer]
+                      - 'cell "+ [`GasunsDhatu_2014/revision-2026/phd_corpus/`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014/revision-2026/phd_corpus):" [ref=e423]'
+                    - row [ref=e425]:
+                      - cell [ref=e426] [cursor=pointer]
+                      - cell "8" [ref=e427] [cursor=pointer]
+                      - cell "+ Приложения 1-5 + standalone bibliography digitized from yadisk (PyMuPDF only —" [ref=e428]
+                    - row [ref=e430]:
+                      - cell [ref=e431] [cursor=pointer]
+                      - cell "9" [ref=e432] [cursor=pointer]
+                      - cell "+ pdftotext forbidden on Cyrillic PDFs) plus a structured claim-census from" [ref=e433]
+                    - row [ref=e435]:
+                      - cell [ref=e436] [cursor=pointer]
+                      - cell "10" [ref=e437] [cursor=pointer]
+                      - 'cell "+ `gasuns-dhatu-concordance.xlsm` (3687 root entries, 35.9% Palsule-only) that" [ref=e438]'
+                    - row [ref=e440]:
+                      - cell [ref=e441] [cursor=pointer]
+                      - cell "11" [ref=e442] [cursor=pointer]
+                      - 'cell "+ digitizes PALSULE_AUDIT.md''s step-1 blocker. [PR #924](https://github.com/gasyoun/SanskritGrammar/pull/924)" [ref=e443]'
+                    - row [ref=e445]:
+                      - cell [ref=e446] [cursor=pointer]
+                      - cell "12" [ref=e447] [cursor=pointer]
+                      - 'cell "+ — `class: data`, verifier-gated (H4358): stays open until a DIFFERENT session" [ref=e448]'
+                    - row [ref=e450]:
+                      - cell [ref=e451] [cursor=pointer]
+                      - cell "13" [ref=e452] [cursor=pointer]
+                      - 'cell "+ runs the verifier pass; not self-closeable. **Residual: @DECIDE — which" [ref=e453]'
+                    - row [ref=e455]:
+                      - cell [ref=e456] [cursor=pointer]
+                      - cell "14" [ref=e457] [cursor=pointer]
+                      - cell "+ supplement feeds revision-2026 next (recommendation in phd_corpus/README.md:" [ref=e458]
+                    - row [ref=e460]:
+                      - cell [ref=e461] [cursor=pointer]
+                      - cell "15" [ref=e462] [cursor=pointer]
+                      - cell "+ Приложение 3/claim-census, already named by PALSULE_AUDIT.md); steps 2-3 of" [ref=e463]
+                    - row [ref=e465]:
+                      - cell [ref=e466] [cursor=pointer]
+                      - cell "16" [ref=e467] [cursor=pointer]
+                      - cell "+ the PALSULE_AUDIT method (SLP1 normalize + join vidyut dhatupatha) still open.**" [ref=e468]
+                    - row [ref=e470]:
+                      - cell "6" [ref=e471] [cursor=pointer]
+                      - cell "17" [ref=e472] [cursor=pointer]
+                      - 'cell "- **✅ H3521 — LYW wave-1 занятие-1 lessonpack SHIPPED 26-08-2026 (OxAlpha `x-preview-f-free`).**" [ref=e473]'
+                    - row [ref=e475]:
+                      - cell "7" [ref=e476] [cursor=pointer]
+                      - cell "18" [ref=e477] [cursor=pointer]
+                      - 'cell "`scripts/build_lessonpack.py` (deterministic assembler/validator, byte-stable rebuild) +" [ref=e478]'
+                    - row [ref=e480]:
+                      - cell "8" [ref=e481] [cursor=pointer]
+                      - cell "19" [ref=e482] [cursor=pointer]
+                      - cell "9 committed profiles under" [ref=e483]
+                    - row [ref=e485]:
+                      - cell "Expand Down" [ref=e486] [cursor=pointer]:
+                        - link "Expand Down" [ref=e487]:
+                          - /url: "#diff-40144f323a7aa5552c4fe03a68e8041827f806fc1be59c3aa962f538976fa3f3"
+                      - cell [ref=e490]
+              - generic [ref=e492]:
+                - generic [ref=e493]:
+                  - generic [ref=e494]:
+                    - button "Toggle diff contents" [expanded] [ref=e495] [cursor=pointer]
+                    - button "Expand all" [ref=e499] [cursor=pointer]:
+                      - img "Expand all" [ref=e500]
+                    - generic [ref=e502]: "10 changes: 10 additions & 0 deletions"
+                    - generic [aria-hidden] [ref=e503]: "10"
+                    - generic [ref=e509]:
+                      - link ".gitignore" [ref=e510] [cursor=pointer]:
+                        - /url: "#diff-bc37d034bad564583790a46f19d807abfe519c5671395fd494d8cce506c42947"
+                      - button "Copy" [ref=e512]
+                  - group [ref=e519]:
+                    - button [ref=e520] [cursor=pointer]:
+                      - img "Show options" [ref=e522]
+                - table [ref=e527]:
+                  - rowgroup [ref=e528]:
+                    - row [ref=e529]:
+                      - columnheader "Original file line number" [ref=e530]
+                      - columnheader "Diff line number" [ref=e531]
+                      - columnheader "Diff line change" [ref=e532]
+                  - rowgroup [ref=e533]:
+                    - row [ref=e534]:
+                      - cell "Expand Up" [ref=e535] [cursor=pointer]:
+                        - link "Expand Up" [ref=e536]:
+                          - /url: "#diff-bc37d034bad564583790a46f19d807abfe519c5671395fd494d8cce506c42947"
+                      - cell "@@ -37,6 +37,13 @@ GasunsDhatu_2014/*" [ref=e539]
+                    - row [ref=e540]:
+                      - cell "37" [ref=e541] [cursor=pointer]
+                      - cell "37" [ref=e542] [cursor=pointer]
+                      - cell "TolchelnikovTalmud_2026/*" [ref=e543]
+                    - row [ref=e545]:
+                      - cell "38" [ref=e546] [cursor=pointer]
+                      - cell "38" [ref=e547] [cursor=pointer]
+                      - cell "!TolchelnikovTalmud_2026/*.mdx" [ref=e548]
+                    - row [ref=e550]:
+                      - cell "39" [ref=e551] [cursor=pointer]
+                      - cell "39" [ref=e552] [cursor=pointer]
+                      - cell "!TolchelnikovTalmud_2026/IMPROVEMENT_PLAN.md" [ref=e553]
+                    - row [ref=e555]:
+                      - cell [ref=e556] [cursor=pointer]
+                      - cell "40" [ref=e557] [cursor=pointer]
+                      - 'cell "+ # H4484 Bibliotheca Sanscritica series: derived digital editions only — the yadisk" [ref=e558]'
+                    - row [ref=e560]:
+                      - cell [ref=e561] [cursor=pointer]
+                      - cell "41" [ref=e562] [cursor=pointer]
+                      - 'cell "+ # .indd/.idml/print sources never enter git; allow-list re-includes the derived mdx," [ref=e563]'
+                    - row [ref=e565]:
+                      - cell [ref=e566] [cursor=pointer]
+                      - cell "42" [ref=e567] [cursor=pointer]
+                      - 'cell "+ # the census doc and the series CHANGELOG." [ref=e568]'
+                    - row [ref=e570]:
+                      - cell [ref=e571] [cursor=pointer]
+                      - cell "43" [ref=e572] [cursor=pointer]
+                      - cell "+ BibliothecaSanscritica/*" [ref=e573]
+                    - row [ref=e575]:
+                      - cell [ref=e576] [cursor=pointer]
+                      - cell "44" [ref=e577] [cursor=pointer]
+                      - cell "+ !BibliothecaSanscritica/*.md" [ref=e578]
+                    - row [ref=e580]:
+                      - cell [ref=e581] [cursor=pointer]
+                      - cell "45" [ref=e582] [cursor=pointer]
+                      - cell "+ !BibliothecaSanscritica/LihushinaChrestomathy_2015/" [ref=e583]
+                    - row [ref=e585]:
+                      - cell [ref=e586] [cursor=pointer]
+                      - cell "46" [ref=e587] [cursor=pointer]
+                      - cell "+ !BibliothecaSanscritica/LihushinaChrestomathy_2015/*.mdx" [ref=e588]
+                    - row [ref=e590]:
+                      - cell "40" [ref=e591] [cursor=pointer]
+                      - cell "47" [ref=e592] [cursor=pointer]
+                      - cell "!TolchelnikovTalmud_2026/student-roadmap.md" [ref=e593]
+                    - row [ref=e595]:
+                      - cell "41" [ref=e596] [cursor=pointer]
+                      - cell "48" [ref=e597] [cursor=pointer]
+                      - cell "!TolchelnikovTalmud_2026/visual-grammar.md" [ref=e598]
+                    - row [ref=e600]:
+                      - cell "42" [ref=e601] [cursor=pointer]
+                      - cell "49" [ref=e602] [cursor=pointer]
+                      - cell "!TolchelnikovTalmud_2026/talmud-refactoring.md" [ref=e603]
+                    - row [ref=e605]:
+                      - cell "Expand Down Expand Up" [ref=e606] [cursor=pointer]:
+                        - link "Expand Down" [ref=e607]:
+                          - /url: "#diff-bc37d034bad564583790a46f19d807abfe519c5671395fd494d8cce506c42947"
+                        - link "Expand Up" [ref=e610]:
+                          - /url: "#diff-bc37d034bad564583790a46f19d807abfe519c5671395fd494d8cce506c42947"
+                      - cell "@@ -159,3 +166,6 @@ Elizarenkova_2004/" [ref=e613]
+                    - row [ref=e614]:
+                      - cell "159" [ref=e615] [cursor=pointer]
+                      - cell "166" [ref=e616] [cursor=pointer]
+                      - cell "**/__MACOSX/" [ref=e617]
+                    - row [ref=e619]:
+                      - cell "160" [ref=e620] [cursor=pointer]
+                      - cell "167" [ref=e621] [cursor=pointer]
+                      - cell [ref=e622]
+                    - row [ref=e623]:
+                      - cell "161" [ref=e624] [cursor=pointer]
+                      - cell "168" [ref=e625] [cursor=pointer]
+                      - cell "review/" [ref=e626]
+                    - row [ref=e628]:
+                      - cell [ref=e629] [cursor=pointer]
+                      - cell "169" [ref=e630] [cursor=pointer]
+                      - cell "+" [ref=e631]
+                    - row [ref=e632]:
+                      - cell [ref=e633] [cursor=pointer]
+                      - cell "170" [ref=e634] [cursor=pointer]
+                      - 'cell "+ # H4479: dissertation PDF sources stay local; only derived text/indexes commit." [ref=e635]'
+                    - row [ref=e637]:
+                      - cell [ref=e638] [cursor=pointer]
+                      - cell "171" [ref=e639] [cursor=pointer]
+                      - cell "+ corpus/gasuns-dissertation/src/" [ref=e640]
+              - generic [ref=e643]:
+                - generic [ref=e644]:
+                  - generic [ref=e645]:
+                    - button "Toggle diff contents" [expanded] [ref=e646] [cursor=pointer]
+                    - generic [ref=e649]: "75 changes: 75 additions & 0 deletions"
+                    - generic [aria-hidden] [ref=e650]: "75"
+                    - generic [ref=e656]:
+                      - link "BibliothecaSanscritica/BIBLIOTHECA_SANSCRITICA_CENSUS_2026-09-10.md" [ref=e657] [cursor=pointer]:
+                        - /url: "#diff-1bee34a9d165cbb08aa044bc56555887fcd126dcf1e109588d851e445726136e"
+                      - button "Copy" [ref=e659]
+                  - generic [ref=e665]:
+                    - generic [ref=e666]:
+                      - button "Display the source diff" [ref=e668] [cursor=pointer]
+                      - button "Display the rich diff" [ref=e672] [cursor=pointer]
+                    - group [ref=e675]:
+                      - button [ref=e676] [cursor=pointer]:
+                        - img "Show options" [ref=e678]
+                - table [ref=e683]:
+                  - rowgroup [ref=e684]:
+                    - row [ref=e685]:
+                      - columnheader "Original file line number" [ref=e686]
+                      - columnheader "Diff line number" [ref=e687]
+                      - columnheader "Diff line change" [ref=e688]
+                  - rowgroup [ref=e693]:
+                    - row [ref=e694]:
+                      - cell "..." [ref=e695]
+                      - cell "..." [ref=e696]
+                      - cell "@@ -0,0 +1,75 @@" [ref=e697]
+                    - row [ref=e698]:
+                      - cell [ref=e699] [cursor=pointer]
+                      - cell "1" [ref=e700] [cursor=pointer]
+                      - 'cell "+ # Bibliotheca Sanscritica — 27-tom state census (H4484)" [ref=e701]'
+                    - row [ref=e703]:
+                      - cell [ref=e704] [cursor=pointer]
+                      - cell "2" [ref=e705] [cursor=pointer]
+                      - cell "+" [ref=e706]
+                    - row [ref=e707]:
+                      - cell [ref=e708] [cursor=pointer]
+                      - cell "3" [ref=e709] [cursor=pointer]
+                      - 'cell "+ _Created: 10-09-2026 · Last updated: 10-09-2026_" [ref=e710]'
+                    - row [ref=e712]:
+                      - cell [ref=e713] [cursor=pointer]
+                      - cell "4" [ref=e714] [cursor=pointer]
+                      - cell "+" [ref=e715]
+                    - row [ref=e716]:
+                      - cell [ref=e717] [cursor=pointer]
+                      - cell "5" [ref=e718] [cursor=pointer]
+                      - 'cell "+ **Handoff:** [H4484](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4484-OxAlpha_SanskritGrammar_frish-chrestomathy-census_09.09.26.md) · **Executor:** OxAlpha (glm-5.3-flash) · **Source:** `yadisk:Bibliotheca/` (toms I–XXVII) + `yadisk:Sanskrityatina/32_Frisch` + `yadisk:Sanskrityatina/33_Lihusina`" [ref=e719]'
+                    - row [ref=e721]:
+                      - cell [ref=e722] [cursor=pointer]
+                      - cell "6" [ref=e723] [cursor=pointer]
+                      - cell "+" [ref=e724]
+                    - row [ref=e725]:
+                      - cell [ref=e726] [cursor=pointer]
+                      - cell "7" [ref=e727] [cursor=pointer]
+                      - 'cell "+ **Ruling applied (MG 07-09 + 09-09-2026):** большинство томов УЖЕ ИЗДАНО — census classifies per tom with evidence, NEVER assumes unfinished. Серия = «Bibliotheca Sanscritica» МГ; Фриш — автор только 2 томов (I–II). Путь = (б) электронное издание (docx→mdx). Pilot tom = Лихушина (`33_Lihusina`)." [ref=e728]'
+                    - row [ref=e730]:
+                      - cell [ref=e731] [cursor=pointer]
+                      - cell "8" [ref=e732] [cursor=pointer]
+                      - cell "+" [ref=e733]
+                    - row [ref=e734]:
+                      - cell [ref=e735] [cursor=pointer]
+                      - cell "9" [ref=e736] [cursor=pointer]
+                      - 'cell "+ ## Method" [ref=e737]'
+                    - row [ref=e739]:
+                      - cell [ref=e740] [cursor=pointer]
+                      - cell "10" [ref=e741] [cursor=pointer]
+                      - cell "+" [ref=e742]
+                    - row [ref=e743]:
+                      - cell [ref=e744] [cursor=pointer]
+                      - cell "11" [ref=e745] [cursor=pointer]
+                      - 'cell "+ Per-tom recursive `rclone lsf` over `yadisk:Bibliotheca/NN том …` (listings taken 10-09-2026), classification by file evidence:" [ref=e746]'
+                    - row [ref=e748]:
+                      - cell [ref=e749] [cursor=pointer]
+                      - cell "12" [ref=e750] [cursor=pointer]
+                      - cell "+" [ref=e751]
+                    - row [ref=e752]:
+                      - cell [ref=e753] [cursor=pointer]
+                      - cell "13" [ref=e754] [cursor=pointer]
+                      - 'cell "+ - **ИЗДАН** — печатные финалы присутствуют: `В печать/` with final block PDF/cover, or ozon/promo specimen, or ebook export." [ref=e755]'
+                    - row [ref=e757]:
+                      - cell [ref=e758] [cursor=pointer]
+                      - cell "14" [ref=e759] [cursor=pointer]
+                      - cell "+ - **В ПРАВКЕ** — верстка финал существует, но печать не видна (письмо/рассмотрение/внешнее издательство)." [ref=e760]
+                    - row [ref=e762]:
+                      - cell [ref=e763] [cursor=pointer]
+                      - cell "15" [ref=e764] [cursor=pointer]
+                      - 'cell "+ - **НЕ НАЧАТ** — нет ни одного `.indd`/`.idml` версточного файла (только исходники/сканы/OCR)." [ref=e765]'
+                    - row [ref=e767]:
+                      - cell [ref=e768] [cursor=pointer]
+                      - cell "16" [ref=e769] [cursor=pointer]
+                      - cell "+" [ref=e770]
+                    - row [ref=e771]:
+                      - cell [ref=e772] [cursor=pointer]
+                      - cell "17" [ref=e773] [cursor=pointer]
+                      - 'cell "+ Верстки считаются по наличию `.indd`/`.idml`; даты — mtime на yadisk. Воспроизведение: `rclone lsf -R --format pst --separator \"|\" \"yadisk:Bibliotheca/NN том X\"` для каждого тома." [ref=e774]'
+                    - row [ref=e776]:
+                      - cell [ref=e777] [cursor=pointer]
+                      - cell "18" [ref=e778] [cursor=pointer]
+                      - cell "+" [ref=e779]
+                    - row [ref=e780]:
+                      - cell [ref=e781] [cursor=pointer]
+                      - cell "19" [ref=e782] [cursor=pointer]
+                      - 'cell "+ ## 27-tom state table" [ref=e783]'
+                    - row [ref=e785]:
+                      - cell [ref=e786] [cursor=pointer]
+                      - cell "20" [ref=e787] [cursor=pointer]
+                      - cell "+" [ref=e788]
+                    - row [ref=e789]:
+                      - cell [ref=e790] [cursor=pointer]
+                      - cell "21" [ref=e791] [cursor=pointer]
+                      - cell "+ | № | Том (рабочее имя по файлам) | Автор (по файлам) | Состояние | Evidence (ключевые файлы, даты mtime) |" [ref=e792]
+                    - row [ref=e794]:
+                      - cell [ref=e795] [cursor=pointer]
+                      - cell "22" [ref=e796] [cursor=pointer]
+                      - cell "+ |---|---|---|---|---|" [ref=e797]
+                    - row [ref=e799]:
+                      - cell [ref=e800] [cursor=pointer]
+                      - cell "23" [ref=e801] [cursor=pointer]
+                      - 'cell "+ | I | Хрестоматия Фриша, т. I (переизд.) | О. Фриш | **ИЗДАН** (печать 12.2022, обложка 2023) | `В печать/Frish_I_24.12.22.indd`+`.pdf`; `vol.1 cover 2023.pdf` 2023-02-20; pravka `Frish_I_28_11_2022` |" [ref=e802]'
+                    - row [ref=e804]:
+                      - cell [ref=e805] [cursor=pointer]
+                      - cell "24" [ref=e806] [cursor=pointer]
+                      - 'cell "+ | II | Хрестоматия Фриша, т. II (переизд.) | О. Фриш | **ИЗДАН** (печать 12.2022, обложка 2023) | `В печать/Frish_II_24.12.22.idml`; `vol.2 cover 22 2023.pdf` 2023-02-20 |" [ref=e807]'
+                    - row [ref=e809]:
+                      - cell [ref=e810] [cursor=pointer]
+                      - cell "25" [ref=e811] [cursor=pointer]
+                      - 'cell "+ | III | Учебник Кнауэра (переизд. 2021) | Кнауэр | **ИЗДАН** (2015; переизд. 2021 + ebook-экспорт) | `Кнауэр 2021/В печать/blok_2021.pdf` 2021-01-10; `knauer_24.12.2020.pdf/html` 2021-06-22 |" [ref=e812]'
+                    - row [ref=e814]:
+                      - cell [ref=e815] [cursor=pointer]
+                      - cell "26" [ref=e816] [cursor=pointer]
+                      - 'cell "+ | IV | «Новая книга для чтения на санскрите. Хрестоматия» | Н. П. Лихушина | **ИЗДАН** (2015-16; правки предисловия 2023) | `В печать/likhushina-17.12.15 постранично.pdf`; `В печать/ozon/` 2016-07; `likhushina-16.12.15 только обновленное предисловие 2023.indd` 2023-07-05; `2023/исправления лихушина 2023.txt` |" [ref=e817]'
+                    - row [ref=e819]:
+                      - cell [ref=e820] [cursor=pointer]
+                      - cell "27" [ref=e821] [cursor=pointer]
+                      - 'cell "+ | V | Миллер, руководство (переизд. 2021) | Миллер | **ИЗДАН** (2015; переизд. 2021) | `Миллер 2021/В печать/04 miller-blok-24.02.2021.pdf`; печать 2015 `В печать/miller.pdf` |" [ref=e822]'
+                    - row [ref=e824]:
+                      - cell [ref=e825] [cursor=pointer]
+                      - cell "28" [ref=e826] [cursor=pointer]
+                      - 'cell "+ | VI | Учебник Бюлера | Бюлер | **ИЗДАН** (2016) | `В печать/buhler-01.06.2016-fix.indd`; `В печать/Страницы из buhler-03.09.16-cropmarks.pdf` |" [ref=e827]'
+                    - row [ref=e829]:
+                      - cell [ref=e830] [cursor=pointer]
+                      - cell "29" [ref=e831] [cursor=pointer]
+                      - 'cell "+ | VII | Сводный список санскритских слов / история лексикографии | — | **НЕ НАЧАТ** | нет `.indd`; только сканы/txt + jsx-скрипты колонтитулов 2019 |" [ref=e832]'
+                    - row [ref=e834]:
+                      - cell [ref=e835] [cursor=pointer]
+                      - cell "30" [ref=e836] [cursor=pointer]
+                      - 'cell "+ | VIII | (не определён по файлам) | — | **НЕ НАЧАТ** | 5 файлов (`allvsMW_2.txt`, eps обложки 2015, funderburk png) |" [ref=e837]'
+                    - row [ref=e839]:
+                      - cell [ref=e840] [cursor=pointer]
+                      - cell "31" [ref=e841] [cursor=pointer]
+                      - 'cell "+ | IX | Барроу «Санскрит» | Т. Барроу | **ИЗДАН** (2016–17) | `В печать/burrow-02.11.2017.pdf`; `Burrow_cover.pdf` 2016-10; `promo/burrow-specimen.pdf` |" [ref=e842]'
+                    - row [ref=e844]:
+                      - cell [ref=e845] [cursor=pointer]
+                      - cell "32" [ref=e846] [cursor=pointer]
+                      - 'cell "+ | X | Коссович, учебник (переизд. 2021) | К. А. Коссович | **ИЗДАН** (2021) | `Коссович 2021/В печать/kossovich-01.07.2021.pdf`; indd 2021-06 |" [ref=e847]'
+                    - row [ref=e849]:
+                      - cell [ref=e850] [cursor=pointer]
+                      - cell "33" [ref=e851] [cursor=pointer]
+                      - 'cell "+ | XI | Учебник Кудрявского | Д. Н. Кудрявский | **ИЗДАН** (2022) | `В печать/kudrjavsky_2022.pdf` 2022-07-10 |" [ref=e852]'
+                    - row [ref=e854]:
+                      - cell [ref=e855] [cursor=pointer]
+                      - cell "34" [ref=e856] [cursor=pointer]
+                      - 'cell "+ | XII | «Грамматический очерк санскрита» | А. А. Зализняк | **ИЗДАН** (2018) | `В печать/zaliznjak_ocherk_31.08.2018_nonumbers-zmej.pdf` + cover/vorsatz 2018-08 |" [ref=e857]'
+                    - row [ref=e859]:
+                      - cell [ref=e860] [cursor=pointer]
+                      - cell "35" [ref=e861] [cursor=pointer]
+                      - 'cell "+ | XIII | «Легенда» (Коссович, 1859; издание 2018) | Коссович (предв.) | **ИЗДАН** (2018) | `В печать/legenda_24.04.2018-220mm.indd`; `obl_legenda_PRESS_fin.pdf`; `Можайский полиграфический комбинат.txt` |" [ref=e862]'
+                    - row [ref=e864]:
+                      - cell [ref=e865] [cursor=pointer]
+                      - cell "36" [ref=e866] [cursor=pointer]
+                      - 'cell "+ | XIV | Индоарийские языки / Елизаренкова (источники) | Т. Я. Елизаренкова (предв.) | **НЕ НАЧАТ** | нет верстки; `03 Елизаренкова 2.doc` 2018; сторонние PDF 2004; eps обложки 2019 |" [ref=e867]'
+                    - row [ref=e869]:
+                      - cell [ref=e870] [cursor=pointer]
+                      - cell "37" [ref=e871] [cursor=pointer]
+                      - 'cell "+ | XV | Эмено, sandhi exercises (ebook 2020) | Эмено | **ИЗДАН** (ebook 2020) | `В печать/emeneau_12.06.2020_ebook.pdf`; `В печать/Сдано в печать/`; `ISBN.544691679.EPS` |" [ref=e872]'
+                    - row [ref=e874]:
+                      - cell [ref=e875] [cursor=pointer]
+                      - cell "38" [ref=e876] [cursor=pointer]
+                      - 'cell "+ | XVI | Синтаксис Шерцля | И. Я. Шерцль | **ИЗДАН** (2019) | `В печать/src/shercl-20.02.2019.indd`; договор/заявка 2021 |" [ref=e877]'
+                    - row [ref=e879]:
+                      - cell [ref=e880] [cursor=pointer]
+                      - cell "39" [ref=e881] [cursor=pointer]
+                      - 'cell "+ | XVII | Санскритско-русский словарь Кочергиной | В. А. Кочергина | **ИЗДАН** (2022) | `В печать/kochergina_block_15.03.2022.pdf`; `тестовая печать/` 2021 |" [ref=e882]'
+                    - row [ref=e884]:
+                      - cell [ref=e885] [cursor=pointer]
+                      - cell "40" [ref=e886] [cursor=pointer]
+                      - 'cell "+ | XVIII | «Канун древнеиндийской философии» | — | **В ПРАВКЕ** (финал блока 12.2022; на рассмотрении в Центре) | `В печать/Канун древнеиндийской философии.pdf` 2022-12-02; `В печать/Руководителю Центра исследования.pdf` 2022-12-03 |" [ref=e887]'
+                    - row [ref=e889]:
+                      - cell [ref=e890] [cursor=pointer]
+                      - cell "41" [ref=e891] [cursor=pointer]
+                      - cell "+ | XIX | Панини (Джинасу/Захарьин, задания) | — | **НЕ НАЧАТ** | исходники/Задания/библиотека паниниста; верстки нет |" [ref=e892]
+                    - row [ref=e894]:
+                      - cell [ref=e895] [cursor=pointer]
+                      - cell "42" [ref=e896] [cursor=pointer]
+                      - cell "+ | XX | Рену, Spécimens (23 фрагмента) | Л. Рену | **НЕ НАЧАТ** | 47 docx specimen 2020; верстки нет |" [ref=e897]
+                    - row [ref=e899]:
+                      - cell [ref=e900] [cursor=pointer]
+                      - cell "43" [ref=e901] [cursor=pointer]
+                      - cell "+ | XXI | Управление глагольных корней (Oertel) + Wikner RU | B. L. Oertel (предв.) | **НЕ НАЧАТ** | ~6 400 файлов сканов/OCR; верстки нет |" [ref=e902]
+                    - row [ref=e904]:
+                      - cell [ref=e905] [cursor=pointer]
+                      - cell "44" [ref=e906] [cursor=pointer]
+                      - 'cell "+ | XXII | Хрестоматия отечественной санскритологии | — | **НЕ НАЧАТ** | `!Хрестоматия отечественной санскритологии.docx` 2020 + собранные PDF-источники; верстки нет |" [ref=e907]'
+                    - row [ref=e909]:
+                      - cell [ref=e910] [cursor=pointer]
+                      - cell "45" [ref=e911] [cursor=pointer]
+                      - 'cell "+ | XXIII | Антология П. Петрова | П. Петров | **НЕ НАЧАТ** (план оглавления + сканы готовы) | `!содержание тома Павла Петрова.docx/pdf` 2021-03-17; `Антология/*.jpg`; в `В печать/` только портрет |" [ref=e912]'
+                    - row [ref=e914]:
+                      - cell [ref=e915] [cursor=pointer]
+                      - cell "46" [ref=e916] [cursor=pointer]
+                      - cell "+ | XXIV | «Глубок этот океан, потонуть в нем» | — | **НЕ НАЧАТ** | 1 docx 2020-12 + eps обложки |" [ref=e917]
+                    - row [ref=e919]:
+                      - cell [ref=e920] [cursor=pointer]
+                      - cell "47" [ref=e921] [cursor=pointer]
+                      - 'cell "+ | XXV | «Древнеиндийская философия» (Наследие 2022) | — | **В ПРАВКЕ** (сдано внешнему издательству — ознакомительный фрагмент circulating) | `Древнеиндийская философия (ознакомительный фрагмент).pdf` 2022-04-27; `Наследие 2022 вар1/вар2.pdf`; `Academy.zip` |" [ref=e922]'
+                    - row [ref=e924]:
+                      - cell [ref=e925] [cursor=pointer]
+                      - cell "48" [ref=e926] [cursor=pointer]
+                      - cell "+ | XXVI | «Эквивалентность морфем» (диплом Т. Андреевой) | Т. Андреева | **НЕ НАЧАТ** (источник) | docx+pdf 2021-02; верстки нет |" [ref=e927]
+                    - row [ref=e929]:
+                      - cell [ref=e930] [cursor=pointer]
+                      - cell "49" [ref=e931] [cursor=pointer]
+                      - 'cell "+ | XXVII | Фото-материалы (Минаев и пр.) | — | **НЕ НАЧАТ** | только изображения 2022 + `Минаев.txt` |" [ref=e932]'
+                    - row [ref=e934]:
+                      - cell [ref=e935] [cursor=pointer]
+                      - cell "50" [ref=e936] [cursor=pointer]
+                      - cell "+" [ref=e937]
+                    - row [ref=e938]:
+                      - cell [ref=e939] [cursor=pointer]
+                      - cell "51" [ref=e940] [cursor=pointer]
+                      - 'cell "+ **Итог: 14 издан · 2 в правке (XVIII, XXV) · 11 не начат** — подтверждает ruling MG 07-09: большая часть серии издана." [ref=e941]'
+                    - row [ref=e943]:
+                      - cell [ref=e944] [cursor=pointer]
+                      - cell "52" [ref=e945] [cursor=pointer]
+                      - cell "+" [ref=e946]
+                    - row [ref=e947]:
+                      - cell [ref=e948] [cursor=pointer]
+                      - cell "53" [ref=e949] [cursor=pointer]
+                      - 'cell "+ Сопутствующие папки: `32_Frisch` = исходники томов I–II (T-1/T-2, пакеты citanka-1/2, финальные PDF 2014-15); `33_Lihusina` = рабочая папка тома IV (компиляция/верстка/правка Лихушиной/сканы для сверки; верстка `lihusina-15.12.14.idml` — самая новая .indd-производная)." [ref=e950]'
+                    - row [ref=e952]:
+                      - cell [ref=e953] [cursor=pointer]
+                      - cell "54" [ref=e954] [cursor=pointer]
+                      - cell "+" [ref=e955]
+                    - row [ref=e956]:
+                      - cell [ref=e957] [cursor=pointer]
+                      - cell "55" [ref=e958] [cursor=pointer]
+                      - 'cell "+ ## @DECIDE — путь серии: reprint / e-publish / new-tom" [ref=e959]'
+                    - row [ref=e961]:
+                      - cell [ref=e962] [cursor=pointer]
+                      - cell "56" [ref=e963] [cursor=pointer]
+                      - cell "+" [ref=e964]
+                    - row [ref=e965]:
+                      - cell [ref=e966] [cursor=pointer]
+                      - cell "57" [ref=e967] [cursor=pointer]
+                      - 'cell "+ **Pre-ruled (MG 09-09-2026):** путь (б) электронное издание docx→mdx; pilot = Лихушина (выполнен: `LihushinaChrestomathy_2015_pilot.mdx`, extractor `tools/idml_to_mdx.py`; 92.9% лексического покрытия контроля-версты 09.2014)." [ref=e968]'
+                    - row [ref=e970]:
+                      - cell [ref=e971] [cursor=pointer]
+                      - cell "58" [ref=e972] [cursor=pointer]
+                      - cell "+" [ref=e973]
+                    - row [ref=e974]:
+                      - cell [ref=e975] [cursor=pointer]
+                      - cell "59" [ref=e976] [cursor=pointer]
+                      - 'cell "+ | # | Решение | Варианты | Рекомендация | Cost |" [ref=e977]'
+                    - row [ref=e979]:
+                      - cell [ref=e980] [cursor=pointer]
+                      - cell "60" [ref=e981] [cursor=pointer]
+                      - cell "+ |---|---|---|---|---|" [ref=e982]
+                    - row [ref=e984]:
+                      - cell [ref=e985] [cursor=pointer]
+                      - cell "61" [ref=e986] [cursor=pointer]
+                      - 'cell "+ | D1 | E-publish волна 1: какие из 14 изданных томов? | (а) сначала тома с живым `.idml` (I–VI переизд. волнa: I,II,IV… — idml есть у II,III,IV,V,XXX?) · (б) по продажному спросу (Ozon) · (в) все 14 подряд | (а) — idml-тома дают чистый текст без OCR; волна 1 = II, III, IV, V (idml подтверждён) | ~1-2 ч/том тем же экстрактором |" [ref=e987]'
+                    - row [ref=e989]:
+                      - cell [ref=e990] [cursor=pointer]
+                      - cell "62" [ref=e991] [cursor=pointer]
+                      - 'cell "+ | D2 | Reprint Фриша I–II (обложки 2023 готовы, печать 12.2022 была) | (а) допечатать тираж · (б) только e-publish · (в) оба | (б)+(в): e-publish дешево; reprint — по спросу (данных о продажах у меня нет) | решает MG |" [ref=e992]'
+                    - row [ref=e994]:
+                      - cell [ref=e995] [cursor=pointer]
+                      - cell "63" [ref=e996] [cursor=pointer]
+                      - 'cell "+ | D3 | Том XVIII «Канун…» — финал блока 12.2022 лежит в `В печать/` с письмом в Центр | (а) печатать · (б) e-publish без печатного тиража · (в) ждать ответ Центра | (в) — письмо 12.2022; статус рассмотрения неизвестен из файлов | решает MG |" [ref=e997]'
+                    - row [ref=e999]:
+                      - cell [ref=e1000] [cursor=pointer]
+                      - cell "64" [ref=e1001] [cursor=pointer]
+                      - cell "+ | D4 | Том XXV — внешний издатель (фрагмент 2022 circulating). Считать ли его частью серии? | (а) да, пометить «внешнее издательство» · (б) исключить из серии | (а) — фрагмент указывает на изданный где-то том; из федерального учета серии не терять | решает MG |" [ref=e1002]
+                    - row [ref=e1004]:
+                      - cell [ref=e1005] [cursor=pointer]
+                      - cell "65" [ref=e1006] [cursor=pointer]
+                      - 'cell "+ | D5 | 11 не начатых: приоритет или мораторий | (а) мораторий до e-publish изданных · (б) приоритет XXII (хрестоматия отеч. санскритологии — docx-источник почти готов) | (а), с исключением XXII в волну 2 | решает MG |" [ref=e1007]'
+                    - row [ref=e1009]:
+                      - cell [ref=e1010] [cursor=pointer]
+                      - cell "66" [ref=e1011] [cursor=pointer]
+                      - cell "+" [ref=e1012]
+                    - row [ref=e1013]:
+                      - cell [ref=e1014] [cursor=pointer]
+                      - cell "67" [ref=e1015] [cursor=pointer]
+                      - 'cell "+ Примечание к D1: у части изданных томов (I, IX–XIII, XV–XVII) `.idml` в списке не виден — извлечение тогда из финального PDF (PyMuPDF; poppler на кириллице запрещён) или запрос `.idml` у верстальщика." [ref=e1016]'
+                    - row [ref=e1018]:
+                      - cell [ref=e1019] [cursor=pointer]
+                      - cell "68" [ref=e1020] [cursor=pointer]
+                      - cell "+" [ref=e1021]
+                    - row [ref=e1022]:
+                      - cell [ref=e1023] [cursor=pointer]
+                      - cell "69" [ref=e1024] [cursor=pointer]
+                      - 'cell "+ ## Limitations" [ref=e1025]'
+                    - row [ref=e1027]:
+                      - cell [ref=e1028] [cursor=pointer]
+                      - cell "70" [ref=e1029] [cursor=pointer]
+                      - cell "+" [ref=e1030]
+                    - row [ref=e1031]:
+                      - cell [ref=e1032] [cursor=pointer]
+                      - cell "71" [ref=e1033] [cursor=pointer]
+                      - cell "+ - Attribution «предв.» = вывод из имён файлов, не из титулов; D-решения не зависят от атрибуции." [ref=e1034]
+                    - row [ref=e1036]:
+                      - cell [ref=e1037] [cursor=pointer]
+                      - cell "72" [ref=e1038] [cursor=pointer]
+                      - cell "+ - mtime yadisk ≠ дата издания; состояния классифицированы консервативно (печать = только при прямых print-артефактах)." [ref=e1039]
+                    - row [ref=e1041]:
+                      - cell [ref=e1042] [cursor=pointer]
+                      - cell "73" [ref=e1043] [cursor=pointer]
+                      - cell "+ - Внутритомовые вспомогательные папки (Links/, Document fonts/) учитывались только как шум; содержание не читалось (derived-only, файлы не коммитятся)." [ref=e1044]
+                    - row [ref=e1046]:
+                      - cell [ref=e1047] [cursor=pointer]
+                      - cell "74" [ref=e1048] [cursor=pointer]
+                      - cell "+" [ref=e1049]
+                    - row [ref=e1050]:
+                      - cell [ref=e1051] [cursor=pointer]
+                      - cell "75" [ref=e1052] [cursor=pointer]
+                      - cell "+ _Dr. Mārcis Gasūns_" [ref=e1053]
+              - generic [ref=e1056]:
+                - generic [ref=e1057]:
+                  - generic [ref=e1058]:
+                    - button "Toggle diff contents" [expanded] [ref=e1059] [cursor=pointer]
+                    - generic [ref=e1062]: "17 changes: 17 additions & 0 deletions"
+                    - generic [aria-hidden] [ref=e1063]: "17"
+                    - generic [ref=e1069]:
+                      - link "BibliothecaSanscritica/CHANGELOG.md" [ref=e1070] [cursor=pointer]:
+                        - /url: "#diff-0eb86d6fc3853848a1d96c2327eb5579ec891c171597ec91a93b9c65ee263fb9"
+                      - button "Copy" [ref=e1072]
+                  - generic [ref=e1078]:
+                    - generic [ref=e1079]:
+                      - button "Display the source diff" [ref=e1081] [cursor=pointer]
+                      - button "Display the rich diff" [ref=e1085] [cursor=pointer]
+                    - group [ref=e1088]:
+                      - button [ref=e1089] [cursor=pointer]:
+                        - img "Show options" [ref=e1091]
+                - table [ref=e1096]:
+                  - rowgroup [ref=e1097]:
+                    - row [ref=e1098]:
+                      - columnheader "Original file line number" [ref=e1099]
+                      - columnheader "Diff line number" [ref=e1100]
+                      - columnheader "Diff line change" [ref=e1101]
+                  - rowgroup [ref=e1106]:
+                    - row [ref=e1107]:
+                      - cell "..." [ref=e1108]
+                      - cell "..." [ref=e1109]
+                      - cell "@@ -0,0 +1,17 @@" [ref=e1110]
+                    - row [ref=e1111]:
+                      - cell [ref=e1112] [cursor=pointer]
+                      - cell "1" [ref=e1113] [cursor=pointer]
+                      - 'cell "+ # Changelog — Bibliotheca Sanscritica (series)" [ref=e1114]'
+                    - row [ref=e1116]:
+                      - cell [ref=e1117] [cursor=pointer]
+                      - cell "2" [ref=e1118] [cursor=pointer]
+                      - cell "+" [ref=e1119]
+                    - row [ref=e1120]:
+                      - cell [ref=e1121] [cursor=pointer]
+                      - cell "3" [ref=e1122] [cursor=pointer]
+                      - 'cell "+ _Created: 10-09-2026 · Last updated: 10-09-2026_" [ref=e1123]'
+                    - row [ref=e1125]:
+                      - cell [ref=e1126] [cursor=pointer]
+                      - cell "4" [ref=e1127] [cursor=pointer]
+                      - cell "+" [ref=e1128]
+                    - row [ref=e1129]:
+                      - cell [ref=e1130] [cursor=pointer]
+                      - cell "5" [ref=e1131] [cursor=pointer]
+                      - 'cell "+ ## [Unreleased]" [ref=e1132]'
+                    - row [ref=e1134]:
+                      - cell [ref=e1135] [cursor=pointer]
+                      - cell "6" [ref=e1136] [cursor=pointer]
+                      - cell "+" [ref=e1137]
+                    - row [ref=e1138]:
+                      - cell [ref=e1139] [cursor=pointer]
+                      - cell "7" [ref=e1140] [cursor=pointer]
+                      - 'cell "+ - H4484 (OxAlpha, glm-5.3-flash): series onboarded — 27-tom state census" [ref=e1141]'
+                    - row [ref=e1143]:
+                      - cell [ref=e1144] [cursor=pointer]
+                      - cell "8" [ref=e1145] [cursor=pointer]
+                      - cell "+ (14 издан / 2 в правке / 11 не начат, evidence per tom, @DECIDE memo D1–D5" [ref=e1146]
+                    - row [ref=e1148]:
+                      - cell [ref=e1149] [cursor=pointer]
+                      - cell "9" [ref=e1150] [cursor=pointer]
+                      - cell "+ reprint/e-publish/new-tom) in" [ref=e1151]
+                    - row [ref=e1153]:
+                      - cell [ref=e1154] [cursor=pointer]
+                      - cell "10" [ref=e1155] [cursor=pointer]
+                      - cell "+ [BIBLIOTHECA_SANSCRITICA_CENSUS_2026-09-10.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/BIBLIOTHECA_SANSCRITICA_CENSUS_2026-09-10.md);" [ref=e1156]
+                    - row [ref=e1158]:
+                      - cell [ref=e1159] [cursor=pointer]
+                      - cell "11" [ref=e1160] [cursor=pointer]
+                      - cell "+ pilot digital edition of the Lihushina chrestomathy from the newest" [ref=e1161]
+                    - row [ref=e1163]:
+                      - cell [ref=e1164] [cursor=pointer]
+                      - cell "12" [ref=e1165] [cursor=pointer]
+                      - 'cell "+ .indd-derived source (`lihusina-15.12.14.idml`, verbatim, 36 stories, 2 628" [ref=e1166]'
+                    - row [ref=e1168]:
+                      - cell [ref=e1169] [cursor=pointer]
+                      - cell "13" [ref=e1170] [cursor=pointer]
+                      - cell "+ paragraphs, 75 918 Devanagari chars; 92.9% lexical coverage vs the 09.2014" [ref=e1171]
+                    - row [ref=e1173]:
+                      - cell [ref=e1174] [cursor=pointer]
+                      - cell "14" [ref=e1175] [cursor=pointer]
+                      - cell "+ control versta) in" [ref=e1176]
+                    - row [ref=e1178]:
+                      - cell [ref=e1179] [cursor=pointer]
+                      - cell "15" [ref=e1180] [cursor=pointer]
+                      - cell "+ [LihushinaChrestomathy_2015/](https://github.com/gasyoun/SanskritGrammar/tree/main/BibliothecaSanscritica/LihushinaChrestomathy_2015)" [ref=e1181]
+                    - row [ref=e1183]:
+                      - cell [ref=e1184] [cursor=pointer]
+                      - cell "16" [ref=e1185] [cursor=pointer]
+                      - cell "+ via [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)." [ref=e1186]
+                    - row [ref=e1188]:
+                      - cell [ref=e1189] [cursor=pointer]
+                      - cell "17" [ref=e1190] [cursor=pointer]
+                      - 'cell "+ Derived-only: no InDesign binaries committed." [ref=e1191]'
+            - generic [ref=e1193]: Loading
+  - contentinfo [ref=e1201]:
+    - heading "Footer" [level=2] [ref=e1202]
+    - generic [ref=e1203]:
+      - generic [ref=e1204]:
+        - link "GitHub Homepage" [ref=e1205] [cursor=pointer]:
+          - /url: https://github.com
+        - generic [ref=e1208]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1209]:
+        - heading "Footer navigation" [level=3] [ref=e1210]
+        - list "Footer navigation" [ref=e1211]:
+          - listitem [ref=e1212]:
+            - link "Terms" [ref=e1213] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1214]:
+            - link "Privacy" [ref=e1215] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1216]:
+            - link "Security" [ref=e1217] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1218]:
+            - link "Status" [ref=e1219] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1220]:
+            - link "Community" [ref=e1221] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1222]:
+            - link "Docs" [ref=e1223] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1224]:
+            - link "Contact" [ref=e1225] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1226]:
+            - button "Manage cookies" [ref=e1228] [cursor=pointer]
+          - listitem [ref=e1229]:
+            - button "Do not share my personal information" [ref=e1231] [cursor=pointer]

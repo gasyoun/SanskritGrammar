@@ -62,6 +62,7 @@ LEDGER_PATH = ROOT / "sangram" / "editorial" / "data" / "consolidation_ledger.js
 SCHEMA_PATH = ROOT / "sangram" / "editorial" / "data" / "consolidation_ledger.schema.json"
 DCS_LEDGER_PATH = ROOT / "DCS_DERIVED_NUMBERS_LEDGER_2026.md"
 ARTICLES_DIR = ROOT / "sangram" / "articles"
+MIGRATED_ARTICLES_DIR = ROOT / "content" / "sangram" / "articles"
 REVIEW_DIR = ROOT / "review"
 
 if str(HERE) not in sys.path:
@@ -130,7 +131,17 @@ REVIEW_ID_ALIASES = {
 
 
 def manifest_path(slug: str) -> Path:
+    migrated = MIGRATED_ARTICLES_DIR / slug / "article.manifest.json"
+    if migrated.exists():
+        return migrated
     return ARTICLES_DIR / slug / "article.manifest.json"
+
+
+def article_manifests() -> list[Path]:
+    return sorted([
+        *ARTICLES_DIR.glob("*/article.manifest.json"),
+        *MIGRATED_ARTICLES_DIR.glob("*/article.manifest.json"),
+    ])
 
 
 def toc_short_code(toc_ref: str) -> str:
@@ -188,7 +199,7 @@ _ANCHOR_SLUG_RE = re.compile(r"^([a-z][a-z0-9-]*):\d+")
 
 
 def _known_slugs() -> set[str]:
-    return {p.parent.name for p in ARTICLES_DIR.glob("*/article.manifest.json")}
+    return {p.parent.name for p in article_manifests()}
 
 
 def parse_dcs_ledger() -> dict[str, list[tuple[str, str, str]]]:
@@ -328,7 +339,7 @@ def build_ledger(today: str, build_status: str) -> dict:
 
     # -- baseline-integrity gate ------------------------------------------
     live_candidates = {
-        p.parent.name for p in ARTICLES_DIR.glob("*/article.manifest.json")
+        p.parent.name for p in article_manifests()
         if compute_revision_state(p.parent.name) == "candidate"
     }
     frozen_slugs = [slug for _, slug in FROZEN_BASELINE]
@@ -358,7 +369,7 @@ def build_ledger(today: str, build_status: str) -> dict:
         row = {
             "toc_ref": toc_ref,
             "art_id": f"art:{slug}",
-            "path": f"sangram/articles/{slug}/article.manifest.json",
+            "path": manifest_path(slug).relative_to(ROOT).as_posix(),
             "revision_state": compute_revision_state(slug),
             "rederivation_evidence": compute_rederivation_evidence(slug, dcs_by_slug),
             "visa_evidence": compute_visa_evidence(toc_ref, slug, local_votes, prior_row),
@@ -371,7 +382,7 @@ def build_ledger(today: str, build_status: str) -> dict:
         baseline_rows.append(row)
 
     published_rows = [
-        {"toc_ref": t, "art_id": f"art:{s}", "path": f"sangram/articles/{s}/article.manifest.json"}
+        {"toc_ref": t, "art_id": f"art:{s}", "path": manifest_path(s).relative_to(ROOT).as_posix()}
         for t, s in PUBLISHED_AT_FREEZE
     ]
 

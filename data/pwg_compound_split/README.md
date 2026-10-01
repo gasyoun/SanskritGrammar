@@ -70,6 +70,18 @@ or neither.
 - **Compound-formation pedagogy** — worked samāsa resolutions.
 - **pwg_ru translation** — attach the member analysis as a structured field.
 
+## Cross-check vs DCS attested compounds (H4712, 15-09-2026)
+
+Census A6: 17,112 rows × DCS Kompozity `names.csv` (168,880 attested compound
+word-forms; kosha dataset `dcs-compound-dictionary`). Outcome: **577 attested
+(3.4 %) · 3,353 prefix-evidence (19.6 %) · 13,182 absent-from-this-set (77 %)**;
+arity agreement on the attested overlap **576/577 (99.8 %)**. Low exact-overlap is
+the stem-vs-word-form keying, not a defect; no counter-evidence against any split.
+Full report:
+[`reports/PWG_SPLITS_VS_DCS_NAMES_XCHECK_15.09.2026.md`](../../reports/PWG_SPLITS_VS_DCS_NAMES_XCHECK_15.09.2026.md)
+· join TSV: [`pwg_splits_vs_dcs_names.tsv`](pwg_splits_vs_dcs_names.tsv)
+· regen: `scripts/build_pwg_splits_dcs_names_xcheck.py` (selftest: `--selftest`).
+
 Sibling cheap PWG layers from the same source: derivation (`von {#base#}`, the taddhita
 dataset), the [Pāṇini sūtra crosswalk](../pwg_panini_crosswalk/README.md), and German
 sense glosses.

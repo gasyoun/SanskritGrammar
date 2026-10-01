@@ -13,6 +13,7 @@ import AtlasAttentionView from '@site/src/components/AtlasAttentionView';
 import AtlasValueChain from '@site/src/components/AtlasValueChain';
 import AtlasReuseView from '@site/src/components/AtlasReuseView';
 import AtlasDependencies from '@site/src/components/AtlasDependencies';
+import AtlasFeatures from '@site/src/components/AtlasFeatures';
 
 const VIEW_REGISTRY = {
   provenance: AtlasProvenance,
@@ -20,6 +21,7 @@ const VIEW_REGISTRY = {
   'value-chain': AtlasValueChain, // slot B4 (H627)
   reuse: AtlasReuseView, // slot B3 (H630)
   dependencies: AtlasDependencies, // slot B5 (H620)
+  features: AtlasFeatures, // contract 1.1.1 join view (H3509)
 };
 
 const tabStyle = (isActive, isReady) => ({
@@ -105,7 +107,7 @@ export default function AtlasUnified({ bundle }) {
     <div>
       <div
         role="tablist"
-        aria-label="Пять представлений атласа"
+        aria-label="Представления атласа"
         style={{
           display: 'flex',
           flexWrap: 'wrap',

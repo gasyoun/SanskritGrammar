@@ -1,0 +1,207 @@
+{
+  "handoff": "H4479",
+  "source": "yadisk:Sanskrityatina/34_Диссертация/Итоговый текст",
+  "method": "PyMuPDF text-layer extraction (pdftotext forbidden on Cyrillic)",
+  "pdf_page_eq_printed_page": true,
+  "volumes": {
+    "01_gasuns-dhatu-PhD-ref": {
+      "role": "автореферат (author's résumé)",
+      "title": "СОСТАВ И СТРОЙ ДРЕВНЕИНДИЙСКИХ КОРНЕЙ: ИСТОРИЯ ИЗУЧЕНИЯ",
+      "pdf_pages": [
+        1,
+        23
+      ],
+      "printed_pages": null
+    },
+    "02_gasuns-dhatu-PhD-text": {
+      "role": "основной текст диссертации",
+      "pdf_pages": [
+        1,
+        223
+      ],
+      "printed_pages": null
+    },
+    "03_01-gasuns-dhatu-suppl": {
+      "role": "Приложение 1 — список корней Уитни и Бакнелла",
+      "pdf_pages": [
+        1,
+        7
+      ],
+      "printed_pages": [
+        224,
+        232
+      ]
+    },
+    "04_02-gasuns-dhatu-suppl": {
+      "role": "Приложение 2 — корни Уитни по префиксам",
+      "pdf_pages": [
+        1,
+        7
+      ],
+      "printed_pages": [
+        233,
+        239
+      ]
+    },
+    "05_03-gasuns-dhatu-suppl": {
+      "role": "Приложение 3 — конкорданс корней Palsule/Whitney/Mayrhofer EWA/Werba VIA/Böhtlingk PWG (цель PALSULE_AUDIT)",
+      "pdf_pages": [
+        1,
+        236
+      ],
+      "printed_pages": [
+        240,
+        475
+      ]
+    },
+    "06_04-gasuns-dhatu-suppl": {
+      "role": "Приложение 4 — список корней Ж. Юэта (580 корней)",
+      "pdf_pages": [
+        1,
+        3
+      ],
+      "printed_pages": [
+        477,
+        479
+      ]
+    },
+    "07_05-gasuns-dhatu-suppl": {
+      "role": "Приложение 5 — бинарное сопоставление книг-источников",
+      "pdf_pages": [
+        1,
+        9
+      ],
+      "printed_pages": [
+        480,
+        488
+      ]
+    }
+  },
+  "toc_main_text": [
+    {
+      "section": "Введение",
+      "printed_page": 4
+    },
+    {
+      "section": "Используемая терминология",
+      "printed_page": 17
+    },
+    {
+      "section": "Отбор материала",
+      "printed_page": 19
+    },
+    {
+      "section": "Неиспользование реконструкций",
+      "printed_page": 21
+    },
+    {
+      "section": "Обзор литературы",
+      "printed_page": 22
+    },
+    {
+      "section": "Индийские исследования",
+      "printed_page": 28
+    },
+    {
+      "section": "Европейские исследования",
+      "printed_page": 34
+    },
+    {
+      "section": "Глава 1. Структура древнеиндийского перечня корней",
+      "printed_page": 51
+    },
+    {
+      "section": "1.1. Зарождение грамматического анализа в Индии",
+      "printed_page": 51
+    },
+    {
+      "section": "1.2. Индийские способы цитирования корней",
+      "printed_page": 60
+    },
+    {
+      "section": "1.3. Роль корня в системе древнеиндийского языка",
+      "printed_page": 66
+    },
+    {
+      "section": "1.4. Устройство dhātupāṭha",
+      "printed_page": 69
+    },
+    {
+      "section": "Выводы по первой главе",
+      "printed_page": 78
+    },
+    {
+      "section": "Глава 2. Понятие глагольного корня и их количество",
+      "printed_page": 80
+    },
+    {
+      "section": "2.1. Понятие dhātu и его интерпретация в лингвистике",
+      "printed_page": 80
+    },
+    {
+      "section": "2.2. Формальные показатели корня",
+      "printed_page": 88
+    },
+    {
+      "section": "2.3. Первичные и вторичные корни",
+      "printed_page": 95
+    },
+    {
+      "section": "2.4. Количество корней в санскрите",
+      "printed_page": 109
+    },
+    {
+      "section": "2.6. Статистические характеристики санскрита",
+      "printed_page": 114
+    },
+    {
+      "section": "2.6. Распределение рядов согласных",
+      "printed_page": 120
+    },
+    {
+      "section": "Выводы по второй главе",
+      "printed_page": 124
+    },
+    {
+      "section": "Глава 3. Строй корня и способы морфонологической записи",
+      "printed_page": 126
+    },
+    {
+      "section": "3.1. Структура глагольного корня",
+      "printed_page": 127
+    },
+    {
+      "section": "3.2. Способы морфонологической записи",
+      "printed_page": 137
+    },
+    {
+      "section": "3.3. Известные классификации и списки корней",
+      "printed_page": 142
+    },
+    {
+      "section": "3.4. Материалы для конкорданса древнеиндийских корней",
+      "printed_page": 165
+    },
+    {
+      "section": "Выводы по третьей главе",
+      "printed_page": 183
+    },
+    {
+      "section": "Заключение",
+      "printed_page": 184
+    },
+    {
+      "section": "Принятые сокращения",
+      "printed_page": 186
+    },
+    {
+      "section": "Cписок иллюстратитвного материала",
+      "printed_page": 187
+    },
+    {
+      "section": "Библиография",
+      "printed_page": 188
+    }
+  ],
+  "toc_entry_count": 31
+}

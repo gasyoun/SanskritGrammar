@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 05-09-2026_
+
 # A61 manuscript, source, and venue gate
 
 **Date:** 18 July 2026
@@ -49,7 +51,7 @@ Retained exact empirical figures are limited to locally reproducible evidence:
 - 52,498 OBS-T events / 43 dictionaries / 208 release-safe labels;
 - sixteen normalized non-bot Git identities;
 - five maximum annual OBS-Q implementers and 64–100% annual lead share;
-- 323,425 union headwords; 105 pairwise comparisons; BHS 58.7% unique;
+- 323,422 union headwords; 105 pairwise comparisons; BHS 58.7% unique;
   Cappeller 0.6% unique;
 - 94,753 MW–PWG common lemmas;
 - 828,505 canonicalised citations resolving to 912 texts.
@@ -100,3 +102,5 @@ The csl lane completed the following reconciliation in `a61-history-v1.1`
 - Add page locators before retaining specific Jachertz-derived historical
   assertions.
 - Author-review participant roles, byline/affiliation, and all testimony.
+
+_Dr. Mārcis Gasūns_

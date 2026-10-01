@@ -1,0 +1,468 @@
+{
+ "instrument": "imperfect_switching_stats.py over dcs_full.sqlite (dcs-conllu 04e0778)",
+ "prereg": "Uprava/QUESTIONS_LOG.md T2607-26 (frozen before first run)",
+ "version": "v0.49 (H3966 mood-guarded re-run)",
+ "supersedes": "imperfect_switching_stats.json (v0.48.0, mood-unguarded; kept as the pre-registration record, not retracted)",
+ "mood_guard": "feat_mood='Ind'",
+ "mood_guard_effect": {
+  "guard": "feat_mood='Ind'",
+  "kept_indicative": {
+   "AOR": 12054,
+   "IMPF": 46695,
+   "PERF": 77229
+  },
+  "dropped_non_indicative": {
+   "PERF": {
+    "Imp": 1700,
+    "Jus": 4067,
+    "Opt": 1065,
+    "Prec": 577,
+    "Sub": 1317
+   }
+  },
+  "dropped_total": 8726
+ },
+ "seed": 20260717,
+ "n_perm": 1000,
+ "design": {
+  "window_sents": 5,
+  "chain_neighbours": 6,
+  "chain_min_perf": 4,
+  "content_upos": [
+   "NOUN",
+   "VERB",
+   "PROPN",
+   "ADJ"
+  ]
+ },
+ "slices": {
+  "classical": {
+   "texts": 14,
+   "category_tokens": {
+    "PERF": 7329,
+    "AOR": 1939,
+    "IMPF": 5558
+   },
+   "markov": {
+    "IMPF": {
+     "IMPF": {
+      "p": 0.4721,
+      "lift": 1.26,
+      "n": 2622
+     },
+     "PERF": {
+      "p": 0.3682,
+      "lift": 0.74,
+      "n": 2045
+     },
+     "AOR": {
+      "p": 0.1597,
+      "lift": 1.22,
+      "n": 887
+     }
+    },
+    "PERF": {
+     "IMPF": {
+      "p": 0.2781,
+      "lift": 0.74,
+      "n": 2036
+     },
+     "PERF": {
+      "p": 0.6291,
+      "lift": 1.27,
+      "n": 4605
+     },
+     "AOR": {
+      "p": 0.0928,
+      "lift": 0.71,
+      "n": 679
+     }
+    },
+    "AOR": {
+     "IMPF": {
+      "p": 0.4639,
+      "lift": 1.24,
+      "n": 899
+     },
+     "PERF": {
+      "p": 0.3442,
+      "lift": 0.7,
+      "n": 667
+     },
+     "AOR": {
+      "p": 0.192,
+      "lift": 1.47,
+      "n": 372
+     }
+    }
+   },
+   "runs_tests": {
+    "Kathāsaritsāgara": {
+     "observed_runs": 1185,
+     "impf_tokens": 1902,
+     "seq_len": 5520,
+     "expected_runs_shuffled": 1247.9,
+     "p_clustering_le": 0.0
+    },
+    "Bhāratamañjarī": {
+     "observed_runs": 906,
+     "impf_tokens": 1369,
+     "seq_len": 4337,
+     "expected_runs_shuffled": 937.0,
+     "p_clustering_le": 0.023
+    },
+    "Bṛhatkathāślokasaṃgraha": {
+     "observed_runs": 346,
+     "impf_tokens": 1215,
+     "seq_len": 1782,
+     "expected_runs_shuffled": 386.9,
+     "p_clustering_le": 0.0
+    },
+    "Daśakumāracarita": {
+     "observed_runs": 265,
+     "impf_tokens": 639,
+     "seq_len": 1152,
+     "expected_runs_shuffled": 285.0,
+     "p_clustering_le": 0.011
+    },
+    "Harṣacarita": {
+     "observed_runs": 163,
+     "impf_tokens": 333,
+     "seq_len": 778,
+     "expected_runs_shuffled": 191.2,
+     "p_clustering_le": 0.0
+    }
+   },
+   "turnover": {
+    "texts_with_chains": 8,
+    "impf_insertion_points": 1521,
+    "background_perf_points": 3183,
+    "mean_turnover_at_impf": 0.9539,
+    "mean_turnover_at_perf": 0.9579,
+    "diff": -0.004,
+    "p_one_sided": 1.0
+   }
+  },
+  "epic": {
+   "texts": 6,
+   "category_tokens": {
+    "PERF": 32147,
+    "IMPF": 22206,
+    "AOR": 2389
+   },
+   "markov": {
+    "IMPF": {
+     "IMPF": {
+      "p": 0.4782,
+      "lift": 1.22,
+      "n": 10618
+     },
+     "PERF": {
+      "p": 0.4784,
+      "lift": 0.84,
+      "n": 10623
+     },
+     "AOR": {
+      "p": 0.0434,
+      "lift": 1.03,
+      "n": 963
+     }
+    },
+    "PERF": {
+     "IMPF": {
+      "p": 0.3302,
+      "lift": 0.84,
+      "n": 10615
+     },
+     "PERF": {
+      "p": 0.6341,
+      "lift": 1.12,
+      "n": 20383
+     },
+     "AOR": {
+      "p": 0.0356,
+      "lift": 0.85,
+      "n": 1145
+     }
+    },
+    "AOR": {
+     "IMPF": {
+      "p": 0.4073,
+      "lift": 1.04,
+      "n": 973
+     },
+     "PERF": {
+      "p": 0.4751,
+      "lift": 0.84,
+      "n": 1135
+     },
+     "AOR": {
+      "p": 0.1176,
+      "lift": 2.79,
+      "n": 281
+     }
+    }
+   },
+   "runs_tests": {
+    "Mahābhārata": {
+     "observed_runs": 9037,
+     "impf_tokens": 17887,
+     "seq_len": 43607,
+     "expected_runs_shuffled": 10548.8,
+     "p_clustering_le": 0.0
+    },
+    "Rāmāyaṇa": {
+     "observed_runs": 1800,
+     "impf_tokens": 3083,
+     "seq_len": 8932,
+     "expected_runs_shuffled": 2019.5,
+     "p_clustering_le": 0.0
+    },
+    "Harivaṃśa": {
+     "observed_runs": 686,
+     "impf_tokens": 1149,
+     "seq_len": 3386,
+     "expected_runs_shuffled": 759.3,
+     "p_clustering_le": 0.0
+    },
+    "Carakasaṃhitā": {
+     "observed_runs": 24,
+     "impf_tokens": 33,
+     "seq_len": 335,
+     "expected_runs_shuffled": 29.8,
+     "p_clustering_le": 0.001
+    },
+    "Suśrutasaṃhitā": {
+     "observed_runs": 16,
+     "impf_tokens": 18,
+     "seq_len": 320,
+     "expected_runs_shuffled": 17.0,
+     "p_clustering_le": 0.247
+    }
+   },
+   "turnover": {
+    "texts_with_chains": 6,
+    "impf_insertion_points": 8157,
+    "background_perf_points": 18577,
+    "mean_turnover_at_impf": 0.9407,
+    "mean_turnover_at_perf": 0.9384,
+    "diff": 0.0023,
+    "p_one_sided": 0.0
+   }
+  },
+  "puranic": {
+   "texts": 7,
+   "category_tokens": {
+    "PERF": 11509,
+    "IMPF": 4286,
+    "AOR": 1086
+   },
+   "markov": {
+    "IMPF": {
+     "IMPF": {
+      "p": 0.3299,
+      "lift": 1.3,
+      "n": 1414
+     },
+     "PERF": {
+      "p": 0.5964,
+      "lift": 0.87,
+      "n": 2556
+     },
+     "AOR": {
+      "p": 0.0737,
+      "lift": 1.15,
+      "n": 316
+     }
+    },
+    "PERF": {
+     "IMPF": {
+      "p": 0.2195,
+      "lift": 0.86,
+      "n": 2525
+     },
+     "PERF": {
+      "p": 0.7297,
+      "lift": 1.07,
+      "n": 8393
+     },
+     "AOR": {
+      "p": 0.0508,
+      "lift": 0.79,
+      "n": 584
+     }
+    },
+    "AOR": {
+     "IMPF": {
+      "p": 0.3168,
+      "lift": 1.25,
+      "n": 344
+     },
+     "PERF": {
+      "p": 0.512,
+      "lift": 0.75,
+      "n": 556
+     },
+     "AOR": {
+      "p": 0.1713,
+      "lift": 2.66,
+      "n": 186
+     }
+    }
+   },
+   "runs_tests": {
+    "Matsyapurāṇa": {
+     "observed_runs": 647,
+     "impf_tokens": 1021,
+     "seq_len": 3631,
+     "expected_runs_shuffled": 734.1,
+     "p_clustering_le": 0.0
+    },
+    "Viṣṇupurāṇa": {
+     "observed_runs": 457,
+     "impf_tokens": 637,
+     "seq_len": 3122,
+     "expected_runs_shuffled": 507.2,
+     "p_clustering_le": 0.0
+    },
+    "Bhāgavatapurāṇa": {
+     "observed_runs": 507,
+     "impf_tokens": 773,
+     "seq_len": 2703,
+     "expected_runs_shuffled": 552.2,
+     "p_clustering_le": 0.0
+    },
+    "Liṅgapurāṇa": {
+     "observed_runs": 403,
+     "impf_tokens": 623,
+     "seq_len": 2484,
+     "expected_runs_shuffled": 466.6,
+     "p_clustering_le": 0.0
+    },
+    "Skandapurāṇa (Revākhaṇḍa)": {
+     "observed_runs": 395,
+     "impf_tokens": 533,
+     "seq_len": 2378,
+     "expected_runs_shuffled": 413.8,
+     "p_clustering_le": 0.016
+    }
+   },
+   "turnover": {
+    "texts_with_chains": 7,
+    "impf_insertion_points": 2368,
+    "background_perf_points": 8657,
+    "mean_turnover_at_impf": 0.9474,
+    "mean_turnover_at_perf": 0.9458,
+    "diff": 0.0016,
+    "p_one_sided": 0.075
+   }
+  },
+  "vedic": {
+   "texts": 14,
+   "category_tokens": {
+    "PERF": 13833,
+    "IMPF": 10746,
+    "AOR": 3532
+   },
+   "markov": {
+    "IMPF": {
+     "IMPF": {
+      "p": 0.7204,
+      "lift": 1.88,
+      "n": 7739
+     },
+     "PERF": {
+      "p": 0.2084,
+      "lift": 0.42,
+      "n": 2239
+     },
+     "AOR": {
+      "p": 0.0711,
+      "lift": 0.57,
+      "n": 764
+     }
+    },
+    "PERF": {
+     "IMPF": {
+      "p": 0.1623,
+      "lift": 0.42,
+      "n": 2244
+     },
+     "PERF": {
+      "p": 0.7475,
+      "lift": 1.52,
+      "n": 10335
+     },
+     "AOR": {
+      "p": 0.0903,
+      "lift": 0.72,
+      "n": 1248
+     }
+    },
+    "AOR": {
+     "IMPF": {
+      "p": 0.2154,
+      "lift": 0.56,
+      "n": 760
+     },
+     "PERF": {
+      "p": 0.354,
+      "lift": 0.72,
+      "n": 1249
+     },
+     "AOR": {
+      "p": 0.4306,
+      "lift": 3.43,
+      "n": 1519
+     }
+    }
+   },
+   "runs_tests": {
+    "Ṛgveda": {
+     "observed_runs": 766,
+     "impf_tokens": 1496,
+     "seq_len": 6012,
+     "expected_runs_shuffled": 1124.5,
+     "p_clustering_le": 0.0
+    },
+    "Śatapathabrāhmaṇa": {
+     "observed_runs": 503,
+     "impf_tokens": 1703,
+     "seq_len": 4637,
+     "expected_runs_shuffled": 1077.6,
+     "p_clustering_le": 0.0
+    },
+    "Jaiminīyabrāhmaṇa": {
+     "observed_runs": 299,
+     "impf_tokens": 1361,
+     "seq_len": 2650,
+     "expected_runs_shuffled": 662.2,
+     "p_clustering_le": 0.0
+    },
+    "Atharvaveda (Śaunaka)": {
+     "observed_runs": 247,
+     "impf_tokens": 541,
+     "seq_len": 2441,
+     "expected_runs_shuffled": 421.3,
+     "p_clustering_le": 0.0
+    },
+    "Aitareyabrāhmaṇa": {
+     "observed_runs": 188,
+     "impf_tokens": 818,
+     "seq_len": 2316,
+     "expected_runs_shuffled": 529.6,
+     "p_clustering_le": 0.0
+    }
+   },
+   "turnover": {
+    "texts_with_chains": 14,
+    "impf_insertion_points": 1222,
+    "background_perf_points": 9410,
+    "mean_turnover_at_impf": 0.9131,
+    "mean_turnover_at_perf": 0.888,
+    "diff": 0.0252,
+    "p_one_sided": 0.0
+   }
+  }
+ }
+}

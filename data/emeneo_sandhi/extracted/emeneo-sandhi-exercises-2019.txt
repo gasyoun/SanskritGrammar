@@ -1,0 +1,462 @@
+SANSKRIT
+SANDHI
+AND
+EXERCISES
+SECOND
+REVISED EDITION
+By M. B. EMENEAU
+and
+B.A.VAN NOOTEN
+1968, 1Е ИЗД. 1952
+Санскрит:
+сандхи и
+упражнения
+2-е, исп. изд.
+М.Б. Эмено, Б.А. ван Нотен.
+Перевод с англ. М.Ю. Гасунса
+2017PREFACE TO THE FIRST EDITION
+Sanskrit has long been taught in conjunction with the elements of Indo-European historical grammar. Its potentialities as means of induction of students into methods of descriptive grammar have seldom been utilized in an explicit way. And this in spite of the honored priority and eminence of Pāṇini ( ? circa 5th century B.C.) as a descriptive grammarian William Dwight Whitney (1827-1894) as an arranger of Panini grammar for Western use. Perhaps the chief reason for this neglect is the fact that Whitney's Sanskrit Grammar is not in form a perfect beginner's book, even though his famous use of large and small print was intended to make it that. The device breaks down in chapter III, "Rules of euphonic combination," where much that even the beginner needs to know is given in small print and it is therefore impossible for the beginner in Sanskrit or for the non-Sanskritist descriptivist to find his way around with any ease. Nor do any of the professed beginner's books really make good this deficiency.
+On occasion Leonard Bloomfield, to whose memory this pamphlet is dedicated, taught beginning Sanskrit in the Linguistic Institute. In the Institute of 1938 he handed over to me a class that he had begun and the notes that he had prepared for his own use. These included the selection of sandhi rules from Whitney's chapter III that he thought it necessary for a beginner to have an acquaintance with. Since that time I have, with his permission given initially, used and reworked these notes. They have been found so useful by myself and successive classes of students that it seems worthwhile to present them in printed form, along with a set of 27 exercises that I have constructed to give the student that familiarity with the rules that will fix them firmly with him. It is thought too that even a student of descriptive grammar could be given these exercises to work, without his knowing or learning any more Sanskrit than is provided in the pamphlet. The exercises do not proceed in the usual direction of those set, for example, by Nida, but to reconstruct from Pāṇini’s solutions the complicated data from which he started should give students practice in handling complicated data with exactness (which many of them fail in) and a feeling for the techniques of morphological analysis.
+The particular style of statement used by Pāṇini, Whitney, and many other grammarians is one that is slightly out of fashion now. Yet it is a productive style and students in descriptive grammar should be taught to operate with it. Pāṇini set up for every polyallomorphic morpheme one of the allomorphs as a basic form (e.g., the verb root or the noun stem as basic to all forms of a complex verb or noun paradigm), and established a very complicated set of morphophonemic statements to describe the relations between the basic allomorphs and all allomorphs related to them. These morphophonemic statements are the sandhi rules of Whitney's chapter III and are stated in terms of process. Such statement is harmless if the student understands that it is descriptive process that is involved, and not historical. Consequently, Whitney's phraseology is not departed from very much in the sandhi rules here given; references are always given to Whitney (e.g.  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/111" W241) and a violent departure from his words would have defeated the object of framing the essential set of rules.
+The older readers of the pamphlet will recognize at once the influence of Bloomfield in the more Paninean and less Whitney-like overall arrangement and phrasing of the sandhi rules. Bloomfield was indeed an admirer of Pāṇini (others can vouch for this better than I), and all my changes of phrasing have not concealed this. But, thanks in large part to Bloomfield, we now all tend to approximate Pāṇini rather than Whitney in the style of our descriptive statements. In one major point Whitney has been left and Pāṇini's use of a morphophonemic symbol has been readopted, i.e., the use of ṝ in a number of verb roots (rule 39;  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/111" W242a). Whitney's phonetic terms are now old-fashioned; the equations between his and mine will be self-evident. One transcriptional symbol differs from that used by Whitney; ś is now generally used in this country and elsewhere instead of ç for the palatal sibilant.
+GUṆA AND VṚDDHI SUBSTITUTES
+Substitutes in the morphology for vowels ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/109" W235-236):
+basic vowelsai, īu, ūṛ ṝḷ
+guṇaaeoaral
+vrddhiāāiāuārāl
+A few verbs have reverse guṇa and vṛddhi, but instead of their roots being stated with the basic vowels, they are quoted with reverse guṇa (e.g., vac- 'say' instead of uc-; yaj- 'sacrifice' instead of ij-; prach- 'ask' instead of pṛch-,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/111" W241,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/114" 252).
+basic vowelsiuṛ
+guṇayavara
+vṛddhiyāvārā
+Guṇa is never substituted for vṛddhi.
+SANDHI
+The rules that follow do not give all the sandhi statements that are made by Pāṇini and Whitney. However, in general, all other occurring combinations of phonemes than those dealt with in the rules remain unchanged, except for special statements that are given in the morphology rather than in the sandhi rules.
+The rules are given in sequential order. A later rule cancels an earlier one. For every morphological situation not more than one pass through the rules is valid. The term "corresponding" means "phonetically closest."
+Ниже приведены не все правила сандхи, которые перечислены у Панини и Витни. Однако, в целом, все остальные известные по правилам комбинации фонем остаются неизменными, за исключением определенных утверждений, которые приведены в разделе морфологии, а не в правилах сандхи.
+Правила применяются именно в таком порядке. Более позднее правило отменяет ранее встретившийся. Для каждой морфологической операции разрешен лишь один проход. Термин «соответствующий» означает «фонетически наиболее близкий».
+Internal Sandhi
+This sandhi operates where suffixes are joined to roots, or to other suffixes; also where an item occurs in absolute final position.
+Vowels
+1. The succession of a or ā followed by a diphthong is replaced by one morphophoneme, the corresponding long diphthong ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/71" W 127), e.g., deva- 'god' + āu 'nominative dual' ⇒ devāu 'two gods.'
+1. При встрече a или ā с дифтонгом оба заменяются на одну морфофонему, соответствующим долгим дифтонгом ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/71" W 127), например, deva- 'бог' + āu 'именительный падеж, двойственное число' ⇒ devāu 'оба бога.'
+2. The succession of a or ā followed by an unlike simple vowel is replaced by a guṇa of the second vowel ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/71" W 127), e.g., bhava- 'be + - ī- 'optative' + -t 'third singular' ⇒ bhavet 'he, she, it would be.'
+2. The succession of a or ā followed by an unlike simple vowel is replaced by a guṇa of the second vowel ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/71" W 127), e.g., bhava- 'be + - ī- 'optative' + -t 'third singular' ⇒ bhavet 'he, she, it would be.'
+3. A diphthong before a vowel is replaced by short or long a (depending on whether it is a short or long diphthong) plus the corresponding semivowel ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/73" W131). E.g., agni- 'fire'+guṇa+as 'nominative plural' ⇒ agne-as 'fires,' ⇒ agnayas 'fires'; nāu- 'ship' + ā 'instrumental singular' ⇒ nāvā 'with the ship'.
+4. Final short or long i and u of a monosyllabic root or stem before a vowel are replaced by iy, uv respectively ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/72" W 129a). The rule also applies to the present-stem suffix -nu-. E.g., strī- 'woman' + ā ⇒ striyā 'by the woman'; bhū- 'earth' + ā ⇒bhuvā 'by the earth.' Perfect stems of roots in -u, - ū follow this rule (except bhū- 'become, be'), but those of roots in i, - ī follow the general rule (6), as do the Present and Imperative 3d plural of i- 'go.'
+5. Final ṝ of a root or monosyllabic nominal stem (except nṛ- 'man'), after a labial consonant and before a vowel is replaced by ur; not before a vowel by ūr. After other consonants than labials and before a vowel, it is replaced by ir; not before a vowel by īr ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/111" W 242). E.g., pṝ- 'city' + ā ⇒ pūrā 'by the city'; pṝ- + bhyām 'instrumental dual' pūrbhyām 'by two cities.' kṝ- 'scatter' + ati '3d singular present' ⇒ kirati 'he scatters'; +yate '3d singular passive' ⇒ kīryate 'it is scattered.'
+6. Short ṛ and other cases of short and long i and u than those covered by rule 4, before any vowel, are replaced by the corresponding semivowels ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/72" W 129). E.g., pitṛ- 'father' + os 'genitive dual' ⇒ pitros 'of two fathers'; juhu- 'sacrifice' + ati '3d plural present' ⇒ juhvati 'they sacrifice.'
+7. The succession of like simple vowels is replaced by one morphophoneme, the corresponding long vowel ( HYPERLINK "https://en.wikisource.org/wiki/Page%3ASanskrit_Grammar_by_Whitney_p1.djvu/71" W 126). E.g., a 'augment' + as- 'be' + īt 'third singular imperfect' ⇒ āsīt 'he was'; u + ucus ⇒ ūcus 'they spoke.'
+Consonants
+8.  At the end of a word, the cluster r + stop is not subject to the following rule (9), if the stop is part of the stem ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/80" W 150b). E.g. suhārd 'friend' + s 'nom. sg.' ⇒ suhārd ⇒ suhārt (31).
+9. All but the first consonant of a final consonant cluster disappears at the end of a word ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/79" W 150) and is then subject to external sandhi. E.g., bharant- 'carrying' + s ⇒ bharan 'one who is carrying.'
+10. Intervocalic ch is replaced by cch ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/106" W 227), i.e., ch is quantitatively equivalent to a consonant cluster; e.g., gach- 'go' + ati '3d sg.' ⇒ gacchati 'he goes.'
+11. m before v or m is replaced by n ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/99" W 212a). E.g., agam- 'went' + va 'we two' ⇒ aganva 'we two went'; + ma 'we, more than two' ⇒ aganma 'we went.'
+12. s between stops disappears ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/108" W 233c-f). E.g., acchid- 'chopped' + s-ta 'aorist 3d singular' ⇒ acchitta 'he chopped.'
+13. s before a declensional suffix beginning with a consonant is replaced by ḥ ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/66" W 111a). E.g., havis- 'oblation' + su 'locative plural' ⇒ haviḥ + su ⇒ (36) ⇒ haviḥṣu 'in oblations.'
+14. In certain forms, s before s is replaced by t ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/85" W 167). E.g., vas- 'dwell' + syati '3d sg. future' ⇒vatsyati 'he will dwell.'
+15. s before dh is replaced by zero ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/84" W 166). E.g., śās- 'teach' + dhi 'imperative 2nd sg.' ⇒ śādhi 'teach.'
+16. h in the root han- 'to slay' is replaced by gh when the vowel of the root disappears on account of a morphological rule ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/101" W 216l). E.g., han + anti ⇒ ghnanti 'they slay.'
+Before zero, or when followed by any consonant other than a semivowel or nasal, the following statements (17 through 30) apply;
+17. h in nah- 'to bind' is treated as dh ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/104" W 223g); e.g., nah- + syati ⇒ nadh- + syati⇒ (31, 33) natsyati 'he will bind.'
+18. h in roots with initial d, in the noun uṣṇih- (a meter) and optionally in roots druh- 'hurt,' snih- 'be moist,' muh- 'be confused,’ is treated as gh ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/103" W 222a). E.g., duh- ’milk' + syati ⇒ dhokṣyati 'he will milk'; + dhi ⇒ dugdhi 'milk'.' + ta- 'past passive participle' ⇒ dugdha- 'which has been milked.'
+19. In general, the following rules apply to h:
+(a) the sequence of h plus t th dh is replaced by ḍh with lengthening of a preceding a, i, u; but vah- 'carry' and sah- 'bear' have o instead of lengthened a.
+(b) h before any other relevant consonant, or before zero is replaced by k in verb forms, by ṭ in nominal forms.
+E.g., lih- 'lick'+ ta ⇒ līḍha- 'licked,' but vah- ⇒ voḍha- 'carried, lih- + syati ⇒lekṣyati 'he will lick'; madhulih- 'bee' + su ⇒ madhuliṭsu 'in bees.'
+20. kṣ in jakṣ- 'eat' is treated as gh ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/103" W 221a,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/109" 233f). E.g., jakṣ- + ta ⇒ jagdha- 'eaten.'
+21. In general, the following rules apply to kṣ: ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/107" W 229b-c):
+(a) before zero or s it is replaced by k in verb forms,
+(b) by ṭ in nominal forms.
+(c) before t it is replaced by s.
+(d) before other relevant consonants, it is replaced by ṭ.
+E.g., takṣ- 'fashion' + syati ⇒ takṣyati 'he will fashion'; + ta ⇒ taṣṭa- 'fashioned.'
+22. Similarly, ch (the only examples are from prach- 'ask'). E.g., prakṣyati 'he will ask,' pṛṣṭvā 'having asked.'
+23. Similarly, śc (the only examples are from vraśc- 'hew'  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/103" W 221b). E.g., vrakṣyati 'he will cut,' vṛṣṭvā 'having cut.'
+24. Similarly, ṣ ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/105" W 226). E.g., dviṣ- 'be hostile,' dvekṣyati 'he will hate,' dvit 'enemy nom. sg.', dviṣṭa- 'hated.'
+25. Similarly, ś ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/101" W 218), but, in the roots diś- 'point,' dṛś- 'see,' mṛś- 'touch,' spṛś- 'touch,' and optionally in naś- 'be lost,' ś when final and in noun forms before s and bh, is treated as k ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/102" W 218a). E.g., viś- 'tribe,' viṭsu 'among tribes'; but diś- 'direction,' dikṣu 'in the regions.'
+26. Similarly (to kṣ) j in the roots bhṛj- 'fry,' bhrāj- 'shine,' mṛj- 'wipe,' yaj- 'sacrifice,' rāj- 'rule,' sṛj- 'let go' and in the nominal stem parivrāj- 'wandering mendicant,' (but not in the nominals ṛtvij- 'priest' from yaj- and sraj- 'wreath' from sṛj-) E.g., yakṣyati 'he will sacrifice'; parivrāṭ 'mendicant, nom. sg.' mṛṣṭvā 'having rubbed,' but ṛtvikṣu 'among priests.'
+27. jh is treated as k ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/102" W 220b; a grammarians' statement, without occurrences!).
+28.  c is normally treated as k ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/101" W217). E.g. vac- 'say,'  vakṣyati, 'he will say'; ukta- 'which has been said.'
+29. j is normally (i.e., apart from rule 26) treated as g, also before a few nasal suffixes (see exercise 15). E.g., yuj- 'join'; yokṣyati, 'he will join'; yukta- 'joined.'
+30. t, th are replaced by the voiced aspirated dental stop after any voiced aspirated stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/83" W160). E.g., budh- 'be awakened' + ta- ⇒ buddha- 'awakened' (see 33); labh- 'receive' + tṛ 'agent' ⇒ labdhṛ- 'receiver.' But, the rule does not apply to the present stem dadh- from dhā- 'place' ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/276" W667-8) and to its desiderative.
+31. Voiced stop before a voiceless consonant or zero is replaced by the corresponding unvoiced stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/77" W141,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/83" 159). E.g., vid- 'know,' vetsi 'you know'; budh- 'be awake' + syate ⇒ bhotsyate 'he will be awake.'
+32. Voiceless stop before a voiced stop is replaced by the corresponding voiced stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/83" W159). E.g., śak- 'be able' + dhi 'imperative 2nd sg. aorist' ⇒ śagdhi 'help'; diś- 'region' + bhyas 'dative, ablative plural'⇒ digbhyas 'from regions.'
+33. Aspirated stop before a stop, a sibilant or zero is replaced by the corresponding unaspirated stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/77" W141,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/81" 153). E.g., likh- 'paint,' citralikh + s ⇒ citralik 'painter of pictures,' budh- + syate ⇒ bhotsyate 'he will be awake.'
+34. In certain roots, whenever the final aspirated sound is replaced by an unaspirated stop (by rule 33), the initial of the root (being a voiced unaspirated stop) is replaced by the corresponding aspirated stop, unless by an earlier rule (30), the final consonant of the root plus a consonant of the suffix result in a cluster ending in a voiced aspirated stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/81" W155). The roots are:
+dah- 'burn (transitive)'	guh- 'conceal, hide'
+dih- 'smear'	bandh- 'bind'
+duh- 'milk'	bādh- 'harass'
+druh- 'hurt'	budh- 'be awake'
+dṛṃh- 'make firm'
+and a few other roots in one or two forms only (note especially dh as initial reduplicating consonant in various forms of the verb dhā- 'place.') E.g., adhok 'he milked,' bhotsyate 'he will be awakened,' and dogdhi 'he milks.'
+But certain forms occur with two aspirates; 2nd plural verb forms with middle voice suffixes, present indicative, imperfect indicative, present imperative; e.g., from duh- 'milk,' dhugdhve 'you pl. milk,' adhugdhvam 'you pl. milked.' Also instrumental
+plurals of nouns, e.g., from budh- 'awake' ⇒ bhudbhis 'by those who are awake.'
+35. A nasal before a sibilant is replaced by anusvāra ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/97" W204). E.g., man- 'think,' maṃsyate 'he will think.'
+36. s after a vowel other than short or long a, or after k, r, or l is replaced by ṣ unless final or followed by r; anusvāra or visarga intervening between a vowel and s does not prevent the replacement, except in puṃs- 'man,' hiṃs- 'injure' and a few other words ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/89" W180-3). E.g., agni- 'fire' + su ⇒ agniṣu 'in the fires'; vāk- 'voice' + su⇒ vākṣu 'among voices.'
+37. n, when preceded anywhere in the same word by r, ṣ, ṛ or ṝ, with no intervening palatal, retroflex or dental consonant (except y), and at the same time followed immediately by a vowel, semivowel or nasal, is replaced by ṇ ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/92" W 189). E.g., nara- 'man' + nām ⇒ narāṇām 'of men'; nṛ- 'man' + nām ⇒ nṝṇām 'of men'; brahman- 'priest' + ya⇒ brahmaṇya- 'pious.' (In a few words, ṇ occurs independent of this rule: puṇya- 'pure,' guṇa- 'virtue' and others).
+38. A dental stop or nasal after a retroflex consonant (but not a stop after r-) is replaced by the corresponding retroflex ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/95" W197-8). E.g., dviṣ- 'hate' + ta dviṣṭa- 'hated'; ji- 'win' + snu 'agent' ⇒ jiṣṇu- 'victorious.'
+39. A nasal before a stop is replaced by the nasal homorganic with the stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/99" W212). E.g., the nasal infix -n- is required for the present stem of yuj- 'join': yu-n-j + mas ⇒ yuñjmas 'we join'; yu-n-gdhi⇒ yuṉgdhi 'join.'
+40. n after a palatal stop is replaced by the palatal nasal ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/96" W201). E.g., yaj- 'sacrifice' + na 'action suffix'⇒ yajña- 'a sacrifice.'
+External Sandhi
+This sandhi operates at the juncture of words in phrases and between members of a compound ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/65" W109b).
+It operates also after declensional stems (other than ṝ- stems) before declensional suffixes beginning with bh and before su ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/66" W 111a), and often before secondary derivative suffixes other than y ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/66" W 111d).
+Words are put into sentences and stems into compounds starting from the forms they have in absolute final position,
+i.e., after completion of the internal sandhi rules. Consequently, the external sandhi statements cover only the vowels and 10 consonants.
+Vowels
+41. After the inflectional suffixes of the dual ending in -ī -ū -e, or after the nominative plural masculine pronoun amī, or after an interjection consisting of one vowel (e.g., ā), sandhi rules do not operate. This is called pragṛhiya ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/76" W138,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/1/1.1.11.htm" P1.1.11-19). E.g., yajete ubhāu 'the two of them sacrifice.'
+42. The succession of a or ā followed by a diphthong is replaced by one morphophoneme, the corresponding long diphthong ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/71" W127,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.104.htm" P6.1.104); see rule 1. E.g., tatra eti ⇒ tatrāi 'ti 'there he goes.'
+43. The succession of a or ā followed by an unlike simple vowel is replaced by the guṇa of the second vowel. Similar to rule 2 ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/71" W127,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.87.htm" P6.1.87). E.g., tatra ihate 'he covets' ⇒ tatre 'hate 'there he covets'; tathā 'thus' uktam 'it was said' ⇒tatho 'ktam 'thus it was said'; brahma- 'priest' + rṣi- 'sage' ⇒ brahmarṣi- 'priest-sage.'
+44. The succession of like simple vowels is replaced by one morphophoneme, the corresponding long vowel ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/71" W126,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.101.htm" P6.1.101), see rule 7. E.g., tatra asti 'he is' ⇒tatrā 'sti 'there he is'; tathā aste 'he sits' ⇒ tathā 'ste 'thus he sits'; asti ilia 'here' ⇒ astī 'ha 'he is here.'
+45. In all other cases, a simple vowel before an unlike vowel is replaced by the corresponding semivowel ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/72" W129,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.77.htm" P6.1.77). E.g., asti atra 'here' ⇒ asty atra 'here he is'; iti 'thus' uktam ⇒ ity uktam 'thus it was said.'
+46. After a short diphthong, initial a- is replaced by zero ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/75" W135,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.109.htm" P6.1.109). E.g., vane 'in the forest' + asti 'he is' ⇒ vane 'sti 'he is in the forest.'
+47. -e before any vowel other than a-, and -āi before any vowel are replaced by -a, -ā, respectively ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/74" W133,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.78.htm" P6.1.78; 8.3.19). E.g., vane iha ⇒ 'in the forest here'; tasmāi atra ⇒ tasmā atra 'to him here.'
+48. -o before any vowel other than a-, and -au before any vowel, are replaced by -av, -āv, respectively ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/75" W134b). E.g., tāu 'the two of them' atra + 'here' ⇒ tāv atra 'the two of them here.'
+49. After a short vowel, the preposition ā and the adverb mā, ch is replaced by cch ( HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.74.htm" P6.1.74); after long vowels, optionally. See rule 10. E.g., tava 'of you' + chāyā 'shadow' ⇒ tava cchāyā 'your shadow.1
+Visarga-sandhi
+(Visarga is the form in which -s and -r appear in absolute final position. For descriptive purposes it is expedient to operate with the original morphophonemes.)
+50. The succession of -as and an initial a- is replaced by one morphophoneme, -o ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/87" W175a,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.113.htm" P6.1.113). E.g., devas 'god' + asti ⇒ devo ’sti 'the god is.'
+51. The -s of -as disappears before any other vowel than a- ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/87" W175c, P 8.3.17). E.g., devas āste ⇒ deva āste 'the god sits'; devas iha ⇒ deva iha 'the god here.'
+52. The final -s of sas 'he, that one, nom. sg.' and eṣas 'this one, nom. sg.' disappears before any consonant ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/88" W176a,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.132.htm" P6.1.132). E.g., sas gacchati 'goes' ⇒ sa gacchati 'he goes'; eṣas brāhmaṇaḥ ⇒ eṣa brāhmaṇaḥ 'this Brahman.'
+53. In all other cases, -as or -aḥ (see rule 13) before a voiced consonant is replaced by -o ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/87" W175a, P 6.1.114). E.g., devas gacchati ⇒ devo gacchati 'the god goes'; manaḥ + bhis ⇒ manobhis 'by the minds.'
+54. The -s of bhos 'O Sir,' disappears before a voiced sound ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/87" W174b, P8.3.17). E.g., bhos bhos deva ⇒bho bho deva 'Hail! Hail! O god'.'
+55. The -s of -ās before a voiced sound disappears ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/88" W177). E.g., devās gacchanti 'they go' ⇒ devā gacchanti 'the gods are going'; devās āsate ⇒ devā āsate 'the gods are sitting.'
+56. Before r-, final -s and -r disappear and if the preceding vowel is simple and short, it is lengthened ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/89" W179, P.8.3.15;  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/6/6.1.111.htm" 6.3.111). E.g., agniḥ 'fire' + rocate 'glows' ⇒ agnī rocate 'the fire glows'; punar rocate ⇒ punā rocate 'again it glows.'
+57. In other instances, -s and -r final in a word after a vowel are replaced by visarga, and the following rules (58, 59) apply ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/86" W170a,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/89" 178a, P 8.3.15). E.g., agnis⇒ agniḥ 'fire, nom. sg.'; punar ⇒ punaḥ 'again.'
+58. Any case of visarga before a voiced sound is replaced by -r ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/87" W174,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.2.66.htm" P8.2.66). E.g., agniḥ asti ⇒agnir asti 'there is a fire'; punaḥ gacchati ⇒punar gacchati 'he goes again.'
+59. Visarga before a voiceless palatal, retroflex or dental stop is replaced by the sibilant corresponding to the stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/86" W170c,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/89" W178a,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.38.htm" P8.3.38,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.39.htm" P8.3.39). E.g., tataḥ 'then' + ca 'and' ⇒tataś ca 'and then'; cakṣuḥ 'eye' + te 'your' ⇒ cakṣus te 'your eye'; punaḥ ca ⇒punaś ca 'and again.'
+Nasals
+60. -m before a consonant is replaced by anusvāra ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/99" W213i,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.23.htm" P8.3.23). E.g., devam 'god, accusative case' paśyati 'he sees' ⇒ devaṃ paśyati 'he sees the god.'
+61. Final velar, retroflex, or dental nasal after a short simple vowel and before a vowel, is doubled ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/98" W210,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.32.htm" P8.3.32). E.g., hasan 'smiling' + agacchat 'he went'⇒ hasann agacchat 'he went smiling.'
+62. Final -n before a voiceless palatal, retroflex or dental stop is replaced by anusvāra plus the sibilant homorganic with the stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/98" W208,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.7.htm" P8.3.7). E.g., aśvān 'horses, acc. pl.' + corayati 'he steals' ⇒ aśvāṃś corayati 'he steals horses'; bhavān 'the respected person' + tvarati 'hurries' ⇒ bhavāṃs tvarati 'your honor is hurrying.'
+63. Final -n before a voiced palatal, retroflex, or dental stop is replaced by the nasal homorganic with the stop (ñ, ṇ) ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/96" W202b,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/97" W205b,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.24.htm" P8.3.24,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.59.htm" P8.4.59). E.g., devān 'gods, acc. pl.' jayati 'he conquers' ⇒ devāñ javati 'he conquers the gods.'
+64. The succession -n ś- is replaced by -ñ ch- ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/96" W203,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.3.31.htm" P8.3.31 etc.). E.g., devān śṛṇoti 'he hears'⇒ devāñ chṛṇoti 'he hears the gods.'
+65. Final -n before l- is replaced by anusvāra plus l ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/97" W206). E.g., aśvān labhate 'he receives'⇒ aśvāṃl labhate 'he receives horses.'
+Stops
+66. After -t, ś- is replaced by ch- ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/96" W203,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.63.htm" P8.4.63 etc.). E.g., tat śṛṇoti ⇒ tat chṛṇoti ⇒ (67) tac chṛṇoti 'he hears it.'
+67. -t before a palatal or retroflex stop is replaced by the voiceless unaspirated stop in the same place (i.e., c ṭ;  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/96" W202a,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/95" W199a,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.40.htm" P8.4.40,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.41.htm" P8.4.41). E.g., tat ca⇒ tac ca 'and that'; tat + ṭīkā ⇒ taṭṭīkā- 'commentary on that'; tat jalam 'water' ⇒ taj jalam 'that water.' See rule 71.
+68. -t before l- is replaced by l ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/84" W162,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.60.htm" P8.4.60). E.g., tat labhate ⇒ tal labhate 'he receives that.'
+69. A stop before a nasal is replaced by the nasal in the position of the stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/83" W161,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.45.htm" P8.4.45). E.g. vāk 'voice' + mama 'mine' ⇒ vāñ mama 'my voice'; tat mitram 'friend' ⇒ tan mitram 'that friend.'
+70. After a stop, h- is replaced by the voiced aspirated stop homorganic with the original final stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/84" W163,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.4.62.htm" P8.4.62). E.g., tat hirapyam 'gold' ⇒ tat dhirapyam ⇒ tad dhiranyam 'that gold.'
+71. Any voiceless stop before a voiced sound is replaced by the corresponding (unaspirated) voiced stop ( HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/82" W157c,  HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/83" W159,  HYPERLINK "http://sanskritdocuments.org/learning_tools/ashtadhyayi/vyakhya/8/8.2.39.htm" P8.2.39). This rule applies also to 67 and 70. E.g., vāk asti ⇒vāg asti 'there is a voice'; ap- 'water' + ja- 'born of' ⇒ abja- 'born of water, a lotus.'EXERCISES
+In the following exercises, the preamble often states a morphological operation. This should be applied first and only then do the sandhi rules apply.
+В следующих упражнениях преамбула часто задает некую морфонологическую операцию. Сперва применяем ее и лишь потом – правила сандхи.
+Exercise 1
+(a) From the following roots, form declensional stems by guṇa of the root and the primary suffix -a-, 'action.'
+Образуйте от корней основы настоящего времени путем гунирования (поднимания в ступень guṇa) корней и добавления суффикса -a-, «действие».
+После XIII занятия.
+1. diś- 'to point' (meaning: 'spot, region') «указывать». 2. du- 'burn' (meaning: 'forest fire') «жечь».  3. duṣ- 'spoil' (meaning: 'fault') «портить».  4. duh- 'milk' (meaning: 'milking, milk') «доить». 5. bhṛ- 'carry' (meaning: 'burden') «нести».
+(b) The same, with suffix -ana- 'action, agent.'
+(b) Тоже самое, только с суффиксом -ana-, «действие, деятель»
+6. ās- 'sit' (meaning: 'seat') «сидеть». 7. ud- 'moisten' (meaning: 'porridge') «увлажнять».  8. dṛś- 'see' (meaning: 'sight') «видеть».  9. bhuj- 'eat' (meaning: 'food') «есть».  10. math- 'stir' (meaning: 'churning') «пахтание».  11. muc- 'release' (meaning: 'releasing') «освобождать». 12. sthā- 'stand' (meaning: 'position') «стотять». 13. uc- 'speak' (reverse guṇa meaning 'speech') «с».
+(c) The same with suffix -tṛ- 'agent.'
+(c) Тоже самое с суффиксом -tṛ- 'деятель.'
+14. kṛ- 'do' (meaning: 'agent') «делать».  15. ji- 'win' (meaning: 'conqueror') «побеждать».  16. dā- 'give' (meaning: 'giver') «давать».   17. bhṛ- 'carry' (meaning: 'husband') «нести».  18. man- 'think' (meaning: 'thinker') «думать».  19. su- 'press out' (meaning: 'presser') «выжимать».  20. hū- 'call' (meaning: 'priest') «звать».
+Exercise 2
+From the following declensional stems form secondary noun derivatives by addition of the indicated suffixes. The secondary derivatives have vṛddhi of the first syllable of the original word and guṇa of the last syllable of the original word.
+Вторичные образования имеют вридхи на первом слоге (исходного слова) и гунну на последнем слоге (исходного слова). От перечисленных основ образуйте вторичные имена, путем добавления указанных суффиксов.
+После XIII занятия.
+Suffix -a-:
+Суффикс -a-:
+1. indu- 'moon' «луна» (meaning: 'lunar' «лунный»).
+2. ṛtu- 'season' «время года» (meaning: 'seasonable' «сезонный»).
+3. suṣṭhu- 'excellently' «правильно» (meaning: 'excellence' «прилежание»).
+Suffix -ya-:
+Суффикс -ya-:
+4. araṇi- 'firestick' «дощечка-трут (1 из 2) для добывания огня» (meaning: 'pertaining to firesticks' «горящая головня»).
+5. indumatī-, «Лунная мать» woman's name (meaning: 'descendant of Indumatī' «потомок Индумати»).
+6. ṛṣi- 'a sage' «провидец» (meaning: 'descendant of a sage' «потомок провидца»).
+7. eṇī- 'female antelope' «черная антилопа женского рода» (meaning: 'produced from female antelope' «изделие из черной женской антилопы»).
+8. kuntī-, woman's name «nom. pr.; старшая супруга Панду» (meaning: 'son of Kuntī' «сын Кунти»).
+9. gārgī-, woman's name (meaning: 'son of Gārgī').
+10. bhaginī- 'sister' «сестра» (meaning: 'sister's son' «сын сестры»).
+Exercise 3
+(a) From the following verb roots make the third plural perfect by initial reduplication of the vowel of the root and adding the suffix -us.
+(a) От глагольных корней образуйте 3-е лицо перфекта с начальным удвоением гласной корня и добавлением окончания -us.
+После XXI занятия (З. 317, перфект; §150).
+1. as- 'be.'	2. āp- 'obtain.' 3. i- 'go.'	4. iṣ- 'desire.'
+5. ud- 'wet.'
+(b) From the following noun stems make the locative singular by adding the suffix -i.
+(b) От основ существительных образуйте местный падеж единственное число с помощью окончания -i.
+6. vana- 'forest.' 7. antarikṣa- 'sky.'
+(c) From the following noun stems make the dative singular by adding the suffix -e and then the suffix -a.
+(c) От основ существительных образуйте дательный падеж единственное число с помощью суффикса -e а после суффикса -a.
+8. deva- 'god.' 9. nala-, proper name.
+(d) From the following noun stems make the dative singular by adding the suffix -e, with guṇa of the final stem-vowels i and u.
+(d) От основ существительных образуйте дательный падеж единственное число с помощью суффикса -e, гунируя конечную гласную основы -i и -u.
+10. agni- 'fire.' 11. śatru- 'enemy.' 12. pitṛ- 'father.'
+From the following noun stems make the instrumental singular by adding the suffix -ā.
+От основ существительных образуйте творительный падеж единственного числа с помощью окончания -ā.
+13. bhū- 'earth.' 14. strī- 'woman.' 15. sakhi- 'friend.' 16. nārī- 'woman.1 17. juhū- 'ladle.' 18. mātṛ- 'mother.' 19. nāu- 'ship.' 20. go- 'cow.' 21. dhenu- 'cow.
+Exercise 4
+(a) From the following declensional stems, make the nominative singular by adding the suffix -s.
+От основ существительных образуйте форму именительного падежа единственного числа путем добавления суффикса-s.
+После II, VI, IX, XXVIII занятия.
+1. aśva- 'horse.' «лошадь» 2. ādi- 'beginning.' «начало» 3. bhavant- 'being.' «существующий» 4. bodhant- 'waking up.' «бодрствование» 5. mṛdu- 'soft.' «мягкий» 6. rudant- 'weeping.' «плачущий»
+(b) The same, with length of the last vowel.
+Тоже самое с удлинением последней гласной.
+7. balavant- 'strong.' «сильный» 8. bhavant- 'sir.' «господин» 9. vidvaṃs 'knowing.' «знающий» (ṃ < n).	10. rūpavant- 'beautiful.' «красивый»
+(c) The same (as b) with zeroing of every final consonant.
+Тоже самое (как в b) с отпадением всех конечных согласных.
+11. ātman- 'self.' возвратное местоимение «себя» 12. kanyā- 'girl.' «тинейджер, незамужняя девушка, дева» 13. nadī- 'river.' «река» 14. balin- 'strong.' «крепкий» 15. bālā- 'girl.' «юная девушка, до 16 лет» 16. rājan- 'king.' «царь» 17. strī- 'woman.' «женщина».
+(d) The same (as c), but without length of the final vowel.
+Тоже самое (как в с), но без удлинения конечной гласной.
+18. nāman- 'name.' «имя» 19. parvan- 'mountain.' «гора» 20. balin- 'strong, neuter singular.' «мощный».
+Exercise 5
+(a) Make the past participle from the following roots by adding the suffix -ta after the unstrengthened root.
+A root-nasal in penultimate position disappears.
+Образуйте pp. (причастия прошедшего времени) путем прибавления суффикса -ta к ослабленному корню (корень в слабой ступени, ничего делать надо). Носовая исчезает.
+После XXV занятия.
+1. añj- 'anoint. мазать' 2. idh- 'burn. зажигать' 3. kṣubh- 'tremble.' «колебаться» 4. guh- 'hide.' 5. tyaj- 'desert.' 6. tras- 'tremble.' «дрожать» 7. nah- 'bind.' «связывать» 8. bhū- 'be.'	9, 10. muh- 'be bewildered' (two forms). «упасть в обморок» 11. limp- 'smear.' «мазать» 12. sṛj- 'let go.' «освобождать»
+(b) Make the infinitive by adding the suffix -tum after the "guṇated" root. A penultimate root nasal disappears.
+Образуйте инфинитив путем добавления суффикса -tum после гунированного корня. Носовая исчезает.
+После XXIII занятия.
+13. āp- 'arrive.' 14. i- 'go.'	15. ūh- 'shove.' наблюдать 16. kṛ- 'do.' 17. dah- 'burn.' 18. bandh- 'tie.' «связывать» 19. ruh- 'climb.' «расти» 20. sah- 'overcome.' «побеждать»
+Exercise 6
+From the following verb roots form the third singular present indicative by guṇa of the root vowel and adding the suffix -a- and then the suffix -ti, or -te when the root is preceded by an asterisk.
+Образуйте третье лицо единственное число настоящего времени от следующих глагольных корней, гунируя корень с добавлением (первичного)  суффикса -a- плюс (вторичного) суффикса -ti или -te, если корень отмечен звездочкой (*).
+После VIII, XIII занятия.
+1. aj- 'drive.' «гнать» 2. uṣ- 'burn.' «гореть» 3. ṛc- 'praise.' «хвалить» 4. kṛṣ- 'plow.' «пахать» 5. *kḷp- 'be suitable to.' «быть подходящим»  6. kruś- 'cry out.' «рыдать» 7. khan- 'dig.' «копать» 8. car- 'move.' «ходить»  9. ji- 'conquer.' «побеждать» 10. tṝ- 'cross.' «переходить» 11. dru- 'run.' «бежать» 12. nī - 'lead.' «вести» 13. *pū- 'cleanse.' «очищать» 14. *plu- 'float.' «плавать» 15. *budh- 'be awakened.' «пробуждаться» 16. bhū- 'become.' «становиться» 17. bhṛ- 'carry.' «нести» 18. yaj- 'sacrifice.' «приносить жертву» 19. *smi- 'smile.' «улыбаться» 20. smṛ- 'remember.' «вспоминать»
+Exercise 7
+(a) Add the locative plural suffix -su to the following noun stems; change final a of the stem to e, except in numerals.
+(a) Добавьте суффикс местного падежа множественного числа -su к следующим основам существительных; конечная -a основы заменяется на -e, кроме числительных.
+После IX, X, XXI, XXXI занятия + церебрализация s (Кочергина c. 57, п.2; Зализняк, внутренние сандхи, п.3, стр. 312; Очерк §35; Миллер §42; Кнауэр §38; Бюлер c.4, п.7: c.22, п.4: c.39, п.3; Елизаренкова с.87).
+1. agni- 'fire.' «огонь» 2. ṛtu- 'season.' «время года»  3. kusuma- 'flower.' «цветок»  4. kriyā- 'action.' «действие»  5. gṝ- 'voice.' «голос»  6. catur- 'four.' «четыре»  7. tārā- 'star.' «звезда»  8. diś- 'direction.' «направление»  9. dviṣ- 'enemy.' «враг»  10. pañca- 'five.' «пять»  11. pitṛ- 'father.' «отец»  12. pṝ- 'city.' «крепость»  13. marut- 'wind.' «ветер»  14. ratna- 'jewel.' «драгоценность»  15. rājñī- 'queen.' «царица»
+(b) Add the second singular active suffix -si to the following verbal stems.
+(b) Добавить первичное личное окончание второго лица -si к следующим глагольным основам.
+16. bhava- 'become.' «становиться» 17. yunaj- 'join.' «присоединить» 18. ruṇat- 'obstruct.' «препятствовать»
+With guṇa of the stem vowel.
+Гласная основы в ступени guṇa.
+19. i- 'go.' «идти» 	20. han- 'slay.' «убивать»
+With guṇa of the second vowel.
+Вторая гласная в ступени guṇa.
+21. juhu- 'sacrifice.' «приносить в жертву» 22. dadā- 'give.' «давать» 23. bibhī- 'fear.' «бояться» 24. bibhṛ- 'bear.' «нести» 25. sunu- 'press out.' «выжимать»
+Exercise 8
+Add to the following noun stems the genitive plural suffix, which is -ām after consonants and -n-ām after vowels; if the final phoneme of the stem is a short vowel, it is lengthened in this form.
+Добавьте к следующим основам существительных окончание родительного падежа множественного числа -ām после согласных и -n-ām после гласных; если конечная фонема основы - гласная, то удлиняем.
+После IX (c. 51) занятия. + церебрализация n (Зализняк, внутренние сандхи, 7 а, стр. 313; Очерк §38; Миллер §41; Кнауэр §37; Бюлер c.15, п.5; Елизаренкова с.88).
+1. agni- 'fire.' «б» 2. ṛtu- 'season.' «б» 3. kusuma- 'flower.' «б» 4. kriyā- 'action.' «б» 5. grāma- 'village.' «б» 6. ghoṣa- 'noise.' «б» 7. tārā- 'star.' «б» 8. nakṣatra- 'constellation.' «б» 9. nagarī- 'town.' «б» 10. pakṣin- 'bird.' «б» 11. pitṛ- 'father.' «отец» 12. brahman- 'priest; prayer.' «брахман» 13. rajaka- 'washerman.' «мужчина-прачка» 14. ratna- 'jewel.' «драгоценность» 15. raśmi- 'cord.' «веревка» 16. rājñī- 'queen.' «царица» 17. varṇa- 'color.' «цвет» 18. śastra- 'weapon.' «оружие (ножевое)» 19. senā- 'army.' «войск» 20. vartman- 'path.' «дорога»
+Exercise 9
+Make second singular and third singular present indicative forms from the following roots by addition of gunated -nu- and after it -si and -ti respectively.
+Образуйте формы 2-го и 3-го лица настоящего времени изъявительного наклонения от следующих корней путем гунирования инфикса -nu- и с добавлением первичных личных окончаний -si и -ti соответственно.
+После VIII, XVI (c. 92) занятия + церебрализация n (Зализняк, внутренние сандхи, 7 а, стр. 313) + церебрализация s.
+1. aś- 'attain.' «прибыть» 2. āp- 'obtain.' «достигать»  3. ṛdh- 'thrive.' «процветать» 4. kṣi- 'destroy.' «разрушать»  5. ci- 'gather.' «собирать»  6. tṛp- 'be pleased.' «удовлетворяться»  7. du- 'be burned.' «сгораешь»  8. dhṛṣ- 'dare.' «осмеливаться»  9. rādh- 'succeed.' «достигать» 10. vṛ- 'cover.' «покрывать»
+Exercise 10
+(a) From the following verb roots make the past passive participle by adding -ta-.
+(a) Образуйте причастия прошедшего времени с помощью суффикса -ta- от следующих корней.
+После XXV занятия.
+1. kṛṣ- 'pull, plow.' 2. iṣ- 'desire.' 3. krudh- 'be angry.' 4. stubh- 'praise.'
+(b) From the following verb roots make the third singular aorist with prefix a- and suffix -at.
+(b) Образуйте аорист 3 лица единственного числа с помощью аугмента a- и суффикса -at от следующих корней.
+1. chid- 'cut off.' 2. chṛd- 'vomit.'
+(c) From the following verb roots make the third plural present with infix -n- before the last consonant of the root, and addition of the suffix -anti or, when the root is preceded by *, the suffix -ate.
+(c) Образуйте 3 лицо презенса множественного числа с инфиксом -n- перед последним согласным корня и добавлением суффикса -anti или, если перед корнем стоит *, суффиксом -ate.
+1. aj- 'anoint.' 2. *idh- 'kindle.' 3. ubh- 'cover over.' 4. chid- 'cut off.' 5. piṣ- 'crush.' 6. vic- 'sift.' 7. vṛj- 'twist.' 8. his- 'injure' (s exceptionally remains unaltered в исключительном порядке остается неизменным).
+(d) From the following verb roots make the second singular present with suffix -si and vṛddhi of a final root vowel u and guṇa of other root vowels.
+(d) Образуйте 2 лицо единственное лицо с суффиксом -si и vṛddhi конечной гласной -u и guṇa всех остальных гласных корня.
+1. ad- 'eat.' 2. nu- 'praise.1 3. han- 'kill.' 4. kṣi- 'rule.' 5. pṛ- 'pass.' 6. yam- 'reach.'
+Exercise 11
+(a) Put the words together in sentences or phrases, in the order in which they are given.
+Соедините слова в предложения и фразы в приведенной последовательности.
+После VII, IX занятия.
+1. atha ('now begins') ādiparva (name of a book).
+2. trīṇi ('three, neuter') indriyāṇi ('senses').
+3. atha udyogaparva (name of a book).
+4. ādiparva eva ('just') paṭhati ('he reads').
+5. āraṇyakaparvaṇi ('in the Āraṇyakaparvan') eva nalopākhyānam ('Nala-episode') asti ('is').
+6,7. asti ('there is') araṇye ('in the forest') aśvaḥ ('a horse').
+8. asti araṇye ṛṣiḥ ('a sage').
+9. asāu ('he') āha ('he said').
+10. kanye ('two girls') āgacchataḥ ('the two of them are coming').
+(b) Put the following nominal stems together in compounds, in the order in which they are given.
+Соедините основы существительных в композиты (сложные слова) в приведенной последовательности.
+11. rāja- ('king') + ṛṣi-. Meaning: 'royal sage.'
+12. madhu- ('honey') + utsava- ('festival'). Meaning: 'festival of spring.'
+13. jñāna- ('knowledge') + īśa- 'lord.' Meaning: 'lord of knowledge.'
+14. nala- (name of a man) + upākhyāna- ('episode'). Meaning: 'story about Nala.'
+15. sītā- (name of a woman) + ūrmilā (name of a woman). Meaning: 'Sītā and Ūrmilā.'
+16. pitṛ- ('father') + artham ('for the sake of'). Meaning: 'for father's sake.'
+17. māndhātṛ- (name) + upākhyāna-. Meaning: 'Māndhātṛ episode.'
+18. strī- ('woman') + agāra- ('apartment'). Meaning: 'the women's apartments.'
+19. bhātṛ- ('brother') + ṛṣi-. Meaning: 'the sage, (my) brother.'
+20. go- ('cow') + aśva-. Meaning: 'cattle and horses.'
+Exercise 12
+Put the words together in sentences or phrases, in the order in which they are given.
+Соедините слова в предложения и фразы в приведенной последовательности.
+После VI, IX занятия.
+1, 2, 3. havis ('offering') + prāpsyati ('he will obtain') agnis ('fire').
+4, 5. kukkuras ('dog') punar ('again') khanati ('is digging').
+6. tatra ('there') punar ('man') bhavati ('he is').
+7. purusas ('man') ca ('and') khanati.
+8. nalas (name) abravīt ('he said').
+9. nalas eti ('he goes').
+10. nalas bādhyate ('he is troubled').
+11-12. rājaputrās (’princes') āhus ('they said').
+13. śaśās ('hares') bibhyati ('they are afraid').
+14. devās ('gods') rocante ('they glow').
+15. śiśus ('boy') roditi ('he is weeping').
+16. śiśus jalpati ('he is chattering').
+17. paraśubhis ('with axes') akṛntan ('they cut').
+18, 19. sas ('that') puruṣas.
+20. muhur (repeat this word; 'repeatedly') cakṣus ('eye') nyamisat ('he blinked').
+Exercise 13
+Put the words together in sentences of phrases, in the order in which they are given.
+Соедините слова в предложения и фразы в приведенной последовательности.
+После VII, X, XVIII занятия (+таблица сандхи).
+1. aham ('I') trīn ('three') kumārān ('youths') paśyāmi ('see').
+2. kasmin cit ('in a certain') vane ('in a forest').
+3. bhavān ('you') tatra ('there') tiṣṭhatu ('stand,' imperative)
+4,5,6. sas ('that,' masc., sg. nom.) rājā ('king') asmān ('us' accusative) jeṣyati ('he will conquer').
+7. tasmin ('in that') śayane ('in the bed')
+8,9. trīn lokān ('worlds,' accusative) jayati ('he conquers').
+10. tasmin araṇye ('in a jungle').
+11-15. atas ('therefore') aham bravīmi ('I say') upayam ('a means') cintayet ('he should think of') prājñas ('a wise man') iti (particle terminating a direct quotation).
+16-21. tatas ('then') savismayam ('with amazement') sarvāis ('by all the men') dṛṣṭas ('he was seen') pṛṣṭas ('he was asked') ca ('and') bhos ('sir') kim ('what') idam ('that').
+22-25. sā ('she') abravīt ('she said'): katham ('how') etat ('this') iti. sas ('he') abravīt ('he said').
+Exercise 14
+(a) Put the stems together in compounds, in the order in which they are given.
+Соедините основы существительных в композиты (сложные слова) в приведенной последовательности.
+После V, IX занятия.
+. tat- + chāyā ('shadow'). Meaning: 'his shadow.'
+2. tat- + jñāna- ('knowledge'). Meaning: 'knowledge of that.'
+3. tat- + ḍiṇḍima- ('drum'). Meaning: 'his drum.'
+4. vidyut- ('lightning') + lekhā- ('streak'). Meaning: 'a streak of lightning.'
+5. tat- + śabda- ('word'). Meaning: 'that word.'
+6. vidyut + mālā- ('wreath'). Meaning: 'a wreath of lightning.'
+7. vāk- ('word, voice') + madhura ('sweet'). Meaning: 'sweet of speech.'
+8. vāk- + hasta- ('hand') + vant- ('possessing'). Meaning: 'possessing speech and hands.'
+9. tat- + gṛha- ('house'). Meaning: 'his house.'
+10. vāk- + īśa- ('master'). Meaning: 'author.'
+(b) Put the words together in sentences, in the order in which they are given.
+Соедините слова в предложения и фразы в приведенной последовательности.
+11, 12. kīlakas ('wedge') sthānāt ('from its place') calisyati ('it will move').
+13-15. yat ('what,' relative pronoun, neuter singular) vṛttam ('happened') tat ('that') bhavatā ('by you') iṣṭam ('desired').
+16-20. kādā cit ('once upon a time') vānarayūthas ('a herd of monkeys') itas ('this way') tatas ('that way') ca ('and') krīḍan ('playing') āgatas ('it came').
+Exercise 15
+From the following verb roots make the past passive participle with the suffix -na-; a d before n is replaced by n, then internal sandhi rules apply. In 1, 12, 15, sandhi rules 28 and 29 apply, in spite of the heading before rule 17. A nasal in penultimate position in the root, disappears.
+Из следующих глагольных корней создайте (pp.) причастия прошедшего времени с помощью суффикса -na-; а d перед n заменяется на n, после применяются правила внутренних сандхи. В пунктах 1, 12, 15, правила сандхи 28 и 29 применимы, не смотря на заголовок перед 17. Носовой в предпоследней позиции исчезает.
+После XXV занятия.
+1. añc- 'bend.' «гнуть»  2. kṝ- 'scatter.' «ссыпать» 3. kṣī- 'destroy.' «разрушать» 4. kṣud- 'crush.' «толочь» 5. khid- 'tear.' «мучить» 6. glā- 'be weary.' «чувствовать утомление» 7. chad- 'cover.' «покрывать» 8. tud- 'push.' «толкать» 9. tṝ- 'cross.' «переходить» 10. pad- 'go.' «падать» 11. pṛ- 'fill.' «наполнять»  12. bhañj- 'break.' «ломать» 13. bhid- 'break.' «расщеплять»  14. mlā- 'wither.' «слабеть»  15. ruj- 'break.' «ломать» 16. lag- 'cling to.' «льнуть» 17. śṝ- 'crush.' «сокрушать»  18. sad- 'sit.' «сидеть»  19. skand- 'leap.' «прыгать»  20. hā- 'depart.' «покидать»
+Reduplication and Morphology
+in Exercises 16-18 and 21-23
+In exercises 16-18, the forms have initial reduplication. Reduplication is the repetition of the root syllable. The first syllable is called the reduplicate. The following changes apply to the reduplicate.
+Consonants
+. No final consonants are retained.
+2. Of an initial sibilant + stop cluster, only the second one is retained.
+3. Of other initial consonant clusters, the first one only remains.
+4. A velar or h is replaced by the corresponding palatal (k by c, g by j).
+5. Aspiration is lost.
+Vowels
+6. ṛ is replaced by a.
+7. Long simple vowels are replaced by short ones.
+In exercises 16 and 17, in the third singular active the root syllable shows:
+(1) vṛddhi if it has a final vowel or followed by a single consonant (ch is not a single consonant).
+(2) guṇa if the vowel is i, u, or ṛ followed by a consonant
+(3) otherwise no change.
+In these two exercises, all other forms than the third singular active in general show the root syllable with vowel unchanged (except for the general sandhi changes, e.g., final ū > uv before a vowel according to rule 4).
+But, the third plural in exercise 16, numbers 6, 8, and 11, loses the vowel s of the root syllable, and in exercise 16, numbers-9, 13, 16, and 19, has no reduplication and replaces a by e.
+Exercise 16
+From the following verb roots form the third singular and third plural perfect indicative active with the endings -a and -us respectively, or, if an asterisk precedes the root, the middle with the endings -e and -ire respectively.
+После XXI занятия.
+1. *kam- 'love.' 2. *kāś- 'appear.' 3. kup- 'be angry.' 4. kṛ- 'do, make.' 5. kṣip- 'throw.' 6. 1-chan- 'dig.' 7. gad- 'say.'	8. ghas- 'eat.' 9. car- 'move.' 10. chid- 'cut off.' 11. jan- 'bear (child).' 12. tyaj- 'abandon.' 13. dah- 'burn.' 14. dṛś- 'see.' 15. dhū- 'shake.' 16. pad- 'go, fall.' 17. prach- 'ask.' 18. *budh- 'be awakened.' 19. bhaj- 'divide.' 20. bhṛ- 'carry.'
+Exercise 17
+From the following verb roots form, the third singular and third plural perfect indicative active with the endings -a and -us respectively, or, if an asterisk precedes the root, middle with the endings -e and -ire respectively.
+In numbers 1 and 6 s does not become s.
+После XXI занятия.
+1. sku- 'tear.' 2. skhal- 'stumble.' 3. stu- 'praise.' 4. stṛ- 'scatter' (guṇa of root vowel in third plural). 5. *spṛdh- 'contend.' 6. sphuṭ- 'burst.' 7. smr- 'remember' (guṇa of root vowel in third plural). 8. sru- 'flow.' 9. svap- 'sleep' (this root should be treated as sup- for the vowel of the reduplication and for the third plural; the third singular has reverse vṛddhi).
+10.  ścut- 'drip.' 11. śru- 'hear.' 12. śliṣ- 'clasp.'
+Exercise 18
+From the following verb roots ending in ā, form the third singular and third plural perfect indicative active, with -āu replacing both ā of the root and -a of the ending in third singular, and with ā of the root lost before ending -us in the third plural.
+После XXI занятия.
+1. khyā- 'tell.' 2. gā- 'sing.' 3. ghrā- 'smell.' 4. jñā- 'know.' 5. dhā- 'place.' 6. dhmā- 'blow.' 7. pā- 'drink.' 8. bhā- 'shine.' 9. mlā- 'wither.' 10. yā- 'go.'	11. sthā- 'stand.' 12. snā- 'bathe.' 13. hā- 'abandon.' 14. drā- 'sleep.'
+Exercise 19
+Make two gerunds from each of the following verb roots, using the suffixes -tvā and -ya. After a root ending in a short vowel, add -t- before -ya. The roots ending in ā, except jñā, replace ā by i before -tvā. The two roots ending in a nasal plus another consonant lose the nasal in these forms. The four roots ending in a nasal lose the nasal before -tvā. Roots 10, 15, 19, and 20 are given with reverse guṇa; the gerunds have the basic vowels.
+После XXIII занятия.
+1. i- 'go.'	2. kṛ- 'do, make.' 3. gam- 'go.'	4. jñā- 'know.' 5. tṝ- 'cross.' 6. dah- 'burn.' 7. dṛś- 'see.' 8. dhā- 'place' (dh > h in the form with -tvā). 9. piṣ- 'crush.' 10. prach- 'ask.' 11. bandh- 'bind.' 12. budh- 'be awakened.' 13. man- 'think.' 14. mā- 'measure.' 15. yaj- 'sacrifice.' 16. yuj- 'join.' 17. ram- 'take pleasure.' 18. labh- 'receive.' 19. vac- 'speak.' 20. vas- 'dwell.' 21. śaṃs- 'praise.' 22. sic- 'pour out.' 23. sṛj- 'send forth.' 24. sthā- 'stand.' 25. han- 'strike, kill.'
+Exercise 20
+From the following verb roots make the gerundive with -ya-. The meaning is: from transitive roots 'which must be/is to be/will be . . . from intransitive roots 'which must/is to/ will . . . '
+После XXIV занятия.
+(a)
+1. vad- 'say.' 2. guh- 'conceal.'
+(b) ā is replaced by e.
+3. dā- 'give.' 4. dhā- 'place.'
+(c) Guṇa, and -t- before -ya-.
+5. mṛ- 'die.'
+(d) and (e) Final guṇa and vṛddhi diphthongs are treated before -ya- as they are before vowels.
+6. dviṣ- 'hate.' 7. śī- 'lie down' (make the feminine of the gerundive with ā replacing a of the suffix: 'bed').	8. hu- 'pour.'
+(f) Vṛddhi .
+9. kṛ- 'do, make.' 10. bhū- 'become.' 11. vac- 'say.' 12. vṛ- 'ward off.'
+Exercise 21
+From the following verb roots make two forms each for the 3d singular present indicative of the intensive. The forms have reduplication; the reduplicating vowel is guṇa when the vowel of the root is ī or ū, and ā when the vowel of the root is a. The consonant of the reduplication is to be determined from the section preceding exercise 16. The first form is active and is like the root class or the reduplicating class of the present, i.e., with guṇa of the root vowel and the 3d singular ending -ti.
+The second form is middle, with -ya- between the root and the 3d singular ending -te.
+После XXIV занятия.
+1. bhū- 'become, be' (meaning: 'be in the habit of'). 2. lih- 'lick' (meaning: 'lick greedily'). 3. lup- 'bewilder' (meaning: 'bewilder exceedingly'). 4. yaj- 'sacrifice' (meaning: 'sacrifice often'). 5. hrī- 'be ashamed' (meaning: 'be greatly ashamed').
+Exercise 22
+Desiderative forms. The forms have reduplication; the reduplicating vowel is i when the vowel of the root is ā, ṛ, or i, and u when the vowel of the root is u. In all the forms except numbers 2 and 3 the vowel of the root syllable remains unchanged; in numbers 2 and 3 the vowel of the root syllable is lost entirely. After the root syllable the desiderative suffix -s- is added.
+Make the 3d singular active with -a-ti; but, when * precedes the root, make the 3d singular middle with -a-te, and when ** precedes the root, make the adjective with -u.
+После XXXVI занятия.
+dah- 'burn' (meaning: 'is about to burn'). 2. dā- 'give.' 3. dhā- 'place.' (apply rule 34). 4. **nud- 'push.' 5. budh- 'be awakened, know' (meaning: 'desires to know'). 6. *bhuj- 'enjoy.' 7. muc- 'release.' 8. vas- 'dwell' (see rule 14).	9. vid- 'know, find.' 10. viś- 'enter.' 11. sthā- 'stand.' 12. **spṛś- 'touch' (rule does not work after i, because of the following s).
+Exercise 23
+Aorist of the Causative.
+The stem is formed with reduplication of the root. The reduplicating vowel is -u- when the vowel of the root is -u; otherwise it is -i-. One of the stem syllables must be heavy; if the root syllable is light, the reduplicating syllable is heavy; if the root syllable is heavy, the reduplicating syllable is light. If after reduplication the reduplicated syllable is light by position, the vowel is lengthened, unless the root syllable is heavy. A light syllable is constituted by a short vowel followed by at most one consonant: Ṽ[ (C). Any other syllable is heavy, e.g., Ṽ[X, [CC, etc.
+Make the 3d singular with the augment a- and the ending -a-t.
+После XXXVII занятия.
+1. grah- 'seize.' 2. chid- 'split.' 3. dip- 'shine.' 4. dṛś- 'see.' 5. dru- 'run.' 6. nam- 'bow.' 7. mīl- 'close the eyes.' 8. yuj- 'join.' 9. śri- 'rest on.'
+With guṇa in the root syllable:
+10. kṛ- 'make.' 11. bhṛ- 'carry.' 12. śī- 'lie down.'
+With shortening of the root vowel:
+dip- 'shine.' 14. vāś- 'bellow.' 15. sādh- 'succeed.'
+Exercise 24
+From the following verb roots form primary noun derivatives with the suffix -ti-. Roots 10, 13 are given by the Root-list with reverse guṇa, and the derivatives show the basic vowels. Final and penultimate root nasals are elided.
+После XIII занятия.
+1. kṛ- 'announce' (meaning: 'fame'). 2. gam- 'go' (meaning: 'gait'). 3. jaks- 'eat' (meaning: 'eating'). 4. diś- 'point out' (meaning: 'good fortune'). 5. dṛē- 'see' (meaning: 'gaze'). 6. pr- 'fill' (meaning: 'completion'). 7. bhaj- 'divide' (meaning:’'devotion'). 8. man- 'think' (meaning: 'thought'). 9. muc- 'release' (meaning: 'release'). 10. yaj- 'sacrifice' (meaning: 'sacrifice'). 11. yuj- 'join' (meaning: 'union'). 12. ruh- 'ascend' (meaning: 'ascent, conventional meaning of a word'). 13. vac- 'speak' (meaning: 'speech'). 14. vid- 'find' (meaning:
+'acquisition'). 15. vṛdh- 'increase' (meaning: 'increase'). 16. śak- 'be able' (meaning: 'power'). 17. sū- 'beget, bear' (meaning: 'birth'). 18. sṛj- 'emit, create' (meaning: 'creation'). 19. sañj- 'cling' (meaning: 'clinging'). 20. smṛ- 'remember' (meaning: 'memory, recollection').
+Exercise 25
+From the following roots make the 3d singular future:
+После XVIII занятия.
+(a) with guṇa of the root vowel and suffix -sya- and the suffix -ti (or -te when the root is preceded by an asterisk).
+1. āp- 'obtain.' 2. kram- 'stride.' 3. gup- 'protect.' 4. ci- 'gather.' 5. chid- 'cut off.' 6. jñā- 'know!' 7. tyaj- 'abandon.' 8. dah- 'burn.' 9. diś- 'point.' 10. nud- 'push.1 11. pac- 'cook.' 12. pad- 'go, fall.' 13. prach- 'ask.' 14. *budh- 'be awakened.' 15. *bhuj- 'enjoy.' 16. yudh- 'fight.' 17. ruh- 'climb.' 18. *labh- 'take.' 19. vac- 'speak.' 20. vas- 'dwell.' 21. vah- 'carry.' 22. *vṛt- 'turn.' 23. *śī- 'lie down.' 24. śru- 'hear.'
+(b) The same, with the infixation of -n- before the last consonant of the root:
+25. naś- 'be destroyed.'
+Exercise 26
+From the following roots make three gerundives:
+После XXXVII занятия.
+(a) with suffix -ya and vṛddhi if the root vowel is a or ṛ, otherwise guṇa.
+(b) with suffix -tavya and guṇa.
+(c) with suffix -aniya and guṇa.
+kṛ 'do.' 2. bhṛ- 'bear.' 3. man- 'think.' 4. yaj- 'sacri-
+fice,' only (a) and (b). 5. yudh- 'battle.' 6. vac- 'speak.' 7. vid 'know.' 8.viś- 'enter.' 9. śru- 'hear.'
+Значения корней проверяем по Зализняку. Если корня нет, то по словарю Фриша (меньше слов, но быстрее находить) или Кочергиной (дольше листать). Значение образованных слов (здесь – существительных) проверяем по большому словарю Кочергиной или Монье-Вильямсу.
+Эмено следует древнеиндийской традиции, когда все корни цитируются в слабой ступени. Те же корни в словаре Кочергиной, в Очерке и Конспекте Зализняка приведены часто иначе, в средней ступени. Если не хватает примеров в Конспекте, открываем Очерк.
+Правила суммируются. То есть в каждом последующем нужно сначала проделать все, что было до этого (в пунктах, перечисленных выше).
+К. 155, 162
+Внутренние сандхи, 312 с. конспекта Зализняка. Чтобы понять, какое сандхи применить, надо j1
+HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/369" W954a.
+34 Эмено, h2 по Зализняку
+j1 по Зализняку
+nah это исключение согласно E17, З.312/4б сработала первая
+sṛj2-, то есть законно З.312/4а
+Средством образования инфинитива, как глагольной формы, являются суффиксы -ть (делать, спать, жить, пилить) и  -ти (нести, ползти, пойти).
+HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/375" https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/375
+dah1-
+72 с. в Кочергине, особенные случаи чередования.
+с. 73
+с. 111
+с. 180 Кочергиной
+Зализняк, внутренние сандхи, 3, стр. 312; Миллер §39
+Правила не суммируются как раньше.
+Почему не yuj?
+Связано ли с ruṭ?
+В словаре не будет, потому что удвоение, Урок XXI
+Кочергина 54 стр.
+Все, чего еще не прошли по Кочергине, смотрим по таблице сандхи в конце Лихушиной
+52й Эмено, sa вместо ожидаемое saḥ
+61й Эмено
+с. 142 Кочергина про неопределенные местоимения.
+5й п. внутренний сандхи, с. 312 в Конспекте
+7й п. внутренний сандхи, с. 313 в Конспекте
+HYPERLINK "https://en.wikisource.org/wiki/Page:Sanskrit_Grammar_by_Whitney_p1.djvu/371" 373 Whitney
+t iv ]
+[ v ]
+[  PAGE \* MERGEFORMAT 4 1
+[  PAGE \* MERGEFORMAT 3 1
+[  PAGE \* MERGEFORMAT 10 ]

@@ -1,14 +1,26 @@
 #!/usr/bin/env python3
-"""Extract Sanskrit sentences (both Devanagari and IAST) from the three
-grammar .mdx files (Buhler 1923, Knauer 1908, Kochergina 1998) and find
-cross-book matches.
+"""Extract Sanskrit sentences (both Devanagari and IAST) from five grammar
+.mdx sources (Buhler 1923, Knauer 1908, Kochergina 1998, Apte 1885, Whitney
+1889) and find cross-book matches.
 
 First-pass tool for the Buhler/Knauer/Kochergina exercise-sentence
-concordance (H311). Each extracted sentence keeps a `script` tag
-("deva"/"iast") recording which script it was originally set in. Matching
-is done within each script pool separately (deva-vs-deva, iast-vs-iast) —
-cross-script (Devanagari vs IAST) matching would need a transliteration
-step and is a follow-up (see handoff).
+concordance (H311), extended to Apte + Whitney (roadmap Q4.3). Each
+extracted sentence keeps a `script` tag ("deva"/"iast") recording which
+script it was originally set in. Matching is done within each script pool
+separately (deva-vs-deva, iast-vs-iast) — cross-script (Devanagari vs IAST)
+matching would need a transliteration step and is a follow-up (see handoff).
+
+Apte 1885 is lesson-structured like Buhler/Knauer/Kochergina and is
+extracted the same way. Whitney 1889 is a reference grammar, not a graded
+exercise book: eighteen of its nineteen chapter files contain isolated
+paradigm forms rather than connected sentences (grep for danda/period runs
+confirms this — only `19_Appendix.mdx` carries continuous prose). Its
+contribution to the pool is therefore the two connected passages in that
+appendix (the Hitopadesa jackal fable, section A; the Rig-Veda X.125 hymn,
+section B) rather than per-lesson exercises — extracted via
+`extract_whitney_appendix()`, IAST only (the appendix's Devanagari setting
+of the hymn has a corrupted conjunct-rendering in the source .mdx and is
+skipped to avoid seeding garbage into the pool).
 
 Usage:
     python scripts/extract_sentences.py extract   # writes data/sentences.json
@@ -49,7 +61,19 @@ BOOKS = {
         "path": os.path.join(ROOT, "KocherginaUchebnik_1998", "Kochergina_unicode.mdx"),
         "lesson_re": re.compile(r"^Занятие\s+([IVXL]+)\s*$", re.MULTILINE),
     },
+    "apte": {
+        "label": "Apte 1885",
+        "year": 1885,
+        "edition_year": 1885,
+        "path": os.path.join(ROOT, "ApteSyntax_1885", "Apte-unicode.mdx"),
+        "lesson_re": re.compile(r"^#\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
+    },
 }
+
+WHITNEY_APPENDIX_PATH = os.path.join(ROOT, "WhitneyGrammar_1889", "19_Appendix.mdx")
+WHITNEY_LABEL = "Whitney 1889"
+WHITNEY_YEAR = 1889
+WHITNEY_EDITION_YEAR = 1889
 
 DEVANAGARI_RUN = re.compile(r"[ऀ-ॿ][ऀ-ॿ\s]*[ऀ-ॿ]")
 FOOTNOTE_MARK = re.compile(r"\^\d+\^|\[\^\d+\]")
@@ -126,6 +150,42 @@ def split_iast_sentences(chunk):
     return sentences
 
 
+def extract_whitney_appendix():
+    """Pull the two connected-prose passages out of Whitney's Appendix
+    (section A: the Hitopadesa jackal fable; section B: the Rig-Veda X.125
+    hymn, IAST transliteration only — see module docstring). Both are
+    continuous Latin-script prose punctuated with periods/semicolons, not
+    danda, so they need their own sentence splitter rather than
+    `split_iast_sentences` (which splits on dashes/newlines for the
+    lesson-book vocabulary-list style)."""
+    with open(WHITNEY_APPENDIX_PATH, encoding="utf-8") as f:
+        text = strip_footnotes(f.read())
+
+    a_start = text.index("The Hunter, Deer, Boar, and Jackal.") + len(
+        "The Hunter, Deer, Boar, and Jackal."
+    )
+    a_end = text.index("B. The following text is given in order to illustrate")
+    fable = text[a_start:a_end]
+
+    b_start = text.index("aháṁ rudrébhir vásubhiç carāmy")
+    b_end = text.index("On the next page is given")
+    hymn = text[b_start:b_end]
+
+    sections = [("A", fable), ("B", hymn)]
+    results = []
+    for lesson_id, chunk in sections:
+        chunk = re.sub(r"\s+", " ", chunk).strip()
+        for piece in re.split(r"(?<=[.;])\s+", chunk):
+            piece = re.sub(r"^\d+\.\s*", "", piece).strip(" .;")
+            piece = re.sub(r"\s+", " ", piece)
+            if len(piece) < 6 or not IAST_DIACRITIC.search(piece):
+                continue
+            if len(piece.split()) < 2:
+                continue
+            results.append((lesson_id, piece))
+    return results
+
+
 def sentence_id(book_id, edition_year, lesson_id, idx):
     """Stable per-item id, `<book>-<edition-year>.<lesson>.<n>`, mirroring the
     ACL `YEAR.VOLUME.NUMBER` id policy (https://aclanthology.org/info/ids/) —
@@ -166,6 +226,21 @@ def extract():
         n_deva = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "deva")
         n_iast = sum(1 for s in all_sentences if s["book"] == book_id and s["script"] == "iast")
         print(f"{book_id}: {n_deva} deva + {n_iast} iast sentence candidates", file=sys.stderr)
+
+    idx = 0
+    for lesson_id, sent in extract_whitney_appendix():
+        idx += 1
+        all_sentences.append({
+            "id": sentence_id("whitney", WHITNEY_EDITION_YEAR, lesson_id, idx),
+            "book": "whitney",
+            "book_label": WHITNEY_LABEL,
+            "year": WHITNEY_YEAR,
+            "lesson": lesson_id,
+            "script": "iast",
+            "text": sent,
+        })
+    print(f"whitney: 0 deva + {idx} iast sentence candidates", file=sys.stderr)
+
     out_path = os.path.join(DATA_DIR, "sentences.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(all_sentences, f, ensure_ascii=False, indent=2)

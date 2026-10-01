@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 13-08-2026_
+_Created: 05-07-2026 · Last updated: 24-09-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Apte's syntax reference, Bühler's exercise course, Gasūns's
@@ -28,8 +28,8 @@ back to a stable source instead of maintaining its own copy.
 
 One directory per source work, named `<Author><ShortTitle>_<year>`. Ten source
 works are currently present (plus two generated cross-reference folders,
-[Concordance](#concordance--shared-exercise-sentences-bühler--knauer--kochergina)
-and [SubjectConcordance](#subject-concordance--what-each-grammar-covers-whitneys-spine),
+[Concordance](#concordance-shared-exercise-sentences-bühler-knauer-kochergina)
+and [SubjectConcordance](#subject-concordance-what-each-grammar-covers-whitneys-spine),
 covered below):
 
 | Directory | Work | Format present | Grid tables |
@@ -252,7 +252,7 @@ and the extraction/matching/rendering pipeline:
 
 | File | Role |
 |---|---|
-| [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) | pulls Devanagari- and IAST-script sentence candidates out of the three `.mdx`, tagged by book/lesson/script; then pairwise-matches them per script pool (`difflib`, similarity ≥ 0.82) |
+| [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) | pulls Devanagari- and IAST-script sentence candidates out of Bühler/Knauer/Kochergina/Apte (lesson-structured `.mdx`) plus the two connected passages in Whitney's Appendix (roadmap Q4.3, 5 books on the spine), tagged by book/lesson/script; then pairwise-matches them per script pool (`difflib`, similarity ≥ 0.82) |
 | [`scripts/build_catalog.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_catalog.py) | clusters pairwise matches (union-find) into `scripts/data/catalog.json` / `.csv` |
 | [`scripts/render_catalog_mdx.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/render_catalog_mdx.py) | renders `catalog.json` into the generated `Concordance/catalog.mdx` page — never hand-edit it |
 
@@ -407,6 +407,16 @@ plan in
 [`IIL_ZALIZNIAK_ALTERNATIONS_POLEMIC_PLAN_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/IIL_ZALIZNIAK_ALTERNATIONS_POLEMIC_PLAN_2027.md)).
 Paper status is tracked in the org inventory
 [`Uprava/ARTICLES.md`](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md).
+
+One-off corpus studies live beside the book they answer to: [`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md)
+tests whether the imperfect marks narrative switching among perfects (verdict: **partially
+confirmed** — clustering yes, topic-shift microscopic). The v0.48.0 run's `PERF` bucket was
+**10,15 % non-indicative** ([H3878](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3878-Opus_VisualDCS_past-nonindicative-formation-audit_02.09.26.md));
+the mood-guarded re-run shipped 06-09-2026 as **v0.49** ([H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md), [PR #912](https://github.com/gasyoun/SanskritGrammar/pull/912)) and
+the verdict held — the contamination turned out to be a **vedic** phenomenon (vedic `PERF`
+−29,22 %, not the even 10,15 %), and the study's one substantive signal got *stronger*
+(vedic turnover +1,5 → +2,5 pp). [v0.48.0](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md)
+stays in place, superseded and unaltered, as the pre-registration record.
 
 ## Caveats found in the source files
 

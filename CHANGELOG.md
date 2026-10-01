@@ -1,16 +1,173 @@
+_Created: 25-08-2026 · Last updated: 25-09-2026_
+
 # Changelog
+
+## [Unreleased]
+<!-- entries land in changelog_queue/ -- appended via tools/changelog_queue_consume.py, consumed by cut_release.py at release-cut (H3355); direct bullets here are hook-blocked -->
+
+## [0.122.8] - 2026-09-25
+### Added
+- **A04 (Sonnet 5 `claude-sonnet-5`): Q4.3 sentence-pool extraction extended to Apte + Whitney — 3 → 5 books on the spine (25-09-2026).** [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) §4's Q4.3 asked to extend extraction beyond Bühler/Knauer/Kochergina. [`scripts/extract_sentences.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/extract_sentences.py) gained an `apte` book config (lesson-structured like the other three, same `Урок N` header shape) and a dedicated `extract_whitney_appendix()` for Whitney 1889 — whose 18 chapter files carry isolated paradigm forms, not connected exercise sentences (verified: only `19_Appendix.mdx` has any danda/period-terminated running Sanskrit prose). Whitney's contribution is therefore its two Appendix passages — the Hitopadeça jackal fable (section A, 15 sentences) and the Rig-Veda X.125 hymn (section B, 8 verses), IAST only (the appendix's Devanagari setting of the hymn has corrupted conjunct rendering in the source `.mdx` and is skipped rather than seeded as garbage). [`scripts/data/sentences.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/sentences.json) grows from 3,213 to 6,393 candidates (apte: 3,157 deva + 13 iast; whitney: 23 iast). **Scope boundary, stated not silently dropped:** [`scripts/data/matches.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches.json) and the generated [`Concordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/Concordance/catalog.mdx) page are left untouched at their existing 3-book state this pass — `build_catalog.py`/`render_catalog_mdx.py` hardcode `BOOK_YEAR`/`BOOK_LABEL`/table columns to Bühler/Knauer/Kochergina and would need a genuine redesign (prose, columns, caveats) to honestly carry 5 books; re-running `extract_sentences.py match` against the larger pool without that redesign would crash `build_catalog.py` on the new book keys. Generalizing that downstream pipeline is a natural follow-up, not part of this pass.
+
+## [0.122.7] - 2026-09-24
+
+- **H5421 (Sonnet 5 `claude-sonnet-5`) — union headword count 323,425 -> 323,422 in the unpublished A61 evidence gate; drift checker wired.** New [scripts/check_prose_number_drift.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_prose_number_drift.py) + [scripts/prose_number_drift_claims.json](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/prose_number_drift_claims.json) refuse a new stale copy of the pinned union headword count (`.githooks/pre-commit` on staged `.md`/`.txt`/`.tex`, [.github/workflows/prose-number-drift.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/prose-number-drift.yml) on PR/push). Corrected `TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/A61_EVIDENCE_GATE_2026-07-18.md` (kosha's H4075 04-09-2026 refresh was never carried into prose; A61 is 5/5 "submission-ready" but not yet submitted to its Dec-2027 WSC venue, so it is treated as unpublished per MG's Q2 ruling — auto-updated, logged, no ask). Central fix/log engine + estate log: [Uprava tools/prose_number_drift.py](https://github.com/gasyoun/Uprava/blob/main/tools/prose_number_drift.py) + `data/prose_drift_log.tsv`. Part of [E016](https://github.com/gasyoun/Uprava/blob/main/handoffs/epics/E016-Uprava_stale-snapshot-autoregen_24.09.26.md) wave 3.
+### Added
+- **A04 (Sonnet 5 `claude-sonnet-5`): Q3.4 three-scheme morphoclass agreement — Fleiss κ / Krippendorff α, never run before this pass (24-09-2026).** [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) §4's Q3.4 asked for Fleiss κ / Krippendorff α "over Zal./Gas./Tol. as three coders" over the 876-root crosswalk. Net-new generator [`scripts/q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q34_three_scheme_agreement.py) (both statistics implemented from their canonical formulas, no third-party stats dependency; seeded bootstrap 95% CIs) over [`TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) (876 rows). **Coder substitution finding, documented not silently applied:** Gasuns 2014 has no independent per-root classification in this repo — his dissertation and its 2026-revision index both reuse Zaliznyak 1975's series unchanged ([`MORPHOCLASS_3WAY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/MORPHOCLASS_3WAY_MEMO.md) axis 2; [`GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx) §7.1) — so the third coder actually computed is Zaliznyak's own 1978 (Ocherk) revision, named explicitly in the result doc and JSON so a human can rule differently. Result: letter-granularity Fleiss κ = 0.8178 / Krippendorff α = 0.8179 ("almost perfect" per Landis & Koch, n=844/876); full-code κ = 0.7593 / α = 0.7594 ("substantial"); 10 roots where all three schemes assign a different series at letter granularity. Full report: [`S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S2_MORPHOCLASS_THREE_SCHEME_AGREEMENT_RESULT.md); raw numbers: [`TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/q34_three_scheme_agreement.json); tests: [`tests/test_q34_three_scheme_agreement.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q34_three_scheme_agreement.py) (8 tests: hand-derived exact-fraction fixtures for both statistics, real-data smoke + reproducibility).
+### Added
+- **A04 (Sonnet 5 `claude-sonnet-5`): Q4.1 difflib evaluation — precision against the 128-pair gold set, never scored before this pass (24-09-2026).** [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) §4's Q4.1 asked to "evaluate `difflib` against the 128 labeled pairs" before any TRACER/Passim swap. Net-new generator [`scripts/q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/q41_difflib_gold_evaluation.py) scores `difflib.SequenceMatcher.ratio()` against [`scripts/data/matches_review.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/matches_review.tsv)'s H327 verdicts (128 non-exact near-matches at the shipped `score >= 0.82` operating point). **Result:** strict precision (TP=`spelling_variant` only) 0.4531 (58/128); lenient precision (TP=`spelling_variant`+`length_mismatch`, FP=`low_similarity` — the pipeline's own documented false-positive class) 0.6094 (78/128). **Actionable finding:** a precision sweep across score cutoffs shows the `low_similarity` false positives cluster almost entirely at score 0.82–0.85 — raising the threshold to 0.85 alone would cut false positives from 50 to 1 while retaining 75/128 candidates, a cheap fix to weigh before any detector swap. **Scope, stated explicitly, not silently dropped:** this measures precision of what difflib already flagged; it cannot measure recall of reuse difflib never surfaced (wrong chunk size, below-threshold true matches) — that gap is what Q4.2's TRACER/Passim swap now has a documented baseline to report Δ recall against, per the roadmap's own gate ("Q4.2 ... gate: Q4.1's evidence check accepted first"). Full report: [`Q4_1_DIFFLIB_EVALUATION_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/Q4_1_DIFFLIB_EVALUATION_RESULT.md); raw numbers: [`scripts/data/q41_difflib_gold_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q41_difflib_gold_evaluation.json); tests: [`tests/test_q41_difflib_gold_evaluation.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_q41_difflib_gold_evaluation.py) (8 tests: hand-derived fixture checks, an unknown-verdict refusal, real-data smoke + reproducibility, a committed-JSON drift guard).
+### Added
+- **H4479 (OxAlpha `opencode/z-ai/glm-5.3-flash`): Gasūns PhD dhātu dissertation supplements + concordance claim-census digitized (10-09-2026).** [`GasunsDhatu_2014/revision-2026/phd_corpus/`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/phd_corpus/README.md) lands the 5 dissertation supplements (Приложения 1-5) and the standalone bibliography from `yadisk:Sanskrityatina/34_Диссертация` that weren't yet in the repo (main text + Глава 4-7 were already landed). Extraction used PyMuPDF only — `pdftotext`/poppler is forbidden on Cyrillic PDFs ([FINDINGS.md §506](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md)). The concordance claim-census (from `gasuns-dhatu-concordance.xlsm`) digitizes [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md)'s step-1 blocker: 3 687 root entries, 35.9% Palsule-only. PDFs and the source `.xlsm` stay off-repo (derived-only). [PR #924](https://github.com/gasyoun/SanskritGrammar/pull/924) — open, `class: data` verifier-gated (H4358), not yet merged.
+### Added
+- **H5276 (OxAlpha `opencode/z-ai/glm-5.3-flash`): Jev Noul pre-verifier gate + Brier measured on the frozen claim registers (24-09-2026).**
+  [`scripts/jev_claims_preverifier.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/jev_claims_preverifier.py)
+  — dry-run-default runner asking TypeSafe Jev Noul (jev-1.13.0, shared client Uprava
+  `tools/jev_probe.py` H5275) "is the claim as stated supported by the cited evidence passage?"
+  per settled claim across WhitneyGrammar_1889 + ZalizniakOcherk_1978 + ZalizniakKonspekt_2004
+  (128 claims, one call each, retry ×3 backoff, cost from usage). Measurement only — **no registry
+  edits**. Results
+  ([report](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_JEV_PREVERIFIER_BRIER_24-09-2026.md) +
+  [raw JSON](https://github.com/gasyoun/SanskritGrammar/blob/main/jev_preverifier_results_2026-09-24.json)):
+  keep-all-true recall **0.991 at t=0.3 (PASS the ≥0.99 gate-wiring bar**, sole miss WH-15 noul 0.25 =
+  conservative escalation), t=0.5 0.938 / t=0.7 0.768 FAIL; precision 1.000 at all three (0 FP);
+  Brier 0.071; per-class separation TRUE 0.756 vs OVERSTATED 0.080 / FALSE 0.040 / UNTESTABLE 0.172 —
+  all 5 non-TRUE verdicts ≤0.11, all flagged for paid verification at t=0.3. Cost: Jev **$0.03/1000**
+  (measured) vs Sonnet paired-verifier est. $4.93/1000; gate scenario t=0.3 → $0.68/1000.
+  Independently verified (DeepSeek councillor, paired-verifier family): all headline figures
+  recomputed from raw JSON — PASS; two cosmetic defects fixed post-review. [PR #950](https://github.com/gasyoun/SanskritGrammar/pull/950) — open, not yet merged.
+- **H5364 (OxAlpha `opencode/z-ai/glm-5.3-flash`) — verdict pass on [docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026_2028.md): REFRESH, not archive.** Wave 0, Wave 1 (all four W1a–d deliverables — H913/H914/H915/H916) and the Wave 2 additions (H1296/H1297/H1298, [PR #433](https://github.com/gasyoun/SanskritGrammar/pull/433)) confirmed shipped with cited evidence. Six remaining deliverables (Wave 2 RQ2/RQ4, Wave 3 all three, Wave 4 all three) had zero merged PR or live H### against their own wording (checked via `hub_grep.py`) — genuine unminted prose work, so archive-by-default was overridden. Roadmap rewritten with a dated verdict banner and a "What is left" gated-checkbox section; two human gates (Wave 2 RQ4 user study, Wave 4 audio/adaptivity) got dated `@WAITING` rows in [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md) ([Uprava PR #3790](https://github.com/gasyoun/Uprava/pull/3790)).
+### Fixed
+- **H5417 (Sonnet 5 `claude-sonnet-5`): S1 claim-register extension roadmap checkbox ticked — verdict pass, no new corpus work (24-09-2026).** [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) §7's "S1 claim-register extension" row asked for a Knauer register (≥50 verified), Zaliznyak (≥50 verified), and the 339-candidate Bühler backlog drain — all three shipped in July under H797 and the checkbox was simply never flipped. Bühler: 403 entries in [`BuhlerLeitfaden_1923/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml), backlog drained to `candidates: []`. Zaliznyak: 17 + 96 = 113 entries across [`ZalizniakKonspekt_2004/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml) and [`ZalizniakOcherk_1978/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml). Knauer: an author-ruled genre adaptation, not a `claims.yml` — the digitized 1908 text is a phrase-reader with no discursive assertions to harvest, so [`KnauerFrazy_1908/parse_audit.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/parse_audit.yml) audits footnote-parse correctness instead: 210 CONFIRMED of 214. `python scripts/claims_schema_validate.py --all` and `python scripts/check_claims_consistency.py` both PASS on all six registers.
+### Added
+- **H5418 (Sonnet 5 `claude-sonnet-5`): W1 exit note — rollback + known-consumer smoke evidence collected from the three W1 architecture pilots (24-09-2026).** [`docs/architecture/W1_EXIT_NOTE_24-09-2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/W1_EXIT_NOTE_24-09-2026.md) closes [`ROADMAP_SANSKRITGRAMMAR_ARCHITECTURE_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/ROADMAP_SANSKRITGRAMMAR_ARCHITECTURE_2026_2027.md) §10's "W1 exit note" row. The row's own premise — "three executed pilots (H1911/H1912/H1913, each closed with green V-gates)" — did not hold on verification against `CHANGELOG.md` and `origin/main`: Slice A (H1911, via H2309/H2528) and Slice C (H1913, dual-run reconciled, rollback rehearsal from pre-cutover `d00f9dca` PASS, full consumer census) are fully closed and evidenced, but **Slice B (H1912, KnauerFrazy_1908) never advanced past its B0 baseline freeze** — [`docs/architecture/baseline/H1912_B0_INVARIANTS.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/baseline/H1912_B0_INVARIANTS.md) itself and CHANGELOG 0.120.0 both record B1–B4 as blocked pending the Slice A remainder, and no completion of B1–B4 exists anywhere in the repo after that remainder shipped. The exit note surfaces this as the open item for W2's launch ruling rather than papering over it.
+- **H5423 (Opus 5.5 `claude-opus-5-5`) — claims and errata registers get a live regen trigger.** New [.github/workflows/claims-errata-regen.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/claims-errata-regen.yml) regenerates `CLAIMS_VERIFIED.md`, `*/claims.json`, `ERRATA.md` and `*/ERRATA.mdx` whenever a `claims.yml`/`errata.yml`/`CHANGELOG.md` or a generator changes: it refuses the drift on a PR and commits the regenerated registers back on `main`. New [scripts/check_generated_outputs.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_generated_outputs.py) compares with the DD-MM-YYYY date stamps masked (counts on the same line still count). New [scripts/blob_links.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/blob_links.py): both generators now write full blob URLs into their `.md` outputs, so a regen no longer reverts the H4092 wave-3 link upgrade (`.mdx` stays relative for Docusaurus). Regenerated now: Apte 39 → 40 claims (APT-40, added 25-08-2026, 10 flagged). Registered in [Uprava data/derived_surfaces.json](https://github.com/gasyoun/Uprava/blob/main/data/derived_surfaces.json) as `sg-claims-verified`. Part of [E016](https://github.com/gasyoun/Uprava/blob/main/handoffs/epics/E016-Uprava_stale-snapshot-autoregen_24.09.26.md) wave 5.
+### Fixed
+- **H5448 (OxAlpha, `glm-5.3`): escaped the MDX-hostile characters H4642's wave-1 IDML→MDX conversion regressed, plus the ledger stamp catch-up the broken nightly could not deliver (24-09-2026).** The site build (required gate "Required Python, contract, frontend, and site gates") has been red since 09-22 on [FrishChrestomathyII_2022.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/FrishChrestomathyII_2022/FrishChrestomathyII_2022.mdx) (4× `–<YYYY>` open-ended-series dates, e.g. `1957–<1979>` → JSX tag parse), [KnauerUchebnik_2021.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/KnauerUchebnik_2021/KnauerUchebnik_2021.mdx) (4 `<` glyphs + 40× `{suffix}` Pāṇinian notation braces, incl. the acorn-fatal `tad-hi{⎷dhā}-(k)ta` at :810 — `⎷` is not a valid JS identifier start; the parseable braces were silent prerender landmines), and [LihushinaChrestomathy_2015.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015.mdx) (169 `<` legacy Xdvng glyph bytes + 3× `1933–<1966>` dates + 13 braces, incl. four unbalanced `o{f>` braces that would swallow the rest of the document into one expression — the same 169-scale the pilot needed in 0.122.6). Escaped `\<` `\{` `\}` per the 0.122.6 pilot precedent (the pilot file's own 169-escape fix is the corpus exemplar; escape ALL sites, not only the ones the build happens to reach). Zero content change — character escapes render byte-identically. The failure was masked until now because the calendar-stale `consolidation_ledger.json` (stamped 2026-09-16) killed the validators step before the build step ever ran; this also lands the 2026-09-24 stamp catch-up. Root cause of the missing nightly refresh: the robot's `gh pr create` dies on `GitHub Actions is not permitted to create or approve pull requests` (repo Actions setting off) — its `chore/ledger-refresh-2026092*` branches piled up unmergeable; PR [#962](https://github.com/gasyoun/SanskritGrammar/pull/962) carries today's refresh by hand. This red-gated every open PR, incl. [#950](https://github.com/gasyoun/SanskritGrammar/pull/950) (H5276). Converter escaping defect in [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py) tracked as a residual (wave-2 prevention).
+- H4716 (OxAlpha, glm-5.3-flash): kosha `shiva-sutras-machine` consumed as the vendored
+  pratyāhāra reference table — byte-identical snapshot
+  [data/shiva_sutras/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/shiva_sutras/)
+  (14 sūtras + 42 pratyāhāra spans + 57-token master sequence, MIT, upstream-of-truth kosha
+  `11a243eb`) + deterministic verifier
+  [scripts/verify_shiva_pratyahara.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/verify_shiva_pratyahara.py)
+  (PASS: 14-sūtra master round-trip, 42/42 pratyāhāra expansion round-trip, all 14
+  it-markers consumed, classic aC/haL canaries). Report:
+  [REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_SHIVA_SUTRAS_PRATYAHARA_REFERENCE_2026.md).
+  First consumer of the H4471 dataset; edge registered Uprava-side (H4716, 15-09-2026).
+
+## [0.122.6] - 2026-09-16
+- Opus 5 (`claude-opus-5`): escaped the MDX-unsafe characters in
+  [LihushinaChrestomathy_2015_pilot.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/LihushinaChrestomathy_2015/LihushinaChrestomathy_2015_pilot.mdx),
+  the third and last independent cause of the red `main`. The pilot is a raw
+  IDML→MDX dump of legacy font-encoded Devanagari (Xdvng), where `<` and `{`
+  are ordinary glyph bytes (`AaTman< stt<`, `o{f>`); `1933–<1966>` is the
+  library convention for an open-ended series. MDX read each as the start of a
+  JSX tag or a JS expression and the site build died at the first one. The file
+  contains **zero** real HTML/JSX tags and no import/export, so all 169
+  occurrences were escaped (`\<`, `\{`, `\}` all render literally) rather
+  than only the three the build happened to reach — the narrow fix would have
+  reddened again on the next one. `<!-- -->` comments are left intact.
+  Verified with a full `docusaurus build` (exit 0); the remaining broken-anchor
+  warnings on the OCR'd Talmud pages are pre-existing and unrelated.
+
+- Opus 5 (`claude-opus-5`): nightly `consolidation_ledger.json` refresh
+  ([.github/workflows/consolidation-ledger-nightly.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/consolidation-ledger-nightly.yml)).
+  The `consolidation_ledger_refresh.py --check` gate in `ci.yml` compares date
+  stamps, so the ledger went stale by the calendar alone and reddened `main` —
+  and with it every open PR — without a single code change. MG ruling
+  16-09-2026: move the regeneration into a nightly job rather than loosen the
+  gate, so the gate keeps its meaning and a robot pays the daily cost. Runs
+  03:17 UTC, PR-first (never pushes to `main`), opens nothing on a no-op night,
+  and fails rather than opening a PR if the refresh touches any file other than
+  the ledger.
+
+- Opus 5 (`claude-opus-5`): stale-base guard removal/addition scanners —
+  `---`/`+++` are now treated as FILE headers only before the first hunk
+  header. `removed_line_numbers()` tested `startswith("---")` on every line,
+  so a removed line whose content is a Markdown `---` rule (diff text
+  `----`) was skipped **and** left `old_line` un-incremented, shifting every
+  later removal in the same hunk; the guard then blamed the wrong lines —
+  silent reverts slipped through, legitimate edits were misattributed.
+  `added_line_numbers()` carried the identical, untested defect for `+++`
+  content lines; both are fixed and the added side now has regression tests.
+  This un-reds `main`, which had failed its required gate on three
+  consecutive runs since 15-09-2026 and was red-gating all 8 open PRs
+  (4 of them dependabot). Pre-fix 3 failures, post-fix 7/7 green
+  ([PR #940](https://github.com/gasyoun/SanskritGrammar/pull/940)).
+
+- H4486 (OxAlpha, glm-5.3-flash): Emeneau & van Nooten *Sanskrit Sandhi and
+  Exercises* (2nd ed.) → sandhi-drills gold enrich — 94 gold-format drill
+  items (join/identify MCQ; 95 before exact-duplicate dedupe — one pamphlet
+  junction printed twice) extracted from the external-sandhi exercises 11–14
+  of the 2019 vintage, answers derived by a committed rules-41–71 junction
+  engine parity-gated against 37 worked examples printed in the pamphlet;
+  extraction census (3 vintages) + format mapping committed under
+  [data/emeneo_sandhi/](https://github.com/gasyoun/SanskritGrammar/blob/main/data/emeneo_sandhi/);
+  `.doc` sources stay local (yadisk `Санскрит/18_Эмено/`). Verdict: gold
+  enrichment (item layer keyed to MG course lessons; rule layer duplicates
+  kosha corpus-sandhi coverage). Round-2 verifier correction (DeepSeek,
+  15-09-2026, [PR #938](https://github.com/gasyoun/SanskritGrammar/pull/938)):
+  engine s-final/e-final paths fixed — 5 wrong answers corrected
+  (ESD-0012/0021/0031/0059/0079), final split join=76 / identify=18.
+- H4712 (OxAlpha, glm-5.3-flash): census A6 — PWG compound-split layer × DCS
+  attested compounds cross-check. 17,112 splits × DCS Kompozity `names.csv`
+  (168,880 forms): 577 attested (3.4 %) · 3,353 prefix-evidence (19.6 %) ·
+  13,182 absent-from-set (77 %); arity agreement 576/577 (99.8 %) on the overlap;
+  30-row hand sample 30/30 verified (1 source-side PWG oddity documented:
+  `kṣārodaka = kāra + udaka` is PWG's own paren, errata-queue candidate). Lands
+  [pwg_splits_vs_dcs_names.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/data/pwg_compound_split/pwg_splits_vs_dcs_names.tsv),
+  summary JSON, [dated report](https://github.com/gasyoun/SanskritGrammar/blob/main/reports/PWG_SPLITS_VS_DCS_NAMES_XCHECK_15.09.2026.md)
+  and stdlib regen script `scripts/build_pwg_splits_dcs_names_xcheck.py`.
+- H4476 (OxAlpha, glm-5.3-flash): grammar-index catalog —
+  [GrammarIndexes/sanskrityatina/](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/GRAMMAR_INDEXES_CATALOG_13-09-2026.md)
+  catalogs 19 index items + 2 companion rows from
+  `yadisk:Sanskrityatina/Указатели указателей/` + `Index/Data/` (pages, granularity,
+  OCR state per file), maps each to a claims-audit target
+  (Kochergina 260-row + Bühler 403-row + Whitney 15-row registries as the
+  text-ready direct targets), and lands the derived
+  [index_of_owners.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GrammarIndexes/sanskrityatina/index_of_owners.tsv)
+  (21 rows × 11 cols). Raw scans stay on yadisk (rclone refetch documented); @DECIDE
+  pending on the first claims-harvest wave (recommendation: Kochergina ukazateli).
+
+- H4628 (OxAlpha, opencode/z-ai/glm-5.3-flash): e-publish волна 1, тома II–V
+  Bibliotheca Sanscritica — 4 mdx + coverage-check GREEN; manifest:
+  [BibliothecaSanscritica/E_PUBLISH_MANIFEST.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/E_PUBLISH_MANIFEST.md),
+  full entry in
+  [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md).
+  Tools: idml_to_mdx.py per-volume provenance; new pdf_to_mdx.py (PyMuPDF) +
+  idml_coverage_check.py (independent re-extraction gate, floor 90%).
+- H4642 (OxAlpha, opencode/z-ai/glm-5.3-flash): Bibliotheca e-publish wave 1 —
+  toms II–V (idml route) + tom XVIII (never-print D3, MG 13-09-2026: block-PDF
+  e-publish); full entry in
+  [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md).
+  Shared tooling: [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)
+  generalized with front-matter overrides (pilot output byte-identical) and new
+  [tools/pdf_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/pdf_to_mdx.py)
+  (PyMuPDF per-page verbatim; poppler banned on Cyrillic).
+- H4479 (OxAlpha, glm-5.3-flash): Gasuns PhD dissertation derived corpus —
+  7 PDFs from yadisk `Sanskrityatina/34_Диссертация` extracted via PyMuPDF
+  text layer (7/7 PASS, 508 pp, ~974k chars; pdftotext-forbidden rule held),
+  per-page JSONL + 31-entry TOC index + dhātu claim-census committed in
+  [corpus/gasuns-dissertation/](https://github.com/gasyoun/SanskritGrammar/tree/main/corpus/gasuns-dissertation)
+  (PDFs gitignored). Приложение 3 concordance fully digitized — unblocks
+  PALSULE_AUDIT step 1; @DECIDE pending: first supplement to feed revision-2026.
+- H4484 (OxAlpha, glm-5.3-flash): Bibliotheca Sanscritica series onboarded —
+  27-tom state census + Lihushina chrestomathy e-publish pilot; full entry in
+  [BibliothecaSanscritica/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BibliothecaSanscritica/CHANGELOG.md)
+  (per-book release scheme, H318). Shared extractor added:
+  [tools/idml_to_mdx.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/idml_to_mdx.py)
+  (verbatim IDML→mdx, spread-ordered).
 
 All notable changes to this repo's shared infrastructure (errata system, site
 tooling, docs) are documented here. **Book-specific changes now live in each
 book's own `<Book>/CHANGELOG.md`** (per-book release scheme, H318):
-[ApteSyntax_1885](ApteSyntax_1885/CHANGELOG.md) ·
-[BuhlerLeitfaden_1923](BuhlerLeitfaden_1923/CHANGELOG.md) ·
-[GasunsDhatu_2014](GasunsDhatu_2014/CHANGELOG.md) ·
-[KnauerFrazy_1908](KnauerFrazy_1908/CHANGELOG.md) ·
-[KocherginaUchebnik_1998](KocherginaUchebnik_1998/CHANGELOG.md) ·
-[ZalizniakKonspekt_2004](ZalizniakKonspekt_2004/CHANGELOG.md) ·
-[ZalizniakOcherk_1978](ZalizniakOcherk_1978/CHANGELOG.md) ·
-[TolchelnikovTalmud_2026](TolchelnikovTalmud_2026/CHANGELOG.md).
+[ApteSyntax_1885](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CHANGELOG.md) ·
+[BuhlerLeitfaden_1923](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/CHANGELOG.md) ·
+[GasunsDhatu_2014](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/CHANGELOG.md) ·
+[KnauerFrazy_1908](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/CHANGELOG.md) ·
+[KocherginaUchebnik_1998](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CHANGELOG.md) ·
+[ZalizniakKonspekt_2004](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/CHANGELOG.md) ·
+[ZalizniakOcherk_1978](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/CHANGELOG.md) ·
+[TolchelnikovTalmud_2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/CHANGELOG.md).
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -18,6 +175,171 @@ Each book tags/releases independently as `<book-slug>-vX.Y.Z`; this root
 changelog tags as `vX.Y.Z`.
 
 ## [Unreleased]
+
+### Added
+- **H4178 (OxAlpha `zai-coding-plan/glm-5.3-flash`): first consumer of the VisualDCS M9 dataset `dcs-verb-roots-by-class` — per-class attested-roots probe (06-09-2026).** [`scripts/dcs_verb_roots_by_class_probe.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/dcs_verb_roots_by_class_probe.py) reads the ten per-class CSVs (root + corpus count, IAST) from the sibling VisualDCS checkout read-only (manifest parity: 463 rows = 463) and lands the curriculum probe the REUSE_INDEX census named as this dataset's zero-consumer gap: per-class attested inventory (443 distinct roots, 281,491 corpus occurrences), per-class occurrence share (the frequency-ordered drill argument), the 19 cross-class roots a single-class drill would present falsely, and a top-20 frequency drill seed. Report: [`reports/DCS_VERB_ROOTS_BY_CLASS_PROBE_06.09.2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/reports/DCS_VERB_ROOTS_BY_CLASS_PROBE_06.09.2026.md).
+- **H4074: gate ARMED + calibrated — dispatch dry-run `pass`** (04-09-2026, OxAlpha `opencode/z-ai/glm-5.3-flash`). [Dispatch dry-run 33906259442](https://github.com/gasyoun/SanskritGrammar/actions/runs/33906259442): verdict `pass` (331 passed, gates green, 0 findings / 10 hunks, 10 §3 integrity/production paths flagged). Calibration after the first honest-`fail` dogfood run (PR #910): string-stripped code scan (raw line only for the credential rule), comment tails stripped, subprocess/requests heuristics → window scans, gates runner via `shlex.split` argv spawn (the real P1), `Path.home()` P3 dropped as prose-prone (rule kept in RUBRIC). 39 hermetic tests. [`docs/OXALPHA_STATUS_GATE_DESIGN_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/OXALPHA_STATUS_GATE_DESIGN_2026.md) flipped to ARMED with dates + documented deviations. Same-pass repair ride-along: PR #909 refreshed the date-stale `sangram/editorial/data/consolidation_ledger.json` (main CI red on all 03-09+ runs; the freshness check's own prescribed remedy — no weakening).
+- **[`.github/workflows/oxalpha-review-gate.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/oxalpha-review-gate.yml) — H3550 OxAlpha review gate armed as a real monthly workflow (H4074, 04-09-2026, OxAlpha `opencode/z-ai/glm-5.3-flash`).** The design-only doc [`docs/OXALPHA_STATUS_GATE_DESIGN_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/OXALPHA_STATUS_GATE_DESIGN_2026.md) is now a live shadow gate (rung 1, reporting-only, NOT a required check): `pull_request` + `workflow_dispatch` + monthly cron (1st, 04:41 UTC). Job `oxalpha-review-gate`: executable-delta matcher per design §1 (`scripts/ tools/ pipelines/ packages/sg_tooling/src/ src/ apps/site/ patches/ .github/workflows/ .githooks/ tests/`, root `docusaurus.config.mjs`/`sidebars.mjs`; zero matches → `skip` with posted exclusion note), repo gates = the locked test suite (`uv sync --frozen` + `uv run python -m pytest`), bounded second-opinion pass (≤10 risk-ranked hunks, Standards+Spec axes separate), machine verdict JSON (`pass`/`fail`/`skip`) always uploaded as artifact + PR comment — never-silent-success; a crashed run is `fail` with reason `infrastructure`. Standards axis: deterministic heuristic scan always (credentials P0, `eval`/`shell=True` P1, bare-except/no-timeout P2); model lane activates via `OXALPHA_REVIEW_API_KEY`/`OXALPHA_REVIEW_MODEL` secrets (unprovisioned — recorded by name). Scripts + hermetic tests: [`scripts/oxalpha_gate_match.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/oxalpha_gate_match.py) · [`oxalpha_gate_gates.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/oxalpha_gate_gates.py) · [`oxalpha_gate_review.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/oxalpha_gate_review.py) · [`oxalpha_gate_conclude.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/oxalpha_gate_conclude.py) + three `test_oxalpha_gate_*.py`. Deviation, documented in the design doc's ARMED note: the design's "job inside ci.yml" landed as this standalone file with the same job id so the monthly schedule cannot trigger the Pages deploy chain; rollback = delete the file.
+
+## [0.122.5] - 2026-09-02
+### Added
+- **[`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md)
+  — metadoc for the imperfect-switching report** (H3965 `/document` sweep, Opus 5 `claude-opus-5`).
+  Three-row trust table separating what still holds (Markov transitions, runs-test, clustering —
+  the effect is an order of magnitude larger than the contamination) from what is conditional
+  (the `PERF` bucket's absolute size 85,955 and every share derived from it) and what is clean
+  (the `AOR` bucket, 12,054 tokens, 0 non-indicative); the design defect and MG's 02-09-2026
+  ruling that a silent renumbering would destroy the pre-registration; a ranked three-item backlog
+  (guarded re-run · injunctive slice of the 8,726 discarded tokens · an in-script mood guard so
+  the defect cannot recur); revision history.
+
+### Changed
+- **`Formation`-outside-the-indicative trap recorded where consumers read it** (H3965 `/document` sweep).
+  [CLAUDE.md](https://github.com/gasyoun/SanskritGrammar/blob/main/CLAUDE.md) `## Traps` now carries
+  the H3878/G22 fact — DCS never assigns `Formation` outside `Mood=Ind`, so any finite past-tense
+  bucket defined as "no formation tag" swallows the whole non-indicative past by construction —
+  with the measured 10.15 % (8,726 of 85,955) for this repo's own
+  `ZalizniakOcherk_1978/imperfect_switching_stats.py`, the standing mandate to put `feat_mood='Ind'`
+  in every new finite past bucket, and an explicit prohibition on silently re-deriving the published
+  figures to "fix" the report. [README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md)
+  `## Research layer` introduces the study and its live caveat;
+  [.ai_state.md](https://github.com/gasyoun/SanskritGrammar/blob/main/.ai_state.md) carries the H3966
+  queue row and the H3965 completion entry.
+
+## [0.122.4] - 2026-09-02
+### Changed
+- **H3878 caveat annotated onto the released imperfect-switching report (H3965, Opus 5
+  `claude-opus-5`; MG ruling 02-09-2026 on Uprava T2607-26).**
+  `ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.md` (shipped in v0.48.0, #338) buckets
+  PERF as `feat_tense='Past' AND feat_formation IS NULL` over a finiteness filter of
+  `feat_person IS NOT NULL` — with **no** `feat_mood='Ind'` guard. H3878 finding G22 proved DCS
+  never assigns `Formation` outside the indicative, so **8,726 of the bucket's 85,955 tokens
+  (10.15 %) are non-indicative by construction** (Jus 4,067 · Imp 1,700 · Sub 1,317 · Opt 1,065 ·
+  Prec 577); the AOR bucket is clean (12,054, non-indicative 0) for the same reason. The published
+  tables are **not** recomputed or retracted in this pass — the report carries a measured caveat
+  block, `imperfect_switching_stats.py` carries a do-not-drive-by-rerun pointer, and the guarded
+  re-run plus corrected report are scheduled as H3966. Direction of the bias is unmeasured.
+
+### Verified
+- **Monthly errata Phase 3 reconciliation (H3880, Sonnet 5 `claude-sonnet-5`, 02-09-2026).**
+  Ran [`docs/runbooks/MONTHLY_ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/runbooks/MONTHLY_ERRATA.md)
+  end to end: `npm run errata` regenerated all 8 books' `ERRATA.mdx` + the root
+  [`ERRATA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ERRATA.md) index
+  (open/fixed counts unchanged — Bühler 8/8/0, GasunsDhatu 93/64/29, Knauer 25/25/0,
+  Kochergina 4/0/4, Talmud 3/3/0, Ocherk 2/2/0, Apte/Konspekt 0/0/0), and the Phase 3
+  `CHANGELOG.md`→`errata.yml` `fixed_in` cross-check surfaced no unresolved
+  correction-keyword line — every changelog "fixed/corrected/исправл" hit across all
+  8 book changelogs + this root changelog already has a matching `fixed_in` set on its
+  errata entry (verified by hand against each book's own `CHANGELOG.md`, e.g. Kochergina's
+  four `kind: digitization` rows against its `[0.16.0]`/`[0.17.0]` entries). No new
+  printed errata sheets or edition-diff candidates surfaced this pass. `pytest` 349/349,
+  `npm run errata` clean. Only the generated `_Generated: DD-MM-YYYY_` stamps moved
+  (28-07-2026 → 02-09-2026); no `errata.yml` source changed, so no new corrections were
+  invented. [H3880](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3880-Sonnet_SanskritGrammar_monthly-errata-reconcile_02.09.26.md).
+
+## [0.122.3] - 2026-08-31
+### Fixed
+- **H3550 (OxAlpha) — stale-base guard miscounted removals after a removed `--`-prefixed line (F1, P1).**
+  In `scripts/pre_push_stale_base_check.py` the `---`/`+++` file-header test ran on every
+  diff line, so inside a hunk a removed line whose *content* starts with `--` (a Markdown
+  `---` rule, a `-- comment`) was skipped as a header AND never advanced `old_line` — every
+  later removal in the hunk was blamed at a shifted number, so the blocking guard
+  survivor-checked and blamed the wrong lines (false negatives on the exact silent-revert
+  class it exists to catch). Headers are now recognized only before the first hunk;
+  regression tests in `tests/test_pre_push_stale_base_check.py` (fail-before/pass-after).
+  Uprava canonical copy sync + org re-deploy tracked separately.
+
+### Added
+- **H3550 (OxAlpha) — 30-day retrospective code review report + future OxAlpha status gate design (inactive).**
+  [docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md):
+  ten risk-ranked executable-code slices from the 26-07..25-08-2026 window with exact
+  base/head SHAs, independent Standards and Spec verdicts, exclusions, and findings —
+  one P1 fixed (F1, PR #888), three evidence-backed observations, zero unsupported
+  findings, zero no-spec outcomes.
+  [docs/OXALPHA_STATUS_GATE_DESIGN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/OXALPHA_STATUS_GATE_DESIGN_2026.md):
+  executable-code matching, an independent `oxalpha-review-gate` check design, and
+  human-approval paths (CI/deploy, repo-integrity guards, claims-truth gates,
+  student-facing generation) — **design only, nothing enabled**.
+- **H3550 (OxAlpha `x-preview-f-free`) — canonical issue-tracker adapter + OxAlpha code-review plan family (bootstrap).**
+  `docs/agents/` (issue-tracker GitHub with PR intake OFF, triage labels, domain docs),
+  `## Agent skills` block in CLAUDE.md, five triage labels live
+  (`needs-triage`/`needs-info`/`ready-for-agent`/`ready-for-human`/`wontfix`),
+  and the five-document plan family under `docs/`
+  (PLAN_…_OXALPHA_CODE_REVIEW_HARDENING_2026Q3 + ROADMAP/ARCHITECTURE/
+  IMPLEMENTATION/VERIFICATION siblings) for the 26-07-2026..25-08-2026
+  retrospective review.
+- **H3493 (Fable 5 `claude-fable-5`) — natural-method story chapters 4–5 v0.**
+  [`CHAPTER_4_SLOKAH.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/CHAPTER_4_SLOKAH.md)
+  (metre chapter: anuṣṭubh 4 × 8 counted in-story, gerund *-tvā*; W4 Karaoke verses
+  `subh_6087` · `bhg_2_47` · `bhg_2_48`, `subh_1249` recalled) and
+  [`CHAPTER_5_SUBHASITANI.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/NATURAL_METHOD_STORY_START_CHTENIYA/CHAPTER_5_SUBHASITANI.md)
+  (yad–tad correlative; beginner-pack verses `subh_2366` · `subh_3371` · `subh_7583`;
+  ladder ending on *paṭha putra*). Four layers + verse gloss + sandhi list + budget
+  line each; 2 register passes per chapter. Budget doc rows 4–5 flipped to actuals
+  (15/13 lemmas, glue 25 %/27 %); cumulative 75 content lemmas / 49 top-150 (target met).
+  New gate `tools/story_chapter_budget_check.py` (band counts vs cap, verse-ID
+  resolution against kosha pack + Karaoke files, † count) — PASS on ch. 1–5.
+  Still **NOT cleared for a live cohort** — human editorial visa owed on ch. 4–5.
+- **H3521 (OxAlpha) — Learn Your Way wave-1 lessonpack generator.**
+  `scripts/build_lessonpack.py` + 9 committed Kochergina занятие-1 packs
+  (`KocherginaUchebnik_1998/LessonPacks/zan1/`, base + ноль/продолжающий ×
+  йога/аюрведа/кино/паломничество) + k-anon SRS aggregate fixture +
+  `tests/test_build_lessonpack.py` contract suite. Book-scoped details in the
+  [book changelog](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CHANGELOG.md); serving is a
+  Systema-Sanscriticum PR behind default-OFF `LYW_ENABLED`.
+
+### Changed
+- **Corpus-layer harness extended to a third book (H3804, Fable 5 `claude-fable-5`).**
+  `scripts/build_corpus_layer.py` gains the `buhler` book config and the lesson-heading
+  regex now also matches `## Урок`/`## Уроки` (the Bühler manuscripts head sections by
+  урок, not занятие); `tests/test_corpus_layer.py` pins the new
+  `BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv` ↔ manuscript pair in its BOOKS
+  drift guard (locus/band/rank agreement, rights gate, DCS-locus presence).
+
+## [0.122.2] - 2026-08-25
+### Changed
+
+- **H3321 (Codex) — H1913 dual-run compare - independent Codex re-run of the
+  SG-MO-021 Slice C pilot vs the override lane.** Refreshed the cold-start and
+  session-state documentation with the canonical content boundary, pinned-input
+  check command, release links, and reconciliation record; refreshed the
+  generated consolidation ledger required by the blocking validator.
+
+## [0.122.1] - 2026-08-25
+### Added
+
+- **H3321 (Codex GPT-5) — independent SG-MO-021 Slice C lane.** Declares the
+  pinned DCS pipeline, moves the article into its canonical content boundary,
+  extracts a read-only SQLite adapter and pure generator, and adds golden +
+  integration coverage proving byte-identical outputs and full C0 scholarly
+  parity. The final surviving code is selected in
+  [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
+
+## [0.122.0] - 2026-08-22
+### Added
+- **H1913 Slice C — SG-MO-021 future pilot: the first vertical pipeline.**
+  [`pipelines/sg-mo-021-future.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/pipelines/sg-mo-021-future.yml) declares
+  the future/conditional census as a contract (pinned snapshot input, one
+  registered `sg_mo_021_future.generate` step, V-C verification list, all five
+  code-level consumers, rollback to the pre-cutover release). The generator
+  moved behind the Slice-A extension points
+  ([`adapters/dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/adapters/dcs.py)
+  generic characterized DCS master adapter + the pilot's own generator module),
+  the registry discovers pilot modules lazily, and the legacy active path
+  `scripts/sg_mo_021_future.py` is removed — hard cutover, no compatibility
+  shim. Published numbers unchanged and re-proven against the pinned master:
+  finite 523 721 / future 21 556 (4,12 %) / simple 20 216 / periphrastic 1 340 /
+  conditional 340 / participle 1 575; double-run byte-stable,
+  `git diff --exit-code` clean; golden fixture suite pins behavior CI-side.
+
+### Fixed
+- **H3103 residual:** Russian reviewer chrome defined locally in
+  `scripts/build_visa_sheet.py` against the pinned csl-pyutil v0.9.0
+  `UI_STRINGS` keys — the imported `RU_UI_STRINGS` never existed upstream and
+  broke test collection repo-wide since 57dadc4.
+- Grammar-lab manifest feed hashes re-pinned to LF-blob form and
+  `.gitattributes` now pins `*.yml`/`*.yaml` to `eol=lf`, ending the
+  platform-dependent `build_grammar_lab --check` failures.
 
 ## [0.121.6] - 2026-08-13
 ### Added
@@ -231,7 +553,7 @@ changelog tags as `vX.Y.Z`.
 
 ### Fixed
 
-- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`[§3.3](#33-...)` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
+- **`atlas_build_bundle.py` two real e2e defects surfaced by the new test (H2271)** — (1) `interlinks_edges.tsv` now references `ext:sanskrit-lexicon-scans` (the pwg-scan-index-campaign GH Pages host, added 27-07-2026 per H1706) which had no entry in `EXTERNAL_STACKS`/`EXT_NAME_MAP`, so a real rebuild hard-`SystemExit`ed; (2) `parse_anchors` broke on MEGABOOK.md §9.x table cells that now carry markdown-linked section refs (`§3.3` instead of bare `§3.3`), producing malformed `thesis:` node ids and dangling anchor edges that failed `atlas_validate_bundle.py`'s referential-integrity check. Both were invisible to the pure-helper unit tests; only a full rebuild against live Uprava data caught them.
 
 ## [0.118.0] - 2026-08-04
 
@@ -260,12 +582,12 @@ changelog tags as `vX.Y.Z`.
 ## [0.116.2] - 2026-08-01
 ### Added
 
-- **«Старт чтения» classroom curriculum map W1–W5 (H2112, Grok 4.5 `grok-4.5`)** — [`docs/CURRICULUM_START_CHTENIYA_W1_W5.md`](docs/CURRICULUM_START_CHTENIYA_W1_W5.md): week → drills → pack → homework with concrete kosha / Karaoke / csl-guides / Systema paths; interim Hitopadeśa-0 + subhāṣita-beginner spine; fence vs research pedagogy W1–W5.
+- **«Старт чтения» classroom curriculum map W1–W5 (H2112, Grok 4.5 `grok-4.5`)** — [`docs/CURRICULUM_START_CHTENIYA_W1_W5.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_START_CHTENIYA_W1_W5.md): week → drills → pack → homework with concrete kosha / Karaoke / csl-guides / Systema paths; interim Hitopadeśa-0 + subhāṣita-beginner spine; fence vs research pedagogy W1–W5.
 
 ## [0.116.1] - 2026-07-31
 ### Added
 
-- **Grammatical abbreviation terminology crosswalk (H2048, Grok 4.5 `grok-4.5` dual-run vs Fable lock)** — [`docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md`](docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md) (+ metadoc): all 11 fixed grammar corpora + LES-1990 + Kochergina dict text; cases locked Latin-stay (MG 31-07); non-case default Latin-stay + Koch-style tooltips where no attested RU short tag exists.
+- **Grammatical abbreviation terminology crosswalk (H2048, Grok 4.5 `grok-4.5` dual-run vs Fable lock)** — [`docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md) (+ metadoc): all 11 fixed grammar corpora + LES-1990 + Kochergina dict text; cases locked Latin-stay (MG 31-07); non-case default Latin-stay + Koch-style tooltips where no attested RU short tag exists.
 
 ## [0.116.0] - 2026-07-30
 
@@ -440,7 +762,7 @@ changelog tags as `vX.Y.Z`.
 
 
 ### Changed
-- **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** Index rows `sanskritgrammar-metodichka-apte-v1_17.07.26#zan-19|zan-22|prilozhenie` → APPLIED / DEFERRED / DEFERRED with revision-history evidence (VERIFICATION A1). Zero bare OPEN/PARTIAL on Apte methodichka targets. Details: [ApteSyntax_1885/CHANGELOG.md](ApteSyntax_1885/CHANGELOG.md).
+- **H1615 — Apte methodichka residual OPEN/PARTIAL terminalised (Grok 4.5 `grok-4.5`, 26-07-2026).** Index rows `sanskritgrammar-metodichka-apte-v1_17.07.26#zan-19|zan-22|prilozhenie` → APPLIED / DEFERRED / DEFERRED with revision-history evidence (VERIFICATION A1). Zero bare OPEN/PARTIAL on Apte methodichka targets. Details: [ApteSyntax_1885/CHANGELOG.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/CHANGELOG.md).
 
 ### Added
 - **H1454 — Kochergina metodichka v1 H1258 open items terminalized (Grok 4.5 `grok-4.5`, 26-07-2026).** Nine visa residuals → APPLIED/DEFERRED/ESCALATED/re-sheeted with `sheet_id#item_id` (plan A1). Residual table + probes in `KocherginaUchebnik_1998/`; Zan X rewrite one-item visa sheet; `EDITORIAL_NOTE_INDEX.tsv` Kochergina rows closed. Book changelog: [`KocherginaUchebnik_1998/CHANGELOG.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/CHANGELOG.md).
@@ -651,7 +973,7 @@ changelog tags as `vX.Y.Z`.
 ## [0.85.0] - 2026-07-18
 
 ### Added
-- **Конвейер свидетельской сетки конкорданса — проверенный H1242-пайплайн закоммичен как инструмент (подготовка H1243, Fable 5 `claude-fable-5`).** [`scripts/concordance_witness_grid.py`](scripts/concordance_witness_grid.py) (`extract` → `batch` → `merge`; валидация покрытия ключей и словаря вердиктов, экранированные пайпы, поддержка уже влитых колонок) + [`scripts/concordance_witness_agent_prompt_RU.md`](scripts/concordance_witness_agent_prompt_RU.md) — контракт промпта агента-свидетеля, отработанный на 1744 вердиктах v2 (семантика AGREE/DISAGREE/SILENT, жёсткое правило чтения пассажа, форматы локусов, TSV-выход, пост-агентная верификация DISAGREE-клеток), с PDF-спецификой для Вакернагеля/Рену (постраничный Read, честный предел без OCR-слоя). Смоук-тест: `extract` даёт 436 утверждений из сетки v2; тестовый `merge` воспроизводит witness_b23 (305/14/117) колонкой в копии отчёта, ширины таблиц консистентны. Контекст: гейт [H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md) обновлён рулением MG 18-07-2026 — archive.org НИКОГДА; собственные сканы Wackernagel, *Altindische Grammatik* I–III и Renou, *Grammaire sanscrite* будут предоставлены ~25-07-2026; по появлении файлов проход v3 запускается этим конвейером механически.
+- **Конвейер свидетельской сетки конкорданса — проверенный H1242-пайплайн закоммичен как инструмент (подготовка H1243, Fable 5 `claude-fable-5`).** [`scripts/concordance_witness_grid.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/concordance_witness_grid.py) (`extract` → `batch` → `merge`; валидация покрытия ключей и словаря вердиктов, экранированные пайпы, поддержка уже влитых колонок) + [`scripts/concordance_witness_agent_prompt_RU.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/concordance_witness_agent_prompt_RU.md) — контракт промпта агента-свидетеля, отработанный на 1744 вердиктах v2 (семантика AGREE/DISAGREE/SILENT, жёсткое правило чтения пассажа, форматы локусов, TSV-выход, пост-агентная верификация DISAGREE-клеток), с PDF-спецификой для Вакернагеля/Рену (постраничный Read, честный предел без OCR-слоя). Смоук-тест: `extract` даёт 436 утверждений из сетки v2; тестовый `merge` воспроизводит witness_b23 (305/14/117) колонкой в копии отчёта, ширины таблиц консистентны. Контекст: гейт [H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md) обновлён рулением MG 18-07-2026 — archive.org НИКОГДА; собственные сканы Wackernagel, *Altindische Grammatik* I–III и Renou, *Grammaire sanscrite* будут предоставлены ~25-07-2026; по появлении файлов проход v3 запускается этим конвейером механически.
 
 ## [0.84.0] - 2026-07-18
 
@@ -659,7 +981,7 @@ changelog tags as `vX.Y.Z`.
 - **Sangram SG-WF-004 taddhita — PWG denominal-derivation pass (§ 3-quater), citation-backed; realises visa note TAD2-01 (H1254, Opus 4.8 `claude-opus-4-8[1m]`).** New extractor [`scripts/sg_wf_004_taddhita_pwg.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_wf_004_taddhita_pwg.py) mines the **Petersburger Wörterbuch** ([`csl-orig/v02/pwg/pwg.txt`](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/pwg/pwg.txt), read-only). PWG marks derivation in German prose with the base in SLP1 (`{#aMSaka#}¦ (von 1. {#aMSa#})` = aṃśaka ← aṃśa). The Cologne extractor keeps only ROOT bases (→ 11,492 kṛt, 34 denominal); this **inverts** that guard — keeps `von {#non-root base#}` where the headword reconstructs as base(+vṛddhi/+final-vowel-elision) + a known taddhita suffix. Result: **5,026 denominal taddhita derivations, 98.2 % citation-backed** (`<ls>`; author's PWG-authority claim now measured), joined to the pinned DCS snapshot = **2,373 attested types / 77,963 tokens**. Classes (types/attested/tokens): relational -ya/-ika/-Iya/-eya 2261/1222/46018, possessive -in/-vat/-mat 653/452/18545, dimin./collective -ka 819/525/9808, abstract -tva/-tā 894/161/2031, comparison 43/26/918, material -maya 230/11/456. **Headline:** because PWG states the base *explicitly as nominal* and roots are excluded, denominal **-in/-ya are structurally separated from their kṛt homonyms** — the thing § 3-ter (MW POS-only: 25 %/31 %) could not do; -ya spot-check 25/25 genuine. Honest framing: a **high-precision lower bound** (partial coverage, token sums pulled by a few frequent words), complementary to DCS-segmentation (§ 3) and MW `wsfx` (§ 3-bis). Dataset: [`data/pwg_taddhita_derivations.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_derivations.tsv) + [`data/pwg_taddhita_summary.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/taddhita-overview/data/pwg_taddhita_summary.json). article_validate `--all` PASS; deterministic. Manifest gets a `revision` entry; the published article gains § 3-quater. _(0.82.0/0.83.0 were taken by concurrent sessions in the 18-07-2026 release race; tagged by this 0.84.0 cut.)_
 
 ### Changed
-- **Конкорданс v2: полная сетка четырёх свидетелей над всеми утверждениями (H1242, Fable 5 `claude-fable-5` — головной сеанс + 25 агентов той же модели).** [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок): к каждой из **436** строк (432 v1 + 4 новые строки [voice/SG-SE-009](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/voice/index.mdx) со свежим Уитни-проходом; итог v2: **367 AGREE · 43 DISAGREE · 26 WHITNEY-SILENT**) добавлены вердикты AGREE/DISAGREE/SILENT + локус четырёх оцифрованных источников: **Б-1923** (Бюлер: 305/14/117), **З-1975** (морфонологическая статья, только глагольные корни: 44/6/386), **З-1978** (очерк при словаре Кочергиной — внутришкольная сверка, оговорено: 373/11/52), **К-2004** (конспект: 242/12/182) — 1744 вердикта, каждый после чтения пассажа; все 43 свидетельские DISAGREE-клетки перечитаны головным сеансом. Новые §§ 6–7 отчёта: **30 свидетельских расхождений** (11 — школа опровергает Уитни-DISAGREE строки сама: veda-перфект, -iṣya-правило, kurvantī, ген.абс.; 19 — конфликты на строках, где Уитни поддерживал/молчал: HK-37 интенсивы, HK-47 анусвара — по 2–3 свидетеля) и **триангуляция фикс-очереди**: 27 строк «школа за утверждение против Уитни» (полная сетка 4/4: HK-95, HK-105, HK-108) + 6 смешанных + 5 «школа против» + 5 молчания; мисатрибуция «(Уитни)» бинарного деления аористов (aorist-types:61) получила реальный источник — деление Бюлера (уроки XLV–XLVI) и З-1978 (§ 139). Правило «всегда верить Витни» не тронуто: свидетели документируют позицию школьной линии Бюлер→Зализняк→Кочергина, колонка Уитни не менялась. Сырые вердикт-файлы: [`data/whitney_concordance_witness_verdicts_2026/`](data/whitney_concordance_witness_verdicts_2026/) (4 TSV × 436 строк). Вакернагель/Рену отложены до PDF ([H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md)); SG-SE-006+ — вход следующего прохода.
+- **Конкорданс v2: полная сетка четырёх свидетелей над всеми утверждениями (H1242, Fable 5 `claude-fable-5` — головной сеанс + 25 агентов той же модели).** [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок): к каждой из **436** строк (432 v1 + 4 новые строки [voice/SG-SE-009](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/voice/index.mdx) со свежим Уитни-проходом; итог v2: **367 AGREE · 43 DISAGREE · 26 WHITNEY-SILENT**) добавлены вердикты AGREE/DISAGREE/SILENT + локус четырёх оцифрованных источников: **Б-1923** (Бюлер: 305/14/117), **З-1975** (морфонологическая статья, только глагольные корни: 44/6/386), **З-1978** (очерк при словаре Кочергиной — внутришкольная сверка, оговорено: 373/11/52), **К-2004** (конспект: 242/12/182) — 1744 вердикта, каждый после чтения пассажа; все 43 свидетельские DISAGREE-клетки перечитаны головным сеансом. Новые §§ 6–7 отчёта: **30 свидетельских расхождений** (11 — школа опровергает Уитни-DISAGREE строки сама: veda-перфект, -iṣya-правило, kurvantī, ген.абс.; 19 — конфликты на строках, где Уитни поддерживал/молчал: HK-37 интенсивы, HK-47 анусвара — по 2–3 свидетеля) и **триангуляция фикс-очереди**: 27 строк «школа за утверждение против Уитни» (полная сетка 4/4: HK-95, HK-105, HK-108) + 6 смешанных + 5 «школа против» + 5 молчания; мисатрибуция «(Уитни)» бинарного деления аористов (aorist-types:61) получила реальный источник — деление Бюлера (уроки XLV–XLVI) и З-1978 (§ 139). Правило «всегда верить Витни» не тронуто: свидетели документируют позицию школьной линии Бюлер→Зализняк→Кочергина, колонка Уитни не менялась. Сырые вердикт-файлы: [`data/whitney_concordance_witness_verdicts_2026/`](data/whitney_concordance_witness_verdicts_2026/) (4 TSV × 436 строк). Вакернагель/Рену отложены до PDF ([H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md)); SG-SE-006+ — вход следующего прохода.
 
 ## [0.83.0] - 2026-07-18
 
@@ -727,12 +1049,12 @@ changelog tags as `vX.Y.Z`.
 
 ### Added
 - **Конкорданс Уитни по всей серии Sangram + полному реестру Кочергиной (H1228, Fable 5 `claude-fable-5`).**
-  [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок):
+  [`WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md) (+ метадок):
   первый корпусный аудит «утверждение ↔ Уитни 1889» под правило MG «всегда верить Витни» —
   **432 вердикта** (172 грамматических утверждения из 33 живых статей Sangram + все 260 записей
-  [`KocherginaUchebnik_1998/claims.yml`](KocherginaUchebnik_1998/claims.yml)):
+  [`KocherginaUchebnik_1998/claims.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml)):
   **364 AGREE · 42 DISAGREE · 26 WHITNEY-SILENT**, каждый § проверен по тексту
-  [`WhitneyGrammar_1889`](WhitneyGrammar_1889/00_index.mdx), а не по цитате-источнику
+  [`WhitneyGrammar_1889`](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/00_index.mdx), а не по цитате-источнику
   (12 fork-агентов Fable 5, аористы дополнительно по Толчельникову Талмуду/H1049).
   Фикс-очередь: 42 DISAGREE (среди них 3 находки против самого реестра — HK-31, HK-35, HK-174
   с `verdict_fact: TRUE`, который Уитни опровергает; veda как «редуплицированный» перфект;
@@ -740,13 +1062,13 @@ changelog tags as `vX.Y.Z`.
   «-artham — датив цели» дважды), ~65 исправленных §-ссылок, 7 OCR-дефектов якорей
   WhitneyGrammar_1889. Проза статей и вердикты реестра не менялись — правки гейтятся визой.
 - **Fidelity axis + teacher-facing reuse analysis over the Bühler/Knauer/Kochergina concordance (H1211, Opus 4.8 `claude-opus-4-8`).**
-  New [`scripts/fidelity_axis.py`](scripts/fidelity_axis.py) classifies each of the 124 shared-sentence
+  New [`scripts/fidelity_axis.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/fidelity_axis.py) classifies each of the 124 shared-sentence
   clusters as identical / orthographic-only / modified (reuses the H311/H327 clustering + near-match
-  verdicts), emitting [`scripts/data/fidelity.json`](scripts/data/fidelity.json) + `.csv`. Result:
+  verdicts), emitting [`scripts/data/fidelity.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/fidelity.json) + `.csv`. Result:
   **84 verbatim · 31 spelling-only · 9 flagged modified** (of which ~6 are sentence-splitter
   truncation artifacts, only ~3 genuine rewordings) — i.e. the three primers copy each other
   essentially 1:1. Written up for teachers in
-  [`TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md`](TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md)
+  [`TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/TEXTBOOK_SENTENCE_REUSE_BUHLER_KNAUER_KOCHERGINA.md)
   (canonical-7 core with glosses, the material-vs-sequence split, the 9-axis comparison map).
   The un-built Q1 axis (Bühler → primary-source provenance) is queued as H1212.
 
@@ -786,8 +1108,8 @@ changelog tags as `vX.Y.Z`.
 - **Pending MG review-sheet visa decisions applied (H1205, Sonnet 5 `claude-sonnet-5`).**
   Swept the local `review/*_decisions.json` folder: 3 sheets already applied upstream
   confirmed done (sg-mo-002-a-stems, sg-mo-017-perfect, sg-wf-004-taddhita); 5 pending
-  sheets applied — [`sangram/articles/future/`](sangram/articles/future/index.mdx)
-  (SG-MO-021, 9/9 approve) and [`sangram/articles/causative/`](sangram/articles/causative/index.mdx)
+  sheets applied — [`content/sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/blob/main/content/sangram/articles/future/index.mdx)
+  (SG-MO-021, 9/9 approve) and [`sangram/articles/causative/`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/causative/index.mdx)
   (SG-MO-028, 10/10 approve) flipped `candidate` → `published`, with real content fixes
   (a mixed-script Cyrillic/Latin "vṛддхи"→"vṛddhi" typo across the causative article,
   §5 examples expanded 5→14/7 from live DCS queries, a genuine overclaim in future §1/§7
@@ -798,7 +1120,7 @@ changelog tags as `vX.Y.Z`.
   confirmed already fully applied (H1050–H1054), with its one open @WAITING item closed
   (Sherzl cross-check for HB-10, independently corroborating Whitney §1128); and the
   prose style guide's own viza applied (10/10 approve). `npm run build` green throughout.
-- **Whole claim programme standardized on DCS-2026 corpus figures (H1172, Opus 4.8 `claude-opus-4-8[1m]`).** MG ruled 17-07-2026 to replace the DCS-2021 vintage numbers that had been the shared basis of the six claim registers with recomputed DCS-2026 values, so every register cites one corpus snapshot — resolving the version-pair the [H1164 consistency check](scripts/check_claims_consistency.py) had explicitly left open. New [`scripts/dcs2026_figures.py`](scripts/dcs2026_figures.py) computes the authoritative table from `dcs_full.sqlite` (denominator = **523,738** finite verbal forms): present **353,215** · imperfect **46,695** · perfect **90,001** · aorist 12,054 · simple future **21,556** · optative **91,912** · imperative **56,506** · injunctive **5,258** · conditional **340** · precative **577** · pluperfect 200. **44 figure/percentage refreshes** across [Apte](ApteSyntax_1885/claims.yml), [Bühler](BuhlerLeitfaden_1923/claims.yml), [Kochergina](KocherginaUchebnik_1998/claims.yml), [Whitney](WhitneyGrammar_1889/claims.yml), [Konspekt](ZalizniakKonspekt_2004/claims.yml), [Ocherk](ZalizniakOcherk_1978/claims.yml); registers regenerated. **NO verdict flips:** perfect > imperfect (WH-4/HB-20/HB-57/OCH-31) holds and strengthens (90,001 > 46,695); aorist rarest of the three pasts holds (aorist:perfect ~1:7, :imperfect ~1:4); HK-116 "comparable" reworded since the perfect now exceeds the imperfect (verdict TRUE kept); HB-39 (PPP vs present) checked — DCS-2026 present-indicative 203,363 < DCS-2021 PPP 233,080, so the like-scope direction holds (the flag was a present-finite-vs-indicative scope artifact). Version-specific figures with no DCS-2026 equivalent kept + tagged: **periphrastic future 1,290** (no distinct 2026 tense tag) and the **precative-medium** (DCS-2026 gives only the whole-mood total 577; `feat_voice` does not tag pada — verified all 577 `feat_voice=None`, so the "medium/Ātmanepada" label is bounded above by 577 and flagged for author viza). The consistency check + pytest gate were updated to the DCS-2026 allowed-value sets and are green.
+- **Whole claim programme standardized on DCS-2026 corpus figures (H1172, Opus 4.8 `claude-opus-4-8[1m]`).** MG ruled 17-07-2026 to replace the DCS-2021 vintage numbers that had been the shared basis of the six claim registers with recomputed DCS-2026 values, so every register cites one corpus snapshot — resolving the version-pair the [H1164 consistency check](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_claims_consistency.py) had explicitly left open. New [`scripts/dcs2026_figures.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/dcs2026_figures.py) computes the authoritative table from `dcs_full.sqlite` (denominator = **523,738** finite verbal forms): present **353,215** · imperfect **46,695** · perfect **90,001** · aorist 12,054 · simple future **21,556** · optative **91,912** · imperative **56,506** · injunctive **5,258** · conditional **340** · precative **577** · pluperfect 200. **44 figure/percentage refreshes** across [Apte](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/claims.yml), [Bühler](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml), [Kochergina](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml), [Whitney](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/claims.yml), [Konspekt](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/claims.yml), [Ocherk](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/claims.yml); registers regenerated. **NO verdict flips:** perfect > imperfect (WH-4/HB-20/HB-57/OCH-31) holds and strengthens (90,001 > 46,695); aorist rarest of the three pasts holds (aorist:perfect ~1:7, :imperfect ~1:4); HK-116 "comparable" reworded since the perfect now exceeds the imperfect (verdict TRUE kept); HB-39 (PPP vs present) checked — DCS-2026 present-indicative 203,363 < DCS-2021 PPP 233,080, so the like-scope direction holds (the flag was a present-finite-vs-indicative scope artifact). Version-specific figures with no DCS-2026 equivalent kept + tagged: **periphrastic future 1,290** (no distinct 2026 tense tag) and the **precative-medium** (DCS-2026 gives only the whole-mood total 577; `feat_voice` does not tag pada — verified all 577 `feat_voice=None`, so the "medium/Ātmanepada" label is bounded above by 577 and flagged for author viza). The consistency check + pytest gate were updated to the DCS-2026 allowed-value sets and are green.
 
 ## [0.69.0] - 2026-07-17
 
@@ -853,7 +1175,7 @@ changelog tags as `vX.Y.Z`.
 ## [0.59.0] - 2026-07-17
 
 ### Added
-- **Sangram ядро W2 — статья SG-MO-021 «Будущее время и кондиционал» — статья-кандидат, ПЕРВАЯ сверх открывающей квоты 19 (H1180, Opus 4.8 `claude-opus-4-8[1m]`).** [`sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles/future): будущее **замыкает финитную систему времён** (презенс/имперфект/аорист/перфект/будущее — все нативно размечены). Нативный тег `Tense=Fut` = **21 556 финитных токенов (4,1 % [4,06–4,17])**. Простое vs перифрастическое разделены **нативно** (`feat_formation`): простое (s-)будущее **20 216 (93,8 %)**, перифрастическое -tā **1340 (6,2 %)** (во главе bhavitā, kartā). Кондиционал (контрфактическое «сделал бы», `feat_mood=Cond`) **340 (1,6 %)**; причастие будущего **1575** — отдельно. Уникальный профиль: будущее — **самая перволичная финитная форма** (1 л. **36,4 %** [35,8–37,1] против 0,5 % у пассива, narrative-3-е у имперфекта) — язык заявленного намерения (bhaviṣyati, vakṣyāmi «скажу», kariṣyāmi «сделаю»). Скрипт [`sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/sg_mo_021_future.py); toc_validate + article_validate (20 манифестов) + docusaurus build green. Первая статья, произведённая по решению автора продолжить производство ядра сверх открывающей квоты (opening set остаётся 18/19). Публикация гейтится авторской визой.
+- **Sangram ядро W2 — статья SG-MO-021 «Будущее время и кондиционал» — статья-кандидат, ПЕРВАЯ сверх открывающей квоты 19 (H1180, Opus 4.8 `claude-opus-4-8[1m]`).** [`content/sangram/articles/future/`](https://github.com/gasyoun/SanskritGrammar/tree/main/content/sangram/articles/future): будущее **замыкает финитную систему времён** (презенс/имперфект/аорист/перфект/будущее — все нативно размечены). Нативный тег `Tense=Fut` = **21 556 финитных токенов (4,1 % [4,06–4,17])**. Простое vs перифрастическое разделены **нативно** (`feat_formation`): простое (s-)будущее **20 216 (93,8 %)**, перифрастическое -tā **1340 (6,2 %)** (во главе bhavitā, kartā). Кондиционал (контрфактическое «сделал бы», `feat_mood=Cond`) **340 (1,6 %)**; причастие будущего **1575** — отдельно. Уникальный профиль: будущее — **самая перволичная финитная форма** (1 л. **36,4 %** [35,8–37,1] против 0,5 % у пассива, narrative-3-е у имперфекта) — язык заявленного намерения (bhaviṣyati, vakṣyāmi «скажу», kariṣyāmi «сделаю»). Генератор [`sg_mo_021_future.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/packages/sg_tooling/src/sg_tooling/generators/sg_mo_021_future.py); toc_validate + article_validate (20 манифестов) + docusaurus build green. Первая статья, произведённая по решению автора продолжить производство ядра сверх открывающей квоты (opening set остаётся 18/19). Публикация гейтится авторской визой.
 - **Fix: SG-WF-004 taddhita example IDs `ex:taddhita:N` → `ex:taddhita-overview:N`** (H1180). The manifest/MDX example IDs must match the article slug (`taddhita-overview`); the mismatch made `article_validate --all` FAIL on `main` (shipped in #368, not caught by the segmentation synthesis #369/#370). `--all` restored to green (21 PASS).
 
 ## [0.58.0] - 2026-07-17
@@ -873,7 +1195,7 @@ changelog tags as `vX.Y.Z`.
 
 ## [0.56.0] - 2026-07-17
 ### Changed
-- **Consistency check extended to five more shared figures (H1164, Opus 4.8 `claude-opus-4-8[1m]`).** [`scripts/check_claims_consistency.py`](scripts/check_claims_consistency.py) gains a second mode: alongside the aorist supersession guard, four cross-register figures (perfect 61,986 · imperfect 47,554 · present · verbal-denominator 781,618) are now pinned to an **allowed-value set** — any citation outside it (a typo, a stale value, an un-reconciled recompute) fails. The present allows a **version-distinguished pair** (157,003 DCS-2021 · 353,215 DCS-2026), which the check permits explicitly. Reconciliation outcome: **no value-level drift found** — every figure already uses only its known value(s); the two present counts are legitimately different corpus snapshots, not an inconsistency. A second pytest gate ([`tests/test_claims_consistency.py`](tests/test_claims_consistency.py)) enforces it in CI. NOTE: full standardization on DCS-2026 (which would collapse the present pair and recompute the DCS-2021 rarity family) is a corpus-version policy decision left open.
+- **Consistency check extended to five more shared figures (H1164, Opus 4.8 `claude-opus-4-8[1m]`).** [`scripts/check_claims_consistency.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_claims_consistency.py) gains a second mode: alongside the aorist supersession guard, four cross-register figures (perfect 61,986 · imperfect 47,554 · present · verbal-denominator 781,618) are now pinned to an **allowed-value set** — any citation outside it (a typo, a stale value, an un-reconciled recompute) fails. The present allows a **version-distinguished pair** (157,003 DCS-2021 · 353,215 DCS-2026), which the check permits explicitly. Reconciliation outcome: **no value-level drift found** — every figure already uses only its known value(s); the two present counts are legitimately different corpus snapshots, not an inconsistency. A second pytest gate ([`tests/test_claims_consistency.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_claims_consistency.py)) enforces it in CI. NOTE: full standardization on DCS-2026 (which would collapse the present pair and recompute the DCS-2021 rarity family) is a corpus-version policy decision left open.
 
 ## [0.55.0] - 2026-07-17
 
@@ -885,10 +1207,10 @@ changelog tags as `vX.Y.Z`.
 - **Cross-register claim-figure consistency check (H1140, Opus 4.8 `claude-opus-4-8[1m]`).** A
   guardrail against superseded corpus figures drifting back into the claim registers, after the
   aorist count (2,452 / 0.31% -> 12,054 / 2.30%) drifted repeatedly across registers that reuse
-  each other's numbers. New [`scripts/check_claims_consistency.py`](scripts/check_claims_consistency.py)
+  each other's numbers. New [`scripts/check_claims_consistency.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/check_claims_consistency.py)
   holds a canonical-figures registry and FAILs if any `*/claims.yml` cites a superseded value as a
   live number without a correction marker; wired into CI via
-  [`tests/test_claims_consistency.py`](tests/test_claims_consistency.py) and available as
+  [`tests/test_claims_consistency.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_claims_consistency.py) and available as
   `npm run check-claims`. On its first run it caught **5 stale aorist citations** the manual
   refresh had missed (Bühler HB-1/20/61, Zalizniak Ocherk OCH-31, Konspekt KZ-3), now all fixed.
 
@@ -1137,7 +1459,7 @@ changelog tags as `vX.Y.Z`.
   [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)/[Systema PR #536](https://github.com/gasyoun/Systema-Sanscriticum/pull/536),
   already assumes real, retention-contactable Systema accounts). **§ 6.4 (consent wording)
   APPROVED 16-07-2026 (MG), no revisions** — the plain-language Russian consent text drafted in
-  H987 is now finalised in [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](docs/RQ4_EVALUATION_PROTOCOL_2026.md)
+  H987 is now finalised in [`docs/RQ4_EVALUATION_PROTOCOL_2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md)
   § 6.4. Nothing blocks recruitment but flipping the `features.rq4_study` launch flag (a separate,
   not-yet-made decision). ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
@@ -1385,7 +1707,7 @@ changelog tags as `vX.Y.Z`.
 ## [0.9.1] - 2026-07-14
 ### Fixed
 - **Broken in-site link on the Subject-concordance catalog page.** `build_subject_concordance.py`
-  emitted `[Whitney book pages](../WhitneyGrammar_1889/00_index)`, but Docusaurus strips the `00_`
+  emitted `Whitney book pages`, but Docusaurus strips the `00_`
   numeric prefix so the page's real route is `.../WhitneyGrammar_1889/index` — the link 404'd. Fixed
   the link in the generator and regenerated
   [`SubjectConcordance/catalog.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/SubjectConcordance/catalog.mdx);
@@ -1530,7 +1852,7 @@ changelog tags as `vX.Y.Z`.
   licence status), team history updated through Jim Funderburk's June-2026
   retirement (cited to the recorded volunteer call), full bibliography +
   abbreviations appendix. Provenance and residual pre-submission items in the
-  folder's [`README.mdx`](TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx).
+  folder's [`README.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/MumbaiWSC_2027/README.mdx).
 
 ## [0.2.0] - 2026-07-12
 ### Added
@@ -1585,9 +1907,9 @@ changelog tags as `vX.Y.Z`.
   (17 check classes incl. H540 form-class cross-check and `--check` page sync)
   (H631, Fable 5 `claude-fable-5`).
 - **Sangram editorial + i18n contract (C4, H633)**: article manifest schema
-  ([sangram/editorial/data/article.schema.json](sangram/editorial/data/article.schema.json)),
+  ([sangram/editorial/data/article.schema.json](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/article.schema.json)),
   fixture, validator (`python scripts/article_validate.py --self-test`) and the
-  prose contract page ([sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx](sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)):
+  prose contract page ([sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_EDITORIAL_I18N_CONTRACT.mdx)):
   RU-default/EN-translation locales, one canonical SLP1 copy per example
   (IAST/Devanagari derived via sanskrit-util), scientific/pedagogical layers,
   stable `ex:<slug>:<n>` example IDs with locus/translation/provenance,
@@ -1608,3 +1930,5 @@ changelog tags as `vX.Y.Z`.
   between two versions of a book's text file into reviewable errata candidates —
   so books with no printed sheet (Kochergina, etc.) still accrue errata over time.
 - `README.md` documenting the repo's source editions and scope.
+
+_Dr. Mārcis Gasūns_

@@ -1,0 +1,31 @@
+lesson	lemma_iast	topic	feature
+XVIII	kāray	каузатив: kṛ → kārayati (HB-142)
+XVIII	darśay	каузатив из списка урока: darś caus. показывать (HB-142)
+XVIII	sthāpay	каузатив из списка урока: sthā caus. ставить (HB-142)
+XVIII	śrāvay	каузатив: śru → śrāvayati (HB-142)
+XVIII	pūray	исключение: pṝ → pūrayati, ūr вместо вриддхи (HB-142)
+XXVIII	kup	seṭ-причастие kupita — восстановленный член списка (HB-211)	verbform=Part
+XXVIII	krudh	aniṭ-причастие kruddha — контраст к kupita (HB-211)	verbform=Part
+XXVIII	jan	тройка jan/san/khan: jāta (HB-219)	verbform=Part
+XXVIII	khan	тройка jan/san/khan: khāta (HB-219)	verbform=Part
+XXVIII	san	тройка jan/san/khan: sāta (HB-219)
+XXVIII	pat	seṭ-причастие patita из списка урока (HB-211)	verbform=Part
+XXXIV	rājan	samāsānta: rājan → °rāja (HB-269)
+XXXIV	sakhi	samāsānta: sakhi → °sakha (HB-269)
+XXXIV	pathin	samāsānta: pathin → °patha (HB-269)
+XXXIV	apatha	факультативность блокировки: apatha при apathin (HB-269)
+XXXVIII	stu	вриддхи в сильных формах: stauti (HB-296)	tense=Pres
+XXXVIII	ru	корень tu/ru/stu-группы (HB-296)
+XLIII	vac	перфект как норма повествования: uvāca (HB-57)	formation=red
+XLIII	bhū	перфект: babhūva (HB-57)	formation=red
+XLIII	gam	перфект: jagāma (HB-57)	formation=red
+XLIV	yā	простое будущее — частая форма (HB-58)	tense=Fut
+XLIV	dṛś	простое будущее: drakṣyati (HB-58)	tense=Fut
+XLV	sic	a-аорист: asicat — парадигма урока (HB-60)	formation=them
+XLV	muc	a-аорист: amucat (HB-60)	formation=them
+XLV	dā	корневой аорист: adāt (HB-363)	formation=root
+управление	hu	рамка Шерцля, подтвержденная корпусом: hu + Acc.
+управление	ah	рамка Шерцля: ah + Acc.
+управление	grah	рамка Шерцля: grah + Acc.
+управление	pā	рамка Шерцля: pā + Acc.
+управление	dhā	рамка Шерцля: dhā + Acc. / Loc.

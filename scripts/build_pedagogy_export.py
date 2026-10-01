@@ -206,6 +206,24 @@ def build_export() -> dict:
         "omissions": omitted,
     }
     manifest_path = EXPORT_DIR / MANIFEST_NAME
+    if manifest_path.exists():
+        # H3066 (FINDINGS 464): keep the committed bytes when only generated_at
+        # changed - repeated verify-style runs must be byte-idempotent.
+        try:
+            old = json.loads(manifest_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            old = None
+        if isinstance(old, dict):
+            new_view = {k: v for k, v in manifest.items() if k != "generated_at"}
+            old_view = {k: v for k, v in old.items() if k != "generated_at"}
+            if new_view == old_view:
+                # Content-equal: skip ONLY when the committed bytes are already
+                # the canonical LF serialization of themselves. A legacy CRLF
+                # copy is rewritten ONCE, then stays byte-stable.
+                canon_old = (json.dumps(old, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+                if manifest_path.read_bytes() == canon_old:
+                    print(f"Unchanged { _rel(manifest_path) } (content identical; generated_at preserved)")
+                    return manifest
     _write_text_lf(
         manifest_path,
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",

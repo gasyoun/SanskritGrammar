@@ -63,3 +63,5 @@ authors and anyone weighing "Kochergina vs Zalizniak rigour". Russian, scholarly
 | 13-07-2026 | H800 (Opus 4.8) | +§2а (3 missing classes) +§4 (machine register + measured 4-way comparison + D3 verification); Last-updated bumped |
 
 _Auto-generated companion; maintained by hand._
+
+_Dr. Mārcis Gasūns_

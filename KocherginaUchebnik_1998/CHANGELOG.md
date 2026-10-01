@@ -1,3 +1,5 @@
+_Created: 25-08-2026 · Last updated: 25-09-2026_
+
 # Changelog — KocherginaUchebnik_1998
 
 All notable changes to this book's digital edition are documented here.
@@ -8,6 +10,56 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Added
+- **Линт управления глаголов в ключах по НКРЯ (H5400, Opus 5, 25-09-2026).** Новый
+  `verb_government_lint.py` собирает ключи из раздела «Ключи»/«Переводы чтений»
+  методички и правильных вариантов MCQ во всех девяти профилях `LessonPacks/zan1/`,
+  извлекает pymorphy3-ом пары «глагол + предлог + падеж + зависимое» (предлог
+  разрешает падежную омонимию) и считает флаг по НКРЯ: тир A — `sketch(глагол, "V")`,
+  тир B — конкорданс «глагол … предлог» в срезах 1950+ и 1800–1899 (`c19_only`,
+  `zero_modern`, `rare`). Прогон возобновляем (кэш каждые 20 вызовов, `--max-lookups`,
+  `--offline`), формулировки учителя не переписываются — флагированные пары уходят
+  спецификацией review-листа (`--sheet`). Первый прогон: 59 пар, 31 глагол, 17
+  предложных; **флагов 0, потому что живая проверка не выполнялась** — на боксе нет
+  токена НКРЯ, все пригодные пары стоят как `unknown`. Отчёт с очередью на живой
+  прогон (65 вызовов ≈ 65 мин) — `VERB_GOVERNMENT_KOCHERGINA_KEYS_2026.md`,
+  построчный результат — `verb_government_kochergina_keys.tsv`, контракт-сьют
+  `tests/test_verb_government_lint.py` (4 теста, в т.ч. «нет данных ≠ нет флагов»).
+
+## [0.19.0] - 2026-09-06
+
+### Added
+- **Learn Your Way wave 1: занятие-1 lesson packs + build-time generator (H3521, OxAlpha,
+  25-08-2026).** Новый build-time генератор `scripts/build_lessonpack.py` (assembler+validator;
+  prose-трансформации авторской агентной сессии зашиты в CONTENT-таблицы — регенерация
+  байт-в-байт) и закоммиченная матрица из 9 профилей под `LessonPacks/zan1/` (base +
+  ноль/продолжающий × йога/аюрведа/кино/паломничество): re-levelled `personalized_text.md`
+  с подсвеченными interest-swap'ами (🎯), embedded MCQ с answer-key'ями, Glows/Grows рубрика,
+  мнемоники и Mermaid mind map (`views/mindmap.mmd`). SRS-ось питается синтетическим
+  k-anonymized агрегатом `LessonPacks/srs_aggregate.json` (band-schema, ноль пользовательских
+  идентификаторов; реальный экспорт — wave 2). Контракт-сьют `tests/test_build_lessonpack.py`
+  (15 тестов): схема манифеста v1, полнота матрицы, no-fabrication gate против слайса
+  «Занятие I» mdx + HK-claims урока, resolvable answer keys, Mermaid sanity, приватность
+  фикстуры, byte-stable rebuild, seeded-defect детекты. Каждый манифест пинит
+  sha256(claims.yml) — расхождение валит `--check`. Serving на Systema-Sanscriticum — за
+  default-OFF флагом `LYW_ENABLED`; включение только после MG sign-off.
+
+### Fixed
+- **`build_lessonpack.py` regeneration drift fixed by teaching the generator the H4092
+  byline header instead of stripping it (H4241, fork side (a), 06-09-2026).** The H4092
+  mechanical byline/header pass (commit `e75d1a5`) hand-added
+  `_Created: 26-08-2026 · Last updated: 05-09-2026_` + a closing `_Dr. Mārcis Gasūns_` to
+  all nine committed `personalized_text.md` packs under `LessonPacks/zan1/`, which the
+  generator did not emit — every rebuild since then failed
+  `test_rebuild_is_byte_stable_against_committed_packs` (`main` red 05-09→06-09-2026).
+  Generated files are supposed to be non-authored, so the byline arguably should not
+  have landed on them at all (fork side (b)); chosen (a) instead because the generator
+  already carries a fixed, non-"today" `GENERATED_DATE` constant for its own footer —
+  adding two more pinned constants (`DOC_CREATED_DATE`, `DOC_UPDATED_DATE`) to reproduce
+  the exact header/byline costs nothing and keeps the byline policy uniform across
+  authored and generated `.md`. Next mechanical byline sweep over a *new* generated pack
+  must update these three constants in the same pass, not hand-edit the committed output.
 
 ## [0.18.0] - 2026-07-28
 
@@ -330,3 +382,5 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   grid tables — 124 grid tables, the most of any book here — images extracted
   to `Kochergina_unicode_media/`, UTF-8 Devanagari intact).
 - Initial mint: reprint source edition (*Учебник санскрита*, 1998).
+
+_Dr. Mārcis Gasūns_

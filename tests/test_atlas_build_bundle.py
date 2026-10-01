@@ -116,3 +116,93 @@ def test_external_stacks_includes_sanskrit_lexicon_scans():
     assert abb.EXT_NAME_MAP["sanskrit-lexicon-scans"] == "ext:sanskrit-lexicon-scans"
     stack_ids = {row[0] for row in abb.EXTERNAL_STACKS}
     assert "ext:sanskrit-lexicon-scans" in stack_ids
+
+
+# ---------------------------------------------------------------------------
+# H3683 wave 2 — the unmatched-join drain. Every live FEATURES_INDEX I–IV row
+# must land in exactly one of: FEATURE_ID_JOINS, FEATURE_ROW_NOTES, or the
+# dict-code / ext-stack shape notes. The "wave-2 drain" placeholder is gone;
+# an unclassified row hard-fails join_features (plan R4.2 join bar).
+# ---------------------------------------------------------------------------
+
+
+def test_feature_id_joins_target_known_families():
+    families = {row[0] for row in abb.ASSET_FAMILIES}
+    unknown = set(abb.FEATURE_ID_JOINS.values()) - families
+    assert not unknown, f"joins point at non-families: {sorted(unknown)}"
+
+
+def test_feature_row_notes_never_shadow_a_join():
+    clash = set(abb.FEATURE_ROW_NOTES) & set(abb.FEATURE_ID_JOINS)
+    assert not clash, f"id both joined and noted: {sorted(clash)}"
+
+
+def test_join_takes_precedence_over_note():
+    rows = [{"id": "A2", "section": "s", "title": "SanskritRussian glossary (3-layer)"}]
+    joined, unmatched = abb.join_features(rows)
+    assert joined == {"asset:sa-ru-alignment": ["A2"]}
+    assert unmatched == []
+
+
+def test_e43_double_definition_gets_distinct_reasons():
+    rows = [
+        {"id": "E43", "section": "s", "title": "kosha corpus sandhi (programme)"},
+        {"id": "E43", "section": "s",
+         "title": "code-duplication census + LOC/language-mix per repo"},
+    ]
+    joined, unmatched = abb.join_features(rows)
+    assert joined == {}
+    assert len(unmatched) == 2
+    reasons = {u["title"]: u["reason"] for u in unmatched}
+    assert reasons["kosha corpus sandhi (programme)"] != \
+        reasons["code-duplication census + LOC/language-mix per repo"]
+    assert all("wave-2 drain" not in r for r in reasons.values())
+
+
+def test_m_tool_rows_carry_external_stack_note():
+    rows = [
+        {"id": "M10", "section": "s", "title": "Samsaadhanii / SCL (Amba Kulkarni, UoHyd)"},
+        {"id": "M14", "section": "s", "title": "vidyut (Ambuda)"},
+    ]
+    joined, unmatched = abb.join_features(rows)
+    assert joined == {}
+    expected = abb.UNMATCHED_NOTE_BY_SHAPE["ext-stack"]
+    assert all(u["reason"] == expected for u in unmatched)
+
+
+def test_uncategorised_row_hard_fails():
+    import pytest
+    rows = [{"id": "E99", "section": "s", "title": "some future row"}]
+    with pytest.raises(SystemExit, match="E99"):
+        abb.join_features(rows)
+
+
+def test_dict_code_shape_note_unchanged():
+    rows = [{"id": "mw", "section": "s", "title": "Monier-Williams"}]
+    joined, unmatched = abb.join_features(rows)
+    assert joined == {}
+    assert unmatched[0]["reason"] == abb.UNMATCHED_NOTE_BY_SHAPE["dict-code"]
+
+
+def test_placeholder_note_removed_from_shape_table():
+    assert "no-join" not in abb.UNMATCHED_NOTE_BY_SHAPE
+
+
+_SIBLING_SIDECAR = (
+    abb.Path(__file__).resolve().parent.parent.parent
+    / "SanskritLexicography" / "features_index.json"
+)
+
+
+def test_live_sidecar_fully_drained():
+    """Live gate (skips without the SL sibling, CI-safe): no placeholder and
+    every unmatched row carries a real reason."""
+    if not _SIBLING_SIDECAR.exists():
+        import pytest
+        pytest.skip("no ../SanskritLexicography/features_index.json sibling")
+    features = abb.load_features(_SIBLING_SIDECAR)
+    joined, unmatched = abb.join_features(features)
+    assert joined, "live sidecar produced no joins"
+    for row in unmatched:
+        assert "wave-2 drain" not in row["reason"], row["id"]
+        assert len(row["reason"]) > 20, row["id"]

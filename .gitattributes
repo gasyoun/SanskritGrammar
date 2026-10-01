@@ -7,6 +7,11 @@
 *.py    text eol=lf
 *.json  text eol=lf
 *.tsv   text eol=lf
+# Every tracked .yml blob is already LF in the index; without this attribute a
+# Windows checkout materialised CRLF bytes and any sha256 pinned over the file
+# (e.g. grammar-lab manifest feeds) disagreed between platforms.
+*.yml   text eol=lf
+*.yaml  text eol=lf
 
 # Binary assets — never touch line endings / never diff
 *.doc   binary

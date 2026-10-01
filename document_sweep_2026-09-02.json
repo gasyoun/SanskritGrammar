@@ -1,0 +1,215 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-09-02 21:22:33",
+  "artifacts": [
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritGrammar/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md",
+      "repo": "/Users/mac/Documents/GitHub/SanskritGrammar",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "README `## Research layer` introduces the study and its live caveat through the REPORT itself (H3965 sweep); a metadoc is agent-facing revision history, not a reader surface"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md `## Traps` carries the behavioural rule (put `feat_mood=Ind` in every finite past bucket) with the report + H3966 links; naming the metadoc adds no rule an agent can act on"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "AGENTS.md here is GENERATED from the DANGER_FACTS public-safe subset; a correctness caveat is not a destructive-risk fact, so it has no generated block to land in"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the governing sibling doc IS the report, and it carries the caveat inline as its own section (Оговорка H3878, released in v0.122.4) — a pointer from the metadoc back to it would be circular"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the artifact IS the metadoc (H3965 deliverable); a metadoc of a metadoc is not a surface"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/CHANGELOG.md:25: - **[`ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHI"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": ".ai_state.md carries the H3966 queue row and the H3965 completion entry, both pointing at the report; the queue tracks work, not sibling files"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "SanskritGrammar issues are an intake-OFF task surface (docs/agents/issue-tracker.md); no open issue tracks T2607-26, and a research caveat is not a per-person task"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "the T2607-26 fork was RULED by MG this session (annotate + schedule a re-run) — no human action remains; the residual is agent work, carried by H3966"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "registered as H3965 (closed against PR #901/#906) and H3966 (queued); registry rows name handoffs and their PRs, never individual files"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "a metadoc is documentation of a study, not a reusable capability (data/interface/tool)"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no new cross-repo edge — the SanskritGrammar→VisualDCS DCS-figures edge already exists (H2298) and H3878 flowed along it rather than creating one"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "a correctness trap (silently swallowed non-indicatives), not a destructive-risk fact — nothing here can destroy data; it is registered where consumers read it, CLAUDE.md `## Traps`"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "the T2607-26 row was annotated this session with the measured 10.15 % contamination and the ruling"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "an operational data caveat on one study, not a refinement of any MEGABOOK thesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no enforcement changed — the mandate is a documented rule, not a hook; a mood-guard verifier is backlog item 3 of the metadoc"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "the SanskritGrammar section is not made stale by a doc caveat; release v0.122.5 is the durable record"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "the metadoc is a per-document companion, not a long-lived hub or registry needing staleness tracking"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "routed and landed this session — Uprava FINDINGS §682 (commit e0324c292) records the reusable structure; STALENESS.md is fully auto-generated"
+        }
+      ]
+    }
+  ]
+}

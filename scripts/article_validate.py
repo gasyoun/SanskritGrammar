@@ -32,7 +32,7 @@ Checks, in order:
 
 Usage:
   python scripts/article_validate.py sangram/editorial/data/article.fixture.json
-  python scripts/article_validate.py --all      # every article.manifest.json under sangram/
+  python scripts/article_validate.py --all      # every canonical article.manifest.json
   python scripts/article_validate.py --self-test
 
 Exit 0 = valid; exit 1 = one or more violations (all printed).
@@ -52,6 +52,10 @@ HERE = Path(__file__).resolve().parent
 SCHEMA_PATH = HERE.parent / "sangram" / "editorial" / "data" / "article.schema.json"
 FIXTURE_PATH = HERE.parent / "sangram" / "editorial" / "data" / "article.fixture.json"
 FREEZE_LEDGER_PATH = HERE.parent / "sangram" / "editorial" / "data" / "consolidation_ledger.json"
+ARTICLE_ROOTS = (
+    HERE.parent / "sangram" / "articles",
+    HERE.parent / "content" / "sangram" / "articles",
+)
 
 ART_ID_RE = re.compile(r"^art:[a-z0-9][a-z0-9-]*$")
 EX_ID_RE = re.compile(r"^ex:([a-z0-9][a-z0-9-]*):([1-9]\d*)$")
@@ -359,14 +363,18 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("manifest", nargs="?", help="path to an article manifest JSON")
     ap.add_argument("--all", action="store_true",
-                    help="validate every article.manifest.json under sangram/ plus the fixture")
+                    help="validate every canonical article manifest plus the fixture")
     ap.add_argument("--self-test", action="store_true")
     args = ap.parse_args()
 
     if args.self_test:
         return self_test()
     if args.all:
-        targets = sorted((HERE.parent / "sangram").rglob("article.manifest.json"))
+        targets = sorted(
+            path
+            for root in ARTICLE_ROOTS
+            for path in root.glob("*/article.manifest.json")
+        )
         targets.append(FIXTURE_PATH)
         return max((run_file(p) for p in targets), default=0)
     if not args.manifest:

@@ -1,0 +1,143 @@
+name: OxAlpha review gate
+
+# H4074 (04-09-2026): the H3550 gate design (docs/OXALPHA_STATUS_GATE_DESIGN_2026.md)
+# armed as a real monthly workflow - schedule + PR + manual dispatch.
+#
+# RUNG 1 - SHADOW / REPORTING ONLY (design section 4 rollout step 2-3). NOT a
+# required check; the job exits 0 and the verdict travels in the GitHub Step
+# Summary, the uploaded artifacts, and a PR comment. Never-silent-success:
+# even a skip or empty result is posted and archived; a crashed run is verdict
+# fail with reason infrastructure, never an absence.
+#
+# Conclusions (design section 2):
+#   pass  - repo test suite green + review ran with no P0/P1 finding
+#   fail  - test suite red, P0/P1 finding, spec absent, or crash
+#   skip  - diff matches no executable-code pattern (exclusion note posted)
+#
+# The design's "job added to ci.yml" is landed as this standalone file with
+# the same job id (oxalpha-review-gate) so the branch-protection mapping is
+# identical while the monthly schedule cannot trigger the Pages deploy chain;
+# rollback = delete this one file (design "Rollback" section, same shape).
+#
+# The Standards axis always runs a deterministic heuristic scan; the model lane
+# activates when a human provisions OXALPHA_REVIEW_API_KEY +
+# OXALPHA_REVIEW_MODEL as repo secrets. An unprovisioned reviewer is recorded
+# by name, never silently passed.
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      window_days:
+        description: "Delta window in days for dispatch/scheduled runs"
+        required: false
+        default: "30"
+  schedule:
+    - cron: "41 4 1 * *"  # monthly on the 1st, 04:41 UTC
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: oxalpha-review-gate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  oxalpha-review-gate:
+    name: OxAlpha review (shadow, reporting only)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Hermetic gate suite
+        run: |
+          python scripts/test_oxalpha_gate_match.py
+          python scripts/test_oxalpha_gate_review.py
+          python scripts/test_oxalpha_gate_conclude.py
+
+      - name: Resolve delta window
+        id: window
+        run: |
+          set -eu
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "base=${{ github.event.pull_request.base.sha }}" >> "$GITHUB_OUTPUT"
+            echo "head=${{ github.event.pull_request.head.sha }}" >> "$GITHUB_OUTPUT"
+          else
+            days="${{ github.event.inputs.window_days }}"
+            [ -n "$days" ] || days=30
+            base=$(git rev-list -n 1 --before="${days} days" HEAD || true)
+            if [ -z "$base" ]; then
+              base=$(git rev-list --max-parents=0 HEAD | head -1 || true)
+            fi
+            if [ -z "$base" ]; then
+              echo "base=" >> "$GITHUB_OUTPUT"
+            else
+              echo "base=$base" >> "$GITHUB_OUTPUT"
+            fi
+            echo "head=${GITHUB_SHA}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Match executable paths
+        id: match
+        if: steps.window.outputs.base != ''
+        env:
+          BASE: ${{ steps.window.outputs.base }}
+          HEAD: ${{ steps.window.outputs.head }}
+        run: python scripts/oxalpha_gate_match.py --base "$BASE" --head "$HEAD" --repo . --out match.json --gha >> "$GITHUB_OUTPUT"
+
+      - name: Repository gates (locked env + test suite)
+        id: gates
+        if: steps.window.outputs.base != '' && (steps.match.outputs.executable == 'true' || github.event_name != 'pull_request')
+        run: |
+          pip install uv
+          uv sync --frozen
+          python scripts/oxalpha_gate_gates.py --repo . --out gates.json \
+            --gate "pytest|uv run python -m pytest|hard|2400"
+
+      - name: Second-opinion review pass (<=10 risk-ranked hunks)
+        if: steps.match.outputs.executable == 'true'
+        env:
+          BASE: ${{ steps.window.outputs.base }}
+          HEAD: ${{ steps.window.outputs.head }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+          OXALPHA_REVIEW_API_KEY: ${{ secrets.OXALPHA_REVIEW_API_KEY }}
+          OXALPHA_REVIEW_MODEL: ${{ secrets.OXALPHA_REVIEW_MODEL }}
+        run: python scripts/oxalpha_gate_review.py --base "$BASE" --head "$HEAD" --repo . --matched-json match.json --out review.json
+
+      - name: Conclusion (verdict + ledger row + summary, always)
+        if: always() && steps.window.outputs.base != ''
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python scripts/oxalpha_gate_conclude.py --matched "${{ steps.match.outputs.executable || 'unknown' }}" --gha
+
+      - name: Upload verdict artifacts (never silent)
+        if: always() && steps.window.outputs.base != ''
+        uses: actions/upload-artifact@v6
+        with:
+          name: oxalpha-verdict-${{ github.run_id }}
+          path: |
+            verdict.json
+            ledger-row.jsonl
+            match.json
+            gates.json
+            review.json
+          if-no-files-found: warn
+
+      - name: PR comment (never silent)
+        if: always() && github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body-file comment.md
+
+      - name: Zero-window record (single-commit repo edge)
+        if: steps.window.outputs.base == ''
+        run: |
+          echo "OxAlpha gate: no base commit resolvable for the delta window - run record: skip (nothing to diff)." >> "$GITHUB_STEP_SUMMARY"
+          echo "::notice::OxAlpha gate skip: empty delta window"

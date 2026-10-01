@@ -24,6 +24,8 @@ from pathlib import Path
 
 import yaml
 
+from blob_links import absolutize
+
 sys.stdout.reconfigure(encoding="utf-8")
 sys.stderr.reconfigure(encoding="utf-8")
 
@@ -267,7 +269,7 @@ def main():
         work, entries, synthesis = load_book(yml)
         harvest = load_harvest(yml.parent, entries)
         md, n, verdicted, flagged, nb = render_book(work, entries, book_dir, synthesis, harvest)
-        (yml.parent / "CLAIMS_VERIFIED.md").write_text(md, encoding="utf-8")
+        (yml.parent / "CLAIMS_VERIFIED.md").write_text(absolutize(md, book_dir), encoding="utf-8")
         # Machine-readable twin for the reading-site overlay (P4) — normalise the
         # YAML-boolean verdict_fact and keep only the fields the badge panel needs.
         payload = {
@@ -295,7 +297,7 @@ def main():
         work, entries, _ = load_book(yml)
         n, verdicted, flagged = counts(entries)
         all_rows.append((yml.parent.name, n, verdicted, flagged))
-    (ROOT / "CLAIMS_VERIFIED.md").write_text(render_index(all_rows), encoding="utf-8")
+    (ROOT / "CLAIMS_VERIFIED.md").write_text(absolutize(render_index(all_rows)), encoding="utf-8")
     print(f"  index -> CLAIMS_VERIFIED.md ({len(all_rows)} book(s))")
 
 

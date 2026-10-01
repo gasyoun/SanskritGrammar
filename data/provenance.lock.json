@@ -23,6 +23,18 @@
       "path": "crosswalk/roots.csv",
       "rights": "publishable-derived-input",
       "consumers": ["pipeline:grammar-lab-g1"]
+    },
+    {
+      "id": "external:dcs-conllu-sqlite-c3-pin",
+      "owner": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+      "repository": "https://github.com/gasyoun/dcs-conllu",
+      "revision": "04e0778d3dc971030229179e25eea043d06ff397",
+      "revision_label": "c3-pin-04e0778-content",
+      "revision_note": "The upstream pin 04e0778 was orphaned; binding = the master's own provenance table + SHA-256 + tag c3-pin-04e0778-content (C0 frozen record). The sqlite master itself stays off-Git at the documented sibling path; CI never reads it.",
+      "path": "../VisualDCS/src/DCS-data-2026/dcs_full.sqlite",
+      "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+      "rights": "publishable-derived-input",
+      "consumers": ["pipeline:sg-mo-021-future"]
     }
   ]
 }

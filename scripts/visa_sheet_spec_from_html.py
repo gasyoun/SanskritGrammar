@@ -39,7 +39,7 @@ RE_SUB = re.compile(
     r'<code>(?P<sheet_id>.*?)</code> &middot; (?P<subtitle>.*?)</div>', re.S)
 RE_FILTERBAR = re.compile(r'<div class="filterbar" id="filterbar">(?P<body>.*?)</div>', re.S)
 RE_FILTER_BTN = re.compile(r'<button data-filter="(?P<key>[^"]*)"(?P<cls>[^>]*)>(?P<label>.*?)</button>', re.S)
-RE_FOOTER = re.compile(r'<footer class="hint">(?P<footer>.*?) Keyboard:', re.S)
+RE_FOOTER = re.compile(r'<footer class="hint">(?P<footer>.*?) (?:Keyboard|Клавиатура):', re.S)
 RE_CARD = re.compile(
     r'<section class="card" data-id="(?P<id>[^"]*)" data-filt="(?P<filt>[^"]*)">\s*'
     r'<header><div class="hw">(?P<hw>.*?)</div>(?P<after_hw>.*?)</header>\s*'

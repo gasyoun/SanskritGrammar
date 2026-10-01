@@ -105,18 +105,40 @@ def test_cli_carries_no_scholarly_transformation() -> None:
         )
 
 
-def test_generators_registry_is_empty_in_slice_a() -> None:
-    """Slice A ships the registry with zero content generators.
+def test_generators_registry_registers_only_through_pilot_modules() -> None:
+    """Slice A ships the registry itself; content generators arrive ONLY as
+    pilot modules dropped beside ``__init__`` (H1912 Knauer, H1913 SG-MO-021).
 
-    The Wave-1 pilots (H1912 Knauer, H1913 SG-MO-021) register their own. If this
-    starts failing, a generator landed in a Slice-A-owned file, which is exactly
-    the ownership fence the plan draws.
+    Two mechanical fence checks, replacing the original "registry is empty"
+    assertion which could only be true before the first pilot landed:
+
+    1. ``__init__.py`` never calls ``register`` directly - a generator
+       registered from a Slice-A-owned file is exactly what the plan forbids;
+    2. with no pilot module present, the registry is empty - so a shared file
+       cannot smuggle registrations through any other import path.
     """
+    init_path = PACKAGE_ROOT / "generators" / "__init__.py"
+    tree = ast.parse(init_path.read_text(encoding="utf-8"), filename=str(init_path))
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Call):
+            func = node.func
+            name = func.id if isinstance(func, ast.Name) else getattr(func, "attr", "")
+            assert name != "register", (
+                "generators/__init__.py called register(); content generators "
+                "may only register from their own pilot module"
+            )
+
     sys.path.insert(0, str(PACKAGE_ROOT.parent))
     try:
         from sg_tooling.generators import available_commands
     finally:
         sys.path.pop(0)
-    assert available_commands() == {}, (
-        "Slice A must not register content generators; a pilot owns its own"
-    )
+    pilots = [
+        p for p in (PACKAGE_ROOT / "generators").glob("*.py")
+        if p.name != "__init__.py" and not p.name.startswith("_")
+    ]
+    if not pilots:
+        assert available_commands() == {}, (
+            "no pilot module exists, yet commands are registered; something "
+            "outside a pilot's own module claimed the registry"
+        )

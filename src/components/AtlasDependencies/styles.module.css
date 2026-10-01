@@ -83,6 +83,7 @@
 .kindVendors { background: #b0620f; }
 .kindProduces { background: #6d3fa9; }
 .kindCites { background: #5c6570; }
+.kindAdvises { background: #7a5c3e; }
 
 .statusChip {
   display: inline-block;
