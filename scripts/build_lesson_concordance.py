@@ -48,6 +48,7 @@ SOURCE_PAGES = {
     "dhatu-glava7": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka",
     "sangram-thematic-present": "sangram/articles/thematic-present",
     "sangram-conjugation-overview": "sangram/articles/conjugation-overview",
+    "sangram-absolutive": "sangram/articles/absolutive",
     "buhler": "BuhlerLeitfaden_1923/Buhler_Unicode",
 }
 
@@ -108,6 +109,7 @@ LOCAL_SOURCE_FILES = {
     "ocherk": "ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned.mdx",
     "dhatu-glava7": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx",
     "sangram-conjugation-overview": "sangram/articles/conjugation-overview/index.mdx",
+    "sangram-absolutive": "sangram/articles/absolutive/index.mdx",
 }
 
 
