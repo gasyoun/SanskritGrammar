@@ -50,15 +50,17 @@ TARGET_LABELS = {
 SITE = "https://gasyoun.github.io/SanskritGrammar/grammars"
 GH = "https://github.com/gasyoun/SanskritGrammar/blob/main"
 
-# Whitney § → глава-файл (диапазоны глав — спайн SubjectConcordance).
+# Whitney § → глава (диапазоны глав — спайн whitney_sections.json). На сайте
+# страницы глав Уитни НЕ сервятся (только 404), §-ссылки в mdx ведут на
+# Wikisource с якорями заголовков — глубокая ссылка = Wikisource Chapter#§.
 WHITNEY_CHAPTERS = [
-    (1, 18, "01_Alphabet"), (19, 97, "02_System_of_Sounds_Pronunciation"),
-    (98, 260, "03_Rules_of_Euphonic_Combination"), (261, 320, "04_Declension"),
-    (321, 474, "05_Nouns_and_Adjectives"), (475, 489, "06_Numerals"),
-    (490, 526, "07_Pronouns"), (527, 598, "08_Conjugation"),
-    (599, 779, "09_The_Present_System"), (780, 823, "10_The_Perfect_System"),
-    (824, 930, "11_The_Aorist_Systems"),
+    (1, 18, "I"), (19, 97, "II"), (98, 260, "III"), (261, 320, "IV"),
+    (321, 474, "V"), (475, 489, "VI"), (490, 526, "VII"), (527, 598, "VIII"),
+    (599, 779, "IX"), (780, 823, "X"), (824, 930, "XI"), (931, 950, "XII"),
+    (951, 995, "XIII"), (996, 1068, "XIV"), (1069, 1095, "XV"),
+    (1096, 1135, "XVI"), (1136, 1245, "XVII"), (1246, 1316, "XVIII"),
 ]
+WIKISOURCE = "https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)"
 
 # Точная фраза на странице источника для подсветки (:~:text=) — первое вхождение.
 KOCHERGINA_SPOTS = {
@@ -84,10 +86,11 @@ def target_url(locus):
     без страницы на сайте (crosswalk-CSV) — файл в репо (GitHub)."""
     prefix, _, tail = locus.partition(":")
     if prefix == "whitney-sec":
-        lo = int(tail.split("-")[0])
-        chapter = next((f for a, b, f in WHITNEY_CHAPTERS if a <= lo <= b), None)
+        lo = tail.split("-")[0]
+        chapter = next((rn for a, b, rn in WHITNEY_CHAPTERS if a <= int(lo) <= b), None)
         if chapter:
-            return (f"{SITE}/WhitneyGrammar_1889/{chapter}{frag('§' + tail.split('-')[0])}",
+            # <>-обёртка обязательна: в URL Wikisource есть скобки (Whitney)
+            return (f"<{WIKISOURCE}/Chapter_{chapter}#{lo}>",
                     "§§ " + tail.replace("-", "–"))
         return f"{GH}/WhitneyGrammar_1889/", "§§ " + tail.replace("-", "–")
     if prefix == "zalizniak-1978-sec":
