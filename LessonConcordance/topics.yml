@@ -79,3 +79,95 @@ lessons:
           zalizniak-1978: "Z: класс-система перегруппирована (§120), запись через ряды A1/R/M/U"
           kochergina: "K: класс даётся при глаголе, морфонологической записи нет — её нет ни у кого, кроме Зализняка; даже не у всех трёх Зализняков она есть (МГ, ревью 02-10-2026)"
         notes: "Проверка полноты (голос MG D2): crosswalk 1975↔2014 покрывает 10/13 корней урока; śaṃs/rakṣ/jīv в нём отсутствуют — известный пробел реестра, не ошибка урока"
+  XXIX:
+    title: "Absolutivum (Gerundium) на -tvā, -ya, -am"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3985–4122 (заголовок «# УРОК XXIX»)"
+    claims: [HB-41, HB-42]
+    reuse_clusters:
+      - "Knauer Nr.19 ↔ Бюлер XXIX: «भुक्त्वा पीत्वा चैते नराः/नरः सुप्ताः» — общее предложение (scripts/data/matches.json, buhler-1923.XXIX.635 ↔ knauer-1908.19.411, score 0.84)"
+    corpus_layer: []     # corpus_layer.tsv: lesson XXIX has no rows (registers start at XVIII)
+    topics:
+      - key: absolutivum-tvaa
+        title: "Absolutivum на -tvā: простой корень, слабая ступень, соединительный i"
+        buhler_locus: "урок XXIX, п. 1a–б (mdx 3987–4011): tvā непосредственно либо через i; 8 пар двояких форм; X класс/каузативы → -ayitvā"
+        topic_claims: []
+        spots:
+          "kochergina-lesson:XXIII": "Образование инфинитива и деепричастий"
+          "knauer-fraza:Nr.19": "भुक्त्वा पीत्वा"
+          "zalizniak-1978-sec:165": "У глаголов без преверба суффикс -tvā"
+          "sangram-article:absolutive": "правило -tvā/-ya, редкий -am, сандхи"
+        exceptions:
+          verdict: "CONFIRMED (на этом локусе)"
+          buhler: "B+ — восемь пар двояких форм (vṛttvā/vartitvā, khātvā/khanitvā, kramitvā/krāntvā, devitvā/dyūtvā, damitvā/dāntvā, śamitvā/śāntvā, bhramitvā/bhrāntvā, śasitvā/śastvā) плюс оговорка про hā «покидать» → hitvā"
+          whitney: "W+ — §991a–d: систематические оговорки (tīrtvā́/stīrtvā́; от dhā только dhitvā́, но mitvā́/mītvā; сильные формы chāyitvā, raṁtvā, çāsitvā; ruktvā́/vṛṣṭvā́ вопреки ruj/vraçc; двойные от car, vas, nī, mṛj)"
+          zalizniak-1978: "Z+ — §165: «у производных глаголов ay не усекается, например bodhayitvа»; «при причастии на -na-: chittvā, purtvā» — исключения есть и у З-1978, вопреки гипотезе"
+          kochergina: "K+ — Занятие XXIII: seṭ/aniṭ (itvā) + «происходят внутренние saṃdhi» (chettum/chittvā, dagdhvā, buddhvā, labdhvā, pṛṣṭvā, dṛṣṭvā)"
+        notes: "Самый богатый исключениями локус урока: у всех четырёх свидетелей есть списки двояких/неправильных форм; Бюлер — самый длинный список пар"
+      - key: absolutivum-ya
+        title: "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, каузативы"
+        buhler_locus: "урок XXIX, п. 2 (mdx 4013–4027): ya/tya; ā после e/ai/ā; ṛ-корни и X класс как praes. pass.; правило -ayya (prāpayya/prāpya); gam/nam/ram двояко, tan/man/han только -tya"
+        topic_claims: [HB-41]
+        spots:
+          "kochergina-lesson:XXIII": "после краткой гласной -tya"
+          "knauer-fraza:Nr.14": "समुत्पत्य"
+          "zalizniak-1978-sec:165": "обычно выступают не в слабой ступени, а в guṇa"
+          "sangram-article:absolutive": "правило -tvā/-ya, редкий -am, сандхи"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — корни на e/ai/ā → ā; корни на ṛ, с носовым и X класс/каузативы → как praes. pass.; правило ayya для -aya-корней (pracorya, ānāyya, avagaṇayya); prāpayya/prāpya"
+          whitney: "W+ — §992: -tya после краткого гласного; ṛ → īr/ṝ (kṛ́tya, tī́rṇya); ā-корни с guṇa (-āya, dhā́ya); двойные формы gā/pā/dā; §990a: распределение tvā/ya лишь господствующее (-ya от простых корней в эпосе, -tvā у приставочных)"
+          zalizniak-1978: "Z+ — §165: «корни на ā обычно… в guṇa (-sthāya, -dhāya, -dāya)»; «-gam-ya и -ga-tya»; «у каузативов ay отсекается… кроме -gamayya, -āpayya» — слияние с деепричастием первичного глагола"
+          kochergina: "K+ — Занятие XXIII: «от глаголов с префиксами — суффикс -ya, после краткой гласной -tya» (nipatya, saṃśrutya, āgamya/āgatya)"
+        notes: "HB-41 (mg_footnote): по DCS-2021 78,4 % абсолютивов на -ya против 19,6 % на -tvā — частотно главная форма вторая в порядке изложения; порядок morphologically motivated (simplex → compound)"
+      - key: absolutivum-am
+        title: "Absolutivum на -am: редкая форма (guṇa/vṛddhi перед am)"
+        buhler_locus: "урок XXIX, п. 3 (mdx 4029–4033): «очень редкая форма abs.»; smṛ → smāram, bhuj → bhojam"
+        topic_claims: [HB-42]
+        spots:
+          "zalizniak-1978-sec:165": "Изредка встречается деепричастие на -am"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — «очень редкая», два примера, guṇa внутренних и vṛddhi конечных гласных; краткость пропорциональна редкости (HB-42: 14 из 3 415 форм DCS-2021 = 0,4 %)"
+          whitney: "W+ — §995: адвербиальный аккузатив имени действия на -a, вне RV/AV, особенно в Brāhmaṇas и Sūtras; по значению неотличим от герундия"
+          zalizniak-1978: "Z+ — §165: «изредка встречается деепричастие на -am», ступень как в 3 sg act. перфекта; редупликация çrāvaṁ çrāvam «напряжённо слушая»"
+          kochergina: "K- — Занятие XXIII форму на -am не упоминает (только -tvā/-ya) — honest gap, не ошибка"
+        notes: "Единственная тема урока, где один из четырёх свидетелей молчит; корпусная редкость подтверждена HB-42"
+      - key: absolutivum-syntax
+        title: "Синтаксис абсолютива: перевод, a privativum, abs. как предлоги"
+        buhler_locus: "урок XXIX, п. 4–5 (mdx 4035–4037): перевод причастием/придаточным/предложением с «и»; a privativum (alabdhvā, anāhūya); «некоторые abs. употребляются также как предлоги»"
+        spots:
+          "kochergina-lesson:XXXIII": "выступают деепричастные обороты"
+          "zalizniak-1978-sec:219": "оборот с деепричастием"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B± — правила перевода даны, но без списка герундиев-предлогов и без ограничения «одинаковый субъект»"
+          whitney: "W+ — §994b: частотность в позднем языке (в Nala и BGu. втрое больше примеров, чем в RV, при десятикратно меньшем объёме); §994g: список герундиев-предлогов (ādāya, adhikṛtya, uddiçya, ārabhya, sambhūya, vihāya…)"
+          zalizniak-1978: "Z+ — §219: оборот с деепричастием как эквивалент временного/условного/причинного/уступительного придаточного при совпадении субъектов; аномалия taṁ dṛṣṭvā tayoktam «увидев его, она сказала»"
+          kochergina: "K+ — Занятие XXXIII: деепричастные обороты (совпадение подлежащих) vs абсолютные конструкции (не совпадают) — рабочая сетка выбора конструкции"
+        notes: "Apte §120 даёт решающее тестовое предложение: लङ्कां गृहीत्वा (один субъект — герундий) vs कपिभिर्गृहीतायां लङ्कायां (разные — абсолютная конструкция); на упражнениях урока XXIX подлежащее всегда совпадает"
+      - key: verb-roots
+        title: "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
+        buhler_locus: "урок XXIX, список «Глаголы:» (mdx 4041–4063)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: as,   gloss: "бросать (ny-as поручать)",      z1975: "A1 (две омоним-строки: be/throw)", z1978: "A₁", crosswalk: "yes"}
+          - {root: āp,   gloss: "достигать",                     z1975: "A2", z1978: "A₂", crosswalk: "yes"}
+          - {root: kṛ,   gloss: "делать (adhi-kar ставить над)", z1975: "R1/R2 (три омоним-строки)", z1978: "R₁", crosswalk: "yes"}
+          - {root: cal,  gloss: "двигаться (pra-cal)",           z1975: "L",  z1978: "L? (index-unknown)", crosswalk: "yes, открытый вопрос ряда"}
+          - {root: cint, gloss: "обдумывать (X класс)",          z1975: "I1", z1978: "I₁", crosswalk: "yes"}
+          - {root: cyu,  gloss: "падать",                        z1975: "U1", z1978: "U₁", crosswalk: "yes"}
+          - {root: dā,   gloss: "давать (ā-dā брать)",           z1975: "A2 (четыре омоним-строки)", z1978: "A₂", crosswalk: "yes"}
+          - {root: dhā,  gloss: "класть (samā-dhā)",             z1975: "A2 (две омоним-строки)", z1978: "A₂", crosswalk: "yes"}
+          - {root: nī,   gloss: "вести (nirṇī решать)",          z1975: "I2", z1978: "I₂", crosswalk: "yes"}
+          - {root: bhaj, gloss: "разделять (vi-bhaj)",           z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+          - {root: muc,  gloss: "освобождать (muc abs., без)",   z1975: "U1", z1978: "U₁", crosswalk: "yes"}
+          - {root: vraj, gloss: "идти (pra-vraj уходить)",       z1975: "A1", z1978: "A₁", crosswalk: "yes"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B: класс при части глаголов дан (cint X. P., cyu I. Ā., vi-bhaj I. P. Ā.), морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: корни урока без классов в тексте; классификация — в root-аппарате WhitneyRoots"
+          zalizniak-1978: "Z: запись через ряды (A/R/I/L/U) — единственный источник с морфонологической записью (МГ, ревью 02-10-2026)"
+          kochergina: "K: класс даётся при глаголе, записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk 1975↔2014↔2026 покрывает 12/12 простых корней урока — контраст с уроком I (10/13); единственный открытый вопрос — cal (L?, index-unknown у З-1978)"

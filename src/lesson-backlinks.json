@@ -4,6 +4,10 @@
       {
         "label": "урок I — конкорданс",
         "spot": "УРОК I."
+      },
+      {
+        "label": "урок XXIX — конкорданс",
+        "spot": "УРОК XXIX."
       }
     ],
     "ocherk": [
@@ -14,6 +18,22 @@
       {
         "label": "урок I — visarga-sandhi",
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
+      },
+      {
+        "label": "урок XXIX — absolutivum-tvaa",
+        "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
+      },
+      {
+        "label": "урок XXIX — absolutivum-ya",
+        "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      },
+      {
+        "label": "урок XXIX — absolutivum-am",
+        "spot": "Absolutivum на -am: редкая форма (guṇa/vṛddhi перед am)"
+      },
+      {
+        "label": "урок XXIX — absolutivum-syntax",
+        "spot": "Синтаксис абсолютива: перевод, a privativum, abs. как предло"
       }
     ],
     "kochergina": [
@@ -24,6 +44,18 @@
       {
         "label": "урок I — visarga-sandhi",
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
+      },
+      {
+        "label": "урок XXIX — absolutivum-tvaa",
+        "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
+      },
+      {
+        "label": "урок XXIX — absolutivum-ya",
+        "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      },
+      {
+        "label": "урок XXIX — absolutivum-syntax",
+        "spot": "Синтаксис абсолютива: перевод, a privativum, abs. как предло"
       }
     ],
     "knauer": [
@@ -38,6 +70,14 @@
       {
         "label": "урок I — visarga-sandhi",
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
+      },
+      {
+        "label": "урок XXIX — absolutivum-tvaa",
+        "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
+      },
+      {
+        "label": "урок XXIX — absolutivum-ya",
+        "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
       }
     ],
     "sangram-conjugation-overview": [
@@ -50,6 +90,20 @@
       {
         "label": "урок I — verb-roots",
         "spot": "Лемма-слой: 13 глаголов I класса урока (морфонологическая за"
+      },
+      {
+        "label": "урок XXIX — verb-roots",
+        "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
+      }
+    ],
+    "sangram-absolutive": [
+      {
+        "label": "урок XXIX — absolutivum-tvaa",
+        "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
+      },
+      {
+        "label": "урок XXIX — absolutivum-ya",
+        "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
       }
     ]
   }
