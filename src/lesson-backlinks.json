@@ -8,6 +8,10 @@
       {
         "label": "урок XXIX — конкорданс",
         "spot": "УРОК XXIX."
+      },
+      {
+        "label": "урок XXXVIII — конкорданс",
+        "spot": "УРОК XXXVIII."
       }
     ],
     "ocherk": [
@@ -34,6 +38,14 @@
       {
         "label": "урок XXIX — absolutivum-syntax",
         "spot": "Синтаксис абсолютива: перевод, a privativum, abs. как предло"
+      },
+      {
+        "label": "урок XXXVIII — present-class-ii",
+        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
+      },
+      {
+        "label": "урок XXXVIII — class-ii-irregulars",
+        "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
       }
     ],
     "kochergina": [
@@ -56,6 +68,14 @@
       {
         "label": "урок XXIX — absolutivum-syntax",
         "spot": "Синтаксис абсолютива: перевод, a privativum, abs. как предло"
+      },
+      {
+        "label": "урок XXXVIII — present-class-ii",
+        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
+      },
+      {
+        "label": "урок XXXVIII — class-ii-irregulars",
+        "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
       }
     ],
     "knauer": [
@@ -78,6 +98,14 @@
       {
         "label": "урок XXIX — absolutivum-ya",
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      },
+      {
+        "label": "урок XXXVIII — present-class-ii",
+        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
+      },
+      {
+        "label": "урок XXXVIII — class-ii-irregulars",
+        "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
       }
     ],
     "sangram-conjugation-overview": [
@@ -94,6 +122,10 @@
       {
         "label": "урок XXIX — verb-roots",
         "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
+      },
+      {
+        "label": "урок XXXVIII — lesson-roots",
+        "spot": "Лемма-слой: 7 корней II класса урока (морфонологическая запи"
       }
     ],
     "sangram-absolutive": [
@@ -104,6 +136,18 @@
       {
         "label": "урок XXIX — absolutivum-ya",
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      }
+    ],
+    "sangram-thematic-present": [
+      {
+        "label": "урок XXXVIII — present-class-ii",
+        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
+      }
+    ],
+    "sangram-preverbs": [
+      {
+        "label": "урок XXXVIII — verb-prefixes",
+        "spot": "Превербные глаголы урока: apa-i, astam-i, abhi-i/upa-i, ud-i"
       }
     ]
   }

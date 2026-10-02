@@ -171,3 +171,79 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (A/R/I/L/U) — единственный источник с морфонологической записью (МГ, ревью 02-10-2026)"
           kochergina: "K: класс даётся при глаголе, записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk 1975↔2014↔2026 покрывает 12/12 простых корней урока — контраст с уроком I (10/13); единственный открытый вопрос — cal (L?, index-unknown у З-1978)"
+
+  XXXVIII:
+    title: "Основа настоящего времени II класса: корень i, adhi-i; śī; корни на u/ū (tu, ru, stu, brū, sū); превербные глаголы"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5461–5646 (заголовок «# УРОК XXXVIII.»; дальше урок XXXIX начинается жирным делимитером «**Урок XXXIX**», mdx 5647 — план, риск-строка)"
+    claims: [HB-295, HB-296, HB-297, HB-298]
+    reuse_clusters:
+      - "4 совпадения упражнений с Knauer Nr. 11 (scripts/data/matches.json: buhler-1923.XXXVIII.875/.877/.880/.891 ↔ knauer-1908.11.*)"
+    corpus_layer:
+      - "stu — stauti (топ-1000, ранг 432; MBh 14,53,10) — вриддхи в сильных формах, HB-296"
+      - "ru — rauti (редкое, ранг 5464; Hitop 1,82.2) — корень tu/ru/stu-группы, HB-296"
+    topics:
+      - key: present-class-ii
+        title: "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i Ā. — атематическое, окончания прямо на корне"
+        buhler_locus: "урок XXXVIII, §2 (mdx 5463–5515): парадигмы i P. / adhi-i Ā. в ind., impf., imper."
+        topic_claims: []
+        spots:
+          "kochergina-lesson:XVI": "личные окончания присоединяются непосредственно к корню глагола"
+          "knauer-fraza:Nr.11": "svayam upaiti lakṣmīḥ"
+          "zalizniak-1978-sec:126-129": "Med. только в adhi-i"
+          "sangram-article:thematic-present": "атематические классы концентрируются именно в"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (на этом локусе)"
+          buhler: "B− — чистая парадигма i/adhi-i без списка исключений; нерегулярный imper. ihi стоит в таблице без оговорки (mdx 5509)"
+          whitney: "W+ — §603/610 (root-class, i в списке), §§612–616 систематика сильных/слабых форм, §618 архаичные tāt/ām (vittā́t, brūtā́t, yātā́t) и ведийские tana-окончания"
+          zalizniak-1978: "Z+ — §129.1: i «практически регулярно», но NB: i→y/iy перед гласной, аугмент, imper. ihi; med. только в adhi-i с полной парадигмой (-aiyi, -iṣva, -ayai, -iyīya)"
+          kochergina: "K+ — Занятие XVI: класс II «постепенно делается непродуктивным» + список 10 употребительных глаголов (as, i, brū, svap, yā, vā, vid, stu, han, ad)"
+        notes: "adhi-i — единственный средний залог урока; Кнауэр Nr. 11 переиспользует 4 предложения упражнения урока (Concordance matches); sangram: класс II — 5 931 токен, атематический, концентрируется в частотных корнях"
+      - key: class-ii-irregulars
+        title: "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 pl), корни на u (vṛddhi au; tu/ru/stu guṇa+ī), на ū (uv; brū ī), sū без guṇa"
+        buhler_locus: "урок XXXVIII, §§3–5 (mdx 5517–5561): śete/śerate, stauti/stavīmi, bravīmi/bruvanti, suvai"
+        topic_claims: [HB-295, HB-296, HB-297, HB-298]
+        spots:
+          "kochergina-lesson:XVII": "в ступени vṛddhi в сильных формах"
+          "knauer-fraza:Nr.11": "stavīmi"
+          "zalizniak-1978-sec:129": "staumi (ср. raumi, § 127)"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — урок плотный исключениями: guṇa всюду у śī + вставка r в 3 pl (śerate, aśerata); факультативный guṇa+ī у tu/ru/stu; uv у ū-корней; ī-вставка brū; sū без guṇa"
+          whitney: "W+ — §626 (u-корни, vṛddhi вместо guṇa; в ведийском ряд вариантов), §629 (çī guṇa-strengthening throughout + 3 pl çérate/çére); HB-296: «все» Бюлера OVERSTATED на маргинальном ūrṇu (ūrṇoti ~ ūrṇauti, Пан. 7.3.90), для корней урока правила точны"
+          zalizniak-1978: "Z+ — §129.4: brū bravīmi…brūhi + «сильные формы допустимы для корней на u: staumi (ср. raumi) и stavīmi (но stumaḥ)»; §129.3: rud с соединительным i — исключения у З-1978 есть, реорганизованы в ряды U₁/U₂, не отсутствуют"
+          kochergina: "K± — Занятие XVII: глаголы на -u «в ступени vṛddhi в сильных формах» + опция -ī- (stuyām/stuvīyām, stautu/stuvītu); brū -ī- (bravīmi/brūhi); НО śī и sū в XVII не разобраны — неполнота свидетеля зафиксирована честно"
+        notes: "Ядро гипотезы MG на этом уроке: Бюлер исключения ДАЁТ (§§3–5), Уитни плотнейший + ведийские варианты, З-1978 не «без исключений», а с перегруппировкой в ряды; Кочергина частична (śī/sū пропущены)"
+      - key: verb-prefixes
+        title: "Превербные глаголы урока: apa-i, astam-i, abhi-i/upa-i, ud-i, adhi-i, pra-/vi-brū"
+        buhler_locus: "урок XXXVIII, список «Глаголы» (mdx 5563–5575)"
+        topic_claims: []
+        spots:
+          "sangram-article:preverbs": "модифицирует его значение"
+        exceptions:
+          verdict: "NOT-APPLICABLE (словообразование, не парадигма)"
+          buhler: "B: 6 превербных глаголов списком, значения отдельных превербов не разбираются"
+          whitney: "W: §§1076–1087 инвентарь ~22 упасарг; §1086+ комбинаторика корень+преверб"
+          zalizniak-1978: "Z: превербы не предмет отдельного § Очерка; морфонология корня под превербом не меняется"
+          kochergina: "K: значения приставок даются при глаголах по ходу уроков; отдельного § об упасаргах в XVI–XVII нет"
+        notes: "Ключ словаря тем — D13-расширение (verb-prefixes); sangram-preverbs: DCS размечает превербы нативно, 369 870 преверб-глаголов"
+      - key: lesson-roots
+        title: "Лемма-слой: 7 корней II класса урока (морфонологическая запись)"
+        buhler_locus: "урок XXXVIII, §§2–5 (корни в тексте правил: i, śī, tu, ru, stu, brū, sū)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: i,   gloss: "идти",            z1975: "?", z1978: "ряд I (§127: e-/i-)", crosswalk: "NO — строки нет (однобуквенный корень, поиск неоднозначен)"}
+          - {root: śī,  gloss: "лежать",          z1975: "I₂ (conf high)", z1978: "I₂", crosswalk: "yes"}
+          - {root: tu,  gloss: "быть сильным",    z1975: "U₁ (conf high)", z1978: "U₁", crosswalk: "yes"}
+          - {root: ru,  gloss: "кричать",         z1975: "U₁ (conf high; две строки-омонима: ru¹ cry / ru² break)", z1978: "U₁", crosswalk: "yes"}
+          - {root: stu, gloss: "прославлять",     z1975: "?", z1978: "ряд U (§129.4: staumi/stavīmi)", crosswalk: "NO — строки в crosswalk нет"}
+          - {root: brū, gloss: "говорить",        z1975: "U₂ (conf high)", z1978: "U₂", crosswalk: "yes"}
+          - {root: sū,  gloss: "рождать",         z1975: "U₂ (conf high)", z1978: "U₂", crosswalk: "yes"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даны гуна-ступенью без морфонологической записи (школьная линия)"
+          whitney: "W: класс при корне в root-аппарате (788–789 çī, 309 tu, 652 ru, 502 brū, 849 sū); в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды (§127 e-/i- для i; §129.4 staumi/stavīmi для stu) — у З-1978 запись есть даже там, где нет crosswalk-строки"
+          kochergina: "K: класс даётся при глаголе (XVI: as, i, brū, stu…), морфонологической записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/7 корней урока; i и stu в crosswalk отсутствуют — пробел реестра, задокументирован (как śaṃs/rakṣ/jīv урока I); corpus_layer.tsv урока: stu (stauti, MBh 14,53,10), ru (rauti, Hitop 1,82.2)"
