@@ -34,6 +34,11 @@ const config = {
   organizationName: 'gasyoun',
   projectName: 'SanskritGrammar',
 
+  // Spotlight (E1, MG 02-10-2026): сайт — SPA, и браузер не выполняет нативный
+  // #:~:text= при клиентских переходах; скрипт сам находит фразу и рисует
+  // подсветку (янтарный, .sg-spotlight) на любой навигации.
+  scripts: ['/js/spotlight.js'],
+
   // 'throw' (not 'warn'): broken in-site links now fail the build + CI, so a
   // dead cross-link can't silently ship again. All broken links were cleared
   // first (catalog #169, Fortunatovskiye #170, papers de-link #171).
