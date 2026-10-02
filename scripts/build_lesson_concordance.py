@@ -49,6 +49,7 @@ SOURCE_PAGES = {
     "sangram-thematic-present": "sangram/articles/thematic-present",
     "sangram-conjugation-overview": "sangram/articles/conjugation-overview",
     "sangram-absolutive": "sangram/articles/absolutive",
+    "sangram-consonant-stems": "sangram/articles/consonant-stems",
     "buhler": "BuhlerLeitfaden_1923/Buhler_Unicode",
 }
 
@@ -110,6 +111,7 @@ LOCAL_SOURCE_FILES = {
     "dhatu-glava7": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx",
     "sangram-conjugation-overview": "sangram/articles/conjugation-overview/index.mdx",
     "sangram-absolutive": "sangram/articles/absolutive/index.mdx",
+    "sangram-consonant-stems": "sangram/articles/consonant-stems/index.mdx",
 }
 
 

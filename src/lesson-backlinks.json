@@ -6,6 +6,10 @@
         "spot": "УРОК I."
       },
       {
+        "label": "урок XXII — конкорданс",
+        "spot": "УРОК XXII."
+      },
+      {
         "label": "урок XXIX — конкорданс",
         "spot": "УРОК XXIX."
       },
@@ -22,6 +26,18 @@
       {
         "label": "урок I — visarga-sandhi",
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
+      },
+      {
+        "label": "урок XXII — r-stems",
+        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
+      },
+      {
+        "label": "урок XXII — in-stems",
+        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
+      },
+      {
+        "label": "урок XXII — as-is-us-stems",
+        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
         "label": "урок XXIX — absolutivum-tvaa",
@@ -58,6 +74,18 @@
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
       },
       {
+        "label": "урок XXII — r-stems",
+        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
+      },
+      {
+        "label": "урок XXII — in-stems",
+        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
+      },
+      {
+        "label": "урок XXII — as-is-us-stems",
+        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
+      },
+      {
         "label": "урок XXIX — absolutivum-tvaa",
         "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
       },
@@ -92,6 +120,18 @@
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
       },
       {
+        "label": "урок XXII — r-stems",
+        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
+      },
+      {
+        "label": "урок XXII — in-stems",
+        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
+      },
+      {
+        "label": "урок XXII — as-is-us-stems",
+        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
+      },
+      {
         "label": "урок XXIX — absolutivum-tvaa",
         "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
       },
@@ -120,12 +160,30 @@
         "spot": "Лемма-слой: 13 глаголов I класса урока (морфонологическая за"
       },
       {
+        "label": "урок XXII — lesson-roots",
+        "spot": "Лемма-слой: 1 глагол урока (sañj I. P.) — морфонологическая "
+      },
+      {
         "label": "урок XXIX — verb-roots",
         "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
       },
       {
         "label": "урок XXXVIII — lesson-roots",
         "spot": "Лемма-слой: 7 корней II класса урока (морфонологическая запи"
+      }
+    ],
+    "sangram-consonant-stems": [
+      {
+        "label": "урок XXII — r-stems",
+        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
+      },
+      {
+        "label": "урок XXII — in-stems",
+        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
+      },
+      {
+        "label": "урок XXII — as-is-us-stems",
+        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       }
     ],
     "sangram-absolutive": [
