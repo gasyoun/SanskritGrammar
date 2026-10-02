@@ -19,7 +19,11 @@
     var style = document.createElement('style');
     style.id = STYLE_ID;
     style.textContent =
-      'mark.' + MARK_CLASS + '{background:#fff3ad;color:inherit;padding:0 .1em;border-radius:2px;}';
+      'mark.' + MARK_CLASS + '{background:#fff3ad;color:inherit;padding:0 .1em;border-radius:2px;}' +
+      /* Нативная подсветка text-фрагмента при прямом открытии URL: Chrome красит
+       * её сиреневым (::target-text) — перекрашиваем в наш янтарный, чтобы обе
+       * механики (SPA-клик и прямая загрузка) выглядели одинаково (МГ, 02-10). */
+      '::target-text{background-color:#fff3ad;color:inherit;}';
     document.head.appendChild(style);
   }
 
@@ -70,9 +74,10 @@
   function tick() {
     if (location.href === lastHref) return;
     lastHref = location.href;
+    ensureStyle(); // безусловно: при прямой загрузке Chrome вырезает :~:text из
+    // location после нативной обработки — правило ::target-text должно стоять
     var m = location.hash.match(/^#:~:text=(.+)/);
     if (!m) return;
-    ensureStyle();
     clearMarks();
     var phrases = phraseCandidates(m[1]);
     try {
