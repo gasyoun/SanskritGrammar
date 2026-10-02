@@ -21,6 +21,15 @@ lessons:
         title: "Present indicativus parasmaipada, I класс — тематическая гласная a/ā"
         buhler_locus: "урок I, §1 и таблица vad-ā-mi / vad-ā-vaḥ(s) / vad-a-si… (mdx 127–151)"
         topic_claims: [HB-3, HB-5, HB-66]
+        # E10: spot = фраза-утверждение в источнике (не номер параграфа);
+        # whitney-sec — внешние (Wikisource): якорь заголовка §, без фразы;
+        # talmud — CSV-файл, страницы нет. Валидация локальных фраз — на build.
+        spots:
+          "kochergina-lesson:XV": "Есть несколько глаголов I класса"
+          "knauer-fraza:Nr.1": "narān rakṣanti"
+          "knauer-fraza:Nr.2": "putraṁ rakṣati"
+          "zalizniak-1978-sec:114-121": "Различаются тематическое и атематическое спряжения"
+          "sangram-article:conjugation-overview": "Рамка кластера"
         exceptions:
           verdict: "PARTIAL-REFUTED (на этом локусе)"
           buhler: "B− — правило дано чисто, без списка исключений; перечень исключений приходит у Бюлера в более поздних уроках, не в I"
@@ -32,6 +41,10 @@ lessons:
         title: "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и шипящими)"
         buhler_locus: "урок I, §2 (mdx 153): «всегда превращаются в висаргу… обыкновенно также перед k, kh, p, ph и перед шипящими»"
         topic_claims: [HB-4]
+        spots:
+          "kochergina-lesson:VI": "В конце предложения или стихотворной строки"
+          "knauer-fraza:Nr.1": "narān rakṣanti"
+          "zalizniak-1978-sec:31": "Правила сандхи разбиты ниже на разделы"
         exceptions:
           verdict: "CONFIRMED-WITH-NUANCE"
           buhler: "B± — правило с оговоркой «обыкновенно», список исключений не приводится"
@@ -43,6 +56,8 @@ lessons:
         title: "Лемма-слой: 13 глаголов I класса урока (морфонологическая запись)"
         buhler_locus: "урок I, список «Глаголы I класса» (mdx 155–181)"
         topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
         lemmas:
           - {root: pat,  gloss: "падать, лететь",   z1975: "A1 (conf medium → A₁)", z1978: "A₁", crosswalk: "yes"}
           - {root: dah,  gloss: "гореть, жечь",     z1975: "A1", z1978: "A₁", crosswalk: "yes"}

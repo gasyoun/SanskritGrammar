@@ -99,11 +99,23 @@ def frag(s):
     return "#:~:text=" + urllib.parse.quote(s, safe="")
 
 
-def target_url(locus):
+# Локальные файлы источников для build-валидации spot-фраз (E12): фраза должна
+# существовать в тексте источника — дрейф текста валит сборку, а не остаётся
+# тихо пропавшей подсветкой. Внешние (Wikisource, GitHub CSV) не валидируются.
+LOCAL_SOURCE_FILES = {
+    "kochergina": "KocherginaUchebnik_1998/Kochergina_unicode.mdx",
+    "knauer": "KnauerFrazy_1908/Frazy-Knauer-03.05.2023.mdx",
+    "ocherk": "ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned.mdx",
+    "dhatu-glava7": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx",
+    "sangram-conjugation-overview": "sangram/articles/conjugation-overview/index.mdx",
+}
+
+
+def target_url(locus, spot=None):
     """Глубокая ссылка: страница источника на сайте + текст-фрагмент, подсвечивающий
-    куда именно смотреть (МГ, ревью 02-10-2026: любое упоминание источника ведёт не
-    просто на страницу, а на максимально конкретный якорь с подсветкой). Для данных
-    без страницы на сайте (crosswalk-CSV) — файл в репо (GitHub)."""
+    куда именно смотреть (E10: spot = курируемая фраза-утверждение из topics.yml,
+    не номер параграфа — МГ 02-10; fallback — §/занятие, если фразы для локуса
+    нет). Для данных без страницы на сайте — файл в репо (GitHub)."""
     prefix, _, tail = locus.partition(":")
     if prefix == "whitney-sec":
         lo = tail.split("-")[0]
@@ -115,24 +127,26 @@ def target_url(locus):
         return f"{GH}/WhitneyGrammar_1889/", "§§ " + tail.replace("-", "–")
     if prefix == "zalizniak-1978-sec":
         first = tail.split("-")[0]
-        return (f"{SITE}/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned{frag('§ ' + first)}",
+        phrase = spot or "§ " + first
+        return (f"{SITE}/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned{frag(phrase)}",
                 "§§ " + tail.replace("-", "–"))
     if prefix == "zalizniak-1975" or prefix == "zalizniak-2004":
         return f"{GH}/{'ZalizniakMorphology_1975' if prefix == 'zalizniak-1975' else 'ZalizniakKonspekt_2004'}/", tail
     if prefix == "kochergina-lesson":
-        spot = KOCHERGINA_SPOTS.get(tail, "Занятие " + tail)
-        return (f"{SITE}/KocherginaUchebnik_1998/Kochergina_unicode{frag(spot)}",
+        phrase = spot or KOCHERGINA_SPOTS.get(tail, "Занятие " + tail)
+        return (f"{SITE}/KocherginaUchebnik_1998/Kochergina_unicode{frag(phrase)}",
                 "Занятие " + tail)
     if prefix == "knauer-fraza":
-        return (f"{SITE}/KnauerFrazy_1908/Frazy-Knauer-03.05.2023{frag(KNAUER_SPOTS.get(tail, tail))}",
+        phrase = spot or KNAUER_SPOTS.get(tail, tail)
+        return (f"{SITE}/KnauerFrazy_1908/Frazy-Knauer-03.05.2023{frag(phrase)}",
                 tail)
     if prefix == "sangram-article":
-        return f"{SITE}/sangram/articles/{tail}", tail
+        return (f"{SITE}/sangram/articles/{tail}{frag(spot) if spot else ''}", tail)
     if prefix == "apte" or prefix == "speyer":
         return f"{GH}/{'ApteSyntax_1885' if prefix == 'apte' else 'SpeyerSyntax_1886'}/", "§ " + tail
     if prefix == "dhatu":
         if tail.startswith("glava"):
-            return f"{SITE}/GasunsDhatu_2014/{tail.replace('-', '_', 1)}", tail
+            return (f"{SITE}/GasunsDhatu_2014/{tail.replace('-', '_', 1)}{frag(spot) if spot else ''}", tail)
         return f"{GH}/GasunsDhatu_2014/", tail
     if prefix == "talmud":
         if tail == "morphoclass-crosswalk-1975-2014-2026":
@@ -253,12 +267,14 @@ def main():
                            for k, t in zip(topic_list, lesson["topics"])))
             out.append("")
             if rows:
+                spots = topic.get("spots") or {}
                 out.append("| Источник | Локус | Уверенность | Строк-доказательств |")
                 out.append("|---|---|---|---|")
                 for row in rows:
                     prefix, _, tail = row["target_locus"].partition(":")
                     label = TARGET_LABELS.get(prefix, prefix)
-                    url, display = target_url(row["target_locus"])
+                    spot = spots.get(row["target_locus"])
+                    url, display = target_url(row["target_locus"], spot)
                     loc = f"[{display}]({url})" if url else display
                     ev = row.get("evidence_count") or "—"
                     out.append(f"| {label} | {loc} | {row['confidence']} | {ev} |")
@@ -318,6 +334,26 @@ def main():
     os.makedirs(os.path.dirname(BACKLINKS_JSON), exist_ok=True)
     with open(BACKLINKS_JSON, "w", encoding="utf-8") as fh:
         json.dump({"pages": dict(backlinks["pages"])}, fh, ensure_ascii=False, indent=2)
+
+    # E12: build-валидация spot-фраз против локальных текстов источников.
+    ok, external = 0, 0
+    cache = {}
+    for rn, lesson in topics_doc["lessons"].items():
+        for topic in lesson["topics"]:
+            for locus, phrase in (topic.get("spots") or {}).items():
+                page = locus_page(*locus.partition(":")[::2])
+                if page not in LOCAL_SOURCE_FILES:
+                    external += 1
+                    continue
+                if page not in cache:
+                    cache[page] = open(os.path.join(ROOT, LOCAL_SOURCE_FILES[page]),
+                                       encoding="utf-8").read()
+                if phrase not in cache[page]:
+                    print(f"SPOT-FAIL: фраза не найдена в {LOCAL_SOURCE_FILES[page]}: «{phrase}» "
+                          f"(локус {locus}, урок {rn})", file=sys.stderr)
+                    sys.exit(1)
+                ok += 1
+    print(f"spots validated: {ok} local OK, {external} external (Wikisource/CSV — якоря заголовков/файл)")
 
     n_rows = sum(len(v) for v in by_anchor.values())
     print(f"LessonConcordance/catalog.mdx written: {len(topics_doc['lessons'])} lesson(s), {n_rows} link rows")
