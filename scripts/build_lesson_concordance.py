@@ -16,7 +16,9 @@ Inputs (hand-curated or register-seeded):
 
 Generated — do NOT hand-edit LessonConcordance/catalog.mdx; re-run this script.
 """
+import json
 import os
+import re
 import sys
 import urllib.parse
 from collections import defaultdict
@@ -30,6 +32,24 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT_DIR = os.path.join(ROOT, "LessonConcordance")
 TSV = os.path.join(OUT_DIR, "typed_link_buhler_lessons.tsv")
 TOPICS = os.path.join(OUT_DIR, "topics.yml")
+CLAIMS = os.path.join(ROOT, "BuhlerLeitfaden_1923", "claims.yml")
+BACKLINKS_JSON = os.path.join(ROOT, "src", "lesson-backlinks.json")
+
+GH = "https://github.com/gasyoun/SanskritGrammar/blob/main"
+CLAIMS_BLOB = GH + "/BuhlerLeitfaden_1923/claims.yml"
+WITNESS_DOC = GH + "/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md"
+CROSSWALK_CSV = GH + "/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv"
+
+# Страницы-источники, в конец которых попадает <LessonBacklinks page="…"/> (E3–E4).
+SOURCE_PAGES = {
+    "kochergina": "KocherginaUchebnik_1998/Kochergina_unicode",
+    "knauer": "KnauerFrazy_1908/Frazy-Knauer-03.05.2023",
+    "ocherk": "ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned",
+    "dhatu-glava7": "GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka",
+    "sangram-thematic-present": "sangram/articles/thematic-present",
+    "sangram-conjugation-overview": "sangram/articles/conjugation-overview",
+    "buhler": "BuhlerLeitfaden_1923/Buhler_Unicode",
+}
 
 TARGET_LABELS = {
     "whitney-sec": "Уитни 1889",
@@ -137,6 +157,35 @@ def load_rows():
     return rows
 
 
+def claims_line_index():
+    """{HB-id: строка claims.yml} — для GitHub #L-якорей указателей (E5)."""
+    index = {}
+    hid = None
+    with open(CLAIMS, encoding="utf-8") as fh:
+        for ln, line in enumerate(fh, 1):
+            m = re.match(r"  - id:\s*(HB-\d+)", line)
+            if m:
+                hid = m.group(1)
+                index[hid] = ln
+    return index
+
+
+def locus_page(prefix, tail):
+    """target_locus → ключ страницы-источника для бэклинка (страниц нет у
+    Wikisource-Уитни и talmud-CSV)."""
+    if prefix == "kochergina-lesson":
+        return "kochergina"
+    if prefix == "knauer-fraza":
+        return "knauer"
+    if prefix == "zalizniak-1978-sec":
+        return "ocherk"
+    if prefix == "dhatu" and tail.startswith("glava"):
+        return "dhatu-glava7"
+    if prefix == "sangram-article":
+        return "sangram-" + tail
+    return None
+
+
 def main():
     with open(TOPICS, encoding="utf-8") as fh:
         topics_doc = yaml.safe_load(fh)
@@ -144,6 +193,15 @@ def main():
     by_anchor = defaultdict(list)
     for row in load_rows():
         by_anchor[row["anchor_id"]].append(row)
+
+    claim_lines = claims_line_index()
+
+    def claim_link(hid):
+        line = claim_lines.get(hid)
+        return f"[{hid}]({CLAIMS_BLOB}#L{line})" if line else hid
+
+    # Карта обратных ссылок (E3–E4): страница источника → темы уроков.
+    backlinks = {"pages": defaultdict(list)}
 
     out = []
     out.append("---")
@@ -155,9 +213,14 @@ def main():
     out.append("")
     out.append("Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/)"
                " и каждой темы внутри него — соответствующий локус в остальных оцифрованных"
-               " источниках сайта; план и решения D1–D16: "
+               " источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: "
                "[BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md)."
-               " Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»).")
+               " Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»);"
+               " карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).")
+    out.append("")
+    n_all = 48
+    landed = ", ".join(f"**{rn}**" for rn in topics_doc["lessons"])
+    out.append(f"*Уроки ({n_all}): {landed} — остальные по мере batch-минта (E8: каркас на 48).*")
     out.append("")
 
     for rn, lesson in topics_doc["lessons"].items():
@@ -165,12 +228,29 @@ def main():
         out.append("")
         out.append(f"*Локус текста:* {lesson['mdx']}")
         out.append("")
-        for topic in lesson["topics"]:
+        # бэклинк со страницы самого Бюлера (E3)
+        backlinks["pages"]["buhler"].append(
+            {"label": f"урок {rn} — конкорданс", "spot": f"УРОК {rn}."})
+        topic_list = [t["key"] for t in lesson["topics"]]
+        for ti, topic in enumerate(lesson["topics"]):
             anchor_id = f"buhler-topic:{rn}.{topic['key']}"
             rows = by_anchor.get(anchor_id, [])
+            for row in rows:
+                prefix, _, tail = row["target_locus"].partition(":")
+                page = locus_page(prefix, tail)
+                if page:
+                    backlinks["pages"][page].append(
+                        {"label": f"урок {rn} — {topic['key']}",
+                         "spot": topic["title"][:60]})
             out.append(f"### {topic['title']}")
             out.append("")
             out.append(f"*Бюлер:* {topic['buhler_locus']}")
+            out.append("")
+            out.append("*Темы урока (" + f"{ti + 1}/{len(topic_list)}):* "
+                       + " · ".join(
+                           (f"**{k}**" if k == topic["key"] else
+                            f"[{k}]({frag(t['title'][:40])})")
+                           for k, t in zip(topic_list, lesson["topics"])))
             out.append("")
             if rows:
                 out.append("| Источник | Локус | Уверенность | Строк-доказательств |")
@@ -192,19 +272,28 @@ def main():
                     if exc.get(who):
                         out.append(f"- **{who}**: {exc[who]}")
                 out.append("")
+                out.append(f"*Свидетели по теме (4-witness сетка):* [{os.path.basename(WITNESS_DOC)}]({WITNESS_DOC})")
+                out.append("")
             if topic.get("lemmas"):
+                out.append(f"*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* "
+                           f"[crosswalk 1975↔2014↔2026]({CROSSWALK_CSV})")
+                out.append("")
                 out.append("| Корень | Глосса | З-1975 | З-1978 | crosswalk |")
                 out.append("|---|---|---|---|---|")
                 for lem in topic["lemmas"]:
                     out.append(f"| {lem['root']} | {lem['gloss']} | {lem['z1975']} | {lem['z1978']} | {lem['crosswalk']} |")
+                out.append("")
+            tc = topic.get("topic_claims") or []
+            if tc:
+                out.append("*HB-утверждения темы:* " + ", ".join(claim_link(c) for c in tc)
+                           + f" (реестр — [{os.path.basename(CLAIMS)}]({CLAIMS_BLOB}))")
                 out.append("")
             if topic.get("notes"):
                 out.append(f"*Примечание:* {topic['notes']}")
                 out.append("")
         reg = lesson.get("claims") or []
         if reg:
-            cl = ", ".join(f"[{c}](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)"
-                           for c in reg)
+            cl = ", ".join(claim_link(c) for c in reg)
             out.append(f"*Регистр утверждений урока:* {cl}")
             out.append("")
 
@@ -225,8 +314,14 @@ def main():
     page = "\n".join(out) + "\n"
     with open(os.path.join(OUT_DIR, "catalog.mdx"), "w", encoding="utf-8") as fh:
         fh.write(page)
+
+    os.makedirs(os.path.dirname(BACKLINKS_JSON), exist_ok=True)
+    with open(BACKLINKS_JSON, "w", encoding="utf-8") as fh:
+        json.dump({"pages": dict(backlinks["pages"])}, fh, ensure_ascii=False, indent=2)
+
     n_rows = sum(len(v) for v in by_anchor.values())
     print(f"LessonConcordance/catalog.mdx written: {len(topics_doc['lessons'])} lesson(s), {n_rows} link rows")
+    print(f"src/lesson-backlinks.json written: {', '.join(sorted(backlinks['pages']))}")
 
 
 if __name__ == "__main__":
