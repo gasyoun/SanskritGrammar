@@ -18,6 +18,7 @@ Generated — do NOT hand-edit LessonConcordance/catalog.mdx; re-run this script
 """
 import os
 import sys
+import urllib.parse
 from collections import defaultdict
 
 import yaml
@@ -46,24 +47,78 @@ TARGET_LABELS = {
 }
 
 
+SITE = "https://gasyoun.github.io/SanskritGrammar/grammars"
+GH = "https://github.com/gasyoun/SanskritGrammar/blob/main"
+
+# Whitney § → глава-файл (диапазоны глав — спайн SubjectConcordance).
+WHITNEY_CHAPTERS = [
+    (1, 18, "01_Alphabet"), (19, 97, "02_System_of_Sounds_Pronunciation"),
+    (98, 260, "03_Rules_of_Euphonic_Combination"), (261, 320, "04_Declension"),
+    (321, 474, "05_Nouns_and_Adjectives"), (475, 489, "06_Numerals"),
+    (490, 526, "07_Pronouns"), (527, 598, "08_Conjugation"),
+    (599, 779, "09_The_Present_System"), (780, 823, "10_The_Perfect_System"),
+    (824, 930, "11_The_Aorist_Systems"),
+]
+
+# Точная фраза на странице источника для подсветки (:~:text=) — первое вхождение.
+KOCHERGINA_SPOTS = {
+    "VI": "В конце предложения или стихотворной строки",
+    "VIII": "Для образования форм настоящего времени",
+    "XV": "Есть несколько глаголов I класса",
+}
+KNAUER_SPOTS = {
+    "Nr.1": "личныя окончанія",
+    "Nr.2": "ṛṣir duḥkhāt",
+}
+
+
+def frag(s):
+    """Scroll-To-Text fragment — браузер сам подсвечивает фоном найденную фразу."""
+    return "#:~:text=" + urllib.parse.quote(s, safe="")
+
+
 def target_url(locus):
-    """Offline-resolvable loci → repo links, per TYPED_LINK_ID_GRAMMAR.md §3."""
+    """Глубокая ссылка: страница источника на сайте + текст-фрагмент, подсвечивающий
+    куда именно смотреть (МГ, ревью 02-10-2026: любое упоминание источника ведёт не
+    просто на страницу, а на максимально конкретный якорь с подсветкой). Для данных
+    без страницы на сайте (crosswalk-CSV) — файл в репо (GitHub)."""
     prefix, _, tail = locus.partition(":")
-    base = "https://github.com/gasyoun/SanskritGrammar/blob/main"
     if prefix == "whitney-sec":
-        return f"{base}/WhitneyGrammar_1889/", "§§ " + tail.replace("-", "–")
+        lo = int(tail.split("-")[0])
+        chapter = next((f for a, b, f in WHITNEY_CHAPTERS if a <= lo <= b), None)
+        if chapter:
+            return (f"{SITE}/WhitneyGrammar_1889/{chapter}{frag('§' + tail.split('-')[0])}",
+                    "§§ " + tail.replace("-", "–"))
+        return f"{GH}/WhitneyGrammar_1889/", "§§ " + tail.replace("-", "–")
     if prefix == "zalizniak-1978-sec":
-        return f"{base}/ZalizniakOcherk_1978/", "§§ " + tail.replace("-", "–")
+        first = tail.split("-")[0]
+        return (f"{SITE}/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned{frag('§ ' + first)}",
+                "§§ " + tail.replace("-", "–"))
+    if prefix == "zalizniak-1975" or prefix == "zalizniak-2004":
+        return f"{GH}/{'ZalizniakMorphology_1975' if prefix == 'zalizniak-1975' else 'ZalizniakKonspekt_2004'}/", tail
     if prefix == "kochergina-lesson":
-        return f"{base}/KocherginaUchebnik_1998/", "Занятие " + tail
+        spot = KOCHERGINA_SPOTS.get(tail, "Занятие " + tail)
+        return (f"{SITE}/KocherginaUchebnik_1998/Kochergina_unicode{frag(spot)}",
+                "Занятие " + tail)
     if prefix == "knauer-fraza":
-        return f"{base}/KnauerFrazy_1908/", tail
+        return (f"{SITE}/KnauerFrazy_1908/Frazy-Knauer-03.05.2023{frag(KNAUER_SPOTS.get(tail, tail))}",
+                tail)
     if prefix == "sangram-article":
-        return "https://gasyoun.github.io/SanskritGrammar/sangram/articles/" + tail, tail
+        return f"{SITE}/sangram/articles/{tail}", tail
+    if prefix == "apte" or prefix == "speyer":
+        return f"{GH}/{'ApteSyntax_1885' if prefix == 'apte' else 'SpeyerSyntax_1886'}/", "§ " + tail
     if prefix == "dhatu":
-        return f"{base}/GasunsDhatu_2014/", tail
+        if tail.startswith("glava"):
+            return f"{SITE}/GasunsDhatu_2014/{tail.replace('-', '_', 1)}", tail
+        return f"{GH}/GasunsDhatu_2014/", tail
     if prefix == "talmud":
-        return f"{base}/TolchelnikovTalmud_2026/", tail
+        if tail == "morphoclass-crosswalk-1975-2014-2026":
+            return (f"{GH}/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv", tail)
+        return f"{GH}/TolchelnikovTalmud_2026/", tail
+    if prefix == "subject":
+        return f"{SITE}/SubjectConcordance/catalog{frag('Present, a-class')}", tail
+    if prefix == "frish":
+        return f"{GH}/BibliothecaSanscritica/", tail
     return None, locus
 
 
@@ -89,19 +144,11 @@ def main():
 
     out = []
     out.append("---")
-    out.append('title: "LessonConcordance — поурочный конкорданс Бюлера"')
-    out.append('sidebar_label: "LessonConcordance"')
+    out.append('title: "Поурочный конкорданс Бюлера: урок × все источники"')
+    out.append('sidebar_label: "Поурочный конкорданс Бюлера"')
     out.append("---")
     out.append("")
     out.append("# Поурочный конкорданс Бюлера: урок × все источники")
-    out.append("")
-    out.append("_Generated by [`scripts/build_lesson_concordance.py`]"
-               "(https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py) "
-               "from [`LessonConcordance/topics.yml`]"
-               "(https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml) + "
-               "[`typed_link_buhler_lessons.tsv`]"
-               "(https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv) "
-               "— do not hand-edit._")
     out.append("")
     out.append("Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/)"
                " и каждой темы внутри него — соответствующий локус в остальных оцифрованных"
@@ -157,6 +204,20 @@ def main():
                            for c in reg)
             out.append(f"*Регистр утверждений урока:* {cl}")
             out.append("")
+
+    # Техническая плашка — в самый низ, серым и мельче (МГ, 02-10-2026: «в самый
+    # вниз, всегда, серым и мельче кегль… они не настолько важны»).
+    out.append("")
+    out.append('<small style={{color: "var(--ifm-color-emphasis-600)"}}>Сгенерировано '
+               '<a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py">'
+               'scripts/build_lesson_concordance.py</a> из '
+               '<a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml">topics.yml</a>'
+               ' + <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/'
+               'typed_link_buhler_lessons.tsv">typed_link_buhler_lessons.tsv</a> — не редактировать руками; '
+               'перегенерация: <code>python3 scripts/build_lesson_concordance.py</code>. '
+               'Ссылки локусов ведут на точное место источника с подсветкой (:~:text-фрагмент, '
+               'Chrome/Firefox/Safari 18.2+).</small>')
+    out.append("")
 
     page = "\n".join(out) + "\n"
     with open(os.path.join(OUT_DIR, "catalog.mdx"), "w", encoding="utf-8") as fh:
