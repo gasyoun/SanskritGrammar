@@ -1,4 +1,4 @@
-_Created: 01-10-2026 · Last updated: 01-10-2026_
+_Created: 01-10-2026 · Last updated: 03-10-2026_
 
 # План: поурочный конкорданс Бюлера — урок I–XLVIII × все источники сайта
 
@@ -86,6 +86,8 @@ buhler-lesson	buhler-lesson:I		knauer-fraza:Nr.4	thematic	SanskritGrammar/Lesson
 5. Deploy same pass (github-pages).
 6. Строка в changelog_queue/.
 7. В хендоффе: закрытие с elapsed и changed/unchanged/checks/risks.
+
+QA-инструменты урока (wiring H5790, 03-10-2026): где урок опирается на рукописную таблицу sandhi-правил — аудиться через [`/sandhi-gold-audit`](https://github.com/gasyoun/claude-config/blob/main/commands/sandhi-gold-audit.md) (malformed-строки, corpus-unattested правила, пробелы покрытия), контраст регистров «урок vs corpus_layer» — через [`/sandhi-diff`](https://github.com/gasyoun/claude-config/blob/main/commands/sandhi-diff.md) (различающие junction-правила двух корпусов); иллюстративные блоки длинных компаундов на странице урока — [`/klammerdiagramm`](https://github.com/gasyoun/claude-config/blob/main/commands/klammerdiagramm.md) (SVG-скобочная схема) + [`/klammeruebersetzung`](https://github.com/gasyoun/claude-config/blob/main/commands/klammeruebersetzung.md) (вплетение перевода слово-в-слово).
 
 ## Лист решений MG — да/нет по D1–D16
 
