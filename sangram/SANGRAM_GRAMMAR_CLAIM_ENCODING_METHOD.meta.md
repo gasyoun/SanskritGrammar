@@ -1,6 +1,6 @@
 # Metadoc — SANGRAM_GRAMMAR_CLAIM_ENCODING_METHOD.mdx
 
-_Created: 25-07-2026 · Last updated: 25-07-2026_
+_Created: 25-07-2026 · Last updated: 04-10-2026_
 
 **Purpose.** Normative methodology manual for encoding and corpus-verifying grammatical claims in Sangram: the falsifiable-claim criterion and `claims.yml` register format, the two-axis fact × presentation verdict system with its judgment rules (D-B source priority), the four-way divergence typology as a classifier, the adversarial probe → verify workflow, the kāraka↔UD-deprel proxy rules with the three systematic non-mappings, the gold/etalon layer rules (extraction, crosswalk, per-lemma agreement with saturation guard), and the recorded reproducibility pitfalls (denominator universes, kappa rederivation, pin-by-tag, local-only scripts vs CI). Method only — results live in the source reports and articles. Companion of contract C3 ([SANGRAM_CORPUS_EVIDENCE_METHOD.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/SANGRAM_CORPUS_EVIDENCE_METHOD.mdx)): C3 owns the corpus registry and the evidence cycle, this manual owns claim encoding and verdicts; on corpus questions C3 wins, on encoding questions this manual wins.
 
@@ -8,8 +8,8 @@ _Created: 25-07-2026 · Last updated: 25-07-2026_
 
 **Provenance.** Fable 5 (`claude-fable-5`), 25-07-2026, handoff [H1406](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1406-Fable_SanskritGrammar_deep-manual-karaka-claims-methodology-wave3_20.07.26.md) — Wave 3 of the org deep-manuals programme ([PLAN](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_ORG_DEEP_MANUALS_FABLE_WAVES_2026H2.md), Uprava-private). Distilled from: [REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/REPORT_GRAMMAR_CLAIM_VERIFICATION_SYNTHESIS_2026.md) (two-axis system, typology, κ=0.877 dual-pass design), [karaka-case/index.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/articles/karaka-case/index.mdx) (proxy table, non-mappings, gold layer, probe→verify precedent), [AUDIT_SANGRAM_CASE_DENOMINATOR_COMMENSURABILITY_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/AUDIT_SANGRAM_CASE_DENOMINATOR_COMMENSURABILITY_2026.md) (universe rule), [RQ4_EVALUATION_PROTOCOL_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RQ4_EVALUATION_PROTOCOL_2026.md) (falsifiability exemplar). Language ruling: Russian body + English abstract per charter §2.1/§3 and the C4 i18n contract (the contract override that programme ruling D4 explicitly allows).
 
-LAST_VERIFIED: 25-07-2026
-VERIFIED_BY: Fable 5 (claude-fable-5), H1406
+LAST_VERIFIED: 04-10-2026
+VERIFIED_BY: GLM 5.3 Flash (zai-start-plan/GLM-5.3-Flash), H5991
 COMMANDS_SPOT_RUN: 6
 
 **Verification block (25-07-2026, authoring pass, Fable 5 `claude-fable-5`).**
@@ -24,6 +24,8 @@ COMMANDS_SPOT_RUN: 6
 | H1399 (§7.2 per-lemma agreement) already merged | `git log origin/main` shows [PR #496](https://github.com/gasyoun/SanskritGrammar/pull/496) merged | recorded as done in manual §7, not re-executed |
 | Independent adversarial refutation pass (programme ruling D11) | separate agent (no authoring context) re-ran the commands and checked 34 load-bearing claims against sources, default-REFUTED on uncertainty | 31 CONFIRMED / 3 REFUTED; all 3 fixed pre-PR: H1399 handoff link corrected to the real archive filename, unsourced "защищена в 2014" dropped (only "published 2014" is sourced), Usha grep tally corrected 9 → 10 hits (the 10th — a generic pipeline-state line in `article.schema.json`, unrelated; the 0-live-stale-surfaces conclusion unchanged) |
 
+**H5991 refresh 04-10-2026 (GLM 5.3 Flash).** Re-ran live: `rederive_kappa.py` (κ 0.929, 117/120 coarse; 0.720, 73/93 fine — exact), `check_denominator_commensurability.py` (34 summaries commensurable, `case_bearing` 4,014,688 — exact), `npm run check-denominators` (same OK output), `python -m pytest -q` (red locally only in two env-dependent files — `test_visa_sheet_generator.py` fixture setup and `test_atlas_build_bundle_e2e.py`, the §8.4 local-scripts-vs-CI class; not caused by this pass), Usha-stale-wording `git grep` (all current hits benign: corrected-historical record, unrelated chrestomathy, private-data policy line), named-path existence checks (all present). No drift; manual unchanged.
+
 **Improvement backlog (ranked).**
 1. Apply the encoding method to the next queued grammar register end-to-end and record what the manual under-specified (the first real consumer will surface gaps the calibration programme cannot).
 2. Wire a claims-register lint for §3 rule 1 (every verdict row names its number's artifact) — currently prose-enforced only; `check_claims_consistency.py` covers counts, not artifact links.
@@ -37,5 +39,6 @@ COMMANDS_SPOT_RUN: 6
 |---|---|
 | 25-07-2026 | Created (v1) — Wave 3, H1406, Fable 5 (`claude-fable-5`): method distilled from the verification programme + SG-SE-013 + denominator audit; first SanskritGrammar metadoc carrying the LAST_VERIFIED staleness block. |
 | 25-07-2026 | Adversarial refutation pass (D11, independent agent): 31/34 CONFIRMED; 3 peripheral refutations fixed same pass (H1399 link slug, "защищена" dropped, grep tally 9→10). |
+| 04-10-2026 | H5991 monthly refresh: 6 commands re-run live, κ and denominator outputs reproduce exactly, no drift, manual unchanged; LAST_VERIFIED re-stamped (GLM 5.3 Flash). |
 
 _Dr. Mārcis Gasūns_
