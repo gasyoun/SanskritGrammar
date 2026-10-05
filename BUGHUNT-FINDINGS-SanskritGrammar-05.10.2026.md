@@ -78,6 +78,15 @@ Executor: OxAlpha (`opencode/z-ai/glm-5.3-flash`).
   the lived-in tree, `0` new failures from this pass's fixes; self-test 16/16; both fixed files
   `py_compile` green.
 
+## Addendum (same day, fix attempt 2/3): CI surfaced the sibling tests of F1
+
+CI on the fix PR caught two MORE tests carrying the same stale frozen-ledger assumption —
+[`test_freeze_gate_rejects_new_toc_ref`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_article_validate.py)
+and `test_freeze_gate_allows_baseline_toc_ref` (their `active is True` assertions were part of
+the pre-existing local failure set of this hunt, same 3173bd2 root cause, pre-dating the fix PR).
+Both now run against the same synthetic frozen ledger (pytest `monkeypatch` over the loader) with
+a real-ledger staleness residual added; `tests/test_article_validate.py` 7/7 green locally.
+
 ## Autonomy notes
 
 - Both HIGH findings are CODE bugs → auto-fixed per MG ruling 26-09-2026, max-3-attempts budget
