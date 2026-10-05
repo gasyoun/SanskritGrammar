@@ -21,7 +21,10 @@
         "related_handoffs"
       ],
       "properties": {
-        "active": { "type": "boolean" },
+        "lifted_by": { "type": "string" },
+      "lifted_date": { "type": "string" },
+      "lift_ruling": { "type": "string" },
+      "active": { "type": "boolean" },
         "ruled_by": { "type": "string" },
         "ruled_date": { "$ref": "#/$defs/isoDate" },
         "ruling_handoff": { "type": "string" },

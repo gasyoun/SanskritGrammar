@@ -2,7 +2,10 @@
   "$schema": "./consolidation_ledger.schema.json",
   "contract_version": "1.0.0",
   "freeze": {
-    "active": true,
+    "active": false,
+    "lifted_by": "Dr. Marcis Gasuns",
+    "lifted_date": "2026-10-05",
+    "lift_ruling": "MG in-chat ruling 05-10-2026 («да»): C5/C6 ratified via the VISA ROUTE — the standing per-article MG visa (review-sheet -> MG votes) is each of the 14 unknown slots' gate; no numeric per-slot kill-gates are invented (H1260 fence kept); C5/C6 section-7 pilot gates unchanged (SG-SE-006 stays kill_gated). The 18-07-2026 exit criterion (unknown=0) is superseded by this ruling.",
     "ruled_by": "Dr. Marcis Gasuns",
     "ruled_date": "2026-07-18",
     "ruling_handoff": "MG in-chat ruling, 18-07-2026",
@@ -21,7 +24,7 @@
     }
   },
   "last_refresh": {
-    "date": "2026-10-02",
+    "date": "2026-10-05",
     "commands": [
       "python scripts/consolidation_ledger_refresh.py",
       "python scripts/article_validate.py --all",
@@ -105,10 +108,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-004 (sem-a-genitive (+ Abl); not a § 7 pilot). C6 § 7 has no pilot for Abl/Gen. Gen-absolute candidate≠construction is a limit, not a kill-gate threshold. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-004 (sem-a-genitive (+ Abl); not a § 7 pilot). C6 § 7 has no pilot for Abl/Gen. Gen-absolute candidate≠construction is a limit, not a kill-gate threshold. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_ablative-genitive.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -136,7 +139,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -168,10 +171,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-019). No invented threshold. Escalate: Human @DECIDE for a per-slot MO-019 gate, or visa-only path. Context: C5 EM2. Probe: sangram/audit/probe_freeze_aorist-types.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-019). No invented threshold. Escalate: Human @DECIDE for a per-slot MO-019 gate, or visa-only path. Context: C5 EM2. Probe: sangram/audit/probe_freeze_aorist-types.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_aorist-types.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -201,7 +204,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -228,10 +231,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-009). No invented threshold. Escalate: @DECIDE: keep as limit-candidate → visa sheet, or rule kill_gated only if a human adopts a written freeze criterion. Probe: sangram/audit/probe_freeze_bahuvrihi.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-009). No invented threshold. Escalate: @DECIDE: keep as limit-candidate → visa sheet, or rule kill_gated only if a human adopts a written freeze criterion. Probe: sangram/audit/probe_freeze_bahuvrihi.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_bahuvrihi.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -262,10 +265,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-001 (sem-a-case-overview; not a § 7 pilot). C6 § 7 pilots are only P1–P5; sem-a-case-overview is not a pilot. No numeric kill-gate in SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-001 (sem-a-case-overview; not a § 7 pilot). C6 § 7 pilots are only P1–P5; sem-a-case-overview is not a pilot. No numeric kill-gate in SANGRAM_SYNTAX_SEMANTICS_PROGRAM_W3_W4.mdx § 7. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_case-system-overview.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -294,7 +297,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -329,7 +332,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -356,7 +359,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -386,10 +389,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-024). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_gerundive.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-024). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_gerundive.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_gerundive.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -420,10 +423,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-008 (sem-b-optative / sem-b-imperative; not a § 7 pilot). C6 § 7 has no pilot for Imp/Opt (slots exist in § 6 SEM-B but are not P1–P5). feat_mood is native; no programme kill threshold named. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-008 (sem-b-optative / sem-b-imperative; not a § 7 pilot). C6 § 7 has no pilot for Imp/Opt (slots exist in § 6 SEM-B but are not P1–P5). feat_mood is native; no programme kill threshold named. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_imperative-optative.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -451,7 +454,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -481,10 +484,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-025). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_infinitive.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-025). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_infinitive.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_infinitive.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -518,10 +521,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-003 (sem-a-instrumental / sem-a-dative-experiencer; not a § 7 pilot). C6 § 7 has no pilot for Ins/Dat. Agent-proxy / deprel limits are honesty notes, not kill thresholds. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-003 (sem-a-instrumental / sem-a-dative-experiencer; not a § 7 pilot). C6 § 7 has no pilot for Ins/Dat. Agent-proxy / deprel limits are honesty notes, not kill thresholds. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_instrumental-dative.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -561,10 +564,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-013 (sem-a-karaka-vs-case; not a § 7 pilot). C6 § 7 has no pilot for kāraka↔case. E1 (no classical dependency trees) is a method rule (manual ≥100), not a freeze kill threshold — not inventing one. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-013 (sem-a-karaka-vs-case; not a § 7 pilot). C6 § 7 has no pilot for kāraka↔case. E1 (no classical dependency trees) is a method rule (manual ≥100), not a freeze kill threshold — not inventing one. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_karaka-case.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -594,10 +597,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-002). No invented threshold. Escalate: Visa-only or @DECIDE for an overview-specific freeze rule. Context: C5 EM5. Probe: sangram/audit/probe_freeze_krt-overview.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-002). No invented threshold. Escalate: Visa-only or @DECIDE for an overview-specific freeze rule. Context: C5 EM5. Probe: sangram/audit/probe_freeze_krt-overview.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_krt-overview.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -630,10 +633,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-005 (sem-a-locative; not a § 7 pilot). C6 § 7 P1 kill-gate belongs to syn-c-locative-absolute (construction pilot), not to SG-SE-005 sem-a-locative. Do not transfer P1's <80% retrieval threshold to this slot without a programme revision. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-005 (sem-a-locative; not a § 7 pilot). C6 § 7 P1 kill-gate belongs to syn-c-locative-absolute (construction pilot), not to SG-SE-005 sem-a-locative. Do not transfer P1's <80% retrieval threshold to this slot without a programme revision. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_locative.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -665,10 +668,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-002 (sem-a (Nom/Acc sub-article of case cluster); not a § 7 pilot). C6 § 7 has no pilot for Nom/Acc. Not inventing a functional-split threshold from E1 deprel-partial notes. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.",
+      "blocking_note": "H1612 freeze probe: C6 programme kill-gate MISSING for SG-SE-002 (sem-a (Nom/Acc sub-article of case cluster); not a § 7 pilot). C6 § 7 has no pilot for Nom/Acc. Not inventing a functional-split threshold from E1 deprel-partial notes. Integrity re-derive against pin 04e0778: PASS. Not inventing a threshold; leave disposition=unknown. Path to freeze exit: programme adds a named gate, or human visa→published outside the probe-first kill path.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_nominative-accusative.md",
         "https://github.com/gasyoun/Uprava/blob/main/handoffs/H1612-Opus_SanskritGrammar_freeze-probe-se-cluster_24.07.26.md"
@@ -696,7 +699,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -723,7 +726,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "kill_gated",
       "blocking_note": "",
@@ -756,10 +759,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-022). No invented threshold. Escalate: Human @DECIDE or visa-only path. Context: C5 EM2-adjacent perfect-participle bucketing. Probe: sangram/audit/probe_freeze_present-perfect-participles.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-MO-022). No invented threshold. Escalate: Human @DECIDE or visa-only path. Context: C5 EM2-adjacent perfect-participle bucketing. Probe: sangram/audit/probe_freeze_present-perfect-participles.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_present-perfect-participles.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -790,10 +793,10 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "unknown",
-      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-011). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_preverbs.{md,json,py}.",
+      "blocking_note": "H1613 park-and-skip 24-07-2026: C5 kill-gate criterion MISSING for this slot (see sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md · SG-WF-011). No invented threshold. Escalate: Human @DECIDE or visa-only path. Probe: sangram/audit/probe_freeze_preverbs.{md,json,py}.; UNBLOCKED 05-10-2026: MG in-chat «да» — C5/C6 visa route, freeze lifted; per-article MG visa is this slot's gate",
       "source_links": [
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/probe_freeze_preverbs.md",
         "https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/audit/FREEZE_EXIT_KILLGATE_MATRIX_2026.md",
@@ -822,7 +825,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -851,7 +854,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -878,7 +881,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",
@@ -912,7 +915,7 @@
       },
       "validator_evidence": {
         "article_validate": "pass",
-        "checked_at": "2026-10-02"
+        "checked_at": "2026-10-05"
       },
       "disposition": "published",
       "blocking_note": "",

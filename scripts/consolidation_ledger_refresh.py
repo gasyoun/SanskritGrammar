@@ -392,6 +392,11 @@ def build_ledger(today: str, build_status: str) -> dict:
         "contract_version": CONTRACT_VERSION,
         "freeze": {
             "active": prior_freeze.get("active", True),
+            # -- freeze-lift ruling (MG 05-10-2026): carried like `active` so a
+            #    refresh never erases the lift provenance --
+            "lifted_by": prior_freeze.get("lifted_by", ""),
+            "lifted_date": prior_freeze.get("lifted_date", ""),
+            "lift_ruling": prior_freeze.get("lift_ruling", ""),
             "ruled_by": "Dr. Marcis Gasuns",
             "ruled_date": "2026-07-18",
             "ruling_handoff": "MG in-chat ruling, 18-07-2026",
