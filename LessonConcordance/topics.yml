@@ -398,3 +398,85 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§127 e-/i- для i; §129.4 staumi/stavīmi для stu) — у З-1978 запись есть даже там, где нет crosswalk-строки"
           kochergina: "K: класс даётся при глаголе (XVI: as, i, brū, stu…), морфонологической записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/7 корней урока; i и stu в crosswalk отсутствуют — пробел реестра, задокументирован (как śaṃs/rakṣ/jīv урока I); corpus_layer.tsv урока: stu (stauti, MBh 14,53,10), ru (rauti, Hitop 1,82.2)"
+
+  VI:
+    title: "Морфонология основ IV класса (īv-удлинение; корневые i/u перед группой на r/v; a-удлинение); ср. р. на u (madhu); сандхи конечного n"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 789–923 (заголовок «# УРОК VI.»)"
+    claims: [HB-11, HB-86, HB-87, HB-88, HB-89, HB-90, HB-91]
+    reuse_clusters:
+      - "3 совпадения упражнений с Kochergina XIII (scripts/data/matches.json: buhler-1923.VI.109 ↔ kochergina-1998.XIII.267, VI.115 ↔ XIII.266, VI.122 ↔ XIII.265 — exact 1.0)"
+      - "3 совпадения упражнений с Knauer (buhler-1923.VI.113 ↔ knauer-1908.10.209, VI.118 ↔ knauer-1908.10.210, VI.122 ↔ knauer-1908.2.27 — exact 1.0)"
+    corpus_layer: []     # corpus_layer.tsv: регистры начинаются с урока XVIII, у урока VI строк нет
+    topics:
+      - key: present-class-iv
+        title: "Present indicativus IV класса: ya к слабой ступени корня; īv-удлинение (dīv→dīvya), корневые i/u перед группой на r/v, a-удлинение семи корней"
+        buhler_locus: "урок VI, §1а-б (mdx 791–797): div→dīvya/dīvyati; корневые i/u + группа на r/v удлиняются; kram, tam, dam, mad, śam, śram, bhram удлиняют a (+ bhramyati)"
+        topic_claims: [HB-86, HB-87, HB-11]
+        spots:
+          "kochergina-lesson:XV": "образуется путем прибавления к корню глагола в слабом звуковом виде суффикса -ya"
+          "knauer-fraza:Nr.10": "रामः क्षत्रियान्परशुनाक्राम्यति"
+          "zalizniak-1978-sec:118": "ya --- класс IV. Корень в слабой ступени"
+          "sangram-article:thematic-present": "I (bháva-ti), IV (dī́vya-ti), VI (tudá-ti), X (coráya-ti)"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — морфонология ya-основы разбита на три подправила (HB-86 īv; HB-87 корневые i/u перед группой на r/v, с оговоркой «корневые»; HB-11 семь a-удлиняющихся корней) + вариант bhramyati; списка исключений нет"
+          whitney: "W+ — §763: тот же список am-корней (klam, tam, dam, bhram, çam, çram) + оговорки: klam добавлен, çam «трудиться» даёт çamyati, от kṣam — только kṣamyate; §765: īv-корни (dīv, sīv, çrīv, ṣṭhīv) с этимологической оговоркой (правильно dīū, ≠ div «сиять» с dyu-); §761: семантика класса — «свыше пятидесяти» корней чувства/состояния (tuṣ, tam, mad именно такие)"
+          zalizniak-1978: "Z+ — §118: «неполноизменяемые» rādhya-, vāya-, dhyāya- — список исключений есть и у З-1978, вопреки гипотезе; корень dīv записан в I-ряду по слабой ступени dyu- (§56), при том что dīvya- — IV класс"
+          kochergina: "K+ — Занятие XV: те же два удлинения (корни на -am: bhrā́mya-/śrā́mya-; на -iv: dī́vya-) + tuṣ → túṣya-; контраст в том же занятии: iṣ → icchá- (cch-тип I класса)"
+        notes: "HB-84 (ya-вставка, 12,58 % презентных токенов DCS-2021) — урок V; урок VI надстраивает морфонологию. Кнауэр Nr.10 переиспользует ākramyati (VI.113) и śāmyati (VI.118) — обе формы класса IV (matches.json, exact); sangram: класс IV = 7 613 токенов, тематический, сталкивается с пассивом (27 497 yá-форм)"
+      - key: u-stems
+        title: "Сущ. ср. р. на u (madhu): n-связочный элемент; ср. р. прилагательные на u могут брать формы м. р."
+        buhler_locus: "урок VI, §2а-б (mdx 799–818): парадигма madhu-n-e / madhu-n-aḥ / madhu-n-oḥ / madhū-n-ām / madhu-ṣu; V. madhu, madho; §2б — D.Abl.G.L.sg. и G.L.du. ср. р. прилагательных на u допускают формы м. р."
+        topic_claims: [HB-88]
+        spots:
+          "kochergina-lesson:XIII": "Основы на -i и -u бывают всех трех родов"
+          "knauer-fraza:Nr.2": "मधुना क्षीरेण च तुष्यन्ति बालाः"
+          "zalizniak-1978-sec:84": "Основы на u склоняются (за исключением L.sg) точно так же"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — разрешающее правило §2б (HB-88: пермиссивное «могут», список падежей точен — D.Abl.G.L.sg. + G.L.du.); вариант V.sg. madho стоит в таблице без оговорки"
+          whitney: "W+ — §§335–344: i/u-основы как один тип; парадигма madhu (dual mádhunī, G.L. mádhunos, pl. mádhūni); §342 ведийские варианты (mádhunā/mádhvā); §344 — то же разрешение для ср. р. прилагательных с оговоркой, что в ведийском n-разницы нет"
+          zalizniak-1978: "Z+ — §84: madhu- один из шести образцов (agni/mati/vāri/sunu/hanu/madhu); «Основы на u склоняются (за исключением L.sg) точно так же» — перегруппировка i/u в один тип вместо отдельных парадигм"
+          kochergina: "K+ — Занятие XIII: i/u-основы всех трёх родов (2646) + вриддхи u→au в L.sg. м./ср. (2675); три строки упражнения урока VI переиспользованы дословно (XIII.265/266/267)"
+        notes: "Кнауэр Nr.2.10 «madhunā kṣīreṇa ca tuṣyanti bālāḥ» = строка упражнения урока VI (matches.json exact: VI.122 ↔ knauer-1908.2.27) — In.sg. madhu-n-ā в работе; sangram-статьи об u-основах нет — честный пробел источника"
+      - key: n-sandhi
+        title: "Сандхи конечного n: ñ перед j/jh/ś (+вариант ch); ṇ перед ḍ/ḍh, ṃl перед l; anusvāra + гоморганный шипящий перед ṭ/ṭh, c/ch, t/th"
+        buhler_locus: "урок VI, §3 (mdx 820–834): tāñ janān / tāñ śatrūn~chatrūn; tāṇ ḍamarān / tāṃ-l-lokān; tāṃ-ś ca / tāṃ-s tathā / tāṃ-ṣ ṭaṅkān"
+        topic_claims: [HB-89, HB-90, HB-91]
+        spots:
+          "kochergina-lesson:X": "При неразличении в печатных текстах анунасики и анусвары"
+          "knauer-fraza:Nr.2": "श्वाँल्लघ्वा"
+          "zalizniak-1978-sec:43": "n + j (jh) → ñj (ñjh); n + ç → ñch"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — три подправила (HB-89/90/91, все TRUE); вариант ch после ñ оговорён как возможный («может стоять ch»), вариант анунасики при ṃl — в скобке"
+          whitney: "W+ — §202b (n→ñ перед j), §203 (n+ç→ñ ch; варианты написания), §205b (n→ṇ перед ḍ/ḍh — «the case rarely if ever occurs»!), §206 (n→носовое l: «manuscripts to a great extent disregard this rule»), §208 (anusvāra+шипящий: историческое объяснение + «practically applies only to n before c and t»)"
+          zalizniak-1978: "Z+ — §43 п. 2: симметричный полный набор (n+j→ñj, n+ç→ñch, n+l→ṁll, n+t→ṁst, n+ṭ→ṁṣṭ, n+c→ṁçc) + факультативы n+s→nts, n+ṣ→ṇṭṣ + графическая оговорка об анунасике (§ 6, конец § 43 п. 2)"
+          kochergina: "K+ — Занятие X п. 5 «Внешние saṃdhi -n» + замечание о неразличении анунасики и анусвары в печатных текстах (строка 2034) — тот же пункт, что в скобке Бюлера"
+        notes: "Кнауэр Nr.2.7 «aśvāṁl laghvā» (деванагари с чандрабинду, श्वाँल्लघ्वा) — реализация ṃl-правила в чужом упражнении; расхождение свидетелей: Уитни понижает статус n→ṇ и носового l (редкость/игнор рукописей), Бюлер и З-1978 дают правила без оговорок"
+      - key: lesson-roots
+        title: "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
+        buhler_locus: "урок VI, список «Глаголы:» (mdx 836–862)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: kram,  gloss: "наступать, нападать (ā-kram IV, тж. I krāma)", z1975: "M₁ (conf medium; строка простого корня #119 stride)", z1978: "M₂ (open)", crosswalk: "yes — приставочный ā-kram наследует ряд корня"}
+          - {root: div,   gloss: "играть",                z1975: "I₂ (conf high; гомонимы #363 play / #364 lament под написанием dīv; третья физическая строка — дубль #363 с z-рядом U₂ в блоке записи-2026)", z1978: "I₂", crosswalk: "yes — под написанием dīv (слабая ступень dyu-, § 56); ловушка поиска по «div»"}
+          - {root: mad,   gloss: "пьянеть (mādya-)",      z1975: "A₁ ×3 (conf medium; три строки #545 — в колонках З-1975 совпадают, z-ряды расходятся A1/N1/N2 — артефакт реестра)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: tuṣ,   gloss: "радоваться, быть довольным", z1975: "U₁ (conf high)", z1978: "U₁ (closed)", crosswalk: "yes"}
+          - {root: tam,   gloss: "быть печальным",        z1975: "M₁ (conf medium; #297 faint)", z1978: "M₂ (open)", crosswalk: "yes"}
+          - {root: śam,   gloss: "успокаиваться, тухнуть", z1975: "M₁ (conf medium; #774 be quiet)", z1978: "M₂", crosswalk: "yes, омонимия — #775 note отдельной строкой"}
+          - {root: śram,  gloss: "уставать",              z1975: "M₁ (conf medium; #808 be weary)", z1978: "M₂ (open)", crosswalk: "yes"}
+          - {root: bhram, gloss: "бродить, блуждать",     z1975: "M₁ (conf medium; #534 wander)", z1978: "M₂ (open)", crosswalk: "yes"}
+          - {root: vyadh, gloss: "пронзать, попадать (vidhya-)", z1975: "A₁ (conf medium; #754 pierce)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: cam,   gloss: "пить, зачерпывать (ā-cam, ā-cāma I)", z1975: "M₁ (conf medium; #219 sip)", z1978: "M₂ (open)", crosswalk: "yes"}
+          - {root: ṛ,     gloss: "идти, падать на к.-л. (ar, ṛccha I)", z1975: "R₁ (conf high; #69 go, send)", z1978: "R₁ (open)", crosswalk: "yes — под написанием ṛ"}
+          - {root: har,   gloss: "брать, отнимать, похищать", z1975: "R₁ ×2 (conf high; строки #923 take / #924 be angry под написанием hṛ)", z1978: "R₁", crosswalk: "yes — под написанием hṛ; ловушка поиска по «har»"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B+ — класс дан при каждом глаголе (десять IV + ā-cam I + ar I + har I), морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 119, 363/364, 545, 317, 297, 774, 808, 534, 754, 219, 69, 923); в тексте урока классов нет"
+          zalizniak-1978: "Z+ — запись через ряды; NB: шесть корней урока (kram/tam/śam/śram/bhram/cam) у Зализняка M-ряда (M₁→M₂) — его морфокласс корня отвечает носовым презентам, тогда как Бюлер преподаёт их через IV класс: ряд корня ≠ стратегия презенса конкретного урока"
+          kochergina: "K: класс при глаголе (уже в Занятии XIII: tuṣ P., о.н.в. tuṣya-), записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 12/12, но только под орфографией Зализняка: dīv (2 гомонима play/lament) и hṛ (2 гомонима take/be angry) — поиск по «div»/«har» ничего не находит; обе ловушки задокументированы (контраст: sañj/saj в уроке XXII); mad — 3 идентичные строки #545 (артефакт реестра)"
