@@ -281,11 +281,25 @@ def self_test() -> int:
     if errors:
         failures.append(f"fixture should pass but got: {errors}")
 
-    def mutated(mutate):
-        m = copy.deepcopy(fixture)
-        mutate(m)
-        s = json.dumps(m, ensure_ascii=False)
-        errs, _ = validate(m, s)
+    # H1260 freeze self-test routing (bughunt fix, 05-10-2026): since the C5/C6
+    # freeze LIFT (MG ruling 05-10-2026, PR #1015) the real ledger's
+    # freeze.active is mutable operational state, so the gate cases below run
+    # against a SYNTHETIC frozen ledger injected over load_freeze_baseline —
+    # same validate() code path, independent of the on-disk freeze state.
+    # A state residual further down still watches the real ledger.
+    synth_freeze = (True, {"SG-MO-001", "SG-MO-002"}, None)
+
+    def mutated(mutate, *, freeze=None):
+        saved_loader = load_freeze_baseline
+        if freeze is not None:
+            globals()["load_freeze_baseline"] = lambda *a, **k: freeze
+        try:
+            m = copy.deepcopy(fixture)
+            mutate(m)
+            s = json.dumps(m, ensure_ascii=False)
+            errs, _ = validate(m, s)
+        finally:
+            globals()["load_freeze_baseline"] = saved_loader
         return errs
 
     cases = {
@@ -310,32 +324,27 @@ def self_test() -> int:
         "missing ru translation": lambda m: m["article"]["examples"][0]["translations"].pop("ru"),
         "leakage pattern in manifest": lambda m: m["article"]["examples"][0]["gloss_ru"].__class__ and
             m["article"]["examples"][0].__setitem__("gloss_ru", "see GTD_NEXT_ACTIONS row"),
-        # H1260 consolidation-freeze gate — negative case: a synthetic 27th/new
-        # toc_ref must be rejected while the real on-disk ledger's freeze is
-        # active (checked against the actual consolidation_ledger.json, not a
-        # mock, so a stale/mis-generated ledger would surface here too).
+        # H1260 consolidation-freeze gate — negative case: a new toc_ref must be
+        # rejected while A freeze is active (synthetic frozen ledger — the real
+        # ledger's active flag became mutable operational state at the 05-10-2026
+        # lift, PR #1015, so it is no longer a usable fixture for an
+        # always-frozen expectation).
         "new toc_ref outside the frozen H1260 baseline, freeze active": lambda m: m["article"].__setitem__(
             "toc_ref", "SG-MO-999"),
     }
     for name, mutate in cases.items():
-        if not mutated(mutate):
+        if not mutated(mutate, freeze=synth_freeze):
             failures.append(f"mutation {name!r} should fail but passed")
 
-    # H1260 freeze gate — positive case: an EXISTING frozen-baseline toc_ref
-    # must still pass while freeze is active (repairs/revisions stay allowed).
-    freeze_active, freeze_allowed, freeze_warn = load_freeze_baseline()
-    if freeze_active and freeze_allowed:
-        baseline_toc_ref = sorted(freeze_allowed)[0]
-        m = copy.deepcopy(fixture)
-        m["article"]["toc_ref"] = baseline_toc_ref
-        s = json.dumps(m, ensure_ascii=False)
-        errs, _ = validate(m, s)
-        if any("freeze active" in e for e in errs):
-            failures.append(f"baseline toc_ref {baseline_toc_ref!r} was wrongly rejected while "
-                             f"freeze is active: {errs}")
-    else:
-        failures.append(f"could not load the real freeze ledger for the positive self-test "
-                         f"(active={freeze_active}, warn={freeze_warn!r}) — freeze gate is untestable")
+    # H1260 freeze gate — positive case (synthetic frozen ledger): an EXISTING
+    # baseline toc_ref must still pass while freeze is active (repairs/revisions
+    # stay allowed).
+    baseline_toc_ref = sorted(synth_freeze[1])[0]
+    errs = mutated(lambda mm: mm["article"].__setitem__("toc_ref", baseline_toc_ref),
+                   freeze=synth_freeze)
+    if any("freeze active" in e for e in errs):
+        failures.append(f"baseline toc_ref {baseline_toc_ref!r} was wrongly rejected while "
+                        f"freeze is active: {errs}")
 
     # H1260 freeze gate — inactive bypass: a synthetic ledger with active=False
     # must let a non-baseline toc_ref through.
@@ -348,7 +357,16 @@ def self_test() -> int:
         active, allowed, warn_ = load_freeze_baseline(tmp_ledger)
         if active is not False or allowed != set():
             failures.append(f"inactive-ledger load returned active={active!r} allowed={allowed!r}, "
-                             f"expected (False, set())")
+                            f"expected (False, set())")
+
+    # State residual on the REAL ledger (still the actual
+    # consolidation_ledger.json, so a stale/mis-generated ledger surfaces here):
+    # whenever the on-disk freeze is active its allowed set must be non-empty.
+    real_active, real_allowed, real_warn = load_freeze_baseline()
+    if real_active and not real_allowed:
+        failures.append("real consolidation ledger has freeze.active=true but an "
+                        f"EMPTY allowed toc_ref set (warn={real_warn!r}) — stale or "
+                        "mis-generated ledger")
 
     n_freeze_extra = 2
     for f in failures:

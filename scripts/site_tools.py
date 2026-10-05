@@ -99,7 +99,10 @@ def site(root):
         print("[site] node_modules missing; run `npm ci` first")
         return False
     print("[site] npm run build ...")
-    r = subprocess.run(["npm", "run", "build"], cwd=root, shell=True,
+    # No shell=True: on POSIX, a LIST argv + shell=True runs only argv[0] as the
+    # shell command ("sh -c npm run build" → bare `npm`), silently dropping the
+    # "run build" arguments — the build gate then can never succeed. Bughunt 05-10-2026.
+    r = subprocess.run(["npm", "run", "build"], cwd=root,
                        capture_output=True, text=True, encoding="utf-8", errors="replace")
     ok = "[SUCCESS] Generated static files" in (r.stdout + r.stderr)
     print("[site] build:", "GREEN" if ok else "FAILED")
