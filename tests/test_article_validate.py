@@ -47,26 +47,41 @@ def _fixture():
     return json.loads(serialized), serialized
 
 
-def test_freeze_gate_rejects_new_toc_ref():
-    active, allowed, warn = av.load_freeze_baseline()
-    assert warn is None, f"could not load the real consolidation ledger: {warn}"
-    assert active is True, "H1260 freeze should be active — if it was lifted, update this test"
+# The C5/C6 freeze was LIFTED 05-10-2026 (MG ruling, PR #1015), so the real
+# ledger's freeze.active is mutable operational state, not a fixture. Gate-logic
+# coverage runs against a SYNTHETIC frozen ledger injected over the loader; a
+# separate residual test below keeps watching the real ledger for staleness.
+# (Bughunt 05-10-2026: CI surfaced these two siblings of the self-test break.)
+SYNTH_FREEZE = (True, {"SG-MO-001", "SG-MO-002"}, None)
+
+
+def test_freeze_gate_rejects_new_toc_ref(monkeypatch):
+    monkeypatch.setattr(av, "load_freeze_baseline", lambda *a, **k: SYNTH_FREEZE)
     fixture, _ = _fixture()
     m = copy.deepcopy(fixture)
-    m["article"]["toc_ref"] = "SG-MO-999"  # not a member of the frozen 35-ID baseline
+    m["article"]["toc_ref"] = "SG-MO-999"  # not a member of the frozen baseline
     errors, _ = av.validate(m, json.dumps(m, ensure_ascii=False))
     assert any("freeze active" in e for e in errors), errors
 
 
-def test_freeze_gate_allows_baseline_toc_ref():
-    active, allowed, warn = av.load_freeze_baseline()
-    assert warn is None and active and allowed
-    baseline_toc_ref = sorted(allowed)[0]
+def test_freeze_gate_allows_baseline_toc_ref(monkeypatch):
+    monkeypatch.setattr(av, "load_freeze_baseline", lambda *a, **k: SYNTH_FREEZE)
+    baseline_toc_ref = sorted(SYNTH_FREEZE[1])[0]
     fixture, _ = _fixture()
     m = copy.deepcopy(fixture)
     m["article"]["toc_ref"] = baseline_toc_ref
     errors, _ = av.validate(m, json.dumps(m, ensure_ascii=False))
     assert not any("freeze active" in e for e in errors), errors
+
+
+def test_freeze_gate_real_ledger_state_residual():
+    """Lift-aware staleness tripwire on the REAL ledger: whenever a freeze is
+    on, its allowed set must be non-empty — a mis-generated ledger must not
+    pass silently."""
+    active, allowed, warn = av.load_freeze_baseline()
+    assert warn is None or not active, f"ledger warn while freeze on: {warn}"
+    if active:
+        assert allowed, "freeze.active=true but empty allowed toc_ref set — stale ledger"
 
 
 def test_freeze_gate_inactive_ledger_bypasses(tmp_path):
