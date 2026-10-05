@@ -95,6 +95,6 @@ a real-ledger staleness residual added; `tests/test_article_validate.py` 7/7 gre
   `changelog_queue/2026-10-05-bughunt-high-fixes.md` (the repo's documented CHANGELOG route).
 - Fixes land in this report's PR (branch `bughunt-2026-10-05`, worktree off `origin/main` 391fb14).
 
-Elapsed: hunt+report+fixes ≈ 48 min wall (start 07:25, end 08:13 +0300).
+Elapsed: ≈ 85 min wall including CI waits (22:37 05-10 → 00:02 06-10 +0300).
 
 _Гасунс_
