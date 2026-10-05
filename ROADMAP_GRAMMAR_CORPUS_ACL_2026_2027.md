@@ -618,9 +618,11 @@ mint a handoff on pickup; human-gated rows point at their MG row in
 - [ ] **M-H2 — «Нестор-История» contact (§5)** — **MG @DO November 2026** in GTD (§6, W3).
 - [ ] **P-H1 — RQ4 recruitment authorization (§5)** — H1261 shipped the production route
   (archived, terminal); recruitment start stays human. **MG @DO 24-09-2026** in GTD.
-- [ ] **Sangram freeze exit — legitimate C5/C6 gates (§0, §6 item 3)** — ratify instruments
-  or approve visa/terminal routing for the 14 unknowns; agents must not invent thresholds.
-  **MG @DO 24-09-2026** in GTD.
+- [x] **Sangram freeze exit — legitimate C5/C6 gates (§0, §6 item 3)** — ratified:
+  MG in-chat ruling 05-10-2026 («да») takes the **visa route** — the standing
+  per-article MG visa (review-sheet → MG votes) is each of the 14 unknown slots'
+  gate; no numeric per-slot thresholds invented (H1260 fence kept); §7 pilot
+  gates unchanged. `freeze.active=false` in the consolidation ledger.
 
 ## Related documents (awareness weave H1728)
 
