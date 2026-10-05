@@ -10,6 +10,10 @@
         "spot": "УРОК II."
       },
       {
+        "label": "урок III — конкорданс",
+        "spot": "УРОК III."
+      },
+      {
         "label": "урок IV — конкорданс",
         "spot": "УРОК IV."
       },
@@ -54,6 +58,14 @@
       {
         "label": "урок II — s-retroflex",
         "spot": "Церебрализация s: суффиксальный s → ṣ (прозрачность висарги/"
+      },
+      {
+        "label": "урок III — present-class-vi",
+        "spot": "Present indicativus VI класса: тематическая a при корне без "
+      },
+      {
+        "label": "урок III — case-functions",
+        "spot": "Значения падежей: Instr (орудие/сопровождение/деятель), Dat "
       },
       {
         "label": "урок IV — i-stems",
@@ -140,6 +152,18 @@
       {
         "label": "урок II — s-retroflex",
         "spot": "Церебрализация s: суффиксальный s → ṣ (прозрачность висарги/"
+      },
+      {
+        "label": "урок III — present-class-vi",
+        "spot": "Present indicativus VI класса: тематическая a при корне без "
+      },
+      {
+        "label": "урок III — a-stem-declension",
+        "spot": "Склонение основ на a (м./ср. р.): D. -āya, Abl. -āt, L. -e; "
+      },
+      {
+        "label": "урок III — case-functions",
+        "spot": "Значения падежей: Instr (орудие/сопровождение/деятель), Dat "
       },
       {
         "label": "урок IV — i-stems",
@@ -292,6 +316,10 @@
         "spot": "Лемма-слой: 11 глаголов урока (морфонологическая запись)"
       },
       {
+        "label": "урок III — lesson-roots",
+        "spot": "Лемма-слой: 12 глаголов урока (9 VI класса + 3 I класса) — м"
+      },
+      {
         "label": "урок IV — lesson-roots",
         "spot": "Лемма-слой: 6 глаголов урока (морфонологическая запись)"
       },
@@ -313,6 +341,10 @@
       }
     ],
     "sangram-thematic-present": [
+      {
+        "label": "урок III — present-class-vi",
+        "spot": "Present indicativus VI класса: тематическая a при корне без "
+      },
       {
         "label": "урок IV — present-class-vi",
         "spot": "Present indicativus VI класса: корень в слабой ступени + a; "
