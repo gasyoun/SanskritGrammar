@@ -7,7 +7,7 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 
 Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) и каждой темы внутри него — соответствующий локус в остальных оцифрованных источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md). Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»); карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).
 
-*Уроки (48): **I**, **II**, **III**, **IV**, **XXII**, **XXIX**, **XXXVIII**, **VI** — остальные по мере batch-минта (E8: каркас на 48).*
+*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI** — остальные по мере batch-минта (E8: каркас на 48).*
 
 ## Урок I — Present indicativus I класса (тематические a-основы); висарга-saṃdhi
 
@@ -489,6 +489,154 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 *Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 6/6 корней урока — контраст: урок I 10/13, XXII 1/1, XXIX 12/12, XXXVIII 5/7; lip — ряд I при VI-классовом n-инфиксе limpa-: ряд (морфонология корня) и традиционный класс (ведийское ударение) — независимые оси, что и показывает урок IV с его смешанным списком
 
 *Регистр утверждений урока:* [HB-79](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1532), [HB-80](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1547), [HB-81](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1562), [HB-82](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1577), [HB-83](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1591)
+
+## Урок V — Глаголы IV класса (ya к корню); сущ. м. р. на u (bhānu); висарга перед c/ch, ṭ/ṭh, t/th; предлог-преверб ā
+
+*Локус текста:* BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 652–788 (жирный делимитер «**Урок V.**», mdx 652 — план, риск-строка: единственный урок без заголовочного «# УРОК N.»; парсер ведёт нормализованный реестр)
+
+### Present indicativus IV класса: корень в слабой ступени + ya (lubh → lubhya-, lubhyāmi, lubhyasi, lubhyati)
+
+*Бюлер:* урок V, §1 (mdx 654): «Корни IV кл. … вставляют ya, напр. lubh, lubhya; Ind. Praes. Par. lubhyāmi, lubhyasi, lubhyati»
+
+*Темы урока (1/5):* **present-class-iv** · [u-stems](#:~:text=%D0%A1%D1%83%D1%89.%20%D0%BC.%20%D1%80.%20%D0%BD%D0%B0%20u%3A%20bh%C4%81nu%20%28V.%20bh%C4%81no%2C%20D.%20bh%C4%81) · [visarga-sandhi](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0-sa%E1%B9%83dhi%2C%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%3A%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c%2Fch%20) · [preposition-a](#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%2F%D0%BF%D1%80%D0%B5%D0%B2%D0%B5%D1%80%D0%B1%20%C4%81%3A%20%C2%AB%D0%B4%D0%BE%2C%20%D0%B2%D0%BF%D0%BB%D0%BE%D1%82%D1%8C%20%D0%B4%D0%BE%2C%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 759–762](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#759>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 118](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=ya%20---%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%20IV.%20%D0%9A%D0%BE%D1%80%D0%B5%D0%BD%D1%8C%20%D0%B2%20%D1%81%D0%BB%D0%B0%D0%B1%D0%BE%D0%B9%20%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD%D0%B8) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F%20%D0%BF%D1%83%D1%82%D0%B5%D0%BC%20%D0%BF%D1%80%D0%B8%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8E%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%B0%20%D0%B2%20%D1%81%D0%BB%D0%B0%D0%B1%D0%BE%D0%BC%20%D0%B7%D0%B2%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%BC%20%D0%B2%D0%B8%D0%B4%D0%B5%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%20-ya) | 0.9 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.2](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E1%B9%9Bk%E1%B9%A3%C4%81%20madhu%20lubhyanti) | 0.85 | 2 |
+| Sangram | [thematic-present](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/thematic-present#:~:text=I%20%28bh%C3%A1va-ti%29%2C%20IV%20%28d%C4%AB%CC%81vya-ti%29%2C%20VI%20%28tud%C3%A1-ti%29%2C%20X%20%28cor%C3%A1ya-ti%29) | 0.8 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE (на этом локусе)**
+
+- **buhler**: B− — модельное правило с парадигмой lubhyāmi…; вставка ya названа, но «слабая ступень корня» не оговорена, ударение не упомянуто; медийные формы (lubhyate) не показаны — при том что сам Кнауэр в том же материале даёт med. kupyate
+- **whitney**: W+ — §759: ya к «the accented but unstrengthened root» — и ударение, и слабая ступень в одном правиле; §760: полная парадигма náhya (актив + медий); §761–762: «more than a hundred» корней, сплошная слабая ступень класса
+- **zalizniak-1978**: Z+ — §118: «Корень в слабой ступени» + примеры yudhya-, mṛṣya-, manya-, jāya-, çrāmya-, dīvya-; «неполноизменяемые» rādhya-, vāya-, dhyāya- — список исключений есть и у З-1978, вопреки гипотезе
+- **kochergina**: K+ — Занятие XV: «…в слабом звуковом виде суффикса -ya. Ударение постоянно на корне» — модель + таблица основ; IV класс в tudādi-линии
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-84](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1606) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Кнауэр Nr.2 (§§ 48–51) целиком упражняет ya-основы с отсылками к своему § 124: gurū çiṣyayoḥ krudhyataḥ (к. krudh) и ṛkṣā madhu lubhyanti — модельное lubh-упражнение урока V; sangram: IV (dī́vya-ti) — тематический слот презентной основы, порождение lubhya- — правило движка, а не словарь
+
+### Сущ. м. р. на u: bhānu (V. bhāno, D. bhānav-e, G.du. bhānv-oḥ, L. bhān-au, A.pl. bhānū-n, D.pl. bhānu-bhyaḥ, L.pl. bhānu-ṣu); м. род прилагательных на u — как сущ.
+
+*Бюлер:* урок V, §2 (mdx 656–673): таблица bhānu + «Муж. род прилагательных на u склоняется точно так же» (HB-85)
+
+*Темы урока (2/5):* [present-class-iv](#:~:text=Present%20indicativus%20IV%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%3A%20%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D1%8C%20%D0%B2%20) · **u-stems** · [visarga-sandhi](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0-sa%E1%B9%83dhi%2C%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%3A%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c%2Fch%20) · [preposition-a](#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%2F%D0%BF%D1%80%D0%B5%D0%B2%D0%B5%D1%80%D0%B1%20%C4%81%3A%20%C2%AB%D0%B4%D0%BE%2C%20%D0%B2%D0%BF%D0%BB%D0%BE%D1%82%D1%8C%20%D0%B4%D0%BE%2C%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 341–344](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_V#341>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 84](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BD%D0%B0%20u%20%D1%81%D0%BA%D0%BB%D0%BE%D0%BD%D1%8F%D1%8E%D1%82%D1%81%D1%8F%20%28%D0%B7%D0%B0%20%D0%B8%D1%81%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20L.sg%29%20%D1%82%D0%BE%D1%87%D0%BD%D0%BE%20%D1%82%D0%B0%D0%BA%20%D0%B6%D0%B5) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XIII](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BD%D0%B0%20-i%20%D0%B8%20-u%20%D0%B1%D1%8B%D0%B2%D0%B0%D1%8E%D1%82%20%D0%B2%D1%81%D0%B5%D1%85%20%D1%82%D1%80%D0%B5%D1%85%20%D1%80%D0%BE%D0%B4%D0%BE%D0%B2) | 0.9 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.2](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=gur%C5%AB%20%C3%A7i%E1%B9%A3yayo%E1%B8%A5%20krudhyata%E1%B8%A5) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — парадигма bhānu без исключений, сросшиеся формы даны прямо в таблице (bhānv-oḥ G.du., bhānū-n A.pl.); предложение о прилагательных — то же тождество, что §3 урока IV для i-основ (HB-85: тривиально системное); ж. р. u-основ (dhenu) урок не касается
+- **whitney**: W+ — §341: образцы çátru (m. — лексема словаря урока!), dhenu (f), madhu (n) — весь родовой диапазон; §342: ведийские формы u-основ; §343: «There are no irregular u-stems» — нерегулярных u-основ нет вовсе (в отличие от i: sákhi, páti); §344: прилагательные на u многочисленны
+- **zalizniak-1978**: Z+ — §84: sunu- (m) — единственный мужской образец в шестёрке agni/mati/vāri/sunu/hanu/madhu; «Основы на u склоняются (за исключением L.sg) точно так же» — перегруппировка i/u в один тип; в таблице формы sunuḥ/sunum/sunv-
+- **kochergina**: K+ — Занятие XIII: i/u-основы всех трёх родов + словарная строка guru (m)/dhenu (f)/aśru (n); таблица склонения содержит колонку guru рядом с giri/bhūmi/vasu; вриддхи u→au в L.sg. (2675) — механика bhānau, которую таблица Бюлера подаёт молча
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-85](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1622) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Кнауэр Nr.2 — u-основы в работе: gurū (м. дв. N. от guru, слабая ступень), viṣṇum ṛṣir yajati nṛpāya (дословная строка упражнения урока V!), gopó 'tra vane dhenū rakṣati; словарь урока: 8 новых u-основ (bhānu, śatru, bāhu, vāyu, viṣṇu, bindu, paraśu, guru), остальное — повтор a/i-основ уроков II–IV; sangram-статьи об u-основах нет — честный пробел источника
+
+### Висарга-saṃdhi, продолжение: перед c/ch → ś, перед ṭ/ṭh → ṣ, перед t/th → s (naraś carati, punaṣ ṭaṅkaḥ, rāmas tiṣṭhati)
+
+*Бюлер:* урок V, §3 а–в (mdx 675–687): три правила с парами примеров
+
+*Темы урока (3/5):* [present-class-iv](#:~:text=Present%20indicativus%20IV%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%3A%20%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D1%8C%20%D0%B2%20) · [u-stems](#:~:text=%D0%A1%D1%83%D1%89.%20%D0%BC.%20%D1%80.%20%D0%BD%D0%B0%20u%3A%20bh%C4%81nu%20%28V.%20bh%C4%81no%2C%20D.%20bh%C4%81) · **visarga-sandhi** · [preposition-a](#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%2F%D0%BF%D1%80%D0%B5%D0%B2%D0%B5%D1%80%D0%B1%20%C4%81%3A%20%C2%AB%D0%B4%D0%BE%2C%20%D0%B2%D0%BF%D0%BB%D0%BE%D1%82%D1%8C%20%D0%B4%D0%BE%2C%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 170–172](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_III#170>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 44](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=s%20---%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20t%2C%20th%3B%20%E1%B9%A3%20---%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%E1%B9%AD%2C%20%E1%B9%ADh%3B%20%C3%A7%20---%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c%2C%20ch) | 0.95 | 1 |
+| Кочергина 1998 | [Занятие VI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%B2%20%C5%9B%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c-%2C%20ch%3A%20suta%C5%9Bca) | 0.9 | 3 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — три правила с примерами, продолжение урока I (там s/r→ḥ в паузе и перед k/kh/p/ph); списка исключений нет: удержание s перед прочими согласными и внутрисловные случаи (giriṣu, matiṣu) не оговорены
+- **whitney**: W+ — §170b: s удерживается только перед t/th (глухие своего ряда); §170c: ассимиляция перед c/ch→ç, ṭ/ṭh→ṣ — правило «almost universal» (§171) — в паре с §171: «to the last one [k/kh/p/ph] there are numerous exceptions», т.е. именно правила урока V — безусловные; §172 — перед шипящими (урок I)
+- **zalizniak-1978**: Z+ — §44 п. 2: «Перед глухими согласными s и r дают: s — перед t, th; ṣ — перед ṭ, ṭh; ç — перед c, ch; ḥ — перед прочими глухими» + примеры antastāpa-, vṛkaç ca; «Отклонения»: gīrṣu/pūrṣu (перед -su), manasketa-/niṣputra- (перед k/kh/p/ph на стыках) — исключения названы
+- **kochergina**: K+ — Занятие VI, §4 п. 2 а–г: та же четырёхчастная схема, что у Бюлера уроков I+V, с примерами на каждый пункт: sutaśca (из sutas ca), vṛkṣaṣ ṭīkate, antas-tāpa (из antar-tāpa)
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-9](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L274) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Урок V + урок I = полный набор Бюлера о конечном s/r; Очерк §44 п. 2 и Кочергина VI п. 2 а–г дают те же правила с исключениями, которых Бюлер V не имеет; sangram-статьи о сандхи нет — честный пробел источника; Кнауэр в ближайших fraze численно не подбирается (juncções ḥ+t/ḥ+c нет) — строка честно опущена
+
+### Предлог/преверб ā: «до, вплоть до, начиная от» (согласование с падежом); как приставка — «при, к, на» (ā-gam, ā-ruh)
+
+*Бюлер:* урок V, §4 (mdx 689): «Предлог ā … согласуется с Acc. или Abl. В качестве глагольной приставки…»; словарь: ā-gam, ā-ruh, ā (+Acc., Abl.)
+
+*Темы урока (4/5):* [present-class-iv](#:~:text=Present%20indicativus%20IV%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%3A%20%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D1%8C%20%D0%B2%20) · [u-stems](#:~:text=%D0%A1%D1%83%D1%89.%20%D0%BC.%20%D1%80.%20%D0%BD%D0%B0%20u%3A%20bh%C4%81nu%20%28V.%20bh%C4%81no%2C%20D.%20bh%C4%81) · [visarga-sandhi](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0-sa%E1%B9%83dhi%2C%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%3A%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c%2Fch%20) · **preposition-a** · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 1128](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_XVI#1128>) | 0.95 | 2 |
+| Зализняк, Очерк 1978 | [§§ 212](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%D0%B8%20%D1%80%D0%B0%D0%B7%D0%B2%D0%B8%D1%82%D1%8B%20%D0%B2%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B5%20%D1%81%D0%BB%D0%B0%D0%B1%D0%BE) | 0.85 | 1 |
+| Кочергина 1998 | [Занятие XXXIX](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D0%BD%D0%BE%20%D1%82%D1%80%D0%B5%D1%82%D1%8C%D1%8F%20%D1%87%D0%B0%D1%81%D1%82%D1%8C%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B0%20-%20%D0%BF%D1%80%D0%B5%D1%84%D0%B8%D0%BA%D1%81%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8B) | 0.85 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.17](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E0%A4%86%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%AA%E0%A5%8D%E0%A4%A4%E0%A5%87%E0%A4%83) | 0.8 | 1 |
+| Sangram | [preverbs](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/preverbs#:~:text=%C4%81gam%20%28%C4%81%2Bgam%20%C2%AB%D0%BF%D1%80%D0%B8%D1%85%D0%BE%D0%B4%D0%B8%D1%82%D1%8C%C2%BB%29%204640) | 0.9 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **PARTIAL-REFUTED (на этом локусе — единственный OVERSTATED-вердикт урока)**
+
+- **buhler**: B± — «согласуется с Acc. или Abl.» (HB-10: OVERSTATED — аккузативная половина не подтверждается ни Уитни §1128, ни списками Шерцля; вероятна ошибка русского издания 1923); приставочная половина бесспорна и сразу отработана в словаре (ā-gam, ā-ruh)
+- **whitney**: W+ — §1128: предпозитивные конструкции аблатива; ā «hither from; all the way to» — только с аблативом (ā samudrāt); нулевая аккузативная аттестация
+- **zalizniak-1978**: Z± — §212: «Предлоги развиты в санскрите слабо» — предпозитивы-наречия в большинстве не управляют падежом вовсе; ā в списке не назван, но рамка трезвая: падежное «согласование» предлога — школьное упрощение
+- **kochergina**: K+ — Занятие XXXIX: префиксальное глаголообразование (~треть глаголов); ā в списке приставок с семантикой направления «к, до»
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-10](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L289) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Свидетель-ловушка урока: Кнауэр Nr.17 «ā samāpteḥ śarīrasya» — ā + аблатив в живой фразе (против печатного «Acc. или Abl.»); sangram preverbs: ā — вторая по токенам упасарга (48 139), āgam — топ-преверб-глагол (4640 токенов) — лексема словаря урока; HB-10 (mg_footnote Шерцль + Whitney §1128) — готовый методический модуль про ошибку издания
+
+### Лемма-слой: 10 глаголов урока (морфонологическая запись)
+
+*Бюлер:* урок V, список «Глаголы» (mdx 701–723): lubh, krudh, śuṣ, kup, as, naś, snih (IV); likh (VI); ā-gam, ā-ruh (I)
+
+*Темы урока (5/5):* [present-class-iv](#:~:text=Present%20indicativus%20IV%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%3A%20%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D1%8C%20%D0%B2%20) · [u-stems](#:~:text=%D0%A1%D1%83%D1%89.%20%D0%BC.%20%D1%80.%20%D0%BD%D0%B0%20u%3A%20bh%C4%81nu%20%28V.%20bh%C4%81no%2C%20D.%20bh%C4%81) · [visarga-sandhi](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0-sa%E1%B9%83dhi%2C%20%D0%BF%D1%80%D0%BE%D0%B4%D0%BE%D0%BB%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%3A%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20c%2Fch%20) · [preposition-a](#:~:text=%D0%9F%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B3%2F%D0%BF%D1%80%D0%B5%D0%B2%D0%B5%D1%80%D0%B1%20%C4%81%3A%20%C2%AB%D0%B4%D0%BE%2C%20%D0%B2%D0%BF%D0%BB%D0%BE%D1%82%D1%8C%20%D0%B4%D0%BE%2C%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD) · **lesson-roots**
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Гасунс, Dhātu 2014 | [glava7-ukazatel-zaliznyaka](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/glava7_ukazatel-zaliznyaka#:~:text=%D0%98%D0%B4%D0%B5%D1%8F%20%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%20%D0%B8%20%D0%BC%D0%BE%D1%89%D0%BD%D0%B0) | 0.8 | — |
+| Толчельников 2026 (morphoclass) | [morphoclass-crosswalk-1975-2014-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) | 0.8 | — |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **GAP-DOCUMENTED**
+
+- **buhler**: B: класс при каждом глаголе дан (IV×7, VI×1, I×2), морфонологической записи нет; косвенное управление оговорено при krudh/kup (+D.), snih (+Gen., Loc.)
+- **whitney**: W: корни урока без классов в тексте урока; IV-класс — §§759–765, VI-класс — §§751–758, классы при превербах — §§1076–1087
+- **zalizniak-1978**: Z: запись через ряды (U₁/A₁/I₁/M₁) в индексе Очерка; оба омонима урока разведены рядами (as бросать/быть — A/A, naś погибать/достигать — A/N)
+- **kochergina**: K: класс даётся при глаголе, записи нет
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* [crosswalk 1975↔2014↔2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
+
+| Корень | Глосса | З-1975 | З-1978 | crosswalk |
+|---|---|---|---|---|
+| lubh | желать (IV кл., lubhyati) | U1 (conf high) | U₁ (defective) | yes |
+| krudh | гневаться (+D., Gen.; IV, krudhyati) | U1 (conf high) | U₁ (defective) | yes |
+| śuṣ | засыхать (IV кл., śuṣyati) | ? | ? | NO — строки в crosswalk нет |
+| kup | гневаться, сердиться (+D.; IV, kupyate — мед. у Кнауэра Nr.7) | U1 (conf high) | U₁ (seṭ) | yes |
+| as | бросать, метать (IV кл., asyati) | A1 (conf medium; омоним as «быть» — отдельная строка seṭ) | A₁ | yes (омонимы: as² бросать veṭ/aniṭ, as¹ быть seṭ) |
+| naś | погибать, обращаться в бегство (IV, naśyati) | A1 (conf medium; омоним naś «достигать» — ряд N1) | A₁ | yes (омонимы: naś¹ погибать / naś² достигать) |
+| snih | любить, быть расположенным (+Gen., Loc.) | I1 (conf high) | I₁ | yes |
+| likh | писать (VI кл., likhati) | I1 (conf high) | I₁ (defective) | yes — ряд I при VI-классовом likhati |
+| gam | идти, приходить (урок берёт ā-gam «приходить») | M1 (conf medium) | M₁ | yes (превербная форма ā-gam) |
+| ruh | восходить (урок берёт ā-ruh «влезать, подниматься»; повтор корня урока IV) | U1 (conf high) | U₁ | yes (ruh урока IV уже покрыт; здесь преверб ā-) |
+
+*Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 9/10 корней урока — śuṣ отсутствует (как śaṃs/rakṣ/jīv урока I); likh — ряд I при VI-классе, как lip урока IV: ряд (морфонология корня) и традиционный класс (ведийское ударение) — независимые оси; два омоним-глагола урока (as, naś) — прямая параллель ловушке kart урока IV
+
+*Регистр утверждений урока:* [HB-84](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1606), [HB-85](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1622), [HB-9](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L274), [HB-10](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L289)
 
 ## Урок XXII — Имена на r (gir, pur, vār), на in/min/vin (dhanin) и ср. р. на as/is/us (manas, havis, dhanus); ж. р. на -ī
 
