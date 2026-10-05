@@ -79,6 +79,82 @@ lessons:
           zalizniak-1978: "Z: класс-система перегруппирована (§120), запись через ряды A1/R/M/U"
           kochergina: "K: класс даётся при глаголе, морфонологической записи нет — её нет ни у кого, кроме Зализняка; даже не у всех трёх Зализняков она есть (МГ, ревью 02-10-2026)"
         notes: "Проверка полноты (голос MG D2): crosswalk 1975↔2014 покрывает 10/13 корней урока; śaṃs/rakṣ/jīv в нём отсутствуют — известный пробел реестра, не ошибка урока"
+  III:
+    title: "Present VI класса (тематический без guṇa; ṝ→ir, u/ū→uv, i→iy); склонение основ на a (D./Abl./L.); значения падежей"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 415–531 (заголовок «# УРОК III.»)"
+    claims: [HB-73, HB-74, HB-75, HB-76, HB-77, HB-8, HB-78]
+    reuse_clusters: []   # scripts/data/matches.json: buhler-1923.III.* нет — честно
+    corpus_layer: []     # corpus_layer.tsv: поурочные регистры начинаются с XVIII
+    topics:
+      - key: present-class-vi
+        title: "Present indicativus VI класса: тематическая a при корне без guṇa; ṝ→ir, u/ū→uv, i→iy"
+        buhler_locus: "урок III, §1а–б (mdx 417–419): kṣipa, tuda, kṛṣa; kira (kṝ), dhuva (dhū), kṣiya (kṣi); Ind. pr. par. kṣipāmi…"
+        topic_claims: [HB-73, HB-74]
+        spots:
+          "kochergina-lesson:XV": "прибавления к корню глагола в слабом звуковом виде"
+          "zalizniak-1978-sec:117": "Класс VI: корень в слабой ступени"
+          "sangram-article:thematic-present": "VI (tudá-ti)"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (на этом локусе)"
+          buhler: "B− — правило чисто, списки исключений не приводятся: три ряда гласных исходов (ṝ→ir, u/ū→uv, i→iy) по одному примеру каждый"
+          whitney: "W+ — §751 (акцент на тематическом á, корень без усиления) + §752 полная парадигма viç с ведийскими раритетами (tana/rata-окончания §752b); переносы корней в класс — §§746–750 (sad→śīda §748 — глагол урока)"
+          zalizniak-1978: "Z+ — §117: «У неполноизменяемых корней классы I и VI в послеведийском языке неразличимы» (разграничение по ведийскому ударению или условно: paca-, jīva-, cumba-, bhāṣa-); §120: icha- от √iṣ — «в индийской традиции они включены в классы I и VI»; §121: двухэтапные тематические основы"
+          kochergina: "K+ — Занятие XV: правило (слабый вид корня + тематическая -a, «ударение постоянно на тематической гласной -a») + термин tudādi; рядом в том же занятии — особые глаголы I класса (cch, удвоение pā/sthā)"
+        notes: "Сшивка с уроком I (present-class-i): тот же тематический тип, контраст «guṇa есть / guṇa нет»; sangram thematic-present: класс VI = 7 993 токена DCS, коллапс I/VI разобран отдельным §3.5"
+      - key: a-stem-declension
+        title: "Склонение основ на a (м./ср. р.): D. -āya, Abl. -āt, L. -e; ср. р. по phala- «точно также»"
+        buhler_locus: "урок III, §2 (mdx 421–432): таблица deva- (D. devāya, Abl. devāt, L. deve; pl. devebhyaḥ(s), deveṣu); «Точно также phalena, phalāya и т. д.»"
+        topic_claims: []
+        spots:
+          "kochergina-lesson:IX": "Универсальные падежные окончания"
+        exceptions:
+          verdict: "PARTIAL (свидетели фрагментарны)"
+          buhler: "B± — даёт только недостающие к урокам I–II падежи (D./Abl./L.) и одну строку «точно также» для ср. р.; полной парадигмы нет"
+          whitney: "W+ — §§329–330: систематика a-склонения (ena §329c, āya §329d, āt §329f, sya §329g, локатив e §329g) + полная парадигма kā́ma/devá/āsyà (ед., дв., мн.) §330"
+          zalizniak-1978: "Z-? — локус a-склонения в Очерке в этом проходе не верифицирован (поиски по «основы на -а», «тематического гласного» пусты); строка не посажена, чтобы не выдумывать § — открытый вопрос"
+          kochergina: "K+ — Занятие IX: таблица универсальных падежных окончаний (D. āya / e / bhyas) + парадигма по родам"
+        notes: "Ср. р. у Бюлера — одной строкой «точно также»; у Уитни āsyà входит в полную парадигму §330; строки Очерка — открытый вопрос (не выдумывать локус)"
+      - key: case-functions
+        title: "Значения падежей: Instr (орудие/сопровождение/деятель), Dat (commodi), Abl (откуда/причина), Gen (принадлежность), Loc (место/время/направление)"
+        buhler_locus: "урок III, §3а–д (mdx 434–444): по одной строке на падеж; Instrumentalis — вопросы «с кем? посредством чего?»"
+        topic_claims: [HB-75, HB-76, HB-77, HB-8, HB-78]
+        spots:
+          "kochergina-lesson:IX": "Краткая характеристика основных функций падежей"
+          "zalizniak-1978-sec:71": "Падеж: именительный"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (HB-8 OVERSTATED)"
+          buhler: "B± — пять функций по одной строке; «всякого рода принадлежность» у генитива — единственное универсальное утверждение урока, и именно его Уитни опровергает разнообразием употреблений"
+          whitney: "W+ — §§278–284 (Instrumental), §§285–288 (Dative), §§289–293 (Ablative), §§294–300 (Genitive, вкл. gen. absolute §300b), §§301+ (Locative, case absolute) — целые параграфы употреблений против одной строки Бюлера"
+          zalizniak-1978: "Z− — значения падежей Очерк не разбирает: §71 даёт только перечень падежей в системе грамматических противопоставлений — honest gap свидетеля"
+          kochergina: "K+ — Занятие IX: функции каждого падежа с примерами (адресат sutāya likhāmi, цель yuddhāya gacchati, направление grāmāya gacchati)"
+        notes: "HB-8 — единственный не-TRUE клейм урока: OVERSTATED (не всё сводится к принадлежности: gen. с глаголами, gen. absolute, gen. времени; DCS: Gen = 1 050 398 токенов, 3-й по частоте); Apte/Speyer (матрица, синтаксис) не посажены — §-якоря не верифицированы, открытый вопрос"
+      - key: lesson-roots
+        title: "Лемма-слой: 12 глаголов урока (9 VI класса + 3 I класса) — морфонологическая запись"
+        buhler_locus: "урок III, списки «Глаголы VI класса» и «Глаголы I класса» (mdx 446–472)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: kṣip, gloss: "бросать (VI кл.)",      z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: viś,  gloss: "входить (VI кл.)",      z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: pracch, gloss: "спрашивать (pṛccha-, VI кл.)", z1975: "A1 + R1 (две строки, conf medium)", z1978: "A₁", crosswalk: "yes — под написанием prach"}
+          - {root: karṣ, gloss: "пахать (kṛṣa-, VI кл.)", z1975: "R1 (conf high; в реестре под корнем kṛṣ)", z1978: "R₁", crosswalk: "yes"}
+          - {root: sparś, gloss: "прикасаться (spṛśa-, VI кл.)", z1975: "A1 + R1 (две омоним-строки, conf high)", z1978: "R₁", crosswalk: "yes"}
+          - {root: iṣ,   gloss: "искать, желать (iccha-, VI кл.)", z1975: "I1 (conf high; две омоним-строки: seek/send)", z1978: "I₁", crosswalk: "yes"}
+          - {root: diś,  gloss: "показывать (VI кл.)",   z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: sic,  gloss: "капать, поливать (siñca-, VI кл.)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: sarj, gloss: "творить, выпускать (sṛja-, VI кл.)", z1975: "?", z1978: "?", crosswalk: "NO — строки нет (ни sṛj, ни sarj)"}
+          - {root: hvā,  gloss: "звать (hvaya-, I кл.)", z1975: "?", z1978: "?", crosswalk: "NO — hvā/hve в реестре нет"}
+          - {root: sad,  gloss: "сидеть (sīda-, I кл.)", z1975: "A1 + I2 (две омоним-строки, conf medium)", z1978: "A₁", crosswalk: "yes"}
+          - {root: guh,  gloss: "прятать (gūha-, I кл.)", z1975: "U1 + U2 (две омоним-строки, conf high)", z1978: "U₁", crosswalk: "yes"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: классы при глаголах даны (списки разбиты на «VI класса» / «I класса»), морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (tud-класс §§751–752; sad→śīda §748); в тексте урока ссылок на §§ нет"
+          zalizniak-1978: "Z: запись через ряды (§117: tuda-, likha-, pṛcha-, ruva-, gira-) — единственный источник с морфонологической записью"
+          kochergina: "K: класс даётся при глаголе/в теме занятия (XV — VI класс), записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 10/12 глаголов урока — sarj и hvā отсутствуют (пробел реестра, как śaṃs/rakṣ/jīv урока I и i/stu урока XXXVIII); школьный номер класса в записи Зализняка неоднороден: внутри VI — I1 (kṣip/viś/iṣ/diś/sic), R1 (kṛṣ/spṛś), A1/R1 (pracch), внутри I — A1+I2 (sad), U1/U2 (guh): ряд ≠ класс"
+
   XXII:
     title: "Имена на r (gir, pur, vār), на in/min/vin (dhanin) и ср. р. на as/is/us (manas, havis, dhanus); ж. р. на -ī"
     mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 2863–3025 (заголовок «# УРОК XXII.»)"
