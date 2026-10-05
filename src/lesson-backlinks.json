@@ -6,6 +6,10 @@
         "spot": "УРОК I."
       },
       {
+        "label": "урок IV — конкорданс",
+        "spot": "УРОК IV."
+      },
+      {
         "label": "урок XXII — конкорданс",
         "spot": "УРОК XXII."
       },
@@ -26,6 +30,18 @@
       {
         "label": "урок I — visarga-sandhi",
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
+      },
+      {
+        "label": "урок IV — i-stems",
+        "spot": "Имена на i: agni (м.), vāri (ср., ṇ-инфикс в слабейших); при"
+      },
+      {
+        "label": "урок IV — as-sandhi",
+        "spot": "Saṃdhi конечных aḥ/āḥ: as→o (a исчезает) / as→a; ās→ā; ar/ār"
+      },
+      {
+        "label": "урок IV — present-class-vi",
+        "spot": "Present indicativus VI класса: корень в слабой ступени + a; "
       },
       {
         "label": "урок XXII — r-stems",
@@ -74,6 +90,18 @@
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
       },
       {
+        "label": "урок IV — i-stems",
+        "spot": "Имена на i: agni (м.), vāri (ср., ṇ-инфикс в слабейших); при"
+      },
+      {
+        "label": "урок IV — as-sandhi",
+        "spot": "Saṃdhi конечных aḥ/āḥ: as→o (a исчезает) / as→a; ās→ā; ar/ār"
+      },
+      {
+        "label": "урок IV — present-class-vi",
+        "spot": "Present indicativus VI класса: корень в слабой ступени + a; "
+      },
+      {
         "label": "урок XXII — r-stems",
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
@@ -120,6 +148,18 @@
         "spot": "Висарга-saṃdhi: конечные s, r → ḥ (пауза; перед k/kh/p/ph и "
       },
       {
+        "label": "урок IV — i-stems",
+        "spot": "Имена на i: agni (м.), vāri (ср., ṇ-инфикс в слабейших); при"
+      },
+      {
+        "label": "урок IV — as-sandhi",
+        "spot": "Saṃdhi конечных aḥ/āḥ: as→o (a исчезает) / as→a; ās→ā; ar/ār"
+      },
+      {
+        "label": "урок IV — present-class-vi",
+        "spot": "Present indicativus VI класса: корень в слабой ступени + a; "
+      },
+      {
         "label": "урок XXII — r-stems",
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
@@ -160,6 +200,10 @@
         "spot": "Лемма-слой: 13 глаголов I класса урока (морфонологическая за"
       },
       {
+        "label": "урок IV — lesson-roots",
+        "spot": "Лемма-слой: 6 глаголов урока (морфонологическая запись)"
+      },
+      {
         "label": "урок XXII — lesson-roots",
         "spot": "Лемма-слой: 1 глагол урока (sañj I. P.) — морфонологическая "
       },
@@ -170,6 +214,16 @@
       {
         "label": "урок XXXVIII — lesson-roots",
         "spot": "Лемма-слой: 7 корней II класса урока (морфонологическая запи"
+      }
+    ],
+    "sangram-thematic-present": [
+      {
+        "label": "урок IV — present-class-vi",
+        "spot": "Present indicativus VI класса: корень в слабой ступени + a; "
+      },
+      {
+        "label": "урок XXXVIII — present-class-ii",
+        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
       }
     ],
     "sangram-consonant-stems": [
@@ -194,12 +248,6 @@
       {
         "label": "урок XXIX — absolutivum-ya",
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
-      }
-    ],
-    "sangram-thematic-present": [
-      {
-        "label": "урок XXXVIII — present-class-ii",
-        "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
       }
     ],
     "sangram-preverbs": [
