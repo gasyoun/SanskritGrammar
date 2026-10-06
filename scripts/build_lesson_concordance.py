@@ -116,6 +116,9 @@ LOCAL_SOURCE_FILES = {
     "sangram-consonant-stems": "sangram/articles/consonant-stems/index.mdx",
     "sangram-imperfect": "sangram/articles/imperfect/index.mdx",
     "sangram-imperative-optative": "sangram/articles/imperative-optative/index.mdx",
+    "sangram-causative": "sangram/articles/causative/index.mdx",
+    "sangram-passive": "sangram/articles/passive/index.mdx",
+    "sangram-pronouns": "sangram/articles/pronouns/index.mdx",
 }
 
 
