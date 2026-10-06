@@ -56,6 +56,10 @@
       {
         "label": "урок XII — конкорданс",
         "spot": "УРОК XII."
+      },
+      {
+        "label": "урок XV — конкорданс",
+        "spot": "УРОК XV."
       }
     ],
     "ocherk": [
@@ -124,20 +128,8 @@
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
       {
-        "label": "урок XXII — r-stems",
-        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
-      },
-      {
         "label": "урок XXII — in-stems",
         "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — in-stems",
-        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — as-is-us-stems",
-        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
         "label": "урок XXII — as-is-us-stems",
@@ -196,6 +188,38 @@
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
       },
       {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
+      },
+      {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
+      },
+      {
+        "label": "урок XI — n-double-sandhi",
+        "spot": "Удвоение конечного n̄/ṇ/n после краткого гласного перед нача"
+      },
+      {
+        "label": "урок XIII — imperfect-atmanepada",
+        "spot": "Imperfectum Ātmanepada (Medium): аугмент a- + основа наст. в"
+      },
+      {
+        "label": "урок XIII — imperfect-atmanepada",
+        "spot": "Imperfectum Ātmanepada (Medium): аугмент a- + основа наст. в"
+      },
+      {
+        "label": "урок XIII — i-stems-root-nouns",
+        "spot": "Односложные сущ. ж. р. на ī — корневое склонение: dhī (Acc. "
+      },
+      {
+        "label": "урок XIII — verb-prefixes",
+        "spot": "Превербы второй волны: ati пере-, за, из; adhi над, на; anu "
+      },
+      {
+        "label": "урок XIII — s-retroflex-preverbs",
+        "spot": "Сандхи s после приставок: после приставок на i/u и после nis"
+      },
+      {
         "label": "урок XIV — imperative-parasmaipada",
         "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
       },
@@ -216,14 +240,6 @@
         "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
       },
       {
-        "label": "урок XII — i-stems-fem",
-        "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
-      },
-      {
-        "label": "урок XII — u-stems-fem",
-        "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
-      },
-      {
         "label": "урок XII — u-stems-fem",
         "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
       },
@@ -232,8 +248,12 @@
         "spot": "Прилагательные на u с ж. р. на -ī (склонение как nadī): guru"
       },
       {
-        "label": "урок XII — u-fem-suffix-i",
-        "spot": "Прилагательные на u с ж. р. на -ī (склонение как nadī): guru"
+        "label": "урок XV — imperative-atmanepada",
+        "spot": "Imperativus Ātmanepada (Medium): от основы наст. вр. + оконч"
+      },
+      {
+        "label": "урок XV — r-stems-tar",
+        "spot": "Имена на ṛ: nomina agentis/родства на -tṛ/-ar — kartṛ м. (N."
       }
     ],
     "kochergina": [
@@ -306,20 +326,8 @@
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
       {
-        "label": "урок XXII — r-stems",
-        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
-      },
-      {
         "label": "урок XXII — in-stems",
         "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — in-stems",
-        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — as-is-us-stems",
-        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
         "label": "урок XXII — as-is-us-stems",
@@ -374,6 +382,26 @@
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
       },
       {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
+      },
+      {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
+      },
+      {
+        "label": "урок XI — n-double-sandhi",
+        "spot": "Удвоение конечного n̄/ṇ/n после краткого гласного перед нача"
+      },
+      {
+        "label": "урок XIII — imperfect-atmanepada",
+        "spot": "Imperfectum Ātmanepada (Medium): аугмент a- + основа наст. в"
+      },
+      {
+        "label": "урок XIII — verb-prefixes",
+        "spot": "Превербы второй волны: ati пере-, за, из; adhi над, на; anu "
+      },
+      {
         "label": "урок XIV — imperative-parasmaipada",
         "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
       },
@@ -394,16 +422,16 @@
         "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
       },
       {
-        "label": "урок XII — i-stems-fem",
-        "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
-      },
-      {
         "label": "урок XII — u-stems-fem",
         "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
       },
       {
-        "label": "урок XII — u-stems-fem",
-        "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
+        "label": "урок XV — imperative-atmanepada",
+        "spot": "Imperativus Ātmanepada (Medium): от основы наст. вр. + оконч"
+      },
+      {
+        "label": "урок XV — r-stems-tar",
+        "spot": "Имена на ṛ: nomina agentis/родства на -tṛ/-ar — kartṛ м. (N."
       }
     ],
     "knauer": [
@@ -456,20 +484,8 @@
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
       {
-        "label": "урок XXII — r-stems",
-        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
-      },
-      {
         "label": "урок XXII — in-stems",
         "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — in-stems",
-        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
-        "label": "урок XXII — as-is-us-stems",
-        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
         "label": "урок XXII — as-is-us-stems",
@@ -520,6 +536,22 @@
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
       },
       {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
+      },
+      {
+        "label": "урок XIII — i-stems-root-nouns",
+        "spot": "Односложные сущ. ж. р. на ī — корневое склонение: dhī (Acc. "
+      },
+      {
+        "label": "урок XIII — verb-prefixes",
+        "spot": "Превербы второй волны: ati пере-, за, из; adhi над, на; anu "
+      },
+      {
+        "label": "урок XIII — s-retroflex-preverbs",
+        "spot": "Сандхи s после приставок: после приставок на i/u и после nis"
+      },
+      {
         "label": "урок XIV — imperative-parasmaipada",
         "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
       },
@@ -536,14 +568,6 @@
         "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
       },
       {
-        "label": "урок XII — i-stems-fem",
-        "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
-      },
-      {
-        "label": "урок XII — u-stems-fem",
-        "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
-      },
-      {
         "label": "урок XII — u-stems-fem",
         "spot": "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhen"
       },
@@ -552,8 +576,12 @@
         "spot": "Прилагательные на u с ж. р. на -ī (склонение как nadī): guru"
       },
       {
-        "label": "урок XII — u-fem-suffix-i",
-        "spot": "Прилагательные на u с ж. р. на -ī (склонение как nadī): guru"
+        "label": "урок XV — imperative-atmanepada",
+        "spot": "Imperativus Ātmanepada (Medium): от основы наст. вр. + оконч"
+      },
+      {
+        "label": "урок XV — r-stems-tar",
+        "spot": "Имена на ṛ: nomina agentis/родства на -tṛ/-ar — kartṛ м. (N."
       }
     ],
     "sangram-conjugation-overview": [
@@ -592,10 +620,6 @@
         "spot": "Лемма-слой: 1 глагол урока (sañj I. P.) — морфонологическая "
       },
       {
-        "label": "урок XXII — lesson-roots",
-        "spot": "Лемма-слой: 1 глагол урока (sañj I. P.) — морфонологическая "
-      },
-      {
         "label": "урок XXIX — verb-roots",
         "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
       },
@@ -612,6 +636,14 @@
         "spot": "Лемма-слой: 13 глаголов урока, 11 корней (морфонологическая "
       },
       {
+        "label": "урок XI — lesson-roots",
+        "spot": "Лемма-слой: 5 глаголов урока, 4 корня (морфонологическая зап"
+      },
+      {
+        "label": "урок XIII — lesson-roots",
+        "spot": "Лемма-слой: 14 глаголов урока (13 корней, морфонологическая "
+      },
+      {
         "label": "урок XIV — lesson-roots",
         "spot": "Лемма-слой: 8 глаголов, 7 корней (морфонологическая запись)"
       },
@@ -620,8 +652,8 @@
         "spot": "Лемма-слой: 3 глагола урока, 3 корня (морфонологическая запи"
       },
       {
-        "label": "урок XII — lesson-roots",
-        "spot": "Лемма-слой: 3 глагола урока, 3 корня (морфонологическая запи"
+        "label": "урок XV — lesson-roots",
+        "spot": "Лемма-слой: 4 глагола урока (anu-gam, sam-ā-car, vi-vad I Ā."
       }
     ],
     "sangram-thematic-present": [
@@ -658,6 +690,10 @@
       {
         "label": "урок IX — verb-prefixes",
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
+      },
+      {
+        "label": "урок XIII — verb-prefixes",
+        "spot": "Превербы второй волны: ati пере-, за, из; adhi над, на; anu "
       }
     ],
     "sangram-consonant-stems": [
@@ -666,14 +702,6 @@
         "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
       },
       {
-        "label": "урок XXII — r-stems",
-        "spot": "Имена на r: gir, pur, vār — висарга в N., удлинение гласного"
-      },
-      {
-        "label": "урок XXII — in-stems",
-        "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
-      },
-      {
         "label": "урок XXII — in-stems",
         "spot": "Имена на in/min/vin: dhanin → dhanī, отбрасывание n, ж. р. п"
       },
@@ -682,8 +710,8 @@
         "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
-        "label": "урок XXII — as-is-us-stems",
-        "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
+        "label": "урок XV — r-stems-tar",
+        "spot": "Имена на ṛ: nomina agentis/родства на -tṛ/-ar — kartṛ м. (N."
       }
     ],
     "sangram-absolutive": [
@@ -696,10 +724,24 @@
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
       }
     ],
+    "sangram-imperfect": [
+      {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
+      },
+      {
+        "label": "урок XIII — imperfect-atmanepada",
+        "spot": "Imperfectum Ātmanepada (Medium): аугмент a- + основа наст. в"
+      }
+    ],
     "sangram-imperative-optative": [
       {
         "label": "урок XIV — imperative-semantics",
         "spot": "Значения императива: 2–3 л. «большей частью» приказание, 1 л"
+      },
+      {
+        "label": "урок XV — imperative-atmanepada",
+        "spot": "Imperativus Ātmanepada (Medium): от основы наст. вр. + оконч"
       }
     ]
   }
