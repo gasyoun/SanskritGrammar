@@ -1,0 +1,56 @@
+{
+  "handoff": "H6054",
+  "sample_limit": 10000,
+  "sample_paradigms": 9994,
+  "natva_cells": 326,
+  "natva_stems_paradigms": 89,
+  "natva_stems_lemmas": 55,
+  "natva_only_reverified": {
+    "ok": 326,
+    "fail": 0
+  },
+  "raw_line_check": {
+    "ok": 326,
+    "miss_or_fail": 0
+  },
+  "rule_classes": {
+    "A_compound_mono_final_8_4_12": 121,
+    "B_key2_split": 205
+  },
+  "models": {
+    "m_a": 102,
+    "n_a": 157,
+    "m_in": 30,
+    "f_u": 1,
+    "m_u": 3,
+    "n_u": 14,
+    "m_i": 5,
+    "n_in": 13,
+    "f_i": 1
+  },
+  "stem_level": {
+    "stems_in_818_list": 36,
+    "stems_mono_final_class": 15,
+    "stems_m_a": 33
+  },
+  "cells_by_case": {
+    "acc.du": 8,
+    "instr.pl": 4,
+    "instr.sg": 85,
+    "loc.sg": 11,
+    "nom.du": 8,
+    "voc.du": 8,
+    "gen.pl": 82,
+    "abl.sg": 4,
+    "acc.pl": 32,
+    "acc.sg": 2,
+    "dat.sg": 4,
+    "gen.du": 4,
+    "gen.sg": 4,
+    "loc.du": 4,
+    "nom.pl": 33,
+    "voc.pl": 33
+  },
+  "calc_tables_sha256": "98185b177b734f763c751b1ec067fc03be8532e6ee2ed0d1d8b2f480311841b1",
+  "elapsed_s": 35.8
+}
