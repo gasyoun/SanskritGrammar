@@ -1013,3 +1013,75 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (M₂/N₂/A₂/I₁/U₁/A₁) в crosswalk-индексе; смена ряда 1975→1978 видна прямо в реестре (kram M₁→M₂, jan N₁→N₂, sev I₁→A₂)"
           kochergina: "K: класс даётся при глаголе (IV, Ā); записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/13 корней урока — впервые полный тон (у I — 10/13, у IX — 9/11); ловушки поиска: naś — гомонимия «perish ~ bind» (W418/419), sidh — «hold back ~ perish» (W842/843), pad — совпадение с сущ. pada; IV-атрибуции Бюлера (ati-kram, nis-pad, sam-nah) согласуются с crosswalk-рядами"
+  XII:
+    title: "Существительные ж. р. на i (mati) и u (dhenu); прилагательные на i/u в ж. р. по mati/dhenu; u→ī-женский род прилагательных (gurvī); глаголы kalp/upa-diś/vid"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 1526–1651 (заголовок «# УРОК XII.»)"
+    claims: [HB-21, HB-122]
+    reuse_clusters:
+      - "5 совпадений (scripts/data/matches.json): buhler-1923.XII.285 «मक्षिका व्रणमिच्छन्ति धनमिच्छन्ति पार्थिवाः» ↔ kochergina-1998.VI.33, 1.0; XII.286 «नीचाः कलहमिच्छन्ति शान्तिमिच्छन्ति साधवः» ↔ kochergina-1998.VI.34, 1.0 (двустишие живёт в Занятии VI Кочергиной — занятии visarga-сандхов, мост к уроку I); XII.287 «शान्त्यर्षय इह शोभन्ते» ↔ knauer-1908.2.23, 1.0; XII.293 «हन्वामश्वाल्लँँघ्वा यष्ट्याताडयम्» ↔ knauer-1908.2.24, 0.842 (частичное: у Кнауэра без hanvām); XII.300 «अश्वा अश्राम्यन्भूमावपतंश्च» ↔ kochergina-1998.X.155, 0.962 — весь вводный шлок и два предложения упражнений Бюлер переиспользует из Кнауэра Nr.2 и Кочергиной VI/X. NB: в выгрузке есть и шестое совпадение kochergina-1998.XII.236 ↔ buhler-1923.XVII.389 (0.925) — но это Занятие XII КОЧЕРГИНОЙ против урока XVII Бюлера, к уроку XII Бюлера не относится (ложный друг при выборке по номеру)"
+    corpus_layer: []     # corpus_layer.tsv: поурочные регистры начинаются с XVIII, у урока XII строк нет
+    topics:
+      - key: i-stems-fem
+        title: "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty-ai, Abl. mate-ḥ / maty-āḥ, L. mat-au / maty-ām — двойные серии окончаний); прилагательные на i/u в ж. р. часто по mati/dhenu (§3а)"
+        buhler_locus: "урок XII, §1 + §3а (mdx 1528–1549, 1574): таблица mati (mate, mati-m, matī-ḥ(s), matay-e/maty-ai, mate-ḥ(s)/maty-āḥ(s), matī-n-ām, mat-au/maty-ām, mati-ṣu); «Прилагательные на i и u… в ж. р. часто склоняются как mati и dhenu»"
+        topic_claims: [HB-122]
+        # E10: spot = фраза-утверждение в источнике (не номер параграфа);
+        # whitney-sec — внешние (Wikisource): якорь заголовка §, без фразы;
+        # talmud — CSV-файл, страницы нет. Валидация локальных фраз — на build.
+        spots:
+          "kochergina-lesson:XIII": "Основы на -i и -u бывают всех трех родов"
+          "zalizniak-1978-sec:84": "Образцы: agni- (m) *огонь*, mati- (f) *ум*"
+          "knauer-fraza:Nr.2": "naraḥ kīrtiṁ dhṛtyā 'vindat"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (на этом локусе)"
+          buhler: "B± — парадигма без списка исключений, но с ДВУМЯ сериями косвенных окончаний ж. р. (matay-e/mate-ḥ/mat-au против maty-ai/maty-āḥ/maty-ām) без пометки о статусе двойников; §3а хеджировано «часто» (HB-122: TRUE)"
+          whitney: "W+ — §§335–340: i/u «inflected in so close accordance… cannot be divided into two separate declensions» (§335); §336g: полные женские окончания āi/ās/ām — «grammatical authorities are somewhat at variance… never found in the Veda»; §340: ведийские варианты (matyā́, bhū́myām, bhū́mīs) и §338a редкое īs в N.pl ж. р. — материал, которого урок не касается"
+          zalizniak-1978: "Z — §84: чистая парадигма mati- без исключений и без второй серии (усиленные -ai/-āh/-ām упомянуты только в шапке окончаний §83-блока); рядом §45: matiṣu — образец церебрализации su→ṣu (мост к уроку II)"
+          kochergina: "K+ — Занятие XIII: bhūmi-парадигма с явными двойниками через «или» (bhū́maye или bhū́myai, bhū́mes или bhū́myās, bhū́mau или bhū́myām) + квантор «Основы на -i и -u бывают всех трех родов» + rātri в упражнении занятия"
+        notes: "Словарь урока — 14 i-основ (kīrti, jāti, dhṛti, buddhi, bhakti, bhūti, bhūmi, mukti, yaṣṭi, śānti, śruti, smṛti, rātri + raśmi м.); маркеры (s) в таблице Бюлера — сандхи-указатель висарги (мост к уроку I); Кнауэр Nr.2: kīrtiṁ (A.sg), dhṛtyā (I.sg), rātryāṁ (L.sg) — три i-основы словаря урока прямо в переиспользуемом упражнении"
+      - key: u-stems-fem
+        title: "Существительные ж. р. на u: dhenu «корова» (D. dhenav-e/dhenv-ai, Abl. dheno-ḥ/dhenv-āḥ, G.du. dhenv-oḥ, L. dhen-au/dhenv-ām)"
+        buhler_locus: "урок XII, §2 (mdx 1551–1572): таблица dhenu (dheno, dhenu-m, dhenū-ḥ(s), dhenav-e/dhenv-ai, dheno-ḥ(s)/dhenv-āḥ(s), dhenv-oḥ(s), dhenū-n-ām, dhen-au/dhenv-ām, dhenu-ṣu)"
+        topic_claims: [HB-122]
+        spots:
+          "kochergina-lesson:XIII": "dhenáve или dhenvái"
+          "zalizniak-1978-sec:84": "sunu- (m) *сын*, hanu- (f) *челюсть*"
+          "knauer-fraza:Nr.2": "गोपो ऽत्र वने धेनू रक्षति"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (на этом локусе)"
+          buhler: "B± — та же двойная серия, что у mati; списка исключений нет; hanu (f) «челюсть» из словаря склоняется по §2 без оговорок"
+          whitney: "W+ — §341: dhenú f. cow — МОДЕЛЬ u-основ, то же слово, что §2 урока, с той же двойной серией (dhenáve, dhenvāí; dhenós, dhenvā́s; dhenāú, dhenvā́m); §342: ведийские dhenúm, dhenvā́, dhenávas; §343a: «There are no irregular u-stems» — честное «исключений нет» от самого Уитни"
+          zalizniak-1978: "Z+ — §84: hanu- (f) «челюсть» — словарная строка урока — прямо среди образцов (с sunu-/madhu-), та же парадигма, второй серии нет"
+          kochergina: "K+ — Занятие XIII: dhenu «корова» — модель №2 (guru м./dhenu ж./aśru ср.), двойники dhenáve или dhenvái, dhenós или dhenvā́s, dhenáu или dhenvā́m"
+        notes: "Кнауэр Nr.2: dhenū (дв.) в «गोपो ऽत्र वने धेनू रक्षति» и hanvor (G.du. от hanu) в «raçmayo 'çvasya hanvor badhyante» — u-основы словаря урока в переиспользуемом упражнении; второе — частичное совпадение XII.293↔knauer-1908.2.24 (0.842, у Кнауэра без hanvām)"
+      - key: u-fem-suffix-i
+        title: "Прилагательные на u с ж. р. на -ī (склонение как nadī): guru→gurvī, bahu→bahvī; «Эти формы ж. р. более употребительны»"
+        buhler_locus: "урок XII, §3б (mdx 1576): «Прилагательные на u, если конечному u предшествует только один согласный, в ж. р. могут принимать суффикс ī, и склоняются как nadī, напр. guru тяжелый, ж. p. gurvī; bahu… bahvī. Эти формы ж. р. более употребительны»; в словаре урока laghu «(или f laghvī)»"
+        topic_claims: [HB-21]
+        spots:
+          "zalizniak-1978-sec:180": "guru- *тяжёлый* --- gurvī-"
+          "knauer-fraza:Nr.2": "açvāṅl laghvā"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — квантор хеджирован дважды («могут», «более употребительны») и подтверждён измерением HB-21 (DCS, u_stem_feminine_freq.py, H1044): guru — 55,2 % -vī-токенов (узкое большинство), bahu — 88,2 % (резкое)"
+          whitney: "W+ — §344b: система шире школьной — три способа (u-фем / удлинение ū / суффикс ī: tanú/tanū́/tanvī́, mádhu/madhū́/mádhvī́, laghu/laghvī); §344a контраст: «No adjective in i makes a regular feminine in ī» — границу §3а/§3б проводит Уитни, у Бюлера она не заявлена"
+          zalizniak-1978: "Z+ — §180: guru→gurvī назван прямо, тройка mṛdu-/mṛdvī- и «изредка также удлинением конечного u основы» (babhru→babhrū) — та же трёхчастность, что §344b; §178: перед суффиксом ж. р. -ī- основа на u кончается на v (механизм гурви-глида)"
+          kochergina: "K− — gurvī-тип не преподан вовсе: «Словообразование существительных женского рода» (Занятие XII,3) и Занятие XIII покрывают -ā/-ī для a-основ и -ikā, u→ī отсутствует — честный пробел источника"
+        notes: "«Склоняются как nadī» — мост к уроку XI (nadī-парадигма уже там); Кнауэр Nr.2: laghvā (I.sg от laghvī) в «अश्वाँल्लघ्वा» + apparatus-сноска «açvāṅl laghvā отъ açvān» — ī-женский род в действии; v-глид виден в самих примерах (gur-vī, bah-vī, lagh-v-āi)"
+      - key: lesson-roots
+        title: "Лемма-слой: 3 глагола урока, 3 корня (морфонологическая запись)"
+        buhler_locus: "урок XII, список «Глаголы:» (mdx 1578–1584): kalp I Ā. «делать, служить чему», upa-diś VI P. «учить, наставлять», vid VI U. (vinda-) «достигать, находить»"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: kḷp, gloss: "быть в порядке, годиться (kalp I Ā. «делать, служить чему»)", z1975: "L (conf high)", z1978: "? — 1978-сторона строки unparsed", crosswalk: "yes — под Whitney-написанием kḷp (строка CSV 417, wno 114 «be in order»); ловушка поиска kalp→kḷp (шестая в конкордансе, после tṛ/tar, kart→kṛt, paṭh/path, har→hṛ, dī/ḍī)"}
+          - {root: diś, gloss: "указывать (upa-diś VI P. «учить, наставлять»)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes — строка CSV 310 «point» (wno 356 — совпадение wno с номером строки НЕ здесь: строка файла 356 это lih/wno 684, ловушка двойной нумерации)"}
+          - {root: vid, gloss: "достигать, находить (vinda-)", z1975: "I1 (conf high; две строки-омонима: know 728 / find 729)", z1978: "I₁", crosswalk: "yes — уроку отвечает омоним 2 «find» (wno 729, vinda-); омоним 1 «know» (vetti) — другой глагол"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED (частичное покрытие kḷp)"
+          buhler: "B+ — класс и залог при каждом глаголе даны (I Ā. ×1, VI P. ×1, VI U. ×1); при vid не-гуна основа vinda- дана в скобках, при kalp/upa-diś основы не выведены; морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (kḷp №114, diś №356, vid №№728/729); в тексте урока классов нет; kalp Ā. — редкий среди уроков конкорданса случай I класса Ātmanepada"
+          zalizniak-1978: "Z: diś/vid — I₁; kḷp — L-ряд на 1975-стороне, 1978-сторона в crosswalk не разобрана (unparsed-citation-form)"
+          kochergina: "K: класс даётся при глаголе; записи нет; praviś (XI) уже встречался, upa-diś/vid/kalp систематической словарной строки в занятиях XIII нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 3/3 корня, но kḷp — наполовину (1975-сторона L, 1978-сторона unparsed); vid — двойная омонимия know/find, уроку отвечает «find»; новая ловушка поиска kalp→kḷp — шестая в конкордансе (tṛ/tar II, kart→kṛt IV/XI, paṭh/path XI, har→hṛ VI/XI, dī/ḍī IX, śubh→subh IX — ложное покрытие)"
