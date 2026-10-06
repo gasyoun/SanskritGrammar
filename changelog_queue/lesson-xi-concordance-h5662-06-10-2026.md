@@ -1,0 +1,18 @@
+### Changed
+- **Поурочный конкорданс Бюлера — урок XI приземлён (H5662, OxAlpha, 06-10-2026).** Темы урока — Imperfectum Par. (приращение a, слияние с начальной гласной в vṛddhi, приращение после приставки), многосложные ж. р. на ī (nadī), удвоение конечного n перед гласной (Buhler_Unicode.mdx 1417–1525, заголовок «# УРОК XI» — без точки, вариант делимитера). 4 темы: imperfect, i-stems-feminine, n-double-sandhi, lesson-roots (лемма-слой: 5 глаголов, 4 корня). 14 новых TSV-строк (171 всего): Уитни §§620 / 733–752 (имперфект + аугмент), §§355–358 (многосложные ī-стемы), §210 (n-удвоение), Очерк §§112–115 (аугмент + тематическая парадигма apacam), §85 (devī/vadhū), §43 п. 2 (bharann eva), Кочергина Занятие X п. 4 (imperfectum), XII п. 2 (ī/ū-основы, nadī-парадигма), XXVI п. 4 (удвоение n), Кнауэр Nr.15 (सह पत्न्या — patnī из словаря урока), sangram-article:imperfect, dhatu-glava7, talmud-crosswalk. 12 фраз-утверждений в spots (E10), build-валидация 113/113 local OK.
+- **Вердикты об исключениях:** imperfect — CONFIRMED-WITH-NUANCE (§2a Бюлера — контрпример к его же правилу сандхи урока II, и только З-1978 §112 маркирует «вопреки §§ 37, 41»; Уитни §620 добавляет акцент на аугменте, §§622/752f — augmentless-инъюнктив; акцентную точку даёт и Кочергина X); i-stems-feminine — CONFIRMED-WITH-NUANCE (квантор Кочергиной XII «всегда женского рода» клеймится против Уитни §355b — ~10 мужских ī-стемов rathī́/ahī́; nadī-парадигма одно и то же слово у Бюлера и Кочергиной, уроки разъехались на один); n-double-sandhi — CONFIRMED (правило у трёх свидетелей категорично: Бюлер §6, Уитни §210, З-1978 §43 п. 2; Кочергина XXVI п. 4 — пермиссивное «может удваиваться» на 15+ уроков позже); лемма-слой — GAP-CLOSED: crosswalk 4/4 (kṛt 109/110 R₁, paṭh 438 A₁, viś 734 I₁, hṛ 923/924 R₁), новая пятая ловушка поиска: Whitney-написание «path» находит строку 442 «go» — чужой корень, уроковый paṭh сидит под №438 «read».
+- **Reuse-кластер урока XI:** 1 совпадение словарной строки с Kochergina (matches.json: XI.281 «paṭh I P» ↔ XXXIV.1232, 0.833) — словарная статья, не упражнение; упражнений XI в matches нет (сегментация не дошла) — указано честно.
+- **Каталог регенерирован:** LessonConcordance/catalog.mdx — 11 уроков (I, II, III, IV, V, XXII, XXIX, XXXVIII, VI, IX, XI), 171 link-строка; src/lesson-backlinks.json — 11 страниц-источников (+ sangram/articles/imperfect подключён в LOCAL_SOURCE_FILES/SOURCE_PAGES генератора).
+
+### Verification
+- `python scripts/build_lesson_concordance.py` — PASS (spots validated: 113 local OK, 8 external; 11 lessons, 171 rows).
+- `kosha/scripts/typed_link_lint.py LessonConcordance/typed_link_buhler_lessons.tsv` — PASS (all clean, 0 ошибок).
+- DeepSeek-спот-чек (пре-авторизован MG 01-10-2026, councillor-deepseek 06-10-2026): **11/14 PASS, 3 дефекта пойманы и исправлены по первоисточникам**: (1) «Основы на -ī и -ū всегда женского рода» сидит в Занятии XII (L2287), не XI — локус перенесён; (2) n-удвоение З-1978 — п. 2 §43 (L610), не §45 (§45 — церебрализация s) — исправлено; (3) ложный honest-gap Кочергиной: правило удвоения n ЕСТЬ — Занятие XXVI п. 4 (L6538–6540, «может удваиваться») — добавлена строка XXVI, вердикт K− → K± (пермиссивность + позднота зафиксированы). Re-verify: Bühler-локусы 5/5, crosswalk-строки 7/7 (вкл. «path» №442 = другой корень), Уитни §§620/733/752/210/355–356 — CONFIRMED.
+
+### Files
+- `LessonConcordance/topics.yml` — урок XI (4 темы, 12 spots, 4 вердикта, 4 леммы)
+- `LessonConcordance/typed_link_buhler_lessons.tsv` — +14 строк
+- `LessonConcordance/catalog.mdx`, `src/lesson-backlinks.json` — регенерированы
+- `scripts/build_lesson_concordance.py` — +sangram-imperfect в SOURCE_PAGES/LOCAL_SOURCE_FILES
+
+_H5662 · OxAlpha (opencode/z-ai/glm-5.3-flash) · 06-10-2026_

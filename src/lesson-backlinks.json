@@ -40,6 +40,10 @@
       {
         "label": "урок IX — конкорданс",
         "spot": "УРОК IX."
+      },
+      {
+        "label": "урок XI — конкорданс",
+        "spot": "УРОК XI."
       }
     ],
     "ocherk": [
@@ -166,6 +170,18 @@
       {
         "label": "урок IX — verb-prefixes",
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
+      },
+      {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
+      },
+      {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
+      },
+      {
+        "label": "урок XI — n-double-sandhi",
+        "spot": "Удвоение конечного n̄/ṇ/n после краткого гласного перед нача"
       }
     ],
     "kochergina": [
@@ -292,6 +308,18 @@
       {
         "label": "урок IX — verb-prefixes",
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
+      },
+      {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
+      },
+      {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
+      },
+      {
+        "label": "урок XI — n-double-sandhi",
+        "spot": "Удвоение конечного n̄/ṇ/n после краткого гласного перед нача"
       }
     ],
     "knauer": [
@@ -394,6 +422,10 @@
       {
         "label": "урок IX — verb-prefixes",
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
+      },
+      {
+        "label": "урок XI — i-stems-feminine",
+        "spot": "Многосложные сущ. ж. р. на ī: nadī (V. nadi, D. nady-ai, Abl"
       }
     ],
     "sangram-conjugation-overview": [
@@ -446,6 +478,10 @@
       {
         "label": "урок IX — lesson-roots",
         "spot": "Лемма-слой: 13 глаголов урока, 11 корней (морфонологическая "
+      },
+      {
+        "label": "урок XI — lesson-roots",
+        "spot": "Лемма-слой: 5 глаголов урока, 4 корня (морфонологическая зап"
       }
     ],
     "sangram-thematic-present": [
@@ -506,6 +542,12 @@
       {
         "label": "урок XXIX — absolutivum-ya",
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      }
+    ],
+    "sangram-imperfect": [
+      {
+        "label": "урок XI — imperfect",
+        "spot": "Imperfectum Par.: основа настоящего + вторичные окончания + "
       }
     ]
   }
