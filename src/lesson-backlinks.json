@@ -50,6 +50,10 @@
         "spot": "УРОК XIII."
       },
       {
+        "label": "урок XIV — конкорданс",
+        "spot": "УРОК XIV."
+      },
+      {
         "label": "урок XII — конкорданс",
         "spot": "УРОК XII."
       }
@@ -190,6 +194,22 @@
       {
         "label": "урок IX — verb-prefixes",
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
+      },
+      {
+        "label": "урок XIV — imperative-parasmaipada",
+        "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
+      },
+      {
+        "label": "урок XIV — u-stems-fem",
+        "spot": "Многосложные сущ. ж. р. на ū: vadhū «женщина» (V. vadhu, Acc"
+      },
+      {
+        "label": "урок XIV — u-stems-root-nouns",
+        "spot": "Односложные сущ. ж. р. на ū — корневое склонение: bhū «земля"
+      },
+      {
+        "label": "урок XIV — imperative-semantics",
+        "spot": "Значения императива: 2–3 л. «большей частью» приказание, 1 л"
       },
       {
         "label": "урок XII — i-stems-fem",
@@ -354,6 +374,22 @@
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
       },
       {
+        "label": "урок XIV — imperative-parasmaipada",
+        "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
+      },
+      {
+        "label": "урок XIV — imperative-parasmaipada",
+        "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
+      },
+      {
+        "label": "урок XIV — u-stems-fem",
+        "spot": "Многосложные сущ. ж. р. на ū: vadhū «женщина» (V. vadhu, Acc"
+      },
+      {
+        "label": "урок XIV — imperative-semantics",
+        "spot": "Значения императива: 2–3 л. «большей частью» приказание, 1 л"
+      },
+      {
         "label": "урок XII — i-stems-fem",
         "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
       },
@@ -484,6 +520,18 @@
         "spot": "Превербы перед глаголами: ava вниз, ud вверх, upa к/при/окол"
       },
       {
+        "label": "урок XIV — imperative-parasmaipada",
+        "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
+      },
+      {
+        "label": "урок XIV — imperative-parasmaipada",
+        "spot": "Imperativus Parasmaipada: от основы наст. вр., окончания «от"
+      },
+      {
+        "label": "урок XIV — u-stems-fem",
+        "spot": "Многосложные сущ. ж. р. на ū: vadhū «женщина» (V. vadhu, Acc"
+      },
+      {
         "label": "урок XII — i-stems-fem",
         "spot": "Существительные ж. р. на i: mati «мнение» (D. matay-e / maty"
       },
@@ -564,6 +612,10 @@
         "spot": "Лемма-слой: 13 глаголов урока, 11 корней (морфонологическая "
       },
       {
+        "label": "урок XIV — lesson-roots",
+        "spot": "Лемма-слой: 8 глаголов, 7 корней (морфонологическая запись)"
+      },
+      {
         "label": "урок XII — lesson-roots",
         "spot": "Лемма-слой: 3 глагола урока, 3 корня (морфонологическая запи"
       },
@@ -642,6 +694,12 @@
       {
         "label": "урок XXIX — absolutivum-ya",
         "spot": "Absolutivum на -ya/-tya: приставочные корни, guṇa ā-корней, "
+      }
+    ],
+    "sangram-imperative-optative": [
+      {
+        "label": "урок XIV — imperative-semantics",
+        "spot": "Значения императива: 2–3 л. «большей частью» приказание, 1 л"
       }
     ]
   }
