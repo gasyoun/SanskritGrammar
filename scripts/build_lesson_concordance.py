@@ -51,6 +51,7 @@ SOURCE_PAGES = {
     "sangram-absolutive": "sangram/articles/absolutive",
     "sangram-consonant-stems": "sangram/articles/consonant-stems",
     "sangram-imperfect": "sangram/articles/imperfect",
+    "sangram-imperative-optative": "sangram/articles/imperative-optative",
     "buhler": "BuhlerLeitfaden_1923/Buhler_Unicode",
 }
 
@@ -114,6 +115,7 @@ LOCAL_SOURCE_FILES = {
     "sangram-absolutive": "sangram/articles/absolutive/index.mdx",
     "sangram-consonant-stems": "sangram/articles/consonant-stems/index.mdx",
     "sangram-imperfect": "sangram/articles/imperfect/index.mdx",
+    "sangram-imperative-optative": "sangram/articles/imperative-optative/index.mdx",
 }
 
 
