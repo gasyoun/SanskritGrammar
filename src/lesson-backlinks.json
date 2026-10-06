@@ -68,6 +68,10 @@
       {
         "label": "урок XVII — конкорданс",
         "spot": "УРОК XVII."
+      },
+      {
+        "label": "урок XVIII — конкорданс",
+        "spot": "УРОК XVIII."
       }
     ],
     "ocherk": [
@@ -294,6 +298,14 @@
       {
         "label": "урок XVII — aiu-root-nouns",
         "spot": "Корневые основы на ā, ī, ū (последний слог — неизмененный гл"
+      },
+      {
+        "label": "урок XVIII — causative",
+        "spot": "Каузатив: paya к корням на ā/двугласные (jñāpayati, dāpayati"
+      },
+      {
+        "label": "урок XVIII — first-person-pronoun",
+        "spot": "Местоимение 1-го лица: основы mad/asmad (aham/āvām/vayam; ma"
       }
     ],
     "kochergina": [
@@ -492,6 +504,18 @@
       {
         "label": "урок XVII — aiu-root-nouns",
         "spot": "Корневые основы на ā, ī, ū (последний слог — неизмененный гл"
+      },
+      {
+        "label": "урок XVIII — causative",
+        "spot": "Каузатив: paya к корням на ā/двугласные (jñāpayati, dāpayati"
+      },
+      {
+        "label": "урок XVIII — causative-passive-syntax",
+        "spot": "Каузатив-пассив (ya, суффикс aya отбрасывается: jñāpyate, pā"
+      },
+      {
+        "label": "урок XVIII — first-person-pronoun",
+        "spot": "Местоимение 1-го лица: основы mad/asmad (aham/āvām/vayam; ma"
       }
     ],
     "knauer": [
@@ -666,6 +690,14 @@
       {
         "label": "урок XVII — aiu-root-nouns",
         "spot": "Корневые основы на ā, ī, ū (последний слог — неизмененный гл"
+      },
+      {
+        "label": "урок XVIII — causative",
+        "spot": "Каузатив: paya к корням на ā/двугласные (jñāpayati, dāpayati"
+      },
+      {
+        "label": "урок XVIII — causative-passive-syntax",
+        "spot": "Каузатив-пассив (ya, суффикс aya отбрасывается: jñāpyate, pā"
       }
     ],
     "sangram-conjugation-overview": [
@@ -746,6 +778,10 @@
       {
         "label": "урок XVII — lesson-roots",
         "spot": "Лемма-слой: 5 глаголов урока (prati-īkṣ, abhi-nand I U., ram"
+      },
+      {
+        "label": "урок XVIII — lesson-roots",
+        "spot": "Лемма-слой: 13 корней урока (14 глагольных строк — pra-sthā "
       }
     ],
     "sangram-thematic-present": [
@@ -846,6 +882,24 @@
       {
         "label": "урок XVII — optative-atmanepada",
         "spot": "Optativus Ātmanepada (Medium): признак ī (e), окончания импе"
+      }
+    ],
+    "sangram-causative": [
+      {
+        "label": "урок XVIII — causative",
+        "spot": "Каузатив: paya к корням на ā/двугласные (jñāpayati, dāpayati"
+      }
+    ],
+    "sangram-passive": [
+      {
+        "label": "урок XVIII — causative-passive-syntax",
+        "spot": "Каузатив-пассив (ya, суффикс aya отбрасывается: jñāpyate, pā"
+      }
+    ],
+    "sangram-pronouns": [
+      {
+        "label": "урок XVIII — first-person-pronoun",
+        "spot": "Местоимение 1-го лица: основы mad/asmad (aham/āvām/vayam; ma"
       }
     ]
   }
