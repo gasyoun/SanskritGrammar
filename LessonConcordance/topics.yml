@@ -916,3 +916,100 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (R₁/A₁/I₁) в индексе Очерка — единственный источник с морфонологической записью"
           kochergina: "K: класс даётся при глаголе; словарная строка «paṭh I P» совпадает с Кочергиной XXXIV (matches.json 0.833), записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 4/4 корней урока — контраст: урок I 10/13, II 10/11, III 10/12, XXXVIII 5/7; две ловушки поиска в четырёх корнях (kart→kṛt, har→hṛ) + новая пятая: paṭh сидит под «paṭh» (438 «read»), а Whitney-написание «path» даёт чужой корень 442 «go»; 3 из 5 глаголов урока превербные (ava-kart, upa-viś, pra-viś, ā-har — 4) — мост к превербной линии уроков IX/XXXVIII"
+  XIII:
+    title: "Imperfectum Ātmanepada (Medium); односложные ж. р. на ī (dhī); превербы второй волны (ati, adhi, anu, api, abhi, ni, prati, vi); сандхи s после приставок"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 1652–1800 (заголовок «# УРОК XIII.»)"
+    claims: [HB-123, HB-124, HB-125]
+    reuse_clusters:
+      - "4 точных совпадения предложений урока (scripts/data/matches.json): buhler-1923.XIII.304 «लोभात्क्रोधः प्रभवति…» ↔ kochergina-1998.IX.115 и XIII.305 «लोभान्मोहश्च नाशश्च…» ↔ kochergina-1998.IX.116 — стих урока целиком совпадает со стихами Занятия IX Кочергиной (оба score 1.0); buhler-1923.XIII.310 «पद्मं श्रिया वसतिः» ↔ kochergina-1998.XIV.287 и ↔ knauer-1908.3.61 (оба 1.0)"
+    corpus_layer: []     # corpus_layer.tsv: поурочные регистры начинаются с XVIII, у урока XIII строк нет
+    topics:
+      - key: imperfect-atmanepada
+        title: "Imperfectum Ātmanepada (Medium): аугмент a- + основа наст. вр. + вторичные окончания Ātm.; Passivum в имперфекте имеет окончания среднего залога"
+        buhler_locus: "урок XIII, §1 и парадигма a-labhe (a+i) / a-labh-ā-vahi / a-labh-ā-mahi / a-labh-a-thāḥ (s) / a-labh-a-dhvam (mdx 1654–1666)"
+        topic_claims: [HB-123]
+        # E10: spot = фраза-утверждение в источнике (не номер параграфа);
+        # whitney — внешний якорь Wikisource, валидация локальных фраз — на build (E12).
+        spots:
+          "zalizniak-1978-sec:112": "Во всех формах имперфекта, аориста и кондиционалиса имеется префикс a-, называемый аугментом (или приращением)"
+          "zalizniak-1978-sec:115": "Основа (оканчивающаяся на a) одинакова во всех формах"
+          "kochergina-lesson:X": "Для образования imperfectum к основе настоящего времени прибавляются"
+          "sangram-article:imperfect": "аугмент a- + презентная основа + вторичные окончания"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — парадигма чистая; 2.sg a-labh-a-thāḥ (s) подано без комментария (HB-123 note: хедж «большей частью видоизменениями» точен — ta~te, anta~ante прозрачны, -thāḥ менее); Passivum-оговорка в одну строку без форм"
+          whitney: "W+ — §620: аугмент + guṇa в 3 л. sg. act. атематических (ā́yam, ádveṣam) со средними парадигмами (ā́si/ā́svahi/ā́smahi); §621a: us вместо an в 3 pl. act. у корней на ā; систематика вторичных окончаний, которой у Бюлера нет"
+          zalizniak-1978: "Z+ — §112: аугмент общий для имперфекта/аориста/кондиционалиса + сандхи аугмента (a + i(ī), u(ū), ṛ → ai, au, ār «вопреки §§ 37, 41»); §115: полная тематическая система с impf.-строками, включая средний залог (apace/apacāvahi/apacāmahi)"
+          kochergina: "K+ — Занятие X: «вторичные личные окончания» + аугмент с ударением; префиксальные глаголы: аугмент между префиксом и основой (sam-a-gacchat, vyávardhata — прямой мост к превербной зоне урока XIII)"
+        notes: "Упражнения урока плотно имперфектные: пассивные (adhy-aṣṭhīyata «повозка управлялась», ajāyanta «родились») + Ātm. 3 du. atyakrametām — первая реализация §1; З-1978 §115 — единственный свидетель со средним залогом impf. тематических таблично; sangram: имперфект — единственный претерит, размеченный DCS отдельно (Tense=Impf, 46 695 токенов, 94 % — 3-е лицо: нарративное прошедшее)"
+      - key: i-stems-root-nouns
+        title: "Односложные сущ. ж. р. на ī — корневое склонение: dhī (Acc. dhiy-am, D. dhiy-e/dhiy-ai, Abl. dhiy-aḥ/dhiy-āḥ, G.du. dhiy-oḥ, G.pl. dhī-n-ām/dhiy-ām, L. dhiy-i/dhiy-ām, L.pl. dhī-ṣu); dhī, śrī, hrī в словаре урока"
+        buhler_locus: "урок XIII, §2 (mdx 1668–1691); словарные строки dhī, śrī, hrī (mdx 1753, 1775, 1781)"
+        topic_claims: []
+        spots:
+          "zalizniak-1978-sec:98": "Образцы: dhī- (f)"
+          "knauer-fraza:Nr.5": "puruṣaṁ çriyaḥ sadā niṣevante"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — двойные окончания (dhiy-e/dhiy-ai, dhiy-aḥ/dhiy-āḥ, dhī-n-ām/dhiy-ām) поданы в таблице без квантора; N./V. sg. в таблице не заполнены (dhīḥ подразумевается)"
+          whitney: "W+ — §351: полные парадигмы jā/dhī/bhū с той же двойственностью (dhiyé, dhiyā́í; dhiyás, dhiyā́s; dhiyā́m, dhīnā́m); §351a (про jā): расширение до восьми падежей «rather arbitrarily extended from the four cases which actually occur»; §352: деление iy~y в композитах"
+          zalizniak-1978: "Z+ — §98 «Корневые имена на ī, ū»: образцы dhī-, bhū-; сандхи §55 п. 2 (dhiy-i при dhī-ḥ); «в части форм имеются параллельные окончания по образцу некорневых имен на ī, ū (§85)» — тот же факт двойных окончаний; strī- как особый случай в хвосте §98"
+          kochergina: "K−/honest gap — односложные корневые ī-основы (dhī/śrī/hrī) отдельным занятием не выделяются; i-основы Занятия XII покрывают только некорневые (nadī-тип)"
+        notes: "Кнауэр Nr.5.7 «dhīmantaṁ puruṣaṁ çriyaḥ sadā niṣevante» — тот же сентенс, что в стихе урока XIII (धीरं पुरुषं श्रियः सदा निषेवन्ते; dhīmant~dhīra варьирование): производное на dhī- + Gen. от śrī в одной строке; стихи лобха-шлоки урока уже зарегистрированы как reuse-кластеры (K.IX.115/116, K.XIV.287, Knauer Nr.3.61)"
+      - key: verb-prefixes
+        title: "Превербы второй волны: ati пере-, за, из; adhi над, на; anu около, за; api/pi на, к; abhi при, к, против; ni вниз, на, в; prati обратно, против, напротив; vi от"
+        buhler_locus: "урок XIII, §3 (mdx 1693); 11 из 14 глаголов урока превербные"
+        topic_claims: []
+        spots:
+          "zalizniak-1978-sec:212": "Таковы превербы в самостоятельном употреблении"
+          "kochergina-lesson:XXXIX": "Примерно третья часть глаголов санскрита"
+          "knauer-fraza:Nr.15": "karmāṇy anuṣṭhāya yajñān iṣṭvā"
+          "sangram-article:preverbs": "Топ-упасарги (по токенам)"
+        exceptions:
+          verdict: "NOT-APPLICABLE (словообразование, не парадигма)"
+          buhler: "B: восемь приставок второй волны списком со значениями; семантические сдвиги показаны словарём (ni-sev «обслуживать, населять», vi-naś «исчезать», pra-bhū «возникать, властвовать»)"
+          whitney: "W: §§1076–1087 — инвентарь ~22 упасаргов; комбинаторика корень+преверб §§1086+ (двойные приставки)"
+          zalizniak-1978: "Z: превербы не предмет отдельного § Очерка; §212 — рамка «предлоги развиты в санскрите слабо» + anu/prati как наречия-предлоги"
+          kochergina: "K: Занятие XXXIX — префиксальное словообразование; «в контактном положении к корню всегда будут стоять ā, ni, pra, parā, sam», дистактно — «самые молодые» anu, apa, abhi, nis, pari, prati"
+        notes: "D13-ключ переиспользован с урока IX (там первая волна ava/ud/upa/niḥ/parā); sangram preverbs: 369 870 глагольных токенов (36,7 % всех глаголов) — преверб-леммы; из восьми приставок урока три — в топ-8 DCS: vi 40 856, ni 20 423, abhi 17 824; Кнауэр Nr.15.1: adhītya (adhi-), pariṇīya (pari-), anuṣṭhāya (anu-) — три преверба в одном предложении"
+      - key: s-retroflex-preverbs
+        title: "Сандхи s после приставок: после приставок на i/u и после nis (niḥ) начальный s многих корней → ṣ, st/sth → ṣṭ/ṣṭh (niṣad, pariṣic, pratiṣidh); конечный s приставок на -is/-us перед k/kh/p/ph → ṣ (niṣpadyate)"
+        buhler_locus: "урок XIII, §4 а–б (mdx 1695–1703)"
+        topic_claims: [HB-124, HB-125]
+        spots:
+          "zalizniak-1978-sec:45": "ni + sīdati → niṣīdati"
+          "knauer-fraza:Nr.14": "sainyena saha niṣkrāntaḥ"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B± — честный лексический квантор «многих глагольных корней» (HB-124 note: vi-sṛp → visarpati с сохранённым s — нативная традиция списков, Pāṇini 8.3.63ff.); списков корней при правиле нет"
+          whitney: "W+ — §180: правило по контексту (любой гласный кроме a/ā, а также k, r); §182–183: объём и пределы; §184: внутренние комбинации — систематическое покрытие всей зоны ṣ"
+          zalizniak-1978: "Z+ — §45: церебрализация «не вполне регулярно — после преверба», st/sth в тех же условиях → ṣṭ/ṣṭh; примеры ni + sīdati → niṣīdati, tri + stubh- → triṣṭubh- — «не вполне регулярно» точнее бюлеровского «многих»"
+          kochergina: "K−/honest gap — отдельного правила s→ṣ после приставок нет (Занятие XXXIX покрывает словообразовательную сторону; внутренние сандхи префиксов не вынесены в правило)"
+        notes: "Кнауэр Nr.14.4 niṣkrāntaḥ (nis+kram перед k — §4б дословно) и Nr.15.1 anuṣṭhāya (anu+sthā → anuṣṭhā- — §4а на sth); HB-124 verified TRUE: «многих» — точный квантор против списочной традиции"
+      - key: lesson-roots
+        title: "Лемма-слой: 14 глаголов урока (13 корней, морфонологическая запись)"
+        buhler_locus: "урок XIII, список «Глаголы:» (mdx 1705–1733); атрибуции классов — ati-kram IV (с двойным чтением I P./I Ā., kramate), nis-pad IV Ā., rac X P., prati-sidh I P., sam-nah IV P."
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: kram,  gloss: "пере-/проходить, переступать (ati-)", z1975: "M₁ (conf medium)", z1978: "M₂", crosswalk: "yes (ряд сменился: M₁ → M₂)"}
+          - {root: sthā,  gloss: "стоять (adhi-)",                     z1975: "A₂ (conf medium)", z1978: "A₂", crosswalk: "yes"}
+          - {root: jan,   gloss: "рождать(ся), возникать (ud-, pra-)", z1975: "N₁ (conf medium)", z1978: "N₂", crosswalk: "yes (ряд сменился: N₁ → N₂)"}
+          - {root: sev,   gloss: "обслуживать, населять (ni-)",        z1975: "I₁ (conf low)",    z1978: "A₂", crosswalk: "yes (ряд сменился + defective в 1978)"}
+          - {root: pad,   gloss: "исходить, происходить (nis-)",       z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes (defective)"}
+          - {root: dhā,   gloss: "класть, покрывать (api-)",           z1975: "A₂ (conf medium, омонимы W393/394)", z1978: "A₂", crosswalk: "yes (омонимы ×2)"}
+          - {root: bhāṣ,  gloss: "отвечать (prati-)",                  z1975: "A₂ (conf medium)", z1978: "A₂", crosswalk: "yes (defective)"}
+          - {root: sidh,  gloss: "удерживать, запрещать (prati-)",     z1975: "I₁ (conf high, омонимы W842/843)", z1978: "I₁", crosswalk: "yes (defective, омонимы ×2)"}
+          - {root: han,   gloss: "препятствовать, повреждать (prati-)", z1975: "N₁ (conf medium)", z1978: "N₁", crosswalk: "yes"}
+          - {root: bhū,   gloss: "возникать, властвовать (pra-)",      z1975: "U₂ (conf high)",   z1978: "U₂", crosswalk: "yes"}
+          - {root: rac,   gloss: "составлять, сочинять (X P.)",        z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes (defective)"}
+          - {root: naś,   gloss: "исчезать, гибнуть (vi-)",            z1975: "A₁ (conf medium, омонимы W418/419)", z1978: "A₁", crosswalk: "yes (defective, омонимы ×2)"}
+          - {root: nah,   gloss: "опоясывать, снаряжать (sam-)",       z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes (defective)"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: класс/залог проставлены лишь у 5 из 14 глаголов (ati-kram IV + двойное чтение, nis-pad IV Ā., rac X P., prati-sidh I P., sam-nah IV P.), морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате WhitneyRoots; в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды (M₂/N₂/A₂/I₁/U₁/A₁) в crosswalk-индексе; смена ряда 1975→1978 видна прямо в реестре (kram M₁→M₂, jan N₁→N₂, sev I₁→A₂)"
+          kochergina: "K: класс даётся при глаголе (IV, Ā); записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/13 корней урока — впервые полный тон (у I — 10/13, у IX — 9/11); ловушки поиска: naś — гомонимия «perish ~ bind» (W418/419), sidh — «hold back ~ perish» (W842/843), pad — совпадение с сущ. pada; IV-атрибуции Бюлера (ati-kram, nis-pad, sam-nah) согласуются с crosswalk-рядами"
