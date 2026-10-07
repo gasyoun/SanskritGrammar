@@ -7,7 +7,7 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 
 Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) и каждой темы внутри него — соответствующий локус в остальных оцифрованных источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md). Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»); карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).
 
-*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII** — остальные по мере batch-минта (E8: каркас на 48).*
+*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **X** — остальные по мере batch-минта (E8: каркас на 48).*
 
 ## Урок I — Present indicativus I класса (тематические a-основы); висарга-saṃdhi
 
@@ -2267,6 +2267,138 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 *Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 12/13 корней урока — i отсутствует (пробел реестра, как у XXXVIII); ЛОВУШКИ НАПИСАНИЯ (новый для конкорданса слой): три из 13 корней сидят в реестре под слабой ступенью при Бюлеровой гуна-форме (dṛś/darś, mṛ/mar, vṛdh/vardh) — школьная линия записывает корни ступенью презенса; mṛ: поиск по mar мимо, но vadh «slay» есть — ложное покрытие (обратная ловушка урока IV: sarj-«creak»); pṝ из §3г-исключения (конечное ṛ долгое → vṛddhi; метка § поправлена по находке спот-чека DeepSeek 06-10: у Бюлера ряды а–г, ряда «д» нет) в реестре под написаниями pyā/prā («fill», fluctuating A₂), поиск по pṝ пуст; mar→mṛ отождествление — по гуна-паттерну того же урока (§3б: «vṛdh расти, vardhayati») + crosswalk mṛ gloss die «caus. убивать» = каузатив от «die» (спот-чек 06-10: вне выдержек не верифицируется, основание зафиксировано здесь); corpus_layer.tsv урока — 5 каузативных основ (kāray/darśay/sthāpay/śrāvay/pūray), регистр впервые на том же слое деривации, что урок: pūray — корпусное доказательство исключения HB-142
 
 *Регистр утверждений урока:* [HB-136](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2382), [HB-137](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2396), [HB-138](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2410), [HB-139](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2425), [HB-140](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2440), [HB-141](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2455), [HB-142](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2469), [HB-143](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2487), [HB-144](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2502)
+
+## Урок X — Страдательный залог (ya, Ātm. окончания); морфонология корня перед ya — ī-список, u-замена v-корней, двойные основы khan/tan; пассивная конструкция (agent в Instr., безличный пассив)
+
+*Локус текста:* BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 1301–1416 (заголовок «# УРОК X.»)
+
+### Страдательный залог: суффикс ya присоединяется к корню, личные окончания Ātm.; X класс отбрасывает aya, сохраняя основу перед ya (labhyate, coryate, tāḍyate)
+
+*Бюлер:* урок X, §1 (mdx 1303–1307): «Образуется при помощи суффикса ya, присоединяющегося непосредственно к глагольному корню, и принимает личные окончатя Ātm.»
+
+*Темы урока (1/4):* **passive** · [passive-exceptions](#:~:text=%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20ya%3A%20i%2Fu%E2%86%92%C4%AB%2F%C5%AB%20%28j%C4%AB) · [passive-syntax](#:~:text=%D0%9F%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%3A%20agent%20%D0%B2%20Instr.%20%28%C2%AB) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2020%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 768–774](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#768>) | 0.97 | 2 |
+| Зализняк, Очерк 1978 | [§§ 160](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9F%D0%B0%D1%81%D1%81%D0%B8%D0%B2%20%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%20%D0%BD%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%20%D0%BE%D1%82%20%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D1%85%20%D1%84%D0%BE%D1%80%D0%BC%20act.%20%D0%B8%20med) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XXIV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B%20%D1%81%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B7%D0%B0%D0%BB%D0%BE%D0%B3%D0%B0%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%82%D1%81%D1%8F%20%D0%BF%D1%80%D0%B8%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%20%D0%BA%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D0%B5%20%D0%BF%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D1%85%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D0%B9%20%C4%80tmanepada) | 0.97 | 4 |
+| Кнауэр, Frazy 1908 | [Nr.16](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E0%A4%98%E0%A4%9F%E0%A5%8C%20%E0%A4%98%E0%A5%83%E0%A4%A4%E0%A5%87%E0%A4%A8%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A5%87%E0%A4%A4%E0%A5%87) | 0.9 | 7 |
+| Sangram | [passive](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/passive#:~:text=%D1%81%D0%BB%D0%B0%D0%B1%D0%B0%D1%8F%20%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD%D1%8C%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8F%20%2B%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%20-ya-%20%2B%20%D0%BC%D0%B5%D0%B4%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5) | 0.9 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B± — правило дано чисто, одним абзацем (X класс отбрасывает aya — единственное «исключение» урока встроено в само правило); историческая мотивировка (совпадение с IV классом) не затронута
+- **whitney**: W+ — §768: пассив «used only in a passive sense», срединные окончания; §606 IX: пассив — единственный класс с «a specific meaning», образуемый от всех переходных глаголов; акцентная ступень корня §769 — системный аппарат, которого у Бюлера нет
+- **zalizniak-1978**: Z± — §160: «Пассив морфологически независим от соответствующих форм act. и med» + Примечание: в ведийском пассив отличался от med. IV класса ударением (pacyáte пассив vs pácyate med.) — омонимия-исключение, которой у Бюлера нет вовсе; у Бюлера «X кл. отбрасывает aya» — та же мысль без ударения и без IV класса
+- **kochergina**: K+ — Занятие XXIV: то же правило + парадигмальное расширение (dīyáte/ádīyata/dīyásva/dīyèta — «такими же способами, как… в Ātmanepada»), Бюлер парадигмы не даёт
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-110](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1993) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Sangram SG-MO-027: пассив 29 699 финитных токенов (5,7 %) + 7 002 причастных, нативно размечен (Voice=Pass); граница EM1 — основа -ya- формально совпадает с презенсом IV класса (divādi), разделены только тегом залога — та же омонимия, что в Примечании З-1978 §160
+
+### Морфонология корня перед ya: i/u→ī/ū (jīyate, stūyate), ṛ→ri/ar (kriyate, smaryate), ṝ→īr/ūr (tīryate, pūryate), ai/o→ā (dhyāyate); ī-список десяти корней (gīyate, dīyate…); носовой исчезает (badhyate); v→u (ucyate), ya→i (ijyate), r→ṛ (gṛhyate); двойные основы khan/tan/jan (khanyate~khāyate, janyate~jāyate); śī→śayyate
+
+*Бюлер:* урок X, §§2–5 (mdx 1309–1327): пять рядов изменений конечного гласного (§2а–д), удлинение корней на v/r (§3), исчезновение носового (§4), ряд нерегулярных замен (§5)
+
+*Темы урока (2/4):* [passive](#:~:text=%D0%A1%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BB%D0%BE%D0%B3%3A%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%20ya%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8) · **passive-exceptions** · [passive-syntax](#:~:text=%D0%9F%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%3A%20agent%20%D0%B2%20Instr.%20%28%C2%AB) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2020%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 769–772](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#769>) | 0.97 | 4 |
+| Зализняк, Очерк 1978 | [§§ 55](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9F%D0%B5%D1%80%D0%B5%D0%B4%20y%20%28%D0%BD%D0%BE%20%D0%BD%D0%B5%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%BE%D0%BC%20%D0%BE%D0%BF%D1%82%D0%B0%D1%82%D0%B8%D0%B2%D0%B0) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XXIV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%BE%D1%82%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20%D0%BD%D0%B0%20-an%20%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D1%83%D1%8E%D1%82%D1%81%D1%8F%20%D0%B4%D0%B2%D0%B5%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BF%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0) | 0.9 | 2 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — плотнейший исключительный слой конкорданса после уроков I–II: пять рядов §2 (а: i/u→ī/ū; б: ṛ→ri/ar; в: ṝ→īr/ūr; г: ai/o→ā; д: ī-список ДЕСЯТИ корней gai/dā/do/dhā/dhe/pā/mā/sthā/so/hā), §3 div→dīvyate, §4 носовой исчезает «часто», §5 ряд замен: v→u в шести корнях (vac/vad/vap/vas/vah/svap), ya→i (yaj), r→ṛ (grah/prach), hve→hū, śās→śiṣ, двойные основы khan/jan/tan (khanyate или khāyate…), śī→śayyate
+- **whitney**: W+ — §§769–770 те же изменения по классам; §770 держит тот же ī-десяток (gai/dā/do/dhā/dhe/pā/mā/sthā/so/hā, HB-18 TRUE по §770); §772 tan/khan образуют пассивы от параллельных ā-корней (tāyáte, khāyáte) — точно §5 Бюлера; ПЛЮС корни, которых у Бюлера нет: §766 jṛ/tṛ→jīrya/tīrya, §767 vyadh→vidh (vídhyate) — свидетелский список шире урокового
+- **zalizniak-1978**: Z± — §55 п.4 покрывает i→ī/u→ū/r→ri(-после двух согласных ar) с примерами jī-yate, sthī-yate, çrū-yate, kri-yate, gam-yate, han-yate — то же правило, но ī-списка десяти корней как отдельного ряда в Очерке нет (дифтонги ai/o→ā и u-замена v-корней не собраны); зато §160-примеры дают dīyate, hūyate, badhyate, а Примечание §160 — ведийское ударение pacyáte/pácyate
+- **kochergina**: K+ — Занятие XXIV: те же ряды i/u→ī/ū, ṛ→ri/ar + «от корней на -an образуются две основы пассива: jan→janyá-/jāyá-, tan→tanyá-/tāyá-» (параллель §5 Бюлера) + «Заметьте: div→dīvyá-, śās→śiṣyá-» (§3/§5); ī-десятка у Кочергиной нет
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-111](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2010), [HB-112](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2024), [HB-113](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2039), [HB-114](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2053), [HB-18](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L438), [HB-115](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2067), [HB-116](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2081), [HB-117](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2095) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Гипотеза МГ подтверждена на всех академических свидетелях, кроме частичного З-1978 (правило §55 п.4 без ī-реестра, но с ведийской омонимией §160); ЛОВУШКА par/p᝻: Бюлер пишет «par — наполнять» и §2в «p᝻, pūryate» — корень p᝻ (pūrayate), в crosswalk сидит как p᝻ «fill» (wno 469, R₁/R₁), поиск по «par» пуст — та же ловушка, что задокументирована уроком VII (H5658: par/p᝻↔p᝻ «pass»)
+
+### Пассивная конструкция: agent в Instr. («действующее лицо стоит в Instr.»), объект в Nom.; личный пассив при переходных + безличный при непереходных; частотность (HB-19: DCS-2021 презенсный пассив 24 949 токенов = 3,19 % глагольных, PPP ещё 29,8 %)
+
+*Бюлер:* урок X, §6 (mdx 1329–1331) и упражнения (санскритский блок 1407–1413, русские переводы 1415–1416: «Приятно (1, In. от sukha) спится (3) (в) тени (2)» — безличный súpyate)
+
+*Темы урока (3/4):* [passive](#:~:text=%D0%A1%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BB%D0%BE%D0%B3%3A%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%20ya%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8) · [passive-exceptions](#:~:text=%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20ya%3A%20i%2Fu%E2%86%92%C4%AB%2F%C5%AB%20%28j%C4%AB) · **passive-syntax** · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2020%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%2C%20%D0%BC%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 768–774](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#768>) | 0.9 | 1 |
+| Apte 1885 (синтаксис) | [§ 28](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/) | 0.85 | 1 |
+| Apte 1885 (синтаксис) | [§ 50](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/) | 0.85 | 1 |
+| Кочергина 1998 | [Занятие XXIV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%92%20%D1%81%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D1%82%D0%B5%20%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%83%D0%BF%D0%BE%D1%82%D1%80%D0%B5%D0%B1%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D1%81%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%20%D0%B7%D0%B0%D0%BB%D0%BE%D0%B3%D0%B5%20%D0%B8%20%D0%BD%D0%B5%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2) | 0.9 | 2 |
+| Sangram | [passive](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/passive#:~:text=%D0%B1%D0%B5%D0%B7%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D0%BD%D0%BE%D0%B3%D0%BE%2C%20%D0%B1%D0%B5%D0%B7%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B± — конструкция дана одной фразой («Действующее лицо (или вещь) стоит в Instr.»), но безличный пассив честно упомянут и УПРАЖНЯЕТСЯ: «Приятно спится» (súpyate) в русском упражнении; без дву-дополненных пассивов и без частотной рамки
+- **whitney**: W+ — §§768–774: пассив не только конструкция, но и словообразовательный канал (§773 mriyáte/dhriyáte как transfer-passives, §774 переход в класс ya-непереходных); систематические оговорки о сохранении активных значений; HB-19 TRUE по DCS (24 949 финитных презенсных)
+- **zalizniak-1978**: Z± — §160 морфологическая сторона («морфологически независим от act. и med»); синтаксис конструкции (agent в Instr., объект в Nom.) на этом локусе Очерк не даёт — падежная семантика творительного не привлекается
+- **kochergina**: K+ — Занятие XXIV полнее Бюлера по конструкции: «действующее лицо передается формой I., объект действия передается формой N., а глагол согласуется с объектом в лице и числе» + разбор nṛpeṇārayo 'jīyanta + «безличный пассив» отдельным пунктом («всегда 3 л. sg.: bhūyate, sthīyáte, gamyáte, supyáte»)
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-19](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L453) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Apte §28 — объект ставится в Nom «за исключением пассивных конструкций» (haris sevate vs hariṃ sevate); Apte §50 — творительный: «означает деятеля и инструмент или средство»; sangram SG-MO-027: профиль безагентной книжной речи — 3-е лицо 98,1 %, презенс 92,6 %, во главе verba dicendi (ucyate «говорится» #1); Кнауэр Nr.16 упражняет тот же слой (7 exact-совпадений)
+
+### Лемма-слой: 20 глаголов урока, морфонологическая запись; пассивные формы как маркер ряда
+
+*Бюлер:* урок X, список «Глаголы:» (mdx 1333–1388)
+
+*Темы урока (4/4):* [passive](#:~:text=%D0%A1%D1%82%D1%80%D0%B0%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B7%D0%B0%D0%BB%D0%BE%D0%B3%3A%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%20ya%20%D0%BF%D1%80%D0%B8%D1%81%D0%BE%D0%B5%D0%B4%D0%B8) · [passive-exceptions](#:~:text=%D0%9C%D0%BE%D1%80%D1%84%D0%BE%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20ya%3A%20i%2Fu%E2%86%92%C4%AB%2F%C5%AB%20%28j%C4%AB) · [passive-syntax](#:~:text=%D0%9F%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%BA%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F%3A%20agent%20%D0%B2%20Instr.%20%28%C2%AB) · **lesson-roots**
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Гасунс, Dhātu 2014 | [glava7-ukazatel-zaliznyaka](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/glava7_ukazatel-zaliznyaka#:~:text=%D0%98%D0%B4%D0%B5%D1%8F%20%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%20%D0%B8%20%D0%BC%D0%BE%D1%89%D0%BD%D0%B0) | 0.85 | 20 |
+| Толчельников 2026 (morphoclass) | [morphoclass-crosswalk-1975-2014-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) | 0.8 | — |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **GAP-DOCUMENTED**
+
+- **buhler**: B: корни даны списком без морфонологической записи (унаследованные метки I., P. у части); пассивные формы §2–5 — единственный морфонологический слой урока
+- **whitney**: W: классы/ряды в root-аппарате WhitneyRoots; уроковых корней без классов
+- **zalizniak-1978**: Z: §55 п.4 и §160 дают запись через ряды; при корнях урока записи нет — crosswalk-индекс
+- **kochergina**: K: класс при глаголе (I., P. в списке урока), записи нет — её нет ни у кого, кроме Зализняков (МГ, 02-10)
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* [crosswalk 1975↔2014↔2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
+
+| Корень | Глосса | З-1975 | З-1978 | crosswalk |
+|---|---|---|---|---|
+| kar | делать | R₁ (derivation R₁) | R₁ | yes («make», wno 106); рядом scatter/commemorate R₂ — кар-корень в R-ряду, не в A: сюрприз для студента, идущего от школьных меток класса |
+| khan | копать | N₁ (z-series N2) | N₂ | yes («dig», wno 157); двойные пассивные основы khanyate~khāyate (§5) — о ко-ряде, §66-list |
+| gā | петь | A₂ (вторая строка реестра wno 177 с z-series I2) | A₂ | yes («sing», wno 177, две строки: A2 и I2 — расхождение 1975-приписок, обе → A₂ 1978); рядом go wno 176 |
+| grah | брать, схватывать | ? | ? | NO — строки в реестре нет (пассив gṛhyate §5: r→ṛ); известный пробел |
+| daṃś | кусать (daśati) | A₁ | A₁ | yes («bite», wno 335); пассив daśyate (§4: носовой исчез) |
+| dy | резать (dā/do, dyati) | ? | ? | NO — строки dy в реестре нет; ЛОВУШКА ОМОНИМИИ: Бюлерова запись «dā/do» провоцирует поиск dā «давать» (wno 349, A₂/A₂) — «резать» это dy (dyati), гомоним с давать не связан |
+| dhā | ставить, класть | A₂ | A₂ | yes («put», wno 393); пассив dhīyate (ī-список §2д) |
+| dhe | сосать, пить | A₂ (омоним dhā) | A₂ | yes («suck», wno 394 — омоним dhā «put»); пассив dhīyate — та же форма, что у dhā |
+| dhyā | думать (dhyā/dhyai) | A₂ | A₂ | yes («think», wno 405); пассив dhyāyate (§2г: ai→ā) |
+| p᝻ | наполнять (par) | R₁ | R₁ | yes («fill», wno 469); Бюлер пишет «par», §2в «p᝻, pūryate» — поиск по «par» пуст (ловушка урока VII) |
+| bandh | вязать | A₁ (z-series N1) | N₁ | yes («bind», wno 494); пассив badhyate (§4: носовой исчез) — N-основа badhnāti |
+| mā | мерить | A₂ | A₂ | yes («measure», wno 548); пассив mīyate (ī-список §2д) |
+| vac | говорить | A₁ | A₁ | yes («speak», wno 699); пассив ucyate (§5: v→u) — пример №1 sangram-статьи |
+| vap | сеять | A₁ | A₁ | yes («strew», wno 708; рядом shear 709) |
+| śās | наказывать, повелевать | A₂ | A₂ | yes («order», wno 780); пассив śiṣyate (§5: śās→śiṣ) |
+| śru | слышать | U₁ | U₁ | yes («hear», wno 815); пассив çrūyate (§2а: u→ū; §55 п.4 З-1978) |
+| stu | прославлять | ? | ? | NO — известный пробел реестра (как stu урока XXXVIII, i урока XVIII); пассив stūyate (§2а) |
+| svap | спать | A₁ | A₁ | yes («sleep», wno 903); пассив supyate (§5: v→u) — безличное «Приятно спится» в упражнениях |
+| hā | оставлять, пренебрегать | A₂ | A₂ | yes («leave», wno 911; рядом go forth 912); пассив hīyate (ī-список §2д) |
+| hve | призывать (ā-hvā) | ? | ? | NO — строки hve/hvā в реестре нет; пассив hūyate (§5: hve→hū) — пример §160 Очерка |
+
+*Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 16/20 глаголов урока; пробелы: grah, stu (известный), dy «резать», hve/ā-hvā; ЛОВУШКА ОМОНИМИИ dā/do: Бюлерова запись «dā/do I., P.(dyati) — резать» читается как dā «давать» (wno 349) — на деле корень dy (dyati), реестровая строка отсутствует; ЛОВУШКА par/p᝻ — та же, что урок VII (H5658); двойные основы §5 (khan/tan/jan) ложатся на N-ряд реестра (§66-list)
+
+*Регистр утверждений урока:* [HB-18](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L438), [HB-19](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L453), [HB-110](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1993), [HB-111](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2010), [HB-112](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2024), [HB-113](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2039), [HB-114](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2053), [HB-115](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2067), [HB-116](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2081), [HB-117](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2095)
 
 
 <small style={{color: "var(--ifm-color-emphasis-600)"}}>Сгенерировано <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py">scripts/build_lesson_concordance.py</a> из <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml">topics.yml</a> + <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv">typed_link_buhler_lessons.tsv</a> — не редактировать руками; перегенерация: <code>python3 scripts/build_lesson_concordance.py</code>. Ссылки локусов ведут на точное место источника с подсветкой (:~:text-фрагмент, Chrome/Firefox/Safari 18.2+).</small>
