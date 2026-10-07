@@ -7,7 +7,7 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 
 Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) и каждой темы внутри него — соответствующий локус в остальных оцифрованных источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md). Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»); карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).
 
-*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII** — остальные по мере batch-минта (E8: каркас на 48).*
+*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **VII** — остальные по мере batch-минта (E8: каркас на 48).*
 
 ## Урок I — Present indicativus I класса (тематические a-основы); висарга-saṃdhi
 
@@ -2267,6 +2267,103 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 *Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 12/13 корней урока — i отсутствует (пробел реестра, как у XXXVIII); ЛОВУШКИ НАПИСАНИЯ (новый для конкорданса слой): три из 13 корней сидят в реестре под слабой ступенью при Бюлеровой гуна-форме (dṛś/darś, mṛ/mar, vṛdh/vardh) — школьная линия записывает корни ступенью презенса; mṛ: поиск по mar мимо, но vadh «slay» есть — ложное покрытие (обратная ловушка урока IV: sarj-«creak»); pṝ из §3г-исключения (конечное ṛ долгое → vṛddhi; метка § поправлена по находке спот-чека DeepSeek 06-10: у Бюлера ряды а–г, ряда «д» нет) в реестре под написаниями pyā/prā («fill», fluctuating A₂), поиск по pṝ пуст; mar→mṛ отождествление — по гуна-паттерну того же урока (§3б: «vṛdh расти, vardhayati») + crosswalk mṛ gloss die «caus. убивать» = каузатив от «die» (спот-чек 06-10: вне выдержек не верифицируется, основание зафиксировано здесь); corpus_layer.tsv урока — 5 каузативных основ (kāray/darśay/sthāpay/śrāvay/pūray), регистр впервые на том же слое деривации, что урок: pūray — корпусное доказательство исключения HB-142
 
 *Регистр утверждений урока:* [HB-136](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2382), [HB-137](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2396), [HB-138](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2410), [HB-139](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2425), [HB-140](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2440), [HB-141](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2455), [HB-142](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2469), [HB-143](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2487), [HB-144](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2502)
+
+## Урок VII — Глаголы X класса (aya-основы: guṇa предпоследнего краткого, удлинение a, vṛddhi финали); правила sandhi конечного t
+
+*Локус текста:* BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 924–1023 (заголовок «# УРОК VII.»)
+
+### X класс: корни вставляют aya перед личными окончаниями (pīḍaya); предпоследний i/u/ṛ/ḷ → guṇa (cur→coraya), краткое a большей частью удлиняется (kṣal→kṣālaya), финальный гласный → vṛddhi с āy/āv (jri→jrāyaya, dhū→dhāvaya, pṝ→pāraya)
+
+*Бюлер:* урок VII, §§1–2 (mdx 926–934): §1 aya-инfix (pīḍ, pīḍāyami/pīḍayasi/pīḍayati); §2а guṇa предпоследнего краткого i/u/ṛ/ḷ (cur, coraya); §2б «удлиняют его большей частью» (kṣal, kṣālaya); §2в vṛddhi финали (ai вместо i/ī, au вместо u/ū, ār вместо ṛ/ṝ) со стяжением ai/au → āy/āv перед aya
+
+*Темы урока (1/3):* **present-class-x** · [t-sandhi](#:~:text=Sandhi%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20t%3A%20%E2%86%92%20d%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%B8) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2011%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%2810%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 775–779](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#775>) | 0.97 | 4 |
+| Зализняк, Очерк 1978 | [§§ 168](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%A2%D0%B0%D0%BA%D0%BE%D0%B2%D1%8B%2C%20%D0%BD%D0%B0%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%2C%20corayati) | 0.97 | 3 |
+| Кочергина 1998 | [Занятие XV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%B2%D0%B5%D1%81%D1%8C%20X%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%20%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20cur%C4%81di) | 0.97 | 3 |
+| Кнауэр, Frazy 1908 | [Nr.5](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E0%A4%85%E0%A4%A6%E0%A5%8D%E0%A4%AD%E0%A4%BF%E0%A4%83%20%E0%A4%AA%E0%A4%BE%E0%A4%A6%E0%A5%8C%20%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%B2%E0%A4%AF%E0%A4%A4%E0%A4%BF) | 0.85 | 1 |
+| Sangram | [causative](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/causative#:~:text=%D0%BA%D0%B0%D1%83%D0%B7%D0%B0%D1%82%D0%B8%D0%B2%20%D0%BD%D0%B0%20-aya-%20%D1%81%D0%BE%D0%B2%D0%BF%D0%B0%D0%B4%D0%B0%D0%B5%D1%82%20%D1%81%20%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%BC%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%81%D0%BE%D0%BC) | 0.9 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE (на этом локусе)**
+
+- **buhler**: B± — трёхступенчатая морфонология основы с честной оговоркой «большей частью» (§2б, HB-94: короткое a удлиняется в дефолте, набор исключений закрытый лексический); при этом нерасчленённо: не сказано, что gaṇayati из собственного словаря урока — из числа не-удлиняющих (HB-94 note), и не выделены долгие ī/ū-корни (pīḍ → pīḍaya без изменения — §2а касается только КРАТКИХ; HB-92 note: правило дефиниционное, исключительного класса нет); имени curādi у Бюлера нет
+- **whitney**: W+ — §607: класс-знак áya прибавляется к УСИЛЕННОМУ корню (coráya от √cur), полное лечение класса — в гл. XIV §§1041–1052 (подтипы ступеней i/u/ṛ/ḷ §§1045b, 1049–1050 — тот же аппарат, что у каузатива, урок XVIII); §775 — презентный локус класса X в главе системы презенса (реестр HB-92: §§607, 775)
+- **zalizniak-1978**: Z+ — §168 «Так наз. глаголы X класса»: корайти-набор урока назван дословно — corayati *крадёт*, kṣalayati *стирает, моет*, pīḍayati *давит, мучит* (√cur, √kṣal, √pīḍ); переворот перспективы: X класс = каузативы без противопоставленного первичного глагола, в индийской традиции — среди первичных с формулой «корень + aya», в словарях — корнем, а не основой; §168 final: в X класс входят и деноминативы на aya (= daṇḍa-строка словаря урока)
+- **kochergina**: K+ — Занятие XV (первое главное спряжение = I, VI, IV и X классы): «Основа настоящего времени глаголов X класса образуется путём прибавления к корню глагола суффикса -aya. Ударение постоянно на -áya»; guṇa-набор шире Бюлерова §2а перечня формулировкой «ī̆, u, ṛ, ḷ, оканчивающиеся на одну согласную» (cur→coráya-); имя curādi дано
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-92](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1723), [HB-93](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1737), [HB-94](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1751), [HB-95](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1765) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Бюлер VII и З-1978 §168 перекрываются лексически: все три корня-примера §§1–2 Бюлера (pīḍ из §1; cur из §2а, kṣal из §2б) стоят в §168 с glossами (четыре §2в-корня jri/dhū/gṛ/pṝ в §168 не названы); sangram SG-MO-028: класс-X (-ay) бакет DCS 55 376 токенов слит с каузативами (примесь ~18–20%), граница EM5 — та же, на которой стоит урок XVIII; Кнауэр Nr.5: аят-форма kṣālayati (кнопка §2б урока — корень словаря Бюлера), примечание Кнауэра разбирает её как kṣal по §126+§183 своего аппарата
+
+### Sandhi конечного t: → d перед гласными и звонкими (meghād atra); полная ассимиляция перед c/ch/j/jh/ṭ/ṭh/ḍ/ḍh/l (meghāc ca, pāpāl lokam); перед ś → c, ś обычно → ch (nṛpāc chatruḥ); перед носовыми обычно → n, возможно d (gṛhān nayati)
+
+*Бюлер:* урок VII, §3 (mdx 936–950): а) t→d перед гласными и звонкими g,gh,d,dh,b,bh,y,r,v,h; б) ассимиляция перед c/ch→c, j/jh→j, ṭ/ṭh→ṭ, ḍ/ḍh→ḍ, l→l; в) перед ś t→c, «ś обычно в ch»; г) «перед носовыми t обычно превращается в n … однако он может превратиться и в d»
+
+*Темы урока (2/3):* [present-class-x](#:~:text=X%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B8%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%82%20aya%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B) · **t-sandhi** · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2011%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%2810%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 159–163](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_III#159>) | 0.97 | 4 |
+| Зализняк, Очерк 1978 | [§§ 43](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9A%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B5%20k%2C%20%E1%B9%AD%2C%20t%2C%20p%20%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D1%87%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D1%8F%D0%BA%D0%B8%D0%BC%20%D0%B7%D0%B2%D1%83%D0%BA%D0%BE%D0%BC%2C%20%D0%BA%D1%80%D0%BE%D0%BC%D0%B5%20%D0%B3%D0%BB%D1%83%D1%85%D0%B8%D1%85%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85) | 0.9 | 3 |
+| Кочергина 1998 | [Занятие V](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%A8%D1%83%D0%BC%D0%BD%D1%8B%D0%B9%20%D0%B3%D0%BB%D1%83%D1%85%D0%BE%D0%B9%20t%20%D0%BF%D0%BE%D0%B4%D0%B2%D0%B5%D1%80%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%BD%D0%B5%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%B0%D1%81%D1%81%D0%B8%D0%BC%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D0%B8) | 0.97 | 2 |
+| Кнауэр, Frazy 1908 | [Nr.11](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=gr%C4%81m%C4%81d%20%C4%81y%C4%81ti%20gop%C4%81lasya%20putra%E1%B8%A5) | 0.85 | 2 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — четыре подправила с двумя честными оговорками («обычно» перед ś — HB-97; «обычно» →n перед носовыми с вариантом d — HB-98; обе опциональности совпадают с Уитни, вердикты TRUE); пропущено только факультативное d+h→ddh — Бюлер сам приходит к нему позже (урок XXIV, HB-12 note)
+- **whitney**: W+ — §§159–163 покрывают ровно карту урока: §159 регрессивная ассимиляция глухих со звонкими (t→d перед гласными и звонкими), §161 перед носовой — «озвончение ИЛИ носовая своего ряда» (tan nāma / tad nāma — та же двузначность, что §3г), §162 перед l полное l (tál labhate), §163 перед h → d с факультативным dh (tád hí / tád dhí — урок XXIV-овская опция); палатальная/ретрофлексная ассимиляция §3б — §§218–221 (палатальный аппарат)
+- **zalizniak-1978**: Z+ — §43.1 одним предложением: «Конечные k, ṭ, t, p озвончаются перед всяким звуком, кроме глухих согласных; сверх того, t уподобляется … l, c, ch, j, jh, ṭ, ṭh, ḍ, ḍh; сочетание t + ç дает cch (допустимо также cç)» — cç-вариант = Бюлеров nṛpāc çatruḥ; носовой-вариант с ТЕМ ЖЕ примером, что §3г: gṛhāt me → gṛhān me (реже gṛhād me)
+- **kochergina**: K+ — Занятие V: правила дословной параллелью — «Шумный глухой t подвергается неполной регрессивной ассимиляции … перед y, r, v и перед гласными, изменяясь в звонкий d» (=§3а) и «полной регрессивной ассимиляции перед шумными (глухими и звонкими) палатального и церебрального рядов и перед сонорным l» (=§3б); плюс упражнение V: «объяснив встречающиеся sandhi конечного t» (āsīdrājā)
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-12](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L344), [HB-96](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1780), [HB-97](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1795), [HB-98](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1809) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Первый «согласный» сандхи-урок Бюлера после гласных (II, IX) и visarga (I, V): матрица сандхи-серии замыкается — на конкордансе виден темп школьной линии: Кочергина даёт t-сандхи уже в Занятии V, Бюлер — в VII; Кнауэр Nr.11 носит пару ablativ-столкновений урока: grāmād āyāti (= jalād bhavati §3а) и caurād bibheti (चौराद्बिभेति, §3а перед b); упражнение Бюлера целиком построено на аблативных -āt-столкновениях (meghād/pāpād/jalād/gṛhān/nṛpāc) — учебная ценность: тетрадные примеры трёх свидетелей взаимозаменяемы
+
+### Лемма-слой: 11 глаголов урока (10 корней X класса + ā-nī I класса), морфонологическая запись; ловушки написания par/pṝ и daṇḍ-деноминатив
+
+*Бюлер:* урок VII, список «Глаголы:» (mdx 952–974): kṣal, cur, tul, taḍ, gaṇ (gaṇaya-), kath (kathaya-), daṇḍ, pīḍ, par, pūj — все X; ā-nī I
+
+*Темы урока (3/3):* [present-class-x](#:~:text=X%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B8%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%82%20aya%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B) · [t-sandhi](#:~:text=Sandhi%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20t%3A%20%E2%86%92%20d%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%B8) · **lesson-roots**
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Гасунс, Dhātu 2014 | [glava7-ukazatel-zaliznyaka](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/glava7_ukazatel-zaliznyaka#:~:text=%D0%98%D0%B4%D0%B5%D1%8F%20%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%20%D0%B8%20%D0%BC%D0%BE%D1%89%D0%BD%D0%B0) | 0.8 | 11 |
+| Толчельников 2026 (morphoclass) | [morphoclass-crosswalk-1975-2014-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) | 0.8 | 9 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **GAP-DOCUMENTED**
+
+- **buhler**: B: морфонологической записи нет; основы при трёх глаголах даны в скобках (gaṇaya-, kathaya-) — редкая школьная подсказка не-гуна основы; daṇḍ в списке корней без пометы деноминатива
+- **whitney**: W: классы — в root-аппарате WhitneyRoots; урок корней не классифицирует
+- **zalizniak-1978**: Z: запись через ряды (§§65–67); X класс в §168 прямо объявлен словарём корней, а не основ — реестр-модель соответствует
+- **kochergina**: K: класс при глаголе (X-набор Занятия XV: katháya-, cintáya-, curáya-), записи нет
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* [crosswalk 1975↔2014↔2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
+
+| Корень | Глосса | З-1975 | З-1978 | crosswalk |
+|---|---|---|---|---|
+| kṣal | мыть (kṣālayati — §2б урока) | A₁ (conf medium, seṭ) | L? (basis index-unknown; открытый, дефективный) | yes (wash, wno 139) — расхождение рядов A₁↔L?, честно помечено в реестре как index-unknown |
+| cur | красть (coraya — §2а урока, guṇa u→o) | U₁ (conf high) | U₁ (closed full, §67-rule-1: закрытое краткое u — основание гуны §67-rule-1) | yes (steal, wno 232) — crosswalk-basis объясняет механизм §2а: закрытое краткое i/u + C |
+| tul | взвешивать (tolaya-) | U₁ (conf high, seṭ; две строки реестра — омоним z_url 936/446) | U₁ | yes (lift, weigh — wno 315, две физ. строки) |
+| taḍ | бить (tāḍaya- — §2б) | A₁ (conf medium, seṭ) | A₁ (closed defective) | yes (beat, wno 292) |
+| gaṇ | считать (gaṇaya- в словаре урока с основой; §2б-НЕудлиняющее — HB-94 note) | ? | ? | NO — строки gaṇ в реестре нет (пробел; поиск по gloss count пуст) |
+| kath | рассказывать, излагать (kathaya- в словаре урока) | A₁ (conf medium, seṭ) | A₁ (closed defective) | yes (talk, wno 81) |
+| daṇḍ | наказывать (деноминатив от daṇḍa «палка») | ? | ? | NO — деноминатив, в реестре корней отсутствует; З-1978 §168 final прямо относит деноминативы на aya к X классу — реестр корней их и не ловит |
+| pīḍ | мучить (pīḍaya — §1 урока; ī долгое, гуны нет — §2а только краткие) | I₂ (conf high, seṭ) | I₂ (closed defective) | yes (press, wno 460) — один из трёх корней-примеров §§1–2 Бюлера, названных в §168 З-1978 дословно (и единственный из них с рядом I₂) |
+| pṝ (par) | преодолевать (pāraya — §2в урока: финальное ṝ → vṛddhi ār) | R₁ (conf high) | R₁ (open full) | yes — под написанием pṛ hom.2 «pass» (R₁, wno 470); Бюлер пишет pṝ (вриддхи-вариант записи), поиск по pṝ мимо — ЛОВУШКА НАПИСАНИЯ урока XVIII-формата |
+| pūj | почитать (pūjaya-) | U₂ (conf high) | U₂ (closed defective) | yes (reverence, wno 466) |
+| nī (ā-nī) | приносить (с превербом ā-; I класс — единственный не-X глагол урока) | I₂ (conf high, veṭ + aniṭ пометы в колонках) | I₂ (open full) | yes (lead, wno 427, aniṭ) — урок даёт с превербом: «поиск по nī» единственный за урок попадает через превербную запись ā-nī |
+
+*Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 9/11 корней урока (8 прямых + pṛ «pass» под вриддхи-написанием); гэп 2: gaṇ (пробел реестра) и daṇḍ (деноминатив — систематически вне реестров корней, ср. i-гэп урока XVIII); ЛОВУШКА НАПИСАНИЯ: par/pṝ — Бюлерова вриддхи-запись против реестровой pṛ, отождествление по gloss «pass»/«преодолевать» + §2в примера pārayati; corpus_layer.tsv урока строк не имеет (регистр начинается с XVIII) — первый частотный слой для корней урока придёт с batch-дренажом реестра
+
+*Регистр утверждений урока:* [HB-12](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L344), [HB-92](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1723), [HB-93](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1737), [HB-94](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1751), [HB-95](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1765), [HB-96](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1780), [HB-97](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1795), [HB-98](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1809)
 
 
 <small style={{color: "var(--ifm-color-emphasis-600)"}}>Сгенерировано <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py">scripts/build_lesson_concordance.py</a> из <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml">topics.yml</a> + <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv">typed_link_buhler_lessons.tsv</a> — не редактировать руками; перегенерация: <code>python3 scripts/build_lesson_concordance.py</code>. Ссылки локусов ведут на точное место источника с подсветкой (:~:text-фрагмент, Chrome/Firefox/Safari 18.2+).</small>
