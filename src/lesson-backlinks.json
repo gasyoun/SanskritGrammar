@@ -100,6 +100,10 @@
       {
         "label": "урок XXVII — конкорданс",
         "spot": "УРОК XXVII."
+      },
+      {
+        "label": "урок XXX — конкорданс",
+        "spot": "УРОК XXX."
       }
     ],
     "ocherk": [
@@ -462,6 +466,26 @@
       {
         "label": "урок XXVII — ppp-na-exceptions",
         "spot": "na-ряд урока (ṝ/r/d-корни: tīrṇa, pūrṇa, sanna, bhinna, hīna"
+      },
+      {
+        "label": "урок XXX — infinitive-tum",
+        "spot": "Инфинитив: суффикс -tum при guṇa допускающих подъём гласных;"
+      },
+      {
+        "label": "урок XXX — infinitive-tum",
+        "spot": "Инфинитив: суффикс -tum при guṇa допускающих подъём гласных;"
+      },
+      {
+        "label": "урок XXX — infinitive-i-insertion",
+        "spot": "i-слой инфинитива: aniṭ-список (~75 корней, 5 групп, «наибол"
+      },
+      {
+        "label": "урок XXX — gerundive-inventory",
+        "spot": "Причастие долженствования: инвентарь tavya (f ā), anīya (f ā"
+      },
+      {
+        "label": "урок XXX — gerundive-ya-exceptions",
+        "spot": "Ступени герундива на -ya: конечные ā/e/ai/o → e (deya, geya,"
       }
     ],
     "kochergina": [
@@ -788,6 +812,22 @@
       {
         "label": "урок XXVII — ppp-predicative-use",
         "spot": "Пп как прилагательное и как финитный глагол (sa gataḥ «он по"
+      },
+      {
+        "label": "урок XXX — infinitive-tum",
+        "spot": "Инфинитив: суффикс -tum при guṇa допускающих подъём гласных;"
+      },
+      {
+        "label": "урок XXX — infinitive-i-insertion",
+        "spot": "i-слой инфинитива: aniṭ-список (~75 корней, 5 групп, «наибол"
+      },
+      {
+        "label": "урок XXX — gerundive-inventory",
+        "spot": "Причастие долженствования: инвентарь tavya (f ā), anīya (f ā"
+      },
+      {
+        "label": "урок XXX — gerundive-ya-exceptions",
+        "spot": "Ступени герундива на -ya: конечные ā/e/ai/o → e (deya, geya,"
       }
     ],
     "knauer": [
@@ -1042,6 +1082,10 @@
       {
         "label": "урок XXVII — ppp-ta-na",
         "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
+      },
+      {
+        "label": "урок XXX — infinitive-i-insertion",
+        "spot": "i-слой инфинитива: aniṭ-список (~75 корней, 5 групп, «наибол"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1158,6 +1202,10 @@
       {
         "label": "урок XXVII — lesson-roots",
         "spot": "Лемма-слой: 13 глаголов урока (12 корней — ava-tar/ut-tar на"
+      },
+      {
+        "label": "урок XXX — lesson-roots",
+        "spot": "Лемма-слой: 11 глаголов урока (10 корней — kṛ дважды: apā-ka"
       }
     ],
     "sangram-thematic-present": [
@@ -1326,6 +1374,18 @@
       {
         "label": "урок XXVII — ppp-ta-na",
         "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
+      }
+    ],
+    "sangram-infinitive": [
+      {
+        "label": "урок XXX — infinitive-tum",
+        "spot": "Инфинитив: суффикс -tum при guṇa допускающих подъём гласных;"
+      }
+    ],
+    "sangram-gerundive": [
+      {
+        "label": "урок XXX — gerundive-inventory",
+        "spot": "Причастие долженствования: инвентарь tavya (f ā), anīya (f ā"
       }
     ]
   }
