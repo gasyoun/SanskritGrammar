@@ -96,6 +96,10 @@
       {
         "label": "урок XXVI — конкорданс",
         "spot": "УРОК XXVI."
+      },
+      {
+        "label": "урок XXVII — конкорданс",
+        "spot": "УРОК XXVII."
       }
     ],
     "ocherk": [
@@ -438,6 +442,26 @@
       {
         "label": "урок XXVI — n-stems-irregular",
         "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
+      },
+      {
+        "label": "урок XXVII — pronoun-idam-adas",
+        "spot": "Указательные местоимения: idam (ayam/iyam — сшивка дефектных"
+      },
+      {
+        "label": "урок XXVII — pronoun-idam-adas",
+        "spot": "Указательные местоимения: idam (ayam/iyam — сшивка дефектных"
+      },
+      {
+        "label": "урок XXVII — present-middle-participle",
+        "spot": "Пассивное причастие настоящего времени на māna [māṇa], f ā ("
+      },
+      {
+        "label": "урок XXVII — ppp-ta-na",
+        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
+      },
+      {
+        "label": "урок XXVII — ppp-na-exceptions",
+        "spot": "na-ряд урока (ṝ/r/d-корни: tīrṇa, pūrṇa, sanna, bhinna, hīna"
       }
     ],
     "kochergina": [
@@ -744,6 +768,26 @@
       {
         "label": "урок XXVI — n-stems-irregular",
         "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
+      },
+      {
+        "label": "урок XXVII — pronoun-idam-adas",
+        "spot": "Указательные местоимения: idam (ayam/iyam — сшивка дефектных"
+      },
+      {
+        "label": "урок XXVII — present-middle-participle",
+        "spot": "Пассивное причастие настоящего времени на māna [māṇa], f ā ("
+      },
+      {
+        "label": "урок XXVII — ppp-ta-na",
+        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
+      },
+      {
+        "label": "урок XXVII — ppp-na-exceptions",
+        "spot": "na-ряд урока (ṝ/r/d-корни: tīrṇa, pūrṇa, sanna, bhinna, hīna"
+      },
+      {
+        "label": "урок XXVII — ppp-predicative-use",
+        "spot": "Пп как прилагательное и как финитный глагол (sa gataḥ «он по"
       }
     ],
     "knauer": [
@@ -994,6 +1038,10 @@
       {
         "label": "урок XXVI — n-stems-irregular",
         "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
+      },
+      {
+        "label": "урок XXVII — ppp-ta-na",
+        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1106,6 +1154,10 @@
       {
         "label": "урок XXVI — lesson-roots",
         "spot": "Лемма-слой: 3 глагола урока (ar с каузативом, guh с каузатив"
+      },
+      {
+        "label": "урок XXVII — lesson-roots",
+        "spot": "Лемма-слой: 13 глаголов урока (12 корней — ava-tar/ut-tar на"
       }
     ],
     "sangram-thematic-present": [
@@ -1248,18 +1300,32 @@
       {
         "label": "урок XIX — pronoun-sarva-group",
         "spot": "Sarva-группа и вариантные ряды: sarva/viśva/eka/ekatara/ubha"
+      },
+      {
+        "label": "урок XXVII — pronoun-idam-adas",
+        "spot": "Указательные местоимения: idam (ayam/iyam — сшивка дефектных"
       }
     ],
     "sangram-present-perfect-participles": [
       {
         "label": "урок XXV — vas-stems",
         "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXVII — present-middle-participle",
+        "spot": "Пассивное причастие настоящего времени на māna [māṇa], f ā ("
       }
     ],
     "sangram-declension-overview": [
       {
         "label": "урок XXVI — n-stems-irregular",
         "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
+      }
+    ],
+    "sangram-ta-na-participles": [
+      {
+        "label": "урок XXVII — ppp-ta-na",
+        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
       }
     ]
   }

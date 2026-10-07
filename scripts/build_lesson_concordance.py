@@ -120,6 +120,7 @@ LOCAL_SOURCE_FILES = {
     "sangram-passive": "sangram/articles/passive/index.mdx",
     "sangram-pronouns": "sangram/articles/pronouns/index.mdx",
     "sangram-present-perfect-participles": "sangram/articles/present-perfect-participles/index.mdx",
+    "sangram-ta-na-participles": "sangram/articles/ta-na-participles/index.mdx",
 }
 
 

@@ -2126,3 +2126,112 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (ṛ/tṛp — R₁, guh — U₁ §66); открытость ряда ṛ (§67-RMN-default) против закрытости tṛp — в реестре"
           kochergina: "K: класс даётся при глаголе (tarp — IV класс), записи нет; ar/guh в занятиях без класса"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 3/3 глаголов урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XX 2/2, XXI 6/7, XXII 1/1, XXIX 12/12, XXXVIII 5/7), но двумя ловушками написания сразу (ar→ṛ, tarp→tṛp): пара в один урок (tṝ/tṛ урока II была одиночной); оба каузатива урока (arpayati, gūhayati) — вне crosswalk-реестра (реестр — по корню, не по стему), честно"
+
+  XXVII:
+    title: "Местоимения idam/adas (+enad-замены, amī-прагритья); пассивное причастие наст. вр. на māna; причастие прош. страд. на ta/na (na-ряд, d-исключения, двойные ряды); пп как финитный глагол (sa gataḥ)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3541–3734 (заголовок «# УРОК XXVII» — без точки)"
+    claims: [HB-37, HB-38, HB-39, HB-203, HB-204, HB-205, HB-206, HB-207]
+    reuse_clusters:
+      - "4 совпадения с Knauer (scripts/data/matches.json: XXVII.603 «पथ्यस्माकं रथो भग्नः» ↔ knauer-1908.9.186 exact 1.0 И ↔ knauer-1908.18.389 exact 1.0 — одна фраза в двух уроках Кнауэра; XXVII.606 «आभिरद्भिः पाणी प्रक्षालय» ↔ knauer-1908.9.187 exact 1.0; XXVII.597 «यानि कर्माण्यस्मिँल्लोके…उपभुज्यन्ते» ↔ knauer-1908.9.185 0.986 — у Кнауэра sg उपभुज्यते против мн. ч. у Бюлера)"
+      - "1 exact-совпадение с Kochergina: XXVII.612 «sa gataḥ» ↔ kochergina-1998.XXV.625 (1.0) — собственный пример §6 урока стоит в тексте Занятия XXV Кочергиной (тема ppp-predicative-use)"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXVII нет (глагольный словарь урока — в лемма-слой)
+    topics:
+      - key: pronoun-idam-adas
+        title: "Указательные местоимения: idam (ayam/iyam — сшивка дефектных стемов a/an/ima/i), adas (asau/amū, N.pl. amī — прагритья), замены от основы enad (только Acc-серия, при уже названном)"
+        buhler_locus: "урок XXVII, §1а–б (mdx 3543–3591): полные парадигмы idam и adas; enad-оговорка «только тогда, когда то, к чему они относятся, уже раныше обозначено»; «Конечный гласный N.pl. amī не может изменяться»"
+        topic_claims: [HB-37, HB-203]
+        spots:
+          "kochergina-lesson:XXIV": "указательные местоимения ближнего плана idam"
+          "zalizniak-1978-sec:105": "Склонение основных указательных местоимений"
+          "sangram-article:pronouns": "`idam` / `etad` «этот», `adas` «оный»"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — парадигмы чистые; enad-оговорка точная (HB-37 TRUE/JUSTIFIED); HB-203 TRUE — «Конечный гласный N.pl. amī не может изменяться» подано фактом, без термина «прагритья»"
+          whitney: "W+ — §§501–503: парадигмы + §502a разбор ayám как «pieced together from a number of defective stems» (a/an/ima/i — механизма у Бюлера нет); §503: amúṣya — единственный sya вне a-стемов, N.pl. amī «its ī is pragṛhya, or exempt from combination (138 b)» — тот же факт с термином; §500: ena- дефектный безударный стем, только A. всех чисел + I.sg + G.L.du — сфера та же, что у HB-37"
+          zalizniak-1978: "Z+ — §105: полная таблица tad|idam|adas рядом (тот|этот|тот) с теми же формами (imau/ime, amū/amī, ebhyaḥ/ābhyaḥ, eṣām/āsām, amīṣām/amūṣām); §106: «ena- *он* (энклитическое местоимение, имеющее практически только формы А.)» — enad-факт одним штрихом, без скоупа Бюлера–Уитни; §107: у местоимений из § 105 основы ta-, a-, amu-"
+          kochergina: "K+ — Занятие XXIV §4: «Указательные местоимения idam и adas» — систематическое изложение с планом «ближнего/дальнего»; enad: «от которого употребляются только формы A. всех чисел, I. единственного числа и G.L. двойственного числа» — сфера шире Бюлерова на I.sg; amī-прагритья в занятиях не оговорена"
+        notes: "HB-203 (amī) — редкий случай, где один факт даёт три подачи: Бюлер — запретом без термина, Уитни — прагритья (§503 + §138b), Зализняк — фактом таблицы (N.pl m amī при n amūni); Кнауэр Nr.9-фразы посажены в ppp-тему (bhagnaḥ), не здесь — честно"
+      - key: present-middle-participle
+        title: "Пассивное причастие настоящего времени на māna [māṇa], f ā (классы I, IV, VI, X, каузативы, пассив)"
+        buhler_locus: "урок XXVII, §2 (mdx 3593): «образуется посредством māna [māṇa], f ā, приставляемого к основе настоящего времени» — примеры modamāna, mriyamāṇa, arthayamāna, kriyamāṇa"
+        topic_claims: [HB-204]
+        spots:
+          "kochergina-lesson:XXIV": "Пассивные причастия настоящего времени образуются от основы пассива прибавлением суффикса -māna"
+          "zalizniak-1978-sec:115": "| причастие | pacamāna"
+          "sangram-article:present-perfect-participles": "пассивное `-yamāna`"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-204 TRUE/JUSTIFIED: класс-скоуп точен (I, IV, VI, X + каузативы + пассив); вилка написания māna [māṇa] честная (mriyamāṇa — ṇ по ретрофлексному окружению)"
+          whitney: "W+ — §741: ant/māna к a-стему (bhávamāna) + §741a: āna-вариант (namāna, pacāna, majjāna — эпический/поздний ряд; ved. cyávāna); §767e/f: пассивное māna (kriyámāṇa) «well distinguished… by its distinctively present meaning» — контраст kṛtá «done» vs kriyámāṇa «being done»; §1043f + §775c: āna у каузативов (cintayāna)"
+          zalizniak-1978: "Z± — §115: причастие pacamāna- в парадигматической таблице тематического спряжения (строка «причастие», f -ā); пассивное -māna — примером в §38 (gṛhyamāṇa-); отдельного изложения суффикса в Очерке нет — подача через парадигму"
+          kochergina: "K+ — Занятие XXIV §3: правило + склонение по a/ā-основам (отсылки к Занятиям IX/X) + словарная строка namyamāna «почитаемый»"
+        notes: "Фрейм-расхождение свидетелей: Бюлер и Кочергина подают māna в пассивном фрейме («причастие страдательного залога», «пассивные причастия»), Уитни разделяет медий (§741) и пассив (§767); sangram present-perfect-participles (SG-MO-022): Voice=Pass -yamāna 7 002 токена, актив/медий -ant/-māna 57 207 неразделены (EM-оговорка честно)"
+      - key: ppp-ta-na
+        title: "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайшей формы корня"
+        buhler_locus: "урок XXVII, §3 (mdx 3595): «образуется посредством ta, f. ā, или na [ṇa], f. ā, от корня, принимающего обыкновенно кратчайшую форму»"
+        topic_claims: [HB-38]
+        spots:
+          "kochergina-lesson:XXV": "(participium perfecti passivi, pp.) образуется прибавлением суффиксов"
+          "zalizniak-1978-sec:162": "Их вместе называют также пассивным причастием прошедшего времени"
+          "sangram-article:ta-na-participles": "у ограниченного списка (корни на -d/-j/-r и некоторые др."
+          "knauer-fraza:Nr.9": "पथ्यस्माकं रथो भग्नः"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — HB-38 TRUE/JUSTIFIED: двух-суффиксный инвентарь ta/na + «кратчайшая форма» (слабая ступень) с честным «обыкновенно»"
+          whitney: "W+ — §952: ta «or, in a comparatively small number of verbs, na»; §953: bare root + i-оговорка; §954: слабейшая форма (drop nasal, weak-perfect abbreviation, ā→ī); §957: «about seventy» na-корней группами — весь na-список урока сидит в §957b/c"
+          zalizniak-1978: "Z+ — §162: «Причастия на -ta- и -na- (с одинаковым значением). Их вместе называют также пассивным причастием прошедшего времени, но фактически они имеют пассивное значение только у переходных глаголов»"
+          kochergina: "K+ — Занятие XXV §2: «прибавлением суффиксов -(i)ta и (реже) -na к слабому звуковому виду корня. Ударение падает на суффикс» — ударение, которого Бюлер не даёт"
+        notes: "Кнауэр Nr.9 (§§99–109) — источник 3 из 4 совпадений урока, в т.ч. «पथ्यस्माकं रथो भग्नः» — bhagnaḥ из списка §4 урока (bhañj→bhagna), exact ×2 (Nr.9.186 + Nr.18.389); sangram ta-na-participles (SG-MO-023): 219 902 токена — 64,4 % причастий, -ta/-na как 13,6:1, предикатив 57 % — частотная рамка mg_footnote HB-38 (4 385 ta / 383 na, 8 %)"
+      - key: ppp-na-exceptions
+        title: "na-ряд урока (ṝ/r/d-корни: tīrṇa, pūrṇa, sanna, bhinna, hīna, lagna, bhagna, magna, rugṇa, vigna…) + ta-исключения d-корней (jagdha, matta, udita…) + двойные ряды (ghrāta/ghrāṇa, tūrṇa/tvarita, vinna/vitta)"
+        buhler_locus: "урок XXVII, §4–5 (mdx 3597–3651): список ~19 na-пар + сноска d-исключений (ad→jagdha, khād→khadita, mad→matta, mud→mudita, rud→rudita, vad→udita, vid→vidita, svād→svādita) + §5 двойные ряды (ghrā, trai, tvar, vid)"
+        topic_claims: [HB-205, HB-206, HB-207]
+        spots:
+          "kochergina-lesson:XXV": "меняют m на n"
+          "zalizniak-1978-sec:34": "дают соответственно n, g, k"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — сам §4–5 и есть реестр исключений: ~19 na-пар + 8 ta-исключений d-корней (HB-206 TRUE) + 4 двойных ряда (HB-207 TRUE); vid встречается дважды (vid знать→vidita в сноске; vid находить→vinna/vitta в §5) — омонимия разведена самим Бюлером"
+          whitney: "W+ — §957a: na-ряд поимённо (kṣā/glā/mlā/hā hīná; kṣi kṣīṇa, ḍī, lī, pī, lū, çū) + §957b ṝ→īr/ūr (tīrṇá/tūrṇa/pūrṇá/gīrṇá/jīrṇá) + §957c j→g (bhagna/bhugna/magná/rugṇá/vigna) + lagna; §956b-3: d-корни в i-классе поимённо (mad — mattá и maditá; khād/nad/mud/rud/vad/vid) — сноска Бюлера дословно; §954e: jagdhá (ad); §957a: hā «also hīná and hāta», dā diná — двойные ряды (HB-207)"
+          zalizniak-1978: "Z± — примечания к §§34/36 п.3: «Перед суффиксом причастия -nа- (§ 162) d, j, c дают соответственно n, g, k» (chinna, vigna, akna) + п.1: majj→magna, bhṛjj→bhṛṣṭa, vṛçc→vṛkṇa; лексических списков исключений в Очерке нет — систематика вместо перечня (гипотеза МГ «у Зализняка нет» подтверждена на этом локусе)"
+          kochergina: "K± — Занятие XXV: свои оговорки рядом — m→n-ряд («Некоторые корни на -m… меняют m на n») + активное значение непереходных + сноска [^36]; na-лексического списка уровня Бюлера нет"
+        notes: "Плотнейший исключительный локус серии: ~35 форм-примеров у Бюлера против поимённых групп Уитни (§§956–957) и одного морфонологического пункта Зализняка (§§34/36 прим.)"
+      - key: ppp-predicative-use
+        title: "Пп как прилагательное и как финитный глагол (sa gataḥ «он пошел»); ср. р. = nomen actionis"
+        buhler_locus: "урок XXVII, §6 (mdx 3653): «Part. perf. pass. часто употребляется как прилагательное и часто со значением глагола (verbi finiti), напр. sa gataḥ „он пошел\". Его средн. р. — nomen actionis»"
+        topic_claims: [HB-39]
+        spots:
+          "kochergina-lesson:XXV": "как эквивалент конструкции с личной формой глагола в прошедшем времени"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-39 TRUE/JUSTIFIED: «часто» ×2 с примером; честная двойная функция (прилагательное + финитный эквивалент)"
+          whitney: "W+ — §952a: у непереходных «no passive but only an indefinite past sense: gatá gone» — семантическая основа финитного употребления; эксплицитная предикативная финитность у Уитни — на -tavat (§960 «used predicatively… with the value of a personal verb-form in a past tense»), сам PPP — через §952a без отдельного § — честный фрейм-нюанс"
+          zalizniak-1978: "Z+ — §162: «фактически они имеют пассивное значение только у переходных глаголов… Двойное значение в случаях типа gata- *ушедший, прошедший и пройденный*» — та же gata-монета, что у Бюлера"
+          kochergina: "K+ — Занятие XXV: «образования причастий на -ta и -na… от непереходных глаголов… имеют активное значение» + «сочетания причастий на -ta от непереходных глаголов с существительным в N. …как эквивалент конструкции с личной формой глагола в прошедшем времени»; собственный пример Бюлера sa gataḥ стоит в тексте Занятия (exact-совпадение XXVII.612 ↔ XXV.625)"
+        notes: "Прямое пересечение корпусов: пример §6 урока XXVII = фраза текста Занятия XXV Кочергиной; sangram ta-na-participles: предикатив 57 % (Nom.) — статистика за «часто» Бюлера"
+      - key: lesson-roots
+        title: "Лемма-слой: 13 глаголов урока (12 корней — ava-tar/ut-tar на одном tṝ) — морфонологическая запись"
+        buhler_locus: "урок XXVII, список «Глаголы:» (mdx 3655–3681)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: īkṣ (upekṣ),  gloss: "упускать, запускать (upa-īkṣ)",        z1975: "I₂ (conf high)", z1978: "I₂ (closed)", crosswalk: "yes (wno 45 «see») — ловушка префикса: Бюлер печатает upekṣ, реестр по голому корню īkṣ"}
+          - {root: gaṇ (ava-gaṇ), gloss: "презирать",                          z1975: "n/a (вне реестра)", z1978: "n/a (вне реестра)", crosswalk: "NO — gaṇ в crosswalk-реестре нет (876 строк, точное совпадение проверено) — честный пробел"}
+          - {root: car (ud-car),  gloss: "произносить (caus.)",                z1975: "A₁ (conf medium; две строки: index-unknown + z-series)", z1978: "R₂ (open)", crosswalk: "yes (wno 220 «move») — ловушка префикса"}
+          - {root: tṝ (ava-tar, ut-tar), gloss: "сходить / выходить (оба от tṝ)", z1975: "R₁ (conf high)", z1978: "R₁ (open)", crosswalk: "yes — под написанием tṛ (wno 319 «pass»): ловушка написания tṝ→tṛ (повтор урока II), ряд открытый"}
+          - {root: pi (pyai),     gloss: "жиреть (I. Ā.)",                     z1975: "I₁", z1978: "I₁", crosswalk: "yes — под написанием pi (wno 452 «swell, fatten»): третья ловушка написания урока (pyai→pi); класс Бюлера I. Ā. = I₁ реестра"}
+          - {root: bhakṣ,         gloss: "есть (X. P.)",                       z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 504 «partake of, eat») — класс у Бюлера X. P. (bhakṣayati) против A₁ реестра (класс корня) — уровень лексемы против корня, зафиксировано"}
+          - {root: bhuj (upa-bhuj), gloss: "наслаждаться",                     z1975: "U₁ (conf high; две строки-омонима: bend wno 524 / enjoy wno 525)", z1978: "U₁ (closed)", crosswalk: "yes — «наслаждаться» = hom. 2 (enjoy, wno 525)"}
+          - {root: bhū (pari-bhū), gloss: "презирать",                         z1975: "U₂ (conf high)", z1978: "U₂ (open)", crosswalk: "yes (wno 528 «be») — ловушка префикса"}
+          - {root: majj,          gloss: "погружаться (VI. P.)",               z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 539 «sink») — класс у Бюлера VI. P. против A₁ реестра — расхождение зафиксировано, не сглажено"}
+          - {root: yuj,           gloss: "запрягать (caus.)",                  z1975: "U₁ (conf high)", z1978: "U₁ (closed)", crosswalk: "yes (wno 608 «join»)"}
+          - {root: lag,           gloss: "приставать, прижиматься (I. P.)",    z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 668 «attach»)"}
+          - {root: sad,           gloss: "погибать",                           z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 830 «sit»)"}
+        exceptions:
+          verdict: "GAP-PARTIAL (на этом уроке)"
+          buhler: "B± — класс дан у 4 из 13 лексем (pyai I. Ā., bhakṣ X. P., majj VI. P., lag I. P.), у 2 — каузатив (uccar, yuj), префиксы разведены скобками (upa-īkṣ, ud-car, ava-tṝ, ud-tṝ); морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 45, 220, 319, 452, 504, 524/525, 528, 539, 608, 668, 830); na-причастия словаря урока — §§956–957"
+          zalizniak-1978: "Z: запись через ряды; открытые ряды tṝ (R₁) и bhū (U₂) против закрытых остальных; car — две строки (index-unknown + z-series R₂)"
+          kochergina: "K: класс при глаголе, записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 12/13 лексем (11 корней yes + gaṇ NO) — неполный ряд (контрасты: I 10/13, II 10/11, IV 6/6, XIX 10/10, XXVI 3/3); три ловушки написания/префикса в одном уроке (upekṣ→īkṣ, pyai→pi, tṝ→tṛ — последняя повтор урока II); классовые расхождения Бюлера с реестром (bhakṣ X↔A₁, majj VI↔A₁) зафиксированы; каузативы uccar/yuj вне реестра (реестр по стеме)"
