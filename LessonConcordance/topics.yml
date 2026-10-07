@@ -2764,3 +2764,89 @@ lessons:
       - key: lesson-roots
         title: "Лемма-слой: 12 глаголов с классом + nis- без корня и класса — морфонологическая запись"
         buhler_locus: "урок XXXV, список «Глаголы:» (mdx 5015–5039)"
+
+  XXXVI:
+    title: "Корни VIII класса (tanādi): сильн. o (перед гласными av), слаб. u→v /_V и факультативное выпадение перед m/v; парадигма kṛ (karo/kuru/kur) в четырёх наклонениях; префиксы при kṛ (saṅskṛ, prādus, āvis, tiras, puras, alam); именные глаголы с as/kṛ/bhū (cvi: svīkṛ, śucībhū, sadhūkṛ, pitrībhū)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5095–5240 (заголовок «# УРОК XXXVI.»)"
+    claims: [HB-287, HB-288, HB-289, HB-290]
+    reuse_clusters:
+      - "1 совпадение (scripts/data/matches.json): buhler-1923.XXXVI.833 ↔ knauer-1908.12.274, score 0.941 — अस्मद्यशांसि दिक्षु प्रतनुयुरिति… (Nr.12.3; у Кнауэра rājānaḥ, у Бюлера bhūbhujaḥ)"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXXVI нет (честно; соседи XXXVIII — stu/ru)
+    topics:
+      - key: class-viii-tan
+        title: "VIII класс (tanādi): знак класса o/u (сильн. o, перед гласными av; слаб. u→v /_V, перед m/v может выпадать); корни почти все на n/ṇ, спрягаются как V-классовые гласные основы; tan: tanomi/tanvanti/tanumaḥ~tanmaḥ, Ātm. tanve/tanvahe/tanmahe"
+        buhler_locus: "урок XXXVI, §1 (mdx 5097): tan-пример парадигмы P./Ātm."
+        topic_claims: [HB-287]
+        spots:
+          "kochergina-lesson:XVI": "По примеру глагола tan весь VIII класс глаголов древнеиндийские ученые назвали tanādi"
+          "knauer-fraza:Nr.12": "अस्मद्यशांसि दिक्षु प्रतनुयुरिति"
+          "zalizniak-1978-sec:135": "Основа равна корню в слабой ступени + суффикс no/nu"
+          "sangram-article:thematic-present": "делит презенс на десять классов (гана I–X)"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-287 TRUE/JUSTIFIED: знак o/u с v-переходом /_V и факультативным выпадением перед m/v — формула без исключений; факультативность честно показана двойными формами в самом примере (tanumaḥ или tanmaḥ, tanuvaḥ или tanvaḥ)"
+          whitney: "W+ — §697: u-класс = «about half-a-dozen» корней на n (kṛ — единственный не на n, отсылка на 714); §698 B: tan-парадигма дословно (tanómi/tanvás/tanmás, tanvé/tanváhe/tanmáhe); §699: ведийские акцентные варианты (tanvaté) и 3 pl. mid. -ire; §704: удержание hi (tanuhi) в RV — исключения ведийского слоя"
+          zalizniak-1978: "Z± — §135: формула no/nu общая с V классом (tano-/tanu- от √tan в примерах), VIII-статус — классификационной оговоркой: «Индийская традиция относит основы от √kar и корней на n (типа √tan) к классу VIII, прочие к классу V»; отдельного § VIII-морфонологии нет — материал сведён под V-формулу"
+          kochergina: "K+ — Занятие XVI: «Основа настоящего времени глаголов VIII класса образуется прибавлением к корню гласных u-/o-…» + имя класса tanādi + полная парадигма tan (ind./impf./imper., 3592–3692) — VIII как самостоятельный класс с полной таблицей"
+        notes: "Классификационная вилка урока: Бюлер и Кочергина держат VIII самостоятельным классом (o/u-знак), Уитни — подкласс u-class внутри nu-класса, З-1978 — V-формула no/nu с оговоркой о традиции; pratanu (प्रतनुयुरिति) в reuse-строке Nr.12 — приставка pra над корнем урока tan"
+      - key: kri-irregular
+        title: "kṛ делать: сильн. karo, слаб. kuru, обязательно kur перед m/y/v; полные парадигмы ind./impf./imper. (karomi…kurvanti, akaravam…akurvan, karavāṇi…kuru*) + Pot. par. kuryām, Ātm. kurvīya — частотнейший глагол языка с индивидуальной парадигмой"
+        buhler_locus: "урок XXXVI, §2 (mdx 5099–5149): три таблицы + Pot."
+        topic_claims: [HB-288]
+        spots:
+          "kochergina-lesson:XVII": "Парадигма спряжения глагола kar, о.н.в. karó-/kuru-"
+          "knauer-fraza:Nr.12": "devatānāṁ yathā vācyo na bhaveyaṁ tathā kuru"
+          "zalizniak-1978-sec:135": "аномальная основа karo-/kuru-, без n и с двойным чередованием"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-288 TRUE/JUSTIFIED: контраст с tan передан точно — у tan u-выпадение «может», у kṛ kur- перед m/y/v обязан (kurmaḥ, kuryām, kurvanti; *kurumaḥ не существует); таблица-двойник полного спряжения в 4 наклонениях"
+          whitney: "W+ — §714: kṛ «the only root of that class not ending in n», guṇa в сильной форме + смена kuru→kur; полная парадигма-двойник урока (все 4 наклонения); §715: RV — регулярные nu-формы kṛṇó/kṛṇu, классический язык — только u-формы (ведийское исключение)"
+          zalizniak-1978: "Z+ — §135 особый случай 1: «у kar *делать* аномальная основа karo-/kuru-, без n и с двойным чередованием» + классификация kar → VIII; отдельной полной парадигмы в Очерке нет — формула + отсылка"
+          kochergina: "K+ — Занятие XVII: «Парадигма спряжения глагола kar, о.н.в. karó-/kuru-» — полная таблица (4028+), морфонологическая запись при глаголе (редкость школьной линии)"
+        notes: "Единственный корень VIII класса не на n — все три свидетеля согласны; на живом материале Кнауэр Nr.12: imperative kuru («tathā kuru») — форма-звезда урока в упражнении; пара tan (факультатив) ↔ kṛ (обязательность) — учебный контраст"
+      - key: kri-prefixes
+        title: "Префиксы при kṛ: sam+kṛ → saṅskṛ (вставка s; «подготавливать, освящать»); квази-префиксы prādus/āvis «делать очевидным», tiras «закрывать, презирать», puras «ставить впереди», alam «украшать»"
+        buhler_locus: "урок XXXVI, §3a (mdx 5151)"
+        topic_claims: [HB-289]
+        spots:
+          "sangram-article:preverbs": "глагольная приставка, которая присоединяется к корню"
+          "knauer-fraza:Nr.12": "yuddhe çūrāḥ svaguṇān āviṣkurvantu"
+        exceptions:
+          verdict: "NOT-APPLICABLE (словообразование, не парадигма)"
+          buhler: "B: 6 квази-префиксов списком с глоссами; вставка s в sam+kṛ дана прямо в форме (saṅskṛ); второй квази-префикс урока виден и у Кнауэра — alaṁkṛta (Nr.12.6 «yajñeṣu paçūn alaṁkṛteṣu»)"
+          whitney: "W: §1077 — полные глагольные префиксы; §1078 — «more distinctly adverbial» с ограниченным употреблением (типа tiras/puraḥ/alam при kṛ); §1079 — реликтовые комбинации (çrad-dhā, hiṅ-kṛ)"
+          zalizniak-1978: "Z: превербы не предмет отдельного § Очерка; saṅskṛ-вставка s — лексикализованная морфонология, вне §135-формулы"
+          kochergina: "K: значения приставок при глаголах по ходу уроков; upasarga-обзора в XVI–XVII нет — пробел свидетеля именно на этих квази-префиксах"
+        notes: "Кнауэр Nr.12 даёт два квази-префикса урока на живом материале: āviṣkurvantu (4) и alaṁkṛteṣu (6) — ровно те, что Бюлер выписал в §3a; sangram-preverbs: sam — 3-й упасарг DCS (47 613 токенов), 369 870 преверб-глаголов"
+      - key: nominal-verbs-cvi
+        title: "Именные глаголы с as/kṛ/bhū (cvi): a/ā/an → ī (svīkṛ, bhasmīkṛ), i/u удлиняются (śucībhū, sadhūkṛ), ṛ → rī (pitrībhū); согласные основы (кроме -an) — форма перед согласным суффиксом (tiryakkṛ, tiryagbhū)"
+        buhler_locus: "урок XXXVI, §3б (mdx 5153)"
+        topic_claims: [HB-290]
+        spots:
+          "zalizniak-1978-sec:172": "i, u обычно удлиняются"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-290 TRUE/JUSTIFIED: cvi-правила точны (Пан. 5.4.50, 7.4.26–27): все три гласных сценария + согласные основы; упражнение урока само даёт cvi на живом материале — svīkuruṣva и sajjībhūya (prose, mdx 5237)"
+          whitney: "W+ — §1093: noun-stem + kṛ/bhū «begins to assume a constant ending ī» + последующее правило позднего языка (svī́, krūrī́-серия; svīkṛ́tya, brāhmaṇībhū́ya) — диахроническая глубина правила, у Бюлера только синхрония"
+          zalizniak-1978: "Z± — §172: деноминативы с -ya (duḥkhayati, namasyati); удлинение i/u упомянуто (çatrūyate), но сама cvi-конструкция с as/kṛ/bhū отдельным § не сведена — честный пробел"
+          kochergina: "K− — cvi-конструкции в занятиях отсутствуют; единственное касание деноминативов — упражнение на -āya (śabdāyate, śatrūyate, 9161) — другой механизм; самый большой пробел свидетеля на уроке"
+        notes: "Витрина темы: cvi — единственная тема урока, где Кочергина молчит полностью, а З-1978 даёт только соседний механизм (-ya); у Уитни — диахрония §1093+ против одного § у Бюлера"
+      - key: lesson-roots
+        title: "Лемма-слой: 8 глаголов урока (apa-kar, upa-kar, prati-kar, kṣaṇ, tan, ā-tan, duṣ IV P., man VIII Ā.) — 5 корней в морфонологической записи"
+        buhler_locus: "урок XXXVI, список «Глаголы:» (mdx 5155–5171)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: tan,  gloss: "растягивать, раскладывать; ā-tan — причинять", z1975: "N₁ (conf medium)", z1978: "N₁ (§135: tano-/tanu-)", crosswalk: "yes (wno 810); Бюлер «VIII U.» ↔ З-ряд N₁ (корни на n)"}
+          - {root: kṛ,   gloss: "делать; apa-/upa-/prati-kar — приставочные",  z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes (wno 106; две строки реестра, обе R₁)"}
+          - {root: kṣaṇ, gloss: "ранить",                                     z1975: "N₁ (conf medium)", z1978: "N₁", crosswalk: "yes (wno 766); Бюлер «VIII U.» ↔ З-ряд N₁"}
+          - {root: duṣ,  gloss: "быть запятнанным",                           z1975: "U₁ (conf high; две строки реестра)", z1978: "U₁", crosswalk: "yes (wno 453, 884); Бюлер «IV P.» — единственный не-VIII в списке"}
+          - {root: man,  gloss: "думать, полагать, считать",                  z1975: "N₁ (conf medium)", z1978: "N₁", crosswalk: "yes (wno 783); Бюлер «VIII Ā.» ↔ З-ряд N₁"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: 8 глаголов списком с традиционным классом (VIII U., IV P.), без морфонологической записи (школьная линия); duṣ IV P. — чужой класс среди «восьмых»"
+          whitney: "W: класс при корне в root-аппарате (kṛ §714, tan u-класс §697, duṣ dusyati-класс IV, man manyate); записи рядов нет — ряды изобретение Зализняка (МГ, 02-10)"
+          zalizniak-1978: "Z: «VIII класс» Бюлера в рядности распадается: tan/kṣan/man = N₁ (корни на n), kṛ = R₁ (аномалия karo-/kuru-, §135) — традиционная классификация, рядовая запись; duṣ = U₁"
+          kochergina: "K: класс при глаголе, у tan/kar ещё и о.н.в. (tanu-/tanó-, karó-/kuru-, XVI/XVII) — частичная запись; duṣ/man в XVI–XVII не разобраны"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/5 корней урока — полное покрытие; главная находка: все «восьмые» Бюлера на n = З-ряд N₁, kṛ = R₁, а duṣ — вовсе IV класс (ряд U₁); corpus_layer.tsv урока: строк нет"
