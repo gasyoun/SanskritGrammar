@@ -80,6 +80,10 @@
       {
         "label": "урок XIX — конкорданс",
         "spot": "УРОК XIX."
+      },
+      {
+        "label": "урок XXI — конкорданс",
+        "spot": "УРОК XXI."
       }
     ],
     "ocherk": [
@@ -354,6 +358,22 @@
       {
         "label": "урок XIX — visarga-sah-esah",
         "spot": "Висарга saḥ/eṣaḥ: исчезает перед всеми согласными и гласными"
+      },
+      {
+        "label": "урок XXI — cj-velar-stems",
+        "spot": "Велярная группа: имена на c и большая часть на j, производны"
+      },
+      {
+        "label": "урок XXI — ssh-retroflex-stems",
+        "spot": "Церебральная группа: имена на ṣ/ś и большинство на h, произв"
+      },
+      {
+        "label": "урок XXI — h-final-split",
+        "spot": "Расщепление h-корней: dah/duh/uṣṇih → k/g (kāmadhuk), druh-к"
+      },
+      {
+        "label": "урок XXI — s-retroflex-su",
+        "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
       }
     ],
     "kochergina": [
@@ -596,6 +616,18 @@
       {
         "label": "урок XIX — visarga-sah-esah",
         "spot": "Висарга saḥ/eṣaḥ: исчезает перед всеми согласными и гласными"
+      },
+      {
+        "label": "урок XXI — ssh-retroflex-stems",
+        "spot": "Церебральная группа: имена на ṣ/ś и большинство на h, произв"
+      },
+      {
+        "label": "урок XXI — h-final-split",
+        "spot": "Расщепление h-корней: dah/duh/uṣṇih → k/g (kāmadhuk), druh-к"
+      },
+      {
+        "label": "урок XXI — s-retroflex-su",
+        "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
       }
     ],
     "knauer": [
@@ -806,6 +838,14 @@
       {
         "label": "урок XIX — visarga-sah-esah",
         "spot": "Висарга saḥ/eṣaḥ: исчезает перед всеми согласными и гласными"
+      },
+      {
+        "label": "урок XXI — cj-velar-stems",
+        "spot": "Велярная группа: имена на c и большая часть на j, производны"
+      },
+      {
+        "label": "урок XXI — ssh-retroflex-stems",
+        "spot": "Церебральная группа: имена на ṣ/ś и большинство на h, произв"
       }
     ],
     "sangram-conjugation-overview": [
@@ -902,6 +942,10 @@
       {
         "label": "урок XIX — lesson-roots",
         "spot": "Лемма-слой: 10 глаголов урока (все с каузативами) — морфонол"
+      },
+      {
+        "label": "урок XXI — lesson-roots",
+        "spot": "Лемма-слой: 7 глаголов урока (3 с каузативами, 3 префиксальн"
       }
     ],
     "sangram-thematic-present": [
@@ -964,6 +1008,10 @@
       {
         "label": "урок XVI — r-stems-kinship",
         "spot": "Родство на ṛ: pitṛ, mātṛ, bhrātṛ, duhitṛ… — ṛ → guṇa (ar) в "
+      },
+      {
+        "label": "урок XXI — cj-velar-stems",
+        "spot": "Велярная группа: имена на c и большая часть на j, производны"
       }
     ],
     "sangram-absolutive": [
