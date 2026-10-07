@@ -119,6 +119,7 @@ LOCAL_SOURCE_FILES = {
     "sangram-causative": "sangram/articles/causative/index.mdx",
     "sangram-passive": "sangram/articles/passive/index.mdx",
     "sangram-pronouns": "sangram/articles/pronouns/index.mdx",
+    "sangram-present-perfect-participles": "sangram/articles/present-perfect-participles/index.mdx",
 }
 
 
