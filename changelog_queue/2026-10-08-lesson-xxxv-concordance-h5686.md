@@ -8,7 +8,7 @@ _Repo: gasyoun/SanskritGrammar · Source: LessonConcordance_ · Date: 2026-10-08
 
 ## Проверки
 
-- `python3 scripts/build_lesson_concordance.py` — PASS: spots 352 local OK / 19 external, catalog.mdx 30 уроков, 540 строк.
+- `python3 scripts/build_lesson_concordance.py` — PASS: spots 362 local OK / 19 external (после merge origin/main), catalog.mdx 31 урок (с XXXIV параллельного H5685), 559 строк.
 - `typed_link_lint.py` — PASS: all clean.
 - Свежепроцессная верификация 15/15 спот-фраз PASS + 11/11 HB + 24/24 TSV-строк (review/lesson-xxxv-concordance-h5686-spotcheck-08-10-2026.md); DeepSeek-лейн — auth-store без ключа на боксе (прецедент серии H5676/H5684) → фолбэк по прецеденту.
 
