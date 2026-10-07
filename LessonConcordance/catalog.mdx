@@ -7,7 +7,7 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 
 Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) и каждой темы внутри него — соответствующий локус в остальных оцифрованных источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md). Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»); карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).
 
-*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **VIII** — остальные по мере batch-минта (E8: каркас на 48).*
+*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **VIII**, **XIX** — остальные по мере batch-минта (E8: каркас на 48).*
 
 ## Урок I — Present indicativus I класса (тематические a-основы); висарга-saṃdhi
 
@@ -2416,6 +2416,180 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 *Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 13/15 глаголов урока (по корневой тождественности, rabh под ā-rabh, mar под mṛ); śikṣ и arth отсутствуют (как śaṃs/rakṣ/jīv урока I, hvā/sṛj урока III, śuṣ урока V, mṛg урока IX, i/stu урока XXXVIII); ловушки поиска: mar сидит под написанием mṛ с гомонимом «crush», śikṣ — ложное попадание на śās «order» (третий случай ложного покрытия после sarj/saj и śubh/subh); labh/jan — дубль-строки (артефакт реестра, как mad/vṛt); расхождение рядов kamp/vand/sev между двумя реестрами Зализняка задокументировано впервые в конкордансе
 
 *Регистр утверждений урока:* [HB-13](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L359), [HB-14](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L376), [HB-100](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1838), [HB-101](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1863), [HB-102](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1877), [HB-103](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1891), [HB-104](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1905), [HB-105](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1919), [HB-106](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1933)
+
+## Урок XIX — Местоимения: 2-е лицо (tvad, yuṣmad), 3-е лицо tad и слова, склоняющиеся как tad; sarva-группа и вариантные ряды; энклитики и pluralis reverentiae; висарга saḥ/eṣaḥ
+
+*Локус текста:* BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 2428–2582 (заголовок «# УРОК XIX.»)
+
+### Личные местоимения: 2-е лицо — основы tvad/yuṣmad; tvam/yuvām/yūyam с энклитическими вариантами в той же таблице (tvām/tvā, tubhyam/te, tava/te, yuṣmān/vaḥ)
+
+*Бюлер:* урок XIX, §1 (mdx 2430–2450): таблица е./дв./мн. ч. с вариантами в скобках
+
+*Темы урока (1/6):* **pronoun-personal** · [pronoun-tad-family](#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%203-%D0%B3%D0%BE%20%D0%BB%D0%B8%D1%86%D0%B0%20tad%20%28m%2Ff%2Fn%3A%20sa%E1%B8%A5%2Fta) · [pronoun-sarva-group](#:~:text=Sarva-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%B8%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D1%80%D1%8F%D0%B4%D1%8B%3A%20sarva%2Fvi) · [pronoun-enclitics](#:~:text=%D0%AD%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%B8%20pluralis%20reverentiae%3A%20m%C4%81%2Fme%2F) · [visarga-sah-esah](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0%20sa%E1%B8%A5%2Fe%E1%B9%A3a%E1%B8%A5%3A%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%20%D1%81) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%B2%D1%81%D0%B5%20%D1%81%20%D0%BA%D0%B0%D1%83)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 491–505](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_VII#491>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 104](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=yu%E1%B9%A3m%C4%81n%2C%20va%E1%B8%A5) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XVIII](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=tava%20G.sg.%20%D0%BE%D1%82%20tvam) | 0.9 | 1 |
+| Sangram | [pronouns](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/pronouns#:~:text=%C2%AB%D1%82%D1%8B%C2%BB%20%28%60tvad%60%2F%60yu%E1%B9%A3mad%60%29) | 0.9 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.9](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=tvad%20anyena%20kenacit%20saha) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B+ — обе серии (полные и энклитические) в одной таблице без объяснения супплетивности (yuṣmān без -ad, yuvām/yūyam без -ad) — честная таблица, механизма нет; 1-е лицо — в уроке XVIII, 2-е здесь: разделение по урокам, не по парадигме
+- **whitney**: W+ — §§491–505: те же парадигмы с фонетической мотивировкой (§491 — mad/asmad/tvad/yuṣmad-основы, §491b — энклитики безударны и не открывают фразу); ведийские и диалектные варианты по всему диапазону
+- **zalizniak-1978**: Z+ — §104: та же таблица с энклитиками в тех же позициях (tvām, tvā; yuṣmān, vaḥ); §107 — сложные основы mad/tvad/asmad/yuṣmad/tad/yad одним списком
+- **kochergina**: K+ — Занятие XVII: словарная строка tvam + энклитика vas; Занятие XVIII: aham и tvam вместе (словарь+парадигмы) — у Кочергиной оба лица в одном занятии, у Бюлера разнесены по XVIII/XIX
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Примечание:* Кнауэр Nr.9.11: «tvad anyena kenacit saha» — сложная основа tvad- (§107 З-1978) в живой фразе; sangram pronouns (SG-MO-010): местоимения — исключение из EM3-предела, медиана 12,5 клеток на лемму
+
+### Местоимение 3-го лица tad (m/f/n: saḥ/tat/sā, teṣām/tāsām…) + список склоняющихся как tad: etad, yad, anya, itara, anyatara, ekatama, katara, katama
+
+*Бюлер:* урок XIX, §§2–3 (mdx 2452–2489): парадигма tad §2; список §3 без форм
+
+*Темы урока (2/6):* [pronoun-personal](#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%202-%D0%B5%20%D0%BB%D0%B8%D1%86%D0%BE%20%E2%80%94%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20tv) · **pronoun-tad-family** · [pronoun-sarva-group](#:~:text=Sarva-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%B8%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D1%80%D1%8F%D0%B4%D1%8B%3A%20sarva%2Fvi) · [pronoun-enclitics](#:~:text=%D0%AD%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%B8%20pluralis%20reverentiae%3A%20m%C4%81%2Fme%2F) · [visarga-sah-esah](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0%20sa%E1%B8%A5%2Fe%E1%B9%A3a%E1%B8%A5%3A%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%20%D1%81) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%B2%D1%81%D0%B5%20%D1%81%20%D0%BA%D0%B0%D1%83)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 506–521](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_VII#506>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 105–106](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9E%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%20ya-%20%2A%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9%2A%20%D1%81%D0%BA%D0%BB%D0%BE%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F%20%D0%BA%D0%B0%D0%BA%20ta-) | 0.97 | 2 |
+| Кочергина 1998 | [Занятие XXV](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%20%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%2C%20%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%2C%20%D0%BD%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B8%20%D0%BF%D1%80%D0%B8%D1%82%D1%8F%D0%B6%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5) | 0.9 | 1 |
+| Sangram | [pronouns](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/pronouns#:~:text=%D0%A3%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%60tad%60%20%C2%AB%D1%82%D0%BE%D1%82%C2%BB%20%28%D0%BC%D1%83%D0%B6.%29) | 0.9 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.9](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=tad%20anyasmai%20kasmaicid%20d%C4%AByat%C4%81m) | 0.85 | 2 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B± — §3-список точен (HB-145 TRUE/JUSTIFIED: «including ekatama but omitting ekatara keeps it exactly right» — ekatara с не-местоимённым n. ekataram выведен в §4а); но форм §3 не даёт — читатель переносит парадигму §2 сам
+- **whitney**: W+ — §§506–521: парадигмы tad (и соседей idam/adas); §523: anya-группа поимённо (anya, anyatara, itara, katara, katama, ekatama + относительные yatara, yatama — список шире Бюлерова)
+- **zalizniak-1978**: Z+ — §105: парадигма ta- (saḥ, sa — то же чередование, что §2 Бюлера); §106: ya- «склоняется как ta-, но только без смены согласных в основе (и с постоянным ḥ в N.sg m)» — нюанс отсутствия смены согласных, которого у Бюлера нет; тот же список anya/anyatara/itara/katara/katama + yatara/yatama
+- **kochergina**: K+ — Занятие XVI: первые формы ta/idam в словаре (tam A.sg., asmin L.sg. от idam); Занятие XXV: относительные/вопросительные/неопределённые — систематическое изложение ya- и ka-
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-145](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2517) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Кнауэр Nr.9.4: «tad anyasmai kasmaicid dīyatām» — tad-форма и anya-форма D.sg. в одной фразе; sangram: superheavy-класс (11 из 38 местоимённых лемм DCS) с аттестацией по § 523 — механический мост к whitney-строке
+
+### Sarva-группа и вариантные ряды: sarva/viśva/eka/ekatara/ubhaya склоняются как tad, кроме N.V.Acc.sg. на -m; kim; neme/nemāḥ; adhara…sva — как sarva, но Abl./L. sg. и N. pl. могут быть по deva; ardha/alpa/katipaya/carama — по deva, но N. pl. может быть по sarva
+
+*Бюлер:* урок XIX, §4а–д (mdx 2491–2507): четыре группы слов с вариантами
+
+*Темы урока (3/6):* [pronoun-personal](#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%202-%D0%B5%20%D0%BB%D0%B8%D1%86%D0%BE%20%E2%80%94%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20tv) · [pronoun-tad-family](#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%203-%D0%B3%D0%BE%20%D0%BB%D0%B8%D1%86%D0%B0%20tad%20%28m%2Ff%2Fn%3A%20sa%E1%B8%A5%2Fta) · **pronoun-sarva-group** · [pronoun-enclitics](#:~:text=%D0%AD%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%B8%20pluralis%20reverentiae%3A%20m%C4%81%2Fme%2F) · [visarga-sah-esah](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0%20sa%E1%B8%A5%2Fe%E1%B9%A3a%E1%B8%A5%3A%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%20%D1%81) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%B2%D1%81%D0%B5%20%D1%81%20%D0%BA%D0%B0%D1%83)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 522–526](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_VII#522>) | 0.97 | 2 |
+| Зализняк, Очерк 1978 | [§§ 106](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%20sarva-%20%2A%D0%B2%D0%B5%D1%81%D1%8C%2A%3A%20N.sg%20sarva%E1%B8%A5) | 0.97 | 2 |
+| Кочергина 1998 | [Занятие XIII](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%20sarva) | 0.9 | 1 |
+| Sangram | [pronouns](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/pronouns#:~:text=%D0%B0%20%D0%BD%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D1%91%D0%BD%D0%BD%D0%BE%D0%B5%20-at) | 0.9 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.9](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=vi%C3%A7ve%20dev%C4%81s%20tv%C4%81%20rak%E1%B9%A3antu) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **PARTIAL-REFUTED (на этом локусе)**
+
+- **buhler**: B+ — сам §4 — реестр исключений и вариантов: -m в N.V.Acc.sg. (HB-28 TRUE), neme/nemāḥ (HB-147 TRUE), sarva↔deva альтернатива Abl./L./N.pl. (HB-148 TRUE), deva↔sarva альтернатива N.pl. (HB-149 TRUE), kim с kaḥ/kā/kim (HB-146 TRUE) — гипотеза «у Бюлера много» подтверждается на этом локусе
+- **whitney**: W+ — §§522–526: sarva §524 (sarvasmai/sarvasmin, N.sg sarvam — не *sarvat), anya-группа §523, para/pūrva/apara §525, ubhaya §526 — систематика той же территории (Pāṇini 1.1.33–36)
+- **zalizniak-1978**: Z+ — §106: sarva «в остальном как ya-» с последователями viçva/eka/ekatara/ubhaya (но f ubhayī-); sva- «может склоняться как sarva-, но допускает также ряд форм по § 82» (svāḥ/svasmāt/sve) с pūrva/avara/uttara/adhara/antara/dakṣiṇa/para/apara — изоморфно §4а+§4г; гипотеза «у Зализняка-1978 нет» здесь опровергнута третий раз
+- **kochergina**: K± — Занятие XIII: «Местоимение sarva» (тема есть, HB-246-территория eka — Занятие XXXI); редкие слова §4в–д (nema, ekatama, katara, katipaya) в занятиях не расписаны — фрагментарно
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-28](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L623), [HB-146](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2531), [HB-147](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2546), [HB-148](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2560), [HB-149](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2575) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Кнауэр Nr.9.5: «viçve devās tvā rakṣantu» — N.pl. viçve (не viçvāḥ) — местоимённое N.pl. sarva-группы в живой фразе; sangram: sarvam с -m (не -at) по Уитни § 524 — та же -m-оговорка, что §4а Бюлера
+
+### Энклитики и pluralis reverentiae: mā/me/nau/naḥ, tvā/te/vām/vaḥ только при предшествующем слове и без смыслового ударения; множ. ч. вместо ед. ч. 1-го и 2-го лица
+
+*Бюлер:* урок XIX, §6 (mdx 2511): позиционное условие энклитик + «часто употребляется множ. ч.»
+
+*Темы урока (4/6):* [pronoun-personal](#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%202-%D0%B5%20%D0%BB%D0%B8%D1%86%D0%BE%20%E2%80%94%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20tv) · [pronoun-tad-family](#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%203-%D0%B3%D0%BE%20%D0%BB%D0%B8%D1%86%D0%B0%20tad%20%28m%2Ff%2Fn%3A%20sa%E1%B8%A5%2Fta) · [pronoun-sarva-group](#:~:text=Sarva-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%B8%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D1%80%D1%8F%D0%B4%D1%8B%3A%20sarva%2Fvi) · **pronoun-enclitics** · [visarga-sah-esah](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0%20sa%E1%B8%A5%2Fe%E1%B9%A3a%E1%B8%A5%3A%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%20%D1%81) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%B2%D1%81%D0%B5%20%D1%81%20%D0%BA%D0%B0%D1%83)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 491–493](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_VII#491>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 227](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9D%D0%B5%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D1%81%D0%BB%D0%BE%D0%B2%D0%BE%D1%84%D0%BE%D1%80%D0%BC%20%D0%B2%D1%8B%D1%81%D1%82%D1%83%D0%BF%D0%B0%D0%B5%D1%82%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%B2%20%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%20%D1%8D%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA) | 0.97 | 1 |
+| Кочергина 1998 | [Занятие XVII](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=vas%20encl.%20A.%2C%20D.%2C%20G.%20pl.%20%D0%BE%D1%82%20tvam) | 0.75 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.9](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=vayam%20etat%20pustaka%E1%B9%81) | 0.85 | 2 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — HB-30 TRUE/JUSTIFIED: позиционное условие (не в начале фразы, без ударения по смыслу) сформулировано открыто; HB-150 TRUE/JUSTIFIED с честной немеряемой пометой «часто»
+- **whitney**: W+ — §491b: те же энклитические серии с тем же запретом (безударность, не-начало фразы); pluralis-утверждение о частоте вне акцентного аппарата Уитни — метрика не ведётся, направление uncontested
+- **zalizniak-1978**: Z+ — §227: энклитический класс целиком (частицы ca/vā/iva… + местоименные mā, me, tvā, te, naḥ, vaḥ, nau, vām + все формы ena-) + «Начальная словоформа фразы (а также стиха) никогда не бывает безударной» — систематика шире Бюлерова
+- **kochergina**: K± — энклитики только в словарных строках (Занятие XVII: «vas encl. A., D., G. pl. от tvam»), позиционного правила в занятиях нет — honest gap свидетеля
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-30](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L655), [HB-150](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2590) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Кнауэр Nr.9: «vayam etat pustakaṁ ne 'chāmas» — pl. вместо sg. 1-го лица (HB-150) в живой фразе; энклитическое tvā — Nr.9.5 «viçve devās tvā rakṣantu» (фраза посажена в sarva-тему как N.pl. viçve — двойная работа одной строки)
+
+### Висарга saḥ/eṣaḥ: исчезает перед всеми согласными и гласными, кроме краткого a (sa gacchati, so 'syati)
+
+*Бюлер:* урок XIX, §5 (mdx 2509): правило с тремя примерами, включая avagraha
+
+*Темы урока (5/6):* [pronoun-personal](#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%202-%D0%B5%20%D0%BB%D0%B8%D1%86%D0%BE%20%E2%80%94%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20tv) · [pronoun-tad-family](#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%203-%D0%B3%D0%BE%20%D0%BB%D0%B8%D1%86%D0%B0%20tad%20%28m%2Ff%2Fn%3A%20sa%E1%B8%A5%2Fta) · [pronoun-sarva-group](#:~:text=Sarva-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%B8%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D1%80%D1%8F%D0%B4%D1%8B%3A%20sarva%2Fvi) · [pronoun-enclitics](#:~:text=%D0%AD%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%B8%20pluralis%20reverentiae%3A%20m%C4%81%2Fme%2F) · **visarga-sah-esah** · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2010%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%28%D0%B2%D1%81%D0%B5%20%D1%81%20%D0%BA%D0%B0%D1%83)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 176](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_III#176>) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 44](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B9%20a%20%D0%BE%D0%BD%D0%BE%20%D1%82%D0%B0%D0%BA%D0%B6%D0%B5%20%D0%B4%D0%B0%D0%B5%D1%82%20o%2C%20%D0%BD%D0%BE%20%D1%81%D0%B0%D0%BC%D0%BE%20%D1%8D%D1%82%D0%BE%20a%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие VI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=sa%20paramadh%C4%81rmika%E1%B8%A5%20%28%D0%B8%D0%B7%20paramadh%C4%81rmikas%29) | 0.75 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.9](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=yo%20na%20ki%E1%B9%81cit%20pa%C3%A7yati) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — HB-29 TRUE/JUSTIFIED: специальный местоименный режим сформулирован открыто и честно scoped («перед…» — пауза-остаток saḥ вне контекста); правило продолжается на yaḥ/eṣaḥ implicitly через пример so 'syati
+- **whitney**: W+ — §176: тот же специальный режим saḥ/eṣaḥ поимённо; соседние §§175/177 (as→o, ās→ā) дают общий фон, на котором местоимённое правило выделяется
+- **zalizniak-1978**: Z± — §44 п.5 покрывает механизм (as→a с выпадением a перед a — avagraha), но местоимённый частный случай поимённо не выделен: в морфонологической записи I saḥ = sā+s, и частный случай растворён в общем правиле — нюанс подачи, а не пробел
+- **kochergina**: K± — Занятие VI: внешние s/r-сандхи с visarga-примером «sa paramadhārmikaḥ» (пауза-остаток при sa); специального местоименного правила (sa перед согласной — НЕ sar!) в занятиях нет, местоименные sa/eṣa формы появляются только в упражнениях читанки
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-29](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L639) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Упражнение урока работает на правиле: «स पार्थिव उच्यते» — sa перед p; exact-совпадение Nr.9.180 «…यः स मे श्रीहरिर्गतिः» — sa перед m; knauer-спот «yo na kiṁcit paçyati» — yaḥ перед n (та же серия §5 на yaḥ). Редкий случай, где школьная подача Бюлера — единственная открытая формулировка местаименного правила
+
+### Лемма-слой: 10 глаголов урока (все с каузативами) — морфонологическая запись
+
+*Бюлер:* урок XIX, список «Глаголы:» (mdx 2513–2533)
+
+*Темы урока (6/6):* [pronoun-personal](#:~:text=%D0%9B%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F%3A%202-%D0%B5%20%D0%BB%D0%B8%D1%86%D0%BE%20%E2%80%94%20%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20tv) · [pronoun-tad-family](#:~:text=%D0%9C%D0%B5%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8%D0%B5%203-%D0%B3%D0%BE%20%D0%BB%D0%B8%D1%86%D0%B0%20tad%20%28m%2Ff%2Fn%3A%20sa%E1%B8%A5%2Fta) · [pronoun-sarva-group](#:~:text=Sarva-%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%20%D0%B8%20%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D0%BD%D1%8B%D0%B5%20%D1%80%D1%8F%D0%B4%D1%8B%3A%20sarva%2Fvi) · [pronoun-enclitics](#:~:text=%D0%AD%D0%BD%D0%BA%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%B8%20pluralis%20reverentiae%3A%20m%C4%81%2Fme%2F) · [visarga-sah-esah](#:~:text=%D0%92%D0%B8%D1%81%D0%B0%D1%80%D0%B3%D0%B0%20sa%E1%B8%A5%2Fe%E1%B9%A3a%E1%B8%A5%3A%20%D0%B8%D1%81%D1%87%D0%B5%D0%B7%D0%B0%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%B2%D1%81%D0%B5%D0%BC%D0%B8%20%D1%81) · **lesson-roots**
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Гасунс, Dhātu 2014 | [glava7-ukazatel-zaliznyaka](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/glava7_ukazatel-zaliznyaka#:~:text=%D0%98%D0%B4%D0%B5%D1%8F%20%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%20%D0%B8%20%D0%BC%D0%BE%D1%89%D0%BD%D0%B0) | 0.85 | 10 |
+| Толчельников 2026 (morphoclass) | [morphoclass-crosswalk-1975-2014-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) | 0.8 | — |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **GAP-CLOSED (на этом уроке)**
+
+- **buhler**: B+ — класс/падеж при каждом глаголе есть (sah помечен I. Ā.), и ВСЕ 10 глаголов идут с каузативом — связка с уроком XVIII; морфонологической записи нет — как во всей школьной линии
+- **whitney**: W: классы — в root-аппарате (№№ 28, 448, 449, 480, 523, 699, 836, 842/843, 908, 921); в тексте урока классов нет
+- **zalizniak-1978**: Z: запись через ряды (§66–67); открытость рядов pā/prī/bhī/han/hvā — open при закрытых ās/vac/sah/sidh
+- **kochergina**: K: класс даётся при глаголе, записи нет
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* [crosswalk 1975↔2014↔2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
+
+| Корень | Глосса | З-1975 | З-1978 | crosswalk |
+|---|---|---|---|---|
+| ās | сидеть (caus. садить, ставить) | A₂ (conf medium) | A₂ (closed) | yes (wno 28) |
+| pā | пить (caus. pāyayati «поить») | A₂ (conf medium) | A₂ (open) | yes (wno 448 hom. 1 «drink»; гомоним «protect» отдельной строкой) |
+| pā | защищать (caus. pālayati) | A₂ (conf medium) | A₂ (open) | yes (wno 449 hom. 2 «protect») |
+| prī | радоваться (caus. prīṇayati) | I₂ (conf high) | I₂ (open) | yes (wno 480) |
+| bhī | бояться (caus. bhīṣayate, bhāyayate) | I₂ (conf high) | I₂ (open) | yes (wno 523) |
+| vac | говорить, называть (ukta) | A₁ (conf medium) | A₁ (closed) | yes (wno 699) |
+| sah | терпеть (I Ā.) | A₁ (conf medium) | A₁ (closed) | yes (wno 836 «prevail»; тот же корень, что урок VIII) |
+| sidh | удаваться (caus. sādhayati) | I₁ (conf high; две омоним-строки: repel wno 842 / succeed wno 843) | I₁ (closed) | yes — «удаваться» = hom. 2 (succeed); каузатив sādhayati под sādh-обликом |
+| han | убивать (caus. ghātayati) | N₁ (conf medium) | N₁ (open) | yes (wno 908; носовой ряд N — каузатив с guṇa ghā-) |
+| hvā | звать (caus. hvāyayati) | U₂ (conf high) | U₂ (open) | yes — под Whitney-написанием hū «call» (wno 921); поиск по hvā/hve мимо — та же ловушка написания, что tṝ/tṛ (II) и kart/kṛt (IV); урок III фиксировал NO по написаниям hvā/hve — в текущем состоянии реестра корень покрыт под hū (рост реестра или артефакт поиска — двусмысленность зафиксирована, не разрешается молча) |
+
+*Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 10/10 глаголов урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XXXVIII 5/7); 4-й случай ловушки написания (hvā→hū после tṝ/tṛ, kart/kṛt, mar/mṛ) — подозрение на пересмотр «пробелов реестра» прошлых уроков в сторону «поисковых промахов» (lesson-III hvā-NO под вопросом, зафиксировано, не молча переписано); седьмой повтор sah (VIII→XIX) — единственный пока повтор корня между уроками в лемма-слое
+
+*Регистр утверждений урока:* [HB-28](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L623), [HB-29](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L639), [HB-30](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L655), [HB-145](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2517), [HB-146](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2531), [HB-147](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2546), [HB-148](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2560), [HB-149](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2575), [HB-150](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L2590)
 
 
 <small style={{color: "var(--ifm-color-emphasis-600)"}}>Сгенерировано <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py">scripts/build_lesson_concordance.py</a> из <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml">topics.yml</a> + <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv">typed_link_buhler_lessons.tsv</a> — не редактировать руками; перегенерация: <code>python3 scripts/build_lesson_concordance.py</code>. Ссылки локусов ведут на точное место источника с подсветкой (:~:text-фрагмент, Chrome/Firefox/Safari 18.2+).</small>

@@ -1665,3 +1665,116 @@ lessons:
           zalizniak-1978: "Z: запись через ряды; NB: три корня урока (kamp A₁/M₁, vand A₁/N₁, sev I₁/A₂) имеют расходящиеся ряды между З-1975 и З-1978 — редкий случай, когда два реестра Зализняка расходятся между собой"
           kochergina: "K: класс при глаголе (śikṣ — уже парадигма Занятия VIII); записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/15 глаголов урока (по корневой тождественности, rabh под ā-rabh, mar под mṛ); śikṣ и arth отсутствуют (как śaṃs/rakṣ/jīv урока I, hvā/sṛj урока III, śuṣ урока V, mṛg урока IX, i/stu урока XXXVIII); ловушки поиска: mar сидит под написанием mṛ с гомонимом «crush», śikṣ — ложное попадание на śās «order» (третий случай ложного покрытия после sarj/saj и śubh/subh); labh/jan — дубль-строки (артефакт реестра, как mad/vṛt); расхождение рядов kamp/vand/sev между двумя реестрами Зализняка задокументировано впервые в конкордансе"
+
+  XIX:
+    title: "Местоимения: 2-е лицо (tvad, yuṣmad), 3-е лицо tad и слова, склоняющиеся как tad; sarva-группа и вариантные ряды; энклитики и pluralis reverentiae; висарга saḥ/eṣaḥ"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 2428–2582 (заголовок «# УРОК XIX.»)"
+    claims: [HB-28, HB-29, HB-30, HB-145, HB-146, HB-147, HB-148, HB-149, HB-150]
+    reuse_clusters:
+      - "5 exact-совпадений упражнений с Knauer Nr.9 (scripts/data/matches.json: buhler-1923.XIX.425/427/429/433/437 ↔ knauer-1908.9.180–184, exact 1.0 — упражнение урока собирает фразы Кнауэра: मयि त्वयि च पितरौ स्निह्यतः, कस्यै देव्यै स्तोत्रं रचयेम, युष्मन्मम दुःखं भवति, अन्येषां काव्यैरेष कविः कीर्तिमसाधयत् и стих 8 йог-стотры)"
+      - "6 не-exact совпадений с Kochergina: XIX.445 ↔ XVII.424 / XVIII.449 / XXV.628 / XXXIV.1312 (0.875), XIX.446 ↔ XXV.629, XIX.442 ↔ VI.37 — словарные строки местоименного слоя, не упражнения"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XIX нет (местоимения вне глагольного регистра)
+    topics:
+      - key: pronoun-personal
+        title: "Личные местоимения: 2-е лицо — основы tvad/yuṣmad; tvam/yuvām/yūyam с энклитическими вариантами в той же таблице (tvām/tvā, tubhyam/te, tava/te, yuṣmān/vaḥ)"
+        buhler_locus: "урок XIX, §1 (mdx 2430–2450): таблица е./дв./мн. ч. с вариантами в скобках"
+        topic_claims: []
+        spots:
+          "zalizniak-1978-sec:104": "yuṣmān, vaḥ"
+          "kochergina-lesson:XVIII": "tava G.sg. от tvam"
+          "sangram-article:pronouns": "«ты» (`tvad`/`yuṣmad`)"
+          "knauer-fraza:Nr.9": "tvad anyena kenacit saha"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — обе серии (полные и энклитические) в одной таблице без объяснения супплетивности (yuṣmān без -ad, yuvām/yūyam без -ad) — честная таблица, механизма нет; 1-е лицо — в уроке XVIII, 2-е здесь: разделение по урокам, не по парадигме"
+          whitney: "W+ — §§491–505: те же парадигмы с фонетической мотивировкой (§491 — mad/asmad/tvad/yuṣmad-основы, §491b — энклитики безударны и не открывают фразу); ведийские и диалектные варианты по всему диапазону"
+          zalizniak-1978: "Z+ — §104: та же таблица с энклитиками в тех же позициях (tvām, tvā; yuṣmān, vaḥ); §107 — сложные основы mad/tvad/asmad/yuṣmad/tad/yad одним списком"
+          kochergina: "K+ — Занятие XVII: словарная строка tvam + энклитика vas; Занятие XVIII: aham и tvam вместе (словарь+парадигмы) — у Кочергиной оба лица в одном занятии, у Бюлера разнесены по XVIII/XIX"
+        notes: "Кнауэр Nr.9.11: «tvad anyena kenacit saha» — сложная основа tvad- (§107 З-1978) в живой фразе; sangram pronouns (SG-MO-010): местоимения — исключение из EM3-предела, медиана 12,5 клеток на лемму"
+      - key: pronoun-tad-family
+        title: "Местоимение 3-го лица tad (m/f/n: saḥ/tat/sā, teṣām/tāsām…) + список склоняющихся как tad: etad, yad, anya, itara, anyatara, ekatama, katara, katama"
+        buhler_locus: "урок XIX, §§2–3 (mdx 2452–2489): парадигма tad §2; список §3 без форм"
+        topic_claims: [HB-145]
+        spots:
+          "zalizniak-1978-sec:105-106": "Относительное местоимение ya- *который* склоняется как ta-"
+          "kochergina-lesson:XXV": "Местоимения: относительные, вопросительные, неопределенные и притяжательные"
+          "sangram-article:pronouns": "Указательное `tad` «тот» (муж.)"
+          "knauer-fraza:Nr.9": "tad anyasmai kasmaicid dīyatām"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — §3-список точен (HB-145 TRUE/JUSTIFIED: «including ekatama but omitting ekatara keeps it exactly right» — ekatara с не-местоимённым n. ekataram выведен в §4а); но форм §3 не даёт — читатель переносит парадигму §2 сам"
+          whitney: "W+ — §§506–521: парадигмы tad (и соседей idam/adas); §523: anya-группа поимённо (anya, anyatara, itara, katara, katama, ekatama + относительные yatara, yatama — список шире Бюлерова)"
+          zalizniak-1978: "Z+ — §105: парадигма ta- (saḥ, sa — то же чередование, что §2 Бюлера); §106: ya- «склоняется как ta-, но только без смены согласных в основе (и с постоянным ḥ в N.sg m)» — нюанс отсутствия смены согласных, которого у Бюлера нет; тот же список anya/anyatara/itara/katara/katama + yatara/yatama"
+          kochergina: "K+ — Занятие XVI: первые формы ta/idam в словаре (tam A.sg., asmin L.sg. от idam); Занятие XXV: относительные/вопросительные/неопределённые — систематическое изложение ya- и ka-"
+        notes: "Кнауэр Nr.9.4: «tad anyasmai kasmaicid dīyatām» — tad-форма и anya-форма D.sg. в одной фразе; sangram: superheavy-класс (11 из 38 местоимённых лемм DCS) с аттестацией по § 523 — механический мост к whitney-строке"
+      - key: pronoun-sarva-group
+        title: "Sarva-группа и вариантные ряды: sarva/viśva/eka/ekatara/ubhaya склоняются как tad, кроме N.V.Acc.sg. на -m; kim; neme/nemāḥ; adhara…sva — как sarva, но Abl./L. sg. и N. pl. могут быть по deva; ardha/alpa/katipaya/carama — по deva, но N. pl. может быть по sarva"
+        buhler_locus: "урок XIX, §4а–д (mdx 2491–2507): четыре группы слов с вариантами"
+        topic_claims: [HB-28, HB-146, HB-147, HB-148, HB-149]
+        spots:
+          "zalizniak-1978-sec:106": "Местоимение sarva- *весь*: N.sg sarvaḥ"
+          "kochergina-lesson:XIII": "Местоимение sarva"
+          "sangram-article:pronouns": "а не местоимённое -at"
+          "knauer-fraza:Nr.9": "viçve devās tvā rakṣantu"
+        exceptions:
+          verdict: "PARTIAL-REFUTED (на этом локусе)"
+          buhler: "B+ — сам §4 — реестр исключений и вариантов: -m в N.V.Acc.sg. (HB-28 TRUE), neme/nemāḥ (HB-147 TRUE), sarva↔deva альтернатива Abl./L./N.pl. (HB-148 TRUE), deva↔sarva альтернатива N.pl. (HB-149 TRUE), kim с kaḥ/kā/kim (HB-146 TRUE) — гипотеза «у Бюлера много» подтверждается на этом локусе"
+          whitney: "W+ — §§522–526: sarva §524 (sarvasmai/sarvasmin, N.sg sarvam — не *sarvat), anya-группа §523, para/pūrva/apara §525, ubhaya §526 — систематика той же территории (Pāṇini 1.1.33–36)"
+          zalizniak-1978: "Z+ — §106: sarva «в остальном как ya-» с последователями viçva/eka/ekatara/ubhaya (но f ubhayī-); sva- «может склоняться как sarva-, но допускает также ряд форм по § 82» (svāḥ/svasmāt/sve) с pūrva/avara/uttara/adhara/antara/dakṣiṇa/para/apara — изоморфно §4а+§4г; гипотеза «у Зализняка-1978 нет» здесь опровергнута третий раз"
+          kochergina: "K± — Занятие XIII: «Местоимение sarva» (тема есть, HB-246-территория eka — Занятие XXXI); редкие слова §4в–д (nema, ekatama, katara, katipaya) в занятиях не расписаны — фрагментарно"
+        notes: "Кнауэр Nr.9.5: «viçve devās tvā rakṣantu» — N.pl. viçve (не viçvāḥ) — местоимённое N.pl. sarva-группы в живой фразе; sangram: sarvam с -m (не -at) по Уитни § 524 — та же -m-оговорка, что §4а Бюлера"
+      - key: pronoun-enclitics
+        title: "Энклитики и pluralis reverentiae: mā/me/nau/naḥ, tvā/te/vām/vaḥ только при предшествующем слове и без смыслового ударения; множ. ч. вместо ед. ч. 1-го и 2-го лица"
+        buhler_locus: "урок XIX, §6 (mdx 2511): позиционное условие энклитик + «часто употребляется множ. ч.»"
+        topic_claims: [HB-30, HB-150]
+        spots:
+          "zalizniak-1978-sec:227": "Небольшая группа словоформ выступает только в качестве энклитик"
+          "kochergina-lesson:XVII": "vas encl. A., D., G. pl. от tvam"
+          "knauer-fraza:Nr.9": "vayam etat pustakaṁ"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-30 TRUE/JUSTIFIED: позиционное условие (не в начале фразы, без ударения по смыслу) сформулировано открыто; HB-150 TRUE/JUSTIFIED с честной немеряемой пометой «часто»"
+          whitney: "W+ — §491b: те же энклитические серии с тем же запретом (безударность, не-начало фразы); pluralis-утверждение о частоте вне акцентного аппарата Уитни — метрика не ведётся, направление uncontested"
+          zalizniak-1978: "Z+ — §227: энклитический класс целиком (частицы ca/vā/iva… + местоименные mā, me, tvā, te, naḥ, vaḥ, nau, vām + все формы ena-) + «Начальная словоформа фразы (а также стиха) никогда не бывает безударной» — систематика шире Бюлерова"
+          kochergina: "K± — энклитики только в словарных строках (Занятие XVII: «vas encl. A., D., G. pl. от tvam»), позиционного правила в занятиях нет — honest gap свидетеля"
+        notes: "Кнауэр Nr.9: «vayam etat pustakaṁ ne 'chāmas» — pl. вместо sg. 1-го лица (HB-150) в живой фразе; энклитическое tvā — Nr.9.5 «viçve devās tvā rakṣantu» (фраза посажена в sarva-тему как N.pl. viçve — двойная работа одной строки)"
+      - key: visarga-sah-esah
+        title: "Висарга saḥ/eṣaḥ: исчезает перед всеми согласными и гласными, кроме краткого a (sa gacchati, so 'syati)"
+        buhler_locus: "урок XIX, §5 (mdx 2509): правило с тремя примерами, включая avagraha"
+        topic_claims: [HB-29]
+        spots:
+          "whitney-sec:176": null
+          "zalizniak-1978-sec:44": "перед гласной a оно также дает o, но само это a исчезает"
+          "kochergina-lesson:VI": "sa paramadhārmikaḥ (из paramadhārmikas)"
+          "knauer-fraza:Nr.9": "yo na kiṁcit paçyati"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-29 TRUE/JUSTIFIED: специальный местоименный режим сформулирован открыто и честно scoped («перед…» — пауза-остаток saḥ вне контекста); правило продолжается на yaḥ/eṣaḥ implicitly через пример so 'syati"
+          whitney: "W+ — §176: тот же специальный режим saḥ/eṣaḥ поимённо; соседние §§175/177 (as→o, ās→ā) дают общий фон, на котором местоимённое правило выделяется"
+          zalizniak-1978: "Z± — §44 п.5 покрывает механизм (as→a с выпадением a перед a — avagraha), но местоимённый частный случай поимённо не выделен: в морфонологической записи I saḥ = sā+s, и частный случай растворён в общем правиле — нюанс подачи, а не пробел"
+          kochergina: "K± — Занятие VI: внешние s/r-сандхи с visarga-примером «sa paramadhārmikaḥ» (пауза-остаток при sa); специального местоименного правила (sa перед согласной — НЕ sar!) в занятиях нет, местоименные sa/eṣa формы появляются только в упражнениях читанки"
+        notes: "Упражнение урока работает на правиле: «स पार्थिव उच्यते» — sa перед p; exact-совпадение Nr.9.180 «…यः स मे श्रीहरिर्गतिः» — sa перед m; knauer-спот «yo na kiṁcit paçyati» — yaḥ перед n (та же серия §5 на yaḥ). Редкий случай, где школьная подача Бюлера — единственная открытая формулировка местаименного правила"
+      - key: lesson-roots
+        title: "Лемма-слой: 10 глаголов урока (все с каузативами) — морфонологическая запись"
+        buhler_locus: "урок XIX, список «Глаголы:» (mdx 2513–2533)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: ās,   gloss: "сидеть (caus. садить, ставить)",        z1975: "A₂ (conf medium)", z1978: "A₂ (closed)", crosswalk: "yes (wno 28)"}
+          - {root: pā,   gloss: "пить (caus. pāyayati «поить»)",         z1975: "A₂ (conf medium)", z1978: "A₂ (open)", crosswalk: "yes (wno 448 hom. 1 «drink»; гомоним «protect» отдельной строкой)"}
+          - {root: pā,   gloss: "защищать (caus. pālayati)",             z1975: "A₂ (conf medium)", z1978: "A₂ (open)", crosswalk: "yes (wno 449 hom. 2 «protect»)"}
+          - {root: prī,  gloss: "радоваться (caus. prīṇayati)",          z1975: "I₂ (conf high)",   z1978: "I₂ (open)", crosswalk: "yes (wno 480)"}
+          - {root: bhī,  gloss: "бояться (caus. bhīṣayate, bhāyayate)",  z1975: "I₂ (conf high)",   z1978: "I₂ (open)", crosswalk: "yes (wno 523)"}
+          - {root: vac,  gloss: "говорить, называть (ukta)",             z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 699)"}
+          - {root: sah,  gloss: "терпеть (I Ā.)",                        z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 836 «prevail»; тот же корень, что урок VIII)"}
+          - {root: sidh, gloss: "удаваться (caus. sādhayati)",           z1975: "I₁ (conf high; две омоним-строки: repel wno 842 / succeed wno 843)", z1978: "I₁ (closed)", crosswalk: "yes — «удаваться» = hom. 2 (succeed); каузатив sādhayati под sādh-обликом"}
+          - {root: han,  gloss: "убивать (caus. ghātayati)",             z1975: "N₁ (conf medium)", z1978: "N₁ (open)", crosswalk: "yes (wno 908; носовой ряд N — каузатив с guṇa ghā-)"}
+          - {root: hvā,  gloss: "звать (caus. hvāyayati)",               z1975: "U₂ (conf high)",   z1978: "U₂ (open)", crosswalk: "yes — под Whitney-написанием hū «call» (wno 921); поиск по hvā/hve мимо — та же ловушка написания, что tṝ/tṛ (II) и kart/kṛt (IV); урок III фиксировал NO по написаниям hvā/hve — в текущем состоянии реестра корень покрыт под hū (рост реестра или артефакт поиска — двусмысленность зафиксирована, не разрешается молча)"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B+ — класс/падеж при каждом глаголе есть (sah помечен I. Ā.), и ВСЕ 10 глаголов идут с каузативом — связка с уроком XVIII; морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 28, 448, 449, 480, 523, 699, 836, 842/843, 908, 921); в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды (§66–67); открытость рядов pā/prī/bhī/han/hvā — open при закрытых ās/vac/sah/sidh"
+          kochergina: "K: класс даётся при глаголе, записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 10/10 глаголов урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XXXVIII 5/7); 4-й случай ловушки написания (hvā→hū после tṝ/tṛ, kart/kṛt, mar/mṛ) — подозрение на пересмотр «пробелов реестра» прошлых уроков в сторону «поисковых промахов» (lesson-III hvā-NO под вопросом, зафиксировано, не молча переписано); седьмой повтор sah (VIII→XIX) — единственный пока повтор корня между уроками в лемма-слое"
