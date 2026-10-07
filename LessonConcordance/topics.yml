@@ -2602,3 +2602,109 @@ lessons:
           zalizniak-1978: "Z: запись через ряды; все закрытые, кроме вопроса raj (N1-серия 1975 против A₁ 1978 — расхождение двух Зализняков, зафиксировано реестром)"
           kochergina: "K: класс при глаголе, записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 4/5 корней полностью + 1 через омонимы (vas shine/clothe; «обитать/уезжать»-строки нет) — первый частичный ряд после полных III 12/12 и XXXI 6/6; raj-расхождение рядов 1975 (N1-серия) / 1978 (A₁) — второй случай внутризализняковской вилки серии (после arh A₁/R₁ урока XXX)"
+  XXXIV:
+    title: "Composita (продолжение): samāsānta — конечный член tatpuruṣa (rājan→rāja, sakhi→sakha, pathin→patha, go→gava, ahan→aha/ahna, rātri→rātra); bahuvrīhi (разрешение относительным придаточным yasya saḥ, косвенный падеж/приставки/отрицание, puṃvadbhāva, замены конечного члена ā→a, ka, gu, akṣa, dhanvan…); avyayībhāva — сложные наречия"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 4757–4884 (заголовок «# УРОК XXXIV» — БЕЗ точки, кривой делимитер — план, риск-строка)"
+    claims: [HB-269, HB-270, HB-271, HB-272, HB-273, HB-274, HB-275, HB-276]
+    reuse_clusters:
+      - "1 совпадение списка глаголов с Kochergina XIV (scripts/data/matches.json: buhler-1923.XXXIV.804 «ā-rabh I. Ā» ↔ kochergina-1998.XIV.301 «ārabh - Ā», score 0.92) — табличная строка списка глаголов, не фразовое упражнение — записано честно"
+    corpus_layer:
+      - "rājan — rājā (топ-100, ранг 23; Hitop 3,6) — samāsānta: rājan → °rāja, HB-269"
+      - "yuvarāja — yuvarājena (редкое, ранг 7964; Hitop 3,95) — °rāja на конце tatpuruṣa в деле, HB-269"
+      - "sakhi — sakhe (топ-1000, ранг 875; Hitop 2,154) — sakhi → °sakha, HB-269"
+      - "pathin — panthānaḥ (топ-1000, ранг 698; Hitop 2,124.20) — pathin → °patha, HB-269"
+      - "apatha — apathe (редкое, ранг 15149; Kir 13,64.2) — факультативность блокировки: apatha при apathin (HB-269 OVERSTATED)"
+    topics:
+      - key: tatpurusha-samasanta
+        title: "Samāsānta — конечный член tatpuruṣa: rājan→rāja, sakhi→sakha, pathin→patha (кроме после su/kiṃ/a), go→gava (кроме dvigu-прилагательных), ahan→aha или ahna после sarva/apara/pūrva/madhya, rātri→ratra после тех же триггеров + puṇya"
+        buhler_locus: "урок XXXIV, §3 (mdx 4759–4763)"
+        topic_claims: [HB-269, HB-270, HB-271, HB-272]
+        spots:
+          "kochergina-lesson:XXXIII": "Входя в состав сложного слова, некоторые основы и корни изменяются"
+        exceptions:
+          verdict: "OVERSTATED (HB-269, оговорка) + CONFIRMED (HB-270–272)"
+          buhler: "B± — HB-269 OVERSTATED/JUSTIFIED: замены rājan→rāja/sakhi→sakha/pathin→patha — закон (Pāṇini 5.4.91), но su/kiṃ/a-блокировка patha не абсолютна: классическое apatha «бездорожье» законно сосуществует с apathin (corpus_layer: apatha DCS 13, ранг 15149 — живая строка); HB-270 TRUE (go→gava, dvigu/dañcagu с -gu — сам термин dvigu и есть исключение); HB-271 TRUE (aha/ahna-дистрибуция, mdx сам брекетит [ahṇa]); HB-272 TRUE, с кандидатской errata источника: «ratra» без макрона — правильно rātra"
+          whitney: "W+ — §1315 целиком двойник §3: a-трансферы конечных членов — an→a (rāja, aha), i/ī→a (rātra, sakha), a после согласного (ahna, rājña; gava/gāva в списке c); §343b sakha-подстановка отсылает прямо на §1315b; генерализация не оговорена блокировками (su/kiṃ/a- carve-out у Уитни нет) — квантор сильнее булеровского"
+          zalizniak-1978: "Z− — систематики samāsānta-замен конечного члена в Очерке нет (§§191–196 описывают состав и bahuvrīhi-финали, но не tatpuruṣa-финали rājan/pathin/ahan/rātri) — честная дыра свидетеля, гипотеза «у Зализняка нет» подтверждена целым блоком"
+          kochergina: "K+ — Занятие XXXIII §1 «В конце сложного слова»: rājan→rāja (dharmarāja), ahan→aha/ahna (puṇyāha), pathi→patha (svargapatha), rātri→rātra (ahorātram), sakhi→sakha (kṛṣṇasakha), go→gava (paramagava) — все шесть замен Бюлера с примерами, которых у него нет; плюс слои, у Бюлера отсутствующие: корни на -ā (sthā→stha), корни на -i/-u/-ar + t (jit/stut/kṛt), начало сложного слова (rāja-kanyā, pitṛdeva, mahā)"
+        notes: "Та же пара уроков, что у Композиты XXXIII→К-XXXII: Бюлер §3 ↔ Кочергина XXXIII §1 (основосложение: особые случаи); Уитни §1315 — третий систематический двойник; Зализняк-1978 молчит — единственная из тем серии, где дыра целиком покрывает блок; HB-272 — errata-кандидат в SOURCE (ratra→rātra), правило точно"
+      - key: bahuvrihi-definition
+        title: "Bahuvrīhi — определение: разрешение относительным придаточным с Nom. обоих членов (dīrghabāhuḥ = dīrghāu bāhū yasya saḥ; kṛtakṛtyaḥ, uddhṛtaudanaḥ, vīrapuruṣaḥ, śivādayaḥ); второй член — значение косвенного падежа (devarūpaḥ, asipāṇiḥ); первым членом — приставка эллиптически или отрицание (nirbalaḥ, unmukhaḥ, aputraḥ, saputraḥ); сноска особых слов (dvitra, tridaśa, dakṣiṇapūrvā, daṇḍādaṇḍi, keśākeśa)"
+        buhler_locus: "урок XXXIV, §4 а–в + сноска * (mdx 4765–4773)"
+        topic_claims: []
+        spots:
+          "kochergina-lesson:XXXII": "Слова bahuvrīhi являются сложным определением живых существ со стороны принадлежности им какого-либо качества или предмета"
+          "zalizniak-1978-sec:194": "являются прилагательными и имеют значение *обладающий тем, что обозначено соответствующим*"
+          "sangram-article:bahuvrihi": "«много-рис» означает **не** рис, а «того, у кого много риса»"
+          "knauer-fraza:Nr.15": "prajākāmas toṣayām āsa"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — относительное-придаточное разрешение (yasya saḥ / yena / yasmāt / yasmin) выписано в семи примерах — тот самый признак экзоцентричности, который sangram называет невыводимым из структуры; косвенный падеж и приставки/отрицание (4б, 4в) — систематика Уитни §1296/§1304–1305; сноска особых слов (daṇḍādaṇḍi, keśākeśa) — инклюзивный слой, обычно опускаемый школьной линией"
+          whitney: "W+ — §1292: possessive = детерминатив + идея обладания, прилагательное в трёх родах; §1296 possessive dependents (rājanyàbandhu); §1297–1298 possessive descriptives; §1304: inseparable prefixes (abala = nirbala-тип Бюлера, apútra/aврajás с accent-слоем); §1305: verbal prefixes (práçravas — unmukha-тип ud-); §1306: ordinary adverbs; бахуврихи на ādy-типе śivādayaḥ — §1301d ādi-как-первый-член-ряда"
+          zalizniak-1978: "Z+ — §194: определение дословное «обладающий тем, что обозначено соответствующим karmadhāraya или tatpuruṣa» (длиннорукий, собакоголовый); приставки/отрицание как первый член в §194 не разобраны — вынесены в §§199–200 (превербы) как особая зона — раскладка иная, чем у Бюлера/Уитни, феномены те же"
+          kochergina: "K+ — Занятие XXXII: определение через «сложное определение живых существ» + образование на основе karmadhāraya (значительно реже tatpuruṣa) + имена-прозвища (этимологизируемый слой); приставочный тип в занятии не выделен — отнесён к Занятиям XXXVII/XXXX (a-/sa-аналоги, честный указатель вместо разбора)"
+        notes: "Тройное совпадение определения: Бюлер «разрешается относительным придаточным» ↔ Зализняк §194 «обладающий тем, что…» ↔ sangram «того, у кого много риса»; Knauer Nr.15.7 prajākāmaḥ — посессив-двойник в живом тексте (Уитни §324 приводит тот же prajā́kāmá); бахуврихи 14,5 % DCS-композитов (sangram) — второй тип после татпуруши"
+      - key: bahuvrihi-adjfirst
+        title: "Puṃvadbhāva — прилагательное первым членом bahuvrīhi: ж. р. большей частью заменяется мужским (rūpavadbhāryaḥ = rūpavatī bhāryā yasya saḥ), кроме случаев возможного недоразумения"
+        buhler_locus: "урок XXXIV, §4 г (mdx 4775)"
+        topic_claims: [HB-273]
+        spots:
+          "kochergina-lesson:XXXII": "Если последняя основа слова, переходящего в сложное определение bahuvrīhi, - некорневая и оканчивается на ā, то при согласовании с определяемым мужского рода ā → a"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-273 TRUE/JUSTIFIED: puṃvadbhāva (Pāṇini 6.3.34 ff.) с честным квантором «большей частью» и честной sense-оговоркой «за исключением тех случаев, в которых могло бы возникнуть недоразумение» — обе половины нативной грамматики отражены"
+          whitney: "W± — систематического puṃvadbhāva-раздела нет: прилагательное-первый-член в possessive descriptives §1298 (accent prior member), женская база — §334c «a feminine noun ending in derivative ā shortens its final to a to form a masculine and neuter base» — та же замена, но как акциденция склонения, не как терминированное правило; accent-слой §1298 у Бюлера отсутствует"
+          zalizniak-1978: "Z± — puṃvadbhāva-термина и правила о первом члене-прилагательном в Очерке нет; §195 вскользь даёт смежное «основа… оканчивается так же, как основа его последнего члена» — обратная сторона (о последнем члене); честная дыра на первой позиции"
+          kochergina: "K+ — Занятие XXXII: ā→a при согласовании в мужском роде (некорневая основа на ā) + согласная → -a- (raktavāsasam) — пара примеров той же замены в муж./ср. базе, термин puṃvadbhāva не назван (школьная линия, честно)"
+        notes: "Кванторное пересечение: у Бюлера «большей частью, кроме недоразумения» — та же оговорка sense-disambiguation, что в Pāṇini 6.3.34 ff. (HB-273 number); Уитни и Кочергина дают феномен без термина; Зализняк — только обратную сторону (§195 о последнем члене); местоименного «всегда» здесь нет — тема-исключение из HK-189-паттерна"
+      - key: bahuvrihi-finals
+        title: "Замены конечного члена bahuvrīhi: ж. р. на ā → a (rūpavadbhāryaḥ); к ī/ū/ṛ-основам суффикс ka (bahunadīka, mṛtabhṛtṛkaḥ), опционально к другим (mahāyaśaḥ/mahāyaśaskaḥ); go→gu, akṣi→akṣa, dhanus→dhanvan, dharma→dharman (после одного слова), nāsikā→nasa (после приставок, unnasa), pāda→pād (после числит., dvipād), prajā/medhā→prajas/medhas, gandha→gandhi (после su), danta→dat (sudat, f. sudatī)"
+        buhler_locus: "урок XXXIV, §4 д (mdx 4777)"
+        topic_claims: [HB-274, HB-275]
+        spots:
+          "zalizniak-1978-sec:195": "основа мужского рода bahuvrīhi оканчивается на a"
+          "kochergina-lesson:XXXII": "Если последняя основа слова, переходящего в сложное определение bahuvrīhi, - некорневая и оканчивается на ā, то при согласовании с определяемым мужского рода ā → a"
+        exceptions:
+          verdict: "CONFIRMED (две плотных HB-строки) + GAP-PARTIAL (у свидетелей покрывается только ā→a-половина)"
+          buhler: "B+ — HB-274 TRUE/JUSTIFIED: ā-укорочение «обыкновенно» + kap у ī/ū/ṛ «всегда» (Pāṇini 5.4.153 nadyṛtaś ca — пананийски-обязательный суффикс); HB-275 TRUE/JUSTIFIED: десяток замен (go→gu, akṣi→akṣa, dhanus→dhanvan, dharman, nasa, pād, prajas, medhas, gandhi, dat) с условиями «после одного слова/приставок/числительных/su» — каждая оговорка ведёт реальную обусловленность сутр (5.4.113–153)"
+          whitney: "W+ — §1307a: «indifferent suffix ka is often added to a pure possessive compound» — ka-слой Бюлера; §1315: a-трансферы конечных членов (akṣa, aha, rāja, rātra, sakha, ahna, gava/gāva — списки a/b/c) — ядро замен; ā→a муж./ср. базы — §334c; распределение по парадигмам §§325–352 («final member of an adjective compound») — рассыпанный, но полный двойник; термин samāsānta не используется"
+          zalizniak-1978: "Z± — §195: ā→a-половина дословно («существительное на ā (некорневое)… оканчивается на a», dvi-jihva-) + корневое ā-исключение с отсылкой §97; kap-слой и десяток согласных замен (gu/akṣa/dhanvan/dharman/nasa/pād/prajas/gandhi/dat) не описаны — половина блока, честно"
+          kochergina: "K± — Занятие XXXII: та же ā→a-половина (некорневая на ā + согласная → -a-, raktavāsasam) + спряжение с имена-прозвищами; ka/согласные замены в занятии нет — свидетель покрывает только ā-укорочение"
+        notes: "Двухчастная асимметрия свидетелей: ā→a есть у всех четырёх (Бюлер/Уитни §1315+§334c/Зализняк §195/Кочергина XXXII), десяток согласных замен — только у Бюлера и Уитни; «всегда»-квантор ka у Бюлера пананийски-обязателен и контрпримеров не нашлось (HB-274 note: эпическая вольность без compound-разметки неизмерима, OCH-60)"
+      - key: avyayibhava
+        title: "Avyayībhāva — сложные наречия: преимущественно из предлогов/частиц + имя (yathākāmam, yatheccham, yathāśakti, yāvajjīvam, anugaṅgam, upagaṅgam, prativarṣam, upanadi/upanadam)"
+        buhler_locus: "урок XXXIV, §5 (mdx 4779)"
+        topic_claims: [HB-276]
+        spots:
+          "kochergina-lesson:XXXX": "Такие наречия входят в класс слов, называемых avyayībhava"
+          "zalizniak-1978-sec:200": "Возможно, однако, и прямое соединение преверба с именной основой"
+          "sangram-article:compounds-overview": "татпуруша, двандва, бахуврихи, авьяибхава"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-276 TRUE/JUSTIFIED: «преимущественно из предлогов и частиц» — квантор честный, примеры покрывают оба подтипа (yathā-частица + preverb-тип anugaṅgam/upanadi); собственно примерный ряд — уменьшенный двойник §1313 Уитни (yathāvaçám…yāvajjīvám, upanadam — тождественные лексемы)"
+          whitney: "W+ — §1313: определение терминировано («reckoned by the Hindu grammarians as a separate class… called by the name avyayībhāva», этимология avyaya+√bhū); yathā-класс §1313c (yathāvaçám, yāvajjīvám), preverb-класс §1313b (upanadam, pratiniçam), инструментал/аблатив §1313e, sa-класс §1313f (sasmitam) — слои частотности, у Бюлера свёрнутые в «преимущественно»; ведийская редкость §1313d (RV: 4 с yathā)"
+          zalizniak-1978: "Z± — термина avyayībhāva и наречного класса в Очерке нет; §200 даёт прямое соединение преверба с именной основой (pra-ṇapāt-) — та же формальная зона, но с номинативным значением («правнук»), не наречным; §199-превербы — инвентарь; класс целиком — честная дыра свидетеля при частичном формальном покрытии"
+          kochergina: "K+ — Занятие XXXX §2: «наречия… в форме винительного падежа на -am, образованные с префиксом» + «префикс управляет формой винительного падежа» + термин avyayībhava с переводом «имеющие неизменяемую природу» + индийская традиция samāsa; примеры anugan̄gam «вдоль Ганга», uparājam — дословные двойники булеровских anugaṅgam и Уитни §1313 uparājam; плюс несоставные наречные слои (суффиксы -tas/-tra/-thā/-dā/-dhā/-śas, застывшие падежи), которых у Бюлера нет"
+        notes: "Тройное совпадение лексем: anugaṅgam (Бюлер §5) ↔ anugan̄gam (Кочергина XXXX) ↔ §1313 upanadam (Уитни = Бюлеровское upanadi); 4-й разряд классической тетрады (татпуруша/двандва/бахуврихи/авьяибхава, sangram/Лейтан) — закрыт этим уроком; Очерк — единственный свидетель без термина (формальное покрытие §200 при отсутствии наречного класса)"
+      - key: lesson-roots
+        title: "Лемма-слой: 8 глаголов урока (niś-ci, vi-dṝ caus., paṭ I.-P., abhi-bhū, ā-rabh I.Ā., var I.Ā. (varaya), ā-sad, has IV) — морфонологическая запись"
+        buhler_locus: "урок XXXIV, список «Глаголы:» (mdx 4781–4797)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: "ci (niś-ci)",   gloss: "решать",                    z1975: "I₁ ×2 (gather wno 225 / note wno 226, conf high)", z1978: "I₁", crosswalk: "yes через омонимы; niś-ci «решать» (niścayati) — причинный от ci, примыкает к «note, observe»"}
+          - {root: "dṝ (vi-dar)",   gloss: "разрывать (caus. vidārayati)", z1975: "—",                    z1978: "—", crosswalk: "no — корня dṝ «burst/split» (dar) в реестре нет; dṛ wno 372 «heed» (R₁) — ДРУГОЙ корень; пробел, как hvā в XXXVIII"}
+          - {root: "paṭ",           gloss: "взламывать, прорывать",     z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes (wno 437 «tear», A1 seṭ) — Бюлер I.-P. = ряд A₁"}
+          - {root: "bhū (abhi-bhū)", gloss: "пересылать, преодолевать (caus.)", z1975: "U₂ (conf high)", z1978: "U₂", crosswalk: "yes (wno 528 «be», U2 veṭ); булеровская глосса — каузатив abhi-bhāvayati от «быть/становиться»"}
+          - {root: "rabh (ā-rabh)", gloss: "начинать",                  z1975: "A₁ (conf medium; z-серия N1)", z1978: "A₁", crosswalk: "yes (wno 628 «take hold») — третий случай вилки двух Зализняков: z-серия 1975 N1 против 1978 A₁ (после arh A₁/R₁ в XXX и raj в XXXIII)"}
+          - {root: "vṛ (var)",      gloss: "избирать (varaya)",         z1975: "R₁ ×2 (cover wno 740 / choose wno 741, conf high)", z1978: "R₁", crosswalk: "yes (wno 741 «choose», R1 veṭ); в-стуень varaya — «избирать» = vṛ choose, не vṛ cover"}
+          - {root: "sad (ā-sad)",   gloss: "приближаться (caus. встречать)", z1975: "A₁ (две z-строки: A1 aniṭ / I2 seṭ)", z1978: "A₁", crosswalk: "yes (wno 830 «sit») — расхождение z-серий внутри записи (A1/I2) при одном 1978-ряде A₁"}
+          - {root: "has",           gloss: "радоваться",                z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes (wno 910 «laugh», A1 seṭ); Бюлер даёт IV класс (has IV) — ya-презенс, запись ряда A₁ — номер класса ≠ ряд (прецедент XXXIII)"}
+        exceptions:
+          verdict: "GAP-PARTIAL (на этом уроке)"
+          buhler: "B± — класс дан у 4 из 8 (paṭ I.-P., ā-rabh I.Ā., var I.Ā. + varaya-оговорка, has IV, ā-sad без класса в строке, niś-ci/vi-dar/abhi-bhū — префиксальные без класса); префиксы разведены дефисом; каузативы помечены (vi-dar caus., ā-sad caus. в глоссе) — морфонологической записи нет, как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 225/226, 437, 528, 628, 740/741, 830, 910; dṝ «blast» wno 676 — вне реестра)"
+          zalizniak-1978: "Z: запись через ряды; вилка rabh N1(1975)/A₁(1978) — третий внутризализняковский раскол серии; sad — двойная z-строка (A1 aniṭ / I2 seṭ) при одном 1978-ряде"
+          kochergina: "K: класс при глаголе, записи нет; ā-rabh присутствует в занятии XIV (reuse-кластер matches.json 0.92)"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 7/8 корней (dṝ нет — пробел, второй после hvā XXXVIII); rabh-вилка N1/A₁ — третий случай после arh (XXX) и raj (XXXIII) — серия рядов 1975/1978 расходится регулярно на неполном классе корней; reuse-кластер урока (1) — та же строка ā-rabh из К-XIV, табличная, не фразовая"
