@@ -125,6 +125,7 @@ LOCAL_SOURCE_FILES = {
     "sangram-gerundive": "sangram/articles/gerundive/index.mdx",
     "sangram-compounds-overview": "sangram/articles/compounds-overview/index.mdx",
     "sangram-tatpurusha": "sangram/articles/tatpurusha/index.mdx",
+    "sangram-bahuvrihi": "sangram/articles/bahuvrihi/index.mdx",
 }
 
 
