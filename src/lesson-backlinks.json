@@ -118,6 +118,10 @@
         "spot": "УРОК XXXIII."
       },
       {
+        "label": "урок XXXIV — конкорданс",
+        "spot": "УРОК XXXIV."
+      },
+      {
         "label": "урок XXXV — конкорданс",
         "spot": "УРОК XXXV."
       }
@@ -564,6 +568,18 @@
         "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
       },
       {
+        "label": "урок XXXIV — bahuvrihi-definition",
+        "spot": "Bahuvrīhi — определение: разрешение относительным придаточны"
+      },
+      {
+        "label": "урок XXXIV — bahuvrihi-finals",
+        "spot": "Замены конечного члена bahuvrīhi: ж. р. на ā → a (rūpavadbhā"
+      },
+      {
+        "label": "урок XXXIV — avyayibhava",
+        "spot": "Avyayībhāva — сложные наречия: преимущественно из предлогов/"
+      },
+      {
         "label": "урок XXXV — athematic-strong-weak",
         "spot": "Атематические классы II, III, V, VII, VIII, IX: сильная и сл"
       },
@@ -970,6 +986,22 @@
         "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
       },
       {
+        "label": "урок XXXIV — tatpurusha-samasanta",
+        "spot": "Samāsānta — конечный член tatpuruṣa: rājan→rāja, sakhi→sakha"
+      },
+      {
+        "label": "урок XXXIV — bahuvrihi-definition",
+        "spot": "Bahuvrīhi — определение: разрешение относительным придаточны"
+      },
+      {
+        "label": "урок XXXIV — bahuvrihi-finals",
+        "spot": "Замены конечного члена bahuvrīhi: ж. р. на ā → a (rūpavadbhā"
+      },
+      {
+        "label": "урок XXXIV — avyayibhava",
+        "spot": "Avyayībhāva — сложные наречия: преимущественно из предлогов/"
+      },
+      {
         "label": "урок XXXV — athematic-strong-weak",
         "spot": "Атематические классы II, III, V, VII, VIII, IX: сильная и сл"
       },
@@ -1276,6 +1308,10 @@
         "spot": "Karmadhāraya: определение/наречие/приложение (kṛṣṇāśvaḥ, mah"
       },
       {
+        "label": "урок XXXIV — bahuvrihi-definition",
+        "spot": "Bahuvrīhi — определение: разрешение относительным придаточны"
+      },
+      {
         "label": "урок XXXV — athematic-strong-weak",
         "spot": "Атематические классы II, III, V, VII, VIII, IX: сильная и сл"
       },
@@ -1418,6 +1454,10 @@
       {
         "label": "урок XXXIII — lesson-roots",
         "spot": "Лемма-слой: 5 глаголов урока (sam-āp, ni-yuj, anu-rajj IV.-U"
+      },
+      {
+        "label": "урок XXXIV — lesson-roots",
+        "spot": "Лемма-слой: 8 глаголов урока (niś-ci, vi-dṝ caus., paṭ I.-P."
       },
       {
         "label": "урок XXXV — lesson-roots",
@@ -1628,12 +1668,22 @@
       {
         "label": "урок XXXIII — dvigu",
         "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
+      },
+      {
+        "label": "урок XXXIV — avyayibhava",
+        "spot": "Avyayībhāva — сложные наречия: преимущественно из предлогов/"
       }
     ],
     "sangram-tatpurusha": [
       {
         "label": "урок XXXIII — tatpurusha",
         "spot": "Tatpuruṣa — зависимый тип: косвенный падеж первого члена (gr"
+      }
+    ],
+    "sangram-bahuvrihi": [
+      {
+        "label": "урок XXXIV — bahuvrihi-definition",
+        "spot": "Bahuvrīhi — определение: разрешение относительным придаточны"
       }
     ]
   }
