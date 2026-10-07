@@ -112,6 +112,10 @@
       {
         "label": "урок XXXII — конкорданс",
         "spot": "УРОК XXXII."
+      },
+      {
+        "label": "урок XXXIII — конкорданс",
+        "spot": "УРОК XXXIII."
       }
     ],
     "ocherk": [
@@ -526,6 +530,34 @@
       {
         "label": "урок XXXII — comparative-irregular",
         "spot": "Супплетивное сравнение: antika→nedīyas, alpa→kanīyas (или al"
+      },
+      {
+        "label": "урок XXXIII — compound-general",
+        "spot": "Общие правила состава: первая часть — форма основы (реже пад"
+      },
+      {
+        "label": "урок XXXIII — compound-general",
+        "spot": "Общие правила состава: первая часть — форма основы (реже пад"
+      },
+      {
+        "label": "урок XXXIII — dvandva",
+        "spot": "Dvandva: itaretara — дв.ч. при двух единств. членах, мн.ч. п"
+      },
+      {
+        "label": "урок XXXIII — tatpurusha",
+        "spot": "Tatpuruṣa — зависимый тип: косвенный падеж первого члена (gr"
+      },
+      {
+        "label": "урок XXXIII — tatpurusha",
+        "spot": "Tatpuruṣa — зависимый тип: косвенный падеж первого члена (gr"
+      },
+      {
+        "label": "урок XXXIII — karmadharaya",
+        "spot": "Karmadhāraya: определение/наречие/приложение (kṛṣṇāśvaḥ, mah"
+      },
+      {
+        "label": "урок XXXIII — dvigu",
+        "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
       }
     ],
     "kochergina": [
@@ -896,6 +928,26 @@
       {
         "label": "урок XXXII — comparison-syntax",
         "spot": "Синтаксис сравнения: сравнительная + Abl., превосходная + Ge"
+      },
+      {
+        "label": "урок XXXIII — compound-general",
+        "spot": "Общие правила состава: первая часть — форма основы (реже пад"
+      },
+      {
+        "label": "урок XXXIII — dvandva",
+        "spot": "Dvandva: itaretara — дв.ч. при двух единств. членах, мн.ч. п"
+      },
+      {
+        "label": "урок XXXIII — tatpurusha",
+        "spot": "Tatpuruṣa — зависимый тип: косвенный падеж первого члена (gr"
+      },
+      {
+        "label": "урок XXXIII — karmadharaya",
+        "spot": "Karmadhāraya: определение/наречие/приложение (kṛṣṇāśvaḥ, mah"
+      },
+      {
+        "label": "урок XXXIII — dvigu",
+        "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
       }
     ],
     "knauer": [
@@ -1170,6 +1222,14 @@
       {
         "label": "урок XXXII — comparative-irregular",
         "spot": "Супплетивное сравнение: antika→nedīyas, alpa→kanīyas (или al"
+      },
+      {
+        "label": "урок XXXIII — dvandva",
+        "spot": "Dvandva: itaretara — дв.ч. при двух единств. членах, мн.ч. п"
+      },
+      {
+        "label": "урок XXXIII — karmadharaya",
+        "spot": "Karmadhāraya: определение/наречие/приложение (kṛṣṇāśvaḥ, mah"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1294,6 +1354,10 @@
       {
         "label": "урок XXXI — lesson-roots",
         "spot": "Лемма-слой: 6 глаголов урока (saṅ-kal X.P., ati-kram, jalp I"
+      },
+      {
+        "label": "урок XXXIII — lesson-roots",
+        "spot": "Лемма-слой: 5 глаголов урока (sam-āp, ni-yuj, anu-rajj IV.-U"
       }
     ],
     "sangram-thematic-present": [
@@ -1474,6 +1538,30 @@
       {
         "label": "урок XXX — gerundive-inventory",
         "spot": "Причастие долженствования: инвентарь tavya (f ā), anīya (f ā"
+      }
+    ],
+    "sangram-compounds-overview": [
+      {
+        "label": "урок XXXIII — compound-general",
+        "spot": "Общие правила состава: первая часть — форма основы (реже пад"
+      },
+      {
+        "label": "урок XXXIII — dvandva",
+        "spot": "Dvandva: itaretara — дв.ч. при двух единств. членах, мн.ч. п"
+      },
+      {
+        "label": "урок XXXIII — karmadharaya",
+        "spot": "Karmadhāraya: определение/наречие/приложение (kṛṣṇāśvaḥ, mah"
+      },
+      {
+        "label": "урок XXXIII — dvigu",
+        "spot": "Dvigu: числительное первым членом; группы/скопления — ср.р. "
+      }
+    ],
+    "sangram-tatpurusha": [
+      {
+        "label": "урок XXXIII — tatpurusha",
+        "spot": "Tatpuruṣa — зависимый тип: косвенный падеж первого члена (gr"
       }
     ]
   }
