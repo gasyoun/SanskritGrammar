@@ -2043,3 +2043,86 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§66–67); gam — M₁ по §66-списку, spṛh — R₁ по §66-правилу"
           kochergina: "K: класс при глаголе (XX уроки), записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 2/2 корней урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXI 6/7 — sṛj вне, XXII 1/1, XXIX 12/12, XXXVIII 5/7). Приставочные astam-/ud-gam не плодят строк: root-слой один, префикс — отдельная ось (у Sangram — sangram-article:preverbs, к уроку XXV не привязан: префиксы в конкордансе уже покрыты уроком XXXVIII)."
+
+  XXVI:
+    title: "Неправильное склонение: akṣi/asthi→an, strī/lakṣmī, bhū-композиты (svayaṃbhū/punarbhū), моносложные ж. р. (ap/div/rai), подставные основы (jaras/pad/hṛd/doṣan; композит -pād→pad), гетероклиты (puṅs/pathin/anaḍuh, kroṣṭṛ/kroṣṭu, brahmahan, as-основы)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3417–3540 (заголовок «# УРОК XXVI» — без точки)"
+    claims: [HB-36, HB-188, HB-189, HB-190, HB-191, HB-192, HB-193, HB-194, HB-195, HB-196, HB-197, HB-198, HB-199, HB-200, HB-201, HB-202]
+    reuse_clusters:
+      - "3 совпадения упражнений с Knauer (scripts/data/matches.json: buhler-1923.XXVI.558 «हृद्येष पुमान्परं ब्रह्म ध्यायति» ↔ knauer-1908.5.99 «हृदि साधुः पुमान्परं ब्रह्म ध्यायति», 0.833 — вариант локатива hṛdi/hṛdye; XXVI.564 «अद्भिः पादौ क्षालयत्येष परिव्राट्» ↔ knauer-1908.5.101 «क्षालयति», 0.912; XXVI.565 «स्त्री पत्ये रूपकाण्यर्पयति» ↔ knauer-1908.3.64 «स्त्री पत्ये रूपकाणि यछति», 0.851 — вариант глагола arpaya/yacch: у Бюлера каузатив ar- из словаря урока, у Кнауэра yam-)"
+      - "2 совпадения парадигм-форм с Kochergina XXXI (XXVI.584 «N. V.sg. panthāḥ» ↔ kochergina-1998.XXXI.769 «N.sg. panthās», 0.857; XXVI.585 «N. pumān» ↔ kochergina-1998.XXXI.772 «N.sg. pumān», 0.857 — лемма-формы гетероклитов совпадают при несовпадении помет: V.sg. у Бюлера отдана panthāḥ, у Кочергиной отдельного V.sg. нет)"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXVI нет (урок именной; 3 глагола — в лемма-слой)
+    topics:
+      - key: irregular-vocalic-stems
+        title: "Неправильные гласные основы: i→an (akṣi/asthi/dadhi/sakthi → akṣṇā, asthnām), strī/lakṣmī (nadī-окончания обязательны, Acc-пары опциональны), bhū-композиты (svayaṃbhū uv; punarbhū по vadhū, но Acc. punarbhvam)"
+        buhler_locus: "урок XXVI, §§2–4 (mdx 3421–3445): pati/sakhi-склонение; akṣi-четвёрка «в косвенных падежах с вокальными суффиксами вместо основы на i появляется основа на an»; lakṣmī/strī; svayaṃbhū/punarbhū"
+        topic_claims: [HB-36, HB-188, HB-189, HB-190]
+        spots:
+          "zalizniak-1978-sec:98": "Слово strī- *женщина* имеет ряд черт некорневого склонения"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — сам урок и есть реестр исключений (заголовок «Неправильное склонение»); akṣi-четвёрка — HB-36 TRUE («exactly these four neuters»); strī — HB-188 TRUE с точным разбором обязательного/опционального; svayaṃbhū uv — HB-189 TRUE (Pāṇini 6.4.85 na bhūsudhiyoḥ); punarbhū — HB-190 TRUE (yaṇ по 6.4.84 против vadhūm/vadhūḥ); опечаток в §§1–4 нет"
+          whitney: "W+ — §343i: та же akṣi-четвёрка «exchange with and complementing forms from stems in án» + §431 (weakest cases akṣṇā́, asthné, dadhnás; ведийские akṣā́ṇi/akṣábhis); §343d: pati как sakhi в I.D.Abl.L.sg.; §343a: sákhi с vṛddhi-основой sákhāy; §366: strī «mixed declension» — формы дословно параллельны HB-188; §§352–353: -bhū-композиты uvaṄ (HB-189); punarbhū Уитни не разбирает — honest gap (формы по паниниевской традиции, HB-190-note)"
+          zalizniak-1978: "Z± — §98: dhī-/bhū- как корневые на ī/ū + «Особый случай. Слово strī-…» с формами некорневого типа (striyam и strīm, striyaḥ и strīḥ, strīṇām) — тот же опциональный/обязательный расклад, что HB-188; svayaṃbhū/punarbhū-композиты в Очерке не разбираются — honest gap свидетеля"
+          kochergina: "K− — парадигм sakhi/pati/strī в занятиях нет (только случайные словоупотребления: sakhyaṃ, словарная строка strī f) — honest gap; систематический якорь свидетеля по материалу урока — XXXI (гетероклиты, тема 4)"
+        notes: "strī у Бюлера = HB-188 (nadī-окончания обязательны в D.Abl.G.L.sg.), у Уитни §366 «mixed declension», у Зализняка §98 «Особый случай» — три Witness-подачи одного факта; kochergina-строка на тему не посажена (нет парадигмного локуса — по прецеденту урока III: не выдумывать локус)"
+      - key: monosyllabic-feminines
+        title: "Моносложные ж. р.: ap (pl. tantum, ad-перед bh-диссимиляция: adbhiḥ, apām, apsu), div (dyauḥ, dyu- перед согласными), rai (rā перед согласными, rāy перед гласными)"
+        buhler_locus: "урок XXVI, §5 (mdx 3447–3451): ap — полная парадигма; div «перед окончаниями, начин. с согласного, превращается в dyu»; rai «перед гласными же суффиксами принимает форму rāy»"
+        topic_claims: [HB-191, HB-192, HB-193]
+        spots:
+          "zalizniak-1978-sec:99-100": "ap- (f) *вода* (употребляется только в pl)"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — три парадигмы целиком без исключений (HB-191/192/193 все TRUE; ap — pl. tantum точно, ad-диссимиляция в таблице)"
+          whitney: "W+ — §361b: rāí как «rā with a union-consonant y» + ведийские брифы rā́m/rā́s и акцентная аномалия rā́yas; §361d: dyó «yet more anomalous», dyu→div перед гласной-окончанием; §393: áp pl.tant. + диссимиляция §151e + ведийские редкости (RV: apā́, apás; путаница ā́pas/apás в AV/эпосе)"
+          zalizniak-1978: "Z+ — §100: pad- и ap- как единственные корневые с чередованием ступеней, ap «употребляется только в pl» с теми же NB-формами (adbhiḥ, adbhyaḥ); §99: dyo-/dyu- (двухэлементное чередование, § 56-пример); rai в Очерке не разбирается — honest gap"
+          kochergina: "K− — ap/div/rai парадигм в занятиях нет — honest gap (проверено grep-ом по apām/dyau/rai); словарные вхождения не в счёт"
+        notes: "Триод ap/div/rai — классическая зона расхождения школьной и академической подачи: Бюлер — три компактные парадигмы подряд, Уитни — те же §§361/393 с ведийским фоном, Зализняк — ap/pad в §100 (чередование) и dyo в §99 (чередование двухэлементное); rai — только у Бюлера и Уитни"
+      - key: substitute-stems
+        title: "Подставные основы: jarā/jaras, pāda/pad, hṛdaya/hṛd (скоуп «во всех падежах, кроме N.V.sg.du.pl. и Acc.sg.du.»), dos/doṣan (слабые падежи); композит: -pād→-pad (dvipāt/dvipādam/dvipadaḥ)"
+        buhler_locus: "урок XXVI, §§7–9 (mdx 3473–3489): jarā «может иметь основу jaras перед всеми окончаниями, начин. с гласного»; pāda/hṛdaya с точным падежным скоупом; dos→doṣan; §9 — композитный -pād→pad"
+        topic_claims: [HB-194, HB-195, HB-196, HB-197, HB-198]
+        spots:
+          "kochergina-lesson:XXXI": "Среди параллельно существующих основ имеется несколько разносклоняемых, так называемое гетероклитическое склонение"
+          "knauer-fraza:Nr.5": "अद्भिः पादौ क्षालयति"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — пермиссивные «может» при каждой паре (HB-194–197 все TRUE); падежный скоуп pāda/hṛdaya «кроме N.V.sg.du.pl. и Acc.sg.du.» — точь-в-точь падади-доктрина (śas-серия, P. 6.4.130-зона); композитный случай §9 — HB-198 TRUE (P. 6.4.130 pādaḥ pat; примеры dvipāt/dvipādam/dvipadaḥ напечатаны корректно)"
+          whitney: "W+ — §397a: hṛ́d/mā́ṅs/mā́s/nás/niç/pṛ́t «lack the nom. of all numbers and the accus. sing. and du.» — тот же скоуп + ведийские отступления (mā́s acc.sg. и т.п.); §398a: dós с подставным án-стемом (§432: doṣán «required to make their nom.-acc.-voc.»); §415a: jarā́ как substitute-stem in ā от as-основы (у Бюлера та же монета другой стороной: jarā «может иметь основу jaras»); §401a: композиты с корнем в конце (cátuṣpad, suhā́rd) + §391: полная парадигма pád/pā́t"
+          zalizniak-1978: "Z± — §102: параллелизм pad-/pāda- подан как исторический дрейф («многие из них вытесняют исходную атематическую основу»), не как падади-доктрина с падежным скоупом; §100: парадигма pad- (pāt/pādam/padā/padbhiḥ/patsu); рамки «подставных основ» в Очерке нет — расхождение анализа, не факта"
+          kochergina: "K± — XXXI §1: pad/pada в ряду параллелизма основ (diś/diśā, dvār/dvāra, pad/pada, nar/nara) — факт параллелизма без падежного скоупа и без jarā/doṣan"
+        notes: "Кнауэр Nr.5.6 (адбхиḥ пāдау — совпадение 0.912 с упражнением урока) — подставные/слабые формы в живой фразе; jarā у Бюлера и jaras у Уитни §415a — направление вывода основы противоположно (Бюлер: от jarā к jaras; Уитни: jarā — росток от as-основы jaras), зафиксировано, не сглажено"
+      - key: n-stems-irregular
+        title: "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), kroṣṭṛ/kroṣṭu (Errata: первое «от kroṣṭṛ» читать «от kroṣṭu»), pūṣan/aryaman/brahmahan (N.sg. -ā, Errata: не āḥ; h→gh в ghn-стеме), anehas/uśanas (потеря висарги в N.sg.)"
+        buhler_locus: "урок XXVI, §§6, 10–12 (mdx 3453–3503): anaḍuh/pathin/puṅs с тремя основами и полной парадигмой puṅs; kroṣṭṛ; pūṣan/aryaman/brahmahan со сноской о ṇ-ретрофлексии; anehas/purudeśas/uśanas"
+        topic_claims: [HB-199, HB-200, HB-201, HB-202]
+        spots:
+          "zalizniak-1978-sec:89-101": "склоняются также прилагательные на -han- (m, n) *убивающий*"
+          "kochergina-lesson:XXXI": "Параллелизм основ и гетероклитическое склонение"
+          "knauer-fraza:Nr.5": "हृदि साधुः पुमान्परं ब्रह्म"
+          "sangram-article:declension-overview": "Инвентарь типов основ — по реальной парадигме"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE (два FALSE-клейма урока)"
+          buhler: "B± — гетероклитный зоопарк дан полно (три основы anaḍuh/pathin/puṅs + полная парадигма puṅs), НО две Errata-опечатки: HB-199 FALSE (первое «от kroṣṭṛ» должно быть «от kroṣṭu» — собственные примеры kroṣṭo/kroṣṭubhyām/kroṣṭūn рядом, P. 7.1.95–97) и HB-200 FALSE («окончание āḥ» вместо ā — книга сама печатает brahmahā тремя словами дальше); HB-201 TRUE (ṇ-ретрофлексия, P. 8.4.22 hanter atpūrvasya, сноска урока); HB-202 TRUE (uśanā + V.sg. uśana/uśanan; erratum purudeśas→purudaṃśas вне клейма)"
+          whitney: "W+ — §394: puṅs «very irregular» с полной парадигмой (púmāṅs/puṁsā́/púman) + акцентная оговорка §394a; §395+§433: path → pánthan/pathí/path (+ §434: manthan/ṛbhukṣán — те же слова, что в уроке!); §404: anaḍváh «very irregular» — те же три основы (anaḍvā́h/anaḍúd/anaḍúh) + V.sg. van-огово́рка; §402: han-композит «becoming hā in the nom. sing., losing its n… its a in the weakest cases… h… reverts to its original gh» + парадигма vṛtrahā́/vṛtraghás + §402a: n→ṇ §§193/195 — дословный двойник HB-200/201; §416: uçánas/uçánā/uçana(n) и §419: anehás/anehā́ — HB-202 дословно; §426a: pūṣán/aryamán → pūṣā́ (N.sg. без висарги — контрдовод к опечатке āḥ); §374: kroṣṭṛ́/kroṣṭú взаимодополнение"
+          zalizniak-1978: "Z+ — §101 «Разносклоняемые имена (heteroclita)»: puṁs (п.1, NB сохранение s §35), anaḍ-vah (п.2), path/math (п.3), asthi/akṣi/sakthi/dadhi (п.4), ahan (п.5), doṣan-подставные (п.6) — тот же список, что §§6/8 урока; §89 п.3: прилагательные на -han- (vṛtra-hā, -haṇam, -ghṇā, -habhiḥ, gh по §57) — тот же gh-ряд, что brahmahan у Бюлера; as-основы uśanas/anehas в Очерке не разбираются — honest gap"
+          kochergina: "K+ — XXXI §1: path/panthās, ahan, asthan/akṣi/dadhi («Так же склоняются akṣi-… и dadhi-…»), puṃs- — систематический якорь свидетеля (2 совпадения лемм-форм с парадигмой урока); brahmahan/-han и as-основы в занятиях нет — honest gap"
+        notes: "Терминология свидетелей: «гетероклитическое склонение» Кочергиной = «разносклоняемые имена (heteroclita)» Зализняка = разбор Бюлера в этом уроке; Кнауэр Nr.5.4/5.5 (пумāн, сāдхūнāм пантхāнаḥ) — живые фразы гетероклитов (2 совпадения с упражнениями урока); sangram declension-overview — частотная рамка: гетероклиты сидят в малых срезах инвентаря основ (прочие согласные 5,1 %, n-основы 7,3 %)"
+      - key: lesson-roots
+        title: "Лемма-слой: 3 глагола урока (ar с каузативом, guh с каузативом, tarp IV P.) — морфонологическая запись"
+        buhler_locus: "урок XXVI, список «Глаголы:» (mdx 3505–3511)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: ar,   gloss: "идти (caus. arpayati — заставлять идти, передавать; = √ṛ)", z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes — под написанием ṛ (wno 69 «go, send», veṭ aniṭ): ловушка поиска — Бюлер печатает «ar» (r не начинает слова), наивный поиск по ar в реестре пуст; ряд открытый (§67-RMN-default)"}
+          - {root: guh,  gloss: "скрывать, прятать (caus. gūhayati)", z1975: "U₁ (conf high; две строки-омонима U1/U2)", z1978: "U₁", crosswalk: "yes (veṭ, wno 187; повтор уроков III/IV — тот же корень)"}
+          - {root: tarp, gloss: "радоваться, насыщаться (IV P.; = tṛp)", z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes — под написанием tṛp (wno 321 «be pleased», veṭ aniṭ): вторая ловушка написания в одном уроке (класс kart/kṛt урока IV); ряд закрытый"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B: класс дан только у tarp («IV. P.»), у ar/guh вместо класса каузатив (связка с уроком XVIII); морфонологической записи нет — как во всей школьной линии; написание «ar» без оговорки о неполногласном начале"
+          whitney: "W: классы — в root-аппарате (№№ 69, 187, 321); в тексте урока ссылок на §§ нет; tṛp — R-ряд с veṭ (§ 223-зона приложения)"
+          zalizniak-1978: "Z: запись через ряды (ṛ/tṛp — R₁, guh — U₁ §66); открытость ряда ṛ (§67-RMN-default) против закрытости tṛp — в реестре"
+          kochergina: "K: класс даётся при глаголе (tarp — IV класс), записи нет; ar/guh в занятиях без класса"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 3/3 глаголов урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XX 2/2, XXI 6/7, XXII 1/1, XXIX 12/12, XXXVIII 5/7), но двумя ловушками написания сразу (ar→ṛ, tarp→tṛp): пара в один урок (tṝ/tṛ урока II была одиночной); оба каузатива урока (arpayati, gūhayati) — вне crosswalk-реестра (реестр — по корню, не по стему), честно"
