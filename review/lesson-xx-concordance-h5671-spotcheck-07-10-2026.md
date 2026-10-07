@@ -40,7 +40,22 @@ requested address`; независимый curl-проб `https://api.deepseek.c
 
 ## Вердикт
 
-**PASS (fallback-метод)** — build-валидация (232 local OK / 17 external) + lint 0 +
-свежепроцессная проверка 31/31. Регенерация: catalog.mdx 21 урок, 344 строки.
+**PASS (fallback-метод)** — build-валидация (233 local OK / 17 external) + lint 0 +
+свежепроцессная проверка 33/33. Регенерация: catalog.mdx 21 урок, 346 строк.
+
+## Dual-run адъюдикация (07-10, при пушe)
+
+push h5671-drain наткнулся на origin/h5671-drain = auto-salvage (H2628, 15:03) **другой**
+сессии: завершённый урок XX от 06-10 (ключи stem-grades/deaspiration-sandhi, whitney
+377-391/382/141-147, zal-1978:74, kochergina:XXX). Вердикты HB-151–158 совпали; выбор:
+базовая — эта версия (верифицирована: build+lint+свежепроцессный протокол, changelog
+готов), из salvage приняты 2 добавки без конфликта — каузативные cross-loci
+whitney-sec:1042 («treatment of the root before the causative-sign aya») и
+kochergina-lesson:XXXV («Каузативные глаголы всегда переходные») в lesson-roots (обе
+проверены в источниках; kochergina-спот в build-валидации). Остальные расхождения
+(377-391 vs 380-383; zal-1978:74 vs 75-76; kochergina:XXX vs XXVIII) — равноценные
+выборы локусов, выбраны мои, зафиксировано в topics.yml notes. Salvage-ветка
+перезаписана завершённым состоянием (--force-with-lease; содержимое salvage —
+промежуточный WIP того же материала, полностью покрыто финалом).
 
 _Гасунс_

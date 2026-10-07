@@ -1855,6 +1855,7 @@ lessons:
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+          "kochergina-lesson:XXXV": "Каузативные глаголы всегда переходные"
         lemmas:
           - {root: ruh,  gloss: "заставлять подниматься, расти, сажать (caus. rohayati/ropayati)", z1975: "U₁ (conf high)", z1978: "U₁", crosswalk: "yes (wno 662 «ascend», veṭ aniṭ)"}
           - {root: labh, gloss: "заставлять достичь, давать (caus. lambhayati)", z1975: "A₁ (conf medium; в реестре и вторая z-серия N1)", z1978: "A₁", crosswalk: "yes (wno 673 «take»; две z-серии: A1/z-глагол 112 и N1/z-глагол 790 — lambhati-вариант; каузатив lambhayati — от N-облика; второй корень с двумя z-сериями в реестре после vah/car урока I)"}
@@ -1953,3 +1954,4 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§66–67); dam — M₂ по §66-списку, остальные по §66-правилу"
           kochergina: "K: класс даётся при глаголе, записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 6/7 глаголов урока — sṛj отсутствует (повтор пробоины урока III, пойманной DeepSeek-спот-чеком 06-10: sarj-строка — ложное покрытие другим корнем). Контрасты: урок I — 10/13, II — 10/11, IV — 6/6, XIX — 10/10, XXII — 1/1, XXIX — 12/12. Глосса «dam - caus. украшать, одолевать» — нестыковка 1923 (damayati = «укрощает», crosswalk «control») — зафиксировано, не переписано."
+        notes: "Урок XX — именной: 2 глагола против ~19 согласных основ словаря (upaniṣad, taḍit, dṛṣad, bhūbhṛt, marut, yoṣit, śarad, samidh, sarit, suhṛd и др. — сама тема урока, в глагольный лемма-слой не входят); crosswalk 2/2 — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXII 1/1, XXIX 12/12, XXXVIII 5/7); каузативные cross-loci (whitney-sec:1042 — «treatment of the root before the causative-sign aya», kochergina-lesson:XXXV — каузативные глаголы) приняты из salvage-версии урока XX (auto-H2628, origin/h5671-drain, 06-10) при адъюдикации dual-run: обе версии курировали урок независимо, вердикты совпали по HB-151–158, verбете — моя версия базовая, salvage-добавка — эти две строки (остальные расхождения: whitney 377-391 vs 380-383, zal-1978:74 vs 75-76, kochergina:XXX vs XXVIII — выбраны мои, обе пары корректны, выбор зафиксирован)"
