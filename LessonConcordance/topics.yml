@@ -2850,3 +2850,107 @@ lessons:
           zalizniak-1978: "Z: «VIII класс» Бюлера в рядности распадается: tan/kṣan/man = N₁ (корни на n), kṛ = R₁ (аномалия karo-/kuru-, §135) — традиционная классификация, рядовая запись; duṣ = U₁"
           kochergina: "K: класс при глаголе, у tan/kar ещё и о.н.в. (tanu-/tanó-, karó-/kuru-, XVI/XVII) — частичная запись; duṣ/man в XVI–XVII не разобраны"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/5 корней урока — полное покрытие; главная находка: все «восьмые» Бюлера на n = З-ряд N₁, kṛ = R₁, а duṣ — вовсе IV класс (ряд U₁); corpus_layer.tsv урока: строк нет"
+  XXXVII:
+    title: "IX класс: вставка nā [ṇā]/nī [ṇī]/n [ṇ]; сокращение dhū/pū/lū/ṝ перед nā (dhunāti, stṛṇāti), gṛhṇāti и jānāti; 2 imper. par. согласных корней āna [āṇa] + утрата среднего носового (bandh→badhnāti); II класс: окончания прямо на корень, guṇa в сильных формах, корни на ā только P. (yā; ayān/ayuḥ)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5241–5459 (заголовок «# УРОК XXXVII.»)"
+    claims: [HB-51, HB-291, HB-292, HB-293, HB-294]
+    reuse_clusters:
+      - "2 нечётких совпадения словарных строк (scripts/data/matches.json, score 0.833, exact=false): jñā IX U ↔ Кочергина XXXIV.1217, snā II.-P ↔ XXXIV.1281 — словарный шум, не переиспользование предложений (честно)"
+      - "Кураторская находка (вне матчера): упражнения урока текстуально пересекаются с Кнауэром Nr.12 — badhnanti (12.6), vṛṇīṣve/avṛṇīta (12.7), gṛhṇīyāt + lubdham arthena (12.8 — дословно), punantu (дева-половина 12.6-сегмента «सोममध्वर्यवः सुन्वन्तु पुनन्तु») — самое плотное упражнение-пересечение серии"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXXVII нет (честно)
+    topics:
+      - key: class-ix-nin-insertion
+        title: "IX класс: вставка nā [ṇā] (сильные формы) / nī [ṇī] (слабые перед согласными) / n [ṇ] (перед гласными); полная парадигма krī в 4 наклонениях (krīṇāmi… krīṇīmaḥ… krīṇanti)"
+        buhler_locus: "урок XXXVII, вводный § (mdx 5243) + полная парадигма krī (mdx 5245–5295)"
+        topic_claims: [HB-291]
+        spots:
+          "kochergina-lesson:XVI": "древнеиндийские ученые назвали kryādi"
+          "zalizniak-1978-sec:136": "Основа равна корню в слабой ступени + суффикс nā/nī"
+          "knauer-fraza:Nr.12": "नलो राजा देवान्स्तुतिभिरप्रीणात्"
+          "sangram-article:thematic-present": "инфикс `-ṇā-` класса IX виден прямо в форме"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-291 TRUE/JUSTIFIED: трио nā/ṇī/n по силе + [ṇā/ṇī]-ретрофлексия скобками; таблица krī показывает распределение nā~nī~n на живой парадигме (krīṇāmi / krīṇīmaḥ / krīṇanti)"
+          whitney: "W+ — §717: знак класса nā́ (сильн., под ударением) / nī (слаб.) / нуль перед начальной гласной окончания — дословное трио; §718: образец krī с сильн./слабой основой; ṇatva — уровень §§183/185 (у Бюлера скобками)"
+          zalizniak-1978: "Z+ — §136: «Основа равна корню в слабой ступени + суффикс nā/nī» + «Суффикс имеет чередование ряда A~2~… соответственно ī перед гласной выпадает» — та же механика в рядовых терминах; примеры krīṇā-/badhnā-/gṛhṇā-/açnā-"
+          kochergina: "K+ — Занятие XVI: «Класс IX… назвали kryādi» + суффиксы nī-/nā- (слаб./средний вид) + «перед личными окончаниями, начинающимися с гласной, гласная суффикса выпадает» — все три алломорфа в одном занятии"
+        notes: "Полное трёх-алломорфное покрытие у всех четырёх свидетелей; корпусная рамка sangram: IX — самый малочастотный из атематических (371 чисто-классифицируемый токен против 5 931 у II); Кнауэр Nr.12: aprīṇāt (prī IX, импф.) и vyavṛṇot (vṝ IX, импф. с приставкой) — живые формы"
+      - key: class-ix-vowel-shortening
+        title: "Сокращение конечного гласного корней dhū/pū/lū и всех корней на ṝ перед nā (dhunāti, lunāti, stṛṇāti); лексические singles: grah→gṛhṇāti (saṃprasāraṇa), jñā→jānāti (утрата носового)"
+        buhler_locus: "урок XXXVII, п.3 (mdx 5299–5301): «Конечный гласный корней dhū…, pū…, lū…, и всех корней на ṝ сокращается перед признаком настоящего времени… От grah образуется gṛhṇāti и jñā — jānāti»"
+        topic_claims: [HB-292]
+        spots:
+          "kochergina-lesson:XVI": "При спряжении глаголов IX класса перед личными окончаниями, начинающимися с гласной, гласная суффикса выпадает"
+          "zalizniak-1978-sec:136": "сокращают чередующийся элемент"
+          "knauer-fraza:Nr.12": "सोममध्वर्यवः सुन्वन्तु पुनन्तु"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-292 TRUE/JUSTIFIED: сокращение dhū/pū/lū/ṝ перед nā + оба лексических singles (gṛhṇāti, jānāti) — весь инвентарь в одном пункте"
+          whitney: "W± — §728a: ū-корни сокращают перед класс-знаком (punā́ti; jū, dhū, lū); §729: grabh/grah→gṛhṇā́ti; §730b: jñā→jānā́ti. Классификационная вилка: dhū Уитни держит в VIII классе (§712: dhunó/dhunu, nu-класс), Бюлер — в IX (dhunāti); расхождение традиции, не аттестации"
+          zalizniak-1978: "Z+ — §136: «Открытые корни ряда U~2~ или R~2~ сокращают чередующийся элемент соответственно в u и ṛ: punā-/punī- от √pū, gṛṇā-/gṛṇī- от √gar (gṝ)» — та же редукция в рядовой записи"
+          kochergina: "K± — Занятие XVI: только vowel-drop перед гласными окончаниями; полное сокращение dhū/pū/lū/ṝ в занятиях не сведено — честный пробел"
+        notes: "Упражнение даёт живой пример: punantu (№5 деванагари-блока) — слабая основа punā- от сокращённого pū; тот же сегмент в дева-половине Кнауэра Nr.12 (sunvantu punantu) — переиспользование; gṛhṇāti/jānāti у З-1978 в §136 примерах"
+      - key: class-ix-ana-nasal-loss
+        title: "2 sg. imper. par. согласных корней IX класса āna [āṇa]; утрата среднего носового (bandh→badhnāni…badhnātu, полная imper. парадигма в примере)"
+        buhler_locus: "урок XXXVII, п.2 (mdx 5297): «Корни с исходом на согласный спрягаются точно также, но во 2 лице sing. par. imp. имеют āna [āṇa]… всегда его лишаются, напр. bandh… badhnāti»"
+        topic_claims: [HB-51]
+        spots:
+          "kochergina-lesson:XVI": "У глаголов IX класса, оканчивающихся на согласный - личное окончание -āna"
+          "zalizniak-1978-sec:136": "окончание -āna, которое заменяет суффикс"
+          "knauer-fraza:Nr.12": "yūpeṣu rajjubhir badhnanti"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-51 TRUE/JUSTIFIED: āna [āṇa] + «всегда его лишаются» (bandh→badhnāni…badhnantu); «всегда» реально категорично по аттестованному составу класса (bandh, granth, manth, stambh…)"
+          whitney: "W+ — §730a: носовой отсутствует перед класс-знаком (grath/granth, badh/bandh, math/manth, skabh/skambh, stabh/stambh); §730b: jñā теряет носовой (jānā́ti); hi-варианты 2 sg. imper. §722 (gṛbhṇīhi, badhnīhi, gṛhṇāhi); ānā́-замена суффикса — уровень общего императива атематики (§§566–571)"
+          zalizniak-1978: "Z+ — §136: «Особенность основ на согласную + nā/nī: в 2 sg imper. act. окончание -āna, которое заменяет суффикс, например badhāna, gṛhāṇa, açāna» — дословный двойник правила Бюлера"
+          kochergina: "K+ — Занятие XVI: «В основе настоящего времени носовой корня утрачивается» + «У глаголов IX класса, оканчивающихся на согласный — личное окончание -āna» — оба факта в одном занятии"
+        notes: "Живой слой упражнения: badhnanti (№3), vṛṇīṣve/avṛṇīta (№4), gṛhṇīyāt (№8) — три из четырёх IX-форм упражнения дублируют Кнауэра Nr.12 (12.6/12.7/12.8); crosswalk-вилка bandh: 1975 A₁ / 1978 N₁ (§66-rule-closed) — четвёртый случай серии (после rabh-XXX, arh-XXX, raj-XXXIII)"
+      - key: class-ii-suffixless-guna
+        title: "II класс: без суффикса, личные окончания непосредственно на корень; guṇa способных гласных в сильных формах; корни на ā исключительно Parasmaipada (yā; импф. 3 pl. ayān или ayuḥ)"
+        buhler_locus: "урок XXXVII, § «Корни II класса» (mdx 5303–5305) + таблица yā в 4 наклонениях (mdx 5307–5361)"
+        topic_claims: [HB-293, HB-294]
+        spots:
+          "kochergina-lesson:XVI": "Глаголы II класса обладают рядом индивидуальных особенностей"
+          "zalizniak-1978-sec:127": "Основа презенса равна корню"
+          "zalizniak-1978-sec:128": "Корни на ā. Образец"
+          "sangram-article:thematic-present": "II | 5 931 | атематический"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-293 TRUE/JUSTIFIED: «не имеют никакого суффикса… непосредственно к корню» + guṇa сильных форм (DCS mg_footnote: 154 301 токен — 19,74% презентной системы, крупнейший атематический); HB-294 TRUE/JUSTIFIED: ā-корни только P. (yā) — средние ā-презенты (mā, hā) Бюлер сам относит к III классу (mdx 6123)"
+          whitney: "W+ — §610: root-class «present-stem coincident with the root itself»; §§611–615: guṇa сильных форм + парадигмы as/i/ad; §619a: f. ā́ntī/ātī у ā-корней; §621a: факультативное us вместо an в 3 pl. impf. (ayuḥ против ayān) — прямой двойник таблицы урока"
+          zalizniak-1978: "Z+ — §127: «Основа презенса равна корню: в сильных формах в ступени guṇa, в слабых — в слабой ступени» — формула дословно; §128: «Корни на ā. Образец: √yā — yāmi… 3 pl ayuḥ (NB окончание…) и ayān» — ayuḥ/ayān-двойник в одном §"
+          kochergina: "K± — Занятие XVI: общие признаки II-класса на месте («Классы глаголов второго главного спряжения имеют следующие общие признаки», adādi по глаголу ad); ā-корни P.-only и ayān/ayuḥ-вариант отложены в занятие XVII (индивидуальные особенности) — честный пробел локуса"
+        notes: "Корпусная рамка: II — крупнейший атематический класс (5 931 чисто-классифицируемый токен в sangram-таблице против 371 у IX); NB-окончание ayuḥ — редкий случай, где школьная таблица Бюлера подробнее занятия Кочергиной; II-классовые irregulars (as, i, vid-тип) — следующий урок (XXXVIII), честно не натянуты сюда"
+      - key: lesson-roots
+        title: "Лемма-слой: 19 глаголов урока — 13 с классом (IX ×9, II ×4) + 6 приставочных без класса"
+        buhler_locus: "урок XXXVII, список «Глаголы:» (mdx 5363–5401)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: классы при глаголах даны цифрой (IX ×9, II ×4), приставочные без класса (ni-, prati-, ā-plu, nis-, nir-luṇṭh, apa-han); морфонологической записи нет"
+          whitney: "W: классы — в root-аппарате (krī §§717–718; vṛ «choose» — R₁-ряд §§717ff); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §136 даёт krīṇā-/badhnā-/gṛhṇā-/açnā- парами сильн./слаб. — единственный свидетель с парной записью корень+суффикс"
+          kochergina: "K: класс при глаголе в таблицах (yā P II, khyā P II в сводной таблице); записи рядов нет"
+        lemmas:
+          - {root: "aś", gloss: "есть (IX: aśnāti)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh21)"}
+          - {root: "granth", gloss: "плести (IX: grathnāti)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием grath (§66-rule)"}
+          - {root: "grah", gloss: "брать, хватать (IX: gṛhṇāti)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием grabh (wh196)"}
+          - {root: "ni-", gloss: "сдерживать, держать в руках (класс не указан)", z1975: "?", z1978: "?", crosswalk: "NO — приставочный глагол; корень в crosswalk-реестре отсутствует"}
+          - {root: "prati-", gloss: "принимать (класс не указан)", z1975: "?", z1978: "?", crosswalk: "NO — приставочный глагол без корня в реестре"}
+          - {root: "jñā", gloss: "знать (IX: jānāti)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh269)"}
+          - {root: "pā", gloss: "защищать (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 2 protect (wh449; hom 1 drink)"}
+          - {root: "puṣ", gloss: "умножать, питать (IX: puṣṇāti)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh464)"}
+          - {root: "prī", gloss: "радовать (IX: prīṇāti)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh480)"}
+          - {root: "ā-plu", gloss: "обливать", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh485)"}
+          - {root: "bhā", gloss: "сиять, блестеть (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh516)"}
+          - {root: "manth", gloss: "пахтать, взбалтывать (IX: mathnāti)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием math (wh544)"}
+          - {root: "mā", gloss: "мерить (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 measure (wh548)"}
+          - {root: "nis-", gloss: "творить (без корня и класса)", z1975: "?", z1978: "?", crosswalk: "NO — префикс без корня и класса (прецедент XXXV)"}
+          - {root: "muṣ", gloss: "красть (IX: muṣṇāti)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh567)"}
+          - {root: "nir-luṇṭh", gloss: "похищать (nis-luṇṭh)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes — под написанием luṭh, hom 2 rob (wh689)"}
+          - {root: "var (vṝ)", gloss: "избирать (IX: vṛṇīte)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — под написанием vṛ, hom 2 choose (wh741)"}
+          - {root: "snā", gloss: "купать (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh875)"}
+          - {root: "apa-han", gloss: "устранять", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/19 глаголов урока; ni-/prati-/nis- — приставочные без корня в реестре (честно); granth/grah/manth — под вариантами написания grath/grabh/math (ловушки написания серии); bandh-вилка 1975 A₁ / 1978 N₁ вынесена в тему class-ix-ana-nasal-loss"
