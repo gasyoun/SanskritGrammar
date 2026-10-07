@@ -92,6 +92,10 @@
       {
         "label": "урок XXV — конкорданс",
         "spot": "УРОК XXV."
+      },
+      {
+        "label": "урок XXVI — конкорданс",
+        "spot": "УРОК XXVI."
       }
     ],
     "ocherk": [
@@ -418,6 +422,22 @@
       {
         "label": "урок XXV — feminine-i",
         "spot": "Женский род основ на an/vas/ac — суффикс ī к кратчайшей форм"
+      },
+      {
+        "label": "урок XXVI — irregular-vocalic-stems",
+        "spot": "Неправильные гласные основы: i→an (akṣi/asthi/dadhi/sakthi →"
+      },
+      {
+        "label": "урок XXVI — monosyllabic-feminines",
+        "spot": "Моносложные ж. р.: ap (pl. tantum, ad-перед bh-диссимиляция:"
+      },
+      {
+        "label": "урок XXVI — substitute-stems",
+        "spot": "Подставные основы: jarā/jaras, pāda/pad, hṛdaya/hṛd (скоуп «"
+      },
+      {
+        "label": "урок XXVI — n-stems-irregular",
+        "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
       }
     ],
     "kochergina": [
@@ -716,6 +736,14 @@
       {
         "label": "урок XXV — feminine-i",
         "spot": "Женский род основ на an/vas/ac — суффикс ī к кратчайшей форм"
+      },
+      {
+        "label": "урок XXVI — substitute-stems",
+        "spot": "Подставные основы: jarā/jaras, pāda/pad, hṛdaya/hṛd (скоуп «"
+      },
+      {
+        "label": "урок XXVI — n-stems-irregular",
+        "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
       }
     ],
     "knauer": [
@@ -954,6 +982,18 @@
       {
         "label": "урок XXV — ac-stems",
         "spot": "Прилагательные на ac с тремя формами (prāñc/prāc/prāc; udac:"
+      },
+      {
+        "label": "урок XXVI — irregular-vocalic-stems",
+        "spot": "Неправильные гласные основы: i→an (akṣi/asthi/dadhi/sakthi →"
+      },
+      {
+        "label": "урок XXVI — substitute-stems",
+        "spot": "Подставные основы: jarā/jaras, pāda/pad, hṛdaya/hṛd (скоуп «"
+      },
+      {
+        "label": "урок XXVI — n-stems-irregular",
+        "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1062,6 +1102,10 @@
       {
         "label": "урок XXV — lesson-roots",
         "spot": "Лемма-слой: 2 корня урока (gam — только приставочные astam-g"
+      },
+      {
+        "label": "урок XXVI — lesson-roots",
+        "spot": "Лемма-слой: 3 глагола урока (ar с каузативом, guh с каузатив"
       }
     ],
     "sangram-thematic-present": [
@@ -1210,6 +1254,12 @@
       {
         "label": "урок XXV — vas-stems",
         "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      }
+    ],
+    "sangram-declension-overview": [
+      {
+        "label": "урок XXVI — n-stems-irregular",
+        "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
       }
     ]
   }
