@@ -2235,3 +2235,96 @@ lessons:
           zalizniak-1978: "Z: запись через ряды; открытые ряды tṝ (R₁) и bhū (U₂) против закрытых остальных; car — две строки (index-unknown + z-series R₂)"
           kochergina: "K: класс при глаголе, записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 12/13 лексем (11 корней yes + gaṇ NO) — неполный ряд (контрасты: I 10/13, II 10/11, IV 6/6, XIX 10/10, XXVI 3/3); три ловушки написания/префикса в одном уроке (upekṣ→īkṣ, pyai→pi, tṝ→tṛ — последняя повтор урока II); классовые расхождения Бюлера с реестром (bhakṣ X↔A₁, majj VI↔A₁) зафиксированы; каузативы uccar/yuj вне реестра (реестр по стеме)"
+  XXX:
+    title: "Инфинитив на -tum (guṇa; aniṭ-список; i-вставка, veṭ-двойники, ṝ-ряды); причастие долженствования tavya/anīya/ya (tavya=инфинитив, anīya, ступени -ya, предпоследние гласные, c/j→k/g)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 4123–4330 (заголовок «# УРОК XXX» — без точки)"
+    claims: [HB-234, HB-235, HB-236, HB-237, HB-238, HB-239, HB-240, HB-241, HB-242, HB-243, HB-244, HB-245, HB-43, HB-44, HB-45]
+    reuse_clusters:
+      - "5 совпадений упражнений с Knauer Nr. 19 (scripts/data/matches.json: buhler-1923.XXX.647/.650/.653/.657 ↔ knauer-1908.19.415–418, score 0.977–1.0) — почти половина упражнения урока (инфинитивы vaktuṁ/draṣṭuṁ/labdhuṁ/ṣṭuma…) — это упражнение Кнауэра Nr. 19 (§§203–205: инфинитив + герундив)"
+      - "2 exact-совпадения с Kochergina: XXX.647 ↔ kochergina-1998.XXIII.564 (1.0), XXX.658 ↔ kochergina-1998.XXIII.572 (1.0) — Занятие XXIII Кочергиной — глава seṭ/aniṭ + инфинитив/деепричастия, ровно тема урока"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXX нет (контраст с XXXIV/XXXVIII — записано честно)
+    topics:
+      - key: infinitive-tum
+        title: "Инфинитив: суффикс -tum при guṇa допускающих подъём гласных; гласные односложные — прямо (дифтонги e/ai/o → ā), d→t и m→n в группе 5"
+        buhler_locus: "урок XXX, §§1–2 (mdx 4125–4233): §1 «Infinitivus образуется посредством суффикса tum, перед которым гласные, допускающие подъем, изменяются в guṇa»; §2а pātum/dātum/jetum/netum/śrotum/dhātum/gātum; §2б группа 5: ad→attum, vid→vettum, gam→gantum"
+        topic_claims: [HB-234, HB-235, HB-236]
+        spots:
+          "kochergina-lesson:XXIII": "Различия корней seṭ и aniṭ проявляются при образовании инфинитива и деепричастий"
+          "zalizniak-1978-sec:164": "равен корню в ступени guṇa + tum"
+          "zalizniak-1978-sec:129": "инфинитив на -tum (§ 164), герундив на --tavya (§ 173)"
+          "sangram-article:infinitive": "отглагольное имя цели/намерения"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-234 TRUE/JUSTIFIED (guṇa перед -tum); HB-235 TRUE «ко всем почти» с честной лукавостью: ū/ṝ-исключения названы в самом правиле, остаток seṭ-корней сидит под «почти»; HB-236 TRUE — d→t/m→n как чистая фонетика без термина «сандхи»"
+          whitney: "W+ — §968: «only a single infinitive» (аккузатив имени на tu) — классическая редукция; §972: guṇa + i-вставка по типам корней (tu/itu/двоякие); §964b: у tavya «the rules are the same as for the formation of the infinitive» — структурный параллелизм §6а Бюлера; ведийская плеяда §§969–975 (ase/mane/taye/dhyai…) — за рамками школьного урока"
+          zalizniak-1978: "Z+ — §164: «Инфинитив равен корню в ступени guṇa + tum (у корней seṭ itum)» с примерами того же ряда (dātum, chettum, dogdhum, draṣṭum, āptum, grahītum); seṭ-оговорка в скобках — та же рамка, что у Бюлера без термина"
+          kochergina: "K+ — Занятие XXIII §2: «у глаголов seṭ - itum к глагольному корню, причем ā̆ в корне остается неизменной, ī̆, ū̆ выступают в ступени guṇa» + «Ударение падает на корень» — ударение, которого у Бюлера нет; d→t/m→n-ассимиляции в занятии нет (она у Кочергиной — во внутренних saṃdhi §3 того же занятия)"
+        notes: "sangram infinitive (SG-MO-025): -tum 9681 токенов (~82 % инфинитивов) против ведийского остатка 571 (~4,9 %) — корпусная статистика за «only a single» Уитни; группа 5 (d/m) — редкий случай безымянной фонетики у Бюлера, у Зализняка это §36-механика"
+      - key: infinitive-i-insertion
+        title: "i-слой инфинитива: aniṭ-список (~75 корней, 5 групп, «наиболее употребительные»); dṛś/sṛj — r вместо guṇa (kṛṣ/tṛṣ/spṛś — факультативно); i-вставка у ū/ḍī/śī, большинства согласных, X-класс/каузативы -ayitum; veṭ-двойники (gāh, mṛj, sah, guh); mṛj всегда vṛddhi; ṝ-ряды i/ī, grah всегда ī"
+        buhler_locus: "урок XXX, сноски * и ** + §§3–5 (mdx 4235–4257): сноска * aniṭ-список 5 групп; сноска ** dṛś/sṛj r-ряд; §3 bhavitum/ḍayitum/īkṣitum/vanditum, kathayitum/yojayitum; §4 gāhitum/gāḍhum, mārṣṭum/mārjitum, sahitum/soḍhum, gūhitum/goḍhum; §5 taritum/tarītum, grahītum"
+        topic_claims: [HB-43, HB-237, HB-238, HB-239, HB-240, HB-44]
+        spots:
+          "kochergina-lesson:XXIII": "по индийской терминологии называются seṭ"
+          "zalizniak-1978-sec:129": "практически не связаны с делением корней на aniṭ и seṭ"
+          "knauer-fraza:Nr.19": "anṛtaṁ vaktuṁ nā 'rhasi"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-43 TRUE: aniṭ как частотный перечень («наиболее употребительные»), а не исчерпывающая кārikā — хорошая педагогика; HB-237 TRUE: обязательность dṛś/sṛj против факультативности kṛṣ/tṛṣ/spṛś — точное пановское am/factitive деление; HB-239 TRUE veṭ-двойники; HB-240 TRUE ṝ-вилка + grah всегда ī (never *grahitum); HB-44 TRUE mṛj vṛddhi (§627)"
+          whitney: "W+ — §972: распределение tu/itu/двояких поимённо (kṣip/tap/tyaj… только tu; gāh/carv/jap/mad/yat… только itu; mṛj mā̆rṣṭu/mārjitu — дословно двойник Бюлера §4); §227: dṛç/sṛj ra-ряд + optional set; §627 mṛj vṛddhi «par excellence»; aniṭ — закрытый традиционный класс (~сотня корней), Бюлер режет его до частотного ядра"
+          zalizniak-1978: "Z± — §129: соединительная i при -t-суффиксах подчиняется «особым правилам, которые практически не связаны с делением корней на aniṭ и seṭ» — морфонологическая подача вместо aniṭ-перечня; лексических списков в Очерке нет (гипотеза МГ «списков у Зализняка нет» подтверждена на этом локусе)"
+          kochergina: "K+ — Занятие XXIII §1: триада seṭ/aniṭ/veṭ с терминами (sa+iṭ, an+iṭ, vā+iṭ) и примерами из пройденных уроков — та же триада, что у Бюлера в разрозненных сносках и §§3–5; aniṭ-перечня нет, veṭ — «немногочисленные корни… например nī» — пример другой (veṭ-статус nī по Бюлеру не оговаривается)"
+        notes: "Кнауэр Nr. 19 — сосед по упражнению: 4 совпадения с уроком (matches.json XXX.647–657 ↔ Nr.19.415–418), vaktuṁ (группа 2, c→kt) и сноска draṣṭum/sraṣṭum от darç/sarj — иллюстрации r-ряда §-сноски **; talmud-crosswalk — арбитр seṭ/aniṭ-морфокласса (роли арбитров claims.yml, D-B); grah-«всегда ī» — пановское 7.2.37–38, у Бюлера голый факт"
+      - key: gerundive-inventory
+        title: "Причастие долженствования: инвентарь tavya (f ā), anīya (f ā), ya (f ā); tavya — те же изменения корня и i/ī, что в инфинитиве (vaktavya, labdhavya); anīya — дифтонги → ā, guṇa, X-класс/каузативы как praes. pass. (dānīya, śravaṇīya, bodhanīya, coraṇīya, śrāvaṇīya — но gūhanīya, mārjanīya)"
+        buhler_locus: "урок XXX, §6–6б (mdx 4259–4263): «Part. fut. pass. образуется посредством tavya, anīya и ya»; §6а «Перед tavya с корнями происходят те же изменения… как в инфинитиве»; §6б anīya-ряд с двумя встречными примерами"
+        topic_claims: [HB-45, HB-241, HB-242]
+        spots:
+          "kochergina-lesson:XXV": "Оно образуется прибавлением к корню суффиксов с одинаковым грамматическим значением -ya, -(i)tavya или -anīya"
+          "zalizniak-1978-sec:173": "иногда называются также пассивными причастиями будущего времени"
+          "sangram-article:gerundive": "отглагольное прилагательное со значением необходимости"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-45 TRUE: трёхчленный инвентарь полный (DCS: -ya 1046 / -tavya 523 / -anīya 230 distinct форм, mg_footnote); HB-241 TRUE: параллелизм tavya↔infinitive структурный (tu-стем), у Уитни §964b дословно; HB-242 TRUE с самовыловленными встречными (gūhanīya без guṇa, mārjanīya с vṛddhi — лексические причуды guh/mṛj, cf. HB-44)"
+          whitney: "W+ — §962: «The suffixes… are three: ya, tavya, anīya»; §962a диахрония, которой у Бюлера нет: ya «in all periods… from the earliest down», tavya/anīya «entirely wanting in the oldest Veda»; §964a: tavya = tu + ya (vṛddhi u→av); §965: anīya = na + īya — вторичные деривации от nomina actionis"
+          zalizniak-1978: "Z+ — §173: «Герундивы (иногда называются также пассивными причастиями будущего времени)» + вывод tavya из инфинитива (§164) и anīya из имени на -ana- (§174, п. 1) «простой заменой суффиксов» — тот же структурный параллелизм, что §6а Бюлера; hantavya-пример с тем же значением «над которым следует произвести действие»"
+          kochergina: "K± — Занятие XXV §2: термин «пассивное причастие будущего времени» + три граммемы (пассивность, модальность, будущее время) — фрейм шире; инвентарь тот же (-ya, -(i)tavya, -anīya), но огласовка подана грейдовой рамкой: «сильной ступени (kar → kārya), средней (ji → jeya), слабой (darś → dṛśya)» — другой ключ к той же зоне"
+        notes: "sangram gerundive (SG-MO-024): Gdv 28 260 токенов в DCS; -ya 19 901 / -tavya 5 740 / -anīya 1 280 — соотношение ~15:5:1 качественно совпадает с mg_footnote HB-45 (distinct-формы 1046:523:230); встречные gūhanīya/mārjanīya — тот же guh/mṛj-дуэт, что у veṭ-двойников §4"
+      - key: gerundive-ya-exceptions
+        title: "Ступени герундива на -ya: конечные ā/e/ai/o → e (deya, geya, seya); i/ī → guṇa (jeya, neya); ṛ/ṝ → vṛddhi (kārya, tārya); u/ū → av/āv при необходимости (śravya vs śrāvya); предпоследние i/u/ḷ → guṇa (vedya, bodhya, tṛdya), ṛ — нет; предпоследнее a → vṛddhi, кроме губных + jan/yat/śak/sah (vācya, labhya, śakya); c/j → k/g у aniṭ (sekya, aṅgya) за 7 исключениями (vac, tyaj, yac, yaj, bhuj, niyuj, prayuj); неправильные (itya, kṛtya, khāya, dṛtya, bhṛtya, mṛjya/mārjya, śasya/śaṅsya, stutya, vadhya)"
+        buhler_locus: "урок XXX, §6в (mdx 4265–4269): плотнейший исключительный локус урока — ~25 форм-примеров + 7 palatal-исключений + 12 неправильных в одном абзаце"
+        topic_claims: [HB-243, HB-244, HB-245]
+        spots:
+          "kochergina-lesson:XXV": "С суффиксом -ya корень выступает в сильной ступени огласовки"
+          "zalizniak-1978-sec:173": "ступень корня большей частью как в каузативе"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — HB-243 TRUE (формы без исключений, включая семантическую вилку śravya/śrāvya «следует слушать» vs «необходимо слушать» — yat/ṇyat-глосса грамматистов, уникальная в школьной линии); HB-244 TRUE: carve-out jan/yat/śak/sah — традиционный; HB-245 TRUE: 7 palatal-исключений, причём vācya из примера HB-244 — само исключение HB-245 (vac в списке!) — перекрёстная проверка внутри урока; за рамками claims — хвост неправильных §6в (itya, kṛtya, khāya, dṛtya, bhṛtya, ālabmbhya, mṛjya/mārjya, śasya/śaṅsya, stutya, vadhya), где han→vadhya — единственный супплетивный"
+          whitney: "W+ — §963: «The other vowels either remain unchanged, or have the guṇa or the vṛddhi strengthening» — та же зона через лексически варьирующее «или» (déya, jáyya, bháyya, návya, bhāvyá, vā́rya, nīya/jeya/dhūya поздние); короткогласная t-вставка (itya, mitya, çrútya, stútya, kṛtya — «the only Vedic examples») — тот же неправильный ряд §6в; ср. §1213 — ya-суффикс как обычное адъективное -ya"
+          zalizniak-1978: "Z+ — §173: «ступень корня большей частью как в каузативе» + осколки-исключения рядом (jayya/jeya, dṛçya, gīrya; «Корни на ā меняют ā на e» deya; ay отбрасывается у каузативов; -tya у корней на i/u/ar: çrutya, kṛtya) — систематика вместо перечня; palatal-исключений (c/j→k/g) в Очерке нет"
+          kochergina: "K± — грейдовая рамка (сильная/средняя/слабая + -tya при корне на краткую гласную kar → kṛtya) покрывает ступенчатую зону HB-243 ключом «ступень огласовки», но предпоследние гласные (HB-244) и palatal-исключения (HB-245) в занятии не разведены"
+        notes: "Плотнейший исключительный локус серии: ~44 форм у Бюлера в одном §6в против лексически варьирующего «или» Уитни (§963) и «большей частью как в каузативе» Зализняка (§173) — гипотеза МГ «у Бюлера много» подтверждена с максимумом плотности; ср. HB-245/Pāṇini 7.3.52 cajoḥ ku ghiṇṇyatoḥ"
+      - key: lesson-roots
+        title: "Лемма-слой: 11 глаголов урока (10 корней — kṛ дважды: apā-kar и manas kar) — морфонологическая запись"
+        buhler_locus: "урок XXX, список «Глаголы:» (mdx 4271–4293)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: āp (sam-āp),      gloss: "оканчивать",                    z1975: "A₂ (conf medium)", z1978: "A₂ (closed)", crosswalk: "yes (wno 26 «obtain») — ловушка префикса"}
+          - {root: kṛ (apā-kar),     gloss: "платить",                       z1975: "R₁ (conf high; две строки-омонима: make wno 106 / scatter wno 107)", z1978: "R₁ (open)", crosswalk: "yes (wno 106 «make») — ловушка написания: Бюлер печатает kar, реестр под kṛ"}
+          - {root: arh,              gloss: "быть достойным (I. P.)",        z1975: "A₁ (conf medium)", z1978: "R₁ (closed)", crosswalk: "yes (wno 18 «deserve») — расхождение рядов свидетелей: 1975-derived A₁ (= I. P. Бюлера) против 1978 R₁ — открытый вопрос реестра, зафиксировано"}
+          - {root: gāh (ava-gāh),    gloss: "погружаться (I. Ā.)",           z1975: "A₂ (conf medium)", z1978: "A₂ (closed)", crosswalk: "yes (wno 178 «plunge») — тот же gāh, что в veṭ-парах §4 урока"}
+          - {root: dhā (vi-dhā),     gloss: "приказывать",                   z1975: "A₂ (conf medium; две строки: put wno 393 / suck wno 394)", z1978: "A₂ (open)", crosswalk: "yes (wno 393 «put») — ловушка префикса + омонимия"}
+          - {root: nṛt (nart),       gloss: "плясать (IV. P.)",              z1975: "R₁ (conf high)", z1978: "R₁ (closed)", crosswalk: "yes (wno 433 «dance») — ловушка написания: nart→nṛt; IV-класс Бюлера (назальный инфикс) против ряда корня R₁ — класс ≠ ряд"}
+          - {root: bhū (pra-bhū),    gloss: "быть могущественным",           z1975: "U₂ (conf high)", z1978: "U₂ (open)", crosswalk: "yes (wno 528 «be») — ловушка префикса; открытый ряд"}
+          - {root: yat,              gloss: "стремиться (I. Ā.)",            z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 598 «stretch») — у Уитни §972 только-itu (yā́itum) — корень из i-таблицы урока"}
+          - {root: vac,              gloss: "читать (caus.)",                z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes (wno 699 «speak») — у Бюлера помета caus. «читать» (vācayati): значение лексемы, не корня; vācya из §6в — то же самое vac без guṇa"}
+          - {root: vṛt (pra-vart),   gloss: "отправляться",                  z1975: "R₁ (conf high)", z1978: "R₁ (closed)", crosswalk: "yes (wno 744 «turn») — ловушка префикса"}
+        exceptions:
+          verdict: "CONFIRMED (полнота 11/11)"
+          buhler: "B± — класс дан у 5 из 11 лексем (arh I. P., ava-gāh I. Ā., nart IV. P., yat I. Ā., vac caus.), у 2 — каузатив/пометка (vac caus., pra-vart без класса), префиксы разведены дефисом (sam-āp, apā-kar, ava-gāh, vi-dhā, pra-bhū, pra-vart); manas kar — аналитическая фраза; морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 26, 106, 18, 178, 393, 433, 528, 598, 699, 744); yat и gāh — в tu/itu-таблице §972 (только-itu ряд); vac — «speak», лексемное «читать» Бюлера — каузатив vācay"
+          zalizniak-1978: "Z: запись через ряды; открытые ряды kṛ (R₁ open) и dhā (A₂ open), bhū (U₂ open) против закрытых остальных; arh — единственное расхождение derived/1978 (A₁ vs R₁)"
+          kochergina: "K: класс при глаголе, записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 11/11 лексем (9 корней + kṛ дважды) — полный ряд (контрасты: I 10/13, II 10/11, XXVII 12/13, XXXVIII 5/7); две ловушки написания (kar→kṛ ×2, nart→nṛt) и три префиксных; arh-расхождение рядов 1975/1978 — первый такой случай серии, зафиксирован без сглаживания; vac caus-глосса — уровень лексемы против корня, как bhakṣ X. P. урока XXVII"
