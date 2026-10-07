@@ -7,7 +7,7 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 
 Для каждого урока [Бюлера-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) и каждой темы внутри него — соответствующий локус в остальных оцифрованных источниках сайта; план и решения D1–D16 + адденда перелинковки E1–E9: [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md). Гипотеза МГ об исключениях проверяется по каждой теме (блок «Исключения»); карта связей книг — [GrammarRelations](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map).
 
-*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **VIII**, **XIX**, **XX**, **XXI**, **XXV**, **XXVI**, **XXVII**, **XXX**, **XXXI**, **XXXII**, **XXXIII**, **XXXIV**, **XXXV**, **XXXVI** — остальные по мере batch-минта (E8: каркас на 48).*
+*Уроки (48): **I**, **II**, **III**, **IV**, **V**, **XXII**, **XXIX**, **XXXVIII**, **VI**, **IX**, **XI**, **XIII**, **XIV**, **XII**, **XV**, **XVI**, **XVII**, **XVIII**, **VIII**, **XIX**, **XX**, **XXI**, **XXV**, **XXVI**, **XXVII**, **XXX**, **XXXI**, **XXXII**, **XXXIII**, **XXXIV**, **XXXV**, **XXXVI**, **XXXVII** — остальные по мере batch-минта (E8: каркас на 48).*
 
 ## Урок I — Present indicativus I класса (тематические a-основы); висарга-saṃdhi
 
@@ -4341,6 +4341,165 @@ sidebar_label: "Поурочный конкорданс Бюлера"
 *Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 5/5 корней урока — полное покрытие; главная находка: все «восьмые» Бюлера на n = З-ряд N₁, kṛ = R₁, а duṣ — вовсе IV класс (ряд U₁); corpus_layer.tsv урока: строк нет
 
 *Регистр утверждений урока:* [HB-287](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4682), [HB-288](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4697), [HB-289](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4711), [HB-290](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4726)
+
+## Урок XXXVII — IX класс: вставка nā [ṇā]/nī [ṇī]/n [ṇ]; сокращение dhū/pū/lū/ṝ перед nā (dhunāti, stṛṇāti), gṛhṇāti и jānāti; 2 imper. par. согласных корней āna [āṇa] + утрата среднего носового (bandh→badhnāti); II класс: окончания прямо на корень, guṇa в сильных формах, корни на ā только P. (yā; ayān/ayuḥ)
+
+*Локус текста:* BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5241–5459 (заголовок «# УРОК XXXVII.»)
+
+### IX класс: вставка nā [ṇā] (сильные формы) / nī [ṇī] (слабые перед согласными) / n [ṇ] (перед гласными); полная парадигма krī в 4 наклонениях (krīṇāmi… krīṇīmaḥ… krīṇanti)
+
+*Бюлер:* урок XXXVII, вводный § (mdx 5243) + полная парадигма krī (mdx 5245–5295)
+
+*Темы урока (1/5):* **class-ix-nin-insertion** · [class-ix-vowel-shortening](#:~:text=%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20dh%C5%AB) · [class-ix-ana-nasal-loss](#:~:text=2%20sg.%20imper.%20par.%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20IX%20%D0%BA%D0%BB) · [class-ii-suffixless-guna](#:~:text=II%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B1%D0%B5%D0%B7%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%2C%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D1%8F) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2019%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%E2%80%94%2013%20%D1%81%20%D0%BA%D0%BB%D0%B0)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 717–718](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#717>) | 0.97 | 2 |
+| Зализняк, Очерк 1978 | [§§ 136](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%20%D1%80%D0%B0%D0%B2%D0%BD%D0%B0%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8E%20%D0%B2%20%D1%81%D0%BB%D0%B0%D0%B1%D0%BE%D0%B9%20%D1%81%D1%82%D1%83%D0%BF%D0%B5%D0%BD%D0%B8%20%2B%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%20n%C4%81%2Fn%C4%AB) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XVI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%B4%D1%80%D0%B5%D0%B2%D0%BD%D0%B5%D0%B8%D0%BD%D0%B4%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B5%20%D1%83%D1%87%D0%B5%D0%BD%D1%8B%D0%B5%20%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BB%D0%B8%20kry%C4%81di) | 0.9 | 3 |
+| Кнауэр, Frazy 1908 | [Nr.12](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E0%A4%A8%E0%A4%B2%E0%A5%8B%20%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%BE%20%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81%E0%A4%A4%E0%A4%BF%E0%A4%AD%E0%A4%BF%E0%A4%B0%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%A3%E0%A4%BE%E0%A4%A4%E0%A5%8D) | 0.85 | 2 |
+| Sangram | [thematic-present](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/thematic-present#:~:text=%D0%B8%D0%BD%D1%84%D0%B8%D0%BA%D1%81%20%60-%E1%B9%87%C4%81-%60%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%20IX%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%20%D0%BF%D1%80%D1%8F%D0%BC%D0%BE%20%D0%B2%20%D1%84%D0%BE%D1%80%D0%BC%D0%B5) | 0.8 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B+ — HB-291 TRUE/JUSTIFIED: трио nā/ṇī/n по силе + [ṇā/ṇī]-ретрофлексия скобками; таблица krī показывает распределение nā~nī~n на живой парадигме (krīṇāmi / krīṇīmaḥ / krīṇanti)
+- **whitney**: W+ — §717: знак класса nā́ (сильн., под ударением) / nī (слаб.) / нуль перед начальной гласной окончания — дословное трио; §718: образец krī с сильн./слабой основой; ṇatva — уровень §§183/185 (у Бюлера скобками)
+- **zalizniak-1978**: Z+ — §136: «Основа равна корню в слабой ступени + суффикс nā/nī» + «Суффикс имеет чередование ряда A~2~… соответственно ī перед гласной выпадает» — та же механика в рядовых терминах; примеры krīṇā-/badhnā-/gṛhṇā-/açnā-
+- **kochergina**: K+ — Занятие XVI: «Класс IX… назвали kryādi» + суффиксы nī-/nā- (слаб./средний вид) + «перед личными окончаниями, начинающимися с гласной, гласная суффикса выпадает» — все три алломорфа в одном занятии
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-291](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4741) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Полное трёх-алломорфное покрытие у всех четырёх свидетелей; корпусная рамка sangram: IX — самый малочастотный из атематических (371 чисто-классифицируемый токен против 5 931 у II); Кнауэр Nr.12: aprīṇāt (prī IX, импф.) и vyavṛṇot (vṝ IX, импф. с приставкой) — живые формы
+
+### Сокращение конечного гласного корней dhū/pū/lū и всех корней на ṝ перед nā (dhunāti, lunāti, stṛṇāti); лексические singles: grah→gṛhṇāti (saṃprasāraṇa), jñā→jānāti (утрата носового)
+
+*Бюлер:* урок XXXVII, п.3 (mdx 5299–5301): «Конечный гласный корней dhū…, pū…, lū…, и всех корней на ṝ сокращается перед признаком настоящего времени… От grah образуется gṛhṇāti и jñā — jānāti»
+
+*Темы урока (2/5):* [class-ix-nin-insertion](#:~:text=IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20n%C4%81%20%5B%E1%B9%87%C4%81%5D%20%28%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B) · **class-ix-vowel-shortening** · [class-ix-ana-nasal-loss](#:~:text=2%20sg.%20imper.%20par.%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20IX%20%D0%BA%D0%BB) · [class-ii-suffixless-guna](#:~:text=II%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B1%D0%B5%D0%B7%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%2C%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D1%8F) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2019%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%E2%80%94%2013%20%D1%81%20%D0%BA%D0%BB%D0%B0)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 728–729](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#728>) | 0.97 | 2 |
+| Зализняк, Очерк 1978 | [§§ 136](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D1%81%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B0%D1%8E%D1%82%20%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D1%83%D1%8E%D1%89%D0%B8%D0%B9%D1%81%D1%8F%20%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82) | 0.9 | 2 |
+| Кочергина 1998 | [Занятие XVI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%9F%D1%80%D0%B8%20%D1%81%D0%BF%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B8%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8%2C%20%D0%BD%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D1%8E%D1%89%D0%B8%D0%BC%D0%B8%D1%81%D1%8F%20%D1%81%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B9%2C%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%20%D0%B2%D1%8B%D0%BF%D0%B0%D0%B4%D0%B0%D0%B5%D1%82) | 0.85 | 1 |
+| Кнауэр, Frazy 1908 | [Nr.12](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=%E0%A4%B8%E0%A5%8B%E0%A4%AE%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%B5%E0%A4%83%20%E0%A4%B8%E0%A5%81%E0%A4%A8%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A5%81%20%E0%A4%AA%E0%A5%81%E0%A4%A8%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A5%81) | 0.85 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B+ — HB-292 TRUE/JUSTIFIED: сокращение dhū/pū/lū/ṝ перед nā + оба лексических singles (gṛhṇāti, jānāti) — весь инвентарь в одном пункте
+- **whitney**: W± — §728a: ū-корни сокращают перед класс-знаком (punā́ti; jū, dhū, lū); §729: grabh/grah→gṛhṇā́ti; §730b: jñā→jānā́ti. Классификационная вилка: dhū Уитни держит в VIII классе (§712: dhunó/dhunu, nu-класс), Бюлер — в IX (dhunāti); расхождение традиции, не аттестации
+- **zalizniak-1978**: Z+ — §136: «Открытые корни ряда U~2~ или R~2~ сокращают чередующийся элемент соответственно в u и ṛ: punā-/punī- от √pū, gṛṇā-/gṛṇī- от √gar (gṝ)» — та же редукция в рядовой записи
+- **kochergina**: K± — Занятие XVI: только vowel-drop перед гласными окончаниями; полное сокращение dhū/pū/lū/ṝ в занятиях не сведено — честный пробел
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-292](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4756) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Упражнение даёт живой пример: punantu (№5 деванагари-блока) — слабая основа punā- от сокращённого pū; тот же сегмент в дева-половине Кнауэра Nr.12 (sunvantu punantu) — переиспользование; gṛhṇāti/jānāti у З-1978 в §136 примерах
+
+### 2 sg. imper. par. согласных корней IX класса āna [āṇa]; утрата среднего носового (bandh→badhnāni…badhnātu, полная imper. парадигма в примере)
+
+*Бюлер:* урок XXXVII, п.2 (mdx 5297): «Корни с исходом на согласный спрягаются точно также, но во 2 лице sing. par. imp. имеют āna [āṇa]… всегда его лишаются, напр. bandh… badhnāti»
+
+*Темы урока (3/5):* [class-ix-nin-insertion](#:~:text=IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20n%C4%81%20%5B%E1%B9%87%C4%81%5D%20%28%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B) · [class-ix-vowel-shortening](#:~:text=%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20dh%C5%AB) · **class-ix-ana-nasal-loss** · [class-ii-suffixless-guna](#:~:text=II%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B1%D0%B5%D0%B7%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%2C%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D1%8F) · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2019%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%E2%80%94%2013%20%D1%81%20%D0%BA%D0%BB%D0%B0)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 730–732](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#730>) | 0.97 | 3 |
+| Зализняк, Очерк 1978 | [§§ 136](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D0%B5%20-%C4%81na%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81) | 0.9 | 1 |
+| Кочергина 1998 | [Занятие XVI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%A3%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%2C%20%D0%BE%D0%BA%D0%B0%D0%BD%D1%87%D0%B8%D0%B2%D0%B0%D1%8E%D1%89%D0%B8%D1%85%D1%81%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D0%B9%20-%20%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D0%B5%20-%C4%81na) | 0.9 | 2 |
+| Кнауэр, Frazy 1908 | [Nr.12](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023#:~:text=y%C5%ABpe%E1%B9%A3u%20rajjubhir%20badhnanti) | 0.85 | 3 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED**
+
+- **buhler**: B+ — HB-51 TRUE/JUSTIFIED: āna [āṇa] + «всегда его лишаются» (bandh→badhnāni…badhnantu); «всегда» реально категорично по аттестованному составу класса (bandh, granth, manth, stambh…)
+- **whitney**: W+ — §730a: носовой отсутствует перед класс-знаком (grath/granth, badh/bandh, math/manth, skabh/skambh, stabh/stambh); §730b: jñā теряет носовой (jānā́ti); hi-варианты 2 sg. imper. §722 (gṛbhṇīhi, badhnīhi, gṛhṇāhi); ānā́-замена суффикса — уровень общего императива атематики (§§566–571)
+- **zalizniak-1978**: Z+ — §136: «Особенность основ на согласную + nā/nī: в 2 sg imper. act. окончание -āna, которое заменяет суффикс, например badhāna, gṛhāṇa, açāna» — дословный двойник правила Бюлера
+- **kochergina**: K+ — Занятие XVI: «В основе настоящего времени носовой корня утрачивается» + «У глаголов IX класса, оканчивающихся на согласный — личное окончание -āna» — оба факта в одном занятии
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-51](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1031) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Живой слой упражнения: badhnanti (№3), vṛṇīṣve/avṛṇīta (№4), gṛhṇīyāt (№8) — три из четырёх IX-форм упражнения дублируют Кнауэра Nr.12 (12.6/12.7/12.8); crosswalk-вилка bandh: 1975 A₁ / 1978 N₁ (§66-rule-closed) — четвёртый случай серии (после rabh-XXX, arh-XXX, raj-XXXIII)
+
+### II класс: без суффикса, личные окончания непосредственно на корень; guṇa способных гласных в сильных формах; корни на ā исключительно Parasmaipada (yā; импф. 3 pl. ayān или ayuḥ)
+
+*Бюлер:* урок XXXVII, § «Корни II класса» (mdx 5303–5305) + таблица yā в 4 наклонениях (mdx 5307–5361)
+
+*Темы урока (4/5):* [class-ix-nin-insertion](#:~:text=IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20n%C4%81%20%5B%E1%B9%87%C4%81%5D%20%28%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B) · [class-ix-vowel-shortening](#:~:text=%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20dh%C5%AB) · [class-ix-ana-nasal-loss](#:~:text=2%20sg.%20imper.%20par.%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20IX%20%D0%BA%D0%BB) · **class-ii-suffixless-guna** · [lesson-roots](#:~:text=%D0%9B%D0%B5%D0%BC%D0%BC%D0%B0-%D1%81%D0%BB%D0%BE%D0%B9%3A%2019%20%D0%B3%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%20%D1%83%D1%80%D0%BE%D0%BA%D0%B0%20%E2%80%94%2013%20%D1%81%20%D0%BA%D0%BB%D0%B0)
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Уитни 1889 | [§§ 610–615](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#610>) | 0.97 | 2 |
+| Уитни 1889 | [§§ 619–621](<https://en.wikisource.org/wiki/Sanskrit_Grammar_(Whitney)/Chapter_IX#619>) | 0.9 | 2 |
+| Зализняк, Очерк 1978 | [§§ 127](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%20%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%81%D0%B0%20%D1%80%D0%B0%D0%B2%D0%BD%D0%B0%20%D0%BA%D0%BE%D1%80%D0%BD%D1%8E) | 0.97 | 1 |
+| Зализняк, Очерк 1978 | [§§ 128](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned#:~:text=%D0%9A%D0%BE%D1%80%D0%BD%D0%B8%20%D0%BD%D0%B0%20%C4%81.%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%B5%D1%86) | 0.97 | 2 |
+| Кочергина 1998 | [Занятие XVI](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode#:~:text=%D0%93%D0%BB%D0%B0%D0%B3%D0%BE%D0%BB%D1%8B%20II%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%20%D0%BE%D0%B1%D0%BB%D0%B0%D0%B4%D0%B0%D1%8E%D1%82%20%D1%80%D1%8F%D0%B4%D0%BE%D0%BC%20%D0%B8%D0%BD%D0%B4%D0%B8%D0%B2%D0%B8%D0%B4%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%BE%D1%81%D0%BE%D0%B1%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9) | 0.9 | 2 |
+| Sangram | [thematic-present](https://gasyoun.github.io/SanskritGrammar/grammars/sangram/articles/thematic-present#:~:text=II%20%7C%205%20931%20%7C%20%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9) | 0.8 | 1 |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **CONFIRMED-WITH-NUANCE**
+
+- **buhler**: B+ — HB-293 TRUE/JUSTIFIED: «не имеют никакого суффикса… непосредственно к корню» + guṇa сильных форм (DCS mg_footnote: 154 301 токен — 19,74% презентной системы, крупнейший атематический); HB-294 TRUE/JUSTIFIED: ā-корни только P. (yā) — средние ā-презенты (mā, hā) Бюлер сам относит к III классу (mdx 6123)
+- **whitney**: W+ — §610: root-class «present-stem coincident with the root itself»; §§611–615: guṇa сильных форм + парадигмы as/i/ad; §619a: f. ā́ntī/ātī у ā-корней; §621a: факультативное us вместо an в 3 pl. impf. (ayuḥ против ayān) — прямой двойник таблицы урока
+- **zalizniak-1978**: Z+ — §127: «Основа презенса равна корню: в сильных формах в ступени guṇa, в слабых — в слабой ступени» — формула дословно; §128: «Корни на ā. Образец: √yā — yāmi… 3 pl ayuḥ (NB окончание…) и ayān» — ayuḥ/ayān-двойник в одном §
+- **kochergina**: K± — Занятие XVI: общие признаки II-класса на месте («Классы глаголов второго главного спряжения имеют следующие общие признаки», adādi по глаголу ad); ā-корни P.-only и ayān/ayuḥ-вариант отложены в занятие XVII (индивидуальные особенности) — честный пробел локуса
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*HB-утверждения темы:* [HB-293](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4771), [HB-294](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4788) (реестр — [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml))
+
+*Примечание:* Корпусная рамка: II — крупнейший атематический класс (5 931 чисто-классифицируемый токен в sangram-таблице против 371 у IX); NB-окончание ayuḥ — редкий случай, где школьная таблица Бюлера подробнее занятия Кочергиной; II-классовые irregulars (as, i, vid-тип) — следующий урок (XXXVIII), честно не натянуты сюда
+
+### Лемма-слой: 19 глаголов урока — 13 с классом (IX ×9, II ×4) + 6 приставочных без класса
+
+*Бюлер:* урок XXXVII, список «Глаголы:» (mdx 5363–5401)
+
+*Темы урока (5/5):* [class-ix-nin-insertion](#:~:text=IX%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B2%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0%20n%C4%81%20%5B%E1%B9%87%C4%81%5D%20%28%D1%81%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%84%D0%BE%D1%80%D0%BC%D1%8B) · [class-ix-vowel-shortening](#:~:text=%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%BE%D0%BD%D0%B5%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20dh%C5%AB) · [class-ix-ana-nasal-loss](#:~:text=2%20sg.%20imper.%20par.%20%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%81%D0%BD%D1%8B%D1%85%20%D0%BA%D0%BE%D1%80%D0%BD%D0%B5%D0%B9%20IX%20%D0%BA%D0%BB) · [class-ii-suffixless-guna](#:~:text=II%20%D0%BA%D0%BB%D0%B0%D1%81%D1%81%3A%20%D0%B1%D0%B5%D0%B7%20%D1%81%D1%83%D1%84%D1%84%D0%B8%D0%BA%D1%81%D0%B0%2C%20%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BA%D0%BE%D0%BD%D1%87%D0%B0%D0%BD%D0%B8%D1%8F) · **lesson-roots**
+
+| Источник | Локус | Уверенность | Строк-доказательств |
+|---|---|---|---|
+| Гасунс, Dhātu 2014 | [glava7-ukazatel-zaliznyaka](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/glava7_ukazatel-zaliznyaka#:~:text=%D0%98%D0%B4%D0%B5%D1%8F%20%D0%97%D0%B0%D0%BB%D0%B8%D0%B7%D0%BD%D1%8F%D0%BA%D0%B0%20%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%B0%20%D0%B8%20%D0%BC%D0%BE%D1%89%D0%BD%D0%B0) | 0.8 | — |
+| Толчельников 2026 (morphoclass) | [morphoclass-crosswalk-1975-2014-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv) | 0.8 | — |
+
+**Исключения** (гипотеза: «у Бюлера много, у Зализняка-1978 нет, у Уитни всегда?»): **GAP-DOCUMENTED**
+
+- **buhler**: B: классы при глаголах даны цифрой (IX ×9, II ×4), приставочные без класса (ni-, prati-, ā-plu, nis-, nir-luṇṭh, apa-han); морфонологической записи нет
+- **whitney**: W: классы — в root-аппарате (krī §§717–718; vṛ «choose» — R₁-ряд §§717ff); ссылок на §§ в уроке нет
+- **zalizniak-1978**: Z: §136 даёт krīṇā-/badhnā-/gṛhṇā-/açnā- парами сильн./слаб. — единственный свидетель с парной записью корень+суффикс
+- **kochergina**: K: класс при глаголе в таблицах (yā P II, khyā P II в сводной таблице); записи рядов нет
+
+*Свидетели по теме (4-witness сетка):* [WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/WHITNEY_CONCORDANCE_SANGRAM_KOCHERGINA_2026.md)
+
+*Лемма-слой (ряды — только у Зализняка; у Кочергиной класс при глаголе, МГ 02-10):* [crosswalk 1975↔2014↔2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/morphoclass_crosswalk_1975_2014_2026.csv)
+
+| Корень | Глосса | З-1975 | З-1978 | crosswalk |
+|---|---|---|---|---|
+| aś | есть (IX: aśnāti) | A1 (conf medium) | A₁ | yes (wh21) |
+| granth | плести (IX: grathnāti) | A1 (conf medium) | A₁ | yes — под написанием grath (§66-rule) |
+| grah | брать, хватать (IX: gṛhṇāti) | A1 (conf medium) | A₁ | yes — под написанием grabh (wh196) |
+| ni- | сдерживать, держать в руках (класс не указан) | ? | ? | NO — приставочный глагол; корень в crosswalk-реестре отсутствует |
+| prati- | принимать (класс не указан) | ? | ? | NO — приставочный глагол без корня в реестре |
+| jñā | знать (IX: jānāti) | A2 (conf medium) | A₂ | yes (wh269) |
+| pā | защищать (II) | A2 (conf medium) | A₂ | yes — hom 2 protect (wh449; hom 1 drink) |
+| puṣ | умножать, питать (IX: puṣṇāti) | U1 (conf high) | U₁ | yes (wh464) |
+| prī | радовать (IX: prīṇāti) | I2 (conf high) | I₂ | yes (wh480) |
+| ā-plu | обливать | U1 (conf high) | U₁ | yes (wh485) |
+| bhā | сиять, блестеть (II) | A2 (conf medium) | A₂ | yes (wh516) |
+| manth | пахтать, взбалтывать (IX: mathnāti) | A1 (conf medium) | A₁ | yes — под написанием math (wh544) |
+| mā | мерить (II) | A2 (conf medium) | A₂ | yes — hom 1 measure (wh548) |
+| nis- | творить (без корня и класса) | ? | ? | NO — префикс без корня и класса (прецедент XXXV) |
+| muṣ | красть (IX: muṣṇāti) | U1 (conf high) | U₁ | yes (wh567) |
+| nir-luṇṭh | похищать (nis-luṇṭh) | U1 (conf high) | U₁ | yes — под написанием luṭh, hom 2 rob (wh689) |
+| var (vṝ) | избирать (IX: vṛṇīte) | R1 (conf high) | R₁ | yes — под написанием vṛ, hom 2 choose (wh741) |
+| snā | купать (II) | A2 (conf medium) | A₂ | yes (wh875) |
+| apa-han | устранять | N1 (conf medium) | N₁ | yes (wh908) |
+
+*Примечание:* Проверка полноты (голос MG D2): crosswalk покрывает 15/19 глаголов урока; ni-/prati-/nis- — приставочные без корня в реестре (честно); granth/grah/manth — под вариантами написания grath/grabh/math (ловушки написания серии); bandh-вилка 1975 A₁ / 1978 N₁ вынесена в тему class-ix-ana-nasal-loss
+
+*Регистр утверждений урока:* [HB-51](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L1031), [HB-291](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4741), [HB-292](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4756), [HB-293](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4771), [HB-294](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml#L4788)
 
 
 <small style={{color: "var(--ifm-color-emphasis-600)"}}>Сгенерировано <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_lesson_concordance.py">scripts/build_lesson_concordance.py</a> из <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml">topics.yml</a> + <a href="https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/typed_link_buhler_lessons.tsv">typed_link_buhler_lessons.tsv</a> — не редактировать руками; перегенерация: <code>python3 scripts/build_lesson_concordance.py</code>. Ссылки локусов ведут на точное место источника с подсветкой (:~:text-фрагмент, Chrome/Firefox/Safari 18.2+).</small>
