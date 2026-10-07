@@ -14,5 +14,5 @@ _Repo: gasyoun/SanskritGrammar · Source: LessonConcordance_ · Date: 2026-10-07
 
 ## Ссылки
 
-- PR: <заполнить при открытии>
+- PR: https://github.com/gasyoun/SanskritGrammar/pull/1047 (merged 07-10-2026)
 - План: BUHLER_LESSON_CONCORDANCE_PLAN_2026.md (виза D1–D16, адденды E1–E13)
