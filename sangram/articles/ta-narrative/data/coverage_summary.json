@@ -1,0 +1,231 @@
+{
+  "study": "SG-SE-011 «Семантика причастных форм: -ta как повествовательное прошедшее» — semantic layer over SG-MO-023 (c6 slot sem-b-ta-narrative, ①)",
+  "toc_ref": "SG-SE-011",
+  "kind": "content article (no kill-gate; non-pilot ① slot)",
+  "model_provenance": "GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 06-10-2026, H6072",
+  "consumed": {
+    "SG-MO-023": "sangram/articles/ta-na-participles/data/coverage_summary.json",
+    "SG-SE-006": "sangram/articles/past-tenses/data/coverage_summary.json"
+  },
+  "snapshot": {
+    "source_repo": "gasyoun/dcs-conllu (OliverHellwig/sanskrit)",
+    "source_commit": "04e0778d3dc971030229179e25eea043d06ff397",
+    "imported_at": "2026-06-06T16:22:57+00:00",
+    "sha256": "8f3b06bd6ef0e47a9ccf81d147e73d5d240d64e0c12f6d789262eb422ebb23bc",
+    "provenance_note": "pin 04e0778 orphaned; binding = provenance table + SHA-256 + tag c3-pin-04e0778-content"
+  },
+  "M2_displacement": {
+    "ta_na_ppp_lower_bound": 219902,
+    "ta": 204861,
+    "na": 15041,
+    "distinct_roots": 4742,
+    "re_derived_this_run": 219902,
+    "re_derivation_matches_mo23": true,
+    "finite_past_total": 148750,
+    "finite_past_components": {
+      "Past": 0,
+      "Impf": 0
+    },
+    "ppp_to_all_finite_pasts_ratio": 1.48,
+    "top_forms": [
+      [
+        "uktam",
+        3223
+      ],
+      [
+        "kṛtam",
+        2636
+      ],
+      [
+        "kṛta",
+        2548
+      ],
+      [
+        "uktaḥ",
+        2154
+      ],
+      [
+        "gataḥ",
+        1856
+      ],
+      [
+        "sthitaḥ",
+        1261
+      ],
+      [
+        "smṛtaḥ",
+        1207
+      ],
+      [
+        "gatam",
+        1203
+      ],
+      [
+        "yuktam",
+        1158
+      ],
+      [
+        "jātaḥ",
+        1079
+      ],
+      [
+        "kṛtaḥ",
+        1038
+      ],
+      [
+        "yuktaḥ",
+        1032
+      ]
+    ],
+    "top_roots": [
+      [
+        "vac",
+        8734
+      ],
+      [
+        "kṛ",
+        8655
+      ],
+      [
+        "gam",
+        6781
+      ],
+      [
+        "yuj",
+        4004
+      ],
+      [
+        "sthā",
+        3889
+      ],
+      [
+        "jan",
+        3722
+      ],
+      [
+        "han",
+        3151
+      ],
+      [
+        "smṛ",
+        3031
+      ],
+      [
+        "prāp",
+        2798
+      ],
+      [
+        "āgam",
+        2328
+      ],
+      [
+        "bhū",
+        2143
+      ],
+      [
+        "pravac",
+        1884
+      ]
+    ],
+    "note": "ppp (nominal, lower bound) vs FINITE pasts (Impf+Past incl. aorist/peri/simple-past bulk, SE-006); the ppp outnumberes ALL finite pasts combined"
+  },
+  "M3_predicate_vs_attributive_UD": {
+    "ud_tokens_total": 223751,
+    "ud_share_of_all_tokens_pct": 3.93,
+    "ud_ppp_stem_matched": 16846,
+    "upos_dist": {
+      "VERB": 14388,
+      "SCONJ": 1003,
+      "PRON": 1083,
+      "NOUN": 121,
+      "ADJ": 104,
+      "PART": 147
+    },
+    "predicate_main_root": {
+      "root": 6320
+    },
+    "predicate_main_root_total": 6320,
+    "predicate_embedded_acl_advcl": {
+      "acl": 1502,
+      "advcl:caus": 41,
+      "advcl": 955,
+      "acl:rel": 472,
+      "advcl:temp": 263,
+      "advcl:manner": 109,
+      "advcl:cond": 258,
+      "acl:ptcp": 146,
+      "advcl:dpct": 94,
+      "acl:dpct": 113,
+      "advcl:concess": 30,
+      "advcl:ccomp": 98,
+      "acl:attr": 30,
+      "advcl:consec": 3,
+      "acl:loc": 3,
+      "acl:instr": 1,
+      "advcl:fin": 9,
+      "advcl:local": 12,
+      "acl:crel": 11,
+      "acl:cont": 2
+    },
+    "predicate_embedded_total": 4152,
+    "attributive_amod_nmod": {
+      "nmod": 375,
+      "amod": 12,
+      "nmod:appos": 18
+    },
+    "attributive_total": 405,
+    "other_deprels": {
+      "mark": 924,
+      "conj": 1181,
+      "flat": 1027,
+      "nsubj": 218,
+      "obj": 466,
+      "obl:benef": 49,
+      "ccomp": 324,
+      "parataxis": 215,
+      "cop": 276,
+      "aux": 68,
+      "csubj": 110,
+      "orphan": 198,
+      "obl:manner": 23,
+      "xcomp": 45,
+      "obl": 115,
+      "obl:source": 49,
+      "iobj": 324,
+      "obl:loc": 19,
+      "obl:goal": 53,
+      "obl:agent": 17,
+      "appos": 2,
+      "obl:grad": 12,
+      "obl:temp": 2,
+      "compound:coord": 16,
+      "obl:instr": 16,
+      "fixed": 13,
+      "dislocated": 12,
+      "xcomp:result": 20,
+      "vocative": 24,
+      "discourse": 114,
+      "obl:path": 9,
+      "obl:soc": 6,
+      "ccomp:rel": 8,
+      "compound": 1,
+      "det": 1,
+      "advmod": 9,
+      "cc": 2,
+      "case": 1
+    },
+    "note": "UD subset is the only construction-evidence layer; it carries NO feat_verbform, so the ppp is identified there by lemma∈corpus-ppp-roots + the same stem test. Small-N floor with explicit denominator — coverage limit, same honesty rule as SE-005. deprel=root = main-clause predicate (the narrative-past use this article is about)."
+  },
+  "M4_copula_copresence": {
+    "sentences_with_finite_Pres_as_bhu": 26366,
+    "ppp_tokens_in_such_sentences": 8484,
+    "ppp_share_pct": 3.9,
+    "label": "CO-PRESENCE floor, not a construction count (SE-005 precedent)"
+  },
+  "M5_validation": {
+    "seed": 20261006,
+    "sample_size": 50,
+    "false_positives_mechanical": 0,
+    "check": "sampled lemma must have non-finite verb-form siblings (verbal lemma confirmed)"
+  }
+}
