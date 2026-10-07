@@ -88,6 +88,10 @@
       {
         "label": "урок XXI — конкорданс",
         "spot": "УРОК XXI."
+      },
+      {
+        "label": "урок XXV — конкорданс",
+        "spot": "УРОК XXV."
       }
     ],
     "ocherk": [
@@ -390,6 +394,30 @@
       {
         "label": "урок XXI — s-retroflex-su",
         "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
+      },
+      {
+        "label": "урок XXV — ac-stems",
+        "spot": "Прилагательные на ac с тремя формами (prāñc/prāc/prāc; udac:"
+      },
+      {
+        "label": "урок XXV — feminine-i",
+        "spot": "Женский род основ на an/vas/ac — суффикс ī к кратчайшей форм"
       }
     ],
     "kochergina": [
@@ -664,6 +692,30 @@
       {
         "label": "урок XXI — s-retroflex-su",
         "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
+      },
+      {
+        "label": "урок XXV — ac-stems",
+        "spot": "Прилагательные на ac с тремя формами (prāñc/prāc/prāc; udac:"
+      },
+      {
+        "label": "урок XXV — feminine-i",
+        "spot": "Женский род основ на an/vas/ac — суффикс ī к кратчайшей форм"
       }
     ],
     "knauer": [
@@ -890,6 +942,18 @@
       {
         "label": "урок XXI — ssh-retroflex-stems",
         "spot": "Церебральная группа: имена на ṣ/ś и большинство на h, произв"
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
+      },
+      {
+        "label": "урок XXV — ac-stems",
+        "spot": "Прилагательные на ac с тремя формами (prāñc/prāc/prāc; udac:"
       }
     ],
     "sangram-conjugation-overview": [
@@ -994,6 +1058,10 @@
       {
         "label": "урок XXI — lesson-roots",
         "spot": "Лемма-слой: 7 глаголов урока (3 с каузативами, 3 префиксальн"
+      },
+      {
+        "label": "урок XXV — lesson-roots",
+        "spot": "Лемма-слой: 2 корня урока (gam — только приставочные astam-g"
       }
     ],
     "sangram-thematic-present": [
@@ -1064,6 +1132,10 @@
       {
         "label": "урок XXI — cj-velar-stems",
         "spot": "Велярная группа: имена на c и большая часть на j, производны"
+      },
+      {
+        "label": "урок XXV — an-stems-trio",
+        "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
       }
     ],
     "sangram-absolutive": [
@@ -1132,6 +1204,12 @@
       {
         "label": "урок XIX — pronoun-sarva-group",
         "spot": "Sarva-группа и вариантные ряды: sarva/viśva/eka/ekatara/ubha"
+      }
+    ],
+    "sangram-present-perfect-participles": [
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
       }
     ]
   }

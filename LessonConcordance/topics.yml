@@ -1865,7 +1865,7 @@ lessons:
           whitney: "W: классы — в root-аппарате (№№ 662, 673); в тексте урока классов нет"
           zalizniak-1978: "Z: ruh — U₁ (§66-правило, закрытый короткий u + C), labh — A₁ (§67-A1-default); labh в talmud-реестре defective"
           kochergina: "K: класс даётся при глаголе, записи нет"
-        notes: "Урок XX — именной: 2 глагола против ~19 согласных основ словаря (upaniṣad, taḍit, dṛṣad, bhūbhṛt, marut, yoṣit, śarad, samidh, sarit, suhṛd и др. — сама тема урока, в глагольный лемма-слой не входят); crosswalk 2/2 — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXII 1/1, XXIX 12/12, XXXVIII 5/7)"
+        notes: "Урок XX — именной: 2 глагола против ~19 согласных основ словаря (upaniṣad, taḍit, dṛṣad, bhūbhṛt, marut, yoṣit, śarad, samidh, sarit, suhṛd и др. — сама тема урока, в глагольный лемма-слой не входят); crosswalk 2/2 — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXII 1/1, XXIX 12/12, XXXVIII 5/7); каузативные cross-loci (whitney-sec:1042 — «treatment of the root before the causative-sign aya», kochergina-lesson:XXXV — каузативные глаголы) приняты из salvage-версии урока XX (auto-H2628, origin/h5671-drain, 06-10) при адъюдикации dual-run: обе версии курировали урок независимо, вердикты совпали по HB-151–158, verбете — моя версия базовая, salvage-добавка — эти две строки (остальные расхождения: whitney 377-391 vs 380-383, zal-1978:74 vs 75-76, kochergina:XXX vs XXVIII — выбраны мои, обе пары корректны, выбор зафиксирован)"
 
   XXI:
     title: "Имена на c/j, dṛś/diś/spṛś (велярная группа k/g); имена на ṣ/ś/h и производные mṛj/rāj/yaj/sṛj (церебральная группа ṭ/ḍ); расщепление h-корней; s → ṣ после k, r, l"
@@ -1954,4 +1954,92 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§66–67); dam — M₂ по §66-списку, остальные по §66-правилу"
           kochergina: "K: класс даётся при глаголе, записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 6/7 глаголов урока — sṛj отсутствует (повтор пробоины урока III, пойманной DeepSeek-спот-чеком 06-10: sarj-строка — ложное покрытие другим корнем). Контрасты: урок I — 10/13, II — 10/11, IV — 6/6, XIX — 10/10, XXII — 1/1, XXIX — 12/12. Глосса «dam - caus. украшать, одолевать» — нестыковка 1923 (damayati = «укрощает», crosswalk «control») — зафиксировано, не переписано."
-        notes: "Урок XX — именной: 2 глагола против ~19 согласных основ словаря (upaniṣad, taḍit, dṛṣad, bhūbhṛt, marut, yoṣit, śarad, samidh, sarit, suhṛd и др. — сама тема урока, в глагольный лемма-слой не входят); crosswalk 2/2 — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXII 1/1, XXIX 12/12, XXXVIII 5/7); каузативные cross-loci (whitney-sec:1042 — «treatment of the root before the causative-sign aya», kochergina-lesson:XXXV — каузативные глаголы) приняты из salvage-версии урока XX (auto-H2628, origin/h5671-drain, 06-10) при адъюдикации dual-run: обе версии курировали урок независимо, вердикты совпали по HB-151–158, verбете — моя версия базовая, salvage-добавка — эти две строки (остальные расхождения: whitney 377-391 vs 380-383, zal-1978:74 vs 75-76, kochergina:XXX vs XXVIII — выбраны мои, обе пары корректны, выбор зафиксирован)"
+  XXV:
+    title: "vas-основы причастий перфекта (vāṃs/vat/uṣ); имена на an с тремя формами (śvan/yuvan/maghavan) и ср. р. ahan; прилагательные на ac (prāñc…tiryañc); женский род на ī"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3275–3416 (заголовок «# УРОК XXV», без точки — нормализованный реестр)"
+    claims: [HB-34, HB-183, HB-35, HB-184, HB-185, HB-186, HB-187]
+    reuse_clusters:
+      - "5 совпадений (scripts/data/matches.json): buhler-1923.XXV.548 ↔ kochergina-1998.XXVIII.694, exact 1.0 (vidvāṃso vidvadbhiḥ — vidvaṃs I.pl. + instr.); XXV.543 ↔ knauer-1908.6.127, exact 1.0 (ahanī — дуаль ahan); XXV.545 ↔ knauer-1908.7.146, exact 1.0 (ājagmuṣoḥ — G.du. jagmuṣ); XXV.547 ↔ knauer-1908.5.102, exact 1.0 (tiryakṣu — L.pl. tiryac); XXV.550 ↔ knauer-1908.5.103, 0.956 (Бюлер mahannagaram/bhṛgukaccham против Кнауэра nagaram/bhṛgukacham — омофонные прочтения, не расхождение правил)"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XXV нет
+    topics:
+      - key: vas-stems
+        title: "vas-основы причастий перфекта: три основы — сильная vāṃs, средняя vat, слабая uṣ; N.sg.m. vān, V.sg.m. van; выпадение соед. i перед uṣ (i/ī→y/iy, u/ū→uv, ṛ→r; gam: jaganvas/jaganvat/jagmuṣ)"
+        buhler_locus: "урок XXV, §1а–б и таблицы vidvan/jagmivan (mdx 3277–3303): vidvāṃsam/viduṣaḥ/viduṣi/vidvatsu, jagmivāṃsam/jagmuṣoḥ/jagmuṣi/jagmivatsu"
+        topic_claims: [HB-34, HB-183]
+        spots:
+          "zalizniak-1978-sec:94": "в сильных формах -vāṁs- и -vaṁs-, в средних -vat-, в слабейших -uṣ-"
+          "zalizniak-1978-sec:155": "женский род -uṣī-, например, cakruṣī-"
+          "kochergina-lesson:XXVIII": "Образец склонения перфектного причастия на -vaṃs:"
+          "kochergina-lesson:XXVI": "первичного суффикса -(i)vaṃs- (перфектные причастия)"
+          "knauer-fraza:Nr.7": "काश्या आजग्मुषो"
+          "sangram-article:present-perfect-participles": "сильная основа -vāṃs-, слабая -uṣ-"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — трёхосновное правило с определением case-слотов «средних/слабых» через вид окончания (HB-34: «most textbooks blur» — у Бюлера не размыто); §1б — четыре подправила слабой основы с примерами (HB-183 TRUE); gam честно помечен как особый (jaganvas/jaganvat/jagmuṣ — супплетивная слабая ступень)"
+          whitney: "W+ — §458: вся дистрибуция vāṅs/uṣ/vat + §458a выпадение соед. i; §461 полная парадигма vidvā́ṅs/tasthivā́ṅs; §462 — ведийский остаток, которого у школьного Бюлера нет: V.sg. на -vas (cikitvas), редчайшие средние формы на vat в RV (tatanvát), слабая основа как база деривации (vidúṣṭara)"
+          zalizniak-1978: "Z+ — §94 «Чередование вариантов суффикса аномально» (сильные -vāṁs-/-vaṁs-, средние -vat-, слабейшие -uṣ-) + §155: механизм — из 1 pl act. заменой -ma на -vaṁs- и правило трёхслогов («но если перед -ma три слога, соединительное i опускается») — условие, у Бюлера отсутствующее; женский -uṣī- в §155"
+          kochergina: "K+ — Занятие XXVI: образование от основы перфекта суффиксом -(i)vaṃs- (gam → jagm- → jagmivaṃs); Занятие XXVIII: парадигма cakṛvaṃs (cakṛvāṃs/cakṛvat/cakruṣ) + памятка vidvaṃs «учёный; мудрец»; exact-переиспользование упражнения «विद्वांसो विद्वद्भिः सह समागमाय स्पृहयन्ति» (matches.json)"
+        notes: "Урок XX §2в (HB-155) уже объявлял класс «три основы»: vas, ac, некоторые an — урок XXV раскрывает его целиком. Sandhi-связка: N.sg. vidvān = конечное ṁ→n (у Зализняка §32 п.3; у Бюлера — урок IV). Sangram-статья present-perfect-participles (SG-MO-022) знает трёхосновность (-vāṃs-/-uṣ-) как corpus-факт, не как правило — свидетель корпусной, не грамматической линии."
+      - key: an-stems-trio
+        title: "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuvan (yuvān/yuvan(yuva)/yūn), maghavan (maghavān/maghavan(maghava)/maghon); ср. р. ahan (ahān/ahas/ahan~ahn, N. ahaḥ); женский yuvati/yuvatī — мост к теме 4"
+        buhler_locus: "урок XXV, §2 (mdx 3305–3331): троица śvan/yuvan/maghavan с тремя формами и N.sg. śvā/yuvā/maghavā; ahan с таблицей ahnī/ahāni, ahnā/ahobhyām/ahobhiḥ, ahani/ahni, ahnoḥ, ahaḥsu/ahassu"
+        topic_claims: [HB-35, HB-184]
+        spots:
+          "zalizniak-1978-sec:89": "в слабейших формах имеют основы çun-, yūn-, maghon-"
+          "zalizniak-1978-sec:101": "ahan-, ahar-, ahas- (n)"
+          "kochergina-lesson:XXVIII": "падежах имеют основы śun- и yūn-"
+          "kochergina-lesson:XXXI": "N.sg. ahas, I.sg. ahnā, I.pl. ahobhis"
+          "knauer-fraza:Nr.6": "एव क्षत्रियावयुध्येताम्"
+          "sangram-article:consonant-stems": "стягивающиеся ещё сильнее"
+        exceptions:
+          verdict: "CONFIRMED-WITH-WITNESS-GAP (kochergina: maghavan вне покрытия)"
+          buhler: "B+ — классическая троица полна (HB-35 TRUE), у ahan собственная таблица с альтернантами (ahnī/ahanī, ahani/ahni, ahaḥsu/ahassu) и честной сноской «висарга стоит вм. r» (HB-184 TRUE: N.sg. ahaḥ = ahar)"
+          whitney: "W+ — §427 (çván/yúvan: слабейшие çún/yū́n с retention of accent), §428 (maghávan → maghón), §430 (ahan: средние от áhar/áhas; §430b ведийские áhabis/áhasu — вне школьного скопа); §429b перечень дефектных an-основ"
+          zalizniak-1978: "Z+ — §89 «Особые случаи. 1.» — та же троица тем же составом (çun-, yūn-, maghon-) с парадигмой çvan; §101 п.5 ahan со всеми альтернантами, включая редкие ahaḥsu «реже ahassu» — полнота свидетеля выше Бюлера по кванторам"
+          kochergina: "K± — Занятие XXVIII покрывает śvan и yuvan («в слабых падежах имеют основы śun- и yūn-»); ahan — списком основ в Занятии XXXI (N.sg. ahas, I.sg. ahnā, I.pl. ahobhis, L.pl. ahaḥsu или ahassu, du. ahnī/ahanī, pl. ahāni); maghavan НЕ упоминается по всему файлу — дыра свидетеля на 1 из 4 имён темы; exercise-связь одна (XXVIII: jagmivaṃs «шедший» — но это vas, не an)"
+        notes: "Умлаут-черта сложилась исторически: у Уитни и Зализняка троица — «особые случаи» слабейшей ступени (стяжение), у Бюлера — заголовочное «имеют три формы» (типологический класс); факт один, статус правила — разный. Knauer Nr.6 «अहनी एव क्षत्रियावयुध्येताम्» — exact-переиспользование (matches.json, дуаль ahan); Nr.6 «यूना वीरेण यशो लब्धम्» — слабая yūn- рядом, в matches.json не зарегистрировано. Sangram consonant-stems (SG-MO-006) видит стяжение («стягивающиеся ещё сильнее śvan, yuvan — Уитни §§ 427–428») и сам отсылает на Уитни — кросс-конкорданс замкнулся."
+      - key: ac-stems
+        title: "Прилагательные на ac с тремя формами (prāñc/prāc/prāc; udac: udañc/udac/udīc; tiryac: tiryañc/tiryac/tiraśc); N.V.sg.m. на -aṅ (в печати -a — HB-186 FALSE), N.V.Acc.sg.n. на -ak; конечный c по XXI,1"
+        buhler_locus: "урок XXV, §3 и таблица семи прилагательных (mdx 3335–3357): prāc/avāc/udac/pratyac/nyac/anvac/tiryac с колонками сильн./средн./сл."
+        topic_claims: [HB-185, HB-186]
+        spots:
+          "zalizniak-1978-sec:95": "в сильных формах -añc-, в средних -ac-, в слабейших -c- с удлинением предшествующей гласной"
+          "kochergina-lesson:XXVIII": "Следует запомнить tiryañc"
+          "knauer-fraza:Nr.5": "तिर्यक्षु जायन्त"
+        exceptions:
+          verdict: "CONFIRMED (с опечаткой Бюлера HB-186 FALSE — внесена в errata)"
+          buhler: "B± — трёхформная типология полна и таблица честно печатает совпадающие среднюю/слабую у prāc-ряда (HB-185 TRUE: «coincidence is displayed, not hidden»); но HB-186 FALSE как напечатано: «оканчиваются на a» вместо «на aṅ» — ṅ потерян в печати (параллельное среднее «ak» свой согласный сохранило; методичка: prāṅ, udaṅ, pratyaṅ)"
+          whitney: "W+ — §407: типы añc/ac-чередования + §407b женский на ī к слабейшей; §408 парадигма с N.sg. prā́n̄ (корректная форма, которой нет в печати Бюлера); §409d tiryáñc — слабейшая tiráçc (tiraśc Бюлера дословно)"
+          zalizniak-1978: "Z+ — §95 «Чередование его вариантов аномально» + N.sg. nyañ/anvan̄ через §32 п.3 (ṁ → n в конце словоформы); особые случаи udīcā/tiraçcā помечены «NB» — тот же контраст краткой/удлинённой слабой, что в таблице Бюлера"
+          kochergina: "K+ — Занятие XXVIII: парадигма pratyañc (pratyañc/pratyac/pratīc), список anvañc/udañc/nyañc/prāñc/viśvañc/saṃyañc + tiryañc с особыми ступенями и субстантивацией «зверь» (та же глосса, что в словаре урока XXV)"
+        notes: "Единственный FALSE-локус урока — опечатка набора, а не грамматики (прецедент HB-60); substantia правила подтверждена всеми тремя свидетелями. Knauer Nr.5 упражняет обе стороны: tiryakṣu (L.pl., exact 547↔102) и prācāṃ deśe (G.pl., 550↔103 с 0.956 — расхождение только в орфографии собственных имён mahannagaram/nagaram, bhṛgukaccham/bhṛgukacham)."
+      - key: feminine-i
+        title: "Женский род основ на an/vas/ac — суффикс ī к кратчайшей форме основы (rājñī, śunī, viduṣī, udīcī); исключение yuvan → yuvati/yuvatī"
+        buhler_locus: "урок XXV, §4 (mdx 3359): «Женский род слов на an, vas и ac образуется посредством ī, который присоединяется к кратчайшей форме основы»"
+        topic_claims: [HB-187]
+        spots:
+          "zalizniak-1978-sec:180": "При мужском роде на ar, an, in, ant, at, yaṁs, vaṁs, añc женский род образуется суффиксом -ī-"
+          "kochergina-lesson:XXXI": "прибавлением -ī- к слабой ступени"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — правило + исключение yuvati/yuvatī названы в одном предложении (HB-187 TRUE); опечатка udicī (вместо udīcī) — потеря диакритики, зафиксирована в claims-errata, на правило не влияет"
+          whitney: "W+ — §407b (ac: ī к слабейшей форме), §436 (an: sómarājñī, ékamūrdhnī — ī к слабейшей мужской основе), §459 (vaṃs: женский úṣī) — все три класса темы покрыты раздельными локусами"
+          zalizniak-1978: "Z+ — §180: единый список ar/an/in/ant/at/yaṁs/vaṁs/añc → -ī- (çunī-, viduṣī-, nīcī-) — шире Бюлера на in/at/yaṁs; §155 добавляет uṣī-"
+          kochergina: "K+ — Занятие XXXI: «к слабой ступени» с обеими примерами темы (rājan → rajñī, cakṛvaṃs → cakruṣī); исключение yuvati в занятии не названо — неполнота свидетеля на детали"
+        notes: "«Кратчайшая форма основы» Бюлера = слабейшая ступень всех трёх свидетелей (weakest/слабейшая/слабая) — терминологическая, не содержательная развилка. Связь с темой 2: исключение yuvati/yuvatī стоит на НЕстяжённой yuva-основе — единственное место урока, где женский строится не от слабейшей."
+      - key: lesson-roots
+        title: "Лемма-слой: 2 корня урока (gam — только приставочные astam-gam/ud-gam; sparh X.P.) — морфонологическая запись"
+        buhler_locus: "урок XXV, список «Глаголы:» (mdx 3361–3367)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: gam,  gloss: "идти (в уроке только приставочные: astam gam «заходить», ud-gam «восходить»)", z1975: "M₁ (conf medium)", z1978: "M₁", crosswalk: "yes — wno 170 «go», aniṭ, §66-список (open/full)"}
+          - {root: spṛh, gloss: "стремиться, желать (X. P. spṛhayati)", z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes — wno 884 «be eager», §66-правило (closed/full)"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B: класс только у sparh (X. P.), записи нет — как во всей школьной линии; gam дан приставочными парами (astam-/ud-), голый корень не назван"
+          whitney: "W: классы — в root-аппарате (№№ 170, 884); в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды (§66–67); gam — M₁ по §66-списку, spṛh — R₁ по §66-правилу"
+          kochergina: "K: класс при глаголе (XX уроки), записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 2/2 корней урока — ПОЛНЫЙ ряд (контрасты: I 10/13, II 10/11, III 10/12, IV 6/6, VIII 13/15, XVIII 12/13, XIX 10/10, XXI 6/7 — sṛj вне, XXII 1/1, XXIX 12/12, XXXVIII 5/7). Приставочные astam-/ud-gam не плодят строк: root-слой один, префикс — отдельная ось (у Sangram — sangram-article:preverbs, к уроку XXV не привязан: префиксы в конкордансе уже покрыты уроком XXXVIII)."
