@@ -1568,3 +1568,100 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§167: bodhayati/darçayati/kārayati как парадигменные примеры каузатива); урока напрямую записи при глаголах нет — crosswalk-индекс"
           kochergina: "K: каузатив — Занятие XXXV, классы при глаголе ранее; записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 12/13 корней урока — i отсутствует (пробел реестра, как у XXXVIII); ЛОВУШКИ НАПИСАНИЯ (новый для конкорданса слой): три из 13 корней сидят в реестре под слабой ступенью при Бюлеровой гуна-форме (dṛś/darś, mṛ/mar, vṛdh/vardh) — школьная линия записывает корни ступенью презенса; mṛ: поиск по mar мимо, но vadh «slay» есть — ложное покрытие (обратная ловушка урока IV: sarj-«creak»); pṝ из §3г-исключения (конечное ṛ долгое → vṛddhi; метка § поправлена по находке спот-чека DeepSeek 06-10: у Бюлера ряды а–г, ряда «д» нет) в реестре под написаниями pyā/prā («fill», fluctuating A₂), поиск по pṝ пуст; mar→mṛ отождествление — по гуна-паттерну того же урока (§3б: «vṛdh расти, vardhayati») + crosswalk mṛ gloss die «caus. убивать» = каузатив от «die» (спот-чек 06-10: вне выдержек не верифицируется, основание зафиксировано здесь); corpus_layer.tsv урока — 5 каузативных основ (kāray/darśay/sthāpay/śrāvay/pūray), регистр впервые на том же слое деривации, что урок: pūray — корпусное доказательство исключения HB-142"
+
+  VIII:
+    title: "Present indicativus Ātmanepada (Medium); значение Ātmanepada (действие для себя; Deponentia); сандхи конечных i/ī, u/ū, ṛ; e/o и pragṛhya"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 1024–1165 (заголовок «# УРОК VIII.»)"
+    claims: [HB-13, HB-14, HB-100, HB-101, HB-102, HB-103, HB-104, HB-105, HB-106]
+    reuse_clusters:
+      - "1 совпадение упражнений с Knauer (scripts/data/matches.json: buhler-1923.VIII.179 «śāstre adhunā śikṣāmahe iti patre hariḥ likhati» ↔ knauer-1908.10.212, 0.851 — не exact; śikṣāmahe — Ātm. IV из списка урока)"
+      - "2 совпадения словарных строк с Kochergina (buhler-1923.VIII.210 «ā-rabh I» ↔ kochergina-1998.XIV.301 и XXXIV.1250, 0.833 — совпадения словарных статей, не упражнений)"
+    corpus_layer: []     # corpus_layer.tsv: поурочные регистры начинаются с XVIII, у урока VIII строк нет
+    topics:
+      - key: atmanepada-present
+        title: "Present indicativus Ātmanepada: те же классовые признаки, что и в Par. (a — I/VI, ya — IV, aya — X); парадигма labh-e / labh-a-se / labh-a-te / labh-ā-vahe / labh-ethe / labh-ete / labh-ā-mahe / labh-a-dhve / labh-a-nte"
+        buhler_locus: "урок VIII, §1 (mdx 1026–1042): labh, labha; sic, siñca; yudh, yudhya; arth, arthaya + таблица окончаний"
+        topic_claims: []
+        spots:
+          "kochergina-lesson:VIII": "Ā., о.н.в. śíkṣa"
+          "zalizniak-1978-sec:115": "pacāvahe | pacāmahe"
+          "knauer-fraza:Nr.14": "गङ्गा यमुनया संगछते"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — девять окончаний одной таблицей, классовые признаки повторены при каждом примере (labha/siñca/yudhya/arthaya); списка исключений нет — du. 2/3 л. даются сразу в стянутой форме (ethe/ete) без объяснения"
+          whitney: "W+ — §551: таблицы первичных/вторичных окончаний обоих пад; §547b: удлинённое ā в du. медиальных окончаний 2–3 л., с a-основой стягивающееся в e (ethe/ete) — то, что Бюлер даёт молча в таблице; акцентные оговорки (§§544–546) — вне школьной подачи"
+          zalizniak-1978: "Z+ — §115 (Система презенса): полная медиальная парадигма pace/pacase/pacate/pacāvahe/pacethe/pacete/pacāmahe/pacadhve/pacante; §118 в примерах IV класса — yudhya- и jāya-, оба глагола словаря урока VIII (Ā. IV)"
+          kochergina: "K+ — Занятие VIII: парадигма Ātm. śíkṣe/śikṣāvahe/śikṣāmahe/śikṣase/śikṣethe/śikṣete/śikṣāmahe/śikṣadhve/śikṣante — глагол прямо из списка урока VIII; примечание об ethe/ete до Занятия XVI (a+i → e, см. Занятие VII,1)"
+        notes: "Кнауэр Nr.14: gaṅgā yamunayā saṃ-gach-ate — медиальный презенс 3 sg -te в живой фразе (saṃ-gam — глагол словаря урока IX, форма — сигнатура медиального окончания урока VIII); совпадение номеров: у Кочергиной медиальный презенс — тоже Занятие VIII (параллельная подача); Кнауэр 10.212 (0.851, не exact) — śikṣāmahe"
+      - key: atmanepada-semantics
+        title: "Значение Ātmanepada: действие для самого действующего лица (yajati «для другого» / yajate «для себя»); глаголы только Ātm. — Deponentia, как греческие Media"
+        buhler_locus: "урок VIII, §2 (mdx 1044)"
+        topic_claims: [HB-100, HB-13]
+        spots:
+          "kochergina-lesson:VIII": "готовит пищу для самого себя"
+          "zalizniak-1978-sec:109": "Средний залог показывает (в наиболее ясных случаях), что действие направлено на сам субъект"
+          "sangram-article:conjugation-overview": "актив (немаркированный) доминирует; пассив выделен, средний залог"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — семантическая рамка честно с примером (HB-100 UNTESTABLE/JUSTIFIED); «очень многие» только-медиальные (HB-13 TRUE/JUSTIFIED: ās, īkṣ, labh, mud, śī, sev, vand, man) — направление верное"
+          whitney: "W+ — §529: parasmāi padam «слово для другого», ātmane padam «слово для себя» — та же этимология терминов, но с трезвой оговоркой «антитеза переходности и рефлексивности в записанном состоянии языка в немалой мере стёрта» (в эпосах выбор залога часто метрический); §§775–776 — класс медиально-только глаголов"
+          zalizniak-1978: "Z+ — §109: то же значение + «нередко действительный и средний залоги употребляются без различия значения» + «очень многие глаголы имеют только медиальные формы»; универсалия HB-2-типа («всё в обоих залогах») не заявляется — «характер противопоставления залогов приближается к словообразовательному»"
+          kochergina: "K+ — Занятие VIII: тот же педагогический пример pacati/pacate (готовит для другого / для самого себя) + словарные пометы P./Ā./U.; пассив — отдельная производная система"
+        notes: "sangram: в DCS-разметке средний залог отдельно не тегируется — corpus-рамка, в которой media tantum видны только через лексикон; урок VIII и Занятие VIII Кочергиной преподают медиальный презенс параллельно (тот же номер урока)"
+      - key: vowel-sandhi-iu
+        title: "Сандхи конечных i/ī, u/ū, ṛ: однородные сливаются в долгую (gacchatīti, sādhūktam, kartṝju); перед неоднородной гласной i/ī → y (tiṣṭhaty atra, nady atra), u/ū → v (madhv atra, sādhv evam), ṛ → r (kartr iha)"
+        buhler_locus: "урок VIII, §3а-в (mdx 1046–1060)"
+        topic_claims: [HB-101, HB-102, HB-103, HB-104, HB-105]
+        spots:
+          "kochergina-lesson:VII": "перед неоднородной гласной изменяются в сонанты"
+          "zalizniak-1978-sec:41": "Перед неоднородной гласной i(ī) → y, u(ū) → v, ṛ → r"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — пять правил (HB-101…105, все TRUE/JUSTIFIED); pragṛhya-оговорка в §3а-в не повторена — дана отдельно в §3e (HB-14), тот же приём, что в уроке II"
+          whitney: "W+ — §126: однородные сливаются в долгую (i+i→ī, u+u→ū, ṛ+ṛ→ṝ); §129: перед неоднородной гласной i/u/ṛ → y/v/r; §129a: внутренние iy/uv-варианты (вне школьной подачи); §130: акцентные ограничения fused-слогов"
+          zalizniak-1978: "Z+ — §41 п.1: слияние однородных, пример su + uktam → sūktam — та же комбинация, что sādhu uktam у Бюлера; п.3: «Перед неоднородной гласной i(ī) → y, u(ū) → v, ṛ → r» с примерами iti uktvā → ity uktvā, astu iha → astv iha, pitṛ + arthe → pitrarthe; pragṛhya — явное «Исключение из §§ 41 и 42»"
+          kochergina: "K+ — Занятие VII,1: те же правила; sāvitrī uvāca → sāvitryuvāca, su āgatam → svāgatam; honest gap: e/o-внешние сандхи в Занятии VII не выделены (только ā̆/ī̆/ū̆/ṛ и -m)"
+        notes: "Словарь урока работает на этих правилах: nadī atra → nady atra — nadī из словаря урока XIII; pitṛ + arthe → pitrarthe у З-1978 = kartṛ iha → kartr iha у Бюлера (ṛ → r перед гласной)"
+      - key: eo-sandhi-pragrhya
+        title: "Сандхи конечных e/o: перед a — без изменения, a выпадает (vane `tra — аваграха); перед прочими гласными e/o → ay/av или чаще в a (bhāna iti); pragṛhya: ī/ū/e дв.ч. глаголов и имён, односложные междометия — без сандхи (girī iha, i indra)"
+        buhler_locus: "урок VIII, §3г-е (mdx 1062–1068)"
+        topic_claims: [HB-106, HB-14]
+        spots:
+          "zalizniak-1978-sec:42": "Исключение из §§ 41 и 42. Не подвергаются внешним сандхи"
+          "knauer-fraza:Nr.2": "गोपो ऽत्र वने"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-106 TRUE/JUSTIFIED: оба исхода ay/av и a, частотная помета «чаще в a»; pragṛhya (HB-14 TRUE/JUSTIFIED) — исключение дано сразу же, в §3e того же урока, с четырьмя примерами (girī iha, mādhū atra, phale atra, i indra); amī — дополнение класса в уроке XXVII"
+          whitney: "W+ — §131: e/o → ay/av; §§132–133: во внешнем сандхи y/v обычно опускается (та же «чаще в a»); §135: перед a — элизия a с аваграхой; §138: pragṛhya-список шире школьного (дв. ī/ū/e, amī, asmé/yuṣmé/tvé, atho/mo/no, ведийские случаи); §138g — старые отступления (nṛpátī ’va)"
+          zalizniak-1978: "Z+ — §42 п.1: то же правило (gṛhe asti → gṛhe ’sti; prabho ihi → prabha ihi); «Исключение из §§ 41 и 42»: конечные ī/ū/e дв.ч., междометия и наречное o — pragṛhya у З-1978 есть, опять вопреки гипотезе (bandhū āsāte atra)"
+          kochergina: "K — внешние e/o-сандхи в Занятии VII не выделены (только ā̆/ī̆/ū̆/ṛ и -m) — honest gap свидетеля; правило появляется лишь внутри словоформы (a + i → e, Занятие VII,1; примечание Занятия VIII об ethe/ete)"
+        notes: "Кнауэр Nr.2: «गोपो ऽत्र» — o + a → o ’tra с аваграхой в живой фразе, тот же паттерн, что vane ’tra у Бюлера; расхождения свидетелей нет: все три грамматики дают и исход ay/av, и частотный a; pragṛhya — редкий случай, где исключение присутствует у всех трёх свидетелей"
+      - key: lesson-roots
+        title: "Лемма-слой: 15 глаголов Ātm. урока (морфонологическая запись)"
+        buhler_locus: "урок VIII, список «Глаголы Ā.:» (mdx 1070–1100)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: īkṣ,  gloss: "видеть, смотреть", z1975: "I₂ (conf high)", z1978: "I₂ (closed)", crosswalk: "yes"}
+          - {root: kamp, gloss: "дрожать, сотрясаться", z1975: "A₁ (conf medium)", z1978: "M₁ (closed) — ряды расходятся между реестрами", crosswalk: "yes"}
+          - {root: bhāṣ, gloss: "говорить", z1975: "A₂ (conf medium)", z1978: "A₂ (closed)", crosswalk: "yes"}
+          - {root: yat,  gloss: "стремиться к (+D.)", z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: rabh, gloss: "приниматься за (ā-rabh)", z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: ruc,  gloss: "нравиться (+D., G.)", z1975: "U₁ (conf high)", z1978: "U₁ (closed)", crosswalk: "yes"}
+          - {root: labh, gloss: "получать", z1975: "A₁ (conf medium; дубль-строки wno 673 — артефакт реестра, как mad урока VI)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: vand, gloss: "кланяться, чтить", z1975: "A₁ (conf medium)", z1978: "N₁ (closed) — расхождение рядов между реестрами", crosswalk: "yes"}
+          - {root: śikṣ, gloss: "учиться, учить ч.-л.", z1975: "?", z1978: "?", crosswalk: "NO — строки нет (как śaṃs/rakṣ/jīv урока I); ловушка ложного покрытия: śās «order» (A₂, wno 780) — другой корень"}
+          - {root: sah,  gloss: "переносить, терпеть", z1975: "A₁ (conf medium)", z1978: "A₁ (closed)", crosswalk: "yes"}
+          - {root: sev,  gloss: "служить, почитать", z1975: "I₁ (conf low)", z1978: "A₂ (closed) — расхождение рядов между реестрами", crosswalk: "yes"}
+          - {root: jan,  gloss: "рождаться, возникать (jāya-)", z1975: "N₁ (conf medium; дубль-строки wno 249)", z1978: "N₂ (open)", crosswalk: "yes"}
+          - {root: yudh, gloss: "сражаться (+In.)", z1975: "U₁ (conf high)", z1978: "U₁ (closed)", crosswalk: "yes"}
+          - {root: mar,  gloss: "умирать (mriya-)", z1975: "R₁ (conf high)", z1978: "R₁ (open)", crosswalk: "yes — под написанием mṛ (гомоним mṛ «crush», wno 572, второй строкой); ловушка поиска по «mar» — повтор div/har урока VI, tar урока IX"}
+          - {root: arth, gloss: "просить, требовать (+Acc. duplex)", z1975: "?", z1978: "?", crosswalk: "NO — строки нет (как śuṣ урока V, mṛg урока IX)"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B+ — класс при каждом глаголе (I×11, IV×2, VI×1, X×1); первый целиком-медиальный список урока; морфонологической записи нет — как во всей школьной линии"
+          whitney: "W: классы — в root-аппарате (№№ 45, 85, 518, 598, 628, 654, 673, 707, 836, 856, 249, 609, 571); в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды; NB: три корня урока (kamp A₁/M₁, vand A₁/N₁, sev I₁/A₂) имеют расходящиеся ряды между З-1975 и З-1978 — редкий случай, когда два реестра Зализняка расходятся между собой"
+          kochergina: "K: класс при глаголе (śikṣ — уже парадигма Занятия VIII); записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/15 глаголов урока (по корневой тождественности, rabh под ā-rabh, mar под mṛ); śikṣ и arth отсутствуют (как śaṃs/rakṣ/jīv урока I, hvā/sṛj урока III, śuṣ урока V, mṛg урока IX, i/stu урока XXXVIII); ловушки поиска: mar сидит под написанием mṛ с гомонимом «crush», śikṣ — ложное попадание на śās «order» (третий случай ложного покрытия после sarj/saj и śubh/subh); labh/jan — дубль-строки (артефакт реестра, как mad/vṛt); расхождение рядов kamp/vand/sev между двумя реестрами Зализняка задокументировано впервые в конкордансе"
