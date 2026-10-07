@@ -123,6 +123,8 @@ LOCAL_SOURCE_FILES = {
     "sangram-ta-na-participles": "sangram/articles/ta-na-participles/index.mdx",
     "sangram-infinitive": "sangram/articles/infinitive/index.mdx",
     "sangram-gerundive": "sangram/articles/gerundive/index.mdx",
+    "sangram-compounds-overview": "sangram/articles/compounds-overview/index.mdx",
+    "sangram-tatpurusha": "sangram/articles/tatpurusha/index.mdx",
 }
 
 
