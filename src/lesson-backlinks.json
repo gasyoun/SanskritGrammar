@@ -144,6 +144,10 @@
       {
         "label": "урок XLII — конкорданс",
         "spot": "УРОК XLII."
+      },
+      {
+        "label": "урок XLIII — конкорданс",
+        "spot": "УРОК XLIII."
       }
     ],
     "ocherk": [
@@ -690,6 +694,42 @@
       {
         "label": "урок XLII — class-vii-irregular-roots",
         "spot": "Иррегулярные корни VII: piṣ/hiṅs (impf. apinaṭ/apiṅṣ-, ahina"
+      },
+      {
+        "label": "урок XLIII — perfect-reduplication-vowels",
+        "spot": "Слог удвоения перфекта, гласные: долгие/краткие замещаются с"
+      },
+      {
+        "label": "урок XLIII — perfect-reduplication-vowels",
+        "spot": "Слог удвоения перфекта, гласные: долгие/краткие замещаются с"
+      },
+      {
+        "label": "урок XLIII — perfect-strong-weak-guna",
+        "spot": "Сильные и слабые формы: сильные — ед.ч. Par.; guṇa подъёмных"
+      },
+      {
+        "label": "урок XLIII — perfect-endings-union-vowel",
+        "spot": "Окончания перфекта (Par. a/tha/a, va/athuḥ(s)/atuḥ(s), ma/a/"
+      },
+      {
+        "label": "урок XLIII — perfect-root-paradigms",
+        "spot": "Корневые парадигмы: jīv/sev (полная таблица, jijīva/siṣeve);"
+      },
+      {
+        "label": "урок XLIII — perfect-special-weak-allomorphs",
+        "spot": "Особые слабые основы: e-перфект — pac→pec (papāca/pec-), обя"
+      },
+      {
+        "label": "урок XLIII — periphrastic-perfect-participles",
+        "spot": "Описательный перфект (B): обязателен у односложных на i/u (п"
+      },
+      {
+        "label": "урок XLIII — periphrastic-perfect-participles",
+        "spot": "Описательный перфект (B): обязателен у односложных на i/u (п"
+      },
+      {
+        "label": "урок XLIII — periphrastic-perfect-participles",
+        "spot": "Описательный перфект (B): обязателен у односложных на i/u (п"
       }
     ],
     "kochergina": [
@@ -1168,6 +1208,22 @@
       {
         "label": "урок XLII — class-vii-final-dh-imperative",
         "spot": "Присоединение окончаний и конечный dh: dh+t/th/dh→ddh (rundd"
+      },
+      {
+        "label": "урок XLIII — perfect-reduplication-vowels",
+        "spot": "Слог удвоения перфекта, гласные: долгие/краткие замещаются с"
+      },
+      {
+        "label": "урок XLIII — perfect-endings-union-vowel",
+        "spot": "Окончания перфекта (Par. a/tha/a, va/athuḥ(s)/atuḥ(s), ma/a/"
+      },
+      {
+        "label": "урок XLIII — perfect-root-paradigms",
+        "spot": "Корневые парадигмы: jīv/sev (полная таблица, jijīva/siṣeve);"
+      },
+      {
+        "label": "урок XLIII — periphrastic-perfect-participles",
+        "spot": "Описательный перфект (B): обязателен у односложных на i/u (п"
       }
     ],
     "knauer": [
@@ -1530,6 +1586,18 @@
       {
         "label": "урок XLII — class-vii-irregular-roots",
         "spot": "Иррегулярные корни VII: piṣ/hiṅs (impf. apinaṭ/apiṅṣ-, ahina"
+      },
+      {
+        "label": "урок XLIII — perfect-reduplication-vowels",
+        "spot": "Слог удвоения перфекта, гласные: долгие/краткие замещаются с"
+      },
+      {
+        "label": "урок XLIII — perfect-root-paradigms",
+        "spot": "Корневые парадигмы: jīv/sev (полная таблица, jijīva/siṣeve);"
+      },
+      {
+        "label": "урок XLIII — perfect-special-weak-allomorphs",
+        "spot": "Особые слабые основы: e-перфект — pac→pec (papāca/pec-), обя"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1686,6 +1754,10 @@
       {
         "label": "урок XLII — lesson-roots",
         "spot": "Лемма-слой: 13 глагольных строк урока — 10 корней VII + band"
+      },
+      {
+        "label": "урок XLIII — lesson-roots",
+        "spot": "Лемма-слой: 49 корней урока — все несущие правила/парадигмы "
       }
     ],
     "sangram-thematic-present": [
@@ -1940,6 +2012,18 @@
       {
         "label": "урок XXXIV — bahuvrihi-definition",
         "spot": "Bahuvrīhi — определение: разрешение относительным придаточны"
+      }
+    ],
+    "sangram-perfect": [
+      {
+        "label": "урок XLIII — perfect-reduplication-vowels",
+        "spot": "Слог удвоения перфекта, гласные: долгие/краткие замещаются с"
+      }
+    ],
+    "sangram-past-tenses": [
+      {
+        "label": "урок XLIII — perfect-strong-weak-guna",
+        "spot": "Сильные и слабые формы: сильные — ед.ч. Par.; guṇa подъёмных"
       }
     ]
   }
