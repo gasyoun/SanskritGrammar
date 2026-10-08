@@ -3147,3 +3147,84 @@ lessons:
           - {root: "vi-dhā", gloss: "устраивать, предписывать", z1975: "?", z1978: "?", crosswalk: "NO — приставочный; корень dhā покрыт отдельной строкой (прецедент XXXVII ni-/prati-)"}
           - {root: "saṃ-dhā", gloss: "накладывать, соединять", z1975: "?", z1978: "?", crosswalk: "NO — приставочный (dhā)"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/17 строк урока; vi-dhā/saṃ-dhā — приставочные без собственных строк (честно, dhā покрыт); pṝ — под написанием pṛ hom 1 fill (ловушка написания серии), grah — под grabh (вторая встреча после XXXVII); глоссовые вилки vij («tremble» vs «пугать») и viṣ («be active» vs «проникать») помечены честно; ряд ≠ класс: nij/vij/viṣ = I₁ при III классе — 5-й случай серии. Вне скоопа: Кнауэр Nr.11.11 пишет पार्वती, урок — पर्वती (кандидат в errata, GTD)"
+
+  XLII:
+    title: "VII класс (атематический, rudhādi — носовой инфикс): сильные формы — слог na [ṇa] перед конечной согласной, слабые — n с ассимиляцией следующему согласному (anusvāra перед шипящими и h), корень с внутренним носовым его теряет; конечный dh→ddh /_t,th,dh и →t /_s и в 2–3 sg. impf. (отсылки XXXIX 7/8/10, XL 12/13); парадигмы yuj (yunaj-/yuñj-) и rudh (ruṇadh-/rundh-) в ind./impf./imper./pot.; piṣ/hiṅs (apinaṭ, ahinasam), tṛh со слогом ṇe (tṛṇeḍhi)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6183–6376 (заголовок «# УРОК XLII.»)"
+    claims: [HB-326, HB-327, HB-328]
+    reuse_clusters:
+      - "Кураторская находка (вне матчера, matches.json: 0 строк buhler-XLII): санскритское упражнение урока (mdx 6373) дублирует Кнауэр Nr.12 пп. 10–12 дословно: п.10 ये गा हिंसन्ति तेषां गरीयः प्रायश्चित्तं विदधति तस्माद्गा मा हिन्धि (hiṅs ind. + hindhi imp.) ↔ «ye gā hiṅsanti … tasmād gāṁ mā hindhi», п.11 प्रातरश्विनावुषसा…युङ्क्त इत्यृक्षु श्रूयते (yuj imper. 3 sg.) ↔ «prātar açvināv uṣasā … yun̄kta ity ṛkṣu çrūyate», п.12 अहो प्रतिकूलो विधिर्विशिनष्टि (vi-śiṣ) ↔ «aho pratikūlo vidhir viçinaṣṭi» — с сандхи-вариантом написания गा मा (урок) ↔ gāṁ mā (Кнауэр; прецедент रुजा/रुजया XLI) и лексическим вариантом хвоста п.12: मनोरुजं मे (урок) ↔ duḥkhaṁ me (Кнауэр)"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XLII нет (честно; соседний XLIII уже имеет 3 строки vac/bhū/gam — лакуна точечная)
+    topics:
+      - key: class-vii-nasal-infix
+        title: "Носовой инфикс VII класса: сильные — слог na [ṇa] перед конечной согласной, слабые — n с ассимиляцией следующему согласному (anusvāra перед шипящими и h); корень с внутренним носовым его теряет (bhanakti-тип)"
+        buhler_locus: "урок XLII, п.1а (mdx 6185) + таблицы yuj (mdx 6189–6239)"
+        topic_claims: [HB-326]
+        spots:
+          "kochergina-lesson:XVI": "при помощи инфиксов n-/na между гласной и конечной согласной корня"
+          "zalizniak-1978-sec:134": "вставлен инфикс na/n (na в сильных формах, n в слабых)"
+          "knauer-fraza:Nr.12": "yun̄kta ity ṛkṣu çrūyate"
+          "sangram-article:thematic-present": "носового инфикса класса VII и редупликации класса III"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-326 TRUE/JUSTIFIED: весь инвентарь в одном пункте (na/ṇa сильные, n слабые + ассимиляция + anusvāra перед шипящими/h + выпадение корневого носового); таблицы yuj (yunajmi/yuñjanti) и rudh (ruṇadhmi/rundhanti) показывают чередование во всех наклонениях"
+          whitney: "W+ — §683: знак класса (слабые n «adapted in character», сильные ná с ударением); §684: полные парадигмы yuj и rudh; §692a: утрата s/t окончаний в 2–3 sg. act. (ключ к чтению impf.-таблиц урока: ayunak, ahinat)"
+          zalizniak-1978: "Z+ — §134: инфикс na/n + ограничение инвентаря («только от полноизменяемых корней рядов I₁, U₁, R₁, N₁, оканчивающихся на шумную согласную») + парадигмы yuj/rudh (yunajmi…yuñjanti; ruṇadhmi…rundhanti); аномалии слабых форм piṣ/hiṅs/tṛh в §134 не разведены — honest gap"
+          kochergina: "K± — Занятие XVI: «образуют основу настоящего времени при помощи инфиксов n-/na между гласной и конечной согласной корня» + имя класса rudhādi + о.н.в. yuñj-/yunáj-, rundh-/ruṇádh-; о выпадении корневого носового (bhanakti-тип) занятие молчит — honest gap"
+        notes: "sangram thematic-present: носовой инфикс — один из шести атематических маркеров, восстанавливаемых из формы (39+38 из 80 токенов выборки классифицируются инвентарём/формой); упражнение урока несёт живые формы: हिनस्ति, हिन्धि, भिनत्त्येव (bhinatti+sandhi), भिन्दन्तो, युङ्क्त, अभिनत्, अच्छिनत्, आच्छिन्द्याद्; rudh в уроке без impf.-таблицы (aruṇat — только Уитни §684/Очерк §134)"
+      - key: class-vii-final-dh-imperative
+        title: "Присоединение окончаний и конечный dh: dh+t/th/dh→ddh (runddhaḥ), dh→t перед s (ruṇatsi) и в 2–3 sg. impf. (aruṇat); системные отсылки на XXXIX 7/8/10 (c, j, d, ṣ) и XL 12/13 (s, h); imper. 2 sg. всегда -dhi (yun̄gdhi, runddhi)"
+        buhler_locus: "урок XLII, п.1б (mdx 6187) + таблицы rudh (mdx 6241–6273)"
+        topic_claims: [HB-327]
+        spots:
+          "kochergina-lesson:XVI": "Глаголы V и VII классов могут не иметь личных окончаний"
+          "zalizniak-1978-sec:134": "ruṇadhmi, ruṇatsi, ruṇaddhi"
+          "knauer-fraza:Nr.12": "tasmād gāṁ mā hindhi"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-327 TRUE/JUSTIFIED: конечный dh — ddh перед t/th/dh и t перед s и в 2–3 sg. impf.; остальное — системные отсылки на XXXIX 7/8/10 и XL 12/13 вместо повторения — архитектура курса"
+          whitney: "W+ — §684 rudh: runddhaḥ (dh+dh), ruṇatsi (t перед s), aruṇat (impf. 2/3 sg.) с отсылками на §§153/160; §689: 2 sg. imper. «always dhi» (все корни класса консонантные); §692a: s/t теряются «unless saved at the expense of the final radical consonant» — редкость"
+          zalizniak-1978: "Z+ — §134 rudh-ряд — формы-двойники: ruṇatsi (t перед s), runddha (ddh), aruṇat (impf.), imper. runddhi/runtsva; эксплицитного правила конечного dh нет — только формы, honest nuance"
+          kochergina: "K− (сетка HK-104) — Занятие XVI п.4: «у глаголов с основой на согласную личное окончание -dhi» (совпадает с §689), но следующий квантор «Глаголы V и VII классов могут не иметь личных окончаний и 2 л. sg. у них равно основе настоящего времени» для VII оспорен witness-вердиктом: корни VII консонантны и окончание обязательно (yun̄gdhí), голая основа — свойство VIII (kuru) — расхождение свидетелей зафиксировано конкордансом"
+        notes: "Кнауэр Nr.12.10 даёт живую hindhi (imp. 2 sg. от hiṅs — -dhi при шипящем); impf.-таблицы урока (ayunak от yuj, ahinat от hiṅs) — живые примеры утраты s/t из §692a; у rudh impf.-таблицы в уроке нет (aruṇat читается по §684 Уитни/§134 Очерка); грамматика-точность квантора Кочергиной — находка конкорданса (W- вердикт сетки HK-104)"
+      - key: class-vii-irregular-roots
+        title: "Иррегулярные корни VII: piṣ/hiṅs (impf. apinaṭ/apiṅṣ-, ahinasam/ahiṅs-; 2 sg. ind. pinakṣi/hinassi, imp. piṇḍḍhi/hindhi), tṛh со слогом ṇe в сильных формах (tṛṇeḍhi; imp. tṛṇahāni/tṛṇḍhi/tṛṇeḍhu)"
+        buhler_locus: "урок XLII, пп. 4–5 (mdx 6275–6301)"
+        topic_claims: [HB-328]
+        spots:
+          "zalizniak-1978-sec:134": "pinaṣ-/piṁṣ- от √piṣ"
+          "knauer-fraza:Nr.12": "aho pratikūlo vidhir viçinaṣṭi"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-328 TRUE/JUSTIFIED: tṛh-аномалия (ṇe-слог) вынесена отдельным пунктом 5 с тремя формами ind. и тремя imp.; piṣ/hiṅs — impf-таблицы с пометками 2 sg.; ударение нигде не помечено (урок без акцентов)"
+          whitney: "W+ — §694: инвентарь ~30 корней, añj/bhañj/hiṅs носят носовой в другие tense-системы, вторичные a-основы (chinda, piṅṣa, rundha); §695: tṛṇeḍhi/tṛṇéḍhu с отсылкой 224b + грамматические tṛṇehmi; §696: hiṅs — аномальное ударение слабых (híṅsanti, híṅste) — Бюлер его не показывает"
+          zalizniak-1978: "Z± — §134: piṣ среди примеров (pinaṣ-/piṁṣ-); tṛh-ṇe-слог и hiṅs-ударение в Очерке отсутствуют — honest gap инвентаря §134 (полноизменяемые ряды)"
+          kochergina: "K− — Занятие XVI: только yuj/rudh; piṣ/hiṅs/tṛh вне занятия — honest gap"
+        notes: "Кнауэр Nr.12.12 несёт живую форму приставочного vi-śiṣ (viçinaṣṭi, помета ^9^); в упражнении урока та же форма деванагари विशिनष्टि, плюс अभिनत्/अच्छिनत् (abhi-han, ā-chid impf.), आच्छिन्द्याद् (pot.)"
+      - key: lesson-roots
+        title: "Лемма-слой: 13 глагольных строк урока — 10 корней VII + bandh (класс IX; बध्नाति в стихе) + 2 приставочных (vi-śiṣ; saṃ-han II — чужой класс урока)"
+        buhler_locus: "урок XLII, парадигмы (mdx 6189–6301) и список «Глаголы:» (mdx 6303–6323), формы упражнения (mdx 6365–6375)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: классы при глаголах цифрой (все VII; bandh IX; saṃ-han II; vi-śiṣ приставочный без класса); морфонологической записи нет; hiṅs в уроке в двух написаниях (hiṅs/hiṃs)"
+          whitney: "W: классы — в root-аппарате (yuj/rudh §684, tṛh §695, hiṅs §696, indh §691 índhāna); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §134 покрывает yuj/rudh/piṣ (+chid/bhañj в примерах chinad-/chind-, bhanaj-/bhañj-); tṛh/indh/bhid/bhuj/saṃ-han вне §§133–135 — реестр Очерка уже урока"
+          kochergina: "K: класс при глаголе (yuj/rudh в XVI с о.н.в.; bandh там же в примере IX: badhnī-/badhnā́-); записи рядов нет"
+        lemmas:
+          - {root: "yuj", gloss: "соединять, запрягать (VII: yunakti)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh608)"}
+          - {root: "rudh", gloss: "запирать, препятствовать (VII: ruṇaddhi)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes — hom 2 obstruct (wh659; hom 1 grow wh658 — глоссовая вилка помечена)"}
+          - {root: "piṣ", gloss: "толочь, молоть (VII: pinakṣi)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh456)"}
+          - {root: "hiṃs", gloss: "повреждать, уничтожать (VII: hinasti)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh915)"}
+          - {root: "tṛh", gloss: "дробить (VII: tṛṇeḍhi; глоссы в уроке нет — честно)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh323)"}
+          - {root: "indh", gloss: "зажигать (VII)", z1975: "I1 (conf high, под написанием idh)", z1978: "I₁ (idh)", crosswalk: "yes — под написанием idh «kindle» (wh35, две z-строки) — ловушка написания серии (как pṝ→pṛ, grah→grabh)"}
+          - {root: "chid", gloss: "отрезать; ā- отнимать (VII: chinatti)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh242)"}
+          - {root: "bhañj", gloss: "ломать, разрушать (VII: bhanakti)", z1975: "A1 (conf medium; z-серия N1)", z1978: "A₁ (Очерк §134: ряд N₁ слабая ступень bhaj) — расхождение записи помечено", crosswalk: "yes (wh506) — ряд ≠ класс: A₁/N₁ при VII — 6-й случай серии"}
+          - {root: "bhid", gloss: "колоть, разделять (VII: bhinatti)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh521)"}
+          - {root: "bhuj", gloss: "есть, наслаждаться (VII: bhuṅkti)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes — hom 2 enjoy (wh525; hom 1 bend wh524 — вилка помечена)"}
+          - {root: "bandh", gloss: "связывать, добиваться (в списке с классом IX; बध्नाति в стихе урока)", z1975: "A1 (conf medium)", z1978: "N₁ — 1975 A₁ ↔ 1978 N₁, расхождение реестра", crosswalk: "yes (wh494)"}
+          - {root: "vi-śiṣ", gloss: "увеличивать, определять", z1975: "?", z1978: "?", crosswalk: "NO — приставочный; корень śiṣ покрыт отдельной строкой (I₁, wh787; прецедент vi-dhā/saṃ-dhā XLI)"}
+          - {root: "saṃ-han", gloss: "соединять (класс II — чужой класс урока)", z1975: "?", z1978: "?", crosswalk: "NO — приставочный (han: N₁, wh908, open, full)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 11/13 строк урока; vi-śiṣ/saṃ-han — приставочные без собственных строк (честно, корни śiṣ wh787 / han wh908 покрыты); ловушка написания: indh сидит в crosswalk под idh «kindle» (wh35); bhañj/bandh — расхождения производных строк 1975 и 1978 (A₁↔N₁) помечены честно; класс ≠ ряд: bhañj = A₁/N₁ при VII — 6-й случай серии (nij/vij/viṣ = I₁ при III — 5-й, XLI); ручная находка вне скоопа: Pot. Par. yujyām (mdx 6239) против yuñjyām (Whitney §688, Ātm. yuñjīya рядом) — erratum-кандидат → GTD"
