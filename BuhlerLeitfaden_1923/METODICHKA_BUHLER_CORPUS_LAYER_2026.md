@@ -173,6 +173,19 @@ asicat, amucat это и показывают. Корневой adāḥ стои
 в запретительной конструкции, живой сосед аориста всех типов, дающего 2,3 % глагольных
 словоупотреблений корпуса (HB-363).
 
+## Урок XLVIII — дезидератив и интенсив: живой слой Кнауэра Nr.17
+
+Дезидератив и интенсив видны в живом корпусе ровно там, где урок их рисует: *cikīrṣamāṇaḥ* —
+фраза Кнауэра Nr.17 = MBh 3,52 дословно; *śuśrūṣate* — презенс дезидератива (HB-396:
+«одно только настоящее встречается довольно часто»); *rorūyati* — редкий интенсив II,
+подтверждающий свою редкость. Ранг оставлен пустым: H5699 считал строки по стем-матчам conllu-снапшота (991/1218/38 токенов — счёт в count_all), глобальный лемма-ранг для стема в lemma_frequency не определён.
+
+| Лемма | Полоса | Ранг | Пример | Локус DCS | Перевод |
+|---|---|---|---|---|---|
+| cikīrṣ | топ-1000 |  | satyaṃ cikīrṣamāṇas tu dhārayāmāsa hṛcchayam | Mahābhārata: MBh, 3, 52.1279 | истину намереваясь сохранить в сердце, он [Хриман?]… |
+| śuśrūṣ | топ-1000 |  | patim … śuśrūṣate | Viṣṇusmṛti: ViSmṛ, 25.5393 | служит мужу |
+| rorūy | редкое |  | rorūyati | Bhāgavatapurāṇa: BhāgPur, 3, 31.971 | вопит |
+
 ## Управление глаголов — подтвержденные рамки Шерцля вживую
 
 Раздел I дал сверку индекса Шерцля с корпусом (693 подтвержденные рамки при потолке
@@ -200,6 +213,7 @@ asicat, amucat это и показывают. Корневой adāḥ стои
 | Дата | Ревизия | Основание |
 |---|---|---|
 | 31-08-2026 | Раздел II написан: полосы и живые примеры к урокам XVIII, XXVIII, XXXIV, XXXVIII, XLIII, XLIV, XLV и слою управления — 31 лемма | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
+| 08-10-2026 | Урок XLVIII дописан: 3 леммы corpus_layer (cikīrṣ/śuśrūṣ/rorūy — H5699) встали в рукописную таблицу; красный CI main (test_corpus_layer::test_manuscript_tables_agree_with_tsv) погашен горячим фикс-проходом H5679 | [H5679](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5679-OxAlpha_SanskritGrammar_buhler-concordance-XXVIII_02.10.26.md); OxAlpha (`opencode/z-ai/glm-5.3-flash`) |
 
 _Раздел II методички. Числа полос воспроизводимы скриптом
 [scripts/build_corpus_layer.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py)
