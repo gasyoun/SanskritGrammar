@@ -152,6 +152,10 @@
       {
         "label": "урок XLIV — конкорданс",
         "spot": "УРОК XLIV."
+      },
+      {
+        "label": "урок XLV — конкорданс",
+        "spot": "УРОК XLV."
       }
     ],
     "ocherk": [
@@ -750,6 +754,30 @@
       {
         "label": "урок XLIV — benedictive-precative",
         "spot": "Прекатив (benedictivus/precativus): P. суфф. yās, Ā. — sī [ṣ"
+      },
+      {
+        "label": "урок XLV — aorist-root-first",
+        "spot": "Первый аорист (корневой): вторичные окончания без соединител"
+      },
+      {
+        "label": "урок XLV — aorist-thematic-a",
+        "spot": "Второй аорист (a-аорист): образуется как impf. VII кл. [опеч"
+      },
+      {
+        "label": "урок XLV — aorist-reduplicated",
+        "spot": "Третий аорист: по форме imperf. с удвоением, спрягаемый по п"
+      },
+      {
+        "label": "урок XLV — aorist-class-x-causative",
+        "spot": "Аорист X класса и каузативов — только третий: aya всегда отб"
+      },
+      {
+        "label": "урок XLV — aorist-class-x-causative",
+        "spot": "Аорист X класса и каузативов — только третий: aya всегда отб"
+      },
+      {
+        "label": "урок XLV — aorist-injunctive-ma",
+        "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
       }
     ],
     "kochergina": [
@@ -1256,6 +1284,26 @@
       {
         "label": "урок XLIV — future-participle-conditional",
         "spot": "Причастия простого будущего — подобно причастиям настоящего "
+      },
+      {
+        "label": "урок XLV — aorist-root-first",
+        "spot": "Первый аорист (корневой): вторичные окончания без соединител"
+      },
+      {
+        "label": "урок XLV — aorist-thematic-a",
+        "spot": "Второй аорист (a-аорист): образуется как impf. VII кл. [опеч"
+      },
+      {
+        "label": "урок XLV — aorist-reduplicated",
+        "spot": "Третий аорист: по форме imperf. с удвоением, спрягаемый по п"
+      },
+      {
+        "label": "урок XLV — aorist-class-x-causative",
+        "spot": "Аорист X класса и каузативов — только третий: aya всегда отб"
+      },
+      {
+        "label": "урок XLV — aorist-injunctive-ma",
+        "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
       }
     ],
     "knauer": [
@@ -1642,6 +1690,18 @@
       {
         "label": "урок XLIV — future-participle-conditional",
         "spot": "Причастия простого будущего — подобно причастиям настоящего "
+      },
+      {
+        "label": "урок XLV — aorist-root-first",
+        "spot": "Первый аорист (корневой): вторичные окончания без соединител"
+      },
+      {
+        "label": "урок XLV — aorist-reduplicated",
+        "spot": "Третий аорист: по форме imperf. с удвоением, спрягаемый по п"
+      },
+      {
+        "label": "урок XLV — aorist-injunctive-ma",
+        "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
       }
     ],
     "sangram-conjugation-overview": [
@@ -1806,6 +1866,10 @@
       {
         "label": "урок XLIV — lesson-roots",
         "spot": "Лемма-слой: 46 корней урока — все несущие правила/списки/пар"
+      },
+      {
+        "label": "урок XLV — lesson-roots",
+        "spot": "Лемма-слой: ~55 корней урока — парадигмы трёх корневых аорис"
       }
     ],
     "sangram-thematic-present": [
@@ -2072,6 +2136,26 @@
       {
         "label": "урок XLIII — perfect-strong-weak-guna",
         "spot": "Сильные и слабые формы: сильные — ед.ч. Par.; guṇa подъёмных"
+      }
+    ],
+    "sangram-aorist-types": [
+      {
+        "label": "урок XLV — aorist-root-first",
+        "spot": "Первый аорист (корневой): вторичные окончания без соединител"
+      },
+      {
+        "label": "урок XLV — aorist-thematic-a",
+        "spot": "Второй аорист (a-аорист): образуется как impf. VII кл. [опеч"
+      },
+      {
+        "label": "урок XLV — aorist-reduplicated",
+        "spot": "Третий аорист: по форме imperf. с удвоением, спрягаемый по п"
+      }
+    ],
+    "sangram-aorist": [
+      {
+        "label": "урок XLV — aorist-injunctive-ma",
+        "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
       }
     ]
   }
