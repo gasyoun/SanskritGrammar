@@ -494,6 +494,124 @@ lessons:
           kochergina: "K: класс даётся при глаголе, записи нет"
         notes: "Урок XXII — именной: 1 глагол против ~26 существительных/прилагательных; crosswalk 1/1 — строка есть под кратким написанием saj (829), поиск по «sañj» её не находит: вариант написания корня в реестре — ловушка поиска, задокументирована (DeepSeek-спот-чек 03-10 поймал первичный ложный GAP; контраст: урок I — 10/13, XXIX — 12/12, XXXVIII — 5/7)"
 
+  XXVIII:
+    title: "Страдательное причастие прош. на ta: гласные корни (прямо + d-исключения после приставок); согласные ряды (прямое ta при t/p/s и носовых группах, c/j→k, ś/ṣ→ṣṭ, dh/bh→ddh, h→ḍh, m→n, n/ṇ); соединит. i (X кл./каузативы/отыменные + исключения dyūta…); grah→gṛhīta; совершенно неправильные (pakva, śuṣka, phulla); причастие прош. действ. на vat"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3735–3984 (заголовок «# УРОК XXVIII» — без точки; рус. перевод упражнения — mdx 3983). Упражнение урока — почти дословно Кнауэр Nr.18 (§§ 200–202, самое плотное Knauer-пересечение серии после XXXVII/Nr.12): 3 совпадения matches.json, из них 2 exact (श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः = knauer-1908.18.386, क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम् = 18.387) + 1 fuzzy 0.936 (18.388 — у Кнауэра чтение राक्षः против राज्ञः Бюлера); словарный шум: «palāy I. Ā» ↔ kochergina-1998.XXXIV.1233 (0.857, перестановка «I. Ā»/«Ā I» — не текст). corpus_layer — 6 строк: kup (kupitā)/krudh (kruddha) — seṭ/aniṭ-контраст HB-211, pat (patitā) HB-211, jan/khan/san — тройка HB-219"
+    claims: [HB-40, HB-208, HB-209, HB-210, HB-211, HB-212, HB-213, HB-214, HB-215, HB-216, HB-217, HB-218, HB-219, HB-220, HB-221, HB-222, HB-223]
+    reuse_clusters:
+      - "2 exact + 1 fuzzy с Knauer Nr.18 (scripts/data/matches.json): XXVIII.617 «श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः» ↔ knauer-1908.18.386 1.0; XXVIII.619 «क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं प्ररूढम्» ↔ knauer-1908.18.387 1.0; XXVIII.615 «श्रीमतो राज्ञः…» ↔ knauer-1908.18.388 0.936 — у Кнауэра राक्षः (опечатка/чтение), у Бюлера राज्ञः «царя»; вариативный ряд серии после XXVII.603 (स्माकं/в-двух-уроках) — здесь расхождение внутри одной фразы"
+    corpus_layer:
+      - "kup — kupitā (500 токенов, редкое; Rāmāyaṇa Ār 43, 5) — seṭ-причастие kupita, восстановленный член списка HB-211 (в уроке uṣita у vas, kupita в живом корпусе)"
+      - "krudh — kruddha (1574 токена, топ-1000; Hitopadeśa 2, 119.10) — aniṭ-причастие kruddha, контраст к kupita — живое опровержение HB-211-as-printed (krudh→kruddha, не *krudhita; конечный dh вообще вне скоупа «t, p и s»)"
+      - "pat — patitā (2775 токенов, топ-1000; Hitopadeśa 3, 4.17) — seṭ-причастие patita из списка HB-211"
+      - "jan — jātasya (7380 токенов, топ-100; Hitopadeśa 4, 71.2) — тройка jan/san/khan HB-219: jāta (носовой потерян, гласный удлинён)"
+      - "khan — khātaṃ (149 токенов, редкое; Rāmāyaṇa Bā 40, 6) — тройка HB-219: khāta"
+      - "san — sanotu (155 токенов, редкое; Ṛgveda 6, 54, 5.2) — тройка HB-219: sāta (причастие); errata HB-219 (sam→san, sata→sāta) подтверждена живой парадигмой sanotu"
+    topics:
+      - key: ppp-ta-vowel-roots
+        title: "ta прямо к гласным корням (jñāta, jita, nīta, stuta, bhūta, kṛta) + неправильные гласные ряды (gīta, datta, hita, pīta, mita, śayita, sita, sthita, hūta); d-исключение после гласных приставок (pratta/nidatta/anūtta)"
+        buhler_locus: "урок XXVIII, §1–2 + сноска * (mdx 3737–3763)"
+        topic_claims: [HB-208, HB-209]
+        spots:
+          "kochergina-lesson:XXV": "Пассивное причастие прошедшего времени (participium perfecti passivi, pp.) образуется прибавлением суффиксов"
+          "zalizniak-1978-sec:162": "Их вместе называют также пассивным причастием прошедшего"
+          "knauer-fraza:Nr.18": "kuto bhavān āgata iti dvāri sthitaḥ parivrāḍ gṛhasya patyā pṛṣṭaḥ"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-208 TRUE/JUSTIFIED («почти ко всем» — честный хеджи; iṭ-ряд śī→śayita уже в собственном списке «неправильных»); HB-209 TRUE/JUSTIFIED (вилка pratta/pradatta зафиксирована самим уроком, «иногда» — факультативность)"
+          whitney: "W+ — §§952–953: ta прямо к гласным корням; contracted -tta формы dā после гласных приставок (прецедент §956-зоны na-исключений) — тот же слой, что сноска *"
+          zalizniak-1978: "Z+ — §162: «Причастия на -ta- и -na- (с одинаковым значением)… пассивным причастием прошедшего времени» — рамка одним штрихом, без рядов гласных корней и без d-вилки; деепричастие на -tvā из причастия на -ta- заменой суффикса (dṛṣṭvā, pītvā, sthitvā) — косвенное подтверждение прямого ta"
+          kochergina: "K+ — Занятие XXV: «Пассивное причастие прошедшего времени… образуется прибавлением суффиксов -(i)ta и (реже) -na к слабому звуковому виду корня. Ударение падает на суффикс»; активное значение у непереходных (gata, sthita) — тот же слой; «(i)» в скобках — свёрнутый скоуп всех рядов §§3–4 урока"
+        notes: "Упражнение-двойник Кнауэра Nr.18 открывается той же серией: āgata (gam, §3д-исключение), sthita (sthā — гласный корень), pṛṣṭa (praś + pṛch→ṣṭ) — три ряда урока в одной фразе; Кнауэр сносками отсылает к собственным §§ 200 Iа/д — параллельный учебник решает те же ряды нумерацией, Бюлер списками"
+      - key: ppp-ta-consonant-changes
+        title: "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta, kṣipta, upta, śasta — носовой теряется как в pass.); i после частых t/p/s-корней (dyutita, patita, uṣita…); c/j→k (ukta, sikta, yukta, tyakta) + c/j-ряды с i (ucita, rucita, vrajita); ś→ṣ и t→ṭ (dṛṣṭa, daṣṭa, dviṣṭa; pṛṣṭa, iṣṭa, sṛṣṭa, mṛṣṭa, śiṣṭa) + ṣ-ряды с i (tṛṣita, muṣita, marṣita)"
+        buhler_locus: "урок XXVIII, §3а–в + сноски **/*** и **** (mdx 3765–3797)"
+        topic_claims: [HB-210, HB-211, HB-212, HB-213, HB-214, HB-215]
+        spots:
+          "knauer-fraza:Nr.18": "क्षेत्रेषु सिक्ताभिर्मेघानामद्भिर्धान्यं"
+          "zalizniak-1978-sec:34": "ведут себя перед шумными согласными как простые"
+          "kochergina-lesson:XXV": "Как видим, возможны образования причастий на -ta и -na и от непереходных глаголов"
+        exceptions:
+          verdict: "REFUTED-AS-PRINTED (HB-211) при подтверждённых правилах"
+          buhler: "B± — HB-210/212/213/214/215 TRUE/JUSTIFIED (ряды точны, носовой-потеря śasta = pass. śasyate верна); **HB-211 FALSE как напечатано**: krudh→kruddha, не *krudhita — krudh с конечным dh вообще вне скоупа «на t, p и s» (собственный контраст живого корпуса: kupitā vs kruddha); остальные 6 членов (dyutita, patita, lapita, uṣita, uṣita-vas, śvasita, hasita) верны; errata-прецедент HB-60"
+          whitney: "W+ — §§954–956 (территория прямого ta + вставки i): c/j-реверсия в guttural (ukta с samprasāraṇa), ś/ṣ-ретрофлексия ṭ; seṭ-списки Уитни шире (весь §945-зона вставки i — общая рамка глагольной системы, §§584/796/945 параллели)"
+          zalizniak-1978: "Z+ — §34-примечания: kṣ/jj/çc перед шумными как простые ṣ/j/c (bhṛjj+ta-→bhṛṣṭa-) — та же морфонология одним абзацем; исключения-списка нет (гипотеза МГ держится: точечные примечания, не перечни)"
+          kochergina: "K+ — Занятие XXV: таблица рядов с ударением на суффиксе; непереходные ta-причастия с активным значением — частотная рамка; отдельных i-списков нет — скоуп K уже Бюлерова"
+        notes: "Кнауэр-сноска Nr.18 ^12^ «siktābhir отъ sic» прямо нумерует c→k-ряд урока; 2 дева-фразы совпадения — Sikta (HB-212) и Prаrūḍha (ruh+pra); корреляция рядов урока с § 200 Кнауэра Iа–д — самая плотная таблица-двойник серии"
+      - key: ppp-ta-sonorant-changes
+        title: "dh/bh→d/b с t→dh (vṛddha, baddha, labdha); h→ḍh с удлинением гласного кроме ṛ (gāḍha, gūḍha, līḍha, ūḍha; dṛḍha) + śubhita/dṛhita/mahita и gdha-ряд (dagdha, digdha, dugdha, drugdha/drūḍha, mugdha/mūḍha, snigdha/snīḍha, naddha, soḍha); m→n с удлинением (kānta, krānta, dānta) но gata/nata/yata/rata; n/ṇ-ряд (khāta, jāta, tata, mata, sata, kṣata)"
+        buhler_locus: "урок XXVIII, §3г–е + сноски ***** и «Неправильны» (mdx 3799–3871)"
+        topic_claims: [HB-216, HB-217, HB-218, HB-219]
+        spots:
+          "knauer-fraza:Nr.18": "mūḍhaḥ kharaḥ kroṣṭoḥ snigdhābhir vāgbhiḥ pratāritaḥ"
+          "zalizniak-1978-sec:34": "naddha- *привязанный* (суффикс -ta-)"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — HB-216 TRUE/JUSTIFIED (Бартоломае-ряд: сонас+ta→(d)dha); HB-217 TRUE/JUSTIFIED (gdha-ряд самим уроком под «Неправильны» — скоуп закрыт на странице, вердикт CLAIMS_VERIFIED mdx 3823–3839); HB-218 TRUE/JUSTIFIED («большей частью» + закрытый слабый ряд gam/nam/yam/ram); **HB-219 FALSE как напечатано**: пятая пара «sam давать, sata» — опечатка: корень san (ṣaṇ dāne), причастие sāta с удлинением (Pāṇini 6.4.42 janasanakhanām — параллель напечатанных рядом jāta/khāta); читать «san давать, sāta» (errata CLAIMS_VERIFIED, прецедент HB-60); живая парадигма sanotu (ṚV 6, 54, 5.2) — тот же корень"
+          whitney: "W+ — §§222–224 (ḍh-обработка h с блокировкой удлинения при ṛ — dṛḍha) и §160-зона (dh/bh+t→ddh); ppp n-корней: тройка jan/san/khan — та же nasal-loss+lengthening группа"
+          zalizniak-1978: "Z+ — §34-примечание 2: «корень √nah… перед шумными согласными и в конце словоформы как nadh: naddha- (суффикс -ta-)» — единственный свидетель gdha-ряда вне Бюлера; остальное — silence (гипотеза МГ подтверждается на самом плотном ряду урока)"
+          kochergina: "K+ — Занятие XXV: таблица с dh/bh→ddh и h→ḍh рядами; m→n и gdha-исключения — не перечисляются (скоуп уже)"
+        notes: "Кнауэр Nr.18: mūḍhaḥ (HB-217 gdha-ряд) + pratāritaḥ (каузатив с i — мост к следующей теме); вилка dṛh «укреплять»/«расти» → dṛḍha/dṛhita — единственный корень в двух рядах урока; darh (словарь урока) = вариант dṛh — написание-вилка crosswalk-реестра (darh NO / dṛh R₁)"
+      - key: ppp-ta-i-insertion
+        title: "Соединит. i: X класс/каузативы (corita, tāḍita, mārita), отыменные, большинство корней на k/kh/g/gh/ch/церебральные/th/ph/l/v и групп (śaṅkita, likhita, sevita, īkṣita, nindita; śak→śakta); исключения (dyūta, ṣṭhyūta, syūta, taṣṭa, bhṛṣṭa); grah→gṛhīta (§5); совершенно неправильные (kṣāma, kṛśa, pakva, śuṣka, phulla) (§6)"
+        buhler_locus: "урок XXVIII, §4–6 + сноска * (mdx 3873–3913)"
+        topic_claims: [HB-220, HB-221, HB-222, HB-223]
+        spots:
+          "knauer-fraza:Nr.18": "श्वभिर्गृहीतो हरिणो व्याधैर्व्यापादितः"
+          "zalizniak-1978-sec:63": "соединительная гласная i (или ī"
+          "kochergina-lesson:XXV": "образуется прибавлением суффиксов **-(i)ta** и (реже)"
+          "sangram-article:ta-na-participles": "нейтральный суффикс, слабая ступень корня"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-220 TRUE/JUSTIFIED (derived-половина без исключений; «большинству» половина хеджирована и исключения напечатаны следующей же сноской — скоуп закрыт на странице); HB-221 TRUE/JUSTIFIED (закрытый список, dyūta даже лексикализован «играть (за деньги)»); HB-222 TRUE/JUSTIFIED (знаменитая идиосинкразия grah, точно); HB-223 TRUE/JUSTIFIED (нипātana-ряд Pāṇini 8.2.51–55 сферы)"
+          whitney: "W+ — §§954–955 (i-вставка как общая seṭ-рамка неличных форм; §900b: grah берёт долгое ī во всей вне-презентной системе — gṛhīta/gṛhītvā/grahītum); §§957–958: kṣāma, kṛśa, pakva, śuṣka, phulla — тот же нерегулярный ряд"
+          zalizniak-1978: "Z+ — §63: seṭ/aniṭ-рамка (в зависимости от того, выступает ли соединительная гласная i/ī — деление корней); §556-примечание: bhṛjj+ta-→bhṛṣṭa- (тавтология HB-221-члена) — но отдельного списка исключений нет"
+          kochergina: "K+ — Занятие XXV: суффикс «-(i)ta» со скобочным i — весь i-вопрос свёрнут в одну скобку; ū-ряды (dyūta…) не обсуждаются"
+        notes: "TALMUD CROSS-CHECK: seṭ/aniṭ-распределение HB-220/221 — morphoclass_crosswalk z_set-колонка (куп/seṭ vs krudh/aniṭ в corpus_layer урока); Кнауэр-сноски ^11^ «pad+vyā по § 200 Iд» и ^2^ «vas съ соедин. i по § 200 Iа» — параллельная нумерация тех же рядов; sangram-статья ta-na-participles цитирует §§ 952–966 Уитни — рамка совпадает"
+      - key: ppp-perfect-active-vat
+        title: "Причастие прош. действ. на vat (N. vān, vatī, vat) от pp.: kṛtavat, dattavat; часто заменяет финитный глагол (§7)"
+        buhler_locus: "урок XXVIII, §7 (mdx 3915)"
+        topic_claims: [HB-40]
+        spots:
+          "kochergina-lesson:XXVI": "Активные причастия прошедшего времени образуются двумя способами"
+          "sangram-article:present-perfect-participles": "vidvān / viduṣ-"
+        exceptions:
+          verdict: "CONFIRMED-REGISTRY-FORK"
+          buhler: "B+ — HB-40 TRUE/JUSTIFIED: vat от pp. + «часто заменяет verbum finitum» — оба факта; сильные/средние/слабые основы (vāṃs/vat/vuṣ) — в уроке XXV (HB-34), здесь только образование"
+          whitney: "W± — **реестровая вилка, найденная при дренаже**: CLAIMS_VERIFIED HB-40 свидетелем называет §§959–960, но sangram present-perfect-participles и живой Wikisource дают образование причастия на vāṃs в §§802–806 (глава «Perfect-System»; §802 «the ending of the active participle is vāṅs… replaced by vát in the middle forms») — при сверке 08-10-2026 §§802–806 подтверждены дословно; ссылки темы идут на §§802–806, колонка CLAIMS_VERIFIED — кандидат в errata-реестр"
+          zalizniak-1978: "Z− — Очерк-1978 причастие на vāṃs/-vas не покрывает (grep по vāṃs/-vas — 0 строк): причина аналитической рамки (перфектные причастия вне § 150-слоя) — прямое подтверждение гипотезы МГ «у Зализняка-1978 нет» на самом редком слое урока"
+          kochergina: "K+ — Занятие XXVI §1: два способа (ta/na + -vant «вторичный суффикс»; перфектная основа + -(i)vaṃs-) — К-слоя шире урока: kṛtavant/śrutavant + cakṛvaṃs; точный параллель HB-40 в первом способе"
+        notes: "Двойник темы periphrastic-perfect-participles урока XLIV (перифрастический перфект дезидеративов Уитни §1071 — derivation-gap witness perfect:124); Кнауэр Nr.18 форм на -vat не содержит — честно, ряд только правилом урока"
+      - key: lesson-roots
+        title: "Лемма-слой: 17 глаголов урока — crosswalk 14/17 (palāy/varṇ — приставочные и X-кл. вне реестра, darh — вариант написания dṛh)"
+        buhler_locus: "урок XXVIII, списки «Глаголы:» (mdx 3917–3947)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: классы при глаголах цифрой (I. Ā ×2, IV-P ×1, X. P ×1, caus. ×4), приставочные без класса (ā-ghrā, pra-tar, saṃ-nah, vyā-pad, upa-star, upa-rudh, pra-viś, pra-vart, ava-śiṣ); darh дан с pp. dṛḍha в скобках — редкая самоссылка урока на §3г"
+          whitney: "W: классы в root-аппарате; darh/dṛh — вариантные написания (wh376 dṛh make firm)"
+          zalizniak-1978: "Z: §63 seṭ/aniṭ-деление — единственная рядовая рамка; parаллельных классов у приставочных нет"
+          kochergina: "K: класс при глаголе в таблицах занятий; caus.-пометы — как у Бюлера"
+        lemmas:
+          - {root: "palāy", gloss: "бежать (I Ā)", z1975: "?", z1978: "?", crosswalk: "NO — приставочно-производный (pal+ī), в реестре отсутствует"}
+          - {root: "ghrā", gloss: "обнюхивать, целовать (ā-ghrā I P)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh210) — двойной ряд ghrāta/ghrāṇa (контекст HB-207)"}
+          - {root: "tṝ", gloss: "обманывать (pra-tar caus.)", z1975: "?", z1978: "?", crosswalk: "NO — под tar/tṝ написаний в реестре нет (as XLVIII-линия)"}
+          - {root: "nah", gloss: "приготовляться (saṃ-nah)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh421) — naddha в gdha-ряде §3г, Z-§34-примечание"}
+          - {root: "bhuj", gloss: "есть (hom 1 bend / hom 2 enjoy)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh524/525 hom) — двойной ряд bhukta/bhugna (XXVII §5)"}
+          - {root: "man", gloss: "чтить (saṃ-man)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh546) — mata §3е"}
+          - {root: "muh", gloss: "заблуждаться (IV P)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh568) — mugdha/mūḍha §3г gdha-ряд"}
+          - {root: "rudh", gloss: "осаждать (upa-rudh; hom 2 obstruct)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh658/659 hom) — niruddha каузативный i"}
+          - {root: "varṇ", gloss: "описывать (X P)", z1975: "?", z1978: "?", crosswalk: "NO — X-класс вне морфокласс-реестра 1975"}
+          - {root: "viś", gloss: "проникать (pra-viś)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh734)"}
+          - {root: "śiṣ", gloss: "оставаться (ava-śiṣ)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh787) — śeṣa/avaśiṣta"}
+          - {root: "dṛh", gloss: "укреплять (darh, p.p. dṛḍha)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh376) — написание-вилка darh/dṛh; второй ряд dṛhita (расти)"}
+          - {root: "jan", gloss: "рождать (corpus: jātasya)", z1975: "N1 (conf medium)", z1978: "N₂", crosswalk: "yes (wh249) — вилка Зализняков 1975 N₁ / 1978 N₂ (5-й случай серии); HB-219 тройка"}
+          - {root: "khan", gloss: "копать (corpus: khātaṃ)", z1975: "N1 (conf medium)", z1978: "N₂", crosswalk: "yes (wh157) — та же вилка N₁/N₂"}
+          - {root: "san", gloss: "добывать (corpus: sanotu)", z1975: "N1 (conf medium)", z1978: "N₂", crosswalk: "yes (wh831) — та же вилка N₁/N₂; HB-219 errata-корень (sam→san)"}
+          - {root: "kup", gloss: "гневаться (corpus: kupitā)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh99) — HB-211 seṭ-член"}
+          - {root: "krudh", gloss: "гневаться (corpus: kruddha)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh123) — HB-211 aniṭ-контраст"}
   XXIX:
     title: "Absolutivum (Gerundium) на -tvā, -ya, -am"
     mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3985–4122 (заголовок «# УРОК XXIX»)"
