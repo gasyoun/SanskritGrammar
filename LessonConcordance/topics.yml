@@ -3072,6 +3072,92 @@ lessons:
           - {root: "snā", gloss: "купать (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh875)"}
           - {root: "apa-han", gloss: "устранять", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908)"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/19 глаголов урока; ni-/prati-/nis- — приставочные без корня в реестре (честно); granth/grah/manth — под вариантами написания grath/grabh/math (ловушки написания серии); bandh-вилка 1975 A₁ / 1978 N₁ вынесена в тему class-ix-ana-nasal-loss"
+  XXXIX:
+    title: "Морфонология корней II класса в impf./imper.: ṛ-корни (jāgṛ — отбрасывание окончаний 2/3 sg, n-less 3 pl ati/atu/uḥ + guṇa); корни на c/j (vac→vak-, дефектность 3 pl ind.); на d (vid→vit-, висарга-опция avet/aveḥ, перфект-презенс veda, vidāṃ karavāṇi); han (jahi, ghn-); ś/ṣ/kṣ/mṛj (dviṣ, cakṣ, mṛj) + īś/vaś; превербные глаголы"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5647–5856 (урок XXXIX открывается жирным делимитером «**Урок XXXIX**», mdx 5647 — план, риск-строка; дальше урок XL — обычный заголовок «# УРОК XL», mdx 5857)"
+    claims: [HB-299, HB-300, HB-301, HB-302, HB-303, HB-304, HB-305, HB-306, HB-307]
+    reuse_clusters:
+      - "1 дословное совпадение, НЕ отражённое в scripts/data/matches.json (кураторская находка прохода): упражнение Бюлера mdx 5853 «यो ऽस्मान्द्वेष्टि यं च वयं द्विष्मस्तमेभिर्मन्त्रैर्हनाम» = yo 'smān dveṣṭi yaṁ ca vayaṁ dviṣmas tam ebhir mantrair hanāma ↔ Knauer Nr.11 п.5 — та же фраза дословно; применяет dviṣmas (1 pl. ind. dviṣ) и hanāma (1 pl. imper. han) урока"
+    corpus_layer: []     # corpus_layer.tsv: строк у урока XXXIX нет (лакуна продолжается после XXXVIII — честно)
+    topics:
+      - key: ri-roots-jagr
+        title: "ṛ-корни II класса в impf. (jāgṛ): отбрасывание окончаний 2/3 sg; ṛ→r перед гласными окончаниями; n-less 3 pl ati/atu/uḥ с guṇa (ajāgaruḥ)"
+        buhler_locus: "урок XXXIX, §6 (mdx 5649–5651): ajāgaram/ajāgaḥ/ajāgaḥ; ajāgṛva…ajāgṛta; ajāgaruḥ"
+        topic_claims: [HB-299]
+        spots: {}
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — §6 три подправила (отбрасывание окончаний 2/3 sg impf. par.; ṛ→r перед гласными окончаниями; jāgṛ принимает ati/atu, а 3 pl на uḥ с guṇa — HB-299 TRUE/JUSTIFIED)"
+          whitney: "W+ — §641/§676: jāgṛ в списке «очевидно редуплицированных» корней, считаемых традицией простыми (jāgṛ, daridrā, vevī); §1020a: корень gṛ «wake» с единственным презентом — интенсивом jāgṛ, рано принявшим значение корня"
+          zalizniak-1978: "Z− — jāgṛ в Очерке не фигурирует (ни в §, ни в индексе) — «корень» вне словаря свидетеля; честный пробел"
+          kochergina: "K− — jāgṛ в курсе Кочергиной отсутствует"
+        notes: "jāgṛ — «одинокий корень» урока: отсутствует в crosswalk, у Кнауэра, у Кочергиной, в dhatu-гл.7 — только Бюлер + Уитни (и HB-299); антипод ловушек написания серии (cakās под kāś, tṝ под tṛ) — тут не ловушка поиска, а реальная лакуна всех реестров"
+      - key: cj-roots-vac
+        title: "Корни на c/j (vac): c/j→k перед t/th/s (с s→ṣ после k), →g перед dh; дефектность — «3 л. pl. ind. не существует, употребительно одно только ед. ч.»"
+        buhler_locus: "урок XXXIX, §7 (mdx 5653–5669): таблицы vacmi/vakṣi/vakti… avacam…avacan (3 pl ind. — клетка с тире)"
+        topic_claims: [HB-300, HB-301]
+        spots:
+          "sangram-article:thematic-present": "атематические классы концентрируются именно в"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — §7 полный алломорфный ряд (vakṣi/vakthaḥ/avak, g перед dh — HB-300 TRUE) + дефектность 3 pl ind. отдельным предложением, продублированная тире в таблице (HB-301 TRUE: statistic)"
+          whitney: "W+ — §219: конечный j — два ряда (как c → k: áyukthās, áyukta; как ç → ṣ: ámṛkṣat) — Бюлер берёт первый (default) ряд, HB-300 note; §612–616: парадигмы корневого класса с той же отсылкой на §226; §620–621: impf."
+          zalizniak-1978: "Z± — §127 закрытый список четырёх корней (as/vaç/han/çās) vac не называет; дефектность vac в Очерке не оговорена — свидетель молчит (неполнота честно)"
+          kochergina: "K− — vac как глагол II класса в курсе не спрягается (словарная линия: только vacana-лексика); неполнота честно"
+        notes: "HB-301 — редкий statistic-клейм серии: дефектная клетка таблицы Бюлера (mdx 5665) — грамматическая константа «no 3pl *vacanti»; sangram: класс II = 5 931 токен DCS, концентрируется в частотных корнях"
+      - key: d-roots-vid
+        title: "Корни на d (vid, ad): d→t перед t/th/s; 2 л. sg. impf. на t/висаргу (avet/aveḥ); перфект-презенс veda/vettha/viduḥ + перифрастический императив vidāṃ karavāṇi; ad — ādaḥ/ādat"
+        buhler_locus: "урок XXXIX, §8 (mdx 5671–5719): таблицы vid (vedmi/vetsi/vetti; avedam…avet, aveḥ; imper. vedāni/viddhi/vettu; pot. vidyām; «Indicat. может также быть: veda…»), ad ādaḥ/ādat"
+        topic_claims: [HB-302, HB-303]
+        spots:
+          "knauer-fraza:Nr.11": "na kaçcid vetti"
+          "zalizniak-1978-sec:127": "У неполноизменяемых корней, например, √ad"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — §8: d→t, висарга-дублет avet/aveḥ («по желанию»), 3 sg на t (HB-302 TRUE); альтернативный презент veda + vidāṃ karavāṇi поданы как «может также быть» (HB-303 TRUE — перфект-презенс и перифрастический императив)"
+          whitney: "W+ — §790a: vid «from the earliest period to the latest, a perfect without reduplication» (véda/véttha/vidúḥ) — перфект-презенс; §620–621: impf. us-опции для vid; HB-303 note: veda — один из частотнейших глаголов языка"
+          zalizniak-1978: "Z+ — §127: ad в списке неполноизменяемых (обе основы совпадают: ad-/ad-); vid — I₁-ряд индекса"
+          kochergina: "K− — перфект-презенс veda как живой презент в курсе не подан (vid у Кочергиной только vidyate «находиться», словарная строка mdx 4866); неполнота честно"
+        notes: "Кнауэр Nr.11 п.9 «na kaçcid vetti mām iti manyate pāpo 'devās tu jānanti narasya vṛttam» — vetti в живой фразе; ad — имперфективные ādaḥ/ādat единственные «неправильности» — точный дублет doctrine §620"
+      - key: han-sibilant-roots
+        title: "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan/ghnantu) + ś/ṣ/kṣ/mṛj: dviṣ трёхрядный (dveṣmi/dvekṣi/dviḍḍhi), cakṣ Ā. (caḍḍhve), īś — i-вставка, vaś→uś, mṛj (mārṣṭi, mṛjanti~mārjanti)"
+        buhler_locus: "урок XXXIX, §§9–10 (mdx 5721–5789): таблицы han, dviṣ, cakṣ; правила īś/vaś/mṛj"
+        topic_claims: [HB-304, HB-305, HB-306, HB-307]
+        spots:
+          "kochergina-lesson:XVII": "ghnanti, aghnan, ghnantu"
+          "knauer-fraza:Nr.11": "dviṣmas tam ebhir mantrair hanāma"
+          "zalizniak-1978-sec:127": "√vaç *желать* (vaç-/uç-)"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — §§9–10 плотнейший узел урока: han с haṅsi-anusvāra и ghn-алломорфом; dviṣ трёхрядный k/ṣ/ḍ + dviḍḍhve Ā.; cakṣ с caḍḍhve; īś i-вставка; vaś→uś; mṛj обязательная vṛddhi сильных + опциональная перед гласными слабых (HB-304..307 — все TRUE/JUSTIFIED)"
+          whitney: "W+ — §637 han: n-потеря «somewhat after the manner of noun-stems», jahí «by anomalous dissimilation on the model of reduplicating forms»; §226 dviṣṭas/dveṣṭum; §630 īḍ/īç i-вставка (ī́çiṣe, ī́çidhve); §638 vaç→uç (uçmási, uçánti); §219 mṛj-ряд (mā́rṣṭhi, mṛḍḍhí)"
+          zalizniak-1978: "Z+ — §127: han и vaç — двое из закрытой четвёрки корней с различными сильной/слабой основами (han-/ha-, ghn-; vaç-/uç-) — закрытый список З-1978 ровно пересекается с уроком"
+          kochergina: "K+ — Занятие XVII п.5: те же три правила han (утрата -n перед -t/-th; -а-→gh в 3 pl; jahi) + Приложение II: карточка dviṣ II (dvéṣṭi/dviṣṭé)"
+        notes: "КУРАТОРСКАЯ НАХОДКА прохода: dviṣmas/hanāma из упражнения-двойника Кнауэра (см. reuse_clusters) — обе формы урока в одной фразе; jahi у Бюлера без пометы о нерегулярности, Уитни §637a называет её «anomalous dissimilation» — учебная редукция, отмеченная свидетелем"
+      - key: lesson-roots
+        title: "Лемма-слой: 10 корней II класса урока (морфонологическая запись) + 5 превербных (ā-/vyā-cakṣ, ceṣṭ, apa-rādh, vi-lap)"
+        buhler_locus: "урок XXXIX, §§6–10 + словарь (mdx 5791–5799: ā-cakṣ, vyā-cakṣ, ceṣṭ I Ā., apa-rādh V P., vi-lap I P.)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: jāgṛ, gloss: "просыпаться (интенсив-стем gṛ)", z1975: "?", z1978: "? (в Очерке нет)", crosswalk: "NO — строки нет («корень» — интенсив-стем, Уитни §1020a)"}
+          - {root: vac,  gloss: "говорить",      z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes"}
+          - {root: vid,  gloss: "знать (и: находить)", z1975: "I₁ (conf high; две строки-омонима: know/find)", z1978: "I₁", crosswalk: "yes"}
+          - {root: ad,   gloss: "есть",          z1975: "A₁ (conf medium)", z1978: "A₁ (неполноизменяемый, §127)", crosswalk: "yes"}
+          - {root: han,  gloss: "убивать",       z1975: "N₁ (conf medium)", z1978: "N₁ (§127: han-/ha-, ghn-)", crosswalk: "yes — единственный openness=open в crosswalk"}
+          - {root: dviṣ, gloss: "ненавидеть",    z1975: "I₁ (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: cakṣ, gloss: "видеть, говорить", z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes"}
+          - {root: īś,   gloss: "властвовать",   z1975: "I₂ (conf high)", z1978: "I₂", crosswalk: "yes"}
+          - {root: vaś,  gloss: "желать",        z1975: "A₁ (conf medium)", z1978: "A₁ (§127: vaç-/uç-)", crosswalk: "yes"}
+          - {root: mṛj,  gloss: "вытирать",      z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даны ступенями (ved-, vet-) без морфонологической записи (школьная линия); jāgṛ подан как обычный II Р. без пометы об интенсив-происхождении"
+          whitney: "W: классы в root-аппарате (204 vac, 728–729 vid ×2, 11 ad, 908 han, 388 dviṣ, 213 cakṣ, 51 īś, 714 vaś, 576 mṛj); jāgṛ — §641/§676/§1020a «очевидно редуплицированный», а не простой"
+          zalizniak-1978: "Z: запись рядами (§127 han-/ha-/ghn-, vaç-/uç-, ad неполноизменяемый) — jāgṛ в Очерке нет"
+          kochergina: "K: класс даётся при глаголе (XVII han; Приложение II dviṣ II), морфонологической записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 9/10 корней урока — jāgṛ NO ROW (контраст: XL 13/13, XXXVIII 5/7, XXXVII 15/19); vid — две строки-омонима know/find, обе I₁ (не самоконфликт); расхождение рядов у превербного ceṣṭ: 1975-I₁ (conf low) ↔ 1978-A₂ — продолжение серии (bhañj A₁/N₁ XLII, syand A₁/N₁ XLIV); corpus_layer — 0 строк урока (лакуна после XXXVIII)"
   XL:
     title: "Морфонология корней II класса в impf./imper.: s-корни (ās, cakās, śās), глагол as с Pot. syām/sīya, h-корни (lih, duh, dih) + īḍ ḍ→ṭṭ, i-вставка (rud, śvas, svap, an, jakṣ); превербные глаголы"
     mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5857–6002 (заголовок «# УРОК XL»; дальше урок XLI — обычный заголовок, mdx 6003)"
