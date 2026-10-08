@@ -2954,3 +2954,97 @@ lessons:
           - {root: "snā", gloss: "купать (II)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh875)"}
           - {root: "apa-han", gloss: "устранять", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908)"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/19 глаголов урока; ni-/prati-/nis- — приставочные без корня в реестре (честно); granth/grah/manth — под вариантами написания grath/grabh/math (ловушки написания серии); bandh-вилка 1975 A₁ / 1978 N₁ вынесена в тему class-ix-ana-nasal-loss"
+  XL:
+    title: "Морфонология корней II класса в impf./imper.: s-корни (ās, cakās, śās), глагол as с Pot. syām/sīya, h-корни (lih, duh, dih) + īḍ ḍ→ṭṭ, i-вставка (rud, śvas, svap, an, jakṣ); превербные глаголы"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5857–6002 (заголовок «# УРОК XL»; дальше урок XLI — обычный заголовок, mdx 6003)"
+    claims: [HB-52, HB-308, HB-309, HB-310, HB-311, HB-312, HB-313, HB-314]
+    reuse_clusters:
+      - "2 совпадения упражнений с Knauer Nr. 11 (scripts/data/matches.json: buhler-1923.XL.928 «महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति» ↔ knauer-1908.11.244, 0.861 — у Кнауэра उदधौ; XL.931 «सुन्दरि समाश्वसिहि समाश्वसिहीति…» ↔ knauer-1908.11.245, 0.918 — у Кнауэра भीतामुर्वशीं против भयनिमीलिताक्षीमुर्वशीं; оба предложения упражняют i-вставочные корни урока svap/śvas)"
+      - "2 совпадения словарных строк с Kochergina (buhler-1923.XL.944 «śvas II» ↔ kochergina-1998.XXXIV.1398 exact 1.0 и ↔ XXXIV.1273 «śvas P II», 0.923 — сводная таблица Приложения II, словарный след, не упражнение)"
+    corpus_layer: []     # corpus_layer.tsv: строк у урока XL нет (лакуна продолжается после XXXVIII — честно)
+    topics:
+      - key: class-ii-s-roots
+        title: "S-корни II класса (ās, cakās, śās): impf. 2 л. на t/висаргу, 3 л. на t, выпадение s перед dh; cakās n-less 3 pl ati/atu/uḥ; śās слабая śiṣ"
+        buhler_locus: "урок XL, §12 (mdx 5859–5865): ās II Ā. ind. āse/āsse/āste…; cakās П. Р. — окончания ati/atu/uḥ (напечатаны impf. acakāsam/acakāḥ/acakāt, 3 pl acakāsuḥ); śās слабая śiṣ, śāsati/aśāsuḥ/śāsatu"
+        topic_claims: [HB-309, HB-310, HB-311]
+        spots:
+          "zalizniak-1978-sec:127": "сильная и слабая основы презенса II в послеведийский период фактически различны только у"
+          "knauer-fraza:Nr.11": "çiṣyān dharmaṁ guruḥ çāsti"
+          "sangram-article:thematic-present": "атематические классы концентрируются именно в"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — §12 три индивидуальных правила (s→t/висарга в 2 л. impf. par., 3 л. на t, выпадение перед dh: ādhve; cakās — n-less 3 pl ati/atu/uḥ; śās — слабая śiṣ при сохранении śās- перед n-less 3 pl) + полное предложение парадигм as — исключения даны по корням, списка «все» нет"
+          whitney: "W+ — §639 çās: «peculiarities of a reduplicated verb», weak-stem çiṣ с оговорками об optative; §641: cakās в списке reduplication-shaped корней (jāgṛ, daridrā, vevī, dīdhī, cakās); §620–621 impf.: us-окончания факультативны для vid/cakṣ/dviṣ/duh/mṛj; HB-309: systemic aśāt/aśāḥ (2 sg) — стандартная трактовка s-финальных атематических основ"
+          zalizniak-1978: "Z+ — §127: «сильная и слабая основы презенса II… фактически различны только у √as (as-/s-), √vaç, √han, √çās (çās-/çiṣ-)» — З-1978 даёт закрытый список четырёх корней; ās — в списке неполноизменяемых (обе основы совпадают)"
+          kochergina: "K− — Занятие XVII (индивидуальные особенности II класса) покрывает yā/i/u-корни/brū/han/as, но s-корни презенса (ās/cakās/śās) не разбирает — неполнота свидетеля зафиксирована честно; śās появляется у Кочергиной без морфонологии (çāsti в словарных строках)"
+        notes: "cakās — редуплицированная форма kāś: Уитни §641 относит к «очевидно редуплицированным» корням, трактуемым традицией как простые; sangram: класс II = 5 931 токен DCS — атематический, концентрируется в частотных корнях; Кнауэр Nr.11 переиспользует çāsti (çaṣ-корень, словарный след, не registered match)"
+      - key: as-verb-paradigm
+        title: "Глагол as II Р. Ā., быть: слабые формы без начального гласного, edhi 2 sg imper., полная парадигма в ind./impf./imper. + Pot. syām/sīya"
+        buhler_locus: "урок XL, §12 (mdx 5867–5917): таблицы as в ind./impf./imper. (asmi/svaḥ/smaḥ… āsīḥ/āsīt… edhi/astu… asāni) + «Pot Par. syām, Ā. sīya»"
+        topic_claims: [HB-312]
+        spots:
+          "kochergina-lesson:XVII": "часто употребляемый и самостоятельно"
+          "zalizniak-1978-sec:127": "√as *быть* (as-/s-)"
+          "sangram-article:imperfect": "āsīt «был», 3032"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — «имеет также много и других неправильностей»: отбрасывание начального гласного в слабых формах, изолированное edhi (оговорено отдельно), impf. āsīḥ/āsīt с ī-вставкой, средний залог he/svahe/smahe, супплетивный Pot. syām/sīya — плотнейший узел исключений урока"
+          whitney: "W+ — §636: полная парадигма as во всех временах (asmi… syām… edhí «irregularly from asdhi»); §620: impf. на примерах i/ās; §619c: аномальное причастие ā́sīna; HB-312 verdict JUSTIFIED (form защищена §226/§603)"
+          zalizniak-1978: "Z+ — §127: as — один из четырёх корней с различными сильной/слабой основами (as-/s-); §66–67: A₁-ряд, полноизменяемый; impf. ā́sīt — 3-й частотнейший корень имперфекта DCS (sangram: 3032)"
+          kochergina: "K+ — Занятие XVII п.6: полная парадигма as P. (ásti/stás/sánti, impf. ā́sīs/ā́sīt, imper. edhi… asāni) + Pot. syā́m…syúr — единственное место курса, где syām спряжён по лицам"
+        notes: "syām/sīya — супплетивная оптативная основа (от √as же): Бюлер даёт однострочно, Уитни — полную таблицу §636, Кочергина — парадигму XVII; sangram-imperfect: as/āsīt — частотнейший статический глагол нарратива после brū/bhū"
+      - key: class-ii-h-roots
+        title: "H-корни II класса (lih, duh, dih) + īḍ: h→ḍh с удлинением предшествующего гласного, перед s k/ṭ; duh/dih gh→gdh/kṣ и перенос придыхания d→dh (ур. XX, 4); īḍ i-вставка + ḍ→ṭṭ/ṭṭh"
+        buhler_locus: "урок XL, §§11, 13 (mdx 5859, 5919–5941): īḍiṣva/īḍāthām/aiḍḍhvam; aleham/aleṭ/līḍhām/lihan; adoham/adhok/adugdham; dehai/dhikṣva/digdhām/dhigdhvam"
+        topic_claims: [HB-308, HB-313, HB-314]
+        spots:
+          "zalizniak-1978-sec:127": "dohmi, dhokṣi, dogdhi"
+          "knauer-fraza:Nr.11": "गां दुग्धि पयः"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — §13 три подправила (слияние h с t/th/dh в ḍh + удлинение a/i/u; перед s k, в 2/3 sg impf. par. ṭ; у duh/dih gh→gdh, с s→kṣ, перенос придыхания d→dh с прямой отсылкой к уроку XX, 4) + §11 īḍ: i перед se/sva/dhve/dhvam, ḍ→ṭṭ/ṭṭh, ḍḍhvam — плотный кластер морфонологических исключений"
+          whitney: "W+ — §612c: парадигма duh (dóhmi/dhókṣi/dugdhá…) с отсылками к §222a/§155/§160; §635: ведийские irregularities duh (duhaté, duhīyát RV); §630: īḍ/īç вставляют i (ī́ḍiṣva); §19/§222a — общие сандхи h-финали"
+          zalizniak-1978: "Z+ — §127: dohmi, dhokṣi, dogdhi, adhok (перенос придыхания §34); imper. dugdhi, но med. dhugdhve/dhukṣva; lehmi, lekṣi, leḍhi; §63: lih/duh/dih aniṭ — исключения у З-1978 есть, перегруппированы в ряды"
+          kochergina: "K− — h-корни презенса не разбираются (XVII ограничена yā/i/u/brū/han/as); duh/lih появляются только в других формах курса (fut. lekṣyá, pp. dugdha/līḍha) — неполнота свидетеля зафиксирована"
+        notes: "īḍ формально u-корневой (ряд I₂ crosswalk), но у Бюлера открывает урок именно ḍ→ṭṭ — зубной кластер как у h-корней; HB-313 «удлиняются предшествующие a, i, u» подтверждается (līḍha, gūḍha, ūḍha); перенос придыхания d→dh — та же ось, что тема aspiration-throwback урока XX (adugdham/adhok); Кнауэр Nr.11: गां दुग्धि पयः — дугдхи-форма duh в упражнении"
+      - key: class-ii-i-insertion
+        title: "I-вставка перед окончаниями на согласный: rud, śvas, svap, an, jakṣ — закрытый список (в 2/3 л. sing. impf. par. вместо i — a или ī)"
+        buhler_locus: "урок XL, §14 (mdx 5943–5957): rud impf. arodam/arodīḥ или arodaḥ/arodīt или arodat; arudiva/arudita/arudan; сноска jakṣ: jakṣati/ajakṣuḥ/jakṣatu"
+        topic_claims: [HB-52]
+        spots:
+          "zalizniak-1978-sec:129": "перед согласной, кроме y, появляется соединительная гласная i"
+          "knauer-fraza:Nr.11": "सुन्दरि समाश्वसिहि"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — закрытый список пяти корней + оговорка о дублетах 2/3 sg impf. par. (arodīḥ/arodaḥ, arodīt/arodat) + сноска jakṣ с тремя формами — HB-52: systemic, тот же пятимерный список, что в референс-грамматике"
+          whitney: "W+ — §631: «rud weep, svap sleep, an breathe, and çvas blow insert a union-vowel i before all the endings beginning with consonants» — точное соответствие; §640: jakṣ «takes the union-vowel i in the manner of rud etc.» + этимология (reduplication of ghas/has); HB-52 note: 2/3sg impf. arodat/arodīt — standard"
+          zalizniak-1978: "Z+ — §129.3: тот же список (√rud, √an, √çvas, √svap, √jakṣ) + «в 2 sg, 3 sg ipf. act. — ī» + rudihi (NB -hi) + opt. rudyām; оговорка «отдельные формы с i встречаются также у нескольких других корней» — список у З-1978 открыт, у Бюлера закрыт"
+          kochergina: "K± — презенс-раздел XVII i-вставку не даёт, но сводная таблица Приложения II даёт полные карточки śvas P II (śvasiti/śaśvāsa), rud P II (roditi), svap P II (svapsyati/suṣvāpa) — match śvas II ↔ Kochergina 1.0 (matches.json)"
+        notes: "jakṣ — «двойной корень» (редупликация ghas/has, Уитни §640) — классификационная вилка тот же ряд, что dhū урока XXXVII; samā-śvas/ā-śvas из словаря урока — i-вставочные в Кнауэре Nr.11 (समाश्वसिहि) — 0.918 match; sangram-imperfect: impf. 3 sg частотнейших корней (a-bravī-t, āsīt, apaśyat) — i-вставочные в топ не входят, честно"
+      - key: lesson-roots
+        title: "Лемма-слой: 13 корней II класса урока (морфонологическая запись)"
+        buhler_locus: "урок XL, §§11–14 (корни в тексте правил: īḍ, ās, kāś/cakās, śās, as, lih, duh, dih, rud, śvas, svap, an, jakṣ)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: īḍ,  gloss: "почитать",      z1975: "I₂ (conf high)", z1978: "I₂", crosswalk: "yes"}
+          - {root: ās,  gloss: "сидеть",        z1975: "A₂ (conf medium)", z1978: "A₂", crosswalk: "yes"}
+          - {root: kāś, gloss: "сиять (cakās)", z1975: "A₂ (conf medium)", z1978: "A₂", crosswalk: "yes — под kāś «appear»; поиск по «cakās» — ловушка"}
+          - {root: śās, gloss: "повелевать",    z1975: "A₂ (conf medium)", z1978: "A₂", crosswalk: "yes"}
+          - {root: as,  gloss: "быть",          z1975: "A₁ (conf medium; две строки-омонима: as¹ be / as² throw)", z1978: "A₁", crosswalk: "yes"}
+          - {root: lih, gloss: "лизать",        z1975: "I₁ (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: duh, gloss: "доить",         z1975: "U₁ (conf high)", z1978: "U₁", crosswalk: "yes"}
+          - {root: dih, gloss: "мазать",        z1975: "I₁ (conf high)", z1978: "I₁", crosswalk: "yes"}
+          - {root: rud, gloss: "плакать",       z1975: "U₁ (conf high)", z1978: "U₁", crosswalk: "yes"}
+          - {root: śvas, gloss: "дышать",       z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes"}
+          - {root: svap, gloss: "спать",        z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes"}
+          - {root: an,  gloss: "дышать",        z1975: "N₁ (conf medium)", z1978: "N? (index-unknown)", crosswalk: "yes — ряд в реестрах не установлен"}
+          - {root: jakṣ, gloss: "есть",         z1975: "A₁ (conf medium)", z1978: "A₁", crosswalk: "yes"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даны гуна-ступенью без морфонологической записи (школьная линия); īḍ/ās/сакās/śās/lih/duh/dih/rud/śvas/svap/an/jakṣ — только формы"
+          whitney: "W: класс при корне в root-аппарате (48 īḍ, 246 jakṣ, 28 ās, 780 śās, 22 as, 684 lih, 369 duh, 357 dih, 657 rud, 822 śvas, 903 svap, 12 an, 91 kāś); в тексте урока классов нет"
+          zalizniak-1978: "Z: запись через ряды (§127 doh-/duh-, leh-/lih-; §129.3 для пятёрки i-вставочных) — у З-1978 запись есть даже там, где нет crosswalk-ряда установленного ряда (an)"
+          kochergina: "K: класс даётся при глаголе (XVII: as; Приложение II: śvas/rud/svap P II), морфонологической записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/13 корней урока строками (контраст: урок I 10/13, XXXVIII 5/7, XXIX 12/12, XXXVII 15/19) — полное покрытие строк, но у an ряд не установлен (index-unknown N?, §67-RMN-list); ловушка поиска: cakās сидит в crosswalk под kāś «appear, make a show» — редуплицированная форма (Уитни §641), наивный поиск по «cakās» даёт ложный GAP (как tṝ/tṛ урока XXXVII и sarj/sañj урока XXII); corpus_layer.tsv — 0 строк урока (лакуна после XXXVIII); все 7 превербных глаголов словаря урока (prāṇ=pra-an, upās=upa-ās, ni-mīl, samā-viś, ā-/samā-śvas, vi-śvas, utthā=ud-sthā) построены на корнях, пять из которых — ряды урока"
