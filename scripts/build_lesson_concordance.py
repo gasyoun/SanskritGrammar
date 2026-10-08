@@ -260,9 +260,10 @@ def main():
         out.append("")
         out.append(f"*Локус текста:* {lesson['mdx']}")
         out.append("")
-        # бэклинк со страницы самого Бюлера (E3)
+        # бэклинк со страницы самого Бюлера (E3); без точки — заголовок XLVII в mdx
+        # без точки («# УРОК XLVII», mdx 7131), substring-спот бьёт оба варианта
         backlinks["pages"]["buhler"].append(
-            {"label": f"урок {rn} — конкорданс", "spot": f"УРОК {rn}."})
+            {"label": f"урок {rn} — конкорданс", "spot": f"УРОК {rn}"})
         topic_list = [t["key"] for t in lesson["topics"]]
         for ti, topic in enumerate(lesson["topics"]):
             anchor_id = f"buhler-topic:{rn}.{topic['key']}"
