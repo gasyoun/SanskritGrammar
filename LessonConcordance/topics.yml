@@ -3048,3 +3048,102 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§127 doh-/duh-, leh-/lih-; §129.3 для пятёрки i-вставочных) — у З-1978 запись есть даже там, где нет crosswalk-ряда установленного ряда (an)"
           kochergina: "K: класс даётся при глаголе (XVII: as; Приложение II: śvas/rud/svap P II), морфонологической записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/13 корней урока строками (контраст: урок I 10/13, XXXVIII 5/7, XXIX 12/12, XXXVII 15/19) — полное покрытие строк, но у an ряд не установлен (index-unknown N?, §67-RMN-list); ловушка поиска: cakās сидит в crosswalk под kāś «appear, make a show» — редуплицированная форма (Уитни §641), наивный поиск по «cakās» даёт ложный GAP (как tṝ/tṛ урока XXXVII и sarj/sañj урока XXII); corpus_layer.tsv — 0 строк урока (лакуна после XXXVIII); все 7 превербных глаголов словаря урока (prāṇ=pra-an, upās=upa-ās, ni-mīl, samā-viś, ā-/samā-śvas, vi-śvas, utthā=ud-sthā) построены на корнях, пять из которых — ряды урока"
+  XLI:
+    title: "III класс (удвоительный): правила удвоения — согласный слога (деаспирация th→t/dh→d, веляры→нёбные k/kh→c, g/gh→j, кластер — только первый согласный кроме sk/skh/st/sth/sp/sph) и гласный (только краткие, ṛ/ṝ→i) + guṇa сильных; парадигмы bhṛ (bibharti/bibhrati) и dhā (слаб. dadh-, dhehi); слабые основы hā/mā (jahī~/jahi-, mimī~/jihī- перед согласными, mim~/jih- перед гласными), hu (juho~/juhav~/juhu~/juhv-, juhudhi), bhī/hrī (bibhī~bibhi, jihre), pṝ (pipar/pipūr/pipur); nenekti-тройка nij/vij/viṣ — guṇa в слоге удвоения"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6003–6181 (заголовок «# УРОК XLI»)"
+    claims: [HB-315, HB-316, HB-317, HB-318, HB-53, HB-319, HB-320, HB-321, HB-322, HB-323, HB-324, HB-325]
+    reuse_clusters:
+      - "1 нечёткое совпадение (scripts/data/matches.json, score 0.867, exact=false): buhler-XLI.956 ↔ knauer-1908.11.249 «यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं…न्यहन्» — реальное текстуальное переиспользование, не шум: अबिभयुस्तं (abibhayuḥ+taṃ) — та самая 3 pl. impf.-форма с guṇa-подъёмом (HB-319); 1 словарный шум честно: «mā III. Ā» ↔ Кочергина XXXIV сводная таблица «mā Ā III» (0.833)"
+      - "Кураторская находка (вне матчера): упражнения урока дублируют Кнауэр Nr.11 п. 9–13: गां दुग्धि पयः (11.9 — duh, деаспирация удвоения), चौराद्बिभेति ^18^ स्त्री (11.10 — bhī), यस्मान्महिषासुरात्सर्वे…अबिभयुस्तं शिवस्य पत्नी पार्वती न्यहन् (11.11 — bhī impf. + han), रुजया जरसा वाक्रान्तं (11.12 ↔ «रुजा जरसा» урока — сандхи-вариант написания), पतिं पत्नी कदापि न जह्यात् (11.13 — hā pot. jahyāt) — пять живых форм III класса в упражнении"
+    corpus_layer: []     # corpus_layer.tsv: строк урока XLI нет (честно)
+    topics:
+      - key: class-iii-reduplication-rules
+        title: "Правила удвоения III класса: а) деаспирация (th→t, dh→d); б) веляры→нёбные (k/kh→c, g/gh→j); в) кластер — только первый согласный, кроме sk/skh/st/sth/sp/sph (удваивается второй); г) гласные удвоения только краткие (a ā i ī u ū→краткие; ṛ/ṝ→i)"
+        buhler_locus: "урок XLI, п.1 а–г (mdx 6005–6013)"
+        topic_claims: [HB-315, HB-316, HB-317, HB-318, HB-53]
+        spots:
+          "kochergina-lesson:XV": "удвоительный, личные окончания присоединяются к удвоенному корню"
+          "zalizniak-1978-sec:130": "Основа презенса --- такая же, как в классе II, но с удвоительным слогом"
+          "knauer-fraza:Nr.11": "गां दुग्धि पयः"
+          "sangram-article:thematic-present": "| III / VIII | 8 / 3 | атематический |"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-315/316/317/318/53 TRUE/JUSTIFIED: полный инвентарь правил в одном пункте (а–г), включая точный s-кластерный список (sk/skh/st/sth/sp/sph) и замыкание ṛ/ṝ→i"
+          whitney: "W+ — §589: общий принцип («короче и легче в удвоении»); §590a: деаспирация (dadhā, bibhṛ); §590b: палатализация (cakṛ, jagrabh, jahṛ); §590d: s+взрывной → второй согласный (tasṭr, tasthā, caskand, paspṛdh, pusphuṭ) с тем же контр-классом s+сонорный (sasnā, sasmṛ, susru, çiçliṣ); §643b: для презентного класса — долгие сокращаются"
+          zalizniak-1978: "Z± — §130: знак класса (корень II-ряда + удвоительный слог juho-/juhu-); сами правила слога удвоения (деаспирация/палатализация/s-кластеры) в Очерке эксплицитно сведены под перфект (§§113, 151) и для III класса не повторены — honest gap локуса, не аттестации"
+          kochergina: "K± — Занятие XV: «Класс III — удвоительный, личные окончания присоединяются к удвоенному корню» + список о.н.в. (dad-/dadā-, dadh-/dadhā-, mim(i)-/mimā-, juhu-/juho-) — знак класса и слабый вид корня; правила слога удвоения в занятиях не эксплицированы — honest gap"
+        notes: "Кнауэр Nr.11.9 даёт живую форму правила а): गां दुग्धि (duh: dh→d в слоге удвоения, с дальнейшим выносом придыхания — दुग्धि dug-dh-i); sangram-строка «III / VIII | 8 / 3» — корпусная рамка: III класс — 8 чисто-классифицируемых токенов против 180 398 у «нескольких ган» — редчайший класс живого узуса"
+      - key: class-iii-strong-guna-3pl
+        title: "guṇa всех способных гласных в сильных формах III класса; 3 pl. impf. par. — окончание us вместо an и guṇa конечного гласного корня (ajuhaVuḥ)"
+        buhler_locus: "урок XLI, конец п.1 (mdx 6015) + парадигмы bhṛ (mdx 6017–6067): bibharti/bibhrati, abibharuḥ"
+        topic_claims: [HB-319]
+        spots:
+          "zalizniak-1978-sec:132": "juhomi, juhoṣi, juhoti"
+          "knauer-fraza:Nr.11": "अबिभयुस्तं"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-319 TRUE/JUSTIFIED: guṇa сильных + «тот же подъем» конечного гласного в 3 pl. impf. (ajuhaVuḥ); таблицы урока показывают распределение: bibharti (guṇa сильн.) / bibhrati (слаб.), ajuhavuḥ (hu)"
+          whitney: "W+ — §646: потеря n в 3 pl. (act. и mid.) + us вместо an + guṇa конечного гласного перед ним; §647: сильн. juhó / слаб. juhu; §656: то же в impf.; §657: парадигма ájuhоt…ájuhavus"
+          zalizniak-1978: "Z+ — §132: полная hu-парадигма juhomi…juhvati, impf. ajuhavam…ajuhoḥ…ajuhavuḥ — форма-двойник правила; эксплицитная формулировка гуны 3 pl. сведена к самим формам — honest nuance"
+          kochergina: "K± — Занятие XVII: «В личном окончании 3 л. pl praesens у глаголов III класса утрачивается -n» — n-потеря эксплицитно (двойник §646); guṇa конечного гласного в занятии не проговорена — honest gap половины правила"
+        notes: "Упражнение Кнауэра Nr.11.11 (текстуальный дубль урока) несёт живую abibhayuḥ-форму (अबिभयुस्तं) — bhī, 3 pl. impf. с y-глайдом гуны; bhṛ-случай abibharuḥ — гуна ṛ уже в сильной основе bibhar-, честная граница правила по классу корней; n-потеря видна прямо в таблицах урока (bibhrati, dadhati)"
+      - key: class-iii-aa-roots-dhehi
+        title: "ā-корни III класса dā/dhā: отбрасывание ā в слабых формах (dad-/dadh-), 2 sg. imper. dhehi (dā: dehi); полная dhā-парадигма с внутренними сандхи (dhatthaḥ, dhatse, dhaddhve)"
+        buhler_locus: "урок XLI, п.2 б (mdx 6069–6119) + «Точно также спрягается dā» (mdx 6121)"
+        topic_claims: [HB-320]
+        spots:
+          "kochergina-lesson:XVII": "имеют слабую ступень основы соответственно как dad- и dadh-, 2 л. imperativus - как dehi и dhehi"
+          "zalizniak-1978-sec:131": "у √dā и √dhā слабая основа не имеет i даже перед согласной: dad-, dadh-"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-320 TRUE/JUSTIFIED: dhā отбрасывает ā в слабых + dhehi; таблицы показывают и сандхи-детали: dhatthaḥ/dhatse (аспирация перед t/th), dhatte (mid.), dadhvaḥ/dhaddhve (вынос придыхания)"
+          whitney: "W+ — §667: dā/dhā теряют корневую гласную в слабых (dad/dadh), dehí/dhehí; аспирация dadh перед t/th/s/dhv не по спец-правилу (160), с выносом на начало (155); §668: полная dhā-парадигма dádhāmi…dadhvás…dhatthá"
+          zalizniak-1978: "Z+ — §131: «у √dā и √dhā слабая основа не имеет i даже перед согласной: dad-, dadh-» — дословный двойник (плюс общий ряд A~2~ для ā-корней)"
+          kochergina: "K+ — Занятие XVII: dā «давать» и dhā «ставить, класть» → dad-/dadh-, 2 л. imperativus dehi/dhehi; Занятие XV: о.н.в. dad-/dadā-, dadh-/dadhā-"
+        notes: "Упражнение урока несёт живые формы: ददासि (стих 34, dā ind.), ददाति (дайя-блок), दद्याद् (opt.), देहीति (brūyāt-контекст), अदध्यात् (ā-dhā opt. agnau ādadhyāt), समधत्ताम् (sam-ā-dhā impf.) — dā/dhā-слой упражнения плотнее парадигмального"
+      - key: class-iii-weak-stem-alternations
+        title: "Слабые основы особых корней III класса: hā act. (jahyāt — утрата ā в pot.; jahāhi/jahīhi/jahihi; jahī~/jahi- перед согласными); mā/hā Ā. (mimī-/jihī- /_C, mim-/jih- /_V); hu (juho~/juhav~/juhu~/juhv-, juhudhi); bhī (bibhī~bibhi /_C, bibhy /_V); hrī (jihre/jihrī/jihriy); pṝ (pipar/pipūr/pipur); nij/vij/viṣ — guṇa в слоге удвоения (nenekti, vevekti, veveṣṭi)"
+        buhler_locus: "урок XLI, п. 2.1 (mdx 6123–6135): hā (6123), mā/hā Ā. (6125), hu (6127), bhī (6129), hrī (6131), pṝ (6133), nij/vij/viṣ (6135)"
+        topic_claims: [HB-321, HB-322, HB-323, HB-324, HB-325]
+        spots:
+          "kochergina-lesson:XV": "По глаголу hu древнеиндийские ученые назвали III класс hvādi или juhotyādi"
+          "zalizniak-1978-sec:132": "imper. juhudhi (NB -dhi; другие корни имеют -hi)"
+          "knauer-fraza:Nr.11": "चौराद्बिभेति"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-321/322/323/324/325 TRUE/JUSTIFIED: весь алломорфный инвентарь в одном уроке; тройка jahāhi/jahīhi/jahihi и juhudhi-irregular поданы как таковые; nenekti-тройка с отсылкой на XXXIX, 7 и 10 (конечные j/ṣ)"
+          whitney: "W+ — §661: ā-корни III → ī (изредка i) в слабых с выпадением перед гласными; §663: mā mimāti/mimīyāt, mímīte/mimate; §664: hā Ā. jíhīte/jíhate; §665: hā act. jahāti/jahyām, 2 sg. impv. jahīhi/jahihi/jahāhi — тройка дословно; §652: juhudhí (-dhi после гласной основы, чтобы не дублировать h); §647b: bhṛ bíbhar/bibhṛ; §645: акцентный список с bhī/hrī. e-редупликация nij/vij/viṣ эксплицитно не сведена — honest gap (§660 даёт родственное i-instead-of-a для a/ā-корней: gā, mā, hā Ā., vac, sac)"
+          zalizniak-1978: "Z+ — §132: juhudhi (NB -dhi; другие корни имеют -hi) + полная juho~/juhu~/juhv- череда; §131: ā-корни; nenekti упоминается лишь в §170 (интенсивы: «nenekti *моет*») — тройка вне III-классового контекста Очерка, honest gap"
+          kochergina: "K+ — Занятие XV: о.н.в. mim(i)-/mimā- (mā) и juhu-/juho- (hu) + имя класса juhotyādi; полные парадигмы dā U III / hu U III — в консолидированной таблице XXXIV, вне поурочной трассы — honest локус-gap"
+        notes: "Кнауэр Nr.11 несёт три живые формы темы: चौराद्बिभेति (11.10 — bibheti, HB-324), जह्यात् (11.13 — jahyāt, HB-321), अबिभयुस्तं (11.11); в упражнении урока: न जह्यात्, जुहुधि (जुहुधि — imp. juhudhi в घृताहूतीनां जुहुधि), न्यहन् (ni-han impf. — han тоже III-классовый, не вынесен в словарь урока — честно); nenekti-тройка — 5-й случай серии «ряд ≠ класс»: nij/vij/viṣ = ряды I₁ при школьном III классе"
+      - key: lesson-roots
+        title: "Лемма-слой: 17 глагольных строк урока — 13 словарных корней (все III) + 2 из упражнения (han, grah в приставке) + 2 приставочных vi-dhā/saṃ-dhā"
+        buhler_locus: "урок XLI, списки «Глаголы:» (mdx 6137–6141) и словарь (mdx 6137–6153), формы в упражнении (mdx 6165–6177)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: классы при глаголах цифрой (все III; приставочные vi-dhā/saṃ-dhā без класса); морфонологической записи нет"
+          whitney: "W: классы — в root-аппарате (bhṛ §647b, hu §§647/652, dā/dhā §§667–668, mā §663, hā §§664–665, bhī/hrī §645, nij/vij/viṣ — вне эксплицитного списка §659–660); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §§130–132 дают juho-/juhu-, dad-/dadh-, juhudhi парами сильн./слаб.; pṝ/hrī/bhī/nij/vij/viṣ вне §§130–133 — реестр Очерка уже урока (контраст с IX-классом XXXVII, где §136 покрывал весь список)"
+          kochergina: "K: класс при глаголе в таблицах (dā U III, hu U III в сводной XXXIV; о.н.в. в XV/XVII); записи рядов нет"
+        lemmas:
+          - {root: "bhṛ", gloss: "носить, нести (III: bibharti)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh530)"}
+          - {root: "dhā", gloss: "ставить, класть (III: dadhāti, dhehi)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 put (wh393)"}
+          - {root: "dā", gloss: "давать (III: dadāti, dehi)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 give (wh349)"}
+          - {root: "hā", gloss: "покидать, оставлять (III: jahāti)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 leave (wh911)"}
+          - {root: "hā (ā.)", gloss: "идти (III Ā.: jihīte)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 2 go forth (wh912)"}
+          - {root: "mā", gloss: "мерить (III Ā.: mimīte)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 measure (wh548)"}
+          - {root: "hu", gloss: "жертвовать (III: juhoti, juhudhi)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh919; open, full)"}
+          - {root: "bhī", gloss: "бояться (III: bibheti)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh523)"}
+          - {root: "hrī", gloss: "стыдиться (III: jihre)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh932)"}
+          - {root: "pṝ", gloss: "наполнять (III: pipar/pipūr/pipur)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — под написанием pṛ, hom 1 fill (wh469)"}
+          - {root: "nij", gloss: "мыть (III: nenekti)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh425)"}
+          - {root: "vij", gloss: "пугать (III: vevekti)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes — глосса реестра «tremble» (wh727): вилка глосс/омонимии помечена"}
+          - {root: "viṣ", gloss: "проникать (III Ā.: veveṣṭi)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes — глосса реестра «be active» (wh735), помечено"}
+          - {root: "han", gloss: "убивать (III: hanti; impf. ny-ahan в упражнении)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908)"}
+          - {root: "grah", gloss: "брать (в приставке pari-grah: parigṛhṇīyāt)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием grabh (wh196)"}
+          - {root: "vi-dhā", gloss: "устраивать, предписывать", z1975: "?", z1978: "?", crosswalk: "NO — приставочный; корень dhā покрыт отдельной строкой (прецедент XXXVII ni-/prati-)"}
+          - {root: "saṃ-dhā", gloss: "накладывать, соединять", z1975: "?", z1978: "?", crosswalk: "NO — приставочный (dhā)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/17 строк урока; vi-dhā/saṃ-dhā — приставочные без собственных строк (честно, dhā покрыт); pṝ — под написанием pṛ hom 1 fill (ловушка написания серии), grah — под grabh (вторая встреча после XXXVII); глоссовые вилки vij («tremble» vs «пугать») и viṣ («be active» vs «проникать») помечены честно; ряд ≠ класс: nij/vij/viṣ = I₁ при III классе — 5-й случай серии. Вне скоопа: Кнауэр Nr.11.11 пишет पार्वती, урок — पर्वती (кандидат в errata, GTD)"
