@@ -3799,3 +3799,156 @@ lessons:
           - {root: "vam", gloss: "блевать (avāmi)", z1975: "M2 (conf medium)", z1978: "M₂", crosswalk: "yes (wh710)"}
           - {root: "ācam", gloss: "омываться (ācāmi)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 23/26 корней таблицы; нет строк — grah, yam, ācam (все три — с 1 sg-двойниками урока, agāmi-серия и aghāniṣi-серия без реестровых рядов) — фиксируем честно; самоконфликты 1975-реестра в crosswalk на уроке: guh (U1/U2), gā₂ (A2/I2), śru (R1/U1), jan (N1/N2), labh (A1/N1) — 5 случаев при одном wh-номере, серия XLV (pā/śak/sad/arj ×4) продолжается и густеет; ловушка написания: gai урока = gā₂ «петь» (agāyi), не gā₁ «идти»; dih — глосс-вилка Уитни «smear» против Кочергиной «увеличиваться» — зафиксирована, не сглажена; corpus_layer.tsv — 0 строк урока (честно)"
+  XLVIII:
+    title: "Производные глагольные основы: дезидератив, интенсив (фреквентатив), отыменные глаголы"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7201–7392 (заголовок «# УРОК XLVIII.»; дальше — санскритско-русский глоссарий, mdx 7393 — урок последний). Русско-санскритского упражнения нет (прецедентный косой случай 43–47, у последнего урока — глоссарий сразу) — вместо него нет и хрестоматийного текста; живой слой — Кнауэр Nr.17, где упражнения канализируются в корпус (satyaṃ cikīrṣamāṇas = MBh 3,52 дословно), фиксируем честно; corpus_layer — 3 строки (cikīrṣ, śuśrūṣ, rorūy)"
+    claims: [HB-62, HB-63, HB-394, HB-395, HB-396, HB-397, HB-398, HB-399, HB-400, HB-401, HB-402, HB-403]
+    reuse_clusters:
+      - "0 совпадений (scripts/data/matches.json): прямых reuse-предложений урока XLVIII нет — фиксируем честно (прецеденты уроков I/XLV). Живой слой вместо матчера: Кнауэр Nr.17 — упражнения = живой корпус (prādidṛkṣata, na 'çuçrūṣata, çvā rorūyamāṇo, kṛṣṇāyate + деванагари-строка satyaṃ cikīrṣamāṇastu dhārayāmāsa hṛcchayam = MBh 3,52 дословно — кураторская находка, продолжение класса находок XLIV «упражнение-калиюга = Кнауэр Nr.13»)"
+    corpus_layer:
+      - "cikīrṣ — cikīrṣamāṇaḥ (991 токен, DCS-снапшот; MBh 3, 52) — satyaṃ cikīrṣamāṇas tu dhārayāmāsa hṛcchayam — дезидератив кṛ, фраза Кнауэра Nr.17 дословно (HB-62)"
+      - "śuśrūṣ — śuśrūṣate (1218 токенов, DCS-снапшот; Viṣṇusmṛti 25) — дезидератив śru, презенс-форма — живое подтверждение HB-396 («одно только настоящее встречается довольно часто»)"
+      - "rorūy — rorūyati (38 токенов, 16 файлов, редкое; Bhāgavatapurāṇa 3, 31) — интенсив II от ru — живое подтверждение редкости HB-402; в Knauer Nr.17 та же основа (çvā rorūyamāṇo)"
+    topics:
+      - key: desiderative-formation
+        title: "Дезидератив: удвоение корня + суффикс sa [ṣa] — все корни всех десяти классов и каузативы; правила удвоения как в перфекте, но корневые a, ṛ, ṝ → i; гласноначальные — как в aor. III каузативов (ур. XLV, III, 3), но между удвоенными согласными всегда i; sa-присоединение: напрямую к большинству гласноисходных (кроме ṝ-исходных — возможны i и ī), у согласных — как в инфинитиве (ур. XXX)/будущем; конечные i, u удлиняются, ṛ, ṝ → īr (после губного ūr); при соединительном гласном — guṇa; каузативы и X класс — ayiṣya"
+        buhler_locus: "урок XLVIII, п. I.1–3 (mdx 7205–7211)"
+        topic_claims: [HB-62, HB-394, HB-395]
+        spots:
+          "zalizniak-1978-sec:169": "хотеть (намериваться) делать"
+          "kochergina-lesson:XXXVI": "выражают пожелание или намерение"
+          "knauer-fraza:Nr.17": "prādidṛkṣata"
+          "sangram-article:conjugation-overview": "вторичные спряжения (каузатив/дезидератив)"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-62/394/395 TRUE/JUSTIFIED: продуктивность «все корни всех десяти классов и каузативные» — парадигматическая доступность (у Уитни то же с оговоркой о лексической разреженности); «всегда i» между удвоенными согласными (HB-394) подтверждается собственными примерами урока (arciciṣati, īcikṣiṣate); хеджи «большей частью» ×2 при удвоении и sa-присоединении — список неправильных вынесен в отдельный блок п. 6"
+          whitney: "W+ — §§1026-1031: §1026 семантика/продуктивность, §1029 гласный удвоения i (при a-, ṛ-вокализме корня), §1030 i-замещения и iv-корни, §1031 «auxiliary vowel i» как общая рамка; §1031-оговорка о стяжённых (īpsati-класс) — тот же слой, что список п. 6"
+          zalizniak-1978: "Z+ — §169 «Дезидератив от делать действие А означает хотеть (намериваться) делать А»; aniṭ/seṭ-распределение -sa/-iṣa (панинийская рамка, у Бюлера без этой терминологии — через «непосредственно/посредством соед. гласного»); исключений-списка нет, но §57-примечание даёт c/j/h → k/g/gh после удвоительного слога (cikīṣati, jighāṁsati) — точечный exception-слой"
+          kochergina: "K+ — Занятие XXXVI: -sa (aniṭ)/-iṣa (seṭ), ударение на первом слоге основы; вокальноначальные удваиваются полностью (as → asiṣiṣa-, iṣ → eṣiṣiṣa-); u при ū-вокализме корня (bhū → bubhūṣa-) — тот же слой, что HB-394/395"
+        notes: "ayiṣya-правило стыкуется с уроком XLIV (описательное будущее: перед tā те же изменения, что перед tum) — одна и та же основа; sangram: вторичные спряжения видны в конъюгационном обзоре лишь косвенно (честный спот); crosswalk-гомонимия серии: kṛ — 3 гомонима (wh106-108), dā — 4 (wh349-352) + самоконфликт A1/A2 при wh349; TALMUD CROSS-CHECK: дезидератив вне аористного корпуса (derivation-gap, witness perfect:124 — перифрастический перфект дезидеративов у Уитни §1071)"
+      - key: desiderative-tense-stems
+        title: "Времена дезидератива: настоящее (единственное частотное) спрягается P. и Ā. по образцу VI класса; перфект — описательный; в fut., condic. и precat. (Ā.) всегда соединительный i; аорист — V вида (iṣ); перед соединительным гласным и перед y precativ-a P. и pass. praes. суффиксальный a выпадает; причастия/инфинитив/абсолютив — по VI классу (презенс) или с i"
+        buhler_locus: "урок XLVIII, п. I.4 (mdx 7213)"
+        topic_claims: [HB-396, HB-397]
+        spots:
+          "zalizniak-1978-sec:169": "Формы за пределами презенса"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-396/397 TRUE/JUSTIFIED: «одно только (настоящее) встречается довольно часто» — верно, подтверждается двумя свидетелями; blanket-seṭ характер вторичных основ (i в fut/cond/precat) и iṣ-аорист — стандартная доктрина, aniṭ-дезидеративное будущее не зарегистрировано"
+          whitney: "W+ — §§1032-1034: tense-stems вторичных спряжений — системно seṭ; iṣ-аорист дезидератива (acikīrṣīt-тип); перфект описательный для производных основ — §1071 (witness perfect:124 AGREE: перифрастика — принятый перфект дезидератива, каузатива, деноминатива)"
+          zalizniak-1978: "Z+ — §169: «Формы за пределами презенса (довольно редкие) — от основы вида jijñās-, didṛkṣ- и т.д.» + регулярное прилагательное на -u (didṛkṣu-) и имя действия на ā (didṛkṣā-) — сверх урока"
+          kochergina: "K: не-презенсные формы дезидератива вне Занятия XXXVI (там основа + словообразование) — honest gap одного свидетеля; напряжённо-частотная рамка HB-396 у Уитни §1027 и у З-1978 — достаточно"
+        notes: "Корпусная проверка направления HB-396: по conllu-снапшоту śuśrūṣ 1218 / cikīrṣ 991 / jijñās 698 / didṛkṣ 471 / bubhūṣ 290 токенов — презенс-формы (śuśrūṣate, cikīrṣamāṇaḥ, rorūyati-класс) доминируют в выборках; tension-split по derivation-тегированию в разрешённом корпусе отсутствует (HB-396 note) — честный направление-вердикт; Z-1978 §234 фиксирует ударение дезидератива (jíjñāsa-)"
+      - key: desiderative-irregulars-iv
+        title: "Примеры и неправильные дезидеративы: парадигмальный список 3 sg (yā yiyāsati, gai jigāsati, so siṣāsati, śri śiśrayiṣati, nī ninīṣati, śru śuśrūṣate, bhū bubhūṣati, kṛ cikīrṣati, mṛ mamūrṣati, tṝ titīrṣati/titariṣati, pac pipakṣati, bhaj babhakṣati, mṛj mimṛkṣati/mimārjiṣati, bhid bibhitsati, budh bubodhiṣati/bubudhiṣati/bubutsate, man mimaniṣate/mimaṅsate, gam jigamiṣati/jigaṅsate, div dideviṣati/dudyūṣati, dṛś didṛkṣate, dviṣ didvikṣati, vas vivatsati, dah didhakṣati, cur cucorayiṣati, nāy nināyayiṣati, aś aśiśiṣati, iṣ eṣiṣiṣati, und undidiṣati, ṛc arciciṣati, īkṣ īcikṣiṣate); iv-корни: «сходные формы можно образовывать от всех корней на iv» (dideviṣati/dudyūṣati — модель); перечень неправильных: āp īpsa, adhi+i adhijigāṅsa, grah jighṛkṣa, ji jigīṣa, jñā jñīpsa/jijñapayiṣa, dā (de, do) ditsa, dhā/dhe dhitsa, pat pitsa/pipatiṣa, pad pitsa, prach pipṛcchiṣa, majj mimaṅkṣa, mā (mi, mī, me) mitsa, rabh ripsa, rādh ritsa, labh lipsa, śak śikṣa, svap suṣupsa, han jighāṅsa, hve jahūṣa"
+        buhler_locus: "урок XLVIII, п. I.5–6 + сноска * (mdx 7215–7317)"
+        topic_claims: [HB-398]
+        spots:
+          "zalizniak-1978-sec:171": "дважды производные глаголы"
+          "kochergina-lesson:XXXVI": "удваиваются полностью"
+          "knauer-fraza:Nr.17": "çuçrūṣata"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-398 TRUE/JUSTIFIED: «можно образовывать» — возможность-клейм по грамматикам (панинийское постановление для iv-корней, Уитни §1030-территория); корpusной аттестации дублетов dideviṣati/dudyūṣati практически нет — клейм держится на референс-грамматике, честно; список неправильных из 19 позиций — самый длинный exception-блок урока"
+          whitney: "W+ — §1030 div-тип и стяжения; per-root оговорки по всему §§1029-1031; стяжённые (īpsati, dhitsati) — без удвоенного согласного, поэтому «всегда i» их не касается (HB-394 note — прямая стыковка)"
+          zalizniak-1978: "Z± — отдельного списка неправильных дезидеративов нет (гипотеза МГ «у З-1978 нет» — прямое попадание); §171 даёт дважды производные (didarçayiṣati — дезидератив от каузатива, çikṣayati — каузатив от дезидератива) — параллель ayiṣya-правилу урока; §57-примечание: cikīṣati/jighāṁsati — k/g/gh-вариант удвоения"
+          kochergina: "K+ — Занятие XXXVI: вокальноначальные удваиваются полностью (aṣiṣiṣa-, eṣiṣiṣa-); irregular-ряд сверх этого не приводится"
+        notes: "Кнауэр Nr.17 — живая пара дезидеративов: na 'çuçrūṣata (отрицание при дезидеративе śru!) и деванагари-строка satyaṃ cikīrṣamāṇastu dhārayāmāsa hṛcchayam = MBh 3,52 дословно (снапшот DCS: satyaṃ cikīrṣamāṇas tu dhārayāmāsa hṛcchayam, sent_id 192684) — упражнение = живой корпус, класс находок XLIV; bubutsate (budh, парадигма урока) — 0 токенов в снапшоте: парадигмальная форма вне аттестации, фиксируем честно; так само so siṣāsati — стяжённая печать (ср. Уитни §1030-территория: дезидератив as «бросать») — однозначная привязка строки реестра невозможна, в лемма-слой через as (wh23) с пометкой"
+      - key: intensive-two-types
+        title: "Интенсивы (фреквентативы), два типа: все односложные согласнопервичные корни I–IX классов (сноска-исключения: aṭ aṭāṭyate, ṛ ararti/ariyarti/arāryate, aś aśāśyate); I — исключительно удвоение, исключительно P., спряжение III класса или с ī перед согласными окончаниями; II — суффикс ya (изменения как перед страдательным залогом, ур. X) + удвоение полученной основы, исключительно Ā., спряжение IV класса; семантика: повторение действия; глаголов «идти» — движение по кривой линии, у некоторых — «действие совершается плохо»; вне презенса — крайне редко (по индийским грамматикам: perf. periphrast, futura, conditionalis с i, precat., пассив); парадигма-таблица 17 корней × P/Ā (dā dādāti/dādeti | dedīyate … vṛt varvartti/varīvṛtīti | varīvṛtyate)"
+        buhler_locus: "урок XLVIII, п. II.1–4 + таблица (mdx 7319–7369)"
+        topic_claims: [HB-63, HB-399, HB-400, HB-401, HB-402]
+        spots:
+          "zalizniak-1978-sec:170": "делать А усиленно или часто"
+          "zalizniak-1978-sec:133": "также интенсивы"
+          "kochergina-lesson:XXXVIII": "выражают повторяемость или интенсивность"
+          "knauer-fraza:Nr.17": "rorūyamāṇo"
+        exceptions:
+          verdict: "CONFIRMED (HB-400 — UNTESTABLE отдельно)"
+          buhler: "B+ — HB-63/399/401/402 TRUE/JUSTIFIED: одно-залоговость I (P) и II (Ā) — дефиниция типов, абсолюты безопасны (witness HB-2-сравнение); HB-399 с собственной сноской-исключениями (aṭāṭyate, ararti/ariyarti/arāryate, aśāśyate) — вокальноначальные утечки, честно заявленные; HB-400 UNTESTABLE: «криволинейное движение/плохое действие» — faithfully Pāṇini 3.1.23-24 (kauṭilya/garhā), но без семантического тегирования корпусом не проверяется — программа-гэп, не ошибка Бюлера"
+          whitney: "W+ — §§1000-1017: §1001 многосложные исключены, §1002e вокальноначальные — лишь i и ṛ, «very rare» в позднем языке (HK-37 AGREE); §1002а «тяжёлое» удвоение (ā/e/o/ar/al/am/an); §1016-1017 ya-интенсив — средние окончания, в позднем языке обычнее; §1018-1019 вне-презенсные практически не встречаются (HB-402)"
+          zalizniak-1978: "Z+ — §170: «делать А усиленно или часто», «тяжёлое» удвоение, «употребляются довольно редко, причем преимущественно в med. и практически только в презенсе»; пример rorūyate «вопит» от √ru — точный корень Кнауэра Nr.17; §133: спряжение III класса, факультативное ī (dardar-mi/dardar-īmi), bobhujīti; §234: ударение róravīti/rorūyá-"
+          kochergina: "K+ — Занятие XXXVIII: «только от односложных корней, начинающихся с согласной», «встречаются редко» — HK-37 AGREE; параллель §1002e-ограничения"
+        notes: "Корпусная рамка редкости: rorūy — 38 токенов в 16 файлах снапшота против 290–1218 у дезидеративов — на порядок реже, живое подтверждение HB-402; Кнауэр Nr.17 — çvā rorūyamāṇo «собака, воя, бежала к матери» — интенсив II в живой фразе, та же основа, что пример З-1978 §170 и Bhāgavatapurāṇa 3, 31; таблица урока сама показывает стяжения (soṣupyate от svap — sv→so), «плохое действие» в таблице не маркировано — семантический слой остаётся за словарём, честно; witness HK-205 AGREE («тяжёлое» удвоение = guṇa-ряд, терминологическая разница с Уитни) и HK-206 AGREE (средние окончания, §1016-1017)"
+      - key: denominativa
+        title: "Отыменные глаголы: суффиксы ya, aya, āpaya («делать[ся] тем-то, то-то желать»), sya/asya («того-то сильно желать») или непосредственное присоединение глагольных окончаний к имени («вести себя так-то»); наиболее часты первые два способа; примеры: tapas tapasyati каяться, namas namasyati почитать, kalaha kalahāyate ссориться, kṛṣṇa kṛṣṇayate делать черным, unmanas unmanāyate выходить из себя, muṇḍa muṇḍayati остригать наголо, laghu laghayati подымать, dṛḍha draḍhayati закреплять, satya satyāpayati объявлять правильным"
+        buhler_locus: "урок XLVIII, п. III (mdx 7371–7391)"
+        topic_claims: [HB-403]
+        spots:
+          "zalizniak-1978-sec:172": "отыменных (деноминативных)"
+          "kochergina-lesson:XXXV": "производные от имен существительных"
+          "knauer-fraza:Nr.17": "kṛṣṇāyate"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-403 TRUE/JUSTIFIED: «наиболее часто первые два» — направление подтверждается обзором Уитни (-ya- крупнейший класс, -aya- продуктивный классический соперник; āpaya/sya/asya и безсуффиксный тип маргинальны); suffix-ценз по derivation-тегированию в разрешённом корпусе отсутствует — честный направление-вердикт"
+          whitney: "W+ — §§1053-1068: систематика деноминативов, -ya/-aya-частотность, §1059-1063 обработка финалей (a остаётся/удлиняется/→ī, i/u→ī/ū, согласный остаётся — namasyáti); witness causative:151 AGREE: класс X на -aya — «intermediate between them and the proper denominatives»"
+          zalizniak-1978: "Z+ — §172: значения при исходном имени А: выступать в качестве А, быть как А, делать/создавать А, делать таким, как А, применять А — семантическая решётка сверх урока; формальная сторона (суффиксы) — у З-1978 сжато, honest spread"
+          kochergina: "K+ — Занятие XXXV: основа = имя + -yá; финали: i/u обычно удлиняются, a удлиняется или →ī, ar → rī — HK-200 AGREE (OCR-сдвиг «1058» в mdx зафиксирован свидетелем)"
+        notes: "Кнауэр Nr.17 — kṛṣṇāyate «чернеет» (uṣṇo dahaty aṅgāraḥ çītaḥ kṛṣṇāyate karam) — живой деноминатив того же корня-имени kṛṣṇa, что пример урока; 9 пар имя→глагол урока — все отыменные без глагольного корня, в лемма-слой (глагольные реестры) не попадают — фиксируем честно; witness HK-200 (Занятие XXXV) AGREE — единственная «прочая» строка 4-witness сетки по теме"
+      - key: lesson-roots
+        title: "Лемма-слой: 53 корня урока — парадигмы дезидератива (примеры п. 5 + неправильные п. 6), таблица интенсивов и отыменные вне реестров"
+        buhler_locus: "урок XLVIII, п. I.5–6, II.4 таблица (mdx 7215–7369); словарного списка у урока нет — корни встроены в парадигмы, отыменные примеры — имена, фиксируем честно"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даются формами дезидератива/интенсива без морфонологической записи; отыменные — пары имя→глагол без корней"
+          whitney: "W: производные conjugations — §§1000-1068 (глава XIV, один блок с интенсивами и деноминативами); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §§169-172 (дезидератив, интенсив, дважды производные, деноминативы) + §133 (интенсивы act.) + §234 (ударение производных) — каркас совпадает, списков неправильных нет"
+          kochergina: "K: Занятие XXXV (деноминативы), XXXVI (дезидеративы + словообразование), XXXVIII (интенсивы) — три занятия против одного урока Бюлера"
+        lemmas:
+          - {root: "yā", gloss: "стремиться (yiyāsati)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh603)"}
+          - {root: "gai", gloss: "петь (jigāsati)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
+          - {root: "so", gloss: "жертвовать/бросать (siṣāsati — стяжённая печать)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "ловушка написания: so→as, yes (wh23) — hom 2 throw; wh22 «be» — другой гомоним"}
+          - {root: "śri", gloss: "опираться (śiśrayiṣati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh811)"}
+          - {root: "nī", gloss: "вести (ninīṣati)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh427)"}
+          - {root: "śru", gloss: "слушать (śuśrūṣate)", z1975: "R1/U1 самоконфликт", z1978: "U₁", crosswalk: "yes (wh815) — 2 строки при одном wh-номере: R1 и U1; 1978 U₁"}
+          - {root: "bhū", gloss: "быть (bubhūṣati)", z1975: "U2 (conf high)", z1978: "U₂", crosswalk: "yes (wh528)"}
+          - {root: "kṛ", gloss: "делать (cikīrṣati; ср. Кнауэр Nr.17 cikīrṣamāṇastu)", z1975: "R1/R2 по гомонимам", z1978: "R₁", crosswalk: "yes (wh106) — hom 1 make; hom 2 scatter (wh107), hom 3 commemorate (wh108)"}
+          - {root: "mṛ", gloss: "умирать (mamūrṣati)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh571) — hom 1 die; hom 2 crush (wh572)"}
+          - {root: "tṝ", gloss: "пересекать (titīrṣati/titariṣati)", z1975: "R2 (conf high)", z1978: "R₁", crosswalk: "yes (wh319) — под написанием tṛ, ловушка написания серии"}
+          - {root: "pac", gloss: "варить (pipakṣati)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh435)"}
+          - {root: "bhaj", gloss: "почитать/делить (babhakṣati)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh505)"}
+          - {root: "mṛj", gloss: "чистить (mimṛkṣati/mimārjiṣati)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh576)"}
+          - {root: "bhid", gloss: "раскалывать (bibhitsati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh521)"}
+          - {root: "budh", gloss: "бодрствовать/знать (bubodhiṣati/bubudhiṣati/bubutsate — 0 токенов в снапшоте)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh497)"}
+          - {root: "man", gloss: "думать (mimaniṣate/mimaṅsate)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh546)"}
+          - {root: "gam", gloss: "идти (jigamiṣati/jigaṅsate)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh170)"}
+          - {root: "div", gloss: "играть (dideviṣati/dudyūṣati)", z1975: "I2/U2 самоконфликт", z1978: "I₂", crosswalk: "ловушка написания: div→dīv, yes (wh363) — hom 1 play; hom 2 lament (wh364)"}
+          - {root: "dṛś", gloss: "видеть (didṛkṣate)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh375)"}
+          - {root: "dviṣ", gloss: "ненавидеть (didvikṣati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh388)"}
+          - {root: "vas", gloss: "обитать (vivatsati)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh715) — hom 1; самоконфликт: 2+ строки при wh716 (gloss-расхождение shine/dwell)"}
+          - {root: "dah", gloss: "жечь (didhakṣati)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh348)"}
+          - {root: "cur", gloss: "красть (cucorayiṣati)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh232)"}
+          - {root: "nāy", gloss: "вести (nināyayiṣati)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах (прецедент XLV: nī I₂ wh427, nāyayati anīnayat не сведён отдельно)"}
+          - {root: "aś", gloss: "достигать (aśiśiṣati)", z1975: "A1/N1 самоконфликт", z1978: "A₁", crosswalk: "yes (wh20) — hom 1 attain; hom 2 eat (wh21); 3 строки при 2 wh-номерах"}
+          - {root: "iṣ", gloss: "желать (eṣiṣiṣati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh42) — hom 1 seek; hom 2 send (wh43)"}
+          - {root: "und", gloss: "мочиться (undidiṣati)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах (прецедент XLIII: und→ud)"}
+          - {root: "ṛc", gloss: "восхвалять (arciciṣati)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh70)"}
+          - {root: "īkṣ", gloss: "смотреть (īcikṣiṣate)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh45)"}
+          - {root: "āp", gloss: "достигать (īpsa)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh26)"}
+          - {root: "grah", gloss: "хватать (jighṛkṣa)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "ловушка написания: grah→grabh, yes (wh196) — дубль-строка в реестре (самоконфликт)"}
+          - {root: "ji", gloss: "побеждать (jigīṣa)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh258) — hom 1 conquer; самоконфликт: 2+ строки при wh259 (hom 2 quicken)"}
+          - {root: "jñā", gloss: "знать (jñīpsa, jijñapayiṣa)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh269)"}
+          - {root: "dā", gloss: "давать (ditsa; печати de, do)", z1975: "A1/A2 самоконфликт", z1978: "A₂", crosswalk: "yes (wh349) — hom 1 give; 2 строки при wh349 (A1 и A2); hom 2-4 (wh350-352)"}
+          - {root: "dhā", gloss: "ставить (dhitsa; dhe — та же строка урока)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh393) — hom 1 put; hom 2 suck (wh394)"}
+          - {root: "pat", gloss: "летать/падать (pitsa, pipatiṣa)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh440)"}
+          - {root: "pad", gloss: "идти (pitsa)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh443)"}
+          - {root: "prach", gloss: "спрашивать (pipṛcchiṣa)", z1975: "A1/R1 самоконфликт", z1978: "A₁", crosswalk: "yes (wh477) — 2 строки при одном wh-номере"}
+          - {root: "majj", gloss: "погружаться (mimaṅkṣa)", z1975: "A1/N1 самоконфликт", z1978: "A₁", crosswalk: "yes (wh539) — 2 строки при одном wh-номере"}
+          - {root: "mā", gloss: "мерить (mitsa; печати mi, mī, me)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh548) — hom 1 measure; hom 2 exchange (wh549), hom 3 bellow (wh550)"}
+          - {root: "rabh", gloss: "хватать (ripsa)", z1975: "N1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh628) — расхождение рядов 1975 N1 ≠ 1978 A₁"}
+          - {root: "rādh", gloss: "повреждать/преуспевать (ritsa)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh638) — глосса урока «повреждать», реестр «succeed» — расхождение глосс"}
+          - {root: "labh", gloss: "получать (lipsa)", z1975: "A1/N1 самоконфликт", z1978: "A₁", crosswalk: "yes (wh673) — 2 строки при одном wh-номере"}
+          - {root: "śak", gloss: "мочь (śikṣa)", z1975: "A1/I1 самоконфликт (conf medium)", z1978: "A₁", crosswalk: "yes (wh767) — 2 строки (прецедент XLV)"}
+          - {root: "svap", gloss: "спать (suṣupsa; интенсив soṣupyate — стяжение sv→so)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh903)"}
+          - {root: "han", gloss: "убивать (jighāṅsa)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908) — k/g/gh-вариант удвоения (§57-примечание З-1978)"}
+          - {root: "hve", gloss: "звать (jahūṣa)", z1975: "?", z1978: "?", crosswalk: "NO — в реестрах под hvay отсутствует (прецедент XLV)"}
+          - {root: "smṛ", gloss: "помнить (sāsmarti/sāsmarīti)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh894)"}
+          - {root: "pṝ", gloss: "наполнять (pāparti/popūryate)", z1975: "R1/R2 самоконфликт", z1978: "R₁", crosswalk: "ловушка написания: pṝ→pṛ, yes (wh470) — hom 2; самоконфликт: 2+ строки при wh471"}
+          - {root: "bhram", gloss: "бродить (babhranti/babhramīti/babhramyate)", z1975: "M2 (conf medium)", z1978: "M₂", crosswalk: "yes (wh534)"}
+          - {root: "tan", gloss: "растягивать (taṅtanti/tantanīti/tatanyate)", z1975: "N2 (conf medium)", z1978: "N₁", crosswalk: "yes (wh293) — расхождение рядов 1975 N₂ ≠ 1978 N₁ (§66-list)"}
+          - {root: "vṛt", gloss: "вращаться (varvartti/varivartti/varīvartti/varīvṛtīti/varīvṛtyate)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh744)"}
+          - {root: "ru", gloss: "кричать (rorūyamāṇo — Кнауэр Nr.17; BhāgPur 3,31)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh652) — hom 1 cry; hom 2 break (wh653)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 49/53 строк таблицы; нет строк — gai, nāy, und, hve (4, фиксируем честно; dhe сведён в dhā-строку по печати урока); ловушки написания серии: so→as (wh23 throw; wh22 be — другой гомоним), tṝ→tṛ, div→dīv, grah→grabh, pṝ→pṛ — 5 случаев (новый максимум серии после XLV ×4: добавились so и div); самоконфликты 1975-реестра в crosswalk (2+ строки при одном wh-номере): dā (A1/A2!), śru (R1/U1), vas, ji, aś (3 строки/2 номера), grah-дубль, prach, majj, labh, pṝ — 10 случаев (взрыв класса XLV: там 4); расхождения рядов 1975≠1978: rabh N1/A₁, tan N₂/N₁ — 2 случая; rādh — расхождение глосс (урок «повреждать», реестр «succeed» — Уитни §1015-территория Dual); so siṣāsati — стяжённая печать, однозначная привязка невозможна, сведено через as с пометкой; bubutsate — 0 токенов в снапшоте (парадигма вне аттестации); отыменные примеры урока (tapas, namas, kalaha, kṛṣṇa, unmanas, muṇḍa, laghu, dṛḍha, satya) — имена, в глагольные реестры не входят; corpus_layer.tsv — 3 строки урока (cikīrṣ MBh 3,52 = Кнауэр Nr.17 дословно; śuśrūṣ Viṣṇusmṛti 25; rorūy BhāgPur 3,31), счёт по conllu-снапшоту gasyoun/dcs-conllu (derivation-тегирование в разрешённом корпусе отсутствует — счёт по стем-матчам, честно)"
