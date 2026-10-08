@@ -26,6 +26,10 @@
         "spot": "УРОК XXII"
       },
       {
+        "label": "урок XXVIII — конкорданс",
+        "spot": "УРОК XXVIII"
+      },
+      {
         "label": "урок XXIX — конкорданс",
         "spot": "УРОК XXIX"
       },
@@ -238,6 +242,26 @@
       {
         "label": "урок XXII — as-is-us-stems",
         "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-vowel-roots",
+        "spot": "ta прямо к гласным корням (jñāta, jita, nīta, stuta, bhūta, "
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-consonant-changes",
+        "spot": "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-consonant-changes",
+        "spot": "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-sonorant-changes",
+        "spot": "dh/bh→d/b с t→dh (vṛddha, baddha, labdha); h→ḍh с удлинением"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-i-insertion",
+        "spot": "Соединит. i: X класс/каузативы (corita, tāḍita, mārita), оты"
       },
       {
         "label": "урок XXIX — absolutivum-tvaa",
@@ -910,6 +934,22 @@
         "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
+        "label": "урок XXVIII — ppp-ta-vowel-roots",
+        "spot": "ta прямо к гласным корням (jñāta, jita, nīta, stuta, bhūta, "
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-consonant-changes",
+        "spot": "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-i-insertion",
+        "spot": "Соединит. i: X класс/каузативы (corita, tāḍita, mārita), оты"
+      },
+      {
+        "label": "урок XXVIII — ppp-perfect-active-vat",
+        "spot": "Причастие прош. действ. на vat (N. vān, vatī, vat) от pp.: k"
+      },
+      {
         "label": "урок XXIX — absolutivum-tvaa",
         "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
       },
@@ -1436,6 +1476,22 @@
         "spot": "Ср. р. на as/is/us (manas, havis, dhanus): o/ir/ur перед bh,"
       },
       {
+        "label": "урок XXVIII — ppp-ta-vowel-roots",
+        "spot": "ta прямо к гласным корням (jñāta, jita, nīta, stuta, bhūta, "
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-consonant-changes",
+        "spot": "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-sonorant-changes",
+        "spot": "dh/bh→d/b с t→dh (vṛddha, baddha, labdha); h→ḍh с удлинением"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-i-insertion",
+        "spot": "Соединит. i: X класс/каузативы (corita, tāḍita, mārita), оты"
+      },
+      {
         "label": "урок XXIX — absolutivum-tvaa",
         "spot": "Absolutivum на -tvā: простой корень, слабая ступень, соедини"
       },
@@ -1848,6 +1904,10 @@
         "spot": "Лемма-слой: 1 глагол урока (sañj I. P.) — морфонологическая "
       },
       {
+        "label": "урок XXVIII — lesson-roots",
+        "spot": "Лемма-слой: 17 глаголов урока — crosswalk 14/17 (palāy/varṇ "
+      },
+      {
         "label": "урок XXIX — verb-roots",
         "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
       },
@@ -2090,6 +2150,38 @@
         "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
       }
     ],
+    "sangram-ta-na-participles": [
+      {
+        "label": "урок XXVIII — ppp-ta-vowel-roots",
+        "spot": "ta прямо к гласным корням (jñāta, jita, nīta, stuta, bhūta, "
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-consonant-changes",
+        "spot": "Прямое ta при согласных I–IX кл. с краткими гласными (vṛtta,"
+      },
+      {
+        "label": "урок XXVIII — ppp-ta-i-insertion",
+        "spot": "Соединит. i: X класс/каузативы (corita, tāḍita, mārita), оты"
+      },
+      {
+        "label": "урок XXVII — ppp-ta-na",
+        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
+      }
+    ],
+    "sangram-present-perfect-participles": [
+      {
+        "label": "урок XXVIII — ppp-perfect-active-vat",
+        "spot": "Причастие прош. действ. на vat (N. vān, vatī, vat) от pp.: k"
+      },
+      {
+        "label": "урок XXV — vas-stems",
+        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
+      },
+      {
+        "label": "урок XXVII — present-middle-participle",
+        "spot": "Пассивное причастие настоящего времени на māna [māṇa], f ā ("
+      }
+    ],
     "sangram-absolutive": [
       {
         "label": "урок XXIX — absolutivum-tvaa",
@@ -2170,26 +2262,10 @@
         "spot": "Указательные местоимения: idam (ayam/iyam — сшивка дефектных"
       }
     ],
-    "sangram-present-perfect-participles": [
-      {
-        "label": "урок XXV — vas-stems",
-        "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
-      },
-      {
-        "label": "урок XXVII — present-middle-participle",
-        "spot": "Пассивное причастие настоящего времени на māna [māṇa], f ā ("
-      }
-    ],
     "sangram-declension-overview": [
       {
         "label": "урок XXVI — n-stems-irregular",
         "spot": "Гетероклиты и n-аномалии: puṅs/pathin/anaḍuh (три основы), k"
-      }
-    ],
-    "sangram-ta-na-participles": [
-      {
-        "label": "урок XXVII — ppp-ta-na",
-        "spot": "Причастие прош. страд. на ta, f ā / na [ṇa], f ā от кратчайш"
       }
     ],
     "sangram-infinitive": [
