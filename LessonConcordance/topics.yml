@@ -3228,3 +3228,172 @@ lessons:
           - {root: "vi-śiṣ", gloss: "увеличивать, определять", z1975: "?", z1978: "?", crosswalk: "NO — приставочный; корень śiṣ покрыт отдельной строкой (I₁, wh787; прецедент vi-dhā/saṃ-dhā XLI)"}
           - {root: "saṃ-han", gloss: "соединять (класс II — чужой класс урока)", z1975: "?", z1978: "?", crosswalk: "NO — приставочный (han: N₁, wh908, open, full)"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 11/13 строк урока; vi-śiṣ/saṃ-han — приставочные без собственных строк (честно, корни śiṣ wh787 / han wh908 покрыты); ловушка написания: indh сидит в crosswalk под idh «kindle» (wh35); bhañj/bandh — расхождения производных строк 1975 и 1978 (A₁↔N₁) помечены честно; класс ≠ ряд: bhañj = A₁/N₁ при VII — 6-й случай серии (nij/vij/viṣ = I₁ при III — 5-й, XLI); ручная находка вне скоопа: Pot. Par. yujyām (mdx 6239) против yuñjyām (Whitney §688, Ātm. yuñjīya рядом) — erratum-кандидат → GTD"
+  XLIII:
+    title: "Перфект (удвоительный): слог удвоения (краткость гласных, дифтонги — второй частью, конечные e/ai/o и ṛ/ṝ→a; начальный a→ā, i/u→iy/uv, ṛ и a+кластер→ān); сильные/слабые формы (guṇa сильных, 3 sg — удлинение a и vṛddhi конечных); окончания перфекта + aniṭ-октет без i и tha-исключения (ṛ, jāgṛ, svṛ, vṛ, saṅskṛ); корни на i/ī (nināya/niny-), u/ū (tuṣṭāva/tuṣṭuv-, babhūva), ṛ (cakāra/cakṛ), ṝ (cakāra/cakar-); особые слабые основы: e-перфект (pac→pec; tṛ tatāra/teruḥ), va-корни uvāca/ūc, yaj iyāja/īj, jagm/jagr̥h/jakṣ/jajñ/jaghn/vividh/suṣup; ā/e/ai/au-корни (dadhau/jagau, hve jahāva, pyai pipye); неполный перфект ah (āha/āttha) + «неправильное» удвоение ci/ji/hi/vyath/dyut/aś; описательный перфект -ām/-ayām + cakāra/āsa/babhūva/cakre; причастия перфекта vas/uṣī и āna"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6377–6731 (заголовок «# УРОК XLIII.»; дальше урок XLIV — обычный заголовок, mdx 6733). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст о Харищчандре (mdx 6731), фиксируем честно; corpus_layer возвращает 3 строки топ-100 после лакуны XXXIX–XLII"
+    claims: [HB-329, HB-330, HB-331, HB-332, HB-333, HB-334, HB-335, HB-336, HB-337, HB-338, HB-339, HB-340, HB-341, HB-342, HB-343, HB-344, HB-345, HB-346, HB-347, HB-348, HB-349, HB-350, HB-351]
+    reuse_clusters:
+      - "2 совпадения (scripts/data/matches.json): buhler-1923.XLIII.1050 «vidāṃ cakāra» ↔ kochergina-1998.XXII.540 exact 1.0 — живое текстуальное переиспользование (формула описательного перфекта у Кочергиной, Занятие XXII); buhler-1923.XLIII.1047 «īkṣ Ā. īkṣāṃ cakre» ↔ kochergina-1998.XXXIV.1196 (0.833) — сводная таблица Приложения II, словарный след, не упражнение (честно)"
+      - "Кураторская находка (вне матчера): Кнауэр Nr.14–15 несут плотный перфектный слой: «pitā duhitaram avocat» и «uvāca» (Nr.14 — vac-корень), जगाम (gam), न जहौ (hā), बभूव (bhū), उपचक्रमे (upa-kram) (Nr.15) — пять живых перфектных форм в двух соседних фраах"
+    corpus_layer:
+      - "vac — uvāca (топ-100, DCS 30 970, ранг 15; Hitop 3,6) — «перфект как норма повествования», HB-57"
+      - "bhū — babhūva (топ-100, DCS 32 612, ранг 13; Hitop 3,6.6) — HB-57"
+      - "gam — jagāma (топ-100, DCS 15 950, ранг 25; Rām 4,66) — HB-57"
+    topics:
+      - key: perfect-reduplication-vowels
+        title: "Слог удвоения перфекта, гласные: долгие/краткие замещаются соответственными краткими, внутренние дифтонги — второй частью; конечные e/ai/o (после ā) и ṛ/ṝ → a; начальный a→ā (ad→āda), начальный ā без изменений (āp), i/u→iy/uv (или i/u), начальный ṛ и a+кластер согласных → ān (ānṛc, ānañj, ānakṣ)"
+        buhler_locus: "урок XLIII, п. А.1 а–в (mdx 6385–6389)"
+        topic_claims: [HB-329, HB-330]
+        spots:
+          "kochergina-lesson:XXI": "(редупликация) корня используется в санскрите"
+          "zalizniak-1978-sec:113": "ca-kāra, ca-khāna, ja-gāma, ju-hāva"
+          "zalizniak-1978-sec:151": "iyeṣa, īṣuḥ (из i-iṣ-ur)"
+          "knauer-fraza:Nr.15": "जगाम स्वनगरं"
+          "sangram-article:perfect": "собственный форма-класс корпуса не содержит значения «перфект»"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-329/330 TRUE/JUSTIFIED: оба гласных правила в двух пунктах — краткость/дифтонги/конечные e-ai-o и ṛ-ṝ→a (п.1б) и начальные a→ā, ā неподвижно, iy/uv, ān (п.1в); примеры-локусы ad/āp/iṣ/ukh/ṛc/añj/akṣ/kram/sthā/sic/jīv/stu/sev/gai/kṛ/tṝ"
+          whitney: "W+ — §§783-788: vowel-initial reduplication (āda, iyeṣa/īṣuḥ, uvoṣa/ūṣuḥ, ānṛdhuḥ-тип, ānañja) — HB-330 «Whitney's own formulation»; §§589-590/786: краткость слога удвоения, второй элемент дифтонга, a для конечных e/ai/o и ṛ/ṝ"
+          zalizniak-1978: "Z± — §113: краткий слог удвоения (перфект в примерах), §151: начальные гласные (iyeṣa/īṣuḥ, ānañja/ānarca; āp āpa) — но З-1978 строже: «корни с начальной долгой гласной перфектной основы не образуют, кроме √āp» — у Бюлера ограничение не проговорено (honest nuance)"
+          kochergina: "K± — Занятие XXI «Правила удвоения» даёт сам принцип редупликации (перфект в списке потребителей), но частные правила слога удвоения перфекта разнесены в Занятие XXII («Особые случаи образования перфекта») — honest разрыв на два занятия"
+        notes: "ukh/uvokh/ūkh (mdx 6397) — erratum-кандидат: у Уитни uh 'pour' даёт uvoha/ūha (§585c) — kh-написание урока ошибка набора; Кнауэр Nr.15: जगाम — живая форма слога удвоения gam; sangram SG-MO-017: перфектная редупликация в DCS-разметке невосстановима (kill-gate EM2) — корпусный предел, не аттестационный"
+      - key: perfect-strong-weak-guna
+        title: "Сильные и слабые формы: сильные — ед.ч. Par.; guṇa подъёмных гласных в сильных (bibheda/bibhid, tutoda/tutud, uvokh/ūkh); внутренний a: 3 sg Par. всегда удлинён (papāca), 1 sg — по желанию (papāca/papaca); конечные подъёмные: 3 sg vṛddhi (nināya), 1 sg vṛddhi/guṇa, 2 sg guṇa (nine)"
+        buhler_locus: "урок XLIII, п. А.2 а–д (mdx 6391–6403)"
+        topic_claims: [HB-331, HB-332, HB-333]
+        spots:
+          "zalizniak-1978-sec:150": "Основа перфекта (у первичных глаголов) состоит из корня с удвоительным слогом"
+          "sangram-article:past-tenses": "перфект (удвоительный, стативно-нарративный)"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-331/332/333 TRUE/JUSTIFIED: трёхуровневая система полная — guṇa сильных; обязательное удлинение a в 3 sg при факультативном в 1 sg; person-graded vṛddhi/guṇa конечных (3 sg vṛddhi, 1 sg оба, 2 sg guṇa) — распределение по лицам дано целиком"
+          whitney: "W+ — §793: дословно та же доктрина (§793a guṇa сильных; §793b-c person-graded конечных; §793d papāca/papaca); §791-792 — общая архитектура сильных/слабых; HB-332 note: «no classical 3sg with short medial a»"
+          zalizniak-1978: "Z± — §150 даёт ступень основы перфекта по рядам (guṇa/vṛddhi через §§51-52), но person-graded раскладка конечных гласных (nināya/ninaya/ninetha) отдельно не проговорена — ступени у З-1978 по рядам корней, не по лицам (honest gap)"
+          kochergina: "K± — Занятие XXI/XXII дают сильные/слабые основы списком особых случаев (XXII), person-graded аблаут не эксплицирован — honest gap"
+        notes: "пapāca/papaca и nināya/ninaya/ninetha — два лица одного принципа (внутренний a vs конечные); формы bibhed-/tutod-/uvokh- из п.2б работают в парадигмах п.10 (тема root-paradigms); sangram-past-tenses: перфект — крупнейшее финитное прошедшее корпуса (Past+None 85 955, во главе uvāca 13 880, āha 6 731, babhūva, cakāra), но корпусно тёмное (SG-SE-006); corpus_layer урока — 3 строки топ-100 (vac/bhū/gam), первые после XXXVIII"
+      - key: perfect-endings-union-vowel
+        title: "Окончания перфекта (Par. a/tha/a, va/athuḥ(s)/atuḥ(s), ma/a/uḥ(s); Ātm. e/se(ṣe)/e, vahe/āthe/āte, mahe/dhve(ḍhve)/ire) и присоединение: aniṭ-октет dru/śru/stu/sru/kṛ/bhṛ/vṛ/sṛ без i; 2 sg tha на ṛ-корнях с 5 исключениями (ṛ, jāgṛ, svṛ, vṛ, saṅskṛ); i обязана/факультативна у остальных; dhve→ḍhve после корневых гласных; сноска: 13 корней с факультативной i (vraśc, añj, mṛj, kḷp, gup, aś, gāh, guh, tṛp, druh, naś, muh, snih)"
+        buhler_locus: "урок XLIII, п. А.3–4 + сноска (mdx 6405–6437)"
+        topic_claims: [HB-334, HB-335, HB-336, HB-337, HB-338]
+        spots:
+          "kochergina-lesson:XXI": "Окончания перфекта"
+          "zalizniak-1978-sec:153": "Образцы спряжения"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-334..338 все TRUE/JUSTIFIED: закрытый aniṭ-октет «member for member» с Уитни §797c; tha-исключения — панинийские thal-правила; вилка «должны или могут» корректно кодирует seṭ/veṭ; dhve→ḍhve — recherche-правило точно; сноска-13 — veṭ-список §798"
+          whitney: "W+ — §795-796 окончания, §797: aniṭ-октет + «the perfect is the most i-friendly tense», §797c-798 tha-предписания (cakartha vs āritha/jajāgaritha/vavaritha/saṃcaskaritha), §798 корни с факультативной i, §226c dhve→ḍhve (Pāṇini 8.3.78-79)"
+          zalizniak-1978: "Z± — §153: полные парадигмы √yuj/√kar/√vac/√tan/√dā с окончаниями и дублетами (uvaca и uvāca, cakara и cakāra); aniṭ-октет как закрытый список не сводится (З-1978 строит по §§129/153 через seṭ/aniṭ-деление других форм) — honest gap списка"
+          kochergina: "K+ — Занятие XXI: таблица «Окончания перфекта» + образец kar (cakāra) — окончания как отдельная таблица есть; aniṭ-октет и tha-исключения в занятии не проговорены (список особых случаев перенесён в XXII) — honest split"
+        notes: "октет vṛ «избирать» aniṭ в п.4а и seṭ в tha-исключении п.4б — внутренняя согласованность урока отмечена в HB-335 note как «both statements are made»; сноска-13 — частотностный хедж «самые употребительные» (HB-338: rank не инструментован, class-membership проверен)"
+      - key: perfect-root-paradigms
+        title: "Корневые парадигмы: jīv/sev (полная таблица, jijīva/siṣeve); i/ī-корни nināya/niny-, cikrāya/cikri-; u/ū-корни tuṣṭāva/tuṣṭuva-, lu lulāva, bhū babhūva; ṛ-корни cakāra/cakṛ (smṛ sasmāra); ṝ-корни cakāra/cakar- (исключения jāgṛ и ṛ — по 8б); согласные корни bibheda/bibhid-, tutoda/tutud-, dadarśa/dadarṣṭha, iyeṣa/īṣ-, ānarca/ānṛc-, cakrāma/cakram-"
+        buhler_locus: "урок XLIII, п. А.5–10 (mdx 6439–6577)"
+        topic_claims: [HB-339, HB-340, HB-341, HB-342]
+        spots:
+          "zalizniak-1978-sec:154": "У √ah *говорить* имеется только перфект"
+          "kochergina-lesson:XXII": "Особые случаи образования перфекта"
+          "knauer-fraza:Nr.15": "न जहौ"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-339/340/341/342 все TRUE: соединительный гласный по типам корней с aniṭ-инфинитивным тестом 2 sg (ninetha/ninayitha, tuṣṭotha); ṛ-аблаут ar/ār~ṛ~r; ṝ seṭ целиком; парные исключения (jāgṛ/ṛ — сноска к 8; tṝ — вынесен в 11а отдельно)"
+          whitney: "W+ — §§797-798: seṭ/aniṭ-распределение i; §797 cakāra/cakṛva-аблаут; §797c ṝ seṭ (tastāra/tastaritha); HB-342 note: tṝ с e-перфектом вырезан отдельно — правило стоит в своей сфере"
+          zalizniak-1978: "Z+ — §154 «Индивидуальные особенности»: vid без удвоения (veda), ah только 2-3 лица (āha/āttha), as единая ās-, bhū аномальная babhū(v)- — четыре особых корня урока закрыты; ṛ/ṝ/i/u-типы рассеяны по §151-153 (ny-вставка ninyuḥ §150, bhū ba-bhūv-a §154) — покрывает, но не одним локусом"
+          kochergina: "K+ — Занятие XXII «Особые случаи образования перфекта» — параллельный список индивидуальностей; полный match vidāṃ cakāra (XXII.540) живёт именно здесь"
+        notes: "Кнауэр Nr.15: न जहौ (hā перфект — слабая основа jah- перед гласной) и बभूव в соседней фразе — живые формы темы; dadarṣṭha — ṣ-вариант 2 sg (тема 3); babhūva — частотнейший перфект нарратива после uvāca/āha (sangram-past-tenses)"
+      - key: perfect-special-weak-allomorphs
+        title: "Особые слабые основы: e-перфект — pac→pec (papāca/pec-), обязательный tṛ/bhram/phal/bhal (tatāra/teruḥ), факультативный granth/tras/bhras/bhrāj/rāj; va-корни vac/vad/vap/vaś/vas/vah — слог удвоения u, в слабых отбрасывается, va→ū (uvāca/ūc-, uvāha/ūhu-); yaj iyāja/īj-; khan cakhn, gam jagm, grah jagṛh, ghas jakṣ, jan jajñ, han jaghn, vyadh vividh, svap suṣup; ā/e/ai/au-корни → au в 1/3 sg (dadhau, jagau), гласный теряется перед вокальными; hve jahāva/juhuve, pyai pipye; itha факультативен у корней с внутренним a без i в инфинитиве (pecitha/papaktha)"
+        buhler_locus: "урок XLIII, п. А.11–12 + сноски (mdx 6581–6657)"
+        topic_claims: [HB-343, HB-344, HB-345, HB-346]
+        spots:
+          "zalizniak-1978-sec:152": "слабая основа перфекта образуется без удвоения, но с заменой корневого a на e"
+          "knauer-fraza:Nr.14": "pitā duhitaram avocat"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-343/344/345/346 TRUE: закрытые списки e-перфекта (должны/могут), va-семёрка+yaj с сампрасараной, aniṭ-инфинитивный тест itha, au-ряд; HB-343 note: bhal в обязательном списке — собственное добавление Бюлера, не подтверждено независимо (честно)"
+          whitney: "W+ — §794: e-perfect (Pāṇini 6.4.122-126: tṝ-phal обяз., granth/tras/bhrāj/rāj факульт.); §784b/794b: va-корни uvāca/ūcuḥ, yaj iyāja/ījuḥ; §797d itha-опция (pecitha~papaktha); §800 au-ряд dadau/jagau с 2 sg dadātha~daditha"
+          zalizniak-1978: "Z+ — §152: «слабая основа перфекта образуется без удвоения, но с заменой корневого a на e» (seduḥ, tenuḥ) + «не подчиняются √yaj (√151) и √jan (jajñuḥ)» + вне условий car/tar/tras; jagmuḥ/jahaṣuḥ/rarakṣuḥ оговорены — jagm/jajñ/jakṣ-слой закрыт; va-семёрка §153 (uvaca/uvāca в парадигме)"
+          kochergina: "K± — Занятие XXII особые случаи покрывают часть списка (au-ряд, ā-корни, vid), e-перфект и va-семёрка в поурочной трассе не выделены — honest gap половины алломорфного слоя"
+        notes: "Кнауэр Nr.14: «pitā duhitaram avocat» — avocat импфект vac рядом с перфектным uvāca той же фразы — форма-двойник для контраста «перфект vs импфект того же корня»; jagr̥h (grah) — ловушка написания серии (grabh в реестрах); hve/pyai — редчайшие au-корни, в реестрах рядов нет (см. lesson-roots)"
+      - key: periphrastic-perfect-participles
+        title: "Описательный перфект (B): обязателен у односложных на i/u (по положению долгие), с ī/ū/ṝ/дифтонгами, cakās, X класса, каузативов и отыменных; факультативен у vid/bhī/hrī/bhṛ/jāgṛ/daridrā; суффикс ām (X класс и каузативы ayām) + āsa/cakāra/babhūva (Par.) / cakre (Ātm.); прич. перф. Par. vas/uṣī к слабой основе с i у односложных (pecivas/bibhidvas); прич. перф. Ātm. āna к основе перед ire (dadhāna, cakrāṇa); значение перфекта = импфекту, употребляется реже"
+        buhler_locus: "урок XLIII, п. B.1–4 + финальное замечание (mdx 6673–6729)"
+        topic_claims: [HB-347, HB-348, HB-349, HB-350, HB-351]
+        spots:
+          "zalizniak-1978-sec:155": "yuyujvaṁs-, cakṛvaṁs-"
+          "zalizniak-1978-sec:156": "Описательный перфект"
+          "zalizniak-1978-sec:94": "vidvaṁs- (m, n)"
+          "kochergina-lesson:XXII": "Описательный перфект образуется из неизменяемой формы на -ām смыслового глагола"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-348/349/350/351 TRUE/JUSTIFIED: вспомогательная тройка āsa/cakāra/babhūva+cakre grammar-exact (Whitney §§1070-1073); «между прочим» корректно сигнализирует иллюстративность списка (hu в панинийском наборе); i-вставка vas точно; āna-якорь «перед ire» — sound shortcut"
+          whitney: "W+ — §§1070-1073: обязательный/факультативный описательный (Pāṇini 3.1.38-39 uṣa-vida-jāgṛ, bhī-hrī-bhṛ-hu + daridrā); §§802-803 прич. vas/uṣī (vidvas — лексикализованный реликм вне правила, честно); §806 прич. āna к pre-ire основе"
+          zalizniak-1978: "Z+ — §156: описательный перфект от производных и «затруднённых» первичных (с начальной долгой гласной), -ām от сильной основы презенса, вспомогательные kar/as/реже bhū + морфологическая привязка к системе презенса (сноска §114); §155: прич. -vaṁs- из 1 pl (yuyujvaṁs-, cakṛvaṁs-, ūcivaṁs-, tenivaṁs-, dadivaṁs-, vidvaṁs-; jagmivaṁs-/jaganvaṁs-), ж.р. -uṣī- — слой закрыт, вспомогательные в другом порядке (kar первым)"
+          kochergina: "K+ — Занятие XXII: описательный перфект от ī/ū-начальных, производных, ās и vid; -ām + as/bhū(редко)/kar; живая формула vidāṃ cakāra — exact match 1.0 с уроком"
+        notes: "прич. Ātm. āna [āṇa] — вариант-оговорка урока; Очерк §94: vaṁs-чередование -vāṁs-/-vaṁs-/-vat-/-uṣ- — склонение причастия закрыто в отдельном §; «перфект реже импфекта» урока противоречит корпусу sangram-past-tenses (перфект крупнейшее прошедшее Past+None 85 955 против Impf 46 695) — честная инверсия учебной интуиции"
+      - key: lesson-roots
+        title: "Лемма-слой: 49 корней урока — все несущие правила/парадигмы (удвоение, типы корней, особые слабые основы, au-ряд, ah, «неправильное удвоение», описательный перфект)"
+        buhler_locus: "урок XLIII, п. А.1–13, B.1–2 (корни в тексте правил и парадигм, mdx 6385–6699); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даются формами перфекта без морфонологической записи и без словарного списка; классы не указаны (школьная линия)"
+          whitney: "W: классы и ё/veṭ-статус — в root-аппарате (крам §779, sthā §§786/815, nī §797-798, kṛ §§797/786, bhū §806, dhā §800, ah §801a, vid §§728/1071, ptc §§802-806); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §§113/150-154 дают слог удвоения, ступени и индивидуальные особенности парами форм (jagm/jajñ/jahaṣuḥ; ny-вставка; babhū(v)-; ās-); gai/uh/lu/kṝ/hve/pyai/daridrā вне реестра Очерка"
+          kochergina: "K: особые случаи — Занятие XXII списком; записей рядов нет"
+        lemmas:
+          - {root: "kram", gloss: "шагать (cakrama/cakrāma)", z1975: "M1 (conf medium)", z1978: "M₂", crosswalk: "yes (wh119) — расхождение рядов 1975 M₁/1978 M₂"}
+          - {root: "sthā", gloss: "стоять (tasthā)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh874)"}
+          - {root: "sic", gloss: "лить (siṣic)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh841)"}
+          - {root: "jīv", gloss: "жить (jijīva)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh260)"}
+          - {root: "sev", gloss: "служить (siṣeve)", z1975: "I1 (conf low)", z1978: "A₂", crosswalk: "yes (wh856) — ряды расходятся 1975 I₁ (low)/1978 A₂"}
+          - {root: "gai", gloss: "петь (jagā/jagau)", z1975: "?", z1978: "?", crosswalk: "NO — корня нет в реестрах (jagau-ряд не установлен)"}
+          - {root: "kṛ", gloss: "делать (cakāra/cakṛ)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — hom 1 make (wh106)"}
+          - {root: "tṝ", gloss: "пересекать (tatāra/teruḥ, e-перфект)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — под написанием tṛ, hom 1 pass (wh319) — ловушка написания серии"}
+          - {root: "ad", gloss: "есть (āda)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh11)"}
+          - {root: "āp", gloss: "достигать (āpa)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh26) — единственный долгоначальный корень с перфектом (З-1978 §151)"}
+          - {root: "ṛc", gloss: "хвалить (ānṛc/ānarca)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh70)"}
+          - {root: "añj", gloss: "мазать (ānañj)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh7)"}
+          - {root: "akṣ", gloss: "достигать (ānakṣ)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — hom 1 attain (wh2)"}
+          - {root: "iṣ", gloss: "искать (iyeṣa/īṣ-)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh42)"}
+          - {root: "uh", gloss: "лить (uvoha/ūha)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет; в уроке напечатано ukh/uvokh/ūkh — erratum-кандидат"}
+          - {root: "pac", gloss: "варить (papāca/pec-)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh435)"}
+          - {root: "nī", gloss: "вести (nināya/niny-)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh427)"}
+          - {root: "krī", gloss: "покупать (cikrāya/cikri-)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh120)"}
+          - {root: "lu", gloss: "резать (lulāva)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет"}
+          - {root: "bhū", gloss: "быть (babhūva)", z1975: "U2 (conf high)", z1978: "U₂", crosswalk: "yes (wh528)"}
+          - {root: "smṛ", gloss: "помнить (sasmāra)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh894)"}
+          - {root: "kṝ", gloss: "сыпать (cakāra/cakar-)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет (wh301)"}
+          - {root: "dṛś", gloss: "видеть (dadarśa/dadarṣṭha)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh375)"}
+          - {root: "khan", gloss: "копать (cakhāna/cakhn)", z1975: "N1 (conf medium)", z1978: "N₂", crosswalk: "yes (wh157) — расхождение 1975 N₁/1978 N₂"}
+          - {root: "gam", gloss: "идти (jagāma/jagm)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh170)"}
+          - {root: "grah", gloss: "хватать (jagrāha/jagr̥h)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием grabh (wh196) — ловушка написания серии"}
+          - {root: "ghas", gloss: "есть (jaghāsa/jakṣ)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh204)"}
+          - {root: "jan", gloss: "рождать (jajāna/jajñ)", z1975: "N1 (conf medium)", z1978: "N₂", crosswalk: "yes (wh249) — расхождение 1975 N₁/1978 N₂"}
+          - {root: "han", gloss: "убивать (jaghāna/jaghn)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh908)"}
+          - {root: "vyadh", gloss: "пробивать (vivyādh/vividh)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh754)"}
+          - {root: "svap", gloss: "спать (suṣvāp/suṣup)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh903)"}
+          - {root: "dhā", gloss: "ставить (dadhau/dadh-)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — hom 1 put (wh393)"}
+          - {root: "vah", gloss: "нести (uvāha/ūhu-, uvoḍha)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh718)"}
+          - {root: "yaj", gloss: "жертвовать (iyāja/īj-)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh597)"}
+          - {root: "hve", gloss: "звать (jahāva/juhuve)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет (hvay)"}
+          - {root: "pyai", gloss: "пухнуть (pipye)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет"}
+          - {root: "ah", gloss: "говорить (āha/āttha, неполный перфект)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh24)"}
+          - {root: "und", gloss: "рыдать (undāṃ cakāra)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes — под написанием ud (wh61); und — носовой вариант"}
+          - {root: "īkṣ", gloss: "смотреть (īkṣāṃ cakre)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh45)"}
+          - {root: "kath", gloss: "рассказывать (kathayāṃ cakāra)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh81)"}
+          - {root: "vid", gloss: "знать (vidāṃ cakāra; viveda)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh728)"}
+          - {root: "bhī", gloss: "бояться (bibhayāṃ cakāra)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh523)"}
+          - {root: "hrī", gloss: "стыдиться (jihrayāṃ cakāra)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh932)"}
+          - {root: "bhṛ", gloss: "носить (bibharāṃ cakāra)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh530)"}
+          - {root: "jāgṛ", gloss: "бодрствовать (jāgarāṃ cakāra)", z1975: "?", z1978: "?", crosswalk: "NO — удвоительная основа √gṛ, в реестрах под собственным именем отсутствует"}
+          - {root: "daridrā", gloss: "нищенствовать (daridrāṃ cakāra)", z1975: "?", z1978: "?", crosswalk: "NO — интенсив, корня в реестрах нет"}
+          - {root: "ci", gloss: "замечать/собирать (cikāya/cicāya)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh225) — «неправильное удвоение»"}
+          - {root: "ji", gloss: "побеждать (jigāya)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh258)"}
+          - {root: "hi", gloss: "побуждать (jighāya)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes — глосса реестра impel (wh914), помечено"}
+          - {root: "vyath", gloss: "колебаться (vivyathe)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh753)"}
+          - {root: "dyut", gloss: "сиять (didyute)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh379)"}
+          - {root: "aś", gloss: "достигать/пользоваться (ānaśe)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — глосса реестра attain (wh20), гом-вилка помечена"}
+          - {root: "vṛ", gloss: "избирать (vavṛ, aniṭ-октет)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — hom 2 choose (wh741)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 45/53 строк урока; нет строк — gai, uh, lu, kṝ, hve, pyai, jāgṛ, daridrā (фиксируем честно); ловушки написания серии: tṝ→tṛ, grah→grabh, und→ud, vṛ 'избирать'→hom 2; расхождения рядов 1975≠1978: sev I₁/A₂, kram M₁/M₂, khan N₁/N₂, jan N₁/N₂ — 4 случая на одном уроке (максимум серии); вне таблицы (списки урока, реестровый статус см. темы): aniṭ-октет без i — stu/dru/śru/sru/sṛ (тема 3, vṛ/bhṛ/kṛ в таблице), tha-исключения svṛ/saṅskṛ, footnote-список 13 i-опускательных (vraśc, mṛj, kḷp, gup, gāh, guh, tṛp, druh, naś, muh, snih), списки 11а/б (tṛ в таблице; bhram/phal/bhal; granth/tras/bhras/bhrāj/rāj), va-семёрка (vah в таблице; vac/vad/vap/vaś/vas), tud/bhid/krī/smṛ — регулярные параллели редукции; corpus_layer.tsv — 3 строки урока (vac/uvāca, bhū/babhūva, gam/jagāma — «перфект как норма повествования», топ-100 ранги 13–25): лакуна после XXXVIII кончается на XLIII"
