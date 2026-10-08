@@ -3798,6 +3798,111 @@ lessons:
           - {root: "gaṇ", gloss: "считать (ajagaṇat/ajīgaṇat)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
           - {root: "mṛg", gloss: "охотиться (mṛgayate amamṛgat)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 41/50 строк таблицы; нет строк — i, bhraṅś, sraṅs, śvi, hve, gaṇ, mṛg, āś (ардж-гомонимия), arth, sthāp (через sthā), śās-каузатив (через śās), sūc, rūp, kīrt, bhrām/jrāmbh (через jṛ/группа), nāy (через nī I₂ wh427 — nāyayati anīnayat не сведён отдельно) — фиксируем честно; ловушки написания серии: tṝ→tṛ (atasṛ/atastarat), dhe→dhā-hom2, arj→ṛj; самоконфликты 1975-реестра в crosswalk: pā, śak, sad, arj (2+ строки при одном wh-номере) — 4 случая, новый класс расхождений серии (раньше 1975≠1978, теперь 1975≠1975 внутри crosswalk); расхождения рядов 1975≠1978: sev I₀/A₂, lok U₀/A₂, loc U₀/A₂, añj N₁/A₁ (через ṛj-строку A₁) — 4 случая; tvar 1978 R? — ряд не определён; список X-класса урока иллюстративный («между прочим») — в таблицу взято 16 репрезентативных основ, остальные derivational от реестровых корней; corpus_layer.tsv — 3 строки урока (sic, muc, dā), обе HB-60 + HB-363"
+  XLVI:
+    title: "Сигматические аористы: IV (на -s), V (на -iṣ), VI (на -siṣ)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7013–7129 (заголовок «# УРОК XLVI.»; дальше урок XLVII — кривой заголовок без точки, mdx 7131). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «коршун и самка шакала» (mdx 7129, паньчатантрийская фабула) с живыми аористами, размеченными прямо в уроке по типам (bandh IV, nirṇī IV, prasthā IV, ākṣip IV, ālabh IV, yaj IV, apahar IV, nidhā IV — s-аорист; grah V, īkṣ V, uḍ-ḍī V, nipat V, ud-jan V, khād V — iṣ-аорист; pratyāyā IV, VI — двойная отсылка), фиксируем честно; corpus_layer — 0 строк (честно)"
+    claims: [HB-374, HB-375, HB-376, HB-377, HB-378, HB-379, HB-380, HB-381, HB-382]
+    reuse_clusters:
+      - "0 настоящих reuse-предложений (scripts/data/matches.json): попадания матчера — шум коротких корневых токенов (darś IV ↔ списки слов Кочергиной XVII, nivart/saṃgam ↔ XLVIII-словарь), не предложения — фиксируем честно. Живой слой урока: хрестоматийный текст (mdx 7129) сам размечает типы IV/V/VI прямо в фабуле; Кнауэр Nr.15 — хронологический сосед серии (Nr.13→XLIV, 14→XLV, 16→XLVII, 17→XLVIII), но его формы — перфекты (jahrire, dadau, praçaçaṅsuḥ, nipetus, varayāmāsa, suṣuve, kārayāmāsa, jagāma, reme, jahau, babhūva), сигматических аористов в упражнении нет — линков на Nr.15 не заводим, не выдумываем строки (правило урока 43–47)"
+    corpus_layer:
+      - "0 строк (BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv: урок XLVI отсутствует — лакуна, прецедент XLVII «corpus_layer 0 — честно»); частотная рамка вместо неё — sangram-article:aorist-types: s-аорист 1508, iṣ-аорист 1077, siṣ-аорист 41 токен DCS-снапшота — живое подтверждение «редкого типа» HB-382"
+    topics:
+      - key: aorist-s-fourth
+        title: "Четвертый аорист (s-аорист): окончания sam/sīḥ/sīt, sva/stam/stām, sma/sta/suḥ (P.) и si/sthāḥ/sta, svahi/sāthām/sātām, smahi/dhvam/sata (Ā.); sta/stha-окончания отбрасывают s после кратких гласных и всех согласных, кроме анусвары и r; dhvam → ḍhvam после корневых гласных и дифтонгов, кроме a, ā, и после r; в P. все допускающие vṛddhi гласные → vṛddhi (anaiṣam, akārṣam, adrākṣam — dṛś и sṛj дают rā вместо ār), в Ā. только конечные i, ī, u, ū → guṇa (aneṣi, akṛṣi); конечные согласные перед s — по XLIV, 2б), перед t, th, dh — как в P. II, III, VII классов; парадигмы nī (anaiṣam/aneṣi), kṛ (akārṣam/akṛṣi), dṛś P. (adrākṣam) и labh Ā. (alapsi/alabdhāḥ/alabdha); употребление — большей частью от aniṭ-глаголов (инфинитив без соединительного гласного, ур. XXX)"
+        buhler_locus: "урок XLVI, п. IV.1–3 + 4 таблицы (mdx 7015–7079)"
+        topic_claims: [HB-374, HB-375, HB-376]
+        spots:
+          "zalizniak-1978-sec:144": "Основа аориста 4 равна корню + s"
+          "kochergina-lesson:XXXVIII": "IV тип - аорист на -s"
+          "sangram-article:aorist-types": "akārṣīt «сделал»"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-374/375/376 TRUE/JUSTIFIED: sta/stha-s-выпадение с исключениями анусвара/r и ḍhvam-правило (HB-374) — панинийские §§8.2.26-27 в изложении Уитни §881/226c; vṛddhi-все-P/слабое- конечных-в-Ā с rā-метатезой dṛś/sṛj (HB-375) — дословно Уитни §§878-879; «большей частью» aniṭ-корреляция (HB-376) — хедж честный, корневая пропорция требует пер-корневого джойна (инструмента нет)"
+          whitney: "W+ — §§876-884: §876 классификация s-аористов и aniṭ-склонность, §§878-879 vṛddhi в act./слабые-гуна конечных в med., §881a s-выпадение после кратких гласных/согласных (анусвара и r исключены — тот же список, что у Бюлера), §881b/226c dhvam→ḍhvam после не-a-гласных и r, §884 неправильные"
+          zalizniak-1978: "Z+ — §144: «в act. корень всегда в ступени vṛddhi и спряжение единообразно», в med. (довольно редко) слабая ступень, у открытых i, u, ī — guṇa, am/an колеблются; хвост §144: 2-3 sg med. без s при кратко-гласном исходе; примеры drākṣ-/dhākṣ-/vāts- — та же серия форм, что таблицы урока"
+          kochergina: "K+ — Занятие XXXVIII: IV тип, vṛddhi P. / слабая ступень интерконсонантных Ā.; песочные правила перед -s: -n/-m→анусвара (man→amaṃs, ram→araṃs), -s→-t (vas→avats), -ś/-j→-k (darś→adrākṣ, sarj→asrākṣ) — тот же слой, что отсылка урока к XLIV, 2б); -ī перед 2-3 л. P., -ur в 3 pl. P., dhvam→ḍhvam"
+        notes: "Частотная рамка: sangram-article:aorist-types — сигматический -s- самый частотный из сигматических (1508 токенов против 1077 iṣ / 124 sa / 41 siṣ); парадигмы урока nī/kṛ/dṛś/labh дословно совпадают с образцом Кочергиной XXXVIII (akārṣam…/anaiṣam…); кочергинские примеры man/ram/vas/darś/sarj дают sandhi-слой, который Бюлер прячет в отсылку XLIV, 2б) — cross-repo сшивка уроков XLIV↔XLVI; ловушка z-1978 §143: типы 4 и 5 различаются показателем (s vs iṣ) — база для темы V"
+      - key: aorist-s-middle-irregulars
+        title: "Неправильные s-аориста: adhi+i → adhyaiṣṭa или adhyagīṣṭa; dā, dhā, sthā — только Ātmanepada, гласный корня → i, 2-3 л. на thāḥ/ta (adiṣi, adithāḥ, adita); gam и upayam «жениться» могут выбрасывать носовой (agaṅsi/agasi, agaṅsthāḥ/agasthāḥ); pad Ā. 3 sg apādi; budh Ā. abuddha или abodhi"
+        buhler_locus: "урок XLVI, п. IV.4 (mdx 7083)"
+        topic_claims: [HB-377]
+        spots:
+          "zalizniak-1978-sec:144": "показатель s отсутствует"
+          "kochergina-lesson:XXXVIII": "→ adiṣ-, sthā"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-377 TRUE/JUSTIFIED: dā/dhā/sthā → Ā. с ā→i и 2-3 л. thāḥ/ta (adiṣi, adithāḥ, adita) — Уитни §884 дословно, собственный пример asthiṣ- у Кочергиной; остальные неправильные (adhyaiṣṭa/adhyagīṣṭa, agasi, apādi, abuddha/abodhi) реестром HB не клеймятся — адресно Уитни §§884-887, 899-900 (abodhiṣ-territory §902-парадигма budh), без противоречий"
+          whitney: "W+ — §884: dā, dhā, sthā middle s-aorists adiṣi/adithāḥ/adita + замечание о корнях на ā вообще (ср. Кочергина «заметьте» — тот же слой); §902 парадигма budh ápāviṣam/ábodhiṣam — стыковка с V-аористом темы is-fifth"
+          zalizniak-1978: "Z± — отдельного списка неправильных s-аориста нет (гипотеза МГ «у З-1978 нет» — прямое попадание); хвост §144 (2-3 sg med. без s) — единственный смежный слой, покрывающий thāḥ/ta-сторону dā/dhā/sthā"
+          kochergina: "K+ — Занятие XXXVIII, «заметьте» после парадигмы: корни на -ā, дающие P. по I типу, образуют Ā. по IV типу с ā→i: dā → adiṣ-, sthā → asthiṣ- — дословное перекрытие правила урока"
+        notes: "Шестой урок серии с ловушкой написания: «adhi+i» в типографике 1923 читается двояко (составной корень adhi-i- → adhyaiṣṭa), HB-клейма нет — фиксируем формулировку урока как есть; дощечка честности: budh abuddha/abodhi стоит на границе IV и V типов (§902 iṣ-парадигма) — в лемма-слой budh идёт с пометкой"
+      - key: aorist-is-fifth
+        title: "Пятый аорист (iṣ-аорист): те же окончания, что в IV, но с предшествующим i или ī (ī — у корней на ṛ и vṛ по желанию, у grah всегда); 2-3 л. sg P. на īḥ/īt; конечные допускающие vṛddhi гласные → vṛddhi в P., guṇa в Ā.; внутренние и начальные → guṇa в обоих залогах; краткий a корней ar/al, vad, vraj удлиняется в P.; в am, ay, ah, śvas, has и редких — остаётся кратким, в остальных удлиняется факультативно; парадигма lū (alāviṣam/alāvīḥ/alāvīt; Ā. alaviṣi/alaviṣṭhāḥ/alavidhvam [печатная форма — erratum-кандидат: по правилу п. IV.1 dhvam→ḍhvam после i и сёстрам aneḍhvam/akṛḍhvam таблиц IV-типа, а также Уитни §226c/Кочергиной aśayiḍhvam ожидается alaviḍhvam]); употребление — обыкновенно от seṭ-корней (инф. на i), также P. от stu, su, kram, факультативно Ā. от ṛ-корней с кластером; неправильные: śvi aśvayīt; корни на n/ṇ VIII кл. в 2-3 л. sg Ā. отбрасывают носовой (tan ataniṣṭhāḥ/atathāḥ/ataniṣṭa/atata), jan 3 sg Ā. ajaniṣṭa или ajani"
+        buhler_locus: "урок XLVI, п. V.1–4 + таблица lū (mdx 7085–7111)"
+        topic_claims: [HB-378, HB-379, HB-380, HB-381]
+        spots:
+          "zalizniak-1978-sec:145": "равна корню + iṣ"
+          "kochergina-lesson:XXXVIII": "Тип V - аорист на -iṣ"
+          "sangram-article:aorist-types": "avadhīt «убил»"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-378/379/380/381 TRUE/JUSTIFIED: i/ī-распределение с grah-всегда (HB-378) = Уитни §900b; трёхчленная таксономия длины a (обязательная ar/al/vad/vraj · блокированная am/ay/ah/śvas/has · факультативная) (HB-379) — панинийская §§7.2.1-7 доктрина как у Уитни; «обыкновенно» seṭ-корреляция + stu/su/kram (HB-380) — хедж честный; носовой-выпадение VIII кл. (HB-381) — факультативный дублет, Уитни §834a с тем же tan"
+          whitney: "W+ — §§898-904: §898 корни iṣ-аориста (seṭ-склонность, astāvīt/asāvīt/akramīt), §§899-900 vṛddhi/guṇa и длина-a таксономия, §901-902 спряжение (ápāviṣam/ábodhiṣam-парадигмы), §903 корни, §904 неправильные (śvi-смежные aśarāit-ряд); §910 — единственный аорист производных спряжений (стыковка XLVIII дезидератива)"
+          zalizniak-1978: "Z+ — §145: rociṣ-/vadhiṣ-/jīviṣ-; NB grahīṣ- от √grah (§68 примеч.) — тот же grah-всегда-ī слой, что у Бюлера, отмечен прямо; ступень: act. guṇa или vṛddhi, med. всегда guṇa; vṛddhi у открытых и vad/mad/vraj — совпадает с HB-379; witness OCH-86 уже TRUE против Уитни §§898-910 (регистровая строка 4-witness сетки)"
+          kochergina: "K+ — Занятие XXXVIII: V тип, guṇa интерконсонантных i/u/ṛ в обоих залогах (budh abodhiṣ-), vṛddhi гласноисходных (vad avādiṣ-), парадигма budh/śī aśayiṣ- — тот же слой, что таблица lū урока"
+        notes: "Частотная рамка: iṣ-аорист 1077 токенов sangram — второй сигматический; Pāṇini-стыковка: HB-379 note называет §§7.2.1-7 — единственное место серии, где таксономия длины a полная; jan-дублет ajaniṣṭa/ajani — мост к XLVII (ajani — пассивный аорист 3 sg, урок XLVII) и к XLVIII (jan в списке неправильных дезидеративов); śvi aśvayīt — редчайшая форма, в 4-witness сетке без строки (честно); ERRATUM-кандидат: таблица lū печатает alavidhvam при собственных aneḍhvam/akṛḍhvam в таблицах IV-типа того же урока и правиле п. IV.1 — ожидается alaviḍhvam (Уитни §226c, Кочергина aśayiḍhvam) — GTD @DO"
+      - key: aorist-sis-sixth
+        title: "Шестой аорист (siṣ-аорист): исключительно Parasmaipada, от большинства корней на ā, e, ai, o (гласный → ā) и от yam, ram, nam (конечный m → анусвара); парадигмы yā (ayāsiṣam/ayāsīḥ/ayāsīt; ayāsiṣva/ayāsiṣṭam/ayāsiṣṭām/ayāsiṣuḥ) и nam (anaṅsiṣa/anaṅsīḥ/anaṅsīt)"
+        buhler_locus: "урок XLVI, п. VI + таблица yā/nam (mdx 7113–7127)"
+        topic_claims: [HB-382]
+        spots:
+          "zalizniak-1978-sec:146": "Основа аориста 6 (редкий тип)"
+          "kochergina-lesson:XXXVIII": "Тип VI - аорист на -siṣ"
+          "sangram-article:aorist-types": "udagāsīt «воспел»"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-382 TRUE/JUSTIFIED: активо-однозначность и инвентарь (ā/e/ai/o→ā; yam/ram/nam→анусвара) — собственные списки Уитни §911; «большинства» хедж соответствует §912-картине крайней редкости"
+          whitney: "W+ — §§911-915: §911 только act. (в med. у тех же корней s-форма — стыковка темы s-fourth), §912 крайняя редкость (RV только gā/yā, AV hā; поздние — гл-, adhmā-, anaṁsīt…), §913 формы, §914 моды, §915 med-формы лишь в оптативных чтениях"
+          zalizniak-1978: "Z+ — §146: «Основа аориста 6 (редкий тип)» yāsiṣ-/raṁsiṣ-, только act., в med. у тех же корней аорист 4, спряжение как в аористе 5 — полный параллелизм инвентаря урока, включая редкость"
+          kochergina: "K+ — Занятие XXXVIII: VI тип — от немногих корней на -ā, только P., обычно параллельные формы на -s; 2-3 л. sg -īs/-īt; парадигма yā ayāsiṣ- — дословно та же, что таблица урока"
+        notes: "Живое подтверждение редкости: siṣ-тип 41 токен sangram-счёта (14 лексем) против 1508 s- и 1077 iṣ- — самый редкий из сигматических, как и «редкий тип» З-1978; упражнение урока (mdx 7129) даёт живую siṣ/IV-двойку pratyāyā (IV, VI) — редчайший случай, когда фабула сама демонстрирует выбор между типами; исключения-анусвара в nam-ряду (anaṅsīḥ) — тот же n/m→анусвара слой, что Кочергина IV-типа (man→amaṃs)"
+      - key: lesson-roots
+        title: "Лемма-слой: 23 корня урока — парадигмы IV/V/VI типов, неправильные и названные в правилах (vṛ, vad, vraj, yam, ram, tan, jan); adhi+i — составной, вне реестров"
+        buhler_locus: "урок XLVI, таблицы nī/kṛ/dṛś/labh/lū/yā/nam + п. IV.4, V.2-4, VI (mdx 7041–7127); словарного списка у урока нет — корни встроены в парадигмы и хрестоматийный текст (фиксируем честно)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даются формами аориста без морфонологической записи; aniṭ/seṭ-терминология заменена формулой «инфинитив без/посредством i» (ур. XXX)"
+          whitney: "W: сигматические аористы — §§874-920 (глава XI, один блок с классификацией §877); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §§143-146 (сигматический блок: 4-s, 5-iṣ, 6-siṣ) + §147 (7-sa — урок XLVII, рядом) — каркас совпадает, списков неправильных нет"
+          kochergina: "K: Занятие XXXVII (типы I-III) → XXXVIII (сигматические IV-VII, один раздел 1) — два занятия против двух уроков Бюлера, разрез по тому же шву"
+        lemmas:
+          - {root: "nī", gloss: "вести (anaiṣam/aneṣi)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh427)"}
+          - {root: "kṛ", gloss: "делать (akārṣam/akṛṣi)", z1975: "R1/R2 по гомонимам", z1978: "R₁", crosswalk: "yes (wh106) — hom 1 make; hom 2 scatter (wh107), hom 3 commemorate (wh108)"}
+          - {root: "dṛś", gloss: "видеть (adrākṣam — rā-метатеза)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh375)"}
+          - {root: "labh", gloss: "получать (alapsi/alabdhāḥ/alabdha)", z1975: "A1/N1 самоконфликт", z1978: "A₁", crosswalk: "yes (wh673) — 2 строки при одном wh-номере: A1 и N1; 1978 A₁ — 2-й самоконфликт серии (после XLVII)"}
+          - {root: "lū", gloss: "резать (alāviṣam/alaviṣi)", z1975: "U2 (conf high)", z1978: "U₂", crosswalk: "yes (wh694)"}
+          - {root: "yā", gloss: "ехать (ayāsiṣam — siṣ)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh603)"}
+          - {root: "nam", gloss: "преклоняться (anaṅsiṣa — m→анусвара)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh416)"}
+          - {root: "dā", gloss: "давать (adiṣi, adithāḥ, adita)", z1975: "A1/A2 самоконфликт", z1978: "A₂", crosswalk: "yes (wh349) — 4 гомонима (wh349-352), 1975-ряды A1 и A2 при одном номере — 2-й самоконфликт (класс XLVIII dā A1/A2)"}
+          - {root: "dhā", gloss: "класть (adita-ряд)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh393) — hom 2 suck (wh394)"}
+          - {root: "sthā", gloss: "стоять (asthiṣ-)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh874)"}
+          - {root: "gam", gloss: "идти (agaṅsi/agasi — носовой выбрасывается)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh170)"}
+          - {root: "upayam", gloss: "жениться (agasthāḥ)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах (как yam)"}
+          - {root: "pad", gloss: "ступать (apādi)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh443)"}
+          - {root: "budh", gloss: "бодрствовать (abuddha/abodhi — граница IV/V типов)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh497)"}
+          - {root: "śvi", gloss: "гнать (aśvayīt)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
+          - {root: "tan", gloss: "протягивать (ataniṣṭhāḥ/atata)", z1975: "N2", z1978: "N₁", crosswalk: "yes (wh293) — расхождение рядов 1975 N2/1978 N₁ (класс XLIV syand)"}
+          - {root: "jan", gloss: "рождать (ajaniṣṭa/ajani)", z1975: "N1/N2 самоконфликт", z1978: "N₂", crosswalk: "yes (wh249) — 2 строки при одном wh-номере (N1, N2); 1978 N₂ — повтор самоконфликта XLVII"}
+          - {root: "vṛ", gloss: "выбирать (avarīṣṭa — ī по желанию)", z1975: "R1/U1/U2 самоконфликт", z1978: "R₁", crosswalk: "yes (wh740) — hom 1: 3 ряда 1975 (R1, U1, U2) при одном wh-номере; hom 2 choose (wh741) — максимум самоконфликтов серии"}
+          - {root: "vad", gloss: "говорить (avādīṣ- — удлинение a)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh704)"}
+          - {root: "vraj", gloss: "двигаться (avrājīt)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh757)"}
+          - {root: "ram", gloss: "покоиться (araṃs-)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh629)"}
+          - {root: "yam", gloss: "задерживать (ayaṃs-)", z1975: "?", z1978: "?", crosswalk: "NO — нет в реестрах"}
+          - {root: "adhi+i", gloss: "желать (adhyaiṣṭa/adhyagīṣṭa) — составной корень", z1975: "?", z1978: "?", crosswalk: "NO — составной, вне реестров (честно)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 19/23 строк таблицы; нет строк — upayam, śvi, yam, adhi+i (составной) — фиксируем честно; самоконфликты 1975-реестра в crosswalk: dā (A1/A2), labh (A1/N1), jan (N1/N2), vṛ hom1 (R1/U1/U2 — 3 ряда, максимум серии) — 4 случая; расхождение рядов 1975≠1978: tan N2/N₁ — 1 случай; три из четырёх самоконфликтов (dā, labh, jan) уже фиксировались уроками XLVII/XLVIII — серия густеет на тех же корнях, что аористные парадигмы; TALMUD CROSS-CHECK: сигматические типы вне аористного корпуса по morphoclass-тегированию (derivation-gap — witness past-tenses), частотная рамка — sangram-article:aorist-types (s 1508 / iṣ 1077 / siṣ 41)"
   XLVII:
     title: "Сигматический аорист VII (sa) и пассивный аорист (VIII): седьмой — основа корень+sa [ṣa], P. и Ā., спряжение как impf. I класса, корни на ś/ṣ/h с i/u/ṛ (diś adikṣam…adikṣan / adikṣe…adikṣanta; конечные по XLIV, 2б; sa-отбрасывание guh/dih/duh/lih в 2–3 sg, 1 du., 2 pl. Ā.); пассивный — лица кроме 3 sg тожественны Ā. аористов IV/V/VII, X-класс/каузативы/seṭ-корни → iṣ-аорист с aya-опцией; 3 sg на -i (частейшая форма) — шесть классов изменения корня (y-вставка после ā: adāyi; vṛddhi конечных: anāyi/aśrāvi/akāri; guṇa начальных/внутренних: alehi/adohi/adarśi; удлинение предпоследнего a с am-исключением (adami) и re-рядом kam/gam/nam/yam/ram/vam/ācam (agāmi); aya-отбрасывание X/каузативов: acori/abhedi; неправильные jan ajani, labh alābhi/alambhi (после приставок только alambhi), han aghāni); ciṇvad-расширение — корни на гласные + grah/dṛś/han образуют остальные формы от 3 sg-основы окончаниями V-вида Ā (dā adiṣi/adāyiṣi; kṛ akṛṣi/akāriṣi; dṛś adṛkṣi/adarśiṣi; grah agrahīṣi/agrāhiṣi; han ahasi/aghāniṣi); пассивные перфект/будущее/conditionalis/precativus — Ā-окончаниями + особые основы от 3 sg аориста (kṛ kartā/kāritā, kariṣye/kāriṣyate, akariṣyata/akāriṣyata, kṛṣīṣṭa/kāriṣīṣṭa)"
     mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7131–7199 (заголовок «# УРОК XLVII» — без точки на конце, единственный кривой делимитер зоны XLVI–XLVIII после жирного урока V; дальше урок XLVIII — обычный заголовок, mdx 7201). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «шакал и коза в колодце» (mdx 7199) с живыми пассивными аористами (avāci — vac, acinti — cint, anu-ṣṭhā; будущее пассивное uddhariṣyāmi — uddhar; кондитив avatar), фиксируем честно; corpus_layer — 0 строк (честно)"
