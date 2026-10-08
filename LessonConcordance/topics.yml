@@ -3397,3 +3397,133 @@ lessons:
           - {root: "aś", gloss: "достигать/пользоваться (ānaśe)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — глосса реестра attain (wh20), гом-вилка помечена"}
           - {root: "vṛ", gloss: "избирать (vavṛ, aniṭ-октет)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — hom 2 choose (wh741)"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 45/53 строк урока; нет строк — gai, uh, lu, kṝ, hve, pyai, jāgṛ, daridrā (фиксируем честно); ловушки написания серии: tṝ→tṛ, grah→grabh, und→ud, vṛ 'избирать'→hom 2; расхождения рядов 1975≠1978: sev I₁/A₂, kram M₁/M₂, khan N₁/N₂, jan N₁/N₂ — 4 случая на одном уроке (максимум серии); вне таблицы (списки урока, реестровый статус см. темы): aniṭ-октет без i — stu/dru/śru/sru/sṛ (тема 3, vṛ/bhṛ/kṛ в таблице), tha-исключения svṛ/saṅskṛ, footnote-список 13 i-опускательных (vraśc, mṛj, kḷp, gup, gāh, guh, tṛp, druh, naś, muh, snih), списки 11а/б (tṛ в таблице; bhram/phal/bhal; granth/tras/bhras/bhrāj/rāj), va-семёрка (vah в таблице; vac/vad/vap/vaś/vas), tud/bhid/krī/smṛ — регулярные параллели редукции; corpus_layer.tsv — 3 строки урока (vac/uvāca, bhū/babhūva, gam/jagāma — «перфект как норма повествования», топ-100 ранги 13–25): лакуна после XXXVIII кончается на XLIII"
+  XLIV:
+    title: "Будущие времена и прекатив: описательное будущее (имя деятеля на tṛ + спрягаемый as; перед tā те же изменения корня, что перед tum инфинитива); простое будущее (sya/ṣya прямо или через i/ī; guṇa подъёмных; конечные согласные как в II/III/VII перед s-; соединительный гласный как в инфинитиве; ayiṣya X-класса); причастия простого будущего (как I/IV/VI/X) и conditionalis (имперфект от простого будущего); прекатив (yās/sī, спряжение как pot. II/III/V/VII-IX; e-ряд dā/dhā/mā/sthā/pā/hā/gai…; aniṭ-изменения конечных; dhvam→ḍhvam)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6733–6905 (заголовок «# УРОК XLIV.»; дальше урок XLV — обычный заголовок, mdx 6907). Русско-санскритское упражнение ЕСТЬ — вопреки косому правилу «43–47 без упражнений»: текст о калиюге (mdx 6905) с живым санскритским стержнем в Кнауэре Nr.13 (см. reuse_clusters — для матчера невидимо: упражнение Бюлера по-русски); corpus_layer возвращает 2 строки топ-100 (yā, dṛś) — обе простое будущее"
+    claims: [HB-58, HB-352, HB-353, HB-354, HB-355, HB-356, HB-357, HB-358, HB-359, HB-360, HB-361, HB-362]
+    reuse_clusters:
+      - "Кураторская находка (вне матчера): русско-санскритское упражнение урока (калиюга, mdx 6905) имеет живой санскритский стержень в Кнауэре Nr.13 (§§ 152–154): «yadi devo varṣiṣyati vayaṁ bahir na gamiṣyāmaḥ», «kaliyuge balaṁ prāpte pralaye ca samupasthite dharmo vinaçiṣyati», «bahavo brāhmaṇā vedam utsrakṣyanti… ācariṣyanti», «apaṇyāni vikreṣyanti», «abhakṣyaṁ bhakṣayiṣyanty apeyaṁ pāsyanti» — ядро упражнения (брахманы/веды/запретные товары/недозволенная еда) совпадает дословно; обрамление разное (у Бюлера дальше шудры, Явана-Щака, осада городов — в Nr.13 нет). Матчер молчит: пары «русский текст ↔ санскритский текст» вне дифф-матчера matches.json — преподнесение упражнения Бюлера по-русски прячет пересечение (для серии: русско-санскритские упражнения могут иметь кнауэровских двойников, которых сверка не видит)"
+      - "В самом Nr.13 — весь формальный инвентарь урока одним текстом: varṣiṣyati/gamiṣyāmaḥ/vinaçiṣyati/utsrakṣyanti/ācariṣyanti/vikreṣyanti/bhakṣayiṣyanty/pāsyanti (простое будущее), dātā/yātā (описательное будущее — именной predicative!), abhaviṣyat ×2 (conditionalis) — живая триада будущих времён в одной фразе"
+      - "matches.json: 0 совпадений на урок XLIV (честно) — разрежение после плотных XLII–XLIII объяснимо: упражнение русскоязычное"
+    corpus_layer:
+      - "yā — yāsyāmi (топ-100, DCS 5 103, ранг 81; Rām 16,30.2 «я уйду в лес…») — простое будущее, HB-58-смежно"
+      - "dṛś — drakṣyāmi (топ-100, DCS 14 755, ранг 27; Rām Su 12,41) — простое будущее, HB-58-смежно"
+    topics:
+      - key: future-periphrastic-tar-as
+        title: "Описательное будущее: от всех корней; Им. п. sing./du./pl. nominis actoris на tṛ + спрягаемые формы настоящего as (1–2 л. всех чисел, 3 л. — форма опускается); перед tā те же изменения корня, что перед tum инфинитива (ур. XXX): gai gātā, ji jetā, nī netā, stu stotā, bhū bhavitā, kṛ kartā, tṝ taritā, kath kathayitā; парадигма kṛ: kartāsmi/kartāsvaḥ/kartāsmaḥ (Par.), kartāhe/kartāsvahe/kartāsmahe (Ātm.)"
+        buhler_locus: "урок XLIV, п. I.1–2 + парадигма kṛ (mdx 6735–6755)"
+        topic_claims: [HB-58, HB-352]
+        spots:
+          "zalizniak-1978-sec:159": "с внешней стороны равно сочетанию N.sg имени деятеля на -tar-"
+          "kochergina-lesson:XIX": "в залоге Ātmanepada as употребляется только в описательном будущем времени и не имеет формы 3-го лица"
+          "knauer-fraza:Nr.13": "yo bhikṣāṁ dātā sa svargaṁ yātā"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-58/352 TRUE/JUSTIFIED: формула «tṛ + as, 3 л. опускается» точна (HB-58 note: order-flag — Бюлер даёт описательное первым, простое вторым); «те же изменения, как перед tum» — корректная отсылка к ур. XXX вместо пересказа (tṝ taritā — двойник taritum), tarīṣyati-вариант — вынесен в список простого будущего"
+          whitney: "W+ — §§942-949: перифрастическое будущее (pṛṣ-iṣ); §§942-943 iṣ-основа (kariṣyāmi) vs имя деятеля; §§944-945 обязательные/факультативные списки корней; §942 «3rd sg omits auxiliary» — дословно та же доктрина"
+          zalizniak-1978: "Z+ — §159 «Будущее II (или описательное)»: N.sg имени деятеля на -tar- + √as в 1–2 лицах, в 3-м — просто имя деятеля; + «допускает прямое дополнение в винительном падеже» — синтаксическая деталь, которой у Бюлера нет (обратное направление свидетельства)"
+          kochergina: "K+ — Занятие XIX: имя деятеля -tar (склонение) + спряжение в описательном будущем + примечание «as в Ā. только в описательном будущем, формы 3-го лица не имеет» — структурное совпадение с Бюлером; живой образец dātar/dātā"
+        notes: "Кнауэр Nr.13: «yo bhikṣāṁ dātā sa svargaṁ yātā» — dātā и yātā как сказуемые в N.sg — описательное будущее в живом эпическом тексте (редкая учебная находка серии); Z-1978 §175 п.1 (имя деятеля) — соседний локус Очерка, в TSV не разводим (одна строка §159 несёт оба слоя)"
+      - key: future-simple-sya
+        title: "Простое будущее: суфф. sya [ṣya] к корню прямо или через i/ī, окончания ind. praes.; подъёмные гласные → guṇa; конечные дифтонги e/ai/o → ā; конечные согласные как в классах II/III/VII перед s-окончаниями: c/j/ś/ṣ/kṣ/h → k (после k sya → ṣya), d/dh → t, bh → p, m/n → anusvāra, s → t; соединительный гласный большей частью как в инфинитиве (ур. XXX): корни на ṛ — всегда i, gam/han — i в Par., vṛt/vṛdh/syand в Par. без i; X класс и каузативы — ayiṣya"
+        buhler_locus: "урок XLIV, п. II.1–2а–в + список 25 примеров (mdx 6757–6823)"
+        topic_claims: [HB-353, HB-354, HB-355]
+        spots:
+          "zalizniak-1978-sec:157": "Основа простого будущего времени равна корню в ступени guṇa + sya"
+          "kochergina-lesson:XVIII": "образуется от всех глаголов по единому правилу - прибавлением к корню ударяемого суффикса -syá"
+          "knauer-fraza:Nr.13": "yadi devo varṣiṣyati vayaṁ bahir na gamiṣyāmaḥ"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-353/354/355 все TRUE/JUSTIFIED: согласный блок — регулярные ruki/ассимиляция (проверено в note HB-353); «большей частью» корректно кодирует направление seṭ/aniṭ-корреляции (HB-354) — закрытые исключения ṛ-корни/gam/han vs vṛt/vṛdh/syand названы в том же пункте; ayiṣya — контраст с пассивным аористом (HB-355 note)"
+          whitney: "W+ — §§931-940: простое будущее (syati-класс); §934 i/ī-вставка (seṭ-корреляция); §935 ṛ-корни; §936-938 конечные согласные; §939-940 ayiṣya и гуṇа — слой закрыт; список примеров урока (dāsyati…grahīṣyati) — зеркальные пары §§934-936"
+          zalizniak-1978: "Z+ — §157: guṇa + sya (seṭ → iṣya), примеры chetsya/dhokṣya/drakṣya (aniṭ), āpsya (неполноизм.), bhaviṣya/grahīṣya (seṭ), vatsya/vasiṣya (смешанный тип √vas), jīviṣya, sthāpayiṣya (каузатив) — ayiṣya-слой закрыт; исключения соединительного гласного у З-1978 в §157 не пересчитаны поимённо (gam/han/vṛt вне списка §157 — честный gap исключений при полном ядре)"
+          kochergina: "K+ — Занятие XVIII: «от всех глаголов по единому правилу… суффикса -syá» + варианты -ṣya/-iṣya[^29]; распределение по типам гласных (ā → -sya, прочие → -ṣya, дифтонги/-ar → -iṣya); guṇa i/ī/u/ū → e/o; парадигма dāsyá- с окончаниями настоящего — единственная из четырёх свидетелей с ударениями (syá)"
+        notes: "HB-58 note (order-flag): Бюлер — описательное будущее первым, простое вторым (Уитни и Очерк — наоборот: простое §§931-940, перифрастическое §§942-949; Очерк §157 перед §159); Кнауэр Nr.13: varṣiṣyati/gamiṣyāmaḥ — kṣ/sandhi-сложные формы живого текста; список 25 примеров урока — самый длинный формальный список серии (tṝ tariṣyati/tarīṣyati двойник, labh lapsyate Ā., gam saṅgaṅsyate «неправильно» — как в прекативе V.3); сноски-отсылки: * ур. XXX, ** ур. XL, 13 — внутренняя сеть курса работает"
+      - key: future-participle-conditional
+        title: "Причастия простого будущего — подобно причастиям настоящего I/IV/VI/X (тематические): dā P. dāsyat (ур. XXIII, 3а, в), Ā. dāsyamāna; kṛ P. kariṣyat, Ā. kariṣyamāna. Conditionalis: имперфект, образованный от простого будущего, употребляется в условных предложениях — dā P. adāsyām/adāsyaḥ/adāsyat, Ā. adāsye/adāsyathāḥ/adāsyata"
+        buhler_locus: "урок XLIV, п. III–IV (mdx 6839–6843)"
+        topic_claims: [HB-356, HB-357]
+        spots:
+          "zalizniak-1978-sec:158": "по внешнему строению представляет собой имперфект от основы будущего времени"
+          "kochergina-lesson:XIX": "Оно обозначает нереальное действие"
+          "knauer-fraza:Nr.13": "suvṛṣṭiç ced abhaviṣyat tadā subhikṣam abhaviṣyat"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-356/357 оба TRUE: тематическая аналогия причастия (sya-основа структурно = презентным классам); conditionalis — и образование, и синтаксическое ограничение; HB-357 note: упражнение урока само употребляет conditional в contrary-to-fact раме"
+          whitney: "W+ — §939: причастие будущего (dāsyant-); §941: conditionalis «is used only in conditional sentences» — и аугмент, и ударение (adāsyám) проговорены; формулы урока зеркальны"
+          zalizniak-1978: "Z± — §158: «имперфект от основы будущего времени» (akariṣyam) — ядро совпадает; причастие будущего времени отдельного § не имеет (тематические причастия — §161, sya-причастие в поурочной трассе не выделено — honest gap половины темы); §109-смежно: «в условных предложениях оптатив равносилен кондиционалису» — функциональная рамка"
+          kochergina: "K± — Занятие XIX п.3: conditionalis есть — «нереальное действие… в обеих частях условного предложения», аугмент a- с ударением (пример от kar) — слой закрыт, даже шире Бюлера (обе части); причастия простого будущего в Занятии XIX не проговорены — honest gap причастной половины"
+        notes: "конвергенция формулировки «в обеих частях» — Кочергина Занятие XIX и Очерк §109 дословно совпадают, у Бюлера и Уитни только протасис; Кнауэр Nr.13: «suvṛṣṭiç ced abhaviṣyat tadā subhikṣam abhaviṣyat» — conditionalis в обеих частях (протасис + аподосис) — живая иллюстрация конауэровской же фразы; HB-58 note: порядок подачи будущих времён (Бюлер: описательное → простое) — условная ось 4 свидетелей"
+      - key: benedictive-precative
+        title: "Прекатив (benedictivus/precativus): P. суфф. yās, Ā. — sī [ṣī], спряжение как pot. классов II/III/V/VII-IX; P. изменения как перед ya пассива (ур. X), но гласные dā/dhā/mā/sthā/pā/hā/dhe/gai/so/do всегда → e (deyāt; ji jīyat, śru śrūyāt, kṛ kriyāt, smṛ smaryāt, tṝ tīryāt, pṝ pūryāt, hve huyāt, śās śiṣyāt, vah uhyāt, vas uṣyāt); i → īyāt, но с приставками iyāt (udiyāt); Ā. соединительный гласный как в инфинитиве (ṛ-корни и vṛ — факультативно; ī только у grah); без соединительного: конечные i/ī/u → guṇa, ṝ → īr/ūr (после губных), дифтонги → ā, согласные как в простом будущем; X класс/каузативы — ayiṣī; парадигма dā: deyāsam/deyāḥ/deyāt (Par.), dāsīya/dāsīṣṭhāḥ/dāsīṣṭa (Ātm.); сноска: dhvam → ḍhvam при тех же условиях, что dhve → ḍhve (XLIII, 4г)"
+        buhler_locus: "урок XLIV, п. V.1–3 + парадигма dā + сноска ḍhvam (mdx 6845–6903)"
+        topic_claims: [HB-358, HB-359, HB-360, HB-361, HB-362]
+        spots:
+          "zalizniak-1978-sec:149": "основа прекатива равна корню в слабой ступени + yās"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B+ — HB-358..362 все TRUE/JUSTIFIED: e-ряд «всегда» — универсальность подтверждена (HB-359 note: никаких *dāyāt не предписано и не аттестовано); «большей частью» Ā.-корреляция с инфинитивом — корректное направление (HB-360); «ī только у grah» — скоуп-точно (HB-361: в iṣ-аористе Бюлер сам расширяет на ṛ-корни и vṛ — образование-специфично); aniṭ-изменения — общий фонологический блок (HB-362: OCH-14)"
+          whitney: "W+ — §§921-926: прекатив; §930: e-ряд (deyāt/dheyāt…) — дословно тот же закрытый список; §§925-926: Ā. на sī/iṣī, ī-grah-единственность; §927-929: aniṭ-блок i/ī/u→guṇa, ṝ→īr/ūr, дифтонги→ā; §226c-смежно dhvam→ḍhvam — сноска урока ведёт точно"
+          zalizniak-1978: "Z± — §149: «прекатив (иногда называемый также оптативом аориста)» — якорь аористный, не потентный: act. = слабая ступень + yās (bhūyās-, çrūyās-, kriyās-, ucyās-, gamyās-, āpyās-; полноизм. на ā → -eyās-: stheyās-), аугмент отсутствует; med. «в послеведийский период почти не встречается» + bhaviṣī-парадигма с -dhvam/-ḍhvam; честное расхождение рамки: Бюлер = «как pot. II/III/V/VII-IX», З-1978 = полусамостоятельное аористное образование; e-ряд dā→de у З-1978 вне §149 (через полноизм. на ā → -eyās- частично закрыт)"
+          kochergina: "K — прекатив в поурочной трассе не преподаваем (единственное упоминание — ведийский прекатив при аористе, Занятие XXXVIII-зона, mdx 10366: «с основой аориста связано образование безаугментных форм инъюнктивa и прекатива») — честный gap всей темы; учебный слой (парадигма deyāt/dāsīṣṭa) у Кочергиной отсутствует"
+        notes: "сноска ḍhvam — прямая скрепа с уроком XLIII (dhve→ḍhve) — вторая межурочная отсылка серии внутри одного урока (первая: II.2в ↔ ур. XXX); so/do/dhe — печатные варианты урока (e-ряд), как самостоятельные корни в реестрах не опознаются — фиксируем честно (прецедент ukh→uh, XLIII); Кнауэр Nr.13 прекативов не несёт (живого примера темы в серии нет — честно); Кочергина-конвергенция «обеих частях условного предложения» — см. тему 3"
+      - key: lesson-roots
+        title: "Лемма-слой: 46 корней урока — все несущие правила/списки/парадигмы (описательное будущее, простое будущее: guṇa/согласный блок/соединительный гласный/ayiṣya, причастия, conditionalis, прекатив: e-ряд, aniṭ-блок, ī-grah)"
+        buhler_locus: "урок XLIV, п. I–V (корни в правилах, списках примеров и парадигмах, mdx 6735–6903); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B: корни даются формами (gātā, dāsyati, deyāt) без морфонологической записи и без словарного списка; классы не указаны (школьная линия); so/do/dhe — печатные варианты без опознания корней"
+          whitney: "W: ряды и iṭ-статус — в root-аппарате (dā §§930/942-949, dhā §930, tṝ §§954/319, kṛ §§934-936/939, bhū §934, gam §935, grah §926, syand/vṛt §935, vas §934, yaj §925, śās §930, i §929 i-класс); ссылок на §§ в уроке нет"
+          zalizniak-1978: "Z: §157 (простое будущее: примеры-ряды), §159 (описательное), §158 (conditionalis), §149 (прекатив act./med.); исключения соединительного гласного (gam/han/vṛt/vṛdh/syand) поимённо не пересчитаны; gai/stu/sṛj/hve/i/glai вне реестра Очерка"
+          kochergina: "K: Занятие XVIII (единое правило -syá, варианты по типам гласных), XIX (имя деятеля, описательное будущее, conditionalis); прекатива в трассе нет"
+        lemmas:
+          - {root: "kṛ", gloss: "делать (kartā/kartāsmi, kariṣyati, kriyāt)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh106) — hom 1 make"}
+          - {root: "dā", gloss: "давать (dāsyāmi, deyāt/dāsīṣṭa, dātā)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh349) — hom 1 give"}
+          - {root: "gai", gloss: "петь (gātā, gāsyati)", z1975: "?", z1978: "?", crosswalk: "NO — корня нет в реестрах (jagau-ряд не установлен; XLIII то же)"}
+          - {root: "ji", gloss: "побеждать (jetā, jeṣyati, jīyat)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh258)"}
+          - {root: "nī", gloss: "вести (netā, neṣyati)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh427)"}
+          - {root: "stu", gloss: "хвалить (stotā)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет"}
+          - {root: "bhū", gloss: "быть (bhavitā, bhaviṣyati, bhaviṣīṣṭa)", z1975: "U2 (conf high)", z1978: "U₂", crosswalk: "yes (wh528)"}
+          - {root: "tṝ", gloss: "пересекать (taritā, tariṣyati/tarīṣyati, tīryāt)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — под написанием tṛ, hom 1 pass (wh319) — ловушка написания серии"}
+          - {root: "kath", gloss: "рассказывать (kathayitā)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh81) — 1978 defective"}
+          - {root: "śī", gloss: "лежать (śayiṣyati)", z1975: "I2 (conf high)", z1978: "I₂", crosswalk: "yes (wh789) — hom 2 lie"}
+          - {root: "śru", gloss: "слышать (śroṣyati, śrūyāt)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh815)"}
+          - {root: "śak", gloss: "мочь (śakṣyati)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh767) — 1978 defective"}
+          - {root: "muc", gloss: "освобождать (mokṣyati)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh564)"}
+          - {root: "bhuj", gloss: "пользоваться (bhokṣyati)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh525) — hom 2 enjoy"}
+          - {root: "sṛj", gloss: "выпускать (srakṣyati)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет (sarj w833 «creak» — другой корень, не засчитываем)"}
+          - {root: "dṛś", gloss: "видеть (drakṣyati; corpus_layer)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh375)"}
+          - {root: "dviṣ", gloss: "ненавидеть (dvekṣyati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh388)"}
+          - {root: "lih", gloss: "лизать (lekṣyati, likṣīṣṭa)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh684)"}
+          - {root: "duh", gloss: "доить (dhokṣyati)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh369)"}
+          - {root: "bhid", gloss: "раскалывать (bhetsyati)", z1975: "I1 (conf high)", z1978: "I₁", crosswalk: "yes (wh521)"}
+          - {root: "rudh", gloss: "препятствовать (rotsyati)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh659) — hom 2 obstruct; 1978 defective"}
+          - {root: "labh", gloss: "получать (lapsyate)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh673) — 1978 defective"}
+          - {root: "gam", gloss: "идти (gamiṣyati, saṅgaṅsyate)", z1975: "M1 (conf medium)", z1978: "M₁", crosswalk: "yes (wh170)"}
+          - {root: "man", gloss: "думать (maṅsyate)", z1975: "N1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh546)"}
+          - {root: "vas", gloss: "обитать/одеваться (vatsyati, uṣyāt)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh715)"}
+          - {root: "cur", gloss: "красть (corayiṣyati, corayiṣīṣṭa)", z1975: "U1 (conf high)", z1978: "U₁", crosswalk: "yes (wh232)"}
+          - {root: "mṛ", gloss: "умирать (mārayati/mārayiṣyati — каузатив)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh571) — hom 1 die"}
+          - {root: "grah", gloss: "хватать (grahīṣyati, grahīṣīṣṭa; ī в прекативе Ā.)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes — под написанием grabh (wh196) — ловушка написания серии"}
+          - {root: "smṛ", gloss: "помнить (smaryāt)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh894)"}
+          - {root: "stṛ", gloss: "стелить (stīrṣīṣṭa/stariṣīṣṭa)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh870)"}
+          - {root: "pṝ", gloss: "наполнять (pūryāt, pūrṣīṣṭa/pūriṣīṣṭa)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — под написанием pṛ, hom 1 fill (wh469) — ловушка написания серии"}
+          - {root: "yaj", gloss: "жертвовать (yakṣīṣṭa)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh597)"}
+          - {root: "vṛdh", gloss: "расти (vardhiṣīṣṭa)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh745) — 1978 defective"}
+          - {root: "glai", gloss: "утомляться (glāsīṣṭa)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes — под написанием glā (wh200) — ловушка написания серии"}
+          - {root: "dhā", gloss: "ставить (dhe — e-ряд)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh393) — hom 1 put"}
+          - {root: "mā", gloss: "мерить (meyāt — e-ряд)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh548) — hom 1 measure"}
+          - {root: "sthā", gloss: "стоять (stheyās- в Очерке; e-ряд урока)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh874)"}
+          - {root: "pā", gloss: "пить (peyāt — e-ряд)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh448) — hom 1 drink"}
+          - {root: "hā", gloss: "покидать (heyāt — e-ряд)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh911) — hom 1 leave"}
+          - {root: "hve", gloss: "звать (huyāt)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет (hvay тоже нет; XLIII то же)"}
+          - {root: "śās", gloss: "предписывать (śiṣyāt)", z1975: "A2 (conf medium)", z1978: "A₂", crosswalk: "yes (wh780)"}
+          - {root: "vah", gloss: "нести (uhyāt)", z1975: "A1 (conf medium)", z1978: "A₁", crosswalk: "yes (wh718) — 1978 defective"}
+          - {root: "i", gloss: "идти (īyāt, udiyāt)", z1975: "?", z1978: "?", crosswalk: "NO — в реестре нет"}
+          - {root: "syand", gloss: "течь (в Par. без соединительного — II.2в)", z1975: "A1 (conf medium)", z1978: "N₁", crosswalk: "yes (wh895) — расхождение рядов 1975 A₁/1978 N₁"}
+          - {root: "vṛt", gloss: "обращаться (в Par. без соединительного — II.2в)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes (wh744)"}
+          - {root: "vṛ", gloss: "избирать (м.б. i в прекативе Ā. — V.3а)", z1975: "R1 (conf high)", z1978: "R₁", crosswalk: "yes — hom 2 choose (wh741)"}
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 41/46 строк урока; нет строк — gai, stu, sṛj, hve, i (фиксируем честно); so/do/dhe — печатные варианты (dhe = dhā w393, в таблице; so/do как корни не опознаны); ловушки написания серии: tṝ→tṛ, grah→grabh, pṝ→pṛ, glai→glā — 4 случая (рекорд после XLIII ×3); расхождение рядов 1975≠1978: syand A₁/N₁ — 1 случай (5-й в серии: sev/kram/khan/jan XLIII, bandh XXXVII); hom-развилки: śī lie(h2)/fall(h1), bhuj enjoy(h2), rudh obstruct(h2), vas обитать — по глоссам урока; вне таблицы (перечислены в правилах без форм): aniṭ-блок конечных (общее правило, не корневой список), e-ряд полностью в таблице; corpus_layer.tsv — 2 строки урока (yā/yāsyāmi, dṛś/drakṣyāmi — оба простое будущее, топ-100 ранги 27/81): продолжение лакуны, начавшейся после XXXVIII, с коротким всплеском XLIII"
