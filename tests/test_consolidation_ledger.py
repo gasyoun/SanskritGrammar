@@ -19,6 +19,8 @@ duplicate a baseline ID, and must NEVER clobber a human verdict field
 """
 import json
 
+import pytest
+
 import article_validate as av
 import consolidation_ledger_refresh as clr
 
@@ -87,3 +89,57 @@ def test_article_validate_agrees_ledger_is_the_same_one_it_loads():
     # Both scripts must point at the same physical file — a path drift between
     # them would silently split the freeze gate from the ledger it enforces.
     assert av.FREEZE_LEDGER_PATH == clr.LEDGER_PATH
+
+
+# ---------------------------------------------------------------------------
+# H6163 (bughunt F3, 05-10-2026): compute_validator_evidence fail-open contract
+# narrowed to the EXPECTED OPERATIONAL classes. A programming error inside the
+# validator must surface, not masquerade as "unknown" telemetry forever.
+# ---------------------------------------------------------------------------
+
+
+def _prime_manifest(tmp_path, monkeypatch, content='{"article": {"id": "art:x"}}'):
+    p = tmp_path / "x.json"
+    p.write_text(content, encoding="utf-8")
+    monkeypatch.setattr(clr, "manifest_path", lambda slug: p)
+    return p
+
+
+@pytest.mark.parametrize("exc", [OSError, AttributeError])
+def test_validator_evidence_operational_classes_fail_open(tmp_path, monkeypatch, exc):
+    def boom(manifest, serialized):
+        raise exc(f"expected operational failure: {exc.__name__}")
+
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", boom)
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": "unknown", "checked_at": "2026-10-09"}
+
+
+def test_validator_evidence_corrupt_json_fail_open(tmp_path, monkeypatch):
+    # The real-world JSONDecodeError route: garbage on disk (not a stubbed raise).
+    _prime_manifest(tmp_path, monkeypatch, content="not json at all")
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": "unknown", "checked_at": "2026-10-09"}
+
+
+@pytest.mark.parametrize("exc", [TypeError, NameError, KeyError])
+def test_validator_evidence_programming_errors_surface(tmp_path, monkeypatch, exc):
+    def boom(manifest, serialized):
+        raise exc(f"programming error must surface: {exc.__name__}")
+
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", boom)
+    with pytest.raises(exc):
+        clr.compute_validator_evidence("x", "2026-10-09")
+
+
+@pytest.mark.parametrize(
+    ("errors", "expected"),
+    [([], "pass"), (["schema: <root>: boom"], "fail")],
+)
+def test_validator_evidence_pass_fail_contract_preserved(tmp_path, monkeypatch, errors, expected):
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", lambda manifest, serialized: (errors, []))
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": expected, "checked_at": "2026-10-09"}

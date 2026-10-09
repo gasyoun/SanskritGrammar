@@ -324,7 +324,13 @@ def compute_validator_evidence(slug: str, today: str) -> dict:
         serialized = p.read_text(encoding="utf-8")
         manifest = json.loads(serialized)
         errors, _warnings = article_validate.validate(manifest, serialized)
-    except Exception:
+    except (json.JSONDecodeError, OSError, AttributeError):
+        # Deliberate fail-open contract, narrowed H6163 (bughunt F3, 05-10-2026):
+        # only the EXPECTED OPERATIONAL failure classes — unreadable/corrupt
+        # manifest text, missing/malformed file resource, schema-shape surprise —
+        # downgrade to "unknown" telemetry. Programming errors (TypeError,
+        # NameError, KeyError, …) now propagate so a genuinely broken validator
+        # surfaces instead of masking as unknown telemetry indefinitely.
         return {"article_validate": "unknown", "checked_at": today}
     return {"article_validate": "pass" if not errors else "fail", "checked_at": today}
 
