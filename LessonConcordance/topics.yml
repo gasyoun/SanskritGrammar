@@ -2159,6 +2159,92 @@ lessons:
           - {root: rāj, gloss: "сиять, властвовать (rāj I. Ā.)", z1975: "A₁ (conf medium; z-ряд N1) — но только омоним 2 «красить», wno 617", z1978: "A₁", crosswalk: "partial — «сиять/властвовать» в реестре нет; ловушка гомонимов: raj-2 color — не подставлять к урочному «shine, rule»"}
           - {root: sar, gloss: "течь, нестись (apa-sar — уходить)", z1975: "?", z1978: "?", crosswalk: "NO — строки нет; tsar (wno 334) и sarj (wno 833) — другие корни, не подставлять"}
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 1/3 глаголов урока — rāj-«сиять» представлен лишь омонимом «красить», sar отсутствует (повтор пробоины серии: sṛj у III, upayam/śvi/yam у XLVI — реестр режет низкочастотные корни); контрасты: урок I — 10/13, XIX — 10/10, XXII — 1/1, XXIX — 12/12, XLVI — 19/23"
+  XXIV:
+    title: "Имена на mat/yat/vat (ср. р. как at, n в N.V.Acc.du. никогда; сильн. mān/yān/vān, V.sg. man/yan/van, фем. matī/yatī/vatī) и на an/man/van (ātman/rājan/nāman/brahman: N.sg. ātmā/nāma, слабые rājñā/ātmanā); bhavat «господин» → bhavān; внешние сандхи k/ṭ/p → g/ḍ/b (назализация) и h → gh/ḍh/dh/bh"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3114–3274 (заголовок «# УРОК XXIV»)"
+    claims: [HB-176, HB-177, HB-178, HB-179, HB-180, HB-181, HB-182]
+    reuse_clusters:
+      - "2 точных совпадения упражнений с Knauer (scripts/data/matches.json, оба exact 1.0): buhler-1923.XXIV.523 ↔ knauer-1908.7.143 (यावन्ति हतस्य पशोश्चर्मणि लोमानि… — yāvant + пять слов словаря урока: carman, loman, varṣa, hantar, naraka), XXIV.533 ↔ knauer-1908.6.125 (ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते — brahman m. с N.sg. brahmā) — Nr.6/Nr.7 Кнауэра снова упражнения-двойники"
+    corpus_layer: []     # corpus_layer.tsv: урок XXIV строк не имеет (регистр начинается с XVIII)
+    topics:
+      - key: mant-vat-yat-stems
+        title: "Имена на mat/yat/vat: ср. р. склоняется как at, но n в N.V.Acc.du. НИКОГДА (śrīmatī, не *śrīmantī); м. р. две формы — сильн. mān/yān/vān, V.sg. man/yan/van; mat/vat — притяжательные прилагательные, yat — квантитативные (kiyant/tāvant/yāvant); феминитив matī/yatī/vatī"
+        buhler_locus: "урок XXIV, §1–2 + таблица śrīmat (mdx 3116–3133): «в N. V. Асc. du. никогда не вставляется n», «В N.sg. он оканчивается на mān, yān и vān, в V.sg. на man, yan, van»; §2 «им. на mat и vat — прил. притяжательные… Жен. р. они образуют на matī, yatī и vatī»"
+        topic_claims: [HB-176, HB-177]
+        spots:
+          "zalizniak-1978-sec:91": "в N.V.A.du n keçavatī"
+          "kochergina-lesson:XXIX": "имеют сильную основу на -ant и слабую основу"
+          "knauer-fraza:Nr.7": "bhṛtyā balavantaṁ rājānam āyuṣmann"
+        exceptions:
+          verdict: "CONFIRMED-WITH-WITNESS-DRIFT (kochergina: du.n. с n)"
+          buhler: "B+ — HB-176/177 TRUE/JUSTIFIED: «никогда» — самая сильная квантификация n-контекста во всей серии; таблица śrīmat полная (śrīmān/śrīman/śrīmantau/śrīmataḥ/śrīmatī/śrīmanti); типология mat/vat притяжательные vs yat квантитативные — HB-177 TRUE"
+          whitney: "W+ — §452 «inflected precisely alike» с ant-причастиями, только N.sg. с удлинением; du.n. atī — НЕ antī; феминитив всегда от слабой (matī/vatī) + редкие nī-варианты (antárvatnī, patívatnī); §453 парадигма paçumā́n/bhágavān; §454 ведийские (du. ā вместо āu, voc. на -as); §451/457 — iyant/kiyant и tā́vant/yā́vant/etā́vant «inflected like adjectives in mant and vant»"
+          zalizniak-1978: "Z± — possessive mant/vant НЕ имеют собственного §: одна строка внутри §91 (keçavant- «волосатый»: N.sg. keçavān, V.sg. keçavan, du.n. keçavatī) — «никогда n» закодировано контрастом с pacantī-рядом, но полной парадигмы нет — самое тонкое покрытие свидетеля в серии"
+          kochergina: "K± — Занятие XXIX: полная таблица dhīmant + правило «сильную основу на -ant и слабую (в „средних“ и „слабых“ формах) на -at» + квантитативный ряд kiyant/iyant/yāvant/etāvant/tāvant «склоняются как dhīmant»; НО du.n. в таблице напечатан как dhīmantī (с n) — против «никогда» Бюлера (§1), Уитни §452 (только atī) и Зализняка §91 (keçavatī) — дрейф свидетеля, зафиксирован честно (прецедент H5674: кочергин-кросс-ссылки)"
+        notes: "Связь с уроком XXIII: n-вставка XXIII (I/IV/X всегда) против «никогда» у mat/yat/vat XXIV — два соседних урока дают обе стороны одного n-контекста (Зализняк §91 кодирует контраст парой pacant-/keçavant-). Knauer Nr.7.4 «bhṛtyā balavantaṁ rājānam āyuṣmann» — три possessive-прилагательных урока + Acc. an-основы одной фразой; вторая половина упражнения-двойника (deva) «पशोश्चर्मणि लोमानि विद्यन्ते» — carman/loman словаря; кочергинский квантитативный ряд kiyant/iyant/yāvant/etāvant/tāvant «склоняются как dhīmant» — тот же yat-класс §1; sangram-статьи о mant/vant нет (SG-MO-006 покрывает только -in-ряд согласных основ) — честно пропущено"
+      - key: bhavat-honorific
+        title: "Причастие bhū → bhavat «господин, Вы»: следует аналогии vat-имен (N.sg. bhavān, фем. bhavatī, не bhavantī) — семантическая развилка причастия bhavan"
+        buhler_locus: "урок XXIV, §2 (mdx 3135): «Part praes. parasm. глагола bhū, bhavat, следует аналогии имен на vat, если оно обозначает „господин, Вы“, напр. N. bhavān, bhavantau, bhavantaḥ, f. bhavatī»"
+        topic_claims: [HB-178]
+        spots:
+          "zalizniak-1978-sec:91": "склоняется как keçavant-, но bhavant-"
+          "kochergina-lesson:XXIX": "при вежливом обращении - в N. sg. *m* имеет форму bhavān"
+          "knauer-fraza:Nr.7": "māsān bhavān"
+        exceptions:
+          verdict: "CONFIRMED"
+          buhler: "B+ — HB-178 TRUE/JUSTIFIED: правило с семантическим условием («если обозначает господин») — редкая для школьной линии смысловая развилка; феминитив bhavatī (не bhavantī!) упомянут — та же логика «никогда n», что §1"
+          whitney: "W+ — §456: второй стем bhávant «frequently used in respectful address as substitute for the pronoun of the second person (but construed with a verb in the third person)» + bhávān + старый voc. bhavas с контракцией bhos — частота употребления и вокатив, которых у Бюлера нет"
+          zalizniak-1978: "Z+ — §91 ос.2: минимальная пара одним предложением — bhavant- «господин» склоняется как keçavant- (vat-ряд), bhavant- «существующий» как pacant- (ant-ряд) — различие закодировано выбором образцов, без отдельного правила"
+          kochergina: "K+ — Занятие XXIX: то же условие «в значении „господин“ при вежливом обращении» + вилка причастия bhavan/bhavat против обращения bhavān"
+        notes: "Knauer Nr.7.5 «kiyato māsān bhavān kāçyāṁ nyavasat» — уважительное bhavān живым текстом того же упражнения-двойника (523↔7.143); уточнение к заметке урока XXIII (mahat-sant: «уважительное bhavān — тонкость, у Бюлера и Уитни нет»): у Бюлера bhavān есть, но не при mahant, а отдельным §2 урока XXIV, у Уитни — §456 — кочергин-указатель дрейфовал в XXIX, а первоисточники правила живут здесь"
+      - key: an-man-van-stems
+        title: "Имена на an/man/van (две формы): сильн. ān/mān/vān; N.sg. n всегда отпадает (ātmā, rājā, nāma); V.sg. an/man/van; слабые: n перед консонантами, a в an-словах перед вокальными (искл. L.sg. rājani/rājñi), man/van сохраняют a после согласного (ātmanā); ср. р. nāma/nāman, du. nāmnī/nāmanī"
+        buhler_locus: "урок XXIV, §3 + таблицы rājan/nāman/ātman/brahman (mdx 3137–3173): примеры «rājan m. царь; nāman п. имя; ātman т. душа; brahman п. брахман, мировой дух»"
+        topic_claims: [HB-179, HB-180]
+        spots:
+          "zalizniak-1978-sec:89": "в слабейших формах a перед n сохраняется"
+          "kochergina-lesson:XXVIII": "и другие на -man и -van в слабых формах сохраняют"
+          "sangram-article:consonant-stems": "`rājan`, `ātman`, `karman`, `brahman`"
+          "knauer-fraza:Nr.6": "ब्रह्मा जगतः स्रष्टा वेदेषु श्रूयते"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — HB-179 TRUE/JUSTIFIED, но «женск. р.» в заголовке правила overreach: классические an/man/van-основы м./ср. р., феминитив строится ī-основами (rājñī — §4 урока XXV-линии; печатные парадигмы самого Бюлера — только м./ср., claims-сноска); HB-180 TRUE: обе факультативности (V.sg. nāma/nāman, du. nāmnī/nāmanī) напечатаны в самой таблице"
+          whitney: "W+ — §421–423 (тройная форма, voc. чистый стем, акцентные переносы в слабейших), §424 парадигма rā́jan/ātmán/nā́man — те же четыре столбца, что у Бюлера; §425 ведийские (du. ā вместо āu; краткие ahni/lomnī в древнем редки); §426 не-удлиняющиеся (pūṣán/aryamán/ukṣán/tmán) — вне школьного скопа"
+          zalizniak-1978: "Z+ — §89: та же парадигма rājan-/nāman- (N. rājā/rājan; V. nāma и nāman оба; L. rājñi и rājani оба; du.n. nāmnī и nāmanī оба) + правило сохранения a (ātmanā, parvaṇā) + особые §89-1–3: троица śvan/yuvan/maghavan (урок XXV), имена богов pūṣan-/aryaman- с чередованием подтипа pitar, -han-прилагательные (vṛtra-hā/-ghṇā)"
+          kochergina: "K+ — Занятие XXVIII: ātman-таблица -ān/-an/-a + «существительное ātman и другие на -man и -van в слабых формах сохраняют -a-»; rājan/nāman в вокабулярах (XX/XXVIII) как словарные входы"
+        notes: "Sangram SG-MO-006 (consonant-stems): -an/-man/-van — самый частотный класс согласных основ пинованного снапшота DCS (rājan — 20/24 клеток аттестации, самая полная) — corpus-рамка урока; brahmā с удлинением (Nr.6.6 exact-матч) — тот же ān-ряд, что ātmā; Nr.6.7 «पाटलिपुत्रस्य राजा जन्मना शूद्रः» — N.sg. rājā с отпавшим n + janman-слабая основа в одной фразе; упражнение Бюлера грамматику урока отрабатывает собственными руками: «एकस्मिञ्जन्मनि» (janman L.sg. с сандхи n→ñ) и «ग्रामे परिव्राण्न» — parivrāṇ-na прямо из §а правил сандхи того же урока"
+      - key: sandhi-voiced-mutes
+        title: "Внешние сандхи конечных k/ṭ/p: перед глухими остаются, перед звонкими → g/ḍ/b, перед носовыми — либо звонкий, либо носовой своего ряда (parivrāḍ-na/parivrāṇ-na, samyag-na/samyaṅ-na); h после g/ḍ/d/b факультативно → gh/ḍh/dh/bh (samyag-ghastaḥ, tasmād-dhastāt)"
+        buhler_locus: "урок XXIV, «Правила saṃdhi: а)…б)» (mdx 3177–3181) с четырьмя примерами-парами"
+        topic_claims: [HB-181, HB-182]
+        spots:
+          "zalizniak-1978-sec:43": "Конечные k, ṭ, t, p озвончаются перед всяким звуком"
+          "kochergina-lesson:XXVIII": "Конечные k, ṭ, t и p озвончаются перед гласными и всеми согласными"
+        exceptions:
+          verdict: "CONFIRMED-WITH-NUANCE"
+          buhler: "B± — HB-181/182 TRUE/JUSTIFIED: оба факультатива помечены «могут» и оба даны парами примеров (parivrāḍ-na/parivrāṇ-na; tasmād-hastāt/tasmād-dhastāt); полный слот окружений (перед l, перед c/ch/j) и частотных оговорок не приводится"
+          whitney: "W+ — §159 (регрессивная ассимиляция как принцип), §161 (перед носовой: tád námas/tán námas — та же двойственность), §162 (перед l полное уподобление tál labhate — слот, у Бюлера отсутствующий), §163 (перед h сонант + факультативная придыхательная tád hí/tád dhí; «in practice the latter method is almost invariably followed» — частотная грануляция)"
+          zalizniak-1978: "Z+ — §43 п.1 (озвончение перед всем, кроме глухих; сверх того t-уподобление перед l/c/ch/j/jh/ṭ/ṭh/ḍ/ḍh и t+ç→cch — широкий слот Бюлера), п.1а (назализация факультативна; «наиболее обычен такой переход для t»), п.1б (h → gh/ḍh/dh/bh «и обычно переходит»)"
+          kochergina: "K+ — Занятие XXVIII, п.3 правил внешних сандхи: «озвончаются перед гласными и всеми согласными, кроме шумных глухих» + указатель «о регрессивной ассимиляции t см. в Занятии V, 4» — кросс-ссылка на более раннее занятие, тот же дрейф-паттерн, что в XXIII"
+        notes: "П. 1б — number-слой HB-182: Pāṇini 8.4.62 (jhayo ho 'nyatarasyām) — «может» Бюлера = anyatarasyām; упражнение Бюлера отрабатывает правила того же урока: «ग्रामे परिव्राण्न तिष्ठेद्» — parivrāṇ-na из §а, «सम्यगनुतिष्ठन्तो» — samyag- перед гласной; Knauer Nr.7.4 deva «तावन्ति वर्षाणि हन्ता नरके वसेत्» — hantā (hantar словаря). Sangram-статьи о внешних сандхи нет — честно пропущено (матрица: по теме урока)"
+      - key: lesson-roots
+        title: "Лемма-слой: 4 глагола урока (chid — в уроке только ava-chid; mṛj — caus. mārjayati; varṇ X. P.; vij — caus. ud-vij) — морфонологическая запись"
+        buhler_locus: "урок XXIV, «Глаголы:» (mdx 3187–3195)"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+        lemmas:
+          - {root: chid, gloss: "отрезать (в уроке только приставочное ava-chid)", z1975: "I₁ (conf high)", z1978: "I₁", crosswalk: "yes — wno 242, §67-rule-1 (closed short i/u + C), closed/full"}
+          - {root: mṛj,  gloss: "натирать, обтирать (в уроке caus. mārjayati)", z1975: "R₁ (conf high)", z1978: "R₁", crosswalk: "yes — wno 576, special-vrddhi (§67 прим.), closed/full"}
+          - {root: vij,  gloss: "трепетать; в уроке только caus. ud-vij «пугать»", z1975: "I₁ (conf high)", z1978: "I₁", crosswalk: "yes — wno 727, §67-rule-1, closed/full"}
+          - {root: varṇ, gloss: "описывать, изображать (varṇ X. P.)", z1975: "?", z1978: "?", crosswalk: "NO — строки нет, и правильно: по Уитни varṇayati — деноминатив от varṇa «цвет» («varṇayati depicts (from varṇa color)»), root-слой корректно его не числит — это не пробоина реестра (контраст rāj-XXIII)"}
+        exceptions:
+          verdict: "GAP-CLOSED (на этом уроке)"
+          buhler: "B: класс только у varṇ (X. P.), записи нет — как во всей школьной линии; causative-пары mārjayati/udvijayati даны без отсылки к простым корням"
+          whitney: "W: классы — в root-аппарате; varṇ — деноминатив по главе деривации («varṇayati depicts (from varṇa color)»)"
+          zalizniak-1978: "Z: запись через ряды (§66–67); chid/vij — I₁ по §67-rule-1, mṛj — R₁ с особым vṛddhi (§67 прим.)"
+          kochergina: "K: класс даётся при глаголе (X у varṇ), записи нет"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 3/4 глаголов урока — varṇ вне корней по ТИПУ (деноминатив), не по пробоине; контрасты: урок XXIII — 1/3, XXV — 2/2, XLVI — 19/23; han из словарного производного hantar «убийца» в реестре есть (wno 908, N₁) — производные существительные в root-слой не входят, отмечено ради честного бенчмарка"
   XXV:
     title: "vas-основы причастий перфекта (vāṃs/vat/uṣ); имена на an с тремя формами (śvan/yuvan/maghavan) и ср. р. ahan; прилагательные на ac (prāñc…tiryañc); женский род на ī"
     mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 3275–3416 (заголовок «# УРОК XXV», без точки — нормализованный реестр)"
