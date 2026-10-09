@@ -393,6 +393,11 @@ FEATURE_ID_JOINS = {
 
 FEATURE_ID_RE = re.compile(r"^[A-FGLMlg][0-9]+$")
 
+# Stable substring of the join-bar hard-fail message (H6164): the atlas e2e
+# suite keys its deterministic live-artifact-drift skip on THIS constant, not
+# on a copy-pasted literal, so the seam cannot silently drift.
+UNCATEGORISED_ROW_MARKER = "uncategorised FEATURES_INDEX I-IV row"
+
 
 def load_features(path):
     rows = json.loads(Path(path).read_text(encoding="utf-8"))
@@ -434,7 +439,7 @@ def join_features(features):
             unmatched.append({**row, "reason": UNMATCHED_NOTE_BY_SHAPE[shape]})
             continue
         raise SystemExit(
-            f"uncategorised FEATURES_INDEX I-IV row: {fid} — "
+            f"{UNCATEGORISED_ROW_MARKER}: {fid} — "
             f"{row['title']!r}: add FEATURE_ID_JOINS entry or a "
             "FEATURE_ROW_NOTES reason (plan R4.2 join bar)"
         )
@@ -584,6 +589,12 @@ FEATURE_ROW_NOTES = {
     "A6": (
         "Renou EVP witness file beside the RV translation spine; no "
         "witness/translation-column family exists."
+    ),
+    "A7": (
+        "Cyrillic proper-noun → SLP1 backfill table (H4750) beside the "
+        "Sa→Ru pipeline; a normalization-key fragment, not the public "
+        "sanskrit-util transliteration family — no Cyrillic-key family "
+        "exists."
     ),
     "B6": (
         "Pāṇinian headword→root derivation tables over 10 dicts; no etymology "
