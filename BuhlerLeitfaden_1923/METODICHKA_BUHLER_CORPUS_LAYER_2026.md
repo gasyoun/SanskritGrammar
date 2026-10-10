@@ -187,11 +187,15 @@ asicat, amucat это и показывают. Корневой adāḥ стои
 | grah | топ-100 | 100 | bālād api gṛhītavyaṃ yuktam uktaṃ manīṣibhiḥ | Hitopadeśa: Hitop, 2, 79.2 | дельное слово следует принять даже от ребенка — так сказали мудрые |
 | pā | топ-1000 | 101 | sa caikadā pipāsākulitaḥ pānīyaṃ pātuṃ yamunākaccham agacchat | Hitopadeśa: Hitop, 2, 20 | и однажды, томимый жаждой, он пошел к берегу Ямуны попить воды |
 | dhā | топ-1000 | 283 | cukrodha ca mahākrodho vadhe cāsya mano dadhe | Rāmāyaṇa: Rām, Yu, 84, 17.2 | вспыхнул он великим гневом и устремил мысль на его убийство |
+| cikīrṣ | топ-1000 | 991 | satyaṃ cikīrṣamāṇas tu dhārayāmāsa hṛcchayam | Mahābhārata: MBh, 3, 52.1279 | истину намереваясь сохранить в сердце, он [Хриман?]… |
+| śuśrūṣ | топ-1000 | 1218 | patim … śuśrūṣate | Viṣṇusmṛti: ViSmṛ, 25.5393 | служит мужу |
+| rorūy | редкое | 38 | rorūyati | Bhāgavatapurāṇa: BhāgPur, 3, 31.971 | вопит |
 
 *āhatuḥ* — ah живет почти только в перфекте с презентным значением (потому Шерцль и
 ведет его отдельной статьей); *vadhe… mano dadhe* — вторая, местная рамка dhā «помещать
 во что»; *cukrodha* тут же дает перфект krudh — мостик к уроку XXVIII. Ранг pā — 101,
-первая строка за границей топ-100: полоса — сетка, не приговор.
+первая строка за границей топ-100: полоса — сетка, не приговор. Строки XLVIII (H5699):
+cikīrṣamāṇaḥ — фраза Кнауэра Nr.17 = MBh 3, 52 дословно.
 
 ---
 
@@ -200,6 +204,7 @@ asicat, amucat это и показывают. Корневой adāḥ стои
 | Дата | Ревизия | Основание |
 |---|---|---|
 | 31-08-2026 | Раздел II написан: полосы и живые примеры к урокам XVIII, XXVIII, XXXIV, XXXVIII, XLIII, XLIV, XLV и слою управления — 31 лемма | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
+| 08-10-2026 | Слой XLVIII доведён до паритета TSV↔таблица: 3 леммы (cikīrṣ, śuśrūṣ, rorūy) из [corpus_layer.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv) — фикс красного гейта test_corpus_layer (остаток H5699, приземлён проходом H5690) | H5690; OxAlpha (`opencode/z-ai/glm-5.3-flash`) |
 
 _Раздел II методички. Числа полос воспроизводимы скриптом
 [scripts/build_corpus_layer.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py)
