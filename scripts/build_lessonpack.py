@@ -96,9 +96,11 @@ def lesson_slice(zan: int) -> str:
     start = end = None
     for i, ln in enumerate(lines):
         s = ln.strip().lstrip('#').strip()
-        if start is None and s == marker:
+        hit = s == marker or s.startswith(marker + '.') or s.startswith(marker + ' ')
+        hit_n = s == next_marker or s.startswith(next_marker + '.') or s.startswith(next_marker + ' ')
+        if start is None and hit:
             start = i
-        elif start is not None and s == next_marker:
+        elif start is not None and hit_n:
             end = i
             break
     if start is None or end is None:
