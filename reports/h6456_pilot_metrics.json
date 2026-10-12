@@ -1,0 +1,2888 @@
+{
+ "summary": {
+  "n_items": 250,
+  "seed": 42,
+  "n_rules": 266,
+  "rule_tables": [
+   "/Users/mac/Documents/GitHub/kosha/data/gita/gita_sandhi.tsv",
+   "/Users/mac/Documents/GitHub/kosha/data/sandhi/astavakragita_sandhi.tsv"
+  ],
+  "gold_source": "DCS CoNLL-U: /Users/mac/Documents/GitHub/dcs-conllu/files texts=['Aṣṭāvakragīta', 'Gītagovinda']",
+  "upstream": {
+   "exact_acc": 0.428,
+   "first_tok_acc": 0.584,
+   "mean_ms_per_item": 0.3,
+   "errors": 0,
+   "no_split_found": 16
+  },
+  "ours": {
+   "exact_acc": 0.02,
+   "first_tok_acc": 0.08,
+   "mean_ms_per_item": 0.0,
+   "errors": 0
+  },
+  "examples_of_misses": {
+   "ours": [
+    {
+     "joined": "viśvaṃmayy",
+     "gold": [
+      "viśvam",
+      "mayy"
+     ],
+     "pred": [
+      "viśva",
+      "ammayy"
+     ]
+    },
+    {
+     "joined": "prameyaṃkva",
+     "gold": [
+      "prameyam",
+      "kva"
+     ],
+     "pred": [
+      "prama",
+      "iyamkva"
+     ]
+    },
+    {
+     "joined": "vigalitalajjā",
+     "gold": [
+      "vigalita",
+      "lajjā"
+     ],
+     "pred": [
+      "vigalitalajja",
+      "a"
+     ]
+    },
+    {
+     "joined": "rāgadveṣau",
+     "gold": [
+      "rāga",
+      "dveṣau"
+     ],
+     "pred": [
+      "ra",
+      "agadveṣau"
+     ]
+    },
+    {
+     "joined": "advayaṃkaścij",
+     "gold": [
+      "advayam",
+      "kaścij"
+     ],
+     "pred": [
+      "a",
+      "advayamkaścij"
+     ]
+    }
+   ],
+   "upstream": [
+    {
+     "joined": "viśvaṃmayy",
+     "gold": [
+      "viśvam",
+      "mayy"
+     ],
+     "pred": null
+    },
+    {
+     "joined": "vigalitalajjā",
+     "gold": [
+      "vigalita",
+      "lajjā"
+     ],
+     "pred": [
+      "vi",
+      "galita",
+      "lajjā"
+     ]
+    },
+    {
+     "joined": "advayaṃkaścij",
+     "gold": [
+      "advayam",
+      "kaścij"
+     ],
+     "pred": null
+    },
+    {
+     "joined": "piśayito",
+     "gold": [
+      "pi",
+      "śayito"
+     ],
+     "pred": [
+      "pi",
+      "śayitar"
+     ]
+    },
+    {
+     "joined": "sadayahṛdaya",
+     "gold": [
+      "sadaya",
+      "hṛdayaiḥ"
+     ],
+     "pred": [
+      "sadaya",
+      "hṛdaya"
+     ]
+    }
+   ]
+  }
+ },
+ "per_item": [
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viśvaṃmayy",
+   "gold": [
+    "viśvaṃ",
+    "mayy"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "prameyaṃkva",
+   "gold": [
+    "prameyaṃ",
+    "kva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "vigalitalajjā",
+   "gold": [
+    "vigalita",
+    "lajjā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "rāgadveṣau",
+   "gold": [
+    "rāga",
+    "dveṣau"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "advayaṃkaścij",
+   "gold": [
+    "advayaṃ",
+    "kaścij"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kimapi",
+   "gold": [
+    "kim",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kavijayadeve",
+   "gold": [
+    "kavi",
+    "jayadeve"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kiṃpṛthak",
+   "gold": [
+    "kiṃ",
+    "pṛthak"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kathaṃkasya",
+   "gold": [
+    "kathaṃ",
+    "kasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "piśayito",
+   "gold": [
+    "pi",
+    "śayito"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "sadayahṛdaya",
+   "gold": [
+    "sadaya",
+    "hṛdayaiḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "samādhiṃvā",
+   "gold": [
+    "samādhiṃ",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kāmapi",
+   "gold": [
+    "kām",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viśvaṃvastuto",
+   "gold": [
+    "viśvaṃ",
+    "vastuto"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kuñjaśayyām",
+   "gold": [
+    "kuñja",
+    "śayyām"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "viṣayalolupaḥ",
+   "gold": [
+    "viṣaya",
+    "lolupaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "ivebhaṃ",
+   "gold": [
+    "iva",
+    "ibham"
+   ],
+   "ours_ok": true,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vimalāśayaḥ",
+   "gold": [
+    "vimala",
+    "āśayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "śrījayadeve",
+   "gold": [
+    "śrī",
+    "jayadeve"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śarīraṃsvaṃ",
+   "gold": [
+    "śarīraṃ",
+    "svaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bodhohaṃ",
+   "gold": [
+    "bodho",
+    "haṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mahāhrada",
+   "gold": [
+    "mahā",
+    "hradaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "saṃtuṣṭopi",
+   "gold": [
+    "saṃtuṣṭo",
+    "pi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "yadyupadeṣṭā",
+   "gold": [
+    "yady",
+    "upadeṣṭā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "jagadīśvaraṃ",
+   "gold": [
+    "jagad",
+    "īśvaraṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tvaṃdeho",
+   "gold": [
+    "tvaṃ",
+    "deho"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dehastiṣṭhaty",
+   "gold": [
+    "dehas",
+    "tiṣṭhaty"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "śaśadharabimbe",
+   "gold": [
+    "śaśadhara",
+    "bimbe"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kuṭilabhru",
+   "gold": [
+    "kuṭila",
+    "bhru"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "kiṃcitapi",
+   "gold": [
+    "kiṃcit",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "cittaṃkiṃcid",
+   "gold": [
+    "cittaṃ",
+    "kiṃcid"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "cāsti",
+   "gold": [
+    "ca",
+    "asti"
+   ],
+   "ours_ok": true,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śāstraṃkva",
+   "gold": [
+    "śāstraṃ",
+    "kva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "jayadevasarasvatīm",
+   "gold": [
+    "jayadeva",
+    "sarasvatīm"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "taralitahārā",
+   "gold": [
+    "taralita",
+    "hārā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "śakrādyāḥ",
+   "gold": [
+    "śakra",
+    "ādyāḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "ātmajñaḥ",
+   "gold": [
+    "ātma",
+    "jñaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śuddhojaḍaṃ",
+   "gold": [
+    "śuddho",
+    "jaḍaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "hyākāśasya",
+   "gold": [
+    "hy",
+    "ākāśasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "atimuditam",
+   "gold": [
+    "ati",
+    "muditam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sarvaṃeko",
+   "gold": [
+    "sarvaṃ",
+    "eko"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śrotriyaṃdevatāṃ",
+   "gold": [
+    "śrotriyaṃ",
+    "devatāṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "tavakalāvatī",
+   "gold": [
+    "tava",
+    "kalāvatī"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viśvaṃmayi",
+   "gold": [
+    "viśvaṃ",
+    "mayi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhogaṃkarma",
+   "gold": [
+    "bhogaṃ",
+    "karma"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vairāgyaṃca",
+   "gold": [
+    "vairāgyaṃ",
+    "ca"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dveṣaeva",
+   "gold": [
+    "dveṣa",
+    "eva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vivekitā",
+   "gold": [
+    "viveki",
+    "tā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhūtaṃkva",
+   "gold": [
+    "bhūtaṃ",
+    "kva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "etadbrūhi",
+   "gold": [
+    "etad",
+    "brūhi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dehaṃpṛthak",
+   "gold": [
+    "dehaṃ",
+    "pṛthak"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "rahaḥkelayaḥ",
+   "gold": [
+    "rahas",
+    "kelayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "etāvadeva",
+   "gold": [
+    "etāvad",
+    "eva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "sarvadāsāv",
+   "gold": [
+    "sarvadā",
+    "asau"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mahyaṃeko",
+   "gold": [
+    "mahyaṃ",
+    "eko"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "rājyaṃsutāḥ",
+   "gold": [
+    "rājyaṃ",
+    "sutāḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "vṛthāvilapāmi",
+   "gold": [
+    "vṛthā",
+    "vilapāmi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "karmakṛt",
+   "gold": [
+    "karma",
+    "kṛt"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "smaratyakṛtaṃ",
+   "gold": [
+    "smaraty",
+    "akṛtaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "hamayaṃ",
+   "gold": [
+    "ham",
+    "ayaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "haroyady",
+   "gold": [
+    "haro",
+    "yady"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhaviṣyadvā",
+   "gold": [
+    "bhaviṣyad",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "kvāhaṃ",
+   "gold": [
+    "kva",
+    "aham"
+   ],
+   "ours_ok": true,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kṛtyaṃkim",
+   "gold": [
+    "kṛtyaṃ",
+    "kim"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "yastu",
+   "gold": [
+    "yas",
+    "tu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "paramaṃpadam",
+   "gold": [
+    "paramaṃ",
+    "padam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "rucimañjarībhiḥ",
+   "gold": [
+    "ruci",
+    "mañjarībhiḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tattvaṃyathārtham",
+   "gold": [
+    "tattvaṃ",
+    "yathārtham"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "karteti",
+   "gold": [
+    "kartā",
+    "iti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "cettāta",
+   "gold": [
+    "cet",
+    "tāta"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mumukṣurvā",
+   "gold": [
+    "mumukṣur",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sohaṃ",
+   "gold": [
+    "so",
+    "haṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "suptavat",
+   "gold": [
+    "supta",
+    "vat"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "śārdūlavikrīḍitam",
+   "gold": [
+    "śārdūla",
+    "vikrīḍitam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mahāśayaḥ",
+   "gold": [
+    "mahā",
+    "āśayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vairāgyaṃprāyo",
+   "gold": [
+    "vairāgyaṃ",
+    "prāyo"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "śītalāśayaḥ",
+   "gold": [
+    "śītala",
+    "āśayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vigatakautukaḥ",
+   "gold": [
+    "vigata",
+    "kautukaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vāridheriva",
+   "gold": [
+    "vāridher",
+    "iva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "jagatsarvam",
+   "gold": [
+    "jagat",
+    "sarvam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "lepaṃsvasya",
+   "gold": [
+    "lepaṃ",
+    "svasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "sarvadevatāḥ",
+   "gold": [
+    "sarva",
+    "devatāḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "udāracittasya",
+   "gold": [
+    "udāra",
+    "cittasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kṛtārthobhaved",
+   "gold": [
+    "kṛtārtho",
+    "bhaved"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mamāsty",
+   "gold": [
+    "mama",
+    "asti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dhairyaṃkva",
+   "gold": [
+    "dhairyaṃ",
+    "kva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kiṃkurute",
+   "gold": [
+    "kiṃ",
+    "kurute"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "komalakalāvatī",
+   "gold": [
+    "komala",
+    "kalāvatī"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "yadvetti",
+   "gold": [
+    "yad",
+    "vetti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "atibhāram",
+   "gold": [
+    "ati",
+    "bhāram"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "udārastu",
+   "gold": [
+    "udāras",
+    "tu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kosau",
+   "gold": [
+    "ko",
+    "sau"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dehastiṣṭhatu",
+   "gold": [
+    "dehas",
+    "tiṣṭhatu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "rādhikāsakhī",
+   "gold": [
+    "rādhikā",
+    "sakhī"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vimūḍhatām",
+   "gold": [
+    "vimūḍha",
+    "tām"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sarvāvimuñca",
+   "gold": [
+    "sarvā",
+    "vimuñca"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mūḍhatā",
+   "gold": [
+    "mūḍha",
+    "tā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "paramādvaitaṃ",
+   "gold": [
+    "parama",
+    "advaitam"
+   ],
+   "ours_ok": true,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mumukṣorbuddhir",
+   "gold": [
+    "mumukṣor",
+    "buddhir"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "galitaspṛhaḥ",
+   "gold": [
+    "galita",
+    "spṛhaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "sadāham",
+   "gold": [
+    "sa",
+    "dāham"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "marakatavalayam",
+   "gold": [
+    "marakata",
+    "valayam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "prakāśayāmyeko",
+   "gold": [
+    "prakāśayāmy",
+    "eko"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mūḍhoyataḥ",
+   "gold": [
+    "mūḍho",
+    "yataḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "tvāmpaśyati",
+   "gold": [
+    "tvām",
+    "paśyati"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "kutaḥgatā",
+   "gold": [
+    "kutaḥ",
+    "gatā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "malayasamīram",
+   "gold": [
+    "malaya",
+    "samīram"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "suśobhate",
+   "gold": [
+    "su",
+    "śobhate"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "rūpitā",
+   "gold": [
+    "rūpi",
+    "tā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "āścaryaṃmamatvam",
+   "gold": [
+    "āścaryaṃ",
+    "mamatvam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tiṣṭhatyāyāti",
+   "gold": [
+    "tiṣṭhaty",
+    "āyāti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "ceśvare",
+   "gold": [
+    "ca",
+    "īśvare"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dhīrastu",
+   "gold": [
+    "dhīras",
+    "tu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "dehadāhaḥ",
+   "gold": [
+    "deha",
+    "dāhaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kiṃbrūte",
+   "gold": [
+    "kiṃ",
+    "brūte"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "saṃmohādyāvajjīvam",
+   "gold": [
+    "saṃmohād",
+    "yāvajjīvam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mahadādi",
+   "gold": [
+    "mahat",
+    "ādi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sakurute",
+   "gold": [
+    "sa",
+    "kurute"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhavedasau",
+   "gold": [
+    "bhaved",
+    "asau"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dhīrāstaṃ",
+   "gold": [
+    "dhīrās",
+    "taṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "prakāśome",
+   "gold": [
+    "prakāśo",
+    "me"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dehohaṃ",
+   "gold": [
+    "deho",
+    "haṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kiṃpaśyati",
+   "gold": [
+    "kiṃ",
+    "paśyati"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "muktabuddhayaḥ",
+   "gold": [
+    "mukta",
+    "buddhayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mesarvaṃ",
+   "gold": [
+    "me",
+    "sarvaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "viṣāditā",
+   "gold": [
+    "viṣādi",
+    "tā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "svabhāvoyaḥ",
+   "gold": [
+    "svabhāvo",
+    "yaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tātaśraddhatsva",
+   "gold": [
+    "tāta",
+    "śraddhatsva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "vāmatām",
+   "gold": [
+    "vāma",
+    "tām"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "śrutvāpi",
+   "gold": [
+    "śrutvā",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "buddhirālambam",
+   "gold": [
+    "buddhir",
+    "ālambam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "tavavirahe",
+   "gold": [
+    "tava",
+    "virahe"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śaktāste",
+   "gold": [
+    "śaktās",
+    "te"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "kartety",
+   "gold": [
+    "kartā",
+    "iti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dṛṣṭirvṛthā",
+   "gold": [
+    "dṛṣṭir",
+    "vṛthā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ahaṃkālaṃ",
+   "gold": [
+    "ahaṃ",
+    "kālaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "mārodyamam",
+   "gold": [
+    "māra",
+    "udyamam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "tārakapaṭalam",
+   "gold": [
+    "tāraka",
+    "paṭalam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vikalpaṃmama",
+   "gold": [
+    "vikalpaṃ",
+    "mama"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "tavakeśava",
+   "gold": [
+    "tava",
+    "keśava"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "bahumadhuram",
+   "gold": [
+    "bahu",
+    "madhuram"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhāvaṃbāhyam",
+   "gold": [
+    "bhāvaṃ",
+    "bāhyam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "gatakleśaḥ",
+   "gold": [
+    "gata",
+    "kleśaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bodhitaiva",
+   "gold": [
+    "bodhita",
+    "iva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "hṛdayadeśam",
+   "gold": [
+    "hṛdaya",
+    "deśam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sukhaṃśete",
+   "gold": [
+    "sukhaṃ",
+    "śete"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "capalāsuṣamam",
+   "gold": [
+    "capalā",
+    "suṣamam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "mevidadhāsi",
+   "gold": [
+    "me",
+    "vidadhāsi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "svabhāvādyasya",
+   "gold": [
+    "svabhāvād",
+    "yasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "parastatra",
+   "gold": [
+    "paras",
+    "tatra"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kisalayatalpam",
+   "gold": [
+    "kisalaya",
+    "talpam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tvaṃpaśyasi",
+   "gold": [
+    "tvaṃ",
+    "paśyasi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sakaloduḥkhī",
+   "gold": [
+    "sakalo",
+    "duḥkhī"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "atiśayaruciram",
+   "gold": [
+    "atiśaya",
+    "ruciram"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "muktaścid",
+   "gold": [
+    "muktaś",
+    "cid"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sthitirmama",
+   "gold": [
+    "sthitir",
+    "mama"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "svaṃpaśyaty",
+   "gold": [
+    "svaṃ",
+    "paśyaty"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "marmavyathām",
+   "gold": [
+    "marma",
+    "vyathām"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vikalpitaṃviśvam",
+   "gold": [
+    "vikalpitaṃ",
+    "viśvam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ekaeva",
+   "gold": [
+    "eka",
+    "eva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "sukṛtavipāke",
+   "gold": [
+    "sukṛta",
+    "vipāke"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "jagatyasmiṃs",
+   "gold": [
+    "jagaty",
+    "asmiṃs"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "puraḥmama",
+   "gold": [
+    "puraḥ",
+    "mama"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "muhuḥbahu",
+   "gold": [
+    "muhuḥ",
+    "bahu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "sarvabhūteṣu",
+   "gold": [
+    "sarva",
+    "bhūteṣu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viśvaṃvāridher",
+   "gold": [
+    "viśvaṃ",
+    "vāridher"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "ūrudvayam",
+   "gold": [
+    "ūru",
+    "dvayam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhayaṃtasya",
+   "gold": [
+    "bhayaṃ",
+    "tasya"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sukhaṃtiṣṭha",
+   "gold": [
+    "sukhaṃ",
+    "tiṣṭha"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viraktirvā",
+   "gold": [
+    "viraktir",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "saṃkṣobhādvyagraḥ",
+   "gold": [
+    "saṃkṣobhād",
+    "vyagraḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "idaṃkiṃ",
+   "gold": [
+    "idaṃ",
+    "kiṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vāvidyā",
+   "gold": [
+    "vā",
+    "avidyā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "haricaritam",
+   "gold": [
+    "hari",
+    "caritam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dṛṣṭaṃsa",
+   "gold": [
+    "dṛṣṭaṃ",
+    "sa"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mayyeva",
+   "gold": [
+    "mayy",
+    "eva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "śrutimūle",
+   "gold": [
+    "śruti",
+    "mūle"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kṛtārthatām",
+   "gold": [
+    "kṛtārtha",
+    "tām"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "gurukhedam",
+   "gold": [
+    "guru",
+    "khedam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "cetaraḥ",
+   "gold": [
+    "ca",
+    "itaraḥ"
+   ],
+   "ours_ok": true,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "tavaākalayāmi",
+   "gold": [
+    "tava",
+    "ākalayāmi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "yatsambhramāt",
+   "gold": [
+    "yat",
+    "sambhramāt"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "rāsarase",
+   "gold": [
+    "rāsa",
+    "rase"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "ratikhedam",
+   "gold": [
+    "rati",
+    "khedam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "sarvadṛṣṭiṣu",
+   "gold": [
+    "sarva",
+    "dṛṣṭiṣu"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "bhramaṃmuktvā",
+   "gold": [
+    "bhramaṃ",
+    "muktvā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mumukṣurapi",
+   "gold": [
+    "mumukṣur",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kiṃvā",
+   "gold": [
+    "kiṃ",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "yataḥśamitum",
+   "gold": [
+    "yataḥ",
+    "śamitum"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "mesadā",
+   "gold": [
+    "me",
+    "sadā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "caikāgryaṃ",
+   "gold": [
+    "ca",
+    "aikāgryam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "samādhirvā",
+   "gold": [
+    "samādhir",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "madurasi",
+   "gold": [
+    "mad",
+    "urasi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "sakāmam",
+   "gold": [
+    "sa",
+    "kāmam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kuśalohi",
+   "gold": [
+    "kuśalo",
+    "hi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kucakalaśam",
+   "gold": [
+    "kuca",
+    "kalaśam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "asamaśarakīlitam",
+   "gold": [
+    "asamaśara",
+    "kīlitam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "agādhabuddhir",
+   "gold": [
+    "agādha",
+    "buddhiḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "prītirviratiḥ",
+   "gold": [
+    "prītir",
+    "viratiḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "bālavat",
+   "gold": [
+    "bāla",
+    "vat"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ahaṃvā",
+   "gold": [
+    "ahaṃ",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "taṃtaṃ",
+   "gold": [
+    "taṃ",
+    "taṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "protaṃyathārthataḥ",
+   "gold": [
+    "protaṃ",
+    "yathārthataḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "patreapi",
+   "gold": [
+    "patre",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kutohaṃkāra",
+   "gold": [
+    "kuto",
+    "haṃkāra"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "mādhavaṃpuraḥ",
+   "gold": [
+    "mādhavaṃ",
+    "puraḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "vidhutarambham",
+   "gold": [
+    "vidhuta",
+    "rambham"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "hṛdayeśam",
+   "gold": [
+    "hṛdaya",
+    "īśam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "puraḥmuhuḥ",
+   "gold": [
+    "puraḥ",
+    "muhuḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "itastataḥ",
+   "gold": [
+    "itas",
+    "tatas"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "mūḍhadhīḥ",
+   "gold": [
+    "mūḍha",
+    "dhīḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sthitoyogī",
+   "gold": [
+    "sthito",
+    "yogī"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "edge",
+   "joined": "kuvalayadṛśāmvāmaḥ",
+   "gold": [
+    "kuvalayadṛśām",
+    "vāmaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "haṃkāraeva",
+   "gold": [
+    "haṃkāra",
+    "eva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "muktatā",
+   "gold": [
+    "mukta",
+    "tā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "mṛgākṣī",
+   "gold": [
+    "mṛga",
+    "akṣā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "matsamaḥ",
+   "gold": [
+    "mad",
+    "samaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "viśvapota",
+   "gold": [
+    "viśva",
+    "potaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dhīrohi",
+   "gold": [
+    "dhīro",
+    "hi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "hṛdayodarāt",
+   "gold": [
+    "hṛdaya",
+    "udarāt"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "vṛthāceṣṭā",
+   "gold": [
+    "vṛthā",
+    "ceṣṭā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "lobhoyathā",
+   "gold": [
+    "lobho",
+    "yathā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "tattyāgo",
+   "gold": [
+    "tad",
+    "tyāgaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "tasmādaham",
+   "gold": [
+    "tasmād",
+    "aham"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kṛtaṃkim",
+   "gold": [
+    "kṛtaṃ",
+    "kim"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sajayaty",
+   "gold": [
+    "sa",
+    "jayaty"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "atilolam",
+   "gold": [
+    "ati",
+    "lolam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "mṛgīdṛśaḥ",
+   "gold": [
+    "mṛgī",
+    "dṛśaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śītalaṃcittam",
+   "gold": [
+    "śītalaṃ",
+    "cittam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "saṃsāraṃviddhi",
+   "gold": [
+    "saṃsāraṃ",
+    "viddhi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ayaṃso",
+   "gold": [
+    "ayaṃ",
+    "so"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "bhavasāram",
+   "gold": [
+    "bhava",
+    "sāram"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "saṃvṛttaṃkva",
+   "gold": [
+    "saṃvṛttaṃ",
+    "kva"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "sukhaduḥkhe",
+   "gold": [
+    "sukha",
+    "duḥkhe"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "kubuddhayaḥ",
+   "gold": [
+    "ku",
+    "buddhayaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "sukhaṃvakti",
+   "gold": [
+    "sukhaṃ",
+    "vakti"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "paraṃbrahma",
+   "gold": [
+    "paraṃ",
+    "brahma"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ekodraṣṭāsi",
+   "gold": [
+    "eko",
+    "draṣṭāsi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "kalatraiśca",
+   "gold": [
+    "kalatraiś",
+    "ca"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "ābhāsohaṃ",
+   "gold": [
+    "ābhāso",
+    "haṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "śamopi",
+   "gold": [
+    "śamo",
+    "pi"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "kucakumbham",
+   "gold": [
+    "kuca",
+    "kumbham"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "latākuñje",
+   "gold": [
+    "latā",
+    "kuñje"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Gītagovinda",
+   "family": "mwt",
+   "joined": "suveśam",
+   "gold": [
+    "su",
+    "veśam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "haṃbhramaṃ",
+   "gold": [
+    "haṃ",
+    "bhramaṃ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "dhīrastṛptaḥ",
+   "gold": [
+    "dhīras",
+    "tṛptaḥ"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "viṣādovā",
+   "gold": [
+    "viṣādo",
+    "vā"
+   ],
+   "ours_ok": false,
+   "upstream_ok": false
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "jagaddvaitaṃ",
+   "gold": [
+    "jagat",
+    "dvaitam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "mwt",
+   "joined": "vāpi",
+   "gold": [
+    "vā",
+    "api"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  },
+  {
+   "text": "Aṣṭāvakragīta",
+   "family": "edge",
+   "joined": "idaṃtattvam",
+   "gold": [
+    "idaṃ",
+    "tattvam"
+   ],
+   "ours_ok": false,
+   "upstream_ok": true
+  }
+ ]
+}
