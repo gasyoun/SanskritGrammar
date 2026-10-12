@@ -31,6 +31,10 @@ _Created: 2026-10-12 · Last updated: 2026-10-12_
 
 Типовые промахи upstream (16 null + примеры): unknown pada («advayaṃkaścij»), over-split компаундов ([vi, galita, lajjā] при gold [vigalita, lajjā]) — то есть ровно стыки неоднозначности, куда в нашем стеке встаёт sandhi-council.
 
+## Верификация (карта 9 — чужой семьёй)
+
+**Вердикт: PASS** (DeepSeek-councillor, 12-10-2026; числа A–D пересчитаны независимо: 107/250, 5/250, 104/146/68 — сходятся; bench 250 айтемов воспроизведён). Раскрытые оговорки: (1) **конструктная валидность MWT-семейства** — gold MWT-айтемов берётся из pre-sandhi `Unsandhied`, поэтому concat компонент ≠ joined для части айтемов (напр. `mahāhrada→[mahā,hradaḥ]`); edge-семейство свободно от этого; измерение остаётся симметричным (обе системы получают одинаковые айтемы), но точные цифры трактуются как относительное сравнение, не абсолютная метрика качества; (2) coverage 5,6% (14/250) получен отдельным анализом, скриптом не эмитится; (3) `OK_CHARS` без ṇ/ṅ — такие айтемы молча отфильтрованы (влияет на состав bench, не на честность сравнения).
+
 ## Артефакты
 
 - Пилот-скрипт: [scripts/pilot_process_sanskrit_vs_rules.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/pilot_process_sanskrit_vs_rules.py) (venv: `pip install process-sanskrit`; прогон `--n 250 --seed 42`)

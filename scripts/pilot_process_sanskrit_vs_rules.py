@@ -250,7 +250,7 @@ def main():
         "n_rules": len(rules),
         "rule_tables": [str(p) for p in RULE_TABLES],
         "gold_source": f"DCS CoNLL-U: {DCS_FILES} texts={DCS_TEXTS}",
-        "upstream": "Process-Sanskrit 1.5.2 (vendored sanskrit_parser + DCS word2vec, bundled w2v.npz)",
+        "upstream_desc": "Process-Sanskrit 1.5.2 (vendored sanskrit_parser + DCS word2vec, bundled w2v.npz)",
         "ours": {
             "exact_acc": round(res["ours"]["exact"] / n, 4),
             "first_tok_acc": round(res["ours"]["first"] / n, 4),
