@@ -6,6 +6,7 @@
 import remarkRstTable from './src/remark/rstTable.mjs';
 import remarkFixHeadingAnchors from './src/remark/fixHeadingAnchors.mjs';
 import { discoverSite } from './src/discovery.mjs';
+import { searchContexts } from './scripts/search_contexts.mjs';
 
 // Auto-discover book folders from the **tracked** `.mdx` set (`git ls-files`),
 // not a filesystem scan. A folder dropped in, converted, and `git add`ed is
@@ -67,7 +68,9 @@ const config = {
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        hashed: true,
+        // "filename" — хэш в имени файла: URL индексов стабилен, пока контент
+        // не менялся, и браузер не перекачивает мегабайты при каждом визите.
+        hashed: 'filename',
         language: ['ru', 'en', 'sa'],
         indexDocs: true,
         indexBlog: false,
@@ -75,27 +78,21 @@ const config = {
         docsRouteBasePath: 'grammars',
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        // Per-раздел контексты поиска (MG 12-10-2026): из страницы раздела ищется
-        // только этот раздел (переключатель в строке поиска), «Всё» доступно там же.
-        // Страница /grammars/search всегда открывается глобальной — входящий ctx
-        // стрипает src/theme/SearchPage (рулинг MG «всегда ищет по всем разделам»).
-        useAllContextsWithNoSearchContext: true,
-        searchContextByPaths: [
-          { label: 'Апте', path: 'grammars/ApteSyntax_1885' },
-          { label: 'Бюлер', path: 'grammars/BuhlerLeitfaden_1923' },
-          { label: 'Конкорданс', path: 'grammars/Concordance' },
-          { label: 'Дхату', path: 'grammars/GasunsDhatu_2014' },
-          { label: 'Грамматические связи', path: 'grammars/GrammarRelations' },
-          { label: 'Кнауэр', path: 'grammars/KnauerFrazy_1908' },
-          { label: 'Кочергина', path: 'grammars/KocherginaUchebnik_1998' },
-          { label: 'Санграм', path: 'grammars/sangram' },
-          { label: 'Предметный конкорданс', path: 'grammars/SubjectConcordance' },
-          { label: 'Толчельников', path: 'grammars/TolchelnikovTalmud_2026' },
-          { label: 'Уитни', path: 'grammars/WhitneyGrammar_1889' },
-          { label: 'Зализняк 1975', path: 'grammars/ZalizniakMorphology_1975' },
-          { label: 'Зализняк 1978', path: 'grammars/ZalizniakOcherk_1978' },
-          { label: 'Зализняк 2004', path: 'grammars/ZalizniakKonspekt_2004' },
-        ],
+        // Per-раздел контексты поиска (MG 12-10-2026, список — scripts/search_contexts.mjs):
+        // из страницы раздела ищется только этот раздел (переключатель в строке
+        // поиска), страница /grammars/search всегда открывается глобальной —
+        // входящий ctx стрипает src/theme/SearchPage.
+        //
+        // useAllContextsWithNoSearchContext: false — ВАЖНО: при true плагин
+        // (postBuildFactory.js:57) НЕ исключает разделы из root-индекса, и root
+        // раздувается до полной копии сайта (~36 МБ, 9,7 МБ gzip), которую
+        // глобальный поиск тянет при каждом фокусе. При false root строится
+        // эксклюзивным (только не-разделы), а «Везде» с пустым контекстом
+        // обеспечивает патч воркера (patches/@easyops-cn+…): он грузит root +
+        // все контекстные индексы параллельно и мёржит выдачу. Опция «Всюду»
+        // в селекте страницы поиска тоже от патча.
+        useAllContextsWithNoSearchContext: false,
+        searchContextByPaths: searchContexts,
       },
     ],
   ],

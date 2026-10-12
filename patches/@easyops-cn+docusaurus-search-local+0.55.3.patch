@@ -1,3 +1,206 @@
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
+index 10ef222..e23eab8 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
+@@ -118,7 +118,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
+         const [autoComplete, openAskAIModule] = await Promise.all([
+             fetchAutoCompleteJS(),
+             askAi ? fetchOpenAskAI() : Promise.resolve(null),
+-            fetchIndexesByWorker(versionUrl, searchContext),
++            fetchIndexesByWorker(versionUrl, searchContext, searchContextByPaths),
+         ]);
+         if (openAskAIModule) {
+             setAskAIWidgetComponent(() => openAskAIModule.AskAIWidget);
+@@ -200,7 +200,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
+         }, [
+             {
+                 source: async (input, callback) => {
+-                    const result = await searchByWorker(versionUrl, searchContext, input, searchResultLimits);
++                    const result = await searchByWorker(versionUrl, searchContext, input, searchResultLimits, searchContextByPaths);
+                     if (input && askAi) {
+                         callback([
+                             {
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SuggestionTemplate.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SuggestionTemplate.js
+index 1366314..d08ceba 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SuggestionTemplate.js
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SuggestionTemplate.js
+@@ -4,7 +4,7 @@ import { escapeHtml } from "../../utils/escapeHtml";
+ import { getStemmedPositions } from "../../utils/getStemmedPositions";
+ import { highlight } from "../../utils/highlight";
+ import { highlightStemmed } from "../../utils/highlightStemmed";
+-import { explicitSearchResultPath } from "../../utils/proxiedGenerated";
++import { explicitSearchResultPath, searchContextByPaths } from "../../utils/proxiedGenerated";
+ import { iconAction, iconAskAI, iconContent, iconHeading, iconTitle, iconTreeInter, iconTreeLast, } from "./icons";
+ import styles from "./SearchBar.module.css";
+ export function SuggestionTemplate({ document, type, page, metadata, tokens, isInterOfTree, isLastOfTree, }) {
+@@ -16,6 +16,24 @@ export function SuggestionTemplate({ document, type, page, metadata, tokens, isI
+             `</span>`,
+         ].join("");
+     }
++    // SG patch (H6553): бейдж раздела — откуда результат (рулинг MG 12-10-2026).
++    const ctxLabel = (() => {
++        const u = document.u || "";
++        if (!Array.isArray(searchContextByPaths)) {
++            return "";
++        }
++        for (const item of searchContextByPaths) {
++            const p = typeof item === "string" ? item : item.path;
++            if (u.includes(`/${p}/`) || u.endsWith(`/${p}`)) {
++                const label = typeof item === "string" ? p : item.label;
++                return typeof label === "string" ? label : label.ru;
++            }
++        }
++        return "";
++    })();
++    const ctxBadge = ctxLabel
++        ? `<span class="sg-ctx-badge" style="display:inline-block;margin-right:6px;padding:0 6px;border-radius:10px;background:#eceff4;color:#4a5568;font-size:11px;line-height:18px;vertical-align:middle;white-space:nowrap;">${escapeHtml(ctxLabel)}</span>`
++        : "";
+     const isTitle = type === SearchDocumentType.Title;
+     const isKeywords = type === SearchDocumentType.Keywords;
+     const isTitleRelated = isTitle || isKeywords;
+@@ -56,6 +74,7 @@ export function SuggestionTemplate({ document, type, page, metadata, tokens, isI
+         ...treeWrapper,
+         icon,
+         `<span class="${styles.hitWrapper}">`,
++        ...(ctxBadge ? [ctxBadge] : []),
+         ...wrapped,
+         "</span>",
+         action,
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
+index 2efb8b4..8173ce7 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
+@@ -46,7 +46,7 @@ function SearchPageContent() {
+         updateSearchPath(searchQuery);
+         if (searchQuery) {
+             (async () => {
+-                const results = await searchByWorker(versionUrl, searchContext, searchQuery, 100);
++                const results = await searchByWorker(versionUrl, searchContext, searchQuery, 100, searchContextByPaths);
+                 setSearchResults(results);
+             })();
+         }
+@@ -69,8 +69,8 @@ function SearchPageContent() {
+         async function doFetchIndexes() {
+             if (!Array.isArray(searchContextByPaths) ||
+                 searchContext ||
+-                useAllContextsWithNoSearchContext) {
+-                await fetchIndexesByWorker(versionUrl, searchContext);
++                searchContext === "") {
++                await fetchIndexesByWorker(versionUrl, searchContext, searchContextByPaths);
+             }
+             setSearchWorkerReady(true);
+         }
+@@ -99,7 +99,7 @@ function SearchPageContent() {
+           </div>
+           {Array.isArray(searchContextByPaths) ? (<div className={clsx("col", "col--3", "padding-left--none", styles.searchContextColumn)}>
+               <select name="search-context" className={styles.searchContextInput} id="context-selector" value={searchContext} onChange={(e) => updateSearchContext(e.target.value)}>
+-                {useAllContextsWithNoSearchContext && (<option value="">
++                {(<option value="">
+                     {translate({
+                     id: "theme.SearchPage.searchContext.everywhere",
+                     message: "Everywhere",
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
+index 5ceff29..5b05e04 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
+@@ -9,16 +9,16 @@ function getRemoteWorker() {
+     }
+     return remoteWorkerPromise;
+ }
+-export async function fetchIndexesByWorker(baseUrl, searchContext) {
++export async function fetchIndexesByWorker(baseUrl, searchContext, contextPaths) {
+     if (process.env.NODE_ENV === "production") {
+         const remoteWorker = await getRemoteWorker();
+-        await remoteWorker.fetchIndexes(baseUrl, searchContext);
++        await remoteWorker.fetchIndexes(baseUrl, searchContext, contextPaths);
+     }
+ }
+-export async function searchByWorker(baseUrl, searchContext, input, limit) {
++export async function searchByWorker(baseUrl, searchContext, input, limit, contextPaths) {
+     if (process.env.NODE_ENV === "production") {
+         const remoteWorker = await getRemoteWorker();
+-        return remoteWorker.search(baseUrl, searchContext, input, limit);
++        return remoteWorker.search(baseUrl, searchContext, input, limit, contextPaths);
+     }
+     return [];
+ }
+diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
+index 4c84cd0..838a905 100644
+--- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
++++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
+@@ -8,24 +8,29 @@ import { sortSearchResults } from "../utils/sortSearchResults";
+ import { processTreeStatusOfSearchResults } from "../utils/processTreeStatusOfSearchResults";
+ const cache = new Map();
+ export class SearchWorker {
+-    async fetchIndexes(baseUrl, searchContext) {
+-        await this.lowLevelFetchIndexes(baseUrl, searchContext);
++    async fetchIndexes(baseUrl, searchContext, contextPaths) {
++        await this.lowLevelFetchIndexes(baseUrl, searchContext, contextPaths);
+     }
+-    async lowLevelFetchIndexes(baseUrl, searchContext) {
++    async lowLevelFetchIndexes(baseUrl, searchContext, contextPaths) {
+         const cacheKey = `${baseUrl}${searchContext}`;
+         let promise = cache.get(cacheKey);
+         if (!promise) {
+-            promise = legacyFetchIndexes(baseUrl, searchContext);
++            // SG patch (H6553): пустой контекст = root + все контекстные индексы
++            // параллельно (root эксклюзивен при useAllContextsWithNoSearchContext:
++            // false, так что дубли разделов в глобальной выдаче исключены).
++            promise = searchContext === "" && Array.isArray(contextPaths) && contextPaths.length > 0
++                ? fetchRootPlusAllContexts(baseUrl, contextPaths)
++                : legacyFetchIndexes(baseUrl, searchContext);
+             cache.set(cacheKey, promise);
+         }
+         return promise;
+     }
+-    async search(baseUrl, searchContext, input, limit) {
++    async search(baseUrl, searchContext, input, limit, contextPaths) {
+         const rawTokens = tokenize(input, language);
+         if (rawTokens.length === 0) {
+             return [];
+         }
+-        const { wrappedIndexes, zhDictionary } = await this.lowLevelFetchIndexes(baseUrl, searchContext);
++        const { wrappedIndexes, zhDictionary } = await this.lowLevelFetchIndexes(baseUrl, searchContext, contextPaths);
+         const queries = smartQueries(rawTokens, zhDictionary);
+         const results = [];
+         search: for (const { term, tokens } of queries) {
+@@ -68,6 +73,36 @@ export class SearchWorker {
+         return results;
+     }
+ }
++/* SG patch (H6553): глобальный поиск без контекста — root + все контексты.
++ * Файлы качаются параллельно, lunr-индексы разгружаются по каждому файлу;
++ * порядок обёрток: контексты в конфиг-порядке, root последним (он худой). */
++async function fetchRootPlusAllContexts(baseUrl, contextPaths) {
++    const dirs = ["", ...contextPaths.map((item) => (typeof item === "string" ? item : item.path))];
++    const jsons = await Promise.all(dirs.map((dir) => {
++        const url = `${baseUrl}${searchIndexUrl.replace("{dir}", dir ? `-${dir.replace(/\//g, "-")}` : "")}`;
++        const fullUrl = new URL(url, location.origin);
++        if (fullUrl.origin !== location.origin) {
++            throw new Error("Unexpected version url");
++        }
++        return fetch(url).then((res) => res.json());
++    }));
++    const wrappedIndexes = [];
++    const zhSet = new Set();
++    for (const json of jsons) {
++        json.forEach(({ documents, index }, type) => {
++            wrappedIndexes.push({ type, documents, index: lunr.Index.load(index) });
++        });
++        for (const item of json) {
++            for (const tuple of item.index.invertedIndex) {
++                if (/\p{Unified_Ideograph}/u.test(tuple[0][0])) {
++                    zhSet.add(tuple[0]);
++                }
++            }
++        }
++    }
++    return { wrappedIndexes, zhDictionary: Array.from(zhSet) };
++}
++
+ async function legacyFetchIndexes(baseUrl, searchContext) {
+     const url = `${baseUrl}${searchIndexUrl.replace("{dir}", searchContext ? `-${searchContext.replace(/\//g, "-")}` : "")}`;
+     // Catch potential attacks.
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js
 index 996d7f3..ed1f5b5 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/shared/constants.js
