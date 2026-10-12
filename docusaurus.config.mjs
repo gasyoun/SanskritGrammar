@@ -75,6 +75,27 @@ const config = {
         docsRouteBasePath: 'grammars',
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        // Per-раздел контексты поиска (MG 12-10-2026): из страницы раздела ищется
+        // только этот раздел (переключатель в строке поиска), «Всё» доступно там же.
+        // Страница /grammars/search всегда открывается глобальной — входящий ctx
+        // стрипает src/theme/SearchPage (рулинг MG «всегда ищет по всем разделам»).
+        useAllContextsWithNoSearchContext: true,
+        searchContextByPaths: [
+          { label: 'Апте', path: 'grammars/ApteSyntax_1885' },
+          { label: 'Бюлер', path: 'grammars/BuhlerLeitfaden_1923' },
+          { label: 'Конкорданс', path: 'grammars/Concordance' },
+          { label: 'Дхату', path: 'grammars/GasunsDhatu_2014' },
+          { label: 'Грамматические связи', path: 'grammars/GrammarRelations' },
+          { label: 'Кнауэр', path: 'grammars/KnauerFrazy_1908' },
+          { label: 'Кочергина', path: 'grammars/KocherginaUchebnik_1998' },
+          { label: 'Санграм', path: 'grammars/sangram' },
+          { label: 'Предметный конкорданс', path: 'grammars/SubjectConcordance' },
+          { label: 'Толчельников', path: 'grammars/TolchelnikovTalmud_2026' },
+          { label: 'Уитни', path: 'grammars/WhitneyGrammar_1889' },
+          { label: 'Зализняк 1975', path: 'grammars/ZalizniakMorphology_1975' },
+          { label: 'Зализняк 1978', path: 'grammars/ZalizniakOcherk_1978' },
+          { label: 'Зализняк 2004', path: 'grammars/ZalizniakKonspekt_2004' },
+        ],
       },
     ],
   ],
