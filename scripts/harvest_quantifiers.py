@@ -229,7 +229,7 @@ SOURCES = [
         "file": "KocherginaUchebnik_1998/Kochergina_unicode.mdx",
         "work": "Kochergina, Учебник санскрита, 1998",
         "lang": "ru",
-        "sec_rx": re.compile(r"^Занятие\s+([IVXLC]+)\s*$"),
+        "sec_rx": re.compile(r"^#{0,2}\s*Занятие\s+([IVXLC]+)\s*$"),
         "sec_search": False,
         "glossary_from": 11928,   # "# Словарь" — pure lexicon below this
         "body_from": 229,          # "Занятие I" — front-matter preface above is not grammar

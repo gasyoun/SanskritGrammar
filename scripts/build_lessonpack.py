@@ -95,7 +95,7 @@ def lesson_slice(zan: int) -> str:
     lines = SOURCE_MDX.read_text(encoding="utf-8").splitlines()
     start = end = None
     for i, ln in enumerate(lines):
-        s = ln.strip()
+        s = ln.strip().lstrip('#').strip()
         if start is None and s == marker:
             start = i
         elif start is not None and s == next_marker:
