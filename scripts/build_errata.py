@@ -254,6 +254,8 @@ def changelog_hints(changelog: Path, book_dir: str = None):
     hits = []
     for ln in changelog.read_text(encoding="utf-8").splitlines():
         low = ln.lower()
+        if ln.lstrip().startswith("#"):
+            continue  # a "### Fixed" heading matches "fixed" but is structure, not a hint
         if not any(k in low for k in CORRECTION_KEYWORDS):
             continue
         if book_dir is not None and book_dir.lower() not in low:
