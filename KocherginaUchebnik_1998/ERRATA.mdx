@@ -18,13 +18,10 @@ _Generated: 13-10-2026 · 4 errata (0 open · 4 fixed in the digital edition) ·
 | | | | | | | | | | | | _Маркер без точки при соседях с точкой. Правка в .docx (+1 символ)._ |
 
 > **CHANGELOG mentions a correction to this book** — if an erratum below was fixed in the source, set its `fixed_in` in `errata.yml`:
-> - ### Fixed
 > - **`build_lessonpack.py` regeneration drift fixed by teaching the generator the H4092
 > - already carries a fixed, non-"today" `GENERATED_DATE` constant for its own footer —
 > - **Status** = ✓ fixed in 0.16.0 / 0.17.0 с датой. Печатные опечатки книги по-прежнему **не**
-> - ### Fixed
 > - же соседями по занятию, у которых точка стоит. Исправлено **в источнике**
-> - ### Fixed
 > - точка была на месте) и занятие 30 (исправлено); второго пропущенного маркера нет.
 > - таблицы «Ревизии» добавлены во все четыре раздела рукописи; исправлен сбойный
 > - **HK-42 (a-/an- privative nouns, ~80% abstract) — part 2 sized, a third confound found (H1060)** — new instrument [`privative_noun_abstractness.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/privative_noun_abstractness.py) reuses `animacy_lookup.py`'s Sanskrit-WordNet sembank technique, rooted at abstraction/psychological_feature/knowledge/state/attribute/relation/event/act/phenomenon (all WordNet Tops nodes traditional grammar calls "abstract" — the narrow "abstraction" node alone gave a misleadingly low 30.6%). Measured **52.8% abstract** (171/324 classified privative noun lemmas) — short of ~80%, but NOT a refutation: candidate identification itself is contaminated by LEXICALIZED words that structurally pattern-match a-/an-+lemma without being felt as productive negations — asura ("demon") = a-+sura ("god", a real lemma), agni ("fire")+gni, aja ("goat")+ja, ahi ("snake")+hi, amṛta ("nectar")+mṛta. A minimum base-length filter doesn't fix this (checked). Same fundamental semantic-transparency wall as HK-226/227, discovered via a different structural pattern. Part 1 (≥1/3 of all prefixed nouns) stays untouched, same wall as HK-225/229. Results: [`hk42_privative_noun_abstractness_stats.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/hk42_privative_noun_abstractness_stats.json). (Sonnet 5 `claude-sonnet-5`, [H1060](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1060-Sonnet_SanskritGrammar_privative-noun-abstractness-hk42_16.07.26.md))
