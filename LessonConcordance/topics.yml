@@ -328,7 +328,7 @@ lessons:
 
   V:
     title: "Глаголы IV класса (ya к корню); сущ. м. р. на u (bhānu); висарга перед c/ch, ṭ/ṭh, t/th; предлог-преверб ā"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 652–788 (жирный делимитер «**Урок V.**», mdx 652 — план, риск-строка: единственный урок без заголовочного «# УРОК N.»; парсер ведёт нормализованный реестр)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 652–788 (заголовок «# УРОК V.»; маркер нормализован из жирного делимитера «**Урок V.**» — H6564)"
     claims: [HB-84, HB-85, HB-9, HB-10]
     reuse_clusters: []   # scripts/data/matches.json: строк урока V нет (сегментация предложений не дошла); дословные перекрытия с Кнауэром Nr.2 есть текстуально — курируемое наблюдение, не matches-строка
     corpus_layer: []     # corpus_layer.tsv: регистр начинается с урока XVIII, у урока V строк нет
@@ -707,7 +707,7 @@ lessons:
 
   XXXVIII:
     title: "Основа настоящего времени II класса: корень i, adhi-i; śī; корни на u/ū (tu, ru, stu, brū, sū); превербные глаголы"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5461–5646 (заголовок «# УРОК XXXVIII.»; дальше урок XXXIX начинается жирным делимитером «**Урок XXXIX**», mdx 5647 — план, риск-строка)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5461–5646 (заголовок «# УРОК XXXVIII.»; дальше урок XXXIX — обычный заголовок, mdx 5647)"
     claims: [HB-295, HB-296, HB-297, HB-298]
     reuse_clusters:
       - "4 совпадения упражнений с Knauer Nr. 11 (scripts/data/matches.json: buhler-1923.XXXVIII.875/.877/.880/.891 ↔ knauer-1908.11.*)"
@@ -780,6 +780,14 @@ lessons:
           zalizniak-1978: "Z: запись через ряды (§127 e-/i- для i; §129.4 staumi/stavīmi для stu) — у З-1978 запись есть даже там, где нет crosswalk-строки"
           kochergina: "K: класс даётся при глаголе (XVI: as, i, brū, stu…), морфонологической записи нет"
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/7 корней урока; i и stu в crosswalk отсутствуют — пробел реестра, задокументирован (как śaṃs/rakṣ/jīv урока I); corpus_layer.tsv урока: stu (stauti, MBh 14,53,10), ru (rauti, Hitop 1,82.2)"
+
+  XXXIX:
+    title: "Морфонология корней II класса в impf./imper.: корни на ṛ (jāgṛ; ṛ→r, guṇa перед uḥ), на c/j (vac → vak-ṣ/vag-dh), на d (vid → vit, 2 л. на t/висаргу), han; ś/ṣ/kṣ/mṛj → k/ṣ/ḍ (dviṣ, cakṣ, īś, vaś, mṛj); превербные глаголы"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5647–5856 (заголовок «# УРОК XXXIX.»; дальше урок XL — обычный заголовок, mdx 5857)"
+    claims: [HB-299, HB-300, HB-301, HB-302, HB-303, HB-304, HB-305, HB-306, HB-307]
+    reuse_clusters: []   # scripts/data/matches.json: строк урока XXXIX нет (сегментация предложений не дошла — урок был невидим парсеру до H6564)
+    corpus_layer: []     # corpus_layer.tsv: строк у урока XXXIX нет (лакуна продолжается после XXXVIII — честно)
+    topics: []           # темы по мере batch-минта (E8); маркер нормализован из жирного делимитера «**Урок XXXIX**» — H6564
 
   VI:
     title: "Морфонология основ IV класса (īv-удлинение; корневые i/u перед группой на r/v; a-удлинение); ср. р. на u (madhu); сандхи конечного n"

@@ -1,4 +1,4 @@
-_Created: 25-08-2026 · Last updated: 05-09-2026_
+_Created: 25-08-2026 · Last updated: 13-10-2026_
 
 # Changelog — BuhlerLeitfaden_1923
 
@@ -10,6 +10,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+### Fixed
+- **Маркеры уроков V и XXXIX нормализованы до заголовков `## УРОК N.` (H6564, GLM-5.3-Flash `z-ai/glm-5.3-flash`).**
+  Последние два урока, невидимые парсеру маркеров (`extract_sentences.py` lesson_re) из-за
+  жирных делимитеров `**Урок V.**` (mdx 652) и `**Урок XXXIX**` (mdx 5647), получили
+  заголовки в формате «## УРОК N. <тема>» — собранная страница теперь несёт 48 якорей
+  `id=урок-*`. Текст обоих уроков сверен с исходником (`Buhler_Unicode.docx`): расхождений
+  нет, у XXXIX начало с §6 — дефект самого источника, не конверсии.
+  [LessonConcordance/topics.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/topics.yml): добавлена строка XXXIX
+  (claims HB-299…HB-307), обновлены локус-заметки V и XXXVIII; конкорданс
+  ([catalog.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/LessonConcordance/catalog.mdx), 46 уроков) и
+  [lesson-backlinks.json](https://github.com/gasyoun/SanskritGrammar/blob/main/src/lesson-backlinks.json) перегенерированы.
 
 ## [0.6.0] - 2026-08-31
 ### Added
