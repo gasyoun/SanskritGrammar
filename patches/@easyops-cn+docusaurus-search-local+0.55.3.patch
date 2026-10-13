@@ -1,8 +1,43 @@
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
-index 10ef222..e23eab8 100644
+index 10ef222..711ea64 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
 +++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchBar/SearchBar.jsx
-@@ -118,7 +118,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
+@@ -107,6 +107,34 @@ export default function SearchBar({ handleSearchBarToggle, }) {
+     const hidden = !!hideSearchBarWithNoSearchContext &&
+         Array.isArray(searchContextByPaths) &&
+         searchContext === "";
++    /* SG patch (H6672): прогрев индексов на простое страницы — загрузка стартует
++     * после load + requestIdleCallback, ДО открытия поиска; воркер кэширует по
++     * сессии, так что последующий фокус получает готовый promise мгновенно.
++     * HTTP-кэш (hashed: filename) переиспользует файлы между визитами. */
++    useEffect(() => {
++        if (hidden) {
++            return undefined;
++        }
++        let idleId = null;
++        let timerId = null;
++        const warm = () => {
++            fetchIndexesByWorker(versionUrl, searchContext, searchContextByPaths).catch(() => { /* офлайн — прогрев молча пропускается */ });
++        };
++        if (typeof requestIdleCallback === "function") {
++            idleId = requestIdleCallback(warm, { timeout: 8000 });
++        }
++        else {
++            timerId = setTimeout(warm, 4000);
++        }
++        return () => {
++            if (idleId !== null && typeof cancelIdleCallback === "function") {
++                cancelIdleCallback(idleId);
++            }
++            if (timerId !== null) {
++                clearTimeout(timerId);
++            }
++        };
++    }, [hidden, versionUrl, searchContext]);
+     const loadIndex = useCallback(async () => {
+         if (hidden || indexStateMap.current.get(searchContext)) {
+             // Do not load the index (again) if its already loaded or in the process of being loaded.
+@@ -118,7 +146,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
          const [autoComplete, openAskAIModule] = await Promise.all([
              fetchAutoCompleteJS(),
              askAi ? fetchOpenAskAI() : Promise.resolve(null),
@@ -11,7 +46,7 @@ index 10ef222..e23eab8 100644
          ]);
          if (openAskAIModule) {
              setAskAIWidgetComponent(() => openAskAIModule.AskAIWidget);
-@@ -200,7 +200,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
+@@ -200,7 +228,7 @@ export default function SearchBar({ handleSearchBarToggle, }) {
          }, [
              {
                  source: async (input, callback) => {
@@ -172,13 +207,49 @@ index 5ceff29..b88c942 100644
      return [];
  }
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
-index 4c84cd0..d56af95 100644
+index 4c84cd0..7f0a85e 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
 +++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
-@@ -7,25 +7,41 @@ import { SearchDocumentType, } from "../../shared/interfaces";
+@@ -7,25 +7,77 @@ import { SearchDocumentType, } from "../../shared/interfaces";
  import { sortSearchResults } from "../utils/sortSearchResults";
  import { processTreeStatusOfSearchResults } from "../utils/processTreeStatusOfSearchResults";
  const cache = new Map();
++/* SG patch (H6672): ПРИОРИТЕТ РАЗДЕЛОВ в ранжировании (рулинг MG 13-10).
++ * При близких скорах (квантование: 10 групп от лидера) выше результат из
++ * более раннего в contextPaths раздела; между группами и внутри раздела — скор.
++ * Порядок приоритета задаётся массивом scripts/search_contexts.mjs. */
++function sgSectionPriority(u, contextPaths) {
++    if (!u) {
++        return contextPaths.length + 1;
++    }
++    for (let i = 0; i < contextPaths.length; i++) {
++        const p = typeof contextPaths[i] === "string" ? contextPaths[i] : contextPaths[i].path;
++        if (u.includes(`/${p}/`) || u.endsWith(`/${p}`)) {
++            return i;
++        }
++    }
++    return contextPaths.length;
++}
++function sgApplySectionPriority(results, contextPaths) {
++    if (!Array.isArray(contextPaths) || contextPaths.length === 0 || results.length < 2) {
++        return;
++    }
++    const maxScore = Math.max(...results.map((r) => r.score || 0));
++    if (!(maxScore > 0)) {
++        return;
++    }
++    const group = maxScore / 10;
++    const decorated = results.map((r) => ({
++        r,
++        q: Math.floor((r.score || 0) / group),
++        p: sgSectionPriority(r.document && r.document.u, contextPaths),
++    }));
++    decorated.sort((a, b) => (b.q - a.q) || (a.p - b.p) || ((b.r.score || 0) - (a.r.score || 0)));
++    results.length = 0;
++    for (const x of decorated) {
++        results.push(x.r);
++    }
++}
 +/* SG patch (H6579): родитель страницы может лежать в любом контекстном индексе —
 + * ищем по всем обёрткам, а не только wrappedIndexes[0]. */
 +function findParentDocument(wrappedIndexes, p) {
@@ -223,7 +294,7 @@ index 4c84cd0..d56af95 100644
          const queries = smartQueries(rawTokens, zhDictionary);
          const results = [];
          search: for (const { term, tokens } of queries) {
-@@ -52,7 +68,7 @@ export class SearchWorker {
+@@ -52,7 +104,7 @@ export class SearchWorker {
                          document,
                          type,
                          page: type !== SearchDocumentType.Title &&
@@ -232,7 +303,11 @@ index 4c84cd0..d56af95 100644
                          metadata: result.matchData.metadata,
                          tokens,
                          score: result.score,
-@@ -67,7 +83,87 @@ export class SearchWorker {
+@@ -64,10 +116,92 @@ export class SearchWorker {
+             }
+         }
+         sortSearchResults(results);
++        sgApplySectionPriority(results, contextPaths);
          processTreeStatusOfSearchResults(results);
          return results;
      }
@@ -283,6 +358,7 @@ index 4c84cd0..d56af95 100644
 +            }
 +        }
 +        sortSearchResults(results);
++        sgApplySectionPriority(results, contextPaths);
 +        processTreeStatusOfSearchResults(results);
 +        return { results, total: totalRefs.size };
 +    }
