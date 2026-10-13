@@ -67,19 +67,31 @@ index 1366314..d08ceba 100644
          "</span>",
          action,
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
-index 2efb8b4..8173ce7 100644
+index 2efb8b4..4020e5b 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
 +++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/SearchPage/SearchPage.jsx
-@@ -46,7 +46,7 @@ function SearchPageContent() {
+@@ -7,7 +7,7 @@ import { translate } from "@docusaurus/Translate";
+ import { usePluralForm } from "@docusaurus/theme-common";
+ import clsx from "clsx";
+ import useSearchQuery from "../hooks/useSearchQuery";
+-import { fetchIndexesByWorker, searchByWorker } from "../searchByWorker";
++import { fetchIndexesByWorker, searchWithCountByWorker } from "../searchByWorker";
+ import { SearchDocumentType, } from "../../../shared/interfaces";
+ import { highlight } from "../../utils/highlight";
+ import { highlightStemmed } from "../../utils/highlightStemmed";
+@@ -46,8 +46,9 @@ function SearchPageContent() {
          updateSearchPath(searchQuery);
          if (searchQuery) {
              (async () => {
 -                const results = await searchByWorker(versionUrl, searchContext, searchQuery, 100);
-+                const results = await searchByWorker(versionUrl, searchContext, searchQuery, 100, searchContextByPaths);
-                 setSearchResults(results);
+-                setSearchResults(results);
++                // SG patch (H6579): кап страницы 100 → 300 + честный total из воркера.
++                const { results, total } = await searchWithCountByWorker(versionUrl, searchContext, searchQuery, 300, searchContextByPaths);
++                setSearchResults({ results, total });
              })();
          }
-@@ -69,8 +69,8 @@ function SearchPageContent() {
+         else {
+@@ -69,8 +70,8 @@ function SearchPageContent() {
          async function doFetchIndexes() {
              if (!Array.isArray(searchContextByPaths) ||
                  searchContext ||
@@ -90,7 +102,7 @@ index 2efb8b4..8173ce7 100644
              }
              setSearchWorkerReady(true);
          }
-@@ -99,7 +99,7 @@ function SearchPageContent() {
+@@ -99,7 +100,7 @@ function SearchPageContent() {
            </div>
            {Array.isArray(searchContextByPaths) ? (<div className={clsx("col", "col--3", "padding-left--none", styles.searchContextColumn)}>
                <select name="search-context" className={styles.searchContextInput} id="context-selector" value={searchContext} onChange={(e) => updateSearchContext(e.target.value)}>
@@ -99,11 +111,38 @@ index 2efb8b4..8173ce7 100644
                      {translate({
                      id: "theme.SearchPage.searchContext.everywhere",
                      message: "Everywhere",
+@@ -120,12 +121,11 @@ function SearchPageContent() {
+           </div>)}
+ 
+         {searchResults &&
+-            (searchResults.length > 0 ? (<p>
+-              {selectMessage(searchResults.length, translate({
+-                    id: "theme.SearchPage.documentsFound.plurals",
+-                    message: "1 document found|{count} documents found",
+-                    description: 'Pluralized label for "{count} documents found". Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
+-                }, { count: searchResults.length }))}
++            (searchResults.results.length > 0 ? (<p>
++              {/* SG patch (H6579): честный счётчик — всего найдено / показано (кап 300). */}
++              {`Найдено документов: ${searchResults.total}`}{searchResults.total > searchResults.results.length
++                ? ` — показаны первые ${searchResults.results.length}`
++                : ""}
+             </p>) : process.env.NODE_ENV === "production" ? (<p>
+               {translate({
+                     id: "theme.SearchPage.noResultsText",
+@@ -139,7 +139,7 @@ function SearchPageContent() {
+ 
+         <section>
+           {searchResults &&
+-            searchResults.map((item) => (<SearchResultItem key={item.document.i} searchResult={item}/>))}
++            searchResults.results.map((item) => (<SearchResultItem key={item.document.i} searchResult={item}/>))}
+         </section>
+       </div>
+     </React.Fragment>);
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
-index 5ceff29..5b05e04 100644
+index 5ceff29..b88c942 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
 +++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/searchByWorker.js
-@@ -9,16 +9,16 @@ function getRemoteWorker() {
+@@ -9,16 +9,24 @@ function getRemoteWorker() {
      }
      return remoteWorkerPromise;
  }
@@ -116,21 +155,41 @@ index 5ceff29..5b05e04 100644
      }
  }
 -export async function searchByWorker(baseUrl, searchContext, input, limit) {
-+export async function searchByWorker(baseUrl, searchContext, input, limit, contextPaths) {
++/* SG patch (H6579): поиск страницы с честным total (без раннего выхода). */
++export async function searchWithCountByWorker(baseUrl, searchContext, input, limit, contextPaths) {
      if (process.env.NODE_ENV === "production") {
          const remoteWorker = await getRemoteWorker();
 -        return remoteWorker.search(baseUrl, searchContext, input, limit);
++        return remoteWorker.searchWithCount(baseUrl, searchContext, input, limit, contextPaths);
++    }
++    return { results: [], total: 0 };
++}
++export async function searchByWorker(baseUrl, searchContext, input, limit, contextPaths) {
++    if (process.env.NODE_ENV === "production") {
++        const remoteWorker = await getRemoteWorker();
 +        return remoteWorker.search(baseUrl, searchContext, input, limit, contextPaths);
      }
      return [];
  }
 diff --git a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
-index 4c84cd0..838a905 100644
+index 4c84cd0..d56af95 100644
 --- a/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
 +++ b/node_modules/@easyops-cn/docusaurus-search-local/dist/client/client/theme/worker.js
-@@ -8,24 +8,29 @@ import { sortSearchResults } from "../utils/sortSearchResults";
+@@ -7,25 +7,41 @@ import { SearchDocumentType, } from "../../shared/interfaces";
+ import { sortSearchResults } from "../utils/sortSearchResults";
  import { processTreeStatusOfSearchResults } from "../utils/processTreeStatusOfSearchResults";
  const cache = new Map();
++/* SG patch (H6579): родитель страницы может лежать в любом контекстном индексе —
++ * ищем по всем обёрткам, а не только wrappedIndexes[0]. */
++function findParentDocument(wrappedIndexes, p) {
++    for (const { documents } of wrappedIndexes) {
++        const doc = documents.find((doc) => doc.i === p);
++        if (doc) {
++            return doc;
++        }
++    }
++    return undefined;
++}
  export class SearchWorker {
 -    async fetchIndexes(baseUrl, searchContext) {
 -        await this.lowLevelFetchIndexes(baseUrl, searchContext);
@@ -164,10 +223,70 @@ index 4c84cd0..838a905 100644
          const queries = smartQueries(rawTokens, zhDictionary);
          const results = [];
          search: for (const { term, tokens } of queries) {
-@@ -68,6 +73,36 @@ export class SearchWorker {
+@@ -52,7 +68,7 @@ export class SearchWorker {
+                         document,
+                         type,
+                         page: type !== SearchDocumentType.Title &&
+-                            wrappedIndexes[0].documents.find((doc) => doc.i === document.p),
++                            findParentDocument(wrappedIndexes, document.p),
+                         metadata: result.matchData.metadata,
+                         tokens,
+                         score: result.score,
+@@ -67,7 +83,87 @@ export class SearchWorker {
+         processTreeStatusOfSearchResults(results);
          return results;
      }
- }
++    /* SG patch (H6579): как search(), но без раннего выхода — считает ВСЕ
++     * совпадения (totalRefs), маппит в объекты только первые limit;
++     * страница поиска показывает «Найдено N — показаны первые M». */
++    async searchWithCount(baseUrl, searchContext, input, limit, contextPaths) {
++        const rawTokens = tokenize(input, language);
++        if (rawTokens.length === 0) {
++            return { results: [], total: 0 };
++        }
++        const { wrappedIndexes, zhDictionary } = await this.lowLevelFetchIndexes(baseUrl, searchContext, contextPaths);
++        const queries = smartQueries(rawTokens, zhDictionary);
++        const results = [];
++        const seen = new Set();
++        const totalRefs = new Set();
++        for (const { term, tokens } of queries) {
++            for (const { documents, index, type } of wrappedIndexes) {
++                const matches = index
++                    .query((query) => {
++                    for (const item of term) {
++                        query.term(item.value, {
++                            wildcard: item.wildcard,
++                            presence: item.presence,
++                            ...(item.editDistance
++                                ? { editDistance: item.editDistance }
++                                : null),
++                        });
++                    }
++                });
++                for (const result of matches) {
++                    totalRefs.add(result.ref);
++                    if (seen.has(result.ref) || results.length >= limit) {
++                        continue;
++                    }
++                    seen.add(result.ref);
++                    const document = documents.find((doc) => doc.i.toString() === result.ref);
++                    results.push({
++                        document,
++                        type,
++                        page: type !== SearchDocumentType.Title &&
++                            findParentDocument(wrappedIndexes, document.p),
++                        metadata: result.matchData.metadata,
++                        tokens,
++                        score: result.score,
++                    });
++                }
++            }
++        }
++        sortSearchResults(results);
++        processTreeStatusOfSearchResults(results);
++        return { results, total: totalRefs.size };
++    }
++}
 +/* SG patch (H6553): глобальный поиск без контекста — root + все контексты.
 + * Файлы качаются параллельно, lunr-индексы разгружаются по каждому файлу;
 + * порядок обёрток: контексты в конфиг-порядке, root последним (он худой). */
@@ -196,7 +315,7 @@ index 4c84cd0..838a905 100644
 +        }
 +    }
 +    return { wrappedIndexes, zhDictionary: Array.from(zhSet) };
-+}
+ }
 +
  async function legacyFetchIndexes(baseUrl, searchContext) {
      const url = `${baseUrl}${searchIndexUrl.replace("{dir}", searchContext ? `-${searchContext.replace(/\//g, "-")}` : "")}`;
