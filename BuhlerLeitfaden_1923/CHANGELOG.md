@@ -11,6 +11,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-10-13
 ### Fixed
 - **Маркеры уроков V и XXXIX нормализованы до заголовков `## УРОК N.` (H6564, GLM-5.3-Flash `z-ai/glm-5.3-flash`).**
   Последние два урока, невидимые парсеру маркеров (`extract_sentences.py` lesson_re) из-за
