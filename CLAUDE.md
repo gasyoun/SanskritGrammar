@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 15-09-2026_
+_Created: 20-07-2026 · Last updated: 13-10-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
@@ -64,6 +64,28 @@ Three layers in one repo (full orientation:
   before generation; the runtime SHA refusal is intentional. The independent
   and override implementations were reconciled in
   [`docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/architecture/H1913_DUAL_RUN_RECONCILIATION.md).
+
+## Site search (H6553/H6567/H6593/H6672)
+
+Offline search = `@easyops-cn/docusaurus-search-local` **0.55.3**, forked by hand via
+[patches/@easyops-cn+docusaurus-search-local+0.55.3.patch](https://github.com/gasyoun/SanskritGrammar/blob/main/patches/@easyops-cn+docusaurus-search-local+0.55.3.patch)
+(per-раздел контексты, худой root, глобальная выдача «Везде» = root + все контексты
+параллельно, счётчик «Найдено документов: N — показаны первые 300», строгие тиры:
+книги всегда выше утилит, прогрев индексов на простое страницы). Sync rules:
+
+- **[scripts/search_contexts.mjs](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/search_contexts.mjs)
+  is the single source**: порядок массива = приоритет тиров (первые
+  `SG_TIER_BOUNDARY = 10` записей патча — книги), подписи и пути контекстов, список
+  для [docusaurus.config.mjs](https://github.com/gasyoun/SanskritGrammar/blob/main/docusaurus.config.mjs).
+  Новый раздел книги = одна строка в этот массив; перенос строки через границу 10
+  меняет тир — правьте `SG_TIER_BOUNDARY` в патче тем же PR.
+- **Пересборка патча вручную**: `patch-package` 8.0.1 падает на Node 26 при создании
+  чистого референса — `npm pack @easyops-cn/docusaurus-search-local@0.55.3`, diff
+  против пропатченных `node_modules`, формат `a/node_modules/...`; dry-run
+  `patch -p1 --dry-run` на чистой копии обязателен.
+- **Страница поиска = `/search/`** (корень сайта, не `/grammars/search/`) и всегда
+  открывается глобальной — входящий `ctx` стрипает
+  [src/theme/SearchPage/index.jsx](https://github.com/gasyoun/SanskritGrammar/blob/main/src/theme/SearchPage/index.jsx).
 
 ## Common commands
 
