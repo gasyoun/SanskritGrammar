@@ -4,7 +4,7 @@ _Auto-generated from [`claims.yml`](https://github.com/gasyoun/SanskritGrammar/b
 
 _Generated: 13-10-2026 · 17 verified · 0 flagged (overstated/false or presentation issue) · 0 in the harvest backlog · 17 claims total_
 
-Each claim is graded on **two axes**: **fact** (true vs. the DCS corpus + Whitney 1889 + Tolchelnikov-Talmud, with the actual number) and **pedagogy** (is the *presentation* defensible). DCS figures reproduced by [`verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/verify_claims_dcs.py).
+Each claim is graded on **two axes**: **fact** (true vs. the DCS corpus + Whitney 1889 + Tolchelnikov-Talmud, with the actual number) and **pedagogy** (is the *presentation* defensible). DCS figures reproduced by the shared battery [`KocherginaUchebnik_1998/verify_claims_dcs.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/verify_claims_dcs.py).
 
 | ID | Location | Claim (abridged) | Kind | Fact | Number | Pedagogy | Ref |
 |--|--|--|--|--|--|--|--|
