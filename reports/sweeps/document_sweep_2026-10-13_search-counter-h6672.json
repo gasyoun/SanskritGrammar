@@ -1,0 +1,659 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-10-13 13:14:48",
+  "artifacts": [
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritGrammar/patches/@easyops-cn+docusaurus-search-local+0.55.3.patch",
+      "repo": "/Users/mac/Documents/GitHub/SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "поиск — самоочевидный UI сайта"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/CLAUDE.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "правило живёт в CLAUDE.md"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "доменных доков про UI сайта нет"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "артефакты — код и патч, не документы"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "записи в changelog_queue/ (h6552/h6593/h6672), cut-release на следующем срезе"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/.ai_state.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "затронутых task-issue нет"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "строк @DO не родилось"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "rows written by mint/close pipeline, 4 handoffs archived"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "продукт SanskritGrammar, не фича SL"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "второго docusaurus-потребителя нет"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "рёбра не менялись"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "деструктивных фактов нет, гочи в FINDINGS §1590"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "вопрос «ровно 100» закрыт H6593"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "тезисного слоя не касается"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "хуки не менялись"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "статус не менялся"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "hub-файлы не менялись"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "FINDINGS §1590 (e463a1a)"
+        }
+      ]
+    },
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritGrammar/scripts/search_contexts.mjs",
+      "repo": "/Users/mac/Documents/GitHub/SanskritGrammar",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "поиск — самоочевидный UI сайта"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/CLAUDE.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "правило живёт в CLAUDE.md"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "доменных доков про UI сайта нет"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "артефакты — код и патч, не документы"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "записи в changelog_queue/ (h6552/h6593/h6672), cut-release на следующем срезе"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "missing",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/.ai_state.md (file exists, no mention of artifact found)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "затронутых task-issue нет"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "строк @DO не родилось"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "rows written by mint/close pipeline, 4 handoffs archived"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "продукт SanskritGrammar, не фича SL"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "второго docusaurus-потребителя нет"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "рёбра не менялись"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "деструктивных фактов нет, гочи в FINDINGS §1590"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "вопрос «ровно 100» закрыт H6593"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "тезисного слоя не касается"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "хуки не менялись"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "статус не менялся"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "hub-файлы не менялись"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "FINDINGS §1590 (e463a1a)"
+        }
+      ]
+    },
+    {
+      "artifact": "/Users/mac/Documents/GitHub/SanskritGrammar/src/theme/SearchPage/index.jsx",
+      "repo": "/Users/mac/Documents/GitHub/SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/README.md:43: | [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th iss"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/CLAUDE.md:74: | `npm run errata` | regenerate every book's `ERRATA.md` + the index from `errata.yml` |"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "правило живёт в CLAUDE.md"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "доменных доков про UI сайта нет"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "артефакты — код и патч, не документы"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/CHANGELOG.md:16: - **A04 (Sonnet 5 `claude-sonnet-5`): Q3.4 three-scheme morphoclass agreement — Fleiss κ / Krippendorff α, never run before this pass (24-09-2026).** [`ROADMAP_"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritGrammar/.ai_state.md:82: - **✅ H1677 — runbooks index + LAST_MILE roadmap metadoc CLOSED 28-07-2026 (Sonnet 5 `claude-sonnet-5`).**"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "затронутых task-issue нет"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/GTD_NEXT_ACTIONS.md:2: > 📇 Slim index: [hub_stubs/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/hub_stubs/GTD_NEXT_ACTIONS.md) — read first; grep this hub; never wh"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/handoffs/README.md:1: # Handoffs — status index"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/SanskritLexicography/FEATURES_INDEX.md:3: # FEATURES_INDEX.md — what the Sanskrit Lexicon project actually has"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/REUSE_INDEX.md:3: # REUSE_INDEX.md — Sanskrit materials & tools you already own"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/PROJECT_INTERLINKS.md:3: _Created: 23-06-2026 · Last updated: 10-10-2026 (Sanskrit-cluster spine-completion pass, MG-ordered zero-edge audit: 14 edges — BEN/WIL/IEG per-dict spine rows,"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/DANGER_FACTS.md:41: | **Never re-spell `~~h<N>` in a pwg_ru sub-card key — it is the IDENTITY of ~11k already-promoted store rows.** `~~h<N>` is `gen_root_split`'s 0-based `enumera"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/QUESTIONS_LOG.md:31: LLM classifies it against the existing index — same underlying ask in different"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "тезисного слоя не касается"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/claude-config/HOOKS_INDEX.md:1: # HOOKS_INDEX — the per-hook roster of the claude-config hook suite"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/REPO_STATUS_ROLLUP.md:4: > 📇 Slim index: [hub_stubs/REPO_STATUS_ROLLUP.md](https://github.com/gasyoun/Uprava/blob/main/hub_stubs/REPO_STATUS_ROLLUP.md) — read first; grep this hub; neve"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "present",
+          "evidence": "/Users/mac/Documents/GitHub/Uprava/tools/hub_manifest.json:50: \"id\": \"reuse-index\","
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "FINDINGS §1590 (e463a1a)"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "host": "MacBook-Air.local",
+    "git_head": "2b257d325e7a057efbb883b38b8f8274698b4706",
+    "git_branch": "main",
+    "handoff": "H6672"
+  }
+}
