@@ -26,6 +26,7 @@ _Generated: 13-10-2026 · 8 errata (8 open · 0 fixed in the digital edition) ·
 | | | | | | | | | | | | _printed 'гласный' (vowel) contradicts every adjacent example — āśayati→āśiśat, arjayati→arjijat, īkṣayati→aicikṣat all double a CONSONANT_ |
 
 > **CHANGELOG mentions a correction to this book** — if an erratum below was fixed in the source, set its `fixed_in` in `errata.yml`:
+> - ### Fixed
 > - **Honest caveats baked into the report.** The **~3.9 % dependency-parse ceiling** is the headline, not the confirmation rate: a zero dep-count is never disconfirming on its own, so CONFIRMED is a floor. Each relation matches its **most specific** DCS lemma (reading-stem first, anusvāra `ṁ→ṃ` normalisation recovering 11 prefixed verbs like `saṃdhā`/`praśaṃs`/`śaṃs`; bare root only as fallback) — never summing stem + root. NOT-ADJUDICABLE is dominated by lemma-form mismatches (Scherzl guṇa `sarj` vs DCS `sṛj`), not missing verbs; closing it needs a stem→root normaliser (guṇa/vṛddhi undo), left as a follow-up.
 > - **8 FALSE claim-verification misprints transcribed into [`errata.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/errata.yml)** — the 0.3.0 entry below queued these as "candidates" but never actually wrote them; closed the gap (HB-60/133/186/199/200/211/219/372, `page: 0` + Урок/mdx-line locator, no printed pagination available for this book). `ERRATA.md` regenerated (8 open, 0 fixed). (Sonnet 5 `claude-sonnet-5`)
 

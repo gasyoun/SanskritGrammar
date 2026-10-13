@@ -80,6 +80,12 @@ jobs:
             /*/CLAIMS_VERIFIED.md
             /*/claims.json
             /*/ERRATA.mdx
+            # scripts/build_claims.py probes (ROOT/book/verify_claims_dcs.py).exists()
+            # to pick the DCS-battery wording — without this line the sparse tree
+            # always renders the "shared battery" fallback and the PR-side drift
+            # refusal trips on every PR touching the trigger paths (measured
+            # 13-10-2026: 4 phantom CLAIMS_VERIFIED diffs on the v0.122.9 cut).
+            /*/verify_claims_dcs.py
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"

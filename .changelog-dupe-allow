@@ -1,0 +1,31 @@
+# Allowlist for scripts/changelog_duplicate_bullets.py (consumed by
+# Uprava/tools/cut_release.py exit-8 gate and the pre-push hook).
+#
+# Each non-comment line is a SUBSTRING: any '- ' bullet whose first line
+# contains it is skipped by the duplicate-entry gate. Add ONLY boilerplate
+# that legitimately repeats across entries — never substantive prose.
+# A skipped bullet still SHIPS in the release notes; it is only exempt
+# from the "same entry under two sections" refusal.
+#
+# Seeded 13-10-2026 for the 0.122.9 cut (73-fragment Bühler-concordance
+# batch, lessons I–XLVIII + search-wave receipts). Every line below is a
+# per-lesson/per-pass verification receipt, textually identical across
+# fragments because the command AND its outcome were identical in each
+# lesson — the guard's own documented legitimate-repeat case. None of them
+# collides with any released CHANGELOG bullet (audited 13-10-2026: zero
+# CHANGELOG hits for all nine; collision scan over all queue bullets).
+#
+# NOTE on '— +17 строк': it additionally matches two UNIQUE lesson-count
+# bullets ('+17 строк VIII' in lesson-viii, '+17 строк XVIII' in
+# lesson-xviii). Those two stay visible in the notes; they are only
+# gate-exempt as a side effect — inseparable by substring match because
+# each unique line is the dupe line plus a numeral suffix.
+— PASS (all clean, 0 ошибок)
+0 file(s) with real changes
+— регенерированы
+PASS: all clean.
+План: BUHLER_LESSON_CONCORDANCE_PLAN_2026.md (виза D1–D16, адденды E1–E13)
+— +18 строк
+— +17 строк
+— +15 строк
+spots validated: 51 local OK, 3 external
