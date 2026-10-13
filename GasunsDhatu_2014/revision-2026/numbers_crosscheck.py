@@ -98,7 +98,9 @@ PCT_SLASH_RE = re.compile(
 )
 SUM_RE = re.compile(r"(\d[\d  ]*)\s*\+\s*(\d[\d  ]*)\s*=\s*(\d[\d  ]*)(?!\s*[%,.]\d)")
 
-ILLUSTRATION_HEADING = "# Список иллюстративного материала"
+# Level-agnostic (H6563 h2-promotion): matches the heading at any level; the
+# block ends at the next heading of any level (sections share one level).
+ILLUSTRATION_HEADING = "Список иллюстративного материала"
 ILLUSTRATION_ROW_RE = re.compile(r"^(?P<kind>Таблица|Рисунок)\s+(?P<num>\d+)\s+(?P<title>.+?)\s+(?P<page>\d+)$")
 
 
@@ -310,9 +312,10 @@ def illustration_block(main_lines):
     """
     start = end = None
     for no, text in main_lines:
-        if text.strip() == ILLUSTRATION_HEADING:
+        stripped = text.strip()
+        if stripped.lstrip("#").strip() == ILLUSTRATION_HEADING:
             start = no
-        elif start is not None and text.startswith("# "):
+        elif start is not None and stripped.startswith("#"):
             end = no
             break
     return start, (end or (main_lines[-1][0] + 1 if main_lines else None))
