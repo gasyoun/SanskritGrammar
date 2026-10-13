@@ -52,7 +52,7 @@ BOOKS = {
         "year": 1908,
         "edition_year": 1908,
         "path": os.path.join(ROOT, "KnauerFrazy_1908", "Frazy-Knauer-03.05.2023.mdx"),
-        "lesson_re": re.compile(r"^#\s*Nr\.\s*(\d+)\s*\(([^)]*)\)\.?\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{1,2}\s*Nr\.\s*(\d+)\s*\(([^)]*)\)\.?\s*$", re.MULTILINE),
     },
     "kochergina": {
         "label": "Kochergina 1998",
@@ -66,7 +66,7 @@ BOOKS = {
         "year": 1885,
         "edition_year": 1885,
         "path": os.path.join(ROOT, "ApteSyntax_1885", "Apte-unicode.mdx"),
-        "lesson_re": re.compile(r"^#\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{1,2}\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
     },
 }
 
