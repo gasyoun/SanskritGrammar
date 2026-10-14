@@ -249,7 +249,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 10/12 глаголов урока (по корневой тождественности) — sṛj и hvā отсутствуют; ловушка написания (поймана DeepSeek-спот-чеком 06-10): sarj есть в crosswalk как ДРУГОЙ корень («creak», A₁, whitney_no 833) — наивный поиск по написанию даёт ложное покрытие; hvā/hve нет вовсе (пробел реестра, как śaṃs/rakṣ/jīv урока I и i/stu урока XXXVIII); школьный номер класса в записи Зализняка неоднороден: внутри VI — I1 (kṣip/viś/iṣ/diś/sic), R1 (kṛṣ/spṛś), A1/R1 (pracch), внутри I — A1+I2 (sad), U1/U2 (guh): ряд ≠ класс"
   IV:
     title: "Существительные м./ср. р. на i (agni, vāri); правила saṃdhi: aḥ→o/a, āḥ→ā, ar/ār→r; глаголы VI класса"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 532–651 (заголовок «# УРОК IV.»; дальше урок V начинается жирным делимитером «**Урок V.**», mdx 652 — план, риск-строка)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 532–651 (заголовок «# УРОК IV.»; дальше урок V — обычный заголовок, mdx 652 (маркер нормализован — H6564))"
     claims: [HB-79, HB-80, HB-81, HB-82, HB-83]
     reuse_clusters:
       - "3 совпадения упражнений с Kochergina XIII (scripts/data/matches.json: buhler-1923.IV.50 ↔ kochergina-1998.XIII.268, exact 1.0; IV.52 ↔ XIII.263, exact 1.0; IV.72 ↔ XIII.264, score 0.95)"
@@ -707,7 +707,7 @@ lessons:
 
   XXXVIII:
     title: "Основа настоящего времени II класса: корень i, adhi-i; śī; корни на u/ū (tu, ru, stu, brū, sū); превербные глаголы"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5461–5646 (заголовок «# УРОК XXXVIII.»; дальше урок XXXIX — обычный заголовок, mdx 5647)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5462–5648 (заголовок «# УРОК XXXVIII.»; дальше урок XXXIX — обычный заголовок, mdx 5649; сквозная нумерация II класса: §§2–5 — продолжение §1 из XXXVII, далее §§6–10 — XXXIX, §§11–14 — XL; помета H6674)"
     claims: [HB-295, HB-296, HB-297, HB-298]
     reuse_clusters:
       - "4 совпадения упражнений с Knauer Nr. 11 (scripts/data/matches.json: buhler-1923.XXXVIII.875/.877/.880/.891 ↔ knauer-1908.11.*)"
@@ -717,7 +717,7 @@ lessons:
     topics:
       - key: present-class-ii
         title: "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i Ā. — атематическое, окончания прямо на корне"
-        buhler_locus: "урок XXXVIII, §2 (mdx 5463–5515): парадигмы i P. / adhi-i Ā. в ind., impf., imper."
+        buhler_locus: "урок XXXVIII, §2 (mdx 5465–5517): парадигмы i P. / adhi-i Ā. в ind., impf., imper."
         topic_claims: []
         spots:
           "kochergina-lesson:XVI": "личные окончания присоединяются непосредственно к корню глагола"
@@ -726,14 +726,14 @@ lessons:
           "sangram-article:thematic-present": "атематические классы концентрируются именно в"
         exceptions:
           verdict: "CONFIRMED-WITH-NUANCE (на этом локусе)"
-          buhler: "B− — чистая парадигма i/adhi-i без списка исключений; нерегулярный imper. ihi стоит в таблице без оговорки (mdx 5509)"
+          buhler: "B− — чистая парадигма i/adhi-i без списка исключений; нерегулярный imper. ihi стоит в таблице без оговорки (mdx 5511)"
           whitney: "W+ — §603/610 (root-class, i в списке), §§612–616 систематика сильных/слабых форм, §618 архаичные tāt/ām (vittā́t, brūtā́t, yātā́t) и ведийские tana-окончания"
           zalizniak-1978: "Z+ — §129.1: i «практически регулярно», но NB: i→y/iy перед гласной, аугмент, imper. ihi; med. только в adhi-i с полной парадигмой (-aiyi, -iṣva, -ayai, -iyīya)"
           kochergina: "K+ — Занятие XVI: класс II «постепенно делается непродуктивным» + список 10 употребительных глаголов (as, i, brū, svap, yā, vā, vid, stu, han, ad)"
         notes: "adhi-i — единственный средний залог урока; Кнауэр Nr. 11 переиспользует 4 предложения упражнения урока (Concordance matches); sangram: класс II — 5 931 токен, атематический, концентрируется в частотных корнях"
       - key: class-ii-irregulars
         title: "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 pl), корни на u (vṛddhi au; tu/ru/stu guṇa+ī), на ū (uv; brū ī), sū без guṇa"
-        buhler_locus: "урок XXXVIII, §§3–5 (mdx 5517–5561): śete/śerate, stauti/stavīmi, bravīmi/bruvanti, suvai"
+        buhler_locus: "урок XXXVIII, §§3–5 (mdx 5519–5563): śete/śerate, stauti/stavīmi, bravīmi/bruvanti, suvai"
         topic_claims: [HB-295, HB-296, HB-297, HB-298]
         spots:
           "kochergina-lesson:XVII": "в ступени vṛddhi в сильных формах"
@@ -748,7 +748,7 @@ lessons:
         notes: "Ядро гипотезы MG на этом уроке: Бюлер исключения ДАЁТ (§§3–5), Уитни плотнейший + ведийские варианты, З-1978 не «без исключений», а с перегруппировкой в ряды; Кочергина частична (śī/sū пропущены)"
       - key: verb-prefixes
         title: "Превербные глаголы урока: apa-i, astam-i, abhi-i/upa-i, ud-i, adhi-i, pra-/vi-brū"
-        buhler_locus: "урок XXXVIII, список «Глаголы» (mdx 5563–5575)"
+        buhler_locus: "урок XXXVIII, список «Глаголы» (mdx 5565–5577)"
         topic_claims: []
         spots:
           "sangram-article:preverbs": "модифицирует его значение"
@@ -783,7 +783,7 @@ lessons:
 
   XXXIX:
     title: "Морфонология корней II класса в impf./imper.: корни на ṛ (jāgṛ; ṛ→r, guṇa перед uḥ), на c/j (vac → vak-ṣ/vag-dh), на d (vid → vit, 2 л. на t/висаргу), han; ś/ṣ/kṣ/mṛj → k/ṣ/ḍ (dviṣ, cakṣ, īś, vaś, mṛj); превербные глаголы"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5647–5856 (заголовок «# УРОК XXXIX.»; дальше урок XL — обычный заголовок, mdx 5857)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5649–5859 (заголовок «# УРОК XXXIX.»; дальше урок XL — обычный заголовок, mdx 5860; сквозная нумерация II класса: §§6–10 — продолжение §1 из XXXVII и §§2–5 из XXXVIII, далее §§11–14 — XL; помета H6674)"
     claims: [HB-299, HB-300, HB-301, HB-302, HB-303, HB-304, HB-305, HB-306, HB-307]
     reuse_clusters: []   # scripts/data/matches.json: строк урока XXXIX нет (сегментация предложений не дошла — урок был невидим парсеру до H6564)
     corpus_layer: []     # corpus_layer.tsv: строк у урока XXXIX нет (лакуна продолжается после XXXVIII — честно)
@@ -3151,7 +3151,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 5/5 корней урока — полное покрытие; главная находка: все «восьмые» Бюлера на n = З-ряд N₁, kṛ = R₁, а duṣ — вовсе IV класс (ряд U₁); corpus_layer.tsv урока: строк нет"
   XXXVII:
     title: "IX класс: вставка nā [ṇā]/nī [ṇī]/n [ṇ]; сокращение dhū/pū/lū/ṝ перед nā (dhunāti, stṛṇāti), gṛhṇāti и jānāti; 2 imper. par. согласных корней āna [āṇa] + утрата среднего носового (bandh→badhnāti); II класс: окончания прямо на корень, guṇa в сильных формах, корни на ā только P. (yā; ayān/ayuḥ)"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5241–5459 (заголовок «# УРОК XXXVII.»)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5241–5460 (заголовок «# УРОК XXXVII.»; сквозная нумерация II класса: §1 — начало серии, продолжение §§2–5 — XXXVIII, §§6–10 — XXXIX, §§11–14 — XL; помета H6674)"
     claims: [HB-51, HB-291, HB-292, HB-293, HB-294]
     reuse_clusters:
       - "2 нечётких совпадения словарных строк (scripts/data/matches.json, score 0.833, exact=false): jñā IX U ↔ Кочергина XXXIV.1217, snā II.-P ↔ XXXIV.1281 — словарный шум, не переиспользование предложений (честно)"
@@ -3160,7 +3160,7 @@ lessons:
     topics:
       - key: class-ix-nin-insertion
         title: "IX класс: вставка nā [ṇā] (сильные формы) / nī [ṇī] (слабые перед согласными) / n [ṇ] (перед гласными); полная парадигма krī в 4 наклонениях (krīṇāmi… krīṇīmaḥ… krīṇanti)"
-        buhler_locus: "урок XXXVII, вводный § (mdx 5243) + полная парадигма krī (mdx 5245–5295)"
+        buhler_locus: "урок XXXVII, вводный § (mdx 5244) + полная парадигма krī (mdx 5246–5296)"
         topic_claims: [HB-291]
         spots:
           "kochergina-lesson:XVI": "древнеиндийские ученые назвали kryādi"
@@ -3176,7 +3176,7 @@ lessons:
         notes: "Полное трёх-алломорфное покрытие у всех четырёх свидетелей; корпусная рамка sangram: IX — самый малочастотный из атематических (371 чисто-классифицируемый токен против 5 931 у II); Кнауэр Nr.12: aprīṇāt (prī IX, импф.) и vyavṛṇot (vṝ IX, импф. с приставкой) — живые формы"
       - key: class-ix-vowel-shortening
         title: "Сокращение конечного гласного корней dhū/pū/lū и всех корней на ṝ перед nā (dhunāti, lunāti, stṛṇāti); лексические singles: grah→gṛhṇāti (saṃprasāraṇa), jñā→jānāti (утрата носового)"
-        buhler_locus: "урок XXXVII, п.3 (mdx 5299–5301): «Конечный гласный корней dhū…, pū…, lū…, и всех корней на ṝ сокращается перед признаком настоящего времени… От grah образуется gṛhṇāti и jñā — jānāti»"
+        buhler_locus: "урок XXXVII, п.3 (mdx 5300–5302): «Конечный гласный корней dhū…, pū…, lū…, и всех корней на ṝ сокращается перед признаком настоящего времени… От grah образуется gṛhṇāti и jñā — jānāti»"
         topic_claims: [HB-292]
         spots:
           "kochergina-lesson:XVI": "При спряжении глаголов IX класса перед личными окончаниями, начинающимися с гласной, гласная суффикса выпадает"
@@ -3191,7 +3191,7 @@ lessons:
         notes: "Упражнение даёт живой пример: punantu (№5 деванагари-блока) — слабая основа punā- от сокращённого pū; тот же сегмент в дева-половине Кнауэра Nr.12 (sunvantu punantu) — переиспользование; gṛhṇāti/jānāti у З-1978 в §136 примерах"
       - key: class-ix-ana-nasal-loss
         title: "2 sg. imper. par. согласных корней IX класса āna [āṇa]; утрата среднего носового (bandh→badhnāni…badhnātu, полная imper. парадигма в примере)"
-        buhler_locus: "урок XXXVII, п.2 (mdx 5297): «Корни с исходом на согласный спрягаются точно также, но во 2 лице sing. par. imp. имеют āna [āṇa]… всегда его лишаются, напр. bandh… badhnāti»"
+        buhler_locus: "урок XXXVII, п.2 (mdx 5298): «Корни с исходом на согласный спрягаются точно также, но во 2 лице sing. par. imp. имеют āna [āṇa]… всегда его лишаются, напр. bandh… badhnāti»"
         topic_claims: [HB-51]
         spots:
           "kochergina-lesson:XVI": "У глаголов IX класса, оканчивающихся на согласный - личное окончание -āna"
@@ -3206,7 +3206,7 @@ lessons:
         notes: "Живой слой упражнения: badhnanti (№3), vṛṇīṣve/avṛṇīta (№4), gṛhṇīyāt (№8) — три из четырёх IX-форм упражнения дублируют Кнауэра Nr.12 (12.6/12.7/12.8); crosswalk-вилка bandh: 1975 A₁ / 1978 N₁ (§66-rule-closed) — четвёртый случай серии (после rabh-XXX, arh-XXX, raj-XXXIII)"
       - key: class-ii-suffixless-guna
         title: "II класс: без суффикса, личные окончания непосредственно на корень; guṇa способных гласных в сильных формах; корни на ā исключительно Parasmaipada (yā; импф. 3 pl. ayān или ayuḥ)"
-        buhler_locus: "урок XXXVII, § «Корни II класса» (mdx 5303–5305) + таблица yā в 4 наклонениях (mdx 5307–5361)"
+        buhler_locus: "урок XXXVII, § «Корни II класса» (mdx 5304–5306) + таблица yā в 4 наклонениях (mdx 5308–5362)"
         topic_claims: [HB-293, HB-294]
         spots:
           "kochergina-lesson:XVI": "Глаголы II класса обладают рядом индивидуальных особенностей"
@@ -3215,14 +3215,14 @@ lessons:
           "sangram-article:thematic-present": "II | 5 931 | атематический"
         exceptions:
           verdict: "CONFIRMED-WITH-NUANCE"
-          buhler: "B+ — HB-293 TRUE/JUSTIFIED: «не имеют никакого суффикса… непосредственно к корню» + guṇa сильных форм (DCS mg_footnote: 154 301 токен — 19,74% презентной системы, крупнейший атематический); HB-294 TRUE/JUSTIFIED: ā-корни только P. (yā) — средние ā-презенты (mā, hā) Бюлер сам относит к III классу (mdx 6123)"
+          buhler: "B+ — HB-293 TRUE/JUSTIFIED: «не имеют никакого суффикса… непосредственно к корню» + guṇa сильных форм (DCS mg_footnote: 154 301 токен — 19,74% презентной системы, крупнейший атематический); HB-294 TRUE/JUSTIFIED: ā-корни только P. (yā) — средние ā-презенты (mā, hā) Бюлер сам относит к III классу (mdx 6127)"
           whitney: "W+ — §610: root-class «present-stem coincident with the root itself»; §§611–615: guṇa сильных форм + парадигмы as/i/ad; §619a: f. ā́ntī/ātī у ā-корней; §621a: факультативное us вместо an в 3 pl. impf. (ayuḥ против ayān) — прямой двойник таблицы урока"
           zalizniak-1978: "Z+ — §127: «Основа презенса равна корню: в сильных формах в ступени guṇa, в слабых — в слабой ступени» — формула дословно; §128: «Корни на ā. Образец: √yā — yāmi… 3 pl ayuḥ (NB окончание…) и ayān» — ayuḥ/ayān-двойник в одном §"
           kochergina: "K± — Занятие XVI: общие признаки II-класса на месте («Классы глаголов второго главного спряжения имеют следующие общие признаки», adādi по глаголу ad); ā-корни P.-only и ayān/ayuḥ-вариант отложены в занятие XVII (индивидуальные особенности) — честный пробел локуса"
         notes: "Корпусная рамка: II — крупнейший атематический класс (5 931 чисто-классифицируемый токен в sangram-таблице против 371 у IX); NB-окончание ayuḥ — редкий случай, где школьная таблица Бюлера подробнее занятия Кочергиной; II-классовые irregulars (as, i, vid-тип) — следующий урок (XXXVIII), честно не натянуты сюда"
       - key: lesson-roots
         title: "Лемма-слой: 19 глаголов урока — 13 с классом (IX ×9, II ×4) + 6 приставочных без класса"
-        buhler_locus: "урок XXXVII, список «Глаголы:» (mdx 5363–5401)"
+        buhler_locus: "урок XXXVII, список «Глаголы:» (mdx 5364–5402)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3255,7 +3255,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 15/19 глаголов урока; ni-/prati-/nis- — приставочные без корня в реестре (честно); granth/grah/manth — под вариантами написания grath/grabh/math (ловушки написания серии); bandh-вилка 1975 A₁ / 1978 N₁ вынесена в тему class-ix-ana-nasal-loss"
   XL:
     title: "Морфонология корней II класса в impf./imper.: s-корни (ās, cakās, śās), глагол as с Pot. syām/sīya, h-корни (lih, duh, dih) + īḍ ḍ→ṭṭ, i-вставка (rud, śvas, svap, an, jakṣ); превербные глаголы"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5857–6002 (заголовок «# УРОК XL»; дальше урок XLI — обычный заголовок, mdx 6003)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 5860–6006 (заголовок «# УРОК XL»; дальше урок XLI — обычный заголовок, mdx 6007; сквозная нумерация II класса: §§11–14 — завершение серии (§1 — XXXVII, §§2–5 — XXXVIII, §§6–10 — XXXIX); помета H6674)"
     claims: [HB-52, HB-308, HB-309, HB-310, HB-311, HB-312, HB-313, HB-314]
     reuse_clusters:
       - "2 совпадения упражнений с Knauer Nr. 11 (scripts/data/matches.json: buhler-1923.XL.928 «महोदधिमध्ये शेषनागमधिशयानो विष्णुः सुखं स्वपिति» ↔ knauer-1908.11.244, 0.861 — у Кнауэра उदधौ; XL.931 «सुन्दरि समाश्वसिहि समाश्वसिहीति…» ↔ knauer-1908.11.245, 0.918 — у Кнауэра भीतामुर्वशीं против भयनिमीलिताक्षीमुर्वशीं; оба предложения упражняют i-вставочные корни урока svap/śvas)"
@@ -3264,7 +3264,7 @@ lessons:
     topics:
       - key: class-ii-s-roots
         title: "S-корни II класса (ās, cakās, śās): impf. 2 л. на t/висаргу, 3 л. на t, выпадение s перед dh; cakās n-less 3 pl ati/atu/uḥ; śās слабая śiṣ"
-        buhler_locus: "урок XL, §12 (mdx 5859–5865): ās II Ā. ind. āse/āsse/āste…; cakās П. Р. — окончания ati/atu/uḥ (напечатаны impf. acakāsam/acakāḥ/acakāt, 3 pl acakāsuḥ); śās слабая śiṣ, śāsati/aśāsuḥ/śāsatu"
+        buhler_locus: "урок XL, §12 (mdx 5863–5869): ās II Ā. ind. āse/āsse/āste…; cakās П. Р. — окончания ati/atu/uḥ (напечатаны impf. acakāsam/acakāḥ/acakāt, 3 pl acakāsuḥ); śās слабая śiṣ, śāsati/aśāsuḥ/śāsatu"
         topic_claims: [HB-309, HB-310, HB-311]
         spots:
           "zalizniak-1978-sec:127": "сильная и слабая основы презенса II в послеведийский период фактически различны только у"
@@ -3279,7 +3279,7 @@ lessons:
         notes: "cakās — редуплицированная форма kāś: Уитни §641 относит к «очевидно редуплицированным» корням, трактуемым традицией как простые; sangram: класс II = 5 931 токен DCS — атематический, концентрируется в частотных корнях; Кнауэр Nr.11 переиспользует çāsti (çaṣ-корень, словарный след, не registered match)"
       - key: as-verb-paradigm
         title: "Глагол as II Р. Ā., быть: слабые формы без начального гласного, edhi 2 sg imper., полная парадигма в ind./impf./imper. + Pot. syām/sīya"
-        buhler_locus: "урок XL, §12 (mdx 5867–5917): таблицы as в ind./impf./imper. (asmi/svaḥ/smaḥ… āsīḥ/āsīt… edhi/astu… asāni) + «Pot Par. syām, Ā. sīya»"
+        buhler_locus: "урок XL, §12 (mdx 5871–5921): таблицы as в ind./impf./imper. (asmi/svaḥ/smaḥ… āsīḥ/āsīt… edhi/astu… asāni) + «Pot Par. syām, Ā. sīya»"
         topic_claims: [HB-312]
         spots:
           "kochergina-lesson:XVII": "часто употребляемый и самостоятельно"
@@ -3294,7 +3294,7 @@ lessons:
         notes: "syām/sīya — супплетивная оптативная основа (от √as же): Бюлер даёт однострочно, Уитни — полную таблицу §636, Кочергина — парадигму XVII; sangram-imperfect: as/āsīt — частотнейший статический глагол нарратива после brū/bhū"
       - key: class-ii-h-roots
         title: "H-корни II класса (lih, duh, dih) + īḍ: h→ḍh с удлинением предшествующего гласного, перед s k/ṭ; duh/dih gh→gdh/kṣ и перенос придыхания d→dh (ур. XX, 4); īḍ i-вставка + ḍ→ṭṭ/ṭṭh"
-        buhler_locus: "урок XL, §§11, 13 (mdx 5859, 5919–5941): īḍiṣva/īḍāthām/aiḍḍhvam; aleham/aleṭ/līḍhām/lihan; adoham/adhok/adugdham; dehai/dhikṣva/digdhām/dhigdhvam"
+        buhler_locus: "урок XL, §§11, 13 (mdx 5863, 5919–5941): īḍiṣva/īḍāthām/aiḍḍhvam; aleham/aleṭ/līḍhām/lihan; adoham/adhok/adugdham; dehai/dhikṣva/digdhām/dhigdhvam"
         topic_claims: [HB-308, HB-313, HB-314]
         spots:
           "zalizniak-1978-sec:127": "dohmi, dhokṣi, dogdhi"
@@ -3308,7 +3308,7 @@ lessons:
         notes: "īḍ формально u-корневой (ряд I₂ crosswalk), но у Бюлера открывает урок именно ḍ→ṭṭ — зубной кластер как у h-корней; HB-313 «удлиняются предшествующие a, i, u» подтверждается (līḍha, gūḍha, ūḍha); перенос придыхания d→dh — та же ось, что тема aspiration-throwback урока XX (adugdham/adhok); Кнауэр Nr.11: गां दुग्धि पयः — дугдхи-форма duh в упражнении"
       - key: class-ii-i-insertion
         title: "I-вставка перед окончаниями на согласный: rud, śvas, svap, an, jakṣ — закрытый список (в 2/3 л. sing. impf. par. вместо i — a или ī)"
-        buhler_locus: "урок XL, §14 (mdx 5943–5957): rud impf. arodam/arodīḥ или arodaḥ/arodīt или arodat; arudiva/arudita/arudan; сноска jakṣ: jakṣati/ajakṣuḥ/jakṣatu"
+        buhler_locus: "урок XL, §14 (mdx 5947–5961): rud impf. arodam/arodīḥ или arodaḥ/arodīt или arodat; arudiva/arudita/arudan; сноска jakṣ: jakṣati/ajakṣuḥ/jakṣatu"
         topic_claims: [HB-52]
         spots:
           "zalizniak-1978-sec:129": "перед согласной, кроме y, появляется соединительная гласная i"
@@ -3349,7 +3349,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 13/13 корней урока строками (контраст: урок I 10/13, XXXVIII 5/7, XXIX 12/12, XXXVII 15/19) — полное покрытие строк, но у an ряд не установлен (index-unknown N?, §67-RMN-list); ловушка поиска: cakās сидит в crosswalk под kāś «appear, make a show» — редуплицированная форма (Уитни §641), наивный поиск по «cakās» даёт ложный GAP (как tṝ/tṛ урока XXXVII и sarj/sañj урока XXII); corpus_layer.tsv — 0 строк урока (лакуна после XXXVIII); все 7 превербных глаголов словаря урока (prāṇ=pra-an, upās=upa-ās, ni-mīl, samā-viś, ā-/samā-śvas, vi-śvas, utthā=ud-sthā) построены на корнях, пять из которых — ряды урока"
   XLI:
     title: "III класс (удвоительный): правила удвоения — согласный слога (деаспирация th→t/dh→d, веляры→нёбные k/kh→c, g/gh→j, кластер — только первый согласный кроме sk/skh/st/sth/sp/sph) и гласный (только краткие, ṛ/ṝ→i) + guṇa сильных; парадигмы bhṛ (bibharti/bibhrati) и dhā (слаб. dadh-, dhehi); слабые основы hā/mā (jahī~/jahi-, mimī~/jihī- перед согласными, mim~/jih- перед гласными), hu (juho~/juhav~/juhu~/juhv-, juhudhi), bhī/hrī (bibhī~bibhi, jihre), pṝ (pipar/pipūr/pipur); nenekti-тройка nij/vij/viṣ — guṇa в слоге удвоения"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6003–6181 (заголовок «# УРОК XLI»)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6007–6185 (заголовок «# УРОК XLI»)"
     claims: [HB-315, HB-316, HB-317, HB-318, HB-53, HB-319, HB-320, HB-321, HB-322, HB-323, HB-324, HB-325]
     reuse_clusters:
       - "1 нечёткое совпадение (scripts/data/matches.json, score 0.867, exact=false): buhler-XLI.956 ↔ knauer-1908.11.249 «यस्मान्महिषासुरात्सर्वे ऽपि देवा अबिभयुस्तं…न्यहन्» — реальное текстуальное переиспользование, не шум: अबिभयुस्तं (abibhayuḥ+taṃ) — та самая 3 pl. impf.-форма с guṇa-подъёмом (HB-319); 1 словарный шум честно: «mā III. Ā» ↔ Кочергина XXXIV сводная таблица «mā Ā III» (0.833)"
@@ -3358,7 +3358,7 @@ lessons:
     topics:
       - key: class-iii-reduplication-rules
         title: "Правила удвоения III класса: а) деаспирация (th→t, dh→d); б) веляры→нёбные (k/kh→c, g/gh→j); в) кластер — только первый согласный, кроме sk/skh/st/sth/sp/sph (удваивается второй); г) гласные удвоения только краткие (a ā i ī u ū→краткие; ṛ/ṝ→i)"
-        buhler_locus: "урок XLI, п.1 а–г (mdx 6005–6013)"
+        buhler_locus: "урок XLI, п.1 а–г (mdx 6009–6017)"
         topic_claims: [HB-315, HB-316, HB-317, HB-318, HB-53]
         spots:
           "kochergina-lesson:XV": "удвоительный, личные окончания присоединяются к удвоенному корню"
@@ -3374,7 +3374,7 @@ lessons:
         notes: "Кнауэр Nr.11.9 даёт живую форму правила а): गां दुग्धि (duh: dh→d в слоге удвоения, с дальнейшим выносом придыхания — दुग्धि dug-dh-i); sangram-строка «III / VIII | 8 / 3» — корпусная рамка: III класс — 8 чисто-классифицируемых токенов против 180 398 у «нескольких ган» — редчайший класс живого узуса"
       - key: class-iii-strong-guna-3pl
         title: "guṇa всех способных гласных в сильных формах III класса; 3 pl. impf. par. — окончание us вместо an и guṇa конечного гласного корня (ajuhaVuḥ)"
-        buhler_locus: "урок XLI, конец п.1 (mdx 6015) + парадигмы bhṛ (mdx 6017–6067): bibharti/bibhrati, abibharuḥ"
+        buhler_locus: "урок XLI, конец п.1 (mdx 6019) + парадигмы bhṛ (mdx 6021–6071): bibharti/bibhrati, abibharuḥ"
         topic_claims: [HB-319]
         spots:
           "zalizniak-1978-sec:132": "juhomi, juhoṣi, juhoti"
@@ -3388,7 +3388,7 @@ lessons:
         notes: "Упражнение Кнауэра Nr.11.11 (текстуальный дубль урока) несёт живую abibhayuḥ-форму (अबिभयुस्तं) — bhī, 3 pl. impf. с y-глайдом гуны; bhṛ-случай abibharuḥ — гуна ṛ уже в сильной основе bibhar-, честная граница правила по классу корней; n-потеря видна прямо в таблицах урока (bibhrati, dadhati)"
       - key: class-iii-aa-roots-dhehi
         title: "ā-корни III класса dā/dhā: отбрасывание ā в слабых формах (dad-/dadh-), 2 sg. imper. dhehi (dā: dehi); полная dhā-парадигма с внутренними сандхи (dhatthaḥ, dhatse, dhaddhve)"
-        buhler_locus: "урок XLI, п.2 б (mdx 6069–6119) + «Точно также спрягается dā» (mdx 6121)"
+        buhler_locus: "урок XLI, п.2 б (mdx 6073–6123) + «Точно также спрягается dā» (mdx 6125)"
         topic_claims: [HB-320]
         spots:
           "kochergina-lesson:XVII": "имеют слабую ступень основы соответственно как dad- и dadh-, 2 л. imperativus - как dehi и dhehi"
@@ -3402,7 +3402,7 @@ lessons:
         notes: "Упражнение урока несёт живые формы: ददासि (стих 34, dā ind.), ददाति (дайя-блок), दद्याद् (opt.), देहीति (brūyāt-контекст), अदध्यात् (ā-dhā opt. agnau ādadhyāt), समधत्ताम् (sam-ā-dhā impf.) — dā/dhā-слой упражнения плотнее парадигмального"
       - key: class-iii-weak-stem-alternations
         title: "Слабые основы особых корней III класса: hā act. (jahyāt — утрата ā в pot.; jahāhi/jahīhi/jahihi; jahī~/jahi- перед согласными); mā/hā Ā. (mimī-/jihī- /_C, mim-/jih- /_V); hu (juho~/juhav~/juhu~/juhv-, juhudhi); bhī (bibhī~bibhi /_C, bibhy /_V); hrī (jihre/jihrī/jihriy); pṝ (pipar/pipūr/pipur); nij/vij/viṣ — guṇa в слоге удвоения (nenekti, vevekti, veveṣṭi)"
-        buhler_locus: "урок XLI, п. 2.1 (mdx 6123–6135): hā (6123), mā/hā Ā. (6125), hu (6127), bhī (6129), hrī (6131), pṝ (6133), nij/vij/viṣ (6135)"
+        buhler_locus: "урок XLI, п. 2.1 (mdx 6127–6139): hā (6123), mā/hā Ā. (6125), hu (6127), bhī (6129), hrī (6131), pṝ (6133), nij/vij/viṣ (6135)"
         topic_claims: [HB-321, HB-322, HB-323, HB-324, HB-325]
         spots:
           "kochergina-lesson:XV": "По глаголу hu древнеиндийские ученые назвали III класс hvādi или juhotyādi"
@@ -3417,7 +3417,7 @@ lessons:
         notes: "Кнауэр Nr.11 несёт три живые формы темы: चौराद्बिभेति (11.10 — bibheti, HB-324), जह्यात् (11.13 — jahyāt, HB-321), अबिभयुस्तं (11.11); в упражнении урока: न जह्यात्, जुहुधि (जुहुधि — imp. juhudhi в घृताहूतीनां जुहुधि), न्यहन् (ni-han impf. — han тоже III-классовый, не вынесен в словарь урока — честно); nenekti-тройка — 5-й случай серии «ряд ≠ класс»: nij/vij/viṣ = ряды I₁ при школьном III классе"
       - key: lesson-roots
         title: "Лемма-слой: 17 глагольных строк урока — 13 словарных корней (все III) + 2 из упражнения (han, grah в приставке) + 2 приставочных vi-dhā/saṃ-dhā"
-        buhler_locus: "урок XLI, списки «Глаголы:» (mdx 6137–6141) и словарь (mdx 6137–6153), формы в упражнении (mdx 6165–6177)"
+        buhler_locus: "урок XLI, списки «Глаголы:» (mdx 6141–6145) и словарь (mdx 6141–6157), формы в упражнении (mdx 6169–6181)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3449,15 +3449,15 @@ lessons:
 
   XLII:
     title: "VII класс (атематический, rudhādi — носовой инфикс): сильные формы — слог na [ṇa] перед конечной согласной, слабые — n с ассимиляцией следующему согласному (anusvāra перед шипящими и h), корень с внутренним носовым его теряет; конечный dh→ddh /_t,th,dh и →t /_s и в 2–3 sg. impf. (отсылки XXXIX 7/8/10, XL 12/13); парадигмы yuj (yunaj-/yuñj-) и rudh (ruṇadh-/rundh-) в ind./impf./imper./pot.; piṣ/hiṅs (apinaṭ, ahinasam), tṛh со слогом ṇe (tṛṇeḍhi)"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6183–6376 (заголовок «# УРОК XLII.»)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6187–6380 (заголовок «# УРОК XLII.»)"
     claims: [HB-326, HB-327, HB-328]
     reuse_clusters:
-      - "Кураторская находка (вне матчера, matches.json: 0 строк buhler-XLII): санскритское упражнение урока (mdx 6373) дублирует Кнауэр Nr.12 пп. 10–12 дословно: п.10 ये गा हिंसन्ति तेषां गरीयः प्रायश्चित्तं विदधति तस्माद्गा मा हिन्धि (hiṅs ind. + hindhi imp.) ↔ «ye gā hiṅsanti … tasmād gāṁ mā hindhi», п.11 प्रातरश्विनावुषसा…युङ्क्त इत्यृक्षु श्रूयते (yuj imper. 3 sg.) ↔ «prātar açvināv uṣasā … yun̄kta ity ṛkṣu çrūyate», п.12 अहो प्रतिकूलो विधिर्विशिनष्टि (vi-śiṣ) ↔ «aho pratikūlo vidhir viçinaṣṭi» — с сандхи-вариантом написания गा मा (урок) ↔ gāṁ mā (Кнауэр; прецедент रुजा/रुजया XLI) и лексическим вариантом хвоста п.12: मनोरुजं मे (урок) ↔ duḥkhaṁ me (Кнауэр)"
+      - "Кураторская находка (вне матчера, matches.json: 0 строк buhler-XLII): санскритское упражнение урока (mdx 6377) дублирует Кнауэр Nr.12 пп. 10–12 дословно: п.10 ये गा हिंसन्ति तेषां गरीयः प्रायश्चित्तं विदधति तस्माद्गा मा हिन्धि (hiṅs ind. + hindhi imp.) ↔ «ye gā hiṅsanti … tasmād gāṁ mā hindhi», п.11 प्रातरश्विनावुषसा…युङ्क्त इत्यृक्षु श्रूयते (yuj imper. 3 sg.) ↔ «prātar açvināv uṣasā … yun̄kta ity ṛkṣu çrūyate», п.12 अहो प्रतिकूलो विधिर्विशिनष्टि (vi-śiṣ) ↔ «aho pratikūlo vidhir viçinaṣṭi» — с сандхи-вариантом написания गा मा (урок) ↔ gāṁ mā (Кнауэр; прецедент रुजा/रुजया XLI) и лексическим вариантом хвоста п.12: मनोरुजं मे (урок) ↔ duḥkhaṁ me (Кнауэр)"
     corpus_layer: []     # corpus_layer.tsv: строк урока XLII нет (честно; соседний XLIII уже имеет 3 строки vac/bhū/gam — лакуна точечная)
     topics:
       - key: class-vii-nasal-infix
         title: "Носовой инфикс VII класса: сильные — слог na [ṇa] перед конечной согласной, слабые — n с ассимиляцией следующему согласному (anusvāra перед шипящими и h); корень с внутренним носовым его теряет (bhanakti-тип)"
-        buhler_locus: "урок XLII, п.1а (mdx 6185) + таблицы yuj (mdx 6189–6239)"
+        buhler_locus: "урок XLII, п.1а (mdx 6189) + таблицы yuj (mdx 6193–6243)"
         topic_claims: [HB-326]
         spots:
           "kochergina-lesson:XVI": "при помощи инфиксов n-/na между гласной и конечной согласной корня"
@@ -3473,7 +3473,7 @@ lessons:
         notes: "sangram thematic-present: носовой инфикс — один из шести атематических маркеров, восстанавливаемых из формы (39+38 из 80 токенов выборки классифицируются инвентарём/формой); упражнение урока несёт живые формы: हिनस्ति, हिन्धि, भिनत्त्येव (bhinatti+sandhi), भिन्दन्तो, युङ्क्त, अभिनत्, अच्छिनत्, आच्छिन्द्याद्; rudh в уроке без impf.-таблицы (aruṇat — только Уитни §684/Очерк §134)"
       - key: class-vii-final-dh-imperative
         title: "Присоединение окончаний и конечный dh: dh+t/th/dh→ddh (runddhaḥ), dh→t перед s (ruṇatsi) и в 2–3 sg. impf. (aruṇat); системные отсылки на XXXIX 7/8/10 (c, j, d, ṣ) и XL 12/13 (s, h); imper. 2 sg. всегда -dhi (yun̄gdhi, runddhi)"
-        buhler_locus: "урок XLII, п.1б (mdx 6187) + таблицы rudh (mdx 6241–6273)"
+        buhler_locus: "урок XLII, п.1б (mdx 6191) + таблицы rudh (mdx 6245–6277)"
         topic_claims: [HB-327]
         spots:
           "kochergina-lesson:XVI": "Глаголы V и VII классов могут не иметь личных окончаний"
@@ -3488,7 +3488,7 @@ lessons:
         notes: "Кнауэр Nr.12.10 даёт живую hindhi (imp. 2 sg. от hiṅs — -dhi при шипящем); impf.-таблицы урока (ayunak от yuj, ahinat от hiṅs) — живые примеры утраты s/t из §692a; у rudh impf.-таблицы в уроке нет (aruṇat читается по §684 Уитни/§134 Очерка); грамматика-точность квантора Кочергиной — находка конкорданса (W- вердикт сетки HK-104)"
       - key: class-vii-irregular-roots
         title: "Иррегулярные корни VII: piṣ/hiṅs (impf. apinaṭ/apiṅṣ-, ahinasam/ahiṅs-; 2 sg. ind. pinakṣi/hinassi, imp. piṇḍḍhi/hindhi), tṛh со слогом ṇe в сильных формах (tṛṇeḍhi; imp. tṛṇahāni/tṛṇḍhi/tṛṇeḍhu)"
-        buhler_locus: "урок XLII, пп. 4–5 (mdx 6275–6301)"
+        buhler_locus: "урок XLII, пп. 4–5 (mdx 6279–6305)"
         topic_claims: [HB-328]
         spots:
           "zalizniak-1978-sec:134": "pinaṣ-/piṁṣ- от √piṣ"
@@ -3502,7 +3502,7 @@ lessons:
         notes: "Кнауэр Nr.12.12 несёт живую форму приставочного vi-śiṣ (viçinaṣṭi, помета ^9^); в упражнении урока та же форма деванагари विशिनष्टि, плюс अभिनत्/अच्छिनत् (abhi-han, ā-chid impf.), आच्छिन्द्याद् (pot.)"
       - key: lesson-roots
         title: "Лемма-слой: 13 глагольных строк урока — 10 корней VII + bandh (класс IX; बध्नाति в стихе) + 2 приставочных (vi-śiṣ; saṃ-han II — чужой класс урока)"
-        buhler_locus: "урок XLII, парадигмы (mdx 6189–6301) и список «Глаголы:» (mdx 6303–6323), формы упражнения (mdx 6365–6375)"
+        buhler_locus: "урок XLII, парадигмы (mdx 6193–6305) и список «Глаголы:» (mdx 6307–6327), формы упражнения (mdx 6369–6379)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3526,10 +3526,10 @@ lessons:
           - {root: "bandh", gloss: "связывать, добиваться (в списке с классом IX; बध्नाति в стихе урока)", z1975: "A1 (conf medium)", z1978: "N₁ — 1975 A₁ ↔ 1978 N₁, расхождение реестра", crosswalk: "yes (wh494)"}
           - {root: "vi-śiṣ", gloss: "увеличивать, определять", z1975: "?", z1978: "?", crosswalk: "NO — приставочный; корень śiṣ покрыт отдельной строкой (I₁, wh787; прецедент vi-dhā/saṃ-dhā XLI)"}
           - {root: "saṃ-han", gloss: "соединять (класс II — чужой класс урока)", z1975: "?", z1978: "?", crosswalk: "NO — приставочный (han: N₁, wh908, open, full)"}
-        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 11/13 строк урока; vi-śiṣ/saṃ-han — приставочные без собственных строк (честно, корни śiṣ wh787 / han wh908 покрыты); ловушка написания: indh сидит в crosswalk под idh «kindle» (wh35); bhañj/bandh — расхождения производных строк 1975 и 1978 (A₁↔N₁) помечены честно; класс ≠ ряд: bhañj = A₁/N₁ при VII — 6-й случай серии (nij/vij/viṣ = I₁ при III — 5-й, XLI); ручная находка вне скоопа: Pot. Par. yujyām (mdx 6239) против yuñjyām (Whitney §688, Ātm. yuñjīya рядом) — erratum-кандидат → GTD"
+        notes: "Проверка полноты (голос MG D2): crosswalk покрывает 11/13 строк урока; vi-śiṣ/saṃ-han — приставочные без собственных строк (честно, корни śiṣ wh787 / han wh908 покрыты); ловушка написания: indh сидит в crosswalk под idh «kindle» (wh35); bhañj/bandh — расхождения производных строк 1975 и 1978 (A₁↔N₁) помечены честно; класс ≠ ряд: bhañj = A₁/N₁ при VII — 6-й случай серии (nij/vij/viṣ = I₁ при III — 5-й, XLI); ручная находка вне скоопа: Pot. Par. yujyām (mdx 6243) против yuñjyām (Whitney §688, Ātm. yuñjīya рядом) — erratum-кандидат → GTD"
   XLIII:
     title: "Перфект (удвоительный): слог удвоения (краткость гласных, дифтонги — второй частью, конечные e/ai/o и ṛ/ṝ→a; начальный a→ā, i/u→iy/uv, ṛ и a+кластер→ān); сильные/слабые формы (guṇa сильных, 3 sg — удлинение a и vṛddhi конечных); окончания перфекта + aniṭ-октет без i и tha-исключения (ṛ, jāgṛ, svṛ, vṛ, saṅskṛ); корни на i/ī (nināya/niny-), u/ū (tuṣṭāva/tuṣṭuv-, babhūva), ṛ (cakāra/cakṛ), ṝ (cakāra/cakar-); особые слабые основы: e-перфект (pac→pec; tṛ tatāra/teruḥ), va-корни uvāca/ūc, yaj iyāja/īj, jagm/jagr̥h/jakṣ/jajñ/jaghn/vividh/suṣup; ā/e/ai/au-корни (dadhau/jagau, hve jahāva, pyai pipye); неполный перфект ah (āha/āttha) + «неправильное» удвоение ci/ji/hi/vyath/dyut/aś; описательный перфект -ām/-ayām + cakāra/āsa/babhūva/cakre; причастия перфекта vas/uṣī и āna"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6377–6731 (заголовок «# УРОК XLIII.»; дальше урок XLIV — обычный заголовок, mdx 6733). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст о Харищчандре (mdx 6731), фиксируем честно; corpus_layer возвращает 3 строки топ-100 после лакуны XXXIX–XLII"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6381–6735 (заголовок «# УРОК XLIII.»; дальше урок XLIV — обычный заголовок, mdx 6737). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст о Харищчандре (mdx 6735), фиксируем честно; corpus_layer возвращает 3 строки топ-100 после лакуны XXXIX–XLII"
     claims: [HB-329, HB-330, HB-331, HB-332, HB-333, HB-334, HB-335, HB-336, HB-337, HB-338, HB-339, HB-340, HB-341, HB-342, HB-343, HB-344, HB-345, HB-346, HB-347, HB-348, HB-349, HB-350, HB-351]
     reuse_clusters:
       - "2 совпадения (scripts/data/matches.json): buhler-1923.XLIII.1050 «vidāṃ cakāra» ↔ kochergina-1998.XXII.540 exact 1.0 — живое текстуальное переиспользование (формула описательного перфекта у Кочергиной, Занятие XXII); buhler-1923.XLIII.1047 «īkṣ Ā. īkṣāṃ cakre» ↔ kochergina-1998.XXXIV.1196 (0.833) — сводная таблица Приложения II, словарный след, не упражнение (честно)"
@@ -3541,7 +3541,7 @@ lessons:
     topics:
       - key: perfect-reduplication-vowels
         title: "Слог удвоения перфекта, гласные: долгие/краткие замещаются соответственными краткими, внутренние дифтонги — второй частью; конечные e/ai/o (после ā) и ṛ/ṝ → a; начальный a→ā (ad→āda), начальный ā без изменений (āp), i/u→iy/uv (или i/u), начальный ṛ и a+кластер согласных → ān (ānṛc, ānañj, ānakṣ)"
-        buhler_locus: "урок XLIII, п. А.1 а–в (mdx 6385–6389)"
+        buhler_locus: "урок XLIII, п. А.1 а–в (mdx 6389–6393)"
         topic_claims: [HB-329, HB-330]
         spots:
           "kochergina-lesson:XXI": "(редупликация) корня используется в санскрите"
@@ -3555,10 +3555,10 @@ lessons:
           whitney: "W+ — §§783-788: vowel-initial reduplication (āda, iyeṣa/īṣuḥ, uvoṣa/ūṣuḥ, ānṛdhuḥ-тип, ānañja) — HB-330 «Whitney's own formulation»; §§589-590/786: краткость слога удвоения, второй элемент дифтонга, a для конечных e/ai/o и ṛ/ṝ"
           zalizniak-1978: "Z± — §113: краткий слог удвоения (перфект в примерах), §151: начальные гласные (iyeṣa/īṣuḥ, ānañja/ānarca; āp āpa) — но З-1978 строже: «корни с начальной долгой гласной перфектной основы не образуют, кроме √āp» — у Бюлера ограничение не проговорено (honest nuance)"
           kochergina: "K± — Занятие XXI «Правила удвоения» даёт сам принцип редупликации (перфект в списке потребителей), но частные правила слога удвоения перфекта разнесены в Занятие XXII («Особые случаи образования перфекта») — honest разрыв на два занятия"
-        notes: "ukh/uvokh/ūkh (mdx 6397) — erratum-кандидат: у Уитни uh 'pour' даёт uvoha/ūha (§585c) — kh-написание урока ошибка набора; Кнауэр Nr.15: जगाम — живая форма слога удвоения gam; sangram SG-MO-017: перфектная редупликация в DCS-разметке невосстановима (kill-gate EM2) — корпусный предел, не аттестационный"
+        notes: "ukh/uvokh/ūkh (mdx 6401) — erratum-кандидат: у Уитни uh 'pour' даёт uvoha/ūha (§585c) — kh-написание урока ошибка набора; Кнауэр Nr.15: जगाम — живая форма слога удвоения gam; sangram SG-MO-017: перфектная редупликация в DCS-разметке невосстановима (kill-gate EM2) — корпусный предел, не аттестационный"
       - key: perfect-strong-weak-guna
         title: "Сильные и слабые формы: сильные — ед.ч. Par.; guṇa подъёмных гласных в сильных (bibheda/bibhid, tutoda/tutud, uvokh/ūkh); внутренний a: 3 sg Par. всегда удлинён (papāca), 1 sg — по желанию (papāca/papaca); конечные подъёмные: 3 sg vṛddhi (nināya), 1 sg vṛddhi/guṇa, 2 sg guṇa (nine)"
-        buhler_locus: "урок XLIII, п. А.2 а–д (mdx 6391–6403)"
+        buhler_locus: "урок XLIII, п. А.2 а–д (mdx 6395–6407)"
         topic_claims: [HB-331, HB-332, HB-333]
         spots:
           "zalizniak-1978-sec:150": "Основа перфекта (у первичных глаголов) состоит из корня с удвоительным слогом"
@@ -3572,7 +3572,7 @@ lessons:
         notes: "пapāca/papaca и nināya/ninaya/ninetha — два лица одного принципа (внутренний a vs конечные); формы bibhed-/tutod-/uvokh- из п.2б работают в парадигмах п.10 (тема root-paradigms); sangram-past-tenses: перфект — крупнейшее финитное прошедшее корпуса (Past+None 85 955, во главе uvāca 13 880, āha 6 731, babhūva, cakāra), но корпусно тёмное (SG-SE-006); corpus_layer урока — 3 строки топ-100 (vac/bhū/gam), первые после XXXVIII"
       - key: perfect-endings-union-vowel
         title: "Окончания перфекта (Par. a/tha/a, va/athuḥ(s)/atuḥ(s), ma/a/uḥ(s); Ātm. e/se(ṣe)/e, vahe/āthe/āte, mahe/dhve(ḍhve)/ire) и присоединение: aniṭ-октет dru/śru/stu/sru/kṛ/bhṛ/vṛ/sṛ без i; 2 sg tha на ṛ-корнях с 5 исключениями (ṛ, jāgṛ, svṛ, vṛ, saṅskṛ); i обязана/факультативна у остальных; dhve→ḍhve после корневых гласных; сноска: 13 корней с факультативной i (vraśc, añj, mṛj, kḷp, gup, aś, gāh, guh, tṛp, druh, naś, muh, snih)"
-        buhler_locus: "урок XLIII, п. А.3–4 + сноска (mdx 6405–6437)"
+        buhler_locus: "урок XLIII, п. А.3–4 + сноска (mdx 6409–6441)"
         topic_claims: [HB-334, HB-335, HB-336, HB-337, HB-338]
         spots:
           "kochergina-lesson:XXI": "Окончания перфекта"
@@ -3586,7 +3586,7 @@ lessons:
         notes: "октет vṛ «избирать» aniṭ в п.4а и seṭ в tha-исключении п.4б — внутренняя согласованность урока отмечена в HB-335 note как «both statements are made»; сноска-13 — частотностный хедж «самые употребительные» (HB-338: rank не инструментован, class-membership проверен)"
       - key: perfect-root-paradigms
         title: "Корневые парадигмы: jīv/sev (полная таблица, jijīva/siṣeve); i/ī-корни nināya/niny-, cikrāya/cikri-; u/ū-корни tuṣṭāva/tuṣṭuva-, lu lulāva, bhū babhūva; ṛ-корни cakāra/cakṛ (smṛ sasmāra); ṝ-корни cakāra/cakar- (исключения jāgṛ и ṛ — по 8б); согласные корни bibheda/bibhid-, tutoda/tutud-, dadarśa/dadarṣṭha, iyeṣa/īṣ-, ānarca/ānṛc-, cakrāma/cakram-"
-        buhler_locus: "урок XLIII, п. А.5–10 (mdx 6439–6577)"
+        buhler_locus: "урок XLIII, п. А.5–10 (mdx 6443–6581)"
         topic_claims: [HB-339, HB-340, HB-341, HB-342]
         spots:
           "zalizniak-1978-sec:154": "У √ah *говорить* имеется только перфект"
@@ -3601,7 +3601,7 @@ lessons:
         notes: "Кнауэр Nr.15: न जहौ (hā перфект — слабая основа jah- перед гласной) и बभूव в соседней фразе — живые формы темы; dadarṣṭha — ṣ-вариант 2 sg (тема 3); babhūva — частотнейший перфект нарратива после uvāca/āha (sangram-past-tenses)"
       - key: perfect-special-weak-allomorphs
         title: "Особые слабые основы: e-перфект — pac→pec (papāca/pec-), обязательный tṛ/bhram/phal/bhal (tatāra/teruḥ), факультативный granth/tras/bhras/bhrāj/rāj; va-корни vac/vad/vap/vaś/vas/vah — слог удвоения u, в слабых отбрасывается, va→ū (uvāca/ūc-, uvāha/ūhu-); yaj iyāja/īj-; khan cakhn, gam jagm, grah jagṛh, ghas jakṣ, jan jajñ, han jaghn, vyadh vividh, svap suṣup; ā/e/ai/au-корни → au в 1/3 sg (dadhau, jagau), гласный теряется перед вокальными; hve jahāva/juhuve, pyai pipye; itha факультативен у корней с внутренним a без i в инфинитиве (pecitha/papaktha)"
-        buhler_locus: "урок XLIII, п. А.11–12 + сноски (mdx 6581–6657)"
+        buhler_locus: "урок XLIII, п. А.11–12 + сноски (mdx 6585–6661)"
         topic_claims: [HB-343, HB-344, HB-345, HB-346]
         spots:
           "zalizniak-1978-sec:152": "слабая основа перфекта образуется без удвоения, но с заменой корневого a на e"
@@ -3615,7 +3615,7 @@ lessons:
         notes: "Кнауэр Nr.14: «pitā duhitaram avocat» — avocat импфект vac рядом с перфектным uvāca той же фразы — форма-двойник для контраста «перфект vs импфект того же корня»; jagr̥h (grah) — ловушка написания серии (grabh в реестрах); hve/pyai — редчайшие au-корни, в реестрах рядов нет (см. lesson-roots)"
       - key: periphrastic-perfect-participles
         title: "Описательный перфект (B): обязателен у односложных на i/u (по положению долгие), с ī/ū/ṝ/дифтонгами, cakās, X класса, каузативов и отыменных; факультативен у vid/bhī/hrī/bhṛ/jāgṛ/daridrā; суффикс ām (X класс и каузативы ayām) + āsa/cakāra/babhūva (Par.) / cakre (Ātm.); прич. перф. Par. vas/uṣī к слабой основе с i у односложных (pecivas/bibhidvas); прич. перф. Ātm. āna к основе перед ire (dadhāna, cakrāṇa); значение перфекта = импфекту, употребляется реже"
-        buhler_locus: "урок XLIII, п. B.1–4 + финальное замечание (mdx 6673–6729)"
+        buhler_locus: "урок XLIII, п. B.1–4 + финальное замечание (mdx 6677–6733)"
         topic_claims: [HB-347, HB-348, HB-349, HB-350, HB-351]
         spots:
           "zalizniak-1978-sec:155": "yuyujvaṁs-, cakṛvaṁs-"
@@ -3631,7 +3631,7 @@ lessons:
         notes: "прич. Ātm. āna [āṇa] — вариант-оговорка урока; Очерк §94: vaṁs-чередование -vāṁs-/-vaṁs-/-vat-/-uṣ- — склонение причастия закрыто в отдельном §; «перфект реже импфекта» урока противоречит корпусу sangram-past-tenses (перфект крупнейшее прошедшее Past+None 85 955 против Impf 46 695) — честная инверсия учебной интуиции"
       - key: lesson-roots
         title: "Лемма-слой: 49 корней урока — все несущие правила/парадигмы (удвоение, типы корней, особые слабые основы, au-ряд, ah, «неправильное удвоение», описательный перфект)"
-        buhler_locus: "урок XLIII, п. А.1–13, B.1–2 (корни в тексте правил и парадигм, mdx 6385–6699); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
+        buhler_locus: "урок XLIII, п. А.1–13, B.1–2 (корни в тексте правил и парадигм, mdx 6389–6703); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3698,10 +3698,10 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 45/53 строк урока; нет строк — gai, uh, lu, kṝ, hve, pyai, jāgṛ, daridrā (фиксируем честно); ловушки написания серии: tṝ→tṛ, grah→grabh, und→ud, vṛ 'избирать'→hom 2; расхождения рядов 1975≠1978: sev I₁/A₂, kram M₁/M₂, khan N₁/N₂, jan N₁/N₂ — 4 случая на одном уроке (максимум серии); вне таблицы (списки урока, реестровый статус см. темы): aniṭ-октет без i — stu/dru/śru/sru/sṛ (тема 3, vṛ/bhṛ/kṛ в таблице), tha-исключения svṛ/saṅskṛ, footnote-список 13 i-опускательных (vraśc, mṛj, kḷp, gup, gāh, guh, tṛp, druh, naś, muh, snih), списки 11а/б (tṛ в таблице; bhram/phal/bhal; granth/tras/bhras/bhrāj/rāj), va-семёрка (vah в таблице; vac/vad/vap/vaś/vas), tud/bhid/krī/smṛ — регулярные параллели редукции; corpus_layer.tsv — 3 строки урока (vac/uvāca, bhū/babhūva, gam/jagāma — «перфект как норма повествования», топ-100 ранги 13–25): лакуна после XXXVIII кончается на XLIII"
   XLIV:
     title: "Будущие времена и прекатив: описательное будущее (имя деятеля на tṛ + спрягаемый as; перед tā те же изменения корня, что перед tum инфинитива); простое будущее (sya/ṣya прямо или через i/ī; guṇa подъёмных; конечные согласные как в II/III/VII перед s-; соединительный гласный как в инфинитиве; ayiṣya X-класса); причастия простого будущего (как I/IV/VI/X) и conditionalis (имперфект от простого будущего); прекатив (yās/sī, спряжение как pot. II/III/V/VII-IX; e-ряд dā/dhā/mā/sthā/pā/hā/gai…; aniṭ-изменения конечных; dhvam→ḍhvam)"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6733–6905 (заголовок «# УРОК XLIV.»; дальше урок XLV — обычный заголовок, mdx 6907). Русско-санскритское упражнение ЕСТЬ — вопреки косому правилу «43–47 без упражнений»: текст о калиюге (mdx 6905) с живым санскритским стержнем в Кнауэре Nr.13 (см. reuse_clusters — для матчера невидимо: упражнение Бюлера по-русски); corpus_layer возвращает 2 строки топ-100 (yā, dṛś) — обе простое будущее"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6737–6909 (заголовок «# УРОК XLIV.»; дальше урок XLV — обычный заголовок, mdx 6911). Русско-санскритское упражнение ЕСТЬ — вопреки косому правилу «43–47 без упражнений»: текст о калиюге (mdx 6909) с живым санскритским стержнем в Кнауэре Nr.13 (см. reuse_clusters — для матчера невидимо: упражнение Бюлера по-русски); corpus_layer возвращает 2 строки топ-100 (yā, dṛś) — обе простое будущее"
     claims: [HB-58, HB-352, HB-353, HB-354, HB-355, HB-356, HB-357, HB-358, HB-359, HB-360, HB-361, HB-362]
     reuse_clusters:
-      - "Кураторская находка (вне матчера): русско-санскритское упражнение урока (калиюга, mdx 6905) имеет живой санскритский стержень в Кнауэре Nr.13 (§§ 152–154): «yadi devo varṣiṣyati vayaṁ bahir na gamiṣyāmaḥ», «kaliyuge balaṁ prāpte pralaye ca samupasthite dharmo vinaçiṣyati», «bahavo brāhmaṇā vedam utsrakṣyanti… ācariṣyanti», «apaṇyāni vikreṣyanti», «abhakṣyaṁ bhakṣayiṣyanty apeyaṁ pāsyanti» — ядро упражнения (брахманы/веды/запретные товары/недозволенная еда) совпадает дословно; обрамление разное (у Бюлера дальше шудры, Явана-Щака, осада городов — в Nr.13 нет). Матчер молчит: пары «русский текст ↔ санскритский текст» вне дифф-матчера matches.json — преподнесение упражнения Бюлера по-русски прячет пересечение (для серии: русско-санскритские упражнения могут иметь кнауэровских двойников, которых сверка не видит)"
+      - "Кураторская находка (вне матчера): русско-санскритское упражнение урока (калиюга, mdx 6909) имеет живой санскритский стержень в Кнауэре Nr.13 (§§ 152–154): «yadi devo varṣiṣyati vayaṁ bahir na gamiṣyāmaḥ», «kaliyuge balaṁ prāpte pralaye ca samupasthite dharmo vinaçiṣyati», «bahavo brāhmaṇā vedam utsrakṣyanti… ācariṣyanti», «apaṇyāni vikreṣyanti», «abhakṣyaṁ bhakṣayiṣyanty apeyaṁ pāsyanti» — ядро упражнения (брахманы/веды/запретные товары/недозволенная еда) совпадает дословно; обрамление разное (у Бюлера дальше шудры, Явана-Щака, осада городов — в Nr.13 нет). Матчер молчит: пары «русский текст ↔ санскритский текст» вне дифф-матчера matches.json — преподнесение упражнения Бюлера по-русски прячет пересечение (для серии: русско-санскритские упражнения могут иметь кнауэровских двойников, которых сверка не видит)"
       - "В самом Nr.13 — весь формальный инвентарь урока одним текстом: varṣiṣyati/gamiṣyāmaḥ/vinaçiṣyati/utsrakṣyanti/ācariṣyanti/vikreṣyanti/bhakṣayiṣyanty/pāsyanti (простое будущее), dātā/yātā (описательное будущее — именной predicative!), abhaviṣyat ×2 (conditionalis) — живая триада будущих времён в одной фразе"
       - "matches.json: 0 совпадений на урок XLIV (честно) — разрежение после плотных XLII–XLIII объяснимо: упражнение русскоязычное"
     corpus_layer:
@@ -3710,7 +3710,7 @@ lessons:
     topics:
       - key: future-periphrastic-tar-as
         title: "Описательное будущее: от всех корней; Им. п. sing./du./pl. nominis actoris на tṛ + спрягаемые формы настоящего as (1–2 л. всех чисел, 3 л. — форма опускается); перед tā те же изменения корня, что перед tum инфинитива (ур. XXX): gai gātā, ji jetā, nī netā, stu stotā, bhū bhavitā, kṛ kartā, tṝ taritā, kath kathayitā; парадигма kṛ: kartāsmi/kartāsvaḥ/kartāsmaḥ (Par.), kartāhe/kartāsvahe/kartāsmahe (Ātm.)"
-        buhler_locus: "урок XLIV, п. I.1–2 + парадигма kṛ (mdx 6735–6755)"
+        buhler_locus: "урок XLIV, п. I.1–2 + парадигма kṛ (mdx 6739–6759)"
         topic_claims: [HB-58, HB-352]
         spots:
           "zalizniak-1978-sec:159": "с внешней стороны равно сочетанию N.sg имени деятеля на -tar-"
@@ -3725,7 +3725,7 @@ lessons:
         notes: "Кнауэр Nr.13: «yo bhikṣāṁ dātā sa svargaṁ yātā» — dātā и yātā как сказуемые в N.sg — описательное будущее в живом эпическом тексте (редкая учебная находка серии); Z-1978 §175 п.1 (имя деятеля) — соседний локус Очерка, в TSV не разводим (одна строка §159 несёт оба слоя)"
       - key: future-simple-sya
         title: "Простое будущее: суфф. sya [ṣya] к корню прямо или через i/ī, окончания ind. praes.; подъёмные гласные → guṇa; конечные дифтонги e/ai/o → ā; конечные согласные как в классах II/III/VII перед s-окончаниями: c/j/ś/ṣ/kṣ/h → k (после k sya → ṣya), d/dh → t, bh → p, m/n → anusvāra, s → t; соединительный гласный большей частью как в инфинитиве (ур. XXX): корни на ṛ — всегда i, gam/han — i в Par., vṛt/vṛdh/syand в Par. без i; X класс и каузативы — ayiṣya"
-        buhler_locus: "урок XLIV, п. II.1–2а–в + список 25 примеров (mdx 6757–6823)"
+        buhler_locus: "урок XLIV, п. II.1–2а–в + список 25 примеров (mdx 6761–6827)"
         topic_claims: [HB-353, HB-354, HB-355]
         spots:
           "zalizniak-1978-sec:157": "Основа простого будущего времени равна корню в ступени guṇa + sya"
@@ -3740,7 +3740,7 @@ lessons:
         notes: "HB-58 note (order-flag): Бюлер — описательное будущее первым, простое вторым (Уитни и Очерк — наоборот: простое §§931-940, перифрастическое §§942-949; Очерк §157 перед §159); Кнауэр Nr.13: varṣiṣyati/gamiṣyāmaḥ — kṣ/sandhi-сложные формы живого текста; список 25 примеров урока — самый длинный формальный список серии (tṝ tariṣyati/tarīṣyati двойник, labh lapsyate Ā., gam saṅgaṅsyate «неправильно» — как в прекативе V.3); сноски-отсылки: * ур. XXX, ** ур. XL, 13 — внутренняя сеть курса работает"
       - key: future-participle-conditional
         title: "Причастия простого будущего — подобно причастиям настоящего I/IV/VI/X (тематические): dā P. dāsyat (ур. XXIII, 3а, в), Ā. dāsyamāna; kṛ P. kariṣyat, Ā. kariṣyamāna. Conditionalis: имперфект, образованный от простого будущего, употребляется в условных предложениях — dā P. adāsyām/adāsyaḥ/adāsyat, Ā. adāsye/adāsyathāḥ/adāsyata"
-        buhler_locus: "урок XLIV, п. III–IV (mdx 6839–6843)"
+        buhler_locus: "урок XLIV, п. III–IV (mdx 6843–6847)"
         topic_claims: [HB-356, HB-357]
         spots:
           "zalizniak-1978-sec:158": "по внешнему строению представляет собой имперфект от основы будущего времени"
@@ -3755,7 +3755,7 @@ lessons:
         notes: "конвергенция формулировки «в обеих частях» — Кочергина Занятие XIX и Очерк §109 дословно совпадают, у Бюлера и Уитни только протасис; Кнауэр Nr.13: «suvṛṣṭiç ced abhaviṣyat tadā subhikṣam abhaviṣyat» — conditionalis в обеих частях (протасис + аподосис) — живая иллюстрация конауэровской же фразы; HB-58 note: порядок подачи будущих времён (Бюлер: описательное → простое) — условная ось 4 свидетелей"
       - key: benedictive-precative
         title: "Прекатив (benedictivus/precativus): P. суфф. yās, Ā. — sī [ṣī], спряжение как pot. классов II/III/V/VII-IX; P. изменения как перед ya пассива (ур. X), но гласные dā/dhā/mā/sthā/pā/hā/dhe/gai/so/do всегда → e (deyāt; ji jīyat, śru śrūyāt, kṛ kriyāt, smṛ smaryāt, tṝ tīryāt, pṝ pūryāt, hve huyāt, śās śiṣyāt, vah uhyāt, vas uṣyāt); i → īyāt, но с приставками iyāt (udiyāt); Ā. соединительный гласный как в инфинитиве (ṛ-корни и vṛ — факультативно; ī только у grah); без соединительного: конечные i/ī/u → guṇa, ṝ → īr/ūr (после губных), дифтонги → ā, согласные как в простом будущем; X класс/каузативы — ayiṣī; парадигма dā: deyāsam/deyāḥ/deyāt (Par.), dāsīya/dāsīṣṭhāḥ/dāsīṣṭa (Ātm.); сноска: dhvam → ḍhvam при тех же условиях, что dhve → ḍhve (XLIII, 4г)"
-        buhler_locus: "урок XLIV, п. V.1–3 + парадигма dā + сноска ḍhvam (mdx 6845–6903)"
+        buhler_locus: "урок XLIV, п. V.1–3 + парадигма dā + сноска ḍhvam (mdx 6849–6907)"
         topic_claims: [HB-358, HB-359, HB-360, HB-361, HB-362]
         spots:
           "zalizniak-1978-sec:149": "основа прекатива равна корню в слабой ступени + yās"
@@ -3764,11 +3764,11 @@ lessons:
           buhler: "B+ — HB-358..362 все TRUE/JUSTIFIED: e-ряд «всегда» — универсальность подтверждена (HB-359 note: никаких *dāyāt не предписано и не аттестовано); «большей частью» Ā.-корреляция с инфинитивом — корректное направление (HB-360); «ī только у grah» — скоуп-точно (HB-361: в iṣ-аористе Бюлер сам расширяет на ṛ-корни и vṛ — образование-специфично); aniṭ-изменения — общий фонологический блок (HB-362: OCH-14)"
           whitney: "W+ — §§921-926: прекатив; §930: e-ряд (deyāt/dheyāt…) — дословно тот же закрытый список; §§925-926: Ā. на sī/iṣī, ī-grah-единственность; §927-929: aniṭ-блок i/ī/u→guṇa, ṝ→īr/ūr, дифтонги→ā; §226c-смежно dhvam→ḍhvam — сноска урока ведёт точно"
           zalizniak-1978: "Z± — §149: «прекатив (иногда называемый также оптативом аориста)» — якорь аористный, не потентный: act. = слабая ступень + yās (bhūyās-, çrūyās-, kriyās-, ucyās-, gamyās-, āpyās-; полноизм. на ā → -eyās-: stheyās-), аугмент отсутствует; med. «в послеведийский период почти не встречается» + bhaviṣī-парадигма с -dhvam/-ḍhvam; честное расхождение рамки: Бюлер = «как pot. II/III/V/VII-IX», З-1978 = полусамостоятельное аористное образование; e-ряд dā→de у З-1978 вне §149 (через полноизм. на ā → -eyās- частично закрыт)"
-          kochergina: "K — прекатив в поурочной трассе не преподаваем (единственное упоминание — ведийский прекатив при аористе, Занятие XXXVIII-зона, mdx 10366: «с основой аориста связано образование безаугментных форм инъюнктивa и прекатива») — честный gap всей темы; учебный слой (парадигма deyāt/dāsīṣṭa) у Кочергиной отсутствует"
+          kochergina: "K — прекатив в поурочной трассе не преподаваем (единственное упоминание — ведийский прекатив при аористе, Занятие XXXVIII-зона, mdx 10370: «с основой аориста связано образование безаугментных форм инъюнктивa и прекатива») — честный gap всей темы; учебный слой (парадигма deyāt/dāsīṣṭa) у Кочергиной отсутствует"
         notes: "сноска ḍhvam — прямая скрепа с уроком XLIII (dhve→ḍhve) — вторая межурочная отсылка серии внутри одного урока (первая: II.2в ↔ ур. XXX); so/do/dhe — печатные варианты урока (e-ряд), как самостоятельные корни в реестрах не опознаются — фиксируем честно (прецедент ukh→uh, XLIII); Кнауэр Nr.13 прекативов не несёт (живого примера темы в серии нет — честно); Кочергина-конвергенция «обеих частях условного предложения» — см. тему 3"
       - key: lesson-roots
         title: "Лемма-слой: 46 корней урока — все несущие правила/списки/парадигмы (описательное будущее, простое будущее: guṇa/согласный блок/соединительный гласный/ayiṣya, причастия, conditionalis, прекатив: e-ряд, aniṭ-блок, ī-grah)"
-        buhler_locus: "урок XLIV, п. I–V (корни в правилах, списках примеров и парадигмах, mdx 6735–6903); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
+        buhler_locus: "урок XLIV, п. I–V (корни в правилах, списках примеров и парадигмах, mdx 6739–6907); словарного списка у урока нет — словарь встроен в правила (фиксируем честно)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3828,7 +3828,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 41/46 строк урока; нет строк — gai, stu, sṛj, hve, i (фиксируем честно); so/do/dhe — печатные варианты (dhe = dhā w393, в таблице; so/do как корни не опознаны); ловушки написания серии: tṝ→tṛ, grah→grabh, pṝ→pṛ, glai→glā — 4 случая (рекорд после XLIII ×3); расхождение рядов 1975≠1978: syand A₁/N₁ — 1 случай (5-й в серии: sev/kram/khan/jan XLIII, bandh XXXVII); hom-развилки: śī lie(h2)/fall(h1), bhuj enjoy(h2), rudh obstruct(h2), vas обитать — по глоссам урока; вне таблицы (перечислены в правилах без форм): aniṭ-блок конечных (общее правило, не корневой список), e-ряд полностью в таблице; corpus_layer.tsv — 2 строки урока (yā/yāsyāmi, dṛś/drakṣyāmi — оба простое будущее, топ-100 ранги 27/81): продолжение лакуны, начавшейся после XXXVIII, с коротким всплеском XLIII"
   XLV:
     title: "Аорист (A), корневые: первый — окончания без соед. гласной как impf. II кл., только Parasmaipada (dā adām/adāva/adāma, adāḥ/adātam/adāta, adāt/adātām/aduḥ; bhū abhūvam…abhūvan «неправильно»; примеры dhā adhāt, sthā asthāt, pā apāt, i agāt); второй — как impf. VII кл. [опечатка: VI кл., HB-60/errata], P. и Ā. (sic asicam/asicāva/asicāma, Ā asice/asicāvahi/asicāmahi; средние носовые выпадают abhraśat/asrasat, конечный ṛ→guṇa; āp āpat, gam agamat, bhraṅś abhraśat, muc amucat, śak aśakat, sad asadat, sraṅs asrasat; неправильные as āsthat, khyā akhyat, dṛś adarśat, śās aśiṣat, śvi aśvat, hve ahvat); третий — imperf. с удвоением по примеру VI кл., P. и Ā. (śri aśiśriyam/aśiśriyāva…, Ā aśiśriye; dru adudruvat, sru asusruvat, kam acakamat, śvi aśiśviyat, dhe adadhat; неправильные vac avocat, pat apaptat); от X кл. и каузативов — только третий: aya всегда отбрасывается, кластер-исход → правила удвоения перфекта (ararakṣat, acakathat), внутренние гунированные → исходный гласный (avīvṛtat/avavartat), ā→a, ī/ū→i/u факультативно, vṛddhi конечных → guṇa, ī/i-ритм при краткой основе (adīdamat vs acikṣipat), гласноначальные удваивают конечный согласный [опечатка: «гласный», HB-372/errata] с вставкой i (āśiśat, arjijat, aicikṣat); неправильные ajagaṇat/ajīgaṇat, atiṣṭhipat, asūṣupat; финальное замечание: с mā аористы лишаются приращения и заменяют императив (mā dāḥ, mā bhaiṣīḥ — инъюнктив), а сами в классике — редкие прошедшие, равноправные с перфектом и импфектом"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6907–7012 (заголовок «# УРОК XLV.»; дальше урок XLVI — обычный заголовок, mdx 7013). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «волк и собака» (mdx 7011) с живыми аористами темы (upadru III, prārth III, ākārayati III / smārayati III — каузативные, mā-запрет), фиксируем честно; corpus_layer — 3 строки (sic, muc — HB-60; dā — HB-363)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 6911–7016 (заголовок «# УРОК XLV.»; дальше урок XLVI — обычный заголовок, mdx 7017). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «волк и собака» (mdx 7015) с живыми аористами темы (upadru III, prārth III, ākārayati III / smārayati III — каузативные, mā-запрет), фиксируем честно; corpus_layer — 3 строки (sic, muc — HB-60; dā — HB-363)"
     claims: [HB-60, HB-61, HB-363, HB-364, HB-365, HB-366, HB-367, HB-368, HB-369, HB-370, HB-371, HB-372, HB-373]
     reuse_clusters:
       - "0 совпадений (scripts/data/matches.json): прямых reuse-предложений урока XLV нет — фиксируем честно (прецедент урока I: «0 на уроке — указано честно»). Живой слой вместо матчера: хрестоматийный текст урока сам демонстрирует темы (upadru III, prārth III, ākārayati III, smārayati III, «не есть ее теперь (mā с aor.)») и Кнауэр Nr.14 ('bhūt, avocat, priye mā bhaiṣīr, mā tyākṣīḥ, mā drākṣīs) — кураторская находка, не матчер"
@@ -3839,7 +3839,7 @@ lessons:
     topics:
       - key: aorist-root-first
         title: "Первый аорист (корневой): вторичные окончания без соединительного гласного, как impf. II класса; встречается только Parasmaipada; парадигмы dā (adām/adāva/adāma; adāḥ/adātam/adāta; adāt/adātām/aduḥ — «правильно») и bhū (abhūvam/abhūva/abhūma; abhūḥ/abhūtam/abhūta; abhūt/abhūtām/abhūvan — «неправильно»); примеры: dhā adhāt, sthā asthāt, pā apāt, i agāt"
-        buhler_locus: "урок XLV, п. I + таблица + примеры (mdx 6911–6929)"
+        buhler_locus: "урок XLV, п. I + таблица + примеры (mdx 6915–6933)"
         topic_claims: [HB-363]
         spots:
           "zalizniak-1978-sec:140": "аорист 1 совпадает с имперфектом класса II"
@@ -3855,7 +3855,7 @@ lessons:
         notes: "sangram SG-MO-019: root — самый частотный тип аориста корпуса (5690 из 12 054, канон abhūt); Кнауэр Nr.14 «kva gatā 'bhūt» — живой корневой аорист bhū в соседней фразе с перфектным uvāca; crosswalk-гомонимия dā: dā₁–dā₄ (wh349–352) + rā₁ «give» (wh635) — аорист adām сидит на dā₁/rā₁; самоконфликтные строки crosswalk на уроке: pā (I1-дубль при wh448), śak (A1/I1 при wh767), sad (A1/I2 при wh830) — регистровый артефакт 1975-реестра, фиксируем честно"
       - key: aorist-thematic-a
         title: "Второй аорист (a-аорист): образуется как impf. VII кл. [опечатка — VI кл.: тематический, HB-60 FALSE/errata], P. и Ā.; sic: asicam/asicāva/asicāma, Ā. asice/asicāvahi/asicāmahi; средние носовые выпадают (bhraṅś abhraśat, sraṅs asrasat), конечный ṛ → guṇa; правильные: āp āpat, gam agamat, muc amucat, śak aśakat, sad asadat; неправильные: as āsthat, khyā akhyat, dṛś adarśat, śās aśiṣat, śvi aśvat, hve ahvat"
-        buhler_locus: "урок XLV, п. II + примеры (mdx 6931–6937)"
+        buhler_locus: "урок XLV, п. II + примеры (mdx 6935–6941)"
         topic_claims: [HB-60, HB-364]
         spots:
           "zalizniak-1978-sec:141": "совпадает с имперфектом класса VI"
@@ -3863,14 +3863,14 @@ lessons:
           "sangram-article:aorist-types": "тематический (a-аорист)"
         exceptions:
           verdict: "PARTIAL-REFUTED"
-          buhler: "B− — HB-60 FALSE как напечатано: «образуется также как impf. VII кл.» противоречит собственной тематической парадигме рядом (asicam/asicasi/asicat — VI-тип); опечатка VII↔VI уже в errata.yml (H797, строка урока XLV mdx 6929) и methodichka HB-60 («опора — парадигма, не номер класса»); HB-364 TRUE/JUSTIFIED — выпадение носовых и guṇa ṛ точны"
+          buhler: "B− — HB-60 FALSE как напечатано: «образуется также как impf. VII кл.» противоречит собственной тематической парадигме рядом (asicam/asicasi/asicat — VI-тип); опечатка VII↔VI уже в errata.yml (H797, строка урока XLV mdx 6933) и methodichka HB-60 («опора — парадигма, не номер класса»); HB-364 TRUE/JUSTIFIED — выпадение носовых и guṇa ṛ точны"
           whitney: "W+ — §§846-847: a-аорист тематический («соответствует имперфекту á-класса», §824/846b), спряжение вторичное тематическое; §847: выпадение внутреннего носового (abhrāśat/asrasat-класс) и guṇa ṛ-корней"
           zalizniak-1978: "Z+ — §141 «Аорист 2 (простой тематический)… совпадает с имперфектом класса VI» + guṇa у открытых ar/am/an + особый случай asthat (as бросать) — прямой корректирующий свидетель против опечатки урока; тот же §142-стиль списка особых случаев, что у Бюлера"
           kochergina: "K+ — Занятие XXXVII «II тип — тематический простой аорист. Самый распространенный в санскрите тип»: -a-суффикс, слабая ступень, guṇa у -an/-am/-ar; пример agama- = урок"
         notes: "TALMUD CROSS-CHECK (H1054, в HB-60): тематический аорист Талмуда структурно = класс-VI-тип, класс VII — носовой атематический; корпус: them = 2781 токен (SG-MO-019, канон avocat — он же «неправильный» третьего аориста у Бюлера: двойная регистрация vac в обоих типах — честная корпусная нестыковка форм-двойников); corpus_layer урока: sic/asicat (KSS 5,3,57) + muc/amucat (BKŚS 18,251) — обе строки HB-60; witness aorist:108 AGREE §§824/846b/857"
       - key: aorist-reduplicated
         title: "Третий аорист: по форме imperf. с удвоением, спрягаемый по примеру VI кл., P. и Ā.; śri: aśiśriyam/aśiśriyāva/aśiśriyāma, Ā. aśiśriye; правильные: dru adudruvat, sru asusruvat, kam acakamat, śvi aśiśviyat, dhe adadhat; неправильные: vac avocat, pat apaptat"
-        buhler_locus: "урок XLV, п. III + примеры (mdx 6939–6945)"
+        buhler_locus: "урок XLV, п. III + примеры (mdx 6943–6949)"
         topic_claims: [HB-365]
         spots:
           "zalizniak-1978-sec:142": "(тематический с удвоением)"
@@ -3885,7 +3885,7 @@ lessons:
         notes: "Кнауэр Nr.14 «pitā duhitaram avocat» — avocat рядом с перфектным uvāca смежной фразы (урок XLIII) — контраст аорист/перфект того же корня; red в корпусе 833 токена из 12 054 (SG-MO-019, канон ajījanat); dhe «сосать» = dhā-hom2 (wh394) — ловушка гомонимии серии"
       - key: aorist-class-x-causative
         title: "Аорист X класса и каузативов — только третий: aya всегда отбрасывается; правила: (1) консонантноначальные с кластерным исходом — правила удвоения перфекта (rakṣayati ararakṣat, kathayati acakathat, tvarayati atatvarat, sevayati asiṣevat, mṛgayate amamṛgat); (2) внутренние гунированные → исходный гласный (ar/al могут оставаться; avīvṛtat/avavartat), ā→a часто, ī/ū→i/u факультативно, īr вм. ṝ остаётся или →ṛ; vṛddhi конечных → guṇa; (3) ī/i-ритм при просодически краткой основе: ī перед простым согласным, i перед группой (bhedayati abībhidat, damayati adīdamat vs kṣepayati acikṣipat); гласноначальные: удваивают конечный согласный [опечатка «гласный» — HB-372 FALSE/errata] после одиночного или r/n-кластера, иначе первый согласный, вставка i (редко a): āśayati āśiśat, arjayati arjijat, añjayati āñjijat, arthayate ārtathat, īkṣayati aicikṣat; неправильные: gaṇ ajagaṇat/ajīgaṇat, sthāpayati atiṣṭhipat, svāpayati asūṣupat"
-        buhler_locus: "урок XLV, п. III правила 1–4 + списки примеров (mdx 6947–7005)"
+        buhler_locus: "урок XLV, п. III правила 1–4 + списки примеров (mdx 6951–7009)"
         topic_claims: [HB-366, HB-367, HB-368, HB-369, HB-370, HB-371, HB-372]
         spots:
           "zalizniak-1978-sec:139": "Из производных глаголов каузативы образуют аорист типа 3"
@@ -3893,14 +3893,14 @@ lessons:
           "kochergina-lesson:XXXVII": "осн. каузатива jñāpaya-"
         exceptions:
           verdict: "CONFIRMED-WITH-NUANCE"
-          buhler: "B+ при одной опечатке — HB-366/367/368/369/370/371 TRUE/JUSTIFIED (уникальность «и никакой другой» корректно скоупится на активный аорист — пассивный 3 sg abhedi у Бюлера отдельное образование, mdx 7167; aya-drop дефиниционно); HB-372 FALSE как напечатано: «удваивают конечный гласный» противоречит всем соседним примерам (āśiśat, arjijat, aicikṣat — согласный); в errata.yml (H797) + TALMUD CROSS-CHECK H1054 вторым независимым свидетелем"
+          buhler: "B+ при одной опечатке — HB-366/367/368/369/370/371 TRUE/JUSTIFIED (уникальность «и никакой другой» корректно скоупится на активный аорист — пассивный 3 sg abhedi у Бюлера отдельное образование, mdx 7171; aya-drop дефиниционно); HB-372 FALSE как напечатано: «удваивают конечный гласный» противоречит всем соседним примерам (āśiśat, arjijat, aicikṣat — согласный); в errata.yml (H797) + TALMUD CROSS-CHECK H1054 вторым независимым свидетелем"
           whitney: "W+ — §§861, 1046-1047: X-класс/каузативы → red-аорист, aya отбрасывается; §862 внутренние ступени с ar/al-опцией; §860 тяжёлолёгкий ī/i-ритм (формулировка Бюлера «простой согласный/группа» — поверхностная форма того же правила, HB-371); §865 гласноначальные: удваивается согласный, вставка i, редко a (ārtathat)"
           zalizniak-1978: "Z± — §139 «каузативы образуют аорист типа 3» + §142 «обычно выступает как аорист каузатива, хотя и образуется непосредственно от корня. Формальная связь с основой каузатива только в нескольких случаях типа ajījñapat» — у Бюлера слой шире (списки 1–4 с сотней основ), у З-1978 сжато до трёх предложений (honest spread); дублетная запись adidīpat/adīdipat — та же манера, что у урока"
           kochergina: "K+ — Занятие XXXVII: jñā→ajijñipa-, sthā→atiṣṭhipa- — irregular-ряд совпадает с «неправильными» урока; правило конечного p (ā→i: adīdhapa-) — параллель ī/ū-редукций урока"
-        notes: "HB-372 — второй erratum-кандидат урока (уже зарегистрирован: errata.yml mdx 7005, H797/H1054) — конкорданс фиксирует, не дублирует; witness aorist:84 AGREE («редуплицированный (обычно при каузативе)» §§824/846/856/878-916); список X-класса урока сам себя хеджирует («между прочим») — иллюстративный, в лемма-слой взято 16 репрезентативных основ"
+        notes: "HB-372 — второй erratum-кандидат урока (уже зарегистрирован: errata.yml mdx 7009, H797/H1054) — конкорданс фиксирует, не дублирует; witness aorist:84 AGREE («редуплицированный (обычно при каузативе)» §§824/846/856/878-916); список X-класса урока сам себя хеджирует («между прочим») — иллюстративный, в лемма-слой взято 16 репрезентативных основ"
       - key: aorist-injunctive-ma
         title: "mā-запрет (инъюнктив): в соединении с mā аористы лишаются приращения и заменяют императив — mā dāḥ не давай; mā bhaiṣīḥ не бойся; фоновая рамка урока: в классическом санскрите аористы — редкие формы прошедшего, совершенно равноправные с perf. и imperf."
-        buhler_locus: "урок XLV, финальное замечание * (mdx 7007–7009)"
+        buhler_locus: "урок XLV, финальное замечание * (mdx 7011–7013)"
         topic_claims: [HB-373, HB-61]
         spots:
           "zalizniak-1978-sec:148": "Инъюнктив равен аористу без аугмента"
@@ -3916,7 +3916,7 @@ lessons:
         notes: "Кнауэр Nr.14 — живая тройка запретов: priye mā bhaiṣīr (ḥ→r сандхи перед гласной!), mā tyākṣīḥ, mā drākṣīs — инъюнктив сигматический рядом с корневым; corpus_layer урока: dā mā adāḥ (ManuS 2,114, ранг 43) — та же конструкция в живом топ-100 тексте; witness HK-223 (§579): «НЕ только 2 л.» — mā bhūt (3 л.), mā radham (1 л.) — нюанс к школьной форме урока; хрестоматийный текст урока: «не есть ее теперь (mā с aor.)» — инъюнктив в действии"
       - key: lesson-roots
         title: "Лемма-слой: ~55 корней урока — парадигмы трёх корневых аористов, неправильные и иллюстративный список каузативных (X-класс)"
-        buhler_locus: "урок XLV, п. I–III правила 1–4 (корни в парадигмах и списках, mdx 6911–7005); словарного списка у урока нет — словарь встроен в правила и хрестоматийный текст (фиксируем честно)"
+        buhler_locus: "урок XLV, п. I–III правила 1–4 (корни в парадигмах и списках, mdx 6915–7009); словарного списка у урока нет — словарь встроен в правила и хрестоматийный текст (фиксируем честно)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -3981,16 +3981,16 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 41/50 строк таблицы; нет строк — i, bhraṅś, sraṅs, śvi, hve, gaṇ, mṛg, āś (ардж-гомонимия), arth, sthāp (через sthā), śās-каузатив (через śās), sūc, rūp, kīrt, bhrām/jrāmbh (через jṛ/группа), nāy (через nī I₂ wh427 — nāyayati anīnayat не сведён отдельно) — фиксируем честно; ловушки написания серии: tṝ→tṛ (atasṛ/atastarat), dhe→dhā-hom2, arj→ṛj; самоконфликты 1975-реестра в crosswalk: pā, śak, sad, arj (2+ строки при одном wh-номере) — 4 случая, новый класс расхождений серии (раньше 1975≠1978, теперь 1975≠1975 внутри crosswalk); расхождения рядов 1975≠1978: sev I₀/A₂, lok U₀/A₂, loc U₀/A₂, añj N₁/A₁ (через ṛj-строку A₁) — 4 случая; tvar 1978 R? — ряд не определён; список X-класса урока иллюстративный («между прочим») — в таблицу взято 16 репрезентативных основ, остальные derivational от реестровых корней; corpus_layer.tsv — 3 строки урока (sic, muc, dā), обе HB-60 + HB-363"
   XLVI:
     title: "Сигматические аористы: IV (на -s), V (на -iṣ), VI (на -siṣ)"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7013–7129 (заголовок «# УРОК XLVI.»; дальше урок XLVII — кривой заголовок без точки, mdx 7131). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «коршун и самка шакала» (mdx 7129, паньчатантрийская фабула) с живыми аористами, размеченными прямо в уроке по типам (bandh IV, nirṇī IV, prasthā IV, ākṣip IV, ālabh IV, yaj IV, apahar IV, nidhā IV — s-аорист; grah V, īkṣ V, uḍ-ḍī V, nipat V, ud-jan V, khād V — iṣ-аорист; pratyāyā IV, VI — двойная отсылка), фиксируем честно; corpus_layer — 0 строк (честно)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7017–7133 (заголовок «# УРОК XLVI.»; дальше урок XLVII — кривой заголовок без точки, mdx 7135). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «коршун и самка шакала» (mdx 7133, паньчатантрийская фабула) с живыми аористами, размеченными прямо в уроке по типам (bandh IV, nirṇī IV, prasthā IV, ākṣip IV, ālabh IV, yaj IV, apahar IV, nidhā IV — s-аорист; grah V, īkṣ V, uḍ-ḍī V, nipat V, ud-jan V, khād V — iṣ-аорист; pratyāyā IV, VI — двойная отсылка), фиксируем честно; corpus_layer — 0 строк (честно)"
     claims: [HB-374, HB-375, HB-376, HB-377, HB-378, HB-379, HB-380, HB-381, HB-382]
     reuse_clusters:
-      - "0 настоящих reuse-предложений (scripts/data/matches.json): попадания матчера — шум коротких корневых токенов (darś IV ↔ списки слов Кочергиной XVII, nivart/saṃgam ↔ XLVIII-словарь), не предложения — фиксируем честно. Живой слой урока: хрестоматийный текст (mdx 7129) сам размечает типы IV/V/VI прямо в фабуле; Кнауэр Nr.15 — хронологический сосед серии (Nr.13→XLIV, 14→XLV, 16→XLVII, 17→XLVIII), но его формы — перфекты (jahrire, dadau, praçaçaṅsuḥ, nipetus, varayāmāsa, suṣuve, kārayāmāsa, jagāma, reme, jahau, babhūva), сигматических аористов в упражнении нет — линков на Nr.15 не заводим, не выдумываем строки (правило урока 43–47)"
+      - "0 настоящих reuse-предложений (scripts/data/matches.json): попадания матчера — шум коротких корневых токенов (darś IV ↔ списки слов Кочергиной XVII, nivart/saṃgam ↔ XLVIII-словарь), не предложения — фиксируем честно. Живой слой урока: хрестоматийный текст (mdx 7133) сам размечает типы IV/V/VI прямо в фабуле; Кнауэр Nr.15 — хронологический сосед серии (Nr.13→XLIV, 14→XLV, 16→XLVII, 17→XLVIII), но его формы — перфекты (jahrire, dadau, praçaçaṅsuḥ, nipetus, varayāmāsa, suṣuve, kārayāmāsa, jagāma, reme, jahau, babhūva), сигматических аористов в упражнении нет — линков на Nr.15 не заводим, не выдумываем строки (правило урока 43–47)"
     corpus_layer:
       - "0 строк (BuhlerLeitfaden_1923/corpus_layer/corpus_layer.tsv: урок XLVI отсутствует — лакуна, прецедент XLVII «corpus_layer 0 — честно»); частотная рамка вместо неё — sangram-article:aorist-types: s-аорист 1508, iṣ-аорист 1077, siṣ-аорист 41 токен DCS-снапшота — живое подтверждение «редкого типа» HB-382"
     topics:
       - key: aorist-s-fourth
         title: "Четвертый аорист (s-аорист): окончания sam/sīḥ/sīt, sva/stam/stām, sma/sta/suḥ (P.) и si/sthāḥ/sta, svahi/sāthām/sātām, smahi/dhvam/sata (Ā.); sta/stha-окончания отбрасывают s после кратких гласных и всех согласных, кроме анусвары и r; dhvam → ḍhvam после корневых гласных и дифтонгов, кроме a, ā, и после r; в P. все допускающие vṛddhi гласные → vṛddhi (anaiṣam, akārṣam, adrākṣam — dṛś и sṛj дают rā вместо ār), в Ā. только конечные i, ī, u, ū → guṇa (aneṣi, akṛṣi); конечные согласные перед s — по XLIV, 2б), перед t, th, dh — как в P. II, III, VII классов; парадигмы nī (anaiṣam/aneṣi), kṛ (akārṣam/akṛṣi), dṛś P. (adrākṣam) и labh Ā. (alapsi/alabdhāḥ/alabdha); употребление — большей частью от aniṭ-глаголов (инфинитив без соединительного гласного, ур. XXX)"
-        buhler_locus: "урок XLVI, п. IV.1–3 + 4 таблицы (mdx 7015–7079)"
+        buhler_locus: "урок XLVI, п. IV.1–3 + 4 таблицы (mdx 7019–7083)"
         topic_claims: [HB-374, HB-375, HB-376]
         spots:
           "zalizniak-1978-sec:144": "Основа аориста 4 равна корню + s"
@@ -4005,7 +4005,7 @@ lessons:
         notes: "Частотная рамка: sangram-article:aorist-types — сигматический -s- самый частотный из сигматических (1508 токенов против 1077 iṣ / 124 sa / 41 siṣ); парадигмы урока nī/kṛ/dṛś/labh дословно совпадают с образцом Кочергиной XXXVIII (akārṣam…/anaiṣam…); кочергинские примеры man/ram/vas/darś/sarj дают sandhi-слой, который Бюлер прячет в отсылку XLIV, 2б) — cross-repo сшивка уроков XLIV↔XLVI; ловушка z-1978 §143: типы 4 и 5 различаются показателем (s vs iṣ) — база для темы V"
       - key: aorist-s-middle-irregulars
         title: "Неправильные s-аориста: adhi+i → adhyaiṣṭa или adhyagīṣṭa; dā, dhā, sthā — только Ātmanepada, гласный корня → i, 2-3 л. на thāḥ/ta (adiṣi, adithāḥ, adita); gam и upayam «жениться» могут выбрасывать носовой (agaṅsi/agasi, agaṅsthāḥ/agasthāḥ); pad Ā. 3 sg apādi; budh Ā. abuddha или abodhi"
-        buhler_locus: "урок XLVI, п. IV.4 (mdx 7083)"
+        buhler_locus: "урок XLVI, п. IV.4 (mdx 7087)"
         topic_claims: [HB-377]
         spots:
           "zalizniak-1978-sec:144": "показатель s отсутствует"
@@ -4019,7 +4019,7 @@ lessons:
         notes: "Шестой урок серии с ловушкой написания: «adhi+i» в типографике 1923 читается двояко (составной корень adhi-i- → adhyaiṣṭa), HB-клейма нет — фиксируем формулировку урока как есть; дощечка честности: budh abuddha/abodhi стоит на границе IV и V типов (§902 iṣ-парадигма) — в лемма-слой budh идёт с пометкой"
       - key: aorist-is-fifth
         title: "Пятый аорист (iṣ-аорист): те же окончания, что в IV, но с предшествующим i или ī (ī — у корней на ṛ и vṛ по желанию, у grah всегда); 2-3 л. sg P. на īḥ/īt; конечные допускающие vṛddhi гласные → vṛddhi в P., guṇa в Ā.; внутренние и начальные → guṇa в обоих залогах; краткий a корней ar/al, vad, vraj удлиняется в P.; в am, ay, ah, śvas, has и редких — остаётся кратким, в остальных удлиняется факультативно; парадигма lū (alāviṣam/alāvīḥ/alāvīt; Ā. alaviṣi/alaviṣṭhāḥ/alavidhvam [печатная форма — erratum-кандидат: по правилу п. IV.1 dhvam→ḍhvam после i и сёстрам aneḍhvam/akṛḍhvam таблиц IV-типа, а также Уитни §226c/Кочергиной aśayiḍhvam ожидается alaviḍhvam]); употребление — обыкновенно от seṭ-корней (инф. на i), также P. от stu, su, kram, факультативно Ā. от ṛ-корней с кластером; неправильные: śvi aśvayīt; корни на n/ṇ VIII кл. в 2-3 л. sg Ā. отбрасывают носовой (tan ataniṣṭhāḥ/atathāḥ/ataniṣṭa/atata), jan 3 sg Ā. ajaniṣṭa или ajani"
-        buhler_locus: "урок XLVI, п. V.1–4 + таблица lū (mdx 7085–7111)"
+        buhler_locus: "урок XLVI, п. V.1–4 + таблица lū (mdx 7089–7115)"
         topic_claims: [HB-378, HB-379, HB-380, HB-381]
         spots:
           "zalizniak-1978-sec:145": "равна корню + iṣ"
@@ -4034,7 +4034,7 @@ lessons:
         notes: "Частотная рамка: iṣ-аорист 1077 токенов sangram — второй сигматический; Pāṇini-стыковка: HB-379 note называет §§7.2.1-7 — единственное место серии, где таксономия длины a полная; jan-дублет ajaniṣṭa/ajani — мост к XLVII (ajani — пассивный аорист 3 sg, урок XLVII) и к XLVIII (jan в списке неправильных дезидеративов); śvi aśvayīt — редчайшая форма, в 4-witness сетке без строки (честно); ERRATUM-кандидат: таблица lū печатает alavidhvam при собственных aneḍhvam/akṛḍhvam в таблицах IV-типа того же урока и правиле п. IV.1 — ожидается alaviḍhvam (Уитни §226c, Кочергина aśayiḍhvam) — GTD @DO"
       - key: aorist-sis-sixth
         title: "Шестой аорист (siṣ-аорист): исключительно Parasmaipada, от большинства корней на ā, e, ai, o (гласный → ā) и от yam, ram, nam (конечный m → анусвара); парадигмы yā (ayāsiṣam/ayāsīḥ/ayāsīt; ayāsiṣva/ayāsiṣṭam/ayāsiṣṭām/ayāsiṣuḥ) и nam (anaṅsiṣa/anaṅsīḥ/anaṅsīt)"
-        buhler_locus: "урок XLVI, п. VI + таблица yā/nam (mdx 7113–7127)"
+        buhler_locus: "урок XLVI, п. VI + таблица yā/nam (mdx 7117–7131)"
         topic_claims: [HB-382]
         spots:
           "zalizniak-1978-sec:146": "Основа аориста 6 (редкий тип)"
@@ -4046,10 +4046,10 @@ lessons:
           whitney: "W+ — §§911-915: §911 только act. (в med. у тех же корней s-форма — стыковка темы s-fourth), §912 крайняя редкость (RV только gā/yā, AV hā; поздние — гл-, adhmā-, anaṁsīt…), §913 формы, §914 моды, §915 med-формы лишь в оптативных чтениях"
           zalizniak-1978: "Z+ — §146: «Основа аориста 6 (редкий тип)» yāsiṣ-/raṁsiṣ-, только act., в med. у тех же корней аорист 4, спряжение как в аористе 5 — полный параллелизм инвентаря урока, включая редкость"
           kochergina: "K+ — Занятие XXXVIII: VI тип — от немногих корней на -ā, только P., обычно параллельные формы на -s; 2-3 л. sg -īs/-īt; парадигма yā ayāsiṣ- — дословно та же, что таблица урока"
-        notes: "Живое подтверждение редкости: siṣ-тип 41 токен sangram-счёта (14 лексем) против 1508 s- и 1077 iṣ- — самый редкий из сигматических, как и «редкий тип» З-1978; упражнение урока (mdx 7129) даёт живую siṣ/IV-двойку pratyāyā (IV, VI) — редчайший случай, когда фабула сама демонстрирует выбор между типами; исключения-анусвара в nam-ряду (anaṅsīḥ) — тот же n/m→анусвара слой, что Кочергина IV-типа (man→amaṃs)"
+        notes: "Живое подтверждение редкости: siṣ-тип 41 токен sangram-счёта (14 лексем) против 1508 s- и 1077 iṣ- — самый редкий из сигматических, как и «редкий тип» З-1978; упражнение урока (mdx 7133) даёт живую siṣ/IV-двойку pratyāyā (IV, VI) — редчайший случай, когда фабула сама демонстрирует выбор между типами; исключения-анусвара в nam-ряду (anaṅsīḥ) — тот же n/m→анусвара слой, что Кочергина IV-типа (man→amaṃs)"
       - key: lesson-roots
         title: "Лемма-слой: 23 корня урока — парадигмы IV/V/VI типов, неправильные и названные в правилах (vṛ, vad, vraj, yam, ram, tan, jan); adhi+i — составной, вне реестров"
-        buhler_locus: "урок XLVI, таблицы nī/kṛ/dṛś/labh/lū/yā/nam + п. IV.4, V.2-4, VI (mdx 7041–7127); словарного списка у урока нет — корни встроены в парадигмы и хрестоматийный текст (фиксируем честно)"
+        buhler_locus: "урок XLVI, таблицы nī/kṛ/dṛś/labh/lū/yā/nam + п. IV.4, V.2-4, VI (mdx 7045–7131); словарного списка у урока нет — корни встроены в парадигмы и хрестоматийный текст (фиксируем честно)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -4086,7 +4086,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 19/23 строк таблицы; нет строк — upayam, śvi, yam, adhi+i (составной) — фиксируем честно; самоконфликты 1975-реестра в crosswalk: dā (A1/A2), labh (A1/N1), jan (N1/N2), vṛ hom1 (R1/U1/U2 — 3 ряда, максимум серии) — 4 случая; расхождение рядов 1975≠1978: tan N2/N₁ — 1 случай; три из четырёх самоконфликтов (dā, labh, jan) уже фиксировались уроками XLVII/XLVIII — серия густеет на тех же корнях, что аористные парадигмы; TALMUD CROSS-CHECK: сигматические типы вне аористного корпуса по morphoclass-тегированию (derivation-gap — witness past-tenses), частотная рамка — sangram-article:aorist-types (s 1508 / iṣ 1077 / siṣ 41)"
   XLVII:
     title: "Сигматический аорист VII (sa) и пассивный аорист (VIII): седьмой — основа корень+sa [ṣa], P. и Ā., спряжение как impf. I класса, корни на ś/ṣ/h с i/u/ṛ (diś adikṣam…adikṣan / adikṣe…adikṣanta; конечные по XLIV, 2б; sa-отбрасывание guh/dih/duh/lih в 2–3 sg, 1 du., 2 pl. Ā.); пассивный — лица кроме 3 sg тожественны Ā. аористов IV/V/VII, X-класс/каузативы/seṭ-корни → iṣ-аорист с aya-опцией; 3 sg на -i (частейшая форма) — шесть классов изменения корня (y-вставка после ā: adāyi; vṛddhi конечных: anāyi/aśrāvi/akāri; guṇa начальных/внутренних: alehi/adohi/adarśi; удлинение предпоследнего a с am-исключением (adami) и re-рядом kam/gam/nam/yam/ram/vam/ācam (agāmi); aya-отбрасывание X/каузативов: acori/abhedi; неправильные jan ajani, labh alābhi/alambhi (после приставок только alambhi), han aghāni); ciṇvad-расширение — корни на гласные + grah/dṛś/han образуют остальные формы от 3 sg-основы окончаниями V-вида Ā (dā adiṣi/adāyiṣi; kṛ akṛṣi/akāriṣi; dṛś adṛkṣi/adarśiṣi; grah agrahīṣi/agrāhiṣi; han ahasi/aghāniṣi); пассивные перфект/будущее/conditionalis/precativus — Ā-окончаниями + особые основы от 3 sg аориста (kṛ kartā/kāritā, kariṣye/kāriṣyate, akariṣyata/akāriṣyata, kṛṣīṣṭa/kāriṣīṣṭa)"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7131–7199 (заголовок «# УРОК XLVII» — без точки на конце, единственный кривой делимитер зоны XLVI–XLVIII после жирного урока V; дальше урок XLVIII — обычный заголовок, mdx 7201). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «шакал и коза в колодце» (mdx 7199) с живыми пассивными аористами (avāci — vac, acinti — cint, anu-ṣṭhā; будущее пассивное uddhariṣyāmi — uddhar; кондитив avatar), фиксируем честно; corpus_layer — 0 строк (честно)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7135–7203 (заголовок «# УРОК XLVII» — без точки на конце, единственный кривой делимитер зоны XLVI–XLVIII после жирного урока V; дальше урок XLVIII — обычный заголовок, mdx 7205). Русско-санскритского упражнения нет (прецедентный косой случай 43–47) — вместо него хрестоматийный текст «шакал и коза в колодце» (mdx 7203) с живыми пассивными аористами (avāci — vac, acinti — cint, anu-ṣṭhā; будущее пассивное uddhariṣyāmi — uddhar; кондитив avatar), фиксируем честно; corpus_layer — 0 строк (честно)"
     claims: [HB-383, HB-384, HB-385, HB-386, HB-387, HB-388, HB-389, HB-390, HB-391, HB-392, HB-393]
     reuse_clusters:
       - "0 совпадений (scripts/data/matches.json): прямых reuse-предложений урока XLVII нет — фиксируем честно (прецедент урока I и XLV: «0 на уроке — указано честно»). Живой слой вместо матчера: хрестоматийный текст урока сам демонстрирует темы (avāci/acinti/anu-ṣṭhā — 3 sg пассивные аористы, uddhariṣyāmi — будущее пассивное, avatar — кондитив), а Кнауэр Nr.16 (§§179-182, пассив) повторяет глагольный состав речи шакала (mitreṇā 'vāci… mayā 'cinti… uddhariṣyāmī) — упражнение-двойник фабулы, кураторская находка, не матчер"
@@ -4094,7 +4094,7 @@ lessons:
     topics:
       - key: aorist-seventh-s
         title: "Седьмой аорист (sa): вставка sa [ṣa], спряжение в обоих залогах как impf. I класса; ограничение корнями на ś/ṣ/h с гласным i/u/ṛ; парадигма diś: adikṣam/adikṣāva/adikṣāma, adikṣaḥ/adikṣatam/adikṣata, adikṣat/adikṣatām/adikṣan | Ā. adikṣe/adikṣāvahi/adikṣāmahi, adikṣathāḥ/adikṣethām/adikṣadhvam, adikṣata/adikṣetām/adikṣanta; конечные согласные — по уроку XLIV, 2б; неправильность: guh/dih/duh/lih факультативно отбрасывают sa (aghukṣathāḥ/agūḍhāḥ, aghukṣata/agūḍha, aghukṣāvahi/aguhvahi, aghukṣadhvam/aghūḍhvam)"
-        buhler_locus: "урок XLVII, п. VII + таблица diś + неправильности (mdx 7135–7153)"
+        buhler_locus: "урок XLVII, п. VII + таблица diś + неправильности (mdx 7139–7157)"
         topic_claims: [HB-383, HB-384]
         spots:
           "kochergina-lesson:XXXVIII": "Тип VII - аорист на -sa."
@@ -4109,7 +4109,7 @@ lessons:
         notes: "Sangram SG-MO-018: sa-тип — 124 токена из 12 054 (37 лемм), канон adhukṣat «подоил» (duh) — тот же корень, что и в списке sa-отбрасывания урока; Кочергина «от немногих корней» = честная оценка частотности корпуса (124); crosswalk: diś I₁ (wh356, conf high), dih I₁ (wh357), lih I₁ (wh684), guh U₁ (wh187) — но у guh 2 строки U1/U2 при одном wh187 (самоконфликт 1975-реестра, серия XLV)"
       - key: aorist-passive
         title: "Пассивный аорист, общая рамка: во всех лицах, кроме 3 sg, тожественен Ā. аористов IV, V или VII типов; корни, у которых эти аористы не употребляются, образуют IV/V специально для пассива; X-класс, каузативы и все seṭ-корни (inf. с i) → V (iṣ)-аорист, каузативы/X-класс могут сохранять или отбрасывать aya"
-        buhler_locus: "урок XLVII, п. VIII.1 (mdx 7155–7157)"
+        buhler_locus: "урок XLVII, п. VIII.1 (mdx 7159–7161)"
         topic_claims: [HB-385, HB-386]
         spots:
           "zalizniak-1978-sec:161": "Во всех остальных личных формах для передачи пассивного значения используется просто med."
@@ -4123,21 +4123,21 @@ lessons:
         notes: "Talmud cross-check H1054 (в HB-385): AOR.PASS в реестре Талмуда образует ТОЛЬКО Ā.3.SG — вне 3 sg пассивных форм по построению нет, что объясняет и редкость не-3sg форм; Кнауэр Nr.16 (§§179-182 — упражнение на пассив) несёт живую тройку форм фабулы урока: avāci (vac), acinti (cint), uddhariṣyāmī (будущее пассивное uddhar)"
       - key: aorist-passive-3sg
         title: "Пассивный аорист, 3 sg на -i (встречается особенно часто): а) после конечного ā (e/ai/o → ā) вставляется y (dā adāyi, gai agāyi); б) конечные vṛddhi-способные гласные → vṛddhi (nī anāyi, śru aśrāvi, kṛ akāri); в) начальные/внутренние гунируемые → guṇa (lih alehi, duh adohi, dṛś adarśi); г) краткое предпоследнее a удлиняется, кроме исхода на am (dam adami), которые в свою очередь удлиняются у kam/gam/nam/yam/ram/vam/ācam (vac avāci, gam agāmi); е) X-класс/каузативы отбрасывают ay (cur acori, bhedayati abhedi); ж) неправильные: jan ajani, labh alābhi/alambhi (после приставок всегда alambhi), han aghāni"
-        buhler_locus: "урок XLVII, п. VIII.2 а-ж (mdx 7157–7171)"
+        buhler_locus: "урок XLVII, п. VIII.2 а-ж (mdx 7161–7175)"
         topic_claims: [HB-387, HB-388, HB-389, HB-390, HB-391]
         spots:
           "zalizniak-1978-sec:161": "пассив имеет особую форму 3 sg аориста с окончанием -i"
           "knauer-fraza:Nr.16": "mayā 'cinti ^3^ yena tvāṁ duḥkhād uddhariṣyāmī"
         exceptions:
           verdict: "CONFIRMED-WITH-NUANCE"
-          buhler: "B+ — HB-387/388/389/390/391 все TRUE/JUSTIFIED; двухуровневая исключительная структура HB-389 (am-блок + закрытый re-ряд) — панинийская доктрина 7.3.34-35 с варттикой; aya-отбрасывание в ciṇ обязательно (HB-390: контраст факультативу остальных лиц, mdx 7155)"
+          buhler: "B+ — HB-387/388/389/390/391 все TRUE/JUSTIFIED; двухуровневая исключительная структура HB-389 (am-блок + закрытый re-ряд) — панинийская доктрина 7.3.34-35 с варттикой; aya-отбрасывание в ciṇ обязательно (HB-390: контраст факультативу остальных лиц, mdx 7159)"
           whitney: "W+ — §843: 3 sg — форма в употреблении, остальные лица редки; §844: те же ступени и re-исключения; §1048: ciṇ строится на усиленном голом корне, никогда на -ay-"
           zalizniak-1978: "Z± — §161 сжат до трёх положений: -i-окончание; «ступень корня — такая же, как в 3 sg act. перфекта» (ayoji/akāri/abhāji); y-вставка после ā (adhāyi) — против шести правил урока со списками корней (honest spread); неправильные jan/labh/han у З-1978 отсутствуют"
           kochergina: "K: пассивный аорист 3 sg на -i не излагается — пассивные формы фабулы урока её читателю приходится брать из словаря; пассив у Кочергиной — только настоящее (Занятие …, основа + ya) и причастия"
         notes: "Кнауэр Nr.16 повторяет глагольный состав речи шакала из хрестоматийного текста урока (vāci — vac, cinti — cint, uddhariṣyāmī — fut. pass. от uddhar) — упражнение-двойник фабулы; спот-фраза несёт U+2005 (four-per-em space) источника — байт-в-байт; crosswalk-гомонимия: dā adāyi на dā₁ (wh349), vac A₁ (wh699), cur U₁ (wh232), bhid I₁ (wh521 — bhedayati каузатив bhid), kṛ akāri на kṛ₁ (wh106)"
       - key: aorist-sis-optional
         title: "Расширение пассивной 3 sg-основы (ciṇvad): все корни на гласные + grah, dṛś, han могут по желанию образовывать остальные формы аориста от 3 sg-основы окончаниями V (iṣ)-вида, Ā — парадигма dā: adiṣi/adiṣvahi/adiṣmahi, adithāḥ/adiṣāthām/adidhvam, adāyi/adiṣātām/adiṣata | либо adāyiṣi/adāyiṣvahi/adāyiṣmahi, adāyiṣṭhāḥ/adāyiṣāthām/adāyidhvam, adāyi/adāyiṣātām/adāyiṣata; двойные 1 sg: kṛ akṛṣi/akāriṣi, dṛś adṛkṣi/adarśiṣi, grah agrahīṣi/agrāhiṣi, han ahasi/aghāniṣi"
-        buhler_locus: "урок XLVII, п. VIII.3 + таблица dā (mdx 7173–7195)"
+        buhler_locus: "урок XLVII, п. VIII.3 + таблица dā (mdx 7177–7199)"
         topic_claims: [HB-392]
         spots:
           "zalizniak-1978-sec:146": "Основа аориста 6 (редкий тип) равна корню в guṇa + siṣ"
@@ -4152,7 +4152,7 @@ lessons:
         notes: "Sangram SG-MO-018: siṣ-тип — 41 токен из 12 054 (14 лемм), канон udagāsīt — самый редкий сигматический; полная парадигма урока только у dā; двойные 1 sg (akṛṣi/akāriṣi) — зеркальная факультативность «по желанию»"
       - key: passive-tense-forms
         title: "Пассив вне презентной системы: перфект, будущие времена, conditionalis и precativus — окончаниями Ā; в описательном перфекте as и bhū тоже Ā; корни на гласные + grah/dṛś/han могут образовывать будущее/кондиционал/прекатив от основы 3 sg аориста: kṛ kartā/kāritā, kariṣye/kāriṣyate, akariṣyata/akāriṣyata, kṛṣīṣṭa/kāriṣīṣṭa"
-        buhler_locus: "урок XLVII, финальный абзац (mdx 7197)"
+        buhler_locus: "урок XLVII, финальный абзац (mdx 7201)"
         topic_claims: [HB-393]
         spots:
           "knauer-fraza:Nr.16": "duḥkhād uddhariṣyāmī"
@@ -4165,7 +4165,7 @@ lessons:
         notes: "Кнауэр Nr.16 uddhariṣyāmī — будущее пассивное от uddhar в речи шакала — живой двойник kariṣye-ряда урока; хрестоматийный текст: uddhar помечен как fut. pass. и prahvat kar тоже (prahvatīṣyate-тип)"
       - key: lesson-roots
         title: "Лемма-слой: 26 корней урока — sa-аорист (diś/guh/dih/duh/lih), пассивные 3 sg (dā/gā/nī/śru/kṛ/dṛś/vac/cur/bhid/jan/labh/han/grah), am-серия удлинения (vac/dam/gam/kam/nam/yam/ram/vam/ācam), каузативный abhedi (bhid)"
-        buhler_locus: "урок XLVII, п. VII–VIII (корни в парадигмах и списках, mdx 7135–7197); словарного списка у урока нет — словарь встроен в правила и хрестоматийный текст (фиксируем честно)"
+        buhler_locus: "урок XLVII, п. VII–VIII (корни в парадигмах и списках, mdx 7139–7201); словарного списка у урока нет — словарь встроен в правила и хрестоматийный текст (фиксируем честно)"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
@@ -4205,7 +4205,7 @@ lessons:
         notes: "Проверка полноты (голос MG D2): crosswalk покрывает 23/26 корней таблицы; нет строк — grah, yam, ācam (все три — с 1 sg-двойниками урока, agāmi-серия и aghāniṣi-серия без реестровых рядов) — фиксируем честно; самоконфликты 1975-реестра в crosswalk на уроке: guh (U1/U2), gā₂ (A2/I2), śru (R1/U1), jan (N1/N2), labh (A1/N1) — 5 случаев при одном wh-номере, серия XLV (pā/śak/sad/arj ×4) продолжается и густеет; ловушка написания: gai урока = gā₂ «петь» (agāyi), не gā₁ «идти»; dih — глосс-вилка Уитни «smear» против Кочергиной «увеличиваться» — зафиксирована, не сглажена; corpus_layer.tsv — 0 строк урока (честно)"
   XLVIII:
     title: "Производные глагольные основы: дезидератив, интенсив (фреквентатив), отыменные глаголы"
-    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7201–7392 (заголовок «# УРОК XLVIII.»; дальше — санскритско-русский глоссарий, mdx 7393 — урок последний). Русско-санскритского упражнения нет (прецедентный косой случай 43–47, у последнего урока — глоссарий сразу) — вместо него нет и хрестоматийного текста; живой слой — Кнауэр Nr.17, где упражнения канализируются в корпус (satyaṃ cikīrṣamāṇas = MBh 3,52 дословно), фиксируем честно; corpus_layer — 3 строки (cikīrṣ, śuśrūṣ, rorūy)"
+    mdx: "BuhlerLeitfaden_1923/Buhler_Unicode.mdx, строки 7205–7396 (заголовок «# УРОК XLVIII.»; дальше — санскритско-русский глоссарий, mdx 7397 — урок последний). Русско-санскритского упражнения нет (прецедентный косой случай 43–47, у последнего урока — глоссарий сразу) — вместо него нет и хрестоматийного текста; живой слой — Кнауэр Nr.17, где упражнения канализируются в корпус (satyaṃ cikīrṣamāṇas = MBh 3,52 дословно), фиксируем честно; corpus_layer — 3 строки (cikīrṣ, śuśrūṣ, rorūy)"
     claims: [HB-62, HB-63, HB-394, HB-395, HB-396, HB-397, HB-398, HB-399, HB-400, HB-401, HB-402, HB-403]
     reuse_clusters:
       - "0 совпадений (scripts/data/matches.json): прямых reuse-предложений урока XLVIII нет — фиксируем честно (прецеденты уроков I/XLV). Живой слой вместо матчера: Кнауэр Nr.17 — упражнения = живой корпус (prādidṛkṣata, na 'çuçrūṣata, çvā rorūyamāṇo, kṛṣṇāyate + деванагари-строка satyaṃ cikīrṣamāṇastu dhārayāmāsa hṛcchayam = MBh 3,52 дословно — кураторская находка, продолжение класса находок XLIV «упражнение-калиюга = Кнауэр Nr.13»)"
@@ -4216,7 +4216,7 @@ lessons:
     topics:
       - key: desiderative-formation
         title: "Дезидератив: удвоение корня + суффикс sa [ṣa] — все корни всех десяти классов и каузативы; правила удвоения как в перфекте, но корневые a, ṛ, ṝ → i; гласноначальные — как в aor. III каузативов (ур. XLV, III, 3), но между удвоенными согласными всегда i; sa-присоединение: напрямую к большинству гласноисходных (кроме ṝ-исходных — возможны i и ī), у согласных — как в инфинитиве (ур. XXX)/будущем; конечные i, u удлиняются, ṛ, ṝ → īr (после губного ūr); при соединительном гласном — guṇa; каузативы и X класс — ayiṣya"
-        buhler_locus: "урок XLVIII, п. I.1–3 (mdx 7205–7211)"
+        buhler_locus: "урок XLVIII, п. I.1–3 (mdx 7209–7215)"
         topic_claims: [HB-62, HB-394, HB-395]
         spots:
           "zalizniak-1978-sec:169": "хотеть (намериваться) делать"
@@ -4232,7 +4232,7 @@ lessons:
         notes: "ayiṣya-правило стыкуется с уроком XLIV (описательное будущее: перед tā те же изменения, что перед tum) — одна и та же основа; sangram: вторичные спряжения видны в конъюгационном обзоре лишь косвенно (честный спот); crosswalk-гомонимия серии: kṛ — 3 гомонима (wh106-108), dā — 4 (wh349-352) + самоконфликт A1/A2 при wh349; TALMUD CROSS-CHECK: дезидератив вне аористного корпуса (derivation-gap, witness perfect:124 — перифрастический перфект дезидеративов у Уитни §1071)"
       - key: desiderative-tense-stems
         title: "Времена дезидератива: настоящее (единственное частотное) спрягается P. и Ā. по образцу VI класса; перфект — описательный; в fut., condic. и precat. (Ā.) всегда соединительный i; аорист — V вида (iṣ); перед соединительным гласным и перед y precativ-a P. и pass. praes. суффиксальный a выпадает; причастия/инфинитив/абсолютив — по VI классу (презенс) или с i"
-        buhler_locus: "урок XLVIII, п. I.4 (mdx 7213)"
+        buhler_locus: "урок XLVIII, п. I.4 (mdx 7217)"
         topic_claims: [HB-396, HB-397]
         spots:
           "zalizniak-1978-sec:169": "Формы за пределами презенса"
@@ -4245,7 +4245,7 @@ lessons:
         notes: "Корпусная проверка направления HB-396: по conllu-снапшоту śuśrūṣ 1218 / cikīrṣ 991 / jijñās 698 / didṛkṣ 471 / bubhūṣ 290 токенов — презенс-формы (śuśrūṣate, cikīrṣamāṇaḥ, rorūyati-класс) доминируют в выборках; tension-split по derivation-тегированию в разрешённом корпусе отсутствует (HB-396 note) — честный направление-вердикт; Z-1978 §234 фиксирует ударение дезидератива (jíjñāsa-)"
       - key: desiderative-irregulars-iv
         title: "Примеры и неправильные дезидеративы: парадигмальный список 3 sg (yā yiyāsati, gai jigāsati, so siṣāsati, śri śiśrayiṣati, nī ninīṣati, śru śuśrūṣate, bhū bubhūṣati, kṛ cikīrṣati, mṛ mamūrṣati, tṝ titīrṣati/titariṣati, pac pipakṣati, bhaj babhakṣati, mṛj mimṛkṣati/mimārjiṣati, bhid bibhitsati, budh bubodhiṣati/bubudhiṣati/bubutsate, man mimaniṣate/mimaṅsate, gam jigamiṣati/jigaṅsate, div dideviṣati/dudyūṣati, dṛś didṛkṣate, dviṣ didvikṣati, vas vivatsati, dah didhakṣati, cur cucorayiṣati, nāy nināyayiṣati, aś aśiśiṣati, iṣ eṣiṣiṣati, und undidiṣati, ṛc arciciṣati, īkṣ īcikṣiṣate); iv-корни: «сходные формы можно образовывать от всех корней на iv» (dideviṣati/dudyūṣati — модель); перечень неправильных: āp īpsa, adhi+i adhijigāṅsa, grah jighṛkṣa, ji jigīṣa, jñā jñīpsa/jijñapayiṣa, dā (de, do) ditsa, dhā/dhe dhitsa, pat pitsa/pipatiṣa, pad pitsa, prach pipṛcchiṣa, majj mimaṅkṣa, mā (mi, mī, me) mitsa, rabh ripsa, rādh ritsa, labh lipsa, śak śikṣa, svap suṣupsa, han jighāṅsa, hve jahūṣa"
-        buhler_locus: "урок XLVIII, п. I.5–6 + сноска * (mdx 7215–7317)"
+        buhler_locus: "урок XLVIII, п. I.5–6 + сноска * (mdx 7219–7321)"
         topic_claims: [HB-398]
         spots:
           "zalizniak-1978-sec:171": "дважды производные глаголы"
@@ -4260,7 +4260,7 @@ lessons:
         notes: "Кнауэр Nr.17 — живая пара дезидеративов: na 'çuçrūṣata (отрицание при дезидеративе śru!) и деванагари-строка satyaṃ cikīrṣamāṇastu dhārayāmāsa hṛcchayam = MBh 3,52 дословно (снапшот DCS: satyaṃ cikīrṣamāṇas tu dhārayāmāsa hṛcchayam, sent_id 192684) — упражнение = живой корпус, класс находок XLIV; bubutsate (budh, парадигма урока) — 0 токенов в снапшоте: парадигмальная форма вне аттестации, фиксируем честно; так само so siṣāsati — стяжённая печать (ср. Уитни §1030-территория: дезидератив as «бросать») — однозначная привязка строки реестра невозможна, в лемма-слой через as (wh23) с пометкой"
       - key: intensive-two-types
         title: "Интенсивы (фреквентативы), два типа: все односложные согласнопервичные корни I–IX классов (сноска-исключения: aṭ aṭāṭyate, ṛ ararti/ariyarti/arāryate, aś aśāśyate); I — исключительно удвоение, исключительно P., спряжение III класса или с ī перед согласными окончаниями; II — суффикс ya (изменения как перед страдательным залогом, ур. X) + удвоение полученной основы, исключительно Ā., спряжение IV класса; семантика: повторение действия; глаголов «идти» — движение по кривой линии, у некоторых — «действие совершается плохо»; вне презенса — крайне редко (по индийским грамматикам: perf. periphrast, futura, conditionalis с i, precat., пассив); парадигма-таблица 17 корней × P/Ā (dā dādāti/dādeti | dedīyate … vṛt varvartti/varīvṛtīti | varīvṛtyate)"
-        buhler_locus: "урок XLVIII, п. II.1–4 + таблица (mdx 7319–7369)"
+        buhler_locus: "урок XLVIII, п. II.1–4 + таблица (mdx 7323–7373)"
         topic_claims: [HB-63, HB-399, HB-400, HB-401, HB-402]
         spots:
           "zalizniak-1978-sec:170": "делать А усиленно или часто"
@@ -4276,7 +4276,7 @@ lessons:
         notes: "Корпусная рамка редкости: rorūy — 38 токенов в 16 файлах снапшота против 290–1218 у дезидеративов — на порядок реже, живое подтверждение HB-402; Кнауэр Nr.17 — çvā rorūyamāṇo «собака, воя, бежала к матери» — интенсив II в живой фразе, та же основа, что пример З-1978 §170 и Bhāgavatapurāṇa 3, 31; таблица урока сама показывает стяжения (soṣupyate от svap — sv→so), «плохое действие» в таблице не маркировано — семантический слой остаётся за словарём, честно; witness HK-205 AGREE («тяжёлое» удвоение = guṇa-ряд, терминологическая разница с Уитни) и HK-206 AGREE (средние окончания, §1016-1017)"
       - key: denominativa
         title: "Отыменные глаголы: суффиксы ya, aya, āpaya («делать[ся] тем-то, то-то желать»), sya/asya («того-то сильно желать») или непосредственное присоединение глагольных окончаний к имени («вести себя так-то»); наиболее часты первые два способа; примеры: tapas tapasyati каяться, namas namasyati почитать, kalaha kalahāyate ссориться, kṛṣṇa kṛṣṇayate делать черным, unmanas unmanāyate выходить из себя, muṇḍa muṇḍayati остригать наголо, laghu laghayati подымать, dṛḍha draḍhayati закреплять, satya satyāpayati объявлять правильным"
-        buhler_locus: "урок XLVIII, п. III (mdx 7371–7391)"
+        buhler_locus: "урок XLVIII, п. III (mdx 7375–7395)"
         topic_claims: [HB-403]
         spots:
           "zalizniak-1978-sec:172": "отыменных (деноминативных)"
@@ -4291,7 +4291,7 @@ lessons:
         notes: "Кнауэр Nr.17 — kṛṣṇāyate «чернеет» (uṣṇo dahaty aṅgāraḥ çītaḥ kṛṣṇāyate karam) — живой деноминатив того же корня-имени kṛṣṇa, что пример урока; 9 пар имя→глагол урока — все отыменные без глагольного корня, в лемма-слой (глагольные реестры) не попадают — фиксируем честно; witness HK-200 (Занятие XXXV) AGREE — единственная «прочая» строка 4-witness сетки по теме"
       - key: lesson-roots
         title: "Лемма-слой: 53 корня урока — парадигмы дезидератива (примеры п. 5 + неправильные п. 6), таблица интенсивов и отыменные вне реестров"
-        buhler_locus: "урок XLVIII, п. I.5–6, II.4 таблица (mdx 7215–7369); словарного списка у урока нет — корни встроены в парадигмы, отыменные примеры — имена, фиксируем честно"
+        buhler_locus: "урок XLVIII, п. I.5–6, II.4 таблица (mdx 7219–7373); словарного списка у урока нет — корни встроены в парадигмы, отыменные примеры — имена, фиксируем честно"
         topic_claims: []
         spots:
           "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
