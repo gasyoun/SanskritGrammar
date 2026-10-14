@@ -31,7 +31,7 @@ What is MEASURED HERE (new, semantic — the slot's own question
 Output: sangram/articles/ta-narrative/data/coverage_summary.json (+ validation_sample.tsv)
 Re-running against the same pin reproduces every figure to the token. Read-only DB.
 
-Model: GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 06-10-2026, H6072.
+Model: GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 13-10-2026, H6694 (re-mint of H6072).
 """
 import csv
 import json
@@ -95,7 +95,7 @@ def main():
     ta = mo23["denominators"]["ta"]
     na = mo23["denominators"]["na"]
     roots = mo23["denominators"]["distinct_roots"]
-    tense = se06["tense_distribution"] if "tense_distribution" in se06 else se06.get("tense", {})
+    tense = se06.get("tense_dist", {})
 
     con = sqlite3.connect("file:%s?mode=ro" % (DEFAULT_DB.as_posix().replace("?", "%3f").replace("#", "%23")), uri=True)
     cur = con.cursor()
@@ -196,7 +196,7 @@ def main():
         "study": "SG-SE-011 «Семантика причастных форм: -ta как повествовательное прошедшее» — semantic layer over SG-MO-023 (c6 slot sem-b-ta-narrative, ①)",
         "toc_ref": "SG-SE-011",
         "kind": "content article (no kill-gate; non-pilot ① slot)",
-        "model_provenance": "GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 06-10-2026, H6072",
+        "model_provenance": "GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 13-10-2026, H6694 (re-mint of H6072; measurement first executed 06-10-2026 under H6072, salvaged via H2628)",
         "consumed": {
             "SG-MO-023": str(MO23.relative_to(ROOT)),
             "SG-SE-006": str(SE06.relative_to(ROOT)),
