@@ -2,7 +2,7 @@
   "study": "SG-SE-011 «Семантика причастных форм: -ta как повествовательное прошедшее» — semantic layer over SG-MO-023 (c6 slot sem-b-ta-narrative, ①)",
   "toc_ref": "SG-SE-011",
   "kind": "content article (no kill-gate; non-pilot ① slot)",
-  "model_provenance": "GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 06-10-2026, H6072",
+  "model_provenance": "GLM 5.3 (opencode/zai-coding-plan/glm-5.3), 13-10-2026, H6694 (re-mint of H6072; measurement first executed 06-10-2026 under H6072, salvaged via H2628)",
   "consumed": {
     "SG-MO-023": "sangram/articles/ta-na-participles/data/coverage_summary.json",
     "SG-SE-006": "sangram/articles/past-tenses/data/coverage_summary.json"
@@ -23,8 +23,8 @@
     "re_derivation_matches_mo23": true,
     "finite_past_total": 148750,
     "finite_past_components": {
-      "Past": 0,
-      "Impf": 0
+      "Past": 102055,
+      "Impf": 46695
     },
     "ppp_to_all_finite_pasts_ratio": 1.48,
     "top_forms": [
