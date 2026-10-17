@@ -20,12 +20,12 @@ First concrete arm, per the [A62 outline](https://github.com/gasyoun/SanskritGra
 
 > **§6 FULLY RULED — recruitment = Systema-Sanscriticum's own Kochergina-stage students, not open
 > call** (§6.1, RULED 15-07-2026, MG reconfirmed 16-07-2026 after a re-ask against the "open call"
-> option — the harness at [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
+> option — the harness at [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
 > already assumes real, retention-contactable Systema accounts, so the ruling stands); retention
 > window N = **4 weeks** (§6.2, RULED 15-07-2026); hosting/instrumentation home = **Systema-hosted
 > flow** (§6.3, RULED 15-07-2026) — harness built and merged, [Systema PR #536](https://github.com/gasyoun/Systema-Sanscriticum/pull/536).
-> **§6.4 (consent wording) APPROVED 16-07-2026 (MG)** — the draft in [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
-> is finalised as-is, no revisions ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md)).
+> **§6.4 (consent wording) APPROVED 16-07-2026 (MG)** — the draft in [H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md)
+> is finalised as-is, no revisions ([H1009](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1009-Sonnet_SanskritGrammar_rq4-consent-approved-gates-closed_16.07.26.md)).
 > **All four §6 `@DECIDE` gates are now closed — nothing blocks recruitment except flipping the
 > `features.rq4_study` flag on (a separate launch decision, not yet made).** §6 items below are
 > kept as the historical record of the decision; the ruling lives at the top of each.
@@ -127,7 +127,7 @@ row.
 **§6.1–6.3 RULED 15-07-2026 (MG):** Systema-hosted, Systema's own Kochergina-stage students
 (not open call — reconfirmed 16-07-2026), 4-week retention. **§6.4 APPROVED 16-07-2026 (MG):**
 the draft consent text below (from the harness handoff,
-[H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md))
+[H987](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H987-Sonnet_Systema-Sanscriticum_rq4-study-harness_15.07.26.md))
 is finalised as-is.
 
 1. **Recruitment population + channel** — Systema-Sanscriticum's own Kochergina-stage students

@@ -2,7 +2,7 @@
 
 _Created: 17-08-2026 · Last updated: 17-08-2026_
 
-Отчет генератора [numbers_crosscheck.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/numbers_crosscheck.py) ([H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md)), Opus 5 (`claude-opus-5`). **Сухой прогон: рукопись не изменялась.** Находки — инвентарь к предподачному проходу, а не правки.
+Отчет генератора [numbers_crosscheck.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/numbers_crosscheck.py) ([H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md)), Opus 5 (`claude-opus-5`). **Сухой прогон: рукопись не изменялась.** Находки — инвентарь к предподачному проходу, а не правки.
 
 **Охват:** 9 файлов рукописи; 77 числовых фактов в провенанс-джейсонах, из них 60 закреплено за локусами рукописи; базовая ревизия для N6 — `origin/main`.
 

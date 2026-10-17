@@ -6,7 +6,7 @@ The roadmap for a **thin printed companion booklet** (методичка) to V. 
 *Учебник санскрита* — grammatical-accuracy notes, clarity/frequency refinements, extra
 reinforcement exercises, cross-references to other Russian works, and a per-edition typo
 (errata) list. This plan is the durable spec; each execution slice is a separate `H###`
-handoff. First slice: [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md).
+handoff. First slice: [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md).
 
 Companion metadoc (how to improve this plan, backlog, revision history):
 [`METODICHKA_KOCHERGINA_COMPANION_2026.meta.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.meta.md).

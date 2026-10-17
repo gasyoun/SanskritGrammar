@@ -5,7 +5,7 @@ _Created: 25-08-2026 · Last updated: 25-08-2026_
 ## Scope and provenance
 
 This memo reconciles the planned dual execution required by
-[H3321 (Codex) — H1913 dual-run compare: independent Codex re-run of the SG-MO-021 Slice C pilot vs the override lane](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3321-Codex_SanskritGrammar_h1913-codex-dual-run-compare_22.08.26.md).
+[H3321 (Codex) — H1913 dual-run compare: independent Codex re-run of the SG-MO-021 Slice C pilot vs the override lane](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3321-Codex_SanskritGrammar_h1913-codex-dual-run-compare_22.08.26.md).
 
 1. **Override lane:** OpenCode preview (`opencode/ox-alpha`, lane label
    `x-preview-f-free`), PR [#874](https://github.com/gasyoun/SanskritGrammar/pull/874),

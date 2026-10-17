@@ -12,7 +12,7 @@ verb-class assignments to **Whitney 1889** (present-class) and **Толчель�
 ([claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/claims.yml)).
 
 Built by Opus 4.8 (`claude-opus-4-8`), handoff
-[H1195](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1195-Sonnet_SanskritGrammar_buhler-scherzl-government-and-verbclass-index_17.07.26.md).
+[H1195](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1195-Sonnet_SanskritGrammar_buhler-scherzl-government-and-verbclass-index_17.07.26.md).
 
 ## Files
 

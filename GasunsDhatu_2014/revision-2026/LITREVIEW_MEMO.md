@@ -5,7 +5,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 Памятка-отчет по переработке раздела «Обзор литературы»
 ([02_gasuns-dhatu-PhD-text2.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2.mdx),
 бывшие строки ~357–784) по
-[H384](https://github.com/gasyoun/Uprava/blob/main/handoffs/H384-Opus_SanskritGrammar_gasuns-dhatu-litreview-problem-rework_08.07.26.md).
+[H384](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H384-Opus_SanskritGrammar_gasuns-dhatu-litreview-problem-rework_08.07.26.md).
 Выполнено Opus 4.8 (`claude-opus-4-8`). Метод — продолжение пилота
 [H358](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_PILOT_MEMO.md)
 с поправкой на жанр: Обзор перерабатывался не «слить данные + переписать вывод», а
@@ -73,7 +73,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 первом упоминании, 31 `missing_iast`), Д5 (оптика стиля: `missing_sutra_reference`,
 `missing_commentary_layer`, `missing_tradition_context`)** перегруппировкой не решаются —
 это сплошная редактура ссылок/терминов, дом которой —
-[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
+[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
 (внедрение RWS-правок с желтой заливкой). Перегруппировка их не отменяет и не усложняет:
 сокращенный текст дает H385 меньше мест, где эти правки нужны.
 

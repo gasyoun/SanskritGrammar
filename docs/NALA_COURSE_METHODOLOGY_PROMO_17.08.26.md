@@ -3,7 +3,7 @@
 _Created: 17-08-2026 · Last updated: 17-08-2026_
 
 Методико-промо документ курса **Nalopākhyāna** («Сказание о Нале», Махабхарата III) для
-[H2170](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2170-Fable_SanskritGrammar_nala-transcript-methodology_02.08.26.md).
+[H2170](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2170-Fable_SanskritGrammar_nala-transcript-methodology_02.08.26.md).
 Выполнен по **пере-скоупу 17-08-2026** (руление человека): исходная 6,87-МБ стенограмма
 65 занятий **не открывалась и не использовалась** — действует запрет
 [stenogrammy/README.md](https://github.com/gasyoun/Uprava/blob/main/stenogrammy/README.md)

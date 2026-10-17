@@ -2,7 +2,7 @@
 
 _Created: 31-07-2026 · Last updated: 04-08-2026_
 
-**Handoff:** [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md)  
+**Handoff:** [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md)  
 **Executor this pass:** Grok 4.5 (`grok-4.5`) — **explicit override** of the Fable filename lock; dual-run so a later Fable pass can compare.  
 **✅ Fable dual-run confirm (H2053, 04-08-2026):** Fable 5 (`claude-fable-5`) independently re-opened every load-bearing citation below (legend line numbers, footnote-tag counts, §-cites, dictionary-text fetch) — **all verified, zero conflicting cells**; the non-case Latin-stay + tooltip policy was re-derived independently and stands. Net-new folded in this pass: `U.` (Ubhayapada) row, Knauer `denom.` de-tentativized. Full comparison: [RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md).  
 **Stop condition:** durable table: every high-frequency PWG grammatical `<ab>` family **except cases** (number/gender · voice/stem · tense/mood · non-finite/POS) has ≥1 attested form from a **named** source below — not agent invention. Cases filled for completeness; **recommended visible = Latin (locked MG 31-07)**.
@@ -209,6 +209,6 @@ Cells use short citations: `K:L###` = KocherginaUchebnik line; `Z§n` = Zaliznia
 | Actual executor | Grok 4.5 (`grok-4.5`), human “run anyway / dual-run for Fable comparison” |
 | Date | 31-07-2026 |
 | Worktree | `SanskritGrammar-h2048-32116` branch `h2048-gram-abbrev-crosswalk` |
-| Dual-run confirm | Fable 5 (`claude-fable-5`), 04-08-2026, [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) — all citations verified, 0 conflicts; compare memo: […H2053_FABLE_COMPARE_2026-08.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md) |
+| Dual-run confirm | Fable 5 (`claude-fable-5`), 04-08-2026, [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) — all citations verified, 0 conflicts; compare memo: […H2053_FABLE_COMPARE_2026-08.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_H2053_FABLE_COMPARE_2026-08.md) |
 
 _Dr. Mārcis Gasūns_

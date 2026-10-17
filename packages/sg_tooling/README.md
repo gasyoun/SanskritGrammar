@@ -57,8 +57,8 @@ def convert_docx(step, context):
 ```
 
 `register` refuses a duplicate name, so two pilots cannot silently claim one
-command. [H1912](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md)
-adds the DOCX/Pandoc adapter; [H1913](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
+command. [H1912](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md)
+adds the DOCX/Pandoc adapter; [H1913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
 adds `adapters/dcs.py` over a pinned VisualDCS export.
 
 ## Ownership fence

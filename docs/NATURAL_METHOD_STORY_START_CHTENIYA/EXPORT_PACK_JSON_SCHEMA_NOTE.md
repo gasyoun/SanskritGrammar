@@ -51,6 +51,6 @@ the token stream, and the sandhi-events table documents every surface↔form div
 ## Provenance
 
 Fable 5 (`claude-fable-5`), 01-08-2026, executing
-[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md).
+[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md).
 
 _Dr. Mārcis Gasūns_

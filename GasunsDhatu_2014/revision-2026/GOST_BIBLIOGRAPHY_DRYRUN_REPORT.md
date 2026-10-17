@@ -2,7 +2,7 @@
 
 _Created: 17-08-2026 · Last updated: 17-08-2026_
 
-Отчет генератора [gost_bibliography_check.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/gost_bibliography_check.py) ([H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md)), Opus 5 (`claude-opus-5`). **Сухой прогон: рукопись не изменялась.** Находки — инвентарь к предподачному проходу, а не правки: текст рукописи авторский (H275), review-docx H1259 под автором и не перегенерируется.
+Отчет генератора [gost_bibliography_check.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/gost_bibliography_check.py) ([H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md)), Opus 5 (`claude-opus-5`). **Сухой прогон: рукопись не изменялась.** Находки — инвентарь к предподачному проходу, а не правки: текст рукописи авторский (H275), review-docx H1259 под автором и не перегенерируется.
 
 **Охват:** 525 записей библиографии, 1049 внутритекстовых ссылок в 4 файлах рукописи из 9; источниковых сокращений в «Принятых сокращениях» — 21.
 

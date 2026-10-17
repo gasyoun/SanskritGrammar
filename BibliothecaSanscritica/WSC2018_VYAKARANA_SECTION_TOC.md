@@ -2,7 +2,7 @@
 
 _Created: 26-09-2026 · Last updated: 26-09-2026_
 
-**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `wsc2018.html` (fetched 26-09-2026)
+**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `wsc2018.html` (fetched 26-09-2026)
 
 Kulkarni, Malhar and Peter Scharf, eds. *Proceedings of the 17th World Sanskrit Conference, Vancouver, Canada, July 9–13, 2018, Section 3: Vyākaraṇa.* Vancouver: University of British Columbia, 2019.
 

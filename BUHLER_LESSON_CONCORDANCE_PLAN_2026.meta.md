@@ -29,6 +29,6 @@ D2 «урок+тема + лемма-слой для оценки полноты 
 пилот проверяет, что списки исключений — у Бюлера много, у Зализняка-1978 нет,
 у Уитни всегда), D3 «thematic + указатели», D4 «матрица применимости»;
 D5–D16 приняты командой «go», окно вето до batch-минта.
-Хендофф пилота: [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
+Хендофф пилота: [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
 
 _Гасунс_

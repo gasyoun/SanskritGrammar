@@ -2,7 +2,7 @@
 
 _Created: 18-07-2026 · Last updated: 18-07-2026_
 
-**Хэндоффы:** v1 — [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md) (Уитни-проход), v2 — [H1242](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1242-Fable_SanskritGrammar_concordance-v2-fullgrid-buhler-zalizniak_18.07.26.md) (полная сетка четырёх свидетелей) · **Модель:** Fable 5 (`claude-fable-5`); v1 — 12 fork-агентов, v2 — 25 агентов той же модели · **Даты проходов:** 18-07-2026
+**Хэндоффы:** v1 — [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md) (Уитни-проход), v2 — [H1242](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1242-Fable_SanskritGrammar_concordance-v2-fullgrid-buhler-zalizniak_18.07.26.md) (полная сетка четырёх свидетелей) · **Модель:** Fable 5 (`claude-fable-5`); v1 — 12 fork-агентов, v2 — 25 агентов той же модели · **Даты проходов:** 18-07-2026
 
 Стоящее правило MG (16-07-2026): **«всегда верить Витни»** — каждое грамматическое утверждение сверяется с Whitney, *Sanskrit Grammar* (2-е изд., 1889), с указанием §; при конфликте Уитни побеждает. Это первый корпусный конкорданс «утверждение ↔ Уитни» по всей серии Sangram и полному реестру [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml) Кочергиной. Каждый § проверен по самому тексту Уитни ([WhitneyGrammar_1889](https://github.com/gasyoun/SanskritGrammar/blob/main/WhitneyGrammar_1889/00_index.mdx), якоря `[**§N**]`), а не по цитате-источнику.
 

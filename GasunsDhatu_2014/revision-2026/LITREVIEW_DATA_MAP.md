@@ -6,7 +6,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 перед переработкой главы завести короткий список «какие данные 2026 г. вообще есть для
 нее», как [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md)
 для Гл. 2 — иначе сессия тратит половину времени на поиск сливаемого. Карта собрана для
-[H384](https://github.com/gasyoun/Uprava/blob/main/handoffs/H384-Opus_SanskritGrammar_gasuns-dhatu-litreview-problem-rework_08.07.26.md)
+[H384](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H384-Opus_SanskritGrammar_gasuns-dhatu-litreview-problem-rework_08.07.26.md)
 (переработка Обзора из хронокаталога в проблемный по трем вопросам книги).
 
 ## Вывод в одну строку
@@ -63,7 +63,7 @@ _Created: 09-07-2026 · Last updated: 09-07-2026_
 - **Пересчетные таблицы 1–5** — их дом §2.5/§2.6, Обзор лишь ссылается (иначе дубль с Гл. 2).
 - **Полный кросс-уок морфоклассов** (H357) — дом §3.2; в Обзоре только сноска-указатель.
 - **RWS-находки уровня Д1/Д4/Д5** (нет ссылки, нет IAST, оптика стиля) — не решаются
-  перегруппировкой, остаются издательскому редактору ([H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)).
+  перегруппировкой, остаются издательскому редактору ([H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)).
   Перегруппировкой закрыты только Д2 (логика/композиция) — см. [LITREVIEW_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/LITREVIEW_MEMO.md).
 
 _Dr. Mārcis Gasūns_

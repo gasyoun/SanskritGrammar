@@ -23,7 +23,7 @@ seed 20260717, те же 1000 перестановок, те же окна ±5 �
 `PERIOD_MAP` (41 текст). Изменен ровно один предикат.
 
 Claude Code Opus 5 (`claude-opus-5[1m]`), 06-09-2026,
-[H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
+[H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md).
 
 ## Итог в одну строку: вердикт устоял, ведийский сигнал вырос почти вдвое
 

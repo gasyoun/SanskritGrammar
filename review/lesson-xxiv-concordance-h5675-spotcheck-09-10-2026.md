@@ -1,6 +1,6 @@
 # H5675 — спот-чек урока XXIV (свежепроцессная независимая верификация)
 
-_Дата: 09-10-2026 · executor: OxAlpha (opencode/z-ai/glm-5.3-flash) · хендофф: [H5675](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5675-OxAlpha_SanskritGrammar_buhler-concordance-XXIV_02.10.26.md)_
+_Дата: 09-10-2026 · executor: OxAlpha (opencode/z-ai/glm-5.3-flash) · хендофф: [H5675](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5675-OxAlpha_SanskritGrammar_buhler-concordance-XXIV_02.10.26.md)_
 
 DeepSeek-лейн — без ключа на боксе (24-й прецедент серии H5659→H5674; на боксе только openrouter-алиас модели, прямого API-ключа нет) → фолбэк по прецеденту: независимая свежепроцессная проверка (отдельный python-процесс вне репо, re-read сырых файлов, не переиспользует состояние build).
 
