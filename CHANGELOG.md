@@ -18,6 +18,7 @@ _Repo: gasyoun/SanskritGrammar · Source: BuhlerLeitfaden_1923 · LessonConcorda
 - **Erratum XLI (Buhler_Unicode.mdx): पर्वती → पार्वती.** Имя богини Парвати требует долгой ā (Кнауэр Nr.11.11); глоссарий самой книги (mdx 8639) печатает पार्वती верно. Внесено в `BuhlerLeitfaden_1923/errata.yml` (9-я запись), `ERRATA.mdx` перегенерирован. Спот-чек H5692 записал локус как mdx 6179 — за 08-10 файл сдвинулся, актуальная строка 6183 (указано в note).
 - **XXXV.lesson-roots: лемма-слой дозаполнен в `LessonConcordance/topics.yml`.** Скелет (title + buhler_locus) после H5686 развёрнут в полный блок: 10 корней V класса (aś, āp, ci, du, dhū, vṛ, śak, śru, stṛ) + pra-cud X + nis-/vinis- как приставочный ci, 14 строк списка «Глаголы:» (mdx 5015–5039). Каждая лемма сверена с crosswalk (З-1975 / З-1978), зафиксированы 3 ловушки написания (dhu→dhū 400, star→stṛ 870, var→vṛ 740), 3 омонима и 7 самоконфликтов 2026-ряда — рекорд серии на урок.
 - **Данные: семантика строк crosswalk зафиксирована, дедуп НЕ выполнен.** Микрозадача «снять дубль 372,dṛ» разобрана: это две разные записи Z-реестра (z_id 613/939, разные `z_pres_class`/`z_aorist`), которые crosswalk проецирует в одинаковые строки. Файл читается как 876 строк / 749 корней; число 876 стоит в утверждённом автором тексте (749/930). Раздел «Данные: семантика строк crosswalk» добавлен в `TolchelnikovTalmud_2026/README.md`.
+- **Гейт регистров `check_generated_outputs.py`: маска даты больше не промахивается на `_…_`.** `\b` не срабатывает между цифрой и `_`, а корневой индекс печатает штамп курсивом (`_Generated: 13-10-2026_`) — эта строка не маскировалась, и каждый PR, перегенерировавший регистры, получал отказ «real drift» (1 файл = сама дата). Маска переведена на границы цифр (`(?<!\d)…(?!\d)`); 4 теста.
 - **Свежесть-гейт `consolidation_ledger.json`: дневная дата-ловушка снята.** `--check` пересобирал ledger с календарной датой, поэтому один переход через полночь краснил `main` и все PR (кейс #1058 00:10 FAIL → #1059 refresh-фикс). Теперь `--check` пересобирает по СОБСТВЕННОЙ дате ledger'а (`last_refresh.date`) — ровно то, что уже делал `test_committed_ledger_is_fresh`; устаревание сторожит окно `MAX_LEDGER_AGE_DAYS = 7`, чтобы смерть ночного job'а всплывала. Контентный дрейф по-прежнему падает.
 
 ## Проверки
@@ -25,11 +26,13 @@ _Repo: gasyoun/SanskritGrammar · Source: BuhlerLeitfaden_1923 · LessonConcorda
 - `python3 scripts/build_errata.py BuhlerLeitfaden_1923` → 9 errata (9 open), ERRATA.mdx + корневой индекс перегенерированы.
 - `python3 scripts/build_lesson_concordance.py` → spots 538 local OK / 36 external, catalog.mdx 46 уроков, 849 строк ссылок; XXXV рендерится с таблицей 10 лемм.
 - `python3 scripts/consolidation_ledger_refresh.py --check` → PASS; `--self-test` → 4/4.
-- `python3 -m pytest tests/test_consolidation_ledger.py tests/test_consolidation_ledger_lf_determinism.py` → 18 passed (добавлены 4 теста: переход через полночь зелёный, окно устаревания, контентный дрейф, нечитаемый ledger).
+- `python3 -m pytest tests/test_consolidation_ledger.py tests/test_consolidation_ledger_lf_determinism.py tests/test_check_generated_outputs.py` → 22 passed (4 новых теста ledger: переход через полночь, окно устаревания, контентный дрейф, нечитаемый штамп; 4 теста маски даты).
+- `python3 scripts/check_generated_outputs.py --restore-date-only` → 0 real changes, 20 date-stamp-only.
+- `python3 -m pytest` → full suite green.
 
 ## Ссылки
 
-- PR: <заполнить при открытии>
+- PR: [#1106](https://github.com/gasyoun/SanskritGrammar/pull/1106)
 - GTD: H6352-r1 (Uprava) — микропартия SanskritGrammar.
 
 # Урок XX конкорданса Бюлера приземлён (H5671)
