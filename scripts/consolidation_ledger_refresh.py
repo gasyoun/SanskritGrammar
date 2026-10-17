@@ -478,6 +478,50 @@ def status_totals(ledger: dict) -> dict:
     return totals
 
 
+# H5691 — the daily date trap. `--check` used to rebuild with the WALL-CLOCK
+# date, so a calendar rollover alone turned the gate red: a PR merged after
+# midnight (case #1058 at 00:10) was green on its own run and red on `main`
+# once the date advanced, and the fix (#1059) was a pure date-stamp refresh.
+# The gate's actual contract — "the committed ledger reproduces from the repo
+# state" — is date-relative, and tests/test_consolidation_ledger.py already
+# rebuilds against the COMMITTED stamp, not the wall clock. `--check` now does
+# the same; staleness (a dead nightly refresh) is policed explicitly by a
+# window instead of implicitly by the midnight.
+MAX_LEDGER_AGE_DAYS = 7
+
+
+def today_iso() -> str:
+    """Wall-clock date; a function so tests can move the calendar without sleep."""
+    import datetime
+    return datetime.date.today().isoformat()
+
+
+def committed_stamp(current_text: str, wall_clock_iso: str,
+                    max_age_days: int = MAX_LEDGER_AGE_DAYS) -> tuple[str | None, str | None]:
+    """Return (stamp, error). `stamp` is the ledger's own `last_refresh.date`.
+
+    The gate rebuilds against this stamp, so content drift still fails while a
+    midnight boundary alone never does. A ledger older than `max_age_days` is a
+    real failure: the nightly refresh job (consolidation-ledger-nightly.yml) is
+    the machine that keeps the stamp current, and its death must surface.
+    """
+    import datetime
+    try:
+        ledger = json.loads(current_text)
+    except (ValueError, TypeError):
+        return None, "committed ledger is not valid JSON"
+    stamp = str((ledger.get("last_refresh") or {}).get("date") or "")
+    try:
+        stamp_day = datetime.date.fromisoformat(stamp)
+    except ValueError:
+        return None, f"committed ledger has no parseable last_refresh.date ({stamp!r})"
+    age_days = (datetime.date.fromisoformat(wall_clock_iso) - stamp_day).days
+    if age_days > max_age_days:
+        return None, (f"ledger is stale ({age_days} days old, window {max_age_days}) — "
+                      "run: python scripts/consolidation_ledger_refresh.py")
+    return stamp, None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--check", action="store_true", help="refresh in-memory, diff, exit 1 on drift, never write")
@@ -490,8 +534,16 @@ def main() -> int:
     if args.self_test:
         return self_test()
 
-    import datetime
-    today = args.today or datetime.date.today().isoformat()
+    today = args.today or today_iso()
+
+    # H5691: in check mode rebuild against the ledger's OWN stamp (see
+    # MAX_LEDGER_AGE_DAYS above). An explicit --today still wins.
+    if args.check and args.today is None and LEDGER_PATH.exists():
+        stamp, error = committed_stamp(LEDGER_PATH.read_text(encoding="utf-8"), today_iso())
+        if error is not None:
+            print(f"FAIL  {error}")
+            return 1
+        today = stamp
     prior = load_prior_ledger()
     build_status = args.build_status or (prior or {}).get("last_refresh", {}).get("build_status", "unknown")
 
