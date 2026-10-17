@@ -2,7 +2,7 @@
 
 _Created: 18-07-2026 · Last updated: 18-07-2026_
 
-Отчет исполнения [H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md)
+Отчет исполнения [H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md)
 (агентская фаза гибридной литредактуры): line edit RWS-очереди рукописи M03, диспозиция
 всех 1 127 находок [RWS_FINDINGS.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_FINDINGS.tsv),
 перегенерация review-пакета. Исполнитель — Fable 5 (`claude-fable-5`), 18-07-2026.

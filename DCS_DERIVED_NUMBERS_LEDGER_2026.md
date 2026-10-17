@@ -6,7 +6,7 @@ Every mechanically checkable DCS-derived number published in the Sangram series
 (articles under [sangram/articles](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/articles),
 their data manifests, and the W2 checkpoint), independently re-derived from the pinned
 DCS master and given a **CONFIRMED / PLAUSIBLE / REFUTED** verdict. Executed under
-[H1229](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1229-Fable_SanskritGrammar_dcs-derived-numbers-adversarial-rederivation_18.07.26.md)
+[H1229](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1229-Fable_SanskritGrammar_dcs-derived-numbers-adversarial-rederivation_18.07.26.md)
 by Fable 5 (`claude-fable-5`).
 
 **Corpus pin:** `dcs_full.sqlite` provenance commit `04e0778d3dc971030229179e25eea043d06ff397`

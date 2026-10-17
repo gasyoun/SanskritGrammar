@@ -7,9 +7,9 @@ Mārcis Gasūns, independent scholar ([ORCID 0000-0003-4513-884X](https://orcid.
 **ID:** A62 · **Readiness:** 4/5 (evaluation methodology + metric register specified in full) · **Home:** SanskritGrammar ·
 **Venue candidates:** eLex / Lexikos / ISCLS / CALICO / ReCALL / an NLP4DH venue (a human `@DECIDE`s).
 The field-defining paper of the [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md);
-handoff [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md);
+handoff [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md);
 3/5 pass = [H1464](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1464-Sonnet_SanskritGrammar_a62-agenda-related-work-abstract_22.07.26.md);
-4/5 pass = [H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md);
+4/5 pass = [H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md);
 author-voice pass 06-09-2026 ([SIGNOFF_A62_author_pass.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/SIGNOFF_A62_author_pass.md)).
 Aggregate numbers only (in-copyright textbook sources).
 
@@ -19,7 +19,7 @@ Aggregate numbers only (in-copyright textbook sources).
 > re-sync, §4 capability-vs-outcome methodology and the PM1–PM12 register) was authored on
 > **Opus 5 (`claude-opus-5`)** under H1731. The author-voice pass over the prose ran 04-08-2026 —
 > the 4→5 slot it was reserved for — on **Fable 5 (`claude-fable-5`)**
-> ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md)):
+> ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md)):
 > the prose was aligned to the
 > [Sangram prose guide](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx)
 > — telegraphic bullets expanded into full sentences, internal labels given plain-language readings
@@ -330,9 +330,9 @@ classical Indo-Aryan language.
 ## To 3/5 → 5/5
 
 - ~~**3/5:** live-verified §7 related work (real citations); the survey table filled from the metadoc; abstract written.~~ **DONE 22-07-2026** (H1464) — 8 live-verified external citations across four related-work threads (L2 frequency/extensive-reading, ICALL, ACL readability, Sanskrit computational resources) + the metadoc §4a matrix reproduced in §2 + a full abstract.
-- ~~**4/5:** RQ4 evaluation protocol specified in full.~~ **DONE 04-08-2026** ([H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md)) — §4 rebuilt as a two-layer methodology: §4.1 states and defends the capability-vs-outcome split, §4.2 reproduces the PM1–PM12 register with denominators, refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that 10 of 12 are unmeasured, §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column; §6 gains the measurement gap.
+- ~~**4/5:** RQ4 evaluation protocol specified in full.~~ **DONE 04-08-2026** ([H1731](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1731-Opus_SanskritGrammar_a62-metric-register-into-evaluation-section_27.07.26.md)) — §4 rebuilt as a two-layer methodology: §4.1 states and defends the capability-vs-outcome split, §4.2 reproduces the PM1–PM12 register with denominators, refutation conditions, the bar-anchor honesty (4 measured / 1 disclosure rule / 7 unanchored) and the plain statement that 10 of 12 are unmeasured, §4.3 summarises the full RQ4 protocol. §2's survey matrix re-synced with the field doc's `Metric (§4e)` column; §6 gains the measurement gap.
 - **5/5:** venue `@DECIDE` + byline/ORCID; ~~a Fable author-voice pass over the prose~~ — voice
-  pass **done 04-08-2026** ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md),
+  pass **done 04-08-2026** ([H1874](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1874-Fable_SanskritGrammar_a62-pedagogy-agenda-author-voice-pass_29.07.26.md),
   Fable 5 `claude-fable-5`), over the post-H1731 text; venue + byline/ORCID remain.
 
 ---

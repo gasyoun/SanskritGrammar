@@ -5,13 +5,13 @@ _Created: 17-07-2026 · Last updated: 17-07-2026_
 Карта данных для прозаического rework **§2.1 «Устройство dhātupāṭha» и §2.2 «Индийские способы
 цитирования корней»** новой Гл. 2 «Количество корней и структура перечня» — двух секций,
 оставшихся без слоя 2026 г. после рекомпоновки
-[H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md)
+[H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md)
 (новая §2.1 = старая §1.4, новая §2.2 = старая §1.2; вердикт пилота
 [CH2_PILOT_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_PILOT_MEMO.md)
 «историография §2.1–§2.2 не переписывается» относился к СТАРЫМ §2.1/§2.2, ныне §1.2/§1.4 Гл. 1).
 Метод — пилот Гл. 2 / [CH1_DATA_MAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_DATA_MAP.md):
 данные вплетаются там, где качественное наблюдение 2014 г. стало **измеримым**, а не ради
-насыщения числами. [H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md),
+насыщения числами. [H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md),
 Fable 5 (`claude-fable-5`).
 
 > **Природа секций:** §2.1 — историко-структурный рассказ об устройстве перечня (Панини,

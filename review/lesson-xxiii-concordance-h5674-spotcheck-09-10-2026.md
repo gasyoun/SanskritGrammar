@@ -1,6 +1,6 @@
 # H5674 — спот-чек урока XXIII (свежепроцессная независимая верификация)
 
-_Дата: 09-10-2026 · executor: OxAlpha (opencode/z-ai/glm-5.3-flash) · хендофф: [H5674](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5674-OxAlpha_SanskritGrammar_buhler-concordance-XXIII_02.10.26.md)_
+_Дата: 09-10-2026 · executor: OxAlpha (opencode/z-ai/glm-5.3-flash) · хендофф: [H5674](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5674-OxAlpha_SanskritGrammar_buhler-concordance-XXIII_02.10.26.md)_
 
 DeepSeek-лейн — без ключа на боксе (23-й прецедент серии H5659→H5697) → фолбэк по прецеденту: независимая свежепроцессная проверка (отдельный python-процесс, не переиспользует состояние build).
 

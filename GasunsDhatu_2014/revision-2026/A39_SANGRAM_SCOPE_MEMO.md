@@ -3,7 +3,7 @@
 _Created: 15-07-2026 · Last updated: 15-07-2026_
 
 Записка по решению автора от 15-07-2026 (виза Q4 визового пакета Фазы 0,
-[H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)).
+[H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)).
 При визировании Q4 автор указал: реконструированную в review-sheet архитектуру («A39 первой
 в журнал, пишется из глав 4/6 книги») принять **не как есть**, потому что «про
 грамматика/словарь/корпус гораздо больше в SANGRAM, над этим работало целое поколение

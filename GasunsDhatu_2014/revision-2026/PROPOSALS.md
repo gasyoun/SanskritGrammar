@@ -205,7 +205,7 @@ mdx и `errata.yml` (`fixed_in: H986`).** Составлено Fable 5
 интерактивный review-sheet
 [`review/sanskritgrammar-m03-phase0-visa-pack_13.07.26_review.html`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/review/sanskritgrammar-m03-phase0-visa-pack_13.07.26_review.html)
 за один присест — **14 из 14 пунктов approve** (`review/…_decisions.json`). Сведение виз в
-текст/`errata.yml`/этот файл — [H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md).
+текст/`errata.yml`/этот файл — [H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md).
 
 **Положения (П1/П4/П7/П9/П10) и блок «Верификация положений».** Черновики §1 и итоговый блок
 Заключения одобрены; переведены из «черновик; финал за автором» в «одобрено автором

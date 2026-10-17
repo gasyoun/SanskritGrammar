@@ -2,7 +2,7 @@
 
 _Created: 2026-10-12 · Last updated: 2026-10-12_
 
-**Handoff:** [H6456](https://github.com/gasyoun/Uprava/blob/main/handoffs/H6456-OxAlpha_SanskritGrammar_process-sanskrit-sandhi-pilot_11.10.26.md) · WHEEL6-виза MG 11-10 · исполнитель OxAlpha (opencode/zai-coding-plan/glm-5.3-flash).
+**Handoff:** [H6456](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H6456-OxAlpha_SanskritGrammar_process-sanskrit-sandhi-pilot_11.10.26.md) · WHEEL6-виза MG 11-10 · исполнитель OxAlpha (opencode/zai-coding-plan/glm-5.3-flash).
 **Dossier:** [wheel-watch-sandhi-nlp-2026-10.md](https://github.com/gasyoun/Uprava/blob/main/reports/wheel-watch-sandhi-nlp-2026-10.md), строка Process-Sanskrit (ADOPT, WHEEL6).
 
 ## Что сравнивалось

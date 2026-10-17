@@ -32,7 +32,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   (290 подсвеченных абзацев, вкл. 79 прежних H385) — проверка автора откатывает любую
   правку вручную. Рабочая дата заморозки рукописи — **31-10-2026** — внесена в
   BOOK_PLAN §7 (Фазы 3–4) и чеклист «Нестор-Истории» (§1/§3/§4/§5).
-  ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md),
+  ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md),
   Fable 5 `claude-fable-5`)
 
 ## [0.19.0] - 2026-07-17
@@ -45,7 +45,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   a routine content check, not assumed either way. Footnotes `[^ed3d]`/`[^ed3e]` updated with
   approval note. §3.1/§3.3/§3.4 (the bulk of the chapter, original 2014 prose) remain queued for
   the human RWS style pass (269 remarks) — unaffected by this visa.
-  ([H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)/[H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)/[H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ## [0.18.0] - 2026-07-17
 
@@ -72,14 +72,14 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   JSON); карта данных — `revision-2026/CH2_DATA_MAP.md`; сноски `[^ed21a]`/`[^ed21b]`/`[^ed22a]`;
   снят дословный дубль-предложение в §2.1 (errata, `found_by: H1069`). Антисаламная граница
   сохранена: глубокая работа с vidyut — Гл. 5, корпус — Гл. 6.
-  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
+  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
 - **Чеклист готовности к подаче в «Нестор-Историю»** —
   `revision-2026/NESTOR_ISTORIA_M03_PRESS_READINESS_CHECKLIST.md`: аудит рукописи/аппарата/
   библиографии/издательского цикла против фаз `/book-press-prep`; машинная часть исчерпана
   с точностью до двух предподачных проходов (ГОСТ-библиография, финальная сверка чисел),
   человеческий остаток — именованные малые действия (RWS-литредактура, механика Фазы 3;
   виза рамки Введения уже дана — GTD RESOLVED 17-07-2026).
-  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
+  ([H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md), Fable 5 `claude-fable-5`)
 - **Гл. 3 «Морфонологическая запись корней» — стежок с Гл. 7.** Closes the last open gap in
   Part I noted in `BOOK_PLAN.md`: the §3.2/Выводы line «Уитни описывает → Зализняк
   абстрагирует → Толчельников порождает» (rewritten by H378, 08-07-2026, five days before
@@ -89,7 +89,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   roots (80,5 %). Two new footnotes, `[^ed3d]`/`[^ed3e]` (existing `[^ed3d]` relabelled
   `[^ed3e]` to keep citation order); no empirical claim changed, §3.1/§3.3/§3.4 prose
   untouched (still awaits the human RWS style pass, 269 findings, per `CH3_DATA_MAP.md`).
-  ([H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1082](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1082-Sonnet_SanskritGrammar_gasuns-dhatu-ch3-ch7-stitch_17.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ## [0.17.0] - 2026-07-16
 
@@ -116,7 +116,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   утверждение «930 корней» сохранено как верхняя рамка охвата (не весь словник), а не как заявление
   о полноте разметки. Найдено при проверке главы перед визой (MG попросил проверить расхождение
   930/876 до одобрения).
-  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ## [0.16.0] - 2026-07-16
 
@@ -138,13 +138,13 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   закрыта. Content unchanged — 590/935 DCS-attested, 550 ready core, 259 corpus-absent,
   gaṇa/preterite corpus-irrecoverability (SG-MO-013/017). Closes the three-witness arc opened in
   Гл. 4.
-  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 - **Гл. 5 «Дхатупатха и паниниевская традиция как данные» — одобрена автором 16-07-2026, без
   правок.** Draft banner removed, `[^ed5draft]` footnote updated with approval note,
   `BOOK_PLAN.md` Часть II Гл. 5 закрыта. Content unchanged — vidyut дхатупатха 2 259, аудит
   пальсуле-центризма конкорданса (añc подтверждён, and согласуется, ast уточнён), честный предел
   it-stripped джойна (454/930).
-  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ## [0.15.0] - 2026-07-16
 ### Changed
@@ -155,27 +155,27 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   (грамматика/словарь/корпус), со ссылками на Гл. 4–7 и Заключение. Формальный аппарат
   (объект/предмет/положения/задачи, визы Фазы 0) сохранён. **Сверка ссылок Введения:** §2.3/§3.2 и
   Гл. 1/Гл. 3 актуальны после рекомпоновки — dangling-ссылок не осталось. Ждёт визы автора.
-  ([H1043](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1043-Opus_SanskritGrammar_m03-vvedenie-crosscheck_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1043](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1043-Opus_SanskritGrammar_m03-vvedenie-crosscheck_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.14.0] - 2026-07-16
 
 ### Changed
 - **Гл. 4 «Кросс-уок и омонимия корней» — одобрена автором 16-07-2026.** Виза дана на
-  канонический текст ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md)
+  канонический текст ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md)
   fixed a self-inconsistency: §4.1 replaced `roots.csv`-proxy 497/930 with the canonical
   `MWS/root_crosswalk` 550/935 = 58,8 %, matching the book-wide 590/935 DCS figure) — черновик-баннер
   и сноска `[^ed4draft]` сняты/обновлены; `BOOK_PLAN.md` Часть II Гл. 4 закрыта.
-  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ### Added
 - **Приложение 7 — печатный лист свёрстан (третий проход)**: `APPENDIX7_PRINT_SHEET.html`
   ([`revision-2026/mw_genuine_roots_print_sheet.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_print_sheet.py)),
   A4 трёхколоночная вёрстка всех 750 подлинных корней MW, по образцу листов опечаток
-  ([H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md)).
+  ([H993](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H993-Fable_SanskritGrammar_errata-print-sheets_15.07.26.md)).
   MG ruled **Route 2** on the H1018 scope question (the appendix page's own text argues against
   inlining the full list into the book body — the print sheet is a separate asset, book body
   unchanged) — page + footnote `[^ed2]` updated with the link.
-  ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
+  ([H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md), Sonnet 5 `claude-sonnet-5`)
 
 ### Changed
 - **Приложение 7 — обогащение доведено: join по SLP1 + периоды аттестации (H1034).** Сверка
@@ -201,7 +201,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   пальсулевских корней. «Цифровое послесловие 2026» переориентировано: четыре направления «дальнейшей
   работы» **развёрнуты в главы Части II** (Гл. 4–7), карта датасетов сохранена как сводка. Числа —
   канонические (MWS/root_crosswalk + главы Части II), проверены скриптом. Ждёт визы автора.
-  ([H1039](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1039-Opus_SanskritGrammar_m03-conclusion-two-parts_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1039](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1039-Opus_SanskritGrammar_m03-conclusion-two-parts_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.12.0] - 2026-07-16
 ### Added
@@ -217,7 +217,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   (VedaWeb), поскольку корпус акцента не несёт (Гл. 6). A56 (номинальный индекс, kosha) и Гл. 3
   §3.3 — ссылка, не пересказ; точный список разрядов сверить с оригиналом до публикации. Ждёт визы.
   **С этой главой все 4 главы Части II начаты вчерне.**
-  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.11.0] - 2026-07-16
 ### Added
@@ -234,7 +234,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **Гл. 4 — числа покрытия приведены к каноническим** (при сверке для Гл. 6): было 497/930 (53,4 %)
   по `roots.csv`, стало **550/935 (58,8 %)** по MWS/root_crosswalk (809 MW, 590 DCS) — устранено
   расхождение с общекнижным 590/935; сноска `[^ed4a]` обновлена.
-  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.10.0] - 2026-07-16
 ### Added
@@ -249,7 +249,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   454/930, несовпавшие = √i/√ah/√an (аблаут, не потеря) → нужна нормализация ступеней; полный
   список «потерянных корней» — задел статьи-компаньона A39. Деривация (A35) и микроструктура (A04)
   — ссылка, не пересказ (антисаламная граница с M01). Ждёт визы автора.
-  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.9.0] - 2026-07-16
 ### Added
@@ -263,7 +263,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   выводится); омонимия расходится по источникам (Пальсуле 933 · Уитни 67 · EWA 50 · Юэ 38 ·
   Эдгрен 18), 143 помечены, автоматическое токенное расщепление упирается в потолок (≈5/38).
   Пределы поданы как результат. Пишется в связке со статьёй-компаньоном A39; ждёт визы автора.
-  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.8.1] - 2026-07-16
 ### Changed
@@ -277,7 +277,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   неаттестованные и известные одному источнику). «Подлинность» градуируется тремя свидетелями.
   Выжимка на странице «Приложения издания 2026» переработана в обогащённую (частота · словари);
   TSV получил колонки `dcs_freq`/`dcs_rank`/`n_dicts`. `ERRATA.md` без изменения счёта.
-  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.8.0] - 2026-07-16
 ### Added
@@ -290,7 +290,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   [`mw_genuine_roots.tsv`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.tsv) (2 113 строк, флаг `genuine`),
   печатный компактный список 750 подлинных [`mw_genuine_roots_list.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots_list.md)
   и воспроизводимый генератор [`mw_genuine_roots.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/mw_genuine_roots.py).
-  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1006](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1006-Opus_SanskritGrammar_m03-appendix-mw-genuine-roots_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.7.0] - 2026-07-16
 ### Changed
@@ -309,7 +309,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
     графической пометой — записан как задел для Приложения.
   Сноски `[^ed1d]/[^ed12a]/[^ed13a]/[^ed15a]` помечены «одобрено автором 16-07-2026». `ERRATA.md`
   перегенерирован (83 записи, 19 fixed).
-  ([H1002](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1002-Opus_SanskritGrammar_m03-ch1-inserts-visa-apply_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H1002](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1002-Opus_SanskritGrammar_m03-ch1-inserts-visa-apply_16.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.6.0] - 2026-07-15
 ### Changed
@@ -328,7 +328,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   Абзацы-вставки ждут авторской визы пакетом. `ERRATA.md` перегенерирован (82 записи, 18 fixed);
   карта — [`revision-2026/CH1_DATA_MAP.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_DATA_MAP.md). Осталось по Гл. 1:
   §1.1/§1.4 — человек-редактор (стиль).
-  ([H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.5.0] - 2026-07-15
 ### Changed
@@ -342,7 +342,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 ### Fixed
 - **Снят дубль-абзац в §1.4** (о синтетическом подходе Панини/Яске стоял дважды подряд —
   дефект конверсии 2014 г.). `ERRATA.md` перегенерирован (79 записей, 15 fixed).
-  ([H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.4.0] - 2026-07-15
 ### Changed
@@ -360,7 +360,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   рекомпоновке; `ERRATA.md` перегенерирован (77 записей, 13 fixed). План:
   [`revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md).
   Прозаический rework новой Гл. 1 по методу пилота Гл. 2 — следующий шаг.
-  ([H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.3.0] - 2026-07-15
 ### Changed
@@ -382,7 +382,7 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   vs. собственный вклад A39 — покорневой трёхсторонний синтез + книжная рамка).
 - **Старт Фазы 1:** памятка [`revision-2026/CH1_REWORK_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_REWORK_MEMO.md)
   — карта переработки Гл. 1, узлы слияния 2026-данных, развилка заглавия (@DECIDE).
-  ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
+  ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md), Opus 4.8 `claude-opus-4-8[1m]`.)
 
 ## [0.2.2] - 2026-07-13
 ### Changed

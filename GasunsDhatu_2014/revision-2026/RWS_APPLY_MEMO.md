@@ -5,7 +5,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 Памятка по внедрению стилистических RWS-находок
 ([RWS_FINDINGS.tsv](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_FINDINGS.tsv),
 1127 находок) в прозу книги GasunsDhatu 2026 по задаче
-[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
+[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
 (исполнитель Opus 4.8 `claude-opus-4-8`).
 
 ## Что внедрено
@@ -69,7 +69,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 абзацам **по содержанию** (`para_hash`/дословный фрагмент), а не по номеру строки, затем
 повторить проход. Это **подтверждает зависимость H385 из хендоффа** — задачу следует
 доводить **после**
-[H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)
+[H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)
 (Гл. 3 сейчас в активной переработке) и
 [H386](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H386-Opus_SanskritGrammar_gasuns-dhatu-monograph-skeleton_08.07.26.md)
 (перестройка скелета), иначе якоря продолжат смещаться.

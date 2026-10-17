@@ -13,7 +13,7 @@ rebuilding it.
 
 ## Audience
 MG (author of record) + any future session executing a methodichka slice (currently
-[H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md),
+[H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md),
 Fable 5).
 
 ## Provenance

@@ -2,7 +2,7 @@
 
 _Created: 10-09-2026 · Last updated: 10-09-2026_
 
-**Handoff:** [H4484](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4484-OxAlpha_SanskritGrammar_frish-chrestomathy-census_09.09.26.md) · **Executor:** OxAlpha (glm-5.3-flash) · **Source:** `yadisk:Bibliotheca/` (toms I–XXVII) + `yadisk:Sanskrityatina/32_Frisch` + `yadisk:Sanskrityatina/33_Lihusina`
+**Handoff:** [H4484](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4484-OxAlpha_SanskritGrammar_frish-chrestomathy-census_09.09.26.md) · **Executor:** OxAlpha (glm-5.3-flash) · **Source:** `yadisk:Bibliotheca/` (toms I–XXVII) + `yadisk:Sanskrityatina/32_Frisch` + `yadisk:Sanskrityatina/33_Lihusina`
 
 **Ruling applied (MG 07-09 + 09-09-2026):** большинство томов УЖЕ ИЗДАНО — census classifies per tom with evidence, NEVER assumes unfinished. Серия = «Bibliotheca Sanscritica» МГ; Фриш — автор только 2 томов (I–II). Путь = (б) электронное издание (docx→mdx). Pilot tom = Лихушина (`33_Lihusina`).
 

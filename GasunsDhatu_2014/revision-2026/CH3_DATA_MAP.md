@@ -7,7 +7,7 @@ _Created: 11-07-2026 · Last updated: 11-07-2026_
 Гл. 3 -- от `# Глава 3`). Составлена по корректировке 1 памятки
 [CH2_PILOT_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_PILOT_MEMO.md)
 («перед Гл. 1/3 завести список, какие 2026-данные вообще есть») перед
-переработкой главы по [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md).
+переработкой главы по [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md).
 Исполнитель: Opus 4.8 (`claude-opus-4-8`).
 
 ## Готовые входы

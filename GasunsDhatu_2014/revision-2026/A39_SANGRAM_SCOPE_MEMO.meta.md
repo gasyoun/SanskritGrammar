@@ -11,7 +11,7 @@ author's Q4 visa (reframe A39 through SANGRAM before writing Часть II).
 skeleton (H158).
 
 **Provenance.** Author visa Q4, visa pack Фаза 0, 15-07-2026 →
-[H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md).
+[H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md).
 SANGRAM survey by subagent (Opus 4.8, `claude-opus-4-8[1m]`, read-only). Synthesis + memo:
 Opus 4.8 (`claude-opus-4-8[1m]`).
 

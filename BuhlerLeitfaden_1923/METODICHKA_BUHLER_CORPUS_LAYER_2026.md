@@ -8,7 +8,7 @@ _Created: 31-08-2026 · Last updated: 31-08-2026_
 [METODICHKA_BUHLER_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md)).
 Раздел I (комментарий точности, частотности и управления):
 [METODICHKA_BUHLER_V1_KOMMENTARII_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_KOMMENTARII_2026.md).
-Слайс исполнения — [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md);
+Слайс исполнения — [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md);
 нумерация разделов — по методичке Апте (H3739): раздел II — корпусный слой, раздел III —
 отсылки, раздел IV — упражнения.
 
@@ -212,8 +212,8 @@ asicat, amucat это и показывают. Корневой adāḥ стои
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 31-08-2026 | Раздел II написан: полосы и живые примеры к урокам XVIII, XXVIII, XXXIV, XXXVIII, XLIII, XLIV, XLV и слою управления — 31 лемма | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
-| 08-10-2026 | Урок XLVIII дописан: 3 леммы corpus_layer (cikīrṣ/śuśrūṣ/rorūy — H5699) встали в рукописную таблицу; красный CI main (test_corpus_layer::test_manuscript_tables_agree_with_tsv) погашен горячим фикс-проходом H5679 | [H5679](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5679-OxAlpha_SanskritGrammar_buhler-concordance-XXVIII_02.10.26.md); OxAlpha (`opencode/z-ai/glm-5.3-flash`) |
+| 31-08-2026 | Раздел II написан: полосы и живые примеры к урокам XVIII, XXVIII, XXXIV, XXXVIII, XLIII, XLIV, XLV и слою управления — 31 лемма | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
+| 08-10-2026 | Урок XLVIII дописан: 3 леммы corpus_layer (cikīrṣ/śuśrūṣ/rorūy — H5699) встали в рукописную таблицу; красный CI main (test_corpus_layer::test_manuscript_tables_agree_with_tsv) погашен горячим фикс-проходом H5679 | [H5679](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5679-OxAlpha_SanskritGrammar_buhler-concordance-XXVIII_02.10.26.md); OxAlpha (`opencode/z-ai/glm-5.3-flash`) |
 
 _Раздел II методички. Числа полос воспроизводимы скриптом
 [scripts/build_corpus_layer.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_corpus_layer.py)

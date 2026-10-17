@@ -9,7 +9,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 H358) и переработки Гл. 3
 ([CH3_REWORK_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH3_REWORK_MEMO.md),
 H378). Составлено как **первый шаг Фазы 1** сразу после закрытия визового пакета Фазы 0
-([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md),
+([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md),
 BOOK_PLAN §10 п. 3). Opus 4.8 (`claude-opus-4-8[1m]`).
 
 > **Статус: план, не исполнение.** Содержательная переработка прозы + авторские визы по

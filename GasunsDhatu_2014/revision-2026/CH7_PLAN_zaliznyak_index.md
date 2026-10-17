@@ -2,7 +2,7 @@
 
 _Created: 16-07-2026 · Last updated: 16-07-2026_
 
-План последней главы Части II — прикладной кульминации. [H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md),
+План последней главы Части II — прикладной кульминации. [H1037](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1037-Opus_SanskritGrammar_m03-ch7-zaliznyak-index_16.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`).
 
 ## 1. Тезис главы

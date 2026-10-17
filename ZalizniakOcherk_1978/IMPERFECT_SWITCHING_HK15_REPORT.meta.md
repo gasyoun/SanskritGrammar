@@ -41,7 +41,7 @@ Prec 577, в основном безаугментные инъюнктивы.
 
 ## Что его изменило
 
-- [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md)
+- [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md)
   (Opus 5 `claude-opus-5[1m]`, 06-09-2026) — перезапуск с `feat_mood='Ind'`, отчёт **v0.49**,
   дельта «до/после» на каждом головном числе. Оговорка снята: цитировать теперь следует v0.49.
   Главный результат пересчёта — **вывод не изменился ни в одной точке решения**, а неизмеренное

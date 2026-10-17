@@ -10,8 +10,8 @@ _Created: 12-07-2026 · Last updated: 16-07-2026_
 > the drained 234-claim register: divergence share 27.9% → 5.1%), typology,
 > related-work ring and references, extended to the five-book frame. This file is an
 > **archival source** — do not advance, cite, or submit A60 separately. Ruling:
-> [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md);
-> merge: [H1033](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1033-Fable_SanskritGrammar_a65-4of5-full-paper-a60-merge_16.07.26.md).
+> [H1024](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1024-Fable_SanskritGrammar_a65-venue-ru-a60-merge-rulings-apply_16.07.26.md);
+> merge: [H1033](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1033-Fable_SanskritGrammar_a65-4of5-full-paper-a60-merge_16.07.26.md).
 
 > **Draft — H773 phase Q3, single-book.** A complete first draft of paper **A60**, built on the
 > two-axis Kochergina claim register (H768) and the central divergence table (H773 Q1). It is

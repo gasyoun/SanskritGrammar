@@ -2,7 +2,7 @@
 
 _Created: 04-08-2026 · Last updated: 04-08-2026_
 
-**Handoff:** [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) — dual-run residual after the [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md) model-lock override.
+**Handoff:** [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) — dual-run residual after the [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md) model-lock override.
 **Lane A (override):** Grok 4.5 (`grok-4.5`), 31-07-2026 — [RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/RU_SANSKRIT_GRAM_ABBREV_TERMINOLOGY_CROSSWALK_2026-07.md), [PR #570](https://github.com/gasyoun/SanskritGrammar/pull/570), release [v0.116.1](https://github.com/gasyoun/SanskritGrammar/releases/tag/v0.116.1).
 **Lane B (intended tier, this file):** Fable 5 (`claude-fable-5`), 04-08-2026 — independent re-run of the H2048 corpus inventory + the load-bearing non-case cells, then class-by-class compare per [/dual-run-salvage](https://github.com/gasyoun/claude-config/blob/main/commands/dual-run-salvage.md) discipline.
 
@@ -58,7 +58,7 @@ Method identical to H2048: legend / front-matter first, no prose-hunting; every 
 
 | Field | Value |
 |---|---|
-| Handoff | [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) |
+| Handoff | [H2053](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2053-Fable_SanskritGrammar_h2048-grok-crosswalk-fable-compare_01.08.26.md) |
 | Executor | Fable 5 (`claude-fable-5`), 04-08-2026 |
 | Compared against | Grok 4.5 (`grok-4.5`) lane of 31-07-2026, [PR #570](https://github.com/gasyoun/SanskritGrammar/pull/570) |
 | Worktree | `SanskritGrammar-h2053-1065252b` branch `h2053-fable-dual-run-compare` off `origin/main` @ `092fce3` |

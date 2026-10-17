@@ -31,9 +31,9 @@ backlog; it does not duplicate the plan.
 
 | Rank | Improvement | Why | Status |
 |---:|---|---|---|
-| 1 | Delivery/publication safety foundation | Prevent ignored archive leakage, toolchain drift, and test-red deployment | queued — [H1911](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1911-Codex_SanskritGrammar_architecture-delivery-publication-safety_29.07.26.md) |
-| 2 | Knauer book-pipeline pilot | Prove source authority, generation, discovery, hard cutover, and rollback on a bounded work | queued after H1911 — [H1912](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md) |
-| 3 | SG-MO-021 Sangram pilot | Prove declared corpus pipeline and stable scholarly/data semantics | queued after H1911 — [H1913](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md) |
+| 1 | Delivery/publication safety foundation | Prevent ignored archive leakage, toolchain drift, and test-red deployment | queued — [H1911](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1911-Codex_SanskritGrammar_architecture-delivery-publication-safety_29.07.26.md) |
+| 2 | Knauer book-pipeline pilot | Prove source authority, generation, discovery, hard cutover, and rollback on a bounded work | queued after H1911 — [H1912](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md) |
+| 3 | SG-MO-021 Sangram pilot | Prove declared corpus pipeline and stable scholarly/data semantics | queued after H1911 — [H1913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md) |
 | 4 | Wave-2 factory migration ranking | Pilot cost must determine batch size and order | parked until H1912/H1913 publish measured effort |
 | 5 | Separate-package/repository extraction | Extraction is justified only by stable external consumers | parked until W4 evidence |
 
