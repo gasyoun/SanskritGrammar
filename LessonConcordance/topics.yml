@@ -3061,8 +3061,31 @@ lessons:
           kochergina: "K+ — Занятие XXVI: su → sunvāna (sunu-āna) «выжимающийся; рождающийся» — тот же корень su урока, среднее причастие на живом примере с морфонологической скобкой (sunu-āna); āsīna не оговорён — честный пробел"
         notes: "Кнауэр Nr.12.2 sunvatām — причастие АКТИВНОЕ (sunvat-, gen. pl.) против среднего sunvāna — пара актив/среднее на одном корне в одном номере; совпадение упражнения урока (reuse 0.956) и Кнауэра на той же форме"
       - key: lesson-roots
-        title: "Лемма-слой: 12 глаголов с классом + nis- без корня и класса — морфонологическая запись"
-        buhler_locus: "урок XXXV, список «Глаголы:» (mdx 5015–5039)"
+        title: "Лемма-слой: 10 корней V класса (svādi) + cud X + nis-/vinis- как приставочный ci — морфонологическая запись"
+        buhler_locus: "урок XXXV, список «Глаголы:» (mdx 5015–5039): aś, āp, ci, nis-/vinis-, pra-cud, du, dhu, var, apā-/vi-/sam-var, śak, śru, star — 14 строк, 10 различных корней с классом"
+        topic_claims: []
+        spots:
+          "dhatu:glava7-ukazatel-zaliznyaka": "Идея Зализняка проста и мощна"
+          "kochergina-lesson:XVI": "образуется прибавлением к ослабленному корню суффиксов nu-/no- (nu- для форм со слабым звуковым видом, no- для форм со средним звуковым видом)"
+          "zalizniak-1978-sec:135": "Основа равна корню в слабой ступени + суффикс no/nu"
+        lemmas:
+          - {root: aś, gloss: "достигать, получать (V Ā., aśnoti/aśnute)", z1975: "A₁ (conf medium)", z1978: "A₁ (defective)", crosswalk: "yes — Whitney 20 hom 1 «attain», class V; омоним aś 2 «eat» (wno 21, I/IX) отдельной строкой; 2026-ряд самоконфликт: A1 (veṭ) vs N1 (aniṭ)"}
+          - {root: āp, gloss: "достигать, получать (V U., āpnoti/āpnute; ava-/pra-/sam-)", z1975: "A₂ (conf medium)", z1978: "A₂ (defective)", crosswalk: "yes — wno 26 «obtain», class V; омонимов нет; 2026 A2 aniṭ без самоконфликта"}
+          - {root: ci, gloss: "собирать (V U., cinoti; pra-/sam-); nis-/vinis- «решать» — тот же корень с превербом, своего корня и класса в списке нет", z1975: "I₁ (conf high)", z1978: "I₁ (full)", crosswalk: "yes — wno 225 hom 1 «gather»; омоним ci 2 «note, observe» (wno 226) отдельной строкой, оба I₁; 2026 I1 aniṭ у обеих"}
+          - {root: cud, gloss: "погонять, понуждать (pra-cud X P., codayati)", z1975: "U₁ (conf high)", z1978: "U₁ (full)", crosswalk: "yes — wno 229 «impel»; ловушка класса: Уитни даёт class I, Бюлер X P (каузативная основа codayati); 2026 U1 seṭ"}
+          - {root: du, gloss: "жечь, причинять боль; скорбеть (V P., dunoti)", z1975: "U₁ (conf high)", z1978: "U₁ (full)", crosswalk: "yes — wno 365 «burn»; 2026-ряд самоконфликт U1 (без сета) vs U2 (aniṭ); не путать с dhū «трясти» (wno 400)"}
+          - {root: dhū, gloss: "трясти (V U., dhunoti) — у Бюлера напечатано dhu", z1975: "U₂ (conf high)", z1978: "U₂ (full)", crosswalk: "yes — в реестре под написанием dhū (wno 400 «shake», class II/V/VI/IX); поиск по булеровскому dhu строки не находит; 2026 U1/U2 (сет veṭ в обоих)"}
+          - {root: vṛ, gloss: "покрывать (V U., vṛṇoti) — у Бюлера var; apā-var раскрывать, vi-var объяснять/являть, sam-var закрывать/запирать", z1975: "R₁ (conf high)", z1978: "R₁ (full)", crosswalk: "yes — в реестре под vṛ 1 (wno 740 «cover»); омоним vṛ 2 «choose» (wno 741) отдельной строкой; 2026-ряд самоконфликт ×3: R1 vs U1 vs U2 — максимум урока"}
+          - {root: śak, gloss: "быть в состоянии (V P., śaknoti)", z1975: "A₁ (conf medium)", z1978: "A₁ (defective)", crosswalk: "yes — wno 767 «be able», class V; 2026-ряд самоконфликт: A1 (veṭ) vs I1 (seṭ)"}
+          - {root: śru, gloss: "слышать (V P., śṛṇomi)", z1975: "U₁ (conf high)", z1978: "U₁ (full)", crosswalk: "yes — wno 815 «hear», class II/V; 2026-ряд самоконфликт: R1 vs U1"}
+          - {root: stṛ, gloss: "сыпать (V U., stṛṇoti) — у Бюлера напечатано star", z1975: "R₁ (conf high)", z1978: "R₁ (full)", crosswalk: "yes — в реестре под stṛ (wno 870 «strew», class I/V/IX); поиск по булеровскому star строки не находит; 2026 R1/R2 — расхождение индекса, не буквы ряда"}
+        exceptions:
+          verdict: "GAP-DOCUMENTED"
+          buhler: "B+: класс назван у каждого глагола (V у девяти, X у pra-cud), ряда нет; nis-/vinis- «решать» даны БЕЗ корня и класса — это приставочный ci, читатель складывает сам (обычное свёртывание школьной линии); śru снабжён единственной морфонологической пометой урока (śṛṇomi)"
+          whitney: "W: классы — в root-аппарате (aś 20 V; āp 26 V; ci 225 I/II/V; cud 229 I; du 365 V; dhū 400 II/V/VI/IX; vṛ 740 I/V/IX; śak 767 V; śru 815 II/V; stṛ 870 I/V/IX); единственное расхождение класса в уроке — cud: Уитни I против Бюлера X P (codayati — каузатив)"
+          zalizniak-1978: "Z: ряд 1978-колонки у всех 10 корней; полноизменяемость: defective — aś, āp, śak; full — ci, cud, du, dhū, vṛ, śru, stṛ (3+7, покрытие 10/10)"
+          kochergina: "K+: Занятие XVI — «Основа настоящего времени глаголов V класса образуется прибавлением к ослабленному корню суффиксов nu-/no-» + имя класса svādi (3532); vṛṇó-/vṛṇu- выписано в Занятии XVII (4128); подборки корней урока отдельной таблицей нет — класс при глаголе, как во всей школьной линии"
+        notes: "Проверка полноты: crosswalk покрывает 10/10 корней урока; три ловушки написания — dhu→dhū (400), star→stṛ (870), var→vṛ (740): поиск по булеровскому написанию строки не находит; три омонима — aś attain/eat, ci gather/observe, vṛ cover/choose; 7 самоконфликтов 2026-ряда в одном уроке (aś A1/N1, du U1/U2, dhū U1/U2, śak A1/I1, śru R1/U1, stṛ R1/R2, vṛ R1/U1/U2) — рекорд серии на урок; nis-/vinis- отдельной строки не имеет, это приставочный ci; cud — единственный класс X в списке и единственное расхождение класс-аппарата Бюлер↔Уитни"
 
   XXXVI:
     title: "Корни VIII класса (tanādi): сильн. o (перед гласными av), слаб. u→v /_V и факультативное выпадение перед m/v; парадигма kṛ (karo/kuru/kur) в четырёх наклонениях; префиксы при kṛ (saṅskṛ, prādus, āvis, tiras, puras, alam); именные глаголы с as/kṛ/bhū (cvi: svīkṛ, śucībhū, sadhūkṛ, pitrībhū)"

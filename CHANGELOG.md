@@ -1,4 +1,4 @@
-_Created: 25-08-2026 · Last updated: 25-09-2026_
+_Created: 25-08-2026 · Last updated: 17-10-2026_
 
 # Changelog
 
@@ -10,6 +10,28 @@ _Created: 25-08-2026 · Last updated: 25-09-2026_
 - **sangram: C5/C6 consolidation freeze LIFTED — MG in-chat ruling 05-10-2026 «да» (visa route) ([#1015](https://github.com/gasyoun/SanskritGrammar/pull/1015)).** MG ratified the C5/C6 gates via the @DO's visa arm: the standing per-article MG visa (review-sheet → MG votes) is each of the 14 unknown baseline slots' gate; no numeric per-slot thresholds invented (H1260 fence kept); §7 pilot gates unchanged (SG-SE-006 stays kill_gated). [`sangram/editorial/data/consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json): `freeze.active=false` with lift provenance (`lifted_by/lifted_date/lift_ruling`, carried forward by [`consolidation_ledger_refresh.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/consolidation_ledger_refresh.py) + schema); all 14 unknown rows annotated UNBLOCKED; [`ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md) §7 freeze-exit checkbox ✅. `article_validate --all` PASS post-lift; refresh rerun preserves the lift. Hub-side recording in Uprava (#4307); the next Sangram W2-core module (Uprava H6072) is unblocked.
 - **bughunt SanskritGrammar 05-10-2026, follow-up: the two sibling freeze-gate tests fixed after CI surfaced them.** [`tests/test_article_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/tests/test_article_validate.py) `test_freeze_gate_rejects_new_toc_ref` / `test_freeze_gate_allows_baseline_toc_ref` carried the same stale `freeze.active=true` assumption that broke the self-test at the C5/C6 lift ([PR #1015](https://github.com/gasyoun/SanskritGrammar/pull/1015), commit 3173bd2) — CI on the fix PR ([#1021](https://github.com/gasyoun/SanskritGrammar/pull/1021)) exposed them. Both now run against a synthetic frozen ledger via pytest `monkeypatch` over `load_freeze_baseline` (same `validate()` gate path, lift-independent) plus a real-ledger staleness residual; suite file 7/7 green. Report addendum: [`BUGHUNT-FINDINGS-SanskritGrammar-05.10.2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUGHUNT-FINDINGS-SanskritGrammar-05.10.2026.md). OxAlpha (`opencode/z-ai/glm-5.3-flash`).
 - **bughunt SanskritGrammar 05-10-2026 — 2 HIGH code bugs found AND fixed (MG ruling 26-09-2026 auto-fix lane), report landed.** (1) Committed suite red at HEAD since the morning freeze lift: [`scripts/article_validate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/article_validate.py) `--self-test` broke at [PR #1015](https://github.com/gasyoun/SanskritGrammar/pull/1015) because its H1260 gate cases assumed the real [`consolidation_ledger.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/data/consolidation_ledger.json) stays `freeze.active=true` — now routed through a synthetic frozen ledger (same `validate()` path, lift-independent) with a real-ledger state residual keeping the stale-ledger tripwire; self-test 16/16. (2) [`scripts/site_tools.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/site_tools.py) ran `subprocess.run(["npm","run","build"], shell=True)` — on POSIX a list+`shell=True` executes bare `npm` with the `run build` args silently dropped, so the README-documented `python scripts/site_tools.py site` gate could never go GREEN; `shell=True` dropped, end-to-end shim probe GREEN. Plus 2 LOW findings report-only (broad-except→`"unknown"` in ledger refresh; atlas e2e tests red only in a lived-in tree). Full ranked findings + live evidence: [`BUGHUNT-FINDINGS-SanskritGrammar-05.10.2026.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/BUGHUNT-FINDINGS-SanskritGrammar-05.10.2026.md). OxAlpha (`opencode/z-ai/glm-5.3-flash`).
+# Микропартия 17-10-2026: errata XLI, лемма-слой XXXV, свежесть-гейт ledger, семантика строк crosswalk (H6352-r1)
+_Repo: gasyoun/SanskritGrammar · Source: BuhlerLeitfaden_1923 · LessonConcordance · sangram/editorial · TolchelnikovTalmud_2026 · Date: 2026-10-17_
+
+## Что
+
+- **Erratum XLI (Buhler_Unicode.mdx): पर्वती → पार्वती.** Имя богини Парвати требует долгой ā (Кнауэр Nr.11.11); глоссарий самой книги (mdx 8639) печатает पार्वती верно. Внесено в `BuhlerLeitfaden_1923/errata.yml` (9-я запись), `ERRATA.mdx` перегенерирован. Спот-чек H5692 записал локус как mdx 6179 — за 08-10 файл сдвинулся, актуальная строка 6183 (указано в note).
+- **XXXV.lesson-roots: лемма-слой дозаполнен в `LessonConcordance/topics.yml`.** Скелет (title + buhler_locus) после H5686 развёрнут в полный блок: 10 корней V класса (aś, āp, ci, du, dhū, vṛ, śak, śru, stṛ) + pra-cud X + nis-/vinis- как приставочный ci, 14 строк списка «Глаголы:» (mdx 5015–5039). Каждая лемма сверена с crosswalk (З-1975 / З-1978), зафиксированы 3 ловушки написания (dhu→dhū 400, star→stṛ 870, var→vṛ 740), 3 омонима и 7 самоконфликтов 2026-ряда — рекорд серии на урок.
+- **Данные: семантика строк crosswalk зафиксирована, дедуп НЕ выполнен.** Микрозадача «снять дубль 372,dṛ» разобрана: это две разные записи Z-реестра (z_id 613/939, разные `z_pres_class`/`z_aorist`), которые crosswalk проецирует в одинаковые строки. Файл читается как 876 строк / 749 корней; число 876 стоит в утверждённом автором тексте (749/930). Раздел «Данные: семантика строк crosswalk» добавлен в `TolchelnikovTalmud_2026/README.md`.
+- **Свежесть-гейт `consolidation_ledger.json`: дневная дата-ловушка снята.** `--check` пересобирал ledger с календарной датой, поэтому один переход через полночь краснил `main` и все PR (кейс #1058 00:10 FAIL → #1059 refresh-фикс). Теперь `--check` пересобирает по СОБСТВЕННОЙ дате ledger'а (`last_refresh.date`) — ровно то, что уже делал `test_committed_ledger_is_fresh`; устаревание сторожит окно `MAX_LEDGER_AGE_DAYS = 7`, чтобы смерть ночного job'а всплывала. Контентный дрейф по-прежнему падает.
+
+## Проверки
+
+- `python3 scripts/build_errata.py BuhlerLeitfaden_1923` → 9 errata (9 open), ERRATA.mdx + корневой индекс перегенерированы.
+- `python3 scripts/build_lesson_concordance.py` → spots 538 local OK / 36 external, catalog.mdx 46 уроков, 849 строк ссылок; XXXV рендерится с таблицей 10 лемм.
+- `python3 scripts/consolidation_ledger_refresh.py --check` → PASS; `--self-test` → 4/4.
+- `python3 -m pytest tests/test_consolidation_ledger.py tests/test_consolidation_ledger_lf_determinism.py` → 18 passed (добавлены 4 теста: переход через полночь зелёный, окно устаревания, контентный дрейф, нечитаемый ledger).
+
+## Ссылки
+
+- PR: <заполнить при открытии>
+- GTD: H6352-r1 (Uprava) — микропартия SanskritGrammar.
+
 # Урок XX конкорданса Бюлера приземлён (H5671)
 _Repo: gasyoun/SanskritGrammar · Source: LessonConcordance_ · Date: 2026-10-07_
 ## Что

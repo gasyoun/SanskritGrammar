@@ -1,4 +1,4 @@
-_Created: 25-08-2026 · Last updated: 05-09-2026_
+_Created: 25-08-2026 · Last updated: 17-10-2026_
 
 # Changelog — TolchelnikovTalmud_2026
 
@@ -13,6 +13,9 @@ and this book adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 > apparatus — gets an `[Unreleased]` entry here in the same pass.** No silent edits.
 
 ## [Unreleased]
+### Changed
+- **Данные: зафиксирована семантика строк `morphoclass_crosswalk_1975_2014_2026.csv` — 876 строк / 749 корней, повторы не дедуплицируются (H6352-r1, 17-10-2026).** Спот-чек H5685 пометил строку `372,dṛ,2,heed` (z_id 613 / 939) как байт-дубль и завёл микрозадачу на удаление. Проверка по `data/z_root_map.json` показала, что это две РАЗНЫЕ записи Z-реестра, различающиеся `z_pres_class`/`z_aorist`; crosswalk их не проецирует, отсюда мнимое совпадение. Удаление потеряло бы Z-запись и её ссылку, а число 876 фигурирует в утверждённом автором тексте (749/930). В README добавлен раздел «Данные: семантика строк crosswalk» с тремя классами повторов (24 пары «только z_url», 82 группы с расходящимся `z_series`, омонимы Уитни) и указанием на потребителей, которые уже разрешают дубли (`och22_token_weighted.py`, `q34_three_scheme_agreement.py`).
+
 ### Added
 - **Drill answer keys filled — H241 Phase 4, [`Talmud-uroky.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/Talmud-uroky.mdx)** ([H995](https://github.com/gasyoun/Uprava/blob/main/handoffs/H995-Opus_SanskritGrammar_talmud-h241-phase4-answer-keys_15.07.26.md), Opus 4.8 `claude-opus-4-8`). All **35** empty answer brackets (`= \[\]`) resolved: **32 filled** with validated deep-form + surface derivations, **3 left explicitly unresolved** (`// H995: не выведено … нужна проверка автора (Ivan)`) rather than guessed — Упр. 4 №38 (double-nucleus jīø̄ causative), Упр. 14 №19 (`^` inter-row + double `yø̄`/`^-yā`), №30 (INTr reduplication of krm̥̄ + sampra-sandhi). Fully covered exercises: **Упр. 4** (16/17), **Упр. 9** (2/2), **Упр. 14** (14/16). Method: the file's own worked examples as ground truth + the author's own Ряд/Тип/seṭ from [`data/talmud_appendix1.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/data/talmud_appendix1.json); surface forms cross-checked against WhitneyRoots ppp (matá, jātá, iṣṭá, gītá, sthitá, jñātá, jitá). MDX compiles clean. **Not auto-merged** — content-correctness stakes flagged for author review per the handoff.
 
