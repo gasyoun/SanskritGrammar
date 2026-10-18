@@ -5,7 +5,7 @@ _Created: 19-07-2026 · Last updated: 21-07-2026_
 Cross-repo audit of every dataset the Sanskrit Lexicon org trades as "gold", "adjudicated",
 or evaluation ground truth — asking, per dataset, what its annotation provenance actually is
 and whether it supports the label it trades under. Executed under
-[H1272](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1272-Fable_SanskritGrammar_gold-provenance-contamination-audit_18.07.26.md).
+[H1272](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1272-Fable_SanskritGrammar_gold-provenance-contamination-audit_18.07.26.md).
 Gold files themselves were never modified: this audit is strictly read-only.
 
 ## Headline

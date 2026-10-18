@@ -78,7 +78,7 @@ Portfolio order of record (unchanged):
 | A3 | [H1614](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1614-Sonnet_SanskritGrammar_freeze-se-survivor-visa-sheet_24.07.26.md) | Sonnet | One multi-article SE visa sheet for **survivors only** (blocked on H1612) |
 | B0 | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md) | Fable | **Existing** — do not re-mint |
 | B1 | [H1615](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1615-Fable_SanskritGrammar_metodichka-apte-open-residual_24.07.26.md) | Fable | Terminalise Apte OPEN/PARTIAL residual notes |
-| C0 | [H1616](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1616-Sonnet_SanskritGrammar_sg-handoff-hygiene-archive-triage_24.07.26.md) | Sonnet | Archive/triage stale SanskritGrammar handoffs |
+| C0 | [H1616](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1616-Sonnet_SanskritGrammar_sg-handoff-hygiene-archive-triage_24.07.26.md) | Sonnet | Archive/triage stale SanskritGrammar handoffs |
 
 Optional parallel (existing, not re-minted): H1464, H1465, H1466, H1476, H1514.
 

@@ -94,9 +94,9 @@ zero-dictionary readability, which is the natural-method promise.
 
 Counts derived from the v0 chapter drafts in this directory by Fable 5
 (`claude-fable-5`), 01-08-2026, executing
-[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md);
+[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md);
 ch. 4–5 rows added 26-08-2026 by Fable 5 (`claude-fable-5`) under
-[H3493](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3493-Fable_SanskritGrammar_natural-method-story-chapters-4-5_25.08.26.md)
+[H3493](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3493-Fable_SanskritGrammar_natural-method-story-chapters-4-5_25.08.26.md)
 (mechanical check: `python tools/story_chapter_budget_check.py`);
 band membership checked against the kosha TSV (lessons 1–3, 50 lemmas each).
 

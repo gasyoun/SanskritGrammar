@@ -2,7 +2,7 @@
 
 _Created: 26-09-2026 · Last updated: 26-09-2026_
 
-**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/cvol1desc.html`, `cvol1contributors.html`, `cvol1toc.html` (fetched 26-09-2026)
+**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/cvol1desc.html`, `cvol1contributors.html`, `cvol1toc.html` (fetched 26-09-2026)
 
 Peter M. Scharf (ed.), *Śabdānugamaḥ: Indian linguistic studies in honor of George Cardona*, vol. I: *Vyākaraṇa and śābdabodha*. 2021. Lulu hardcover $126.00; India orders via the shared SL form. 18 studies by 19 scholars; ends with **a complete bibliography of Cardona's ~250 publications** (appendix, pp. 601–628) — a master lead for Pāṇinian-grammar citation.
 

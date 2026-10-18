@@ -38,6 +38,10 @@
         "spot": "УРОК XXXVIII"
       },
       {
+        "label": "урок XXXIX — конкорданс",
+        "spot": "УРОК XXXIX"
+      },
+      {
         "label": "урок VI — конкорданс",
         "spot": "УРОК VI"
       },
@@ -94,6 +98,14 @@
         "spot": "УРОК XXI"
       },
       {
+        "label": "урок XXIII — конкорданс",
+        "spot": "УРОК XXIII"
+      },
+      {
+        "label": "урок XXIV — конкорданс",
+        "spot": "УРОК XXIV"
+      },
+      {
         "label": "урок XXV — конкорданс",
         "spot": "УРОК XXV"
       },
@@ -138,10 +150,6 @@
         "spot": "УРОК XXXVII"
       },
       {
-        "label": "урок XXXIX — конкорданс",
-        "spot": "УРОК XXXIX"
-      },
-      {
         "label": "урок XL — конкорданс",
         "spot": "УРОК XL"
       },
@@ -164,6 +172,10 @@
       {
         "label": "урок XLV — конкорданс",
         "spot": "УРОК XLV"
+      },
+      {
+        "label": "урок XLVI — конкорданс",
+        "spot": "УРОК XLVI"
       },
       {
         "label": "урок XLVII — конкорданс",
@@ -290,6 +302,14 @@
       {
         "label": "урок XXXVIII — class-ii-irregulars",
         "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
+      },
+      {
+        "label": "урок XXXIX — d-roots-vid",
+        "spot": "Корни на d (vid, ad): d→t перед t/th/s; 2 л. sg. impf. на t/"
+      },
+      {
+        "label": "урок XXXIX — han-sibilant-roots",
+        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
       },
       {
         "label": "урок VI — present-class-iv",
@@ -496,6 +516,42 @@
         "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
       },
       {
+        "label": "урок XXIII — yas-stems",
+        "spot": "Имена на yas — сравнительные степени: сильная yāṃs, N.sg. yā"
+      },
+      {
+        "label": "урок XXIII — yas-stems",
+        "spot": "Имена на yas — сравнительные степени: сильная yāṃs, N.sg. yā"
+      },
+      {
+        "label": "урок XXIII — at-stems",
+        "spot": "Имена на at: сильная ant (N.V.sg. an), слабая at, t→d перед "
+      },
+      {
+        "label": "урок XXIII — n-insertion-neuter",
+        "spot": "Вставление n в N.V.Acc.du. n.: причастия I, IV, X кл. — всег"
+      },
+      {
+        "label": "урок XXIII — mahat-sant",
+        "spot": "mahat: сильная основа mahānt (N.sg. mahān, V.sg. mahan); sat"
+      },
+      {
+        "label": "урок XXIV — mant-vat-yat-stems",
+        "spot": "Имена на mat/yat/vat: ср. р. склоняется как at, но n в N.V.A"
+      },
+      {
+        "label": "урок XXIV — bhavat-honorific",
+        "spot": "Причастие bhū → bhavat «господин, Вы»: следует аналогии vat-"
+      },
+      {
+        "label": "урок XXIV — an-man-van-stems",
+        "spot": "Имена на an/man/van (две формы): сильн. ān/mān/vān; N.sg. n "
+      },
+      {
+        "label": "урок XXIV — sandhi-voiced-mutes",
+        "spot": "Внешние сандхи конечных k/ṭ/p: перед глухими остаются, перед"
+      },
+      {
         "label": "урок XXV — vas-stems",
         "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
       },
@@ -696,14 +752,6 @@
         "spot": "II класс: без суффикса, личные окончания непосредственно на "
       },
       {
-        "label": "урок XXXIX — d-roots-vid",
-        "spot": "Корни на d (vid, ad): d→t перед t/th/s; 2 л. sg. impf. на t/"
-      },
-      {
-        "label": "урок XXXIX — han-sibilant-roots",
-        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
-      },
-      {
         "label": "урок XL — class-ii-s-roots",
         "spot": "S-корни II класса (ās, cakās, śās): impf. 2 л. на t/висаргу,"
       },
@@ -822,6 +870,22 @@
       {
         "label": "урок XLV — aorist-injunctive-ma",
         "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
+      },
+      {
+        "label": "урок XLVI — aorist-s-fourth",
+        "spot": "Четвертый аорист (s-аорист): окончания sam/sīḥ/sīt, sva/stam"
+      },
+      {
+        "label": "урок XLVI — aorist-s-middle-irregulars",
+        "spot": "Неправильные s-аориста: adhi+i → adhyaiṣṭa или adhyagīṣṭa; d"
+      },
+      {
+        "label": "урок XLVI — aorist-is-fifth",
+        "spot": "Пятый аорист (iṣ-аорист): те же окончания, что в IV, но с пр"
+      },
+      {
+        "label": "урок XLVI — aorist-sis-sixth",
+        "spot": "Шестой аорист (siṣ-аорист): исключительно Parasmaipada, от б"
       },
       {
         "label": "урок XLVII — aorist-seventh-s",
@@ -980,6 +1044,10 @@
       {
         "label": "урок XXXVIII — class-ii-irregulars",
         "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
+      },
+      {
+        "label": "урок XXXIX — han-sibilant-roots",
+        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
       },
       {
         "label": "урок VI — present-class-iv",
@@ -1156,6 +1224,42 @@
       {
         "label": "урок XXI — s-retroflex-su",
         "spot": "Руки-ретрофлексия суффиксального s после k, r, l (vāk + su ="
+      },
+      {
+        "label": "урок XXIII — yas-stems",
+        "spot": "Имена на yas — сравнительные степени: сильная yāṃs, N.sg. yā"
+      },
+      {
+        "label": "урок XXIII — at-stems",
+        "spot": "Имена на at: сильная ant (N.V.sg. an), слабая at, t→d перед "
+      },
+      {
+        "label": "урок XXIII — n-insertion-neuter",
+        "spot": "Вставление n в N.V.Acc.du. n.: причастия I, IV, X кл. — всег"
+      },
+      {
+        "label": "урок XXIII — n-insertion-neuter",
+        "spot": "Вставление n в N.V.Acc.du. n.: причастия I, IV, X кл. — всег"
+      },
+      {
+        "label": "урок XXIII — mahat-sant",
+        "spot": "mahat: сильная основа mahānt (N.sg. mahān, V.sg. mahan); sat"
+      },
+      {
+        "label": "урок XXIV — mant-vat-yat-stems",
+        "spot": "Имена на mat/yat/vat: ср. р. склоняется как at, но n в N.V.A"
+      },
+      {
+        "label": "урок XXIV — bhavat-honorific",
+        "spot": "Причастие bhū → bhavat «господин, Вы»: следует аналогии vat-"
+      },
+      {
+        "label": "урок XXIV — an-man-van-stems",
+        "spot": "Имена на an/man/van (две формы): сильн. ān/mān/vān; N.sg. n "
+      },
+      {
+        "label": "урок XXIV — sandhi-voiced-mutes",
+        "spot": "Внешние сандхи конечных k/ṭ/p: перед глухими остаются, перед"
       },
       {
         "label": "урок XXV — vas-stems",
@@ -1338,10 +1442,6 @@
         "spot": "II класс: без суффикса, личные окончания непосредственно на "
       },
       {
-        "label": "урок XXXIX — han-sibilant-roots",
-        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
-      },
-      {
         "label": "урок XL — as-verb-paradigm",
         "spot": "Глагол as II Р. Ā., быть: слабые формы без начального гласно"
       },
@@ -1412,6 +1512,22 @@
       {
         "label": "урок XLV — aorist-injunctive-ma",
         "spot": "mā-запрет (инъюнктив): в соединении с mā аористы лишаются пр"
+      },
+      {
+        "label": "урок XLVI — aorist-s-fourth",
+        "spot": "Четвертый аорист (s-аорист): окончания sam/sīḥ/sīt, sva/stam"
+      },
+      {
+        "label": "урок XLVI — aorist-s-middle-irregulars",
+        "spot": "Неправильные s-аориста: adhi+i → adhyaiṣṭa или adhyagīṣṭa; d"
+      },
+      {
+        "label": "урок XLVI — aorist-is-fifth",
+        "spot": "Пятый аорист (iṣ-аорист): те же окончания, что в IV, но с пр"
+      },
+      {
+        "label": "урок XLVI — aorist-sis-sixth",
+        "spot": "Шестой аорист (siṣ-аорист): исключительно Parasmaipada, от б"
       },
       {
         "label": "урок XLVII — aorist-seventh-s",
@@ -1522,6 +1638,14 @@
       {
         "label": "урок XXXVIII — class-ii-irregulars",
         "spot": "Индивидуальные правила II класса: śī (guṇa повсюду + r в 3 p"
+      },
+      {
+        "label": "урок XXXIX — d-roots-vid",
+        "spot": "Корни на d (vid, ad): d→t перед t/th/s; 2 л. sg. impf. на t/"
+      },
+      {
+        "label": "урок XXXIX — han-sibilant-roots",
+        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
       },
       {
         "label": "урок VI — present-class-iv",
@@ -1676,6 +1800,30 @@
         "spot": "Церебральная группа: имена на ṣ/ś и большинство на h, произв"
       },
       {
+        "label": "урок XXIII — yas-stems",
+        "spot": "Имена на yas — сравнительные степени: сильная yāṃs, N.sg. yā"
+      },
+      {
+        "label": "урок XXIII — at-stems",
+        "spot": "Имена на at: сильная ant (N.V.sg. an), слабая at, t→d перед "
+      },
+      {
+        "label": "урок XXIII — n-insertion-neuter",
+        "spot": "Вставление n в N.V.Acc.du. n.: причастия I, IV, X кл. — всег"
+      },
+      {
+        "label": "урок XXIV — mant-vat-yat-stems",
+        "spot": "Имена на mat/yat/vat: ср. р. склоняется как at, но n в N.V.A"
+      },
+      {
+        "label": "урок XXIV — bhavat-honorific",
+        "spot": "Причастие bhū → bhavat «господин, Вы»: следует аналогии vat-"
+      },
+      {
+        "label": "урок XXIV — an-man-van-stems",
+        "spot": "Имена на an/man/van (две формы): сильн. ān/mān/vān; N.sg. n "
+      },
+      {
         "label": "урок XXV — vas-stems",
         "spot": "vas-основы причастий перфекта: три основы — сильная vāṃs, ср"
       },
@@ -1774,14 +1922,6 @@
       {
         "label": "урок XXXVII — class-ix-ana-nasal-loss",
         "spot": "2 sg. imper. par. согласных корней IX класса āna [āṇa]; утра"
-      },
-      {
-        "label": "урок XXXIX — d-roots-vid",
-        "spot": "Корни на d (vid, ad): d→t перед t/th/s; 2 л. sg. impf. на t/"
-      },
-      {
-        "label": "урок XXXIX — han-sibilant-roots",
-        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
       },
       {
         "label": "урок XL — class-ii-s-roots",
@@ -1940,6 +2080,10 @@
         "spot": "Лемма-слой: 7 корней II класса урока (морфонологическая запи"
       },
       {
+        "label": "урок XXXIX — lesson-roots",
+        "spot": "Лемма-слой: 10 корней II класса урока (морфонологическая зап"
+      },
+      {
         "label": "урок VI — lesson-roots",
         "spot": "Лемма-слой: 12 глаголов урока (морфонологическая запись)"
       },
@@ -1996,6 +2140,14 @@
         "spot": "Лемма-слой: 7 глаголов урока (3 с каузативами, 3 префиксальн"
       },
       {
+        "label": "урок XXIII — lesson-roots",
+        "spot": "Лемма-слой: 3 глагола урока (nind I. P., rāj I. Ā., sar чере"
+      },
+      {
+        "label": "урок XXIV — lesson-roots",
+        "spot": "Лемма-слой: 4 глагола урока (chid — в уроке только ava-chid;"
+      },
+      {
         "label": "урок XXV — lesson-roots",
         "spot": "Лемма-слой: 2 корня урока (gam — только приставочные astam-g"
       },
@@ -2025,7 +2177,7 @@
       },
       {
         "label": "урок XXXV — lesson-roots",
-        "spot": "Лемма-слой: 12 глаголов с классом + nis- без корня и класса "
+        "spot": "Лемма-слой: 10 корней V класса (svādi) + cud X + nis-/vinis-"
       },
       {
         "label": "урок XXXVI — lesson-roots",
@@ -2034,10 +2186,6 @@
       {
         "label": "урок XXXVII — lesson-roots",
         "spot": "Лемма-слой: 19 глаголов урока — 13 с классом (IX ×9, II ×4) "
-      },
-      {
-        "label": "урок XXXIX — lesson-roots",
-        "spot": "Лемма-слой: 10 корней II класса урока (морфонологическая зап"
       },
       {
         "label": "урок XL — lesson-roots",
@@ -2062,6 +2210,10 @@
       {
         "label": "урок XLV — lesson-roots",
         "spot": "Лемма-слой: ~55 корней урока — парадигмы трёх корневых аорис"
+      },
+      {
+        "label": "урок XLVI — lesson-roots",
+        "spot": "Лемма-слой: 23 корня урока — парадигмы IV/V/VI типов, неправ"
       },
       {
         "label": "урок XLVII — lesson-roots",
@@ -2090,6 +2242,14 @@
         "spot": "Present indicativus корня i II класса (emi/eṣi/eti) + adhi-i"
       },
       {
+        "label": "урок XXXIX — cj-roots-vac",
+        "spot": "Корни на c/j (vac): c/j→k перед t/th/s (с s→ṣ после k), →g п"
+      },
+      {
+        "label": "урок XXXIX — han-sibilant-roots",
+        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
+      },
+      {
         "label": "урок VI — present-class-iv",
         "spot": "Present indicativus IV класса: ya к слабой ступени корня; īv"
       },
@@ -2108,14 +2268,6 @@
       {
         "label": "урок XXXVII — class-ii-suffixless-guna",
         "spot": "II класс: без суффикса, личные окончания непосредственно на "
-      },
-      {
-        "label": "урок XXXIX — cj-roots-vac",
-        "spot": "Корни на c/j (vac): c/j→k перед t/th/s (с s→ṣ после k), →g п"
-      },
-      {
-        "label": "урок XXXIX — han-sibilant-roots",
-        "spot": "han (haṅsi; jahi — нерегулярный; ghn-алломорф ghnanti/aghnan"
       },
       {
         "label": "урок XL — class-ii-s-roots",
@@ -2182,6 +2334,10 @@
         "spot": "Велярная группа: имена на c и большая часть на j, производны"
       },
       {
+        "label": "урок XXIV — an-man-van-stems",
+        "spot": "Имена на an/man/van (две формы): сильн. ān/mān/vān; N.sg. n "
+      },
+      {
         "label": "урок XXV — an-stems-trio",
         "spot": "Имена на an с тремя формами: śvan (śvān/śvan(śva)/śun), yuva"
       }
@@ -2208,6 +2364,10 @@
       {
         "label": "урок XXVIII — ppp-perfect-active-vat",
         "spot": "Причастие прош. действ. на vat (N. vān, vatī, vat) от pp.: k"
+      },
+      {
+        "label": "урок XXIII — at-stems",
+        "spot": "Имена на at: сильная ant (N.V.sg. an), слабая at, t→d перед "
       },
       {
         "label": "урок XXV — vas-stems",
@@ -2374,6 +2534,18 @@
       {
         "label": "урок XLV — aorist-reduplicated",
         "spot": "Третий аорист: по форме imperf. с удвоением, спрягаемый по п"
+      },
+      {
+        "label": "урок XLVI — aorist-s-fourth",
+        "spot": "Четвертый аорист (s-аорист): окончания sam/sīḥ/sīt, sva/stam"
+      },
+      {
+        "label": "урок XLVI — aorist-is-fifth",
+        "spot": "Пятый аорист (iṣ-аорист): те же окончания, что в IV, но с пр"
+      },
+      {
+        "label": "урок XLVI — aorist-sis-sixth",
+        "spot": "Шестой аорист (siṣ-аорист): исключительно Parasmaipada, от б"
       },
       {
         "label": "урок XLVII — aorist-seventh-s",

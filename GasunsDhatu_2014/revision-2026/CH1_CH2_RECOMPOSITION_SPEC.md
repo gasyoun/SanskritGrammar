@@ -3,7 +3,7 @@
 _Created: 15-07-2026 · Last updated: 15-07-2026_
 
 > **🔴 ИСПОЛНЕНО 15-07-2026:** автор принял **Вариант A** (§1.1 открывает Гл. 1, §1.2 → Гл. 2).
-> Структурная рекомпоновка выполнена ([H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md)):
+> Структурная рекомпоновка выполнена ([H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md)):
 > секции перенесены и перенумерованы, §-кросс-ссылки и оглавление обновлены, Выводы обеих глав
 > перераспределены по вопросам, провенанс — сноски `[^edrecomp1]/[^edrecomp2]/[^ed1d]`. Остаётся
 > **прозаический rework новой Гл. 1** по методу пилота Гл. 2 (отдельный handoff).
@@ -13,7 +13,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 [CH1_REWORK_MEMO.md §0](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_REWORK_MEMO.md);
 настоящая спека — «сначала план» (Р11-уровень: перекомпоновка глав). Исполнение rework —
 отдельным handoff после визы автора по выбранной границе.
-[H988](https://github.com/gasyoun/Uprava/blob/main/handoffs/H988-Opus_SanskritGrammar_ch1-ch2-recomposition-spec_15.07.26.md),
+[H988](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H988-Opus_SanskritGrammar_ch1-ch2-recomposition-spec_15.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`).
 
 ---

@@ -8,7 +8,7 @@ Phase 1 called for — sitting **before** Tolchelnikov's *Талмуд* in the l
 deep-dive tier; the on-ramp gets a Kochergina-stage learner to where they can read **one** derivation,
 then hands off "one tap deeper." Wave-1c of the
 [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
-(aspect §3.6), handoff [H915](https://github.com/gasyoun/Uprava/blob/main/handoffs/H915-Opus_SanskritGrammar_pedagogy-w1c-zaliznyak-onramp_14.07.26.md).
+(aspect §3.6), handoff [H915](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H915-Opus_SanskritGrammar_pedagogy-w1c-zaliznyak-onramp_14.07.26.md).
 
 **Why.** The Талмуд itself states that *notation is a barrier taller than the Sanskrit it describes*.
 The on-ramp removes that barrier for first contact: minimal notation, four rows, real high-frequency

@@ -45,28 +45,28 @@ BOOKS = {
         "year": 1878,  # historical first edition; this file is the 1923 reprint proxy
         "edition_year": 1923,  # the edition this .mdx is actually transcribed from — used in `id`
         "path": os.path.join(ROOT, "BuhlerLeitfaden_1923", "Buhler_Unicode.mdx"),
-        "lesson_re": re.compile(r"^#\s*УРОК\s+([IVXL]+)\.?\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{1,2}\s*УРОК\s+([IVXL]+)\b", re.MULTILINE),
     },
     "knauer": {
         "label": "Knauer 1908",
         "year": 1908,
         "edition_year": 1908,
         "path": os.path.join(ROOT, "KnauerFrazy_1908", "Frazy-Knauer-03.05.2023.mdx"),
-        "lesson_re": re.compile(r"^#\s*Nr\.\s*(\d+)\s*\(([^)]*)\)\.?\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{1,2}\s*Nr\.\s*(\d+)\s*\(([^)]*)\)\.?\s*$", re.MULTILINE),
     },
     "kochergina": {
         "label": "Kochergina 1998",
         "year": 1998,
         "edition_year": 1998,
         "path": os.path.join(ROOT, "KocherginaUchebnik_1998", "Kochergina_unicode.mdx"),
-        "lesson_re": re.compile(r"^Занятие\s+([IVXL]+)\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{0,2}\s*Занятие\s+([IVXL]+)\b", re.MULTILINE),
     },
     "apte": {
         "label": "Apte 1885",
         "year": 1885,
         "edition_year": 1885,
         "path": os.path.join(ROOT, "ApteSyntax_1885", "Apte-unicode.mdx"),
-        "lesson_re": re.compile(r"^#\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
+        "lesson_re": re.compile(r"^#{1,2}\s*\**\s*Урок\s+(\d+)\.?\s*\**\s*$", re.MULTILINE),
     },
 }
 

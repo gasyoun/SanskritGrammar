@@ -8,7 +8,7 @@ kosha's [subhashita_beginner_pack.json](https://github.com/gasyoun/kosha/blob/ma
 difficulty 0.2841–0.4063; 85.3% of tokens carry an RU lemma-layer gloss per
 [RU_GLOSS_COVERAGE.md](https://github.com/gasyoun/kosha/blob/main/reading/RU_GLOSS_COVERAGE.md)).
 No saying outside the pack is used; no saying is invented. Handoff:
-[H2169](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2169-Fable_SanskritGrammar_subhashita-16-lesson-plan_02.08.26.md)
+[H2169](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2169-Fable_SanskritGrammar_subhashita-16-lesson-plan_02.08.26.md)
 (Fable 5) — Subhāṣita 4×4-block lesson plan. Plan context:
 [PLAN_NALOPAKHYANA_SUBHASHITA_COURSES_2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_NALOPAKHYANA_SUBHASHITA_COURSES_2026.md)
 ·
@@ -408,7 +408,7 @@ numbers above against the `num` fields of
 
 ## Cross-reference: lesson numbering vs. the H2168 reader wiring
 
-[H2168](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2168-Opus_Systema-Sanscriticum_nala-subhashita-reader-wiring_02.08.26.md)
+[H2168](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2168-Opus_Systema-Sanscriticum_nala-subhashita-reader-wiring_02.08.26.md)
 (Opus 5) — Generalize ReadingPackController to multi-course multi-pack — wires the
 Subhāṣita course in-cabinet as a **single pack** (`subhashita-beginner`), unlike
 Nala's three sequential packs. Consequences for numbering, so students see one
@@ -436,7 +436,7 @@ page is a gateway to two external collections — (a) the **Usha Sanki 95-audio
 compilation** distributed via Dropbox, and (b) a **Kochergina-textbook-derived
 collection** distributed as Word documents. Both are external audio/Word artifacts,
 not machine-fetchable, with no difficulty scores and no RU token glosses. Per
-[H2169](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2169-Fable_SanskritGrammar_subhashita-16-lesson-plan_02.08.26.md)'s
+[H2169](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2169-Fable_SanskritGrammar_subhashita-16-lesson-plan_02.08.26.md)'s
 context ruling, kosha's own scored and glossed pack is the stronger, self-sufficient
 asset; the two collections remain **further reading / future audio prior-art**, and
 this curriculum makes no claim that audio recordings exist for any of its 106 items

@@ -4,7 +4,7 @@ _Created: 16-07-2026 · Last updated: 28-07-2026_
 
 Печатная рукопись (раздел I методички-компаньона к В. А. Кочергиной, *Учебник санскрита*,
 М., 1998). План издания: [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md);
-слайс исполнения — [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md).
+слайс исполнения — [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md).
 
 Каждое число в этом разделе живет в реестре
 [claims.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/claims.yml)
@@ -477,7 +477,7 @@ abhi, nis, pari и prati» (реестр HK-40).
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 16-07-2026 | Раздел I написан: 15 заметок по 11 занятиям + приложение частотных бейджей | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
+| 16-07-2026 | Раздел I написан: 15 заметок по 11 занятиям + приложение частотных бейджей | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
 | 26-07-2026 | Открытые пункты визы H1258 отработаны: девять пунктов закрыты терминальными статусами, сводная таблица остатка, кандидаты переписи занятия X | [H1454](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1454-Fable_SanskritGrammar_kochergina-metodichka-v1-open-items_22.07.26.md); Grok 4.5 (`grok-4.5`) |
 | 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): административные пометы проверок переписаны читаемым русским, у процентов появились базы подсчета и словесные чтения, примерная норма § 3.7 оговорена во введении; технические детали ушли в таблицу открытых вопросов. Числа и вердикты не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 

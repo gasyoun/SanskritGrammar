@@ -2,7 +2,7 @@
 
 _Created: 16-07-2026 · Last updated: 16-07-2026_
 
-План третьей главы Части II. [H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md),
+План третьей главы Части II. [H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`). Закрывает арку трёх свидетелей, открытую Гл. 4: **корпус как
 третий свидетель**.
 

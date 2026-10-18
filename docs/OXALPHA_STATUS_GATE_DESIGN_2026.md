@@ -2,9 +2,9 @@
 
 _Created: 29-08-2026 · Last updated: 04-09-2026_
 
-Handoff: [H3550](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3550-OxAlpha_SanskritGrammar_oxalpha-30d-risk-review-gate_26.08.26.md) · Companion report: [OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md)
+Handoff: [H3550](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3550-OxAlpha_SanskritGrammar_oxalpha-30d-risk-review-gate_26.08.26.md) · Companion report: [OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/reviews/OXALPHA_RETROSPECTIVE_CODE_REVIEW_26-08-2026.md)
 
-**Status: ARMED 04-09-2026 by [H4074](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4074-OxAlpha_Uprava_arm-30d-oxalpha-gates-orsfaq-sanskritgrammar_04.09.26.md)** —
+**Status: ARMED 04-09-2026 by [H4074](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4074-OxAlpha_Uprava_arm-30d-oxalpha-gates-orsfaq-sanskritgrammar_04.09.26.md)** —
 the design below is realized as
 [.github/workflows/oxalpha-review-gate.yml](../.github/workflows/oxalpha-review-gate.yml)
 (job id `oxalpha-review-gate`, `pull_request` + `workflow_dispatch` + monthly

@@ -5,7 +5,7 @@ _Created: 10-07-2026 · Last updated: 10-07-2026_
 Одностраничная памятка к файлу
 [`GasunsDhatu_2026_RWS_review.docx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GasunsDhatu_2026_RWS_review.docx)
 — это вся книга 2026 г. с внедрёнными стилистическими правками (задача
-[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)).
+[H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)).
 
 ## Что открыть
 

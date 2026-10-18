@@ -8,7 +8,7 @@ _Created: 25-08-2026 · Last updated: 06-09-2026_
 > предрегистрированного замера T2607-26 от 17-07-2026 вместе с
 > [imperfect_switching_stats.json](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/imperfect_switching_stats.json).
 > Пересчет с гардом `feat_mood='Ind'` выполнен хендоффом
-> [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md);
+> [H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md);
 > v0.49 несет дельту «до/после» на каждом головном числе. Итог пересчета: **вердикт
 > и все выводы устояли** — ни один lift не пересек 1,0, ни один runs-test не сменил
 > направление, ни одна дельта оборота не сменила знак. Материальным оказался ровно
@@ -142,7 +142,7 @@ formation — валидировано по топ-формам, но остат
 (§ в). **Направление смещения не измерено**: инъюнктив в ведийской прозе нарративно-прошедший, так
 что 4 067 `Jus`-токенов могли вести себя как перфекты, с которыми их объединили, — а могли и нет;
 знать это без пересчёта нельзя. Пересчёт с `AND feat_mood='Ind'` **ВЫПОЛНЕН** 06-09-2026 хендоффом
-[H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md) (Opus 5 `claude-opus-5[1m]`) и вышел отдельной
+[H3966](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3966-Opus_SanskritGrammar_t2607-26-mood-guarded-rerun-v049_02.09.26.md) (Opus 5 `claude-opus-5[1m]`) и вышел отдельной
 версией — [v0.49](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/IMPERFECT_SWITCHING_HK15_REPORT_V049.md) — с видимой дельтой до/после на каждом
 головном числе. Эта оговорка остаётся здесь как исторический документ: она описывает дефект,
 под которым цифры ниже были опубликованы. Что пересчёт показал: направление смещения, которое
@@ -152,6 +152,6 @@ formation — валидировано по топ-формам, но остат
 
 _Fable 5 (`claude-fable-5`), H1053. Таблицы вычислены скриптом, JSON закоммичен рядом._
 
-_Оговорка H3878 дописана 02-09-2026: Claude Code Opus 5 (`claude-opus-5`), хендофф [H3965](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3965-Opus_SanskritGrammar_t2607-26-perf-bucket-caveat-annotate_02.09.26.md). Сами таблицы не пересчитывались._
+_Оговорка H3878 дописана 02-09-2026: Claude Code Opus 5 (`claude-opus-5`), хендофф [H3965](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3965-Opus_SanskritGrammar_t2607-26-perf-bucket-caveat-annotate_02.09.26.md). Сами таблицы не пересчитывались._
 
 _Dr. Mārcis Gasūns_

@@ -14,9 +14,9 @@ H386 — **последний** структурный шаг программы
 после мержа всех параллельных PR, **иначе перестановки создадут конфликты со всеми
 параллельными PR**. На 10-07-2026 два предусловия ещё не выполнены:
 
-- [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)
+- [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md)
   (переработка Гл. 3) — **в работе** параллельной сессией, PR ещё нет;
-- [H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
+- [H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md)
   (RWS-правки, 85 абзацев) — **[PR #79](https://github.com/gasyoun/SanskritGrammar/pull/79) открыт, не смержен**.
 
 Поэтому здесь — **только план и предложения на визу автора** (перемещения блоков и
@@ -97,7 +97,7 @@ H386 — **последний** структурный шаг программы
 ## Порядок исполнения
 
 1. Дождаться мержа [PR #79](https://github.com/gasyoun/SanskritGrammar/pull/79) (H385) и
-   доставки [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md) (Гл. 3).
+   доставки [H378](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H378-Opus_SanskritGrammar_gasuns-dhatu-ch3-monograph-rework_08.07.26.md) (Гл. 3).
 2. Собрать визу автора по названиям глав (§ выше) и по объёму облегчения ВАК-аппарата Введения.
 3. Пересчитать номера строк этой карты по актуальному файлу, выполнить перемещения одним
    проходом, прогнать проверки DO #4, открыть PR **без авто-мержа**.

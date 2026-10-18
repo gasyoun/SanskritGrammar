@@ -4,7 +4,7 @@ _Created: 14-07-2026 · Last updated: 22-07-2026_
 
 The first measured result of [RQ1](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md)
 of the digital-Sanskrit-pedagogy field (wave-1a, handoff
-[H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md)).
+[H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md)).
 Sibling of the textbook-sequencing result
 [`S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/S1_TEXTBOOK_SEQUENCING_TAU_RESULT.md).
 Produced by [`scripts/build_difficulty_ordering.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_difficulty_ordering.py)

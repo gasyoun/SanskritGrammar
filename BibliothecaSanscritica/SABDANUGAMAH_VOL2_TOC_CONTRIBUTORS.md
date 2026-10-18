@@ -2,7 +2,7 @@
 
 _Created: 26-09-2026 · Last updated: 26-09-2026_
 
-**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/cvol2desc.html`, `cvol2contributors.html`, `cvol2toc.html` (fetched 26-09-2026)
+**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/cvol2desc.html`, `cvol2contributors.html`, `cvol2toc.html` (fetched 26-09-2026)
 
 Peter M. Scharf (ed.), *Śabdānugamaḥ: Indian linguistic studies in honor of George Cardona*, vol. II: *Historical linguistics, Vedic, etc.* 2022. Lulu hardcover $126.00; India orders via the shared SL form. 20 studies by 21 scholars. Includes the two "restorative" papers the description highlights: Dunkel's *Testing the Anukramaṇī* (R̥gvedic hymn authorship) and Hock's *Tat tvam asi once again*.
 

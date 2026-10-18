@@ -115,7 +115,7 @@ to be discovered — the same position the Kochergina plan reached after its H79
 | **P0** | Claims registry + instruments (39 → 40 claims) | `claims.yml` + `apte_*_stats.py` | H1055/H1059/H1062/H1081/H1084/H1087, H3113 |
 | **P1** | Раздел I — комментарий, visa applied | authored prose | H1090, H1275/H1373/H1615 |
 | **P2** | Раздел II — корпусный слой | `corpus_layer/` + prose | H1297 |
-| **P3** | Разделы III–IV + this companion + metadoc (five-artifact parity) | authored prose | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md) |
+| **P3** | Разделы III–IV + this companion + metadoc (five-artifact parity) | authored prose | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md) |
 | **P4** | Viza of раздел III/IV keys and renderings | review sheet | follow-on H### |
 | **P5** | Print assembly (RU manuscript → PDF) + MG viza | shared with Kochergina P5 | follow-on H### |
 

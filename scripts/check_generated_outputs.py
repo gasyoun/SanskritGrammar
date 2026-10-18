@@ -34,7 +34,11 @@ DEFAULT_GLOBS = [
     "*/ERRATA.mdx",
     "*/ERRATA.md",
 ]
-DATE_RE = re.compile(r"\b\d{2}-\d{2}-\d{4}\b")
+# H5691 sibling (17-10-2026): `\b` does not fire between a digit and `_`, and the
+# root index writes the stamp markdown-italicised -- `_Generated: 13-10-2026_` --
+# so that line was NEVER masked and every PR regenerating the registers was
+# refused as "real drift". Match on digit boundaries instead of word boundaries.
+DATE_RE = re.compile(r"(?<!\d)\d{2}-\d{2}-\d{4}(?!\d)")
 
 
 def git(*args, check=True):

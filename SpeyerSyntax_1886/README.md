@@ -6,7 +6,7 @@ J.S. Speyer, *Sanskrit Syntax* (Leiden, 1886; introduction by H. Kern). Public d
 
 **This directory is a claims-harvest backlog, not a full book adaptation.** Unlike the
 other `<Author><ShortTitle>_<year>` directories in this repo, there is no `.doc`/`.docx`/
-`.mdx` conversion here and no `claims.yml` — per [H4483](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4483-OxAlpha_SanskritGrammar_syntax-claims-harvest_09.09.26.md)'s
+`.mdx` conversion here and no `claims.yml` — per [H4483](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4483-OxAlpha_SanskritGrammar_syntax-claims-harvest_09.09.26.md)'s
 scope, raw PDFs and their machine-extracted text stay on the source disk
 ([SanskritLexicography](https://github.com/gasyoun/SanskritLexicography) `literature/`
 + `literature/md/`, read-only this pass), and only the harvested candidate-claims backlog

@@ -9,7 +9,7 @@ _Created: 01-10-2026 · Last updated: 01-10-2026_
 об исключениях. План и решения D1–D16:
 [BUHLER_LESSON_CONCORDANCE_PLAN_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BUHLER_LESSON_CONCORDANCE_PLAN_2026.md);
 пилот — хендофф
-[H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
+[H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
 
 ## Слои
 

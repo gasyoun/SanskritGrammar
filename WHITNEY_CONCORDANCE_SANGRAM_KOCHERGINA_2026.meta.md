@@ -23,12 +23,12 @@ claims.yml; авторы новых статей (проверка §-ссыло
 
 ## Провенанс
 
-Хэндофф [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md),
+Хэндофф [H1228](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1228-Fable_SanskritGrammar_whitney-concordance-audit-sangram-kochergina_18.07.26.md),
 18-07-2026. Модель: Fable 5 (`claude-fable-5`) — головной сеанс + 12 fork-агентов той же
 модели (6 чанков claims.yml, 6 кластеров статей). Ground truth: текст Уитни в этом репо;
 аористы дополнительно сверены с Толчельниковым Талмудом (адъюдикация H1049).
 
-v2: хэндофф [H1242](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1242-Fable_SanskritGrammar_concordance-v2-fullgrid-buhler-zalizniak_18.07.26.md),
+v2: хэндофф [H1242](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1242-Fable_SanskritGrammar_concordance-v2-fullgrid-buhler-zalizniak_18.07.26.md),
 18-07-2026, Fable 5 (`claude-fable-5`) — головной сеанс + 25 агентов той же модели
 (28 батчей «источник × чанк»); все 43 свидетельские DISAGREE-клетки перечитаны головным
 сеансом. Сырые вердикты закоммичены:
@@ -47,7 +47,7 @@ v2: хэндофф [H1242](https://github.com/gasyoun/Uprava/blob/main/handoffs/
    расхождение школ.
 3. **Следующий проход сетки** — добавить статьи, вышедшие после закрытия объёма H1242
    (SG-SE-006 past-tenses, v0.80.0+), тем же конвейером; Вакернагель/Рену — по появлении
-   PDF ([H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md)).
+   PDF ([H1243](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1243-Fable_SanskritGrammar_concordance-v3-wackernagel-renou-pdf-gated_18.07.26.md)).
 4. **Починить §-якоря WhitneyGrammar_1889** (§ 8 отчёта: §218, §235, §339, §378, §387,
    §465, §1053) — механическая OCR-задача, разблокирует надёжный grep по якорям.
 5. **Внести ~65 исправленных §-ссылок в сами источники** (замены «→» в примечаниях строк):

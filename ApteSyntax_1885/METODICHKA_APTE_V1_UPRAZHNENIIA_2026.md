@@ -5,7 +5,7 @@ _Created: 31-08-2026 · Last updated: 31-08-2026_
 Печатная рукопись (раздел IV методички-компаньона к V. S. Apte, *The Student's Guide to
 Sanskrit Composition*, 1885, в русском переводе Н. П. Лихушиной, 2021; план —
 [METODICHKA_APTE_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md),
-слайс — [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)).
+слайс — [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)).
 Упражнения даются к тем занятиям, которые получили комментарий в
 [разделе I](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md), —
 чтобы закрепить ровно те места, где книга сверхобобщает управление или прячет частотность.
@@ -268,7 +268,7 @@ vi/parā+ji, upa+sthā, bhuj и каузативы § 344; правила kram, 
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 31-08-2026 | Раздел IV написан: чтения, разборы и переводы к 7 занятиям — все задания извлечены из уроков 3, 7, 9, 10, 19, 22, 29–30 самой книги Апте, с § каждого | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md); Fable 5 (`claude-fable-5`) |
+| 31-08-2026 | Раздел IV написан: чтения, разборы и переводы к 7 занятиям — все задания извлечены из уроков 3, 7, 9, 10, 19, 22, 29–30 самой книги Апте, с § каждого | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел IV методички. Санскритские предложения — текст Апте 1885 года (общественное
 достояние) по [Apte-unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/Apte-unicode.mdx);

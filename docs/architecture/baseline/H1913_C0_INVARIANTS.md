@@ -9,7 +9,7 @@ than `frozen_at_commit` means an invariant moved and C3 must not proceed until
 the drift is adjudicated. Determinism verified in this pass: two consecutive
 runs produced byte-identical JSON.
 
-Executed under the [H1913 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
+Executed under the [H1913 handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
 (Slice C of the [implementation sequence](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/IMPLEMENTATION_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION.md))
 by Fable 5 (`claude-fable-5`) on human override of the Codex model lock.
 

@@ -40,6 +40,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -95,6 +96,39 @@ DEFAULT_REJECT = "❌ Отклонить"
 
 # Relative path the screening block already names as the sheet's evidence source.
 SPEC_EVIDENCE_TEMPLATE = "review/specs/%s.json"
+
+
+# V13 identity gate (H2854). The SanGram registry keys that can appear in a
+# visa sheet's prose ARE the identities of the objects under visa: the
+# SG-MO-### module/article slots, the SG-WF-### workframe slots, the MO###-##
+# card ids and the C# charter-contract refs. Same shape as the Uprava
+# doc-judgment gate (h4303): every match is labelled with itself, and the
+# label-occurs-in-question check then verifies the cited id is visible plain
+# text rather than living only in markup a reviewer never reads.
+SANGRAM_ID_PATTERNS = (
+    r"\bMO\d{3}-\d{2}\b",   # card ids (chip tokens; a bare prose citation is the risk)
+    r"\bSG-MO-\d{3}\b",     # SanGram module slots
+    r"\bSG-WF-\d{3}\b",     # SanGram workframe slots
+    r"\bC\d\b",             # charter contracts (C2 TOC network, C6 program, ...)
+)
+
+_TAG_STRIP = re.compile(r"<[^>]+>")
+
+
+def build_identity_gate(spec):
+    """V13 migration closed: declare the id families, self-labelled per h4303.
+
+    The registry key is the identity (a visa card cites the slot it adjudicates),
+    so each match maps to itself; the emitter's label-occurs-in-question check
+    then verifies the token survives tag-stripping as visible text.
+    """
+    labels = {}
+    for raw in spec["items"]:
+        text = _TAG_STRIP.sub(" ", raw.get("question") or "")
+        for pat in SANGRAM_ID_PATTERNS:
+            for m in re.finditer(pat, text):
+                labels.setdefault(m.group(0), m.group(0))
+    return {"patterns": list(SANGRAM_ID_PATTERNS), "labels": labels}
 
 
 def build_items(spec):
@@ -162,6 +196,9 @@ def build_config(spec):
         "show_ids": True,
         "note_min_height_px": 88,
         "save_as": SAVE_AS_TEMPLATE % sheet_id,
+        # V13 (H2854): the migration ramp is closed for this generator -
+        # csl-pyutil 1.0.0 would hard-fail without it (see SANGRAM_ID_PATTERNS).
+        "identity_gate": build_identity_gate(spec),
         # V9: domain file extensions are not SLP1 leaks (H2355 residual).
         "preflight": {"allow_slp1_tokens": allow},
         # U6 (H2847): Russian-only reviewer chrome. save_banner overridden

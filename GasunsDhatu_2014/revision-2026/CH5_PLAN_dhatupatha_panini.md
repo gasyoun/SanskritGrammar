@@ -3,7 +3,7 @@
 _Created: 16-07-2026 · Last updated: 16-07-2026_
 
 План второй главы Части II (новая проза из данных 2026 г.).
-[H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md),
+[H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`). Опирается на
 [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md)
 (аудит C10/L1, отзыв С. А. Крылова) и инструментарий H413/H414.

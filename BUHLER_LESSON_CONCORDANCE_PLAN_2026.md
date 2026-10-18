@@ -4,7 +4,7 @@ _Created: 01-10-2026 · Last updated: 03-10-2026_
 
 **Задача (MG, 01-10-2026):** связать уроки [Бюлер-1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode/) поурочно, 1 урок за раз, со всеми остальными источниками сайта; сделать конкорданс.
 
-**Провенанс:** план собран OxAlpha (`opencode/z-ai/glm-5.3-flash`) 01-10-2026 по `/grillme` (Phase 0 homework по эзтейту; карточки раунда 1 D1–D4 проголосованы MG в сессии 01-10-2026, D5–D16 приняты командой «go» — окно вето до batch-минта, см. § «Лист решений»). Хендофф пилота: [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
+**Провенанс:** план собран OxAlpha (`opencode/z-ai/glm-5.3-flash`) 01-10-2026 по `/grillme` (Phase 0 homework по эзтейту; карточки раунда 1 D1–D4 проголосованы MG в сессии 01-10-2026, D5–D16 приняты командой «go» — окно вето до batch-минта, см. § «Лист решений»). Хендофф пилота: [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md).
 
 ## Prior art — что уже стоит (не дублируем, индексируем)
 
@@ -32,7 +32,7 @@ _Created: 01-10-2026 · Last updated: 03-10-2026_
 | D6 ✅ «go» | Формат | TSV `typed_link_buhler_lessons.tsv`, 10 колонок как в thematic; лемма/exception-заметки — в topic sidecar, TSV остаётся lint-чистым | YAML на урок (48 файлов) или SQLite — вне lint-контура |
 | D7 ✅ «go» | Где живёт | Новый каталог `LessonConcordance/` рядом с `SubjectConcordance/` (README + generated catalog.mdx + TSV) | Внутри `Concordance/` — студенты вместе, но смешение жанров; внутри BuhlerLeitfaden — кросс-источниковый продукт заперт в источнике |
 | D8 ✅ «go» | Локус урока | Заголовки `# УРОК N.` в [Buhler_Unicode.mdx](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/Buhler_Unicode.mdx); кривые делимитеры нормализует парсер | Вставка явных якорей трогает текст Лихушиной; только номер — нет цитируемого локуса |
-| D9 ✅ «go» | Транспорт | Пилот-хендофф [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md) → ревью формата → `--batch`-минт 45 → дренаж | 48 хендоффов сразу — spec-чёрн × 45 при переделке; один ledger-хендофф — риск 30-мин потолка автономии |
+| D9 ✅ «go» | Транспорт | Пилот-хендофф [H5595](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5595-OxAlpha_SanskritGrammar_buhler-lesson-concordance-pilot_01.10.26.md) → ревью формата → `--batch`-минт 45 → дренаж | 48 хендоффов сразу — spec-чёрн × 45 при переделке; один ledger-хендофф — риск 30-мин потолка автономии |
 | D10 ✅ «go» | Пилот | Урок I (глаголы I класса + sandhi: максимум связей, reuse-кластеры и corpus_layer уже под ним) | XVIII (плотный corpus_layer) или XX–XXIV (зона Уитни-DISAGREE) |
 | D11 ✅ «go» | Курация | Посев кандидатов из регистров + агент-куратор за проход, `match_method=curated`, confidence градуированный 0.7–0.97 с evidence | Чисто computed — шум; чисто руками MG — не масштабируется на 48 |
 | D12 ✅ «go» | QA урока | `typed_link_lint` 0-error + спот-чек DeepSeek-верификатором (пре-авторизован MG 01-10-2026) + deploy same pass | QA в конце — систематическая ошибка × 48 |

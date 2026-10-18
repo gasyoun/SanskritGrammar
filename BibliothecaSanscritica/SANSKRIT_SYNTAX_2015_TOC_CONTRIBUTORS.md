@@ -2,7 +2,7 @@
 
 _Created: 26-09-2026 · Last updated: 26-09-2026_
 
-**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/sktsyntoc.html`, `pubdesc/sktsyncontributors.html`, `pubdesc/sktsyndesc.html` (fetched 26-09-2026)
+**Handoff:** [H5510](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5510-OxAlpha_SanskritLexicography_sanskritlibrary-publications-census_26.09.26.md) · **Source:** sanskritlibrary.org `pubdesc/sktsyntoc.html`, `pubdesc/sktsyncontributors.html`, `pubdesc/sktsyndesc.html` (fetched 26-09-2026)
 
 Peter M. Scharf (ed.), *Sanskrit Syntax: Selected papers presented at the seminar on Sanskrit syntax and discourse structures, 13–15 June 2013, Université Paris Diderot, with an updated and revised bibliography by Hans Henrich Hock*. 2015. Lulu hardcover $100.00; India orders via Google form (`CB3dAbTMwY3T82eLA`).
 

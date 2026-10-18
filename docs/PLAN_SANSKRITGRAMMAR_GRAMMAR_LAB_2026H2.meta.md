@@ -27,10 +27,10 @@ plan.
 
 | Rank | Improvement | Why | Status |
 |---:|---|---|---|
-| 1 | Build and validate the 25–40-topic evidence graph | Establishes the product's scholarly/data contract | queued — [H2492 (Grok 4.5) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md) |
-| 2 | Prove multilingual hybrid retrieval in Systema | Semantic search is the largest technical spike | queued — [H2493 (Grok 4.5) — Grammar Lab G2: Systema import, explorer, and offline hybrid search](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2493-Grok_Systema-Sanscriticum_grammar-lab-g2-systema-search-ui_09.08.26.md) |
-| 3 | Close the risk-tiered exercise/SRS loop | Converts reference use into sustained learning | queued — [H2494 (Grok 4.5) — Grammar Lab G3: risk-tiered drills, FSRS, mastery, and recommendations](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2494-Grok_Systema-Sanscriticum_grammar-lab-g3-learning-loop_09.08.26.md) |
-| 4 | Prove hybrid entitlement and pilot measurement | Converts the tool into an evidence-bearing paid service | queued — [H2495 (Grok 4.5) — Grammar Lab G4: hybrid entitlement, sandbox matrix, and learner pilot](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2495-Grok_Systema-Sanscriticum_grammar-lab-g4-entitlement-pilot_09.08.26.md) |
+| 1 | Build and validate the 25–40-topic evidence graph | Establishes the product's scholarly/data contract | queued — [H2492 (Grok 4.5) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md) |
+| 2 | Prove multilingual hybrid retrieval in Systema | Semantic search is the largest technical spike | queued — [H2493 (Grok 4.5) — Grammar Lab G2: Systema import, explorer, and offline hybrid search](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2493-Grok_Systema-Sanscriticum_grammar-lab-g2-systema-search-ui_09.08.26.md) |
+| 3 | Close the risk-tiered exercise/SRS loop | Converts reference use into sustained learning | queued — [H2494 (Grok 4.5) — Grammar Lab G3: risk-tiered drills, FSRS, mastery, and recommendations](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2494-Grok_Systema-Sanscriticum_grammar-lab-g3-learning-loop_09.08.26.md) |
+| 4 | Prove hybrid entitlement and pilot measurement | Converts the tool into an evidence-bearing paid service | queued — [H2495 (Grok 4.5) — Grammar Lab G4: hybrid entitlement, sandbox matrix, and learner pilot](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2495-Grok_Systema-Sanscriticum_grammar-lab-g4-entitlement-pilot_09.08.26.md) |
 | 5 | Add Sandhi as a later domain | High learner value, but its required Emeneau source is unavailable | parked until M.G. supplies Emeneau |
 
 ## Known limitations
