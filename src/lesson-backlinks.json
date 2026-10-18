@@ -188,6 +188,10 @@
       {
         "label": "урок VII — конкорданс",
         "spot": "УРОК VII"
+      },
+      {
+        "label": "урок X — конкорданс",
+        "spot": "УРОК X"
       }
     ],
     "ocherk": [
@@ -934,6 +938,14 @@
       {
         "label": "урок VII — t-sandhi",
         "spot": "Sandhi конечного t: → d перед гласными и звонкими (meghād at"
+      },
+      {
+        "label": "урок X — passive",
+        "spot": "Страдательный залог: суффикс ya присоединяется к корню, личн"
+      },
+      {
+        "label": "урок X — passive-exceptions",
+        "spot": "Морфонология корня перед ya: i/u→ī/ū (jīyate, stūyate), ṛ→ri"
       }
     ],
     "kochergina": [
@@ -1556,6 +1568,18 @@
       {
         "label": "урок VII — t-sandhi",
         "spot": "Sandhi конечного t: → d перед гласными и звонкими (meghād at"
+      },
+      {
+        "label": "урок X — passive",
+        "spot": "Страдательный залог: суффикс ya присоединяется к корню, личн"
+      },
+      {
+        "label": "урок X — passive-exceptions",
+        "spot": "Морфонология корня перед ya: i/u→ī/ū (jīyate, stūyate), ṛ→ri"
+      },
+      {
+        "label": "урок X — passive-syntax",
+        "spot": "Пассивная конструкция: agent в Instr. («действующее лицо сто"
       }
     ],
     "knauer": [
@@ -2030,6 +2054,10 @@
       {
         "label": "урок VII — t-sandhi",
         "spot": "Sandhi конечного t: → d перед гласными и звонкими (meghād at"
+      },
+      {
+        "label": "урок X — passive",
+        "spot": "Страдательный залог: суффикс ya присоединяется к корню, личн"
       }
     ],
     "sangram-conjugation-overview": [
@@ -2230,6 +2258,10 @@
       {
         "label": "урок VII — lesson-roots",
         "spot": "Лемма-слой: 11 глаголов урока (10 корней X класса + ā-nī I к"
+      },
+      {
+        "label": "урок X — lesson-roots",
+        "spot": "Лемма-слой: 20 глаголов урока, морфонологическая запись; пас"
       }
     ],
     "sangram-thematic-present": [
@@ -2438,6 +2470,14 @@
       {
         "label": "урок XVIII — causative-passive-syntax",
         "spot": "Каузатив-пассив (ya, суффикс aya отбрасывается: jñāpyate, pā"
+      },
+      {
+        "label": "урок X — passive",
+        "spot": "Страдательный залог: суффикс ya присоединяется к корню, личн"
+      },
+      {
+        "label": "урок X — passive-syntax",
+        "spot": "Пассивная конструкция: agent в Instr. («действующее лицо сто"
       }
     ],
     "sangram-pronouns": [
