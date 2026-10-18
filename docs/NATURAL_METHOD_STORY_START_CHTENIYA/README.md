@@ -9,7 +9,7 @@ _Created: 01-08-2026 · Last updated: 26-08-2026_
 
 Parent plan: [PLAN_AKRO_START_CHTENIYA_2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/PLAN_AKRO_START_CHTENIYA_2026.md)
 · architecture: [ARCHITECTURE_AKRO_START_CHTENIYA_2026.md](https://github.com/gasyoun/Uprava/blob/main/docs/ARCHITECTURE_AKRO_START_CHTENIYA_2026.md)
-· handoff: [H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md)
+· handoff: [H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md)
 · classroom map: [CURRICULUM_START_CHTENIYA_W1_W5.md](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/CURRICULUM_START_CHTENIYA_W1_W5.md).
 
 ## What this is
@@ -94,7 +94,7 @@ export contract in
 
 Per the handoff, drafting **stops after these two passes per chapter** — further polish belongs to
 the human editorial visa, not to more agent passes. Chapters 4–5 were drafted under
-[H3493](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3493-Fable_SanskritGrammar_natural-method-story-chapters-4-5_25.08.26.md)
+[H3493](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3493-Fable_SanskritGrammar_natural-method-story-chapters-4-5_25.08.26.md)
 (Fable 5 `claude-fable-5`, 26-08-2026); mechanical budget/ID check:
 [tools/story_chapter_budget_check.py](https://github.com/gasyoun/SanskritGrammar/blob/main/tools/story_chapter_budget_check.py).
 
@@ -108,7 +108,7 @@ the human editorial visa, not to more agent passes. Chapters 4–5 were drafted 
 ## Provenance
 
 Drafted by Fable 5 (`claude-fable-5`) executing
-[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md)
+[H2113](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2113-Fable_SanskritGrammar_start-chteniya-natural-method-story_01.08.26.md)
 on 01-08-2026, from IMPLEMENTATION step 1.6; vocabulary bands from
 [kosha `data/frequency/vocab_curriculum.tsv`](https://github.com/gasyoun/kosha/blob/main/data/frequency/vocab_curriculum.tsv)
 (lessons 1–3 = top-150 corpus lemmas).

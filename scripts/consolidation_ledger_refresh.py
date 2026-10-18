@@ -17,6 +17,13 @@ ledger untouched (defensive only now that review/ is committed — this branch
 still protects a future re-gitignore or a shallow/sparse checkout that omits
 review/, never silently downgrading to "unknown" in that case).
 
+The out-of-baseline candidate gate is scoped to `freeze.active` (C5/C6 freeze
+LIFT, MG ruling 05-10-2026, PR #1015): while the freeze is active a live
+candidate outside the frozen 35 is a violation; once lifted, new candidates
+are permitted production again and each slot's publication (candidate ->
+published) stays gated by the standing per-article MG visa — the visa route
+the lift ruling itself names.
+
 The frozen 26-ID baseline itself is a LITERAL, HARDCODED list (FROZEN_BASELINE
 below) — it is fixed at the moment the freeze was ruled and must never be
 recomputed from the live candidate census, precisely because the live census
@@ -58,7 +65,8 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-LEDGER_PATH = ROOT / "sangram" / "editorial" / "data" / "consolidation_ledger.json"
+COMMITTED_LEDGER_PATH = ROOT / "sangram" / "editorial" / "data" / "consolidation_ledger.json"
+LEDGER_PATH = COMMITTED_LEDGER_PATH  # write target; tests monkeypatch this symbol
 SCHEMA_PATH = ROOT / "sangram" / "editorial" / "data" / "consolidation_ledger.schema.json"
 DCS_LEDGER_PATH = ROOT / "DCS_DERIVED_NUMBERS_LEDGER_2026.md"
 ARTICLES_DIR = ROOT / "sangram" / "articles"
@@ -153,13 +161,27 @@ def toc_short_code(toc_ref: str) -> str:
     return f"{domain}{int(num):02d}"
 
 
-def load_prior_ledger() -> dict | None:
-    if not LEDGER_PATH.exists():
+def _read_ledger_at(path: Path) -> dict | None:
+    if not path.exists():
         return None
     try:
-        return json.loads(LEDGER_PATH.read_text(encoding="utf-8"))
+        return json.loads(path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return None
+
+
+def load_prior_ledger() -> dict | None:
+    prior = _read_ledger_at(LEDGER_PATH)
+    if prior is not None:
+        return prior
+    # LEDGER_PATH may be redirected to a scratch target (LF-determinism test,
+    # sandbox writers) that has no prior ledger yet. The freeze state is a
+    # RULED fact recorded in the committed ledger (active=false since the
+    # 05-10-2026 lift, PR #1015): falling back to it before the fail-closed
+    # default keeps a redirected writer from silently resurrecting the freeze
+    # the ruling lifted. Only when the committed ledger is itself missing
+    # (fresh/sparse checkout) does the fail-closed active=True default apply.
+    return _read_ledger_at(COMMITTED_LEDGER_PATH)
 
 
 def prior_row_by_toc(prior: dict | None, toc_ref: str) -> dict | None:
@@ -324,7 +346,13 @@ def compute_validator_evidence(slug: str, today: str) -> dict:
         serialized = p.read_text(encoding="utf-8")
         manifest = json.loads(serialized)
         errors, _warnings = article_validate.validate(manifest, serialized)
-    except Exception:
+    except (json.JSONDecodeError, OSError, AttributeError):
+        # Deliberate fail-open contract, narrowed H6163 (bughunt F3, 05-10-2026):
+        # only the EXPECTED OPERATIONAL failure classes — unreadable/corrupt
+        # manifest text, missing/malformed file resource, schema-shape surprise —
+        # downgrade to "unknown" telemetry. Programming errors (TypeError,
+        # NameError, KeyError, …) now propagate so a genuinely broken validator
+        # surfaces instead of masking as unknown telemetry indefinitely.
         return {"article_validate": "unknown", "checked_at": today}
     return {"article_validate": "pass" if not errors else "fail", "checked_at": today}
 
@@ -336,6 +364,8 @@ def build_ledger(today: str, build_status: str) -> dict:
     prior = load_prior_ledger()
     dcs_by_slug = parse_dcs_ledger()
     local_votes = parse_local_visa_sheets()
+    prior_freeze = (prior or {}).get("freeze", {})
+    freeze_active = bool(prior_freeze.get("active", True))
 
     # -- baseline-integrity gate ------------------------------------------
     live_candidates = {
@@ -350,13 +380,21 @@ def build_ledger(today: str, build_status: str) -> dict:
     if missing:
         raise SystemExit(f"BASELINE INTEGRITY: frozen-baseline ID(s) with no manifest on disk: {missing}")
     # A frozen-baseline slug is allowed to have since flipped to 'published'
-    # (that IS a valid disposition path — H1257 et al.) so we do NOT require
-    # it to still be a live candidate. We DO require every *current* live
-    # candidate to be a member of the frozen baseline: a live candidate slug
-    # outside FROZEN_BASELINE is a freeze violation (a 27th+ topic slipped
-    # through under the same rules a pre-freeze candidate would have used).
+    # (that IS a valid disposition path — H1257 et al.) so we DO NOT require
+    # it to still be a live candidate. While the freeze is ACTIVE we also
+    # require every *current* live candidate to be a member of the frozen
+    # baseline: a live candidate slug outside FROZEN_BASELINE is a freeze
+    # violation (a 27th+ topic slipped through under the same rules a
+    # pre-freeze candidate would have used).
+    # Since the C5/C6 freeze LIFT (MG ruling 05-10-2026, PR #1015) the gate
+    # is scoped to freeze.active, mirroring article_validate.load_freeze_baseline:
+    # with a ruled lift, NEW candidate manifests outside the frozen 35 are
+    # permitted production again — each slot's PUBLICATION (candidate ->
+    # published) stays gated by the standing per-article MG visa, which is the
+    # visa route the lift ruling itself names. The ledger keeps tracking only
+    # the frozen baseline; post-lift candidates are not ledger rows.
     unknown = sorted(live_candidates - set(frozen_slugs))
-    if unknown:
+    if unknown and freeze_active:
         raise SystemExit(
             "BASELINE INTEGRITY / FREEZE VIOLATION: candidate article manifest(s) not in the "
             f"frozen 18-07-2026 baseline: {unknown} — the consolidation freeze (H1260) forbids "
@@ -386,7 +424,6 @@ def build_ledger(today: str, build_status: str) -> dict:
         for t, s in PUBLISHED_AT_FREEZE
     ]
 
-    prior_freeze = (prior or {}).get("freeze", {})
     ledger = {
         "$schema": "./consolidation_ledger.schema.json",
         "contract_version": CONTRACT_VERSION,
@@ -441,6 +478,50 @@ def status_totals(ledger: dict) -> dict:
     return totals
 
 
+# H5691 — the daily date trap. `--check` used to rebuild with the WALL-CLOCK
+# date, so a calendar rollover alone turned the gate red: a PR merged after
+# midnight (case #1058 at 00:10) was green on its own run and red on `main`
+# once the date advanced, and the fix (#1059) was a pure date-stamp refresh.
+# The gate's actual contract — "the committed ledger reproduces from the repo
+# state" — is date-relative, and tests/test_consolidation_ledger.py already
+# rebuilds against the COMMITTED stamp, not the wall clock. `--check` now does
+# the same; staleness (a dead nightly refresh) is policed explicitly by a
+# window instead of implicitly by the midnight.
+MAX_LEDGER_AGE_DAYS = 7
+
+
+def today_iso() -> str:
+    """Wall-clock date; a function so tests can move the calendar without sleep."""
+    import datetime
+    return datetime.date.today().isoformat()
+
+
+def committed_stamp(current_text: str, wall_clock_iso: str,
+                    max_age_days: int = MAX_LEDGER_AGE_DAYS) -> tuple[str | None, str | None]:
+    """Return (stamp, error). `stamp` is the ledger's own `last_refresh.date`.
+
+    The gate rebuilds against this stamp, so content drift still fails while a
+    midnight boundary alone never does. A ledger older than `max_age_days` is a
+    real failure: the nightly refresh job (consolidation-ledger-nightly.yml) is
+    the machine that keeps the stamp current, and its death must surface.
+    """
+    import datetime
+    try:
+        ledger = json.loads(current_text)
+    except (ValueError, TypeError):
+        return None, "committed ledger is not valid JSON"
+    stamp = str((ledger.get("last_refresh") or {}).get("date") or "")
+    try:
+        stamp_day = datetime.date.fromisoformat(stamp)
+    except ValueError:
+        return None, f"committed ledger has no parseable last_refresh.date ({stamp!r})"
+    age_days = (datetime.date.fromisoformat(wall_clock_iso) - stamp_day).days
+    if age_days > max_age_days:
+        return None, (f"ledger is stale ({age_days} days old, window {max_age_days}) — "
+                      "run: python scripts/consolidation_ledger_refresh.py")
+    return stamp, None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--check", action="store_true", help="refresh in-memory, diff, exit 1 on drift, never write")
@@ -453,8 +534,16 @@ def main() -> int:
     if args.self_test:
         return self_test()
 
-    import datetime
-    today = args.today or datetime.date.today().isoformat()
+    today = args.today or today_iso()
+
+    # H5691: in check mode rebuild against the ledger's OWN stamp (see
+    # MAX_LEDGER_AGE_DAYS above). An explicit --today still wins.
+    if args.check and args.today is None and LEDGER_PATH.exists():
+        stamp, error = committed_stamp(LEDGER_PATH.read_text(encoding="utf-8"), today_iso())
+        if error is not None:
+            print(f"FAIL  {error}")
+            return 1
+        today = stamp
     prior = load_prior_ledger()
     build_status = args.build_status or (prior or {}).get("last_refresh", {}).get("build_status", "unknown")
 
@@ -537,22 +626,48 @@ def self_test() -> int:
         failures.append(f"build_ledger raised on the real repo state: {e}")
 
     # 4. a synthetic unknown candidate must trip the freeze-violation gate
+    #    WHILE THE FREEZE IS ACTIVE, and must be permitted once the freeze is
+    #    LIFTED (MG ruling 05-10-2026, PR #1015: the gate is scoped to
+    #    freeze.active, mirroring article_validate.load_freeze_baseline).
     sentinel = ARTICLES_DIR / "self-test-sentinel-topic"
+    original = LEDGER_PATH.read_text(encoding="utf-8") if LEDGER_PATH.exists() else None
     try:
         sentinel.mkdir(exist_ok=True)
         (sentinel / "article.manifest.json").write_text(json.dumps({
             "article": {"id": "art:self-test-sentinel-topic", "revisions": []}
         }), encoding="utf-8")
+        # 4a. freeze ACTIVE: synthetic prior ledger with freeze.active=true —
+        #     the out-of-baseline candidate must trip the gate.
+        active_ledger = {"freeze": {"active": True}}
+        LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
+        LEDGER_PATH.write_text(
+            json.dumps(active_ledger, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8", newline="\n")
         try:
             build_ledger("2026-07-19", "unknown")
-            failures.append("a synthetic new candidate outside FROZEN_BASELINE did NOT trip the freeze gate")
+            failures.append("a synthetic new candidate outside FROZEN_BASELINE did NOT trip the active-freeze gate")
         except SystemExit:
             pass  # expected
+        # 4b. freeze LIFTED (active=false): the same candidate must NOT trip
+        #     the gate — post-lift production is permitted; publication stays
+        #     visa-gated (per-article MG visa), not freeze-gated.
+        lifted_ledger = {"freeze": {"active": False}}
+        LEDGER_PATH.write_text(
+            json.dumps(lifted_ledger, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8", newline="\n")
+        try:
+            build_ledger("2026-07-19", "unknown")
+        except SystemExit as e:
+            failures.append(f"lifted freeze (active=false) still rejected a new candidate: {e}")
     finally:
         if (sentinel / "article.manifest.json").exists():
             (sentinel / "article.manifest.json").unlink()
         if sentinel.exists():
             sentinel.rmdir()
+        if original is not None:
+            LEDGER_PATH.write_text(original, encoding="utf-8", newline="\n")
+        elif LEDGER_PATH.exists():
+            LEDGER_PATH.unlink()
 
     for f in failures:
         print(f"SELF-TEST FAIL: {f}")

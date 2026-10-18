@@ -1,6 +1,6 @@
 {
   "work": "Bühler, Руководство к элементарному курсу санскритского языка (Leitfaden), 1923",
-  "generated": "28-07-2026",
+  "generated": "13-10-2026",
   "synthesis": "FULL DRAIN (403 verified: 381 TRUE · 7 OVERSTATED · 8 FALSE · 7 UNTESTABLE · 24 M.G. footnotes). The full-book picture sharpens the 64-entry core's verdict on both axes. FACT AXIS: Bühler's own grammar survives almost untouched — the three OVERSTATED added by the drain are genuine but narrow (final-vṛddhi in causatives defeated by pṝ→pūrayati, HB-2318; the class-II u-root vṛddhi absolute defeated by ūrṇoti; the tatpuruṣa patha-universal leaking on its own exception clause via apatha) — while ALL EIGHT FALSE are misprint-class: sentences self-contradicted by the paradigm or example printed NEXT TO THEM («окончание āḥ» beside brahmahā; «impf. VII кл.» beside a thematic paradigm; kroṣṭṛ where kroṣṭu is required; «a» for «aṅ»; krudh in a t/p/s list; «гласный» for «согласный»; the viśvapā exception list against its own table; «sam давать» for san). The register thereby doubles as an errata sweep: eight print/translation corruptions of the 1923 Russian edition (or its 2008 digitization), each localized and transcribed into [`errata.yml`](errata.yml) (15-07-2026) — the claims register and the errata register converge exactly as the HB-60 precedent predicted. PEDAGOGY AXIS: 8 flags in 403 (5 MISLEADING, 2 FREQUENCY-HIDDEN, 1 ORDER-QUESTIONABLE) — the rare-before-common ordering and equal-billing habits of the core hold but do not multiply across the full book. The UNTESTABLE block (7) names its instruments: semantic tagging (middle-voice self-benefaction, intensive semantics), referent tagging (pluralis maiestatis), a treebank (gender-resolution agreement), comparative lemma-frequency joins, and compound-type tagging. The original 64-entry synthesis follows.\n\nOn the 64-claim verified core (of a 404-candidate full-book harvest; five entries additionally double-verified by the concurrent seed pass BU-1..BU-5), Bühler comes out of the two-axis check remarkably clean: 58 TRUE · 4 OVERSTATED · 1 FALSE · 1 UNTESTABLE. His signature virtue is *calibrated hedging*. Where Kochergina's failure mode was the absolute quantifier (\"всегда\", \"только\", \"по единому правилу\") over a known exception class, Bühler's hedges repeatedly land exactly on the variable zone and his absolutes on the categorical one: \"обыкновенно\" for the optional visarga assimilations (HB-4), \"почти все\" for a ten-member class with one exception handled in the same lesson (HB-50), \"иногда\" for a form the corpus puts at 0.95% (HB-22), \"очень редкая\" for one at 0.4% (HB-42), closed inventories given complete (HB-18, HB-36, HB-52) and non-exhaustive lists not claimed exhaustive (HB-11). The clearest head-to-head: the same corpus number — the seṭ future -iṣya at 56.8% of distinct forms — that graded Kochergina's \"по единому правилу -syá\" OVERSTATED (HK-4) grades Bühler's \"либо непосредственно, либо при посредстве i\" TRUE (HB-59). The fact is the same; the calibration differs.\n\nThree failure modes survive, all instructive. **(1) The Урок-I absolute.** The beginner-facing opening states that all ten tense/mood categories have both voices (HB-2) — contradicted by the book's own later lessons (root and siṣ-aorists \"исключительно P.\", the intensives each single-voice). Same overreach type as Kochergina's, but rarer: it is the opening simplification, not a recurring habit. **(2) Rare-before-common ordering.** Урок XLIV teaches the periphrastic future before the simple future against a 17:1 corpus frequency ratio (HB-58), and the -tavat active participle is billed \"также часто\" beside a passive twin 100× more frequent (HB-40). This is the paradigm-completeness tradition ordering by system rather than by text frequency — the same force behind Kochergina's frequency-blindness, a half-century earlier. **(3) The one stated frequency direction is flipped.** Bühler says the classical perfect is *rarer* than the imperfect (HB-57); DCS-2026 has the perfect 1.9× *more* frequent (90,001 vs ~46,695 tokens) — stratum-dependent (the aggregate is epic-heavy), so OVERSTATED rather than FALSE, and flagged per the D-B tie-break. The single FALSE (HB-60, the a-aorist \"спрягается как impf. VII кл.\" beside a thematic paradigm) and the ā+Acc government slip (HB-10) both smell of print/translation errata rather than grammatical doctrine — the claims register and the errata register meet there.\n\nRecommendation for the reading-site overlay: badge the six flagged entries and surface the thirteen M.G. frequency footnotes — Bühler states almost no numbers, and the corpus can now supply them (the ppp at 29.8% of all verbal tokens as the true center of the verb system, the optative as the second finite category at 17.6%, the -ya absolutive at 78.4% of the inventory). The cross-grammar layer is doing what D-A intended: with two registers live, presentation calibration — not factual accuracy — is where the grammars measurably differ.",
   "claims": [
     {
@@ -655,7 +655,7 @@
     },
     {
       "id": "HB-51",
-      "loc": "Урок XXXVII / mdx line 5295",
+      "loc": "Урок XXXVII / mdx line 5296",
       "claim_ru": "Корни с исходом на согласный спрягаются точно также, но во 2 лице sing. par. imp. имеют āna [āṇa]. Те, которые в середине содержат носовой, всегда его лишаются, напр. bandh... badhnāti",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -668,7 +668,7 @@
     },
     {
       "id": "HB-52",
-      "loc": "Урок XL / mdx line 5933",
+      "loc": "Урок XL / mdx line 5937",
       "claim_ru": "У корней rud II. P., śvas II Р., svap II. P., an II. Р. и jakṣ II. Р. перед окончаниями, начинающимися с согласного, вставляется i, за исключением 2 и 3 л. sing. impf. par., где является a или ī",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -681,7 +681,7 @@
     },
     {
       "id": "HB-53",
-      "loc": "Урок XLI / mdx line 6011",
+      "loc": "Урок XLI / mdx line 6015",
       "claim_ru": "гласные a, ā, i, ī, u, ū — представлены в удвоении только краткими, вместо ṛ и ṝ является i",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -694,7 +694,7 @@
     },
     {
       "id": "HB-54",
-      "loc": "Урок XLIII / mdx line 6391",
+      "loc": "Урок XLIII / mdx line 6395",
       "claim_ru": "Сильными формами являются ед. ч. Parasm.; остальные формы слабы.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -707,7 +707,7 @@
     },
     {
       "id": "HB-55",
-      "loc": "Урок XLIII / mdx line 6579",
+      "loc": "Урок XLIII / mdx line 6583",
       "claim_ru": "Корни с внутренним a, оканчивающиеся на согласный и начинающиеся с небного, язычного, зубного или губного беcпридыхательного, y, r, l, v, ś или s ... опускают слог удвоения в слабых формах и перед itha во 2 л. sing, par., и вместо гласного a имеют e",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -720,7 +720,7 @@
     },
     {
       "id": "HB-56",
-      "loc": "Урок XLIII / mdx line 6673",
+      "loc": "Урок XLIII / mdx line 6677",
       "claim_ru": "обязателен для всех односложных корней, начинающихся с i и u, когда они по положению долгие, с ī, ū, ṝ или двугласных, а также для некоторых двусложных корней, напр. cakās, всех корней X кл, всех каузативов и других производных форм корней, и отыменных глаголов",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -733,7 +733,7 @@
     },
     {
       "id": "HB-57",
-      "loc": "Урок XLIII / mdx line 6727",
+      "loc": "Урок XLIII / mdx line 6731",
       "claim_ru": "Перфект в классическом санскрите имеет то же значение, как и imperf. и только реже употребляется.",
       "kind": "statistic",
       "verdict_fact": "OVERSTATED",
@@ -746,7 +746,7 @@
     },
     {
       "id": "HB-58",
-      "loc": "Урок XLIV / mdx line 6735",
+      "loc": "Урок XLIV / mdx line 6739",
       "claim_ru": "Описательное будущее можно образовывать от всех корней. Оно состоит из: Им. п. sing. du. или pl. nominis actoris на tṛ ... в третьем лице глагольная форма опускается.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -759,7 +759,7 @@
     },
     {
       "id": "HB-59",
-      "loc": "Урок XLIV / mdx line 6757",
+      "loc": "Урок XLIV / mdx line 6761",
       "claim_ru": "Простое будущее время можно образовать от любого корня; оно образуется посредством суфф. sya [ṣya], присоединяемого к корню либо непосредственно, либо при посредстве соединительного гласного i или ī",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -772,7 +772,7 @@
     },
     {
       "id": "HB-60",
-      "loc": "Урок XLV / mdx line 6929",
+      "loc": "Урок XLV / mdx line 6933",
       "claim_ru": "Второй аорист образуется также как impf. VII кл., имеет P. и Ā.",
       "kind": "rule",
       "verdict_fact": "FALSE",
@@ -785,7 +785,7 @@
     },
     {
       "id": "HB-61",
-      "loc": "Урок XLV / mdx line 7007",
+      "loc": "Урок XLV / mdx line 7011",
       "claim_ru": "В классическом санскрите все аористы большей частью употребляются в качестве редких форм прошедшего времени, совершенно равноправно с perf. и imperf.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -798,7 +798,7 @@
     },
     {
       "id": "HB-62",
-      "loc": "Урок XLVIII / mdx line 7205",
+      "loc": "Урок XLVIII / mdx line 7209",
       "claim_ru": "Все корни всех десяти классов и каузативные глаголы могут образовывать дезидератив, выражающий желание совершить действие, путем удвоения корня и присоединения суффикса sa [ṣa].",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -811,7 +811,7 @@
     },
     {
       "id": "HB-63",
-      "loc": "Урок XLVIII / mdx line 7325",
+      "loc": "Урок XLVIII / mdx line 7329",
       "claim_ru": "Первый интенсив (исключительно P.) в настоящем вр. может спрягаться совсем как глагол Ш кл, или же перед окончаниями, начинающимися с согласного, вставляется ī. Второй (исключительно Ā.) спрягается как Ā. IV класса.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -3788,7 +3788,7 @@
     },
     {
       "id": "HB-292",
-      "loc": "Урок XXXVII / mdx line 5297",
+      "loc": "Урок XXXVII / mdx line 5298",
       "claim_ru": "Конечный гласный корней dhū..., pū..., lū..., и всех корней на ṝ сокращается перед признаком настоящего времени, напр. dhunāti, lunāti; stṝ..., stṛṇāti. — От grah образуется gṛhṇāti и jñā — jānāti",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3801,7 +3801,7 @@
     },
     {
       "id": "HB-293",
-      "loc": "Урок XXXVII / mdx line 5301",
+      "loc": "Урок XXXVII / mdx line 5302",
       "claim_ru": "Корни II класса не имеют никакого суффикса для образования основы настоящего времени, а присоединяют личные окончания непосредственно к корню. Начальные, внутренние и конечные, способные к guṇa гласные, в сильных формах изменяются в guṇa",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -3814,20 +3814,20 @@
     },
     {
       "id": "HB-294",
-      "loc": "Урок XXXVII / mdx line 5303",
+      "loc": "Урок XXXVII / mdx line 5304",
       "claim_ru": "Корни на ā, исключительно Parasmaipada: yā идти",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: the classical class II ā-roots (yā, vā, bhā, pā 'protect', snā, khyā, prā) are all parasmaipada in Whitney's and the Dhātupāṭha's lists",
       "ref": "Whitney 1889 (root class, ā-final roots)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "No middle present of a class II ā-root is in classical use; the middle-only ā-presents (mā, hā 'go') belong to class III and Bühler files them there (mdx 6123).",
+      "note": "No middle present of a class II ā-root is in classical use; the middle-only ā-presents (mā, hā 'go') belong to class III and Bühler files them there (mdx 6127).",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-295",
-      "loc": "Урок XXXVIII / mdx line 5515",
+      "loc": "Урок XXXVIII / mdx line 5517",
       "claim_ru": "Корень śī II Ā. всюду принимает guṇa (e перед согласн. и ay перед гласными); перед окончаниями 3 лиц. pl. ind., impf. и imper. вставляется r, напр. 3 л. ind. śete... śerate",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -3840,7 +3840,7 @@
     },
     {
       "id": "HB-296",
-      "loc": "Урок XXXVIII / mdx line 5517",
+      "loc": "Урок XXXVIII / mdx line 5519",
       "claim_ru": "Все корни на u в сильных формах перед согласными окончаниями имеют vṛddhi (au) вместо guṇa (o). В корнях tu Р. быть сильным, ru Р. кричать, stu Р. Ā. прославлять может являться и guṇa. Но в таком случае вставляется долгий ī",
       "kind": "universality",
       "verdict_fact": "OVERSTATED",
@@ -3853,7 +3853,7 @@
     },
     {
       "id": "HB-297",
-      "loc": "Урок XXXVIII / mdx line 5541",
+      "loc": "Урок XXXVIII / mdx line 5543",
       "claim_ru": "Корни на ū перед гласными (т. е. начинающимися с гласного) слабыми окончаниями имеют uv; brū P. Ā. говорить (исключительно основа настоящего времени) в сильных формах перед согласными окончаниями вставляет ī",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3866,7 +3866,7 @@
     },
     {
       "id": "HB-298",
-      "loc": "Урок XXXVIII / mdx line 5559",
+      "loc": "Урок XXXVIII / mdx line 5561",
       "claim_ru": "sū II. Ā. рождать в сильных формах не имеет guṇa, следовательно 1 л. imp. suvai",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -3879,7 +3879,7 @@
     },
     {
       "id": "HB-299",
-      "loc": "Урок XXXIX / mdx line 5647",
+      "loc": "Урок XXXIX / mdx line 5649",
       "claim_ru": "Корни на ṛ в 2 и З л. sing. impf. par. отбрасывают окончания; в слабых формах перед гласными окончаниями ṛ превращается в r; jāgṛ II. Р. просыпаться, принимает оконч. ati, atu, а в 3 л. pl. impf. par. — uḥ..., перед которым появляется guṇa",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3892,24 +3892,24 @@
     },
     {
       "id": "HB-300",
-      "loc": "Урок XXXIX / mdx line 5651",
+      "loc": "Урок XXXIX / mdx line 5654",
       "claim_ru": "В корнях на c и j эти конечные звуки перед окончаниями, начинающимися с t, th и s, превращаются в k, после которого ṣ заменяет s; перед dh звуки c и j превращаются в g",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: vakti, vakthaḥ, vakṣi; yuṅgdhi-type g before dh — the default (first-series) treatment of final palatals",
       "ref": "Whitney 1889 (internal sandhi of final c/j)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The second-series j-roots (mṛj-type going to ṣ/ḍ) are handled by Bühler as a separate rule at mdx 5751, so the scope here is the default series and the rule is exact within it.",
+      "note": "The second-series j-roots (mṛj-type going to ṣ/ḍ) are handled by Bühler as a separate rule at mdx 5754, so the scope here is the default series and the rule is exact within it.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-301",
-      "loc": "Урок XXXIX / mdx line 5667",
+      "loc": "Урок XXXIX / mdx line 5670",
       "claim_ru": "3 л. pl. ind. не существует, употребительно одно только ед. ч.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
-      "number": "systemic: vac is defective in the classical present — grammars supply no 3pl *vacanti, and Bühler's own paradigm (mdx 5663) prints a dash at that cell",
+      "number": "systemic: vac is defective in the classical present — grammars supply no 3pl *vacanti, and Bühler's own paradigm (mdx 5666) prints a dash at that cell",
       "ref": "Whitney 1889 (defective present of vac)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The categorical half (no 3pl) is the grammarians' standing statement. The usage half (only the singular is current) would need a per-root DCS join (missing instrument), but the direction matches Whitney's note that the present of vac is of restricted use.",
@@ -3918,7 +3918,7 @@
     },
     {
       "id": "HB-302",
-      "loc": "Урок XXXIX / mdx line 5669",
+      "loc": "Урок XXXIX / mdx line 5672",
       "claim_ru": "В корнях на d перед окончаниями с t, th и s, это d заменяется посредством t; 2 л. sing. impf. par. по желанию оканчивается на t или на висаргу (s), а З л. на t",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3931,7 +3931,7 @@
     },
     {
       "id": "HB-303",
-      "loc": "Урок XXXIX / mdx line 5701",
+      "loc": "Урок XXXIX / mdx line 5704",
       "claim_ru": "Indicat. может также быть: veda, vettha... viduḥ; a imperat. также vidāṃ karavāṇi",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -3944,7 +3944,7 @@
     },
     {
       "id": "HB-304",
-      "loc": "Урок XXXIX / mdx line 5751",
+      "loc": "Урок XXXIX / mdx line 5754",
       "claim_ru": "В корнях на ś, ṣ, kṣ и mṛj конечные звуки перед s (кот. в таком случае становится ṣ) превращаются в k, перед t и th (которые в таком случае становятся ṭ и ṭh) в ṣ, и перед dh (кот. становится ḍh) - в ḍ",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3957,20 +3957,20 @@
     },
     {
       "id": "HB-305",
-      "loc": "Урок XXXIX / mdx line 5783",
+      "loc": "Урок XXXIX / mdx line 5786",
       "claim_ru": "īś II. Ā., властвовать, имеет i перед окончаниями se, sva, dhve, dhvam",
       "kind": "rule",
       "verdict_fact": "TRUE",
       "number": "systemic: īśiṣe, īśiṣva, īśidhve are the standard forms; the union-vowel before the s- and dh-endings is the reference-grammar description of īś (and īḍ)",
       "ref": "Whitney 1889 (class II irregulars īś/īḍ with union-vowel i)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Matches the twin rule for īḍ at mdx 5857.",
+      "note": "Matches the twin rule for īḍ at mdx 5860.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-306",
-      "loc": "Урок XXXIX / mdx line 5785",
+      "loc": "Урок XXXIX / mdx line 5788",
       "claim_ru": "vaś II. Р. желать, в слабых формах является в виде uś",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -3983,7 +3983,7 @@
     },
     {
       "id": "HB-307",
-      "loc": "Урок XXXIX / mdx line 5787",
+      "loc": "Урок XXXIX / mdx line 5790",
       "claim_ru": "mṛj II. Р. в сильных формах всегда имеет vṛddhi, а в слабых формах с окончаниями, начинающимися с гласного, по желанию может иметь vṛddhi; 3 л. ind. mārṣṭi, mṛṣṭaḥ, mṛjanti или mārjanti",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -3996,20 +3996,20 @@
     },
     {
       "id": "HB-308",
-      "loc": "Урок XL / mdx line 5857",
+      "loc": "Урок XL / mdx line 5860",
       "claim_ru": "К корню īḍ II. Ā., почитать, перед se, sva, dhve, dhvam (imper.) приставляется i; ḍ в соединении с t и th превращается в ṭṭ и ṭṭh, а с dhvam в impf. — в ḍḍhvam",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: īḍiṣe, īḍiṣva, īṭṭe, īḍḍhve-type combinations are the standard description of īḍ; ḍ+t/th regularly gives the lingual cluster ṭṭ/ṭṭh",
       "ref": "Whitney 1889 (class II irregulars īś/īḍ; ḍ+t combinations)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Parallel to īś (mdx 5783) with the added lingual-cluster sandhi; all details match the reference grammars.",
+      "note": "Parallel to īś (mdx 5786) with the added lingual-cluster sandhi; all details match the reference grammars.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-309",
-      "loc": "Урок XL / mdx line 5859",
+      "loc": "Урок XL / mdx line 5863",
       "claim_ru": "Корни на s в 2 л. impf. par. оканчиваются на t или на висаргу, а в 3 л. на t; перед dh s выпадает",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4022,20 +4022,20 @@
     },
     {
       "id": "HB-310",
-      "loc": "Урок XL / mdx line 5863",
+      "loc": "Урок XL / mdx line 5867",
       "claim_ru": "cakās П. Р., сиять, в 3 л. pl. ind. получает окончание ati, 3 л. pl. imp. atu, а в 3 л. pl. impf. uḥ (s)",
       "kind": "rule",
       "verdict_fact": "TRUE",
       "number": "systemic: cakās belongs to the reduplication-shaped class II roots (jāgṛ, daridrā, cakās, śās, jakṣ) that take the n-less 3pl endings: cakāsati, cakāsatu, acakāsuḥ",
       "ref": "Whitney 1889 (jāgṛ/cakās group, n-less 3pl endings)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Same ending set as jāgṛ (mdx 5647) and śās (mdx 5865); internally consistent and grammar-exact.",
+      "note": "Same ending set as jāgṛ (mdx 5649) and śās (mdx 5869); internally consistent and grammar-exact.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-311",
-      "loc": "Урок XL / mdx line 5865",
+      "loc": "Урок XL / mdx line 5869",
       "claim_ru": "śās II. Р., повелевать, наказывать, имеет в слабых формах śiṣ и образует 3 л. pl. śāsati, в 3 л. pl. impf. aśāsuḥ, 3 л. pl. imperat. śāsatu",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4048,7 +4048,7 @@
     },
     {
       "id": "HB-312",
-      "loc": "Урок XL / mdx line 5867",
+      "loc": "Урок XL / mdx line 5871",
       "claim_ru": "Корень as II. Р. Ā., быть, в слабых формах отбрасывает начальный гласный, за исключением 2 л. sing, imperat. par., где имеется форма edhi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4061,20 +4061,20 @@
     },
     {
       "id": "HB-313",
-      "loc": "Урок XL / mdx line 5919",
+      "loc": "Урок XL / mdx line 5923",
       "claim_ru": "У корней на h конечный звук сливается с t, th и dh в ḍh и удлиняются предшествующие a, i, u; перед s конечный этот звук является в виде k, а во 2 и 3 л. sing. impf. par. в виде ṭ",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: līḍha, rūḍha, gūḍha (ḍh with compensatory lengthening), lekṣi (k before s), aleṭ (final ṭ) — the standard lih-type treatment of final h",
       "ref": "Whitney 1889 (root-final h, lih-type)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The duh/dih type (gdh/kṣ with aspiration throwback) and nah (dh-type) are exceptions the book itself carves out immediately after (mdx 5927), so the rule is exact within its stated scope.",
+      "note": "The duh/dih type (gdh/kṣ with aspiration throwback) and nah (dh-type) are exceptions the book itself carves out immediately after (mdx 5931), so the rule is exact within its stated scope.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-314",
-      "loc": "Урок XL / mdx line 5927",
+      "loc": "Урок XL / mdx line 5931",
       "claim_ru": "У корней duh II. Р., доить, и dih II. Р. Ā., мазать, конечный звук перед согласными, за исключением m, y и v, изменяется в gh, сливающийся с последующими t, th и dh в gdh, а с последующим s в kṣ... начальный корневой d превращается в dh",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4087,7 +4087,7 @@
     },
     {
       "id": "HB-315",
-      "loc": "Урок XLI / mdx line 6003",
+      "loc": "Урок XLI / mdx line 6007",
       "claim_ru": "Глаголы III кл. присоединяют личные окончания прямо к корню, причем в корне происходит удвоение",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4100,7 +4100,7 @@
     },
     {
       "id": "HB-316",
-      "loc": "Урок XLI / mdx line 6005",
+      "loc": "Урок XLI / mdx line 6009",
       "claim_ru": "согласные придыхательные заменяются соответственными согласными без придыхания, напр. вместо th — t, вм. dh — d",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4113,7 +4113,7 @@
     },
     {
       "id": "HB-317",
-      "loc": "Урок XLI / mdx line 6007",
+      "loc": "Урок XLI / mdx line 6011",
       "claim_ru": "вместо гортанных являются соответственные небные, с соблюдением правила а, т. е. вместо k и kh — c, вм. g и gh — j",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4126,7 +4126,7 @@
     },
     {
       "id": "HB-318",
-      "loc": "Урок XLI / mdx line 6009",
+      "loc": "Урок XLI / mdx line 6013",
       "claim_ru": "если корень начинается на группу согласных, то в удвоении представлен только первый, за исключением корней, начинающихся с sk, skh, st, sth, sp, sph. В этих случаях удвоению подлежит второй согласный",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4139,7 +4139,7 @@
     },
     {
       "id": "HB-319",
-      "loc": "Урок XLI / mdx line 6013",
+      "loc": "Урок XLI / mdx line 6017",
       "claim_ru": "В сильных формах все способные к подъему гласные изменяются в guṇa, а в 3 л. pl. impf. parasm. конечные допускающие гунацию гласные (т. е. краткие гласные на конце корня) имеют тот же подъем",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4152,7 +4152,7 @@
     },
     {
       "id": "HB-320",
-      "loc": "Урок XLI / mdx line 6067",
+      "loc": "Урок XLI / mdx line 6071",
       "claim_ru": "dhā III. P. Ā. в слабых формах отбрасывает ā и в 2 л. sing. imp. образует dhehi.",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4165,7 +4165,7 @@
     },
     {
       "id": "HB-321",
-      "loc": "Урок XLI / mdx line 6121",
+      "loc": "Урок XLI / mdx line 6125",
       "claim_ru": "hā III. Р. покидать, оставлять, jahāti, отбрасывает ā в pot. и перед гласными слабых окончаний ... 2 л. sing. imp. jahāhi, jahīhi или jahihi; в остальных слабых формах перед согласными окончаний являются jahī или jahi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4178,7 +4178,7 @@
     },
     {
       "id": "HB-322",
-      "loc": "Урок XLI / mdx line 6123",
+      "loc": "Урок XLI / mdx line 6127",
       "claim_ru": "mā III. Ā. мерить и hā III. Ā. идти, перед согласными окончаний имеют формы mimī и jihī, и перед гласными mim и jih",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4191,7 +4191,7 @@
     },
     {
       "id": "HB-323",
-      "loc": "Урок XLI / mdx line 6125",
+      "loc": "Урок XLI / mdx line 6129",
       "claim_ru": "hu Р. Ā. жертвовать, сильная основа перед согласными juho, перед гласными juhav, слабая перед согласными juhu, перед гласными juhv, 2 л. sing. imp. par. juhudhi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4204,7 +4204,7 @@
     },
     {
       "id": "HB-324",
-      "loc": "Урок XLI / mdx line 6127",
+      "loc": "Урок XLI / mdx line 6131",
       "claim_ru": "bhī III. P. бояться ... слабая перед согласными bibhī или bibhi, перед гласными bibhy",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4217,7 +4217,7 @@
     },
     {
       "id": "HB-325",
-      "loc": "Урок XLI / mdx line 6133",
+      "loc": "Урок XLI / mdx line 6137",
       "claim_ru": "nij III. P. мыть, vij III. P. пугать и viṣ III. P. Ā. проникать, в слоге удвоения имеют guṇa",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4230,7 +4230,7 @@
     },
     {
       "id": "HB-326",
-      "loc": "Урок XLII / mdx line 6183",
+      "loc": "Урок XLII / mdx line 6187",
       "claim_ru": "Глаголы VII. кл. перед конечными согласными в сильных формах вставляют na [ṇa], в слабых n; последний ассимилируется следующему за ним согласному или, перед шипящими и h, превращается в anusvāra. Если корень уже содержит носовой, то последний исчезает.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4243,7 +4243,7 @@
     },
     {
       "id": "HB-327",
-      "loc": "Урок XLII / mdx line 6185",
+      "loc": "Урок XLII / mdx line 6189",
       "claim_ru": "конечный dh с последующими t, th и dh сливается в ddh, а перед s и в 2 и 3 л. sing. impf. переходит в t",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4256,7 +4256,7 @@
     },
     {
       "id": "HB-328",
-      "loc": "Урок XLII / mdx line 6299",
+      "loc": "Урок XLII / mdx line 6303",
       "claim_ru": "Корень tṛh VII. P. в сильных формах перед согласными окончаниями имеет слог ne [ṇe], напр. 3 л. ind. tṛṇeḍhi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4269,7 +4269,7 @@
     },
     {
       "id": "HB-329",
-      "loc": "Урок XLIII / mdx line 6385",
+      "loc": "Урок XLIII / mdx line 6389",
       "claim_ru": "Долгие и краткие, внутренние и конечные гласные замещаются соответственными краткими гласными, внутренние дифтонги — своей второй частью; но конечные e, ai, o (превращающиеся в ā), а также ṛ и ṝ, замещаются посредством a",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4282,7 +4282,7 @@
     },
     {
       "id": "HB-330",
-      "loc": "Урок XLIII / mdx line 6387",
+      "loc": "Урок XLIII / mdx line 6391",
       "claim_ru": "Начальный a, за которым следует согласный, превращается в ā ... начальные i и u замещаются посредством iy или i, uv или u ...; удвоением начального ṛ и начального a, за которым следует группа согласных, является ān",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4295,7 +4295,7 @@
     },
     {
       "id": "HB-331",
-      "loc": "Урок XLIII / mdx line 6395",
+      "loc": "Урок XLIII / mdx line 6399",
       "claim_ru": "Внутренние и начальные, допускающие подъем гласные, в сильных формах изменяются в guṇa",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4308,7 +4308,7 @@
     },
     {
       "id": "HB-332",
-      "loc": "Урок XLIII / mdx line 6397",
+      "loc": "Урок XLIII / mdx line 6401",
       "claim_ru": "Краткий внутренний a, за которым следует согласный, в 3 л. sing. par. удлинняется всегда, а в 1 л. sing. par. — по желанию",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4321,7 +4321,7 @@
     },
     {
       "id": "HB-333",
-      "loc": "Урок XLIII / mdx line 6399",
+      "loc": "Урок XLIII / mdx line 6403",
       "claim_ru": "Конечные допускающие подъем гласные в 3 л. sing. par. всегда изменяются в vṛddhi, в 1 л. sing. par. — в vṛddhi или guṇa, а во 2 л. — в guṇa",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4334,7 +4334,7 @@
     },
     {
       "id": "HB-334",
-      "loc": "Урок XLIII / mdx line 6419",
+      "loc": "Урок XLIII / mdx line 6423",
       "claim_ru": "Все консонантические окончания присоединяются непосредственно к следующим корням: dru бежать, бросаться, śru, stu и sru течь, kṛ, bhṛ, vṛ избирать, и sṛ.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4347,20 +4347,20 @@
     },
     {
       "id": "HB-335",
-      "loc": "Урок XLIII / mdx line 6425",
+      "loc": "Урок XLIII / mdx line 6429",
       "claim_ru": "Окончание 2 л. sing. par. tha непосредственно присоединяется также ко всем корням на ṛ, за исключением ṛ идти [āritha], jāgṛ, svṛ, vṛ избирать, и saṅskṛ [saṅcaskaritha].",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: cakartha, dadhartha (direct -tha) vs. the seṭ set āritha, jajāgaritha, vavaritha, saṃcaskaritha — the traditional thal prescriptions for ṛ-final roots",
       "ref": "Whitney 1889 §§797-798 (union-vowel in 2sg -tha)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The exception forms are the stock examples of the Pāṇinian thal rules (7.2.62-66 territory). Note the book is internally consistent: vṛ is aniṭ in the octet of mdx 6419 yet seṭ specifically in -tha, and both statements are made.",
+      "note": "The exception forms are the stock examples of the Pāṇinian thal rules (7.2.62-66 territory). Note the book is internally consistent: vṛ is aniṭ in the octet of mdx 6423 yet seṭ specifically in -tha, and both statements are made.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-336",
-      "loc": "Урок XLIII / mdx line 6427",
+      "loc": "Урок XLIII / mdx line 6431",
       "claim_ru": "Все остальные корни должны или могут вставлять соодинительную гласную i перед косонантическими окончаниями.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4373,7 +4373,7 @@
     },
     {
       "id": "HB-337",
-      "loc": "Урок XLIII / mdx line 6431",
+      "loc": "Урок XLIII / mdx line 6435",
       "claim_ru": "После коренных гласных dhve (2 л. pl. Ātm.) должно превращаться в ḍhve, и после соединительной гласной это изменение может произойти, если ему предшествует полугласный или h",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4386,7 +4386,7 @@
     },
     {
       "id": "HB-338",
-      "loc": "Урок XLIII / mdx line 6435",
+      "loc": "Урок XLIII / mdx line 6439",
       "claim_ru": "Самые употребительные из корней, в которых i везде может выпускатся — следующие: vraśc, añj, mṛj, kḷp, gup, aś V Ā., gāh, guh, tṛp, druh, naś, muh и snih.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -4399,7 +4399,7 @@
     },
     {
       "id": "HB-339",
-      "loc": "Урок XLIII / mdx line 6453",
+      "loc": "Урок XLIII / mdx line 6457",
       "claim_ru": "Корни на i или ī ... Соединительный гласный необходим всюду, за исключением 2 л. sing, par., где его может и не быть, если корень в inf. не имеет i",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4412,20 +4412,20 @@
     },
     {
       "id": "HB-340",
-      "loc": "Урок XLIII / mdx line 6473",
+      "loc": "Урок XLIII / mdx line 6477",
       "claim_ru": "Корни на u и ū ... соединительный гласный необходим везде, за исключением корней dru, śru, stu и sru (4 а) и 2го лица sing. P. тех корней, которые не имеют i в infinit.",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: śuśruva-type i-less forms confined to the four aniṭ u-roots; elsewhere obligatory i with the 2sg option for aniṭ-infinitive roots (tuṣṭotha~tuṣṭavitha) — standard doctrine",
       "ref": "Whitney §797",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Cross-refers consistently to the octet of mdx 6419.",
+      "note": "Cross-refers consistently to the octet of mdx 6423.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-341",
-      "loc": "Урок XLIII / mdx line 6513",
+      "loc": "Урок XLIII / mdx line 6517",
       "claim_ru": "когда предшествует один согласный, cильная форма ar или ār, слабая ф. ṛ, перед гласными r",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4438,20 +4438,20 @@
     },
     {
       "id": "HB-342",
-      "loc": "Урок XLIII / mdx line 6539",
+      "loc": "Урок XLIII / mdx line 6543",
       "claim_ru": "Корни на ṝ, сильная форма ār, ar слабая ф. ar, соединительный гласный всюду",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: tastāra/tastaritha/tastaruḥ (stṝ), cakāra/cakaruḥ (kṝ 'scatter') — ṝ-final roots are seṭ throughout with weak-form ar",
       "ref": "Whitney §797c",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "tṝ with its e-perfect (teruḥ) is carved out separately by the book at mdx 6597, so the general rule stands within its scope.",
+      "note": "tṝ with its e-perfect (teruḥ) is carved out separately by the book at mdx 6601, so the general rule stands within its scope.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-343",
-      "loc": "Урок XLIII / mdx line 6597",
+      "loc": "Урок XLIII / mdx line 6601",
       "claim_ru": "Этой схеме а) должны следовать: tṛ Р., Зл. tatāra, teratuḥ, teruḥ; bhram Ā., phal P. bhal Р. Ā.; б) могут следовать: granth Р. (greth), tras Р., bhras, bhrāj, rāj.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4464,33 +4464,33 @@
     },
     {
       "id": "HB-344",
-      "loc": "Урок XLIII / mdx line 6599",
+      "loc": "Урок XLIII / mdx line 6603",
       "claim_ru": "Корни vac, vad, vap, vaś, vas жить, и vah удваиваются посредством слога u, но в слабых формах удвоение отбрасывается, и коренной слог va переходит в ū. Подобно этому, корень yaj удваивается посредством i, а слабые формы имеют ī",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: uvāca/ūcuḥ/ūce, uvāha/ūhuḥ, iyāja/ījuḥ/īje — the samprasāraṇa-and-contraction pattern of exactly this root set is the standard doctrine",
       "ref": "Whitney §§784b, 794b; cf. HB-55",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "The six va-roots plus yaj are the classical list; the book's own uvacitha~uvaktha forms at mdx 6601 conform.",
+      "note": "The six va-roots plus yaj are the classical list; the book's own uvacitha~uvaktha forms at mdx 6605 conform.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-345",
-      "loc": "Урок XLIII / mdx line 6631",
+      "loc": "Урок XLIII / mdx line 6635",
       "claim_ru": "itha факультативно присоединяются к корням с a внутри, не имеющим i в infinit. Все другие должны иметь itha",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: pecitha~papaktha (aniṭ-infinitive paktum) vs. obligatory -itha elsewhere (tenitha) — the standard 2sg option for medial-a roots",
       "ref": "Whitney §797d",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Consistent with the book's own paradigm at mdx 6591 (pecitha, papaktha) and with the infinitive diagnostic used at mdx 6453/6473.",
+      "note": "Consistent with the book's own paradigm at mdx 6595 (pecitha, papaktha) and with the infinitive diagnostic used at mdx 6457/6473.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-346",
-      "loc": "Урок XLIII / mdx line 6633",
+      "loc": "Урок XLIII / mdx line 6637",
       "claim_ru": "Корни на ā, e, ai и au в 1 л. и Зл. sing. Par. оканчиваются на au и теряют гласный перед вокальными окончаниями. Соединительный гласный необходим всюду, за исключением 2 л. sing. Par., где он факультативен",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4503,7 +4503,7 @@
     },
     {
       "id": "HB-347",
-      "loc": "Урок XLIII / mdx line 6657",
+      "loc": "Урок XLIII / mdx line 6661",
       "claim_ru": "Неполный перфект, со значением настоящего времени, образуется от ah говорить, 2 л. par. āttha; āhathuḥ; 3 л. par. āha, āhatuḥ, āhuḥ",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4516,7 +4516,7 @@
     },
     {
       "id": "HB-348",
-      "loc": "Урок XLIII / mdx line 6675",
+      "loc": "Урок XLIII / mdx line 6679",
       "claim_ru": "факультативен наряду с удвоенным перфектом, между прочим для vid, bhī, hrī, bhṛ, jāgṛ, daridrā",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4529,7 +4529,7 @@
     },
     {
       "id": "HB-349",
-      "loc": "Урок XLIII / mdx line 6677",
+      "loc": "Урок XLIII / mdx line 6681",
       "claim_ru": "К корню присоединяется суффикс ām, в X кл. и для каузативов ayām, и к образованной таким образом форме прибавляется в Par. āsa, cakāra или babhūva, в Ātm. cakre",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4542,7 +4542,7 @@
     },
     {
       "id": "HB-350",
-      "loc": "Урок XLIII / mdx line 6699",
+      "loc": "Урок XLIII / mdx line 6703",
       "claim_ru": "Part. perf. Par. образуется посредством суффикса vas, f uṣī ..., присоединяемого к слабой основе. Если слабая основа перфекта односложна, то вставляется соединительный гласный i перед vas",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4555,7 +4555,7 @@
     },
     {
       "id": "HB-351",
-      "loc": "Урок XLIII / mdx line 6723",
+      "loc": "Урок XLIII / mdx line 6727",
       "claim_ru": "Part. perf. Ātm. образуется посредством āna [āṇa], f. ā, приставляемого к той форме основы, которая появляется перед окончанием ire",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4568,7 +4568,7 @@
     },
     {
       "id": "HB-352",
-      "loc": "Урок XLIV / mdx line 6737",
+      "loc": "Урок XLIV / mdx line 6741",
       "claim_ru": "Перед суффиксом tā с корнем происходят те же изменения, как и перед суфф. tum в inf.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4581,7 +4581,7 @@
     },
     {
       "id": "HB-353",
-      "loc": "Урок XLIV / mdx line 6761",
+      "loc": "Урок XLIV / mdx line 6765",
       "claim_ru": "конечные c, j, ś, ṣ, kṣ и h превращаются в k, после которого ... sya переходит в ṣya, конечные d и dh превращает в t, bh в p, m и n в anusvāra; конечный s — в t",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4594,7 +4594,7 @@
     },
     {
       "id": "HB-354",
-      "loc": "Урок XLIV / mdx line 6763",
+      "loc": "Урок XLIV / mdx line 6767",
       "claim_ru": "Соединительный гласный употребляется большей частью у тех же самых глаголов, у которых он встречается в infin. ... у корней на ṛ всегда вставляется i; у корней gam и han i вставляется в par; но vṛt, vṛdh и syand капать соединительного гласного в par. не имеют",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4607,7 +4607,7 @@
     },
     {
       "id": "HB-355",
-      "loc": "Урок XLIV / mdx line 6765",
+      "loc": "Урок XLIV / mdx line 6769",
       "claim_ru": "В глаголах X кл. и каузативах приставляется ayiṣya",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4620,7 +4620,7 @@
     },
     {
       "id": "HB-356",
-      "loc": "Урок XLIV / mdx line 6837",
+      "loc": "Урок XLIV / mdx line 6841",
       "claim_ru": "Причастия простого будущего образуются подобно причастиям настоящего времени классов I, IV, VI и X",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4633,7 +4633,7 @@
     },
     {
       "id": "HB-357",
-      "loc": "Урок XLIV / mdx line 6841",
+      "loc": "Урок XLIV / mdx line 6845",
       "claim_ru": "Imperfectum, образованное от простого будущего, называеся conditionalis и употребляется в условных предложениях",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4646,7 +4646,7 @@
     },
     {
       "id": "HB-358",
-      "loc": "Урок XLIV / mdx line 6845",
+      "loc": "Урок XLIV / mdx line 6849",
       "claim_ru": "Precativus P. образуется посредством yās, Ā. посредством sī [ṣī]; и тот и другой спрягаются сходно с pot. кл. II, III, V, VII-IX",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4659,7 +4659,7 @@
     },
     {
       "id": "HB-359",
-      "loc": "Урок XLIV / mdx line 6847",
+      "loc": "Урок XLIV / mdx line 6851",
       "claim_ru": "Но гласные глаголов dā давать, dhā, mā, sthā, pā пить, hā покидать, dhe, gai, so и do всегда превращаются в e, напр. 3 л. sing. dā, deyāt",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4672,7 +4672,7 @@
     },
     {
       "id": "HB-360",
-      "loc": "Урок XLIV / mdx line 6849",
+      "loc": "Урок XLIV / mdx line 6853",
       "claim_ru": "В Ā. большей частью те же самые корни, у которых i вставляется в infin. ..., имеют соединительный гласный",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -4685,20 +4685,20 @@
     },
     {
       "id": "HB-361",
-      "loc": "Урок XLIV / mdx line 6851",
+      "loc": "Урок XLIV / mdx line 6855",
       "claim_ru": "У корней на ṛ соединительный гласный по желанию может выпускаться. Соединительный гласный ī встречается только у корня grah",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: grahīṣīṣṭa — grah takes ī throughout its iṭ-forms (Whitney §900b); no other root is prescribed ī in the precative middle",
       "ref": "Whitney §900b",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Scope is the precative middle only. In the iṣ-aorist Bühler himself (mdx 7087) extends optional ī to ṛ-final roots and vṛ, so the 'only grah' restriction is formation-specific, consistent with Whitney's grah-ī rule. Attestation of middle precatives is near-zero, so this is book-grammar.",
+      "note": "Scope is the precative middle only. In the iṣ-aorist Bühler himself (mdx 7091) extends optional ī to ṛ-final roots and vṛ, so the 'only grah' restriction is formation-specific, consistent with Whitney's grah-ī rule. Attestation of middle precatives is near-zero, so this is book-grammar.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-362",
-      "loc": "Урок XLIV / mdx line 6855",
+      "loc": "Урок XLIV / mdx line 6859",
       "claim_ru": "Если не вставляется соединительный гласный, то конечные i, ī, u изменяются в guṇa, конечный ṝ — в īr или после губных в ūr, конечные дифтонги — в ā",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4711,7 +4711,7 @@
     },
     {
       "id": "HB-363",
-      "loc": "Урок XLV / mdx line 6909",
+      "loc": "Урок XLV / mdx line 6913",
       "claim_ru": "Первый аорист образуется также как impf. II кл. (окончания присоединяются без соединит. гласной.). Встречается только P.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4724,7 +4724,7 @@
     },
     {
       "id": "HB-364",
-      "loc": "Урок XLV / mdx line 6931",
+      "loc": "Урок XLV / mdx line 6935",
       "claim_ru": "Средние носовые выпадают, конечный ṛ переходит в guṇa.",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4737,7 +4737,7 @@
     },
     {
       "id": "HB-365",
-      "loc": "Урок XLV / mdx line 6937",
+      "loc": "Урок XLV / mdx line 6941",
       "claim_ru": "Третий аорист — по форме есть imperf. с удвоением, спрягаемый по примеру VI кл. P. и Ā.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4750,20 +4750,20 @@
     },
     {
       "id": "HB-366",
-      "loc": "Урок XLV / mdx line 6945",
+      "loc": "Урок XLV / mdx line 6949",
       "claim_ru": "Этот аорист (и никакой другой) образуется от корней X кл. и каузативов",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: acūcurat, abībhidat — the reduplicated aorist is the causative/class-X aorist of record in the classical language; sporadic iṣ-aorists from -ay- stems (dhvanayīt) are Vedic",
       "ref": "Whitney §§861, 1046-1047; cf. OCH-37/OCH-38 (causative aorist)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Within Bühler's own system the passive 3sg (abhedi, mdx 7167) and the iṣ-type passive persons (mdx 7155) are treated as a separate passive formation, so 'и никакой другой' scopes over the active aorist, where it holds for classical Sanskrit.",
+      "note": "Within Bühler's own system the passive 3sg (abhedi, mdx 7171) and the iṣ-type passive persons (mdx 7159) are treated as a separate passive formation, so 'и никакой другой' scopes over the active aorist, where it holds for classical Sanskrit.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-367",
-      "loc": "Урок XLV / mdx line 6947",
+      "loc": "Урок XLV / mdx line 6951",
       "claim_ru": "aya всегда отбрасывается.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4776,7 +4776,7 @@
     },
     {
       "id": "HB-368",
-      "loc": "Урок XLV / mdx line 6949",
+      "loc": "Урок XLV / mdx line 6953",
       "claim_ru": "На основы с консонантическим началом, простой корень которых оканчивается на группу согласных, распространяются правила удвоения в перфекте, напр. rakṣayati, ararakṣat",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4789,7 +4789,7 @@
     },
     {
       "id": "HB-369",
-      "loc": "Урок XLV / mdx line 6953",
+      "loc": "Урок XLV / mdx line 6957",
       "claim_ru": "внутренние гунированные гласные заменяются первоначальным гласным, причем ar вместо ṛ и al вместо ḷ могут и оставаться",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4802,7 +4802,7 @@
     },
     {
       "id": "HB-370",
-      "loc": "Урок XLV / mdx line 6955",
+      "loc": "Урок XLV / mdx line 6959",
       "claim_ru": "внутренний ā очень часто заменяется посредством a, внутренние ī и ū иногда (отчасти по желанию) заменяются посредством i и u",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -4815,7 +4815,7 @@
     },
     {
       "id": "HB-371",
-      "loc": "Урок XLV / mdx line 6959",
+      "loc": "Урок XLV / mdx line 6963",
       "claim_ru": "в удвоении краткие a и ṛ основы замещаются посредством ī перед простым согласным, и посредством i перед группой",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4828,7 +4828,7 @@
     },
     {
       "id": "HB-372",
-      "loc": "Урок XLV / mdx line 7005",
+      "loc": "Урок XLV / mdx line 7009",
       "claim_ru": "Начинающиеся с гласного корни удваивают конечный гласный, если они оканчиваются на один согласный или на группу, начинающуюся с r или n. При других сочетаниях удваивается большей частью первый согласный. Между согласными основы и удвоения вставляется i, очень редко a",
       "kind": "allomorphy",
       "verdict_fact": "FALSE",
@@ -4841,7 +4841,7 @@
     },
     {
       "id": "HB-373",
-      "loc": "Урок XLV / mdx line 7007",
+      "loc": "Урок XLV / mdx line 7011",
       "claim_ru": "В соединении с частицей mā, они лишаются приращения и заменяют imperativ, напр. mā dāḥ не давай; mā bhaiṣīḥ не бойся.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4854,7 +4854,7 @@
     },
     {
       "id": "HB-374",
-      "loc": "Урок XLVI / mdx line 7031",
+      "loc": "Урок XLVI / mdx line 7035",
       "claim_ru": "Окончания, начинающиеся с sta или stha отбрасывают s после кратких гласных и после всех согласных, за исключением анусвары и r; dhvam после корневых гласных и дифтонгов, за исключением a, ā и после r превращается в ḍhvam",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4867,7 +4867,7 @@
     },
     {
       "id": "HB-375",
-      "loc": "Урок XLVI / mdx line 7033",
+      "loc": "Урок XLVI / mdx line 7037",
       "claim_ru": "в P., все допускающие vṛddhi гласные переходят во vṛddhi; в dṛś и sṛj появляются rā вместо ār; в Ā. только конечные i, ī, u, ū изменяются в guṇa",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4880,7 +4880,7 @@
     },
     {
       "id": "HB-376",
-      "loc": "Урок XLVI / mdx line 7081",
+      "loc": "Урок XLVI / mdx line 7085",
       "claim_ru": "Этот аорист большей частью образуется от тех глаголов, которые имеют окончание infin. ... без соединительного гласного.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -4893,7 +4893,7 @@
     },
     {
       "id": "HB-377",
-      "loc": "Урок XLVI / mdx line 7083",
+      "loc": "Урок XLVI / mdx line 7087",
       "claim_ru": "От глаголов dā давать, dhā, sthā этот аорист образуется в Ā., на место их гласного является i, а 2-е и З-е лица оканчи ваются на thāḥ: и ta, напр. adiṣi, adithāḥ, adita",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4906,7 +4906,7 @@
     },
     {
       "id": "HB-378",
-      "loc": "Урок XLVI / mdx line 7087",
+      "loc": "Урок XLVI / mdx line 7091",
       "claim_ru": "Окончания те же, что в IVом аористе, только им предшествует i или ī (последний у корней на ṛ и у vṛ по желанию, у grah всегда), а 2-е и З-е лица sing. P. оканчиваются на īḥ и īt",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4919,7 +4919,7 @@
     },
     {
       "id": "HB-379",
-      "loc": "Урок XLVI / mdx line 7089",
+      "loc": "Урок XLVI / mdx line 7093",
       "claim_ru": "Конечные допускающие vṛddhi корневые гласные в P. изменяются в vṛddhi, а в Ā. в guṇa. Внутренние и начальные допускающие гунацию гласные в P. и Ā. изменяются в guṇa. Краткий a корней на ar и al, а также корней vad и vraj удлиняется в P.; в корнях на am, ay и ah, а также в корнях śvas, has и некоторых других более редких краткий a остается неизмененным, а в остальных он удлинняется в P. факультативно",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -4932,7 +4932,7 @@
     },
     {
       "id": "HB-380",
-      "loc": "Урок XLVI / mdx line 7107",
+      "loc": "Урок XLVI / mdx line 7111",
       "claim_ru": "Этот аорист образуется обыкновенно от корней, образующих inf. посредством i но также в P. от корней stu, su, kram и факультативно в Ā от корней на ṛ, начинающихся с группы согласных.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -4945,7 +4945,7 @@
     },
     {
       "id": "HB-381",
-      "loc": "Урок XLVI / mdx line 7109",
+      "loc": "Урок XLVI / mdx line 7113",
       "claim_ru": "Корни на n и ṇ VIII кл. во 2 и 3 л. sing. Ā. могут отбросить носовой и иметь окончания thāḥ и ta, напр. tan, ataniṣṭhāḥ, atathāḥ, ataniṣṭa, atata",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4958,7 +4958,7 @@
     },
     {
       "id": "HB-382",
-      "loc": "Урок XLVI / mdx line 7111",
+      "loc": "Урок XLVI / mdx line 7115",
       "claim_ru": "Шестой аорист, исключительно P., образуется от большинства корней на ā, e, ai и o (вместо которых является ā) и от корней yam, ram и nam (вместо конечного m является анусвара).",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -4971,7 +4971,7 @@
     },
     {
       "id": "HB-383",
-      "loc": "Урок XLVII / mdx line 7133",
+      "loc": "Урок XLVII / mdx line 7137",
       "claim_ru": "Седьмой аорист образуется посредством sa [ṣa] и в P. и Ā. спрягается подобно impf. I кл. Употребляется этот аорист от корней на ś, ṣ и h, гласным которых являются i, u или ṛ",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4984,7 +4984,7 @@
     },
     {
       "id": "HB-384",
-      "loc": "Урок XLVII / mdx line 7151",
+      "loc": "Урок XLVII / mdx line 7155",
       "claim_ru": "корни guh, dih, duh или lih, смотря по желанию, могут отбрасывать sa во 2 и 3 л. sing., в 1 л. du. и во 2 л. pl. Ā., напр. aghukṣathāḥ, agūḍhāḥ",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -4997,20 +4997,20 @@
     },
     {
       "id": "HB-385",
-      "loc": "Урок XLVII / mdx line 7155",
+      "loc": "Урок XLVII / mdx line 7159",
       "claim_ru": "Обыкновенно aoristus passivi во всех лицах, кроме 3 л. ед. ч., тожествен с Ā. аориста IV, V или VII типов.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
       "number": "systemic: outside the 3sg in -i, the passive-aorist persons are supplied by the middle of the sibilant aorists (s/iṣ/sa types)",
       "ref": "Whitney §§842-845; Талмуд — AOR.PASS. образует ТОЛЬКО Ā.3.SG, вне 3SG пассивных форм нет по построению — [Талмуд-сверка H1054](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/AORIST_REGISTRY_TALMUD_CROSSCHECK_2026.md)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "Hedged «обыкновенно» graded as direction; the middle-suppletion pattern is Whitney's own description, with the optional special stems handled at mdx 7171.",
+      "note": "Hedged «обыкновенно» graded as direction; the middle-suppletion pattern is Whitney's own description, with the optional special stems handled at mdx 7175.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-386",
-      "loc": "Урок XLVII / mdx line 7155",
+      "loc": "Урок XLVII / mdx line 7159",
       "claim_ru": "Корни X кл. и каузативные глаголы, а также все те корни, к которым суффикс inf. присоединяется с i, образуют V аорист. Каузативные глаголы и корни X кл. могут сохранять или отбрасывать слог aya.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -5023,7 +5023,7 @@
     },
     {
       "id": "HB-387",
-      "loc": "Урок XLVII / mdx line 7157",
+      "loc": "Урок XLVII / mdx line 7161",
       "claim_ru": "Третье лицо ед. ч. (встречающееся особенно часто) принимает окончание i",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -5036,7 +5036,7 @@
     },
     {
       "id": "HB-388",
-      "loc": "Урок XLVII / mdx line 7159",
+      "loc": "Урок XLVII / mdx line 7163",
       "claim_ru": "после конечного ā, e, ai, o (последние три звука превращаются в ā) вставляется y, напр. dā, adāyi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -5049,7 +5049,7 @@
     },
     {
       "id": "HB-389",
-      "loc": "Урок XLVII / mdx line 7165",
+      "loc": "Урок XLVII / mdx line 7169",
       "claim_ru": "краткий a, стоящий на предпоследнем месте, удлинняется, за исключением случаев исхода корня на am. В последних он остается кратким, за исключением глаголов kam, gam, nam, yam, ram, vam плевать, блевать; и ācam",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -5062,20 +5062,20 @@
     },
     {
       "id": "HB-390",
-      "loc": "Урок XLVII / mdx line 7167",
+      "loc": "Урок XLVII / mdx line 7171",
       "claim_ru": "Корни X кл. и каузативы отбрасывают ay, напр. cur, acori; bhedayati, abhedi",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
       "number": "systemic: acori, abhedi, akāri — the 3sg passive aorist (ciṇ) is built on the strengthened bare root, never on the -ay- stem",
       "ref": "Whitney §1048; cf. HB-26/HB-27/OCH-48 (causative)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "In the ciṇ form the ay-dropping is obligatory (contrast the optional retention in the other passive-aorist persons, mdx 7155).",
+      "note": "In the ciṇ form the ay-dropping is obligatory (contrast the optional retention in the other passive-aorist persons, mdx 7159).",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-391",
-      "loc": "Урок XLVII / mdx line 7169",
+      "loc": "Урок XLVII / mdx line 7173",
       "claim_ru": "labh, alābhi или alambhi (последнее всегда после приставок)",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -5088,7 +5088,7 @@
     },
     {
       "id": "HB-392",
-      "loc": "Урок XLVII / mdx line 7171",
+      "loc": "Урок XLVII / mdx line 7175",
       "claim_ru": "Все корни на гласные, а также grah, dṛś и han могут по желанию остальные формы аориста образовывать от 3 л. ед. ч. путем приставления окончаний V. вида, Ā",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -5101,7 +5101,7 @@
     },
     {
       "id": "HB-393",
-      "loc": "Урок XLVII / mdx line 7195",
+      "loc": "Урок XLVII / mdx line 7199",
       "claim_ru": "Перфекты, будущие времена, conditionalis и precativus страд. залога образуются посредством окончаний Ā. ... Корни на гласные, а равным образом и grah, dṛś и han для будущего времени, condition. и precat. могут образовывать также особые формы от основы 3 л. ед. ч. аоr.",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -5114,11 +5114,11 @@
     },
     {
       "id": "HB-394",
-      "loc": "Урок XLVIII / mdx line 7207",
+      "loc": "Урок XLVIII / mdx line 7211",
       "claim_ru": "корневые a, ṛ и ṝ замещаются посредством i. ... Но между удвоенными согласными всегда вставляется i.",
       "kind": "universality",
       "verdict_fact": "TRUE",
-      "number": "systemic: pipakṣati (a→i), cikīrṣati (ṛ→i); vowel-initial desideratives insert i between the doubled consonants — arciciṣati, īcikṣiṣate (Bühler's own examples at mdx 7271-7273)",
+      "number": "systemic: pipakṣati (a→i), cikīrṣati (ṛ→i); vowel-initial desideratives insert i between the doubled consonants — arciciṣati, īcikṣiṣate (Bühler's own examples at mdx 7275-7277)",
       "ref": "Whitney §1029; cf. OCH-49/OCH-50/HB-62 (desiderative)",
       "verdict_pedagogy": "JUSTIFIED",
       "note": "The abbreviated desideratives (īpsati, dhitsati) Bühler lists separately as irregulars have no doubled consonant, so they do not touch the 'always i' clause, which holds where doubling occurs.",
@@ -5127,7 +5127,7 @@
     },
     {
       "id": "HB-395",
-      "loc": "Урок XLVIII / mdx line 7209",
+      "loc": "Урок XLVIII / mdx line 7213",
       "claim_ru": "Суффикс sa [ṣa] присоединяется непосредственно к большинству корней с исходом на гласный ... Конечные i и u удлинняются, ṛ и ṝ изменяются в īr или, если предшествует губной — в ūr.",
       "kind": "allomorphy",
       "verdict_fact": "TRUE",
@@ -5140,7 +5140,7 @@
     },
     {
       "id": "HB-396",
-      "loc": "Урок XLVIII / mdx line 7211",
+      "loc": "Урок XLVIII / mdx line 7215",
       "claim_ru": "Настоящее время дезидератива, которое одно только и встречается довольно часто, спрягается (P. и Ā.) подобно VI классу.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -5153,7 +5153,7 @@
     },
     {
       "id": "HB-397",
-      "loc": "Урок XLVIII / mdx line 7211",
+      "loc": "Урок XLVIII / mdx line 7215",
       "claim_ru": "В fut., condic. и precat. (Ā.) всегда вставляется соединительный гласный i; аорист образуется V вида.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -5166,7 +5166,7 @@
     },
     {
       "id": "HB-398",
-      "loc": "Урок XLVIII / mdx line 7275",
+      "loc": "Урок XLVIII / mdx line 7279",
       "claim_ru": "Сходные формы можно образовывать от всех корней на iv.",
       "kind": "universality",
       "verdict_fact": "TRUE",
@@ -5179,20 +5179,20 @@
     },
     {
       "id": "HB-399",
-      "loc": "Урок XLVIII / mdx line 7319",
+      "loc": "Урок XLVIII / mdx line 7323",
       "claim_ru": "Все односложные корни первых девяти классов, начинающиеся с согласных, могут образовывать два интенсива (фреквентатива), чтобы выразить повторение действия.",
       "kind": "universality",
       "verdict_fact": "TRUE",
       "number": "systemic: Pāṇini 3.1.22 (dhātor ekāco halādeḥ ... yaṅ) restricts the intensive to monosyllabic consonant-initial roots; class X is excluded as derived; the two types are yaṅ (bobhūyate) and yaṅ-luk (bobhoti)",
       "ref": "Whitney §§1000-1002; cf. HB-63/OCH-51 (intensive)",
       "verdict_pedagogy": "JUSTIFIED",
-      "note": "A possibility («могут») claim per the grammarians; Bühler's own footnote (mdx 7321) lists the traditional vowel-initial exceptions aṭāṭyate, arāryate, aśāśyate, so the restriction is stated with its standard leaks. Attested intensives are a small subset of the formable ones.",
+      "note": "A possibility («могут») claim per the grammarians; Bühler's own footnote (mdx 7325) lists the traditional vowel-initial exceptions aṭāṭyate, arāryate, aśāśyate, so the restriction is stated with its standard leaks. Attested intensives are a small subset of the formable ones.",
       "mg_footnote": null,
       "methodichka": null
     },
     {
       "id": "HB-400",
-      "loc": "Урок XLVIII / mdx line 7319",
+      "loc": "Урок XLVIII / mdx line 7323",
       "claim_ru": "Интенсив глаголов значения „идти\" обозначает движение по кривой линии, у некоторых других глаголов он указывает, что действие совершается плохо.",
       "kind": "rule",
       "verdict_fact": "UNTESTABLE",
@@ -5205,7 +5205,7 @@
     },
     {
       "id": "HB-401",
-      "loc": "Урок XLVIII / mdx line 7323",
+      "loc": "Урок XLVIII / mdx line 7327",
       "claim_ru": "Первый интенсив образуется исключительно путем удвоения. Второй принимает суффикс ya, перед которым с корнем большей частью происходят те же изменения, как перед суффиксом страдательнаго залога",
       "kind": "rule",
       "verdict_fact": "TRUE",
@@ -5218,7 +5218,7 @@
     },
     {
       "id": "HB-402",
-      "loc": "Урок XLVIII / mdx line 7325",
+      "loc": "Урок XLVIII / mdx line 7329",
       "claim_ru": "Иные формы, чем производные от основы настоящего времени, встречаются крайне редко.",
       "kind": "statistic",
       "verdict_fact": "TRUE",
@@ -5231,7 +5231,7 @@
     },
     {
       "id": "HB-403",
-      "loc": "Урок XLVIII / mdx line 7371",
+      "loc": "Урок XLVIII / mdx line 7375",
       "claim_ru": "Отыменные глаголы образуются посредством ya, aya, āpaya ..., и sya или asya ... или путем непосредственного приставления глагольных окончаний к имени ... Наиболее часто в классич. санскрите встречаются формы первых двух способов",
       "kind": "statistic",
       "verdict_fact": "TRUE",

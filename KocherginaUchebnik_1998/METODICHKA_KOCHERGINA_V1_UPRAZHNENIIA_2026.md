@@ -4,7 +4,7 @@ _Created: 16-07-2026 · Last updated: 28-07-2026_
 
 Печатная рукопись (раздел II методички-компаньона; план —
 [METODICHKA_KOCHERGINA_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/METODICHKA_KOCHERGINA_COMPANION_2026.md),
-слайс — [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md)).
+слайс — [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md)).
 Упражнения даются к тем занятиям, которые получили комментарий в разделе I, — чтобы
 закрепить ровно те места, где учебник сверхобобщает или прячет частотность.
 
@@ -244,7 +244,7 @@ XXX-2: «Самосущий вознамерился сотворить мир»
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 16-07-2026 | Раздел II написан: чтения и дриллы с ключами к 11 занятиям | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
+| 16-07-2026 | Раздел II написан: чтения и дриллы с ключами к 11 занятиям | [H807](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H807-Fable_SanskritGrammar_kochergina-methodichka-v1_12.07.26.md); Fable 5 (`claude-fable-5`) |
 | 22-07-2026 | Помета отказа визы по занятию X перенесена на заголовок блока | H1258-цепочка |
 | 28-07-2026 | Стилевой пас по [гайду прозы](https://github.com/gasyoun/SanskritGrammar/blob/main/sangram/editorial/SANGRAM_STYLE_GUIDE_PROSE_RU.mdx) (§§ 3–4): проценты перифрастики и аориста получили базы подсчета, поправлен сбойный знак деванагари в чтении X-1 (аश् → अश्). Задания, ключи и числа не тронуты | [H1758](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1758-Fable_SanskritGrammar_kochergina-metodichka-rus-prose-style-pass_27.07.26.md); Fable 5 (`claude-fable-5`) |
 

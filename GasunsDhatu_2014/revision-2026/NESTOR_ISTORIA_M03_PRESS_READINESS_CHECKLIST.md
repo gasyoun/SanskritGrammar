@@ -8,7 +8,7 @@ _Created: 17-07-2026 · Last updated: 18-07-2026_
 против фаз [/book-press-prep](https://github.com/gasyoun/claude-config/blob/main/commands/book-press-prep.md)
 и норм подачи российской академической монографии. **Формат — аудит-чеклист, не исполнительный
 проход** (объем по контракту
-[H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md));
+[H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md));
 статусы вида «⛔ человек» — именованные малые финальные действия по модели приемки H268, они же
 зеркалятся в [Uprava/GTD_NEXT_ACTIONS.md](https://github.com/gasyoun/Uprava/blob/main/GTD_NEXT_ACTIONS.md).
 Составлено Fable 5 (`claude-fable-5`), 17-07-2026.
@@ -24,7 +24,7 @@ _Created: 17-07-2026 · Last updated: 18-07-2026_
 | Ч. I переработана по методу пилота (данные 2026 в прозе) | ✅ | Обзор H384 · Гл. 1 H991/H992 (виза 5/5) · Гл. 2: §2.3–2.5 пилот H358 + §2.1/§2.2 слой H1069 ([CH2_DATA_MAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_DATA_MAP.md)) · Гл. 3 H378 + стежок H1082 |
 | Ч. II (Гл. 4–7) написана и завизирована | ✅ | визы автора 16-07-2026: Гл. 4 (H1019) · Гл. 5 (H1023) · Гл. 6 (H1027) · Гл. 7 (H1037); Заключение «Итог двух частей» (H1039) — без правок |
 | Виза автора на «рамку двух частей» Введения (H1043) | ✅ | завизировано без правок (MG, GTD RESOLVED 17-07-2026: «все главы-уровневые визы даны — черновик рукописи завизирован end-to-end») |
-| Сквозная литредактура (RWS-очередь: §1.1/§1.4, §3.1/§3.3/§3.4, 1 127 находок) | 🟡 гибрид | Гейт «агент прозу не переписывает» снят [H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md) (18-07-2026): агентский line edit всех пяти секций очереди выполнен (211 правленых абзацев, Fable 5 `claude-fable-5`), подсвеченный docx перегенерирован (заливка + «Было:» на каждый абзац). Остаток — человек: проверка правок по docx, откат несогласованного вручную |
+| Сквозная литредактура (RWS-очередь: §1.1/§1.4, §3.1/§3.3/§3.4, 1 127 находок) | 🟡 гибрид | Гейт «агент прозу не переписывает» снят [H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md) (18-07-2026): агентский line edit всех пяти секций очереди выполнен (211 правленых абзацев, Fable 5 `claude-fable-5`), подсвеченный docx перегенерирован (заливка + «Было:» на каждый абзац). Остаток — человек: проверка правок по docx, откат несогласованного вручную |
 | Финальная сквозная сверка чисел (в т. ч. два значения «809»: MW-внутреннее §2.3 ↔ кросс-уок Гл. 6) | 🔵 агент | при заморозке рукописи (рабочая дата — **31-10-2026**, H1259), до верстки; зафиксировано в [CH2_DATA_MAP.md §4](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_DATA_MAP.md) |
 
 ## 2. Аппарат издания
@@ -66,7 +66,7 @@ RESOLVED 17-07-2026). Человеческий остаток сведен к и
 литредактура по RWS-очереди и издательская механика Фазы 3 (заявка, требования оформления,
 набор деванагари, рецензенты, договор). Блокер книги — проза/визы, не данные и не издательство:
 это соответствует диагнозу
-[H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md)
+[H1069](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1069-Fable_SanskritGrammar_m03-part1-core-rewrite-wave1_16.07.26.md)
 («the block is prose, nothing else»).
 
 _Dr. Mārcis Gasūns_

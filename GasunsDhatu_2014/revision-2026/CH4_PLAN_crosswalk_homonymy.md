@@ -3,7 +3,7 @@
 _Created: 16-07-2026 · Last updated: 16-07-2026_
 
 План и карта данных первой главы **Части II** (новая проза из готовых данных 2026 г., а не
-rework текста 2014 г.). [H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md),
+rework текста 2014 г.). [H1019](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1019-Opus_SanskritGrammar_m03-ch4-crosswalk-homonymy_16.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`). Надстраивается над статьёй-приложением «О записи омонимии
 корней…» (Прил. 2) и связкой A39 ([A39_SANGRAM_SCOPE_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/A39_SANGRAM_SCOPE_MEMO.md)).
 

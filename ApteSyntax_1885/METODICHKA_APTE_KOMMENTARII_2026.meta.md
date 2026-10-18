@@ -17,7 +17,7 @@ MG (author of record) + any future session extending the methodichka (exercises/
 Russian self-study and taught learners already using Apte.
 
 ## Provenance
-- Authored 17-07-2026 by Opus 4.8 (`claude-opus-4-8[1m]`) via [H1090](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1090-Opus_SanskritGrammar_apte-methodichka-commentary_17.07.26.md).
+- Authored 17-07-2026 by Opus 4.8 (`claude-opus-4-8[1m]`) via [H1090](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1090-Opus_SanskritGrammar_apte-methodichka-commentary_17.07.26.md).
 - Built directly on the completed Apte register (H1055→H1087) and its reading-site overlay (H1089).
 - Every number cited by claim id; no figure invented in prose (the hybrid source-of-truth model
   from the Kochergina methodichka Decision A).

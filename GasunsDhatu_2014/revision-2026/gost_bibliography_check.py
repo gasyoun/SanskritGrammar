@@ -79,7 +79,8 @@ from m03_checkers_common import (
     strip_markup,
 )
 
-BIB_HEADING = "# Библиография"
+# Level-agnostic (H6563 h2-promotion): matches «# Библиография» and «## Библиография» alike.
+BIB_HEADING = "Библиография"
 ENTRY_RE = re.compile(r"^(?P<num>\d+)\.\s+(?P<body>\S.*)$")
 
 # A year token: 1500–2049, optionally letter-disambiguated (`2004a`) and optionally a
@@ -104,7 +105,8 @@ PLACE_TIGHT_RE = re.compile(r"([^\s:;/]+):(?=\s)")
 # the 2014 Word source closes and reopens bold mid-sigil. Collapsing the seam gives a
 # parseable sigil; the seam itself is reported as G12.
 BOLD_SEAM_RE = re.compile(r"\*\*(\s*|--)\*\*")
-ABBR_HEADING = "# Принятые сокращения"
+# Level-agnostic (H6563 h2-promotion); the section ends at the next heading of any level.
+ABBR_HEADING = "Принятые сокращения"
 ABBR_RE = re.compile(r"^(?:>\s*)?(?P<abbr>[^\s—]{1,10}?)\s+--\s+(?P<target>\S.*)$")
 CITE_BRACKET_RE = re.compile(r"\[([^\[\]]+)\]")
 # Surnames are the trailing run of capitalised tokens immediately before the year, so a
@@ -159,11 +161,11 @@ def parse_bibliography(lines):
     """(entries, start_line). Entry = dict(num, names, year, desc, raw, line)."""
     start = None
     for no, text in lines:
-        if text.strip() == BIB_HEADING:
+        if text.strip().lstrip("#").strip() == BIB_HEADING:
             start = no
             break
     if start is None:
-        raise SystemExit(f"{BIB_HEADING} heading not found in {MAIN_TEXT}")
+        raise SystemExit(f"«{BIB_HEADING}» heading not found in {MAIN_TEXT}")
 
     entries = []
     for no, text in lines:
@@ -350,9 +352,10 @@ def parse_abbreviations(lines):
     """
     start = end = None
     for no, text in lines:
-        if text.strip() == ABBR_HEADING:
+        stripped = text.strip()
+        if stripped.lstrip("#").strip() == ABBR_HEADING:
             start = no
-        elif start is not None and text.startswith("# "):
+        elif start is not None and stripped.startswith("#"):
             end = no
             break
     if start is None:

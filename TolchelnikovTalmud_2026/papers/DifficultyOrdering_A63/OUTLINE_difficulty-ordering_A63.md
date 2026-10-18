@@ -5,7 +5,7 @@ _Created: 14-07-2026 · Last updated: 22-07-2026_
 **ID:** A63 · **Readiness:** 3/5 (outline + first result + live-verified related work + W2 lemmatised-join robustness) · **Home:** SanskritGrammar ·
 **Venue candidates:** ISCLS / WSC-computational / eLex / CALICO / ReCALL (a human `@DECIDE`s).
 RQ1 method paper of the [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md);
-seeded by handoff [H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md).
+seeded by handoff [H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md).
 Aggregate numbers only (in-copyright textbook sources). Model: Opus 4.8 (`claude-opus-4-8[1m]`).
 
 ## Thesis

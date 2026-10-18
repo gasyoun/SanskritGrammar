@@ -2,7 +2,7 @@
 
 _Created: 10-07-2026 · Last updated: 10-07-2026_
 
-Список RWS-находок, **не** внедрённых в текст книги при задаче [H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md), с причиной по кластерам. Внедрённые находки — в [`rws_edits.jsonl`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/rws_edits.jsonl); сводка — в [`RWS_APPLY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_APPLY_MEMO.md).
+Список RWS-находок, **не** внедрённых в текст книги при задаче [H385](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H385-Opus_SanskritGrammar_gasuns-dhatu-rws-apply-highlight_08.07.26.md), с причиной по кластерам. Внедрённые находки — в [`rws_edits.jsonl`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/rws_edits.jsonl); сводка — в [`RWS_APPLY_MEMO.md`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/RWS_APPLY_MEMO.md).
 
 **Итого отложено:** 756 находок Д3 — 185, Д4 — 304, Д5 — 267.
 

@@ -82,7 +82,7 @@ RWS-проход) не пропадают — они становятся **фу
 
 | Гл. | Тема | Готовая опора данных |
 |---|---|---|
-| 4 ✅ **одобрена автором 16-07-2026 (H1019)** | **Кросс-уок и омонимия корней** — Уитни↔MW↔DCS (три свидетеля: канонические 550/935 = 58,8 % покрытие, [H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md); класс 376/26; омонимия 933/67/50/38/18); продолжение статьи «О записи омонимии корней…» (Прил. 2) · [`04_glava4_kross-uok-omonimiya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/04_glava4_kross-uok-omonimiya.mdx), план [CH4_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH4_PLAN_crosswalk_homonymy.md) | [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk) (935-корневой канонический хаб + class_concordance.csv, 737, MWS/SANGRAM); [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv) (8 словарей); [mw_roots.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) (2 113) |
+| 4 ✅ **одобрена автором 16-07-2026 (H1019)** | **Кросс-уок и омонимия корней** — Уитни↔MW↔DCS (три свидетеля: канонические 550/935 = 58,8 % покрытие, [H1027](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1027-Opus_SanskritGrammar_m03-ch6-corpus-attestation_16.07.26.md); класс 376/26; омонимия 933/67/50/38/18); продолжение статьи «О записи омонимии корней…» (Прил. 2) · [`04_glava4_kross-uok-omonimiya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/04_glava4_kross-uok-omonimiya.mdx), план [CH4_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH4_PLAN_crosswalk_homonymy.md) | [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk) (935-корневой канонический хаб + class_concordance.csv, 737, MWS/SANGRAM); [root_oracle.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/etymology_stats/root_oracle.tsv) (8 словарей); [mw_roots.tsv](https://github.com/sanskrit-lexicon/csl-orig/blob/main/v02/mw/mw_roots.tsv) (2 113) |
 | 5 ✅ **одобрена автором 16-07-2026 (H1023)** | **Дхатупатха и паниниевская традиция как данные** — vidyut-дхатупатха (2 259, `gaṇa.sūtra`), аудит Пальсуле (añc/and/ast), сутры · [`05_glava5_dhatupatha-panini.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/05_glava5_dhatupatha-panini.mdx), план [CH5_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH5_PLAN_dhatupatha_panini.md) | [PALSULE_AUDIT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/PALSULE_AUDIT.md); [vidyut dhatupatha.tsv](https://github.com/gasyoun/WhitneyRoots/blob/main/scratch/vidyut_data/prakriya/dhatupatha.tsv) (2 259); инструментарий H413/H414 ([panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py), [commentary_corpus.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/commentary_corpus.py)) |
 | 6 ✅ **одобрена автором 16-07-2026 (H1027)** | **Корпусная аттестация корней** — корпус подтверждает 590/935 (63,1 %) в DCS, 550 (58,8 %) «готовое ядро» MW+DCS, 259 словарно-грамматических корней корпусно отсутствуют; пределы: класс/претериты невосстановимы (SG-MO-013/017) · [`06_glava6_korpusnaya-attestaciya.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/06_glava6_korpusnaya-attestaciya.mdx), план [CH6_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH6_PLAN_corpus_attestation.md) | DCS (пин 2026-03-05, 180 176 лемм), канон. кросс-уок [MWS/root_crosswalk](https://github.com/sanskrit-lexicon/MWS/tree/master/root_crosswalk); честные пределы: без акцентуации классы I/VI и IV/пассив неразличимы |
 | 7 ✅ **одобрена автором 16-07-2026 (H1037)** | **Грамматический указатель корней по модели Зализняка** — прикладной капстоун: код `ряд · seṭ/aniṭ · полноизменяемость · ударение`, три оси на 749/930 (80,5 %) корней кросс-уока; 18 рядов, 18 правил ударения + VedaWeb · [`07_glava7_ukazatel-zaliznyaka.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/07_glava7_ukazatel-zaliznyaka.mdx), план [CH7_PLAN](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH7_PLAN_zaliznyak_index.md) | [ZALIZNYAK_INDEX.md](https://github.com/gasyoun/SanskritLexicography/blob/master/RussianTranslation/ZALIZNYAK_INDEX.md); [accent_rules.json](https://github.com/gasyoun/WhitneyRoots/blob/main/crosswalk/accent_rules.json) (18 правил) + accent_validation; morphoclass_crosswalk (876); VedaWeb (акцентуированная Ригведа, CC BY 4.0 — [ROADMAP_VEDAWEB_REUSE.md](https://github.com/gasyoun/SanskritLexicography/blob/master/ROADMAP_VEDAWEB_REUSE.md)) |
@@ -104,7 +104,7 @@ RWS-проход) не пропадают — они становятся **фу
 `mw_genuine_roots_list.md`. ✅ **Обогащение выполнено** (второй проход): +колонки DCS
 частота/ранг и число словарей (root_oracle); кросс-таб **ядро 294 / хвост 101** из 704
 различных подлинных (482 аттестованы в DCS). ✅ **Печатный лист свёрстан** (третий проход,
-[H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md),
+[H1018](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1018-Sonnet_SanskritGrammar_m03-appendix7-typesetting_16.07.26.md),
 MG «Route 2»): отдельный A4-лист `APPENDIX7_PRINT_SHEET.html`
 (`mw_genuine_roots_print_sheet.py`), по образцу листов опечаток — полный список остаётся вне
 тела книги. Приложение 7 закрыто.
@@ -206,7 +206,7 @@ MG «Route 2»): отдельный A4-лист `APPENDIX7_PRINT_SHEET.html`
 A39 пишется параллельно и уходит в журнал; Заключение сшивается.
 
 **Фаза 3 — редактура и издательство (Q1–Q2 2027).** Литредактура по RWS-выходу —
-**гибрид** ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md),
+**гибрид** ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md),
 18-07-2026): агентский сквозной line edit очереди §1.1/§1.4, §3.1/§3.3/§3.4 с проверкой
 автора по подсвеченному docx (каждый правленый абзац — заливка + «Было:»); сквозная
 унификация голоса; заявка в **«Нестор-История»** (решено 13-07-2026) + рецензенты.
@@ -242,7 +242,7 @@ A39 пишется параллельно и уходит в журнал; За�
    выдается только штатным); издательство — **«Нестор-История»** (13-07-2026, MG).
 2. ~~Визовый пакет Фазы 0 (§7)~~ — **ЗАКРЫТО (MG, 15-07-2026, 14/14 approve)**: лист H856
    пройден за один присест, визы сведены в текст/`errata.yml`/`PROPOSALS.md` §6
-   ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)).
+   ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)).
    Q4 закрыт запиской [A39_SANGRAM_SCOPE_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/A39_SANGRAM_SCOPE_MEMO.md)
    (рефрейм A39 через SANGRAM); Q8 подтверждён (раздела о разговорном санскрите нет). Гейт
    книги снят — рамка Введения/Заключения зафиксирована, Фаза 1 разблокирована.
@@ -260,9 +260,9 @@ A39 пишется параллельно и уходит в журнал; За�
 1. ✅ **Агент — собрал визовый пакет Фазы 0 в один review-sheet** ([H856](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H856-Sonnet_SanskritGrammar_m03-phase0-visa-review-sheet_13.07.26.md)).
 2. ✅ **Человек — прошёл лист** (14/14 approve, `decisions.json`, 15-07-2026); **агент свёл
    визы** в текст/`errata.yml`/`PROPOSALS.md` §6 + закрыл Q4 запиской A39/SANGRAM
-   ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)). Гейт Фазы 0 снят.
+   ([H986](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H986-Opus_SanskritGrammar_m03-phase0-visa-apply_15.07.26.md)). Гейт Фазы 0 снят.
 3. ✅ **Рекомпоновка границы Гл. 1/Гл. 2 исполнена** (MG выбрал Вариант A, 15-07-2026;
-   [H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md),
+   [H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md),
    [CH1_CH2_RECOMPOSITION_SPEC.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH1_CH2_RECOMPOSITION_SPEC.md)):
    секции перенесены, перенумерованы, кросс-ссылки/оглавление/Выводы обновлены. Новые главы:
    Гл. 1 «Понятие глагольного корня» (Q-A), Гл. 2 «Количество корней и структура перечня» (Q-B).

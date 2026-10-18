@@ -18,6 +18,9 @@ duplicate a baseline ID, and must NEVER clobber a human verdict field
   up to 26 — the DoD's "visible status totals" requirement.
 """
 import json
+import sys
+
+import pytest
 
 import article_validate as av
 import consolidation_ledger_refresh as clr
@@ -87,3 +90,122 @@ def test_article_validate_agrees_ledger_is_the_same_one_it_loads():
     # Both scripts must point at the same physical file — a path drift between
     # them would silently split the freeze gate from the ledger it enforces.
     assert av.FREEZE_LEDGER_PATH == clr.LEDGER_PATH
+
+
+# ---------------------------------------------------------------------------
+# H6163 (bughunt F3, 05-10-2026): compute_validator_evidence fail-open contract
+# narrowed to the EXPECTED OPERATIONAL classes. A programming error inside the
+# validator must surface, not masquerade as "unknown" telemetry forever.
+# ---------------------------------------------------------------------------
+
+
+def _prime_manifest(tmp_path, monkeypatch, content='{"article": {"id": "art:x"}}'):
+    p = tmp_path / "x.json"
+    p.write_text(content, encoding="utf-8")
+    monkeypatch.setattr(clr, "manifest_path", lambda slug: p)
+    return p
+
+
+@pytest.mark.parametrize("exc", [OSError, AttributeError])
+def test_validator_evidence_operational_classes_fail_open(tmp_path, monkeypatch, exc):
+    def boom(manifest, serialized):
+        raise exc(f"expected operational failure: {exc.__name__}")
+
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", boom)
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": "unknown", "checked_at": "2026-10-09"}
+
+
+def test_validator_evidence_corrupt_json_fail_open(tmp_path, monkeypatch):
+    # The real-world JSONDecodeError route: garbage on disk (not a stubbed raise).
+    _prime_manifest(tmp_path, monkeypatch, content="not json at all")
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": "unknown", "checked_at": "2026-10-09"}
+
+
+@pytest.mark.parametrize("exc", [TypeError, NameError, KeyError])
+def test_validator_evidence_programming_errors_surface(tmp_path, monkeypatch, exc):
+    def boom(manifest, serialized):
+        raise exc(f"programming error must surface: {exc.__name__}")
+
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", boom)
+    with pytest.raises(exc):
+        clr.compute_validator_evidence("x", "2026-10-09")
+
+
+@pytest.mark.parametrize(
+    ("errors", "expected"),
+    [([], "pass"), (["schema: <root>: boom"], "fail")],
+)
+def test_validator_evidence_pass_fail_contract_preserved(tmp_path, monkeypatch, errors, expected):
+    _prime_manifest(tmp_path, monkeypatch)
+    monkeypatch.setattr(av, "validate", lambda manifest, serialized: (errors, []))
+    out = clr.compute_validator_evidence("x", "2026-10-09")
+    assert out == {"article_validate": expected, "checked_at": "2026-10-09"}
+
+
+# ---------------------------------------------------------------------------
+# H5691 (10-10-2026): the daily date trap in `--check`.
+#
+# The gate used to rebuild with the WALL-CLOCK date, so a calendar rollover
+# alone reddened `main` and every open PR: SanskritGrammar PR #1058 was merged
+# green at 00:10 and the next run failed, with a pure date-stamp refresh
+# (#1059) as the fix. `--check` now rebuilds against the ledger's own
+# `last_refresh.date` (exactly what test_committed_ledger_is_fresh already
+# did), and staleness is policed by an explicit window instead.
+# ---------------------------------------------------------------------------
+
+
+def _run_main(monkeypatch, argv):
+    monkeypatch.setattr(sys, "argv", ["consolidation_ledger_refresh.py", *argv])
+    return clr.main()
+
+
+def test_check_survives_a_calendar_rollover(monkeypatch, tmp_path):
+    """A ledger written on day D is green on day D+1 — the H5691 defect."""
+    scratch = tmp_path / "consolidation_ledger.json"
+    monkeypatch.setattr(clr, "LEDGER_PATH", scratch)
+    monkeypatch.setattr(clr, "today_iso", lambda: "2026-10-16")
+    assert _run_main(monkeypatch, ["--build-status", "pass"]) == 0
+    assert scratch.exists()
+
+    monkeypatch.setattr(clr, "today_iso", lambda: "2026-10-17")  # midnight passed
+    assert _run_main(monkeypatch, ["--check"]) == 0, (
+        "a calendar rollover alone must not red the gate — that is the H5691 date trap"
+    )
+
+
+def test_check_still_fails_when_the_ledger_is_older_than_the_window(monkeypatch, tmp_path):
+    """A dead nightly refresh must surface: content-relative check + age window."""
+    scratch = tmp_path / "consolidation_ledger.json"
+    monkeypatch.setattr(clr, "LEDGER_PATH", scratch)
+    monkeypatch.setattr(clr, "today_iso", lambda: "2026-10-16")
+    assert _run_main(monkeypatch, ["--build-status", "pass"]) == 0
+
+    monkeypatch.setattr(
+        clr, "today_iso", lambda: f"2026-10-{16 + clr.MAX_LEDGER_AGE_DAYS + 1:02d}")
+    assert _run_main(monkeypatch, ["--check"]) == 1
+
+
+def test_check_still_fails_on_real_content_drift(monkeypatch, tmp_path):
+    """Date tolerance must not become content tolerance."""
+    scratch = tmp_path / "consolidation_ledger.json"
+    monkeypatch.setattr(clr, "LEDGER_PATH", scratch)
+    monkeypatch.setattr(clr, "today_iso", lambda: "2026-10-16")
+    assert _run_main(monkeypatch, ["--build-status", "pass"]) == 0
+
+    ledger = json.loads(scratch.read_text(encoding="utf-8"))
+    # a DERIVED field (human-verdict fields are preserved by design, so they
+    # can never express drift): the freeze counts come from the constants.
+    ledger["freeze"]["counts"]["total_at_freeze"] = 99
+    scratch.write_text(json.dumps(ledger, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    assert _run_main(monkeypatch, ["--check"]) == 1
+
+
+def test_committed_stamp_rejects_an_unparseable_ledger():
+    stamp, error = clr.committed_stamp("not json at all", "2026-10-17")
+    assert stamp is None and "not valid JSON" in error
+    stamp, error = clr.committed_stamp('{"last_refresh": {}}', "2026-10-17")
+    assert stamp is None and "no parseable" in error

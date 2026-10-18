@@ -6,7 +6,7 @@ _Created: 31-08-2026 · Last updated: 31-08-2026_
 элементарному курсу санскритского языка», Стокгольм, 1923; электронное издание 2.0
 Н. П. Лихушиной, 2008; план —
 [METODICHKA_BUHLER_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_COMPANION_2026.md),
-слайс — [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md)).
+слайс — [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md)).
 Для каждого урока, получившего комментарий в
 [разделе I](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/METODICHKA_BUHLER_V1_KOMMENTARII_2026.md), —
 куда смотреть дальше: в словарь, в словник управления XIX века, в грамматику-эталон, в
@@ -197,7 +197,7 @@ acc. (46, 48), предик. acc. (73), dat. (150), gen. (261, 263), loc. (305);
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 31-08-2026 | Раздел III написан: «см. также» по 11 урокам/группам и слою управления — словарь MW (живые s.v.-ссылки; все 30 ключей SLP1 проверены офлайн по csl-orig mw.txt + живой спот-чек getword'ом 31-08-2026, порт CDSL в этот день лимитировал per-IP запросы — [SERVER_OUTAGES](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md)), Шерцль, Уитни, Очерк, корпусный слой, параллели методички Кочергиной, Кнауэр-конкорданс | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
+| 31-08-2026 | Раздел III написан: «см. также» по 11 урокам/группам и слою управления — словарь MW (живые s.v.-ссылки; все 30 ключей SLP1 проверены офлайн по csl-orig mw.txt + живой спот-чек getword'ом 31-08-2026, порт CDSL в этот день лимитировал per-IP запросы — [SERVER_OUTAGES](https://github.com/gasyoun/Uprava/blob/main/SERVER_OUTAGES.md)), Шерцль, Уитни, Очерк, корпусный слой, параллели методички Кочергиной, Кнауэр-конкорданс | [H3804](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3804-Fable_SanskritGrammar_metodichka-buhler-five-artifact-parity_31.08.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел III методички. Страницы Шерцля — по словнику index_Shertsl_Byuler_dopoln_180721
 (структурированная форма — government_lexicon.jsonl, H1195); §§ Уитни — по изданию

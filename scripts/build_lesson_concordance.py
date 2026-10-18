@@ -119,6 +119,13 @@ LOCAL_SOURCE_FILES = {
     "sangram-causative": "sangram/articles/causative/index.mdx",
     "sangram-passive": "sangram/articles/passive/index.mdx",
     "sangram-pronouns": "sangram/articles/pronouns/index.mdx",
+    "sangram-present-perfect-participles": "sangram/articles/present-perfect-participles/index.mdx",
+    "sangram-ta-na-participles": "sangram/articles/ta-na-participles/index.mdx",
+    "sangram-infinitive": "sangram/articles/infinitive/index.mdx",
+    "sangram-gerundive": "sangram/articles/gerundive/index.mdx",
+    "sangram-compounds-overview": "sangram/articles/compounds-overview/index.mdx",
+    "sangram-tatpurusha": "sangram/articles/tatpurusha/index.mdx",
+    "sangram-bahuvrihi": "sangram/articles/bahuvrihi/index.mdx",
 }
 
 
@@ -253,9 +260,10 @@ def main():
         out.append("")
         out.append(f"*Локус текста:* {lesson['mdx']}")
         out.append("")
-        # бэклинк со страницы самого Бюлера (E3)
+        # бэклинк со страницы самого Бюлера (E3); без точки — заголовок XLVII в mdx
+        # без точки («# УРОК XLVII», mdx 7131), substring-спот бьёт оба варианта
         backlinks["pages"]["buhler"].append(
-            {"label": f"урок {rn} — конкорданс", "spot": f"УРОК {rn}."})
+            {"label": f"урок {rn} — конкорданс", "spot": f"УРОК {rn}"})
         topic_list = [t["key"] for t in lesson["topics"]]
         for ti, topic in enumerate(lesson["topics"]):
             anchor_id = f"buhler-topic:{rn}.{topic['key']}"

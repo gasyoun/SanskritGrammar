@@ -5,7 +5,7 @@ _Created: 31-08-2026 · Last updated: 31-08-2026_
 Печатная рукопись (раздел III методички-компаньона к V. S. Apte, *The Student's Guide to
 Sanskrit Composition*, 1885, в русском переводе Н. П. Лихушиной, 2021; план —
 [METODICHKA_APTE_COMPANION_2026.md](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_COMPANION_2026.md),
-слайс — [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)).
+слайс — [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)).
 Для каждого занятия, получившего комментарий в
 [разделе I](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/METODICHKA_APTE_KOMMENTARII_2026.md), —
 куда смотреть дальше: в словарь, в словник управления XIX века, в грамматику-эталон, в
@@ -149,7 +149,7 @@ acc. (46/48), dat. (160, с пометой «заменим на acc.»), ни �
 
 | Дата | Ревизия | Основание |
 |---|---|---|
-| 31-08-2026 | Раздел III написан: «см. также» по 7 занятиям и приложению — словарь AP90 (живые s.v.-ссылки, все 38 ключей проверены getword'ом 31-08-2026), Шерцль, Уитни, Елизаренкова-2004, корпусный слой, параллели методички Кочергиной | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md); Fable 5 (`claude-fable-5`) |
+| 31-08-2026 | Раздел III написан: «см. также» по 7 занятиям и приложению — словарь AP90 (живые s.v.-ссылки, все 38 ключей проверены getword'ом 31-08-2026), Шерцль, Уитни, Елизаренкова-2004, корпусный слой, параллели методички Кочергиной | [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md); Fable 5 (`claude-fable-5`) |
 
 _Раздел III методички. Страницы Шерцля — по словнику index_Shertsl_Byuler_dopoln_180721
 (проверены в H1205/H1275); §§ Уитни — по изданию 1889 г.; страницы Елизаренковой — по

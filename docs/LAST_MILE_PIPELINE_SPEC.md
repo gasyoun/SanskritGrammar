@@ -6,7 +6,7 @@ Specifies the **"last mile"** [MEGABOOK §14.2](https://github.com/gasyoun/Uprav
 as the chain's main unclosed link: how the open kosha data/lookup layer feeds the Tier-0
 [Systema-Sanscriticum](https://github.com/gasyoun/Systema-Sanscriticum) learning platform. Wave-1d of the
 [digital-Sanskrit-pedagogy field](https://github.com/gasyoun/SanskritGrammar/blob/main/DIGITAL_SANSKRIT_PEDAGOGY_FIELD_2026.md),
-handoff [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md).
+handoff [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md).
 Model: Opus 4.8 (`claude-opus-4-8[1m]`). Measured-status + export packaging: H1643 (Grok 4.5 `grok-4.5`, 25-07-2026).
 
 > **Contract history.** H916 wrote this as a **spec, not a build**. By mid-July 2026 Systema

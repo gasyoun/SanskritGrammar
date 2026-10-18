@@ -2,7 +2,7 @@
 
 _Created: 17-08-2026 · Last updated: 17-08-2026_
 
-Приемочная улика к [H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md):
+Приемочная улика к [H2871](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2871-Opus_SanskritGrammar_m03-freeze-harness-gost-numbers-prebuild_16.08.26.md):
 по три позиции из каждого сухого прогона, проверенные глазами по печатному тексту
 рукописи. Отчеты машинные и перегенерируются
 ([GOST_BIBLIOGRAPHY_DRYRUN_REPORT.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/GOST_BIBLIOGRAPHY_DRYRUN_REPORT.md),
@@ -11,7 +11,7 @@ _Created: 17-08-2026 · Last updated: 17-08-2026_
 
 Исполнитель: Opus 5 (`claude-opus-5`), 17-08-2026. **Рукопись не изменялась** —
 находки суть инвентарь к предподачному проходу (авторская проза, H275; review-docx
-[H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md)
+[H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md)
 под автором и не перегенерировался).
 
 ## ГОСТ-проход: 960 находок, проверено 3

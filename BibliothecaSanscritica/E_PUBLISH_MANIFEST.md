@@ -2,7 +2,7 @@
 
 _Created: 13-09-2026 · Last updated: 13-09-2026_
 
-**Handoff:** [H4628](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4628-OxAlpha_SanskritGrammar_e-publish-wave1-toms-II-V_12.09.26.md) · **Executor:** OxAlpha (opencode/z-ai/glm-5.3-flash) · **Gate:** none · **Sources:** `yadisk:Bibliotheca/` + `yadisk:Sanskrityatina/33_Lihusina/` (mtime 10–13.09.2026)
+**Handoff:** [H4628](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4628-OxAlpha_SanskritGrammar_e-publish-wave1-toms-II-V_12.09.26.md) · **Executor:** OxAlpha (opencode/z-ai/glm-5.3-flash) · **Gate:** none · **Sources:** `yadisk:Bibliotheca/` + `yadisk:Sanskrityatina/33_Lihusina/` (mtime 10–13.09.2026)
 
 Mechanics-only verbatim extraction (no prose rewriting). Derived-only: `.idml`/`.indd`/print-final PDFs never committed. Coverage gate: `python3 tools/idml_coverage_check.py <source> <mdx>` (independent re-extraction, token+char, floor 90%; `--source-kind pdf` for PDF sources via words-mode).
 

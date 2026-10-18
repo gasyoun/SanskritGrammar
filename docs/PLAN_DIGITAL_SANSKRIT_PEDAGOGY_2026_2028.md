@@ -59,11 +59,11 @@ metadoc is the definition; this plan is how it gets built.
 
 | Handoff | Build | Executor |
 |---|---|---|
-| [H912](https://github.com/gasyoun/Uprava/blob/main/handoffs/H912-Opus_SanskritGrammar_digital-pedagogy-field-established_14.07.26.md) | Parent — field established (this session, done) | Opus 4.8 |
-| [H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md) | **W1a** difficulty/ordering result + method paper | Opus 4.8 |
-| [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md) | **W1b** A62 agenda paper draft | Fable 5 |
-| [H915](https://github.com/gasyoun/Uprava/blob/main/handoffs/H915-Opus_SanskritGrammar_pedagogy-w1c-zaliznyak-onramp_14.07.26.md) | **W1c** Zaliznyak-made-learnable on-ramp | Opus 4.8 |
-| [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md) | **W1d** last-mile pipeline spec | Opus 4.8 |
+| [H912](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H912-Opus_SanskritGrammar_digital-pedagogy-field-established_14.07.26.md) | Parent — field established (this session, done) | Opus 4.8 |
+| [H913](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H913-Opus_SanskritGrammar_pedagogy-w1a-difficulty-ordering_14.07.26.md) | **W1a** difficulty/ordering result + method paper | Opus 4.8 |
+| [H914](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H914-Fable_SanskritGrammar_pedagogy-w1b-agenda-paper-a62_14.07.26.md) | **W1b** A62 agenda paper draft | Fable 5 |
+| [H915](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H915-Opus_SanskritGrammar_pedagogy-w1c-zaliznyak-onramp_14.07.26.md) | **W1c** Zaliznyak-made-learnable on-ramp | Opus 4.8 |
+| [H916](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H916-Opus_SanskritGrammar_pedagogy-w1d-last-mile-pipeline_14.07.26.md) | **W1d** last-mile pipeline spec | Opus 4.8 |
 
 ## The autonomy contract (what the unattended wave-1 agent runs under)
 
