@@ -189,7 +189,7 @@ decision in a Wave-1 path fails release.
 
 ### H1911 — delivery and publication safety
 
-[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1911-Codex_SanskritGrammar_architecture-delivery-publication-safety_29.07.26.md)
+[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1911-Codex_SanskritGrammar_architecture-delivery-publication-safety_29.07.26.md)
 
 ```text
 Read C:\Users\user\Documents\GitHub\SanskritGrammar\docs\PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md and execute the Wave-1 handoff H1911 (Slice A: delivery and publication safety).
@@ -197,7 +197,7 @@ Read C:\Users\user\Documents\GitHub\SanskritGrammar\docs\PLAN_SANSKRITGRAMMAR_AR
 
 ### H1912 — Knauer vertical pilot
 
-[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md)
+[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1912-Codex_SanskritGrammar_architecture-knauer-vertical-pilot_29.07.26.md)
 
 ```text
 Read C:\Users\user\Documents\GitHub\SanskritGrammar\docs\PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md and execute the Wave-1 handoff H1912 (Slice B: Knauer book pilot).
@@ -207,7 +207,7 @@ H1912 depends on H1911.
 
 ### H1913 — SG-MO-021 vertical pilot
 
-[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
+[Handoff](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1913-Codex_SanskritGrammar_architecture-sg-mo-021-vertical-pilot_29.07.26.md)
 
 ```text
 Read C:\Users\user\Documents\GitHub\SanskritGrammar\docs\PLAN_SANSKRITGRAMMAR_ARCHITECTURE_MODERNIZATION_2026_2027.md and execute the Wave-1 handoff H1913 (Slice C: SG-MO-021 future pilot).

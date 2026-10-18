@@ -18,7 +18,7 @@ MG (author of record) + any future session executing a methodichka slice on this
 
 ## Provenance
 - Authored 31-08-2026 by Fable 5 (`claude-fable-5`) executing
-  [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)
+  [H3739](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3739-Fable_SanskritGrammar_metodichka-apte-five-artifact-parity_30.08.26.md)
   — written *retroactively* against two already-shipped sections (раздел I — H1090,
   visaed 17-07-2026; раздел II — H1297) plus the two sections H3739 itself added
   (разделы III–IV).

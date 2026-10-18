@@ -13,7 +13,7 @@ PWG cites the grammar as `P. a,b` (adhyāya, pāda) or `P. a,b,c` (adhyāya, pā
 sūtra). Extraction is anchored on the `<ls>`-resolved citation abbreviation (not a
 bare `a,b,c`-shaped number run in the prose), so a Vedic/epic citation that merely
 *contains* "P." after another abbreviation (`BHĀG. P.` = Bhāgavata Purāṇa) is never
-mistaken for Pāṇini — see [H1888](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1888-Sonnet_SanskritGrammar_panini-crosswalk-nonpanini-citation-purge_29.07.26.md),
+mistaken for Pāṇini — see [H1888](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1888-Sonnet_SanskritGrammar_panini-crosswalk-nonpanini-citation-purge_29.07.26.md),
 which found 74.5% of the previous 14,417 "sūtra" keys were impossible (adhyāya > 8
 or pāda > 4). A structural assertion (adhyāya ∈ 1–8, pāda ∈ 1–4) now guards the
 builder itself. This extraction reads every reference and builds **both directions**:

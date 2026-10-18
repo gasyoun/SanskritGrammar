@@ -48,7 +48,7 @@ These `.md` files are deliberately **not** `.mdx` — the Docusaurus site only i
 
 ## Заморозочная оснастка — два предподачных прохода (H2871)
 
-Между авторской проверкой review-docx ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md))
+Между авторской проверкой review-docx ([H1259](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1259-Fable_SanskritGrammar_m03-final-hybrid-line-edit-freeze_18.07.26.md))
 и рабочей заморозкой **31-10-2026** стоят два прохода: ГОСТ по библиографии и финальная
 сверка чисел. Оба теперь машинные — на день заморозки остается «запустить два скрипта и
 прочитать два отчета», а не изобретать две методики под сроком.

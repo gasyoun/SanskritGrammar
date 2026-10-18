@@ -18,7 +18,7 @@ referees of the Sangram-derived papers; the author when citing counts externally
 
 ## Provenance
 
-- Handoff: [H1229](https://github.com/gasyoun/Uprava/blob/main/handoffs/H1229-Fable_SanskritGrammar_dcs-derived-numbers-adversarial-rederivation_18.07.26.md)
+- Handoff: [H1229](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1229-Fable_SanskritGrammar_dcs-derived-numbers-adversarial-rederivation_18.07.26.md)
 - Model: Fable 5 (`claude-fable-5`), 18-07-2026
 - Corpus: `dcs_full.sqlite` pin `04e0778d3dc971030229179e25eea043d06ff397`
 - Scripts: [sangram/audit/](https://github.com/gasyoun/SanskritGrammar/tree/main/sangram/audit) (rounds 1–3 + machine-readable JSON results)

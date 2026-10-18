@@ -2,7 +2,7 @@
 
 _Created: 29-08-2026 · Last updated: 29-08-2026_
 
-Handoff: [H3550](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3550-OxAlpha_SanskritGrammar_oxalpha-30d-risk-review-gate_26.08.26.md) · Plan: [PLAN_SANSKRITGRAMMAR_OXALPHA_CODE_REVIEW_HARDENING_2026Q3](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_OXALPHA_CODE_REVIEW_HARDENING_2026Q3.md) · Window: **26-07-2026 .. 25-08-2026** (merged-at UTC) · Executor: OxAlpha `x-preview-f-free` (opencode, glm-5.3-flash).
+Handoff: [H3550](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3550-OxAlpha_SanskritGrammar_oxalpha-30d-risk-review-gate_26.08.26.md) · Plan: [PLAN_SANSKRITGRAMMAR_OXALPHA_CODE_REVIEW_HARDENING_2026Q3](https://github.com/gasyoun/SanskritGrammar/blob/main/docs/PLAN_SANSKRITGRAMMAR_OXALPHA_CODE_REVIEW_HARDENING_2026Q3.md) · Window: **26-07-2026 .. 25-08-2026** (merged-at UTC) · Executor: OxAlpha `x-preview-f-free` (opencode, glm-5.3-flash).
 
 ## Method
 

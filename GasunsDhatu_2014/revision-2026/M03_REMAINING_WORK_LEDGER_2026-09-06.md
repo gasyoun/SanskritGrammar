@@ -2,7 +2,7 @@
 
 _Created: 06-09-2026 · Last updated: 06-09-2026_
 
-**Programme:** H4093 portfolio roadmap, W0 item 7 ("restate the existing urgent five as execution order and refresh the M03 remaining-work ledger against the 31-10-2026 freeze"). Handoff: [H4237](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4237-OxAlpha_SanskritGrammar_w0-m03-ledger-urgent-five_06.09.26.md).
+**Programme:** H4093 portfolio roadmap, W0 item 7 ("restate the existing urgent five as execution order and refresh the M03 remaining-work ledger against the 31-10-2026 freeze"). Handoff: [H4237](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4237-OxAlpha_SanskritGrammar_w0-m03-ledger-urgent-five_06.09.26.md).
 **Freeze math:** today 06-09-2026 → hard freeze **31-10-2026** = **55 days**; «Нестор-История» contact November 2026 ([first-finish-line ruling, 18-07-2026](https://github.com/gasyoun/Uprava/blob/main/ARTICLES.md)).
 
 ## 1. Urgent-five execution order (restated, evidence-cited)

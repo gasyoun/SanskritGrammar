@@ -3,7 +3,7 @@
 _Created: 13-08-2026 · Last updated: 13-08-2026_
 
 Audit of stable identifiers consumed by
-[H2492 (Grok 4.6) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md).
+[H2492 (Grok 4.6) — Grammar Lab G1: Whitney + Zalizniak evidence graph and export](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2492-Grok_SanskritGrammar_grammar-lab-g1-evidence-graph_09.08.26.md).
 New loci are minted only where a work has no host-stable section id.
 
 ## Whitney

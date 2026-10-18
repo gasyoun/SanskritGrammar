@@ -2,7 +2,7 @@
 
 _Created: 13-09-2026 · Last updated: 13-09-2026_
 
-**Handoff:** [H4642](https://github.com/gasyoun/Uprava/blob/main/handoffs/H4642-OxAlpha_SanskritGrammar_bibliotheca-epub-wave1_13.09.26.md) · **Executor:** OxAlpha (opencode/z-ai/glm-5.3-flash) · **Rulings:** MG 13-09-2026, D1 (idml wave = toms II–V via the pilot-proven extractor) + D3 (tom XVIII never prints → e-publish from final block PDF).
+**Handoff:** [H4642](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H4642-OxAlpha_SanskritGrammar_bibliotheca-epub-wave1_13.09.26.md) · **Executor:** OxAlpha (opencode/z-ai/glm-5.3-flash) · **Rulings:** MG 13-09-2026, D1 (idml wave = toms II–V via the pilot-proven extractor) + D3 (tom XVIII never prints → e-publish from final block PDF).
 
 ## Deliverables
 

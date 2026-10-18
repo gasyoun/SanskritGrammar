@@ -1,6 +1,6 @@
 # ṇatva/śaṭva rule-vs-fact coverage audit (H6054)
 
-_Created: 06-10-2026 · Author: Gasūns (GLM 5.3 (opencode/zai-coding-plan/glm-5.3)) · Handoff: [H6054](https://github.com/gasyoun/Uprava/blob/main/handoffs/H6054-GLM_SanskritGrammar_natva-shatva-rule-audit_04.10.26.md) (Epic E024)_
+_Created: 06-10-2026 · Author: Gasūns (GLM 5.3 (opencode/zai-coding-plan/glm-5.3)) · Handoff: [H6054](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H6054-GLM_SanskritGrammar_natva-shatva-rule-audit_04.10.26.md) (Epic E024)_
 
 Compares the Paninian **ṇatva/śaṭva** rules as materialised by kosha's H185
 "hybrid-natva-fix" layer (vidyut-prakriya derivations; MG-ruled HYBRIDIZE

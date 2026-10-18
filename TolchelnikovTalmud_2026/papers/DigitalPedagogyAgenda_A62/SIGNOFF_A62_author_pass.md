@@ -4,7 +4,7 @@ _Created: 06-09-2026 · Last updated: 06-09-2026_
 
 **Scope.** Manuscript: [OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/papers/DigitalPedagogyAgenda_A62/OUTLINE_digital-sanskrit-pedagogy-agenda_A62.md)
 (A62, "Digital Sanskrit pedagogy: a research agenda", EN, readiness 4/5). Handoff:
-[H3857](https://github.com/gasyoun/Uprava/blob/main/handoffs/H3857-Fable_Uprava_all-articles-author-voice-pass-workflow_01.09.26.md).
+[H3857](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3857-Fable_Uprava_all-articles-author-voice-pass-workflow_01.09.26.md).
 Model: Fable 5.1 (`claude-fable-5-1`). Date: 06-09-2026. Voice, register and framing only; no
 number, claim or citation altered; mechanical drift gate CLEAN. A first voice pass ran 04-08-2026
 on Fable 5 (`claude-fable-5`, H1874) without a signoff doc; this is the first signoff and covers

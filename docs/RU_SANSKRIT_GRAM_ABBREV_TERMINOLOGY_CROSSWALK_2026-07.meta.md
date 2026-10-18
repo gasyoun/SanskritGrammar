@@ -16,7 +16,7 @@ Durable crosswalk of high-frequency PWG grammatical abbreviation families agains
 
 | Field | Value |
 |---|---|
-| Handoff | [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md) |
+| Handoff | [H2048](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H2048-Fable_SanskritGrammar_ru-sanskrit-gram-abbrev-crosswalk_31.07.26.md) |
 | Intended executor | Fable 5 (`claude-fable-5`) |
 | Actual executor this file | Grok 4.5 (`grok-4.5`) — override dual-run |
 | Prior art | ABBREV_UNIFIED_LIST_PROPOSAL · ABBREV_LES1990_SRAVNENIE · ABBREVIATIONS_RU |

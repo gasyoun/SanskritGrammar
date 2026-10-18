@@ -3,12 +3,12 @@
 _Created: 15-07-2026 · Last updated: 15-07-2026_
 
 Карта данных для переработки **новой Гл. 1 «Понятие глагольного корня»** (после рекомпоновки
-[H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md))
+[H991](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H991-Opus_SanskritGrammar_m03-ch1-ch2-recompose-execute_15.07.26.md))
 по методу пилота Гл. 2
 ([CH2_PILOT_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH2_PILOT_MEMO.md)) /
 Гл. 3 ([CH3_REWORK_MEMO.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH3_REWORK_MEMO.md)).
 Аналог [CH3_DATA_MAP.md](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/CH3_DATA_MAP.md).
-[H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md),
+[H992](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H992-Opus_SanskritGrammar_m03-ch1-prose-rework_15.07.26.md),
 Opus 4.8 (`claude-opus-4-8[1m]`).
 
 > **Природа главы:** концептуальная (вопрос «что такое корень»), а не вычислительная. Поэтому

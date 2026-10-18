@@ -5,7 +5,7 @@ _Created: 15-07-2026 · Last updated: 15-07-2026_
 > **Provenance.** Drafted by Opus 4.8 (`claude-opus-4-8[1m]`) from a three-agent scout of the
 > C5 program, the C3 evidence method, the P2/P3 pilot templates, and the DCS SQLite master.
 > Author decision pending: pick one path (or amend). This is a pre-build decision doc — no
-> pilot code has been written yet. Handoff: [H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md).
+> pilot code has been written yet. Handoff: [H989](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H989-Opus_SanskritGrammar_sangram-p4-tatpurusa_15.07.26.md).
 
 ---
 

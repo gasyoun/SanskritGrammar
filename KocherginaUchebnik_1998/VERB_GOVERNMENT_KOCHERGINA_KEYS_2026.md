@@ -119,6 +119,6 @@ python KocherginaUchebnik_1998/verb_government_lint.py --sheet
 
 | Дата | Что | Кем |
 |---|---|---|
-| 25-09-2026 | Инструмент, TSV и этот отчёт; живой прогон НКРЯ отложен из-за отсутствия токена | [H5400](https://github.com/gasyoun/Uprava/blob/main/handoffs/H5400-Opus_SanskritGrammar_kochergina-answer-key-verb-government-nkrya_24.09.26.md); Opus 5 (`claude-opus-5`) |
+| 25-09-2026 | Инструмент, TSV и этот отчёт; живой прогон НКРЯ отложен из-за отсутствия токена | [H5400](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H5400-Opus_SanskritGrammar_kochergina-answer-key-verb-government-nkrya_24.09.26.md); Opus 5 (`claude-opus-5`) |
 
 _Гасунс_
