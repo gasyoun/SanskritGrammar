@@ -1,0 +1,11 @@
+# token-size-gate: files here are not agent-authored — generated data/assets.
+# Code, docs and reports stay under the 5000-token limit.
+data/**
+sangram/data/**
+review/*.html
+GasunsDhatu_2014/**/*.jsonl
+corpus/**/*.jsonl
+TolchelnikovTalmud_2026/data/**
+
+# shared guard hooks — pre-existing infrastructure, not agent-authored content
+.githooks/pre-push
