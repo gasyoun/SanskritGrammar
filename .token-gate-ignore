@@ -9,3 +9,8 @@ TolchelnikovTalmud_2026/data/**
 
 # shared guard hooks — pre-existing infrastructure, not agent-authored content
 .githooks/pre-push
+
+# guard hooks themselves are infrastructure, not agent-authored content
+.githooks/pre-commit
+.githooks/pre-push
+.githooks/token_size_gate.py
