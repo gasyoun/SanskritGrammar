@@ -1,0 +1,66 @@
+{
+  "_schema_label": "UD v2 (DEPREL/UPOS/lemma); NOT karaka-DCST — see data/ud_sanskrit/claims.yml mapping statement",
+  "_source": "UD_Sanskrit-UFAL, CC BY-SA 4.0, mirror commit 80f88c8 (22-10-2026), data/ud_sanskrit/README.md",
+  "_handoff": "H6842 (WHEEL9 visa item (b))",
+  "n_sentences": 230,
+  "n_tokens": 1843,
+  "UDA1_ca_position": {
+    "proxy": "sentence-initial ca / total CCONJ-च tokens",
+    "total_ca": 30,
+    "sentence_initial_ca": 0,
+    "initial_share_pct": 0.0,
+    "threshold": "0 initial -> PASS",
+    "verdict_ud": "PASS",
+    "verdict_fact": "TRUE"
+  },
+  "UDA2_ov_order": {
+    "proxy": "obj/iobj preceding verbal head / all obj+iobj with VERB/AUX head",
+    "ov": 92,
+    "vo": 11,
+    "total": 103,
+    "ov_share_pct": 89.3,
+    "threshold": ">=66.7% -> PASS",
+    "verdict_ud": "PASS",
+    "verdict_fact": "TRUE"
+  },
+  "UDA3_verbless": {
+    "proxy": "sentences with non-verbal root UPOS / all sentences",
+    "nonverbal_root_sentences": 38,
+    "total_sentences": 230,
+    "share_pct": 16.5,
+    "threshold": ">=5% -> PASS, <5% -> OVERSTATED",
+    "verdict_ud": "PASS",
+    "verdict_fact": "TRUE"
+  },
+  "UDA4_top_lemma": {
+    "proxy": "rank of lemma अस् among VERB/AUX lemmas by token count",
+    "rank_as": 2,
+    "count_as": 20,
+    "distinct_verb_lemmas": 155,
+    "top5": [
+      [
+        "कृ",
+        25
+      ],
+      [
+        "अस्",
+        20
+      ],
+      [
+        "वच्",
+        16
+      ],
+      [
+        "भू",
+        15
+      ],
+      [
+        "ब्रू",
+        15
+      ]
+    ],
+    "threshold": "rank 1 -> PASS, rank 2-3 -> OVERSTATED, worse -> FAIL",
+    "verdict_ud": "OVERSTATED",
+    "verdict_fact": "OVERSTATED"
+  }
+}
