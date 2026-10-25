@@ -1,0 +1,236 @@
+{
+  "arm_a": {
+    "arm": "A-byt5-sanskrit-published",
+    "comparable_to_arm_b_at_token_level": false,
+    "measured_here": false,
+    "metric": "sentence-level perfect match (whole sentence reproduced exactly), not token-level accuracy",
+    "source": {
+      "arxiv": "https://arxiv.org/abs/2409.13920",
+      "authors": "Sebastian Nehrdich, Oliver Hellwig, Kurt Keutzer",
+      "paper": "ByT5-Sanskrit: Sentence-Level Pretraining Outperforms Token-Level Pretraining for Sanskrit NLP",
+      "read_from": "https://arxiv.org/html/2409.13920v1 (full text, tables quoted verbatim)",
+      "url": "https://aclanthology.org/2024.findings-emnlp.805/",
+      "venue": "Findings of EMNLP 2024"
+    },
+    "tables": {
+      "table_3_segmentation_sentence_perfect_match": {
+        "columns": [
+          "model",
+          "DCS 2018 (509k samples)",
+          "SIGHUM (99k samples)",
+          "Hackathon (89k samples)"
+        ],
+        "rows": [
+          [
+            "rcNN-SS",
+            85.2,
+            87.08,
+            77.62
+          ],
+          [
+            "TransLIST",
+            null,
+            93.97,
+            85.47
+          ],
+          [
+            "ByT5-Sanskrit",
+            90.11,
+            93.83,
+            94.29
+          ]
+        ]
+      },
+      "table_7_dcs_joint_tasks_sentence_perfect_match": {
+        "columns": [
+          "task",
+          "mT5 sen",
+          "ByT5 sen",
+          "ByT5 par",
+          "ByT5-Sanskrit sen",
+          "ByT5-Sanskrit par"
+        ],
+        "note": "S = segmentation, L = lemmatisation, M = morphosyntax tagging. No row isolates M alone: every M figure is contaminated by segmentation and/or lemmatisation decisions, and all are sentence-level perfect matches.",
+        "rows": [
+          [
+            "S",
+            76.09,
+            83.71,
+            87.21,
+            84.61,
+            88.21
+          ],
+          [
+            "L",
+            68.27,
+            77.99,
+            82.05,
+            79.88,
+            83.96
+          ],
+          [
+            "S+M",
+            49.94,
+            60.93,
+            71.5,
+            63.86,
+            74.38
+          ],
+          [
+            "L+M",
+            49.23,
+            59.28,
+            69.4,
+            62.0,
+            72.33
+          ],
+          [
+            "S+L+M",
+            49.1,
+            58.75,
+            71.92,
+            61.27,
+            74.31
+          ]
+        ]
+      }
+    },
+    "why": "Arm A is a sequence-level perfect-match figure over joint segmentation+lemmatisation+tagging on the paper's own April-2024 DCS split (dev 8,190 / test 8,398 sentences). Arm B, as specified by H7248, is token-level UPOS/FEATS/lemma accuracy on a freshly frozen stratified sample. The two are not the same metric and not the same split: every Arm A number below is split- AND metric-adjusted and must not be tabulated beside Arm B token accuracies without that label."
+  },
+  "arm_b": {
+    "arm": "B-llm",
+    "blocker": "no Qwen3.5-9B weights reachable from this box: no local Ollama endpoint (127.0.0.1:11434 refused) and no sanctioned API lane for this model; Arm B therefore has no numbers and the comparison stays open.",
+    "measured_here": false,
+    "runner": "python scripts/h7248_tagging_bench.py --predictions data/h7248/predictions/<arm>.jsonl",
+    "status": "NOT MEASURED"
+  },
+  "arm_c": {
+    "arm": "C-majority-floor",
+    "measured_here": true,
+    "note": "zero-knowledge floor: per stratum the single most frequent lemma/UPOS/FEATS string from the other three strata is assigned to every token. Not a tagger; a sanity anchor that any real system must beat.",
+    "per_stratum": {
+      "classical": {
+        "constant_prediction": {
+          "feats": "",
+          "lemma": "tad",
+          "upos": "NOUN"
+        },
+        "denominator": "tokens",
+        "feats_exact_correct": 337,
+        "feats_exact_match": 0.1457,
+        "feats_fn": 5326,
+        "feats_fp": 0,
+        "feats_micro_f1": 0.0,
+        "feats_micro_precision": 0.0,
+        "feats_micro_recall": 0.0,
+        "feats_tp": 0,
+        "gold_tokens_in_stratum": 2313,
+        "lemma_accuracy": 0.0372,
+        "lemma_correct": 86,
+        "tokens_missing_prediction": 0,
+        "tokens_scored": 2313,
+        "upos_accuracy": 0.4436,
+        "upos_correct": 1026
+      },
+      "epic": {
+        "constant_prediction": {
+          "feats": "Case=Cpd",
+          "lemma": "tad",
+          "upos": "NOUN"
+        },
+        "denominator": "tokens",
+        "feats_exact_correct": 196,
+        "feats_exact_match": 0.1197,
+        "feats_fn": 3545,
+        "feats_fp": 1436,
+        "feats_micro_f1": 0.075,
+        "feats_micro_precision": 0.1233,
+        "feats_micro_recall": 0.0539,
+        "feats_tp": 202,
+        "gold_tokens_in_stratum": 1638,
+        "lemma_accuracy": 0.0317,
+        "lemma_correct": 52,
+        "tokens_missing_prediction": 0,
+        "tokens_scored": 1638,
+        "upos_accuracy": 0.4792,
+        "upos_correct": 785
+      },
+      "shastra": {
+        "constant_prediction": {
+          "feats": "",
+          "lemma": "tad",
+          "upos": "NOUN"
+        },
+        "denominator": "tokens",
+        "feats_exact_correct": 264,
+        "feats_exact_match": 0.1248,
+        "feats_fn": 4710,
+        "feats_fp": 0,
+        "feats_micro_f1": 0.0,
+        "feats_micro_precision": 0.0,
+        "feats_micro_recall": 0.0,
+        "feats_tp": 0,
+        "gold_tokens_in_stratum": 2116,
+        "lemma_accuracy": 0.0284,
+        "lemma_correct": 60,
+        "tokens_missing_prediction": 0,
+        "tokens_scored": 2116,
+        "upos_accuracy": 0.4976,
+        "upos_correct": 1053
+      },
+      "vedic": {
+        "constant_prediction": {
+          "feats": "Case=Cpd",
+          "lemma": "tad",
+          "upos": "NOUN"
+        },
+        "denominator": "tokens",
+        "feats_exact_correct": 50,
+        "feats_exact_match": 0.0262,
+        "feats_fn": 4951,
+        "feats_fp": 1853,
+        "feats_micro_f1": 0.0153,
+        "feats_micro_precision": 0.0278,
+        "feats_micro_recall": 0.0106,
+        "feats_tp": 53,
+        "gold_tokens_in_stratum": 1906,
+        "lemma_accuracy": 0.0383,
+        "lemma_correct": 73,
+        "tokens_missing_prediction": 0,
+        "tokens_scored": 1906,
+        "upos_accuracy": 0.352,
+        "upos_correct": 671
+      }
+    }
+  },
+  "gold_sample_sha256": "70c59f6da3692eed43fcc8840e019f1abed20177e5a26a1b86d5d7e4d128a156",
+  "handoff": "H7248",
+  "manifest_sha256": "2bc56e70c847f0a30ef8507307f432a887dff30976bac5dd486d593c0b4408aa",
+  "sample": {
+    "bound_by": "sentences",
+    "by_stratum": {
+      "classical": {
+        "sentences": 250,
+        "tokens": 2313
+      },
+      "epic": {
+        "sentences": 250,
+        "tokens": 1638
+      },
+      "shastra": {
+        "sentences": 250,
+        "tokens": 2116
+      },
+      "vedic": {
+        "sentences": 250,
+        "tokens": 1906
+      }
+    },
+    "sentences": 1000,
+    "tokens": 7973
+  },
+  "tables_markdown": {
+    "arm_a_table_7": "| task | mT5 sen | ByT5 sen | ByT5 par | ByT5-Sanskrit sen | ByT5-Sanskrit par |\n|---|---|---|---|---|---|\n| S | 76.09 | 83.71 | 87.21 | 84.61 | 88.21 |\n| L | 68.27 | 77.99 | 82.05 | 79.88 | 83.96 |\n| S+M | 49.94 | 60.93 | 71.5 | 63.86 | 74.38 |\n| L+M | 49.23 | 59.28 | 69.4 | 62.0 | 72.33 |\n| S+L+M | 49.1 | 58.75 | 71.92 | 61.27 | 74.31 |",
+    "arm_c_per_stratum": "| stratum | tokens | UPOS acc | FEATS exact | FEATS micro-F1 | lemma acc |\n|---|---|---|---|---|---|\n| classical | 2313 | 0.4436 | 0.1457 | 0.0 | 0.0372 |\n| epic | 1638 | 0.4792 | 0.1197 | 0.075 | 0.0317 |\n| shastra | 2116 | 0.4976 | 0.1248 | 0.0 | 0.0284 |\n| vedic | 1906 | 0.352 | 0.0262 | 0.0153 | 0.0383 |"
+  }
+}
