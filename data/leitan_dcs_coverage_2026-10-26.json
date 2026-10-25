@@ -1,0 +1,275 @@
+{
+  "cases": {
+    "Abl": {
+      "sentences": 59008,
+      "tokens": 74565
+    },
+    "Acc": {
+      "sentences": 365771,
+      "tokens": 742293
+    },
+    "Cpd": {
+      "sentences": 396571,
+      "tokens": 841052
+    },
+    "Dat": {
+      "sentences": 43614,
+      "tokens": 65423
+    },
+    "Gen": {
+      "sentences": 189669,
+      "tokens": 270763
+    },
+    "Ins": {
+      "sentences": 175163,
+      "tokens": 277143
+    },
+    "Loc": {
+      "sentences": 154688,
+      "tokens": 243215
+    },
+    "Nom": {
+      "sentences": 561009,
+      "tokens": 1419146
+    },
+    "Voc": {
+      "sentences": 69597,
+      "tokens": 81088
+    }
+  },
+  "compounds": {
+    "sentences": 396571,
+    "tokens": 841052
+  },
+  "correlatives": {
+    "sentences": 21496
+  },
+  "db": "dcs_full.sqlite",
+  "generated": "2026-10-26",
+  "moods": {
+    "Cond": {
+      "sentences": 282,
+      "tokens": 340
+    },
+    "Imp": {
+      "sentences": 46938,
+      "tokens": 56506
+    },
+    "Ind": {
+      "sentences": 303801,
+      "tokens": 364771
+    },
+    "Jus": {
+      "sentences": 4849,
+      "tokens": 5258
+    },
+    "Opt": {
+      "sentences": 78540,
+      "tokens": 91912
+    },
+    "Pot": {
+      "sentences": 21,
+      "tokens": 32
+    },
+    "Prec": {
+      "sentences": 545,
+      "tokens": 577
+    },
+    "Sub": {
+      "sentences": 3782,
+      "tokens": 4325
+    }
+  },
+  "numerals": {
+    "sentences": 54665,
+    "tokens": 71895
+  },
+  "particles": {
+    "api": {
+      "sentences": 34988,
+      "tokens": 37474
+    },
+    "atha": {
+      "sentences": 22350,
+      "tokens": 22984
+    },
+    "ca": {
+      "sentences": 140118,
+      "tokens": 174415
+    },
+    "eva": {
+      "sentences": 60784,
+      "tokens": 65472
+    },
+    "evam": {
+      "sentences": 16211,
+      "tokens": 16913
+    },
+    "hi": {
+      "sentences": 23270,
+      "tokens": 23914
+    },
+    "iti": {
+      "sentences": 69231,
+      "tokens": 78511
+    },
+    "khalu": {
+      "sentences": 2454,
+      "tokens": 2485
+    },
+    "na": {
+      "sentences": 53284,
+      "tokens": 63741
+    },
+    "tathā": {
+      "sentences": 24028,
+      "tokens": 24787
+    },
+    "tu": {
+      "sentences": 35928,
+      "tokens": 37081
+    },
+    "vā": {
+      "sentences": 19381,
+      "tokens": 25488
+    },
+    "yathā": {
+      "sentences": 13146,
+      "tokens": 13912
+    }
+  },
+  "per_text": [
+    {
+      "gdv_per_1000": 3.6,
+      "gen_per_1000": 53.9,
+      "opt_per_1000": 8.3,
+      "preverb_per_1000": 73.0,
+      "text": "Mahābhārata",
+      "tokens": 1147887,
+      "voc_per_1000": 25.6
+    },
+    {
+      "gdv_per_1000": 3.1,
+      "gen_per_1000": 55.0,
+      "opt_per_1000": 3.7,
+      "preverb_per_1000": 83.8,
+      "text": "Rāmāyaṇa",
+      "tokens": 261568,
+      "voc_per_1000": 16.7
+    },
+    {
+      "gdv_per_1000": 1.5,
+      "gen_per_1000": 69.0,
+      "opt_per_1000": 5.7,
+      "preverb_per_1000": 16.8,
+      "text": "Ṛgveda",
+      "tokens": 169972,
+      "voc_per_1000": 45.1
+    },
+    {
+      "gdv_per_1000": 1.1,
+      "gen_per_1000": 39.2,
+      "opt_per_1000": 14.9,
+      "preverb_per_1000": 74.6,
+      "text": "Śatapathabrāhmaṇa",
+      "tokens": 144139,
+      "voc_per_1000": 4.8
+    },
+    {
+      "gdv_per_1000": 7.1,
+      "gen_per_1000": 33.6,
+      "opt_per_1000": 32.4,
+      "preverb_per_1000": 59.1,
+      "text": "Suśrutasaṃhitā",
+      "tokens": 146721,
+      "voc_per_1000": 0.2
+    },
+    {
+      "gdv_per_1000": 3.2,
+      "gen_per_1000": 47.0,
+      "opt_per_1000": 3.7,
+      "preverb_per_1000": 71.1,
+      "text": "Kathāsaritsāgara",
+      "tokens": 111298,
+      "voc_per_1000": 7.4
+    },
+    {
+      "gdv_per_1000": 7.0,
+      "gen_per_1000": 54.1,
+      "opt_per_1000": 19.4,
+      "preverb_per_1000": 60.2,
+      "text": "Carakasaṃhitā",
+      "tokens": 94852,
+      "voc_per_1000": 0.8
+    },
+    {
+      "gdv_per_1000": 2.9,
+      "gen_per_1000": 63.2,
+      "opt_per_1000": 8.0,
+      "preverb_per_1000": 72.4,
+      "text": "Bhāgavatapurāṇa",
+      "tokens": 77801,
+      "voc_per_1000": 14.1
+    }
+  ],
+  "preverbs": {
+    "lemmas": 10017,
+    "sentences": 281118,
+    "tokens": 369871
+  },
+  "tenses": {
+    "Fut": {
+      "sentences": 20524,
+      "tokens": 23131
+    },
+    "Impf": {
+      "sentences": 43658,
+      "tokens": 46695
+    },
+    "Past": {
+      "sentences": 101266,
+      "tokens": 111167
+    },
+    "Plp": {
+      "sentences": 163,
+      "tokens": 167
+    },
+    "Pqp": {
+      "sentences": 33,
+      "tokens": 33
+    },
+    "Pres": {
+      "sentences": 310864,
+      "tokens": 417424
+    }
+  },
+  "totals": {
+    "sentences": 754726,
+    "texts": 270,
+    "tokens": 5688416
+  },
+  "verbforms": {
+    "Conv": {
+      "sentences": 85671,
+      "tokens": 102054
+    },
+    "Gdv": {
+      "sentences": 25806,
+      "tokens": 28260
+    },
+    "Inf": {
+      "sentences": 11337,
+      "tokens": 11753
+    },
+    "Part": {
+      "sentences": 261796,
+      "tokens": 341556
+    }
+  },
+  "voices": {
+    "Pass": {
+      "sentences": 34156,
+      "tokens": 36701
+    }
+  }
+}
