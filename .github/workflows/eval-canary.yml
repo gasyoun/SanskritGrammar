@@ -1,0 +1,28 @@
+name: eval canary
+
+on:
+  pull_request:
+    paths:
+      - "evals/**"
+      - "data/ud_sanskrit/**"
+      - "tools/verify_claims_ud.py"
+  push:
+    branches: [main]
+    paths:
+      - "evals/**"
+      - "data/ud_sanskrit/**"
+      - "tools/verify_claims_ud.py"
+
+permissions:
+  contents: read
+
+jobs:
+  ud-claims-probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe replay + mutation must fail
+        run: python evals/run_eval.py --canary
