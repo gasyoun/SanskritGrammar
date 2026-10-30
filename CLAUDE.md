@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 15-09-2026_
+_Created: 20-07-2026 · Last updated: 30-10-2026_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
@@ -76,7 +76,8 @@ Three layers in one repo (full orientation:
 | `uv run sg pipeline check sg-mo-021-future` | validate the pinned SG-MO-021 Slice C pipeline before generation |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
 
-**CI enforcement (H1840):** `.github/workflows/ci.yml` job `validators` is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
+**CI enforcement (H1840):** `.github/workflows/ci.yml` job `quality` ("Required
+Python, contract, frontend, and site gates"; step "Pipeline validators") is a **blocking** gate on every PR/push to `main`. It runs, each with nonzero-exit failure:
 
 1. `python scripts/refresh_published_figures.py --check` (H2298 — shape guard on the vendored cross-repo asset)
 2. `python scripts/check_claims_consistency.py`
