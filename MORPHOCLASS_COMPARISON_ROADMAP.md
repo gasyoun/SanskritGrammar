@@ -136,10 +136,10 @@ since 09-07-2026 — per-mechanism attribution of the §-concordance (движо
       same day by a prior OxAlpha pass) — routing is DONE, checkbox ticked. **The ruling
       itself is not** — it is Ivan/I. E. Tolchelnikov's call and no agent can supply it; the
       next checkbox stays open until he answers.
-- [ ] **Apply the per-mechanism attribution to
+- [ ] **Apply the per-mechanism attribution** (human-only gate — Tolchelnikov's call,
+      no agent can supply it until he answers) **to
       [`zalizniak-concordance.mdx`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/zalizniak-concordance.mdx)**
-      per that ruling — human-only gate: Tolchelnikov's attribution call, no agent can
-      supply it (unminted agent edit — mint in a next wave only after the gate flips).
+      per that ruling (unminted agent edit — mint in a next wave only after the gate flips).
 
 _No other open items: every checkbox-class phase (1–5) is shipped; the intra-Zalizniak
 2nd pass lives in
