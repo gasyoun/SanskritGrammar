@@ -1,0 +1,39 @@
+{
+  "name": "Толчельников, И. Э.",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/ivan-tolchelnikov",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/ivan-tolchelnikov.json"
+  },
+  "roles": [
+    "author",
+    "translator"
+  ],
+  "slug": "ivan-tolchelnikov",
+  "variants": [
+    {
+      "form": "Tolchelnikov, I."
+    }
+  ],
+  "works": [
+    {
+      "id": "tolchelnikov-2026",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/tolchelnikov-2026.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/tolchelnikov-2026",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/tolchelnikov-2026.json"
+      },
+      "title": "Руководство по санскритской морфонологии (Талмуд санскрита)",
+      "year": 2026
+    },
+    {
+      "id": "zalizniak-1975",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/zalizniak-1975.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1975",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1975.json"
+      },
+      "title": "Морфонологическая классификация санскритских глагольных корней",
+      "year": 1975
+    }
+  ]
+}

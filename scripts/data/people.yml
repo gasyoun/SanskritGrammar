@@ -1,0 +1,98 @@
+# people.yml — author-identity registry with name-variant map (Angle-B B6).
+#
+# Source of truth (with books.yml) for scripts/build_bibtex.py, which
+# regenerates static/people/<slug>.json + <slug>.html + index.json — the
+# ACL Anthology author-pages model (https://aclanthology.org/info/author-pages/)
+# on this static site: one page per person, variants recorded for identity
+# resolution, works linked by their stable book IDs.
+#
+# Field contract:
+#   slug     — stable person ID, lowercase-transliterated firstname-surname.
+#   name     — canonical display form (the spelling this corpus cites).
+#   variants — other attested spellings, for search/disambiguation ONLY.
+#              A variant a source should NOT use (the Zaliznyak y-spelling,
+#              superseded per the H449 evidence) is recorded with a
+#              `rejected: true` flag so the map explains itself.
+#   roles    — author | translator | editor (from the books' own records).
+#   works    — keys from scripts/data/books.yml; cross-validated by the
+#              generator (every books.yml author appears here with that
+#              work; every work key here exists there).
+# Every variant is transcribed from the corpus's own evidence (book mdx
+# title pages, errata `work:` records, READMEs, roadmap §3's H449 note) —
+# never invented; given names are not expanded beyond attested initials.
+
+people:
+  - slug: andrey-zalizniak
+    name: "Зализняк, А. А."
+    variants:
+      - { form: "Andrei Zalizniak" }
+      - { form: "Zalizniak, A. A." }
+      - { form: "Зализняк Андрей Анатольевич" }
+      - { form: "Zaliznyak", rejected: true,
+          note: "y-spelling historically printed, superseded by the i-spelling the corpus cites (H449: Tolchelnikov's own References already cite «Andrei Zalizniak. 1975.»)" }
+    roles: [author]
+    works: [zalizniak-1975, zalizniak-1978, zalizniak-2004]
+
+  - slug: vaman-shivaram-apte
+    name: "Apte, Vaman Shivaram"
+    variants:
+      - { form: "Ваман Шиварам Апте" }
+    roles: [author]
+    works: [apte-1885]
+
+  - slug: georg-buhler
+    name: "Bühler, Georg"
+    variants:
+      - { form: "Г. Бюлер" }
+      - { form: "Bühler" }
+    roles: [author]
+    works: [buhler-1923]
+
+  - slug: marcis-gasuns
+    name: "Гасунс, Марцис Юрисович"
+    variants:
+      - { form: "Гасунс М.Ю." }
+      - { form: "Gasuns, Marcis" }
+    roles: [author]
+    works: [gasuns-2014]
+
+  - slug: friedrich-knauer
+    name: "Knauer, Friedrich"
+    variants:
+      - { form: "Кнауэр" }
+    roles: [author]
+    works: [knauer-1908]
+
+  - slug: vera-kochergina
+    name: "Кочергина, В. А."
+    variants:
+      - { form: "Kochergina, V. A." }
+    roles: [author]
+    works: [kochergina-1998]
+
+  - slug: ivan-tolchelnikov
+    name: "Толчельников, И. Э."
+    variants:
+      - { form: "Tolchelnikov, I." }
+    roles: [author, translator]
+    works: [tolchelnikov-2026, zalizniak-1975]
+
+  - slug: william-dwight-whitney
+    name: "Whitney, William Dwight"
+    variants:
+      - { form: "Уитни" }
+    roles: [author]
+    works: [whitney-1889]
+
+  - slug: likhushina-n-p
+    name: "Лихушина, Н. П."
+    variants:
+      - { form: "N. P. Likhushina" }
+    roles: [translator]
+    works: [apte-1885, buhler-1923]
+
+  - slug: ishimbaev-m
+    name: "Ishimbaev, M."
+    variants: []
+    roles: [editor]
+    works: [zalizniak-1975]

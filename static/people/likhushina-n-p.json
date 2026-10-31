@@ -1,0 +1,38 @@
+{
+  "name": "Лихушина, Н. П.",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/likhushina-n-p",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/likhushina-n-p.json"
+  },
+  "roles": [
+    "translator"
+  ],
+  "slug": "likhushina-n-p",
+  "variants": [
+    {
+      "form": "N. P. Likhushina"
+    }
+  ],
+  "works": [
+    {
+      "id": "apte-1885",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/apte-1885.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/apte-1885",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/apte-1885.json"
+      },
+      "title": "Учебник по санскритскому синтаксису",
+      "year": 1885
+    },
+    {
+      "id": "buhler-1923",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/buhler-1923.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/buhler-1923",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/buhler-1923.json"
+      },
+      "title": "Leitfaden für den elementaren Cursus des Sanskrit",
+      "year": 1923
+    }
+  ]
+}
