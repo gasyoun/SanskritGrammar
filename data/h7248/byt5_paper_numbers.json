@@ -1,0 +1,49 @@
+{
+  "handoff": "H7248",
+  "pinned_on": "2026-10-24",
+  "source": {
+    "paper": "ByT5-Sanskrit: Sentence-Level Pretraining Outperforms Token-Level Pretraining for Sanskrit NLP",
+    "authors": "Sebastian Nehrdich, Oliver Hellwig, Kurt Keutzer",
+    "venue": "Findings of EMNLP 2024",
+    "url": "https://aclanthology.org/2024.findings-emnlp.805/",
+    "arxiv": "https://arxiv.org/abs/2409.13920",
+    "read_from": "https://arxiv.org/html/2409.13920v1 (full text, tables quoted verbatim)"
+  },
+  "correction_to_handoff_premise": {
+    "handoff_claimed": "its DCS table reports 90.11 / 93.83 / 94.29 on three tagging metrics",
+    "actual": "90.11 / 93.83 / 94.29 are Table 3 sentence-level perfect matches on three WORD SEGMENTATION datasets (DCS 2018 / SIGHUM / Hackathon), not tagging metrics.",
+    "table_3_caption": "Table 3: Sentence level perfect matches on previous Sanskrit word segmentation tasks.",
+    "consequence": "No published ByT5-Sanskrit token-level UPOS/FEATS/lemma tagging number exists to compare against. The paper's only morphosyntax-bearing figures are sentence-level perfect matches of JOINT tasks (Table 7)."
+  },
+  "metric": "sentence-level perfect match (whole sentence reproduced exactly), not token-level accuracy",
+  "comparability_note": "Arm A is a sequence-level perfect-match figure over joint segmentation+lemmatisation+tagging on the paper's own April-2024 DCS split (dev 8,190 / test 8,398 sentences). Arm B, as specified by H7248, is token-level UPOS/FEATS/lemma accuracy on a freshly frozen stratified sample. The two are not the same metric and not the same split: every Arm A number below is split- AND metric-adjusted and must not be tabulated beside Arm B token accuracies without that label.",
+  "tables": {
+    "table_3_segmentation_sentence_perfect_match": {
+      "columns": ["model", "DCS 2018 (509k samples)", "SIGHUM (99k samples)", "Hackathon (89k samples)"],
+      "rows": [
+        ["rcNN-SS", 85.2, 87.08, 77.62],
+        ["TransLIST", null, 93.97, 85.47],
+        ["ByT5-Sanskrit", 90.11, 93.83, 94.29]
+      ]
+    },
+    "table_7_dcs_joint_tasks_sentence_perfect_match": {
+      "columns": ["task", "mT5 sen", "ByT5 sen", "ByT5 par", "ByT5-Sanskrit sen", "ByT5-Sanskrit par"],
+      "rows": [
+        ["S", 76.09, 83.71, 87.21, 84.61, 88.21],
+        ["L", 68.27, 77.99, 82.05, 79.88, 83.96],
+        ["S+M", 49.94, 60.93, 71.5, 63.86, 74.38],
+        ["L+M", 49.23, 59.28, 69.4, 62.0, 72.33],
+        ["S+L+M", 49.1, 58.75, 71.92, 61.27, 74.31]
+      ],
+      "note": "S = segmentation, L = lemmatisation, M = morphosyntax tagging. No row isolates M alone: every M figure is contaminated by segmentation and/or lemmatisation decisions, and all are sentence-level perfect matches."
+    }
+  },
+  "split": {
+    "dcs_snapshot": "April 2024",
+    "sentences_total": 601403,
+    "dev_sentences": 8190,
+    "test_sentences": 8398,
+    "test_bias": "test and validation splits contain no heuristically reconstructed forms and are therefore strongly biased towards Vedic texts (paper §5.5)",
+    "available_as_file": false
+  }
+}
