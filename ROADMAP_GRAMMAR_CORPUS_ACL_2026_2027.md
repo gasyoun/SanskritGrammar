@@ -596,8 +596,7 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   raw numbers
   [`scripts/data/q42_tracer_style_recall_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q42_tracer_style_recall_evaluation.json).
   PR: _link filled in at merge_.
-- [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
-  DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
+- [ ] **Angle-B site backlog B3–B8 (§3)** — B1–B7 shipped/superseded (H1514, B3/B4/B6 roadmap-drain 31-10-2026, B7 A06, B5 superseded by the H1841/H2300 offline search); B8 (DOIs via Zenodo) fenced owner-only — MG @DECIDE, blocked until ruled (GTD row Y4H).
   **B7 shipped (A06, 25-09-2026):** SHA-256 fixity manifest for every tracked
   `.doc`/`.docx` source ([`scripts/build_source_checksums.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_source_checksums.py)).
   Owner residual: a human with `workflow`-scope push adds
