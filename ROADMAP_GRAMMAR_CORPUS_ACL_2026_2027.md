@@ -603,7 +603,16 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   Owner residual: a human with `workflow`-scope push adds
   `uv run python scripts/build_source_checksums.py --check` to
   `.github/workflows/ci.yml`'s `validators` step (the agent push token lacked
-  that scope). B3–B6 and B8 remain open. PR: _link filled in at merge_.
+  that scope).
+  **B3 shipped (roadmap-drain 31-10-2026):** per-page BibTeX + bulk `all.bib` —
+  [`scripts/data/books.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/books.yml)
+  (citation registry; bibliographic facts transcribed from each book's own
+  README / errata `work:` / title page) →
+  [`scripts/build_bibtex.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_bibtex.py)
+  regenerates `static/bibtex/<key>.bib` ×10 + `static/bibtex/all.bib` (served
+  by the Docusaurus static dir, one fetch cites the corpus); freshness gated
+  by `uv run python scripts/build_bibtex.py --check` in the CI `validators`
+  step. B4–B6 and B8 remain open. PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.

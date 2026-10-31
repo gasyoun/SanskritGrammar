@@ -7,6 +7,8 @@
     "postinstall": "patch-package",
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",
+    "bibtex": "python scripts/build_bibtex.py",
+    "check-bibtex": "python scripts/build_bibtex.py --check",
     "errata:print": "python scripts/build_errata_print_sheet.py",
     "claims": "python scripts/build_claims.py",
     "check-claims": "python scripts/check_claims_consistency.py && python scripts/claims_schema_validate.py --all",
