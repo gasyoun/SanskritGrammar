@@ -1,27 +1,41 @@
 #!/usr/bin/env python3
-"""Generate per-book BibTeX + bulk all.bib for the digitized corpus (Angle-B B3).
+"""Generate per-book BibTeX + bulk all.bib and the ID-representation layer.
 
-Reads scripts/data/books.yml (the citation registry — the ONLY hand-edited
-input) and regenerates static/bibtex/<key>.bib (one entry per book) plus
-static/bibtex/all.bib (bulk, all books). The files are served verbatim by the
-Docusaurus static dir, so /SanskritGrammar/bibtex/all.bib makes the whole
-corpus citable in one fetch — the ACL Anthology's per-page-BibTeX + bulk
-model (https://aclanthology.org/faq/), as roadmap §3 Angle-B B3 specifies.
+Angle-B B3: scripts/data/books.yml (the citation registry — the ONLY
+hand-edited input) -> static/bibtex/<key>.bib (one entry per book) plus
+static/bibtex/all.bib (bulk). The ACL Anthology's per-page-BibTeX + bulk
+model (https://aclanthology.org/faq/).
+
+Angle-B B4 — multi-representation URLs, "one ID, many representations"
+(https://aclanthology.org/info/ids/): every corpus ID also gets
+  static/id/<key>.json  machine-readable metadata (self-describing: lists
+                          its own representations)
+  static/id/<key>.html   human landing served at /SanskritGrammar/id/<key>
+                          (GitHub Pages serves foo.html at the clean URL
+                          /foo), carrying <link rel=alternate> entries for
+                          the BibTeX and JSON representations.
+  static/id/index.json   the ID inventory (bulk discovery).
+B3's published paths (bibtex/<key>.bib, all.bib) are byte-stable — B4 only
+adds the id/ layer on top of the same registry and the same gate.
 
 Deterministic by construction: no timestamps, LF endings, key-sorted bulk
 order — so `--check` is a byte-stable freshness gate (CI validators step,
-same contract as consolidation_ledger_refresh --check).
+same contract as consolidation_ledger_refresh --check). JSON is
+ensure_ascii=False + sorted keys; HTML is entity-escaped UTF-8.
 
 Bibliographic facts live in books.yml, transcribed from each book's own
 evidence (README.md / errata.yml `work:` / mdx title page); the script adds
-only the derived `url` field. It also re-derives the publishable-book-dir set
-from the tracked .mdx inventory (dir-level mirror of src/discovery.mjs: skip
-dirs + deny segments, see DEFAULT_SKIP_DIRS/DENY_SEGMENTS there) and refuses
-a registry entry whose dir is not a publishable book dir — a book that stops
-being discovered can't keep a stale citation, and a dir-year mismatch (name
-says 1923, registry says 1919) is a transcription error, not a style choice.
+only derived URLs. SITE_BASE mirrors docusaurus.config.mjs (url + baseUrl) —
+if the site moves, update both. The script also re-derives the
+publishable-book-dir set from the tracked .mdx inventory (dir-level mirror
+of src/discovery.mjs: skip dirs + deny segments) and refuses a registry
+entry whose dir is not a publishable book dir — a book that stops being
+discovered can't keep a stale citation, and a dir-year mismatch (name says
+1923, registry says 1919) is a transcription error, not a style choice.
 """
 
+import html
+import json
 import subprocess
 import sys
 from pathlib import Path
@@ -34,7 +48,10 @@ sys.stderr.reconfigure(encoding="utf-8")
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "scripts" / "data" / "books.yml"
 OUT_DIR = ROOT / "static" / "bibtex"
+ID_DIR = ROOT / "static" / "id"
 REPO_URL = "https://github.com/gasyoun/SanskritGrammar"
+# Mirror of docusaurus.config.mjs url + baseUrl — keep both in sync.
+SITE_BASE = "https://gasyoun.github.io/SanskritGrammar"
 
 # Dir-level mirror of src/discovery.mjs — keep in sync with that module
 # (the site build is the authority; this check only needs to refuse a
@@ -125,11 +142,89 @@ def render_entry(book: dict) -> str:
     return f"@{book['type']}{{{book['key']},\n{body}\n}}\n"
 
 
+def plain(text: str) -> str:
+    """Strip BibTeX case-protection braces for display surfaces (json/html) —
+    `{C}ursus` is .bib syntax, not part of the title a human or a JSON
+    consumer should see."""
+    return str(text).replace("{", "").replace("}", "")
+
+
+def representations(key: str) -> dict[str, str]:
+    return {
+        "html": f"{SITE_BASE}/id/{key}",
+        "bibtex": f"{SITE_BASE}/bibtex/{key}.bib",
+        "json": f"{SITE_BASE}/id/{key}.json",
+    }
+
+
+def render_meta(book: dict) -> str:
+    meta = {
+        "id": book["key"],
+        "type": book["type"],
+        "dir": book["dir"],
+        "author": plain(book["author"]),
+        "title": plain(book["title"]),
+        "year": book["year"],
+        "representations": representations(book["key"]),
+        "site_section": f"{SITE_BASE}/grammars",
+        "source": f"{REPO_URL}/tree/main/{book['dir']}",
+    }
+    if book.get("note"):
+        meta["note"] = plain(book["note"])
+    return json.dumps(meta, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+
+
+def render_landing(book: dict) -> str:
+    key = book["key"]
+    title, author, year = plain(book["title"]), plain(book["author"]), book["year"]
+    reps = representations(key)
+    return f"""<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>{html.escape(key)} — {html.escape(title)}</title>
+<link rel="alternate" type="application/x-bibtex" href="{reps['bibtex']}">
+<link rel="alternate" type="application/json" href="{reps['json']}">
+</head>
+<body>
+<h1>{html.escape(title)}</h1>
+<p>{html.escape(author)} · {year} · identifier <code>{html.escape(key)}</code></p>
+<ul>
+<li><a href="{reps['bibtex']}">BibTeX</a></li>
+<li><a href="{reps['json']}">Metadata (JSON)</a></li>
+<li><a href="{SITE_BASE}/grammars">Site section</a></li>
+<li><a href="{REPO_URL}/tree/main/{book['dir']}">Source in repository</a></li>
+</ul>
+</body>
+</html>
+"""
+
+
 def render_all(books: list[dict]) -> dict[str, str]:
+    """Every generated artifact, as ROOT-relative path -> file text."""
     ordered = sorted(books, key=lambda b: b["key"])
-    files = {f"{b['key']}.bib": render_entry(b) for b in ordered}
-    files["all.bib"] = "".join(render_entry(b) for b in ordered)
+    files: dict[str, str] = {}
+    for b in ordered:
+        files[f"bibtex/{b['key']}.bib"] = render_entry(b)
+        files[f"id/{b['key']}.json"] = render_meta(b)
+        files[f"id/{b['key']}.html"] = render_landing(b)
+    files["bibtex/all.bib"] = "".join(render_entry(b) for b in ordered)
+    files["id/index.json"] = json.dumps(
+        {"count": len(ordered), "ids": [b["key"] for b in ordered]},
+        ensure_ascii=False, indent=2, sort_keys=True,
+    ) + "\n"
     return files
+
+
+def scan_disk() -> dict[str, str]:
+    out: dict[str, str] = {}
+    for base, pattern in ((OUT_DIR, "*.bib"), (ID_DIR, "*.json"), (ID_DIR, "*.html")):
+        if base.is_dir():
+            for p in sorted(base.glob(pattern)):
+                out[f"{base.name}/{p.name}"] = (
+                    p.read_text(encoding="utf-8").replace("\r\n", "\n")
+                )
+    return out
 
 
 def main(argv: list[str]) -> int:
@@ -137,16 +232,10 @@ def main(argv: list[str]) -> int:
     books = load_registry()
     validate(books)
     expected = render_all(books)
+    on_disk = scan_disk()
 
-    on_disk = {p.name: p.read_text(encoding="utf-8").replace("\r\n", "\n")
-               for p in sorted(OUT_DIR.glob("*.bib"))} if OUT_DIR.is_dir() else {}
-    drift = []
-    for name, text in sorted(expected.items()):
-        # EOL-insensitive: a Windows autocrlf checkout (CRLF on disk) must
-        # still compare fresh — drift means content, not line endings.
-        if on_disk.get(name) != text:
-            drift.append(name)
-    stale = [n for n in on_disk if n not in expected]
+    drift = [n for n, text in sorted(expected.items()) if on_disk.get(n) != text]
+    stale = [n for n in sorted(on_disk) if n not in expected]
 
     if check:
         if drift or stale:
@@ -158,13 +247,14 @@ def main(argv: list[str]) -> int:
         print(f"bibtex: fresh ({len(books)} books, {len(expected)} files)")
         return 0
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for name, text in sorted(expected.items()):
-        (OUT_DIR / name).write_bytes(text.encode("utf-8"))
-    for name in stale:
-        (OUT_DIR / name).unlink()
-    print(f"bibtex: {len(books)} entries -> {OUT_DIR.relative_to(ROOT)}/"
-          f"all.bib + {len(books)} per-book files")
+    for rel in sorted(expected):
+        path = ROOT / "static" / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(expected[rel].encode("utf-8"))
+    for rel in stale:
+        (ROOT / "static" / rel).unlink()
+    print(f"bibtex: {len(books)} entries -> static/bibtex/ (all.bib + "
+          f"{len(books)} .bib) + static/id/ ({len(books)} .json + {len(books)} .html + index.json)")
     return 0
 
 
