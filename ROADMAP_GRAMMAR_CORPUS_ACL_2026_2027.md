@@ -622,7 +622,23 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   `static/id/index.json` (ID inventory). One ID → page/.bib/.json, the
   Anthology `/{id}` contract approximated statically; B3's published
   `bibtex/` paths byte-stable. The `--check` gate now covers all 32 files.
-  B5, B6 and B8 remain open. PR: _link filled in at merge_.
+  **B5 superseded (roadmap-drain 31-10-2026):** site search already ships —
+  H1841 wired `@easyops-cn/docusaurus-search-local` (offline full-text, no
+  Algolia/Google key, verified cross-book) and H2300 fixed Devanāgarī
+  indexing; a Google Programmable Search Engine would need a human-created
+  engine ID and duplicate that function. Skipped as superseded, not shipped;
+  a CSE remains possible later if its coverage ever beats the offline index.
+  **B6 shipped (roadmap-drain 31-10-2026):** `people.yaml` author-identity
+  registry with name-variant map —
+  [`scripts/data/people.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/people.yml)
+  (10 persons: authors + Likhushina/Ishimbaev as translator/editor; every
+  variant attested in the corpus, and the superseded y-spelling recorded as
+  `rejected: true` with the H449 rationale) → the same generator emits
+  `static/people/<slug>.json` + `<slug>.html` (Anthology author-pages model
+  at `/SanskritGrammar/people/<slug>`, works linked by stable book IDs) +
+  `people/index.json`; cross-registry validation refuses a book whose author
+  is no person's canonical name. The `--check` gate now covers all 53 files.
+  B8 remains open. PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.

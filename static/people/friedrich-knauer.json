@@ -1,0 +1,28 @@
+{
+  "name": "Knauer, Friedrich",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/friedrich-knauer",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/friedrich-knauer.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "friedrich-knauer",
+  "variants": [
+    {
+      "form": "Кнауэр"
+    }
+  ],
+  "works": [
+    {
+      "id": "knauer-1908",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/knauer-1908.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/knauer-1908",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/knauer-1908.json"
+      },
+      "title": "Фразы (для упражненія въ грамматическихъ формахъ)",
+      "year": 1908
+    }
+  ]
+}

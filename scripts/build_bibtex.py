@@ -47,8 +47,10 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY = ROOT / "scripts" / "data" / "books.yml"
+PEOPLE_REGISTRY = ROOT / "scripts" / "data" / "people.yml"
 OUT_DIR = ROOT / "static" / "bibtex"
 ID_DIR = ROOT / "static" / "id"
+PEOPLE_DIR = ROOT / "static" / "people"
 REPO_URL = "https://github.com/gasyoun/SanskritGrammar"
 # Mirror of docusaurus.config.mjs url + baseUrl — keep both in sync.
 SITE_BASE = "https://gasyoun.github.io/SanskritGrammar"
@@ -106,6 +108,46 @@ def load_registry() -> list[dict]:
     if not isinstance(books, list) or not books:
         raise ValueError(f"{REGISTRY.relative_to(ROOT)}: no `books:` list")
     return books
+
+
+def load_people() -> list[dict]:
+    data = yaml.safe_load(PEOPLE_REGISTRY.read_text(encoding="utf-8"))
+    people = data.get("people") if isinstance(data, dict) else None
+    if not isinstance(people, list) or not people:
+        raise ValueError(f"{PEOPLE_REGISTRY.relative_to(ROOT)}: no `people:` list")
+    return people
+
+
+def validate_people(people: list[dict], books: list[dict]) -> None:
+    """Cross-registry consistency (B6): every work key exists in books.yml,
+    slugs are unique, and every book's author is the canonical name of some
+    person claiming that work — a book whose author string matches no person
+    record is an identity gap, not a formatting choice."""
+    errors: list[str] = []
+    slugs = [p.get("slug") for p in people]
+    if len(set(slugs)) != len(slugs):
+        errors.append("duplicate `slug` values")
+    book_keys = {b["key"]: b for b in books}
+    for p in people:
+        where = f"[{p.get('slug', '?')}]"
+        for field in ("slug", "name", "roles", "works"):
+            if not p.get(field):
+                errors.append(f"{where} missing `{field}`")
+        for w in p.get("works", []):
+            if w not in book_keys:
+                errors.append(f"{where} unknown work key {w!r}")
+    for b in books:
+        claimed = any(
+            b["key"] in (p.get("works") or []) and p.get("name") == b.get("author")
+            for p in people
+        )
+        if not claimed:
+            errors.append(
+                f"[{b.get('key', '?')}] author {b.get('author')!r} is no person's "
+                f"canonical name for that work"
+            )
+    if errors:
+        raise ValueError("people.yml invalid:\n  - " + "\n  - ".join(errors))
 
 
 def validate(books: list[dict]) -> None:
@@ -200,9 +242,10 @@ def render_landing(book: dict) -> str:
 """
 
 
-def render_all(books: list[dict]) -> dict[str, str]:
+def render_all(books: list[dict], people: list[dict]) -> dict[str, str]:
     """Every generated artifact, as ROOT-relative path -> file text."""
     ordered = sorted(books, key=lambda b: b["key"])
+    books_by_key = {b["key"]: b for b in ordered}
     files: dict[str, str] = {}
     for b in ordered:
         files[f"bibtex/{b['key']}.bib"] = render_entry(b)
@@ -213,12 +256,86 @@ def render_all(books: list[dict]) -> dict[str, str]:
         {"count": len(ordered), "ids": [b["key"] for b in ordered]},
         ensure_ascii=False, indent=2, sort_keys=True,
     ) + "\n"
+    for p in sorted(people, key=lambda p: p["slug"]):
+        files[f"people/{p['slug']}.json"] = render_person_meta(p, books_by_key)
+        files[f"people/{p['slug']}.html"] = render_person_page(p, books_by_key)
+    files["people/index.json"] = json.dumps(
+        {"count": len(people), "people": [p["slug"] for p in sorted(people, key=lambda q: q["slug"])]},
+        ensure_ascii=False, indent=2, sort_keys=True,
+    ) + "\n"
     return files
+
+
+def render_person_meta(person: dict, books_by_key: dict[str, dict]) -> str:
+    slug = person["slug"]
+    works = []
+    for key in person["works"]:
+        b = books_by_key[key]
+        works.append({
+            "id": key,
+            "title": plain(b["title"]),
+            "year": b["year"],
+            "representations": representations(key),
+        })
+    meta = {
+        "slug": slug,
+        "name": plain(person["name"]),
+        "variants": person.get("variants", []),
+        "roles": person["roles"],
+        "works": works,
+        "representations": {
+            "html": f"{SITE_BASE}/people/{slug}",
+            "json": f"{SITE_BASE}/people/{slug}.json",
+        },
+    }
+    return json.dumps(meta, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
+
+
+def render_person_page(person: dict, books_by_key: dict[str, dict]) -> str:
+    slug = person["slug"]
+    name = plain(person["name"])
+    variants = person.get("variants", [])
+    works = "".join(
+        f'<li><a href="{SITE_BASE}/id/{key}">{html.escape(plain(books_by_key[key]["title"]))}</a> '
+        f'({books_by_key[key]["year"]}) · <a href="{SITE_BASE}/bibtex/{key}.bib">BibTeX</a></li>'
+        for key in person["works"]
+    )
+    variant_items = "".join(
+        "<li>" + html.escape(v["form"])
+        + (" — not used here: " + html.escape(v.get("note", "")) if v.get("rejected") else "")
+        + "</li>"
+        for v in variants
+    ) or "<li>(no recorded variants)</li>"
+    return f"""<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>{html.escape(name)}</title>
+<link rel="alternate" type="application/json" href="{SITE_BASE}/people/{slug}.json">
+</head>
+<body>
+<h1>{html.escape(name)}</h1>
+<p>{", ".join(person["roles"])} · identifier <code>{html.escape(slug)}</code></p>
+<h2>Name variants</h2>
+<ul>
+{variant_items}
+</ul>
+<h2>Works</h2>
+<ul>
+{works}
+</ul>
+</body>
+</html>
+"""
 
 
 def scan_disk() -> dict[str, str]:
     out: dict[str, str] = {}
-    for base, pattern in ((OUT_DIR, "*.bib"), (ID_DIR, "*.json"), (ID_DIR, "*.html")):
+    for base, pattern in (
+        (OUT_DIR, "*.bib"),
+        (ID_DIR, "*.json"), (ID_DIR, "*.html"),
+        (PEOPLE_DIR, "*.json"), (PEOPLE_DIR, "*.html"),
+    ):
         if base.is_dir():
             for p in sorted(base.glob(pattern)):
                 out[f"{base.name}/{p.name}"] = (
@@ -230,8 +347,10 @@ def scan_disk() -> dict[str, str]:
 def main(argv: list[str]) -> int:
     check = "--check" in argv
     books = load_registry()
+    people = load_people()
     validate(books)
-    expected = render_all(books)
+    validate_people(people, books)
+    expected = render_all(books, people)
     on_disk = scan_disk()
 
     drift = [n for n, text in sorted(expected.items()) if on_disk.get(n) != text]
@@ -253,8 +372,9 @@ def main(argv: list[str]) -> int:
         path.write_bytes(expected[rel].encode("utf-8"))
     for rel in stale:
         (ROOT / "static" / rel).unlink()
-    print(f"bibtex: {len(books)} entries -> static/bibtex/ (all.bib + "
-          f"{len(books)} .bib) + static/id/ ({len(books)} .json + {len(books)} .html + index.json)")
+    print(f"bibtex: {len(books)} entries + {len(people)} people -> "
+          f"static/bibtex/ + static/id/ + static/people/ "
+          f"({len(expected)} files)")
     return 0
 
 

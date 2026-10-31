@@ -1,7 +1,8 @@
-"""Tests for scripts/build_bibtex.py (Angle-B B3+B4,
+"""Tests for scripts/build_bibtex.py (Angle-B B3+B4+B6,
 ROADMAP_GRAMMAR_CORPUS_ACL_2026_2027.md §3): per-book BibTeX + bulk all.bib
-from scripts/data/books.yml, and the multi-representation ID layer
-(static/id/<key>.json + <key>.html + index.json)."""
+from scripts/data/books.yml, the multi-representation ID layer
+(static/id/<key>.json + <key>.html + index.json), and the author-identity
+people layer (static/people/<slug>.* from scripts/data/people.yml)."""
 import json
 
 import build_bibtex as bb
@@ -36,8 +37,18 @@ def _sample_books():
     ]
 
 
+def _sample_people():
+    return [
+        {"slug": "b-a", "name": "B, A", "variants": [], "roles": ["author"],
+         "works": ["b-1998"]},
+        {"slug": "a-a", "name": "A, A",
+         "variants": [{"form": "A, Anton"}, {"form": "AA", "rejected": True, "note": "no"}],
+         "roles": ["author"], "works": ["a-1889"]},
+    ]
+
+
 def test_bulk_file_is_key_sorted_concatenation():
-    files = bb.render_all(_sample_books())
+    files = bb.render_all(_sample_books(), _sample_people())
     assert files["bibtex/all.bib"] == (
         files["bibtex/a-1889.bib"] + files["bibtex/b-1998.bib"]
     )
@@ -65,9 +76,50 @@ def test_landing_html_alternates_and_escapes():
 
 
 def test_id_index_lists_sorted_ids():
-    files = bb.render_all(_sample_books())
+    files = bb.render_all(_sample_books(), _sample_people())
     index = json.loads(files["id/index.json"])
     assert index == {"count": 2, "ids": ["a-1889", "b-1998"]}
+
+
+def test_person_meta_carries_variants_and_work_links():
+    person = _sample_people()[1]
+    files = bb.render_all(_sample_books(), _sample_people())
+    meta = json.loads(files["people/a-a.json"])
+    assert meta["name"] == "A, A"
+    assert [v["form"] for v in meta["variants"]] == ["A, Anton", "AA"]
+    assert meta["variants"][1]["rejected"] is True
+    assert meta["works"][0]["id"] == "a-1889"
+    assert meta["works"][0]["representations"]["bibtex"].endswith("a-1889.bib")
+
+
+def test_person_page_lists_works_with_bib_links():
+    files = bb.render_all(_sample_books(), _sample_people())
+    page = files["people/a-a.html"]
+    assert "<h1>A, A</h1>" in page
+    assert 'href="https://gasyoun.github.io/SanskritGrammar/id/a-1889"' in page
+    assert "a-1889.bib" in page and "not used here" in page
+
+
+def test_people_index_sorted_by_slug():
+    files = bb.render_all(_sample_books(), _sample_people())
+    index = json.loads(files["people/index.json"])
+    assert index == {"count": 2, "people": ["a-a", "b-a"]}
+
+
+def test_validate_people_rejects_author_gap_and_unknown_work():
+    books = _sample_books()
+    broken = [
+        {"slug": "b-a", "name": "WRONG, Name", "variants": [], "roles": ["author"],
+         "works": ["b-1998", "no-such-book"]},
+    ]
+    try:
+        bb.validate_people(broken, books)
+    except ValueError as err:
+        text = str(err)
+        assert "unknown work key 'no-such-book'" in text
+        assert "is no person's canonical name" in text
+    else:
+        raise AssertionError("validate_people() accepted invalid registry")
 
 
 def test_validate_rejects_dir_year_mismatch_and_undiscovered_dir(monkeypatch):
@@ -89,7 +141,9 @@ def test_validate_rejects_dir_year_mismatch_and_undiscovered_dir(monkeypatch):
 
 def test_committed_files_match_the_registry():
     books = bb.load_registry()
-    expected = bb.render_all(books)
+    people = bb.load_people()
+    bb.validate_people(people, books)
+    expected = bb.render_all(books, people)
     assert expected, "registry rendered to nothing"
     for rel, text in expected.items():
         on_disk = (bb.ROOT / "static" / rel).read_text(encoding="utf-8")

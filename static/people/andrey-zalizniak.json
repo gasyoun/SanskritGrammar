@@ -1,0 +1,59 @@
+{
+  "name": "Зализняк, А. А.",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/andrey-zalizniak",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/andrey-zalizniak.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "andrey-zalizniak",
+  "variants": [
+    {
+      "form": "Andrei Zalizniak"
+    },
+    {
+      "form": "Zalizniak, A. A."
+    },
+    {
+      "form": "Зализняк Андрей Анатольевич"
+    },
+    {
+      "form": "Zaliznyak",
+      "note": "y-spelling historically printed, superseded by the i-spelling the corpus cites (H449: Tolchelnikov's own References already cite «Andrei Zalizniak. 1975.»)",
+      "rejected": true
+    }
+  ],
+  "works": [
+    {
+      "id": "zalizniak-1975",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/zalizniak-1975.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1975",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1975.json"
+      },
+      "title": "Морфонологическая классификация санскритских глагольных корней",
+      "year": 1975
+    },
+    {
+      "id": "zalizniak-1978",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/zalizniak-1978.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1978",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-1978.json"
+      },
+      "title": "Грамматический очерк санскрита",
+      "year": 1978
+    },
+    {
+      "id": "zalizniak-2004",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/zalizniak-2004.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-2004",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/zalizniak-2004.json"
+      },
+      "title": "Конспект грамматических сведений о санскрите",
+      "year": 2004
+    }
+  ]
+}

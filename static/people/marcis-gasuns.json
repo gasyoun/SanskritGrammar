@@ -1,0 +1,31 @@
+{
+  "name": "Гасунс, Марцис Юрисович",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/marcis-gasuns",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/marcis-gasuns.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "marcis-gasuns",
+  "variants": [
+    {
+      "form": "Гасунс М.Ю."
+    },
+    {
+      "form": "Gasuns, Marcis"
+    }
+  ],
+  "works": [
+    {
+      "id": "gasuns-2014",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/gasuns-2014.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/gasuns-2014",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/gasuns-2014.json"
+      },
+      "title": "Состав и строй древнеиндийских корней: история изучения",
+      "year": 2014
+    }
+  ]
+}

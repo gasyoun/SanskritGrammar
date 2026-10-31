@@ -1,0 +1,28 @@
+{
+  "name": "Whitney, William Dwight",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/william-dwight-whitney",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/william-dwight-whitney.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "william-dwight-whitney",
+  "variants": [
+    {
+      "form": "Уитни"
+    }
+  ],
+  "works": [
+    {
+      "id": "whitney-1889",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/whitney-1889.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/whitney-1889",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/whitney-1889.json"
+      },
+      "title": "A Sanskrit Grammar, including both the Classical Language and the older Dialects, of Vedic",
+      "year": 1889
+    }
+  ]
+}
