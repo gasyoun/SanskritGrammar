@@ -638,7 +638,18 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   at `/SanskritGrammar/people/<slug>`, works linked by stable book IDs) +
   `people/index.json`; cross-registry validation refuses a book whose author
   is no person's canonical name. The `--check` gate now covers all 53 files.
-  B8 remains open. PR: _link filled in at merge_.
+  **B8 fenced — owner-only, MG @DECIDE (roadmap-drain 31-10-2026):** DOI per
+  book/edition via Zenodo is a human decision twice over: minting needs a
+  Zenodo account + API token (credentials only MG can create), and publicly
+  depositing third-party editions (Bühler 1923, Whitney 1889, Knauer 1908,
+  Apte 1885, Kochergina 1998, Zalizniak ×3, Gasūns's dissertation «на правах
+  рукописи») is a rights ruling — Lane-C per /roadmap-item-exec ("DOI mint…
+  needing a human decision"), never agent-executed. Everything a DOI would
+  embed already carries a stable identity (book keys + `static/id/` layer);
+  once MG rules and mints, the execution is mechanical: add `doi:` fields to
+  `scripts/data/books.yml` and regenerate. GTD @DECIDE row filed. The B1–B7
+  agent-executable scope of this row is complete; B8 blocked until ruled.
+  PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.
