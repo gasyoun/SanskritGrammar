@@ -612,7 +612,17 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   regenerates `static/bibtex/<key>.bib` ×10 + `static/bibtex/all.bib` (served
   by the Docusaurus static dir, one fetch cites the corpus); freshness gated
   by `uv run python scripts/build_bibtex.py --check` in the CI `validators`
-  step. B4–B6 and B8 remain open. PR: _link filled in at merge_.
+  step.
+  **B4 shipped (roadmap-drain 31-10-2026):** multi-representation URLs — the
+  same generator now also emits the ID layer `static/id/<key>.json`
+  (self-describing metadata listing its own representations),
+  `static/id/<key>.html` (human landing served at the clean URL
+  `/SanskritGrammar/id/<key>` via GitHub Pages' `.html` stripping, carrying
+  `<link rel=alternate>` for the BibTeX and JSON representations) and
+  `static/id/index.json` (ID inventory). One ID → page/.bib/.json, the
+  Anthology `/{id}` contract approximated statically; B3's published
+  `bibtex/` paths byte-stable. The `--check` gate now covers all 32 files.
+  B5, B6 and B8 remain open. PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.
