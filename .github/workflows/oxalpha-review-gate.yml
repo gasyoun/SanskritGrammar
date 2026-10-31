@@ -125,7 +125,7 @@ jobs:
 
       - name: Upload verdict artifacts (never silent)
         if: always() && steps.window.outputs.base != ''
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: oxalpha-verdict-${{ github.run_id }}
           path: |
