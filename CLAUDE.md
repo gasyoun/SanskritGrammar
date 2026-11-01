@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-_Created: 20-07-2026 · Last updated: 30-10-2026_
+_Created: 20-07-2026 · Last updated: 01-11-2026 — H7274 claims pass: 10/10 CI-validator paths + package.json scripts match the commands table_
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in
 this repository.
