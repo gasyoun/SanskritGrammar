@@ -1,6 +1,6 @@
 # SanskritGrammar
 
-_Created: 05-07-2026 · Last updated: 24-09-2026_
+_Created: 05-07-2026 · Last updated: 05-11-2026_
 
 A raw-source archive of classic Sanskrit-grammar textbooks and reference
 works — Apte's syntax reference, Bühler's exercise course, Gasūns's
@@ -26,29 +26,50 @@ back to a stable source instead of maintaining its own copy.
 
 ## Structure
 
-One directory per source work, named `<Author><ShortTitle>_<year>`. Ten source
-works are currently present (plus two generated cross-reference folders,
+One directory per source work, named `<Author><ShortTitle>_<year>`. Twelve source
+directories are currently present — sixteen works in all, counting the five
+reader/chrestomathy works inside the BibliothecaSanscritica series folder
+(plus the generated cross-reference folders
 [Concordance](#concordance-shared-exercise-sentences-bühler-knauer-kochergina)
 and [SubjectConcordance](#subject-concordance-what-each-grammar-covers-whitneys-spine),
-covered below):
+covered below, and the three newer catalog folders
+[LessonConcordance](https://github.com/gasyoun/SanskritGrammar/tree/main/LessonConcordance),
+[GrammarRelations](https://github.com/gasyoun/SanskritGrammar/tree/main/GrammarRelations)
+and [GrammarIndexes](https://github.com/gasyoun/SanskritGrammar/tree/main/GrammarIndexes)
+described after the table):
 
 | Directory | Work | Format present | Grid tables |
 |---|---|---|---:|
 | [ApteSyntax_1885](https://gasyoun.github.io/SanskritGrammar/grammars/ApteSyntax_1885/Apte-unicode) | Apte, Sanskrit syntax reference (reprint dated 1885; underlying `.doc` metadata shows a 2022 electronic edition) | `.doc`, `.docx`, `.mdx` | 8 |
+| [BibliothecaSanscritica](https://github.com/gasyoun/SanskritGrammar/tree/main/BibliothecaSanscritica) | *Bibliotheca Sanscritica* series — five related reader/chrestomathy editions (Frish chrestomathy II, Knauer textbook, Likhushina chrestomathy, Miller handbook, *Канун древнеиндийской философии*; 2021–2022), six `.mdx` in per-work subfolders | `.mdx` only (no `.doc`/`.docx`) | 0 |
 | [BuhlerLeitfaden_1923](https://gasyoun.github.io/SanskritGrammar/grammars/BuhlerLeitfaden_1923/Buhler_Unicode) | Bühler, *Leitfaden für den elementaren Cursus des Sanskrit* (Stockholm, 1923) — electronic edition v2.0 by N. P. Likhushina | `.doc`, `.docx`, `.mdx` | 97 |
 | [GasunsDhatu_2014](https://gasyoun.github.io/SanskritGrammar/grammars/GasunsDhatu_2014/02_gasuns-dhatu-PhD-text2) | Gasūns, *Морфонологическая запись глагольных корней санскрита* (dissertation, 2014) — under editorial revision for a 2026 print edition (see [`revision-2026/`](https://github.com/gasyoun/SanskritGrammar/tree/main/GasunsDhatu_2014/revision-2026)) | `.docx`, `.mdx` | 5 |
 | [KnauerFrazy_1908](https://gasyoun.github.io/SanskritGrammar/grammars/KnauerFrazy_1908/Frazy-Knauer-03.05.2023) | Knauer, Sanskrit phrase collection (`Frazy-Knauer`, reprint reference 1908) | `.doc`, `.docx`, `.mdx` | 0 (prose) |
 | [KocherginaUchebnik_1998](https://gasyoun.github.io/SanskritGrammar/grammars/KocherginaUchebnik_1998/Kochergina_unicode) | Kochergina, Sanskrit textbook (*Учебник санскрита*, 1998) | `.docx`, `.mdx` | 124 |
+| [SpeyerSyntax_1886](https://github.com/gasyoun/SanskritGrammar/tree/main/SpeyerSyntax_1886) | Speyer, *Sanskrit Syntax* (Leiden, 1886) — claims-harvest backlog only (H4483); no `.doc`/`.docx`/`.mdx` conversion yet | `claims_harvest.yml` + README | — |
 | [TolchelnikovTalmud_2026](https://gasyoun.github.io/SanskritGrammar/grammars/TolchelnikovTalmud_2026/talmud-00-vvedenie) | Tolchelnikov, *Талмуд санскрита* — a modern Sanskrit course (lessons + apparatus), 2026 | `.docx`, `.mdx` | 60 |
 | [WhitneyGrammar_1889](https://gasyoun.github.io/SanskritGrammar/grammars/WhitneyGrammar_1889/00_index) | Whitney, *A Sanskrit Grammar* (2nd ed., 1889; 7th issue 1950) — 18 chapters + an appendix, 1316 §, generated from [WhitneyRoots](https://github.com/gasyoun/WhitneyRoots) | `.mdx` (generated) | 0 (§-linked to Wikisource) |
 | [ZalizniakKonspekt_2004](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakKonspekt_2004/zalizniak-konspekt-2015-11-X_bd_t) | Zalizniak, grammar conspectus (2004) | `.doc`, `.docx`, `.mdx` | 6 |
 | [ZalizniakMorphology_1975](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakMorphology_1975/zalizniak-morphophonological-classification-en) | Zalizniak, morphophonological classification of the Sanskrit verb (1975) — English translation by I. Tolchelnikov, ed. M. Ishimbaev | `.docx`, `.mdx` | 6 |
 | [ZalizniakOcherk_1978](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned) | Zalizniak, *Очерк грамматики санскрита* (grammar sketch, 1978) — aligned edition | `.doc`, `.docx`, `.mdx` | 55 |
 
-The folder set is not fixed at ten — the Docusaurus config auto-registers any
+The folder set is not fixed — the Docusaurus config auto-registers any
 top-level directory that contains an `.mdx` (see
 [Reading the archive](#reading-the-archive) below), so dropping in a new work
 adds it to the site with no config edit.
+
+Three newer catalog folders sit beside the works:
+[LessonConcordance/](https://github.com/gasyoun/SanskritGrammar/tree/main/LessonConcordance)
+is a per-lesson concordance of Bühler's 48 lessons against every other digitized
+source on the site (live at
+[grammars/LessonConcordance/catalog](https://gasyoun.github.io/SanskritGrammar/grammars/LessonConcordance/catalog));
+[GrammarRelations/](https://github.com/gasyoun/SanskritGrammar/tree/main/GrammarRelations)
+is a relations map across the digitized grammars — genealogy, borrowings,
+doctrine divergences, student fit (live at
+[grammars/GrammarRelations/grammar-relations-map](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map));
+[GrammarIndexes/](https://github.com/gasyoun/SanskritGrammar/tree/main/GrammarIndexes)
+holds the Sanskrityatina «указатели указателей» index catalog and its
+claims-audit mapping as data (TSV/MD), with no `.mdx` — it is not on the site.
 
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
 Document File V2`), mostly containing Devanāgarī + IAST text with embedded
@@ -137,24 +158,30 @@ monthly CHANGELOG cross-check — is wrapped in the `/errata` skill. Eight
 books have an `errata.yml`
 ([ApteSyntax_1885](https://github.com/gasyoun/SanskritGrammar/blob/main/ApteSyntax_1885/errata.yml),
 BuhlerLeitfaden_1923, GasunsDhatu_2014, KnauerFrazy_1908, KocherginaUchebnik_1998,
-TolchelnikovTalmud_2026, ZalizniakKonspekt_2004, ZalizniakOcherk_1978); five
+TolchelnikovTalmud_2026, ZalizniakKonspekt_2004, ZalizniakOcherk_1978); six
 lists are populated:
 [`GasunsDhatu_2014`](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.mdx)
 (93 errata — 64 open, 29 fixed — accrued from the 2026 revision passes),
 [`KnauerFrazy_1908`](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.mdx)
-(25 errata from the 1908 print and the 2011/2015/2023 errata sheets),
+(30 errata from the 1908 print and the 2011/2015/2023 errata sheets),
 [`BuhlerLeitfaden_1923`](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.mdx)
-(8, from H797 claims-verification) and
+(9, from H797 claims-verification),
+[`KocherginaUchebnik_1998`](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.mdx)
+(4 edition-diff `digitization` fixes, all already corrected in the digital
+edition),
 [`ZalizniakOcherk_1978`](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/ERRATA.mdx)
 (2, from the H978 crosswalk encoding pass), plus
 [`TolchelnikovTalmud_2026`](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/ERRATA.mdx)
 (3 — a labelled schema demonstration, not real corrections: no book in this
 corpus has yet had a genuine revision or retraction, so H1514 parked one
 worked example of each tier there so all three render on the site). The other
-three (`ApteSyntax_1885`, `KocherginaUchebnik_1998`, `ZalizniakKonspekt_2004`)
+two (`ApteSyntax_1885`, `ZalizniakKonspekt_2004`)
 are seeded empty and ready to fill. `ZalizniakMorphology_1975`,
-`Concordance`, and `SubjectConcordance` are not yet wired into the
-errata/changelog system (no `errata.yml`, no per-book `CHANGELOG.md` yet).
+`SpeyerSyntax_1886`, `BibliothecaSanscritica`, `Concordance`,
+`SubjectConcordance`, `LessonConcordance`, `GrammarRelations`, and
+`GrammarIndexes` are not yet wired into the errata side of the system
+(no `errata.yml`; BibliothecaSanscritica carries its own series
+`CHANGELOG.md` but no errata list).
 
 ## Per-book releases
 
@@ -214,6 +241,8 @@ regenerate the full per-`.mdx` list any time with `python scripts/site_tools.py 
 - [Zalizniak — Ocherk (1978)](https://gasyoun.github.io/SanskritGrammar/grammars/ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned)
 - [Concordance — Bühler/Knauer/Kochergina shared exercise sentences](https://gasyoun.github.io/SanskritGrammar/grammars/Concordance/catalog)
 - [Subject concordance — what each grammar covers, on Whitney's spine](https://gasyoun.github.io/SanskritGrammar/grammars/SubjectConcordance/catalog)
+- [Lesson concordance — Bühler's 48 lessons against every other digitized source](https://gasyoun.github.io/SanskritGrammar/grammars/LessonConcordance/catalog)
+- [Grammar relations map — genealogy, borrowings, doctrine divergences across the digitized grammars](https://gasyoun.github.io/SanskritGrammar/grammars/GrammarRelations/grammar-relations-map)
 
 Locally (`npm start`) the same routes serve from `http://localhost:3000/SanskritGrammar/…`.
 
