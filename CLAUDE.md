@@ -73,6 +73,7 @@ Three layers in one repo (full orientation:
 | `npm run build` / `npm run start` | build / serve the Docusaurus site |
 | `npm run errata` | regenerate every book's `ERRATA.md` + the index from `errata.yml` |
 | `npm run claims` / `npm run check-claims` | rebuild / consistency-check the grammar-claims layer (+ claims schema validate) |
+| `npm run bibtex` / `npm run check-bibtex` | rebuild / staleness-check the static BibTeX layer (`static/bibtex/*.bib` + `all.bib`, the `/id/` pages, the people registry) |
 | `uv run sg pipeline check sg-mo-021-future` | validate the pinned SG-MO-021 Slice C pipeline before generation |
 | `python -m pytest` | run the script test suite ([tests/](https://github.com/gasyoun/SanskritGrammar/tree/main/tests)) |
 
@@ -86,6 +87,8 @@ Python, contract, frontend, and site gates"; step "Pipeline validators") is a **
 5. `python scripts/toc_validate.py`
 6. `python scripts/article_validate.py --all`
 7. `python scripts/consolidation_ledger_refresh.py --check`
+8. `python scripts/build_grammar_lab.py --check`
+9. `python scripts/build_bibtex.py --check`
 
 If `--check` fails with "stale", refresh and commit: `python scripts/consolidation_ledger_refresh.py` (no `--check`). A planted stale aorist figure in any `*/claims.yml` is caught by step 2 (see `tests/test_claims_consistency.py::test_scan_flags_a_planted_stale`).
 
