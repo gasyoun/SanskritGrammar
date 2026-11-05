@@ -1,0 +1,448 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-11-05 22:15:08",
+  "artifacts": [
+    {
+      "artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar\\README.md",
+      "repo": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\README.md:49: | [SpeyerSyntax_1886](https://github.com/gasyoun/SanskritGrammar/tree/main/SpeyerSyntax_1886) | Speyer, *Sanskrit Syntax* (Leiden, 1886) — claims-harvest backlo"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\CLAUDE.md:17: [README.md](https://github.com/gasyoun/SanskritGrammar/blob/main/README.md)):"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "AGENTS.md orients agents to workflow files; naming README.md there is not required by this drift fix and AGENTS.md edits are outside the handoff scope"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "docs-drift fix aligning CLAUDE.md/README with already-shipped ci.yml + bibtex features; no sibling manual governs this workstream"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md.meta.md absent; creating one is separate maintenance beyond this trivial drift fix - noted in close report as backlog"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\CHANGELOG.md:12: - **bughunt SanskritGrammar 05-10-2026 — 2 HIGH code bugs found AND fixed (MG ruling 26-09-2026 auto-fix lane), report landed.** (1) Committed suite red at HEAD"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\.ai_state.md:14: supplement feeds revision-2026 next (recommendation in phd_corpus/README.md:"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no standing or per-action authorization to post issue comments; PR #1147 is the public artifact"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\GTD_NEXT_ACTIONS.md:30: - agent lane `@DO` (S, since 01-11-2026) — **P4 H7637 documentation corrections once MG rules**: correct the false \"zero commits\" bullet and the reversed TCP-sp"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\handoffs\\README.md:125: | H7744 | — | [H7744-OxAlpha_magenta-duck-vps_readme-updated-date-byline_05.11.26](https://github.com/gasyoun/Uprava/blob/main/handoffs/H7744-OxAlpha_magenta-du"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritLexicography\\FEATURES_INDEX.md:122: | 🟢 E42 | Kompozity `names.csv` | DCS proper-name compound (samāsa) splits with frequency vectors: surface form; constituent-stem split; part count; total corpu"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\REUSE_INDEX.md:42: | H6889 [netpath probe](https://github.com/gasyoun/Uprava/blob/main/tools/netpath_probe.py), [rotator](https://github.com/gasyoun/Uprava/blob/main/deploy/macboo"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\PROJECT_INTERLINKS.md:823: - [`README.md`](https://github.com/sanskrit-lexicon/csl-atlas/blob/main/data/pd/README.md) — family provenance + builder map for the 15 machine-readable files ("
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\DANGER_FACTS.md:45: | **H2699 (16-08-2026): тела стенограмм сняты с tip Uprava.** Живут в приватном sibling [gasyoun/Uprava-stenogrammy-private](https://github.com/gasyoun/Uprava-s"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\QUESTIONS_LOG.md:112: | Q2607-24 | 10-07-2026 | 09-08-2026 | PROCESS-META | CommentaryStrategies | «А в X (MANUAL / README / CLAUDE.md / GEMINI / ROADMAP / GTD / .ai_state / FEATURES"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "routine operational docs-drift fix; no thesis-level synthesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\claude-config\\HOOKS_INDEX.md:5: | [shunt_codex_check.py](https://github.com/gasyoun/opencode-config/blob/main/shunt/shunt_codex_check.py) | Bash (Codex PreToolUse) | 🛑 | open | the SAME 350-li"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\REPO_STATUS_ROLLUP.md:193: **Done (30-08-2026):** instruction-estate reforms P1+P3+P5 ([H3720](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H3720-OxAlpha_claude-config_ins"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\tools\\hub_manifest.json:26: \"path\": \"handoffs/README.md\","
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "fix rests on no new premise; ci.yml validator set re-verified on origin/main 05-11-2026"
+        }
+      ],
+      "worktree_artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\README.md",
+      "worktree": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632"
+    },
+    {
+      "artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar\\CLAUDE.md",
+      "repo": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "doc",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the edited artifact is its own registration surface (PR #1147)"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\CLAUDE.md:1: # CLAUDE.md"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\AGENTS.md:3: This file orients Codex and other non-Claude agent sessions. The section between the generated-block markers is machine-owned (regenerated from Uprava; hand edi"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "docs-drift fix aligning CLAUDE.md/README with already-shipped ci.yml + bibtex features; no sibling manual governs this workstream"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "CLAUDE.md.meta.md absent; creating one is separate maintenance beyond this trivial drift fix - noted in close report as backlog"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\CHANGELOG.md:107: - **A07 (Sonnet 5 `claude-sonnet-5`): Wave 2 RQ2 unified auto-drill bank with verified answer keys (25-09-2026).** [`docs/ROADMAP_DIGITAL_SANSKRIT_PEDAGOGY_2026"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\.ai_state.md:32: - **✅ H2113 — natural-method story scaffold + chapters v0 CLOSED 01-08-2026 (Fable 5 `claude-fable-5`).**"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no standing or per-action authorization to post issue comments; PR #1147 is the public artifact"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\GTD_NEXT_ACTIONS.md:32: ## claude-config live-checkout sync 31-10-2026 (GLM 5.3 Flash (zai-coding-plan/glm-5.3-flash) — gdoc-carry-insert минт, residual)"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\handoffs\\README.md:95: **Verifier-gated classes — `{class: money|data|publication|security}` (H4358, 08-09-2026).** MG grill Q10: a separate verifier is mandatory only for these four "
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritLexicography\\FEATURES_INDEX.md:152: | ⚪ F51 | birthday-collision baseline (MW Herfindahl) + gate | The null hypothesis for \"two batch entries share a phonetic feature\": Herfindahl index H = Σpᵢ² o"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\REUSE_INDEX.md:5: _Created: 03-07-2026 · Last updated: 22-10-2026 (H7162 retrieval-surfaces census: registered the Systema FAQ-RAG measurement kit (§1 — previously absent from ev"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\PROJECT_INTERLINKS.md:3: _Created: 23-06-2026 · Last updated: 29-10-2026 (H7162 retrieval-surfaces census: edges `ORS-FAQ->Systema-Sanscriticum` faq-gold-question-seed + `claude-config-"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\DANGER_FACTS.md:7: One place a session (Claude Code or Codex) can check for the facts that, missed, destroy"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\QUESTIONS_LOG.md:8: Cross-repo, cross-session register of questions M.G. has asked any Claude Code"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "routine operational docs-drift fix; no thesis-level synthesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\claude-config\\HOOKS_INDEX.md:1: # HOOKS_INDEX — the per-hook roster of the claude-config hook suite"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\REPO_STATUS_ROLLUP.md:33: - **✅ 17-09-2026 — H5022: автоматическое повторное приглашение в кабинет через 48 ч после оплаты без входа (Fable 5.1 `claude-fable-5-1`).** Команда `students:r"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub\\Uprava\\tools\\hub_manifest.json:239: \"id\": \"org-claude-md\","
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "fix rests on no new premise; ci.yml validator set re-verified on origin/main 05-11-2026"
+        }
+      ],
+      "worktree_artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632\\CLAUDE.md",
+      "worktree": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7747-11632"
+    }
+  ],
+  "provenance": {
+    "host": "DESKTOP-8N57E9U",
+    "git_head": "80f538b18b1b0911d54a08713f8da1c9a1247e64",
+    "git_branch": "h7747-doc-sweep-receipt",
+    "handoff": "H7747"
+  }
+}
