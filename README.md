@@ -71,6 +71,20 @@ doctrine divergences, student fit (live at
 holds the Sanskrityatina «указатели указателей» index catalog and its
 claims-audit mapping as data (TSV/MD), with no `.mdx` — it is not on the site.
 
+A generated citation layer ships beside the works:
+[scripts/build_bibtex.py](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_bibtex.py)
+reads the book and people catalogs
+([scripts/data/books.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/books.yml),
+[scripts/data/people.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/people.yml))
+and regenerates the per-book `.bib` files plus the combined
+[`static/bibtex/all.bib`](https://github.com/gasyoun/SanskritGrammar/blob/main/static/bibtex/all.bib),
+the stable `static/id/<key>` landing pages (one HTML + JSON page per book and
+person, served under `/id/`) and the
+[`static/people/`](https://github.com/gasyoun/SanskritGrammar/tree/main/static/people)
+author registry with its name-variant map (landed as 22daf9c, 3e9dc39,
+681eb22). CI re-runs the builder with `--check` to catch drift; refresh locally
+with `npm run bibtex`.
+
 All `.doc` files are legacy Microsoft Word 97 binary format (`Composite
 Document File V2`), mostly containing Devanāgarī + IAST text with embedded
 formatting; several carry editorial metadata (author, revision count, last
