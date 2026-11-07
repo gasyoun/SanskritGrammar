@@ -12,7 +12,7 @@
 
 ### Files
 - `LessonConcordance/topics.yml` — урок VII (3 темы, 8 spots, 3 вердикта, 11 лемм)
-- `LessonConcordance/typed_link_buhler_lessons.tsv` — +11 строк
+- `LessonConcordance/typed_link_buhler_lessons.tsv` — +11 строк (урок VII; всего 296)
 - `LessonConcordance/catalog.mdx`, `src/lesson-backlinks.json` — регенерированы
 
 _H5658 · OxAlpha (opencode/z-ai/glm-5.3-flash) · 07-10-2026_
