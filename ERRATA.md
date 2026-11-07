@@ -12,7 +12,7 @@ Per-book errata lists — printed-page corrections gathered from the editions' o
 | [BuhlerLeitfaden_1923](https://github.com/gasyoun/SanskritGrammar/blob/main/BuhlerLeitfaden_1923/ERRATA.mdx) | 9 | 9 | 0 |
 | [GasunsDhatu_2014](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/ERRATA.mdx) | 93 | 64 | 29 |
 | [KnauerFrazy_1908](https://github.com/gasyoun/SanskritGrammar/blob/main/KnauerFrazy_1908/ERRATA.mdx) | 25 | 25 | 0 |
-| [KocherginaUchebnik_1998](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.mdx) | 6 | 2 | 4 |
+| [KocherginaUchebnik_1998](https://github.com/gasyoun/SanskritGrammar/blob/main/KocherginaUchebnik_1998/ERRATA.mdx) | 7 | 3 | 4 |
 | [TolchelnikovTalmud_2026](https://github.com/gasyoun/SanskritGrammar/blob/main/TolchelnikovTalmud_2026/ERRATA.mdx) | 3 | 3 | 0 |
 | [ZalizniakKonspekt_2004](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakKonspekt_2004/ERRATA.mdx) | 0 | 0 | 0 |
 | [ZalizniakOcherk_1978](https://github.com/gasyoun/SanskritGrammar/blob/main/ZalizniakOcherk_1978/ERRATA.mdx) | 2 | 2 | 0 |
