@@ -11,9 +11,10 @@ Two modes:
                    panini_sutra.py --search "vrddhi"       (IAST/roman)
                    panini_sutra.py --search "guna"
 
-Output (default): the Devanagari sūtra, IAST, S.C. Vasu's English gloss when
-available, the ready-to-paste citation `ср. Aṣṭādhyāyī a.p.n`, and the site URL
-https://ashtadhyayi.com/sutraani/a/p/n . Pass --commentary to also pull the
+Output (default, format MG 07-11-2026): IAST first, S.C. Vasu's English gloss
+when available, the ready-to-paste citation `ср. Aṣṭādhyāyī a.p.n`, and the site
+URL https://ashtadhyayi.com/sutraani/a/p/n — no Devanagari in the default
+render (--devanagari adds it). Pass --commentary to also pull the
 Kāśikā / Mahābhāṣya (bhashya) / Kātyāyana-vārttika text mapped to that sūtra
 (these partly serve the commentary-corpus need — see RWS_REPORT.md §6.7).
 
@@ -114,12 +115,13 @@ def aux_text(row):
     return strip_html(max(strs, key=len)) if strs else ""
 
 
-def render(row, sutras, want_commentary, refresh):
+def render(row, sutras, want_commentary, refresh, want_devanagari=False):
     a, p, n = row["a"], row["p"], row["n"]
     cite = f"{a}.{p}.{n}"
     print(f"## Aṣṭādhyāyī {cite}")
     print()
-    print(f"- **сутра (деванагари):** {row.get('s', '')}")
+    if want_devanagari:  # off in the default render (format MG 07-11-2026, H7815)
+        print(f"- **сутра (деванагари):** {row.get('s', '')}")
     print(f"- **IAST:** {row.get('e', '')}")
     key = str(row["i"])
     vasu = load_json_list(AUX["vasu"], refresh)
@@ -154,6 +156,8 @@ def main():
     ap.add_argument("--search", help="keyword (Devanagari / IAST / English)")
     ap.add_argument("--commentary", action="store_true",
                     help="also print Kāśikā / Mahābhāṣya / Vārttika")
+    ap.add_argument("--devanagari", action="store_true",
+                    help="also print the Devanagari line (off by default, MG 07-11-2026)")
     ap.add_argument("--refresh", action="store_true", help="re-download cache")
     ap.add_argument("--limit", type=int, default=10, help="max search hits")
     args = ap.parse_args()
@@ -172,7 +176,8 @@ def main():
         if key not in sutras:
             print(f"Сутра {args.ref} не найдена (id {key}).", file=sys.stderr)
             sys.exit(3)
-        render(sutras[key], sutras, args.commentary, args.refresh)
+        render(sutras[key], sutras, args.commentary, args.refresh,
+               want_devanagari=args.devanagari)
     elif args.search:
         q = args.search.strip().lower()
         hits = [r for r in sutras.values()
@@ -184,7 +189,8 @@ def main():
         print(f"_{len(hits)} совпадений по «{args.search}» "
               f"(показаны первые {min(args.limit, len(hits))}):_\n")
         for r in hits[:args.limit]:
-            render(r, sutras, args.commentary, args.refresh)
+            render(r, sutras, args.commentary, args.refresh,
+                   want_devanagari=args.devanagari)
     else:
         ap.print_help()
 
