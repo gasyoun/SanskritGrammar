@@ -1,1 +1,0 @@
-- Kochergina playbook v2 grill — verdicts rounds 1-3 (Q3 veto: word-formation as separate step; Q6: + Shertsl/Apte/Wilson; Q8: overtake distance metric + 4 lexical questions; Q11: WIL = Wilson) + mint queue H7824-H7829: KocherginaUchebnik_1998/PLAYBOOK_KOCHERGINA_V2_GRILL_2026-11-08.md
