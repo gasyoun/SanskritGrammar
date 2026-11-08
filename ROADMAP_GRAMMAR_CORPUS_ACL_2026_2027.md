@@ -596,14 +596,59 @@ mint a handoff on pickup; human-gated rows point at their MG row in
   raw numbers
   [`scripts/data/q42_tracer_style_recall_evaluation.json`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/q42_tracer_style_recall_evaluation.json).
   PR: _link filled in at merge_.
-- [ ] **Angle-B site backlog B3–B8 (§3)** — B1/B2 shipped (H1514); B3/B8 (bulk `all.bib`,
-  DOIs) are the Q1-2027 site rows; B4–B7 unassigned backlog. Mint per feature on pickup.
+- [ ] **Angle-B site backlog B3–B8 (§3)** — B1–B7 shipped/superseded (H1514, B3/B4/B6 roadmap-drain 31-10-2026, B7 A06, B5 superseded by the H1841/H2300 offline search); B8 (DOIs via Zenodo) fenced owner-only — MG @DECIDE, blocked until ruled (GTD row Y4H).
   **B7 shipped (A06, 25-09-2026):** SHA-256 fixity manifest for every tracked
   `.doc`/`.docx` source ([`scripts/build_source_checksums.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_source_checksums.py)).
   Owner residual: a human with `workflow`-scope push adds
   `uv run python scripts/build_source_checksums.py --check` to
   `.github/workflows/ci.yml`'s `validators` step (the agent push token lacked
-  that scope). B3–B6 and B8 remain open. PR: _link filled in at merge_.
+  that scope).
+  **B3 shipped (roadmap-drain 31-10-2026):** per-page BibTeX + bulk `all.bib` —
+  [`scripts/data/books.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/books.yml)
+  (citation registry; bibliographic facts transcribed from each book's own
+  README / errata `work:` / title page) →
+  [`scripts/build_bibtex.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/build_bibtex.py)
+  regenerates `static/bibtex/<key>.bib` ×10 + `static/bibtex/all.bib` (served
+  by the Docusaurus static dir, one fetch cites the corpus); freshness gated
+  by `uv run python scripts/build_bibtex.py --check` in the CI `validators`
+  step.
+  **B4 shipped (roadmap-drain 31-10-2026):** multi-representation URLs — the
+  same generator now also emits the ID layer `static/id/<key>.json`
+  (self-describing metadata listing its own representations),
+  `static/id/<key>.html` (human landing served at the clean URL
+  `/SanskritGrammar/id/<key>` via GitHub Pages' `.html` stripping, carrying
+  `<link rel=alternate>` for the BibTeX and JSON representations) and
+  `static/id/index.json` (ID inventory). One ID → page/.bib/.json, the
+  Anthology `/{id}` contract approximated statically; B3's published
+  `bibtex/` paths byte-stable. The `--check` gate now covers all 32 files.
+  **B5 superseded (roadmap-drain 31-10-2026):** site search already ships —
+  H1841 wired `@easyops-cn/docusaurus-search-local` (offline full-text, no
+  Algolia/Google key, verified cross-book) and H2300 fixed Devanāgarī
+  indexing; a Google Programmable Search Engine would need a human-created
+  engine ID and duplicate that function. Skipped as superseded, not shipped;
+  a CSE remains possible later if its coverage ever beats the offline index.
+  **B6 shipped (roadmap-drain 31-10-2026):** `people.yaml` author-identity
+  registry with name-variant map —
+  [`scripts/data/people.yml`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/data/people.yml)
+  (10 persons: authors + Likhushina/Ishimbaev as translator/editor; every
+  variant attested in the corpus, and the superseded y-spelling recorded as
+  `rejected: true` with the H449 rationale) → the same generator emits
+  `static/people/<slug>.json` + `<slug>.html` (Anthology author-pages model
+  at `/SanskritGrammar/people/<slug>`, works linked by stable book IDs) +
+  `people/index.json`; cross-registry validation refuses a book whose author
+  is no person's canonical name. The `--check` gate now covers all 53 files.
+  **B8 fenced — owner-only, MG @DECIDE (roadmap-drain 31-10-2026):** DOI per
+  book/edition via Zenodo is a human decision twice over: minting needs a
+  Zenodo account + API token (credentials only MG can create), and publicly
+  depositing third-party editions (Bühler 1923, Whitney 1889, Knauer 1908,
+  Apte 1885, Kochergina 1998, Zalizniak ×3, Gasūns's dissertation «на правах
+  рукописи») is a rights ruling — Lane-C per /roadmap-item-exec ("DOI mint…
+  needing a human decision"), never agent-executed. Everything a DOI would
+  embed already carries a stable identity (book keys + `static/id/` layer);
+  once MG rules and mints, the execution is mechanical: add `doi:` fields to
+  `scripts/data/books.yml` and regenerate. GTD @DECIDE row filed. The B1–B7
+  agent-executable scope of this row is complete; B8 blocked until ruled.
+  PR: _link filled in at merge_.
 - [ ] **Q3.3 coverage-matrix κ (§4)** — human gate: **C-D5** (`@DECIDE` — recruit a second
   annotator vs single-annotator adjudicated re-pass, no κ claimed) — **MG @DECIDE 24-09-2026**
   in GTD. Blocked until ruled.

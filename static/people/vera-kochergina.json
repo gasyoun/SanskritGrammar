@@ -1,0 +1,28 @@
+{
+  "name": "Кочергина, В. А.",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/vera-kochergina",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/vera-kochergina.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "vera-kochergina",
+  "variants": [
+    {
+      "form": "Kochergina, V. A."
+    }
+  ],
+  "works": [
+    {
+      "id": "kochergina-1998",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/kochergina-1998.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/kochergina-1998",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/kochergina-1998.json"
+      },
+      "title": "Учебник санскрита",
+      "year": 1998
+    }
+  ]
+}
