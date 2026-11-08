@@ -1,6 +1,6 @@
 # CH5_PLAN — Гл. 5 «Дхатупатха и паниниевская традиция как данные» (Часть II)
 
-_Created: 16-07-2026 · Last updated: 16-07-2026_
+_Created: 16-07-2026 · Last updated: 07-11-2026_
 
 План второй главы Части II (новая проза из данных 2026 г.).
 [H1023](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1023-Opus_SanskritGrammar_m03-ch5-dhatupatha-panini_16.07.26.md),
@@ -23,7 +23,7 @@ Opus 4.8 (`claude-opus-4-8[1m]`). Опирается на
 | Цифровая дхатупатха vidyut | [dhatupatha.tsv](https://github.com/gasyoun/WhitneyRoots/blob/main/scratch/vidyut_data/prakriya/dhatupatha.tsv) | **2 259 дхату**; колонки `code`/`dhatu`/`artha`; `code` = `gaṇa.sūtra` (01.0001 = `BU sattAyAm`); SLP1; надмножество пяти традиционных дхатупатх |
 | Аудит Пальсуле (C10/L1) | PALSULE_AUDIT.md | añc: **5 дхату** семейства (4añc восстановим); `and`: только-Пальсуле (подтверждено); `ast`: **есть** в паниниевской (уточняет отзыв Крылова) |
 | Наивный it-stripped джойн (шаг 3) | PALSULE_AUDIT §H328 | 454/930 совпало — **отрицательный результат:** несовпавшие = паниниевские √i/√ah/√an (аблаут/цитирование), не «потерянные корни» |
-| Паниниевский инструментарий | [panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py) (H413), commentary_corpus.py (H414) | резолвер сутр Аштадхьяи по открытым данным ashtadhyayi.com; корпус комментариев |
+| Паниниевский инструментарий | [panini_sutra.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_sutra.py) (H413), [panini_dhatu.py](https://github.com/gasyoun/SanskritGrammar/blob/main/GasunsDhatu_2014/revision-2026/panini_dhatu.py) (H7815 — дхатупатха-половина того же датасета, 2 259 дхату с адресацией `gaṇa.sūtra`), commentary_corpus.py (H414) | резолверы сутр и дхатупатхи Аштадхьяи по открытым данным ashtadhyayi.com; корпус комментариев |
 | Счёт (контекст §2.3) | — | Пальсуле 3 690 · vidyut 2 259 · Панини ~1 993 |
 
 ## 3. Структура (черновик)

@@ -1,0 +1,87 @@
+# claims.yml — UD-gold dependency/lemma probe register (H6842, WHEEL9 item (b))
+#
+# Verifiable-assertion register over the UD_Sanskrit-UFAL external gold layer
+# (data/ud_sanskrit/, licence CC BY-SA 4.0, see README.md there). Probe engine:
+# tools/verify_claims_ud.py — CoNLL-U in, measurable proxy + dual verdict out,
+# results land in claims_ud_stats.json next to this file.
+#
+# SCHEMA LABEL (mandatory): all proxies below are **UD v2** queries — DEPREL
+# (root/nsubj/obj), UPOS (VERB/AUX/NOUN/ADJ/PROPN), UD lemma column
+# (Devanagari). Our registers otherwise speak Paninian/karaka-DCST terms.
+# MAPPING STATEMENT (one paragraph, wheel dossier rule): a UD nsubj maps to the
+# karaka gautva-karaka/apadana continuum only partially (UD nsubj covers both
+# active subjects and passive-agent nominals without the karaka distinction);
+# UD obj merges karaka karma with plain patient objects; UD root+non-verbal UPOS
+# covers nominal sentences that Paninian grammar treats under the finite-copula
+# omission doctrine (asti as the unexpressed existential verb); UD
+# lemma folds sandhi'd surface forms to dictionary stems and so counts
+# differently from DCS surface-form censuses. Numbers below are therefore
+# UD-schema measurements, comparable to other UD treebanks, NOT directly to the
+# DCS head/deprel slices used by apte_treebank_stats.py (H1059/H1062).
+#
+# verdict_fact:  TRUE | OVERSTATED | FALSE | UNTESTABLE | PENDING
+# verdict_ud:    PASS | OVERSTATED | FAIL — the UD-proxy axis (measured number vs
+#                the row's pre-set threshold); dual verdict = fact axis + UD axis.
+# kind:          dependency | lemma
+
+work: "UD_Sanskrit-UFAL r2-line gold (Pañcatantra, ÚFAL, CC BY-SA 4.0)"
+
+synthesis: >-
+  WHEEL9 item (b) seed register (H6842, 22-10-2026): 4 probe rows — one
+  replication of an existing register claim (APT-3, ca postposition) on the UD
+  gold, three UD-shaped dependency/lemma rows. Thresholds were fixed before the
+  first probe run; measured numbers land in claims_ud_stats.json.
+
+claims:
+
+  - id: UDA-1
+    loc: "data/ud_sanskrit/sa_ufal-ud-test.conllu (mirror, commit 80f88c8)"
+    claim_ru: >-
+      [ca] ставится после соединяемых слов и никогда не может стоять первым
+      в предложении (репликация APT-3 из ApteSyntax_1885/claims.yml на UD-золоте)
+    kind: dependency
+    falsifiable_as: "UD: zero CCONJ lemma च (ca) tokens at sentence-initial position (first token of a sentence)"
+    sources: [ud_sanskrit_ufal, whitney]
+    verdict_fact: TRUE
+    number: "UD proxy: sentence-initial ca / total ca (CCONJ lemma च); threshold 0 initial -> PASS"
+    ref: "UD_Sanskrit-UFAL via tools/verify_claims_ud.py (UDA1_ca_position); cf. APT-3 (ApteSyntax_1885, Whitney §1133a) and APT-9 (0/84 ced on the DCS slice)"
+    verdict_ud: PASS
+
+  - id: UDA-2
+    loc: "data/ud_sanskrit/sa_ufal-ud-test.conllu (mirror, commit 80f88c8)"
+    claim_ru: >-
+      Санскрит — язык с доминирующим порядком «объект — глагол» (OV); объект
+      обычно предшествует своему глаголу
+    kind: dependency
+    falsifiable_as: "UD: share of obj/iobj tokens preceding their verbal head (id < head id) is at least 2/3 (66.7%)"
+    sources: [ud_sanskrit_ufal]
+    verdict_fact: TRUE
+    number: "UD proxy: OV share over UD obj+iobj with VERB/AUX head; threshold >=66.7% -> PASS"
+    ref: "UD_Sanskrit-UFAL via tools/verify_claims_ud.py (UDA2_ov_order); systemic claim (Whitney/Speijer SOV doctrine), UD-schema measurement"
+    verdict_ud: PASS
+
+  - id: UDA-3
+    loc: "data/ud_sanskrit/sa_ufal-ud-test.conllu (mirror, commit 80f88c8)"
+    claim_ru: >-
+      Именные предложения без финитного глагола обычны в санскритской прозе
+      (предложение, чей корень — существительное/прилагательное/местоимение)
+    kind: dependency
+    falsifiable_as: "UD: at least 5% of sentences have a non-verbal root (root UPOS in NOUN/ADJ/PRON/PROPN/NUM/INTJ)"
+    sources: [ud_sanskrit_ufal]
+    verdict_fact: TRUE
+    number: "UD proxy: share of sentences with non-verbal root UPOS; threshold >=5% -> PASS, <5% -> OVERSTATED"
+    ref: "UD_Sanskrit-UFAL via tools/verify_claims_ud.py (UDA3_verbless); the instrument BuhlerLeitfaden HB register named for its gender-resolution UNTESTABLE block"
+    verdict_ud: PASS
+
+  - id: UDA-4
+    loc: "data/ud_sanskrit/sa_ufal-ud-test.conllu (mirror, commit 80f88c8)"
+    claim_ru: >-
+      Среди глагольных лемм санскрита по частоте выше всех глагол «быть»
+      (अस्, as)
+    kind: lemma
+    falsifiable_as: "UD: the lemma अस् (as, 'be') ranks #1 by token frequency among VERB/AUX lemmas"
+    sources: [ud_sanskrit_ufal]
+    verdict_fact: OVERSTATED
+    number: "UD proxy: rank of lemma अस् among VERB/AUX lemmas by token count; rank 1 -> PASS, rank 2-3 -> OVERSTATED, worse -> FAIL"
+    ref: "UD_Sanskrit-UFAL via tools/verify_claims_ud.py (UDA4_top_lemma); caveat: UD lemma census counts finite+non-finite together and folds sandhi, unlike DCS surface-form censuses"
+    verdict_ud: OVERSTATED

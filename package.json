@@ -7,6 +7,8 @@
     "postinstall": "patch-package",
     "convert": "python scripts/docx_to_mdx.py && python scripts/mdx_postprocess.py",
     "errata": "python scripts/build_errata.py",
+    "bibtex": "python scripts/build_bibtex.py",
+    "check-bibtex": "python scripts/build_bibtex.py --check",
     "errata:print": "python scripts/build_errata_print_sheet.py",
     "claims": "python scripts/build_claims.py",
     "check-claims": "python scripts/check_claims_consistency.py && python scripts/claims_schema_validate.py --all",
@@ -31,9 +33,9 @@
     "@easyops-cn/docusaurus-search-local": "^0.55.3",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.4.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.3.0",
-    "unist-util-visit": "^5.0.0"
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "unist-util-visit": "^5.2.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.2",

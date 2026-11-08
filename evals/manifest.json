@@ -1,0 +1,26 @@
+{
+  "version": "0.1",
+  "marker": "eval_harness",
+  "repo": "SanskritGrammar",
+  "created": "2026-10-26",
+  "handoff": "H6846",
+  "description": "Minimal eval scaffold over SanskritGrammar's own pre-registered UD claims probes. No new gold was created and no annotation was added.",
+  "suites": [
+    {
+      "id": "ud-claims-probe",
+      "class": "canary",
+      "measures": "Replay of the four pre-registered UD_Sanskrit-UFAL claims probes (claims.yml) through tools/verify_claims_ud.py: the live dual verdicts must equal the frozen register verdicts, including the deliberately OVERSTATED row.",
+      "gold": {
+        "path": "data/ud_sanskrit/claims.yml",
+        "provenance": "H6842 WHEEL9 item (b) register over the UD_Sanskrit-UFAL r2-line mirror (CC BY-SA 4.0, commit 80f88c8), thresholds fixed before the first probe run; no rows added"
+      },
+      "grader": "exact verdict_fact/verdict_ud match after a live probe replay (stdlib, no network)",
+      "cases": 4,
+      "canary": {
+        "gold_expectation": "pass",
+        "mutation": "flip one replayed UD verdict (PASS -> FAIL)",
+        "mutation_expectation": "fail"
+      }
+    }
+  ]
+}

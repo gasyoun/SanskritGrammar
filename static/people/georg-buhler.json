@@ -1,0 +1,31 @@
+{
+  "name": "Bühler, Georg",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/georg-buhler",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/georg-buhler.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "georg-buhler",
+  "variants": [
+    {
+      "form": "Г. Бюлер"
+    },
+    {
+      "form": "Bühler"
+    }
+  ],
+  "works": [
+    {
+      "id": "buhler-1923",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/buhler-1923.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/buhler-1923",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/buhler-1923.json"
+      },
+      "title": "Leitfaden für den elementaren Cursus des Sanskrit",
+      "year": 1923
+    }
+  ]
+}

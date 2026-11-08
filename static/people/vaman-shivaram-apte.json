@@ -1,0 +1,28 @@
+{
+  "name": "Apte, Vaman Shivaram",
+  "representations": {
+    "html": "https://gasyoun.github.io/SanskritGrammar/people/vaman-shivaram-apte",
+    "json": "https://gasyoun.github.io/SanskritGrammar/people/vaman-shivaram-apte.json"
+  },
+  "roles": [
+    "author"
+  ],
+  "slug": "vaman-shivaram-apte",
+  "variants": [
+    {
+      "form": "Ваман Шиварам Апте"
+    }
+  ],
+  "works": [
+    {
+      "id": "apte-1885",
+      "representations": {
+        "bibtex": "https://gasyoun.github.io/SanskritGrammar/bibtex/apte-1885.bib",
+        "html": "https://gasyoun.github.io/SanskritGrammar/id/apte-1885",
+        "json": "https://gasyoun.github.io/SanskritGrammar/id/apte-1885.json"
+      },
+      "title": "Учебник по санскритскому синтаксису",
+      "year": 1885
+    }
+  ]
+}
