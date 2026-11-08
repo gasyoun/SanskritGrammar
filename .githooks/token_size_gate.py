@@ -30,9 +30,13 @@ import time
 from dataclasses import dataclass, field
 from pathlib import Path
 
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 DEFAULT_LIMIT_TOKENS = 5000
 DEFAULT_BYTES_PER_TOKEN = 4
+# v1.2.0 (MG «да» 08-11-2026): a debt file may grow by 1.25 budgets per commit
+# (25 000 B at the default budget) — the observed living-doc v2-wave runs
+# 20–25 KB (H7763/H7781/H7824 class); the budget for NEW files stays at 1×.
+GRANDFATHER_GROWTH_FACTOR = 1.25
 MARKER_SCAN_BYTES = 8192
 PLAN_READ_CAP = 4_000_000
 MAX_DETAILED_FILES = 10
@@ -446,11 +450,14 @@ def grandfather_verdict(head_size: int | None, new_size: int, max_bytes: int) ->
     edit to a pre-existing large tool.
 
     Rule: a file that was ALREADY over the budget at HEAD may be committed as
-    long as it did not grow by more than ONE budget in this commit
-    (new_size <= head_size + max_bytes). A file that was under the budget at
-    HEAD and crosses it is still refused — the gate's teeth stay exactly where
-    they were aimed (a NEW oversized file), and the grandfather only stops
-    existing debt from freezing the estate.
+    long as it did not grow by more than GRANDFATHER_GROWTH_FACTOR budgets in
+    this commit (new_size <= head_size + growth_limit; 1.25 budgets —
+    25 000 B at the default budget — since v1.2.0, raised from 1 budget on
+    08-11-2026: three consecutive days of byte-driven prose surgery on living
+    docs whose natural v2-wave is 20–25 KB, MG «да»). A file that was under
+    the budget at HEAD and crosses it is still refused — the gate's teeth stay
+    exactly where they were aimed (a NEW oversized file), and the grandfather
+    only stops existing debt from freezing the estate.
 
     Growth beyond the allowance is still a violation: debt may be paid down,
     not compounded. Hubs that must grow freely belong in `.token-gate-ignore`,
@@ -458,10 +465,11 @@ def grandfather_verdict(head_size: int | None, new_size: int, max_bytes: int) ->
     """
     if head_size is None or head_size <= max_bytes:
         return None
+    growth_limit = int(max_bytes * GRANDFATHER_GROWTH_FACTOR)
     growth = new_size - head_size
-    if growth <= max_bytes:
+    if growth <= growth_limit:
         return (f"grandfathered: на HEAD уже было {head_size} Б (> {max_bytes} Б), "
-                f"прирост {growth} Б ≤ одного бюджета")
+                f"прирост {growth} Б ≤ лимита прироста {growth_limit} Б (1.25 бюджета)")
     return None
 
 
@@ -885,13 +893,15 @@ def selftest() -> int:
     check(grandfather_verdict(19_000, 30_000, 20_000) is None,
           "a file that was UNDER the budget at HEAD is not grandfathered")
     check(grandfather_verdict(25_000, 30_000, 20_000) is not None,
-          "file already over budget at HEAD, growth within one budget -> grandfathered")
+          "file already over budget at HEAD, growth within the allowance -> grandfathered")
     check(grandfather_verdict(25_000, 25_000, 20_000) is not None,
           "file already over budget, no growth -> grandfathered")
-    check(grandfather_verdict(25_000, 45_001, 20_000) is None,
-          "growth beyond one budget is NOT grandfathered")
-    check(grandfather_verdict(25_000, 45_000, 20_000) is not None,
-          "growth exactly one budget is grandfathered")
+    check(grandfather_verdict(25_000, 45_001, 20_000) is not None,
+          "growth of one budget still well inside the 1.25 allowance (v1.2.0)")
+    check(grandfather_verdict(25_000, 50_001, 20_000) is None,
+          "growth beyond 1.25 budgets is NOT grandfathered")
+    check(grandfather_verdict(25_000, 50_000, 20_000) is not None,
+          "growth exactly 1.25 budgets (25 000 B) is grandfathered")
     check(path_skip_reason("CHANGELOG.md") is not None, "changelog is a log")
     check(path_skip_reason(".ai_state.md") is not None, "state journal is a log")
     check(path_skip_reason("build/app.log") is not None, ".log suffix")
