@@ -436,7 +436,7 @@ entries:
       'большинство', not 'все'. Well calibrated.
 
   - id: HB-18
-    loc: "Урок X / mdx line 1317"
+    loc: "Урок X / mdx line 1319"
     claim_ru: >-
       Конечный гласный обращается в ī в следующих корнях: gai, dā давать, do, dhā, dhe, pā пить,
       mā, sthā, so, hā
@@ -451,7 +451,7 @@ entries:
       The ten-root list matches the reference inventory of ī-passives.
 
   - id: HB-19
-    loc: "Урок X / mdx line 1327"
+    loc: "Урок X / mdx line 1329"
     claim_ru: >-
       Личная пассивная конструкция очень употребительна в санскрите при переходных глаголах,
       а также и безличная — как при переходных, так и при непереходных. Действующее лицо
@@ -1991,7 +1991,7 @@ entries:
       «Часто» is a direction claim and uncontroversial for this set; per-preverb DCS token counts are not in the permitted instrument set, but nothing in the set contradicts it (parā is the least frequent of the eight yet still standard).
 
   - id: HB-110
-    loc: "Урок X / mdx line 1301"
+    loc: "Урок X / mdx line 1303"
     claim_ru: >-
       Страдательный залог образуется при помощи суффикса ya, присоединяющегося непосредственно к глагольному корню, и принимает личные окончания Ātm. Глаголы X кл. отбрасывают признак aya, но сохраняют перед ya ту форму, которую они должны иметь перед aya
     kind: rule
@@ -2008,7 +2008,7 @@ entries:
       Both halves are the standard formation rules; Bühler's own examples (labhyate, coryate, tāḍyate) are the textbook forms.
 
   - id: HB-111
-    loc: "Урок X / mdx line 1309"
+    loc: "Урок X / mdx line 1311"
     claim_ru: "i и u удлиняются, напр. ji, jīyate; stu, stūyate"
     kind: allomorphy
     falsifiable_as: "Root-final i/u lengthen before passive -ya- in all attested passives of such roots"
@@ -2022,7 +2022,7 @@ entries:
       Exceptionless for root-final short i/u.
 
   - id: HB-112
-    loc: "Урок X / mdx line 1311"
+    loc: "Урок X / mdx line 1313"
     claim_ru: >-
       ṛ обращается в ri, если предшествует согласный, и в ar, если предшествует группа согласных, напр. kṛ, kriyate; smṛ, smaryate
     kind: allomorphy
@@ -2037,7 +2037,7 @@ entries:
       Standard two-way split, matching both Whitney and the attested forms.
 
   - id: HB-113
-    loc: "Урок X / mdx line 1313"
+    loc: "Урок X / mdx line 1315"
     claim_ru: "ṝ обращается в īr, или, если предшествует губной, в ūr, напр. tṝ, tīryate; pṝ, pūryate"
     kind: allomorphy
     falsifiable_as: "Root-final ṝ gives īr in the passive, ūr after labial (tīryate vs pūryate) in attested forms"
@@ -2051,7 +2051,7 @@ entries:
       Same alternation as verified at OCH-14 for the general ṝ → īr/ūr rule.
 
   - id: HB-114
-    loc: "Урок X / mdx line 1315"
+    loc: "Урок X / mdx line 1317"
     claim_ru: "ai и o обращаются в ā напр. dhyai, dhyāyate"
     kind: allomorphy
     falsifiable_as: "Root-final ai/o become ā before passive -ya- in attested passives"
@@ -2065,7 +2065,7 @@ entries:
       Checked in the source: line 1317 immediately lists gai, dā, do, dhā, pā, sthā, so, hā etc. as taking ī (gīyate, dīyate), so this rule is the residual ā-treatment and is correctly scoped.
 
   - id: HB-115
-    loc: "Урок X / mdx line 1319"
+    loc: "Урок X / mdx line 1321"
     claim_ru: "i и u в средине глаголов, корни которых оканчиваются на v и r, удлиняются, напр. div, dīvyate"
     kind: allomorphy
     falsifiable_as: "Medial i/u lengthen in passives of roots ending in v or r (dīvyate) — attested passive forms"
@@ -2079,7 +2079,7 @@ entries:
       Same law as the class IV note at Урок VI line 793 in this batch, here applied to the passive.
 
   - id: HB-116
-    loc: "Урок X / mdx line 1323"
+    loc: "Урок X / mdx line 1325"
     claim_ru: "Носовой в средине корня часто исчезает, напр. bandh, badhyate; daṅś, daśyate; śaṅs, śasyate"
     kind: allomorphy
     falsifiable_as: "Root-medial nasal is often lost in the passive (badhyate, daśyate, śasyate) — 'often', not always: proportion of nasal-retaining passives checkable"
@@ -2093,7 +2093,7 @@ entries:
       Hedge «часто» is the correct calibration: nasal loss is lexically governed, majority but not universal.
 
   - id: HB-117
-    loc: "Урок X / mdx line 1325"
+    loc: "Урок X / mdx line 1327"
     claim_ru: >-
       В корнях vac, vad, vap, vas, vah и svap va превращается в u ... ya корня yaj превращается в i, а r корней grah и prach в ṛ; hve превращается в hū, śās — śiṣ; khan, jan, tan ... и san образуют khanyate или khāyate, janyate или jāyate и т. д.; śī лежать образует śayyate
     kind: allomorphy
