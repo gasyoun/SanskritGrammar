@@ -1,0 +1,446 @@
+{
+  "tool": "tools/document_check.py",
+  "skill": "/document",
+  "legacy_name": "/artifact-propagate",
+  "generated": "2026-11-10 15:47:03",
+  "artifacts": [
+    {
+      "artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar\\.github\\workflows\\consolidation-ledger-nightly.yml",
+      "repo": "C:\\Users\\COMPUTER\\Documents\\GitHub\\SanskritGrammar",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "README documents content/edition surfaces; the nightly ledger orchestration is CI plumbing among many scripts/ helpers - its contract lives in the module docstring, the workflow header, and the enforced wiring test"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the sync rule (workflow+helper+test move together) is enforced mechanically by tests/test_consolidation_ledger_pr_orchestrate.py and stated in the workflow header; CLAUDE.md would add no enforcement"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "AGENTS.md generated block carries danger facts + routing only; a CI nightly helper needs no orientation row"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the workflow's own header is the governing doc for this workstream; no sibling manual/roadmap governs the nightly ledger orchestration"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "code + workflow, not a genre doc; the metadoc contract applies to documents (repo carries .meta.md only for genre docs)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040\\CHANGELOG.md:576: ([.github/workflows/consolidation-ledger-nightly.yml](https://github.com/gasyoun/SanskritGrammar/blob/main/.github/workflows/consolidation-ledger-nightly.yml))."
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040\\.ai_state.md:6: - **🟡 H7967 benefit re-count due ≤17-11-2026 (agent lane, XS).** Compare open refresh PRs vs the 10-11-2026 baseline (3 open dated: #1169/#1171/#1172): target a"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no per-person task issue is affected by this CI-orchestration unit; external issue posting needs authorization - none requested"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "owed acts registered as GTD rows in the H7967 section on origin/main 2d6c73c (activation + benefit re-count, 10-11-2026); rows name their physical actions (the workflow dispatch + the PR-count check), not the helper path"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "close pipeline wrote the completed row on origin/main (verified, not re-written); registry rows cite handoff+PR, not artifact paths"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "FEATURES_INDEX inventories SanskritLexicography capabilities; a SanskritGrammar CI helper is not one"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no registered consumer of the rolling-PR pattern today; revisit at adoption"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no cross-repo producer/consumer edge changed; internal CI plumbing within SanskritGrammar"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no destructive-risk fact introduced; the change adds fail-closed guards and touches nothing destructive"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no open question created or answered; the design fork was pre-decided by the brief (no ADR per instruction)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational CI change, not thesis-level synthesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no hook added, changed, or unwired"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no repo-level status shift (archived/frozen/rebooted)"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no hub file added or removed"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "rests on no new premise or experiment; the design fork was pre-decided by the brief"
+        }
+      ],
+      "worktree_artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040\\.github\\workflows\\consolidation-ledger-nightly.yml",
+      "worktree": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040"
+    },
+    {
+      "artifact": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040\\scripts\\consolidation_ledger_pr_orchestrate.py",
+      "repo": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040",
+      "kind": "interface",
+      "surfaces": [
+        {
+          "id": "readme",
+          "phase": 1,
+          "label": "README.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "README documents content/edition surfaces; the nightly ledger orchestration is CI plumbing among many scripts/ helpers - its contract lives in the module docstring, the workflow header, and the enforced wiring test"
+        },
+        {
+          "id": "claude_md",
+          "phase": 1,
+          "label": "CLAUDE.md",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the sync rule (workflow+helper+test move together) is enforced mechanically by tests/test_consolidation_ledger_pr_orchestrate.py and stated in the workflow header; CLAUDE.md would add no enforcement"
+        },
+        {
+          "id": "cold_start",
+          "phase": 1,
+          "label": "Cold-start doc (GEMINI.md / equivalent)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "AGENTS.md generated block carries danger facts + routing only; a CI nightly helper needs no orientation row"
+        },
+        {
+          "id": "sibling_domain_docs",
+          "phase": 1,
+          "label": "Sibling domain docs (manual/roadmap/method docs)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "the workflow's own header is the governing doc for this workstream; no sibling manual/roadmap governs the nightly ledger orchestration"
+        },
+        {
+          "id": "metadoc",
+          "phase": 1,
+          "label": "Metadoc (<name>.meta.md)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "code + workflow, not a genre doc; the metadoc contract applies to documents (repo carries .meta.md only for genre docs)"
+        },
+        {
+          "id": "changelog",
+          "phase": 1,
+          "label": "CHANGELOG.md -> release (/cut-release)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "repo convention is release-wave folding: entry queued at changelog_queue/h7967-ledger-rolling-pr-10-11-2026.md (names the helper + workflow), folds into CHANGELOG.md at the next microparty; CHANGELOG.md:576 already covers the workflow file"
+        },
+        {
+          "id": "ai_state",
+          "phase": 1,
+          "label": ".ai_state.md",
+          "scope": "repo",
+          "status": "present",
+          "evidence": "C:\\Users\\COMPUTER\\Documents\\GitHub-worktrees\\SanskritGrammar\\SanskritGrammar-h7967-1040\\.ai_state.md:480: [`scripts/consolidation_ledger_pr_orchestrate.py`](https://github.com/gasyoun/SanskritGrammar/blob/main/scripts/consolidation_ledger_pr_orchestrate.py)"
+        },
+        {
+          "id": "issues",
+          "phase": 1,
+          "label": "Issues (per-person task issues)",
+          "scope": "repo",
+          "status": "n/a",
+          "evidence": "no per-person task issue is affected by this CI-orchestration unit; external issue posting needs authorization - none requested"
+        },
+        {
+          "id": "gtd",
+          "phase": 2,
+          "label": "Uprava/GTD_NEXT_ACTIONS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "owed acts registered as GTD rows in the H7967 section on origin/main 2d6c73c (activation + benefit re-count, 10-11-2026); rows name their physical actions (the workflow dispatch + the PR-count check), not the helper path"
+        },
+        {
+          "id": "handoffs_registry",
+          "phase": 2,
+          "label": "Uprava/handoffs/README.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "close pipeline wrote the completed row on origin/main (verified, not re-written); registry rows cite handoff+PR, not artifact paths"
+        },
+        {
+          "id": "features_index",
+          "phase": 2,
+          "label": "SanskritLexicography/FEATURES_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "FEATURES_INDEX inventories SanskritLexicography capabilities; a SanskritGrammar CI helper is not one"
+        },
+        {
+          "id": "reuse_index",
+          "phase": 2,
+          "label": "Uprava/REUSE_INDEX.md (reusable assets)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no registered consumer of the rolling-PR pattern today; revisit at adoption"
+        },
+        {
+          "id": "kosha_manifest",
+          "phase": 2,
+          "label": "kosha/data/manifest/datasets.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not a derived dataset"
+        },
+        {
+          "id": "data_layers_census",
+          "phase": 2,
+          "label": "Uprava/DATA_LAYERS_CENSUS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "not large/local-only data (risk) and no open statistics cell to close"
+        },
+        {
+          "id": "project_interlinks",
+          "phase": 2,
+          "label": "Uprava/PROJECT_INTERLINKS.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no cross-repo producer/consumer edge changed; internal CI plumbing within SanskritGrammar"
+        },
+        {
+          "id": "skills_index",
+          "phase": 2,
+          "label": "root SKILLS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not itself a skill/command"
+        },
+        {
+          "id": "articles",
+          "phase": 2,
+          "label": "Uprava/ARTICLES.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "artifact is not a paper (delegate to /articles-update when it is)"
+        },
+        {
+          "id": "danger_facts",
+          "phase": 2,
+          "label": "Uprava/DANGER_FACTS.md + context_facts.yaml",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no destructive-risk fact introduced; the change adds fail-closed guards and touches nothing destructive"
+        },
+        {
+          "id": "questions_log",
+          "phase": 2,
+          "label": "Uprava/QUESTIONS_LOG.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no open question created or answered; the design fork was pre-decided by the brief (no ADR per instruction)"
+        },
+        {
+          "id": "megabook",
+          "phase": 2,
+          "label": "Uprava/MEGABOOK.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "operational CI change, not thesis-level synthesis"
+        },
+        {
+          "id": "skills_manual_ru",
+          "phase": 2,
+          "label": "Uprava/SKILLS_MANUAL_RU.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no skill/tool contract changed"
+        },
+        {
+          "id": "hooks_index",
+          "phase": 2,
+          "label": "claude-config HOOKS_INDEX.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no hook added, changed, or unwired"
+        },
+        {
+          "id": "repo_status_rollup",
+          "phase": 2,
+          "label": "Uprava/REPO_STATUS_ROLLUP.md",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no repo-level status shift (archived/frozen/rebooted)"
+        },
+        {
+          "id": "hub_manifest",
+          "phase": 2,
+          "label": "Uprava/tools/hub_manifest.json",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "no hub file added or removed"
+        },
+        {
+          "id": "auto_derived_views",
+          "phase": 2,
+          "label": "Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "auto -- never hand-edit; verify their SOURCES carry the change instead"
+        },
+        {
+          "id": "epistemic_registries",
+          "phase": 2,
+          "label": "FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography)",
+          "scope": "org",
+          "status": "n/a",
+          "evidence": "rests on no new premise or experiment; the design fork was pre-decided by the brief"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "host": "DESKTOP-8N57E9U",
+    "git_head": "bf9cf4d4a3e534050eaccdf1ae62e7b535f0e3d7",
+    "git_branch": "h7967-ledger-rolling-pr",
+    "handoff": "H7967"
+  }
+}
