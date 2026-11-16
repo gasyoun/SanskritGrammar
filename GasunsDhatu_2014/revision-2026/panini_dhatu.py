@@ -99,27 +99,56 @@ def fetch(remote, refresh=False):
     os.makedirs(CACHE, exist_ok=True)
     cachename = remote if remote.startswith("dhatu") else "dhatu_" + remote
     path = os.path.join(CACHE, cachename)
-    if refresh or not os.path.exists(path):
+
+    def download():
+        """H7833: atomic cache write — temp file + fsync + os.replace, so an
+        interrupted first fetch can never leave a corrupt cache behind."""
         tmp = path + ".tmp"
         try:
             with urllib.request.urlopen(RAW + remote, timeout=60) as r:
                 data = r.read()
-            # H7833: atomic cache write — temp file + os.replace, so an
-            # interrupted first fetch can never leave a corrupt cache behind.
             with open(tmp, "wb") as f:
                 f.write(data)
                 f.flush()
                 os.fsync(f.fileno())
             os.replace(tmp, path)
+            return True
         except Exception as e:  # noqa: BLE001
             print(f"[warn] could not fetch {remote}: {e}", file=sys.stderr)
             try:
                 os.remove(tmp)
             except OSError:
                 pass
+            return False
+
+    if refresh or not os.path.exists(path):
+        if not download():
             return None
-    with open(path, encoding="utf-8") as f:
-        return f.read()
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    except (OSError, UnicodeDecodeError) as e:
+        # H7833: byte-corrupt cache (a truncated write can cut a multibyte
+        # Devanagari char) — one clean re-fetch, never a raw traceback.
+        if refresh:
+            print(f"[fail] panini_cache/{cachename} unreadable after fresh "
+                  f"fetch: {e} — delete panini_cache/ and retry. H7815 fail "
+                  f"route.", file=sys.stderr)
+            return None
+        print(f"[warn] panini_cache/{cachename} is corrupt ({e}) — "
+              f"re-fetching once", file=sys.stderr)
+        if not download():
+            print(f"[fail] could not re-fetch {remote} — delete panini_cache/ "
+                  f"and retry. H7815 fail route.", file=sys.stderr)
+            return None
+        try:
+            with open(path, encoding="utf-8") as f:
+                return f.read()
+        except (OSError, UnicodeDecodeError) as e2:
+            print(f"[fail] panini_cache/{cachename} still unreadable after "
+                  f"re-fetch: {e2} — delete panini_cache/ and retry. H7815 "
+                  f"fail route.", file=sys.stderr)
+            return None
 
 
 def load_dhatus(refresh=False):
@@ -160,6 +189,10 @@ def load_dhatus(refresh=False):
             print(f"[fail] dhatu/data.txt schema changed upstream at row {n} "
                   "(artha_english/baseindex missing) — H7815 fail route.",
                   file=sys.stderr)
+            return {}
+        if "i" not in row:
+            print(f"[fail] dhatu/data.txt schema changed upstream at row {n} "
+                  "(id field i missing) — H7815 fail route.", file=sys.stderr)
             return {}
     idx = {}
     for row in rows:
