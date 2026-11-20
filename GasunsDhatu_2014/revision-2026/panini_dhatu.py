@@ -65,7 +65,12 @@ SIGNS = {"ं": "ṃ", "ः": "ḥ", "ँ": "m̐", "्": "", "़": "", "ऽ": 
 
 
 def deva_to_iast(s):
-    """Transliterate a short Devanagari string (root / artha) to IAST."""
+    """Transliterate a short Devanagari string (root / artha) to IAST.
+
+    Tolerates None/empty (upstream rows occasionally carry dhatu: null —
+    H7833: a null on a later row used to raise TypeError mid-render)."""
+    if not s:
+        return ""
     out = []
     i = 0
     while i < len(s):
@@ -94,29 +99,101 @@ def fetch(remote, refresh=False):
     os.makedirs(CACHE, exist_ok=True)
     cachename = remote if remote.startswith("dhatu") else "dhatu_" + remote
     path = os.path.join(CACHE, cachename)
-    if refresh or not os.path.exists(path):
+
+    def download():
+        """H7833: atomic cache write — temp file + fsync + os.replace, so an
+        interrupted first fetch can never leave a corrupt cache behind."""
+        tmp = path + ".tmp"
         try:
             with urllib.request.urlopen(RAW + remote, timeout=60) as r:
                 data = r.read()
-            with open(path, "wb") as f:
+            with open(tmp, "wb") as f:
                 f.write(data)
+                f.flush()
+                os.fsync(f.fileno())
+            os.replace(tmp, path)
+            return True
         except Exception as e:  # noqa: BLE001
             print(f"[warn] could not fetch {remote}: {e}", file=sys.stderr)
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
+            return False
+
+    if refresh or not os.path.exists(path):
+        if not download():
             return None
-    with open(path, encoding="utf-8") as f:
-        return f.read()
+    try:
+        with open(path, encoding="utf-8") as f:
+            return f.read()
+    except (OSError, UnicodeDecodeError) as e:
+        # H7833: byte-corrupt cache (a truncated write can cut a multibyte
+        # Devanagari char) — one clean re-fetch, never a raw traceback.
+        if refresh:
+            print(f"[fail] panini_cache/{cachename} unreadable after fresh "
+                  f"fetch: {e} — delete panini_cache/ and retry. H7815 fail "
+                  f"route.", file=sys.stderr)
+            return None
+        print(f"[warn] panini_cache/{cachename} is corrupt ({e}) — "
+              f"re-fetching once", file=sys.stderr)
+        if not download():
+            print(f"[fail] could not re-fetch {remote} — delete panini_cache/ "
+                  f"and retry. H7815 fail route.", file=sys.stderr)
+            return None
+        try:
+            with open(path, encoding="utf-8") as f:
+                return f.read()
+        except (OSError, UnicodeDecodeError) as e2:
+            print(f"[fail] panini_cache/{cachename} still unreadable after "
+                  f"re-fetch: {e2} — delete panini_cache/ and retry. H7815 "
+                  f"fail route.", file=sys.stderr)
+            return None
 
 
 def load_dhatus(refresh=False):
-    """dhatu/data.txt -> {baseindex|i: row}. Fail loudly on schema drift."""
+    """dhatu/data.txt -> {baseindex|i: row}. Fail loudly on schema drift.
+
+    H7833: json.loads is guarded — a corrupt (interrupted-write) cache triggers
+    ONE clean re-fetch, then the [fail] route; never a raw traceback."""
     raw = fetch(CORE, refresh)
     if raw is None:
         return {}
-    rows = json.loads(raw).get("data", [])
-    if not rows or "artha_english" not in rows[0] or "baseindex" not in rows[0]:
-        print("[fail] dhatu/data.txt schema changed upstream "
-              "(artha_english/baseindex missing) — H7815 fail route.", file=sys.stderr)
+    rows = None
+    for attempt in (0, 1):                 # first try, then one clean re-fetch
+        try:
+            parsed = json.loads(raw)
+            rows = parsed.get("data", []) if isinstance(parsed, dict) else None
+            break
+        except (json.JSONDecodeError, ValueError) as e:
+            if attempt:
+                print(f"[fail] dhatu/data.txt still not valid JSON after "
+                      f"re-fetch: {e} — H7815 fail route.", file=sys.stderr)
+                return {}
+            print(f"[warn] panini_cache/dhatu_data.txt is corrupt "
+                  f"({e}) — re-fetching once", file=sys.stderr)
+            raw = fetch(CORE, refresh=True)
+            if raw is None:
+                print("[fail] could not re-fetch dhatu/data.txt — delete "
+                      "panini_cache/ and retry. H7815 fail route.", file=sys.stderr)
+                return {}
+    if not rows:
+        print("[fail] dhatu/data.txt has no data rows "
+              "— H7815 fail route.", file=sys.stderr)
         return {}
+    # H7833: schema check across ALL rows, not just rows[0] — a later row with
+    # a missing key / null dhatu must hit the [fail] route, not crash mid-render.
+    for n, row in enumerate(rows):
+        if not isinstance(row, dict) or "artha_english" not in row \
+                or "baseindex" not in row:
+            print(f"[fail] dhatu/data.txt schema changed upstream at row {n} "
+                  "(artha_english/baseindex missing) — H7815 fail route.",
+                  file=sys.stderr)
+            return {}
+        if "i" not in row:
+            print(f"[fail] dhatu/data.txt schema changed upstream at row {n} "
+                  "(id field i missing) — H7815 fail route.", file=sys.stderr)
+            return {}
     idx = {}
     for row in rows:
         idx[str(row.get("baseindex", ""))] = row
