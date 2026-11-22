@@ -1,0 +1,213 @@
+{
+ "_source": "DCS-2021 (Oliver Hellwig, CC BY) via VisualDCS/src/DCS-data-2021",
+ "_dcs_dir": "C:\\Users\\COMPUTER\\AppData\\Local\\Temp\\opencode\\h7826\\DCS-2021",
+ "_note": "token counts = 0.csv running-text surface (IAST); distinct = 15.csv/12.csv type tables (codes: 10-13 aorist, 15 perfect, 14 precative)",
+ "tokens": {
+  "_corpus_tokens_total": 4016392,
+  "HK174_kurvantī": {
+   "gacchantī (I cls, strong — control)": 36,
+   "kurvatī (weak-grade fem, Whitney §449i)": 26,
+   "kurvantī (fem of athematic P. part.)": 33
+  },
+  "Z10400_precative_stems": {
+   "pāyās- (pā 'защищать')": 1,
+   "deyās- (dā)": 1
+  },
+  "Z9440_frequentative": {
+   "dandahya- (dah)": 4,
+   "cañcurya- (car)": 2
+  },
+  "Z9345_adhijigāṃsa": {},
+  "Z9351_Z9390_desiderative": {
+   "śuśrūṣa- (śru)": 324,
+   "mumūrṣa- (mar)": 86,
+   "jijñāsa- (jñā)": 159,
+   "didṛkṣa- (darś)": 127,
+   "susmūrṣa- (smar)": 2
+  },
+  "Z9065_causative_paya": {
+   "pāyáya- (pā 'пить')": 297,
+   "arpáya- (ar — control)": 50,
+   "gāpáya- (gai — control)": 3,
+   "hvāyáya- (hvā)": 2
+  },
+  "Z9659_aorist_II_tokens": {
+   "avocat (vac, aorist II — raw token)": 64,
+   "akhyat (khyā, aorist II — raw token)": 4
+  },
+  "HK16_controls": {
+   "sakhā (m. nom.sg classical — control)": 277,
+   "rathin- (m. 'возница' — control)": 339
+  },
+  "HK35_controls": {
+   "makṣikā/makṣī (dvandva member)": 78,
+   "yūkā (dvandva member)": 26
+  },
+  "Z5829_passive_div_sas": {
+   "śiṣy- (śās)": 888,
+   "dīvy- pass./denom. (div)": 75
+  },
+  "Z2626_jeya": {
+   "jeya- (gerundive of ji, e unchanged)": 6
+  },
+  "Z4952_jaghana": {
+   "jaghāna-/jaghn- perfect of han": 424
+  },
+  "HK35_triple_dvandva": {},
+  "HK16_masc_ii_uu": {
+   "sakhī (m. nom.sg)": 68,
+   "rathī (m. nom.sg)": 55,
+   "ahī (m. nom.sg)": 1,
+   "senānī (m. nom.sg)": 2
+  },
+  "HK14_masc_aa": {
+   "pathā/paṅthāḥ (nom.sg of panthās)": 235,
+   "gopā (m., Whitney §355a)": 73,
+   "mahā (m., Whitney §355a)": 10
+  },
+  "HK31_two_consonant_final": {
+   "suhārt (§150b)": 1
+  },
+  "HK234_maha_prior": {
+   "tokens starting mahā- (prior member)": 26147,
+   "standalone mahā (independent word)": 10
+  },
+  "HK108_future_no_guṇa": {
+   "likhiṣy- (likh, no guṇa)": 24,
+   "jīviṣy- (jīv, no guṇa)": 21,
+   "lekhiṣy- (guṇa control)": 1
+  },
+  "HK4a_bhaviṣya": {
+   "bhaviṣy- (bhū, iṣya against unified -sya)": 2886
+  },
+  "HK105_ayus_3pl": {
+   "āyus (3pl impf. of yā, §621a)": 11,
+   "vāyus (3pl impf. of vā, §621a)": 21
+  },
+  "HK112_kinship_vrddhi": {
+   "naptā (guṇa, 'most' kinship)": 29,
+   "nāptā (vṛddhi variant)": 2
+  }
+ },
+ "distinct_forms": {
+  "HK174_kurvantī": {
+   "15.csv distinct kurvantī*": {
+    "n": 0,
+    "examples": []
+   },
+   "15.csv distinct kurvatī*": {
+    "n": 0,
+    "examples": []
+   }
+  },
+  "Z10009_adiṣ_asthiṣ": {
+   "15.csv adiṣ* aorist codes": {
+    "n": 0,
+    "examples": []
+   },
+   "15.csv asthiṣ* aorist codes": {
+    "n": 0,
+    "examples": []
+   }
+  },
+  "Z9659_aorist_II_stems": {
+   "akhy- aorist (khyā)": {
+    "n": 0,
+    "examples": []
+   },
+   "apapt- aorist (pat)": {
+    "n": 2,
+    "examples": [
+     "apaptan",
+     "apaptat"
+    ]
+   },
+   "avoc- aorist (vac)": {
+    "n": 0,
+    "examples": []
+   },
+   "asth- aorist (as)": {
+    "n": 0,
+    "examples": []
+   }
+  },
+  "Z4952_jaghana": {
+   "jaghān/jaghn- perfect": {
+    "n": 11,
+    "examples": [
+     "jaghantha",
+     "jaghnathuḥ",
+     "jaghnatuḥ",
+     "jaghne",
+     "jaghnima",
+     "jaghnire",
+     "jaghnuḥ",
+     "jaghāna"
+    ]
+   }
+  },
+  "Z5829_passive_div_sas": {
+   "dīvy- finite (div)": {
+    "n": 17,
+    "examples": [
+     "dīvya",
+     "dīvyanti",
+     "dīvyantu",
+     "dīvyasi",
+     "dīvyasva",
+     "dīvyate",
+     "dīvyati",
+     "dīvyatu"
+    ]
+   },
+   "śiṣy- finite (śās)": {
+    "n": 7,
+    "examples": [
+     "śiṣyante",
+     "śiṣyanti",
+     "śiṣyate",
+     "śiṣyeta",
+     "śiṣyāt",
+     "śiṣyāḥ",
+     "śiṣyīkaromi"
+    ]
+   }
+  },
+  "Z10400_precative_stems": {
+   "precative-coded pīyās/pāyās/deyās/stheyās": {
+    "n": 0,
+    "examples": []
+   }
+  },
+  "Z9065_causative_paya": {
+   "15.csv pāyay* (caus. of pā)": {
+    "n": 23,
+    "examples": [
+     "abhyupāyayau",
+     "anupāyayet",
+     "apāyayam",
+     "apāyayat",
+     "apāyayata",
+     "pāyaya",
+     "pāyayan",
+     "pāyayanti"
+    ]
+   },
+   "15.csv hvāyay* (caus. of hvā)": {
+    "n": 1,
+    "examples": [
+     "āhvāyayet"
+    ]
+   }
+  }
+ },
+ "vowel_rare": {
+  "ḷ": 0,
+  "ḹ": 0
+ },
+ "timws": {
+  "precative": 221,
+  "frequentative_note": "inside Present codes",
+  "aorist_total": 2452
+ }
+}
