@@ -65,7 +65,7 @@ jobs:
     name: Regenerate claims + errata registers
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
@@ -86,7 +86,7 @@ jobs:
             # refusal trips on every PR touching the trigger paths (measured
             # 13-10-2026: 4 phantom CLAIMS_VERIFIED diffs on the v0.122.9 cut).
             /*/verify_claims_dcs.py
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.12"
       - run: pip install pyyaml

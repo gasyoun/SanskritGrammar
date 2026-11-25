@@ -26,14 +26,14 @@ jobs:
     outputs:
       artifact_sha: ${{ steps.identity.outputs.sha }}
     steps:
-      - uses: actions/checkout@v7
-      - uses: actions/setup-python@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: '3.12'
       - uses: astral-sh/setup-uv@1db35dd8eee11c5894872e0b383ae6c406cf738d # v10.4.0
         with:
           enable-cache: true
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
         with:
           node-version: 22
           cache: npm
@@ -80,7 +80,7 @@ jobs:
           echo "sha=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
       - name: Stage exact-SHA site artifact
         if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
         with:
           name: site-${{ github.sha }}
           path: build
@@ -98,7 +98,7 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - uses: actions/download-artifact@v8
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8
         with:
           name: site-${{ needs.quality.outputs.artifact_sha }}
           path: build
@@ -107,9 +107,9 @@ jobs:
         run: |
           test "$(tr -d '\r\n' < build/deployment-sha.txt)" = "${GITHUB_SHA}"
           echo "sha=${GITHUB_SHA}" >> "${GITHUB_OUTPUT}"
-      - uses: actions/configure-pages@v6
+      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
       - name: Upload exact-SHA Pages artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
           path: build
 
@@ -127,6 +127,6 @@ jobs:
     steps:
       - id: deployment
         name: Deploy without rebuilding
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5
       - name: Record deployed SHA
         run: echo "Deployed Pages artifact for ${GITHUB_SHA}" >> "${GITHUB_STEP_SUMMARY}"
