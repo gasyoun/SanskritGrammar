@@ -1,0 +1,11 @@
+root_slp1	verdict	note
+Ap	AGREE	MW L25098: `<lex>mfn.</lex> (fr. √ 1. Ap)` — прямое совпадение, substantivum
+SF	AGREE	MW L218551: `<lex>mfn.</lex> (fr. √ SF)` — прямое совпадение
+ac	DISCREPANCY	MW L208354: запись ГЛАГОЛ cl.6 P.; корень ac взят из кросс-ссылки `prob. orig. identical with vy-√ ac` (MW же сравнивает с √ vic), а не из деривации substantivum; форма vyac просочилась в analysis2 как омоним
+dyut	AGREE	MW L24085: `<lex>m.</lex> (fr. √ 1. dyut)` — прямое совпадение
+kANkz	DISCREPANCY	MW L192892 даёт `<lex>mfn.</lex> vi—kANkza` (без долгого ā), а в TSV атрибуции headword = `vikANkzA`; несовпадение поверхности, root kANkz правдоподобен, но нужна нормализация key1
+lih	WEAK-EVIDENCE	MW L18081: только кросс-ссылка `See ava-√ lih`, без `<lex>` и без явного `(fr. √)`; корень выведен из префигированного глагола, не из substantivum
+muz	WEAK-EVIDENCE	MW L25610: только `See under A-√ muz`, без `<lex>`; атрибуция слабая, форма Amoza в MW — кросс-ссылка
+raR	WEAK-EVIDENCE	MW L199262: только `See under vi-√ raR`, без `<lex>`; то же, что у muz
+siv	AGREE-HEDGED	MW L251025: `<lex>f.</lex> sUci ... (prob. ... fr. √ siv)` — MW сам помечает гипотезу `prob.`, но корень указан явно
+vE	DISCREPANCY	MW L35782: upavAta `blown upon` — это √vA (`vA`), а ссылка `upa-√ vE` в записи относится ко ВТОРОМУ омониму (`for hom. 2. See ...`); атрибуция vE ошибочна
