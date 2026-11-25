@@ -48,11 +48,11 @@ jobs:
     name: OxAlpha review (shadow, reporting only)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
         with:
           python-version: "3.12"
 
@@ -125,7 +125,7 @@ jobs:
 
       - name: Upload verdict artifacts (never silent)
         if: always() && steps.window.outputs.base != ''
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: oxalpha-verdict-${{ github.run_id }}
           path: |
