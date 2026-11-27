@@ -1,0 +1,18 @@
+{
+  "source_mechanism": "span[style*=Times New Roman CyrAC] -> U+0301 on its vowel",
+  "retrieved_utc": "2026-11-27",
+  "stats": {
+    "pages": 0,
+    "stressed_vowels": 0,
+    "pages_with_stress": 0,
+    "errors": 1,
+    "resumed_existing": 1689
+  },
+  "errors": [
+    {
+      "url": "http://slovari.ru/default.aspx?s=0&p=5335&0a0=2430#112",
+      "error": "HTTPSConnectionPool(host='slovari.ru', port=443): Read timed out. (read timeout=30)"
+    }
+  ],
+  "note": "Parallel layer; manifest hashes for derived/text are unchanged."
+}

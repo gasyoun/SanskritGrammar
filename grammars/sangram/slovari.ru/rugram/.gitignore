@@ -1,0 +1,4 @@
+# Source text is published (publisher rights confirmed by the repo owner,
+# 26-11-2026). Only transient Python artefacts stay out of git.
+__pycache__/
+*.pyc
