@@ -7,7 +7,7 @@ GasunsDhatu_2014/**/*.jsonl
 corpus/**/*.jsonl
 TolchelnikovTalmud_2026/data/**
 # slovari.ru Russian grammar static edition — generated corpus + provenance data
-grammars/sangram/slovari.ru/rugram/**
+rugram/**
 
 # shared guard hooks — pre-existing infrastructure, not agent-authored content
 .githooks/pre-push
