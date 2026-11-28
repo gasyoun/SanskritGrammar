@@ -1,5 +1,5 @@
 {
-  "count": 17,
+  "count": 38,
   "files": {
     "ApteSyntax_1885/Apte-unicode.doc": {
       "bytes": 1638912,
@@ -68,6 +68,90 @@
     "ZalizniakOcherk_1978/Zalizniak-Ocherk_29-11-20-aligned.docx": {
       "bytes": 276240,
       "sha256": "2de46dd940b4e6c5a12a08b490fb05226080e7e8deb9d138fe0436c85245840c"
+    },
+    "rugram/raw/doc/vol1/I/001-099.doc": {
+      "bytes": 1758208,
+      "sha256": "cdb34e7a6bc2e3a819f6d6cf6011a62b5d570d08e2386f34615ef499a34a8d64"
+    },
+    "rugram/raw/doc/vol1/I/100-114.doc": {
+      "bytes": 594944,
+      "sha256": "b3e68f21cefdfcbcaf4ab551032acfdbca06fdf268e82eae7a68dde8fe4f985b"
+    },
+    "rugram/raw/doc/vol1/I/115.doc": {
+      "bytes": 78336,
+      "sha256": "b42d67c29516036dfdb9ffc22f21c8799c578076caebd770f782d0270020b032"
+    },
+    "rugram/raw/doc/vol1/I/116.doc": {
+      "bytes": 828928,
+      "sha256": "be282197824bb2d9f7e9d4733a27b63c113262206ac5aee3b1ffdfdba0d8bfeb"
+    },
+    "rugram/raw/doc/vol1/I/117.doc": {
+      "bytes": 80896,
+      "sha256": "66a29aed244556012f3b98358a8aa3ee9089a55873fc324fe6cfbfa905710bf7"
+    },
+    "rugram/raw/doc/vol1/I/118-120.doc": {
+      "bytes": 103424,
+      "sha256": "fa6569933974d3e0c86274a85d43d9141996828567178841cc14abf17b3fd3e4"
+    },
+    "rugram/raw/doc/vol1/I/121-197.doc": {
+      "bytes": 1028096,
+      "sha256": "085ae77ad797ea968ee30593cbd3d72e884e40e9622c6cbd6a5e0700482f93e6"
+    },
+    "rugram/raw/doc/vol1/I/198-296.doc": {
+      "bytes": 1340416,
+      "sha256": "b450fa6a84751e278ea76c0ecb567582dc053f3e6738c730f86725b81c3f82de"
+    },
+    "rugram/raw/doc/vol1/I/297-398.doc": {
+      "bytes": 1351168,
+      "sha256": "c043a7d42b03f3d2b6c10c1fb19547656b1430f8895a3cf8f6acacfc32ee789c"
+    },
+    "rugram/raw/doc/vol1/I/399-500.doc": {
+      "bytes": 1355264,
+      "sha256": "13b68f694945faa81e3e75a76dcd57b247ee64ae653a05f8948a5d453d772646"
+    },
+    "rugram/raw/doc/vol1/I/501-600.doc": {
+      "bytes": 1502720,
+      "sha256": "3a9bc9ece6bd81ac3d24864c040fad10143e82aa3e872a852960f8f2c4da8f3f"
+    },
+    "rugram/raw/doc/vol1/I/601-698.doc": {
+      "bytes": 1414656,
+      "sha256": "17e819b8febda93773eaf570142d951e8b725f0e818c016f4f622e86de7873f3"
+    },
+    "rugram/raw/doc/vol1/I/699-735.doc": {
+      "bytes": 530944,
+      "sha256": "efd69683c02c8b510cde404bd8c0101560f0da415a5d6dc31ed6f6bfc15b83e9"
+    },
+    "rugram/raw/doc/vol1/I/736-789.doc": {
+      "bytes": 852480,
+      "sha256": "36a9dc5d82c4927a09d597a4f145170af857f11124de11a2a548e836cae86b7e"
+    },
+    "rugram/raw/doc/vol2/II/001-100.doc": {
+      "bytes": 1310208,
+      "sha256": "413996eac8519d6a34ebe3fd1efb099d60cec646f731238adef7de4e4990ae7b"
+    },
+    "rugram/raw/doc/vol2/II/101-202.doc": {
+      "bytes": 1410048,
+      "sha256": "639ef4cdf5d97231e6082333461535b05766de7bb9bec4c66dfbdb9fe355e6fc"
+    },
+    "rugram/raw/doc/vol2/II/203-313.doc": {
+      "bytes": 1506816,
+      "sha256": "ce9f2d30a660cf5a8e964c031df1de90011b3cb3a28255a2d68166260793efc1"
+    },
+    "rugram/raw/doc/vol2/II/314-401.doc": {
+      "bytes": 1204736,
+      "sha256": "11ff4a0067ef29e5f401b9f24391ec7def9108b82c295776953e00b5997e80c8"
+    },
+    "rugram/raw/doc/vol2/II/402-504.doc": {
+      "bytes": 1464320,
+      "sha256": "73bd71d25b35705e9cef11b22a0688d8fe029f94f742de7406a73ff0da3969af"
+    },
+    "rugram/raw/doc/vol2/II/505-605.doc": {
+      "bytes": 1421824,
+      "sha256": "429abb130c1fa8e60b09f64bf73d3f36c1702591bce73d4c1116e79bf8933a09"
+    },
+    "rugram/raw/doc/vol2/II/606-714.doc": {
+      "bytes": 1537536,
+      "sha256": "e2de1ac08f4c80d968d739e9a49e0e12615d80be0cf8baa6ac0b57a4f6bfa646"
     }
   }
 }
