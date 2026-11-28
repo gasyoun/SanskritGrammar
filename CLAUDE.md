@@ -187,5 +187,8 @@ silent-revert block (`scripts/pre_push_stale_base_check.py`; escape
 `ALLOW_STALE_BASE_PUSH=1` for a deliberate revert only), the CRLF-in-blob gate and the
 CHANGELOG `[Unreleased]` queue gate. Work in a session-unique worktree;
 `core.hooksPath=.githooks`.
+Two of that hook's gates are dormant here: `scripts/changelog_unreleased_gate.py` and
+`scripts/pushed_conflict_markers.py` are absent, so pre-push prints `SKIPPED` for the
+CHANGELOG-queue and conflict-marker gates.
 
 _Dr. Mārcis Gasūns_
